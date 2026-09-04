@@ -1,0 +1,23 @@
+{
+  "name": "storyhall",
+  "version": "0.1.9",
+  "private": true,
+  "description": "豆豆龙英语：网页播放器 + Capacitor APK（首发内容内置，后续数据包可导入）",
+  "scripts": {
+    "test": "node --test prj/engine/*.test.mjs",
+    "test:content": "python -m pytest -q prj/tools/test_companion_assets.py prj/tools/test_pack_companion_datapack.py prj/tools/test_minecraft_reward_assets.py prj/tools/test_storybook_collections.py",
+    "test:storybook-evidence": "python prj/tools/validate_storybook_quiz_evidence.py --root prj/data/storybooks-mikey-jj prj/data/storybooks-minecraft --report docs/reports/2026-09-03-storybook-quiz-evidence-audit.json",
+    "android:prepare": "node scripts/prepare-mobile.mjs",
+    "android:init": "npm run android:prepare && cap add android",
+    "android:sync": "npm run android:prepare && cap sync android",
+    "android:build": "node scripts/build-apks.mjs",
+    "android:build:jttw": "node scripts/build-apks.mjs --jttw-only"
+  },
+  "dependencies": {
+    "@capacitor/core": "8.4.2"
+  },
+  "devDependencies": {
+    "@capacitor/android": "8.4.2",
+    "@capacitor/cli": "8.4.2"
+  }
+}

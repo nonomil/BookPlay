@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>豆豆龙英语 · 对话冒险</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="adventure.css">
+  <link rel="stylesheet" href="tv.css?v=1">
+</head>
+<body class="adventure-body">
+  <!-- 选集 -->
+  <div id="adv-list" class="screen">
+    <div class="adv-wrap">
+      <header class="home-hero">
+        <div class="hero-body" style="position:static;background:none;">
+          <h1>豆豆龙英语 <span class="en">Doudou English</span></h1>
+          <p class="subtitle">西游记 · 对话冒险</p>
+          <p class="hint">叙述 + 词卡（学习→测试→复习）+ 原声朗读 + 章末测验</p>
+          <div class="home-actions">
+            <a class="sb-link" href="home.html">← 绘本书架</a>
+            <a class="sb-link" href="index.html">石猴 demo</a>
+          </div>
+        </div>
+      </header>
+      <main id="adv-grid" class="grid"></main>
+      <p id="adv-status" class="hint" style="text-align:center"></p>
+    </div>
+  </div>
+
+  <!-- 阅读器 -->
+  <div id="adv-reader" class="screen hidden">
+    <div id="topbar">
+      <a class="sb-link" href="adventure.html">目录</a>
+      <span id="adv-title"></span>
+      <span class="spacer"></span>
+      <div class="mode-toggle" title="朗读模式：纯英文 / 英文后读中文">
+        <button id="mode-en" type="button">EN</button>
+        <button id="mode-enzh" type="button">EN+中</button>
+      </div>
+      <button id="adv-tts" type="button" title="朗读本页（英文原声优先）">🔊 朗读</button>
+    </div>
+    <div class="adv-stage"><img id="adv-img" alt=""></div>
+    <div class="adv-panel">
+      <div class="adv-progress"><div id="adv-bar"></div></div>
+      <p id="adv-en"></p>
+      <p id="adv-zh" class="hidden"></p>
+      <div id="adv-cards"></div>
+      <div class="adv-nav">
+        <button id="adv-prev" type="button">上一页</button>
+        <span id="adv-pager"></span>
+        <button id="adv-next" type="button">下一页</button>
+      </div>
+    </div>
+    <!-- 章末 -->
+    <div id="adv-end" class="hidden">
+      <h2>本章完成</h2>
+      <div id="adv-quiz"></div>
+      <div class="adv-nav">
+        <a id="adv-next-ep" class="sb-link" href="#">下一集 →</a>
+        <a class="sb-link" href="adventure.html">回目录</a>
+      </div>
+    </div>
+  </div>
+  <script src="tv-remote.js?v=1"></script>
+  <script src="content-gate.js?v=1"></script>
+  <script src="adventure.js?v=2"></script>
+</body>
+</html>

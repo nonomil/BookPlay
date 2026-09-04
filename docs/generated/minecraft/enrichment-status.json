@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-09-02",
+  "series": "minecraft",
+  "books": {
+    "1": {"sentences": 76, "translated": 76, "audio_sentences": 76, "word_timed": 72, "word_timing_pending": 4},
+    "2": {"sentences": 85, "translated": 85, "audio_sentences": 85, "word_timed": 62, "word_timing_pending": 23},
+    "3": {"sentences": 61, "translated": 61, "audio_sentences": 0, "word_timed": 0, "word_timing_pending": 0},
+    "4": {"sentences": 72, "translated": 72, "audio_sentences": 71, "word_timed": 55, "word_timing_pending": 16},
+    "5": {"sentences": 73, "translated": 73, "audio_sentences": 73, "word_timed": 63, "word_timing_pending": 10}
+  },
+  "totals": {
+    "sentences": 367,
+    "translated": 367,
+    "audio_sentences": 305,
+    "word_timed": 252,
+    "word_timing_pending": 53
+  },
+  "policy": {
+    "translation": "reviewed batch imported into sidecars and book JSON",
+    "word_timing": "only faster-whisper evidence; no proportional estimates",
+    "promotion": "strict require-words-when-audio remains blocked until 53 pending clips are repaired or reviewed",
+    "book3_audio": "not_applicable"
+  },
+  "clip_repairs": {
+    "book2": {
+      "tool": "prj/tools/repair_minecraft_clips.py",
+      "repaired": 46,
+      "pending": 23,
+      "output_dir": "prj/assets/minecraft/mobs-in-the-overworld/sentences-repaired",
+      "source_preserved": true
+    }
+  }
+}

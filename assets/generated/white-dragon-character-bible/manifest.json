@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "asset_set_id": "white-dragon-character-bible",
+  "status": "cliprox-raster-ready",
+  "intended_use": "西游记小白龙伙伴与白龙马驿站",
+  "generation_mode": "cliprox-api-gpt-image-2",
+  "prompt_file": "assets/generated/white-dragon-character-bible/generation-prompts.md",
+  "processing": {
+    "background": "#00ff00",
+    "method": "chroma-key",
+    "script": "transparent-image-generator/scripts/chroma_key.py",
+    "tolerance": 180,
+    "feather": 8,
+    "alpha_check": "四角 alpha=0；可见区域严格幕布绿残色=0；边缘 4px 可见幕布绿=0"
+  },
+  "generated_assets": [
+    { "id": "jttw.white-dragon.stage.mysterious-egg", "path": "content/assets/companions/white-dragon/stages/mysterious-egg.png", "kind": "stage-art", "source": "cliprox-api-gpt-image-2", "quality_report": "assets/generated/white-dragon-character-bible/reports/mysterious-egg.json", "sha256": "0d6ea050d17532b3cb86451b976aeb4f0cc77d421b5cd0323d220a4c02e04929", "width": 1254, "height": 1254, "bytes": 1628922 },
+    { "id": "jttw.white-dragon.stage.awakening-egg", "path": "content/assets/companions/white-dragon/stages/awakening-egg.png", "kind": "stage-art", "source": "cliprox-api-gpt-image-2", "quality_report": "assets/generated/white-dragon-character-bible/reports/awakening-egg.json", "sha256": "502fa4cc7ee184a34f589bae18608bd3c6201b7da6fd49f2c0c0fc5da6e8b478", "width": 1254, "height": 1254, "bytes": 1882384 },
+    { "id": "jttw.white-dragon.stage.west-sea-hatchling", "path": "content/assets/companions/white-dragon/stages/west-sea-hatchling.png", "kind": "stage-art", "source": "cliprox-api-gpt-image-2", "quality_report": "assets/generated/white-dragon-character-bible/reports/west-sea-hatchling.json", "sha256": "5878bc2c994b928b2208e86845acde38ee71118fed89d7e00430760b52b336a3", "width": 1254, "height": 1254, "bytes": 1750627 },
+    { "id": "jttw.white-dragon.stage.white-dragon-revealed", "path": "content/assets/companions/white-dragon/stages/white-dragon-revealed.png", "kind": "stage-art", "source": "cliprox-api-gpt-image-2", "quality_report": "assets/generated/white-dragon-character-bible/reports/white-dragon-revealed.json", "sha256": "84dd9b40782618675d10099fff6e02d87c9046527dabc26e82d612b1277cc9be", "width": 1122, "height": 1402, "bytes": 1966340 },
+    { "id": "jttw.white-dragon.stage.white-dragon-horse", "path": "content/assets/companions/white-dragon/stages/white-dragon-horse.png", "kind": "stage-art", "source": "cliprox-api-gpt-image-2", "quality_report": "assets/generated/white-dragon-character-bible/reports/white-dragon-horse.json", "sha256": "b4541ef54a66ef1cf1d19267f349e49f8c6b850bfdd2c0a7f19848d0d2ef1481", "width": 1254, "height": 1254, "bytes": 1825063 },
+    { "id": "jttw.white-dragon.stage.cloud-riding-dragon", "path": "content/assets/companions/white-dragon/stages/cloud-riding-dragon.png", "kind": "stage-art", "source": "cliprox-api-gpt-image-2", "quality_report": "assets/generated/white-dragon-character-bible/reports/cloud-riding-dragon.json", "sha256": "5ddc70cb6667b01e99ace0dba8b8a743fa9b91b1262e1e25ee85bf6dd1176a94", "width": 1254, "height": 1254, "bytes": 1897345 },
+    { "id": "jttw.white-dragon.stage.eightfold-heavenly-dragon", "path": "content/assets/companions/white-dragon/stages/eightfold-heavenly-dragon.png", "kind": "stage-art", "source": "cliprox-api-gpt-image-2", "quality_report": "assets/generated/white-dragon-character-bible/reports/eightfold-heavenly-dragon.json", "sha256": "d4e0ba38a633c2a467c8d30971b1a310350a5c7d3b9e23dc3446b6e3ba02af74", "width": 1254, "height": 1254, "bytes": 2458842 },
+    { "id": "jttw.achievement.medal-frame", "path": "content/assets/achievements/jttw/medal-frame.svg", "kind": "medal-frame", "source": "hand-authored-svg-fallback", "sha256": "0f08cdb55092dde2fb211621c420a1b7a81a2b98b6ee8e92cfcc87ae526d5b12" }
+  ],
+  "review": {
+    "alpha_required": true,
+    "no_text_or_watermark": true,
+    "identity_review": "passed for seven-stage character bible",
+    "art_direction_review": "PNG is primary; same-name SVG remains compatibility fallback",
+    "last_checked": "2026-09-01"
+  }
+}

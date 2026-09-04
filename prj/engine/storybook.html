@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="data:,">
+  <title>豆豆龙英语 · 绘本</title>
+  <link rel="stylesheet" href="style.css?v=png1">
+  <link rel="stylesheet" href="storybook.css?v=mcquiz5">
+  <link rel="stylesheet" href="storybook-v3.css?v=9">
+  <link rel="stylesheet" href="tv.css?v=1">
+</head>
+<body>
+  <div id="app" class="sb-app">
+    <div id="topbar">
+      <a id="btn-shelf" class="sb-link" href="shelf.html">目录</a>
+      <a id="btn-dub" class="sb-link sb-dub-link" href="#">🎙 配音</a>
+      <span id="chapter-label">绘本</span>
+      <div id="sb-reader-modes" role="group" aria-label="阅读模式" hidden>
+        <button type="button" data-reader-mode="story" aria-pressed="false">剧情</button>
+        <button type="button" data-reader-mode="study" aria-pressed="false">精学</button>
+      </div>
+      <span class="spacer"></span>
+      <button id="btn-audio" type="button">▶ 朗读</button>
+      <button id="btn-wordbook" type="button">生词本</button>
+    </div>
+    <div id="sb-stage">
+      <div id="sb-mode"></div>
+      <div id="sb-stage-inner">
+        <img id="sb-page" alt="story page">
+        <img id="sb-sprite" class="hidden" alt="">
+        <div id="sb-bubble-locator" aria-hidden="true" hidden></div>
+        <div id="sb-speaking-bubble" class="sb-speaking-bubble" hidden></div>
+        <button id="sb-autoplay-unlock" class="sb-autoplay-unlock" type="button" hidden>点击开启有声阅读</button>
+      </div>
+    </div>
+    <div id="sb-panel">
+      <div id="sb-unit-head">
+        <span id="sb-unit-progress"></span>
+        <span id="sb-speaker-chip" hidden></span>
+        <button id="sb-translation-toggle" type="button" aria-pressed="true">中文</button>
+      </div>
+      <div id="sb-reader-notice" class="sb-reader-notice" aria-live="polite" hidden>
+        <span id="sb-reader-notice-text"></span>
+        <button id="sb-reader-notice-action" type="button" hidden>点击开始有声阅读</button>
+      </div>
+      <div id="sb-dialogue">
+        <div id="sb-portrait-wrap">
+          <img id="sb-portrait" alt="">
+          <span id="sb-speaker"></span>
+        </div>
+        <p id="sb-text"></p>
+        <p id="sb-zh" class="sb-zh" hidden></p>
+      </div>
+      <div id="sb-glossary"></div>
+      <div id="sb-choice" class="hidden"></div>
+      <div id="sb-nav">
+        <button id="btn-prev" type="button">上一页</button>
+        <span id="sb-pager"></span>
+        <button id="btn-next" type="button">下一页</button>
+      </div>
+      <div id="sb-review" class="hidden" aria-live="polite"></div>
+      <div id="sb-quiz" class="hidden"></div>
+      <div id="sb-endnav" class="hidden">
+        <button id="btn-study-replay" class="sb-study-replay-button" type="button" hidden>进入精学回放</button>
+        <button id="btn-study-skip" class="sb-study-skip-button" type="button" hidden>跳过本节</button>
+        <a id="btn-next-ep" class="sb-link" href="shelf.html">下一集</a>
+      </div>
+    </div>
+    <audio id="sb-audio" preload="metadata"></audio>
+    <audio id="sb-word-audio" preload="auto"></audio>
+  </div>
+  <script src="tv-remote.js?v=1"></script>
+  <script src="content-gate.js?v=1"></script>
+  <script src="storybook-route.js"></script>
+  <script src="storybook-ui.js?v=2"></script>
+  <script src="storybook-practice.js?v=1"></script>
+  <script src="study-replay-state.js?v=1"></script>
+  <script src="study-replay-queue.js?v=1"></script>
+  <script src="word-token-audio.js?v=1"></script>
+  <script src="episode-vocab-quiz.js?v=2"></script>
+  <script src="episode-reward.js?v=1"></script>
+  <script src="completion-card.js?v=1"></script>
+  <script src="media.js"></script>
+  <script src="storybook.js?v=offline-quiz-audio3"></script>
+</body>
+</html>

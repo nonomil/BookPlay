@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="data:,">
+  <title>花果山小屋 · 豆豆龙英语</title>
+  <link rel="stylesheet" href="companion.css?v=15">
+  <link rel="stylesheet" href="tv.css?v=1">
+</head>
+<body class="companion-body collection-page room-page">
+  <header class="inn-topbar">
+    <a class="back-link" href="companion.html?series=jttw">← 返回白龙马驿站</a>
+    <div>
+      <p>JOURNEY COLLECTION</p>
+      <h1>花果山小屋</h1>
+    </div>
+    <a class="medal-shortcut" href="medals.html?series=jttw" aria-label="打开西游勋章墙">
+      <span id="top-medal-count">🏅 勋章墙 · 0 / 19</span>
+    </a>
+  </header>
+
+  <main id="companion-app" class="inn-layout collection-layout room-layout" aria-busy="true">
+    <div id="companion-error" class="companion-error" role="alert" hidden>
+      <strong>小屋暂时打不开</strong>
+      <span id="companion-error-message">正在摆放你的故事纪念品，请稍后再试。</span>
+      <button id="companion-retry" type="button">重新加载</button>
+    </div>
+
+    <section class="room-card" aria-labelledby="room-title">
+      <div class="room-heading">
+        <div><div class="section-kicker">Story room · 故事房间</div><h2 id="room-title">花果山小屋</h2></div>
+        <span id="room-count" class="room-count">0 件纪念品</span>
+      </div>
+      <div id="room-scene" class="room-scene" role="group" aria-label="花果山小屋和已摆放的故事纪念品">
+        <div id="room-companion" class="room-companion" aria-label="小白龙在房间里陪你">
+          <img id="room-companion-image" alt="小白龙" hidden>
+          <span id="room-companion-fallback" aria-hidden="true">🥚</span>
+          <p id="room-reaction" class="room-reaction" role="status" aria-live="polite">点一个礼物，我们一起玩！</p>
+        </div>
+        <div id="toy-rack" class="toy-rack" aria-label="云朵玩具架">
+          <div class="toy-rack-header"><span>☁️</span><strong>云朵玩具架</strong><small>小玩具会在这里等你</small></div>
+          <div id="toy-rack-items" class="toy-rack-items"></div>
+        </div>
+        <div id="room-placements" class="room-placements"></div>
+      </div>
+      <p id="room-empty" class="room-empty">完成本集巩固后，从故事纪念品里选一件放进来。轻互动都可以跳过。</p>
+      <p class="room-legend"><span>🧸 玩具架</span><span>🌿 轻装饰</span><span>👆 点一下看看，不点也不会影响学习</span></p>
+    </section>
+  </main>
+
+  <script src="tv-remote.js?v=1"></script>
+  <script src="companion-core.js?v=1"></script>
+  <script src="episode-reward.js?v=2"></script>
+  <script src="companion.js?v=15"></script>
+</body>
+</html>

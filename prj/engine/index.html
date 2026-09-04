@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>豆豆龙英语 · 石猴出世</title>
+  <link rel="stylesheet" href="style.css?v=png1">
+  <link rel="stylesheet" href="tv.css?v=1">
+</head>
+<body>
+  <div id="app">
+    <!-- 标题界面 -->
+    <div id="title-screen" class="screen">
+      <div class="title-card">
+        <h1>豆豆龙英语 <span class="en">Doudou English</span></h1>
+        <p class="subtitle">石猴出世 · 交互式对话故事</p>
+        <div class="menu">
+          <button id="btn-continue" class="primary hidden">继续冒险</button>
+          <button id="btn-new" class="primary">开始冒险</button>
+          <a class="primary" href="home.html" style="display:inline-block;text-decoration:none;text-align:center;">有声绘本目录</a>
+        </div>
+        <p class="hint">西游记 · 对话冒险故事：分支选择 · 通关小测（个人使用）</p>
+        <p class="hint key-hint">空格 / 回车 推进 · 点击台词可朗读</p>
+      </div>
+    </div>
+
+    <!-- 游戏界面 -->
+    <div id="game-screen" class="screen hidden">
+      <div id="topbar">
+        <span id="chapter-label"></span>
+        <span class="spacer"></span>
+        <label class="pref"><input type="checkbox" id="pref-subtitle" checked> 中文字幕</label>
+        <label class="pref"><input type="checkbox" id="pref-voice" checked> 语音</label>
+        <button id="btn-restart" title="回到开头">↺ 重开</button>
+      </div>
+      <div id="stage">
+        <img id="background" draggable="false" alt="">
+        <img id="portrait-left" class="portrait" draggable="false" alt="">
+        <img id="portrait-right" class="portrait" draggable="false" alt="">
+      </div>
+      <div id="choices"></div>
+      <div id="dialogue-box">
+        <div id="speaker-name"></div>
+        <div id="text-en" title="点击朗读"></div>
+        <div id="text-zh"></div>
+        <div id="box-footer">
+          <button id="btn-speak" title="朗读本句 (TTS)">🔊</button>
+          <span class="spacer"></span>
+          <span id="advance-hint">▼</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 章节结算 -->
+    <div id="end-screen" class="screen hidden">
+      <div class="end-card">
+        <h2>本章完成</h2>
+        <div id="checkpoint-card">
+          <h3>前情小结（检查点摘要）</h3>
+          <p id="checkpoint-text"></p>
+        </div>
+        <p id="end-stats"></p>
+        <div id="quiz-area"></div>
+        <button id="btn-again" class="primary">再玩一次</button>
+      </div>
+    </div>
+
+    <div id="error-overlay" class="hidden"></div>
+  </div>
+  <script src="tv-remote.js?v=1"></script>
+  <script src="main.js?v=2"></script>
+</body>
+</html>

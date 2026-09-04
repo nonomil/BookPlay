@@ -1,0 +1,72 @@
+{
+  "schema_version": 2,
+  "asset_id": "jttw-route-companion",
+  "type": "character-animation",
+  "tool": "gpt-image-workflow",
+  "provider": "cliprox",
+  "model": "gpt-image-2",
+  "prompt": "assets/generated/jttw-route-companion/route-companion-sprite-sheet-v2.prompt.txt",
+  "source_references": [
+    "assets/generated/jttw-route-companion/wukong-walk-south.prompt.txt",
+    "assets/generated/jttw-route-companion/wukong-walk-north.prompt.txt"
+  ],
+  "generation": {
+    "source_sheet": "source/route-companion-sheet-v2.png",
+    "directional_source_sheets": {
+      "south": "tmp/imagegen/jttw-route-companion/four-dir/wukong-walk-south.png",
+      "north": "tmp/imagegen/jttw-route-companion/four-dir/wukong-walk-north.png"
+    },
+    "source_dimensions": "1536x1024",
+    "layout": "4 direction rows x 8 frames",
+    "direction_order": ["east", "south", "west", "north"],
+    "frame_order": ["contact", "left-foot-forward", "passing", "right-foot-forward", "contact", "left-foot-forward", "passing", "right-foot-forward"],
+    "background": "#00ff00 chroma-key",
+    "quality_report": "transparent/route-companion-sheet-v2.report.json",
+    "tls_verified": true,
+    "processing": [
+      "transparent-image-generator/scripts/chroma_key.py --key 0,255,0 --tolerance 180 --feather 8",
+      "keep largest connected character component per cell and remove separator pixels",
+      "align all frames to foot baseline y=466 and pivot x=192",
+      "mirror east row for west direction",
+      "pack fixed 384x512 frames into a 3072x2048 east/south/west/north atlas"
+    ]
+  },
+  "outputs": {
+    "runtime_atlas": "content/assets/generated/jttw-route-companion/transparent/wukong-walk-atlas.png",
+    "runtime_strip": "content/assets/generated/jttw-route-companion/transparent/wukong-walk-strip.png",
+    "runtime_frames": "content/assets/generated/jttw-route-companion/transparent/wukong-walk-01.png .. wukong-walk-08.png",
+    "canonical_atlas": "2d/wukong-walk-atlas.png",
+    "directional_frames": "2d/directions/{east,south,west,north}/wukong-walk-01.png .. wukong-walk-08.png",
+    "canonical_frames": "2d/wukong-walk-01.png .. wukong-walk-08.png",
+    "canonical_strip": "2d/wukong-walk-strip.png"
+  },
+  "acceptance": {
+    "alpha_checked": true,
+    "corners_transparent": true,
+    "green_visible_pct": 0,
+    "dimensions_checked": true,
+    "frame_dimensions": "384x512",
+    "strip_dimensions": "3072x512",
+    "atlas_dimensions": "3072x2048",
+    "direction_rows": 4,
+    "baseline_aligned": true,
+    "runtime_readability_target": "36x48 CSS pixels"
+  },
+  "hashes": {
+    "wukong-walk-atlas.png": "b832bf7114657113856c8461129d2fff99431b2b69437268f0d5da60cc8c77c3",
+    "wukong-walk-01.png": "4bf2d219dbabf60dc58516f9b735515fa2cc8318e76f42690993221b154933b4",
+    "wukong-walk-02.png": "0057d45a0213a8d53059102750f182660fa811383de4a34540ab0856513986d1",
+    "wukong-walk-03.png": "8cd01aa39b22590cc405765e9730183306359cb8e3381422b77345cc71437538",
+    "wukong-walk-04.png": "e72f75b75566a90b89b273808cdca8e1662f85128dd138ec1fd07a8dd6cd2bae",
+    "wukong-walk-05.png": "29ee4b3557c10af34d77c2467e41af64a865f51e8cf8de241e5b383fd7ab7781",
+    "wukong-walk-06.png": "60a1d53fd89acba693510ec811cbaa58e3703d4afa0e7b7d9e305c497b49c0e0",
+    "wukong-walk-07.png": "34b8afb58ad1383f73c0371749afd6d7217f1772772fd76cd3697585f2d7089a",
+    "wukong-walk-08.png": "136885f63c9403d0ce86e80e25fc37d3284b7145d37c705e4f5d45dc652e3ce2",
+    "wukong-walk-strip.png": "c06f4e74c99e44c210f9956545c2372f53d46647fb3655f1767ed07fc7198d81"
+  },
+  "limitations": [
+    "模型生成了逐格动作而非真正骨骼动画；小尺寸运行时以 8 帧循环播放。",
+    "东西向为已审查侧向动画与镜像版本；南北向为同一角色的新生成正面/背面动画。",
+    "角色是原创的孙悟空风格神话形象，不直接复刻视频截图或现代影视造型。"
+  ]
+}

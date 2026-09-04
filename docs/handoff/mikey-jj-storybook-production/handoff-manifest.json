@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "task_id": "mikey-jj-storybook-production",
+  "contract_revision": 6,
+  "environment_revision": 1,
+  "workspace": "G:\\Game\\BookPlay书戏",
+  "task_card": "G:\\Game\\BookPlay书戏\\.agent-control\\tasks\\mikey-jj-storybook-production\\task.md",
+  "recent_context": "G:\\Game\\BookPlay书戏\\.agent-control\\tasks\\mikey-jj-storybook-production\\recent-context.md",
+  "environment_manifest": "G:\\Game\\BookPlay书戏\\.agent-control\\env\\bookplay-mikey-jj-storybook\\environment.json",
+  "provider": "opencode-go",
+  "model": "deepseek-v4-flash",
+  "permission": "danger-full-access",
+  "owner_session_id": "session-b573307a-f6b5-457f-9497-4a097d032669",
+  "required_reads": [
+    "package.md",
+    "decisions.md",
+    "current-state.md",
+    "environment.md",
+    "execution-lane.md"
+  ],
+  "first_artifact": "prj/engine/storybook.css selector body.storybook-split.sb-mj #sb-stage; computed minHeight=auto and 390x844 page.bottom <= stage.bottom <= panel.top",
+  "claim_ceiling": "ZOMBIE_SCHOOL_INTEGRATION_CANDIDATE_ONLY"
+}

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>豆豆龙英语 · 播放</title>
+  <link rel="stylesheet" href="style.css?v=png1">
+  <link rel="stylesheet" href="wala.css?v=56">
+  <link rel="stylesheet" href="tv.css?v=6">
+</head>
+<body>
+  <!-- 旧圆形地图保留节点，默认不展示；进集从首页卡片墙 -->
+  <div id="wala-map" class="screen hidden">
+    <div id="wala-top">
+      <div class="w-coin" title="SP 积分：答对题目获得">🌟 <b id="w-sp">0</b> <span>SP</span></div>
+      <div class="w-title">西游记 · 冒险地图</div>
+      <div class="w-top-actions">
+        <button id="w-review" type="button" title="当前集知识一览">知识一览</button>
+        <a class="w-btn-gold" id="w-listen" href="#" title="整集磨耳朵（纯听力）">磨耳朵</a>
+        <a class="sb-link" href="home.html">绘本馆</a>
+      </div>
+    </div>
+    <div id="w-path"></div>
+  </div>
+
+  <!-- 场景播放器 -->
+  <div id="wala-player" class="screen hidden">
+    <div id="w-top">
+      <nav class="w-nav-btns">
+        <a class="w-nav-btn" href="shelf.html" id="w-back">选集</a>
+        <a class="w-nav-btn" href="home.html">首页</a>
+        <a class="w-nav-btn w-dub-btn" id="w-dub" href="#">🎙 配音</a>
+      </nav>
+      <span id="w-ep-title"></span>
+      <span class="spacer"></span>
+      <button id="w-auto" type="button" class="hidden">手动</button>
+      <div class="mode-toggle" title="剧情遍连续听故事；精学遍在场景后显示单词卡与少量小测">
+        <button id="w-pass-story" type="button">剧情</button>
+        <button id="w-pass-study" type="button">精学</button>
+      </div>
+      <div id="w-listen-bar" class="w-listen-bar hidden" role="status" aria-live="polite">
+        <span class="w-listen-label">磨耳朵</span>
+        <span id="w-listen-progress">第 1 / 2 遍</span>
+        <button id="w-listen-pause" type="button">暂停</button>
+        <button id="w-listen-exit" type="button">退出</button>
+      </div>
+      <div class="w-coin small">🌟 <b id="w-sp2">0</b></div>
+      <div class="w-settings">
+        <button id="w-gear" type="button" aria-label="设置" title="设置">⚙</button>
+        <div id="w-settings-panel" class="hidden" role="dialog" aria-label="播放设置">
+          <div class="w-set-row">
+            <span>字幕</span>
+            <div class="mode-toggle">
+              <button id="w-mode-en" type="button">EN</button>
+              <button id="w-mode-enzh" type="button">EN+中</button>
+            </div>
+          </div>
+          <div class="w-set-row">
+            <span>词下标注</span>
+            <div class="mode-toggle">
+              <button id="w-annot-on" type="button">有</button>
+              <button id="w-annot-off" type="button">无</button>
+            </div>
+          </div>
+          <div class="w-set-row">
+            <span title="仅在精学模式显示；剧情模式使用句中可点击单词">精学词提示</span>
+            <div class="mode-toggle">
+              <button id="w-sidecards-on" type="button">开</button>
+              <button id="w-sidecards-off" type="button">关</button>
+            </div>
+          </div>
+          <div class="w-set-row">
+            <span>学习量</span>
+            <div class="mode-toggle">
+              <button id="w-lv-lite" type="button">轻松</button>
+              <button id="w-lv-std" type="button">标准</button>
+              <button id="w-lv-max" type="button">加强</button>
+            </div>
+          </div>
+          <div class="w-set-row w-set-row-wide">
+            <span>年级段</span>
+            <div class="mode-toggle">
+              <button id="w-grade-g1-2" type="button">一二</button>
+              <button id="w-grade-g3-4" type="button">三四</button>
+              <button id="w-grade-g5-6" type="button">五六</button>
+            </div>
+          </div>
+          <div class="w-set-row w-set-row-wide">
+            <span>巩固强度</span>
+            <div class="mode-toggle">
+              <button id="w-intensity-light" type="button">轻量</button>
+              <button id="w-intensity-standard" type="button">标准</button>
+              <button id="w-intensity-challenge" type="button">挑战</button>
+            </div>
+          </div>
+          <div class="w-set-row">
+            <span>语速</span>
+            <div class="mode-toggle" title="原速=视频旁白；慢/快只改变播放速度">
+              <button id="w-rate-slow" type="button">慢</button>
+              <button id="w-rate-norm" type="button">原速</button>
+              <button id="w-rate-fast" type="button">快</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w-stage">
+      <div class="w-frame">
+        <img id="w-img" alt="">
+        <video id="w-video" playsinline preload="metadata"></video>
+        <div id="w-cards-left"></div>
+        <div id="w-cards"></div>
+        <div id="w-vocab-peek" class="w-vocab-peek hidden" role="dialog" aria-modal="false" aria-label="单词详情"></div>
+        <div class="w-dock">
+          <a class="w-avatar has-face" id="w-avatar" href="companion.html?series=jttw" aria-label="打开养宠物界面" title="打开养宠物界面">
+            <img src="../assets/companions/white-dragon/stages/mysterious-egg.png" alt="神秘龙蛋">
+          </a>
+          <div class="w-speech">
+            <div class="w-bubble">
+              <div class="w-bubble-row">
+                <div class="w-inline-nav w-inline-nav-prev" aria-label="上一句">
+                  <button id="w-prev" class="w-arrow" type="button" aria-label="上一句" title="上一句">◀</button>
+                </div>
+                <div class="w-texts">
+                  <div class="w-sent-row w-sent-row-en">
+                    <p id="w-en" title="长按文字发音"></p>
+                    <button id="w-en-play" class="w-sent-mark w-sent-en" type="button" title="重放原片" aria-label="重放原片">
+                      <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"/></svg>
+                    </button>
+                  </div>
+                  <div class="w-sent-row w-sent-row-zh hidden" id="w-zh-row">
+                    <p id="w-zh"></p>
+                    <button id="w-zh-play" class="w-sent-mark w-sent-zh" type="button" title="播放中文" aria-label="播放中文">
+                      <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 10v4h4l5 5V5L7 10H3zm13.5 2c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="w-inline-nav w-inline-nav-next" aria-label="下一句">
+                  <button id="w-next" class="w-arrow" type="button" aria-label="下一句" title="下一句">▶</button>
+                </div>
+                <span id="w-dots" class="w-dots hidden"><i></i><i></i><i></i></span>
+              </div>
+              <div id="w-wordcard" class="hidden"></div>
+              <div id="w-puzzle" class="hidden"></div>
+              <span id="w-pager" class="hidden"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="w-break-card" class="w-break-card hidden" role="dialog" aria-modal="false" aria-labelledby="w-break-title">
+        <div class="w-break-kicker">学了一会儿，眼睛和耳朵都休息一下</div>
+        <h2 id="w-break-title">要不要换成轻松听故事？</h2>
+        <p id="w-break-detail">主动学习已满 25 分钟。可以休息 5 分钟，也可以听一遍刚学过的故事。</p>
+        <div class="w-break-actions">
+          <button id="w-break-rest" type="button">休息 5 分钟</button>
+          <button id="w-break-listen" type="button">进入磨耳朵</button>
+          <button id="w-break-continue" type="button">继续学习</button>
+        </div>
+        <div id="w-break-countdown" class="w-break-countdown hidden" aria-live="polite"></div>
+      </div>
+      <div id="w-listen-panel" class="w-listen-panel hidden" role="dialog" aria-modal="false" aria-labelledby="w-listen-title">
+        <div class="w-break-kicker">轻松听，不做题</div>
+        <h2 id="w-listen-title">本集磨耳朵</h2>
+        <p>可以选择纯听力模式：隐藏视频画面，只保留清晰字幕与声音，不计入学习完成。</p>
+        <label for="w-listen-loops">循环遍数</label>
+        <select id="w-listen-loops">
+          <option value="1">1 遍</option>
+          <option value="2" selected>2 遍</option>
+          <option value="3">3 遍</option>
+        </select>
+        <div class="w-listen-panel-actions">
+          <button id="w-listen-start" type="button">开始听</button>
+          <button id="w-listen-panel-close" type="button">返回</button>
+        </div>
+      </div>
+      <div id="w-listen-done" class="w-listen-done hidden" role="dialog" aria-modal="false" aria-labelledby="w-listen-done-title">
+        <div class="w-break-kicker">这一轮听完啦</div>
+        <h2 id="w-listen-done-title">故事的声音已经在耳朵里</h2>
+        <p>可以回到刚才的学习位置，或者再听一轮。</p>
+        <div class="w-listen-panel-actions">
+          <button id="w-listen-return" type="button">回到刚才位置</button>
+          <button id="w-listen-again" type="button">再来一轮</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 知识回顾 -->
+  <div id="wala-review" class="screen hidden">
+    <div id="w-rtop">
+      <a class="sb-link" href="shelf.html" id="w-rback">🗺 返回选集</a>
+      <span id="w-rtitle"></span>
+      <span class="spacer"></span>
+      <div id="w-rtabs">
+        <button data-tab="words" class="active">单词</button>
+        <button data-tab="patterns">句型</button>
+        <button data-tab="wrong">错题</button>
+      </div>
+    </div>
+    <div id="w-rbody"></div>
+  </div>
+  <!-- 章末 -->
+  <div id="wala-end" class="screen hidden">
+    <div class="w-end-card">
+      <h2>本章完成 🎉</h2>
+      <div id="w-quiz"></div>
+      <div class="adv-nav">
+        <a id="w-next-ep" class="sb-link" href="#">下一关 →</a>
+        <a class="sb-link" href="shelf.html">回选集</a>
+      </div>
+    </div>
+  </div>
+  <script src="tv-remote.js?v=1"></script>
+  <script src="content-gate.js?v=1"></script>
+  <script src="storage.js?v=2"></script>
+  <script src="media.js?v=1"></script>
+  <script src="study-plan.js?v=2"></script>
+  <script src="quiz.js?v=1"></script>
+  <script src="review-queue.js?v=1"></script>
+  <script src="companion-core.js?v=1"></script>
+  <script src="study-session.js?v=1"></script>
+  <script src="listen-mode.js?v=1"></script>
+  <script src="voice-core.js?v=1"></script>
+  <script src="voice.js?v=1"></script>
+  <script src="wala.js?v=72"></script>
+</body>
+</html>

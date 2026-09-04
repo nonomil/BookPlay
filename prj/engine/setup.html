@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>豆豆龙英语 · 数据包</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="tv.css?v=1">
+  <style>
+    .setup { max-width: 36rem; margin: 12vh auto; padding: 0 1.4rem; color: #f4ead4; }
+    .setup h1 { font-size: 1.6rem; margin-bottom: 0.6rem; }
+    .setup p { line-height: 1.55; color: #d8c9a4; }
+    .setup code { color: #ffe08a; }
+    .setup .btns { display: flex; flex-wrap: wrap; gap: 0.8rem; margin-top: 1.2rem; }
+    .setup button {
+      padding: 0.7rem 1.2rem; border: 0; border-radius: 999px;
+      background: #c9a227; color: #2b2320; font-weight: 800; font-size: 1rem; cursor: pointer;
+    }
+    .setup button.alt { background: #6e8b6e; color: #f4ead4; }
+    .setup .st { margin-top: 1rem; color: #8fd4aa; min-height: 1.4em; }
+  </style>
+</head>
+<body>
+  <div class="setup">
+    <h1>加载数据包</h1>
+    <p>安装包已内置西游记第 1 集、Minecraft 第 1 本和 Mikey &amp; JJ 第 1 本，可以直接体验。</p>
+    <p>想继续下一集/下一本时，把对应数据包 zip 拷到手机，点「选择数据包文件」；也可以直接选解压后的文件夹。</p>
+    <div class="btns">
+      <button id="pickZip" type="button">选择数据包文件</button>
+      <button id="pick" class="alt" type="button">选择文件夹</button>
+    </div>
+    <div class="st" id="st"></div>
+  </div>
+  <script src="tv-remote.js?v=1"></script>
+  <script src="setup.js"></script>
+</body>
+</html>

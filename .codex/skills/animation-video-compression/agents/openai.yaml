@@ -1,0 +1,6 @@
+interface:
+  display_name: "动画视频压缩"
+  short_description: "使用 GPU 压缩绘本动画并校验音频、时长、跳转和体积结果"
+  default_prompt: "使用 $animation-video-compression 安全压缩一集动画视频并输出验证结果。"
+policy:
+  allow_implicit_invocation: true

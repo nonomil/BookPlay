@@ -1,0 +1,102 @@
+{
+  "style_anchor": "flat vector storybook illustration, warm ink-wash palette, Ming-dynasty Chinese legend style, soft gradients, clean shapes, no text in image",
+  "tool": "gpt-image-1 / gemini-2.5-flash-image",
+  "items": [
+    {
+      "id": "elder_monkey_base",
+      "prompt_file": "elder_monkey_base.txt",
+      "reference_images": [],
+      "out": "assets/characters/elder_monkey_base.png"
+    },
+    {
+      "id": "elder_monkey_neutral",
+      "prompt_file": "elder_monkey_neutral.txt",
+      "reference_images": [
+        "assets/characters/elder_monkey_base.png"
+      ],
+      "out": "assets/characters/elder_monkey_neutral.png"
+    },
+    {
+      "id": "elder_monkey_awed",
+      "prompt_file": "elder_monkey_awed.txt",
+      "reference_images": [
+        "assets/characters/elder_monkey_base.png"
+      ],
+      "out": "assets/characters/elder_monkey_awed.png"
+    },
+    {
+      "id": "elder_monkey_happy",
+      "prompt_file": "elder_monkey_happy.txt",
+      "reference_images": [
+        "assets/characters/elder_monkey_base.png"
+      ],
+      "out": "assets/characters/elder_monkey_happy.png"
+    },
+    {
+      "id": "stone_monkey_base",
+      "prompt_file": "stone_monkey_base.txt",
+      "reference_images": [],
+      "out": "assets/characters/stone_monkey_base.png"
+    },
+    {
+      "id": "stone_monkey_neutral",
+      "prompt_file": "stone_monkey_neutral.txt",
+      "reference_images": [
+        "assets/characters/stone_monkey_base.png"
+      ],
+      "out": "assets/characters/stone_monkey_neutral.png"
+    },
+    {
+      "id": "stone_monkey_curious",
+      "prompt_file": "stone_monkey_curious.txt",
+      "reference_images": [
+        "assets/characters/stone_monkey_base.png"
+      ],
+      "out": "assets/characters/stone_monkey_curious.png"
+    },
+    {
+      "id": "stone_monkey_brave",
+      "prompt_file": "stone_monkey_brave.txt",
+      "reference_images": [
+        "assets/characters/stone_monkey_base.png"
+      ],
+      "out": "assets/characters/stone_monkey_brave.png"
+    },
+    {
+      "id": "scene_sc01_mountain_birth",
+      "prompt_file": "scene_sc01_mountain_birth.txt",
+      "reference_images": [],
+      "out": "assets/backgrounds/sc01_mountain_birth.png"
+    },
+    {
+      "id": "mikey_base",
+      "prompt_file": "mikey_base.txt",
+      "reference_images": [],
+      "out": "assets/generated/mikey-jj-route-companion/2d/mikey-base.png"
+    },
+    {
+      "id": "mikey_walk_side_sheet",
+      "prompt_file": "mikey_walk_side_sheet.txt",
+      "reference_images": [
+        "assets/generated/mikey-jj-route-companion/2d/mikey-base.png"
+      ],
+      "out": "tmp/imagegen/mikey-jj-route-companion/four-dir/mikey-walk-east-raw.png"
+    },
+    {
+      "id": "mikey_walk_front_sheet",
+      "prompt_file": "mikey_walk_front_sheet.txt",
+      "reference_images": [
+        "assets/generated/mikey-jj-route-companion/2d/mikey-base.png"
+      ],
+      "out": "tmp/imagegen/mikey-jj-route-companion/four-dir/mikey-walk-south-raw.png"
+    },
+    {
+      "id": "mikey_walk_back_sheet",
+      "prompt_file": "mikey_walk_back_sheet.txt",
+      "reference_images": [
+        "assets/generated/mikey-jj-route-companion/2d/mikey-base.png"
+      ],
+      "out": "tmp/imagegen/mikey-jj-route-companion/four-dir/mikey-walk-north-raw.png"
+    }
+  ]
+}

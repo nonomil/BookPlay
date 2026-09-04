@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="data:,">
+  <title>白龙马驿站 · 豆豆龙英语</title>
+  <link rel="stylesheet" href="companion.css?v=15">
+  <link rel="stylesheet" href="tv.css?v=1">
+</head>
+<body class="companion-body">
+  <header class="inn-topbar">
+    <a class="back-link" href="map.html">← 返回西游地图</a>
+    <div>
+      <p>JOURNEY COMPANION</p>
+      <h1>白龙马驿站</h1>
+    </div>
+    <a id="medal-shortcut" class="medal-shortcut" href="medals.html?series=jttw" aria-label="打开西游勋章墙">
+      <span id="top-medal-count">🏅 勋章墙 · 0 / 19</span>
+    </a>
+  </header>
+
+  <main id="companion-app" class="inn-layout" aria-busy="true">
+    <div id="companion-error" class="companion-error" role="alert" hidden>
+      <strong>驿站暂时打不开</strong>
+      <span id="companion-error-message">正在准备小白龙的行囊，请稍后再试。</span>
+      <button id="companion-retry" type="button">重新加载</button>
+    </div>
+    <section class="companion-card" aria-labelledby="companion-heading">
+      <div class="section-kicker">一起长大的伙伴</div>
+      <div id="companion-stage" class="companion-stage" data-form="egg">
+        <div id="companion-avatar" class="companion-avatar" role="img" aria-label="神秘龙蛋">
+          <span id="companion-glyph">🥚</span>
+          <i class="cloud cloud-a"></i><i class="cloud cloud-b"></i>
+        </div>
+        <div class="stage-copy">
+          <span id="stage-number">成长阶段 1 / 7</span>
+          <h2 id="companion-heading">神秘龙蛋</h2>
+          <p id="stage-hint">西海的云纹龙蛋正在等待故事开门。</p>
+          <small id="canon-note">龙蛋与幼龙阶段是面向儿童的成长想象。</small>
+        </div>
+      </div>
+
+      <div id="care-actions" class="care-actions" aria-label="照料小白龙">
+        <button type="button" data-care="feed"><span>🍎</span>喂灵果</button>
+        <button type="button" data-care="groom"><span>🫧</span>洗澡梳洗</button>
+        <button type="button" data-care="play"><span>☁️</span>玩云球</button>
+        <button type="button" data-care="rest"><span>🌙</span>一起休息</button>
+      </div>
+      <p id="care-response" class="care-response" aria-live="polite">今天完成一点学习，再来互动，就能盖一枚同行印。</p>
+      <a id="companion-medal-link" class="companion-medal-link" href="medals.html?series=jttw">
+        🏅 查看西游勋章墙 · <span id="companion-medal-count">0 / 19</span>
+      </a>
+    </section>
+
+    <aside id="travel-journal" class="journal-card" aria-labelledby="journal-title">
+      <div class="section-kicker">温和打卡 · 不断签</div>
+      <h2 id="journal-title">同行日记</h2>
+      <strong id="travel-days">0</strong><span> 个同行日</span>
+      <p id="today-status">今天还没有盖同行印</p>
+      <div class="cosmetic-list" id="cosmetic-list"></div>
+      <p id="cosmetic-coming-soon" class="cosmetic-coming-soon" hidden>Byte 的专属小屋装饰正在搭建，先和它一起读故事吧！</p>
+      <small>漏一天不会清零，小白龙也不会生病或伤心。</small>
+    </aside>
+
+    <section class="room-card room-detail-only" aria-labelledby="room-title">
+      <div class="room-heading">
+        <div><div class="section-kicker">Story room · 故事房间</div><h2 id="room-title">花果山小屋</h2></div>
+        <span id="room-count" class="room-count">0 件纪念品</span>
+      </div>
+      <div id="room-scene" class="room-scene" role="group" aria-label="花果山小屋和已摆放的故事纪念品">
+        <div id="toy-rack" class="toy-rack" aria-label="云朵玩具架">
+          <div class="toy-rack-header"><span>☁️</span><strong>云朵玩具架</strong><small>小玩具会在这里等你</small></div>
+          <div id="toy-rack-items" class="toy-rack-items"></div>
+        </div>
+        <div id="room-placements" class="room-placements"></div>
+      </div>
+      <p id="room-empty" class="room-empty">完成本集巩固后，从故事纪念品里选一件放进来。轻互动都可以跳过。</p>
+      <p class="room-legend"><span>🧸 玩具架</span><span>🌿 轻装饰</span><span>👆 点一下看看，不点也不会影响学习</span></p>
+    </section>
+
+    <nav class="inn-nav" aria-label="驿站分区">
+      <a class="inn-nav-card inn-nav-card-medals" href="medals.html?series=jttw">
+        <span class="inn-nav-art" aria-hidden="true">
+          <img class="inn-nav-art-main" src="/data/assets/generated/jttw-medals-v2/transparent/story-opener-door.png" alt="" loading="eager" decoding="async" onerror="this.hidden=true;this.parentElement.querySelector('.inn-nav-art-fallback').hidden=false">
+          <img class="inn-nav-art-accent" src="/data/assets/generated/jttw-medals-v2/transparent/journey-complete-crown.png" alt="" loading="eager" decoding="async" onerror="this.hidden=true">
+          <span class="inn-nav-art-fallback" hidden>徽</span>
+          <span class="inn-nav-art-badge">19 枚</span>
+        </span>
+        <span class="inn-nav-copy">
+          <strong>西游勋章墙</strong>
+          <small>19 枚 · 点亮旅程目标</small>
+        </span>
+        <b id="medal-page-count">0 / 19</b>
+        <span class="inn-nav-arrow" aria-hidden="true">查看 →</span>
+      </a>
+      <a class="inn-nav-card inn-nav-card-stickers" href="stickers.html?series=jttw">
+        <span class="inn-nav-art inn-nav-art-stickers" aria-hidden="true">
+          <img class="inn-nav-art-main" src="/data/assets/generated/jttw-ep001-story-rewards/transparent/jttw-ep001-stone-shard.png" alt="" loading="eager" decoding="async" onerror="this.hidden=true;this.parentElement.querySelector('.inn-nav-art-fallback').hidden=false">
+          <img class="inn-nav-art-accent" src="/data/assets/generated/jttw-ep001-story-rewards/transparent/jttw-ep001-heaven-light.png" alt="" loading="eager" decoding="async" onerror="this.hidden=true">
+          <span class="inn-nav-art-fallback" hidden>册</span>
+          <span class="inn-nav-art-badge">故事礼物</span>
+        </span>
+        <span class="inn-nav-copy">
+          <strong>西游故事贴纸册</strong>
+          <small>108 件 · 每关带走一件</small>
+        </span>
+        <b id="sticker-page-count">0 / 108</b>
+        <span class="inn-nav-arrow" aria-hidden="true">查看 →</span>
+      </a>
+      <a class="inn-nav-card inn-nav-card-room" href="room.html?series=jttw">
+        <span class="inn-nav-art inn-nav-art-room" aria-hidden="true">
+          <img class="inn-nav-room-image" src="/data/assets/generated/wala-gamification/companion-room-bg-v1.png" alt="" loading="eager" decoding="async" onerror="this.hidden=true;this.nextElementSibling.hidden=false">
+          <span class="inn-nav-art-fallback" hidden>屋</span>
+          <span class="inn-nav-art-badge">可布置</span>
+        </span>
+        <span class="inn-nav-copy">
+          <strong>花果山小屋</strong>
+          <small>布置玩具与故事纪念品</small>
+        </span>
+        <b id="room-page-count">0 件</b>
+        <span class="inn-nav-arrow" aria-hidden="true">进入 →</span>
+      </a>
+    </nav>
+  </main>
+
+  <script src="tv-remote.js?v=1"></script>
+  <script src="companion-core.js?v=1"></script>
+  <script src="episode-reward.js?v=2"></script>
+  <script src="companion.js?v=15"></script>
+</body>
+</html>

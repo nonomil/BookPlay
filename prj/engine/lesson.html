@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>豆豆龙英语 · 知识巩固</title>
+  <link rel="icon" href="../assets/ui/doudou-loong-icon.png">
+  <link rel="stylesheet" href="lesson.css?v=10">
+  <link rel="stylesheet" href="tv.css?v=2">
+</head>
+<body class="lesson-body">
+  <main class="lesson-shell">
+    <header class="lesson-topbar">
+      <a class="icon-link" href="shelf.html" aria-label="返回选集">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+        <span>选集</span>
+      </a>
+      <div class="lesson-heading">
+        <p id="lesson-kicker">本集知识巩固</p>
+        <div class="lesson-heading-main">
+          <h1 id="lesson-title">正在准备题目</h1>
+          <button id="lesson-title-speak" class="audio-button title-audio" type="button" title="朗读篇章标题（英文和中文）" aria-label="朗读篇章标题（英文和中文）">
+            <svg class="speaker-mark" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10v4h4l5 5V5L7 10H3zm11-2.03v8.05A4.49 4.49 0 0016.5 12 4.49 4.49 0 0014 7.97zM14 3.23v2.06a7 7 0 010 13.42v2.06a9 9 0 000-17.54z"/></svg>
+            <span class="sr-only">朗读篇章标题</span>
+          </button>
+        </div>
+        <p id="lesson-title-zh" class="lesson-title-zh lesson-zh" hidden></p>
+        <div class="lesson-intro-row">
+          <p id="lesson-intro-en" class="lesson-intro-en"></p>
+          <button id="lesson-intro-speak" class="audio-button intro-audio" type="button" title="朗读篇章导语（英文和中文）" aria-label="朗读篇章导语（英文和中文）">
+            <svg class="speaker-mark" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10v4h4l5 5V5L7 10H3zm11-2.03v8.05A4.49 4.49 0 0016.5 12 4.49 4.49 0 0014 7.97zM14 3.23v2.06a7 7 0 010 13.42v2.06a9 9 0 000-17.54z"/></svg>
+            <span class="sr-only">朗读篇章导语</span>
+          </button>
+        </div>
+        <p id="lesson-intro-zh" class="lesson-intro-zh lesson-zh" hidden></p>
+      </div>
+      <button id="lesson-hint" class="hint-button" type="button" aria-expanded="false" aria-controls="lesson-card" title="提示：显示中文">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a7 7 0 00-4 12.74V19h8v-3.26A7 7 0 0012 3zm-2 18h4m-3-5h2"/></svg>
+        <span class="hint-label">提示中文</span>
+      </button>
+      <div id="lesson-progress" class="progress-pill" aria-label="答题进度">0 / 0</div>
+    </header>
+
+    <section class="lesson-stage" aria-labelledby="lesson-title">
+      <aside class="teacher-card" data-character-id="doudou-teacher">
+        <div class="teacher-portrait">
+          <img id="lesson-teacher" src="../assets/cast/doudou-teacher/idle.png" alt="豆豆龙老师" data-state="idle">
+        </div>
+        <div>
+          <strong>豆豆龙老师</strong>
+          <p id="teacher-tip">做完几道小题，就可以继续下一集。</p>
+        </div>
+        <img id="lesson-slide" class="lesson-slide" alt="本集课件插图" hidden>
+      </aside>
+
+      <article id="lesson-card" class="question-card" aria-live="polite" aria-busy="true">
+        <div class="loading-state">
+          <span class="loading-ring" aria-hidden="true"></span>
+          <p>正在读取本集知识点…</p>
+        </div>
+      </article>
+    </section>
+  </main>
+  <script src="tv-remote.js?v=1"></script>
+  <script src="lesson-core.js?v=5"></script>
+  <script src="voice-core.js?v=1"></script>
+  <script src="voice.js?v=1"></script>
+  <script src="review-queue.js?v=1"></script>
+  <script src="episode-reward.js?v=2"></script>
+  <script src="lesson.js?v=10"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>豆豆龙英语 · 趣配音</title>
+  <link rel="stylesheet" href="style.css?v=png1">
+  <link rel="stylesheet" href="dub.css?v=1">
+  <link rel="stylesheet" href="tv.css?v=6">
+</head>
+<body>
+  <div id="dub-app" class="dub-app">
+    <header id="dub-top">
+      <a id="dub-back" class="dub-btn" href="shelf.html">返回</a>
+      <span id="dub-title" class="dub-title">趣配音</span>
+      <span class="spacer"></span>
+      <div class="w-coin" title="SP 积分">🌟 <b id="dub-sp">0</b> <span>SP</span></div>
+      <button id="dub-theater-btn" type="button" title="用自己的声音连看本集">🎬 放映厅</button>
+    </header>
+
+    <div id="dub-notice" class="dub-notice hidden" role="status" aria-live="polite"></div>
+
+    <main id="dub-main">
+      <section id="dub-list" class="dub-list" aria-label="台词本">
+        <div class="dub-list-head">台词本 · 已配 <b id="dub-done">0</b>/<b id="dub-total">0</b> 句</div>
+        <ol id="dub-scenes"></ol>
+      </section>
+
+      <section id="dub-studio" class="dub-studio" aria-label="配音工坊">
+        <div class="dub-stage">
+          <video id="dub-video" class="dub-video" playsinline preload="metadata"></video>
+          <img id="dub-frame" class="dub-frame hidden" alt="场景插图">
+        </div>
+        <div class="dub-script">
+          <span id="dub-speaker" class="dub-speaker"></span>
+          <p id="dub-en" class="dub-en" lang="en"></p>
+          <p id="dub-zh" class="dub-zh"></p>
+        </div>
+        <div class="dub-controls">
+          <button id="dub-hear" type="button">▶ 听原声</button>
+          <button id="dub-rec" type="button" class="dub-rec" hidden>⏺ 开始录音</button>
+          <button id="dub-play" type="button" disabled>▶ 听我的</button>
+        </div>
+        <div id="dub-status" class="dub-status" role="status" aria-live="polite">选一句台词，跟着配音吧！</div>
+        <label id="dub-withvideo-wrap" class="dub-check hidden">
+          <input type="checkbox" id="dub-withvideo" checked> 画面伴录（对着画面配音）
+        </label>
+        <div class="dub-actions">
+          <div id="dub-stars" class="dub-stars" role="group" aria-label="给这次配音打星">
+            <span>自评：</span>
+            <button type="button" data-star="1" aria-label="一颗星">⭐</button>
+            <button type="button" data-star="2" aria-label="两颗星">⭐</button>
+            <button type="button" data-star="3" aria-label="三颗星">⭐</button>
+          </div>
+          <button id="dub-save" type="button" disabled>保存</button>
+          <button id="dub-delete" type="button" class="hidden">删除</button>
+        </div>
+      </section>
+    </main>
+
+    <section id="dub-theater" class="dub-theater hidden" aria-label="我的声音放映厅">
+      <video id="dub-tvideo" class="dub-tvideo" playsinline preload="auto"></video>
+      <img id="dub-tframe" class="dub-tframe hidden" alt="场景插图">
+      <div class="dub-subtitle">
+        <span id="dub-tspeaker" class="dub-speaker"></span>
+        <p id="dub-ten" class="dub-en" lang="en"></p>
+        <p id="dub-tzh" class="dub-zh"></p>
+      </div>
+      <div class="dub-theater-bar">
+        <button id="dub-tstop" type="button">退出放映</button>
+        <div id="dub-tprogress" class="dub-progress"></div>
+      </div>
+    </section>
+  </div>
+
+  <audio id="dub-audio" preload="auto"></audio>
+  <audio id="dub-take" preload="auto"></audio>
+  <audio id="dub-taudio" preload="auto"></audio>
+  <audio id="dub-ttake" preload="auto"></audio>
+
+  <script src="tv-remote.js?v=1"></script>
+  <script src="storage.js?v=2"></script>
+  <script src="dub-core.js?v=1"></script>
+  <script src="dub-store.js?v=1"></script>
+  <script src="dub-recorder.js?v=1"></script>
+  <script src="dub.js?v=1"></script>
+</body>
+</html>

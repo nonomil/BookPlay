@@ -1,0 +1,1027 @@
+/* Candidate unified reader styles. Every rule is scoped so legacy remains a safe rollback. */
+body.sb-ui-v3 {
+  --sb-v3-accent: #8fd3ff;
+  --sb-v3-accent-strong: #d6f2ff;
+  --sb-v3-panel: rgba(12, 24, 36, 0.96);
+  --sb-v3-border: rgba(143, 211, 255, 0.28);
+}
+
+body.sb-ui-v3 #sb-stage-inner {
+  border: 1px solid var(--sb-v3-border);
+}
+
+body.sb-ui-v3 #sb-panel {
+  background: var(--sb-v3-panel);
+}
+
+body.sb-ui-v3 {
+  overflow: hidden;
+  background: #07121d;
+}
+
+body.sb-ui-v3 .sb-app {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) clamp(380px, 32vw, 480px);
+  grid-template-rows: 64px minmax(0, 1fr);
+  height: 100vh;
+  min-height: 0;
+}
+
+/* Mikey & JJ pages are portrait comics. A wide left stage only letterboxes
+   the PDF; give that leftover width to the learning column on desktop. */
+@media (min-width: 901px) {
+  body.sb-ui-v3.sb-mj .sb-app {
+    grid-template-columns: minmax(260px, 0.72fr) minmax(460px, 1.28fr);
+  }
+}
+
+body.sb-ui-v3 #topbar {
+  position: relative;
+  inset: auto;
+  grid-column: 1 / -1;
+  grid-row: 1;
+  min-height: 64px;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.65rem 1rem;
+  background: #0d2233;
+  border-bottom: 1px solid var(--sb-v3-border);
+}
+
+body.sb-ui-v3 #chapter-label {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--sb-v3-accent-strong);
+  font-weight: 700;
+}
+
+body.sb-ui-v3 #sb-stage {
+  grid-column: 1;
+  grid-row: 2;
+  min-width: 0;
+  min-height: 0;
+  padding: 1rem;
+  background: #06111c;
+}
+
+body.sb-ui-v3 #sb-stage-inner {
+  width: 100%;
+  max-width: 100%;
+  max-height: calc(100vh - 84px);
+  border-radius: 10px;
+  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.5);
+}
+
+body.sb-ui-v3 #sb-page {
+  width: 100%;
+  max-height: calc(100vh - 84px);
+  object-fit: contain;
+}
+
+body.sb-ui-v3 #sb-panel {
+  grid-column: 2;
+  grid-row: 2;
+  min-width: 0;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  overflow: auto;
+  padding: 1rem 1.15rem 1.15rem;
+  border: 0;
+  border-left: 1px solid var(--sb-v3-border);
+  box-shadow: -12px 0 32px rgba(0, 0, 0, 0.24);
+}
+
+body.sb-ui-v3 #sb-dialogue,
+body.sb-ui-v3 #sb-glossary,
+body.sb-ui-v3 #sb-choice,
+body.sb-ui-v3 #sb-quiz,
+body.sb-ui-v3 #sb-endnav {
+  flex: 0 0 auto;
+}
+
+body.sb-ui-v3 #sb-unit-head {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: 2rem;
+  color: var(--sb-v3-accent);
+  font-size: 0.82rem;
+}
+
+body.sb-ui-v3 #sb-unit-progress {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+body.sb-ui-v3 #sb-speaker-chip {
+  padding: 0.2rem 0.55rem;
+  border: 1px solid var(--sb-v3-accent);
+  border-radius: 999px;
+  color: var(--sb-v3-accent-strong);
+  font-weight: 700;
+}
+
+body.sb-ui-v3 #sb-speaker-chip[data-speaker="mikey"] {
+  border-color: #ff8b7e;
+  color: #ffd9d3;
+}
+
+body.sb-ui-v3 #sb-speaker-chip[data-speaker="jj"] {
+  border-color: #78db8a;
+  color: #d9ffe0;
+}
+
+body.sb-ui-v3 #sb-speaker-chip[data-speaker="narrator"] {
+  border-color: #f0c66e;
+  color: #ffedbe;
+}
+
+body.sb-ui-v3 #sb-speaker-chip[data-speaker="system"] {
+  border-color: #a6b2be;
+  color: #e0e9ef;
+}
+
+body.sb-ui-v3 #sb-translation-toggle {
+  margin-left: auto;
+  min-height: 32px;
+  padding: 0 0.7rem;
+  border-color: var(--sb-v3-border);
+  color: var(--sb-v3-accent-strong);
+}
+
+body.sb-ui-v3 #sb-translation-toggle[aria-pressed="false"] {
+  opacity: 0.58;
+}
+
+body.sb-ui-v3 #sb-reader-modes {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.15rem;
+  padding: 0.15rem;
+  border: 1px solid var(--sb-v3-border);
+  border-radius: 999px;
+}
+
+body.sb-ui-v3 #sb-reader-modes[hidden] {
+  display: none;
+}
+
+body.sb-ui-v3 #sb-reader-modes button {
+  min-height: 34px;
+  padding: 0 0.75rem;
+  border: 0;
+  border-radius: 999px;
+  color: #b9d2e4;
+}
+
+body.sb-ui-v3 #sb-reader-modes button[aria-pressed="true"] {
+  background: var(--sb-v3-accent);
+  color: #07121d;
+  font-weight: 800;
+}
+
+body.sb-ui-v3 #sb-text {
+  max-height: none;
+  font-size: clamp(1.08rem, 1.45vw, 1.32rem);
+  line-height: 1.78;
+  color: #eef7ff;
+}
+
+body.sb-ui-v3 #sb-text mark {
+  color: #f7fbff;
+  background: rgba(143, 211, 255, 0.22);
+}
+
+/* Mikey & JJ uses the same sentence-caption surface as Minecraft.  The
+ * previous implementation styled only the hidden speaking bubble, so the
+ * visible caption looked inert even though its words were clickable. */
+body.sb-ui-v3.sb-mj #sb-text .sb-sentence-word {
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 0 0.08em;
+  transition: background 120ms ease, color 120ms ease, opacity 120ms ease;
+}
+
+body.sb-ui-v3.sb-mj #sb-text .sb-sentence-word.has-static-audio {
+  border-bottom: 1px dotted rgba(255, 216, 79, 0.72);
+}
+
+body.sb-ui-v3.sb-mj #sb-text .sb-sentence-word.has-definition {
+  color: #ffd84f;
+}
+
+body.sb-ui-v3.sb-mj #sb-text .sb-sentence-word.is-word-active {
+  color: #07121d;
+  background: #ffd84f;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.28);
+}
+
+body.sb-ui-v3.sb-mj #sb-text .sb-sentence-word.is-word-done {
+  opacity: 0.72;
+}
+
+body.sb-ui-v3.sb-mj #sb-text .sb-sentence-word.is-word-wait {
+  opacity: 0.9;
+}
+
+body.sb-ui-v3.sb-mj #sb-text .sb-sentence-word:focus-visible {
+  outline: 2px solid #fff1a8;
+  outline-offset: 2px;
+}
+
+body.sb-ui-v3 #sb-glossary {
+  color: #c8d9e8;
+}
+
+body.sb-ui-v3 #sb-zh:not([hidden]) {
+  display: block;
+  margin-top: 0.5rem;
+  color: #b9d2e4;
+  font-size: 0.98rem;
+  line-height: 1.55;
+}
+
+body.sb-ui-v3 #sb-reader-notice:not([hidden]) {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.65rem 0.75rem;
+  border: 1px solid rgba(255, 205, 92, 0.5);
+  border-radius: 10px;
+  background: rgba(95, 70, 22, 0.22);
+  color: #ffe3a2;
+  font-size: 0.88rem;
+}
+
+body.sb-ui-v3 #sb-reader-notice-action {
+  flex: 0 0 auto;
+  min-height: 36px;
+  border-color: rgba(255, 205, 92, 0.7);
+  color: #ffe3a2;
+}
+
+body.sb-ui-v3 #sb-nav {
+  margin-top: auto;
+  padding-top: 0.6rem;
+}
+
+body.sb-ui-v3 #sb-autoplay-unlock {
+  display: none !important;
+}
+
+/* Unified v3 keeps the comic unobstructed. Sentence text, speaker chip and
+ * word-level highlight live in the learning column; the legacy bubble node is
+ * retained only for backward-compatible markup and is always hidden here. */
+body.sb-ui-v3 #sb-stage-inner {
+  position: relative;
+}
+
+body.sb-ui-v3 #sb-speaking-bubble {
+  display: none !important;
+}
+
+body.sb-ui-v3 #sb-bubble-locator {
+  display: none !important;
+}
+
+body.sb-ui-v3 :is(button, a, [role="button"]):focus-visible {
+  outline: 3px solid #fff1a8;
+  outline-offset: 2px;
+}
+
+body.sb-ui-v3.sb-review-full,
+body.sb-ui-v3.sb-practice-result-full,
+body.sb-ui-v3.sb-quiz-full {
+  overflow: hidden;
+}
+
+body.sb-ui-v3.sb-review-full .sb-app,
+body.sb-ui-v3.sb-practice-result-full .sb-app,
+body.sb-ui-v3.sb-quiz-full .sb-app {
+  display: block;
+  height: 100vh;
+}
+
+body.sb-ui-v3:is(.sb-review-full, .sb-practice-result-full, .sb-quiz-full) #topbar,
+body.sb-ui-v3:is(.sb-review-full, .sb-practice-result-full, .sb-quiz-full) #sb-stage,
+body.sb-ui-v3:is(.sb-review-full, .sb-practice-result-full, .sb-quiz-full) #sb-feedback,
+body.sb-ui-v3:is(.sb-review-full, .sb-practice-result-full, .sb-quiz-full) #sb-endnav {
+  display: none !important;
+}
+
+body.sb-ui-v3:is(.sb-review-full, .sb-practice-result-full, .sb-quiz-full) #sb-panel {
+  display: block;
+  width: min(980px, 94vw);
+  height: 100vh;
+  margin: 0 auto;
+  overflow: auto;
+  border: 0;
+  padding: clamp(2rem, 7vh, 5rem) clamp(1rem, 5vw, 4rem);
+  background: #0b1b2a;
+}
+
+body.sb-ui-v3.sb-review-full #sb-panel > :not(#sb-review),
+body.sb-ui-v3.sb-practice-result-full #sb-panel > :not(#sb-review),
+body.sb-ui-v3.sb-quiz-full #sb-panel > :not(#sb-quiz) {
+  display: none !important;
+}
+
+body.sb-ui-v3.sb-review-full #sb-review,
+body.sb-ui-v3.sb-practice-result-full #sb-review,
+body.sb-ui-v3.sb-quiz-full #sb-quiz {
+  display: block;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+body.sb-ui-v3 .sb-review-head {
+  text-align: center;
+}
+
+body.sb-ui-v3 .sb-review-head h2 {
+  margin: 0.5rem 0 0.35rem;
+  color: #eef7ff;
+  font-size: clamp(1.7rem, 4vw, 2.6rem);
+}
+
+body.sb-ui-v3 .sb-review-subtitle,
+body.sb-ui-v3 .sb-review-empty {
+  color: #b9d2e4;
+}
+
+body.sb-ui-v3 .sb-review-words {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin: 2rem 0;
+}
+
+body.sb-ui-v3 .sb-review-word {
+  display: grid;
+  gap: 0.25rem;
+  min-height: 110px;
+  padding: 0.8rem;
+  border: 1px solid var(--sb-v3-border);
+  border-radius: 12px;
+  background: rgba(18, 46, 68, 0.78);
+  text-align: left;
+}
+
+body.sb-ui-v3 .sb-review-word strong { color: #f4fbff; font-size: 1.1rem; }
+body.sb-ui-v3 .sb-review-word span { color: #bfe4ff; }
+body.sb-ui-v3 .sb-review-word small { color: var(--sb-v3-accent); }
+
+body.sb-ui-v3 .sb-review-actions {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+body.sb-ui-v3 .sb-review-actions button {
+  min-height: 48px;
+  padding: 0 1.25rem;
+}
+
+body.sb-ui-v3 .sb-review-primary {
+  border-color: var(--sb-v3-accent);
+  background: var(--sb-v3-accent);
+  color: #07121d;
+  font-weight: 800;
+}
+
+body.sb-ui-v3 .sb-result-score {
+  margin: 1.5rem 0;
+  color: #f4fbff;
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  text-align: center;
+}
+
+body.sb-ui-v3 .sb-recovery-note {
+  width: min(680px, 100%);
+  margin: -.45rem auto 1rem;
+  padding: .7rem 1rem;
+  border: 2px solid #f0c66e;
+  border-radius: 3px;
+  background: rgba(32, 57, 65, .86);
+  color: #fff1a8;
+  font-size: .95rem;
+  font-weight: 800;
+  line-height: 1.45;
+  text-align: center;
+  box-shadow: 4px 4px 0 rgba(7, 18, 29, .5);
+}
+
+body.sb-ui-v3 .sb-recovery-note:empty {
+  display: none;
+}
+
+body.sb-ui-v3 .sb-completion-card {
+  position: relative;
+  min-height: min(760px, 82vh);
+  padding: clamp(1rem, 3vw, 2.5rem);
+  border: 1px solid var(--sb-v3-border);
+  border-radius: 22px;
+  background:
+    linear-gradient(180deg, rgba(7, 25, 40, .72), rgba(7, 25, 40, .96)),
+    var(--sb-completion-bg, none) center / cover no-repeat,
+    #0e2a40;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, .24);
+}
+
+body.sb-ui-v3 .sb-completion-companion {
+  position: absolute;
+  top: clamp(.65rem, 2vw, 1.35rem);
+  right: clamp(.65rem, 3vw, 2rem);
+  z-index: 0;
+  width: clamp(100px, 16vw, 190px);
+  max-height: 190px;
+  object-fit: contain;
+  object-position: bottom right;
+  pointer-events: none;
+  filter: drop-shadow(0 12px 12px rgba(0, 0, 0, .24));
+  opacity: .96;
+}
+
+body.sb-ui-v3 .sb-completion-card .sb-review-head,
+body.sb-ui-v3 .sb-completion-card .sb-result-score,
+body.sb-ui-v3 .sb-completion-card .sb-result-wrong,
+body.sb-ui-v3 .sb-completion-card .sb-review-actions {
+  position: relative;
+  z-index: 1;
+}
+
+body.sb-ui-v3 .sb-vocab-progress {
+  margin: .75rem 0 0;
+  color: #f8db7b;
+  font-size: .98rem;
+  font-variant-numeric: tabular-nums;
+}
+
+body.sb-ui-v3 .sb-completion-rewards {
+  position: relative;
+  z-index: 1;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(177, 215, 240, .28);
+}
+
+body.sb-ui-v3 .sb-reward-pill,
+body.sb-ui-v3 .sb-reward-confirmation {
+  margin: .5rem 0;
+  color: #fff1a8;
+  font-weight: 700;
+}
+
+body.sb-ui-v3 .sb-reward-sticker { color: #a7e9c0; }
+body.sb-ui-v3 .sb-reward-choice-heading { color: #c9dceb; }
+body.sb-ui-v3 .sb-reward-choice-note {
+  display: block;
+  margin-top: -.2rem;
+  color: #9eb8c7;
+  font-size: .78rem;
+}
+body.sb-ui-v3 .sb-reward-choice-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: .75rem;
+  margin-top: .75rem;
+}
+body.sb-ui-v3 .sb-reward-choice {
+  display: grid;
+  gap: .3rem;
+  align-content: start;
+  min-height: 84px;
+  padding: .8rem;
+  border: 1px solid var(--sb-v3-border);
+  border-radius: 14px;
+  background: rgba(18, 46, 68, .85);
+  color: #eef7ff;
+  text-align: left;
+  cursor: pointer;
+}
+body.sb-ui-v3 .sb-reward-choice img {
+  display: block;
+  width: min(100%, 180px);
+  height: clamp(96px, 13vw, 148px);
+  margin: 0 auto .2rem;
+  object-fit: contain;
+  border-radius: 10px;
+  filter: drop-shadow(0 5px 8px rgba(0, 0, 0, .22));
+}
+body.sb-ui-v3 .sb-reward-choice-fallback {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: clamp(96px, 13vw, 148px);
+  margin-bottom: .2rem;
+  border-radius: 10px;
+  background: rgba(12, 32, 48, .54);
+  font-size: clamp(2.8rem, 6vw, 4.5rem);
+}
+body.sb-ui-v3 .sb-reward-choice:hover { border-color: var(--sb-v3-accent); }
+body.sb-ui-v3 .sb-reward-choice span { color: #b9d2e4; font-size: .86rem; }
+body.sb-ui-v3 .sb-reward-choice:disabled { opacity: .55; cursor: default; }
+body.sb-ui-v3 .sb-reward-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: .6rem;
+  margin-top: .8rem;
+}
+body.sb-ui-v3 .sb-reward-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  padding: .55rem .9rem;
+  border: 1px solid var(--sb-v3-border);
+  border-radius: 999px;
+  color: #eef7ff;
+  background: rgba(18, 62, 81, .82);
+  font-weight: 800;
+  text-decoration: none;
+}
+body.sb-ui-v3 .sb-reward-action:hover,
+body.sb-ui-v3 .sb-reward-action:focus-visible { border-color: var(--sb-v3-accent); background: rgba(38, 91, 111, .9); }
+body.sb-ui-v3 .sb-reward-action-next { color: #17374a; background: #ffd964; border-color: #ffeaa1; }
+
+.sb-reward-confetti { position: fixed; inset: 0; z-index: 120; pointer-events: none; overflow: hidden; }
+.sb-reward-confetti i {
+  position: absolute;
+  top: -18px;
+  left: var(--x);
+  width: 8px;
+  height: 14px;
+  border-radius: 2px;
+  background: var(--color);
+  opacity: 0;
+  transform: rotate(0deg);
+  animation: sb-reward-confetti-fall 1.35s cubic-bezier(.2, .7, .35, 1) var(--delay) forwards;
+}
+@keyframes sb-reward-confetti-fall {
+  0% { opacity: 0; transform: translate3d(0, -12px, 0) rotate(0deg); }
+  12% { opacity: .95; }
+  100% { opacity: 0; transform: translate3d(calc((var(--x) - 50vw) * .18), 106vh, 0) rotate(var(--spin)); }
+}
+@media (prefers-reduced-motion: reduce) { .sb-reward-confetti { display: none; } }
+
+body.sb-ui-v3 .sb-result-wrong {
+  margin: 0 auto;
+  max-width: 680px;
+  padding: 1rem;
+  border: 1px solid var(--sb-v3-border);
+  border-radius: 12px;
+  color: #c9dceb;
+}
+
+body.sb-ui-v3 .sb-quiz-prompt-zh { color: #b9d2e4; }
+
+@media (max-width: 600px) {
+  body.sb-ui-v3 .sb-review-words { grid-template-columns: 1fr 1fr; }
+  body.sb-ui-v3 .sb-review-actions { flex-wrap: wrap; }
+  body.sb-ui-v3 .sb-reward-choice-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 390px) {
+  body.sb-ui-v3 .sb-review-words { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 900px) {
+  body.sb-ui-v3 {
+    overflow: auto;
+  }
+
+  body.sb-ui-v3 .sb-app {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: 60px minmax(46vh, 1fr) auto;
+    min-height: 100vh;
+    height: auto;
+    width: 100%;
+  }
+
+  body.sb-ui-v3 #topbar {
+    grid-column: 1;
+    grid-row: 1;
+    min-height: 60px;
+    min-width: 0;
+    width: 100%;
+    padding: 0.5rem 0.65rem;
+  }
+
+  body.sb-ui-v3 #sb-stage {
+    grid-column: 1;
+    grid-row: 2;
+    min-height: 46vh;
+    width: 100%;
+    padding: 0.65rem;
+  }
+
+  body.sb-ui-v3 #sb-stage-inner,
+  body.sb-ui-v3 #sb-page {
+    max-height: 46vh;
+  }
+
+  body.sb-ui-v3 #sb-stage-inner {
+    min-width: 0;
+  }
+
+  body.sb-ui-v3 #sb-panel {
+    grid-column: 1;
+    grid-row: 3;
+    width: 100%;
+    overflow: visible;
+    padding: 0.85rem 0.8rem 1rem;
+    border-left: 0;
+    border-top: 1px solid var(--sb-v3-border);
+  }
+
+  body.sb-ui-v3 #sb-reader-modes button {
+    min-height: 40px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body.sb-ui-v3 *,
+  body.sb-ui-v3 *::before,
+  body.sb-ui-v3 *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+/* --------------------------------------------------------------------------
+ * Review stage refresh: paper-bright comic frame, readable word deck, and
+ * progress-first hierarchy. The generated background is decoration only;
+ * every learning label remains real HTML for accessibility and localization.
+ * ------------------------------------------------------------------------ */
+body.sb-ui-v3.sb-review-full {
+  overflow: hidden;
+  background: #f7f0d9;
+}
+
+body.sb-ui-v3.sb-review-full #sb-panel {
+  position: relative;
+  display: block;
+  width: 100vw;
+  max-width: none;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  background:
+    linear-gradient(90deg, rgba(9, 43, 48, .28), rgba(255, 250, 228, .08) 22%, rgba(255, 250, 228, .08) 78%, rgba(9, 43, 48, .28)),
+    linear-gradient(180deg, rgba(255, 255, 255, .08), rgba(8, 35, 42, .18)),
+    var(--sb-review-bg, none) center / cover no-repeat,
+    #f7f0d9;
+}
+
+body.sb-ui-v3.sb-review-full #sb-review {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  width: min(1160px, 100%);
+  max-width: none;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: clamp(1.6rem, 5vh, 4.3rem) clamp(1rem, 5vw, 4.5rem) 2rem;
+  overflow-y: auto;
+  color: #0d2b36;
+}
+
+body.sb-ui-v3.sb-review-full .sb-review-head {
+  width: min(760px, 100%);
+  margin: 0 auto;
+  text-align: center;
+}
+
+body.sb-ui-v3.sb-review-full .sb-review-head .sb-section-label {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  margin: 0;
+  padding: 0 .75rem;
+  border: 1px solid rgba(21, 99, 77, .38);
+  border-radius: 999px;
+  background: rgba(234, 250, 223, .86);
+  color: #176543;
+  font-size: .74rem;
+  font-weight: 900;
+  letter-spacing: .14em;
+}
+
+body.sb-ui-v3.sb-review-full .sb-review-head h2 {
+  margin: .75rem 0 .35rem;
+  color: #092a36;
+  font-family: "Trebuchet MS", "Microsoft YaHei", sans-serif;
+  font-size: clamp(2rem, 5vw, 3.6rem);
+  font-weight: 900;
+  letter-spacing: -.025em;
+  line-height: 1.08;
+  text-shadow: 0 2px 0 rgba(255, 255, 255, .58);
+}
+
+body.sb-ui-v3.sb-review-full .sb-review-subtitle {
+  margin: 0;
+  color: #315865;
+  font-size: clamp(.95rem, 1.8vw, 1.1rem);
+  line-height: 1.55;
+}
+
+body.sb-ui-v3.sb-review-full .sb-vocab-progress {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 38px;
+  margin: 1rem 0 0;
+  padding: .35rem .9rem;
+  border: 2px solid rgba(13, 70, 78, .22);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, .78);
+  color: #0c4d59;
+  font-size: .93rem;
+  font-weight: 850;
+  font-variant-numeric: tabular-nums;
+  box-shadow: 0 4px 0 rgba(13, 70, 78, .1);
+}
+
+body.sb-ui-v3.sb-review-full .sb-review-progress-track {
+  width: min(360px, 78vw);
+  height: 10px;
+  margin: .75rem auto 0;
+  overflow: hidden;
+  border: 2px solid rgba(13, 70, 78, .28);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, .72);
+}
+
+body.sb-ui-v3.sb-review-full .sb-review-progress-fill {
+  display: block;
+  height: 100%;
+  min-width: 0;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #2c9b63, #f2c34e);
+  transition: width 220ms ease-out;
+}
+
+body.sb-ui-v3.sb-review-full .sb-review-helper {
+  margin: .6rem 0 0;
+  color: #54717a;
+  font-size: .84rem;
+  font-weight: 650;
+}
+
+body.sb-ui-v3.sb-review-full .sb-review-words {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(.75rem, 1.6vw, 1.15rem);
+  width: 100%;
+  max-width: 980px;
+  margin: clamp(1.25rem, 3vh, 2.1rem) auto 0;
+}
+
+body.sb-ui-v3.sb-review-full .sb-review-word {
+  position: relative;
+  display: grid;
+  align-content: center;
+  gap: .4rem;
+  min-height: 138px;
+  padding: 1.1rem 1.1rem 1rem;
+  border: 3px solid #0d3540;
+  border-radius: 4px;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, .97), rgba(249, 246, 224, .94));
+  color: #0d2b36;
+  text-align: left;
+  box-shadow:
+    6px 6px 0 #0d3540,
+    inset 0 0 0 2px rgba(255, 255, 255, .82),
+    0 14px 26px rgba(23, 71, 65, .13);
+  cursor: pointer;
+  transition: border-color 180ms ease, background-color 180ms ease, box-shadow 180ms ease;
+}
+
+body.sb-ui-v3.sb-review-full .sb-review-word::before {
+  content: attr(data-index);
+  position: absolute;
+  top: .7rem;
+  right: .7rem;
+  display: grid;
+  width: 26px;
+  height: 26px;
+  place-items: center;
+  border: 2px solid #0d3540;
+  border-radius: 2px;
+  background: #f2c34e;
+  color: #092a36;
+  font-size: .72rem;
+  font-weight: 900;
+  line-height: 1;
+  box-shadow: 2px 2px 0 #0d3540;
+  z-index: 1;
+}
+
+body.sb-ui-v3.sb-review-full .sb-review-word::after {
+  content: "";
+  position: absolute;
+  inset: 6px;
+  border: 2px solid rgba(13, 53, 64, .18);
+  border-radius: 1px;
+  pointer-events: none;
+}
+
+body.sb-ui-v3.sb-review-full .sb-review-word:hover {
+  border-color: #1b704b;
+  background: linear-gradient(135deg, #ffffff, #f4fbdc);
+  box-shadow:
+    6px 6px 0 #1b704b,
+    inset 0 0 0 2px rgba(255, 255, 255, .88),
+    0 18px 32px rgba(23, 71, 65, .18);
+}
+
+body.sb-ui-v3.sb-review-full .sb-review-word:focus-visible {
+  outline: 3px solid #f0bd3d;
+  outline-offset: 3px;
+}
+
+body.sb-ui-v3.sb-review-full .sb-review-word strong {
+  color: #082a35;
+  font-family: "Trebuchet MS", "Microsoft YaHei", sans-serif;
+  font-size: clamp(1.1rem, 2vw, 1.35rem);
+  font-weight: 900;
+  line-height: 1.15;
+}
+
+body.sb-ui-v3.sb-review-full .sb-review-word > span {
+  color: #41636c;
+  font-size: .94rem;
+  line-height: 1.4;
+}
+
+body.sb-ui-v3.sb-review-full .sb-review-audio {
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+  margin-top: .15rem;
+  color: #176c50;
+  font-size: .78rem;
+  font-weight: 850;
+}
+
+body.sb-ui-v3.sb-review-full .sb-review-audio svg {
+  width: 17px;
+  height: 17px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.9;
+}
+
+body.sb-ui-v3.sb-review-full .sb-review-actions {
+  display: flex;
+  justify-content: center;
+  gap: .8rem;
+  width: 100%;
+  margin: auto auto 0;
+  padding-top: clamp(1.25rem, 3vh, 2rem);
+}
+
+body.sb-ui-v3.sb-review-full .sb-review-actions button {
+  min-height: 52px;
+  padding: 0 1.35rem;
+  border: 2px solid #0d3540;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, .9);
+  color: #0d3540;
+  font: inherit;
+  font-size: .98rem;
+  font-weight: 850;
+  cursor: pointer;
+  box-shadow: 4px 4px 0 #0d3540;
+  transition: background-color 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+}
+
+body.sb-ui-v3.sb-review-full .sb-review-actions button:hover:not(:disabled) {
+  border-color: #1b704b;
+  background: #f8fff0;
+  box-shadow: 4px 4px 0 #1b704b, 0 8px 18px rgba(13, 53, 64, .12);
+}
+
+body.sb-ui-v3.sb-review-full .sb-review-actions button:focus-visible {
+  outline: 3px solid #f0bd3d;
+  outline-offset: 3px;
+}
+
+body.sb-ui-v3.sb-review-full .sb-review-actions .sb-review-primary {
+  border-color: #0d3540;
+  background: #f4c84e;
+  color: #092a36;
+}
+
+body.sb-ui-v3.sb-review-full .sb-review-actions .sb-review-primary:hover:not(:disabled) {
+  background: #ffd96b;
+}
+
+body.sb-ui-v3.sb-review-full .sb-review-actions button:disabled {
+  cursor: not-allowed;
+  opacity: .56;
+}
+
+body.sb-ui-v3.sb-review-full .sb-review-empty {
+  width: min(600px, 100%);
+  margin: 2rem auto;
+  padding: 1.25rem;
+  border: 2px dashed rgba(13, 67, 74, .35);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, .72);
+  color: #315865;
+  text-align: center;
+}
+
+@media (max-width: 760px) {
+  body.sb-ui-v3.sb-review-full #sb-review {
+    padding: 1.4rem .9rem 1.3rem;
+  }
+
+  body.sb-ui-v3.sb-review-full .sb-review-words {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: .75rem;
+  }
+
+  body.sb-ui-v3.sb-review-full .sb-review-word {
+    min-height: 124px;
+    padding: .95rem;
+  }
+}
+
+@media (max-width: 460px) {
+  body.sb-ui-v3.sb-review-full .sb-review-head h2 {
+    font-size: 2rem;
+  }
+
+  body.sb-ui-v3.sb-review-full .sb-review-words {
+    grid-template-columns: 1fr;
+  }
+
+  body.sb-ui-v3.sb-review-full .sb-review-actions {
+    flex-direction: column-reverse;
+    margin-top: 1.3rem;
+  }
+
+  body.sb-ui-v3.sb-review-full .sb-review-actions button {
+    width: 100%;
+  }
+}
+
+/* Keep the complete review action row visible on short laptop / in-app
+ * browser viewports similar to the supplied 953×632 reference screenshot. */
+@media (min-width: 761px) and (max-height: 700px) {
+  body.sb-ui-v3.sb-review-full #sb-review {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  body.sb-ui-v3.sb-review-full .sb-review-head h2 {
+    margin-top: .5rem;
+    font-size: clamp(2rem, 4vw, 2.8rem);
+  }
+
+  body.sb-ui-v3.sb-review-full .sb-vocab-progress {
+    min-height: 34px;
+    margin-top: .65rem;
+  }
+
+  body.sb-ui-v3.sb-review-full .sb-review-helper {
+    margin-top: .4rem;
+  }
+
+  body.sb-ui-v3.sb-review-full .sb-review-words {
+    gap: .7rem;
+    margin-top: 1rem;
+  }
+
+  body.sb-ui-v3.sb-review-full .sb-review-word {
+    min-height: 112px;
+    padding: .8rem .9rem;
+  }
+
+  body.sb-ui-v3.sb-review-full .sb-review-actions {
+    padding-top: .9rem;
+  }
+
+  body.sb-ui-v3.sb-review-full .sb-review-actions button {
+    min-height: 46px;
+  }
+}

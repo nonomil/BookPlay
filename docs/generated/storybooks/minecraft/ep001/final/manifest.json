@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "series": "minecraft",
+  "episode": 1,
+  "evidence": "references/evidence.json",
+  "evidence_sha256": "bc2e4af10a509d6ed03eaf599996976ef9f629ff26774d507341f22452b9d8f4",
+  "generated_at": "2026-09-02T12:56:35.179194+00:00",
+  "assets": [
+    {
+      "id": "completion-card-bg",
+      "kind": "completion-card-bg",
+      "file": "completion-card-bg.png",
+      "runtime_path": "assets/generated/storybooks/minecraft/ep001/completion-card-bg.png",
+      "prompt": "completion-card-bg.prompt.txt",
+      "prompt_sha256": "4c44be290ba3e0bf5d207ea77e607cc932b2359b9d31647bcdd3df937c52ae89",
+      "width": 1536,
+      "height": 1024,
+      "ratio": 1.5,
+      "sha256": "01a5783714514636594396dcc6706c5f7a300d0b925ddc218063c034b1dc2290",
+      "source_evidence": [
+        {
+          "storybook_pages": [
+            1
+          ],
+          "sentence_ids": [
+            "mc-b1-p01-s01",
+            "mc-b1-p01-s02"
+          ]
+        }
+      ],
+      "ocr_text": "",
+      "validated": true
+    },
+    {
+      "id": "quiz-background",
+      "kind": "quiz-background",
+      "file": "quiz-background.png",
+      "runtime_path": "assets/generated/storybooks/minecraft/ep001/quiz-background.png",
+      "prompt": "quiz-background.prompt.txt",
+      "prompt_sha256": "5e8e80cc459b96178369ed359dce302b5cf27af421e2c6cb94f88f9ba791096b",
+      "width": 1536,
+      "height": 1024,
+      "ratio": 1.5,
+      "sha256": "0907cf4e6538a9b58d4112aa00bf34ac560f21681fb6a846fefdbe8bbff3d80f",
+      "source_evidence": [
+        {
+          "storybook_pages": [
+            3
+          ],
+          "sentence_ids": [
+            "mc-b1-p03-s06",
+            "mc-b1-p03-s07"
+          ]
+        }
+      ],
+      "ocr_text": "",
+      "validated": true
+    },
+    {
+      "id": "room-reward-golden-helmet",
+      "kind": "room-reward-golden-helmet",
+      "file": "room-reward-golden-helmet.png",
+      "runtime_path": "assets/generated/storybooks/minecraft/ep001/room-reward-golden-helmet.png",
+      "prompt": "room-reward-golden-helmet.prompt.txt",
+      "prompt_sha256": "967f5cbd7e627517af5778a52de642508d927e570fd6857bc5a8f1e59dd966e7",
+      "width": 1536,
+      "height": 1024,
+      "ratio": 1.5,
+      "sha256": "59bf25d86917f39884b71cc50b9c96f4e71ccf6e35b881394bc5a828a44f5f91",
+      "source_evidence": [
+        {
+          "storybook_pages": [
+            1
+          ],
+          "sentence_ids": [
+            "mc-b1-p01-s02"
+          ]
+        }
+      ],
+      "ocr_text": "",
+      "validated": true
+    },
+    {
+      "id": "room-reward-portal-shard",
+      "kind": "room-reward-portal-shard",
+      "file": "room-reward-portal-shard.png",
+      "runtime_path": "assets/generated/storybooks/minecraft/ep001/room-reward-portal-shard.png",
+      "prompt": "room-reward-portal-shard.prompt.txt",
+      "prompt_sha256": "bf4c9ba631575fdb5296823739be13472ef01f1175696fec2c613fb9d9af5833",
+      "width": 1536,
+      "height": 1024,
+      "ratio": 1.5,
+      "sha256": "d9f11e36823f50902288f4e08e55b3df0658abac2cc1635688bbb33c0d770124",
+      "source_evidence": [
+        {
+          "storybook_pages": [
+            3
+          ],
+          "sentence_ids": [
+            "mc-b1-p03-s06"
+          ]
+        }
+      ],
+      "ocr_text": "",
+      "validated": true
+    },
+    {
+      "id": "room-reward-wolf-tag",
+      "kind": "room-reward-wolf-tag",
+      "file": "room-reward-wolf-tag.png",
+      "runtime_path": "assets/generated/storybooks/minecraft/ep001/room-reward-wolf-tag.png",
+      "prompt": "room-reward-wolf-tag.prompt.txt",
+      "prompt_sha256": "c148d0f92d79c48623f34ccfab24a7e748a002c2f8056980b6ac3682de06caab",
+      "width": 1536,
+      "height": 1024,
+      "ratio": 1.5,
+      "sha256": "9e99d617b5c417c29eb365115ebbe45d382ea8d7248d7669ce1ae4fb98a20f66",
+      "source_evidence": [
+        {
+          "storybook_pages": [
+            2
+          ],
+          "sentence_ids": [
+            "mc-b1-p02-s01",
+            "mc-b1-p02-s02"
+          ]
+        }
+      ],
+      "ocr_text": "",
+      "validated": true
+    }
+  ],
+  "fallback": null,
+  "generation_provider": "cliprox",
+  "generation_model": "gpt-image-2"
+}

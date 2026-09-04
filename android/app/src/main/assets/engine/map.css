@@ -1,0 +1,1004 @@
+/* ============================================================================
+ * 西游记 · 合辑路线图 (map.html)
+ * 配色 / 圆角风格抄 wala.css + style.css 的现有体系, 不引入新字体新配色。
+ * ========================================================================== */
+:root {
+  --gold: #c9a227;   /* 与 style.css 一致 */
+  --muted: #b9ac97;  /* 与 style.css 一致 */
+  --deep: #0f0b08;   /* wala 顶栏底色 */
+  --node-bg: #221b16;
+  --gold-bright: #e8c25a;
+}
+
+* { box-sizing: border-box; }
+
+html, body { height: 100%; }
+body.map-body {
+  margin: 0;
+  background: var(--deep);
+  color: #fff;
+  font-family: system-ui, "PingFang SC", "Microsoft YaHei", sans-serif;
+  overflow: hidden;
+}
+
+.hidden { display: none !important; }
+/* Non-Xiyou maps start with these links hidden in HTML, so a cached or slow
+ * map script can never flash the White Dragon inn over a Minecraft/Mikey map. */
+#splash-companion[hidden], #companion-entry[hidden] { display: none !important; }
+
+/* ---------------- 顶栏 (抄 wala) ---------------- */
+#map-top {
+  position: sticky; top: 0; z-index: 40;
+  display: flex; align-items: center; gap: 0.9rem;
+  padding: 0.6rem 1rem;
+  background: linear-gradient(180deg, rgba(15, 11, 8, 0.92), rgba(15, 11, 8, 0.75));
+  backdrop-filter: blur(6px);
+  min-height: 3.2rem;
+}
+
+#btn-home, #btn-list, #companion-entry {
+  display: inline-flex; align-items: center; justify-content: center;
+  padding: 0.28rem 0.85rem;
+  border: 2px solid var(--gold-bright);
+  border-radius: 10px;
+  background: rgba(32, 24, 16, 0.72);
+  color: #ffe9a8;
+  font-size: 0.95rem; font-weight: 800;
+  text-decoration: none; line-height: 1.2;
+  white-space: nowrap;
+}
+#btn-home:hover, #btn-list:hover, #companion-entry:hover { background: rgba(201, 162, 39, 0.28); color: #fff4c8; }
+
+#companion-entry { gap: 0.35rem; border-color: #9ddde5; color: #e8fdff; }
+
+#col-name {
+  flex: 1; min-width: 0;
+  font-weight: 700; letter-spacing: 0.12em; font-size: 1.05rem;
+  color: #fff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  text-align: center;
+}
+
+#sp-badge {
+  display: inline-flex; align-items: center; gap: 0.25rem;
+  background: linear-gradient(180deg, #ffd76a, #e8a923);
+  color: #241b0d; font-weight: 700;
+  border-radius: 999px; padding: 0.2rem 0.75rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+/* ---------------- 横向滑动轨道 ---------------- */
+#map-track {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  height: calc(100vh - 3.2rem - 2.4rem);
+  scrollbar-width: none;
+}
+#map-track::-webkit-scrollbar { display: none; }
+
+.map-page {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+  min-height: 100%;
+  overflow: hidden;
+  /* 蒙层(最上) → 背景图(404 时透明) → 渐变兜底(永远可见) */
+  background-image:
+    linear-gradient(180deg, rgba(20, 26, 40, 0.10) 0%, rgba(14, 18, 30, 0.16) 45%, rgba(10, 12, 22, 0.52) 100%),
+    var(--bg),
+    radial-gradient(900px 420px at 80% -5%, rgba(120, 180, 255, 0.16), transparent),
+    radial-gradient(800px 500px at 15% 30%, rgba(201, 162, 39, 0.12), transparent),
+    linear-gradient(180deg, #10141f 0%, #1a1626 50%, #241a12 100%);
+  background-size: cover;
+  background-position: center;
+}
+/* 第一个未解锁辑之后的页面直接隐藏, 滑不过去 */
+.map-page.beyond { display: none; }
+
+.page-veil {
+  position: absolute; inset: 0; z-index: 0;
+  background: rgba(10, 8, 14, 0.06);
+}
+
+/* ---------------- 页头 ---------------- */
+.page-head {
+  position: relative; z-index: 2;
+  text-align: center;
+  padding: 0.85rem 1rem 0.25rem;
+}
+.page-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+}
+.page-head h2 {
+  margin: 0;
+  font-size: 1.9rem; letter-spacing: 0.18em;
+  color: #fff;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.85);
+  -webkit-text-stroke: 4px rgba(24, 16, 10, 0.55);
+  paint-order: stroke fill;
+}
+.page-en {
+  margin: 0.25rem 0 0;
+  font-size: 0.95rem; letter-spacing: 0.06em;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.8);
+  -webkit-text-stroke: 3px rgba(24, 16, 10, 0.5);
+  paint-order: stroke fill;
+  color: #fff2cf;
+}
+.page-summary {
+  max-width: min(44rem, 86vw);
+  margin: 0.38rem auto 0;
+  padding: 0.28rem 0.7rem;
+  border: 1px solid rgba(255, 233, 168, 0.28);
+  border-radius: 999px;
+  background: rgba(15, 11, 8, 0.58);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 650;
+  line-height: 1.35;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.92);
+}
+.page-meta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.45rem;
+  margin-top: 0.45rem;
+}
+.page-range,
+.page-count {
+  display: inline-block;
+  background: rgba(32, 24, 16, 0.72);
+  border: 2px solid var(--gold-bright);
+  color: #ffe9a8;
+  border-radius: 999px; padding: 0.15rem 0.8rem;
+  font-size: 0.82rem; font-weight: 700;
+}
+.page-range { color: #fff4c8; }
+.page-primary-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .25rem .65rem;
+  flex-wrap: wrap;
+  min-height: 44px;
+  max-width: min(29rem, 88vw);
+  margin: .65rem auto 0;
+  padding: .42rem 1rem;
+  border: 2px solid #ffe7a0;
+  border-radius: 14px;
+  background: linear-gradient(180deg, #ffd76a, #e8a923);
+  color: #241b0d;
+  font-size: .98rem;
+  font-weight: 900;
+  line-height: 1.2;
+  text-decoration: none;
+  box-shadow: 0 5px 14px rgba(0, 0, 0, .32);
+  transition: transform .2s ease, box-shadow .2s ease, filter .2s ease;
+}
+.page-primary-action small {
+  font-size: .78rem;
+  font-weight: 750;
+  opacity: .82;
+}
+.page-primary-action:hover,
+.page-primary-action:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, .42);
+  filter: brightness(1.05);
+}
+.page-primary-action-drill { background: linear-gradient(180deg, #b9a6ff, #7a63e0); color: #fff; border-color: #eee8ff; }
+.page-primary-action-secondary { background: rgba(33, 102, 111, .9); color: #f1ffff; border-color: #9de3e4; }
+.page-primary-action-complete { cursor: default; background: rgba(39, 78, 85, .78); color: #d7f6ef; border-color: rgba(157, 227, 228, .7); }
+.page-primary-action-complete:hover { transform: none; filter: none; }
+.page-lock-msg {
+  margin-top: 0.55rem;
+  color: #ffd76a; font-size: 0.95rem; font-weight: 700;
+  letter-spacing: 0.08em;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.9);
+}
+
+/* ---------------- 路线图容器 ---------------- */
+.route {
+  position: relative; z-index: 2;
+  flex: 1 1 auto;
+  min-height: 0;
+  margin: 0.2rem 0 0.9rem;
+}
+.route-line {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+.route-line path {
+  fill: none;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+.route-line .rl-out {
+  stroke: rgba(58, 44, 24, 0.38);
+  stroke-width: 11;
+  stroke-dasharray: 1.2 15;
+}
+.route-line .rl-in {
+  stroke: rgba(255, 248, 225, 0.96);
+  stroke-width: 7;
+  stroke-dasharray: 0.2 16;
+}
+
+.route-companion {
+  position: absolute;
+  z-index: 6;
+  width: 72px;
+  height: 96px;
+  /* 精灵单元本身就是 384×512（3:4）。放大时仍锁定同一比例，
+   * 伙伴作为独立路线标记停在卡片外侧，不再用偏移压到卡片里面。 */
+  aspect-ratio: 3 / 4;
+  padding: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 0;
+  background: transparent;
+  /* 图集本身是真透明 PNG；只保留轻微轮廓阴影，避免角色融进背景，
+   * 不再绘制会被误认为“卡片背景”的圆形光圈。 */
+  filter: drop-shadow(0 3px 4px rgba(0, 0, 0, .58));
+  pointer-events: none;
+  transition: left 0.55s ease, top 0.55s ease;
+}
+.route-companion.no-motion { transition: none !important; }
+.route-companion[data-placement^="line-"] {
+  /* line-* 的 top 是角色脚部锚点；候选点已让角色停在封面下沿空白处。 */
+  transform: translate(-50%, -100%);
+}
+.route-companion-figure { display: block; width: 100%; height: 100%; }
+.route-companion-avatar {
+  display: grid;
+  place-items: center;
+  background: url('../data/assets/generated/storybooks/minecraft/characters/byte/transparent/idle.png') center / contain no-repeat;
+  filter: drop-shadow(0 6px 5px rgba(20, 12, 6, .32));
+}
+.route-companion-sprite {
+  background-image: var(--route-companion-sprite);
+  background-repeat: no-repeat;
+  /* 四向图集：每行 8 帧，行顺序 east / south / west / north。 */
+  background-size: 800% 400%;
+  background-position: 0 0;
+  animation: route-companion-walk 0.96s steps(8, end) infinite;
+  animation-play-state: running;
+}
+/* 地图伙伴是用户明确要求的游戏反馈：即使系统偏好减少动效，角色仍可
+ * 原地踏步，并在卡片悬停时按八个步点走向目标；页面其它动效继续遵守该偏好。 */
+.route-companion.route-motion-enabled {
+  transition: left 1.8s steps(7, end), top 1.8s steps(7, end);
+}
+.route-companion-sprite.route-motion-enabled {
+  animation: route-companion-walk 1.8s steps(7, end) infinite;
+  animation-play-state: running;
+  background-position-x: 0;
+}
+.route-companion[data-direction="south"] .route-companion-sprite {
+  background-position-y: 33.333%;
+}
+.route-companion[data-direction="west"] .route-companion-sprite {
+  background-position-y: 66.667%;
+}
+.route-companion[data-direction="north"] .route-companion-sprite {
+  background-position-y: 100%;
+}
+@keyframes route-companion-walk {
+  from { background-position-x: 0; }
+  to { background-position-x: 100%; }
+}
+
+/* 节点坐标由 drawRoute 写入。写入前先藏起来，否则会先在左上角堆成一摞再弹开 */
+.route .node { opacity: 0; }
+.route.laid .node { opacity: 1; }
+
+/* ---------------- 关卡节点：首页那种大矩形选项卡 ---------------- */
+.node {
+  position: absolute;
+  /* 路线虚线是角色的行走带；卡片和三行标题抬起一点，
+   * 给小猴子留出一条连续的可见空间。compact 网格会将此值清零。 */
+  --node-lift: clamp(14px, 3.5vh, 28px);
+  transform: translate(-50%, calc(-50% - var(--node-lift)));
+  z-index: 2;
+  width: var(--card, 112px);
+  border-radius: 0;
+  overflow: visible;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  transition: transform 0.12s, box-shadow 0.12s;
+}
+.node:hover {
+  z-index: 5;
+  transform: translate(-50%, calc(-50% - var(--node-lift))) scale(1.05);
+  box-shadow: none;
+}
+.node:hover .node-cover { box-shadow: 0 10px 22px rgba(0, 0, 0, 0.62); }
+.node-main {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+.node-main:focus-visible,
+.node-speak:focus-visible,
+.page-speak:focus-visible {
+  outline: 3px solid #fff4c8;
+  outline-offset: 2px;
+}
+
+.node-cover {
+  position: relative;
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: linear-gradient(160deg, #2a2118, #171310);
+  border: 2px solid rgba(201, 162, 39, 0.72);
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.54);
+}
+.node-cover img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.node-cover.no-cover img { display: none; }
+
+.node-badge {
+  position: absolute; top: 4%; left: 4%;
+  width: clamp(16px, calc(var(--card, 112px) * 0.14), 30px);
+  height: clamp(16px, calc(var(--card, 112px) * 0.14), 30px);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: clamp(0.58rem, calc(var(--card, 112px) * 0.09), 1rem);
+  font-weight: 900;
+  background: linear-gradient(180deg, #9f8bff, #6c56d8);
+  color: #fff;
+  border: 1.5px solid #fff;
+}
+.node-badge.lock {
+  background: linear-gradient(180deg, #ffd76a, #e8a923);
+  border-color: #fff4c8;
+  color: #241b0d;
+}
+
+.node-text {
+  display: block;
+  min-height: 0;
+  padding: calc(var(--card, 112px) * 0.045) 0 0;
+  background: transparent;
+  text-align: center;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.98), 0 0 10px rgba(0, 0, 0, 0.82);
+}
+.episode-title {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  overflow: visible;
+  font-weight: 850; line-height: 1.14;
+  font-size: clamp(0.78rem, calc(var(--card, 112px) * 0.09), 1.08rem);
+  color: #fff;
+}
+.episode-number {
+  display: block;
+  color: #ffe27d;
+  font-size: 0.82em;
+  white-space: nowrap;
+}
+.episode-number::after { content: ""; }
+.episode-name {
+  display: block;
+  min-width: 0;
+  margin-top: 0.08em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font: inherit;
+}
+.episode-en {
+  display: block; margin-top: 0.14em;
+  font-style: normal; font-weight: 700;
+  font-size: clamp(0.62rem, calc(var(--card, 112px) * 0.073), 0.9rem);
+  color: #f0d9a2;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+
+.node-speak,
+.page-speak {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid rgba(255, 233, 168, 0.82);
+  border-radius: 50%;
+  background: rgba(24, 18, 12, 0.86);
+  color: #ffe9a8;
+  cursor: pointer;
+  padding: 0;
+  transition: color 0.2s, background 0.2s, box-shadow 0.2s;
+}
+.node-speak {
+  position: absolute;
+  right: 4%;
+  top: 4%;
+  bottom: auto;
+  z-index: 4;
+  width: clamp(22px, calc(var(--card, 112px) * 0.2), 34px);
+  height: clamp(22px, calc(var(--card, 112px) * 0.2), 34px);
+}
+.node-listen {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.18em;
+  margin: 0.34rem auto 0;
+  min-height: 22px;
+  padding: 0.14em 0.46em;
+  border: 1px solid rgba(159, 139, 255, 0.72);
+  border-radius: 999px;
+  background: rgba(55, 43, 100, 0.74);
+  color: #eee8ff;
+  font-size: clamp(0.5rem, calc(var(--card, 112px) * 0.065), 0.76rem);
+  font-weight: 800;
+  line-height: 1.15;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.node-listen:hover,
+.node-listen:focus-visible { background: rgba(124, 104, 206, 0.9); color: #fff; outline: none; }
+.node-dub {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.18em;
+  margin: 0.34rem auto 0;
+  min-height: 22px;
+  padding: 0.14em 0.46em;
+  border: 1px solid rgba(255, 168, 92, 0.78);
+  border-radius: 999px;
+  background: rgba(112, 62, 12, 0.74);
+  color: #ffedd8;
+  font-size: clamp(0.5rem, calc(var(--card, 112px) * 0.065), 0.76rem);
+  font-weight: 800;
+  line-height: 1.15;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.node-dub:hover,
+.node-dub:focus-visible { background: rgba(240, 138, 40, 0.92); color: #fff; outline: none; }
+.page-speak { width: 2rem; height: 2rem; flex: 0 0 auto; }
+.node-speak svg,
+.page-speak svg { width: 68%; height: 68%; fill: currentColor; }
+.node-speak svg path + path,
+.page-speak svg path + path { fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; }
+.node-speak:hover,
+.page-speak:hover,
+.node-speak.speaking,
+.page-speak.speaking {
+  color: #241b0d;
+  background: #ffd76a;
+  box-shadow: 0 0 0 3px rgba(255, 215, 106, 0.28);
+}
+
+/* 已学完：紫边 */
+.node.done .node-cover { border-color: rgba(159, 139, 255, 0.86); }
+
+/* 当前可玩：金边高亮 + 跳动「开始」 */
+.node.current {
+  box-shadow: none;
+}
+.node.current .node-cover {
+  border-color: #ffd76a;
+  box-shadow: 0 0 0 3px rgba(255, 215, 106, 0.28), 0 8px 20px rgba(0, 0, 0, 0.55);
+}
+.node.current .episode-title { color: #fff6da; }
+.node-tip {
+  position: absolute; top: 4%; left: 4%;
+  background: linear-gradient(180deg, #ffd76a, #e8a923);
+  color: #241b0d; font-weight: 800;
+  font-size: clamp(0.5rem, calc(var(--card, 112px) * 0.082), 0.92rem);
+  border-radius: 999px; padding: 0.05em 0.5em;
+  white-space: nowrap;
+  border: 1.5px solid #fff6da;
+  animation: map-bob 1.2s ease-in-out infinite;
+}
+@keyframes map-bob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-3px); }
+}
+
+/* 锁定：保留封面颜色，用金边和锁标表达状态，不牺牲故事吸引力 */
+.node.locked {
+  cursor: not-allowed;
+  background: transparent;
+}
+.node.locked .node-cover { border-color: rgba(255, 215, 106, 0.72); }
+.node.locked:hover { transform: translate(-50%, calc(-50% - var(--node-lift))); box-shadow: none; }
+.node.locked .node-cover img { filter: saturate(0.95) brightness(0.92); }
+.node.locked .episode-title { color: #fff; }
+.node.locked .episode-en { color: #f0d9a2; }
+.node.locked .node-speak { cursor: pointer; opacity: 1; }
+
+/* 巩固节点：黄色胶囊，不是圆 */
+.node.drill {
+  width: auto;
+  flex-direction: row; align-items: center; gap: 0.3em;
+  padding: calc(var(--card, 112px) * 0.05) calc(var(--card, 112px) * 0.12);
+  border-radius: 999px;
+  background: linear-gradient(180deg, #ffd76a, #e8a923);
+  border: 2px solid #fff6da;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.45);
+  white-space: nowrap;
+}
+.node.drill i {
+  font-style: normal; line-height: 1; color: #241b0d;
+  font-size: clamp(0.8rem, calc(var(--card, 112px) * 0.13), 1.6rem);
+}
+.node.drill b {
+  font-weight: 900; color: #241b0d;
+  font-size: clamp(0.68rem, calc(var(--card, 112px) * 0.105), 1.3rem);
+}
+.node.drill:hover { transform: translate(-50%, calc(-50% - var(--node-lift))) scale(1.06); }
+.node.drill.done { background: linear-gradient(180deg, #b9a6ff, #7a63e0); border-color: #e8e0ff; }
+.node.drill.done i, .node.drill.done b { color: #fff; }
+.node.drill.locked {
+  background: rgba(38, 38, 44, 0.9);
+  border-color: rgba(255, 255, 255, 0.3);
+  box-shadow: none;
+}
+.node.drill.locked i, .node.drill.locked b { color: #8d8d95; }
+.node.drill.locked:hover { transform: translate(-50%, calc(-50% - var(--node-lift))); }
+
+/* 点击锁定节点: 抖动 320ms */
+@keyframes node-shake {
+  0%, 100% { transform: translate(-50%, calc(-50% - var(--node-lift))); }
+  20% { transform: translate(calc(-50% - 7px), calc(-50% - var(--node-lift))); }
+  40% { transform: translate(calc(-50% + 7px), calc(-50% - var(--node-lift))); }
+  60% { transform: translate(calc(-50% - 5px), calc(-50% - var(--node-lift))); }
+  80% { transform: translate(calc(-50% + 5px), calc(-50% - var(--node-lift))); }
+}
+.node.shake { animation: node-shake 0.32s ease-in-out; }
+
+/* ---------------- 提示 / 导航 / toast ---------------- */
+#map-hint {
+  position: fixed; left: 50%; bottom: 0.9rem; transform: translateX(-50%);
+  z-index: 30;
+  color: var(--muted); font-size: 0.82rem; letter-spacing: 0.1em;
+  background: rgba(32, 24, 16, 0.72);
+  border-radius: 999px; padding: 0.3rem 0.9rem;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+#nav-prev, #nav-next {
+  position: fixed; top: 52%; transform: translateY(-50%);
+  z-index: 30;
+  width: 44px; height: 44px; border-radius: 50%;
+  border: 2px solid var(--gold-bright);
+  background: rgba(32, 24, 16, 0.72);
+  color: #ffe9a8; font-size: 1.5rem; font-weight: 800;
+  cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  line-height: 1;
+}
+#nav-prev { left: 0.8rem; }
+#nav-next { right: 0.8rem; }
+#nav-prev:disabled, #nav-next:disabled { opacity: 0.35; cursor: default; }
+
+#map-toast {
+  position: fixed; left: 50%; bottom: 3.4rem; transform: translateX(-50%);
+  z-index: 60;
+  background: rgba(15, 11, 8, 0.94);
+  border: 1px solid var(--gold-bright); color: #ffe9a8;
+  border-radius: 10px; padding: 0.55rem 1rem;
+  font-size: 0.9rem; font-weight: 700;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.55);
+  pointer-events: none;
+  max-width: 84vw; text-align: center;
+}
+
+/* ---------------- 手机横屏: 节点缩小, page-head 单行 ---------------- */
+@media (max-width: 900px) and (orientation: landscape) {
+  /* 横屏总高只有 ~390px，顶栏和底部提示各让出一点，路线环才装得下两排卡片 */
+  #map-top { min-height: 2.6rem; padding: 0.35rem 0.8rem; }
+  #map-track { height: calc(100vh - 2.6rem - 1.1rem); }
+
+  .node { border-radius: 11px; }
+  .node-text { padding: 0.2rem 1.65rem 0.28rem 0.34rem; }
+  .route-line .rl-out { stroke-width: 9; }
+  .route-line .rl-in { stroke-width: 6; }
+  .route { margin: 0.1rem 0 0.35rem; }
+
+  .page-head { padding: 0.32rem 1rem 0.18rem; }
+  .page-head h2 { font-size: 1.3rem; }
+  .page-en { display: inline-block; margin-top: 0.08rem; font-size: 0.78rem; }
+  .page-summary {
+    max-width: 78vw;
+    margin-top: 0.2rem;
+    padding: 0.16rem 0.55rem;
+    font-size: 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .page-meta { display: inline-flex; margin-top: 0.2rem; margin-left: 0.4rem; }
+  .page-range, .page-count { font-size: 0.72rem; padding: 0.08rem 0.52rem; }
+  .page-lock-msg { margin-top: 0.18rem; font-size: 0.78rem; }
+  .page-primary-action { margin-top: .3rem; min-height: 36px; padding: .25rem .65rem; font-size: .8rem; border-radius: 10px; }
+  .page-primary-action small { font-size: .66rem; }
+  .page-speak { width: 1.7rem; height: 1.7rem; }
+
+  #map-hint { bottom: 0.5rem; font-size: 0.72rem; }
+  #nav-prev, #nav-next { width: 38px; height: 38px; font-size: 1.2rem; }
+  #map-toast { bottom: 2.6rem; font-size: 0.82rem; }
+}
+
+/* 极短横屏（与 710×244 截图同类）：标题和导语保持可读，路线改为关卡标题网格。
+ * 此处不继续压小字号，也不让卡片越出视口。 */
+@media (max-height: 420px) and (orientation: landscape) {
+  #map-track { height: calc(100vh - 2.6rem); }
+
+  .page-head {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-rows: auto auto;
+    gap: 0.16rem 0.65rem;
+    padding: 0.22rem 4.2rem 0.18rem;
+    text-align: left;
+  }
+  .page-title-row {
+    grid-column: 1;
+    grid-row: 1;
+    justify-content: flex-start;
+    min-width: 0;
+  }
+  .page-head h2 {
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 1.25rem;
+  }
+  .page-en { display: none; }
+  .page-summary {
+    grid-column: 1;
+    grid-row: 2;
+    max-width: 100%;
+    min-width: 0;
+    margin: 0;
+    padding: 0.12rem 0.5rem;
+    font-size: 1rem;
+    line-height: 1.25;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .page-meta {
+    grid-column: 2;
+    grid-row: 1;
+    align-self: center;
+    margin: 0;
+  }
+  .page-lock-msg {
+    grid-column: 2;
+    grid-row: 2;
+    align-self: center;
+    margin: 0;
+    white-space: nowrap;
+  }
+  .page-primary-action {
+    grid-column: 1 / -1;
+    grid-row: 3;
+    justify-self: center;
+    margin: .2rem auto 0;
+    min-height: 32px;
+    padding: .2rem .55rem;
+    font-size: .76rem;
+  }
+  .page-primary-action small { font-size: .62rem; }
+
+  .route.compact {
+    display: grid;
+    grid-template-columns: repeat(var(--compact-cols, 4), minmax(0, 1fr));
+    grid-auto-rows: minmax(34px, 1fr);
+    align-content: stretch;
+    gap: 0.2rem;
+    margin: 0;
+    padding: 0.15rem 2.4rem 0.3rem;
+  }
+  .route.compact .route-line { display: none; }
+  .route.compact .route-companion {
+    width: 54px;
+    height: 72px;
+  }
+      .route.compact .node {
+    position: relative;
+    --node-lift: 0px;
+    left: auto;
+    top: auto;
+    width: 100%;
+    min-width: 0;
+    height: 100%;
+    min-height: 34px;
+    transform: none;
+        overflow: hidden;
+        border: 2px solid rgba(201, 162, 39, 0.72);
+        border-radius: 10px;
+        box-shadow: 0 5px 14px rgba(0, 0, 0, 0.58), 0 0 0 1px rgba(255, 233, 168, 0.12);
+      }
+  .route.compact .node:hover,
+  .route.compact .node.locked:hover,
+  .route.compact .node.drill:hover { transform: none; }
+      .route.compact .node-main { position: relative; display: block; height: 100%; }
+      .route.compact .node-cover {
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+          aspect-ratio: auto;
+      }
+      .route.compact .node .node-cover {
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+      }
+      .route.compact .node-cover::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(180deg, rgba(8, 6, 4, 0.03) 18%, rgba(8, 6, 4, 0.28) 52%, rgba(8, 6, 4, 0.94) 100%);
+        pointer-events: none;
+      }
+      .route.compact .node-text {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        height: auto;
+        min-height: 0;
+        padding: 0.24rem 0.42rem 0.32rem;
+        text-shadow: 0 1px 4px #000, 0 2px 8px rgba(0, 0, 0, 0.9);
+      }
+  .route.compact .episode-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 0;
+    font-size: 0.78rem;
+  }
+      .route.compact .episode-number {
+        color: #ffe27d;
+    font-size: 0.68rem;
+    line-height: 1.1;
+    white-space: nowrap;
+  }
+  .route.compact .episode-number::after { content: ""; }
+  .route.compact .episode-name {
+    display: block;
+    min-width: 0;
+    margin-top: 0.1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+      .route.compact .episode-en { display: none; }
+      .route.compact .node.done { border-color: rgba(159, 139, 255, 0.86); }
+      .route.compact .node.current { border-color: #ffd76a; }
+      .route.compact .node.locked { border-color: rgba(255, 215, 106, 0.72); }
+      .route.compact .node-speak {
+        right: 0.28rem;
+        top: 0.28rem;
+        bottom: auto;
+        width: 26px;
+        height: 26px;
+        transform: none;
+        background: rgba(24, 18, 12, 0.78);
+        box-shadow: 0 2px 7px rgba(0, 0, 0, 0.55);
+      }
+      .route.compact .node-badge,
+      .route.compact .node-tip { left: 0.28rem; right: auto; top: 0.28rem; z-index: 3; }
+  .route.compact .node.drill {
+    display: flex;
+    width: 100%;
+    padding: 0.25rem 0.45rem;
+    justify-content: center;
+  }
+  .route.compact .node.drill i,
+  .route.compact .node.drill b { font-size: 0.78rem; }
+  .route.compact.compact-max .node.drill {
+    position: absolute;
+    left: 0.15rem;
+    right: auto;
+    top: auto;
+    bottom: 0.3rem;
+    z-index: 4;
+    width: 32px;
+    height: 32px;
+    min-height: 32px;
+    padding: 0;
+    border-radius: 50%;
+  }
+  .route.compact.compact-max .node.drill b { display: none; }
+
+  #nav-prev, #nav-next {
+    width: 32px;
+    height: 32px;
+    font-size: 1.05rem;
+  }
+  #nav-prev { left: 0.15rem; }
+  #nav-next { right: 0.15rem; }
+
+  #map-hint { display: none; }
+}
+
+/* 桌面路线要保留大封面，不因三排节点把卡片压扁。多出的路线高度在
+ * 当前篇章页内滚动，背景和顶栏仍保持稳定；极短横屏继续走 compact 网格。 */
+@media (min-width: 901px) and (min-height: 500px) {
+  .map-page {
+    overflow-x: hidden;
+    overflow-y: auto;
+    scrollbar-width: none;
+  }
+  .map-page::-webkit-scrollbar { display: none; }
+  .route { min-height: 620px; }
+}
+
+/* ---------------- 进场闪屏 ----------------
+ * 默认可见。JS 正常时由 splash() 加 .ready 走 1.25s 快节奏；
+ * JS 挂掉时靠 splash-safety 这条纯 CSS 动画在 3.4s 后自己收掉，
+ * 绝不能把用户永久卡在闪屏上。 */
+#map-splash {
+  position: fixed; inset: 0; z-index: 90;
+  display: flex; align-items: flex-end; justify-content: center;
+  padding-bottom: 7%;
+  opacity: 1;
+  transition: opacity 0.45s ease, visibility 0.45s;
+  animation: splash-safety 3.4s ease forwards;
+  background-image:
+    linear-gradient(180deg, rgba(8, 6, 12, 0.10) 0%, rgba(8, 6, 12, 0.06) 52%, rgba(8, 6, 12, 0.86) 100%),
+    var(--splash-bg, url('/data/assets/covers/journey-west-cover.png')),
+    linear-gradient(180deg, #10141f 0%, #241a12 100%);
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+}
+#splash-companion {
+  position: absolute;
+  right: clamp(1rem, 5vw, 5rem);
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  width: min(330px, 34vw);
+  padding: 1rem;
+  border: 2px solid rgba(173, 232, 240, 0.82);
+  border-radius: 22px;
+  background: linear-gradient(145deg, rgba(17, 47, 63, 0.92), rgba(31, 21, 35, 0.88));
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 0 16px 38px rgba(0, 0, 0, 0.46), inset 0 0 28px rgba(134, 225, 238, 0.08);
+}
+#splash-companion:hover { border-color: #fff1a8; }
+.splash-companion-icon { font-size: clamp(2.8rem, 6vw, 5rem); filter: drop-shadow(0 6px 6px rgba(0,0,0,.35)); }
+.splash-companion-copy { display: flex; min-width: 0; flex-direction: column; gap: .2rem; }
+.splash-companion-copy b { color: #fff3bd; font-size: 1.15rem; }
+.splash-companion-copy small { color: #d9faff; font-weight: 800; }
+.splash-companion-medals { display: flex; flex-direction: column; gap: .22rem; margin-top: .18rem; }
+.splash-medals-label { color: #bcebed; font-size: .62rem; font-weight: 900; letter-spacing: .12em; }
+.splash-medal-strip { display: flex; align-items: center; gap: .32rem; min-height: 32px; }
+.splash-medal {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  flex: 0 0 32px;
+  color: #4d3a18;
+  font-size: .68rem;
+  font-weight: 950;
+  line-height: 1;
+  background: linear-gradient(145deg, #fff2a8, #d8a53d);
+  border: 2px solid rgba(255, 247, 198, .9);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, .28), inset 0 0 0 2px rgba(122, 77, 14, .18);
+}
+.splash-medal.shape-seal { border-radius: 50%; }
+.splash-medal.shape-cloud { border-radius: 58% 42% 55% 45%; }
+.splash-medal.shape-diamond { clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%); }
+.splash-medal.shape-shield { clip-path: polygon(12% 8%, 88% 8%, 96% 66%, 50% 100%, 4% 66%); }
+.splash-medal.shape-lotus { clip-path: polygon(50% 0, 68% 25%, 95% 28%, 78% 52%, 86% 92%, 50% 72%, 14% 92%, 22% 52%, 5% 28%, 32% 25%); }
+.splash-medal.shape-gourd { border-radius: 45% 45% 55% 55%; transform: scale(.9); }
+.splash-medal.shape-flame { clip-path: polygon(50% 0, 83% 37%, 78% 76%, 50% 100%, 22% 76%, 17% 37%); }
+.splash-medal.shape-ribbon { border-radius: 7px 7px 15px 15px; }
+.splash-medal.shape-scroll { border-radius: 12px 4px 12px 4px; }
+.splash-medal.shape-star { clip-path: polygon(50% 0, 61% 35%, 98% 35%, 68% 56%, 79% 94%, 50% 70%, 21% 94%, 32% 56%, 2% 35%, 39% 35%); }
+.splash-medal.shape-sun { border-radius: 50%; box-shadow: 0 0 0 3px rgba(255, 218, 92, .28), 0 3px 8px rgba(0, 0, 0, .28); }
+.splash-medal.shape-knot { border-radius: 45%; transform: rotate(45deg) scale(.82); }
+.splash-medal.shape-knot::first-letter { transform: rotate(-45deg); }
+.splash-medal.shape-crown { clip-path: polygon(0 12%, 25% 35%, 50% 5%, 75% 35%, 100% 12%, 88% 100%, 12% 100%); }
+.splash-medal-empty { color: rgba(233, 252, 255, .82); font-size: .66rem; }
+.splash-companion-copy em { color: #fff; font-size: .84rem; font-style: normal; }
+#map-splash.ready { animation: none; }
+#map-splash.gone {
+  opacity: 0; visibility: hidden; pointer-events: none; animation: none;
+}
+@keyframes splash-safety {
+  0%, 72% { opacity: 1; visibility: visible; }
+  100% { opacity: 0; visibility: hidden; }
+}
+
+#splash-txt { text-align: center; padding: 0 1.5rem; }
+#map-splash.ready #splash-txt { animation: splash-txt-in 0.7s ease both; }
+@keyframes splash-txt-in {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+#splash-title {
+  margin: 0;
+  font-size: 1.5rem; letter-spacing: 0.16em;
+  color: #fff;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.95);
+}
+#splash-sub {
+  margin: 0.28rem 0 0;
+  color: #ffe9a8; font-size: 0.85rem; letter-spacing: 0.08em;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.9);
+}
+#splash-tip {
+  display: inline-block; margin-top: 1.6rem;
+  color: var(--muted); font-size: 0.82rem; letter-spacing: 0.12em;
+  background: rgba(32, 24, 16, 0.72);
+  border-radius: 999px; padding: 0.3rem 0.9rem;
+}
+
+@media (max-width: 900px) and (orientation: landscape) {
+  #splash-title { font-size: 1.8rem; }
+  #splash-sub { font-size: 0.88rem; }
+  #splash-tip { margin-top: 1rem; font-size: 0.72rem; }
+  #splash-companion { right: 1rem; width: 29vw; padding: .65rem; }
+  .splash-companion-copy b { font-size: .88rem; }
+  .splash-companion-copy em { font-size: .68rem; }
+  .splash-medal { width: 27px; height: 27px; flex-basis: 27px; font-size: .6rem; }
+  .splash-medal-strip { min-height: 27px; }
+  #companion-entry-label { display: none; }
+}
+
+@media (max-width: 620px) and (orientation: portrait) {
+  #map-top { gap: .35rem; padding: .45rem .5rem; }
+  #btn-home, #btn-list, #companion-entry { padding: .25rem .45rem; font-size: .78rem; border-width: 1.5px; }
+  #companion-entry-label { display: none; }
+  #col-name { font-size: .86rem; letter-spacing: .04em; }
+  #sp-badge { padding: .18rem .42rem; font-size: .76rem; }
+  #map-splash { align-items: flex-start; padding-top: 12vh; }
+  #splash-companion { left: 1rem; right: 1rem; top: auto; bottom: 8vh; width: auto; transform: none; }
+  .page-primary-action { width: min(100%, 23rem); margin-top: .5rem; font-size: .88rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #map-splash, #map-splash.ready #splash-txt { animation-duration: 0.01s; }
+  #map-track { scroll-behavior: auto; }
+  .node-tip, .node.shake { animation: none !important; }
+  .page-primary-action { transition: none; }
+  .route-companion { transition: none !important; }
+  .route-companion.no-motion { transition: none !important; }
+  .route-companion-sprite { animation: none; background-position-x: 0; }
+  .route-companion.route-motion-enabled { transition: left 1.8s steps(7, end), top 1.8s steps(7, end) !important; }
+  .route-companion-sprite.route-motion-enabled {
+    animation: route-companion-walk 1.8s steps(7, end) infinite !important;
+    animation-play-state: running;
+    background-position-x: 0;
+  }
+}

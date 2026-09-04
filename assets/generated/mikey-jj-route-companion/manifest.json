@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "asset_id": "mikey-jj-route-companion",
+  "type": "character-animation",
+  "tool": "gpt-image-workflow",
+  "provider": "cliprox",
+  "model": "gpt-image-2",
+  "source_references": [
+    "assets/generated/mikey-jj-route-companion/source/mikey-base.prompt.txt",
+    "assets/generated/mikey-jj-route-companion/source/mikey-walk-east.prompt.txt",
+    "assets/generated/mikey-jj-route-companion/source/mikey-walk-south.prompt.txt",
+    "assets/generated/mikey-jj-route-companion/source/mikey-walk-north.prompt.txt"
+  ],
+  "generation": {
+    "base_reference": "2d/mikey-base.png",
+    "directional_source_sheets": {
+      "east": "tmp/imagegen/mikey-jj-route-companion/four-dir/mikey-walk-east-raw.png",
+      "south": "tmp/imagegen/mikey-jj-route-companion/four-dir/mikey-walk-south-raw.png",
+      "north": "tmp/imagegen/mikey-jj-route-companion/four-dir/mikey-walk-north-raw.png"
+    },
+    "source_dimensions": {
+      "east": "2172x724",
+      "south": "1536x1024",
+      "north": "1536x1024"
+    },
+    "layout": "east 8x1; south/north 4x2; west mirrored from east",
+    "direction_order": ["east", "south", "west", "north"],
+    "frame_order": ["contact", "down", "pass", "up", "contact", "down", "pass", "up"],
+    "background": "#00ff00 chroma-key",
+    "processing": [
+      "transparent-image-generator/scripts/chroma_key.py --key 0,255,0 --tolerance 180 --feather 8",
+      "detect source grid from aspect ratio and crop eight cells",
+      "keep largest connected character component per cell and remove separator pixels",
+      "align all frames to foot baseline y=466 and pivot x=192",
+      "mirror east row for west direction",
+      "pack fixed 384x512 frames into a 3072x2048 east/south/west/north atlas"
+    ]
+  },
+  "outputs": {
+    "runtime_atlas": "content/assets/generated/mikey-jj-route-companion/transparent/mikey-walk-atlas.png",
+    "canonical_atlas": "2d/mikey-walk-atlas.png",
+    "directional_frames": "2d/directions/{east,south,west,north}/mikey-walk-01.png .. mikey-walk-08.png"
+  },
+  "acceptance": {
+    "alpha_checked": true,
+    "corners_transparent": true,
+    "green_visible_pct": 0,
+    "dimensions_checked": true,
+    "frame_dimensions": "384x512",
+    "atlas_dimensions": "3072x2048",
+    "direction_rows": 4,
+    "baseline_aligned": true
+  },
+  "hashes": {
+    "mikey-walk-atlas.png": "595ded72c59e2447dbddd47c8da82465df7928f545b91cdbc2e570dffb9ef633",
+    "east/mikey-walk-01.png": "2f6127b94aca145e2975d5c6ad053b328ac6138e4d8387a57c3df39b62d9a91e",
+    "south/mikey-walk-01.png": "22c238ff1e21135b78fc996bef99604557c26dc3de1ae87a963bcabed35a972d",
+    "west/mikey-walk-01.png": "29ed0c047cd37459a4051178f1a2cbb38aee770b6600717c822ba32a4c7239c9",
+    "north/mikey-walk-01.png": "32e9ecfd18c5c0fffc3cf9edc58aaea798fea60ab0666a627a66bb1f0afa562b"
+  },
+  "limitations": [
+    "模型生成的是逐格动作，不是骨骼动画；运行时以八帧循环播放。",
+    "west 方向由 east 镜像，保持左右动作一致。",
+    "角色按 Mikey & JJ 的方块漫画素材约束原创生成，不直接复刻单帧截图。"
+  ]
+}

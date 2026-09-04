@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="data:,">
+  <title id="page-title">豆豆龙英语 · 西游记</title>
+  <link rel="stylesheet" href="style.css?v=png1">
+  <link rel="stylesheet" href="home.css?v=lib17">
+  <link rel="stylesheet" href="tv.css?v=1">
+</head>
+<body class="shelf-body">
+  <div id="app" class="home-app shelf-app">
+    <header class="home-hero">
+      <img id="series-cover" class="hero-art" src="../assets/covers/journey-west-cover.png" alt="Journey to the West 封面">
+      <div class="hero-body">
+        <a class="w-nav-btn shelf-back" href="home.html">← 首页</a>
+        <h1><span id="series-title-zh">西游记</span> <span id="series-title-en" class="en">Journey to the West</span></h1>
+        <p id="series-subtitle" class="subtitle">每天一小集，句子开口说</p>
+        <div class="home-actions">
+          <input id="search" type="search" placeholder="搜索集数或标题…">
+          <button type="button" id="btn-wordbook">生词本</button>
+          <a id="reader-link" class="sb-link" href="storybook.html?ep=1">绘本阅读</a>
+          <a id="collection-link" class="sb-link" href="collection-assets-preview.html" hidden>伙伴与收藏</a>
+          <a id="dialogue-link" class="sb-link" href="index.html">对话模式（石猴）</a>
+        </div>
+      </div>
+    </header>
+    <div id="wordbook-panel" class="hidden"></div>
+    <main id="grid"></main>
+    <p id="status" class="hint"></p>
+  </div>
+  <script src="tv-remote.js?v=1"></script>
+  <script src="content-gate.js?v=1"></script>
+  <script src="shelf.js?v=lib4"></script>
+</body>
+</html>

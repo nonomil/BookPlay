@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>c01 巩固链路验收夹具</title>
+  <style>
+    body { max-width: 760px; margin: 40px auto; padding: 0 18px; font: 16px/1.6 system-ui, sans-serif; }
+    button, a { display: inline-block; margin: 8px 8px 8px 0; padding: 10px 14px; }
+    pre { padding: 14px; overflow-wrap: anywhere; white-space: pre-wrap; background: #f1f3f5; }
+  </style>
+</head>
+<body>
+  <h1>c01 巩固链路验收夹具</h1>
+  <p>固定写入 1–7 集已完成、c01 巩固未完成、跳过升级豁免的隔离状态。</p>
+  <button id="seed" type="button">写入隔离验收状态</button>
+  <a href="/engine/map.html">打开地图</a>
+  <a href="/engine/drill.html?c=c01">打开 c01 巩固</a>
+  <button id="refresh" type="button">刷新验收收据</button>
+  <pre id="receipt" aria-live="polite"></pre>
+  <script>
+    "use strict";
+    const receipt = document.getElementById("receipt");
+    function renderReceipt() {
+      let progress = {};
+      let drill = {};
+      try { progress = JSON.parse(localStorage.getItem("bookplay_adv_progress") || "{}"); } catch (_) {}
+      try { drill = JSON.parse(localStorage.getItem("bookplay_drill") || "{}"); } catch (_) {}
+      receipt.textContent = JSON.stringify({
+        episodesDone: Object.values(progress).filter((item) => item && item.done).length,
+        migrated: localStorage.getItem("bookplay_drill_migrated"),
+        learnLevel: localStorage.getItem("bookplay_learn_level"),
+        c01: drill.c01 || null,
+      }, null, 2);
+    }
+    document.getElementById("seed").addEventListener("click", () => {
+      const progress = {};
+      for (let episode = 1; episode <= 7; episode += 1) {
+        progress[episode] = { node: 9, total: 9, done: true };
+      }
+      localStorage.setItem("bookplay_adv_progress", JSON.stringify(progress));
+      localStorage.setItem("bookplay_drill", "{}");
+      localStorage.setItem("bookplay_drill_migrated", "1");
+      localStorage.setItem("bookplay_learn_level", "std");
+      renderReceipt();
+    });
+    document.getElementById("refresh").addEventListener("click", renderReceipt);
+    renderReceipt();
+  </script>
+</body>
+</html>

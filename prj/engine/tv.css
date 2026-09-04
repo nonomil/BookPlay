@@ -1,0 +1,249 @@
+/*
+ * Shared 10-foot TV presentation layer.
+ * Loaded by every entry page but deliberately scoped to landscape displays
+ * at 1000px and above so phones and portrait tablets keep the mobile UI.
+ */
+@media (min-width: 1000px) and (orientation: landscape) {
+  :root {
+    --tv-safe-inline: clamp(32px, 4vw, 96px);
+    --tv-safe-block: clamp(24px, 3vh, 54px);
+    --tv-control-size: clamp(64px, 4.5vw, 84px);
+    --tv-focus: #ffd76a;
+  }
+
+  html,
+  body {
+    min-width: 1000px;
+  }
+
+  /* Ten-foot targets: a remote should not need pixel-perfect pointing. */
+  :is(button, a, input, select, [role="button"]) {
+    min-height: var(--tv-control-size);
+  }
+
+  :is(button, a, input, select, [role="button"]):focus-visible {
+    outline: 4px solid var(--tv-focus);
+    outline-offset: 5px;
+    box-shadow: 0 0 0 8px rgba(255, 215, 106, 0.28);
+  }
+
+  /* Shared page gutters keep content away from overscan on real TVs. */
+  :is(.home-app, .shelf-app, .lesson-shell, .drill-body, .companion-shell, #wala-review, #wala-end) {
+    padding-inline: var(--tv-safe-inline);
+  }
+
+  .home-app,
+  .shelf-app {
+    padding-block: var(--tv-safe-block);
+  }
+
+  .home-hero,
+  #grid,
+  .book-grid,
+  .shelf-bar,
+  .adv-wrap {
+    max-width: 1600px;
+  }
+
+  .home-hero h1 { font-size: clamp(2.8rem, 4vw, 4.6rem); }
+  .home-hero .subtitle,
+  .home-hero .hint { font-size: clamp(1.15rem, 1.6vw, 1.7rem); }
+  .home-actions { gap: 1rem; }
+  .home-actions :is(a, button) { padding-inline: 1.5rem; }
+
+  #grid { grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1.4rem; }
+  .card img { height: 280px; }
+  .card .name { font-size: 1.2rem; }
+  .card .name-zh,
+  .card .prog { font-size: 1rem; }
+
+  /* Legacy conversation adventure remains readable on the same 10-foot canvas. */
+  body.adventure-body .adv-wrap { padding-inline: 0; }
+  body.adventure-body .adv-stage { min-height: 56vh; }
+  body.adventure-body .adv-panel { padding: 1.6rem 2rem; }
+  body.adventure-body .adv-panel #adv-en { font-size: 1.8rem; line-height: 1.6; }
+  body.adventure-body .adv-panel #adv-zh { font-size: 1.25rem; }
+  body.adventure-body .adv-nav { gap: 1rem; }
+  body.adventure-body .adv-nav :is(button, a) { min-height: 64px; padding-inline: 1.3rem; font-size: 1.1rem; }
+
+  /* Route map: fewer, larger cards per viewport. */
+  body.map-body #map-top { min-height: 78px; padding-inline: var(--tv-safe-inline); }
+  body.map-body #map-top :is(#btn-home, #btn-list, #companion-entry) {
+    min-height: var(--tv-control-size);
+    padding-inline: 1.35rem;
+    font-size: 1.15rem;
+  }
+  body.map-body .page-head { padding-top: 1.6rem; }
+  body.map-body .page-head h2 { font-size: clamp(2.5rem, 3.4vw, 4rem); }
+  body.map-body .page-summary { font-size: 1.25rem; }
+  body.map-body .node { --card: 190px; }
+  body.map-body #nav-prev,
+  body.map-body #nav-next { width: var(--tv-control-size); height: var(--tv-control-size); font-size: 2.5rem; }
+
+  /* Flagship player: leave an overscan-safe gutter and keep dock readable. */
+  #w-top,
+  #w-rtop,
+  #wala-top {
+    min-height: 78px;
+    padding: 12px var(--tv-safe-inline);
+    gap: 1.2rem;
+  }
+  #w-top :is(.w-nav-btn, button, a),
+  #w-rtop :is(button, a),
+  #wala-top :is(button, a) {
+    min-height: var(--tv-control-size);
+    padding-inline: 1.25rem;
+    font-size: 1.1rem;
+  }
+  #w-ep-title,
+  #w-rtitle,
+  .w-title { font-size: clamp(1.35rem, 2vw, 2rem); }
+  .w-stage { padding: 0 var(--tv-safe-inline) var(--tv-safe-block); }
+  .w-frame { max-width: min(1600px, calc(100vw - 2 * var(--tv-safe-inline))); }
+  .w-dock { bottom: var(--tv-safe-block); gap: 1.2rem; justify-content: flex-start; }
+  /* The arrows now live inside the speech panel; keep them compact while
+     leaving the surrounding panel large enough for remote focus. */
+  .w-arrow { width: 32px; height: 32px; min-width: 32px; min-height: 32px; font-size: 1rem; border-radius: 5px; }
+  .w-avatar { width: clamp(88px, 7vw, 128px); height: clamp(88px, 7vw, 128px); }
+  /* The subtitle dock owns the TV safe-area left edge; side cards use their
+     own upper rail and never change this horizontal anchor. */
+  .w-dock { width: calc(100% - var(--tv-safe-inline) - var(--tv-safe-inline)); left: var(--tv-safe-inline); transform: none; }
+  .w-speech { flex: 0 1 auto; width: fit-content; max-width: 100%; min-width: max(0px, calc(50vw - clamp(88px, 7vw, 128px) - 1.2rem)); padding: 1rem 1.4rem; }
+  .w-bubble { width: 100%; max-width: 100%; max-height: min(38vh, 360px); overflow-y: auto; }
+  #w-en { width: fit-content; max-width: 100%; font-size: clamp(2rem, 2.7vw, 3.1rem); line-height: 1.45; text-align: left; }
+  #w-zh { width: fit-content; max-width: 100%; font-size: clamp(1.35rem, 1.8vw, 2rem); text-align: left; }
+  #w-cards,
+  #w-cards-left { width: min(196px, 14vw); gap: 0.35rem; top: var(--tv-safe-block); }
+  #w-cards { right: var(--tv-safe-inline); }
+  #w-cards-left { left: var(--tv-safe-inline); }
+  #w-cards .vcard,
+  #w-cards-left .vcard { padding: 0.42rem 0.55rem; }
+  #w-cards .vterm,
+  #w-cards-left .vterm { font-size: 1.1rem; line-height: 1.12; }
+  #w-cards .vzh-off,
+  #w-cards-left .vzh-off { font-size: 0.92rem; line-height: 1.16; }
+  #w-cards .vdef,
+  #w-cards-left .vdef { font-size: 0.82rem; line-height: 1.18; }
+  #w-cards .vcard-context,
+  #w-cards-left .vcard-context { padding: 0.2rem 0.36rem !important; gap: 0; }
+  #w-cards .vcard-context .vterm,
+  #w-cards-left .vcard-context .vterm { font-size: 1.05rem; line-height: 1.06; }
+  #w-cards .vcard-context .vipa,
+  #w-cards-left .vcard-context .vipa { font-size: 0.72rem; }
+  #w-cards .vcard-context .vzh-off,
+  #w-cards-left .vcard-context .vzh-off { font-size: 0.84rem; line-height: 1.08; }
+  #w-cards .vcard-context .vdef,
+  #w-cards-left .vcard-context .vdef,
+  #w-cards .vcard-context .vcard-head,
+  #w-cards-left .vcard-context .vcard-head { display: none; }
+  #w-cards .vcard-context .vspk,
+  #w-cards-left .vcard-context .vspk {
+    flex-basis: 24px;
+    min-width: 24px;
+    min-height: 0;
+    width: 24px;
+    height: 24px;
+    aspect-ratio: 1 / 1;
+    box-sizing: border-box;
+  }
+  #w-cards .vcard-context .vspk svg,
+  #w-cards-left .vcard-context .vspk svg { width: 13px; height: 13px; }
+  .w-vocab-peek { width: min(360px, calc(100% - 2 * var(--tv-safe-inline))); padding: 0.86rem 0.92rem 0.9rem; }
+  .w-vocab-peek-title b { font-size: 1.45rem; }
+  .w-vocab-peek-title span { font-size: 0.92rem; }
+  .w-vocab-peek-zh { font-size: 1.1rem; }
+  .w-vocab-peek-actions { gap: 0.55rem; margin-top: 0.72rem; }
+  .w-vocab-peek-actions button { min-height: 40px; padding-inline: 0.72rem; font-size: 0.92rem; }
+  .w-vocab-peek-actions svg { width: 16px; height: 16px; }
+  .w-sent-mark { width: 40px; height: 40px; min-width: 40px; min-height: 40px; }
+  .w-sent-mark svg { width: 16px; height: 16px; }
+  .wcard-term { font-size: 2.3rem; }
+  .wcard-zh { font-size: 1.4rem; }
+  .wcard-ex,
+  .wcard-ex-zh { font-size: 1.25rem; }
+
+  /* Review and drills are intentionally card-like and easy to scan from a sofa. */
+  #wala-review { max-width: 1440px; }
+  #w-rtabs { gap: 0.9rem; }
+  #w-rtabs button { min-width: 150px; font-size: 1.2rem; }
+  #w-rbody { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+  .w-kcard { min-height: 104px; padding: 1rem 1.3rem; }
+  .w-kcard .en { font-size: 1.35rem; }
+  .w-kcard .zh { font-size: 1.1rem; }
+  .w-kcard .spk { width: 64px; height: 64px; min-width: 64px; }
+  #wala-end { max-width: 1200px; padding-block: var(--tv-safe-block); }
+  .w-end-card { padding: 2.6rem 3rem; }
+  .w-end-card h2 { font-size: 2.4rem; }
+  .w-quiz-choice { min-height: 64px; padding: 0.8rem 1.2rem; font-size: 1.25rem; }
+  .w-quiz-opt-row { gap: 0.7rem; }
+
+  body.drill-body #d-top { min-height: 78px; padding-inline: var(--tv-safe-inline); }
+  body.drill-body #d-top :is(a, button) { min-height: var(--tv-control-size); font-size: 1.1rem; }
+  body.drill-body #d-tabs { gap: 1rem; padding-inline: var(--tv-safe-inline); }
+  body.drill-body #d-tabs .tab { min-height: 64px; padding-inline: 1.25rem; font-size: 1.15rem; }
+  body.drill-body #d-main { max-width: 1200px; padding: var(--tv-safe-block) var(--tv-safe-inline) 4rem; }
+  body.drill-body .q-progress { font-size: 1.2rem; }
+  body.drill-body .lead { font-size: 2rem; }
+  body.drill-body .panel { padding: 1rem 0; }
+  body.drill-body .review-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+  body.drill-body .review-card { min-height: 180px; padding: 1.2rem; }
+  body.drill-body .review-term { font-size: 1.45rem; }
+  body.drill-body .opt { min-height: 72px; padding: 0.85rem 1.1rem; font-size: 1.3rem; }
+  body.drill-body .p-tile { min-height: 64px; padding: 0.65rem 1.1rem; font-size: 1.2rem; }
+  body.drill-body .relearn-btn { min-height: 64px; padding-inline: 1.1rem; font-size: 1.1rem; }
+
+  /* Companion / inn: two-column layout scales without stretching small controls. */
+  body.companion-body .inn-topbar { min-height: 88px; padding-inline: var(--tv-safe-inline); }
+  body.companion-body .inn-topbar h1 { font-size: 2rem; }
+  body.companion-body .inn-layout { width: min(1600px, calc(100% - 2 * var(--tv-safe-inline))); gap: 2rem; margin-block: 2rem 4rem; }
+  body.companion-body .companion-card,
+  body.companion-body .journal-card,
+  body.companion-body .medal-section { padding: 2rem; }
+  body.companion-body .companion-stage { min-height: 420px; }
+  body.companion-body .care-actions { gap: 1rem; }
+  body.companion-body .care-actions button { min-height: 88px; font-size: 1.15rem; }
+  body.companion-body .medal-wall { grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 1.1rem; }
+  body.companion-body .medal-card { min-height: 240px; font-size: 1.1rem; }
+
+  /* Per-episode lesson page: keep the quiz side-by-side without reserving a
+     mostly empty half-screen card for a short question. */
+  body.lesson-body .lesson-shell { max-width: 1600px; padding-inline: var(--tv-safe-inline); }
+  body.lesson-body .lesson-topbar { min-height: 104px; padding: 1rem 0; }
+  body.lesson-body .lesson-heading h1 { font-size: 2rem; }
+  body.lesson-body .lesson-stage { grid-template-columns: minmax(260px, 0.7fr) minmax(0, 1.8fr); gap: 2rem; align-items: start; }
+  body.lesson-body .teacher-card { min-height: 0; padding: 1.6rem; }
+  body.lesson-body .question-card { min-height: 0; padding: 1.5rem 1.8rem; }
+  body.lesson-body :is(.audio-button, .review-audio, .feedback-audio, .word-target-audio, .lesson-speak-question, .lesson-speak-order, .lesson-speak-fill, .title-audio, .intro-audio) {
+    min-width: var(--tv-control-size);
+    width: var(--tv-control-size);
+    min-height: var(--tv-control-size);
+    height: var(--tv-control-size);
+    aspect-ratio: 1 / 1;
+    box-sizing: border-box;
+  }
+  body.lesson-body .hint-button { min-height: var(--tv-control-size); }
+  body.lesson-body .question-card h2,
+  body.lesson-body .question-en { font-size: 2rem; }
+  body.lesson-body .choice-grid { gap: 0.65rem; margin-top: 1.35rem; }
+  body.lesson-body .choice-button { min-height: 52px; padding: 0.25rem 0.9rem; }
+  body.lesson-body .choice-en { font-size: 1.12rem; }
+  body.lesson-body .choice-secondary,
+  body.lesson-body .choice-zh { font-size: 0.82rem; }
+  body.lesson-body .word-review-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1rem; }
+
+  /* Settings and dialogs open from a focused control, so keep them centered. */
+  #w-settings-panel { width: min(620px, 42vw); padding: 1.2rem 1.4rem; }
+  #w-settings-panel .mode-toggle button { min-height: 58px; min-width: 86px; font-size: 1rem; }
+
+  /* Large comic reader controls. */
+  body.storybook-split #topbar { min-height: 78px; padding-inline: var(--tv-safe-inline); }
+  body.storybook-split #topbar :is(button, a) { min-height: var(--tv-control-size); font-size: 1.1rem; }
+  body.storybook-split #sb-text { font-size: clamp(1.5rem, 2.1vw, 2.3rem); line-height: 1.6; }
+  body.storybook-split #sb-zh { font-size: clamp(1.15rem, 1.45vw, 1.6rem); }
+  body.storybook-split #sb-nav :is(button, a) { min-height: var(--tv-control-size); padding-inline: 1.4rem; }
+
+  /* Respect accessibility preferences on TV just as on mobile. */
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation: none !important; transition: none !important; }
+  }
+}

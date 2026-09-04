@@ -1,0 +1,86 @@
+# Dependencies and tool caches
+/node_modules/
+/.pytest_cache/
+/.playwright-mcp/
+/.agent-control/
+**/__pycache__/
+*.py[cod]
+*.log
+
+# Raw sources, generated runtime content, and local libraries
+/data/
+/content/
+/书籍资料库/
+/prj/assets/
+/prj/data/
+
+# Generated and release outputs
+/dist/
+/output/
+/release/
+/tmp/
+*.apk
+*.aab
+*.zip
+*.7z
+*.rar
+*.tar
+*.gz
+*.partial
+*.jar
+!/android/gradle/wrapper/gradle-wrapper.jar
+
+# Android and Gradle local/build state
+/.gradle/
+/android/.gradle/
+/android/build/
+/android/app/build/
+/android/capacitor-cordova-android-plugins/
+/android/app/src/main/assets/public/
+/android/app/src/main/assets/data/
+/android/local.properties
+
+# IDE and operating-system state
+/.idea/
+/.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Media and binary documents are deliberately outside Git
+*.mp3
+*.mp4
+*.m4a
+*.wav
+*.ogg
+*.flac
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.gif
+*.bmp
+*.svg
+*.ttf
+*.otf
+*.woff
+*.woff2
+*.pdf
+*.doc
+*.docx
+*.ppt
+*.pptx
+*.xls
+*.xlsx
+*.srt
+
+# Temporary/editor files
+*.tmp
+*.temp
+*.bak
+*.swp
+*~
+
+# AI image-generation raw API response logs (provenance kept on disk, not tracked)
+*.response.attempt*.json

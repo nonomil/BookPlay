@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="data:,">
+  <title>西游故事贴纸册 · 豆豆龙英语</title>
+  <link rel="stylesheet" href="companion.css?v=15">
+  <link rel="stylesheet" href="tv.css?v=1">
+</head>
+<body class="companion-body collection-page stickers-page">
+  <header class="inn-topbar">
+    <a class="back-link" href="companion.html?series=jttw">← 返回白龙马驿站</a>
+    <div>
+      <p>JOURNEY COLLECTION</p>
+      <h1>西游故事贴纸册</h1>
+    </div>
+    <a class="medal-shortcut" href="medals.html?series=jttw" aria-label="打开西游勋章墙">
+      <span id="top-medal-count">🏅 勋章墙 · 0 / 19</span>
+    </a>
+  </header>
+
+  <main id="companion-app" class="inn-layout collection-layout" aria-busy="true">
+    <div id="companion-error" class="companion-error" role="alert" hidden>
+      <strong>贴纸册暂时打不开</strong>
+      <span id="companion-error-message">正在整理你的故事礼物，请稍后再试。</span>
+      <button id="companion-retry" type="button">重新加载</button>
+    </div>
+
+    <section id="sticker-book" class="sticker-book" aria-labelledby="sticker-book-title">
+      <div class="sticker-book-heading">
+        <div><div class="section-kicker">每关一枚 · 故事元素收藏</div><h2 id="sticker-book-title">西游故事贴纸册</h2></div>
+        <strong id="sticker-book-count">0 / 108 已收入</strong>
+      </div>
+      <p id="sticker-book-intro" class="sticker-book-intro">选一篇，打开你的西游场景。</p>
+
+      <section id="sticker-chapter-map" aria-label="十三篇西游贴纸场景">
+        <div id="sticker-chapter-grid" class="sticker-chapter-grid"></div>
+      </section>
+
+      <section id="sticker-chapter-view" class="sticker-chapter-view" aria-labelledby="chapter-view-title" hidden>
+        <nav class="chapter-view-nav" aria-label="篇章切换">
+          <a id="chapter-map-back" href="stickers.html?series=jttw">← 十三篇地图</a>
+          <a id="chapter-prev" href="stickers.html?series=jttw">上一篇</a>
+          <a id="chapter-next" href="stickers.html?series=jttw">下一篇</a>
+        </nav>
+        <div id="chapter-scene" class="chapter-scene">
+          <div id="chapter-scene-art" class="chapter-scene-art" aria-hidden="true"></div>
+          <div class="chapter-scene-copy">
+            <span id="chapter-view-number">第 1 篇</span>
+            <h2 id="chapter-view-title">石猴出世</h2>
+            <p id="chapter-view-en" lang="en">Stone Monkey Beginnings</p>
+            <strong id="chapter-view-progress">0 / 7</strong>
+          </div>
+        </div>
+        <div id="chapter-sticker-grid" class="chapter-sticker-grid" aria-label="本篇故事贴纸"></div>
+      </section>
+    </section>
+  </main>
+
+  <dialog id="sticker-dialog" aria-labelledby="sticker-dialog-title">
+    <button id="sticker-dialog-close" type="button" aria-label="关闭贴纸详情">×</button>
+    <div class="sticker-dialog-layout">
+      <div id="sticker-dialog-art" class="sticker-dialog-art"></div>
+      <div class="sticker-dialog-copy">
+        <span id="sticker-dialog-status" class="sticker-dialog-status">已解锁</span>
+        <h2 id="sticker-dialog-title"></h2>
+        <p id="sticker-dialog-en" lang="en"></p>
+        <p id="sticker-dialog-description" class="sticker-dialog-description"></p>
+        <p id="sticker-dialog-description-en" class="sticker-dialog-description-en" lang="en"></p>
+        <p id="sticker-dialog-motion" class="sticker-dialog-motion">动态预览：贴纸会轻轻浮起，边角闪一下。</p>
+        <dl class="sticker-dialog-meta">
+          <div><dt>故事位置</dt><dd id="sticker-dialog-source"></dd></div>
+          <div><dt>故事元素</dt><dd id="sticker-dialog-type"></dd></div>
+          <div><dt>收入时间</dt><dd id="sticker-dialog-acquired"></dd></div>
+        </dl>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="tv-remote.js?v=1"></script>
+  <script src="companion-core.js?v=1"></script>
+  <script src="episode-reward.js?v=2"></script>
+  <script src="companion.js?v=15"></script>
+</body>
+</html>

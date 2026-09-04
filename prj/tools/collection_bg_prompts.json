@@ -1,0 +1,89 @@
+{
+  "schema_version": 2,
+  "purpose": "西游记 13 辑地图页背景图的生成规格。消费者是 prj/engine/map.css 的 .map-page 背景层，上面要叠圆点虚线路径、圆形关卡节点和亮色 UI。参考瓦拉英语的关卡地图：明快、等距、儿童卡通。",
+  "model": "gpt-image-2",
+  "size_preference": ["1536x1024", "1024x1024"],
+  "output_dir": "content/assets/collections",
+  "output_pattern": "{id}.jpg",
+  "art_direction_notes": "v2 改版原因：v1 生成的图偏暗、写实水粉、雾气重，既不适合儿童，也不匹配 Little Fox《Journey to the West》动画那种平涂、粗描边、高饱和的卡通风。v2 全面转向明快高调卡通。v3 补上构图硬约束：所有 13 张图的可用留空区必须一致，否则每辑节点落点看起来毫无规律。",
+  "layout_contract": {
+    "why": "map.css 用 background-size: cover 铺满 .map-page，节点是固定的两行蛇形，两行分别落在页面高度约 41% 和 78% 的位置，卡片自身约占页面高度 18%。所以每张图必须在同一个区域留空，节点落点才会有规律。c01 花果山天然符合（中间一大片平坦草地）；c02 天宫的初版把宫殿放在下半部分四角，第二行卡片正好盖住它们，属于违约。",
+    "clear_zone": "图像高度 30%..92%、宽度 8%..92% 的矩形区域内必须是平坦、低对比、无建筑无高大物体的地面或开阔水面/天空",
+    "detail_zone": "所有建筑、高树、山峰、塔楼、桥梁等高大元素只能放在图像上方 0%..30% 的横带，以及左右两侧各 0%..8% 的竖带，加上最底部 92%..100% 的窄横带",
+    "verification": "人工看图。曾试过用亮度方差抽样自动判定，但它把人工认可的 c01（草地带花草纹理、两侧树冠内探）判成失败，把构图有问题的 c02 判成通过——指标和真实诉求不一致，已弃用，不要再加回来。",
+    "reference_good": "c01 花果山：中下部一整片连续平坦草地，高大景物全在上方山峦和左右树丛。新图对齐它就对了。"
+  },
+  "style_suffix": "Wide panoramic horizontal landscape banner, far wider than it is tall, sweeping left-to-right composition. Bright cheerful children's mobile-game level-map art, isometric 2.5D diorama seen from a high three-quarter view, chunky low-poly cartoon shapes with clean bold outlines, flat saturated candy colors, soft cel shading, crisp light blue sky with fluffy rounded white clouds, high-key daylight, playful and inviting like a Nintendo or Duolingo world map. Scenery is arranged as a wide frame: buildings, pagodas, towers, bridges, tall trees and mountain peaks are pushed up along the far upper edge and out to the extreme left and right sides, while the broad central and lower expanse stays one continuous open sweep of flat low-contrast ground, calm water or empty sky with nothing built on it, because interactive cards are placed on top of that open sweep. Only tiny flat ground decoration such as small flowers, pebbles or grass tufts is allowed on the open sweep. No characters, no people, no monkey, no animals, no text, no letters, no Chinese characters, no numbers, no logo, no watermark, no UI, no buttons, no frame, no border, no dark gloomy tone, no photorealism, no heavy fog, no grim or scary mood, not a tall image, not a square image, not a portrait composition.",
+  "collections": [
+    {
+      "id": "c01",
+      "title_zh": "花果山出世",
+      "prompt": "Flower-Fruit Mountain as a sunny cartoon island: rounded emerald green peaks, a cheerful turquoise waterfall tumbling into a bright aqua pool, candy-pink peach blossom trees and glossy tropical fruit trees, sunny flat grass clearings in the middle."
+    },
+    {
+      "id": "c02",
+      "title_zh": "大闹天宫",
+      "prompt": "The Heavenly Palace as a bright cloud kingdom: a row of cheerful red-and-gold pagoda pavilions with mint-green jade railings lined up along the very top of the frame on fluffy white and peach cloud platforms, one tall pagoda hugging the far left edge and another hugging the far right edge, and below them a vast open sunny sea of soft white and peach clouds filling the entire lower two thirds with nothing built on it."
+    },
+    {
+      "id": "c03",
+      "title_zh": "取经启程",
+      "prompt": "Leaving Chang'an on a sunny morning: a cheerful cartoon city gate with red walls and a golden roof on the far left, rolling green and gold autumn hills, a wide flat sandy road curving through the open middle, round willow and maple trees."
+    },
+    {
+      "id": "c04",
+      "title_zh": "黄风与人参果",
+      "prompt": "A sunny golden desert meeting a fruit garden: warm sand dunes with playful swirls of breeze on the left, a bright walled garden courtyard on the right with one huge rounded tree full of cute pale ginseng fruit, wide flat sand in the middle."
+    },
+    {
+      "id": "c05",
+      "title_zh": "白骨夫人",
+      "prompt": "White Bone Ridge in cheerful daylight: chalky white and lavender rounded rock spires, playful cartoon bare trees with curly branches, pale mint grass tufts, soft pastel purple and cream palette, wide flat pale ground in the middle. Whimsical, not scary."
+    },
+    {
+      "id": "c06",
+      "title_zh": "金角银角",
+      "prompt": "Lotus Cave on a bright volcanic island: rounded charcoal-and-plum rock terraces with a friendly glowing orange cave mouth shaped like a lotus on the right, warm coral lava streams, cute round pine trees, sunny sky, flat open rock plaza in the middle."
+    },
+    {
+      "id": "c07",
+      "title_zh": "红孩儿",
+      "prompt": "Fiery Mountain as a bright cartoon volcano land: rounded orange and coral rock ridges, cheerful little flame puffs, warm amber flat ground across the middle, stylized red-and-yellow striped strata, sunny turquoise sky with white clouds for contrast."
+    },
+    {
+      "id": "c08",
+      "title_zh": "车迟国斗法",
+      "prompt": "The Cart-Slow Kingdom as a festive cartoon city: bright tiered towers with teal and coral roofs and colorful triangle banners on the left and right, a wide sunny stone plaza with a round raised altar platform in the open middle, clear blue sky."
+    },
+    {
+      "id": "c09",
+      "title_zh": "金箍与星君",
+      "prompt": "Hall of the Star Lords as a friendly night-sky world: deep periwinkle sky with big cute twinkling stars and pastel nebula swirls, a bright floating temple of indigo stone and gold trim on the right, glowing cloud stepping platforms across the middle. Luminous and magical, not dark."
+    },
+    {
+      "id": "c10",
+      "title_zh": "真假美猴王",
+      "prompt": "Twin cartoon peaks mirrored in a bright turquoise lake, symmetrical composition, rounded green mountains on both far sides, sparkling flat water and pale sandy shore across the open middle, sunny sky with fluffy clouds."
+    },
+    {
+      "id": "c11",
+      "title_zh": "小雷音与蜘蛛精",
+      "prompt": "A little golden temple in a sunny bamboo forest: bright yellow-green bamboo clusters on the far left and right, one cheerful small gold-roofed hall peeking out, playful cartoon spider webs sparkling with dew between trunks, sunlit flat mossy clearing in the middle."
+    },
+    {
+      "id": "c12",
+      "title_zh": "狮驼岭三妖",
+      "prompt": "Lion-Camel Ridge as a bold cartoon canyon: chunky slate-blue and teal rock formations shaped like sleeping cat heads on both sides, dramatic but friendly puffy clouds, bright sunlit sandy canyon floor across the open middle, cool blue-and-cream palette."
+    },
+    {
+      "id": "c13",
+      "title_zh": "灵山取经",
+      "prompt": "Spirit Mountain finale: a radiant golden temple complex with tiered roofs on a bright cloud-wrapped peak at the top right, a wide cream stone stairway and flat plaza across the middle, round lotus ponds with pink blossoms, warm gold and soft rose sunlight, joyful and triumphant."
+    },
+    {
+      "id": "mc01",
+      "title_zh": "我的世界",
+      "prompt": "A bright Minecraft-style overworld diorama for a children's game map: chunky voxel grass hills and square trees along the far upper edge, a friendly red nether portal and lava-glow cave hugging the far left, a wooden village house and sunflower field hugging the far right, and a vast open flat lime-green grass plain filling the entire central sweep."
+    }
+  ]
+}

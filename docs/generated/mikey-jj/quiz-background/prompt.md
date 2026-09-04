@@ -1,0 +1,31 @@
+# Mikey & JJ 英语冒险｜章末测验背景 V1
+
+## 用途
+
+- 全屏章末小测的无文字背景。
+- HTML/CSS 在中央叠放题目、选项和进度。
+- 与漫画原页的白纸、黑色粗线、草绿、警示黄视觉语言一致。
+
+## GPT 生图提示词
+
+Use case: illustration-story
+Asset type: full-screen 16:9 chapter quiz background for a children's English adventure reader
+Primary request: create an original energetic comic-book background with a voxel-inspired adventure atmosphere, designed for a playful end-of-chapter quiz
+Scene/backdrop: a stylized school-adventure portal scene built from chunky geometric shapes, with comic speed lines, torn-paper corners, subtle halftone dots, block-shaped stone and grass details, and a few floating question-mark-like abstract spark shapes that do not form readable symbols
+Style/medium: polished children's graphic-novel illustration printed on warm white comic paper; bold ink outlines; crisp cel shading; tactile paper grain; friendly and adventurous, not scary
+Composition/framing: wide landscape composition with visual energy concentrated at the far left, far right, and lower corners; keep the central 62 percent calm, bright, low-detail, and low-contrast for a large HTML quiz card; safe crop to 16:9
+Lighting/mood: bright daytime, optimistic challenge-screen energy
+Color palette: warm paper white, ink black, vivid grass green, restrained warning yellow, small red accents
+Constraints: background only; no characters; no UI panels; no speech bubbles; no readable text; no letters; no numbers; no logos; no watermark; no answer icons; no exact game screenshot; no imitation of a specific existing franchise
+Avoid: dark horror, clutter in the center, glossy 3D UI, photographic realism, illegible pseudo-text
+
+## 请求参数
+
+```json
+{
+  "model": "gpt-image-2",
+  "n": 1,
+  "size": "1536x1024",
+  "response_format": "b64_json"
+}
+```

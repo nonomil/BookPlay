@@ -1,0 +1,42 @@
+{
+  "collection": "minecraft-b2-story-rewards",
+  "provider": "cliprox",
+  "model": "gpt-image-2",
+  "generation_entrypoint": "C:/Users/No'mi'l/.codex/skills/gpt-image-workflow/scripts/bee_image_workflow.py",
+  "generated_at": "2026-09-04",
+  "transparency_pipeline": {
+    "background_cleanup": "publish_transparent_assets.py checkerboard; panda-sneeze additionally segmented with OpenCV GrabCut because white fur was connected to the generated checkerboard",
+    "quality_gate": "chroma_key.py report, corners_transparent=true, green_visible_pct=0, green_edge_pct=0",
+    "published_root": "content/assets/generated/storybooks/minecraft/rewards/stickers"
+  },
+  "assets": [
+    {
+      "id": "minecraft.b2.bee-nest",
+      "prompt": "bee-nest/source/prompt.txt",
+      "raw": "bee-nest/2d/bee-nest.png",
+      "published": "content/assets/generated/storybooks/minecraft/rewards/stickers/bee-nest.png",
+      "report": "content/assets/generated/storybooks/minecraft/rewards/stickers/bee-nest.png.report.json",
+      "size": "1254x1254",
+      "story_anchor": "第4页：Birch 发现蜂巢与蜂蜜"
+    },
+    {
+      "id": "minecraft.b2.panda-sneeze",
+      "prompt": "panda-sneeze/source/prompt.txt",
+      "raw": "panda-sneeze/2d/panda-sneeze.png",
+      "published": "content/assets/generated/storybooks/minecraft/rewards/stickers/panda-sneeze.png",
+      "report": "content/assets/generated/storybooks/minecraft/rewards/stickers/panda-sneeze.png.report.json",
+      "size": "961x1073",
+      "story_anchor": "第8页：竹林里的小熊猫打喷嚏并弹出史莱姆球",
+      "postprocess": "grabcut-with-12px-safety-pad"
+    },
+    {
+      "id": "minecraft.b2.ink-saddle",
+      "prompt": "ink-saddle/source/prompt.txt",
+      "raw": "ink-saddle/2d/ink-saddle.png",
+      "published": "content/assets/generated/storybooks/minecraft/rewards/stickers/ink-saddle.png",
+      "report": "content/assets/generated/storybooks/minecraft/rewards/stickers/ink-saddle.png.report.json",
+      "size": "1254x1254",
+      "story_anchor": "第13–15页：Ink 带 Emmy 回家"
+    }
+  ]
+}

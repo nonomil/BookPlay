@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="data:,">
+  <title>豆豆龙英语 · 绘本路线图</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="map.css?v=52">
+  <link rel="stylesheet" href="tv.css?v=1">
+</head>
+<body class="map-body">
+  <div id="map-splash">
+    <div id="splash-txt">
+      <h1 id="splash-title">绘本路线图</h1>
+      <p id="splash-sub">Storybook Route</p>
+      <span id="splash-tip">点击任意处进入</span>
+    </div>
+    <a id="splash-companion" hidden href="companion.html?series=jttw" aria-label="进入白龙马驿站">
+      <span class="splash-companion-icon" aria-hidden="true">🥚</span>
+      <span class="splash-companion-copy">
+        <b id="splash-companion-name">神秘龙蛋</b>
+        <small id="splash-companion-progress">🏅 0 / 19</small>
+        <span id="splash-companion-medals" class="splash-companion-medals" aria-label="最近获得的勋章">
+          <span class="splash-medals-label">最近勋章</span>
+          <span id="splash-medal-strip" class="splash-medal-strip" aria-live="polite"></span>
+              <span id="splash-medal-empty" class="splash-medal-empty">完成一本故事，点亮第一枚</span>
+        </span>
+        <em>进入白龙马驿站 →</em>
+      </span>
+    </a>
+  </div>
+  <div id="map-top">
+    <a id="btn-home" href="home.html">← 首页</a>
+    <span id="col-name"></span>
+    <a id="companion-entry" hidden href="companion.html?series=jttw" aria-label="进入白龙马驿站">
+      <span data-companion-icon aria-hidden="true">🐉</span>
+      <span id="companion-entry-label">小白龙 · 🏅 0/19</span>
+    </a>
+    <span id="sp-badge"></span>
+    <a id="btn-list" href="shelf.html">列表</a>
+  </div>
+  <div id="map-track"></div>
+  <div id="map-hint">← 左右滑动切换合辑 →</div>
+  <button id="nav-prev" type="button" aria-label="上一个合辑">‹</button>
+  <button id="nav-next" type="button" aria-label="下一个合辑">›</button>
+  <div id="map-toast" class="hidden"></div>
+  <script src="tv-remote.js?v=1"></script>
+  <script src="content-gate.js?v=1"></script>
+  <script src="companion-core.js?v=1"></script>
+  <script src="map.js?v=52"></script>
+</body>
+</html>

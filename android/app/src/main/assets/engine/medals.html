@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="data:,">
+  <title>西游勋章墙 · 豆豆龙英语</title>
+  <link rel="stylesheet" href="companion.css?v=15">
+  <link rel="stylesheet" href="tv.css?v=1">
+</head>
+<body class="companion-body collection-page medals-page">
+  <header class="inn-topbar">
+    <a class="back-link" href="companion.html?series=jttw">← 返回白龙马驿站</a>
+    <div>
+      <p>JOURNEY COLLECTION</p>
+      <h1>西游勋章墙</h1>
+    </div>
+    <a class="medal-shortcut" href="stickers.html?series=jttw" aria-label="打开西游故事贴纸册">
+      <span id="top-medal-count">🏅 勋章墙 · 0 / 19</span>
+    </a>
+  </header>
+
+  <main id="companion-app" class="inn-layout collection-layout" aria-busy="true">
+    <div id="companion-error" class="companion-error" role="alert" hidden>
+      <strong>勋章墙暂时打不开</strong>
+      <span id="companion-error-message">正在整理你的取经记录，请稍后再试。</span>
+      <button id="companion-retry" type="button">重新加载</button>
+    </div>
+
+    <section class="medal-section" aria-labelledby="medal-title">
+      <div class="medal-heading">
+        <div><div class="section-kicker">永久收藏 · 不会撤回</div><h2 id="medal-title">西游勋章墙</h2></div>
+        <p id="next-target">下一枚勋章正在等你。</p>
+      </div>
+      <div id="recent-medals" class="recent-medals" aria-label="最近获得">
+        <div class="section-kicker">最近获得</div>
+        <p id="recent-empty" class="recent-empty" hidden>还没有获得勋章，先去取经吧！</p>
+        <div id="recent-strip" class="recent-strip"></div>
+      </div>
+      <div id="medal-filters" class="medal-filters" role="group" aria-label="筛选勋章">
+        <button type="button" data-medal-filter="all" aria-pressed="true">全部</button>
+        <button type="button" data-medal-filter="earned" aria-pressed="false">已获得</button>
+        <button type="button" data-medal-filter="chapter" aria-pressed="false">篇章勋章</button>
+        <button type="button" data-medal-filter="journey" aria-pressed="false">旅程勋章</button>
+        <span id="medal-filter-count" class="medal-filter-count" aria-live="polite">全部 · 19 枚</span>
+      </div>
+      <div id="next-target-card" class="next-target-card" aria-label="下一枚勋章目标"></div>
+      <div id="medal-wall" class="medal-wall"></div>
+    </section>
+  </main>
+
+  <dialog id="medal-dialog" aria-labelledby="dialog-title">
+    <button id="dialog-close" type="button" aria-label="关闭">×</button>
+    <div id="dialog-medal" class="dialog-medal"></div>
+    <span id="dialog-status" class="dialog-status"></span>
+    <h2 id="dialog-title"></h2>
+    <p id="dialog-en"></p>
+    <p id="dialog-description" class="dialog-description"></p>
+    <p id="dialog-motion" class="dialog-motion"></p>
+    <blockquote id="dialog-blessing"></blockquote>
+    <p id="dialog-condition"></p>
+    <p id="dialog-date"></p>
+    <a href="companion.html?series=jttw">回到白龙马驿站</a>
+  </dialog>
+
+  <script src="tv-remote.js?v=1"></script>
+  <script src="companion-core.js?v=1"></script>
+  <script src="episode-reward.js?v=2"></script>
+  <script src="companion.js?v=15"></script>
+</body>
+</html>

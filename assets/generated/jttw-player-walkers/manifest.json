@@ -1,0 +1,474 @@
+{
+  "schemaVersion": 1,
+  "assetId": "jttw-player-walkers",
+  "tool": "gpt-image-workflow + transparent-image-generator + Pillow",
+  "layout": "4 columns x 2 rows, 384x512 cells",
+  "frameOrder": [
+    "contact",
+    "left-foot-forward",
+    "passing",
+    "right-foot-forward",
+    "contact",
+    "left-foot-forward",
+    "passing",
+    "right-foot-forward"
+  ],
+  "characters": [
+    {
+      "id": "wukong",
+      "name": {
+        "zh": "孙悟空",
+        "en": "Sun Wukong"
+      },
+      "frames": 8,
+      "frameSize": "384x512",
+      "durationMs": 120,
+      "loop": true,
+      "gif": "content/assets/generated/jttw-player-walkers/wukong/wukong-walk.gif",
+      "runtimeFrames": "content/assets/generated/jttw-player-walkers/wukong/wukong-walk-01.png .. wukong-walk-08.png",
+      "sourceSheet": "assets/generated/jttw-route-companion/2d/wukong-walk-strip.png",
+      "sha256": {
+        "gif": "bff3068993a18a6df93daefb42f0b9f9d30c10171d77667f55977d66083d9ead",
+        "frame01": "4bf2d219dbabf60dc58516f9b735515fa2cc8318e76f42690993221b154933b4"
+      }
+    },
+    {
+      "id": "tang",
+      "name": {
+        "zh": "唐僧",
+        "en": "Tang Monk"
+      },
+      "frames": 8,
+      "frameSize": "384x512",
+      "durationMs": 150,
+      "loop": true,
+      "gif": "content/assets/generated/jttw-player-walkers/tang/tang-walk.gif",
+      "runtimeFrames": "content/assets/generated/jttw-player-walkers/tang/tang-walk-01.png .. tang-walk-08.png",
+      "sourceSheet": "assets/generated/jttw-player-walkers/tang/2d/tang-walk-sheet.png",
+      "alphaReport": "assets/generated/jttw-player-walkers/tang/transparent/tang-walk-sheet-transparent.report.json",
+      "sha256": {
+        "gif": "e71b69c460337f4ba151cddbf521eeceeb59822370ce191062f1888e0685b3b6",
+        "frame01": "0d10effefbc2863d3f08b34abb98189f4d9ab72236d74faa5fbe2bd3d0b09d3b"
+      }
+    },
+    {
+      "id": "bajie",
+      "name": {
+        "zh": "猪八戒",
+        "en": "Zhu Bajie"
+      },
+      "frames": 8,
+      "frameSize": "384x512",
+      "durationMs": 150,
+      "loop": true,
+      "gif": "content/assets/generated/jttw-player-walkers/bajie/bajie-walk.gif",
+      "runtimeFrames": "content/assets/generated/jttw-player-walkers/bajie/bajie-walk-01.png .. bajie-walk-08.png",
+      "sourceSheet": "assets/generated/jttw-player-walkers/bajie/2d/bajie-walk-sheet.png",
+      "alphaReport": "assets/generated/jttw-player-walkers/bajie/transparent/bajie-walk-sheet-transparent.report.json",
+      "sha256": {
+        "gif": "125960785027dce0a9734a719e1e29f6c9aaaf1dd0d5c0416991dd689f468e77",
+        "frame01": "99c70291c8c7e607376674bbd92bf165933757992606cfa00e48f8d6de95570b"
+      }
+    },
+    {
+      "id": "shawujing",
+      "name": {
+        "zh": "沙悟净",
+        "en": "Sha Wujing"
+      },
+      "frames": 8,
+      "frameSize": "384x512",
+      "durationMs": 150,
+      "loop": true,
+      "gif": "content/assets/generated/jttw-player-walkers/shawujing/shawujing-walk.gif",
+      "runtimeFrames": "content/assets/generated/jttw-player-walkers/shawujing/shawujing-walk-01.png .. shawujing-walk-08.png",
+      "sourceSheet": "assets/generated/jttw-player-walkers/shawujing/2d/shawujing-walk-sheet.png",
+      "alphaReport": "assets/generated/jttw-player-walkers/shawujing/transparent/shawujing-walk-sheet-transparent.report.json",
+      "sha256": {
+        "gif": "e22bad06c45797674d65975ce20f586767206dc2e32d5efb10f86ae6ca176901",
+        "frame01": "69ba353e59268a8a672a08034bfdc8709c48fa9726428c32b4e76c5f7044782f"
+      }
+    },
+    {
+      "id": "guanyin",
+      "name": {
+        "zh": "观音",
+        "en": "Guanyin"
+      },
+      "frames": 8,
+      "frameSize": "384x512",
+      "durationMs": 150,
+      "loop": true,
+      "gif": "content/assets/generated/jttw-player-walkers/guanyin/guanyin-walk.gif",
+      "runtimeFrames": "content/assets/generated/jttw-player-walkers/guanyin/guanyin-walk-01.png .. guanyin-walk-08.png",
+      "sourceSheet": "assets/generated/jttw-player-walkers/guanyin/2d/guanyin-walk-sheet.png",
+      "alphaReport": "assets/generated/jttw-player-walkers/guanyin/transparent/guanyin-walk-sheet-transparent.report.json",
+      "sha256": {
+        "gif": "ea2513190dcfa537484db838052ee9d948df25251616a43e0769853d027365bb",
+        "frame01": "801c4b6ddfe373b96afd750bc3f030ad8345b901cfcc586c942300ea5297cd6e"
+      }
+    },
+    {
+      "id": "redboy",
+      "name": {
+        "zh": "红孩儿",
+        "en": "Red Boy"
+      },
+      "frames": 8,
+      "frameSize": "384x512",
+      "durationMs": 150,
+      "loop": true,
+      "gif": "content/assets/generated/jttw-player-walkers/redboy/redboy-walk.gif",
+      "runtimeFrames": "content/assets/generated/jttw-player-walkers/redboy/redboy-walk-01.png .. redboy-walk-08.png",
+      "sourceSheet": "assets/generated/jttw-player-walkers/redboy/2d/redboy-walk-sheet.png",
+      "alphaReport": "assets/generated/jttw-player-walkers/redboy/transparent/redboy-walk-sheet-transparent.report.json",
+      "sha256": {
+        "gif": "ef1b6bb10ff254c77d0d96e2f9dd4f0cfa3405ed726465d2687fbcbf2140b860",
+        "frame01": "d0d5806f78fd03655bc05f677c225b61d02b7ee9d8eaf122ff904070da26c91a"
+      }
+    },
+    {
+      "id": "ironfan",
+      "name": {
+        "zh": "铁扇公主",
+        "en": "Princess Iron Fan"
+      },
+      "frames": 8,
+      "frameSize": "384x512",
+      "durationMs": 150,
+      "loop": true,
+      "gif": "content/assets/generated/jttw-player-walkers/ironfan/ironfan-walk.gif",
+      "runtimeFrames": "content/assets/generated/jttw-player-walkers/ironfan/ironfan-walk-01.png .. ironfan-walk-08.png",
+      "sourceSheet": "assets/generated/jttw-player-walkers/ironfan/2d/ironfan-walk-sheet.png",
+      "alphaReport": "assets/generated/jttw-player-walkers/ironfan/transparent/ironfan-walk-sheet-transparent.report.json",
+      "sha256": {
+        "gif": "77488e3063f14ab9381907084ce31d4e139219d29ec65e669cd1e0e56c2f0dd2",
+        "frame01": "1b66aa5bc7c6841e2d5efa646e392177feb13d8d31c16b51b712f1d1529d4947"
+      }
+    },
+    {
+      "id": "bullking",
+      "name": {
+        "zh": "牛魔王",
+        "en": "Bull King"
+      },
+      "frames": 8,
+      "frameSize": "384x512",
+      "durationMs": 150,
+      "loop": true,
+      "gif": "content/assets/generated/jttw-player-walkers/bullking/bullking-walk.gif",
+      "runtimeFrames": "content/assets/generated/jttw-player-walkers/bullking/bullking-walk-01.png .. bullking-walk-08.png",
+      "sourceSheet": "assets/generated/jttw-player-walkers/bullking/2d/bullking-walk-sheet.png",
+      "alphaReport": "assets/generated/jttw-player-walkers/bullking/transparent/bullking-walk-sheet-transparent.report.json",
+      "sha256": {
+        "gif": "7f71a96f7b2fe089e74f422b2d4c3489d7ca19d3166fa5a4d83b0bca996e82c5",
+        "frame01": "56ec6071b54ae246eb11744f01a882464d1d946a5270f74ab663e2f774281f56"
+      }
+    },
+    {
+      "id": "dragonking",
+      "name": {
+        "zh": "东海龙王",
+        "en": "East Sea Dragon King"
+      },
+      "frames": 8,
+      "frameSize": "384x512",
+      "durationMs": 150,
+      "loop": true,
+      "gif": "content/assets/generated/jttw-player-walkers/dragonking/dragonking-walk.gif",
+      "runtimeFrames": "content/assets/generated/jttw-player-walkers/dragonking/dragonking-walk-01.png .. dragonking-walk-08.png",
+      "sourceSheet": "assets/generated/jttw-player-walkers/dragonking/2d/dragonking-walk-sheet.png",
+      "alphaReport": "assets/generated/jttw-player-walkers/dragonking/transparent/dragonking-walk-sheet-transparent.report.json",
+      "sha256": {
+        "gif": "9695f0694c106ba524d021bf50955ae080d137172f8a395830ed19b1cc33fcd8",
+        "frame01": "57149617828ddf21eb5b8233e3f8bb6b34c4a7c8d7b05d61043cbe2130689183"
+      }
+    },
+    {
+      "id": "whitedragonhorse",
+      "name": {
+        "zh": "白龙马",
+        "en": "White Dragon Horse"
+      },
+      "frames": 8,
+      "frameSize": "384x512",
+      "durationMs": 150,
+      "loop": true,
+      "gif": "content/assets/generated/jttw-player-walkers/whitedragonhorse/whitedragonhorse-walk.gif",
+      "runtimeFrames": "content/assets/generated/jttw-player-walkers/whitedragonhorse/whitedragonhorse-walk-01.png .. whitedragonhorse-walk-08.png",
+      "sourceSheet": "assets/generated/jttw-player-walkers/whitedragonhorse/2d/whitedragonhorse-walk-sheet.png",
+      "alphaReport": "assets/generated/jttw-player-walkers/whitedragonhorse/transparent/whitedragonhorse-walk-sheet-transparent.report.json",
+      "sha256": {
+        "gif": "964c266fce9099ef16cb1c7832541ae17ac73465bd2e542c271110c5243ed111",
+        "frame01": "31a9233a31c5ab02f5a403bc6d6a8d12939eb4fe696dc6ee12c2402677460e94"
+      }
+    },
+    {
+      "id": "subodhi",
+      "name": {
+        "zh": "菩提祖师",
+        "en": "Patriarch Subhuti"
+      },
+      "frames": 8,
+      "frameSize": "384x512",
+      "durationMs": 150,
+      "loop": true,
+      "gif": "content/assets/generated/jttw-player-walkers/subodhi/subodhi-walk.gif",
+      "runtimeFrames": "content/assets/generated/jttw-player-walkers/subodhi/subodhi-walk-01.png .. subodhi-walk-08.png",
+      "sourceSheet": "assets/generated/jttw-player-walkers/subodhi/2d/subodhi-walk-sheet.png",
+      "alphaReport": "assets/generated/jttw-player-walkers/subodhi/transparent/subodhi-walk-sheet-transparent.report.json",
+      "sha256": {
+        "gif": "2e9e5099377b1d170590a48f2e98fb627c59e8402fce01bf07aaf71c010615ae",
+        "frame01": "93a13e0f06356e96dc3ada0579d592f9d239ad1c21d35d86b1d5e45508484b6c"
+      }
+    },
+    {
+      "id": "jadeemperor",
+      "name": {
+        "zh": "玉皇大帝",
+        "en": "Jade Emperor"
+      },
+      "frames": 8,
+      "frameSize": "384x512",
+      "durationMs": 150,
+      "loop": true,
+      "gif": "content/assets/generated/jttw-player-walkers/jadeemperor/jadeemperor-walk.gif",
+      "runtimeFrames": "content/assets/generated/jttw-player-walkers/jadeemperor/jadeemperor-walk-01.png .. jadeemperor-walk-08.png",
+      "sourceSheet": "assets/generated/jttw-player-walkers/jadeemperor/2d/jadeemperor-walk-sheet.png",
+      "alphaReport": "assets/generated/jttw-player-walkers/jadeemperor/transparent/jadeemperor-walk-sheet-transparent.report.json",
+      "sha256": {
+        "gif": "164622baf0c78fce6104ee2fd90c986ed0ead48f5b6a06edb81746e86a54d223",
+        "frame01": "25cb0232b8729698a2bcf0dadb7e22cd69ed5bee943eed5ea80c1a4ec083f395"
+      }
+    },
+    {
+      "id": "yellowwind",
+      "name": {
+        "zh": "黄风大王",
+        "en": "Yellow Wind King"
+      },
+      "frames": 8,
+      "frameSize": "384x512",
+      "durationMs": 150,
+      "loop": true,
+      "gif": "content/assets/generated/jttw-player-walkers/yellowwind/yellowwind-walk.gif",
+      "runtimeFrames": "content/assets/generated/jttw-player-walkers/yellowwind/yellowwind-walk-01.png .. yellowwind-walk-08.png",
+      "sourceSheet": "assets/generated/jttw-player-walkers/yellowwind/2d/yellowwind-walk-sheet.png",
+      "alphaReport": "assets/generated/jttw-player-walkers/yellowwind/transparent/yellowwind-walk-sheet-transparent.report.json",
+      "sha256": {
+        "gif": "2388f1608f00dd6c2c6aa607bb699d9463b59b10d25b297979b4bedaaab2613f",
+        "frame01": "3252028e2134e98f3a43ab8c4e151d7f40fb2d6d32b788e5ab1616f98c3103e4"
+      }
+    },
+    {
+      "id": "whitebone",
+      "name": {
+        "zh": "白骨夫人",
+        "en": "Lady White Bone"
+      },
+      "frames": 8,
+      "frameSize": "384x512",
+      "durationMs": 150,
+      "loop": true,
+      "gif": "content/assets/generated/jttw-player-walkers/whitebone/whitebone-walk.gif",
+      "runtimeFrames": "content/assets/generated/jttw-player-walkers/whitebone/whitebone-walk-01.png .. whitebone-walk-08.png",
+      "sourceSheet": "assets/generated/jttw-player-walkers/whitebone/2d/whitebone-walk-sheet.png",
+      "alphaReport": "assets/generated/jttw-player-walkers/whitebone/transparent/whitebone-walk-sheet-transparent.report.json",
+      "sha256": {
+        "gif": "594c1f537822fe52ebf5d6dc3f7b008fb2cfc9ae8f17eff176f67a5aa7ad16f2",
+        "frame01": "f89f47020c6c7dd5bad39f8031f758a2f69df5e307845063cff4489cb4dd2567"
+      }
+    },
+    {
+      "id": "blackwind",
+      "name": {
+        "zh": "黑风大王",
+        "en": "Black Wind King"
+      },
+      "frames": 8,
+      "frameSize": "384x512",
+      "durationMs": 150,
+      "loop": true,
+      "gif": "content/assets/generated/jttw-player-walkers/blackwind/blackwind-walk.gif",
+      "runtimeFrames": "content/assets/generated/jttw-player-walkers/blackwind/blackwind-walk-01.png .. blackwind-walk-08.png",
+      "sourceSheet": "assets/generated/jttw-player-walkers/blackwind/2d/blackwind-walk-sheet.png",
+      "alphaReport": "assets/generated/jttw-player-walkers/blackwind/transparent/blackwind-walk-sheet-transparent.report.json",
+      "sha256": {
+        "gif": "5f525e4eaba492e92b45b9eb90c7eda3d113b2c42718205165011a6bf019c102",
+        "frame01": "8098364dc16cb6bc1b915879111eab54a8bd0b05ccd79b728288d604cc0eee2e"
+      }
+    },
+    {
+      "id": "zhenyuan",
+      "name": {
+        "zh": "镇元大仙",
+        "en": "Great Immortal Zhenyuan"
+      },
+      "frames": 8,
+      "frameSize": "384x512",
+      "durationMs": 150,
+      "loop": true,
+      "gif": "content/assets/generated/jttw-player-walkers/zhenyuan/zhenyuan-walk.gif",
+      "runtimeFrames": "content/assets/generated/jttw-player-walkers/zhenyuan/zhenyuan-walk-01.png .. zhenyuan-walk-08.png",
+      "sourceSheet": "assets/generated/jttw-player-walkers/zhenyuan/2d/zhenyuan-walk-sheet.png",
+      "alphaReport": "assets/generated/jttw-player-walkers/zhenyuan/transparent/zhenyuan-walk-sheet-transparent.report.json",
+      "sha256": {
+        "gif": "5e3896e41f14efc95cbb0e5893335161348bf1f2b94500dd66803566dc98f805",
+        "frame01": "958d9ca0b2b81f7fdba58f4e4f597a36be7c4ce7446957bc5deb5b9e3eb6b5c8"
+      }
+    },
+    {
+      "id": "hundredflowers",
+      "name": {
+        "zh": "百花羞公主",
+        "en": "Princess Hundred Flowers"
+      },
+      "frames": 8,
+      "frameSize": "384x512",
+      "durationMs": 150,
+      "loop": true,
+      "gif": "content/assets/generated/jttw-player-walkers/hundredflowers/hundredflowers-walk.gif",
+      "runtimeFrames": "content/assets/generated/jttw-player-walkers/hundredflowers/hundredflowers-walk-01.png .. hundredflowers-walk-08.png",
+      "sourceSheet": "assets/generated/jttw-player-walkers/hundredflowers/2d/hundredflowers-walk-sheet.png",
+      "alphaReport": "assets/generated/jttw-player-walkers/hundredflowers/transparent/hundredflowers-walk-sheet-transparent.report.json",
+      "sha256": {
+        "gif": "4e3c2806454a54e0ed9722fa7848ee8db8379183d12377ca1522b349803fb09e",
+        "frame01": "b231c8b2014f6565e6bbfcb8bb41f8c1f00938e700d63770b7f380baf26e2c7f"
+      }
+    },
+    {
+      "id": "goldenhorn",
+      "name": {
+        "zh": "金角大王",
+        "en": "Golden Horn"
+      },
+      "frames": 8,
+      "frameSize": "384x512",
+      "durationMs": 150,
+      "loop": true,
+      "gif": "content/assets/generated/jttw-player-walkers/goldenhorn/goldenhorn-walk.gif",
+      "runtimeFrames": "content/assets/generated/jttw-player-walkers/goldenhorn/goldenhorn-walk-01.png .. goldenhorn-walk-08.png",
+      "sourceSheet": "assets/generated/jttw-player-walkers/goldenhorn/2d/goldenhorn-walk-sheet.png",
+      "alphaReport": "assets/generated/jttw-player-walkers/goldenhorn/transparent/goldenhorn-walk-sheet-transparent.report.json",
+      "sha256": {
+        "gif": "a2b5daff56aa6881d6308c8220ecf6ff94c1c5443abaaa8b1d148c463063cb51",
+        "frame01": "d9782c8c9978655ca59ad32894ff58d38e4bfaeeb0890fdb551e297632dbbf72"
+      }
+    },
+    {
+      "id": "liondemon",
+      "name": {
+        "zh": "狮魔王",
+        "en": "Lion Demon"
+      },
+      "frames": 8,
+      "frameSize": "384x512",
+      "durationMs": 150,
+      "loop": true,
+      "gif": "content/assets/generated/jttw-player-walkers/liondemon/liondemon-walk.gif",
+      "runtimeFrames": "content/assets/generated/jttw-player-walkers/liondemon/liondemon-walk-01.png .. liondemon-walk-08.png",
+      "sourceSheet": "assets/generated/jttw-player-walkers/liondemon/2d/liondemon-walk-sheet.png",
+      "alphaReport": "assets/generated/jttw-player-walkers/liondemon/transparent/liondemon-walk-sheet-transparent.report.json",
+      "sha256": {
+        "gif": "d818860bc67f57f81c93c1e27f29c0bdd93c3a38f22438e01602ba2ea4622da4",
+        "frame01": "ad1c813c0149608ce8898a1900d547d4eb36d4b4b7e515fa5fe8d12ffaf50c9b"
+      }
+    },
+    {
+      "id": "tigerimmortal",
+      "name": {
+        "zh": "虎力大仙",
+        "en": "Tiger Immortal"
+      },
+      "frames": 8,
+      "frameSize": "384x512",
+      "durationMs": 150,
+      "loop": true,
+      "gif": "content/assets/generated/jttw-player-walkers/tigerimmortal/tigerimmortal-walk.gif",
+      "runtimeFrames": "content/assets/generated/jttw-player-walkers/tigerimmortal/tigerimmortal-walk-01.png .. tigerimmortal-walk-08.png",
+      "sourceSheet": "assets/generated/jttw-player-walkers/tigerimmortal/2d/tigerimmortal-walk-sheet.png",
+      "alphaReport": "assets/generated/jttw-player-walkers/tigerimmortal/transparent/tigerimmortal-walk-sheet-transparent.report.json",
+      "sha256": {
+        "gif": "6ccf18b96fd51a8296fc3dd1d3f3d99194d22cc507e1e2f31e8b329e912961ab",
+        "frame01": "1aa9799b7115129cc64d526d17768d6ee3f98e5365636463ddba260d471e2036"
+      }
+    },
+    {
+      "id": "yellowbrows",
+      "name": {
+        "zh": "黄眉怪",
+        "en": "Yellow Brows"
+      },
+      "frames": 8,
+      "frameSize": "384x512",
+      "durationMs": 150,
+      "loop": true,
+      "gif": "content/assets/generated/jttw-player-walkers/yellowbrows/yellowbrows-walk.gif",
+      "runtimeFrames": "content/assets/generated/jttw-player-walkers/yellowbrows/yellowbrows-walk-01.png .. yellowbrows-walk-08.png",
+      "sourceSheet": "assets/generated/jttw-player-walkers/yellowbrows/2d/yellowbrows-walk-sheet.png",
+      "alphaReport": "assets/generated/jttw-player-walkers/yellowbrows/transparent/yellowbrows-walk-sheet-transparent.report.json",
+      "sha256": {
+        "gif": "3ba3e6c179948b68efcd6ee72c953f0ef5f7cc9f3f6da67b1dd7be5c5f007661",
+        "frame01": "a60b59072df2892ec1eba92df877d4e1b2fea5842b8211a9574dd16ef19d58ec"
+      }
+    },
+    {
+      "id": "powerdemon",
+      "name": {
+        "zh": "大力妖王",
+        "en": "Demon of Power"
+      },
+      "frames": 8,
+      "frameSize": "384x512",
+      "durationMs": 150,
+      "loop": true,
+      "gif": "content/assets/generated/jttw-player-walkers/powerdemon/powerdemon-walk.gif",
+      "runtimeFrames": "content/assets/generated/jttw-player-walkers/powerdemon/powerdemon-walk-01.png .. powerdemon-walk-08.png",
+      "sourceSheet": "assets/generated/jttw-player-walkers/powerdemon/2d/powerdemon-walk-sheet.png",
+      "alphaReport": "assets/generated/jttw-player-walkers/powerdemon/transparent/powerdemon-walk-sheet-transparent.report.json",
+      "sha256": {
+        "gif": "13928f8b4df6a195aad66ff84c07a304610cd72510c76763d7d3b2a5c4577fb8",
+        "frame01": "142eb6a8e8fab28d62cbcbeed1de5dd3a017465c69f8b12095d6a4940a074651"
+      }
+    },
+    {
+      "id": "spiderdemon",
+      "name": {
+        "zh": "蜘蛛精",
+        "en": "Spider Spirit"
+      },
+      "frames": 8,
+      "frameSize": "384x512",
+      "durationMs": 150,
+      "loop": true,
+      "gif": "content/assets/generated/jttw-player-walkers/spiderdemon/spiderdemon-walk.gif",
+      "runtimeFrames": "content/assets/generated/jttw-player-walkers/spiderdemon/spiderdemon-walk-01.png .. spiderdemon-walk-08.png",
+      "sourceSheet": "assets/generated/jttw-player-walkers/spiderdemon/2d/spiderdemon-walk-sheet.png",
+      "alphaReport": "assets/generated/jttw-player-walkers/spiderdemon/transparent/spiderdemon-walk-sheet-transparent.report.json",
+      "sha256": {
+        "gif": "4511f740ad9691034c557aeade790b500486d0bb03fff17094215c36ceb3e4f7",
+        "frame01": "1708bec65f49bdad7dd92be7e9c4f85048b55eb8a4182201f1369943dbb56eb6"
+      }
+    },
+    {
+      "id": "centipededemon",
+      "name": {
+        "zh": "多目怪",
+        "en": "Centipede Spirit"
+      },
+      "frames": 8,
+      "frameSize": "384x512",
+      "durationMs": 150,
+      "loop": true,
+      "gif": "content/assets/generated/jttw-player-walkers/centipededemon/centipededemon-walk.gif",
+      "runtimeFrames": "content/assets/generated/jttw-player-walkers/centipededemon/centipededemon-walk-01.png .. centipededemon-walk-08.png",
+      "sourceSheet": "assets/generated/jttw-player-walkers/centipededemon/2d/centipededemon-walk-sheet.png",
+      "alphaReport": "assets/generated/jttw-player-walkers/centipededemon/transparent/centipededemon-walk-sheet-transparent.report.json",
+      "sha256": {
+        "gif": "ac142e030b2b10860207f4c248559282db603dc019d517afe82bec940a279847",
+        "frame01": "97a082331e5702703fd249a543e4146b627612d78f14e323b542db40555d475b"
+      }
+    }
+  ],
+  "selection": "episode-stable weighted main-character selection in prj/engine/wala.js"
+}

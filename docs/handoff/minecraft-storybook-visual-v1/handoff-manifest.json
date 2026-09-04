@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "task_id": "minecraft-storybook-visual-v1",
+  "contract_revision": 3,
+  "environment_revision": 1,
+  "workspace": "G:\\Game\\BookPlay书戏",
+  "task_card": "G:\\Game\\BookPlay书戏\\.agent-control\\tasks\\minecraft-storybook-visual-v1\\task.md",
+  "recent_context": "G:\\Game\\BookPlay书戏\\.agent-control\\tasks\\minecraft-storybook-visual-v1\\recent-context.md",
+  "environment_manifest": "G:\\Game\\BookPlay书戏\\.agent-control\\env\\bookplay-minecraft-ui\\environment.json",
+  "visual_reference_html": "G:\\Game\\BookPlay书戏\\docs\\handoff\\minecraft-storybook-visual-v1\\visual-reference.html",
+  "visual_reference_png": "G:\\Game\\BookPlay书戏\\docs\\handoff\\minecraft-storybook-visual-v1\\visual-reference.png",
+  "provider": "opencode-go",
+  "model": "deepseek-v4-flash",
+  "permission": "danger-full-access",
+  "owner_session_id": "session-c18a8321-cee6-4cf5-b7df-89e02919f807",
+  "first_command": "powershell -NoProfile -ExecutionPolicy Bypass -File G:\\Game\\BookPlay书戏\\.agent-control\\env\\bookplay-minecraft-ui\\Test-Environment.ps1 -ManifestPath G:\\Game\\BookPlay书戏\\.agent-control\\env\\bookplay-minecraft-ui\\environment.json -Executor DSH -ReceiptPath G:\\Game\\BookPlay书戏\\.agent-control\\env\\bookplay-minecraft-ui\\receipt-dsh.json",
+  "first_artifact": "G:\\Game\\BookPlay书戏\\prj\\engine\\storybook.css",
+  "claim_ceiling": "IMPLEMENTATION_CANDIDATE_ONLY"
+}

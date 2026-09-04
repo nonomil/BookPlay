@@ -1,0 +1,307 @@
+:root {
+  --ink: #2b2320;
+  --paper: rgba(28, 22, 18, 0.82);
+  --gold: #c9a227;
+  --cream: #f5ecd9;
+  --muted: #b9ac97;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body { height: 100%; }
+
+body {
+  font-family: "Microsoft YaHei", "PingFang SC", "Segoe UI", sans-serif;
+  background: #171310;
+  color: var(--cream);
+  overflow: hidden;
+  user-select: none;
+}
+
+#app, .screen { height: 100%; }
+
+.screen { position: relative; }
+.hidden { display: none !important; }
+
+/* ---------- 标题界面（官方系列封面 + 底部操作面板） ---------- */
+#title-screen {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background:
+    linear-gradient(180deg, rgba(15, 11, 8, 0.05) 40%, rgba(15, 11, 8, 0.82) 100%),
+    url("../assets/covers/series_cover.png") center / cover no-repeat;
+}
+
+.title-card {
+  width: min(680px, 94vw);
+  text-align: center;
+  padding: 1.2rem 1.6rem 1.5rem;
+  margin-bottom: 4.5vh;
+  background: rgba(20, 14, 9, 0.62);
+  border: 1px solid rgba(201, 162, 39, 0.4);
+  border-radius: 16px;
+  backdrop-filter: blur(3px);
+}
+
+.title-card h1 {
+  font-size: 1.9rem;
+  letter-spacing: 0.22em;
+  color: var(--cream);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+.title-card h1 .en { font-size: 0.95rem; color: var(--gold); }
+
+.title-card .subtitle { margin: 0.5rem 0 1.3rem; color: var(--cream); letter-spacing: 0.14em; opacity: 0.92; }
+
+.menu { display: flex; flex-direction: column; gap: 0.7rem; align-items: center; }
+
+.menu button.primary,
+.menu a.primary { min-width: 230px; }
+
+button {
+  font: inherit;
+  cursor: pointer;
+  border: 1px solid rgba(201, 162, 39, 0.6);
+  background: transparent;
+  color: var(--cream);
+  border-radius: 8px;
+  padding: 0.55rem 1.4rem;
+  transition: background 0.15s, transform 0.05s;
+}
+
+button:hover { background: rgba(201, 162, 39, 0.15); }
+button:active { transform: scale(0.98); }
+
+button.primary {
+  min-width: 220px;
+  background: linear-gradient(180deg, #d8b23c, #b28a1e);
+  border: none;
+  color: #241b0d;
+  font-weight: 700;
+}
+button.primary:hover { filter: brightness(1.08); }
+
+.hint { margin-top: 1.6rem; font-size: 0.8rem; color: var(--muted); }
+.key-hint { margin-top: 0.4rem; }
+
+/* ---------- 游戏界面 ---------- */
+#game-screen { display: flex; flex-direction: column; }
+
+#topbar {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  z-index: 30;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 0.9rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+  background: linear-gradient(180deg, rgba(15, 11, 8, 0.75), transparent);
+}
+
+#topbar .spacer, #box-footer .spacer { flex: 1; }
+
+.pref { display: inline-flex; align-items: center; gap: 0.3rem; cursor: pointer; }
+.pref input { accent-color: var(--gold); }
+
+#btn-restart { padding: 0.2rem 0.7rem; font-size: 0.8rem; border-radius: 6px; }
+
+#stage { position: absolute; inset: 0; overflow: hidden; }
+
+#background {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.portrait {
+  position: absolute;
+  bottom: 0;
+  height: 52%;
+  max-height: 460px;
+  filter: drop-shadow(0 10px 18px rgba(0, 0, 0, 0.45));
+  transition: filter 0.2s, opacity 0.2s;
+  opacity: 0.45;
+}
+
+.portrait.active { opacity: 1; }
+.portrait.hidden-portrait { display: none; }
+#portrait-left { left: 4%; }
+#portrait-right { right: 4%; }
+
+/* ---------- 对话框 ---------- */
+#dialogue-box {
+  position: absolute;
+  left: 50%;
+  bottom: 2.2rem;
+  transform: translateX(-50%);
+  width: min(860px, 92vw);
+  min-height: 168px;
+  z-index: 20;
+  background: var(--paper);
+  border: 1px solid rgba(201, 162, 39, 0.35);
+  border-radius: 14px;
+  padding: 1rem 1.2rem 0.6rem;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 12px 34px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+#speaker-name {
+  position: absolute;
+  top: -0.95em;
+  left: 1.2rem;
+  padding: 0.15em 0.9em;
+  border-radius: 999px;
+  background: #241b0d;
+  border: 1px solid rgba(201, 162, 39, 0.5);
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+#text-en {
+  font-size: 1.45rem;
+  line-height: 1.55;
+  padding-top: 0.5rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: color 0.15s;
+}
+
+#text-en:hover { color: #ffe9a8; }
+
+#text-zh {
+  margin-top: 0.45rem;
+  font-size: 0.98rem;
+  color: var(--muted);
+  line-height: 1.5;
+}
+#text-zh.hidden { display: none; }
+
+#dialogue-box.speaking #text-en {
+  color: #ffe9a8;
+  text-shadow: 0 0 14px rgba(201, 162, 39, 0.45);
+}
+
+#box-footer {
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+}
+
+#btn-speak { border: none; font-size: 1.05rem; padding: 0.15rem 0.4rem; }
+
+#advance-hint {
+  color: var(--gold);
+  animation: bob 1.1s ease-in-out infinite;
+}
+
+@keyframes bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(4px); } }
+
+/* ---------- 选项 ---------- */
+#choices {
+  position: absolute;
+  left: 50%;
+  bottom: calc(2.2rem + 190px);
+  transform: translateX(-50%);
+  z-index: 25;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  width: min(640px, 88vw);
+}
+
+#choices:empty { display: none; }
+
+.choice-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.15rem;
+  background: rgba(28, 22, 18, 0.9);
+  border: 1px solid rgba(201, 162, 39, 0.55);
+  border-radius: 10px;
+  padding: 0.6rem 1rem;
+  text-align: left;
+}
+
+.choice-btn .en { font-size: 1.05rem; }
+.choice-btn .zh { font-size: 0.82rem; color: var(--muted); }
+.choice-btn:hover { background: rgba(201, 162, 39, 0.18); }
+
+/* ---------- 结算界面 ---------- */
+#end-screen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, #1d1712, #33261473), #171310;
+}
+
+.end-card {
+  width: min(620px, 92vw);
+  background: var(--paper);
+  border: 1px solid rgba(201, 162, 39, 0.4);
+  border-radius: 16px;
+  padding: 2rem;
+  text-align: center;
+}
+
+.end-card h2 { color: var(--gold); margin-bottom: 1.4rem; letter-spacing: 0.15em; }
+
+#checkpoint-card {
+  text-align: left;
+  background: rgba(0, 0, 0, 0.28);
+  border-radius: 10px;
+  padding: 1rem 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+#checkpoint-card h3 { font-size: 0.85rem; color: var(--muted); margin-bottom: 0.5rem; }
+#checkpoint-text { line-height: 1.7; }
+
+#end-stats { color: var(--muted); font-size: 0.9rem; margin-bottom: 1rem; }
+
+/* 通关小测 */
+.quiz-score { font-weight: 700; color: var(--gold); margin-bottom: 0.6rem; }
+
+.quiz-item {
+  text-align: left;
+  margin-bottom: 0.9rem;
+  padding: 0.6rem 0.8rem;
+  background: rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+
+.quiz-item p { margin-bottom: 0.45rem; font-size: 0.95rem; }
+
+.quiz-item button {
+  display: block;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 0.35rem;
+  padding: 0.35rem 0.7rem;
+  font-size: 0.88rem;
+  border-radius: 7px;
+}
+
+/* ---------- 错误浮层 ---------- */
+#error-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 99;
+  background: rgba(10, 7, 5, 0.94);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+  line-height: 1.9;
+  color: #ffd9d9;
+  white-space: pre-wrap;
+}

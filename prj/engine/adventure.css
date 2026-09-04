@@ -1,0 +1,115 @@
+body { overflow: auto; }
+
+.screen { min-height: 100vh; }
+.hidden { display: none !important; }
+
+.adv-wrap { max-width: 1100px; margin: 0 auto; padding: 1.4rem 1.6rem 2.5rem; }
+.adv-wrap .home-hero { margin-bottom: 1.2rem; text-align: center; }
+.adv-wrap h1 { font-size: 2.2rem; letter-spacing: 0.16em; }
+.adv-wrap h1 .en { font-size: 1rem; color: var(--gold); }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(168px, 1fr)); gap: 0.9rem; }
+.grid .card { display: block; text-decoration: none; color: inherit; background: rgba(28,22,18,.82);
+  border: 1px solid rgba(201,162,39,.28); border-radius: 12px; overflow: hidden; }
+.grid .card img { width: 100%; height: 150px; object-fit: cover; background: #111; display: block; }
+.grid .meta { padding: .55rem .65rem .75rem; }
+.grid .ep { color: var(--gold); font-size: .75rem; }
+.grid .name { font-size: .92rem; line-height: 1.35; }
+.grid .prog { color: var(--muted); font-size: .75rem; margin-top: .25rem; }
+
+/* ---------- 阅读器 ---------- */
+#adv-reader { display: flex; flex-direction: column; height: 100vh; overflow: auto; }
+
+.adv-stage { flex: none; text-align: center; background: #0d0a08; }
+.adv-stage img { width: min(960px, 96vw); display: block; margin: 0 auto; }
+
+.adv-panel {
+  width: min(860px, 94vw);
+  margin: -34px auto 0;
+  position: relative;
+  z-index: 5;
+  background: var(--paper);
+  border: 1px solid rgba(201, 162, 39, 0.35);
+  border-radius: 14px;
+  padding: 1rem 1.2rem 0.8rem;
+  backdrop-filter: blur(4px);
+}
+
+.adv-progress { height: 4px; border-radius: 2px; background: rgba(255,255,255,0.08); margin-bottom: 0.7rem; }
+#adv-bar { height: 100%; border-radius: 2px; background: var(--gold); transition: width .25s; }
+
+#adv-en { font-size: 1.32rem; line-height: 1.6; }
+#adv-zh { margin-top: 0.35rem; color: var(--muted); font-size: 0.95rem; }
+
+/* ---------- 词卡 ---------- */
+#adv-cards { display: flex; flex-direction: column; gap: 0.55rem; margin-top: 0.85rem; }
+#adv-cards:empty { display: none; }
+
+.vcard {
+  border: 1px solid rgba(201, 162, 39, 0.4);
+  border-radius: 11px;
+  padding: 0.6rem 0.8rem;
+  background: rgba(0, 0, 0, 0.28);
+  transition: opacity 0.3s;
+}
+.vcard-test { border-color: rgba(230, 160, 80, 0.55); }
+.vcard-review { border-color: rgba(140, 190, 140, 0.45); }
+.vcard.vdone { opacity: 0.55; }
+
+.vbadge {
+  display: inline-block;
+  font-size: 0.72rem;
+  color: #241b0d;
+  background: var(--gold);
+  border-radius: 999px;
+  padding: 0.05rem 0.6rem;
+  margin-bottom: 0.35rem;
+}
+.vcard-test .vbadge { background: #f0b060; }
+.vcard-review .vbadge { background: #9fce9f; }
+
+.vterm { font-size: 1.05rem; }
+.vterm b { cursor: pointer; color: #ffe9a8; }
+.vspk { border: none; background: none; font-size: 1rem; padding: 0 0.2rem; }
+.vzh { margin-top: 0.15rem; color: var(--cream); cursor: pointer; }
+.vzh:hover { color: #ffe9a8; }
+.vex { margin-top: 0.3rem; color: var(--muted); font-size: 0.85rem; font-style: italic; }
+
+/* 朗读模式切换 */
+.mode-toggle { display: inline-flex; border: 1px solid rgba(201, 162, 39, 0.45); border-radius: 8px; overflow: hidden; }
+.mode-toggle button { border: none; border-radius: 0; padding: 0.25rem 0.7rem; font-size: 0.8rem; background: transparent; color: var(--muted); }
+.mode-toggle button.active { background: var(--gold); color: #241b0d; font-weight: 700; }
+
+.vopts { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.5rem; }
+.vopts button {
+  font-size: 0.88rem;
+  padding: 0.3rem 0.75rem;
+  border-radius: 8px;
+  border: 1px solid rgba(201, 162, 39, 0.45);
+  background: rgba(0, 0, 0, 0.25);
+}
+.vopts button.right { border-color: #7dcea0; background: rgba(125, 206, 160, 0.18); }
+.vopts button.wrong { border-color: #e07474; opacity: 0.55; }
+.vopts button:disabled { cursor: default; }
+
+/* ---------- 导航 ---------- */
+.adv-nav { display: flex; align-items: center; justify-content: space-between; margin-top: 0.9rem; }
+#adv-pager { color: var(--muted); font-size: 0.85rem; }
+#adv-next:disabled { opacity: 0.4; }
+
+/* ---------- 章末 ---------- */
+#adv-end { max-width: 640px; margin: 8vh auto; padding: 0 1.4rem; text-align: center; }
+#adv-end h2 { color: var(--gold); letter-spacing: 0.15em; margin-bottom: 1.2rem; }
+#adv-quiz { text-align: left; margin-bottom: 1.4rem; }
+.quiz-item {
+  background: rgba(0, 0, 0, 0.28);
+  border-radius: 10px;
+  padding: 0.6rem 0.8rem;
+  margin-bottom: 0.7rem;
+}
+.quiz-item p { margin-bottom: 0.4rem; }
+.quiz-item button {
+  display: block; width: 100%; text-align: left;
+  margin-bottom: 0.3rem; padding: 0.3rem 0.7rem;
+  font-size: 0.88rem; border-radius: 7px;
+}
