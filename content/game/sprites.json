@@ -1,0 +1,106 @@
+{
+ "schemaVersion": 1,
+ "comment": "降妖记精灵注册表：角色 id → 运行时帧/GIF 路径（相对数据包根，引擎页加载时加 ../ 前缀）。主角 4 人用 jttw-player-walkers 四向 walk+action GIF；c01 六小角色用 jttw-game-sprites 生成、GIF 已同步 content/assets/game-sprites。缺 id 时 battle-core 回退 walker GIF / 占位。",
+ "sprites": {
+  "wukong": {
+   "nameZh": "孙悟空",
+   "gif": "assets/walker-gifs/wukong-walk.gif",
+   "walkGifs": {
+    "south": "assets/generated/jttw-player-walkers/wukong/directions/wukong-south-walk-action.gif",
+    "west": "assets/generated/jttw-player-walkers/wukong/directions/wukong-west-walk-action.gif",
+    "east": "assets/generated/jttw-player-walkers/wukong/directions/wukong-east-walk-action.gif",
+    "north": "assets/generated/jttw-player-walkers/wukong/directions/wukong-north-walk-action.gif"
+   }
+  },
+  "subodhi": {
+   "nameZh": "菩提祖师",
+   "gif": "assets/walker-gifs/subodhi-walk.gif",
+   "walkGifs": {
+    "south": "assets/generated/jttw-player-walkers/subodhi/directions/subodhi-south-walk-action.gif",
+    "west": "assets/generated/jttw-player-walkers/subodhi/directions/subodhi-west-walk-action.gif",
+    "east": "assets/generated/jttw-player-walkers/subodhi/directions/subodhi-east-walk-action.gif",
+    "north": "assets/generated/jttw-player-walkers/subodhi/directions/subodhi-north-walk-action.gif"
+   }
+  },
+  "chaosdemon": {
+   "nameZh": "混世魔王",
+   "gif": "assets/walker-gifs/chaosdemon-walk.gif",
+   "walkGifs": {
+    "south": "assets/generated/jttw-player-walkers/chaosdemon/directions/chaosdemon-south-walk-action.gif",
+    "west": "assets/generated/jttw-player-walkers/chaosdemon/directions/chaosdemon-west-walk-action.gif",
+    "east": "assets/generated/jttw-player-walkers/chaosdemon/directions/chaosdemon-east-walk-action.gif",
+    "north": "assets/generated/jttw-player-walkers/chaosdemon/directions/chaosdemon-north-walk-action.gif"
+   }
+  },
+  "dragonking": {
+   "nameZh": "东海龙王",
+   "gif": "assets/walker-gifs/dragonking-walk.gif",
+   "walkGifs": {
+    "south": "assets/generated/jttw-player-walkers/dragonking/directions/dragonking-south-walk-action.gif",
+    "west": "assets/generated/jttw-player-walkers/dragonking/directions/dragonking-west-walk-action.gif",
+    "east": "assets/generated/jttw-player-walkers/dragonking/directions/dragonking-east-walk-action.gif",
+    "north": "assets/generated/jttw-player-walkers/dragonking/directions/dragonking-north-walk-action.gif"
+   }
+  },
+  "monkey-minor": {
+   "nameZh": "小猴子",
+   "gif": "assets/game-sprites/monkey-minor/monkey-minor-south-walk-action.gif",
+   "walkGifs": {
+    "south": "assets/game-sprites/monkey-minor/monkey-minor-south-walk-action.gif",
+    "west": "assets/game-sprites/monkey-minor/monkey-minor-west-walk-action.gif",
+    "east": "assets/game-sprites/monkey-minor/monkey-minor-east-walk-action.gif",
+    "north": "assets/game-sprites/monkey-minor/monkey-minor-north-walk-action.gif"
+   }
+  },
+  "subodhi-disciple": {
+   "nameZh": "道童",
+   "gif": "assets/game-sprites/subodhi-disciple/subodhi-disciple-south-walk-action.gif",
+   "walkGifs": {
+    "south": "assets/game-sprites/subodhi-disciple/subodhi-disciple-south-walk-action.gif",
+    "west": "assets/game-sprites/subodhi-disciple/subodhi-disciple-west-walk-action.gif",
+    "east": "assets/game-sprites/subodhi-disciple/subodhi-disciple-east-walk-action.gif",
+    "north": "assets/game-sprites/subodhi-disciple/subodhi-disciple-north-walk-action.gif"
+   }
+  },
+  "chaosdemon-minion": {
+   "nameZh": "水妖",
+   "gif": "assets/game-sprites/chaosdemon-minion/chaosdemon-minion-south-walk-action.gif",
+   "walkGifs": {
+    "south": "assets/game-sprites/chaosdemon-minion/chaosdemon-minion-south-walk-action.gif",
+    "west": "assets/game-sprites/chaosdemon-minion/chaosdemon-minion-west-walk-action.gif",
+    "east": "assets/game-sprites/chaosdemon-minion/chaosdemon-minion-east-walk-action.gif",
+    "north": "assets/game-sprites/chaosdemon-minion/chaosdemon-minion-north-walk-action.gif"
+   }
+  },
+  "dragonking-soldier": {
+   "nameZh": "虾兵",
+   "gif": "assets/game-sprites/dragonking-soldier/dragonking-soldier-south-walk-action.gif",
+   "walkGifs": {
+    "south": "assets/game-sprites/dragonking-soldier/dragonking-soldier-south-walk-action.gif",
+    "west": "assets/game-sprites/dragonking-soldier/dragonking-soldier-west-walk-action.gif",
+    "east": "assets/game-sprites/dragonking-soldier/dragonking-soldier-east-walk-action.gif",
+    "north": "assets/game-sprites/dragonking-soldier/dragonking-soldier-north-walk-action.gif"
+   }
+  },
+  "underworld-clerk": {
+   "nameZh": "阴差",
+   "gif": "assets/game-sprites/underworld-clerk/underworld-clerk-south-walk-action.gif",
+   "walkGifs": {
+    "south": "assets/game-sprites/underworld-clerk/underworld-clerk-south-walk-action.gif",
+    "west": "assets/game-sprites/underworld-clerk/underworld-clerk-west-walk-action.gif",
+    "east": "assets/game-sprites/underworld-clerk/underworld-clerk-east-walk-action.gif",
+    "north": "assets/game-sprites/underworld-clerk/underworld-clerk-north-walk-action.gif"
+   }
+  },
+  "imp": {
+   "nameZh": "小妖",
+   "gif": "assets/game-sprites/imp/imp-south-walk-action.gif",
+   "walkGifs": {
+    "south": "assets/game-sprites/imp/imp-south-walk-action.gif",
+    "west": "assets/game-sprites/imp/imp-west-walk-action.gif",
+    "east": "assets/game-sprites/imp/imp-east-walk-action.gif",
+    "north": "assets/game-sprites/imp/imp-north-walk-action.gif"
+   }
+  }
+ }
+}

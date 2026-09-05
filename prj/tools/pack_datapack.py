@@ -28,6 +28,8 @@ INCLUDE_DIRS = (
     "storybooks",
     "storybooks-minecraft",
     "storybook-collections",
+    # 降妖记小游戏：关卡派生数据 + 精灵注册表 + 台词库（build_game_levels.py 产物）
+    "game",
     "assets/video",
     "assets/adv_audio",
     "assets/map_audio",
@@ -39,9 +41,16 @@ INCLUDE_DIRS = (
     "assets/achievements",
     "assets/companions",
     "assets/adv_frames",
+    "assets/adv_video_frames",
+    "assets/walker-gifs",
     # Published storybook character/reward art is runtime-ready PNG/JSON;
     # generation prompts live under docs/data and are not in this tree.
     "assets/generated/storybooks",
+    # 路线图背景：collections.json 的 background 字段按合辑引用
+    "assets/generated/map-backgrounds",
+    # 降妖记小角色运行时 GIF 与 v2 战斗背景
+    "assets/game-sprites",
+    "assets/game-backgrounds",
     # Story-frame thumbnails are compact, text-free crops of each book's first
     # illustration. They keep sticker cards tied to the actual episode plot.
     "assets/generated/jttw-story-scenes-v1",

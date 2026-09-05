@@ -1,0 +1,247 @@
+{
+ "schema_version": 1,
+ "ep": 1,
+ "title": {
+  "en": "The Monkey",
+  "zh": "西游记 第1集"
+ },
+ "collection": "c01",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "monkey-minor",
+   "nameZh": "猴群小头目",
+   "mode": "sparring",
+   "sprite": "monkey-minor"
+  },
+  "minors": [
+   {
+    "id": "monkey-minor",
+    "nameZh": "小猴子",
+    "sprite": "monkey-minor"
+   }
+  ]
+ },
+ "background": {
+  "theme": "flower-fruit-mountain",
+  "illustration": "assets/adv_frames/ep1/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "From the beginning of time, a rock had sat high on top of a mountain.",
+   "textZh": "自古以来,一块岩石便高高耸立于山巅。",
+   "illustration": "assets/adv_frames/ep1/f1.jpg"
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "The sun, the moon, Heaven, and Earth all worked their magic on the rock.",
+   "textZh": "太阳、月亮、天与地共同施展了魔力,作用于这块岩石。",
+   "illustration": "assets/adv_frames/ep1/f2.jpg"
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "journey",
+   "zh": "旅行(一般指陆路上的长距离旅行)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep1/f1.jpg"
+  },
+  {
+   "term": "west",
+   "zh": "1. 西方,(2. 向西方)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep1/f1.jpg"
+  },
+  {
+   "term": "split",
+   "zh": "劈开,裂开",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep1/f3.jpg"
+  },
+  {
+   "term": "powerful",
+   "zh": "强大的,强而有力的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep1/f2.jpg"
+  },
+  {
+   "term": "shot",
+   "zh": "1. (枪等)射击,射出 (shoot-shot),(2. (用话)反击,3. 飞驰,飞快地移动)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep1/f2.jpg"
+  },
+  {
+   "term": "emperor",
+   "zh": "皇帝,帝王",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep1/f0.jpg"
+  },
+  {
+   "term": "Jade Emperor",
+   "zh": "玉皇大帝",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep1/f0.jpg"
+  },
+  {
+   "term": "captain",
+   "zh": "1. (军队的)指挥官,(2. 船长,舰长,(飞机的)机长,3. (团体的)首领)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep1/f1.jpg"
+  },
+  {
+   "term": "nearby",
+   "zh": "在附近",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep1/f1.jpg"
+  },
+  {
+   "term": "southern",
+   "zh": "南方的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep1/f1.jpg"
+  },
+  {
+   "term": "magical",
+   "zh": "魔术的,魔法的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep1/f3.jpg"
+  },
+  {
+   "term": "sight",
+   "zh": "景色,景象",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep1/f3.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "journey",
+     "zh": "旅行(一般指陆路上的长距离旅行)",
+     "sprite": "monkey-minor"
+    },
+    {
+     "term": "west",
+     "zh": "1. 西方,(2. 向西方)",
+     "sprite": "monkey-minor"
+    },
+    {
+     "term": "split",
+     "zh": "劈开,裂开",
+     "sprite": "monkey-minor"
+    },
+    {
+     "term": "powerful",
+     "zh": "强大的,强而有力的",
+     "sprite": "monkey-minor"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "shot",
+     "zh": "1. (枪等)射击,射出 (shoot-shot),(2. (用话)反击,3. 飞驰,飞快地移动)",
+     "sprite": "monkey-minor"
+    },
+    {
+     "term": "emperor",
+     "zh": "皇帝,帝王",
+     "sprite": "monkey-minor"
+    },
+    {
+     "term": "Jade Emperor",
+     "zh": "玉皇大帝",
+     "sprite": "monkey-minor"
+    },
+    {
+     "term": "captain",
+     "zh": "1. (军队的)指挥官,(2. 船长,舰长,(飞机的)机长,3. (团体的)首领)",
+     "sprite": "monkey-minor"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "nearby",
+    "zh": "在附近"
+   },
+   {
+    "term": "southern",
+    "zh": "南方的"
+   },
+   {
+    "term": "magical",
+    "zh": "魔术的,魔法的"
+   },
+   {
+    "term": "sight",
+    "zh": "景色,景象"
+   }
+  ],
+  "taunts": [
+   "monkey-minor.1",
+   "monkey-minor.2",
+   "monkey-minor.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=1",
+ "map": {
+  "theme": "flower-fruit-mountain",
+  "walkable": {
+   "x": 0.05,
+   "y": 0.3,
+   "w": 0.9,
+   "h": 0.6
+  },
+  "heroSpawn": {
+   "x": 0.1,
+   "y": 0.62
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.5,
+    "y": 0.4
+   },
+   {
+    "x": 0.68,
+    "y": 0.6
+   },
+   {
+    "x": 0.84,
+    "y": 0.42
+   },
+   {
+    "x": 0.58,
+    "y": 0.76
+   }
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "monkey-minor",
+    "nameZh": "小猴子",
+    "x": 0.22,
+    "y": 0.55
+   },
+   {
+    "role": "quiz",
+    "sprite": "monkey-minor",
+    "nameZh": "小猴子",
+    "x": 0.4,
+    "y": 0.74
+   }
+  ],
+  "bossSpot": {
+   "x": 0.9,
+   "y": 0.7
+  }
+ }
+}

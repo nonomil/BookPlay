@@ -1131,9 +1131,13 @@ function epCard(n, state) {
     ? `<a class="node-dub" href="dub.html?ep=${n}"
         aria-label="第${n}集趣配音" title="用自己的声音给本集配音">🎙 配音</a>`
     : "";
+  const battle = SERIES_ID === "jttw" && state !== "locked"
+    ? `<a class="node-battle" href="battle.html?ep=${n}"
+        aria-label="第${n}集降妖记打怪复习" title="用本集单词打怪闯关">⚔️ 打怪</a>`
+    : "";
   return state === "locked"
-    ? `<article class="node locked" data-lock="ep">${content}${speak}</article>`
-    : `<article class="node ${state}"><a class="node-main" href="${SERIES.href(n)}">${content}</a>${speak}${listen}${dub}</article>`;
+    ? `<article class="node locked" data-lock="ep" data-episode="${n}">${content}${speak}</article>`
+    : `<article class="node ${state}" data-episode="${n}"><a class="node-main" href="${SERIES.href(n)}">${content}</a>${speak}${listen}${dub}${battle}</article>`;
 }
 
 function pagePrimaryAction(c, isUnlocked) {

@@ -1,0 +1,386 @@
+{
+  "schemaVersion": 1,
+  "asset": "transparent/monkey-minor-4x8-sheet.png",
+  "rawSource": "2d/monkey-minor-4x8-sheet.png",
+  "intermediate": "2d/monkey-minor-4x8-sheet.1776x888.png",
+  "method": "gpt-image-pipeline/scripts/remove_background.py --mode checkerboard (border-connected flood fill of light gray/white painted checkerboard) + 2px outer border ring alpha cleared",
+  "reason": "Provider returned an opaque RGB PNG with a painted fake-transparency checkerboard (two light grays), so a single-color chroma key was not applicable; checkerboard removal was used instead.",
+  "resize": {
+    "from": "1774x887",
+    "to": "1776x888",
+    "why": "make 8x4 grid integer-divisible (222x222 cells); scale change < 0.12 percent"
+  },
+  "size": "1776x888",
+  "mode": "RGBA",
+  "cornersAlpha": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "outerEdgeMaxAlpha": 0,
+  "transparentPercent": 67.42,
+  "opaquePercent": 32.58,
+  "grid": {
+    "cols": 8,
+    "rows": 4,
+    "cell": "222x222"
+  },
+  "allCellsNonEmpty": true,
+  "minCellOpaquePx": 14853,
+  "cells": [
+    {
+      "row": 1,
+      "col": 1,
+      "opaquePx": 16339,
+      "bbox": [
+        56,
+        29,
+        208,
+        219
+      ]
+    },
+    {
+      "row": 1,
+      "col": 2,
+      "opaquePx": 16045,
+      "bbox": [
+        51,
+        30,
+        199,
+        219
+      ]
+    },
+    {
+      "row": 1,
+      "col": 3,
+      "opaquePx": 16013,
+      "bbox": [
+        50,
+        30,
+        197,
+        219
+      ]
+    },
+    {
+      "row": 1,
+      "col": 4,
+      "opaquePx": 15823,
+      "bbox": [
+        44,
+        30,
+        192,
+        219
+      ]
+    },
+    {
+      "row": 1,
+      "col": 5,
+      "opaquePx": 15392,
+      "bbox": [
+        31,
+        35,
+        178,
+        216
+      ]
+    },
+    {
+      "row": 1,
+      "col": 6,
+      "opaquePx": 16312,
+      "bbox": [
+        31,
+        49,
+        205,
+        216
+      ]
+    },
+    {
+      "row": 1,
+      "col": 7,
+      "opaquePx": 15763,
+      "bbox": [
+        46,
+        34,
+        189,
+        218
+      ]
+    },
+    {
+      "row": 1,
+      "col": 8,
+      "opaquePx": 18127,
+      "bbox": [
+        31,
+        34,
+        178,
+        219
+      ]
+    },
+    {
+      "row": 2,
+      "col": 1,
+      "opaquePx": 16432,
+      "bbox": [
+        49,
+        24,
+        214,
+        209
+      ]
+    },
+    {
+      "row": 2,
+      "col": 2,
+      "opaquePx": 16321,
+      "bbox": [
+        45,
+        25,
+        206,
+        209
+      ]
+    },
+    {
+      "row": 2,
+      "col": 3,
+      "opaquePx": 16008,
+      "bbox": [
+        41,
+        25,
+        202,
+        209
+      ]
+    },
+    {
+      "row": 2,
+      "col": 4,
+      "opaquePx": 15883,
+      "bbox": [
+        37,
+        25,
+        196,
+        209
+      ]
+    },
+    {
+      "row": 2,
+      "col": 5,
+      "opaquePx": 15866,
+      "bbox": [
+        37,
+        27,
+        206,
+        208
+      ]
+    },
+    {
+      "row": 2,
+      "col": 6,
+      "opaquePx": 16918,
+      "bbox": [
+        29,
+        35,
+        219,
+        212
+      ]
+    },
+    {
+      "row": 2,
+      "col": 7,
+      "opaquePx": 15079,
+      "bbox": [
+        30,
+        28,
+        188,
+        209
+      ]
+    },
+    {
+      "row": 2,
+      "col": 8,
+      "opaquePx": 18154,
+      "bbox": [
+        26,
+        27,
+        185,
+        211
+      ]
+    },
+    {
+      "row": 3,
+      "col": 1,
+      "opaquePx": 16424,
+      "bbox": [
+        49,
+        14,
+        212,
+        199
+      ]
+    },
+    {
+      "row": 3,
+      "col": 2,
+      "opaquePx": 16171,
+      "bbox": [
+        44,
+        15,
+        204,
+        199
+      ]
+    },
+    {
+      "row": 3,
+      "col": 3,
+      "opaquePx": 15976,
+      "bbox": [
+        43,
+        16,
+        200,
+        199
+      ]
+    },
+    {
+      "row": 3,
+      "col": 4,
+      "opaquePx": 15802,
+      "bbox": [
+        38,
+        16,
+        195,
+        199
+      ]
+    },
+    {
+      "row": 3,
+      "col": 5,
+      "opaquePx": 15997,
+      "bbox": [
+        32,
+        18,
+        204,
+        199
+      ]
+    },
+    {
+      "row": 3,
+      "col": 6,
+      "opaquePx": 16555,
+      "bbox": [
+        29,
+        25,
+        214,
+        202
+      ]
+    },
+    {
+      "row": 3,
+      "col": 7,
+      "opaquePx": 15065,
+      "bbox": [
+        35,
+        19,
+        194,
+        200
+      ]
+    },
+    {
+      "row": 3,
+      "col": 8,
+      "opaquePx": 18090,
+      "bbox": [
+        17,
+        20,
+        177,
+        202
+      ]
+    },
+    {
+      "row": 4,
+      "col": 1,
+      "opaquePx": 14976,
+      "bbox": [
+        64,
+        3,
+        206,
+        188
+      ]
+    },
+    {
+      "row": 4,
+      "col": 2,
+      "opaquePx": 14878,
+      "bbox": [
+        58,
+        3,
+        201,
+        188
+      ]
+    },
+    {
+      "row": 4,
+      "col": 3,
+      "opaquePx": 14912,
+      "bbox": [
+        56,
+        4,
+        199,
+        188
+      ]
+    },
+    {
+      "row": 4,
+      "col": 4,
+      "opaquePx": 14853,
+      "bbox": [
+        51,
+        4,
+        192,
+        188
+      ]
+    },
+    {
+      "row": 4,
+      "col": 5,
+      "opaquePx": 15386,
+      "bbox": [
+        36,
+        6,
+        204,
+        183
+      ]
+    },
+    {
+      "row": 4,
+      "col": 6,
+      "opaquePx": 15813,
+      "bbox": [
+        17,
+        14,
+        193,
+        183
+      ]
+    },
+    {
+      "row": 4,
+      "col": 7,
+      "opaquePx": 15120,
+      "bbox": [
+        25,
+        9,
+        185,
+        184
+      ]
+    },
+    {
+      "row": 4,
+      "col": 8,
+      "opaquePx": 17371,
+      "bbox": [
+        21,
+        7,
+        178,
+        187
+      ]
+    }
+  ],
+  "checkedAt": "2026-09-06T00:37:04"
+}

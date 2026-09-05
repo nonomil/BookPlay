@@ -1,0 +1,247 @@
+{
+ "schema_version": 1,
+ "ep": 3,
+ "title": {
+  "en": "Subodhi",
+  "zh": "西游记 第3集"
+ },
+ "collection": "c01",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "subodhi-disciple",
+   "nameZh": "三星洞道童",
+   "mode": "sparring",
+   "sprite": "subodhi-disciple"
+  },
+  "minors": [
+   {
+    "id": "subodhi-disciple",
+    "nameZh": "道童",
+    "sprite": "subodhi-disciple"
+   }
+  ]
+ },
+ "background": {
+  "theme": "three-star-cave",
+  "illustration": "assets/adv_frames/ep3/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "Monkey sailed over the ocean for a long time.",
+   "textZh": "猴子在海上航行了很长时间。",
+   "illustration": "assets/adv_frames/ep3/f1.jpg"
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "Finally he arrived at a new land.",
+   "textZh": "最后,他抵达了新的土地。",
+   "illustration": "assets/adv_frames/ep3/f2.jpg"
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "eventually",
+   "zh": "最终",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep3/f1.jpg"
+  },
+  {
+   "term": "thick",
+   "zh": "厚的",
+   "ipa": "θɪk",
+   "illustration": "assets/adv_frames/ep3/f1.jpg"
+  },
+  {
+   "term": "steep",
+   "zh": "陡峭的,险峻的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep3/f2.jpg"
+  },
+  {
+   "term": "trail",
+   "zh": "小径,(踩出的)小路",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep3/f2.jpg"
+  },
+  {
+   "term": "chop",
+   "zh": "1. 砍,劈,(2. 切细,剁碎)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep3/f1.jpg"
+  },
+  {
+   "term": "woodcutter",
+   "zh": "伐木者,樵夫",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep3/f3.jpg"
+  },
+  {
+   "term": "firewood",
+   "zh": "木柴,柴火",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep3/f3.jpg"
+  },
+  {
+   "term": "wise",
+   "zh": "聪明的,明智的",
+   "ipa": "waɪz",
+   "illustration": "assets/adv_frames/ep3/f0.jpg"
+  },
+  {
+   "term": "side",
+   "zh": "旁边,侧面",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep3/f2.jpg"
+  },
+  {
+   "term": "temple",
+   "zh": "神殿,庙宇,寺院",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep3/f2.jpg"
+  },
+  {
+   "term": "confused",
+   "zh": "混乱的,困惑的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep3/f3.jpg"
+  },
+  {
+   "term": "master",
+   "zh": "1. 大师,师傅,(2. (狗、仆人等的)主人)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep3/f0.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "eventually",
+     "zh": "最终",
+     "sprite": "subodhi-disciple"
+    },
+    {
+     "term": "thick",
+     "zh": "厚的",
+     "sprite": "subodhi-disciple"
+    },
+    {
+     "term": "steep",
+     "zh": "陡峭的,险峻的",
+     "sprite": "subodhi-disciple"
+    },
+    {
+     "term": "trail",
+     "zh": "小径,(踩出的)小路",
+     "sprite": "subodhi-disciple"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "chop",
+     "zh": "1. 砍,劈,(2. 切细,剁碎)",
+     "sprite": "subodhi-disciple"
+    },
+    {
+     "term": "woodcutter",
+     "zh": "伐木者,樵夫",
+     "sprite": "subodhi-disciple"
+    },
+    {
+     "term": "firewood",
+     "zh": "木柴,柴火",
+     "sprite": "subodhi-disciple"
+    },
+    {
+     "term": "wise",
+     "zh": "聪明的,明智的",
+     "sprite": "subodhi-disciple"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "side",
+    "zh": "旁边,侧面"
+   },
+   {
+    "term": "temple",
+    "zh": "神殿,庙宇,寺院"
+   },
+   {
+    "term": "confused",
+    "zh": "混乱的,困惑的"
+   },
+   {
+    "term": "master",
+    "zh": "1. 大师,师傅,(2. (狗、仆人等的)主人)"
+   }
+  ],
+  "taunts": [
+   "subodhi-disciple.1",
+   "subodhi-disciple.2",
+   "subodhi-disciple.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=3",
+ "map": {
+  "theme": "three-star-cave",
+  "walkable": {
+   "x": 0.05,
+   "y": 0.32,
+   "w": 0.9,
+   "h": 0.58
+  },
+  "heroSpawn": {
+   "x": 0.1,
+   "y": 0.7
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.44,
+    "y": 0.46
+   },
+   {
+    "x": 0.62,
+    "y": 0.62
+   },
+   {
+    "x": 0.8,
+    "y": 0.44
+   },
+   {
+    "x": 0.52,
+    "y": 0.78
+   }
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "subodhi-disciple",
+    "nameZh": "道童",
+    "x": 0.24,
+    "y": 0.6
+   },
+   {
+    "role": "quiz",
+    "sprite": "subodhi-disciple",
+    "nameZh": "道童",
+    "x": 0.46,
+    "y": 0.72
+   }
+  ],
+  "bossSpot": {
+   "x": 0.9,
+   "y": 0.72
+  }
+ }
+}

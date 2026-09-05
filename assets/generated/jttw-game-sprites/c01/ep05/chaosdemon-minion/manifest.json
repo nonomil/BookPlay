@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "character": {
+    "id": "chaosdemon-minion",
+    "zh": "水妖",
+    "en": "Water Demon Minion"
+  },
+  "sheet": {
+    "grid": {
+      "cols": 8,
+      "rows": 4
+    },
+    "cell": "192x256",
+    "size": "1774x887",
+    "sizeRequested": "1536x1024",
+    "provider": "cliprox",
+    "model": "gpt-image-2",
+    "attempts": 2,
+    "generatedAt": "2026-09-06T00:29:50",
+    "note": "Provider ignored size request, returned 1774x887 both calls. Background came back as a baked-in checkerboard (fake transparency), removed via split_asset_sheet --remove-checkerboard (edge flood-fill). Cells split on a uniform 221px grid (1774/8 x 887/4) and uniformly scaled onto 192x256 canvases. Small disconnected fragments crossing cell boundaries (neighbor bleed) were removed by connected-component analysis; fragments identified as the character's own spear tip (edge-adjacent to main body) were kept."
+  },
+  "prompt": "source/prompt.txt",
+  "transparent": "transparent/chaosdemon-minion-4x8-sheet.png",
+  "alphaReport": "transparent/chaosdemon-minion-4x8-sheet.alpha-report.json",
+  "frames": {
+    "walk": {
+      "south": [
+        "2d/split/chaosdemon-minion-south-walk-01.png",
+        "2d/split/chaosdemon-minion-south-walk-02.png",
+        "2d/split/chaosdemon-minion-south-walk-03.png",
+        "2d/split/chaosdemon-minion-south-walk-04.png"
+      ],
+      "west": [
+        "2d/split/chaosdemon-minion-west-walk-01.png",
+        "2d/split/chaosdemon-minion-west-walk-02.png",
+        "2d/split/chaosdemon-minion-west-walk-03.png",
+        "2d/split/chaosdemon-minion-west-walk-04.png"
+      ],
+      "east": [
+        "2d/split/chaosdemon-minion-east-walk-01.png",
+        "2d/split/chaosdemon-minion-east-walk-02.png",
+        "2d/split/chaosdemon-minion-east-walk-03.png",
+        "2d/split/chaosdemon-minion-east-walk-04.png"
+      ],
+      "north": [
+        "2d/split/chaosdemon-minion-north-walk-01.png",
+        "2d/split/chaosdemon-minion-north-walk-02.png",
+        "2d/split/chaosdemon-minion-north-walk-03.png",
+        "2d/split/chaosdemon-minion-north-walk-04.png"
+      ]
+    },
+    "act": {
+      "south": [
+        "2d/split/chaosdemon-minion-south-act-01.png",
+        "2d/split/chaosdemon-minion-south-act-02.png",
+        "2d/split/chaosdemon-minion-south-act-03.png",
+        "2d/split/chaosdemon-minion-south-act-04.png"
+      ],
+      "west": [
+        "2d/split/chaosdemon-minion-west-act-01.png",
+        "2d/split/chaosdemon-minion-west-act-02.png",
+        "2d/split/chaosdemon-minion-west-act-03.png",
+        "2d/split/chaosdemon-minion-west-act-04.png"
+      ],
+      "east": [
+        "2d/split/chaosdemon-minion-east-act-01.png",
+        "2d/split/chaosdemon-minion-east-act-02.png",
+        "2d/split/chaosdemon-minion-east-act-03.png",
+        "2d/split/chaosdemon-minion-east-act-04.png"
+      ],
+      "north": [
+        "2d/split/chaosdemon-minion-north-act-01.png",
+        "2d/split/chaosdemon-minion-north-act-02.png",
+        "2d/split/chaosdemon-minion-north-act-03.png",
+        "2d/split/chaosdemon-minion-north-act-04.png"
+      ]
+    }
+  },
+  "gifs": {
+    "south": "transparent/chaosdemon-minion-south-walk-action.gif",
+    "west": "transparent/chaosdemon-minion-west-walk-action.gif",
+    "east": "transparent/chaosdemon-minion-east-walk-action.gif",
+    "north": "transparent/chaosdemon-minion-north-walk-action.gif"
+  },
+  "sha256": {
+    "sheet": "dfe1a39a2ce37a67c4b94b1db34fee3b0d171aeb8b44d2a9f5fbfe264b3b9d89"
+  }
+}

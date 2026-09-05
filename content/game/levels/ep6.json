@@ -1,0 +1,243 @@
+{
+ "schema_version": 1,
+ "ep": 6,
+ "title": {
+  "en": "The Dragon King",
+  "zh": "西游记 第6集"
+ },
+ "collection": "c01",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "dragonking",
+   "nameZh": "东海龙王",
+   "mode": "sparring",
+   "sprite": "dragonking"
+  },
+  "minors": [
+   {
+    "id": "dragonking-soldier",
+    "nameZh": "虾兵",
+    "sprite": "dragonking-soldier"
+   }
+  ]
+ },
+ "background": {
+  "theme": "dragon-palace",
+  "illustration": "assets/adv_frames/ep6/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "\"What's wrong with our swords and spears?\" asked the gibbon.",
+   "textZh": "\"我们的剑和矛有什么问题吗?\"长臂猿问。",
+   "illustration": "assets/adv_frames/ep6/f1.jpg"
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "\"They're fine for normal monkeys and apes,\" said Wukong.",
+   "textZh": "\"它们对普通猴子和猿来说没问题,\"悟空说道。",
+   "illustration": "assets/adv_frames/ep6/f2.jpg"
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "spear",
+   "zh": "矛",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep6/f1.jpg"
+  },
+  {
+   "term": "normal",
+   "zh": "正常的",
+   "ipa": "ˈnɔː(r)ml",
+   "illustration": "assets/adv_frames/ep6/f1.jpg"
+  },
+  {
+   "term": "bottom",
+   "zh": "底部,下端",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep6/f1.jpg"
+  },
+  {
+   "term": "eastern",
+   "zh": "东边的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep6/f1.jpg"
+  },
+  {
+   "term": "quick",
+   "zh": "快的,敏捷的",
+   "ipa": "kwɪk",
+   "illustration": "assets/adv_frames/ep6/f1.jpg"
+  },
+  {
+   "term": "underwater",
+   "zh": "在水里面地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep6/f1.jpg"
+  },
+  {
+   "term": "soldier",
+   "zh": "军人",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep6/f3.jpg"
+  },
+  {
+   "term": "drag",
+   "zh": "拉(重的东西),吃力地拉",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep6/f2.jpg"
+  },
+  {
+   "term": "out of breath",
+   "zh": "喘不过气来",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep6/f3.jpg"
+  },
+  {
+   "term": "trouble",
+   "zh": "困难,困难局面",
+   "ipa": "ˈtrʌbl",
+   "illustration": "assets/adv_frames/ep6/f3.jpg"
+  },
+  {
+   "term": "pretend",
+   "zh": "假装,伪装",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep6/f1.jpg"
+  },
+  {
+   "term": "rude",
+   "zh": "粗鲁的,无礼的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep6/f0.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "spear",
+     "zh": "矛",
+     "sprite": "dragonking-soldier"
+    },
+    {
+     "term": "normal",
+     "zh": "正常的",
+     "sprite": "dragonking-soldier"
+    },
+    {
+     "term": "bottom",
+     "zh": "底部,下端",
+     "sprite": "dragonking-soldier"
+    },
+    {
+     "term": "eastern",
+     "zh": "东边的",
+     "sprite": "dragonking-soldier"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "quick",
+     "zh": "快的,敏捷的",
+     "sprite": "dragonking-soldier"
+    },
+    {
+     "term": "underwater",
+     "zh": "在水里面地",
+     "sprite": "dragonking-soldier"
+    },
+    {
+     "term": "soldier",
+     "zh": "军人",
+     "sprite": "dragonking-soldier"
+    },
+    {
+     "term": "drag",
+     "zh": "拉(重的东西),吃力地拉",
+     "sprite": "dragonking-soldier"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "out of breath",
+    "zh": "喘不过气来"
+   },
+   {
+    "term": "trouble",
+    "zh": "困难,困难局面"
+   },
+   {
+    "term": "pretend",
+    "zh": "假装,伪装"
+   },
+   {
+    "term": "rude",
+    "zh": "粗鲁的,无礼的"
+   }
+  ],
+  "taunts": [
+   "dragonking.1",
+   "dragonking.2",
+   "dragonking.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=6",
+ "map": {
+  "theme": "dragon-palace",
+  "walkable": {
+   "x": 0.05,
+   "y": 0.32,
+   "w": 0.9,
+   "h": 0.58
+  },
+  "heroSpawn": {
+   "x": 0.08,
+   "y": 0.6
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.46,
+    "y": 0.44
+   },
+   {
+    "x": 0.66,
+    "y": 0.6
+   },
+   {
+    "x": 0.84,
+    "y": 0.44
+   }
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "dragonking-soldier",
+    "nameZh": "虾兵",
+    "x": 0.22,
+    "y": 0.52
+   },
+   {
+    "role": "quiz",
+    "sprite": "dragonking-soldier",
+    "nameZh": "虾兵",
+    "x": 0.44,
+    "y": 0.76
+   }
+  ],
+  "bossSpot": {
+   "x": 0.91,
+   "y": 0.64
+  }
+ }
+}

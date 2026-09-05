@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 1,
+  "character": {
+    "id": "monkey-minor",
+    "zh": "小猴子",
+    "en": "Little Stone Monkey Soldier"
+  },
+  "sheet": {
+    "grid": {
+      "cols": 8,
+      "rows": 4
+    },
+    "cell": "222x222",
+    "size": "1776x888",
+    "sizeRequested": "1536x1024",
+    "actualSizeFromProvider": "1774x887",
+    "provider": "cliprox",
+    "model": "gpt-image-2",
+    "attempts": 1,
+    "generatedAt": "2026-09-06T00:22:50",
+    "sheetRowToDirection": [
+      "south",
+      "west",
+      "east",
+      "north"
+    ],
+    "columns": {
+      "1-4": "walk cycle (contact, passing, contact, passing)",
+      "5-8": "action poses (ready, attack swing, casting/taunt, victory)"
+    }
+  },
+  "prompt": "source/prompt.txt",
+  "raw2d": {
+    "image": "2d/monkey-minor-4x8-sheet.png",
+    "resized": "2d/monkey-minor-4x8-sheet.1776x888.png",
+    "response": "2d/monkey-minor-4x8-sheet.response.attempt1.json",
+    "runnerManifest": "2d/manifest.json"
+  },
+  "transparent": "transparent/monkey-minor-4x8-sheet.png",
+  "alphaReport": "transparent/monkey-minor-4x8-sheet.alpha-report.json",
+  "frameSize": "238x238",
+  "frames": {
+    "walk": {
+      "south": [
+        "2d/split/monkey-minor-south-walk-01.png",
+        "2d/split/monkey-minor-south-walk-02.png",
+        "2d/split/monkey-minor-south-walk-03.png",
+        "2d/split/monkey-minor-south-walk-04.png"
+      ],
+      "west": [
+        "2d/split/monkey-minor-west-walk-01.png",
+        "2d/split/monkey-minor-west-walk-02.png",
+        "2d/split/monkey-minor-west-walk-03.png",
+        "2d/split/monkey-minor-west-walk-04.png"
+      ],
+      "east": [
+        "2d/split/monkey-minor-east-walk-01.png",
+        "2d/split/monkey-minor-east-walk-02.png",
+        "2d/split/monkey-minor-east-walk-03.png",
+        "2d/split/monkey-minor-east-walk-04.png"
+      ],
+      "north": [
+        "2d/split/monkey-minor-north-walk-01.png",
+        "2d/split/monkey-minor-north-walk-02.png",
+        "2d/split/monkey-minor-north-walk-03.png",
+        "2d/split/monkey-minor-north-walk-04.png"
+      ]
+    },
+    "act": {
+      "south": [
+        "2d/split/monkey-minor-south-act-01.png",
+        "2d/split/monkey-minor-south-act-02.png",
+        "2d/split/monkey-minor-south-act-03.png",
+        "2d/split/monkey-minor-south-act-04.png"
+      ],
+      "west": [
+        "2d/split/monkey-minor-west-act-01.png",
+        "2d/split/monkey-minor-west-act-02.png",
+        "2d/split/monkey-minor-west-act-03.png",
+        "2d/split/monkey-minor-west-act-04.png"
+      ],
+      "east": [
+        "2d/split/monkey-minor-east-act-01.png",
+        "2d/split/monkey-minor-east-act-02.png",
+        "2d/split/monkey-minor-east-act-03.png",
+        "2d/split/monkey-minor-east-act-04.png"
+      ],
+      "north": [
+        "2d/split/monkey-minor-north-act-01.png",
+        "2d/split/monkey-minor-north-act-02.png",
+        "2d/split/monkey-minor-north-act-03.png",
+        "2d/split/monkey-minor-north-act-04.png"
+      ]
+    }
+  },
+  "gifs": {
+    "south": "transparent/monkey-minor-south-walk-action.gif",
+    "west": "transparent/monkey-minor-west-walk-action.gif",
+    "east": "transparent/monkey-minor-east-walk-action.gif",
+    "north": "transparent/monkey-minor-north-walk-action.gif"
+  },
+  "gif": {
+    "frameOrder": "walk-01..04 then act-01..04",
+    "durationMs": 150,
+    "loop": true
+  },
+  "sha256": {
+    "sheet": "e7209467dc859af38c7bc0b0ec9b9d5c798ef61795f5b48460a49de0c67fa4e6",
+    "raw2d": "512876a6e711a0af7658e807a19a7d249866158a9d0eb21a3f3256e69174ec9c"
+  },
+  "notes": [
+    "Provider ignored the requested 1536x1024 and returned 1774x887; the sheet was resized to 1776x888 (<0.12 percent scale) so the 8x4 grid splits into exact 222x222 cells. Cell is therefore 222x222, not the nominal 192x256.",
+    "Split frames are 238x238 = 222x222 cell + 8px pad on each side (split_asset_sheet.py --pad 8, no --trim, to keep every frame aligned).",
+    "Frames are named by the actual visual facing direction, verified by zoomed inspection of rows 2 and 3."
+  ],
+  "createdAt": "2026-09-06T00:37:04"
+}

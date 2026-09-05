@@ -1,0 +1,524 @@
+/* 降妖记大地图探索页样式：单屏主题地图 + 四方向行走 + 实体百分比定位。
+ * 移动内核借鉴 word-memory-map：rAF 逐帧更新既有 DOM 的 left/top，不重建节点。
+ * 焦点环、64px 命中高度、safe-area 与 reduced-motion 遵循 tv.css 合同。 */
+
+.game {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  background: #141c2f;
+  color: #fff;
+  font-family: "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+  padding-inline: var(--tv-safe-inline, 12px);
+  touch-action: none;
+  user-select: none;
+}
+
+.game-scene {
+  position: absolute;
+  inset: 0;
+  cursor: crosshair;
+}
+
+.game-backdrop {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.82) saturate(1.05);
+}
+
+.game-backdrop::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(8, 12, 24, 0.35) 0%, rgba(8, 12, 24, 0) 22%, rgba(8, 12, 24, 0) 70%, rgba(8, 12, 24, 0.5) 100%);
+}
+
+.game-walkzone {
+  position: absolute;
+  border: 2px dashed rgba(255, 215, 106, 0);
+  border-radius: 18px;
+  pointer-events: none;
+}
+
+.game.debug .game-walkzone {
+  border-color: rgba(255, 215, 106, 0.65);
+  background: rgba(255, 215, 106, 0.06);
+}
+
+.game-entities {
+  position: absolute;
+  inset: 0;
+}
+
+.game-entity {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: clamp(64px, 9vw, 108px);
+  border: 0;
+  background: transparent;
+  padding: 0;
+  color: #fff;
+}
+
+.game-entity img {
+  width: 100%;
+  max-height: 22vh;
+  object-fit: contain;
+  filter: drop-shadow(0 6px 8px rgba(0, 0, 0, 0.5));
+  pointer-events: none;
+}
+
+.game-entity.is-monster {
+  cursor: pointer;
+}
+
+.game-entity.is-monster .game-word {
+  position: absolute;
+  top: -16px;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: rgba(20, 26, 44, 0.88);
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  font-size: clamp(12px, 1.7vw, 18px);
+}
+
+.game-entity.is-target .game-word {
+  background: #ffd76a;
+  color: #4a2f00;
+  border-color: #fff;
+}
+
+.game-entity.is-target::after {
+  content: "🎯";
+  position: absolute;
+  top: -44px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: game-bounce 0.9s ease-in-out infinite;
+}
+
+@keyframes game-bounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(-6px); }
+}
+
+.game-entity.is-hero {
+  z-index: 3;
+}
+
+.game-entity.is-hero img {
+  max-height: 26vh;
+}
+
+.game-entity.is-npc {
+  cursor: pointer;
+}
+
+.game-entity .game-speech {
+  position: absolute;
+  top: -34px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: clamp(16px, 2.4vw, 24px);
+}
+
+.game-entity.is-bossspot {
+  cursor: pointer;
+  width: clamp(72px, 10vw, 120px);
+}
+
+.game-entity.is-bossspot .game-boss-aura {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 64px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(229, 72, 77, 0.45), rgba(229, 72, 77, 0) 70%);
+  border: 2px dashed rgba(229, 72, 77, 0.8);
+  font-size: clamp(20px, 3vw, 30px);
+}
+
+.game-entity.is-dead {
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  transform: translate(-50%, -50%) scale(1.5);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.game-entity.is-fleeing img {
+  filter: hue-rotate(-50deg) brightness(1.4);
+}
+
+/* HUD */
+
+.game-hud {
+  position: absolute;
+  z-index: 6;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: clamp(8px, 1.6vw, 16px);
+  padding-inline: var(--tv-safe-inline, 12px);
+  font-size: clamp(14px, 2vw, 19px);
+}
+
+.game-hud > * {
+  min-height: 44px;
+}
+
+.game-shields,
+.game-progress {
+  display: flex;
+  align-items: center;
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: rgba(15, 20, 36, 0.75);
+  border: 2px solid rgba(255, 255, 255, 0.35);
+}
+
+.game-target {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 14px;
+  border-radius: 999px;
+  background: rgba(255, 215, 106, 0.16);
+  border: 2px solid rgba(255, 215, 106, 0.8);
+}
+
+.game-target-label {
+  font-size: 12px;
+  opacity: 0.85;
+}
+
+.game-target strong {
+  font-size: clamp(16px, 2.4vw, 22px);
+  color: #ffd76a;
+}
+
+.game-target button {
+  min-width: 44px;
+  min-height: 44px;
+  border-radius: 50%;
+  border: 0;
+  background: rgba(255, 215, 106, 0.9);
+  color: #4a2f00;
+  font-size: 16px;
+}
+
+.game-exit {
+  margin-left: auto;
+  min-width: 56px;
+  min-height: 56px;
+  border-radius: 14px;
+  font-size: 20px;
+  background: rgba(15, 20, 36, 0.75);
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  color: #fff;
+}
+
+/* 收集栏 */
+
+.game-tray {
+  position: absolute;
+  z-index: 5;
+  left: var(--tv-safe-inline, 12px);
+  bottom: calc(10px + env(safe-area-inset-bottom, 0));
+  display: flex;
+  gap: 6px;
+  max-width: 46vw;
+  flex-wrap: wrap;
+}
+
+.game-tray .game-loot {
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: rgba(15, 20, 36, 0.85);
+  border: 1px solid rgba(255, 215, 106, 0.7);
+  font-size: clamp(11px, 1.6vw, 15px);
+  animation: game-loot-in 0.5s ease;
+}
+
+@keyframes game-loot-in {
+  from { transform: translateY(20px) scale(0.6); opacity: 0; }
+  to { transform: none; opacity: 1; }
+}
+
+/* 虚拟摇杆（触屏显示） */
+
+.game-joystick {
+  position: absolute;
+  z-index: 6;
+  right: calc(18px + var(--tv-safe-inline, 12px));
+  bottom: calc(18px + env(safe-area-inset-bottom, 0));
+  width: 108px;
+  height: 108px;
+  border-radius: 50%;
+  background: rgba(15, 20, 36, 0.45);
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  display: none;
+  touch-action: none;
+}
+
+.game-joystick .game-stick {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(255, 215, 106, 0.85);
+  transform: translate(-50%, -50%);
+}
+
+@media (pointer: coarse) {
+  .game-joystick { display: block; }
+  .game-dpad-hint { display: none; }
+}
+
+.game-dpad-hint {
+  position: absolute;
+  z-index: 5;
+  right: calc(14px + var(--tv-safe-inline, 12px));
+  bottom: calc(12px + env(safe-area-inset-bottom, 0));
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(15, 20, 36, 0.6);
+  font-size: 12px;
+  opacity: 0.75;
+}
+
+/* 对话框（借鉴 pixel-story：立绘 + 名牌 + 台词 + ▼ 推进） */
+
+.game-dialogue {
+  position: absolute;
+  z-index: 8;
+  left: 50%;
+  bottom: calc(16px + env(safe-area-inset-bottom, 0));
+  transform: translateX(-50%);
+  width: min(680px, 94vw);
+  display: flex;
+  gap: 12px;
+  align-items: flex-end;
+  background: rgba(16, 22, 40, 0.95);
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-radius: 20px;
+  padding: clamp(12px, 2.4vw, 20px);
+}
+
+.game-dialogue-face {
+  width: clamp(72px, 13vw, 128px);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.12);
+  object-fit: contain;
+  align-self: center;
+}
+
+.game-dialogue-name {
+  display: inline-block;
+  padding: 2px 12px;
+  border-radius: 999px;
+  background: #ffd76a;
+  color: #4a2f00;
+  font-weight: 700;
+  font-size: clamp(12px, 1.8vw, 16px);
+  margin-bottom: 6px;
+}
+
+.game-dialogue-en {
+  font-size: clamp(16px, 2.4vw, 22px);
+  margin: 4px 0;
+}
+
+.game-dialogue-zh {
+  font-size: clamp(13px, 1.9vw, 17px);
+  opacity: 0.85;
+  margin: 0 0 10px;
+}
+
+.game-dialogue-choices {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+}
+
+.game-dialogue-choices button {
+  min-height: 64px;
+  border-radius: 14px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: clamp(15px, 2.2vw, 19px);
+  padding: 8px 14px;
+  text-align: left;
+}
+
+.game-dialogue-choices button.is-right {
+  border-color: #58c08a;
+  background: rgba(88, 192, 138, 0.25);
+}
+
+.game-dialogue-choices button.is-wrong {
+  border-color: #e5484d;
+  background: rgba(229, 72, 77, 0.25);
+}
+
+.game-dialogue-choices button:disabled {
+  opacity: 0.55;
+}
+
+.game-feedback {
+  padding: 8px 12px;
+  border-radius: 12px;
+  background: rgba(255, 215, 106, 0.15);
+  border: 1px solid rgba(255, 215, 106, 0.5);
+  font-size: clamp(13px, 1.9vw, 17px);
+  margin-bottom: 8px;
+}
+
+/* 快速卡（击中怪物后的 3 选 1） */
+
+.game-quickquiz {
+  position: absolute;
+  z-index: 9;
+  left: 50%;
+  top: 46%;
+  transform: translate(-50%, -50%);
+  width: min(420px, 88vw);
+  text-align: center;
+  background: rgba(16, 22, 40, 0.96);
+  border: 2px solid #ffd76a;
+  border-radius: 20px;
+  padding: clamp(14px, 2.6vw, 22px);
+}
+
+.game-quickquiz .game-qq-term {
+  font-size: clamp(22px, 4vw, 32px);
+  font-weight: 800;
+  color: #ffd76a;
+}
+
+.game-quickquiz .game-qq-ipa {
+  display: block;
+  opacity: 0.75;
+  margin: 2px 0 10px;
+}
+
+.game-quickquiz .game-qq-hint {
+  display: block;
+  margin-bottom: 10px;
+  font-size: clamp(14px, 2vw, 18px);
+}
+
+.game-quickquiz .game-qq-choices {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+}
+
+.game-quickquiz .game-qq-choices button {
+  min-height: 64px;
+  border-radius: 14px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: clamp(15px, 2.2vw, 19px);
+}
+
+.game-quickquiz .game-qq-choices button.is-right {
+  border-color: #58c08a;
+  background: rgba(88, 192, 138, 0.25);
+}
+
+.game-quickquiz .game-qq-choices button.is-wrong {
+  border-color: #e5484d;
+  background: rgba(229, 72, 77, 0.25);
+}
+
+/* 面板（Boss 门 / 暂停 / 门禁） */
+
+.game-panel {
+  position: absolute;
+  z-index: 8;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: min(480px, 92vw);
+  text-align: center;
+  background: rgba(16, 22, 40, 0.96);
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-radius: 20px;
+  padding: clamp(16px, 3vw, 26px);
+}
+
+.game-primary,
+.battle-secondary {
+  min-height: 64px;
+  min-width: 120px;
+  border-radius: 16px;
+  font-size: clamp(15px, 2.2vw, 20px);
+  padding: 8px 22px;
+  cursor: pointer;
+  margin: 4px;
+}
+
+.game-primary {
+  background: linear-gradient(180deg, #ffd76a, #e8a13a);
+  color: #4a2f00;
+  border: 0;
+  font-weight: 700;
+}
+
+/* 飞行金箍棒 */
+
+.game-staff {
+  position: absolute;
+  z-index: 7;
+  width: clamp(34px, 5vw, 54px);
+  height: 7px;
+  border-radius: 4px;
+  background: linear-gradient(90deg, #b8860b, #ffd76a, #b8860b);
+  box-shadow: 0 0 10px rgba(255, 215, 106, 0.9);
+  transition: transform 0.45s ease-in;
+  pointer-events: none;
+}
+
+.game-particles {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 7;
+}
+
+.game-star {
+  position: absolute;
+  font-size: clamp(14px, 2.2vw, 20px);
+  animation: game-star-fly 0.7s ease-out forwards;
+}
+
+@keyframes game-star-fly {
+  from { transform: translate(0, 0) scale(1); opacity: 1; }
+  to { transform: translate(var(--dx, 0), var(--dy, -60px)) scale(0.4); opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .game-entity { transition: none; }
+  .game-entity.is-target::after { animation: none; }
+  .game-staff { transition: none; }
+  .game-star { animation: none; opacity: 0; }
+  .game-entity.is-dead { transform: translate(-50%, -50%); opacity: 0.25; }
+}
+
+@media (max-width: 700px) {
+  .game-entity { width: clamp(56px, 13vw, 84px); }
+  .game-hud { flex-wrap: wrap; }
+  .game-target { order: 5; width: 100%; justify-content: center; }
+}

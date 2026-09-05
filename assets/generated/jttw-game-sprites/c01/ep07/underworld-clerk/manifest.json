@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "character": {
+    "id": "underworld-clerk",
+    "zh": "阴差",
+    "en": "Underworld Clerk"
+  },
+  "sheet": {
+    "grid": {
+      "cols": 8,
+      "rows": 4
+    },
+    "cell": "192x192",
+    "frameSize": "208x208 (includes 8px pad)",
+    "size": "1536x768",
+    "sizeRequested": "1536x1024",
+    "providerActualSize": "1774x887",
+    "provider": "cliprox",
+    "model": "gpt-image-2",
+    "note": "provider ignored requested 1536x1024 and returned a 2:1 sheet; aspect-preserving 1536x768 used so cells stay 192px wide"
+  },
+  "generation": {
+    "attempts": 1,
+    "elapsedSeconds": 77,
+    "rawSheet": "2d/underworld-clerk-4x8-sheet.png",
+    "response": "2d/underworld-clerk-4x8-sheet.response.attempt1.json"
+  },
+  "prompt": "source/prompt.txt",
+  "transparent": "transparent/underworld-clerk-4x8-sheet.png",
+  "alphaReport": "transparent/underworld-clerk-alpha-report.json",
+  "frames": {
+    "walk": {
+      "south": [
+        "2d/split/underworld-clerk-south-walk-01.png",
+        "2d/split/underworld-clerk-south-walk-02.png",
+        "2d/split/underworld-clerk-south-walk-03.png",
+        "2d/split/underworld-clerk-south-walk-04.png"
+      ],
+      "west": [
+        "2d/split/underworld-clerk-west-walk-01.png",
+        "2d/split/underworld-clerk-west-walk-02.png",
+        "2d/split/underworld-clerk-west-walk-03.png",
+        "2d/split/underworld-clerk-west-walk-04.png"
+      ],
+      "east": [
+        "2d/split/underworld-clerk-east-walk-01.png",
+        "2d/split/underworld-clerk-east-walk-02.png",
+        "2d/split/underworld-clerk-east-walk-03.png",
+        "2d/split/underworld-clerk-east-walk-04.png"
+      ],
+      "north": [
+        "2d/split/underworld-clerk-north-walk-01.png",
+        "2d/split/underworld-clerk-north-walk-02.png",
+        "2d/split/underworld-clerk-north-walk-03.png",
+        "2d/split/underworld-clerk-north-walk-04.png"
+      ]
+    },
+    "act": {
+      "south": [
+        "2d/split/underworld-clerk-south-act-01.png",
+        "2d/split/underworld-clerk-south-act-02.png",
+        "2d/split/underworld-clerk-south-act-03.png",
+        "2d/split/underworld-clerk-south-act-04.png"
+      ],
+      "west": [
+        "2d/split/underworld-clerk-west-act-01.png",
+        "2d/split/underworld-clerk-west-act-02.png",
+        "2d/split/underworld-clerk-west-act-03.png",
+        "2d/split/underworld-clerk-west-act-04.png"
+      ],
+      "east": [
+        "2d/split/underworld-clerk-east-act-01.png",
+        "2d/split/underworld-clerk-east-act-02.png",
+        "2d/split/underworld-clerk-east-act-03.png",
+        "2d/split/underworld-clerk-east-act-04.png"
+      ],
+      "north": [
+        "2d/split/underworld-clerk-north-act-01.png",
+        "2d/split/underworld-clerk-north-act-02.png",
+        "2d/split/underworld-clerk-north-act-03.png",
+        "2d/split/underworld-clerk-north-act-04.png"
+      ]
+    }
+  },
+  "gifs": {
+    "south": "transparent/underworld-clerk-south-walk-action.gif",
+    "west": "transparent/underworld-clerk-west-walk-action.gif",
+    "east": "transparent/underworld-clerk-east-walk-action.gif",
+    "north": "transparent/underworld-clerk-north-walk-action.gif"
+  },
+  "sha256": {
+    "sheet": "afdd7fb42812a7e0ef6d02341f73b58da6c54aeef6a208749da28825b3bc7b5f"
+  }
+}

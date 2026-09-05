@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "character": {
+    "id": "subodhi-disciple",
+    "zh": "道童",
+    "en": "Subodhi's Young Taoist Disciple"
+  },
+  "sheet": {
+    "grid": {
+      "cols": 8,
+      "rows": 4
+    },
+    "cell": "222x222",
+    "size": "1776x888",
+    "sizeRequested": "1536x1024",
+    "actualSizeFromProvider": "1774x887",
+    "provider": "cliprox",
+    "model": "gpt-image-2",
+    "attempts": 1,
+    "generatedAt": "2026-09-06T00:22:12",
+    "sheetRowToDirection": [
+      "south",
+      "east",
+      "west",
+      "north"
+    ],
+    "columns": {
+      "1-4": "walk cycle (contact, passing, contact, passing)",
+      "5-8": "action poses (ready, attack swing, casting/taunt, victory)"
+    }
+  },
+  "prompt": "source/prompt.txt",
+  "raw2d": {
+    "image": "2d/subodhi-disciple-4x8-sheet.png",
+    "resized": "2d/subodhi-disciple-4x8-sheet.1776x888.png",
+    "response": "2d/subodhi-disciple-4x8-sheet.response.attempt1.json",
+    "runnerManifest": "2d/manifest.json"
+  },
+  "transparent": "transparent/subodhi-disciple-4x8-sheet.png",
+  "alphaReport": "transparent/subodhi-disciple-4x8-sheet.alpha-report.json",
+  "frameSize": "238x238",
+  "frames": {
+    "walk": {
+      "south": [
+        "2d/split/subodhi-disciple-south-walk-01.png",
+        "2d/split/subodhi-disciple-south-walk-02.png",
+        "2d/split/subodhi-disciple-south-walk-03.png",
+        "2d/split/subodhi-disciple-south-walk-04.png"
+      ],
+      "west": [
+        "2d/split/subodhi-disciple-west-walk-01.png",
+        "2d/split/subodhi-disciple-west-walk-02.png",
+        "2d/split/subodhi-disciple-west-walk-03.png",
+        "2d/split/subodhi-disciple-west-walk-04.png"
+      ],
+      "east": [
+        "2d/split/subodhi-disciple-east-walk-01.png",
+        "2d/split/subodhi-disciple-east-walk-02.png",
+        "2d/split/subodhi-disciple-east-walk-03.png",
+        "2d/split/subodhi-disciple-east-walk-04.png"
+      ],
+      "north": [
+        "2d/split/subodhi-disciple-north-walk-01.png",
+        "2d/split/subodhi-disciple-north-walk-02.png",
+        "2d/split/subodhi-disciple-north-walk-03.png",
+        "2d/split/subodhi-disciple-north-walk-04.png"
+      ]
+    },
+    "act": {
+      "south": [
+        "2d/split/subodhi-disciple-south-act-01.png",
+        "2d/split/subodhi-disciple-south-act-02.png",
+        "2d/split/subodhi-disciple-south-act-03.png",
+        "2d/split/subodhi-disciple-south-act-04.png"
+      ],
+      "west": [
+        "2d/split/subodhi-disciple-west-act-01.png",
+        "2d/split/subodhi-disciple-west-act-02.png",
+        "2d/split/subodhi-disciple-west-act-03.png",
+        "2d/split/subodhi-disciple-west-act-04.png"
+      ],
+      "east": [
+        "2d/split/subodhi-disciple-east-act-01.png",
+        "2d/split/subodhi-disciple-east-act-02.png",
+        "2d/split/subodhi-disciple-east-act-03.png",
+        "2d/split/subodhi-disciple-east-act-04.png"
+      ],
+      "north": [
+        "2d/split/subodhi-disciple-north-act-01.png",
+        "2d/split/subodhi-disciple-north-act-02.png",
+        "2d/split/subodhi-disciple-north-act-03.png",
+        "2d/split/subodhi-disciple-north-act-04.png"
+      ]
+    }
+  },
+  "gifs": {
+    "south": "transparent/subodhi-disciple-south-walk-action.gif",
+    "west": "transparent/subodhi-disciple-west-walk-action.gif",
+    "east": "transparent/subodhi-disciple-east-walk-action.gif",
+    "north": "transparent/subodhi-disciple-north-walk-action.gif"
+  },
+  "gif": {
+    "frameOrder": "walk-01..04 then act-01..04",
+    "durationMs": 150,
+    "loop": true
+  },
+  "sha256": {
+    "sheet": "f4dfdae44c3f94958b56d9b1f4fd6584fdccf81928949443620e8c5dcf126f20",
+    "raw2d": "f069c710aa586176cadc631101e700626b549d9fb47597e8735cad1fecdd6e7d"
+  },
+  "notes": [
+    "Provider ignored the requested 1536x1024 and returned 1774x887; the sheet was resized to 1776x888 (<0.12 percent scale) so the 8x4 grid splits into exact 222x222 cells. Cell is therefore 222x222, not the nominal 192x256.",
+    "Split frames are 238x238 = 222x222 cell + 8px pad on each side (split_asset_sheet.py --pad 8, no --trim, to keep every frame aligned).",
+    "Frames are named by the actual visual facing direction, verified by zoomed inspection of rows 2 and 3.",
+    "The model drew sheet row 2 facing EAST and row 3 facing WEST (swapped relative to the prompt order south/west/east/north). Frames were renamed by actual facing: row 2 -> east, row 3 -> west. sheetRowToDirection records the mapping."
+  ],
+  "createdAt": "2026-09-06T00:37:04"
+}

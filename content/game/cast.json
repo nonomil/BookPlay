@@ -1,0 +1,49 @@
+{
+ "schema_version": 1,
+ "comment": "降妖记关卡的角色分派表（人工维护）。bossByEp 为每集 Boss 显式表（优先）；minorsByEp 每集小怪；themesByEp 战斗背景主题；minorNames 为小怪中文名。未列出的集数：hero=wukong，boss 回退 imp（villain），minors 回退 imp，theme 回退 generic。",
+ "heroDefault": { "id": "wukong", "nameZh": "孙悟空" },
+ "bossByEp": {
+  "1": { "id": "monkey-minor", "mode": "sparring", "nameZh": "猴群小头目" },
+  "2": { "id": "monkey-minor", "mode": "sparring", "nameZh": "瀑洞守门猴" },
+  "3": { "id": "subodhi-disciple", "mode": "sparring", "nameZh": "三星洞道童" },
+  "4": { "id": "subodhi", "mode": "sparring", "nameZh": "菩提祖师" },
+  "5": { "id": "chaosdemon", "mode": "villain", "nameZh": "混世魔王" },
+  "6": { "id": "dragonking", "mode": "sparring", "nameZh": "东海龙王" },
+  "7": { "id": "underworld-clerk", "mode": "villain", "nameZh": "阴差头目" }
+ },
+ "minorsByEp": {
+  "1": ["monkey-minor"],
+  "2": ["monkey-minor"],
+  "3": ["subodhi-disciple"],
+  "4": ["subodhi-disciple"],
+  "5": ["chaosdemon-minion"],
+  "6": ["dragonking-soldier"],
+  "7": ["underworld-clerk"]
+ },
+ "minorNames": {
+  "monkey-minor": "小猴子",
+  "subodhi-disciple": "道童",
+  "chaosdemon-minion": "水妖",
+  "dragonking-soldier": "虾兵",
+  "underworld-clerk": "阴差",
+  "imp": "小妖"
+ },
+ "npcByEp": {
+  "1": { "intro": "monkey-minor", "quiz": "monkey-minor" },
+  "2": { "intro": "monkey-minor", "quiz": "monkey-minor" },
+  "3": { "intro": "subodhi-disciple", "quiz": "subodhi-disciple" },
+  "4": { "intro": "subodhi-disciple", "quiz": "subodhi-disciple" },
+  "5": { "intro": "chaosdemon-minion", "quiz": "monkey-minor" },
+  "6": { "intro": "dragonking-soldier", "quiz": "dragonking-soldier" },
+  "7": { "intro": "underworld-clerk", "quiz": "underworld-clerk" }
+ },
+ "themesByEp": {
+  "1": "flower-fruit-mountain",
+  "2": "water-curtain-cave",
+  "3": "three-star-cave",
+  "4": "three-star-cave",
+  "5": "water-dirty-cave",
+  "6": "dragon-palace",
+  "7": "underworld"
+ }
+}

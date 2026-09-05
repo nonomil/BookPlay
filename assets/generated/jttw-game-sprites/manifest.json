@@ -1,0 +1,86 @@
+{
+ "schemaVersion": 1,
+ "assetId": "jttw-game-sprites",
+ "layout": {
+  "grid": {
+   "cols": 8,
+   "rows": 4
+  },
+  "requestedSize": "1536x1024"
+ },
+ "characters": [
+  {
+   "id": "monkey-minor",
+   "zh": "小猴子",
+   "en": "Little Monkey",
+   "dir": "c01/ep01/monkey-minor",
+   "frames": 32,
+   "gifs": 4,
+   "provider": "cliprox",
+   "model": "gpt-image-2",
+   "manifest": "c01/ep01/monkey-minor/manifest.json",
+   "note": ""
+  },
+  {
+   "id": "subodhi-disciple",
+   "zh": "道童",
+   "en": "Taoist Novice",
+   "dir": "c01/ep03/subodhi-disciple",
+   "frames": 32,
+   "gifs": 4,
+   "provider": "cliprox",
+   "model": "gpt-image-2",
+   "manifest": "c01/ep03/subodhi-disciple/manifest.json",
+   "note": ""
+  },
+  {
+   "id": "chaosdemon-minion",
+   "zh": "水妖",
+   "en": "Water Demon Minion",
+   "dir": "c01/ep05/chaosdemon-minion",
+   "frames": 32,
+   "gifs": 4,
+   "provider": "cliprox",
+   "model": "gpt-image-2",
+   "manifest": "c01/ep05/chaosdemon-minion/manifest.json",
+   "note": "Provider ignored size request, returned 1774x887 both calls. Background came back as a baked-in checkerboard (fake transparency), removed via split_asset_sheet --remove-checkerboard (edge flood-fill). Cells split on a uniform 221px grid (1774/8 x 887/4) and uniformly scaled onto 192x256 canvases. Small disconnected fragments crossing cell boundaries (neighbor bleed) were removed by connected-component analysis; fragments identified as the character's own spear tip (edge-adjacent to main body) were kept."
+  },
+  {
+   "id": "dragonking-soldier",
+   "zh": "虾兵",
+   "en": "Shrimp Soldier",
+   "dir": "c01/ep06/dragonking-soldier",
+   "frames": 32,
+   "gifs": 4,
+   "provider": "cliprox",
+   "model": "gpt-image-2",
+   "manifest": "c01/ep06/dragonking-soldier/manifest.json",
+   "note": "2 generation calls: call 2 sheet rejected (uneven 8-column spacing, characters straddled uniform cell boundaries); published sheet is call 1. Provider ignored size request, returned 1774x887 both calls. Background came back as a baked-in checkerboard (fake transparency), removed via split_asset_sheet --remove-checkerboard (edge flood-fill). Cells split on a uniform 221px grid (1774/8 x 887/4) and uniformly scaled onto 192x256 canvases. Small disconnected fragments crossing cell boundaries (neighbor bleed) were removed by connected-component analysis; fragments identified as the character's own spear tip (edge-adjacent to main body) were kept. Attempt-2 kept as 2d/dragonking-soldier-4x8-sheet.attempt2-rejected.png with its response JSON."
+  },
+  {
+   "id": "underworld-clerk",
+   "zh": "阴差",
+   "en": "Underworld Clerk",
+   "dir": "c01/ep07/underworld-clerk",
+   "frames": 32,
+   "gifs": 4,
+   "provider": "cliprox",
+   "model": "gpt-image-2",
+   "manifest": "c01/ep07/underworld-clerk/manifest.json",
+   "note": "provider ignored requested 1536x1024 and returned a 2:1 sheet; aspect-preserving 1536x768 used so cells stay 192px wide"
+  },
+  {
+   "id": "imp",
+   "zh": "小妖",
+   "en": "Little Imp",
+   "dir": "c01/shared/imp",
+   "frames": 32,
+   "gifs": 4,
+   "provider": "cliprox",
+   "model": "gpt-image-2",
+   "manifest": "c01/shared/imp/manifest.json",
+   "note": "provider ignored requested 1536x1024 and returned a 2:1 sheet; aspect-preserving 1536x768 used so cells stay 192px wide"
+  }
+ ],
+ "runtimeSync": "content/assets/game-sprites"
+}

@@ -1,0 +1,243 @@
+{
+ "schema_version": 1,
+ "ep": 2,
+ "title": {
+  "en": "The Waterfall Cave",
+  "zh": "西游记 第2集"
+ },
+ "collection": "c01",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "monkey-minor",
+   "nameZh": "瀑洞守门猴",
+   "mode": "sparring",
+   "sprite": "monkey-minor"
+  },
+  "minors": [
+   {
+    "id": "monkey-minor",
+    "nameZh": "小猴子",
+    "sprite": "monkey-minor"
+   }
+  ]
+ },
+ "background": {
+  "theme": "water-curtain-cave",
+  "illustration": "assets/adv_frames/ep2/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "Monkey splashed through the waterfall and landed in a large cave.",
+   "textZh": "猴子跃过瀑布,落在一个巨大的洞穴中。",
+   "illustration": "assets/adv_frames/ep2/f1.jpg"
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "His eyes opened wide.",
+   "textZh": "他的眼睛猛地睁大了。",
+   "illustration": "assets/adv_frames/ep2/f2.jpg"
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "land",
+   "zh": "降落,登陆",
+   "ipa": "lænd",
+   "illustration": "assets/adv_frames/ep2/f1.jpg"
+  },
+  {
+   "term": "wide",
+   "zh": "张得(或开得)很大地",
+   "ipa": "waɪd",
+   "illustration": "assets/adv_frames/ep2/f1.jpg"
+  },
+  {
+   "term": "bamboo",
+   "zh": "竹子",
+   "ipa": "ˌbæmˈbuː",
+   "illustration": "assets/adv_frames/ep2/f1.jpg"
+  },
+  {
+   "term": "moss",
+   "zh": "苔藓,地衣",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep2/f0.jpg"
+  },
+  {
+   "term": "glowing",
+   "zh": "鲜艳的,鲜明的,炽热的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep2/f1.jpg"
+  },
+  {
+   "term": "fireplace",
+   "zh": "壁炉",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep2/f3.jpg"
+  },
+  {
+   "term": "cozy",
+   "zh": "(房间或者家里)舒适的,惬意的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep2/f0.jpg"
+  },
+  {
+   "term": "outside",
+   "zh": "(在)外面",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep2/f1.jpg"
+  },
+  {
+   "term": "wash away",
+   "zh": "冲走",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep2/f0.jpg"
+  },
+  {
+   "term": "perfect",
+   "zh": "完美的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep2/f0.jpg"
+  },
+  {
+   "term": "dangerous",
+   "zh": "危险的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep2/f2.jpg"
+  },
+  {
+   "term": "argue",
+   "zh": "争论,辩论",
+   "ipa": "ˈɑːrɡjuː",
+   "illustration": "assets/adv_frames/ep2/f1.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "land",
+     "zh": "降落,登陆",
+     "sprite": "monkey-minor"
+    },
+    {
+     "term": "wide",
+     "zh": "张得(或开得)很大地",
+     "sprite": "monkey-minor"
+    },
+    {
+     "term": "bamboo",
+     "zh": "竹子",
+     "sprite": "monkey-minor"
+    },
+    {
+     "term": "moss",
+     "zh": "苔藓,地衣",
+     "sprite": "monkey-minor"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "glowing",
+     "zh": "鲜艳的,鲜明的,炽热的",
+     "sprite": "monkey-minor"
+    },
+    {
+     "term": "fireplace",
+     "zh": "壁炉",
+     "sprite": "monkey-minor"
+    },
+    {
+     "term": "cozy",
+     "zh": "(房间或者家里)舒适的,惬意的",
+     "sprite": "monkey-minor"
+    },
+    {
+     "term": "outside",
+     "zh": "(在)外面",
+     "sprite": "monkey-minor"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "wash away",
+    "zh": "冲走"
+   },
+   {
+    "term": "perfect",
+    "zh": "完美的"
+   },
+   {
+    "term": "dangerous",
+    "zh": "危险的"
+   },
+   {
+    "term": "argue",
+    "zh": "争论,辩论"
+   }
+  ],
+  "taunts": [
+   "monkey-minor.1",
+   "monkey-minor.2",
+   "monkey-minor.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=2",
+ "map": {
+  "theme": "water-curtain-cave",
+  "walkable": {
+   "x": 0.06,
+   "y": 0.32,
+   "w": 0.88,
+   "h": 0.58
+  },
+  "heroSpawn": {
+   "x": 0.12,
+   "y": 0.66
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.46,
+    "y": 0.44
+   },
+   {
+    "x": 0.64,
+    "y": 0.66
+   },
+   {
+    "x": 0.82,
+    "y": 0.48
+   }
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "monkey-minor",
+    "nameZh": "小猴子",
+    "x": 0.26,
+    "y": 0.58
+   },
+   {
+    "role": "quiz",
+    "sprite": "monkey-minor",
+    "nameZh": "小猴子",
+    "x": 0.52,
+    "y": 0.78
+   }
+  ],
+  "bossSpot": {
+   "x": 0.88,
+   "y": 0.66
+  }
+ }
+}

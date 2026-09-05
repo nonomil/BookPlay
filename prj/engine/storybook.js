@@ -2169,6 +2169,16 @@ function renderPracticeResult() {
     startPracticeQuiz(practiceState.questions.filter((q) => wrongSet.has(q.id)), { resetRecovery: false });
   });
   actions.append(back, retry);
+  if (request.series === "jttw") {
+    const battle = document.createElement("button");
+    battle.type = "button";
+    battle.textContent = "⚔️ 去打怪";
+    battle.setAttribute("aria-label", `用第${ep}集单词打怪闯关`);
+    battle.addEventListener("click", () => {
+      window.location.href = `battle.html?ep=${ep}`;
+    });
+    actions.append(battle);
+  }
   const completion = document.createElement("section");
   completion.className = "sb-completion-card";
   completion.setAttribute("aria-label", summary.passed ? `本${STORY_UNIT_ZH}完成卡` : `本${STORY_UNIT_ZH}学习结果`);

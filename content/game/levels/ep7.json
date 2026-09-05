@@ -1,0 +1,247 @@
+{
+ "schema_version": 1,
+ "ep": 7,
+ "title": {
+  "en": "The Land of Darkness",
+  "zh": "西游记 第7集"
+ },
+ "collection": "c01",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "underworld-clerk",
+   "nameZh": "阴差头目",
+   "mode": "villain",
+   "sprite": "underworld-clerk"
+  },
+  "minors": [
+   {
+    "id": "underworld-clerk",
+    "nameZh": "阴差",
+    "sprite": "underworld-clerk"
+   }
+  ]
+ },
+ "background": {
+  "theme": "underworld",
+  "illustration": "assets/adv_frames/ep7/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "Sun Wukong put his hand on the iron pillar.",
+   "textZh": "孙悟空将手搭在铁柱上。",
+   "illustration": "assets/adv_frames/ep7/f1.jpg"
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "He felt it move.",
+   "textZh": "他感觉到它动了。",
+   "illustration": "assets/adv_frames/ep7/f2.jpg"
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "darkness",
+   "zh": "黑暗,阴暗",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep7/f0.jpg"
+  },
+  {
+   "term": "command",
+   "zh": "命令",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep7/f0.jpg"
+  },
+  {
+   "term": "shrank",
+   "zh": "收缩,缩短 (shrink-shrank/shrunk)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep7/f1.jpg"
+  },
+  {
+   "term": "pin",
+   "zh": "1. 别针,领带夹,发夹,(2. (用别针等)别住)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep7/f3.jpg"
+  },
+  {
+   "term": "rude",
+   "zh": "粗鲁的,无礼的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep7/f3.jpg"
+  },
+  {
+   "term": "clench",
+   "zh": "握紧 (拳头),咬紧 (牙)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep7/f0.jpg"
+  },
+  {
+   "term": "report",
+   "zh": "报告",
+   "ipa": "rɪˈpɔː(r)t",
+   "illustration": "assets/adv_frames/ep7/f0.jpg"
+  },
+  {
+   "term": "declare",
+   "zh": "宣言,断言",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep7/f3.jpg"
+  },
+  {
+   "term": "feast",
+   "zh": "盛宴,筵席",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep7/f1.jpg"
+  },
+  {
+   "term": "creepy",
+   "zh": "令人毛骨悚然的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep7/f3.jpg"
+  },
+  {
+   "term": "yank",
+   "zh": "猛然一拉,使劲一拉",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep7/f3.jpg"
+  },
+  {
+   "term": "knock out",
+   "zh": "使昏迷",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep7/f2.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "darkness",
+     "zh": "黑暗,阴暗",
+     "sprite": "underworld-clerk"
+    },
+    {
+     "term": "command",
+     "zh": "命令",
+     "sprite": "underworld-clerk"
+    },
+    {
+     "term": "shrank",
+     "zh": "收缩,缩短 (shrink-shrank/shrunk)",
+     "sprite": "underworld-clerk"
+    },
+    {
+     "term": "pin",
+     "zh": "1. 别针,领带夹,发夹,(2. (用别针等)别住)",
+     "sprite": "underworld-clerk"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "rude",
+     "zh": "粗鲁的,无礼的",
+     "sprite": "underworld-clerk"
+    },
+    {
+     "term": "clench",
+     "zh": "握紧 (拳头),咬紧 (牙)",
+     "sprite": "underworld-clerk"
+    },
+    {
+     "term": "report",
+     "zh": "报告",
+     "sprite": "underworld-clerk"
+    },
+    {
+     "term": "declare",
+     "zh": "宣言,断言",
+     "sprite": "underworld-clerk"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "feast",
+    "zh": "盛宴,筵席"
+   },
+   {
+    "term": "creepy",
+    "zh": "令人毛骨悚然的"
+   },
+   {
+    "term": "yank",
+    "zh": "猛然一拉,使劲一拉"
+   },
+   {
+    "term": "knock out",
+    "zh": "使昏迷"
+   }
+  ],
+  "taunts": [
+   "underworld-clerk.1",
+   "underworld-clerk.2",
+   "underworld-clerk.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=7",
+ "map": {
+  "theme": "underworld",
+  "walkable": {
+   "x": 0.06,
+   "y": 0.3,
+   "w": 0.88,
+   "h": 0.6
+  },
+  "heroSpawn": {
+   "x": 0.1,
+   "y": 0.66
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.44,
+    "y": 0.42
+   },
+   {
+    "x": 0.64,
+    "y": 0.62
+   },
+   {
+    "x": 0.82,
+    "y": 0.46
+   },
+   {
+    "x": 0.54,
+    "y": 0.76
+   }
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "underworld-clerk",
+    "nameZh": "阴差",
+    "x": 0.24,
+    "y": 0.58
+   },
+   {
+    "role": "quiz",
+    "sprite": "underworld-clerk",
+    "nameZh": "阴差",
+    "x": 0.48,
+    "y": 0.74
+   }
+  ],
+  "bossSpot": {
+   "x": 0.9,
+   "y": 0.7
+  }
+ }
+}

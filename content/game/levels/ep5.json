@@ -1,0 +1,247 @@
+{
+ "schema_version": 1,
+ "ep": 5,
+ "title": {
+  "en": "The Demon of Chaos",
+  "zh": "西游记 第5集"
+ },
+ "collection": "c01",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "chaosdemon",
+   "nameZh": "混世魔王",
+   "mode": "villain",
+   "sprite": "chaosdemon"
+  },
+  "minors": [
+   {
+    "id": "chaosdemon-minion",
+    "nameZh": "水妖",
+    "sprite": "chaosdemon-minion"
+   }
+  ]
+ },
+ "background": {
+  "theme": "water-dirty-cave",
+  "illustration": "assets/adv_frames/ep5/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "\"What happened here?\" Wukong asked the gibbon.",
+   "textZh": "\"这里发生了什么?\"悟空问着那只长臂猿。",
+   "illustration": "assets/adv_frames/ep5/f1.jpg"
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "A few more monkeys and apes gathered around Sun Wukong and the gibbon.",
+   "textZh": "又有几只猴子和类人猿围聚在孙悟空和长臂猿周围。",
+   "illustration": "assets/adv_frames/ep5/f2.jpg"
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "demon",
+   "zh": "魔鬼,恶魔",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep5/f0.jpg"
+  },
+  {
+   "term": "chaos",
+   "zh": "混乱,杂乱的一团",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep5/f0.jpg"
+  },
+  {
+   "term": "kidnap",
+   "zh": "绑架,诱拐",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep5/f1.jpg"
+  },
+  {
+   "term": "furious",
+   "zh": "非常愤怒的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep5/f2.jpg"
+  },
+  {
+   "term": "handle",
+   "zh": "处理,对待",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep5/f2.jpg"
+  },
+  {
+   "term": "subject",
+   "zh": "1. 臣服者,国民,(2. (故事等的)主题,3. 科目)",
+   "ipa": "ˈsʌbdʒɪk",
+   "illustration": "assets/adv_frames/ep5/f1.jpg"
+  },
+  {
+   "term": "amazement",
+   "zh": "(相当)惊奇,诧异",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep5/f3.jpg"
+  },
+  {
+   "term": "gloomy",
+   "zh": "忧郁的,阴郁的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep5/f1.jpg"
+  },
+  {
+   "term": "entrance",
+   "zh": "入又",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep5/f1.jpg"
+  },
+  {
+   "term": "revenge",
+   "zh": "报仇,报复",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep5/f3.jpg"
+  },
+  {
+   "term": "shriek",
+   "zh": "(尖声)说话,尖叫",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep5/f0.jpg"
+  },
+  {
+   "term": "meal",
+   "zh": "膳食,一餐",
+   "ipa": "miːl",
+   "illustration": "assets/adv_frames/ep5/f0.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "demon",
+     "zh": "魔鬼,恶魔",
+     "sprite": "chaosdemon-minion"
+    },
+    {
+     "term": "chaos",
+     "zh": "混乱,杂乱的一团",
+     "sprite": "chaosdemon-minion"
+    },
+    {
+     "term": "kidnap",
+     "zh": "绑架,诱拐",
+     "sprite": "chaosdemon-minion"
+    },
+    {
+     "term": "furious",
+     "zh": "非常愤怒的",
+     "sprite": "chaosdemon-minion"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "handle",
+     "zh": "处理,对待",
+     "sprite": "chaosdemon-minion"
+    },
+    {
+     "term": "subject",
+     "zh": "1. 臣服者,国民,(2. (故事等的)主题,3. 科目)",
+     "sprite": "chaosdemon-minion"
+    },
+    {
+     "term": "amazement",
+     "zh": "(相当)惊奇,诧异",
+     "sprite": "chaosdemon-minion"
+    },
+    {
+     "term": "gloomy",
+     "zh": "忧郁的,阴郁的",
+     "sprite": "chaosdemon-minion"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "entrance",
+    "zh": "入又"
+   },
+   {
+    "term": "revenge",
+    "zh": "报仇,报复"
+   },
+   {
+    "term": "shriek",
+    "zh": "(尖声)说话,尖叫"
+   },
+   {
+    "term": "meal",
+    "zh": "膳食,一餐"
+   }
+  ],
+  "taunts": [
+   "chaosdemon.1",
+   "chaosdemon.2",
+   "chaosdemon.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=5",
+ "map": {
+  "theme": "water-dirty-cave",
+  "walkable": {
+   "x": 0.06,
+   "y": 0.3,
+   "w": 0.88,
+   "h": 0.6
+  },
+  "heroSpawn": {
+   "x": 0.1,
+   "y": 0.64
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.48,
+    "y": 0.42
+   },
+   {
+    "x": 0.66,
+    "y": 0.64
+   },
+   {
+    "x": 0.84,
+    "y": 0.46
+   },
+   {
+    "x": 0.56,
+    "y": 0.78
+   }
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "chaosdemon-minion",
+    "nameZh": "水妖",
+    "x": 0.26,
+    "y": 0.56
+   },
+   {
+    "role": "quiz",
+    "sprite": "monkey-minor",
+    "nameZh": "小猴子",
+    "x": 0.44,
+    "y": 0.76
+   }
+  ],
+  "bossSpot": {
+   "x": 0.89,
+   "y": 0.68
+  }
+ }
+}

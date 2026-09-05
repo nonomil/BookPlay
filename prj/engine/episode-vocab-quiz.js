@@ -292,6 +292,13 @@
       const j = random % (i + 1);
       [order[i], order[j]] = [order[j], order[i]];
     }
+    // Expanded types (context-fill / listen-choice / ...) are the point of a
+    // mixed quiz; always keep them when the count cap trims the selection.
+    order.sort((a, b) => {
+      const aSpecial = normalized[a].type && normalized[a].type !== "meaning-choice" ? 0 : 1;
+      const bSpecial = normalized[b].type && normalized[b].type !== "meaning-choice" ? 0 : 1;
+      return aSpecial - bSpecial;
+    });
     // Keep the first implementation short and predictable: use the minimum
     // grade-appropriate count, capped by the available authored questions.
     // Later adaptive drills may raise this toward rules.max.
