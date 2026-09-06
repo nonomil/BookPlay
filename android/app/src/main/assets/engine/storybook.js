@@ -674,12 +674,15 @@ function setReaderMode(requestedMode) {
 function updateReaderHeader(page, sentence) {
   if (unitProgressEl) {
     const sentences = pageSentences(page);
-    unitProgressEl.textContent = BookPlayStorybookUI.formatUnitProgress({
+    let label = BookPlayStorybookUI.formatUnitProgress({
       page: page && page.page_no != null ? page.page_no : idx + 1,
       pages: book && book.pages ? book.pages.length : 0,
       sentence: sentences ? sentIdx + 1 : undefined,
       sentences: sentences ? sentences.length : undefined,
     });
+    const band = sentencePanelBand(page, sentence);
+    if (band) label += band[0] < (page.panel[1] + page.panel[2]) / 2 ? " · 上半" : " · 下半";
+    unitProgressEl.textContent = label;
   }
   if (speakerChipEl) {
     const speaker = sentence && sentence.speaker;
@@ -1066,6 +1069,7 @@ function renderPage() {
   }
   pageImg.src = `../${page.image}`;
   pageImg.alt = `page ${page.page_no}`;
+  applyPageView();
   pageImg.classList.remove("clip");
   modeEl.textContent = "";
   spriteImg.classList.add("hidden");
@@ -1149,7 +1153,66 @@ function currentMikeySentence() {
 
 function canLocateBubble() {
   const sentence = currentMikeySentence();
-  return isUnifiedV3() && Boolean(sentence && (sentence.bubble || sentence.speaker));
+  return Boolean(sentence && (sentence.bubble || sentence.speaker));
+}
+
+/* ===== 面板拆分视图：上下两格的页面每次只显示一格 ===== */
+
+let activePanelBand = null;
+
+function pagePanelBands(page) {
+  const band = page && page.panel;
+  if (!Array.isArray(band) || band.length !== 4) return null;
+  if (!(band[1] > band[0]) || !(band[3] > band[2])) return null;
+  return band;
+}
+
+function sentencePanelBand(page, sentence) {
+  const bands = pagePanelBands(page);
+  if (!bands || !sentence || !sentence.bubble) return null;
+  const centerY = sentence.bubble.y + (sentence.bubble.h || 0) / 2;
+  const splitCenter = (bands[1] + bands[2]) / 2;
+  return centerY < splitCenter ? [bands[0], bands[1]] : [bands[2], bands[3]];
+}
+
+function currentPanelBand() {
+  if (request.series !== "mikey-jj" || !useSentenceMode() || !book || !book.pages[idx]) return null;
+  const page = book.pages[idx];
+  const s = page.sentences[sentIdx];
+  return sentencePanelBand(page, s) || activePanelBand;
+}
+
+function applyPageView() {
+  const band = currentPanelBand();
+  const inner = $("sb-stage-inner");
+  if (!inner) return;
+  if (band && pageImg.naturalWidth && pageImg.naturalHeight) {
+    const fraction = band[1] - band[0];
+    const panelAR = pageImg.naturalWidth / (pageImg.naturalHeight * fraction);
+    document.body.classList.add("sb-split-view");
+    inner.style.aspectRatio = `${pageImg.naturalWidth} / ${Math.round(pageImg.naturalHeight * fraction * 1000) / 1000}`;
+    // A short window clamps the stage height; shrink the width so the visible
+    // window still matches the band exactly (never crops into the band).
+    inner.style.width = "";
+    const expectedH = inner.clientWidth / panelAR;
+    const maxH = parseFloat(getComputedStyle(inner).maxHeight);
+    if (Number.isFinite(maxH) && expectedH > maxH) {
+      inner.style.width = `${Math.floor(maxH * panelAR)}px`;
+    }
+    pageImg.style.width = "100%";
+    pageImg.style.height = "auto";
+    // translate % is relative to the img's own height, which spans the whole
+    // page; shifting by the band start crops exactly at the gutter.
+    pageImg.style.transform = `translateY(${(-band[0] * 100).toFixed(3)}%)`;
+  } else {
+    document.body.classList.remove("sb-split-view");
+    inner.style.aspectRatio = "";
+    inner.style.width = "";
+    pageImg.style.width = "";
+    pageImg.style.height = "";
+    pageImg.style.transform = "";
+  }
+  activePanelBand = band;
 }
 
 function speakable() {
@@ -1209,37 +1272,48 @@ function hideBubbleLocator() {
 }
 
 function updateBubbleLocator(sentence) {
-  if (!bubbleLocatorEl || !isUnifiedV3() || !sentence || !sentence.bubble) {
+  if (!bubbleLocatorEl || !sentence || !sentence.bubble) {
     hideBubbleLocator();
     return;
   }
   const inner = $("sb-stage-inner");
-  if (!inner || !pageImg || !pageImg.naturalWidth || !pageImg.naturalHeight) {
+  if (!inner || !pageImg.naturalWidth || !pageImg.naturalHeight) {
     hideBubbleLocator();
     return;
   }
-  const imageRect = pageImg.getBoundingClientRect();
   const innerRect = inner.getBoundingClientRect();
-  const contained = BookPlayStorybookUI.containedRect({
-    boxLeft: imageRect.left - innerRect.left,
-    boxTop: imageRect.top - innerRect.top,
-    boxWidth: imageRect.width,
-    boxHeight: imageRect.height,
-    naturalWidth: pageImg.naturalWidth,
-    naturalHeight: pageImg.naturalHeight,
-  });
-  const target = BookPlayStorybookUI.projectRelativeBox(contained, sentence.bubble);
-  if (!contained || !target) {
-    hideBubbleLocator();
-    return;
+  let target;
+  if (activePanelBand) {
+    // Split view: the <img> is shifted inside the cropped stage window and
+    // its transformed rect already reflects that, so project directly.
+    const imgRect = pageImg.getBoundingClientRect();
+    target = {
+      left: imgRect.left - innerRect.left + sentence.bubble.x * imgRect.width,
+      top: imgRect.top - innerRect.top + sentence.bubble.y * imgRect.height,
+      width: sentence.bubble.w * imgRect.width,
+      height: sentence.bubble.h * imgRect.height,
+    };
+  } else {
+    const imageRect = pageImg.getBoundingClientRect();
+    const contained = BookPlayStorybookUI.containedRect({
+      boxLeft: imageRect.left - innerRect.left,
+      boxTop: imageRect.top - innerRect.top,
+      boxWidth: imageRect.width,
+      boxHeight: imageRect.height,
+      naturalWidth: pageImg.naturalWidth,
+      naturalHeight: pageImg.naturalHeight,
+    });
+    target = BookPlayStorybookUI.projectRelativeBox(contained, sentence.bubble);
+    if (!contained || !target) {
+      hideBubbleLocator();
+      return;
+    }
   }
   const pad = 4;
-  const containedRight = contained.left + contained.width;
-  const containedBottom = contained.top + contained.height;
-  const left = Math.max(contained.left, target.left - pad);
-  const top = Math.max(contained.top, target.top - pad);
-  const right = Math.min(containedRight, target.left + target.width + pad);
-  const bottom = Math.min(containedBottom, target.top + target.height + pad);
+  const left = Math.max(0, target.left - pad);
+  const top = Math.max(0, target.top - pad);
+  const right = Math.min(innerRect.width, target.left + target.width + pad);
+  const bottom = Math.min(innerRect.height, target.top + target.height + pad);
   if (right <= left || bottom <= top) {
     hideBubbleLocator();
     return;
@@ -1287,10 +1361,12 @@ function showSpeakingBubble() {
     bubbleEl.hidden = true;
     return;
   }
-  renderSpeakingBubble(s);
-  positionSpeakingBubble(s);
-  bubbleEl.hidden = false;
-  requestAnimationFrame(() => bubbleEl.classList.add("is-visible"));
+  // Legacy layout also keeps the artwork unobstructed: the floating word
+  // strip covered the comic, so only the red locator frame marks the bubble
+  // while it is being read. Point-read stays in the caption buttons.
+  bubbleEl.classList.remove("is-visible");
+  bubbleEl.hidden = true;
+  updateBubbleLocator(s);
 }
 
 /* v3 大弹窗：贴舞台底部居中，宽度吃满大部分舞台，不锚定 PDF 坐标 */
@@ -1636,13 +1712,49 @@ function createQuizSpeaker(text, label = "", lang = "en-US") {
   return button;
 }
 
+let quizClipAudio = null;
+let quizAutoSpeakTimer = 0;
+
+function playQuizSentenceClip(relPath) {
+  if (!relPath) return;
+  try {
+    if (quizClipAudio) quizClipAudio.pause();
+    quizClipAudio = new Audio(runtimeAssetUrl(relPath));
+    quizClipAudio.play().catch(() => {});
+  } catch (_) {}
+}
+
+function quizSourceSentenceAudio(question) {
+  if (question && question.audio) return question.audio;
+  if (!question || !book) return null;
+  const wanted = String(question.source_sentence_id || "");
+  if (!wanted) return null;
+  for (const page of book.pages || []) {
+    for (const sentence of page.sentences || []) {
+      if (String(sentence.id || "") === wanted) return sentence.audio || null;
+    }
+  }
+  return null;
+}
+
 function appendQuizHint(card, display, idSuffix) {
-  const row = document.createElement("div");
-  row.className = "sb-quiz-hint-row";
   const button = document.createElement("button");
   button.type = "button";
   button.className = "sb-quiz-hint";
-  button.textContent = "💡 提示（中文）";
+  button.textContent = "💡";
+  button.setAttribute("aria-label", "中文提示");
+  button.title = "中文提示";
+  // 右上角：放进题干行、朗读按钮左侧
+  const questionRow = card.querySelector(".sb-quiz-question-row");
+  if (questionRow) {
+    const speaker = questionRow.querySelector(".sb-quiz-speaker");
+    questionRow.insertBefore(button, speaker || null);
+  } else {
+    const row = document.createElement("div");
+    row.className = "sb-quiz-hint-row";
+    row.appendChild(button);
+    card.appendChild(row);
+  }
   const box = document.createElement("div");
   box.id = `sb-quiz-hint-${idSuffix}`;
   box.className = "sb-quiz-hint-box";
@@ -1683,10 +1795,9 @@ function appendQuizHint(card, display, idSuffix) {
     const expanded = !box.hidden;
     box.hidden = expanded;
     button.setAttribute("aria-expanded", String(!expanded));
-    button.textContent = expanded ? "💡 提示（中文）" : "🔎 收起提示";
+    button.classList.toggle("is-open", !expanded);
   });
-  row.appendChild(button);
-  card.append(row, box);
+  card.appendChild(box);
 }
 
 function renderQuiz() {
@@ -1879,6 +1990,7 @@ function clearQuizRecoveryTimer() {
 
 function startPracticeQuiz(questions = null, { resetRecovery = questions == null } = {}) {
   clearQuizRecoveryTimer();
+  if (quizAutoSpeakTimer) { clearTimeout(quizAutoSpeakTimer); quizAutoSpeakTimer = 0; }
   if (!window.BookPlayStorybookPractice) return;
   quizQuestionOverride = Array.isArray(questions) && questions.length ? questions : null;
   if (!quizQuestions().length) return;
@@ -2298,6 +2410,9 @@ function renderQuizItem() {
     : quiz[quizIndex];
   if (!q) { finishQuiz(); return; }
   const display = quizDisplayFor(q);
+  const isListen = q.type === "listen-choice";
+  const isContextFill = q.type === "context-fill";
+  const clipAudio = (isListen || isContextFill) ? quizSourceSentenceAudio(q) : null;
   const head = document.createElement("div");
   head.className = "sb-quiz-head";
   const kicker = document.createElement("p");
@@ -2315,7 +2430,16 @@ function renderQuizItem() {
   questionRow.className = "sb-quiz-question-row";
   const question = document.createElement("h3");
   question.textContent = display.promptEn;
-  questionRow.append(question, createQuizSpeaker(display.promptEn, "题目"));
+  questionRow.append(question);
+  if (clipAudio) {
+    // 听音选句 / 选词填空：喇叭播放原句切片，而不是合成朗读挖空文本
+    const play = createQuizSpeaker("🔊", "原句发音");
+    play.classList.add("sb-quiz-audio-play");
+    play.addEventListener("click", () => playQuizSentenceClip(clipAudio));
+    questionRow.append(play);
+  } else {
+    questionRow.append(createQuizSpeaker(display.promptEn, "题目"));
+  }
   const options = document.createElement("div");
   options.className = "sb-quiz-options";
   const feedback = document.createElement("p");
@@ -2354,6 +2478,15 @@ function renderQuizItem() {
   appendQuizHint(card, display, `item-${quizIndex}`);
   card.append(options, feedback);
   quizEl.append(head, card);
+  // 进入章节测试（及每次翻题）自动朗读：普通题合成朗读题干，听音/填空题播放原句
+  if (quizAutoSpeakTimer) clearTimeout(quizAutoSpeakTimer);
+  quizAutoSpeakTimer = setTimeout(() => {
+    if (clipAudio) playQuizSentenceClip(clipAudio);
+    else {
+      const speaker = card.querySelector(".sb-quiz-question-row .sb-quiz-speaker");
+      if (speaker) speaker.click();
+    }
+  }, 350);
 
   const nav = document.createElement("div");
   nav.className = "sb-quiz-nav";
@@ -2741,24 +2874,26 @@ async function main() {
     });
   }
   window.addEventListener("resize", () => {
+    applyPageView();
     const s = currentSpeakingSentence();
     if (s) {
       if (isUnifiedV3()) positionPopupBubble();
-      else positionSpeakingBubble(s);
+      else updateBubbleLocator(s);
     }
   });
   pageImg.addEventListener("load", () => {
+    applyPageView();
     const s = currentSpeakingSentence();
     if (s) {
       if (isUnifiedV3()) positionPopupBubble();
-      else positionSpeakingBubble(s);
+      else updateBubbleLocator(s);
     }
   });
   if (typeof ResizeObserver === "function") {
     const observer = new ResizeObserver(() => {
       const s = currentSpeakingSentence();
       if (s && isUnifiedV3()) positionPopupBubble();
-      else if (s) positionSpeakingBubble(s);
+      else if (s) updateBubbleLocator(s);
     });
     observer.observe($("sb-stage-inner"));
   }

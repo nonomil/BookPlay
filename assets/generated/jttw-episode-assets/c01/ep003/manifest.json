@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "bundleManifest": "../manifest.json",
+  "episode": 3,
+  "folder": "ep003",
+  "title": {
+    "zh": "菩提祖师",
+    "en": "Subodhi"
+  },
+  "arc": {
+    "zh": "寻访菩提·拜师学艺",
+    "en": "Wukong finds Patriarch Subhuti and becomes his student"
+  },
+  "source": {
+    "dialogue": "prj/data/dialogue_stories/ep3.json",
+    "catalog": "prj/data/storybooks/catalog.json",
+    "nodes": "1-74"
+  },
+  "cast": {
+    "main": [
+      {
+        "id": "wukong",
+        "zh": "孙悟空",
+        "en": "Sun Wukong",
+        "evidence": "n001-74",
+        "asset": "shared:characterIndex.wukong"
+      }
+    ],
+    "support": [
+      {
+        "id": "subodhi",
+        "zh": "菩提祖师",
+        "en": "Patriarch Subhuti",
+        "evidence": "n023-74",
+        "asset": "shared:characterIndex.subodhi"
+      },
+      {
+        "id": "woodcutter",
+        "zh": "樵夫",
+        "en": "Woodcutter",
+        "evidence": "n006-21",
+        "asset": "placeholder:generate"
+      },
+      {
+        "id": "temple-student",
+        "zh": "菩提门下弟子",
+        "en": "Temple student",
+        "evidence": "n023-32,n47-74",
+        "asset": "placeholder:generate"
+      }
+    ]
+  },
+  "featuredCharacter": {
+    "id": "subodhi",
+    "reason": "本集核心转折是菩提祖师收徒与三次敲头传信",
+    "mapBinding": "episode-card-and-dialogue-avatar"
+  },
+  "scenes": [
+    "mountain-trail",
+    "subodhi-temple"
+  ],
+  "dialogueMoments": [
+    "Wukong meets the woodcutter",
+    "Subodhi names Wukong",
+    "seven-year study and three knocks"
+  ],
+  "gameplay": {
+    "map": "mountain-trail-to-temple",
+    "dialogue": true,
+    "battle": false,
+    "miniGame": "meditation rhythm / chore matching",
+    "reward": "secret-message-clue"
+  },
+  "currentAssets": {
+    "wukong": "content/assets/generated/jttw-player-walkers/wukong/directions/{east,south,west,north}/wukong-{direction}-walk-action.gif",
+    "subodhi": "content/assets/generated/jttw-player-walkers/subodhi/directions/{east,south,west,north}/subodhi-{direction}-walk-action.gif",
+    "storyFrames": "content/assets/adv_frames/ep3/f0.jpg .. f3.jpg",
+    "cover": "content/assets/covers/ep003.jpg"
+  },
+  "assetFolders": {
+    "characters": "characters/",
+    "scenes": "scenes/",
+    "props": "props/",
+    "prompts": "prompts/"
+  },
+  "newSheetTargets": [
+    "wukong",
+    "subodhi",
+    "woodcutter",
+    "temple-student"
+  ],
+  "requiredProps": [
+    "woodcutter-ax",
+    "temple-gate",
+    "bamboo-scroll",
+    "lesson-mat",
+    "knock-symbol"
+  ],
+  "gaps": [
+    "woodcutter/temple-student: no verified art",
+    "Subodhi existing directional action needs QA against the new 4x8 contract",
+    "scene props: no transparent game layers"
+  ],
+  "generatedCharacterAssets": {}
+}

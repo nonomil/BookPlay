@@ -31,6 +31,7 @@ BUILTIN_ASSETS = ANDROID / "app" / "src" / "main" / "assets" / "data"
 BUILTIN_VERSION = "0.1.9"
 
 ENGINE_FILES = [
+    "app-audio.js", "app-audio.css",
     "content-gate.js",
     "home.html", "home.js", "home.css",
     "shelf.html", "shelf.js",
@@ -50,6 +51,8 @@ ENGINE_FILES = [
 ]
 
 DATA_DIRS = [
+    ("assets/music", ASSETS / "music"),
+    ("assets/sfx", ASSETS / "sfx"),
     ("dialogue_stories", STORIES),
     ("achievements", CONTENT / "achievements"),
     ("companions", CONTENT / "companions"),
@@ -147,6 +150,27 @@ DATA_DIRS = [
     ("assets/generated/jttw-player-walkers/powerdemon/powerdemon-walk.gif", ASSETS / "generated" / "jttw-player-walkers" / "powerdemon" / "powerdemon-walk.gif"),
     ("assets/generated/jttw-player-walkers/spiderdemon/spiderdemon-walk.gif", ASSETS / "generated" / "jttw-player-walkers" / "spiderdemon" / "spiderdemon-walk.gif"),
     ("assets/generated/jttw-player-walkers/centipededemon/centipededemon-walk.gif", ASSETS / "generated" / "jttw-player-walkers" / "centipededemon" / "centipededemon-walk.gif"),
+    ("assets/generated/jttw-player-walkers/wukong/wukong-walk-action-atlas.png", ASSETS / "generated" / "jttw-player-walkers" / "wukong" / "wukong-walk-action-atlas.png"),
+    ("assets/generated/jttw-player-walkers/subodhi/subodhi-walk-action-atlas.png", ASSETS / "generated" / "jttw-player-walkers" / "subodhi" / "subodhi-walk-action-atlas.png"),
+    ("assets/generated/jttw-player-walkers/chaosdemon/chaosdemon-walk-action-atlas.png", ASSETS / "generated" / "jttw-player-walkers" / "chaosdemon" / "chaosdemon-walk-action-atlas.png"),
+    ("assets/generated/jttw-player-walkers/chaosdemon/chaosdemon-walk.gif", ASSETS / "generated" / "jttw-player-walkers" / "chaosdemon" / "chaosdemon-walk.gif"),
+    ("assets/generated/jttw-player-walkers/dragonking/dragonking-walk-action-atlas.png", ASSETS / "generated" / "jttw-player-walkers" / "dragonking" / "dragonking-walk-action-atlas.png"),
+    ("assets/generated/jttw-player-walkers/wukong/directions/wukong-east-walk-action.gif", ASSETS / "generated" / "jttw-player-walkers" / "wukong" / "directions" / "wukong-east-walk-action.gif"),
+    ("assets/generated/jttw-player-walkers/wukong/directions/wukong-south-walk-action.gif", ASSETS / "generated" / "jttw-player-walkers" / "wukong" / "directions" / "wukong-south-walk-action.gif"),
+    ("assets/generated/jttw-player-walkers/wukong/directions/wukong-west-walk-action.gif", ASSETS / "generated" / "jttw-player-walkers" / "wukong" / "directions" / "wukong-west-walk-action.gif"),
+    ("assets/generated/jttw-player-walkers/wukong/directions/wukong-north-walk-action.gif", ASSETS / "generated" / "jttw-player-walkers" / "wukong" / "directions" / "wukong-north-walk-action.gif"),
+    ("assets/generated/jttw-player-walkers/subodhi/directions/subodhi-east-walk-action.gif", ASSETS / "generated" / "jttw-player-walkers" / "subodhi" / "directions" / "subodhi-east-walk-action.gif"),
+    ("assets/generated/jttw-player-walkers/subodhi/directions/subodhi-south-walk-action.gif", ASSETS / "generated" / "jttw-player-walkers" / "subodhi" / "directions" / "subodhi-south-walk-action.gif"),
+    ("assets/generated/jttw-player-walkers/subodhi/directions/subodhi-west-walk-action.gif", ASSETS / "generated" / "jttw-player-walkers" / "subodhi" / "directions" / "subodhi-west-walk-action.gif"),
+    ("assets/generated/jttw-player-walkers/subodhi/directions/subodhi-north-walk-action.gif", ASSETS / "generated" / "jttw-player-walkers" / "subodhi" / "directions" / "subodhi-north-walk-action.gif"),
+    ("assets/generated/jttw-player-walkers/chaosdemon/directions/chaosdemon-east-walk-action.gif", ASSETS / "generated" / "jttw-player-walkers" / "chaosdemon" / "directions" / "chaosdemon-east-walk-action.gif"),
+    ("assets/generated/jttw-player-walkers/chaosdemon/directions/chaosdemon-south-walk-action.gif", ASSETS / "generated" / "jttw-player-walkers" / "chaosdemon" / "directions" / "chaosdemon-south-walk-action.gif"),
+    ("assets/generated/jttw-player-walkers/chaosdemon/directions/chaosdemon-west-walk-action.gif", ASSETS / "generated" / "jttw-player-walkers" / "chaosdemon" / "directions" / "chaosdemon-west-walk-action.gif"),
+    ("assets/generated/jttw-player-walkers/chaosdemon/directions/chaosdemon-north-walk-action.gif", ASSETS / "generated" / "jttw-player-walkers" / "chaosdemon" / "directions" / "chaosdemon-north-walk-action.gif"),
+    ("assets/generated/jttw-player-walkers/dragonking/directions/dragonking-east-walk-action.gif", ASSETS / "generated" / "jttw-player-walkers" / "dragonking" / "directions" / "dragonking-east-walk-action.gif"),
+    ("assets/generated/jttw-player-walkers/dragonking/directions/dragonking-south-walk-action.gif", ASSETS / "generated" / "jttw-player-walkers" / "dragonking" / "directions" / "dragonking-south-walk-action.gif"),
+    ("assets/generated/jttw-player-walkers/dragonking/directions/dragonking-west-walk-action.gif", ASSETS / "generated" / "jttw-player-walkers" / "dragonking" / "directions" / "dragonking-west-walk-action.gif"),
+    ("assets/generated/jttw-player-walkers/dragonking/directions/dragonking-north-walk-action.gif", ASSETS / "generated" / "jttw-player-walkers" / "dragonking" / "directions" / "dragonking-north-walk-action.gif"),
     # Runtime-ready story sticker/keepsake PNGs only. Keep generation
     # prompts, API responses, split intermediates and WebP previews local.
     ("assets/generated/jttw-story-stickers-v1/transparent/stone.png", ASSETS / "generated" / "jttw-story-stickers-v1" / "transparent" / "stone.png"),

@@ -501,3 +501,38 @@ button { cursor: pointer; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; }
 }
+
+
+/* ===== 进度小人：播放器式细轨道，答题后从左走到右 ===== */
+.walker-lane {
+  position: relative;
+  width: min(680px, 94%);
+  height: 74px;
+  margin: 4px auto 0;
+}
+.walker-lane .walker-path {
+  position: absolute;
+  left: 5%;
+  right: 4%;
+  bottom: 8px;
+  height: 6px;
+  border-radius: 3px;
+  background: linear-gradient(90deg, #e8c25a var(--walker-fill, 4%), rgba(255, 255, 255, 0.16) var(--walker-fill, 4%));
+}
+.walker-lane .walker-sprite {
+  position: absolute;
+  bottom: 2px;
+  left: 4%;
+  width: 56px;
+  height: auto;
+  transform: translateX(-50%);
+  transition: left 0.7s steps(6, end);
+  filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.45));
+}
+.walker-lane .progress-pill {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-weight: 800;
+  color: #ffe9a8;
+}

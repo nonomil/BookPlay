@@ -1,0 +1,240 @@
+{
+  "schemaVersion": 1,
+  "assetId": "turtle-soldier",
+  "type": "character-directional-action",
+  "episode": "ep006",
+  "tool": "gpt-image-workflow + transparent-image-generator + Pillow",
+  "providerByDirection": {
+    "east": {
+      "provider": "cliprox",
+      "model": "gpt-image-2",
+      "sizeRequested": "1536x1024",
+      "actualSize": "1536x1024"
+    },
+    "south": {
+      "provider": "cliprox",
+      "model": "gpt-image-2",
+      "sizeRequested": "1536x1024",
+      "actualSize": "1536x1024"
+    },
+    "west": {
+      "provider": "cliprox",
+      "model": "gpt-image-2",
+      "sizeRequested": "1536x1024",
+      "actualSize": "1536x1024"
+    },
+    "north": {
+      "provider": "cliprox",
+      "model": "gpt-image-2",
+      "sizeRequested": "1536x1024",
+      "actualSize": "1536x1024"
+    }
+  },
+  "source": {
+    "promptFiles": [
+      "assets/generated/jttw-episode-assets/c01/ep006/characters/turtle-soldier/source/directional/turtle-soldier-east.txt",
+      "assets/generated/jttw-episode-assets/c01/ep006/characters/turtle-soldier/source/directional/turtle-soldier-south.txt",
+      "assets/generated/jttw-episode-assets/c01/ep006/characters/turtle-soldier/source/directional/turtle-soldier-west.txt",
+      "assets/generated/jttw-episode-assets/c01/ep006/characters/turtle-soldier/source/directional/turtle-soldier-north.txt"
+    ],
+    "rawSheets": {
+      "east": "assets/generated/jttw-episode-assets/c01/ep006/characters/turtle-soldier/2d/directions/east/turtle-soldier-east-walk-action-sheet.png",
+      "south": "assets/generated/jttw-episode-assets/c01/ep006/characters/turtle-soldier/2d/directions/south/turtle-soldier-south-walk-action-sheet.png",
+      "west": "assets/generated/jttw-episode-assets/c01/ep006/characters/turtle-soldier/2d/directions/west/turtle-soldier-west-walk-action-sheet.png",
+      "north": "assets/generated/jttw-episode-assets/c01/ep006/characters/turtle-soldier/2d/directions/north/turtle-soldier-north-walk-action-sheet.png"
+    }
+  },
+  "contract": {
+    "directions": [
+      "east",
+      "south",
+      "west",
+      "north"
+    ],
+    "rows": "east, south, west, north",
+    "framesPerDirection": 8,
+    "walkFrames": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "actionFrames": [
+      5,
+      6,
+      7,
+      8
+    ],
+    "cellSize": "384x512",
+    "atlasSize": "3072x2048",
+    "durationMs": 150,
+    "transparent": true
+  },
+  "outputs": {
+    "atlas": "assets/generated/jttw-episode-assets/c01/ep006/characters/turtle-soldier/transparent/turtle-soldier-walk-action-atlas.png",
+    "runtimeAtlas": "content/assets/generated/jttw-episode-assets/c01/ep006/characters/turtle-soldier/turtle-soldier-walk-action-atlas.png",
+    "transparentSheets": {
+      "east": "assets/generated/jttw-episode-assets/c01/ep006/characters/turtle-soldier/transparent/directions/east/turtle-soldier-east-transparent.png",
+      "south": "assets/generated/jttw-episode-assets/c01/ep006/characters/turtle-soldier/transparent/directions/south/turtle-soldier-south-transparent.png",
+      "west": "assets/generated/jttw-episode-assets/c01/ep006/characters/turtle-soldier/transparent/directions/west/turtle-soldier-west-transparent.png",
+      "north": "assets/generated/jttw-episode-assets/c01/ep006/characters/turtle-soldier/transparent/directions/north/turtle-soldier-north-transparent.png"
+    },
+    "directionGifs": {
+      "east": "assets/generated/jttw-episode-assets/c01/ep006/characters/turtle-soldier/transparent/directions/east/turtle-soldier-east-walk-action.gif",
+      "south": "assets/generated/jttw-episode-assets/c01/ep006/characters/turtle-soldier/transparent/directions/south/turtle-soldier-south-walk-action.gif",
+      "west": "assets/generated/jttw-episode-assets/c01/ep006/characters/turtle-soldier/transparent/directions/west/turtle-soldier-west-walk-action.gif",
+      "north": "assets/generated/jttw-episode-assets/c01/ep006/characters/turtle-soldier/transparent/directions/north/turtle-soldier-north-walk-action.gif"
+    },
+    "runtimeDirectionGifs": {
+      "east": "content/assets/generated/jttw-episode-assets/c01/ep006/characters/turtle-soldier/directions/turtle-soldier-east-walk-action.gif",
+      "south": "content/assets/generated/jttw-episode-assets/c01/ep006/characters/turtle-soldier/directions/turtle-soldier-south-walk-action.gif",
+      "west": "content/assets/generated/jttw-episode-assets/c01/ep006/characters/turtle-soldier/directions/turtle-soldier-west-walk-action.gif",
+      "north": "content/assets/generated/jttw-episode-assets/c01/ep006/characters/turtle-soldier/directions/turtle-soldier-north-walk-action.gif"
+    },
+    "alphaReports": {
+      "east": "assets/generated/jttw-episode-assets/c01/ep006/characters/turtle-soldier/transparent/directions/east/turtle-soldier-east-transparent.report.json",
+      "south": "assets/generated/jttw-episode-assets/c01/ep006/characters/turtle-soldier/transparent/directions/south/turtle-soldier-south-transparent.report.json",
+      "west": "assets/generated/jttw-episode-assets/c01/ep006/characters/turtle-soldier/transparent/directions/west/turtle-soldier-west-transparent.report.json",
+      "north": "assets/generated/jttw-episode-assets/c01/ep006/characters/turtle-soldier/transparent/directions/north/turtle-soldier-north-transparent.report.json"
+    }
+  },
+  "cleanup": {
+    "east": {
+      "columns": [
+        375,
+        376,
+        377,
+        378,
+        379,
+        380,
+        381,
+        382,
+        383,
+        384,
+        385,
+        386,
+        761,
+        762,
+        763,
+        764,
+        765,
+        766,
+        767,
+        768,
+        769,
+        770,
+        771,
+        772,
+        773,
+        1146,
+        1147,
+        1148,
+        1149,
+        1150,
+        1151,
+        1152,
+        1153,
+        1154,
+        1155,
+        1156,
+        1157
+      ],
+      "rows": [
+        506,
+        507,
+        508,
+        509,
+        510,
+        511,
+        512,
+        513,
+        514,
+        515,
+        516,
+        517
+      ]
+    },
+    "south": {
+      "columns": [],
+      "rows": []
+    },
+    "west": {
+      "columns": [],
+      "rows": []
+    },
+    "north": {
+      "columns": [
+        372,
+        373,
+        374,
+        375,
+        376,
+        377,
+        378,
+        379,
+        380,
+        381,
+        382,
+        383,
+        384,
+        385,
+        753,
+        754,
+        755,
+        756,
+        757,
+        758,
+        759,
+        760,
+        761,
+        762,
+        763,
+        764,
+        765,
+        1140,
+        1141,
+        1142,
+        1143,
+        1144,
+        1145,
+        1146,
+        1147,
+        1148,
+        1149,
+        1150,
+        1151,
+        1152,
+        1153
+      ],
+      "rows": [
+        507,
+        508,
+        509,
+        510,
+        511,
+        512,
+        513,
+        514,
+        515,
+        516,
+        517,
+        518,
+        519
+      ]
+    }
+  },
+  "acceptance": {
+    "dimensionsChecked": true,
+    "alphaChecked": true,
+    "directionsChecked": true,
+    "baselineAligned": true,
+    "separatorStripesRemoved": true
+  },
+  "sha256": {
+    "atlas": "051a69890855bcb932308a942addf94c24e2a9fab7959ddaf5e335c901e3881b"
+  },
+  "limitations": [
+    "Generated raster poses are reviewed for silhouette and baseline, but exact temporal consistency is not guaranteed by one model call.",
+    "Props remain embedded in the action cells; independent prop layers can be added later."
+  ]
+}

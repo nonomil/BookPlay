@@ -1,4 +1,4 @@
-import { access, copyFile, mkdir, readFile, readdir, rm } from "node:fs/promises";
+import { access, copyFile, mkdir, readFile, readdir, rm, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { spawn } from "node:child_process";
 import { fileURLToPath } from "node:url";
@@ -6,6 +6,7 @@ import { fileURLToPath } from "node:url";
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const androidDir = path.join(root, "android");
 const releaseDir = path.join(root, "release");
+const versionPropsPath = path.join(androidDir, "version.properties");
 
 function run(command, args, cwd) {
   return new Promise((resolve, reject) => {
@@ -17,6 +18,37 @@ function run(command, args, cwd) {
       else reject(new Error(`${command} exited with ${code ?? signal}`));
     });
   });
+}
+
+// 每次打包自动递增修订号与 versionCode；大版本/功能版本在
+// android/version.properties 里人工升级。versionCode 只增不减，
+// Android 覆盖安装时靠它判断新旧。
+async function bumpAndroidVersion() {
+  const props = { versionMajor: 1, versionMinor: 0, versionPatch: 0, versionCode: 5 };
+  try {
+    for (const line of (await readFile(versionPropsPath, "utf8")).split(/\r?\n/)) {
+      const match = line.match(/^\s*(version\w+)\s*=\s*(\d+)\s*$/);
+      if (match) props[match[1]] = Number(match[2]);
+    }
+  } catch (_) {
+    // 首次运行：使用默认基线并落盘。
+  }
+  props.versionPatch += 1;
+  props.versionCode += 1;
+  const versionName = `${props.versionMajor}.${props.versionMinor}.${props.versionPatch}`;
+  const content = [
+    "# APK 版本号，由 scripts/build-apks.mjs 在每次打包时维护：",
+    "#   versionMajor / versionMinor 人工升级（大版本 / 功能版本）",
+    "#   versionPatch 每次打包自动 +1（修订号）",
+    "#   versionCode  每次打包自动 +1；Android 判断新旧只看它，只增不减",
+    `versionMajor=${props.versionMajor}`,
+    `versionMinor=${props.versionMinor}`,
+    `versionPatch=${props.versionPatch}`,
+    `versionCode=${props.versionCode}`,
+    "",
+  ].join("\n");
+  await writeFile(versionPropsPath, content, "utf8");
+  return { versionName, versionCode: props.versionCode };
 }
 
 async function findApk(dir, matcher) {
@@ -35,6 +67,8 @@ async function findApk(dir, matcher) {
 
 export async function buildApks() {
   const jttwOnly = process.argv.includes("--jttw-only");
+  const version = await bumpAndroidVersion();
+  console.log(`[build-apks] APK 版本 ${version.versionName} (versionCode ${version.versionCode})`);
   await run(process.platform === "win32" ? "npm.cmd" : "npm", ["run", "android:sync"], root);
   const packageJson = JSON.parse(await readFile(path.join(root, "package.json"), "utf8"));
   const starterVersion = String(packageJson.version || "dev");

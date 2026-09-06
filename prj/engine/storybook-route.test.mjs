@@ -114,11 +114,14 @@ test("split reader keeps ~68/32 spread-to-learning ratio with contain", () => {
   assert.match(css, /body\.storybook-split #sb-page\s*\{[^}]*object-fit:\s*contain/s);
 });
 
-test("Mikey & JJ desktop split gives the learning column more width than the comic frame", () => {
+test("Mikey & JJ desktop split hands the comic the larger share in panel-split view", () => {
   const v3 = fs.readFileSync(new URL("./storybook-v3.css", import.meta.url), "utf8");
-  assert.match(v3, /@media \(min-width: 901px\)[\s\S]*body\.sb-ui-v3\.sb-mj \.sb-app\s*\{[^}]*grid-template-columns:\s*minmax\(260px,\s*0\.72fr\)\s+minmax\(460px,\s*1\.28fr\)/s);
+  assert.match(v3, /@media \(min-width: 901px\)[\s\S]*body\.sb-ui-v3\.sb-mj\.sb-split-view \.sb-app\s*\{[^}]*grid-template-columns:\s*minmax\(420px,\s*1fr\)\s+minmax\(380px,\s*1fr\)/s);
   const css = fs.readFileSync(new URL("./storybook.css", import.meta.url), "utf8");
-  assert.match(css, /body\.storybook-split\.sb-mj \.sb-app\s*\{[^}]*grid-template-columns:\s*minmax\(260px,\s*0\.72fr\)\s+minmax\(420px,\s*1\.28fr\)/s);
+  // Full-page (portrait) pages keep the learning-first ratio...
+  assert.match(css, /body\.storybook-split\.sb-mj \.sb-app\s*\{[^}]*grid-template-columns:\s*minmax\(420px,\s*1\.15fr\)\s+minmax\(380px,\s*0\.85fr\)/s);
+  // ...while split view (single landscape panel) widens the comic further.
+  assert.match(css, /body\.storybook-split\.sb-mj\.sb-split-view \.sb-app\s*\{[^}]*grid-template-columns:\s*minmax\(420px,\s*1fr\)\s+minmax\(380px,\s*1fr\)/s);
 });
 
 test("word cards render from real glossary data and stay quiet when empty", () => {
@@ -448,7 +451,7 @@ test("fullscreen quiz uses the exact bundled background asset only in Minecraft 
 
 test("stylesheet cache buster advances when quiz controls change", () => {
   const html = fs.readFileSync(new URL("./storybook.html", import.meta.url), "utf8");
-  assert.match(html, /storybook\.css\?v=mcquiz5/);
+  assert.match(html, /storybook\.css\?v=chapters1/);
   assert.doesNotMatch(html, /storybook\.css\?v=png1/);
 });
 
@@ -481,10 +484,16 @@ test("mikey-jj route resolves a book without colliding with other series", () =>
   assert.equal(resolveStorybookRequest("?ep=3").series, "jttw");
 });
 
-test("mikey-jj map collection skips unpublished book 4 explicitly", () => {
+test("mikey-jj map splits 10 published books into route maps, still skipping book 4", () => {
   const col = JSON.parse(fs.readFileSync(new URL("../data/storybooks-mikey-jj/collections.json", import.meta.url), "utf8"));
-  assert.equal(col.collections.length, 1);
-  assert.deepEqual(col.collections[0].books, [1, 2, 3, 5, 6, 7, 8, 9, 10, 11]);
+  assert.equal(col.collections.length, 3, "three route maps");
+  assert.deepEqual(col.collections.map((c) => c.books),
+    [[1, 2, 3], [5, 6, 7], [8, 9, 10, 11]]);
+  // Unpublished book 4 must stay excluded from every route map.
+  for (const c of col.collections) {
+    assert.equal(c.books.includes(4), false, `${c.id} must not contain book 4`);
+    assert.ok(c.background, `${c.id} needs its own map background`);
+  }
 });
 
 test("mikey-jj reader starts silent and does not auto-advance after a sentence ends", () => {
@@ -546,7 +555,7 @@ test("mikey-jj pages keep 2-4 key words with complete three-layer fields inside 
 
 test("mikey-jj fullscreen quiz has valid answers and clean distractors", () => {
   const data = JSON.parse(fs.readFileSync(MJ_DATA, "utf8"));
-  assert.ok(data.quiz && data.quiz.length === 5, "quiz must have 5 questions");
+  assert.ok(data.quiz && data.quiz.length >= 5, "quiz keeps the 5 authored questions plus generated types");
   data.quiz.forEach((q, qi) => {
     assert.ok(q.q && q.choices.length >= 3, `q${qi + 1} invalid`);
     assert.ok(Number.isInteger(q.answer) && q.answer >= 0 && q.answer < q.choices.length, `q${qi + 1} answer index`);
@@ -645,7 +654,7 @@ test("mikey-jj book2 pages keep 2-4 key words with complete three-layer fields i
 
 test("mikey-jj book2 fullscreen quiz has valid answers and clean distractors", () => {
   const data = JSON.parse(fs.readFileSync(MH_DATA, "utf8"));
-  assert.ok(data.quiz && data.quiz.length === 5, "quiz must have 5 questions");
+  assert.ok(data.quiz && data.quiz.length >= 5, "quiz keeps the 5 authored questions plus generated types");
   data.quiz.forEach((q, qi) => {
     assert.ok(q.q && q.choices.length >= 3, `q${qi + 1} invalid`);
     assert.ok(Number.isInteger(q.answer) && q.answer >= 0 && q.answer < q.choices.length, `q${qi + 1} answer index`);
@@ -862,13 +871,14 @@ test("REPAIR r6: every Water House bubble fits inside the 390px image width", ()
   const LIMIT = 368;   // image right edge + 2px tolerance
   const violations = [];
   let total = 0;
+  // The locator frame renders at the exact bubble box (no min-width clamp
+  // since the floating word strip was replaced by the red locator frame),
+  // so the mobile fit reduces to "the box ends inside the image".
   data.pages.forEach((p) => {
     p.sentences.forEach((s) => {
       total += 1;
       const b = s.bubble || {};
-      const raw = (b.w || 0) * IMG_W;
-      const width = Math.min(Math.max(Math.min(raw, IMG_W * 0.48), 136), 358);
-      const right = (b.x || 0) * IMG_W + width;
+      const right = ((b.x || 0) + (b.w || 0)) * IMG_W;
       if (right > LIMIT) violations.push(`${s.id} right=${right.toFixed(1)}`);
     });
   });
@@ -929,9 +939,7 @@ test("CONTINUE r7: every Zombie School bubble fits inside the 390px image width"
   const violations = [];
   data.pages.forEach((p) => p.sentences.forEach((s) => {
     const b = s.bubble || {};
-    const raw = (b.w || 0) * IMG_W;
-    const width = Math.min(Math.max(Math.min(raw, IMG_W * 0.48), 136), 358);
-    const right = (b.x || 0) * IMG_W + width;
+    const right = ((b.x || 0) + (b.w || 0)) * IMG_W;
     if (right > LIMIT) violations.push(`${s.id} right=${right.toFixed(1)}`);
   }));
   assert.deepEqual(violations, [], `390px zombie bubbles must fit: ${violations.join(", ")}`);

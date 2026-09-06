@@ -20,6 +20,8 @@ import zipfile
 from paths import CONTENT, REPO
 
 INCLUDE_DIRS = (
+    "assets/music",
+    "assets/sfx",
     "dialogue_stories",
     "achievements",
     "companions",
@@ -75,6 +77,8 @@ PUBLISHED_SERIES = {
     "minecraft": "storybooks-minecraft",
 }
 COMMON_DIRS = (
+    "assets/music",
+    "assets/sfx",
     "achievements",
     "companions",
     "rewards",
@@ -94,6 +98,15 @@ COMMON_FILES = (
     "assets/minecraft/escape-from-the-nether/cover.webp",
     "assets/mikey-jj/zombie-school-adventure/pages/p01.webp",
     "assets/collections/mc01.jpg",
+    # 路线图背景：collections.json 的 background 按“一书一图 / 分辑地图”引用
+    "assets/generated/map-backgrounds/mikey-map-1.webp",
+    "assets/generated/map-backgrounds/mikey-map-2.webp",
+    "assets/generated/map-backgrounds/mikey-map-3.webp",
+    "assets/generated/map-backgrounds/mc-map-1.webp",
+    "assets/generated/map-backgrounds/mc-map-2.webp",
+    "assets/generated/map-backgrounds/mc-map-3.webp",
+    "assets/generated/map-backgrounds/mc-map-4.webp",
+    "assets/generated/map-backgrounds/mc-map-5.webp",
     # EP1 sticker-book covers use two authored story pages so the chapter
     # scene remains visibly tied to the plot even in a selective data pack.
     "assets/lf_ep1/pages/p03.png",
@@ -133,6 +146,7 @@ COMMON_FILES = (
     "assets/generated/jttw-route-companion/transparent/wukong-walk-08.png",
     # Mikey & JJ route companion: generated transparent four-direction atlas.
     "assets/generated/mikey-jj-route-companion/transparent/mikey-walk-atlas.png",
+    "assets/generated/minecraft-route-companion/transparent/byte-walk-atlas.png",
     # Episode-stable player avatar walkers. The GIFs are fixed-canvas,
     # transparent 8-frame loops; source sheets and prompts stay out of packs.
     "assets/generated/jttw-player-walkers/wukong/wukong-walk.gif",
@@ -159,6 +173,29 @@ COMMON_FILES = (
     "assets/generated/jttw-player-walkers/powerdemon/powerdemon-walk.gif",
     "assets/generated/jttw-player-walkers/spiderdemon/spiderdemon-walk.gif",
     "assets/generated/jttw-player-walkers/centipededemon/centipededemon-walk.gif",
+    # c01 four-direction action atlases (8 columns x 4 rows; transparent
+    # runtime assets). Direction GIFs are kept for previews and mini-games.
+    "assets/generated/jttw-player-walkers/wukong/wukong-walk-action-atlas.png",
+    "assets/generated/jttw-player-walkers/subodhi/subodhi-walk-action-atlas.png",
+    "assets/generated/jttw-player-walkers/chaosdemon/chaosdemon-walk-action-atlas.png",
+    "assets/generated/jttw-player-walkers/chaosdemon/chaosdemon-walk.gif",
+    "assets/generated/jttw-player-walkers/dragonking/dragonking-walk-action-atlas.png",
+    "assets/generated/jttw-player-walkers/wukong/directions/wukong-east-walk-action.gif",
+    "assets/generated/jttw-player-walkers/wukong/directions/wukong-south-walk-action.gif",
+    "assets/generated/jttw-player-walkers/wukong/directions/wukong-west-walk-action.gif",
+    "assets/generated/jttw-player-walkers/wukong/directions/wukong-north-walk-action.gif",
+    "assets/generated/jttw-player-walkers/subodhi/directions/subodhi-east-walk-action.gif",
+    "assets/generated/jttw-player-walkers/subodhi/directions/subodhi-south-walk-action.gif",
+    "assets/generated/jttw-player-walkers/subodhi/directions/subodhi-west-walk-action.gif",
+    "assets/generated/jttw-player-walkers/subodhi/directions/subodhi-north-walk-action.gif",
+    "assets/generated/jttw-player-walkers/chaosdemon/directions/chaosdemon-east-walk-action.gif",
+    "assets/generated/jttw-player-walkers/chaosdemon/directions/chaosdemon-south-walk-action.gif",
+    "assets/generated/jttw-player-walkers/chaosdemon/directions/chaosdemon-west-walk-action.gif",
+    "assets/generated/jttw-player-walkers/chaosdemon/directions/chaosdemon-north-walk-action.gif",
+    "assets/generated/jttw-player-walkers/dragonking/directions/dragonking-east-walk-action.gif",
+    "assets/generated/jttw-player-walkers/dragonking/directions/dragonking-south-walk-action.gif",
+    "assets/generated/jttw-player-walkers/dragonking/directions/dragonking-west-walk-action.gif",
+    "assets/generated/jttw-player-walkers/dragonking/directions/dragonking-north-walk-action.gif",
     # v1 story sticker/keepsake art: publish only validated PNGs; prompts,
     # API responses, split intermediates and WebP previews stay out of packs.
     "assets/generated/jttw-story-stickers-v1/transparent/stone.png",

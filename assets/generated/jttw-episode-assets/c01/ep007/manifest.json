@@ -1,0 +1,171 @@
+{
+  "schemaVersion": 1,
+  "bundleManifest": "../manifest.json",
+  "episode": 7,
+  "folder": "ep007",
+  "title": {
+    "zh": "幽冥地府",
+    "en": "The Land of Darkness"
+  },
+  "arc": {
+    "zh": "金箍棒初现·大闹幽冥",
+    "en": "Wukong claims the iron bar and crosses his name out of the Directory"
+  },
+  "source": {
+    "dialogue": "prj/data/dialogue_stories/ep7.json",
+    "catalog": "prj/data/storybooks/catalog.json",
+    "nodes": "1-77"
+  },
+  "cast": {
+    "main": [
+      {
+        "id": "wukong",
+        "zh": "孙悟空",
+        "en": "Sun Wukong",
+        "evidence": "n001-77",
+        "asset": "shared:characterIndex.wukong"
+      }
+    ],
+    "support": [
+      {
+        "id": "dragonking",
+        "zh": "东海龙王",
+        "en": "East Sea Dragon King",
+        "evidence": "n009-17",
+        "asset": "shared:characterIndex.dragonking"
+      },
+      {
+        "id": "dragon-queen",
+        "zh": "龙王后",
+        "en": "Dragon Queen",
+        "evidence": "n009-16",
+        "asset": "reuse:../ep006/characters/dragon-queen/manifest.json",
+        "assetStatus": "ready-four-direction-action"
+      },
+      {
+        "id": "underworld-spirit",
+        "zh": "幽冥小鬼",
+        "en": "Underworld spirit",
+        "evidence": "n023-40",
+        "asset": "characters/underworld-spirit/manifest.json",
+        "assetStatus": "ready-four-direction-action"
+      },
+      {
+        "id": "judge-of-dead",
+        "zh": "阎王/死者审判官",
+        "en": "Judge of the Dead",
+        "evidence": "n041-68",
+        "asset": "characters/judge-of-dead/manifest.json",
+        "assetStatus": "ready-four-direction-action"
+      },
+      {
+        "id": "generic-monkey",
+        "zh": "猴群/猿群",
+        "en": "Monkey and ape troop",
+        "evidence": "n018-22,n74-77",
+        "asset": "placeholder:generate"
+      }
+    ]
+  },
+  "featuredCharacter": {
+    "id": "judge-of-dead",
+    "zh": "阎王/死者审判官",
+    "en": "Judge of the Dead",
+    "reason": "幽冥审判与名册对话是本集高潮",
+    "mapBinding": "episode-card-and-dialogue-avatar",
+    "asset": "placeholder:generate",
+    "assetStatus": "planned",
+    "runtimeFallback": {
+      "id": "wukong",
+      "reason": "审判官四向图集尚未生成，运行时明确回退到本集已有悟空资产"
+    },
+    "directionalContract": {
+      "required": true,
+      "directions": [
+        "east",
+        "south",
+        "west",
+        "north"
+      ],
+      "framesPerDirection": 8,
+      "walkFrames": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "actionFrames": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "cellSize": "384x512"
+    }
+  },
+  "scenes": [
+    "flower-fruit-feast",
+    "land-of-darkness",
+    "palace-of-darkness"
+  ],
+  "dialogueMoments": [
+    "iron bar claim and Dragon King's complaint",
+    "feast, capture, and escape",
+    "Judge of the Dead confrontation",
+    "Directory and name-crossing climax"
+  ],
+  "gameplay": {
+    "map": "flower-fruit-mountain-to-underworld",
+    "dialogue": true,
+    "battle": true,
+    "miniGame": "dodge spirits, grow/shrink iron bar, escort monkey-name tokens",
+    "enemies": [
+      "underworld-spirit"
+    ],
+    "defeatFx": "comic ghost poof",
+    "reward": "names-freed-badge"
+  },
+  "currentAssets": {
+    "wukong": "content/assets/generated/jttw-player-walkers/wukong/directions/{east,south,west,north}/wukong-{direction}-walk-action.gif",
+    "dragonking": "content/assets/generated/jttw-player-walkers/dragonking/dragonking-walk.gif",
+    "storyFrames": "content/assets/adv_frames/ep7/f0.jpg .. f3.jpg",
+    "cover": "content/assets/covers/ep007.jpg"
+  },
+  "assetFolders": {
+    "characters": "characters/",
+    "scenes": "scenes/",
+    "props": "props/",
+    "prompts": "prompts/"
+  },
+  "newSheetTargets": [
+    "wukong",
+    "dragonking",
+    "dragon-queen",
+    "underworld-spirit",
+    "judge-of-dead",
+    "generic-monkey"
+  ],
+  "requiredProps": [
+    "iron-bar-small",
+    "iron-bar-large",
+    "spirit-hand",
+    "underworld-gate",
+    "palace-door",
+    "directory-book",
+    "brush",
+    "ink-jar",
+    "name-token",
+    "ghost-poof"
+  ],
+  "gaps": [
+    "dragonking legacy 4x2 only",
+    "dragon-queen/underworld-spirit/judge-of-dead/generic-monkey: no verified art",
+    "iron bar and Directory need independent layerable sprites",
+    "underworld palette must remain child-safe"
+  ],
+  "generatedCharacterAssets": {
+    "dragon-queen": "reuse:../ep006/characters/dragon-queen/manifest.json",
+    "underworld-spirit": "characters/underworld-spirit/manifest.json",
+    "judge-of-dead": "characters/judge-of-dead/manifest.json"
+  }
+}

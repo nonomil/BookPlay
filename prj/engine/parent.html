@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>豆豆龙英语 · 亲子时间</title>
+  <link rel="stylesheet" href="style.css?v=png1">
+  <link rel="stylesheet" href="parent.css?v=8">
+  <link rel="stylesheet" href="tv.css?v=6">
+</head>
+<body>
+  <div id="parent-app" class="parent-app">
+    <header id="parent-top">
+      <a id="parent-back" class="parent-btn" href="shelf.html">返回</a>
+      <span id="parent-title" class="parent-title">亲子时间</span>
+      <span class="spacer"></span>
+      <div class="parent-stars" title="今天夸出来的星星">⭐ <b id="parent-star-count">0</b></div>
+    </header>
+
+    <div id="parent-tips" class="parent-tips" role="note">
+      <b>给家长的三句话：</b>
+      ① 照着卡片上的中文问就行；
+      ② 孩子指图也算回应；
+      ③ 答不上来很正常——把练习当互动，不是当考试。
+    </div>
+
+    <main id="parent-main">
+      <section id="parent-card-box" class="parent-card-box" aria-label="互动卡">
+        <p id="parent-question" class="parent-question" role="status" aria-live="polite"></p>
+        <p id="parent-prompt" class="parent-prompt" lang="en" hidden></p>
+        <div id="parent-slots" class="parent-slots" hidden></div>
+        <div id="parent-choices" class="parent-choices"></div>
+        <button id="parent-illustration" type="button" class="parent-illustration" aria-label="点一点这张图">
+          <img id="parent-img" alt="场景插图" hidden>
+          <span id="parent-img-empty" class="parent-img-empty" hidden>这幅没有插图，直接问答吧</span>
+        </button>
+        <div id="parent-word" class="parent-word" hidden></div>
+        <div id="parent-answer" class="parent-answer" hidden>
+          <p id="parent-answer-en" class="parent-answer-en" lang="en"></p>
+          <p id="parent-answer-zh" class="parent-answer-zh"></p>
+        </div>
+        <div class="parent-controls">
+          <button id="parent-hear" type="button" hidden>🔊 再听一遍</button>
+        </div>
+        <div class="parent-actions">
+          <button id="parent-star" type="button" class="parent-star-btn">⭐ 我说出来啦</button>
+        </div>
+        <div id="parent-status" class="parent-status" role="status" aria-live="polite"></div>
+      </section>
+
+      <nav id="parent-nav" aria-label="卡片翻页">
+        <button id="parent-prev" type="button">上一张</button>
+        <div id="parent-walker" class="walker-lane" aria-label="进度小人"></div>
+        <button id="parent-next" type="button">下一张</button>
+      </nav>
+    </main>
+  </div>
+
+  <audio id="parent-audio" preload="auto"></audio>
+
+  <script src="tv-remote.js?v=1"></script>
+  <script src="walker-cast.js?v=1"></script>
+  <script src="walker-progress.js?v=1"></script>
+  <script src="parent-core.js?v=7"></script>
+  <script src="parent.js?v=7"></script>
+</body>
+</html>

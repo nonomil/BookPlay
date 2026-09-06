@@ -1,0 +1,1027 @@
+{
+  "schemaVersion": 1,
+  "bundleId": "jttw-episode-assets-c01",
+  "chapter": {
+    "id": "c01",
+    "title": {
+      "zh": "石猴出世·花果山到幽冥",
+      "en": "The Stone Monkey: From Flower-Fruit Mountain to the Underworld"
+    },
+    "episodes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
+  },
+  "purpose": "Episode-scoped game-asset manifest for the map, story dialogue, and safe battle mini-game. This is a planning/index file; generated art is referenced, not duplicated here.",
+  "sourceData": {
+    "dialogue": "prj/data/dialogue_stories/ep{n}.json",
+    "catalog": "prj/data/storybooks/catalog.json",
+    "characterBible": "assets/generated/jttw-player-walkers/source/character-bible.md"
+  },
+  "assetContract": {
+    "sheetType": "directional-action-storyboard",
+    "rows": 4,
+    "columns": 8,
+    "rowOrder": [
+      "east",
+      "south",
+      "west",
+      "north"
+    ],
+    "walkColumns": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "actionColumns": [
+      5,
+      6,
+      7,
+      8
+    ],
+    "walkPoseOrder": [
+      "contact",
+      "left-foot-forward",
+      "passing",
+      "right-foot-forward"
+    ],
+    "actionPoseOrder": [
+      "anticipation",
+      "action-open",
+      "action-peak",
+      "settle"
+    ],
+    "cell": {
+      "recommendedWidth": 256,
+      "recommendedHeight": 384,
+      "note": "Keep the same camera, scale, foot baseline, palette, and silhouette in all 32 cells. A 384x512 cell export is also accepted when the target device needs a larger runtime frame."
+    },
+    "masterSheet": "8 columns x 4 rows; transparent-ready PNG after chroma-key cleanup",
+    "runtime": {
+      "directions": [
+        "east",
+        "south",
+        "west",
+        "north"
+      ],
+      "frameRate": "8 fps walk/action preview; gameplay may slow to 5-6 fps",
+      "alpha": "true alpha, no green pixels, no checkerboard, no cast shadow",
+      "baseline": "shared absolute baseline in every cell",
+      "crop": "never crop hands, feet, props, horns, ears, tails, or weapon"
+    },
+    "generationNotes": [
+      "The first four cells of every row are an in-place walk cycle.",
+      "The last four cells are a readable, child-safe story action using the episode prop or weapon.",
+      "Use a harmless training pose for combat props; no blood, injury, frightening face, or impact debris.",
+      "Rows are true direction views: east/west side views, south face, north back; do not use three-quarter views."
+    ]
+  },
+  "sharedAssetPolicy": {
+    "materialization": "episode folders own the manifest and prompt plan; identical source art may be reused by reference until an episode-specific variant is generated",
+    "sourceRoot": "assets/generated/jttw-player-walkers",
+    "runtimeRoot": "content/assets/generated/jttw-player-walkers",
+    "legacyDefinition": "The existing 4x2 walk sheet/GIF has 8 frames but is not the requested 4-row x 8-column directional-action sheet.",
+    "statusValues": [
+      "ready-four-direction-action",
+      "legacy-eight-frame-only",
+      "partial-directional",
+      "missing"
+    ]
+  },
+  "characterIndex": {
+    "wukong": {
+      "zh": "孙悟空",
+      "en": "Sun Wukong",
+      "bible": "assets/generated/jttw-player-walkers/source/character-bible.md (stone-born monkey; iron bar after ep06)",
+      "sharedExisting": {
+        "status": "ready-four-direction-action",
+        "sourceSheets": {
+          "east": "assets/generated/jttw-player-walkers/wukong/2d/directions/east/wukong-east-walk-action-sheet.png",
+          "south": "assets/generated/jttw-player-walkers/wukong/2d/directions/south/wukong-south-walk-action-sheet.png",
+          "west": "assets/generated/jttw-player-walkers/wukong/2d/directions/west/wukong-west-walk-action-sheet.png",
+          "north": "assets/generated/jttw-player-walkers/wukong/2d/directions/north/wukong-north-walk-action-sheet.png"
+        },
+        "runtimeGifs": {
+          "east": "content/assets/generated/jttw-player-walkers/wukong/directions/wukong-east-walk-action.gif",
+          "south": "content/assets/generated/jttw-player-walkers/wukong/directions/wukong-south-walk-action.gif",
+          "west": "content/assets/generated/jttw-player-walkers/wukong/directions/wukong-west-walk-action.gif",
+          "north": "content/assets/generated/jttw-player-walkers/wukong/directions/wukong-north-walk-action.gif"
+        }
+      }
+    },
+    "jadeemperor": {
+      "zh": "玉皇大帝",
+      "en": "Jade Emperor",
+      "sharedExisting": {
+        "status": "legacy-eight-frame-only",
+        "sourceSheet": "assets/generated/jttw-player-walkers/jadeemperor/2d/jadeemperor-walk-sheet.png",
+        "runtimeGif": "content/assets/generated/jttw-player-walkers/jadeemperor/jadeemperor-walk.gif"
+      }
+    },
+    "subodhi": {
+      "zh": "菩提祖师",
+      "en": "Patriarch Subhuti",
+      "sharedExisting": {
+        "status": "ready-four-direction-action",
+        "sourceSheets": {
+          "east": "assets/generated/jttw-player-walkers/subodhi/2d/directions/east/subodhi-east-walk-action-sheet.png",
+          "south": "assets/generated/jttw-player-walkers/subodhi/2d/directions/south/subodhi-south-walk-action-sheet.png",
+          "west": "assets/generated/jttw-player-walkers/subodhi/2d/directions/west/subodhi-west-walk-action-sheet.png",
+          "north": "assets/generated/jttw-player-walkers/subodhi/2d/directions/north/subodhi-north-walk-action-sheet.png"
+        },
+        "runtimeGifs": {
+          "east": "content/assets/generated/jttw-player-walkers/subodhi/directions/subodhi-east-walk-action.gif",
+          "south": "content/assets/generated/jttw-player-walkers/subodhi/directions/subodhi-south-walk-action.gif",
+          "west": "content/assets/generated/jttw-player-walkers/subodhi/directions/subodhi-west-walk-action.gif",
+          "north": "content/assets/generated/jttw-player-walkers/subodhi/directions/subodhi-north-walk-action.gif"
+        }
+      }
+    },
+    "chaosdemon": {
+      "zh": "混世魔王",
+      "en": "Demon of Chaos",
+      "sharedExisting": {
+        "status": "ready-four-direction-action",
+        "promptSeeds": {
+          "east": "assets/generated/jttw-player-walkers/chaosdemon/source/directional/chaosdemon-east.txt",
+          "south": "assets/generated/jttw-player-walkers/chaosdemon/source/directional/chaosdemon-south.txt",
+          "west": "assets/generated/jttw-player-walkers/chaosdemon/source/directional/chaosdemon-west.txt",
+          "north": "assets/generated/jttw-player-walkers/chaosdemon/source/directional/chaosdemon-north.txt"
+        },
+        "runtimeAtlas": "content/assets/generated/jttw-player-walkers/chaosdemon/chaosdemon-walk-action-atlas.png",
+        "runtimeGifs": {
+          "east": "content/assets/generated/jttw-player-walkers/chaosdemon/directions/chaosdemon-east-walk-action.gif",
+          "south": "content/assets/generated/jttw-player-walkers/chaosdemon/directions/chaosdemon-south-walk-action.gif",
+          "west": "content/assets/generated/jttw-player-walkers/chaosdemon/directions/chaosdemon-west-walk-action.gif",
+          "north": "content/assets/generated/jttw-player-walkers/chaosdemon/directions/chaosdemon-north-walk-action.gif"
+        }
+      }
+    },
+    "dragonking": {
+      "zh": "东海龙王",
+      "en": "East Sea Dragon King",
+      "sharedExisting": {
+        "status": "ready-four-direction-action",
+        "sourceSheet": "assets/generated/jttw-player-walkers/dragonking/2d/dragonking-walk-sheet.png",
+        "runtimeGif": "content/assets/generated/jttw-player-walkers/dragonking/dragonking-walk.gif",
+        "runtimeAtlas": "content/assets/generated/jttw-player-walkers/dragonking/dragonking-walk-action-atlas.png",
+        "directionPromptSeeds": "assets/generated/jttw-player-walkers/dragonking/source/directional/"
+      }
+    },
+    "generic-monkey": {
+      "zh": "猴群/猿群",
+      "en": "Monkey and ape troop",
+      "sharedExisting": {
+        "status": "missing",
+        "note": "Use a small reusable crowd/child-safe troop sheet, not copies of Wukong."
+      }
+    },
+    "gibbon": {
+      "zh": "长臂猿",
+      "en": "Gibbon elder",
+      "sharedExisting": {
+        "status": "missing"
+      }
+    },
+    "heaven-captain": {
+      "zh": "天庭将领",
+      "en": "Heaven captain",
+      "sharedExisting": {
+        "status": "missing"
+      }
+    },
+    "woodcutter": {
+      "zh": "樵夫",
+      "en": "Woodcutter",
+      "sharedExisting": {
+        "status": "missing"
+      }
+    },
+    "temple-student": {
+      "zh": "菩提门下弟子",
+      "en": "Temple student",
+      "sharedExisting": {
+        "status": "missing"
+      }
+    },
+    "dragon-queen": {
+      "zh": "龙王后",
+      "en": "Dragon Queen",
+      "sharedExisting": {
+        "status": "ready-four-direction-action",
+        "runtimeAtlas": "content/assets/generated/jttw-episode-assets/c01/ep006/characters/dragon-queen/dragon-queen-walk-action-atlas.png",
+        "runtimeGifs": {
+          "east": "content/assets/generated/jttw-episode-assets/c01/ep006/characters/dragon-queen/directions/dragon-queen-east-walk-action.gif",
+          "south": "content/assets/generated/jttw-episode-assets/c01/ep006/characters/dragon-queen/directions/dragon-queen-south-walk-action.gif",
+          "west": "content/assets/generated/jttw-episode-assets/c01/ep006/characters/dragon-queen/directions/dragon-queen-west-walk-action.gif",
+          "north": "content/assets/generated/jttw-episode-assets/c01/ep006/characters/dragon-queen/directions/dragon-queen-north-walk-action.gif"
+        }
+      },
+      "episodeAssets": {
+        "ep006": "assets/generated/jttw-episode-assets/c01/ep006/characters/dragon-queen/manifest.json"
+      }
+    },
+    "turtle-soldier": {
+      "zh": "龟将军",
+      "en": "Turtle soldier",
+      "sharedExisting": {
+        "status": "ready-four-direction-action",
+        "runtimeAtlas": "content/assets/generated/jttw-episode-assets/c01/ep006/characters/turtle-soldier/turtle-soldier-walk-action-atlas.png",
+        "runtimeGifs": {
+          "east": "content/assets/generated/jttw-episode-assets/c01/ep006/characters/turtle-soldier/directions/turtle-soldier-east-walk-action.gif",
+          "south": "content/assets/generated/jttw-episode-assets/c01/ep006/characters/turtle-soldier/directions/turtle-soldier-south-walk-action.gif",
+          "west": "content/assets/generated/jttw-episode-assets/c01/ep006/characters/turtle-soldier/directions/turtle-soldier-west-walk-action.gif",
+          "north": "content/assets/generated/jttw-episode-assets/c01/ep006/characters/turtle-soldier/directions/turtle-soldier-north-walk-action.gif"
+        }
+      },
+      "episodeAssets": {
+        "ep006": "assets/generated/jttw-episode-assets/c01/ep006/characters/turtle-soldier/manifest.json"
+      }
+    },
+    "octopus-helper": {
+      "zh": "章鱼侍从",
+      "en": "Octopus palace helper",
+      "sharedExisting": {
+        "status": "ready-four-direction-action",
+        "runtimeAtlas": "content/assets/generated/jttw-episode-assets/c01/ep006/characters/octopus-helper/octopus-helper-walk-action-atlas.png",
+        "runtimeGifs": {
+          "east": "content/assets/generated/jttw-episode-assets/c01/ep006/characters/octopus-helper/directions/octopus-helper-east-walk-action.gif",
+          "south": "content/assets/generated/jttw-episode-assets/c01/ep006/characters/octopus-helper/directions/octopus-helper-south-walk-action.gif",
+          "west": "content/assets/generated/jttw-episode-assets/c01/ep006/characters/octopus-helper/directions/octopus-helper-west-walk-action.gif",
+          "north": "content/assets/generated/jttw-episode-assets/c01/ep006/characters/octopus-helper/directions/octopus-helper-north-walk-action.gif"
+        }
+      },
+      "episodeAssets": {
+        "ep006": "assets/generated/jttw-episode-assets/c01/ep006/characters/octopus-helper/manifest.json"
+      }
+    },
+    "underworld-spirit": {
+      "zh": "幽冥小鬼",
+      "en": "Underworld spirit",
+      "sharedExisting": {
+        "status": "ready-four-direction-action",
+        "runtimeAtlas": "content/assets/generated/jttw-episode-assets/c01/ep007/characters/underworld-spirit/underworld-spirit-walk-action-atlas.png",
+        "runtimeGifs": {
+          "east": "content/assets/generated/jttw-episode-assets/c01/ep007/characters/underworld-spirit/directions/underworld-spirit-east-walk-action.gif",
+          "south": "content/assets/generated/jttw-episode-assets/c01/ep007/characters/underworld-spirit/directions/underworld-spirit-south-walk-action.gif",
+          "west": "content/assets/generated/jttw-episode-assets/c01/ep007/characters/underworld-spirit/directions/underworld-spirit-west-walk-action.gif",
+          "north": "content/assets/generated/jttw-episode-assets/c01/ep007/characters/underworld-spirit/directions/underworld-spirit-north-walk-action.gif"
+        }
+      },
+      "episodeAssets": {
+        "ep007": "assets/generated/jttw-episode-assets/c01/ep007/characters/underworld-spirit/manifest.json"
+      }
+    },
+    "judge-of-dead": {
+      "zh": "阎王/死者审判官",
+      "en": "Judge of the Dead",
+      "sharedExisting": {
+        "status": "ready-four-direction-action",
+        "runtimeAtlas": "content/assets/generated/jttw-episode-assets/c01/ep007/characters/judge-of-dead/judge-of-dead-walk-action-atlas.png",
+        "runtimeGifs": {
+          "east": "content/assets/generated/jttw-episode-assets/c01/ep007/characters/judge-of-dead/directions/judge-of-dead-east-walk-action.gif",
+          "south": "content/assets/generated/jttw-episode-assets/c01/ep007/characters/judge-of-dead/directions/judge-of-dead-south-walk-action.gif",
+          "west": "content/assets/generated/jttw-episode-assets/c01/ep007/characters/judge-of-dead/directions/judge-of-dead-west-walk-action.gif",
+          "north": "content/assets/generated/jttw-episode-assets/c01/ep007/characters/judge-of-dead/directions/judge-of-dead-north-walk-action.gif"
+        }
+      },
+      "episodeAssets": {
+        "ep007": "assets/generated/jttw-episode-assets/c01/ep007/characters/judge-of-dead/manifest.json"
+      }
+    },
+    "demon-guard": {
+      "zh": "demon-guard",
+      "en": "demon-guard",
+      "episodeAssets": {
+        "ep005": "assets/generated/jttw-episode-assets/c01/ep005/characters/demon-guard/manifest.json"
+      },
+      "sharedExisting": {
+        "status": "ready-four-direction-action",
+        "runtimeAtlas": "content/assets/generated/jttw-episode-assets/c01/ep005/characters/demon-guard/demon-guard-walk-action-atlas.png",
+        "runtimeGifs": {
+          "east": "content/assets/generated/jttw-episode-assets/c01/ep005/characters/demon-guard/directions/demon-guard-east-walk-action.gif",
+          "south": "content/assets/generated/jttw-episode-assets/c01/ep005/characters/demon-guard/directions/demon-guard-south-walk-action.gif",
+          "west": "content/assets/generated/jttw-episode-assets/c01/ep005/characters/demon-guard/directions/demon-guard-west-walk-action.gif",
+          "north": "content/assets/generated/jttw-episode-assets/c01/ep005/characters/demon-guard/directions/demon-guard-north-walk-action.gif"
+        }
+      }
+    }
+  },
+  "episodes": [
+    {
+      "episode": 1,
+      "folder": "ep001",
+      "title": {
+        "zh": "石猴",
+        "en": "The Monkey"
+      },
+      "storyArc": {
+        "zh": "石猴出世·瀑布立誓",
+        "en": "The stone monkey is born and leaps toward the waterfall"
+      },
+      "evidence": {
+        "dialogueNodes": "1-71",
+        "keyBeats": [
+          "rock splits and Wukong is born",
+          "Heaven notices the light",
+          "monkeys follow the stream",
+          "Wukong volunteers to leap through the waterfall"
+        ]
+      },
+      "mainCharacter": "wukong",
+      "featuredCharacter": {
+        "id": "wukong",
+        "reason": "石猴出世与瀑布挑战由悟空主导",
+        "mapBinding": "episode-card-and-dialogue-avatar"
+      },
+      "supportingCharacters": [
+        "jadeemperor",
+        "heaven-captain",
+        "gibbon",
+        "generic-monkey"
+      ],
+      "scenes": [
+        {
+          "id": "fruit-flower-mountain",
+          "zh": "花果山",
+          "en": "Fruit and Flower Mountain",
+          "use": "map backdrop; rock, stream, trees, mountain trail"
+        },
+        {
+          "id": "cloud-palace",
+          "zh": "云宫/天庭",
+          "en": "Cloud Palace",
+          "use": "dialogue backdrop for the Jade Emperor"
+        },
+        {
+          "id": "waterfall",
+          "zh": "瀑布",
+          "en": "Waterfall",
+          "use": "chapter gate and safe challenge entrance"
+        }
+      ],
+      "dialogueMoments": [
+        "n008-23 Jade Emperor and captain investigate the light",
+        "n41-47 gibbon asks where the stream begins",
+        "n59-71 gibbon names a king and Wukong accepts the leap"
+      ],
+      "battle": {
+        "enabled": false,
+        "encounter": "waterfall-jump",
+        "interaction": "timed jump / collect courage stars",
+        "enemies": []
+      },
+      "assetPlan": {
+        "actionProp": "safe waterfall leap / open-hand hero pose",
+        "smallAssets": [
+          "rock-egg",
+          "stream-sparkles",
+          "cloud-palace-scroll",
+          "courage-star"
+        ],
+        "newCharacterAssets": [
+          "heaven-captain",
+          "gibbon",
+          "generic-monkey"
+        ]
+      },
+      "currentAssets": {
+        "wukong": "characterIndex.wukong.sharedExisting",
+        "jadeemperor": "characterIndex.jadeemperor.sharedExisting",
+        "storyFrames": "content/assets/adv_frames/ep1/f0.jpg .. f3.jpg",
+        "cover": "content/assets/covers/ep001.jpg"
+      },
+      "gaps": [
+        "Jade Emperor needs 4-direction x 8 action sheet",
+        "heaven captain/gibbon/monkey troop need transparent 4-row sheets",
+        "scene props need transparent game-ready variants"
+      ]
+    },
+    {
+      "episode": 2,
+      "folder": "ep002",
+      "title": {
+        "zh": "水帘洞",
+        "en": "The Waterfall Cave"
+      },
+      "storyArc": {
+        "zh": "水帘洞称王·寻找长生之道",
+        "en": "The waterfall cave becomes a home, then Wukong sails out to seek immortality"
+      },
+      "evidence": {
+        "dialogueNodes": "1-73",
+        "keyBeats": [
+          "Wukong discovers the cave",
+          "monkeys cross the waterfall",
+          "the troop crowns the Monkey King",
+          "Wukong builds a raft and leaves"
+        ]
+      },
+      "mainCharacter": "wukong",
+      "featuredCharacter": {
+        "id": "wukong",
+        "reason": "悟空发现水帘洞并带领猴群出发",
+        "mapBinding": "episode-card-and-dialogue-avatar"
+      },
+      "supportingCharacters": [
+        "gibbon",
+        "generic-monkey"
+      ],
+      "scenes": [
+        {
+          "id": "waterfall-cave",
+          "zh": "水帘洞",
+          "en": "Waterfall Cave",
+          "use": "home base; beds, bowls, fireplace, throne"
+        },
+        {
+          "id": "cave-feast",
+          "zh": "洞中宴会",
+          "en": "Cave feast",
+          "use": "celebration and reward screen"
+        },
+        {
+          "id": "raft-stream",
+          "zh": "溪流木筏",
+          "en": "Raft on the stream",
+          "use": "departure mini-game"
+        }
+      ],
+      "dialogueMoments": [
+        "n13-23 Wukong returns and leads the troop through the waterfall",
+        "n32-41 Wukong is crowned",
+        "n50-68 Wukong and the gibbon discuss living forever",
+        "n69-73 raft departure"
+      ],
+      "battle": {
+        "enabled": false,
+        "encounter": "cave-settlement",
+        "interaction": "place bowls/beds and steer the raft",
+        "enemies": []
+      },
+      "assetPlan": {
+        "actionProp": "cave key / raft paddle / wave",
+        "smallAssets": [
+          "bamboo",
+          "moss",
+          "flower-cluster",
+          "bowl",
+          "bed",
+          "throne",
+          "feast-fruit",
+          "raft",
+          "immortality-star"
+        ],
+        "newCharacterAssets": [
+          "gibbon",
+          "generic-monkey"
+        ]
+      },
+      "currentAssets": {
+        "wukong": "characterIndex.wukong.sharedExisting",
+        "storyFrames": "content/assets/adv_frames/ep2/f0.jpg .. f3.jpg",
+        "cover": "content/assets/covers/ep002.jpg"
+      },
+      "gaps": [
+        "Gibbon and monkey troop need 4-direction x 8 sheets",
+        "cave/raft props need transparent, layered assets",
+        "Wukong variant should include paddle/raft action without changing identity"
+      ]
+    },
+    {
+      "episode": 3,
+      "folder": "ep003",
+      "title": {
+        "zh": "菩提祖师",
+        "en": "Subodhi"
+      },
+      "storyArc": {
+        "zh": "寻访菩提·拜师学艺",
+        "en": "Wukong finds Patriarch Subhuti and becomes his student"
+      },
+      "evidence": {
+        "dialogueNodes": "1-74",
+        "keyBeats": [
+          "Wukong reaches a new land",
+          "woodcutter directs him to Subhuti",
+          "Subhuti names him Sun Wukong",
+          "the secret message is delivered through three knocks"
+        ]
+      },
+      "mainCharacter": "wukong",
+      "featuredCharacter": {
+        "id": "subodhi",
+        "reason": "本集核心转折是菩提祖师收徒与三次敲头传信",
+        "mapBinding": "episode-card-and-dialogue-avatar"
+      },
+      "supportingCharacters": [
+        "subodhi",
+        "woodcutter",
+        "temple-student"
+      ],
+      "scenes": [
+        {
+          "id": "mountain-trail",
+          "zh": "山林小径",
+          "en": "Mountain trail",
+          "use": "exploration and woodcutter dialogue"
+        },
+        {
+          "id": "subodhi-temple",
+          "zh": "菩提道场",
+          "en": "Subhuti's mountain temple",
+          "use": "lesson, naming, and secret-message scenes"
+        }
+      ],
+      "dialogueMoments": [
+        "n07-21 Wukong meets the woodcutter",
+        "n23-46 Subodhi admits and names Wukong",
+        "n47-74 seven-year study and three knocks"
+      ],
+      "battle": {
+        "enabled": false,
+        "encounter": "temple-practice",
+        "interaction": "meditation rhythm / chore matching",
+        "enemies": []
+      },
+      "assetPlan": {
+        "actionProp": "bamboo scroll, chopping ax held safely down, meditation gesture",
+        "smallAssets": [
+          "woodcutter-ax",
+          "temple-gate",
+          "bamboo-scroll",
+          "lesson-mat",
+          "knock-symbol"
+        ],
+        "newCharacterAssets": [
+          "woodcutter",
+          "temple-student"
+        ]
+      },
+      "currentAssets": {
+        "wukong": "characterIndex.wukong.sharedExisting",
+        "subodhi": "characterIndex.subodhi.sharedExisting",
+        "storyFrames": "content/assets/adv_frames/ep3/f0.jpg .. f3.jpg",
+        "cover": "content/assets/covers/ep003.jpg"
+      },
+      "gaps": [
+        "Woodcutter and temple students need transparent 4-row sheets",
+        "Subodhi existing four-direction action sheet should be QA-checked against the new 4-row contract",
+        "scene props need game layers"
+      ]
+    },
+    {
+      "episode": 4,
+      "folder": "ep004",
+      "title": {
+        "zh": "不传之秘",
+        "en": "Secret Formulas"
+      },
+      "storyArc": {
+        "zh": "夜半传法·变化腾云",
+        "en": "Wukong learns secret formulas, demonstrates transformation, and returns home"
+      },
+      "evidence": {
+        "dialogueNodes": "1-64",
+        "keyBeats": [
+          "three o'clock secret lesson",
+          "Wukong practices immortality and transformations",
+          "he turns into a pine tree",
+          "Subhuti sends him home"
+        ]
+      },
+      "mainCharacter": "wukong",
+      "featuredCharacter": {
+        "id": "subodhi",
+        "reason": "秘法传授、告诫与送行构成本集情感核心",
+        "mapBinding": "episode-card-and-dialogue-avatar"
+      },
+      "supportingCharacters": [
+        "subodhi",
+        "temple-student",
+        "gibbon"
+      ],
+      "scenes": [
+        {
+          "id": "night-temple",
+          "zh": "深夜道场",
+          "en": "Temple at three o'clock",
+          "use": "secret lesson and light effect"
+        },
+        {
+          "id": "training-yard",
+          "zh": "修炼庭院",
+          "en": "Training courtyard",
+          "use": "transformation practice and student reactions"
+        },
+        {
+          "id": "return-mountain",
+          "zh": "花果山归途",
+          "en": "Return to Flower-Fruit Mountain",
+          "use": "cloud departure and cliffhanger"
+        }
+      ],
+      "dialogueMoments": [
+        "n01-15 secret formula lesson",
+        "n16-41 pine-tree transformation",
+        "n44-60 Subhuti's warning and farewell",
+        "n61-64 return and bad news"
+      ],
+      "battle": {
+        "enabled": false,
+        "encounter": "transformation-training",
+        "interaction": "choose a safe transformation and match spell rhythm",
+        "enemies": []
+      },
+      "assetPlan": {
+        "actionProp": "spell hand-sign, cloud hop, pine-tree transformation silhouette",
+        "smallAssets": [
+          "moon-window",
+          "formula-glyph",
+          "magic-light",
+          "pine-tree-form",
+          "training-cloud",
+          "farewell-tear"
+        ],
+        "newCharacterAssets": [
+          "temple-student"
+        ]
+      },
+      "currentAssets": {
+        "wukong": "characterIndex.wukong.sharedExisting",
+        "subodhi": "characterIndex.subodhi.sharedExisting",
+        "storyFrames": "content/assets/adv_frames/ep4/f0.jpg .. f3.jpg",
+        "cover": "content/assets/covers/ep004.jpg"
+      },
+      "gaps": [
+        "Students and gibbon need 4-direction sheets",
+        "Wukong needs a transformation/action variant while preserving base walk identity",
+        "magic effects must be separate transparent layers"
+      ]
+    },
+    {
+      "episode": 5,
+      "folder": "ep005",
+      "title": {
+        "zh": "混世魔王",
+        "en": "The Demon of Chaos"
+      },
+      "storyArc": {
+        "zh": "混世魔王来袭·猴军操练",
+        "en": "Wukong defeats the Demon of Chaos and trains a monkey army"
+      },
+      "evidence": {
+        "dialogueNodes": "1-71",
+        "keyBeats": [
+          "the demon raids the troop",
+          "Wukong flies north for revenge",
+          "hair strands become fake monkeys",
+          "the demon is defeated and the army trains"
+        ]
+      },
+      "mainCharacter": "wukong",
+      "featuredCharacter": {
+        "id": "chaosdemon",
+        "reason": "混世魔王是本集冲突与安全打怪入口",
+        "mapBinding": "episode-card-and-dialogue-avatar"
+      },
+      "supportingCharacters": [
+        "chaosdemon",
+        "gibbon",
+        "generic-monkey"
+      ],
+      "scenes": [
+        {
+          "id": "mountain-cave",
+          "zh": "混世魔王洞府",
+          "en": "Demon mountain cave",
+          "use": "dialogue and encounter entrance"
+        },
+        {
+          "id": "safe-training-field",
+          "zh": "猴军训练场",
+          "en": "Monkey army training field",
+          "use": "practice swords and spears without harm"
+        }
+      ],
+      "dialogueMoments": [
+        "n01-16 gibbon reports the raid",
+        "n20-44 Wukong confronts the demon",
+        "n45-55 Body Beyond the Body spell",
+        "n56-71 rescue and army training"
+      ],
+      "battle": {
+        "enabled": true,
+        "encounter": "chaosdemon-training",
+        "interaction": "tap dodge, clone decoys, and safe practice strikes",
+        "enemies": [
+          "chaosdemon",
+          "demon-guard"
+        ],
+        "tone": "cartoon training; defeated enemies poof into harmless smoke"
+      },
+      "assetPlan": {
+        "actionProp": "Wukong iron-bar placeholder or open-hand clone spell; Demon padded cloud-club",
+        "smallAssets": [
+          "cave-door",
+          "dark-cloud",
+          "sword",
+          "spear",
+          "clone-poof",
+          "training-target",
+          "rescue-cage"
+        ],
+        "newCharacterAssets": [
+          "chaosdemon",
+          "gibbon",
+          "generic-monkey",
+          "demon-guard"
+        ]
+      },
+      "currentAssets": {
+        "wukong": "characterIndex.wukong.sharedExisting",
+        "chaosdemon": "characterIndex.chaosdemon.sharedExisting",
+        "storyFrames": "content/assets/adv_frames/ep5/f0.jpg .. f3.jpg",
+        "cover": "content/assets/covers/ep005.jpg"
+      },
+      "gaps": [
+        "Demon guards, gibbon, and troop need 4-row sheets",
+        "combat props/effects need separate alpha layers",
+        "Wukong action should not be confused with the later iron-bar weapon"
+      ]
+    },
+    {
+      "episode": 6,
+      "folder": "ep006",
+      "title": {
+        "zh": "东海龙王",
+        "en": "The Dragon King"
+      },
+      "storyArc": {
+        "zh": "东海求兵·试取神铁",
+        "en": "Wukong visits the Dragon King and tests increasingly heavy weapons"
+      },
+      "evidence": {
+        "dialogueNodes": "1-70",
+        "keyBeats": [
+          "Wukong breathes underwater",
+          "Dragon King and Queen receive him",
+          "turtle and octopus helpers bring weapons",
+          "the magical iron pillar is offered as a test"
+        ]
+      },
+      "mainCharacter": "wukong",
+      "featuredCharacter": {
+        "id": "dragonking",
+        "reason": "龙宫试兵和铁柱挑战构成本集主题",
+        "mapBinding": "episode-card-and-dialogue-avatar"
+      },
+      "supportingCharacters": [
+        "dragonking",
+        "dragon-queen",
+        "turtle-soldier",
+        "octopus-helper"
+      ],
+      "scenes": [
+        {
+          "id": "eastern-sea",
+          "zh": "东海",
+          "en": "Eastern Sea",
+          "use": "underwater travel and breathing spell"
+        },
+        {
+          "id": "dragon-palace",
+          "zh": "龙宫",
+          "en": "Dragon Palace",
+          "use": "tea dialogue and weapon parade"
+        },
+        {
+          "id": "treasury",
+          "zh": "龙宫宝库",
+          "en": "Dragon treasury",
+          "use": "iron pillar reveal"
+        }
+      ],
+      "dialogueMoments": [
+        "n09-22 underwater arrival and tea",
+        "n24-46 sword and spear tests",
+        "n49-63 argument over the magical iron bar",
+        "n64-70 treasury challenge"
+      ],
+      "battle": {
+        "enabled": true,
+        "encounter": "weapon-test",
+        "interaction": "weight-meter / lift, swing, and pose-match challenge",
+        "enemies": [],
+        "tone": "nonviolent strength test"
+      },
+      "assetPlan": {
+        "actionProp": "sword, spear, then magical iron pillar; use separate prop layers so the weapon can shrink/grow",
+        "smallAssets": [
+          "underwater-bubbles",
+          "dragon-palace-tea",
+          "huge-sword",
+          "enormous-spear",
+          "iron-pillar",
+          "golden-beam",
+          "weight-meter"
+        ],
+        "newCharacterAssets": [
+          "dragon-queen",
+          "turtle-soldier",
+          "octopus-helper"
+        ]
+      },
+      "currentAssets": {
+        "wukong": "characterIndex.wukong.sharedExisting",
+        "dragonking": "characterIndex.dragonking.sharedExisting",
+        "storyFrames": "content/assets/adv_frames/ep6/f0.jpg .. f3.jpg",
+        "cover": "content/assets/covers/ep006.jpg"
+      },
+      "gaps": [
+        "Dragon King currently has legacy 4x2 sheet; generate 4-row x 8 action sheet",
+        "Dragon Queen, turtle soldier, and octopus helper need sheets",
+        "weapons and resize states must be independent transparent sprites"
+      ]
+    },
+    {
+      "episode": 7,
+      "folder": "ep007",
+      "title": {
+        "zh": "幽冥地府",
+        "en": "The Land of Darkness"
+      },
+      "storyArc": {
+        "zh": "金箍棒初现·大闹幽冥",
+        "en": "Wukong claims the iron bar and crosses his name out of the Directory"
+      },
+      "evidence": {
+        "dialogueNodes": "1-77",
+        "keyBeats": [
+          "iron pillar shrinks into a weapon",
+          "spirits drag Wukong to the underworld",
+          "he storms the Palace of Darkness",
+          "he erases the monkeys' names from the Directory"
+        ]
+      },
+      "mainCharacter": "wukong",
+      "featuredCharacter": {
+        "id": "judge-of-dead",
+        "zh": "阎王/死者审判官",
+        "en": "Judge of the Dead",
+        "reason": "幽冥审判与名册对话是本集高潮",
+        "mapBinding": "episode-card-and-dialogue-avatar",
+        "asset": "placeholder:generate",
+        "assetStatus": "planned",
+        "runtimeFallback": {
+          "id": "wukong",
+          "reason": "审判官四向图集尚未生成，运行时明确回退到本集已有悟空资产"
+        },
+        "directionalContract": {
+          "required": true,
+          "directions": [
+            "east",
+            "south",
+            "west",
+            "north"
+          ],
+          "framesPerDirection": 8,
+          "walkFrames": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "actionFrames": [
+            5,
+            6,
+            7,
+            8
+          ],
+          "cellSize": "384x512"
+        }
+      },
+      "supportingCharacters": [
+        "dragonking",
+        "dragon-queen",
+        "underworld-spirit",
+        "judge-of-dead",
+        "generic-monkey"
+      ],
+      "scenes": [
+        {
+          "id": "flower-fruit-feast",
+          "zh": "花果山宴会",
+          "en": "Flower-Fruit Mountain feast",
+          "use": "weapon celebration"
+        },
+        {
+          "id": "land-of-darkness",
+          "zh": "幽冥地府",
+          "en": "Land of Darkness",
+          "use": "guided underworld map and chase"
+        },
+        {
+          "id": "palace-of-darkness",
+          "zh": "幽冥宫殿",
+          "en": "Palace of Darkness",
+          "use": "Judge and Directory dialogue"
+        }
+      ],
+      "dialogueMoments": [
+        "n01-17 iron bar claim and Dragon King's complaint",
+        "n18-40 feast, capture, and escape",
+        "n41-54 Judge of the Dead confrontation",
+        "n55-77 Directory and name-crossing climax"
+      ],
+      "battle": {
+        "enabled": true,
+        "encounter": "underworld-escape",
+        "interaction": "dodge spirits, grow/shrink iron bar, escort monkey-name tokens",
+        "enemies": [
+          "underworld-spirit"
+        ],
+        "tone": "comic chase; no frightening horror"
+      },
+      "assetPlan": {
+        "actionProp": "grow/shrink iron bar, brush, ink jar, Directory book",
+        "smallAssets": [
+          "iron-bar-small",
+          "iron-bar-large",
+          "spirit-hand",
+          "underworld-gate",
+          "palace-door",
+          "directory-book",
+          "brush",
+          "ink-jar",
+          "name-token",
+          "ghost-poof"
+        ],
+        "newCharacterAssets": [
+          "underworld-spirit",
+          "judge-of-dead",
+          "dragon-queen",
+          "generic-monkey"
+        ]
+      },
+      "currentAssets": {
+        "wukong": "characterIndex.wukong.sharedExisting",
+        "dragonking": "characterIndex.dragonking.sharedExisting",
+        "storyFrames": "content/assets/adv_frames/ep7/f0.jpg .. f3.jpg",
+        "cover": "content/assets/covers/ep007.jpg"
+      },
+      "gaps": [
+        "Judge, spirits, Dragon Queen, and monkey troop need 4-row sheets",
+        "Dragon King needs the new directional-action format",
+        "iron bar and Directory must be independently layerable",
+        "underworld palette should stay child-safe and readable"
+      ]
+    }
+  ],
+  "qaChecklist": [
+    "Every episode folder contains manifest.json and README.md.",
+    "Every generated main/support sheet has four true direction rows and 4 walk + 4 action cells per row.",
+    "Every runtime frame has alpha, common baseline, no green matte, no stretched oval body, and no cropping.",
+    "Dialogue and battle props are separate from character sheets so the same character can be reused in the map and mini-game.",
+    "A missing character is never silently replaced by Wukong; use the manifest status and an explicit placeholder until generated.",
+    "Run browser checks for ep001-ep007 after wiring assets into the episode loader."
+  ],
+  "generatedCharacterAssets": {
+    "demon-guard": {
+      "episode": "ep005",
+      "manifest": "assets/generated/jttw-episode-assets/c01/ep005/characters/demon-guard/manifest.json",
+      "atlas": "assets/generated/jttw-episode-assets/c01/ep005/characters/demon-guard/transparent/demon-guard-walk-action-atlas.png"
+    },
+    "dragon-queen": {
+      "episode": "ep006",
+      "manifest": "assets/generated/jttw-episode-assets/c01/ep006/characters/dragon-queen/manifest.json",
+      "atlas": "assets/generated/jttw-episode-assets/c01/ep006/characters/dragon-queen/transparent/dragon-queen-walk-action-atlas.png"
+    },
+    "octopus-helper": {
+      "episode": "ep006",
+      "manifest": "assets/generated/jttw-episode-assets/c01/ep006/characters/octopus-helper/manifest.json",
+      "atlas": "assets/generated/jttw-episode-assets/c01/ep006/characters/octopus-helper/transparent/octopus-helper-walk-action-atlas.png"
+    },
+    "turtle-soldier": {
+      "episode": "ep006",
+      "manifest": "assets/generated/jttw-episode-assets/c01/ep006/characters/turtle-soldier/manifest.json",
+      "atlas": "assets/generated/jttw-episode-assets/c01/ep006/characters/turtle-soldier/transparent/turtle-soldier-walk-action-atlas.png"
+    },
+    "judge-of-dead": {
+      "episode": "ep007",
+      "manifest": "assets/generated/jttw-episode-assets/c01/ep007/characters/judge-of-dead/manifest.json",
+      "atlas": "assets/generated/jttw-episode-assets/c01/ep007/characters/judge-of-dead/transparent/judge-of-dead-walk-action-atlas.png"
+    },
+    "underworld-spirit": {
+      "episode": "ep007",
+      "manifest": "assets/generated/jttw-episode-assets/c01/ep007/characters/underworld-spirit/manifest.json",
+      "atlas": "assets/generated/jttw-episode-assets/c01/ep007/characters/underworld-spirit/transparent/underworld-spirit-walk-action-atlas.png"
+    }
+  }
+}

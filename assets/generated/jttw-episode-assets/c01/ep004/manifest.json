@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "bundleManifest": "../manifest.json",
+  "episode": 4,
+  "folder": "ep004",
+  "title": {
+    "zh": "不传之秘",
+    "en": "Secret Formulas"
+  },
+  "arc": {
+    "zh": "夜半传法·变化腾云",
+    "en": "Wukong learns secret formulas, demonstrates transformation, and returns home"
+  },
+  "source": {
+    "dialogue": "prj/data/dialogue_stories/ep4.json",
+    "catalog": "prj/data/storybooks/catalog.json",
+    "nodes": "1-64"
+  },
+  "cast": {
+    "main": [
+      {
+        "id": "wukong",
+        "zh": "孙悟空",
+        "en": "Sun Wukong",
+        "evidence": "n001-64",
+        "asset": "shared:characterIndex.wukong"
+      }
+    ],
+    "support": [
+      {
+        "id": "subodhi",
+        "zh": "菩提祖师",
+        "en": "Patriarch Subhuti",
+        "evidence": "n004-60",
+        "asset": "shared:characterIndex.subodhi"
+      },
+      {
+        "id": "temple-student",
+        "zh": "菩提门下弟子",
+        "en": "Temple student",
+        "evidence": "n016-45",
+        "asset": "placeholder:generate"
+      },
+      {
+        "id": "gibbon",
+        "zh": "长臂猿",
+        "en": "Gibbon elder",
+        "evidence": "n061-64",
+        "asset": "placeholder:generate"
+      }
+    ]
+  },
+  "featuredCharacter": {
+    "id": "subodhi",
+    "reason": "秘法传授、告诫与送行构成本集情感核心",
+    "mapBinding": "episode-card-and-dialogue-avatar"
+  },
+  "scenes": [
+    "night-temple",
+    "training-yard",
+    "return-mountain"
+  ],
+  "dialogueMoments": [
+    "three o'clock secret lesson",
+    "pine-tree transformation",
+    "Subhuti's warning and farewell",
+    "return and bad news"
+  ],
+  "gameplay": {
+    "map": "night-temple-to-cloud",
+    "dialogue": true,
+    "battle": false,
+    "miniGame": "choose a safe transformation and match spell rhythm",
+    "reward": "transformation-badge"
+  },
+  "currentAssets": {
+    "wukong": "content/assets/generated/jttw-player-walkers/wukong/directions/{east,south,west,north}/wukong-{direction}-walk-action.gif",
+    "subodhi": "content/assets/generated/jttw-player-walkers/subodhi/directions/{east,south,west,north}/subodhi-{direction}-walk-action.gif",
+    "storyFrames": "content/assets/adv_frames/ep4/f0.jpg .. f3.jpg",
+    "cover": "content/assets/covers/ep004.jpg"
+  },
+  "assetFolders": {
+    "characters": "characters/",
+    "scenes": "scenes/",
+    "props": "props/",
+    "prompts": "prompts/"
+  },
+  "newSheetTargets": [
+    "wukong",
+    "subodhi",
+    "temple-student",
+    "gibbon"
+  ],
+  "requiredProps": [
+    "moon-window",
+    "formula-glyph",
+    "magic-light",
+    "pine-tree-form",
+    "training-cloud",
+    "farewell-tear"
+  ],
+  "gaps": [
+    "temple-student/gibbon: no verified art",
+    "Wukong needs a transformation/action variant without changing walk identity",
+    "magic effects must be independent alpha layers"
+  ],
+  "generatedCharacterAssets": {}
+}

@@ -148,7 +148,9 @@ button#w-review:hover, .w-btn-gold:hover { filter: brightness(1.08); }
 
 /* ---------- 场景播放器 ---------- */
 #wala-player {
-  position: relative; display: flex; flex-direction: column; height: 100vh; overflow: hidden;
+  position: relative; display: flex; flex-direction: column; overflow: hidden;
+  height: 100vh;
+  height: 100dvh; /* 手机浏览器/WebView 里跟随可见视口，避免被系统栏挤压 */
   background: #0b0907 url("../assets/ui/player-bg.jpg") center / cover no-repeat;
 }
 #wala-player.audio-only {
@@ -339,14 +341,7 @@ button#w-review:hover, .w-btn-gold:hover { filter: brightness(1.08); }
   align-items: flex-end;
   justify-content: flex-start;
 }
-@media (max-width: 860px) {
-  .w-dock { width: 96vw; max-width: 96vw; left: 2vw; bottom: 0.2rem; transform: none; }
-  .w-avatar { width: 76px; height: 76px; aspect-ratio: 1 / 1; }
-}
-@media (max-height: 520px) {
-  .w-dock { bottom: 0.2rem; }
-  .w-avatar { width: 76px; height: 76px; aspect-ratio: 1 / 1; }
-}
+/* 手机端 dock / 头像 / 顶栏尺寸统一在文末的“手机 / 小窗自适应”区块调整 */
 .w-settings { position: relative; }
 #w-gear {
   width: 40px; height: 40px; border-radius: 50%;
@@ -629,15 +624,79 @@ button#w-review:hover, .w-btn-gold:hover { filter: brightness(1.08); }
   text-align: left;
 }
 
+/* ---------- 手机 / 小窗自适应 ----------
+   手机横屏只有 ~360px 高，字幕、头像、顶栏全部按视口比例缩放，
+   不再使用固定 rem 大字号。 */
 @media (max-width: 860px), (max-height: 520px) {
-  .w-speech { max-width: 100%; min-width: 0; }
+  .w-speech { max-width: 100%; min-width: 0; flex: 1 1 auto; }
   #w-en, #w-zh { max-width: 100%; }
   .w-sent-mark svg { width: 16px; height: 16px; }
-  #w-en { font-size: 1.85rem; line-height: 1.38; }
-  #w-en.annot { font-size: 1.72rem; line-height: 1.2; }
+  #w-en { font-size: clamp(1rem, min(5.4vh, 3.9vw), 1.45rem); line-height: 1.3; }
+  #w-en.annot { font-size: clamp(0.92rem, min(4.9vh, 3.6vw), 1.3rem); line-height: 1.16; }
   #w-en.annot .w-gloss { font-size: 0.8em; }
-  #w-zh { font-size: 1.38rem; }
-  .w-speech { padding: 0.55rem 1.05rem; border-radius: 22px; }
+  #w-zh { font-size: clamp(0.85rem, min(4vh, 3vw), 1.12rem); line-height: 1.3; }
+  .w-speech { padding: 0.36rem 0.7rem; border-radius: 14px; }
+  .w-bubble { max-height: min(52vh, 300px); padding: 0.35rem 0.05rem 0.06rem; }
+  .wcard-term { font-size: 1.3rem; }
+  .wcard-zh { font-size: 1rem; }
+  .wcard-ex { font-size: 0.95rem; }
+
+  /* 底部字幕停靠条：始终收在舞台内，不再按 vw 溢出画面 */
+  .w-dock {
+    width: calc(100% - clamp(16px, 4vw, 40px));
+    left: max(clamp(8px, 2vw, 20px), env(safe-area-inset-left));
+    bottom: max(0.35rem, env(safe-area-inset-bottom));
+    gap: clamp(0.35rem, 1vw, 0.7rem);
+  }
+  .w-avatar {
+    width: clamp(44px, 8vh, 60px);
+    height: clamp(44px, 8vh, 60px);
+    min-width: 44px;
+    min-height: 44px;
+  }
+  .w-arrow {
+    width: 34px; height: 34px;
+    min-width: 34px; min-height: 34px;
+  }
+  .w-sent-mark {
+    width: 32px; height: 32px;
+    min-width: 32px; min-height: 32px;
+  }
+
+  /* 顶栏压缩，给画面让出高度 */
+  #w-top {
+    flex-wrap: wrap;
+    row-gap: 0.25rem;
+    gap: 0.45rem;
+    padding: 0.3rem max(0.6rem, env(safe-area-inset-right)) 0.3rem max(0.6rem, env(safe-area-inset-left));
+    padding-top: max(0.3rem, env(safe-area-inset-top));
+  }
+  .w-nav-btns { gap: 0.3rem; }
+  .w-nav-btn { padding: 0.22rem 0.6rem; font-size: 0.82rem; border-width: 1.5px; }
+  #w-ep-title { font-size: 0.88rem; }
+  .mode-toggle button { padding: 0.22rem 0.55rem; font-size: 0.75rem; }
+  .w-coin.small { font-size: 0.8rem; }
+  #w-gear { width: 34px; height: 34px; font-size: 1.05rem; }
+}
+
+/* ---------- 手机全屏画面 ----------
+   小屏上放弃“装饰背景 + 居中 16:9”的桌面舞台，画面铺满整个窗口：
+   竖屏保持完整画面（contain），横屏手机铺满裁切（cover）。 */
+@media (max-width: 860px), (max-height: 520px) {
+  .w-stage { padding: 0; }
+  .w-frame {
+    flex: 1 1 100%;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    max-height: none;
+    aspect-ratio: auto;
+    background: #000;
+  }
+}
+@media (max-height: 520px) and (orientation: landscape) {
+  .w-frame > img,
+  .w-frame > video { object-fit: cover; }
 }
 #w-pager { display: none; }
 .w-bubble .w-nav button { color: #2b2320; border-color: rgba(43, 35, 32, 0.35); }

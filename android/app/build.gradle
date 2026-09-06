@@ -1,5 +1,20 @@
 apply plugin: 'com.android.application'
 
+// 版本号来自 version.properties（打包脚本 scripts/build-apks.mjs 每次自动递增），
+// 文件缺失时退回这里的静态值。
+def versionPropsFile = rootProject.file("version.properties")
+def androidVersionCode = 5
+def androidVersionName = "0.1.9"
+if (versionPropsFile.exists()) {
+    def versionProps = new Properties()
+    versionPropsFile.withInputStream { versionProps.load(it) }
+    androidVersionCode = (versionProps.getProperty("versionCode") ?: "5") as Integer
+    def major = (versionProps.getProperty("versionMajor") ?: "0") as Integer
+    def minor = (versionProps.getProperty("versionMinor") ?: "1") as Integer
+    def patch = (versionProps.getProperty("versionPatch") ?: "9") as Integer
+    androidVersionName = "${major}.${minor}.${patch}"
+}
+
 android {
     namespace = "com.nonomil.storyhall"
     compileSdk = rootProject.ext.compileSdkVersion
@@ -7,8 +22,8 @@ android {
         applicationId "com.nonomil.storyhall"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 5
-        versionName "0.1.9"
+        versionCode androidVersionCode
+        versionName androidVersionName
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         aaptOptions {
              // Files and dirs to omit from the packaged assets dir, modified to accommodate modern web apps.

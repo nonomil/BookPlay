@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "bundleManifest": "../manifest.json",
+  "episode": 1,
+  "folder": "ep001",
+  "title": {
+    "zh": "石猴",
+    "en": "The Monkey"
+  },
+  "arc": {
+    "zh": "石猴出世·瀑布立誓",
+    "en": "The stone monkey is born and leaps toward the waterfall"
+  },
+  "source": {
+    "dialogue": "prj/data/dialogue_stories/ep1.json",
+    "catalog": "prj/data/storybooks/catalog.json",
+    "nodes": "1-71"
+  },
+  "cast": {
+    "main": [
+      {
+        "id": "wukong",
+        "zh": "孙悟空",
+        "en": "Sun Wukong",
+        "evidence": "n003-71",
+        "asset": "shared:characterIndex.wukong"
+      }
+    ],
+    "support": [
+      {
+        "id": "jadeemperor",
+        "zh": "玉皇大帝",
+        "en": "Jade Emperor",
+        "evidence": "n008-27",
+        "asset": "shared:characterIndex.jadeemperor"
+      },
+      {
+        "id": "heaven-captain",
+        "zh": "天庭将领",
+        "en": "Heaven captain",
+        "evidence": "n009-23",
+        "asset": "placeholder:generate"
+      },
+      {
+        "id": "gibbon",
+        "zh": "长臂猿",
+        "en": "Gibbon elder",
+        "evidence": "n059-70",
+        "asset": "placeholder:generate"
+      },
+      {
+        "id": "generic-monkey",
+        "zh": "猴群/猿群",
+        "en": "Monkey and ape troop",
+        "evidence": "n028-71",
+        "asset": "placeholder:generate"
+      }
+    ]
+  },
+  "featuredCharacter": {
+    "id": "wukong",
+    "reason": "石猴出世与瀑布挑战由悟空主导",
+    "mapBinding": "episode-card-and-dialogue-avatar"
+  },
+  "scenes": [
+    "fruit-flower-mountain",
+    "cloud-palace",
+    "waterfall"
+  ],
+  "dialogueMoments": [
+    "Jade Emperor investigates the light",
+    "gibbon asks where the stream begins",
+    "Wukong volunteers for the waterfall leap"
+  ],
+  "gameplay": {
+    "map": "stream-to-waterfall",
+    "dialogue": true,
+    "battle": false,
+    "miniGame": "timed jump / collect courage stars",
+    "reward": "waterfall-gate-unlocked"
+  },
+  "currentAssets": {
+    "wukong": "content/assets/generated/jttw-player-walkers/wukong/directions/{east,south,west,north}/wukong-{direction}-walk-action.gif",
+    "jadeemperor": "content/assets/generated/jttw-player-walkers/jadeemperor/jadeemperor-walk.gif",
+    "storyFrames": "content/assets/adv_frames/ep1/f0.jpg .. f3.jpg",
+    "cover": "content/assets/covers/ep001.jpg"
+  },
+  "assetFolders": {
+    "characters": "characters/",
+    "scenes": "scenes/",
+    "props": "props/",
+    "prompts": "prompts/"
+  },
+  "newSheetTargets": [
+    "wukong",
+    "jadeemperor",
+    "heaven-captain",
+    "gibbon",
+    "generic-monkey"
+  ],
+  "requiredProps": [
+    "rock-egg",
+    "stream-sparkles",
+    "cloud-palace-scroll",
+    "courage-star"
+  ],
+  "gaps": [
+    "jadeemperor: legacy 4x2 only",
+    "heaven-captain/gibbon/generic-monkey: no verified art",
+    "scene props: no transparent game layers"
+  ],
+  "generatedCharacterAssets": {}
+}

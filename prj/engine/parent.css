@@ -1,0 +1,338 @@
+/* 亲子互动卡：家长问答卡页面（西游记 jttw） */
+
+.parent-app {
+  --pa-accent: #f0701a;
+  --pa-accent-dark: #c95d0e;
+  --pa-ok: #2e8b57;
+  --pa-ink: #2b2620;
+  min-height: 100vh;
+  /* GPT 生成的水彩西游记背景（assets/generated/parent-page-background），白卡上叠淡奶油罩保证可读性 */
+  background:
+    linear-gradient(rgba(255, 248, 239, 0.30), rgba(255, 248, 239, 0.48)),
+    url("../assets/parent_bg.jpg") center / cover no-repeat #f3e3cb;
+  background-attachment: fixed;
+  color: var(--pa-ink);
+  display: flex;
+  flex-direction: column;
+  font-family: inherit;
+}
+.parent-app .spacer { flex: 1; }
+
+#parent-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+.parent-title { font-weight: 700; font-size: 1.05rem; }
+.parent-btn {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 2px solid #d9c8a8;
+  background: #fff;
+  color: var(--pa-ink);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+.parent-btn:hover { border-color: var(--pa-accent); color: var(--pa-accent); }
+.parent-stars { font-size: 1.05rem; font-weight: 700; color: #c98a12; }
+
+.parent-tips {
+  margin: 8px 14px 0;
+  padding: 8px 14px;
+  border-radius: 12px;
+  background: #dbe7f8;
+  color: #1f3a5f;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+#parent-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+}
+
+.parent-card-box {
+  width: min(720px, 94vw);
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.parent-question {
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.55;
+  margin: 0;
+}
+
+
+.parent-choices {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/* 与知识巩固测验（listen-picture-option）同构：图上词下、圆角卡、
+ * 悬停金边浮起、答对绿/答错红描边淡底 */
+.choice-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 7px;
+  border: 2px solid #d9c8a8;
+  border-radius: 14px;
+  background: #fff;
+  cursor: pointer;
+  flex: 1 1 0;
+  min-width: 0;
+  max-width: 210px;
+  transition: border-color 160ms ease, transform 160ms ease, background-color 160ms ease;
+}
+.choice-btn:hover:not(:disabled) {
+  border-color: #c98a12;
+  background: #fff4e0;
+  transform: translateY(-1px);
+}
+.choice-btn:disabled { cursor: default; opacity: 0.78; }
+.choice-btn img {
+  width: 100%;
+  height: 88px;
+  object-fit: cover;
+  border-radius: 9px;
+  background: #141312;
+}
+.choice-btn span {
+  font-size: 1.12rem;
+  font-weight: 800;
+  color: var(--pa-ink);
+  line-height: 1.3;
+}
+.choice-btn.correct {
+  border-color: var(--pa-ok);
+  background: #e9f5ee;
+}
+.choice-btn.correct span { color: var(--pa-ok); }
+.choice-btn.correct img { outline: 3px solid var(--pa-ok); outline-offset: -3px; }
+.choice-btn.wrong {
+  border-color: #d64545;
+  background: #fdecec;
+  animation: choice-shake 0.4s;
+}
+.choice-btn.wrong span { color: #b23434; }
+@keyframes choice-shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+}
+
+.parent-illustration {
+  border: none;
+  padding: 0;
+  background: #141312;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  width: 100%;
+  /* 限高保证整卡一屏放下：插图是答对后的奖励画面，不需要占满卡宽 */
+  height: clamp(130px, 20vh, 210px);
+}
+.parent-illustration:disabled { cursor: default; }
+.parent-illustration img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: #141312;
+  transition: transform 160ms ease, outline-color 160ms ease;
+  outline: 4px solid transparent;
+}
+.parent-illustration.found img {
+  transform: scale(1.02);
+  outline-color: var(--pa-ok);
+}
+.parent-img-empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #bfb8ab;
+  font-size: 1rem;
+}
+
+.parent-word {
+  text-align: center;
+  font-size: 1.05rem;
+  color: #57503f;
+}
+.parent-word b { color: var(--pa-accent-dark); }
+
+.parent-answer {
+  background: #fdf1e4;
+  border-radius: 12px;
+  padding: 10px 14px;
+}
+.parent-answer-en { font-size: 1.25rem; font-weight: 600; margin: 0 0 4px; }
+.parent-answer-zh { color: #8d867a; margin: 0; }
+
+.parent-controls { display: flex; gap: 10px; flex-wrap: wrap; }
+.parent-controls button {
+  border: none;
+  border-radius: 999px;
+  padding: 9px 18px;
+  font-size: 0.98rem;
+  cursor: pointer;
+  background: #eef3fb;
+  color: var(--pa-ink);
+}
+.parent-controls button:disabled { opacity: 0.45; cursor: not-allowed; }
+
+.parent-actions { display: flex; justify-content: center; }
+.parent-star-btn {
+  border: none;
+  border-radius: 999px;
+  padding: 10px 26px;
+  background: var(--pa-accent);
+  color: #fff;
+  font-size: 1.05rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+.parent-star-btn:disabled { opacity: 0.5; cursor: default; }
+
+.parent-status {
+  min-height: 1.3em;
+  text-align: center;
+  color: #1f6b40;
+  font-weight: 700;
+  font-size: 0.98rem;
+}
+
+#parent-nav {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding-bottom: 14px;
+  width: min(720px, 94vw);
+}
+#parent-nav button {
+  border: 2px solid #d9c8a8;
+  border-radius: 999px;
+  padding: 9px 20px;
+  background: #fff;
+  color: var(--pa-ink);
+  font-size: 0.98rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+#parent-nav button:hover { border-color: var(--pa-accent); color: var(--pa-accent); }
+#parent-nav button:disabled { opacity: 0.45; cursor: not-allowed; }
+.walker-lane {
+  position: relative;
+  width: min(720px, 94vw);
+  height: 78px;
+}
+/* 播放器进度条式轨道：已走部分主题色填充 */
+.walker-lane .walker-path {
+  position: absolute;
+  left: 5%;
+  right: 4%;
+  bottom: 10px;
+  height: 6px;
+  border-radius: 3px;
+  background: linear-gradient(90deg, var(--pa-accent) var(--walker-fill, 4%), #e5dbc8 var(--walker-fill, 4%));
+}
+.walker-lane .walker-sprite {
+  position: absolute;
+  bottom: 4px;
+  left: 4%;
+  width: 60px;
+  height: auto;
+  transform: translateX(-50%);
+  transition: left 0.7s steps(6, end);
+  filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.3));
+}
+.walker-lane .walker-count,
+.walker-lane .walker-count-text {
+  position: absolute;
+  right: 0;
+  top: -2px;
+  font-weight: 800;
+  color: var(--pa-accent-dark);
+}
+
+.hidden { display: none !important; }
+
+
+/* 读句选图：大字句子提示 */
+.parent-prompt {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.65;
+  text-align: center;
+  background: #fff;
+  border: 2px solid #f0a055;
+  border-radius: 12px;
+  padding: 12px 14px;
+  margin: 0;
+  color: var(--pa-ink);
+}
+
+/* 看图拼词：字母槽位 */
+.parent-slots {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.spell-slot {
+  width: 44px;
+  height: 50px;
+  border-radius: 10px;
+  border: 3px dashed #c9b58e;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--pa-ink);
+  cursor: pointer;
+}
+.spell-slot.filled {
+  border-style: solid;
+  border-color: var(--pa-accent);
+  color: var(--pa-accent-dark);
+}
+.spell-slot.correct {
+  border-color: var(--pa-ok);
+  color: var(--pa-ok);
+}
+.parent-slots.wrong .spell-slot {
+  border-color: #d64545;
+  color: #d64545;
+  animation: choice-shake 0.4s;
+}
+
+/* 字母片（紧凑版选项） */
+.letter-chip {
+  flex: 0 0 auto;
+  max-width: none;
+  padding: 10px 18px;
+  font-size: 1.3rem;
+}
+.letter-chip img { display: none; }

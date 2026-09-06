@@ -13,11 +13,14 @@
       : "jttw";
     const rawId = series === "minecraft" || series === "mikey-jj" ? params.get("book") : params.get("ep");
     const id = Math.max(1, parseInt(rawId || "1", 10) || 1);
+    const rawChapter = params.get("chapter");
+    const chapter = rawChapter ? Math.max(1, parseInt(rawChapter, 10) || 1) : null;
     if (series === "minecraft") {
       return {
         series,
         id,
         uiVariant,
+        ...(chapter ? { chapter } : {}),
         progressKey: `${series}:${id}`,
         dataUrl: `../data/storybooks-minecraft/book${id}.json`,
         shelfUrl: "map.html?series=minecraft",
@@ -28,6 +31,7 @@
         series,
         id,
         uiVariant,
+        ...(chapter ? { chapter } : {}),
         progressKey: `${series}:${id}`,
         dataUrl: `../data/storybooks-mikey-jj/book${id}.json`,
         shelfUrl: "map.html?series=mikey-jj",

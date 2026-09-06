@@ -75,7 +75,7 @@ def test_mikey_route_companion_atlas_is_packable_and_runtime_ready():
 def test_episode_walker_gifs_are_packable_and_fixed_canvas():
     from PIL import Image
 
-    roles = ("wukong", "tang", "bajie", "shawujing", "guanyin", "redboy", "ironfan", "bullking", "dragonking", "whitedragonhorse", "subodhi", "jadeemperor", "yellowwind", "whitebone", "blackwind", "zhenyuan", "hundredflowers", "goldenhorn", "liondemon", "tigerimmortal", "yellowbrows", "powerdemon", "spiderdemon", "centipededemon")
+    roles = ("wukong", "tang", "bajie", "shawujing", "guanyin", "redboy", "ironfan", "bullking", "dragonking", "whitedragonhorse", "subodhi", "jadeemperor", "yellowwind", "whitebone", "blackwind", "zhenyuan", "hundredflowers", "goldenhorn", "liondemon", "tigerimmortal", "yellowbrows", "powerdemon", "spiderdemon", "centipededemon", "chaosdemon")
     manifest = json.loads((ROOT / "assets" / "generated" / "jttw-player-walkers" / "manifest.json").read_text(encoding="utf-8"))
     assert {entry["id"] for entry in manifest["characters"]} == set(roles)
     for role in roles:
@@ -95,6 +95,18 @@ def test_episode_walker_gifs_are_packable_and_fixed_canvas():
                 assert all(frame.getpixel(point)[3] == 0 for point in ((0, 0), (383, 0), (0, 511), (383, 511)))
                 frames.append(frame.tobytes())
             assert len(set(frames)) > 1, f"{rel} does not animate"
+    directional = manifest.get("directionalContract") or {}
+    assert directional.get("directions") == ["east", "south", "west", "north"]
+    assert directional.get("framesPerDirection") == 8
+    for role in ("wukong", "subodhi", "dragonking", "chaosdemon"):
+        entry = next(item for item in manifest["characters"] if item["id"] == role)
+        atlas_rel = entry["directional"]["atlas"].replace("content/", "")
+        atlas_path = ROOT / "content" / atlas_rel
+        assert atlas_path.is_file(), atlas_rel
+        with Image.open(atlas_path) as atlas:
+            assert atlas.mode == "RGBA"
+            assert atlas.size == (3072, 2048)
+            assert atlas.getpixel((0, 0))[3] == 0
 
 
 def test_android_tree_carries_companion_engine_and_data_dirs():

@@ -2,11 +2,13 @@
 <html lang="zh">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>豆豆龙英语 · 播放</title>
   <link rel="stylesheet" href="style.css?v=png1">
-  <link rel="stylesheet" href="wala.css?v=56">
+  <link rel="stylesheet" href="wala.css?v=57">
   <link rel="stylesheet" href="tv.css?v=6">
+  <link rel="stylesheet" href="app-audio.css?v=1">
+  <script src="app-audio.js?v=2"></script>
 </head>
 <body>
   <!-- 旧圆形地图保留节点，默认不展示；进集从首页卡片墙 -->
@@ -32,6 +34,7 @@
         <a class="w-nav-btn w-dub-btn" id="w-dub" href="#">🎙 配音</a>
       </nav>
       <span id="w-ep-title"></span>
+      <span data-audio-slot></span>
       <span class="spacer"></span>
       <button id="w-auto" type="button" class="hidden">手动</button>
       <div class="mode-toggle" title="剧情遍连续听故事；精学遍在场景后显示单词卡与少量小测">

@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "bundleManifest": "../manifest.json",
+  "episode": 5,
+  "folder": "ep005",
+  "title": {
+    "zh": "混世魔王",
+    "en": "The Demon of Chaos"
+  },
+  "arc": {
+    "zh": "混世魔王来袭·猴军操练",
+    "en": "Wukong defeats the Demon of Chaos and trains a monkey army"
+  },
+  "source": {
+    "dialogue": "prj/data/dialogue_stories/ep5.json",
+    "catalog": "prj/data/storybooks/catalog.json",
+    "nodes": "1-71"
+  },
+  "cast": {
+    "main": [
+      {
+        "id": "wukong",
+        "zh": "孙悟空",
+        "en": "Sun Wukong",
+        "evidence": "n001-71",
+        "asset": "shared:characterIndex.wukong"
+      }
+    ],
+    "support": [
+      {
+        "id": "chaosdemon",
+        "zh": "混世魔王",
+        "en": "Demon of Chaos",
+        "evidence": "n004-56",
+        "asset": "shared:characterIndex.chaosdemon"
+      },
+      {
+        "id": "gibbon",
+        "zh": "长臂猿",
+        "en": "Gibbon elder",
+        "evidence": "n001-16,n58-71",
+        "asset": "placeholder:generate"
+      },
+      {
+        "id": "generic-monkey",
+        "zh": "猴群/猿群",
+        "en": "Monkey and ape troop",
+        "evidence": "n001-05,n56-71",
+        "asset": "placeholder:generate"
+      },
+      {
+        "id": "demon-guard",
+        "zh": "妖怪守卫",
+        "en": "Demon guard",
+        "evidence": "n020-37",
+        "asset": "characters/demon-guard/manifest.json",
+        "assetStatus": "ready-four-direction-action"
+      }
+    ]
+  },
+  "featuredCharacter": {
+    "id": "chaosdemon",
+    "reason": "混世魔王是本集冲突与安全打怪入口",
+    "mapBinding": "episode-card-and-dialogue-avatar"
+  },
+  "scenes": [
+    "mountain-cave",
+    "safe-training-field"
+  ],
+  "dialogueMoments": [
+    "gibbon reports the raid",
+    "Wukong confronts the demon",
+    "Body Beyond the Body spell",
+    "rescue and army training"
+  ],
+  "gameplay": {
+    "map": "mountain-cave-to-training-field",
+    "dialogue": true,
+    "battle": true,
+    "miniGame": "tap dodge, clone decoys, and safe practice strikes",
+    "enemies": [
+      "chaosdemon",
+      "demon-guard"
+    ],
+    "defeatFx": "harmless smoke poof",
+    "reward": "monkey-army-banner"
+  },
+  "currentAssets": {
+    "wukong": "content/assets/generated/jttw-player-walkers/wukong/directions/{east,south,west,north}/wukong-{direction}-walk-action.gif",
+    "chaosdemon": "content/assets/generated/jttw-player-walkers/chaosdemon/chaosdemon-walk-action-atlas.png + directions/{east,south,west,north}/*.gif",
+    "storyFrames": "content/assets/adv_frames/ep5/f0.jpg .. f3.jpg",
+    "cover": "content/assets/covers/ep005.jpg"
+  },
+  "assetFolders": {
+    "characters": "characters/",
+    "scenes": "scenes/",
+    "props": "props/",
+    "prompts": "prompts/"
+  },
+  "newSheetTargets": [
+    "wukong",
+    "chaosdemon",
+    "gibbon",
+    "generic-monkey",
+    "demon-guard"
+  ],
+  "requiredProps": [
+    "cave-door",
+    "dark-cloud",
+    "sword",
+    "spear",
+    "clone-poof",
+    "training-target",
+    "rescue-cage"
+  ],
+  "gaps": [
+    "demon-guard/gibbon/generic-monkey: no verified art",
+    "combat props/effects: no separate alpha layers",
+    "do not give Wukong the later iron-bar weapon yet"
+  ],
+  "generatedCharacterAssets": {
+    "demon-guard": "characters/demon-guard/manifest.json"
+  }
+}

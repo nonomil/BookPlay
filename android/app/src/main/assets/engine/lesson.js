@@ -1299,7 +1299,7 @@ function finishLesson(empty = false) {
       : `正确率 ${(outcome.ratio * 100).toFixed(0)}%，先复习错题再挑战一次。`;
   const retryHref = `lesson.html?ep=${episode}&retry=1`;
   const nextAction = passed ? `<a class="result-link" href="${nextHref}">${nextLabel}</a>` : `<a class="primary-button" href="${retryHref}">再测一次</a>`;
-  ui.card.innerHTML = `<div class="result-state"><p class="question-meta">本集知识巩固${passed ? "完成" : "结果"}</p><div class="result-score">${score}</div><h2>${resultTitle}</h2><p>${resultCopy}</p><div class="result-actions">${nextAction}<a class="result-link" href="drill.html?ep=${episode}">复习错题</a><a class="result-link" href="shelf.html">回选集</a></div></div>`;
+  ui.card.innerHTML = `<div class="result-state"><p class="question-meta">本集知识巩固${passed ? "完成" : "结果"}</p><div class="result-score">${score}</div><h2>${resultTitle}</h2><p>${resultCopy}</p><div class="result-actions">${nextAction}<a class="result-link" href="parent.html?ep=${episode}">👨‍👩‍👧 亲子时间</a><a class="result-link" href="drill.html?ep=${episode}">复习错题</a><a class="result-link" href="shelf.html">回选集</a></div></div>`;
   renderEpisodeReward(passed);
 }
 

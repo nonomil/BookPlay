@@ -18,7 +18,7 @@ test('wala.html：语音模块在 wala.js 前按核心到网关顺序引入并�
   assert.match(html, /voice-core\.js\?v=1/);
   assert.match(html, /voice\.js\?v=1/);
   assert.match(html, /wala\.js\?v=72/);
-  assert.match(html, /wala\.css\?v=56/);
+  assert.match(html, /wala\.css\?v=\d+/, "wala.css 必须带数字版本号（具体值由并行特性递增）");
 });
 
 test('wala.js：只有麦克风可用时才插入跟读按钮，并使用统一语音反馈', () => {

@@ -562,10 +562,22 @@ body.sb-mc #sb-endnav button { margin-right: .55rem; color: #d8e8a6; border-colo
   background: rgba(240, 198, 74, 0.24);
 }
 
-.sb-quiz-hint-row { margin: -4px 0 12px; text-align: right; }
-.sb-quiz-hint { border-radius: 999px; font-size: 0.86rem; }
+.sb-quiz-hint {
+  border-radius: 999px;
+  font-size: 0.95rem;
+  padding: 6px 9px;
+  min-width: 36px;
+  min-height: 32px;
+  white-space: nowrap;
+  flex-shrink: 0;
+  align-self: flex-start;
+  opacity: 0.72;
+}
+.sb-quiz-hint.is-open { opacity: 1; background: rgba(240, 198, 74, 0.4); }
+body.sb-mj .sb-quiz-hint.is-open { background: #ffe477; }
+.sb-quiz-audio-play { border-radius: 999px; }
 .sb-quiz-hint-box {
-  margin: -2px 0 14px;
+  margin: 0 0 14px;
   padding: 10px 12px;
   border: 1px dashed rgba(240, 198, 74, 0.55);
   border-radius: 10px;
@@ -1388,8 +1400,17 @@ body.sb-mc :is(button, a):focus-visible,
    建立 5rem(80px) 安全区并同步收缩 contain 可用高度，保持
    object-fit: contain 且整页完整位于视口内；不触碰 mc/jttw，不触碰 390px 单列。 */
 @media (min-width: 901px) {
+  /* 漫画列加宽：拆分视图下面板为横幅，宽舞台才是主要形态 */
   body.storybook-split.sb-mj .sb-app {
-    grid-template-columns: minmax(260px, 0.72fr) minmax(420px, 1.28fr);
+    grid-template-columns: minmax(420px, 1.15fr) minmax(380px, 0.85fr);
+  }
+
+  body.storybook-split.sb-mj.sb-split-view .sb-app {
+    grid-template-columns: minmax(420px, 1fr) minmax(380px, 1fr);
+  }
+
+  body.storybook-split.sb-mj.sb-split-view #sb-stage-inner {
+    max-width: none;
   }
 
   body.sb-mj #sb-stage {
@@ -1411,6 +1432,24 @@ body.sb-mc :is(button, a):focus-visible,
 
 body.sb-mj #sb-stage-inner {
   position: relative;
+}
+
+/* 朗读定位红框：框住当前句子的气泡区域，不再用浮窗遮盖漫画 */
+body.sb-mj #sb-bubble-locator {
+  position: absolute;
+  z-index: 6;
+  box-sizing: border-box;
+  border: 3px solid #e8402a;
+  border-radius: 12px;
+  background: rgba(232, 64, 42, 0.06);
+  box-shadow: 0 0 0 3px rgba(232, 64, 42, 0.22);
+  pointer-events: none;
+  animation: sb-locator-pulse 1.2s ease-in-out infinite;
+}
+
+@keyframes sb-locator-pulse {
+  0%, 100% { box-shadow: 0 0 0 3px rgba(232, 64, 42, 0.22); }
+  50% { box-shadow: 0 0 0 7px rgba(232, 64, 42, 0.34); }
 }
 
 body.sb-mj .sb-speaking-bubble {

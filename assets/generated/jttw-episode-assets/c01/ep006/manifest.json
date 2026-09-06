@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "bundleManifest": "../manifest.json",
+  "episode": 6,
+  "folder": "ep006",
+  "title": {
+    "zh": "东海龙王",
+    "en": "The Dragon King"
+  },
+  "arc": {
+    "zh": "东海求兵·试取神铁",
+    "en": "Wukong visits the Dragon King and tests increasingly heavy weapons"
+  },
+  "source": {
+    "dialogue": "prj/data/dialogue_stories/ep6.json",
+    "catalog": "prj/data/storybooks/catalog.json",
+    "nodes": "1-70"
+  },
+  "cast": {
+    "main": [
+      {
+        "id": "wukong",
+        "zh": "孙悟空",
+        "en": "Sun Wukong",
+        "evidence": "n001-70",
+        "asset": "shared:characterIndex.wukong"
+      }
+    ],
+    "support": [
+      {
+        "id": "dragonking",
+        "zh": "东海龙王",
+        "en": "East Sea Dragon King",
+        "evidence": "n013-70",
+        "asset": "shared:characterIndex.dragonking"
+      },
+      {
+        "id": "dragon-queen",
+        "zh": "龙王后",
+        "en": "Dragon Queen",
+        "evidence": "n013-57",
+        "asset": "characters/dragon-queen/manifest.json",
+        "assetStatus": "ready-four-direction-action"
+      },
+      {
+        "id": "turtle-soldier",
+        "zh": "龟将军",
+        "en": "Turtle soldier",
+        "evidence": "n024-29",
+        "asset": "characters/turtle-soldier/manifest.json",
+        "assetStatus": "ready-four-direction-action"
+      },
+      {
+        "id": "octopus-helper",
+        "zh": "章鱼侍从",
+        "en": "Octopus palace helper",
+        "evidence": "n036-39",
+        "asset": "characters/octopus-helper/manifest.json",
+        "assetStatus": "ready-four-direction-action"
+      }
+    ]
+  },
+  "featuredCharacter": {
+    "id": "dragonking",
+    "reason": "龙宫试兵和铁柱挑战构成本集主题",
+    "mapBinding": "episode-card-and-dialogue-avatar"
+  },
+  "scenes": [
+    "eastern-sea",
+    "dragon-palace",
+    "treasury"
+  ],
+  "dialogueMoments": [
+    "underwater arrival and tea",
+    "sword and spear tests",
+    "argument over the magical iron bar",
+    "treasury challenge"
+  ],
+  "gameplay": {
+    "map": "eastern-sea-to-treasury",
+    "dialogue": true,
+    "battle": false,
+    "miniGame": "weight-meter / lift, swing, and pose-match challenge",
+    "reward": "iron-bar-challenge"
+  },
+  "currentAssets": {
+    "wukong": "content/assets/generated/jttw-player-walkers/wukong/directions/{east,south,west,north}/wukong-{direction}-walk-action.gif",
+    "dragonking": "content/assets/generated/jttw-player-walkers/dragonking/dragonking-walk.gif",
+    "storyFrames": "content/assets/adv_frames/ep6/f0.jpg .. f3.jpg",
+    "cover": "content/assets/covers/ep006.jpg"
+  },
+  "assetFolders": {
+    "characters": "characters/",
+    "scenes": "scenes/",
+    "props": "props/",
+    "prompts": "prompts/"
+  },
+  "newSheetTargets": [
+    "wukong",
+    "dragonking",
+    "dragon-queen",
+    "turtle-soldier",
+    "octopus-helper"
+  ],
+  "requiredProps": [
+    "underwater-bubbles",
+    "dragon-palace-tea",
+    "huge-sword",
+    "enormous-spear",
+    "iron-pillar",
+    "golden-beam",
+    "weight-meter"
+  ],
+  "gaps": [
+    "dragonking currently legacy 4x2 only",
+    "dragon-queen/turtle-soldier/octopus-helper: no verified art",
+    "weapons and resize states must be independent transparent sprites"
+  ],
+  "generatedCharacterAssets": {
+    "dragon-queen": "characters/dragon-queen/manifest.json",
+    "turtle-soldier": "characters/turtle-soldier/manifest.json",
+    "octopus-helper": "characters/octopus-helper/manifest.json"
+  }
+}

@@ -29,6 +29,7 @@ const ui = {
   title: document.getElementById("lesson-title"),
   kicker: document.getElementById("lesson-kicker"),
   progress: document.getElementById("lesson-progress"),
+  walker: document.getElementById("lesson-walker"),
   card: document.getElementById("lesson-card"),
   tip: document.getElementById("teacher-tip"),
   slide: document.getElementById("lesson-slide"),
@@ -58,6 +59,7 @@ let rewardState = {};
 let rewardOffer = null;
 let studySession = null;
 const lessonAudio = typeof Audio === "function" ? new Audio() : null;
+window.BookPlayAudio?.watchMedia(lessonAudio);
 const voiceSttEndpoint = String(params.get("voiceStt") || "").trim();
 let voicePort = null;
 try {
@@ -668,15 +670,6 @@ function buildQuestions(cards, selected, storyData, settings, session) {
     output.push(question);
   };
 
-  if (core && typeof core.buildListenPictureQuestions === "function") {
-    const listenCount = settings && settings.gradeBand === "g1_2" ? 3 : 1;
-    const listenChoiceCount = settings && settings.gradeBand === "g1_2" ? 2 : 4;
-    core.buildListenPictureQuestions(storyData, {
-      count: listenCount,
-      choiceCount: listenChoiceCount,
-    }).forEach(add);
-  }
-
   if (words[0]) add(core.buildWordQuestion(words[0], wordPool, episode, "en_to_zh"));
   if (words[1] || words[0]) add(core.buildWordQuestion(words[1] || words[0], wordPool, episode, "zh_to_en"));
 
@@ -786,6 +779,8 @@ function answerQuestion(button, value) {
 }
 
 function appendFeedback(question, isCorrect, detailEn, detailZh) {
+  stopLessonAudio();
+  window.BookPlayAudio?.sfx(isCorrect ? "correct" : "retry");
   const feedback = document.createElement("div");
   feedback.className = `feedback ${isCorrect ? "is-correct" : "is-wrong"}`;
   const evidence = question && question.answerEvidence
@@ -948,6 +943,8 @@ function setListenPictureOptionsDisabled(disabled) {
 }
 
 function appendListenPictureFeedback(question, isCorrect) {
+  stopLessonAudio();
+  window.BookPlayAudio?.sfx(isCorrect ? "correct" : "retry");
   const previous = ui.card.querySelector(".listen-picture-feedback");
   if (previous) previous.remove();
   const feedback = document.createElement("div");
@@ -1278,6 +1275,7 @@ function renderStudyGate() {
 
 function finishLesson(empty = false) {
   stopLessonAudio();
+  if (!empty) window.BookPlayAudio?.sfx("complete");
   setTeacherState("idle");
   const scoreTotal = questions.filter((question) => question.scoreable !== false).length;
   const outcome = core && typeof core.evaluateLessonResult === "function"
@@ -1299,7 +1297,7 @@ function finishLesson(empty = false) {
       : `正确率 ${(outcome.ratio * 100).toFixed(0)}%，先复习错题再挑战一次。`;
   const retryHref = `lesson.html?ep=${episode}&retry=1`;
   const nextAction = passed ? `<a class="result-link" href="${nextHref}">${nextLabel}</a>` : `<a class="primary-button" href="${retryHref}">再测一次</a>`;
-  ui.card.innerHTML = `<div class="result-state"><p class="question-meta">本集知识巩固${passed ? "完成" : "结果"}</p><div class="result-score">${score}</div><h2>${resultTitle}</h2><p>${resultCopy}</p><div class="result-actions">${nextAction}<a class="result-link" href="drill.html?ep=${episode}">复习错题</a><a class="result-link" href="shelf.html">回选集</a></div></div>`;
+  ui.card.innerHTML = `<div class="result-state"><p class="question-meta">本集知识巩固${passed ? "完成" : "结果"}</p><div class="result-score">${score}</div><h2>${resultTitle}</h2><p>${resultCopy}</p><div class="result-actions">${nextAction}<a class="result-link" href="parent.html?ep=${episode}">👨‍👩‍👧 亲子时间</a><a class="result-link" href="drill.html?ep=${episode}">复习错题</a><a class="result-link" href="shelf.html">回选集</a></div></div>`;
   renderEpisodeReward(passed);
 }
 
@@ -1318,6 +1316,14 @@ async function start() {
     // The lesson guide remains usable when an older offline pack has no story
     // companion; sentence-choice cards still provide a complete fallback.
     story = {};
+  }
+  if (ui.walker && window.WalaWalkerProgress && window.WalaWalkerCast) {
+    const walkerRole = window.WalaWalkerCast.resolve(story, episode);
+    window.WalaWalkerProgress.mount(ui.walker, {
+      gif: `../${walkerRole.gif}`,
+      nameZh: walkerRole.nameZh,
+      labelEl: ui.progress,
+    });
   }
   rewardCatalog = await loadRewardCatalog();
   rewardState = readRewardState();

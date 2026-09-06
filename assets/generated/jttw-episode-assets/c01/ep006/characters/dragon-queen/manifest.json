@@ -1,0 +1,327 @@
+{
+  "schemaVersion": 1,
+  "assetId": "dragon-queen",
+  "type": "character-directional-action",
+  "episode": "ep006",
+  "tool": "gpt-image-workflow + transparent-image-generator + Pillow",
+  "providerByDirection": {
+    "east": {
+      "provider": "cliprox",
+      "model": "gpt-image-2",
+      "sizeRequested": "1536x1024",
+      "actualSize": "1536x1024"
+    },
+    "south": {
+      "provider": "cliprox",
+      "model": "gpt-image-2",
+      "sizeRequested": "1536x1024",
+      "actualSize": "1536x1024"
+    },
+    "west": {
+      "provider": "cliprox",
+      "model": "gpt-image-2",
+      "sizeRequested": "1536x1024",
+      "actualSize": "1536x1024"
+    },
+    "north": {
+      "provider": "cliprox",
+      "model": "gpt-image-2",
+      "sizeRequested": "1536x1024",
+      "actualSize": "1536x1024"
+    }
+  },
+  "source": {
+    "promptFiles": [
+      "assets/generated/jttw-episode-assets/c01/ep006/characters/dragon-queen/source/directional/dragon-queen-east.txt",
+      "assets/generated/jttw-episode-assets/c01/ep006/characters/dragon-queen/source/directional/dragon-queen-south.txt",
+      "assets/generated/jttw-episode-assets/c01/ep006/characters/dragon-queen/source/directional/dragon-queen-west.txt",
+      "assets/generated/jttw-episode-assets/c01/ep006/characters/dragon-queen/source/directional/dragon-queen-north.txt"
+    ],
+    "rawSheets": {
+      "east": "assets/generated/jttw-episode-assets/c01/ep006/characters/dragon-queen/2d/directions/east/dragon-queen-east-walk-action-sheet.png",
+      "south": "assets/generated/jttw-episode-assets/c01/ep006/characters/dragon-queen/2d/directions/south/dragon-queen-south-walk-action-sheet.png",
+      "west": "assets/generated/jttw-episode-assets/c01/ep006/characters/dragon-queen/2d/directions/west/dragon-queen-west-walk-action-sheet.png",
+      "north": "assets/generated/jttw-episode-assets/c01/ep006/characters/dragon-queen/2d/directions/north/dragon-queen-north-walk-action-sheet.png"
+    }
+  },
+  "contract": {
+    "directions": [
+      "east",
+      "south",
+      "west",
+      "north"
+    ],
+    "rows": "east, south, west, north",
+    "framesPerDirection": 8,
+    "walkFrames": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "actionFrames": [
+      5,
+      6,
+      7,
+      8
+    ],
+    "cellSize": "384x512",
+    "atlasSize": "3072x2048",
+    "durationMs": 150,
+    "transparent": true
+  },
+  "outputs": {
+    "atlas": "assets/generated/jttw-episode-assets/c01/ep006/characters/dragon-queen/transparent/dragon-queen-walk-action-atlas.png",
+    "runtimeAtlas": "content/assets/generated/jttw-episode-assets/c01/ep006/characters/dragon-queen/dragon-queen-walk-action-atlas.png",
+    "transparentSheets": {
+      "east": "assets/generated/jttw-episode-assets/c01/ep006/characters/dragon-queen/transparent/directions/east/dragon-queen-east-transparent.png",
+      "south": "assets/generated/jttw-episode-assets/c01/ep006/characters/dragon-queen/transparent/directions/south/dragon-queen-south-transparent.png",
+      "west": "assets/generated/jttw-episode-assets/c01/ep006/characters/dragon-queen/transparent/directions/west/dragon-queen-west-transparent.png",
+      "north": "assets/generated/jttw-episode-assets/c01/ep006/characters/dragon-queen/transparent/directions/north/dragon-queen-north-transparent.png"
+    },
+    "directionGifs": {
+      "east": "assets/generated/jttw-episode-assets/c01/ep006/characters/dragon-queen/transparent/directions/east/dragon-queen-east-walk-action.gif",
+      "south": "assets/generated/jttw-episode-assets/c01/ep006/characters/dragon-queen/transparent/directions/south/dragon-queen-south-walk-action.gif",
+      "west": "assets/generated/jttw-episode-assets/c01/ep006/characters/dragon-queen/transparent/directions/west/dragon-queen-west-walk-action.gif",
+      "north": "assets/generated/jttw-episode-assets/c01/ep006/characters/dragon-queen/transparent/directions/north/dragon-queen-north-walk-action.gif"
+    },
+    "runtimeDirectionGifs": {
+      "east": "content/assets/generated/jttw-episode-assets/c01/ep006/characters/dragon-queen/directions/dragon-queen-east-walk-action.gif",
+      "south": "content/assets/generated/jttw-episode-assets/c01/ep006/characters/dragon-queen/directions/dragon-queen-south-walk-action.gif",
+      "west": "content/assets/generated/jttw-episode-assets/c01/ep006/characters/dragon-queen/directions/dragon-queen-west-walk-action.gif",
+      "north": "content/assets/generated/jttw-episode-assets/c01/ep006/characters/dragon-queen/directions/dragon-queen-north-walk-action.gif"
+    },
+    "alphaReports": {
+      "east": "assets/generated/jttw-episode-assets/c01/ep006/characters/dragon-queen/transparent/directions/east/dragon-queen-east-transparent.report.json",
+      "south": "assets/generated/jttw-episode-assets/c01/ep006/characters/dragon-queen/transparent/directions/south/dragon-queen-south-transparent.report.json",
+      "west": "assets/generated/jttw-episode-assets/c01/ep006/characters/dragon-queen/transparent/directions/west/dragon-queen-west-transparent.report.json",
+      "north": "assets/generated/jttw-episode-assets/c01/ep006/characters/dragon-queen/transparent/directions/north/dragon-queen-north-transparent.report.json"
+    }
+  },
+  "cleanup": {
+    "east": {
+      "columns": [
+        381,
+        382,
+        383,
+        384,
+        385,
+        386,
+        765,
+        766,
+        767,
+        768,
+        769,
+        770,
+        1149,
+        1150,
+        1151,
+        1152,
+        1153,
+        1154
+      ],
+      "rows": [
+        509,
+        510,
+        511,
+        512,
+        513,
+        514
+      ]
+    },
+    "south": {
+      "columns": [
+        358,
+        359,
+        360,
+        361,
+        362,
+        363,
+        364,
+        365,
+        366,
+        367,
+        368,
+        369,
+        370,
+        371,
+        372,
+        373,
+        374,
+        747,
+        748,
+        749,
+        750,
+        751,
+        752,
+        753,
+        754,
+        755,
+        756,
+        757,
+        758,
+        759,
+        760,
+        761,
+        762,
+        763,
+        764,
+        1151,
+        1152,
+        1153,
+        1154,
+        1155,
+        1156,
+        1157,
+        1158,
+        1159,
+        1160,
+        1161,
+        1162,
+        1163,
+        1164,
+        1165,
+        1166,
+        1167
+      ],
+      "rows": [
+        504,
+        505,
+        506,
+        507,
+        508,
+        509,
+        510,
+        511,
+        512,
+        513,
+        514,
+        515,
+        516,
+        517,
+        518,
+        519,
+        520
+      ]
+    },
+    "west": {
+      "columns": [],
+      "rows": []
+    },
+    "north": {
+      "columns": [
+        374,
+        375,
+        376,
+        377,
+        378,
+        379,
+        380,
+        381,
+        382,
+        383,
+        384,
+        385,
+        386,
+        387,
+        388,
+        389,
+        390,
+        391,
+        392,
+        393,
+        394,
+        395,
+        396,
+        397,
+        756,
+        757,
+        758,
+        759,
+        760,
+        761,
+        762,
+        763,
+        764,
+        765,
+        766,
+        767,
+        768,
+        769,
+        770,
+        771,
+        772,
+        773,
+        774,
+        775,
+        776,
+        777,
+        778,
+        1139,
+        1140,
+        1141,
+        1142,
+        1143,
+        1144,
+        1145,
+        1146,
+        1147,
+        1148,
+        1149,
+        1150,
+        1151,
+        1152,
+        1153,
+        1154,
+        1155,
+        1156,
+        1157,
+        1158,
+        1159,
+        1160,
+        1161
+      ],
+      "rows": [
+        498,
+        499,
+        500,
+        501,
+        502,
+        503,
+        504,
+        505,
+        506,
+        507,
+        508,
+        509,
+        510,
+        511,
+        512,
+        513,
+        514,
+        515,
+        516,
+        517,
+        518,
+        519,
+        520,
+        521,
+        522
+      ]
+    }
+  },
+  "acceptance": {
+    "dimensionsChecked": true,
+    "alphaChecked": true,
+    "directionsChecked": true,
+    "baselineAligned": true,
+    "separatorStripesRemoved": true
+  },
+  "sha256": {
+    "atlas": "b61c1bd409e33465c473c4d4067628ea20990c6734a129b917d8326f55847ea4"
+  },
+  "limitations": [
+    "Generated raster poses are reviewed for silhouette and baseline, but exact temporal consistency is not guaranteed by one model call.",
+    "Props remain embedded in the action cells; independent prop layers can be added later."
+  ]
+}

@@ -174,6 +174,7 @@ const shuffle = (a) => { const b = a.slice(); for (let i = b.length - 1; i > 0; 
 /* ---------------- 音频 (合并索引 + 持久播放器) ---------------- */
 let sentEn = {}, sentZh = {}, enIdx = {};
 const drillAudio = typeof Audio !== "undefined" ? new Audio() : null;
+window.BookPlayAudio?.watchMedia(drillAudio);
 const mediaApi = typeof WalaMedia !== "undefined" ? WalaMedia : null;
 
 function findClip(text, lang) {
@@ -682,6 +683,7 @@ function wrongAnswer(button, question) {
   grid.dataset.done = "1";
   const selected = question.options[Number(button.dataset.i)];
   const ok = selected === question.zh;
+  window.BookPlayAudio?.sfx(ok ? "correct" : "retry");
   grid.querySelectorAll(".opt").forEach((item, index) => {
     item.disabled = true;
     if (question.options[index] === question.zh) item.classList.add("correct");
@@ -766,6 +768,7 @@ function wordAnswer(btn, w) {
   if (grid.dataset.done) return;
   grid.dataset.done = "1";
   const ok = btn.dataset.i === String(w.options.indexOf(w.term));
+  window.BookPlayAudio?.sfx(ok ? "correct" : "retry");
   grid.querySelectorAll(".opt").forEach((b, i) => {
     b.disabled = true;
     const isCorrect = w.options[i] === w.term;
@@ -842,6 +845,7 @@ function normPuzzleKey(s) {
 function checkPuzzle(p) {
   const joined = curAnswer.join(" ");
   const ok = normPuzzleKey(joined) === normPuzzleKey(p.sentence);
+  window.BookPlayAudio?.sfx(ok ? "correct" : "retry");
   $("p-check").disabled = true;
   if (ok) {
     puzzlesRight++;
@@ -939,6 +943,7 @@ function quizAnswer(btn, q) {
   if (grid.dataset.done) return;
   grid.dataset.done = "1";
   const ok = Number(btn.dataset.i) === q.answer;
+  window.BookPlayAudio?.sfx(ok ? "correct" : "retry");
   grid.querySelectorAll(".opt").forEach((b, i) => {
     b.disabled = true;
     if (i === q.answer) b.classList.add("correct");
@@ -973,6 +978,7 @@ function finishCheck() {
   const pPass = puzzlesTotal === 0 || puzzlesRight >= Math.ceil(puzzlesTotal * 0.8);
   const qPass = quizTotal === 0 || quizRight >= Math.ceil(quizTotal * 0.7);
   const pass = wPass && pPass && qPass;
+  window.BookPlayAudio?.sfx(pass ? "complete" : "retry");
 
   const rows = `
     <div class="finish-row"><span>单词补全</span><b>${wordsRight}/${wordsTotal}</b></div>

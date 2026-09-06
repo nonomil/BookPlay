@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "bundleManifest": "../manifest.json",
+  "episode": 2,
+  "folder": "ep002",
+  "title": {
+    "zh": "水帘洞",
+    "en": "The Waterfall Cave"
+  },
+  "arc": {
+    "zh": "水帘洞称王·寻找长生之道",
+    "en": "The cave becomes a home, then Wukong sails out to seek immortality"
+  },
+  "source": {
+    "dialogue": "prj/data/dialogue_stories/ep2.json",
+    "catalog": "prj/data/storybooks/catalog.json",
+    "nodes": "1-73"
+  },
+  "cast": {
+    "main": [
+      {
+        "id": "wukong",
+        "zh": "孙悟空",
+        "en": "Sun Wukong",
+        "evidence": "n001-73",
+        "asset": "shared:characterIndex.wukong"
+      }
+    ],
+    "support": [
+      {
+        "id": "gibbon",
+        "zh": "长臂猿",
+        "en": "Gibbon elder",
+        "evidence": "n019-68",
+        "asset": "placeholder:generate"
+      },
+      {
+        "id": "generic-monkey",
+        "zh": "猴群/猿群",
+        "en": "Monkey and ape troop",
+        "evidence": "n009-49",
+        "asset": "placeholder:generate"
+      }
+    ]
+  },
+  "featuredCharacter": {
+    "id": "wukong",
+    "reason": "悟空发现水帘洞并带领猴群出发",
+    "mapBinding": "episode-card-and-dialogue-avatar"
+  },
+  "scenes": [
+    "waterfall-cave",
+    "cave-feast",
+    "raft-stream"
+  ],
+  "dialogueMoments": [
+    "Wukong leads the troop through the waterfall",
+    "the troop crowns the Monkey King",
+    "Wukong and the gibbon discuss living forever",
+    "raft departure"
+  ],
+  "gameplay": {
+    "map": "cave-home-to-raft",
+    "dialogue": true,
+    "battle": false,
+    "miniGame": "place bowls/beds and steer the raft",
+    "reward": "immortality-quest-started"
+  },
+  "currentAssets": {
+    "wukong": "content/assets/generated/jttw-player-walkers/wukong/directions/{east,south,west,north}/wukong-{direction}-walk-action.gif",
+    "storyFrames": "content/assets/adv_frames/ep2/f0.jpg .. f3.jpg",
+    "cover": "content/assets/covers/ep002.jpg"
+  },
+  "assetFolders": {
+    "characters": "characters/",
+    "scenes": "scenes/",
+    "props": "props/",
+    "prompts": "prompts/"
+  },
+  "newSheetTargets": [
+    "wukong",
+    "gibbon",
+    "generic-monkey"
+  ],
+  "requiredProps": [
+    "bamboo",
+    "moss",
+    "flower-cluster",
+    "bowl",
+    "bed",
+    "throne",
+    "feast-fruit",
+    "raft",
+    "immortality-star"
+  ],
+  "gaps": [
+    "gibbon/generic-monkey: no verified art",
+    "Wukong needs a separate raft/paddle action variant",
+    "cave/raft props: no transparent game layers"
+  ],
+  "generatedCharacterAssets": {}
+}

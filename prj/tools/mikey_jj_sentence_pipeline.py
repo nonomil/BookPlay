@@ -110,10 +110,14 @@ def slice_sentences(annotations_path, audio_path, out_dir, keep_old=False):
         out = os.path.join(out_dir, name)
         start = ann["start_ms"] / 1000.0
         end = ann["end_ms"] / 1000.0
+        duration = max(0.08, end - start)
+        # Input-side -ss resets the filter timeline to the clip start; the
+        # fade-out `st` below is clip-relative and would otherwise mute every
+        # clip that starts after its own fade point.
         r = subprocess.run(
-            [FFMPEG, "-y", "-loglevel", "error", "-i", audio_path,
-             "-ss", f"{start:.3f}", "-to", f"{end:.3f}",
-             "-af", f"afade=t=in:st=0:d=0.05,afade=t=out:st={end - start - 0.06:.3f}:d=0.05",
+            [FFMPEG, "-y", "-loglevel", "error",
+             "-ss", f"{start:.3f}", "-i", audio_path, "-t", f"{duration:.3f}",
+             "-af", f"afade=t=in:st=0:d=0.05,afade=t=out:st={duration - 0.06:.3f}:d=0.05",
              "-c:a", "libmp3lame", "-q:a", "4", out],
             capture_output=True, text=True)
         if r.returncode != 0:
