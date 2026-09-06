@@ -207,6 +207,14 @@ DATA_DIRS = [
     ("assets/generated/jttw-medals-v2/transparent/seventy-two-cloud.png", ASSETS / "generated" / "jttw-medals-v2" / "transparent" / "seventy-two-cloud.png"),
     ("assets/generated/jttw-medals-v2/transparent/hundred-tale-compass.png", ASSETS / "generated" / "jttw-medals-v2" / "transparent" / "hundred-tale-compass.png"),
     ("assets/generated/jttw-medals-v2/transparent/journey-complete-crown.png", ASSETS / "generated" / "jttw-medals-v2" / "transparent" / "journey-complete-crown.png"),
+    # 降妖记小游戏：关卡/角色表/台词库/精灵注册表由战斗页按固定路径 fetch，
+    # 引用闭包扫描不到，显式携带；四向小怪 GIF（约 2.6MB）一并入包。
+    ("game/cast.json", CONTENT / "game" / "cast.json"),
+    ("game/taunts.json", CONTENT / "game" / "taunts.json"),
+    ("game/maps.json", CONTENT / "game" / "maps.json"),
+    ("game/sprites.json", CONTENT / "game" / "sprites.json"),
+    ("game/levels", CONTENT / "game" / "levels"),
+    ("assets/game-sprites", CONTENT / "assets" / "game-sprites"),
 ]
 
 
