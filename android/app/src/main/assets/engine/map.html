@@ -6,10 +6,12 @@
   <link rel="icon" href="data:,">
   <title>豆豆龙英语 · 绘本路线图</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="map.css?v=52">
+  <link rel="stylesheet" href="map.css?v=54">
   <link rel="stylesheet" href="tv.css?v=1">
+  <link rel="stylesheet" href="app-audio.css?v=1">
+  <script src="app-audio.js?v=2"></script>
 </head>
-<body class="map-body">
+<body data-audio-scene="series" data-audio-volume="0.30" data-audio-duck-volume="0.08" class="map-body">
   <div id="map-splash">
     <div id="splash-txt">
       <h1 id="splash-title">绘本路线图</h1>
@@ -37,6 +39,7 @@
       <span data-companion-icon aria-hidden="true">🐉</span>
       <span id="companion-entry-label">小白龙 · 🏅 0/19</span>
     </a>
+    <span data-audio-slot></span>
     <span id="sp-badge"></span>
     <a id="btn-list" href="shelf.html">列表</a>
   </div>
@@ -48,6 +51,6 @@
   <script src="tv-remote.js?v=1"></script>
   <script src="content-gate.js?v=1"></script>
   <script src="companion-core.js?v=1"></script>
-  <script src="map.js?v=52"></script>
+  <script src="map.js?v=54"></script>
 </body>
 </html>

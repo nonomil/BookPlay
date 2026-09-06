@@ -85,9 +85,41 @@ const COMPANION_URL = SERIES_ID === "minecraft"
 function routeCompanionSpriteUrl() {
   if (SERIES_ID === "jttw") return "/data/assets/generated/jttw-route-companion/transparent/wukong-walk-atlas.png";
   if (SERIES_ID === "mikey-jj") return "/data/assets/generated/mikey-jj-route-companion/transparent/mikey-walk-atlas.png";
+  if (SERIES_ID === "minecraft") return "/data/assets/generated/minecraft-route-companion/transparent/byte-walk-atlas.png";
   return "";
 }
 const ROUTE_COMPANION_SPRITE_URL = routeCompanionSpriteUrl();
+/* 第一章先按集切换真正的主角图集。后续章节继续沿用悟空图集，直到对应
+ * 章节资产生成；映射是显式的，避免标题/台词缺失时全部误用悟空。 */
+const JTTW_EPISODE_ROUTE_CAST = Object.freeze({
+  1: "wukong", 2: "wukong", 3: "subodhi", 4: "subodhi",
+  5: "chaosdemon", 6: "dragonking", 7: "wukong",
+});
+const ROUTE_CAST_ATLAS = Object.freeze({
+  wukong: "/data/assets/generated/jttw-player-walkers/wukong/wukong-walk-action-atlas.png",
+  subodhi: "/data/assets/generated/jttw-player-walkers/subodhi/subodhi-walk-action-atlas.png",
+  chaosdemon: "/data/assets/generated/jttw-player-walkers/chaosdemon/chaosdemon-walk-action-atlas.png",
+  dragonking: "/data/assets/generated/jttw-player-walkers/dragonking/dragonking-walk-action-atlas.png",
+});
+function routeCastForEpisode(value) {
+  if (SERIES_ID !== "jttw") return "";
+  const episode = Number(value);
+  return JTTW_EPISODE_ROUTE_CAST[episode] || "wukong";
+}
+function routeAtlasForEpisode(value) {
+  const role = routeCastForEpisode(value);
+  return ROUTE_CAST_ATLAS[role] || ROUTE_COMPANION_SPRITE_URL;
+}
+function setCompanionAtlas(mark, node) {
+  if (!mark || SERIES_ID !== "jttw") return;
+  const episode = node?.dataset?.episode;
+  const role = routeCastForEpisode(episode);
+  const atlas = routeAtlasForEpisode(episode);
+  if (!atlas) return;
+  mark.dataset.role = role;
+  mark.setAttribute("data-role", role);
+  mark.style.setProperty("--route-companion-sprite", `url('${atlas}')`);
+}
 /* 图集是异步探测的：加载成功才切到精灵图，否则保留占位小人，避免空盒子。 */
 let routeCompanionSpriteReady = false;
 if (ROUTE_COMPANION_SPRITE_URL && typeof Image !== "undefined") {
@@ -121,6 +153,12 @@ let mapAudio = { collections: {}, episodes: {} };
 let achievementCatalog = { achievements: [] };
 let companionCatalog = { stages: [] };
 const mapAudioPlayer = new Audio();
+const MAP_NARRATION_RATE = 0.8;
+mapAudioPlayer.defaultPlaybackRate = MAP_NARRATION_RATE;
+mapAudioPlayer.playbackRate = MAP_NARRATION_RATE;
+mapAudioPlayer.preservesPitch = true;
+let mapUtterance = null;
+window.BookPlayAudio?.watchMedia(mapAudioPlayer);
 let audioResolver = null;
 
 /* ---------------- 数据读取 ----------------
@@ -341,6 +379,8 @@ const speakerIcon = () => `
   </svg>`;
 
 function clearSpeechState() {
+  if (mapUtterance) window.BookPlayAudio?.setForeground(mapUtterance, false);
+  mapUtterance = null;
   if (activeSpeechTrigger) activeSpeechTrigger.classList.remove("speaking");
   activeSpeechTrigger = null;
 }
@@ -353,11 +393,6 @@ function stopGeneratedAudio() {
     const resolve = audioResolver;
     audioResolver = null;
     resolve(false);
-  }
-  if (empty) {
-    empty.textContent = SERIES_ID === "minecraft"
-      ? "完成一本故事，点亮第一枚方块勋章"
-      : "完成一集故事，点亮第一枚勋章";
   }
 }
 
@@ -380,7 +415,11 @@ function speakText(text, lang, trigger) {
 
   const utterance = new SpeechSynthesisUtterance(text);
   utterance.lang = lang;
-  utterance.rate = lang.startsWith("zh") ? 0.95 : 0.88;
+  utterance.rate = lang.startsWith("zh") ? 0.8 : 0.75;
+  mapUtterance = utterance;
+  utterance.onstart = () => {
+    if (token === speechToken) window.BookPlayAudio?.setForeground(utterance, true);
+  };
   const want = lang.toLowerCase().slice(0, 2);
   const voice = window.speechSynthesis.getVoices()
     .find((v) => (v.lang || "").toLowerCase().startsWith(want));
@@ -407,6 +446,7 @@ function playGeneratedClip(rel, token) {
     };
     audioResolver = resolve;
     mapAudioPlayer.src = rel.startsWith("/") ? rel : `/data/${rel}`;
+    mapAudioPlayer.playbackRate = MAP_NARRATION_RATE;
     mapAudioPlayer.onended = () => done(true);
     mapAudioPlayer.onerror = () => done(false);
     mapAudioPlayer.play().catch(() => done(false));
@@ -852,6 +892,7 @@ function setCompanionHoverTarget(route, index, force = false) {
   const mark = route.querySelector(".route-companion");
   const node = nodes[i];
   if (!mark || !node) return false;
+  setCompanionAtlas(mark, node);
   const w = layout.w || route.clientWidth;
   const h = layout.h || route.clientHeight;
   const anchor = companionAnchor(route, node, layout.points?.[i] || null, w, h);
@@ -901,6 +942,8 @@ function clearCompanionHover(route) {
 }
 
 function bindCompanionHover(route) {
+  /* 伙伴不再跟随鼠标/悬停：只由进度位置和点击行走来驱动。 */
+  return;
   if (!route || route._companionHoverBound) return;
   route._companionHoverBound = true;
   route.querySelectorAll(".node").forEach((node, index) => {
@@ -943,6 +986,7 @@ function placeCompanion(route, nodes, points, w, h) {
   }
   const i = Math.max(0, Math.min(nodes.length - 1, companionIndex(nodes)));
   mark.dataset.nodeIndex = String(i);
+  setCompanionAtlas(mark, nodes[i]);
   let xPct;
   let yPct;
   if (points && points[i] && w && h) {
@@ -1029,10 +1073,71 @@ function placeCompanion(route, nodes, points, w, h) {
   }
 }
 
+/* 点击节点：主角沿路线逐段走过去（按每段主方向选四向图集行），到达后跳转 */
+function walkCompanionTo(route, targetIndex, done) {
+  const layout = route?._companionLayout;
+  const mark = route.querySelector(".route-companion");
+  if (!layout || !layout.points || !mark) { done(); return; }
+  const nodes = layout.nodes;
+  const from = Math.max(0, Math.min(nodes.length - 1, Number(mark.dataset.nodeIndex) || 0));
+  const to = Math.max(0, Math.min(nodes.length - 1, targetIndex));
+  if (from === to) { done(); return; }
+  const w = layout.w || route.clientWidth;
+  const h = layout.h || route.clientHeight;
+  const pts = layout.points;
+  route._walking = true;
+  mark.style.transition = "none";
+  const stepMs = 430;
+  let k = from;
+  const step = () => {
+    if (k === to) {
+      route._walking = false;
+      mark.style.transition = "";
+      mark.dataset.nodeIndex = String(to);
+      setCompanionHoverTarget(route, to, true);
+      done();
+      return;
+    }
+    const nextK = k < to ? k + 1 : k - 1;
+    const a = pts[k] || pts[to];
+    const b = pts[nextK] || pts[to];
+    const dx = (b.x - a.x) * w;
+    const dy = (b.y - a.y) * h;
+    const direction = Math.abs(dx) >= Math.abs(dy)
+      ? (dx >= 0 ? "east" : "west")
+      : (dy >= 0 ? "south" : "north");
+    mark.dataset.direction = direction;
+    mark.setAttribute("data-direction", direction);
+    mark.style.left = ((b.x / w) * 100).toFixed(2) + "%";
+    mark.style.top = ((b.y / h) * 100).toFixed(2) + "%";
+    k = nextK;
+    setTimeout(step, stepMs);
+  };
+  step();
+}
+
+function bindCompanionNavigation(route) {
+  if (!route || route._companionNavBound) return;
+  route._companionNavBound = true;
+  route.querySelectorAll(".node").forEach((node, index) => {
+    const link = node.querySelector("a.node-main");
+    if (!link) return;
+    link.addEventListener("click", (event) => {
+      if (route._walking) { event.preventDefault(); return; }
+      const nodes = route.querySelectorAll(".node");
+      const current = Math.max(0, Math.min(nodes.length - 1, companionIndex(nodes)));
+      if (index === current || node.classList.contains("locked")) return;
+      event.preventDefault();
+      walkCompanionTo(route, index, () => { window.location.href = link.href; });
+    });
+  });
+}
+
 function drawRoute(route) {
   const svg = route.querySelector(".route-line");
   if (!svg) return;
   bindCompanionHover(route);
+  bindCompanionNavigation(route);
   const w = route.clientWidth;
   const h = route.clientHeight;
   if (!w || !h) return;
@@ -1074,6 +1179,39 @@ function drawRoute(route) {
     el.style.removeProperty("grid-column");
   });
 
+  // 锚点模式：collections.json 的 route.anchors 给出每张背景图上
+  // 手绘路线的落点，节点直接压在路线地标上，不再用之字排布。
+  const anchors = (() => {
+    const raw = route.dataset.anchors;
+    if (!raw) return null;
+    try {
+      const arr = JSON.parse(raw);
+      return Array.isArray(arr) && arr.length === nodes.length ? arr : null;
+    } catch (_) { return null; }
+  })();
+  if (anchors) {
+    const cardWidthA = fitCardWidth(route, w, h);
+    route.style.setProperty("--card", cardWidthA + "px");
+    const nodeH = nodes.reduce((max, el) => Math.max(max, el.offsetHeight), 0);
+    const nodeW = nodes.reduce((max, el) => Math.max(max, el.offsetWidth), 0);
+    const pts = anchors.map(([ax, ay]) => ({
+      x: Math.min(w - nodeW / 2, Math.max(nodeW / 2, ax * w)),
+      y: Math.min(h - nodeH / 2, Math.max(nodeH / 2, ay * h)),
+    }));
+    nodes.forEach((el, i) => {
+      const pt = pts[i];
+      el.style.left = ((pt.x / w) * 100).toFixed(2) + "%";
+      el.style.top = ((pt.y / h) * 100).toFixed(2) + "%";
+    });
+    svg.setAttribute("width", w);
+    svg.setAttribute("height", h);
+    svg.setAttribute("viewBox", `0 0 ${w} ${h}`);
+    const d = zigzagPath(pts);
+    svg.querySelectorAll("path").forEach((p) => p.setAttribute("d", d));
+    placeCompanion(route, nodes, pts, w, h);
+    route.classList.add("laid", "anchored");
+    return;
+  }
   const cardWidth = fitCardWidth(route, w, h);
   route.style.setProperty("--card", cardWidth + "px");
   const nodeHeight = nodes.reduce((max, el) => Math.max(max, el.offsetHeight), 0);
@@ -1131,9 +1269,13 @@ function epCard(n, state) {
     ? `<a class="node-dub" href="dub.html?ep=${n}"
         aria-label="第${n}集趣配音" title="用自己的声音给本集配音">🎙 配音</a>`
     : "";
+  const battle = SERIES_ID === "jttw" && state !== "locked"
+    ? `<a class="node-battle" href="battle.html?ep=${n}"
+        aria-label="第${n}集降妖记打怪复习" title="用本集单词打怪闯关">⚔️ 打怪</a>`
+    : "";
   return state === "locked"
-    ? `<article class="node locked" data-lock="ep">${content}${speak}</article>`
-    : `<article class="node ${state}"><a class="node-main" href="${SERIES.href(n)}">${content}</a>${speak}${listen}${dub}</article>`;
+    ? `<article class="node locked" data-lock="ep" data-episode="${n}">${content}${speak}</article>`
+    : `<article class="node ${state}" data-episode="${n}"><a class="node-main" href="${SERIES.href(n)}">${content}</a>${speak}${listen}${dub}${battle}</article>`;
 }
 
 function pagePrimaryAction(c, isUnlocked) {
@@ -1159,8 +1301,44 @@ function pagePrimaryAction(c, isUnlocked) {
 }
 
 /* 节点按 DOM 顺序摆到开放 S 形折线上，坐标由 drawRoute 写入 */
+/* 章节节点：一书一图，节点是书内的章节。状态由进度里的最远页推导：
+ * 章节 done = 已读到章节之后（或整本完成）；reachable = 最远页已到章节起点。 */
+function chapterNodesHTML(c, isUnlocked) {
+  const chapters = c.chapterList || [];
+  if (!chapters.length) {
+    return epNums(c).map((n) => epCard(n, isUnlocked ? (epDone(n) ? "done" : "current") : "locked")).join("");
+  }
+  const rec = readProg()[progId(c.chapterBook)] || {};
+  const furthest = Number(rec.page) || (rec.done ? 999 : 0);
+  const bookDone = Boolean(rec.done);
+  return chapters.map((ch) => {
+    const done = bookDone || furthest > ch.to;
+    const reachable = ch.index === 1 || furthest >= ch.from - 1 || done;
+    const state = done ? "done" : reachable ? "current" : "locked";
+    const href = `storybook.html?series=minecraft&book=${c.chapterBook}&chapter=${ch.index}&ui=unified-v3`;
+    const badge = done ? `<b class="node-badge">✓</b>`
+      : reachable ? `<b class="node-tip">开始</b>`
+      : `<b class="node-badge lock">🔒</b>`;
+    const cover = ch.cover || c.chapterCover || "";
+    const img = cover ? `<img src="/data/${cover}" alt="${ch.title_zh}封面" loading="lazy">` : "";
+    return `<article class="node ${state}" data-chapter="${ch.index}">
+      <a class="node-main" href="${href}">
+        <span class="node-cover">${img}${badge}</span>
+        <span class="node-text">
+          <b class="episode-title"><span class="episode-number">第 ${ch.index} 章</span><span class="episode-name">${ch.title_zh}</span></b>
+          <span class="episode-en" lang="en">${ch.title_en}</span>
+        </span>
+      </a>
+    </article>`;
+  }).join("");
+}
+
 function nodesHTML(c, isUnlocked) {
   let html = "";
+
+  if (SERIES_ID === "minecraft" && c.chapters) {
+    return chapterNodesHTML(c, isUnlocked);
+  }
 
   epNums(c).forEach((n) => {
     let state;
@@ -1215,7 +1393,7 @@ function buildPages() {
         ${pagePrimaryAction(c, isUnlocked)}
         ${!isUnlocked ? `<div class="page-lock-msg">🔒 学完上一辑解锁</div>` : ""}
       </header>
-      <div class="route" data-unlocked="${isUnlocked ? "true" : "false"}" data-inset-x="${route.insetX ?? ""}" data-top="${route.top ?? ""}" data-bottom="${route.bottom ?? ""}">
+      <div class="route" data-unlocked="${isUnlocked ? "true" : "false"}" data-inset-x="${route.insetX ?? ""}" data-top="${route.top ?? ""}" data-bottom="${route.bottom ?? ""}"${route.anchors ? ` data-anchors='${JSON.stringify(route.anchors)}'` : ""}>
         <svg class="route-line" aria-hidden="true">
           <path class="rl-out" d=""></path>
           <path class="rl-in" d=""></path>
@@ -1228,12 +1406,15 @@ function buildPages() {
     pages.push({ col: c, el: page });
   });
 
-  requestAnimationFrame(() => {
-    pages.forEach((p) => {
-      const route = p.el.querySelector(".route");
-      if (route) drawRoute(route);
-    });
+  const drawAllRoutes = () => pages.forEach((p) => {
+    const route = p.el.querySelector(".route");
+    if (route) drawRoute(route);
   });
+  requestAnimationFrame(drawAllRoutes);
+  /* 开场遮罩 1.25s 后才让出页面，期间 route 尺寸为 0，首绘会空过；
+   * 遮罩清除后尺寸不再变化、ResizeObserver 不会再触发，这里补两次重排。 */
+  setTimeout(drawAllRoutes, 600);
+  setTimeout(drawAllRoutes, 1600);
 
   /* 逐个 route 观察，不能只观察 track：页头在字体/徽章换行后还会变高，
    * 那时 track 尺寸没变但 route 缩了，用旧高度算出来的卡片会顶出边界。 */
@@ -1322,7 +1503,10 @@ track.addEventListener("click", (e) => {
   node.classList.add("shake");
   setTimeout(() => node.classList.remove("shake"), 340);
   const unitLabel = SERIES.unit === "本" ? "本" : "集"; // SERIES.unit：锁定提示为“先学完上一本/上一集”
-  toast(node.dataset.lock === "drill" ? `先学完本辑所有${unitLabel}` : `先学完上一${unitLabel}`);
+  const lockHint = node.dataset.lock === "drill"
+    ? (SERIES_ID === "jttw" ? "先学完本辑所有集" : `先学完本辑所有${unitLabel}`)
+    : `先学完上一${unitLabel}`;
+  toast(lockHint);
 });
 
 /* ---------------- 进场闪屏 ----------------
@@ -1361,6 +1545,20 @@ async function init() {
       : Promise.resolve(companionCatalog),
   ]);
   cols = colResp.collections || [];
+  // 章节地图：marks chapters:true 的合辑按“一书一图”，节点是书的章节
+  if (SERIES_ID === "minecraft") {
+    await Promise.all(cols.filter((c) => c.chapters).map(async (c) => {
+      const bookNo = (epNums(c)[0] || 0);
+      if (!bookNo) return;
+      c.chapterList = await fetch(`/data/storybooks-minecraft/book${bookNo}.json`, { cache: "no-store" })
+        .then((r) => r.json())
+        .then((d) => d.chapters || [])
+        .catch(() => []);
+      c.chapterBook = bookNo;
+      const meta = catalogMap.get(bookNo);
+      if (meta && meta.cover) c.chapterCover = meta.cover;
+    }));
+  }
   mapAudio = audioResp || mapAudio;
   achievementCatalog = achievementResp || achievementCatalog;
   companionCatalog = companionResp || companionCatalog;

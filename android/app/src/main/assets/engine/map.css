@@ -474,6 +474,26 @@ body.map-body {
 }
 .node-dub:hover,
 .node-dub:focus-visible { background: rgba(240, 138, 40, 0.92); color: #fff; outline: none; }
+.node-battle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.18em;
+  margin: 0.34rem auto 0;
+  min-height: 22px;
+  padding: 0.14em 0.46em;
+  border: 1px solid rgba(255, 215, 106, 0.8);
+  border-radius: 999px;
+  background: rgba(90, 62, 8, 0.74);
+  color: #fff3c4;
+  font-size: clamp(0.5rem, calc(var(--card, 112px) * 0.065), 0.76rem);
+  font-weight: 800;
+  line-height: 1.15;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.node-battle:hover,
+.node-battle:focus-visible { background: rgba(212, 160, 42, 0.92); color: #fff; outline: none; }
 .page-speak { width: 2rem; height: 2rem; flex: 0 0 auto; }
 .node-speak svg,
 .page-speak svg { width: 68%; height: 68%; fill: currentColor; }

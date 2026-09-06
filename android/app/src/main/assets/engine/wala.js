@@ -163,6 +163,7 @@ const WALKING_CAST = Object.freeze({
   wukong: Object.freeze({
     id: "wukong", nameZh: "孙悟空", nameEn: "Sun Wukong",
     gif: "assets/generated/jttw-player-walkers/wukong/wukong-walk.gif",
+    atlas: "assets/generated/jttw-player-walkers/wukong/wukong-walk-action-atlas.png",
     titleAliases: [["the monkey", 8], ["the waterfall cave", 5], ["powerful sage", 7], ["peach garden", 5], ["trouble in heaven", 7], ["the bet", 5], ["wukong gets tricked", 8], ["sun kongwu", 8], ["two wukongs", 8], ["battle of the wukongs", 8]],
     aliases: [["悟空", 3], ["齐天大圣", 4], ["美猴王", 4], ["wukong", 3], ["sun wukong", 4], ["monkey king", 4], ["monkey", 0.25]],
   }),
@@ -211,8 +212,16 @@ const WALKING_CAST = Object.freeze({
   dragonking: Object.freeze({
     id: "dragonking", nameZh: "东海龙王", nameEn: "East Sea Dragon King",
     gif: "assets/generated/jttw-player-walkers/dragonking/dragonking-walk.gif",
+    atlas: "assets/generated/jttw-player-walkers/dragonking/dragonking-walk-action-atlas.png",
     titleAliases: [["the dragon king", 8], ["tea with a dragon", 6]],
     aliases: [["东海龙王", 7], ["龙王", 6], ["龙宫", 4], ["dragon king", 7], ["east sea dragon king", 7], ["dragon palace", 4], ["dragon", 0.35]],
+  }),
+  chaosdemon: Object.freeze({
+    id: "chaosdemon", nameZh: "混世魔王", nameEn: "Demon of Chaos",
+    gif: "assets/generated/jttw-player-walkers/chaosdemon/chaosdemon-walk.gif",
+    atlas: "assets/generated/jttw-player-walkers/chaosdemon/chaosdemon-walk-action-atlas.png",
+    titleAliases: [["the demon of chaos", 10]],
+    aliases: [["混世魔王", 9], ["混世", 8], ["demon of chaos", 9], ["chaos demon", 9]],
   }),
   whitedragonhorse: Object.freeze({
     id: "whitedragonhorse", nameZh: "白龙马", nameEn: "White Dragon Horse",
@@ -223,6 +232,7 @@ const WALKING_CAST = Object.freeze({
   subodhi: Object.freeze({
     id: "subodhi", nameZh: "菩提祖师", nameEn: "Patriarch Subhuti",
     gif: "assets/generated/jttw-player-walkers/subodhi/subodhi-walk.gif",
+    atlas: "assets/generated/jttw-player-walkers/subodhi/subodhi-walk-action-atlas.png",
     titleAliases: [["secret formulas", 9], ["菩提祖师", 9]],
     aliases: [["菩提祖师", 7], ["菩提", 6], ["祖师", 3], ["subhuti", 7], ["patriarch subhuti", 7], ["master subhuti", 6]],
   }),
@@ -307,10 +317,15 @@ const WALKING_CAST = Object.freeze({
 });
 let episodeWalker = null;
 let episodeWalkerEpisode = null;
+/* c01 章节内的主角是剧情资产的固定绑定，不依赖不完整的标题/台词抓取。 */
+const EPISODE_WALKER_OVERRIDES = Object.freeze({
+  1: "wukong", 2: "wukong", 3: "subodhi", 4: "subodhi",
+  5: "chaosdemon", 6: "dragonking", 7: "wukong",
+});
 
 let advanceTimer = 0;
 const media = WalaMedia.createController({
-  audio: new Audio(),
+  audio: window.BookPlayAudio?.watchMedia(new Audio()) || new Audio(),
   rate: playRate,
   getBook: () => book,
   getEpisode: () => ep,
@@ -591,6 +606,12 @@ function titleSources() {
 
 function resolveEpisodeWalker() {
   if (episodeWalker && episodeWalkerEpisode === ep) return episodeWalker;
+  const explicitId = EPISODE_WALKER_OVERRIDES[ep];
+  if (explicitId && WALKING_CAST[explicitId]) {
+    episodeWalker = WALKING_CAST[explicitId];
+    episodeWalkerEpisode = ep;
+    return episodeWalker;
+  }
   const title = `${book?.title?.zh || ""} ${book?.title?.en || ""} ${episodeCatalog?.[ep]?.title?.zh || ""} ${episodeCatalog?.[ep]?.title?.en || ""}`;
   const normalizedTitles = titleSources();
   const body = (book?.nodes || []).map((node) => [
@@ -938,6 +959,7 @@ function renderCard(card) {
       if (ok) {
         box.dataset.done = "1";
         b.classList.add("right");
+        window.BookPlayAudio?.sfx("correct");
         bumpStat(card.term, true);
         addSP(10);
         playSeq(termItems(card.term, card.zh));
@@ -945,6 +967,7 @@ function renderCard(card) {
         maybeAutoAfterQuiz(box);
       } else {
         b.classList.add("wrong");
+        window.BookPlayAudio?.sfx("retry");
         b.disabled = true;
         bumpStat(card.term, false);
       }
@@ -1906,6 +1929,7 @@ function showFreezeQuiz(q, onDone, meta = {}) {
         el.puzzle.dataset.done = "1";
         q._asked = true;
         b.classList.add("right");
+        window.BookPlayAudio?.sfx("correct");
         addSP(10);
         bumpStat(q.review_term || "quiz", true);
         resolveCarryover(meta.carryoverItem);
@@ -1920,6 +1944,7 @@ function showFreezeQuiz(q, onDone, meta = {}) {
         } else setTimeout(advance, 800);
       } else {
         b.classList.add("wrong");
+        window.BookPlayAudio?.sfx("retry");
         b.disabled = true;
         bumpStat(q.review_term || "quiz", false);
       }
@@ -2237,12 +2262,14 @@ function renderReviewTab(tab) {
           if (ok) {
             box.dataset.done = "1";
             b.classList.add("right");
+        window.BookPlayAudio?.sfx("correct");
             addSP(10);
             bumpStat(term, true);
             playSeq(termItems(term, zh));
             setTimeout(() => box.classList.add("vdone"), 350);
           } else {
             b.classList.add("wrong");
+        window.BookPlayAudio?.sfx("retry");
             b.disabled = true;
             bumpStat(term, false);
           }

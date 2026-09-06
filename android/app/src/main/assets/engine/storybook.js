@@ -539,6 +539,7 @@ function vocabProgress() {
 
 function recordQuizAnswer(question, correct) {
   if (!question) return;
+  window.BookPlayAudio?.sfx(correct ? "correct" : "retry");
   const term = question.term || "";
   if (studyReplayState && term) {
     updateStudyProgress((record) => studyReplayState.recordQuizTerm(record, term, correct, episodeStudyContract()));
@@ -1029,6 +1030,51 @@ function renderGlossaryCards(example, glossary, sentenceMode = false) {
   glossEl.appendChild(wrap);
 }
 
+/* ===== 章节显示：book.chapters = [{index, title_en, title_zh, from, to}] ===== */
+
+let lastChapterIndex = null;
+let lastRenderedPageNo = null;
+
+function chapterFor(page) {
+  const chapters = book && Array.isArray(book.chapters) ? book.chapters : null;
+  if (!chapters || !page) return null;
+  const no = page.page_no;
+  return chapters.find((c) => no >= c.from && no <= c.to) || null;
+}
+
+function showChapterCard(ch) {
+  const inner = $("sb-stage-inner");
+  if (!inner) return;
+  let card = $("sb-chapter-card");
+  if (!card) {
+    card = document.createElement("div");
+    card.id = "sb-chapter-card";
+    inner.appendChild(card);
+  }
+  card.innerHTML = `<p class="sb-chapter-kicker">第 ${ch.index} 章</p>` +
+    `<h3>${ch.title_en}</h3><p class="sb-chapter-zh">${ch.title_zh}</p>`;
+  card.classList.add("is-visible");
+  clearTimeout(showChapterCard._timer);
+  showChapterCard._timer = setTimeout(() => card.classList.remove("is-visible"), 2600);
+}
+
+function applyChapterView(page, pageChanged) {
+  const ch = chapterFor(page);
+  const label = $("chapter-label");
+  if (ch) {
+    if (label) {
+      label.hidden = false;
+      label.textContent = `第 ${ch.index} 章 · ${ch.title_zh} · ${ch.title_en}`;
+    }
+    // 首次打开书（第 1 页）不弹章节卡；跨页进入新章节时才弹
+    if (pageChanged && lastChapterIndex !== null && ch.index !== lastChapterIndex) showChapterCard(ch);
+    lastChapterIndex = ch.index;
+  } else {
+    if (label) label.hidden = true;
+    lastChapterIndex = null;
+  }
+}
+
 function renderPage() {
   const page = book.pages[idx];
   const sents = pageSentences(page);
@@ -1070,6 +1116,8 @@ function renderPage() {
   pageImg.src = `../${page.image}`;
   pageImg.alt = `page ${page.page_no}`;
   applyPageView();
+  applyChapterView(page, page.page_no !== lastRenderedPageNo);
+  lastRenderedPageNo = page.page_no;
   pageImg.classList.remove("clip");
   modeEl.textContent = "";
   spriteImg.classList.add("hidden");
@@ -1720,6 +1768,7 @@ function playQuizSentenceClip(relPath) {
   try {
     if (quizClipAudio) quizClipAudio.pause();
     quizClipAudio = new Audio(runtimeAssetUrl(relPath));
+    window.BookPlayAudio?.watchMedia(quizClipAudio);
     quizClipAudio.play().catch(() => {});
   } catch (_) {}
 }
@@ -1803,6 +1852,7 @@ function appendQuizHint(card, display, idSuffix) {
 function renderQuiz() {
   const quiz = quizQuestions();
   quizEl.innerHTML = "";
+  applyQuizBackground();
   const head = document.createElement("div");
   head.className = "sb-quiz-head";
   const kicker = document.createElement("p");
@@ -2281,6 +2331,16 @@ function renderPracticeResult() {
     startPracticeQuiz(practiceState.questions.filter((q) => wrongSet.has(q.id)), { resetRecovery: false });
   });
   actions.append(back, retry);
+  if (request.series === "jttw") {
+    const battle = document.createElement("button");
+    battle.type = "button";
+    battle.textContent = "⚔️ 去打怪";
+    battle.setAttribute("aria-label", `用第${ep}集单词打怪闯关`);
+    battle.addEventListener("click", () => {
+      window.location.href = `battle.html?ep=${ep}`;
+    });
+    actions.append(battle);
+  }
   const completion = document.createElement("section");
   completion.className = "sb-completion-card";
   completion.setAttribute("aria-label", summary.passed ? `本${STORY_UNIT_ZH}完成卡` : `本${STORY_UNIT_ZH}学习结果`);
@@ -2382,6 +2442,7 @@ function closeQuiz() {
 }
 
 function finishQuiz() {
+  window.BookPlayAudio?.sfx("complete");
   if (practiceState && isUnifiedV3()) {
     const finalSummary = BookPlayStorybookPractice.practiceSummary(practiceState);
     saveQuizResult(finalSummary);
@@ -2402,9 +2463,19 @@ function finishQuiz() {
   endNav.classList.remove("hidden");
 }
 
+function applyQuizBackground() {
+  if (!quizEl) return;
+  const rel = book && book.quiz_bg;
+  quizEl.style.backgroundImage = rel
+    ? `radial-gradient(circle at 20% 15%, rgba(255, 255, 255, 0.1), transparent 42%), ` +
+      `url("../${rel}") center / cover no-repeat, rgba(255, 216, 79, 0.96)`
+    : "";
+}
+
 function renderQuizItem() {
   const quiz = quizQuestions();
   quizEl.innerHTML = "";
+  applyQuizBackground();
   const q = practiceState && practiceState.questions.length
     ? practiceState.questions[quizIndex]
     : quiz[quizIndex];
@@ -2654,6 +2725,14 @@ async function main() {
     else bidx = 0;
   } else if (saved && saved.page) {
     idx = Math.min(book.pages.length - 1, Math.max(0, saved.page - 1));
+  }
+  // 地图章节节点跳转：?chapter=N 直接落到该章第一页
+  if (request.chapter && Array.isArray(book.chapters)) {
+    const ch = book.chapters.find((c) => c.index === request.chapter || c.from === request.chapter);
+    if (ch) {
+      const first = book.pages.findIndex((p) => p.page_no >= ch.from && p.page_no <= ch.to);
+      if (first >= 0) { idx = first; sentIdx = 0; }
+    }
   }
   const nextBook = nextPublishedBookId(ep);
   const nextHref = request.series === "minecraft"

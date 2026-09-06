@@ -29,6 +29,7 @@ const ui = {
   title: document.getElementById("lesson-title"),
   kicker: document.getElementById("lesson-kicker"),
   progress: document.getElementById("lesson-progress"),
+  walker: document.getElementById("lesson-walker"),
   card: document.getElementById("lesson-card"),
   tip: document.getElementById("teacher-tip"),
   slide: document.getElementById("lesson-slide"),
@@ -58,6 +59,7 @@ let rewardState = {};
 let rewardOffer = null;
 let studySession = null;
 const lessonAudio = typeof Audio === "function" ? new Audio() : null;
+window.BookPlayAudio?.watchMedia(lessonAudio);
 const voiceSttEndpoint = String(params.get("voiceStt") || "").trim();
 let voicePort = null;
 try {
@@ -668,15 +670,6 @@ function buildQuestions(cards, selected, storyData, settings, session) {
     output.push(question);
   };
 
-  if (core && typeof core.buildListenPictureQuestions === "function") {
-    const listenCount = settings && settings.gradeBand === "g1_2" ? 3 : 1;
-    const listenChoiceCount = settings && settings.gradeBand === "g1_2" ? 2 : 4;
-    core.buildListenPictureQuestions(storyData, {
-      count: listenCount,
-      choiceCount: listenChoiceCount,
-    }).forEach(add);
-  }
-
   if (words[0]) add(core.buildWordQuestion(words[0], wordPool, episode, "en_to_zh"));
   if (words[1] || words[0]) add(core.buildWordQuestion(words[1] || words[0], wordPool, episode, "zh_to_en"));
 
@@ -786,6 +779,8 @@ function answerQuestion(button, value) {
 }
 
 function appendFeedback(question, isCorrect, detailEn, detailZh) {
+  stopLessonAudio();
+  window.BookPlayAudio?.sfx(isCorrect ? "correct" : "retry");
   const feedback = document.createElement("div");
   feedback.className = `feedback ${isCorrect ? "is-correct" : "is-wrong"}`;
   const evidence = question && question.answerEvidence
@@ -948,6 +943,8 @@ function setListenPictureOptionsDisabled(disabled) {
 }
 
 function appendListenPictureFeedback(question, isCorrect) {
+  stopLessonAudio();
+  window.BookPlayAudio?.sfx(isCorrect ? "correct" : "retry");
   const previous = ui.card.querySelector(".listen-picture-feedback");
   if (previous) previous.remove();
   const feedback = document.createElement("div");
@@ -1278,6 +1275,7 @@ function renderStudyGate() {
 
 function finishLesson(empty = false) {
   stopLessonAudio();
+  if (!empty) window.BookPlayAudio?.sfx("complete");
   setTeacherState("idle");
   const scoreTotal = questions.filter((question) => question.scoreable !== false).length;
   const outcome = core && typeof core.evaluateLessonResult === "function"
@@ -1318,6 +1316,14 @@ async function start() {
     // The lesson guide remains usable when an older offline pack has no story
     // companion; sentence-choice cards still provide a complete fallback.
     story = {};
+  }
+  if (ui.walker && window.WalaWalkerProgress && window.WalaWalkerCast) {
+    const walkerRole = window.WalaWalkerCast.resolve(story, episode);
+    window.WalaWalkerProgress.mount(ui.walker, {
+      gif: `../${walkerRole.gif}`,
+      nameZh: walkerRole.nameZh,
+      labelEl: ui.progress,
+    });
   }
   rewardCatalog = await loadRewardCatalog();
   rewardState = readRewardState();
