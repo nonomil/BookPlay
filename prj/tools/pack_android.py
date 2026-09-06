@@ -45,6 +45,11 @@ ENGINE_FILES = [
     "voice-core.js", "voice.js", "review-queue.js", "episode-reward.js",
     "adventure.html", "adventure.js", "adventure.css",
     "map.html", "map.js", "map.css",
+    # 降妖记小游戏：战斗页 + 大地图探索页及其运行时依赖
+    "battle.html", "battle.js", "battle.css", "battle-core.js",
+    "game.html", "game.js", "game.css",
+    "episode-vocab-quiz.js",
+    "tv.css", "tv-remote.js",
     "companion.html", "companion.js", "companion.css", "companion-core.js",
     "medals.html", "stickers.html", "room.html",
     "index.html", "main.js",

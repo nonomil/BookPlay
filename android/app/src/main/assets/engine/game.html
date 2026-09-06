@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>降妖记·大地图 | 豆豆龙英语</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="tv.css?v=game-1">
+  <link rel="stylesheet" href="app-audio.css?v=1">
+  <link rel="stylesheet" href="battle.css?v=battle-3">
+  <link rel="stylesheet" href="game.css?v=game-1">
+</head>
+<body>
+  <main class="game" id="game-root">
+    <section class="game-scene" id="game-scene" aria-label="探索地图">
+      <div class="game-backdrop" id="game-backdrop" aria-hidden="true"></div>
+      <div class="game-walkzone" id="game-walkzone" aria-hidden="true"></div>
+      <div class="game-entities" id="game-entities"></div>
+      <div class="game-projectiles" id="game-projectiles" aria-hidden="true"></div>
+      <div class="game-particles" id="game-particles" aria-hidden="true"></div>
+    </section>
+
+    <header class="game-hud">
+      <div class="game-shields" id="game-shields" aria-label="护盾">🛡️🛡️🛡️</div>
+      <div class="game-progress" id="game-progress" aria-label="进度">0 / 0</div>
+      <div class="game-target" id="game-target" aria-live="polite">
+        <span class="game-target-label">目标</span>
+        <strong id="game-target-zh">…</strong>
+        <button type="button" id="game-target-speak" aria-label="朗读目标词" tabindex="0">♪</button>
+      </div>
+      <button type="button" class="game-exit" id="game-exit" aria-label="暂停" tabindex="0">∥</button>
+    </header>
+
+    <div class="game-tray" id="game-tray" aria-label="收集"></div>
+    <div class="game-joystick" id="game-joystick" aria-hidden="true"><div class="game-stick" id="game-stick"></div></div>
+    <div class="game-dpad-hint" id="game-dpad-hint" aria-hidden="true">方向键移动 · OK 交互</div>
+
+    <section class="game-dialogue" id="game-dialogue" hidden aria-live="polite">
+      <img class="game-dialogue-face" id="game-dialogue-face" alt="" decoding="async">
+      <div class="game-dialogue-body">
+        <span class="game-dialogue-name" id="game-dialogue-name">NPC</span>
+        <p class="game-dialogue-en" id="game-dialogue-en"></p>
+        <p class="game-dialogue-zh" id="game-dialogue-zh"></p>
+        <div class="game-dialogue-choices" id="game-dialogue-choices"></div>
+        <button type="button" class="game-primary" id="game-dialogue-next" tabindex="0">继续 ▼</button>
+      </div>
+    </section>
+
+    <section class="game-quickquiz" id="game-quickquiz" hidden aria-live="polite"></section>
+    <section class="game-panel game-bossgate" id="game-bossgate" hidden aria-live="polite"></section>
+    <section class="game-panel game-pause" id="game-pause" hidden aria-label="暂停">
+      <h2 class="battle-panel-title">休息一下</h2>
+      <button type="button" class="game-primary" id="game-resume" tabindex="0">继续冒险</button>
+      <button type="button" class="battle-secondary" id="game-restart" tabindex="0">重玩本集</button>
+      <button type="button" class="battle-secondary" id="game-map" tabindex="0">回地图</button>
+    </section>
+    <section class="game-panel game-gate" id="game-gate" hidden aria-live="polite"></section>
+    <div class="battle-toast" id="game-toast" hidden aria-live="polite"></div>
+  </main>
+
+  <script src="app-audio.js?v=2"></script>
+  <script src="tv-remote.js?v=game-1"></script>
+  <script src="battle-core.js?v=battle-3"></script>
+  <script src="game.js?v=game-4"></script>
+</body>
+</html>

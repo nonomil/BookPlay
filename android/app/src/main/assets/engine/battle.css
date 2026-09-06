@@ -1,0 +1,521 @@
+/* 降妖记战斗页样式：全屏场景 + 底部词球栏，触屏与电视 D-pad 双适配。
+ * 焦点环、64px 命中高度、safe-area 与 reduced-motion 均遵循 tv.css 合同。 */
+
+.battle {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: #1b2437;
+  color: #fff;
+  font-family: "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+  padding-inline: var(--tv-safe-inline, 12px);
+  padding-bottom: env(safe-area-inset-bottom, 0);
+}
+
+.battle-scene {
+  position: absolute;
+  inset: 0;
+}
+
+.battle-backdrop {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  filter: blur(2px) brightness(0.55) saturate(1.05);
+}
+
+.battle-backdrop::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(10, 14, 26, 0.25), rgba(10, 14, 26, 0.72));
+}
+
+.battle-hero {
+  position: absolute;
+  left: 4%;
+  bottom: 26%;
+  width: clamp(88px, 14vw, 160px);
+  min-height: 64px;
+  display: flex;
+  align-items: flex-end;
+  z-index: 2;
+  animation: battle-bob 1.6s ease-in-out infinite;
+}
+
+.battle-hero img,
+.battle-monster img {
+  width: 100%;
+  height: auto;
+  max-height: 30vh;
+  object-fit: contain;
+  filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.45));
+}
+
+.battle-sprite-placeholder {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.14);
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(28px, 5vw, 48px);
+}
+
+@keyframes battle-bob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.battle-monsters {
+  position: absolute;
+  right: 4%;
+  bottom: 24%;
+  display: flex;
+  gap: clamp(8px, 2vw, 24px);
+  align-items: flex-end;
+  z-index: 2;
+}
+
+.battle-monster {
+  position: relative;
+  width: clamp(72px, 11vw, 128px);
+  min-height: 64px;
+  border: 0;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.25s ease, opacity 0.4s ease;
+}
+
+.battle-monster[aria-current="true"] {
+  transform: scale(1.12);
+}
+
+.battle-monster[aria-current="true"] .battle-monster-word {
+  background: #ffd76a;
+  color: #4a2f00;
+}
+
+.battle-monster-word {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(20, 26, 44, 0.85);
+  border: 2px solid rgba(255, 255, 255, 0.55);
+  font-size: clamp(13px, 1.8vw, 20px);
+  white-space: nowrap;
+}
+
+.battle-monster.is-dead {
+  opacity: 0;
+  transform: translateY(18px) scale(0.8);
+  pointer-events: none;
+}
+
+.battle-monster.is-hurt {
+  filter: brightness(1.8) saturate(2);
+}
+
+.battle-projectiles {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 3;
+}
+
+.battle-projectile {
+  position: absolute;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: radial-gradient(circle at 30% 30%, #fff3c4, #ffb347);
+  color: #5a3200;
+  font-weight: 700;
+  transition: transform 0.45s ease, opacity 0.45s ease;
+}
+
+/* HUD */
+
+.battle-hud {
+  position: relative;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: clamp(10px, 2vw, 18px);
+  font-size: clamp(14px, 2vw, 20px);
+}
+
+.battle-hud > * {
+  min-height: 64px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.battle-progress,
+.battle-combo {
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: rgba(15, 20, 36, 0.72);
+  border: 2px solid rgba(255, 255, 255, 0.35);
+}
+
+.battle-exit {
+  margin-left: auto;
+  min-width: 64px;
+  min-height: 64px;
+  border-radius: 16px;
+  font-size: 22px;
+  background: rgba(15, 20, 36, 0.72);
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  color: #fff;
+}
+
+/* Boss 血条 */
+
+.battle-bossbar {
+  position: absolute;
+  top: 84px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 4;
+  width: min(520px, 80vw);
+  text-align: center;
+  background: rgba(15, 20, 36, 0.78);
+  border: 2px solid rgba(255, 215, 106, 0.6);
+  border-radius: 16px;
+  padding: 8px 14px;
+}
+
+.battle-boss-hp {
+  display: flex;
+  gap: 4px;
+  margin-top: 6px;
+}
+
+.battle-boss-hp span {
+  flex: 1;
+  height: 12px;
+  border-radius: 6px;
+  background: #e5484d;
+}
+
+.battle-boss-hp span.is-lost {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* 面板：对话 / 预习 / 暂停 / 门禁 */
+
+.battle-dialogue,
+.battle-preview,
+.battle-quiz,
+.battle-result,
+.battle-panel {
+  position: absolute;
+  z-index: 6;
+  left: 50%;
+  bottom: calc(96px + env(safe-area-inset-bottom, 0));
+  transform: translateX(-50%);
+  width: min(720px, 94vw);
+  max-height: 68vh;
+  overflow: auto;
+  background: rgba(16, 22, 40, 0.94);
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-radius: 20px;
+  padding: clamp(14px, 3vw, 26px);
+  text-align: center;
+}
+
+.battle-panel-title {
+  margin: 0 0 12px;
+  font-size: clamp(18px, 3vw, 26px);
+  color: #ffd76a;
+}
+
+.battle-dialogue-face {
+  width: clamp(64px, 12vw, 120px);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.12);
+  object-fit: contain;
+}
+
+.battle-dialogue-en {
+  font-size: clamp(16px, 2.6vw, 24px);
+  margin: 10px 0 4px;
+}
+
+.battle-dialogue-zh {
+  font-size: clamp(13px, 2vw, 18px);
+  opacity: 0.85;
+  margin: 0 0 12px;
+}
+
+.battle-primary,
+.battle-secondary {
+  min-height: 64px;
+  min-width: 120px;
+  border-radius: 16px;
+  font-size: clamp(15px, 2.2vw, 20px);
+  padding: 8px 22px;
+  cursor: pointer;
+}
+
+.battle-primary {
+  background: linear-gradient(180deg, #ffd76a, #e8a13a);
+  color: #4a2f00;
+  border: 0;
+  font-weight: 700;
+}
+
+.battle-secondary {
+  background: rgba(255, 255, 255, 0.12);
+  border: 2px solid rgba(255, 255, 255, 0.45);
+  color: #fff;
+  margin-left: 10px;
+}
+
+.battle-preview-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 14px;
+}
+
+.battle-word-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  min-width: 104px;
+  padding: 10px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.28);
+}
+
+.battle-word-card img {
+  width: 72px;
+  height: 54px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.battle-word-card .battle-word-term {
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.battle-word-card .battle-word-ipa {
+  font-size: 12px;
+  opacity: 0.75;
+}
+
+.battle-word-card .battle-word-zh {
+  font-size: 14px;
+}
+
+.battle-word-card button {
+  min-width: 44px;
+  min-height: 44px;
+  border-radius: 10px;
+  border: 0;
+  background: rgba(255, 215, 106, 0.9);
+  color: #4a2f00;
+}
+
+/* 词球栏 */
+
+.battle-orbs {
+  position: absolute;
+  z-index: 5;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: calc(14px + env(safe-area-inset-bottom, 0));
+  display: flex;
+  gap: 14px;
+}
+
+.battle-orb {
+  min-width: 96px;
+  min-height: 64px;
+  padding: 8px 20px;
+  border-radius: 999px;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  background: radial-gradient(circle at 30% 30%, #fff3c4, #ffb347);
+  color: #5a3200;
+  font-size: clamp(15px, 2.2vw, 21px);
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.4);
+}
+
+.battle-orb.is-spent {
+  opacity: 0.25;
+  pointer-events: none;
+}
+
+/* 结算 */
+
+.battle-result .battle-stars {
+  font-size: clamp(30px, 6vw, 46px);
+  letter-spacing: 8px;
+  margin: 6px 0;
+}
+
+.battle-result .battle-wrong-words {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.battle-result .battle-wrong-words span {
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: rgba(229, 72, 77, 0.28);
+  border: 1px solid rgba(229, 72, 77, 0.7);
+  font-size: 14px;
+}
+
+.battle-result .battle-card-drop {
+  margin: 10px auto;
+  width: min(220px, 60vw);
+  border-radius: 16px;
+  border: 2px solid #ffd76a;
+  background: rgba(255, 215, 106, 0.14);
+  padding: 10px;
+}
+
+.battle-result .battle-card-drop img {
+  width: 100%;
+  max-height: 150px;
+  object-fit: contain;
+}
+
+/* 提示条 */
+
+.battle-toast {
+  position: absolute;
+  z-index: 7;
+  top: 18%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  border-radius: 999px;
+  background: rgba(15, 20, 36, 0.9);
+  border: 2px solid rgba(255, 215, 106, 0.7);
+  font-size: clamp(14px, 2vw, 19px);
+}
+
+/* 测验选项 */
+
+.battle-quiz .battle-quiz-choices {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.battle-quiz .battle-quiz-choice {
+  min-height: 64px;
+  border-radius: 14px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: clamp(14px, 2vw, 18px);
+  padding: 8px 12px;
+}
+
+/* 触屏小屏微调 */
+
+@media (max-width: 700px) {
+  .battle-hero { bottom: 34%; }
+  .battle-monsters { bottom: 32%; flex-wrap: wrap; justify-content: flex-end; max-width: 70vw; }
+  .battle-orbs { flex-wrap: wrap; justify-content: center; width: 96vw; }
+  .battle-quiz .battle-quiz-choices { grid-template-columns: 1fr; }
+}
+
+@media (min-width: 1000px) and (orientation: landscape) {
+  .battle-orbs { bottom: calc(20px + env(safe-area-inset-bottom, 0)); }
+  .battle-hero { bottom: 30%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .battle-hero { animation: none; }
+  .battle-projectile,
+  .battle-monster { transition: none; }
+  .battle-monster.is-dead { opacity: 0.25; transform: none; }
+}
+
+/* Boss 对战表现（借鉴 pet-battle-template：突进 → 命中闪光+后仰 → 伤害浮字） */
+
+.battle-hero.is-lunge {
+  animation: battle-lunge 0.42s ease;
+}
+
+@keyframes battle-lunge {
+  0% { transform: translateX(0); }
+  40% { transform: translateX(26px); }
+  100% { transform: translateX(0); }
+}
+
+.battle-monster.is-recoil {
+  animation: battle-recoil 0.45s ease;
+}
+
+@keyframes battle-recoil {
+  0% { transform: none; }
+  30% { transform: translateX(-10px) rotate(-3deg); }
+  100% { transform: none; }
+}
+
+.game-battle-impact {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  margin: -45px 0 0 -45px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 241, 196, 0.95), rgba(255, 179, 71, 0.35) 55%, transparent 70%);
+  animation: battle-impact 0.5s ease-out forwards;
+  pointer-events: none;
+  z-index: 5;
+}
+
+@keyframes battle-impact {
+  from { transform: scale(0.3); opacity: 1; }
+  to { transform: scale(1.6); opacity: 0; }
+}
+
+.battle-dmgpop {
+  position: absolute;
+  font-weight: 800;
+  font-size: clamp(14px, 2vw, 19px);
+  color: #ffd76a;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+  animation: battle-dmgfloat 0.9s ease-out forwards;
+  pointer-events: none;
+  white-space: nowrap;
+  z-index: 5;
+}
+
+@keyframes battle-dmgfloat {
+  from { transform: translateY(0); opacity: 1; }
+  to { transform: translateY(-56px); opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .battle-hero.is-lunge,
+  .battle-monster.is-recoil,
+  .game-battle-impact,
+  .battle-dmgpop {
+    animation: none;
+  }
+}

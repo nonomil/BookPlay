@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>降妖记 | 豆豆龙英语</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="tv.css?v=battle-1">
+  <link rel="stylesheet" href="battle.css?v=battle-1">
+  <link rel="stylesheet" href="app-audio.css?v=1">
+  <script src="app-audio.js?v=2"></script>
+</head>
+<body data-audio-scene="jttw">
+  <main class="battle" id="battle-root">
+    <section class="battle-scene" aria-label="战斗场景">
+      <div class="battle-backdrop" id="battle-backdrop" aria-hidden="true"></div>
+      <div class="battle-hero" id="battle-hero" aria-hidden="true"></div>
+      <div class="battle-monsters" id="battle-monsters"></div>
+      <div class="battle-projectiles" id="battle-projectiles" aria-hidden="true"></div>
+    </section>
+
+    <header class="battle-hud">
+      <div class="battle-shields" id="battle-shields" aria-label="护盾">🛡️🛡️🛡️</div>
+      <div class="battle-progress" id="battle-progress" aria-label="进度">0 / 0</div>
+      <div class="battle-combo" id="battle-combo" aria-label="连击">连击 0</div>
+      <button type="button" class="battle-exit" id="battle-exit" aria-label="暂停">∥</button>
+    </header>
+
+    <section class="battle-bossbar" id="battle-bossbar" hidden>
+      <strong id="battle-boss-name">Boss</strong>
+      <div class="battle-boss-hp" id="battle-boss-hp"></div>
+    </section>
+
+    <section class="battle-dialogue" id="battle-dialogue" hidden aria-live="polite">
+      <img class="battle-dialogue-face" id="battle-dialogue-face" alt="" decoding="async">
+      <p class="battle-dialogue-en" id="battle-dialogue-en"></p>
+      <p class="battle-dialogue-zh" id="battle-dialogue-zh"></p>
+      <button type="button" class="battle-primary" id="battle-dialogue-next" tabindex="0">继续 ▶</button>
+    </section>
+
+    <section class="battle-preview" id="battle-preview" hidden aria-label="战前预习">
+      <h2 class="battle-panel-title">战前预习 · 记住这些词</h2>
+      <div class="battle-preview-cards" id="battle-preview-cards"></div>
+      <button type="button" class="battle-primary" id="battle-preview-start" tabindex="0">开打！⚔️</button>
+    </section>
+
+    <section class="battle-orbs" id="battle-orbs" aria-label="词球"></section>
+
+    <section class="battle-quiz" id="battle-quiz" hidden aria-label="关底测验"></section>
+
+    <section class="battle-result" id="battle-result" hidden aria-live="polite"></section>
+
+    <section class="battle-panel battle-pause" id="battle-pause" hidden aria-label="暂停">
+      <h2 class="battle-panel-title">休息一下</h2>
+      <span data-audio-slot></span>
+      <button type="button" class="battle-primary" id="battle-resume" tabindex="0">继续战斗</button>
+      <button type="button" class="battle-secondary" id="battle-restart" tabindex="0">重玩本集</button>
+      <button type="button" class="battle-secondary" id="battle-map" tabindex="0">回地图</button>
+    </section>
+
+    <section class="battle-panel battle-gate" id="battle-gate" hidden aria-live="polite"></section>
+
+    <div class="battle-toast" id="battle-toast" hidden aria-live="polite"></div>
+  </main>
+
+  <script src="tv-remote.js?v=battle-1"></script>
+  <script src="episode-vocab-quiz.js?v=battle-1"></script>
+  <script src="battle-core.js?v=battle-3"></script>
+  <script src="battle.js?v=battle-4"></script>
+</body>
+</html>
