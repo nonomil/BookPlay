@@ -1,11 +1,14 @@
 "use strict";
 
-/* 降妖记·大地图探索页：单屏主题地图 + 主角四方向行走（点地直达/摇杆/D-pad）+
- * 小怪头顶英文词游荡 + 点目标怪飞金箍棒 + 命中后中文 3 选 1 快卡 +
- * NPC 剧情对话与答题奖励 + Boss 区跳转 battle.html 对战。
- * 移动内核借鉴 word-memory-map：rAF 逐帧更新既有 DOM 的 left/top，不重建节点。
- * 对话结构借鉴 pixel-story-engine：扁平游标 + 逐句推进 + choice 行反馈。
- * 纯逻辑复用 battle-core.js；存储键合同：bookplay_battle_progress_v1 / bookplay_battle_collection_v1。
+/* 降妖记·大地图（word-memory-map 同款玩法移植）：
+ * 3×3 平铺大世界 + 镜头跟随；主角八方向自由行走（方向键/摇杆）；
+ * 小怪头顶英文单词、会追踪并撞击主角；地面刷中文词球，走过捡起、
+ * 点对小怪投掷（追踪弹）；答对爆碎掉星/掉道具，答错词球弹回；
+ * 支援道具（蟠桃回盾/芭蕉扇横扫）；区域横幅推进波次；
+ * NPC 剧情对话答题（pixel-story 式游标）；Boss 区跳转 battle.html 对战。
+ * 移动内核与实体渲染方式对照 word-memory-map：世界坐标 → 百分比定位，
+ * rAF 逐帧只改 left/top 与镜头 translate3d，不重建 DOM。
+ * 纯逻辑复用 battle-core；存储键：bookplay_battle_progress_v1 / bookplay_battle_collection_v1。
  */
 (function () {
   const Core = window.BookPlayBattleCore;
@@ -18,39 +21,62 @@
   const KEY_PROGRESS = "bookplay_battle_progress_v1";
   const KEY_COLLECTION = "bookplay_battle_collection_v1";
 
-  const HERO_SPEED = 0.16;        // 归一化单位/秒
-  const MONSTER_SPEED = 0.028;
-  const MONSTER_IDLE_MS = 1400;
-  const INTERACT_DIST = 0.13;
-  const STAFF_MS = 450;
+  const WORLD = 3;                 // 世界 = 3×3 个视口
+  const HERO_SPEED = 0.92;         // 视口单位/秒
+  const MONSTER_WANDER = 0.22;
+  const MONSTER_CHASE = 0.5;
+  const AGGRO_DIST = 0.55;
+  const KEEP_DIST = 0.17;
+  const ATTACK_DIST = 0.075;
+  const ATTACK_CD = 1800;
+  const HERO_INVULN = 900;
+  const ORB_PICKUP = 0.11;
+  const SHOT_SPEED = 1.75;
+  const SHOT_ARM = 0.12;
+  const SHOT_HIT = 0.07;
+  const SHOT_TTL = 2.2;
+  const INTERACT_DIST = 0.14;
 
-  const FALLBACK_LAYOUT = {
-    walkable: { x: 0.05, y: 0.30, w: 0.90, h: 0.60 },
-    heroSpawn: { x: 0.10, y: 0.62 },
-    monsterSpawns: [
-      { x: 0.48, y: 0.42 }, { x: 0.66, y: 0.60 }, { x: 0.84, y: 0.44 }, { x: 0.54, y: 0.76 },
-    ],
-    npcSpots: [
-      { role: "intro", x: 0.24, y: 0.56 }, { role: "quiz", x: 0.46, y: 0.74 },
-    ],
-    bossSpot: { x: 0.90, y: 0.68 },
+  const THEME_ZH = {
+    "flower-fruit-mountain": "花果山",
+    "water-curtain-cave": "水帘洞",
+    "three-star-cave": "斜月三星洞",
+    "water-dirty-cave": "水脏洞",
+    "dragon-palace": "龙宫",
+    "underworld": "幽冥界",
+  };
+  const WAVE_REGIONS = [1, 7];     // 波次区域（3×3 编号：1=上中，7=下中）
+  const HERO_REGION = 4;           // 出生区域（正中）
+  const BOSS_REGION = 5;           // Boss 区（右中）
+  const SLOT_MONSTERS = [[0.3, 0.35], [0.72, 0.3], [0.55, 0.68], [0.28, 0.72]];
+  const SLOT_ORBS = [[0.2, 0.52], [0.5, 0.2], [0.82, 0.5], [0.5, 0.82]];
+
+  const FALLBACK_MAP = {
+    theme: "generic",
+    npcSpots: [{ role: "intro", sprite: "imp", nameZh: "小妖" }, { role: "quiz", sprite: "imp", nameZh: "小妖" }],
   };
 
   const $ = (id) => document.getElementById(id);
   const els = {
     root: $("game-root"),
     scene: $("game-scene"),
+    world: $("game-world"),
     backdrop: $("game-backdrop"),
-    walkzone: $("game-walkzone"),
     entities: $("game-entities"),
     projectiles: $("game-projectiles"),
     particles: $("game-particles"),
-    shields: $("game-shields"),
+    stars: $("game-stars"),
     progress: $("game-progress"),
-    targetZh: $("game-target-zh"),
-    targetSpeak: $("game-target-speak"),
+    shields: $("game-shields"),
+    carried: $("game-carried"),
+    combo: $("game-combo"),
+    hint: $("game-hint"),
     exit: $("game-exit"),
-    tray: $("game-tray"),
+    banner: $("game-banner"),
+    bannerKicker: $("game-banner-kicker"),
+    bannerTitle: $("game-banner-title"),
+    supports: $("game-supports"),
+    hintcard: $("game-hintcard"),
     joystick: $("game-joystick"),
     stick: $("game-stick"),
     dialogue: $("game-dialogue"),
@@ -60,7 +86,6 @@
     dialogueZh: $("game-dialogue-zh"),
     dialogueChoices: $("game-dialogue-choices"),
     dialogueNext: $("game-dialogue-next"),
-    quickquiz: $("game-quickquiz"),
     bossgate: $("game-bossgate"),
     pause: $("game-pause"),
     gate: $("game-gate"),
@@ -74,25 +99,36 @@
     phase: "loading",
     locked: false,
     paused: false,
-    ignoreHidden: false, // 测试钩子：后台仍步进（配合 BookPlayGameDebug）
-    hero: { x: 0.1, y: 0.62, tx: 0.1, ty: 0.62, dir: "south", el: null, img: null },
+    ignoreHidden: false,
+    vw: window.innerWidth,
+    vh: window.innerHeight,
+    hero: { x: 1.5, y: 1.5, dir: "south", el: null, img: null, invulnUntil: 0 },
+    camera: { x: 0, y: 0 },
     monsters: [],
+    orbs: [],
+    shots: [],
     npcs: [],
     bossSpot: null,
+    waveIndex: 0,
+    killed: 0,
+    stars: 0,
     shield: 3,
     combo: { streak: 0 },
     wrongWords: {},
-    killed: 0,
-    loot: [],
+    carried: null,          // {zh, el?} 手里的中文词球
+    items: { peach: 0, fan: 0 },
     npcBonus: false,
     introAutoPlayed: false,
     bossGateOpen: false,
+    bossReady: false,
     bossNear: false,
     intent: { x: 0, y: 0 },
     held: new Set(),
-    raf: 0,
     lastTs: 0,
+    raf: 0,
   };
+
+  /* ---------- 基础工具 ---------- */
 
   function readStore(key) {
     try {
@@ -147,9 +183,7 @@
 
   function spriteSrc(spriteId) {
     const entry = state.sprites[spriteId];
-    if (entry && entry.gif) return assetUrl(entry.gif);
-    if (entry && entry.source === "walker-fallback" && entry.gif) return assetUrl(entry.gif);
-    return "";
+    return entry && entry.gif ? assetUrl(entry.gif) : "";
   }
 
   function gifForDir(spriteId, dir) {
@@ -173,24 +207,41 @@
     return img;
   }
 
-  function clampToWalkable(x, y) {
-    const w = (state.level && state.level.map && state.level.map.walkable) || FALLBACK_LAYOUT.walkable;
+  function regionOrigin(region) {
+    return { x: region % 3, y: Math.floor(region / 3) };
+  }
+
+  function regionPoint(region, rx, ry) {
+    const origin = regionOrigin(region);
     return {
-      x: Math.min(w.x + w.w, Math.max(w.x, x)),
-      y: Math.min(w.y + w.h, Math.max(w.y, y)),
+      x: Math.min(WORLD - 0.02, Math.max(0.02, origin.x + rx)),
+      y: Math.min(WORLD - 0.02, Math.max(0.02, origin.y + ry)),
+    };
+  }
+
+  function clampWorld(x, y) {
+    return {
+      x: Math.min(WORLD - 0.03, Math.max(0.03, x)),
+      y: Math.min(WORLD - 0.03, Math.max(0.03, y)),
     };
   }
 
   function placeAt(el, x, y) {
-    el.style.left = `${(x * 100).toFixed(2)}%`;
-    el.style.top = `${(y * 100).toFixed(2)}%`;
+    el.style.left = `${(x / WORLD * 100).toFixed(3)}%`;
+    el.style.top = `${(y / WORLD * 100).toFixed(3)}%`;
+  }
+
+  function updateCamera() {
+    state.camera.x = Math.min(WORLD - 1, Math.max(0, state.hero.x - 0.5));
+    state.camera.y = Math.min(WORLD - 1, Math.max(0, state.hero.y - 0.5));
+    els.world.style.transform = `translate3d(${(-state.camera.x * state.vw).toFixed(1)}px, ${(-state.camera.y * state.vh).toFixed(1)}px, 0)`;
   }
 
   /* ---------- 实体构建 ---------- */
 
   function buildEntities() {
     els.entities.textContent = "";
-    const map = state.level.map || FALLBACK_LAYOUT;
+    const map = state.level.map || FALLBACK_MAP;
 
     const heroEl = document.createElement("div");
     heroEl.className = "game-entity is-hero";
@@ -200,25 +251,22 @@
     els.entities.appendChild(heroEl);
     state.hero.el = heroEl;
     state.hero.img = heroImg;
-    state.hero.x = map.heroSpawn ? map.heroSpawn.x : 0.1;
-    state.hero.y = map.heroSpawn ? map.heroSpawn.y : 0.62;
-    state.hero.tx = state.hero.x;
-    state.hero.ty = state.hero.y;
+    const spawn = regionPoint(HERO_REGION, 0.5, 0.58);
+    state.hero.x = spawn.x;
+    state.hero.y = spawn.y;
     placeAt(heroEl, state.hero.x, state.hero.y);
 
-    const spawns = (map.monsterSpawns && map.monsterSpawns.length ? map.monsterSpawns : FALLBACK_LAYOUT.monsterSpawns);
+    const region = WAVE_REGIONS[0];
     const waveMonsters = [];
     state.level.waves.forEach((wave, waveIndex) => {
       Core.buildWaveQuestions(state.level, waveIndex, state.wrongWords).forEach((m) => {
-        waveMonsters.push(m);
+        waveMonsters.push(Object.assign({ waveIndex }, m));
       });
     });
     state.monsters = waveMonsters.map((m, idx) => {
-      const spot = spawns[idx % spawns.length];
-      const pos = clampToWalkable(spot.x + (idx % 2 ? 0.02 : -0.02), spot.y);
       const monster = Object.assign({}, m, {
-        el: null, x: pos.x, y: pos.y, tx: pos.x, ty: pos.y,
-        idleUntil: 0, alive: true, speedMul: 1, fleeUntil: 0,
+        el: null, x: 0, y: 0, tx: 0, ty: 0, alive: true,
+        idleUntil: 0, fleeUntil: 0, attackCd: 0, waveIndex: m.waveIndex,
       });
       const el = document.createElement("button");
       el.type = "button";
@@ -235,12 +283,15 @@
       });
       els.entities.appendChild(el);
       monster.el = el;
-      placeAt(el, monster.x, monster.y);
       return monster;
     });
+    spawnWave(0, true);
 
-    state.npcs = ((map.npcSpots && map.npcSpots.length ? map.npcSpots : FALLBACK_LAYOUT.npcSpots) || []).map((spot) => {
-      const npc = { role: spot.role, sprite: spot.sprite, nameZh: spot.nameZh || "", x: spot.x, y: spot.y, el: null, done: false };
+    state.npcs = (map.npcSpots || []).map((spot, idx) => {
+      // intro NPC 在出生区，quiz NPC 在第二波区域
+      const region = spot.role === "intro" ? HERO_REGION : (WAVE_REGIONS[1] ?? HERO_REGION);
+      const pos = regionPoint(region, 0.5 + (idx % 2 ? 0.16 : -0.18), 0.62);
+      const npc = { role: spot.role, sprite: spot.sprite, nameZh: spot.nameZh || "", x: pos.x, y: pos.y, el: null, done: false };
       const el = document.createElement("button");
       el.type = "button";
       el.className = "game-entity is-npc";
@@ -260,37 +311,110 @@
       return npc;
     });
 
-    if (map.bossSpot) {
-      const boss = state.level.cast.boss;
-      const el = document.createElement("button");
-      el.type = "button";
-      el.className = "game-entity is-bossspot";
-      el.setAttribute("aria-label", `挑战${boss.nameZh}`);
-      const aura = document.createElement("span");
-      aura.className = "game-boss-aura";
-      aura.textContent = "⚔️";
-      el.appendChild(aura);
-      el.appendChild(makeImg(boss.sprite, "south", boss.nameZh));
-      el.addEventListener("click", (ev) => {
-        ev.stopPropagation();
-        openBossGate();
-      });
-      els.entities.appendChild(el);
-      placeAt(el, map.bossSpot.x, map.bossSpot.y);
-      state.bossSpot = { x: map.bossSpot.x, y: map.bossSpot.y, el };
-    }
+    const boss = state.level.cast.boss;
+    const bossPos = regionPoint(BOSS_REGION, 0.5, 0.5);
+    const bossEl = document.createElement("button");
+    bossEl.type = "button";
+    bossEl.className = "game-entity is-bossspot";
+    bossEl.setAttribute("aria-label", `挑战${boss.nameZh}`);
+    const aura = document.createElement("span");
+    aura.className = "game-boss-aura";
+    aura.textContent = "⚔️";
+    bossEl.appendChild(aura);
+    bossEl.appendChild(makeImg(boss.sprite, "south", boss.nameZh));
+    bossEl.addEventListener("click", (ev) => {
+      ev.stopPropagation();
+      openBossGate();
+    });
+    els.entities.appendChild(bossEl);
+    placeAt(bossEl, bossPos.x, bossPos.y);
+    state.bossSpot = { x: bossPos.x, y: bossPos.y, el: bossEl };
 
-    if (DEBUG) {
-      els.root.classList.add("debug");
-      const w = map.walkable || FALLBACK_LAYOUT.walkable;
-      els.walkzone.style.left = `${w.x * 100}%`;
-      els.walkzone.style.top = `${w.y * 100}%`;
-      els.walkzone.style.width = `${w.w * 100}%`;
-      els.walkzone.style.height = `${w.h * 100}%`;
+    const theme = (state.level.map && state.level.map.theme) || "";
+    const bgUrl = theme && theme !== "generic" ? `../assets/game-backgrounds/${theme}.jpg` : "";
+    if (bgUrl) {
+      els.backdrop.style.backgroundImage = `url("${bgUrl}")`;
+      els.backdrop.addEventListener("error", () => {
+        els.backdrop.style.backgroundImage = state.level.background.illustration
+          ? `url("${assetUrl(state.level.background.illustration)}")`
+          : "";
+      }, { once: true });
+    } else if (state.level.background.illustration) {
+      els.backdrop.style.backgroundImage = `url("${assetUrl(state.level.background.illustration)}")`;
+      els.backdrop.style.backgroundSize = "100% 100%";
+      els.backdrop.style.backgroundRepeat = "no-repeat";
     }
   }
 
-  /* ---------- 移动 ---------- */
+  /* ---------- 波次 ---------- */
+
+  function spawnWave(waveIndex, silent) {
+    state.waveIndex = waveIndex;
+    const region = WAVE_REGIONS[Math.min(waveIndex, WAVE_REGIONS.length - 1)];
+    const waveMonsters = state.monsters.filter((m) => m.waveIndex === waveIndex);
+    waveMonsters.forEach((m, idx) => {
+      const slot = SLOT_MONSTERS[idx % SLOT_MONSTERS.length];
+      const pos = regionPoint(region, slot[0], slot[1]);
+      m.alive = true;
+      m.x = pos.x;
+      m.y = pos.y;
+      m.tx = pos.x;
+      m.ty = pos.y;
+      m.attackCd = 0;
+      m.el.style.display = "";
+      m.el.classList.remove("is-dead");
+      placeAt(m.el, m.x, m.y);
+    });
+    // 地面词球：本波每只小怪的中文释义一颗
+    els.projectiles.querySelectorAll(".game-orb").forEach((el) => el.remove());
+    state.orbs = [];
+    waveMonsters.forEach((m, idx) => {
+      const slot = SLOT_ORBS[idx % SLOT_ORBS.length];
+      const orb = { zh: m.zh, el: null, x: 0, y: 0 };
+      const el = document.createElement("button");
+      el.type = "button";
+      el.className = "game-orb";
+      el.textContent = m.zh;
+      el.setAttribute("aria-label", `捡起词球 ${m.zh}`);
+      el.addEventListener("click", (ev) => {
+        ev.stopPropagation();
+        walkTo(orb.x, orb.y);
+      });
+      els.projectiles.appendChild(el);
+      orb.el = el;
+      const pos = regionPoint(region, slot[0], slot[1]);
+      orb.x = pos.x;
+      orb.y = pos.y;
+      placeAt(el, orb.x, orb.y);
+      state.orbs.push(orb);
+    });
+    if (!silent) {
+      const theme = (state.level.map && state.level.map.theme) || "";
+      showBanner(`第 ${waveIndex + 1} 波`, THEME_ZH[theme] || state.level.title.en);
+      window.BookPlayAudio?.sfx("start");
+    }
+    updateHud();
+  }
+
+  function orbEl(orb) {
+    return orb && orb.el;
+  }
+
+  function walkTo(x, y) {
+    const p = clampWorld(x, y);
+    state.hero.tx = p.x;
+    state.hero.ty = p.y;
+  }
+
+  function aliveMonsters() {
+    return state.monsters.filter((m) => m.alive);
+  }
+
+  function currentWaveAlive() {
+    return state.monsters.filter((m) => m.alive && m.waveIndex === state.waveIndex);
+  }
+
+  /* ---------- 主角移动 ---------- */
 
   function setHeroDir(dir) {
     if (state.hero.dir === dir) return;
@@ -299,8 +423,19 @@
     if (src) state.hero.img.src = src;
   }
 
+  function moveHeroBy(dx, dy, dt) {
+    const step = (dt / 1000) * HERO_SPEED;
+    const magnitude = Math.hypot(dx, dy) || 1;
+    const next = clampWorld(
+      state.hero.x + (dx / magnitude) * step,
+      state.hero.y + (dy / magnitude) * step,
+    );
+    setHeroDir(Math.abs(dx) >= Math.abs(dy) ? (dx < 0 ? "west" : "east") : (dy < 0 ? "north" : "south"));
+    state.hero.x = next.x;
+    state.hero.y = next.y;
+  }
+
   function updateHero(dt) {
-    const hero = state.hero;
     let ix = state.intent.x;
     let iy = state.intent.y;
     state.held.forEach((key) => {
@@ -310,263 +445,281 @@
       if (key === "ArrowDown" || key === "s") iy += 1;
     });
     if (ix || iy) {
-      hero.tx = null;
-      hero.ty = null;
-      const magnitude = Math.hypot(ix, iy) || 1;
-      const step = (dt / 1000) * HERO_SPEED;
-      const next = clampToWalkable(
-        hero.x + (ix / magnitude) * step,
-        hero.y + (iy / magnitude) * step,
-      );
-      setHeroDir(Math.abs(ix) >= Math.abs(iy) ? (ix < 0 ? "west" : "east") : (iy < 0 ? "north" : "south"));
-      hero.x = next.x;
-      hero.y = next.y;
-    } else if (hero.tx != null) {
-      const dx = hero.tx - hero.x;
-      const dy = hero.ty - hero.y;
+      state.hero.tx = null;
+      state.hero.ty = null;
+      moveHeroBy(ix, iy, dt);
+    } else if (state.hero.tx != null) {
+      const dx = state.hero.tx - state.hero.x;
+      const dy = state.hero.ty - state.hero.y;
       const dist = Math.hypot(dx, dy);
-      if (dist < 0.012) {
-        hero.x = hero.tx;
-        hero.y = hero.ty;
-        hero.tx = null;
-        hero.ty = null;
+      if (dist < 0.03) {
+        state.hero.tx = null;
+        state.hero.ty = null;
       } else {
-        const step = Math.min(dist, (dt / 1000) * HERO_SPEED);
-        setHeroDir(Math.abs(dx) >= Math.abs(dy) ? (dx < 0 ? "west" : "east") : (dy < 0 ? "north" : "south"));
-        hero.x += (dx / dist) * step;
-        hero.y += (dy / dist) * step;
+        moveHeroBy(dx, dy, dt);
       }
     }
-    placeAt(hero.el, hero.x, hero.y);
+    placeAt(state.hero.el, state.hero.x, state.hero.y);
   }
 
-  function updateMonsters(dt) {
-    const now = performance.now();
+  /* ---------- 小怪 AI（游荡/追击/撞击，对照 word-memory-map） ---------- */
+
+  function updateMonsters(dt, now) {
+    const hero = state.hero;
     state.monsters.forEach((m) => {
       if (!m.alive) return;
-      const fleeing = now < m.fleeUntil;
-      const speed = MONSTER_SPEED * (fleeing ? 2.6 : 1);
-      const dx = m.tx - m.x;
-      const dy = m.ty - m.y;
-      const dist = Math.hypot(dx, dy);
-      if (dist < 0.01) {
-        if (!m.idleUntil) {
-          m.idleUntil = now + MONSTER_IDLE_MS;
-        } else if (now >= m.idleUntil) {
-          m.idleUntil = 0;
-          const spot = clampToWalkable(m.x + (Math.random() - 0.5) * 0.12, m.y + (Math.random() - 0.5) * 0.12);
-          m.tx = spot.x;
-          m.ty = spot.y;
+      let speed = MONSTER_WANDER;
+      let gx = m.tx;
+      let gy = m.ty;
+      const heroDist = Math.hypot(hero.x - m.x, hero.y - m.y);
+      if (heroDist < AGGRO_DIST && now >= m.fleeUntil) {
+        // 追击但保持距离
+        speed = MONSTER_CHASE;
+        if (heroDist > KEEP_DIST) {
+          gx = hero.x;
+          gy = hero.y;
+        } else {
+          gx = m.x;
+          gy = m.y;
+        }
+        if (heroDist <= ATTACK_DIST && now >= m.attackCd && now >= hero.invulnUntil) {
+          monsterAttack(m);
+          m.attackCd = now + ATTACK_CD;
         }
       } else {
+        if (now < m.fleeUntil) {
+          speed = MONSTER_CHASE * 1.5;
+          const away = clampWorld(m.x - (hero.x - m.x), m.y - (hero.y - m.y));
+          gx = away.x;
+          gy = away.y;
+        } else if (heroDist < AGGRO_DIST) {
+          gx = m.x;
+          gy = m.y;
+        }
+      }
+      const dx = gx - m.x;
+      const dy = gy - m.y;
+      const dist = Math.hypot(dx, dy);
+      if (dist > 0.012) {
         const step = Math.min(dist, (dt / 1000) * speed);
         m.x += (dx / dist) * step;
         m.y += (dy / dist) * step;
+      } else if (!m.fleeUntil || now >= m.fleeUntil) {
+        if (!m.idleUntil) {
+          m.idleUntil = now + 1200 + Math.random() * 900;
+        } else if (now >= m.idleUntil) {
+          m.idleUntil = 0;
+          const origin = regionOrigin(WAVE_REGIONS[Math.min(m.waveIndex, WAVE_REGIONS.length - 1)]);
+          const spot = clampWorld(
+            origin.x + 0.15 + Math.random() * 0.7,
+            origin.y + 0.15 + Math.random() * 0.7,
+          );
+          m.tx = spot.x;
+          m.ty = spot.y;
+        }
       }
       placeAt(m.el, m.x, m.y);
     });
   }
 
-  function nearestEntity() {
-    let best = null;
-    let bestDist = INTERACT_DIST;
-    const check = (x, y) => Math.hypot(state.hero.x - x, state.hero.y - y);
-    state.monsters.forEach((m) => {
-      if (!m.alive) return;
-      const d = check(m.x, m.y);
-      if (d < bestDist) { best = { kind: "monster", ref: m }; bestDist = d; }
-    });
-    state.npcs.forEach((n) => {
-      const d = check(n.x, n.y);
-      if (d < bestDist) { best = { kind: "npc", ref: n }; bestDist = d; }
-    });
-    if (state.bossSpot) {
-      const d = check(state.bossSpot.x, state.bossSpot.y);
-      if (d < bestDist) { best = { kind: "boss", ref: state.bossSpot }; bestDist = d; }
+  function monsterAttack(monster) {
+    state.shield = Math.max(0, state.shield - 1);
+    state.combo.streak = 0;
+    window.BookPlayAudio?.sfx("shield");
+    const hero = state.hero;
+    const away = clampWorld(hero.x - (monster.x - hero.x) * 1.6, hero.y - (monster.y - hero.y) * 1.6);
+    hero.x = away.x;
+    hero.y = away.y;
+    hero.invulnUntil = performance.now() + HERO_INVULN;
+    updateHud();
+    if (state.shield <= 0) {
+      showToast("护盾碎了！小妖重新列阵，别灰心 💪", 2000);
+      state.shield = 3;
+      respawnCurrentWave();
+    } else {
+      showToast("被小妖撞了一下！捡词球反击 ⚔️", 1500);
     }
-    return best;
   }
 
-  /* ---------- 目标与小怪交互 ---------- */
-
-  function aliveMonsters() {
-    return state.monsters.filter((m) => m.alive);
-  }
-
-  function currentTarget() {
-    return state.monsters.find((m) => m.alive) || null;
-  }
-
-  function refreshTarget() {
-    const target = currentTarget();
-    [...els.entities.querySelectorAll(".game-entity.is-monster")].forEach((el, idx) => {
-      const m = state.monsters[idx];
-      el.classList.toggle("is-target", Boolean(m && m.alive && target && m === target));
+  function respawnCurrentWave() {
+    const waveMonsters = state.monsters.filter((m) => m.waveIndex === state.waveIndex && !m.alive);
+    waveMonsters.forEach((m, idx) => {
+      const region = WAVE_REGIONS[Math.min(m.waveIndex, WAVE_REGIONS.length - 1)];
+      const slot = SLOT_MONSTERS[idx % SLOT_MONSTERS.length];
+      const pos = regionPoint(region, slot[0], slot[1]);
+      m.alive = true;
+      m.x = pos.x;
+      m.y = pos.y;
+      m.el.style.display = "";
+      m.el.classList.remove("is-dead");
+      placeAt(m.el, m.x, m.y);
     });
-    els.targetZh.textContent = target ? target.zh : "去挑战 Boss！";
-    els.targetSpeak.style.visibility = target ? "visible" : "hidden";
+    updateHud();
+  }
+
+  /* ---------- 词球：拾取 / 投掷 / 命中 ---------- */
+
+  function updateOrbs() {
+    if (state.carried) return;
+    state.orbs.forEach((orb) => {
+      if (orb.el && orb.el.style.display !== "none") {
+        const d = Math.hypot(state.hero.x - orb.x, state.hero.y - orb.y);
+        if (d < ORB_PICKUP) pickUp(orb);
+      }
+    });
+  }
+
+  function pickUp(orb) {
+    state.carried = { zh: orb.zh };
+    orb.el.style.display = "none";
+    window.BookPlayAudio?.sfx("start");
+    updateHud();
+  }
+
+  function dropOrbAt(x, y) {
+    const orb = state.orbs.find((o) => state.carried && o.zh === state.carried.zh && o.el.style.display === "none");
+    const pos = clampWorld(x, y);
+    if (orb) {
+      orb.x = pos.x;
+      orb.y = pos.y;
+      orb.el.style.display = "";
+      placeAt(orb.el, orb.x, orb.y);
+    }
+    state.carried = null;
+    updateHud();
   }
 
   function onMonsterClick(monster) {
     if (state.locked || !monster.alive) return;
-    if (currentTarget() !== monster) {
-      showToast(`先找「${currentTarget() ? currentTarget().zh : ""}」的小妖！`, 1500);
+    if (!state.carried) {
+      showToast("先走到中文词球上捡起一颗！", 1600);
       return;
     }
-    throwStaff(monster);
+    throwOrb(monster);
   }
 
-  function throwStaff(monster) {
-    state.locked = true;
+  function throwOrb(monster) {
+    // 投掷不锁世界：小怪照常追击/游荡，追踪弹逐帧更新（对照 word-memory-map）
     window.BookPlayAudio?.sfx("attack");
-    const staff = document.createElement("div");
-    staff.className = "game-staff";
-    const sceneRect = els.scene.getBoundingClientRect();
-    const heroRect = state.hero.el.getBoundingClientRect();
-    const monsterRect = monster.el.getBoundingClientRect();
-    const sx = heroRect.left + heroRect.width / 2 - sceneRect.left;
-    const sy = heroRect.top + heroRect.height / 3 - sceneRect.top;
-    const tx = monsterRect.left + monsterRect.width / 2 - sceneRect.left;
-    const ty = monsterRect.top + monsterRect.height / 2 - sceneRect.top;
-    staff.style.left = `${sx}px`;
-    staff.style.top = `${sy}px`;
-    els.projectiles.appendChild(staff);
-    window.requestAnimationFrame(() => {
-      staff.style.transform = `translate(${tx - sx}px, ${ty - sy}px) rotate(560deg)`;
-    });
-    window.setTimeout(() => {
-      staff.style.opacity = "0";
-      showQuickQuiz(monster);
-    }, STAFF_MS);
+    const shot = {
+      zh: state.carried.zh,
+      target: monster,
+      x: state.hero.x,
+      y: state.hero.y - 0.04,
+      age: 0,
+      el: document.createElement("span"),
+      trailTimer: 0,
+    };
+    shot.el.className = "game-shot";
+    shot.el.textContent = shot.zh;
+    els.projectiles.appendChild(shot.el);
+    placeAt(shot.el, shot.x, shot.y);
+    state.shots.push(shot);
+    state.carried = null;
+    updateHud();
   }
 
-  function flyStaffBack() {
-    const staff = els.projectiles.querySelector(".game-staff");
-    if (!staff) return;
-    staff.style.opacity = "1";
-    staff.style.transform = "translate(0, 0) rotate(0deg)";
-    window.setTimeout(() => staff.remove(), STAFF_MS + 60);
+  function updateShots(dt, now) {
+    state.shots.forEach((shot) => {
+      shot.age += dt / 1000;
+      const target = shot.target;
+      if (target && target.alive) {
+        const dx = target.x - shot.x;
+        const dy = target.y - shot.y;
+        const dist = Math.hypot(dx, dy) || 1;
+        const step = (dt / 1000) * SHOT_SPEED;
+        shot.x += (dx / dist) * step;
+        shot.y += (dy / dist) * step;
+        if (shot.age >= SHOT_ARM && dist <= SHOT_HIT) {
+          resolveShot(shot);
+          return;
+        }
+      }
+      if (shot.age >= SHOT_TTL) {
+        settleMissedShot(shot);
+        return;
+      }
+      shot.trailTimer += dt;
+      if (shot.trailTimer > 60) {
+        shot.trailTimer = 0;
+        const ghost = document.createElement("span");
+        ghost.className = "game-shot-trail";
+        placeAt(ghost, shot.x, shot.y);
+        els.particles.appendChild(ghost);
+        window.setTimeout(() => ghost.remove(), 350);
+      }
+      placeAt(shot.el, shot.x, shot.y);
+    });
+    state.shots = state.shots.filter((shot) => !shot.done);
   }
 
-  function showQuickQuiz(monster) {
-    const seed = state.level.seedBase + 700 + state.killed * 11;
-    const set = Core.buildOrbSet(monster, state.level.previewWords, seed);
-    els.quickquiz.textContent = "";
-    const term = document.createElement("div");
-    term.className = "game-qq-term";
-    term.textContent = monster.term;
-    const ipa = document.createElement("span");
-    ipa.className = "game-qq-ipa";
-    ipa.textContent = monster.ipa || "";
-    const hint = document.createElement("span");
-    hint.className = "game-qq-hint";
-    hint.textContent = "它的意思是？";
-    const hear = document.createElement("button");
-    hear.type = "button";
-    hear.textContent = "♪ 再听一遍";
-    hear.tabIndex = 0;
-    hear.addEventListener("click", () => speakTerm(monster.term));
-    const grid = document.createElement("div");
-    grid.className = "game-qq-choices";
-    set.orbs.forEach((orb) => {
-      const btn = document.createElement("button");
-      btn.type = "button";
-      btn.textContent = orb.zh;
-      btn.tabIndex = 0;
-      btn.addEventListener("click", () => resolveQuickQuiz(orb, monster, grid));
-      grid.appendChild(btn);
-    });
-    els.quickquiz.append(term, ipa, hint, hear, grid);
-    els.quickquiz.hidden = false;
+  function removeShot(shot) {
+    shot.done = true;
+    shot.el.remove();
   }
 
-  function resolveQuickQuiz(orb, monster, grid) {
-    const verdict = Core.judgeHit(orb, monster, state.combo);
-    [...grid.children].forEach((btn) => {
-      btn.disabled = true;
-      if (btn.textContent === monster.zh) btn.classList.add("is-right");
-    });
+  function resolveShot(shot) {
+    const monster = shot.target;
+    const verdict = Core.judgeHit({ zh: shot.zh }, monster, state.combo);
+    removeShot(shot);
     if (verdict.correct) {
       window.BookPlayAudio?.sfx("correct");
       speakTerm(monster.term);
+      state.stars += 1;
       state.killed += 1;
-      killMonster(monster, true);
+      killMonster(monster);
+      spawnBurst(monster);
+      maybeDrop(monster);
+      showToast(`记住它：${monster.term} · ${monster.zh}`, 1700);
       if (verdict.comboReady) {
-        const rest = aliveMonsters().filter((m) => m !== monster);
+        const rest = currentWaveAlive();
         rest.forEach((m) => {
           state.killed += 1;
-          killMonster(m, false);
+          state.stars += 1;
+          killMonster(m);
+          spawnBurst(m);
         });
         if (rest.length) {
           window.BookPlayAudio?.sfx("reward");
-          showToast("金箍棒横扫！连击清场 ⚡", 1600);
+          showToast("连击横扫！本波小妖全灭 ⚡", 1700);
         }
       }
-      spawnStars(monster);
-      addLoot(monster);
+      persistProgress();
+      advanceWaveIfNeeded();
     } else {
       window.BookPlayAudio?.sfx("retry");
       state.wrongWords[monster.term] = (state.wrongWords[monster.term] || 0) + 1;
       persistProgress();
       state.combo.streak = 0;
-      state.shield = Math.max(0, state.shield - 1);
-      window.BookPlayAudio?.sfx("shield");
-      monster.fleeUntil = performance.now() + 2600;
-      monster.el.classList.add("is-fleeing");
-      window.setTimeout(() => monster.el.classList.remove("is-fleeing"), 2600);
-      if (state.shield <= 0) {
-        showToast("护盾碎了！小妖重新列阵，别灰心 💪", 2000);
-        state.shield = 3;
-        resetMonsters();
-      }
+      monster.fleeUntil = performance.now() + 2400;
+      monster.el.classList.add("is-wrong");
+      window.setTimeout(() => monster.el.classList.remove("is-wrong"), 900);
+      dropOrbAt(shot.x, shot.y);
+      showToast("词球弹回来了！词牌对不上，再找找 ⚠️", 1700);
     }
     updateHud();
-    refreshTarget();
-    window.setTimeout(() => {
-      els.quickquiz.hidden = true;
-      flyStaffBack();
-      state.locked = false;
-    }, verdict.correct ? 650 : 1100);
   }
 
-  function killMonster(monster, byPlayer) {
+  function settleMissedShot(shot) {
+    dropOrbAt(shot.x, shot.y);
+    removeShot(shot);
+    showToast("词球落地了，走过去捡起来再扔", 1500);
+  }
+
+  function killMonster(monster) {
     monster.alive = false;
     monster.el.classList.add("is-dead");
     window.setTimeout(() => {
       monster.el.style.display = "none";
     }, 600);
-    if (byPlayer) spawnStars(monster);
   }
 
-  function resetMonsters() {
-    const map = state.level.map || FALLBACK_LAYOUT;
-    const spawns = (map.monsterSpawns && map.monsterSpawns.length ? map.monsterSpawns : FALLBACK_LAYOUT.monsterSpawns);
-    state.monsters.forEach((m, idx) => {
-      if (m.alive) return;
-      m.alive = true;
-      const spot = clampToWalkable(spawns[idx % spawns.length].x, spawns[idx % spawns.length].y);
-      m.x = spot.x;
-      m.y = spot.y;
-      m.tx = spot.x;
-      m.ty = spot.y;
-      m.el.style.display = "";
-      m.el.classList.remove("is-dead");
-      placeAt(m.el, m.x, m.y);
-    });
-    refreshTarget();
-  }
-
-  function spawnStars(monster) {
-    const sceneRect = els.scene.getBoundingClientRect();
-    const rect = monster.el.getBoundingClientRect();
-    const cx = rect.left + rect.width / 2 - sceneRect.left;
-    const cy = rect.top + rect.height / 2 - sceneRect.top;
+  function spawnBurst(monster) {
     for (let i = 0; i < 6; i += 1) {
       const star = document.createElement("span");
       star.className = "game-star";
       star.textContent = "⭐";
-      star.style.left = `${cx}px`;
-      star.style.top = `${cy}px`;
+      placeAt(star, monster.x, monster.y);
       star.style.setProperty("--dx", `${(Math.random() - 0.5) * 130}px`);
       star.style.setProperty("--dy", `${-40 - Math.random() * 70}px`);
       els.particles.appendChild(star);
@@ -574,12 +727,81 @@
     }
   }
 
-  function addLoot(monster) {
-    state.loot.push(monster.term);
-    const chip = document.createElement("span");
-    chip.className = "game-loot";
-    chip.textContent = `${monster.term} · ${monster.zh}`;
-    els.tray.appendChild(chip);
+  function maybeDrop(monster) {
+    if (Math.random() > 0.35) return;
+    const type = Math.random() < 0.6 ? "peach" : "fan";
+    if (type === "peach") {
+      if (state.shield < 3) {
+        state.shield = Math.min(3, state.shield + 1);
+        window.BookPlayAudio?.sfx("reward");
+        showToast("捡到蟠桃！护盾 +1 🍑", 1500);
+        updateHud();
+        return;
+      }
+    }
+    state.items[type] += 1;
+    window.BookPlayAudio?.sfx("reward");
+    showToast(type === "fan" ? "捡到芭蕉扇！点右上方横扫小妖 🪭" : "蟠桃收进支援栏，盾碎了再吃 🍑", 1800);
+    renderSupports();
+  }
+
+  function renderSupports() {
+    els.supports.textContent = "";
+    const defs = [
+      { type: "peach", icon: "🍑", label: "吃蟠桃回护盾" },
+      { type: "fan", icon: "🪭", label: "芭蕉扇横扫本波" },
+    ];
+    defs.forEach((def) => {
+      const count = state.items[def.type];
+      if (!count) return;
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.textContent = def.icon;
+      btn.dataset.count = String(count);
+      btn.setAttribute("aria-label", def.label);
+      btn.tabIndex = 0;
+      btn.addEventListener("click", () => useSupport(def.type));
+      els.supports.appendChild(btn);
+    });
+  }
+
+  function useSupport(type) {
+    if (state.locked || !state.items[type]) return;
+    if (type === "peach") {
+      state.items.peach -= 1;
+      state.shield = Math.min(3, state.shield + 1);
+      window.BookPlayAudio?.sfx("reward");
+      showToast("蟠桃下肚，护盾 +1 🍑", 1400);
+    } else {
+      state.items.fan -= 1;
+      const rest = currentWaveAlive();
+      rest.forEach((m) => {
+        state.killed += 1;
+        state.stars += 1;
+        killMonster(m);
+        spawnBurst(m);
+      });
+      window.BookPlayAudio?.sfx("reward");
+      showToast("芭蕉扇一挥，本波小妖全灭！🪭", 1700);
+      advanceWaveIfNeeded();
+    }
+    renderSupports();
+    updateHud();
+  }
+
+  function advanceWaveIfNeeded() {
+    updateHud();
+    if (currentWaveAlive().length) return;
+    const next = state.waveIndex + 1;
+    if (state.monsters.some((m) => m.waveIndex === next)) {
+      window.setTimeout(() => spawnWave(next), 700);
+    } else if (!state.bossReady) {
+      state.bossReady = true;
+      state.bossSpot.el.classList.add("is-ready");
+      showBanner("所有小妖肃清", `去挑战 ${state.level.cast.boss.nameZh}！`);
+      window.BookPlayAudio?.sfx("reward");
+      showToast("去右边找 Boss 决战吧！⚔️", 2600);
+    }
   }
 
   /* ---------- NPC 对话（扁平游标 + choice 行） ---------- */
@@ -617,7 +839,7 @@
     }
     state.locked = true;
     state.dlg = { npc, lines: buildNpcLines(npc), idx: 0, retried: false };
-    showPanel(els.dialogue);
+    els.dialogue.hidden = false;
     renderDialogueLine();
   }
 
@@ -673,12 +895,12 @@
       if (!dlg.npc.done) {
         dlg.npc.done = true;
         state.npcBonus = true;
+        state.stars += 2;
         persistProgress({ npcBonus: true, npcDone: true });
-        addLoot(word);
         window.BookPlayAudio?.sfx("reward");
         const speech = dlg.npc.el && dlg.npc.el.querySelector(".game-speech");
         if (speech) speech.textContent = "⭐";
-        feedback.textContent = "答对啦！奖励词卡 + ⭐（第三颗星的秘密武器）";
+        feedback.textContent = "答对啦！奖励词卡 + ⭐⭐";
       } else {
         feedback.textContent = "答对啦！";
       }
@@ -695,7 +917,6 @@
     } else {
       btn.disabled = true;
       btn.classList.add("is-wrong");
-      window.BookPlayAudio?.sfx("retry");
       [...els.dialogueChoices.children].forEach((choice) => {
         if (choice.textContent === word.zh) choice.classList.add("is-right");
       });
@@ -704,6 +925,7 @@
       els.dialogueNext.hidden = false;
       els.dialogueNext.textContent = "继续 ▼";
     }
+    updateHud();
   }
 
   function advanceDialogue() {
@@ -711,17 +933,12 @@
     if (!dlg || els.dialogueNext.hidden) return;
     dlg.idx += 1;
     if (dlg.idx >= dlg.lines.length) {
-      closeDialogue();
+      state.dlg = null;
+      els.dialogue.hidden = true;
+      state.locked = false;
       return;
     }
     renderDialogueLine();
-  }
-
-  function closeDialogue() {
-    state.dlg = null;
-    els.dialogue.hidden = true;
-    showPanel(null);
-    state.locked = false;
   }
 
   /* ---------- Boss 门 ---------- */
@@ -746,7 +963,7 @@
     go.textContent = "开战！";
     go.addEventListener("click", () => {
       const wrong = Object.keys(state.wrongWords).filter((term) => state.wrongWords[term] > 0).join(",");
-      window.location.href = `battle.html?ep=${EP}&skip=intro,preview&from=game${wrong ? `&wrong=${encodeURIComponent(wrong)}` : ""}`;
+      window.location.href = `battle.html?ep=${EP}&skip=intro,preview,waves&from=game${wrong ? `&wrong=${encodeURIComponent(wrong)}` : ""}`;
     });
     const later = document.createElement("button");
     later.type = "button";
@@ -763,38 +980,64 @@
     state.bossGateOpen = true;
   }
 
-  function updateProximity() {
-    if (state.locked) return;
-    if (state.bossSpot && !state.bossNear) {
-      const d = Math.hypot(state.hero.x - state.bossSpot.x, state.hero.y - state.bossSpot.y);
-      if (d < INTERACT_DIST && !state.bossGateOpen) openBossGate();
-      state.bossNear = d < INTERACT_DIST * 1.6;
-      if (state.bossNear && d >= INTERACT_DIST) state.bossGateOpen = false;
-    }
-    if (!FROM_BATTLE && !state.introAutoPlayed) {
-      const introNpc = state.npcs.find((n) => n.role === "intro");
-      if (introNpc) {
-        const d = Math.hypot(state.hero.x - introNpc.x, state.hero.y - introNpc.y);
-        if (d < INTERACT_DIST + 0.04) {
-          state.introAutoPlayed = true;
-          openDialogue(introNpc);
-        }
-      }
-    }
-  }
-
-  /* ---------- HUD / 面板 ---------- */
+  /* ---------- HUD / 提示卡 / 面板 ---------- */
 
   function updateHud() {
-    els.shields.textContent = "🛡️".repeat(state.shield) + "⬜".repeat(Math.max(0, 3 - state.shield));
+    els.stars.textContent = String(state.stars);
     const total = state.monsters.length + state.level.boss.hpWords.length;
     els.progress.textContent = `${state.killed} / ${total}`;
+    els.shields.textContent = "🛡️".repeat(state.shield) + "⬜".repeat(Math.max(0, 3 - state.shield));
+    els.carried.textContent = state.carried ? state.carried.zh : "空手";
+    els.combo.textContent = String(state.combo.streak);
   }
 
-  function showPanel(name) {
-    [els.dialogue, els.quickquiz, els.bossgate, els.pause].forEach((el) => {
-      el.hidden = el !== name;
-    });
+  function showBanner(kicker, title) {
+    els.bannerKicker.textContent = kicker;
+    els.bannerTitle.textContent = title;
+    els.banner.hidden = false;
+    window.clearTimeout(showBanner.timer);
+    showBanner.timer = window.setTimeout(() => {
+      els.banner.hidden = true;
+    }, 2200);
+  }
+
+  function toggleHintCard() {
+    if (!els.hintcard.hidden) {
+      els.hintcard.hidden = true;
+      return;
+    }
+    const alive = aliveMonsters();
+    if (!alive.length) {
+      showToast("小妖都清完啦，去挑战 Boss！", 1600);
+      return;
+    }
+    const monster = alive[Math.floor(Math.random() * alive.length)];
+    const word = state.level.previewWords.find((w) => w.term === monster.term) || monster;
+    els.hintcard.textContent = "";
+    if (word.illustration) {
+      const img = document.createElement("img");
+      img.src = assetUrl(word.illustration);
+      img.alt = "";
+      img.addEventListener("error", () => img.remove());
+      els.hintcard.appendChild(img);
+    }
+    const body = document.createElement("div");
+    const term = document.createElement("span");
+    term.className = "game-hint-term";
+    term.textContent = word.term;
+    const zh = document.createElement("span");
+    zh.className = "game-hint-zh";
+    zh.textContent = `${word.zh}（头上顶着这个词的就是目标）`;
+    body.append(term, zh);
+    const hear = document.createElement("button");
+    hear.type = "button";
+    hear.textContent = "♪";
+    hear.setAttribute("aria-label", `朗读 ${word.term}`);
+    hear.tabIndex = 0;
+    hear.addEventListener("click", () => speakTerm(word.term));
+    els.hintcard.append(body, hear);
+    els.hintcard.hidden = false;
+    speakTerm(word.term);
   }
 
   function showGate(message) {
@@ -818,20 +1061,30 @@
 
   /* ---------- 输入 ---------- */
 
+  function nearestEntity() {
+    let best = null;
+    let bestDist = INTERACT_DIST;
+    const check = (x, y) => Math.hypot(state.hero.x - x, state.hero.y - y);
+    state.monsters.forEach((m) => {
+      if (!m.alive) return;
+      const d = check(m.x, m.y);
+      if (d < bestDist) { best = { kind: "monster", ref: m }; bestDist = d; }
+    });
+    state.npcs.forEach((n) => {
+      const d = check(n.x, n.y);
+      if (d < bestDist) { best = { kind: "npc", ref: n }; bestDist = d; }
+    });
+    if (state.bossSpot) {
+      const d = check(state.bossSpot.x, state.bossSpot.y);
+      if (d < bestDist) { best = { kind: "boss", ref: state.bossSpot }; bestDist = d; }
+    }
+    return best;
+  }
+
   function bindInput() {
-    els.scene.addEventListener("click", (ev) => {
-      if (state.locked || state.paused) return;
-      const rect = els.scene.getBoundingClientRect();
-      const point = clampToWalkable((ev.clientX - rect.left) / rect.width, (ev.clientY - rect.top) / rect.height);
-      state.hero.tx = point.x;
-      state.hero.ty = point.y;
-    });
+    els.scene.addEventListener("click", () => { /* 世界点击交给实体；空白处不移动（摇杆/方向键负责） */ });
 
-    els.targetSpeak.addEventListener("click", () => {
-      const target = currentTarget();
-      if (target) speakTerm(target.term);
-    });
-
+    els.hint.addEventListener("click", toggleHintCard);
     els.exit.addEventListener("click", togglePause);
     $("game-resume").addEventListener("click", togglePause);
     $("game-restart").addEventListener("click", () => window.location.reload());
@@ -850,7 +1103,8 @@
         if (state.locked) return;
         ev.preventDefault();
         const near = nearestEntity();
-        if (near && near.kind === "monster") onMonsterClick(near.ref);
+        if (near && near.kind === "monster" && state.carried) throwOrb(near.ref);
+        else if (near && near.kind === "monster") showToast("先捡一颗中文词球！", 1400);
         if (near && near.kind === "npc") openDialogue(near.ref);
         if (near && near.kind === "boss") openBossGate();
         return;
@@ -895,6 +1149,12 @@
     }
     joy.addEventListener("pointerup", release);
     joy.addEventListener("pointercancel", release);
+
+    window.addEventListener("resize", () => {
+      state.vw = window.innerWidth;
+      state.vh = window.innerHeight;
+      updateCamera();
+    });
   }
 
   function togglePause() {
@@ -909,22 +1169,41 @@
     const dt = Math.min(48, now - (state.lastTs || now));
     state.lastTs = now;
     if (state.phase !== "explore") return;
-    if (state.paused || state.locked) {
-      placeAt(state.hero.el, state.hero.x, state.hero.y);
-      return;
-    }
+    if (state.paused || state.locked) return;
     if (document.hidden && !state.ignoreHidden) {
-      state.lastTs = now; // 后台时不累积时间，回前台从零起步
+      state.lastTs = now;
       return;
     }
     updateHero(dt);
-    updateMonsters(dt);
-    updateProximity();
+    updateOrbs();          // 先判定拾取：避免小怪撞击的击退把主角推离词球
+    updateMonsters(dt, now);
+    updateShots(dt, now);
+    updateProximity(now);
+    updateCamera();
   }
 
   function frame(ts) {
     step(ts);
     state.raf = window.requestAnimationFrame(frame);
+  }
+
+  function updateProximity(now) {
+    if (state.bossSpot) {
+      const d = Math.hypot(state.hero.x - state.bossSpot.x, state.hero.y - state.bossSpot.y);
+      const near = d < INTERACT_DIST;
+      if (near && !state.bossGateOpen && !state.bossNear) openBossGate();
+      state.bossNear = near;
+    }
+    if (!FROM_BATTLE && !state.introAutoPlayed) {
+      const introNpc = state.npcs.find((n) => n.role === "intro");
+      if (introNpc) {
+        const d = Math.hypot(state.hero.x - introNpc.x, state.hero.y - introNpc.y);
+        if (d < INTERACT_DIST + 0.04) {
+          state.introAutoPlayed = true;
+          openDialogue(introNpc);
+        }
+      }
+    }
   }
 
   /* ---------- 启动 ---------- */
@@ -954,28 +1233,21 @@
         state.wrongWords[term] = count;
       });
       state.npcBonus = Boolean(prev.npcBonus);
-      if (level.map && level.map.theme) {
-        els.backdrop.style.backgroundImage = `url("../assets/game-backgrounds/${level.map.theme}.jpg"), url("../${level.background.illustration || ""}")`;
-      } else if (level.background.illustration) {
-        els.backdrop.style.backgroundImage = `url("../${level.background.illustration}")`;
-      }
       buildEntities();
-      refreshTarget();
+      updateCamera();
       updateHud();
+      renderSupports();
       state.phase = "explore";
       state.lastTs = performance.now();
       state.raf = window.requestAnimationFrame(frame);
-      window.BookPlayGameDebug = state; // 只读调试钩子：E2E 与人工排查用
-      window.BookPlayGameDebug.step = step;
-      // 看门狗：部分电视 WebView / 后台标签会把 rAF 节流到接近 0，这里兜底步进
       window.setInterval(() => {
         if (performance.now() - state.lastTs > 320) step(performance.now());
       }, 320);
-      if (FROM_BATTLE) {
-        showToast("战斗归来！继续探险吧 🗺️", 2000);
-      } else {
-        showToast("点击地面移动，找到头顶是「目标中文」的小妖，点它！⚔️", 4200);
-      }
+      window.BookPlayGameDebug = state;
+      window.BookPlayGameDebug.step = step;
+      showBanner("出发！", `${state.level.title.en} · ${THEME_ZH[(state.level.map || {}).theme] || ""}`);
+      if (FROM_BATTLE) showToast("战斗归来！继续探险吧 🗺️", 2000);
+      else showToast("走过中文词球捡起来，点头顶有对应英文的小妖！", 4200);
     });
   }
 
