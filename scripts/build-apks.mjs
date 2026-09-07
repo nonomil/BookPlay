@@ -85,19 +85,21 @@ export async function buildApks() {
   // required here because the Android asset merger may otherwise leave the
   // previous archive's data as unused gaps, making a 79 MiB tree look like a
   // 190 MiB APK on disk.
-  await run(process.platform === "win32" ? "gradlew.bat" : "./gradlew", ["clean", "assembleMobileDebug", "assembleTvDebug"], androidDir);
+  await run(process.platform === "win32" ? "gradlew.bat" : "./gradlew", ["clean", "assembleMobileDebug", "assembleTvDebug", "assembleHandheldDebug"], androidDir);
 
   const debugDir = path.join(androidDir, "app", "build", "outputs", "apk");
   const mobileSource = await findApk(debugDir, /mobile.*debug.*\.apk$/i);
   const tvSource = await findApk(debugDir, /tv.*debug.*\.apk$/i);
-  if (!mobileSource || !tvSource) {
-    throw new Error(`Expected both flavor APKs under ${debugDir}`);
+  const handheldSource = await findApk(debugDir, /handheld.*debug.*\.apk$/i);
+  if (!mobileSource || !tvSource || !handheldSource) {
+    throw new Error(`Expected mobile/tv/handheld flavor APKs under ${debugDir}`);
   }
 
   await mkdir(releaseDir, { recursive: true });
   const outputs = [
     [mobileSource, path.join(releaseDir, jttwOnly ? "storyhall-jttw-mobile-debug.apk" : "storyhall-mobile-debug.apk")],
     [tvSource, path.join(releaseDir, jttwOnly ? "storyhall-jttw-tv-debug.apk" : "storyhall-tv-debug.apk")],
+    [handheldSource, path.join(releaseDir, jttwOnly ? "storyhall-jttw-handheld-debug.apk" : "storyhall-handheld-debug.apk")],
   ];
   for (const [source, destination] of outputs) {
     await rm(destination, { force: true });

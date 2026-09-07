@@ -1,0 +1,68 @@
+{
+  "markdown_files": 57,
+  "task_files": 10,
+  "subtask_files": 30,
+  "broken_links": [],
+  "status_guard_checks": [
+    {
+      "case": "initial board",
+      "pass": true,
+      "exit": 0,
+      "output": "OK: 10-task plan structure, dependencies, evidence and board are consistent"
+    },
+    {
+      "case": "reject done without evidence",
+      "pass": true,
+      "exit": 1,
+      "output": "ERROR: review/done requires evidence"
+    },
+    {
+      "case": "reject unmet dependency",
+      "pass": true,
+      "exit": 1,
+      "output": "ERROR: T02-S01: dependency not done"
+    },
+    {
+      "case": "claim first subtask",
+      "pass": true,
+      "exit": 0,
+      "output": "STATUS.md updated"
+    },
+    {
+      "case": "reject README placeholder",
+      "pass": true,
+      "exit": 1,
+      "output": "ERROR: missing or placeholder evidence: tasks/T01/evidence/README.md"
+    },
+    {
+      "case": "submit evidence",
+      "pass": true,
+      "exit": 0,
+      "output": "STATUS.md updated"
+    },
+    {
+      "case": "finish first subtask",
+      "pass": true,
+      "exit": 0,
+      "output": "STATUS.md updated"
+    },
+    {
+      "case": "board remains consistent",
+      "pass": true,
+      "exit": 0,
+      "output": "OK: 10-task plan structure, dependencies, evidence and board are consistent"
+    },
+    {
+      "case": "reject blocked without reason",
+      "pass": true,
+      "exit": 1,
+      "output": "ERROR: blocked requires reason"
+    },
+    {
+      "case": "record blocker",
+      "pass": true,
+      "exit": 0,
+      "output": "STATUS.md updated"
+    }
+  ]
+}

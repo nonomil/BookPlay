@@ -2,16 +2,20 @@ package com.nonomil.storyhall;
 
 import android.os.Build;
 import android.os.Bundle;
+import android.view.KeyEvent;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowInsets;
 import android.view.WindowInsetsController;
 import android.view.WindowManager;
-import android.webkit.WebSettings;
+import android.webkit.WebView;
 
 import com.getcapacitor.BridgeActivity;
 
 public class MainActivity extends BridgeActivity {
+    private final NativeKeyBridge nativeKeys = new NativeKeyBridge();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         registerPlugin(DataPackPlugin.class);
@@ -19,10 +23,25 @@ public class MainActivity extends BridgeActivity {
         super.onCreate(savedInstanceState);
         // 页面按手机分辨率设计：锁定 WebView 文字缩放，系统“大字体”设置
         // 不再把整个界面等比放大（表现为字幕/按钮超大、布局溢出）。
-        if (getBridge() != null && getBridge().getWebView() != null) {
-            getBridge().getWebView().getSettings().setTextZoom(100);
+        if (webView() != null) {
+            webView().getSettings().setTextZoom(100);
+            nativeKeys.injectProfile(webView(), getResources().getDisplayMetrics());
         }
         applyImmersiveMode();
+    }
+
+    @Override
+    public boolean dispatchKeyEvent(KeyEvent event) {
+        nativeKeys.injectKey(webView(), event);
+        return super.dispatchKeyEvent(event);
+    }
+
+    @Override
+    public boolean dispatchGenericMotionEvent(MotionEvent event) {
+        if (nativeKeys.looksLikeJoystick(event)) {
+            nativeKeys.injectAxis(webView(), event);
+        }
+        return super.dispatchGenericMotionEvent(event);
     }
 
     @Override
@@ -31,7 +50,12 @@ public class MainActivity extends BridgeActivity {
         // 从对话框/权限弹窗返回后系统栏会重新出现，这里恢复沉浸式。
         if (hasFocus) {
             applyImmersiveMode();
+            nativeKeys.injectProfile(webView(), getResources().getDisplayMetrics());
         }
+    }
+
+    private WebView webView() {
+        return getBridge() == null ? null : getBridge().getWebView();
     }
 
     private void applyImmersiveMode() {

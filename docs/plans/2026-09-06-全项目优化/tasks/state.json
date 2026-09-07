@@ -1,0 +1,370 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-09-06",
+  "baseline": "0ee010d9b2f9b070e016a2599bc3f5ca97d54afa + existing dirty worktree",
+  "tasks": [
+    {
+      "id": "T01",
+      "title": "测试基线与环境分层",
+      "status": "todo",
+      "owner": null,
+      "depends_on": [],
+      "estimate_days": "2–3",
+      "subtasks": [
+        {
+          "id": "T01-S01",
+          "title": "建立失败登记与单一入口",
+          "status": "todo",
+          "evidence": [],
+          "blocker": null,
+          "updated_at": "2026-09-06"
+        },
+        {
+          "id": "T01-S02",
+          "title": "隔离源码测试与本地素材测试",
+          "status": "todo",
+          "evidence": [],
+          "blocker": null,
+          "updated_at": "2026-09-06"
+        },
+        {
+          "id": "T01-S03",
+          "title": "固化基线收据",
+          "status": "todo",
+          "evidence": [],
+          "blocker": null,
+          "updated_at": "2026-09-06"
+        }
+      ]
+    },
+    {
+      "id": "T02",
+      "title": "内容可达性与安全导入",
+      "status": "todo",
+      "owner": null,
+      "depends_on": [
+        "T01"
+      ],
+      "estimate_days": "3–5",
+      "subtasks": [
+        {
+          "id": "T02-S01",
+          "title": "修正两档首发可用清单",
+          "status": "todo",
+          "evidence": [],
+          "blocker": null,
+          "updated_at": "2026-09-06"
+        },
+        {
+          "id": "T02-S02",
+          "title": "实现验证后切换与门禁刷新",
+          "status": "todo",
+          "evidence": [],
+          "blocker": null,
+          "updated_at": "2026-09-06"
+        },
+        {
+          "id": "T02-S03",
+          "title": "收紧数据源边界并做真源验证",
+          "status": "todo",
+          "evidence": [],
+          "blocker": null,
+          "updated_at": "2026-09-06"
+        }
+      ]
+    },
+    {
+      "id": "T03",
+      "title": "媒体协议与服务可靠性",
+      "status": "todo",
+      "owner": null,
+      "depends_on": [
+        "T01"
+      ],
+      "estimate_days": "3–4",
+      "subtasks": [
+        {
+          "id": "T03-S01",
+          "title": "建立跨端 Range 合同并修解析",
+          "status": "todo",
+          "evidence": [],
+          "blocker": null,
+          "updated_at": "2026-09-06"
+        },
+        {
+          "id": "T03-S02",
+          "title": "修复 TTS 同键并发",
+          "status": "todo",
+          "evidence": [],
+          "blocker": null,
+          "updated_at": "2026-09-06"
+        },
+        {
+          "id": "T03-S03",
+          "title": "增加原生健康状态与资源上限",
+          "status": "todo",
+          "evidence": [],
+          "blocker": null,
+          "updated_at": "2026-09-06"
+        }
+      ]
+    },
+    {
+      "id": "T04",
+      "title": "录音与本地状态一致性",
+      "status": "todo",
+      "owner": null,
+      "depends_on": [
+        "T01"
+      ],
+      "estimate_days": "2–4",
+      "subtasks": [
+        {
+          "id": "T04-S01",
+          "title": "统一录音删除合同",
+          "status": "todo",
+          "evidence": [],
+          "blocker": null,
+          "updated_at": "2026-09-06"
+        },
+        {
+          "id": "T04-S02",
+          "title": "保护录音异步生命周期",
+          "status": "todo",
+          "evidence": [],
+          "blocker": null,
+          "updated_at": "2026-09-06"
+        },
+        {
+          "id": "T04-S03",
+          "title": "为存储读写加结构校验和迁移收据",
+          "status": "todo",
+          "evidence": [],
+          "blocker": null,
+          "updated_at": "2026-09-06"
+        }
+      ]
+    },
+    {
+      "id": "T05",
+      "title": "单一打包来源与版本收据",
+      "status": "todo",
+      "owner": null,
+      "depends_on": [
+        "T02"
+      ],
+      "estimate_days": "2–3",
+      "subtasks": [
+        {
+          "id": "T05-S01",
+          "title": "确认消费路径与资源闭包",
+          "status": "todo",
+          "evidence": [],
+          "blocker": null,
+          "updated_at": "2026-09-06"
+        },
+        {
+          "id": "T05-S02",
+          "title": "合并引擎生成并排除开发材料",
+          "status": "todo",
+          "evidence": [],
+          "blocker": null,
+          "updated_at": "2026-09-06"
+        },
+        {
+          "id": "T05-S03",
+          "title": "确定版本分配与发布清单",
+          "status": "todo",
+          "evidence": [],
+          "blocker": null,
+          "updated_at": "2026-09-06"
+        }
+      ]
+    },
+    {
+      "id": "T06",
+      "title": "内容质量与离线音频闭包",
+      "status": "todo",
+      "owner": null,
+      "depends_on": [
+        "T01"
+      ],
+      "estimate_days": "2–4",
+      "subtasks": [
+        {
+          "id": "T06-S01",
+          "title": "核实合集题型和角色发布合同",
+          "status": "todo",
+          "evidence": [],
+          "blocker": null,
+          "updated_at": "2026-09-06"
+        },
+        {
+          "id": "T06-S02",
+          "title": "修复新题离线音频缺口",
+          "status": "todo",
+          "evidence": [],
+          "blocker": null,
+          "updated_at": "2026-09-06"
+        },
+        {
+          "id": "T06-S03",
+          "title": "发布内容质量门禁",
+          "status": "todo",
+          "evidence": [],
+          "blocker": null,
+          "updated_at": "2026-09-06"
+        }
+      ]
+    },
+    {
+      "id": "T07",
+      "title": "Web与Android端到端验收",
+      "status": "todo",
+      "owner": null,
+      "depends_on": [
+        "T02",
+        "T03",
+        "T04",
+        "T05",
+        "T06"
+      ],
+      "estimate_days": "3–4",
+      "subtasks": [
+        {
+          "id": "T07-S01",
+          "title": "搭建隔离浏览器测试入口",
+          "status": "todo",
+          "evidence": [],
+          "blocker": null,
+          "updated_at": "2026-09-06"
+        },
+        {
+          "id": "T07-S02",
+          "title": "实现学习与离线关键路径",
+          "status": "todo",
+          "evidence": [],
+          "blocker": null,
+          "updated_at": "2026-09-06"
+        },
+        {
+          "id": "T07-S03",
+          "title": "替换模板测试并完成设备矩阵",
+          "status": "todo",
+          "evidence": [],
+          "blocker": null,
+          "updated_at": "2026-09-06"
+        }
+      ]
+    },
+    {
+      "id": "T08",
+      "title": "播放器渐进模块化",
+      "status": "todo",
+      "owner": null,
+      "depends_on": [
+        "T07"
+      ],
+      "estimate_days": "3–4",
+      "subtasks": [
+        {
+          "id": "T08-S01",
+          "title": "锁定高风险行为与边界",
+          "status": "todo",
+          "evidence": [],
+          "blocker": null,
+          "updated_at": "2026-09-06"
+        },
+        {
+          "id": "T08-S02",
+          "title": "小步提取并恢复体积守卫",
+          "status": "todo",
+          "evidence": [],
+          "blocker": null,
+          "updated_at": "2026-09-06"
+        },
+        {
+          "id": "T08-S03",
+          "title": "对比回归与收益",
+          "status": "todo",
+          "evidence": [],
+          "blocker": null,
+          "updated_at": "2026-09-06"
+        }
+      ]
+    },
+    {
+      "id": "T09",
+      "title": "性能与可访问性定向优化",
+      "status": "todo",
+      "owner": null,
+      "depends_on": [
+        "T07"
+      ],
+      "estimate_days": "2–4",
+      "subtasks": [
+        {
+          "id": "T09-S01",
+          "title": "建立同机性能基线",
+          "status": "todo",
+          "evidence": [],
+          "blocker": null,
+          "updated_at": "2026-09-06"
+        },
+        {
+          "id": "T09-S02",
+          "title": "只修证据指向的热点",
+          "status": "todo",
+          "evidence": [],
+          "blocker": null,
+          "updated_at": "2026-09-06"
+        },
+        {
+          "id": "T09-S03",
+          "title": "修焦点和字幕等可见体验",
+          "status": "todo",
+          "evidence": [],
+          "blocker": null,
+          "updated_at": "2026-09-06"
+        }
+      ]
+    },
+    {
+      "id": "T10",
+      "title": "文档收口与发布验收",
+      "status": "todo",
+      "owner": null,
+      "depends_on": [
+        "T08",
+        "T09"
+      ],
+      "estimate_days": "1–2",
+      "subtasks": [
+        {
+          "id": "T10-S01",
+          "title": "核对历史计划与当前事实",
+          "status": "todo",
+          "evidence": [],
+          "blocker": null,
+          "updated_at": "2026-09-06"
+        },
+        {
+          "id": "T10-S02",
+          "title": "执行发布总门禁",
+          "status": "todo",
+          "evidence": [],
+          "blocker": null,
+          "updated_at": "2026-09-06"
+        },
+        {
+          "id": "T10-S03",
+          "title": "验收签收与计划归档",
+          "status": "todo",
+          "evidence": [],
+          "blocker": null,
+          "updated_at": "2026-09-06"
+        }
+      ]
+    }
+  ]
+}

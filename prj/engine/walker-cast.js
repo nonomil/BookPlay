@@ -2,8 +2,9 @@
 
 /* 西游记走路伙伴共享模块：角色表与"按标题/台词选角"打分逻辑。
  * 数据原样抽取自 wala.js 的 WALKING_CAST（数据以 wala.js 为准，改动需同步）。
- * 供知识巩固页（lesson）与亲子互动卡（parent）按集选小人；GIF 轻量目录
- * assets/walker-gifs（仅 24 个 gif，约 11MB）已纳入数据包。
+ * 供知识巩固页（lesson）与亲子互动卡（parent）按集选小人。
+ * GIF 走 WALKING_CAST.gif，即数据包里的
+ * assets/generated/jttw-player-walkers/<id>/<id>-walk.gif。
  */
 (function expose(root, factory) {
   const api = factory();
@@ -197,14 +198,7 @@
     const source = book && typeof book === "object" ? book : {};
     const explicitId = Number.isFinite(Number(episode)) ? EPISODE_OVERRIDES[Number(episode)] : "";
     if (explicitId && WALKING_CAST[explicitId]) {
-      const explicit = WALKING_CAST[explicitId];
-      return {
-        id: explicit.id,
-        nameZh: explicit.nameZh,
-        nameEn: explicit.nameEn,
-        gif: "assets/walker-gifs/" + explicit.id + "-walk.gif",
-        atlas: explicit.atlas || "",
-      };
+      return packedRole(WALKING_CAST[explicitId]);
     }
     const title = source.title && typeof source.title === "object" ? source.title : {};
     const titleSources = [title.zh, title.en]
@@ -227,12 +221,15 @@
       }
       if (score > bestScore) { best = role; bestScore = score; }
     }
-    const role = best || WALKING_CAST.wukong;
+    return packedRole(best || WALKING_CAST.wukong);
+  }
+
+  function packedRole(role) {
     return {
       id: role.id,
       nameZh: role.nameZh,
       nameEn: role.nameEn,
-      gif: "assets/walker-gifs/" + role.id + "-walk.gif",
+      gif: role.gif,
       atlas: role.atlas || "",
     };
   }

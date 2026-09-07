@@ -17,14 +17,15 @@ test('game.html：按顺序引入 app-audio / tv-remote / battle-core / game.js 
   assert.match(html, /href=["']game\.css(?:\?[^"']*)?["']/i);
 });
 
-test('game.html：场景/HUD/对话框/快卡/Boss 门/暂停/门禁控件齐备', () => {
+test('game.html：场景/HUD（星星/进度/护盾/词球/连击）/对话框/支援/横幅控件齐备', () => {
   const html = read('game.html');
   for (const id of [
-    'game-backdrop', 'game-walkzone', 'game-entities', 'game-projectiles', 'game-particles',
-    'game-shields', 'game-progress', 'game-target-zh', 'game-target-speak', 'game-exit',
-    'game-tray', 'game-joystick', 'game-dialogue', 'game-dialogue-face', 'game-dialogue-name',
+    'game-world', 'game-backdrop', 'game-entities', 'game-projectiles', 'game-particles',
+    'game-stars', 'game-progress', 'game-shields', 'game-carried', 'game-combo',
+    'game-hint', 'game-exit', 'game-banner', 'game-banner-title', 'game-supports', 'game-hintcard',
+    'game-joystick', 'game-dialogue', 'game-dialogue-face', 'game-dialogue-name',
     'game-dialogue-en', 'game-dialogue-zh', 'game-dialogue-choices', 'game-dialogue-next',
-    'game-quickquiz', 'game-bossgate', 'game-pause', 'game-gate', 'game-toast',
+    'game-bossgate', 'game-pause', 'game-gate', 'game-toast',
   ]) {
     assert.match(html, new RegExp(`id="${id}"`), id);
   }

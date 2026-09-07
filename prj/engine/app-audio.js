@@ -12,6 +12,9 @@
     let prefs = read(storage,'bookplay_audio_v1',{});
     let musicEnabled = prefs.music !== false, sfxEnabled = prefs.sfx !== false;
     let unlocked = read(session,'bookplay_audio_unlocked',false), scene = '', disposed = false;
+    const OWNER_KEY='bookplay_audio_owner_v1';
+    const ownerToken=`${Date.now().toString(36)}-${Math.random().toString(36).slice(2)}`;
+    let ownsPlayback=true, navigating=false;
     let foreground = new Set(), suspended = new Set(), watched = new Map(), own = new WeakSet();
     let activeCues = new Set(), lastCue = new Map(), listeners = [], ramp = null, controls = null, playRequest = null;
     const music = new AudioClass(); own.add(music); music.preload='metadata'; music.loop=true; music.volume=0;
@@ -24,7 +27,7 @@
     function savePrefs() { write(storage,'bookplay_audio_v1',{music:musicEnabled,sfx:sfxEnabled}); renderControls(); }
     function renderControls() {
       if (!controls) return;
-      controls.music.textContent = musicEnabled ? (!unlocked ? '♫ 播放音乐' : (foreground.size ? '♫ 朗读避让' : '♫ 音乐开')) : '♫ 音乐关';
+      controls.music.textContent = musicEnabled ? (!ownsPlayback ? '♫ 另一页播放' : (!unlocked ? '♫ 播放音乐' : (foreground.size ? '♫ 朗读避让' : '♫ 音乐开'))) : '♫ 音乐关';
       controls.music.title = foreground.size ? (duckVolume > 0 ? '介绍期间轻声播放，结束后恢复音量' : '朗读期间静音，结束后恢复音乐') : '点击切换背景音乐';
       controls.music.setAttribute('aria-pressed',String(musicEnabled));
       controls.sfx.textContent = sfxEnabled ? '♪ 音效开' : '♪ 音效关';
@@ -41,10 +44,16 @@
       },30);
     }
     function stopCues() { for (const audio of activeCues) audio.pause(); activeCues.clear(); }
-    const shouldPlay = () => !disposed && scene && musicEnabled && unlocked && !doc.hidden && !suspended.size;
+    const shouldPlay = () => !disposed && ownsPlayback && scene && musicEnabled && unlocked && !doc.hidden && !suspended.size;
+    function claimOwnership() {
+      ownsPlayback=true;
+      if (!storage) return;
+      try { storage.setItem(OWNER_KEY,JSON.stringify({token:ownerToken,scene,at:Date.now()})); }
+      catch (_) { /* unavailable storage: keep single-page playback usable */ }
+    }
     function sync() {
       if (disposed) return;
-      if (!scene || !musicEnabled || !unlocked || doc.hidden || suspended.size) {
+      if (!scene || !ownsPlayback || !musicEnabled || !unlocked || doc.hidden || suspended.size) {
         if (ramp) {env.clearInterval(ramp); ramp=null;}
         music.pause(); music.volume=0; renderControls(); return;
       }
@@ -63,7 +72,7 @@
       }
       renderControls();
     }
-    function unlock() { unlocked=true; write(session,'bookplay_audio_unlocked',true); sync(); }
+    function unlock() { if(navigating) return; unlocked=true; write(session,'bookplay_audio_unlocked',true); claimOwnership(); sync(); }
     function focus(media,playing) {
       if (!media || own.has(media)) return;
       if (playing) { foreground.add(media); stopCues(); } else foreground.delete(media);
@@ -82,8 +91,8 @@
       mixVolume=Number.isFinite(mix.volume) ? Math.max(0,Math.min(1,mix.volume)) : undefined;
       duckVolume=Number.isFinite(mix.duckVolume) ? Math.max(0,Math.min(1,mix.duckVolume)) : 0;
       name=TRACKS[name] ? name : '';
-      if (scene===name) {sync();return;}
-      savePosition(); music.pause(); playRequest=null; scene=name;
+      if (scene===name) {claimOwnership();sync();return;}
+      savePosition(); music.pause(); playRequest=null; scene=name; claimOwnership();
       if (name) { music.src=`../assets/music/${TRACKS[name]}.mp3`; music.load(); }
       sync();
     }
@@ -113,12 +122,17 @@
     }
     function attachControls() {
       if (!doc.body || controls) return;
-      const box=doc.createElement('div'); box.className='app-audio-controls';box.setAttribute('aria-label','声音设置');
+      const box=doc.createElement('div'); box.className='app-audio-controls';box.setAttribute('aria-label','背景音乐');
       const musicButton=doc.createElement('button'), sfxButton=doc.createElement('button');
       musicButton.type=sfxButton.type='button';musicButton.dataset.audioControl='music';sfxButton.dataset.audioControl='sfx';
-      box.append(musicButton,sfxButton);
+      box.append(musicButton);
       const slot=doc.querySelector('[data-audio-slot]');
       (slot || doc.body).append(box);if(slot)box.classList.add('app-audio-inline');
+      const settingsSlot=doc.querySelector('[data-audio-settings-slot]');
+      if (settingsSlot) {
+        settingsSlot.append(sfxButton);
+        sfxButton.className='app-audio-settings-sfx';
+      }
       controls={music:musicButton,sfx:sfxButton,box};
       musicButton.addEventListener('click',()=>{
         if (musicEnabled && !unlocked) {unlock(); return;}
@@ -127,21 +141,37 @@
       sfxButton.addEventListener('click',()=>{sfxEnabled=!sfxEnabled;if(!sfxEnabled)stopCues();savePrefs();});
       renderControls();
     }
+    function stopForNavigation(event) {
+      const link=event.target.closest?.('a[href]');
+      if (!link || link.hasAttribute('download') || link.target==='_blank') return;
+      let url;
+      try { url=new URL(link.href,env.location?.href || ''); }
+      catch (_) { return; }
+      if (!url.href || (env.location && url.origin!==env.location.origin) || url.href===env.location.href) return;
+      savePosition(); navigating=true; ownsPlayback=false; music.pause(); stopCues(); renderControls();
+    }
+    listen(doc,'click',stopForNavigation,true);
     listen(doc,'click',event=>{if(!event.target.closest?.('[data-audio-control]'))unlock();},true);
     listen(doc,'keydown',event=>{if(['Enter',' ','ArrowUp','ArrowDown','ArrowLeft','ArrowRight'].includes(event.key) && !event.target.closest?.('[data-audio-control]'))unlock();},true);
     listen(doc,'play',event=>focus(event.target,true),true);
     for (const event of ['pause','ended','error','emptied','abort']) listen(doc,event,e=>focus(e.target,false),true);
-    listen(doc,'visibilitychange',()=>{if(doc.hidden){savePosition();stopCues();} sync();});
+    listen(doc,'visibilitychange',()=>{if(doc.hidden){savePosition();stopCues();}else claimOwnership();sync();});
     listen(env,'pagehide',()=>{savePosition();suspended.add('pagehide');stopCues();sync();});
-    listen(env,'pageshow',()=>{suspended.delete('pagehide');sync();});
-    listen(env,'storage',event=>{if(event.key==='bookplay_audio_v1'){prefs=read(storage,event.key,{});musicEnabled=prefs.music!==false;sfxEnabled=prefs.sfx!==false;if(!sfxEnabled)stopCues();sync();}});
+    listen(env,'pageshow',()=>{suspended.delete('pagehide');claimOwnership();sync();});
+    listen(env,'storage',event=>{
+      if(event.key===OWNER_KEY){
+        let next=null;try{next=event.newValue?JSON.parse(event.newValue):null;}catch(_){next=null;}
+        if(!next || next.token!==ownerToken){ownsPlayback=false;music.pause();stopCues();sync();}
+      }
+      if(event.key==='bookplay_audio_v1'){prefs=read(storage,event.key,{});musicEnabled=prefs.music!==false;sfxEnabled=prefs.sfx!==false;if(!sfxEnabled)stopCues();sync();}
+    });
     return {
       configure, watchMedia, setForeground:focus, sfx, unlock, attachControls,
       suspend(reason='manual'){suspended.add(reason);stopCues();sync();},
       resume(reason='manual'){suspended.delete(reason);sync();},
       setMusicEnabled(value){musicEnabled=!!value;savePrefs();sync();},
       setSfxEnabled(value){sfxEnabled=!!value;if(!sfxEnabled)stopCues();savePrefs();},
-      getState(){return {scene,musicEnabled,sfxEnabled,unlocked,foreground:foreground.size,paused:music.paused,volume:music.volume,src:music.src};},
+      getState(){return {scene,musicEnabled,sfxEnabled,unlocked,ownsPlayback,navigating,foreground:foreground.size,paused:music.paused,volume:music.volume,src:music.src};},
       destroy(){savePosition();disposed=true;music.pause();stopCues();if(ramp)env.clearInterval(ramp);listeners.forEach(fn=>fn());watched.forEach(fn=>fn());controls?.box.remove();},
     };
   }

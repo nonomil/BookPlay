@@ -1,0 +1,25 @@
+{
+  "theme": "dragon-palace",
+  "kind": "top-down game world map background",
+  "provider": "cliprox",
+  "model": "gpt-image-2",
+  "requested_size": "1536x1024",
+  "raw_size": "1536x1024",
+  "attempts": 1,
+  "prompt": "source/prompt.txt",
+  "normalized": {
+    "path": "2d/dragon-palace-map.png",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "ca7f144c4a791f363b49f48e0feeb5a81b513f2373f1d24303a12d4a25761cba"
+  },
+  "runtime_jpg": {
+    "path": "2d/dragon-palace.jpg",
+    "width": 1280,
+    "height": 720,
+    "quality": 82,
+    "sha256": "37ea8b13066654940e1d56837a907b549c04fdf56fcbb4f3f55e22c39eb0017e"
+  },
+  "generated_at": "2026-09-06T23:49:17+00:00",
+  "notes": "provider ignores requested size; normalized via center-crop to 3:2 + LANCZOS resize"
+}

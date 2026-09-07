@@ -268,6 +268,12 @@ COMMON_FILES = (
     "assets/game-sprites/imp/imp-west-walk-action.gif",
     "assets/game-sprites/imp/imp-east-walk-action.gif",
     "assets/game-sprites/imp/imp-north-walk-action.gif",
+    "assets/game-backgrounds/flower-fruit-mountain.jpg",
+    "assets/game-backgrounds/water-curtain-cave.jpg",
+    "assets/game-backgrounds/three-star-cave.jpg",
+    "assets/game-backgrounds/water-dirty-cave.jpg",
+    "assets/game-backgrounds/dragon-palace.jpg",
+    "assets/game-backgrounds/underworld.jpg",
 )
 
 
@@ -307,7 +313,7 @@ def _csv(value: str | Iterable[str] | None) -> list[str]:
 
 
 def parse_episode_ids(value: str | Iterable[int] | None) -> tuple[int, ...] | None:
-    """Normalize an optional episode selector (``1`` or ``1,2``).
+    """Normalize an optional episode selector (``1``, ``1,2`` or ``2-108``).
 
     ``None`` keeps the collection's complete episode range.  A selector is
     intentionally restricted to positive integers so a typo cannot silently
@@ -320,13 +326,42 @@ def parse_episode_ids(value: str | Iterable[int] | None) -> tuple[int, ...] | No
         raise ValueError("集号筛选不能为空，例如 --episodes 1")
     result: set[int] = set()
     for token in tokens:
+        if re.fullmatch(r"\d+-\d+", token):
+            start_text, end_text = token.split("-", 1)
+            start, end = int(start_text), int(end_text)
+            if start < 1 or end < start:
+                raise ValueError(f"无效集号范围: {token}；请使用 2-108 这样的正整数闭区间")
+            result.update(range(start, end + 1))
+            continue
         if not re.fullmatch(r"\d+", token):
-            raise ValueError(f"无效集号: {token}；请使用正整数，例如 1 或 1,2")
+            raise ValueError(f"无效集号: {token}；请使用正整数，例如 1、1,2 或 2-108")
         number = int(token)
         if number < 1:
             raise ValueError(f"无效集号: {token}；请使用正整数")
         result.add(number)
     return tuple(sorted(result))
+
+
+def parse_published_books(value: str | None) -> dict[str, tuple[int, ...]] | None:
+    """Parse ``minecraft:2-5;mikey-jj:2,3,5-11`` into a per-series allowlist."""
+    if value is None or not str(value).strip():
+        return None
+    result: dict[str, tuple[int, ...]] = {}
+    for chunk in str(value).split(";"):
+        part = chunk.strip()
+        if not part:
+            continue
+        if ":" not in part:
+            raise ValueError(f"无效绘本选择: {part}；请使用 minecraft:2-5;mikey-jj:2,3,5-11")
+        series, spec = part.split(":", 1)
+        series = series.strip()
+        if series not in PUBLISHED_SERIES:
+            raise ValueError(f"未知绘本系列: {series}；可用值: {', '.join(PUBLISHED_SERIES)}")
+        books = parse_episode_ids(spec)
+        if not books:
+            raise ValueError(f"绘本选择不能为空: {part}")
+        result[series] = books
+    return result or None
 
 
 def _load_json(path: Path) -> object | None:
@@ -368,6 +403,29 @@ def _strings(value: object, out: set[str]) -> None:
     elif isinstance(value, list):
         for item in value:
             _strings(item, out)
+
+
+def _plain_strings(value: object, out: set[str]) -> None:
+    if isinstance(value, str):
+        text = " ".join(value.split()).strip()
+        if text:
+            out.add(text)
+    elif isinstance(value, dict):
+        for item in value.values():
+            _plain_strings(item, out)
+    elif isinstance(value, list):
+        for item in value:
+            _plain_strings(item, out)
+
+
+def _add_hashed_sentence_audio(root: Path, files: dict[str, Path | bytes], texts: Iterable[str]) -> None:
+    for text in texts:
+        digest = hashlib.md5(text.encode("utf-8")).hexdigest()[:12]
+        for folder in ("sent_en", "sent_zh"):
+            rel = f"assets/adv_audio/{folder}/{digest}.mp3"
+            path = root / rel
+            if path.is_file():
+                files[rel] = path
 
 
 def _safe_rel(rel: str) -> str | None:
@@ -588,6 +646,67 @@ def _add_published(
     return selected
 
 
+def _restore_full_catalogs(root: Path, files: dict[str, Path | bytes]) -> None:
+    """Keep complete catalogs so an overlay pack does not hide starter titles."""
+    for rel in (
+        "dialogue_stories/collections.json",
+        "storybooks/catalog.json",
+        "storybooks-minecraft/catalog.json",
+        "storybooks-minecraft/collections.json",
+        "storybooks-mikey-jj/catalog.json",
+        "storybooks-mikey-jj/collections.json",
+    ):
+        path = root / rel
+        if path.is_file():
+            files[rel] = path
+    for catalog_rel in (
+        "storybooks/catalog.json",
+        "storybooks-minecraft/catalog.json",
+        "storybooks-mikey-jj/catalog.json",
+    ):
+        payload = _load_json(files[catalog_rel]) if catalog_rel in files else None
+        if not isinstance(payload, dict) or not isinstance(payload.get("episodes"), list):
+            continue
+        for item in payload["episodes"]:
+            if not isinstance(item, dict) or not isinstance(item.get("cover"), str):
+                continue
+            cover = item["cover"].replace("\\", "/")
+            if cover.startswith("assets/"):
+                _add_file(root, files, [], cover)
+    for rel in ("assets/covers", "assets/collections"):
+        _add_dir(root, files, [], rel)
+
+
+def _content_manifest(
+    *,
+    version: str,
+    collections: tuple[str, ...],
+    episodes: list[int],
+    published_books: dict[str, tuple[int, ...]],
+    keep_full_catalogs: bool,
+    warnings: list[str],
+) -> dict:
+    available: dict[str, dict[str, object]] = {
+        "jttw": {"episodes": list(episodes), "collections": list(collections)},
+    }
+    if keep_full_catalogs and 1 not in available["jttw"]["episodes"]:
+        available["jttw"]["episodes"] = [1, *available["jttw"]["episodes"]]
+    for series, books in published_books.items():
+        values = list(books)
+        if keep_full_catalogs and 1 not in values:
+            values = [1, *values]
+        if values:
+            available[series] = {"books": values}
+    return {
+        "schema_version": 1,
+        "kind": "apk-builtin-starter",
+        "version": version,
+        "message": "已导入阶段数据包。后续集/本可直接打开。",
+        "available": available,
+        "warnings": warnings,
+    }
+
+
 def _add_stage_catalog(
     root: Path,
     files: dict[str, Path | bytes],
@@ -648,6 +767,8 @@ def _build_stage_pack(
     published: str = "all",
     episodes: str | Iterable[int] | None = None,
     published_books: dict[str, Iterable[int]] | None = None,
+    exclude_episodes: str | Iterable[int] | None = None,
+    keep_full_catalogs: bool = False,
 ) -> tuple[dict[str, Path | bytes], tuple[str, ...], list[int], list[str], list[str]]:
     """Build a selective file map and metadata before writing the ZIP."""
     root = root.resolve()
@@ -706,6 +827,11 @@ def _build_stage_pack(
         if invalid:
             raise ValueError(f"集号不属于所选合辑: {', '.join(str(item) for item in invalid)}")
         episode_ids = set(selected_episodes)
+    excluded = set(parse_episode_ids(exclude_episodes) or ())
+    if excluded:
+        episode_ids -= excluded
+        if not episode_ids:
+            raise ValueError("排除集号后没有可打包的西游记集")
 
     for ep in sorted(episode_ids):
         ep_json_rel = f"dialogue_stories/ep{ep}.json"
@@ -723,7 +849,18 @@ def _build_stage_pack(
             target = _read_ref(root, ref)
             if target is not None:
                 files[_posix(target.relative_to(root))] = target
+        lesson_rel = f"lesson_guides/ep{ep:03d}/lesson.json"
         _add_dir(root, files, warnings, f"lesson_guides/ep{ep:03d}")
+        lesson_path = root / lesson_rel
+        if lesson_path.is_file():
+            try:
+                lesson_data = _load_json(lesson_path)
+                _strings(lesson_data, strings)
+                plain: set[str] = set()
+                _plain_strings(lesson_data, plain)
+                _add_hashed_sentence_audio(root, files, plain)
+            except (OSError, ValueError, TypeError):
+                warnings.append(f"巩固题文本无法纳入语音索引: {lesson_rel}")
         _add_dir(root, files, warnings, f"assets/adv_frames/ep{ep}")
         _add_dir(root, files, warnings, f"assets/adv_audio/ep{ep}")
         _add_file(root, files, warnings, f"assets/generated/jttw-story-scenes-v1/ep{ep:03d}.jpg", required=True)
@@ -733,6 +870,8 @@ def _build_stage_pack(
     _add_stage_catalog(root, files, warnings, episode_ids)
     published_ids = _add_published(root, files, warnings, published, published_books=published_books)
     _add_shared_audio(root, files, strings, warnings)
+    if keep_full_catalogs:
+        _restore_full_catalogs(root, files)
     return files, ids, sorted(episode_ids), published_ids, warnings
 
 
@@ -743,6 +882,8 @@ def iter_stage_pack_files(
     published: str = "all",
     episodes: str | Iterable[int] | None = None,
     published_books: dict[str, Iterable[int]] | None = None,
+    exclude_episodes: str | Iterable[int] | None = None,
+    keep_full_catalogs: bool = False,
 ) -> Iterator[tuple[str, Path | bytes]]:
     """Yield files for a selective stage pack."""
     files, _ids, _episodes, _published, _warnings = _build_stage_pack(
@@ -751,9 +892,24 @@ def iter_stage_pack_files(
         published=published,
         episodes=episodes,
         published_books=published_books,
+        exclude_episodes=exclude_episodes,
+        keep_full_catalogs=keep_full_catalogs,
     )
     for rel, src in files.items():
         yield rel, src
+
+
+def _book_numbers_in_files(files: dict[str, Path | bytes], series: str) -> tuple[int, ...]:
+    folder = PUBLISHED_SERIES[series]
+    prefix = f"{folder}/book"
+    numbers: list[int] = []
+    for rel in files:
+        if not rel.startswith(prefix) or not rel.endswith(".json"):
+            continue
+        number = _book_number(rel[len(prefix):-len(".json")])
+        if number is not None:
+            numbers.append(number)
+    return tuple(sorted(set(numbers)))
 
 
 def _entry_size(source: Path | bytes) -> int:
@@ -809,6 +965,8 @@ def write_datapack_zip(
     published: str | None = None,
     episodes: str | Iterable[int] | None = None,
     published_books: dict[str, Iterable[int]] | None = None,
+    exclude_episodes: str | Iterable[int] | None = None,
+    keep_full_catalogs: bool = False,
     version: str = "dev",
 ) -> Path:
     """Write a ZIP; optional ``collections`` enables selective stage mode."""
@@ -825,7 +983,22 @@ def write_datapack_zip(
             published=published or "all",
             episodes=episodes,
             published_books=published_books,
+            exclude_episodes=exclude_episodes,
+            keep_full_catalogs=keep_full_catalogs,
         )
+        book_map = {series: _book_numbers_in_files(files, series) for series in published_ids}
+        files["content-manifest.json"] = json.dumps(
+            _content_manifest(
+                version=version,
+                collections=ids,
+                episodes=selected_episode_ids,
+                published_books=book_map,
+                keep_full_catalogs=keep_full_catalogs,
+                warnings=warnings,
+            ),
+            ensure_ascii=False,
+            indent=2,
+        ).encode("utf-8")
         episode_suffix = "-ep" + "-".join(str(item) for item in selected_episode_ids) if episodes else ""
         entries = list(files.items())
         manifest = _manifest(
@@ -865,8 +1038,18 @@ def main() -> None:
     ap.add_argument("--src", default=str(CONTENT), help="content folder")
     ap.add_argument("--out", default=str(REPO / "豆豆龙数据包.zip"), help="output zip path")
     ap.add_argument("--collections", help="selective stage mode, e.g. c01 or c01,c02")
-    ap.add_argument("--episodes", help="optional episode filter inside selected collections, e.g. 1 or 1,2")
+    ap.add_argument("--episodes", help="optional episode filter inside selected collections, e.g. 1, 1,2 or 2-108")
+    ap.add_argument("--exclude-episodes", help="drop these episodes from the selected collections, e.g. 1")
     ap.add_argument("--published", default=None, help="stage books: none, mikey-jj, minecraft, all")
+    ap.add_argument(
+        "--published-books",
+        help="limit published books, e.g. minecraft:2-5;mikey-jj:2,3,5-11",
+    )
+    ap.add_argument(
+        "--keep-full-catalogs",
+        action="store_true",
+        help="keep complete catalogs so an overlay pack does not hide starter titles already in the APK",
+    )
     ap.add_argument("--version", default="dev", help="content package version written to manifest")
     ap.add_argument("--lesson-quality-report", help="write a JSON lesson quality audit before packing")
     ap.add_argument("--strict-lesson-quality", action="store_true", help="fail before packing when lesson quality has blocking issues")
@@ -890,6 +1073,9 @@ def main() -> None:
         collections=args.collections,
         published=args.published,
         episodes=args.episodes,
+        published_books=parse_published_books(args.published_books),
+        exclude_episodes=args.exclude_episodes,
+        keep_full_catalogs=args.keep_full_catalogs,
         version=args.version,
     )
 

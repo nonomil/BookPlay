@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="icon" href="data:,">
+  <title>掌机按键探测</title>
+  <link rel="stylesheet" href="style.css?v=png1">
+  <link rel="stylesheet" href="tv.css?v=1">
+  <style>
+    body { margin: 0; background: #16131f; color: #fff7e6; font-family: sans-serif; }
+    .probe { min-height: 100vh; padding: 16px 18px 28px; box-sizing: border-box; }
+    h1 { margin: 0 0 6px; font-size: 1.35rem; }
+    .hint { margin: 0 0 14px; color: #d8c6a3; line-height: 1.45; }
+    .now { min-height: 3.2em; padding: 12px 14px; border-radius: 14px; background: #2a2238; font-size: 1.15rem; word-break: break-all; }
+    .grid { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 8px; margin: 14px 0; }
+    .pad { text-align: center; padding: 10px 4px; border-radius: 12px; background: #3a3148; font-weight: 700; }
+    .pad.on { background: #7b5cff; }
+    .sticks { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .stick { height: 120px; border-radius: 16px; background: #2a2238; position: relative; overflow: hidden; }
+    .stick b { position: absolute; left: 8px; top: 8px; font-size: .85rem; color: #d8c6a3; }
+    .dot { position: absolute; width: 18px; height: 18px; margin: -9px 0 0 -9px; border-radius: 50%; background: #ffd76a; left: 50%; top: 50%; }
+    .meta, .log { margin-top: 12px; font-size: .9rem; color: #d8c6a3; white-space: pre-wrap; }
+    a { color: #ffd76a; }
+    @media (max-width: 720px) { .grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+  </style>
+</head>
+<body>
+  <div class="probe">
+    <h1>掌机按键探测</h1>
+    <p class="hint">请依次按 上/下/左/右、A/B/X/Y、Start、Select，并推动左右摇杆。页面会记下 keyCode / scanCode 和摇杆轴值，方便写映射。</p>
+    <div class="now" id="now">等待按键…</div>
+    <div class="grid" id="pads"></div>
+    <div class="sticks">
+      <div class="stick">左摇杆<span class="dot" id="dot-l"></span><b id="lx">L 0, 0</b></div>
+      <div class="stick">右摇杆<span class="dot" id="dot-r"></span><b id="rx">R 0, 0</b></div>
+    </div>
+    <div class="meta" id="meta"></div>
+    <pre class="log" id="log"></pre>
+    <p class="hint"><a href="home.html">返回首页</a></p>
+  </div>
+  <script src="native-key.js?v=1"></script>
+  <script src="tv-remote.js?v=1"></script>
+  <script>
+    const ROLES = ["up", "down", "left", "right", "A", "B", "X", "Y", "start", "select"];
+    const LABELS = { up: "上", down: "下", left: "左", right: "右", start: "Start", select: "Select" };
+    const seen = {};
+    const pads = document.getElementById("pads");
+    ROLES.forEach((role) => {
+      const el = document.createElement("div");
+      el.className = "pad";
+      el.id = "pad-" + role;
+      el.textContent = LABELS[role] || role;
+      pads.appendChild(el);
+    });
+    const logLines = [];
+    function renderMeta() {
+      const p = window.BookPlayDeviceProfile || {};
+      const handheld = window.BookPlayNativeKeys.suggestHandheld(p, window.BookPlayNativeKeys.recent()[0]);
+      document.getElementById("meta").textContent =
+        `模式提示: ${handheld ? "掌机键控" : "触屏/未确认"}\n` +
+        `hardware=${p.hardware || "?"} board=${p.board || "?"} model=${p.model || "?"}\n` +
+        `屏幕 ${p.widthPx || "?"}×${p.heightPx || "?"}`;
+    }
+    function moveDot(id, axisId, label, point) {
+      const dot = document.getElementById(id);
+      const text = document.getElementById(axisId);
+      dot.style.left = (50 + point.x * 42) + "%";
+      dot.style.top = (50 + point.y * 42) + "%";
+      text.textContent = `${label} ${point.x.toFixed(2)}, ${point.y.toFixed(2)}`;
+    }
+    window.BookPlayNativeKeys.on((kind, detail) => {
+      if (kind === "key") {
+        const info = window.BookPlayNativeKeys.classifyKey(detail);
+        document.getElementById("now").textContent = window.BookPlayNativeKeys.formatKey(detail);
+        if (info.role !== "unknown") {
+          seen[info.role] = detail;
+          document.getElementById("pad-" + info.role).classList.add("on");
+        }
+        logLines.unshift(window.BookPlayNativeKeys.formatKey(detail));
+      } else if (kind === "axis") {
+        const sticks = window.BookPlayNativeKeys.applyAxis(detail);
+        moveDot("dot-l", "lx", "L", sticks.left);
+        moveDot("dot-r", "rx", "R", sticks.right);
+        if (sticks.left.x || sticks.left.y || sticks.right.x || sticks.right.y) {
+          logLines.unshift(`axis L=${sticks.left.x.toFixed(2)},${sticks.left.y.toFixed(2)} R=${sticks.right.x.toFixed(2)},${sticks.right.y.toFixed(2)}`);
+        }
+      }
+      document.getElementById("log").textContent = logLines.slice(0, 16).join("\n");
+      renderMeta();
+    });
+    if (window.BookPlayDeviceProfile) window.BookPlayApplyDeviceProfile(window.BookPlayDeviceProfile);
+    renderMeta();
+  </script>
+</body>
+</html>

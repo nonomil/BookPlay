@@ -270,10 +270,14 @@ def test_lesson_page_defaults_to_english_with_edge_tts_and_toggleable_chinese() 
     assert "lesson-zh" in js and "showChinese" in js
     assert "choice-zh lesson-zh" in js
     assert "question-en" in js and "question-zh lesson-zh" in js
-    # Every question and option must use the local Edge-TTS endpoint first.
+    # Quiz prompts were generated with Edge-TTS and indexed; play those clips
+    # first.  /api/tts remains the fallback when an index miss still happens.
+    assert "quiz_en_index.json" in js and "sent_en_index.json" in js
+    assert "lessonClipUrl" in js or "sentClip" in js
     assert 'EDGE_TTS_ENDPOINT = "/api/tts"' in js and "?voice=" in js
     assert "en-US-JennyNeural" in js
     assert "zh-CN-XiaoxiaoNeural" in js
+    assert "media.js" in html
     assert 'id="lesson-title-speak"' in html
     assert 'id="lesson-intro-speak"' in html
     assert "lesson-speak-question" in js
@@ -293,6 +297,8 @@ def test_lesson_session_gates_quiz_and_distinguishes_pass_from_practice() -> Non
     assert "done: Boolean(passed" in js
     assert "再测一次" in js
     assert "renderEpisodeReward(passed)" in js
+    assert 'location.replace(`lesson-words.html?ep=${episode}`)' in js
+    assert "studySession.words.length" in js
 
 
 def test_lesson_page_exposes_all_requested_learning_modes_and_story_source() -> None:
@@ -346,6 +352,8 @@ def test_wala_keeps_learning_volume_and_adds_independent_lesson_settings() -> No
         assert control in js
     assert "bookplay_learn_level" in js
     assert "bookplay_lesson_settings_v1" in js
+    assert 'id="w-sfx-on"' in html and 'id="w-sfx-off"' in html
+    assert "setSfxEnabled" in js
 
 
 def test_wala_episode_completion_routes_to_current_episode_lesson() -> None:

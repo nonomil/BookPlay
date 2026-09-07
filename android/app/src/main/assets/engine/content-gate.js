@@ -79,12 +79,35 @@
     return overlay;
   }
 
+  function payloadUrl(series, id) {
+    if (series === "minecraft") return `../data/storybooks-minecraft/book${id}.json`;
+    if (series === "mikey-jj") return `../data/storybooks-mikey-jj/book${id}.json`;
+    return `../data/dialogue_stories/ep${id}.json`;
+  }
+
+  function listedInManifest(manifest, series, id) {
+    const item = manifest.available?.[series] || {};
+    const key = series === "jttw" ? "episodes" : "books";
+    return Array.isArray(item[key]) && item[key].map(Number).includes(Number(id));
+  }
+
+  async function payloadExists(series, id) {
+    try {
+      const response = await fetch(payloadUrl(series, id), { cache: "no-store" });
+      return Boolean(response && response.ok);
+    } catch (_) {
+      return false;
+    }
+  }
+
   async function isUnavailable(series, id) {
     const manifest = await loadManifest();
     if (!manifest || !["apk-builtin-starter", "apk-builtin-jttw-only"].includes(manifest.kind)) return false;
-    const item = manifest.available?.[series] || {};
-    const key = series === "jttw" ? "episodes" : "books";
-    return !Array.isArray(item[key]) || !item[key].map(Number).includes(Number(id));
+    if (listedInManifest(manifest, series, id)) return false;
+    // Imported packs overlay files in front of the starter tree.  If the
+    // title payload is actually present, let the learner in instead of
+    // asking them to import a pack they already selected.
+    return !(await payloadExists(series, id));
   }
 
   // Intercept route cards before the browser leaves the map.  This keeps the

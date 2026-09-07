@@ -1,0 +1,25 @@
+{
+  "theme": "water-dirty-cave",
+  "kind": "top-down game world map background",
+  "provider": "cliprox",
+  "model": "gpt-image-2",
+  "requested_size": "1536x1024",
+  "raw_size": "1402x1122",
+  "attempts": 2,
+  "prompt": "source/prompt.txt",
+  "normalized": {
+    "path": "2d/water-dirty-cave-map.png",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "ad5c996e0131009509e1d6282c2af3f2739476bcda88659d621b1097e26e089d"
+  },
+  "runtime_jpg": {
+    "path": "2d/water-dirty-cave.jpg",
+    "width": 1280,
+    "height": 720,
+    "quality": 82,
+    "sha256": "a5152b8caa2083d913139f2d7860b22997f4f2fc12dfb0fa394ab385665802b6"
+  },
+  "generated_at": "2026-09-06T23:49:16+00:00",
+  "notes": "provider ignores requested size; normalized via center-crop to 3:2 + LANCZOS resize"
+}

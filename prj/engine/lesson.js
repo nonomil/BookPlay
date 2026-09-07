@@ -20,6 +20,7 @@ const EDGE_TTS_VOICES = Object.freeze({
   zh: "zh-CN-XiaoxiaoNeural",
 });
 const EDGE_TTS_ENDPOINT = "/api/tts";
+const lessonAudioIndex = { en: {}, zh: {} };
 const TEACHER_SPRITES = {
   idle: "../assets/cast/doudou-teacher/idle.png",
   talk: "../assets/cast/doudou-teacher/talk.png",
@@ -256,6 +257,40 @@ function edgeTtsUrl(text, lang = "en-US") {
   return `${EDGE_TTS_ENDPOINT}?voice=${voice}&text=${encodeURIComponent(value)}`;
 }
 
+function lookupLessonClip(text, lang) {
+  const value = normalizeSpeechText(text);
+  const zh = String(lang || "").toLowerCase().startsWith("zh");
+  const map = zh ? lessonAudioIndex.zh : lessonAudioIndex.en;
+  if (window.WalaMedia && typeof window.WalaMedia.sentClip === "function") {
+    return window.WalaMedia.sentClip(map, value);
+  }
+  if (map[value]) return map[value];
+  const lower = value.toLowerCase();
+  for (const key of Object.keys(map)) {
+    if (normalizeSpeechText(key).toLowerCase() === lower) return map[key];
+  }
+  return null;
+}
+
+function lessonClipUrl(text, lang = "en-US") {
+  const clip = lookupLessonClip(text, lang);
+  return clip ? `../${clip}` : edgeTtsUrl(text, lang);
+}
+
+async function loadLessonAudioIndexes() {
+  const load = (rel) => fetch(`../${rel}`, { cache: "no-store" })
+    .then((response) => (response.ok ? response.json() : {}))
+    .catch(() => ({}));
+  const [sentEn, sentZh, quizEn, quizZh] = await Promise.all([
+    load("assets/adv_audio/sent_en_index.json"),
+    load("assets/adv_audio/sent_zh_index.json"),
+    load("assets/adv_audio/quiz_en_index.json"),
+    load("assets/adv_audio/quiz_zh_index.json"),
+  ]);
+  lessonAudioIndex.en = Object.assign({}, sentEn, quizEn);
+  lessonAudioIndex.zh = Object.assign({}, sentZh, quizZh);
+}
+
 function clearAudioState(trigger) {
   const active = trigger || document.querySelector(".lesson-speak-question.speaking, .lesson-speak-choice.speaking, .lesson-speak-review.speaking, .lesson-speak-order.speaking, .lesson-speak-fill.speaking, .listen-picture-hear.speaking, .title-audio.speaking, .intro-audio.speaking");
   if (active) active.classList.remove("speaking");
@@ -323,7 +358,7 @@ function playEdgeClip(text, lang, token) {
       lessonAudio.onerror = null;
       resolve(ok);
     };
-    lessonAudio.src = edgeTtsUrl(value, lang);
+    lessonAudio.src = lessonClipUrl(value, lang);
     lessonAudio.onended = () => done(true);
     lessonAudio.onerror = () => done(false);
     lessonAudio.play().catch(() => done(false));
@@ -1305,6 +1340,7 @@ async function start() {
   if (!core) throw new Error("lesson-core.js 未加载");
   if (ui.hint) ui.hint.addEventListener("click", toggleChinese);
   applyChineseVisibility();
+  await loadLessonAudioIndexes();
   const url = `../data/lesson_guides/${episodeKey}/lesson.json`;
   const response = await fetch(url, { cache: "no-store" });
   if (!response.ok) throw new Error(`知识巩固数据加载失败：${response.status}`);
@@ -1399,6 +1435,10 @@ async function start() {
     return;
   }
   if (!core.isStudyComplete(studySession, episode)) {
+    if (studySession.words.length) {
+      window.location.replace(`lesson-words.html?ep=${episode}`);
+      return;
+    }
     renderStudyGate();
     return;
   }

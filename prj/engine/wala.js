@@ -31,6 +31,7 @@ const el = {
   lvLite: $("w-lv-lite"), lvStd: $("w-lv-std"), lvMax: $("w-lv-max"),
   gradeG12: $("w-grade-g1-2"), gradeG34: $("w-grade-g3-4"), gradeG56: $("w-grade-g5-6"),
   intensityLight: $("w-intensity-light"), intensityStandard: $("w-intensity-standard"), intensityChallenge: $("w-intensity-challenge"),
+  sfxOn: $("w-sfx-on"), sfxOff: $("w-sfx-off"),
   rateSlow: $("w-rate-slow"), rateNorm: $("w-rate-norm"), rateFast: $("w-rate-fast"),
   gear: $("w-gear"), settings: $("w-settings-panel"),
   wordcard: $("w-wordcard"),
@@ -2389,6 +2390,14 @@ function bindSettings() {
   if (el.intensityStandard) el.intensityStandard.addEventListener("click", () => setLessonSetting("intensity", "standard"));
   if (el.intensityChallenge) el.intensityChallenge.addEventListener("click", () => setLessonSetting("intensity", "challenge"));
   syncLessonSettings();
+  const syncSfx = () => {
+    const on = !window.BookPlayAudio || window.BookPlayAudio.getState().sfxEnabled !== false;
+    if (el.sfxOn) el.sfxOn.classList.toggle("active", on);
+    if (el.sfxOff) el.sfxOff.classList.toggle("active", !on);
+  };
+  if (el.sfxOn) el.sfxOn.addEventListener("click", () => { window.BookPlayAudio?.setSfxEnabled(true); syncSfx(); });
+  if (el.sfxOff) el.sfxOff.addEventListener("click", () => { window.BookPlayAudio?.setSfxEnabled(false); syncSfx(); });
+  syncSfx();
 
   const syncSideCards = () => {
     if (el.sideCardsOn) el.sideCardsOn.classList.toggle("active", sideCardsOn);

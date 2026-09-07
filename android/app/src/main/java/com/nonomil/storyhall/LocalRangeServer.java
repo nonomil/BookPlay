@@ -5,6 +5,8 @@ import android.content.res.AssetManager;
 
 import java.io.BufferedInputStream;
 import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
@@ -14,11 +16,19 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
+import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Locale;
+import java.util.Map;
+
+import org.json.JSONObject;
 
 final class LocalRangeServer {
     static final int PORT = 18787;
     private static ServerSocket server;
+    private static final Object TTS_INDEX_LOCK = new Object();
+    private static Map<String, String> ttsEnIndex;
+    private static Map<String, String> ttsZhIndex;
 
     private LocalRangeServer() {}
 
@@ -33,6 +43,7 @@ final class LocalRangeServer {
             return;
         }
         Context app = ctx.getApplicationContext();
+        NativeTts.ensure(app);
         Thread t = new Thread(() -> loop(app), "storyhall-http");
         t.setDaemon(true);
         t.start();
@@ -120,16 +131,29 @@ final class LocalRangeServer {
             return;
         }
         String folder = "zh".equals(voice) ? "sent_zh" : "sent_en";
-        String rel = "assets/adv_audio/" + folder + "/" + md5_12(text) + ".mp3";
+        String indexed = lookupTtsClip(ctx, text, voice);
+        String rel = indexed != null
+                ? indexed
+                : "assets/adv_audio/" + folder + "/" + md5_12(text) + ".mp3";
         try {
             DataPackStore.Source src = DataPackStore.resolve(ctx, rel);
-            if (src == null) {
-                writeText(out, 404, "no clip");
+            if (src != null) {
+                serveSource(out, src, "audio/mpeg", null);
                 return;
             }
-            serveSource(out, src, "audio/mpeg", null);
-        } catch (FileNotFoundException e) {
+        } catch (FileNotFoundException ignored) {
+        }
+        File wav = NativeTts.synthesize(text, voice);
+        if (wav == null) {
             writeText(out, 404, "no clip");
+            return;
+        }
+        try (InputStream in = new FileInputStream(wav)) {
+            writeBytes(out, readAll(in), "audio/wav", null);
+        } finally {
+            if (!wav.delete()) {
+                wav.deleteOnExit();
+            }
         }
     }
 
@@ -291,11 +315,65 @@ final class LocalRangeServer {
         if (p.endsWith(".json")) return "application/json; charset=utf-8";
         if (p.endsWith(".mp4")) return "video/mp4";
         if (p.endsWith(".mp3")) return "audio/mpeg";
+        if (p.endsWith(".wav")) return "audio/wav";
         if (p.endsWith(".png")) return "image/png";
         if (p.endsWith(".jpg") || p.endsWith(".jpeg")) return "image/jpeg";
         if (p.endsWith(".webp")) return "image/webp";
         if (p.endsWith(".svg")) return "image/svg+xml";
         return "application/octet-stream";
+    }
+
+    private static String lookupTtsClip(Context ctx, String text, String voice) {
+        ensureTtsIndexes(ctx);
+        Map<String, String> index = "zh".equals(voice) ? ttsZhIndex : ttsEnIndex;
+        if (index == null || index.isEmpty()) {
+            return null;
+        }
+        String direct = index.get(text);
+        if (direct != null && !direct.isEmpty()) {
+            return direct;
+        }
+        return index.get(text.toLowerCase(Locale.ROOT));
+    }
+
+    private static void ensureTtsIndexes(Context ctx) {
+        synchronized (TTS_INDEX_LOCK) {
+            if (ttsEnIndex != null && ttsZhIndex != null) {
+                return;
+            }
+            ttsEnIndex = loadTtsIndex(ctx,
+                    "assets/adv_audio/sent_en_index.json",
+                    "assets/adv_audio/quiz_en_index.json");
+            ttsZhIndex = loadTtsIndex(ctx,
+                    "assets/adv_audio/sent_zh_index.json",
+                    "assets/adv_audio/quiz_zh_index.json");
+        }
+    }
+
+    private static Map<String, String> loadTtsIndex(Context ctx, String... rels) {
+        Map<String, String> out = new HashMap<>();
+        for (String rel : rels) {
+            try {
+                DataPackStore.Source src = DataPackStore.resolve(ctx, rel);
+                if (src == null) {
+                    continue;
+                }
+                JSONObject obj = new JSONObject(new String(readAll(src.open()), StandardCharsets.UTF_8));
+                Iterator<String> keys = obj.keys();
+                while (keys.hasNext()) {
+                    String key = keys.next();
+                    String path = obj.optString(key, "");
+                    if (path.isEmpty()) {
+                        continue;
+                    }
+                    String normalized = key.replaceAll("\\s+", " ").trim();
+                    out.put(normalized, path);
+                    out.put(normalized.toLowerCase(Locale.ROOT), path);
+                }
+            } catch (Exception ignored) {
+            }
+        }
+        return out;
     }
 
     private static String md5_12(String text) {

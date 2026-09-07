@@ -4,13 +4,17 @@
 
 ## 当前权威文档
 
-1. [`../README.md`](../README.md)：运行、验证和 Git 边界。
-2. [`项目架构与优化路线.md`](项目架构与优化路线.md)：当前架构、真实链路、风险和优化优先级。
-3. [`瓦拉播放器·方案设计与学习机制.md`](瓦拉播放器·方案设计与学习机制.md)：瓦拉播放器的产品与学习机制；代码路径以 `prj/engine/` 为准。
-4. [`品牌/豆豆龙英语/README.md`](品牌/豆豆龙英语/README.md)：品牌资料。
-5. [`../.codex/skills/storybook-audio-splitting/SKILL.md`](../.codex/skills/storybook-audio-splitting/SKILL.md)：Mikey & JJ 及后续绘本的逐句音频、词级同步与浏览器验收技能。
-6. [`plans/2026-09-01-阶段数据包瘦身.md`](plans/2026-09-01-阶段数据包瘦身.md)：阶段数据包选择性收集、清单和验证计划。
-7. [`reports/2026-09-01-阶段数据包体积.md`](reports/2026-09-01-阶段数据包体积.md)：c01（第 1–7 集）实包体积与 SHA-256 校验结果；同目录的 `*-c01-c02.md` 为扩展包报告。
+0. [2026-09-06 全项目审查报告](reports/2026-09-06-全项目审查/README.md)：最新工作区审查、真实测试基线与缺陷证据；后续执行见[优化计划](plans/2026-09-06-全项目优化/README.md)、[实时看板](plans/2026-09-06-全项目优化/STATUS.md)和[测试验收方案](plans/2026-09-06-全项目优化/ACCEPTANCE.md)。旧架构文档中的数值与产品范围属于其标注日期的快照。
+
+1. [2026-09-06 掌机版按键桥与 X35S 调研](reports/2026-09-06-掌机版按键桥与X35S调研.md)：X35S 设备结论、dispatchKeyEvent→native-key.js 按键桥、handheld flavor 打包、阶段 2/3 缺口与待填实测键码表。
+
+2. [`../README.md`](../README.md)：运行、验证和 Git 边界。
+3. [`项目架构与优化路线.md`](项目架构与优化路线.md)：当前架构、真实链路、风险和优化优先级。
+4. [`瓦拉播放器·方案设计与学习机制.md`](瓦拉播放器·方案设计与学习机制.md)：瓦拉播放器的产品与学习机制；代码路径以 `prj/engine/` 为准。
+5. [`品牌/豆豆龙英语/README.md`](品牌/豆豆龙英语/README.md)：品牌资料。
+6. [`../.codex/skills/storybook-audio-splitting/SKILL.md`](../.codex/skills/storybook-audio-splitting/SKILL.md)：Mikey & JJ 及后续绘本的逐句音频、词级同步与浏览器验收技能。
+7. [`plans/2026-09-01-阶段数据包瘦身.md`](plans/2026-09-01-阶段数据包瘦身.md)：阶段数据包选择性收集、清单和验证计划。
+8. [`reports/2026-09-01-阶段数据包体积.md`](reports/2026-09-01-阶段数据包体积.md)：c01（第 1–7 集）实包体积与 SHA-256 校验结果；同目录的 `*-c01-c02.md` 为扩展包报告。
 
 ## 历史与规划文档
 

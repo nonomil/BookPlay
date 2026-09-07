@@ -9,6 +9,8 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "tools"))
 from pack_datapack import (  # noqa: E402
     parse_collection_ids,
+    parse_episode_ids,
+    parse_published_books,
     iter_stage_pack_files,
     write_datapack_zip,
 )
@@ -43,11 +45,15 @@ def _fixture(root: Path) -> None:
         _write(root / f"assets/adv_audio/ep{ep}/index.json", json.dumps({f"word{ep}": f"assets/adv_audio/ep{ep}/word{ep}.mp3"}))
         _write(root / f"assets/adv_audio/ep{ep}/word{ep}.mp3", b"word")
         _write(root / f"assets/covers/ep{ep:03d}.jpg", b"cover")
-        _write(root / f"lesson_guides/ep{ep:03d}/lesson.json", b"{}")
+        lesson = {"title": {"en": f"Episode {ep}", "zh": f"第{ep}集"}}
+        if ep == 1:
+            lesson["title"] = {"en": "What did monkey come out of?", "zh": "猴子是从什么出来的？"}
+        _write(root / f"lesson_guides/ep{ep:03d}/lesson.json", json.dumps(lesson))
         _write(root / f"assets/collections/normalized/c0{1 if ep <= 2 else 2}.jpg", b"background")
     _write(root / "assets/adv_audio/sent_en_index.json", json.dumps({
         "Sentence 1": "assets/adv_audio/sent_en/s1.mp3",
         "Sentence 4": "assets/adv_audio/sent_en/s4.mp3",
+        "What did monkey come out of?": "assets/adv_audio/sent_en/lesson-prompt.mp3",
         "unused": "assets/adv_audio/sent_en/unused.mp3",
     }))
     _write(root / "assets/adv_audio/sent_zh_index.json", json.dumps({"句子 1": "assets/adv_audio/sent_zh/z1.mp3"}))
@@ -57,6 +63,7 @@ def _fixture(root: Path) -> None:
     _write(root / "assets/adv_audio/quiz_zh_index.json", json.dumps({"句子 1": "assets/adv_audio/quiz_zh/q1.mp3"}))
     _write(root / "assets/adv_audio/sent_en/s1.mp3", b"s1")
     _write(root / "assets/adv_audio/sent_en/s4.mp3", b"s4")
+    _write(root / "assets/adv_audio/sent_en/lesson-prompt.mp3", b"lesson")
     _write(root / "assets/adv_audio/sent_en/unused.mp3", b"unused")
     _write(root / "assets/adv_audio/sent_zh/z1.mp3", b"z1")
     _write(root / "assets/adv_audio/en/w1.mp3", b"w1")
@@ -96,6 +103,7 @@ def test_collection_selector_and_stage_boundaries(tmp_path: Path) -> None:
     assert "dialogue_stories/ep3.json" not in names
     assert "assets/video/ep3.mp4" not in names
     assert "assets/adv_audio/sent_en/s1.mp3" in names
+    assert "assets/adv_audio/sent_en/lesson-prompt.mp3" in names
     assert "assets/adv_audio/sent_en/unused.mp3" not in names
     assert "assets/adv_audio/ep1/word1.mp3" in names
     assert "assets/ui/logo.png" in names
@@ -171,6 +179,61 @@ def test_stage_pack_can_limit_a_collection_to_one_episode(tmp_path: Path) -> Non
     assert "assets/video/ep2.mp4" not in files
     drill = json.loads(files["dialogue_stories/drill/c01.json"].decode("utf-8"))
     assert [item["episode"] for item in drill["episodes"]] == [1]
+
+
+def test_follow_up_pack_excludes_starter_titles_but_keeps_catalogs(tmp_path: Path) -> None:
+    root = tmp_path / "content"
+    _fixture(root)
+    _write(root / "storybooks-minecraft/catalog.json", json.dumps({
+        "episodes": [
+            {"book": 1, "cover": "assets/minecraft/book1/cover.webp"},
+            {"book": 2, "cover": "assets/minecraft/book2/cover.webp"},
+        ],
+    }))
+    _write(root / "storybooks-minecraft/book2.json", json.dumps({"image": "assets/minecraft/book2/page.webp"}))
+    _write(root / "assets/minecraft/book1/cover.webp", b"cover1")
+    _write(root / "assets/minecraft/book2/cover.webp", b"cover2")
+    _write(root / "assets/minecraft/book2/page.webp", b"page2")
+    _write(root / "storybooks/catalog.json", json.dumps({
+        "episodes": [
+            {"episode": 1, "cover": "assets/covers/ep001.jpg"},
+            {"episode": 2, "cover": "assets/covers/ep002.jpg"},
+            {"episode": 3, "cover": "assets/covers/ep003.jpg"},
+        ],
+    }))
+    dest = tmp_path / "follow-up.zip"
+    write_datapack_zip(
+        root,
+        dest,
+        collections="all",
+        published="all",
+        exclude_episodes="1",
+        published_books={"minecraft": (2,), "mikey-jj": ()},
+        keep_full_catalogs=True,
+        version="1.0.5",
+    )
+    with zipfile.ZipFile(dest) as zf:
+        names = set(zf.namelist())
+        assert "dialogue_stories/ep1.json" not in names
+        assert "assets/video/ep1.mp4" not in names
+        assert "dialogue_stories/ep2.json" in names
+        assert "storybooks-minecraft/book1.json" not in names
+        assert "storybooks-minecraft/book2.json" in names
+        catalog = json.loads(zf.read("storybooks/catalog.json"))
+        assert [item["episode"] for item in catalog["episodes"]] == [1, 2, 3]
+        gate = json.loads(zf.read("content-manifest.json"))
+        assert gate["kind"] == "apk-builtin-starter"
+        assert gate["available"]["jttw"]["episodes"][0] == 1
+        assert 2 in gate["available"]["jttw"]["episodes"]
+        assert gate["available"]["minecraft"]["books"] == [1, 2]
+
+
+def test_parse_episode_and_published_book_ranges() -> None:
+    assert parse_episode_ids("2-5") == (2, 3, 4, 5)
+    assert parse_published_books("minecraft:2-5;mikey-jj:2,3,5-6") == {
+        "minecraft": (2, 3, 4, 5),
+        "mikey-jj": (2, 3, 5, 6),
+    }
 
 
 def test_stage_pack_rejects_an_episode_outside_selected_collection(tmp_path: Path) -> None:

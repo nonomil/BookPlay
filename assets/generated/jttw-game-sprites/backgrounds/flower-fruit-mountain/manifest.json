@@ -1,0 +1,28 @@
+{
+  "theme": "flower-fruit-mountain",
+  "usage": "top-down world map background tile (3x3 world), runtime file is 2d/<theme>.jpg",
+  "requestedSize": "1536x1024",
+  "raw": {
+    "path": "flower-fruit-mountain/2d/flower-fruit-mountain-map.png",
+    "width": 1402,
+    "height": 1122,
+    "sha256": "2fe16749727bfa9790aee1de64c7186f5dcc1c1d4eaeeaf979762454fdc88056"
+  },
+  "normalized": {
+    "path": "flower-fruit-mountain/2d/flower-fruit-mountain-map-1536x1024.png",
+    "width": 1536,
+    "height": 1024,
+    "crop": "1402x935 center crop from raw, LANCZOS resize",
+    "sha256": "e29e17350d97533d2eccb7023caca1487beac46b02785edfef8ec57450c3d58d"
+  },
+  "runtimeJpg": {
+    "path": "flower-fruit-mountain/2d/flower-fruit-mountain.jpg",
+    "width": 1280,
+    "height": 720,
+    "quality": 82,
+    "sha256": "e3002b57cad5a0bafb03e7e05c17c06bb75a0dbc7af980ffdc4a7f50f5614b06"
+  },
+  "provider": "cliprox",
+  "model": "gpt-image-2",
+  "promptPath": "backgrounds/flower-fruit-mountain/source/prompt.txt"
+}

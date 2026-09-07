@@ -1,0 +1,28 @@
+{
+  "theme": "three-star-cave",
+  "usage": "top-down world map background tile (3x3 world), runtime file is 2d/<theme>.jpg",
+  "requestedSize": "1536x1024",
+  "raw": {
+    "path": "three-star-cave/2d/three-star-cave-map.png",
+    "width": 1402,
+    "height": 1122,
+    "sha256": "a364b86ef1ea1292ef7c3f7cc07cfd1c939fe162190fd962c949b4df50c08688"
+  },
+  "normalized": {
+    "path": "three-star-cave/2d/three-star-cave-map-1536x1024.png",
+    "width": 1536,
+    "height": 1024,
+    "crop": "1402x935 center crop from raw, LANCZOS resize",
+    "sha256": "20c3623a0cafe77ac2beff58eb72426f9bbd30870d4e81f5b6d562450202f38a"
+  },
+  "runtimeJpg": {
+    "path": "three-star-cave/2d/three-star-cave.jpg",
+    "width": 1280,
+    "height": 720,
+    "quality": 82,
+    "sha256": "c784bcc4845e3f072722ec96c3bb22ea2db99ba9770271a31e29d3140e16d4f0"
+  },
+  "provider": "cliprox",
+  "model": "gpt-image-2",
+  "promptPath": "backgrounds/three-star-cave/source/prompt.txt"
+}

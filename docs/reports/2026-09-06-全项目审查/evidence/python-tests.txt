@@ -1,0 +1,114 @@
+........................................................................ [ 29%]
+.................................................................F...... [ 58%]
+.................................................F...F.................. [ 87%]
+..F................F............                                         [100%]
+================================== FAILURES ===================================
+____________________ test_minecraft_map_covers_five_books _____________________
+
+    def test_minecraft_map_covers_five_books() -> None:
+        cols = json.loads(COLLECTIONS_PATH.read_text(encoding="utf-8"))
+        catalog = json.loads(CATALOG_PATH.read_text(encoding="utf-8"))
+>       assert cols["count"] == 1
+E       assert 5 == 1
+
+prj\tests\test_minecraft_collections.py:16: AssertionError
+______ test_quiz_audio_manifest_covers_every_prompt_and_choice[mikey-jj] ______
+
+series = 'mikey-jj'
+
+    @pytest.mark.parametrize("series", ["minecraft", "mikey-jj"])
+    def test_quiz_audio_manifest_covers_every_prompt_and_choice(series: str):
+        data_root = ROOT / "prj" / "data" / f"storybooks-{series}"
+        index_path = ROOT / "prj" / "assets" / series / "quiz" / "index.json"
+        assert index_path.is_file(), f"{series} quiz index must be published"
+        manifest = json.loads(index_path.read_text(encoding="utf-8"))
+        assert manifest["series"] == series
+        assert manifest["scope"] == "quiz-prompts-and-choices"
+        records = manifest["questions"]
+        expected = {}
+        for book_path in sorted(data_root.glob("book*.json"), key=lambda p: int(p.stem[4:])):
+            for question in json.loads(book_path.read_text(encoding="utf-8")).get("quiz") or []:
+                qid = str(question.get("id") or "").strip()
+                if not qid:
+                    continue
+                expected[qid] = question
+>       assert set(records) == set(expected)
+E       AssertionError: assert {'mikey-b1-q0...b10-q01', ...} == {'mikey-b1-fi...-b1-q02', ...}
+E         
+E         Extra items in the right set:
+E         'mikey-b3-fill2'
+E         'mikey-b2-fill1'
+E         'mikey-b9-listen2'
+E         'mikey-b6-listen2'
+E         'mikey-b2-listen2'...
+E         
+E         ...Full output truncated (36 lines hidden), use '-vv' to show
+
+prj\tests\test_storybook_quiz_audio.py:32: AssertionError
+____________ test_book1_questions_have_explicit_learning_evidence _____________
+
+    def test_book1_questions_have_explicit_learning_evidence():
+        tool = _validator()
+        for path in BOOKS:
+            book = json.loads(path.read_text(encoding="utf-8"))
+            problems = tool.validate_book(book, path)
+            assert problems == [], f"{path.name}: {problems}"
+            expected_count = 4 if path.parent.name == "storybooks-minecraft" and path.stem == "book3" else 3 if path.parent.name == "storybooks-minecraft" and path.stem == "book4" else 5
+>           assert len(book["quiz"]) == expected_count
+E           AssertionError: assert 9 == 5
+E            +  where 9 = len([{'answer': 0, 'choices': ['课后留校', '放学回家', '学校假期', '体育比赛'], 'choices_en': ['stay after school', 'go home after school'...', 'heal humans', 'hurt zombies', 'scare away the spider'], 'choices_zh': ['让僵尸变大', '治愈人类', '伤害僵尸', '吓跑蜘蛛'], ...}, ...])
+
+prj\tests\test_storybook_quiz_migration.py:45: AssertionError
+_________________ test_wala_loads_modules_before_orchestrator _________________
+
+    def test_wala_loads_modules_before_orchestrator() -> None:
+        html = (ENGINE / "wala.html").read_text(encoding="utf-8")
+        order = [html.index(name) for name in ("storage.js", "media.js", "study-plan.js", "quiz.js", "wala.js")]
+        assert order == sorted(order)
+        wala = (ENGINE / "wala.js").read_text(encoding="utf-8")
+        for old_definition in (
+            "function readLessonSettings(",
+            "function normSent(",
+            "function rebuildStudyPlan(",
+            "function quizTokens(",
+        ):
+            assert old_definition not in wala
+        # The player now carries the independent listen mode and study-session
+        # integration; keep a guard against accidental multi-hundred-kilobyte
+        # growth while allowing the current modular boundary.
+        # The episode-stable avatar cast now includes middle/late-arc leads and
+        # their exact title cues; keep the guard below the old monolith size while
+        # allowing this data-driven selection table to grow intentionally.
+>       assert len(wala.encode("utf-8")) < 105_000
+E       assert 108773 < 105000
+E        +  where 108773 = len(b'"use strict";\n\n/* \xe7\x93\xa6\xe6\x8b\x89\xe9\xa3\x8e\xe6\xa0\xbc\xe4\xb8\xbb\xe7\x95\x8c\xe9\x9d\xa2\xef\xbc\x9a...er({ willPlay: true });\n      playCurrentSentence();\n    }\n  })();\n} else {\n  location.replace("home.html");\n}\n')
+E        +    where b'"use strict";\n\n/* \xe7\x93\xa6\xe6\x8b\x89\xe9\xa3\x8e\xe6\xa0\xbc\xe4\xb8\xbb\xe7\x95\x8c\xe9\x9d\xa2\xef\xbc\x9a...er({ willPlay: true });\n      playCurrentSentence();\n    }\n  })();\n} else {\n  location.replace("home.html");\n}\n' = <built-in method encode of str object at 0x000001640D6AB3E0>('utf-8')
+E        +      where <built-in method encode of str object at 0x000001640D6AB3E0> = '"use strict";\n\n/* 瓦拉风格主界面：冒险地图 / 场景播放器（自动播放+内嵌题）/ 知识回顾\n * 音频引擎与 adventure.js 同构：EN / EN+中 双模式，单词原音截取优先，中文 edge-tts...er({ willPlay: true });\n      playCurrentSentence();\n    }\n  })();\n} else {\n  location.replace("home.html");\n}\n'.encode
+
+prj\tests\test_wala_modules.py:170: AssertionError
+___________ test_episode_walker_gifs_are_packable_and_fixed_canvas ____________
+
+    def test_episode_walker_gifs_are_packable_and_fixed_canvas():
+        from PIL import Image
+    
+        roles = ("wukong", "tang", "bajie", "shawujing", "guanyin", "redboy", "ironfan", "bullking", "dragonking", "whitedragonhorse", "subodhi", "jadeemperor", "yellowwind", "whitebone", "blackwind", "zhenyuan", "hundredflowers", "goldenhorn", "liondemon", "tigerimmortal", "yellowbrows", "powerdemon", "spiderdemon", "centipededemon", "chaosdemon")
+        manifest = json.loads((ROOT / "assets" / "generated" / "jttw-player-walkers" / "manifest.json").read_text(encoding="utf-8"))
+>       assert {entry["id"] for entry in manifest["characters"]} == set(roles)
+E       AssertionError: assert {'bajie', 'bl...gonking', ...} == {'bajie', 'bl...gonking', ...}
+E         
+E         Extra items in the left set:
+E         'woodcutter'
+E         'temple-student'
+E         'heaven-captain'
+E         'generic-monkey'
+E         'gibbon'
+E         Use -v to get more diff
+
+prj\tools\test_pack_companion_datapack.py:80: AssertionError
+=========================== short test summary info ===========================
+FAILED prj/tests/test_minecraft_collections.py::test_minecraft_map_covers_five_books
+FAILED prj/tests/test_storybook_quiz_audio.py::test_quiz_audio_manifest_covers_every_prompt_and_choice[mikey-jj]
+FAILED prj/tests/test_storybook_quiz_migration.py::test_book1_questions_have_explicit_learning_evidence
+FAILED prj/tests/test_wala_modules.py::test_wala_loads_modules_before_orchestrator
+FAILED prj/tools/test_pack_companion_datapack.py::test_episode_walker_gifs_are_packable_and_fixed_canvas
+5 failed, 243 passed in 111.78s (0:01:51)

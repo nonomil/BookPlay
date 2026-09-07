@@ -1,0 +1,2051 @@
+
+> storyhall@1.0.0 test
+> node --test prj/engine/*.test.mjs
+
+TAP version 13
+# Subtest: fresh gesture starts the selected track; autoplay rejection can recover
+ok 1 - fresh gesture starts the selected track; autoplay rejection can recover
+  ---
+  duration_ms: 5.6317
+  type: 'test'
+  ...
+# Subtest: separate persisted music and cue preferences are respected
+ok 2 - separate persisted music and cue preferences are respected
+  ---
+  duration_ms: 1.6014
+  type: 'test'
+  ...
+# Subtest: overlapping narration holds music silent until all speakers stop
+ok 3 - overlapping narration holds music silent until all speakers stop
+  ---
+  duration_ms: 304.6551
+  type: 'test'
+  ...
+# Subtest: map mix keeps music audible under an introduction, then restores it
+ok 4 - map mix keeps music audible under an introduction, then restores it
+  ---
+  duration_ms: 305.6157
+  type: 'test'
+  ...
+# Subtest: rapid cues replace instead of overlap and narration stops cues
+ok 5 - rapid cues replace instead of overlap and narration stops cues
+  ---
+  duration_ms: 0.9749
+  type: 'test'
+  ...
+# Subtest: page hiding and independent pause reasons cannot resume each other
+ok 6 - page hiding and independent pause reasons cannot resume each other
+  ---
+  duration_ms: 1.3708
+  type: 'test'
+  ...
+# Subtest: saved track position survives navigation and invalid series clears music
+ok 7 - saved track position survives navigation and invalid series clears music
+  ---
+  duration_ms: 0.7564
+  type: 'test'
+  ...
+# Subtest: late play resolution cannot restart music after disabling or pagehide
+ok 8 - late play resolution cannot restart music after disabling or pagehide
+  ---
+  duration_ms: 1.5196
+  type: 'test'
+  ...
+# Subtest: music control can switch off while game is paused
+ok 9 - music control can switch off while game is paused
+  ---
+  duration_ms: 0.7812
+  type: 'test'
+  ...
+# Subtest: answer cue can follow a paused prompt before its asynchronous pause event
+ok 10 - answer cue can follow a paused prompt before its asynchronous pause event
+  ---
+  duration_ms: 0.4617
+  type: 'test'
+  ...
+# Subtest: storage change updates controls and stops both channels
+ok 11 - storage change updates controls and stops both channels
+  ---
+  duration_ms: 0.723
+  type: 'test'
+  ...
+# Subtest: a new page claims the music slot and silences the previous page
+ok 12 - a new page claims the music slot and silences the previous page
+  ---
+  duration_ms: 1.0359
+  type: 'test'
+  ...
+# Subtest: navigation click cannot be undone by the document gesture unlock handler
+ok 13 - navigation click cannot be undone by the document gesture unlock handler
+  ---
+  duration_ms: 0.9228
+  type: 'test'
+  ...
+# Subtest: buildLevel 生成运行时结构（词索引、帧键、精灵清单）
+ok 14 - buildLevel 生成运行时结构（词索引、帧键、精灵清单）
+  ---
+  duration_ms: 1.8342
+  type: 'test'
+  ...
+# Subtest: buildLevel 透传 v2 map 地图层（缺省为 null）
+ok 15 - buildLevel 透传 v2 map 地图层（缺省为 null）
+  ---
+  duration_ms: 0.4822
+  type: 'test'
+  ...
+# Subtest: buildLevel 坏输入降级返回 null
+ok 16 - buildLevel 坏输入降级返回 null
+  ---
+  duration_ms: 0.1143
+  type: 'test'
+  ...
+# Subtest: buildWaveQuestions 错词按次数插队到波首，其余保持稳定
+ok 17 - buildWaveQuestions 错词按次数插队到波首，其余保持稳定
+  ---
+  duration_ms: 0.8522
+  type: 'test'
+  ...
+# Subtest: buildWaveQuestions 越界返回空数组
+ok 18 - buildWaveQuestions 越界返回空数组
+  ---
+  duration_ms: 0.3225
+  type: 'test'
+  ...
+# Subtest: buildOrbSet 返回 3 球且确定性
+ok 19 - buildOrbSet 返回 3 球且确定性
+  ---
+  duration_ms: 0.4796
+  type: 'test'
+  ...
+# Subtest: buildOrbSet 词库不足时降级为更少球
+ok 20 - buildOrbSet 词库不足时降级为更少球
+  ---
+  duration_ms: 0.1391
+  type: 'test'
+  ...
+# Subtest: judgeHit 判定与连击状态
+ok 21 - judgeHit 判定与连击状态
+  ---
+  duration_ms: 0.3009
+  type: 'test'
+  ...
+# Subtest: settleRun 星星三档边界
+ok 22 - settleRun 星星三档边界
+  ---
+  duration_ms: 0.3711
+  type: 'test'
+  ...
+# Subtest: settleRun 透传错词表
+ok 23 - settleRun 透传错词表
+  ---
+  duration_ms: 0.4784
+  type: 'test'
+  ...
+# Subtest: loadSprites 注册表缺失时回退 walker GIF 约定路径
+ok 24 - loadSprites 注册表缺失时回退 walker GIF 约定路径
+  ---
+  duration_ms: 0.2751
+  type: 'test'
+  ...
+# Subtest: loadSprites 注册表命中直通、未命中回退 null 占位
+ok 25 - loadSprites 注册表命中直通、未命中回退 null 占位
+  ---
+  duration_ms: 0.0735
+  type: 'test'
+  ...
+# Subtest: battle.html：按顺序引入 tv-remote / quiz / battle-core / battle.js 并加载 tv 样式
+ok 26 - battle.html：按顺序引入 tv-remote / quiz / battle-core / battle.js 并加载 tv 样式
+  ---
+  duration_ms: 1.8721
+  type: 'test'
+  ...
+# Subtest: battle.html：六阶段骨架与核心控件齐备
+ok 27 - battle.html：六阶段骨架与核心控件齐备
+  ---
+  duration_ms: 1.2269
+  type: 'test'
+  ...
+# Subtest: battle.js：只使用两个 battle 存储键，无危险 API
+ok 28 - battle.js：只使用两个 battle 存储键，无危险 API
+  ---
+  duration_ms: 0.491
+  type: 'test'
+  ...
+# Subtest: battle.js：复用 battle-core 与 vocab quiz 模块
+ok 29 - battle.js：复用 battle-core 与 vocab quiz 模块
+  ---
+  duration_ms: 0.356
+  type: 'test'
+  ...
+# Subtest: battle-core：保持纯逻辑（无 DOM / 无存储）
+ok 30 - battle-core：保持纯逻辑（无 DOM / 无存储）
+  ---
+  duration_ms: 0.3292
+  type: 'test'
+  ...
+# Subtest: battle.css：命中高度不低于 64px 且尊重 reduced motion
+ok 31 - battle.css：命中高度不低于 64px 且尊重 reduced motion
+  ---
+  duration_ms: 0.3829
+  type: 'test'
+  ...
+# Subtest: battle.html：无内联事件处理器
+ok 32 - battle.html：无内联事件处理器
+  ---
+  duration_ms: 0.468
+  type: 'test'
+  ...
+# Subtest: catalog contains 19 unique badges and one chapter badge per collection
+ok 33 - catalog contains 19 unique badges and one chapter badge per collection
+  ---
+  duration_ms: 2.5495
+  type: 'test'
+  ...
+# Subtest: finishing episodes without the collection drill does not award its chapter badge
+ok 34 - finishing episodes without the collection drill does not award its chapter badge
+  ---
+  duration_ms: 1.6411
+  type: 'test'
+  ...
+# Subtest: the final crown requires all 108 episodes and all 13 drills
+ok 35 - the final crown requires all 108 episodes and all 13 drills
+  ---
+  duration_ms: 1.7928
+  type: 'test'
+  ...
+# Subtest: achievement evaluation is idempotent and preserves old receipts
+ok 36 - achievement evaluation is idempotent and preserves old receipts
+  ---
+  duration_ms: 0.2381
+  type: 'test'
+  ...
+# Subtest: companion stages are derived from story progress at exact episode gates
+ok 37 - companion stages are derived from story progress at exact episode gates
+  ---
+  duration_ms: 0.3096
+  type: 'test'
+  ...
+# Subtest: care stamps at most once per day and missing a day never removes growth
+ok 38 - care stamps at most once per day and missing a day never removes growth
+  ---
+  duration_ms: 0.3462
+  type: 'test'
+  ...
+# Subtest: learning activity uses calendar-day deduplication
+ok 39 - learning activity uses calendar-day deduplication
+  ---
+  duration_ms: 0.2078
+  type: 'test'
+  ...
+# Subtest: map exposes a permanent companion entry and a splash growth corner
+ok 40 - map exposes a permanent companion entry and a splash growth corner
+  ---
+  duration_ms: 1.9839
+  type: 'test'
+  ...
+# Subtest: the inn has companion care controls, travel journal, and collection links
+ok 41 - the inn has companion care controls, travel journal, and collection links
+  ---
+  duration_ms: 1.8307
+  type: 'test'
+  ...
+# Subtest: successful companion loading can actually hide the retry error panel
+ok 42 - successful companion loading can actually hide the retry error panel
+  ---
+  duration_ms: 0.3545
+  type: 'test'
+  ...
+# Subtest: companion page loads the shared logic before its controller
+ok 43 - companion page loads the shared logic before its controller
+  ---
+  duration_ms: 0.3191
+  type: 'test'
+  ...
+# Subtest: medal wall leads with a recent-earned strip of at most 3 medals and an empty state
+ok 44 - medal wall leads with a recent-earned strip of at most 3 medals and an empty state
+  ---
+  duration_ms: 1.0805
+  type: 'test'
+  ...
+# Subtest: medal wall filters all / earned / chapter / journey with a live count in memory only
+ok 45 - medal wall filters all / earned / chapter / journey with a live count in memory only
+  ---
+  duration_ms: 0.9655
+  type: 'test'
+  ...
+# Subtest: every medal card carries a kind marker and an accessible status label
+ok 46 - every medal card carries a kind marker and an accessible status label
+  ---
+  duration_ms: 0.4228
+  type: 'test'
+  ...
+# Subtest: a prominent next-target card with art and progress sits between filters and the wall
+ok 47 - a prominent next-target card with art and progress sits between filters and the wall
+  ---
+  duration_ms: 0.5021
+  type: 'test'
+  ...
+# Subtest: 勋章墙有首屏快捷入口，并排在长贴纸册之前
+ok 48 - 勋章墙有首屏快捷入口，并排在长贴纸册之前
+  ---
+  duration_ms: 0.425
+  type: 'test'
+  ...
+# Subtest: 驿站拆成伙伴页、勋章页、贴纸页和小屋详情页，伙伴页不再承载长列表
+ok 49 - 驿站拆成伙伴页、勋章页、贴纸页和小屋详情页，伙伴页不再承载长列表
+  ---
+  duration_ms: 1.4679
+  type: 'test'
+  ...
+# Subtest: 历史勋章和贴纸锚点会兼容跳转到拆分后的页面
+ok 50 - 历史勋章和贴纸锚点会兼容跳转到拆分后的页面
+  ---
+  duration_ms: 0.4629
+  type: 'test'
+  ...
+# Subtest: 花果山房间有固定玩具架、轻装饰入口和可跳过互动
+ok 51 - 花果山房间有固定玩具架、轻装饰入口和可跳过互动
+  ---
+  duration_ms: 0.6082
+  type: 'test'
+  ...
+# Subtest: 故事贴纸册先展示十三个图片篇章入口而不是108格库存筛选
+ok 52 - 故事贴纸册先展示十三个图片篇章入口而不是108格库存筛选
+  ---
+  duration_ms: 0.6321
+  type: 'test'
+  ...
+# Subtest: 篇章详情图多字少，已解锁与未解锁贴纸都能打开全屏详情
+ok 53 - 篇章详情图多字少，已解锁与未解锁贴纸都能打开全屏详情
+  ---
+  duration_ms: 0.7277
+  type: 'test'
+  ...
+# Subtest: 小白龙在花果山房间里回应故事纪念品
+ok 54 - 小白龙在花果山房间里回应故事纪念品
+  ---
+  duration_ms: 0.6292
+  type: 'test'
+  ...
+# Subtest: 巩固完成时自动收下一张本关贴纸，且大件三选一仍单独显示
+ok 55 - 巩固完成时自动收下一张本关贴纸，且大件三选一仍单独显示
+  ---
+  duration_ms: 0.862
+  type: 'test'
+  ...
+# Subtest: 巩固完成卡片优先显示本关贴纸 PNG，加载失败才回退 glyph
+ok 56 - 巩固完成卡片优先显示本关贴纸 PNG，加载失败才回退 glyph
+  ---
+  duration_ms: 0.4122
+  type: 'test'
+  ...
+# Subtest: 勋章卡全部可见但只读，使用 GPT 图片并标出未解锁状态
+ok 57 - 勋章卡全部可见但只读，使用 GPT 图片并标出未解锁状态
+  ---
+  duration_ms: 0.5104
+  type: 'test'
+  ...
+# Subtest: 点击任意勋章打开大图、解释与动态预览，且减少动效可关闭动画
+ok 58 - 点击任意勋章打开大图、解释与动态预览，且减少动效可关闭动画
+  ---
+  duration_ms: 0.5259
+  type: 'test'
+  ...
+# Subtest: Minecraft 贴纸页使用 series 命名空间与两本绘本数据
+ok 59 - Minecraft 贴纸页使用 series 命名空间与两本绘本数据
+  ---
+  duration_ms: 0.3048
+  type: 'test'
+  ...
+# Subtest: Minecraft 收藏页使用页面上下文计数并避免空状态重复占位
+ok 60 - Minecraft 收藏页使用页面上下文计数并避免空状态重复占位
+  ---
+  duration_ms: 0.5309
+  type: 'test'
+  ...
+# Subtest: Minecraft 伙伴页的三个分区卡片改用 Minecraft 资产而不是西游默认图
+ok 61 - Minecraft 伙伴页的三个分区卡片改用 Minecraft 资产而不是西游默认图
+  ---
+  duration_ms: 0.2896
+  type: 'test'
+  ...
+# Subtest: Minecraft companion state keeps its own companion id
+ok 62 - Minecraft companion state keeps its own companion id
+  ---
+  duration_ms: 0.4725
+  type: 'test'
+  ...
+# Subtest: completion card separates learned and mastered counts and clamps score
+ok 63 - completion card separates learned and mastered counts and clamps score
+  ---
+  duration_ms: 0.8788
+  type: 'test'
+  ...
+# Subtest: already rewarded pass is not first pass; failed attempt never is
+ok 64 - already rewarded pass is not first pass; failed attempt never is
+  ---
+  duration_ms: 0.0955
+  type: 'test'
+  ...
+# PASS drill relearn contracts
+# Subtest: prj\\engine\\drill-relearn.test.mjs
+ok 7 - prj\\engine\\drill-relearn.test.mjs
+  ---
+  duration_ms: 1056.5084
+  type: 'test'
+  ...
+# Subtest: 整辑页面在 drill.js 前加载统一语音模块
+ok 66 - 整辑页面在 drill.js 前加载统一语音模块
+  ---
+  duration_ms: 0.6382
+  type: 'test'
+  ...
+# Subtest: 单词题提供可选跟读和可访问状态
+ok 67 - 单词题提供可选跟读和可访问状态
+  ---
+  duration_ms: 0.1709
+  type: 'test'
+  ...
+# Subtest: 语音失败不参与巩固通关判定
+ok 68 - 语音失败不参与巩固通关判定
+  ---
+  duration_ms: 0.3059
+  type: 'test'
+  ...
+# Subtest: 巩固音频合并 quiz 索引并使用持久 Audio 元素
+ok 69 - 巩固音频合并 quiz 索引并使用持久 Audio 元素
+  ---
+  duration_ms: 0.2489
+  type: 'test'
+  ...
+# Subtest: 静态音频播放失败后回退到 TTS
+ok 70 - 静态音频播放失败后回退到 TTS
+  ---
+  duration_ms: 0.4167
+  type: 'test'
+  ...
+# Subtest: 单词题喇叭读目标词而非例句
+ok 71 - 单词题喇叭读目标词而非例句
+  ---
+  duration_ms: 0.2795
+  type: 'test'
+  ...
+# Subtest: 剧情测验题干和中英文选项均提供朗读按钮
+ok 72 - 剧情测验题干和中英文选项均提供朗读按钮
+  ---
+  duration_ms: 0.4832
+  type: 'test'
+  ...
+# Subtest: dubKey：系列书键与节点拼接稳定（西游记键保持旧格式兼容存档）
+ok 73 - dubKey：系列书键与节点拼接稳定（西游记键保持旧格式兼容存档）
+  ---
+  duration_ms: 1.3118
+  type: 'test'
+  ...
+# Subtest: buildSceneList：过滤无台词、无切片与倒序切片节点
+ok 74 - buildSceneList：过滤无台词、无切片与倒序切片节点
+  ---
+  duration_ms: 0.9236
+  type: 'test'
+  ...
+# Subtest: normalizeDubBook：mikey-jj 毫秒页归一为秒场景，句级时间与句音频优先
+ok 75 - normalizeDubBook：mikey-jj 毫秒页归一为秒场景，句级时间与句音频优先
+  ---
+  duration_ms: 0.4083
+  type: 'test'
+  ...
+# Subtest: normalizeDubBook：minecraft 页级时间不可靠时以句级时间为准
+ok 76 - normalizeDubBook：minecraft 页级时间不可靠时以句级时间为准
+  ---
+  duration_ms: 0.6259
+  type: 'test'
+  ...
+# Subtest: normalizeDubBook：无句级时间的页回退页级字段，无时间轴页被剔除
+ok 77 - normalizeDubBook：无句级时间的页回退页级字段，无时间轴页被剔除
+  ---
+  duration_ms: 0.2455
+  type: 'test'
+  ...
+# Subtest: normalizeDubBook：西游记走节点路径并带 bookKey
+ok 78 - normalizeDubBook：西游记走节点路径并带 bookKey
+  ---
+  duration_ms: 0.2992
+  type: 'test'
+  ...
+# Subtest: buildSceneList：空书与缺节点返回空数组
+ok 79 - buildSceneList：空书与缺节点返回空数组
+  ---
+  duration_ms: 0.2214
+  type: 'test'
+  ...
+# Subtest: 录音会话：idle→recording→recorded，重复启动被拒绝
+ok 80 - 录音会话：idle→recording→recorded，重复启动被拒绝
+  ---
+  duration_ms: 0.4744
+  type: 'test'
+  ...
+# Subtest: 录音会话：可重录（recorded→recording），太短回到 idle，超长钳到上限
+ok 81 - 录音会话：可重录（recorded→recording），太短回到 idle，超长钳到上限
+  ---
+  duration_ms: 0.3614
+  type: 'test'
+  ...
+# Subtest: 录音会话：cancel 任意状态回 idle；非法时长拒绝
+ok 82 - 录音会话：cancel 任意状态回 idle；非法时长拒绝
+  ---
+  duration_ms: 0.5118
+  type: 'test'
+  ...
+# Subtest: normalizeDubMeta：星级钳制 1-3、时长必须为正
+ok 83 - normalizeDubMeta：星级钳制 1-3、时长必须为正
+  ---
+  duration_ms: 0.2133
+  type: 'test'
+  ...
+# Subtest: upsertDubMeta：不可变写入，created 保留首次，updated 刷新；非法输入原样返回
+ok 84 - upsertDubMeta：不可变写入，created 保留首次，updated 刷新；非法输入原样返回
+  ---
+  duration_ms: 0.1361
+  type: 'test'
+  ...
+# Subtest: firstSaveReward：每集首次配音 +5 SP，之后幂等
+ok 85 - firstSaveReward：每集首次配音 +5 SP，之后幂等
+  ---
+  duration_ms: 0.1124
+  type: 'test'
+  ...
+# Subtest: dubCoverage：完成数与全集完成判定
+ok 86 - dubCoverage：完成数与全集完成判定
+  ---
+  duration_ms: 1.101
+  type: 'test'
+  ...
+# Subtest: dub.html：按顺序引入核心模块与页面脚本
+ok 87 - dub.html：按顺序引入核心模块与页面脚本
+  ---
+  duration_ms: 2.028
+  type: 'test'
+  ...
+# Subtest: dub.html：录音初始隐藏、状态区可播报、放映厅与星级齐备
+ok 88 - dub.html：录音初始隐藏、状态区可播报、放映厅与星级齐备
+  ---
+  duration_ms: 1.3818
+  type: 'test'
+  ...
+# Subtest: dub.js：只使用合同内的存储键与受控 DOM API
+ok 89 - dub.js：只使用合同内的存储键与受控 DOM API
+  ---
+  duration_ms: 0.6197
+  type: 'test'
+  ...
+# Subtest: dub.js：无麦克风与内存回退路径都有降级提示
+ok 90 - dub.js：无麦克风与内存回退路径都有降级提示
+  ---
+  duration_ms: 0.3287
+  type: 'test'
+  ...
+# Subtest: dub.js：多系列支持（西游记 C01~C02 / 我的世界 / Mikey & JJ）
+ok 91 - dub.js：多系列支持（西游记 C01~C02 / 我的世界 / Mikey & JJ）
+  ---
+  duration_ms: 0.4838
+  type: 'test'
+  ...
+# Subtest: dub-core 暴露的存储合同常量与方案一致
+ok 92 - dub-core 暴露的存储合同常量与方案一致
+  ---
+  duration_ms: 0.2708
+  type: 'test'
+  ...
+# Subtest: dub-recorder：能力探测报告麦克风与首选 mime
+ok 93 - dub-recorder：能力探测报告麦克风与首选 mime
+  ---
+  duration_ms: 1.4465
+  type: 'test'
+  ...
+# Subtest: dub-recorder：无 MediaRecorder 时 unsupported，mime 协商回退到 mp4
+ok 94 - dub-recorder：无 MediaRecorder 时 unsupported，mime 协商回退到 mp4
+  ---
+  duration_ms: 0.3011
+  type: 'test'
+  ...
+# Subtest: dub-recorder：start→stop 得到 Blob 并释放全部 tracks
+ok 95 - dub-recorder：start→stop 得到 Blob 并释放全部 tracks
+  ---
+  duration_ms: 0.4663
+  type: 'test'
+  ...
+# Subtest: dub-recorder：stop 未 start 返回 idle；空数据归一为 no-data
+ok 96 - dub-recorder：stop 未 start 返回 idle；空数据归一为 no-data
+  ---
+  duration_ms: 0.3078
+  type: 'test'
+  ...
+# Subtest: dub-recorder：拒权与无麦克风映射稳定错误类型，且可再次尝试
+ok 97 - dub-recorder：拒权与无麦克风映射稳定错误类型，且可再次尝试
+  ---
+  duration_ms: 0.3932
+  type: 'test'
+  ...
+# Subtest: dub-recorder：cancel 丢弃录音并释放 tracks
+ok 98 - dub-recorder：cancel 丢弃录音并释放 tracks
+  ---
+  duration_ms: 0.2638
+  type: 'test'
+  ...
+# Subtest: dub-store：IndexedDB 可用时写入并读回
+ok 99 - dub-store：IndexedDB 可用时写入并读回
+  ---
+  duration_ms: 3.5006
+  type: 'test'
+  ...
+# Subtest: dub-store：配额错误归一为 quota，不抛异常
+ok 100 - dub-store：配额错误归一为 quota，不抛异常
+  ---
+  duration_ms: 0.3677
+  type: 'test'
+  ...
+# Subtest: dub-store：无 IndexedDB 时回退内存会话
+ok 101 - dub-store：无 IndexedDB 时回退内存会话
+  ---
+  duration_ms: 0.3305
+  type: 'test'
+  ...
+# Subtest: dub-store：删除与重复键覆盖
+ok 102 - dub-store：删除与重复键覆盖
+  ---
+  duration_ms: 0.8249
+  type: 'test'
+  ...
+# Subtest: 首次巩固达标提供三个未拥有的剧情物品
+ok 103 - 首次巩固达标提供三个未拥有的剧情物品
+  ---
+  duration_ms: 1.8039
+  type: 'test'
+  ...
+# Subtest: 通用绘本完成奖励只在首次达标时发 SP，并保留最好分数
+ok 104 - 通用绘本完成奖励只在首次达标时发 SP，并保留最好分数
+  ---
+  duration_ms: 0.3393
+  type: 'test'
+  ...
+# Subtest: 选中物品后写入 owned、固定房间槽位和幂等掉落标记
+ok 105 - 选中物品后写入 owned、固定房间槽位和幂等掉落标记
+  ---
+  duration_ms: 0.3733
+  type: 'test'
+  ...
+# Subtest: 重复活动不会掉落，达到每日上限后停止提供永久物品
+ok 106 - 重复活动不会掉落，达到每日上限后停止提供永久物品
+  ---
+  duration_ms: 0.9943
+  type: 'test'
+  ...
+# Subtest: 未达标或未知物品不会写入库存
+ok 107 - 未达标或未知物品不会写入库存
+  ---
+  duration_ms: 0.242
+  type: 'test'
+  ...
+# Subtest: 每个已完成关卡生成确定性的故事贴纸，且不占房间槽位
+ok 108 - 每个已完成关卡生成确定性的故事贴纸，且不占房间槽位
+  ---
+  duration_ms: 0.8934
+  type: 'test'
+  ...
+# Subtest: 同一关重复完成不会重复获得贴纸，未完成也不会提前发放
+ok 109 - 同一关重复完成不会重复获得贴纸，未完成也不会提前发放
+  ---
+  duration_ms: 0.4722
+  type: 'test'
+  ...
+# Subtest: 旧版奖励存档缺少贴纸字段时安全补齐，并可列出全套贴纸
+ok 110 - 旧版奖励存档缺少贴纸字段时安全补齐，并可列出全套贴纸
+  ---
+  duration_ms: 1.3334
+  type: 'test'
+  ...
+# Subtest: 无效关卡不会创建幽灵贴纸进度记录
+ok 111 - 无效关卡不会创建幽灵贴纸进度记录
+  ---
+  duration_ms: 0.344
+  type: 'test'
+  ...
+# Subtest: P2 目录提供固定玩具架、轻装饰槽位和至少十三件篇章纪念物
+ok 112 - P2 目录提供固定玩具架、轻装饰槽位和至少十三件篇章纪念物
+  ---
+  duration_ms: 1.7464
+  type: 'test'
+  ...
+# Subtest: 大件奖励按故事用途分型，动物武器装备只是收藏主题不改变学习数值
+ok 113 - 大件奖励按故事用途分型，动物武器装备只是收藏主题不改变学习数值
+  ---
+  duration_ms: 0.5861
+  type: 'test'
+  ...
+# Subtest: 真实奖励目录覆盖 108 关贴纸，并按 13 个篇章提供故事主题
+ok 114 - 真实奖励目录覆盖 108 关贴纸，并按 13 个篇章提供故事主题
+  ---
+  duration_ms: 0.6939
+  type: 'test'
+  ...
+# Subtest: Minecraft 前两本奖励各自绑定真实故事场景，不循环旧图集
+ok 115 - Minecraft 前两本奖励各自绑定真实故事场景，不循环旧图集
+  ---
+  duration_ms: 1.7323
+  type: 'test'
+  ...
+# Subtest: EP1 贴纸覆盖保留故事出处，避免循环图集与剧情错配
+ok 116 - EP1 贴纸覆盖保留故事出处，避免循环图集与剧情错配
+  ---
+  duration_ms: 1.3206
+  type: 'test'
+  ...
+# Subtest: EP1 奖励携带可复核的绘本页、场景、时间轴和重点词绑定
+ok 117 - EP1 奖励携带可复核的绘本页、场景、时间轴和重点词绑定
+  ---
+  duration_ms: 2.1868
+  type: 'test'
+  ...
+# Subtest: 奖励首次领取触发轻量礼花，并尊重减少动效偏好
+ok 118 - 奖励首次领取触发轻量礼花，并尊重减少动效偏好
+  ---
+  duration_ms: 0.8447
+  type: 'test'
+  ...
+# Subtest: gradeRules 给出年级题量和题型
+ok 119 - gradeRules 给出年级题量和题型
+  ---
+  duration_ms: 1.858
+  type: 'test'
+  ...
+# Subtest: buildEpisodeQuiz 按固定种子稳定抽题并保留 term/句子/音频字段
+ok 120 - buildEpisodeQuiz 按固定种子稳定抽题并保留 term/句子/音频字段
+  ---
+  duration_ms: 1.2851
+  type: 'test'
+  ...
+# Subtest: scoreEpisodeQuiz 只按答题结果计算掌握度，70% 才通过
+ok 121 - scoreEpisodeQuiz 只按答题结果计算掌握度，70% 才通过
+  ---
+  duration_ms: 0.3313
+  type: 'test'
+  ...
+# Subtest: questionTerm 从现有西游记/Minecraft 的带引号题干提取重点词
+ok 122 - questionTerm 从现有西游记/Minecraft 的带引号题干提取重点词
+  ---
+  duration_ms: 0.2625
+  type: 'test'
+  ...
+# Subtest: normalizeQuestion keeps q_zh and choices_zh for a hidden hint
+ok 123 - normalizeQuestion keeps q_zh and choices_zh for a hidden hint
+  ---
+  duration_ms: 0.209
+  type: 'test'
+  ...
+# Subtest: normalizeQuestion preserves authored evidence and does not infer a term for comprehension
+ok 124 - normalizeQuestion preserves authored evidence and does not infer a term for comprehension
+  ---
+  duration_ms: 0.1876
+  type: 'test'
+  ...
+# Subtest: quizDisplay converts legacy Chinese quiz choices to English while retaining them for the hint
+ok 125 - quizDisplay converts legacy Chinese quiz choices to English while retaining them for the hint
+  ---
+  duration_ms: 0.1768
+  type: 'test'
+  ...
+# Subtest: game.html：按顺序引入 app-audio / tv-remote / battle-core / game.js 并加载 tv 与 battle 样式
+ok 126 - game.html：按顺序引入 app-audio / tv-remote / battle-core / game.js 并加载 tv 与 battle 样式
+  ---
+  duration_ms: 2.3737
+  type: 'test'
+  ...
+# Subtest: game.html：场景/HUD/对话框/快卡/Boss 门/暂停/门禁控件齐备
+ok 127 - game.html：场景/HUD/对话框/快卡/Boss 门/暂停/门禁控件齐备
+  ---
+  duration_ms: 1.0051
+  type: 'test'
+  ...
+# Subtest: game.js：只使用两个 battle 存储键，无危险 API
+ok 128 - game.js：只使用两个 battle 存储键，无危险 API
+  ---
+  duration_ms: 0.5878
+  type: 'test'
+  ...
+# Subtest: game.js：复用 battle-core 的出题/判定/精灵解析
+ok 129 - game.js：复用 battle-core 的出题/判定/精灵解析
+  ---
+  duration_ms: 0.362
+  type: 'test'
+  ...
+# Subtest: game.css：命中高度不低于 64px 且尊重 reduced motion
+ok 130 - game.css：命中高度不低于 64px 且尊重 reduced motion
+  ---
+  duration_ms: 0.3426
+  type: 'test'
+  ...
+# Subtest: game.html：无内联事件处理器
+ok 131 - game.html：无内联事件处理器
+  ---
+  duration_ms: 0.3425
+  type: 'test'
+  ...
+# Subtest: study session chooses one stable word set for study and quiz
+ok 132 - study session chooses one stable word set for study and quiz
+  ---
+  duration_ms: 2.4901
+  type: 'test'
+  ...
+# Subtest: normalize session rejects another episode and preserves progress fields
+ok 133 - normalize session rejects another episode and preserves progress fields
+  ---
+  duration_ms: 0.4952
+  type: 'test'
+  ...
+# Subtest: normalize session keeps an older schema version visible for rebuild
+ok 134 - normalize session keeps an older schema version visible for rebuild
+  ---
+  duration_ms: 0.2837
+  type: 'test'
+  ...
+# Subtest: lesson pass requires at least one correct answer and 70 percent
+ok 135 - lesson pass requires at least one correct answer and 70 percent
+  ---
+  duration_ms: 0.1729
+  type: 'test'
+  ...
+# Subtest: choice presentation does not leak English answer in English-to-Chinese mode
+ok 136 - choice presentation does not leak English answer in English-to-Chinese mode
+  ---
+  duration_ms: 0.1843
+  type: 'test'
+  ...
+# Subtest: puzzle picker prefers a bilingual usable puzzle and has an English fallback
+ok 137 - puzzle picker prefers a bilingual usable puzzle and has an English fallback
+  ---
+  duration_ms: 0.212
+  type: 'test'
+  ...
+# Subtest: 听音识景：默认一题，选项为同集不重复插图且结果稳定
+ok 138 - 听音识景：默认一题，选项为同集不重复插图且结果稳定
+  ---
+  duration_ms: 1.9839
+  type: 'test'
+  ...
+# Subtest: 听音识景：题量最多三题，低幼两图，缺插图或缺台词节点不入题
+ok 139 - 听音识景：题量最多三题，低幼两图，缺插图或缺台词节点不入题
+  ---
+  duration_ms: 0.3872
+  type: 'test'
+  ...
+# Subtest: 听音识景：缺切片时间仍保留看图题并标记 TTS 回退
+ok 140 - 听音识景：缺切片时间仍保留看图题并标记 TTS 回退
+  ---
+  duration_ms: 0.1604
+  type: 'test'
+  ...
+# Subtest: 听音识景：空书或只有一张插图时不生成题目
+ok 141 - 听音识景：空书或只有一张插图时不生成题目
+  ---
+  duration_ms: 0.1888
+  type: 'test'
+  ...
+# Subtest: 每集页面在 lesson.js 前加载 voice-core 与 voice
+ok 142 - 每集页面在 lesson.js 前加载 voice-core 与 voice
+  ---
+  duration_ms: 0.7762
+  type: 'test'
+  ...
+# Subtest: 每集页面提供可选跟读控件和可读状态
+ok 143 - 每集页面提供可选跟读控件和可读状态
+  ---
+  duration_ms: 0.312
+  type: 'test'
+  ...
+# Subtest: 跟读只提供有限练习，不改变题目完成链路
+ok 144 - 跟读只提供有限练习，不改变题目完成链路
+  ---
+  duration_ms: 0.4345
+  type: 'test'
+  ...
+# Subtest: Edge-TTS fallback is scoped to the failed clip instead of replaying the whole bilingual sequence
+ok 145 - Edge-TTS fallback is scoped to the failed clip instead of replaying the whole bilingual sequence
+  ---
+  duration_ms: 0.19
+  type: 'test'
+  ...
+# Subtest: all lesson speakers remain square under the TV global minimum height
+ok 146 - all lesson speakers remain square under the TV global minimum height
+  ---
+  duration_ms: 0.1949
+  type: 'test'
+  ...
+# Subtest: 大屏测验选项喇叭保持正圆，不被电视按钮最小高度拉伸
+ok 147 - 大屏测验选项喇叭保持正圆，不被电视按钮最小高度拉伸
+  ---
+  duration_ms: 0.3031
+  type: 'test'
+  ...
+# Subtest: 测验页只承载题目，单词学习页独立承载词卡并进入测验
+ok 148 - 测验页只承载题目，单词学习页独立承载词卡并进入测验
+  ---
+  duration_ms: 1.085
+  type: 'test'
+  ...
+# PASS listen entry contracts
+# Subtest: episode shelves expose a separate pure-listening entry without hijacking study links
+ok 149 - episode shelves expose a separate pure-listening entry without hijacking study links
+  ---
+  duration_ms: 0.9519
+  type: 'test'
+  ...
+# Subtest: the Journey route map exposes the same independent listening action
+ok 150 - the Journey route map exposes the same independent listening action
+  ---
+  duration_ms: 0.2699
+  type: 'test'
+  ...
+# Subtest: audio-only listen mode never loads or displays episode video art
+ok 151 - audio-only listen mode never loads or displays episode video art
+  ---
+  duration_ms: 0.3766
+  type: 'test'
+  ...
+# Subtest: audio-only listen mode keeps annotated captions and side vocabulary aids
+ok 152 - audio-only listen mode keeps annotated captions and side vocabulary aids
+  ---
+  duration_ms: 0.4193
+  type: 'test'
+  ...
+# Subtest: 循环次数只允许 1/2/3，字幕模式有安全默认值
+ok 153 - 循环次数只允许 1/2/3，字幕模式有安全默认值
+  ---
+  duration_ms: 1.2532
+  type: 'test'
+  ...
+# Subtest: 每遍从第一句开始，最后一句后进入下一遍
+ok 154 - 每遍从第一句开始，最后一句后进入下一遍
+  ---
+  duration_ms: 0.3097
+  type: 'test'
+  ...
+# Subtest: 退出保留进入前位置，暂停恢复不改变循环进度
+ok 155 - 退出保留进入前位置，暂停恢复不改变循环进度
+  ---
+  duration_ms: 0.7418
+  type: 'test'
+  ...
+# Subtest: map exposes one page-level continue action for the current learning state
+ok 156 - map exposes one page-level continue action for the current learning state
+  ---
+  duration_ms: 2.9934
+  type: 'test'
+  ...
+# Subtest: splash companion card exposes recent earned medals beside the cover
+ok 157 - splash companion card exposes recent earned medals beside the cover
+  ---
+  duration_ms: 1.231
+  type: 'test'
+  ...
+# Subtest: map initial position stays on an unlocked drill before showing the next locked collection
+ok 158 - map initial position stays on an unlocked drill before showing the next locked collection
+  ---
+  duration_ms: 1.4017
+  type: 'test'
+  ...
+# Subtest: episode progress records a learning day only after real progress
+ok 159 - episode progress records a learning day only after real progress
+  ---
+  duration_ms: 0.3202
+  type: 'test'
+  ...
+# Subtest: companion exposes a retryable loading failure state
+ok 160 - companion exposes a retryable loading failure state
+  ---
+  duration_ms: 0.5321
+  type: 'test'
+  ...
+# Subtest: reduced motion disables map bobbing and smooth scrolling
+ok 161 - reduced motion disables map bobbing and smooth scrolling
+  ---
+  duration_ms: 0.6063
+  type: 'test'
+  ...
+# Subtest: splash wiring is complete before map initialization calls it
+ok 162 - splash wiring is complete before map initialization calls it
+  ---
+  duration_ms: 1.0205
+  type: 'test'
+  ...
+# Subtest: map assets use matching positive cache versions
+ok 163 - map assets use matching positive cache versions
+  ---
+  duration_ms: 0.326
+  type: 'test'
+  ...
+# Subtest: collection page presents a multi-episode title, range, and story summary
+ok 164 - collection page presents a multi-episode title, range, and story summary
+  ---
+  duration_ms: 1.0795
+  type: 'test'
+  ...
+# Subtest: episode cards put the episode number in the readable title and expose pronunciation
+ok 165 - episode cards put the episode number in the readable title and expose pronunciation
+  ---
+  duration_ms: 0.3503
+  type: 'test'
+  ...
+# Subtest: entering or switching a collection schedules its narration
+ok 166 - entering or switching a collection schedules its narration
+  ---
+  duration_ms: 0.1931
+  type: 'test'
+  ...
+# Subtest: short landscape maps switch from the zigzag to a readable compact route
+ok 167 - short landscape maps switch from the zigzag to a readable compact route
+  ---
+  duration_ms: 0.1321
+  type: 'test'
+  ...
+# Subtest: desktop route is an open three-row S polyline with round dashed markers
+ok 168 - desktop route is an open three-row S polyline with round dashed markers
+  ---
+  duration_ms: 0.4958
+  type: 'test'
+  ...
+# Subtest: progress companion binds to current or last done node and respects reduced motion
+ok 169 - progress companion binds to current or last done node and respects reduced motion
+  ---
+  duration_ms: 0.2863
+  type: 'test'
+  ...
+# Subtest: Minecraft 路线保留 Byte 入口并隔离勋章存档
+ok 170 - Minecraft 路线保留 Byte 入口并隔离勋章存档
+  ---
+  duration_ms: 0.3033
+  type: 'test'
+  ...
+# Subtest: Minecraft 地图的用户可见文案必须按绘本单位生成
+ok 171 - Minecraft 地图的用户可见文案必须按绘本单位生成
+  ---
+  duration_ms: 0.4292
+  type: 'test'
+  ...
+# Subtest: route companion is enlarged and parked outside the active cover
+ok 172 - route companion is enlarged and parked outside the active cover
+  ---
+  duration_ms: 0.6225
+  type: 'test'
+  ...
+# Subtest: JTTW route companion uses the generated fixed-ratio walk atlas
+ok 173 - JTTW route companion uses the generated fixed-ratio walk atlas
+  ---
+  duration_ms: 0.2978
+  type: 'test'
+  ...
+# Subtest: JTTW route companion atlas supports four walking directions
+ok 174 - JTTW route companion atlas supports four walking directions
+  ---
+  duration_ms: 0.2018
+  type: 'test'
+  ...
+# Subtest: hovering a route card steers the companion without changing progress
+ok 175 - hovering a route card steers the companion without changing progress
+  ---
+  duration_ms: 0.2051
+  type: 'test'
+  ...
+# Subtest: the map companion can keep an in-place walk cycle when reduced motion is enabled
+ok 176 - the map companion can keep an in-place walk cycle when reduced motion is enabled
+  ---
+  duration_ms: 0.126
+  type: 'test'
+  ...
+# Subtest: hover travel advances in sprite-sized steps at a slower walking pace
+ok 177 - hover travel advances in sprite-sized steps at a slower walking pace
+  ---
+  duration_ms: 0.0829
+  type: 'test'
+  ...
+# Subtest: the enabled atlas uses seven intervals for eight exact frame cells
+ok 178 - the enabled atlas uses seven intervals for eight exact frame cells
+  ---
+  duration_ms: 0.1063
+  type: 'test'
+  ...
+# Subtest: initial companion placement still suppresses travel transition
+ok 179 - initial companion placement still suppresses travel transition
+  ---
+  duration_ms: 0.0986
+  type: 'test'
+  ...
+# Subtest: repeated pointer and focus entry does not change the active hover direction
+ok 180 - repeated pointer and focus entry does not change the active hover direction
+  ---
+  duration_ms: 0.1432
+  type: 'test'
+  ...
+# Subtest: hovering the progress card keeps its saved forward-facing direction
+ok 181 - hovering the progress card keeps its saved forward-facing direction
+  ---
+  duration_ms: 0.0796
+  type: 'test'
+  ...
+# Subtest: episode image cards stay colorful, prominent, and attractive when locked
+ok 182 - episode image cards stay colorful, prominent, and attractive when locked
+  ---
+  duration_ms: 0.3017
+  type: 'test'
+  ...
+# Subtest: regular map cards use a large standalone cover with three floating title lines
+ok 183 - regular map cards use a large standalone cover with three floating title lines
+  ---
+  duration_ms: 0.2203
+  type: 'test'
+  ...
+# Subtest: 空输入返回空数组，不抛异常
+ok 184 - 空输入返回空数组，不抛异常
+  ---
+  duration_ms: 1.953
+  type: 'test'
+  ...
+# Subtest: 题型与顺序：看图识字在前、看图拼词次之、读句选图最后
+ok 185 - 题型与顺序：看图识字在前、看图拼词次之、读句选图最后
+  ---
+  duration_ms: 1.0206
+  type: 'test'
+  ...
+# Subtest: 看图识字：单词名词 + 出现在本节点台词 + 帧路径对应节点
+ok 186 - 看图识字：单词名词 + 出现在本节点台词 + 帧路径对应节点
+  ---
+  duration_ms: 0.3406
+  type: 'test'
+  ...
+# Subtest: 看图拼词：≥4 字母、不与指图卡重复、字母轮转后不等于原词
+ok 187 - 看图拼词：≥4 字母、不与指图卡重复、字母轮转后不等于原词
+  ---
+  duration_ms: 0.2689
+  type: 'test'
+  ...
+# Subtest: 读句选图：4-10 词短句、正确帧在首位、三张帧互不相同
+ok 188 - 读句选图：4-10 词短句、正确帧在首位、三张帧互不相同
+  ---
+  duration_ms: 0.2474
+  type: 'test'
+  ...
+# Subtest: 数量上限：指图 3、拼词 2、读句 3
+ok 189 - 数量上限：指图 3、拼词 2、读句 3
+  ---
+  duration_ms: 0.2088
+  type: 'test'
+  ...
+# Subtest: 确定性：同一本书两次构建结果完全一致
+ok 190 - 确定性：同一本书两次构建结果完全一致
+  ---
+  duration_ms: 0.269
+  type: 'test'
+  ...
+# Subtest: 家长问句模板可读
+ok 191 - 家长问句模板可读
+  ---
+  duration_ms: 0.2327
+  type: 'test'
+  ...
+# Subtest: framePath：集号与节点名拼接，非法字符转下划线
+ok 192 - framePath：集号与节点名拼接，非法字符转下划线
+  ---
+  duration_ms: 0.2114
+  type: 'test'
+  ...
+# Subtest: parent.html：按顺序引入 tv-remote / parent-core / parent.js 并加载 tv 样式
+ok 193 - parent.html：按顺序引入 tv-remote / parent-core / parent.js 并加载 tv 样式
+  ---
+  duration_ms: 1.7286
+  type: 'test'
+  ...
+# Subtest: parent.html：家长须知三句话与核心控件齐备
+ok 194 - parent.html：家长须知三句话与核心控件齐备
+  ---
+  duration_ms: 0.6729
+  type: 'test'
+  ...
+# Subtest: parent.js：只使用 bookplay_parent_card_v1，无危险 API
+ok 195 - parent.js：只使用 bookplay_parent_card_v1，无危险 API
+  ---
+  duration_ms: 0.538
+  type: 'test'
+  ...
+# Subtest: parent-core：不产生判定或奖励语义
+ok 196 - parent-core：不产生判定或奖励语义
+  ---
+  duration_ms: 0.3975
+  type: 'test'
+  ...
+# Subtest: review queue keeps missed words newest-first and bounded
+ok 197 - review queue keeps missed words newest-first and bounded
+  ---
+  duration_ms: 1.9676
+  type: 'test'
+  ...
+# Subtest: resolving a term removes it without touching the other carryover items
+ok 198 - resolving a term removes it without touching the other carryover items
+  ---
+  duration_ms: 0.2752
+  type: 'test'
+  ...
+# Subtest: missed words retain sentence evidence for focused relearning
+ok 199 - missed words retain sentence evidence for focused relearning
+  ---
+  duration_ms: 0.8714
+  type: 'test'
+  ...
+# Subtest: review words dedupe first occurrence and prioritize wrong/tapped terms
+ok 200 - review words dedupe first occurrence and prioritize wrong/tapped terms
+  ---
+  duration_ms: 1.8693
+  type: 'test'
+  ...
+# Subtest: normalizeQuestion maps legacy data and rejects invalid answers
+ok 201 - normalizeQuestion maps legacy data and rejects invalid answers
+  ---
+  duration_ms: 0.3498
+  type: 'test'
+  ...
+# Subtest: normalizeQuestion preserves Chinese hint translations without showing them by default
+ok 202 - normalizeQuestion preserves Chinese hint translations without showing them by default
+  ---
+  duration_ms: 0.2432
+  type: 'test'
+  ...
+# Subtest: quizDisplay separates English content from on-demand Chinese hint
+ok 203 - quizDisplay separates English content from on-demand Chinese hint
+  ---
+  duration_ms: 0.3437
+  type: 'test'
+  ...
+# Subtest: normalizeQuestion preserves all authored replay evidence
+ok 204 - normalizeQuestion preserves all authored replay evidence
+  ---
+  duration_ms: 0.2213
+  type: 'test'
+  ...
+# Subtest: answerQuestion scores a question once even when submitted repeatedly
+ok 205 - answerQuestion scores a question once even when submitted repeatedly
+  ---
+  duration_ms: 0.2891
+  type: 'test'
+  ...
+# Subtest: practiceSummary returns total, correct, wrong ids and percent
+ok 206 - practiceSummary returns total, correct, wrong ids and percent
+  ---
+  duration_ms: 0.2204
+  type: 'test'
+  ...
+# Subtest: empty or malformed practice data returns a safe empty state
+ok 207 - empty or malformed practice data returns a safe empty state
+  ---
+  duration_ms: 0.3658
+  type: 'test'
+  ...
+# Subtest: defaults to the existing Journey to the West reader
+ok 208 - defaults to the existing Journey to the West reader
+  ---
+  duration_ms: 3.7187
+  type: 'test'
+  ...
+# Subtest: resolves a Minecraft book without colliding with episode progress
+ok 209 - resolves a Minecraft book without colliding with episode progress
+  ---
+  duration_ms: 0.4541
+  type: 'test'
+  ...
+# Subtest: the reader loads routing before the main controller
+ok 210 - the reader loads routing before the main controller
+  ---
+  duration_ms: 0.3483
+  type: 'test'
+  ...
+# Subtest: storybook route resolves explicit UI variants without changing progress identity
+ok 211 - storybook route resolves explicit UI variants without changing progress identity
+  ---
+  duration_ms: 0.2377
+  type: 'test'
+  ...
+# Subtest: v3 assets are loaded in a deterministic order and remain scoped
+ok 212 - v3 assets are loaded in a deterministic order and remain scoped
+  ---
+  duration_ms: 1.3021
+  type: 'test'
+  ...
+# Subtest: unified reader exposes stable semantic learning DOM
+ok 213 - unified reader exposes stable semantic learning DOM
+  ---
+  duration_ms: 0.6857
+  type: 'test'
+  ...
+# Subtest: the library exposes the Minecraft collection
+ok 214 - the library exposes the Minecraft collection
+  ---
+  duration_ms: 0.3775
+  type: 'test'
+  ...
+# Subtest: mobile reader uses page scrolling instead of a nested caption scrollbar
+ok 215 - mobile reader uses page scrolling instead of a nested caption scrollbar
+  ---
+  duration_ms: 0.4147
+  type: 'test'
+  ...
+# Subtest: mobile reader keeps toolbar buttons compact
+ok 216 - mobile reader keeps toolbar buttons compact
+  ---
+  duration_ms: 0.5214
+  type: 'test'
+  ...
+# Subtest: mobile v3 grid cannot inherit intrinsic desktop width
+ok 217 - mobile v3 grid cannot inherit intrinsic desktop width
+  ---
+  duration_ms: 0.7391
+  type: 'test'
+  ...
+# Subtest: books without matched audio expose a disabled state
+ok 218 - books without matched audio expose a disabled state
+  ---
+  duration_ms: 0.9623
+  type: 'test'
+  ...
+# Subtest: split reader keeps ~68/32 spread-to-learning ratio with contain
+ok 219 - split reader keeps ~68/32 spread-to-learning ratio with contain
+  ---
+  duration_ms: 0.6359
+  type: 'test'
+  ...
+# Subtest: Mikey & JJ desktop split hands the comic the larger share in panel-split view
+ok 220 - Mikey & JJ desktop split hands the comic the larger share in panel-split view
+  ---
+  duration_ms: 1.3079
+  type: 'test'
+  ...
+# Subtest: word cards render from real glossary data and stay quiet when empty
+ok 221 - word cards render from real glossary data and stay quiet when empty
+  ---
+  duration_ms: 0.594
+  type: 'test'
+  ...
+# Subtest: sentence word DOM exposes an accessible, punctuation-safe point-read contract
+ok 222 - sentence word DOM exposes an accessible, punctuation-safe point-read contract
+  ---
+  duration_ms: 0.5062
+  type: 'test'
+  ...
+# Subtest: word playback cancels stale async Chinese clips before a new click
+ok 223 - word playback cancels stale async Chinese clips before a new click
+  ---
+  duration_ms: 0.5004
+  type: 'test'
+  ...
+# Subtest: v3 Mikey rendering keeps the comic unobstructed and uses the caption column
+ok 224 - v3 Mikey rendering keeps the comic unobstructed and uses the caption column
+  ---
+  duration_ms: 0.8298
+  type: 'test'
+  ...
+# Subtest: unified v3 exposes review and practice stages without reusing the right rail
+ok 225 - unified v3 exposes review and practice stages without reusing the right rail
+  ---
+  duration_ms: 0.7654
+  type: 'test'
+  ...
+# Subtest: quiz renders indexed cards with lettered options and text feedback
+ok 226 - quiz renders indexed cards with lettered options and text feedback
+  ---
+  duration_ms: 0.6322
+  type: 'test'
+  ...
+# Subtest: reader marks progress with a chip on the art stage
+ok 227 - reader marks progress with a chip on the art stage
+  ---
+  duration_ms: 0.5706
+  type: 'test'
+  ...
+# Subtest: small screens keep 44px touch targets, 8px gaps, visible focus, reduced motion
+ok 228 - small screens keep 44px touch targets, 8px gaps, visible focus, reduced motion
+  ---
+  duration_ms: 0.4367
+  type: 'test'
+  ...
+# Subtest: desktop split panel top padding clears the fixed topbar
+ok 229 - desktop split panel top padding clears the fixed topbar
+  ---
+  duration_ms: 0.5971
+  type: 'test'
+  ...
+# Subtest: minecraft sentence playback seeks per sentence and pauses at sentence end
+ok 230 - minecraft sentence playback seeks per sentence and pauses at sentence end
+  ---
+  duration_ms: 0.7279
+  type: 'test'
+  ...
+# Subtest: minecraft quiz opens as a fullscreen overlay with one question at a time
+ok 231 - minecraft quiz opens as a fullscreen overlay with one question at a time
+  ---
+  duration_ms: 1.0206
+  type: 'test'
+  ...
+# Subtest: page-01 sentence clips exist and data references exact verified boundaries
+ok 232 - page-01 sentence clips exist and data references exact verified boundaries
+  ---
+  duration_ms: 4.7759
+  type: 'test'
+  ...
+# Subtest: sentence glossary shows English /IPA/ POS -> Chinese and covers the key words
+ok 233 - sentence glossary shows English /IPA/ POS -> Chinese and covers the key words
+  ---
+  duration_ms: 2.1501
+  type: 'test'
+  ...
+# Subtest: sentence mode prefers the derived clip and never reapplies absolute seconds
+ok 234 - sentence mode prefers the derived clip and never reapplies absolute seconds
+  ---
+  duration_ms: 0.6088
+  type: 'test'
+  ...
+# Subtest: fullscreen quiz hides topbar and non-quiz UI
+ok 235 - fullscreen quiz hides topbar and non-quiz UI
+  ---
+  duration_ms: 0.3004
+  type: 'test'
+  ...
+# Subtest: every book2 page (1-15) exposes anchored sentences with valid clips
+ok 236 - every book2 page (1-15) exposes anchored sentences with valid clips
+  ---
+  duration_ms: 5.8136
+  type: 'test'
+  ...
+# Subtest: pages 2-15 keep 2-4 key words per page with complete, current-sentence fields
+ok 237 - pages 2-15 keep 2-4 key words per page with complete, current-sentence fields
+  ---
+  duration_ms: 2.5452
+  type: 'test'
+  ...
+# Subtest: page 1 accepted sentences are preserved exactly
+ok 238 - page 1 accepted sentences are preserved exactly
+  ---
+  duration_ms: 1.3977
+  type: 'test'
+  ...
+# Subtest: all five minecraft books enable sentence mode on 15/15 pages
+ok 239 - all five minecraft books enable sentence mode on 15/15 pages
+  ---
+  duration_ms: 11.4905
+  type: 'test'
+  ...
+# Subtest: audio books expose valid clips with monotonic in-range boundaries
+ok 240 - audio books expose valid clips with monotonic in-range boundaries
+  ---
+  duration_ms: 24.8312
+  type: 'test'
+  ...
+# Subtest: book3 uses explicit Edge-TTS sentence clips without a fabricated source MP3
+ok 241 - book3 uses explicit Edge-TTS sentence clips without a fabricated source MP3
+  ---
+  duration_ms: 5.4782
+  type: 'test'
+  ...
+# Subtest: every page keeps 2-4 key words with complete fields inside their sentence
+ok 242 - every page keeps 2-4 key words with complete fields inside their sentence
+  ---
+  duration_ms: 9.3799
+  type: 'test'
+  ...
+# Subtest: book4 marks exactly one explicit audio_missing with preserved text
+ok 243 - book4 marks exactly one explicit audio_missing with preserved text
+  ---
+  duration_ms: 1.0038
+  type: 'test'
+  ...
+# Subtest: consumer handles mixed-audio missing sentences honestly
+ok 244 - consumer handles mixed-audio missing sentences honestly
+  ---
+  duration_ms: 0.5141
+  type: 'test'
+  ...
+# Subtest: fullscreen quiz uses the exact bundled background asset only in Minecraft rules
+ok 245 - fullscreen quiz uses the exact bundled background asset only in Minecraft rules
+  ---
+  duration_ms: 0.3921
+  type: 'test'
+  ...
+# Subtest: stylesheet cache buster advances when quiz controls change
+ok 246 - stylesheet cache buster advances when quiz controls change
+  ---
+  duration_ms: 0.1959
+  type: 'test'
+  ...
+# Subtest: no minecraft quiz carries Xiyou polluted distractor words
+ok 247 - no minecraft quiz carries Xiyou polluted distractor words
+  ---
+  duration_ms: 5.5686
+  type: 'test'
+  ...
+# Subtest: mikey-jj route resolves a book without colliding with other series
+ok 248 - mikey-jj route resolves a book without colliding with other series
+  ---
+  duration_ms: 0.3012
+  type: 'test'
+  ...
+# Subtest: mikey-jj map splits 10 published books into route maps, still skipping book 4
+ok 249 - mikey-jj map splits 10 published books into route maps, still skipping book 4
+  ---
+  duration_ms: 1.3772
+  type: 'test'
+  ...
+# Subtest: mikey-jj reader starts silent and does not auto-advance after a sentence ends
+ok 250 - mikey-jj reader starts silent and does not auto-advance after a sentence ends
+  ---
+  duration_ms: 1.7468
+  type: 'test'
+  ...
+# Subtest: mikey-jj book1 covers 10 pages with real per-bubble sentences and ms boundaries
+ok 251 - mikey-jj book1 covers 10 pages with real per-bubble sentences and ms boundaries
+  ---
+  duration_ms: 7.1581
+  type: 'test'
+  ...
+# Subtest: mikey-jj pages keep 2-4 key words with complete three-layer fields inside their sentence
+ok 252 - mikey-jj pages keep 2-4 key words with complete three-layer fields inside their sentence
+  ---
+  duration_ms: 1.7211
+  type: 'test'
+  ...
+# Subtest: mikey-jj fullscreen quiz has valid answers and clean distractors
+ok 253 - mikey-jj fullscreen quiz has valid answers and clean distractors
+  ---
+  duration_ms: 0.7233
+  type: 'test'
+  ...
+# Subtest: published quiz evidence takes precedence over prompt term guessing
+ok 254 - published quiz evidence takes precedence over prompt term guessing
+  ---
+  duration_ms: 0.5068
+  type: 'test'
+  ...
+# Subtest: mikey-jj consumer enables sentence mode, zh line, and fullscreen quiz styling
+ok 255 - mikey-jj consumer enables sentence mode, zh line, and fullscreen quiz styling
+  ---
+  duration_ms: 0.8172
+  type: 'test'
+  ...
+# Subtest: mikey-jj book=2 route resolves to the Water House book
+ok 256 - mikey-jj book=2 route resolves to the Water House book
+  ---
+  duration_ms: 0.1987
+  type: 'test'
+  ...
+# Subtest: mikey-jj book2 covers 10 pages with real per-bubble sentences and ms boundaries
+ok 257 - mikey-jj book2 covers 10 pages with real per-bubble sentences and ms boundaries
+  ---
+  duration_ms: 5.8053
+  type: 'test'
+  ...
+# Subtest: mikey-jj book2 pages keep 2-4 key words with complete three-layer fields inside their sentence
+ok 258 - mikey-jj book2 pages keep 2-4 key words with complete three-layer fields inside their sentence
+  ---
+  duration_ms: 1.7875
+  type: 'test'
+  ...
+# Subtest: mikey-jj book2 fullscreen quiz has valid answers and clean distractors
+ok 259 - mikey-jj book2 fullscreen quiz has valid answers and clean distractors
+  ---
+  duration_ms: 0.8077
+  type: 'test'
+  ...
+# Subtest: mikey-jj missing-audio sentence keeps text learning data and never reuses a stale clip
+ok 260 - mikey-jj missing-audio sentence keeps text learning data and never reuses a stale clip
+  ---
+  duration_ms: 2.0106
+  type: 'test'
+  ...
+# Subtest: home page exposes a third Mikey & JJ card into the series map
+ok 261 - home page exposes a third Mikey & JJ card into the series map
+  ---
+  duration_ms: 0.3154
+  type: 'test'
+  ...
+# Subtest: shelf.js recognizes the mikey-jj series and renders only published books
+ok 262 - shelf.js recognizes the mikey-jj series and renders only published books
+  ---
+  duration_ms: 0.8492
+  type: 'test'
+  ...
+# Subtest: mikey-jj published catalog lists all matched books and skips book 4 without dead links
+ok 263 - mikey-jj published catalog lists all matched books and skips book 4 without dead links
+  ---
+  duration_ms: 1.5058
+  type: 'test'
+  ...
+# Subtest: published-next navigation follows the catalog's non-contiguous book numbers
+ok 264 - published-next navigation follows the catalog's non-contiguous book numbers
+  ---
+  duration_ms: 1.701
+  type: 'test'
+  ...
+# Subtest: Water House page 1 is split into exactly 11 atomic speaking-bubble sentences
+ok 265 - Water House page 1 is split into exactly 11 atomic speaking-bubble sentences
+  ---
+  duration_ms: 2.7493
+  type: 'test'
+  ...
+# Subtest: speaking-bubble consumer contract: DOM, JS entrypoints, TTS hook and sb-mj-scoped CSS
+ok 266 - speaking-bubble consumer contract: DOM, JS entrypoints, TTS hook and sb-mj-scoped CSS
+  ---
+  duration_ms: 1.5092
+  type: 'test'
+  ...
+# Subtest: REPAIR r4: natural ended keeps 600ms linger; playing resets naturalEnd; manual pause immediate
+ok 267 - REPAIR r4: natural ended keeps 600ms linger; playing resets naturalEnd; manual pause immediate
+  ---
+  duration_ms: 1.0084
+  type: 'test'
+  ...
+# Subtest: Water House whole book is exactly 54 atomic speaking-bubble sentences
+ok 268 - Water House whole book is exactly 54 atomic speaking-bubble sentences
+  ---
+  duration_ms: 6.4539
+  type: 'test'
+  ...
+# Subtest: mobile speaking bubble min-width is at least 136px
+ok 269 - mobile speaking bubble min-width is at least 136px
+  ---
+  duration_ms: 0.4512
+  type: 'test'
+  ...
+# Subtest: REPAIR r6: every Water House bubble fits inside the 390px image width
+ok 270 - REPAIR r6: every Water House bubble fits inside the 390px image width
+  ---
+  duration_ms: 0.7289
+  type: 'test'
+  ...
+# Subtest: CONTINUE r7: Zombie School is exactly 64 atomic speaking-bubble sentences
+ok 271 - CONTINUE r7: Zombie School is exactly 64 atomic speaking-bubble sentences
+  ---
+  duration_ms: 10.211
+  type: 'test'
+  ...
+# Subtest: CONTINUE r7: every Zombie School bubble fits inside the 390px image width
+ok 272 - CONTINUE r7: every Zombie School bubble fits inside the 390px image width
+  ---
+  duration_ms: 0.8308
+  type: 'test'
+  ...
+# Subtest: CONTINUE r7: exact visual speaker blueprint (Codex panel audit)
+ok 273 - CONTINUE r7: exact visual speaker blueprint (Codex panel audit)
+  ---
+  duration_ms: 2.7275
+  type: 'test'
+  ...
+# Subtest: REPAIR r9: every word of all 118 sentences stays inside its clip
+ok 274 - REPAIR r9: every word of all 118 sentences stays inside its clip
+  ---
+  duration_ms: 1.422
+  type: 'test'
+  ...
+# Subtest: minecraft focus overlay pilot was rolled back
+ok 275 - minecraft focus overlay pilot was rolled back
+  ---
+  duration_ms: 1.5451
+  type: 'test'
+  ...
+# Subtest: minecraft sentence caption words are individually tappable and duration-proportional
+ok 276 - minecraft sentence caption words are individually tappable and duration-proportional
+  ---
+  duration_ms: 1.204
+  type: 'test'
+  ...
+# Subtest: minecraft right-rail word cards reuse speakGlossaryWord via click and keyboard
+ok 277 - minecraft right-rail word cards reuse speakGlossaryWord via click and keyboard
+  ---
+  duration_ms: 0.8481
+  type: 'test'
+  ...
+# Subtest: Mikey & JJ sentence words ship offline Edge TTS clips and reviewed glossary audio
+ok 278 - Mikey & JJ sentence words ship offline Edge TTS clips and reviewed glossary audio
+  ---
+  duration_ms: 128.1012
+  type: 'test'
+  ...
+# Subtest: Mikey & JJ word playback prefers static clips and keeps WalaMedia fallback
+ok 279 - Mikey & JJ word playback prefers static clips and keeps WalaMedia fallback
+  ---
+  duration_ms: 1.0855
+  type: 'test'
+  ...
+# Subtest: completion card uses a series-specific character action with a safe fallback
+ok 280 - completion card uses a series-specific character action with a safe fallback
+  ---
+  duration_ms: 0.6727
+  type: 'test'
+  ...
+# Subtest: containedRect centers a portrait image inside a landscape box
+ok 281 - containedRect centers a portrait image inside a landscape box
+  ---
+  duration_ms: 1.7702
+  type: 'test'
+  ...
+# Subtest: formatUnitProgress includes page and sentence
+ok 282 - formatUnitProgress includes page and sentence
+  ---
+  duration_ms: 0.3221
+  type: 'test'
+  ...
+# Subtest: series capabilities never fabricate minecraft bubble data
+ok 283 - series capabilities never fabricate minecraft bubble data
+  ---
+  duration_ms: 0.1982
+  type: 'test'
+  ...
+# Subtest: preferences tolerate malformed storage and preserve other series
+ok 284 - preferences tolerate malformed storage and preserve other series
+  ---
+  duration_ms: 0.3386
+  type: 'test'
+  ...
+# Subtest: resolveReaderMode accepts only story or study
+ok 285 - resolveReaderMode accepts only story or study
+  ---
+  duration_ms: 0.1604
+  type: 'test'
+  ...
+# Subtest: next-after-ended is enabled only in unlocked story mode
+ok 286 - next-after-ended is enabled only in unlocked story mode
+  ---
+  duration_ms: 0.1414
+  type: 'test'
+  ...
+# Subtest: keywords are hidden when empty or in story mode
+ok 287 - keywords are hidden when empty or in story mode
+  ---
+  duration_ms: 0.422
+  type: 'test'
+  ...
+# Subtest: translation is shown only when real text exists and preference is on
+ok 288 - translation is shown only when real text exists and preference is on
+  ---
+  duration_ms: 0.1586
+  type: 'test'
+  ...
+# Subtest: word highlight prefers authored boundaries and falls back only when incomplete
+ok 289 - word highlight prefers authored boundaries and falls back only when incomplete
+  ---
+  duration_ms: 0.5103
+  type: 'test'
+  ...
+# Subtest: containedRect handles horizontal letterboxing
+ok 290 - containedRect handles horizontal letterboxing
+  ---
+  duration_ms: 0.3403
+  type: 'test'
+  ...
+# Subtest: containedRect handles vertical letterboxing
+ok 291 - containedRect handles vertical letterboxing
+  ---
+  duration_ms: 0.1472
+  type: 'test'
+  ...
+# Subtest: projectRelativeBox stays inside contained image
+ok 292 - projectRelativeBox stays inside contained image
+  ---
+  duration_ms: 0.3223
+  type: 'test'
+  ...
+# Subtest: projectRelativeBox rejects incomplete or degenerate annotations
+ok 293 - projectRelativeBox rejects incomplete or degenerate annotations
+  ---
+  duration_ms: 0.1587
+  type: 'test'
+  ...
+# Subtest: standard study keeps at most three spaced authored checkpoints
+ok 294 - standard study keeps at most three spaced authored checkpoints
+  ---
+  duration_ms: 2.4415
+  type: 'test'
+  ...
+# Subtest: checkpoint selection does not duplicate an authored node and fills a sparse episode
+ok 295 - checkpoint selection does not duplicate an authored node and fills a sparse episode
+  ---
+  duration_ms: 0.2908
+  type: 'test'
+  ...
+# Subtest: checkpoint selection avoids consecutive scene stops when authored quizzes cluster
+ok 296 - checkpoint selection avoids consecutive scene stops when authored quizzes cluster
+  ---
+  duration_ms: 0.2451
+  type: 'test'
+  ...
+# Subtest: lite study still offers one low-burden recall checkpoint
+ok 297 - lite study still offers one low-burden recall checkpoint
+  ---
+  duration_ms: 0.1442
+  type: 'test'
+  ...
+# Subtest: story mode can disable inline checkpoints without changing authored data
+ok 298 - story mode can disable inline checkpoints without changing authored data
+  ---
+  duration_ms: 0.256
+  type: 'test'
+  ...
+# Subtest: deriveScenes groups ordered sentence nodes and preserves evidence
+ok 299 - deriveScenes groups ordered sentence nodes and preserves evidence
+  ---
+  duration_ms: 2.7287
+  type: 'test'
+  ...
+# Subtest: buildReplayQueue 只保留目标词 scene、去重并保持原顺序
+ok 300 - buildReplayQueue 只保留目标词 scene、去重并保持原顺序
+  ---
+  duration_ms: 0.5413
+  type: 'test'
+  ...
+# Subtest: scenePlaybackPlan 优先视频，否则回退页面定格和句子音频
+ok 301 - scenePlaybackPlan 优先视频，否则回退页面定格和句子音频
+  ---
+  duration_ms: 0.6978
+  type: 'test'
+  ...
+# Subtest: queue navigation skips completed or skipped scene and is safe when empty
+ok 302 - queue navigation skips completed or skipped scene and is safe when empty
+  ---
+  duration_ms: 0.6026
+  type: 'test'
+  ...
+# Subtest: replayQueueForQuestions follows authored sentence and scene evidence
+ok 303 - replayQueueForQuestions follows authored sentence and scene evidence
+  ---
+  duration_ms: 0.6562
+  type: 'test'
+  ...
+# Subtest: 空存档归一化出两遍制字段并保留旧字段
+ok 304 - 空存档归一化出两遍制字段并保留旧字段
+  ---
+  duration_ms: 2.2055
+  type: 'test'
+  ...
+# Subtest: scene 队列和词卡事件只接受合同中的 scene/term
+ok 305 - scene 队列和词卡事件只接受合同中的 scene/term
+  ---
+  duration_ms: 0.5666
+  type: 'test'
+  ...
+# Subtest: seen 不会冒充 mastered，答题才更新 right/wrong 词状态
+ok 306 - seen 不会冒充 mastered，答题才更新 right/wrong 词状态
+  ---
+  duration_ms: 0.6003
+  type: 'test'
+  ...
+# Subtest: 重复事件幂等且不会重复累加测验尝试
+ok 307 - 重复事件幂等且不会重复累加测验尝试
+  ---
+  duration_ms: 0.3538
+  type: 'test'
+  ...
+# Subtest: 旧版 practice 存档可迁移到 quiz，不创建幽灵记录
+ok 308 - 旧版 practice 存档可迁移到 quiz，不创建幽灵记录
+  ---
+  duration_ms: 0.2026
+  type: 'test'
+  ...
+# Subtest: 主动学习计时只累计可见且有学习活动的时间
+ok 309 - 主动学习计时只累计可见且有学习活动的时间
+  ---
+  duration_ms: 0.929
+  type: 'test'
+  ...
+# Subtest: 达到阈值的休息提示只消费一次
+ok 310 - 达到阈值的休息提示只消费一次
+  ---
+  duration_ms: 0.1583
+  type: 'test'
+  ...
+# Subtest: 暂停和恢复不会把暂停期间算入主动学习时长
+ok 311 - 暂停和恢复不会把暂停期间算入主动学习时长
+  ---
+  duration_ms: 0.2675
+  type: 'test'
+  ...
+# Subtest: 恢复坏存档时钳制数字并保留安全默认值
+ok 312 - 恢复坏存档时钳制数字并保留安全默认值
+  ---
+  duration_ms: 0.7738
+  type: 'test'
+  ...
+# Subtest: 学习会话存档使用独立的版本化键
+ok 313 - 学习会话存档使用独立的版本化键
+  ---
+  duration_ms: 0.4899
+  type: 'test'
+  ...
+# Subtest: all entry pages load the shared TV stylesheet
+ok 314 - all entry pages load the shared TV stylesheet
+  ---
+  duration_ms: 15.6309
+  type: 'test'
+  ...
+# Subtest: TV stylesheet provides ten-foot sizing, safe areas, and visible focus
+ok 315 - TV stylesheet provides ten-foot sizing, safe areas, and visible focus
+  ---
+  duration_ms: 1.2301
+  type: 'test'
+  ...
+# Subtest: TV stylesheet enlarges player and quiz controls without changing the mobile baseline
+ok 316 - TV stylesheet enlarges player and quiz controls without changing the mobile baseline
+  ---
+  duration_ms: 1.2574
+  type: 'test'
+  ...
+# Subtest: TV entry pages load remote navigation and the handler supports directional focus
+ok 317 - TV entry pages load remote navigation and the handler supports directional focus
+  ---
+  duration_ms: 9.4152
+  type: 'test'
+  ...
+# Subtest: 单词跟读：忽略大小写和标点后精确命中
+ok 318 - 单词跟读：忽略大小写和标点后精确命中
+  ---
+  duration_ms: 1.1036
+  type: 'test'
+  ...
+# Subtest: 短词不使用编辑距离或宽松别名
+ok 319 - 短词不使用编辑距离或宽松别名
+  ---
+  duration_ms: 0.1847
+  type: 'test'
+  ...
+# Subtest: 句子跟读区分完整命中和部分命中
+ok 320 - 句子跟读区分完整命中和部分命中
+  ---
+  duration_ms: 0.2827
+  type: 'test'
+  ...
+# Subtest: 空识别结果是 no-speech，不伪造分数
+ok 321 - 空识别结果是 no-speech，不伪造分数
+  ---
+  duration_ms: 0.1495
+  type: 'test'
+  ...
+# Subtest: 反馈把“识别命中”和“发音评分”分开
+ok 322 - 反馈把“识别命中”和“发音评分”分开
+  ---
+  duration_ms: 0.252
+  type: 'test'
+  ...
+# Subtest: 错误状态统一为可供页面消费的合同
+ok 323 - 错误状态统一为可供页面消费的合同
+  ---
+  duration_ms: 0.1184
+  type: 'test'
+  ...
+# Subtest: 无任何语音能力时返回 unsupported
+ok 324 - 无任何语音能力时返回 unsupported
+  ---
+  duration_ms: 2.152
+  type: 'test'
+  ...
+# Subtest: Web Speech 识别结果进入统一命中合同
+ok 325 - Web Speech 识别结果进入统一命中合同
+  ---
+  duration_ms: 1.0157
+  type: 'test'
+  ...
+# Subtest: Web Speech 权限错误不会抛出，返回 permission-denied
+ok 326 - Web Speech 权限错误不会抛出，返回 permission-denied
+  ---
+  duration_ms: 0.2706
+  type: 'test'
+  ...
+# Subtest: 显式网关优先使用录音并在停止后释放 tracks
+ok 327 - 显式网关优先使用录音并在停止后释放 tracks
+  ---
+  duration_ms: 3.9033
+  type: 'test'
+  ...
+# Subtest: Web Speech 网络错误会回退到显式网关并返回网关结果
+ok 328 - Web Speech 网络错误会回退到显式网关并返回网关结果
+  ---
+  duration_ms: 1.8394
+  type: 'test'
+  ...
+# PASS wala player UI contracts
+# Subtest: prj\\engine\\wala-player-ui.test.mjs
+ok 36 - prj\\engine\\wala-player-ui.test.mjs
+  ---
+  duration_ms: 177.3298
+  type: 'test'
+  ...
+# Subtest: study playback uses a bounded checkpoint plan instead of testing every node
+ok 330 - study playback uses a bounded checkpoint plan instead of testing every node
+  ---
+  duration_ms: 1.6811
+  type: 'test'
+  ...
+# Subtest: inline checkpoint feedback exposes segment progress and a continue path
+ok 331 - inline checkpoint feedback exposes segment progress and a continue path
+  ---
+  duration_ms: 0.1624
+  type: 'test'
+  ...
+# Subtest: finishing an inline checkpoint resumes the next story node
+ok 332 - finishing an inline checkpoint resumes the next story node
+  ---
+  duration_ms: 0.195
+  type: 'test'
+  ...
+# Subtest: a missed vocabulary item can return as a next-episode warm-up
+ok 333 - a missed vocabulary item can return as a next-episode warm-up
+  ---
+  duration_ms: 0.144
+  type: 'test'
+  ...
+# Subtest: wala.html：语音模块在 wala.js 前按核心到网关顺序引入并更新版本
+ok 334 - wala.html：语音模块在 wala.js 前按核心到网关顺序引入并更新版本
+  ---
+  duration_ms: 1.4522
+  type: 'test'
+  ...
+# Subtest: wala.js：只有麦克风可用时才插入跟读按钮，并使用统一语音反馈
+ok 335 - wala.js：只有麦克风可用时才插入跟读按钮，并使用统一语音反馈
+  ---
+  duration_ms: 1.4658
+  type: 'test'
+  ...
+# Subtest: wala.js：跟读入口只存在于 learn 卡且包含三次防挫败与忙碌锁
+ok 336 - wala.js：跟读入口只存在于 learn 卡且包含三次防挫败与忙碌锁
+  ---
+  duration_ms: 0.8004
+  type: 'test'
+  ...
+# Subtest: wala.js：跟读不落盘、不使用动态代码执行
+ok 337 - wala.js：跟读不落盘、不使用动态代码执行
+  ---
+  duration_ms: 0.8122
+  type: 'test'
+  ...
+# Subtest: tokenizeCaptionWords 保留空格并清理标点
+ok 338 - tokenizeCaptionWords 保留空格并清理标点
+  ---
+  duration_ms: 2.096
+  type: 'test'
+  ...
+# Subtest: resolveWordAudio 按静态音频、句子 seek、TTS 顺序选择
+ok 339 - resolveWordAudio 按静态音频、句子 seek、TTS 顺序选择
+  ---
+  duration_ms: 0.392
+  type: 'test'
+  ...
+1..339
+# tests 339
+# suites 0
+# pass 339
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1762.9922

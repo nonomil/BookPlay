@@ -8,32 +8,39 @@
   <link rel="stylesheet" href="tv.css?v=game-1">
   <link rel="stylesheet" href="app-audio.css?v=1">
   <link rel="stylesheet" href="battle.css?v=battle-3">
-  <link rel="stylesheet" href="game.css?v=game-1">
+  <link rel="stylesheet" href="game.css?v=game-2">
 </head>
 <body>
   <main class="game" id="game-root">
-    <section class="game-scene" id="game-scene" aria-label="探索地图">
-      <div class="game-backdrop" id="game-backdrop" aria-hidden="true"></div>
-      <div class="game-walkzone" id="game-walkzone" aria-hidden="true"></div>
-      <div class="game-entities" id="game-entities"></div>
-      <div class="game-projectiles" id="game-projectiles" aria-hidden="true"></div>
-      <div class="game-particles" id="game-particles" aria-hidden="true"></div>
+    <section class="game-scene" id="game-scene" aria-label="探索大地图">
+      <div class="game-world" id="game-world">
+        <div class="game-backdrop" id="game-backdrop" aria-hidden="true"></div>
+        <div class="game-entities" id="game-entities"></div>
+        <div class="game-projectiles" id="game-projectiles" aria-hidden="true"></div>
+        <div class="game-particles" id="game-particles" aria-hidden="true"></div>
+      </div>
     </section>
 
     <header class="game-hud">
-      <div class="game-shields" id="game-shields" aria-label="护盾">🛡️🛡️🛡️</div>
-      <div class="game-progress" id="game-progress" aria-label="进度">0 / 0</div>
-      <div class="game-target" id="game-target" aria-live="polite">
-        <span class="game-target-label">目标</span>
-        <strong id="game-target-zh">…</strong>
-        <button type="button" id="game-target-speak" aria-label="朗读目标词" tabindex="0">♪</button>
-      </div>
+      <div class="game-pill" aria-label="星星">⭐ <strong id="game-stars">0</strong></div>
+      <div class="game-pill" aria-label="进度">⚔ <strong id="game-progress">0 / 0</strong></div>
+      <div class="game-pill" aria-label="护盾"><span id="game-shields">🛡️🛡️🛡️</span></div>
+      <div class="game-pill game-carried" aria-label="当前中文球">🎐 <strong id="game-carried">空手</strong></div>
+      <div class="game-pill game-combo" aria-label="连击">连击 <strong id="game-combo">0</strong></div>
+      <button type="button" class="game-exit" id="game-hint" aria-label="单词提示" tabindex="0">？</button>
       <button type="button" class="game-exit" id="game-exit" aria-label="暂停" tabindex="0">∥</button>
     </header>
 
-    <div class="game-tray" id="game-tray" aria-label="收集"></div>
+    <section class="game-banner" id="game-banner" hidden aria-live="polite">
+      <span class="game-banner-kicker" id="game-banner-kicker">进入新区域</span>
+      <strong id="game-banner-title">花果山</strong>
+    </section>
+
+    <aside class="game-supports" id="game-supports" aria-label="支援道具"></aside>
+    <aside class="game-hintcard" id="game-hintcard" hidden aria-live="polite"></aside>
+
     <div class="game-joystick" id="game-joystick" aria-hidden="true"><div class="game-stick" id="game-stick"></div></div>
-    <div class="game-dpad-hint" id="game-dpad-hint" aria-hidden="true">方向键移动 · OK 交互</div>
+    <div class="game-dpad-hint" id="game-dpad-hint" aria-hidden="true">方向键移动 · 走过词球捡起 · 点小妖投掷</div>
 
     <section class="game-dialogue" id="game-dialogue" hidden aria-live="polite">
       <img class="game-dialogue-face" id="game-dialogue-face" alt="" decoding="async">
@@ -46,7 +53,6 @@
       </div>
     </section>
 
-    <section class="game-quickquiz" id="game-quickquiz" hidden aria-live="polite"></section>
     <section class="game-panel game-bossgate" id="game-bossgate" hidden aria-live="polite"></section>
     <section class="game-panel game-pause" id="game-pause" hidden aria-label="暂停">
       <h2 class="battle-panel-title">休息一下</h2>
@@ -61,6 +67,6 @@
   <script src="app-audio.js?v=2"></script>
   <script src="tv-remote.js?v=game-1"></script>
   <script src="battle-core.js?v=battle-3"></script>
-  <script src="game.js?v=game-4"></script>
+  <script src="game.js?v=game-8"></script>
 </body>
 </html>

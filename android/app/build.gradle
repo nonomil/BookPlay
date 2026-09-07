@@ -47,6 +47,18 @@ android {
             applicationIdSuffix ".tv"
             versionNameSuffix "-tv"
         }
+        // 泡机堂 X35S 等 3.5" 640x480 无触摸掌机：物理按键经 dispatchKeyEvent
+        // 桥进 WebView（见 MainActivity），交互走 tv-remote 同款焦点导航。
+        handheld {
+            dimension "device"
+            applicationIdSuffix ".handheld"
+            versionNameSuffix "-handheld"
+        }
+    }
+    buildFeatures {
+        // Java 侧用 BuildConfig.FLAVOR 区分掌机包（按键桥/根路径路由只在
+        // handheld 生效），AGP 8 默认关闭，需显式打开。
+        buildConfig true
     }
     buildTypes {
         release {

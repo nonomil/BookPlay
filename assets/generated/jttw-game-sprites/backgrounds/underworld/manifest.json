@@ -1,0 +1,25 @@
+{
+  "theme": "underworld",
+  "kind": "top-down game world map background",
+  "provider": "cliprox",
+  "model": "gpt-image-2",
+  "requested_size": "1536x1024",
+  "raw_size": "1254x1254",
+  "attempts": 1,
+  "prompt": "source/prompt.txt",
+  "normalized": {
+    "path": "2d/underworld-map.png",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "e9c05a7947043420b7fac7412d6656f72c37e6f166349e7fed1f97ddef938b92"
+  },
+  "runtime_jpg": {
+    "path": "2d/underworld.jpg",
+    "width": 1280,
+    "height": 720,
+    "quality": 82,
+    "sha256": "e81a75d63631c660e218f9b56501f014f442f461efbc6de8706917cad2ea50af"
+  },
+  "generated_at": "2026-09-06T23:49:17+00:00",
+  "notes": "provider ignores requested size; normalized via center-crop to 3:2 + LANCZOS resize"
+}

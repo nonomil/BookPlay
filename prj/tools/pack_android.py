@@ -41,7 +41,9 @@ ENGINE_FILES = [
     # The lesson page is part of the Android learning loop. Keep its shared
     # voice/review/reward runtime beside the page so per-episode stickers and
     # consolidation work in the APK, not only in the browser.
-    "lesson.html", "lesson.js", "lesson.css", "lesson-core.js",
+    "lesson.html", "lesson.js", "lesson.css", "lesson-core.js", "media.js",
+    "lesson-words.html", "lesson-words.css",
+    "walker-cast.js", "walker-progress.js",
     "voice-core.js", "voice.js", "review-queue.js", "episode-reward.js",
     "adventure.html", "adventure.js", "adventure.css",
     "map.html", "map.js", "map.css",
@@ -49,7 +51,7 @@ ENGINE_FILES = [
     "battle.html", "battle.js", "battle.css", "battle-core.js",
     "game.html", "game.js", "game.css",
     "episode-vocab-quiz.js",
-    "tv.css", "tv-remote.js",
+    "tv.css", "tv-remote.js", "native-key.js", "handheld-keys.html",
     "companion.html", "companion.js", "companion.css", "companion-core.js",
     "medals.html", "stickers.html", "room.html",
     "index.html", "main.js",
@@ -459,6 +461,17 @@ def _add_full_catalog_metadata(root: Path, files: dict[str, Path | bytes]) -> No
                 files[str(path.relative_to(root)).replace("\\", "/")] = path
 
 
+def available_for_profile(profile: str) -> dict[str, dict[str, object]]:
+    """Return the starter-gate allowlist for one builtin APK profile."""
+    available: dict[str, dict[str, object]] = {
+        "jttw": {"episodes": [1], "collections": ["c01"]},
+    }
+    if profile == "starter":
+        available["minecraft"] = {"books": [1]}
+        available["mikey-jj"] = {"books": [1]}
+    return available
+
+
 def _prune_jttw_only(files: dict[str, Path | bytes]) -> None:
     """Trim the starter tree to the playable Journey-to-the-West EP1.
 
@@ -545,6 +558,7 @@ def pack_builtin(
         _book_one_quiz(files, "mikey-jj")
         _add_full_catalog_metadata(CONTENT, files)
 
+    available = available_for_profile(profile)
     manifest = {
         "schema_version": 1,
         "kind": "apk-builtin-jttw-only" if profile == "jttw-only" else "apk-builtin-starter",
@@ -554,9 +568,7 @@ def pack_builtin(
             if profile == "jttw-only"
             else "已内置西游记第1集、Minecraft第1本和Mikey & JJ第1本；下一关请导入对应数据包。"
         ),
-        "available": {
-            "jttw": {"episodes": [1], "collections": ["c01"]},
-        },
+        "available": available,
         "file_count": len(files),
         "warnings": warnings,
     }

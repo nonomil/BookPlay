@@ -81,6 +81,20 @@ test('music control can switch off while game is paused',async t=>{
   const {manager,doc}=setup(t);manager.configure('jttw');manager.unlock();await tick();manager.attachControls();manager.suspend('battle-pause');
   doc.body.children[0].children[0].dispatchEvent(new Event('click'));assert.equal(manager.getState().musicEnabled,false);
 });
+test('default chrome shows music only; sfx toggle lives in the settings slot',async t=>{
+  const settingsSlot=new Element();
+  const {manager,doc,env}=setup(t);
+  doc.querySelector=(sel)=>sel==='[data-audio-settings-slot]'?settingsSlot:null;
+  manager.configure('home');manager.attachControls();
+  assert.equal(doc.body.children[0].children.length,1);
+  assert.equal(doc.body.children[0].children[0].dataset.audioControl,'music');
+  assert.equal(settingsSlot.children.length,1);
+  assert.equal(settingsSlot.children[0].dataset.audioControl,'sfx');
+  assert.match(settingsSlot.children[0].textContent,/音效开/);
+  settingsSlot.children[0].dispatchEvent(new Event('click'));
+  assert.equal(manager.getState().sfxEnabled,false);
+  assert.deepEqual(JSON.parse(env.localStorage.getItem('bookplay_audio_v1')),{music:true,sfx:false});
+});
 test('answer cue can follow a paused prompt before its asynchronous pause event',async t=>{
   const {manager,Audio}=setup(t);const prompt=manager.watchMedia(new Audio());await prompt.play();
   prompt.paused=true; // Browser pause() state changes before the queued pause event.
@@ -90,4 +104,18 @@ test('storage change updates controls and stops both channels',async t=>{
   const {manager,env,audios}=setup(t);manager.configure('home');manager.unlock();await tick();manager.sfx('reward');
   env.localStorage.setItem('bookplay_audio_v1',JSON.stringify({music:false,sfx:false}));const e=new Event('storage');e.key='bookplay_audio_v1';env.dispatchEvent(e);
   assert.equal(audios[0].paused,true);assert.equal(audios[1].paused,true);assert.equal(manager.getState().sfxEnabled,false);
+});
+test('a new page claims the music slot and silences the previous page',async t=>{
+  const first=setup(t);first.manager.configure('home');first.manager.unlock();await tick();
+  const second=setup(t);second.manager.configure('jttw');second.manager.unlock();await tick();
+  const event=new Event('storage');event.key='bookplay_audio_owner_v1';event.newValue=JSON.stringify({token:'second-page',scene:'jttw'});
+  first.env.dispatchEvent(event);await tick();
+  assert.equal(first.manager.getState().paused,true);assert.equal(first.manager.getState().volume,0);assert.equal(first.manager.getState().ownsPlayback,false);
+  assert.equal(second.manager.getState().paused,false);assert.equal(second.manager.getState().ownsPlayback,true);
+});
+test('navigation click cannot be undone by the document gesture unlock handler',async t=>{
+  const {manager,doc,audios,env}=setup(t);env.location={href:'http://localhost/engine/home.html',origin:'http://localhost'};manager.configure('home');manager.unlock();await tick();
+  const link=new Element();link.href='http://localhost/engine/map.html';link.target='';link.hasAttribute=()=>false;link.closest=()=>link;
+  const click=new Event('click');Object.defineProperty(click,'target',{value:link});doc.dispatchEvent(click);
+  assert.equal(manager.getState().navigating,true);assert.equal(manager.getState().paused,true);assert.equal(manager.getState().ownsPlayback,false);assert.equal(audios[0].plays,1);
 });
