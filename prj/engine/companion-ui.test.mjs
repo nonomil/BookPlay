@@ -11,8 +11,9 @@ test("map exposes a permanent companion entry and a splash growth corner", () =>
   const html = read("map.html");
   const js = read("map.js");
   const css = read("map.css");
-  assert.match(html, /id="companion-entry"/);
-  assert.match(html, /companion\.html\?series=jttw/);
+  // 2026-09-12 全屏改版：顶栏移除，驿站入口由开场闪屏(splash-companion)承担
+  assert.doesNotMatch(html, /id="companion-entry"/, "top-bar companion chip removed with the header");
+  assert.match(html, /companion\.html\?series=jttw/, "splash keeps the companion entry");
   assert.match(html, /id="splash-companion"/);
   assert.match(js, /renderCompanionSummary/);
   assert.match(css, /#splash-companion/);

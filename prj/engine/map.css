@@ -370,6 +370,31 @@ body.map-body {
   border-color: #fff4c8;
   color: #241b0d;
 }
+.node-sticker {
+  position: absolute;
+  top: 3%;
+  left: 2%;
+  z-index: 3;
+  width: clamp(46px, calc(var(--card, 112px) * 0.48), 72px);
+  padding: 0;
+  border: 0;
+  background: none;
+  box-shadow: none;
+  transform: rotate(-9deg);
+  pointer-events: none;
+}
+.node-sticker img {
+  display: block;
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 3px 4px rgba(0, 0, 0, 0.35));
+}
+.node-sticker.is-done img {
+  filter: drop-shadow(0 3px 4px rgba(0, 0, 0, 0.35)) drop-shadow(0 0 6px rgba(255, 215, 106, 0.55));
+}
+.node-sticker.is-todo img {
+  filter: grayscale(1) brightness(1.18) opacity(0.82) drop-shadow(0 2px 3px rgba(0, 0, 0, 0.3));
+}
 
 .node-text {
   display: block;
@@ -829,7 +854,9 @@ body.map-body {
         box-shadow: 0 2px 7px rgba(0, 0, 0, 0.55);
       }
       .route.compact .node-badge,
-      .route.compact .node-tip { left: 0.28rem; right: auto; top: 0.28rem; z-index: 3; }
+      .route.compact .node-tip,
+      .route.compact .node-sticker { left: 0.28rem; right: auto; top: 0.28rem; z-index: 3; }
+      .route.compact .node-sticker { transform: rotate(-6deg); min-width: 0; padding: 0.12em 0.34em; }
   .route.compact .node.drill {
     display: flex;
     width: 100%;
@@ -1021,4 +1048,525 @@ body.map-body {
     animation-play-state: running;
     background-position-x: 0;
   }
+  .map-world-button { transition: none; }
 }
+
+/* 西游选关：合辑=世界卡，舞台=16:9 地图，集=覆盖节点。
+ * 只改 jttw 的 .map-terminal，其它系列仍走封面卡 + S 折线。 */
+body.map-terminal {
+  display: flex;
+  flex-direction: column;
+  background:
+    radial-gradient(circle at 8% 6%, rgba(255, 233, 168, .12), transparent 28%),
+    radial-gradient(circle at 92% 12%, rgba(201, 162, 39, .1), transparent 30%),
+    var(--deep);
+}
+body.map-terminal #map-top {
+  flex: 0 0 auto;
+  background: rgba(15, 11, 8, .78);
+}
+body.map-terminal #map-worlds {
+  display: flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  min-height: 0;
+  padding: 8px 12px 10px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  border-bottom: 1px solid rgba(201, 162, 39, .22);
+  background: rgba(15, 11, 8, .55);
+  backdrop-filter: blur(14px);
+}
+body.map-terminal #map-worlds::-webkit-scrollbar { display: none; }
+body.map-terminal #map-track {
+  flex: 1 1 auto;
+  height: auto;
+  min-height: 0;
+  padding-bottom: 2.4rem;
+}
+body.map-terminal #map-hint { flex: 0 0 auto; }
+
+.map-world-button {
+  display: grid;
+  grid-template-columns: 96px minmax(0, 1fr);
+  align-items: center;
+  gap: 10px;
+  min-width: 220px;
+  max-width: 280px;
+  padding: 6px 12px 6px 6px;
+  border: 1px solid rgba(201, 162, 39, .32);
+  border-radius: 16px;
+  background: rgba(255, 248, 225, .14);
+  color: #fff4c8;
+  text-align: left;
+  cursor: pointer;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, .18);
+  transition: border-color .18s ease, background-color .18s ease, transform .18s ease;
+}
+.map-world-button img {
+  width: 96px;
+  height: 64px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px;
+}
+.map-world-button strong,
+.map-world-button small { display: block; }
+.map-world-button strong {
+  overflow: hidden;
+  font-size: 14px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.map-world-button small {
+  margin-top: 4px;
+  color: #f0d9a2;
+  font-size: 11px;
+}
+.map-world-button:hover,
+.map-world-button:focus-visible {
+  border-color: var(--gold-bright);
+  outline: none;
+  transform: translateY(-2px);
+}
+.map-world-button.is-active {
+  border-color: var(--gold-bright);
+  background: rgba(255, 215, 106, .18);
+  box-shadow: 0 0 0 3px rgba(255, 215, 106, .22), 0 8px 18px rgba(0, 0, 0, .18);
+}
+
+body.map-terminal .map-page {
+  background-image:
+    radial-gradient(900px 420px at 80% -5%, rgba(120, 180, 255, 0.08), transparent),
+    linear-gradient(180deg, #10141f 0%, #1a1626 50%, #241a12 100%);
+}
+body.map-terminal .page-head {
+  padding: 0.35rem 1rem 0.1rem;
+}
+body.map-terminal .page-head h2 { font-size: clamp(1.02rem, 2.2vw, 1.32rem); }
+body.map-terminal .page-en { display: none; }
+body.map-terminal .page-summary {
+  max-width: 46rem;
+  margin: 0.15rem auto 0;
+  overflow: hidden;
+  font-size: 0.78rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+body.map-terminal .page-primary-action { margin-top: 0.35rem; min-height: 2.2rem; }
+
+body.map-terminal .terminal-stage {
+  position: relative;
+  overflow: visible;
+  width: min(100% - 24px, calc((100vh - 13rem) * 16 / 9), 1280px);
+  max-height: calc(100vh - 13rem);
+  aspect-ratio: 16 / 9;
+  margin: 0 auto 0.7rem;
+  border: 2px solid rgba(255, 248, 225, .72);
+  border-radius: 22px;
+  background: #241a12;
+  box-shadow: 0 20px 44px rgba(0, 0, 0, .28), 0 5px 0 rgba(201, 162, 39, .12);
+}
+body.map-terminal .terminal-stage.compact {
+  width: auto;
+  max-height: none;
+  aspect-ratio: auto;
+  margin: 0.1rem 0.6rem 0.5rem;
+}
+.route-stage-image {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  pointer-events: none;
+  border-radius: inherit;
+}
+body.map-terminal .terminal-stage::after {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  content: "";
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .08);
+}
+
+body.map-terminal .terminal-stage .node {
+  display: grid;
+  grid-template-columns: 52px minmax(0, 1fr);
+  align-items: start;
+  gap: 6px;
+  width: 168px;
+  min-height: 62px;
+  padding: 5px 8px 6px 5px;
+  overflow: visible;
+  --node-lift: 8px;
+  border: 1px solid rgba(255, 255, 255, .78);
+  border-radius: 14px;
+  background: rgba(255, 252, 244, .86);
+  color: #29434a;
+  box-shadow: 0 8px 18px rgba(35, 24, 8, .18);
+  backdrop-filter: blur(8px);
+}
+body.map-terminal .terminal-stage .node-main {
+  display: grid;
+  grid-template-columns: 52px minmax(0, 1fr);
+  grid-column: 1 / -1;
+  align-items: center;
+  gap: 7px;
+}
+body.map-terminal .terminal-stage .node-cover {
+  width: 52px;
+  aspect-ratio: 1;
+  border-width: 1.5px;
+  border-radius: 10px;
+}
+body.map-terminal .terminal-stage .node-text {
+  padding: 0;
+  text-align: left;
+  text-shadow: none;
+}
+body.map-terminal .terminal-stage .episode-title {
+  color: #29434a;
+  font-size: clamp(0.72rem, 1.6vw, 0.92rem);
+}
+body.map-terminal .terminal-stage .episode-number { color: #8a6a18; }
+body.map-terminal .terminal-stage .episode-en { display: none; }
+body.map-terminal .terminal-stage .node.current .episode-title { color: #3a2a10; }
+body.map-terminal .terminal-stage .node.current {
+  border-color: var(--gold-bright);
+  box-shadow: 0 0 0 3px rgba(255, 215, 106, .3), 0 8px 18px rgba(35, 24, 8, .18);
+}
+body.map-terminal .terminal-stage .node-sticker {
+  width: 28px;
+  top: -6px;
+  left: -8px;
+}
+body.map-terminal .terminal-stage .node-speak {
+  right: 6px;
+  top: 6px;
+  width: 22px;
+  height: 22px;
+}
+body.map-terminal .terminal-stage .node-actions {
+  display: flex;
+  grid-column: 1 / -1;
+  gap: 4px;
+  min-width: 0;
+}
+body.map-terminal .terminal-stage .node-listen,
+body.map-terminal .terminal-stage .node-dub,
+body.map-terminal .terminal-stage .node-battle {
+  flex: 1 1 0;
+  margin: 0;
+  min-height: 20px;
+  padding: 0.12em 0.2em;
+  font-size: 0.55rem;
+}
+body.map-terminal .terminal-stage .node.drill {
+  display: flex;
+  width: 88px;
+  min-height: 62px;
+  align-items: center;
+  justify-content: center;
+  color: #3a2a10;
+}
+
+@media (max-width: 720px) {
+  .map-world-button {
+    min-width: 188px;
+    grid-template-columns: 72px minmax(0, 1fr);
+    padding-right: 8px;
+  }
+  .map-world-button img { width: 72px; height: 52px; }
+  .map-world-button strong { font-size: 12px; }
+  body.map-terminal .terminal-stage {
+    width: min(100% - 16px, 620px);
+    max-height: none;
+    aspect-ratio: 1 / 1;
+  }
+  body.map-terminal .terminal-stage .node {
+    grid-template-columns: 40px minmax(0, 1fr);
+    width: 132px;
+    min-height: 54px;
+    padding: 4px 6px 4px 4px;
+  }
+  body.map-terminal .terminal-stage .node-main { grid-template-columns: 40px minmax(0, 1fr); }
+  body.map-terminal .terminal-stage .node-cover { width: 40px; }
+}
+
+@media (max-width: 460px) {
+  body.map-terminal .terminal-stage .node {
+    grid-template-columns: 36px minmax(0, 1fr);
+    width: 112px;
+    min-height: 48px;
+  }
+  body.map-terminal .terminal-stage .node-main { grid-template-columns: 36px minmax(0, 1fr); }
+  body.map-terminal .terminal-stage .node-cover { width: 36px; }
+  body.map-terminal .terminal-stage .episode-title { font-size: 0.64rem; }
+}
+
+/* ---- 集详情弹层（2026-09-12 选关改版）----
+ * 点击集卡片弹出：大封面 + 标题 + 进入故事 + 三个学习入口。
+ * TV/触屏双适配：按钮 ≥64px、焦点环走 tv.css。 */
+.episode-detail {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(8, 12, 24, 0.72);
+  backdrop-filter: blur(3px);
+  padding: 24px;
+}
+
+.episode-detail-card {
+  position: relative;
+  width: min(560px, 94vw);
+  max-height: 88vh;
+  overflow: auto;
+  text-align: center;
+  border-radius: 24px;
+  background: linear-gradient(180deg, rgba(30, 38, 66, 0.98), rgba(18, 24, 44, 0.98));
+  border: 2px solid rgba(255, 215, 106, 0.55);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5);
+  padding: clamp(18px, 3vw, 30px);
+  color: #fff;
+  font-family: "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+}
+
+.episode-detail-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  min-width: 48px;
+  min-height: 48px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  font-size: 18px;
+}
+
+.episode-detail-cover {
+  display: block;
+  width: min(320px, 72%);
+  margin: 0 auto 12px;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 3px solid rgba(255, 215, 106, 0.7);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+}
+
+.episode-detail-cover img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.episode-detail-cover.no-cover { display: none; }
+
+.episode-detail-number {
+  display: inline-block;
+  padding: 3px 14px;
+  border-radius: 999px;
+  background: rgba(255, 215, 106, 0.16);
+  border: 1px solid rgba(255, 215, 106, 0.6);
+  color: #ffd76a;
+  font-size: clamp(13px, 1.8vw, 16px);
+  margin-bottom: 8px;
+}
+
+.episode-detail-title {
+  margin: 0 0 4px;
+  font-size: clamp(22px, 3.4vw, 32px);
+  color: #ffd76a;
+}
+
+.episode-detail-en {
+  margin: 0 0 18px;
+  opacity: 0.85;
+  font-size: clamp(14px, 2vw, 18px);
+}
+
+.episode-detail-actions { display: grid; gap: 12px; }
+
+.episode-detail-primary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 68px;
+  border-radius: 18px;
+  background: linear-gradient(180deg, #ffd76a, #e8a13a);
+  color: #4a2f00;
+  font-size: clamp(17px, 2.4vw, 22px);
+  font-weight: 800;
+  text-decoration: none;
+  box-shadow: 0 8px 20px rgba(232, 161, 58, 0.35);
+}
+
+.episode-detail-options {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.episode-detail-option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  min-height: 64px;
+  border-radius: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: clamp(14px, 1.9vw, 17px);
+  font-weight: 700;
+  text-decoration: none;
+  padding: 6px;
+}
+
+.episode-detail-option:hover,
+.episode-detail-option:focus-visible,
+.episode-detail-primary:hover,
+.episode-detail-primary:focus-visible {
+  outline: none;
+  filter: brightness(1.12);
+  transform: translateY(-2px);
+  transition: transform 0.15s ease;
+}
+
+.episode-detail-close:hover,
+.episode-detail-close:focus-visible { outline: none; background: rgba(255, 255, 255, 0.25); }
+
+@media (max-width: 560px) {
+  .episode-detail-options { grid-template-columns: 1fr; }
+}
+
+/* ---- 2026-09-12 全屏改版 ----
+ * 路线舞台铺满视口：去掉 13rem 顶部预留、宽度上限、圆角外框；
+ * 顶栏/合辑条/辑信息行已从构建中移除，这里只做保险隐藏。 */
+
+#map-top,
+.page-head,
+.page-lock-msg {
+  display: none !important;
+}
+
+#map-track {
+  height: 100dvh;
+}
+
+body.map-terminal #map-track {
+  height: 100dvh;
+}
+
+body.map-terminal .terminal-stage {
+  width: 100%;
+  max-width: none;
+  max-height: none;
+  height: 100dvh;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* 音频控件浮在右上角 */
+#map-audio-float {
+  position: fixed;
+  z-index: 40;
+  top: 10px;
+  right: 12px;
+}
+
+#map-audio-float .app-audio-controls {
+  position: static;
+  display: inline-flex;
+  gap: 6px;
+}
+
+/* 切辑箭头更贴合全屏（半透明大热区） */
+#nav-prev,
+#nav-next {
+  opacity: 0.55;
+}
+#nav-prev:hover,
+#nav-next:hover,
+#nav-prev:focus-visible,
+#nav-next:focus-visible {
+  opacity: 1;
+}
+
+/* ---- 2026-09-12 底部辑信息条 ----
+ * 每张地图页下沿的半透明章节介绍（辑名/英文名/集数范围/进度），
+ * 纯展示不拦截点击，不占布局空间。 */
+.page-foot {
+  position: absolute;
+  z-index: 5;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 10px 16px 12px;
+  pointer-events: none;
+  background: linear-gradient(to top, rgba(10, 12, 22, 0.72), rgba(10, 12, 22, 0));
+  color: #fff;
+}
+
+.page-foot-title {
+  font-size: clamp(16px, 2.2vw, 22px);
+  color: #ffd76a;
+}
+
+.page-foot-en {
+  font-size: clamp(12px, 1.6vw, 15px);
+  opacity: 0.8;
+}
+
+.page-foot-range,
+.page-foot-count {
+  padding: 2px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 215, 106, 0.55);
+  background: rgba(15, 20, 36, 0.55);
+  font-size: clamp(11px, 1.5vw, 14px);
+  color: #fff3c4;
+}
+
+/* 全屏改版后底部辑信息条已承担上下文，滑动提示与其重叠 → 隐藏（元素保留防 JS 断链） */
+#map-hint {
+  display: none !important;
+}
+
+/* 图鉴入口浮标（音频控件左侧） */
+#map-dex-float {
+  position: fixed;
+  z-index: 40;
+  top: 12px;
+  right: 116px;
+  min-height: 40px;
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 2px solid rgba(255, 215, 106, 0.7);
+  background: rgba(15, 20, 36, 0.82);
+  color: #ffd76a;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+#map-dex-float:hover,
+#map-dex-float:focus-visible { background: rgba(255, 215, 106, 0.9); color: #4a2f00; outline: none; }

@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "assetGroup": "card-frames",
+  "zh": "图鉴妖怪卡框（铜/银/金/玉，中心透出）",
+  "sheet": {
+    "grid": {
+      "cols": 2,
+      "rows": 2
+    },
+    "cell": "512x512",
+    "sizeRequested": "1024x1024",
+    "providerActualSize": "1254x1254",
+    "normalizedSize": "1024x1024",
+    "normalizeNote": "provider returned square 1254x1254; aspect-preserving LANCZOS downscale to requested 1024x1024 before split",
+    "provider": "cliprox",
+    "model": "gpt-image-2",
+    "tlsVerified": true
+  },
+  "generation": {
+    "attempts": 1,
+    "rawSheet": "2d/card-frames-2x2-sheet.png",
+    "normalizedSheet": "2d/card-frames-2x2-sheet-1024.png",
+    "response": "2d/card-frames-2x2-sheet.response.attempt1.json",
+    "runnerManifest": "2d/manifest.json"
+  },
+  "prompt": "source/prompt.txt",
+  "transparency": {
+    "method": "provider returned REAL alpha PNG (corners and all four center windows alpha=0); no chroma key needed. Post-processing: sub-visible alpha(<16) zeroed, isolated faint specks(<25px, peak alpha<200) removed, solid(alpha>=64) bbox crop + exact 12px transparent pad",
+    "note": "prompt requested solid magenta background as chroma fallback; provider instead produced true transparency. alpha 1-2 red/yellow spill pixels present in raw (invisible) were removed by threshold",
+    "reports": [
+      "transparent/frame-bronze.alpha-report.json",
+      "transparent/frame-silver.alpha-report.json",
+      "transparent/frame-gold.alpha-report.json",
+      "transparent/frame-jade.alpha-report.json"
+    ]
+  },
+  "frames": [
+    {
+      "semantic": "bronze",
+      "zh": "铜框",
+      "published": "transparent/frame-bronze.png",
+      "sourceCell": "2d/split/part-01_512x512.png"
+    },
+    {
+      "semantic": "silver",
+      "zh": "银框",
+      "published": "transparent/frame-silver.png",
+      "sourceCell": "2d/split/part-02_512x512.png"
+    },
+    {
+      "semantic": "gold",
+      "zh": "金框",
+      "published": "transparent/frame-gold.png",
+      "sourceCell": "2d/split/part-03_512x512.png"
+    },
+    {
+      "semantic": "jade",
+      "zh": "玉框",
+      "published": "transparent/frame-jade.png",
+      "sourceCell": "2d/split/part-04_512x512.png"
+    }
+  ],
+  "qc": {
+    "split": "gpt-image-pipeline split_asset_sheet.py grid mode (deterministic halves, no --trim)",
+    "cells": 4,
+    "allFramesPass": true,
+    "checks": "corners transparent, center window 9-point transparent, zero fringe spill (red/magenta near transparency), zero visible pixels within 4px edge band, alpha 0-255, no yellow fringe on bronze/silver/jade, cut lines cross-checked (7 noise px only)",
+    "visualCheck": "all 4 frames inspected after processing: identical ornament design, distinct materials, centers empty, gold star sparkles preserved"
+  },
+  "sha256": {
+    "rawSheet": "0463b29f114be9b458004693d1c48ff773602fa617a7ffecf33a3a0cb349b172",
+    "normalizedSheet": "45af3ffa0eb4679c5c990707bdc0c9f2c6e75a08fdd3069f05ebc71c1a51e94c",
+    "frame-bronze.png": "8c661c8546a8d9629617c928ec4171642c5e85c82473cfe562f08b2b7432e89f",
+    "frame-silver.png": "03b999089f3aec4d351afea2510da19d917eaa07616b3fed8e79e905ae2b5b0f",
+    "frame-gold.png": "a1df3d085c3554d036a7afbf7fe0aa9b04d16d9700e9e6c5832ab0bc971969c2",
+    "frame-jade.png": "f316f06ab46b2c4dce3ac59b824a9701c98f85795bfdd313e3ceeb47b0d0c27b"
+  }
+}

@@ -350,6 +350,33 @@ button { cursor: pointer; }
 .result-score { color: var(--gold-soft); font-size: clamp(2.3rem, 8vw, 4.6rem); font-weight: 900; line-height: 1; }
 .result-actions { display: flex; gap: 12px; margin-top: 10px; flex-wrap: wrap; justify-content: center; }
 
+.lesson-game-invite {
+  position: fixed;
+  inset: 0;
+  z-index: 30;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  background: rgba(8, 6, 5, 0.72);
+  backdrop-filter: blur(4px);
+}
+.lesson-game-invite[hidden] { display: none !important; }
+.lesson-game-invite-card {
+  width: min(100%, 520px);
+  padding: clamp(22px, 5vw, 34px);
+  border: 1px solid rgba(233, 185, 73, 0.58);
+  border-radius: 22px;
+  background: linear-gradient(145deg, rgba(52, 35, 19, 0.98), rgba(24, 25, 27, 0.98));
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.45);
+  text-align: center;
+}
+.lesson-game-invite-kicker { margin: 0; color: var(--gold); font-size: .76rem; font-weight: 850; letter-spacing: .1em; text-transform: uppercase; }
+.lesson-game-invite-card h2 { margin: 8px 0 10px; color: var(--gold-soft); font-size: clamp(1.35rem, 4vw, 1.8rem); }
+.lesson-game-invite-card > p:not(.lesson-game-invite-kicker):not(.lesson-game-invite-status) { margin: 0; color: var(--muted); line-height: 1.65; }
+.lesson-game-invite-status { min-height: 1.5em; margin: 14px 0 0; color: var(--focus); font-size: .88rem; line-height: 1.5; }
+.lesson-game-invite-actions { display: flex; align-items: center; justify-content: center; gap: 10px; flex-wrap: wrap; margin-top: 20px; }
+.lesson-game-invite-actions .result-link { min-width: 150px; }
+
 .episode-reward-offer {
   width: min(100%, 680px);
   margin: 22px auto 0;

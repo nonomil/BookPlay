@@ -1,0 +1,75 @@
+{
+  "capturedAt": "2026-09-08T18:08:36+08:00",
+  "stage": "T00-T02-final-evidence",
+  "status": "partial",
+  "notes": [
+    "浏览器 DOM 样板已验证；真机、TV遥控、双指和屏幕录制仍待验。",
+    "主角速度为0.018、小怪游荡/追击为0.0012/0.0024（视口比例/秒，game.js 再乘 1/4），小怪按运动方向切换四向 GIF；主角和小怪的 idle/walk/attack 已分离，攻击期间停止移动。",
+    "当前工作区包含005交接包之后的未提交实现；本阶段只更新验收证据，不覆盖或回滚既有改动。",
+    "APK 1.0.14/versionCode 19 已核对；包内实际加载路径为 assets/public/engine，ep1/ep5 游戏语音索引均无缺失引用。"
+  ],
+  "tests": {
+    "npm": { "command": "npm.cmd test", "pass": 408, "fail": 0, "skipped": 0, "cancelled": 0, "todo": 0 },
+    "gameTargeted": { "command": "node --test prj/engine/game-core.test.mjs prj/engine/game-input.test.mjs prj/engine/game-page.test.mjs prj/engine/game-audio.test.mjs prj/engine/storybook-game-entry.test.mjs", "pass": 60, "fail": 0 },
+    "pythonTargeted": { "command": "python -X utf8 -m pytest -q prj/tests/test_game_audio_pipeline.py prj/tests/test_game_runtime_contract.py prj/tests/test_pack_android_builtin.py prj/tests/test_make_release.py prj/tests/test_episode_lesson_runtime.py", "pass": 37, "fail": 0 },
+    "packAudioRuntime": { "command": "python -X utf8 -m pytest -q prj/tests/test_stage_pack.py prj/tests/test_stage_pack_runtime.py prj/tests/test_pack_datapack.py prj/tests/test_pack_android_builtin.py prj/tests/test_game_audio_pipeline.py prj/tests/test_game_runtime_contract.py", "pass": 21, "fail": 0 },
+    "audioIndex": { "command": "python -X utf8 prj/tools/build_game_audio.py validate --eps 1,5", "ep1": "validate OK", "ep5": "validate OK" }
+  },
+  "browser": {
+    "environment": "Codex In-app Browser + local serve.py",
+    "baseUrl": "http://127.0.0.1:8810/engine/game.html",
+    "viewport": "1280x720",
+    "episodes": {
+      "ep1": {
+        "loaded": true,
+        "progress": "0 / 12",
+        "spawn": { "hero": "left: 27.5%; top: 40.5%;", "world": "translate3d(-768px, -806.4px, 0px)" },
+        "centralMove": { "beforeHero": "left: 27.5%; top: 40.5%;", "afterHero": "left: 27.95%; top: 40.5%;", "worldUnchanged": true },
+        "edgeMove": { "afterHero": "left: 32.69%; top: 40.5%;", "camera": "x=0.1569", "worldAfter": "translate3d(-803.3px, -806.4px, 0px)" }
+      },
+      "ep5": {
+        "loaded": true,
+        "progress": "0 / 12",
+        "spawn": { "hero": "left: 27.5%; top: 41.0%;", "world": "translate3d(-768px, -820.8px, 0px)" },
+        "centralMove": { "afterHero": "left: 27.5%; top: 41.813%;", "worldUnchanged": true },
+        "edgeMove": { "afterHero": "left: 27.5%; top: 46.75%;", "worldAfter": "translate3d(-768px, -856.8px, 0px)" }
+      }
+    },
+    "recording": "not available in this environment; numeric DOM assertions retained",
+    "dialogueClose": {
+      "opened": { "hidden": false, "locked": true, "text": "One day the rock split open." },
+      "closed": { "hidden": true, "locked": false, "dlg": null, "intent": { "x": 0, "y": 0 } }
+    }
+  },
+  "movementFix": {
+    "speedProfile": { "hero": 0.018, "monsterWander": 0.0012, "monsterChase": 0.0024 },
+    "browserEvidence": [
+      "ep5 初始小怪使用 south；等待自动运动后观察到 east/north 资源切换。",
+      "ep5 主角按下后切到 wukong-south-walk.gif；中央区世界 transform 保持 translate3d(-768px,-820.8px,0px)。",
+      "主角攻击时使用 wukong-south-attack.gif 且 moving=false；小怪可切换 east/north/west walk 资源。"
+    ],
+    "deviceStatus": "浏览器样板；真机/TV待验",
+    "actionSeparation": "hero/monster idle、walk、attack 三态四向资源；攻击期间不移动"
+  },
+  "artifacts": {
+    "apk": {
+      "path": "release/storyhall-jttw-mobile-debug.apk",
+      "version": "1.0.14",
+      "versionCode": 19,
+      "sha256": "6F001B80E1B6D98DEE1ECB46FE60F4F04838B789C90F292C66B8AC210D1486F7",
+      "zipTest": null,
+      "requiredPathsMissing": []
+    },
+    "stagePack": {
+      "path": "C:/Users/No'mi'l/AppData/Local/Temp/bookplay-jttw-pack-20260908/c01-ep1-ep5.zip",
+      "sha256": "504A966918186C752B74A754AFAB33D230BC4EB11D0089C24CF04547B1691FB8",
+      "zipEntries": 5702
+    }
+  },
+  "pending": [
+    "adb devices 当前无设备；真机 WebView 安装、输入手感、后台恢复、系统音量和离线语音",
+    "TV方向键/OK及实体双指移动+投掷",
+    "完整 ep1/ep5 屏幕录制与从地图到 NPC/Boss/返回的现场链路",
+    "视频原声按来源、时间段和试听记录提取，并为新编台词补配音"
+  ]
+}

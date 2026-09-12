@@ -2085,7 +2085,16 @@ async function playCurrentSentence() {
   if (ok) {
     if (listenMode) continueListenAfterSentence();
     else scheduleNextSentence();
+    return;
   }
+  const retry = () => {
+    document.removeEventListener("pointerdown", retry, true);
+    document.removeEventListener("keydown", retry, true);
+    window.BookPlayAudio?.unlock?.();
+    playCurrentSentence();
+  };
+  document.addEventListener("pointerdown", retry, { once: true, capture: true });
+  document.addEventListener("keydown", retry, { once: true, capture: true });
 }
 
 function playZhSentence() {

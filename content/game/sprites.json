@@ -1,105 +1,951 @@
 {
  "schemaVersion": 1,
- "comment": "降妖记精灵注册表：角色 id → 运行时帧/GIF 路径（相对数据包根，引擎页加载时加 ../ 前缀）。主角 4 人用 jttw-player-walkers 四向 walk+action GIF；c01 六小角色用 jttw-game-sprites 生成、GIF 已同步 content/assets/game-sprites。缺 id 时 battle-core 回退 walker GIF / 占位。",
+ "comment": "降妖记精灵注册表：角色 id → 运行时帧/GIF 路径（相对数据包根，引擎页加载时加 ../ 前缀）。ep1/ep5 样板已将四向资源拆为 idle / walk / attack，移动绝不挥兵器，投掷/撞击才播放单次攻击；缺 id 时 battle-core 回退 walker GIF / 占位。",
  "sprites": {
   "wukong": {
    "nameZh": "孙悟空",
-   "gif": "assets/generated/jttw-player-walkers/wukong/directions/wukong-south-walk-action.gif",
+   "gif": "assets/generated/jttw-player-walkers/wukong/directions/wukong-south-idle.png",
    "walkGifs": {
-    "south": "assets/generated/jttw-player-walkers/wukong/directions/wukong-south-walk-action.gif",
-    "west": "assets/generated/jttw-player-walkers/wukong/directions/wukong-west-walk-action.gif",
-    "east": "assets/generated/jttw-player-walkers/wukong/directions/wukong-east-walk-action.gif",
-    "north": "assets/generated/jttw-player-walkers/wukong/directions/wukong-north-walk-action.gif"
+    "south": "assets/generated/jttw-player-walkers/wukong/directions/wukong-south-walk.gif",
+    "west": "assets/generated/jttw-player-walkers/wukong/directions/wukong-west-walk.gif",
+    "east": "assets/generated/jttw-player-walkers/wukong/directions/wukong-east-walk.gif",
+    "north": "assets/generated/jttw-player-walkers/wukong/directions/wukong-north-walk.gif"
+   },
+   "idleFrames": {
+    "south": "assets/generated/jttw-player-walkers/wukong/directions/wukong-south-idle.png",
+    "west": "assets/generated/jttw-player-walkers/wukong/directions/wukong-west-idle.png",
+    "east": "assets/generated/jttw-player-walkers/wukong/directions/wukong-east-idle.png",
+    "north": "assets/generated/jttw-player-walkers/wukong/directions/wukong-north-idle.png"
+   },
+   "attackGifs": {
+    "south": "assets/generated/jttw-player-walkers/wukong/directions/wukong-south-attack.gif",
+    "west": "assets/generated/jttw-player-walkers/wukong/directions/wukong-west-attack.gif",
+    "east": "assets/generated/jttw-player-walkers/wukong/directions/wukong-east-attack.gif",
+    "north": "assets/generated/jttw-player-walkers/wukong/directions/wukong-north-attack.gif"
    }
   },
   "subodhi": {
    "nameZh": "菩提祖师",
-   "gif": "assets/generated/jttw-player-walkers/subodhi/directions/subodhi-south-walk-action.gif",
+   "gif": "assets/generated/jttw-player-walkers/subodhi/directions/subodhi-south-idle.png",
    "walkGifs": {
-    "south": "assets/generated/jttw-player-walkers/subodhi/directions/subodhi-south-walk-action.gif",
-    "west": "assets/generated/jttw-player-walkers/subodhi/directions/subodhi-west-walk-action.gif",
-    "east": "assets/generated/jttw-player-walkers/subodhi/directions/subodhi-east-walk-action.gif",
-    "north": "assets/generated/jttw-player-walkers/subodhi/directions/subodhi-north-walk-action.gif"
+    "south": "assets/generated/jttw-player-walkers/subodhi/directions/subodhi-south-walk.gif",
+    "west": "assets/generated/jttw-player-walkers/subodhi/directions/subodhi-west-walk.gif",
+    "east": "assets/generated/jttw-player-walkers/subodhi/directions/subodhi-east-walk.gif",
+    "north": "assets/generated/jttw-player-walkers/subodhi/directions/subodhi-north-walk.gif"
+   },
+   "idleFrames": {
+    "south": "assets/generated/jttw-player-walkers/subodhi/directions/subodhi-south-idle.png",
+    "west": "assets/generated/jttw-player-walkers/subodhi/directions/subodhi-west-idle.png",
+    "east": "assets/generated/jttw-player-walkers/subodhi/directions/subodhi-east-idle.png",
+    "north": "assets/generated/jttw-player-walkers/subodhi/directions/subodhi-north-idle.png"
+   },
+   "attackGifs": {
+    "south": "assets/generated/jttw-player-walkers/subodhi/directions/subodhi-south-attack.gif",
+    "west": "assets/generated/jttw-player-walkers/subodhi/directions/subodhi-west-attack.gif",
+    "east": "assets/generated/jttw-player-walkers/subodhi/directions/subodhi-east-attack.gif",
+    "north": "assets/generated/jttw-player-walkers/subodhi/directions/subodhi-north-attack.gif"
    }
   },
   "chaosdemon": {
    "nameZh": "混世魔王",
-   "gif": "assets/generated/jttw-player-walkers/chaosdemon/directions/chaosdemon-south-walk-action.gif",
+   "gif": "assets/generated/jttw-player-walkers/chaosdemon/directions/chaosdemon-south-idle.png",
    "walkGifs": {
-    "south": "assets/generated/jttw-player-walkers/chaosdemon/directions/chaosdemon-south-walk-action.gif",
-    "west": "assets/generated/jttw-player-walkers/chaosdemon/directions/chaosdemon-west-walk-action.gif",
-    "east": "assets/generated/jttw-player-walkers/chaosdemon/directions/chaosdemon-east-walk-action.gif",
-    "north": "assets/generated/jttw-player-walkers/chaosdemon/directions/chaosdemon-north-walk-action.gif"
+    "south": "assets/generated/jttw-player-walkers/chaosdemon/directions/chaosdemon-south-walk.gif",
+    "west": "assets/generated/jttw-player-walkers/chaosdemon/directions/chaosdemon-west-walk.gif",
+    "east": "assets/generated/jttw-player-walkers/chaosdemon/directions/chaosdemon-east-walk.gif",
+    "north": "assets/generated/jttw-player-walkers/chaosdemon/directions/chaosdemon-north-walk.gif"
+   },
+   "idleFrames": {
+    "south": "assets/generated/jttw-player-walkers/chaosdemon/directions/chaosdemon-south-idle.png",
+    "west": "assets/generated/jttw-player-walkers/chaosdemon/directions/chaosdemon-west-idle.png",
+    "east": "assets/generated/jttw-player-walkers/chaosdemon/directions/chaosdemon-east-idle.png",
+    "north": "assets/generated/jttw-player-walkers/chaosdemon/directions/chaosdemon-north-idle.png"
+   },
+   "attackGifs": {
+    "south": "assets/generated/jttw-player-walkers/chaosdemon/directions/chaosdemon-south-attack.gif",
+    "west": "assets/generated/jttw-player-walkers/chaosdemon/directions/chaosdemon-west-attack.gif",
+    "east": "assets/generated/jttw-player-walkers/chaosdemon/directions/chaosdemon-east-attack.gif",
+    "north": "assets/generated/jttw-player-walkers/chaosdemon/directions/chaosdemon-north-attack.gif"
    }
   },
   "dragonking": {
    "nameZh": "东海龙王",
-   "gif": "assets/generated/jttw-player-walkers/dragonking/directions/dragonking-south-walk-action.gif",
+   "gif": "assets/generated/jttw-player-walkers/dragonking/directions/dragonking-south-idle.png",
    "walkGifs": {
-    "south": "assets/generated/jttw-player-walkers/dragonking/directions/dragonking-south-walk-action.gif",
-    "west": "assets/generated/jttw-player-walkers/dragonking/directions/dragonking-west-walk-action.gif",
-    "east": "assets/generated/jttw-player-walkers/dragonking/directions/dragonking-east-walk-action.gif",
-    "north": "assets/generated/jttw-player-walkers/dragonking/directions/dragonking-north-walk-action.gif"
+    "south": "assets/generated/jttw-player-walkers/dragonking/directions/dragonking-south-walk.gif",
+    "west": "assets/generated/jttw-player-walkers/dragonking/directions/dragonking-west-walk.gif",
+    "east": "assets/generated/jttw-player-walkers/dragonking/directions/dragonking-east-walk.gif",
+    "north": "assets/generated/jttw-player-walkers/dragonking/directions/dragonking-north-walk.gif"
+   },
+   "idleFrames": {
+    "south": "assets/generated/jttw-player-walkers/dragonking/directions/dragonking-south-idle.png",
+    "west": "assets/generated/jttw-player-walkers/dragonking/directions/dragonking-west-idle.png",
+    "east": "assets/generated/jttw-player-walkers/dragonking/directions/dragonking-east-idle.png",
+    "north": "assets/generated/jttw-player-walkers/dragonking/directions/dragonking-north-idle.png"
+   },
+   "attackGifs": {
+    "south": "assets/generated/jttw-player-walkers/dragonking/directions/dragonking-south-attack.gif",
+    "west": "assets/generated/jttw-player-walkers/dragonking/directions/dragonking-west-attack.gif",
+    "east": "assets/generated/jttw-player-walkers/dragonking/directions/dragonking-east-attack.gif",
+    "north": "assets/generated/jttw-player-walkers/dragonking/directions/dragonking-north-attack.gif"
    }
   },
   "monkey-minor": {
    "nameZh": "小猴子",
-   "gif": "assets/game-sprites/monkey-minor/monkey-minor-south-walk-action.gif",
+   "gif": "assets/game-sprites/monkey-minor/monkey-minor-south-idle.png",
    "walkGifs": {
-    "south": "assets/game-sprites/monkey-minor/monkey-minor-south-walk-action.gif",
-    "west": "assets/game-sprites/monkey-minor/monkey-minor-west-walk-action.gif",
-    "east": "assets/game-sprites/monkey-minor/monkey-minor-east-walk-action.gif",
-    "north": "assets/game-sprites/monkey-minor/monkey-minor-north-walk-action.gif"
+    "south": "assets/game-sprites/monkey-minor/monkey-minor-south-walk.gif",
+    "west": "assets/game-sprites/monkey-minor/monkey-minor-west-walk.gif",
+    "east": "assets/game-sprites/monkey-minor/monkey-minor-east-walk.gif",
+    "north": "assets/game-sprites/monkey-minor/monkey-minor-north-walk.gif"
+   },
+   "idleFrames": {
+    "south": "assets/game-sprites/monkey-minor/monkey-minor-south-idle.png",
+    "west": "assets/game-sprites/monkey-minor/monkey-minor-west-idle.png",
+    "east": "assets/game-sprites/monkey-minor/monkey-minor-east-idle.png",
+    "north": "assets/game-sprites/monkey-minor/monkey-minor-north-idle.png"
+   },
+   "attackGifs": {
+    "south": "assets/game-sprites/monkey-minor/monkey-minor-south-attack.gif",
+    "west": "assets/game-sprites/monkey-minor/monkey-minor-west-attack.gif",
+    "east": "assets/game-sprites/monkey-minor/monkey-minor-east-attack.gif",
+    "north": "assets/game-sprites/monkey-minor/monkey-minor-north-attack.gif"
    }
   },
   "subodhi-disciple": {
    "nameZh": "道童",
-   "gif": "assets/game-sprites/subodhi-disciple/subodhi-disciple-south-walk-action.gif",
+   "gif": "assets/game-sprites/subodhi-disciple/subodhi-disciple-south-idle.png",
    "walkGifs": {
-    "south": "assets/game-sprites/subodhi-disciple/subodhi-disciple-south-walk-action.gif",
-    "west": "assets/game-sprites/subodhi-disciple/subodhi-disciple-west-walk-action.gif",
-    "east": "assets/game-sprites/subodhi-disciple/subodhi-disciple-east-walk-action.gif",
-    "north": "assets/game-sprites/subodhi-disciple/subodhi-disciple-north-walk-action.gif"
+    "south": "assets/game-sprites/subodhi-disciple/subodhi-disciple-south-walk.gif",
+    "west": "assets/game-sprites/subodhi-disciple/subodhi-disciple-west-walk.gif",
+    "east": "assets/game-sprites/subodhi-disciple/subodhi-disciple-east-walk.gif",
+    "north": "assets/game-sprites/subodhi-disciple/subodhi-disciple-north-walk.gif"
+   },
+   "idleFrames": {
+    "south": "assets/game-sprites/subodhi-disciple/subodhi-disciple-south-idle.png",
+    "west": "assets/game-sprites/subodhi-disciple/subodhi-disciple-west-idle.png",
+    "east": "assets/game-sprites/subodhi-disciple/subodhi-disciple-east-idle.png",
+    "north": "assets/game-sprites/subodhi-disciple/subodhi-disciple-north-idle.png"
+   },
+   "attackGifs": {
+    "south": "assets/game-sprites/subodhi-disciple/subodhi-disciple-south-attack.gif",
+    "west": "assets/game-sprites/subodhi-disciple/subodhi-disciple-west-attack.gif",
+    "east": "assets/game-sprites/subodhi-disciple/subodhi-disciple-east-attack.gif",
+    "north": "assets/game-sprites/subodhi-disciple/subodhi-disciple-north-attack.gif"
    }
   },
   "chaosdemon-minion": {
    "nameZh": "水妖",
-   "gif": "assets/game-sprites/chaosdemon-minion/chaosdemon-minion-south-walk-action.gif",
+   "gif": "assets/game-sprites/chaosdemon-minion/chaosdemon-minion-south-idle.png",
    "walkGifs": {
-    "south": "assets/game-sprites/chaosdemon-minion/chaosdemon-minion-south-walk-action.gif",
-    "west": "assets/game-sprites/chaosdemon-minion/chaosdemon-minion-west-walk-action.gif",
-    "east": "assets/game-sprites/chaosdemon-minion/chaosdemon-minion-east-walk-action.gif",
-    "north": "assets/game-sprites/chaosdemon-minion/chaosdemon-minion-north-walk-action.gif"
+    "south": "assets/game-sprites/chaosdemon-minion/chaosdemon-minion-south-walk.gif",
+    "west": "assets/game-sprites/chaosdemon-minion/chaosdemon-minion-west-walk.gif",
+    "east": "assets/game-sprites/chaosdemon-minion/chaosdemon-minion-east-walk.gif",
+    "north": "assets/game-sprites/chaosdemon-minion/chaosdemon-minion-north-walk.gif"
+   },
+   "idleFrames": {
+    "south": "assets/game-sprites/chaosdemon-minion/chaosdemon-minion-south-idle.png",
+    "west": "assets/game-sprites/chaosdemon-minion/chaosdemon-minion-west-idle.png",
+    "east": "assets/game-sprites/chaosdemon-minion/chaosdemon-minion-east-idle.png",
+    "north": "assets/game-sprites/chaosdemon-minion/chaosdemon-minion-north-idle.png"
+   },
+   "attackGifs": {
+    "south": "assets/game-sprites/chaosdemon-minion/chaosdemon-minion-south-attack.gif",
+    "west": "assets/game-sprites/chaosdemon-minion/chaosdemon-minion-west-attack.gif",
+    "east": "assets/game-sprites/chaosdemon-minion/chaosdemon-minion-east-attack.gif",
+    "north": "assets/game-sprites/chaosdemon-minion/chaosdemon-minion-north-attack.gif"
    }
   },
   "dragonking-soldier": {
    "nameZh": "虾兵",
-   "gif": "assets/game-sprites/dragonking-soldier/dragonking-soldier-south-walk-action.gif",
+   "gif": "assets/game-sprites/dragonking-soldier/dragonking-soldier-south-idle.png",
    "walkGifs": {
-    "south": "assets/game-sprites/dragonking-soldier/dragonking-soldier-south-walk-action.gif",
-    "west": "assets/game-sprites/dragonking-soldier/dragonking-soldier-west-walk-action.gif",
-    "east": "assets/game-sprites/dragonking-soldier/dragonking-soldier-east-walk-action.gif",
-    "north": "assets/game-sprites/dragonking-soldier/dragonking-soldier-north-walk-action.gif"
+    "south": "assets/game-sprites/dragonking-soldier/dragonking-soldier-south-walk.gif",
+    "west": "assets/game-sprites/dragonking-soldier/dragonking-soldier-west-walk.gif",
+    "east": "assets/game-sprites/dragonking-soldier/dragonking-soldier-east-walk.gif",
+    "north": "assets/game-sprites/dragonking-soldier/dragonking-soldier-north-walk.gif"
+   },
+   "idleFrames": {
+    "south": "assets/game-sprites/dragonking-soldier/dragonking-soldier-south-idle.png",
+    "west": "assets/game-sprites/dragonking-soldier/dragonking-soldier-west-idle.png",
+    "east": "assets/game-sprites/dragonking-soldier/dragonking-soldier-east-idle.png",
+    "north": "assets/game-sprites/dragonking-soldier/dragonking-soldier-north-idle.png"
+   },
+   "attackGifs": {
+    "south": "assets/game-sprites/dragonking-soldier/dragonking-soldier-south-attack.gif",
+    "west": "assets/game-sprites/dragonking-soldier/dragonking-soldier-west-attack.gif",
+    "east": "assets/game-sprites/dragonking-soldier/dragonking-soldier-east-attack.gif",
+    "north": "assets/game-sprites/dragonking-soldier/dragonking-soldier-north-attack.gif"
    }
   },
   "underworld-clerk": {
    "nameZh": "阴差",
-   "gif": "assets/game-sprites/underworld-clerk/underworld-clerk-south-walk-action.gif",
+   "gif": "assets/game-sprites/underworld-clerk/underworld-clerk-south-idle.png",
    "walkGifs": {
-    "south": "assets/game-sprites/underworld-clerk/underworld-clerk-south-walk-action.gif",
-    "west": "assets/game-sprites/underworld-clerk/underworld-clerk-west-walk-action.gif",
-    "east": "assets/game-sprites/underworld-clerk/underworld-clerk-east-walk-action.gif",
-    "north": "assets/game-sprites/underworld-clerk/underworld-clerk-north-walk-action.gif"
+    "south": "assets/game-sprites/underworld-clerk/underworld-clerk-south-walk.gif",
+    "west": "assets/game-sprites/underworld-clerk/underworld-clerk-west-walk.gif",
+    "east": "assets/game-sprites/underworld-clerk/underworld-clerk-east-walk.gif",
+    "north": "assets/game-sprites/underworld-clerk/underworld-clerk-north-walk.gif"
+   },
+   "idleFrames": {
+    "south": "assets/game-sprites/underworld-clerk/underworld-clerk-south-idle.png",
+    "west": "assets/game-sprites/underworld-clerk/underworld-clerk-west-idle.png",
+    "east": "assets/game-sprites/underworld-clerk/underworld-clerk-east-idle.png",
+    "north": "assets/game-sprites/underworld-clerk/underworld-clerk-north-idle.png"
+   },
+   "attackGifs": {
+    "south": "assets/game-sprites/underworld-clerk/underworld-clerk-south-attack.gif",
+    "west": "assets/game-sprites/underworld-clerk/underworld-clerk-west-attack.gif",
+    "east": "assets/game-sprites/underworld-clerk/underworld-clerk-east-attack.gif",
+    "north": "assets/game-sprites/underworld-clerk/underworld-clerk-north-attack.gif"
    }
   },
   "imp": {
    "nameZh": "小妖",
-   "gif": "assets/game-sprites/imp/imp-south-walk-action.gif",
+   "gif": "assets/game-sprites/imp/imp-south-idle.png",
    "walkGifs": {
-    "south": "assets/game-sprites/imp/imp-south-walk-action.gif",
-    "west": "assets/game-sprites/imp/imp-west-walk-action.gif",
-    "east": "assets/game-sprites/imp/imp-east-walk-action.gif",
-    "north": "assets/game-sprites/imp/imp-north-walk-action.gif"
+    "south": "assets/game-sprites/imp/imp-south-walk.gif",
+    "west": "assets/game-sprites/imp/imp-west-walk.gif",
+    "east": "assets/game-sprites/imp/imp-east-walk.gif",
+    "north": "assets/game-sprites/imp/imp-north-walk.gif"
+   },
+   "idleFrames": {
+    "south": "assets/game-sprites/imp/imp-south-idle.png",
+    "west": "assets/game-sprites/imp/imp-west-idle.png",
+    "east": "assets/game-sprites/imp/imp-east-idle.png",
+    "north": "assets/game-sprites/imp/imp-north-idle.png"
+   },
+   "attackGifs": {
+    "south": "assets/game-sprites/imp/imp-south-attack.gif",
+    "west": "assets/game-sprites/imp/imp-west-attack.gif",
+    "east": "assets/game-sprites/imp/imp-east-attack.gif",
+    "north": "assets/game-sprites/imp/imp-north-attack.gif"
+   }
+  },
+  "bajie": {
+   "nameZh": "猪八戒",
+   "gif": "assets/generated/jttw-player-walkers/bajie/directions/bajie-south-idle.png",
+   "walkGifs": {
+    "south": "assets/generated/jttw-player-walkers/bajie/bajie-walk.gif",
+    "west": "assets/generated/jttw-player-walkers/bajie/bajie-walk.gif",
+    "east": "assets/generated/jttw-player-walkers/bajie/bajie-walk.gif",
+    "north": "assets/generated/jttw-player-walkers/bajie/bajie-walk.gif"
+   },
+   "idleFrames": {
+    "south": "assets/generated/jttw-player-walkers/bajie/directions/bajie-south-idle.png",
+    "west": "assets/generated/jttw-player-walkers/bajie/directions/bajie-west-idle.png",
+    "east": "assets/generated/jttw-player-walkers/bajie/directions/bajie-east-idle.png",
+    "north": "assets/generated/jttw-player-walkers/bajie/directions/bajie-north-idle.png"
+   },
+   "attackGifs": {
+    "south": "assets/generated/jttw-player-walkers/bajie/directions/bajie-south-idle.png",
+    "west": "assets/generated/jttw-player-walkers/bajie/directions/bajie-west-idle.png",
+    "east": "assets/generated/jttw-player-walkers/bajie/directions/bajie-east-idle.png",
+    "north": "assets/generated/jttw-player-walkers/bajie/directions/bajie-north-idle.png"
+   }
+  },
+  "whitebone": {
+   "nameZh": "白骨夫人",
+   "gif": "assets/generated/jttw-player-walkers/whitebone/directions/whitebone-south-idle.png",
+   "walkGifs": {
+    "south": "assets/generated/jttw-player-walkers/whitebone/whitebone-walk.gif",
+    "west": "assets/generated/jttw-player-walkers/whitebone/whitebone-walk.gif",
+    "east": "assets/generated/jttw-player-walkers/whitebone/whitebone-walk.gif",
+    "north": "assets/generated/jttw-player-walkers/whitebone/whitebone-walk.gif"
+   },
+   "idleFrames": {
+    "south": "assets/generated/jttw-player-walkers/whitebone/directions/whitebone-south-idle.png",
+    "west": "assets/generated/jttw-player-walkers/whitebone/directions/whitebone-west-idle.png",
+    "east": "assets/generated/jttw-player-walkers/whitebone/directions/whitebone-east-idle.png",
+    "north": "assets/generated/jttw-player-walkers/whitebone/directions/whitebone-north-idle.png"
+   },
+   "attackGifs": {
+    "south": "assets/generated/jttw-player-walkers/whitebone/directions/whitebone-south-idle.png",
+    "west": "assets/generated/jttw-player-walkers/whitebone/directions/whitebone-west-idle.png",
+    "east": "assets/generated/jttw-player-walkers/whitebone/directions/whitebone-east-idle.png",
+    "north": "assets/generated/jttw-player-walkers/whitebone/directions/whitebone-north-idle.png"
+   }
+  },
+  "yellowwind": {
+   "nameZh": "黄风大王",
+   "gif": "assets/generated/jttw-player-walkers/yellowwind/directions/yellowwind-south-idle.png",
+   "walkGifs": {
+    "south": "assets/generated/jttw-player-walkers/yellowwind/yellowwind-walk.gif",
+    "west": "assets/generated/jttw-player-walkers/yellowwind/yellowwind-walk.gif",
+    "east": "assets/generated/jttw-player-walkers/yellowwind/yellowwind-walk.gif",
+    "north": "assets/generated/jttw-player-walkers/yellowwind/yellowwind-walk.gif"
+   },
+   "idleFrames": {
+    "south": "assets/generated/jttw-player-walkers/yellowwind/directions/yellowwind-south-idle.png",
+    "west": "assets/generated/jttw-player-walkers/yellowwind/directions/yellowwind-west-idle.png",
+    "east": "assets/generated/jttw-player-walkers/yellowwind/directions/yellowwind-east-idle.png",
+    "north": "assets/generated/jttw-player-walkers/yellowwind/directions/yellowwind-north-idle.png"
+   },
+   "attackGifs": {
+    "south": "assets/generated/jttw-player-walkers/yellowwind/directions/yellowwind-south-idle.png",
+    "west": "assets/generated/jttw-player-walkers/yellowwind/directions/yellowwind-west-idle.png",
+    "east": "assets/generated/jttw-player-walkers/yellowwind/directions/yellowwind-east-idle.png",
+    "north": "assets/generated/jttw-player-walkers/yellowwind/directions/yellowwind-north-idle.png"
+   }
+  },
+  "zhenyuan": {
+   "nameZh": "镇元大仙",
+   "gif": "assets/generated/jttw-player-walkers/zhenyuan/directions/zhenyuan-south-idle.png",
+   "walkGifs": {
+    "south": "assets/generated/jttw-player-walkers/zhenyuan/zhenyuan-walk.gif",
+    "west": "assets/generated/jttw-player-walkers/zhenyuan/zhenyuan-walk.gif",
+    "east": "assets/generated/jttw-player-walkers/zhenyuan/zhenyuan-walk.gif",
+    "north": "assets/generated/jttw-player-walkers/zhenyuan/zhenyuan-walk.gif"
+   },
+   "idleFrames": {
+    "south": "assets/generated/jttw-player-walkers/zhenyuan/directions/zhenyuan-south-idle.png",
+    "west": "assets/generated/jttw-player-walkers/zhenyuan/directions/zhenyuan-west-idle.png",
+    "east": "assets/generated/jttw-player-walkers/zhenyuan/directions/zhenyuan-east-idle.png",
+    "north": "assets/generated/jttw-player-walkers/zhenyuan/directions/zhenyuan-north-idle.png"
+   },
+   "attackGifs": {
+    "south": "assets/generated/jttw-player-walkers/zhenyuan/directions/zhenyuan-south-idle.png",
+    "west": "assets/generated/jttw-player-walkers/zhenyuan/directions/zhenyuan-west-idle.png",
+    "east": "assets/generated/jttw-player-walkers/zhenyuan/directions/zhenyuan-east-idle.png",
+    "north": "assets/generated/jttw-player-walkers/zhenyuan/directions/zhenyuan-north-idle.png"
+   }
+  },
+  "blackwind": {
+   "nameZh": "黑风王",
+   "gif": "assets/generated/jttw-player-walkers/blackwind/directions/blackwind-south-idle.png",
+   "walkGifs": {
+    "south": "assets/generated/jttw-player-walkers/blackwind/blackwind-walk.gif",
+    "west": "assets/generated/jttw-player-walkers/blackwind/blackwind-walk.gif",
+    "east": "assets/generated/jttw-player-walkers/blackwind/blackwind-walk.gif",
+    "north": "assets/generated/jttw-player-walkers/blackwind/blackwind-walk.gif"
+   },
+   "idleFrames": {
+    "south": "assets/generated/jttw-player-walkers/blackwind/directions/blackwind-south-idle.png",
+    "west": "assets/generated/jttw-player-walkers/blackwind/directions/blackwind-west-idle.png",
+    "east": "assets/generated/jttw-player-walkers/blackwind/directions/blackwind-east-idle.png",
+    "north": "assets/generated/jttw-player-walkers/blackwind/directions/blackwind-north-idle.png"
+   },
+   "attackGifs": {
+    "south": "assets/generated/jttw-player-walkers/blackwind/directions/blackwind-south-idle.png",
+    "west": "assets/generated/jttw-player-walkers/blackwind/directions/blackwind-west-idle.png",
+    "east": "assets/generated/jttw-player-walkers/blackwind/directions/blackwind-east-idle.png",
+    "north": "assets/generated/jttw-player-walkers/blackwind/directions/blackwind-north-idle.png"
+   }
+  },
+  "goldenhorn": {
+   "nameZh": "金角大王",
+   "gif": "assets/generated/jttw-player-walkers/goldenhorn/directions/goldenhorn-south-idle.png",
+   "walkGifs": {
+    "south": "assets/generated/jttw-player-walkers/goldenhorn/goldenhorn-walk.gif",
+    "west": "assets/generated/jttw-player-walkers/goldenhorn/goldenhorn-walk.gif",
+    "east": "assets/generated/jttw-player-walkers/goldenhorn/goldenhorn-walk.gif",
+    "north": "assets/generated/jttw-player-walkers/goldenhorn/goldenhorn-walk.gif"
+   },
+   "idleFrames": {
+    "south": "assets/generated/jttw-player-walkers/goldenhorn/directions/goldenhorn-south-idle.png",
+    "west": "assets/generated/jttw-player-walkers/goldenhorn/directions/goldenhorn-west-idle.png",
+    "east": "assets/generated/jttw-player-walkers/goldenhorn/directions/goldenhorn-east-idle.png",
+    "north": "assets/generated/jttw-player-walkers/goldenhorn/directions/goldenhorn-north-idle.png"
+   },
+   "attackGifs": {
+    "south": "assets/generated/jttw-player-walkers/goldenhorn/directions/goldenhorn-south-idle.png",
+    "west": "assets/generated/jttw-player-walkers/goldenhorn/directions/goldenhorn-west-idle.png",
+    "east": "assets/generated/jttw-player-walkers/goldenhorn/directions/goldenhorn-east-idle.png",
+    "north": "assets/generated/jttw-player-walkers/goldenhorn/directions/goldenhorn-north-idle.png"
+   }
+  },
+  "shawujing": {
+   "nameZh": "沙僧",
+   "gif": "assets/generated/jttw-player-walkers/shawujing/directions/shawujing-south-idle.png",
+   "walkGifs": {
+    "south": "assets/generated/jttw-player-walkers/shawujing/shawujing-walk.gif",
+    "west": "assets/generated/jttw-player-walkers/shawujing/shawujing-walk.gif",
+    "east": "assets/generated/jttw-player-walkers/shawujing/shawujing-walk.gif",
+    "north": "assets/generated/jttw-player-walkers/shawujing/shawujing-walk.gif"
+   },
+   "idleFrames": {
+    "south": "assets/generated/jttw-player-walkers/shawujing/directions/shawujing-south-idle.png",
+    "west": "assets/generated/jttw-player-walkers/shawujing/directions/shawujing-west-idle.png",
+    "east": "assets/generated/jttw-player-walkers/shawujing/directions/shawujing-east-idle.png",
+    "north": "assets/generated/jttw-player-walkers/shawujing/directions/shawujing-north-idle.png"
+   },
+   "attackGifs": {
+    "south": "assets/generated/jttw-player-walkers/shawujing/directions/shawujing-south-idle.png",
+    "west": "assets/generated/jttw-player-walkers/shawujing/directions/shawujing-west-idle.png",
+    "east": "assets/generated/jttw-player-walkers/shawujing/directions/shawujing-east-idle.png",
+    "north": "assets/generated/jttw-player-walkers/shawujing/directions/shawujing-north-idle.png"
+   }
+  },
+  "whitedragonhorse": {
+   "nameZh": "白龙马",
+   "gif": "assets/generated/jttw-player-walkers/whitedragonhorse/directions/whitedragonhorse-south-idle.png",
+   "walkGifs": {
+    "south": "assets/generated/jttw-player-walkers/whitedragonhorse/whitedragonhorse-walk.gif",
+    "west": "assets/generated/jttw-player-walkers/whitedragonhorse/whitedragonhorse-walk.gif",
+    "east": "assets/generated/jttw-player-walkers/whitedragonhorse/whitedragonhorse-walk.gif",
+    "north": "assets/generated/jttw-player-walkers/whitedragonhorse/whitedragonhorse-walk.gif"
+   },
+   "idleFrames": {
+    "south": "assets/generated/jttw-player-walkers/whitedragonhorse/directions/whitedragonhorse-south-idle.png",
+    "west": "assets/generated/jttw-player-walkers/whitedragonhorse/directions/whitedragonhorse-west-idle.png",
+    "east": "assets/generated/jttw-player-walkers/whitedragonhorse/directions/whitedragonhorse-east-idle.png",
+    "north": "assets/generated/jttw-player-walkers/whitedragonhorse/directions/whitedragonhorse-north-idle.png"
+   },
+   "attackGifs": {
+    "south": "assets/generated/jttw-player-walkers/whitedragonhorse/directions/whitedragonhorse-south-idle.png",
+    "west": "assets/generated/jttw-player-walkers/whitedragonhorse/directions/whitedragonhorse-west-idle.png",
+    "east": "assets/generated/jttw-player-walkers/whitedragonhorse/directions/whitedragonhorse-east-idle.png",
+    "north": "assets/generated/jttw-player-walkers/whitedragonhorse/directions/whitedragonhorse-north-idle.png"
+   }
+  },
+  "tang": {
+   "nameZh": "唐僧",
+   "gif": "assets/generated/jttw-player-walkers/tang/directions/tang-south-idle.png",
+   "walkGifs": {
+    "south": "assets/generated/jttw-player-walkers/tang/tang-walk.gif",
+    "west": "assets/generated/jttw-player-walkers/tang/tang-walk.gif",
+    "east": "assets/generated/jttw-player-walkers/tang/tang-walk.gif",
+    "north": "assets/generated/jttw-player-walkers/tang/tang-walk.gif"
+   },
+   "idleFrames": {
+    "south": "assets/generated/jttw-player-walkers/tang/directions/tang-south-idle.png",
+    "west": "assets/generated/jttw-player-walkers/tang/directions/tang-west-idle.png",
+    "east": "assets/generated/jttw-player-walkers/tang/directions/tang-east-idle.png",
+    "north": "assets/generated/jttw-player-walkers/tang/directions/tang-north-idle.png"
+   },
+   "attackGifs": {
+    "south": "assets/generated/jttw-player-walkers/tang/directions/tang-south-idle.png",
+    "west": "assets/generated/jttw-player-walkers/tang/directions/tang-west-idle.png",
+    "east": "assets/generated/jttw-player-walkers/tang/directions/tang-east-idle.png",
+    "north": "assets/generated/jttw-player-walkers/tang/directions/tang-north-idle.png"
+   }
+  },
+  "hundredflowers": {
+   "nameZh": "百花公主",
+   "gif": "assets/generated/jttw-player-walkers/hundredflowers/directions/hundredflowers-south-idle.png",
+   "walkGifs": {
+    "south": "assets/generated/jttw-player-walkers/hundredflowers/hundredflowers-walk.gif",
+    "west": "assets/generated/jttw-player-walkers/hundredflowers/hundredflowers-walk.gif",
+    "east": "assets/generated/jttw-player-walkers/hundredflowers/hundredflowers-walk.gif",
+    "north": "assets/generated/jttw-player-walkers/hundredflowers/hundredflowers-walk.gif"
+   },
+   "idleFrames": {
+    "south": "assets/generated/jttw-player-walkers/hundredflowers/directions/hundredflowers-south-idle.png",
+    "west": "assets/generated/jttw-player-walkers/hundredflowers/directions/hundredflowers-west-idle.png",
+    "east": "assets/generated/jttw-player-walkers/hundredflowers/directions/hundredflowers-east-idle.png",
+    "north": "assets/generated/jttw-player-walkers/hundredflowers/directions/hundredflowers-north-idle.png"
+   },
+   "attackGifs": {
+    "south": "assets/generated/jttw-player-walkers/hundredflowers/directions/hundredflowers-south-idle.png",
+    "west": "assets/generated/jttw-player-walkers/hundredflowers/directions/hundredflowers-west-idle.png",
+    "east": "assets/generated/jttw-player-walkers/hundredflowers/directions/hundredflowers-east-idle.png",
+    "north": "assets/generated/jttw-player-walkers/hundredflowers/directions/hundredflowers-north-idle.png"
+   }
+  },
+  "heaven-captain": {
+   "nameZh": "天将",
+   "gif": "assets/generated/jttw-player-walkers/heaven-captain/directions/heaven-captain-south-walk.gif",
+   "walkGifs": {
+    "south": "assets/generated/jttw-player-walkers/heaven-captain/directions/heaven-captain-south-walk.gif",
+    "west": "assets/generated/jttw-player-walkers/heaven-captain/directions/heaven-captain-west-walk.gif",
+    "east": "assets/generated/jttw-player-walkers/heaven-captain/directions/heaven-captain-east-walk.gif",
+    "north": "assets/generated/jttw-player-walkers/heaven-captain/directions/heaven-captain-north-walk.gif"
+   },
+   "idleFrames": {
+    "south": "assets/generated/jttw-player-walkers/heaven-captain/directions/heaven-captain-south-walk.gif",
+    "west": "assets/generated/jttw-player-walkers/heaven-captain/directions/heaven-captain-west-walk.gif",
+    "east": "assets/generated/jttw-player-walkers/heaven-captain/directions/heaven-captain-east-walk.gif",
+    "north": "assets/generated/jttw-player-walkers/heaven-captain/directions/heaven-captain-north-walk.gif"
+   },
+   "attackGifs": {
+    "south": "assets/generated/jttw-player-walkers/heaven-captain/directions/heaven-captain-south-walk-action.gif",
+    "west": "assets/generated/jttw-player-walkers/heaven-captain/directions/heaven-captain-west-walk-action.gif",
+    "east": "assets/generated/jttw-player-walkers/heaven-captain/directions/heaven-captain-east-walk-action.gif",
+    "north": "assets/generated/jttw-player-walkers/heaven-captain/directions/heaven-captain-north-walk-action.gif"
+   }
+  },
+  "redboy": {
+   "nameZh": "红孩儿",
+   "gif": "assets/generated/jttw-player-walkers/redboy/redboy-walk-01.png",
+   "walkGifs": {
+    "south": "assets/generated/jttw-player-walkers/redboy/redboy-walk.gif",
+    "west": "assets/generated/jttw-player-walkers/redboy/redboy-walk.gif",
+    "east": "assets/generated/jttw-player-walkers/redboy/redboy-walk.gif",
+    "north": "assets/generated/jttw-player-walkers/redboy/redboy-walk.gif"
+   },
+   "idleFrames": {
+    "south": "assets/generated/jttw-player-walkers/redboy/redboy-walk-01.png",
+    "west": "assets/generated/jttw-player-walkers/redboy/redboy-walk-01.png",
+    "east": "assets/generated/jttw-player-walkers/redboy/redboy-walk-01.png",
+    "north": "assets/generated/jttw-player-walkers/redboy/redboy-walk-01.png"
+   },
+   "attackGifs": {
+    "south": "assets/generated/jttw-player-walkers/redboy/redboy-walk-01.png",
+    "west": "assets/generated/jttw-player-walkers/redboy/redboy-walk-01.png",
+    "east": "assets/generated/jttw-player-walkers/redboy/redboy-walk-01.png",
+    "north": "assets/generated/jttw-player-walkers/redboy/redboy-walk-01.png"
+   }
+  },
+  "guanyin": {
+   "nameZh": "观音",
+   "gif": "assets/generated/jttw-player-walkers/guanyin/guanyin-walk-01.png",
+   "walkGifs": {
+    "south": "assets/generated/jttw-player-walkers/guanyin/guanyin-walk.gif",
+    "west": "assets/generated/jttw-player-walkers/guanyin/guanyin-walk.gif",
+    "east": "assets/generated/jttw-player-walkers/guanyin/guanyin-walk.gif",
+    "north": "assets/generated/jttw-player-walkers/guanyin/guanyin-walk.gif"
+   },
+   "idleFrames": {
+    "south": "assets/generated/jttw-player-walkers/guanyin/guanyin-walk-01.png",
+    "west": "assets/generated/jttw-player-walkers/guanyin/guanyin-walk-01.png",
+    "east": "assets/generated/jttw-player-walkers/guanyin/guanyin-walk-01.png",
+    "north": "assets/generated/jttw-player-walkers/guanyin/guanyin-walk-01.png"
+   },
+   "attackGifs": {
+    "south": "assets/generated/jttw-player-walkers/guanyin/guanyin-walk-01.png",
+    "west": "assets/generated/jttw-player-walkers/guanyin/guanyin-walk-01.png",
+    "east": "assets/generated/jttw-player-walkers/guanyin/guanyin-walk-01.png",
+    "north": "assets/generated/jttw-player-walkers/guanyin/guanyin-walk-01.png"
+   }
+  },
+  "heaven-soldier": {
+   "nameZh": "小天兵",
+   "gif": "assets/game-sprites/heaven-soldier/heaven-soldier-south-idle.png",
+   "walkGifs": {
+    "south": "assets/game-sprites/heaven-soldier/heaven-soldier-south-walk.gif",
+    "west": "assets/game-sprites/heaven-soldier/heaven-soldier-west-walk.gif",
+    "east": "assets/game-sprites/heaven-soldier/heaven-soldier-east-walk.gif",
+    "north": "assets/game-sprites/heaven-soldier/heaven-soldier-north-walk.gif"
+   },
+   "idleFrames": {
+    "south": "assets/game-sprites/heaven-soldier/heaven-soldier-south-idle.png",
+    "west": "assets/game-sprites/heaven-soldier/heaven-soldier-south-idle.png",
+    "east": "assets/game-sprites/heaven-soldier/heaven-soldier-south-idle.png",
+    "north": "assets/game-sprites/heaven-soldier/heaven-soldier-south-idle.png"
+   },
+   "attackGifs": {
+    "south": "assets/game-sprites/heaven-soldier/heaven-soldier-south-idle.png",
+    "west": "assets/game-sprites/heaven-soldier/heaven-soldier-south-idle.png",
+    "east": "assets/game-sprites/heaven-soldier/heaven-soldier-south-idle.png",
+    "north": "assets/game-sprites/heaven-soldier/heaven-soldier-south-idle.png"
+   }
+  },
+  "bone-wraith": {
+   "nameZh": "白骨小卒",
+   "gif": "assets/game-sprites/bone-wraith/bone-wraith-south-idle.png",
+   "walkGifs": {
+    "south": "assets/game-sprites/bone-wraith/bone-wraith-south-walk.gif",
+    "west": "assets/game-sprites/bone-wraith/bone-wraith-west-walk.gif",
+    "east": "assets/game-sprites/bone-wraith/bone-wraith-east-walk.gif",
+    "north": "assets/game-sprites/bone-wraith/bone-wraith-north-walk.gif"
+   },
+   "idleFrames": {
+    "south": "assets/game-sprites/bone-wraith/bone-wraith-south-idle.png",
+    "west": "assets/game-sprites/bone-wraith/bone-wraith-south-idle.png",
+    "east": "assets/game-sprites/bone-wraith/bone-wraith-south-idle.png",
+    "north": "assets/game-sprites/bone-wraith/bone-wraith-south-idle.png"
+   },
+   "attackGifs": {
+    "south": "assets/game-sprites/bone-wraith/bone-wraith-south-idle.png",
+    "west": "assets/game-sprites/bone-wraith/bone-wraith-south-idle.png",
+    "east": "assets/game-sprites/bone-wraith/bone-wraith-south-idle.png",
+    "north": "assets/game-sprites/bone-wraith/bone-wraith-south-idle.png"
+   }
+  },
+  "gourd-imp": {
+   "nameZh": "葫芦洞小妖",
+   "gif": "assets/game-sprites/gourd-imp/gourd-imp-south-idle.png",
+   "walkGifs": {
+    "south": "assets/game-sprites/gourd-imp/gourd-imp-south-walk.gif",
+    "west": "assets/game-sprites/gourd-imp/gourd-imp-west-walk.gif",
+    "east": "assets/game-sprites/gourd-imp/gourd-imp-east-walk.gif",
+    "north": "assets/game-sprites/gourd-imp/gourd-imp-north-walk.gif"
+   },
+   "idleFrames": {
+    "south": "assets/game-sprites/gourd-imp/gourd-imp-south-idle.png",
+    "west": "assets/game-sprites/gourd-imp/gourd-imp-south-idle.png",
+    "east": "assets/game-sprites/gourd-imp/gourd-imp-south-idle.png",
+    "north": "assets/game-sprites/gourd-imp/gourd-imp-south-idle.png"
+   },
+   "attackGifs": {
+    "south": "assets/game-sprites/gourd-imp/gourd-imp-south-idle.png",
+    "west": "assets/game-sprites/gourd-imp/gourd-imp-south-idle.png",
+    "east": "assets/game-sprites/gourd-imp/gourd-imp-south-idle.png",
+    "north": "assets/game-sprites/gourd-imp/gourd-imp-south-idle.png"
+   }
+  },
+  "fire-imp": {
+   "nameZh": "火云洞小妖",
+   "gif": "assets/game-sprites/fire-imp/fire-imp-south-idle.png",
+   "walkGifs": {
+    "south": "assets/game-sprites/fire-imp/fire-imp-south-walk.gif",
+    "west": "assets/game-sprites/fire-imp/fire-imp-west-walk.gif",
+    "east": "assets/game-sprites/fire-imp/fire-imp-east-walk.gif",
+    "north": "assets/game-sprites/fire-imp/fire-imp-north-walk.gif"
+   },
+   "idleFrames": {
+    "south": "assets/game-sprites/fire-imp/fire-imp-south-idle.png",
+    "west": "assets/game-sprites/fire-imp/fire-imp-south-idle.png",
+    "east": "assets/game-sprites/fire-imp/fire-imp-south-idle.png",
+    "north": "assets/game-sprites/fire-imp/fire-imp-south-idle.png"
+   },
+   "attackGifs": {
+    "south": "assets/game-sprites/fire-imp/fire-imp-south-idle.png",
+    "west": "assets/game-sprites/fire-imp/fire-imp-south-idle.png",
+    "east": "assets/game-sprites/fire-imp/fire-imp-south-idle.png",
+    "north": "assets/game-sprites/fire-imp/fire-imp-south-idle.png"
+   }
+  },
+  "temple-novice": {
+   "nameZh": "小沙弥",
+   "gif": "assets/game-sprites/temple-novice/temple-novice-south-idle.png",
+   "walkGifs": {
+    "south": "assets/game-sprites/temple-novice/temple-novice-south-walk.gif",
+    "west": "assets/game-sprites/temple-novice/temple-novice-west-walk.gif",
+    "east": "assets/game-sprites/temple-novice/temple-novice-east-walk.gif",
+    "north": "assets/game-sprites/temple-novice/temple-novice-north-walk.gif"
+   },
+   "idleFrames": {
+    "south": "assets/game-sprites/temple-novice/temple-novice-south-idle.png",
+    "west": "assets/game-sprites/temple-novice/temple-novice-south-idle.png",
+    "east": "assets/game-sprites/temple-novice/temple-novice-south-idle.png",
+    "north": "assets/game-sprites/temple-novice/temple-novice-south-idle.png"
+   },
+   "attackGifs": {
+    "south": "assets/game-sprites/temple-novice/temple-novice-south-idle.png",
+    "west": "assets/game-sprites/temple-novice/temple-novice-south-idle.png",
+    "east": "assets/game-sprites/temple-novice/temple-novice-south-idle.png",
+    "north": "assets/game-sprites/temple-novice/temple-novice-south-idle.png"
+   }
+  },
+  "mountain-bandit": {
+   "nameZh": "山贼",
+   "gif": "assets/game-sprites/mountain-bandit/mountain-bandit-south-idle.png",
+   "walkGifs": {
+    "south": "assets/game-sprites/mountain-bandit/mountain-bandit-south-walk.gif",
+    "west": "assets/game-sprites/mountain-bandit/mountain-bandit-west-walk.gif",
+    "east": "assets/game-sprites/mountain-bandit/mountain-bandit-east-walk.gif",
+    "north": "assets/game-sprites/mountain-bandit/mountain-bandit-north-walk.gif"
+   },
+   "idleFrames": {
+    "south": "assets/game-sprites/mountain-bandit/mountain-bandit-south-idle.png",
+    "west": "assets/game-sprites/mountain-bandit/mountain-bandit-south-idle.png",
+    "east": "assets/game-sprites/mountain-bandit/mountain-bandit-south-idle.png",
+    "north": "assets/game-sprites/mountain-bandit/mountain-bandit-south-idle.png"
+   },
+   "attackGifs": {
+    "south": "assets/game-sprites/mountain-bandit/mountain-bandit-south-idle.png",
+    "west": "assets/game-sprites/mountain-bandit/mountain-bandit-south-idle.png",
+    "east": "assets/game-sprites/mountain-bandit/mountain-bandit-south-idle.png",
+    "north": "assets/game-sprites/mountain-bandit/mountain-bandit-south-idle.png"
+   }
+  },
+  "blackwind-imp": {
+   "nameZh": "黑风小妖",
+   "gif": "assets/game-sprites/blackwind-imp/blackwind-imp-south-idle.png",
+   "walkGifs": {
+    "south": "assets/game-sprites/blackwind-imp/blackwind-imp-south-walk.gif",
+    "west": "assets/game-sprites/blackwind-imp/blackwind-imp-west-walk.gif",
+    "east": "assets/game-sprites/blackwind-imp/blackwind-imp-east-walk.gif",
+    "north": "assets/game-sprites/blackwind-imp/blackwind-imp-north-walk.gif"
+   },
+   "idleFrames": {
+    "south": "assets/game-sprites/blackwind-imp/blackwind-imp-south-idle.png",
+    "west": "assets/game-sprites/blackwind-imp/blackwind-imp-south-idle.png",
+    "east": "assets/game-sprites/blackwind-imp/blackwind-imp-south-idle.png",
+    "north": "assets/game-sprites/blackwind-imp/blackwind-imp-south-idle.png"
+   },
+   "attackGifs": {
+    "south": "assets/game-sprites/blackwind-imp/blackwind-imp-south-idle.png",
+    "west": "assets/game-sprites/blackwind-imp/blackwind-imp-south-idle.png",
+    "east": "assets/game-sprites/blackwind-imp/blackwind-imp-south-idle.png",
+    "north": "assets/game-sprites/blackwind-imp/blackwind-imp-south-idle.png"
+   }
+  },
+  "sand-yaksha": {
+   "nameZh": "黄沙夜叉",
+   "gif": "assets/game-sprites/sand-yaksha/sand-yaksha-south-idle.png",
+   "walkGifs": {
+    "south": "assets/game-sprites/sand-yaksha/sand-yaksha-south-walk.gif",
+    "west": "assets/game-sprites/sand-yaksha/sand-yaksha-west-walk.gif",
+    "east": "assets/game-sprites/sand-yaksha/sand-yaksha-east-walk.gif",
+    "north": "assets/game-sprites/sand-yaksha/sand-yaksha-north-walk.gif"
+   },
+   "idleFrames": {
+    "south": "assets/game-sprites/sand-yaksha/sand-yaksha-south-idle.png",
+    "west": "assets/game-sprites/sand-yaksha/sand-yaksha-south-idle.png",
+    "east": "assets/game-sprites/sand-yaksha/sand-yaksha-south-idle.png",
+    "north": "assets/game-sprites/sand-yaksha/sand-yaksha-south-idle.png"
+   },
+   "attackGifs": {
+    "south": "assets/game-sprites/sand-yaksha/sand-yaksha-south-idle.png",
+    "west": "assets/game-sprites/sand-yaksha/sand-yaksha-south-idle.png",
+    "east": "assets/game-sprites/sand-yaksha/sand-yaksha-south-idle.png",
+    "north": "assets/game-sprites/sand-yaksha/sand-yaksha-south-idle.png"
+   }
+  },
+  "court-guard": {
+   "nameZh": "宫廷卫士",
+   "gif": "assets/game-sprites/court-guard/court-guard-south-idle.png",
+   "walkGifs": {
+    "south": "assets/game-sprites/court-guard/court-guard-south-walk.gif",
+    "west": "assets/game-sprites/court-guard/court-guard-west-walk.gif",
+    "east": "assets/game-sprites/court-guard/court-guard-east-walk.gif",
+    "north": "assets/game-sprites/court-guard/court-guard-north-walk.gif"
+   },
+   "idleFrames": {
+    "south": "assets/game-sprites/court-guard/court-guard-south-idle.png",
+    "west": "assets/game-sprites/court-guard/court-guard-south-idle.png",
+    "east": "assets/game-sprites/court-guard/court-guard-south-idle.png",
+    "north": "assets/game-sprites/court-guard/court-guard-south-idle.png"
+   },
+   "attackGifs": {
+    "south": "assets/game-sprites/court-guard/court-guard-south-idle.png",
+    "west": "assets/game-sprites/court-guard/court-guard-south-idle.png",
+    "east": "assets/game-sprites/court-guard/court-guard-south-idle.png",
+    "north": "assets/game-sprites/court-guard/court-guard-south-idle.png"
+   }
+  },
+  "forest-beast": {
+   "nameZh": "林中野兽",
+   "gif": "assets/game-sprites/forest-beast/forest-beast-south-idle.png",
+   "walkGifs": {
+    "south": "assets/game-sprites/forest-beast/forest-beast-south-walk.gif",
+    "west": "assets/game-sprites/forest-beast/forest-beast-west-walk.gif",
+    "east": "assets/game-sprites/forest-beast/forest-beast-east-walk.gif",
+    "north": "assets/game-sprites/forest-beast/forest-beast-north-walk.gif"
+   },
+   "idleFrames": {
+    "south": "assets/game-sprites/forest-beast/forest-beast-south-idle.png",
+    "west": "assets/game-sprites/forest-beast/forest-beast-south-idle.png",
+    "east": "assets/game-sprites/forest-beast/forest-beast-south-idle.png",
+    "north": "assets/game-sprites/forest-beast/forest-beast-south-idle.png"
+   },
+   "attackGifs": {
+    "south": "assets/game-sprites/forest-beast/forest-beast-south-idle.png",
+    "west": "assets/game-sprites/forest-beast/forest-beast-south-idle.png",
+    "east": "assets/game-sprites/forest-beast/forest-beast-south-idle.png",
+    "north": "assets/game-sprites/forest-beast/forest-beast-south-idle.png"
+   }
+  },
+  "yellowrobe-imp": {
+   "nameZh": "黄袍小妖",
+   "gif": "assets/game-sprites/yellowrobe-imp/yellowrobe-imp-south-idle.png",
+   "walkGifs": {
+    "south": "assets/game-sprites/yellowrobe-imp/yellowrobe-imp-south-walk.gif",
+    "west": "assets/game-sprites/yellowrobe-imp/yellowrobe-imp-west-walk.gif",
+    "east": "assets/game-sprites/yellowrobe-imp/yellowrobe-imp-east-walk.gif",
+    "north": "assets/game-sprites/yellowrobe-imp/yellowrobe-imp-north-walk.gif"
+   },
+   "idleFrames": {
+    "south": "assets/game-sprites/yellowrobe-imp/yellowrobe-imp-south-idle.png",
+    "west": "assets/game-sprites/yellowrobe-imp/yellowrobe-imp-south-idle.png",
+    "east": "assets/game-sprites/yellowrobe-imp/yellowrobe-imp-south-idle.png",
+    "north": "assets/game-sprites/yellowrobe-imp/yellowrobe-imp-south-idle.png"
+   },
+   "attackGifs": {
+    "south": "assets/game-sprites/yellowrobe-imp/yellowrobe-imp-south-idle.png",
+    "west": "assets/game-sprites/yellowrobe-imp/yellowrobe-imp-south-idle.png",
+    "east": "assets/game-sprites/yellowrobe-imp/yellowrobe-imp-south-idle.png",
+    "north": "assets/game-sprites/yellowrobe-imp/yellowrobe-imp-south-idle.png"
+   }
+  },
+  "yellowrobe": {
+   "nameZh": "黄袍怪",
+   "gif": "assets/game-sprites/yellowrobe/yellowrobe-south-idle.png",
+   "walkGifs": {
+    "south": "assets/game-sprites/yellowrobe/yellowrobe-south-walk.gif",
+    "west": "assets/game-sprites/yellowrobe/yellowrobe-south-walk.gif",
+    "east": "assets/game-sprites/yellowrobe/yellowrobe-south-walk.gif",
+    "north": "assets/game-sprites/yellowrobe/yellowrobe-south-walk.gif"
+   },
+   "idleFrames": {
+    "south": "assets/game-sprites/yellowrobe/yellowrobe-south-idle.png",
+    "west": "assets/game-sprites/yellowrobe/yellowrobe-south-idle.png",
+    "east": "assets/game-sprites/yellowrobe/yellowrobe-south-idle.png",
+    "north": "assets/game-sprites/yellowrobe/yellowrobe-south-idle.png"
+   },
+   "attackGifs": {
+    "south": "assets/game-sprites/yellowrobe/yellowrobe-south-idle.png",
+    "west": "assets/game-sprites/yellowrobe/yellowrobe-south-idle.png",
+    "east": "assets/game-sprites/yellowrobe/yellowrobe-south-idle.png",
+    "north": "assets/game-sprites/yellowrobe/yellowrobe-south-idle.png"
+   }
+  },
+  "rulai": {
+   "nameZh": "如来",
+   "gif": "assets/game-sprites/rulai/rulai-south-idle.png",
+   "walkGifs": {
+    "south": "assets/game-sprites/rulai/rulai-south-walk.gif",
+    "west": "assets/game-sprites/rulai/rulai-south-walk.gif",
+    "east": "assets/game-sprites/rulai/rulai-south-walk.gif",
+    "north": "assets/game-sprites/rulai/rulai-south-walk.gif"
+   },
+   "idleFrames": {
+    "south": "assets/game-sprites/rulai/rulai-south-idle.png",
+    "west": "assets/game-sprites/rulai/rulai-south-idle.png",
+    "east": "assets/game-sprites/rulai/rulai-south-idle.png",
+    "north": "assets/game-sprites/rulai/rulai-south-idle.png"
+   },
+   "attackGifs": {
+    "south": "assets/game-sprites/rulai/rulai-south-idle.png",
+    "west": "assets/game-sprites/rulai/rulai-south-idle.png",
+    "east": "assets/game-sprites/rulai/rulai-south-idle.png",
+    "north": "assets/game-sprites/rulai/rulai-south-idle.png"
+   }
+  },
+  "jinchi": {
+   "nameZh": "金池长老",
+   "gif": "assets/game-sprites/jinchi/jinchi-south-idle.png",
+   "walkGifs": {
+    "south": "assets/game-sprites/jinchi/jinchi-south-walk.gif",
+    "west": "assets/game-sprites/jinchi/jinchi-south-walk.gif",
+    "east": "assets/game-sprites/jinchi/jinchi-south-walk.gif",
+    "north": "assets/game-sprites/jinchi/jinchi-south-walk.gif"
+   },
+   "idleFrames": {
+    "south": "assets/game-sprites/jinchi/jinchi-south-idle.png",
+    "west": "assets/game-sprites/jinchi/jinchi-south-idle.png",
+    "east": "assets/game-sprites/jinchi/jinchi-south-idle.png",
+    "north": "assets/game-sprites/jinchi/jinchi-south-idle.png"
+   },
+   "attackGifs": {
+    "south": "assets/game-sprites/jinchi/jinchi-south-idle.png",
+    "west": "assets/game-sprites/jinchi/jinchi-south-idle.png",
+    "east": "assets/game-sprites/jinchi/jinchi-south-idle.png",
+    "north": "assets/game-sprites/jinchi/jinchi-south-idle.png"
+   }
+  },
+  "laojun": {
+   "nameZh": "太上老君",
+   "gif": "assets/game-sprites/laojun/laojun-south-idle.png",
+   "walkGifs": {
+    "south": "assets/game-sprites/laojun/laojun-south-walk.gif",
+    "west": "assets/game-sprites/laojun/laojun-south-walk.gif",
+    "east": "assets/game-sprites/laojun/laojun-south-walk.gif",
+    "north": "assets/game-sprites/laojun/laojun-south-walk.gif"
+   },
+   "idleFrames": {
+    "south": "assets/game-sprites/laojun/laojun-south-idle.png",
+    "west": "assets/game-sprites/laojun/laojun-south-idle.png",
+    "east": "assets/game-sprites/laojun/laojun-south-idle.png",
+    "north": "assets/game-sprites/laojun/laojun-south-idle.png"
+   },
+   "attackGifs": {
+    "south": "assets/game-sprites/laojun/laojun-south-idle.png",
+    "west": "assets/game-sprites/laojun/laojun-south-idle.png",
+    "east": "assets/game-sprites/laojun/laojun-south-idle.png",
+    "north": "assets/game-sprites/laojun/laojun-south-idle.png"
+   }
+  },
+  "king": {
+   "nameZh": "国王",
+   "gif": "assets/game-sprites/king/king-south-idle.png",
+   "walkGifs": {
+    "south": "assets/game-sprites/king/king-south-walk.gif",
+    "west": "assets/game-sprites/king/king-south-walk.gif",
+    "east": "assets/game-sprites/king/king-south-walk.gif",
+    "north": "assets/game-sprites/king/king-south-walk.gif"
+   },
+   "idleFrames": {
+    "south": "assets/game-sprites/king/king-south-idle.png",
+    "west": "assets/game-sprites/king/king-south-idle.png",
+    "east": "assets/game-sprites/king/king-south-idle.png",
+    "north": "assets/game-sprites/king/king-south-idle.png"
+   },
+   "attackGifs": {
+    "south": "assets/game-sprites/king/king-south-idle.png",
+    "west": "assets/game-sprites/king/king-south-idle.png",
+    "east": "assets/game-sprites/king/king-south-idle.png",
+    "north": "assets/game-sprites/king/king-south-idle.png"
+   }
+  },
+  "tudigong": {
+   "nameZh": "土地公",
+   "gif": "assets/game-sprites/tudigong/tudigong-south-idle.png",
+   "walkGifs": {
+    "south": "assets/game-sprites/tudigong/tudigong-south-walk.gif",
+    "west": "assets/game-sprites/tudigong/tudigong-south-walk.gif",
+    "east": "assets/game-sprites/tudigong/tudigong-south-walk.gif",
+    "north": "assets/game-sprites/tudigong/tudigong-south-walk.gif"
+   },
+   "idleFrames": {
+    "south": "assets/game-sprites/tudigong/tudigong-south-idle.png",
+    "west": "assets/game-sprites/tudigong/tudigong-south-idle.png",
+    "east": "assets/game-sprites/tudigong/tudigong-south-idle.png",
+    "north": "assets/game-sprites/tudigong/tudigong-south-idle.png"
+   },
+   "attackGifs": {
+    "south": "assets/game-sprites/tudigong/tudigong-south-idle.png",
+    "west": "assets/game-sprites/tudigong/tudigong-south-idle.png",
+    "east": "assets/game-sprites/tudigong/tudigong-south-idle.png",
+    "north": "assets/game-sprites/tudigong/tudigong-south-idle.png"
+   }
+  },
+  "prince": {
+   "nameZh": "太子",
+   "gif": "assets/game-sprites/prince/prince-south-idle.png",
+   "walkGifs": {
+    "south": "assets/game-sprites/prince/prince-south-walk.gif",
+    "west": "assets/game-sprites/prince/prince-south-walk.gif",
+    "east": "assets/game-sprites/prince/prince-south-walk.gif",
+    "north": "assets/game-sprites/prince/prince-south-walk.gif"
+   },
+   "idleFrames": {
+    "south": "assets/game-sprites/prince/prince-south-idle.png",
+    "west": "assets/game-sprites/prince/prince-south-idle.png",
+    "east": "assets/game-sprites/prince/prince-south-idle.png",
+    "north": "assets/game-sprites/prince/prince-south-idle.png"
+   },
+   "attackGifs": {
+    "south": "assets/game-sprites/prince/prince-south-idle.png",
+    "west": "assets/game-sprites/prince/prince-south-idle.png",
+    "east": "assets/game-sprites/prince/prince-south-idle.png",
+    "north": "assets/game-sprites/prince/prince-south-idle.png"
+   }
+  },
+  "heishui": {
+   "nameZh": "黑水河神",
+   "gif": "assets/game-sprites/heishui/heishui-south-idle.png",
+   "walkGifs": {
+    "south": "assets/game-sprites/heishui/heishui-south-walk.gif",
+    "west": "assets/game-sprites/heishui/heishui-south-walk.gif",
+    "east": "assets/game-sprites/heishui/heishui-south-walk.gif",
+    "north": "assets/game-sprites/heishui/heishui-south-walk.gif"
+   },
+   "idleFrames": {
+    "south": "assets/game-sprites/heishui/heishui-south-idle.png",
+    "west": "assets/game-sprites/heishui/heishui-south-idle.png",
+    "east": "assets/game-sprites/heishui/heishui-south-idle.png",
+    "north": "assets/game-sprites/heishui/heishui-south-idle.png"
+   },
+   "attackGifs": {
+    "south": "assets/game-sprites/heishui/heishui-south-idle.png",
+    "west": "assets/game-sprites/heishui/heishui-south-idle.png",
+    "east": "assets/game-sprites/heishui/heishui-south-idle.png",
+    "north": "assets/game-sprites/heishui/heishui-south-idle.png"
+   }
+  },
+  "yingchou": {
+   "nameZh": "鹰愁涧龙",
+   "gif": "assets/game-sprites/yingchou/yingchou-south-idle.png",
+   "walkGifs": {
+    "south": "assets/game-sprites/yingchou/yingchou-south-walk.gif",
+    "west": "assets/game-sprites/yingchou/yingchou-south-walk.gif",
+    "east": "assets/game-sprites/yingchou/yingchou-south-walk.gif",
+    "north": "assets/game-sprites/yingchou/yingchou-south-walk.gif"
+   },
+   "idleFrames": {
+    "south": "assets/game-sprites/yingchou/yingchou-south-idle.png",
+    "west": "assets/game-sprites/yingchou/yingchou-south-idle.png",
+    "east": "assets/game-sprites/yingchou/yingchou-south-idle.png",
+    "north": "assets/game-sprites/yingchou/yingchou-south-idle.png"
+   },
+   "attackGifs": {
+    "south": "assets/game-sprites/yingchou/yingchou-south-idle.png",
+    "west": "assets/game-sprites/yingchou/yingchou-south-idle.png",
+    "east": "assets/game-sprites/yingchou/yingchou-south-idle.png",
+    "north": "assets/game-sprites/yingchou/yingchou-south-idle.png"
    }
   }
  }

@@ -7,6 +7,7 @@
  */
 (function () {
   const Core = window.BookPlayBattleCore;
+  const Game = window.BookPlayGameCore;
   const Quiz = window.BookPlayEpisodeVocabQuiz;
 
   const params = new URLSearchParams(window.location.search);
@@ -27,14 +28,28 @@
     shields: $("battle-shields"),
     progress: $("battle-progress"),
     combo: $("battle-combo"),
+    defend: $("battle-defend"),
     exit: $("battle-exit"),
+    prompt: $("battle-prompt"),
+    promptKicker: $("battle-prompt-kicker"),
+    promptMain: $("battle-prompt-main"),
+    promptSub: $("battle-prompt-sub"),
+    listen: $("battle-listen"),
+    turn: $("battle-turn"),
+    hpDock: $("battle-hp-dock"),
+    heroHpName: $("battle-hero-hp-name"),
+    heroHpFill: $("battle-hero-hp-fill"),
+    skillBanner: $("battle-skill-banner"),
     bossbar: $("battle-bossbar"),
     bossName: $("battle-boss-name"),
     bossHp: $("battle-boss-hp"),
+    bossHpFill: $("battle-boss-hp-fill"),
+    battleLog: $("battle-log"),
     dialogue: $("battle-dialogue"),
     dialogueFace: $("battle-dialogue-face"),
     dialogueEn: $("battle-dialogue-en"),
     dialogueZh: $("battle-dialogue-zh"),
+    dialogueReplay: $("battle-dialogue-replay"),
     dialogueNext: $("battle-dialogue-next"),
     preview: $("battle-preview"),
     previewCards: $("battle-preview-cards"),
@@ -51,6 +66,9 @@
     level: null,
     sprites: {},
     taunts: {},
+    audio: null,
+    audioIndex: {},
+    dialogueLine: null,
     phase: "loading",
     waveIndex: 0,
     questions: [],
@@ -60,11 +78,20 @@
     wrongWords: {},
     killed: 0,
     bossIdx: 0,
+    roundId: 0,
+    roundLocked: false,
     quizItems: [],
     quizIdx: 0,
     answers: {},
     quizPassed: false,
     finished: false,
+    battleLog: [],
+    kit: null,
+    defendLeft: 1,
+    defendArmed: false,
+    bossRound: null,
+    typing: null,
+    typingTimer: 0,
   };
 
   function readStore(key) {
@@ -84,6 +111,10 @@
   let audioEl = null;
   function speakTerm(text) {
     if (!text) return;
+    if (state.audio) {
+      const term = String(text).trim();
+      return state.audio.play({ ref: `word:${term}:en`, text: term, lang: "en-US" });
+    }
     try {
       audioEl = audioEl || new Audio();
       window.BookPlayAudio?.watchMedia(audioEl);
@@ -91,6 +122,38 @@
       audioEl.currentTime = 0;
       audioEl.play().catch(() => {});
     } catch (_) { /* 无 TTS 环境静默 */ }
+  }
+
+  function speakDialogue(line) {
+    if (!line) return;
+    if (state.audio) {
+      const textEn = String(line.textEn || "").trim();
+      const textZh = String(line.textZh || "").trim();
+      const ref = line.audioRef || `dialogue:${line.id || `ep${EP}-story-intro-${introIdx + 1}`}:en`;
+      return state.audio.play({
+        ref,
+        text: textEn || textZh,
+        lang: textEn ? "en-US" : "zh-CN",
+      });
+    }
+    return speakTerm(line.textEn || line.textZh);
+  }
+
+  function stopAudio(reason) {
+    state.audio?.stop(reason);
+    if (audioEl) {
+      try { audioEl.pause(); } catch (_) { /* platform boundary */ }
+    }
+  }
+
+  function replayDialogue() {
+    const line = state.dialogueLine;
+    if (!line) return;
+    const expectedRef = line.audioRef || `dialogue:${line.id || `ep${EP}-story-intro-${introIdx + 1}`}:en`;
+    const last = state.audio?.getState?.().lastRequest;
+    const lastRef = typeof last === "string" ? last : last && (last.ref || last.audioRef || last.id);
+    if (state.audio && lastRef === expectedRef) state.audio.replay();
+    else speakDialogue(line);
   }
 
   function fetchJSON(url) {
@@ -145,12 +208,70 @@
   }
 
   function updateHud() {
-    els.shields.textContent = "🛡️".repeat(state.shield) + "⬜".repeat(Math.max(0, 3 - state.shield));
+    els.shields.textContent = "♥".repeat(state.shield) + "♡".repeat(Math.max(0, 3 - state.shield));
+    if (els.heroHpFill) els.heroHpFill.style.width = `${(state.shield / 3) * 100}%`;
     const total = state.level
       ? state.level.waves.reduce((sum, wave) => sum + wave.monsters.length, 0) + state.level.boss.hpWords.length
       : 0;
     els.progress.textContent = `${state.killed} / ${total}`;
     els.combo.textContent = `连击 ${state.combo.streak}`;
+    if (els.defend) els.defend.disabled = !state.defendLeft && !state.defendArmed;
+  }
+
+  function showSkillBanner(name) {
+    if (!els.skillBanner || !name) return;
+    els.skillBanner.hidden = false;
+    els.skillBanner.textContent = name;
+    window.setTimeout(() => {
+      if (els.skillBanner.textContent === name) els.skillBanner.hidden = true;
+    }, 900);
+  }
+
+  function flashClass(el, className, ms) {
+    if (!el) return;
+    el.classList.add(className);
+    window.setTimeout(() => el.classList.remove(className), ms || 450);
+  }
+
+  function showSkillFx(skill, atEl, side) {
+    if (!skill || !atEl) return;
+    showSkillBanner(skill.nameZh);
+    const candidates = Core.resolveSkillFx(skill, side || "hero", state.kit && state.kit.genericFx);
+    if (!candidates.length) return;
+    const img = document.createElement("img");
+    img.className = "battle-skill-fx";
+    img.alt = "";
+    let idx = 0;
+    const tryNext = () => {
+      if (idx >= candidates.length) {
+        img.remove();
+        return;
+      }
+      img.src = assetUrl(candidates[idx]);
+      idx += 1;
+    };
+    img.addEventListener("error", tryNext);
+    const rect = atEl.getBoundingClientRect();
+    img.style.left = `${rect.left + rect.width / 2}px`;
+    img.style.top = `${rect.top + rect.height / 2}px`;
+    els.projectiles.appendChild(img);
+    tryNext();
+    window.setTimeout(() => img.remove(), 900);
+  }
+
+  function armDefend() {
+    if (state.phase !== "boss") return;
+    const next = Core.applyDefend({ defendLeft: state.defendLeft, defendArmed: state.defendArmed });
+    if (!next.ok) {
+      showToast(state.defendArmed ? "护体已经亮着" : "这场护体用过了", 1400);
+      return;
+    }
+    state.defendLeft = next.defendLeft;
+    state.defendArmed = next.defendArmed;
+    els.hero.classList.add("is-guard");
+    const defend = state.kit && state.kit.hero && state.kit.hero.skills && state.kit.hero.skills.defend;
+    showSkillFx(defend, els.hero, "hero");
+    updateHud();
   }
 
   /* ---------- 阶段：开场剧情 ---------- */
@@ -169,6 +290,7 @@
 
   function renderIntroLine() {
     const line = state.level.intro[introIdx];
+    state.dialogueLine = line;
     els.dialogueEn.textContent = line.textEn;
     els.dialogueZh.textContent = line.textZh || "";
     if (line.illustration) {
@@ -180,10 +302,13 @@
     } else {
       els.dialogueFace.style.display = "none";
     }
+    if (els.dialogueReplay) els.dialogueReplay.hidden = !(line.textEn || line.textZh);
+    speakDialogue(line);
     els.dialogueNext.textContent = introIdx + 1 >= state.level.intro.length ? "开始预习 ▶" : "继续 ▶";
   }
 
   function onIntroNext() {
+    stopAudio("next");
     introIdx += 1;
     if (introIdx >= state.level.intro.length) {
       showPreview();
@@ -195,6 +320,7 @@
   /* ---------- 阶段：战前预习 ---------- */
 
   function showPreview() {
+    stopAudio("next");
     state.phase = "preview";
     if (SKIP.has("preview")) {
       startWave(0);
@@ -236,12 +362,15 @@
   /* ---------- 阶段：小怪波 ---------- */
 
   function startWave(waveIndex) {
+    stopAudio("next");
     if (SKIP.has("waves")) {
       startBoss();
       return;
     }
     window.BookPlayAudio?.sfx("start");
     state.phase = "wave";
+    state.roundLocked = false;
+    state.roundId += 1;
     state.waveIndex = waveIndex;
     state.questions = Core.buildWaveQuestions(state.level, waveIndex, state.wrongWords);
     state.questionIdx = 0;
@@ -301,10 +430,14 @@
 
   function throwOrb(orb, orbBtn) {
     if (state.phase !== "wave" && state.phase !== "boss") return;
+    if (state.roundLocked) return;
     const monster = currentMonster();
     if (!monster || orbBtn.classList.contains("is-spent")) return;
     orbBtn.classList.add("is-spent");
+    state.roundLocked = true;
+    const roundId = ++state.roundId;
     flyProjectile(orbBtn, els.monsters.children[state.questionIdx], () => {
+      if (roundId !== state.roundId) return;
       resolveHit(orb, monster, orbBtn);
     });
   }
@@ -330,6 +463,7 @@
   }
 
   function resolveHit(orb, monster, orbBtn) {
+    state.roundLocked = false;
     const verdict = Core.judgeHit(orb, monster, state.combo);
     if (!verdict.correct) window.BookPlayAudio?.sfx("shield");
     const monsterEl = els.monsters.children[state.questionIdx];
@@ -339,7 +473,7 @@
       if (monsterEl) monsterEl.classList.add("is-dead");
       state.questionIdx += 1;
       if (verdict.comboReady && state.questionIdx < state.questions.length) {
-        showToast("金箍棒横扫！连击清场！⚡", 1500);
+        showToast("棒影连击！连击清场！⚡", 1500);
         for (let i = state.questionIdx; i < state.questions.length; i += 1) {
           const swept = els.monsters.children[i];
           if (swept) {
@@ -391,11 +525,52 @@
     }
   }
 
+  function pushBattleLog(text) {
+    state.battleLog = Game.pushBattleLog(state.battleLog, text, 3);
+    if (!els.battleLog) return;
+    els.battleLog.hidden = false;
+    els.battleLog.textContent = "";
+    state.battleLog.forEach((line) => {
+      const item = document.createElement("li");
+      item.textContent = line;
+      els.battleLog.appendChild(item);
+    });
+  }
+
+  function syncBossHpBar() {
+    const total = (state.level.boss.hpWords || []).length;
+    const idx = state.bossIdx;
+    if (els.bossHpFill) {
+      els.bossHpFill.style.width = `${Game.bossHpRatio(idx, total) * 100}%`;
+    }
+    [...els.bossHp.querySelectorAll("span:not(.battle-boss-hp-fill)")].forEach((seg, i) => {
+      seg.classList.toggle("is-lost", i < idx);
+    });
+  }
+
   /* ---------- 阶段：Boss 战（反向出题） ---------- */
 
   function startBoss() {
+    stopAudio("next");
     state.phase = "boss";
+    state.roundLocked = false;
+    state.roundId += 1;
     state.bossIdx = 0;
+    state.battleLog = [];
+    if (els.battleLog) {
+      els.battleLog.textContent = "";
+      els.battleLog.hidden = true;
+    }
+    const root = $("battle-root");
+    if (root) root.classList.add("is-boss-stage");
+    if (els.prompt) els.prompt.hidden = false;
+    if (els.hpDock) els.hpDock.hidden = false;
+    if (els.defend) els.defend.hidden = false;
+    if (els.turn) {
+      els.turn.hidden = false;
+      els.turn.textContent = "悟空回合";
+    }
+    if (els.heroHpName) els.heroHpName.textContent = (state.kit && state.kit.hero && state.kit.hero.nameZh) || "孙悟空";
     const boss = state.level.cast.boss;
     state.level.boss.hpWords = Core.reorderBossWords(state.level, state.wrongWords);
     els.bossName.textContent = boss.nameZh;
@@ -411,28 +586,105 @@
     label.textContent = boss.nameZh;
     bossBtn.appendChild(label);
     els.monsters.appendChild(bossBtn);
-    els.bossHp.textContent = "";
+    [...els.bossHp.querySelectorAll("span:not(.battle-boss-hp-fill)")].forEach((seg) => seg.remove());
     state.level.boss.hpWords.forEach(() => {
       const seg = document.createElement("span");
       els.bossHp.appendChild(seg);
     });
+    syncBossHpBar();
     renderBossOrbs();
+  }
+
+  function keyboardOk() {
+    try {
+      return window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+    } catch (_) {
+      return true;
+    }
+  }
+
+  function clearTyping() {
+    if (state.typingTimer) {
+      window.clearTimeout(state.typingTimer);
+      state.typingTimer = 0;
+    }
+    state.typing = null;
+    document.removeEventListener("keydown", onTypingKey);
+  }
+
+  function paintTyping() {
+    const track = $("battle-typing-track");
+    if (!track || !state.typing) return;
+    const goal = state.typing.goal || "";
+    const typed = state.typing.typed || "";
+    const wrong = state.typing.wrong || "";
+    track.innerHTML = `<span class="is-ok">${typed}</span><span class="is-bad">${wrong}</span><span class="is-rest">${goal.slice(typed.length)}</span>`;
+  }
+
+  function finishTyping(status) {
+    if (state.phase !== "boss" || !state.bossRound || state.bossRound.kind !== "typing") return;
+    const goal = state.bossRound.typingTarget || "";
+    const ok = status === "ok";
+    clearTyping();
+    const host = els.orbs;
+    throwBossOrb({ zh: ok ? goal : "" }, host);
+  }
+
+  function onTypingKey(event) {
+    if (state.phase !== "boss" || !state.typing || state.roundLocked) return;
+    if (event.key === "Tab") return;
+    const next = Game.typingStep(state.typing, event.key, state.typing.goal, true);
+    if (next.status === "ignored") return;
+    event.preventDefault();
+    state.typing.typed = next.typed;
+    state.typing.wrong = next.wrong;
+    paintTyping();
+    if (next.status === "complete") finishTyping("ok");
+  }
+
+  function renderTypingRound(round) {
+    els.orbs.textContent = "";
+    const wrap = document.createElement("div");
+    wrap.className = "battle-typing";
+    wrap.innerHTML = `<p class="battle-typing-track" id="battle-typing-track"></p><p class="battle-typing-hint">键盘输入英文</p>`;
+    els.orbs.appendChild(wrap);
+    state.typing = { typed: "", wrong: "", goal: round.typingTarget || "" };
+    paintTyping();
+    document.addEventListener("keydown", onTypingKey);
+    state.typingTimer = window.setTimeout(() => finishTyping("timeout"), round.timeoutMs || 12000);
   }
 
   function renderBossOrbs() {
     const hpWords = state.level.boss.hpWords;
     const current = hpWords[state.bossIdx];
     els.orbs.textContent = "";
+    clearTyping();
+    if (els.listen) els.listen.hidden = true;
     if (!current) return;
-    els.bossName.textContent = `${state.level.cast.boss.nameZh} · 击败「${current.zh}」`;
-    [...els.bossHp.children].forEach((seg, idx) => {
-      seg.classList.toggle("is-lost", idx < state.bossIdx);
+    els.bossName.textContent = state.level.cast.boss.nameZh;
+    const total = hpWords.length || 1;
+    const prefer = state.kit && state.kit.boss && state.kit.boss.special && state.kit.boss.special.preferQuestion;
+    const built = Core.buildBossRound(state.level, current, state.bossIdx, {
+      seed: state.level.seedBase + 900 + state.bossIdx * 13,
+      preferQuestion: prefer,
+      lastSlot: state.bossIdx === total - 1,
+      hpRatio: Game.bossHpRatio(state.bossIdx, total),
+      canType: keyboardOk(),
     });
-    const pool = hpWords.map((w) => ({ term: w.zh, zh: w.term }))
-      .concat(state.level.previewWords.map((w) => ({ term: w.zh, zh: w.term })));
-    const seed = state.level.seedBase + 900 + state.bossIdx * 13;
-    const set = Core.buildOrbSet({ term: current.zh, zh: current.term }, pool, seed);
-    set.orbs.forEach((orb) => {
+    state.bossRound = built;
+    if (els.promptMain) els.promptMain.textContent = built.promptMain || current.zh;
+    if (els.promptSub) els.promptSub.textContent = built.promptSub || "";
+    if (els.promptKicker) els.promptKicker.textContent = built.promptKicker || "";
+    syncBossHpBar();
+    if (built.listen && els.listen) {
+      els.listen.hidden = false;
+      speakTerm(built.playTerm);
+    }
+    if (built.kind === "typing") {
+      renderTypingRound(built);
+      return;
+    }
+    (built.orbs || []).forEach((orb) => {
       const btn = document.createElement("button");
       btn.type = "button";
       btn.className = "battle-orb";
@@ -444,38 +696,49 @@
   }
 
   function throwBossOrb(orb, orbBtn) {
-    if (state.phase !== "boss" || orbBtn.classList.contains("is-spent")) return;
+    if (state.phase !== "boss" || state.roundLocked || orbBtn.classList.contains("is-spent")) return;
     orbBtn.classList.add("is-spent");
+    state.roundLocked = true;
+    const roundId = ++state.roundId;
     const hpWords = state.level.boss.hpWords;
     const hpWord = hpWords[state.bossIdx];
-    flyProjectile(orbBtn, $("battle-boss"), () => {
-      const verdict = Core.judgeHit(orb, { term: hpWord.term, zh: hpWord.term }, state.combo);
-      if (!verdict.correct) window.BookPlayAudio?.sfx("shield");
+    const answerZh = (state.bossRound && state.bossRound.answerZh) || hpWord.term;
+    const verdict = Core.judgeHit(orb, { term: hpWord.term, zh: answerZh }, state.combo);
+    const bossEl = $("battle-boss");
+    const fromEl = verdict.correct ? els.hero : (bossEl || orbBtn);
+    const toEl = verdict.correct ? bossEl : els.hero;
+    flyProjectile(fromEl, toEl, () => {
+      if (roundId !== state.roundId) return;
+      state.roundLocked = false;
       if (verdict.correct) {
+        const skill = Core.pickHeroSkill(state.kit, state.combo);
         state.killed += 1;
         state.bossIdx += 1;
         updateHud();
+        speakTerm(hpWord.term);
+        if (els.turn) els.turn.textContent = "出招！";
+        flashClass(els.hero, "is-lunge", 420);
+        showSkillFx(skill, bossEl, "hero");
         if (state.bossIdx >= hpWords.length) {
+          state.roundLocked = true;
           window.BookPlayAudio?.sfx("reward");
-          els.bossHp.textContent = "";
-          [...Array(hpWords.length)].forEach(() => {
-            const seg = document.createElement("span");
-            seg.classList.add("is-lost");
-            els.bossHp.appendChild(seg);
-          });
+          syncBossHpBar();
+          pushBattleLog(`${skill.nameZh} · 打中 ${hpWord.term}`);
           showToast(`${state.level.cast.boss.nameZh} 被打败了！妖怪卡到手 🎴`, 2200);
-          window.setTimeout(startQuiz, 1600);
+          window.setTimeout(() => {
+            if (shouldSkipEndQuiz()) {
+              state.quizPassed = true;
+              showResult();
+            } else {
+              startQuiz();
+            }
+          }, 1600);
         } else {
+          pushBattleLog(`${skill.nameZh} · 打中 ${hpWord.term}`);
           try {
-            const heroEl = els.hero;
-            heroEl.classList.add("is-lunge");
-            window.setTimeout(() => heroEl.classList.remove("is-lunge"), 420);
-            speakTerm(hpWord.term);
             window.setTimeout(() => {
-              const bossEl = $("battle-boss");
               if (!bossEl) return;
-              bossEl.classList.add("is-recoil");
-              window.setTimeout(() => bossEl.classList.remove("is-recoil"), 450);
+              flashClass(bossEl, "is-recoil", 450);
               const rect = bossEl.getBoundingClientRect();
               const impact = document.createElement("span");
               impact.className = "game-battle-impact";
@@ -493,16 +756,37 @@
             }, 120);
             showTaunt();
           } catch (_) { /* 特效失败不阻塞推进 */ }
+          if (els.turn) els.turn.textContent = "悟空回合";
           renderBossOrbs();
         }
       } else {
+        window.BookPlayAudio?.sfx("shield");
+        const total = hpWords.length || 1;
+        const hpRatio = Game.bossHpRatio(state.bossIdx, total);
+        const skill = Core.pickBossSkill(state.kit, { shieldLeft: state.shield, hpRatio });
+        const hit = Core.applyIncomingHit({ shield: state.shield, defendArmed: state.defendArmed });
+        state.defendArmed = hit.defendArmed;
+        state.shield = hit.shield;
+        els.hero.classList.remove("is-guard");
+        pushBattleLog(hit.blocked ? `护体挡住 ${skill.nameZh}` : `${skill.nameZh} · 打偏 ${hpWord.term}`);
         state.wrongWords[hpWord.term] = (state.wrongWords[hpWord.term] || 0) + 1;
-        state.combo.streak = 0;
-        state.shield = Math.max(0, state.shield - 1);
         updateHud();
+        if (els.turn) els.turn.textContent = "妖怪回合";
+        flashClass(bossEl, "is-lunge-left", 420);
+        showSkillFx(skill, els.hero, "boss");
+        if (!hit.blocked) flashClass(els.hero, "is-recoil", 450);
+        else showToast("护体金光挡住了！", 1400);
+        window.setTimeout(() => { if (els.turn) els.turn.textContent = "悟空回合"; }, 700);
         if (state.shield <= 0) {
-          showToast("护盾碎了！深呼吸，再试一次 💪", 2000);
-          state.shield = 3;
+          showToast("悟空撑不住了，再来一次！", 2000);
+          window.setTimeout(() => {
+            state.shield = 3;
+            state.defendLeft = Number(state.kit && state.kit.hero && state.kit.hero.skills && state.kit.hero.skills.defend && state.kit.hero.skills.defend.usesPerBattle) || 1;
+            state.defendArmed = false;
+            if (els.defend) els.defend.disabled = false;
+            startBoss();
+          }, 900);
+          return;
         }
         renderBossOrbs();
       }
@@ -520,10 +804,18 @@
 
   /* ---------- 阶段：关底测验 ---------- */
 
+  function shouldSkipEndQuiz() {
+    return FROM_GAME || SKIP.has("quiz");
+  }
+
   function startQuiz() {
+    stopAudio("next");
     state.phase = "quiz";
+    state.roundLocked = false;
+    state.roundId += 1;
     els.bossbar.hidden = true;
-    if (SKIP.has("quiz")) {
+    if (shouldSkipEndQuiz()) {
+      state.quizPassed = true;
       showResult();
       return;
     }
@@ -598,12 +890,21 @@
   /* ---------- 阶段：结算 ---------- */
 
   function showResult() {
+    stopAudio("complete");
     window.BookPlayAudio?.sfx("complete");
     state.phase = "result";
     state.finished = true;
     els.orbs.textContent = "";
     els.monsters.textContent = "";
     els.bossbar.hidden = true;
+    if (els.prompt) els.prompt.hidden = true;
+    if (els.hpDock) els.hpDock.hidden = true;
+    if (els.defend) els.defend.hidden = true;
+    if (els.turn) els.turn.hidden = true;
+    if (els.listen) els.listen.hidden = true;
+    clearTyping();
+    const rootEl = $("battle-root");
+    if (rootEl) rootEl.classList.remove("is-boss-stage");
     const run = Core.settleRun({
       cleared: true,
       shieldLeft: state.shield,
@@ -647,7 +948,7 @@
     next.tabIndex = 0;
     next.textContent = "下一集 ▶";
     next.addEventListener("click", () => {
-      window.location.href = `battle.html?ep=${EP + 1}`;
+      window.location.href = FROM_GAME ? `game.html?ep=${EP + 1}` : "map.html";
     });
     const back = document.createElement("button");
     back.type = "button";
@@ -662,12 +963,13 @@
 
     const progress = readStore(KEY_PROGRESS);
     const prev = progress[EP] || {};
-    progress[EP] = {
+    progress[EP] = Object.assign({}, prev, {
       stars: Math.max(Number(prev.stars) || 0, run.stars),
       clears: (Number(prev.clears) || 0) + 1,
       wrongWords: run.wrongWords,
+      mapStage: FROM_GAME ? "complete" : prev.mapStage,
       updatedAt: new Date().toISOString(),
-    };
+    });
     writeStore(KEY_PROGRESS, progress);
     const collection = readStore(KEY_COLLECTION);
     if (!collection[boss.id]) {
@@ -679,7 +981,7 @@
   /* ---------- 暂停与门禁 ---------- */
 
   function mapUrl() {
-    return FROM_GAME ? `game.html?ep=${EP}` : "map.html";
+    return FROM_GAME ? `game.html?ep=${EP}&from=battle` : "map.html";
   }
 
   function bindChrome() {
@@ -689,19 +991,26 @@
     };
     els.exit.addEventListener("click", () => {
       if (!els.pause.hidden) {resumePanel();return;}
+      stopAudio("pause");
       window.BookPlayAudio?.suspend("battle-pause");
       showPanel(els.pause);
     });
     $("battle-resume").addEventListener("click", () => {
       resumePanel();
     });
-    $("battle-restart").addEventListener("click", () => window.location.reload());
+    $("battle-restart").addEventListener("click", () => { stopAudio("navigation"); window.location.reload(); });
     $("battle-map").addEventListener("click", () => {
+      stopAudio("navigation");
       window.location.href = mapUrl();
+    });
+    if (els.defend) els.defend.addEventListener("click", armDefend);
+    if (els.listen) els.listen.addEventListener("click", () => {
+      if (state.bossRound && state.bossRound.playTerm) speakTerm(state.bossRound.playTerm);
     });
   }
 
   function showGate(message) {
+    stopAudio("navigation");
     els.gate.textContent = "";
     const title = document.createElement("h2");
     title.className = "battle-panel-title";
@@ -739,7 +1048,9 @@
       fetchJSON(`../data/game/levels/ep${EP}.json`),
       fetchJSON("../data/game/sprites.json").catch(() => null),
       fetchJSON("../data/game/taunts.json").catch(() => ({})),
-    ]).then(([rawLevel, registry, taunts]) => {
+      fetchJSON(`../data/game/audio/ep${EP}.json`).catch(() => ({})),
+      fetchJSON("../data/game/boss-kits.json").catch(() => null),
+    ]).then(([rawLevel, registry, taunts, audioIndex, kits]) => {
       if (!rawLevel) {
         showGate(`第 ${EP} 集的关卡还没解锁，先去读一读这一集的故事吧！`);
         return;
@@ -750,8 +1061,21 @@
         return;
       }
       state.level = level;
+      state.kit = Core.resolveBossKit(kits, level.cast && level.cast.boss && level.cast.boss.id);
+      state.defendLeft = Number(state.kit.hero && state.kit.hero.skills && state.kit.hero.skills.defend && state.kit.hero.skills.defend.usesPerBattle) || 1;
+      state.defendArmed = false;
       state.sprites = Core.loadSprites(registry || null, level.spriteIds);
       state.taunts = taunts && typeof taunts === "object" ? taunts : {};
+      state.audioIndex = audioIndex && typeof audioIndex === "object" ? audioIndex : {};
+      if (window.BookPlayGameAudio) {
+        state.audio = window.BookPlayGameAudio.createGameAudio({
+          episode: EP,
+          audioIndex: state.audioIndex,
+          onState: (status) => {
+            if (els.dialogue) els.dialogue.dataset.audioState = status;
+          },
+        });
+      }
       const progress = readStore(KEY_PROGRESS);
       const prevWrong = progress[EP] && progress[EP].wrongWords ? progress[EP].wrongWords : {};
       Object.entries(prevWrong).forEach(([term, count]) => {
@@ -767,6 +1091,9 @@
   }
 
   els.dialogueNext.addEventListener("click", onIntroNext);
+  els.dialogueReplay?.addEventListener("click", replayDialogue);
   els.previewStart.addEventListener("click", () => startWave(0));
+  window.addEventListener("pagehide", () => stopAudio("navigation"));
+  document.addEventListener("visibilitychange", () => { if (document.hidden) stopAudio("navigation"); });
   boot();
 }());

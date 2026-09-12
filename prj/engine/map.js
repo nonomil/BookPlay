@@ -6,7 +6,9 @@
  *   1) 清空进度:
  *        localStorage.removeItem("bookplay_adv_progress")
  *        localStorage.removeItem("bookplay_drill")
- *      刷新后: 只有第 1 辑第 1 集可点 (current), 其余全部锁定。
+ *        localStorage.removeItem("bookplay_battle_progress_v1")
+ *      西游记：所有集都可点，贴纸为「未完成」；巩固关仍按辑锁定。
+ *      其它系列：只有第 1 辑第 1 集可点 (current), 其余全部锁定。
  *
  *   2) 学完第 1 辑前两集:
  *        localStorage.setItem("bookplay_adv_progress", JSON.stringify({
@@ -219,16 +221,107 @@ function collectionRangeLabel(c) {
 
 const progId  = (n) => SERIES.progPrefix ? SERIES.progPrefix + n : n;
 const epDone  = (n) => { const p = readProg()[progId(n)]; return !!(p && p.done); };
+const GAME_PROG_KEY = "bookplay_battle_progress_v1";
+function readGameProg() {
+  try { return JSON.parse(localStorage.getItem(GAME_PROG_KEY) || "{}"); }
+  catch { return {}; }
+}
+const gameDone = (n) => {
+  const rec = readGameProg()[n] || readGameProg()[String(n)] || {};
+  return rec.mapStage === "complete" || Number(rec.clears) > 0;
+};
+const epCleared = (n) => epDone(n) || (SERIES_ID === "jttw" && gameDone(n));
 const colDone = (c) => epNums(c).every(epDone);
 const drillDone = (c) => !SERIES.hasDrill || !!(readDrill()[c.id] && readDrill()[c.id].done);
 const colUnlocked = (c, prev) => c.index === 1 || (colDone(prev) && drillDone(prev));
-// 调用方 nodesHTML 已用 isUnlocked(= colUnlocked(c, prev)) 把过闸，这里只判集内条件
+// 西游记选关开放所有集；巩固关仍按辑锁定。其它系列保持顺序解锁。
+const OPEN_SELECT = SERIES_ID === "jttw";
 const epUnlocked  = (n, c) => {
+  if (OPEN_SELECT) return true;
   const nums = epNums(c);
   const i = nums.indexOf(n);
   return i <= 0 || epDone(nums[i - 1]);
 };
 const drillUnlocked = (c, prev) => colUnlocked(c, prev) && colDone(c);
+
+function collectionIdForEp(n) {
+  const hit = cols.find((item) => Number(item.from) <= n && n <= Number(item.to));
+  return hit && hit.id ? hit.id : "c01";
+}
+
+/* 合辑 = 世界，集 = 节点。字段形状对齐像素世界 manifest
+ * (id/title/subtitle/background + nodes[{levelId,order,label,subtitle,position,icon}])，
+ * 文案、封面、坐标都用西游合辑/目录，不引入星港/森林/方块。 */
+function collectionWorld(c) {
+  const authored = Array.isArray(c.nodes) ? c.nodes : [];
+  const authoredByEp = new Map();
+  authored.forEach((node) => {
+    const id = Number(node.levelId || node.episode);
+    if (Number.isFinite(id) && id > 0) authoredByEp.set(id, node);
+  });
+  return {
+    id: c.id,
+    title: (c.title && c.title.zh) || "",
+    subtitle: (c.summary && c.summary.zh) || "",
+    background: c.background || "",
+    nodes: epNums(c).map((n, i) => {
+      const extra = authoredByEp.get(n) || {};
+      const meta = epMeta(n);
+      const pos = extra.position && typeof extra.position === "object" ? extra.position : null;
+      return {
+        worldId: c.id,
+        levelId: n,
+        order: extra.order || i + 1,
+        label: extra.label || meta.zh,
+        subtitle: extra.subtitle || meta.en,
+        icon: extra.icon || meta.cover,
+        position: pos,
+      };
+    }),
+  };
+}
+
+function worldNodeAnchors(c, nodeCount) {
+  const world = collectionWorld(c);
+  if (world.nodes.length !== nodeCount) return null;
+  const pts = world.nodes.map((node) => {
+    const x = Number(node.position && node.position.x);
+    const y = Number(node.position && node.position.y);
+    if (!Number.isFinite(x) || !Number.isFinite(y)) return null;
+    return (x > 1 || y > 1) ? [x / 100, y / 100] : [x, y];
+  });
+  if (pts.some((p) => !p)) return null;
+  return pts;
+}
+
+function buildWorldStrip() {
+  // 2026-09-12 全屏改版：合辑缩略图条不再展示（切辑用两侧 ‹ › 箭头/滑动）
+  const nav = $("map-worlds");
+  if (!nav) return;
+  nav.hidden = true;
+  nav.innerHTML = "";
+  return;
+  if (SERIES_ID !== "jttw") {
+    nav.hidden = true;
+    nav.innerHTML = "";
+    document.body.classList.remove("map-terminal");
+    return;
+  }
+  document.body.classList.add("map-terminal");
+  nav.hidden = false;
+  nav.innerHTML = cols.map((c, i) => {
+    const world = collectionWorld(c);
+    const thumb = c.background ? `/data/${c.background}` : "";
+    const img = thumb ? `<img src="${thumb}" alt="">` : "";
+    return `<button type="button" class="map-world-button" data-world-index="${i}" aria-selected="false">
+      ${img}
+      <span><strong>${world.title}</strong><small>${collectionRangeLabel(c)} · ${world.nodes.length}站</small></span>
+    </button>`;
+  }).join("");
+  nav.querySelectorAll(".map-world-button").forEach((btn) => {
+    btn.addEventListener("click", () => scrollToIndex(Number(btn.dataset.worldIndex)));
+  });
+}
 
 /* ---------------- 小工具 ---------------- */
 function toast(msg) {
@@ -252,6 +345,7 @@ function epMeta(n) {
 
 function renderSP() {
   const el = $("sp-badge");
+  if (!el) return; // 顶栏已随全屏改版移除
   try {
     el.textContent = `★ ${parseInt(localStorage.getItem(SP_KEY) || "0", 10)}`;
   } catch {
@@ -312,7 +406,7 @@ function renderSplashMedals(result) {
 }
 
 function renderCompanionSummary() {
-  const entry = $("companion-entry");
+  const entry = $("companion-entry"); // 顶栏已随全屏改版移除：函数体内部逐项判空，splash 渲染继续
   const splashEntry = $("splash-companion");
   const supportsCompanion = SERIES_ID === "jttw" || SERIES_ID === "minecraft";
   const isMinecraft = SERIES_ID === "minecraft";
@@ -492,7 +586,7 @@ function scheduleCollectionNarration(index) {
  * 集数缩小 --card。坐标在 drawRoute 里按真实像素写入，与 SVG viewBox 一致。 */
 const ZIGZAG_INSET_X = 0.13;
 const ZIGZAG_INSET_Y = 0.18;
-const CARD_MIN = 64;
+const CARD_MIN = 120;
 const companionMemory = new Map();
 
 function routeCfg(route) {
@@ -626,7 +720,7 @@ function measureCardRatio(route, w) {
 
 /* 卡片宽度只看视口：宽屏上限 17.5%，高度要能放下三排。不按集数收缩。 */
 function fitCardWidth(route, w, h) {
-  const cap = Math.round(w * 0.175);
+  const cap = Math.round(w * 0.27);
   const k = measureCardRatio(route, cap);
   const byHeight = k ? Math.floor((h - 36) / (3 * k)) : cap;
   return Math.max(CARD_MIN, Math.min(cap, byHeight || cap));
@@ -1124,7 +1218,7 @@ function bindCompanionNavigation(route) {
     if (!link) return;
     link.addEventListener("click", (event) => {
       if (route._walking) { event.preventDefault(); return; }
-      const nodes = route.querySelectorAll(".node");
+      const nodes = [...route.querySelectorAll(".node")]; // NodeList→数组：companionIndex 需要 findIndex
       const current = Math.max(0, Math.min(nodes.length - 1, companionIndex(nodes)));
       if (index === current || node.classList.contains("locked")) return;
       event.preventDefault();
@@ -1244,61 +1338,78 @@ function drawRoute(route) {
 
 /* ---------------- 渲染 ---------------- */
 /* 单集节点卡片：封面缩图 +「第 N 集 · 中文题名」+ 英文题名 + 独立朗读按钮 */
-function epCard(n, state) {
+function epCard(n, state, worldNode) {
   const m = epMeta(n);
-  const img = m.cover
-    ? `<img src="${m.cover}" alt="${m.zh}封面" loading="lazy" onerror="this.parentNode.classList.add('no-cover')">`
+  const label = (worldNode && worldNode.label) || m.zh;
+  const subtitle = (worldNode && worldNode.subtitle) || m.en;
+  const icon = (worldNode && worldNode.icon) || m.cover;
+  const worldId = (worldNode && worldNode.worldId) || collectionIdForEp(n);
+  const img = icon
+    ? `<img src="${icon}" alt="${label}封面" loading="lazy" onerror="this.parentNode.classList.add('no-cover')">`
     : "";
-  const badge =
-    state === "done" ? `<b class="node-badge">✓</b>`
+  const badge = OPEN_SELECT
+    ? `<b class="node-sticker ${state === "done" ? "is-done" : "is-todo"}" aria-label="${state === "done" ? "已完成" : "未完成"}"><img src="/assets/game-stickers/${collectionIdForEp(n)}.png" alt=""></b>`
+    : state === "done" ? `<b class="node-badge">✓</b>`
     : state === "locked" ? `<b class="node-badge lock">🔒</b>`
     : `<b class="node-tip">开始</b>`;
   const content = `
       <span class="node-cover">${img}${badge}</span>
       <span class="node-text">
-        <b class="episode-title"><span class="episode-number">第${n}${SERIES.unit}</span><span class="episode-name">${m.zh}</span></b>
-        <span class="episode-en" lang="en">${m.en}</span>
+        <b class="episode-title"><span class="episode-number">第${n}${SERIES.unit}</span><span class="episode-name">${label}</span></b>
+        <span class="episode-en" lang="en">${subtitle}</span>
       </span>`;
-  const speak = `<button class="node-speak" type="button" data-ep="${n}"
-      aria-label="朗读中英双语标题：${m.zh}，${m.en}" title="朗读中英双语标题">${speakerIcon()}</button>`;
-  const listen = SERIES_ID === "jttw" && state !== "locked"
-    ? `<a class="node-listen" href="wala.html?ep=${n}&mode=listen&loops=2&visual=audio&subtitle=enzh"
-        aria-label="第${n}集磨耳朵" title="隐藏画面，只听本集字幕与声音">🎧 磨耳朵</a>`
-    : "";
-  const dub = SERIES_ID === "jttw" && state !== "locked"
-    ? `<a class="node-dub" href="dub.html?ep=${n}"
-        aria-label="第${n}集趣配音" title="用自己的声音给本集配音">🎙 配音</a>`
-    : "";
-  const battle = SERIES_ID === "jttw" && state !== "locked"
-    ? `<a class="node-battle" href="battle.html?ep=${n}"
-        aria-label="第${n}集降妖记打怪复习" title="用本集单词打怪闯关">⚔️ 打怪</a>`
-    : "";
+  // 2026-09-12 选关改版：卡片面只留封面+标题；磨耳朵/配音/打怪挪进集详情弹层
+  // （openEpisodeDetail）。node-main 保留 href 作为无 JS 回退，点击被拦截开弹层。
+  const nodeAttrs = `data-episode="${n}" data-node-world="${worldId}" data-node-id="${n}"`;
   return state === "locked"
-    ? `<article class="node locked" data-lock="ep" data-episode="${n}">${content}${speak}</article>`
-    : `<article class="node ${state}" data-episode="${n}"><a class="node-main" href="${SERIES.href(n)}">${content}</a>${speak}${listen}${dub}${battle}</article>`;
+    ? `<article class="node locked" data-lock="ep" ${nodeAttrs}>${content}</article>`
+    : `<article class="node ${state}" ${nodeAttrs}><a class="node-main" data-detail="${n}" href="${SERIES.href(n)}" aria-label="查看${label}详情">${content}</a></article>`;
 }
 
-function pagePrimaryAction(c, isUnlocked) {
-  if (!isUnlocked) return "";
-  const nextEpisode = epNums(c).find((n) => !epDone(n));
-  if (nextEpisode != null) {
-    const verb = nextEpisode === c.from ? "开始" : "继续";
-    return `<a class="page-primary-action" href="${SERIES.href(nextEpisode)}">
-      <span>${verb}第${nextEpisode}${SERIES.unit}</span><small>进入故事学习 →</small>
-    </a>`;
+/* ---- 集详情弹层：大封面 + 标题 + 进入故事 + 三个学习入口 ---- */
+let detailEl = null;
+function openEpisodeDetail(n) {
+  const m = epMeta(n);
+  const icon = m.cover || "";
+  if (!detailEl) {
+    detailEl = document.createElement("div");
+    detailEl.id = "episode-detail";
+    detailEl.className = "episode-detail";
+    detailEl.hidden = true;
+    document.body.appendChild(detailEl);
+    detailEl.addEventListener("click", (ev) => {
+      if (ev.target === detailEl) closeEpisodeDetail();
+    });
+    document.addEventListener("keydown", (ev) => {
+      if (ev.key === "Escape" && !detailEl.hidden) closeEpisodeDetail();
+    });
   }
-  if (SERIES.hasDrill && c.has_drill !== false && !drillDone(c)) {
-    return `<a class="page-primary-action page-primary-action-drill" href="drill.html?c=${c.id}">
-      <span>去完成本辑巩固</span><small>完成后解锁下一辑 →</small>
-    </a>`;
-  }
-  if (SERIES_ID === "jttw") {
-    return `<a class="page-primary-action page-primary-action-secondary" href="companion.html?series=jttw">
-      <span>本辑已完成</span><small>去驿站看收藏 →</small>
-    </a>`;
-  }
-  return `<span class="page-primary-action page-primary-action-complete"><span>本辑已完成 ✓</span></span>`;
+  const done = epDone(n);
+  detailEl.innerHTML = `
+    <div class="episode-detail-card" role="dialog" aria-modal="true" aria-label="第${n}${SERIES.unit}详情">
+      <button type="button" class="episode-detail-close" aria-label="关闭" tabindex="0">✕</button>
+      <span class="episode-detail-cover"><img src="${icon}" alt="${m.zh}封面" onerror="this.parentNode.classList.add('no-cover')"></span>
+      <b class="episode-detail-number">第${n}${SERIES.unit}${done ? " · 已完成 ✓" : ""}</b>
+      <h2 class="episode-detail-title" lang="zh">${m.zh}</h2>
+      <p class="episode-detail-en" lang="en">${m.en}</p>
+      <div class="episode-detail-actions">
+        <a class="episode-detail-primary" href="${SERIES.href(n)}" tabindex="0">▶ 进入故事</a>
+        <div class="episode-detail-options">
+          <a class="episode-detail-option" href="wala.html?ep=${n}&mode=listen&loops=2&visual=audio&subtitle=enzh" tabindex="0">🎧 磨耳朵</a>
+          <a class="episode-detail-option" href="dub.html?ep=${n}" tabindex="0">🎙 配音</a>
+          <a class="episode-detail-option" href="game.html?ep=${n}" tabindex="0">⚔️ 打怪</a>
+        </div>
+      </div>
+    </div>`;
+  detailEl.hidden = false;
+  const closeBtn = detailEl.querySelector(".episode-detail-close");
+  if (closeBtn) closeBtn.addEventListener("click", closeEpisodeDetail);
 }
+
+function closeEpisodeDetail() {
+  if (detailEl) detailEl.hidden = true;
+}
+
 
 /* 节点按 DOM 顺序摆到开放 S 形折线上，坐标由 drawRoute 写入 */
 /* 章节节点：一书一图，节点是书内的章节。状态由进度里的最远页推导：
@@ -1340,12 +1451,13 @@ function nodesHTML(c, isUnlocked) {
     return chapterNodesHTML(c, isUnlocked);
   }
 
+  const worldByEp = new Map((SERIES_ID === "jttw" ? collectionWorld(c).nodes : []).map((node) => [node.levelId, node]));
   epNums(c).forEach((n) => {
     let state;
-    if (epDone(n)) state = "done";
-    else if (isUnlocked && epUnlocked(n, c)) state = "current";
+    if (epCleared(n)) state = "done";
+    else if (OPEN_SELECT || (isUnlocked && epUnlocked(n, c))) state = "current";
     else state = "locked";
-    html += epCard(n, state);
+    html += epCard(n, state, worldByEp.get(n));
   });
 
   if (SERIES.hasDrill && c.has_drill !== false) {
@@ -1366,40 +1478,39 @@ function buildPages() {
   track.innerHTML = "";
   pages = [];
   cols.forEach((c, i) => {
-    const isUnlocked = colUnlocked(c, cols[i - 1] || null);
-    const doneCount = epNums(c).filter(epDone).length;
+    const isUnlocked = OPEN_SELECT || colUnlocked(c, cols[i - 1] || null);
+    const doneCount = epNums(c).filter(epCleared).length;
     const total = epNums(c).length;
     const route = c.route || {};
     const summaryZh = c.summary?.zh || "";
+    const drillCount = SERIES.hasDrill && c.has_drill !== false ? 1 : 0;
+    const anchors = route.anchors || (SERIES_ID === "jttw" ? worldNodeAnchors(c, total + drillCount) : null);
+    const stageClass = SERIES_ID === "jttw" ? "route terminal-stage" : "route";
+    const stageImg = SERIES_ID === "jttw" && c.background
+      ? `<img class="route-stage-image" src="/data/${c.background}" alt="${c.title.zh}地图">`
+      : "";
 
     const page = document.createElement("section");
     page.className = "map-page";
     page.dataset.col = c.id;
+    page.dataset.world = c.id;
     page.style.setProperty("--bg", `url('/data/${c.background}')`);
     page.innerHTML = `
       <div class="page-veil"></div>
-      <header class="page-head">
-        <div class="page-title-row">
-          <h2>${c.title.zh}</h2>
-          <button class="page-speak" type="button" data-col="${i}"
-            aria-label="朗读${c.title.zh}剧情介绍" title="朗读篇章介绍">${speakerIcon()}</button>
-        </div>
-        <p class="page-en" lang="en">${c.title.en}</p>
-        ${summaryZh ? `<p class="page-summary">${summaryZh}</p>` : ""}
-        <div class="page-meta">
-          <span class="page-range">${collectionRangeLabel(c)}</span>
-          <span class="page-count">已学 ${doneCount}/${total}</span>
-        </div>
-        ${pagePrimaryAction(c, isUnlocked)}
-        ${!isUnlocked ? `<div class="page-lock-msg">🔒 学完上一辑解锁</div>` : ""}
-      </header>
-      <div class="route" data-unlocked="${isUnlocked ? "true" : "false"}" data-inset-x="${route.insetX ?? ""}" data-top="${route.top ?? ""}" data-bottom="${route.bottom ?? ""}"${route.anchors ? ` data-anchors='${JSON.stringify(route.anchors)}'` : ""}>
+      <div class="${stageClass}" data-unlocked="${isUnlocked ? "true" : "false"}" data-inset-x="${route.insetX ?? ""}" data-top="${route.top ?? ""}" data-bottom="${route.bottom ?? ""}"${anchors ? ` data-anchors='${JSON.stringify(anchors)}'` : ""}>
+        ${stageImg}
         <svg class="route-line" aria-hidden="true">
           <path class="rl-out" d=""></path>
           <path class="rl-in" d=""></path>
         </svg>
         ${nodesHTML(c, isUnlocked)}
-      </div>`;
+      </div>
+      <footer class="page-foot">
+        <b class="page-foot-title">${c.title.zh}</b>
+        <span class="page-foot-en" lang="en">${c.title.en}</span>
+        <span class="page-foot-range">${collectionRangeLabel(c)}</span>
+        <span class="page-foot-count">已学 ${doneCount}/${total}</span>
+      </footer>`;
     track.appendChild(page);
     const routeEl = page.querySelector(".route");
     if (routeEl) bindCompanionHover(routeEl);
@@ -1429,6 +1540,7 @@ function buildPages() {
     });
   }
 
+  buildWorldStrip();
   updateChrome();
   requestAnimationFrame(() => scrollToIndex(initialIndex()));
 }
@@ -1446,12 +1558,21 @@ function scrollToIndex(i) {
 
 function updateChrome() {
   const i = currentIndex();
-  $("col-name").textContent = pages[i] ? pages[i].col.title.zh : "";
+  if ($("col-name")) $("col-name").textContent = pages[i] ? pages[i].col.title.zh : "";
   $("nav-prev").disabled = i <= 0;
   $("nav-next").disabled = i >= pages.length - 1;
+  document.querySelectorAll(".map-world-button").forEach((btn) => {
+    const on = Number(btn.dataset.worldIndex) === i;
+    btn.classList.toggle("is-active", on);
+    btn.setAttribute("aria-selected", on ? "true" : "false");
+  });
   if (i !== visibleCollectionIndex) {
     visibleCollectionIndex = i;
     if (narrationReady) scheduleCollectionNarration(i);
+    const activeWorld = document.querySelector(`.map-world-button[data-world-index="${i}"]`);
+    if (activeWorld && typeof activeWorld.scrollIntoView === "function") {
+      activeWorld.scrollIntoView({ inline: "center", block: "nearest" });
+    }
   }
 }
 
@@ -1484,9 +1605,10 @@ track.addEventListener("click", (e) => {
     playGeneratedAudio([audio.zh, audio.en], `第${n}${SERIES.unit}，${m.zh}`, "zh-CN", epSpeaker);
     return;
   }
-  const listenEntry = e.target.closest(".node-listen");
-  if (listenEntry) {
-    e.stopPropagation();
+  const detailLink = e.target.closest(".node-main[data-detail]");
+  if (detailLink) {
+    e.preventDefault();
+    openEpisodeDetail(Number(detailLink.dataset.detail));
     return;
   }
   const pageSpeaker = e.target.closest(".page-speak");
@@ -1564,7 +1686,7 @@ async function init() {
   companionCatalog = companionResp || companionCatalog;
   for (const ep of (catResp.episodes || [])) catalogMap.set(ep.book || ep.episode, ep);
   document.title = SERIES.pageTitle;
-  $("btn-list").href = SERIES.listUrl;
+  if ($("btn-list")) $("btn-list").href = SERIES.listUrl; // 顶栏已移除时跳过
   if (cols.length < 2) {
     $("map-hint").classList.add("hidden");
     $("nav-prev").classList.add("hidden");

@@ -301,6 +301,37 @@ def test_lesson_session_gates_quiz_and_distinguishes_pass_from_practice() -> Non
     assert "studySession.words.length" in js
 
 
+def test_jttw_passed_lesson_offers_map_game_with_an_explicit_skip() -> None:
+    """Passing consolidation must lead into the optional word-memory map."""
+    js = _read(LESSON_JS)
+    assert 'game.html?ep=${episode}' in js
+    assert "进入降妖记" in js
+    assert "暂时跳过游戏" in js
+
+
+def test_passed_lesson_uses_an_independent_game_invite_layer_with_real_actions() -> None:
+    """The post-consolidation game choice must be an actionable layer, not only HTML links."""
+    html = _read(LESSON_HTML)
+    js = _read(LESSON_JS)
+    css = _read(LESSON_CSS)
+    assert 'id="lesson-game-invite"' in html
+    assert 'id="lesson-game-enter"' in html
+    assert 'id="lesson-game-skip"' in html
+    assert "showGameInvite" in js
+    assert "lesson-game-enter" in js and "lesson-game-skip" in js
+    assert re.search(r"saveCompletion\(passed\)[\s\S]{0,600}showGameInvite\(passed\)", js)
+    assert "lesson-game-invite[hidden]" in css or "#lesson-game-invite[hidden]" in css
+
+
+def test_game_invite_checks_real_level_and_restores_focus_when_skipped() -> None:
+    js = _read(LESSON_JS)
+    assert "fetch(`../data/game/levels/ep${episode}.json`" in js
+    assert "lesson-game-status" in js or "lesson-game-invite-status" in js
+    assert "previousActiveElement" in js
+    assert "showGameInvite(passed)" in js
+    assert "location.href = `game.html?ep=${episode}&from=lesson`" in js
+
+
 def test_lesson_page_exposes_all_requested_learning_modes_and_story_source() -> None:
     html = _read(LESSON_HTML)
     js = _read(LESSON_JS)

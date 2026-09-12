@@ -1,0 +1,15 @@
+flowchart TD
+    Lesson["知识巩固完成并保存结果"] --> Invite["自动邀请：进入/跳过"]
+    Invite -->|进入| Intro["开场与捡投引导"]
+    Invite -->|跳过| Learn["继续学习/复习"]
+    Intro --> Wave1["第一波词球捡投"]
+    Wave1 --> Npc["NPC剧情与答题"]
+    Npc --> Wave2["第二波与六道具"]
+    Wave2 --> Gate["Boss门确认"]
+    Gate --> Battle["Boss回合战"]
+    Battle --> Result["结算与可跳过错词复习"]
+    Result --> Restore["恢复完成地图"]
+    Result --> Learn
+    Wave1 -->|暂停中退出| Learn
+    Battle -->|退出| Learn
+

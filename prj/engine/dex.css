@@ -1,0 +1,231 @@
+/* 妖怪图鉴页：网格卡（已捕捉彩色/已见半透/未解锁剪影）+ 详情卡。
+ * 数据 = ../data/game/dex.json（手写源）+ localStorage bookplay_dex_v1。
+ * 纯展示页：无对错判定、不发奖励；64px 命中与 tv 焦点合同沿用。 */
+
+.dex {
+  position: fixed;
+  inset: 0;
+  overflow: auto;
+  background:
+    radial-gradient(900px 420px at 80% -5%, rgba(120, 180, 255, 0.14), transparent),
+    linear-gradient(180deg, #10141f 0%, #1a1626 55%, #241a12 100%);
+  color: #fff;
+  font-family: "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+  padding: clamp(12px, 2.4vw, 24px);
+  padding-bottom: calc(24px + env(safe-area-inset-bottom, 0));
+}
+
+.dex-head {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 16px;
+}
+
+.dex-back {
+  min-height: 48px;
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 16px;
+  border-radius: 999px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.dex-title {
+  margin: 0;
+  font-size: clamp(20px, 3vw, 28px);
+  color: #ffd76a;
+}
+
+.dex-progress {
+  margin-left: auto;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  padding: 4px 16px;
+  border-radius: 999px;
+  background: rgba(255, 215, 106, 0.14);
+  border: 2px solid rgba(255, 215, 106, 0.6);
+  color: #ffd76a;
+  font-weight: 800;
+  font-size: clamp(14px, 2vw, 18px);
+}
+
+.dex-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 14px;
+}
+
+.dex-card {
+  position: relative;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  color: #fff;
+  text-align: center;
+  border-radius: 16px;
+}
+
+.dex-card-fig {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  background: rgba(255, 255, 255, 0.08);
+  aspect-ratio: 4 / 5;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.dex-card-fig img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 8px;
+}
+
+.dex-card.is-locked .dex-card-fig img {
+  filter: brightness(0) opacity(0.55);
+}
+
+.dex-card.is-seen:not(.is-caught) .dex-card-fig img {
+  filter: saturate(0.4) brightness(0.75);
+}
+
+.dex-card.is-caught .dex-card-fig {
+  border-color: rgba(255, 215, 106, 0.85);
+  box-shadow: 0 8px 22px rgba(232, 161, 58, 0.22);
+}
+
+.dex-card-name {
+  display: block;
+  margin-top: 6px;
+  font-size: clamp(13px, 1.8vw, 16px);
+  font-weight: 700;
+}
+
+.dex-card-locked-name {
+  opacity: 0.6;
+}
+
+.dex-card-stars {
+  position: absolute;
+  top: 6px;
+  right: 8px;
+  font-size: 13px;
+  color: #ffd76a;
+}
+
+.dex-card-element {
+  position: absolute;
+  top: 6px;
+  left: 8px;
+  padding: 1px 8px;
+  border-radius: 999px;
+  font-size: 11px;
+  background: rgba(15, 20, 36, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+/* 详情卡（复用 episode-detail 视觉语言） */
+
+.dex-detail {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(8, 12, 24, 0.72);
+  padding: 24px;
+}
+
+.dex-detail-card {
+  width: min(480px, 94vw);
+  max-height: 88vh;
+  overflow: auto;
+  text-align: center;
+  border-radius: 22px;
+  background: linear-gradient(180deg, rgba(30, 38, 66, 0.98), rgba(18, 24, 44, 0.98));
+  border: 2px solid rgba(255, 215, 106, 0.55);
+  padding: clamp(16px, 3vw, 28px);
+}
+
+.dex-detail-card img {
+  width: min(220px, 60%);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 8px;
+}
+
+.dex-detail-name {
+  margin: 8px 0 4px;
+  font-size: clamp(20px, 3vw, 28px);
+  color: #ffd76a;
+}
+
+.dex-detail-meta {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.dex-detail-meta span {
+  padding: 3px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 215, 106, 0.5);
+  background: rgba(255, 215, 106, 0.12);
+  font-size: 13px;
+}
+
+.dex-detail-words {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: center;
+  margin: 8px 0 12px;
+}
+
+.dex-detail-words span {
+  padding: 4px 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  font-size: 14px;
+}
+
+.dex-detail-close {
+  min-height: 56px;
+  min-width: 140px;
+  border-radius: 16px;
+  border: 0;
+  background: linear-gradient(180deg, #ffd76a, #e8a13a);
+  color: #4a2f00;
+  font-weight: 800;
+  font-size: 16px;
+}
+
+.dex-toast {
+  position: fixed;
+  z-index: 50;
+  left: 50%;
+  bottom: 28px;
+  transform: translateX(-50%);
+  padding: 8px 18px;
+  border-radius: 999px;
+  background: rgba(15, 20, 36, 0.9);
+  border: 2px solid rgba(255, 215, 106, 0.7);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dex-card,
+  .dex-detail-card { transition: none; }
+}

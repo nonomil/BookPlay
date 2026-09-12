@@ -1,0 +1,10 @@
+flowchart TD
+    Lesson["知识巩固完成"] --> Invite["进入游戏 / 暂时跳过"]
+    Invite -->|进入| Wave1["第一波：移动 + 捡词球 + 投掷"]
+    Invite -->|跳过| Review["保留学习结果，回结果/复习"]
+    Wave1 --> Npc["NPC 剧情与选择题"]
+    Npc --> Wave2["第二波小怪"]
+    Wave2 --> Gate["Boss 门：NPC完成且小怪清空"]
+    Gate --> Battle["Boss 回合：一次命中锁"]
+    Battle --> Return["from=battle 返回地图"]
+    Return --> Complete["不重播、不重刷、结算"]

@@ -59,6 +59,7 @@
 
   document.addEventListener("keydown", (event) => {
     if (!isTv() || !/^Arrow(?:Up|Down|Left|Right)$/.test(event.key)) return;
+    if (typeof window.BookPlayDirectionalInputActive === "function" && window.BookPlayDirectionalInputActive()) return;
     const current = document.activeElement;
     if (current === document.body) {
       focusInitial();

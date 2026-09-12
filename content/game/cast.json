@@ -1,24 +1,445 @@
 {
  "schema_version": 1,
  "comment": "降妖记关卡的角色分派表（人工维护）。bossByEp 为每集 Boss 显式表（优先）；minorsByEp 每集小怪；themesByEp 战斗背景主题；minorNames 为小怪中文名。未列出的集数：hero=wukong，boss 回退 imp（villain），minors 回退 imp，theme 回退 generic。",
- "heroDefault": { "id": "wukong", "nameZh": "孙悟空" },
+ "heroDefault": {
+  "id": "wukong",
+  "nameZh": "孙悟空"
+ },
  "bossByEp": {
-  "1": { "id": "monkey-minor", "mode": "sparring", "nameZh": "猴群小头目" },
-  "2": { "id": "monkey-minor", "mode": "sparring", "nameZh": "瀑洞守门猴" },
-  "3": { "id": "subodhi-disciple", "mode": "sparring", "nameZh": "三星洞道童" },
-  "4": { "id": "subodhi", "mode": "sparring", "nameZh": "菩提祖师" },
-  "5": { "id": "chaosdemon", "mode": "villain", "nameZh": "混世魔王" },
-  "6": { "id": "dragonking", "mode": "sparring", "nameZh": "东海龙王" },
-  "7": { "id": "underworld-clerk", "mode": "villain", "nameZh": "阴差头目" }
+  "1": {
+   "id": "monkey-minor",
+   "mode": "sparring",
+   "nameZh": "猴群小头目"
+  },
+  "2": {
+   "id": "monkey-minor",
+   "mode": "sparring",
+   "nameZh": "瀑洞守门猴"
+  },
+  "3": {
+   "id": "subodhi-disciple",
+   "mode": "sparring",
+   "nameZh": "三星洞道童"
+  },
+  "4": {
+   "id": "subodhi",
+   "mode": "sparring",
+   "nameZh": "菩提祖师"
+  },
+  "5": {
+   "id": "chaosdemon",
+   "mode": "villain",
+   "nameZh": "混世魔王"
+  },
+  "6": {
+   "id": "dragonking",
+   "mode": "sparring",
+   "nameZh": "东海龙王"
+  },
+  "7": {
+   "id": "underworld-clerk",
+   "mode": "villain",
+   "nameZh": "阴差头目"
+  },
+  "8": {
+   "id": "heaven-captain",
+   "mode": "sparring",
+   "nameZh": "天将"
+  },
+  "9": {
+   "id": "tudigong",
+   "mode": "sparring",
+   "nameZh": "蟠桃园土地"
+  },
+  "10": {
+   "id": "heaven-captain",
+   "mode": "sparring",
+   "nameZh": "天将"
+  },
+  "11": {
+   "id": "heaven-captain",
+   "mode": "villain",
+   "nameZh": "天兵头目"
+  },
+  "12": {
+   "id": "rulai",
+   "mode": "sparring",
+   "nameZh": "如来佛祖"
+  },
+  "13": {
+   "id": "rulai",
+   "mode": "sparring",
+   "nameZh": "佛祖"
+  },
+  "14": {
+   "id": "mountain-bandit",
+   "mode": "villain",
+   "nameZh": "山间妖怪"
+  },
+  "15": {
+   "id": "mountain-bandit",
+   "mode": "villain",
+   "nameZh": "强盗头目"
+  },
+  "16": {
+   "id": "dragonking",
+   "mode": "sparring",
+   "nameZh": "龙王"
+  },
+  "17": {
+   "id": "yingchou",
+   "mode": "villain",
+   "nameZh": "鹰愁涧龙"
+  },
+  "18": {
+   "id": "whitedragonhorse",
+   "mode": "sparring",
+   "nameZh": "白龙"
+  },
+  "19": {
+   "id": "jinchi",
+   "mode": "villain",
+   "nameZh": "金池长老"
+  },
+  "20": {
+   "id": "blackwind",
+   "mode": "villain",
+   "nameZh": "黑风王"
+  },
+  "21": {
+   "id": "blackwind",
+   "mode": "villain",
+   "nameZh": "黑风王"
+  },
+  "22": {
+   "id": "blackwind",
+   "mode": "villain",
+   "nameZh": "黑风王"
+  },
+  "23": {
+   "id": "bajie",
+   "mode": "sparring",
+   "nameZh": "猪八戒"
+  },
+  "24": {
+   "id": "yellowwind",
+   "mode": "villain",
+   "nameZh": "黄风大王"
+  },
+  "25": {
+   "id": "yellowwind",
+   "mode": "villain",
+   "nameZh": "黄风大王"
+  },
+  "26": {
+   "id": "shawujing",
+   "mode": "sparring",
+   "nameZh": "沙僧"
+  },
+  "27": {
+   "id": "forest-beast",
+   "mode": "villain",
+   "nameZh": "林中野兽"
+  },
+  "28": {
+   "id": "zhenyuan",
+   "mode": "sparring",
+   "nameZh": "镇元大仙"
+  },
+  "29": {
+   "id": "zhenyuan",
+   "mode": "sparring",
+   "nameZh": "镇元大仙"
+  },
+  "30": {
+   "id": "zhenyuan",
+   "mode": "villain",
+   "nameZh": "镇元大仙"
+  },
+  "31": {
+   "id": "zhenyuan",
+   "mode": "sparring",
+   "nameZh": "镇元大仙"
+  },
+  "32": {
+   "id": "whitebone",
+   "mode": "villain",
+   "nameZh": "白骨夫人"
+  },
+  "33": {
+   "id": "bajie",
+   "mode": "sparring",
+   "nameZh": "猪八戒"
+  },
+  "34": {
+   "id": "yellowrobe",
+   "mode": "villain",
+   "nameZh": "黄袍怪"
+  },
+  "35": {
+   "id": "king",
+   "mode": "sparring",
+   "nameZh": "宝象国王"
+  },
+  "36": {
+   "id": "yellowrobe",
+   "mode": "villain",
+   "nameZh": "黄袍怪"
+  },
+  "37": {
+   "id": "yellowrobe",
+   "mode": "villain",
+   "nameZh": "黄袍怪"
+  },
+  "38": {
+   "id": "goldenhorn",
+   "mode": "villain",
+   "nameZh": "金角大王"
+  },
+  "39": {
+   "id": "goldenhorn",
+   "mode": "villain",
+   "nameZh": "金角大王"
+  },
+  "40": {
+   "id": "goldenhorn",
+   "mode": "villain",
+   "nameZh": "金角大王"
+  },
+  "42": {
+   "id": "goldenhorn",
+   "mode": "villain",
+   "nameZh": "金角大王"
+  },
+  "43": {
+   "id": "goldenhorn",
+   "mode": "villain",
+   "nameZh": "金角大王"
+  },
+  "41": {
+   "id": "heaven-captain",
+   "mode": "sparring",
+   "nameZh": "南天门守卫"
+  },
+  "44": {
+   "id": "king",
+   "mode": "sparring",
+   "nameZh": "乌鸡国王"
+  },
+  "45": {
+   "id": "prince",
+   "mode": "sparring",
+   "nameZh": "乌鸡国太子"
+  },
+  "46": {
+   "id": "laojun",
+   "mode": "sparring",
+   "nameZh": "太上老君"
+  },
+  "47": {
+   "id": "tang",
+   "mode": "villain",
+   "nameZh": "假唐僧"
+  },
+  "48": {
+   "id": "redboy",
+   "mode": "villain",
+   "nameZh": "红孩儿"
+  },
+  "49": {
+   "id": "redboy",
+   "mode": "villain",
+   "nameZh": "红孩儿"
+  },
+  "50": {
+   "id": "redboy",
+   "mode": "villain",
+   "nameZh": "红孩儿"
+  },
+  "51": {
+   "id": "redboy",
+   "mode": "villain",
+   "nameZh": "红孩儿"
+  },
+  "52": {
+   "id": "redboy",
+   "mode": "villain",
+   "nameZh": "红孩儿"
+  },
+  "53": {
+   "id": "redboy",
+   "mode": "villain",
+   "nameZh": "红孩儿"
+  },
+  "54": {
+   "id": "heishui",
+   "mode": "villain",
+   "nameZh": "黑水河神"
+  }
  },
  "minorsByEp": {
-  "1": ["monkey-minor"],
-  "2": ["monkey-minor"],
-  "3": ["subodhi-disciple"],
-  "4": ["subodhi-disciple"],
-  "5": ["chaosdemon-minion"],
-  "6": ["dragonking-soldier"],
-  "7": ["underworld-clerk"]
+  "1": [
+   "monkey-minor"
+  ],
+  "2": [
+   "monkey-minor"
+  ],
+  "3": [
+   "subodhi-disciple"
+  ],
+  "4": [
+   "subodhi-disciple"
+  ],
+  "5": [
+   "chaosdemon-minion"
+  ],
+  "6": [
+   "dragonking-soldier"
+  ],
+  "7": [
+   "underworld-clerk"
+  ],
+  "8": [
+   "heaven-soldier"
+  ],
+  "9": [
+   "monkey-minor"
+  ],
+  "10": [
+   "heaven-soldier"
+  ],
+  "11": [
+   "heaven-soldier"
+  ],
+  "12": [
+   "temple-novice"
+  ],
+  "13": [
+   "temple-novice"
+  ],
+  "14": [
+   "mountain-bandit"
+  ],
+  "15": [
+   "mountain-bandit"
+  ],
+  "16": [
+   "dragonking-soldier"
+  ],
+  "17": [
+   "dragonking-soldier"
+  ],
+  "18": [
+   "dragonking-soldier"
+  ],
+  "19": [
+   "temple-novice"
+  ],
+  "20": [
+   "blackwind-imp"
+  ],
+  "21": [
+   "blackwind-imp"
+  ],
+  "22": [
+   "blackwind-imp"
+  ],
+  "23": [
+   "monkey-minor"
+  ],
+  "24": [
+   "sand-yaksha"
+  ],
+  "25": [
+   "sand-yaksha"
+  ],
+  "26": [
+   "underworld-clerk"
+  ],
+  "27": [
+   "forest-beast"
+  ],
+  "28": [
+   "subodhi-disciple"
+  ],
+  "29": [
+   "subodhi-disciple"
+  ],
+  "30": [
+   "subodhi-disciple"
+  ],
+  "31": [
+   "subodhi-disciple"
+  ],
+  "32": [
+   "bone-wraith"
+  ],
+  "33": [
+   "monkey-minor"
+  ],
+  "34": [
+   "yellowrobe-imp"
+  ],
+  "35": [
+   "court-guard"
+  ],
+  "36": [
+   "yellowrobe-imp"
+  ],
+  "37": [
+   "yellowrobe-imp"
+  ],
+  "38": [
+   "gourd-imp"
+  ],
+  "39": [
+   "gourd-imp"
+  ],
+  "40": [
+   "gourd-imp"
+  ],
+  "41": [
+   "heaven-soldier"
+  ],
+  "42": [
+   "gourd-imp"
+  ],
+  "43": [
+   "gourd-imp"
+  ],
+  "44": [
+   "court-guard"
+  ],
+  "45": [
+   "court-guard"
+  ],
+  "46": [
+   "subodhi-disciple"
+  ],
+  "47": [
+   "subodhi-disciple"
+  ],
+  "48": [
+   "fire-imp"
+  ],
+  "49": [
+   "fire-imp"
+  ],
+  "50": [
+   "fire-imp"
+  ],
+  "51": [
+   "fire-imp"
+  ],
+  "52": [
+   "fire-imp"
+  ],
+  "53": [
+   "fire-imp"
+  ],
+  "54": [
+   "dragonking-soldier"
+  ]
  },
  "minorNames": {
   "monkey-minor": "小猴子",
@@ -26,16 +447,258 @@
   "chaosdemon-minion": "水妖",
   "dragonking-soldier": "虾兵",
   "underworld-clerk": "阴差",
-  "imp": "小妖"
+  "imp": "小妖",
+  "heaven-soldier": "小天兵",
+  "bone-wraith": "白骨小卒",
+  "gourd-imp": "葫芦洞小妖",
+  "fire-imp": "火云洞小妖",
+  "temple-novice": "小沙弥",
+  "mountain-bandit": "山贼",
+  "blackwind-imp": "黑风小妖",
+  "sand-yaksha": "黄沙夜叉",
+  "court-guard": "宫廷卫士",
+  "bajie": "猪八戒",
+  "whitebone": "白骨夫人",
+  "yellowwind": "黄风大王",
+  "zhenyuan": "镇元大仙",
+  "blackwind": "黑风王",
+  "goldenhorn": "金角大王",
+  "shawujing": "沙僧",
+  "whitedragonhorse": "白龙马",
+  "tang": "唐僧",
+  "hundredflowers": "百花公主",
+  "heaven-captain": "天将",
+  "redboy": "红孩儿",
+  "guanyin": "观音",
+  "forest-beast": "林中野兽",
+  "yellowrobe-imp": "黄袍小妖",
+  "yellowrobe": "黄袍怪",
+  "rulai": "如来",
+  "jinchi": "金池长老",
+  "laojun": "太上老君",
+  "king": "国王",
+  "tudigong": "土地公",
+  "prince": "太子",
+  "heishui": "黑水河神",
+  "yingchou": "鹰愁涧龙"
  },
  "npcByEp": {
-  "1": { "intro": "monkey-minor", "quiz": "monkey-minor" },
-  "2": { "intro": "monkey-minor", "quiz": "monkey-minor" },
-  "3": { "intro": "subodhi-disciple", "quiz": "subodhi-disciple" },
-  "4": { "intro": "subodhi-disciple", "quiz": "subodhi-disciple" },
-  "5": { "intro": "chaosdemon-minion", "quiz": "monkey-minor" },
-  "6": { "intro": "dragonking-soldier", "quiz": "dragonking-soldier" },
-  "7": { "intro": "underworld-clerk", "quiz": "underworld-clerk" }
+  "1": {
+   "intro": "monkey-minor",
+   "quiz": "monkey-minor"
+  },
+  "2": {
+   "intro": "monkey-minor",
+   "quiz": "monkey-minor"
+  },
+  "3": {
+   "intro": "subodhi-disciple",
+   "quiz": "subodhi-disciple"
+  },
+  "4": {
+   "intro": "subodhi-disciple",
+   "quiz": "subodhi-disciple"
+  },
+  "5": {
+   "intro": "chaosdemon-minion",
+   "quiz": "monkey-minor"
+  },
+  "6": {
+   "intro": "dragonking-soldier",
+   "quiz": "dragonking-soldier"
+  },
+  "7": {
+   "intro": "underworld-clerk",
+   "quiz": "underworld-clerk"
+  },
+  "8": {
+   "intro": "heaven-captain",
+   "quiz": "heaven-captain"
+  },
+  "9": {
+   "intro": "tudigong",
+   "quiz": "tudigong"
+  },
+  "10": {
+   "intro": "heaven-captain",
+   "quiz": "heaven-captain"
+  },
+  "11": {
+   "intro": "heaven-captain",
+   "quiz": "heaven-captain"
+  },
+  "12": {
+   "intro": "temple-novice",
+   "quiz": "rulai"
+  },
+  "13": {
+   "intro": "temple-novice",
+   "quiz": "rulai"
+  },
+  "14": {
+   "intro": "mountain-bandit",
+   "quiz": "mountain-bandit"
+  },
+  "15": {
+   "intro": "mountain-bandit",
+   "quiz": "mountain-bandit"
+  },
+  "16": {
+   "intro": "dragonking-soldier",
+   "quiz": "dragonking"
+  },
+  "17": {
+   "intro": "dragonking-soldier",
+   "quiz": "yingchou"
+  },
+  "18": {
+   "intro": "whitedragonhorse",
+   "quiz": "whitedragonhorse"
+  },
+  "19": {
+   "intro": "temple-novice",
+   "quiz": "jinchi"
+  },
+  "20": {
+   "intro": "blackwind",
+   "quiz": "blackwind"
+  },
+  "21": {
+   "intro": "blackwind",
+   "quiz": "blackwind"
+  },
+  "22": {
+   "intro": "blackwind",
+   "quiz": "blackwind"
+  },
+  "23": {
+   "intro": "bajie",
+   "quiz": "bajie"
+  },
+  "24": {
+   "intro": "yellowwind",
+   "quiz": "yellowwind"
+  },
+  "25": {
+   "intro": "yellowwind",
+   "quiz": "yellowwind"
+  },
+  "26": {
+   "intro": "shawujing",
+   "quiz": "shawujing"
+  },
+  "27": {
+   "intro": "forest-beast",
+   "quiz": "forest-beast"
+  },
+  "28": {
+   "intro": "zhenyuan",
+   "quiz": "zhenyuan"
+  },
+  "29": {
+   "intro": "zhenyuan",
+   "quiz": "zhenyuan"
+  },
+  "30": {
+   "intro": "zhenyuan",
+   "quiz": "zhenyuan"
+  },
+  "31": {
+   "intro": "zhenyuan",
+   "quiz": "zhenyuan"
+  },
+  "32": {
+   "intro": "whitebone",
+   "quiz": "whitebone"
+  },
+  "33": {
+   "intro": "bajie",
+   "quiz": "bajie"
+  },
+  "34": {
+   "intro": "yellowrobe-imp",
+   "quiz": "yellowrobe"
+  },
+  "35": {
+   "intro": "tang",
+   "quiz": "king"
+  },
+  "36": {
+   "intro": "yellowrobe-imp",
+   "quiz": "yellowrobe"
+  },
+  "37": {
+   "intro": "yellowrobe-imp",
+   "quiz": "yellowrobe"
+  },
+  "38": {
+   "intro": "goldenhorn",
+   "quiz": "goldenhorn"
+  },
+  "39": {
+   "intro": "goldenhorn",
+   "quiz": "goldenhorn"
+  },
+  "40": {
+   "intro": "goldenhorn",
+   "quiz": "goldenhorn"
+  },
+  "42": {
+   "intro": "goldenhorn",
+   "quiz": "goldenhorn"
+  },
+  "43": {
+   "intro": "goldenhorn",
+   "quiz": "goldenhorn"
+  },
+  "41": {
+   "intro": "heaven-captain",
+   "quiz": "heaven-captain"
+  },
+  "44": {
+   "intro": "tang",
+   "quiz": "king"
+  },
+  "45": {
+   "intro": "tang",
+   "quiz": "prince"
+  },
+  "46": {
+   "intro": "laojun",
+   "quiz": "laojun"
+  },
+  "47": {
+   "intro": "tang",
+   "quiz": "tang"
+  },
+  "48": {
+   "intro": "redboy",
+   "quiz": "redboy"
+  },
+  "49": {
+   "intro": "redboy",
+   "quiz": "redboy"
+  },
+  "50": {
+   "intro": "redboy",
+   "quiz": "redboy"
+  },
+  "51": {
+   "intro": "guanyin",
+   "quiz": "guanyin"
+  },
+  "52": {
+   "intro": "guanyin",
+   "quiz": "guanyin"
+  },
+  "53": {
+   "intro": "guanyin",
+   "quiz": "guanyin"
+  },
+  "54": {
+   "intro": "shawujing",
+   "quiz": "shawujing"
+  }
  },
  "themesByEp": {
   "1": "flower-fruit-mountain",
@@ -44,6 +707,53 @@
   "4": "three-star-cave",
   "5": "water-dirty-cave",
   "6": "dragon-palace",
-  "7": "underworld"
+  "7": "underworld",
+  "8": "episode-scene",
+  "9": "episode-scene",
+  "10": "episode-scene",
+  "11": "episode-scene",
+  "12": "episode-scene",
+  "13": "episode-scene",
+  "14": "episode-scene",
+  "15": "episode-scene",
+  "16": "episode-scene",
+  "17": "episode-scene",
+  "18": "episode-scene",
+  "19": "episode-scene",
+  "20": "episode-scene",
+  "21": "episode-scene",
+  "22": "episode-scene",
+  "23": "episode-scene",
+  "24": "episode-scene",
+  "25": "episode-scene",
+  "26": "episode-scene",
+  "27": "episode-scene",
+  "28": "episode-scene",
+  "29": "episode-scene",
+  "30": "episode-scene",
+  "31": "episode-scene",
+  "32": "episode-scene",
+  "33": "episode-scene",
+  "34": "episode-scene",
+  "35": "episode-scene",
+  "36": "episode-scene",
+  "37": "episode-scene",
+  "38": "episode-scene",
+  "39": "episode-scene",
+  "40": "episode-scene",
+  "41": "episode-scene",
+  "42": "episode-scene",
+  "43": "episode-scene",
+  "44": "episode-scene",
+  "45": "episode-scene",
+  "46": "episode-scene",
+  "47": "episode-scene",
+  "48": "episode-scene",
+  "49": "episode-scene",
+  "50": "episode-scene",
+  "51": "episode-scene",
+  "52": "episode-scene",
+  "53": "episode-scene",
+  "54": "episode-scene"
  }
 }

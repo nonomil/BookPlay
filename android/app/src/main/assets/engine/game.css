@@ -1,7 +1,14 @@
-/* 降妖记大地图样式：3×3 平铺世界 + 镜头跟随 + 自由行走 + 词球投掷。
- * 玩法与视觉结构对照 word-memory-map：worldStage 300%、实体百分比定位、
+/* 降妖记大地图样式：4×4 平铺世界 + 镜头跟随 + 自由行走 + 词球投掷。
+ * 玩法与视觉结构对照 word-memory-map：worldStage 400%、实体百分比定位、
  * 镜头 translate3d、头顶词牌小怪、地面中文词球、支援道具托盘、区域横幅。
  * 焦点环、命中高度、safe-area 与 reduced-motion 遵循 tv.css 合同。 */
+
+/* Author rules such as .game-dialogue { display: flex } override the user
+ * agent's [hidden] rule. Keep every transient panel truly removed from the
+ * hit-test and paint tree until game.js explicitly clears hidden. */
+[hidden] {
+  display: none !important;
+}
 
 .game {
   position: fixed;
@@ -20,21 +27,21 @@
   overflow: hidden;
 }
 
-/* 世界舞台：3×3 视口大小，镜头用 translate3d 平移 */
+/* 世界舞台：4×4 视口大小，镜头用 translate3d 平移 */
 .game-world {
   position: absolute;
   left: 0;
   top: 0;
-  width: 300%;
-  height: 300%;
+  width: 400%;
+  height: 400%;
   will-change: transform;
 }
 
 .game-backdrop {
   position: absolute;
   inset: 0;
-  background-repeat: repeat;
-  background-size: 33.334% 33.334%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   background-position: center;
 }
 
@@ -79,7 +86,7 @@
 }
 
 .game-entity.is-hero {
-  z-index: 3;
+  z-index: 6;
 }
 
 .game-entity.is-hero img {
@@ -87,6 +94,10 @@
 }
 
 .game-entity.is-monster {
+  /* Monsters render above NPCs when authored spawn points overlap. Their
+   * word label is the intended hit target; without an explicit stacking
+   * level a later NPC button intercepted the click and opened its dialogue. */
+  z-index: 4;
   cursor: pointer;
 }
 
@@ -120,6 +131,26 @@
   pointer-events: none;
 }
 
+.game-entity.is-throw {
+  transform: translate(-50%, -50%) scale(1.08) rotate(-8deg);
+}
+
+.game-dust {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  margin: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.45);
+  transform: translate(-50%, -50%) scale(1);
+  animation: game-dust-fade 0.28s ease-out forwards;
+  pointer-events: none;
+}
+
+@keyframes game-dust-fade {
+  to { opacity: 0; transform: translate(-50%, -20%) scale(0.3); }
+}
+
 .game-entity.is-npc {
   cursor: pointer;
 }
@@ -134,6 +165,11 @@
 
 .game-entity.is-bossspot {
   cursor: pointer;
+}
+
+.game-entity.is-bossspot.is-locked {
+  filter: grayscale(0.7) brightness(0.68);
+  opacity: 0.72;
 }
 
 .game-entity.is-bossspot .game-boss-aura {
@@ -156,28 +192,71 @@
   50% { transform: scale(1.12); }
 }
 
-/* 地面词球（中文） */
+/* 地面蟠桃（中文词在牌子上，不和英文小怪叠在一起） */
 
 .game-orb {
   position: absolute;
+  pointer-events: auto;
   transform: translate(-50%, -50%);
-  min-width: clamp(56px, 7vw, 84px);
-  min-height: clamp(56px, 7vw, 84px);
-  border-radius: 50%;
-  border: 3px solid rgba(255, 255, 255, 0.75);
-  background: radial-gradient(circle at 32% 30%, #fff3c4, #ffb347 70%, #e8892b);
+  min-width: 0;
+  min-height: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
   color: #5a3200;
   font-weight: 800;
-  font-size: clamp(12px, 1.5vw, 16px);
-  line-height: 1.15;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  padding: 6px;
+  gap: 2px;
+  padding: 0;
   cursor: pointer;
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.35);
+  box-shadow: none;
   animation: game-orb-bob 1.6s ease-in-out infinite;
+}
+
+.game-orb-fruit {
+  font-size: clamp(36px, 5.2vw, 58px);
+  line-height: 1;
+  filter: drop-shadow(0 6px 8px rgba(0, 0, 0, 0.35));
+}
+
+.game-orb-fruit-img {
+  width: clamp(40px, 5.6vw, 68px);
+  height: clamp(40px, 5.6vw, 68px);
+  object-fit: contain;
+  pointer-events: none;
+  filter: drop-shadow(0 6px 8px rgba(0, 0, 0, 0.35));
+}
+
+.game-orb-tag {
+  max-width: 8.5em;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: rgba(255, 248, 230, 0.94);
+  border: 1px solid rgba(196, 120, 48, 0.55);
+  color: #6a3a12;
+  font-size: clamp(11px, 1.3vw, 14px);
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.game-support-drop {
+  position: absolute;
+  z-index: 7;
+  width: clamp(54px, 6vw, 76px);
+  min-height: 54px;
+  transform: translate(-50%, -50%);
+  border: 3px solid rgba(255, 240, 158, 0.95);
+  border-radius: 50%;
+  background: rgba(38, 30, 70, 0.9);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.38), 0 0 18px rgba(255, 215, 90, 0.55);
+  font-size: clamp(28px, 4vw, 42px);
+  pointer-events: auto;
+  animation: game-orb-bob 1.4s ease-in-out infinite;
 }
 
 @keyframes game-orb-bob {
@@ -189,20 +268,21 @@
 
 .game-shot {
   position: absolute;
-  min-width: 48px;
-  min-height: 48px;
-  border-radius: 50%;
-  border: 2px solid #fff;
-  background: radial-gradient(circle at 32% 30%, #fff3c4, #ffb347 70%, #e8892b);
+  min-width: 0;
+  min-height: 0;
+  border: 0;
+  background: transparent;
   color: #5a3200;
-  font-weight: 800;
-  font-size: 13px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 4px;
-  text-align: center;
+  box-shadow: none;
   z-index: 5;
+  pointer-events: none;
+}
+
+.game-shot .game-orb-fruit {
+  font-size: clamp(28px, 4vw, 42px);
 }
 
 .game-shot-trail {
@@ -437,20 +517,86 @@
 
 /* 对话框（pixel-story 式：立绘 + 名牌 + 台词 + ▼） */
 
+.game-route {
+  position: absolute;
+  z-index: 6;
+  left: 12px;
+  top: calc(58px + env(safe-area-inset-top, 0));
+  display: flex;
+  gap: 8px;
+  pointer-events: auto;
+}
+
+.game-route-node {
+  display: grid;
+  min-width: 92px;
+  min-height: 52px;
+  padding: 6px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.78);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.82);
+  color: #29434a;
+  text-align: left;
+  box-shadow: 0 8px 18px rgba(35, 75, 67, 0.14);
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+}
+
+.game-route-node strong,
+.game-route-node small {
+  display: block;
+}
+
+.game-route-node strong { font-size: 13px; }
+.game-route-node small {
+  margin-top: 2px;
+  color: #60777b;
+  font-size: 10px;
+}
+
+.game-route-node.is-current {
+  border-color: #efbd4f;
+  box-shadow: 0 0 0 3px rgba(239, 189, 79, 0.35), 0 8px 18px rgba(35, 75, 67, 0.14);
+}
+
+.game-route-node.is-done { opacity: 0.72; }
+.game-route-node.is-locked { opacity: 0.42; }
+
 .game-dialogue {
   position: absolute;
   z-index: 8;
   left: 50%;
-  bottom: calc(16px + env(safe-area-inset-bottom, 0));
+  top: calc(58px + env(safe-area-inset-top, 0));
+  bottom: auto;
   transform: translateX(-50%);
-  width: min(680px, 94vw);
+  width: min(640px, 86vw);
   display: flex;
   gap: 12px;
   align-items: flex-end;
-  background: rgba(16, 22, 40, 0.95);
-  border: 2px solid rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(255, 255, 255, 0.72);
   border-radius: 20px;
-  padding: clamp(12px, 2.4vw, 20px);
+  padding: clamp(10px, 2vw, 16px);
+  color: #29434a;
+  box-shadow: 0 14px 32px rgba(53, 92, 87, 0.16);
+  backdrop-filter: blur(14px);
+}
+
+.game-dialogue-body {
+  position: relative;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.game-dialogue-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  min-width: 72px;
+  min-height: 44px;
+  margin: 0;
+  padding: 6px 12px;
+  font-size: 14px;
 }
 
 .game-dialogue-face {
@@ -461,26 +607,43 @@
   align-self: center;
 }
 
+.game-dialogue-kicker {
+  display: block;
+  margin-bottom: 4px;
+  color: #4f9e82;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.game-dialogue.is-narration .game-dialogue-name {
+  background: rgba(79, 158, 130, 0.18);
+  color: #315d55;
+}
+
 .game-dialogue-name {
   display: inline-block;
   padding: 2px 12px;
   border-radius: 999px;
-  background: #ffd76a;
-  color: #4a2f00;
+  background: #efbd4f;
+  color: #29434a;
   font-weight: 700;
   font-size: clamp(12px, 1.8vw, 16px);
   margin-bottom: 6px;
 }
 
 .game-dialogue-en {
-  font-size: clamp(16px, 2.4vw, 22px);
+  font-size: clamp(20px, 3.2vw, 28px);
+  line-height: 1.25;
   margin: 4px 0;
+  color: #29434a;
 }
 
 .game-dialogue-zh {
-  font-size: clamp(13px, 1.9vw, 17px);
+  font-size: clamp(14px, 2vw, 18px);
   opacity: 0.85;
   margin: 0 0 10px;
+  color: #60777b;
 }
 
 .game-dialogue-choices {
@@ -492,10 +655,10 @@
 .game-dialogue-choices button {
   min-height: 64px;
   border-radius: 14px;
-  border: 2px solid rgba(255, 255, 255, 0.4);
-  background: rgba(255, 255, 255, 0.1);
-  color: #fff;
-  font-size: clamp(15px, 2.2vw, 19px);
+  border: 1px solid rgba(72, 111, 111, 0.22);
+  background: rgba(255, 255, 255, 0.72);
+  color: #29434a;
+  font-size: clamp(16px, 2.4vw, 21px);
   padding: 8px 14px;
   text-align: left;
 }
@@ -585,6 +748,8 @@
   }
   .game-entity.is-dead { transform: translate(-50%, -50%); opacity: 0.25; }
   .game-banner { animation: none; }
+  .game-dust { animation: none; opacity: 0.2; }
+  .game-entity.is-throw { transform: translate(-50%, -50%); }
 }
 
 @media (max-width: 700px) {

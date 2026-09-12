@@ -60,6 +60,13 @@ function miniLevel() {
   };
 }
 
+test("pickBossRoundKind：无 TTS（canListen=false）时听音轮降级为看词选义", () => {
+  const cycleHasListen = [0, 1, 2, 3, 4, 5, 6, 7].map((i) => core.pickBossRoundKind(i, { canType: true, canListen: false }));
+  assert.ok(cycleHasListen.every((k) => k !== "listen-choice"), "canListen=false 不得出现 listen-choice");
+  const withListen = [0, 1, 2, 3].map((i) => core.pickBossRoundKind(i, { canType: true, canListen: true }));
+  assert.ok(withListen.includes("listen-choice"), "canListen=true 时保留听音轮");
+});
+
 test("buildLevel 生成运行时结构（词索引、帧键、精灵清单）", () => {
   const level = core.buildLevel(miniLevel());
   assert.equal(level.ep, 5);
@@ -80,6 +87,29 @@ test("buildLevel 透传 v2 map 地图层（缺省为 null）", () => {
   assert.equal(core.buildLevel(miniLevel()).map, null);
 });
 
+test("buildLevel 透传可审核的 NPC 对话字段（含 sourceNodeId/audioRef）", () => {
+  const level = core.buildLevel(Object.assign(miniLevel(), {
+    npcDialogue: {
+      quiz: {
+        id: "ep5-quiz",
+        lines: [{ id: "q1", sourceNodeId: "n004", speaker: "gibbon", textEn: "A demon attacked us.", textZh: "有个恶魔袭击了我们。", audioRef: "sent_en:A demon attacked us." }],
+        options: [
+          { id: "a", textEn: "yes", textZh: "是", correct: true, feedback: "答对了！" },
+          { id: "b", textEn: "no", textZh: "否", correct: false },
+        ],
+        lessonCardId: "ep005-official-quiz-001",
+      },
+    },
+  }));
+  assert.equal(level.npcDialogue.quiz.id, "ep5-quiz");
+  assert.equal(level.npcDialogue.quiz.lines[0].sourceNodeId, "n004");
+  assert.equal(level.npcDialogue.quiz.lines[0].audioRef, "sent_en:A demon attacked us.");
+  assert.equal(level.npcDialogue.quiz.options.length, 2);
+  assert.equal(level.npcDialogue.quiz.options[0].correct, true);
+  assert.equal(level.npcDialogue.quiz.options[0].feedback, "答对了！");
+  assert.equal(level.npcDialogue.quiz.lessonCardId, "ep005-official-quiz-001");
+});
+
 test("buildLevel 坏输入降级返回 null", () => {
   assert.equal(core.buildLevel(null), null);
   assert.equal(core.buildLevel("x"), null);
@@ -94,6 +124,12 @@ test("buildWaveQuestions 错词按次数插队到波首，其余保持稳定", (
     questions.map((m) => m.term),
     ["revenge", "handle", "entrance", "shriek"],
   );
+});
+
+test("reorderBossWords 把地图阶段出现但不在原 Boss 池的错词补进复习", () => {
+  const level = core.buildLevel(miniLevel());
+  const words = core.reorderBossWords(level, { demon: 2, revenge: 1 });
+  assert.deepEqual(words.map((word) => word.term), ["revenge", "meal", "gloomy", "amazement", "subject", "demon"]);
 });
 
 test("buildWaveQuestions 越界返回空数组", () => {
@@ -174,4 +210,142 @@ test("loadSprites 注册表命中直通、未命中回退 null 占位", () => {
   const sprites = core.loadSprites(registry, ["chaosdemon-minion", "imp"]);
   assert.equal(sprites["chaosdemon-minion"].walk.south[0], "p1.png");
   assert.equal(sprites.imp, null);
+});
+
+test("resolveBossKit 读出悟空招式和混世魔王进攻", () => {
+  const kit = core.resolveBossKit({
+    hero: { id: "wukong", nameZh: "孙悟空", skills: { attack: { id: "staff", nameZh: "金箍棒" }, special: { id: "staff-combo", nameZh: "棒影连击", needCombo: 3 } } },
+    bosses: { chaosdemon: { nameZh: "混世魔王", attack: { id: "mace", nameZh: "狼牙棒" }, special: { id: "mud-wave", nameZh: "浊浪" } } },
+  }, "chaosdemon");
+  assert.equal(kit.hero.skills.attack.nameZh, "金箍棒");
+  assert.equal(kit.boss.attack.nameZh, "狼牙棒");
+  const fallback = core.resolveBossKit(null, "missing");
+  assert.equal(fallback.hero.id, "wukong");
+  assert.ok(fallback.boss.attack.nameZh);
+});
+
+test("pickHeroSkill 连对 3 切棒影连击", () => {
+  const kit = core.resolveBossKit({
+    hero: { skills: { attack: { id: "staff", nameZh: "金箍棒" }, special: { id: "staff-combo", nameZh: "棒影连击", needCombo: 3 } } },
+  }, "x");
+  assert.equal(core.pickHeroSkill(kit, { streak: 1 }).id, "staff");
+  assert.equal(core.pickHeroSkill(kit, { streak: 3 }).id, "staff-combo");
+});
+
+test("Boss 词格按 en/zh/listen/typing 轮换，不能打的跟打退回英文点选", () => {
+  assert.equal(core.pickBossRoundKind(0, { canType: true }), "en-choice");
+  assert.equal(core.pickBossRoundKind(1, { canType: true }), "zh-choice");
+  assert.equal(core.pickBossRoundKind(2, { canType: true, canListen: true }), "listen-choice");
+  assert.equal(core.pickBossRoundKind(2, { canType: true }), "en-choice", "缺省（未声明 TTS）视为无 TTS 降级");
+  assert.equal(core.pickBossRoundKind(2, { canType: true, canListen: false }), "en-choice", "无 TTS 听音降级（2026-09-12 补丁）");
+  assert.equal(core.pickBossRoundKind(3, { canType: true }), "typing");
+  assert.equal(core.pickBossRoundKind(3, { canType: false }), "en-choice");
+  assert.equal(core.pickBossRoundKind(3, { canType: true, canListen: true, lastSlot: true, preferQuestion: "listen-choice" }), "listen-choice", "显式点名听音仍需 TTS 可用");
+  assert.equal(core.pickBossRoundKind(3, { canType: true, lastSlot: true, preferQuestion: "listen-choice" }), "en-choice", "点名听音但无 TTS → 降级");
+  assert.equal(core.pickBossRoundKind(3, { canType: true, lastSlot: true, hasOfficial: true }), "official");
+  assert.equal(core.pickBossRoundKind(1, { preferQuestion: "official", lastSlot: true, hasOfficial: false }), "zh-choice");
+});
+
+test("buildBossRound 四种题共用 answerZh，跟打只收字母", () => {
+  const level = {
+    previewWords: [
+      { term: "nearby", zh: "在附近" },
+      { term: "captain", zh: "将领" },
+      { term: "emperor", zh: "皇帝" },
+      { term: "monkey", zh: "猴子" },
+    ],
+    boss: { hpWords: [{ term: "nearby", zh: "在附近" }, { term: "captain", zh: "将领" }] },
+    waves: [],
+    npcDialogue: null,
+  };
+  const en = core.buildBossRound(level, { term: "nearby", zh: "在附近" }, 0, { seed: 1, canType: true });
+  assert.equal(en.kind, "en-choice");
+  assert.equal(en.answerZh, "nearby");
+  assert.equal(en.orbs.filter((o) => o.correct).length, 1);
+  const zh = core.buildBossRound(level, { term: "nearby", zh: "在附近" }, 1, { seed: 2, canType: true });
+  assert.equal(zh.kind, "zh-choice");
+  assert.equal(zh.answerZh, "在附近");
+  const listen = core.buildBossRound(level, { term: "nearby", zh: "在附近" }, 2, { seed: 3, canType: true, canListen: true });
+  assert.equal(listen.kind, "listen-choice");
+  assert.equal(listen.listen, true);
+  const typing = core.buildBossRound(level, { term: "nearby", zh: "在附近" }, 3, { seed: 4, canType: true });
+  assert.equal(typing.kind, "typing");
+  assert.equal(typing.typingTarget, "nearby");
+  assert.equal(core.lettersOnly("near-by!"), "nearby");
+  const withOfficial = {
+    ...level,
+    npcDialogue: {
+      quiz: {
+        question: { textEn: "what did monkey come out of?", textZh: "猴子是从什么出来的？" },
+        options: [
+          { textEn: "a rock", textZh: "一块石头", correct: true },
+          { textEn: "a tree", textZh: "一棵树", correct: false },
+        ],
+      },
+    },
+  };
+  const official = core.buildBossRound(withOfficial, { term: "sight", zh: "景色" }, 3, {
+    seed: 9, canType: true, lastSlot: true,
+  });
+  assert.equal(official.kind, "official");
+  assert.equal(official.answerZh, "一块石头");
+});
+
+test("resolveSkillFx 先用套件路径，缺图回退 generic", () => {
+  const generic = {
+    hitPlayer: "assets/game-fx/generic/hit-player.png",
+    hitBoss: "assets/game-fx/generic/hit-boss.png",
+    shock: "assets/game-fx/generic/shock.png",
+  };
+  const peach = core.resolveSkillFx(
+    { id: "peach-throw", nameZh: "扔桃", fx: "assets/game-fx/monkey-minor/attack.png" },
+    "boss",
+    generic,
+  );
+  assert.deepEqual(peach, [
+    "assets/game-fx/monkey-minor/attack.png",
+    "assets/game-fx/generic/hit-player.png",
+  ]);
+  const mace = core.resolveSkillFx(
+    { id: "mace", nameZh: "狼牙棒", fx: "assets/game-fx/chaosdemon/attack.png" },
+    "boss",
+    generic,
+  );
+  assert.equal(mace[0], "assets/game-fx/chaosdemon/attack.png");
+  assert.notEqual(peach[0], mace[0]);
+  const missing = core.resolveSkillFx(
+    { id: "whisk", nameZh: "拂尘", fx: "assets/game-fx/subodhi-disciple/attack.png" },
+    "boss",
+    generic,
+  );
+  assert.deepEqual(missing, [
+    "assets/game-fx/subodhi-disciple/attack.png",
+    "assets/game-fx/generic/hit-player.png",
+  ]);
+  const staff = core.resolveSkillFx(
+    { id: "staff", nameZh: "金箍棒", fx: "assets/game-fx/wukong/attack.png" },
+    "hero",
+    generic,
+  );
+  assert.deepEqual(staff, [
+    "assets/game-fx/wukong/attack.png",
+    "assets/game-fx/generic/hit-boss.png",
+  ]);
+  const noFx = core.resolveSkillFx({ id: "strike", nameZh: "扑打" }, "boss", generic);
+  assert.deepEqual(noFx, ["assets/game-fx/generic/hit-player.png"]);
+  const emptyPack = core.resolveSkillFx({ fx: "gone.png" }, "hero", null);
+  assert.equal(emptyPack[0], "gone.png");
+  assert.equal(emptyPack[1], "assets/game-fx/generic/hit-boss.png");
+});
+
+test("护体挡一次伤害，未护体扣一格血", () => {
+  const armed = core.applyDefend({ defendLeft: 1, defendArmed: false });
+  assert.equal(armed.ok, true);
+  assert.equal(armed.defendLeft, 0);
+  const blocked = core.applyIncomingHit({ shield: 3, defendArmed: true });
+  assert.equal(blocked.blocked, true);
+  assert.equal(blocked.shield, 3);
+  const hit = core.applyIncomingHit({ shield: 3, defendArmed: false });
+  assert.equal(hit.blocked, false);
+  assert.equal(hit.shield, 2);
 });

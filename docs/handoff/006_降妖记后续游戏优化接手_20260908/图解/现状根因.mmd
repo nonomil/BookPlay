@@ -1,0 +1,12 @@
+flowchart LR
+    Input["摇杆/键盘"] --> Normalize["保幅度 + 视口补偿"]
+    Normalize --> Move["慢速世界步进"]
+    Move --> Camera["中央死区 / 边缘平滑"]
+    Move --> Pose["四向 idle/walk/attack"]
+    Pose --> Hit["攻击时停止移动"]
+    Modal["NPC 弹层"] --> Cleanup["stop audio + clear dlg + unlock"]
+    Data["地图/存档/音频索引"] --> Loop["整局跨页链路"]
+    Camera --> Browser["浏览器已验证"]
+    Hit --> Browser
+    Cleanup --> Browser
+    Loop --> Device["真机仍待验证"]

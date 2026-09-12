@@ -44,6 +44,10 @@ const ui = {
   story: document.getElementById("lesson-story"),
   review: document.getElementById("lesson-word-review"),
   wordStudyContinue: document.getElementById("lesson-start-quiz"),
+  gameInvite: document.getElementById("lesson-game-invite"),
+  gameInviteEnter: document.getElementById("lesson-game-enter"),
+  gameInviteSkip: document.getElementById("lesson-game-skip"),
+  gameInviteStatus: document.getElementById("lesson-game-invite-status"),
 };
 
 let lesson = null;
@@ -59,6 +63,8 @@ let rewardCatalog = null;
 let rewardState = {};
 let rewardOffer = null;
 let studySession = null;
+let previousActiveElement = null;
+let gameInviteCheckToken = 0;
 const lessonAudio = typeof Audio === "function" ? new Audio() : null;
 window.BookPlayAudio?.watchMedia(lessonAudio);
 const voiceSttEndpoint = String(params.get("voiceStt") || "").trim();
@@ -1301,6 +1307,69 @@ function markWordStudyComplete() {
   }
 }
 
+function restoreGameInviteFocus() {
+  const previous = previousActiveElement;
+  previousActiveElement = null;
+  const fallback = ui.card;
+  const target = previous && previous.isConnected ? previous : fallback;
+  if (!target || typeof target.focus !== "function") return;
+  if (target === fallback && !target.hasAttribute("tabindex")) target.tabIndex = -1;
+  try { target.focus({ preventScroll: true }); } catch (_) { target.focus(); }
+}
+
+function closeGameInvite() {
+  gameInviteCheckToken += 1;
+  if (ui.gameInvite) ui.gameInvite.hidden = true;
+  restoreGameInviteFocus();
+}
+
+function showGameInvite(passed) {
+  if (!ui.gameInvite) return;
+  if (!passed || lessonWordsMode) {
+    closeGameInvite();
+    return;
+  }
+  const token = ++gameInviteCheckToken;
+  const active = document.activeElement;
+  previousActiveElement = active && active !== document.body ? active : null;
+  ui.gameInvite.hidden = false;
+  ui.gameInvite.dataset.state = "checking";
+  if (ui.gameInviteStatus) ui.gameInviteStatus.textContent = "正在检查本集游戏…";
+  if (ui.gameInviteEnter) {
+    ui.gameInviteEnter.disabled = true;
+    ui.gameInviteEnter.onclick = () => {
+      if (ui.gameInviteEnter.disabled) return;
+      stopLessonAudio();
+      window.location.href = `game.html?ep=${episode}&from=lesson`;
+    };
+  }
+  if (ui.gameInviteSkip) {
+    ui.gameInviteSkip.textContent = "暂时跳过游戏";
+    ui.gameInviteSkip.onclick = () => closeGameInvite();
+    try { ui.gameInviteSkip.focus({ preventScroll: true }); } catch (_) { ui.gameInviteSkip.focus(); }
+  }
+  fetch(`../data/game/levels/ep${episode}.json`, { cache: "no-store" })
+    .then((response) => {
+      if (!response.ok) throw new Error(`地图数据不可用（${response.status}）`);
+      return response.json();
+    })
+    .then((level) => {
+      if (token !== gameInviteCheckToken) return;
+      const usable = level && typeof level === "object"
+        && level.cast && level.map && Array.isArray(level.waves);
+      if (!usable) throw new Error("本集地图数据不完整");
+      ui.gameInvite.dataset.state = "ready";
+      if (ui.gameInviteStatus) ui.gameInviteStatus.textContent = "地图已准备好，可以开始；也可以暂时跳过。";
+      if (ui.gameInviteEnter) ui.gameInviteEnter.disabled = false;
+    })
+    .catch((error) => {
+      if (token !== gameInviteCheckToken) return;
+      ui.gameInvite.dataset.state = "unavailable";
+      if (ui.gameInviteStatus) ui.gameInviteStatus.textContent = `本集游戏暂未准备好：${error.message || "请稍后再试"}`;
+      if (ui.gameInviteEnter) ui.gameInviteEnter.disabled = true;
+    });
+}
+
 function renderStudyGate() {
   if (!ui.card) return;
   ui.card.hidden = false;
@@ -1318,6 +1387,7 @@ function finishLesson(empty = false) {
     : { passed: scoreTotal > 0 && correct / scoreTotal >= 0.7, ratio: scoreTotal ? correct / scoreTotal : 0 };
   const passed = !empty && outcome.passed;
   saveCompletion(passed);
+  showGameInvite(passed);
   ui.progress.textContent = "已完成";
   const nextHref = core.getNextHref(episode);
   const nextLabel = episode >= 108 ? "回到冒险地图" : `继续第 ${episode + 1} 集`;
@@ -1331,7 +1401,9 @@ function finishLesson(empty = false) {
       ? "通过条件已达成，下一集和故事奖励已经解锁。"
       : `正确率 ${(outcome.ratio * 100).toFixed(0)}%，先复习错题再挑战一次。`;
   const retryHref = `lesson.html?ep=${episode}&retry=1`;
-  const nextAction = passed ? `<a class="result-link" href="${nextHref}">${nextLabel}</a>` : `<a class="primary-button" href="${retryHref}">再测一次</a>`;
+  const nextAction = passed
+    ? `<p class="result-game-invite">本集单词已经准备好。上方弹窗可以进入降妖记，也可以暂时跳过。</p><a class="result-link" href="${nextHref}">继续${nextLabel}</a>`
+    : `<a class="primary-button" href="${retryHref}">再测一次</a>`;
   ui.card.innerHTML = `<div class="result-state"><p class="question-meta">本集知识巩固${passed ? "完成" : "结果"}</p><div class="result-score">${score}</div><h2>${resultTitle}</h2><p>${resultCopy}</p><div class="result-actions">${nextAction}<a class="result-link" href="parent.html?ep=${episode}">👨‍👩‍👧 亲子时间</a><a class="result-link" href="drill.html?ep=${episode}">复习错题</a><a class="result-link" href="shelf.html">回选集</a></div></div>`;
   renderEpisodeReward(passed);
 }

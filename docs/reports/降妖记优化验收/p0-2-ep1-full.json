@@ -1,0 +1,704 @@
+{
+  "url": "http://127.0.0.1:8799/engine/game.html?ep=1",
+  "viewport": "1280x720",
+  "steps": [
+    {
+      "id": "05-ready",
+      "shot": "G:\\Game\\BookPlay书戏\\docs\\reports\\降妖记优化验收\\p0-2-ep1-05-ready.png",
+      "mapStage": "wave1",
+      "killed": 0,
+      "stars": 0,
+      "shield": 3,
+      "npcDone": false,
+      "npcUnlocked": false,
+      "bossReady": false,
+      "hudCarried": "空手",
+      "progress": "0 / 12",
+      "shields": "🛡️🛡️🛡️",
+      "toast": "走过中文词球捡起来，点头顶有对应英文的小妖！",
+      "wrongWords": {},
+      "items": {
+        "peach": 0,
+        "fan": 0,
+        "gourd": 0,
+        "cloud": 0,
+        "mantra": 0,
+        "staff": 0
+      },
+      "dialogueHidden": true,
+      "gateHidden": true,
+      "gateText": "",
+      "bossgateHidden": true,
+      "bossgateText": "",
+      "store": {
+        "wrongWords": {},
+        "mapStage": "wave1",
+        "mapWaveIndex": 0,
+        "mapKilled": 0,
+        "mapStars": 0,
+        "mapShield": 3,
+        "npcBonus": false,
+        "npcDone": false,
+        "npcUnlocked": false,
+        "mapDefeatedKeys": [],
+        "mapItems": {
+          "peach": 0,
+          "fan": 0,
+          "gourd": 0,
+          "cloud": 0,
+          "mantra": 0,
+          "staff": 0
+        },
+        "updatedAt": "2026-09-09T04:15:26.527Z"
+      }
+    },
+    {
+      "id": "06-pickup",
+      "shot": "G:\\Game\\BookPlay书戏\\docs\\reports\\降妖记优化验收\\p0-2-ep1-06-pickup.png",
+      "mapStage": "wave1",
+      "killed": 0,
+      "stars": 0,
+      "shield": 2,
+      "npcDone": false,
+      "npcUnlocked": false,
+      "bossReady": false,
+      "hudCarried": "旅行(一般指陆路上的长距离旅行)  ·······",
+      "progress": "0 / 12",
+      "shields": "🛡️🛡️⬜",
+      "toast": "被小妖撞了一下！捡词球反击 ⚔️",
+      "wrongWords": {},
+      "items": {
+        "peach": 0,
+        "fan": 0,
+        "gourd": 0,
+        "cloud": 0,
+        "mantra": 0,
+        "staff": 0
+      },
+      "dialogueHidden": true,
+      "gateHidden": true,
+      "gateText": "",
+      "bossgateHidden": true,
+      "bossgateText": "",
+      "store": {
+        "wrongWords": {},
+        "mapStage": "wave1",
+        "mapWaveIndex": 0,
+        "mapKilled": 0,
+        "mapStars": 0,
+        "mapShield": 3,
+        "npcBonus": false,
+        "npcDone": false,
+        "npcUnlocked": false,
+        "mapDefeatedKeys": [],
+        "mapItems": {
+          "peach": 0,
+          "fan": 0,
+          "gourd": 0,
+          "cloud": 0,
+          "mantra": 0,
+          "staff": 0
+        },
+        "updatedAt": "2026-09-09T04:15:26.527Z"
+      },
+      "carried": {
+        "zh": "旅行(一般指陆路上的长距离旅行)",
+        "term": "journey",
+        "typed": ""
+      }
+    },
+    {
+      "id": "07-wrong-throw",
+      "shot": "G:\\Game\\BookPlay书戏\\docs\\reports\\降妖记优化验收\\p0-2-ep1-07-wrong-throw.png",
+      "mapStage": "wave1",
+      "killed": 0,
+      "stars": 0,
+      "shield": 2,
+      "npcDone": false,
+      "npcUnlocked": false,
+      "bossReady": false,
+      "hudCarried": "空手",
+      "progress": "0 / 12",
+      "shields": "🛡️🛡️⬜",
+      "toast": "词球弹回来了！词牌对不上，再找找 ⚠️",
+      "wrongWords": {
+        "west": 1
+      },
+      "items": {
+        "peach": 0,
+        "fan": 0,
+        "gourd": 0,
+        "cloud": 0,
+        "mantra": 0,
+        "staff": 0
+      },
+      "dialogueHidden": true,
+      "gateHidden": true,
+      "gateText": "",
+      "bossgateHidden": true,
+      "bossgateText": "",
+      "store": {
+        "wrongWords": {
+          "west": 1
+        },
+        "mapStage": "wave1",
+        "mapWaveIndex": 0,
+        "mapKilled": 0,
+        "mapStars": 0,
+        "mapShield": 2,
+        "npcBonus": false,
+        "npcDone": false,
+        "npcUnlocked": false,
+        "mapDefeatedKeys": [],
+        "mapItems": {
+          "peach": 0,
+          "fan": 0,
+          "gourd": 0,
+          "cloud": 0,
+          "mantra": 0,
+          "staff": 0
+        },
+        "updatedAt": "2026-09-09T04:15:28.597Z"
+      },
+      "target": {
+        "key": "w0-1",
+        "term": "west",
+        "zh": "1. 西方,(2. 向西方)",
+        "alive": true,
+        "active": true,
+        "waveIndex": 0,
+        "x": 0.4199887629923951,
+        "y": 0.3999777583847302
+      },
+      "carriedAfter": null,
+      "ok": true,
+      "shieldBefore": 2
+    },
+    {
+      "id": "08-collide",
+      "shot": "G:\\Game\\BookPlay书戏\\docs\\reports\\降妖记优化验收\\p0-2-ep1-08-collide.png",
+      "mapStage": "wave1",
+      "killed": 0,
+      "stars": 0,
+      "shield": 1,
+      "npcDone": false,
+      "npcUnlocked": false,
+      "bossReady": false,
+      "hudCarried": "空手",
+      "progress": "0 / 12",
+      "shields": "🛡️⬜⬜",
+      "toast": "被小妖撞了一下！捡词球反击 ⚔️",
+      "wrongWords": {
+        "west": 1
+      },
+      "items": {
+        "peach": 0,
+        "fan": 0,
+        "gourd": 0,
+        "cloud": 0,
+        "mantra": 0,
+        "staff": 0
+      },
+      "dialogueHidden": true,
+      "gateHidden": true,
+      "gateText": "",
+      "bossgateHidden": true,
+      "bossgateText": "",
+      "store": {
+        "wrongWords": {
+          "west": 1
+        },
+        "mapStage": "wave1",
+        "mapWaveIndex": 0,
+        "mapKilled": 0,
+        "mapStars": 0,
+        "mapShield": 2,
+        "npcBonus": false,
+        "npcDone": false,
+        "npcUnlocked": false,
+        "mapDefeatedKeys": [],
+        "mapItems": {
+          "peach": 0,
+          "fan": 0,
+          "gourd": 0,
+          "cloud": 0,
+          "mantra": 0,
+          "staff": 0
+        },
+        "updatedAt": "2026-09-09T04:15:28.597Z"
+      },
+      "ok": true,
+      "shieldBefore": 2,
+      "shieldAfter": 1,
+      "monster": "journey"
+    },
+    {
+      "id": "09-wave1-clear",
+      "shot": "G:\\Game\\BookPlay书戏\\docs\\reports\\降妖记优化验收\\p0-2-ep1-09-wave1-clear.png",
+      "mapStage": "npc",
+      "killed": 4,
+      "stars": 4,
+      "shield": 1,
+      "npcDone": false,
+      "npcUnlocked": true,
+      "bossReady": false,
+      "hudCarried": "空手",
+      "progress": "4 / 12",
+      "shields": "🛡️⬜⬜",
+      "toast": "捡到筋斗云！跑得更快 ☁️",
+      "wrongWords": {
+        "west": 1,
+        "journey": 1
+      },
+      "items": {
+        "peach": 0,
+        "fan": 1,
+        "gourd": 1,
+        "cloud": 1,
+        "mantra": 0,
+        "staff": 0
+      },
+      "dialogueHidden": true,
+      "gateHidden": true,
+      "gateText": "",
+      "bossgateHidden": true,
+      "bossgateText": "",
+      "store": {
+        "wrongWords": {
+          "west": 1,
+          "journey": 1
+        },
+        "mapStage": "npc",
+        "mapWaveIndex": 0,
+        "mapKilled": 4,
+        "mapStars": 4,
+        "mapShield": 1,
+        "npcBonus": false,
+        "npcDone": false,
+        "npcUnlocked": true,
+        "mapDefeatedKeys": [
+          "w0-0",
+          "w0-1",
+          "w0-2",
+          "w0-3"
+        ],
+        "mapItems": {
+          "peach": 0,
+          "fan": 1,
+          "gourd": 1,
+          "cloud": 1,
+          "mantra": 0,
+          "staff": 0
+        },
+        "updatedAt": "2026-09-09T04:15:44.030Z"
+      },
+      "kills": [
+        {
+          "term": "journey",
+          "ok": true,
+          "killed": 0,
+          "stage": "wave1",
+          "toast": ""
+        },
+        {
+          "term": "journey",
+          "ok": true,
+          "killed": 1,
+          "stage": "wave1",
+          "toast": "捡到蟠桃！下次被撞会挡一下 🍑"
+        },
+        {
+          "term": "west",
+          "ok": true,
+          "killed": 2,
+          "stage": "wave1",
+          "toast": "捡到芭蕉扇！点右上可让小妖变慢 🪭"
+        },
+        {
+          "term": "split",
+          "ok": true,
+          "killed": 3,
+          "stage": "wave1",
+          "toast": "捡到紫金葫芦！接下来 2 发自动找对怪 🏺"
+        },
+        {
+          "term": "powerful",
+          "ok": true,
+          "killed": 4,
+          "stage": "npc",
+          "toast": "捡到筋斗云！跑得更快 ☁️"
+        }
+      ],
+      "stage": "npc"
+    },
+    {
+      "id": "10-npc",
+      "shot": "G:\\Game\\BookPlay书戏\\docs\\reports\\降妖记优化验收\\p0-2-ep1-10-npc.png",
+      "mapStage": "wave2",
+      "killed": 4,
+      "stars": 6,
+      "shield": 1,
+      "npcDone": true,
+      "npcUnlocked": true,
+      "bossReady": false,
+      "hudCarried": "空手",
+      "progress": "4 / 12",
+      "shields": "🛡️⬜⬜",
+      "toast": "",
+      "wrongWords": {
+        "west": 1,
+        "journey": 1
+      },
+      "items": {
+        "peach": 0,
+        "fan": 1,
+        "gourd": 1,
+        "cloud": 1,
+        "mantra": 0,
+        "staff": 0
+      },
+      "dialogueHidden": true,
+      "gateHidden": true,
+      "gateText": "",
+      "bossgateHidden": true,
+      "bossgateText": "",
+      "store": {
+        "wrongWords": {
+          "west": 1,
+          "journey": 1
+        },
+        "mapStage": "wave2",
+        "mapWaveIndex": 1,
+        "mapKilled": 4,
+        "mapStars": 6,
+        "mapShield": 1,
+        "npcBonus": true,
+        "npcDone": true,
+        "npcUnlocked": true,
+        "mapDefeatedKeys": [
+          "w0-0",
+          "w0-1",
+          "w0-2",
+          "w0-3"
+        ],
+        "mapItems": {
+          "peach": 0,
+          "fan": 1,
+          "gourd": 1,
+          "cloud": 1,
+          "mantra": 0,
+          "staff": 0
+        },
+        "updatedAt": "2026-09-09T04:15:46.650Z"
+      },
+      "ok": true,
+      "firstClick": "魔术的,魔法的",
+      "secondClick": "强大的,强而有力的",
+      "choiceTexts": [
+        "强大的,强而有力的",
+        "魔术的,魔法的",
+        "劈开,裂开"
+      ],
+      "stage": "wave2",
+      "retried": true
+    },
+    {
+      "id": "11-wave2-clear",
+      "shot": "G:\\Game\\BookPlay书戏\\docs\\reports\\降妖记优化验收\\p0-2-ep1-11-wave2-clear.png",
+      "mapStage": "boss",
+      "killed": 8,
+      "stars": 10,
+      "shield": 1,
+      "npcDone": true,
+      "npcUnlocked": true,
+      "bossReady": true,
+      "hudCarried": "空手",
+      "progress": "8 / 12",
+      "shields": "🛡️⬜⬜",
+      "toast": "捡到芭蕉扇！点右上可让小妖变慢 🪭",
+      "wrongWords": {
+        "west": 1,
+        "journey": 1
+      },
+      "items": {
+        "peach": 0,
+        "fan": 2,
+        "gourd": 1,
+        "cloud": 1,
+        "mantra": 1,
+        "staff": 1
+      },
+      "dialogueHidden": true,
+      "gateHidden": true,
+      "gateText": "",
+      "bossgateHidden": true,
+      "bossgateText": "",
+      "store": {
+        "wrongWords": {
+          "west": 1,
+          "journey": 1
+        },
+        "mapStage": "boss",
+        "mapWaveIndex": 1,
+        "mapKilled": 8,
+        "mapStars": 10,
+        "mapShield": 1,
+        "npcBonus": true,
+        "npcDone": true,
+        "npcUnlocked": true,
+        "mapDefeatedKeys": [
+          "w0-0",
+          "w0-1",
+          "w0-2",
+          "w0-3",
+          "w1-0",
+          "w1-1",
+          "w1-2",
+          "w1-3"
+        ],
+        "mapItems": {
+          "peach": 0,
+          "fan": 2,
+          "gourd": 1,
+          "cloud": 1,
+          "mantra": 1,
+          "staff": 1
+        },
+        "updatedAt": "2026-09-09T04:15:50.547Z"
+      },
+      "kills": [
+        {
+          "term": "shot",
+          "ok": true,
+          "killed": 5,
+          "stage": "wave2",
+          "toast": "捡到紧箍咒！可提示目标首字母 📿"
+        },
+        {
+          "term": "emperor",
+          "ok": true,
+          "killed": 6,
+          "stage": "wave2",
+          "toast": "捡到金箍棒！下次打对额外补盾 🪄"
+        },
+        {
+          "term": "Jade Emperor",
+          "ok": true,
+          "killed": 7,
+          "stage": "wave2",
+          "toast": "捡到蟠桃！下次被撞会挡一下 🍑"
+        },
+        {
+          "term": "captain",
+          "ok": true,
+          "killed": 8,
+          "stage": "boss",
+          "toast": "捡到芭蕉扇！点右上可让小妖变慢 🪭"
+        }
+      ],
+      "stage": "boss"
+    },
+    {
+      "id": "12-boss-gate",
+      "shot": "G:\\Game\\BookPlay书戏\\docs\\reports\\降妖记优化验收\\p0-2-ep1-12-boss-gate.png",
+      "mapStage": "boss",
+      "killed": 8,
+      "stars": 10,
+      "shield": 1,
+      "npcDone": true,
+      "npcUnlocked": true,
+      "bossReady": true,
+      "hudCarried": "空手",
+      "progress": "8 / 12",
+      "shields": "🛡️⬜⬜",
+      "toast": "捡到芭蕉扇！点右上可让小妖变慢 🪭",
+      "wrongWords": {
+        "west": 1,
+        "journey": 1
+      },
+      "items": {
+        "peach": 0,
+        "fan": 2,
+        "gourd": 1,
+        "cloud": 1,
+        "mantra": 1,
+        "staff": 1
+      },
+      "dialogueHidden": true,
+      "gateHidden": true,
+      "gateText": "",
+      "bossgateHidden": false,
+      "bossgateText": "⚔️ 挑战 猴群小头目？小妖已经清完！Boss 血条会优先考本局错词。开战！先逛逛",
+      "store": {
+        "wrongWords": {
+          "west": 1,
+          "journey": 1
+        },
+        "mapStage": "boss",
+        "mapWaveIndex": 1,
+        "mapKilled": 8,
+        "mapStars": 10,
+        "mapShield": 1,
+        "npcBonus": true,
+        "npcDone": true,
+        "npcUnlocked": true,
+        "mapDefeatedKeys": [
+          "w0-0",
+          "w0-1",
+          "w0-2",
+          "w0-3",
+          "w1-0",
+          "w1-1",
+          "w1-2",
+          "w1-3"
+        ],
+        "mapItems": {
+          "peach": 0,
+          "fan": 2,
+          "gourd": 1,
+          "cloud": 1,
+          "mantra": 1,
+          "staff": 1
+        },
+        "updatedAt": "2026-09-09T04:15:50.547Z"
+      }
+    },
+    {
+      "id": "13-battle",
+      "shot": "G:\\Game\\BookPlay书戏\\docs\\reports\\降妖记优化验收\\p0-2-ep1-13-battle.png",
+      "url": "http://127.0.0.1:8799/engine/battle.html?ep=1&skip=intro,preview,waves,quiz&from=game&wrong=west%2Cjourney"
+    },
+    {
+      "id": "14-battle-result",
+      "shot": "G:\\Game\\BookPlay书戏\\docs\\reports\\降妖记优化验收\\p0-2-ep1-14-battle-result.png",
+      "url": "http://127.0.0.1:8799/engine/battle.html?ep=1&skip=intro,preview,waves,quiz&from=game&wrong=west%2Cjourney",
+      "hits": [
+        {
+          "zh": "在附近",
+          "term": "nearby",
+          "ok": true,
+          "text": "nearby"
+        },
+        {
+          "zh": "南方的",
+          "term": "southern",
+          "ok": true,
+          "text": "southern"
+        },
+        {
+          "zh": "魔术的,魔法的",
+          "term": "magical",
+          "ok": true,
+          "text": "magical"
+        },
+        {
+          "zh": "景色,景象",
+          "term": "sight",
+          "ok": true,
+          "text": "sight"
+        },
+        {
+          "zh": "旅行(一般指陆路上的长距离旅行)",
+          "term": "journey",
+          "ok": true,
+          "text": "journey"
+        },
+        {
+          "zh": "1. 西方,(2. 向西方)",
+          "term": "west",
+          "ok": true,
+          "text": "west"
+        },
+        {
+          "zh": "1. 西方,(2. 向西方)",
+          "term": "west",
+          "ok": true,
+          "text": "sight"
+        },
+        {
+          "zh": "1. 西方,(2. 向西方)",
+          "term": "west",
+          "ok": true,
+          "text": "sight"
+        }
+      ],
+      "resultText": "The Monkey · 战斗胜利！\n⭐⭐⭐\n妖怪卡 · 猴群小头目\n\n下次优先复习这些词：\n\nwest ×1\njourney ×1\n再来一次下一集 ▶回地图继续探险 🗺️",
+      "ok": true
+    },
+    {
+      "id": "15-return",
+      "shot": "G:\\Game\\BookPlay书戏\\docs\\reports\\降妖记优化验收\\p0-2-ep1-15-return.png",
+      "mapStage": "complete",
+      "killed": 8,
+      "stars": 10,
+      "shield": 1,
+      "npcDone": true,
+      "npcUnlocked": true,
+      "bossReady": true,
+      "hudCarried": "空手",
+      "progress": "8 / 12",
+      "shields": "🛡️⬜⬜",
+      "toast": "",
+      "wrongWords": {
+        "west": 1,
+        "journey": 1
+      },
+      "items": {
+        "peach": 0,
+        "fan": 2,
+        "gourd": 1,
+        "cloud": 1,
+        "mantra": 1,
+        "staff": 1
+      },
+      "dialogueHidden": true,
+      "gateHidden": false,
+      "gateText": "🏆 猴群小头目 已击败本集降妖完成，学习和战斗结果已经保存。返回绘本地图重新游玩本集",
+      "bossgateHidden": true,
+      "bossgateText": "",
+      "store": {
+        "wrongWords": {
+          "west": 1,
+          "journey": 1
+        },
+        "mapStage": "complete",
+        "mapWaveIndex": 1,
+        "mapKilled": 8,
+        "mapStars": 10,
+        "mapShield": 1,
+        "npcBonus": true,
+        "npcDone": true,
+        "npcUnlocked": true,
+        "mapDefeatedKeys": [
+          "w0-0",
+          "w0-1",
+          "w0-2",
+          "w0-3",
+          "w1-0",
+          "w1-1",
+          "w1-2",
+          "w1-3"
+        ],
+        "mapItems": {
+          "peach": 0,
+          "fan": 2,
+          "gourd": 1,
+          "cloud": 1,
+          "mantra": 1,
+          "staff": 1
+        },
+        "updatedAt": "2026-09-09T04:15:59.555Z",
+        "stars": 3,
+        "clears": 1
+      },
+      "url": "http://127.0.0.1:8799/engine/game.html?ep=1&from=battle",
+      "fromBattle": true,
+      "collection": {
+        "monkey-minor": {
+          "cardLevel": "c01",
+          "firstClearAt": "2026-09-09T04:15:59.555Z"
+        }
+      }
+    }
+  ]
+}

@@ -107,6 +107,19 @@ export async function buildApks() {
     await access(destination);
     console.log(`[build-apks] ${path.relative(root, destination)}`);
   }
+
+  const python = process.platform === "win32" ? "python" : "python3";
+  const archiveArgs = [
+    "-X", "utf8", "prj/tools/make_release.py",
+    "--version", version.versionName,
+    "--version-code", String(version.versionCode),
+    "--mobile", outputs[0][1],
+    "--tv", outputs[1][1],
+    "--handheld", outputs[2][1],
+    "--no-datapack",
+  ];
+  if (jttwOnly) archiveArgs.push("--profile", "jttw");
+  await run(python, archiveArgs, root);
 }
 
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {

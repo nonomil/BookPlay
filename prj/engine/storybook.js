@@ -2337,7 +2337,7 @@ function renderPracticeResult() {
     battle.textContent = "⚔️ 去打怪";
     battle.setAttribute("aria-label", `用第${ep}集单词打怪闯关`);
     battle.addEventListener("click", () => {
-      window.location.href = `battle.html?ep=${ep}`;
+      window.location.href = `game.html?ep=${ep}`;
     });
     actions.append(battle);
   }

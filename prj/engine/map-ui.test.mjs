@@ -25,9 +25,10 @@ test("map assets use matching positive cache versions", () => {
 });
 
 test("collection page presents a multi-episode title, range, and story summary", () => {
-  assert.match(js, /class="page-range"/, "page header must show the covered episode range");
-  assert.match(js, /class="page-summary"/, "page header must show the collection story summary");
-  assert.match(js, /c\.summary\?\.zh/, "story summary must come from collection data");
+  // 2026-09-12 全屏改版：辑信息行并入集详情弹层，页头整行移除
+  assert.doesNotMatch(js, /class="page-head"/, "page header row is fully removed for the full-bleed map");
+  assert.doesNotMatch(js, /class="page-range"/, "range pill removed with the header");
+  assert.match(js, /function openEpisodeDetail/, "episode detail overlay carries the title context now");
   assert.doesNotMatch(js, /function\s+stripHTML/, "tiny duplicate episode-number strip must be removed");
 });
 
@@ -36,8 +37,8 @@ test("episode cards put the episode number in the readable title and expose pron
   assert.match(js, /class="episode-number"/, "episode number needs its own readable title line");
   assert.match(js, /class="episode-name"/, "story name must remain visible beside or below the number");
   assert.match(js, /第\$\{n\}\$\{SERIES\.unit\}/, "episode number must be part of the episode title");
-  assert.match(js, /class="node-speak"/, "episode title needs a pronunciation button");
-  assert.match(js, /aria-label="朗读中英双语标题/, "bilingual pronunciation button needs an accessible name");
+  // 2026-09-12 用户要求移除卡片喇叭按钮
+  assert.doesNotMatch(js, /class="node-speak"/, "speaker button removed from cards by user request");
   assert.match(css, /\.episode-title\s*\{[^}]*font-size:\s*clamp\(0\.78rem/s,
     "episode titles must remain visibly larger than the removed tiny pips");
 });
@@ -57,7 +58,6 @@ test("entering or switching a collection schedules its narration", () => {
 test("short landscape maps switch from the zigzag to a readable compact route", () => {
   assert.match(js, /route\.classList\.add\("compact"/, "short routes need a compact layout mode");
   assert.match(css, /\.route\.compact\s*\{/, "compact routes need an explicit grid layout");
-  assert.match(css, /\.node-speak[\s\S]*?padding:\s*0/, "speaker controls must not lose card width to default padding");
 });
 
 test("desktop route is an open three-row S polyline with round dashed markers", () => {
@@ -263,11 +263,24 @@ test("hovering the progress card keeps its saved forward-facing direction", () =
     "a hover on the current progress card should use the saved base direction");
 });
 
+test("西游记选关开放所有集，用完成/未完成贴纸代替锁", () => {
+  assert.match(js, /const OPEN_SELECT = SERIES_ID === "jttw"/);
+  assert.match(js, /if \(OPEN_SELECT\) return true/);
+  assert.match(js, /node-sticker/);
+  assert.match(js, /collectionIdForEp/);
+  assert.match(js, /game-stickers\/\$\{/);
+  assert.match(js, /bookplay_battle_progress_v1/);
+  assert.match(css, /\.node-sticker\.is-done img/);
+  assert.match(css, /\.node-sticker\.is-todo img/);
+  assert.match(js, /drillDone\(c\)/, "巩固关仍按辑锁定");
+});
+
 test("episode image cards stay colorful, prominent, and attractive when locked", () => {
-  assert.doesNotMatch(css, /grayscale\(/, "locked covers must keep their story colors");
+  assert.doesNotMatch(css, /\.node\.locked[^{]*\{[^}]*grayscale\(/s, "locked covers must keep their story colors");
+  assert.doesNotMatch(css, /\.node\.locked \.node-cover img\s*\{[^}]*grayscale\(/s, "locked cover images must not be grayed out");
   assert.match(css, /\.node\.locked \.node-cover img\s*\{[^}]*saturate\(0\.95\)[^}]*brightness\(0\.92\)/s,
     "locked covers may use only a light colorful treatment");
-  assert.match(js, /w \* 0\.175/, "large screens should allow wider image cards");
+  assert.match(js, /w \* 0\.27/, "large screens should allow wider image cards（2026-09-12 全屏改版再放大）");
   assert.match(css, /\.route\.compact \.node-cover\s*\{[^}]*display:\s*block/s,
     "compact landscape cards must keep their cover image visible");
   assert.match(css, /\.route\.compact \.node-text\s*\{[^}]*position:\s*absolute/s,
@@ -288,6 +301,25 @@ test("episode image cards stay colorful, prominent, and attractive when locked",
     "only the drill shortcut may move into the side gutter when twelve episodes fill three rows");
   assert.match(js, /compactMax && el\.classList\.contains\("drill"\)[\s\S]*?removeProperty\("grid-row"\)[\s\S]*?removeProperty\("grid-column"\)/,
     "the gutter drill must drop its inherited grid area so absolute offsets use the whole route");
+});
+
+test("JTTW map analogizes world+node contract without importing pixel-world copy", () => {
+  assert.match(html, /id="map-worlds"/, "map.html must host the collection world strip");
+  assert.match(js, /function\s+collectionWorld\s*\(/, "collections are the world adapter");
+  assert.match(js, /function\s+worldNodeAnchors\s*\(/, "authored node positions become route anchors");
+  assert.match(js, /function\s+buildWorldStrip\s*\(/, "jttw must render a world selector");
+  assert.match(js, /classList\.add\("map-terminal"\)/, "jttw body opts into the terminal stage");
+  assert.match(js, /terminal-stage/, "each collection page needs a stage overlay");
+  assert.match(js, /route-stage-image/, "the stage uses the collection background");
+  assert.match(js, /data-node-world/, "episode nodes must expose their world id");
+  assert.match(js, /data-node-id/, "episode nodes must expose a node id");
+  assert.match(js, /x > 1 \|\| y > 1/, "pixel-world 0-100 positions convert to 0-1 anchors");
+  assert.match(css, /body\.map-terminal \.terminal-stage/, "terminal stage styles stay jttw-scoped");
+  assert.match(css, /aspect-ratio:\s*16\s*\/\s*9/, "the world stage is 16:9");
+  assert.doesNotMatch(js, /星港科技区|森林回声区|方块地下城|sci-fi|pixel-worlds/,
+    "do not import forest/starport/block copy or ids");
+  assert.doesNotMatch(html, /星港科技区|森林回声区|方块地下城/,
+    "the map shell must stay Journey to the West");
 });
 
 test("regular map cards use a large standalone cover with three floating title lines", () => {

@@ -1,0 +1,9 @@
+flowchart TD
+    Intent["输入幅度"] --> Normalize["所有非零输入归一"]
+    Normalize --> Speed["轻推满推同速"]
+    Units["逻辑坐标"] --> WidthHeight["分别按视口宽高缩放"]
+    WidthHeight --> Distort["速度与碰撞尺度变形"]
+    Hero["角色世界位置"] --> Center["camera等于hero减半屏"]
+    Center --> Map["立即反向滚图"]
+    Fix["拟改造：统一尺度/保留幅度/边缘跟随"] --> Verify["正常输入+真机验证"]
+

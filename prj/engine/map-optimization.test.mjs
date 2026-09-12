@@ -8,14 +8,18 @@ const dir = path.dirname(fileURLToPath(import.meta.url));
 const read = (name) => fs.readFileSync(path.join(dir, name), "utf8");
 
 test("map exposes one page-level continue action for the current learning state", () => {
-  const html = read("map.html");
+  // 2026-09-12 全屏改版：页级"开始第N集"按钮移除，继续学习由集详情弹层承担
   const js = read("map.js");
-  const css = read("map.css");
-  assert.match(html, /id="map-track"/);
-  assert.match(js, /page-primary-action/);
-  assert.match(js, /verb\s*=\s*nextEpisode/);
-  assert.match(js, /去完成本辑巩固/);
-  assert.match(css, /\.page-primary-action/);
+  assert.doesNotMatch(js, /page-primary-action/, "page-level action removed with the header row");
+  assert.match(js, /function openEpisodeDetail/, "detail overlay is the entry point now");
+});
+
+test("jttw's battle entry opens the word-memory map before the Boss battle", () => {
+  const js = read("map.js");
+  // 2026-09-12 选关改版：打怪入口从卡片面挪进集详情弹层
+  assert.doesNotMatch(js, /class="node-battle"/, "卡片面不再内嵌打怪链接");
+  assert.match(js, /episode-detail-option[^>]*>⚔️ 打怪/);
+  assert.match(js, /game\.html\?ep=\$\{n\}/, "详情弹层内打怪指向 game.html 大地图");
 });
 
 test("splash companion card exposes recent earned medals beside the cover", () => {

@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="tv.css?v=game-1">
   <link rel="stylesheet" href="app-audio.css?v=1">
   <link rel="stylesheet" href="battle.css?v=battle-3">
-  <link rel="stylesheet" href="game.css?v=game-2">
+  <link rel="stylesheet" href="game.css?v=game-6">
 </head>
 <body>
   <main class="game" id="game-root">
@@ -36,6 +36,17 @@
       <strong id="game-banner-title">花果山</strong>
     </section>
 
+    <nav class="game-route" id="game-route" aria-label="本集三站">
+      <button type="button" class="game-route-node" data-stop="wave1" tabindex="0">
+        <strong>小妖</strong><small>第 01 站</small>
+      </button>
+      <button type="button" class="game-route-node" data-stop="npc" tabindex="0">
+        <strong>问答</strong><small>第 02 站</small>
+      </button>
+      <button type="button" class="game-route-node" data-stop="boss" tabindex="0">
+        <strong>大战</strong><small>第 03 站</small>
+      </button>
+    </nav>
     <aside class="game-supports" id="game-supports" aria-label="支援道具"></aside>
     <aside class="game-hintcard" id="game-hintcard" hidden aria-live="polite"></aside>
 
@@ -45,11 +56,14 @@
     <section class="game-dialogue" id="game-dialogue" hidden aria-live="polite">
       <img class="game-dialogue-face" id="game-dialogue-face" alt="" decoding="async">
       <div class="game-dialogue-body">
+        <span class="game-dialogue-kicker" id="game-dialogue-kicker">剧情</span>
         <span class="game-dialogue-name" id="game-dialogue-name">NPC</span>
         <p class="game-dialogue-en" id="game-dialogue-en"></p>
         <p class="game-dialogue-zh" id="game-dialogue-zh"></p>
         <div class="game-dialogue-choices" id="game-dialogue-choices"></div>
+        <button type="button" class="battle-secondary game-dialogue-replay" id="game-dialogue-replay" tabindex="0">🔊 重听</button>
         <button type="button" class="game-primary" id="game-dialogue-next" tabindex="0">继续 ▼</button>
+        <button type="button" class="battle-secondary game-dialogue-close" id="game-dialogue-close" tabindex="0" aria-label="关闭对话">关闭</button>
       </div>
     </section>
 
@@ -66,7 +80,10 @@
 
   <script src="app-audio.js?v=2"></script>
   <script src="tv-remote.js?v=game-1"></script>
-  <script src="battle-core.js?v=battle-3"></script>
-  <script src="game.js?v=game-8"></script>
+  <script src="battle-core.js?v=battle-4"></script>
+  <script src="game-core.js?v=game-12"></script>
+  <script src="game-input.js?v=game-1"></script>
+  <script src="game-audio.js?v=game-1"></script>
+  <script src="game.js?v=game-19"></script>
 </body>
 </html>

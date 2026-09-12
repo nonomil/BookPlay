@@ -370,6 +370,31 @@ body.map-body {
   border-color: #fff4c8;
   color: #241b0d;
 }
+.node-sticker {
+  position: absolute;
+  top: 3%;
+  left: 2%;
+  z-index: 3;
+  width: clamp(46px, calc(var(--card, 112px) * 0.48), 72px);
+  padding: 0;
+  border: 0;
+  background: none;
+  box-shadow: none;
+  transform: rotate(-9deg);
+  pointer-events: none;
+}
+.node-sticker img {
+  display: block;
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 3px 4px rgba(0, 0, 0, 0.35));
+}
+.node-sticker.is-done img {
+  filter: drop-shadow(0 3px 4px rgba(0, 0, 0, 0.35)) drop-shadow(0 0 6px rgba(255, 215, 106, 0.55));
+}
+.node-sticker.is-todo img {
+  filter: grayscale(1) brightness(1.18) opacity(0.82) drop-shadow(0 2px 3px rgba(0, 0, 0, 0.3));
+}
 
 .node-text {
   display: block;
@@ -829,7 +854,9 @@ body.map-body {
         box-shadow: 0 2px 7px rgba(0, 0, 0, 0.55);
       }
       .route.compact .node-badge,
-      .route.compact .node-tip { left: 0.28rem; right: auto; top: 0.28rem; z-index: 3; }
+      .route.compact .node-tip,
+      .route.compact .node-sticker { left: 0.28rem; right: auto; top: 0.28rem; z-index: 3; }
+      .route.compact .node-sticker { transform: rotate(-6deg); min-width: 0; padding: 0.12em 0.34em; }
   .route.compact .node.drill {
     display: flex;
     width: 100%;
@@ -1021,4 +1048,263 @@ body.map-body {
     animation-play-state: running;
     background-position-x: 0;
   }
+  .map-world-button { transition: none; }
+}
+
+/* 西游选关：合辑=世界卡，舞台=16:9 地图，集=覆盖节点。
+ * 只改 jttw 的 .map-terminal，其它系列仍走封面卡 + S 折线。 */
+body.map-terminal {
+  display: flex;
+  flex-direction: column;
+  background:
+    radial-gradient(circle at 8% 6%, rgba(255, 233, 168, .12), transparent 28%),
+    radial-gradient(circle at 92% 12%, rgba(201, 162, 39, .1), transparent 30%),
+    var(--deep);
+}
+body.map-terminal #map-top {
+  flex: 0 0 auto;
+  background: rgba(15, 11, 8, .78);
+}
+body.map-terminal #map-worlds {
+  display: flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  min-height: 0;
+  padding: 8px 12px 10px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  border-bottom: 1px solid rgba(201, 162, 39, .22);
+  background: rgba(15, 11, 8, .55);
+  backdrop-filter: blur(14px);
+}
+body.map-terminal #map-worlds::-webkit-scrollbar { display: none; }
+body.map-terminal #map-track {
+  flex: 1 1 auto;
+  height: auto;
+  min-height: 0;
+  padding-bottom: 2.4rem;
+}
+body.map-terminal #map-hint { flex: 0 0 auto; }
+
+.map-world-button {
+  display: grid;
+  grid-template-columns: 96px minmax(0, 1fr);
+  align-items: center;
+  gap: 10px;
+  min-width: 220px;
+  max-width: 280px;
+  padding: 6px 12px 6px 6px;
+  border: 1px solid rgba(201, 162, 39, .32);
+  border-radius: 16px;
+  background: rgba(255, 248, 225, .14);
+  color: #fff4c8;
+  text-align: left;
+  cursor: pointer;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, .18);
+  transition: border-color .18s ease, background-color .18s ease, transform .18s ease;
+}
+.map-world-button img {
+  width: 96px;
+  height: 64px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px;
+}
+.map-world-button strong,
+.map-world-button small { display: block; }
+.map-world-button strong {
+  overflow: hidden;
+  font-size: 14px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.map-world-button small {
+  margin-top: 4px;
+  color: #f0d9a2;
+  font-size: 11px;
+}
+.map-world-button:hover,
+.map-world-button:focus-visible {
+  border-color: var(--gold-bright);
+  outline: none;
+  transform: translateY(-2px);
+}
+.map-world-button.is-active {
+  border-color: var(--gold-bright);
+  background: rgba(255, 215, 106, .18);
+  box-shadow: 0 0 0 3px rgba(255, 215, 106, .22), 0 8px 18px rgba(0, 0, 0, .18);
+}
+
+body.map-terminal .map-page {
+  background-image:
+    radial-gradient(900px 420px at 80% -5%, rgba(120, 180, 255, 0.08), transparent),
+    linear-gradient(180deg, #10141f 0%, #1a1626 50%, #241a12 100%);
+}
+body.map-terminal .page-head {
+  padding: 0.35rem 1rem 0.1rem;
+}
+body.map-terminal .page-head h2 { font-size: clamp(1.02rem, 2.2vw, 1.32rem); }
+body.map-terminal .page-en { display: none; }
+body.map-terminal .page-summary {
+  max-width: 46rem;
+  margin: 0.15rem auto 0;
+  overflow: hidden;
+  font-size: 0.78rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+body.map-terminal .page-primary-action { margin-top: 0.35rem; min-height: 2.2rem; }
+
+body.map-terminal .terminal-stage {
+  position: relative;
+  overflow: visible;
+  width: min(100% - 24px, calc((100vh - 13rem) * 16 / 9), 1280px);
+  max-height: calc(100vh - 13rem);
+  aspect-ratio: 16 / 9;
+  margin: 0 auto 0.7rem;
+  border: 2px solid rgba(255, 248, 225, .72);
+  border-radius: 22px;
+  background: #241a12;
+  box-shadow: 0 20px 44px rgba(0, 0, 0, .28), 0 5px 0 rgba(201, 162, 39, .12);
+}
+body.map-terminal .terminal-stage.compact {
+  width: auto;
+  max-height: none;
+  aspect-ratio: auto;
+  margin: 0.1rem 0.6rem 0.5rem;
+}
+.route-stage-image {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  pointer-events: none;
+  border-radius: inherit;
+}
+body.map-terminal .terminal-stage::after {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  content: "";
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .08);
+}
+
+body.map-terminal .terminal-stage .node {
+  display: grid;
+  grid-template-columns: 52px minmax(0, 1fr);
+  align-items: start;
+  gap: 6px;
+  width: 168px;
+  min-height: 62px;
+  padding: 5px 8px 6px 5px;
+  overflow: visible;
+  --node-lift: 8px;
+  border: 1px solid rgba(255, 255, 255, .78);
+  border-radius: 14px;
+  background: rgba(255, 252, 244, .86);
+  color: #29434a;
+  box-shadow: 0 8px 18px rgba(35, 24, 8, .18);
+  backdrop-filter: blur(8px);
+}
+body.map-terminal .terminal-stage .node-main {
+  display: grid;
+  grid-template-columns: 52px minmax(0, 1fr);
+  grid-column: 1 / -1;
+  align-items: center;
+  gap: 7px;
+}
+body.map-terminal .terminal-stage .node-cover {
+  width: 52px;
+  aspect-ratio: 1;
+  border-width: 1.5px;
+  border-radius: 10px;
+}
+body.map-terminal .terminal-stage .node-text {
+  padding: 0;
+  text-align: left;
+  text-shadow: none;
+}
+body.map-terminal .terminal-stage .episode-title {
+  color: #29434a;
+  font-size: clamp(0.72rem, 1.6vw, 0.92rem);
+}
+body.map-terminal .terminal-stage .episode-number { color: #8a6a18; }
+body.map-terminal .terminal-stage .episode-en { display: none; }
+body.map-terminal .terminal-stage .node.current .episode-title { color: #3a2a10; }
+body.map-terminal .terminal-stage .node.current {
+  border-color: var(--gold-bright);
+  box-shadow: 0 0 0 3px rgba(255, 215, 106, .3), 0 8px 18px rgba(35, 24, 8, .18);
+}
+body.map-terminal .terminal-stage .node-sticker {
+  width: 28px;
+  top: -6px;
+  left: -8px;
+}
+body.map-terminal .terminal-stage .node-speak {
+  right: 6px;
+  top: 6px;
+  width: 22px;
+  height: 22px;
+}
+body.map-terminal .terminal-stage .node-actions {
+  display: flex;
+  grid-column: 1 / -1;
+  gap: 4px;
+  min-width: 0;
+}
+body.map-terminal .terminal-stage .node-listen,
+body.map-terminal .terminal-stage .node-dub,
+body.map-terminal .terminal-stage .node-battle {
+  flex: 1 1 0;
+  margin: 0;
+  min-height: 20px;
+  padding: 0.12em 0.2em;
+  font-size: 0.55rem;
+}
+body.map-terminal .terminal-stage .node.drill {
+  display: flex;
+  width: 88px;
+  min-height: 62px;
+  align-items: center;
+  justify-content: center;
+  color: #3a2a10;
+}
+
+@media (max-width: 720px) {
+  .map-world-button {
+    min-width: 188px;
+    grid-template-columns: 72px minmax(0, 1fr);
+    padding-right: 8px;
+  }
+  .map-world-button img { width: 72px; height: 52px; }
+  .map-world-button strong { font-size: 12px; }
+  body.map-terminal .terminal-stage {
+    width: min(100% - 16px, 620px);
+    max-height: none;
+    aspect-ratio: 1 / 1;
+  }
+  body.map-terminal .terminal-stage .node {
+    grid-template-columns: 40px minmax(0, 1fr);
+    width: 132px;
+    min-height: 54px;
+    padding: 4px 6px 4px 4px;
+  }
+  body.map-terminal .terminal-stage .node-main { grid-template-columns: 40px minmax(0, 1fr); }
+  body.map-terminal .terminal-stage .node-cover { width: 40px; }
+}
+
+@media (max-width: 460px) {
+  body.map-terminal .terminal-stage .node {
+    grid-template-columns: 36px minmax(0, 1fr);
+    width: 112px;
+    min-height: 48px;
+  }
+  body.map-terminal .terminal-stage .node-main { grid-template-columns: 36px minmax(0, 1fr); }
+  body.map-terminal .terminal-stage .node-cover { width: 36px; }
+  body.map-terminal .terminal-stage .episode-title { font-size: 0.64rem; }
 }

@@ -49,7 +49,7 @@ ENGINE_FILES = [
     "map.html", "map.js", "map.css",
     # 降妖记小游戏：战斗页 + 大地图探索页及其运行时依赖
     "battle.html", "battle.js", "battle.css", "battle-core.js",
-    "game.html", "game.js", "game.css",
+    "game.html", "game.js", "game.css", "game-core.js", "game-input.js", "game-audio.js",
     "episode-vocab-quiz.js",
     "tv.css", "tv-remote.js", "native-key.js", "handheld-keys.html",
     "companion.html", "companion.js", "companion.css", "companion-core.js",
@@ -174,6 +174,31 @@ DATA_DIRS = [
     ("assets/generated/jttw-player-walkers/chaosdemon/directions/chaosdemon-south-walk-action.gif", ASSETS / "generated" / "jttw-player-walkers" / "chaosdemon" / "directions" / "chaosdemon-south-walk-action.gif"),
     ("assets/generated/jttw-player-walkers/chaosdemon/directions/chaosdemon-west-walk-action.gif", ASSETS / "generated" / "jttw-player-walkers" / "chaosdemon" / "directions" / "chaosdemon-west-walk-action.gif"),
     ("assets/generated/jttw-player-walkers/chaosdemon/directions/chaosdemon-north-walk-action.gif", ASSETS / "generated" / "jttw-player-walkers" / "chaosdemon" / "directions" / "chaosdemon-north-walk-action.gif"),
+    # ep1 / ep5 地图三态精灵：移动=walk，投掷/撞击=attack，静止=idle。
+    ("assets/generated/jttw-player-walkers/wukong/directions/wukong-south-idle.png", ASSETS / "generated" / "jttw-player-walkers" / "wukong" / "directions" / "wukong-south-idle.png"),
+    ("assets/generated/jttw-player-walkers/wukong/directions/wukong-west-idle.png", ASSETS / "generated" / "jttw-player-walkers" / "wukong" / "directions" / "wukong-west-idle.png"),
+    ("assets/generated/jttw-player-walkers/wukong/directions/wukong-east-idle.png", ASSETS / "generated" / "jttw-player-walkers" / "wukong" / "directions" / "wukong-east-idle.png"),
+    ("assets/generated/jttw-player-walkers/wukong/directions/wukong-north-idle.png", ASSETS / "generated" / "jttw-player-walkers" / "wukong" / "directions" / "wukong-north-idle.png"),
+    ("assets/generated/jttw-player-walkers/wukong/directions/wukong-south-walk.gif", ASSETS / "generated" / "jttw-player-walkers" / "wukong" / "directions" / "wukong-south-walk.gif"),
+    ("assets/generated/jttw-player-walkers/wukong/directions/wukong-west-walk.gif", ASSETS / "generated" / "jttw-player-walkers" / "wukong" / "directions" / "wukong-west-walk.gif"),
+    ("assets/generated/jttw-player-walkers/wukong/directions/wukong-east-walk.gif", ASSETS / "generated" / "jttw-player-walkers" / "wukong" / "directions" / "wukong-east-walk.gif"),
+    ("assets/generated/jttw-player-walkers/wukong/directions/wukong-north-walk.gif", ASSETS / "generated" / "jttw-player-walkers" / "wukong" / "directions" / "wukong-north-walk.gif"),
+    ("assets/generated/jttw-player-walkers/wukong/directions/wukong-south-attack.gif", ASSETS / "generated" / "jttw-player-walkers" / "wukong" / "directions" / "wukong-south-attack.gif"),
+    ("assets/generated/jttw-player-walkers/wukong/directions/wukong-west-attack.gif", ASSETS / "generated" / "jttw-player-walkers" / "wukong" / "directions" / "wukong-west-attack.gif"),
+    ("assets/generated/jttw-player-walkers/wukong/directions/wukong-east-attack.gif", ASSETS / "generated" / "jttw-player-walkers" / "wukong" / "directions" / "wukong-east-attack.gif"),
+    ("assets/generated/jttw-player-walkers/wukong/directions/wukong-north-attack.gif", ASSETS / "generated" / "jttw-player-walkers" / "wukong" / "directions" / "wukong-north-attack.gif"),
+    ("assets/generated/jttw-player-walkers/chaosdemon/directions/chaosdemon-south-idle.png", ASSETS / "generated" / "jttw-player-walkers" / "chaosdemon" / "directions" / "chaosdemon-south-idle.png"),
+    ("assets/generated/jttw-player-walkers/chaosdemon/directions/chaosdemon-west-idle.png", ASSETS / "generated" / "jttw-player-walkers" / "chaosdemon" / "directions" / "chaosdemon-west-idle.png"),
+    ("assets/generated/jttw-player-walkers/chaosdemon/directions/chaosdemon-east-idle.png", ASSETS / "generated" / "jttw-player-walkers" / "chaosdemon" / "directions" / "chaosdemon-east-idle.png"),
+    ("assets/generated/jttw-player-walkers/chaosdemon/directions/chaosdemon-north-idle.png", ASSETS / "generated" / "jttw-player-walkers" / "chaosdemon" / "directions" / "chaosdemon-north-idle.png"),
+    ("assets/generated/jttw-player-walkers/chaosdemon/directions/chaosdemon-south-walk.gif", ASSETS / "generated" / "jttw-player-walkers" / "chaosdemon" / "directions" / "chaosdemon-south-walk.gif"),
+    ("assets/generated/jttw-player-walkers/chaosdemon/directions/chaosdemon-west-walk.gif", ASSETS / "generated" / "jttw-player-walkers" / "chaosdemon" / "directions" / "chaosdemon-west-walk.gif"),
+    ("assets/generated/jttw-player-walkers/chaosdemon/directions/chaosdemon-east-walk.gif", ASSETS / "generated" / "jttw-player-walkers" / "chaosdemon" / "directions" / "chaosdemon-east-walk.gif"),
+    ("assets/generated/jttw-player-walkers/chaosdemon/directions/chaosdemon-north-walk.gif", ASSETS / "generated" / "jttw-player-walkers" / "chaosdemon" / "directions" / "chaosdemon-north-walk.gif"),
+    ("assets/generated/jttw-player-walkers/chaosdemon/directions/chaosdemon-south-attack.gif", ASSETS / "generated" / "jttw-player-walkers" / "chaosdemon" / "directions" / "chaosdemon-south-attack.gif"),
+    ("assets/generated/jttw-player-walkers/chaosdemon/directions/chaosdemon-west-attack.gif", ASSETS / "generated" / "jttw-player-walkers" / "chaosdemon" / "directions" / "chaosdemon-west-attack.gif"),
+    ("assets/generated/jttw-player-walkers/chaosdemon/directions/chaosdemon-east-attack.gif", ASSETS / "generated" / "jttw-player-walkers" / "chaosdemon" / "directions" / "chaosdemon-east-attack.gif"),
+    ("assets/generated/jttw-player-walkers/chaosdemon/directions/chaosdemon-north-attack.gif", ASSETS / "generated" / "jttw-player-walkers" / "chaosdemon" / "directions" / "chaosdemon-north-attack.gif"),
     ("assets/generated/jttw-player-walkers/dragonking/directions/dragonking-east-walk-action.gif", ASSETS / "generated" / "jttw-player-walkers" / "dragonking" / "directions" / "dragonking-east-walk-action.gif"),
     ("assets/generated/jttw-player-walkers/dragonking/directions/dragonking-south-walk-action.gif", ASSETS / "generated" / "jttw-player-walkers" / "dragonking" / "directions" / "dragonking-south-walk-action.gif"),
     ("assets/generated/jttw-player-walkers/dragonking/directions/dragonking-west-walk-action.gif", ASSETS / "generated" / "jttw-player-walkers" / "dragonking" / "directions" / "dragonking-west-walk-action.gif"),
@@ -220,8 +245,16 @@ DATA_DIRS = [
     ("game/taunts.json", CONTENT / "game" / "taunts.json"),
     ("game/maps.json", CONTENT / "game" / "maps.json"),
     ("game/sprites.json", CONTENT / "game" / "sprites.json"),
+    ("game/dex.json", CONTENT / "game" / "dex.json"),
+    ("game/pickups.json", CONTENT / "game" / "pickups.json"),
+    ("game/boss-kits.json", CONTENT / "game" / "boss-kits.json"),
+    ("assets/generated/jttw-arena/arena-floor.jpg", ASSETS / "generated" / "jttw-arena" / "arena-floor.jpg"),
+    ("assets/game-fx", CONTENT / "assets" / "game-fx"),
+    ("assets/game-pickups", CONTENT / "assets" / "game-pickups"),
+    ("game/audio", CONTENT / "game" / "audio"),
     ("game/levels", CONTENT / "game" / "levels"),
     ("assets/game-sprites", CONTENT / "assets" / "game-sprites"),
+    ("assets/game-farm", CONTENT / "assets" / "game-farm"),
 ]
 
 
@@ -488,6 +521,15 @@ def _prune_jttw_only(files: dict[str, Path | bytes]) -> None:
         "assets/generated/jttw-route-companion/transparent/wukong-walk-atlas.png",
         "assets/generated/wala-gamification/companion-room-bg-v1.png",
     }
+    # The playable EP1 map now uses the directional three-state contract for
+    # the hero. Preserve those explicit files while still pruning every other
+    # generated walker from the jttw-only APK profile.
+    for direction in ("south", "west", "east", "north"):
+        keep.add(f"assets/generated/jttw-player-walkers/wukong/directions/wukong-{direction}-idle.png")
+        keep.add(f"assets/generated/jttw-player-walkers/wukong/directions/wukong-{direction}-walk.gif")
+        keep.add(f"assets/generated/jttw-player-walkers/wukong/directions/wukong-{direction}-attack.gif")
+    for n in range(1, 9):
+        keep.add(f"assets/generated/jttw-player-walkers/wukong/wukong-walk-0{n}.png")
     drop_prefixes = (
         "assets/minecraft/",
         "assets/mikey-jj/",

@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "assetGroup": "farm-tiles",
+  "zh": "词田地块（3×3 可拼接 tileset）",
+  "sheet": {
+    "grid": { "cols": 3, "rows": 3 },
+    "cell": "341x341",
+    "sizeRequested": "1024x1024",
+    "providerActualSize": "1254x1254",
+    "normalizedSize": "1024x1024",
+    "normalizeNote": "provider returned square 1254x1254; aspect-preserving LANCZOS downscale to requested 1024x1024 so 3x3 cells are equal 341px squares (192x192 display copies derive from these)",
+    "provider": "cliprox",
+    "model": "gpt-image-2",
+    "tlsVerified": true
+  },
+  "generation": {
+    "attempts": 1,
+    "rawSheet": "2d/farm-tiles-3x3-sheet.png",
+    "normalizedSheet": "2d/farm-tiles-3x3-sheet-1024.png",
+    "response": "2d/farm-tiles-3x3-sheet.response.attempt1.json",
+    "runnerManifest": "2d/manifest.json"
+  },
+  "prompt": "source/prompt.txt",
+  "transparency": "not applicable: tiles are full-bleed ground scenes (per spec scene art is opaque), no transparent/ output",
+  "tiles": [
+    { "semantic": "empty",    "state": "空地（土）",              "cell": "2d/split/tile-01-empty.png",    "display192": "192/tile-01-empty.png" },
+    { "semantic": "tilled",   "state": "翻好的田垄",              "cell": "2d/split/tile-02-tilled.png",   "display192": "192/tile-02-tilled.png" },
+    { "semantic": "seeded",   "state": "播种（小坑+种子）",        "cell": "2d/split/tile-03-seeded.png",   "display192": "192/tile-03-seeded.png" },
+    { "semantic": "sprout",   "state": "发芽（小苗）",            "cell": "2d/split/tile-04-sprout.png",   "display192": "192/tile-04-sprout.png" },
+    { "semantic": "growing",  "state": "生长（中苗）",            "cell": "2d/split/tile-05-growing.png",  "display192": "192/tile-05-growing.png" },
+    { "semantic": "ripe",     "state": "成熟（发光词卡果实）",     "cell": "2d/split/tile-06-ripe.png",     "display192": "192/tile-06-ripe.png" },
+    { "semantic": "withered", "state": "枯萎（灰苗）",            "cell": "2d/split/tile-07-withered.png", "display192": "192/tile-07-withered.png" },
+    { "semantic": "water",    "state": "浇水（水珠+苗）",          "cell": "2d/split/tile-08-water.png",    "display192": "192/tile-08-water.png" },
+    { "semantic": "weeds",    "state": "杂草（替代边框装饰角）",    "cell": "2d/split/tile-09-weeds.png",    "display192": "192/tile-09-weeds.png" }
+  ],
+  "qc": {
+    "split": "gpt-image-pipeline split_asset_sheet.py grid mode (deterministic thirds, no --trim)",
+    "cells": 9,
+    "allCellsNonEmpty": true,
+    "cellSize": "341x341",
+    "displayCopySize": "192x192",
+    "noTextInArt": true,
+    "visualCheck": "raw sheet and split cells inspected: 9 distinct states, consistent palette/outline, plots centered, no cell bleed"
+  },
+  "sha256": {
+    "rawSheet": "343df698421ad92df799d9ee55e79fe8a46f160187a5df32d324d3ffd5b11e96",
+    "normalizedSheet": "ddc57e692b67c41e1b1128bc4b99c710578e7fcf014af5e3bfbfcb39bc2d15ee"
+  }
+}

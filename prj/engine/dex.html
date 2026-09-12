@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>妖怪图鉴 | 豆豆龙英语</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="tv.css?v=dex-1">
+  <link rel="stylesheet" href="app-audio.css?v=2">
+  <link rel="stylesheet" href="dex.css?v=dex-1">
+</head>
+<body data-audio-scene="jttw" data-audio-volume="0.20">
+  <main class="dex" id="dex-root">
+    <header class="dex-head">
+      <a class="dex-back" href="map.html" tabindex="0">← 返回地图</a>
+      <h1 class="dex-title">妖怪图鉴</h1>
+      <div class="dex-progress" id="dex-progress" aria-live="polite">0 / 0</div>
+    </header>
+    <section class="dex-grid" id="dex-grid" aria-label="妖怪列表"></section>
+    <section class="dex-detail" id="dex-detail" hidden aria-live="polite"></section>
+    <div class="dex-toast" id="dex-toast" hidden aria-live="polite"></div>
+  </main>
+
+  <script src="app-audio.js?v=3"></script>
+  <script src="tv-remote.js?v=1"></script>
+  <script src="collection-core.js?v=dex-1"></script>
+  <script src="dex.js?v=dex-1"></script>
+</body>
+</html>

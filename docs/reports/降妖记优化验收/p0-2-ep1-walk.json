@@ -1,0 +1,357 @@
+{
+  "url": "http://127.0.0.1:8799/engine/game.html?ep=1",
+  "viewport": "1280x720",
+  "steps": [
+    {
+      "id": "load",
+      "shot": "G:\\Game\\BookPlay书戏\\docs\\reports\\降妖记优化验收\\p0-2-ep1-00-load.png",
+      "carried": "空手",
+      "progress": "0 / 12",
+      "shields": "🛡️🛡️🛡️",
+      "toast": "走过中文词球捡起来，点头顶有对应英文的小妖！",
+      "dialogueHidden": false,
+      "dialogueEn": "One day the rock split open.",
+      "dialogueZh": "有一天,这块岩石裂开了。",
+      "dialogueName": "小猴子",
+      "orbs": [
+        {
+          "text": "旅行(一般指陆路上的长距离旅行)",
+          "hidden": false,
+          "aria": "捡起词球 旅行(一般指陆路上的长距离旅行)"
+        },
+        {
+          "text": "1. 西方,(2. 向西方)",
+          "hidden": false,
+          "aria": "捡起词球 1. 西方,(2. 向西方)"
+        },
+        {
+          "text": "劈开,裂开",
+          "hidden": false,
+          "aria": "捡起词球 劈开,裂开"
+        },
+        {
+          "text": "强大的,强而有力的",
+          "hidden": false,
+          "aria": "捡起词球 强大的,强而有力的"
+        }
+      ],
+      "monsters": [
+        {
+          "word": "journey",
+          "hidden": false,
+          "dead": false
+        },
+        {
+          "word": "west",
+          "hidden": false,
+          "dead": false
+        },
+        {
+          "word": "split",
+          "hidden": false,
+          "dead": false
+        },
+        {
+          "word": "powerful",
+          "hidden": false,
+          "dead": false
+        },
+        {
+          "word": "shot",
+          "hidden": true,
+          "dead": false
+        },
+        {
+          "word": "emperor",
+          "hidden": true,
+          "dead": false
+        },
+        {
+          "word": "Jade Emperor",
+          "hidden": true,
+          "dead": false
+        },
+        {
+          "word": "captain",
+          "hidden": true,
+          "dead": false
+        }
+      ],
+      "heroLeft": "27.75%",
+      "heroTop": "40.5%",
+      "worldTransform": "translate3d(-780.8px, -806.4px, 0px)",
+      "bossClass": "game-entity is-bossspot is-locked"
+    },
+    {
+      "id": "after-intro",
+      "shot": "G:\\Game\\BookPlay书戏\\docs\\reports\\降妖记优化验收\\p0-2-ep1-01-after-intro.png",
+      "carried": "空手",
+      "progress": "0 / 12",
+      "shields": "🛡️🛡️🛡️",
+      "toast": "走过中文词球捡起来，点头顶有对应英文的小妖！",
+      "dialogueHidden": true,
+      "dialogueEn": "",
+      "dialogueZh": "",
+      "dialogueName": "小猴子",
+      "orbs": [
+        {
+          "text": "旅行(一般指陆路上的长距离旅行)",
+          "hidden": false,
+          "aria": "捡起词球 旅行(一般指陆路上的长距离旅行)"
+        },
+        {
+          "text": "1. 西方,(2. 向西方)",
+          "hidden": false,
+          "aria": "捡起词球 1. 西方,(2. 向西方)"
+        },
+        {
+          "text": "劈开,裂开",
+          "hidden": false,
+          "aria": "捡起词球 劈开,裂开"
+        },
+        {
+          "text": "强大的,强而有力的",
+          "hidden": false,
+          "aria": "捡起词球 强大的,强而有力的"
+        }
+      ],
+      "monsters": [
+        {
+          "word": "journey",
+          "hidden": false,
+          "dead": false
+        },
+        {
+          "word": "west",
+          "hidden": false,
+          "dead": false
+        },
+        {
+          "word": "split",
+          "hidden": false,
+          "dead": false
+        },
+        {
+          "word": "powerful",
+          "hidden": false,
+          "dead": false
+        },
+        {
+          "word": "shot",
+          "hidden": true,
+          "dead": false
+        },
+        {
+          "word": "emperor",
+          "hidden": true,
+          "dead": false
+        },
+        {
+          "word": "Jade Emperor",
+          "hidden": true,
+          "dead": false
+        },
+        {
+          "word": "captain",
+          "hidden": true,
+          "dead": false
+        }
+      ],
+      "heroLeft": "27.75%",
+      "heroTop": "40.5%",
+      "worldTransform": "translate3d(-780.8px, -806.4px, 0px)",
+      "bossClass": "game-entity is-bossspot is-locked"
+    },
+    {
+      "id": "pickup",
+      "shot": "G:\\Game\\BookPlay书戏\\docs\\reports\\降妖记优化验收\\p0-2-ep1-02-pickup.png",
+      "pickup": {
+        "ok": true,
+        "reason": "picked",
+        "label": "捡起词球 旅行(一般指陆路上的长距离旅行)",
+        "carried": "旅行(一般指陆路上的长距离旅行)  ·······",
+        "hero": {
+          "left": "35.047%",
+          "top": "35.993%"
+        }
+      },
+      "carried": "旅行(一般指陆路上的长距离旅行)  ·······",
+      "progress": "0 / 12",
+      "shields": "🛡️🛡️🛡️",
+      "toast": "",
+      "dialogueHidden": true,
+      "dialogueEn": "",
+      "dialogueZh": "",
+      "dialogueName": "小猴子",
+      "orbs": [
+        {
+          "text": "旅行(一般指陆路上的长距离旅行)",
+          "hidden": true,
+          "aria": "捡起词球 旅行(一般指陆路上的长距离旅行)"
+        },
+        {
+          "text": "1. 西方,(2. 向西方)",
+          "hidden": false,
+          "aria": "捡起词球 1. 西方,(2. 向西方)"
+        },
+        {
+          "text": "劈开,裂开",
+          "hidden": false,
+          "aria": "捡起词球 劈开,裂开"
+        },
+        {
+          "text": "强大的,强而有力的",
+          "hidden": false,
+          "aria": "捡起词球 强大的,强而有力的"
+        }
+      ],
+      "monsters": [
+        {
+          "word": "journey",
+          "hidden": false,
+          "dead": false
+        },
+        {
+          "word": "west",
+          "hidden": false,
+          "dead": false
+        },
+        {
+          "word": "split",
+          "hidden": false,
+          "dead": false
+        },
+        {
+          "word": "powerful",
+          "hidden": false,
+          "dead": false
+        },
+        {
+          "word": "shot",
+          "hidden": true,
+          "dead": false
+        },
+        {
+          "word": "emperor",
+          "hidden": true,
+          "dead": false
+        },
+        {
+          "word": "Jade Emperor",
+          "hidden": true,
+          "dead": false
+        },
+        {
+          "word": "captain",
+          "hidden": true,
+          "dead": false
+        }
+      ],
+      "heroLeft": "35.047%",
+      "heroTop": "35.993%",
+      "worldTransform": "translate3d(-924px, -806.2px, 0px)",
+      "bossClass": "game-entity is-bossspot is-locked"
+    },
+    {
+      "id": "typing",
+      "shot": "G:\\Game\\BookPlay书戏\\docs\\reports\\降妖记优化验收\\p0-2-ep1-03-typing.png",
+      "typing": {
+        "attempted": true,
+        "zh": "旅行(一般指陆路上的长距离旅行)  ·······",
+        "term": "journey",
+        "after": {
+          "carried": "空手",
+          "progress": "1 / 12",
+          "shields": "🛡️🛡️🛡️",
+          "toast": "捡到蟠桃！下次被撞会挡一下 🍑",
+          "dialogueHidden": true,
+          "dialogueEn": "",
+          "dialogueZh": "",
+          "dialogueName": "小猴子",
+          "orbs": [
+            {
+              "text": "旅行(一般指陆路上的长距离旅行)",
+              "hidden": true,
+              "aria": "捡起词球 旅行(一般指陆路上的长距离旅行)"
+            },
+            {
+              "text": "1. 西方,(2. 向西方)",
+              "hidden": false,
+              "aria": "捡起词球 1. 西方,(2. 向西方)"
+            },
+            {
+              "text": "劈开,裂开",
+              "hidden": false,
+              "aria": "捡起词球 劈开,裂开"
+            },
+            {
+              "text": "强大的,强而有力的",
+              "hidden": false,
+              "aria": "捡起词球 强大的,强而有力的"
+            }
+          ],
+          "monsters": [
+            {
+              "word": "journey",
+              "hidden": true,
+              "dead": true
+            },
+            {
+              "word": "west",
+              "hidden": false,
+              "dead": false
+            },
+            {
+              "word": "split",
+              "hidden": false,
+              "dead": false
+            },
+            {
+              "word": "powerful",
+              "hidden": false,
+              "dead": false
+            },
+            {
+              "word": "shot",
+              "hidden": true,
+              "dead": false
+            },
+            {
+              "word": "emperor",
+              "hidden": true,
+              "dead": false
+            },
+            {
+              "word": "Jade Emperor",
+              "hidden": true,
+              "dead": false
+            },
+            {
+              "word": "captain",
+              "hidden": true,
+              "dead": false
+            }
+          ],
+          "heroLeft": "35.047%",
+          "heroTop": "35.993%",
+          "worldTransform": "translate3d(-924px, -806.2px, 0px)",
+          "bossClass": "game-entity is-bossspot is-locked"
+        }
+      }
+    },
+    {
+      "id": "walk-right",
+      "shot": "G:\\Game\\BookPlay书戏\\docs\\reports\\降妖记优化验收\\p0-2-ep1-04-walk-right.png",
+      "after_1s": {
+        "heroLeft": "35.505%",
+        "world": "translate3d(-947.4px, -806.2px, 0px)"
+      },
+      "after_11s": {
+        "heroLeft": "40.012%",
+        "world": "translate3d(-1178.2px, -806.2px, 0px)",
+        "carried": "空手",
+        "progress": "1 / 12"
+      }
+    }
+  ]
+}

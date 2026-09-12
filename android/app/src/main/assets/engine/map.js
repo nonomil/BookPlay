@@ -6,7 +6,9 @@
  *   1) 清空进度:
  *        localStorage.removeItem("bookplay_adv_progress")
  *        localStorage.removeItem("bookplay_drill")
- *      刷新后: 只有第 1 辑第 1 集可点 (current), 其余全部锁定。
+ *        localStorage.removeItem("bookplay_battle_progress_v1")
+ *      西游记：所有集都可点，贴纸为「未完成」；巩固关仍按辑锁定。
+ *      其它系列：只有第 1 辑第 1 集可点 (current), 其余全部锁定。
  *
  *   2) 学完第 1 辑前两集:
  *        localStorage.setItem("bookplay_adv_progress", JSON.stringify({
@@ -219,16 +221,103 @@ function collectionRangeLabel(c) {
 
 const progId  = (n) => SERIES.progPrefix ? SERIES.progPrefix + n : n;
 const epDone  = (n) => { const p = readProg()[progId(n)]; return !!(p && p.done); };
+const GAME_PROG_KEY = "bookplay_battle_progress_v1";
+function readGameProg() {
+  try { return JSON.parse(localStorage.getItem(GAME_PROG_KEY) || "{}"); }
+  catch { return {}; }
+}
+const gameDone = (n) => {
+  const rec = readGameProg()[n] || readGameProg()[String(n)] || {};
+  return rec.mapStage === "complete" || Number(rec.clears) > 0;
+};
+const epCleared = (n) => epDone(n) || (SERIES_ID === "jttw" && gameDone(n));
 const colDone = (c) => epNums(c).every(epDone);
 const drillDone = (c) => !SERIES.hasDrill || !!(readDrill()[c.id] && readDrill()[c.id].done);
 const colUnlocked = (c, prev) => c.index === 1 || (colDone(prev) && drillDone(prev));
-// 调用方 nodesHTML 已用 isUnlocked(= colUnlocked(c, prev)) 把过闸，这里只判集内条件
+// 西游记选关开放所有集；巩固关仍按辑锁定。其它系列保持顺序解锁。
+const OPEN_SELECT = SERIES_ID === "jttw";
 const epUnlocked  = (n, c) => {
+  if (OPEN_SELECT) return true;
   const nums = epNums(c);
   const i = nums.indexOf(n);
   return i <= 0 || epDone(nums[i - 1]);
 };
 const drillUnlocked = (c, prev) => colUnlocked(c, prev) && colDone(c);
+
+function collectionIdForEp(n) {
+  const hit = cols.find((item) => Number(item.from) <= n && n <= Number(item.to));
+  return hit && hit.id ? hit.id : "c01";
+}
+
+/* 合辑 = 世界，集 = 节点。字段形状对齐像素世界 manifest
+ * (id/title/subtitle/background + nodes[{levelId,order,label,subtitle,position,icon}])，
+ * 文案、封面、坐标都用西游合辑/目录，不引入星港/森林/方块。 */
+function collectionWorld(c) {
+  const authored = Array.isArray(c.nodes) ? c.nodes : [];
+  const authoredByEp = new Map();
+  authored.forEach((node) => {
+    const id = Number(node.levelId || node.episode);
+    if (Number.isFinite(id) && id > 0) authoredByEp.set(id, node);
+  });
+  return {
+    id: c.id,
+    title: (c.title && c.title.zh) || "",
+    subtitle: (c.summary && c.summary.zh) || "",
+    background: c.background || "",
+    nodes: epNums(c).map((n, i) => {
+      const extra = authoredByEp.get(n) || {};
+      const meta = epMeta(n);
+      const pos = extra.position && typeof extra.position === "object" ? extra.position : null;
+      return {
+        worldId: c.id,
+        levelId: n,
+        order: extra.order || i + 1,
+        label: extra.label || meta.zh,
+        subtitle: extra.subtitle || meta.en,
+        icon: extra.icon || meta.cover,
+        position: pos,
+      };
+    }),
+  };
+}
+
+function worldNodeAnchors(c, nodeCount) {
+  const world = collectionWorld(c);
+  if (world.nodes.length !== nodeCount) return null;
+  const pts = world.nodes.map((node) => {
+    const x = Number(node.position && node.position.x);
+    const y = Number(node.position && node.position.y);
+    if (!Number.isFinite(x) || !Number.isFinite(y)) return null;
+    return (x > 1 || y > 1) ? [x / 100, y / 100] : [x, y];
+  });
+  if (pts.some((p) => !p)) return null;
+  return pts;
+}
+
+function buildWorldStrip() {
+  const nav = $("map-worlds");
+  if (!nav) return;
+  if (SERIES_ID !== "jttw") {
+    nav.hidden = true;
+    nav.innerHTML = "";
+    document.body.classList.remove("map-terminal");
+    return;
+  }
+  document.body.classList.add("map-terminal");
+  nav.hidden = false;
+  nav.innerHTML = cols.map((c, i) => {
+    const world = collectionWorld(c);
+    const thumb = c.background ? `/data/${c.background}` : "";
+    const img = thumb ? `<img src="${thumb}" alt="">` : "";
+    return `<button type="button" class="map-world-button" data-world-index="${i}" aria-selected="false">
+      ${img}
+      <span><strong>${world.title}</strong><small>${collectionRangeLabel(c)} · ${world.nodes.length}站</small></span>
+    </button>`;
+  }).join("");
+  nav.querySelectorAll(".map-world-button").forEach((btn) => {
+    btn.addEventListener("click", () => scrollToIndex(Number(btn.dataset.worldIndex)));
+  });
+}
 
 /* ---------------- 小工具 ---------------- */
 function toast(msg) {
@@ -1244,23 +1333,28 @@ function drawRoute(route) {
 
 /* ---------------- 渲染 ---------------- */
 /* 单集节点卡片：封面缩图 +「第 N 集 · 中文题名」+ 英文题名 + 独立朗读按钮 */
-function epCard(n, state) {
+function epCard(n, state, worldNode) {
   const m = epMeta(n);
-  const img = m.cover
-    ? `<img src="${m.cover}" alt="${m.zh}封面" loading="lazy" onerror="this.parentNode.classList.add('no-cover')">`
+  const label = (worldNode && worldNode.label) || m.zh;
+  const subtitle = (worldNode && worldNode.subtitle) || m.en;
+  const icon = (worldNode && worldNode.icon) || m.cover;
+  const worldId = (worldNode && worldNode.worldId) || collectionIdForEp(n);
+  const img = icon
+    ? `<img src="${icon}" alt="${label}封面" loading="lazy" onerror="this.parentNode.classList.add('no-cover')">`
     : "";
-  const badge =
-    state === "done" ? `<b class="node-badge">✓</b>`
+  const badge = OPEN_SELECT
+    ? `<b class="node-sticker ${state === "done" ? "is-done" : "is-todo"}" aria-label="${state === "done" ? "已完成" : "未完成"}"><img src="/assets/game-stickers/${collectionIdForEp(n)}.png" alt=""></b>`
+    : state === "done" ? `<b class="node-badge">✓</b>`
     : state === "locked" ? `<b class="node-badge lock">🔒</b>`
     : `<b class="node-tip">开始</b>`;
   const content = `
       <span class="node-cover">${img}${badge}</span>
       <span class="node-text">
-        <b class="episode-title"><span class="episode-number">第${n}${SERIES.unit}</span><span class="episode-name">${m.zh}</span></b>
-        <span class="episode-en" lang="en">${m.en}</span>
+        <b class="episode-title"><span class="episode-number">第${n}${SERIES.unit}</span><span class="episode-name">${label}</span></b>
+        <span class="episode-en" lang="en">${subtitle}</span>
       </span>`;
   const speak = `<button class="node-speak" type="button" data-ep="${n}"
-      aria-label="朗读中英双语标题：${m.zh}，${m.en}" title="朗读中英双语标题">${speakerIcon()}</button>`;
+      aria-label="朗读中英双语标题：${label}，${subtitle}" title="朗读中英双语标题">${speakerIcon()}</button>`;
   const listen = SERIES_ID === "jttw" && state !== "locked"
     ? `<a class="node-listen" href="wala.html?ep=${n}&mode=listen&loops=2&visual=audio&subtitle=enzh"
         aria-label="第${n}集磨耳朵" title="隐藏画面，只听本集字幕与声音">🎧 磨耳朵</a>`
@@ -1270,12 +1364,14 @@ function epCard(n, state) {
         aria-label="第${n}集趣配音" title="用自己的声音给本集配音">🎙 配音</a>`
     : "";
   const battle = SERIES_ID === "jttw" && state !== "locked"
-    ? `<a class="node-battle" href="battle.html?ep=${n}"
+    ? `<a class="node-battle" href="game.html?ep=${n}"
         aria-label="第${n}集降妖记打怪复习" title="用本集单词打怪闯关">⚔️ 打怪</a>`
     : "";
+  const actions = (listen || dub || battle) ? `<span class="node-actions">${listen}${dub}${battle}</span>` : "";
+  const nodeAttrs = `data-episode="${n}" data-node-world="${worldId}" data-node-id="${n}"`;
   return state === "locked"
-    ? `<article class="node locked" data-lock="ep" data-episode="${n}">${content}${speak}</article>`
-    : `<article class="node ${state}" data-episode="${n}"><a class="node-main" href="${SERIES.href(n)}">${content}</a>${speak}${listen}${dub}${battle}</article>`;
+    ? `<article class="node locked" data-lock="ep" ${nodeAttrs}>${content}${speak}</article>`
+    : `<article class="node ${state}" ${nodeAttrs}><a class="node-main" href="${SERIES.href(n)}" aria-label="进入${label}">${content}</a>${speak}${actions}</article>`;
 }
 
 function pagePrimaryAction(c, isUnlocked) {
@@ -1340,12 +1436,13 @@ function nodesHTML(c, isUnlocked) {
     return chapterNodesHTML(c, isUnlocked);
   }
 
+  const worldByEp = new Map((SERIES_ID === "jttw" ? collectionWorld(c).nodes : []).map((node) => [node.levelId, node]));
   epNums(c).forEach((n) => {
     let state;
-    if (epDone(n)) state = "done";
-    else if (isUnlocked && epUnlocked(n, c)) state = "current";
+    if (epCleared(n)) state = "done";
+    else if (OPEN_SELECT || (isUnlocked && epUnlocked(n, c))) state = "current";
     else state = "locked";
-    html += epCard(n, state);
+    html += epCard(n, state, worldByEp.get(n));
   });
 
   if (SERIES.hasDrill && c.has_drill !== false) {
@@ -1366,15 +1463,22 @@ function buildPages() {
   track.innerHTML = "";
   pages = [];
   cols.forEach((c, i) => {
-    const isUnlocked = colUnlocked(c, cols[i - 1] || null);
-    const doneCount = epNums(c).filter(epDone).length;
+    const isUnlocked = OPEN_SELECT || colUnlocked(c, cols[i - 1] || null);
+    const doneCount = epNums(c).filter(epCleared).length;
     const total = epNums(c).length;
     const route = c.route || {};
     const summaryZh = c.summary?.zh || "";
+    const drillCount = SERIES.hasDrill && c.has_drill !== false ? 1 : 0;
+    const anchors = route.anchors || (SERIES_ID === "jttw" ? worldNodeAnchors(c, total + drillCount) : null);
+    const stageClass = SERIES_ID === "jttw" ? "route terminal-stage" : "route";
+    const stageImg = SERIES_ID === "jttw" && c.background
+      ? `<img class="route-stage-image" src="/data/${c.background}" alt="${c.title.zh}地图">`
+      : "";
 
     const page = document.createElement("section");
     page.className = "map-page";
     page.dataset.col = c.id;
+    page.dataset.world = c.id;
     page.style.setProperty("--bg", `url('/data/${c.background}')`);
     page.innerHTML = `
       <div class="page-veil"></div>
@@ -1393,7 +1497,8 @@ function buildPages() {
         ${pagePrimaryAction(c, isUnlocked)}
         ${!isUnlocked ? `<div class="page-lock-msg">🔒 学完上一辑解锁</div>` : ""}
       </header>
-      <div class="route" data-unlocked="${isUnlocked ? "true" : "false"}" data-inset-x="${route.insetX ?? ""}" data-top="${route.top ?? ""}" data-bottom="${route.bottom ?? ""}"${route.anchors ? ` data-anchors='${JSON.stringify(route.anchors)}'` : ""}>
+      <div class="${stageClass}" data-unlocked="${isUnlocked ? "true" : "false"}" data-inset-x="${route.insetX ?? ""}" data-top="${route.top ?? ""}" data-bottom="${route.bottom ?? ""}"${anchors ? ` data-anchors='${JSON.stringify(anchors)}'` : ""}>
+        ${stageImg}
         <svg class="route-line" aria-hidden="true">
           <path class="rl-out" d=""></path>
           <path class="rl-in" d=""></path>
@@ -1429,6 +1534,7 @@ function buildPages() {
     });
   }
 
+  buildWorldStrip();
   updateChrome();
   requestAnimationFrame(() => scrollToIndex(initialIndex()));
 }
@@ -1449,9 +1555,18 @@ function updateChrome() {
   $("col-name").textContent = pages[i] ? pages[i].col.title.zh : "";
   $("nav-prev").disabled = i <= 0;
   $("nav-next").disabled = i >= pages.length - 1;
+  document.querySelectorAll(".map-world-button").forEach((btn) => {
+    const on = Number(btn.dataset.worldIndex) === i;
+    btn.classList.toggle("is-active", on);
+    btn.setAttribute("aria-selected", on ? "true" : "false");
+  });
   if (i !== visibleCollectionIndex) {
     visibleCollectionIndex = i;
     if (narrationReady) scheduleCollectionNarration(i);
+    const activeWorld = document.querySelector(`.map-world-button[data-world-index="${i}"]`);
+    if (activeWorld && typeof activeWorld.scrollIntoView === "function") {
+      activeWorld.scrollIntoView({ inline: "center", block: "nearest" });
+    }
   }
 }
 

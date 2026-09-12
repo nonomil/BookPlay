@@ -1,0 +1,71 @@
+{
+  "project_id": "jttw-demon-quest",
+  "backend_policy": "2d-only; no img2threejs; reuse existing jttw gifs; GPT theme backgrounds already shipped",
+  "asset_root": "assets/generated/",
+  "runtime_root": "content/assets/",
+  "canvas": { "width": 1280, "height": 720, "orientation": "landscape" },
+  "style_anchor": "cute chinese-folk kids game, light journey-to-the-west, orthographic top-down, no photoreal, no brand logos, no baked-in text",
+  "notes": [
+    "P0 does not generate new character art.",
+    "P1 may add item sheet, hit feedback, goal arrows.",
+    "Walk/attack four-direction GIFs already exist; do not redraw without FLAG."
+  ],
+  "assets": [
+    {
+      "asset_id": "theme-backgrounds-c01",
+      "type": "background",
+      "skill": "gpt-game-asset-pipeline",
+      "status": "shipped",
+      "required_outputs": [
+        "content/assets/game-backgrounds/huaguoshan.jpg",
+        "content/assets/game-backgrounds/water-curtain.jpg",
+        "content/assets/game-backgrounds/three-star-cave.jpg",
+        "content/assets/game-backgrounds/shuizang.jpg",
+        "content/assets/game-backgrounds/dragon-palace.jpg",
+        "content/assets/game-backgrounds/nether.jpg"
+      ],
+      "acceptance": ["solid top-down scene", "no checkerboard fake alpha", "covers 4x4 world by repeat"]
+    },
+    {
+      "asset_id": "hero-wukong-four-dir",
+      "type": "character-animation",
+      "skill": "game-character-consistency",
+      "status": "shipped",
+      "poses": ["idle", "walk", "attack"],
+      "dirs": ["south", "west", "east", "north"],
+      "acceptance": ["same face across dirs", "attack not mixed into walk gif"]
+    },
+    {
+      "asset_id": "monster-four-dir",
+      "type": "character-animation",
+      "skill": "game-character-consistency",
+      "status": "shipped",
+      "poses": ["idle", "walk", "attack"],
+      "dirs": ["south", "west", "east", "north"],
+      "acceptance": ["word plate is DOM text, not baked"]
+    },
+    {
+      "asset_id": "support-item-sheet",
+      "type": "ui-icons",
+      "skill": "game-ui-icons",
+      "status": "missing-p1",
+      "ids": ["peach", "fan", "gourd", "cloud", "mantra", "staff"],
+      "required_outputs": ["item tray icons 6"],
+      "acceptance": ["no baked text", "readable at HUD size", "true alpha"]
+    },
+    {
+      "asset_id": "word-orb",
+      "type": "prop",
+      "skill": "game-asset-core",
+      "status": "runtime-dom",
+      "notes": "Chinese label is DOM; art is optional skin"
+    },
+    {
+      "asset_id": "hit-and-star-fx",
+      "type": "fx",
+      "skill": "game-animation-frames",
+      "status": "missing-p1",
+      "acceptance": ["hit stop readable", "star drop readable on 720p TV"]
+    }
+  ]
+}

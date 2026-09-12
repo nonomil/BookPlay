@@ -1,0 +1,79 @@
+{
+  "capturedAt": "2026-09-08T18:08:36+08:00",
+  "git": {
+    "head": "719d87d",
+    "branch": "main",
+    "uncommittedEntries": 70,
+    "note": "工作区包含005交接包、方案、引擎/数据/测试及报告等未提交变更；本次只更新验收证据，不覆盖或回滚既有改动"
+  },
+  "hashes": {
+    "prj/engine/game.js": "F91A7D74C7868A2941E816C7B99E7CAD4425F8CEF6CA7710B1284C77223C5722",
+    "prj/engine/game-core.js": "8E75D93D0D4365F3DF22C588039C3359F333A004FAB1072E31B32117475A0A22",
+    "prj/engine/game.css": "4F913F404D6B68B447412D9FF85415AD1714D626FDE060659662C5714AEA7BA2",
+    "prj/engine/game-input.js": "67CDE725E2066112E919C4A5F678871EF82A49664F6622CE02E78B21FED1CDD0",
+    "prj/engine/game-audio.js": "F18464850B4B04E951C516F648E80ABAD60B8EC19AD3881B82160BBBED0372FE",
+    "prj/tools/pack_android.py": "9CBF19FD71C60AE1573A6E6E63CE1BED1E01D084D4F39AC2B5E6686DFF3BFDF1"
+  },
+  "tests": {
+    "command": "npm.cmd test",
+    "pass": 408,
+    "fail": 0,
+    "skipped": 0,
+    "cancelled": 0,
+    "todo": 0,
+    "lastVerifiedAt": "2026-09-08T18:08:36+08:00",
+    "targetedJs": {
+      "command": "node --test prj/engine/game-core.test.mjs prj/engine/game-input.test.mjs prj/engine/game-page.test.mjs prj/engine/game-audio.test.mjs prj/engine/storybook-game-entry.test.mjs",
+      "pass": 60,
+      "fail": 0
+    },
+    "targetedPython": {
+      "command": "python -X utf8 -m pytest -q prj/tests/test_game_audio_pipeline.py prj/tests/test_game_runtime_contract.py prj/tests/test_pack_android_builtin.py prj/tests/test_make_release.py prj/tests/test_episode_lesson_runtime.py",
+      "pass": 37,
+      "fail": 0
+    },
+    "packAudioRuntime": {
+      "command": "python -X utf8 -m pytest -q prj/tests/test_stage_pack.py prj/tests/test_stage_pack_runtime.py prj/tests/test_pack_datapack.py prj/tests/test_pack_android_builtin.py prj/tests/test_game_audio_pipeline.py prj/tests/test_game_runtime_contract.py",
+      "pass": 21,
+      "fail": 0
+    }
+  },
+  "engine": {
+    "worldTiles": 4,
+    "cameraMode": "edge-follow implementation present; browser/真机 acceptance pending",
+    "moveStep": "保留幅度并对斜向单位向量限幅；行为测试已在当前工作区",
+    "movementSpeeds": { "hero": 0.018, "monsterWander": 0.0012, "monsterChase": 0.0024 },
+    "monsterDirections": "按运动主轴切换 north/south/east/west，停下保持最后方向；浏览器已观察到 east/north/west",
+    "movementAnimation": "hero/monster 各自使用 idle / walk / attack 三态四向资源；attack 期间 moving=false",
+    "gameInputAdapter": "prj/engine/game-input.js；pointerId 唯一归属，blur/pagehide/hidden/失焦清理已通过测试，真实设备行为待验"
+  },
+  "artifacts": {
+    "apk": {
+      "path": "release/storyhall-jttw-mobile-debug.apk",
+      "version": "1.0.14",
+      "versionCode": 19,
+      "sizeBytes": 102023603,
+      "sha256": "6F001B80E1B6D98DEE1ECB46FE60F4F04838B789C90F292C66B8AC210D1486F7",
+      "zipTest": null,
+      "requiredEngineAndAudioPathsMissing": []
+    },
+    "stagePack": {
+      "path": "C:/Users/No'mi'l/AppData/Local/Temp/bookplay-jttw-pack-20260908/c01-ep1-ep5.zip",
+      "sizeBytes": 405481549,
+      "sha256": "504A966918186C752B74A754AFAB33D230BC4EB11D0089C24CF04547B1691FB8",
+      "zipEntries": 5702
+    }
+  },
+  "device": {
+    "realDevice": "待验",
+    "browserVerificationOnly": true,
+    "viewport": "1280x720（浏览器对照用；真机/录屏待验）",
+    "adb": "C:/Users/No'mi'l/AppData/Local/Android/Sdk/platform-tools/adb.exe（已定位；2026-09-08 adb devices 无设备）"
+  },
+  "referenceProjects": [
+    "G:/StudyCode/小游戏项目/games/word-memory-map",
+    "G:/StudyCode/宠物积分系统（对话剧情）",
+    "G:/StudyCode/小游戏项目/games/pet-battle-template",
+    "G:/StudyCode/小游戏项目/games/typing-defense"
+  ]
+}

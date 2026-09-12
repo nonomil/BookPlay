@@ -1,41 +1,52 @@
 "use strict";
 
 /* 降妖记·大地图（word-memory-map 同款玩法移植）：
- * 3×3 平铺大世界 + 镜头跟随；主角八方向自由行走（方向键/摇杆）；
+ * 4×4 平铺大世界 + 镜头跟随；主角八方向自由行走（方向键/摇杆）；
  * 小怪头顶英文单词、会追踪并撞击主角；地面刷中文词球，走过捡起、
  * 点对小怪投掷（追踪弹）；答对爆碎掉星/掉道具，答错词球弹回；
- * 支援道具（蟠桃回盾/芭蕉扇横扫）；区域横幅推进波次；
+ * 支援道具（蟠桃挡伤/芭蕉扇减速/紫金葫芦瞄准/筋斗云加速/紧箍咒提示/金箍棒补盾）；
  * NPC 剧情对话答题（pixel-story 式游标）；Boss 区跳转 battle.html 对战。
  * 移动内核与实体渲染方式对照 word-memory-map：世界坐标 → 百分比定位，
  * rAF 逐帧只改 left/top 与镜头 translate3d，不重建 DOM。
- * 纯逻辑复用 battle-core；存储键：bookplay_battle_progress_v1 / bookplay_battle_collection_v1。
+ * 纯逻辑复用 battle-core + game-core；存储键：bookplay_battle_progress_v1 / bookplay_battle_collection_v1。
  */
 (function () {
   const Core = window.BookPlayBattleCore;
+  const Game = window.BookPlayGameCore;
 
   const params = new URLSearchParams(window.location.search);
   const EP = Math.max(1, Number(params.get("ep")) || 1);
   const DEBUG = params.get("debug") === "1";
   const FROM_BATTLE = params.get("from") === "battle";
+  const FROM_LESSON = params.get("from") === "lesson";
 
   const KEY_PROGRESS = "bookplay_battle_progress_v1";
   const KEY_COLLECTION = "bookplay_battle_collection_v1";
 
-  const WORLD = 3;                 // 世界 = 3×3 个视口
-  const HERO_SPEED = 0.92;         // 视口单位/秒
-  const MONSTER_WANDER = 0.22;
-  const MONSTER_CHASE = 0.5;
-  const AGGRO_DIST = 0.55;
-  const KEEP_DIST = 0.17;
-  const ATTACK_DIST = 0.075;
-  const ATTACK_CD = 1800;
-  const HERO_INVULN = 900;
-  const ORB_PICKUP = 0.11;
-  const SHOT_SPEED = 1.75;
+  const WORLD = Game.WORLD_TILES;  // 4×4 视口，方便走一走再打
+  const NU = 1 / WORLD;            // 归一化地图单位（全图 = 1）；速度/距离全部用该单位，横竖同尺
+  const HERO_SPEED = Game.MOVEMENT_SPEEDS.hero * NU;               // 全图/秒
+  const MONSTER_WANDER = Game.MOVEMENT_SPEEDS.monsterWander * NU;
+  const MONSTER_CHASE = Game.MOVEMENT_SPEEDS.monsterChase * NU;
+  const AGGRO_DIST = 0.55 * NU;
+  const KEEP_DIST = Game.PACK.chaseRadius;
+  const PACK_GAP = Game.PACK.separation;
+  const SPAWN_GAP = Game.PACK.spawnGap;
+  const ATTACK_DIST = 0.075 * NU;
+  const ATTACK_CD = 3600;
+  const HERO_INVULN = 2400;
+  const ORB_PICKUP = 0.11 * NU;
+  // Auto-walk targets must settle inside the pickup radius. The old fixed
+  // 0.03 stop threshold was larger than ORB_PICKUP (0.0275), leaving a
+  // clicked word orb visibly beside the hero but never collectible.
+  const TARGET_STOP = ORB_PICKUP * 0.45;
+  const SHOT_SPEED = 1.75 * NU;
   const SHOT_ARM = 0.12;
-  const SHOT_HIT = 0.07;
+  const SHOT_HIT = 0.18 * NU;
   const SHOT_TTL = 2.2;
-  const INTERACT_DIST = 0.14;
+  const INTERACT_DIST = 0.14 * NU;
+  const CAMERA_MARGIN = 0.32;      // 视口内边距（占视口比例）：人物先走，接近边缘才推镜头
+  const CAMERA_TAU = 0.14;         // 镜头跟上更快的走速，避免人物贴边等地图
 
   const THEME_ZH = {
     "flower-fruit-mountain": "花果山",
@@ -44,12 +55,17 @@
     "water-dirty-cave": "水脏洞",
     "dragon-palace": "龙宫",
     "underworld": "幽冥界",
+    "heaven-palace": "天宫",
+    "peach-garden": "蟠桃园",
   };
-  const WAVE_REGIONS = [1, 7];     // 波次区域（3×3 编号：1=上中，7=下中）
-  const HERO_REGION = 4;           // 出生区域（正中）
-  const BOSS_REGION = 5;           // Boss 区（右中）
-  const SLOT_MONSTERS = [[0.3, 0.35], [0.72, 0.3], [0.55, 0.68], [0.28, 0.72]];
-  const SLOT_ORBS = [[0.2, 0.52], [0.5, 0.2], [0.82, 0.5], [0.5, 0.82]];
+  // 新关卡把区域与点位写进 map；这些只为旧数据包提供一次性兼容。
+  const DEFAULT_MAP_REGIONS = Object.freeze({ hero: 5, waves: [5, 6], npc: { intro: 5, quiz: 6 }, boss: 7 });
+  const SLOT_MONSTERS = [[0.62, 0.46], [0.76, 0.54], [0.68, 0.66], [0.82, 0.48]];
+  // Peaches stay on the hero's left; English minions stay on the right.
+  const SLOT_ORBS = [[0.22, 0.50], [0.32, 0.62], [0.24, 0.74], [0.36, 0.48]];
+  const WUKONG_WALK_PNG = [1, 2, 3, 4, 5, 6, 7, 8].map(
+    (n) => `assets/generated/jttw-player-walkers/wukong/wukong-walk-0${n}.png`
+  );
 
   const FALLBACK_MAP = {
     theme: "generic",
@@ -75,17 +91,21 @@
     banner: $("game-banner"),
     bannerKicker: $("game-banner-kicker"),
     bannerTitle: $("game-banner-title"),
+    route: $("game-route"),
     supports: $("game-supports"),
     hintcard: $("game-hintcard"),
     joystick: $("game-joystick"),
     stick: $("game-stick"),
     dialogue: $("game-dialogue"),
     dialogueFace: $("game-dialogue-face"),
+    dialogueKicker: $("game-dialogue-kicker"),
     dialogueName: $("game-dialogue-name"),
     dialogueEn: $("game-dialogue-en"),
     dialogueZh: $("game-dialogue-zh"),
     dialogueChoices: $("game-dialogue-choices"),
+    dialogueReplay: $("game-dialogue-replay"),
     dialogueNext: $("game-dialogue-next"),
+    dialogueClose: $("game-dialogue-close"),
     bossgate: $("game-bossgate"),
     pause: $("game-pause"),
     gate: $("game-gate"),
@@ -95,18 +115,22 @@
   const state = {
     level: null,
     sprites: {},
+    pickup: { id: "peach", nameZh: "仙桃", emoji: "🍑", image: "" },
     taunts: {},
+    audio: null,
+    voicePending: false,
     phase: "loading",
     locked: false,
     paused: false,
     ignoreHidden: false,
     vw: window.innerWidth,
     vh: window.innerHeight,
-    hero: { x: 1.5, y: 1.5, dir: "south", el: null, img: null, invulnUntil: 0 },
+    hero: { x: 0.375, y: 0.375, dir: "south", el: null, img: null, invulnUntil: 0, attackUntil: 0, moving: false, pose: "idle", walkFrame: 0, walkTick: 0 },
     camera: { x: 0, y: 0 },
     monsters: [],
     orbs: [],
     shots: [],
+    supportDrops: [],
     npcs: [],
     bossSpot: null,
     waveIndex: 0,
@@ -116,14 +140,22 @@
     combo: { streak: 0 },
     wrongWords: {},
     carried: null,          // {zh, el?} 手里的中文词球
-    items: { peach: 0, fan: 0 },
+    items: Game.emptyItems(),
+    buffs: Game.emptyBuffs(),
     npcBonus: false,
+    npcDone: false,
+    npcUnlocked: false,
+    pendingWave: null,
+    mapStage: "wave1",
+    defeatedKeys: new Set(),
+    usedTerms: new Set(),
     introAutoPlayed: false,
     bossGateOpen: false,
     bossReady: false,
     bossNear: false,
     intent: { x: 0, y: 0 },
     held: new Set(),
+    input: null,
     lastTs: 0,
     raf: 0,
   };
@@ -146,22 +178,90 @@
 
   function persistProgress(extra) {
     const progress = readStore(KEY_PROGRESS);
-    const rec = Object.assign(progress[EP] || {}, extra || {});
-    rec.wrongWords = state.wrongWords;
+    const rec = Object.assign({}, progress[EP] || {}, {
+      wrongWords: state.wrongWords,
+      mapStage: state.mapStage,
+      mapWaveIndex: state.waveIndex,
+      mapKilled: state.killed,
+      mapStars: state.stars,
+      mapShield: state.shield,
+      npcBonus: state.npcBonus,
+      npcDone: state.npcDone,
+      npcUnlocked: state.npcUnlocked,
+      mapDefeatedKeys: Array.from(state.defeatedKeys),
+      mapItems: state.items,
+    }, extra || {});
     rec.updatedAt = new Date().toISOString();
     progress[EP] = rec;
     writeStore(KEY_PROGRESS, progress);
   }
 
   let audioEl = null;
-  function speakTerm(text) {
+  function stopGameAudio(reason) {
+    const why = reason || "stop";
+    state.audio?.stop(why);
+    if (audioEl) {
+      try {
+        audioEl.pause();
+        audioEl.currentTime = 0;
+      } catch (_) { /* media boundary */ }
+    }
+    return true;
+  }
+
+  function navigateGame(url) {
+    stopGameAudio("navigation");
+    window.location.href = url;
+  }
+
+  function speakTerm(text, lang) {
     if (!text) return;
+    if (state.audio) {
+      const language = lang === "zh" ? "zh-CN" : "en-US";
+      const ref = `word:${String(text).trim()}:${lang === "zh" ? "zh" : "en"}`;
+      return state.audio.play({ ref, text, lang: language });
+    }
     try {
       audioEl = audioEl || new Audio();
-      audioEl.src = "/api/tts?voice=en&text=" + encodeURIComponent(text);
+      window.BookPlayAudio?.watchMedia(audioEl);
+      const voice = lang === "zh" ? "zh" : "en";
+      audioEl.src = "/api/tts?voice=" + voice + "&text=" + encodeURIComponent(text);
       audioEl.currentTime = 0;
       audioEl.play().catch(() => {});
     } catch (_) { /* 无 TTS 环境静默 */ }
+  }
+
+  function speakDialogue(line) {
+    if (!line) return Promise.resolve(false);
+    const textEn = line.textEn || "";
+    const textZh = line.textZh || "";
+    const req = textEn
+      ? { ref: line.id ? `dialogue:${line.id}:en` : (line.audioRef || `sent_en:${textEn}`), text: textEn, lang: "en-US" }
+      : (textZh ? { ref: line.id ? `dialogue:${line.id}:zh` : `sent_zh:${textZh}`, text: textZh, lang: "zh-CN" } : null);
+    if (!req) return Promise.resolve(false);
+    if (!state.audio) {
+      return speakTerm(req.text, req.lang.startsWith("zh") ? "zh" : "en");
+    }
+    return Promise.resolve(state.audio.play(req)).then((ok) => {
+      state.voicePending = !ok;
+      return ok;
+    });
+  }
+
+  function kickVoice(ev) {
+    window.BookPlayAudio?.unlock?.();
+    if (!state.dlg) return;
+    if (ev && ev.target && ev.target.closest && ev.target.closest("#game-dialogue-next, #game-dialogue-close")) return;
+    const line = state.dlg.lines[state.dlg.idx];
+    if (line) speakDialogue(line);
+  }
+
+  function spawnDust(x, y) {
+    const dust = document.createElement("span");
+    dust.className = "game-dust";
+    placeAt(dust, x, y + 0.04 * NU);
+    els.particles.appendChild(dust);
+    window.setTimeout(() => dust.remove(), 280);
   }
 
   function fetchJSON(url) {
@@ -170,6 +270,27 @@
 
   function assetUrl(path) {
     return path ? "../" + String(path).replace(/^\.\.\//, "") : "";
+  }
+
+  function pickupFruitHtml() {
+    const p = state.pickup || {};
+    if (p.image) {
+      return `<img class="game-orb-fruit-img" src="${assetUrl(p.image)}" alt="" draggable="false">`;
+    }
+    return `<span class="game-orb-fruit" aria-hidden="true">${p.emoji || "🍑"}</span>`;
+  }
+
+  function bindPickupImage(root) {
+    const img = root && root.querySelector(".game-orb-fruit-img");
+    if (!img) return;
+    img.addEventListener("error", () => {
+      img.hidden = true;
+      const span = document.createElement("span");
+      span.className = "game-orb-fruit";
+      span.setAttribute("aria-hidden", "true");
+      span.textContent = (state.pickup && state.pickup.emoji) || "🍑";
+      img.after(span);
+    }, { once: true });
   }
 
   function showToast(text, ms) {
@@ -186,55 +307,153 @@
     return entry && entry.gif ? assetUrl(entry.gif) : "";
   }
 
-  function gifForDir(spriteId, dir) {
+  function spriteForPose(spriteId, dir, pose) {
+    if (spriteId === "wukong" && pose === "walk" && (dir === "east" || dir === "west")) {
+      const idx = Math.max(0, (state.hero.walkFrame || 0) % WUKONG_WALK_PNG.length);
+      return assetUrl(WUKONG_WALK_PNG[idx]);
+    }
     const entry = state.sprites[spriteId];
-    if (entry && entry.walkGifs && entry.walkGifs[dir]) return assetUrl(entry.walkGifs[dir]);
+    const table = pose === "attack"
+      ? entry && entry.attackGifs
+      : (pose === "idle" ? entry && entry.idleFrames : entry && entry.walkGifs);
+    if (table && table[dir]) return assetUrl(table[dir]);
+    if (pose === "walk" && entry && entry.idleFrames && entry.idleFrames[dir]) {
+      return assetUrl(entry.idleFrames[dir]);
+    }
     return spriteSrc(spriteId);
   }
 
-  function makeImg(spriteId, dir, fallbackText) {
-    const img = document.createElement("img");
-    const src = (dir ? gifForDir(spriteId, dir) : spriteSrc(spriteId)) || "";
+  function setInputBlocked(blocked) {
+    const next = Boolean(blocked);
+    if (next) {
+      // Opening a modal must also cancel any pointer/keyboard intent and
+      // click-to-walk target.  Otherwise the first frame after closing the
+      // modal resumes the direction that was held before it opened.
+      state.intent.x = 0;
+      state.intent.y = 0;
+      state.hero.tx = null;
+      state.hero.ty = null;
+    }
+    state.input?.setBlocked(next);
+  }
+
+  function setSpriteImage(img, spriteId, dir, pose) {
+    if (!img) return;
+    const src = spriteForPose(spriteId, dir, pose);
+    const key = `${spriteId}:${dir}:${pose}:${src || ""}`;
+    if (img.dataset.spriteKey === key) return;
     if (src) img.src = src;
-    img.alt = "";
+    img.style.transform = spriteId === "wukong" && dir === "west" ? "scaleX(-1)" : "";
+    img.dataset.spriteKey = key;
+  }
+
+  function makeImg(spriteId, dir, fallbackText, pose) {
+    const img = document.createElement("img");
+    setSpriteImage(img, spriteId, dir || "south", pose || "idle");
+    img.alt = fallbackText || "";
     img.decoding = "async";
     img.addEventListener("error", () => {
-      const ph = document.createElement("div");
-      ph.className = "battle-sprite-placeholder";
-      ph.textContent = (fallbackText || "妖").slice(0, 1);
-      img.replaceWith(ph);
-    }, { once: true });
+      const idle = spriteForPose(spriteId, dir || "south", "idle") || spriteSrc(spriteId);
+      if (idle && img.getAttribute("src") !== idle) {
+        img.src = idle;
+        return;
+      }
+      img.alt = (fallbackText || "悟").slice(0, 1);
+    });
     return img;
   }
 
   function regionOrigin(region) {
-    return { x: region % 3, y: Math.floor(region / 3) };
+    return Game.regionOrigin(WORLD, region);
   }
 
   function regionPoint(region, rx, ry) {
-    const origin = regionOrigin(region);
+    return Game.regionPoint(WORLD, region, rx, ry, 0.03);
+  }
+
+  function mapWorld() {
+    const value = Number(state.level && state.level.map && state.level.map.worldTiles);
+    return Number.isFinite(value) && value >= 1 ? value : WORLD;
+  }
+
+  function mapRegions() {
+    const raw = state.level && state.level.map && state.level.map.regions;
+    if (!raw || typeof raw !== "object") return DEFAULT_MAP_REGIONS;
+    const waves = Array.isArray(raw.waves) && raw.waves.length ? raw.waves.slice(0, 2) : DEFAULT_MAP_REGIONS.waves;
     return {
-      x: Math.min(WORLD - 0.02, Math.max(0.02, origin.x + rx)),
-      y: Math.min(WORLD - 0.02, Math.max(0.02, origin.y + ry)),
+      hero: Number.isFinite(Number(raw.hero)) ? Number(raw.hero) : DEFAULT_MAP_REGIONS.hero,
+      waves,
+      npc: Object.assign({}, DEFAULT_MAP_REGIONS.npc, raw.npc || {}),
+      boss: Number.isFinite(Number(raw.boss)) ? Number(raw.boss) : DEFAULT_MAP_REGIONS.boss,
     };
+  }
+
+  function mapPoint(point, role, index) {
+    const map = state.level && state.level.map;
+    const p = point && typeof point === "object" ? point : {};
+    if (map && map.coordinateSpace === "world-normalized") {
+      return clampWorld(Number(p.x), Number(p.y));
+    }
+    const regions = mapRegions();
+    let region = regions.hero;
+    if (role === "monster" || role === "orb") region = regions.waves[Math.min(Number(index) || 0, regions.waves.length - 1)] || regions.waves[0];
+    else if (role === "npc") region = regions.npc[p.role] ?? regions.npc.intro;
+    else if (role === "boss") region = regions.boss;
+    return Game.regionPoint(mapWorld(), region, p.x, p.y, 0.03);
+  }
+
+  function mapWalkable() {
+    const map = state.level && state.level.map;
+    const walkable = map && map.walkable;
+    if (!walkable || typeof walkable !== "object") return null;
+    const rects = Array.isArray(walkable.rects) ? walkable.rects.filter((r) => r && typeof r === "object") : [];
+    const source = rects.length ? rects : [walkable];
+    const valid = source.filter((r) => [r.x, r.y, r.w, r.h].every((v) => Number.isFinite(Number(v))));
+    if (!valid.length) return null;
+    const minX = Math.min(...valid.map((r) => Number(r.x)));
+    const minY = Math.min(...valid.map((r) => Number(r.y)));
+    const maxX = Math.max(...valid.map((r) => Number(r.x) + Number(r.w)));
+    const maxY = Math.max(...valid.map((r) => Number(r.y) + Number(r.h)));
+    return { x: minX, y: minY, w: maxX - minX, h: maxY - minY };
   }
 
   function clampWorld(x, y) {
+    const m = 0.03 / mapWorld();
+    const walkable = mapWalkable();
+    const minX = walkable ? walkable.x + m : m;
+    const minY = walkable ? walkable.y + m : m;
+    const maxX = walkable ? walkable.x + walkable.w - m : 1 - m;
+    const maxY = walkable ? walkable.y + walkable.h - m : 1 - m;
     return {
-      x: Math.min(WORLD - 0.03, Math.max(0.03, x)),
-      y: Math.min(WORLD - 0.03, Math.max(0.03, y)),
+      x: Math.min(maxX, Math.max(minX, Number.isFinite(Number(x)) ? Number(x) : minX)),
+      y: Math.min(maxY, Math.max(minY, Number.isFinite(Number(y)) ? Number(y) : minY)),
     };
   }
 
+  function randomWalkablePoint() {
+    const area = mapWalkable() || { x: 0.03, y: 0.03, w: 0.94, h: 0.94 };
+    return clampWorld(area.x + area.w * (0.15 + Math.random() * 0.7), area.y + area.h * (0.15 + Math.random() * 0.7));
+  }
+
   function placeAt(el, x, y) {
-    el.style.left = `${(x / WORLD * 100).toFixed(3)}%`;
-    el.style.top = `${(y / WORLD * 100).toFixed(3)}%`;
+    el.style.left = `${(x * 100).toFixed(3)}%`;
+    el.style.top = `${(y * 100).toFixed(3)}%`;
+  }
+
+  function tileCamera(focus, world) {
+    const w = Math.max(1, Number(world) || 1);
+    const vf = 1 / w;
+    const fx = Math.min(0.999, Math.max(0, Number(focus && focus.x) || 0));
+    const fy = Math.min(0.999, Math.max(0, Number(focus && focus.y) || 0));
+    const col = Math.min(w - 1, Math.floor(fx / vf));
+    const row = Math.min(w - 1, Math.floor(fy / vf));
+    return { x: col * vf, y: row * vf };
   }
 
   function updateCamera() {
-    state.camera.x = Math.min(WORLD - 1, Math.max(0, state.hero.x - 0.5));
-    state.camera.y = Math.min(WORLD - 1, Math.max(0, state.hero.y - 0.5));
-    els.world.style.transform = `translate3d(${(-state.camera.x * state.vw).toFixed(1)}px, ${(-state.camera.y * state.vh).toFixed(1)}px, 0)`;
+    const world = mapWorld();
+    state.camera = tileCamera(state.hero, world);
+    els.world.style.transform = `translate3d(${(-state.camera.x * state.vw * world).toFixed(1)}px, ${(-state.camera.y * state.vh * world).toFixed(1)}px, 0)`;
   }
 
   /* ---------- 实体构建 ---------- */
@@ -251,28 +470,34 @@
     els.entities.appendChild(heroEl);
     state.hero.el = heroEl;
     state.hero.img = heroImg;
-    const spawn = regionPoint(HERO_REGION, 0.5, 0.58);
+    const heroSpawn = map.heroSpawn || { x: 0.5, y: 0.58 };
+    const spawn = mapPoint(heroSpawn, "hero");
     state.hero.x = spawn.x;
     state.hero.y = spawn.y;
     placeAt(heroEl, state.hero.x, state.hero.y);
 
-    const region = WAVE_REGIONS[0];
     const waveMonsters = [];
+    state.usedTerms = new Set();
     state.level.waves.forEach((wave, waveIndex) => {
-      Core.buildWaveQuestions(state.level, waveIndex, state.wrongWords).forEach((m) => {
-        waveMonsters.push(Object.assign({ waveIndex }, m));
+      const authored = Core.buildWaveQuestions(state.level, waveIndex, state.wrongWords);
+      const fallbackSprite = (authored[0] && authored[0].sprite)
+        || (state.level.cast.minors[0] && state.level.cast.minors[0].id)
+        || "imp";
+      pickRunWords(authored, authored.length || 4).forEach((m) => {
+        waveMonsters.push(Object.assign({ waveIndex, sprite: m.sprite || fallbackSprite }, m));
       });
     });
     state.monsters = waveMonsters.map((m, idx) => {
       const monster = Object.assign({}, m, {
-        el: null, x: 0, y: 0, tx: 0, ty: 0, alive: true,
-        idleUntil: 0, fleeUntil: 0, attackCd: 0, waveIndex: m.waveIndex,
+        el: null, x: 0, y: 0, tx: 0, ty: 0, alive: true, active: false,
+        img: null, dir: "south", idleUntil: 0, fleeUntil: 0, attackCd: 0, attackUntil: 0, moving: false, pose: "idle", waveIndex: m.waveIndex, slotIndex: 0,
       });
       const el = document.createElement("button");
       el.type = "button";
       el.className = "game-entity is-monster";
       el.setAttribute("aria-label", `${m.term}`);
-      el.appendChild(makeImg(m.sprite || "imp", "south", m.zh));
+      const monsterImg = makeImg(m.sprite || "imp", monster.dir, m.zh);
+      el.appendChild(monsterImg);
       const word = document.createElement("span");
       word.className = "game-word";
       word.textContent = m.term;
@@ -283,15 +508,18 @@
       });
       els.entities.appendChild(el);
       monster.el = el;
+      monster.img = monsterImg;
+      monster.el.style.display = "none";
       return monster;
     });
-    spawnWave(0, true);
 
     state.npcs = (map.npcSpots || []).map((spot, idx) => {
-      // intro NPC 在出生区，quiz NPC 在第二波区域
-      const region = spot.role === "intro" ? HERO_REGION : (WAVE_REGIONS[1] ?? HERO_REGION);
-      const pos = regionPoint(region, 0.5 + (idx % 2 ? 0.16 : -0.18), 0.62);
-      const npc = { role: spot.role, sprite: spot.sprite, nameZh: spot.nameZh || "", x: pos.x, y: pos.y, el: null, done: false };
+      const pos = mapPoint({
+        ...spot,
+        x: spot.x ?? (0.5 + (idx % 2 ? 0.16 : -0.18)),
+        y: spot.y ?? 0.62,
+      }, "npc");
+      const npc = { role: spot.role, sprite: spot.sprite, nameZh: spot.nameZh || "", x: pos.x, y: pos.y, el: null, done: spot.role === "quiz" && state.npcDone };
       const el = document.createElement("button");
       el.type = "button";
       el.className = "game-entity is-npc";
@@ -299,7 +527,7 @@
       el.appendChild(makeImg(npc.sprite, "south", npc.nameZh));
       const speech = document.createElement("span");
       speech.className = "game-speech";
-      speech.textContent = "💬";
+      speech.textContent = npc.done ? "⭐" : (npc.role === "quiz" && !Game.canTalkQuizNpc(state.npcUnlocked) ? "…" : "💬");
       el.appendChild(speech);
       el.addEventListener("click", (ev) => {
         ev.stopPropagation();
@@ -312,10 +540,11 @@
     });
 
     const boss = state.level.cast.boss;
-    const bossPos = regionPoint(BOSS_REGION, 0.5, 0.5);
+    const bossLocal = map.bossSpot || { x: 0.5, y: 0.5 };
+    const bossPos = mapPoint(bossLocal, "boss");
     const bossEl = document.createElement("button");
     bossEl.type = "button";
-    bossEl.className = "game-entity is-bossspot";
+    bossEl.className = "game-entity is-bossspot is-locked";
     bossEl.setAttribute("aria-label", `挑战${boss.nameZh}`);
     const aura = document.createElement("span");
     aura.className = "game-boss-aura";
@@ -330,32 +559,52 @@
     placeAt(bossEl, bossPos.x, bossPos.y);
     state.bossSpot = { x: bossPos.x, y: bossPos.y, el: bossEl };
 
+    // Every authored theme is a complete scene illustration.  Stretch it
+    // once across the world and never tile a 1280×720 image into seams.
+    const tiles = mapWorld();
+    els.backdrop.style.backgroundSize = `${100 / tiles}% ${100 / tiles}%`;
+    els.backdrop.style.backgroundRepeat = "repeat";
+    els.backdrop.style.backgroundPosition = "0 0";
     const theme = (state.level.map && state.level.map.theme) || "";
-    const bgUrl = theme && theme !== "generic" ? `../assets/game-backgrounds/${theme}.jpg` : "";
-    if (bgUrl) {
-      els.backdrop.style.backgroundImage = `url("${bgUrl}")`;
-      els.backdrop.addEventListener("error", () => {
-        els.backdrop.style.backgroundImage = state.level.background.illustration
-          ? `url("${assetUrl(state.level.background.illustration)}")`
-          : "";
-      }, { once: true });
-    } else if (state.level.background.illustration) {
-      els.backdrop.style.backgroundImage = `url("${assetUrl(state.level.background.illustration)}")`;
-      els.backdrop.style.backgroundSize = "100% 100%";
-      els.backdrop.style.backgroundRepeat = "no-repeat";
-    }
+    const epBg = `../assets/game-backgrounds/ep${EP}.jpg`;
+    const themeBg = theme && theme !== "generic" ? `../assets/game-backgrounds/${theme}.jpg` : "";
+    const illustration = state.level.background.illustration
+      ? assetUrl(state.level.background.illustration)
+      : "";
+    els.backdrop.style.backgroundImage = `url("${epBg}")`;
+    els.backdrop.addEventListener("error", () => {
+      if (themeBg) {
+        els.backdrop.style.backgroundImage = `url("${themeBg}")`;
+        return;
+      }
+      els.backdrop.style.backgroundImage = illustration ? `url("${illustration}")` : "";
+    }, { once: true });
   }
 
   /* ---------- 波次 ---------- */
 
   function spawnWave(waveIndex, silent) {
     state.waveIndex = waveIndex;
-    const region = WAVE_REGIONS[Math.min(waveIndex, WAVE_REGIONS.length - 1)];
-    const waveMonsters = state.monsters.filter((m) => m.waveIndex === waveIndex);
-    waveMonsters.forEach((m, idx) => {
+    state.mapStage = waveIndex === 0 ? "wave1" : "wave2";
+    state.monsters.forEach((m) => {
+      m.active = false;
+      if (m.alive) m.el.style.display = "none";
+    });
+    const waveMonsters = state.monsters.filter((m) => m.waveIndex === waveIndex && m.alive);
+    const mapSpawns = (state.level.map && Array.isArray(state.level.map.waveSpawns)
+      ? state.level.map.waveSpawns[waveIndex]
+      : state.level.map && state.level.map.monsterSpawns) || [];
+    const rawSpawns = waveMonsters.map((m, idx) => {
       const slot = SLOT_MONSTERS[idx % SLOT_MONSTERS.length];
-      const pos = regionPoint(region, slot[0], slot[1]);
+      const authored = mapSpawns[idx % Math.max(1, mapSpawns.length)] || { x: slot[0], y: slot[1] };
+      return mapPoint(authored, "monster", waveIndex);
+    });
+    const spreadSpawns = Game.spreadPack(rawSpawns, SPAWN_GAP).map((p) => clampWorld(p.x, p.y));
+    waveMonsters.forEach((m, idx) => {
+      const pos = spreadSpawns[idx] || rawSpawns[idx];
       m.alive = true;
+      m.active = true;
+      m.slotIndex = idx;
       m.x = pos.x;
       m.y = pos.y;
       m.tx = pos.x;
@@ -363,6 +612,9 @@
       m.attackCd = 0;
       m.el.style.display = "";
       m.el.classList.remove("is-dead");
+      // Spawn on the hero's right, so default south (¾ view) reads as "stuck facing right".
+      m.moving = true;
+      setMonsterDir(m, Game.directionFromDelta(state.hero.x - m.x, state.hero.y - m.y, "west"));
       placeAt(m.el, m.x, m.y);
     });
     // 地面词球：本波每只小怪的中文释义一颗
@@ -374,30 +626,74 @@
       const el = document.createElement("button");
       el.type = "button";
       el.className = "game-orb";
-      el.textContent = m.zh;
-      el.setAttribute("aria-label", `捡起词球 ${m.zh}`);
+      el.innerHTML = `${pickupFruitHtml()}<span class="game-orb-tag">${m.zh}</span>`;
+      bindPickupImage(el);
+      el.setAttribute("aria-label", `捡起${state.pickup.nameZh || "仙桃"} ${m.zh}`);
       el.addEventListener("click", (ev) => {
         ev.stopPropagation();
         walkTo(orb.x, orb.y);
       });
       els.projectiles.appendChild(el);
       orb.el = el;
-      const pos = regionPoint(region, slot[0], slot[1]);
+      const orbSpawns = state.level.map && Array.isArray(state.level.map.orbSpawns)
+        ? state.level.map.orbSpawns[waveIndex] || []
+        : [];
+      const authoredOrb = orbSpawns[idx] || { x: slot[0], y: slot[1] };
+      let pos = mapPoint(authoredOrb, "orb", waveIndex);
+      const monsterPos = { x: m.x, y: m.y };
+      if (Math.hypot(pos.x - monsterPos.x, pos.y - monsterPos.y) < 0.08 * NU * 4) {
+        pos = mapPoint({ x: slot[0], y: slot[1] }, "orb", waveIndex);
+      }
       orb.x = pos.x;
       orb.y = pos.y;
       placeAt(el, orb.x, orb.y);
       state.orbs.push(orb);
     });
+    persistProgress();
     if (!silent) {
       const theme = (state.level.map && state.level.map.theme) || "";
-      showBanner(`第 ${waveIndex + 1} 波`, THEME_ZH[theme] || state.level.title.en);
+      showBanner(`第 ${waveIndex + 1} 波`, THEME_ZH[theme] || (state.level.title && state.level.title.zh) || state.level.title.en);
       window.BookPlayAudio?.sfx("start");
     }
+    refreshQuizNpcLock();
     updateHud();
   }
 
   function orbEl(orb) {
     return orb && orb.el;
+  }
+
+  function shuffleInPlace(list) {
+    for (let i = list.length - 1; i > 0; i -= 1) {
+      const j = Math.floor(Math.random() * (i + 1));
+      const tmp = list[i];
+      list[i] = list[j];
+      list[j] = tmp;
+    }
+    return list;
+  }
+
+  function pickRunWords(preferred, count) {
+    const used = state.usedTerms || new Set();
+    state.usedTerms = used;
+    const merged = [];
+    const seen = new Set();
+    (preferred || []).concat(state.level.wordPool || []).forEach((word) => {
+      if (!word || !word.term || !word.zh) return;
+      const key = String(word.term).toLowerCase();
+      if (seen.has(key) || used.has(key)) return;
+      seen.add(key);
+      merged.push(word);
+    });
+    shuffleInPlace(merged);
+    const picked = merged.slice(0, Math.max(1, Number(count) || 4));
+    if (!picked.length) return (preferred || []).slice(0, count);
+    picked.forEach((word) => used.add(String(word.term).toLowerCase()));
+    return picked;
+  }
+
+  function matchingMonster(zh) {
+    return state.monsters.find((m) => m.alive && m.active && m.zh === zh) || null;
   }
 
   function walkTo(x, y) {
@@ -407,43 +703,70 @@
   }
 
   function aliveMonsters() {
-    return state.monsters.filter((m) => m.alive);
+    return state.monsters.filter((m) => m.alive && m.active);
   }
 
   function currentWaveAlive() {
-    return state.monsters.filter((m) => m.alive && m.waveIndex === state.waveIndex);
+    return state.monsters.filter((m) => m.alive && m.active && m.waveIndex === state.waveIndex);
   }
 
   /* ---------- 主角移动 ---------- */
 
+  function setHeroPose(pose) {
+    state.hero.pose = pose;
+    if (state.hero.el) {
+      state.hero.el.dataset.pose = pose;
+      state.hero.el.classList.toggle("is-walking", pose === "walk");
+      state.hero.el.classList.toggle("is-attacking", pose === "attack");
+    }
+    setSpriteImage(state.hero.img, state.level.cast.hero.id, state.hero.dir, pose);
+  }
+
   function setHeroDir(dir) {
-    if (state.hero.dir === dir) return;
+    if (!dir) return;
     state.hero.dir = dir;
-    const src = gifForDir(state.level.cast.hero.id, dir);
-    if (src) state.hero.img.src = src;
+    setHeroPose(performance.now() < state.hero.attackUntil ? "attack" : (state.hero.moving ? "walk" : "idle"));
+  }
+
+  function setMonsterPose(monster, pose) {
+    if (!monster) return;
+    monster.pose = pose;
+    if (monster.el) {
+      monster.el.dataset.pose = pose;
+      monster.el.classList.toggle("is-walking", pose === "walk");
+      monster.el.classList.toggle("is-attacking", pose === "attack");
+    }
+    setSpriteImage(monster.img, monster.sprite || "imp", monster.dir, pose);
+  }
+
+  function setMonsterDir(monster, dir) {
+    if (!monster || !dir) return;
+    monster.dir = dir;
+    setMonsterPose(monster, performance.now() < monster.attackUntil ? "attack" : (monster.moving ? "walk" : "idle"));
   }
 
   function moveHeroBy(dx, dy, dt) {
-    const step = (dt / 1000) * HERO_SPEED;
-    const magnitude = Math.hypot(dx, dy) || 1;
-    const next = clampWorld(
-      state.hero.x + (dx / magnitude) * step,
-      state.hero.y + (dy / magnitude) * step,
-    );
-    setHeroDir(Math.abs(dx) >= Math.abs(dy) ? (dx < 0 ? "west" : "east") : (dy < 0 ? "north" : "south"));
+    const speed = Game.heroSpeed(HERO_SPEED, state.buffs, performance.now());
+    const moved = Game.moveStepViewport(dx, dy, speed, dt / 1000, { width: state.vw, height: state.vh });
+    if (!moved.moving) return;
+    const next = clampWorld(state.hero.x + moved.dx, state.hero.y + moved.dy);
+    if (moved.facing) setHeroDir(moved.facing);
+    if (!state.hero.moving) spawnDust(state.hero.x, state.hero.y);
+    state.hero.moving = true;
+    state.hero.walkTick = (state.hero.walkTick || 0) + dt;
+    if (state.hero.walkTick > 80) {
+      state.hero.walkTick = 0;
+      state.hero.walkFrame = ((state.hero.walkFrame || 0) + 1) % WUKONG_WALK_PNG.length;
+    }
+    setHeroPose("walk");
     state.hero.x = next.x;
     state.hero.y = next.y;
   }
 
   function updateHero(dt) {
+    if (performance.now() < state.hero.attackUntil) return;
     let ix = state.intent.x;
     let iy = state.intent.y;
-    state.held.forEach((key) => {
-      if (key === "ArrowLeft" || key === "a") ix -= 1;
-      if (key === "ArrowRight" || key === "d") ix += 1;
-      if (key === "ArrowUp" || key === "w") iy -= 1;
-      if (key === "ArrowDown" || key === "s") iy += 1;
-    });
     if (ix || iy) {
       state.hero.tx = null;
       state.hero.ty = null;
@@ -452,13 +775,19 @@
       const dx = state.hero.tx - state.hero.x;
       const dy = state.hero.ty - state.hero.y;
       const dist = Math.hypot(dx, dy);
-      if (dist < 0.03) {
+      if (dist < TARGET_STOP) {
         state.hero.tx = null;
         state.hero.ty = null;
+        state.hero.moving = false;
+        setHeroPose("idle");
       } else {
-        moveHeroBy(dx, dy, dt);
+        moveHeroBy(dx / dist, dy / dist, dt);
       }
+    } else {
+      state.hero.moving = false;
+      setHeroPose("idle");
     }
+    if (!state.hero.moving) setHeroPose("idle");
     placeAt(state.hero.el, state.hero.x, state.hero.y);
   }
 
@@ -466,54 +795,58 @@
 
   function updateMonsters(dt, now) {
     const hero = state.hero;
-    state.monsters.forEach((m) => {
-      if (!m.alive) return;
-      let speed = MONSTER_WANDER;
+    const live = state.monsters.filter((item) => item.alive && item.active);
+    live.forEach((m) => {
+      if (now < m.attackUntil) {
+        m.moving = false;
+        placeAt(m.el, m.x, m.y);
+        return;
+      }
+      let speed = Game.monsterSpeed(MONSTER_WANDER, state.buffs, now);
       let gx = m.tx;
       let gy = m.ty;
       const heroDist = Math.hypot(hero.x - m.x, hero.y - m.y);
-      if (heroDist < AGGRO_DIST && now >= m.fleeUntil) {
-        // 追击但保持距离
-        speed = MONSTER_CHASE;
-        if (heroDist > KEEP_DIST) {
-          gx = hero.x;
-          gy = hero.y;
-        } else {
-          gx = m.x;
-          gy = m.y;
-        }
-        if (heroDist <= ATTACK_DIST && now >= m.attackCd && now >= hero.invulnUntil) {
+      if (now < m.fleeUntil) {
+        speed = Game.monsterSpeed(MONSTER_CHASE * 1.5, state.buffs, now);
+        const away = clampWorld(m.x - (hero.x - m.x), m.y - (hero.y - m.y));
+        gx = away.x;
+        gy = away.y;
+      } else {
+        // Living minions walk toward a unique slot around the hero, then
+        // push apart so the pack does not collapse into one pile.
+        speed = Game.monsterSpeed(MONSTER_CHASE, state.buffs, now);
+        const slot = Number.isFinite(Number(m.slotIndex)) ? m.slotIndex : live.indexOf(m);
+        const anchor = Game.chaseAnchor(hero, m, slot, live.length, KEEP_DIST);
+        const sep = Game.packSeparation(m, live, PACK_GAP);
+        gx = anchor.x + sep.x * PACK_GAP;
+        gy = anchor.y + sep.y * PACK_GAP;
+        if (!state.locked && heroDist <= ATTACK_DIST && now >= m.attackCd && now >= hero.invulnUntil) {
           monsterAttack(m);
           m.attackCd = now + ATTACK_CD;
-        }
-      } else {
-        if (now < m.fleeUntil) {
-          speed = MONSTER_CHASE * 1.5;
-          const away = clampWorld(m.x - (hero.x - m.x), m.y - (hero.y - m.y));
-          gx = away.x;
-          gy = away.y;
-        } else if (heroDist < AGGRO_DIST) {
-          gx = m.x;
-          gy = m.y;
+          return;
         }
       }
       const dx = gx - m.x;
       const dy = gy - m.y;
       const dist = Math.hypot(dx, dy);
-      if (dist > 0.012) {
-        const step = Math.min(dist, (dt / 1000) * speed);
-        m.x += (dx / dist) * step;
-        m.y += (dy / dist) * step;
+      if (dist > 0.002) {
+        // Joystick intent is -1..1. Passing raw world deltas (< 1 on one screen)
+        // made minions crawl and look frozen, with facing stuck on east.
+        const moved = Game.moveStepViewport(dx / dist, dy / dist, speed, dt / 1000, { width: state.vw, height: state.vh });
+        const next = clampWorld(m.x + moved.dx, m.y + moved.dy);
+        m.x = next.x;
+        m.y = next.y;
+        m.moving = true;
+        setMonsterDir(m, moved.facing || Game.directionFromDelta(dx, dy, m.dir));
       } else if (!m.fleeUntil || now >= m.fleeUntil) {
+        m.moving = false;
+        setMonsterDir(m, Game.directionFromDelta(hero.x - m.x, hero.y - m.y, m.dir));
+        setMonsterPose(m, "idle");
         if (!m.idleUntil) {
           m.idleUntil = now + 1200 + Math.random() * 900;
         } else if (now >= m.idleUntil) {
           m.idleUntil = 0;
-          const origin = regionOrigin(WAVE_REGIONS[Math.min(m.waveIndex, WAVE_REGIONS.length - 1)]);
-          const spot = clampWorld(
-            origin.x + 0.15 + Math.random() * 0.7,
-            origin.y + 0.15 + Math.random() * 0.7,
-          );
+          const spot = randomWalkablePoint();
           m.tx = spot.x;
           m.ty = spot.y;
         }
@@ -523,14 +856,30 @@
   }
 
   function monsterAttack(monster) {
-    state.shield = Math.max(0, state.shield - 1);
+    const hit = Game.absorbHit(state.items, state.shield);
+    state.items = hit.items;
     state.combo.streak = 0;
     window.BookPlayAudio?.sfx("shield");
+    monster.attackUntil = performance.now() + 320;
+    monster.moving = false;
+    setMonsterPose(monster, "attack");
     const hero = state.hero;
     const away = clampWorld(hero.x - (monster.x - hero.x) * 1.6, hero.y - (monster.y - hero.y) * 1.6);
     hero.x = away.x;
     hero.y = away.y;
     hero.invulnUntil = performance.now() + HERO_INVULN;
+    state.monsters.forEach((other) => {
+      if (other.alive && other.active) {
+        other.attackCd = Math.max(other.attackCd || 0, performance.now() + 1400);
+      }
+    });
+    if (hit.absorbed) {
+      renderSupports();
+      updateHud();
+      showToast("蟠桃挡了一下！护盾还在 🍑", 1500);
+      return;
+    }
+    state.shield = hit.shield;
     updateHud();
     if (state.shield <= 0) {
       showToast("护盾碎了！小妖重新列阵，别灰心 💪", 2000);
@@ -542,18 +891,17 @@
   }
 
   function respawnCurrentWave() {
-    const waveMonsters = state.monsters.filter((m) => m.waveIndex === state.waveIndex && !m.alive);
-    waveMonsters.forEach((m, idx) => {
-      const region = WAVE_REGIONS[Math.min(m.waveIndex, WAVE_REGIONS.length - 1)];
-      const slot = SLOT_MONSTERS[idx % SLOT_MONSTERS.length];
-      const pos = regionPoint(region, slot[0], slot[1]);
+    const waveMonsters = state.monsters.filter((m) => m.waveIndex === state.waveIndex);
+    const revived = waveMonsters.filter((m) => !m.alive).length;
+    state.killed = Math.max(0, state.killed - revived);
+    waveMonsters.forEach((m) => {
+      state.defeatedKeys.delete(m.key);
       m.alive = true;
-      m.x = pos.x;
-      m.y = pos.y;
-      m.el.style.display = "";
       m.el.classList.remove("is-dead");
-      placeAt(m.el, m.x, m.y);
     });
+    state.carried = null;
+    spawnWave(state.waveIndex, true);
+    persistProgress();
     updateHud();
   }
 
@@ -569,15 +917,41 @@
     });
   }
 
+  function termForZh(zh) {
+    const monster = state.monsters.find((item) => item.zh === zh && item.term);
+    if (monster) return monster.term;
+    const word = (state.level.previewWords || []).find((item) => item.zh === zh);
+    return word && word.term || "";
+  }
+
   function pickUp(orb) {
-    state.carried = { zh: orb.zh };
+    state.carried = { zh: orb.zh, term: termForZh(orb.zh), typed: "", wrong: "" };
     orb.el.style.display = "none";
     window.BookPlayAudio?.sfx("start");
+    speakTerm(orb.zh, "zh");
+    showToast(`捡到${state.pickup.nameZh || "仙桃"}！扔向对应的英文小妖`, 1600);
     updateHud();
   }
 
-  function dropOrbAt(x, y) {
-    const orb = state.orbs.find((o) => state.carried && o.zh === state.carried.zh && o.el.style.display === "none");
+  function onTypeCarried(key) {
+    if (!state.carried || !state.carried.term) return;
+    const next = Game.typingStep(state.carried, key, state.carried.term, true);
+    state.carried.typed = next.typed;
+    state.carried.wrong = next.wrong;
+    if (next.status === "wrong") window.BookPlayAudio?.sfx("retry");
+    updateHud();
+    if (next.status === "complete") {
+      speakTerm(state.carried.term, "en");
+      const matched = state.monsters.find((m) => m.alive && m.active && m.zh === state.carried.zh);
+      if (matched) throwOrb(matched);
+      else showToast("打对了！点对应的英文小妖扔出去", 1600);
+    }
+  }
+
+  function dropOrbAt(x, y, orbRef) {
+    // Once a shot is created state.carried is cleared, so a miss must use the
+    // orb reference captured by that shot rather than searching the HUD state.
+    const orb = orbRef || state.orbs.find((o) => state.carried && o.zh === state.carried.zh && o.el.style.display === "none");
     const pos = clampWorld(x, y);
     if (orb) {
       orb.x = pos.x;
@@ -600,10 +974,33 @@
 
   function throwOrb(monster) {
     // 投掷不锁世界：小怪照常追击/游荡，追踪弹逐帧更新（对照 word-memory-map）
+    if (!state.carried) return;
+    const matched = matchingMonster(state.carried.zh);
+    let target = matched || monster;
+    const aim = Game.consumeAutoAim(state.buffs);
+    state.buffs = aim.buffs;
+    if (aim.armed && matched) target = matched;
+    if (!target || !target.alive) {
+      showToast("场上没有对应的英文小妖", 1400);
+      return;
+    }
     window.BookPlayAudio?.sfx("attack");
+    if (state.hero.el) {
+      state.hero.attackUntil = performance.now() + 340;
+      state.hero.moving = false;
+      setHeroPose("attack");
+      state.hero.el.classList.add("is-throw");
+      window.setTimeout(() => {
+        if (!state.hero.el) return;
+        state.hero.el.classList.remove("is-throw");
+        if (performance.now() >= state.hero.attackUntil) setHeroPose("idle");
+      }, 340);
+    }
+    const thrownOrb = state.orbs.find((orb) => state.carried && orb.zh === state.carried.zh && orb.el.style.display === "none") || null;
     const shot = {
       zh: state.carried.zh,
-      target: monster,
+      target,
+      orb: thrownOrb,
       x: state.hero.x,
       y: state.hero.y - 0.04,
       age: 0,
@@ -611,7 +1008,9 @@
       trailTimer: 0,
     };
     shot.el.className = "game-shot";
-    shot.el.textContent = shot.zh;
+    shot.el.innerHTML = pickupFruitHtml();
+    bindPickupImage(shot.el);
+    shot.el.setAttribute("aria-label", shot.zh);
     els.projectiles.appendChild(shot.el);
     placeAt(shot.el, shot.x, shot.y);
     state.shots.push(shot);
@@ -665,6 +1064,9 @@
     if (verdict.correct) {
       window.BookPlayAudio?.sfx("correct");
       speakTerm(monster.term);
+      const bonus = Game.onCorrectHit(state.buffs, state.shield);
+      state.buffs = bonus.buffs;
+      state.shield = bonus.shield;
       state.stars += 1;
       state.killed += 1;
       killMonster(monster);
@@ -694,20 +1096,22 @@
       monster.fleeUntil = performance.now() + 2400;
       monster.el.classList.add("is-wrong");
       window.setTimeout(() => monster.el.classList.remove("is-wrong"), 900);
-      dropOrbAt(shot.x, shot.y);
+      dropOrbAt(shot.x, shot.y, shot.orb);
       showToast("词球弹回来了！词牌对不上，再找找 ⚠️", 1700);
     }
     updateHud();
   }
 
   function settleMissedShot(shot) {
-    dropOrbAt(shot.x, shot.y);
+    dropOrbAt(shot.x, shot.y, shot.orb);
     removeShot(shot);
     showToast("词球落地了，走过去捡起来再扔", 1500);
   }
 
   function killMonster(monster) {
     monster.alive = false;
+    monster.active = false;
+    state.defeatedKeys.add(monster.key);
     monster.el.classList.add("is-dead");
     window.setTimeout(() => {
       monster.el.style.display = "none";
@@ -728,31 +1132,42 @@
   }
 
   function maybeDrop(monster) {
-    if (Math.random() > 0.35) return;
-    const type = Math.random() < 0.6 ? "peach" : "fan";
-    if (type === "peach") {
-      if (state.shield < 3) {
-        state.shield = Math.min(3, state.shield + 1);
-        window.BookPlayAudio?.sfx("reward");
-        showToast("捡到蟠桃！护盾 +1 🍑", 1500);
-        updateHud();
-        return;
-      }
-    }
-    state.items[type] += 1;
-    window.BookPlayAudio?.sfx("reward");
-    showToast(type === "fan" ? "捡到芭蕉扇！点右上方横扫小妖 🪭" : "蟠桃收进支援栏，盾碎了再吃 🍑", 1800);
-    renderSupports();
+    const type = Game.nextDropType(state.killed);
+    const def = Game.SUPPORT_DEFS[type];
+    const drop = { type, x: monster.x, y: monster.y, el: document.createElement("button") };
+    drop.el.type = "button";
+    drop.el.className = "game-support-drop";
+    drop.el.textContent = def.icon;
+    drop.el.setAttribute("aria-label", `捡起${def.label}`);
+    drop.el.addEventListener("click", (ev) => {
+      ev.stopPropagation();
+      walkTo(drop.x, drop.y);
+    });
+    els.projectiles.appendChild(drop.el);
+    placeAt(drop.el, drop.x, drop.y);
+    state.supportDrops.push(drop);
+    showToast(`${def.icon} 掉在地上了，走过去捡起来！`, 1500);
+  }
+
+  function updateSupportDrops() {
+    state.supportDrops.forEach((drop) => {
+      if (!drop.el || !drop.el.isConnected) return;
+      if (Math.hypot(state.hero.x - drop.x, state.hero.y - drop.y) >= ORB_PICKUP) return;
+      state.items = Game.addItem(state.items, drop.type);
+      drop.el.remove();
+      window.BookPlayAudio?.sfx("reward");
+      showToast(Game.SUPPORT_DEFS[drop.type].toastPick, 1800);
+      renderSupports();
+      persistProgress();
+    });
+    state.supportDrops = state.supportDrops.filter((drop) => drop.el && drop.el.isConnected);
   }
 
   function renderSupports() {
     els.supports.textContent = "";
-    const defs = [
-      { type: "peach", icon: "🍑", label: "吃蟠桃回护盾" },
-      { type: "fan", icon: "🪭", label: "芭蕉扇横扫本波" },
-    ];
-    defs.forEach((def) => {
-      const count = state.items[def.type];
+    Game.SUPPORT_IDS.forEach((id) => {
+      const def = Game.SUPPORT_DEFS[id];
+      const count = state.items[id];
       if (!count) return;
       const btn = document.createElement("button");
       btn.type = "button";
@@ -760,44 +1175,70 @@
       btn.dataset.count = String(count);
       btn.setAttribute("aria-label", def.label);
       btn.tabIndex = 0;
-      btn.addEventListener("click", () => useSupport(def.type));
+      btn.addEventListener("click", () => useSupport(id));
       els.supports.appendChild(btn);
     });
   }
 
   function useSupport(type) {
-    if (state.locked || !state.items[type]) return;
-    if (type === "peach") {
-      state.items.peach -= 1;
-      state.shield = Math.min(3, state.shield + 1);
-      window.BookPlayAudio?.sfx("reward");
-      showToast("蟠桃下肚，护盾 +1 🍑", 1400);
-    } else {
-      state.items.fan -= 1;
-      const rest = currentWaveAlive();
-      rest.forEach((m) => {
-        state.killed += 1;
-        state.stars += 1;
-        killMonster(m);
-        spawnBurst(m);
-      });
-      window.BookPlayAudio?.sfx("reward");
-      showToast("芭蕉扇一挥，本波小妖全灭！🪭", 1700);
-      advanceWaveIfNeeded();
-    }
+    if (state.locked) return;
+    const used = Game.applySupportUse(state.items, state.buffs, type, performance.now(), state.shield);
+    if (!used.used) return;
+    state.items = used.items;
+    state.buffs = used.buffs;
+    state.shield = used.shield;
+    window.BookPlayAudio?.sfx("reward");
+    showToast(used.toast, 1400);
+    if (used.effect === "hint") showMantraHint();
     renderSupports();
     updateHud();
+  }
+
+  function showMantraHint() {
+    const hint = Game.consumeHint(state.buffs);
+    state.buffs = hint.buffs;
+    const carried = state.carried && state.carried.zh;
+    const target = (carried
+      ? state.monsters.find((m) => m.alive && m.zh === carried)
+      : aliveMonsters()[0]) || aliveMonsters()[0];
+    if (!target) {
+      showToast("没有可提示的小妖了", 1400);
+      return;
+    }
+    const letter = Game.hintLetter(target.term);
+    showToast(`紧箍咒：目标单词以 ${letter} 开头`, 2000);
+  }
+
+  function refreshQuizNpcLock() {
+    state.npcs.forEach((npc) => {
+      if (npc.role !== "quiz" || !npc.el) return;
+      const speech = npc.el.querySelector(".game-speech");
+      if (speech && !npc.done) {
+        speech.textContent = Game.canTalkQuizNpc(state.npcUnlocked) ? "💬" : "…";
+      }
+    });
   }
 
   function advanceWaveIfNeeded() {
     updateHud();
     if (currentWaveAlive().length) return;
-    const next = state.waveIndex + 1;
-    if (state.monsters.some((m) => m.waveIndex === next)) {
-      window.setTimeout(() => spawnWave(next), 700);
+    const nextStage = Game.nextMapStage(state.waveIndex, state.level.waves.length, state.npcDone);
+    if (nextStage === "npc") {
+      state.mapStage = "npc";
+      state.npcUnlocked = true;
+      refreshQuizNpcLock();
+      persistProgress();
+      showBanner("小妖已清", "去右边找剧情 NPC 答题");
+      window.BookPlayAudio?.sfx("reward");
+      showToast("找到头顶 💬 的 NPC，答题后开启下一片区域", 2600);
+    } else if (nextStage === "next-wave") {
+      window.setTimeout(() => spawnWave(state.waveIndex + 1), 500);
     } else if (!state.bossReady) {
       state.bossReady = true;
+      state.mapStage = "boss";
+      state.bossSpot.el.classList.remove("is-locked");
       state.bossSpot.el.classList.add("is-ready");
+      persistProgress();
       showBanner("所有小妖肃清", `去挑战 ${state.level.cast.boss.nameZh}！`);
       window.BookPlayAudio?.sfx("reward");
       showToast("去右边找 Boss 决战吧！⚔️", 2600);
@@ -807,6 +1248,12 @@
   /* ---------- NPC 对话（扁平游标 + choice 行） ---------- */
 
   function quizNpcWord() {
+    const authored = state.level.npcDialogue && state.level.npcDialogue.quiz;
+    const authoredWord = authored && authored.word;
+    if (authoredWord && authoredWord.term && authoredWord.zh) {
+      const matched = state.level.previewWords.find((word) => word.term.toLowerCase() === String(authoredWord.term).toLowerCase());
+      return matched || authoredWord;
+    }
     const wrongSorted = Object.entries(state.wrongWords)
       .filter(([, count]) => count > 0)
       .sort((a, b) => b[1] - a[1] || (a[0] < b[0] ? -1 : 1));
@@ -814,31 +1261,61 @@
     return state.level.previewWords.find((w) => w.term === term) || state.level.previewWords[0] || null;
   }
 
+  function authoredNpcLines(role) {
+    const section = state.level.npcDialogue && state.level.npcDialogue[role];
+    if (!section || !Array.isArray(section.lines)) return [];
+    return section.lines
+      .filter((line) => line && (line.textEn || line.textZh))
+      .map((line) => Object.assign({ type: "dialogue" }, line));
+  }
+
   function buildNpcLines(npc) {
     if (npc.role === "intro") {
-      return state.level.intro.map((line) => ({
+      const authored = authoredNpcLines("intro");
+      return authored.length ? authored : state.level.intro.map((line) => ({
         type: "dialogue",
         textEn: line.textEn,
         textZh: line.textZh,
+        speaker: line.speaker || "narrator",
       }));
     }
+    const authored = authoredNpcLines("quiz");
     const tauntArr = state.taunts[npc.sprite] || [];
     const taunt = tauntArr[0] || { en: "Let's practice one word!", zh: "来练一个词吧！" };
     const word = quizNpcWord();
-    return [
-      { type: "dialogue", textEn: taunt.en, textZh: taunt.zh },
-      { type: "choice", word },
-    ];
+    const opening = authored.length ? authored : [{
+      type: "dialogue",
+      textEn: taunt.en,
+      textZh: taunt.zh,
+      speaker: npc.nameZh || "NPC",
+    }];
+    const section = state.level.npcDialogue && state.level.npcDialogue.quiz;
+    const question = section && section.question;
+    const options = section && Array.isArray(section.options) ? section.options : [];
+    return opening.concat([{
+      type: "choice",
+      word,
+      question,
+      options,
+      lessonCardId: section && section.lessonCardId || "",
+      sourceNodeId: question && question.id || "",
+      audioRef: "",
+    }]);
   }
 
   function openDialogue(npc) {
     if (state.locked || !npc) return;
+    if (npc.role === "quiz" && !Game.canTalkQuizNpc(state.npcUnlocked)) {
+      showToast("先把这一片的小妖打完，再来找我答题！", 1800);
+      return;
+    }
     if (npc.role === "quiz" && npc.done) {
       showToast(`${npc.nameZh || "NPC"}：你已经拿到我的词卡啦，去打 Boss 吧！`, 1800);
       return;
     }
     state.locked = true;
-    state.dlg = { npc, lines: buildNpcLines(npc), idx: 0, retried: false };
+    setInputBlocked(true);
+    state.dlg = { npc, lines: buildNpcLines(npc), idx: 0, retried: false, choiceResolved: false };
     els.dialogue.hidden = false;
     renderDialogueLine();
   }
@@ -846,7 +1323,12 @@
   function renderDialogueLine() {
     const dlg = state.dlg;
     const line = dlg.lines[dlg.idx];
-    els.dialogueName.textContent = dlg.npc.nameZh || "NPC";
+    if (els.dialogueKicker) {
+      els.dialogueKicker.textContent = dlg.npc.role === "quiz" ? "小 Boss 问答" : "剧情";
+    }
+    const isNarration = line.type === "dialogue" && String(line.speaker || "narrator") === "narrator";
+    els.dialogue.classList.toggle("is-narration", isNarration);
+    els.dialogueName.textContent = isNarration ? "旁白" : (dlg.npc.nameZh || "NPC");
     const src = spriteSrc(dlg.npc.sprite);
     if (src) {
       els.dialogueFace.src = src;
@@ -855,34 +1337,67 @@
       els.dialogueFace.style.display = "none";
     }
     els.dialogueChoices.textContent = "";
+    // Keep evidence metadata on the rendered panel so an audio adapter can
+    // resolve the authored clip without scraping visible text.
+    els.dialogue.dataset.sourceNodeId = line.sourceNodeId || "";
+    els.dialogue.dataset.audioRef = line.audioRef || "";
+    if (els.dialogueReplay) els.dialogueReplay.hidden = !(line.textEn || line.textZh);
     els.dialogueNext.hidden = false;
     if (line.type === "dialogue") {
       els.dialogueEn.textContent = line.textEn;
       els.dialogueZh.textContent = line.textZh || "";
-      if (dlg.npc.role === "intro") speakTerm(line.textEn);
+      if (line.audioRef || dlg.npc.role === "intro") speakDialogue(line);
       els.dialogueNext.textContent = dlg.idx + 1 >= dlg.lines.length ? "出发！⚔️" : "继续 ▼";
     } else {
       const word = line.word || state.level.previewWords[0];
-      els.dialogueEn.textContent = word.term + (word.ipa ? `  ${word.ipa}` : "");
-      els.dialogueZh.textContent = "它的意思是？";
+      els.dialogueEn.textContent = line.question && line.question.textEn
+        ? line.question.textEn
+        : word.term + (word.ipa ? `  ${word.ipa}` : "");
+      els.dialogueZh.textContent = line.question && line.question.textZh
+        ? line.question.textZh
+        : "它的意思是？";
       speakTerm(word.term);
       els.dialogueNext.hidden = true;
-      const seed = state.level.seedBase + 800;
-      const set = Core.buildOrbSet(word, state.level.previewWords, seed);
-      set.orbs.forEach((orb) => {
-        const btn = document.createElement("button");
-        btn.type = "button";
-        btn.textContent = orb.zh;
-        btn.tabIndex = 0;
-        btn.addEventListener("click", () => resolveNpcChoice(orb, word, btn));
-        els.dialogueChoices.appendChild(btn);
-      });
+      const authored = Array.isArray(line.options) ? line.options.filter((opt) => opt && (opt.textZh || opt.textEn)) : [];
+      if (authored.length >= 2) {
+        authored.forEach((opt) => {
+          const btn = document.createElement("button");
+          btn.type = "button";
+          btn.textContent = opt.textZh || opt.textEn;
+          btn.tabIndex = 0;
+          btn.addEventListener("click", () => resolveNpcAuthoredChoice(opt, word, btn));
+          els.dialogueChoices.appendChild(btn);
+        });
+      } else {
+        const seed = state.level.seedBase + 800;
+        const set = Core.buildOrbSet(word, state.level.previewWords, seed);
+        set.orbs.forEach((orb) => {
+          const btn = document.createElement("button");
+          btn.type = "button";
+          btn.textContent = orb.zh;
+          btn.tabIndex = 0;
+          btn.addEventListener("click", () => resolveNpcChoice(orb, word, btn));
+          els.dialogueChoices.appendChild(btn);
+        });
+      }
     }
   }
 
-  function resolveNpcChoice(orb, word, btn) {
+  function resolveNpcAuthoredChoice(opt, word, btn) {
     const dlg = state.dlg;
-    const verdict = Core.judgeHit(orb, { term: word.term, zh: word.zh }, { streak: 0 });
+    const correctLabel = (dlg.lines.find((line) => line.type === "choice") || {}).options
+      ? ((dlg.lines.find((line) => line.type === "choice").options || []).find((item) => item.correct) || {}).textZh
+        || ((dlg.lines.find((line) => line.type === "choice").options || []).find((item) => item.correct) || {}).textEn
+        || (word && word.zh) || ""
+      : (word && word.zh) || "";
+    const verdict = { correct: Boolean(opt.correct), feedback: String(opt.feedback || "") };
+    const fakeOrb = { zh: opt.textZh || opt.textEn, term: word && word.term };
+    return resolveNpcChoice(fakeOrb, { term: word && word.term || "", zh: correctLabel }, btn, verdict);
+  }
+
+  function resolveNpcChoice(orb, word, btn, verdictOverride) {
+    const dlg = state.dlg;
+    const verdict = verdictOverride || Core.judgeHit(orb, { term: word.term, zh: word.zh }, { streak: 0 });
     const feedback = document.createElement("div");
     feedback.className = "game-feedback";
     if (verdict.correct) {
@@ -893,26 +1408,23 @@
       window.BookPlayAudio?.sfx("correct");
       speakTerm(word.term);
       if (!dlg.npc.done) {
-        dlg.npc.done = true;
-        state.npcBonus = true;
         state.stars += 2;
-        persistProgress({ npcBonus: true, npcDone: true });
+        completeQuizNpc(dlg.npc, true);
         window.BookPlayAudio?.sfx("reward");
-        const speech = dlg.npc.el && dlg.npc.el.querySelector(".game-speech");
-        if (speech) speech.textContent = "⭐";
-        feedback.textContent = "答对啦！奖励词卡 + ⭐⭐";
+        feedback.textContent = (verdict.feedback || "答对啦！奖励词卡 + ⭐⭐");
       } else {
-        feedback.textContent = "答对啦！";
+        feedback.textContent = verdict.feedback || "答对啦！";
       }
       els.dialogueChoices.appendChild(feedback);
       els.dialogueNext.hidden = false;
       els.dialogueNext.textContent = "继续 ▼";
+      dlg.choiceResolved = true;
     } else if (!dlg.retried) {
       dlg.retried = true;
       btn.disabled = true;
       btn.classList.add("is-wrong");
       window.BookPlayAudio?.sfx("retry");
-      feedback.textContent = `再想一想～提示：${word.zh}（还可再试一次）`;
+      feedback.textContent = verdict.feedback || `再想一想～提示：${word.zh}（还可再试一次）`;
       els.dialogueChoices.appendChild(feedback);
     } else {
       btn.disabled = true;
@@ -922,48 +1434,104 @@
       });
       feedback.textContent = `正确答案是「${word.zh}」，跟着读一遍：${word.term}！`;
       els.dialogueChoices.appendChild(feedback);
+      completeQuizNpc(dlg.npc, false);
       els.dialogueNext.hidden = false;
       els.dialogueNext.textContent = "继续 ▼";
+      dlg.choiceResolved = true;
     }
     updateHud();
+  }
+
+  function completeQuizNpc(npc, rewarded) {
+    if (!npc || npc.done) return;
+    npc.done = true;
+    state.npcDone = true;
+    state.npcBonus = state.npcBonus || Boolean(rewarded);
+    const speech = npc.el && npc.el.querySelector(".game-speech");
+    if (speech) speech.textContent = "⭐";
+    const next = state.waveIndex + 1;
+    if (state.monsters.some((m) => m.waveIndex === next && m.alive)) {
+      state.pendingWave = next;
+      state.mapStage = "wave2";
+    }
+    persistProgress();
   }
 
   function advanceDialogue() {
     const dlg = state.dlg;
     if (!dlg || els.dialogueNext.hidden) return;
+    const line = dlg.lines[dlg.idx];
+    if (!Game.canAdvanceDialogue(line, dlg.choiceResolved || line.type !== "choice")) return;
+    stopGameAudio("next");
     dlg.idx += 1;
+    dlg.choiceResolved = false;
     if (dlg.idx >= dlg.lines.length) {
-      state.dlg = null;
-      els.dialogue.hidden = true;
-      state.locked = false;
+      closeDialogue();
       return;
     }
     renderDialogueLine();
+  }
+
+  function closeDialogue() {
+    const dlg = state.dlg;
+    // A manually closed NPC panel must stop both static audio and TTS fallback
+    // and release the modal input lock.  If the quiz was already answered,
+    // continue the pending next wave so closing the sentence cannot strand the
+    // run in a dead state.
+    stopGameAudio("close");
+    state.dlg = null;
+    els.dialogue.hidden = true;
+    state.locked = false;
+    els.dialogueChoices.textContent = "";
+    els.dialogueEn.textContent = "";
+    els.dialogueZh.textContent = "";
+    if (els.dialogueReplay) els.dialogueReplay.hidden = true;
+    setInputBlocked(false);
+    state.hero.moving = false;
+    state.hero.tx = null;
+    state.hero.ty = null;
+    setHeroPose("idle");
+    // advanceDialogue 在点「继续」时会先把 choiceResolved 清掉再 close。
+    // 刷下一波只看答题已经完成（npcDone + pendingWave），避免卡在 NPC 门后。
+    if (state.npcDone && state.pendingWave != null) {
+      const next = state.pendingWave;
+      state.pendingWave = null;
+      spawnWave(next);
+    }
   }
 
   /* ---------- Boss 门 ---------- */
 
   function openBossGate() {
     if (state.locked) return;
+    if (Game.isMapRunComplete(state.mapStage)) {
+      showCompletedRun();
+      return;
+    }
+    const remaining = state.monsters.filter((m) => m.alive).length;
+    if (!Game.canOpenBoss(remaining, state.npcDone)) {
+      showToast(state.npcDone ? `还有 ${remaining} 只小妖，先清完再挑战 Boss` : "先完成 NPC 剧情答题，再挑战 Boss", 2000);
+      return;
+    }
     state.locked = true;
+    setInputBlocked(true);
     const boss = state.level.cast.boss;
     els.bossgate.textContent = "";
     const title = document.createElement("h2");
     title.className = "battle-panel-title";
     title.textContent = `⚔️ 挑战 ${boss.nameZh}？`;
     const text = document.createElement("p");
-    const remaining = aliveMonsters().length;
-    text.textContent = remaining
-      ? `还有 ${remaining} 只小妖没打完，也可以直接挑战！Boss 会优先考你的错词。`
-      : "小妖全清了！Boss 血条上的单词就是你的错词优先。";
+    text.textContent = "小妖已经清完！Boss 血条会优先考本局错词。";
     const go = document.createElement("button");
     go.type = "button";
     go.className = "game-primary";
     go.tabIndex = 0;
     go.textContent = "开战！";
     go.addEventListener("click", () => {
+      state.mapStage = "boss";
+      persistProgress();
       const wrong = Object.keys(state.wrongWords).filter((term) => state.wrongWords[term] > 0).join(",");
-      window.location.href = `battle.html?ep=${EP}&skip=intro,preview,waves&from=game${wrong ? `&wrong=${encodeURIComponent(wrong)}` : ""}`;
+      navigateGame(`battle.html?ep=${EP}&skip=intro,preview,waves,quiz&from=game${wrong ? `&wrong=${encodeURIComponent(wrong)}` : ""}`);
     });
     const later = document.createElement("button");
     later.type = "button";
@@ -974,6 +1542,7 @@
       els.bossgate.hidden = true;
       state.bossGateOpen = false;
       state.locked = false;
+      setInputBlocked(false);
     });
     els.bossgate.append(title, text, go, later);
     els.bossgate.hidden = false;
@@ -987,8 +1556,58 @@
     const total = state.monsters.length + state.level.boss.hpWords.length;
     els.progress.textContent = `${state.killed} / ${total}`;
     els.shields.textContent = "🛡️".repeat(state.shield) + "⬜".repeat(Math.max(0, 3 - state.shield));
-    els.carried.textContent = state.carried ? state.carried.zh : "空手";
+    if (!state.carried) {
+      els.carried.textContent = "空手";
+    } else {
+      const goal = Game.typingTarget(state.carried.term || "");
+      const typed = state.carried.typed || "";
+      const rest = "·".repeat(Math.max(0, goal.length - typed.length));
+      els.carried.textContent = `${state.carried.zh}  ${typed}${state.carried.wrong || rest}`;
+    }
     els.combo.textContent = String(state.combo.streak);
+    refreshRoute();
+  }
+
+  function refreshRoute() {
+    if (!els.route) return;
+    const stage = state.mapStage;
+    const current = {
+      wave1: stage === "wave1",
+      npc: stage === "npc" || stage === "wave2",
+      boss: stage === "boss" || stage === "complete",
+    };
+    els.route.querySelectorAll("[data-stop]").forEach((node) => {
+      const stop = node.dataset.stop;
+      node.classList.toggle("is-current", Boolean(current[stop]));
+      node.classList.toggle("is-done",
+        (stop === "wave1" && state.npcUnlocked)
+        || (stop === "npc" && state.npcDone)
+        || (stop === "boss" && stage === "complete"));
+      node.classList.toggle("is-locked",
+        (stop === "npc" && !state.npcUnlocked)
+        || (stop === "boss" && !state.bossReady && stage !== "complete"));
+    });
+  }
+
+  function onRouteStop(stop) {
+    if (stop === "npc") {
+      const npc = state.npcs.find((item) => item.role === "quiz");
+      if (!npc) return;
+      if (!Game.canTalkQuizNpc(state.npcUnlocked)) {
+        showToast("先把这一片的小妖打完，再去问答站", 1600);
+        return;
+      }
+      walkTo(npc.x, npc.y);
+      return;
+    }
+    if (stop === "boss") {
+      const remaining = state.monsters.filter((item) => item.alive).length;
+      if (!state.bossReady && !Game.canOpenBoss(remaining, state.npcDone)) {
+        showToast("先完成问答，再去大战", 1600);
+        return;
+      }
+      if (state.bossSpot) walkTo(state.bossSpot.x, state.bossSpot.y);
+    }
   }
 
   function showBanner(kicker, title) {
@@ -1041,6 +1660,7 @@
   }
 
   function showGate(message) {
+    setInputBlocked(true);
     els.gate.textContent = "";
     const title = document.createElement("h2");
     title.className = "battle-panel-title";
@@ -1052,10 +1672,98 @@
     back.className = "game-primary";
     back.tabIndex = 0;
     back.textContent = "回地图";
-    back.addEventListener("click", () => {
-      window.location.href = "map.html";
-    });
+    back.addEventListener("click", () => navigateGame("map.html"));
     els.gate.append(title, text, back);
+    els.gate.hidden = false;
+  }
+
+  function deactivateAllMonsters() {
+    state.monsters.forEach((monster) => {
+      monster.active = false;
+      monster.el.style.display = "none";
+    });
+    els.projectiles.querySelectorAll(".game-orb").forEach((el) => el.remove());
+    state.orbs = [];
+  }
+
+  function restoreMapRun(prev) {
+    state.defeatedKeys = new Set(Array.isArray(prev.mapDefeatedKeys) ? prev.mapDefeatedKeys : []);
+    state.killed = Math.max(0, Number(prev.mapKilled) || 0);
+    state.stars = Math.max(0, Number(prev.mapStars) || 0);
+    state.shield = Math.max(1, Math.min(3, Number(prev.mapShield) || 3));
+    state.items = Object.assign(Game.emptyItems(), prev.mapItems || {});
+    state.npcDone = Boolean(prev.npcDone);
+    state.npcBonus = Boolean(prev.npcBonus);
+    state.npcUnlocked = Boolean(prev.npcUnlocked || state.npcDone || prev.mapStage === "npc");
+    state.mapStage = ["wave1", "npc", "wave2", "boss", "complete"].includes(prev.mapStage) ? prev.mapStage : "wave1";
+    state.monsters.forEach((monster) => {
+      if (!state.defeatedKeys.has(monster.key)) return;
+      monster.alive = false;
+      monster.active = false;
+      monster.el.style.display = "none";
+      monster.el.classList.add("is-dead");
+    });
+    state.npcs.forEach((npc) => {
+      if (npc.role !== "quiz") return;
+      npc.done = state.npcDone;
+      const speech = npc.el.querySelector(".game-speech");
+      if (speech) speech.textContent = npc.done ? "⭐" : (state.npcUnlocked ? "💬" : "…");
+    });
+    if (state.mapStage === "wave2") {
+      spawnWave(Math.min(1, state.level.waves.length - 1), true);
+    } else if (state.mapStage === "npc") {
+      state.waveIndex = 0;
+      deactivateAllMonsters();
+      refreshQuizNpcLock();
+    } else if (state.mapStage === "boss" || state.mapStage === "complete") {
+      deactivateAllMonsters();
+      state.waveIndex = Math.max(0, state.level.waves.length - 1);
+      state.bossReady = true;
+      state.bossSpot.el.classList.remove("is-locked");
+      state.bossSpot.el.classList.add("is-ready");
+    } else {
+      spawnWave(0, true);
+    }
+  }
+
+  function showCompletedRun() {
+    setInputBlocked(true);
+    els.gate.textContent = "";
+    const title = document.createElement("h2");
+    title.className = "battle-panel-title";
+    title.textContent = `🏆 ${state.level.cast.boss.nameZh} 已击败`;
+    const text = document.createElement("p");
+    text.textContent = "本集降妖完成，学习和战斗结果已经保存。还可以在地图上逛一逛。";
+    const wander = document.createElement("button");
+    wander.type = "button";
+    wander.className = "game-primary";
+    wander.textContent = "继续逛地图";
+    wander.addEventListener("click", () => {
+      els.gate.hidden = true;
+      els.gate.textContent = "";
+      setInputBlocked(false);
+      state.locked = false;
+    });
+    const back = document.createElement("button");
+    back.type = "button";
+    back.className = "battle-secondary";
+    back.textContent = "返回绘本地图";
+    back.addEventListener("click", () => navigateGame("map.html"));
+    const replay = document.createElement("button");
+    replay.type = "button";
+    replay.className = "battle-secondary";
+    replay.textContent = "重新游玩本集";
+    replay.addEventListener("click", () => {
+      const progress = readStore(KEY_PROGRESS);
+      progress[EP] = Object.assign({}, progress[EP] || {}, {
+        mapStage: "wave1", mapWaveIndex: 0, mapKilled: 0, mapStars: 0, mapShield: 3,
+        mapDefeatedKeys: [], mapItems: Game.emptyItems(), npcDone: false, npcBonus: false, npcUnlocked: false,
+      });
+      writeStore(KEY_PROGRESS, progress);
+      stopGameAudio("navigation");
+      window.location.reload();
+    });
+    els.gate.append(title, text, wander, back, replay);
     els.gate.hidden = false;
   }
 
@@ -1066,7 +1774,7 @@
     let bestDist = INTERACT_DIST;
     const check = (x, y) => Math.hypot(state.hero.x - x, state.hero.y - y);
     state.monsters.forEach((m) => {
-      if (!m.alive) return;
+      if (!m.alive || !m.active) return;
       const d = check(m.x, m.y);
       if (d < bestDist) { best = { kind: "monster", ref: m }; bestDist = d; }
     });
@@ -1082,84 +1790,79 @@
   }
 
   function bindInput() {
+    window.BookPlayDirectionalInputActive = () => state.phase === "explore" && !state.locked && !state.paused;
+    document.addEventListener("pointerdown", kickVoice, true);
+    document.addEventListener("keydown", kickVoice, true);
     els.scene.addEventListener("click", () => { /* 世界点击交给实体；空白处不移动（摇杆/方向键负责） */ });
 
     els.hint.addEventListener("click", toggleHintCard);
+    if (els.route) {
+      els.route.querySelectorAll("[data-stop]").forEach((node) => {
+        node.addEventListener("click", () => onRouteStop(node.dataset.stop));
+      });
+    }
     els.exit.addEventListener("click", togglePause);
     $("game-resume").addEventListener("click", togglePause);
-    $("game-restart").addEventListener("click", () => window.location.reload());
+    $("game-restart").addEventListener("click", () => {
+      stopGameAudio("navigation");
+      window.location.reload();
+    });
     $("game-map").addEventListener("click", () => {
-      window.location.href = "map.html";
+      navigateGame("map.html");
     });
     els.dialogueNext.addEventListener("click", advanceDialogue);
+    els.dialogueClose?.addEventListener("click", closeDialogue);
+    els.dialogueReplay?.addEventListener("click", () => {
+      const line = state.dlg && state.dlg.lines[state.dlg.idx];
+      if (!line) return;
+      const last = state.audio?.getState?.().lastRequest;
+      const expectedRef = line.audioRef || `dialogue:${line.id || "line"}:en`;
+      const lastRef = typeof last === "string" ? last : last && (last.ref || last.audioRef || last.id);
+      if (state.audio && lastRef === expectedRef) state.audio.replay();
+      else speakDialogue(line);
+    });
 
-    document.addEventListener("keydown", (ev) => {
-      if (ev.key === "Escape") {
-        togglePause();
-        return;
-      }
-      if (state.paused) return;
-      if (ev.key === "Enter" || ev.key === " ") {
-        if (state.locked) return;
-        ev.preventDefault();
+    // 输入适配器：键盘 + 摇杆统一意图；Enter=交互、Esc=暂停；弹层打开时意图清零
+    state.input = window.BookPlayGameInput.create({
+      joystick: els.joystick,
+      stick: els.stick,
+      deadZone: 0.14,
+      blocked: () => state.locked || state.paused || state.phase !== "explore",
+      typingMode: () => Boolean(state.carried && state.carried.term),
+      onType: onTypeCarried,
+      onIntent: (ix, iy) => {
+        state.intent.x = ix;
+        state.intent.y = iy;
+      },
+      onAction: () => {
         const near = nearestEntity();
         if (near && near.kind === "monster" && state.carried) throwOrb(near.ref);
         else if (near && near.kind === "monster") showToast("先捡一颗中文词球！", 1400);
         if (near && near.kind === "npc") openDialogue(near.ref);
         if (near && near.kind === "boss") openBossGate();
-        return;
-      }
-      if (["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight", "w", "a", "s", "d"].includes(ev.key)) {
-        ev.preventDefault();
-        state.held.add(ev.key);
-      }
+      },
+      onPause: () => {
+        if (state.dlg) closeDialogue();
+        else togglePause();
+      },
     });
-    document.addEventListener("keyup", (ev) => {
-      state.held.delete(ev.key);
-    });
-
-    const joy = els.joystick;
-    function setStick(x, y) {
-      els.stick.style.transform = `translate(calc(-50% + ${x}px), calc(-50% + ${y}px))`;
-    }
-    joy.addEventListener("pointerdown", (ev) => {
-      joy.setPointerCapture(ev.pointerId);
-      joy.dataset.active = "1";
-    });
-    joy.addEventListener("pointermove", (ev) => {
-      if (!joy.dataset.active) return;
-      const rect = joy.getBoundingClientRect();
-      let dx = ev.clientX - (rect.left + rect.width / 2);
-      let dy = ev.clientY - (rect.top + rect.height / 2);
-      const dist = Math.hypot(dx, dy);
-      const max = rect.width / 2 - 10;
-      if (dist > max) {
-        dx = (dx / dist) * max;
-        dy = (dy / dist) * max;
-      }
-      setStick(dx, dy);
-      state.intent.x = dx / max;
-      state.intent.y = dy / max;
-    });
-    function release() {
-      delete joy.dataset.active;
-      setStick(0, 0);
-      state.intent.x = 0;
-      state.intent.y = 0;
-    }
-    joy.addEventListener("pointerup", release);
-    joy.addEventListener("pointercancel", release);
 
     window.addEventListener("resize", () => {
       state.vw = window.innerWidth;
       state.vh = window.innerHeight;
-      updateCamera();
+      updateCamera(0);
     });
+    document.addEventListener("visibilitychange", () => {
+      if (document.hidden) stopGameAudio("hidden");
+    });
+    window.addEventListener("pagehide", () => stopGameAudio("pagehide"));
   }
 
   function togglePause() {
     if (state.phase !== "explore") return;
     state.paused = !state.paused;
+    setInputBlocked(state.paused);
+    if (state.paused) stopGameAudio("pause");
     els.pause.hidden = !state.paused;
   }
 
@@ -1169,17 +1872,24 @@
     const dt = Math.min(48, now - (state.lastTs || now));
     state.lastTs = now;
     if (state.phase !== "explore") return;
-    if (state.paused || state.locked) return;
+    if (state.paused) return;
     if (document.hidden && !state.ignoreHidden) {
       state.lastTs = now;
       return;
     }
+    if (state.locked) {
+      // Keep minions walking during dialogue/modals. Freezing the whole
+      // loop left them on default south, which reads as "stuck facing right".
+      updateMonsters(dt, now);
+      return;
+    }
     updateHero(dt);
     updateOrbs();          // 先判定拾取：避免小怪撞击的击退把主角推离词球
+    updateSupportDrops();
     updateMonsters(dt, now);
     updateShots(dt, now);
     updateProximity(now);
-    updateCamera();
+    updateCamera(dt / 1000);
   }
 
   function frame(ts) {
@@ -1191,10 +1901,10 @@
     if (state.bossSpot) {
       const d = Math.hypot(state.hero.x - state.bossSpot.x, state.hero.y - state.bossSpot.y);
       const near = d < INTERACT_DIST;
-      if (near && !state.bossGateOpen && !state.bossNear) openBossGate();
+      if (near && state.bossReady && !state.bossGateOpen && !state.bossNear) openBossGate();
       state.bossNear = near;
     }
-    if (!FROM_BATTLE && !state.introAutoPlayed) {
+    if (state.mapStage !== "complete" && Game.shouldAutoIntro(FROM_BATTLE, state.introAutoPlayed)) {
       const introNpc = state.npcs.find((n) => n.role === "intro");
       if (introNpc) {
         const d = Math.hypot(state.hero.x - introNpc.x, state.hero.y - introNpc.y);
@@ -1214,7 +1924,9 @@
       fetchJSON(`../data/game/levels/ep${EP}.json`),
       fetchJSON("../data/game/sprites.json").catch(() => null),
       fetchJSON("../data/game/taunts.json").catch(() => ({})),
-    ]).then(([rawLevel, registry, taunts]) => {
+      fetchJSON("../data/game/pickups.json").catch(() => null),
+      fetchJSON(`../data/game/audio/ep${EP}.json`).catch(() => null),
+    ]).then(([rawLevel, registry, taunts, pickups, audioIndex]) => {
       if (!rawLevel) {
         showGate(`第 ${EP} 集的地图还没解锁，先去读一读这一集的故事吧！`);
         return;
@@ -1226,14 +1938,40 @@
       }
       state.level = level;
       state.sprites = Core.loadSprites(registry || null, level.spriteIds);
+      state.pickup = Game.resolvePickup(pickups, EP);
+      if (level.pickup && typeof level.pickup === "object") {
+        state.pickup = Object.assign({}, state.pickup, level.pickup);
+      }
       state.taunts = taunts && typeof taunts === "object" ? taunts : {};
+      if (window.BookPlayGameAudio) {
+        state.audio = window.BookPlayGameAudio.createGameAudio({
+          episode: EP,
+          audioIndex: audioIndex || {},
+          onState: (status, meta) => {
+            if (status === "unavailable" && state.dlg && meta && meta.text) {
+              els.dialogue.dataset.audioState = "unavailable";
+            }
+          },
+        });
+      }
       const progress = readStore(KEY_PROGRESS);
       const prev = progress[EP] || {};
       Object.entries(prev.wrongWords || {}).forEach(([term, count]) => {
         state.wrongWords[term] = count;
       });
       state.npcBonus = Boolean(prev.npcBonus);
+      state.npcDone = Boolean(prev.npcDone);
       buildEntities();
+      restoreMapRun(prev);
+          // 世界尺寸与背景分块按关卡 map.worldTiles 设置；旧数据仍回退 4×4。
+          const world = mapWorld();
+          els.world.style.width = (world * 100) + "%";
+          els.world.style.height = (world * 100) + "%";
+          // Tile the authored scene once per viewport so a 4×4 world is
+          // 16 playable screens, each showing the full illustration.
+          els.backdrop.style.backgroundSize = `${100 / world}% ${100 / world}%`;
+          els.backdrop.style.backgroundRepeat = "repeat";
+          state.camera = tileCamera(state.hero, world);
       updateCamera();
       updateHud();
       renderSupports();
@@ -1245,9 +1983,15 @@
       }, 320);
       window.BookPlayGameDebug = state;
       window.BookPlayGameDebug.step = step;
-      showBanner("出发！", `${state.level.title.en} · ${THEME_ZH[(state.level.map || {}).theme] || ""}`);
-      if (FROM_BATTLE) showToast("战斗归来！继续探险吧 🗺️", 2000);
-      else showToast("走过中文词球捡起来，点头顶有对应英文的小妖！", 4200);
+      if (state.mapStage === "complete") {
+        showBanner("已完成", `${state.level.title.zh || state.level.title.en} · 可以继续逛`);
+        showToast("本集已完成，可以继续逛。点 Boss 区看结算。", 2800);
+      } else {
+        showBanner("出发！", `${state.level.title.zh || state.level.title.en} · ${THEME_ZH[(state.level.map || {}).theme] || ""}`);
+        if (FROM_BATTLE) showToast("战斗归来！进度已经恢复 🗺️", 2000);
+        else if (FROM_LESSON) showToast("巩固过的词就在地图上，捡起来扔对应的小妖！", 4200);
+        else showToast("走过中文词球捡起来，点头顶有对应英文的小妖！", 4200);
+      }
     });
   }
 

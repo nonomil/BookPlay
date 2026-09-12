@@ -6,7 +6,7 @@
   <title>降妖记 | 豆豆龙英语</title>
   <link rel="icon" href="data:,">
   <link rel="stylesheet" href="tv.css?v=battle-1">
-  <link rel="stylesheet" href="battle.css?v=battle-1">
+  <link rel="stylesheet" href="battle.css?v=battle-5">
   <link rel="stylesheet" href="app-audio.css?v=2">
   <script src="app-audio.js?v=3"></script>
 </head>
@@ -14,27 +14,57 @@
   <main class="battle" id="battle-root">
     <section class="battle-scene" aria-label="战斗场景">
       <div class="battle-backdrop" id="battle-backdrop" aria-hidden="true"></div>
+      <div class="battle-arena" id="battle-arena" aria-hidden="true">
+        <div class="battle-arena-glow"></div>
+        <div class="battle-arena-floor" id="battle-arena-floor"></div>
+        <div class="battle-arena-shadow is-hero"></div>
+        <div class="battle-arena-shadow is-boss"></div>
+      </div>
       <div class="battle-hero" id="battle-hero" aria-hidden="true"></div>
       <div class="battle-monsters" id="battle-monsters"></div>
       <div class="battle-projectiles" id="battle-projectiles" aria-hidden="true"></div>
     </section>
 
     <header class="battle-hud">
-      <div class="battle-shields" id="battle-shields" aria-label="护盾">🛡️🛡️🛡️</div>
       <div class="battle-progress" id="battle-progress" aria-label="进度">0 / 0</div>
       <div class="battle-combo" id="battle-combo" aria-label="连击">连击 0</div>
+      <button type="button" class="battle-defend" id="battle-defend" hidden>护体</button>
       <button type="button" class="battle-exit" id="battle-exit" aria-label="暂停">∥</button>
     </header>
 
+    <section class="battle-prompt" id="battle-prompt" hidden>
+      <p class="battle-prompt-kicker" id="battle-prompt-kicker">答对就出招</p>
+      <h2 class="battle-prompt-main" id="battle-prompt-main"></h2>
+      <p class="battle-prompt-sub" id="battle-prompt-sub"></p>
+      <button type="button" class="battle-listen" id="battle-listen" hidden>🔊 再听一遍</button>
+    </section>
+    <p class="battle-turn" id="battle-turn" hidden>悟空回合</p>
+
+    <section class="battle-hp-dock" id="battle-hp-dock" hidden>
+      <div class="battle-hp-side is-hero">
+        <strong id="battle-hero-hp-name">孙悟空</strong>
+        <div class="battle-hero-hp" id="battle-hero-hp">
+          <span class="battle-hero-hp-fill" id="battle-hero-hp-fill"></span>
+        </div>
+        <div class="battle-shields" id="battle-shields" aria-label="护盾">🛡️🛡️🛡️</div>
+      </div>
+      <p class="battle-skill-banner" id="battle-skill-banner" hidden></p>
+      <div class="battle-hp-side is-boss"></div>
+    </section>
+
     <section class="battle-bossbar" id="battle-bossbar" hidden>
       <strong id="battle-boss-name">Boss</strong>
-      <div class="battle-boss-hp" id="battle-boss-hp"></div>
+      <div class="battle-boss-hp" id="battle-boss-hp">
+        <span class="battle-boss-hp-fill" id="battle-boss-hp-fill"></span>
+      </div>
     </section>
+    <ol class="battle-log" id="battle-log" hidden aria-live="polite"></ol>
 
     <section class="battle-dialogue" id="battle-dialogue" hidden aria-live="polite">
       <img class="battle-dialogue-face" id="battle-dialogue-face" alt="" decoding="async">
       <p class="battle-dialogue-en" id="battle-dialogue-en"></p>
       <p class="battle-dialogue-zh" id="battle-dialogue-zh"></p>
+      <button type="button" class="battle-secondary battle-dialogue-replay" id="battle-dialogue-replay" tabindex="0">🔊 重听</button>
       <button type="button" class="battle-primary" id="battle-dialogue-next" tabindex="0">继续 ▶</button>
     </section>
 
@@ -66,7 +96,10 @@
 
   <script src="tv-remote.js?v=battle-1"></script>
   <script src="episode-vocab-quiz.js?v=battle-1"></script>
-  <script src="battle-core.js?v=battle-3"></script>
-  <script src="battle.js?v=battle-4"></script>
+  <script src="battle-core.js?v=battle-9"></script>
+  <script src="game-core.js?v=game-9"></script>
+  <script src="game-audio.js?v=game-1"></script>
+  <script src="collection-core.js?v=dex-1"></script>
+  <script src="battle.js?v=battle-8"></script>
 </body>
 </html>
