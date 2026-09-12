@@ -670,6 +670,7 @@
       lastSlot: state.bossIdx === total - 1,
       hpRatio: Game.bossHpRatio(state.bossIdx, total),
       canType: keyboardOk(),
+      canListen: state.ttsOk !== false,
     });
     state.bossRound = built;
     if (els.promptMain) els.promptMain.textContent = built.promptMain || current.zh;
@@ -926,6 +927,31 @@
     const cardName = document.createElement("div");
     cardName.textContent = `妖怪卡 · ${boss.nameZh}`;
     card.appendChild(cardName);
+    // 图鉴登记（P1-6）：Boss 战胜利 = 捕捉入图鉴；小怪标记"曾遇见"
+    let dexBadgeText = "";
+    try {
+      if (window.BookPlayCollectionCore && state.dexJson) {
+        const Dex = window.BookPlayCollectionCore;
+        const dexStateRaw = readStore("bookplay_dex_v1");
+        const firstCatch = !Dex.isCaught(dexStateRaw, boss.id);
+        let dexState = Dex.register(dexStateRaw, boss.id, { stars: run.stars });
+        state.level.cast.minors.forEach((m) => {
+          if (m && m.sprite) dexState = Dex.markSeen(dexState, m.sprite);
+        });
+        writeStore("bookplay_dex_v1", dexState);
+        dexBadgeText = firstCatch ? `🎉 首次捕捉 · 已入图鉴` : "已入图鉴 · ⭐+1";
+        const dexBadge = document.createElement("div");
+        dexBadge.className = "battle-dex-badge";
+        dexBadge.textContent = dexBadgeText;
+        card.appendChild(dexBadge);
+        const dexLink = document.createElement("a");
+        dexLink.className = "battle-dex-link";
+        dexLink.href = "dex.html?series=jttw";
+        dexLink.tabIndex = 0;
+        dexLink.textContent = "📖 打开图鉴";
+        card.appendChild(dexLink);
+      }
+    } catch (_) { /* 图鉴登记失败不阻塞结算 */ }
     const wrongTitle = document.createElement("p");
     const wrongList = document.createElement("div");
     wrongList.className = "battle-wrong-words";
@@ -1042,15 +1068,26 @@
     });
   }
 
+  async function checkTts() {
+    try {
+      const res = await fetch("/api/tts?voice=en&text=ok", { method: "GET" });
+      return res.ok;
+    } catch (_) {
+      return false;
+    }
+  }
+
   function boot() {
     bindChrome();
+    checkTts().then((ok) => { state.ttsOk = ok; });
     Promise.all([
       fetchJSON(`../data/game/levels/ep${EP}.json`),
       fetchJSON("../data/game/sprites.json").catch(() => null),
       fetchJSON("../data/game/taunts.json").catch(() => ({})),
       fetchJSON(`../data/game/audio/ep${EP}.json`).catch(() => ({})),
       fetchJSON("../data/game/boss-kits.json").catch(() => null),
-    ]).then(([rawLevel, registry, taunts, audioIndex, kits]) => {
+      fetchJSON("../data/game/dex.json").catch(() => null),
+    ]).then(([rawLevel, registry, taunts, audioIndex, kits, dexJson]) => {
       if (!rawLevel) {
         showGate(`第 ${EP} 集的关卡还没解锁，先去读一读这一集的故事吧！`);
         return;
@@ -1062,6 +1099,7 @@
       }
       state.level = level;
       state.kit = Core.resolveBossKit(kits, level.cast && level.cast.boss && level.cast.boss.id);
+      state.dexJson = dexJson || null;
       state.defendLeft = Number(state.kit.hero && state.kit.hero.skills && state.kit.hero.skills.defend && state.kit.hero.skills.defend.usesPerBattle) || 1;
       state.defendArmed = false;
       state.sprites = Core.loadSprites(registry || null, level.spriteIds);

@@ -862,3 +862,29 @@
   .battle-hero-hp-fill { animation: none; transition: none; }
   .battle-skill-fx { opacity: 1; }
 }
+
+/* 图鉴登记徽标（结算卡内） */
+.battle-dex-badge {
+  margin-top: 6px;
+  padding: 4px 12px;
+  border-radius: 999px;
+  display: inline-block;
+  background: rgba(88, 192, 138, 0.2);
+  border: 1px solid rgba(88, 192, 138, 0.7);
+  color: #9be8bd;
+  font-size: 13px;
+}
+
+.battle-dex-link {
+  display: inline-block;
+  margin-top: 6px;
+  min-height: 44px;
+  line-height: 44px;
+  padding: 0 16px;
+  border-radius: 12px;
+  background: rgba(255, 215, 106, 0.9);
+  color: #4a2f00;
+  font-weight: 800;
+  text-decoration: none;
+  font-size: 14px;
+}

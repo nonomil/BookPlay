@@ -25,10 +25,12 @@
   const SLOW_MULT = 0.45;
   // Viewport-tiles per second, then multiplied by NU (1 / WORLD) in game.js.
   // hero 0.15 ≈ 6–7s to cross one 1280px screen in a 4×4 world.
+  // 单位 = 视口宽/秒（与地图 worldTiles 无关：1.0 = 一秒走完一屏）。
+  // 此前按"全图/秒"定义且关卡 worldTiles 改为 1 后整体慢了 4 倍，用户反馈太慢。
   const MOVEMENT_SPEEDS = Object.freeze({
-    hero: 0.15,
-    monsterWander: 0.06,
-    monsterChase: 0.11,
+    hero: 0.6,           // 屏/秒：约 1.7s 横穿一屏（1.0 太冲，0.25 太慢——2026-09-12 定档）
+    monsterWander: 0.22,
+    monsterChase: 0.45,
   });
   // One pack rule for every episode: chase a unique slot around the hero and
   // push overlapping minions apart. Distances are world-normalized (full map = 1).

@@ -326,6 +326,8 @@
       kind = "official";
     }
     if (kind === "typing" && !(flags && flags.canType)) kind = "en-choice";
+    // 无 TTS 环境听音轮不可玩（本地预览/离线包），降级为看词选义
+    if (kind === "listen-choice" && !(flags && flags.canListen)) kind = "en-choice";
     if (kind === "official" && !(flags && flags.hasOfficial)) kind = "zh-choice";
     if (kind === "listen-choice" && flags && flags.listen === false) kind = "zh-choice";
     return kind;
@@ -364,6 +366,7 @@
       hasOfficial: Boolean(official),
       canType,
       listen: extras.listen,
+      canListen: extras.canListen !== false,
     });
     const seed = (Number(extras.seed) || ((Number(index) || 0) + 1) * 17) >>> 0;
     const pool = wordPool(level);

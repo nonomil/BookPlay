@@ -1308,3 +1308,265 @@ body.map-terminal .terminal-stage .node.drill {
   body.map-terminal .terminal-stage .node-cover { width: 36px; }
   body.map-terminal .terminal-stage .episode-title { font-size: 0.64rem; }
 }
+
+/* ---- 集详情弹层（2026-09-12 选关改版）----
+ * 点击集卡片弹出：大封面 + 标题 + 进入故事 + 三个学习入口。
+ * TV/触屏双适配：按钮 ≥64px、焦点环走 tv.css。 */
+.episode-detail {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(8, 12, 24, 0.72);
+  backdrop-filter: blur(3px);
+  padding: 24px;
+}
+
+.episode-detail-card {
+  position: relative;
+  width: min(560px, 94vw);
+  max-height: 88vh;
+  overflow: auto;
+  text-align: center;
+  border-radius: 24px;
+  background: linear-gradient(180deg, rgba(30, 38, 66, 0.98), rgba(18, 24, 44, 0.98));
+  border: 2px solid rgba(255, 215, 106, 0.55);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5);
+  padding: clamp(18px, 3vw, 30px);
+  color: #fff;
+  font-family: "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+}
+
+.episode-detail-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  min-width: 48px;
+  min-height: 48px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  font-size: 18px;
+}
+
+.episode-detail-cover {
+  display: block;
+  width: min(320px, 72%);
+  margin: 0 auto 12px;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 3px solid rgba(255, 215, 106, 0.7);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+}
+
+.episode-detail-cover img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.episode-detail-cover.no-cover { display: none; }
+
+.episode-detail-number {
+  display: inline-block;
+  padding: 3px 14px;
+  border-radius: 999px;
+  background: rgba(255, 215, 106, 0.16);
+  border: 1px solid rgba(255, 215, 106, 0.6);
+  color: #ffd76a;
+  font-size: clamp(13px, 1.8vw, 16px);
+  margin-bottom: 8px;
+}
+
+.episode-detail-title {
+  margin: 0 0 4px;
+  font-size: clamp(22px, 3.4vw, 32px);
+  color: #ffd76a;
+}
+
+.episode-detail-en {
+  margin: 0 0 18px;
+  opacity: 0.85;
+  font-size: clamp(14px, 2vw, 18px);
+}
+
+.episode-detail-actions { display: grid; gap: 12px; }
+
+.episode-detail-primary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 68px;
+  border-radius: 18px;
+  background: linear-gradient(180deg, #ffd76a, #e8a13a);
+  color: #4a2f00;
+  font-size: clamp(17px, 2.4vw, 22px);
+  font-weight: 800;
+  text-decoration: none;
+  box-shadow: 0 8px 20px rgba(232, 161, 58, 0.35);
+}
+
+.episode-detail-options {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.episode-detail-option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  min-height: 64px;
+  border-radius: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: clamp(14px, 1.9vw, 17px);
+  font-weight: 700;
+  text-decoration: none;
+  padding: 6px;
+}
+
+.episode-detail-option:hover,
+.episode-detail-option:focus-visible,
+.episode-detail-primary:hover,
+.episode-detail-primary:focus-visible {
+  outline: none;
+  filter: brightness(1.12);
+  transform: translateY(-2px);
+  transition: transform 0.15s ease;
+}
+
+.episode-detail-close:hover,
+.episode-detail-close:focus-visible { outline: none; background: rgba(255, 255, 255, 0.25); }
+
+@media (max-width: 560px) {
+  .episode-detail-options { grid-template-columns: 1fr; }
+}
+
+/* ---- 2026-09-12 全屏改版 ----
+ * 路线舞台铺满视口：去掉 13rem 顶部预留、宽度上限、圆角外框；
+ * 顶栏/合辑条/辑信息行已从构建中移除，这里只做保险隐藏。 */
+
+#map-top,
+.page-head,
+.page-lock-msg {
+  display: none !important;
+}
+
+#map-track {
+  height: 100dvh;
+}
+
+body.map-terminal #map-track {
+  height: 100dvh;
+}
+
+body.map-terminal .terminal-stage {
+  width: 100%;
+  max-width: none;
+  max-height: none;
+  height: 100dvh;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* 音频控件浮在右上角 */
+#map-audio-float {
+  position: fixed;
+  z-index: 40;
+  top: 10px;
+  right: 12px;
+}
+
+#map-audio-float .app-audio-controls {
+  position: static;
+  display: inline-flex;
+  gap: 6px;
+}
+
+/* 切辑箭头更贴合全屏（半透明大热区） */
+#nav-prev,
+#nav-next {
+  opacity: 0.55;
+}
+#nav-prev:hover,
+#nav-next:hover,
+#nav-prev:focus-visible,
+#nav-next:focus-visible {
+  opacity: 1;
+}
+
+/* ---- 2026-09-12 底部辑信息条 ----
+ * 每张地图页下沿的半透明章节介绍（辑名/英文名/集数范围/进度），
+ * 纯展示不拦截点击，不占布局空间。 */
+.page-foot {
+  position: absolute;
+  z-index: 5;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 10px 16px 12px;
+  pointer-events: none;
+  background: linear-gradient(to top, rgba(10, 12, 22, 0.72), rgba(10, 12, 22, 0));
+  color: #fff;
+}
+
+.page-foot-title {
+  font-size: clamp(16px, 2.2vw, 22px);
+  color: #ffd76a;
+}
+
+.page-foot-en {
+  font-size: clamp(12px, 1.6vw, 15px);
+  opacity: 0.8;
+}
+
+.page-foot-range,
+.page-foot-count {
+  padding: 2px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 215, 106, 0.55);
+  background: rgba(15, 20, 36, 0.55);
+  font-size: clamp(11px, 1.5vw, 14px);
+  color: #fff3c4;
+}
+
+/* 全屏改版后底部辑信息条已承担上下文，滑动提示与其重叠 → 隐藏（元素保留防 JS 断链） */
+#map-hint {
+  display: none !important;
+}
+
+/* 图鉴入口浮标（音频控件左侧） */
+#map-dex-float {
+  position: fixed;
+  z-index: 40;
+  top: 12px;
+  right: 116px;
+  min-height: 40px;
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 2px solid rgba(255, 215, 106, 0.7);
+  background: rgba(15, 20, 36, 0.82);
+  color: #ffd76a;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+#map-dex-float:hover,
+#map-dex-float:focus-visible { background: rgba(255, 215, 106, 0.9); color: #4a2f00; outline: none; }

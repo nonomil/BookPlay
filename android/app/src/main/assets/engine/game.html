@@ -8,9 +8,9 @@
   <link rel="stylesheet" href="tv.css?v=game-1">
   <link rel="stylesheet" href="app-audio.css?v=1">
   <link rel="stylesheet" href="battle.css?v=battle-3">
-  <link rel="stylesheet" href="game.css?v=game-6">
+  <link rel="stylesheet" href="game.css?v=game-9">
 </head>
-<body>
+<body data-audio-scene="jttw" data-audio-volume="0.30">
   <main class="game" id="game-root">
     <section class="game-scene" id="game-scene" aria-label="探索大地图">
       <div class="game-world" id="game-world">
@@ -27,8 +27,9 @@
       <div class="game-pill" aria-label="护盾"><span id="game-shields">🛡️🛡️🛡️</span></div>
       <div class="game-pill game-carried" aria-label="当前中文球">🎐 <strong id="game-carried">空手</strong></div>
       <div class="game-pill game-combo" aria-label="连击">连击 <strong id="game-combo">0</strong></div>
-      <button type="button" class="game-exit" id="game-hint" aria-label="单词提示" tabindex="0">？</button>
-      <button type="button" class="game-exit" id="game-exit" aria-label="暂停" tabindex="0">∥</button>
+      <span data-audio-slot></span>
+      <button type="button" class="game-hudbtn" id="game-hint" aria-label="单词提示" tabindex="0">💡 提示</button>
+      <button type="button" class="game-hudbtn" id="game-exit" aria-label="暂停" tabindex="0">⏸ 暂停</button>
     </header>
 
     <section class="game-banner" id="game-banner" hidden aria-live="polite">
@@ -81,9 +82,14 @@
   <script src="app-audio.js?v=2"></script>
   <script src="tv-remote.js?v=game-1"></script>
   <script src="battle-core.js?v=battle-4"></script>
-  <script src="game-core.js?v=game-12"></script>
+  <script src="game-core.js?v=game-15"></script>
   <script src="game-input.js?v=game-1"></script>
   <script src="game-audio.js?v=game-1"></script>
-  <script src="game.js?v=game-19"></script>
+  <script src="collection-core.js?v=dex-1"></script>
+  <script src="schedule-core.js?v=farm-1"></script>
+  <script src="economy-core.js?v=farm-1"></script>
+  <script src="farm-core.js?v=farm-1"></script>
+  <script src="farm-ui.js?v=farm-5"></script>
+  <script src="game.js?v=game-24"></script>
 </body>
 </html>

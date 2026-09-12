@@ -70,7 +70,7 @@
 .game-entity {
   position: absolute;
   transform: translate(-50%, -50%);
-  width: clamp(72px, 9vw, 118px);
+  width: clamp(96px, 13vw, 176px);
   border: 0;
   background: transparent;
   padding: 0;
@@ -107,11 +107,12 @@
   left: 50%;
   transform: translateX(-50%);
   white-space: nowrap;
-  padding: 3px 10px;
+  padding: 5px 14px;
   border-radius: 999px;
-  background: rgba(20, 26, 44, 0.88);
-  border: 2px solid rgba(255, 255, 255, 0.6);
-  font-size: clamp(12px, 1.6vw, 17px);
+  background: rgba(20, 26, 44, 0.9);
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  font-size: clamp(15px, 2vw, 22px);
+  font-weight: 700;
 }
 
 .game-entity.is-monster.is-wrong .game-word {
@@ -315,9 +316,9 @@
 .game-pill {
   display: flex;
   align-items: center;
-  gap: 4px;
-  min-height: 40px;
-  padding: 4px 12px;
+  gap: 6px;
+  min-height: 52px;
+  padding: 6px 16px;
   border-radius: 999px;
   background: rgba(15, 20, 36, 0.78);
   border: 2px solid rgba(255, 255, 255, 0.35);
@@ -476,8 +477,8 @@
   z-index: 6;
   right: calc(18px + var(--tv-safe-inline, 12px));
   bottom: calc(18px + env(safe-area-inset-bottom, 0));
-  width: 112px;
-  height: 112px;
+  width: 132px;
+  height: 132px;
   border-radius: 50%;
   background: rgba(15, 20, 36, 0.45);
   border: 2px solid rgba(255, 255, 255, 0.4);
@@ -755,4 +756,115 @@
 @media (max-width: 700px) {
   .game-entity { width: clamp(56px, 13vw, 88px); }
   .game-hud { gap: 6px; }
+}
+
+/* HUD 功能按钮：带文字的清晰胶囊（替换原先无字的 ？/∥ 小方块） */
+
+.game-hudbtn {
+  min-width: 84px;
+  min-height: 56px;
+  padding: 6px 16px;
+  border-radius: 999px;
+  border: 2px solid rgba(255, 215, 106, 0.75);
+  background: rgba(15, 20, 36, 0.82);
+  color: #ffd76a;
+  font-size: clamp(13px, 1.7vw, 17px);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.game-hudbtn:hover,
+.game-hudbtn:focus-visible {
+  background: rgba(255, 215, 106, 0.9);
+  color: #4a2f00;
+  outline: none;
+}
+
+/* 音频控件与 HUD 同排（app-audio 的 ♫/♪ 按钮） */
+.game-hud [data-audio-slot] .app-audio-controls {
+  position: static;
+  display: inline-flex;
+  gap: 6px;
+}
+
+/* 词田与商店浮层（farm-ui 注入） */
+.farm-panel { z-index: 12; text-align: center; }
+
+.farm-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.farm-grid.is-shop { grid-template-columns: repeat(2, 1fr); }
+
+.farm-plot {
+  min-height: 96px;
+  border-radius: 14px;
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  background: rgba(255, 255, 255, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px;
+}
+
+.farm-plot.is-grown { border-color: #58c08a; background: rgba(88, 192, 138, 0.16); }
+.farm-plot.is-empty { border-style: dashed; }
+
+.farm-plot-word {
+  font-size: clamp(13px, 1.8vw, 16px);
+  font-weight: 700;
+}
+
+.farm-plot-action,
+.farm-word-speak {
+  min-height: 48px;
+  min-width: 88px;
+  border-radius: 12px;
+  border: 0;
+  background: linear-gradient(180deg, #ffd76a, #e8a13a);
+  color: #4a2f00;
+  font-weight: 800;
+  font-size: 14px;
+}
+
+.farm-word-speak { background: rgba(255, 255, 255, 0.16); color: #fff; border: 2px solid rgba(255, 255, 255, 0.4); }
+
+.farm-quiz { display: grid; gap: 8px; }
+
+.farm-quiz button {
+  min-height: 64px;
+  border-radius: 14px;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: clamp(15px, 2.2vw, 19px);
+}
+
+.farm-hint { font-size: 13px; opacity: 0.8; margin: 8px 0 0; }
+
+@media (max-width: 700px) {
+  .farm-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .farm-plot, .farm-plot-action { transition: none; }
+}
+
+/* 词田地块真图：状态图打底，文字加描边保证可读 */
+.farm-plot {
+  background-color: rgba(15, 20, 36, 0.35);
+  background-blend-mode: multiply;
+}
+
+.farm-plot .farm-plot-word {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8), 0 0 8px rgba(0, 0, 0, 0.6);
+}
+
+.farm-plot .farm-plot-action {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.45);
 }

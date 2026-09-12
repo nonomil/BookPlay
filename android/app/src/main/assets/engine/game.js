@@ -23,30 +23,46 @@
   const KEY_PROGRESS = "bookplay_battle_progress_v1";
   const KEY_COLLECTION = "bookplay_battle_collection_v1";
 
-  const WORLD = Game.WORLD_TILES;  // 4×4 视口，方便走一走再打
-  const NU = 1 / WORLD;            // 归一化地图单位（全图 = 1）；速度/距离全部用该单位，横竖同尺
-  const HERO_SPEED = Game.MOVEMENT_SPEEDS.hero * NU;               // 全图/秒
-  const MONSTER_WANDER = Game.MOVEMENT_SPEEDS.monsterWander * NU;
-  const MONSTER_CHASE = Game.MOVEMENT_SPEEDS.monsterChase * NU;
-  const AGGRO_DIST = 0.55 * NU;
+  const WORLD = Game.WORLD_TILES;  // 默认 4×4 视口；关卡可用 map.worldTiles 覆盖
+  // 归一化单位 NU = 一个视口宽（地图坐标）；速度语义 = 视口/秒，与 worldTiles 无关。
+  // 派生量在 boot 按关卡 worldTiles 重算（recomputeTuning），否则 worldTiles=1 时全部慢 4 倍。
+  let NU = 1 / WORLD;
+  let HERO_SPEED = Game.MOVEMENT_SPEEDS.hero * NU;
+  let MONSTER_WANDER = Game.MOVEMENT_SPEEDS.monsterWander * NU;
+  let MONSTER_CHASE = Game.MOVEMENT_SPEEDS.monsterChase * NU;
+  let AGGRO_DIST = 0.55 * NU;
   const KEEP_DIST = Game.PACK.chaseRadius;
   const PACK_GAP = Game.PACK.separation;
   const SPAWN_GAP = Game.PACK.spawnGap;
-  const ATTACK_DIST = 0.075 * NU;
+  let ATTACK_DIST = 0.075 * NU;
   const ATTACK_CD = 3600;
   const HERO_INVULN = 2400;
-  const ORB_PICKUP = 0.11 * NU;
+  let ORB_PICKUP = 0.11 * NU;
   // Auto-walk targets must settle inside the pickup radius. The old fixed
   // 0.03 stop threshold was larger than ORB_PICKUP (0.0275), leaving a
   // clicked word orb visibly beside the hero but never collectible.
-  const TARGET_STOP = ORB_PICKUP * 0.45;
-  const SHOT_SPEED = 1.75 * NU;
+  let TARGET_STOP = ORB_PICKUP * 0.45;
+  let SHOT_SPEED = 1.75 * NU;
   const SHOT_ARM = 0.12;
-  const SHOT_HIT = 0.18 * NU;
+  let SHOT_HIT = 0.18 * NU;
   const SHOT_TTL = 2.2;
-  const INTERACT_DIST = 0.14 * NU;
+  let INTERACT_DIST = 0.14 * NU;
   const CAMERA_MARGIN = 0.32;      // 视口内边距（占视口比例）：人物先走，接近边缘才推镜头
   const CAMERA_TAU = 0.14;         // 镜头跟上更快的走速，避免人物贴边等地图
+
+  function recomputeTuning() {
+    NU = 1 / mapWorld();
+    HERO_SPEED = Game.MOVEMENT_SPEEDS.hero * NU;
+    MONSTER_WANDER = Game.MOVEMENT_SPEEDS.monsterWander * NU;
+    MONSTER_CHASE = Game.MOVEMENT_SPEEDS.monsterChase * NU;
+    AGGRO_DIST = 0.55 * NU;
+    ATTACK_DIST = 0.075 * NU;
+    ORB_PICKUP = 0.11 * NU;
+    TARGET_STOP = ORB_PICKUP * 0.45;
+    SHOT_SPEED = 1.75 * NU;
+    SHOT_HIT = 0.18 * NU;
+    INTERACT_DIST = 0.14 * NU;
+  }
 
   const THEME_ZH = {
     "flower-fruit-mountain": "花果山",
@@ -457,6 +473,29 @@
   }
 
   /* ---------- 实体构建 ---------- */
+
+  // 预载四方向 GIF：消除行走换向时首次解码造成的卡顿（移动流畅性关键）
+  function precacheSprites() {
+    const ids = [state.level.cast.hero && state.level.cast.hero.id,
+      state.level.cast.boss && state.level.cast.boss.sprite]
+      .concat((state.level.cast.minors || []).map((m) => m && m.sprite))
+      .concat(state.npcs.map((n) => n.sprite))
+      .filter(Boolean);
+    const seen = new Set();
+    ids.forEach((id) => {
+      if (seen.has(id)) return;
+      seen.add(id);
+      const entry = state.sprites[id];
+      if (!entry) return;
+      const srcs = [];
+      if (entry.walkGifs) srcs.push(...Object.values(entry.walkGifs));
+      if (entry.gif) srcs.push(entry.gif);
+      srcs.forEach((src) => {
+        const img = new Image();
+        img.src = assetUrl(src);
+      });
+    });
+  }
 
   function buildEntities() {
     els.entities.textContent = "";
@@ -1112,6 +1151,13 @@
     monster.alive = false;
     monster.active = false;
     state.defeatedKeys.add(monster.key);
+    // 图鉴"曾遇见"标记（P1-6）：见到并打败即计入，捕捉仍由 Boss 战结算
+    try {
+      if (window.BookPlayCollectionCore && monster.sprite && state.dexJson) {
+        const dexState = window.BookPlayCollectionCore.markSeen(readStore("bookplay_dex_v1"), monster.sprite);
+        writeStore("bookplay_dex_v1", dexState);
+      }
+    } catch (_) { /* 图鉴标记失败不影响战斗 */ }
     monster.el.classList.add("is-dead");
     window.setTimeout(() => {
       monster.el.style.display = "none";
@@ -1925,8 +1971,9 @@
       fetchJSON("../data/game/sprites.json").catch(() => null),
       fetchJSON("../data/game/taunts.json").catch(() => ({})),
       fetchJSON("../data/game/pickups.json").catch(() => null),
+      fetchJSON("../data/game/dex.json").catch(() => null),
       fetchJSON(`../data/game/audio/ep${EP}.json`).catch(() => null),
-    ]).then(([rawLevel, registry, taunts, pickups, audioIndex]) => {
+    ]).then(([rawLevel, registry, taunts, pickups, audioIndex, dexJson]) => {
       if (!rawLevel) {
         showGate(`第 ${EP} 集的地图还没解锁，先去读一读这一集的故事吧！`);
         return;
@@ -1939,6 +1986,7 @@
       state.level = level;
       state.sprites = Core.loadSprites(registry || null, level.spriteIds);
       state.pickup = Game.resolvePickup(pickups, EP);
+      state.dexJson = dexJson || null;
       if (level.pickup && typeof level.pickup === "object") {
         state.pickup = Object.assign({}, state.pickup, level.pickup);
       }
@@ -1961,8 +2009,10 @@
       });
       state.npcBonus = Boolean(prev.npcBonus);
       state.npcDone = Boolean(prev.npcDone);
+      recomputeTuning(); // 关卡可能声明单屏(worldTiles=1)或更大的世界：速度/距离按"视口宽"重算
       buildEntities();
       restoreMapRun(prev);
+      precacheSprites();
           // 世界尺寸与背景分块按关卡 map.worldTiles 设置；旧数据仍回退 4×4。
           const world = mapWorld();
           els.world.style.width = (world * 100) + "%";
