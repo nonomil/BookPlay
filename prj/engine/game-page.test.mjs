@@ -290,9 +290,10 @@ test('Android 大地图运行副本与浏览器版共享慢速四向/攻防契�
   assert.match(androidGame, /function setMonsterPose\(/);
   assert.match(androidGame, /attackUntil/);
   assert.match(androidGame, /function tileCamera\(/);
-  assert.match(androidCore, /hero:\s*0\.15/);
-  assert.match(androidCore, /monsterWander:\s*0\.06/);
-  assert.match(androidCore, /monsterChase:\s*0\.11/);
+  // 2026-09-12 用户反馈提速后的行走档位（0.6 屏/秒档）
+  assert.match(androidCore, /hero:\s*0\.6/);
+  assert.match(androidCore, /monsterWander:\s*0\.22/);
+  assert.match(androidCore, /monsterChase:\s*0\.45/);
   assert.match(androidCss, /\[hidden\]\s*\{[^}]*display\s*:\s*none\s*!important/);
   assert.match(androidCss, /width\s*:\s*400%/);
 });
