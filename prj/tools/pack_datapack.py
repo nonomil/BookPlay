@@ -301,6 +301,8 @@ COMMON_FILES = (
     "assets/generated/jttw-medals-v2/transparent/journey-complete-crown.png",
     # 降妖记小游戏：关卡/角色表/台词库/精灵注册表由战斗页按固定路径 fetch，
     # 引用闭包扫描不到，逐文件显式携带；四向小怪 GIF（约 2.6MB）一并入包。
+    "assets/walker-gifs/jadeemperor-walk.gif",
+    "assets/walker-gifs/tang-walk.gif",
     "game/cast.json",
     "game/taunts.json",
     "game/maps.json",

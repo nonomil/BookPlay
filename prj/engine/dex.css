@@ -253,3 +253,67 @@
   margin: 0 0 10px;
   color: #9be8bd;
 }
+
+/* 进化演出 */
+.dex-ceremony {
+  position: relative;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.dex-ceremony-flash {
+  position: absolute;
+  inset: -20px;
+  background: radial-gradient(circle, rgba(255, 241, 196, 0.9), rgba(255, 215, 106, 0.25) 55%, transparent 75%);
+  animation: dex-flash 1.6s ease-out infinite;
+}
+
+@keyframes dex-flash {
+  0% { transform: scale(0.6); opacity: 0.2; }
+  50% { transform: scale(1.15); opacity: 0.9; }
+  100% { transform: scale(0.6); opacity: 0.2; }
+}
+
+.dex-ceremony-img {
+  position: relative;
+  width: min(200px, 50%);
+  animation: dex-evolve-shake 0.5s ease-in-out infinite;
+}
+
+.dex-ceremony-img.is-evolved {
+  animation: dex-evolve-pop 0.6s ease-out;
+}
+
+@keyframes dex-evolve-shake {
+  0%, 100% { transform: translateX(-3px) rotate(-2deg); }
+  50% { transform: translateX(3px) rotate(2deg); }
+}
+
+@keyframes dex-evolve-pop {
+  0% { transform: scale(0.3); opacity: 0; }
+  60% { transform: scale(1.25); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.dex-ceremony-text {
+  font-size: clamp(16px, 2.6vw, 22px);
+  color: #ffd76a;
+  margin: 12px 0 6px;
+}
+
+.dex-evolve-btn {
+  min-height: 60px;
+  min-width: 160px;
+  border-radius: 16px;
+  border: 0;
+  background: linear-gradient(180deg, #9be8bd, #58c08a);
+  color: #12331f;
+  font-size: clamp(16px, 2.4vw, 20px);
+  font-weight: 800;
+  box-shadow: 0 6px 18px rgba(88, 192, 138, 0.4);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dex-ceremony-flash,
+  .dex-ceremony-img { animation: none; }
+}

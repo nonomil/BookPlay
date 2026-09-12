@@ -20,11 +20,14 @@ test('dex.html：按顺序引入 app-audio / tv-remote / collection-core / dex.j
 test('dex.js：只读 bookplay_dex_v1，复用 collection-core，无危险 API', () => {
   const js = read('dex.js');
   const keys = [...js.matchAll(/bookplay_[a-z_0-9]+/g)].map((m) => m[0]);
-  assert.deepEqual([...new Set(keys)], ['bookplay_dex_v1'], '图鉴页只读图鉴键');
+  assert.deepEqual([...new Set(keys)], ['bookplay_dex_v1', 'bookplay_adv_vocab_stat'], '图鉴页读图鉴键与掌握度（只读，不写）');
+  assert.doesNotMatch(js, /localStorage\.setItem\([^)]*adv_vocab/, '掌握度库只读');
   assert.match(js, /BookPlayCollectionCore/);
   assert.match(js, /Core\.completion/);
   assert.doesNotMatch(js, /\beval\s*\(|new Function\s*\(|document\.write/);
-  assert.doesNotMatch(js, /localStorage\.setItem/, '纯展示页不写存档');
+  // 2026-09-12 进化演出：允许写 bookplay_dex_v1（经 KEY_DEX 常量），禁止字面量键直写
+  assert.match(js, /localStorage\.setItem\(KEY_DEX/);
+  assert.doesNotMatch(js, /localStorage\.setItem\(['"]/,'只允许经 KEY_DEX 写图鉴存档');
 });
 
 test('dex.css：命中高度与 reduced motion', () => {

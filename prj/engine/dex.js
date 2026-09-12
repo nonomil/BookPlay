@@ -21,6 +21,20 @@
     toast: $("dex-toast"),
   };
 
+  function collectMastery() {
+    const mastered = new Set();
+    try {
+      const store = JSON.parse(localStorage.getItem("bookplay_adv_vocab_stat") || "{}") || {};
+      const visit = (node) => {
+        if (!node || typeof node !== "object") return;
+        if (Array.isArray(node.mastered_terms)) node.mastered_terms.forEach((t) => t && mastered.add(String(t).toLowerCase()));
+        Object.values(node).forEach(visit);
+      };
+      visit(store);
+    } catch (_) {}
+    return mastered;
+  }
+
   function readDexState() {
     try {
       return JSON.parse(localStorage.getItem(KEY_DEX) || "{}") || {};
@@ -110,6 +124,53 @@
     return wrap;
   }
 
+  function evolveCeremony(entry, dexState) {
+    const Dex = window.BookPlayCollectionCore;
+    const toId = entry.evolution.to;
+    const evolved = (window.__dexAll || []).find((x) => x.id === toId);
+    if (!evolved) { showToast("进化形态数据缺失"); return; }
+    const d = els.detail;
+    d.textContent = "";
+    d.hidden = false;
+    const stage = document.createElement("div");
+    stage.className = "dex-ceremony";
+    const flash = document.createElement("div");
+    flash.className = "dex-ceremony-flash";
+    const img = document.createElement("img");
+    img.className = "dex-ceremony-img";
+    img.src = spriteSrc(entry);
+    img.alt = "";
+    const text = document.createElement("p");
+    text.className = "dex-ceremony-text";
+    text.textContent = `${entry.nameZh} 正在进化……`;
+    stage.append(flash, img, text);
+    d.appendChild(stage);
+    window.BookPlayAudio?.sfx("reward");
+    window.setTimeout(() => {
+      // 登记进化形态（继承星星），保留原形态
+      const nextState = Dex.register(dexState, toId, { stars: Math.max(2, Number((dexState.stars || {})[entry.id]) || 0) });
+      try { localStorage.setItem(KEY_DEX, JSON.stringify(nextState)); } catch (_) {}
+      text.textContent = `进化成了 ${evolved.nameZh}！`;
+      img.src = spriteSrc(evolved);
+      img.className = "dex-ceremony-img is-evolved";
+      window.BookPlayAudio?.sfx("complete");
+      const stars = document.createElement("p");
+      stars.className = "dex-ceremony-text";
+      stars.textContent = "⭐ ⭐ ⭐";
+      stage.appendChild(stars);
+      const close = document.createElement("button");
+      close.type = "button";
+      close.className = "dex-detail-close";
+      close.tabIndex = 0;
+      close.textContent = "太棒了！";
+      close.addEventListener("click", () => {
+        d.hidden = true;
+        boot(); // 重渲网格（新形态点亮）
+      });
+      d.appendChild(close);
+    }, 1600);
+  }
+
   function openDetail(entry, caught, seen, dexState) {
     const d = els.detail;
     d.textContent = "";
@@ -147,6 +208,26 @@
     });
     const evo = evolutionLine(entry, caught);
     if (evo) card.appendChild(evo);
+    if (caught && entry.evolution) {
+      const mastered = collectMastery();
+      const gained = (entry.words || []).filter((w) => mastered.has(String(w).toLowerCase())).length;
+      const stars = Number((dexState.stars || {})[entry.id]) || 0;
+      const ready = gained >= (entry.evolution.requireWords || 0) && stars >= (entry.evolution.requireStars || 0);
+      if (ready) {
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.className = "dex-evolve-btn";
+        btn.tabIndex = 0;
+        btn.textContent = "✨ 进化！";
+        btn.addEventListener("click", () => evolveCeremony(entry, dexState));
+        card.appendChild(btn);
+      } else {
+        const need = document.createElement("p");
+        need.className = "dex-detail-evo";
+        need.textContent = `进化进度：词 ${Math.min(gained, entry.evolution.requireWords)}/${entry.evolution.requireWords} · ⭐${stars}/${entry.evolution.requireStars}`;
+        card.appendChild(need);
+      }
+    }
     const words = document.createElement("div");
     words.className = "dex-detail-words";
     (entry.words || []).forEach((w) => {
