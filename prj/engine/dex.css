@@ -229,3 +229,27 @@
   .dex-card,
   .dex-detail-card { transition: none; }
 }
+
+/* 详情卡卡框（叠加装饰，中心透空不挡内容） */
+.dex-detail-card { position: relative; }
+
+.dex-detail-frame {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  padding: 0;
+  background: none;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.dex-detail-card > *:not(.dex-detail-frame) { position: relative; z-index: 2; }
+
+.dex-detail-evo {
+  font-size: clamp(12px, 1.7vw, 15px);
+  opacity: 0.85;
+  margin: 0 0 10px;
+  color: #9be8bd;
+}

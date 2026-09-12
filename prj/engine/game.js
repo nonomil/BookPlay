@@ -1151,6 +1151,13 @@
     monster.alive = false;
     monster.active = false;
     state.defeatedKeys.add(monster.key);
+    // 图鉴"曾遇见"标记（P1-6）：见到并打败即计入，捕捉仍由 Boss 战结算
+    try {
+      if (window.BookPlayCollectionCore && monster.sprite && state.dexJson) {
+        const dexState = window.BookPlayCollectionCore.markSeen(readStore("bookplay_dex_v1"), monster.sprite);
+        writeStore("bookplay_dex_v1", dexState);
+      }
+    } catch (_) { /* 图鉴标记失败不影响战斗 */ }
     monster.el.classList.add("is-dead");
     window.setTimeout(() => {
       monster.el.style.display = "none";
@@ -1964,8 +1971,9 @@
       fetchJSON("../data/game/sprites.json").catch(() => null),
       fetchJSON("../data/game/taunts.json").catch(() => ({})),
       fetchJSON("../data/game/pickups.json").catch(() => null),
+      fetchJSON("../data/game/dex.json").catch(() => null),
       fetchJSON(`../data/game/audio/ep${EP}.json`).catch(() => null),
-    ]).then(([rawLevel, registry, taunts, pickups, audioIndex]) => {
+    ]).then(([rawLevel, registry, taunts, pickups, audioIndex, dexJson]) => {
       if (!rawLevel) {
         showGate(`第 ${EP} 集的地图还没解锁，先去读一读这一集的故事吧！`);
         return;
@@ -1978,6 +1986,7 @@
       state.level = level;
       state.sprites = Core.loadSprites(registry || null, level.spriteIds);
       state.pickup = Game.resolvePickup(pickups, EP);
+      state.dexJson = dexJson || null;
       if (level.pickup && typeof level.pickup === "object") {
         state.pickup = Object.assign({}, state.pickup, level.pickup);
       }

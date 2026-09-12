@@ -10,7 +10,7 @@ const read = (name) => readFileSync(join(here, name), 'utf8');
 test('game.html：按顺序引入 app-audio / tv-remote / battle-core / game.js 并加载 tv 与 battle 样式', () => {
   const html = read('game.html');
   const scripts = [...html.matchAll(/<script src="([^"?]+)(?:\?[^"]*)?"><\/script>/g)].map((m) => m[1]);
-  assert.deepEqual(scripts, ['app-audio.js', 'tv-remote.js', 'battle-core.js', 'game-core.js', 'game-input.js', 'game-audio.js', 'schedule-core.js', 'economy-core.js', 'farm-core.js', 'farm-ui.js', 'game.js']);
+  assert.deepEqual(scripts, ['app-audio.js', 'tv-remote.js', 'battle-core.js', 'game-core.js', 'game-input.js', 'game-audio.js', 'collection-core.js', 'schedule-core.js', 'economy-core.js', 'farm-core.js', 'farm-ui.js', 'game.js']);
   assert.match(html, /href=["']tv\.css(?:\?[^"']*)?["']/i, 'game.html must load tv.css');
   assert.match(html, /href=["']app-audio\.css(?:\?[^"']*)?["']/i, '音效模块样式');
   assert.match(html, /href=["']battle\.css(?:\?[^"']*)?["']/i, '复用 battle 的对话框与 toast 样式');
@@ -34,7 +34,7 @@ test('game.html：场景/HUD（星星/进度/护盾/词球/连击）/对话框/�
 test('game.js：只使用两个 battle 存储键，无危险 API', () => {
   const js = read('game.js');
   const keys = [...js.matchAll(/bookplay_[a-z_0-9]+/g)].map((m) => m[0]);
-  assert.deepEqual([...new Set(keys)], ['bookplay_battle_progress_v1', 'bookplay_battle_collection_v1']);
+  assert.deepEqual([...new Set(keys)], ['bookplay_battle_progress_v1', 'bookplay_battle_collection_v1', 'bookplay_dex_v1']);
   assert.doesNotMatch(js, /\beval\s*\(|new Function\s*\(|document\.write/);
 });
 

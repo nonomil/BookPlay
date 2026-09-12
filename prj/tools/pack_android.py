@@ -255,6 +255,7 @@ DATA_DIRS = [
     ("game/levels", CONTENT / "game" / "levels"),
     ("assets/game-sprites", CONTENT / "assets" / "game-sprites"),
     ("assets/game-farm", CONTENT / "assets" / "game-farm"),
+    ("assets/game-cards", CONTENT / "assets" / "game-cards"),
 ]
 
 

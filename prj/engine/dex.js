@@ -47,6 +47,7 @@
 
   function renderGrid(dexJson, dexState) {
     els.grid.textContent = "";
+    window.__dexAll = Array.isArray(dexJson && dexJson.dex) ? dexJson.dex : [];
     const list = (dexJson && Array.isArray(dexJson.dex) ? dexJson.dex : []);
     list.forEach((entry) => {
       const caught = Core.isCaught(dexState, entry.id);
@@ -89,11 +90,40 @@
     });
   }
 
+  function frameFor(entry, caught, dexState) {
+    if (!caught) return "";
+    const stars = Number((dexState.stars || {})[entry.id]) || 0;
+    if (stars >= 3 || entry.tier >= 3) return "jade";
+    if (entry.tier === 2) return "gold";
+    if (stars >= 2) return "silver";
+    return "bronze";
+  }
+
+  function evolutionLine(entry, caught) {
+    const evo = entry.evolution;
+    if (!evo) return "";
+    const all = (window.__dexAll || []).find((x) => x.id === evo.to);
+    const toName = (all && all.nameZh) || evo.to;
+    const wrap = document.createElement("p");
+    wrap.className = "dex-detail-evo";
+    wrap.textContent = `进化链：${entry.nameZh} → ${toName}（再掌握 ${evo.requireWords} 词 · 收集 ⭐${evo.requireStars}）`;
+    return wrap;
+  }
+
   function openDetail(entry, caught, seen, dexState) {
     const d = els.detail;
     d.textContent = "";
     const card = document.createElement("div");
     card.className = "dex-detail-card";
+    const frame = frameFor(entry, caught, dexState);
+    if (frame) {
+      const frameImg = document.createElement("img");
+      frameImg.className = "dex-detail-frame";
+      frameImg.src = `../assets/game-cards/frame-${frame}.png`;
+      frameImg.alt = "";
+      frameImg.addEventListener("error", () => frameImg.remove());
+      card.appendChild(frameImg);
+    }
     const img = document.createElement("img");
     img.src = spriteSrc(entry);
     img.alt = "";
@@ -115,6 +145,8 @@
       span.textContent = b;
       meta.appendChild(span);
     });
+    const evo = evolutionLine(entry, caught);
+    if (evo) card.appendChild(evo);
     const words = document.createElement("div");
     words.className = "dex-detail-words";
     (entry.words || []).forEach((w) => {
