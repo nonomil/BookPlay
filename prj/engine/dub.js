@@ -31,6 +31,17 @@
     : `storybook.html?series=${series}&book=${id}&ui=unified-v3`);
 
   const $ = (id) => document.getElementById(id);
+
+  /* 学习步日志：配音 = 输出环节（output）；诊断失败静默，绝不挡录音。 */
+  let outputLoggedFinish = false;
+  function logOutputStep(event, extra) {
+    try {
+      if (window.BookPlayStepLog) {
+        window.BookPlayStepLog.log(Object.assign({ ep: id, step: "output", event }, extra || {}));
+      }
+    } catch (_) { /* 诊断不挡学习 */ }
+  }
+
   const el = {
     back: $("dub-back"), title: $("dub-title"), sp: $("dub-sp"),
     theaterBtn: $("dub-theater-btn"), notice: $("dub-notice"),
@@ -459,6 +470,7 @@
     renderList();
     renderHeader();
     if (Core.dubCoverage(meta, epKey(), scenes).complete) {
+      if (!outputLoggedFinish) { outputLoggedFinish = true; logOutputStep("finish", { ok: true }); }
       setNotice("🎉 本集台词全部配完！点右上角“放映厅”，用自己的声音看一遍吧");
     }
   }
@@ -611,6 +623,7 @@
       return;
     }
     hasVideo = Boolean(book.video);
+    logOutputStep("enter");
     el.withVideoWrap.classList.toggle("hidden", !micReady || !hasVideo);
     if (store.memoryOnly) {
       setNotice("本设备不支持长期保存，这次录的配音关闭页面就没有啦");

@@ -991,6 +991,9 @@ function finishCheck() {
     const day = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, "0")}-${String(now.getDate()).padStart(2, "0")}`;
     d[cid] = { done: true, words: wordsRight, puzzles: puzzlesRight, quiz: quizRight, at: now.getTime(), day };
     localStorage.setItem(DRILL_KEY, JSON.stringify(d));
+    try {
+      if (window.BookPlayStepLog) window.BookPlayStepLog.log({ ep: 0, cid, step: "drill", event: "finish", ok: true });
+    } catch (_) { /* 诊断不挡学习 */ }
     $("d-finish").innerHTML = `
       <h2>🎉 本辑巩固通过！</h2>
       <p>下一辑已解锁</p>
@@ -1044,6 +1047,9 @@ async function init() {
   $("d-title").textContent = `${pack.title.zh} · 巩固`;
   renderSP();
   buildAll();
+  try {
+    if (window.BookPlayStepLog) window.BookPlayStepLog.log({ ep: 0, cid, step: "drill", event: "enter" });
+  } catch (_) { /* 诊断不挡学习 */ }
   const resume = (params.get("quizId") || params.get("wordId")) ? takeDrillResume() : null;
   if (resume) {
     wordsRight = Math.max(0, Math.min(wordsTotal, Number(resume.wordsRight) || 0));

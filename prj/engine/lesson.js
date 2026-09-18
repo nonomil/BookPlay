@@ -10,6 +10,19 @@ const episode = Math.max(1, Math.min(108, Number.parseInt(params.get("ep"), 10) 
 const episodeKey = `ep${String(episode).padStart(3, "0")}`;
 const lessonWordsMode = params.get("mode") === "words" || document.body.classList.contains("lesson-words-body");
 const WORD_STUDY_KEY = "bookplay_lesson_word_study_v1";
+/* 学习步日志：words 模式记 practice，quiz 模式记 check；诊断失败静默，绝不挡学习。 */
+let stepLoggedEnter = false;
+let stepLoggedFinish = false;
+function logLessonStep(step, event, extra) {
+  try {
+    if (window.BookPlayStepLog) {
+      window.BookPlayStepLog.log(Object.assign({ ep: episode, step, event }, extra || {}));
+    }
+  } catch (_) { /* 诊断不挡学习 */ }
+}
+window.addEventListener("pagehide", () => {
+  if (stepLoggedEnter && !stepLoggedFinish) logLessonStep(lessonWordsMode ? "practice" : "check", "quit");
+});
 const STUDY_SESSION_KEY = "bookplay_lesson_session_v2";
 const MAP_PROGRESS_KEY = "bookplay_adv_progress";
 // The local server maps these keys to natural Edge-TTS neural voices.  Keeping
@@ -1290,6 +1303,7 @@ function renderWordReviewPanel(cards, storyData) {
 }
 
 function markWordStudyComplete() {
+  if (!stepLoggedFinish) { stepLoggedFinish = true; logLessonStep("practice", "finish"); }
   const completedAt = new Date().toISOString();
   if (studySession) {
     studySession.studyDone = true;
@@ -1386,6 +1400,10 @@ function finishLesson(empty = false) {
     ? core.evaluateLessonResult(correct, scoreTotal)
     : { passed: scoreTotal > 0 && correct / scoreTotal >= 0.7, ratio: scoreTotal ? correct / scoreTotal : 0 };
   const passed = !empty && outcome.passed;
+  if (!stepLoggedFinish) {
+    stepLoggedFinish = true;
+    logLessonStep("check", "finish", { ok: passed, score: scoreTotal ? `${correct}/${scoreTotal}` : null });
+  }
   saveCompletion(passed);
   showGameInvite(passed);
   ui.progress.textContent = "已完成";
@@ -1496,6 +1514,7 @@ async function start() {
   if (params.get("retry") === "1" || (!lessonWordsMode && studySession.passed)) resetQuizSession();
   if (lessonWordsMode) {
     const wordCount = renderWordReviewPanel(cards, story);
+    if (!stepLoggedEnter) { stepLoggedEnter = true; logLessonStep("practice", "enter"); }
     if (ui.story) {
       ui.story.hidden = false;
       ui.story.setAttribute("aria-busy", "false");
@@ -1536,6 +1555,7 @@ async function start() {
     finishLesson(true);
     return;
   }
+  if (!stepLoggedEnter) { stepLoggedEnter = true; logLessonStep("check", "enter"); }
   restoreQuizPosition();
   if (current >= questions.length) return;
   renderQuestion();

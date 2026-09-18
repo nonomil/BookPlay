@@ -1550,14 +1550,22 @@ body.map-terminal .terminal-stage {
   background: rgba(18, 24, 44, 0.96);
 }
 
-#map-settings .app-settings-panel button {
+#map-settings .app-settings-panel button,
+#map-settings .app-settings-panel a {
   min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 10px;
   border: 1px solid rgba(255, 215, 106, 0.55);
   background: rgba(255, 215, 106, 0.16);
   color: #ffd76a;
   font: 700 14px/1.2 "PingFang SC", "Microsoft YaHei", sans-serif;
   cursor: pointer;
+}
+
+#map-settings .app-settings-panel a {
+  text-decoration: none;
 }
 
 #map-audio-float {

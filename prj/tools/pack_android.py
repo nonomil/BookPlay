@@ -36,6 +36,8 @@ ENGINE_FILES = [
     "home.html", "home.js", "home.css",
     "shelf.html", "shelf.js",
     "wala.html", "wala.js", "wala.css",
+    # 学习步日志 + 家长报告（P0 学习诊断，只读本机数据）
+    "step-log-core.js", "step-log.js", "parent-report.html", "parent-report.js",
     "storybook.html", "storybook.js", "storybook.css", "storybook-v3.css",
     "style.css",
     # The lesson page is part of the Android learning loop. Keep its shared

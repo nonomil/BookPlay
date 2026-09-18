@@ -114,6 +114,8 @@ let listenMode = false;
 let audioOnlyListen = false;
 let listenSession = null;
 let listenBefore = null;
+let watchEntered = false;
+let watchLoggedFinish = false;
 let studyClock = window.BookPlayStudySession
   ? window.BookPlayStudySession.createStudySession({
     thresholdMs: Number.isFinite(studyThresholdQuery) && studyThresholdQuery > 0
@@ -487,6 +489,7 @@ function updateListenBar() {
   if (el.listenPause) el.listenPause.textContent = state.status === "paused" ? "继续" : (state.status === "done" ? "完成" : "暂停");
 }
 function showListenDone() {
+  markWatchFinished();
   stopSeq();
   setAvatar(false);
   if (el.video) el.video.pause();
@@ -736,6 +739,23 @@ function saveProgress(done) {
   const total = (rawNodes || (book && book.nodes) || []).length;
   storage.saveEpisodeProgress(ep, rawIndex() + 1, total, done);
 }
+
+/* 学习步日志：只记事实（enter/finish/quit），诊断失败静默，绝不挡学习。 */
+function logWatchStep(event) {
+  try {
+    if (window.BookPlayStepLog) {
+      window.BookPlayStepLog.log({ ep, path: listenMode || listenQuery ? "listen" : "read", step: "watch", event });
+    }
+  } catch (_) { /* 诊断不挡学习 */ }
+}
+function markWatchFinished() {
+  if (watchLoggedFinish) return;
+  watchLoggedFinish = true;
+  logWatchStep("finish");
+}
+window.addEventListener("pagehide", () => {
+  if (watchEntered && !watchLoggedFinish) logWatchStep("quit");
+});
 
 /* ---------- 朗读序列引擎（EN / EN+中） ---------- */
 function stopSeq() {
@@ -2013,6 +2033,7 @@ function showFreezeQuiz(q, onDone, meta = {}) {
 }
 function finishEpisode() {
   if (listenMode) { showListenDone(); return; }
+  markWatchFinished();
   stopSeq();
   // Story playback is only preparation.  The map is unlocked by the
   // knowledge-consolidation pass in lesson.js, so keep this episode in a
@@ -2044,6 +2065,7 @@ function finishEpisode() {
 function startEndQuiz() {
   if (listenMode) { showListenDone(); return; }
   if (passMode === "story") { finishEpisode(); return; }
+  markWatchFinished();
   const extras = [];
   if (learnLevel === "max") {
     officialList().forEach((w) => {
@@ -2671,6 +2693,7 @@ if (ep >= 1) {
     }
     el.map.classList.add("hidden");
     el.player.classList.remove("hidden");
+    if (!reviewContext) { watchEntered = true; logWatchStep("enter"); }
         startStudyHeartbeat();
         if (listenQuery) {
           enterListenMode({
