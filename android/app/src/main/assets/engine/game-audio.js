@@ -79,6 +79,9 @@
     const onState = typeof opts.onState === "function" ? opts.onState : () => {};
     const assetPrefix = opts.assetPrefix == null ? "../" : String(opts.assetPrefix);
     const ttsEndpoint = opts.ttsEndpoint || "/api/tts";
+    const allowTts = opts.allowTts != null
+      ? Boolean(opts.allowTts)
+      : !(typeof document !== "undefined" && document.documentElement && document.documentElement.hasAttribute("data-handheld"));
     let generation = 0;
     let active = null;
     let lastRequest = null;
@@ -135,6 +138,10 @@
       lastRequest = input;
       const entry = findEntry(index, request.ref, request.text, request.lang);
       const staticSrc = srcFor(entry, assetPrefix);
+      if (!staticSrc && !allowTts) {
+        report("unavailable", { reason: "offline-no-static", ref: request.ref, text: request.text, lang: request.lang, source: "offline" });
+        return Promise.resolve(false);
+      }
       const url = staticSrc || `${ttsEndpoint}?voice=${langKey(request.lang)}&text=${encodeURIComponent(request.text)}`;
       const source = staticSrc ? "static" : "tts-fallback";
       report("loading", { ref: request.ref, text: request.text, lang: request.lang, url, source });

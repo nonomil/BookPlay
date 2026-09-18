@@ -485,6 +485,31 @@
     });
   }
 
+  const JTTW_COLLECTION_RANGES = Object.freeze([
+    ["c01", 1, 7], ["c02", 8, 13], ["c03", 14, 23], ["c04", 24, 31],
+    ["c05", 32, 39], ["c06", 40, 48], ["c07", 49, 54], ["c08", 55, 63],
+    ["c09", 64, 71], ["c10", 72, 79], ["c11", 80, 91], ["c12", 92, 99],
+    ["c13", 100, 108],
+  ]);
+
+  function collectionRangeForEpisode(episode) {
+    const n = Math.max(1, Math.min(108, Number.parseInt(episode, 10) || 1));
+    return JTTW_COLLECTION_RANGES.find(([, from, to]) => n >= from && n <= to) || JTTW_COLLECTION_RANGES[0];
+  }
+
+  function collectionIdForEpisode(episode) {
+    return collectionRangeForEpisode(episode)[0];
+  }
+
+  function isCollectionLastEpisode(episode) {
+    const n = Math.max(1, Math.min(108, Number.parseInt(episode, 10) || 1));
+    return n === collectionRangeForEpisode(episode)[2];
+  }
+
+  function drillHrefForEpisode(episode) {
+    return "drill.html?c=" + collectionIdForEpisode(episode);
+  }
+
   function getNextHref(episode) {
     const current = Math.max(1, Math.min(108, Number.parseInt(episode, 10) || 1));
     return current >= 108 ? "map.html" : `wala.html?ep=${current + 1}`;
@@ -515,5 +540,8 @@
     buildSentenceFillQuestion,
     buildListenPictureQuestions,
     getNextHref,
+    collectionIdForEpisode,
+    isCollectionLastEpisode,
+    drillHrefForEpisode,
   };
 });

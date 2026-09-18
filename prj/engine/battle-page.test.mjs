@@ -9,9 +9,12 @@ const read = (name) => readFileSync(join(here, name), 'utf8');
 
 test('battle.html：按顺序引入 tv-remote / quiz / battle-core / battle.js 并加载 tv 样式', () => {
   const html = read('battle.html');
-  const scripts = [...html.matchAll(/<script src="([^"?]+)(?:\?[^"]*)?"><\/script>/g)].map((m) => m[1]);
+  const scripts = [...html.matchAll(/<script[^>]*\ssrc="([^"?]+)(?:\?[^"]*)?"/g)]
+    .map((m) => m[1].replace(/^\.\//, ''))
+    .filter((src) => src !== 'native-key.js' && src !== 'handheld-controls.js' && src !== 'content-gate.js');
   assert.deepEqual(scripts, ['app-audio.js', 'tv-remote.js', 'episode-vocab-quiz.js', 'battle-core.js', 'game-core.js', 'game-audio.js', 'collection-core.js', 'battle.js']);
   assert.match(html, /href=["']tv\.css(?:\?[^"']*)?["']/i, 'battle.html must load tv.css');
+  assert.match(html, /href=["']handheld\.css(?:\?[^"']*)?["']/i);
   assert.match(html, /href=["']battle\.css(?:\?[^"']*)?["']/i);
 });
 
@@ -22,7 +25,7 @@ test('battle.html：六阶段骨架与核心控件齐备', () => {
     'battle-shields', 'battle-progress', 'battle-combo', 'battle-exit',
     'battle-bossbar', 'battle-dialogue', 'battle-preview', 'battle-orbs',
     'battle-quiz', 'battle-result', 'battle-pause', 'battle-gate', 'battle-toast',
-    'battle-log', 'battle-boss-hp-fill', 'battle-dialogue-replay',
+    'battle-log', 'battle-boss-hp-fill', 'battle-dialogue-replay', 'battle-race', 'battle-race-fill', 'battle-skip',
   ]) {
     assert.match(html, new RegExp(`id="${id}"`), id);
   }
@@ -31,7 +34,7 @@ test('battle.html：六阶段骨架与核心控件齐备', () => {
 test('battle.js：只使用两个 battle 存储键，无危险 API', () => {
   const js = read('battle.js');
   const keys = [...js.matchAll(/bookplay_[a-z_0-9]+/g)].map((m) => m[0]);
-  assert.deepEqual([...new Set(keys)], ['bookplay_battle_progress_v1', 'bookplay_battle_collection_v1', 'bookplay_dex_v1']);
+  assert.deepEqual([...new Set(keys)].sort(), ['bookplay_battle_collection_v1', 'bookplay_battle_progress_v1', 'bookplay_dex_v1', 'bookplay_weak_v1']);
   assert.doesNotMatch(js, /\beval\s*\(|new Function\s*\(|document\.write/);
 });
 
@@ -74,14 +77,22 @@ test('Android 战斗副本完成后写回地图 complete 并带 from=battle 返�
   const androidPath = join(dirname(here), '..', 'android', 'app', 'src', 'main', 'assets', 'engine', 'battle.js');
   const js = readFileSync(androidPath, 'utf8');
   assert.match(js, /mapStage:\s*FROM_GAME \? "complete" : prev\.mapStage/);
-  assert.match(js, /FROM_GAME \? `game\.html\?ep=\$\{EP\}&from=battle`/);
+  assert.match(js, /FROM_LESSON \? `game\.html\?ep=\$\{EP\}&from=lesson` : `game\.html\?ep=\$\{EP\}&from=battle`/);
 });
 
 test('结算下一集进入下一集大地图，不直进 battle.html', () => {
   const js = read('battle.js');
   assert.match(js, /下一集/);
   assert.doesNotMatch(js, /location\.href = `battle\.html\?ep=\$\{EP \+ 1\}`/);
-  assert.match(js, /FROM_GAME \? `game\.html\?ep=\$\{EP \+ 1\}` : "map\.html"/);
+  assert.match(js, /game\.html\?ep=\$\{EP \+ 1\}\$\{FROM_LESSON \? "&from=lesson" : ""\}/);
+});
+
+test('from=lesson 视为来自地图，返回 game.html?from=lesson', () => {
+  const js = read('battle.js');
+  assert.match(js, /FROM_LESSON = params.get\("from"\) === "lesson"/);
+  assert.match(js, /FROM_GAME = params.get\("from"\) === "game" \|\| FROM_LESSON/);
+  assert.match(js, /function mapUrl\(/);
+  assert.match(js, /FROM_LESSON \? `game\.html\?ep=\$\{EP\}&from=lesson`/);
 });
 
 test('从大地图进入时 Boss 打完跳过关底 quiz 直接结算', () => {
@@ -121,6 +132,29 @@ test("Boss 擂台按词格轮换题型并复用 game-core 跟打", () => {
   assert.match(js, /keyboardOk/);
   assert.match(css, /\.battle-typing-track/);
   assert.match(css, /\.battle-listen/);
+});
+
+test("本集冻 10 词，Boss 不会不算错词", () => {
+  const js = read("battle.js");
+  const html = read("battle.html");
+  assert.match(js, /function freezeLevel\(/);
+  assert.match(js, /function skipBossWord\(/);
+  assert.match(js, /skipped: true/);
+  assert.match(html, /id="battle-skip"/);
+});
+
+test("Boss 抢答窗：10 秒条、妖怪也会答、超时走 applyBossMiss", () => {
+  const js = read("battle.js");
+  const css = read("battle.css");
+  const html = read("battle.html");
+  assert.match(js, /function startRace\(/);
+  assert.match(js, /function finishRace\(/);
+  assert.match(js, /function applyBossMiss\(/);
+  assert.match(js, /Core\.resolveRaceEvent/);
+  assert.match(js, /Core\.rivalThinkMs/);
+  assert.match(js, /妖怪抢先答对了/);
+  assert.match(html, /id="battle-race"/);
+  assert.match(css, /\.battle-race-fill/);
 });
 
 test("Boss 阶段是宝可梦式擂台：椭圆台、近大远小、回合条", () => {

@@ -9,9 +9,12 @@ const read = (name) => readFileSync(join(here, name), 'utf8');
 
 test('game.html：按顺序引入 app-audio / tv-remote / battle-core / game.js 并加载 tv 与 battle 样式', () => {
   const html = read('game.html');
-  const scripts = [...html.matchAll(/<script src="([^"?]+)(?:\?[^"]*)?"><\/script>/g)].map((m) => m[1]);
+  const scripts = [...html.matchAll(/<script[^>]*\ssrc="([^"?]+)(?:\?[^"]*)?"/g)]
+    .map((m) => m[1].replace(/^\.\//, ''))
+    .filter((src) => src !== 'native-key.js' && src !== 'handheld-controls.js' && src !== 'content-gate.js');
   assert.deepEqual(scripts, ['app-audio.js', 'tv-remote.js', 'battle-core.js', 'game-core.js', 'game-input.js', 'game-audio.js', 'collection-core.js', 'schedule-core.js', 'economy-core.js', 'farm-core.js', 'farm-ui.js', 'game.js']);
   assert.match(html, /href=["']tv\.css(?:\?[^"']*)?["']/i, 'game.html must load tv.css');
+  assert.match(html, /href=["']handheld\.css(?:\?[^"']*)?["']/i);
   assert.match(html, /href=["']app-audio\.css(?:\?[^"']*)?["']/i, '音效模块样式');
   assert.match(html, /href=["']battle\.css(?:\?[^"']*)?["']/i, '复用 battle 的对话框与 toast 样式');
   assert.match(html, /href=["']game\.css(?:\?[^"']*)?["']/i);
@@ -22,7 +25,7 @@ test('game.html：场景/HUD（星星/进度/护盾/词球/连击）/对话框/�
   for (const id of [
     'game-world', 'game-backdrop', 'game-entities', 'game-projectiles', 'game-particles',
     'game-stars', 'game-progress', 'game-shields', 'game-carried', 'game-combo',
-    'game-hint', 'game-exit', 'game-banner', 'game-banner-title', 'game-supports', 'game-hintcard',
+    'game-hint', 'game-exit', 'game-banner', 'game-banner-title', 'game-supports', 'game-hintcard', 'game-typepad',
     'game-joystick', 'game-route', 'game-dialogue', 'game-dialogue-face', 'game-dialogue-kicker', 'game-dialogue-name',
     'game-dialogue-en', 'game-dialogue-zh', 'game-dialogue-choices', 'game-dialogue-next', 'game-dialogue-close',
     'game-bossgate', 'game-pause', 'game-gate', 'game-toast',
@@ -34,7 +37,7 @@ test('game.html：场景/HUD（星星/进度/护盾/词球/连击）/对话框/�
 test('game.js：只使用两个 battle 存储键，无危险 API', () => {
   const js = read('game.js');
   const keys = [...js.matchAll(/bookplay_[a-z_0-9]+/g)].map((m) => m[0]);
-  assert.deepEqual([...new Set(keys)], ['bookplay_battle_progress_v1', 'bookplay_battle_collection_v1', 'bookplay_dex_v1']);
+  assert.deepEqual([...new Set(keys)].sort(), ['bookplay_battle_collection_v1', 'bookplay_battle_progress_v1', 'bookplay_dex_v1', 'bookplay_weak_v1']);
   assert.doesNotMatch(js, /\beval\s*\(|new Function\s*\(|document\.write/);
 });
 
@@ -85,15 +88,17 @@ test('game.js：主角与小怪使用提速后的行走档位，并按运动方�
   assert.match(js, /setMonsterDir/);
   assert.match(js, /directionFromDelta/);
   assert.match(coreJs, /hero:\s*0\.6/);
-  assert.match(coreJs, /monsterWander:\s*0\.22/);
-  assert.match(coreJs, /monsterChase:\s*0\.45/);
+  assert.match(coreJs, /monsterWander:\s*0\.12/);
+  assert.match(coreJs, /monsterChase:\s*0\.28/);
+  assert.match(js, /monsterIntent/);
+  assert.match(js, /windupUntil/);
   assert.match(js, /setHeroDir\(moved\.facing\)/);
   assert.match(js, /setMonsterDir\(m, Game\.directionFromDelta/);
 });
 
 test('开战 URL skip 含 quiz，避免战斗页再跑整套关底测验', () => {
   const js = read('game.js');
-  assert.match(js, /skip=intro,preview,waves,quiz&from=game/);
+  assert.match(js, /skip=intro,preview,waves,quiz&from=\$\{FROM_LESSON \? "lesson" : "game"\}/);
 });
 
 test('from=lesson 被读取，且不当成 from=battle 跳过开场', () => {
@@ -104,11 +109,39 @@ test('from=lesson 被读取，且不当成 from=battle 跳过开场', () => {
   assert.doesNotMatch(js, /shouldAutoIntro\(FROM_LESSON/);
 });
 
+test('from=lesson 退出和通关回到 lesson.html，开战带 from=lesson', () => {
+  const js = read('game.js');
+  assert.match(js, /function leaveUrl\(/);
+  assert.match(js, /FROM_LESSON \? `lesson\.html\?ep=\$\{EP\}` : "map\.html"/);
+  assert.match(js, /from=\$\{FROM_LESSON \? "lesson" : "game"\}/);
+  assert.match(js, /navigateGame\(leaveUrl\(\)\)/);
+});
+
 test('quiz NPC 优先使用本集官方测验选项', () => {
   const js = read('game.js');
   assert.match(js, /line\.options/);
   assert.match(js, /function resolveNpcAuthoredChoice\(/);
   assert.match(js, /opt\.correct/);
+});
+
+test('本集冻最多 10 词，问答可点不会且不算错', () => {
+  const js = read('game.js');
+  assert.match(js, /function freezeLevel\(/);
+  assert.match(js, /Game\.freezeSessionCards/);
+  assert.match(js, /Game\.applyFrozenLevel/);
+  assert.match(js, /Game\.SESSION_CARD_LIMIT/);
+  assert.match(js, /function skipNpcChoice\(/);
+  assert.match(js, /skipped: true/);
+  assert.match(js, /sessionCards \|\| state\.level\.previewWords/);
+});
+
+test('空手点小妖只预习词卡，不投掷', () => {
+  const js = read('game.js');
+  assert.match(js, /function previewMonsterWord\(/);
+  assert.match(js, /if \(!state\.carried\) \{\s*previewMonsterWord\(monster\);/);
+  assert.match(js, /near && near\.kind === "monster"\) previewMonsterWord\(near\.ref\)/);
+  assert.doesNotMatch(js, /先走到中文词球上捡起一颗/);
+  assert.doesNotMatch(js, /先捡一颗中文词球/);
 });
 
 test('持球时可用键盘跟打英文并自动投向对应小怪', () => {
@@ -171,7 +204,8 @@ test('game.js：主角与小怪的行走、待机与攻击使用独立精灵；�
   assert.match(js, /setMonsterPose\(monster, "attack"\)/);
   assert.match(js, /m\.moving = true;\s*setMonsterDir\(/);
   assert.match(js, /m\.moving = false;\s*setMonsterDir\([\s\S]*?setMonsterPose\(m, "idle"\)/);
-  assert.match(js, /monsterAttack\(m\);\s*m\.attackCd = now \+ ATTACK_CD;\s*return;/, '小怪出招帧不得继续走位');
+  assert.match(js, /windupUntil/);
+  assert.match(js, /if \(stillClose && !state\.locked\) monsterAttack\(m\)/, '小怪出招帧不得继续走位');
 });
 
 test('game.js：实体步进调用视口补偿，横竖移动在 16:9 下不变速', () => {
@@ -245,6 +279,75 @@ test('game.js：游戏语音使用静态索引适配器，支持重听与下一�
   assert.match(js, /function kickVoice\(/);
   assert.match(js, /voicePending/);
   assert.match(js, /BookPlayAudio\?\.unlock/);
+  assert.match(js, /pickups, dexJson, audioIndex/);
+  assert.doesNotMatch(js, /pickups, audioIndex, dexJson/);
+});
+
+test('game.js：type-lock 未跟打完不投掷，gourd-seek 走 seekAutoAim', () => {
+  const js = read('game.js');
+  assert.match(js, /Game\.throwLocked\(state\.playVerb, state\.carried, state\.carried\.term\)/);
+  assert.match(js, /function renderTypePad\(/);
+  assert.match(js, /Game\.seekAutoAim\(state\.playVerb, state\.buffs\)/);
+  assert.match(js, /attackUntil = performance\.now\(\) \+ 620/);
+  assert.match(js, /playVerb === "type-lock"/);
+  assert.match(js, /playVerb === "gourd-seek"/);
+  assert.match(js, /playVerb === "fan-blow"/);
+  assert.match(js, /playVerb === "fire-ward"/);
+  assert.match(js, /Game\.chooseFanTarget/);
+  assert.match(js, /Game\.fireTooClose/);
+  assert.match(js, /function updatePlotVfx\(/);
+  assert.match(js, /is-burning/);
+  assert.match(js, /is-fan-aim/);
+  const css = read('game.css');
+  assert.match(css, /\.game-entity\.is-burning/);
+  assert.match(css, /\.game-entity\.is-fan-aim/);
+  const ep8 = read('../data/game/levels/ep8.json');
+  assert.match(ep8, /"playVerb": "type-lock"/);
+  assert.match(read('../data/game/levels/ep4.json'), /"playVerb": "type-lock"/);
+  assert.doesNotMatch(read('../data/game/levels/ep9.json'), /"playVerb": "type-lock"/);
+  const ep40 = read('../data/game/levels/ep40.json');
+  assert.match(ep40, /"playVerb": "gourd-seek"/);
+  assert.match(read('../data/game/levels/ep29.json'), /"playVerb": "gourd-seek"/);
+  assert.doesNotMatch(read('../data/game/levels/ep41.json'), /"playVerb": "gourd-seek"/);
+  assert.match(read('../data/game/levels/ep2.json'), /"playVerb": "listen-rings"/);
+  assert.match(read('../data/game/levels/ep73.json'), /"playVerb": "listen-rings"/);
+  assert.match(read('../data/game/levels/ep77.json'), /"playVerb": "fan-blow"/);
+  assert.match(read('../data/game/levels/ep25.json'), /"playVerb": "fan-blow"/);
+  assert.match(read('../data/game/levels/ep50.json'), /"playVerb": "fire-ward"/);
+  assert.match(read('../data/game/levels/ep79.json'), /"playVerb": "fire-ward"/);
+  assert.match(read('../data/game/levels/ep74.json'), /"playVerb": "listen-rings"/);
+  assert.doesNotMatch(read('../data/game/levels/ep14.json'), /"playVerb": "listen-rings"/);
+  assert.match(css, /\.game-typepad/);
+  assert.match(css, /\.game-typekey/);
+});
+
+test('game.js：命中特效与托盘图标走键控 PNG，不再纯 emoji 星星', () => {
+  const js = read('game.js');
+  const css = read('game.css');
+  const core = read('game-core.js');
+  assert.match(js, /const dist = Math\.hypot\(dx, dy\);/);
+  assert.match(js, /function spawnFx\(/);
+  assert.match(js, /fx-staff-impact\.png/);
+  assert.match(js, /fx-star-burst\.png/);
+  assert.doesNotMatch(js, /spawnFx\("bonk"/);
+  assert.match(js, /function updateTargetArrow\(/);
+  assert.match(js, /pose === "hurt"/);
+  assert.match(core, /support-peach\.png/);
+  assert.match(css, /\.game-fx-stamp/);
+  assert.match(css, /\.game-target-arrow/);
+});
+
+test('game.js：listen-rings 走 game-core playVerb，走入匹配光环才收怪', () => {
+  const js = read('game.js');
+  assert.match(js, /Game\.resolvePlayVerb\(rawLevel\)/);
+  assert.match(js, /function syncListenRings\(/);
+  assert.match(js, /function updateListenRings\(/);
+  assert.match(js, /Game\.chooseListenRing\(state\.listenRings, state\.listenSpoken\)/);
+  assert.match(js, /Game\.listenRingWalkHit\(state\.hero, hit, ORB_PICKUP\)/);
+  const css = read('game.css');
+  assert.match(css, /\.game-listen-ring/);
+  const ep2 = read('../data/game/levels/ep2.json');
+  assert.match(ep2, /"playVerb": "listen-rings"/);
 });
 
 test('game.js：对话、暂停和切页统一停止静态语音与 TTS 回退', () => {
@@ -292,8 +395,8 @@ test('Android 大地图运行副本与浏览器版共享慢速四向/攻防契�
   assert.match(androidGame, /function tileCamera\(/);
   // 2026-09-12 用户反馈提速后的行走档位（0.6 屏/秒档）
   assert.match(androidCore, /hero:\s*0\.6/);
-  assert.match(androidCore, /monsterWander:\s*0\.22/);
-  assert.match(androidCore, /monsterChase:\s*0\.45/);
+  assert.match(androidCore, /monsterWander:\s*0\.12/);
+  assert.match(androidCore, /monsterChase:\s*0\.28/);
   assert.match(androidCss, /\[hidden\]\s*\{[^}]*display\s*:\s*none\s*!important/);
   assert.match(androidCss, /width\s*:\s*400%/);
 });
@@ -324,13 +427,17 @@ test('game.js：六种西游支援与 NPC 门控，大地图无快卡', () => {
   assert.doesNotMatch(coreJs, /flashcard/);
 });
 
-test('game.js：桃子自动飞向对应英文小怪，每局打乱词，撞到后有更长无敌', () => {
+test('game.js：词球飞向点中的小妖，词牌不对则弹回；葫芦才自动找对怪', () => {
   const js = read('game.js');
+  const coreJs = read('game-core.js');
   assert.match(js, /function pickRunWords\(/);
   assert.match(js, /function matchingMonster\(/);
-  assert.match(js, /const matched = matchingMonster\(state\.carried\.zh\)/);
+  assert.match(js, /Game\.chooseThrowTarget\(monster, matched, aim\.armed\)/);
+  assert.match(js, /Game\.wordTagHits\(state\.carried\.zh, target\.zh\)/);
+  assert.doesNotMatch(js, /let target = matched \|\| monster/);
+  assert.match(coreJs, /function chooseThrowTarget\(/);
   assert.match(js, /HERO_INVULN = 2400/);
-  assert.match(js, /ATTACK_CD = 3600/);
+  assert.match(js, /ATTACK_CD = Game\.MONSTER_AI\.attackCd/);
   assert.match(js, /SHOT_HIT = 0\.18 \* NU/);
 });
 

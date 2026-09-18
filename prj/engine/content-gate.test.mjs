@@ -18,6 +18,7 @@ function loadGate(fetchImpl) {
     document,
     fetch: fetchImpl,
     globalThis: root,
+    URL,
   });
   runInContext(source, context);
   return root.BookPlayContentGate;
@@ -29,6 +30,20 @@ function jsonResponse(payload, ok = true) {
     json: async () => payload,
   });
 }
+
+test("click targets cover lesson, game, dub, parent and collection drill", () => {
+  const gate = loadGate(() => jsonResponse(null, false));
+  const game = gate.targetFromUrl("game.html?ep=8");
+  assert.equal(game.series, "jttw");
+  assert.equal(game.id, 8);
+  assert.match(String(game.href), /game\.html\?ep=8/);
+  assert.equal(gate.targetFromUrl("lesson.html?ep=2").id, 2);
+  assert.equal(gate.targetFromUrl("dub.html?ep=3").id, 3);
+  assert.equal(gate.targetFromUrl("parent.html?ep=1").id, 1);
+  assert.equal(gate.targetFromUrl("drill.html?c=c02").id, 8);
+  assert.equal(gate.targetFromUrl("drill.html?ep=3"), null);
+  assert.equal(gate.targetFromUrl("shelf.html"), null);
+});
 
 test("starter manifest keeps first titles of all three lines open", async () => {
   const gate = loadGate((url) => {

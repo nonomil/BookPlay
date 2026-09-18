@@ -170,6 +170,12 @@ check(/\.w-frame\s*\{[^}]*aspect-ratio:\s*16\s*\/\s*9/.test(css),
   "the media frame must preserve the 16:9 picture area instead of filling a tall viewport");
 check(/<div class="w-frame">\s*<img[^>]*id="w-img"[^>]*>\s*<video[^>]*id="w-video"[^>]*><\/video>\s*<div id="w-cards-left"><\/div>\s*<div id="w-cards"><\/div>\s*<div id="w-vocab-peek"[^>]*><\/div>\s*<div class="w-dock">/.test(html),
   "word cards and subtitle dock must be anchored inside the visible media frame");
+check(/<video id="w-video" playsinline preload="none">/.test(html),
+  "handheld video must not probe Range duration via preload=metadata");
+check(!/backdrop-filter/.test(css),
+  "Servo ignores blur; speech and chrome must use opaque fills instead of backdrop-filter");
+check(/\.w-speech\s*\{[^}]*background:\s*rgba\(253,\s*252,\s*247,\s*0\.96\)/.test(css),
+  "subtitles must stay readable on video without relying on blur");
 const arrowRule = css.match(/\.w-arrow\s*\{[^}]*\}/)?.[0] || "";
 const avatarRule = css.match(/\.w-avatar\s*\{[^}]*\}/)?.[0] || "";
 check(/aspect-ratio:\s*1\s*\/\s*1/.test(arrowRule),

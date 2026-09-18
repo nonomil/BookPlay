@@ -1401,10 +1401,15 @@ function finishLesson(empty = false) {
       ? "通过条件已达成，下一集和故事奖励已经解锁。"
       : `正确率 ${(outcome.ratio * 100).toFixed(0)}%，先复习错题再挑战一次。`;
   const retryHref = `lesson.html?ep=${episode}&retry=1`;
+  const drillHref = core.drillHrefForEpisode(episode);
+  const collectionClear = passed && core.isCollectionLastEpisode(episode);
+  const drillLink = collectionClear
+    ? `<a class="primary-button" href="${drillHref}">★ 去本辑巩固</a>`
+    : `<a class="result-link" href="${drillHref}">本辑巩固</a>`;
   const nextAction = passed
-    ? `<p class="result-game-invite">本集单词已经准备好。上方弹窗可以进入降妖记，也可以暂时跳过。</p><a class="result-link" href="${nextHref}">继续${nextLabel}</a>`
+    ? `<p class="result-game-invite">本集单词已经准备好。上方弹窗可以进入降妖记，也可以暂时跳过。</p>${collectionClear ? drillLink : `<a class="result-link" href="${nextHref}">继续${nextLabel}</a>`}`
     : `<a class="primary-button" href="${retryHref}">再测一次</a>`;
-  ui.card.innerHTML = `<div class="result-state"><p class="question-meta">本集知识巩固${passed ? "完成" : "结果"}</p><div class="result-score">${score}</div><h2>${resultTitle}</h2><p>${resultCopy}</p><div class="result-actions">${nextAction}<a class="result-link" href="parent.html?ep=${episode}">👨‍👩‍👧 亲子时间</a><a class="result-link" href="drill.html?ep=${episode}">复习错题</a><a class="result-link" href="shelf.html">回选集</a></div></div>`;
+  ui.card.innerHTML = `<div class="result-state"><p class="question-meta">本集知识巩固${passed ? "完成" : "结果"}</p><div class="result-score">${score}</div><h2>${resultTitle}</h2><p>${resultCopy}</p><div class="result-actions">${nextAction}${collectionClear ? `<a class="result-link" href="${nextHref}">继续${nextLabel}</a>` : drillLink}<a class="result-link" href="parent.html?ep=${episode}">👨‍👩‍👧 亲子时间</a><a class="result-link" href="${retryHref}">复习错题</a><a class="result-link" href="shelf.html">回选集</a></div></div>`;
   renderEpisodeReward(passed);
 }
 

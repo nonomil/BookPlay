@@ -20,6 +20,7 @@
   let economyJson = null;
   let state = null;
   let els = null;
+  let farmAudio = null;
 
   function readStore(key) {
     try { return JSON.parse(localStorage.getItem(key) || "null"); } catch (_) { return null; }
@@ -34,6 +35,43 @@
 
   function debugState() {
     return window.BookPlayGameDebug || null;
+  }
+
+  function handheldOffline() {
+    try {
+      return document.documentElement.hasAttribute("data-handheld");
+    } catch (_) {
+      return false;
+    }
+  }
+
+  function resolveFarmAudio() {
+    const dbg = debugState();
+    if (dbg && dbg.audio && typeof dbg.audio.play === "function") return dbg.audio;
+    if (farmAudio) return farmAudio;
+    if (window.BookPlayGameAudio && typeof window.BookPlayGameAudio.createGameAudio === "function") {
+      farmAudio = window.BookPlayGameAudio.createGameAudio({});
+      return farmAudio;
+    }
+    return null;
+  }
+
+  function speakFarmWord(text) {
+    const term = String(text || "").trim();
+    if (!term) return;
+    const audio = resolveFarmAudio();
+    if (audio) {
+      try { return audio.play({ ref: `word:${term}:en`, text: term, lang: "en-US" }); }
+      catch (_) { return; }
+    }
+    if (handheldOffline()) return;
+    try {
+      const el = new Audio();
+      window.BookPlayAudio?.watchMedia(el);
+      el.src = "/api/tts?voice=en&text=" + encodeURIComponent(term);
+      el.currentTime = 0;
+      el.play().catch(() => {});
+    } catch (_) { /* 无 TTS 环境静默 */ }
   }
 
   function today() {
@@ -231,10 +269,7 @@
       speak.tabIndex = 0;
       speak.textContent = `♪ ${word.term}`;
       speak.addEventListener("click", () => {
-        try {
-          const audio = new Audio("/api/tts?voice=en&text=" + encodeURIComponent(word.term));
-          audio.play().catch(() => {});
-        } catch (_) {}
+        speakFarmWord(word.term);
       });
       const pick = document.createElement("button");
       pick.type = "button";

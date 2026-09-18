@@ -13,11 +13,13 @@
   const params = new URLSearchParams(window.location.search);
   const EP = Math.max(1, Number(params.get("ep")) || 1);
   const SKIP = new Set((params.get("skip") || "").split(",").filter(Boolean));
-  const FROM_GAME = params.get("from") === "game";
+  const FROM_LESSON = params.get("from") === "lesson";
+  const FROM_GAME = params.get("from") === "game" || FROM_LESSON;
   const URL_WRONG = (params.get("wrong") || "").split(",").filter(Boolean);
 
   const KEY_PROGRESS = "bookplay_battle_progress_v1";
   const KEY_COLLECTION = "bookplay_battle_collection_v1";
+  const KEY_WEAK = "bookplay_weak_v1";
 
   const $ = (id) => document.getElementById(id);
   const els = {
@@ -34,7 +36,10 @@
     promptKicker: $("battle-prompt-kicker"),
     promptMain: $("battle-prompt-main"),
     promptSub: $("battle-prompt-sub"),
+    race: $("battle-race"),
+    raceFill: $("battle-race-fill"),
     listen: $("battle-listen"),
+    skip: $("battle-skip"),
     turn: $("battle-turn"),
     hpDock: $("battle-hp-dock"),
     heroHpName: $("battle-hero-hp-name"),
@@ -76,6 +81,7 @@
     shield: 3,
     combo: { streak: 0 },
     wrongWords: {},
+    weakWords: {},
     killed: 0,
     bossIdx: 0,
     roundId: 0,
@@ -92,6 +98,10 @@
     bossRound: null,
     typing: null,
     typingTimer: 0,
+    race: null,
+    raceRivalTimer: 0,
+    raceDeadTimer: 0,
+    raceRaf: 0,
   };
 
   function readStore(key) {
@@ -109,12 +119,21 @@
   }
 
   let audioEl = null;
+  function handheldOffline() {
+    try {
+      return document.documentElement.hasAttribute("data-handheld");
+    } catch (_) {
+      return false;
+    }
+  }
+
   function speakTerm(text) {
     if (!text) return;
     if (state.audio) {
       const term = String(text).trim();
       return state.audio.play({ ref: `word:${term}:en`, text: term, lang: "en-US" });
     }
+    if (handheldOffline()) return;
     try {
       audioEl = audioEl || new Audio();
       window.BookPlayAudio?.watchMedia(audioEl);
@@ -154,6 +173,35 @@
     const lastRef = typeof last === "string" ? last : last && (last.ref || last.audioRef || last.id);
     if (state.audio && lastRef === expectedRef) state.audio.replay();
     else speakDialogue(line);
+  }
+
+  function persistWeak() {
+    const all = readStore(KEY_WEAK);
+    all[String(EP)] = state.weakWords;
+    writeStore(KEY_WEAK, all);
+  }
+
+  function catalogCards(level) {
+    const cards = [];
+    const push = (row) => {
+      if (!row || !row.term || !row.zh) return;
+      cards.push(row);
+    };
+    (level && level.previewWords || []).forEach(push);
+    ((level && level.waves) || []).forEach((wave) => (wave.monsters || []).forEach(push));
+    (((level && level.boss) || {}).hpWords || []).forEach(push);
+    return cards;
+  }
+
+  function freezeLevel(level, wrongWords) {
+    const frozen = Game.freezeSessionCards(catalogCards(level), {
+      maxCards: Game.SESSION_CARD_LIMIT,
+      wrongWords: wrongWords || {},
+      weakWords: state.weakWords,
+      now: Date.now(),
+      unit: ((Number(level && level.seedBase) || EP) % 1000) / 1000,
+    });
+    return Game.applyFrozenLevel(level, frozen);
   }
 
   function fetchJSON(url) {
@@ -469,6 +517,8 @@
     const monsterEl = els.monsters.children[state.questionIdx];
     if (verdict.correct) {
       speakTerm(monster.term);
+      state.weakWords = Game.recordWeakAnswer(state.weakWords, monster.term, { correct: true });
+      persistWeak();
       state.killed += 1;
       if (monsterEl) monsterEl.classList.add("is-dead");
       state.questionIdx += 1;
@@ -500,6 +550,8 @@
       }
     } else {
       state.wrongWords[monster.term] = (state.wrongWords[monster.term] || 0) + 1;
+      state.weakWords = Game.recordWeakAnswer(state.weakWords, monster.term, { correct: false });
+      persistWeak();
       state.shield = Math.max(0, state.shield - 1);
       state.combo.streak = 0;
       if (monsterEl) {
@@ -568,7 +620,7 @@
     if (els.defend) els.defend.hidden = false;
     if (els.turn) {
       els.turn.hidden = false;
-      els.turn.textContent = "悟空回合";
+      els.turn.textContent = "抢答！";
     }
     if (els.heroHpName) els.heroHpName.textContent = (state.kit && state.kit.hero && state.kit.hero.nameZh) || "孙悟空";
     const boss = state.level.cast.boss;
@@ -623,11 +675,13 @@
 
   function finishTyping(status) {
     if (state.phase !== "boss" || !state.bossRound || state.bossRound.kind !== "typing") return;
+    if (status !== "ok") {
+      finishRace("timeout");
+      return;
+    }
     const goal = state.bossRound.typingTarget || "";
-    const ok = status === "ok";
     clearTyping();
-    const host = els.orbs;
-    throwBossOrb({ zh: ok ? goal : "" }, host);
+    throwBossOrb({ zh: goal }, els.orbs);
   }
 
   function onTypingKey(event) {
@@ -646,12 +700,11 @@
     els.orbs.textContent = "";
     const wrap = document.createElement("div");
     wrap.className = "battle-typing";
-    wrap.innerHTML = `<p class="battle-typing-track" id="battle-typing-track"></p><p class="battle-typing-hint">键盘输入英文</p>`;
+    wrap.innerHTML = `<p class="battle-typing-track" id="battle-typing-track"></p><p class="battle-typing-hint">键盘输入英文 · 10 秒抢答</p>`;
     els.orbs.appendChild(wrap);
     state.typing = { typed: "", wrong: "", goal: round.typingTarget || "" };
     paintTyping();
     document.addEventListener("keydown", onTypingKey);
-    state.typingTimer = window.setTimeout(() => finishTyping("timeout"), round.timeoutMs || 12000);
   }
 
   function renderBossOrbs() {
@@ -660,6 +713,7 @@
     els.orbs.textContent = "";
     clearTyping();
     if (els.listen) els.listen.hidden = true;
+    if (els.skip) els.skip.hidden = false;
     if (!current) return;
     els.bossName.textContent = state.level.cast.boss.nameZh;
     const total = hpWords.length || 1;
@@ -683,6 +737,7 @@
     }
     if (built.kind === "typing") {
       renderTypingRound(built);
+      startRace();
       return;
     }
     (built.orbs || []).forEach((orb) => {
@@ -694,11 +749,139 @@
       btn.addEventListener("click", () => throwBossOrb(orb, btn));
       els.orbs.appendChild(btn);
     });
+    startRace();
+  }
+
+  function clearRaceTimers() {
+    if (state.raceRivalTimer) {
+      window.clearTimeout(state.raceRivalTimer);
+      state.raceRivalTimer = 0;
+    }
+    if (state.raceDeadTimer) {
+      window.clearTimeout(state.raceDeadTimer);
+      state.raceDeadTimer = 0;
+    }
+    if (state.raceRaf) {
+      window.cancelAnimationFrame(state.raceRaf);
+      state.raceRaf = 0;
+    }
+  }
+
+  function clearRace() {
+    clearRaceTimers();
+    state.race = null;
+    if (els.race) els.race.hidden = true;
+    if (els.raceFill) els.raceFill.style.width = "100%";
+  }
+
+  function paintRaceBar() {
+    if (!els.raceFill || !state.race) return;
+    const span = Math.max(1, state.race.deadlineAt - state.race.startedAt);
+    const left = Math.max(0, state.race.deadlineAt - performance.now());
+    els.raceFill.style.width = `${(left / span) * 100}%`;
+    if (els.race) els.race.hidden = false;
+  }
+
+  function tickRace() {
+    if (!state.race || state.race.resolved) return;
+    paintRaceBar();
+    state.raceRaf = window.requestAnimationFrame(tickRace);
+  }
+
+  function startRace() {
+    clearRace();
+    if (state.phase !== "boss") return;
+    const now = performance.now();
+    const total = Math.max(1, (state.level.boss.hpWords || []).length);
+    const unit = ((Number(state.level.seedBase) || 1) + state.bossIdx * 17) % 1000 / 1000;
+    const think = Core.rivalThinkMs(state.bossIdx, total, unit);
+    const acc = Core.rivalAccuracy(state.bossIdx, total);
+    const hit = Core.rivalHits((Number(state.level.seedBase) || 1) + state.bossIdx * 31, acc);
+    state.race = {
+      startedAt: now,
+      deadlineAt: now + Core.RACE_MS,
+      rivalAt: now + think,
+      rivalCorrect: hit,
+      resolved: false,
+    };
+    paintRaceBar();
+    if (els.turn) els.turn.textContent = "抢答！";
+    state.raceRivalTimer = window.setTimeout(() => {
+      if (!state.race || state.race.resolved || state.roundLocked) return;
+      if (!state.race.rivalCorrect) {
+        showToast("妖怪打偏了！抓住机会", 1200);
+        return;
+      }
+      finishRace("rival");
+    }, think);
+    state.raceDeadTimer = window.setTimeout(() => finishRace("timeout"), Core.RACE_MS);
+    state.raceRaf = window.requestAnimationFrame(tickRace);
+  }
+
+  function finishRace(winner) {
+    if (state.phase !== "boss" || !state.race || state.race.resolved || state.roundLocked) return;
+    if (winner === "player") return;
+    state.race.resolved = true;
+    clearRaceTimers();
+    clearTyping();
+    if (els.turn) els.turn.textContent = winner === "rival" ? "妖怪抢答！" : "时间到";
+    showToast(winner === "rival" ? "妖怪抢先答对了！" : "来不及了！", 1600);
+    const hpWord = state.level.boss.hpWords[state.bossIdx];
+    applyBossMiss(hpWord);
+  }
+
+  function applyBossMiss(hpWord) {
+    const hpWords = state.level.boss.hpWords;
+    const bossEl = $("battle-boss");
+    window.BookPlayAudio?.sfx("shield");
+    const total = hpWords.length || 1;
+    const hpRatio = Game.bossHpRatio(state.bossIdx, total);
+    const skill = Core.pickBossSkill(state.kit, { shieldLeft: state.shield, hpRatio });
+    const hit = Core.applyIncomingHit({ shield: state.shield, defendArmed: state.defendArmed });
+    state.defendArmed = hit.defendArmed;
+    state.shield = hit.shield;
+    els.hero.classList.remove("is-guard");
+    pushBattleLog(hit.blocked ? `护体挡住 ${skill.nameZh}` : `${skill.nameZh} · 打偏 ${hpWord.term}`);
+    state.wrongWords[hpWord.term] = (state.wrongWords[hpWord.term] || 0) + 1;
+    state.weakWords = Game.recordWeakAnswer(state.weakWords, hpWord && hpWord.term, { correct: false });
+    persistWeak();
+    state.combo.streak = 0;
+    updateHud();
+    if (els.turn) els.turn.textContent = "妖怪回合";
+    flashClass(bossEl, "is-lunge-left", 420);
+    showSkillFx(skill, els.hero, "boss");
+    if (!hit.blocked) flashClass(els.hero, "is-recoil", 450);
+    else showToast("护体金光挡住了！", 1400);
+    window.setTimeout(() => { if (els.turn) els.turn.textContent = "抢答！"; }, 700);
+    if (state.shield <= 0) {
+      showToast("悟空撑不住了，再来一次！", 2000);
+      window.setTimeout(() => {
+        state.shield = 3;
+        state.defendLeft = Number(state.kit && state.kit.hero && state.kit.hero.skills && state.kit.hero.skills.defend && state.kit.hero.skills.defend.usesPerBattle) || 1;
+        state.defendArmed = false;
+        if (els.defend) els.defend.disabled = false;
+        startBoss();
+      }, 900);
+      return;
+    }
+    renderBossOrbs();
   }
 
   function throwBossOrb(orb, orbBtn) {
-    if (state.phase !== "boss" || state.roundLocked || orbBtn.classList.contains("is-spent")) return;
-    orbBtn.classList.add("is-spent");
+    if (state.phase !== "boss" || state.roundLocked) return;
+    if (orbBtn && orbBtn.classList && orbBtn.classList.contains("is-spent")) return;
+    if (state.race && !state.race.resolved) {
+      const winner = Core.resolveRaceEvent({
+        now: performance.now(),
+        deadlineAt: state.race.deadlineAt,
+        rivalAt: state.race.rivalAt,
+        playerAt: performance.now(),
+      });
+      if (winner !== "player") return;
+      state.race.resolved = true;
+      clearRaceTimers();
+    }
+    if (orbBtn && orbBtn.classList) orbBtn.classList.add("is-spent");
     state.roundLocked = true;
     const roundId = ++state.roundId;
     const hpWords = state.level.boss.hpWords;
@@ -713,6 +896,8 @@
       state.roundLocked = false;
       if (verdict.correct) {
         const skill = Core.pickHeroSkill(state.kit, state.combo);
+        state.weakWords = Game.recordWeakAnswer(state.weakWords, hpWord.term, { correct: true });
+        persistWeak();
         state.killed += 1;
         state.bossIdx += 1;
         updateHud();
@@ -761,35 +946,7 @@
           renderBossOrbs();
         }
       } else {
-        window.BookPlayAudio?.sfx("shield");
-        const total = hpWords.length || 1;
-        const hpRatio = Game.bossHpRatio(state.bossIdx, total);
-        const skill = Core.pickBossSkill(state.kit, { shieldLeft: state.shield, hpRatio });
-        const hit = Core.applyIncomingHit({ shield: state.shield, defendArmed: state.defendArmed });
-        state.defendArmed = hit.defendArmed;
-        state.shield = hit.shield;
-        els.hero.classList.remove("is-guard");
-        pushBattleLog(hit.blocked ? `护体挡住 ${skill.nameZh}` : `${skill.nameZh} · 打偏 ${hpWord.term}`);
-        state.wrongWords[hpWord.term] = (state.wrongWords[hpWord.term] || 0) + 1;
-        updateHud();
-        if (els.turn) els.turn.textContent = "妖怪回合";
-        flashClass(bossEl, "is-lunge-left", 420);
-        showSkillFx(skill, els.hero, "boss");
-        if (!hit.blocked) flashClass(els.hero, "is-recoil", 450);
-        else showToast("护体金光挡住了！", 1400);
-        window.setTimeout(() => { if (els.turn) els.turn.textContent = "悟空回合"; }, 700);
-        if (state.shield <= 0) {
-          showToast("悟空撑不住了，再来一次！", 2000);
-          window.setTimeout(() => {
-            state.shield = 3;
-            state.defendLeft = Number(state.kit && state.kit.hero && state.kit.hero.skills && state.kit.hero.skills.defend && state.kit.hero.skills.defend.usesPerBattle) || 1;
-            state.defendArmed = false;
-            if (els.defend) els.defend.disabled = false;
-            startBoss();
-          }, 900);
-          return;
-        }
-        renderBossOrbs();
+        applyBossMiss(hpWord);
       }
     });
   }
@@ -903,6 +1060,8 @@
     if (els.defend) els.defend.hidden = true;
     if (els.turn) els.turn.hidden = true;
     if (els.listen) els.listen.hidden = true;
+    if (els.skip) els.skip.hidden = true;
+    clearRace();
     clearTyping();
     const rootEl = $("battle-root");
     if (rootEl) rootEl.classList.remove("is-boss-stage");
@@ -974,13 +1133,15 @@
     next.tabIndex = 0;
     next.textContent = "下一集 ▶";
     next.addEventListener("click", () => {
-      window.location.href = FROM_GAME ? `game.html?ep=${EP + 1}` : "map.html";
+      window.location.href = FROM_GAME
+        ? `game.html?ep=${EP + 1}${FROM_LESSON ? "&from=lesson" : ""}`
+        : "map.html";
     });
     const back = document.createElement("button");
     back.type = "button";
     back.className = "battle-secondary";
     back.tabIndex = 0;
-    back.textContent = FROM_GAME ? "回地图继续探险 🗺️" : "回绘本地图";
+    back.textContent = FROM_LESSON ? "回课堂地图" : FROM_GAME ? "回地图继续探险 🗺️" : "回绘本地图";
     back.addEventListener("click", () => {
       window.location.href = mapUrl();
     });
@@ -996,6 +1157,7 @@
       mapStage: FROM_GAME ? "complete" : prev.mapStage,
       updatedAt: new Date().toISOString(),
     });
+    persistWeak();
     writeStore(KEY_PROGRESS, progress);
     const collection = readStore(KEY_COLLECTION);
     if (!collection[boss.id]) {
@@ -1007,7 +1169,8 @@
   /* ---------- 暂停与门禁 ---------- */
 
   function mapUrl() {
-    return FROM_GAME ? `game.html?ep=${EP}&from=battle` : "map.html";
+    if (!FROM_GAME) return "map.html";
+    return FROM_LESSON ? `game.html?ep=${EP}&from=lesson` : `game.html?ep=${EP}&from=battle`;
   }
 
   function bindChrome() {
@@ -1033,6 +1196,33 @@
     if (els.listen) els.listen.addEventListener("click", () => {
       if (state.bossRound && state.bossRound.playTerm) speakTerm(state.bossRound.playTerm);
     });
+    if (els.skip) els.skip.addEventListener("click", skipBossWord);
+  }
+
+  function skipBossWord() {
+    if (state.phase !== "boss" || state.roundLocked) return;
+    const hpWords = state.level.boss.hpWords;
+    const hpWord = hpWords[state.bossIdx];
+    if (!hpWord) return;
+    if (state.race) state.race.resolved = true;
+    clearRaceTimers();
+    clearTyping();
+    state.weakWords = Game.recordWeakAnswer(state.weakWords, hpWord.term, { skipped: true });
+    persistWeak();
+    showToast("先跳过，这张不算错。", 1400);
+    state.bossIdx += 1;
+    updateHud();
+    if (state.bossIdx >= hpWords.length) {
+      state.roundLocked = true;
+      if (shouldSkipEndQuiz()) {
+        state.quizPassed = true;
+        showResult();
+      } else {
+        startQuiz();
+      }
+      return;
+    }
+    renderBossOrbs();
   }
 
   function showGate(message) {
@@ -1070,6 +1260,7 @@
 
   async function checkTts() {
     try {
+      if (handheldOffline()) return false;
       const res = await fetch("/api/tts?voice=en&text=ok", { method: "GET" });
       return res.ok;
     } catch (_) {
@@ -1122,6 +1313,9 @@
       URL_WRONG.forEach((term) => {
         if (term) state.wrongWords[term] = state.wrongWords[term] || 1;
       });
+      const weakAll = readStore(KEY_WEAK);
+      state.weakWords = weakAll[String(EP)] && typeof weakAll[String(EP)] === "object" ? weakAll[String(EP)] : {};
+      state.level = freezeLevel(level, state.wrongWords);
       renderHero();
       updateHud();
       showIntro();

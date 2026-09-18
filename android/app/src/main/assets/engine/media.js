@@ -49,6 +49,9 @@
   function createController(options) {
     const audio = options.audio;
     if (!audio) throw new TypeError("WalaMedia.createController requires an audio element");
+    const allowTts = options.allowTts != null
+      ? Boolean(options.allowTts)
+      : !(typeof document !== "undefined" && document.documentElement && document.documentElement.hasAttribute("data-handheld"));
     let rate = options.rate || 1;
     let sequenceToken = 0;
     let playGeneration = 0;
@@ -246,7 +249,7 @@
         const ok = await playClip(clip);
         if (ok) return true;
       }
-      if (!raw) return false;
+      if (!raw || !allowTts) return false;
       return playClip(ttsUrl(raw, lang));
     }
 

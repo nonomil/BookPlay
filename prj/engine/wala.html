@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="zh">
 <head>
+  <script src="./native-key.js"></script>
+  <script defer src="./handheld-controls.js" data-app="bookplay"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>豆豆龙英语 · 播放</title>
   <link rel="stylesheet" href="style.css?v=png1">
-  <link rel="stylesheet" href="wala.css?v=57">
+  <link rel="stylesheet" href="wala.css?v=58">
   <link rel="stylesheet" href="tv.css?v=6">
+  <link rel="stylesheet" href="handheld.css?v=2">
   <link rel="stylesheet" href="app-audio.css?v=2">
   <script src="app-audio.js?v=3"></script>
 </head>
@@ -111,13 +114,17 @@
               <button id="w-rate-fast" type="button">快</button>
             </div>
           </div>
+          <div class="w-set-row">
+            <span>掌机</span>
+            <button type="button" class="w-set-action" data-open-handheld>按键设置</button>
+          </div>
         </div>
       </div>
     </div>
     <div class="w-stage">
       <div class="w-frame">
         <img id="w-img" alt="">
-        <video id="w-video" playsinline preload="metadata"></video>
+        <video id="w-video" playsinline preload="none"></video>
         <div id="w-cards-left"></div>
         <div id="w-cards"></div>
         <div id="w-vocab-peek" class="w-vocab-peek hidden" role="dialog" aria-modal="false" aria-label="单词详情"></div>

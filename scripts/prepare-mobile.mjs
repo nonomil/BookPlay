@@ -1,4 +1,5 @@
 import fs from "node:fs/promises";
+import fsSync from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -9,7 +10,17 @@ export async function assembleMobileDist(fromRoot = projectRoot) {
   const dest = path.join(fromRoot, "dist", "engine");
   await fs.rm(path.join(fromRoot, "dist"), { recursive: true, force: true });
   await fs.mkdir(dest, { recursive: true });
-  await fs.cp(src, dest, { recursive: true });
+  await fs.cp(src, dest, {
+    recursive: true,
+    filter(from) {
+      try {
+        if (fsSync.statSync(from).isDirectory()) return true;
+      } catch {
+        return true;
+      }
+      return !from.endsWith(".test.mjs");
+    },
+  });
   await fs.writeFile(
     path.join(fromRoot, "dist", "index.html"),
     `<!DOCTYPE html><meta charset="utf-8"><meta http-equiv="refresh" content="0;url=engine/setup.html">`,

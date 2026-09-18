@@ -52,6 +52,7 @@ ENGINE_FILES = [
     "game.html", "game.js", "game.css", "game-core.js", "game-input.js", "game-audio.js",
     "episode-vocab-quiz.js",
     "tv.css", "tv-remote.js", "native-key.js", "handheld-keys.html",
+    "handheld-controls.js", "handheld.css",
     "companion.html", "companion.js", "companion.css", "companion-core.js",
     "medals.html", "stickers.html", "room.html",
     "index.html", "main.js",

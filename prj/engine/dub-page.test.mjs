@@ -9,7 +9,9 @@ const read = (name) => readFileSync(join(here, name), 'utf8');
 
 test('dub.html：按顺序引入核心模块与页面脚本', () => {
   const html = read('dub.html');
-  const scripts = [...html.matchAll(/<script src="([^"?]+)(?:\?[^"]*)?"><\/script>/g)].map((m) => m[1]);
+  const scripts = [...html.matchAll(/<script[^>]*\ssrc="([^"?]+)(?:\?[^"]*)?"/g)]
+    .map((m) => m[1].replace(/^\.\//, ''))
+    .filter((src) => src !== 'native-key.js' && src !== 'handheld-controls.js' && src !== 'content-gate.js');
   const expected = ['tv-remote.js', 'storage.js', 'dub-core.js', 'dub-store.js', 'dub-recorder.js', 'dub.js'];
   assert.deepEqual(scripts, expected);
 });

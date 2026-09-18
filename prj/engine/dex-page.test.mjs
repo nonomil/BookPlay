@@ -9,9 +9,12 @@ const read = (name) => readFileSync(join(here, name), 'utf8');
 
 test('dex.html：按顺序引入 app-audio / tv-remote / collection-core / dex.js', () => {
   const html = read('dex.html');
-  const scripts = [...html.matchAll(/<script src="([^"?]+)(?:\?[^"]*)?"><\/script>/g)].map((m) => m[1]);
+  const scripts = [...html.matchAll(/<script[^>]*\ssrc="([^"?]+)(?:\?[^"]*)?"/g)]
+    .map((m) => m[1].replace(/^\.\//, ''))
+    .filter((src) => src !== 'native-key.js' && src !== 'handheld-controls.js' && src !== 'content-gate.js');
   assert.deepEqual(scripts, ['app-audio.js', 'tv-remote.js', 'collection-core.js', 'dex.js']);
   assert.match(html, /href=["']tv\.css(?:\?[^"']*)?["']/i);
+  assert.match(html, /href=["']handheld\.css(?:\?[^"']*)?["']/i);
   assert.match(html, /id="dex-grid"/);
   assert.match(html, /id="dex-progress"/);
   assert.match(html, /id="dex-detail"/);

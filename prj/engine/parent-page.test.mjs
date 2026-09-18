@@ -9,9 +9,12 @@ const read = (name) => readFileSync(join(here, name), 'utf8');
 
 test('parent.html：按顺序引入 tv-remote / parent-core / parent.js 并加载 tv 样式', () => {
   const html = read('parent.html');
-  const scripts = [...html.matchAll(/<script src="([^"?]+)(?:\?[^"]*)?"><\/script>/g)].map((m) => m[1]);
+  const scripts = [...html.matchAll(/<script[^>]*\ssrc="([^"?]+)(?:\?[^"]*)?"/g)]
+    .map((m) => m[1].replace(/^\.\//, ''))
+    .filter((src) => src !== 'native-key.js' && src !== 'handheld-controls.js' && src !== 'content-gate.js');
   assert.deepEqual(scripts, ['tv-remote.js', 'walker-cast.js', 'walker-progress.js', 'parent-core.js', 'parent.js']);
   assert.match(html, /href=["']tv\.css(?:\?[^"']*)?["']/i, 'parent.html must load tv.css');
+  assert.match(html, /href=["']handheld\.css(?:\?[^"']*)?["']/i);
 });
 
 test('parent.html：家长须知三句话与核心控件齐备', () => {

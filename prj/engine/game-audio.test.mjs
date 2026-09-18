@@ -80,6 +80,23 @@ test("game-audio：静态缺失时走可审计 TTS 回退，播放失败标记 u
   audio.dispose();
 });
 
+test("game-audio：allowTts=false 时静态缺失不请求 /api/tts", async () => {
+  const media = new FakeMedia();
+  const seen = [];
+  const audio = createGameAudio({
+    episode: 1,
+    media,
+    allowTts: false,
+    audioIndex: { entries: {} },
+    onState: (state, meta) => seen.push({ state, meta }),
+  });
+  assert.equal(await audio.play({ text: "unindexed", lang: "en-US" }), false);
+  assert.equal(media.src, "");
+  assert.equal(seen.at(-1).state, "unavailable");
+  assert.equal(seen.at(-1).meta.reason, "offline-no-static");
+  audio.dispose();
+});
+
 test("game-audio：对白保留原始 audioRef 时仍按文本命中已发布静态片段", async () => {
   const media = new FakeMedia();
   const audio = createGameAudio({

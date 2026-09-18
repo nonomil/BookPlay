@@ -15,17 +15,24 @@ test('map.js：集卡片面不再内嵌磨耳朵/配音/打怪小选项', () => 
   assert.doesNotMatch(js, /class="node-battle"/);
 });
 
-test('map.js：点卡片打开集详情弹层（含进入故事 + 三选项）', () => {
+test('map.js：点卡片打开集详情弹层（学习 / 磨耳朵 / 地图）', () => {
   const js = read('map.js');
   assert.match(js, /function openEpisodeDetail/);
   assert.match(js, /data-detail="\$\{n\}"/, 'node-main 携带 data-detail');
-  assert.match(js, /episode-detail-primary[^>]*>▶ 进入故事/);
-  assert.match(js, /episode-detail-option[^>]*>🎧 磨耳朵/);
-  assert.match(js, /episode-detail-option[^>]*>🎙 配音/);
-  assert.match(js, /episode-detail-option[^>]*>⚔️ 打怪/);
-  assert.match(js, /game\.html\?ep=\$\{n\}/, '打怪入口指向大地图 game.html');
+  assert.match(js, /episode-detail-mode[^>]*>学习/);
+  assert.match(js, /episode-detail-mode[^>]*>磨耳朵/);
+  assert.match(js, /episode-detail-mode[^>]*>地图/);
+  assert.match(js, /game\.html\?ep=\$\{n\}/, '地图入口指向大地图 game.html');
+  assert.doesNotMatch(js, /▶ 进入故事/, '不再把学习写成默认主按钮');
+  assert.doesNotMatch(js, /⚔️ 打怪/, '打怪改叫地图，和三种玩法并列');
+  assert.match(js, /episode-detail-option[^>]*>配音/);
+  assert.match(js, /本辑巩固/);
+  assert.match(js, /drill\.html\?c=\$\{collection\.id\}/);
   assert.match(js, /function closeEpisodeDetail/);
   assert.match(js, /ev\.target === detailEl/, '点遮罩关闭');
+  assert.match(js, /walkCompanionTo\(route, index, show\)/, '伙伴走到卡片后弹出三入口，不直接进学习');
+  assert.match(js, /openEpisodeDetail\(n\)/);
+  assert.doesNotMatch(js, /window\.location\.href = link\.href/, '点卡片不再默认跳进 wala 学习');
 });
 
 test('map.js：选关卡片放大（cap 0.27 / CARD_MIN 120，2026-09-12 全屏改版）', () => {
@@ -48,7 +55,7 @@ test('map.css：详情弹层样式齐备且命中高度达标', () => {
   const css = read('map.css');
   assert.match(css, /\.episode-detail \{/);
   assert.match(css, /\.episode-detail-card \{/);
-  assert.match(css, /\.episode-detail-primary \{/);
+  assert.match(css, /\.episode-detail-mode,/);
   assert.match(css, /min-height:\s*68px/, '主按钮 ≥64px');
   assert.match(css, /min-height:\s*64px/, '选项按钮 ≥64px');
 });

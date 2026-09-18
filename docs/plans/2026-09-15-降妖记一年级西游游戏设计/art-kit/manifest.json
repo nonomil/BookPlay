@@ -1,0 +1,36 @@
+{
+  "pack": "jttw-hud-fx-v1",
+  "created": "2026-09-15",
+  "styleLock": "prompts/00-style-lock.txt",
+  "doNotRegenerate": [
+    "jttw-player-walkers four-dir",
+    "ep1-54 adv_frames backgrounds"
+  ],
+  "parentSession": {
+    "support-peach": "source/support-peach.jpg",
+    "support-fan": "source/support-fan.jpg",
+    "support-gourd": "source/support-gourd.jpg",
+    "support-cloud": "source/support-cloud.jpg",
+    "support-mantra": "source/support-mantra.jpg",
+    "support-staff": "source/support-staff.jpg",
+    "fx-staff-bonk": "source/fx-staff-bonk.jpg",
+    "fx-listen-ring": "source/fx-listen-ring.jpg",
+    "fx-star-burst": "source/fx-star-burst.jpg",
+    "fx-target-arrow": "source/fx-target-arrow.jpg",
+    "fx-combo-sweep": "source/fx-combo-sweep.jpg",
+    "fx-shield-flash": "source/fx-shield-flash.jpg"
+  },
+  "engineDir": "prj/data/assets/generated/jttw-hud-fx-v1/",
+  "wukongEditChain": {
+    "base": "prj/data/assets/generated/jttw-player-walkers/wukong/directions/wukong-south-idle.png",
+    "attackStill": "prj/data/assets/generated/jttw-player-walkers/wukong/directions/wukong-south-attack.png",
+    "hurt": "prj/data/assets/generated/jttw-player-walkers/wukong/directions/wukong-south-hurt.png",
+    "celebrate": "prj/data/assets/generated/jttw-player-walkers/wukong/directions/wukong-south-celebrate.png",
+    "note": "Did not overwrite wukong-south-attack.gif"
+  },
+  "flags": [
+    "JPG not true alpha; key MAGENTA then convert PNG before ship",
+    "Icon set generated in parallel not edit-chained; unify later with image_edit from peach",
+    "Do not wire into game.js until keyed PNG pass"
+  ]
+}

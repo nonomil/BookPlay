@@ -592,6 +592,39 @@
   color: #f0d9a2;
   font-size: clamp(13px, 1.8vw, 18px);
 }
+.battle-race {
+  pointer-events: none;
+  display: block;
+  width: min(320px, 70vw);
+  height: 10px;
+  margin: 10px auto 0;
+  overflow: hidden;
+  border-radius: 999px;
+  background: rgba(15, 20, 36, 0.55);
+  border: 1px solid rgba(255, 215, 106, 0.45);
+}
+.battle-race[hidden] { display: none !important; }
+.battle-race-fill {
+  display: block;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(90deg, #ffd76a, #ff8a4a);
+}
+.battle-skip {
+  pointer-events: auto;
+  position: absolute;
+  right: 0;
+  top: 48px;
+  min-height: 44px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 2px solid rgba(240, 217, 162, 0.55);
+  background: rgba(15, 20, 36, 0.72);
+  color: #f0d9a2;
+  font-size: 13px;
+  font-weight: 800;
+  cursor: pointer;
+}
 .battle-listen {
   pointer-events: auto;
   position: absolute;

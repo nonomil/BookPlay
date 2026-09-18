@@ -11,16 +11,20 @@
   const WORLD_TILES = 4; // 大世界边长（视口格）。3 太挤，4 方便走一走再打。
   const SUPPORT_IDS = ["peach", "fan", "gourd", "cloud", "mantra", "staff"];
   const SUPPORT_DEFS = {
-    peach: { id: "peach", icon: "🍑", label: "蟠桃挡伤", toastPick: "捡到蟠桃！下次被撞会挡一下 🍑", toastUse: "蟠桃下肚，护盾 +1 🍑" },
-    fan: { id: "fan", icon: "🪭", label: "芭蕉扇减速", toastPick: "捡到芭蕉扇！点右上可让小妖变慢 🪭", toastUse: "芭蕉扇一挥，小妖慢下来了 🪭" },
-    gourd: { id: "gourd", icon: "🏺", label: "紫金葫芦瞄准", toastPick: "捡到紫金葫芦！接下来 2 发自动找对怪 🏺", toastUse: "紫金葫芦：接下来 2 发自动瞄准 🏺" },
-    cloud: { id: "cloud", icon: "☁️", label: "筋斗云加速", toastPick: "捡到筋斗云！跑得更快 ☁️", toastUse: "筋斗云！加速 ☁️" },
-    mantra: { id: "mantra", icon: "📿", label: "紧箍咒提示", toastPick: "捡到紧箍咒！可提示目标首字母 📿", toastUse: "紧箍咒显灵：看提示 📿" },
-    staff: { id: "staff", icon: "🪄", label: "金箍棒补盾", toastPick: "捡到金箍棒！下次打对额外补盾 🪄", toastUse: "金箍棒加持：下次打对补盾 🪄" },
+    peach: { id: "peach", icon: "🍑", image: "assets/generated/jttw-hud-fx-v1/support-peach.png", label: "蟠桃挡伤", toastPick: "捡到蟠桃！下次被撞会挡一下 🍑", toastUse: "蟠桃下肚，护盾 +1 🍑" },
+    fan: { id: "fan", icon: "🪭", image: "assets/generated/jttw-hud-fx-v1/support-fan.png", label: "芭蕉扇减速", toastPick: "捡到芭蕉扇！点右上可让小妖变慢 🪭", toastUse: "芭蕉扇一挥，小妖慢下来了 🪭" },
+    gourd: { id: "gourd", icon: "🏺", image: "assets/generated/jttw-hud-fx-v1/support-gourd.png", label: "紫金葫芦瞄准", toastPick: "捡到紫金葫芦！接下来 2 发自动找对怪 🏺", toastUse: "紫金葫芦：接下来 2 发自动瞄准 🏺" },
+    cloud: { id: "cloud", icon: "☁️", image: "assets/generated/jttw-hud-fx-v1/support-cloud.png", label: "筋斗云加速", toastPick: "捡到筋斗云！跑得更快 ☁️", toastUse: "筋斗云！加速 ☁️" },
+    mantra: { id: "mantra", icon: "📿", image: "assets/generated/jttw-hud-fx-v1/support-mantra.png", label: "紧箍咒提示", toastPick: "捡到紧箍咒！可提示目标首字母 📿", toastUse: "紧箍咒显灵：看提示 📿" },
+    staff: { id: "staff", icon: "🪄", image: "assets/generated/jttw-hud-fx-v1/support-staff.png", label: "金箍棒补盾", toastPick: "捡到金箍棒！下次打对额外补盾 🪄", toastUse: "金箍棒加持：下次打对补盾 🪄" },
   };
   const SLOW_MS = 9000;
   const SPEED_MS = 4000;
   const AUTO_AIM_SHOTS = 2;
+  const SESSION_CARD_LIMIT = 10;
+  const WEAK_WRONG_IN = 2;
+  const WEAK_STREAK_OUT = 3;
+  const WEAK_INJECT = 0.3;
   const SPEED_MULT = 1.28;
   const SLOW_MULT = 0.45;
   // Viewport-tiles per second, then multiplied by NU (1 / WORLD) in game.js.
@@ -29,8 +33,19 @@
   // 此前按"全图/秒"定义且关卡 worldTiles 改为 1 后整体慢了 4 倍，用户反馈太慢。
   const MOVEMENT_SPEEDS = Object.freeze({
     hero: 0.6,           // 屏/秒：约 1.7s 横穿一屏（1.0 太冲，0.25 太慢——2026-09-12 定档）
-    monsterWander: 0.22,
-    monsterChase: 0.45,
+    monsterWander: 0.12, // 远距巡逻，给孩子捡词球的时间
+    monsterChase: 0.28,  // 进仇恨后仍慢于主角，可走位风筝
+  });
+  // Reusable melee kit: wander outside aggro, telegraph, then contact hit.
+  // Distances are viewport-widths (same unit as MOVEMENT_SPEEDS).
+  const MONSTER_AI = Object.freeze({
+    aggro: 0.42,
+    attack: 0.07,
+    attackCd: 2800,
+    windupMs: 420,
+    recoverMs: 380,
+    knockback: 1.15,
+    fleeMult: 0.9,
   });
   // One pack rule for every episode: chase a unique slot around the hero and
   // push overlapping minions apart. Distances are world-normalized (full map = 1).
@@ -39,6 +54,20 @@
     separation: 0.042,
     spawnGap: 0.038,
   });
+
+  function monsterIntent(heroDist, aggroDist, fleeing) {
+    if (fleeing) return "flee";
+    if (heroDist <= Math.max(0, Number(aggroDist) || 0)) return "chase";
+    return "wander";
+  }
+
+  function canStartMelee(now, dist, attackDist, attackCd, invulnUntil, locked) {
+    if (locked) return false;
+    if (dist > Math.max(0, Number(attackDist) || 0)) return false;
+    if (now < (Number(attackCd) || 0)) return false;
+    if (now < (Number(invulnUntil) || 0)) return false;
+    return true;
+  }
 
   function chaseAnchor(hero, from, index, count, radius) {
     const hx = Number(hero && hero.x) || 0;
@@ -427,8 +456,266 @@
     };
   }
 
+  function wordTagHits(orbZh, monsterZh) {
+    return String(orbZh || "").trim() === String(monsterZh || "").trim() && String(orbZh || "").trim() !== "";
+  }
+
+  function chooseThrowTarget(clicked, matched, autoAim) {
+    if (autoAim && matched && matched.alive) return { target: matched, auto: true };
+    if (clicked && clicked.alive) return { target: clicked, auto: false };
+    if (matched && matched.alive) return { target: matched, auto: false };
+    return { target: null, auto: false };
+  }
+
+  const PLAY_VERBS = { "tag-shoot": true, "listen-rings": true, "type-lock": true, "gourd-seek": true, "fan-blow": true, "fire-ward": true };
+  const FIRE_MIN_DIST = 0.22;
+  const FACING_VEC = {
+    south: { x: 0, y: 1 },
+    north: { x: 0, y: -1 },
+    east: { x: 1, y: 0 },
+    west: { x: -1, y: 0 },
+  };
+
+  function inFacingCone(hero, target, dir, minDot) {
+    if (!hero || !target) return false;
+    const face = FACING_VEC[dir] || FACING_VEC.south;
+    const dx = Number(target.x) - Number(hero.x);
+    const dy = Number(target.y) - Number(hero.y);
+    const len = Math.hypot(dx, dy);
+    if (!len) return true;
+    const dot = (dx / len) * face.x + (dy / len) * face.y;
+    return dot >= (Number.isFinite(Number(minDot)) ? Number(minDot) : 0.35);
+  }
+
+  function chooseFanTarget(hero, monsters, carriedZh, dir) {
+    const want = String(carriedZh || "").trim();
+    const pool = (Array.isArray(monsters) ? monsters : []).filter((m) => m && m.alive && inFacingCone(hero, m, dir));
+    const matched = pool.find((m) => wordTagHits(want, m.zh));
+    return matched || null;
+  }
+
+  function resolvePlayVerb(meta) {
+    const raw = String((meta && (meta.playVerb || meta.verb)) || "").trim();
+    return PLAY_VERBS[raw] ? raw : "tag-shoot";
+  }
+
+  function typingComplete(session, term) {
+    const goal = typingTarget(term);
+    if (!goal) return true;
+    return String(session && session.typed || "") === goal;
+  }
+
+  function throwLocked(playVerb, session, term) {
+    return playVerb === "type-lock" && !typingComplete(session, term);
+  }
+
+  function fireTooClose(playVerb, hero, target, minDist) {
+    if (playVerb !== "fire-ward" || !hero || !target) return false;
+    const need = Number.isFinite(Number(minDist)) ? Number(minDist) : FIRE_MIN_DIST;
+    const dist = Math.hypot(Number(hero.x) - Number(target.x), Number(hero.y) - Number(target.y));
+    return dist < need;
+  }
+
+  function seekAutoAim(playVerb, buffs) {
+    const next = Object.assign(emptyBuffs(), buffs);
+    if (playVerb === "gourd-seek" || playVerb === "fan-blow") return { buffs: next, armed: true, consumed: false };
+    const armed = next.autoAimShots > 0;
+    if (armed) next.autoAimShots -= 1;
+    return { buffs: next, armed, consumed: armed };
+  }
+
+  function typePadLetters(session, term) {
+    const goal = typingTarget(term);
+    const typed = String(session && session.typed || "");
+    if (!goal || typed.length >= goal.length) return [];
+    const want = goal.charAt(typed.length).toUpperCase();
+    const seen = Object.create(null);
+    const out = [];
+    const push = (ch) => {
+      const up = String(ch || "").toUpperCase();
+      if (!/^[A-Z]$/.test(up) || seen[up]) return;
+      seen[up] = true;
+      out.push(up);
+    };
+    push(want);
+    String(goal).toUpperCase().split("").forEach(push);
+    const start = (want.charCodeAt(0) - 65 + typed.length * 3 + goal.length) % 26;
+    for (let i = 0; out.length < 6 && i < 26; i += 1) {
+      push(String.fromCharCode(65 + ((start + i * 5) % 26)));
+    }
+    const rest = out.filter((ch) => ch !== want).slice(0, 5);
+    const slot = typed.length % (rest.length + 1);
+    const pad = rest.slice();
+    pad.splice(slot, 0, want);
+    return pad;
+  }
+
+  function listenRingHits(spokenEn, ringEn) {
+    const spoken = String(spokenEn || "").trim().toLowerCase();
+    const ring = String(ringEn || "").trim().toLowerCase();
+    return spoken !== "" && ring !== "" && spoken === ring;
+  }
+
+  function chooseListenRing(rings, spokenEn) {
+    const list = Array.isArray(rings) ? rings : [];
+    for (let i = 0; i < list.length; i += 1) {
+      const ring = list[i];
+      if (!ring || ring.collected || ring.alive === false) continue;
+      if (listenRingHits(spokenEn, ring.term)) return ring;
+    }
+    return null;
+  }
+
+  function listenRingWalkHit(hero, ring, radius) {
+    if (!hero || !ring) return false;
+    const r = radius == null || radius === "" ? 36 : Number(radius);
+    if (!Number.isFinite(r)) return false;
+    const dx = (Number(hero.x) || 0) - (Number(ring.x) || 0);
+    const dy = (Number(hero.y) || 0) - (Number(ring.y) || 0);
+    return Math.hypot(dx, dy) <= r;
+  }
+
+  function armListenSpoken(prev, spokenEn) {
+    void prev;
+    return String(spokenEn || "").trim();
+  }
+
   function typingTarget(term) {
     return String(term || "").replace(/[^a-zA-Z]/g, "");
+  }
+
+  function cardKey(card) {
+    return String(card && (card.term || card.word) || "").trim().toLowerCase();
+  }
+
+  function freezeSessionCards(cards, opts) {
+    const maxCards = Math.max(1, Number(opts && opts.maxCards) || SESSION_CARD_LIMIT);
+    const wrong = (opts && opts.wrongWords) || {};
+    const weak = (opts && opts.weakWords) || {};
+    const now = Number(opts && opts.now) || 0;
+    const unitRaw = Number(opts && opts.unit);
+    const unit = Number.isFinite(unitRaw) ? Math.max(0, Math.min(1, unitRaw)) : 0.5;
+    const unique = [];
+    const seen = new Set();
+    (Array.isArray(cards) ? cards : []).forEach((card) => {
+      const key = cardKey(card);
+      const zh = String(card && (card.zh || card.translation || card.meaning) || "").trim();
+      if (!key || !zh || seen.has(key)) return;
+      seen.add(key);
+      unique.push({
+        term: String(card.term || card.word).trim(),
+        zh,
+        ipa: String(card && card.ipa || ""),
+        illustration: card && card.illustration || null,
+        sprite: card && card.sprite || null,
+      });
+    });
+    const recOf = (card) => weak[card.term.toLowerCase()] || weak[card.term] || {};
+    const wrongOf = (card) => Number(wrong[card.term] || wrong[card.term.toLowerCase()] || 0);
+    const due = [];
+    const weakPool = [];
+    const rest = [];
+    unique.forEach((card) => {
+      const rec = recOf(card);
+      if (Number(rec.dueAt) && now && Number(rec.dueAt) <= now) due.push(card);
+      else if (isWeakTerm(rec) || wrongOf(card) >= WEAK_WRONG_IN) weakPool.push(card);
+      else rest.push(card);
+    });
+    const weight = (card) => Math.max(wrongOf(card), Number(recOf(card).wrong || 0));
+    weakPool.sort((a, b) => weight(b) - weight(a) || a.term.localeCompare(b.term));
+    const picked = [];
+    const pickedKeys = new Set();
+    const take = (list) => {
+      (Array.isArray(list) ? list : []).forEach((card) => {
+        if (picked.length >= maxCards) return;
+        const key = card.term.toLowerCase();
+        if (pickedKeys.has(key)) return;
+        pickedKeys.add(key);
+        picked.push(card);
+      });
+    };
+    take(due);
+    take(weakPool);
+    if (unit < WEAK_INJECT) take(weakPool);
+    take(rest);
+    return picked.slice(0, maxCards);
+  }
+
+  function applyFrozenLevel(level, frozen) {
+    if (!level || typeof level !== "object") return level;
+    const cards = Array.isArray(frozen) ? frozen.filter((card) => card && card.term && card.zh) : [];
+    if (!cards.length) return level;
+    const next = Object.assign({}, level);
+    next.sessionCards = cards.slice();
+    next.previewWords = cards.map((card) => ({
+      term: card.term,
+      zh: card.zh,
+      ipa: card.ipa || "",
+      illustration: card.illustration || null,
+    }));
+    const waves = Array.isArray(level.waves) ? level.waves : [];
+    const sizes = waves.length
+      ? waves.map((wave) => Math.max(1, ((wave && wave.monsters) || []).length))
+      : [Math.min(4, cards.length)];
+    let index = 0;
+    next.waves = sizes.map((size, waveIndex) => {
+      const monsters = [];
+      const src = waves[waveIndex] && waves[waveIndex].monsters || [];
+      for (let n = 0; n < size && index < cards.length; n += 1, index += 1) {
+        const card = cards[index];
+        const sprite = (src[n] && src[n].sprite) || (src[0] && src[0].sprite) || card.sprite || null;
+        monsters.push({ term: card.term, zh: card.zh, sprite, key: `s${waveIndex}-${n}` });
+      }
+      return { monsters };
+    }).filter((wave) => wave.monsters.length);
+    if (index < cards.length) {
+      if (!next.waves.length) next.waves = [{ monsters: [] }];
+      const last = next.waves[next.waves.length - 1];
+      const sprite = last.monsters[0] && last.monsters[0].sprite || null;
+      while (index < cards.length) {
+        const card = cards[index];
+        last.monsters.push({ term: card.term, zh: card.zh, sprite: card.sprite || sprite, key: `s-extra-${index}` });
+        index += 1;
+      }
+    }
+    const bossCount = Math.min(cards.length, Math.max(4, ((level.boss && level.boss.hpWords) || []).length));
+    next.boss = Object.assign({}, level.boss, {
+      hpWords: cards.slice(0, bossCount).map((card, idx) => ({ term: card.term, zh: card.zh, key: `boss-${idx}` })),
+    });
+    const wordIndex = {};
+    cards.forEach((card) => {
+      wordIndex[card.term.toLowerCase()] = card.zh;
+    });
+    next.wordIndex = wordIndex;
+    return next;
+  }
+
+  function isWeakTerm(rec) {
+    return Boolean(rec) && Number(rec.wrong) >= WEAK_WRONG_IN;
+  }
+
+  function recordWeakAnswer(weakMap, term, result) {
+    const key = String(term || "").trim().toLowerCase();
+    const next = Object.assign({}, weakMap && typeof weakMap === "object" ? weakMap : {});
+    if (!key) return next;
+    if (result && result.skipped) return next;
+    const rec = Object.assign({ wrong: 0, streak: 0, dueAt: 0 }, next[key]);
+    if (result && result.correct) {
+      if (result.assisted) {
+        rec.streak = 0;
+      } else {
+        rec.streak = Number(rec.streak || 0) + 1;
+        if (rec.streak >= WEAK_STREAK_OUT) {
+          rec.wrong = 0;
+          rec.streak = 0;
+        }
+      }
+    } else {
+      rec.wrong = Number(rec.wrong || 0) + 1;
+      rec.streak = 0;
+    }
+    next[key] = rec;
+    return next;
   }
 
   function typingStep(session, key, target, ignoreCase) {
@@ -463,6 +750,9 @@
     SPEED_MULT,
     SLOW_MULT,
     MOVEMENT_SPEEDS,
+    MONSTER_AI,
+    monsterIntent,
+    canStartMelee,
     PACK,
     chaseAnchor,
     packSeparation,
@@ -491,6 +781,20 @@
     consumeAutoAim,
     consumeHint,
     hintLetter,
+    wordTagHits,
+    chooseThrowTarget,
+    resolvePlayVerb,
+    typingComplete,
+    throwLocked,
+    seekAutoAim,
+    inFacingCone,
+    chooseFanTarget,
+    fireTooClose,
+    typePadLetters,
+    listenRingHits,
+    chooseListenRing,
+    listenRingWalkHit,
+    armListenSpoken,
     canTalkQuizNpc,
     nextMapStage,
     canOpenBoss,
@@ -502,5 +806,10 @@
     resolvePickup,
     typingTarget,
     typingStep,
+    SESSION_CARD_LIMIT,
+    freezeSessionCards,
+    applyFrozenLevel,
+    recordWeakAnswer,
+    isWeakTerm,
   };
 });

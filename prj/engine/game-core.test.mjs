@@ -39,6 +39,68 @@ test("game-core：保持纯逻辑（无 DOM / 无存储 / 无 battle 以外的�
   assert.doesNotMatch(js, /bookplay_/);
 });
 
+test("wordTagHits / chooseThrowTarget：点谁飞谁，葫芦才改瞄配对怪", () => {
+  const a = { zh: "山", alive: true, id: "a" };
+  const b = { zh: "水", alive: true, id: "b" };
+  assert.equal(core.wordTagHits("山", "山"), true);
+  assert.equal(core.wordTagHits("山", "水"), false);
+  assert.equal(core.wordTagHits("", "山"), false);
+  const clicked = core.chooseThrowTarget(b, a, false);
+  assert.equal(clicked.target, b);
+  assert.equal(clicked.auto, false);
+  const gourd = core.chooseThrowTarget(b, a, true);
+  assert.equal(gourd.target, a);
+  assert.equal(gourd.auto, true);
+  const typed = core.chooseThrowTarget(null, a, false);
+  assert.equal(typed.target, a);
+});
+
+test("listen-rings playVerb：听音对准词环，走入匹配才收集", () => {
+  assert.equal(core.resolvePlayVerb(null), "tag-shoot");
+  assert.equal(core.resolvePlayVerb({}), "tag-shoot");
+  assert.equal(core.resolvePlayVerb({ playVerb: "listen-rings" }), "listen-rings");
+  assert.equal(core.resolvePlayVerb({ verb: "listen-rings" }), "listen-rings");
+  assert.equal(core.resolvePlayVerb({ playVerb: "type-lock" }), "type-lock");
+  assert.equal(core.resolvePlayVerb({ playVerb: "gourd-seek" }), "gourd-seek");
+  assert.equal(core.resolvePlayVerb({ playVerb: "tag-shoot" }), "tag-shoot");
+  assert.equal(core.resolvePlayVerb({ playVerb: "parkour" }), "tag-shoot");
+  assert.equal(core.resolvePlayVerb({ verb: "" }), "tag-shoot");
+
+  assert.equal(core.listenRingHits("", "apple"), false);
+  assert.equal(core.listenRingHits("apple", ""), false);
+  assert.equal(core.listenRingHits("  ", "apple"), false);
+  assert.equal(core.listenRingHits("apple", "pear"), false);
+  assert.equal(core.listenRingHits("Apple", "apple"), true);
+  assert.equal(core.listenRingHits("  apple  ", "APPLE"), true);
+
+  const rings = [
+    { term: "apple", collected: true, alive: true },
+    { term: "pear", collected: false, alive: false },
+    { term: "banana", collected: false },
+    { term: "apple", collected: false, alive: true },
+  ];
+  assert.equal(core.chooseListenRing(rings, "Apple"), rings[3]);
+  assert.equal(core.chooseListenRing(rings, "pear"), null);
+  assert.equal(core.chooseListenRing(rings, "banana"), rings[2]);
+  assert.equal(core.chooseListenRing(rings, "orange"), null);
+
+  const hero = { x: 10, y: 10 };
+  assert.equal(core.listenRingWalkHit(hero, { x: 10, y: 46 }, 36), true);
+  assert.equal(core.listenRingWalkHit(hero, { x: 10, y: 47 }, 36), false);
+  assert.equal(core.listenRingWalkHit(hero, { x: 10, y: 46 }), true);
+  assert.equal(core.listenRingWalkHit(null, { x: 10, y: 10 }), false);
+  assert.equal(core.listenRingWalkHit(hero, null), false);
+
+  const match = core.chooseListenRing(rings, "apple");
+  assert.ok(match && core.listenRingHits("apple", match.term) && core.listenRingWalkHit(hero, { x: 12, y: 10 }));
+  const miss = core.chooseListenRing(rings, "pear");
+  assert.equal(miss, null);
+
+  assert.equal(core.armListenSpoken(null, "  Apple  "), "Apple");
+  assert.equal(core.armListenSpoken("old", "   "), "");
+  assert.equal(core.armListenSpoken("old", ""), "");
+});
+
 test("typingStep：跟打本集英文，忽略大小写，错键不吞正确前缀", () => {
   let cur = { typed: "", wrong: "" };
   cur = core.typingStep(cur, "j", "journey", true);
@@ -55,6 +117,122 @@ test("typingStep：跟打本集英文，忽略大小写，错键不吞正确前�
   });
   assert.equal(cur.status, "complete");
   assert.equal(core.typingTarget("Jade Emperor"), "JadeEmperor");
+});
+
+test("冻本集 10 词：错词/弱词优先，最多 10 张，applyFrozenLevel 改波次", () => {
+  const cards = [];
+  for (let i = 1; i <= 14; i += 1) {
+    cards.push({ term: `w${i}`, zh: `词${i}` });
+  }
+  const frozen = core.freezeSessionCards(cards, {
+    maxCards: 10,
+    wrongWords: { w12: 3, w3: 1 },
+    weakWords: { w11: { wrong: 2, streak: 0 } },
+    unit: 0.1,
+  });
+  assert.equal(frozen.length, 10);
+  assert.equal(frozen[0].term, "w12");
+  assert.ok(frozen.some((card) => card.term === "w11"));
+  assert.equal(new Set(frozen.map((card) => card.term)).size, 10);
+  const small = core.freezeSessionCards(cards.slice(0, 4), { maxCards: 10 });
+  assert.equal(small.length, 4);
+  const level = {
+    previewWords: cards,
+    waves: [
+      { monsters: [{ term: "a", zh: "甲", sprite: "imp" }, { term: "b", zh: "乙", sprite: "imp" }] },
+      { monsters: [{ term: "c", zh: "丙", sprite: "imp" }, { term: "d", zh: "丁", sprite: "imp" }] },
+    ],
+    boss: { hpWords: [{ term: "a", zh: "甲" }, { term: "b", zh: "乙" }, { term: "c", zh: "丙" }, { term: "d", zh: "丁" }], taunts: [] },
+  };
+  const applied = core.applyFrozenLevel(level, frozen);
+  assert.equal(applied.sessionCards.length, 10);
+  assert.equal(applied.previewWords.length, 10);
+  const waveTerms = applied.waves.flatMap((wave) => wave.monsters.map((m) => m.term));
+  assert.equal(waveTerms.length, 10);
+  assert.equal(applied.boss.hpWords.length, 4);
+  assert.equal(applied.wordIndex[frozen[0].term.toLowerCase()], frozen[0].zh);
+});
+
+test("弱词：错≥2 进本，独立连对 3 出本，skipped 不动，assisted 不计连对", () => {
+  let weak = {};
+  weak = core.recordWeakAnswer(weak, "Apple", { correct: false });
+  assert.equal(core.isWeakTerm(weak.apple), false);
+  weak = core.recordWeakAnswer(weak, "apple", { correct: false });
+  assert.equal(core.isWeakTerm(weak.apple), true);
+  assert.equal(weak.apple.wrong, 2);
+  const skipped = core.recordWeakAnswer(weak, "apple", { skipped: true });
+  assert.equal(skipped.apple.wrong, 2);
+  weak = core.recordWeakAnswer(weak, "apple", { correct: true, assisted: true });
+  assert.equal(weak.apple.streak, 0);
+  assert.equal(core.isWeakTerm(weak.apple), true);
+  weak = core.recordWeakAnswer(weak, "apple", { correct: true });
+  weak = core.recordWeakAnswer(weak, "apple", { correct: true });
+  weak = core.recordWeakAnswer(weak, "apple", { correct: true });
+  assert.equal(core.isWeakTerm(weak.apple), false);
+  assert.equal(weak.apple.wrong, 0);
+});
+
+test("type-lock：未跟打完锁投掷；跟打条含下一个字母", () => {
+  assert.equal(core.throwLocked("tag-shoot", { typed: "" }, "job"), false);
+  assert.equal(core.throwLocked("type-lock", { typed: "" }, "job"), true);
+  assert.equal(core.throwLocked("type-lock", { typed: "jo" }, "job"), true);
+  assert.equal(core.throwLocked("type-lock", { typed: "job" }, "job"), false);
+  assert.equal(core.typingComplete({ typed: "job" }, "job"), true);
+  assert.equal(core.typingComplete({ typed: "" }, ""), true);
+  const pad = core.typePadLetters({ typed: "" }, "job");
+  assert.equal(pad.length, 6);
+  assert.equal(new Set(pad).size, 6);
+  assert.ok(pad.includes("J"));
+  const next = core.typePadLetters({ typed: "j" }, "job");
+  assert.ok(next.includes("O"));
+  const long = core.typePadLetters({ typed: "" }, "complaint");
+  assert.ok(long.includes("C"));
+  assert.equal(long.length, 6);
+});
+
+test("fire-ward：贴脸太近锁投掷，退开才能扔", () => {
+  assert.equal(core.resolvePlayVerb({ playVerb: "fire-ward" }), "fire-ward");
+  const hero = { x: 0.5, y: 0.5 };
+  const near = { x: 0.55, y: 0.5 };
+  const far = { x: 0.9, y: 0.5 };
+  assert.equal(core.fireTooClose("tag-shoot", hero, near), false);
+  assert.equal(core.fireTooClose("fire-ward", hero, near), true);
+  assert.equal(core.fireTooClose("fire-ward", hero, far), false);
+});
+
+test("fan-blow：只改瞄朝向锥里的配对小妖", () => {
+  assert.equal(core.resolvePlayVerb({ playVerb: "fan-blow" }), "fan-blow");
+  const hero = { x: 0.2, y: 0.5 };
+  const front = { x: 0.8, y: 0.5, zh: "风", alive: true };
+  const back = { x: 0.05, y: 0.5, zh: "风", alive: true };
+  const side = { x: 0.2, y: 0.9, zh: "火", alive: true };
+  assert.equal(core.inFacingCone(hero, front, "east"), true);
+  assert.equal(core.inFacingCone(hero, back, "east"), false);
+  const aimed = core.chooseFanTarget(hero, [front, back, side], "风", "east");
+  assert.equal(aimed, front);
+  const none = core.chooseFanTarget(hero, [back, side], "风", "east");
+  assert.equal(none, null);
+  const seek = core.seekAutoAim("fan-blow", { autoAimShots: 2 });
+  assert.equal(seek.armed, true);
+  assert.equal(seek.buffs.autoAimShots, 2);
+});
+
+test("gourd-seek：整集改瞄，不消耗葫芦次数", () => {
+  const seek = core.seekAutoAim("gourd-seek", { autoAimShots: 2 });
+  assert.equal(seek.armed, true);
+  assert.equal(seek.consumed, false);
+  assert.equal(seek.buffs.autoAimShots, 2);
+  const gourd = core.seekAutoAim("tag-shoot", { autoAimShots: 2 });
+  assert.equal(gourd.armed, true);
+  assert.equal(gourd.consumed, true);
+  assert.equal(gourd.buffs.autoAimShots, 1);
+  const empty = core.seekAutoAim("type-lock", { autoAimShots: 0 });
+  assert.equal(empty.armed, false);
+  const clicked = { zh: "水", alive: true };
+  const matched = { zh: "山", alive: true };
+  const aimed = core.chooseThrowTarget(clicked, matched, seek.armed);
+  assert.equal(aimed.target, matched);
+  assert.equal(aimed.auto, true);
 });
 
 test("WORLD_TILES：4×4 大世界，区域编号不写死 3", () => {
@@ -83,14 +261,26 @@ test("facingFromIntent：主轴定四向，斜向不另开方向", () => {
   assert.equal(core.facingFromIntent(0, 0), null);
 });
 
-test("movementSpeeds：主角与小怪采用可玩的行走档位（2026-09-07 用户反馈提速）", () => {
+test("movementSpeeds：主角保持儿童走速，小怪追击明显更慢", () => {
   assert.deepEqual(core.MOVEMENT_SPEEDS, {
     hero: 0.6,
-    monsterWander: 0.22,
-    monsterChase: 0.45,
+    monsterWander: 0.12,
+    monsterChase: 0.28,
   });
   assert.ok(core.MOVEMENT_SPEEDS.hero >= 0.5 && core.MOVEMENT_SPEEDS.hero <= 0.8, "主角 1.5-2s 走完一屏（儿童向定档）");
-  assert.ok(core.MOVEMENT_SPEEDS.monsterChase >= 0.3 && core.MOVEMENT_SPEEDS.monsterChase < core.MOVEMENT_SPEEDS.hero, "追击跟得上但不快过主角");
+  assert.ok(core.MOVEMENT_SPEEDS.monsterChase < core.MOVEMENT_SPEEDS.hero * 0.55, "追击不超过主角一半多，孩子能风筝");
+  assert.ok(core.MOVEMENT_SPEEDS.monsterWander < core.MOVEMENT_SPEEDS.monsterChase);
+});
+
+test("monsterIntent / canStartMelee：远游近追，接触才挥招", () => {
+  assert.equal(core.monsterIntent(0.8, 0.42, false), "wander");
+  assert.equal(core.monsterIntent(0.2, 0.42, false), "chase");
+  assert.equal(core.monsterIntent(0.2, 0.42, true), "flee");
+  assert.equal(core.canStartMelee(1000, 0.05, 0.07, 0, 0, false), true);
+  assert.equal(core.canStartMelee(1000, 0.2, 0.07, 0, 0, false), false);
+  assert.equal(core.canStartMelee(1000, 0.05, 0.07, 1500, 0, false), false);
+  assert.equal(core.canStartMelee(1000, 0.05, 0.07, 0, 0, true), false);
+  assert.ok(core.MONSTER_AI.windupMs >= 300);
 });
 
 test("PACK：同一套占位规则，追击槽位互不重叠", () => {

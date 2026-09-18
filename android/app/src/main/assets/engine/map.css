@@ -1309,8 +1309,8 @@ body.map-terminal .terminal-stage .node.drill {
   body.map-terminal .terminal-stage .episode-title { font-size: 0.64rem; }
 }
 
-/* ---- 集详情弹层（2026-09-12 选关改版）----
- * 点击集卡片弹出：大封面 + 标题 + 进入故事 + 三个学习入口。
+/* ---- 集详情弹层 ----
+ * 点击集卡片弹出：大封面 + 标题 + 学习 / 磨耳朵 / 地图。
  * TV/触屏双适配：按钮 ≥64px、焦点环走 tv.css。 */
 .episode-detail {
   position: fixed;
@@ -1396,6 +1396,9 @@ body.map-terminal .terminal-stage .node.drill {
 
 .episode-detail-actions { display: grid; gap: 12px; }
 
+.episode-detail-modes { display: grid; gap: 10px; }
+
+.episode-detail-mode,
 .episode-detail-primary {
   display: flex;
   align-items: center;
@@ -1410,9 +1413,21 @@ body.map-terminal .terminal-stage .node.drill {
   box-shadow: 0 8px 20px rgba(232, 161, 58, 0.35);
 }
 
+.episode-detail-mode:nth-child(2) {
+  background: linear-gradient(180deg, #8fd4c8, #3f8f7a);
+  color: #06332b;
+  box-shadow: 0 8px 20px rgba(63, 143, 122, 0.3);
+}
+
+.episode-detail-mode:nth-child(3) {
+  background: linear-gradient(180deg, #ffb07a, #e86a2a);
+  color: #4a2200;
+  box-shadow: 0 8px 20px rgba(232, 106, 42, 0.3);
+}
+
 .episode-detail-options {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 10px;
 }
 
@@ -1434,6 +1449,8 @@ body.map-terminal .terminal-stage .node.drill {
 
 .episode-detail-option:hover,
 .episode-detail-option:focus-visible,
+.episode-detail-mode:hover,
+.episode-detail-mode:focus-visible,
 .episode-detail-primary:hover,
 .episode-detail-primary:focus-visible {
   outline: none;
@@ -1447,6 +1464,15 @@ body.map-terminal .terminal-stage .node.drill {
 
 @media (max-width: 560px) {
   .episode-detail-options { grid-template-columns: 1fr; }
+}
+
+@media (max-height: 520px) {
+  .episode-detail { padding: 10px; }
+  .episode-detail-cover { width: min(168px, 38%); margin-bottom: 8px; }
+  .episode-detail-en { margin-bottom: 10px; }
+  .episode-detail-mode,
+  .episode-detail-primary { min-height: 52px; font-size: 17px; }
+  .episode-detail-option { min-height: 48px; }
 }
 
 /* ---- 2026-09-12 全屏改版 ----
@@ -1478,12 +1504,64 @@ body.map-terminal .terminal-stage {
   box-shadow: none;
 }
 
-/* 音频控件浮在右上角 */
-#map-audio-float {
+/* 设置 + 音频浮在右上角 */
+#map-tools {
   position: fixed;
   z-index: 40;
   top: 10px;
   right: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+#map-settings {
+  position: relative;
+}
+
+#map-settings summary {
+  list-style: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0 14px;
+  border-radius: 999px;
+  border: 2px solid rgba(255, 215, 106, 0.7);
+  background: rgba(18, 24, 44, 0.88);
+  color: #ffd76a;
+  font: 700 15px/1 "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+
+#map-settings summary::-webkit-details-marker { display: none; }
+
+#map-settings .app-settings-panel {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 8px);
+  display: grid;
+  gap: 8px;
+  min-width: 148px;
+  padding: 10px;
+  border-radius: 14px;
+  border: 2px solid rgba(255, 215, 106, 0.55);
+  background: rgba(18, 24, 44, 0.96);
+}
+
+#map-settings .app-settings-panel button {
+  min-height: 44px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 215, 106, 0.55);
+  background: rgba(255, 215, 106, 0.16);
+  color: #ffd76a;
+  font: 700 14px/1.2 "PingFang SC", "Microsoft YaHei", sans-serif;
+  cursor: pointer;
+}
+
+#map-audio-float {
+  position: static;
 }
 
 #map-audio-float .app-audio-controls {

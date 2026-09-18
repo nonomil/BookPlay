@@ -16,10 +16,10 @@ test("map exposes one page-level continue action for the current learning state"
 
 test("jttw's battle entry opens the word-memory map before the Boss battle", () => {
   const js = read("map.js");
-  // 2026-09-12 选关改版：打怪入口从卡片面挪进集详情弹层
+  // 集卡片弹层把大地图列为第三入口，不再叫打怪
   assert.doesNotMatch(js, /class="node-battle"/, "卡片面不再内嵌打怪链接");
-  assert.match(js, /episode-detail-option[^>]*>⚔️ 打怪/);
-  assert.match(js, /game\.html\?ep=\$\{n\}/, "详情弹层内打怪指向 game.html 大地图");
+  assert.match(js, /episode-detail-mode[^>]*>地图/);
+  assert.match(js, /game\.html\?ep=\$\{n\}/, "详情弹层内地图指向 game.html 大地图");
 });
 
 test("splash companion card exposes recent earned medals beside the cover", () => {

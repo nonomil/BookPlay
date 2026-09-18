@@ -1,5 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
+import { readFileSync } from "node:fs";
 import core from "./lesson-core.js";
 
 function word(id, term, zh = `${term} 的意思`) {
@@ -14,6 +15,25 @@ function word(id, term, zh = `${term} 的意思`) {
     payload: { term, gloss: zh, def: zh },
   };
 }
+
+test("episode maps to the JTTW collection drill href, never ?ep=", () => {
+  assert.equal(core.collectionIdForEpisode(1), "c01");
+  assert.equal(core.collectionIdForEpisode(7), "c01");
+  assert.equal(core.collectionIdForEpisode(8), "c02");
+  assert.equal(core.collectionIdForEpisode(54), "c07");
+  assert.equal(core.collectionIdForEpisode(108), "c13");
+  assert.equal(core.isCollectionLastEpisode(7), true);
+  assert.equal(core.isCollectionLastEpisode(6), false);
+  assert.equal(core.drillHrefForEpisode(3), "drill.html?c=c01");
+  assert.doesNotMatch(core.drillHrefForEpisode(3), /[?&]ep=/);
+});
+
+test("lesson result page never links drill.html?ep=", () => {
+  const js = readFileSync(new URL("./lesson.js", import.meta.url), "utf8");
+  assert.doesNotMatch(js, /drill\.html\?ep=/);
+  assert.match(js, /drillHrefForEpisode/);
+  assert.match(js, /去本辑巩固/);
+});
 
 test("study session chooses one stable word set for study and quiz", () => {
   const cards = [word("w1", "river"), word("w2", "stone"), word("w3", "climb")];

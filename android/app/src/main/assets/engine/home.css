@@ -72,17 +72,19 @@ body { overflow: auto; }
 #search {
   font: inherit;
   width: min(320px, 80vw);
+  min-height: 44px;
   padding: 0.45rem 0.8rem;
   border-radius: 8px;
   border: 1px solid rgba(201, 162, 39, 0.45);
   background: #221b16;
   color: var(--cream);
 }
-.sb-link { color: var(--gold); text-decoration: none; }
+.sb-link { color: var(--gold); text-decoration: none; min-height: 44px; display: inline-flex; align-items: center; }
 .w-nav-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  min-height: 44px;
   padding: 0.28rem 0.85rem;
   border: 2px solid #e8c25a;
   border-radius: 10px;
@@ -93,7 +95,8 @@ body { overflow: auto; }
   text-decoration: none;
   line-height: 1.2;
 }
-.w-nav-btn:hover { background: rgba(201, 162, 39, 0.28); color: #fff4c8; }
+.w-nav-btn:hover,
+.w-nav-btn:focus-visible { background: rgba(201, 162, 39, 0.28); color: #fff4c8; }
 
 #grid {
   display: grid;
@@ -113,6 +116,17 @@ body { overflow: auto; }
 }
 .card-main { display: block; color: inherit; text-decoration: none; }
 .card img { width: 100%; height: 210px; object-fit: cover; background: #111; }
+
+@media (max-height: 520px) and (orientation: landscape) {
+  .home-hero .hero-art {
+    aspect-ratio: auto;
+    height: 120px;
+    max-height: 28vh;
+    object-fit: cover;
+  }
+  .home-hero h1 { font-size: 1.35rem; }
+  .card img { height: 96px; }
+}
 .card .meta { padding: 0.55rem 0.65rem 0.75rem; }
 .card .ep { color: var(--gold); font-size: 0.75rem; }
 .card .name { font-size: 0.92rem; line-height: 1.35; }
@@ -129,7 +143,7 @@ body { overflow: auto; }
   display: inline-flex;
   align-items: center;
   gap: 0.22rem;
-  min-height: 30px;
+  min-height: 44px;
   padding: 0.2rem 0.58rem;
   border: 1px solid rgba(159, 139, 255, 0.58);
   border-radius: 999px;
@@ -160,7 +174,7 @@ body { overflow: auto; }
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  background-attachment: scroll;
 }
 .shelf-app {
   padding-top: 1rem;
@@ -277,6 +291,59 @@ body { overflow: auto; }
   background: rgba(255, 248, 226, 0.78);
   border-radius: 999px;
   box-shadow: 0 4px 14px rgba(60, 40, 16, 0.1);
+}
+.app-settings {
+  position: relative;
+  text-align: left;
+  z-index: 6;
+}
+.app-settings summary {
+  list-style: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0 14px;
+  border-radius: 999px;
+  border: 2px solid #ffd867;
+  background: rgba(255, 250, 235, 0.94);
+  color: #5b4636;
+  font: 700 15px/1 "Nunito", "Microsoft YaHei", sans-serif;
+}
+.app-settings summary::-webkit-details-marker { display: none; }
+.app-settings-panel {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 8px);
+  display: grid;
+  gap: 8px;
+  min-width: 148px;
+  padding: 10px;
+  border-radius: 14px;
+  border: 2px solid #ffd867;
+  background: rgba(255, 250, 235, 0.97);
+  box-shadow: 0 10px 24px rgba(20, 40, 24, 0.22);
+}
+.app-settings-panel button,
+.app-settings-panel a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0 12px;
+  border-radius: 10px;
+  border: 1px solid #d7b24a;
+  background: #fff8e2;
+  color: #5b4636;
+  font: 700 14px/1.2 "Nunito", "Microsoft YaHei", sans-serif;
+  text-decoration: none;
+  cursor: pointer;
+}
+.library-settings {
+  position: absolute;
+  top: 12px;
+  right: 12px;
 }
 .book-grid {
   position: relative;

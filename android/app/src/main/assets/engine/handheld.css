@@ -1,0 +1,323 @@
+/*
+ * X35S / pocket landscape: 640×480, no hover, no TV 10-foot layer.
+ * tv.css only activates at min-width 1000px, so this file owns the handheld canvas.
+ * Trigger: html[data-handheld] (JS) or a short landscape viewport (CSS-only).
+ */
+
+html[data-handheld] {
+  --handheld-hit: 44px;
+}
+
+html[data-handheld] button,
+html[data-handheld] a,
+html[data-handheld] [role="button"],
+html[data-handheld] select,
+html[data-handheld] .opt,
+html[data-handheld] .game-hudbtn {
+  min-height: var(--handheld-hit, 44px);
+}
+
+html[data-handheld] .subtitle a,
+html[data-handheld] .hint a,
+html[data-handheld] .brand-en + .subtitle a {
+  display: inline-flex;
+  align-items: center;
+  min-height: var(--handheld-hit, 44px);
+}
+
+html[data-handheld] :focus-visible {
+  outline: 3px solid #ffd76a;
+  outline-offset: 3px;
+}
+
+/* Start opens the mapping panel; the corner mouse button steals the 640×480 HUD. */
+#x35s-open { display: none !important; }
+html[data-handheld] #x35s-open {
+  display: none;
+}
+
+html[data-handheld] .app-audio-controls {
+  right: 8px;
+  bottom: 8px;
+  transform-origin: bottom right;
+}
+
+html[data-handheld] .app-audio-controls button {
+  min-height: 44px;
+}
+
+html[data-handheld] .home-app,
+html[data-handheld] .library-app,
+html[data-handheld] .shelf-app {
+  padding: 0.55rem 0.7rem 1.1rem;
+}
+
+html[data-handheld] .home-hero {
+  margin-bottom: 0.5rem;
+  max-height: none;
+}
+
+html[data-handheld] .home-hero .hero-art {
+  aspect-ratio: auto;
+  height: 96px;
+  max-height: 96px;
+  object-fit: cover;
+}
+
+html[data-handheld] .home-hero .hero-body {
+  padding: 8px 12px;
+}
+
+html[data-handheld] .library-hero {
+  min-height: 0;
+  height: auto;
+  overflow: visible;
+  margin-bottom: 0;
+}
+
+html[data-handheld] .library-scene {
+  position: absolute;
+  inset: 0;
+  height: auto;
+  max-height: none;
+  object-fit: cover;
+  opacity: 0.45;
+}
+
+html[data-handheld] .library-brand {
+  padding: 8px 12px 6px;
+}
+
+html[data-handheld] .book-card img {
+  height: 84px;
+}
+
+html[data-handheld] .home-hero h1,
+html[data-handheld] .library-brand h1 {
+  font-size: 1.35rem;
+}
+
+html[data-handheld] #grid,
+html[data-handheld] .book-grid {
+  grid-template-columns: repeat(auto-fill, minmax(132px, 1fr));
+  gap: 0.55rem;
+}
+
+html[data-handheld] .card img {
+  height: 84px;
+}
+
+html[data-handheld] #search,
+html[data-handheld] .w-nav-btn,
+html[data-handheld] .card-listen,
+html[data-handheld] .sb-link,
+html[data-handheld] #btn-wordbook {
+  min-height: 44px;
+}
+
+html[data-handheld] #w-top {
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+html[data-handheld] #w-ep-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 22vw;
+}
+
+html[data-handheld] .w-coin.small {
+  display: none;
+}
+
+html[data-handheld] .w-arrow,
+html[data-handheld] #w-gear,
+html[data-handheld] .mode-toggle button {
+  min-width: 44px;
+  min-height: 44px;
+}
+
+html[data-handheld] .w-arrow,
+html[data-handheld] #w-gear {
+  width: 44px;
+  height: 44px;
+}
+
+html[data-handheld] .w-inline-nav {
+  display: flex;
+  align-items: center;
+}
+
+html[data-handheld] .w-inline-nav-prev {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+html[data-handheld] .w-inline-nav-next {
+  grid-column: 3;
+  grid-row: 1;
+  justify-self: end;
+}
+
+html[data-handheld] #w-top,
+html[data-handheld] #map-top,
+html[data-handheld] #topbar,
+html[data-handheld] .lesson-shell header,
+html[data-handheld] .drill-body header {
+  min-height: 44px;
+  padding: 4px 8px;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+html[data-handheld] .game-entity {
+  width: clamp(64px, 11vw, 112px);
+}
+
+html[data-handheld] .game-hudbtn {
+  min-width: 44px;
+  min-height: 44px;
+  padding: 6px 8px;
+  font-size: 13px;
+}
+
+html[data-handheld] #x35s-panel {
+  inset: 8px;
+  font-size: 15px;
+  padding: 10px;
+}
+
+html[data-handheld] #x35s-panel h2 {
+  font-size: 18px;
+}
+
+html[data-handheld] .library-settings,
+html[data-handheld] #map-settings {
+  top: 8px;
+  right: 8px;
+}
+
+html[data-handheld] .episode-detail {
+  padding: 8px;
+}
+
+html[data-handheld] .episode-detail-cover {
+  width: min(150px, 36%);
+}
+
+html[data-handheld] .episode-detail-mode {
+  min-height: 48px;
+}
+
+html[data-handheld] .title-card {
+  width: min(560px, 96vw);
+  padding: 0.7rem 0.9rem 0.85rem;
+  margin-bottom: 2vh;
+  background: rgba(20, 14, 9, 0.88);
+}
+
+html[data-handheld] .title-card h1 {
+  font-size: 1.35rem;
+}
+
+/* 640×480: HUD pills stay one scrollable row and keep 44px hits. */
+html[data-handheld] .game-hud,
+html[data-handheld] .battle-hud {
+  gap: 4px;
+  padding: 4px 6px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  font-size: 13px;
+}
+
+html[data-handheld] .game-pill,
+html[data-handheld] .battle-progress,
+html[data-handheld] .battle-combo {
+  min-height: 44px;
+  padding: 4px 10px;
+  flex: 0 0 auto;
+}
+
+html[data-handheld] .game-carried strong {
+  max-width: 14vw;
+}
+
+html[data-handheld] .game-hudbtn,
+html[data-handheld] .game-exit,
+html[data-handheld] .battle-exit {
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0 8px;
+  font-size: 14px;
+}
+
+html[data-handheld] .battle-hud > * {
+  min-height: 44px;
+}
+
+html[data-handheld] .game-route {
+  gap: 4px;
+  padding: 4px 6px;
+}
+
+html[data-handheld] .game-route-node {
+  min-height: 44px;
+  padding: 4px 8px;
+}
+
+html[data-handheld] .game-typepad {
+  bottom: 6px;
+  max-width: calc(100vw - 12px);
+  padding: 4px;
+  gap: 4px;
+}
+
+html[data-handheld] .game-typekey {
+  min-width: 44px;
+  min-height: 44px;
+  font-size: 16px;
+}
+
+html[data-handheld] .game-supports {
+  top: calc(48px + env(safe-area-inset-top, 0));
+  gap: 4px;
+}
+
+html[data-handheld] .game-supports button {
+  min-width: 44px;
+  min-height: 44px;
+  width: 44px;
+  height: 44px;
+  padding: 2px;
+  border-radius: 10px;
+}
+
+html[data-handheld] .battle-race {
+  height: 12px;
+  width: min(420px, 86vw);
+}
+
+html[data-handheld] .menu button.primary,
+html[data-handheld] .menu a.primary {
+  min-width: 196px;
+}
+
+@media (max-height: 520px) and (orientation: landscape) {
+  html:not([data-tv]) {
+    --handheld-hit: 44px;
+  }
+
+  html:not([data-tv]) button,
+  html:not([data-tv]) a,
+  html:not([data-tv]) [role="button"],
+  html:not([data-tv]) select {
+    min-height: var(--handheld-hit, 44px);
+  }
+
+  html:not([data-tv]) :focus-visible {
+    outline: 3px solid #ffd76a;
+    outline-offset: 3px;
+  }
+}

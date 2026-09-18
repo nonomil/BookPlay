@@ -1,14 +1,17 @@
 <!doctype html>
 <html lang="zh-CN">
 <head>
+  <script src="./native-key.js"></script>
+  <script defer src="./handheld-controls.js" data-app="bookplay"></script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>降妖记·大地图 | 豆豆龙英语</title>
   <link rel="icon" href="data:,">
   <link rel="stylesheet" href="tv.css?v=game-1">
+  <link rel="stylesheet" href="handheld.css?v=4">
   <link rel="stylesheet" href="app-audio.css?v=1">
   <link rel="stylesheet" href="battle.css?v=battle-3">
-  <link rel="stylesheet" href="game.css?v=game-9">
+  <link rel="stylesheet" href="game.css?v=game-12">
 </head>
 <body data-audio-scene="jttw" data-audio-volume="0.30">
   <main class="game" id="game-root">
@@ -50,6 +53,7 @@
     </nav>
     <aside class="game-supports" id="game-supports" aria-label="支援道具"></aside>
     <aside class="game-hintcard" id="game-hintcard" hidden aria-live="polite"></aside>
+    <nav class="game-typepad" id="game-typepad" hidden aria-label="跟打键盘"></nav>
 
     <div class="game-joystick" id="game-joystick" aria-hidden="true"><div class="game-stick" id="game-stick"></div></div>
     <div class="game-dpad-hint" id="game-dpad-hint" aria-hidden="true">方向键移动 · 走过词球捡起 · 点小妖投掷</div>
@@ -73,6 +77,7 @@
       <h2 class="battle-panel-title">休息一下</h2>
       <button type="button" class="game-primary" id="game-resume" tabindex="0">继续冒险</button>
       <button type="button" class="battle-secondary" id="game-restart" tabindex="0">重玩本集</button>
+      <button type="button" class="battle-secondary" data-open-handheld tabindex="0">掌机按键</button>
       <button type="button" class="battle-secondary" id="game-map" tabindex="0">回地图</button>
     </section>
     <section class="game-panel game-gate" id="game-gate" hidden aria-live="polite"></section>
@@ -80,6 +85,7 @@
   </main>
 
   <script src="app-audio.js?v=2"></script>
+  <script src="content-gate.js?v=2"></script>
   <script src="tv-remote.js?v=game-1"></script>
   <script src="battle-core.js?v=battle-4"></script>
   <script src="game-core.js?v=game-15"></script>

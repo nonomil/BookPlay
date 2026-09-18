@@ -1,12 +1,15 @@
 <!doctype html>
 <html lang="zh-CN">
 <head>
+  <script src="./native-key.js"></script>
+  <script defer src="./handheld-controls.js" data-app="bookplay"></script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>降妖记 | 豆豆龙英语</title>
   <link rel="icon" href="data:,">
   <link rel="stylesheet" href="tv.css?v=battle-1">
-  <link rel="stylesheet" href="battle.css?v=battle-5">
+  <link rel="stylesheet" href="handheld.css?v=4">
+  <link rel="stylesheet" href="battle.css?v=battle-6">
   <link rel="stylesheet" href="app-audio.css?v=2">
   <script src="app-audio.js?v=3"></script>
 </head>
@@ -36,7 +39,11 @@
       <p class="battle-prompt-kicker" id="battle-prompt-kicker">答对就出招</p>
       <h2 class="battle-prompt-main" id="battle-prompt-main"></h2>
       <p class="battle-prompt-sub" id="battle-prompt-sub"></p>
+      <div class="battle-race" id="battle-race" hidden aria-label="抢答倒计时">
+        <span class="battle-race-fill" id="battle-race-fill"></span>
+      </div>
       <button type="button" class="battle-listen" id="battle-listen" hidden>🔊 再听一遍</button>
+      <button type="button" class="battle-skip" id="battle-skip" hidden>不会</button>
     </section>
     <p class="battle-turn" id="battle-turn" hidden>悟空回合</p>
 
@@ -86,6 +93,7 @@
       <span data-audio-settings-slot></span>
       <button type="button" class="battle-primary" id="battle-resume" tabindex="0">继续战斗</button>
       <button type="button" class="battle-secondary" id="battle-restart" tabindex="0">重玩本集</button>
+      <button type="button" class="battle-secondary" data-open-handheld tabindex="0">掌机按键</button>
       <button type="button" class="battle-secondary" id="battle-map" tabindex="0">回地图</button>
     </section>
 
@@ -94,12 +102,13 @@
     <div class="battle-toast" id="battle-toast" hidden aria-live="polite"></div>
   </main>
 
+  <script src="content-gate.js?v=2"></script>
   <script src="tv-remote.js?v=battle-1"></script>
   <script src="episode-vocab-quiz.js?v=battle-1"></script>
-  <script src="battle-core.js?v=battle-9"></script>
+  <script src="battle-core.js?v=battle-10"></script>
   <script src="game-core.js?v=game-9"></script>
   <script src="game-audio.js?v=game-1"></script>
   <script src="collection-core.js?v=dex-1"></script>
-  <script src="battle.js?v=battle-8"></script>
+  <script src="battle.js?v=battle-9"></script>
 </body>
 </html>

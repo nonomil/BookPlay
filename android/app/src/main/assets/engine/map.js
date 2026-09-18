@@ -1217,12 +1217,18 @@ function bindCompanionNavigation(route) {
     const link = node.querySelector("a.node-main");
     if (!link) return;
     link.addEventListener("click", (event) => {
-      if (route._walking) { event.preventDefault(); return; }
+      event.preventDefault();
+      event.stopPropagation();
+      if (route._walking) return;
       const nodes = [...route.querySelectorAll(".node")]; // NodeList→数组：companionIndex 需要 findIndex
       const current = Math.max(0, Math.min(nodes.length - 1, companionIndex(nodes)));
-      if (index === current || node.classList.contains("locked")) return;
-      event.preventDefault();
-      walkCompanionTo(route, index, () => { window.location.href = link.href; });
+      const n = Number(link.dataset.detail);
+      const show = () => { if (n) openEpisodeDetail(n); };
+      if (index === current || node.classList.contains("locked") || !n) {
+        show();
+        return;
+      }
+      walkCompanionTo(route, index, show);
     });
   });
 }
@@ -1358,15 +1364,15 @@ function epCard(n, state, worldNode) {
         <b class="episode-title"><span class="episode-number">第${n}${SERIES.unit}</span><span class="episode-name">${label}</span></b>
         <span class="episode-en" lang="en">${subtitle}</span>
       </span>`;
-  // 2026-09-12 选关改版：卡片面只留封面+标题；磨耳朵/配音/打怪挪进集详情弹层
-  // （openEpisodeDetail）。node-main 保留 href 作为无 JS 回退，点击被拦截开弹层。
+  // 卡片面只留封面+标题；学习/磨耳朵/地图在集详情弹层三选一。
+  // node-main 保留 href 作为无 JS 回退，点击被拦截开弹层。
   const nodeAttrs = `data-episode="${n}" data-node-world="${worldId}" data-node-id="${n}"`;
   return state === "locked"
     ? `<article class="node locked" data-lock="ep" ${nodeAttrs}>${content}</article>`
     : `<article class="node ${state}" ${nodeAttrs}><a class="node-main" data-detail="${n}" href="${SERIES.href(n)}" aria-label="查看${label}详情">${content}</a></article>`;
 }
 
-/* ---- 集详情弹层：大封面 + 标题 + 进入故事 + 三个学习入口 ---- */
+/* ---- 集详情弹层：大封面 + 标题 + 学习 / 磨耳朵 / 地图 ---- */
 let detailEl = null;
 function openEpisodeDetail(n) {
   const m = epMeta(n);
@@ -1385,6 +1391,17 @@ function openEpisodeDetail(n) {
     });
   }
   const done = epDone(n);
+  const collection = cols.find((item) => Number(item.from) <= n && n <= Number(item.to));
+  const prevCollection = collection
+    ? cols.find((item) => Number(item.index) === Number(collection.index) - 1)
+    : null;
+  const drillReady = Boolean(
+    SERIES.hasDrill && collection && collection.has_drill !== false && drillUnlocked(collection, prevCollection)
+  );
+  const drillCurrent = drillReady && colDone(collection) && !drillDone(collection);
+  const drillLink = drillReady
+    ? `<a class="episode-detail-option${drillCurrent ? " is-ready" : ""}" href="drill.html?c=${collection.id}" tabindex="0">★ 本辑巩固</a>`
+    : "";
   detailEl.innerHTML = `
     <div class="episode-detail-card" role="dialog" aria-modal="true" aria-label="第${n}${SERIES.unit}详情">
       <button type="button" class="episode-detail-close" aria-label="关闭" tabindex="0">✕</button>
@@ -1393,11 +1410,14 @@ function openEpisodeDetail(n) {
       <h2 class="episode-detail-title" lang="zh">${m.zh}</h2>
       <p class="episode-detail-en" lang="en">${m.en}</p>
       <div class="episode-detail-actions">
-        <a class="episode-detail-primary" href="${SERIES.href(n)}" tabindex="0">▶ 进入故事</a>
+        <div class="episode-detail-modes">
+          <a class="episode-detail-mode" href="${SERIES.href(n)}" tabindex="0">学习</a>
+          <a class="episode-detail-mode" href="wala.html?ep=${n}&mode=listen&loops=2&visual=audio&subtitle=enzh" tabindex="0">磨耳朵</a>
+          <a class="episode-detail-mode" href="game.html?ep=${n}" tabindex="0">地图</a>
+        </div>
         <div class="episode-detail-options">
-          <a class="episode-detail-option" href="wala.html?ep=${n}&mode=listen&loops=2&visual=audio&subtitle=enzh" tabindex="0">🎧 磨耳朵</a>
-          <a class="episode-detail-option" href="dub.html?ep=${n}" tabindex="0">🎙 配音</a>
-          <a class="episode-detail-option" href="game.html?ep=${n}" tabindex="0">⚔️ 打怪</a>
+          <a class="episode-detail-option" href="dub.html?ep=${n}" tabindex="0">配音</a>
+          ${drillLink}
         </div>
       </div>
     </div>`;

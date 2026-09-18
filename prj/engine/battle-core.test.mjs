@@ -137,6 +137,12 @@ test("buildWaveQuestions 越界返回空数组", () => {
   assert.deepEqual(core.buildWaveQuestions(level, 9, {}), []);
 });
 
+test("formSimilarity：形近词相似度高于无关词", () => {
+  assert.ok(core.formSimilarity("demon", "lemon") > core.formSimilarity("demon", "zzzzzz"));
+  assert.ok(core.formSimilarity("山", "出") >= 0);
+  assert.equal(core.formSimilarity("", "x"), 0);
+});
+
 test("buildOrbSet 返回 3 球且确定性", () => {
   const level = core.buildLevel(miniLevel());
   const all = level.previewWords;
@@ -348,4 +354,22 @@ test("护体挡一次伤害，未护体扣一格血", () => {
   const hit = core.applyIncomingHit({ shield: 3, defendArmed: false });
   assert.equal(hit.blocked, false);
   assert.equal(hit.shield, 2);
+});
+
+test("Boss 抢答：10 秒窗、越往后妖怪越快越准，玩家同时点优先", () => {
+  assert.equal(core.RACE_MS, 10000);
+  assert.equal(core.rivalThinkMs(0, 8, 0), 6000);
+  assert.equal(core.rivalThinkMs(0, 8, 1), 9000);
+  assert.equal(core.rivalThinkMs(7, 8, 0), 2600);
+  assert.equal(core.rivalThinkMs(7, 8, 1), 4200);
+  assert.equal(core.rivalAccuracy(0, 8), 0.7);
+  assert.equal(core.rivalAccuracy(7, 8), 0.92);
+  assert.equal(typeof core.rivalHits(1, 1), "boolean");
+  assert.equal(core.rivalHits(1, 1), true);
+  assert.equal(core.rivalHits(1, 0), false);
+  assert.equal(core.resolveRaceEvent({ now: 1000, deadlineAt: 10000, rivalAt: 7000, playerAt: null }), "pending");
+  assert.equal(core.resolveRaceEvent({ now: 8000, deadlineAt: 10000, rivalAt: 7000, playerAt: 7500 }), "rival");
+  assert.equal(core.resolveRaceEvent({ now: 8000, deadlineAt: 10000, rivalAt: 7000, playerAt: 6500 }), "player");
+  assert.equal(core.resolveRaceEvent({ now: 7000, deadlineAt: 10000, rivalAt: 7000, playerAt: 7000 }), "player");
+  assert.equal(core.resolveRaceEvent({ now: 11000, deadlineAt: 10000, rivalAt: 12000, playerAt: null }), "timeout");
 });

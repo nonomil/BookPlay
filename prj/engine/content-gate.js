@@ -57,7 +57,7 @@
     const choose = async (method, waiting) => {
       const pack = plugin();
       if (!pack || typeof pack[method] !== "function") {
-        status.textContent = "请在 APK 中选择数据包；桌面端请用启动服务.bat。";
+        status.textContent = "请在 APK 中选择数据包；桌面请打开 setup.html 或用启动服务.bat。";
         return;
       }
       status.textContent = waiting;
@@ -110,6 +110,41 @@
     return !(await payloadExists(series, id));
   }
 
+  const PAGE_EP = {
+    "lesson.html": "jttw",
+    "lesson-words.html": "jttw",
+    "dub.html": "jttw",
+    "parent.html": "jttw",
+    "game.html": "jttw",
+    "battle.html": "jttw",
+    "wala.html": "jttw",
+    "adventure.html": "jttw",
+  };
+  const DRILL_START = {
+    c01: 1, c02: 8, c03: 14, c04: 24, c05: 32, c06: 40, c07: 49,
+    c08: 55, c09: 64, c10: 72, c11: 80, c12: 92, c13: 100,
+  };
+
+  function targetFromUrl(href, base) {
+    let url;
+    try { url = new URL(href, base || "http://local/engine/"); } catch (_) { return null; }
+    const name = url.pathname.split("/").pop();
+    if (name === "storybook.html") {
+      const series = url.searchParams.get("series") || "jttw";
+      const raw = url.searchParams.get(series === "jttw" ? "ep" : "book");
+      return raw && /^\d+$/.test(raw) ? { series, id: Number(raw), href: url.href } : null;
+    }
+    if (name === "drill.html") {
+      const start = DRILL_START[(url.searchParams.get("c") || "").trim()];
+      return start ? { series: "jttw", id: start, href: url.href } : null;
+    }
+    if (PAGE_EP[name]) {
+      const raw = url.searchParams.get("ep");
+      return raw && /^\d+$/.test(raw) ? { series: PAGE_EP[name], id: Number(raw), href: url.href } : null;
+    }
+    return null;
+  }
+
   // Intercept route cards before the browser leaves the map.  This keeps the
   // user on the current screen when a catalog entry is intentionally only a
   // placeholder in the starter APK, instead of flashing a blank reader page.
@@ -117,25 +152,14 @@
     if (event.defaultPrevented || event.button !== 0) return;
     const anchor = event.target.closest?.("a[href]");
     if (!anchor) return;
-    let url;
-    try { url = new URL(anchor.href, location.href); } catch (_) { return; }
-    const name = url.pathname.split("/").pop();
-    let series = null;
-    let id = null;
-    if (name === "storybook.html") {
-      series = url.searchParams.get("series") || "jttw";
-      id = url.searchParams.get(series === "jttw" ? "ep" : "book");
-    } else if (name === "wala.html" || name === "adventure.html") {
-      series = "jttw";
-      id = url.searchParams.get("ep");
-    }
-    if (!series || !id || !/^\d+$/.test(id)) return;
+    const target = targetFromUrl(anchor.href, location.href);
+    if (!target) return;
     event.preventDefault();
-    isUnavailable(series, Number(id)).then((missing) => {
-      if (missing) showImportPrompt({ series, id: Number(id) });
-      else location.href = url.href;
+    isUnavailable(target.series, target.id).then((missing) => {
+      if (missing) showImportPrompt({ series: target.series, id: target.id });
+      else location.href = target.href;
     });
   }, true);
 
-  root.BookPlayContentGate = { loadManifest, isUnavailable, showImportPrompt, close };
+  root.BookPlayContentGate = { loadManifest, isUnavailable, showImportPrompt, close, targetFromUrl };
 }(typeof globalThis !== "undefined" ? globalThis : window));

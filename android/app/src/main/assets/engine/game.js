@@ -22,6 +22,7 @@
 
   const KEY_PROGRESS = "bookplay_battle_progress_v1";
   const KEY_COLLECTION = "bookplay_battle_collection_v1";
+  const KEY_WEAK = "bookplay_weak_v1";
 
   const WORLD = Game.WORLD_TILES;  // 默认 4×4 视口；关卡可用 map.worldTiles 覆盖
   // 归一化单位 NU = 一个视口宽（地图坐标）；速度语义 = 视口/秒，与 worldTiles 无关。
@@ -30,12 +31,12 @@
   let HERO_SPEED = Game.MOVEMENT_SPEEDS.hero * NU;
   let MONSTER_WANDER = Game.MOVEMENT_SPEEDS.monsterWander * NU;
   let MONSTER_CHASE = Game.MOVEMENT_SPEEDS.monsterChase * NU;
-  let AGGRO_DIST = 0.55 * NU;
+  let AGGRO_DIST = Game.MONSTER_AI.aggro * NU;
   const KEEP_DIST = Game.PACK.chaseRadius;
   const PACK_GAP = Game.PACK.separation;
   const SPAWN_GAP = Game.PACK.spawnGap;
-  let ATTACK_DIST = 0.075 * NU;
-  const ATTACK_CD = 3600;
+  let ATTACK_DIST = Game.MONSTER_AI.attack * NU;
+  const ATTACK_CD = Game.MONSTER_AI.attackCd;
   const HERO_INVULN = 2400;
   let ORB_PICKUP = 0.11 * NU;
   // Auto-walk targets must settle inside the pickup radius. The old fixed
@@ -55,8 +56,8 @@
     HERO_SPEED = Game.MOVEMENT_SPEEDS.hero * NU;
     MONSTER_WANDER = Game.MOVEMENT_SPEEDS.monsterWander * NU;
     MONSTER_CHASE = Game.MOVEMENT_SPEEDS.monsterChase * NU;
-    AGGRO_DIST = 0.55 * NU;
-    ATTACK_DIST = 0.075 * NU;
+    AGGRO_DIST = Game.MONSTER_AI.aggro * NU;
+    ATTACK_DIST = Game.MONSTER_AI.attack * NU;
     ORB_PICKUP = 0.11 * NU;
     TARGET_STOP = ORB_PICKUP * 0.45;
     SHOT_SPEED = 1.75 * NU;
@@ -110,6 +111,7 @@
     route: $("game-route"),
     supports: $("game-supports"),
     hintcard: $("game-hintcard"),
+    typepad: $("game-typepad"),
     joystick: $("game-joystick"),
     stick: $("game-stick"),
     dialogue: $("game-dialogue"),
@@ -155,6 +157,9 @@
     shield: 3,
     combo: { streak: 0 },
     wrongWords: {},
+    weakWords: {},
+    hintUsedThisOrb: false,
+    targetArrow: null,
     carried: null,          // {zh, el?} 手里的中文词球
     items: Game.emptyItems(),
     buffs: Game.emptyBuffs(),
@@ -166,6 +171,9 @@
     defeatedKeys: new Set(),
     usedTerms: new Set(),
     introAutoPlayed: false,
+    playVerb: "tag-shoot",
+    listenSpoken: "",
+    listenRings: [],
     bossGateOpen: false,
     bossReady: false,
     bossNear: false,
@@ -192,6 +200,35 @@
     } catch (_) { /* 存不下就只保留本次体验 */ }
   }
 
+  function persistWeak() {
+    const all = readStore(KEY_WEAK);
+    all[String(EP)] = state.weakWords;
+    writeStore(KEY_WEAK, all);
+  }
+
+  function catalogCards(level) {
+    const cards = [];
+    const push = (row) => {
+      if (!row || !row.term || !row.zh) return;
+      cards.push(row);
+    };
+    (level && level.previewWords || []).forEach(push);
+    ((level && level.waves) || []).forEach((wave) => (wave.monsters || []).forEach(push));
+    (((level && level.boss) || {}).hpWords || []).forEach(push);
+    return cards;
+  }
+
+  function freezeLevel(level, wrongWords) {
+    const frozen = Game.freezeSessionCards(catalogCards(level), {
+      maxCards: Game.SESSION_CARD_LIMIT,
+      wrongWords: wrongWords || {},
+      weakWords: state.weakWords,
+      now: Date.now(),
+      unit: ((Number(level && level.seedBase) || EP) % 1000) / 1000,
+    });
+    return Game.applyFrozenLevel(level, frozen);
+  }
+
   function persistProgress(extra) {
     const progress = readStore(KEY_PROGRESS);
     const rec = Object.assign({}, progress[EP] || {}, {
@@ -208,6 +245,7 @@
       mapItems: state.items,
     }, extra || {});
     rec.updatedAt = new Date().toISOString();
+    persistWeak();
     progress[EP] = rec;
     writeStore(KEY_PROGRESS, progress);
   }
@@ -230,6 +268,18 @@
     window.location.href = url;
   }
 
+  function leaveUrl() {
+    return FROM_LESSON ? `lesson.html?ep=${EP}` : "map.html";
+  }
+
+  function handheldOffline() {
+    try {
+      return document.documentElement.hasAttribute("data-handheld");
+    } catch (_) {
+      return false;
+    }
+  }
+
   function speakTerm(text, lang) {
     if (!text) return;
     if (state.audio) {
@@ -237,6 +287,7 @@
       const ref = `word:${String(text).trim()}:${lang === "zh" ? "zh" : "en"}`;
       return state.audio.play({ ref, text, lang: language });
     }
+    if (handheldOffline()) return;
     try {
       audioEl = audioEl || new Audio();
       window.BookPlayAudio?.watchMedia(audioEl);
@@ -323,7 +374,28 @@
     return entry && entry.gif ? assetUrl(entry.gif) : "";
   }
 
+  const FX_DIR = "assets/generated/jttw-hud-fx-v1/";
+  const FX = {
+    burst: FX_DIR + "fx-star-burst.png",
+    bonk: FX_DIR + "fx-staff-bonk.png",
+    impact: FX_DIR + "fx-staff-impact.png",
+    shock: FX_DIR + "fx-shockwave.png",
+    sparkle: FX_DIR + "fx-match-sparkle.png",
+    bounce: FX_DIR + "fx-wrong-bounce.png",
+    ring: FX_DIR + "fx-listen-ring.png",
+    arrow: FX_DIR + "fx-target-arrow.png",
+    sweep: FX_DIR + "fx-combo-sweep.png",
+    shield: FX_DIR + "fx-shield-flash.png",
+    stars: FX_DIR + "fx-combo-stars.png",
+  };
+
   function spriteForPose(spriteId, dir, pose) {
+    if (spriteId === "wukong" && pose === "hurt") {
+      return assetUrl("assets/generated/jttw-player-walkers/wukong/directions/wukong-south-hurt.png");
+    }
+    if (spriteId === "wukong" && pose === "celebrate") {
+      return assetUrl("assets/generated/jttw-player-walkers/wukong/directions/wukong-south-celebrate.png");
+    }
     if (spriteId === "wukong" && pose === "walk" && (dir === "east" || dir === "west")) {
       const idx = Math.max(0, (state.hero.walkFrame || 0) % WUKONG_WALK_PNG.length);
       return assetUrl(WUKONG_WALK_PNG[idx]);
@@ -529,7 +601,7 @@
     state.monsters = waveMonsters.map((m, idx) => {
       const monster = Object.assign({}, m, {
         el: null, x: 0, y: 0, tx: 0, ty: 0, alive: true, active: false,
-        img: null, dir: "south", idleUntil: 0, fleeUntil: 0, attackCd: 0, attackUntil: 0, moving: false, pose: "idle", waveIndex: m.waveIndex, slotIndex: 0,
+        img: null, dir: "south", idleUntil: 0, fleeUntil: 0, attackCd: 0, attackUntil: 0, windupUntil: 0, moving: false, pose: "idle", waveIndex: m.waveIndex, slotIndex: 0,
       });
       const el = document.createElement("button");
       el.type = "button";
@@ -689,12 +761,109 @@
       state.orbs.push(orb);
     });
     persistProgress();
+    syncListenRings(silent);
     if (!silent) {
       const theme = (state.level.map && state.level.map.theme) || "";
       showBanner(`第 ${waveIndex + 1} 波`, THEME_ZH[theme] || (state.level.title && state.level.title.zh) || state.level.title.en);
       window.BookPlayAudio?.sfx("start");
     }
     refreshQuizNpcLock();
+    updateHud();
+  }
+
+  function clearListenRings() {
+    (state.listenRings || []).forEach((ring) => {
+      try { ring.el && ring.el.remove(); } catch (_) { /* detached */ }
+    });
+    state.listenRings = [];
+  }
+
+  function syncListenRings(silent) {
+    clearListenRings();
+    if (state.playVerb !== "listen-rings") return;
+    const wave = aliveMonsters();
+    state.listenRings = wave.map((monster) => {
+      const el = document.createElement("div");
+      el.className = "game-listen-ring";
+      el.setAttribute("aria-hidden", "true");
+      el.style.backgroundImage = `url("${assetUrl(FX.ring)}")`;
+      els.entities.appendChild(el);
+      const ring = {
+        term: monster.term,
+        x: monster.x,
+        y: monster.y,
+        collected: false,
+        alive: true,
+        el,
+        monster,
+      };
+      placeAt(el, ring.x, ring.y);
+      return ring;
+    });
+    const first = wave[0];
+    if (first) {
+      state.listenSpoken = Game.armListenSpoken(state.listenSpoken, first.term);
+      speakTerm(first.term);
+      if (!silent) showToast(`听！走进「${first.term}」的光环`, 2800);
+    }
+  }
+
+  function updatePlotVfx() {
+    const verb = state.playVerb;
+    const zh = state.carried && state.carried.zh;
+    const fanAim = verb === "fan-blow" && zh
+      ? Game.chooseFanTarget(state.hero, aliveMonsters(), zh, state.hero.dir)
+      : null;
+    if (state.hero && state.hero.el) {
+      const hot = verb === "fire-ward" && aliveMonsters().some((m) => Game.fireTooClose(verb, state.hero, m));
+      state.hero.el.classList.toggle("is-too-close", hot);
+    }
+    state.monsters.forEach((monster) => {
+      if (!monster.el) return;
+      const live = Boolean(monster.alive && monster.active);
+      monster.el.classList.toggle("is-burning", live && verb === "fire-ward" && Game.fireTooClose(verb, state.hero, monster));
+      monster.el.classList.toggle("is-fan-aim", live && fanAim === monster);
+    });
+  }
+
+  function updateListenRings() {
+    if (state.playVerb !== "listen-rings") return;
+    state.listenRings.forEach((ring) => {
+      const monster = ring.monster;
+      if (monster) {
+        ring.x = monster.x;
+        ring.y = monster.y;
+        ring.alive = Boolean(monster.alive && monster.active);
+        ring.collected = ring.collected || !monster.alive;
+      }
+      if (ring.el) {
+        placeAt(ring.el, ring.x, ring.y);
+        ring.el.classList.toggle("is-armed", Game.listenRingHits(state.listenSpoken, ring.term));
+        ring.el.classList.toggle("is-collected", Boolean(ring.collected));
+        ring.el.style.display = ring.alive && !ring.collected ? "" : "none";
+      }
+    });
+    const hit = Game.chooseListenRing(state.listenRings, state.listenSpoken);
+    if (!hit || hit.collected || !Game.listenRingWalkHit(state.hero, hit, ORB_PICKUP)) return;
+    const monster = hit.monster;
+    if (!monster || !monster.alive) return;
+    hit.collected = true;
+    window.BookPlayAudio?.sfx("correct");
+    speakTerm(monster.term);
+    const bonus = Game.onCorrectHit(state.buffs, state.shield);
+    state.buffs = bonus.buffs;
+    state.shield = bonus.shield;
+    state.stars += 1;
+    state.killed += 1;
+    killMonster(monster);
+    spawnBurst(monster);
+    maybeDrop(monster);
+    showToast(`听对了：${monster.term} · ${monster.zh}`, 1700);
+    persistProgress();
+    advanceWaveIfNeeded();
+    const next = state.listenRings.find((ring) => !ring.collected && ring.alive !== false && ring.monster && ring.monster.alive);
+    state.listenSpoken = Game.armListenSpoken(state.listenSpoken, next && next.term);
+    if (next) speakTerm(next.term);
     updateHud();
   }
 
@@ -717,7 +886,8 @@
     state.usedTerms = used;
     const merged = [];
     const seen = new Set();
-    (preferred || []).concat(state.level.wordPool || []).forEach((word) => {
+    const pool = (state.level && (state.level.sessionCards || state.level.previewWords)) || [];
+    (preferred || []).concat(pool).forEach((word) => {
       if (!word || !word.term || !word.zh) return;
       const key = String(word.term).toLowerCase();
       if (seen.has(key) || used.has(key)) return;
@@ -841,16 +1011,32 @@
         placeAt(m.el, m.x, m.y);
         return;
       }
+      if (m.windupUntil && now < m.windupUntil) {
+        m.moving = false;
+        setMonsterPose(m, "attack");
+        placeAt(m.el, m.x, m.y);
+        return;
+      }
+      if (m.windupUntil && now >= m.windupUntil) {
+        m.windupUntil = 0;
+        if (m.el) m.el.classList.remove("is-winding");
+        const stillClose = Math.hypot(hero.x - m.x, hero.y - m.y) <= ATTACK_DIST * 1.35;
+        if (stillClose && !state.locked) monsterAttack(m);
+        else setMonsterPose(m, "idle");
+        placeAt(m.el, m.x, m.y);
+        return;
+      }
+      const heroDist = Math.hypot(hero.x - m.x, hero.y - m.y);
+      const intent = Game.monsterIntent(heroDist, AGGRO_DIST, now < m.fleeUntil);
       let speed = Game.monsterSpeed(MONSTER_WANDER, state.buffs, now);
       let gx = m.tx;
       let gy = m.ty;
-      const heroDist = Math.hypot(hero.x - m.x, hero.y - m.y);
-      if (now < m.fleeUntil) {
-        speed = Game.monsterSpeed(MONSTER_CHASE * 1.5, state.buffs, now);
+      if (intent === "flee") {
+        speed = Game.monsterSpeed(MONSTER_CHASE * Game.MONSTER_AI.fleeMult, state.buffs, now);
         const away = clampWorld(m.x - (hero.x - m.x), m.y - (hero.y - m.y));
         gx = away.x;
         gy = away.y;
-      } else {
+      } else if (intent === "chase") {
         // Living minions walk toward a unique slot around the hero, then
         // push apart so the pack does not collapse into one pile.
         speed = Game.monsterSpeed(MONSTER_CHASE, state.buffs, now);
@@ -859,10 +1045,22 @@
         const sep = Game.packSeparation(m, live, PACK_GAP);
         gx = anchor.x + sep.x * PACK_GAP;
         gy = anchor.y + sep.y * PACK_GAP;
-        if (!state.locked && heroDist <= ATTACK_DIST && now >= m.attackCd && now >= hero.invulnUntil) {
-          monsterAttack(m);
+        if (Game.canStartMelee(now, heroDist, ATTACK_DIST, m.attackCd, hero.invulnUntil, state.locked)) {
+          m.windupUntil = now + Game.MONSTER_AI.windupMs;
           m.attackCd = now + ATTACK_CD;
+          m.moving = false;
+          setMonsterPose(m, "attack");
+          if (m.el) m.el.classList.add("is-winding");
+          placeAt(m.el, m.x, m.y);
           return;
+        }
+      } else {
+        if (!Number.isFinite(gx) || !Number.isFinite(gy)) {
+          const spot = randomWalkablePoint();
+          m.tx = spot.x;
+          m.ty = spot.y;
+          gx = spot.x;
+          gy = spot.y;
         }
       }
       const dx = gx - m.x;
@@ -899,14 +1097,27 @@
     state.items = hit.items;
     state.combo.streak = 0;
     window.BookPlayAudio?.sfx("shield");
-    monster.attackUntil = performance.now() + 320;
+    monster.attackUntil = performance.now() + Game.MONSTER_AI.recoverMs;
     monster.moving = false;
     setMonsterPose(monster, "attack");
     const hero = state.hero;
-    const away = clampWorld(hero.x - (monster.x - hero.x) * 1.6, hero.y - (monster.y - hero.y) * 1.6);
+    const kb = Game.MONSTER_AI.knockback;
+    const away = clampWorld(hero.x - (monster.x - hero.x) * kb, hero.y - (monster.y - hero.y) * kb);
     hero.x = away.x;
     hero.y = away.y;
     hero.invulnUntil = performance.now() + HERO_INVULN;
+    if (hero.el) {
+      setHeroPose("hurt");
+      spawnFx("shield", hero.x, hero.y);
+      hero.el.classList.add("is-hurt", "is-invuln");
+      window.setTimeout(() => {
+        if (hero.el) hero.el.classList.remove("is-hurt");
+        if (performance.now() >= hero.attackUntil) setHeroPose(hero.moving ? "walk" : "idle");
+      }, 280);
+      window.setTimeout(() => {
+        if (hero.el && performance.now() >= hero.invulnUntil) hero.el.classList.remove("is-invuln");
+      }, HERO_INVULN);
+    }
     state.monsters.forEach((other) => {
       if (other.alive && other.active) {
         other.attackCd = Math.max(other.attackCd || 0, performance.now() + 1400);
@@ -925,7 +1136,7 @@
       state.shield = 3;
       respawnCurrentWave();
     } else {
-      showToast("被小妖撞了一下！捡词球反击 ⚔️", 1500);
+      showToast("被小妖打中了！躲开挥招，捡词球反击 ⚔️", 1600);
     }
   }
 
@@ -964,11 +1175,16 @@
   }
 
   function pickUp(orb) {
+    state.hintUsedThisOrb = false;
     state.carried = { zh: orb.zh, term: termForZh(orb.zh), typed: "", wrong: "" };
     orb.el.style.display = "none";
     window.BookPlayAudio?.sfx("start");
     speakTerm(orb.zh, "zh");
-    showToast(`捡到${state.pickup.nameZh || "仙桃"}！扔向对应的英文小妖`, 1600);
+    if (state.playVerb === "type-lock") showToast(`捡到${state.pickup.nameZh || "仙桃"}！跟打头顶英文才飞得出去`, 1800);
+    else if (state.playVerb === "gourd-seek") showToast(`捡到${state.pickup.nameZh || "仙桃"}！葫芦会自己找对的英文小妖`, 1800);
+    else if (state.playVerb === "fan-blow") showToast(`捡到${state.pickup.nameZh || "仙桃"}！朝小妖的方向扇，扇子会找对的英文`, 1800);
+    else if (state.playVerb === "fire-ward") showToast(`捡到${state.pickup.nameZh || "仙桃"}！离火远一点再扔`, 1800);
+    else showToast(`捡到${state.pickup.nameZh || "仙桃"}！扔向对应的英文小妖`, 1600);
     updateHud();
   }
 
@@ -1002,10 +1218,53 @@
     updateHud();
   }
 
+  function previewWordOf(monster) {
+    if (!monster) return null;
+    return (state.level.previewWords || []).find((word) => word.term === monster.term) || monster;
+  }
+
+  function previewMonsterWord(monster) {
+    if (state.locked || !monster || !monster.alive) return;
+    const word = previewWordOf(monster);
+    els.hintcard.textContent = "";
+    if (word.illustration) {
+      const img = document.createElement("img");
+      img.src = assetUrl(word.illustration);
+      img.alt = "";
+      img.addEventListener("error", () => img.remove());
+      els.hintcard.appendChild(img);
+    }
+    const body = document.createElement("div");
+    const term = document.createElement("span");
+    term.className = "game-hint-term";
+    term.textContent = word.term;
+    const zh = document.createElement("span");
+    zh.className = "game-hint-zh";
+    zh.textContent = state.carried
+      ? `${word.zh}（头上顶着这个词的就是目标）`
+      : `${word.zh} · 空手预习，捡中文球再扔`;
+    body.append(term, zh);
+    const hear = document.createElement("button");
+    hear.type = "button";
+    hear.textContent = "♪";
+    hear.setAttribute("aria-label", `朗读 ${word.term}`);
+    hear.tabIndex = 0;
+    hear.addEventListener("click", () => {
+      if (state.playVerb === "listen-rings") state.listenSpoken = Game.armListenSpoken(state.listenSpoken, word.term);
+      speakTerm(word.term);
+    });
+    els.hintcard.append(body, hear);
+    els.hintcard.hidden = false;
+    if (state.playVerb === "listen-rings") state.listenSpoken = Game.armListenSpoken(state.listenSpoken, word.term);
+    speakTerm(word.term);
+    if (state.carried) state.hintUsedThisOrb = true;
+    if (!state.carried) showToast(`预习：${word.term} · ${word.zh}`, 1800);
+  }
+
   function onMonsterClick(monster) {
     if (state.locked || !monster.alive) return;
     if (!state.carried) {
-      showToast("先走到中文词球上捡起一颗！", 1600);
+      previewMonsterWord(monster);
       return;
     }
     throwOrb(monster);
@@ -1013,27 +1272,54 @@
 
   function throwOrb(monster) {
     // 投掷不锁世界：小怪照常追击/游荡，追踪弹逐帧更新（对照 word-memory-map）
+    // 点中谁飞向谁；词牌不对则弹回。紫金葫芦 / gourd-seek 才自动改瞄配对小妖。
     if (!state.carried) return;
+    if (Game.throwLocked(state.playVerb, state.carried, state.carried.term)) {
+      const goal = Game.typingTarget(state.carried.term);
+      showToast(`跟打完「${goal}」才飞得出去`, 1800);
+      renderTypePad();
+      return;
+    }
     const matched = matchingMonster(state.carried.zh);
-    let target = matched || monster;
-    const aim = Game.consumeAutoAim(state.buffs);
+    const aim = Game.seekAutoAim(state.playVerb, state.buffs);
     state.buffs = aim.buffs;
-    if (aim.armed && matched) target = matched;
+    let choice;
+    if (state.playVerb === "fan-blow") {
+      const blown = Game.chooseFanTarget(state.hero, aliveMonsters(), state.carried.zh, state.hero.dir);
+      if (!blown) {
+        showToast("转到小妖那边再扇芭蕉扇！", 1600);
+        spawnFx("sweep", state.hero.x, state.hero.y, "is-wide");
+        return;
+      }
+      choice = Game.chooseThrowTarget(monster, blown, true);
+      spawnFx("sweep", state.hero.x, state.hero.y, "is-wide");
+    } else {
+      choice = Game.chooseThrowTarget(monster, matched, aim.armed);
+    }
+    const target = choice.target;
     if (!target || !target.alive) {
       showToast("场上没有对应的英文小妖", 1400);
       return;
     }
+    if (Game.fireTooClose(state.playVerb, state.hero, target)) {
+      showToast("火太近！先退开再扔！", 1700);
+      spawnFx("shield", state.hero.x, state.hero.y);
+      return;
+    }
+    if (!Game.wordTagHits(state.carried.zh, target.zh) && !choice.auto) {
+      showToast("这个英文对不上，扔过去会弹回来！", 1500);
+    }
     window.BookPlayAudio?.sfx("attack");
     if (state.hero.el) {
-      state.hero.attackUntil = performance.now() + 340;
+      state.hero.attackUntil = performance.now() + 620;
       state.hero.moving = false;
       setHeroPose("attack");
       state.hero.el.classList.add("is-throw");
       window.setTimeout(() => {
         if (!state.hero.el) return;
         state.hero.el.classList.remove("is-throw");
-        if (performance.now() >= state.hero.attackUntil) setHeroPose("idle");
-      }, 340);
+        if (performance.now() >= state.hero.attackUntil) setHeroPose(state.hero.moving ? "walk" : "idle");
+      }, 620);
     }
     const thrownOrb = state.orbs.find((orb) => state.carried && orb.zh === state.carried.zh && orb.el.style.display === "none") || null;
     const shot = {
@@ -1064,10 +1350,11 @@
       if (target && target.alive) {
         const dx = target.x - shot.x;
         const dy = target.y - shot.y;
-        const dist = Math.hypot(dx, dy) || 1;
+        const dist = Math.hypot(dx, dy);
+        const norm = dist || 1;
         const step = (dt / 1000) * SHOT_SPEED;
-        shot.x += (dx / dist) * step;
-        shot.y += (dy / dist) * step;
+        shot.x += (dx / norm) * step;
+        shot.y += (dy / norm) * step;
         if (shot.age >= SHOT_ARM && dist <= SHOT_HIT) {
           resolveShot(shot);
           return;
@@ -1110,9 +1397,16 @@
       state.killed += 1;
       killMonster(monster);
       spawnBurst(monster);
+      spawnFx("sparkle", monster.x, monster.y);
       maybeDrop(monster);
+      setHeroPose("celebrate");
+      window.setTimeout(() => {
+        if (performance.now() >= state.hero.attackUntil) setHeroPose(state.hero.moving ? "walk" : "idle");
+      }, 420);
       showToast(`记住它：${monster.term} · ${monster.zh}`, 1700);
       if (verdict.comboReady) {
+        spawnFx("sweep", state.hero.x, state.hero.y, "is-wide");
+        spawnFx("stars", monster.x, monster.y);
         const rest = currentWaveAlive();
         rest.forEach((m) => {
           state.killed += 1;
@@ -1125,18 +1419,26 @@
           showToast("连击横扫！本波小妖全灭 ⚡", 1700);
         }
       }
+      state.weakWords = Game.recordWeakAnswer(state.weakWords, monster.term, {
+        correct: true,
+        assisted: Boolean(state.hintUsedThisOrb),
+      });
+      state.hintUsedThisOrb = false;
       persistProgress();
       advanceWaveIfNeeded();
     } else {
       window.BookPlayAudio?.sfx("retry");
       state.wrongWords[monster.term] = (state.wrongWords[monster.term] || 0) + 1;
+      state.weakWords = Game.recordWeakAnswer(state.weakWords, monster.term, { correct: false });
+      state.hintUsedThisOrb = false;
       persistProgress();
       state.combo.streak = 0;
       monster.fleeUntil = performance.now() + 2400;
       monster.el.classList.add("is-wrong");
+      spawnFx("bounce", monster.x, monster.y);
       window.setTimeout(() => monster.el.classList.remove("is-wrong"), 900);
       dropOrbAt(shot.x, shot.y, shot.orb);
-      showToast("词球弹回来了！词牌对不上，再找找 ⚠️", 1700);
+      showToast(`词球弹回来了！「${shot.zh}」对不上「${monster.term}」`, 1800);
     }
     updateHud();
   }
@@ -1164,11 +1466,27 @@
     }, 600);
   }
 
+  function spawnFx(name, x, y, extraClass) {
+    const src = FX[name];
+    if (!src) return;
+    const el = document.createElement("img");
+    el.className = "game-fx-stamp" + (extraClass ? " " + extraClass : "");
+    el.src = assetUrl(src);
+    el.alt = "";
+    el.setAttribute("aria-hidden", "true");
+    placeAt(el, x, y);
+    els.particles.appendChild(el);
+    window.setTimeout(() => el.remove(), 700);
+  }
+
   function spawnBurst(monster) {
-    for (let i = 0; i < 6; i += 1) {
-      const star = document.createElement("span");
-      star.className = "game-star";
-      star.textContent = "⭐";
+    spawnFx("impact", monster.x, monster.y);
+    spawnFx("shock", monster.x, monster.y, "is-wide");
+    for (let i = 0; i < 4; i += 1) {
+      const star = document.createElement("img");
+      star.className = "game-star game-fx-stamp is-star";
+      star.src = assetUrl(FX.burst);
+      star.alt = "";
       placeAt(star, monster.x, monster.y);
       star.style.setProperty("--dx", `${(Math.random() - 0.5) * 130}px`);
       star.style.setProperty("--dy", `${-40 - Math.random() * 70}px`);
@@ -1183,7 +1501,15 @@
     const drop = { type, x: monster.x, y: monster.y, el: document.createElement("button") };
     drop.el.type = "button";
     drop.el.className = "game-support-drop";
-    drop.el.textContent = def.icon;
+    if (def.image) {
+      const img = document.createElement("img");
+      img.src = assetUrl(def.image);
+      img.alt = "";
+      img.draggable = false;
+      drop.el.appendChild(img);
+    } else {
+      drop.el.textContent = def.icon;
+    }
     drop.el.setAttribute("aria-label", `捡起${def.label}`);
     drop.el.addEventListener("click", (ev) => {
       ev.stopPropagation();
@@ -1217,7 +1543,15 @@
       if (!count) return;
       const btn = document.createElement("button");
       btn.type = "button";
-      btn.textContent = def.icon;
+      if (def.image) {
+        const img = document.createElement("img");
+        img.src = assetUrl(def.image);
+        img.alt = "";
+        img.draggable = false;
+        btn.appendChild(img);
+      } else {
+        btn.textContent = def.icon;
+      }
       btn.dataset.count = String(count);
       btn.setAttribute("aria-label", def.label);
       btn.tabIndex = 0;
@@ -1426,7 +1760,30 @@
           els.dialogueChoices.appendChild(btn);
         });
       }
+      const skip = document.createElement("button");
+      skip.type = "button";
+      skip.className = "battle-secondary";
+      skip.textContent = "不会";
+      skip.tabIndex = 0;
+      skip.addEventListener("click", () => skipNpcChoice(word));
+      els.dialogueChoices.appendChild(skip);
     }
+  }
+
+  function skipNpcChoice(word) {
+    const dlg = state.dlg;
+    if (!dlg || dlg.choiceResolved) return;
+    state.weakWords = Game.recordWeakAnswer(state.weakWords, word && word.term, { skipped: true });
+    persistWeak();
+    const feedback = document.createElement("div");
+    feedback.className = "game-feedback";
+    feedback.textContent = "先跳过，这张不算错。";
+    els.dialogueChoices.appendChild(feedback);
+    completeQuizNpc(dlg.npc, false);
+    els.dialogueNext.hidden = false;
+    els.dialogueNext.textContent = "继续 ▼";
+    dlg.choiceResolved = true;
+    updateHud();
   }
 
   function resolveNpcAuthoredChoice(opt, word, btn) {
@@ -1447,6 +1804,8 @@
     const feedback = document.createElement("div");
     feedback.className = "game-feedback";
     if (verdict.correct) {
+      state.weakWords = Game.recordWeakAnswer(state.weakWords, word && word.term, { correct: true });
+      persistWeak();
       [...els.dialogueChoices.children].forEach((choice) => {
         if (choice.tagName === "BUTTON") choice.disabled = true;
         if (choice.textContent === word.zh) choice.classList.add("is-right");
@@ -1480,6 +1839,9 @@
       });
       feedback.textContent = `正确答案是「${word.zh}」，跟着读一遍：${word.term}！`;
       els.dialogueChoices.appendChild(feedback);
+      state.wrongWords[word.term] = (state.wrongWords[word.term] || 0) + 1;
+      state.weakWords = Game.recordWeakAnswer(state.weakWords, word && word.term, { correct: false });
+      persistWeak();
       completeQuizNpc(dlg.npc, false);
       els.dialogueNext.hidden = false;
       els.dialogueNext.textContent = "继续 ▼";
@@ -1577,7 +1939,7 @@
       state.mapStage = "boss";
       persistProgress();
       const wrong = Object.keys(state.wrongWords).filter((term) => state.wrongWords[term] > 0).join(",");
-      navigateGame(`battle.html?ep=${EP}&skip=intro,preview,waves,quiz&from=game${wrong ? `&wrong=${encodeURIComponent(wrong)}` : ""}`);
+      navigateGame(`battle.html?ep=${EP}&skip=intro,preview,waves,quiz&from=${FROM_LESSON ? "lesson" : "game"}${wrong ? `&wrong=${encodeURIComponent(wrong)}` : ""}`);
     });
     const later = document.createElement("button");
     later.type = "button";
@@ -1612,6 +1974,57 @@
     }
     els.combo.textContent = String(state.combo.streak);
     refreshRoute();
+    renderTypePad();
+    updateTargetArrow();
+  }
+
+  function updateTargetArrow() {
+    if (!els.particles) return;
+    if (!state.targetArrow) {
+      const img = document.createElement("img");
+      img.className = "game-target-arrow";
+      img.src = assetUrl(FX.arrow);
+      img.alt = "";
+      img.setAttribute("aria-hidden", "true");
+      els.particles.appendChild(img);
+      state.targetArrow = img;
+    }
+    const target = state.carried ? matchingMonster(state.carried.zh) : null;
+    const show = Boolean(target && target.alive && target.active);
+    state.targetArrow.hidden = !show;
+    if (show) placeAt(state.targetArrow, target.x, target.y - 0.08);
+  }
+
+  function renderTypePad() {
+    if (!els.typepad) return;
+    const show = state.playVerb === "type-lock"
+      && state.carried
+      && state.carried.term
+      && !Game.typingComplete(state.carried, state.carried.term);
+    els.typepad.hidden = !show;
+    if (!show) {
+      els.typepad.textContent = "";
+      delete els.typepad.dataset.sig;
+      return;
+    }
+    const letters = Game.typePadLetters(state.carried, state.carried.term);
+    const sig = `${state.carried.term}:${state.carried.typed || ""}:${letters.join("")}`;
+    if (els.typepad.dataset.sig === sig) return;
+    els.typepad.dataset.sig = sig;
+    els.typepad.textContent = "";
+    letters.forEach((letter) => {
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "game-typekey";
+      btn.textContent = letter;
+      btn.setAttribute("aria-label", `输入 ${letter}`);
+      btn.tabIndex = 0;
+      btn.addEventListener("click", (ev) => {
+        ev.stopPropagation();
+        onTypeCarried(letter);
+      });
+      els.typepad.appendChild(btn);
+    });
   }
 
   function refreshRoute() {
@@ -1676,33 +2089,7 @@
       showToast("小妖都清完啦，去挑战 Boss！", 1600);
       return;
     }
-    const monster = alive[Math.floor(Math.random() * alive.length)];
-    const word = state.level.previewWords.find((w) => w.term === monster.term) || monster;
-    els.hintcard.textContent = "";
-    if (word.illustration) {
-      const img = document.createElement("img");
-      img.src = assetUrl(word.illustration);
-      img.alt = "";
-      img.addEventListener("error", () => img.remove());
-      els.hintcard.appendChild(img);
-    }
-    const body = document.createElement("div");
-    const term = document.createElement("span");
-    term.className = "game-hint-term";
-    term.textContent = word.term;
-    const zh = document.createElement("span");
-    zh.className = "game-hint-zh";
-    zh.textContent = `${word.zh}（头上顶着这个词的就是目标）`;
-    body.append(term, zh);
-    const hear = document.createElement("button");
-    hear.type = "button";
-    hear.textContent = "♪";
-    hear.setAttribute("aria-label", `朗读 ${word.term}`);
-    hear.tabIndex = 0;
-    hear.addEventListener("click", () => speakTerm(word.term));
-    els.hintcard.append(body, hear);
-    els.hintcard.hidden = false;
-    speakTerm(word.term);
+    previewMonsterWord(alive[Math.floor(Math.random() * alive.length)]);
   }
 
   function showGate(message) {
@@ -1717,8 +2104,8 @@
     back.type = "button";
     back.className = "game-primary";
     back.tabIndex = 0;
-    back.textContent = "回地图";
-    back.addEventListener("click", () => navigateGame("map.html"));
+    back.textContent = FROM_LESSON ? "回课堂" : "回地图";
+    back.addEventListener("click", () => navigateGame(leaveUrl()));
     els.gate.append(title, text, back);
     els.gate.hidden = false;
   }
@@ -1730,6 +2117,7 @@
     });
     els.projectiles.querySelectorAll(".game-orb").forEach((el) => el.remove());
     state.orbs = [];
+    clearListenRings();
   }
 
   function restoreMapRun(prev) {
@@ -1793,8 +2181,8 @@
     const back = document.createElement("button");
     back.type = "button";
     back.className = "battle-secondary";
-    back.textContent = "返回绘本地图";
-    back.addEventListener("click", () => navigateGame("map.html"));
+    back.textContent = FROM_LESSON ? "回课堂" : "返回绘本地图";
+    back.addEventListener("click", () => navigateGame(leaveUrl()));
     const replay = document.createElement("button");
     replay.type = "button";
     replay.className = "battle-secondary";
@@ -1854,8 +2242,9 @@
       window.location.reload();
     });
     $("game-map").addEventListener("click", () => {
-      navigateGame("map.html");
+      navigateGame(leaveUrl());
     });
+    if (FROM_LESSON) $("game-map").textContent = "回课堂";
     els.dialogueNext.addEventListener("click", advanceDialogue);
     els.dialogueClose?.addEventListener("click", closeDialogue);
     els.dialogueReplay?.addEventListener("click", () => {
@@ -1883,7 +2272,7 @@
       onAction: () => {
         const near = nearestEntity();
         if (near && near.kind === "monster" && state.carried) throwOrb(near.ref);
-        else if (near && near.kind === "monster") showToast("先捡一颗中文词球！", 1400);
+        else if (near && near.kind === "monster") previewMonsterWord(near.ref);
         if (near && near.kind === "npc") openDialogue(near.ref);
         if (near && near.kind === "boss") openBossGate();
       },
@@ -1934,6 +2323,8 @@
     updateSupportDrops();
     updateMonsters(dt, now);
     updateShots(dt, now);
+    updateListenRings();
+    updatePlotVfx();
     updateProximity(now);
     updateCamera(dt / 1000);
   }
@@ -1973,7 +2364,7 @@
       fetchJSON("../data/game/pickups.json").catch(() => null),
       fetchJSON("../data/game/dex.json").catch(() => null),
       fetchJSON(`../data/game/audio/ep${EP}.json`).catch(() => null),
-    ]).then(([rawLevel, registry, taunts, pickups, audioIndex, dexJson]) => {
+    ]).then(([rawLevel, registry, taunts, pickups, dexJson, audioIndex]) => {
       if (!rawLevel) {
         showGate(`第 ${EP} 集的地图还没解锁，先去读一读这一集的故事吧！`);
         return;
@@ -1984,6 +2375,7 @@
         return;
       }
       state.level = level;
+      state.playVerb = Game.resolvePlayVerb(rawLevel);
       state.sprites = Core.loadSprites(registry || null, level.spriteIds);
       state.pickup = Game.resolvePickup(pickups, EP);
       state.dexJson = dexJson || null;
@@ -2007,6 +2399,9 @@
       Object.entries(prev.wrongWords || {}).forEach(([term, count]) => {
         state.wrongWords[term] = count;
       });
+      const weakAll = readStore(KEY_WEAK);
+      state.weakWords = weakAll[String(EP)] && typeof weakAll[String(EP)] === "object" ? weakAll[String(EP)] : {};
+      state.level = freezeLevel(level, state.wrongWords);
       state.npcBonus = Boolean(prev.npcBonus);
       state.npcDone = Boolean(prev.npcDone);
       recomputeTuning(); // 关卡可能声明单屏(worldTiles=1)或更大的世界：速度/距离按"视口宽"重算
@@ -2039,6 +2434,11 @@
       } else {
         showBanner("出发！", `${state.level.title.zh || state.level.title.en} · ${THEME_ZH[(state.level.map || {}).theme] || ""}`);
         if (FROM_BATTLE) showToast("战斗归来！进度已经恢复 🗺️", 2000);
+        else if (state.playVerb === "listen-rings") showToast("听英文，走进发光的词环！也可以捡中文球扔配对小妖。", 4200);
+        else if (state.playVerb === "type-lock") showToast("捡中文球，跟打头顶英文才飞得出去！", 4200);
+        else if (state.playVerb === "gourd-seek") showToast("紫金葫芦篇：扔出去会自己找对的英文小妖。", 4200);
+        else if (state.playVerb === "fan-blow") showToast("芭蕉扇篇：对着小妖的方向扇，会吹中配对的英文。", 4200);
+        else if (state.playVerb === "fire-ward") showToast("三昧真火：离小妖远一点再扔，别烫着！", 4200);
         else if (FROM_LESSON) showToast("巩固过的词就在地图上，捡起来扔对应的小妖！", 4200);
         else showToast("走过中文词球捡起来，点头顶有对应英文的小妖！", 4200);
       }

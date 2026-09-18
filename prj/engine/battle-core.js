@@ -11,6 +11,7 @@
 })(typeof globalThis !== "undefined" ? globalThis : this, function battleCoreFactory() {
   const WALKER_GIF_BASE = "assets/generated/jttw-player-walkers/";
   const COMBO_TRIGGER = 3;
+  const RACE_MS = 10000;
 
   function mulberry32(seed) {
     let a = seed >>> 0;
@@ -267,9 +268,37 @@
     return prioritized.concat(lateExtras, rest, earlyExtras);
   }
 
+  function levenshtein(a, b) {
+    const x = String(a || "");
+    const y = String(b || "");
+    const rows = x.length + 1;
+    const cols = y.length + 1;
+    const grid = new Array(rows);
+    for (let i = 0; i < rows; i += 1) {
+      grid[i] = new Array(cols);
+      grid[i][0] = i;
+    }
+    for (let j = 0; j < cols; j += 1) grid[0][j] = j;
+    for (let i = 1; i < rows; i += 1) {
+      for (let j = 1; j < cols; j += 1) {
+        const cost = x.charAt(i - 1) === y.charAt(j - 1) ? 0 : 1;
+        grid[i][j] = Math.min(grid[i - 1][j] + 1, grid[i][j - 1] + 1, grid[i - 1][j - 1] + cost);
+      }
+    }
+    return grid[x.length][y.length];
+  }
+
+  function formSimilarity(a, b) {
+    const x = String(a || "").trim().toLowerCase();
+    const y = String(b || "").trim().toLowerCase();
+    if (!x || !y) return 0;
+    return 1 - levenshtein(x, y) / Math.max(x.length, y.length);
+  }
+
   function buildOrbSet(question, allWords, seed) {
     const correctZh = String(question && question.zh || "").trim();
     if (!correctZh) return { correct: "", orbs: [] };
+    const correctTerm = String(question && (question.term || question.word) || "").trim();
     const seen = new Set([correctZh.toLowerCase()]);
     const distractors = [];
     (Array.isArray(allWords) ? allWords : []).forEach((word) => {
@@ -277,9 +306,11 @@
       const key = zh.toLowerCase();
       if (!zh || seen.has(key)) return;
       seen.add(key);
-      distractors.push({ zh, dist: Math.abs(zh.length - correctZh.length) });
+      const term = String(word && (word.term || word.word) || "");
+      const sim = Math.max(formSimilarity(zh, correctZh), formSimilarity(term, correctTerm));
+      distractors.push({ zh, sim, dist: Math.abs(zh.length - correctZh.length) });
     });
-    distractors.sort((a, b) => a.dist - b.dist || (a.zh < b.zh ? -1 : 1));
+    distractors.sort((a, b) => b.sim - a.sim || a.dist - b.dist || (a.zh < b.zh ? -1 : 1));
     const orbs = [{ zh: correctZh, correct: true }];
     distractors.slice(0, 2).forEach((d) => orbs.push({ zh: d.zh, correct: false }));
     return { correct: correctZh, orbs: seededShuffle(orbs, mulberry32(seed >>> 0)) };
@@ -397,9 +428,9 @@
     if (kind === "typing") {
       const goal = lettersOnly(word.term);
       return {
-        kind, playTerm: word.term, answerZh: goal, orbs: [], typingTarget: goal, timeoutMs: 12000,
+        kind, playTerm: word.term, answerZh: goal, orbs: [], typingTarget: goal, timeoutMs: RACE_MS,
         promptKicker: "TYPE", promptMain: word.zh || word.term,
-        promptSub: "跟打英文，限时 12 秒",
+        promptSub: "跟打英文，限时 10 秒，妖怪也在抢答",
       };
     }
     const orbs = official.options.map((opt) => ({ zh: opt.zh || opt.en, correct: Boolean(opt.correct) }));
@@ -519,6 +550,45 @@
     return `${WALKER_GIF_BASE}${id}/${id}-walk.gif`;
   }
 
+  function rivalThinkMs(bossIdx, total, unit) {
+    const n = Math.max(1, Number(total) || 1);
+    const i = Math.max(0, Number(bossIdx) || 0);
+    const t = n > 1 ? Math.max(0, Math.min(1, i / (n - 1))) : 0;
+    const min = 6000 - t * 3400;
+    const max = 9000 - t * 4800;
+    const raw = Number(unit);
+    const p = Number.isFinite(raw) ? Math.max(0, Math.min(1, raw)) : 0.5;
+    return Math.round(min + (max - min) * p);
+  }
+
+  function rivalAccuracy(bossIdx, total) {
+    const n = Math.max(1, Number(total) || 1);
+    const i = Math.max(0, Number(bossIdx) || 0);
+    const t = n > 1 ? Math.max(0, Math.min(1, i / (n - 1))) : 0;
+    return Math.round((0.70 + t * 0.22) * 100) / 100;
+  }
+
+  function rivalHits(seed, accuracy) {
+    const rng = mulberry32((Number(seed) || 0) >>> 0);
+    return rng() < Math.max(0, Math.min(1, Number(accuracy) || 0));
+  }
+
+  function resolveRaceEvent({ now, deadlineAt, rivalAt, playerAt }) {
+    const t = Number(now) || 0;
+    const events = [];
+    if (playerAt != null && Number.isFinite(Number(playerAt))) events.push({ at: Number(playerAt), who: "player" });
+    if (rivalAt != null && Number.isFinite(Number(rivalAt))) events.push({ at: Number(rivalAt), who: "rival" });
+    events.push({ at: Number(deadlineAt) || 0, who: "timeout" });
+    const due = events.filter((event) => event.at <= t).sort((a, b) => {
+      if (a.at !== b.at) return a.at - b.at;
+      if (a.who === "player") return -1;
+      if (b.who === "player") return 1;
+      return 0;
+    });
+    if (!due.length) return "pending";
+    return due[0].who;
+  }
+
   function loadSprites(registry, spriteIds) {
     const table = registry && typeof registry === "object"
       ? (registry.sprites && typeof registry.sprites === "object" ? registry.sprites : registry)
@@ -556,5 +626,11 @@
     applyIncomingHit,
     settleRun,
     loadSprites,
+    RACE_MS,
+    rivalThinkMs,
+    rivalAccuracy,
+    rivalHits,
+    resolveRaceEvent,
+    formSimilarity,
   };
 });
