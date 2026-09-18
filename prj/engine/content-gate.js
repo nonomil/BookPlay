@@ -148,10 +148,12 @@
   // Intercept route cards before the browser leaves the map.  This keeps the
   // user on the current screen when a catalog entry is intentionally only a
   // placeholder in the starter APK, instead of flashing a blank reader page.
+  // Map episode cards carry data-detail: the map opens its own episode-detail
+  // layer (P1 dual-path entry), and the links INSIDE that layer stay gated here.
   document.addEventListener("click", (event) => {
     if (event.defaultPrevented || event.button !== 0) return;
     const anchor = event.target.closest?.("a[href]");
-    if (!anchor) return;
+    if (!anchor || anchor.hasAttribute("data-detail")) return;
     const target = targetFromUrl(anchor.href, location.href);
     if (!target) return;
     event.preventDefault();

@@ -45,6 +45,16 @@ test("click targets cover lesson, game, dub, parent and collection drill", () =>
   assert.equal(gate.targetFromUrl("shelf.html"), null);
 });
 
+test("map episode cards (data-detail) skip the gate so the detail layer can open", () => {
+  const js = readFileSync(new URL("./content-gate.js", import.meta.url), "utf8");
+  assert.match(js, /anchor\.hasAttribute\("data-detail"\)/, "带 data-detail 的地图卡片交给地图自己的详情弹层");
+  assert.match(
+    js,
+    /if \(!anchor \|\| anchor\.hasAttribute\("data-detail"\)\) return;/,
+    "详情层内部链接（无 data-detail）仍然走内容门",
+  );
+});
+
 test("starter manifest keeps first titles of all three lines open", async () => {
   const gate = loadGate((url) => {
     if (String(url).endsWith("content-manifest.json")) {

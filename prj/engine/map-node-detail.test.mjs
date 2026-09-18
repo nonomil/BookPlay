@@ -15,12 +15,14 @@ test('map.js：集卡片面不再内嵌磨耳朵/配音/打怪小选项', () => 
   assert.doesNotMatch(js, /class="node-battle"/);
 });
 
-test('map.js：点卡片打开集详情弹层（学习 / 磨耳朵 / 地图）', () => {
+test('map.js：点卡片打开集详情弹层（P1 双路径 + 地图；非 dualPath 回退学习）', () => {
   const js = read('map.js');
   assert.match(js, /function openEpisodeDetail/);
   assert.match(js, /data-detail="\$\{n\}"/, 'node-main 携带 data-detail');
-  assert.match(js, /episode-detail-mode[^>]*>学习/);
-  assert.match(js, /episode-detail-mode[^>]*>磨耳朵/);
+  assert.match(js, /dualPath: true/, 'jttw 启用双路径入口');
+  assert.match(js, /path-card path-listen/, '听力入章大卡');
+  assert.match(js, /path-card path-read/, '阅读入章大卡');
+  assert.match(js, /episode-detail-resume/, '显示「继续上次学习」进度行');
   assert.match(js, /episode-detail-mode[^>]*>地图/);
   assert.match(js, /game\.html\?ep=\$\{n\}/, '地图入口指向大地图 game.html');
   assert.doesNotMatch(js, /▶ 进入故事/, '不再把学习写成默认主按钮');

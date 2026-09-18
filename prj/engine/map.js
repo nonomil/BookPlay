@@ -58,6 +58,7 @@ const SERIES = SERIES_ID === "minecraft" ? {
   progKey: "bookplay_adv_progress",
   progPrefix: "",
   hasDrill: true,
+  dualPath: true,
   href: (n) => `wala.html?ep=${n}`,
   listUrl: "shelf.html",
   splashCover: "/data/assets/covers/journey-west-cover.png",
@@ -1402,6 +1403,32 @@ function openEpisodeDetail(n) {
   const drillLink = drillReady
     ? `<a class="episode-detail-option${drillCurrent ? " is-ready" : ""}" href="drill.html?c=${collection.id}" tabindex="0">★ 本辑巩固</a>`
     : "";
+  // 2026-09-19 P1 双路径入口：同一个故事，听力/阅读两种入章方式（吸收初章书 Demo）。
+  const progRec = readProg()[n] || {};
+  const resumeLine = progRec.done
+    ? "已完成 ✓，再看一遍也很棒"
+    : Number(progRec.node) > 0
+      ? `上次读到第 ${progRec.node}/${progRec.total || "?"} 句 · 打开接着播`
+      : "15–20 分钟 · 每天一点点";
+  const listenHref = `wala.html?ep=${n}&mode=listen&loops=2&visual=audio&subtitle=enzh`;
+  const pathCards = SERIES.dualPath ? `
+        <p class="episode-detail-ask">今天想怎么学？同一个好故事，两条路都通。</p>
+        <div class="episode-detail-paths">
+          <a class="path-card path-listen" href="${listenHref}" tabindex="0">
+            <b>👂 听力入章</b>
+            <span>先听见，一个新世界</span>
+            <small>不暂停 · 不查词 · 抓住主线</small>
+            <em>约 15 分钟</em>
+          </a>
+          <a class="path-card path-read" href="${SERIES.href(n)}" tabindex="0">
+            <b>📖 阅读入章</b>
+            <span>读进去，发现更多</span>
+            <small>字幕跟读 · 意群阅读 · 找线索</small>
+            <em>约 20 分钟</em>
+          </a>
+        </div>
+        <p class="episode-detail-resume">${resumeLine}</p>` : "";
+  const learnMode = SERIES.dualPath ? "" : `<a class="episode-detail-mode" href="${SERIES.href(n)}" tabindex="0">学习</a>`;
   detailEl.innerHTML = `
     <div class="episode-detail-card" role="dialog" aria-modal="true" aria-label="第${n}${SERIES.unit}详情">
       <button type="button" class="episode-detail-close" aria-label="关闭" tabindex="0">✕</button>
@@ -1410,10 +1437,9 @@ function openEpisodeDetail(n) {
       <h2 class="episode-detail-title" lang="zh">${m.zh}</h2>
       <p class="episode-detail-en" lang="en">${m.en}</p>
       <div class="episode-detail-actions">
+        ${pathCards}
         <div class="episode-detail-modes">
-          <a class="episode-detail-mode" href="${SERIES.href(n)}" tabindex="0">学习</a>
-          <a class="episode-detail-mode" href="wala.html?ep=${n}&mode=listen&loops=2&visual=audio&subtitle=enzh" tabindex="0">磨耳朵</a>
-          <a class="episode-detail-mode" href="game.html?ep=${n}" tabindex="0">地图</a>
+          ${learnMode}<a class="episode-detail-mode" href="game.html?ep=${n}" tabindex="0">地图</a>
         </div>
         <div class="episode-detail-options">
           <a class="episode-detail-option" href="dub.html?ep=${n}" tabindex="0">配音</a>

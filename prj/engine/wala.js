@@ -23,7 +23,9 @@ const el = {
   listenPanel: $("w-listen-panel"), listenLoops: $("w-listen-loops"),
   listenStart: $("w-listen-start"), listenPanelClose: $("w-listen-panel-close"),
   listenDone: $("w-listen-done"), listenReturn: $("w-listen-return"), listenAgain: $("w-listen-again"),
-  back: $("w-back"), epTitle: $("w-ep-title"), dub: $("w-dub"),
+  mission: $("w-mission"), missionTitle: $("w-mission-title"),
+  missionRule: $("w-mission-rule"), missionStart: $("w-mission-start"),
+  back: $("w-back"), epTitle: $("w-ep-title"), dub: $("w-dub"), read: $("w-read"),
   modeEn: $("w-mode-en"), modeEnZh: $("w-mode-enzh"),
   annotOn: $("w-annot-on"), annotOff: $("w-annot-off"), autoBtn: $("w-auto"),
   sideCardsOn: $("w-sidecards-on"), sideCardsOff: $("w-sidecards-off"),
@@ -756,6 +758,21 @@ function markWatchFinished() {
 window.addEventListener("pagehide", () => {
   if (watchEntered && !watchLoggedFinish) logWatchStep("quit");
 });
+
+/* P1 任务前置卡：开播前给三个问题（Who / Where / What happened），
+ * 让看故事带着任务；点击「开始」才播放，不自动开跑。 */
+function showMissionCard(onStart) {
+  if (!el.mission || !el.missionStart) { onStart(); return; }
+  const listen = listenQuery;
+  el.missionTitle.textContent = listen ? "👂 听力入章 · 小任务" : "📖 阅读入章 · 小任务";
+  el.missionRule.textContent = listen ? "不暂停 · 不查单词 · 不必听懂每一句" : "不逐词翻译 · 先跟上故事主线";
+  el.missionStart.textContent = listen ? "开始听故事" : "开始读故事";
+  el.mission.classList.remove("hidden");
+  el.missionStart.addEventListener("click", () => {
+    el.mission.classList.add("hidden");
+    onStart();
+  }, { once: true });
+}
 
 /* ---------- 朗读序列引擎（EN / EN+中） ---------- */
 function stopSeq() {
@@ -1767,6 +1784,8 @@ function render(opts) {
     const dubNode = n && n.node_id ? `&node=${encodeURIComponent(n.node_id)}` : "";
     el.dub.setAttribute("href", `dub.html?ep=${ep}${dubNode}&back=player`);
   }
+  // 双路径：同一集随时可以切换到绘本方式重读（纸感皮肤阅读器）。
+  if (el.read) el.read.setAttribute("href", `storybook.html?ep=${ep}`);
   const showMarks = n.type === "narration";
   if (el.enPlay) el.enPlay.classList.toggle("hidden", !showMarks);
   if (el.zhPlay) el.zhPlay.classList.toggle("hidden", !showMarks);
@@ -2051,7 +2070,7 @@ function finishEpisode() {
   collectBagThrough(book.nodes.length - 1);
   const y = officialList().length;
   const x = bagTerms.length;
-  el.puzzle.innerHTML = `<div class="w-end-inline"><div><b>本集播放完成</b><div class="w-end-sub">本集词袋：${x} / ${y}</div><div class="w-end-next-hint">点击字幕框右上角的 ▶ 进入知识巩固 →</div></div></div>`;
+  el.puzzle.innerHTML = `<div class="w-end-inline"><div><b>本集播放完成</b><div class="w-end-sub">本集词袋：${x} / ${y}</div><div class="w-end-sub">小挑战：用自己的话说说，刚才发生了什么？</div><div class="w-end-next-hint">点击字幕框右上角的 ▶ 进入知识巩固 →</div></div></div>`;
   // The in-player arrow is a button, not an inline link.  `next()` owns the
   // post-completion transition after the user explicitly activates the
   // arrow.  Keeping navigation in one path avoids
@@ -2695,17 +2714,21 @@ if (ep >= 1) {
     el.player.classList.remove("hidden");
     if (!reviewContext) { watchEntered = true; logWatchStep("enter"); }
         startStudyHeartbeat();
-        if (listenQuery) {
-          enterListenMode({
-            loops: Number(listenQueryLoops),
-            subtitle: queryReadMode(readModeQuery, "en"),
-            audioOnly: audioOnlyListenQuery,
-            autoStop: true,
-          });
-    } else {
-      render({ willPlay: true });
-      playCurrentSentence();
-    }
+        const beginPlayback = () => {
+          if (listenQuery) {
+            enterListenMode({
+              loops: Number(listenQueryLoops),
+              subtitle: queryReadMode(readModeQuery, "en"),
+              audioOnly: audioOnlyListenQuery,
+              autoStop: true,
+            });
+          } else {
+            render({ willPlay: true });
+            playCurrentSentence();
+          }
+        };
+        if (reviewContext) beginPlayback();
+        else showMissionCard(beginPlayback);
   })();
 } else {
   location.replace("home.html");
