@@ -12,7 +12,7 @@ test('game.html：按顺序引入 app-audio / tv-remote / battle-core / game.js 
   const scripts = [...html.matchAll(/<script[^>]*\ssrc="([^"?]+)(?:\?[^"]*)?"/g)]
     .map((m) => m[1].replace(/^\.\//, ''))
     .filter((src) => src !== 'native-key.js' && src !== 'handheld-controls.js' && src !== 'content-gate.js');
-  assert.deepEqual(scripts, ['app-audio.js', 'tv-remote.js', 'battle-core.js', 'game-core.js', 'game-input.js', 'game-audio.js', 'collection-core.js', 'schedule-core.js', 'economy-core.js', 'farm-core.js', 'farm-ui.js', 'game.js']);
+  assert.deepEqual(scripts, ['app-audio.js', 'tv-remote.js', 'battle-core.js', 'game-core.js', 'game-input.js', 'game-audio.js', 'collection-core.js', 'schedule-core.js', 'economy-core.js', 'farm-core.js', 'farm-ui.js', 'game.js', 'game-feedback.js']);
   assert.match(html, /href=["']tv\.css(?:\?[^"']*)?["']/i, 'game.html must load tv.css');
   assert.match(html, /href=["']handheld\.css(?:\?[^"']*)?["']/i);
   assert.match(html, /href=["']app-audio\.css(?:\?[^"']*)?["']/i, '音效模块样式');

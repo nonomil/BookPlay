@@ -4,7 +4,7 @@
 const fs = require("fs");
 const path = require("path");
 
-const ROOT = path.resolve(__dirname, "..");
+const ROOT = path.resolve(__dirname, "..", "..");  // prj/tools → 仓库根
 const NU_EP = (ep) => path.join(ROOT, "content", "dialogue_stories", `ep${ep}.json`);
 
 const ROLE_LINES = {
