@@ -1755,3 +1755,24 @@ window.addEventListener("pageshow", (e) => {
 });
 
 init().catch((err) => toast("地图数据加载失败: " + err.message));
+
+/* P4 学习教练浮标：「下一步练什么」。数据全在本机，渲染失败静默不挡地图。 */
+(function coachFloat() {
+  try {
+    const log = window.BookPlayStepLog ? window.BookPlayStepLog.read() : [];
+    const summary = window.BookPlayStepLogCore ? window.BookPlayStepLogCore.summarize(log, { days: 7 }) : { rows: [] };
+    const v = window.BookPlayCoach.verdict({
+      summary,
+      log,
+      vstat: JSON.parse(localStorage.getItem("bookplay_adv_vocab_stat") || "{}"),
+      progress: JSON.parse(localStorage.getItem("bookplay_adv_progress") || "{}"),
+    });
+    const pill = document.getElementById("map-coach-float");
+    const text = document.getElementById("map-coach-text");
+    if (!pill || !text || !v.nextAction) return;
+    pill.href = v.nextAction.href;
+    text.textContent = v.nextAction.label;
+    pill.title = v.headline;
+    pill.classList.remove("hidden");
+  } catch (_) { /* 教练缺席不挡地图 */ }
+})();
