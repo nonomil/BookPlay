@@ -29,6 +29,43 @@
     return 3;
   }
 
+  // P2 GUIDE 环节：全局策略卡在一集里的插入上限。精学模式每集至少 1 张。
+  function guideCardLimit(level) {
+    if (level === "lite") return 1;
+    if (level === "max") return 3;
+    return 2;
+  }
+
+  // 从全局策略卡库挑出本集的方法卡插入位。确定性（不随机，可测试可复现）：
+  // 只落在未被随堂题占用的听读节点上；第一个位置靠前（先学方法再练习），
+  // 其余在剩余节点里均匀展开；卡片按库顺序轮转分配。
+  function buildGuidePlan(options = {}) {
+    const nodes = Array.isArray(options.nodes) ? options.nodes : [];
+    const cards = (Array.isArray(options.cards) ? options.cards : [])
+      .filter((card) => card && card.id && card.title && card.body);
+    const isListenNode = typeof options.isListenNode === "function"
+      ? options.isListenNode
+      : (node) => Boolean(node && node.type === "narration" && String(node.text_en || "").trim());
+    const blocked = new Set((options.checkpointIndexes || []).map((value) => Number(value)));
+    const candidates = nodes
+      .map((node, index) => (isListenNode(node) && !blocked.has(index) ? index : -1))
+      .filter((index) => index >= 0);
+    const count = Math.min(guideCardLimit(options.learnLevel), candidates.length, cards.length);
+    const indexes = [];
+    if (count > 0) {
+      indexes.push(candidates[0]);
+      for (const index of pickEvenly(candidates.slice(1), count - 1)) {
+        if (!indexes.includes(index)) indexes.push(index);
+      }
+    }
+    indexes.sort((a, b) => a - b);
+    const byIndex = {};
+    indexes.forEach((index, offset) => {
+      byIndex[index] = cards[offset % cards.length];
+    });
+    return { indexes, total: indexes.length, byIndex };
+  }
+
   function pickEvenly(values, count) {
     const source = [...new Set(values)].sort((a, b) => a - b);
     if (!source.length || count <= 0) return [];
@@ -200,7 +237,9 @@
     scoreWord,
     sideCardLimit,
     inlineCheckpointLimit,
+    guideCardLimit,
     buildCheckpointPlan,
+    buildGuidePlan,
     buildWordCardPlan,
     collectBagThrough,
     isUnmastered,

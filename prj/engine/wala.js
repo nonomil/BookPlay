@@ -146,6 +146,10 @@ let wordCardDone = null;
 let studyFlushedAt = -1;
 let plotQuizAt = {};
 let checkpointPlan = { indexes: [], total: 0, byIndex: {} };
+let guidePlan = { indexes: [], total: 0, byIndex: {} };
+let strategyCards = [];
+let strategyPack = null;
+const guidesShown = new Set();
 let lexIndex = {};
 let wordAudio = {}, zhAudio = {}, enAudio = {}, sentEnAudio = {}, sentZhAudio = {};
 let episodeFinished = false;
@@ -1454,6 +1458,11 @@ function runActs(acts) {
       return;
     }
     if (act.type === "word") showWordCard(act.term, step);
+    else if (act.type === "guide") {
+      // 方法卡读完自动续播（与内嵌小测同款 contract）
+      inlineQueued = true;
+      showGuideCard(act.card, step);
+    }
     else if (act.type === "quiz" || act.type === "review") {
       const checkpoint = act.checkpoint || {};
       const meta = act.carryover
@@ -1473,6 +1482,9 @@ function runActs(acts) {
 function studyActsFor(nodeIdx) {
   const acts = [];
   if (passMode !== "study") return acts;
+  // GUIDE 先行：方法卡排在词卡/小测之前，先学方法再练习。
+  const guide = guidePlan.byIndex[nodeIdx];
+  if (guide && !guidesShown.has(guide.id)) acts.push({ type: "guide", card: guide });
   (wordCardPlan[nodeIdx] || []).forEach((t) => acts.push({ type: "word", term: t }));
   const checkpoint = checkpointPlan.byIndex[nodeIdx];
   if (checkpoint) {
@@ -1926,11 +1938,50 @@ function rebuildCheckpointPlan() {
     learnLevel,
     enabled: passMode === "study",
   });
+  guidePlan = WalaStudyPlan.buildGuidePlan({
+    nodes: (book && book.nodes) || [],
+    isListenNode,
+    checkpointIndexes: checkpointPlan.indexes,
+    cards: strategyCards,
+    learnLevel,
+  });
 }
 function nodeQuiz(nodeIdx) {
   const q = plotQuizAt[nodeIdx];
   return q && !q._asked ? q : null;
 }
+/* P2 方法卡（GUIDE）：暂停故事教一个读/听策略，点「知道了」继续。一集内每张卡只出现一次。 */
+function showGuideCard(card, onDone) {
+  if (!el.puzzle || !card) { if (onDone) onDone(); return; }
+  if (el.video) el.video.pause();
+  stopKaraoke();
+  el.dots.classList.add("hidden");
+  if (el.bubble) el.bubble.classList.add("card-quiz");
+  applySideCards();
+  el.puzzle.classList.remove("hidden");
+  el.puzzle.dataset.done = "";
+  el.puzzle.innerHTML = `<div class="w-guide">
+    <div class="w-guide-head"><span class="w-guide-badge">📖 学方法</span><b class="w-guide-title">${esc(card.title)}</b></div>
+    <p class="w-guide-body">${esc(card.body)}</p>
+    ${card.tip ? `<p class="w-guide-tip">💡 ${esc(card.tip)}</p>` : ""}
+    <div class="w-guide-actions"><button type="button" class="w-guide-ok">知道了，继续故事</button></div>
+  </div>`;
+  guidesShown.add(card.id);
+  window.BookPlayAudio?.sfx("tap");
+  const btn = el.puzzle.querySelector(".w-guide-ok");
+  let advanced = false;
+  const advance = () => {
+    if (advanced) return;
+    advanced = true;
+    el.puzzle.classList.add("hidden");
+    el.puzzle.innerHTML = "";
+    if (el.bubble) el.bubble.classList.remove("card-quiz");
+    if (onDone) onDone();
+  };
+  if (btn) btn.addEventListener("click", advance);
+  else advance();
+}
+
 function showFreezeQuiz(q, onDone, meta = {}) {
   if (el.video) el.video.pause();
   stopKaraoke();
@@ -2671,6 +2722,7 @@ if (ep >= 1) {
     episodeWalkerEpisode = null;
     if (!book.video) book.video = `assets/video/ep${ep}.mp4`;
     rawNodes = book.nodes;
+    guidesShown.clear();
     passMode = resolvePassMode();
     syncPassButtons();
     applyReviewReturnNavigation();
@@ -2678,13 +2730,15 @@ if (ep >= 1) {
     document.title = `豆豆龙英语 · 第${ep}集 ${book.title.en}`;
         await loadCompanionData();
         if (!audioOnlyListenQuery) await ensureVideo();
-    [wordAudio, zhAudio, enAudio, sentEnAudio, sentZhAudio] = await Promise.all([
+    [wordAudio, zhAudio, enAudio, sentEnAudio, sentZhAudio, strategyPack] = await Promise.all([
       j(`../assets/adv_audio/ep${ep}/index.json`).catch(() => ({})),
       j("../assets/adv_audio/zh_index.json").catch(() => ({})),
       j("../assets/adv_audio/en_index.json").catch(() => ({})),
       j("../assets/adv_audio/sent_en_index.json").catch(() => ({})),
       j("../assets/adv_audio/sent_zh_index.json").catch(() => ({})),
+      j("../data/strategy_cards.json").catch(() => ({ cards: [] })),
     ]);
+    strategyCards = Array.isArray(strategyPack && strategyPack.cards) ? strategyPack.cards : [];
     await mergeQuizAudio();
     const saved = progress()[ep];
     const requestedNodeIndex = requestedNodeQuery

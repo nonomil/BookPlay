@@ -130,6 +130,17 @@
       : [];
     const quiz = source.quiz && typeof source.quiz === "object" ? source.quiz : {};
     const answers = Array.isArray(quiz.answers) ? quiz.answers.filter((item) => item && typeof item === "object") : [];
+    const first = source.firstAttempt && typeof source.firstAttempt === "object" ? source.firstAttempt : {};
+    const firstTotal = Math.max(0, Number.parseInt(first.total, 10) || 0);
+    const firstCorrect = Math.min(firstTotal, Math.max(0, Number.parseInt(first.correct, 10) || 0));
+    const firstAttempt = firstTotal > 0
+      ? {
+        total: firstTotal,
+        correct: firstCorrect,
+        ratio: firstCorrect / firstTotal,
+        at: first.at || null,
+      }
+      : null;
     return {
       // Keep the stored version visible to the caller.  The page startup code
       // can then deliberately rebuild sessions from an older schema instead
@@ -149,6 +160,8 @@
         correct: Math.max(0, Number.parseInt(quiz.correct, 10) || 0),
         answers,
       },
+      // 首答口径（P2）：第一次完整作答的结果永久保留，重做测验不改写。
+      firstAttempt,
       attempts: Math.max(0, Number.parseInt(source.attempts, 10) || 0),
       passed: source.passed === true,
       createdAt: source.createdAt || null,

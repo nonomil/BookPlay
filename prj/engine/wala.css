@@ -1128,3 +1128,40 @@ button#w-review:hover, .w-btn-gold:hover { filter: brightness(1.08); }
 }
 .w-mission-foot { margin: 0.8rem 0 0; color: #b9a77f; font-size: 0.78rem; letter-spacing: 0.08em; }
 .w-recap { color: #ffe08a !important; }
+
+/* P2 方法卡（GUIDE）：精学模式中教一个读/听策略。
+ * 字幕卡容器（w-puzzle）是浅色底，文字用深棕/深金保证对比度（2026-09-19）。 */
+.w-guide { text-align: left; }
+.w-guide-head { display: flex; align-items: center; gap: 10px; margin-bottom: 0.5rem; }
+.w-guide-badge {
+  flex: none;
+  padding: 3px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(160, 123, 28, 0.55);
+  color: #8a5a00;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+}
+.w-guide-title { color: #6b4a05; font-size: clamp(1.05rem, 2.2vw, 1.35rem); }
+.w-guide-body { margin: 0 0 0.55rem; color: #43331a; line-height: 1.6; font-size: clamp(0.95rem, 1.9vw, 1.08rem); }
+.w-guide-tip {
+  margin: 0 0 0.8rem;
+  padding: 8px 12px;
+  border-radius: 12px;
+  background: rgba(191, 144, 28, 0.12);
+  color: #6b4a05;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+.w-guide-actions { text-align: center; }
+.w-guide-ok {
+  min-height: 64px;
+  min-width: 200px;
+  padding: 0 28px;
+  border: none;
+  border-radius: 14px;
+  background: linear-gradient(180deg, #ffd76a, #e8b64c);
+  color: #3a2a08;
+  font: 700 1rem/1 "PingFang SC", "Microsoft YaHei", sans-serif;
+  cursor: pointer;
+}

@@ -22,6 +22,7 @@ from paths import CONTENT, REPO
 INCLUDE_DIRS = (
     "assets/music",
     "assets/sfx",
+    "strategy_cards.json",
     "dialogue_stories",
     "achievements",
     "companions",
@@ -101,6 +102,8 @@ COMMON_DIRS = (
     "assets/game-pickups",
 )
 COMMON_FILES = (
+    # 全局阅读策略卡库（wala 精学 GUIDE 环节），与集数无关，每个数据包都带
+    "strategy_cards.json",
     # The library home screen and the JTTW map splash are outside the
     # episode-specific reference closure, so keep the public series cover in
     # every JTTW stage package.

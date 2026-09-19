@@ -896,6 +896,17 @@ function restoreQuizPosition() {
 
 function resetQuizSession() {
   if (!studySession) return;
+  // 首答口径（P2）：重置前把上一轮作答归档为 firstAttempt（只归档一次，之后重做不再改写）。
+  const prevAnswers = Array.isArray(studySession.quiz?.answers) ? studySession.quiz.answers : [];
+  if (prevAnswers.length && !studySession.firstAttempt) {
+    const prevCorrect = prevAnswers.filter((item) => item && item.ok).length;
+    studySession.firstAttempt = {
+      total: prevAnswers.length,
+      correct: prevCorrect,
+      ratio: prevCorrect / prevAnswers.length,
+      at: studySession.updatedAt || new Date().toISOString(),
+    };
+  }
   studySession.quiz = { current: 0, correct: 0, answers: [] };
   studySession.passed = false;
   studySession.updatedAt = new Date().toISOString();

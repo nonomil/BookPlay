@@ -64,6 +64,8 @@ DATA_DIRS = [
     ("assets/music", ASSETS / "music"),
     ("assets/sfx", ASSETS / "sfx"),
     ("dialogue_stories", STORIES),
+    # 全局阅读策略卡库（GUIDE 环节）
+    ("strategy_cards.json", CONTENT / "strategy_cards.json"),
     ("achievements", CONTENT / "achievements"),
     ("companions", CONTENT / "companions"),
     ("rewards", CONTENT / "rewards"),
