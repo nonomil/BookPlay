@@ -38,6 +38,8 @@ ENGINE_FILES = [
     "wala.html", "wala.js", "wala.css",
     # 学习步日志 + 家长报告（P0 学习诊断，只读本机数据）
     "step-log-core.js", "step-log.js", "parent-report.html", "parent-report.js",
+    # 看图复述（P3 OUTPUT）：四图排序 + 逐图录音 + 放映；复用 dub 录音/存储基建
+    "retell.html", "retell.js", "retell-core.js", "dub-store.js", "dub-recorder.js",
     "storybook.html", "storybook.js", "storybook.css", "storybook-v3.css",
     "style.css",
     # The lesson page is part of the Android learning loop. Keep its shared

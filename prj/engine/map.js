@@ -1429,6 +1429,7 @@ function openEpisodeDetail(n) {
         </div>
         <p class="episode-detail-resume">${resumeLine}</p>` : "";
   const learnMode = SERIES.dualPath ? "" : `<a class="episode-detail-mode" href="${SERIES.href(n)}" tabindex="0">学习</a>`;
+  const retellLink = SERIES.dualPath ? `<a class="episode-detail-option" href="retell.html?ep=${n}" tabindex="0">🎤 复述</a>` : "";
   detailEl.innerHTML = `
     <div class="episode-detail-card" role="dialog" aria-modal="true" aria-label="第${n}${SERIES.unit}详情">
       <button type="button" class="episode-detail-close" aria-label="关闭" tabindex="0">✕</button>
@@ -1443,6 +1444,7 @@ function openEpisodeDetail(n) {
         </div>
         <div class="episode-detail-options">
           <a class="episode-detail-option" href="dub.html?ep=${n}" tabindex="0">配音</a>
+          ${retellLink}
           ${drillLink}
         </div>
       </div>

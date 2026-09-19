@@ -41,6 +41,8 @@
     if (typeof raw.ok === "boolean") out.ok = raw.ok;
     if (raw.score != null && String(raw.score).length) out.score = String(raw.score).slice(0, 12);
     if (raw.cid) out.cid = String(raw.cid).slice(0, 8);
+    // kind：同一步骤内的细分（如 output 的 dub / retell），诊断路由 P4 消费
+    if (raw.kind) out.kind = String(raw.kind).slice(0, 8);
     return out;
   }
 
