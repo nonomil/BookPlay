@@ -2,6 +2,7 @@
 
 const WB_KEY = "bookplay_wordbook";
 const PROG_KEY = "bookplay_adv_progress";
+const STORY_PROG_KEY = "bookplay_story_progress";
 
 const $ = (id) => document.getElementById(id);
 const grid = $("grid");
@@ -41,6 +42,11 @@ function progressMap() {
   try { return JSON.parse(localStorage.getItem(PROG_KEY) || "{}"); } catch (_) { return {}; }
 }
 
+// 绘本精读进度（storybook.js 写入）：done=精读学完，page=读到第几页。
+function storyProgressMap() {
+  try { return JSON.parse(localStorage.getItem(STORY_PROG_KEY) || "{}"); } catch (_) { return {}; }
+}
+
 function wordbook() {
   try { return JSON.parse(localStorage.getItem(WB_KEY) || "[]"); } catch (_) { return []; }
 }
@@ -60,6 +66,7 @@ function renderWordbook() {
 function render(filter = "") {
   const q = filter.trim().toLowerCase();
   const prog = progressMap();
+  const storyProg = storyProgressMap();
   const items = catalog.episodes.filter((ep) => {
     const itemId = ep.book || ep.episode;
     const hay = `${itemId} ${ep.title.en} ${ep.title.zh}`.toLowerCase();
@@ -69,9 +76,12 @@ function render(filter = "") {
     const itemId = ep.book || ep.episode;
     const progressKey = series === "minecraft" ? `minecraft:${itemId}` : series === "mikey-jj" ? `mikey-jj:${itemId}` : itemId;
     const p = prog[progressKey] || {};
-    const seen = p.page || p.node || 0;
-    const done = p.done ? "已学完" : (seen ? `读到第 ${seen} 页` : "未开始");
-    const href = series === "minecraft"
+    const storyP = storyProg[progressKey] || {};
+    // 学完 = 旧学习环（动画+知识巩固）或绘本精读任一完成，都解锁视频回看。
+    const studied = Boolean(p.done || storyP.done);
+    const seen = storyP.page || p.page || p.node || 0;
+    let done = p.done || storyP.done ? "已学完" : (seen ? `读到第 ${seen} 页` : "未开始");
+    let href = series === "minecraft"
       ? `storybook.html?series=minecraft&book=${itemId}&ui=unified-v3`
       : series === "mikey-jj"
         ? `storybook.html?series=mikey-jj&book=${itemId}&ui=unified-v3`
@@ -79,10 +89,22 @@ function render(filter = "") {
     const listenHref = series === "jttw"
       ? `wala.html?ep=${itemId}&mode=listen&loops=2&visual=audio&subtitle=enzh`
       : "";
-    // 双路径入口：同一集既能看动画（主卡），也能换绘本方式读一遍。
-    const actions = series === "jttw"
-      ? `<div class="card-actions"><a class="card-listen card-read" href="storybook.html?ep=${itemId}" title="绘本方式重读本集：逐句朗读、点词释义">📖 绘本</a><a class="card-listen" href="${listenHref}" title="隐藏画面，只听本集字幕与声音">🎧 磨耳朵</a></div>`
-      : "";
+    // 双路径入口：同一集既能看动画，也能换绘本方式读一遍。
+    let actions = "";
+    if (series === "jttw") {
+      // 默认门控：先精读完一集（绘本读到末页 + 章末小测），之后才解锁"看视频回看"。
+      href = studied ? `wala.html?ep=${itemId}` : `storybook.html?ep=${itemId}`;
+      done = studied
+        ? "已学完 · 可回看动画"
+        : (seen ? `精读进行中 · 第 ${seen} 页` : "从精读开始");
+      const watchPill = studied
+        ? `<a class="card-listen card-watch" href="wala.html?ep=${itemId}" title="用看视频的方式回看本集">🎬 回看</a>`
+        : `<span class="card-listen card-locked" title="精读完本集后解锁看动画">🔒 学完解锁</span>`;
+      const readPill = studied
+        ? `<a class="card-listen card-read" href="storybook.html?ep=${itemId}" title="绘本方式重读本集：逐句朗读、点词释义">📖 绘本</a>`
+        : "";
+      actions = `<div class="card-actions">${readPill}${watchPill}<a class="card-listen" href="${listenHref}" title="隐藏画面，只听本集字幕与声音">🎧 磨耳朵</a></div>`;
+    }
     return `<article class="card">
       <a class="card-main" href="${href}">
         <img src="../${ep.cover || ""}" alt="">

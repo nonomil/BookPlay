@@ -61,8 +61,16 @@
     ul.weak .en { font-weight: 700; }
     ul.weak .stat { color: #ffb3b3; font-size: 13px; }
     .suggest { display: grid; gap: 10px; }
-    .tip { display: flex; gap: 10px; align-items: flex-start; }
-    .tip .icon { font-size: 20px; line-height: 1.4; }
+    .coach-headline { font-size: 17px; font-weight: 700; color: #ffd76a; margin-bottom: 12px; }
+    .coach-action {
+      display: inline-flex; align-items: center; min-height: 56px; padding: 0 22px;
+      border-radius: 14px; border: none; text-decoration: none;
+      background: linear-gradient(180deg, #ffd76a, #e8b64c); color: #3a2a08;
+      font: 700 16px/1.2 "PingFang SC", "Microsoft YaHei", sans-serif; margin-bottom: 12px;
+    }
+    .coach-why { margin-top: 10px; color: #93a0c4; font-size: 13px; }
+    .coach-why summary { cursor: pointer; color: #c9d4f2; }
+    .coach-why ul { margin: 8px 0 0 18px; }
     .empty { color: #93a0c4; }
   </style>
 </head>
@@ -87,12 +95,13 @@
     </section>
     <section>
       <h2>下一步建议</h2>
-      <div class="card suggest" id="report-suggest"></div>
+      <div class="card" id="report-coach"></div>
     </section>
   </div>
   <script src="tv-remote.js?v=1"></script>
   <script src="step-log-core.js?v=1"></script>
   <script src="step-log.js?v=1"></script>
+  <script src="coach-core.js?v=1"></script>
   <script src="parent-report.js?v=1"></script>
 </body>
 </html>

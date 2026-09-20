@@ -202,6 +202,21 @@ body { overflow: auto; }
 }
 .card-read:hover,
 .card-read:focus-visible { background: rgba(190, 96, 50, 0.66); color: #fff; outline: none; }
+/* 回看动画：精读完解锁后的金色药丸 */
+.card-watch {
+  border-color: rgba(232, 197, 90, 0.6);
+  color: #ffedbd;
+  background: rgba(96, 72, 18, 0.5);
+}
+.card-watch:hover,
+.card-watch:focus-visible { background: rgba(160, 122, 30, 0.66); color: #fff; outline: none; }
+/* 未解锁回看：非链接占位药丸 */
+.card-locked {
+  border-color: rgba(255, 255, 255, 0.2);
+  color: #b9ac97;
+  background: rgba(255, 255, 255, 0.05);
+  cursor: default;
+}
 
 #wordbook-panel {
   max-width: 720px;

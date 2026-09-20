@@ -33,13 +33,13 @@
   // 此前按"全图/秒"定义且关卡 worldTiles 改为 1 后整体慢了 4 倍，用户反馈太慢。
   const MOVEMENT_SPEEDS = Object.freeze({
     hero: 0.38,          // 屏/秒：约 2.6s 横穿一屏（0.6 太冲——2026-09-12 二次定档：儿童从容节奏）
-    monsterWander: 0.08, // 远距巡逻：散步级，孩子安心捡词球
-    monsterChase: 0.16,  // 追击 = 主角速度的 ~27%，走位就能甩开
+    monsterWander: 0.04, // 远距巡逻：散步级，孩子安心捡词球
+    monsterChase: 0.07,  // 追击 = 主角速度的 ~27%，走位就能甩开
   });
   // Reusable melee kit: wander outside aggro, telegraph, then contact hit.
   // Distances are viewport-widths (same unit as MOVEMENT_SPEEDS).
   const MONSTER_AI = Object.freeze({
-    aggro: 0.30,
+    aggro: 0.20,
     attack: 0.07,
     attackCd: 2800,
     windupMs: 420,

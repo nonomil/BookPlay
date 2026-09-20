@@ -1678,3 +1678,36 @@ body.map-terminal .terminal-stage {
 
 #map-dex-float:hover,
 #map-dex-float:focus-visible { background: rgba(255, 215, 106, 0.9); color: #4a2f00; outline: none; }
+
+/* P4 学习教练浮标：下一步练什么（与图鉴入口同族样式，放左上角） */
+#map-coach-float {
+  position: fixed;
+  z-index: 40;
+  top: 12px;
+  left: 14px;
+  max-width: min(46vw, 320px);
+  min-height: 40px;
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 2px solid rgba(125, 206, 160, 0.7);
+  background: rgba(15, 20, 36, 0.82);
+  color: #a9e5c4;
+  font: 700 13px/1.3 "PingFang SC", "Microsoft YaHei", sans-serif;
+  text-decoration: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#map-coach-float.hidden { display: none; }
+#map-coach-float:hover,
+#map-coach-float:focus-visible { background: rgba(125, 206, 160, 0.9); color: #0d221a; outline: none; }
+
+/* 2026-09-19 P2 双路径升级：📖 精读课堂 / 🎬 看动画 两种入口（选集时选路径，路径内不切换） */
+.path-card.path-study { border-color: rgba(228, 141, 91, 0.55); background: rgba(228, 141, 91, 0.12); }
+.path-card.path-study b { color: #f0a374; }
+.path-card.path-study em { color: #ffd76a; }
+.path-card.path-study.is-ready { border-color: #f0a374; background: rgba(228, 141, 91, 0.2); box-shadow: 0 10px 26px rgba(228, 141, 91, 0.18); }
+.path-card.path-watch { border-color: rgba(125, 206, 160, 0.5); background: rgba(125, 206, 160, 0.1); }
+.path-card.path-watch b { color: #7dcea0; }

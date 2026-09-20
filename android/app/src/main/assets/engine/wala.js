@@ -25,11 +25,12 @@ const el = {
   listenDone: $("w-listen-done"), listenReturn: $("w-listen-return"), listenAgain: $("w-listen-again"),
   mission: $("w-mission"), missionTitle: $("w-mission-title"),
   missionRule: $("w-mission-rule"), missionStart: $("w-mission-start"),
-  back: $("w-back"), epTitle: $("w-ep-title"), dub: $("w-dub"), read: $("w-read"),
+  back: $("w-back"), epTitle: $("w-ep-title"), dub: $("w-dub"),
+  frame: $("w-frame"), dock: $("w-dock"),
   modeEn: $("w-mode-en"), modeEnZh: $("w-mode-enzh"),
   annotOn: $("w-annot-on"), annotOff: $("w-annot-off"), autoBtn: $("w-auto"),
   sideCardsOn: $("w-sidecards-on"), sideCardsOff: $("w-sidecards-off"),
-  passStory: $("w-pass-story"), passStudy: $("w-pass-study"),
+  passStory: $("w-pass-story"), passStudy: $("w-pass-study"), passToggle: $("w-pass-toggle"),
   lvLite: $("w-lv-lite"), lvStd: $("w-lv-std"), lvMax: $("w-lv-max"),
   gradeG12: $("w-grade-g1-2"), gradeG34: $("w-grade-g3-4"), gradeG56: $("w-grade-g5-6"),
   intensityLight: $("w-intensity-light"), intensityStandard: $("w-intensity-standard"), intensityChallenge: $("w-intensity-challenge"),
@@ -70,6 +71,10 @@ const listenQueryLoops = params.get("loops");
 const audioOnlyListenQuery = /^(audio|listen)$/i.test(String(params.get("visual") || "").trim());
 const studyThresholdQuery = Number(params.get("study_threshold"));
 const passModeQuery = params.get("passMode") || params.get("pass") || (params.get("mode") === "study" ? "study" : "");
+// 入口锁定：从地图/精读课堂带着显式 pass 进来时，路径已在选集时定好，
+// 播放器内不再提供剧情/精学切换（"选集时选路径，过程中不切换"）。
+const lockPass = Boolean(params.get("pass") || params.get("passMode") || params.get("mode") === "study");
+
 const readModeQuery = params.get("subtitle") || params.get("readMode") || "";
 const sideCardsQuery = params.get("sidecards") || params.get("sideCardsOn");
 const annotQuery = params.get("annot");
@@ -1267,6 +1272,9 @@ function resolvePassMode() {
   if (explicit === "story" || explicit === "study") return explicit;
   return (progress()[ep] || {}).done ? "study" : "story";
 }
+function applyPassLock() {
+  if (el.passToggle) el.passToggle.classList.toggle("hidden", lockPass);
+}
 function findOfficial(term) {
   const key = bareWord(term);
   return officialList().find((w) => bareWord(w.term) === key || String(w.term).toLowerCase() === String(term || "").toLowerCase())
@@ -1783,6 +1791,7 @@ function render(opts) {
   const willPlay = !!(opts && opts.willPlay);
   hideVocabPeek();
   episodeFinished = false;
+  applyStudyDock();
   if (el.next) {
     el.next.setAttribute("aria-label", "下一页");
     el.next.title = "下一页";
@@ -1796,8 +1805,6 @@ function render(opts) {
     const dubNode = n && n.node_id ? `&node=${encodeURIComponent(n.node_id)}` : "";
     el.dub.setAttribute("href", `dub.html?ep=${ep}${dubNode}&back=player`);
   }
-  // 双路径：同一集随时可以切换到绘本方式重读（纸感皮肤阅读器）。
-  if (el.read) el.read.setAttribute("href", `storybook.html?ep=${ep}`);
   const showMarks = n.type === "narration";
   if (el.enPlay) el.enPlay.classList.toggle("hidden", !showMarks);
   if (el.zhPlay) el.zhPlay.classList.toggle("hidden", !showMarks);
@@ -2121,7 +2128,11 @@ function finishEpisode() {
   collectBagThrough(book.nodes.length - 1);
   const y = officialList().length;
   const x = bagTerms.length;
-  el.puzzle.innerHTML = `<div class="w-end-inline"><div><b>本集播放完成</b><div class="w-end-sub">本集词袋：${x} / ${y}</div><div class="w-end-sub">小挑战：用自己的话说说，刚才发生了什么？</div><div class="w-end-next-hint">点击字幕框右上角的 ▶ 进入知识巩固 →</div></div></div>`;
+  const challengeLine = '<div class="w-end-sub">小挑战：用自己的话说说，刚才发生了什么？</div>';
+  const endHint = (lockPass && passMode === "story")
+    ? "本集播放完成 🎉 再按 ▶ 再看一遍，或回地图选下一集。"
+    : "点击字幕框右上角的 ▶ 进入知识巩固 →";
+  el.puzzle.innerHTML = `<div class="w-end-inline"><div><b>本集播放完成</b><div class="w-end-sub">本集词袋：${x} / ${y}</div>${challengeLine}<div class="w-end-next-hint">${endHint}</div></div></div>`;
   // The in-player arrow is a button, not an inline link.  `next()` owns the
   // post-completion transition after the user explicitly activates the
   // arrow.  Keeping navigation in one path avoids
@@ -2224,6 +2235,11 @@ function next() {
   }
   if (episodeFinished) {
     stopSeq();
+    if (lockPass && passMode === "story") {
+      // 看动画入口：看完就在本页结束（▶ 重播），不再连环跳转
+      location.reload();
+      return;
+    }
     location.href = `lesson-words.html?ep=${ep}`;
     return;
   }
@@ -2449,6 +2465,19 @@ function applySubtitle() {
 function syncPassButtons() {
   if (el.passStory) el.passStory.classList.toggle("active", passMode === "story");
   if (el.passStudy) el.passStudy.classList.toggle("active", passMode === "study");
+  applyStudyDock();
+}
+// 精读遍（参考稿 Watch & Read 版式）：字幕泊坞离开视频画面，落到画面下方；
+// 剧情遍与磨耳朵保持叠在画面内的观影样式。
+function applyStudyDock() {
+  if (!el.dock || !el.frame) return;
+  const study = passMode === "study" && !listenMode;
+  if (el.player) el.player.classList.toggle("study-dock", study);
+  if (study) {
+    if (el.dock.parentElement !== el.frame.parentElement) el.frame.after(el.dock);
+  } else if (el.dock.parentElement !== el.frame) {
+    el.frame.appendChild(el.dock);
+  }
 }
 function applySideCards() {
   const busy = el.bubble && (el.bubble.classList.contains("card-quiz") || el.bubble.classList.contains("card-word"));
@@ -2724,6 +2753,7 @@ if (ep >= 1) {
     rawNodes = book.nodes;
     guidesShown.clear();
     passMode = resolvePassMode();
+    applyPassLock();
     syncPassButtons();
     applyReviewReturnNavigation();
     rebuildLexIndex();

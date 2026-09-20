@@ -85,11 +85,19 @@ test("engine HTML entries ship native-key, handheld-controls, and handheld.css",
   const dir = dirname(fileURLToPath(import.meta.url));
   const pages = readdirSync(dir).filter((name) => name.endsWith(".html"));
   assert.ok(pages.length >= 20);
+  // 2026-09-21 定位收窄：掌机层只服务游戏与看视频（wala/game），
+  // 精读课堂（study.html）是桌面/TV 学习场景，不再加载掌机层。
+  const HANDHELD_FREE = new Set(["study.html"]);
   for (const name of pages) {
     const html = readFileSync(join(dir, name), "utf8");
+    assert.match(html, /native-key\.js/, name);
+    if (HANDHELD_FREE.has(name)) {
+      assert.doesNotMatch(html, /handheld-controls\.js/, `${name} 不加载掌机控制层`);
+      assert.doesNotMatch(html, /handheld\.css/, `${name} 不加载掌机布局层`);
+      continue;
+    }
     assert.match(html, /handheld-controls\.js/, name);
     assert.match(html, /handheld\.css/, name);
-    assert.match(html, /native-key\.js/, name);
   }
 });
 

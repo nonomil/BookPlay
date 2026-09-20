@@ -88,8 +88,8 @@ test('game.js：主角与小怪使用提速后的行走档位，并按运动方�
   assert.match(js, /setMonsterDir/);
   assert.match(js, /directionFromDelta/);
   assert.match(coreJs, /hero:\s*0\.38/);
-  assert.match(coreJs, /monsterWander:\s*0\.08/);
-  assert.match(coreJs, /monsterChase:\s*0\.16/);
+  assert.match(coreJs, /monsterWander:\s*0\.04/);
+  assert.match(coreJs, /monsterChase:\s*0\.07/);
   assert.match(js, /monsterIntent/);
   assert.match(js, /windupUntil/);
   assert.match(js, /setHeroDir\(moved\.facing\)/);
@@ -397,8 +397,8 @@ test('Android 大地图运行副本与浏览器版共享慢速四向/攻防契�
   assert.match(androidGame, /function tileCamera\(/);
   // 2026-09-12 二次定档：0.38 屏/秒（用户反馈 0.6 太快）
   assert.match(androidCore, /hero:\s*0\.38/);
-  assert.match(androidCore, /monsterWander:\s*0\.08/);
-  assert.match(androidCore, /monsterChase:\s*0\.16/);
+  assert.match(androidCore, /monsterWander:\s*0\.04/);
+  assert.match(androidCore, /monsterChase:\s*0\.07/);
   assert.match(androidCss, /\[hidden\]\s*\{[^}]*display\s*:\s*none\s*!important/);
   assert.match(androidCss, /width\s*:\s*400%/);
 });

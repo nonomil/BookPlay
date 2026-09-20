@@ -58,7 +58,7 @@ test("study.js：01 看故事 = 原生精读播放器（元素重组，非整页
   assert.match(js, /doneFlags\.findIndex\(\(flag\) => !flag\)/);
   assert.match(js, /wala\.html\?ep=\$\{ep\}&pass=story/);
   // 步骤切换：五步全原生宿主
-  assert.match(js, /const native = Boolean\(hosts\[i\]\);/);
+  assert.match(js, /hosts\.forEach\(\(id, k\) => \{ \$\(id\)\.hidden = k !== i; \}\);/);
 });
 
 test("wala：无任何内嵌残留，精学字幕仍在画面下方（原生播放器同范式）", () => {

@@ -17,6 +17,7 @@
   const recorder = window.WalaDubRecorder.create({ env: window });
 
   let scenes = [];
+  let poolSeq = [];   // 图池展示顺序（洗牌后），元素是场景序号
   let placement = [];
   let current = 0;
   let recording = false;
@@ -69,11 +70,9 @@
   function renderOrder() {
     el.pool.innerHTML = "";
     el.slots.innerHTML = "";
-    const inPool = [];
-    for (let slot = 0; slot < scenes.length; slot += 1) {
-      if (placement[slot] == null) inPool.push(slot);
-    }
-    for (const sceneIdx of inPool) {
+    const placed = new Set(placement.filter((value) => value != null));
+    for (const sceneIdx of poolSeq) {
+      if (placed.has(sceneIdx)) continue;
       const btn = document.createElement("button");
       btn.type = "button";
       btn.className = "pic";
@@ -279,6 +278,7 @@
     document.title = `看图复述 · 第 ${ep} 集`;
     el.title.textContent = `看图复述 · 第 ${ep} 集`;
     placement = new Array(scenes.length).fill(null);
+    poolSeq = Core.shuffledOrder(scenes.length);
     entered = true;
     logStep("enter");
     el.orderCheck.addEventListener("click", checkPlacement);

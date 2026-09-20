@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>豆豆龙英语 · 播放</title>
   <link rel="stylesheet" href="style.css?v=png1">
-  <link rel="stylesheet" href="wala.css?v=58">
+  <link rel="stylesheet" href="wala.css?v=65">
   <link rel="stylesheet" href="tv.css?v=6">
   <link rel="stylesheet" href="handheld.css?v=2">
   <link rel="stylesheet" href="app-audio.css?v=2">
@@ -49,14 +49,13 @@
       <nav class="w-nav-btns">
         <a class="w-nav-btn" href="shelf.html" id="w-back">选集</a>
         <a class="w-nav-btn" href="home.html">首页</a>
-        <a class="w-nav-btn w-read-btn" id="w-read" href="#">📖 读绘本</a>
         <a class="w-nav-btn w-dub-btn" id="w-dub" href="#">🎙 配音</a>
       </nav>
       <span id="w-ep-title"></span>
       <span data-audio-slot></span>
       <span class="spacer"></span>
       <button id="w-auto" type="button" class="hidden">手动</button>
-      <div class="mode-toggle" title="剧情遍连续听故事；精学遍在场景后显示单词卡与少量小测">
+      <div class="mode-toggle" id="w-pass-toggle" title="剧情遍连续听故事；精学遍在场景后显示单词卡与少量小测">
         <button id="w-pass-story" type="button">剧情</button>
         <button id="w-pass-study" type="button">精学</button>
       </div>
@@ -138,13 +137,13 @@
       </div>
     </div>
     <div class="w-stage">
-      <div class="w-frame">
+      <div class="w-frame" id="w-frame">
         <img id="w-img" alt="">
         <video id="w-video" playsinline preload="none"></video>
         <div id="w-cards-left"></div>
         <div id="w-cards"></div>
         <div id="w-vocab-peek" class="w-vocab-peek hidden" role="dialog" aria-modal="false" aria-label="单词详情"></div>
-        <div class="w-dock">
+        <div class="w-dock" id="w-dock">
           <a class="w-avatar has-face" id="w-avatar" href="companion.html?series=jttw" aria-label="打开养宠物界面" title="打开养宠物界面">
             <img src="../assets/companions/white-dragon/stages/mysterious-egg.png" alt="神秘龙蛋">
           </a>
@@ -258,6 +257,6 @@
   <script src="step-log.js?v=1"></script>
   <script src="voice-core.js?v=1"></script>
   <script src="voice.js?v=1"></script>
-  <script src="wala.js?v=74"></script>
+  <script src="wala.js?v=79"></script>
 </body>
 </html>

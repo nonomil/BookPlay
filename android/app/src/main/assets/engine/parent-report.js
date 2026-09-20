@@ -86,17 +86,27 @@
     </li>`).join("");
   }
 
-  function renderSuggest(summary, vstat) {
-    const tips = Core.suggest(summary, { vstat });
-    $("report-suggest").innerHTML = tips.map((tip) => `
-      <div class="tip"><span class="icon">${esc(tip.icon)}</span><span>${esc(tip.text)}</span></div>`).join("");
+  function renderSuggest(summary, log, vstat, progress) {
+    const host = $("report-coach");
+    const coach = window.BookPlayCoach;
+    if (!coach) { host.innerHTML = "<p class=\"empty\">教练暂时不在家。</p>"; return; }
+    const v = coach.verdict({ summary, log, vstat, progress });
+    const chips = (v.weakTerms || []).map((item) => `<span class="chip fail">${esc(item.term)} · 错 ${item.wrong} 次</span>`).join("");
+    const reasons = (v.signals || []).map((s) => `<li>${esc(s)}</li>`).join("");
+    host.innerHTML = `
+      <p class="coach-headline">${esc(v.headline)}</p>
+      ${v.nextAction ? `<a class="coach-action" href="${esc(v.nextAction.href)}">${esc(v.nextAction.label)} →</a>` : ""}
+      ${chips ? `<div class="chips">${chips}</div>` : ""}
+      ${reasons ? `<details class="coach-why"><summary>为什么这么建议</summary><ul>${reasons}</ul></details>` : ""}`;
   }
 
   try {
-    const summary = Core.summarize(readLog(), { days: 7 });
+    const log = readLog();
+    const summary = Core.summarize(log, { days: 7 });
+    const vstat = readJson("bookplay_adv_vocab_stat", "{}");
     renderOverview(summary, readJson("bookplay_adv_progress", "{}"));
     renderRows(summary);
-    renderWeak(readJson("bookplay_adv_vocab_stat", "{}"));
-    renderSuggest(summary, readJson("bookplay_adv_vocab_stat", "{}"));
+    renderWeak(vstat);
+    renderSuggest(summary, log, vstat, readJson("bookplay_adv_progress", "{}"));
   } catch (_) { /* 报告失败不打扰孩子 */ }
 })();

@@ -36,7 +36,7 @@
     return !!(el&&visible(el)&&el!==opener&&!(panel&&panel.contains(el))&&!el.hasAttribute('data-open-handheld')&&!inClosedDetails(el));
   }
   function focusDefault(){
-    var list=Array.prototype.slice.call(d.querySelectorAll('.book-card, a.node, #map-track a[href], main a[href], a[href], button')).filter(playable);
+    var list=Array.prototype.slice.call(d.querySelectorAll('.play-ep, .book-card, a.node, #map-track a[href], main a[href], a[href], button')).filter(playable);
     if(list[0]) list[0].focus();
   }
   function syncMode(){if(app!=='bookplay')return;var quiz=Array.prototype.some.call(d.querySelectorAll(quizSelector),visible);var next=override==='auto'?autoMode(w.location.pathname,quiz):override;if(next!==mode){release();mode=next;key='x35s-controls-v1:bookplay:'+mode;mapping=load(app,safeRead(),mode);Object.keys(selectors).forEach(function(k){selectors[k].value=mapping[k];});}if(axes)axes.textContent='当前：'+{learn:'学习｜左右翻页，上下选控件，A 确认',quiz:'知识巩固｜左摇杆/方向键选择答案，A 确认',game:'游戏｜左摇杆/十字键自由移动，A 攻击，X 交互，Y 暂停'}[mode]+'。右摇杆不模拟鼠标；Start 打开按键菜单。';}

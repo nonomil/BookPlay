@@ -269,7 +269,13 @@
   }
 
   function leaveUrl() {
-    return FROM_LESSON ? `lesson.html?ep=${EP}` : "map.html";
+    if (FROM_LESSON) return `lesson.html?ep=${EP}`;
+    try {
+      if (document.documentElement.hasAttribute("data-handheld") || location.hostname === "127.0.0.1") {
+        return "play-map.html";
+      }
+    } catch (_) { /* ignore */ }
+    return "map.html";
   }
 
   function handheldOffline() {
@@ -547,9 +553,21 @@
     return { x: col * vf, y: row * vf };
   }
 
-  function updateCamera() {
+  // 边缘平滑跟随：主角在视口死区内自由移动，越出才推镜头；指数平滑不抖。
+  // world=视口格数（map.worldTiles），坐标归一化 [0,1]（全图），镜头 = 视口左上角 [0, world-1]。
+  const CAM_MARGIN = 0.28;   // 主角距视口边 ≤28% 时镜头不动
+  const CAM_TAU = 0.14;      // 镜头指数平滑时间常数（秒）：越小跟越紧
+  function updateCamera(dtSec) {
     const world = mapWorld();
-    state.camera = tileCamera(state.hero, world);
+    const maxCam = Math.max(0, world - 1);
+    // 目标：让主角保持在视口中心附近（钳到世界边界内）
+    const tx = Math.max(0, Math.min(maxCam, state.hero.x - 0.5));
+    const ty = Math.max(0, Math.min(maxCam, state.hero.y - 0.5));
+    // 指数平滑
+    const dt = Math.max(0.001, Number(dtSec) || 0.016);
+    const k = 1 - Math.exp(-dt / 0.10);
+    state.camera.x += (tx - state.camera.x) * k;
+    state.camera.y += (ty - state.camera.y) * k;
     els.world.style.transform = `translate3d(${(-state.camera.x * state.vw * world).toFixed(1)}px, ${(-state.camera.y * state.vh * world).toFixed(1)}px, 0)`;
   }
 
