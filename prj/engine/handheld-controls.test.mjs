@@ -58,10 +58,16 @@ test("bookplay 方向桥：合成 Arrow 放行，WASD 按目标键去重，右�
   const js = readFileSync(join(dir, "handheld-controls.js"), "utf8");
   assert.match(js, /e\.x35sTest && \/\^\(Key\[WASD\]\|Arrow/);
   assert.match(js, /app==='bookplay' && mode==='game' && !fromStick\) return/);
+  assert.match(js, /app==='bookplay' && mode!=='game'\) \|\| \(app==='blocklegend'/);
+  assert.doesNotMatch(js, /mode==='quiz'\|\|\/\^\(Up\|Down\)/);
   assert.match(js, /movement\[latch\]/);
   assert.match(js, /app!=='bookplay'&&isLook/);
   assert.match(js, /\(x\|\|y\)&&app!=='bookplay'/);
   assert.doesNotMatch(js, /app==='bookplay'\)w\.scrollBy/);
+  assert.match(js, /function playable/);
+  assert.match(js, /function focusDefault/);
+  assert.match(js, /data-open-handheld/);
+  assert.match(js, /map-splash/);
 });
 
 test("home.css：480 高横屏压住封面，书架不用 fixed 背景", () => {

@@ -79,6 +79,10 @@ function render(filter = "") {
     const listenHref = series === "jttw"
       ? `wala.html?ep=${itemId}&mode=listen&loops=2&visual=audio&subtitle=enzh`
       : "";
+    // 双路径入口：同一集既能看动画（主卡），也能换绘本方式读一遍。
+    const actions = series === "jttw"
+      ? `<div class="card-actions"><a class="card-listen card-read" href="storybook.html?ep=${itemId}" title="绘本方式重读本集：逐句朗读、点词释义">📖 绘本</a><a class="card-listen" href="${listenHref}" title="隐藏画面，只听本集字幕与声音">🎧 磨耳朵</a></div>`
+      : "";
     return `<article class="card">
       <a class="card-main" href="${href}">
         <img src="../${ep.cover || ""}" alt="">
@@ -89,10 +93,10 @@ function render(filter = "") {
           <div class="prog">${done}</div>
         </div>
       </a>
-      ${listenHref ? `<div class="card-actions"><a class="card-listen" href="${listenHref}" title="隐藏画面，只听本集字幕与声音">🎧 磨耳朵</a></div>` : ""}
+      ${actions}
     </article>`;
   }).join("");
-  grid.querySelectorAll(".card-listen").forEach((link) => {
+  grid.querySelectorAll(".card-actions a").forEach((link) => {
     link.addEventListener("click", (event) => event.stopPropagation());
   });
   status.textContent = `共 ${catalog.count || items.length} ${config.unit}，当前显示 ${items.length} ${config.unit}`;

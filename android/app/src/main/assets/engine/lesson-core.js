@@ -130,6 +130,17 @@
       : [];
     const quiz = source.quiz && typeof source.quiz === "object" ? source.quiz : {};
     const answers = Array.isArray(quiz.answers) ? quiz.answers.filter((item) => item && typeof item === "object") : [];
+    const first = source.firstAttempt && typeof source.firstAttempt === "object" ? source.firstAttempt : {};
+    const firstTotal = Math.max(0, Number.parseInt(first.total, 10) || 0);
+    const firstCorrect = Math.min(firstTotal, Math.max(0, Number.parseInt(first.correct, 10) || 0));
+    const firstAttempt = firstTotal > 0
+      ? {
+        total: firstTotal,
+        correct: firstCorrect,
+        ratio: firstCorrect / firstTotal,
+        at: first.at || null,
+      }
+      : null;
     return {
       // Keep the stored version visible to the caller.  The page startup code
       // can then deliberately rebuild sessions from an older schema instead
@@ -149,6 +160,8 @@
         correct: Math.max(0, Number.parseInt(quiz.correct, 10) || 0),
         answers,
       },
+      // 首答口径（P2）：第一次完整作答的结果永久保留，重做测验不改写。
+      firstAttempt,
       attempts: Math.max(0, Number.parseInt(source.attempts, 10) || 0),
       passed: source.passed === true,
       createdAt: source.createdAt || null,
@@ -485,6 +498,31 @@
     });
   }
 
+  const JTTW_COLLECTION_RANGES = Object.freeze([
+    ["c01", 1, 7], ["c02", 8, 13], ["c03", 14, 23], ["c04", 24, 31],
+    ["c05", 32, 39], ["c06", 40, 48], ["c07", 49, 54], ["c08", 55, 63],
+    ["c09", 64, 71], ["c10", 72, 79], ["c11", 80, 91], ["c12", 92, 99],
+    ["c13", 100, 108],
+  ]);
+
+  function collectionRangeForEpisode(episode) {
+    const n = Math.max(1, Math.min(108, Number.parseInt(episode, 10) || 1));
+    return JTTW_COLLECTION_RANGES.find(([, from, to]) => n >= from && n <= to) || JTTW_COLLECTION_RANGES[0];
+  }
+
+  function collectionIdForEpisode(episode) {
+    return collectionRangeForEpisode(episode)[0];
+  }
+
+  function isCollectionLastEpisode(episode) {
+    const n = Math.max(1, Math.min(108, Number.parseInt(episode, 10) || 1));
+    return n === collectionRangeForEpisode(episode)[2];
+  }
+
+  function drillHrefForEpisode(episode) {
+    return "drill.html?c=" + collectionIdForEpisode(episode);
+  }
+
   function getNextHref(episode) {
     const current = Math.max(1, Math.min(108, Number.parseInt(episode, 10) || 1));
     return current >= 108 ? "map.html" : `wala.html?ep=${current + 1}`;
@@ -515,5 +553,8 @@
     buildSentenceFillQuestion,
     buildListenPictureQuestions,
     getNextHref,
+    collectionIdForEpisode,
+    isCollectionLastEpisode,
+    drillHrefForEpisode,
   };
 });

@@ -1023,3 +1023,45 @@
 .farm-plot .farm-plot-action {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.45);
 }
+
+/* 反馈演出浮字（game-feedback 事件消费） */
+.game-float {
+  position: fixed;
+  z-index: 30;
+  z-index: 6;
+  transform: translate(-50%, -50%);
+  font-weight: 800;
+  font-size: clamp(15px, 2.2vw, 21px);
+  pointer-events: none;
+  animation: game-float-up 1.05s ease-out forwards;
+  white-space: nowrap;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+.game-float.is-good { color: #ffd76a; }
+.game-float.is-miss { color: #b8c4d8; }
+.game-float.is-combo { color: #9be8bd; font-size: clamp(18px, 2.8vw, 26px); }
+
+@keyframes game-float-up {
+  from { transform: translate(-50%, -50%); opacity: 1; }
+  to { transform: translate(-50%, calc(-50% - 64px)); opacity: 0; }
+}
+
+.game-vignette {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  pointer-events: none;
+  box-shadow: inset 0 0 120px rgba(229, 72, 77, 0.55);
+  animation: game-vignette-fade 320ms ease-out forwards;
+}
+
+@keyframes game-vignette-fade {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .game-float { animation: none; opacity: 0.9; }
+  .game-vignette { animation: none; opacity: 0.5; }
+}

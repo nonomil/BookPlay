@@ -602,7 +602,7 @@ def build_map_layer(ep: int, cast: dict, maps: dict | None) -> dict | None:
         return {
             "theme": theme,
             "coordinateSpace": "world-normalized",
-            "worldTiles": 1,
+            "worldTiles": world_tiles,
             "walkable": _scene_walkable(layout),
             "heroSpawn": _scene_point(layout.get("heroSpawn"), 0.1, 0.62),
             "monsterSpawns": wave_spawns[0],
@@ -642,7 +642,7 @@ def build_map_layer(ep: int, cast: dict, maps: dict | None) -> dict | None:
     return {
         "theme": theme,
         "coordinateSpace": "world-normalized",
-        "worldTiles": WORLD_TILES,
+        "worldTiles": world_tiles,
         "regions": regions,
         "walkable": _world_walkable(layout, regions),
         "heroSpawn": _world_point(layout.get("heroSpawn"), regions["hero"]),

@@ -12,13 +12,13 @@ test('parent-report.html：按顺序引入步日志与报告脚本', () => {
   const scripts = [...html.matchAll(/<script[^>]*\ssrc="([^"?]+)(?:\?[^"]*)?"/g)]
     .map((m) => m[1].replace(/^\.\//, ''))
     .filter((src) => src !== 'native-key.js' && src !== 'handheld-controls.js' && src !== 'content-gate.js');
-  assert.deepEqual(scripts, ['tv-remote.js', 'step-log-core.js', 'step-log.js', 'parent-report.js']);
+  assert.deepEqual(scripts, ['tv-remote.js', 'step-log-core.js', 'step-log.js', 'coach-core.js', 'parent-report.js']);
 });
 
 test('parent-report.html：四大板块齐备且有隐私说明', () => {
   const html = read('parent-report.html');
   assert.match(html, /数据只保存在这台设备上/);
-  for (const id of ['report-overview', 'report-rows', 'report-weak', 'report-suggest']) {
+  for (const id of ['report-overview', 'report-rows', 'report-weak', 'report-coach']) {
     assert.match(html, new RegExp(`id="${id}"`), id);
   }
   assert.match(html, /href="map\.html"/, '返回地图入口');
@@ -27,7 +27,7 @@ test('parent-report.html：四大板块齐备且有隐私说明', () => {
 test('parent-report.js：只读本机 bookplay 键，使用纯逻辑核心，无危险 API', () => {
   const js = read('parent-report.js');
   const keys = [...js.matchAll(/bookplay_[a-z_0-9]+/g)].map((m) => m[0]);
-  assert.deepEqual([...new Set(keys)], ['bookplay_adv_progress', 'bookplay_adv_vocab_stat'], '报告只读进度与词统计');
+  assert.deepEqual([...new Set(keys)].sort(), ['bookplay_adv_progress', 'bookplay_adv_vocab_stat'], '报告只读进度与词统计');
   assert.match(js, /window\.BookPlayStepLogCore/);
   assert.match(js, /Core\.summarize\(/);
   assert.match(js, /Core\.KEY/);

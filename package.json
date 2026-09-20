@@ -11,7 +11,10 @@
     "android:init": "npm run android:prepare && cap add android",
     "android:sync": "npm run android:prepare && cap sync android",
     "android:build": "node scripts/build-apks.mjs",
-    "android:build:jttw": "node scripts/build-apks.mjs --jttw-only"
+    "android:build:jttw": "node scripts/build-apks.mjs --jttw-only",
+    "x35s:check": "node scripts/check-x35s-web.mjs",
+    "x35s:demo": "python -X utf8 -m http.server 4180 --directory docs/x35s-web-port/demo",
+    "x35s:copy": "python -X utf8 scripts/copy-x35s-jttw-launcher.py --install-card"
   },
   "dependencies": {
     "@capacitor/core": "8.4.2"

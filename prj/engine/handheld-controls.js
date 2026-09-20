@@ -24,10 +24,25 @@
   var bridge=w.location.hostname==='127.0.0.1', selectors={}, ready=false, mode='learn', override='auto', axes;
 
   function visible(el){return el && el.getClientRects().length && !el.disabled;}
+  function inClosedDetails(el){
+    var n=el;
+    while(n&&n!==d.documentElement){
+      if(n.tagName==='DETAILS'&&!n.open)return true;
+      n=n.parentElement;
+    }
+    return false;
+  }
+  function playable(el){
+    return !!(el&&visible(el)&&el!==opener&&!(panel&&panel.contains(el))&&!el.hasAttribute('data-open-handheld')&&!inClosedDetails(el));
+  }
+  function focusDefault(){
+    var list=Array.prototype.slice.call(d.querySelectorAll('.play-ep, .book-card, a.node, #map-track a[href], main a[href], a[href], button')).filter(playable);
+    if(list[0]) list[0].focus();
+  }
   function syncMode(){if(app!=='bookplay')return;var quiz=Array.prototype.some.call(d.querySelectorAll(quizSelector),visible);var next=override==='auto'?autoMode(w.location.pathname,quiz):override;if(next!==mode){release();mode=next;key='x35s-controls-v1:bookplay:'+mode;mapping=load(app,safeRead(),mode);Object.keys(selectors).forEach(function(k){selectors[k].value=mapping[k];});}if(axes)axes.textContent='当前：'+{learn:'学习｜左右翻页，上下选控件，A 确认',quiz:'知识巩固｜左摇杆/方向键选择答案，A 确认',game:'游戏｜左摇杆/十字键自由移动，A 攻击，X 交互，Y 暂停'}[mode]+'。右摇杆不模拟鼠标；Start 打开按键菜单。';}
   function quizLayer(appName){return appName==='blocklegend'&&d.querySelector('#quiz-layer:not(.is-hidden)');}
   function quizOpen(appName){return quizLayer(appName)&&d.querySelector('#quiz-choices button');}
-  function navigate(dir){var list=app==='bookplay'&&mode==='quiz'?Array.prototype.slice.call(d.querySelectorAll(quizSelector)).filter(visible):app==='blocklegend'&&quizOpen(app)?Array.prototype.slice.call(d.querySelectorAll('#quiz-choices button')).filter(visible):[];if(!list.length)list=Array.prototype.slice.call(d.querySelectorAll('button,a[href],input,select')).filter(function(el){return el!==opener&&!panel.contains(el)&&visible(el);});if(!list.length)return;var current=d.activeElement,at=list.indexOf(current);if(at<0){list[0].focus();return;}var r=current.getBoundingClientRect(),best=null,score=Infinity;list.forEach(function(el){if(el===current)return;var q=el.getBoundingClientRect(),dx=q.left+q.width/2-r.left-r.width/2,dy=q.top+q.height/2-r.top-r.height/2;var main=dir==='Left'?-dx:dir==='Right'?dx:dir==='Up'?-dy:dy,cross=/Left|Right/.test(dir)?dy:dx;if(main>2&&main+Math.abs(cross)*2<score){score=main+Math.abs(cross)*2;best=el;}});(best||list[(at+(/Up|Left/.test(dir)?list.length-1:1))%list.length]).focus();}
+  function navigate(dir){var list=app==='bookplay'&&mode==='quiz'?Array.prototype.slice.call(d.querySelectorAll(quizSelector)).filter(playable):app==='blocklegend'&&quizOpen(app)?Array.prototype.slice.call(d.querySelectorAll('#quiz-choices button')).filter(playable):[];if(!list.length)list=Array.prototype.slice.call(d.querySelectorAll('button,a[href],input,select')).filter(playable);if(!list.length)return;var current=d.activeElement,at=list.indexOf(current);if(at<0){list[0].focus();return;}var r=current.getBoundingClientRect(),best=null,score=Infinity;list.forEach(function(el){if(el===current)return;var q=el.getBoundingClientRect(),dx=q.left+q.width/2-r.left-r.width/2,dy=q.top+q.height/2-r.top-r.height/2;var main=dir==='Left'?-dx:dir==='Right'?dx:dir==='Up'?-dy:dy,cross=/Left|Right/.test(dir)?dy:dx;if(main>2&&main+Math.abs(cross)*2<score){score=main+Math.abs(cross)*2;best=el;}});(best||list[(at+(/Up|Left/.test(dir)?list.length-1:1))%list.length]).focus();}
   function safeRead(){try{return w.localStorage.getItem(key);}catch(_){return '';}}
   function save(){try{w.localStorage.setItem(key,JSON.stringify(mapping));status.textContent='已保存到本游戏';}catch(_){status.textContent='当前无法保存；本次会话仍生效';}}
   function editable(el){return el && (el.isContentEditable || /^(INPUT|TEXTAREA|SELECT)$/.test(el.tagName));}
@@ -39,7 +54,7 @@
   function action(a,down){
     if (a==='none') return;
     if(app==='blocklegend' && quizLayer(app) && a==='jump'){if(down){if(d.activeElement&&d.activeElement.closest&&d.activeElement.closest('#quiz-choices'))d.activeElement.click();else if(d.querySelector('#quiz-input:not([readonly])'))keyboard('Enter','Enter',true);}return;}
-    if(app==='bookplay' && mode==='quiz' && (a==='left'||a==='right')){if(down)navigate(a==='left'?'Left':'Right');return;}
+    if(app==='bookplay' && mode!=='game' && (a==='left'||a==='right')){if(down)navigate(a==='left'?'Left':'Right');return;}
     if(app==='bookplay' && mode==='game' && (a==='attack'||a==='interact'||a==='pause')){
       var focus=d.activeElement;
       if(down && focus && /^(BUTTON|A)$/.test(focus.tagName) && focus!==opener && (!panel||!panel.contains(focus))){focus.click();return;}
@@ -47,7 +62,12 @@
       keyboard(p[0],p[1],down);
       return;
     }
-    if(a==='confirm' && down && d.activeElement && /^(BUTTON|A)$/.test(d.activeElement.tagName)){d.activeElement.click();return;}
+    if(a==='confirm' && down){
+      var splash=d.getElementById('map-splash');
+      if(splash && !splash.classList.contains('gone') && visible(splash)){splash.click();return;}
+      if(!playable(d.activeElement) || !/^(BUTTON|A)$/.test(d.activeElement.tagName)) focusDefault();
+      if(d.activeElement && /^(BUTTON|A)$/.test(d.activeElement.tagName) && playable(d.activeElement)){d.activeElement.click();return;}
+    }
     var target, holdName={jump:'jump',mine:'mine',sneak:'down',run:'run'}[a];
     if(app==='blocklegend' && /^(jump|attack|place|sneak|run)$/.test(a)) {d.dispatchEvent(new CustomEvent('x35s-action',{detail:{action:a,down:down}}));return;}
     if(app!=='bookplay') {
@@ -86,7 +106,7 @@
     if(bridge && /^(Key[WASD]|Arrow(Up|Down|Left|Right))$/.test(code)){
       var dir={KeyW:'Up',KeyS:'Down',KeyA:'Left',KeyD:'Right',ArrowUp:'Up',ArrowDown:'Down',ArrowLeft:'Left',ArrowRight:'Right'}[code];
       var fromStick=/^Key[WASD]$/.test(code);
-      if((app==='bookplay' && mode!=='game' && (mode==='quiz'||/^(Up|Down)$/.test(dir))) || (app==='blocklegend' && quizOpen(app))){e.preventDefault();e.stopImmediatePropagation();if(down)navigate(dir);return;}
+      if((app==='bookplay' && mode!=='game') || (app==='blocklegend' && quizOpen(app))){e.preventDefault();e.stopImmediatePropagation();if(down)navigate(dir);return;}
       if(app==='bookplay' && mode==='game' && !fromStick) return;
       e.preventDefault();e.stopImmediatePropagation();
       var p=app==='blocklegend'?{Up:['w','KeyW'],Down:['s','KeyS'],Left:['a','KeyA'],Right:['d','KeyD']}[dir]:['Arrow'+dir,'Arrow'+dir];
@@ -106,6 +126,8 @@
     Object.keys(buttons).forEach(function(k){var row=d.createElement('label');row.appendChild(d.createTextNode(buttons[k]+' '));var sel=d.createElement('select');Object.keys(actions).forEach(function(a){if(app==='bookplay' && !/^(confirm|cancel|left|right|attack|interact|pause|none)$/.test(a))return;var o=d.createElement('option');o.value=a;o.textContent=actions[a];sel.appendChild(o);});sel.value=mapping[k];sel.onchange=function(){release();mapping[k]=sel.value;save();};selectors[k]=sel;row.appendChild(sel);panel.appendChild(row);});
     var reset=d.createElement('button');reset.textContent='恢复默认';reset.onclick=function(){release();mapping=defaults(app,mode);Object.keys(selectors).forEach(function(k){selectors[k].value=mapping[k];});save();};panel.appendChild(reset);
     var close=d.createElement('button');close.textContent='返回游戏';close.onclick=function(){open(false);};panel.appendChild(close);d.body.appendChild(panel);ready=true;if(app==='bookplay'){mode='';syncMode();}
+    if(d.documentElement)d.documentElement.setAttribute('data-handheld','1');
+    focusDefault();
   }
   var aimX=0.5,aimY=0.5;
   function frame(t){var dt=Math.min((t-lastTime)/1000,0.05);lastTime=t;var x=(look.End?1:0)-(look.Home?1:0),y=(look.PageDown?1:0)-(look.PageUp?1:0);

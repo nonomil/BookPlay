@@ -169,12 +169,20 @@ let audioResolver = null;
  * 按渲染缓存，buildPages 开头和写入 localStorage 后失效。 */
 let progCache = null;
 let drillCache = null;
+let storyProgCache = null;
 
 const readProg = () => {
   if (!progCache) {
     try { progCache = JSON.parse(localStorage.getItem(PROG_KEY) || "{}"); } catch { progCache = {}; }
   }
   return progCache;
+};
+// 绘本精读进度（storybook.js 写入）：page=读到第几页，done=精读学完。
+const readStoryProg = () => {
+  if (!storyProgCache) {
+    try { storyProgCache = JSON.parse(localStorage.getItem("bookplay_story_progress") || "{}"); } catch { storyProgCache = {}; }
+  }
+  return storyProgCache;
 };
 const readDrill = () => {
   if (!drillCache) {
@@ -1403,31 +1411,45 @@ function openEpisodeDetail(n) {
   const drillLink = drillReady
     ? `<a class="episode-detail-option${drillCurrent ? " is-ready" : ""}" href="drill.html?c=${collection.id}" tabindex="0">★ 本辑巩固</a>`
     : "";
-  // 2026-09-19 P1 双路径入口：同一个故事，听力/阅读两种入章方式（吸收初章书 Demo）。
+  // 2026-09-19 P1 双路径入口（P2 升级）：选集时选路径 —— 📖 精读课堂 / 🎬 看动画。
+  // 路径选定后内部不再切换（wala 用 pass=story 锁定剧情遍）。
   const progRec = readProg()[n] || {};
-  const resumeLine = progRec.done
-    ? "已完成 ✓，再看一遍也很棒"
+  const storyRec = readStoryProg()[n] || {};
+  const studied = Boolean(progRec.done || storyRec.done);
+  const resumeLine = studied
+    ? "已完成 ✓，两种方式随时回看"
     : Number(progRec.node) > 0
-      ? `上次读到第 ${progRec.node}/${progRec.total || "?"} 句 · 打开接着播`
-      : "15–20 分钟 · 每天一点点";
+      ? `动画上次读到第 ${progRec.node}/${progRec.total || "?"} 句 · 打开接着播`
+      : Number(storyRec.page) > 1
+        ? `精读进行到第 ${storyRec.page} 页 · 接着学`
+        : "15–20 分钟 · 每天一点点";
   const listenHref = `wala.html?ep=${n}&mode=listen&loops=2&visual=audio&subtitle=enzh`;
-  const pathCards = SERIES.dualPath ? `
-        <p class="episode-detail-ask">今天想怎么学？同一个好故事，两条路都通。</p>
-        <div class="episode-detail-paths">
-          <a class="path-card path-listen" href="${listenHref}" tabindex="0">
-            <b>👂 听力入章</b>
-            <span>先听见，一个新世界</span>
-            <small>不暂停 · 不查词 · 抓住主线</small>
+  // 进度回显（参考稿"已到第5步·继续上次学习"）：第一个未完成的精读步骤
+  const studyStep = window.BookPlayStudyState ? BookPlayStudyState.firstUndoneStep(n) : 0;
+  const studyStepLine = (studied || studyStep > 0)
+    ? `已到第 ${Math.min(studyStep + 1, 5)} 步 · 继续精读`
+    : "从看故事开始";
+  const studyCard = `
+          <a class="path-card path-study${studied ? "" : " is-ready"}" href="study.html?ep=${n}" tabindex="0">
+            <b>📖 精读课堂</b>
+            <span>先学后看，五步读懂一集</span>
+            <small>看故事 · 学方法 · 练一练 · 理解挑战 · 说出故事</small>
+            <em>约 20 分钟 · ${studyStepLine}</em>
+          </a>`;
+  const watchCard = `
+          <a class="path-card path-watch" href="wala.html?ep=${n}&pass=story" tabindex="0">
+            <b>🎬 看动画</b>
+            <span>${studied ? "已完成 ✓，随时回看" : "完整看一遍故事"}</span>
+            <small>连续播放 · 不打断</small>
             <em>约 15 分钟</em>
-          </a>
-          <a class="path-card path-read" href="${SERIES.href(n)}" tabindex="0">
-            <b>📖 阅读入章</b>
-            <span>读进去，发现更多</span>
-            <small>字幕跟读 · 意群阅读 · 找线索</small>
-            <em>约 20 分钟</em>
-          </a>
+          </a>`;
+  const pathCards = SERIES.dualPath ? `
+        <p class="episode-detail-ask">这一集想怎么学？</p>
+        <div class="episode-detail-paths">
+          ${studied ? watchCard + studyCard : studyCard + watchCard}
         </div>
         <p class="episode-detail-resume">${resumeLine}</p>` : "";
+  const listenOption = SERIES.dualPath ? `<a class="episode-detail-option" href="${listenHref}" tabindex="0">🎧 磨耳朵</a>` : "";
   const learnMode = SERIES.dualPath ? "" : `<a class="episode-detail-mode" href="${SERIES.href(n)}" tabindex="0">学习</a>`;
   const retellLink = SERIES.dualPath ? `<a class="episode-detail-option" href="retell.html?ep=${n}" tabindex="0">🎤 复述</a>` : "";
   detailEl.innerHTML = `
@@ -1443,6 +1465,7 @@ function openEpisodeDetail(n) {
           ${learnMode}<a class="episode-detail-mode" href="game.html?ep=${n}" tabindex="0">地图</a>
         </div>
         <div class="episode-detail-options">
+          ${listenOption}
           <a class="episode-detail-option" href="dub.html?ep=${n}" tabindex="0">配音</a>
           ${retellLink}
           ${drillLink}

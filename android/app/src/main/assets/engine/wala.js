@@ -23,7 +23,9 @@ const el = {
   listenPanel: $("w-listen-panel"), listenLoops: $("w-listen-loops"),
   listenStart: $("w-listen-start"), listenPanelClose: $("w-listen-panel-close"),
   listenDone: $("w-listen-done"), listenReturn: $("w-listen-return"), listenAgain: $("w-listen-again"),
-  back: $("w-back"), epTitle: $("w-ep-title"), dub: $("w-dub"),
+  mission: $("w-mission"), missionTitle: $("w-mission-title"),
+  missionRule: $("w-mission-rule"), missionStart: $("w-mission-start"),
+  back: $("w-back"), epTitle: $("w-ep-title"), dub: $("w-dub"), read: $("w-read"),
   modeEn: $("w-mode-en"), modeEnZh: $("w-mode-enzh"),
   annotOn: $("w-annot-on"), annotOff: $("w-annot-off"), autoBtn: $("w-auto"),
   sideCardsOn: $("w-sidecards-on"), sideCardsOff: $("w-sidecards-off"),
@@ -114,6 +116,8 @@ let listenMode = false;
 let audioOnlyListen = false;
 let listenSession = null;
 let listenBefore = null;
+let watchEntered = false;
+let watchLoggedFinish = false;
 let studyClock = window.BookPlayStudySession
   ? window.BookPlayStudySession.createStudySession({
     thresholdMs: Number.isFinite(studyThresholdQuery) && studyThresholdQuery > 0
@@ -142,6 +146,10 @@ let wordCardDone = null;
 let studyFlushedAt = -1;
 let plotQuizAt = {};
 let checkpointPlan = { indexes: [], total: 0, byIndex: {} };
+let guidePlan = { indexes: [], total: 0, byIndex: {} };
+let strategyCards = [];
+let strategyPack = null;
+const guidesShown = new Set();
 let lexIndex = {};
 let wordAudio = {}, zhAudio = {}, enAudio = {}, sentEnAudio = {}, sentZhAudio = {};
 let episodeFinished = false;
@@ -487,6 +495,7 @@ function updateListenBar() {
   if (el.listenPause) el.listenPause.textContent = state.status === "paused" ? "继续" : (state.status === "done" ? "完成" : "暂停");
 }
 function showListenDone() {
+  markWatchFinished();
   stopSeq();
   setAvatar(false);
   if (el.video) el.video.pause();
@@ -735,6 +744,38 @@ function saveProgress(done) {
   if (reviewContext) return;
   const total = (rawNodes || (book && book.nodes) || []).length;
   storage.saveEpisodeProgress(ep, rawIndex() + 1, total, done);
+}
+
+/* 学习步日志：只记事实（enter/finish/quit），诊断失败静默，绝不挡学习。 */
+function logWatchStep(event) {
+  try {
+    if (window.BookPlayStepLog) {
+      window.BookPlayStepLog.log({ ep, path: listenMode || listenQuery ? "listen" : "read", step: "watch", event });
+    }
+  } catch (_) { /* 诊断不挡学习 */ }
+}
+function markWatchFinished() {
+  if (watchLoggedFinish) return;
+  watchLoggedFinish = true;
+  logWatchStep("finish");
+}
+window.addEventListener("pagehide", () => {
+  if (watchEntered && !watchLoggedFinish) logWatchStep("quit");
+});
+
+/* P1 任务前置卡：开播前给三个问题（Who / Where / What happened），
+ * 让看故事带着任务；点击「开始」才播放，不自动开跑。 */
+function showMissionCard(onStart) {
+  if (!el.mission || !el.missionStart) { onStart(); return; }
+  const listen = listenQuery;
+  el.missionTitle.textContent = listen ? "👂 听力入章 · 小任务" : "📖 阅读入章 · 小任务";
+  el.missionRule.textContent = listen ? "不暂停 · 不查单词 · 不必听懂每一句" : "不逐词翻译 · 先跟上故事主线";
+  el.missionStart.textContent = listen ? "开始听故事" : "开始读故事";
+  el.mission.classList.remove("hidden");
+  el.missionStart.addEventListener("click", () => {
+    el.mission.classList.add("hidden");
+    onStart();
+  }, { once: true });
 }
 
 /* ---------- 朗读序列引擎（EN / EN+中） ---------- */
@@ -1417,6 +1458,11 @@ function runActs(acts) {
       return;
     }
     if (act.type === "word") showWordCard(act.term, step);
+    else if (act.type === "guide") {
+      // 方法卡读完自动续播（与内嵌小测同款 contract）
+      inlineQueued = true;
+      showGuideCard(act.card, step);
+    }
     else if (act.type === "quiz" || act.type === "review") {
       const checkpoint = act.checkpoint || {};
       const meta = act.carryover
@@ -1436,6 +1482,9 @@ function runActs(acts) {
 function studyActsFor(nodeIdx) {
   const acts = [];
   if (passMode !== "study") return acts;
+  // GUIDE 先行：方法卡排在词卡/小测之前，先学方法再练习。
+  const guide = guidePlan.byIndex[nodeIdx];
+  if (guide && !guidesShown.has(guide.id)) acts.push({ type: "guide", card: guide });
   (wordCardPlan[nodeIdx] || []).forEach((t) => acts.push({ type: "word", term: t }));
   const checkpoint = checkpointPlan.byIndex[nodeIdx];
   if (checkpoint) {
@@ -1747,6 +1796,8 @@ function render(opts) {
     const dubNode = n && n.node_id ? `&node=${encodeURIComponent(n.node_id)}` : "";
     el.dub.setAttribute("href", `dub.html?ep=${ep}${dubNode}&back=player`);
   }
+  // 双路径：同一集随时可以切换到绘本方式重读（纸感皮肤阅读器）。
+  if (el.read) el.read.setAttribute("href", `storybook.html?ep=${ep}`);
   const showMarks = n.type === "narration";
   if (el.enPlay) el.enPlay.classList.toggle("hidden", !showMarks);
   if (el.zhPlay) el.zhPlay.classList.toggle("hidden", !showMarks);
@@ -1887,11 +1938,50 @@ function rebuildCheckpointPlan() {
     learnLevel,
     enabled: passMode === "study",
   });
+  guidePlan = WalaStudyPlan.buildGuidePlan({
+    nodes: (book && book.nodes) || [],
+    isListenNode,
+    checkpointIndexes: checkpointPlan.indexes,
+    cards: strategyCards,
+    learnLevel,
+  });
 }
 function nodeQuiz(nodeIdx) {
   const q = plotQuizAt[nodeIdx];
   return q && !q._asked ? q : null;
 }
+/* P2 方法卡（GUIDE）：暂停故事教一个读/听策略，点「知道了」继续。一集内每张卡只出现一次。 */
+function showGuideCard(card, onDone) {
+  if (!el.puzzle || !card) { if (onDone) onDone(); return; }
+  if (el.video) el.video.pause();
+  stopKaraoke();
+  el.dots.classList.add("hidden");
+  if (el.bubble) el.bubble.classList.add("card-quiz");
+  applySideCards();
+  el.puzzle.classList.remove("hidden");
+  el.puzzle.dataset.done = "";
+  el.puzzle.innerHTML = `<div class="w-guide">
+    <div class="w-guide-head"><span class="w-guide-badge">📖 学方法</span><b class="w-guide-title">${esc(card.title)}</b></div>
+    <p class="w-guide-body">${esc(card.body)}</p>
+    ${card.tip ? `<p class="w-guide-tip">💡 ${esc(card.tip)}</p>` : ""}
+    <div class="w-guide-actions"><button type="button" class="w-guide-ok">知道了，继续故事</button></div>
+  </div>`;
+  guidesShown.add(card.id);
+  window.BookPlayAudio?.sfx("tap");
+  const btn = el.puzzle.querySelector(".w-guide-ok");
+  let advanced = false;
+  const advance = () => {
+    if (advanced) return;
+    advanced = true;
+    el.puzzle.classList.add("hidden");
+    el.puzzle.innerHTML = "";
+    if (el.bubble) el.bubble.classList.remove("card-quiz");
+    if (onDone) onDone();
+  };
+  if (btn) btn.addEventListener("click", advance);
+  else advance();
+}
+
 function showFreezeQuiz(q, onDone, meta = {}) {
   if (el.video) el.video.pause();
   stopKaraoke();
@@ -2013,6 +2103,7 @@ function showFreezeQuiz(q, onDone, meta = {}) {
 }
 function finishEpisode() {
   if (listenMode) { showListenDone(); return; }
+  markWatchFinished();
   stopSeq();
   // Story playback is only preparation.  The map is unlocked by the
   // knowledge-consolidation pass in lesson.js, so keep this episode in a
@@ -2030,7 +2121,7 @@ function finishEpisode() {
   collectBagThrough(book.nodes.length - 1);
   const y = officialList().length;
   const x = bagTerms.length;
-  el.puzzle.innerHTML = `<div class="w-end-inline"><div><b>本集播放完成</b><div class="w-end-sub">本集词袋：${x} / ${y}</div><div class="w-end-next-hint">点击字幕框右上角的 ▶ 进入知识巩固 →</div></div></div>`;
+  el.puzzle.innerHTML = `<div class="w-end-inline"><div><b>本集播放完成</b><div class="w-end-sub">本集词袋：${x} / ${y}</div><div class="w-end-sub">小挑战：用自己的话说说，刚才发生了什么？</div><div class="w-end-next-hint">点击字幕框右上角的 ▶ 进入知识巩固 →</div></div></div>`;
   // The in-player arrow is a button, not an inline link.  `next()` owns the
   // post-completion transition after the user explicitly activates the
   // arrow.  Keeping navigation in one path avoids
@@ -2044,6 +2135,7 @@ function finishEpisode() {
 function startEndQuiz() {
   if (listenMode) { showListenDone(); return; }
   if (passMode === "story") { finishEpisode(); return; }
+  markWatchFinished();
   const extras = [];
   if (learnLevel === "max") {
     officialList().forEach((w) => {
@@ -2630,6 +2722,7 @@ if (ep >= 1) {
     episodeWalkerEpisode = null;
     if (!book.video) book.video = `assets/video/ep${ep}.mp4`;
     rawNodes = book.nodes;
+    guidesShown.clear();
     passMode = resolvePassMode();
     syncPassButtons();
     applyReviewReturnNavigation();
@@ -2637,13 +2730,15 @@ if (ep >= 1) {
     document.title = `豆豆龙英语 · 第${ep}集 ${book.title.en}`;
         await loadCompanionData();
         if (!audioOnlyListenQuery) await ensureVideo();
-    [wordAudio, zhAudio, enAudio, sentEnAudio, sentZhAudio] = await Promise.all([
+    [wordAudio, zhAudio, enAudio, sentEnAudio, sentZhAudio, strategyPack] = await Promise.all([
       j(`../assets/adv_audio/ep${ep}/index.json`).catch(() => ({})),
       j("../assets/adv_audio/zh_index.json").catch(() => ({})),
       j("../assets/adv_audio/en_index.json").catch(() => ({})),
       j("../assets/adv_audio/sent_en_index.json").catch(() => ({})),
       j("../assets/adv_audio/sent_zh_index.json").catch(() => ({})),
+      j("../data/strategy_cards.json").catch(() => ({ cards: [] })),
     ]);
+    strategyCards = Array.isArray(strategyPack && strategyPack.cards) ? strategyPack.cards : [];
     await mergeQuizAudio();
     const saved = progress()[ep];
     const requestedNodeIndex = requestedNodeQuery
@@ -2671,18 +2766,23 @@ if (ep >= 1) {
     }
     el.map.classList.add("hidden");
     el.player.classList.remove("hidden");
+    if (!reviewContext) { watchEntered = true; logWatchStep("enter"); }
         startStudyHeartbeat();
-        if (listenQuery) {
-          enterListenMode({
-            loops: Number(listenQueryLoops),
-            subtitle: queryReadMode(readModeQuery, "en"),
-            audioOnly: audioOnlyListenQuery,
-            autoStop: true,
-          });
-    } else {
-      render({ willPlay: true });
-      playCurrentSentence();
-    }
+        const beginPlayback = () => {
+          if (listenQuery) {
+            enterListenMode({
+              loops: Number(listenQueryLoops),
+              subtitle: queryReadMode(readModeQuery, "en"),
+              audioOnly: audioOnlyListenQuery,
+              autoStop: true,
+            });
+          } else {
+            render({ willPlay: true });
+            playCurrentSentence();
+          }
+        };
+        if (reviewContext) beginPlayback();
+        else showMissionCard(beginPlayback);
   })();
 } else {
   location.replace("home.html");

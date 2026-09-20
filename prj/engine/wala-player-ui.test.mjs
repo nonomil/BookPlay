@@ -168,8 +168,8 @@ check(html.indexOf("companion-core.js") >= 0 && html.indexOf("wala.js") > html.i
 
 check(/\.w-frame\s*\{[^}]*aspect-ratio:\s*16\s*\/\s*9/.test(css),
   "the media frame must preserve the 16:9 picture area instead of filling a tall viewport");
-check(/<div class="w-frame">\s*<img[^>]*id="w-img"[^>]*>\s*<video[^>]*id="w-video"[^>]*><\/video>\s*<div id="w-cards-left"><\/div>\s*<div id="w-cards"><\/div>\s*<div id="w-vocab-peek"[^>]*><\/div>\s*<div class="w-dock">/.test(html),
-  "word cards and subtitle dock must be anchored inside the visible media frame");
+check(/<div class="w-frame" id="w-frame">\s*<img[^>]*id="w-img"[^>]*>\s*<video[^>]*id="w-video"[^>]*><\/video>\s*<div id="w-cards-left"><\/div>\s*<div id="w-cards"><\/div>\s*<div id="w-vocab-peek"[^>]*><\/div>\s*<div class="w-dock" id="w-dock">/.test(html),
+  "word cards and subtitle dock must be anchored inside the visible media frame (the study pass may relocate the dock below the frame at runtime)");
 check(/<video id="w-video" playsinline preload="none">/.test(html),
   "handheld video must not probe Range duration via preload=metadata");
 check(!/backdrop-filter/.test(css),

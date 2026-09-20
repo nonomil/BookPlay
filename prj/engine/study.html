@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <script src="./native-key.js"></script>
+  <script defer src="./handheld-controls.js" data-app="bookplay"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>豆豆龙英语 · 精读课堂</title>
+  <link rel="stylesheet" href="style.css?v=png1">
+  <link rel="stylesheet" href="study.css?v=8">
+  <link rel="stylesheet" href="tv.css?v=1">
+  <link rel="stylesheet" href="handheld.css?v=1">
+  <link rel="stylesheet" href="app-audio.css?v=2">
+  <script src="app-audio.js?v=3"></script>
+  <script src="tv-remote.js?v=1"></script>
+  <script src="content-gate.js?v=2"></script>
+</head>
+<body class="study-body">
+  <main class="study-shell">
+    <header class="study-topbar">
+      <a class="study-back" href="map.html" aria-label="返回路线图">← 地图</a>
+      <div class="study-heading">
+        <p class="study-kicker" id="study-kicker">精读课堂</p>
+        <h1 class="study-title" id="study-title">正在准备本集…</h1>
+      </div>
+      <span class="study-step-chip" id="study-step-chip">STEP 1 OF 5</span>
+    </header>
+
+    <div class="study-columns">
+      <aside class="study-rail" aria-label="精读五步">
+        <p class="study-rail-label">YOUR JOURNEY</p>
+        <ol id="study-rail" class="study-rail-list"></ol>
+        <p class="study-rail-quote">一步一步来，<br>故事会越来越清楚。<span>A LITTLE EVERY DAY.</span></p>
+      </aside>
+
+      <section class="study-stage" aria-live="polite">
+        <p class="study-step-kicker" id="step-kicker">01 / WATCH</p>
+        <h2 class="study-step-title" id="step-title">看故事</h2>
+        <p class="study-step-en" id="step-en">Watch &amp; Read</p>
+        <p class="study-step-desc" id="step-desc"></p>
+        <!-- 01 看故事：原生精读播放器（元素重组） -->
+        <div id="watch-player" class="watch-player" hidden>
+          <div class="watch-video-wrap">
+            <video id="watch-video" playsinline preload="metadata"></video>
+          </div>
+          <div class="watch-controls">
+            <button id="watch-prev" type="button" title="上一句">◀</button>
+            <button id="watch-play" type="button" title="播放本句">▶ 播本句</button>
+            <button id="watch-next" type="button" title="下一句">下一句 ▶</button>
+            <span id="watch-counter" class="watch-counter"></span>
+          </div>
+          <div class="watch-caption">
+            <p id="watch-en" lang="en"></p>
+            <p id="watch-zh" lang="zh"></p>
+          </div>
+          <div id="watch-words" class="watch-words"></div>
+          <div class="watch-mission">
+            <p class="watch-mission-label">A LITTLE MISSION</p>
+            <p>看的时候，留意这三件事：
+              <span>Who? · 故事里有谁？</span>
+              <span>Where? · 发生在哪里？</span>
+              <span>What happened? · 发生了什么？</span>
+            </p>
+          </div>
+        </div>
+        <!-- 02 学方法：方法卡 + 单词朋友 + 句型 -->
+        <div id="method-player" class="exercise-player" hidden>
+          <div class="method-note">
+            <p class="method-note-label">A NOTE FROM YOUR READING GUIDE</p>
+            <p id="method-note-text">听故事时，不要追着每一个单词跑——先抓住人物、地点和事件，你就能跟上故事啦。</p>
+            <p id="method-done-note" class="method-done-note" aria-live="polite"></p>
+          </div>
+          <div id="method-cards" class="word-friends"></div>
+          <div id="method-patterns"></div>
+        </div>
+        <!-- 03 练一练：原生练习（听音选义 / 看词选义 / 听句选画） -->
+        <div id="practice-player" class="exercise-player" hidden>
+          <div class="exercise-head">
+            <span id="practice-progress-label" class="exercise-progress-label"></span>
+            <span id="practice-dots" class="exercise-dots"></span>
+          </div>
+          <div class="exercise-card">
+            <div id="practice-audio-bar" class="audio-bar" hidden>
+              <button id="practice-audio-play" type="button" class="audio-play">🔊 再听一遍</button>
+              <span class="audio-wave" aria-hidden="true">▁▃▅▂▆▃▁▄▅▂</span>
+            </div>
+            <p id="practice-prompt" class="exercise-prompt"></p>
+            <div id="practice-pics" class="pic-choices" hidden></div>
+            <div id="practice-choices" class="choice-list"></div>
+            <p id="practice-feedback" class="exercise-feedback" aria-live="polite"></p>
+            <button id="practice-next" type="button" class="exercise-next" hidden>下一题 →</button>
+          </div>
+          <p id="practice-summary" class="exercise-summary" hidden></p>
+        </div>
+        <!-- 04 理解挑战：原生小测（official_quiz，≥70% 解锁大地图） -->
+        <div id="check-player" class="exercise-player" hidden>
+          <div class="exercise-head">
+            <span id="check-progress-label" class="exercise-progress-label"></span>
+            <span id="check-dots" class="exercise-dots"></span>
+          </div>
+          <div class="exercise-card">
+            <p id="check-q-en" class="exercise-q-en" lang="en"></p>
+            <p id="check-q-zh" class="exercise-q-zh" lang="zh"></p>
+            <div id="check-choices" class="choice-list"></div>
+            <p id="check-feedback" class="exercise-feedback" aria-live="polite"></p>
+            <button id="check-next" type="button" class="exercise-next" hidden>下一题 →</button>
+          </div>
+          <p id="check-summary" class="exercise-summary" hidden></p>
+        </div>
+        <p class="study-step-note" id="step-note">完成后这一步的灯会点亮，课堂自动进入下一步。</p>
+        <!-- 05 说出故事：四图排序 + 复述 -->
+        <div id="output-player" class="exercise-player" hidden>
+          <div class="output-hint">每张图点 🔊 听提示，用 ↑↓ 把四幅图排成故事顺序。</div>
+          <div id="output-board" class="output-board"></div>
+          <button id="output-check" type="button" class="exercise-next">检查顺序</button>
+          <p id="output-note" class="exercise-feedback" aria-live="polite"></p>
+          <a id="output-dub" class="study-door" href="dub.html" hidden>🎤 去配音录下来</a>
+        </div>
+        <div class="study-doors">
+          <a class="study-door" id="door-watch" href="wala.html">🎬 看动画回看</a>
+          <a class="study-door" href="map.html">🗺 回地图</a>
+        </div>
+      </section>
+    </div>
+  </main>
+  <script src="study-state.js?v=3"></script>
+  <script src="study.js?v=11"></script>
+</body>
+</html>

@@ -52,6 +52,9 @@ const progressKey = request.progressKey;
 const STORY_UNIT_ZH = request.series === "minecraft" || request.series === "mikey-jj" ? "本" : "集";
 
 if (request.uiVariant === "unified-v3") document.body.classList.add("sb-ui-v3");
+if (request.theme === "paper") document.body.classList.add("sb-paper");
+// 纸感皮肤把正文重点词从金色换成陶土色下划线，提示语跟着皮肤走。
+const ACCENT_WORD_NAME = request.theme === "paper" ? "划线词" : "金色词";
 
 let book = null;
 let mikeyVocabAudio = null;
@@ -932,7 +935,7 @@ function renderBeat() {
   portraitImg.src = `../${scene.portrait}`;
   speakerEl.textContent = scene.speaker || "";
   textEl.innerHTML = highlight(beat.text_en, beat.glossary || []);
-  glossEl.textContent = holding ? "本句停住了。点下一句，或点朗读再听一遍。" : "点击金色词可看释义。一句播完会停住。";
+  glossEl.textContent = holding ? "本句停住了。点下一句，或点朗读再听一遍。" : `点击${ACCENT_WORD_NAME}可看释义。一句播完会停住。`;
   pager.textContent = `${scene.title.zh} ${beat.localIdx + 1}/${scene.beats.length} · ${bidx + 1}/${beats.length}`;
   btnPrev.disabled = bidx === 0;
   const last = bidx === beats.length - 1;
@@ -950,7 +953,7 @@ function renderGlossaryCards(example, glossary, sentenceMode = false) {
   glossEl.innerHTML = "";
   glossEl.hidden = false;
   if (request.series !== "minecraft" && request.series !== "mikey-jj") {
-    glossEl.textContent = "点击金色词可看释义并收入生词本。";
+    glossEl.textContent = `点击${ACCENT_WORD_NAME}可看释义并收入生词本。`;
     return;
   }
   const items = glossary || [];
@@ -2744,6 +2747,13 @@ async function main() {
   $("btn-next-ep").textContent = nextBook == null && (request.series === "minecraft" || request.series === "mikey-jj")
     ? "回目录"
     : `下一${unit} 第 ${nextBook ?? ep + 1} ${unit}`;
+  // 双路径：读完绘本，邀请孩子回到动画再看一遍（西游记有对应动画集）。
+  const watchEpLink = $("btn-watch-ep");
+  if (watchEpLink) {
+    const watchable = request.series === "jttw";
+    watchEpLink.hidden = !watchable;
+    if (watchable) watchEpLink.href = `wala.html?ep=${ep}`;
+  }
   render();
   if (request.series !== "minecraft" && request.series !== "mikey-jj") renderQuiz();
   // Mikey & JJ uses reader-paced playback: do not start narration until the

@@ -117,6 +117,43 @@ body { overflow: auto; }
 .card-main { display: block; color: inherit; text-decoration: none; }
 .card img { width: 100%; height: 210px; object-fit: cover; background: #111; }
 
+@media (max-height: 520px) {
+  html,
+  body,
+  #app,
+  #app.library-app,
+  .library-app {
+    height: auto !important;
+    min-height: 100%;
+    overflow: auto !important;
+  }
+  .library-hero {
+    min-height: 0 !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
+  .library-scene {
+    max-height: 28vh;
+    object-fit: cover;
+    opacity: 0.45;
+  }
+  .library-brand {
+    padding: 8px 12px 4px !important;
+  }
+  .library-brand h1 {
+    font-size: 1.35rem !important;
+  }
+  .book-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+    margin: 0 auto 12px;
+    padding: 0 8px 12px;
+  }
+  .book-card img {
+    height: 72px;
+  }
+}
+
 @media (max-height: 520px) and (orientation: landscape) {
   .home-hero .hero-art {
     aspect-ratio: auto;
@@ -135,6 +172,7 @@ body { overflow: auto; }
 .card-actions {
   display: flex;
   justify-content: flex-end;
+  gap: 0.35rem;
   padding: 0.35rem 0.55rem 0.5rem;
   border-top: 1px solid rgba(201, 162, 39, 0.14);
   background: rgba(16, 12, 9, 0.22);
@@ -156,6 +194,29 @@ body { overflow: auto; }
 }
 .card-listen:hover,
 .card-listen:focus-visible { background: rgba(124, 104, 206, 0.62); color: #fff; outline: none; }
+/* 绘本双路径入口：与磨耳朵并列的暖色药丸，指向 storybook 阅读器 */
+.card-read {
+  border-color: rgba(228, 141, 91, 0.6);
+  color: #ffe0cc;
+  background: rgba(122, 52, 26, 0.45);
+}
+.card-read:hover,
+.card-read:focus-visible { background: rgba(190, 96, 50, 0.66); color: #fff; outline: none; }
+/* 回看动画：精读完解锁后的金色药丸 */
+.card-watch {
+  border-color: rgba(232, 197, 90, 0.6);
+  color: #ffedbd;
+  background: rgba(96, 72, 18, 0.5);
+}
+.card-watch:hover,
+.card-watch:focus-visible { background: rgba(160, 122, 30, 0.66); color: #fff; outline: none; }
+/* 未解锁回看：非链接占位药丸 */
+.card-locked {
+  border-color: rgba(255, 255, 255, 0.2);
+  color: #b9ac97;
+  background: rgba(255, 255, 255, 0.05);
+  cursor: default;
+}
 
 #wordbook-panel {
   max-width: 720px;

@@ -15,13 +15,20 @@ test('map.js：集卡片面不再内嵌磨耳朵/配音/打怪小选项', () => 
   assert.doesNotMatch(js, /class="node-battle"/);
 });
 
-test('map.js：点卡片打开集详情弹层（P1 双路径 + 地图；非 dualPath 回退学习）', () => {
+test('map.js：点卡片打开集详情弹层（P2 精读/动画双入口 + 地图；非 dualPath 回退学习）', () => {
   const js = read('map.js');
   assert.match(js, /function openEpisodeDetail/);
   assert.match(js, /data-detail="\$\{n\}"/, 'node-main 携带 data-detail');
   assert.match(js, /dualPath: true/, 'jttw 启用双路径入口');
-  assert.match(js, /path-card path-listen/, '听力入章大卡');
-  assert.match(js, /path-card path-read/, '阅读入章大卡');
+  assert.match(js, /path-card path-study/, '📖 精读课堂大卡');
+  assert.match(js, /path-card path-watch/, '🎬 看动画大卡');
+  assert.match(js, /href="study\.html\?ep=\$\{n\}"/, '精读卡指向五步课堂');
+  assert.match(js, /wala\.html\?ep=\$\{n\}&pass=story/, '动画卡锁定剧情遍');
+  assert.match(js, /已到第 \$\{Math\.min\(studyStep \+ 1, 5\)\} 步 · 继续精读/, '进度回显（参考稿"已到第5步"）');
+  assert.match(js, /BookPlayStudyState\.firstUndoneStep\(n\)/, '五步进度与精读课堂同源');
+  assert.match(js, /studied \? watchCard \+ studyCard : studyCard \+ watchCard/, '未学完精读卡在前，学完回看卡在前');
+  assert.match(js, /readStoryProg/, '读取绘本精读进度');
+  assert.match(js, /🎧 磨耳朵/, '磨耳朵保留为小选项');
   assert.match(js, /episode-detail-resume/, '显示「继续上次学习」进度行');
   assert.match(js, /episode-detail-mode[^>]*>地图/);
   assert.match(js, /game\.html\?ep=\$\{n\}/, '地图入口指向大地图 game.html');

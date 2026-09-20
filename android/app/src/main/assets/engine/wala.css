@@ -5,6 +5,13 @@ body { overflow: auto; }
 .spacer { flex: 1; }
 .sb-link { color: var(--gold); text-decoration: none; }
 .w-nav-btns { display: flex; align-items: center; gap: 0.45rem; }
+/* 读绘本：与配音并列的按集双路径入口（指向纸感绘本阅读器） */
+.w-read-btn {
+  border-color: #e08a5a;
+  background: rgba(74, 34, 16, 0.78);
+  color: #ffd9c0;
+}
+.w-read-btn:hover { background: rgba(150, 66, 28, 0.9); color: #fff; }
 .w-dub-btn {
   border-color: #f0a055;
   background: rgba(64, 34, 8, 0.78);
@@ -1066,3 +1073,95 @@ button#w-review:hover, .w-btn-gold:hover { filter: brightness(1.08); }
 .w-end-card { background: rgba(0,0,0,0.3); border: 1px solid rgba(201,162,39,0.4); border-radius: 16px; padding: 1.6rem; }
 .w-end-card h2 { color: var(--gold); letter-spacing: 0.12em; margin-bottom: 1.1rem; }
 #w-quiz { text-align: left; margin-bottom: 1.2rem; }
+
+/* P1 双路径 · 任务前置卡：开播前给三个问题，降低逐词焦虑（2026-09-19） */
+.w-mission {
+  position: absolute;
+  inset: 0;
+  z-index: 40;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  background: rgba(10, 8, 5, 0.72);
+}
+.w-mission.hidden { display: none; }
+.w-mission-card {
+  width: min(480px, 100%);
+  padding: clamp(1.1rem, 2.6vw, 1.7rem);
+  border: 1px solid rgba(255, 224, 138, 0.55);
+  border-radius: 20px;
+  background: #18120e;
+  color: #fff7df;
+  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.55);
+  text-align: center;
+}
+.w-mission-title { display: block; font-size: clamp(1.15rem, 2.4vw, 1.5rem); letter-spacing: 0.06em; }
+.w-mission-rule {
+  margin: 0.5rem auto 0;
+  padding: 6px 12px;
+  display: inline-block;
+  border-radius: 999px;
+  border: 1px dashed rgba(255, 224, 138, 0.45);
+  color: #ffe08a;
+  font-size: 0.92rem;
+}
+.w-mission-ask { margin: 0.9rem 0 0.4rem; color: #e7dcc5; font-size: 0.95rem; }
+.w-mission-list { list-style: none; margin: 0 0 1rem; padding: 0; display: grid; gap: 6px; }
+.w-mission-list li {
+  padding: 8px 10px;
+  border-radius: 12px;
+  background: rgba(255, 224, 138, 0.08);
+  font-size: 0.98rem;
+}
+.w-mission-list b { color: #ffe08a; margin-right: 4px; }
+.w-mission-start {
+  min-height: 64px;
+  min-width: 200px;
+  padding: 0 28px;
+  border: none;
+  border-radius: 14px;
+  background: linear-gradient(180deg, #ffd76a, #e8b64c);
+  color: #3a2a08;
+  font: 700 1.05rem/1 "PingFang SC", "Microsoft YaHei", sans-serif;
+  cursor: pointer;
+}
+.w-mission-foot { margin: 0.8rem 0 0; color: #b9a77f; font-size: 0.78rem; letter-spacing: 0.08em; }
+.w-recap { color: #ffe08a !important; }
+
+/* P2 方法卡（GUIDE）：精学模式中教一个读/听策略。
+ * 字幕卡容器（w-puzzle）是浅色底，文字用深棕/深金保证对比度（2026-09-19）。 */
+.w-guide { text-align: left; }
+.w-guide-head { display: flex; align-items: center; gap: 10px; margin-bottom: 0.5rem; }
+.w-guide-badge {
+  flex: none;
+  padding: 3px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(160, 123, 28, 0.55);
+  color: #8a5a00;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+}
+.w-guide-title { color: #6b4a05; font-size: clamp(1.05rem, 2.2vw, 1.35rem); }
+.w-guide-body { margin: 0 0 0.55rem; color: #43331a; line-height: 1.6; font-size: clamp(0.95rem, 1.9vw, 1.08rem); }
+.w-guide-tip {
+  margin: 0 0 0.8rem;
+  padding: 8px 12px;
+  border-radius: 12px;
+  background: rgba(191, 144, 28, 0.12);
+  color: #6b4a05;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+.w-guide-actions { text-align: center; }
+.w-guide-ok {
+  min-height: 64px;
+  min-width: 200px;
+  padding: 0 28px;
+  border: none;
+  border-radius: 14px;
+  background: linear-gradient(180deg, #ffd76a, #e8b64c);
+  color: #3a2a08;
+  font: 700 1rem/1 "PingFang SC", "Microsoft YaHei", sans-serif;
+  cursor: pointer;
+}

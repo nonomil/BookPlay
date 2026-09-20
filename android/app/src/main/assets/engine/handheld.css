@@ -6,6 +6,19 @@
 
 html[data-handheld] {
   --handheld-hit: 44px;
+  cursor: none;
+}
+
+html[data-handheld],
+html[data-handheld] body {
+  cursor: none;
+}
+
+html[data-handheld] *,
+html[data-handheld] *::before,
+html[data-handheld] *::after {
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
 }
 
 html[data-handheld] button,

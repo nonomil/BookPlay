@@ -30,10 +30,26 @@
 
   <!-- 场景播放器 -->
   <div id="wala-player" class="screen hidden">
+    <!-- 任务前置卡（P1 双路径）：开播前给一个小任务，降低「要听懂每个词」的焦虑 -->
+    <div id="w-mission" class="w-mission hidden" role="dialog" aria-modal="true" aria-labelledby="w-mission-title">
+      <div class="w-mission-card">
+        <b id="w-mission-title" class="w-mission-title">📖 阅读入章 · 小任务</b>
+        <p id="w-mission-rule" class="w-mission-rule">不逐词翻译 · 先跟上故事主线</p>
+        <p class="w-mission-ask">看的时候，心里想着这三个问题：</p>
+        <ul class="w-mission-list">
+          <li><b>Who?</b> 故事里有谁？</li>
+          <li><b>Where?</b> 故事发生在哪里？</li>
+          <li><b>What happened?</b> 发生了什么？</li>
+        </ul>
+        <button id="w-mission-start" type="button">开始读故事</button>
+        <p class="w-mission-foot">一步一步来，故事会越来越清楚 · A LITTLE EVERY DAY</p>
+      </div>
+    </div>
     <div id="w-top">
       <nav class="w-nav-btns">
         <a class="w-nav-btn" href="shelf.html" id="w-back">选集</a>
         <a class="w-nav-btn" href="home.html">首页</a>
+        <a class="w-nav-btn w-read-btn" id="w-read" href="#">📖 读绘本</a>
         <a class="w-nav-btn w-dub-btn" id="w-dub" href="#">🎙 配音</a>
       </nav>
       <span id="w-ep-title"></span>
@@ -193,6 +209,7 @@
       <div id="w-listen-done" class="w-listen-done hidden" role="dialog" aria-modal="false" aria-labelledby="w-listen-done-title">
         <div class="w-break-kicker">这一轮听完啦</div>
         <h2 id="w-listen-done-title">故事的声音已经在耳朵里</h2>
+        <p class="w-recap">小挑战：故事里有谁？在哪里？发生了什么？用自己的话说一说，能说一句英文就更棒！</p>
         <p>可以回到刚才的学习位置，或者再听一轮。</p>
         <div class="w-listen-panel-actions">
           <button id="w-listen-return" type="button">回到刚才位置</button>
@@ -237,8 +254,10 @@
   <script src="companion-core.js?v=1"></script>
   <script src="study-session.js?v=1"></script>
   <script src="listen-mode.js?v=1"></script>
+  <script src="step-log-core.js?v=1"></script>
+  <script src="step-log.js?v=1"></script>
   <script src="voice-core.js?v=1"></script>
   <script src="voice.js?v=1"></script>
-  <script src="wala.js?v=73"></script>
+  <script src="wala.js?v=74"></script>
 </body>
 </html>

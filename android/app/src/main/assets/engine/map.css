@@ -1396,6 +1396,28 @@ body.map-terminal .terminal-stage .node.drill {
 
 .episode-detail-actions { display: grid; gap: 12px; }
 
+/* P1 双路径入口：同一个故事，听力/阅读两种入章方式（2026-09-19） */
+.episode-detail-ask { margin: 0; font-size: 13px; color: #93a0c4; }
+.episode-detail-paths { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.path-card {
+  display: grid;
+  gap: 4px;
+  align-content: start;
+  min-height: 68px;
+  padding: 12px;
+  border-radius: 14px;
+  border: 2px solid rgba(255, 215, 106, 0.4);
+  background: rgba(255, 215, 106, 0.1);
+  text-decoration: none;
+}
+.path-card b { font-size: 16px; color: #ffd76a; }
+.path-card span { font-size: 13px; color: #eef2ff; }
+.path-card small { font-size: 11px; color: #93a0c4; }
+.path-card em { font-size: 11px; font-style: normal; color: #7dcea0; }
+.path-card.path-listen { border-color: rgba(126, 214, 223, 0.5); background: rgba(126, 214, 223, 0.1); }
+.path-card.path-listen b { color: #7ed6df; }
+.episode-detail-resume { margin: 0; font-size: 12px; color: #7dcea0; text-align: center; }
+
 .episode-detail-modes { display: grid; gap: 10px; }
 
 .episode-detail-mode,
@@ -1550,14 +1572,22 @@ body.map-terminal .terminal-stage {
   background: rgba(18, 24, 44, 0.96);
 }
 
-#map-settings .app-settings-panel button {
+#map-settings .app-settings-panel button,
+#map-settings .app-settings-panel a {
   min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 10px;
   border: 1px solid rgba(255, 215, 106, 0.55);
   background: rgba(255, 215, 106, 0.16);
   color: #ffd76a;
   font: 700 14px/1.2 "PingFang SC", "Microsoft YaHei", sans-serif;
   cursor: pointer;
+}
+
+#map-settings .app-settings-panel a {
+  text-decoration: none;
 }
 
 #map-audio-float {

@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="zh">
 <head>
+  <script src="./native-key.js"></script>
+  <script defer src="./handheld-controls.js" data-app="bookplay"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="data:,">
@@ -8,7 +10,9 @@
   <link rel="stylesheet" href="style.css?v=png1">
   <link rel="stylesheet" href="storybook.css?v=chapters1">
   <link rel="stylesheet" href="storybook-v3.css?v=9">
+  <link rel="stylesheet" href="storybook-paper.css?v=1">
   <link rel="stylesheet" href="tv.css?v=1">
+  <link rel="stylesheet" href="handheld.css?v=1">
   <link rel="stylesheet" href="app-audio.css?v=2">
   <script src="app-audio.js?v=3"></script>
 </head>
@@ -67,6 +71,7 @@
       <div id="sb-endnav" class="hidden">
         <button id="btn-study-replay" class="sb-study-replay-button" type="button" hidden>进入精学回放</button>
         <button id="btn-study-skip" class="sb-study-skip-button" type="button" hidden>跳过本节</button>
+        <a id="btn-watch-ep" class="sb-link" href="wala.html" hidden>🎬 看本集动画</a>
         <a id="btn-next-ep" class="sb-link" href="shelf.html">下一集</a>
       </div>
     </div>
@@ -85,6 +90,6 @@
   <script src="episode-reward.js?v=1"></script>
   <script src="completion-card.js?v=1"></script>
   <script src="media.js"></script>
-  <script src="storybook.js?v=battle-entry-1"></script>
+  <script src="storybook.js?v=paper-1"></script>
 </body>
 </html>

@@ -28,14 +28,13 @@
   }
 
   function floatText(x, y, text, cls) {
-    const layer = document.getElementById("game-particles");
-    if (!layer) return;
+    // 视口坐标 + body 层：不受世界 transform 影响
     const el = document.createElement("span");
     el.className = "game-float " + (cls || "");
     el.textContent = text;
     el.style.left = x + "px";
     el.style.top = y + "px";
-    layer.appendChild(el);
+    document.body.appendChild(el);
     window.setTimeout(() => el.remove(), 1100);
   }
 

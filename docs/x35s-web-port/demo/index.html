@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=640, height=480, user-scalable=no">
+  <title>书戏 · X35S 网页适配 Demo</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="stage" id="stage">
+    <div class="top">
+      <button type="button" class="tool">背包</button>
+      <button type="button" class="tool">闯关</button>
+      <button type="button" class="tool">设置</button>
+      <span id="menu-status" class="status">光标关（默认）· C 开光标 · F10 菜单</span>
+    </div>
+    <div class="tabs">
+      <button type="button" class="tool is-on" data-tab="view">案例1 视口</button>
+      <button type="button" class="tool" data-tab="learn">案例2 学习卡</button>
+      <button type="button" class="tool" data-tab="mod">案例3 模块</button>
+    </div>
+
+    <section class="panel is-on" id="panel-view">
+      <div class="meadow">
+        <div class="hud">
+          <button type="button">挖</button>
+          <button type="button">放</button>
+          <button type="button">跳</button>
+        </div>
+      </div>
+      <p class="note">框是 640×480。顶栏/动作键 min 44px，没有 backdrop-filter。对应 <code>prj/engine/handheld.css</code>。卡上 Ports 入口是 <strong>西游记vs我的世界</strong>（书戏），不要开 bookplay。方块学园是另一个项目。</p>
+    </section>
+
+    <section class="panel" id="panel-learn">
+      <div class="card">
+        <p class="hint">这是「土」。英文怎么说？</p>
+        <div class="grid">
+          <button type="button" class="choice">dirt 土</button>
+          <button type="button" class="choice">stone 石</button>
+          <button type="button" class="choice">sand 沙</button>
+        </div>
+        <button type="button" class="skip" id="skip">我不会</button>
+        <p class="pad-hint">
+          <span><img alt="" src="./pad/dpad.png">选</span>
+          <span><img alt="A" src="./pad/a.png">确定</span>
+          <span><img alt="B" src="./pad/b.png">我不会</span>
+        </p>
+        <p id="learn-status" class="status">左右选 · Enter/F1 确定 · F2 我不会</p>
+      </div>
+    </section>
+
+    <section class="panel" id="panel-mod">
+      <p>移植包里的模块必须能当 ES 模块加载。</p>
+      <p>错误示范：<code>./probe.mjs?v=feel45</code>（busybox/Servo 常 404）。</p>
+      <p>本页加载：<code>./probe.mjs</code>（无查询串）。</p>
+      <p id="module-status">正在加载模块…</p>
+      <p class="note">对应 <code>发布/西游记vs我的世界-x35s/httpd.conf</code> 的 <code>.mjs:text/javascript</code>。</p>
+    </section>
+  </div>
+  <script src="./app.js"></script>
+</body>
+</html>

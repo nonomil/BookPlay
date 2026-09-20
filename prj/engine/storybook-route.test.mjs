@@ -14,6 +14,7 @@ test("defaults to the existing Journey to the West reader", () => {
     series: "jttw",
     id: 7,
     uiVariant: "legacy",
+    theme: "paper",
     progressKey: "jttw:7",
     dataUrl: "../data/storybooks/ep7.json",
     shelfUrl: "shelf.html",
@@ -27,6 +28,7 @@ test("resolves a Minecraft book without colliding with episode progress", () => 
     series: "minecraft",
     id: 3,
     uiVariant: "legacy",
+    theme: "classic",
     progressKey: "minecraft:3",
     dataUrl: "../data/storybooks-minecraft/book3.json",
     shelfUrl: "map.html?series=minecraft",
@@ -48,6 +50,98 @@ test("storybook route resolves explicit UI variants without changing progress id
   assert.equal(v3.uiVariant, "unified-v3");
   assert.equal(legacy.uiVariant, "legacy");
   assert.equal(v3.progressKey, legacy.progressKey);
+});
+
+test("paper skin defaults to the Journey to the West reader and stays opt-in elsewhere", () => {
+  const { resolveStorybookRequest, resolveStorybookTheme } = require(fileURLToPath(modulePath));
+  // jttw defaults to the paper picture-book skin, comics keep their own skins
+  assert.equal(resolveStorybookRequest("?ep=1").theme, "paper");
+  assert.equal(resolveStorybookRequest("?series=minecraft&book=1").theme, "classic");
+  assert.equal(resolveStorybookRequest("?series=mikey-jj&book=1").theme, "classic");
+  // explicit params win in both directions, and never touch progress identity
+  assert.equal(resolveStorybookRequest("?ep=1&theme=classic").theme, "classic");
+  assert.equal(resolveStorybookRequest("?series=minecraft&book=1&theme=paper").theme, "paper");
+  assert.equal(resolveStorybookRequest("?ep=1&theme=classic").progressKey, "jttw:1");
+  assert.equal(resolveStorybookTheme(new URLSearchParams(""), "jttw"), "paper");
+  assert.equal(resolveStorybookTheme(new URLSearchParams("theme=material"), "jttw"), "paper");
+});
+
+test("paper skin assets load after the base skins and stay scoped to the legacy reader", () => {
+  const html = fs.readFileSync(new URL("./storybook.html", import.meta.url), "utf8");
+  const css = fs.readFileSync(new URL("./storybook-paper.css", import.meta.url), "utf8");
+  assert.ok(html.indexOf("storybook-paper.css") > html.indexOf("storybook-v3.css"),
+    "paper skin must load after the v3 skin so it can rely on the cascade");
+  assert.ok(html.indexOf("storybook-paper.css") < html.indexOf("storybook.js"));
+  // every rule must hang off body.sb-paper... so the skin can never leak
+  // into the legacy reader, the v3 unified reader, or any other page
+  css.split("}").slice(0, -1).forEach((chunk) => {
+    const selector = chunk.split("{")[0];
+    if (!selector || !selector.trim()) return;
+    assert.match(selector, /body\.sb-paper:not\(\.sb-ui-v3\)/, `unscoped rule: ${selector.trim()}`);
+  });
+});
+
+test("the reader wires the dual path: paper skin class and watch-animation link", () => {
+  const html = fs.readFileSync(new URL("./storybook.html", import.meta.url), "utf8");
+  const source = fs.readFileSync(new URL("./storybook.js", import.meta.url), "utf8");
+  const endnavAt = html.indexOf('id="sb-endnav"');
+  assert.ok(endnavAt > 0);
+  const watchAt = html.indexOf('id="btn-watch-ep"');
+  assert.ok(watchAt > endnavAt, "watch link must live inside the end navigation");
+  assert.match(html, /id="btn-watch-ep"[^>]*hidden/);
+  assert.match(source, /if \(request\.theme === "paper"\) document\.body\.classList\.add\("sb-paper"\)/);
+  assert.match(source, /const watchable = request\.series === "jttw"/);
+  assert.match(source, /watchEpLink\.href = `wala\.html\?ep=\$\{ep\}`/);
+});
+
+test("shelf and animation player expose the reading-path invitations", () => {
+  const shelf = fs.readFileSync(new URL("./shelf.js", import.meta.url), "utf8");
+  const homeCss = fs.readFileSync(new URL("./home.css", import.meta.url), "utf8");
+  const wala = fs.readFileSync(new URL("./wala.js", import.meta.url), "utf8");
+  const walaHtml = fs.readFileSync(new URL("./wala.html", import.meta.url), "utf8");
+  const walaCss = fs.readFileSync(new URL("./wala.css", import.meta.url), "utf8");
+  // shelf: 默认门控 —— 未学完的主卡进绘本精读，学完后主卡才切到视频回看
+  assert.match(shelf, /href = studied \? `wala\.html\?ep=\$\{itemId\}` : `storybook\.html\?ep=\$\{itemId\}`/);
+  assert.match(shelf, /🔒 学完解锁/);
+  assert.match(shelf, /card-listen card-watch" href="wala\.html\?ep=\$\{itemId\}"/);
+  assert.match(shelf, /card-listen card-read" href="storybook\.html\?ep=\$\{itemId\}"/);
+  assert.match(shelf, /📖 绘本/);
+  assert.match(shelf, /已学完 · 可回看动画/);
+  assert.match(homeCss, /\.card-watch/);
+  assert.match(homeCss, /\.card-locked/);
+  // wala: 顶栏不再放读绘本入口（入口收敛到地图双门与精读课堂），
+  // finish bubble 的单一转移契约保持不变
+  assert.doesNotMatch(walaHtml, /id="w-read"/);
+  assert.doesNotMatch(wala, /read: \$\("w-read"\)/);
+  const finishStart = wala.indexOf("function finishEpisode()");
+  const finishBody = wala.slice(finishStart, wala.indexOf("function startEndQuiz()", finishStart));
+  assert.doesNotMatch(finishBody, /<a\b/);
+});
+
+test("wala 看动画路径：看完原地重播不跳转，且无内嵌机制残留", () => {
+  const wala = fs.readFileSync(new URL("./wala.js", import.meta.url), "utf8");
+  const walaCss = fs.readFileSync(new URL("./wala.css", import.meta.url), "utf8");
+  assert.doesNotMatch(wala, /embedMode/, "iframe 整页内嵌已由课堂原生播放器取代");
+  assert.doesNotMatch(walaCss, /body\.embed/);
+  const nextStart = wala.indexOf("function next()");
+  const nextBody = wala.slice(nextStart, wala.indexOf("const n = book.nodes[idx]", nextStart));
+  assert.match(nextBody, /if \(lockPass && passMode === "story"\) \{[^}]*location\.reload\(\);/, "看动画看完在本页重播");
+});
+
+test("study pass moves the subtitle dock below the screen, story pass keeps the overlay", () => {
+  const wala = fs.readFileSync(new URL("./wala.js", import.meta.url), "utf8");
+  const walaHtml = fs.readFileSync(new URL("./wala.html", import.meta.url), "utf8");
+  const walaCss = fs.readFileSync(new URL("./wala.css", import.meta.url), "utf8");
+  assert.match(walaHtml, /id="w-frame"/);
+  assert.match(walaHtml, /id="w-dock"/);
+  assert.match(wala, /frame: \$\("w-frame"\), dock: \$\("w-dock"\)/);
+  assert.match(wala, /function applyStudyDock\(\)/);
+  assert.match(wala, /const study = passMode === "study" && !listenMode/);
+  assert.match(wala, /el\.frame\.after\(el\.dock\)/);
+  assert.match(wala, /applyStudyDock\(\)/, "must be re-synced from syncPassButtons/render");
+  // layout: static dock below the frame, never a side-by-side flex row
+  assert.match(walaCss, /#wala-player\.study-dock \.w-stage\s*\{[^}]*flex-direction:\s*column/s);
+  assert.match(walaCss, /#wala-player\.study-dock \.w-dock\s*\{[^}]*position:\s*static/s);
 });
 
 test("v3 assets are loaded in a deterministic order and remain scoped", () => {
@@ -476,6 +570,7 @@ test("mikey-jj route resolves a book without colliding with other series", () =>
     series: "mikey-jj",
     id: 1,
     uiVariant: "legacy",
+    theme: "classic",
     progressKey: "mikey-jj:1",
     dataUrl: "../data/storybooks-mikey-jj/book1.json",
     shelfUrl: "map.html?series=mikey-jj",
@@ -597,6 +692,7 @@ test("mikey-jj book=2 route resolves to the Water House book", () => {
     series: "mikey-jj",
     id: 2,
     uiVariant: "legacy",
+    theme: "classic",
     progressKey: "mikey-jj:2",
     dataUrl: "../data/storybooks-mikey-jj/book2.json",
     shelfUrl: "map.html?series=mikey-jj",

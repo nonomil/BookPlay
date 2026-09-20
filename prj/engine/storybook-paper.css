@@ -1,0 +1,260 @@
+/* Paper picture-book skin for the Journey to the West reader.
+   Scoped to body.sb-paper (and never to the v3 unified reader), so legacy
+   remains a rollback via ?theme=classic and the comic series keep their own
+   dark learning-console skins. */
+body.sb-paper:not(.sb-ui-v3) {
+  --pb-ink: #33291f;
+  --pb-ink-soft: #6d5c46;
+  --pb-paper: #fffdf6;
+  --pb-cream: #f6f0e0;
+  --pb-cream-deep: #efe6d0;
+  --pb-line: rgba(51, 41, 31, 0.16);
+  --pb-terra: #b4552d;
+  --pb-terra-deep: #94431f;
+  --pb-green: #3e5c47;
+  background: var(--pb-cream);
+  color: var(--pb-ink);
+}
+
+body.sb-paper:not(.sb-ui-v3) .sb-app {
+  background:
+    radial-gradient(circle at 12% 8%, rgba(255, 253, 246, 0.9), transparent 34%),
+    radial-gradient(circle at 88% 92%, rgba(180, 85, 45, 0.07), transparent 38%),
+    var(--pb-cream);
+}
+
+/* ---- top bar ---- */
+body.sb-paper:not(.sb-ui-v3) #topbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.55rem;
+  min-height: 56px;
+  padding: 0.55rem 0.95rem;
+  background: var(--pb-cream-deep);
+  border-bottom: 1px solid var(--pb-line);
+}
+
+body.sb-paper:not(.sb-ui-v3) #topbar button,
+body.sb-paper:not(.sb-ui-v3) button {
+  border-color: rgba(51, 41, 31, 0.38);
+  background: transparent;
+  color: var(--pb-ink);
+}
+
+body.sb-paper:not(.sb-ui-v3) button:hover {
+  background: rgba(180, 85, 45, 0.09);
+}
+
+body.sb-paper:not(.sb-ui-v3) button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+body.sb-paper:not(.sb-ui-v3) .sb-link {
+  color: var(--pb-terra);
+}
+
+body.sb-paper:not(.sb-ui-v3) .sb-link:hover {
+  color: var(--pb-terra-deep);
+}
+
+body.sb-paper:not(.sb-ui-v3) .sb-dub-link {
+  color: var(--pb-terra);
+}
+
+body.sb-paper:not(.sb-ui-v3) #chapter-label {
+  color: var(--pb-ink);
+  font-family: Georgia, "Times New Roman", "Noto Serif SC", "SimSun", serif;
+  font-size: 1.02rem;
+  letter-spacing: 0.02em;
+}
+
+body.sb-paper:not(.sb-ui-v3) #sb-reader-modes {
+  display: inline-flex;
+  gap: 0.3rem;
+}
+
+body.sb-paper:not(.sb-ui-v3) #sb-reader-modes button {
+  padding: 0.3rem 0.8rem;
+  border-radius: 999px;
+  font-size: 0.82rem;
+}
+
+body.sb-paper:not(.sb-ui-v3) #sb-reader-modes button[aria-pressed="true"] {
+  border-color: var(--pb-terra);
+  background: rgba(180, 85, 45, 0.12);
+  color: var(--pb-terra-deep);
+  font-weight: 700;
+}
+
+/* ---- stage: page on a warm desk ---- */
+body.sb-paper:not(.sb-ui-v3) #sb-stage {
+  background:
+    radial-gradient(circle at 50% 0%, rgba(255, 253, 246, 0.75), transparent 42%),
+    var(--pb-cream);
+}
+
+body.sb-paper:not(.sb-ui-v3) #sb-mode {
+  color: var(--pb-terra-deep);
+  background: rgba(255, 253, 246, 0.85);
+  border: 1px solid var(--pb-line);
+}
+
+body.sb-paper:not(.sb-ui-v3) #sb-stage-inner {
+  background: var(--pb-paper);
+  border: 1px solid rgba(51, 41, 31, 0.1);
+  border-radius: 8px;
+  box-shadow:
+    0 1px 0 rgba(51, 41, 31, 0.06),
+    0 18px 42px rgba(74, 56, 34, 0.22);
+}
+
+body.sb-paper:not(.sb-ui-v3) #sb-page {
+  background: var(--pb-paper);
+}
+
+/* ---- learning panel: cream paper, ink serif text ---- */
+body.sb-paper:not(.sb-ui-v3) #sb-panel {
+  background: var(--pb-cream);
+  border-top: 1px solid var(--pb-line);
+}
+
+body.sb-paper:not(.sb-ui-v3) #sb-unit-head {
+  color: var(--pb-ink-soft);
+}
+
+body.sb-paper:not(.sb-ui-v3) #sb-speaker-chip {
+  color: var(--pb-green);
+}
+
+body.sb-paper:not(.sb-ui-v3) #sb-translation-toggle[aria-pressed="true"] {
+  border-color: var(--pb-green);
+  color: var(--pb-green);
+  background: rgba(62, 92, 71, 0.08);
+}
+
+body.sb-paper:not(.sb-ui-v3) #sb-dialogue.no-portrait,
+body.sb-paper:not(.sb-ui-v3) #sb-dialogue {
+  color: var(--pb-ink);
+}
+
+body.sb-paper:not(.sb-ui-v3) #sb-portrait {
+  border-color: rgba(180, 85, 45, 0.6);
+  background: var(--pb-paper);
+}
+
+body.sb-paper:not(.sb-ui-v3) #sb-speaker {
+  color: var(--pb-terra-deep);
+}
+
+body.sb-paper:not(.sb-ui-v3) #sb-text {
+  color: var(--pb-ink);
+  font-family: Georgia, "Times New Roman", "Noto Serif SC", "SimSun", serif;
+  font-size: 1.12rem;
+  line-height: 1.7;
+}
+
+body.sb-paper:not(.sb-ui-v3) #sb-zh {
+  color: var(--pb-ink-soft);
+}
+
+body.sb-paper:not(.sb-ui-v3) #sb-text mark {
+  background: linear-gradient(transparent 58%, rgba(180, 85, 45, 0.26) 58%);
+  color: inherit;
+}
+
+body.sb-paper:not(.sb-ui-v3) #sb-glossary {
+  color: var(--pb-ink-soft);
+}
+
+body.sb-paper:not(.sb-ui-v3) #sb-feedback {
+  color: var(--pb-green);
+}
+
+/* ---- choices, quiz, review ---- */
+body.sb-paper:not(.sb-ui-v3) #sb-choice {
+  border-color: var(--pb-line);
+  background: var(--pb-paper);
+}
+
+body.sb-paper:not(.sb-ui-v3) #sb-choice .prompt {
+  color: var(--pb-ink);
+}
+
+body.sb-paper:not(.sb-ui-v3) #sb-choice .prompt-zh {
+  color: var(--pb-ink-soft);
+}
+
+body.sb-paper:not(.sb-ui-v3) #sb-choice .reply {
+  color: var(--pb-terra-deep);
+}
+
+body.sb-paper:not(.sb-ui-v3) #sb-quiz {
+  border-top-color: var(--pb-line);
+}
+
+body.sb-paper:not(.sb-ui-v3) #sb-review,
+body.sb-paper:not(.sb-ui-v3) #sb-review * {
+  color: var(--pb-ink);
+}
+
+body.sb-paper:not(.sb-ui-v3) #sb-review {
+  border: 1px solid var(--pb-line);
+  border-radius: 10px;
+  background: var(--pb-paper);
+  padding: 0.8rem 0.9rem;
+}
+
+/* ---- navigation ---- */
+body.sb-paper:not(.sb-ui-v3) #sb-nav button {
+  padding: 0.45rem 1.1rem;
+}
+
+body.sb-paper:not(.sb-ui-v3) #btn-prev:not(:disabled):hover,
+body.sb-paper:not(.sb-ui-v3) #btn-next:not(:disabled):hover {
+  border-color: var(--pb-terra);
+  color: var(--pb-terra-deep);
+}
+
+body.sb-paper:not(.sb-ui-v3) #sb-pager {
+  color: var(--pb-terra-deep);
+}
+
+body.sb-paper:not(.sb-ui-v3) #sb-endnav a {
+  color: var(--pb-terra);
+}
+
+body.sb-paper:not(.sb-ui-v3) #sb-endnav button {
+  border-color: rgba(51, 41, 31, 0.38);
+  background: var(--pb-paper);
+  color: var(--pb-ink);
+  margin-right: 0.55rem;
+}
+
+body.sb-paper:not(.sb-ui-v3) #sb-endnav #btn-study-replay {
+  border-color: var(--pb-green);
+  background: rgba(62, 92, 71, 0.1);
+  color: var(--pb-green);
+  font-weight: 700;
+}
+
+/* ---- split view keeps the paper palette ---- */
+body.sb-paper:not(.sb-ui-v3).storybook-split #sb-panel {
+  border-left: 1px solid var(--pb-line);
+  box-shadow: -12px 0 30px rgba(74, 56, 34, 0.12);
+}
+
+/* ---- speaking bubble / unlock button stay legible on paper ---- */
+body.sb-paper:not(.sb-ui-v3) .sb-autoplay-unlock {
+  border-color: var(--pb-terra);
+  background: var(--pb-terra);
+  color: #fff8ef;
+  font-weight: 700;
+}
+
+body.sb-paper:not(.sb-ui-v3) button:focus-visible,
+body.sb-paper:not(.sb-ui-v3) .sb-link:focus-visible {
+  outline: 3px solid rgba(180, 85, 45, 0.45);
+  outline-offset: 2px;
+}

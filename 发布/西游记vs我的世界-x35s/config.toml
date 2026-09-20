@@ -1,0 +1,43 @@
+[browser]
+home_page = "http://127.0.0.1:18787/engine/play-map.html"
+search_page = "http://127.0.0.1:18787/engine/play-map.html"
+user_agent = "mobile"
+persist_site_data = true
+restore_tabs = false
+max_tabs = 1
+page_zoom = 1.0
+page_theme = "light"
+
+[experimental]
+webgl2 = false
+offscreen_canvas = false
+webgpu = false
+notification = false
+async_clipboard = false
+permissions = false
+
+[display]
+width = 640
+height = 480
+scale = 1.0
+use_gles = true
+software_render = false
+max_fps = 30
+
+[performance]
+memory_profile = "tight"
+cpu_boost_on_load = false
+layout_threads = 0
+worker_pool_max = 0
+http_disk_cache_mb = 0
+
+[audio]
+enabled = true
+max_decode_seconds = 300
+
+[input]
+# 默认不要虚拟鼠标。点不到按钮时按 L3（左摇杆按下）切回浏览器光标。
+cursor_mode = "scroll"
+cursor_speed = 600.0
+scroll_speed = 0
+deadzone = 0.25

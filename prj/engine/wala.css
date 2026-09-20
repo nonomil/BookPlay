@@ -5,13 +5,6 @@ body { overflow: auto; }
 .spacer { flex: 1; }
 .sb-link { color: var(--gold); text-decoration: none; }
 .w-nav-btns { display: flex; align-items: center; gap: 0.45rem; }
-/* 读绘本：与配音并列的按集双路径入口（指向纸感绘本阅读器） */
-.w-read-btn {
-  border-color: #e08a5a;
-  background: rgba(74, 34, 16, 0.78);
-  color: #ffd9c0;
-}
-.w-read-btn:hover { background: rgba(150, 66, 28, 0.9); color: #fff; }
 .w-dub-btn {
   border-color: #f0a055;
   background: rgba(64, 34, 8, 0.78);
@@ -1164,4 +1157,23 @@ button#w-review:hover, .w-btn-gold:hover { filter: brightness(1.08); }
   color: #3a2a08;
   font: 700 1rem/1 "PingFang SC", "Microsoft YaHei", sans-serif;
   cursor: pointer;
+}
+
+/* ===== 精读遍：字幕泊坞落到画面下方（参考稿 Watch & Read 版式） ===== */
+/* 剧情遍保持字幕叠在画面内的观影样式；精学遍把 .w-dock 移出 .w-frame（JS 换位），改为文档流里紧跟视频。 */
+#wala-player.study-dock .w-stage {
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.55rem;
+}
+#wala-player.study-dock .w-frame {
+  height: auto;
+  width: min(100%, calc(max(150px, 100dvh - 300px) * 16 / 9));
+}
+#wala-player.study-dock .w-dock {
+  position: static;
+  left: auto;
+  bottom: auto;
+  width: min(92vw, 880px);
+  margin: 0 auto;
 }

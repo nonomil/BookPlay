@@ -8,7 +8,7 @@
   <link rel="icon" href="data:,">
   <title>豆豆龙英语 · 绘本馆</title>
   <link rel="stylesheet" href="style.css?v=png1">
-  <link rel="stylesheet" href="home.css?v=lib16">
+  <link rel="stylesheet" href="home.css?v=lib17">
   <link rel="stylesheet" href="tv.css?v=1">
   <link rel="stylesheet" href="handheld.css?v=2">
   <link rel="stylesheet" href="app-audio.css?v=2">
@@ -63,5 +63,16 @@
     </div>
   </div>
   <script src="tv-remote.js?v=1"></script>
+  <style>
+    @media (max-height: 520px) {
+      html, body, #app { height: auto !important; overflow: auto !important; background: #c0dfc3 !important; }
+      .library-hero { min-height: 0 !important; overflow: visible !important; }
+      .library-brand { padding: 8px 10px 0 !important; }
+      .library-brand h1 { font-size: 1.3rem !important; }
+      .book-grid { display: grid !important; grid-template-columns: repeat(3, minmax(0, 1fr)) !important; gap: 8px !important; }
+      .book-card { min-height: 44px; }
+      .book-card img { height: 72px !important; }
+    }
+  </style>
 </body>
 </html>

@@ -1,0 +1,104 @@
+* { box-sizing: border-box; }
+html, body {
+  margin: 0;
+  height: 100%;
+  background: #1a1f27;
+  color: #f4efe4;
+  font: 16px/1.4 "Segoe UI", sans-serif;
+  cursor: none;
+  backdrop-filter: none;
+}
+body.cursor-on, body.cursor-on * { cursor: auto; }
+.stage {
+  width: 640px;
+  height: 480px;
+  margin: 0 auto;
+  background: #0b1018;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #9bd6ff;
+}
+.top {
+  display: flex;
+  gap: 6px;
+  padding: 4px 6px;
+  background: #17334c;
+  flex-shrink: 0;
+}
+.tool {
+  min-height: 44px;
+  min-width: 44px;
+  padding: 0 8px;
+  font-size: 12px;
+  border: 1px solid #9bd6ff;
+  background: #2a4a66;
+  color: #fff;
+}
+.tool.is-on { outline: 3px solid #ffcf65; }
+.tabs { display: flex; gap: 4px; padding: 4px 6px; }
+.tabs button {
+  min-height: 44px;
+  min-width: 44px;
+  flex: 1;
+  font-size: 14px;
+}
+.panel { display: none; flex: 1; min-height: 0; padding: 8px; overflow: auto; }
+.panel.is-on { display: block; }
+.meadow {
+  height: 220px;
+  background: linear-gradient(#7ec8e3, #cfe7a5 55%, #6b8f3a);
+  image-rendering: pixelated;
+  position: relative;
+}
+.meadow .hud {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  display: flex;
+  gap: 6px;
+}
+.meadow .hud button {
+  width: 48px;
+  height: 48px;
+  min-width: 44px;
+  min-height: 44px;
+}
+.card {
+  background: #f4efe4;
+  color: #243b4d;
+  border-radius: 8px;
+  padding: 10px;
+  max-width: 620px;
+}
+.hint { font-size: 18px; margin: 0 0 8px; }
+.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.choice {
+  min-height: 72px;
+  font-size: 18px;
+  border: 2px solid #8aa;
+  background: #fff;
+  color: #243b4d;
+}
+.choice:focus, .choice.is-on { outline: 3px solid #d4b96a; }
+.skip {
+  min-height: 44px;
+  min-width: 44px;
+  margin-top: 8px;
+  width: 100%;
+}
+.pad-hint {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 8px;
+  font-size: 16px;
+}
+.pad-hint span { display: inline-flex; align-items: center; gap: 4px; min-height: 28px; }
+.pad-hint img { width: 22px; height: 22px; }
+.status { margin: 8px 0 0; font-size: 14px; color: #9bd6ff; }
+.ok { color: #8f8; }
+.bad { color: #f88; }
+code { font-size: 13px; }
+.note { font-size: 13px; opacity: .85; margin-top: 8px; }

@@ -17,7 +17,7 @@ test('wala.html：语音模块在 wala.js 前按核心到网关顺序引入并�
   assert.ok(coreIndex < voiceIndex && voiceIndex < walaIndex);
   assert.match(html, /voice-core\.js\?v=1/);
   assert.match(html, /voice\.js\?v=1/);
-  assert.match(html, /wala\.js\?v=73/);
+  assert.match(html, /wala\.js\?v=79/);
   assert.match(html, /wala\.css\?v=\d+/, "wala.css 必须带数字版本号（具体值由并行特性递增）");
 });
 

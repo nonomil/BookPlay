@@ -360,6 +360,15 @@
     }, { once: true });
   }
 
+  function emitFx(kind, el, extra) {
+    try {
+      const r = (el || state.hero.el || document.querySelector("#game-hero")).getBoundingClientRect();
+      document.dispatchEvent(new CustomEvent("game-fx", {
+        detail: Object.assign({ kind, x: r.left + r.width / 2, y: r.top + r.height / 2 }, extra || {}),
+      }));
+    } catch (_) { /* 演出不阻塞玩法 */ }
+  }
+
   function showToast(text, ms) {
     els.toast.textContent = text;
     els.toast.hidden = false;
@@ -1108,6 +1117,7 @@
     hero.invulnUntil = performance.now() + HERO_INVULN;
     if (hero.el) {
       setHeroPose("hurt");
+      emitFx("hero-hurt", hero.el);
       spawnFx("shield", hero.x, hero.y);
       hero.el.classList.add("is-hurt", "is-invuln");
       window.setTimeout(() => {
@@ -1179,6 +1189,7 @@
     state.carried = { zh: orb.zh, term: termForZh(orb.zh), typed: "", wrong: "" };
     orb.el.style.display = "none";
     window.BookPlayAudio?.sfx("start");
+    emitFx("pickup", orb.el, { zh: orb.zh });
     speakTerm(orb.zh, "zh");
     if (state.playVerb === "type-lock") showToast(`捡到${state.pickup.nameZh || "仙桃"}！跟打头顶英文才飞得出去`, 1800);
     else if (state.playVerb === "gourd-seek") showToast(`捡到${state.pickup.nameZh || "仙桃"}！葫芦会自己找对的英文小妖`, 1800);
@@ -1398,6 +1409,8 @@
       killMonster(monster);
       spawnBurst(monster);
       spawnFx("sparkle", monster.x, monster.y);
+      emitFx("hit", monster.el, { term: monster.term, zh: monster.zh });
+      if (verdict.comboReady) emitFx("combo", monster.el, { combo: verdict.combo ? verdict.combo + 2 : 3 });
       maybeDrop(monster);
       setHeroPose("celebrate");
       window.setTimeout(() => {
@@ -1436,6 +1449,7 @@
       monster.fleeUntil = performance.now() + 2400;
       monster.el.classList.add("is-wrong");
       spawnFx("bounce", monster.x, monster.y);
+      emitFx("miss", monster.el);
       window.setTimeout(() => monster.el.classList.remove("is-wrong"), 900);
       dropOrbAt(shot.x, shot.y, shot.orb);
       showToast(`词球弹回来了！「${shot.zh}」对不上「${monster.term}」`, 1800);

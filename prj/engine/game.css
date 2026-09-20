@@ -1026,7 +1026,8 @@
 
 /* 反馈演出浮字（game-feedback 事件消费） */
 .game-float {
-  position: absolute;
+  position: fixed;
+  z-index: 30;
   z-index: 6;
   transform: translate(-50%, -50%);
   font-weight: 800;

@@ -10,6 +10,19 @@ const episode = Math.max(1, Math.min(108, Number.parseInt(params.get("ep"), 10) 
 const episodeKey = `ep${String(episode).padStart(3, "0")}`;
 const lessonWordsMode = params.get("mode") === "words" || document.body.classList.contains("lesson-words-body");
 const WORD_STUDY_KEY = "bookplay_lesson_word_study_v1";
+/* 学习步日志：words 模式记 practice，quiz 模式记 check；诊断失败静默，绝不挡学习。 */
+let stepLoggedEnter = false;
+let stepLoggedFinish = false;
+function logLessonStep(step, event, extra) {
+  try {
+    if (window.BookPlayStepLog) {
+      window.BookPlayStepLog.log(Object.assign({ ep: episode, step, event }, extra || {}));
+    }
+  } catch (_) { /* 诊断不挡学习 */ }
+}
+window.addEventListener("pagehide", () => {
+  if (stepLoggedEnter && !stepLoggedFinish) logLessonStep(lessonWordsMode ? "practice" : "check", "quit");
+});
 const STUDY_SESSION_KEY = "bookplay_lesson_session_v2";
 const MAP_PROGRESS_KEY = "bookplay_adv_progress";
 // The local server maps these keys to natural Edge-TTS neural voices.  Keeping
@@ -883,6 +896,17 @@ function restoreQuizPosition() {
 
 function resetQuizSession() {
   if (!studySession) return;
+  // 首答口径（P2）：重置前把上一轮作答归档为 firstAttempt（只归档一次，之后重做不再改写）。
+  const prevAnswers = Array.isArray(studySession.quiz?.answers) ? studySession.quiz.answers : [];
+  if (prevAnswers.length && !studySession.firstAttempt) {
+    const prevCorrect = prevAnswers.filter((item) => item && item.ok).length;
+    studySession.firstAttempt = {
+      total: prevAnswers.length,
+      correct: prevCorrect,
+      ratio: prevCorrect / prevAnswers.length,
+      at: studySession.updatedAt || new Date().toISOString(),
+    };
+  }
   studySession.quiz = { current: 0, correct: 0, answers: [] };
   studySession.passed = false;
   studySession.updatedAt = new Date().toISOString();
@@ -1290,6 +1314,7 @@ function renderWordReviewPanel(cards, storyData) {
 }
 
 function markWordStudyComplete() {
+  if (!stepLoggedFinish) { stepLoggedFinish = true; logLessonStep("practice", "finish"); }
   const completedAt = new Date().toISOString();
   if (studySession) {
     studySession.studyDone = true;
@@ -1386,6 +1411,10 @@ function finishLesson(empty = false) {
     ? core.evaluateLessonResult(correct, scoreTotal)
     : { passed: scoreTotal > 0 && correct / scoreTotal >= 0.7, ratio: scoreTotal ? correct / scoreTotal : 0 };
   const passed = !empty && outcome.passed;
+  if (!stepLoggedFinish) {
+    stepLoggedFinish = true;
+    logLessonStep("check", "finish", { ok: passed, score: scoreTotal ? `${correct}/${scoreTotal}` : null });
+  }
   saveCompletion(passed);
   showGameInvite(passed);
   ui.progress.textContent = "已完成";
@@ -1401,10 +1430,15 @@ function finishLesson(empty = false) {
       ? "通过条件已达成，下一集和故事奖励已经解锁。"
       : `正确率 ${(outcome.ratio * 100).toFixed(0)}%，先复习错题再挑战一次。`;
   const retryHref = `lesson.html?ep=${episode}&retry=1`;
+  const drillHref = core.drillHrefForEpisode(episode);
+  const collectionClear = passed && core.isCollectionLastEpisode(episode);
+  const drillLink = collectionClear
+    ? `<a class="primary-button" href="${drillHref}">★ 去本辑巩固</a>`
+    : `<a class="result-link" href="${drillHref}">本辑巩固</a>`;
   const nextAction = passed
-    ? `<p class="result-game-invite">本集单词已经准备好。上方弹窗可以进入降妖记，也可以暂时跳过。</p><a class="result-link" href="${nextHref}">继续${nextLabel}</a>`
+    ? `<p class="result-game-invite">本集单词已经准备好。上方弹窗可以进入降妖记，也可以暂时跳过。</p>${collectionClear ? drillLink : `<a class="result-link" href="${nextHref}">继续${nextLabel}</a>`}`
     : `<a class="primary-button" href="${retryHref}">再测一次</a>`;
-  ui.card.innerHTML = `<div class="result-state"><p class="question-meta">本集知识巩固${passed ? "完成" : "结果"}</p><div class="result-score">${score}</div><h2>${resultTitle}</h2><p>${resultCopy}</p><div class="result-actions">${nextAction}<a class="result-link" href="parent.html?ep=${episode}">👨‍👩‍👧 亲子时间</a><a class="result-link" href="drill.html?ep=${episode}">复习错题</a><a class="result-link" href="shelf.html">回选集</a></div></div>`;
+  ui.card.innerHTML = `<div class="result-state"><p class="question-meta">本集知识巩固${passed ? "完成" : "结果"}</p><div class="result-score">${score}</div><h2>${resultTitle}</h2><p>${resultCopy}</p><div class="result-actions">${nextAction}${collectionClear ? `<a class="result-link" href="${nextHref}">继续${nextLabel}</a>` : drillLink}<a class="result-link" href="parent.html?ep=${episode}">👨‍👩‍👧 亲子时间</a><a class="result-link" href="${retryHref}">复习错题</a><a class="result-link" href="shelf.html">回选集</a></div></div>`;
   renderEpisodeReward(passed);
 }
 
@@ -1491,6 +1525,7 @@ async function start() {
   if (params.get("retry") === "1" || (!lessonWordsMode && studySession.passed)) resetQuizSession();
   if (lessonWordsMode) {
     const wordCount = renderWordReviewPanel(cards, story);
+    if (!stepLoggedEnter) { stepLoggedEnter = true; logLessonStep("practice", "enter"); }
     if (ui.story) {
       ui.story.hidden = false;
       ui.story.setAttribute("aria-busy", "false");
@@ -1531,6 +1566,7 @@ async function start() {
     finishLesson(true);
     return;
   }
+  if (!stepLoggedEnter) { stepLoggedEnter = true; logLessonStep("check", "enter"); }
   restoreQuizPosition();
   if (current >= questions.length) return;
   renderQuestion();

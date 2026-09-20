@@ -87,9 +87,9 @@ test('game.js：主角与小怪使用提速后的行走档位，并按运动方�
   assert.match(js, /MOVEMENT_SPEEDS/);
   assert.match(js, /setMonsterDir/);
   assert.match(js, /directionFromDelta/);
-  assert.match(coreJs, /hero:\s*0\.6/);
-  assert.match(coreJs, /monsterWander:\s*0\.12/);
-  assert.match(coreJs, /monsterChase:\s*0\.28/);
+  assert.match(coreJs, /hero:\s*0\.38/);
+  assert.match(coreJs, /monsterWander:\s*0\.08/);
+  assert.match(coreJs, /monsterChase:\s*0\.16/);
   assert.match(js, /monsterIntent/);
   assert.match(js, /windupUntil/);
   assert.match(js, /setHeroDir\(moved\.facing\)/);
@@ -112,7 +112,9 @@ test('from=lesson 被读取，且不当成 from=battle 跳过开场', () => {
 test('from=lesson 退出和通关回到 lesson.html，开战带 from=lesson', () => {
   const js = read('game.js');
   assert.match(js, /function leaveUrl\(/);
-  assert.match(js, /FROM_LESSON \? `lesson\.html\?ep=\$\{EP\}` : "map\.html"/);
+  assert.match(js, /if \(FROM_LESSON\) return `lesson\.html\?ep=\$\{EP\}`/);
+  assert.match(js, /play-map\.html/);
+  assert.match(js, /return "map\.html"/);
   assert.match(js, /from=\$\{FROM_LESSON \? "lesson" : "game"\}/);
   assert.match(js, /navigateGame\(leaveUrl\(\)\)/);
 });
@@ -393,10 +395,10 @@ test('Android 大地图运行副本与浏览器版共享慢速四向/攻防契�
   assert.match(androidGame, /function setMonsterPose\(/);
   assert.match(androidGame, /attackUntil/);
   assert.match(androidGame, /function tileCamera\(/);
-  // 2026-09-12 用户反馈提速后的行走档位（0.6 屏/秒档）
-  assert.match(androidCore, /hero:\s*0\.6/);
-  assert.match(androidCore, /monsterWander:\s*0\.12/);
-  assert.match(androidCore, /monsterChase:\s*0\.28/);
+  // 2026-09-12 二次定档：0.38 屏/秒（用户反馈 0.6 太快）
+  assert.match(androidCore, /hero:\s*0\.38/);
+  assert.match(androidCore, /monsterWander:\s*0\.08/);
+  assert.match(androidCore, /monsterChase:\s*0\.16/);
   assert.match(androidCss, /\[hidden\]\s*\{[^}]*display\s*:\s*none\s*!important/);
   assert.match(androidCss, /width\s*:\s*400%/);
 });

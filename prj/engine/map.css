@@ -1703,3 +1703,11 @@ body.map-terminal .terminal-stage {
 #map-coach-float.hidden { display: none; }
 #map-coach-float:hover,
 #map-coach-float:focus-visible { background: rgba(125, 206, 160, 0.9); color: #0d221a; outline: none; }
+
+/* 2026-09-19 P2 双路径升级：📖 精读课堂 / 🎬 看动画 两种入口（选集时选路径，路径内不切换） */
+.path-card.path-study { border-color: rgba(228, 141, 91, 0.55); background: rgba(228, 141, 91, 0.12); }
+.path-card.path-study b { color: #f0a374; }
+.path-card.path-study em { color: #ffd76a; }
+.path-card.path-study.is-ready { border-color: #f0a374; background: rgba(228, 141, 91, 0.2); box-shadow: 0 10px 26px rgba(228, 141, 91, 0.18); }
+.path-card.path-watch { border-color: rgba(125, 206, 160, 0.5); background: rgba(125, 206, 160, 0.1); }
+.path-card.path-watch b { color: #7dcea0; }

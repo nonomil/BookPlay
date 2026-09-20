@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <script src="./native-key.js"></script>
+  <script defer src="./handheld-controls.js" data-app="bookplay"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>家长报告 · BookPlay 书戏</title>
+  <link rel="stylesheet" href="tv.css?v=2">
+  <link rel="stylesheet" href="handheld.css?v=1">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      min-height: 100vh;
+      background: linear-gradient(180deg, #101732 0%, #1a2342 100%);
+      color: #eef2ff;
+      font: 15px/1.6 "PingFang SC", "Microsoft YaHei", sans-serif;
+      padding: max(14px, env(safe-area-inset-top)) 14px 40px;
+    }
+    .wrap { max-width: 720px; margin: 0 auto; }
+    header { display: flex; align-items: center; gap: 10px; margin-bottom: 6px; }
+    .back {
+      min-height: 40px; display: inline-flex; align-items: center; padding: 0 14px;
+      border-radius: 12px; border: 1px solid rgba(255, 215, 106, 0.5);
+      background: rgba(255, 215, 106, 0.14); color: #ffd76a;
+      font-weight: 700; text-decoration: none; cursor: pointer;
+    }
+    h1 { font-size: 20px; letter-spacing: 1px; }
+    .privacy { color: #93a0c4; font-size: 12px; margin: 4px 0 18px; }
+    section { margin-bottom: 22px; }
+    h2 { font-size: 16px; color: #ffd76a; margin-bottom: 10px; letter-spacing: 1px; }
+    .card {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 16px; padding: 14px 16px;
+    }
+    .overview { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; text-align: center; }
+    .overview b { display: block; font-size: 24px; color: #fff; }
+    .overview span { color: #93a0c4; font-size: 12px; }
+    .row { padding: 10px 0; border-top: 1px dashed rgba(255, 255, 255, 0.12); }
+    .row:first-child { border-top: none; padding-top: 2px; }
+    .row-head { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; font-weight: 700; }
+    .badge {
+      font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.25); color: #c9d4f2;
+    }
+    .badge.stuck { border-color: #e07474; color: #ffb3b3; background: rgba(224, 116, 116, 0.14); }
+    .badge.day { margin-left: auto; font-weight: 400; color: #93a0c4; }
+    .chips { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 8px; }
+    .chip {
+      font-size: 12px; padding: 3px 10px; border-radius: 999px;
+      background: rgba(255, 255, 255, 0.08); color: #c9d4f2;
+      border: 1px solid rgba(255, 255, 255, 0.14);
+    }
+    .chip.done { background: rgba(125, 206, 160, 0.16); border-color: rgba(125, 206, 160, 0.5); color: #a9e5c4; }
+    .chip.half { background: rgba(255, 215, 106, 0.12); border-color: rgba(255, 215, 106, 0.45); color: #ffd76a; }
+    .chip.fail { background: rgba(224, 116, 116, 0.14); border-color: rgba(224, 116, 116, 0.5); color: #ffb3b3; }
+    ul.weak { list-style: none; }
+    ul.weak li { display: flex; justify-content: space-between; padding: 8px 2px; border-top: 1px dashed rgba(255, 255, 255, 0.1); }
+    ul.weak li:first-child { border-top: none; }
+    ul.weak .en { font-weight: 700; }
+    ul.weak .stat { color: #ffb3b3; font-size: 13px; }
+    .suggest { display: grid; gap: 10px; }
+    .tip { display: flex; gap: 10px; align-items: flex-start; }
+    .tip .icon { font-size: 20px; line-height: 1.4; }
+    .empty { color: #93a0c4; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="back" href="map.html">← 返回地图</a>
+      <h1>家长报告</h1>
+    </header>
+    <p class="privacy">只统计最近 7 天 · 数据只保存在这台设备上，不会上传</p>
+    <section>
+      <h2>总览</h2>
+      <div class="card overview" id="report-overview"></div>
+    </section>
+    <section>
+      <h2>最近 7 天学习轨迹</h2>
+      <div class="card" id="report-rows"></div>
+    </section>
+    <section>
+      <h2>最容易错的小妖怪（词）</h2>
+      <div class="card"><ul class="weak" id="report-weak"></ul></div>
+    </section>
+    <section>
+      <h2>下一步建议</h2>
+      <div class="card suggest" id="report-suggest"></div>
+    </section>
+  </div>
+  <script src="tv-remote.js?v=1"></script>
+  <script src="step-log-core.js?v=1"></script>
+  <script src="step-log.js?v=1"></script>
+  <script src="parent-report.js?v=1"></script>
+</body>
+</html>
