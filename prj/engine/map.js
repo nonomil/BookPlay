@@ -1426,9 +1426,11 @@ function openEpisodeDetail(n) {
   const listenHref = `wala.html?ep=${n}&mode=listen&loops=2&visual=audio&subtitle=enzh`;
   // 进度回显（参考稿"已到第5步·继续上次学习"）：第一个未完成的精读步骤
   const studyStep = window.BookPlayStudyState ? BookPlayStudyState.firstUndoneStep(n) : 0;
-  const studyStepLine = (studied || studyStep > 0)
-    ? `已到第 ${Math.min(studyStep + 1, 5)} 步 · 继续精读`
-    : "从看故事开始";
+  const studyStepLine = studyStep >= 5
+    ? "五步全亮 ✓ · 随时回顾"
+    : (studied || studyStep > 0)
+      ? `已到第 ${Math.min(studyStep + 1, 5)} 步 · 继续精读`
+      : "从看故事开始";
   const studyCard = `
           <a class="path-card path-study${studied ? "" : " is-ready"}" href="study.html?ep=${n}" tabindex="0">
             <b>📖 精读课堂</b>

@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>原型·筋斗云升天（垂直攀爬×词汇平台） | 豆豆龙英语</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+  html, body { height: 100%; overflow: hidden; background: #101a2e; }
+  body { font-family: "PingFang SC", "Microsoft YaHei", sans-serif; user-select: none; color: #fdf6e3; }
+  #stage { position: relative; width: 100vw; height: 100vh; overflow: hidden;
+    background: linear-gradient(180deg, #0b1230 0%, #1b2a5e 40%, #2d4a8f 75%, #3d6ab8 100%); }
+  /* 星星 */
+  .star { position: absolute; width: 3px; height: 3px; border-radius: 50%; background: rgba(255,255,255,.6); }
+  #hero { position: absolute; transform: translate(-50%, -50%); will-change: left, top; z-index: 10; text-align: center; }
+  #hero img { height: 84px; filter: drop-shadow(0 5px 6px rgba(0,0,0,.4)); }
+  #hero .cloud { position: absolute; left: 50%; bottom: -14px; transform: translateX(-50%);
+    font-size: 34px; filter: drop-shadow(0 3px 4px rgba(0,0,0,.35)); z-index: -1; }
+  #wordcard { display: inline-block; background: linear-gradient(180deg,#ffe9a8,#ffd24a); color: #1c1508;
+    border-radius: 12px; padding: 5px 14px; font-size: 17px; font-weight: 900;
+    box-shadow: 0 3px 10px rgba(0,0,0,.35); margin-bottom: 6px; white-space: nowrap; }
+
+  .plat { position: absolute; transform: translate(-50%, -50%); border-radius: 999px;
+    height: 34px; display: flex; align-items: center; justify-content: center;
+    font-size: 16px; font-weight: 800; color: #10233f; cursor: default;
+    box-shadow: 0 4px 0 rgba(9,20,40,.35); will-change: left, top; }
+  .plat.normal { width: 108px; background: linear-gradient(180deg,#eef4ff,#b9ccef); }
+  .plat.word { width: 150px; background: linear-gradient(180deg,#fff3c9,#ffd24a); border: 3px solid #fff; }
+  .plat.spring { width: 96px; background: linear-gradient(180deg,#b8ffc9,#3ecf6e); color: #0c3d1e; }
+  .plat.broken { animation: shatter .45s ease-out forwards; pointer-events: none; }
+  @keyframes shatter { to { transform: translate(-50%, 40px) rotate(8deg); opacity: 0; } }
+  .plat.right { background: linear-gradient(180deg,#d6ffd9,#3ecf6e); }
+  .plat.missed { background: linear-gradient(180deg,#ffd6d6,#e8590c); color: #fff; }
+
+  .foe { position: absolute; transform: translate(-50%, -50%); z-index: 8; }
+  .foe img { height: 62px; filter: drop-shadow(0 4px 5px rgba(0,0,0,.4)); }
+
+  .float { position: fixed; z-index: 80; font-size: 22px; font-weight: 900; pointer-events: none;
+    text-shadow: 0 2px 6px rgba(0,0,0,.6); animation: floatup .9s ease-out forwards; }
+  @keyframes floatup { 0% { transform: translateY(0); opacity: 1; } 100% { transform: translateY(-56px); opacity: 0; } }
+  .float.good { color: #7dff8e; font-size: 26px; }
+  .float.bad { color: #ff8d7a; }
+  .float.coin { color: #ffd24a; }
+
+  #hud { position: fixed; inset: 0 0 auto 0; z-index: 30; display: flex; gap: 8px; padding: 10px 12px; align-items: center; }
+  .chip { background: rgba(12,18,36,.75); border-radius: 999px; padding: 7px 14px; font-size: 15px; font-weight: 700; }
+  .chip b { color: #ffd24a; }
+
+  .overlay { position: fixed; inset: 0; z-index: 50; display: none; align-items: center; justify-content: center; background: rgba(6,10,24,.66); }
+  .overlay.on { display: flex; }
+  .panel { background: linear-gradient(180deg, rgba(38,48,86,.97), rgba(18,24,48,.97));
+    border: 1px solid rgba(255,246,214,.25); border-radius: 20px; padding: 24px 28px;
+    text-align: center; max-width: min(92vw, 520px); }
+  .panel h2 { font-size: 20px; margin-bottom: 10px; }
+  .panel p { font-size: 14px; opacity: .92; line-height: 1.9; margin-bottom: 8px; }
+  .bigbtn { background: #ffd24a; color: #1c1508; border-radius: 999px; padding: 11px 32px;
+    font-size: 16px; font-weight: 900; margin-top: 8px; }
+  #quiz-opts { display: flex; flex-direction: column; gap: 8px; margin-top: 12px; }
+  #quiz-opts button { background: rgba(12,18,36,.8); border: 1px solid rgba(255,246,214,.3);
+    border-radius: 12px; padding: 11px 14px; font-size: 15px; font-weight: 700; color: #fdf6e3; }
+  #quiz-opts button:hover { outline: 2px solid #ffd24a; }
+  kbd { background: rgba(255,255,255,.16); border-radius: 5px; padding: 1px 8px; }
+</style>
+</head>
+<body>
+<div id="stage"></div>
+
+<header id="hud">
+  <span class="chip">☁️ 高度 <b id="hud-h">0</b>m</span>
+  <span class="chip">🪙 <b id="hud-gold">0</b></span>
+  <span class="chip" id="hud-lives">❤️❤️❤️</span>
+  <span class="chip">🔥 连击 <b id="hud-combo">0</b></span>
+</header>
+
+<div class="overlay on" id="ov-intro">
+  <div class="panel">
+    <h2>☁️ 筋斗云升天</h2>
+    <p>
+      悟空自动弹跳上升，你只管 <kbd>←</kbd> <kbd>→</kbd>（或 A/D）左右移动<br>
+      头顶是<b>中文词</b>——往上只能踩<b>对的英文云</b>！踩错云会碎<br>
+      撞到小妖掉一命：<b>答对词义卡原地复活</b>（答错才真掉命）<br>
+      越高云越稀、干扰词越像，看看你能上多少米！
+    </p>
+    <button class="bigbtn" id="btn-start">起 云！</button>
+  </div>
+</div>
+
+<div class="overlay" id="ov-quiz">
+  <div class="panel">
+    <h2>🫙 葫芦救急：答对复活！</h2>
+    <p id="quiz-word" style="font-size:18px;font-weight:800"></p>
+    <div id="quiz-opts"></div>
+    <p style="font-size:12px;opacity:.7;margin-top:8px">答错才会真的掉一命</p>
+  </div>
+</div>
+
+<div class="overlay" id="ov-over">
+  <div class="panel">
+    <h2>☁️ 落云了…</h2>
+    <p id="over-stats"></p>
+    <button class="bigbtn" id="btn-restart">再上一层（R）</button>
+  </div>
+</div>
+
+<script>
+"use strict";
+(function () {
+  const W = () => innerWidth, H = () => innerHeight;
+  // Gemini 深度调研数值（deep-research-2026-09-24）：滞空 1.2-1.5s 供儿童读词，
+  // 跳高=屏高 35-40%，云间隔=跳高的 70% 保容错。
+  const GRAVITY = 1250;          // px/s²
+  const JUMP_VY = -830;          // 弹跳初速 → 跳高 ≈275px(38%屏)，滞空 ≈1.33s
+  const HANG_MULT = 0.45;        // 抛物线顶点悬浮缓降：给读词黄金窗口（Coyote hang time）
+  const SPRING_MULT = 1.55;      // 弹簧云
+  const MOVE_SPEED = 340;        // 水平
+  const GAP_BASE = 190, GAP_PER_1000M = 0.06, GAP_MAX = 260;
+  const BREAK_MS = 900;      // 普通云踩后 0.9s 碎：不能停留，移动成为强制（深度升级包）
+  const FOE_START_M = 300;   // 小妖 300m 起出现（报告：前 1-2 分钟 0 只保熟悉期）
+  const LIVES_MAX = 3;
+
+  // ep5 词表：en 为平台上文字（正确/干扰），zh 为悟空头顶词牌
+  const WORDS = [
+    { en: "demon",    zh: "恶魔" },     { en: "gloomy",   zh: "忧郁的" },
+    { en: "subject",  zh: "主题;科目" }, { en: "handle",   zh: "处理;对待" },
+    { en: "revenge",  zh: "报复" },     { en: "amazement", zh: "惊愕" },
+    { en: "kidnap",   zh: "绑架" },     { en: "chaos",    zh: "混乱" },
+    { en: "furious",  zh: "狂怒的" },   { en: "flame",    zh: "火焰" },
+    { en: "success",  zh: "成功" },     { en: "mountain", zh: "山" },
+  ];
+
+  const S = {
+    running: false, paused: false,
+    hero: { x: 0, y: 0, vx: 0, vy: 0 },
+    cam: 0,                       // 世界已卷动高度（px）→ 米数 = cam/8
+    keys: new Set(),
+    plats: [], foes: [],
+    curWord: null,                // {en, zh}
+    gold: 0, combo: 0, lives: LIVES_MAX,
+    quizPend: false,
+    lastPlat: null,               // 防重复计分
+    nextSpawnY: 0,
+    last: 0, best: 0,
+  };
+  const stage = document.getElementById("stage");
+  const $ = (sel) => document.querySelector(sel);
+
+  // 星空
+  for (let i = 0; i < 60; i++) {
+    const st = document.createElement("div");
+    st.className = "star";
+    st.style.left = Math.random() * 100 + "%";
+    st.style.top = Math.random() * 55 + "%";
+    stage.appendChild(st);
+  }
+
+  function toast(text, cls) {
+    const d = document.createElement("div");
+    d.className = "float " + (cls || "");
+    d.textContent = text;
+    d.style.left = "50%"; d.style.top = (H() * 0.35) + "px";
+    d.style.transform = "translateX(-50%)";
+    document.body.appendChild(d);
+    setTimeout(() => d.remove(), 900);
+  }
+  function floatAt(x, y, text, cls) {
+    const d = document.createElement("div");
+    d.className = "float " + (cls || "");
+    d.textContent = text;
+    d.style.left = x + "px"; d.style.top = y + "px";
+    document.body.appendChild(d);
+    setTimeout(() => d.remove(), 900);
+  }
+
+  /* ====== 词与平台生成 ====== */
+  function pickWord() { return WORDS[Math.floor(Math.random() * WORDS.length)]; }
+  function pickDistractor(correct) {
+    // 300m 后混入近形词（subject/success 等），前期纯随机
+    const nearShape = WORDS.filter(w => w.en !== correct.en && w.en[0] === correct.en[0]);
+    const pool = (S.cam / 8 > 300 && nearShape.length && Math.random() < 0.6) ? nearShape : WORDS.filter(w => w.en !== correct.en);
+    return pool[Math.floor(Math.random() * pool.length)];
+  }
+  function gapAt() {
+    return Math.min(GAP_MAX, GAP_BASE * (1 + (S.cam / 8) / 1000 * 100 * GAP_PER_1000M / 100 * 100 / 100) + (S.cam / 8) * 0.055);
+  }
+  function spawnPlatsUpTo(worldTopY) {
+    while (S.nextSpawnY > worldTopY) {
+      const gap = Math.min(GAP_MAX, GAP_BASE + (S.cam / 8) * 0.055);
+      S.nextSpawnY -= gap;
+      const y = S.nextSpawnY;
+      if (Math.random() < 0.16) {
+        addPlat("spring", W() * (0.15 + Math.random() * 0.7), y, null);
+      } else {
+        // 一对词云：一块正确（=当前词牌的英文）、一块干扰；词牌随生成顺序更新，
+        // 玩家自下而上遇到的第一对就是"当前任务"。
+        const word = pickWord();
+        S.curWord = word;
+        const card = document.getElementById("wordcard");
+        if (card) card.textContent = word.zh;
+        const wrongEn = pickDistractor(word).en;
+        const leftIsRight = Math.random() < 0.5;
+        const lx = W() * (leftIsRight ? 0.22 + Math.random() * 0.12 : 0.62 + Math.random() * 0.16);
+        const rx = W() * (leftIsRight ? 0.62 + Math.random() * 0.16 : 0.22 + Math.random() * 0.12);
+        addPlat("word", lx, y - 10, { text: word.en, correct: leftIsRight });
+        addPlat("word", rx, y + 10, { text: wrongEn, correct: !leftIsRight });
+      }
+      // 保底普通云（防两词云都碎后无路）
+      if (Math.random() < 0.65) addPlat("normal", W() * (0.1 + Math.random() * 0.8), y + gap * 0.5, null);
+    }
+  }
+  function addPlat(kind, x, y, meta) {
+    const el = document.createElement("div");
+    el.className = "plat " + kind;
+    el.textContent = meta ? meta.text : (kind === "spring" ? "弹！" : "");
+    stage.appendChild(el);
+    S.plats.push({ kind, x, y, meta, el, used: false, dead: false });
+  }
+  function spawnFoe(y) {
+    const ids = ["chaosdemon-minion", "dragonking-soldier", "imp"];
+    const id = ids[Math.floor(Math.random() * ids.length)];
+    const el = document.createElement("div");
+    el.className = "foe";
+    el.innerHTML = `<img src="../assets/game-sprites/${id}/${id}-south-idle.png" alt="">`;
+    stage.appendChild(el);
+    const dir = Math.random() < 0.5 ? 1 : -1;
+    S.foes.push({ x: dir > 0 ? -40 : W() + 40, y, vx: dir * (70 + Math.random() * 50), el });
+  }
+
+  /* ====== 输入 ====== */
+  addEventListener("keydown", (ev) => {
+    const k = ev.key.toLowerCase();
+    if (["arrowleft", "a"].includes(k)) S.keys.add("L");
+    if (["arrowright", "d"].includes(k)) S.keys.add("R");
+    if (k === "r" && $("#ov-over").classList.contains("on")) restart();
+  });
+  addEventListener("keyup", (ev) => {
+    const k = ev.key.toLowerCase();
+    if (["arrowleft", "a"].includes(k)) S.keys.delete("L");
+    if (["arrowright", "d"].includes(k)) S.keys.delete("R");
+  });
+  // 触屏：按住屏幕左/右半边
+  stage.addEventListener("pointerdown", (ev) => {
+    S.keys.add(ev.clientX < W() / 2 ? "L" : "R");
+  });
+  stage.addEventListener("pointerup", () => S.keys.delete("L"));
+  stage.addEventListener("pointercancel", () => { S.keys.delete("L"); S.keys.delete("R"); });
+
+  /* ====== 碰撞与状态 ====== */
+  function landPlat(p) {
+    if (p.kind === "word") {
+      if (p.meta.correct) {
+        if (S.lastPlat !== p) {
+          S.combo += 1;
+          const gain = 1 + Math.min(4, Math.floor(S.combo / 3));
+          S.gold += gain;
+          $("#hud-gold").textContent = S.gold;
+          $("#hud-combo").textContent = S.combo;
+          floatAt(p.x, screenY(p.y) - 30, `+${gain} 🪙`, "coin");
+          S.lastPlat = p;
+          if (S.combo % 5 === 0 && performance.now() > (S.dashUntil || 0)) {
+            // 报告 3.3：满 5 连击=大圣冲刺（自动急升穿云，认知释放）
+            S.dashUntil = performance.now() + 3000;
+            S.hero.vy = JUMP_VY * 1.42;                  // 急升 ≈590px：恰好穿 3 层云（云距 190-260）
+            toast("🌀 大圣冲刺！", "good");
+            sfx("good");
+          }
+          if (S.combo % 10 === 0 && !S.shieldUp) {
+            S.shieldUp = true;                            // 满 10 连击=毫毛护盾（挡一次撞击/踩错）
+            toast("🛡️ 毫毛化身！挡一次失误", "good");
+          }
+        }
+        p.el.classList.add("right");
+        sfx("good");
+      } else {
+        p.el.classList.add("missed", "broken");
+        p.dead = true;
+        S.combo = 0;
+        $("#hud-combo").textContent = 0;
+        floatAt(p.x, screenY(p.y) - 30, "踩错了！", "bad");
+        sfx("bad");
+      }
+    } else if (p.kind === "spring") {
+      floatAt(p.x, screenY(p.y) - 30, "筋斗神云！↑↑", "good");
+      sfx("good");
+    } else if (p.kind === "normal" && !p.breakAt) {
+      p.breakAt = performance.now() + BREAK_MS; // 碎云：停留即坠落
+    }
+  }
+  function sfx(kind) { try { window.BookPlayAudio?.sfx(kind); } catch (_) {} }
+
+  function hitFoe() {
+    if (S.shieldUp) {
+      S.shieldUp = false;
+      S.hero.vy = JUMP_VY;
+      toast("🛡️ 毫毛替你挡了一下！", "good");
+      return;
+    }
+    S.paused = true;
+    $("#quiz-word").textContent = `「${S.curWord.zh}」的英文是？`;
+    const opts = [S.curWord.en];
+    while (opts.length < 3) {
+      const w = pickDistractor(S.curWord);
+      if (!opts.includes(w.en)) opts.push(w.en);
+    }
+    opts.sort(() => Math.random() - 0.5);
+    const wrap = $("#quiz-opts");
+    wrap.innerHTML = "";
+    opts.forEach((en) => {
+      const b = document.createElement("button");
+      b.textContent = en;
+      b.onclick = () => resolveQuiz(en === S.curWord.en);
+      wrap.appendChild(b);
+    });
+    $("#ov-quiz").classList.add("on");
+  }
+  function resolveQuiz(ok) {
+    $("#ov-quiz").classList.remove("on");
+    if (ok) {
+      // 报告 3.4：答对爆发金光清除全屏小妖并弹射——"挽回损失"的高潮反馈
+      S.foes.forEach((f) => f.el.remove());
+      S.foes = [];
+      S.hero.vy = JUMP_VY * 1.4;
+      toast("✨ 答对！金光扫清小妖！", "good");
+      sfx("good");
+    } else {
+      S.lives -= 1;
+      renderLives();
+      toast("答错…掉了一命", "bad");
+    }
+    // 弹回当前视口中下方（hero.y 是世界坐标 = cam + 屏内位置）
+    S.hero.y = S.cam + H() * 0.8;
+    S.hero.vy = JUMP_VY * 0.9;
+    S.paused = false;
+    if (S.lives <= 0) gameOver();
+  }
+  function renderLives() { $("#hud-lives").textContent = "❤️".repeat(S.lives) + "🖤".repeat(LIVES_MAX - S.lives); }
+
+  function gameOver() {
+    S.running = false;
+    const m = Math.round(S.cam / 8);
+    S.best = Math.max(S.best, m);
+    $("#over-stats").innerHTML =
+      `到达 <b>${m}m</b>（最佳 ${S.best}m）· 金币 <b>${S.gold}</b> · 最高连击 <b>${S.combo}</b><br>` +
+      (m >= 800 ? "天庭在望！干扰词越来越狡猾了" : "试试：先在下方看清两朵云的字再走位");
+    $("#ov-over").classList.add("on");
+  }
+
+  /* ====== 相机与坐标 ====== */
+  function screenY(worldY) { return worldY - S.cam; } // worldY 减 cam；cam 随上升增加
+
+  /* ====== 主循环 ====== */
+  function step(dtMs) {
+    if (!S.running || S.paused) return;
+    // 物理子步化：把大 dt（后台 watchdog 320ms）切成 ≤16ms，防止高速下落穿透平台碰撞窗
+    let remaining = Math.min(320, dtMs);
+    while (remaining > 0) {
+      const dt = Math.min(16, remaining);
+      remaining -= dt;
+      physics(dt);
+    }
+  }
+  function physics(dt) {
+    const hero = S.hero;
+    // 水平
+    let dx = 0;
+    if (S.keys.has("L")) dx -= 1;
+    if (S.keys.has("R")) dx += 1;
+    hero.x = Math.max(40, Math.min(W() - 40, hero.x + dx * MOVE_SPEED * dt / 1000));
+    // 垂直（顶点悬停缓降：|vy| 小时重力减弱，制造读词窗口）
+    const g = Math.abs(hero.vy) < 120 ? GRAVITY * HANG_MULT : GRAVITY;
+    hero.vy += g * dt / 1000;
+    hero.y += hero.vy * dt / 1000;
+
+    // 上升卷动：hero 高于屏幕 38% 时推进 cam
+    const heroScreenY = screenY(hero.y);
+    if (heroScreenY < H() * 0.38 && hero.vy < 0) {
+      const push = H() * 0.38 - heroScreenY;
+      S.cam += push;
+      hero.y += push;
+    }
+    // 只升不降的卷动也允许下落（cam 不回退）→ hero 掉出屏底 = 结束
+    if (screenY(hero.y) > H() + 60) return gameOver();
+
+    // 平台碰撞（仅下落时）
+    if (hero.vy > 0) {
+      for (const p of S.plats) {
+        if (p.dead) continue;
+        const sy = screenY(p.y);
+        if (sy < -80 || sy > H() + 80) continue;
+        const hw = p.kind === "word" ? 75 : 54;
+        if (Math.abs(hero.x - p.x) < hw + 20 && heroScreenY + 34 > sy - 12 && heroScreenY + 34 < sy + 22) {
+          hero.vy = JUMP_VY * (p.kind === "spring" ? SPRING_MULT : 1);
+          landPlat(p);
+          break;
+        }
+      }
+    }
+    // 小妖
+    const altM = S.cam / 8;
+    const foeCap = altM < 800 ? 1 : 2;   // 报告：前期 0 只，中期 1 只，熟练后 ≤2 只
+    if (altM > FOE_START_M && S.foes.length < foeCap && Math.random() < dt / 2600) {
+      spawnFoe(S.cam + Math.random() * H() * 0.4);
+    }
+    for (let i = S.foes.length - 1; i >= 0; i--) {
+      const f = S.foes[i];
+      f.t = (f.t || 0) + dt;
+      f.x += f.vx * dt / 1000 + Math.sin(f.t / 420) * 0.7;      // 正弦飘移：不可预测
+      const dyHero = screenY(hero.y) - (f.y - S.cam);
+      if (Math.abs(f.x - hero.x) < 140 && dyHero > 0) f.y += 14 * dt / 1000; // 轻微下压追踪
+      f.el.style.left = f.x + "px";
+      f.el.style.top = (f.y - S.cam) + "px";
+      if (f.x < -80 || f.x > W() + 80 || f.y - S.cam < -120 || f.y - S.cam > H() + 200) {
+        f.el.remove(); S.foes.splice(i, 1); continue;
+      }
+      if (S.foeGraceUntil && performance.now() < S.foeGraceUntil) break; // 撞后 1.2s 免再撞（公平近失）
+      const dashing = performance.now() < (S.dashUntil || 0);
+      if (dashing && Math.hypot(f.x - hero.x, (f.y - S.cam) - (screenY(hero.y))) < 60) {
+        // 冲刺撞妖：直接撞飞得分
+        f.el.remove(); S.foes.splice(i, 1);
+        S.gold += 2;
+        $("#hud-gold").textContent = S.gold;
+        floatAt(f.x, f.y - S.cam, "+2 🪙 撞飞！", "coin");
+        continue;
+      }
+      if (Math.hypot(f.x - hero.x, (f.y - S.cam) - (screenY(hero.y))) < 44) {
+        f.el.remove(); S.foes.splice(i, 1);
+        sfx("bad");
+        S.foeGraceUntil = performance.now() + 1200;
+        hitFoe();
+        break;
+      }
+    }
+    // 生成与清理
+    spawnPlatsUpTo(S.cam - H() * 0.5);
+    const nowMs = performance.now();
+    S.plats = S.plats.filter((p) => {
+      const sy = screenY(p.y);
+      if (sy > H() + 140) { p.el.remove(); return false; }
+      if (p.breakAt && nowMs > p.breakAt && !p.dead) {
+        p.dead = true;
+        p.el.classList.add("broken");
+      }
+      // 冲刺期正确云呼吸高亮
+      if (performance.now() < (S.dashUntil || 0) && p.kind === "word" && p.meta && p.meta.correct && !p.dead) {
+        p.el.style.boxShadow = "0 0 18px 6px rgba(125,255,142,.8)";
+      } else if (p.kind === "word") {
+        p.el.style.boxShadow = "";
+      }
+      p.el.style.left = p.x + "px";
+      p.el.style.top = sy + "px";
+      return true;
+    });
+    // 连击≥5：加速冲刺感（里程碑字幕）
+    const milestone = Math.floor(S.cam / 8 / 500);
+    if (milestone > (S.lastMilestone || 0)) {
+      S.lastMilestone = milestone;
+      const gates = { 1: "⛩️ 南天门 500m", 2: "🏮 云霄殿 1000m", 3: "🌤️ 九重天 1500m" };
+      toast(gates[milestone] || `☁️ ${milestone * 500}m`, "good");
+      sfx("good");
+    }
+    // 词牌
+    $("#hud-h").textContent = Math.round(S.cam / 8);
+    heroEl.style.left = hero.x + "px";
+    heroEl.style.top = screenY(hero.y) + "px";
+  }
+  let heroEl;
+  function frame(now) {
+    const dt = Math.min(48, now - S.last);
+    S.last = now;
+    step(dt);
+    requestAnimationFrame(frame);
+  }
+  setInterval(() => { // 后台 watchdog
+    if (performance.now() - S.last > 320) { step(Math.min(320, performance.now() - S.last)); S.last = performance.now(); }
+  }, 320);
+
+  /* ====== 启动 ====== */
+  function restart() {
+    S.plats.forEach((p) => p.el.remove());
+    S.foes.forEach((f) => f.el.remove());
+    S.plats = []; S.foes = [];
+    S.cam = 0; S.gold = 0; S.combo = 0; S.lives = LIVES_MAX;
+    S.shieldUp = false; S.dashUntil = 0; S.lastMilestone = 0;
+    S.curWord = pickWord();
+    S.nextSpawnY = H() - 60;
+    S.lastPlat = null;
+    S.hero = { x: W() / 2, y: H() - 120, vx: 0, vy: JUMP_VY };
+    // 起始平台
+    addPlat("normal", W() / 2, H() - 60, null);
+    spawnPlatsUpTo(-H());
+    $("#hud-gold").textContent = 0;
+    $("#hud-combo").textContent = 0;
+    $("#hud-h").textContent = 0;
+    renderLives();
+    $("#ov-over").classList.remove("on");
+    // 词牌 DOM
+    if (!heroEl) {
+      heroEl = document.createElement("div");
+      heroEl.id = "hero";
+      heroEl.innerHTML = `<img src="../assets/generated/jttw-player-walkers/wukong/directions/wukong-east-walk.gif" alt=""><span class="cloud">☁️</span><br><span id="wordcard"></span>`;
+      stage.appendChild(heroEl);
+    }
+    $("#wordcard").textContent = S.curWord.zh;
+    S.running = true;
+    S.paused = false;
+  }
+  $("#btn-start").onclick = () => { $("#ov-intro").classList.remove("on"); restart(); };
+  $("#btn-restart").onclick = restart;
+  window.__cloud = S; // 调试
+  requestAnimationFrame(frame);
+  S.last = performance.now();
+}());
+</script>
+</body>
+</html>

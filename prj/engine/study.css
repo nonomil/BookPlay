@@ -175,29 +175,6 @@ body.study-body {
   padding: clamp(1.2rem, 3vw, 2rem);
 }
 
-.study-step-kicker {
-  color: var(--st-terra-deep);
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.16em;
-}
-.study-step-title {
-  font-family: var(--st-serif);
-  font-size: clamp(1.7rem, 4vw, 2.4rem);
-  margin-top: 0.3rem;
-}
-.study-step-en {
-  color: var(--st-ink-soft);
-  font-family: var(--st-serif);
-  font-style: italic;
-  margin-top: 0.15rem;
-}
-.study-step-desc {
-  margin-top: 0.85rem;
-  line-height: 1.75;
-  color: var(--st-ink);
-  max-width: 34em;
-}
 
 .study-cta {
   display: inline-flex;
@@ -334,11 +311,11 @@ body.study-body {
 }
 
 .watch-caption {
-  margin-top: 0.8rem;
-  padding: 0.9rem 1rem;
-  background: var(--st-paper);
-  border: 1px solid rgba(51, 41, 31, 0.12);
-  border-radius: 14px;
+  margin-top: 0.4rem;
+  padding: 0.2rem 0.4rem;
+  background: transparent; /* 书页右栏：文字直接浮在纸上，不再套卡片盒 */
+  border: none;
+  border-radius: 0;
 }
 #watch-en {
   font-family: var(--st-serif);
@@ -762,3 +739,366 @@ body.study-body.has-map .study-step-pop { color: var(--st-ink-soft); }
 .order-arrows button:hover:not(:disabled) { border-color: var(--st-terra); }
 .order-arrows button:disabled { opacity: 0.35; cursor: not-allowed; }
 #output-check { margin-top: 0.8rem; }
+
+
+/* ---- img_4 三问编号卡（学方法） ---- */
+.method-questions { display: grid; gap: 0.5rem; margin-top: 0.9rem; }
+.method-q {
+  display: flex;
+  align-items: baseline;
+  gap: 0.7rem;
+  padding: 0.6rem 0.9rem;
+  border: 1px solid var(--st-line);
+  border-radius: 12px;
+  background: var(--st-paper);
+}
+.method-q i {
+  font-style: normal;
+  font-family: var(--st-serif);
+  font-size: 1.1rem;
+  color: var(--st-terra-deep);
+}
+.method-q b { font-family: var(--st-serif); font-size: 1.02rem; color: var(--st-ink); letter-spacing: 0.04em; }
+.method-q span { color: var(--st-ink-soft); font-size: 0.9rem; }
+
+/* ---- img_12 看图读句（说出故事·排对后） ---- */
+.output-read {
+  margin-top: 0.9rem;
+  padding: 0.85rem 1rem;
+  border: 1px solid rgba(62, 92, 71, 0.35);
+  border-radius: 12px;
+  background: rgba(62, 92, 71, 0.08);
+}
+.output-read-label {
+  color: var(--st-green);
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+}
+.read-row {
+  display: grid;
+  grid-template-columns: 34px 150px 1fr auto;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.55rem 0.3rem;
+  border-bottom: 1px dashed var(--st-line);
+}
+.read-row:last-child { border-bottom: none; }
+.read-no { text-align: center; font-family: var(--st-serif); font-size: 1.15rem; color: var(--st-terra-deep); }
+.read-row img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 8px; display: block; }
+.read-text p[lang="en"] { font-family: var(--st-serif); font-size: 1.02rem; line-height: 1.5; }
+.read-text p[lang="zh"] { color: var(--st-ink-soft); font-size: 0.84rem; margin-top: 0.1rem; }
+.read-play {
+  min-height: 40px;
+  padding: 0.2rem 0.75rem;
+  border: 1px solid rgba(180, 85, 45, 0.4);
+  border-radius: 999px;
+  background: rgba(180, 85, 45, 0.08);
+  color: var(--st-terra-deep);
+  font-weight: 700;
+  cursor: pointer;
+}
+.read-play:hover { background: rgba(180, 85, 45, 0.16); }
+
+/* ---- 奖励层：顶部进度条 / 完成演出 / 贴纸仪式 ---- */
+.study-progress {
+  display: inline-flex;
+  gap: 4px;
+  align-items: center;
+}
+.study-progress-seg {
+  width: 22px; height: 8px;
+  border-radius: 999px;
+  background: var(--st-cream-deep);
+  border: 1px solid var(--st-line);
+}
+.study-progress-seg.is-done { background: var(--st-green); border-color: var(--st-green); }
+
+.study-fx {
+  position: fixed; inset: 0;
+  pointer-events: none;
+  z-index: 60;
+}
+.study-star {
+  position: absolute;
+  font-size: 18px;
+  animation: study-star-rise 0.9s ease-out forwards;
+}
+@keyframes study-star-rise {
+  from { transform: translateY(0) scale(0.7); opacity: 1; }
+  to { transform: translateY(var(--dy, -70px)) translateX(var(--dx, 0)) scale(1.15) rotate(20deg); opacity: 0; }
+}
+.study-float {
+  position: fixed;
+  z-index: 61;
+  padding: 0.3rem 0.8rem;
+  border-radius: 999px;
+  background: rgba(26, 21, 15, 0.78);
+  color: #ffd76a;
+  font-weight: 800;
+  font-size: 0.95rem;
+  animation: study-float-up 1.1s ease-out forwards;
+  pointer-events: none;
+}
+@keyframes study-float-up {
+  from { transform: translateY(0); opacity: 1; }
+  to { transform: translateY(-34px); opacity: 0; }
+}
+
+.study-sticker-overlay {
+  position: fixed; inset: 0;
+  z-index: 70;
+  display: flex; align-items: center; justify-content: center;
+  background: rgba(12, 9, 5, 0.6);
+}
+.study-sticker-overlay[hidden] { display: none; } /* display:flex 不得压过 hidden 属性 */
+.sticker-card {
+  width: min(420px, calc(100vw - 48px));
+  text-align: center;
+  padding: 1.6rem 1.4rem 1.3rem;
+  border-radius: 20px;
+  border: 2px solid rgba(255, 215, 106, 0.7);
+  background: rgba(26, 21, 15, 0.94);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5);
+}
+.sticker-kicker {
+  color: #ffd76a;
+  font-size: 0.7rem; font-weight: 800; letter-spacing: 0.18em;
+}
+.sticker-art { margin: 0.8rem 0 0.4rem; }
+.sticker-art img {
+  width: min(240px, 70%);
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 3px solid rgba(255, 215, 106, 0.65);
+}
+.sticker-glyph { font-size: 64px; }
+.sticker-title {
+  color: #fff7df;
+  font-family: Georgia, "Times New Roman", "Noto Serif SC", "SimSun", serif;
+  font-size: 1.35rem;
+  margin: 0.3rem 0 0.1rem;
+}
+.sticker-origin { color: #bfe8d0; font-size: 0.88rem; margin-bottom: 0.9rem; }
+.sticker-close {
+  min-height: 44px;
+  padding: 0.4rem 1.4rem;
+  border: none;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #ffd76a, #e8a923);
+  color: #241b0d;
+  font-weight: 800;
+  cursor: pointer;
+}
+.sticker-close:hover { filter: brightness(1.06); }
+
+/* ---- 大班/低年级：语音指引按钮 + 词卡选项 ---- */
+.choice-row.word-tile {
+  justify-content: center;
+  min-height: 64px;
+}
+.word-tile-en {
+  font-family: Georgia, "Times New Roman", "Noto Serif SC", serif;
+  font-size: 1.3rem;
+  color: var(--st-ink);
+}
+
+/* ---- 02 学方法：对对碰连线游戏（替代任务卡） ---- */
+.match-game {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(2.4rem, 8vw, 5rem);
+  margin-top: 0.9rem;
+}
+.match-lines {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 2;
+}
+.match-lines line {
+  stroke: #f0a374;
+  stroke-width: 4;
+  stroke-linecap: round;
+  opacity: 0.85;
+}
+.match-col { display: grid; gap: 0.55rem; align-content: start; }
+.match-card {
+  min-height: 58px;
+  padding: 0.5rem 0.8rem;
+  border: 2px solid var(--st-line);
+  border-radius: 14px;
+  background: var(--st-paper);
+  color: var(--st-ink);
+  font: inherit;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+}
+.match-card:hover { border-color: var(--st-terra); }
+.match-card.is-selected {
+  border-color: var(--st-terra);
+  box-shadow: 0 0 0 3px rgba(180, 85, 45, 0.22);
+}
+.match-card.is-matched {
+  border-color: var(--st-green);
+  background: rgba(62, 92, 71, 0.1);
+  color: var(--st-green);
+  cursor: default;
+}
+.match-card.is-matched .mc-term,
+.match-card.is-matched .mc-zh { opacity: 0.8; }
+.match-card.is-wrong { animation: match-shake 0.35s ease; border-color: rgba(224, 116, 116, 0.6); }
+@keyframes match-shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+}
+.mc-term { font-family: Georgia, "Times New Roman", "Noto Serif SC", serif; font-size: 1.2rem; }
+.mc-zh { font-size: 1rem; }
+.mc-play {
+  min-width: 38px; min-height: 38px;
+  border: 1px solid rgba(180, 85, 45, 0.4);
+  border-radius: 50%;
+  background: rgba(180, 85, 45, 0.1);
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+.mc-play:hover { background: rgba(180, 85, 45, 0.2); }
+@media (prefers-reduced-motion: reduce) {
+  .match-card.is-wrong { animation: none; }
+}
+
+/* ---- 减文字：任务图标化 ---- */
+.mission-icos { display: flex; gap: 0.7rem; margin-top: 0.45rem; }
+.mission-ico {
+  width: 56px; height: 56px;
+  font-size: 26px;
+  border: 1px solid rgba(62, 92, 71, 0.35);
+  border-radius: 14px;
+  background: rgba(62, 92, 71, 0.08);
+  cursor: pointer;
+}
+.mission-ico:hover { background: rgba(62, 92, 71, 0.16); }
+
+/* ---- 01 看故事：可动的绘本（Storybook 阅读器形式）----
+   左页 = 视频（会动的画面），右页 = 文字列；句级 seek，一句一翻。 */
+.watch-spread {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+  gap: 1rem;
+  align-items: stretch;
+  margin-top: 0.2rem;
+}
+.watch-video-wrap {
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(51, 41, 31, 0.14);
+  box-shadow: 0 12px 30px rgba(74, 56, 34, 0.18);
+  background: #000;
+}
+.watch-video-wrap video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 260px;
+  object-fit: cover;
+}
+.watch-video-wrap.is-turning video { animation: page-turn 0.45s ease; }
+@keyframes page-turn {
+  from { opacity: 0.25; transform: rotateY(-8deg); }
+  to { opacity: 1; transform: rotateY(0); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .watch-video-wrap.is-turning video { animation: none; }
+}
+.watch-page-img {
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(51, 41, 31, 0.14);
+  background: #000;
+  min-height: 240px;
+}
+.watch-page-img img {
+  display: block;
+  width: 100%;
+  min-height: 240px;
+  object-fit: cover;
+}
+.watch-page-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.5rem 0.7rem;
+  /* 右页文字列：直接浮在磨砂纸上，不加盒 */
+}
+.watch-page-text #watch-en {
+  font-family: Georgia, "Times New Roman", "Noto Serif SC", serif;
+  font-size: clamp(1.35rem, 2.2vw, 1.8rem);
+  line-height: 2;
+  color: var(--st-ink);
+}
+.watch-page-text #watch-zh {
+  margin-top: 0.5rem;
+  color: var(--st-ink-soft);
+}
+.watch-page-img.is-turning img { animation: page-turn 0.45s ease; }
+@keyframes page-turn {
+  from { opacity: 0.25; transform: rotateY(-8deg); }
+  to { opacity: 1; transform: rotateY(0); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .watch-page-img.is-turning img { animation: none; }
+}
+@media (max-width: 720px) {
+  .watch-spread { grid-template-columns: 1fr; }
+}
+
+/* ---- 左栏收窄：默认图标条，点 ☰ 展开（画面优先，减文字压迫） ---- */
+.study-columns { transition: grid-template-columns 0.25s ease; }
+body.rail-collapsed .study-columns { grid-template-columns: 64px minmax(0, 1fr); }
+body.rail-collapsed .study-rail-label,
+body.rail-collapsed .st-name,
+body.rail-collapsed .study-rail-quote { display: none; }
+body.rail-collapsed .study-rail-list { gap: 0.4rem; }
+body.rail-collapsed .study-rail-item { justify-content: center; padding: 0.5rem 0.3rem; }
+body.rail-collapsed .st-lamp { margin-left: 0; }
+.rail-toggle {
+  align-self: flex-start;
+  margin-bottom: 0.4rem;
+  width: 36px; height: 36px;
+  border: 1px solid var(--st-line);
+  border-radius: 10px;
+  background: var(--st-paper);
+  color: var(--st-ink);
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+.rail-toggle:hover { border-color: var(--st-terra); }
+body.has-map .rail-toggle { background: rgba(26, 21, 15, 0.5); color: #ffe9a8; border-color: rgba(243, 234, 217, 0.25); }
+@media (prefers-reduced-motion: reduce) {
+  .study-columns { transition: none; }
+}
+
+
+/* 大播放兜底（浏览器拦自动播放时） */
+.watch-bigplay {
+  position: absolute;
+  left: 50%; top: 50%;
+  transform: translate(-50%, -50%);
+  width: 76px; height: 76px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(24, 18, 10, 0.72);
+  color: #ffd76a;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 3;
+}
+.watch-bigplay:hover { background: rgba(24, 18, 10, 0.88); }

@@ -554,16 +554,14 @@
   }
 
   // 边缘平滑跟随：主角在视口死区内自由移动，越出才推镜头；指数平滑不抖。
-  // world=视口格数（map.worldTiles），坐标归一化 [0,1]（全图），镜头 = 视口左上角 [0, world-1]。
-  const CAM_MARGIN = 0.28;   // 主角距视口边 ≤28% 时镜头不动
-  const CAM_TAU = 0.14;      // 镜头指数平滑时间常数（秒）：越小跟越紧
+  // 实体坐标 = 全图归一化 [0,1]（placeAt 按整个世界元素的百分比定位）；
+  // 一个视口占全图的 1/world，镜头（视口左上角）活动范围 = [0, 1 - 1/world]。
   function updateCamera(dtSec) {
     const world = mapWorld();
-    const maxCam = Math.max(0, world - 1);
-    // 目标：让主角保持在视口中心附近（钳到世界边界内）
-    const tx = Math.max(0, Math.min(maxCam, state.hero.x - 0.5));
-    const ty = Math.max(0, Math.min(maxCam, state.hero.y - 0.5));
-    // 指数平滑
+    const half = 0.5 / world;                    // 半个视口宽（全图归一化）
+    const maxCam = Math.max(0, 1 - 1 / world);   // 镜头可滚动范围
+    const tx = Math.max(0, Math.min(maxCam, state.hero.x - half));
+    const ty = Math.max(0, Math.min(maxCam, state.hero.y - half));
     const dt = Math.max(0.001, Number(dtSec) || 0.016);
     const k = 1 - Math.exp(-dt / 0.10);
     state.camera.x += (tx - state.camera.x) * k;
@@ -1128,6 +1126,12 @@
     monster.moving = false;
     setMonsterPose(monster, "attack");
     const hero = state.hero;
+    // P1 张力包：被撞会把手里的词球震落在原地，捡回要再跑一趟——有代价才有紧张感
+    if (state.carried && state.playVerb !== "listen-rings") {
+      const lostZh = state.carried.zh;
+      dropOrbAt(hero.x, hero.y, null, 1600);
+      showToast(`${state.pickup.nameZh || "仙桃"}掉了！「${lostZh}」散落在地上，快捡回来`, 2200);
+    }
     const kb = Game.MONSTER_AI.knockback;
     const away = clampWorld(hero.x - (monster.x - hero.x) * kb, hero.y - (monster.y - hero.y) * kb);
     hero.x = away.x;
@@ -1187,8 +1191,10 @@
 
   function updateOrbs() {
     if (state.carried) return;
+    const now = performance.now();
     state.orbs.forEach((orb) => {
       if (orb.el && orb.el.style.display !== "none") {
+        if (orb.pickGuardUntil && now < orb.pickGuardUntil) return; // 刚被撞掉的球：冷却中
         const d = Math.hypot(state.hero.x - orb.x, state.hero.y - orb.y);
         if (d < ORB_PICKUP) pickUp(orb);
       }
@@ -1232,7 +1238,7 @@
     }
   }
 
-  function dropOrbAt(x, y, orbRef) {
+  function dropOrbAt(x, y, orbRef, guardMs) {
     // Once a shot is created state.carried is cleared, so a miss must use the
     // orb reference captured by that shot rather than searching the HUD state.
     const orb = orbRef || state.orbs.find((o) => state.carried && o.zh === state.carried.zh && o.el.style.display === "none");
@@ -1241,6 +1247,9 @@
       orb.x = pos.x;
       orb.y = pos.y;
       orb.el.style.display = "";
+      // P1 张力包：被撞掉落的球有短暂拾取冷却——捡球半径远大于击退距离，
+      // 无冷却会被秒捡回，"掉球代价"形同虚设。投掷落空（无 guardMs）不受影响。
+      orb.pickGuardUntil = guardMs ? performance.now() + guardMs : 0;
       placeAt(orb.el, orb.x, orb.y);
     }
     state.carried = null;
@@ -2373,7 +2382,7 @@
       if (near && state.bossReady && !state.bossGateOpen && !state.bossNear) openBossGate();
       state.bossNear = near;
     }
-    if (state.mapStage !== "complete" && Game.shouldAutoIntro(FROM_BATTLE, state.introAutoPlayed)) {
+    if (false && Game.shouldAutoIntro(FROM_BATTLE, state.introAutoPlayed)) { // 禁用自动剧情：玩家自己点 NPC
       const introNpc = state.npcs.find((n) => n.role === "intro");
       if (introNpc) {
         const d = Math.hypot(state.hero.x - introNpc.x, state.hero.y - introNpc.y);

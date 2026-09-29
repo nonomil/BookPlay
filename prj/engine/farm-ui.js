@@ -127,24 +127,30 @@
   function inject() {
     const hud = document.querySelector(".game-hud");
     if (!hud) return;
+    // 词田 UI 方向已终止（2026-09-21 用户决策：主线回归打怪+对战）。
+    // 商店保留（金币买词球仍服务打怪循环）；恢复词田入口把 FARM_UI_ENABLED 改回 true。
+    const FARM_UI_ENABLED = false;
     const goldPill = document.createElement("div");
     goldPill.className = "game-pill";
     goldPill.setAttribute("aria-label", "金币");
     goldPill.innerHTML = "🪙 <strong id=\"farm-gold\">0</strong>";
-    const farmBtn = document.createElement("button");
-    farmBtn.type = "button";
-    farmBtn.className = "game-hudbtn";
-    farmBtn.id = "farm-open";
-    farmBtn.tabIndex = 0;
-    farmBtn.textContent = "🌱 词田";
+    hud.insertBefore(goldPill, hud.querySelector(".game-exit"));
+    let farmBtn = null;
+    if (FARM_UI_ENABLED) {
+      farmBtn = document.createElement("button");
+      farmBtn.type = "button";
+      farmBtn.className = "game-hudbtn";
+      farmBtn.id = "farm-open";
+      farmBtn.tabIndex = 0;
+      farmBtn.textContent = "🌱 词田";
+      hud.insertBefore(farmBtn, hud.querySelector(".game-exit"));
+    }
     const shopBtn = document.createElement("button");
     shopBtn.type = "button";
     shopBtn.className = "game-hudbtn";
     shopBtn.id = "shop-open";
     shopBtn.tabIndex = 0;
     shopBtn.textContent = "🏪 商店";
-    hud.insertBefore(goldPill, hud.querySelector(".game-exit"));
-    hud.insertBefore(farmBtn, hud.querySelector(".game-exit"));
     hud.insertBefore(shopBtn, hud.querySelector(".game-exit"));
 
     const root = document.getElementById("game-root") || document.body;
@@ -154,7 +160,7 @@
     els.panel.hidden = true;
     root.appendChild(els.panel);
 
-    farmBtn.addEventListener("click", () => openPanel("farm"));
+    if (farmBtn) farmBtn.addEventListener("click", () => openPanel("farm"));
     shopBtn.addEventListener("click", () => openPanel("shop"));
   }
 

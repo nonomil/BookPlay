@@ -261,14 +261,16 @@ test("facingFromIntent：主轴定四向，斜向不另开方向", () => {
   assert.equal(core.facingFromIntent(0, 0), null);
 });
 
-test("movementSpeeds：主角保持儿童走速，小怪追击明显更慢", () => {
+test("movementSpeeds：主角儿童走速，追击 58% 有威胁但甩得开（P1 张力包）", () => {
   assert.deepEqual(core.MOVEMENT_SPEEDS, {
     hero: 0.38,
     monsterWander: 0.04,
-    monsterChase: 0.07,
+    monsterChase: 0.22,
   });
   assert.ok(core.MOVEMENT_SPEEDS.hero >= 0.3 && core.MOVEMENT_SPEEDS.hero <= 0.5, "主角约 2.5s 走完一屏（儿童从容节奏）");
-  assert.ok(core.MOVEMENT_SPEEDS.monsterChase < core.MOVEMENT_SPEEDS.hero * 0.55, "追击不超过主角一半多，孩子能风筝");
+  assert.ok(core.MOVEMENT_SPEEDS.monsterChase > core.MOVEMENT_SPEEDS.hero * 0.5, "追击过半速：走神会被贴身");
+  assert.ok(core.MOVEMENT_SPEEDS.monsterChase < core.MOVEMENT_SPEEDS.hero * 0.75, "但不满速：走位仍能风筝");
+  assert.ok(core.MONSTER_AI.aggro >= 0.28, "察觉半径足够远，追击有预警");
   assert.ok(core.MOVEMENT_SPEEDS.monsterWander < core.MOVEMENT_SPEEDS.monsterChase);
 });
 

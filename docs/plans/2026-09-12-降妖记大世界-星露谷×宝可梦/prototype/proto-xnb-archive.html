@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>原型·星露谷×宝可梦（世界探索版） | 豆豆龙英语</title>
+<style>
+  :root {
+    --paper: #fdf6e3;
+    --gold: #ffd24a;
+    --water: #4aa3ff;
+    --chip: rgba(20, 16, 10, 0.78);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+  html, body { height: 100%; overflow: hidden; }
+  body { font-family: "PingFang SC", "Microsoft YaHei", sans-serif; background: #171310; color: var(--paper); user-select: none; }
+  button { font: inherit; color: inherit; border: 0; background: none; cursor: pointer; }
+
+  /* ---------- 世界 ---------- */
+  #world {
+    position: absolute; top: 0; left: 0; height: 100%; width: 266.7%; /* 1920/720 世界 */
+    background-image: url('../assets/game-backgrounds/ep1.jpg');
+    background-size: 50% 100%; background-repeat: repeat-x;
+    will-change: transform;
+  }
+  .actor { position: absolute; transform: translate(-50%, -100%); }
+  .actor img { display: block; }
+  #hero img { height: 132px; filter: drop-shadow(0 10px 10px rgba(0,0,0,.35)); }
+  #wild img { height: 96px; filter: drop-shadow(0 6px 8px rgba(0,0,0,.4)); }
+  .label { position: absolute; left: 50%; bottom: 100%; transform: translateX(-50%);
+    background: var(--chip); border-radius: 999px; padding: 4px 12px; font-size: 13px;
+    font-weight: 700; white-space: nowrap; margin-bottom: 6px; backdrop-filter: blur(6px); }
+  .bubble { position: absolute; left: 50%; bottom: 100%; transform: translateX(-50%);
+    background: var(--gold); color: #1c1508; border-radius: 999px; padding: 5px 14px;
+    font-size: 14px; font-weight: 900; white-space: nowrap; margin-bottom: 44px;
+    box-shadow: 0 0 16px rgba(255,210,74,.7); animation: bob 1s ease-in-out infinite; display: none; }
+  .bubble.on { display: block; }
+  @keyframes bob { 0%,100% { transform: translateX(-50%) translateY(0); } 50% { transform: translateX(-50%) translateY(-6px); } }
+
+  #farmplots { position: absolute; display: grid; grid-template-columns: repeat(3, 120px); gap: 10px; transform-origin: 0 0; }
+  .plot { position: relative; width: 120px; height: 88px; border-radius: 12px;
+    background: linear-gradient(180deg, #6b4a2b, #4c3018);
+    box-shadow: inset 0 3px 0 rgba(255,255,255,.12), inset 0 -4px 0 rgba(0,0,0,.3), 0 3px 8px rgba(0,0,0,.4);
+    border: 3px dashed transparent; display: flex; align-items: center; justify-content: center;
+    transition: transform .12s; cursor: pointer; }
+  .plot:active { transform: scale(.96); }
+  .plot.empty { border-color: rgba(255,246,214,.4); }
+  .plot.empty::after { content: "＋"; font-size: 26px; color: rgba(255,246,214,.55); }
+  .plot img.crop { width: 62px; height: 62px; object-fit: cover; border-radius: 8px;
+    border: 3px solid var(--gold); box-shadow: 0 0 14px rgba(255,210,74,.65); animation: crop-pop .4s ease-out; }
+  @keyframes crop-pop { 0% { transform: scale(.3); } 70% { transform: scale(1.12); } 100% { transform: scale(1); } }
+  .plot .crop-term { position: absolute; left: 50%; bottom: 3px; transform: translateX(-50%);
+    background: var(--chip); border-radius: 999px; padding: 2px 10px; font-size: 12px; font-weight: 700; white-space: nowrap; }
+  .plot .pips { position: absolute; top: 5px; left: 7px; display: flex; gap: 4px; }
+  .plot .pip { width: 9px; height: 9px; border-radius: 50%; background: rgba(255,255,255,.22); }
+  .plot .pip.on { background: var(--water); box-shadow: 0 0 6px var(--water); }
+  .plot.watered::before { content: "💧"; position: absolute; top: 3px; right: 7px; font-size: 14px; }
+  .plot.sprout-s1 { font-size: 34px; }
+  .plot .sprout { font-size: 36px; filter: drop-shadow(0 3px 3px rgba(0,0,0,.4)); }
+
+  /* ---------- HUD ---------- */
+  #hud { position: fixed; inset: 0 0 auto 0; z-index: 30; display: flex; align-items: center; gap: 8px; padding: 10px 12px; pointer-events: none; }
+  .chip { display: inline-flex; align-items: center; gap: 6px; background: var(--chip); border-radius: 999px;
+    padding: 7px 14px; font-size: 15px; font-weight: 600; backdrop-filter: blur(6px); }
+  .chip b { color: var(--gold); }
+  #daybar { width: 72px; height: 6px; border-radius: 3px; background: rgba(255,255,255,.18); overflow: hidden; }
+  #dayfill { height: 100%; width: 0%; background: linear-gradient(90deg, #ffd24a, #ff9d4a); }
+  #watercan { pointer-events: auto; margin-left: auto; width: 54px; height: 54px; border-radius: 50%;
+    font-size: 25px; background: var(--chip); backdrop-filter: blur(6px); }
+  #watercan.on { outline: 3px solid var(--water); }
+
+  #quest { position: fixed; top: 58px; left: 50%; transform: translateX(-50%); z-index: 30;
+    background: linear-gradient(180deg, rgba(64,50,20,.92), rgba(38,29,12,.92));
+    border: 1px solid rgba(255,210,74,.5); border-radius: 14px; padding: 9px 20px;
+    font-size: 15px; font-weight: 700; text-align: center; box-shadow: 0 4px 14px rgba(0,0,0,.5);
+    max-width: min(86vw, 620px); transition: opacity .3s; }
+  #quest .qk { color: var(--gold); margin-right: 6px; }
+  #quest.done { opacity: 0; }
+  #toasts { position: fixed; left: 50%; bottom: 26px; transform: translateX(-50%); z-index: 70;
+    display: flex; flex-direction: column; align-items: center; gap: 8px; pointer-events: none; }
+  .toast { background: var(--chip); padding: 9px 20px; border-radius: 999px; font-size: 14px;
+    font-weight: 600; backdrop-filter: blur(6px); animation: toastin .25s ease-out; white-space: nowrap; }
+  @keyframes toastin { from { opacity: 0; transform: translateY(10px); } }
+
+  /* ---------- 浮层 ---------- */
+  .overlay { position: fixed; inset: 0; z-index: 40; display: none; align-items: center; justify-content: center;
+    background: rgba(8,6,3,.55); backdrop-filter: blur(2px); }
+  .overlay.on { display: flex; }
+  .panel { position: relative; background: linear-gradient(180deg, rgba(46,38,24,.96), rgba(26,20,12,.96));
+    border: 1px solid rgba(255,246,214,.2); border-radius: 20px; padding: 18px 20px 16px;
+    max-width: min(94vw, 860px); max-height: 88vh; overflow: auto; }
+  .panel h2 { font-size: 17px; margin-bottom: 10px; }
+  .closex { position: absolute; top: 10px; right: 12px; width: 34px; height: 34px;
+    border-radius: 50%; background: var(--chip); font-size: 15px; font-weight: 900; z-index: 5; }
+  .hintline { font-size: 12px; opacity: .8; margin-bottom: 10px; line-height: 1.6; }
+
+  #seeds { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 12px; }
+  .seed { display: flex; align-items: center; gap: 8px; background: var(--chip); border-radius: 12px; padding: 6px 10px; }
+  .seed img { width: 32px; height: 32px; border-radius: 8px; object-fit: cover; }
+  .seed .t { font-size: 13px; font-weight: 700; }
+  .seed .z { font-size: 11px; opacity: .7; }
+  .seed.on { outline: 2px solid var(--gold); }
+
+  #dex-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(126px, 1fr)); gap: 12px; }
+  .dcard { position: relative; border-radius: 14px; padding: 12px 8px 10px; text-align: center;
+    background: linear-gradient(180deg, rgba(48,40,26,.92), rgba(28,22,14,.92));
+    border: 1px solid rgba(255,246,214,.16); cursor: pointer; transition: transform .12s; }
+  .dcard:active { transform: scale(.96); }
+  .dcard img.mon { width: 78px; height: 78px; object-fit: contain; }
+  .dcard.locked img.mon { filter: brightness(0) contrast(0) drop-shadow(0 0 6px rgba(255,255,255,.25)); opacity: .5; }
+  .dcard .nm { font-size: 13px; font-weight: 700; margin-top: 4px; }
+  .dcard .frame { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: fill; pointer-events: none; }
+  .badge { display: inline-block; padding: 2px 10px; border-radius: 999px; font-size: 11px; font-weight: 700; color: #1c1508; }
+  .dcard .q { position: absolute; top: 6px; right: 9px; font-size: 16px; opacity: .8; }
+
+  #detail { z-index: 60; }
+  #detail-card { position: relative; width: 258px; border-radius: 18px; padding: 20px 16px 16px; text-align: center;
+    background: linear-gradient(180deg, #2f3a2c, #1c2419); }
+  #detail-card .frame { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: fill; pointer-events: none; }
+  #detail-card > *:not(.frame) { position: relative; z-index: 2; }
+  #detail-card img.mon { width: 122px; height: 122px; object-fit: contain; filter: drop-shadow(0 6px 10px rgba(0,0,0,.5)); }
+  #detail-card h3 { font-size: 20px; margin: 6px 0 8px; }
+  #ring { width: 124px; height: 124px; margin: 8px auto; }
+  .evo-line { font-size: 12px; opacity: .85; margin-top: 8px; }
+  #detail-close { margin-top: 10px; background: var(--chip); border-radius: 999px; padding: 8px 22px; font-weight: 700; }
+
+  #ov-battle .panel { min-width: min(92vw, 700px); }
+  .bpick { display: flex; flex-direction: column; align-items: center; gap: 10px; }
+  .bpick h2 { font-size: 16px; }
+  #enemy-scout { display: flex; align-items: center; gap: 12px; background: var(--chip); border-radius: 16px; padding: 8px 16px; }
+  #enemy-scout img { width: 64px; height: 64px; object-fit: contain; }
+  #helpers { display: flex; gap: 10px; }
+  .helper { width: 116px; background: var(--chip); border-radius: 14px; padding: 8px 6px; text-align: center; }
+  .helper img { width: 62px; height: 62px; object-fit: contain; }
+  .helper .nm { font-size: 13px; font-weight: 700; margin-top: 2px; }
+  .helper .hint { font-size: 11px; margin-top: 3px; opacity: .75; }
+  .helper:hover { outline: 2px solid var(--gold); }
+  #arena { display: none; flex-direction: column; }
+  #arena.on { display: flex; }
+  .fighter-row { display: flex; justify-content: space-between; align-items: flex-start; }
+  .fighter { width: 215px; }
+  .fighter .hpbar { height: 13px; border-radius: 7px; background: rgba(255,255,255,.16); overflow: hidden; }
+  .fighter .hpfill { height: 100%; border-radius: 7px; background: linear-gradient(90deg, #6fdc6f, #2f9e44); transition: width .45s cubic-bezier(.2,.8,.2,1); }
+  .fighter .hpfill.low { background: linear-gradient(90deg, #ffb04a, #e8590c); }
+  .fighter .nmrow { display: flex; justify-content: space-between; font-size: 13px; font-weight: 700; margin-bottom: 4px; }
+  .fighter .spr { width: 100px; height: 100px; object-fit: contain; margin-top: 4px; filter: drop-shadow(0 8px 12px rgba(0,0,0,.5)); }
+  .fighter.right { text-align: right; }
+  .fighter.right .nmrow { flex-direction: row-reverse; }
+  #moves { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-top: 10px; }
+  .move { background: var(--chip); border-radius: 14px; padding: 10px 6px; text-align: center;
+    border: 1px solid rgba(255,246,214,.14); }
+  .move:disabled { opacity: .38; cursor: default; }
+  .move .mn { font-size: 14px; font-weight: 800; }
+  .move .md { font-size: 11px; opacity: .75; margin-top: 3px; }
+  #energy { display: flex; gap: 5px; justify-content: center; margin: 8px 0 4px; }
+  #energy .ep { width: 13px; height: 13px; border-radius: 50%; background: rgba(255,255,255,.16); }
+  #energy .ep.on { background: #6fd3ff; box-shadow: 0 0 8px #6fd3ff; }
+  #combo { text-align: center; font-size: 12px; opacity: .8; height: 15px; }
+
+  .float { position: fixed; z-index: 80; font-size: 26px; font-weight: 900; pointer-events: none;
+    text-shadow: 0 2px 6px rgba(0,0,0,.6); animation: floatup 1s ease-out forwards; }
+  @keyframes floatup { 0% { transform: translateY(0); opacity: 1; } 100% { transform: translateY(-64px); opacity: 0; } }
+  .float.strong { color: #7dff8e; }
+  .float.weak { color: #b9b9b9; }
+  .float.plain { color: #ffe9b0; }
+</style>
+</head>
+<body>
+
+<div id="world">
+  <div class="actor" id="farm-sign"><span style="font-size:58px">🪧</span><span class="label">🌱 词田</span><span class="bubble" id="bb-farm">E · 耕种</span></div>
+  <div class="actor" id="dexsign"><span style="font-size:58px">📖</span><span class="label">石碑·图鉴</span><span class="bubble" id="bb-dex">E · 图鉴</span></div>
+  <div class="actor" id="wild"><img src="../assets/game-sprites/chaosdemon-minion/chaosdemon-minion-south-idle.png" alt=""><span class="label">野生水妖</span><span class="bubble" id="bb-wild">E · 切磋</span></div>
+  <div id="farmplots"></div>
+  <div class="actor" id="hero"><img src="../assets/generated/jttw-player-walkers/wukong/directions/wukong-south-idle.png" alt=""><span class="bubble" id="bb-move">← → 走动</span></div>
+</div>
+
+<header id="hud">
+  <span class="chip">🪙 <b id="hud-gold">12</b></span>
+  <span class="chip">🎴 <b id="hud-cards">3</b></span>
+  <span class="chip">🌅 <b id="hud-day">1</b> <span id="daybar"><span id="dayfill"></span></span></span>
+  <button id="watercan" title="浇水模式">💧</button>
+</header>
+<div id="quest"><span class="qk">🎯</span><span id="quest-text"></span></div>
+<div id="toasts"></div>
+
+<!-- 词田说明+选种浮层 -->
+<div class="overlay" id="ov-farmhelp">
+  <div class="panel">
+    <button class="closex" data-close="ov-farmhelp">✕</button>
+    <h2>🌱 词田怎么种？</h2>
+    <div class="hintline">
+      1️⃣ 下面选一张词种 &nbsp;→&nbsp; 2️⃣ 点田里空地播种 &nbsp;→&nbsp; 3️⃣ 点右上 💧，再点田里的小苗浇水<br>
+      每天只能浇一次，浇满 2 天成熟 &nbsp;→&nbsp; 4️⃣ 点成熟的图，收获词卡+金币！
+    </div>
+    <div id="seeds"></div>
+    <button style="background:var(--chip);border-radius:999px;padding:8px 22px;font-weight:700" data-close="ov-farmhelp">去耕种 →</button>
+  </div>
+</div>
+
+<!-- 图鉴浮层 -->
+<div class="overlay" id="ov-dex">
+  <div class="panel" style="width:min(94vw,760px)">
+    <button class="closex" data-close="ov-dex">✕</button>
+    <h2>📖 妖怪图鉴</h2>
+    <div class="hintline">点卡片看详情：属性克制一查便知</div>
+    <div id="dex-grid"></div>
+  </div>
+</div>
+
+<!-- 图鉴详情 -->
+<div class="overlay" id="detail">
+  <div id="detail-card">
+    <img class="frame" id="detail-frame" alt="">
+    <img class="mon" id="detail-mon" alt="">
+    <h3 id="detail-name"></h3>
+    <span class="badge" id="detail-el"></span>
+    <svg id="ring" viewBox="0 0 128 128"></svg>
+    <div class="evo-line" id="detail-evo"></div>
+    <button id="detail-close">关 闭</button>
+  </div>
+</div>
+
+<!-- 战斗浮层 -->
+<div class="overlay" id="ov-battle">
+  <div class="panel">
+    <button class="closex" id="battle-close" data-close="ov-battle" style="display:none">✕</button>
+    <div class="bpick" id="bpick">
+      <h2>野生的水妖拦住了去路！派谁出战？</h2>
+      <div id="enemy-scout"></div>
+      <div id="helpers"></div>
+      <div style="font-size:12px;opacity:.75">提示：小猴子是林系——林克水，正克制！</div>
+    </div>
+    <div id="arena">
+      <div class="fighter-row">
+        <div class="fighter">
+          <div class="nmrow"><span id="p-name">—</span><span id="p-hpnum"></span></div>
+          <div class="hpbar"><div class="hpfill" id="p-hpfill"></div></div>
+          <img class="spr" id="p-spr" alt="">
+        </div>
+        <div class="fighter right">
+          <div class="nmrow"><span id="e-name">—</span><span id="e-hpnum"></span></div>
+          <div class="hpbar"><div class="hpfill" id="e-hpfill"></div></div>
+          <img class="spr" id="e-spr" alt="">
+        </div>
+      </div>
+      <div id="combo"></div>
+      <div id="energy"></div>
+      <div id="moves"></div>
+    </div>
+  </div>
+</div>
+
+<script src="combat-core.js"></script>
+<script src="farm-core.js"></script>
+<script>
+"use strict";
+(function () {
+  /* ================= 数据 ================= */
+  const ELEMENTS = {
+    strongMult: 1.3, weakMult: 0.75,
+    elements: {
+      water: { strong: "fire", weak: "forest" },
+      fire: { strong: "light", weak: "water" },
+      light: { strong: "earth", weak: "fire" },
+      earth: { strong: "forest", weak: "light" },
+      forest: { strong: "water", weak: "earth" },
+    },
+  };
+  const EL_ZH = { water: "水", fire: "火", light: "光", earth: "土", forest: "林" };
+  const EL_COLOR = { water: "#4aa3ff", fire: "#ff6b4a", light: "#ffd24a", earth: "#b98a4a", forest: "#58c96b" };
+  const RING_ORDER = ["water", "fire", "light", "earth", "forest"];
+  const MOVES = {
+    "sonic-wave": { id: "sonic-wave", label: "音波功", power: 1.0, cooldown: 0, energyCost: 0 },
+    "fire-eyes": { id: "fire-eyes", label: "火眼金睛", power: 1.2, cooldown: 1, energyCost: 1 },
+    "demon-mirror": { id: "demon-mirror", label: "照妖镜", power: 1.5, cooldown: 2, energyCost: 2 },
+    "somersault-cloud": { id: "somersault-cloud", label: "筋斗云", power: 1.3, cooldown: 2, energyCost: 2, heal: 0.5 },
+  };
+  const SPRITES = {
+    "monkey-minor": "../assets/game-sprites/monkey-minor/monkey-minor-south-idle.png",
+    "subodhi-disciple": "../assets/game-sprites/subodhi-disciple/subodhi-disciple-south-idle.png",
+    "chaosdemon-minion": "../assets/game-sprites/chaosdemon-minion/chaosdemon-minion-south-idle.png",
+    "dragonking-soldier": "../assets/game-sprites/dragonking-soldier/dragonking-soldier-south-idle.png",
+    "underworld-clerk": "../assets/game-sprites/underworld-clerk/underworld-clerk-south-idle.png",
+    "imp": "../assets/game-sprites/imp/imp-south-idle.png",
+    "chaosdemon": "../assets/generated/jttw-player-walkers/chaosdemon/directions/chaosdemon-south-idle.png",
+  };
+  const spr = (id) => SPRITES[id] || SPRITES.imp;
+  const WUKONG = {
+    idle: "../assets/generated/jttw-player-walkers/wukong/directions/wukong-south-idle.png",
+    walkE: "../assets/generated/jttw-player-walkers/wukong/directions/wukong-east-walk.gif",
+    walkW: "../assets/generated/jttw-player-walkers/wukong/directions/wukong-west-walk.gif",
+  };
+  const DEX = [
+    { id: "chaosdemon-minion", nameZh: "水妖", element: "water", tier: 1, evolution: { to: "chaosdemon", requireWords: 6 } },
+    { id: "monkey-minor", nameZh: "小猴子", element: "forest", tier: 1, evolution: null },
+    { id: "subodhi-disciple", nameZh: "道童", element: "light", tier: 1, evolution: null },
+    { id: "dragonking-soldier", nameZh: "虾兵", element: "water", tier: 1, evolution: null },
+    { id: "underworld-clerk", nameZh: "阴差", element: "earth", tier: 1, evolution: null },
+    { id: "imp", nameZh: "小妖", element: "earth", tier: 1, evolution: null },
+    { id: "chaosdemon", nameZh: "混世魔王", element: "water", tier: 2, evolution: null },
+  ];
+  const caught = new Set(["monkey-minor", "subodhi-disciple", "dragonking-soldier", "underworld-clerk", "imp"]);
+  const SEED_WORDS = [
+    { term: "demon", zh: "恶魔", img: "../assets/adv_frames/ep5/f0.jpg" },
+    { term: "revenge", zh: "报复", img: "../assets/adv_frames/ep5/f1.jpg" },
+    { term: "gloomy", zh: "阴暗的", img: "../assets/adv_frames/ep5/f2.jpg" },
+    { term: "amazement", zh: "惊愕", img: "../assets/adv_frames/ep5/f3.jpg" },
+  ];
+  const FARM_CFG = { plots: 6, crop: { growDays: 2, witherDays: 3, harvest: { wordCard: 1, gold: 4 } } };
+
+  /* ================= 状态 ================= */
+  const WORLD_W = 1920, WORLD_H = 720;
+  const S = {
+    gold: 12, cards: 3, day: 1, dayMs: 24000, dayStart: performance.now(),
+    farm: { plots: window.BookPlayFarmCore.createPlots(FARM_CFG) },
+    selSeed: null, waterMode: false,
+    hero: { x: 430, y: 700, moving: false, face: 1 },
+    wild: { x: 1560 },
+    farmPos: { x: 150, y: 480 },   // 词田地块区左上（世界坐标）
+    farmSign: { x: 560, y: 700 },
+    dexPos: { x: 1010, y: 690 },
+    locked: false,
+    held: new Set(),
+    cam: 0, quest: 0,
+    battle: null, busy: false,
+    last: performance.now(),
+  };
+
+  const $ = (s) => document.querySelector(s);
+  const worldEl = $("#world"), heroEl = $("#hero"), wildEl = $("#wild"),
+    farmSignEl = $("#farm-sign"), dexEl = $("#dexsign"),
+    farmWrap = $("#farmplots"), heroImg = heroEl.querySelector("img");
+  const bubbles = { farm: $("#bb-farm"), dex: $("#bb-dex"), wild: $("#bb-wild"), move: $("#bb-move") };
+
+  function toast(msg, ms) {
+    const el = document.createElement("div");
+    el.className = "toast";
+    el.textContent = msg;
+    $("#toasts").appendChild(el);
+    setTimeout(() => el.remove(), ms || 2000);
+  }
+  function floatAt(el, text, cls) {
+    const r = el.getBoundingClientRect();
+    const d = document.createElement("div");
+    d.className = "float " + (cls || "plain");
+    d.textContent = text;
+    d.style.left = (r.left + r.width / 2 - 20) + "px";
+    d.style.top = (r.top + r.height / 3) + "px";
+    document.body.appendChild(d);
+    setTimeout(() => d.remove(), 1000);
+  }
+
+  /* ================= 任务引导 ================= */
+  const QUESTS = [
+    "按 ← → 方向键，走到左边的 🪧词田",
+    "先点一下田边的木牌看怎么种（会教你选词种）",
+    "选好词种后，点田里空地播种",
+    "点右上角 💧 浇水模式，再点田里的小苗（每天一次）",
+    "等明天（顶部太阳走完）再浇一次就成熟",
+    "点成熟的图收获：+1 词卡 +4 金币！",
+    "走到中间的 📖 石碑，看看你的图鉴",
+    "走到最右边，打赢野生水妖（林克水！）",
+    "🎉 完成！继续经营词田、收集妖怪吧",
+  ];
+  function quest(n) {
+    if (n !== undefined) S.quest = n;
+    const q = $("#quest");
+    q.classList.remove("done");
+    $("#quest-text").textContent = QUESTS[Math.min(S.quest, QUESTS.length - 1)];
+  }
+  // 幂等前进：做到哪一步就推进到哪（只前进不后退，乱序操作也健壮）
+  function questAdvance(target) {
+    if (S.quest >= target) return;
+    S.quest = target;
+    $("#quest").classList.add("done");
+    setTimeout(() => quest(S.quest), 450);
+  }
+
+  /* ================= 浮层 ================= */
+  function openOverlay(id) {
+    document.querySelectorAll(".overlay").forEach((o) => o.classList.remove("on"));
+    $("#" + id).classList.add("on");
+    S.locked = true;
+  }
+  function closeOverlays() {
+    document.querySelectorAll(".overlay").forEach((o) => o.classList.remove("on"));
+    S.locked = false;
+  }
+  document.querySelectorAll("[data-close]").forEach((b) => {
+    b.addEventListener("click", () => closeOverlays());
+  });
+  $("#detail-close").addEventListener("click", () => closeOverlays());
+
+  /* ================= 输入 ================= */
+  addEventListener("keydown", (ev) => {
+    if (ev.repeat) return;
+    const k = ev.key;
+    if (k === "Escape") { closeOverlays(); return; }
+    if (k === "e" || k === "E" || k === " " || k === "Enter") { tryInteract(); return; }
+    if (["ArrowLeft", "ArrowRight", "a", "d", "A", "D"].includes(k)) {
+      S.held.add(k.toLowerCase() === "a" || k === "ArrowLeft" ? "L" : "R");
+      ev.preventDefault();
+    }
+  });
+  addEventListener("keyup", (ev) => {
+    const k = ev.key;
+    if (["ArrowLeft", "a", "A"].includes(k)) S.held.delete("L");
+    if (["ArrowRight", "d", "D"].includes(k)) S.held.delete("R");
+  });
+  addEventListener("blur", () => S.held.clear());
+
+  // 手机/鼠标：点地面左右走（点在主角左侧/右侧）
+  worldEl.addEventListener("pointerdown", (ev) => {
+    if (S.locked) return;
+    const scale = innerHeight / WORLD_H;
+    const wx = (ev.clientX + S.cam) / scale;
+    S.held.clear();
+    S.held.add(wx < S.hero.x ? "L" : "R");
+    setTimeout(() => S.held.clear(), 700); // 点按走 0.7s
+  });
+
+  /* ================= 节点交互 ================= */
+  const NODES = [
+    { key: "farm", x: () => S.farmSign.x, el: () => farmSignEl, act: farmNode },
+    { key: "dex", x: () => S.dexPos.x, el: () => dexEl, act: dexNode },
+    { key: "wild", x: () => S.wild.x, el: () => wildEl, act: wildNode },
+  ];
+  let nearNode = null;
+
+  function tryInteract() {
+    if (S.locked) return;
+    if (nearNode) nearNode.act();
+    else if (S.quest <= 1) { openOverlay("ov-farmhelp"); questAdvance(2); }
+  }
+  function farmNode() {
+    openOverlay("ov-farmhelp");
+    questAdvance(2);
+  }
+  function dexNode() {
+    renderDex();
+    openOverlay("ov-dex");
+    questAdvance(7);
+  }
+  function wildNode() {
+    if (S.quest === 7) startBattlePick();
+    else { renderBattlePick(); openOverlay("ov-battle"); }
+  }
+
+  /* ================= 词田 ================= */
+  function renderSeeds() {
+    const wrap = $("#seeds");
+    wrap.innerHTML = "";
+    SEED_WORDS.forEach((w) => {
+      const b = document.createElement("button");
+      b.className = "seed" + (S.selSeed === w.term ? " on" : "");
+      b.innerHTML = `<img src="${w.img}" alt=""><span><span class="t">${w.term}</span><br><span class="z">${w.zh}</span></span>`;
+      b.onclick = () => {
+        S.selSeed = S.selSeed === w.term ? null : w.term;
+        renderSeeds();
+        toast(S.selSeed ? `选好了「${w.term}」，点田里空地播种！` : "取消选择");
+      };
+      wrap.appendChild(b);
+    });
+  }
+
+  function plotHtml(p) {
+    const seedWord = SEED_WORDS.find((w) => w.term === p.word);
+    if (p.state === "grown") {
+      return `<img class="crop" src="${seedWord ? seedWord.img : ""}" alt=""><span class="crop-term">${p.word} ✓</span>`;
+    }
+    if (p.state === "planted") {
+      const pips = Array.from({ length: FARM_CFG.crop.growDays }, (_, i) =>
+        `<span class="pip ${i < p.progress ? "on" : ""}"></span>`).join("");
+      return `<span class="sprout">🌱</span><span class="pips">${pips}</span>`;
+    }
+    return "";
+  }
+
+  function renderPlots() {
+    farmWrap.innerHTML = "";
+    S.farm.plots.forEach((p) => {
+      const d = document.createElement("div");
+      d.className = "plot " + (p.state === "empty" ? "empty " : "") +
+        (p.state === "planted" && p.wateredDate === "d" + S.day ? "watered" : "");
+      d.innerHTML = plotHtml(p);
+      d.onclick = () => plotClick(p);
+      farmWrap.appendChild(d);
+    });
+  }
+
+  function plotClick(p) {
+    const F = window.BookPlayFarmCore;
+    if (S.waterMode && p.state === "planted") {
+      const r = F.water(S.farm, p.id, "d" + S.day, FARM_CFG);
+      if (r.ok) {
+        toast(r.grown ? "成熟啦！点它收获 🌾" : "浇好了，明天再来浇一次");
+        if (r.grown) questAdvance(5); else questAdvance(4);
+      } else if (r.reason === "watered") toast("今天浇过啦，明天再来 💧");
+      renderPlots();
+      return;
+    }
+    if (S.selSeed && p.state === "empty") {
+      const r = F.seed(S.farm, p.id, S.selSeed, "d" + S.day);
+      if (r.ok) {
+        toast(`「${S.selSeed}」种下了！点右上 💧 浇水`);
+        S.selSeed = null;
+        renderSeeds();
+        questAdvance(3);
+      }
+      renderPlots();
+      return;
+    }
+    if (p.state === "grown") {
+      const r = F.harvest(S.farm, p.id, FARM_CFG);
+      if (r.ok) {
+        S.cards += r.rewards.wordCard;
+        S.gold += r.rewards.gold;
+        $("#hud-cards").textContent = S.cards;
+        $("#hud-gold").textContent = S.gold;
+        floatAt(farmWrap, `+${r.rewards.wordCard}🎴 +${r.rewards.gold}🪙`, "strong");
+        questAdvance(6);
+      }
+      renderPlots();
+      return;
+    }
+    if (p.state === "planted") toast("要点右上 💧 开浇水模式，再点小苗");
+    else toast("先在木牌处选一张词种");
+  }
+
+  $("#watercan").onclick = () => {
+    S.waterMode = !S.waterMode;
+    $("#watercan").classList.toggle("on", S.waterMode);
+    toast(S.waterMode ? "浇水模式：点田里的小苗" : "浇水模式关闭");
+  };
+
+  /* ================= 图鉴 ================= */
+  function frameFor(tier) { return tier >= 2 ? "gold" : "bronze"; }
+
+  function renderDex() {
+    const grid = $("#dex-grid");
+    grid.innerHTML = "";
+    DEX.forEach((m) => {
+      const isCaught = caught.has(m.id);
+      const card = document.createElement("div");
+      card.className = "dcard" + (isCaught ? "" : " locked");
+      card.innerHTML = `
+        <img class="mon" src="${spr(m.id)}" alt="">
+        ${isCaught ? `<img class="frame" src="../assets/game-cards/frame-${frameFor(m.tier)}.png" alt="">` : `<span class="q">❓</span>`}
+        <div class="nm">${isCaught ? m.nameZh : "未捕获"}</div>
+        ${isCaught ? `<span class="badge" style="background:${EL_COLOR[m.element]}">${EL_ZH[m.element]}系</span>` : ""}`;
+      card.onclick = () => { if (isCaught) openDetail(m); else toast("打赢它就会加入图鉴！"); };
+      grid.appendChild(card);
+    });
+  }
+
+  function ringSvg(cur) {
+    const cx = 64, cy = 64, r = 46;
+    let out = "";
+    RING_ORDER.forEach((el, i) => {
+      const a = (i / RING_ORDER.length) * Math.PI * 2 - Math.PI / 2;
+      const x = cx + r * Math.cos(a), y = cy + r * Math.sin(a);
+      const isCur = el === cur;
+      const strong = ELEMENTS.elements[cur].strong === el;
+      const weak = ELEMENTS.elements[cur].weak === el;
+      out += `<circle cx="${x}" cy="${y}" r="${isCur ? 12 : 9}" fill="${EL_COLOR[el]}" opacity="${isCur ? 1 : 0.75}" ${strong ? 'stroke="#7dff8e" stroke-width="3"' : weak ? 'stroke="#ff8d7a" stroke-width="3"' : ""}/>`;
+      if (isCur) out += `<text x="${x}" y="${y + 4}" text-anchor="middle" font-size="10" fill="#1c1508" font-weight="700">我</text>`;
+    });
+    const si = RING_ORDER.indexOf(ELEMENTS.elements[cur].strong);
+    const sa = (si / 5) * Math.PI * 2 - Math.PI / 2;
+    const tx = cx + (r + 16) * Math.cos(sa), ty = cy + (r + 16) * Math.sin(sa);
+    out += `<text x="${tx}" y="${ty}" text-anchor="middle" font-size="10" fill="#7dff8e" font-weight="700">克×1.3</text>`;
+    return out;
+  }
+
+  function openDetail(m) {
+    $("#detail-mon").src = spr(m.id);
+    $("#detail-name").textContent = m.nameZh;
+    const el = $("#detail-el");
+    el.textContent = EL_ZH[m.element] + "系";
+    el.style.background = EL_COLOR[m.element];
+    $("#detail-frame").src = "../assets/game-cards/frame-" + (m.tier >= 2 ? "jade" : "silver") + ".png";
+    $("#ring").innerHTML = ringSvg(m.element);
+    $("#detail-evo").textContent = m.evolution
+      ? `进化：再收集 ${m.evolution.requireWords} 张词卡 → ${m.evolution.to === "chaosdemon" ? "混世魔王" : m.evolution.to}`
+      : (m.tier >= 2 ? "最终形态" : "无进化分支");
+    openOverlay("detail");
+  }
+
+  /* ================= 战斗 ================= */
+  const HELPERS = [
+    { id: "monkey-minor", nameZh: "小猴子", element: "forest" },
+    { id: "underworld-clerk", nameZh: "阴差", element: "earth" },
+    { id: "subodhi-disciple", nameZh: "道童", element: "light" },
+  ];
+  const ENEMY = { id: "chaosdemon-minion", nameZh: "野生水妖", element: "water", hp: 34 };
+
+  function renderBattlePick() {
+    $("#bpick").style.display = "flex";
+    $("#arena").classList.remove("on");
+    $("#battle-close").style.display = "";
+    $("#enemy-scout").innerHTML = `<img src="${spr(ENEMY.id)}" alt=""><div><div style="font-weight:800">${ENEMY.nameZh}</div><span class="badge" style="background:${EL_COLOR[ENEMY.element]}">${EL_ZH[ENEMY.element]}系</span></div>`;
+    const wrap = $("#helpers");
+    wrap.innerHTML = "";
+    HELPERS.forEach((h) => {
+      const b = document.createElement("button");
+      b.className = "helper";
+      b.innerHTML = `<img src="${spr(h.id)}" alt=""><div class="nm">${h.nameZh}</div><span class="badge" style="background:${EL_COLOR[h.element]}">${EL_ZH[h.element]}系</span><div class="hint">克制 ${EL_ZH[ELEMENTS.elements[h.element].strong]}系</div>`;
+      b.onclick = () => startBattle(h);
+      wrap.appendChild(b);
+    });
+  }
+  function startBattlePick() { renderBattlePick(); openOverlay("ov-battle"); }
+
+  function startBattle(helper) {
+    const CC = window.BookPlayCombatCore;
+    S.battle = CC.createBattle({
+      player: { id: helper.id, nameZh: helper.nameZh, element: helper.element, hp: 40 },
+      enemy: { id: "wild", nameZh: ENEMY.nameZh, element: ENEMY.element, hp: ENEMY.hp },
+      elements: ELEMENTS, moves: MOVES, seed: 20260921,
+    });
+    window.__b = S.battle;
+    $("#bpick").style.display = "none";
+    $("#battle-close").style.display = "none";
+    $("#arena").classList.add("on");
+    $("#p-name").textContent = helper.nameZh;
+    $("#e-name").textContent = ENEMY.nameZh;
+    $("#p-spr").src = spr(helper.id);
+    $("#e-spr").src = spr(ENEMY.id);
+    renderBattle();
+    toast(CC.elementMultiplier(ELEMENTS, helper.element, ENEMY.element) > 1
+      ? "属性克制 ×1.3！放招吧！" : "属性平平，靠连击补伤害！", 2400);
+  }
+
+  function renderBattle() {
+    const b = S.battle;
+    if (!b) return;
+    const pct = (f) => (100 * f.hp / f.maxHp).toFixed(1) + "%";
+    const pf = $("#p-hpfill"), ef = $("#e-hpfill");
+    pf.style.width = pct(b.player); pf.classList.toggle("low", b.player.hp / b.player.maxHp < 0.35);
+    ef.style.width = pct(b.enemy); ef.classList.toggle("low", b.enemy.hp / b.enemy.maxHp < 0.35);
+    $("#p-hpnum").textContent = b.player.hp + "/" + b.player.maxHp;
+    $("#e-hpnum").textContent = b.enemy.hp + "/" + b.enemy.maxHp;
+    $("#combo").textContent = b.combo.player > 1 ? `连击 ×${b.combo.player}` : "";
+    $("#energy").innerHTML = Array.from({ length: b.config.energyMax }, (_, i) =>
+      `<span class="ep ${i < b.energy.player ? "on" : ""}"></span>`).join("");
+    const CC = window.BookPlayCombatCore;
+    const avail = CC.availableMoves(b, "player");
+    const wrap = $("#moves");
+    wrap.innerHTML = "";
+    Object.values(MOVES).forEach((m) => {
+      const btn = document.createElement("button");
+      btn.className = "move";
+      const ok = avail.some((a) => a.id === m.id);
+      btn.disabled = !ok || S.busy || b.over;
+      const cd = b.cooldowns.player[m.id] > 0 ? `冷却${b.cooldowns.player[m.id]}回合` : `体力${m.energyCost}`;
+      btn.innerHTML = `<div class="mn">${m.label}</div><div class="md">威力×${m.power}${m.heal ? " · 吸血" : ""}<br>${cd}</div>`;
+      btn.onclick = () => playerMove(m.id);
+      wrap.appendChild(btn);
+    });
+  }
+
+  function playerMove(moveId) {
+    const CC = window.BookPlayCombatCore;
+    if (S.busy || !S.battle || S.battle.over) return;
+    S.busy = true;
+    const events = CC.resolveTurn(S.battle, moveId, true); // 正式版：answer 接真实答题
+    const ev = events[events.length - 1] || {};
+    if (ev.hit) floatAt($("#e-spr"), `-${ev.dmg} ${ev.mult > 1.05 ? "克制!" : ev.mult < 0.95 ? "被克…" : ""}`,
+      ev.mult > 1.05 ? "strong" : ev.mult < 0.95 ? "weak" : "plain");
+    renderBattle();
+    if (S.battle.over) return finishBattle();
+    setTimeout(enemyMove, 750);
+  }
+
+  function enemyMove() {
+    const CC = window.BookPlayCombatCore;
+    if (!S.battle || S.battle.over) return;
+    const events = CC.enemyTurn(S.battle);
+    const ev = events[events.length - 1] || {};
+    if (ev.hit) floatAt($("#p-spr"), `-${ev.dmg}`, ev.mult > 1.05 ? "strong" : "weak");
+    S.busy = false; // 先解锁再渲染，否则按钮永远禁用
+    renderBattle();
+    if (S.battle.over) finishBattle();
+  }
+
+  function finishBattle() {
+    const CC = window.BookPlayCombatCore;
+    const b = S.battle;
+    const r = CC.result(b);
+    $("#battle-close").style.display = "";
+    if (r.win) {
+      toast(`打赢啦！经验 +${r.expGain}，水妖加入图鉴！`, 3000);
+      if (!caught.has(ENEMY.id)) {
+        caught.add(ENEMY.id);
+        S.gold += 8;
+        $("#hud-gold").textContent = S.gold;
+      }
+      wildEl.style.opacity = "0.35";
+      questAdvance(8);
+    } else {
+      toast("被打输了…换个克制系的再试试？", 2600);
+    }
+    S.busy = false;
+  }
+
+  /* ================= 加速时钟 ================= */
+  setInterval(() => {
+    const elapsed = performance.now() - S.dayStart;
+    if (elapsed >= S.dayMs) {
+      S.dayStart = performance.now();
+      S.day += 1;
+      $("#hud-day").textContent = S.day;
+      window.BookPlayFarmCore.witherCheck(S.farm, "d" + S.day, FARM_CFG);
+      renderPlots();
+      if (S.quest === 4) toast("新的一天！去给小苗浇第二次水 🌱", 2600);
+    }
+    $("#dayfill").style.width = Math.min(100, (elapsed / S.dayMs) * 100) + "%";
+  }, 400);
+
+  /* ================= 主循环 ================= */
+  const SPEED = 320; // 世界px/秒（世界宽1920 ≈ 2.7屏 → 约6s横穿，从容）
+  function step(now) {
+    const dt = Math.min(120, Math.max(1, now - S.last));
+    S.last = now;
+    const scale = innerHeight / WORLD_H;
+
+    // 移动
+    let dir = 0;
+    if (!S.locked) {
+      if (S.held.has("L")) dir = -1;
+      if (S.held.has("R")) dir = 1;
+    }
+    if (dir !== 0) {
+      S.hero.x = Math.max(60, Math.min(WORLD_W - 60, S.hero.x + dir * SPEED * dt / 1000));
+      S.hero.face = dir;
+      S.hero.moving = true;
+    } else {
+      S.hero.moving = false;
+    }
+    const gif = S.hero.moving ? (dir > 0 ? WUKONG.walkE : WUKONG.walkW) : WUKONG.idle;
+    if (heroImg.getAttribute("src") !== gif) heroImg.src = gif;
+
+    // 小妖巡逻
+    S.wild.x += Math.sin(now / 1600) * 0.5;
+
+    // 布置世界元素（世界坐标×scale，减镜头）
+    heroEl.style.left = (S.hero.x * scale - S.cam) + "px";
+    heroEl.style.top = (S.hero.y * scale) + "px";
+    wildEl.style.left = (S.wild.x * scale - S.cam) + "px";
+    wildEl.style.top = (650 * scale + Math.sin(now / 700) * 6) + "px";
+    farmWrap.style.left = (S.farmPos.x * scale - S.cam) + "px";
+    farmWrap.style.top = (S.farmPos.y * scale) + "px";
+    farmWrap.style.transform = `scale(${scale})`;
+    farmSignEl.style.left = (S.farmSign.x * scale - S.cam) + "px";
+    farmSignEl.style.top = (S.farmSign.y * scale) + "px";
+    dexEl.style.left = (S.dexPos.x * scale - S.cam) + "px";
+    dexEl.style.top = (S.dexPos.y * scale) + "px";
+
+    // 镜头：主角居中，钳制世界边界
+    const vw = innerWidth;
+    const target = Math.max(0, Math.min(WORLD_W * scale - vw, S.hero.x * scale - vw / 2));
+    S.cam += (target - S.cam) * Math.min(1, dt / 120);
+
+    // 最近节点气泡
+    nearNode = null;
+    let best = 1e9;
+    NODES.forEach((n) => {
+      const d = Math.abs(n.x() - S.hero.x);
+      if (d < 150 * scale / (innerHeight / WORLD_H) && d < best) { best = d; nearNode = n; }
+    });
+    if (nearNode === NODES[0]) questAdvance(1);
+    bubbles.farm.classList.toggle("on", nearNode === NODES[0]);
+    bubbles.dex.classList.toggle("on", nearNode === NODES[1]);
+    bubbles.wild.classList.toggle("on", nearNode === NODES[2]);
+    bubbles.move.classList.toggle("on", S.quest === 0 && !S.hero.moving);
+  }
+  // 后台标签 rAF 冻结兜底：interval 检测停摆就手动 step（前台时 rAF 主导，interval 空转）
+  setInterval(() => {
+    if (performance.now() - S.last > 320) step(performance.now());
+  }, 320);
+  function frame(now) {
+    step(now);
+    requestAnimationFrame(frame);
+  }
+
+  /* ================= 启动 ================= */
+  renderSeeds();
+  renderPlots();
+  quest(0);
+  requestAnimationFrame(frame);
+  toast("欢迎来到花果山！按 ← → 走动试试", 2600);
+  window.__proto = S; // 调试钩子
+  window.__proto.cfg = FARM_CFG;
+  window.__closeAll = closeOverlays;
+  window.__openFarm = () => { renderBattlePick(); };
+}());
+</script>
+</body>
+</html>

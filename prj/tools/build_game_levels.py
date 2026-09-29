@@ -37,11 +37,13 @@ BOSS_WORDS = 4
 INTRO_LIMIT = 2
 TERM_MAX_LEN = 14
 WORLD_TILES = 4
+# 默认动线按 2×2 世界书写（Q0 出生→Q0/Q1 两波小妖→Q1 问答→Q3 Boss），
+# 对更大的世界同样合法（索引落在左上角区域，仍连通）。
 DEFAULT_REGIONS = {
-    "hero": 5,
-    "waves": [5, 6],
-    "npc": {"intro": 5, "quiz": 6},
-    "boss": 7,
+    "hero": 0,
+    "waves": [0, 1],
+    "npc": {"intro": 0, "quiz": 1},
+    "boss": 3,
 }
 
 WARNINGS: list[str] = []
@@ -434,56 +436,61 @@ def _safe_local(value: object, fallback: float = 0.5) -> float:
     return max(0.0, min(1.0, number))
 
 
-def _region_value(regions: dict, key: str, fallback: int) -> int:
+def _region_value(regions: dict, key: str, fallback: int, world_tiles: int = WORLD_TILES) -> int:
     try:
         value = int(regions.get(key, fallback))
     except (TypeError, ValueError):
         value = fallback
-    return max(0, min(WORLD_TILES * WORLD_TILES - 1, value))
+    return max(0, min(world_tiles * world_tiles - 1, value))
 
 
-def _world_point(point: dict | None, region: int) -> dict:
-    """Expand an authored 0..1 point inside a map region to world coordinates."""
+def _world_point(point: dict | None, region: int, world_tiles: int = WORLD_TILES) -> dict:
+    """Expand an authored 0..1 point inside a map region to world coordinates.
+
+    世界坐标 = 全图归一化 [0,1]；region 是 world_tiles×world_tiles 网格中的
+    视口块索引（行优先）。必须用关卡自己的 world_tiles 展开，否则 2×2 关卡的
+    内容会被压进 4×4 网格的坐标，只剩一角可走。
+    """
     point = point if isinstance(point, dict) else {}
-    col = region % WORLD_TILES
-    row = region // WORLD_TILES
+    col = region % world_tiles
+    row = region // world_tiles
     return {
-        "x": round((col + _safe_local(point.get("x"))) / WORLD_TILES, 6),
-        "y": round((row + _safe_local(point.get("y"))) / WORLD_TILES, 6),
+        "x": round((col + _safe_local(point.get("x"))) / world_tiles, 6),
+        "y": round((row + _safe_local(point.get("y"))) / world_tiles, 6),
     }
 
 
-def _world_rect(rect: dict | None, region: int) -> dict:
+def _world_rect(rect: dict | None, region: int, world_tiles: int = WORLD_TILES) -> dict:
     rect = rect if isinstance(rect, dict) else {}
-    col = region % WORLD_TILES
-    row = region // WORLD_TILES
+    col = region % world_tiles
+    row = region // world_tiles
     x = _safe_local(rect.get("x"), 0.0)
     y = _safe_local(rect.get("y"), 0.0)
     w = max(0.0, min(1.0 - x, float(rect.get("w", 1.0) or 0.0)))
     h = max(0.0, min(1.0 - y, float(rect.get("h", 1.0) or 0.0)))
     return {
-        "x": round((col + x) / WORLD_TILES, 6),
-        "y": round((row + y) / WORLD_TILES, 6),
-        "w": round(w / WORLD_TILES, 6),
-        "h": round(h / WORLD_TILES, 6),
+        "x": round((col + x) / world_tiles, 6),
+        "y": round((row + y) / world_tiles, 6),
+        "w": round(w / world_tiles, 6),
+        "h": round(h / world_tiles, 6),
     }
 
 
-def _map_regions(layout: dict) -> dict:
+def _map_regions(layout: dict, world_tiles: int = WORLD_TILES) -> dict:
     raw = layout.get("regions") if isinstance(layout.get("regions"), dict) else {}
     waves_raw = raw.get("waves") if isinstance(raw.get("waves"), list) else []
-    waves = [_region_value({}, "wave", item) for item in waves_raw[:2]]
+    waves = [_region_value({}, "wave", item, world_tiles) for item in waves_raw[:2]]
     while len(waves) < WAVE_COUNT:
-        waves.append(DEFAULT_REGIONS["waves"][len(waves)])
+        waves.append(min(DEFAULT_REGIONS["waves"][len(waves)], world_tiles * world_tiles - 1))
     npc_raw = raw.get("npc") if isinstance(raw.get("npc"), dict) else {}
     return {
-        "hero": _region_value(raw, "hero", DEFAULT_REGIONS["hero"]),
+        "hero": _region_value(raw, "hero", DEFAULT_REGIONS["hero"], world_tiles),
         "waves": waves,
         "npc": {
-            "intro": _region_value(npc_raw, "intro", DEFAULT_REGIONS["npc"]["intro"]),
-            "quiz": _region_value(npc_raw, "quiz", DEFAULT_REGIONS["npc"]["quiz"]),
+            "intro": _region_value(npc_raw, "intro", DEFAULT_REGIONS["npc"]["intro"], world_tiles),
+            "quiz": _region_value(npc_raw, "quiz", DEFAULT_REGIONS["npc"]["quiz"], world_tiles),
         },
-        "boss": _region_value(raw, "boss", DEFAULT_REGIONS["boss"]),
+        "boss": _region_value(raw, "boss", DEFAULT_REGIONS["boss"], world_tiles),
     }
 
 
@@ -504,12 +511,12 @@ def _walkable_local(authored: dict) -> dict:
     return {"x": x, "y": y, "w": w, "h": h}
 
 
-def _world_walkable(layout: dict, regions: dict) -> dict:
+def _world_walkable(layout: dict, regions: dict, world_tiles: int = WORLD_TILES) -> dict:
     """Return a world-space union plus exact per-region rectangles for clamping."""
     authored = layout.get("walkable") if isinstance(layout.get("walkable"), dict) else {}
     local = _walkable_local(authored)
     region_ids = [regions["hero"], regions["boss"], *regions["waves"], *regions["npc"].values()]
-    rects = [_world_rect(local, region) for region in dict.fromkeys(region_ids)]
+    rects = [_world_rect(local, region, world_tiles) for region in dict.fromkeys(region_ids)]
     min_x = min((r["x"] for r in rects), default=0.0)
     min_y = min((r["y"] for r in rects), default=0.0)
     max_x = max((r["x"] + r["w"] for r in rects), default=1.0)
@@ -611,7 +618,7 @@ def build_map_layer(ep: int, cast: dict, maps: dict | None) -> dict | None:
             "npcSpots": npc_spots,
             "bossSpot": _scene_point(layout.get("bossSpot"), 0.9, 0.7),
         }
-    regions = _map_regions(layout)
+    regions = _map_regions(layout, world_tiles)
     npc_spots = []
     for spot in layout.get("npcSpots", []) or []:
         role = str(spot.get("role", "intro"))
@@ -621,12 +628,12 @@ def build_map_layer(ep: int, cast: dict, maps: dict | None) -> dict | None:
                 "role": role,
                 "sprite": sprite,
                 "nameZh": minor_names.get(sprite, sprite),
-                **_world_point(spot, regions["npc"].get(role, regions["npc"]["intro"])),
+                **_world_point(spot, regions["npc"].get(role, regions["npc"]["intro"]), world_tiles),
             }
         )
     local_monsters = layout.get("monsterSpawns", []) or []
     wave_spawns = [
-        [_world_point(point, regions["waves"][wave_index]) for point in local_monsters]
+        [_world_point(point, regions["waves"][wave_index], world_tiles) for point in local_monsters]
         for wave_index in range(WAVE_COUNT)
     ]
     local_orbs = layout.get("orbSpawns") or [
@@ -636,7 +643,7 @@ def build_map_layer(ep: int, cast: dict, maps: dict | None) -> dict | None:
         {"x": 0.36, "y": 0.48},
     ]
     orb_spawns = [
-        [_world_point(point, regions["waves"][wave_index]) for point in local_orbs]
+        [_world_point(point, regions["waves"][wave_index], world_tiles) for point in local_orbs]
         for wave_index in range(WAVE_COUNT)
     ]
     return {
@@ -644,8 +651,8 @@ def build_map_layer(ep: int, cast: dict, maps: dict | None) -> dict | None:
         "coordinateSpace": "world-normalized",
         "worldTiles": world_tiles,
         "regions": regions,
-        "walkable": _world_walkable(layout, regions),
-        "heroSpawn": _world_point(layout.get("heroSpawn"), regions["hero"]),
+        "walkable": _world_walkable(layout, regions, world_tiles),
+        "heroSpawn": _world_point(layout.get("heroSpawn"), regions["hero"], world_tiles),
         # Keep monsterSpawns as the first-wave compatibility field. New code
         # consumes waveSpawns so authored points are not silently reused in the
         # wrong region.
@@ -653,7 +660,7 @@ def build_map_layer(ep: int, cast: dict, maps: dict | None) -> dict | None:
         "waveSpawns": wave_spawns,
         "orbSpawns": orb_spawns,
         "npcSpots": npc_spots,
-        "bossSpot": _world_point(layout.get("bossSpot"), regions["boss"]),
+        "bossSpot": _world_point(layout.get("bossSpot"), regions["boss"], world_tiles),
     }
 
 

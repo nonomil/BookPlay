@@ -34,12 +34,12 @@
   const MOVEMENT_SPEEDS = Object.freeze({
     hero: 0.38,          // 屏/秒：约 2.6s 横穿一屏（0.6 太冲——2026-09-12 二次定档：儿童从容节奏）
     monsterWander: 0.04, // 远距巡逻：散步级，孩子安心捡词球
-    monsterChase: 0.07,  // 追击 = 主角速度的 ~27%，走位就能甩开
+    monsterChase: 0.22,  // 追击 = 主角速度的 ~58%（P1 张力包 2026-09-21）：甩得开但走神会被贴身
   });
   // Reusable melee kit: wander outside aggro, telegraph, then contact hit.
   // Distances are viewport-widths (same unit as MOVEMENT_SPEEDS).
   const MONSTER_AI = Object.freeze({
-    aggro: 0.20,
+    aggro: 0.30,         // 察觉半径（视口宽）：进入即追，配合 58% 追速形成真威胁
     attack: 0.07,
     attackCd: 2800,
     windupMs: 420,

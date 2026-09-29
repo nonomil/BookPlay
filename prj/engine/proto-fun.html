@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>原型·打怪趣味升级：张力·克制·捕捉 | 豆豆龙英语</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+  html, body { height: 100%; overflow: hidden; }
+  body { font-family: "PingFang SC", "Microsoft YaHei", sans-serif; background: #171310; color: #fdf6e3; user-select: none; }
+  #stage { position: relative; width: 100vw; height: 100vh;
+    background: url('../assets/game-backgrounds/ep1.jpg') center/cover; }
+  #stage::before { content: ""; position: absolute; inset: 0; background: rgba(10,8,4,.18); }
+  .actor { position: absolute; transform: translate(-50%, -100%); will-change: left, top; }
+  .actor img { display: block; }
+  #hero img { height: 110px; filter: drop-shadow(0 8px 8px rgba(0,0,0,.35)); }
+  .mon img { height: 78px; filter: drop-shadow(0 5px 6px rgba(0,0,0,.4)); }
+
+  .elmark { position: absolute; left: 50%; top: 0; transform: translate(-50%,-130%);
+    width: 30px; height: 30px; border-radius: 50%; border: 3px solid rgba(255,255,255,.85);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 15px; font-weight: 900; color: #1c1508; box-shadow: 0 2px 6px rgba(0,0,0,.4); }
+  .monlabel { position: absolute; left: 50%; bottom: 100%; transform: translateX(-50%);
+    background: rgba(20,16,10,.8); border-radius: 999px; padding: 3px 10px; font-size: 13px;
+    font-weight: 700; white-space: nowrap; margin-bottom: 40px; }
+  .hpbar { position: absolute; left: 50%; bottom: 100%; transform: translateX(-50%);
+    width: 56px; height: 7px; border-radius: 4px; background: rgba(255,255,255,.25);
+    overflow: hidden; margin-bottom: 4px; }
+  .hpbar i { display: block; height: 100%; background: linear-gradient(90deg,#ff7d5e,#e8590c); border-radius: 4px; transition: width .25s; }
+  .catchable .gourd { position: absolute; left: 50%; bottom: 100%; transform: translateX(-50%);
+    font-size: 26px; margin-bottom: 26px; animation: bob .7s ease-in-out infinite; filter: drop-shadow(0 0 8px rgba(255,210,74,.9)); }
+  @keyframes bob { 0%,100% { transform: translateX(-50%) translateY(0);} 50% { transform: translateX(-50%) translateY(-7px);} }
+
+  .orb { position: absolute; transform: translate(-50%,-50%); width: 52px; height: 52px;
+    border-radius: 50%; display: flex; align-items: center; justify-content: center;
+    font-size: 12px; font-weight: 800; color: #fff; text-shadow: 0 1px 3px rgba(0,0,0,.7);
+    border: 4px solid; cursor: default; box-shadow: 0 3px 8px rgba(0,0,0,.45), inset 0 -3px 6px rgba(0,0,0,.25);
+    animation: orbfloat 2.2s ease-in-out infinite; }
+  @keyframes orbfloat { 0%,100% { margin-top: 0; } 50% { margin-top: -5px; } }
+  .orb.dropped { outline: 3px dashed rgba(255,255,255,.8); }
+
+  #hud { position: fixed; inset: 0 0 auto 0; z-index: 30; display: flex; align-items: center; gap: 8px; padding: 10px 12px; }
+  .chip { background: rgba(20,16,10,.78); border-radius: 999px; padding: 7px 14px; font-size: 15px; font-weight: 600; }
+  #hearts b { font-size: 17px; letter-spacing: 2px; }
+  #heldorb { min-width: 74px; text-align: center; }
+  #heldorb .ring { display: inline-block; width: 16px; height: 16px; border-radius: 50%; border: 3px solid; margin-right: 6px; vertical-align: -3px; }
+  #dexbar { margin-left: auto; }
+  #quest { position: fixed; top: 54px; left: 50%; transform: translateX(-50%); z-index: 25;
+    background: rgba(20,16,10,.72); border-radius: 999px; padding: 6px 18px; font-size: 13px; font-weight: 600; }
+
+  .float { position: fixed; z-index: 80; font-size: 24px; font-weight: 900; pointer-events: none;
+    text-shadow: 0 2px 6px rgba(0,0,0,.6); animation: floatup .9s ease-out forwards; }
+  @keyframes floatup { 0% { transform: translateY(0); opacity: 1; } 100% { transform: translateY(-58px); opacity: 0; } }
+  .float.strong { color: #7dff8e; font-size: 30px; }
+  .float.weak { color: #b9b9b9; font-size: 18px; }
+  .float.plain { color: #ffe9b0; }
+  .float.hurt { color: #ff6b6b; font-size: 28px; }
+
+  .overlay { position: fixed; inset: 0; z-index: 50; display: none; align-items: center; justify-content: center;
+    background: rgba(8,6,3,.62); }
+  .overlay.on { display: flex; }
+  .panel { background: linear-gradient(180deg, rgba(46,38,24,.97), rgba(26,20,12,.97));
+    border: 1px solid rgba(255,246,214,.22); border-radius: 20px; padding: 22px 26px;
+    text-align: center; max-width: min(92vw, 520px); }
+  .panel h2 { font-size: 20px; margin-bottom: 10px; }
+  .panel p { font-size: 14px; opacity: .9; line-height: 1.8; margin-bottom: 10px; }
+  .bigbtn { background: #ffd24a; color: #1c1508; border-radius: 999px; padding: 10px 30px;
+    font-size: 16px; font-weight: 900; margin-top: 6px; }
+  #quiz-opts { display: flex; flex-direction: column; gap: 8px; margin-top: 12px; }
+  #quiz-opts button { background: rgba(20,16,10,.8); border: 1px solid rgba(255,246,214,.25);
+    border-radius: 12px; padding: 11px 14px; font-size: 15px; font-weight: 700; }
+  #quiz-opts button:hover { outline: 2px solid #ffd24a; }
+  .el-legend { display: flex; gap: 10px; justify-content: center; margin-top: 4px; font-size: 12px; opacity: .85; }
+  .el-legend span { display: inline-flex; align-items: center; gap: 4px; }
+  .el-legend i { width: 13px; height: 13px; border-radius: 50%; border: 2px solid rgba(255,255,255,.8); }
+  kbd { background: rgba(255,255,255,.15); border-radius: 5px; padding: 1px 7px; font-family: inherit; font-size: 12px; }
+</style>
+</head>
+<body>
+<div id="stage"></div>
+
+<header id="hud">
+  <span class="chip" id="hearts">❤️❤️❤️</span>
+  <span class="chip" id="heldorb">空手</span>
+  <span class="chip" id="wavechip">第 1 波</span>
+  <span class="chip" id="killchip">打死 0</span>
+  <span class="chip" id="dexbar">葫芦 0/0</span>
+</header>
+<div id="quest">WASD/方向键移动 · 走过球自动捡 · <b>点小妖扔球</b> · 妖头顶葫芦出现后靠近按 <kbd>E</kbd> 捕捉</div>
+
+<div class="overlay on" id="ov-intro">
+  <div class="panel">
+    <h2>🏔️ 降妖新玩法试玩</h2>
+    <p>
+      <kbd>WASD</kbd>/<kbd>方向键</kbd> 走动 · 走过<b>中文词球</b>自动捡起 · <b>点小妖</b>扔球<br>
+      小妖会<b>追你</b>！被撞掉一颗心，手里的球也会掉<br>
+      看小妖头顶的<b>属性圈</b>：克它才疼（水克火，火克林，林克水）<br>
+      把妖打到<b>冒葫芦</b> → 靠近按 <kbd>E</kbd> → 答对就<b>收进图鉴</b>！
+    </p>
+    <div class="el-legend">
+      <span><i style="background:#4aa3ff"></i>水</span>克
+      <span><i style="background:#ff6b4a"></i>火</span>克
+      <span><i style="background:#58c96b"></i>林</span>克
+      <span><i style="background:#4aa3ff"></i>水</span>
+    </div>
+    <button class="bigbtn" id="btn-start">开 打！</button>
+  </div>
+</div>
+
+<div class="overlay" id="ov-quiz">
+  <div class="panel">
+    <h2>葫芦收妖：<span id="quiz-mon"></span></h2>
+    <p id="quiz-word" style="font-size:18px;font-weight:800"></p>
+    <div id="quiz-opts"></div>
+    <p style="font-size:12px;opacity:.7;margin-top:10px">答对收进图鉴，答错它会跑掉</p>
+  </div>
+</div>
+
+<div class="overlay" id="ov-over">
+  <div class="panel">
+    <h2 id="over-title">战败…</h2>
+    <p id="over-stats"></p>
+    <button class="bigbtn" id="btn-restart">再来一波（R）</button>
+  </div>
+</div>
+
+<script src="combat-core.js"></script>
+<script>
+"use strict";
+(function () {
+  /* ====== 常量（来自 00-方案.md 数值锚点） ====== */
+  const W = () => innerWidth, H = () => innerHeight;
+  const HERO_SPEED = 240;            // px/s
+  const MON_SPEED_BASE = 0.58;       // 主角的 58%
+  const HEARTS_MAX = 3;
+  const INVULN_MS = 1200;
+  const CATCH_LINE = 0.30;           // HP<30% 可捕捉
+  const EL = {
+    water:  { zh: "水", color: "#4aa3ff", strong: "fire", weak: "forest" },
+    fire:   { zh: "火", color: "#ff6b4a", strong: "forest", weak: "water" },
+    forest: { zh: "林", color: "#58c96b", strong: "water", weak: "fire" },
+  };
+  const MULT = { strong: 1.3, weak: 0.75, same: 1.0 };
+  const ORB_DMG = 20;                // 基础伤害；妖 HP 34 → 克制2发/同属3发/被克4发
+  const MON_HP = 34;
+  const WORDS = {
+    water:  [{ en: "demon", zh: "恶魔" }, { en: "river", zh: "河" }, { en: "gloomy", zh: "忧郁的" }],
+    fire:   [{ en: "furious", zh: "狂怒的" }, { en: "flame", zh: "火焰" }, { en: "red", zh: "红色" }],
+    forest: [{ en: "subject", zh: "主题" }, { en: "mountain", zh: "山" }, { en: "handle", zh: "处理" }],
+  };
+  const MON_FACES = ["chaosdemon-minion", "imp", "dragonking-soldier", "underworld-clerk"];
+  const sprUrl = (id) => "../assets/game-sprites/" + id + "/" + id + "-south-idle.png";
+  const HERO_URL = "../assets/generated/jttw-player-walkers/wukong/directions/wukong-east-walk.gif";
+
+  /* ====== 状态 ====== */
+  const S = {
+    running: false, wave: 0,
+    hearts: HEARTS_MAX, invulnUntil: 0,
+    held: null,               // {el, word}
+    hero: { x: 0, y: 0, vx: 0, vy: 0 },
+    keys: new Set(),
+    mons: [], orbs: [],
+    kills: 0, caught: 0, totalCatchable: 0,
+    last: 0, quizMon: null,
+  };
+  const stage = document.getElementById("stage");
+  const $ = (s) => document.querySelector(s);
+
+  /* ====== 实体构建 ====== */
+  function heroEl() {
+    const d = document.createElement("div");
+    d.className = "actor"; d.id = "hero";
+    d.innerHTML = `<img src="${HERO_URL}" alt="">`;
+    stage.appendChild(d);
+    return d;
+  }
+  function spawnWave() {
+    S.wave += 1;
+    $("#wavechip").textContent = "第 " + S.wave + " 波";
+    const count = Math.min(9, 5 + S.wave);            // 6,7,8... 只
+    const els = Object.keys(EL);
+    for (let i = 0; i < count; i++) {
+      const el = els[i % 3];
+      const words = WORDS[el];
+      const w = words[(i / 3 | 0) % words.length];
+      const m = {
+        el, word: w, hp: MON_HP, maxHp: MON_HP,
+        x: W() * (0.15 + 0.7 * Math.random()), y: H() * (0.3 + 0.45 * Math.random()) + 120,
+        speed: HERO_SPEED * MON_SPEED_BASE * (1 + (S.wave - 1) * 0.05),
+        state: "hunt",                     // hunt | catchable | caught | dead
+        circle: i % 4 === 3,               // 1/4 游走型
+        circDir: Math.random() < .5 ? 1 : -1,
+        face: sprUrl(MON_FACES[i % MON_FACES.length]),
+        node: null,
+      };
+      const d = document.createElement("div");
+      d.className = "actor mon";
+      d.innerHTML = `<img src="${m.face}" alt="">
+        <span class="elmark" style="background:${EL[el].color}">${EL[el].zh}</span>
+        <span class="monlabel">${w.en}</span>
+        <span class="hpbar"><i style="width:100%"></i></span>`;
+      d.addEventListener("pointerdown", (ev) => { ev.stopPropagation(); throwOrb(m); });
+      stage.appendChild(d);
+      m.node = d;
+      S.mons.push(m);
+    }
+    // 词球：每波每属性 2 个
+    els.forEach((el) => {
+      for (let i = 0; i < 2; i++) spawnOrb(el);
+    });
+  }
+  function spawnOrb(el, at) {
+    const words = WORDS[el];
+    const w = words[Math.floor(Math.random() * words.length)];
+    const o = { el, word: w, x: at ? at.x : W() * (0.1 + 0.8 * Math.random()), y: at ? at.y : H * (0.35 + 0.5 * Math.random()) + 100, node: null };
+    const d = document.createElement("div");
+    d.className = "orb";
+    d.style.background = "radial-gradient(circle at 35% 30%, rgba(255,255,255,.5), rgba(0,0,0,.15)), " + EL[el].color;
+    d.style.borderColor = EL[el].color;
+    d.textContent = w.zh;
+    stage.appendChild(d);
+    o.node = d;
+    S.orbs.push(o);
+  }
+
+  /* ====== 输入 ====== */
+  addEventListener("keydown", (ev) => {
+    const k = ev.key.toLowerCase();
+    if (["w", "a", "s", "d", "arrowup", "arrowdown", "arrowleft", "arrowright"].includes(k)) {
+      S.keys.add(k); ev.preventDefault();
+    }
+    if ((k === "e" || k === " ") && S.running) tryCatch();
+    if (k === "r" && $("#ov-over").classList.contains("on")) restart();
+  });
+  addEventListener("keyup", (ev) => S.keys.delete(ev.key.toLowerCase()));
+  addEventListener("blur", () => S.keys.clear());
+
+  /* ====== 战斗逻辑 ====== */
+  function multOf(atkEl, defEl) {
+    if (EL[atkEl].strong === defEl) return { m: MULT.strong, tag: "克制!" };
+    if (EL[atkEl].weak === defEl) return { m: MULT.weak, tag: "被克…" };
+    return { m: MULT.same, tag: "" };
+  }
+  function throwOrb(m) {
+    if (!S.running || m.state === "dead" || m.state === "caught") return;
+    if (!S.held) { flash(m.node, "空手！先捡球", "weak"); return; }
+    const { m: mult, tag } = multOf(S.held.el, m.el);
+    const dmg = Math.max(1, Math.round(ORB_DMG * mult));
+    m.hp = Math.max(0, m.hp - dmg);
+    floatAt(m.node, `-${dmg} ${tag}`, mult > 1 ? "strong" : mult < 1 ? "weak" : "plain");
+    m.node.querySelector(".hpbar i").style.width = (100 * m.hp / m.maxHp) + "%";
+    // 球消耗
+    S.held = null; renderHeld();
+    if (m.hp === 0) { killMon(m); return; }
+    if (m.hp / m.maxHp < CATCH_LINE && m.state === "hunt") {
+      m.state = "catchable";
+      S.totalCatchable += 1;
+      m.node.classList.add("catchable");
+      const g = document.createElement("span");
+      g.className = "gourd"; g.textContent = "🫙";
+      m.node.appendChild(g);
+      flash(m.node, "冒葫芦了！靠近按 E", "strong");
+    }
+  }
+  function killMon(m) {
+    m.state = "dead";
+    m.node.remove();
+    S.kills += 1;
+    $("#killchip").textContent = "打死 " + S.kills;
+    if (S.mons.every((x) => x.state === "dead" || x.state === "caught")) nextWave();
+  }
+  function tryCatch() {
+    // 最近的 catchable 妖
+    let best = null, bd = 170;
+    S.mons.forEach((m) => {
+      if (m.state !== "catchable") return;
+      const d = Math.hypot(m.x - S.hero.x, m.y - S.hero.y);
+      if (d < bd) { bd = d; best = m; }
+    });
+    if (!best) return;
+    openQuiz(best);
+  }
+  function openQuiz(m) {
+    S.quizMon = m;
+    S.running = false;
+    $("#quiz-mon").textContent = EL[m.el].zh + "系小妖";
+    $("#quiz-word").textContent = `「${m.word.en}」是什么意思？`;
+    const opts = $("#quiz-opts");
+    opts.innerHTML = "";
+    const pool = [m.word.zh];
+    Object.keys(WORDS).forEach((el) => WORDS[el].forEach((w) => {
+      if (w.zh !== m.word.zh && pool.length < 3 && Math.random() < 0.5) pool.push(w.zh);
+    }));
+    while (pool.length < 3) {
+      const all = Object.values(WORDS).flat();
+      const z = all[Math.floor(Math.random() * all.length)].zh;
+      if (!pool.includes(z)) pool.push(z);
+    }
+    pool.sort(() => Math.random() - .5);
+    pool.forEach((zh) => {
+      const b = document.createElement("button");
+      b.textContent = zh;
+      b.onclick = () => resolveQuiz(zh === m.word.zh);
+      opts.appendChild(b);
+    });
+    $("#ov-quiz").classList.add("on");
+  }
+  function resolveQuiz(ok) {
+    $("#ov-quiz").classList.remove("on");
+    const m = S.quizMon;
+    S.running = true;
+    if (ok) {
+      m.state = "caught";
+      m.node.remove();
+      S.caught += 1;
+      $("#dexbar").textContent = `葫芦 ${S.caught}/${S.mons.length}`;
+      floatAt($("#dexbar"), "收进图鉴！", "strong");
+      if (S.mons.every((x) => x.state === "dead" || x.state === "caught")) nextWave();
+    } else {
+      m.state = "dead"; // 逃跑：本波不再可打
+      m.node.remove();
+      flash(stage, "它跑掉了…", "weak");
+      if (S.mons.every((x) => x.state === "dead" || x.state === "caught")) nextWave();
+    }
+  }
+  function countLeftHuntable() {
+    return S.mons.filter((m) => m.state === "hunt").length;
+  }
+  function nextWave() {
+    S.hearts = HEARTS_MAX;
+    renderHearts();
+    flash(stage, `第 ${S.wave} 波清空！下一波…`, "strong");
+    setTimeout(() => { if (S.running) spawnWave(); }, 1200);
+  }
+  function hurtHero(m) {
+    const now = performance.now();
+    if (now < S.invulnUntil) return;
+    S.invulnUntil = now + INVULN_MS;
+    S.hearts -= 1;
+    renderHearts();
+    floatAt(document.getElementById("hero"), "-1 ❤", "hurt");
+    // 掉球
+    if (S.held) {
+      spawnOrb(S.held.el, { x: S.hero.x + (Math.random() * 60 - 30), y: S.hero.y + 30 });
+      S.held = null; renderHeld();
+    }
+    // 击退
+    const dx = S.hero.x - m.x, dy = S.hero.y - m.y, d = Math.hypot(dx, dy) || 1;
+    S.hero.x += dx / d * 60; S.hero.y += dy / d * 60;
+    if (S.hearts <= 0) gameOver(false);
+  }
+  function gameOver(win) {
+    S.running = false;
+    $("#over-title").textContent = win ? "清完全部波次！" : "战败…被围殴了";
+    $("#over-stats").innerHTML =
+      `撑到 <b>第 ${S.wave} 波</b> · 打死 <b>${S.kills}</b> 只 · 收服 <b>${S.caught}</b> 只<br>` +
+      (S.caught >= 3 ? "收集达人！克制+捕捉的打法你已上手 ✅" : "试试留着血线打半血收葫芦，比直接打死划算");
+    $("#ov-over").classList.add("on");
+  }
+
+  /* ====== 渲染辅助 ====== */
+  function renderHearts() {
+    $("#hearts").innerHTML = "❤️".repeat(Math.max(0, S.hearts)) + "🖤".repeat(Math.max(0, HEARTS_MAX - S.hearts));
+  }
+  function renderHeld() {
+    $("#heldorb").innerHTML = S.held
+      ? `<span class="ring" style="border-color:${EL[S.held.el].color}"></span>${S.held.word.zh}`
+      : "空手";
+  }
+  function floatAt(elOrSel, text, cls) {
+    const el = typeof elOrSel === "string" ? $(elOrSel) : elOrSel;
+    const r = el.getBoundingClientRect();
+    const d = document.createElement("div");
+    d.className = "float " + (cls || "plain");
+    d.textContent = text;
+    d.style.left = (r.left + r.width / 2 - 20) + "px";
+    d.style.top = (r.top + r.height / 3) + "px";
+    document.body.appendChild(d);
+    setTimeout(() => d.remove(), 900);
+  }
+  function flash(el, text, cls) { floatAt(el, text, cls); }
+
+  /* ====== 主循环 ====== */
+  function step(dt) {
+    if (!S.running) return;
+    // 主角移动
+    let dx = 0, dy = 0;
+    if (S.keys.has("a") || S.keys.has("arrowleft")) dx -= 1;
+    if (S.keys.has("d") || S.keys.has("arrowright")) dx += 1;
+    if (S.keys.has("w") || S.keys.has("arrowup")) dy -= 1;
+    if (S.keys.has("s") || S.keys.has("arrowdown")) dy += 1;
+    const len = Math.hypot(dx, dy) || 1;
+    S.hero.x = Math.max(50, Math.min(W() - 50, S.hero.x + dx / len * HERO_SPEED * dt / 1000));
+    S.hero.y = Math.max(120, Math.min(H() - 30, S.hero.y + dy / len * HERO_SPEED * dt / 1000));
+    hero.style.left = S.hero.x + "px";
+    hero.style.top = S.hero.y + "px";
+
+    // 捡球
+    for (let i = S.orbs.length - 1; i >= 0; i--) {
+      const o = S.orbs[i];
+      if (Math.hypot(o.x - S.hero.x, o.y - S.hero.y) < 46) {
+        S.held = { el: o.el, word: o.word };
+        renderHeld();
+        o.node.remove(); S.orbs.splice(i, 1);
+        floatAt(hero, "捡到「" + o.word.zh + "」", "plain");
+      }
+    }
+    // 小妖 AI
+    const now = performance.now();
+    S.mons.forEach((m) => {
+      if (m.state !== "hunt") {
+        if (m.state === "catchable") { // 缓慢逃向边缘
+          const tx = m.x < W() / 2 ? -40 : W() + 40;
+          m.x += Math.sign(tx - m.x) * m.speed * 0.4 * dt / 1000;
+          place(m);
+          if (m.x < -30 || m.x > W() + 30) { m.state = "dead"; m.node.remove(); }
+        }
+        return;
+      }
+      let tx = S.hero.x, ty = S.hero.y;
+      if (m.circle) { // 游走型：绕到主角侧翼
+        const ang = now / 900 * m.circDir;
+        tx = S.hero.x + Math.cos(ang) * 170;
+        ty = S.hero.y + Math.sin(ang) * 130;
+      }
+      const ddx = tx - m.x, ddy = ty - m.y, dd = Math.hypot(ddx, ddy) || 1;
+      m.x += ddx / dd * m.speed * dt / 1000;
+      m.y += ddy / dd * m.speed * dt / 1000;
+      place(m);
+      if (dd < 46 || Math.hypot(S.hero.x - m.x, S.hero.y - m.y) < 44) hurtHero(m);
+    });
+    function place(m) {
+      m.node.style.left = m.x + "px";
+      m.node.style.top = m.y + "px";
+    }
+  }
+  let last = performance.now();
+  function frame(now) {
+    const dt = Math.min(64, now - last);
+    last = now;
+    step(dt);
+    requestAnimationFrame(frame);
+  }
+  setInterval(() => {  // 后台标签 watchdog
+    if (performance.now() - last > 320) { step(Math.min(320, performance.now() - last)); last = performance.now(); }
+  }, 320);
+
+  /* ====== 启动/重开 ====== */
+  let hero;
+  function restart() {
+    document.querySelectorAll(".actor, .orb").forEach((n) => n.remove());
+    Object.assign(S, { running: true, wave: 0, hearts: HEARTS_MAX, held: null, kills: 0, caught: 0, totalCatchable: 0 });
+    S.mons = []; S.orbs = [];
+    renderHearts(); renderHeld();
+    $("#dexbar").textContent = "葫芦 0/0";
+    $("#killchip").textContent = "打死 0";
+    $("#ov-over").classList.remove("on");
+    hero = heroEl();
+    S.hero = { x: W() / 2, y: H() * 0.75, vx: 0, vy: 0 };
+    spawnWave();
+  }
+  $("#btn-start").onclick = () => { $("#ov-intro").classList.remove("on"); restart(); };
+  $("#btn-restart").onclick = restart;
+  window.__fun = S; // 调试
+}());
+</script>
+</body>
+</html>

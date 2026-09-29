@@ -1,0 +1,215 @@
+{
+  "schema": "missing-paths.v1",
+  "scenarioId": "longgong-jiebao-v1",
+  "stylePhrases": [
+    "儿童向横版游戏场景，卡通渲染，色彩明快高饱和",
+    "前中后三景景深，氛围光，留出中景空地给角色站位",
+    "画面无文字、无水印、无 UI，16:9 横幅 1920x1080",
+    "角色立绘为单只主体、透明背景、全身、朝向正面偏左"
+  ],
+  "baseIdentity": {
+    "id": "longgong-boss-linggan-v1",
+    "path": "assets/generated/longgong-jiebao-v1/transparent/boss-linggan-v1.png",
+    "status": "missing"
+  },
+  "g3SamplePassed": false,
+  "slots": [
+    {
+      "id": "bg-dragonpalace-v1",
+      "kind": "scene",
+      "state": "idle",
+      "view": "full",
+      "sourcePath": "assets/generated/longgong-jiebao-v1/scenes/bg-dragonpalace.png",
+      "runtimePath": "assets/generated/longgong-jiebao-v1/scenes/bg-dragonpalace.png",
+      "deriveFrom": null,
+      "status": "review-pending",
+      "greybox": false,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "3dcdde155c48af34071be323b26d20d54ff8ae35d548cb4ffa1db6e9af40e3f5",
+      "alpha": {
+        "mode": "RGB",
+        "hasAlpha": false
+      },
+      "notes": "关2 龙宫借宝：海底水晶宫大殿，珊瑚光柱气泡，中景空地"
+    },
+    {
+      "id": "bg-huaguoshan-v1",
+      "kind": "scene",
+      "state": "idle",
+      "view": "full",
+      "sourcePath": "assets/generated/longgong-jiebao-v1/scenes/bg-huaguoshan.png",
+      "runtimePath": "assets/generated/longgong-jiebao-v1/scenes/bg-huaguoshan.png",
+      "deriveFrom": null,
+      "status": "review-pending",
+      "greybox": false,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "0e60c5bf7781fdd36534afbc8961e27f75d36563f47090b68d65557affecf012",
+      "alpha": {
+        "mode": "RGB",
+        "hasAlpha": false
+      },
+      "notes": "关1 花果山称王：瀑布水帘洞口，桃树山石，中景空地"
+    },
+    {
+      "id": "bg-shuizangdong-v1",
+      "kind": "scene",
+      "state": "idle",
+      "view": "full",
+      "sourcePath": "assets/generated/longgong-jiebao-v1/scenes/bg-shuizangdong.png",
+      "runtimePath": "assets/generated/longgong-jiebao-v1/scenes/bg-shuizangdong.png",
+      "deriveFrom": null,
+      "status": "review-pending",
+      "greybox": false,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "41e3a3926111c1f1e67d61425bef25086fa718f8ab6ae09876f1c0bb9c79a5e5",
+      "alpha": {
+        "mode": "RGB",
+        "hasAlpha": false
+      },
+      "notes": "关3 水脏洞除妖：阴暗水洞，绿雾石笋，中景空地"
+    },
+    {
+      "id": "bg-diifu-v1",
+      "kind": "scene",
+      "state": "idle",
+      "view": "full",
+      "sourcePath": "assets/generated/longgong-jiebao-v1/scenes/bg-diifu.png",
+      "runtimePath": "assets/generated/longgong-jiebao-v1/scenes/bg-diifu.png",
+      "deriveFrom": null,
+      "status": "review-pending",
+      "greybox": false,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "6d63ca759fd044bb58a6e1942ddf55ff569bd75eb0d6f3f04b2f97fc7f6a951f",
+      "alpha": {
+        "mode": "RGB",
+        "hasAlpha": false
+      },
+      "notes": "关4 幽冥除名：森罗殿，青蓝鬼火，不恐怖，中景空地"
+    },
+    {
+      "id": "boss-linggan-v1",
+      "kind": "actor",
+      "state": "idle",
+      "view": "front",
+      "sourcePath": "assets/generated/longgong-jiebao-v1/transparent/boss-linggan-v1.png",
+      "runtimePath": "assets/generated/longgong-jiebao-v1/transparent/boss-linggan-v1.png",
+      "deriveFrom": null,
+      "status": "review-pending",
+      "greybox": false,
+      "width": 832,
+      "height": 902,
+      "sha256": "48fbc678f6d7ebbe384996f596d3b5efb356d78ea498cb677beb39d4678e772b",
+      "alpha": {
+        "mode": "RGBA",
+        "hasAlpha": true,
+        "alphaMin": 0,
+        "alphaMax": 255,
+        "transparentPixels": 459847,
+        "opaquePixels": 286620,
+        "partialPixels": 3997
+      },
+      "notes": "Boss 灵感大王：莲花池金鱼精成怪，持三叉戟，凶但不恐怖，透明底"
+    },
+    {
+      "id": "boss-hunshi-v1",
+      "kind": "actor",
+      "state": "idle",
+      "view": "front",
+      "sourcePath": "assets/generated/longgong-jiebao-v1/transparent/boss-hunshi-v1.png",
+      "runtimePath": "assets/generated/longgong-jiebao-v1/transparent/boss-hunshi-v1.png",
+      "deriveFrom": null,
+      "status": "review-pending",
+      "greybox": false,
+      "width": 976,
+      "height": 1056,
+      "sha256": "29211e8797c9c453c4a71017d7525c3ca0d402eda8067c1d037c756b1384774b",
+      "alpha": {
+        "mode": "RGBA",
+        "hasAlpha": true,
+        "alphaMin": 0,
+        "alphaMax": 255,
+        "transparentPixels": 656908,
+        "opaquePixels": 371502,
+        "partialPixels": 2246
+      },
+      "notes": "Boss 混世魔王：水脏洞魔王，青黑铠甲持大刀，凶但不恐怖，透明底；风格对齐 boss-linggan-v1"
+    },
+    {
+      "id": "boss-heixiong-v1",
+      "kind": "actor",
+      "state": "idle",
+      "view": "front",
+      "sourcePath": "assets/generated/longgong-jiebao-v1/transparent/boss-heixiong-v1.png",
+      "runtimePath": "assets/generated/longgong-jiebao-v1/transparent/boss-heixiong-v1.png",
+      "deriveFrom": null,
+      "status": "review-pending",
+      "greybox": false,
+      "width": 976,
+      "height": 1056,
+      "sha256": "8873d0cb8027c9ea97b28542340d5d254a24a7a4da03263be88c69e756e416fb",
+      "alpha": {
+        "mode": "RGBA",
+        "hasAlpha": true,
+        "alphaMin": 0,
+        "alphaMax": 255,
+        "transparentPixels": 641445,
+        "opaquePixels": 389211,
+        "partialPixels": 0
+      },
+      "notes": "Boss 黑熊精：黑熊怪持长枪，憨壮凶相，透明底；风格对齐 boss-linggan-v1"
+    },
+    {
+      "id": "boss-baigu-v1",
+      "kind": "actor",
+      "state": "idle",
+      "view": "front",
+      "sourcePath": "assets/generated/longgong-jiebao-v1/transparent/boss-baigu-v1.png",
+      "runtimePath": "assets/generated/longgong-jiebao-v1/transparent/boss-baigu-v1.png",
+      "deriveFrom": null,
+      "status": "review-pending",
+      "greybox": false,
+      "width": 976,
+      "height": 1056,
+      "sha256": "a21fc202e9bad48dc8fa17cc67dd2752d0fa2e2391e9d720487c63013347d3e9",
+      "alpha": {
+        "mode": "RGBA",
+        "hasAlpha": true,
+        "alphaMin": 0,
+        "alphaMax": 255,
+        "transparentPixels": 735850,
+        "opaquePixels": 294794,
+        "partialPixels": 12
+      },
+      "notes": "Boss 白骨精：白骨夫人，白衣女妖持骨剑，阴美不恐怖，透明底；风格对齐 boss-linggan-v1"
+    },
+    {
+      "id": "hero-wukong-showcase-v1",
+      "kind": "actor",
+      "state": "idle",
+      "view": "front",
+      "sourcePath": "assets/generated/longgong-jiebao-v1/transparent/hero-wukong-showcase-v1.png",
+      "runtimePath": "assets/generated/longgong-jiebao-v1/transparent/hero-wukong-showcase-v1.png",
+      "deriveFrom": null,
+      "status": "review-pending",
+      "greybox": false,
+      "width": 976,
+      "height": 1056,
+      "sha256": "e749587d259b61082fa172cb72d7df32ed40533f3a7e44b5165501b2f88c4674",
+      "alpha": {
+        "mode": "RGBA",
+        "hasAlpha": true,
+        "alphaMin": 0,
+        "alphaMax": 255,
+        "transparentPixels": 694588,
+        "opaquePixels": 335957,
+        "partialPixels": 111
+      },
+      "notes": "悟空展示立绘（大厅/选人舞台用）：扛棒英姿，与 Boss 同渲染风格，透明底"
+    }
+  ],
+  "notes": "2026-09-29 两批共 9 槽位全部生成并接入 v4 关卡制：4 场景 1920x1080 + 5 立绘（3 Boss 976x1056、灵感大王 832x902、悟空展示）全为真 alpha；逐关运行时验证通过，槽位 review-pending 待用户 approved"
+}

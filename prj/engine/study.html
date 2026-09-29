@@ -6,14 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>豆豆龙英语 · 精读课堂</title>
   <link rel="stylesheet" href="style.css?v=png1">
-  <link rel="stylesheet" href="study.css?v=8">
+  <link rel="stylesheet" href="study.css?v=23">
   <link rel="stylesheet" href="tv.css?v=1">
   <link rel="stylesheet" href="app-audio.css?v=2">
   <script src="app-audio.js?v=3"></script>
   <script src="tv-remote.js?v=1"></script>
   <script src="content-gate.js?v=2"></script>
 </head>
-<body class="study-body">
+<body class="study-body rail-collapsed">
+  <div id="study-fx" class="study-fx" aria-hidden="true"></div>
   <main class="study-shell">
     <header class="study-topbar">
       <a class="study-back" href="map.html" aria-label="返回路线图">← 地图</a>
@@ -21,25 +22,31 @@
         <p class="study-kicker" id="study-kicker">精读课堂</p>
         <h1 class="study-title" id="study-title">正在准备本集…</h1>
       </div>
+      <span class="study-progress" id="study-progress" aria-hidden="true"></span>
       <span class="study-step-chip" id="study-step-chip">STEP 1 OF 5</span>
     </header>
 
     <div class="study-columns">
       <aside class="study-rail" aria-label="精读五步">
+        <button id="rail-toggle" type="button" class="rail-toggle" title="展开/收起步骤栏" aria-expanded="false">☰</button>
         <p class="study-rail-label">YOUR JOURNEY</p>
         <ol id="study-rail" class="study-rail-list"></ol>
         <p class="study-rail-quote">一步一步来，<br>故事会越来越清楚。<span>A LITTLE EVERY DAY.</span></p>
       </aside>
 
       <section class="study-stage" aria-live="polite">
-        <p class="study-step-kicker" id="step-kicker">01 / WATCH</p>
-        <h2 class="study-step-title" id="step-title">看故事</h2>
-        <p class="study-step-en" id="step-en">Watch &amp; Read</p>
-        <p class="study-step-desc" id="step-desc"></p>
         <!-- 01 看故事：原生精读播放器（元素重组） -->
         <div id="watch-player" class="watch-player" hidden>
-          <div class="watch-video-wrap">
-            <video id="watch-video" playsinline preload="metadata"></video>
+          <div class="watch-spread">
+            <div class="watch-video-wrap">
+              <video id="watch-video" playsinline preload="metadata"></video>
+            <button id="watch-bigplay" type="button" class="watch-bigplay" hidden title="播放">▶</button>
+            </div>
+            <div class="watch-page-text">
+              <p id="watch-en" lang="en"></p>
+              <p id="watch-zh" lang="zh"></p>
+              <div id="watch-words" class="watch-words"></div>
+            </div>
           </div>
           <div class="watch-controls">
             <button id="watch-prev" type="button" title="上一句">◀</button>
@@ -47,18 +54,13 @@
             <button id="watch-next" type="button" title="下一句">下一句 ▶</button>
             <span id="watch-counter" class="watch-counter"></span>
           </div>
-          <div class="watch-caption">
-            <p id="watch-en" lang="en"></p>
-            <p id="watch-zh" lang="zh"></p>
-          </div>
-          <div id="watch-words" class="watch-words"></div>
           <div class="watch-mission">
-            <p class="watch-mission-label">A LITTLE MISSION</p>
-            <p>看的时候，留意这三件事：
-              <span>Who? · 故事里有谁？</span>
-              <span>Where? · 发生在哪里？</span>
-              <span>What happened? · 发生了什么？</span>
-            </p>
+            <p class="watch-mission-label">🎧 边看边想</p>
+            <div class="mission-icos">
+              <button type="button" class="mission-ico" data-say="故事里有谁？">🧑</button>
+              <button type="button" class="mission-ico" data-say="故事发生在哪里？">📍</button>
+              <button type="button" class="mission-ico" data-say="发生了什么？">💥</button>
+            </div>
           </div>
         </div>
         <!-- 02 学方法：方法卡 + 单词朋友 + 句型 -->
@@ -68,7 +70,16 @@
             <p id="method-note-text">听故事时，不要追着每一个单词跑——先抓住人物、地点和事件，你就能跟上故事啦。</p>
             <p id="method-done-note" class="method-done-note" aria-live="polite"></p>
           </div>
-          <div id="method-cards" class="word-friends"></div>
+          <div class="method-questions">
+            <div class="method-q"><i>01</i><b>WHO</b><span>人物 · 故事里有谁？</span></div>
+            <div class="method-q"><i>02</i><b>WHERE</b><span>地点 · 故事发生在哪里？</span></div>
+            <div class="method-q"><i>03</i><b>WHAT HAPPENED</b><span>事件 · 发生了什么？</span></div>
+          </div>
+          <div id="method-game" class="match-game">
+            <svg id="match-lines" class="match-lines" aria-hidden="true"></svg>
+            <div class="match-col" id="match-col-en"></div>
+            <div class="match-col" id="match-col-zh"></div>
+          </div>
           <div id="method-patterns"></div>
         </div>
         <!-- 03 练一练：原生练习（听音选义 / 看词选义 / 听句选画） -->
@@ -104,14 +115,18 @@
             <button id="check-next" type="button" class="exercise-next" hidden>下一题 →</button>
           </div>
           <p id="check-summary" class="exercise-summary" hidden></p>
+          <button id="check-retry" type="button" class="exercise-next" style="margin-top: 0.6rem;" hidden>🔄 再试一次</button>
         </div>
-        <p class="study-step-note" id="step-note">完成后这一步的灯会点亮，课堂自动进入下一步。</p>
         <!-- 05 说出故事：四图排序 + 复述 -->
         <div id="output-player" class="exercise-player" hidden>
           <div class="output-hint">每张图点 🔊 听提示，用 ↑↓ 把四幅图排成故事顺序。</div>
           <div id="output-board" class="output-board"></div>
           <button id="output-check" type="button" class="exercise-next">检查顺序</button>
           <p id="output-note" class="exercise-feedback" aria-live="polite"></p>
+          <div id="output-read" class="output-read" hidden>
+            <p class="output-read-label">READ THE PICTURE STORY · 连起来读一读</p>
+            <div id="output-read-list"></div>
+          </div>
           <a id="output-dub" class="study-door" href="dub.html" hidden>🎤 去配音录下来</a>
         </div>
         <div class="study-doors">
@@ -121,7 +136,17 @@
       </section>
     </div>
   </main>
+  <div id="study-sticker-overlay" class="study-sticker-overlay" hidden>
+    <div class="sticker-card" role="dialog" aria-label="本集贴纸">
+      <p class="sticker-kicker">ALL DONE · 本集贴纸</p>
+      <div class="sticker-art"></div>
+      <p class="sticker-title"></p>
+      <p class="sticker-origin"></p>
+      <button type="button" class="sticker-close">收进贴纸册</button>
+    </div>
+  </div>
+  <script src="episode-reward.js?v=2"></script>
   <script src="study-state.js?v=3"></script>
-  <script src="study.js?v=11"></script>
+  <script src="study.js?v=25"></script>
 </body>
 </html>
