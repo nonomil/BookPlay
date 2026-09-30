@@ -52,5 +52,73 @@
     return cards;
   }
 
-  return { readStore, writeStore, handheldOffline, fetchJSON, assetUrl, catalogCards };
+  /* ---- 切片 1b：闭包耦合工具的工厂 ----
+   * 页面在原定义点用 makeXxx(...) 绑定同名局部量，调用点零改动。
+   * makeSpeakTerm 的 getEl/setEl 必须接到页面级 audioEl（与 stopAudio 共享同一句柄，
+   * 否则 TTS 停不掉）；统一后 play 的 text 统一为 trim 过的词（原 battle 行为，game 原为原文，
+   * 差异仅尾部空白）。 */
+
+  function makeWeakPersister({ key, state, ep }) {
+    return function persistWeak() {
+      const all = readStore(key);
+      all[String(ep)] = state.weakWords;
+      writeStore(key, all);
+    };
+  }
+
+  function makeFreezeLevel({ core, state, ep }) {
+    return function freezeLevel(level, wrongWords) {
+      const frozen = core.freezeSessionCards(catalogCards(level), {
+        maxCards: core.SESSION_CARD_LIMIT,
+        wrongWords: wrongWords || {},
+        weakWords: state.weakWords,
+        now: Date.now(),
+        unit: ((Number(level && level.seedBase) || ep) % 1000) / 1000,
+      });
+      return core.applyFrozenLevel(level, frozen);
+    };
+  }
+
+  function makeToast(toastEl) {
+    const showToast = (text, ms) => {
+      toastEl.textContent = text;
+      toastEl.hidden = false;
+      window.clearTimeout(showToast.timer);
+      showToast.timer = window.setTimeout(() => {
+        toastEl.hidden = true;
+      }, ms || 1800);
+    };
+    return showToast;
+  }
+
+  function makeSpeakTerm({ getAudio, getEl, setEl }) {
+    return function speakTerm(text, lang) {
+      if (!text) return;
+      const audio = getAudio();
+      if (audio) {
+        const language = lang === "zh" ? "zh-CN" : "en-US";
+        const term = String(text).trim();
+        const ref = `word:${term}:${lang === "zh" ? "zh" : "en"}`;
+        return audio.play({ ref, text: term, lang: language });
+      }
+      if (handheldOffline()) return;
+      try {
+        let el = getEl();
+        if (!el) {
+          setEl(new Audio());
+          el = getEl();
+        }
+        window.BookPlayAudio?.watchMedia(el);
+        const voice = lang === "zh" ? "zh" : "en";
+        el.src = "/api/tts?voice=" + voice + "&text=" + encodeURIComponent(text);
+        el.currentTime = 0;
+        el.play().catch(() => {});
+      } catch (_) { /* 无 TTS 环境静默 */ }
+    };
+  }
+
+  return {
+    readStore, writeStore, handheldOffline, fetchJSON, assetUrl, catalogCards,
+    makeWeakPersister, makeFreezeLevel, makeToast, makeSpeakTerm,
+  };
 });

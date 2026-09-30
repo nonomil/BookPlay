@@ -128,10 +128,11 @@ test('quiz NPC 优先使用本集官方测验选项', () => {
 
 test('本集冻最多 10 词，问答可点不会且不算错', () => {
   const js = read('game.js');
-  assert.match(js, /function freezeLevel\(/);
-  assert.match(js, /Game\.freezeSessionCards/);
-  assert.match(js, /Game\.applyFrozenLevel/);
-  assert.match(js, /Game\.SESSION_CARD_LIMIT/);
+  const common = read('game-common.js');
+  assert.match(js, /makeFreezeLevel\(/, 'freezeLevel 已收敛到 game-common（1b）');
+  assert.match(common, /core\.freezeSessionCards/, '冻结管线走 game-core');
+  assert.match(common, /core\.applyFrozenLevel/);
+  assert.match(common, /maxCards: core\.SESSION_CARD_LIMIT/, '上限仍由 SESSION_CARD_LIMIT 决定');
   assert.match(js, /function skipNpcChoice\(/);
   assert.match(js, /skipped: true/);
   assert.match(js, /sessionCards \|\| state\.level\.previewWords/);

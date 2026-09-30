@@ -115,21 +115,11 @@
 
   let audioEl = null;
 
-  function speakTerm(text) {
-    if (!text) return;
-    if (state.audio) {
-      const term = String(text).trim();
-      return state.audio.play({ ref: `word:${term}:en`, text: term, lang: "en-US" });
-    }
-    if (handheldOffline()) return;
-    try {
-      audioEl = audioEl || new Audio();
-      window.BookPlayAudio?.watchMedia(audioEl);
-      audioEl.src = "/api/tts?voice=en&text=" + encodeURIComponent(text);
-      audioEl.currentTime = 0;
-      audioEl.play().catch(() => {});
-    } catch (_) { /* 无 TTS 环境静默 */ }
-  }
+  const speakTerm = Util.makeSpeakTerm({
+    getAudio: () => state.audio,
+    getEl: () => audioEl,
+    setEl: (v) => { audioEl = v; },
+  });
 
   function speakDialogue(line) {
     if (!line) return;
@@ -163,31 +153,11 @@
     else speakDialogue(line);
   }
 
-  function persistWeak() {
-    const all = readStore(KEY_WEAK);
-    all[String(EP)] = state.weakWords;
-    writeStore(KEY_WEAK, all);
-  }
+  const persistWeak = Util.makeWeakPersister({ key: KEY_WEAK, state, ep: EP });
 
-  function freezeLevel(level, wrongWords) {
-    const frozen = Game.freezeSessionCards(catalogCards(level), {
-      maxCards: Game.SESSION_CARD_LIMIT,
-      wrongWords: wrongWords || {},
-      weakWords: state.weakWords,
-      now: Date.now(),
-      unit: ((Number(level && level.seedBase) || EP) % 1000) / 1000,
-    });
-    return Game.applyFrozenLevel(level, frozen);
-  }
+  const freezeLevel = Util.makeFreezeLevel({ core: Game, state, ep: EP });
 
-  function showToast(text, ms) {
-    els.toast.textContent = text;
-    els.toast.hidden = false;
-    window.clearTimeout(showToast.timer);
-    showToast.timer = window.setTimeout(() => {
-      els.toast.hidden = true;
-    }, ms || 1800);
-  }
+  const showToast = Util.makeToast(els.toast);
 
   function spriteNode(spriteId, fallbackText) {
     const entry = state.sprites[spriteId];

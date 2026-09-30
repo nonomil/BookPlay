@@ -137,7 +137,7 @@ test("Boss 擂台按词格轮换题型并复用 game-core 跟打", () => {
 test("本集冻 10 词，Boss 不会不算错词", () => {
   const js = read("battle.js");
   const html = read("battle.html");
-  assert.match(js, /function freezeLevel\(/);
+  assert.match(js, /makeFreezeLevel\(/, 'freezeLevel 已收敛到 game-common（1b）');
   assert.match(js, /function skipBossWord\(/);
   assert.match(js, /skipped: true/);
   assert.match(html, /id="battle-skip"/);

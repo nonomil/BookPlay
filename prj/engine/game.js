@@ -195,22 +195,9 @@
   const assetUrl = Util.assetUrl;
   const catalogCards = Util.catalogCards;
 
-  function persistWeak() {
-    const all = readStore(KEY_WEAK);
-    all[String(EP)] = state.weakWords;
-    writeStore(KEY_WEAK, all);
-  }
+  const persistWeak = Util.makeWeakPersister({ key: KEY_WEAK, state, ep: EP });
 
-  function freezeLevel(level, wrongWords) {
-    const frozen = Game.freezeSessionCards(catalogCards(level), {
-      maxCards: Game.SESSION_CARD_LIMIT,
-      wrongWords: wrongWords || {},
-      weakWords: state.weakWords,
-      now: Date.now(),
-      unit: ((Number(level && level.seedBase) || EP) % 1000) / 1000,
-    });
-    return Game.applyFrozenLevel(level, frozen);
-  }
+  const freezeLevel = Util.makeFreezeLevel({ core: Game, state, ep: EP });
 
   function persistProgress(extra) {
     const progress = readStore(KEY_PROGRESS);
@@ -261,23 +248,11 @@
     return "map.html";
   }
 
-  function speakTerm(text, lang) {
-    if (!text) return;
-    if (state.audio) {
-      const language = lang === "zh" ? "zh-CN" : "en-US";
-      const ref = `word:${String(text).trim()}:${lang === "zh" ? "zh" : "en"}`;
-      return state.audio.play({ ref, text, lang: language });
-    }
-    if (handheldOffline()) return;
-    try {
-      audioEl = audioEl || new Audio();
-      window.BookPlayAudio?.watchMedia(audioEl);
-      const voice = lang === "zh" ? "zh" : "en";
-      audioEl.src = "/api/tts?voice=" + voice + "&text=" + encodeURIComponent(text);
-      audioEl.currentTime = 0;
-      audioEl.play().catch(() => {});
-    } catch (_) { /* 无 TTS 环境静默 */ }
-  }
+  const speakTerm = Util.makeSpeakTerm({
+    getAudio: () => state.audio,
+    getEl: () => audioEl,
+    setEl: (v) => { audioEl = v; },
+  });
 
   function speakDialogue(line) {
     if (!line) return Promise.resolve(false);
@@ -342,14 +317,7 @@
     } catch (_) { /* 演出不阻塞玩法 */ }
   }
 
-  function showToast(text, ms) {
-    els.toast.textContent = text;
-    els.toast.hidden = false;
-    window.clearTimeout(showToast.timer);
-    showToast.timer = window.setTimeout(() => {
-      els.toast.hidden = true;
-    }, ms || 1800);
-  }
+  const showToast = Util.makeToast(els.toast);
 
   function spriteSrc(spriteId) {
     const entry = state.sprites[spriteId];
