@@ -12,7 +12,7 @@ test('battle.html：按顺序引入 tv-remote / quiz / battle-core / battle.js �
   const scripts = [...html.matchAll(/<script[^>]*\ssrc="([^"?]+)(?:\?[^"]*)?"/g)]
     .map((m) => m[1].replace(/^\.\//, ''))
     .filter((src) => src !== 'native-key.js' && src !== 'handheld-controls.js' && src !== 'content-gate.js');
-  assert.deepEqual(scripts, ['app-audio.js', 'tv-remote.js', 'episode-vocab-quiz.js', 'battle-core.js', 'game-core.js', 'game-audio.js', 'collection-core.js', 'battle.js']);
+  assert.deepEqual(scripts, ['app-audio.js', 'tv-remote.js', 'game-common.js', 'episode-vocab-quiz.js', 'battle-core.js', 'game-core.js', 'game-audio.js', 'collection-core.js', 'battle.js']);
   assert.match(html, /href=["']tv\.css(?:\?[^"']*)?["']/i, 'battle.html must load tv.css');
   assert.match(html, /href=["']handheld\.css(?:\?[^"']*)?["']/i);
   assert.match(html, /href=["']battle\.css(?:\?[^"']*)?["']/i);

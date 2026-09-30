@@ -13,6 +13,7 @@
 (function () {
   const Core = window.BookPlayBattleCore;
   const Game = window.BookPlayGameCore;
+  const Util = window.BookPlayGameCommon;
 
   const params = new URLSearchParams(window.location.search);
   const EP = Math.max(1, Number(params.get("ep")) || 1);
@@ -186,36 +187,18 @@
 
   /* ---------- 基础工具 ---------- */
 
-  function readStore(key) {
-    try {
-      return JSON.parse(localStorage.getItem(key) || "{}") || {};
-    } catch (_) {
-      return {};
-    }
-  }
-
-  function writeStore(key, value) {
-    try {
-      localStorage.setItem(key, JSON.stringify(value));
-    } catch (_) { /* 存不下就只保留本次体验 */ }
-  }
+  // 通用工具收敛到 game-common.js（window.BookPlayGameCommon）；本地别名绑定，调用点保持不变。
+  const readStore = Util.readStore;
+  const writeStore = Util.writeStore;
+  const handheldOffline = Util.handheldOffline;
+  const fetchJSON = Util.fetchJSON;
+  const assetUrl = Util.assetUrl;
+  const catalogCards = Util.catalogCards;
 
   function persistWeak() {
     const all = readStore(KEY_WEAK);
     all[String(EP)] = state.weakWords;
     writeStore(KEY_WEAK, all);
-  }
-
-  function catalogCards(level) {
-    const cards = [];
-    const push = (row) => {
-      if (!row || !row.term || !row.zh) return;
-      cards.push(row);
-    };
-    (level && level.previewWords || []).forEach(push);
-    ((level && level.waves) || []).forEach((wave) => (wave.monsters || []).forEach(push));
-    (((level && level.boss) || {}).hpWords || []).forEach(push);
-    return cards;
   }
 
   function freezeLevel(level, wrongWords) {
@@ -278,14 +261,6 @@
     return "map.html";
   }
 
-  function handheldOffline() {
-    try {
-      return document.documentElement.hasAttribute("data-handheld");
-    } catch (_) {
-      return false;
-    }
-  }
-
   function speakTerm(text, lang) {
     if (!text) return;
     if (state.audio) {
@@ -335,14 +310,6 @@
     placeAt(dust, x, y + 0.04 * NU);
     els.particles.appendChild(dust);
     window.setTimeout(() => dust.remove(), 280);
-  }
-
-  function fetchJSON(url) {
-    return fetch(url, { cache: "no-store" }).then((res) => (res.ok ? res.json() : null));
-  }
-
-  function assetUrl(path) {
-    return path ? "../" + String(path).replace(/^\.\.\//, "") : "";
   }
 
   function pickupFruitHtml() {

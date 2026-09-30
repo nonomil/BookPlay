@@ -9,6 +9,7 @@
   const Core = window.BookPlayBattleCore;
   const Game = window.BookPlayGameCore;
   const Quiz = window.BookPlayEpisodeVocabQuiz;
+  const Util = window.BookPlayGameCommon;
 
   const params = new URLSearchParams(window.location.search);
   const EP = Math.max(1, Number(params.get("ep")) || 1);
@@ -104,28 +105,15 @@
     raceRaf: 0,
   };
 
-  function readStore(key) {
-    try {
-      return JSON.parse(localStorage.getItem(key) || "{}") || {};
-    } catch (_) {
-      return {};
-    }
-  }
-
-  function writeStore(key, value) {
-    try {
-      localStorage.setItem(key, JSON.stringify(value));
-    } catch (_) { /* 存不下就只保留本次体验 */ }
-  }
+  // 通用工具收敛到 game-common.js（window.BookPlayGameCommon）；本地别名绑定，调用点保持不变。
+  const readStore = Util.readStore;
+  const writeStore = Util.writeStore;
+  const handheldOffline = Util.handheldOffline;
+  const fetchJSON = Util.fetchJSON;
+  const assetUrl = Util.assetUrl;
+  const catalogCards = Util.catalogCards;
 
   let audioEl = null;
-  function handheldOffline() {
-    try {
-      return document.documentElement.hasAttribute("data-handheld");
-    } catch (_) {
-      return false;
-    }
-  }
 
   function speakTerm(text) {
     if (!text) return;
@@ -181,18 +169,6 @@
     writeStore(KEY_WEAK, all);
   }
 
-  function catalogCards(level) {
-    const cards = [];
-    const push = (row) => {
-      if (!row || !row.term || !row.zh) return;
-      cards.push(row);
-    };
-    (level && level.previewWords || []).forEach(push);
-    ((level && level.waves) || []).forEach((wave) => (wave.monsters || []).forEach(push));
-    (((level && level.boss) || {}).hpWords || []).forEach(push);
-    return cards;
-  }
-
   function freezeLevel(level, wrongWords) {
     const frozen = Game.freezeSessionCards(catalogCards(level), {
       maxCards: Game.SESSION_CARD_LIMIT,
@@ -202,14 +178,6 @@
       unit: ((Number(level && level.seedBase) || EP) % 1000) / 1000,
     });
     return Game.applyFrozenLevel(level, frozen);
-  }
-
-  function fetchJSON(url) {
-    return fetch(url, { cache: "no-store" }).then((res) => (res.ok ? res.json() : null));
-  }
-
-  function assetUrl(path) {
-    return path ? "../" + String(path).replace(/^\.\.\//, "") : "";
   }
 
   function showToast(text, ms) {
