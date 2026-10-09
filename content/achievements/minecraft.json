@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "catalog_version": 1,
+  "series": "minecraft",
+  "achievements": [
+    {
+      "id": "minecraft.first-block",
+      "kind": "journey",
+      "name": "第一块方块",
+      "title_en": "First Block",
+      "blessing": "把第一页读完，冒险就有了第一块方块。",
+      "description_zh": "完成第一本绘本，点亮你的 Minecraft 收藏墙。",
+      "motion_zh": "动态预览：小方块上下弹跳，边角亮起一圈蓝光。",
+      "condition_text": "完成第 1 本绘本",
+      "condition": { "type": "episodes", "count": 1 },
+      "glyph": "▣",
+      "asset": "assets/generated/storybooks/minecraft/rewards/badges/first-block.png"
+    },
+    {
+      "id": "minecraft.nether-scout",
+      "kind": "journey",
+      "name": "下界侦察员",
+      "title_en": "Nether Scout",
+      "blessing": "读过下界，也能平安找到回家的路。",
+      "description_zh": "完成第 1 本绘本，找到下界传送门，也学会平安回家。",
+      "motion_zh": "动态预览：紫色传送门先亮起，随后绿色草地方块接上。",
+      "condition_text": "完成第 1 本绘本",
+      "condition": { "type": "episodes", "count": 1 },
+      "glyph": "◆",
+      "asset": "assets/generated/storybooks/minecraft/rewards/badges/nether-scout.png"
+    },
+    {
+      "id": "minecraft.complete",
+      "kind": "journey",
+      "name": "前两本探险完成",
+      "title_en": "Block Expedition Complete",
+      "blessing": "每一页都变成了你自己的方块故事。",
+      "description_zh": "完成本轮两本 Minecraft 绘本，伙伴和故事礼物全部到家。",
+      "motion_zh": "动态预览：两个彩色方块拼成一颗会发光的小星星。",
+      "condition_text": "完成前 2 本绘本",
+      "condition": { "type": "episodes", "count": 2 },
+      "glyph": "★",
+      "asset": "assets/generated/storybooks/minecraft/rewards/badges/block-expedition-complete.png"
+    }
+  ]
+}
