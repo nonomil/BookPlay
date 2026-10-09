@@ -8,10 +8,10 @@
 *.py[cod]
 *.log
 
-# Raw sources, generated runtime content, and local libraries
-/data/
-/content/
-/书籍资料库/
+# Raw sources and generated runtime content are tracked when each file stays
+# under GitHub's comfortable size. Videos, archives, and secrets stay local.
+# prj/assets and prj/data are Windows junctions into content/.
+# Tracking them would upload the same files a second time.
 /prj/assets/
 /prj/data/
 
@@ -39,7 +39,6 @@
 /android/capacitor-cordova-android-plugins/
 /android/app/src/main/assets/public/
 /android/app/src/main/assets/data/
-/android/local.properties
 
 # IDE and operating-system state
 /.idea/
@@ -49,32 +48,35 @@
 Thumbs.db
 desktop.ini
 
-# Media and binary documents are deliberately outside Git
-*.mp3
-*.mp4
-*.m4a
-*.wav
-*.ogg
-*.flac
-*.png
-*.jpg
-*.jpeg
-*.webp
-*.gif
-*.bmp
-*.svg
-*.ttf
-*.otf
-*.woff
-*.woff2
-*.pdf
-*.doc
-*.docx
+# Courseware slides stay local. They are about 6GB.
 *.ppt
 *.pptx
-*.xls
-*.xlsx
-*.srt
+/data/西游记课件/
+
+# Video stays local. Images and audio are tracked.
+*.mp4
+*.webm
+*.mov
+*.avi
+*.mkv
+*.m4v
+*.flv
+*.wmv
+
+# These single files exceed GitHub's 100MB limit.
+/data/02-西游记精读版台词本/带标注版PDF合并版.pdf
+/data/02-西游记精读版台词本/无标注版PDF合并版.pdf
+/书籍资料库/**/Minecraft：Escape_from_the_Nether!(已优化).pdf
+/书籍资料库/**/Minecraft：Trouble_Brewing!(已优化).pdf
+/书籍资料库/**/Minecraft：Mobs_in_the_Overworld!(已优化).pdf
+/书籍资料库/**/survival mode(已优化).pdf
+
+# Local keys and machine config
+.env
+.env.*
+*.pem
+*.key
+/android/local.properties
 
 # Temporary/editor files
 *.tmp
