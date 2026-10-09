@@ -1,0 +1,577 @@
+{
+  "schema_version": 1,
+  "series": "minecraft",
+  "scope": "quiz-prompts-and-choices",
+  "voice": {
+    "en": "en-US-JennyNeural",
+    "zh": "zh-CN-XiaoxiaoNeural"
+  },
+  "stats": {
+    "questions": 22,
+    "clips": 91,
+    "generated": 91,
+    "reused": 0,
+    "failed": 0
+  },
+  "text_audio": {
+    "en": {
+      "what does \"river\" mean in this sentence?": "assets/minecraft/quiz/en/mc-b1-q01-prompt.mp3",
+      "light": "assets/minecraft/quiz/en/mc-b1-q01-choice-1.mp3",
+      "huge": "assets/minecraft/quiz/en/mc-b1-q01-choice-2.mp3",
+      "river": "assets/minecraft/quiz/en/mc-b1-q01-choice-3.mp3",
+      "what does \"leaped\" mean in this sentence?": "assets/minecraft/quiz/en/mc-b1-q02-prompt.mp3",
+      "hair": "assets/minecraft/quiz/en/mc-b1-q02-choice-1.mp3",
+      "scared": "assets/minecraft/quiz/en/mc-b1-q02-choice-2.mp3",
+      "leap": "assets/minecraft/quiz/en/mc-b1-q02-choice-3.mp3",
+      "what does \"escaped\" mean in this sentence?": "assets/minecraft/quiz/en/mc-b1-q03-prompt.mp3",
+      "stream": "assets/minecraft/quiz/en/mc-b1-q03-choice-1.mp3",
+      "escape": "assets/minecraft/quiz/en/mc-b1-q03-choice-3.mp3",
+      "what does \"hair\" mean in this sentence?": "assets/minecraft/quiz/en/mc-b1-q04-prompt.mp3",
+      "what does \"light\" mean in this sentence?": "assets/minecraft/quiz/en/mc-b1-q05-prompt.mp3",
+      "ocean": "assets/minecraft/quiz/en/mc-b2-q01-choice-3.mp3",
+      "brave": "assets/minecraft/quiz/en/mc-b2-q02-choice-1.mp3",
+      "waterfall": "assets/minecraft/quiz/en/mc-b2-q02-choice-2.mp3",
+      "what does \"bear\" mean in this sentence?": "assets/minecraft/quiz/en/mc-b2-q03-prompt.mp3",
+      "cave": "assets/minecraft/quiz/en/mc-b2-q03-choice-1.mp3",
+      "bounce": "assets/minecraft/quiz/en/mc-b2-q03-choice-2.mp3",
+      "bear": "assets/minecraft/quiz/en/mc-b2-q03-choice-3.mp3",
+      "what does \"alongside\" mean in this sentence?": "assets/minecraft/quiz/en/mc-b2-q04-prompt.mp3",
+      "alongside": "assets/minecraft/quiz/en/mc-b2-q04-choice-1.mp3",
+      "explore": "assets/minecraft/quiz/en/mc-b2-q04-choice-2.mp3",
+      "what does \"cave\" mean in this sentence?": "assets/minecraft/quiz/en/mc-b2-q05-prompt.mp3",
+      "what does \"swung\" mean in this sentence?": "assets/minecraft/quiz/en/mc-b3-q01-prompt.mp3",
+      "return": "assets/minecraft/quiz/en/mc-b3-q01-choice-1.mp3",
+      "swing": "assets/minecraft/quiz/en/mc-b3-q01-choice-3.mp3",
+      "what does \"fight\" mean in this sentence?": "assets/minecraft/quiz/en/mc-b3-q02-prompt.mp3",
+      "fight": "assets/minecraft/quiz/en/mc-b3-q02-choice-3.mp3",
+      "what does \"returned\" mean in this sentence?": "assets/minecraft/quiz/en/mc-b3-q04-prompt.mp3",
+      "what does \"battle\" mean in this sentence?": "assets/minecraft/quiz/en/mc-b4-q01-prompt.mp3",
+      "monkey": "assets/minecraft/quiz/en/mc-b4-q01-choice-2.mp3",
+      "battle": "assets/minecraft/quiz/en/mc-b4-q01-choice-3.mp3",
+      "what does \"protect\" mean in this sentence?": "assets/minecraft/quiz/en/mc-b4-q03-prompt.mp3",
+      "protect": "assets/minecraft/quiz/en/mc-b4-q03-choice-3.mp3",
+      "what does \"dangerous\" mean in this sentence?": "assets/minecraft/quiz/en/mc-b5-q01-prompt.mp3",
+      "mountain": "assets/minecraft/quiz/en/mc-b5-q01-choice-1.mp3",
+      "dangerous": "assets/minecraft/quiz/en/mc-b5-q01-choice-3.mp3",
+      "what does \"eyes\" mean in this sentence?": "assets/minecraft/quiz/en/mc-b5-q02-prompt.mp3",
+      "journey": "assets/minecraft/quiz/en/mc-b5-q02-choice-1.mp3",
+      "eyes": "assets/minecraft/quiz/en/mc-b5-q02-choice-3.mp3",
+      "what does \"together\" mean in this sentence?": "assets/minecraft/quiz/en/mc-b5-q03-prompt.mp3",
+      "together": "assets/minecraft/quiz/en/mc-b5-q03-choice-3.mp3",
+      "what does \"journey\" mean in this sentence?": "assets/minecraft/quiz/en/mc-b5-q04-prompt.mp3",
+      "what does \"mountain\" mean in this sentence?": "assets/minecraft/quiz/en/mc-b5-q05-prompt.mp3"
+    },
+    "zh": {
+      "在这句话中，\"river\" 是什么意思？": "assets/minecraft/quiz/zh/mc-b1-q01-prompt.mp3",
+      "光": "assets/minecraft/quiz/zh/mc-b1-q01-choice-1.mp3",
+      "巨大的": "assets/minecraft/quiz/zh/mc-b1-q01-choice-2.mp3",
+      "河": "assets/minecraft/quiz/zh/mc-b1-q01-choice-3.mp3",
+      "在这句话中，\"leaped\" 是什么意思？": "assets/minecraft/quiz/zh/mc-b1-q02-prompt.mp3",
+      "毫毛；头发": "assets/minecraft/quiz/zh/mc-b1-q02-choice-1.mp3",
+      "害怕的": "assets/minecraft/quiz/zh/mc-b1-q02-choice-2.mp3",
+      "跃入": "assets/minecraft/quiz/zh/mc-b1-q02-choice-3.mp3",
+      "在这句话中，\"escaped\" 是什么意思？": "assets/minecraft/quiz/zh/mc-b1-q03-prompt.mp3",
+      "小溪": "assets/minecraft/quiz/zh/mc-b1-q03-choice-1.mp3",
+      "逃脱": "assets/minecraft/quiz/zh/mc-b1-q03-choice-3.mp3",
+      "在这句话中，\"hair\" 是什么意思？": "assets/minecraft/quiz/zh/mc-b1-q04-prompt.mp3",
+      "在这句话中，\"light\" 是什么意思？": "assets/minecraft/quiz/zh/mc-b1-q05-prompt.mp3",
+      "大海": "assets/minecraft/quiz/zh/mc-b2-q01-choice-3.mp3",
+      "勇敢的": "assets/minecraft/quiz/zh/mc-b2-q02-choice-1.mp3",
+      "瀑布": "assets/minecraft/quiz/zh/mc-b2-q02-choice-2.mp3",
+      "在这句话中，\"bear\" 是什么意思？": "assets/minecraft/quiz/zh/mc-b2-q03-prompt.mp3",
+      "洞穴": "assets/minecraft/quiz/zh/mc-b2-q03-choice-1.mp3",
+      "弹跳": "assets/minecraft/quiz/zh/mc-b2-q03-choice-2.mp3",
+      "熊": "assets/minecraft/quiz/zh/mc-b2-q03-choice-3.mp3",
+      "在这句话中，\"alongside\" 是什么意思？": "assets/minecraft/quiz/zh/mc-b2-q04-prompt.mp3",
+      "沿着": "assets/minecraft/quiz/zh/mc-b2-q04-choice-1.mp3",
+      "探索": "assets/minecraft/quiz/zh/mc-b2-q04-choice-2.mp3",
+      "在这句话中，\"cave\" 是什么意思？": "assets/minecraft/quiz/zh/mc-b2-q05-prompt.mp3",
+      "在这句话中，\"swung\" 是什么意思？": "assets/minecraft/quiz/zh/mc-b3-q01-prompt.mp3",
+      "返回": "assets/minecraft/quiz/zh/mc-b3-q01-choice-1.mp3",
+      "荡": "assets/minecraft/quiz/zh/mc-b3-q01-choice-3.mp3",
+      "在这句话中，\"fight\" 是什么意思？": "assets/minecraft/quiz/zh/mc-b3-q02-prompt.mp3",
+      "打架": "assets/minecraft/quiz/zh/mc-b3-q02-choice-3.mp3",
+      "在这句话中，\"returned\" 是什么意思？": "assets/minecraft/quiz/zh/mc-b3-q04-prompt.mp3",
+      "在这句话中，\"battle\" 是什么意思？": "assets/minecraft/quiz/zh/mc-b4-q01-prompt.mp3",
+      "猴子": "assets/minecraft/quiz/zh/mc-b4-q01-choice-2.mp3",
+      "战斗": "assets/minecraft/quiz/zh/mc-b4-q01-choice-3.mp3",
+      "山洞": "assets/minecraft/quiz/zh/mc-b4-q02-choice-1.mp3",
+      "在这句话中，\"protect\" 是什么意思？": "assets/minecraft/quiz/zh/mc-b4-q03-prompt.mp3",
+      "保护": "assets/minecraft/quiz/zh/mc-b4-q03-choice-3.mp3",
+      "在这句话中，\"dangerous\" 是什么意思？": "assets/minecraft/quiz/zh/mc-b5-q01-prompt.mp3",
+      "山": "assets/minecraft/quiz/zh/mc-b5-q01-choice-1.mp3",
+      "危险的": "assets/minecraft/quiz/zh/mc-b5-q01-choice-3.mp3",
+      "在这句话中，\"eyes\" 是什么意思？": "assets/minecraft/quiz/zh/mc-b5-q02-prompt.mp3",
+      "旅程": "assets/minecraft/quiz/zh/mc-b5-q02-choice-1.mp3",
+      "眼睛": "assets/minecraft/quiz/zh/mc-b5-q02-choice-3.mp3",
+      "在这句话中，\"together\" 是什么意思？": "assets/minecraft/quiz/zh/mc-b5-q03-prompt.mp3",
+      "一起": "assets/minecraft/quiz/zh/mc-b5-q03-choice-3.mp3",
+      "在这句话中，\"journey\" 是什么意思？": "assets/minecraft/quiz/zh/mc-b5-q04-prompt.mp3",
+      "在这句话中，\"mountain\" 是什么意思？": "assets/minecraft/quiz/zh/mc-b5-q05-prompt.mp3"
+    }
+  },
+  "questions": {
+    "mc-b1-q01": {
+      "book": 1,
+      "prompt": {
+        "en": "assets/minecraft/quiz/en/mc-b1-q01-prompt.mp3",
+        "zh": "assets/minecraft/quiz/zh/mc-b1-q01-prompt.mp3"
+      },
+      "choices": [
+        {
+          "en": "assets/minecraft/quiz/en/mc-b1-q01-choice-1.mp3",
+          "zh": "assets/minecraft/quiz/zh/mc-b1-q01-choice-1.mp3"
+        },
+        {
+          "en": "assets/minecraft/quiz/en/mc-b1-q01-choice-2.mp3",
+          "zh": "assets/minecraft/quiz/zh/mc-b1-q01-choice-2.mp3"
+        },
+        {
+          "en": "assets/minecraft/quiz/en/mc-b1-q01-choice-3.mp3",
+          "zh": "assets/minecraft/quiz/zh/mc-b1-q01-choice-3.mp3"
+        }
+      ]
+    },
+    "mc-b1-q02": {
+      "book": 1,
+      "prompt": {
+        "en": "assets/minecraft/quiz/en/mc-b1-q02-prompt.mp3",
+        "zh": "assets/minecraft/quiz/zh/mc-b1-q02-prompt.mp3"
+      },
+      "choices": [
+        {
+          "en": "assets/minecraft/quiz/en/mc-b1-q02-choice-1.mp3",
+          "zh": "assets/minecraft/quiz/zh/mc-b1-q02-choice-1.mp3"
+        },
+        {
+          "en": "assets/minecraft/quiz/en/mc-b1-q02-choice-2.mp3",
+          "zh": "assets/minecraft/quiz/zh/mc-b1-q02-choice-2.mp3"
+        },
+        {
+          "en": "assets/minecraft/quiz/en/mc-b1-q02-choice-3.mp3",
+          "zh": "assets/minecraft/quiz/zh/mc-b1-q02-choice-3.mp3"
+        }
+      ]
+    },
+    "mc-b1-q03": {
+      "book": 1,
+      "prompt": {
+        "en": "assets/minecraft/quiz/en/mc-b1-q03-prompt.mp3",
+        "zh": "assets/minecraft/quiz/zh/mc-b1-q03-prompt.mp3"
+      },
+      "choices": [
+        {
+          "en": "assets/minecraft/quiz/en/mc-b1-q03-choice-1.mp3",
+          "zh": "assets/minecraft/quiz/zh/mc-b1-q03-choice-1.mp3"
+        },
+        {
+          "en": "assets/minecraft/quiz/en/mc-b1-q01-choice-2.mp3",
+          "zh": "assets/minecraft/quiz/zh/mc-b1-q01-choice-2.mp3"
+        },
+        {
+          "en": "assets/minecraft/quiz/en/mc-b1-q03-choice-3.mp3",
+          "zh": "assets/minecraft/quiz/zh/mc-b1-q03-choice-3.mp3"
+        }
+      ]
+    },
+    "mc-b1-q04": {
+      "book": 1,
+      "prompt": {
+        "en": "assets/minecraft/quiz/en/mc-b1-q04-prompt.mp3",
+        "zh": "assets/minecraft/quiz/zh/mc-b1-q04-prompt.mp3"
+      },
+      "choices": [
+        {
+          "en": "assets/minecraft/quiz/en/mc-b1-q01-choice-1.mp3",
+          "zh": "assets/minecraft/quiz/zh/mc-b1-q01-choice-1.mp3"
+        },
+        {
+          "en": "assets/minecraft/quiz/en/mc-b1-q02-choice-1.mp3",
+          "zh": "assets/minecraft/quiz/zh/mc-b1-q02-choice-1.mp3"
+        },
+        {
+          "en": "assets/minecraft/quiz/en/mc-b1-q01-choice-3.mp3",
+          "zh": "assets/minecraft/quiz/zh/mc-b1-q01-choice-3.mp3"
+        }
+      ]
+    },
+    "mc-b1-q05": {
+      "book": 1,
+      "prompt": {
+        "en": "assets/minecraft/quiz/en/mc-b1-q05-prompt.mp3",
+        "zh": "assets/minecraft/quiz/zh/mc-b1-q05-prompt.mp3"
+      },
+      "choices": [
+        {
+          "en": "assets/minecraft/quiz/en/mc-b1-q01-choice-1.mp3",
+          "zh": "assets/minecraft/quiz/zh/mc-b1-q01-choice-1.mp3"
+        },
+        {
+          "en": "assets/minecraft/quiz/en/mc-b1-q01-choice-2.mp3",
+          "zh": "assets/minecraft/quiz/zh/mc-b1-q01-choice-2.mp3"
+        },
+        {
+          "en": "assets/minecraft/quiz/en/mc-b1-q03-choice-1.mp3",
+          "zh": "assets/minecraft/quiz/zh/mc-b1-q03-choice-1.mp3"
+        }
+      ]
+    },
+    "mc-b2-q01": {
+      "book": 2,
+      "prompt": {
+        "en": "assets/minecraft/quiz/en/mc-b1-q02-prompt.mp3",
+        "zh": "assets/minecraft/quiz/zh/mc-b1-q02-prompt.mp3"
+      },
+      "choices": [
+        {
+          "en": "assets/minecraft/quiz/en/mc-b1-q01-choice-2.mp3",
+          "zh": "assets/minecraft/quiz/zh/mc-b1-q01-choice-2.mp3"
+        },
+        {
+          "en": "assets/minecraft/quiz/en/mc-b1-q02-choice-3.mp3",
+          "zh": "assets/minecraft/quiz/zh/mc-b1-q02-choice-3.mp3"
+        },
+        {
+          "en": "assets/minecraft/quiz/en/mc-b2-q01-choice-3.mp3",
+          "zh": "assets/minecraft/quiz/zh/mc-b2-q01-choice-3.mp3"
+        }
+      ]
+    },
+    "mc-b2-q02": {
+      "book": 2,
+      "prompt": {
+        "en": "assets/minecraft/quiz/en/mc-b1-q05-prompt.mp3",
+        "zh": "assets/minecraft/quiz/zh/mc-b1-q05-prompt.mp3"
+      },
+      "choices": [
+        {
+          "en": "assets/minecraft/quiz/en/mc-b2-q02-choice-1.mp3",
+          "zh": "assets/minecraft/quiz/zh/mc-b2-q02-choice-1.mp3"
+        },
+        {
+          "en": "assets/minecraft/quiz/en/mc-b2-q02-choice-2.mp3",
+          "zh": "assets/minecraft/quiz/zh/mc-b2-q02-choice-2.mp3"
+        },
+        {
+          "en": "assets/minecraft/quiz/en/mc-b1-q01-choice-1.mp3",
+          "zh": "assets/minecraft/quiz/zh/mc-b1-q01-choice-1.mp3"
+        }
+      ]
+    },
+    "mc-b2-q03": {
+      "book": 2,
+      "prompt": {
+        "en": "assets/minecraft/quiz/en/mc-b2-q03-prompt.mp3",
+        "zh": "assets/minecraft/quiz/zh/mc-b2-q03-prompt.mp3"
+      },
+      "choices": [
+        {
+          "en": "assets/minecraft/quiz/en/mc-b2-q03-choice-1.mp3",
+          "zh": "assets/minecraft/quiz/zh/mc-b2-q03-choice-1.mp3"
+        },
+        {
+          "en": "assets/minecraft/quiz/en/mc-b2-q03-choice-2.mp3",
+          "zh": "assets/minecraft/quiz/zh/mc-b2-q03-choice-2.mp3"
+        },
+        {
+          "en": "assets/minecraft/quiz/en/mc-b2-q03-choice-3.mp3",
+          "zh": "assets/minecraft/quiz/zh/mc-b2-q03-choice-3.mp3"
+        }
+      ]
+    },
+    "mc-b2-q04": {
+      "book": 2,
+      "prompt": {
+        "en": "assets/minecraft/quiz/en/mc-b2-q04-prompt.mp3",
+        "zh": "assets/minecraft/quiz/zh/mc-b2-q04-prompt.mp3"
+      },
+      "choices": [
+        {
+          "en": "assets/minecraft/quiz/en/mc-b2-q04-choice-1.mp3",
+          "zh": "assets/minecraft/quiz/zh/mc-b2-q04-choice-1.mp3"
+        },
+        {
+          "en": "assets/minecraft/quiz/en/mc-b2-q04-choice-2.mp3",
+          "zh": "assets/minecraft/quiz/zh/mc-b2-q04-choice-2.mp3"
+        },
+        {
+          "en": "assets/minecraft/quiz/en/mc-b1-q01-choice-1.mp3",
+          "zh": "assets/minecraft/quiz/zh/mc-b1-q01-choice-1.mp3"
+        }
+      ]
+    },
+    "mc-b2-q05": {
+      "book": 2,
+      "prompt": {
+        "en": "assets/minecraft/quiz/en/mc-b2-q05-prompt.mp3",
+        "zh": "assets/minecraft/quiz/zh/mc-b2-q05-prompt.mp3"
+      },
+      "choices": [
+        {
+          "en": "assets/minecraft/quiz/en/mc-b2-q03-choice-1.mp3",
+          "zh": "assets/minecraft/quiz/zh/mc-b2-q03-choice-1.mp3"
+        },
+        {
+          "en": "assets/minecraft/quiz/en/mc-b1-q02-choice-3.mp3",
+          "zh": "assets/minecraft/quiz/zh/mc-b1-q02-choice-3.mp3"
+        },
+        {
+          "en": "assets/minecraft/quiz/en/mc-b2-q04-choice-2.mp3",
+          "zh": "assets/minecraft/quiz/zh/mc-b2-q04-choice-2.mp3"
+        }
+      ]
+    },
+    "mc-b3-q01": {
+      "book": 3,
+      "prompt": {
+        "en": "assets/minecraft/quiz/en/mc-b3-q01-prompt.mp3",
+        "zh": "assets/minecraft/quiz/zh/mc-b3-q01-prompt.mp3"
+      },
+      "choices": [
+        {
+          "en": "assets/minecraft/quiz/en/mc-b3-q01-choice-1.mp3",
+          "zh": "assets/minecraft/quiz/zh/mc-b3-q01-choice-1.mp3"
+        },
+        {
+          "en": "assets/minecraft/quiz/en/mc-b1-q01-choice-2.mp3",
+          "zh": "assets/minecraft/quiz/zh/mc-b1-q01-choice-2.mp3"
+        },
+        {
+          "en": "assets/minecraft/quiz/en/mc-b3-q01-choice-3.mp3",
+          "zh": "assets/minecraft/quiz/zh/mc-b3-q01-choice-3.mp3"
+        }
+      ]
+    },
+    "mc-b3-q02": {
+      "book": 3,
+      "prompt": {
+        "en": "assets/minecraft/quiz/en/mc-b3-q02-prompt.mp3",
+        "zh": "assets/minecraft/quiz/zh/mc-b3-q02-prompt.mp3"
+      },
+      "choices": [
+        {
+          "en": "assets/minecraft/quiz/en/mc-b2-q03-choice-1.mp3",
+          "zh": "assets/minecraft/quiz/zh/mc-b2-q03-choice-1.mp3"
+        },
+        {
+          "en": "assets/minecraft/quiz/en/mc-b1-q02-choice-2.mp3",
+          "zh": "assets/minecraft/quiz/zh/mc-b1-q02-choice-2.mp3"
+        },
+        {
+          "en": "assets/minecraft/quiz/en/mc-b3-q02-choice-3.mp3",
+          "zh": "assets/minecraft/quiz/zh/mc-b3-q02-choice-3.mp3"
+        }
+      ]
+    },
+    "mc-b3-q03": {
+      "book": 3,
+      "prompt": {
+        "en": "assets/minecraft/quiz/en/mc-b2-q05-prompt.mp3",
+        "zh": "assets/minecraft/quiz/zh/mc-b2-q05-prompt.mp3"
+      },
+      "choices": [
+        {
+          "en": "assets/minecraft/quiz/en/mc-b1-q03-choice-1.mp3",
+          "zh": "assets/minecraft/quiz/zh/mc-b1-q03-choice-1.mp3"
+        },
+        {
+          "en": "assets/minecraft/quiz/en/mc-b1-q01-choice-2.mp3",
+          "zh": "assets/minecraft/quiz/zh/mc-b1-q01-choice-2.mp3"
+        },
+        {
+          "en": "assets/minecraft/quiz/en/mc-b2-q03-choice-1.mp3",
+          "zh": "assets/minecraft/quiz/zh/mc-b2-q03-choice-1.mp3"
+        }
+      ]
+    },
+    "mc-b3-q04": {
+      "book": 3,
+      "prompt": {
+        "en": "assets/minecraft/quiz/en/mc-b3-q04-prompt.mp3",
+        "zh": "assets/minecraft/quiz/zh/mc-b3-q04-prompt.mp3"
+      },
+      "choices": [
+        {
+          "en": "assets/minecraft/quiz/en/mc-b3-q01-choice-3.mp3",
+          "zh": "assets/minecraft/quiz/zh/mc-b3-q01-choice-3.mp3"
+        },
+        {
+          "en": "assets/minecraft/quiz/en/mc-b3-q01-choice-1.mp3",
+          "zh": "assets/minecraft/quiz/zh/mc-b3-q01-choice-1.mp3"
+        },
+        {
+          "en": "assets/minecraft/quiz/en/mc-b3-q02-choice-3.mp3",
+          "zh": "assets/minecraft/quiz/zh/mc-b3-q02-choice-3.mp3"
+        }
+      ]
+    },
+    "mc-b4-q01": {
+      "book": 4,
+      "prompt": {
+        "en": "assets/minecraft/quiz/en/mc-b4-q01-prompt.mp3",
+        "zh": "assets/minecraft/quiz/zh/mc-b4-q01-prompt.mp3"
+      },
+      "choices": [
+        {
+          "en": "assets/minecraft/quiz/en/mc-b1-q03-choice-1.mp3",
+          "zh": "assets/minecraft/quiz/zh/mc-b1-q03-choice-1.mp3"
+        },
+        {
+          "en": "assets/minecraft/quiz/en/mc-b4-q01-choice-2.mp3",
+          "zh": "assets/minecraft/quiz/zh/mc-b4-q01-choice-2.mp3"
+        },
+        {
+          "en": "assets/minecraft/quiz/en/mc-b4-q01-choice-3.mp3",
+          "zh": "assets/minecraft/quiz/zh/mc-b4-q01-choice-3.mp3"
+        }
+      ]
+    },
+    "mc-b4-q02": {
+      "book": 4,
+      "prompt": {
+        "en": "assets/minecraft/quiz/en/mc-b3-q01-prompt.mp3",
+        "zh": "assets/minecraft/quiz/zh/mc-b3-q01-prompt.mp3"
+      },
+      "choices": [
+        {
+          "en": "assets/minecraft/quiz/en/mc-b2-q03-choice-1.mp3",
+          "zh": "assets/minecraft/quiz/zh/mc-b4-q02-choice-1.mp3"
+        },
+        {
+          "en": "assets/minecraft/quiz/en/mc-b3-q01-choice-3.mp3",
+          "zh": "assets/minecraft/quiz/zh/mc-b3-q01-choice-3.mp3"
+        },
+        {
+          "en": "assets/minecraft/quiz/en/mc-b2-q01-choice-3.mp3",
+          "zh": "assets/minecraft/quiz/zh/mc-b2-q01-choice-3.mp3"
+        }
+      ]
+    },
+    "mc-b4-q03": {
+      "book": 4,
+      "prompt": {
+        "en": "assets/minecraft/quiz/en/mc-b4-q03-prompt.mp3",
+        "zh": "assets/minecraft/quiz/zh/mc-b4-q03-prompt.mp3"
+      },
+      "choices": [
+        {
+          "en": "assets/minecraft/quiz/en/mc-b2-q02-choice-1.mp3",
+          "zh": "assets/minecraft/quiz/zh/mc-b2-q02-choice-1.mp3"
+        },
+        {
+          "en": "assets/minecraft/quiz/en/mc-b2-q02-choice-2.mp3",
+          "zh": "assets/minecraft/quiz/zh/mc-b2-q02-choice-2.mp3"
+        },
+        {
+          "en": "assets/minecraft/quiz/en/mc-b4-q03-choice-3.mp3",
+          "zh": "assets/minecraft/quiz/zh/mc-b4-q03-choice-3.mp3"
+        }
+      ]
+    },
+    "mc-b5-q01": {
+      "book": 5,
+      "prompt": {
+        "en": "assets/minecraft/quiz/en/mc-b5-q01-prompt.mp3",
+        "zh": "assets/minecraft/quiz/zh/mc-b5-q01-prompt.mp3"
+      },
+      "choices": [
+        {
+          "en": "assets/minecraft/quiz/en/mc-b5-q01-choice-1.mp3",
+          "zh": "assets/minecraft/quiz/zh/mc-b5-q01-choice-1.mp3"
+        },
+        {
+          "en": "assets/minecraft/quiz/en/mc-b1-q01-choice-2.mp3",
+          "zh": "assets/minecraft/quiz/zh/mc-b1-q01-choice-2.mp3"
+        },
+        {
+          "en": "assets/minecraft/quiz/en/mc-b5-q01-choice-3.mp3",
+          "zh": "assets/minecraft/quiz/zh/mc-b5-q01-choice-3.mp3"
+        }
+      ]
+    },
+    "mc-b5-q02": {
+      "book": 5,
+      "prompt": {
+        "en": "assets/minecraft/quiz/en/mc-b5-q02-prompt.mp3",
+        "zh": "assets/minecraft/quiz/zh/mc-b5-q02-prompt.mp3"
+      },
+      "choices": [
+        {
+          "en": "assets/minecraft/quiz/en/mc-b5-q02-choice-1.mp3",
+          "zh": "assets/minecraft/quiz/zh/mc-b5-q02-choice-1.mp3"
+        },
+        {
+          "en": "assets/minecraft/quiz/en/mc-b1-q02-choice-2.mp3",
+          "zh": "assets/minecraft/quiz/zh/mc-b1-q02-choice-2.mp3"
+        },
+        {
+          "en": "assets/minecraft/quiz/en/mc-b5-q02-choice-3.mp3",
+          "zh": "assets/minecraft/quiz/zh/mc-b5-q02-choice-3.mp3"
+        }
+      ]
+    },
+    "mc-b5-q03": {
+      "book": 5,
+      "prompt": {
+        "en": "assets/minecraft/quiz/en/mc-b5-q03-prompt.mp3",
+        "zh": "assets/minecraft/quiz/zh/mc-b5-q03-prompt.mp3"
+      },
+      "choices": [
+        {
+          "en": "assets/minecraft/quiz/en/mc-b1-q03-choice-1.mp3",
+          "zh": "assets/minecraft/quiz/zh/mc-b1-q03-choice-1.mp3"
+        },
+        {
+          "en": "assets/minecraft/quiz/en/mc-b1-q01-choice-2.mp3",
+          "zh": "assets/minecraft/quiz/zh/mc-b1-q01-choice-2.mp3"
+        },
+        {
+          "en": "assets/minecraft/quiz/en/mc-b5-q03-choice-3.mp3",
+          "zh": "assets/minecraft/quiz/zh/mc-b5-q03-choice-3.mp3"
+        }
+      ]
+    },
+    "mc-b5-q04": {
+      "book": 5,
+      "prompt": {
+        "en": "assets/minecraft/quiz/en/mc-b5-q04-prompt.mp3",
+        "zh": "assets/minecraft/quiz/zh/mc-b5-q04-prompt.mp3"
+      },
+      "choices": [
+        {
+          "en": "assets/minecraft/quiz/en/mc-b5-q02-choice-3.mp3",
+          "zh": "assets/minecraft/quiz/zh/mc-b5-q02-choice-3.mp3"
+        },
+        {
+          "en": "assets/minecraft/quiz/en/mc-b5-q02-choice-1.mp3",
+          "zh": "assets/minecraft/quiz/zh/mc-b5-q02-choice-1.mp3"
+        },
+        {
+          "en": "assets/minecraft/quiz/en/mc-b5-q01-choice-1.mp3",
+          "zh": "assets/minecraft/quiz/zh/mc-b5-q01-choice-1.mp3"
+        }
+      ]
+    },
+    "mc-b5-q05": {
+      "book": 5,
+      "prompt": {
+        "en": "assets/minecraft/quiz/en/mc-b5-q05-prompt.mp3",
+        "zh": "assets/minecraft/quiz/zh/mc-b5-q05-prompt.mp3"
+      },
+      "choices": [
+        {
+          "en": "assets/minecraft/quiz/en/mc-b5-q01-choice-1.mp3",
+          "zh": "assets/minecraft/quiz/zh/mc-b5-q01-choice-1.mp3"
+        },
+        {
+          "en": "assets/minecraft/quiz/en/mc-b5-q03-choice-3.mp3",
+          "zh": "assets/minecraft/quiz/zh/mc-b5-q03-choice-3.mp3"
+        },
+        {
+          "en": "assets/minecraft/quiz/en/mc-b5-q02-choice-3.mp3",
+          "zh": "assets/minecraft/quiz/zh/mc-b5-q02-choice-3.mp3"
+        }
+      ]
+    }
+  }
+}
