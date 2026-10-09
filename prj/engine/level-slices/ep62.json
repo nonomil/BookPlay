@@ -1,0 +1,58 @@
+{
+  "id": "ep62",
+  "order": 62,
+  "titleZh": "西游记 第62集",
+  "titleEn": "The Goldfish in the Basket",
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep62/f1.jpg",
+  "hero": {
+    "id": "wukong"
+  },
+  "minor": {
+    "nameZh": "小妖"
+  },
+  "enemy": {
+    "css": "ghost"
+  },
+  "boss": {
+    "id": "guanyin",
+    "nameZh": "观音",
+    "css": "ghost",
+    "attacks": ["ring", "bubble"],
+    "hits": 8,
+    "countdownSec": 8
+  },
+  "words": [
+    {"zh": "冥想", "en": "meditate"},
+    {"zh": "粗略地一瞥", "en": "glance"},
+    {"zh": "困惑的", "en": "puzzled"},
+    {"zh": "认出", "en": "recognize"},
+    {"zh": "讲授", "en": "taught"},
+    {"zh": "共同的", "en": "common"},
+    {"zh": "共同地", "en": "in common"},
+    {"zh": "各式各样的", "en": "all sorts"},
+    {"zh": "工作", "en": "work"},
+    {"zh": "困惑", "en": "confusion"},
+    {"zh": "传开", "en": "spread"},
+    {"zh": "降低", "en": "lower"}
+  ],
+  "waves": [
+    {
+      "quota": 7,
+      "cap": 3,
+      "projectileHp": 1,
+      "tip": "打中「冥想」的小妖"
+    },
+    {
+      "quota": 7,
+      "cap": 3,
+      "projectileHp": 2,
+      "tip": "第二波要打两下"
+    }
+  ],
+  "art": {
+    "enemyPrompt": "A full body chibi sticker of a pale ghost stands on a flat magenta background, with a thick outline and no text. It matches the ghost sprite as a rounded pale blue-white sheet with two dark oval eyes, a small open dark mouth, and two short stubby arms.",
+    "bossPrompt": "A full body chibi sticker of Guanyin stands on a flat magenta background, with a thick outline and no text. She matches the ghost sprite as a pale blue-white rounded sheet with a gentle face, a tiny willow sprig and vase, two dark oval eyes, and short stubby arms, and she is not dressed as Sun Wukong.",
+    "backdropPrompt": "A wide 16:9 children's storybook landscape for the generic theme and the title The Goldfish in the Basket: a bright daytime sky with soft white clouds, a wide pale-blue river and lotus pads kept to the far sides, warm green grassy banks, and one large empty woven bamboo basket resting on the left verge. A clear empty dirt path runs through the center, open and unoccupied. No characters, no animals, no letters, and no writing."
+  }
+}

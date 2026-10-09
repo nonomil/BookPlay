@@ -1,0 +1,58 @@
+{
+  "id": "ep31",
+  "order": 31,
+  "titleZh": "西游记 第31集",
+  "titleEn": "Guanyin's Vase",
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep31/f1.jpg",
+  "hero": {
+    "id": "wukong"
+  },
+  "minor": {
+    "nameZh": "小妖"
+  },
+  "enemy": {
+    "css": "ghost"
+  },
+  "boss": {
+    "id": "guanyin",
+    "nameZh": "观音",
+    "css": "ghost",
+    "attacks": ["bubble", "ring"],
+    "hits": 7,
+    "countdownSec": 7
+  },
+  "words": [
+    {"zh": "花瓶", "en": "vase"},
+    {"zh": "出现", "en": "appear"},
+    {"zh": "龌龊的", "en": "nasty"},
+    {"zh": "损伤", "en": "harm"},
+    {"zh": "修理", "en": "fix"},
+    {"zh": "说谎", "en": "lying"},
+    {"zh": "注定失败的", "en": "doomed"},
+    {"zh": "冥想", "en": "meditate"},
+    {"zh": "可疑的", "en": "suspicious"},
+    {"zh": "稀有的", "en": "rare"},
+    {"zh": "耸肩", "en": "shrug"},
+    {"zh": "学习", "en": "learn"}
+  ],
+  "waves": [
+    {
+      "quota": 6,
+      "cap": 3,
+      "projectileHp": 1,
+      "tip": "打中「花瓶」的小妖"
+    },
+    {
+      "quota": 6,
+      "cap": 3,
+      "projectileHp": 2,
+      "tip": "第二波要打两下"
+    }
+  ],
+  "art": {
+    "enemyPrompt": "A chibi sticker of a full body pale ghost stands on a flat magenta background, with a thick outline and no text. It matches the ghost sprite: a rounded pale blue-white sheet, two dark oval eyes, a small open dark mouth, and two short stubby arms.",
+    "bossPrompt": "A chibi sticker of Guanyin stands full body on a flat magenta background, with a thick outline and no text. She is the ghost sprite, a pale blue-white rounded sheet with two dark oval eyes, a small open dark mouth, and two short stubby arms, and she is not dressed as Sun Wukong.",
+    "backdropPrompt": "A wide 16:9 children's storybook landscape of the generic theme for Guanyin's Vase. Pale blue sky and soft white clouds fill the top, and warm green grassy ground fills the bottom. A clear empty dirt path runs straight through the center, open and unoccupied. Quiet seaside slopes stand off to either side, with purple bamboo, lotus ponds, a small empty pagoda, and a stone ledge set back from the path holding one large white porcelain vase, and a calm blue sea beyond the garden. No characters, no animals, no letters, and no writing."
+  }
+}

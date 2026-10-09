@@ -1,0 +1,58 @@
+{
+  "id": "ep94",
+  "order": 94,
+  "titleZh": "西游记 第94集",
+  "titleEn": "The Elephant Demon",
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep94/f1.jpg",
+  "hero": {
+    "id": "wukong"
+  },
+  "minor": {
+    "nameZh": "小妖"
+  },
+  "enemy": {
+    "css": "ghost"
+  },
+  "boss": {
+    "id": "liondemon",
+    "nameZh": "狮魔王",
+    "css": "ghost",
+    "attacks": ["dash", "ring"],
+    "hits": 8,
+    "countdownSec": 7
+  },
+  "words": [
+    {"zh": "疼痛的", "en": "aching"},
+    {"zh": "疼痛", "en": "ache"},
+    {"zh": "不打扰", "en": "leave alone"},
+    {"zh": "危险的", "en": "dangerous"},
+    {"zh": "完美的", "en": "perfect"},
+    {"zh": "捕获", "en": "capture"},
+    {"zh": "最后得到", "en": "wound up"},
+    {"zh": "交托", "en": "leave"},
+    {"zh": "争论", "en": "argue"},
+    {"zh": "吃", "en": "eaten"},
+    {"zh": "痛打", "en": "beat up"},
+    {"zh": "里面", "en": "inside"}
+  ],
+  "waves": [
+    {
+      "quota": 7,
+      "cap": 3,
+      "projectileHp": 1,
+      "tip": "打中「疼痛的」的小妖"
+    },
+    {
+      "quota": 7,
+      "cap": 3,
+      "projectileHp": 2,
+      "tip": "第二波要打两下"
+    }
+  ],
+  "art": {
+    "enemyPrompt": "A chibi sticker of a full body pale ghost stands on a flat magenta background, with a thick outline and no text. It matches the ghost sprite: a rounded pale blue-white sheet, two dark oval eyes, a small open dark mouth, and two short stubby arms.",
+    "bossPrompt": "A chibi sticker of the Lion Demon King stands full body on a flat magenta background, with a thick outline and no text. He matches the ghost sprite as a pale blue-white rounded sheet with two dark oval eyes, a small open dark mouth, two short stubby arms, and a short tawny lion mane, and he is not dressed as Sun Wukong.",
+    "backdropPrompt": "A wide 16:9 children's storybook landscape for the generic theme titled The Elephant Demon, with a pale blue sky over warm dusty-green ground and a clear empty path in the center between tall pale cliffs and broad green leaves, painted in soft picture-book colors, with no characters and no letters."
+  }
+}

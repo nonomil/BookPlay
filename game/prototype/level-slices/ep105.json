@@ -1,0 +1,58 @@
+{
+  "id": "ep105",
+  "order": 105,
+  "titleZh": "西游记 第105集",
+  "titleEn": "The Thunderclap Monastery",
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep105/f1.jpg",
+  "hero": {
+    "id": "wukong"
+  },
+  "minor": {
+    "nameZh": "小妖"
+  },
+  "enemy": {
+    "css": "ghost"
+  },
+  "boss": {
+    "id": "imp",
+    "nameZh": "小妖",
+    "css": "ghost",
+    "attacks": ["dash", "ring"],
+    "hits": 8,
+    "countdownSec": 7
+  },
+  "words": [
+    {"zh": "松树", "en": "pine"},
+    {"zh": "竹子", "en": "bamboo"},
+    {"zh": "数不尽的", "en": "countless"},
+    {"zh": "获得", "en": "earn"},
+    {"zh": "宽恕", "en": "forgiveness"},
+    {"zh": "偶然地", "en": "accidentally"},
+    {"zh": "放火", "en": "set fire"},
+    {"zh": "感谢的", "en": "thankful"},
+    {"zh": "塔", "en": "tower"},
+    {"zh": "拱门", "en": "arch"},
+    {"zh": "箱子", "en": "chest"},
+    {"zh": "对面的", "en": "opposite"}
+  ],
+  "waves": [
+    {
+      "quota": 7,
+      "cap": 3,
+      "projectileHp": 1,
+      "tip": "打中「松树」的小妖"
+    },
+    {
+      "quota": 7,
+      "cap": 3,
+      "projectileHp": 2,
+      "tip": "第二波要打两下"
+    }
+  ],
+  "art": {
+    "enemyPrompt": "A chibi sticker of a full body pale ghost stands on a flat magenta background, with a thick outline and no text. It matches the ghost sprite: a rounded pale blue-white sheet, two dark oval eyes, a small open dark mouth, and two short stubby arms.",
+    "bossPrompt": "A chibi sticker of the little demon stands full body on a flat magenta background, with a thick outline and no text. He is the ghost sprite, a pale blue-white rounded sheet with two dark oval eyes, a small open dark mouth, and two short stubby arms, and he is not dressed as Sun Wukong.",
+    "backdropPrompt": "A wide 16:9 children's storybook landscape for the generic theme and the title The Thunderclap Monastery: a bright pale-blue daytime sky with soft white clouds above warm pale stone ground, tall green pines and quiet bamboo groves along both sides, and a distant golden-roofed monastery with a still pagoda and empty stone arches set far left and right. A clear empty dirt path runs through the center, open and unoccupied. Painted as a gentle watercolor storybook scene with no characters, no animals, no letters, and no writing."
+  }
+}

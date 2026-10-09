@@ -1,0 +1,58 @@
+{
+  "id": "ep17",
+  "order": 17,
+  "titleZh": "西游记 第17集",
+  "titleEn": "The Dragon in the River",
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep17/f1.jpg",
+  "hero": {
+    "id": "wukong"
+  },
+  "minor": {
+    "nameZh": "小妖"
+  },
+  "enemy": {
+    "css": "monkey"
+  },
+  "boss": {
+    "id": "whitedragonhorse",
+    "nameZh": "白龙马",
+    "css": "dragon",
+    "attacks": ["bubble", "ring", "dash"],
+    "hits": 6,
+    "countdownSec": 7
+  },
+  "words": [
+    {"zh": "沿途", "en": "along the"},
+    {"zh": "没有关系", "en": "do not"},
+    {"zh": "潜水", "en": "dive"},
+    {"zh": "重踩", "en": "stomp"},
+    {"zh": "懦夫", "en": "coward"},
+    {"zh": "打旋", "en": "swirl"},
+    {"zh": "碰撞", "en": "crash"},
+    {"zh": "翻滚", "en": "churn"},
+    {"zh": "多烂泥的", "en": "muddy"},
+    {"zh": "到底", "en": "on earth"},
+    {"zh": "查问", "en": "demand"},
+    {"zh": "腹", "en": "stomach"}
+  ],
+  "waves": [
+    {
+      "quota": 5,
+      "cap": 2,
+      "projectileHp": 1,
+      "tip": "打中「沿途」的小妖"
+    },
+    {
+      "quota": 5,
+      "cap": 2,
+      "projectileHp": 2,
+      "tip": "第二波要打两下"
+    }
+  ],
+  "art": {
+    "enemyPrompt": "A chibi sticker of a brown monkey minion stands full body with round brown ears, tan inner ears, a peach face, a warm brown torso, and a curled brown tail. It has a thick outline, no text, and a flat magenta background.",
+    "bossPrompt": "A chibi sticker of the white dragon horse stands full body as a green dragon with a pale mint snout, two yellow horns, a darker green body, and one white eye, with no monkey king clothes. It has a thick outline, no text, and a flat magenta background.",
+    "backdropPrompt": "A wide 16:9 children's storybook landscape for the generic theme episode The Dragon in the River: a pale blue sky above soft green and muddy ground, a calm blue-brown river, rounded painted hills and reeds, and a clear empty dirt path running through the center. No characters, no letters, and no text."
+  }
+}

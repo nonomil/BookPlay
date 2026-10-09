@@ -1,0 +1,59 @@
+{
+  "id": "ep9",
+  "order": 9,
+  "titleZh": "西游记 第9集",
+  "titleEn": "The Peach Garden",
+  "theme": "episode-scene",
+  "illustration": "assets/adv_frames/ep9/f1.jpg",
+  "hero": {
+    "id": "wukong"
+  },
+  "minor": {
+    "nameZh": "小妖"
+  },
+  "enemy": {
+    "css": "monkey",
+    "nameZh": "小妖"
+  },
+  "boss": {
+    "id": "wukong",
+    "nameZh": "孙悟空",
+    "css": "monkey",
+    "attacks": ["dash", "ring"],
+    "hits": 6,
+    "countdownSec": 8
+  },
+  "words": [
+    {"zh": "采", "en": "pluck"},
+    {"zh": "树枝", "en": "branch"},
+    {"zh": "咬", "en": "bit"},
+    {"zh": "偷偷地", "en": "secretly"},
+    {"zh": "天堂", "en": "heaven"},
+    {"zh": "同时", "en": "meanwhile"},
+    {"zh": "忙碌的", "en": "busy"},
+    {"zh": "一年的", "en": "annual"},
+    {"zh": "少女", "en": "maiden"},
+    {"zh": "长袍", "en": "gown"},
+    {"zh": "重要的", "en": "important"},
+    {"zh": "菩萨", "en": "bodhisattva"}
+  ],
+  "waves": [
+    {
+      "quota": 5,
+      "cap": 2,
+      "projectileHp": 1,
+      "tip": "打中「采」的小妖"
+    },
+    {
+      "quota": 5,
+      "cap": 2,
+      "projectileHp": 2,
+      "tip": "第二波要打两下"
+    }
+  ],
+  "art": {
+    "enemyPrompt": "A full-body chibi sticker of a small monkey has a round chestnut-brown head, a peach oval face, two round ears with peach insides, a short tan-brown body, and a curled brown tail. It stands on a flat magenta background with a thick dark outline, no clothes, and no text.",
+    "bossPrompt": "A full-body chibi sticker shows the boss Sun Wukong as the same plain monkey, with a round chestnut-brown head, a peach oval face, two round ears with peach insides, a short tan-brown body, and a curled brown tail. He stands on a flat magenta background with a thick dark outline and no text, and he is not dressed as Sun Wukong, with no golden headband, staff, tiger-skin skirt, armor, or boots.",
+    "backdropPrompt": "A wide 16:9 children's storybook landscape of The Peach Garden, a sunny episode scene in soft painted colors. Pale blue sky and warm cream clouds fill the top, and green grass covers the ground. A clear empty tan path runs through the center from the foreground into the distance. Peach trees with pink blossoms and ripe peaches stand only along the left and right sides, with low garden hills far away. No characters, no letters, and no text."
+  }
+}

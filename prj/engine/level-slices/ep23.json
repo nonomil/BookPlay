@@ -1,0 +1,58 @@
+{
+  "id": "ep23",
+  "order": 23,
+  "titleZh": "西游记 第23集",
+  "titleEn": "Great Protectors",
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep23/f1.jpg",
+  "hero": {
+    "id": "wukong"
+  },
+  "minor": {
+    "nameZh": "小妖"
+  },
+  "enemy": {
+    "css": "ghost"
+  },
+  "boss": {
+    "id": "imp",
+    "nameZh": "小妖",
+    "css": "ghost",
+    "attacks": ["dash", "ring"],
+    "hits": 7,
+    "countdownSec": 7
+  },
+  "words": [
+    {"zh": "保护者", "en": "protector"},
+    {"zh": "鼻", "en": "snout"},
+    {"zh": "挥舞", "en": "swung"},
+    {"zh": "阻塞", "en": "block"},
+    {"zh": "面朝下的", "en": "facedown"},
+    {"zh": "猛然撞上", "en": "slam"},
+    {"zh": "打碎", "en": "smash"},
+    {"zh": "灰尘", "en": "dust"},
+    {"zh": "投降", "en": "surrender"},
+    {"zh": "导致", "en": "cause"},
+    {"zh": "冲", "en": "lunge"},
+    {"zh": "困", "en": "trap"}
+  ],
+  "waves": [
+    {
+      "quota": 6,
+      "cap": 3,
+      "projectileHp": 1,
+      "tip": "打中「保护者」的小妖"
+    },
+    {
+      "quota": 6,
+      "cap": 3,
+      "projectileHp": 2,
+      "tip": "第二波要打两下"
+    }
+  ],
+  "art": {
+    "enemyPrompt": "A full-body chibi sticker of a ghost with a pale icy sheet body, two dark oval eyes, an open dark mouth, and two stubby arms. It has a thick outline on a flat magenta background and contains no text.",
+    "bossPrompt": "A full-body chibi sticker of a little demon imp with the same pale ghost body, dark oval eyes, open mouth, stubby arms, and a small gold crown. It has a thick outline on a flat magenta background, contains no text, and is not dressed as the Monkey King.",
+    "backdropPrompt": "A wide 16:9 children's storybook landscape for the generic theme episode Great Protectors: a pale blue daytime sky above warm brown dirt and green forest ground, leafy trees, pale rocks, and low bushes kept to the sides, and a clear empty dirt path running through the center. No characters, no letters, and no text."
+  }
+}

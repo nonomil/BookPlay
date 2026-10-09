@@ -1,0 +1,58 @@
+{
+  "id": "ep70",
+  "order": 70,
+  "titleZh": "西游记 第70集",
+  "titleEn": "The Star Lord",
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep70/f1.jpg",
+  "hero": {
+    "id": "wukong"
+  },
+  "minor": {
+    "nameZh": "小妖"
+  },
+  "enemy": {
+    "css": "ghost"
+  },
+  "boss": {
+    "id": "guanyin",
+    "nameZh": "观音",
+    "css": "ghost",
+    "attacks": ["bubble", "ring"],
+    "hits": 8,
+    "countdownSec": 8
+  },
+  "words": [
+    {"zh": "长官", "en": "lord"},
+    {"zh": "刺", "en": "stab"},
+    {"zh": "无论如何", "en": "anyway"},
+    {"zh": "刺", "en": "stinger"},
+    {"zh": "发抖", "en": "shudder"},
+    {"zh": "疼痛", "en": "pain"},
+    {"zh": "蹑手蹑脚地走", "en": "creep"},
+    {"zh": "叮", "en": "stung"},
+    {"zh": "捕获", "en": "capture"},
+    {"zh": "逃亡", "en": "escape"},
+    {"zh": "闪光", "en": "flash"},
+    {"zh": "您好", "en": "greeting"}
+  ],
+  "waves": [
+    {
+      "quota": 7,
+      "cap": 3,
+      "projectileHp": 1,
+      "tip": "打中「长官」的小妖"
+    },
+    {
+      "quota": 7,
+      "cap": 3,
+      "projectileHp": 2,
+      "tip": "第二波要打两下"
+    }
+  ],
+  "art": {
+    "enemyPrompt": "A full body chibi sticker of a pale ghost stands on a flat magenta background, with a thick outline and no text. It matches the ghost sprite as a rounded pale blue-white sheet with two dark oval eyes, a small open dark mouth, and two short stubby arms.",
+    "bossPrompt": "A full body chibi sticker of Guanyin stands on a flat magenta background, with a thick outline and no text. She is the ghost sprite, a pale blue-white rounded sheet with a gentle face, two dark oval eyes, a small open dark mouth, and two short stubby arms, and she is not dressed as Sun Wukong.",
+    "backdropPrompt": "A wide 16:9 children's storybook landscape for the generic theme and the title The Star Lord: a deep indigo night sky with soft gold stars and cream clouds above, and warm brown rocky mountain ground below. A clear empty dirt path runs through the center, open and unoccupied. Along the left and right sides only stand pine trees, stone cliffs, and a dark cave mouth, with a distant empty star palace of indigo stone and gold trim resting on clouds. No characters, no animals, no letters, and no writing."
+  }
+}

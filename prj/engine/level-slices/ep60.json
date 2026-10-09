@@ -1,0 +1,58 @@
+{
+  "id": "ep60",
+  "order": 60,
+  "titleZh": "西游记 第60集",
+  "titleEn": "Snow!",
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep60/f1.jpg",
+  "hero": {
+    "id": "wukong"
+  },
+  "minor": {
+    "nameZh": "小妖"
+  },
+  "enemy": {
+    "css": "ghost"
+  },
+  "boss": {
+    "id": "imp",
+    "nameZh": "小妖",
+    "css": "ghost",
+    "attacks": ["bubble", "dash"],
+    "hits": 7,
+    "countdownSec": 7
+  },
+  "words": [
+    {"zh": "盯着看", "en": "eye"},
+    {"zh": "怀疑地", "en": "suspiciously"},
+    {"zh": "不完全是", "en": "not really"},
+    {"zh": "犹豫", "en": "hesitate"},
+    {"zh": "查问", "en": "demand"},
+    {"zh": "羞愧的", "en": "ashamed"},
+    {"zh": "困", "en": "trap"},
+    {"zh": "惩罚", "en": "punishment"},
+    {"zh": "冲", "en": "lunge"},
+    {"zh": "转身", "en": "spun around"},
+    {"zh": "消失", "en": "disappear"},
+    {"zh": "捕获", "en": "capture"}
+  ],
+  "waves": [
+    {
+      "quota": 6,
+      "cap": 3,
+      "projectileHp": 1,
+      "tip": "打中「盯着看」的小妖"
+    },
+    {
+      "quota": 6,
+      "cap": 3,
+      "projectileHp": 2,
+      "tip": "第二波要打两下"
+    }
+  ],
+  "art": {
+    "enemyPrompt": "A full body chibi sticker of a pale ghost stands on a flat magenta background, with a thick outline and no text. It matches the ghost sprite: a rounded pale blue-white sheet, two dark oval eyes, a small open dark mouth, and two short stubby arms.",
+    "bossPrompt": "A full body chibi sticker of the Little Demon stands on a flat magenta background, with a thick outline and no text. This Little Demon is the ghost sprite, a pale blue-white rounded sheet with two dark oval eyes, a small open dark mouth, and two short stubby arms, and is not dressed as Sun Wukong.",
+    "backdropPrompt": "A wide 16:9 children's storybook landscape for the generic theme and the title Snow!: a soft gray-blue winter sky with pale clouds above, and deep white snow covering the ground below. A clear empty path runs through the center, open and unoccupied. Snow-laden pines and low pale hills stay only along the sides. Painted as a gentle watercolor storybook scene with no characters, no animals, no letters, and no writing."
+  }
+}

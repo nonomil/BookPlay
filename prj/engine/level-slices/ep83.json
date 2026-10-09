@@ -1,0 +1,58 @@
+{
+  "id": "ep83",
+  "order": 83,
+  "titleZh": "西游记 第83集",
+  "titleEn": "The Melon Field",
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep83/f1.jpg",
+  "hero": {
+    "id": "wukong"
+  },
+  "minor": {
+    "nameZh": "小妖"
+  },
+  "enemy": {
+    "css": "ghost"
+  },
+  "boss": {
+    "id": "yellowbrows",
+    "nameZh": "黄眉怪",
+    "css": "ghost",
+    "attacks": ["ring", "dash"],
+    "hits": 8,
+    "countdownSec": 7
+  },
+  "words": [
+    {"zh": "甜瓜", "en": "melon"},
+    {"zh": "魔术", "en": "magic"},
+    {"zh": "困", "en": "trap"},
+    {"zh": "一双", "en": "a pair of"},
+    {"zh": "过去经常", "en": "used to"},
+    {"zh": "珍爱的", "en": "precious"},
+    {"zh": "珍品", "en": "treasure"},
+    {"zh": "计划", "en": "plan"},
+    {"zh": "敢", "en": "dare"},
+    {"zh": "威胁", "en": "threaten"},
+    {"zh": "后来", "en": "later"},
+    {"zh": "木刻的", "en": "wooden"}
+  ],
+  "waves": [
+    {
+      "quota": 7,
+      "cap": 3,
+      "projectileHp": 1,
+      "tip": "打中「甜瓜」的小妖"
+    },
+    {
+      "quota": 7,
+      "cap": 3,
+      "projectileHp": 2,
+      "tip": "第二波要打两下"
+    }
+  ],
+  "art": {
+    "enemyPrompt": "A full body chibi sticker of a small pale ghost shows a rounded icy-white sheet body, two dark oval eyes, a small open dark mouth, and two short stubby arms, with a thick outline and no text. The whole ghost stands full body alone on a flat magenta background.",
+    "bossPrompt": "A full body chibi sticker of Yellow Brows as a pale ghost shows a rounded icy-white sheet body, thick yellow eyebrows, two dark oval eyes, a small open dark mouth, and two short stubby arms, with a thick outline and no text. He stands full body on a flat magenta background and is not dressed as Sun Wukong.",
+    "backdropPrompt": "A wide 16:9 children's storybook landscape of the generic theme for The Melon Field. Pale blue sky and soft white clouds fill the top, and warm brown soil with grassy edges fills the bottom. A clear empty dirt path runs straight through the center, open and unoccupied. Quiet rows of leafy vines and round green sweet melons stand off to either side, with low wooden fences and a few empty woven baskets set back from the path. No characters, no animals, no letters, and no writing."
+  }
+}

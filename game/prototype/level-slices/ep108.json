@@ -1,0 +1,58 @@
+{
+  "id": "ep108",
+  "order": 108,
+  "titleZh": "西游记 第108集",
+  "titleEn": "Rewards",
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep108/f1.jpg",
+  "hero": {
+    "id": "wukong"
+  },
+  "minor": {
+    "nameZh": "小妖"
+  },
+  "enemy": {
+    "css": "ghost"
+  },
+  "boss": {
+    "id": "bajie",
+    "nameZh": "猪八戒",
+    "css": "ghost",
+    "attacks": ["dash", "ring"],
+    "hits": 8,
+    "countdownSec": 7
+  },
+  "words": [
+    {"zh": "报答", "en": "reward"},
+    {"zh": "幸福", "en": "happiness"},
+    {"zh": "脸颊", "en": "cheek"},
+    {"zh": "皇帝", "en": "emperor"},
+    {"zh": "拥抱", "en": "embrace"},
+    {"zh": "期待", "en": "expect"},
+    {"zh": "道歉", "en": "apologize"},
+    {"zh": "注意到", "en": "notice"},
+    {"zh": "抱怨", "en": "complain"},
+    {"zh": "听", "en": "listen"},
+    {"zh": "惊奇", "en": "amazement"},
+    {"zh": "建筑", "en": "build"}
+  ],
+  "waves": [
+    {
+      "quota": 7,
+      "cap": 3,
+      "projectileHp": 1,
+      "tip": "打中「报答」的小妖"
+    },
+    {
+      "quota": 7,
+      "cap": 3,
+      "projectileHp": 2,
+      "tip": "第二波要打两下"
+    }
+  ],
+  "art": {
+    "enemyPrompt": "A full body chibi sticker of a pale ghost minion has a rounded pale blue-white sheet body, two dark oval eyes, a small open mouth, and short stubby arms, drawn with a thick outline and no text. It floats alone on a flat magenta background.",
+    "bossPrompt": "A full body chibi sticker of Zhu Bajie the pig is drawn as the ghost sprite, with a rounded pale blue-white sheet, a pig snout, floppy pig ears, two dark oval eyes, a small open mouth, and short stubby arms, with a thick outline and no text. He stands on a flat magenta background and is not dressed as Sun Wukong.",
+    "backdropPrompt": "A wide 16:9 children's storybook landscape for the generic theme and the title Rewards: a warm golden late-afternoon sky with soft peach clouds, sunlit green grassy ground, and a distant tiled palace courtyard with round wrapped parcels and hanging lanterns kept to the far sides. A clear empty dirt path runs through the center, open and unoccupied. No characters, no animals, no letters, and no writing."
+  }
+}

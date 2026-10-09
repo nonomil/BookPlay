@@ -1,0 +1,58 @@
+{
+  "id": "ep88",
+  "order": 88,
+  "titleZh": "西游记 第88集",
+  "titleEn": "The Priest's Plan",
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep88/f1.jpg",
+  "hero": {
+    "id": "wukong"
+  },
+  "minor": {
+    "nameZh": "小妖"
+  },
+  "enemy": {
+    "css": "ghost"
+  },
+  "boss": {
+    "id": "spiderdemon",
+    "nameZh": "蜘蛛精",
+    "css": "ghost",
+    "attacks": ["ring", "dash"],
+    "hits": 8,
+    "countdownSec": 7
+  },
+  "words": [
+    {"zh": "神职人员", "en": "priest"},
+    {"zh": "年轻的", "en": "young"},
+    {"zh": "包", "en": "wrap"},
+    {"zh": "角", "en": "corner"},
+    {"zh": "脱下", "en": "pull off"},
+    {"zh": "网", "en": "web"},
+    {"zh": "气喘地", "en": "breathlessly"},
+    {"zh": "奸笑", "en": "smirk"},
+    {"zh": "把...吓跑", "en": "scare away"},
+    {"zh": "真的", "en": "real"},
+    {"zh": "英雄", "en": "hero"},
+    {"zh": "勇敢的", "en": "brave"}
+  ],
+  "waves": [
+    {
+      "quota": 7,
+      "cap": 3,
+      "projectileHp": 1,
+      "tip": "打中「神职人员」的小妖"
+    },
+    {
+      "quota": 7,
+      "cap": 3,
+      "projectileHp": 2,
+      "tip": "第二波要打两下"
+    }
+  ],
+  "art": {
+    "enemyPrompt": "A chibi sticker of a full body pale ghost stands on a flat magenta background, with a thick outline and no text. It matches the ghost sprite: a rounded pale blue-white sheet, two dark oval eyes, a small open dark mouth, and two short stubby arms.",
+    "bossPrompt": "A chibi sticker of the Spider Demon stands full body on a flat magenta background, with a thick outline and no text. She is the ghost sprite, a pale blue-white rounded sheet with two dark oval eyes, a small open dark mouth, two short stubby arms, and a tiny silk web, and she is not dressed as Sun Wukong.",
+    "backdropPrompt": "A wide 16:9 children's storybook landscape of the generic theme for The Priest's Plan. Pale blue sky and soft white clouds fill the top, and warm packed-earth ground fills the bottom. A clear empty dirt path runs straight through the center, open and unoccupied. Quiet wooden roadside inn walls stand off to either side, with lattice windows, dark timber beams, strings of garlic and red peppers hanging from the eaves, and faint empty cobwebs in the corners, set back from the path. Painted as a gentle watercolor storybook scene. No characters, no animals, no letters, and no writing."
+  }
+}

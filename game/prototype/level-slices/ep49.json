@@ -1,0 +1,58 @@
+{
+  "id": "ep49",
+  "order": 49,
+  "titleZh": "西游记 第49集",
+  "titleEn": "Red Boy",
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep49/f1.jpg",
+  "hero": {
+    "id": "wukong"
+  },
+  "minor": {
+    "nameZh": "小妖"
+  },
+  "enemy": {
+    "css": "ghost"
+  },
+  "boss": {
+    "id": "redboy",
+    "nameZh": "红孩儿",
+    "css": "ghost",
+    "attacks": ["dash", "ring"],
+    "hits": 7,
+    "countdownSec": 7
+  },
+  "words": [
+    {"zh": "小睡", "en": "nap"},
+    {"zh": "走开", "en": "walk away"},
+    {"zh": "疯狂的", "en": "crazy"},
+    {"zh": "召唤", "en": "summon"},
+    {"zh": "恶意的", "en": "nasty"},
+    {"zh": "顶端", "en": "peak"},
+    {"zh": "强大的", "en": "powerful"},
+    {"zh": "至今为止", "en": "ever"},
+    {"zh": "释放", "en": "release"},
+    {"zh": "轻蔑地哼", "en": "snort"},
+    {"zh": "从...离开", "en": "get off"},
+    {"zh": "失望的", "en": "disappointed"}
+  ],
+  "waves": [
+    {
+      "quota": 6,
+      "cap": 3,
+      "projectileHp": 1,
+      "tip": "打中「小睡」的小妖"
+    },
+    {
+      "quota": 6,
+      "cap": 3,
+      "projectileHp": 2,
+      "tip": "第二波要打两下"
+    }
+  ],
+  "art": {
+    "enemyPrompt": "A chibi sticker of a full body pale ghost stands on a flat magenta background, with a thick outline and no text. It matches the ghost sprite: a rounded pale blue-white sheet, two dark oval eyes, a small open dark mouth, and two short stubby arms.",
+    "bossPrompt": "A chibi sticker of Red Boy stands full body on a flat magenta background, with a thick outline and no text. He is the ghost sprite, a pale blue-white rounded sheet with two dark oval eyes, a small open dark mouth, and two short stubby arms, and he is not dressed as Sun Wukong.",
+    "backdropPrompt": "A wide 16:9 children's storybook landscape for the generic theme and the title Red Boy, showing a quiet withered valley: a warm late-day sky with soft rose and gold clouds, dry ochre ground and pale dust, and bare pine trees only along the left and right. A clear empty dirt path runs through the center toward a distant rocky cave mouth, open and unoccupied. No characters, no animals, no letters, and no writing."
+  }
+}

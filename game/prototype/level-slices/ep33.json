@@ -1,0 +1,58 @@
+{
+  "id": "ep33",
+  "order": 33,
+  "titleZh": "西游记 第33集",
+  "titleEn": "Bajie Takes a Nap",
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep33/f1.jpg",
+  "hero": {
+    "id": "wukong"
+  },
+  "minor": {
+    "nameZh": "小妖"
+  },
+  "enemy": {
+    "css": "ghost"
+  },
+  "boss": {
+    "id": "bajie",
+    "nameZh": "猪八戒",
+    "css": "ghost",
+    "attacks": ["bubble", "dash"],
+    "hits": 7,
+    "countdownSec": 7
+  },
+  "words": [
+    {"zh": "泄露", "en": "let out"},
+    {"zh": "走失", "en": "wander off"},
+    {"zh": "独自", "en": "all alone"},
+    {"zh": "到处", "en": "everywhere"},
+    {"zh": "打呼", "en": "snore"},
+    {"zh": "出发", "en": "head"},
+    {"zh": "同时", "en": "meanwhile"},
+    {"zh": "无聊的", "en": "bored"},
+    {"zh": "走", "en": "walk"},
+    {"zh": "佩服", "en": "admire"},
+    {"zh": "中间", "en": "midst"},
+    {"zh": "牙齿", "en": "fang"}
+  ],
+  "waves": [
+    {
+      "quota": 6,
+      "cap": 3,
+      "projectileHp": 1,
+      "tip": "打中「泄露」的小妖"
+    },
+    {
+      "quota": 6,
+      "cap": 3,
+      "projectileHp": 2,
+      "tip": "第二波要打两下"
+    }
+  ],
+  "art": {
+    "enemyPrompt": "A full body chibi sticker of a pale ghost with a rounded white-blue sheet body, two dark oval eyes, a small open mouth, and short stubby arms, drawn with a thick outline and no text. It floats alone on a flat magenta background.",
+    "bossPrompt": "A full body chibi sticker of Zhu Bajie as a pale ghost with a rounded white-blue sheet body, two dark oval eyes, a small open mouth, short stubby arms, and a small pig snout, drawn with a thick outline and no text. The pig Bajie floats on a flat magenta background and is not dressed as Sun Wukong.",
+    "backdropPrompt": "A wide 16:9 children's storybook landscape for the generic theme and the title Bajie Takes a Nap: a soft late-afternoon sky of pale blue and warm cream above green grass and gentle earthy ground, a quiet roadside with a shady tree and low hills only along the sides, and a clear empty dirt path running through the center. No characters, no letters, and no text."
+  }
+}

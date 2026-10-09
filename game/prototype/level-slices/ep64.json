@@ -1,0 +1,58 @@
+{
+  "id": "ep64",
+  "order": 64,
+  "titleZh": "西游记 第64集",
+  "titleEn": "Magnificent Silk Vests",
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep64/f1.jpg",
+  "hero": {
+    "id": "wukong"
+  },
+  "minor": {
+    "nameZh": "小妖"
+  },
+  "enemy": {
+    "css": "ghost"
+  },
+  "boss": {
+    "id": "bajie",
+    "nameZh": "猪八戒",
+    "css": "ghost",
+    "attacks": ["bubble", "dash"],
+    "hits": 7,
+    "countdownSec": 7
+  },
+  "words": [
+    {"zh": "壮丽的", "en": "magnificent"},
+    {"zh": "丝", "en": "silk"},
+    {"zh": "抚", "en": "stroke"},
+    {"zh": "猛击", "en": "bump"},
+    {"zh": "咕咕的叫声", "en": "grumble"},
+    {"zh": "挨饿", "en": "starve"},
+    {"zh": "收留", "en": "take somebody"},
+    {"zh": "确定", "en": "settle"},
+    {"zh": "周围", "en": "around"},
+    {"zh": "荒芜的", "en": "deserted"},
+    {"zh": "发亮", "en": "lit up"},
+    {"zh": "发出嘶嘶声", "en": "sizzle"}
+  ],
+  "waves": [
+    {
+      "quota": 7,
+      "cap": 3,
+      "projectileHp": 1,
+      "tip": "打中「壮丽的」的小妖"
+    },
+    {
+      "quota": 7,
+      "cap": 3,
+      "projectileHp": 2,
+      "tip": "第二波要打两下"
+    }
+  ],
+  "art": {
+    "enemyPrompt": "A full body chibi sticker of a pale ghost with a rounded white-blue sheet body, two dark oval eyes, a small open mouth, and short stubby arms, drawn with a thick outline and no text. It floats alone on a flat magenta background.",
+    "bossPrompt": "A full body chibi sticker of Zhu Bajie as a pale ghost with a rounded white-blue sheet body, a pig snout, floppy pig ears, two dark oval eyes, a small open mouth, and short stubby arms, drawn with a thick outline and no text. The pig floats on a flat magenta background and is not dressed as Sun Wukong.",
+    "backdropPrompt": "A wide 16:9 children's storybook landscape for the generic theme and the title Magnificent Silk Vests: a pale blue daytime sky with soft white clouds, warm green grassy ground, and a quiet westbound roadside with deserted hills beyond. Along the far sides only, wooden racks hold empty silk vests in gold, cream, and jade, softly lit. A clear empty dirt path runs through the center, open and unoccupied. No characters, no animals, no letters, and no writing."
+  }
+}

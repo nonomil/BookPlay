@@ -1,0 +1,58 @@
+{
+  "id": "ep34",
+  "order": 34,
+  "titleZh": "西游记 第34集",
+  "titleEn": "Tricked by the Princess",
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep34/f1.jpg",
+  "hero": {
+    "id": "wukong"
+  },
+  "minor": {
+    "nameZh": "小妖"
+  },
+  "enemy": {
+    "css": "ghost"
+  },
+  "boss": {
+    "id": "hundredflowers",
+    "nameZh": "百花羞公主",
+    "css": "ghost",
+    "attacks": ["ring", "dash"],
+    "hits": 7,
+    "countdownSec": 7
+  },
+  "words": [
+    {"zh": "武器", "en": "weapon"},
+    {"zh": "砰地相碰撞", "en": "clash"},
+    {"zh": "援救", "en": "rescue"},
+    {"zh": "囚犯", "en": "prisoner"},
+    {"zh": "绑架", "en": "kidnap"},
+    {"zh": "递送", "en": "deliver"},
+    {"zh": "珍爱的", "en": "precious"},
+    {"zh": "形象", "en": "image"},
+    {"zh": "善意的行为", "en": "favor"},
+    {"zh": "请求帮助", "en": "ask a"},
+    {"zh": "糖果", "en": "sweet"},
+    {"zh": "犹豫", "en": "hesitate"}
+  ],
+  "waves": [
+    {
+      "quota": 6,
+      "cap": 3,
+      "projectileHp": 1,
+      "tip": "打中「武器」的小妖"
+    },
+    {
+      "quota": 6,
+      "cap": 3,
+      "projectileHp": 2,
+      "tip": "第二波要打两下"
+    }
+  ],
+  "art": {
+    "enemyPrompt": "A full body chibi sticker of a pale ghost with a rounded white sheet body, two dark oval eyes, a small open mouth, and short arms, drawn with a thick outline and no text. It stands alone on a flat magenta background.",
+    "bossPrompt": "A full body chibi sticker of Baihuaxiu the Hundred Flowers Princess as a pale ghost with a rounded white sheet body, a tiny blossom on her head, two dark oval eyes, a small open mouth, and short arms, drawn with a thick outline and no text. She floats on a flat magenta background and is not dressed as Sun Wukong.",
+    "backdropPrompt": "A wide 16:9 children's storybook landscape for the generic theme and the title Tricked by the Princess, showing the flowering grounds beside a quiet pagoda of the Precious Image Kingdom: a soft daytime sky with pale clouds, blossom trees and hedges kept to the sides, a distant tiled roof, and warm grassy ground. A clear empty dirt path runs through the center, open and unoccupied. No characters, no animals, no letters, and no writing."
+  }
+}

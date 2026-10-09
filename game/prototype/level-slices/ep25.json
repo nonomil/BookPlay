@@ -1,0 +1,58 @@
+{
+  "id": "ep25",
+  "order": 25,
+  "titleZh": "西游记 第25集",
+  "titleEn": "Powerful Wind Magic",
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep25/f1.jpg",
+  "hero": {
+    "id": "wukong"
+  },
+  "minor": {
+    "nameZh": "小妖"
+  },
+  "enemy": {
+    "css": "ghost"
+  },
+  "boss": {
+    "id": "yellowwind",
+    "nameZh": "黄风大王",
+    "css": "ghost",
+    "attacks": ["dash", "ring"],
+    "hits": 7,
+    "countdownSec": 7
+  },
+  "words": [
+    {"zh": "救", "en": "save"},
+    {"zh": "擦", "en": "rub"},
+    {"zh": "轻拍", "en": "tap"},
+    {"zh": "下巴", "en": "chin"},
+    {"zh": "偷偷地走", "en": "sneak"},
+    {"zh": "发现", "en": "find out"},
+    {"zh": "蚊子", "en": "mosquito"},
+    {"zh": "裂缝", "en": "crack"},
+    {"zh": "战胜", "en": "defeat"},
+    {"zh": "塔", "en": "pagoda"},
+    {"zh": "紧急状况", "en": "emergency"},
+    {"zh": "黄鼠狼", "en": "weasel"}
+  ],
+  "waves": [
+    {
+      "quota": 6,
+      "cap": 3,
+      "projectileHp": 1,
+      "tip": "打中「救」的小妖"
+    },
+    {
+      "quota": 6,
+      "cap": 3,
+      "projectileHp": 2,
+      "tip": "第二波要打两下"
+    }
+  ],
+  "art": {
+    "enemyPrompt": "A full body chibi sticker of a small pale ghost shows a rounded icy-white sheet body, two dark oval eyes, a small open dark mouth, and two short stubby arms, with a thick outline and no text. The whole ghost stands full body alone on a flat magenta background.",
+    "bossPrompt": "A full body chibi sticker of the Yellow Wind Demon King as a pale ghost shows a rounded icy-white sheet body, two dark oval eyes, a small open dark mouth, and two short stubby arms, with a thick outline and no text. He floats full body on a flat magenta background with a small yellow wind tuft, and he is not dressed as Sun Wukong.",
+    "backdropPrompt": "A wide 16:9 children's storybook landscape for the generic theme and the title Powerful Wind Magic: a bright dusty sky filled with sweeping golden wind streaks and pale swirling sand, dry ochre hills, and warm sandy ground, with bent grasses only along the far sides. A clear empty dirt path runs through the center, open and unoccupied. No characters, no animals, no letters, and no writing."
+  }
+}

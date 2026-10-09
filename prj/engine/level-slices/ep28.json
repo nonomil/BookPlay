@@ -1,0 +1,58 @@
+{
+  "id": "ep28",
+  "order": 28,
+  "titleZh": "西游记 第28集",
+  "titleEn": "Wukong Leaves His Body",
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep28/f1.jpg",
+  "hero": {
+    "id": "wukong"
+  },
+  "minor": {
+    "nameZh": "小妖"
+  },
+  "enemy": {
+    "css": "ghost"
+  },
+  "boss": {
+    "id": "imp",
+    "nameZh": "小妖",
+    "css": "ghost",
+    "attacks": ["dash", "ring"],
+    "hits": 7,
+    "countdownSec": 7
+  },
+  "words": [
+    {"zh": "安静地", "en": "quietly"},
+    {"zh": "有用的", "en": "valuable"},
+    {"zh": "吃起来", "en": "taste"},
+    {"zh": "腹部", "en": "belly"},
+    {"zh": "巨大的", "en": "giant"},
+    {"zh": "发光", "en": "sparkle"},
+    {"zh": "采", "en": "pluck"},
+    {"zh": "一块", "en": "piece"},
+    {"zh": "羞愧的", "en": "ashamed"},
+    {"zh": "嚼", "en": "chew"},
+    {"zh": "时刻", "en": "moment"},
+    {"zh": "搜查", "en": "search"}
+  ],
+  "waves": [
+    {
+      "quota": 6,
+      "cap": 3,
+      "projectileHp": 1,
+      "tip": "打中「安静地」的小妖"
+    },
+    {
+      "quota": 6,
+      "cap": 3,
+      "projectileHp": 2,
+      "tip": "第二波要打两下"
+    }
+  ],
+  "art": {
+    "enemyPrompt": "A full body chibi sticker of a pale ghost on a flat magenta background, with a thick outline and no text, shows a rounded white-blue sheet body, two dark oval eyes, an open dark mouth, and two short stubby arms. The whole ghost is visible from the front, with nothing cropped and no extra scenery.",
+    "bossPrompt": "A full body chibi sticker of the little demon imp on a flat magenta background, with a thick outline and no text, shows a larger pale ghost with a rounded white-blue sheet body, two dark oval eyes, an open dark mouth, and short stubby arms. The little demon is not dressed as Sun Wukong and has no monkey fur, golden headband, or staff.",
+    "backdropPrompt": "A wide 16:9 children's storybook landscape of Wukong Leaves His Body, in the generic theme, painted like a soft gouache picture book. A pale blue dawn sky with soft cream clouds fills the top, and quiet green grass covers the ground. A clear empty tan path runs through the center from the foreground into the misty distance. Along the left and right sides only stand a giant fruit tree with softly glowing golden fruit and low stone courtyard walls, with far blue hills. No characters, no letters, and no text."
+  }
+}

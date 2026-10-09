@@ -1,0 +1,58 @@
+{
+  "id": "ep7",
+  "order": 7,
+  "titleZh": "西游记 第7集",
+  "titleEn": "The Land of Darkness",
+  "theme": "underworld",
+  "illustration": "assets/adv_frames/ep7/f1.jpg",
+  "hero": {
+    "id": "wukong"
+  },
+  "minor": {
+    "nameZh": "阴差"
+  },
+  "enemy": {
+    "css": "ghost"
+  },
+  "boss": {
+    "id": "underworld-clerk",
+    "nameZh": "阴差头目",
+    "css": "ghost",
+    "attacks": ["ring", "dash"],
+    "hits": 6,
+    "countdownSec": 6
+  },
+  "words": [
+    {"zh": "黑暗", "en": "darkness"},
+    {"zh": "命令", "en": "command"},
+    {"zh": "收缩", "en": "shrank"},
+    {"zh": "别针", "en": "pin"},
+    {"zh": "粗鲁的", "en": "rude"},
+    {"zh": "握紧", "en": "clench"},
+    {"zh": "报告", "en": "report"},
+    {"zh": "宣言", "en": "declare"},
+    {"zh": "盛宴", "en": "feast"},
+    {"zh": "毛骨悚然", "en": "creepy"},
+    {"zh": "猛然一拉", "en": "yank"},
+    {"zh": "使昏迷", "en": "knock out"}
+  ],
+  "waves": [
+    {
+      "quota": 5,
+      "cap": 2,
+      "projectileHp": 1,
+      "tip": "打中「黑暗」的阴差"
+    },
+    {
+      "quota": 5,
+      "cap": 2,
+      "projectileHp": 2,
+      "tip": "第二波要打两下"
+    }
+  ],
+  "art": {
+    "enemyPrompt": "A full-body chibi sticker of a small sheet ghost stands on a flat magenta background, with a thick outline and no text. The ghost has a rounded pale blue-white body, two dark oval eyes, an open dark mouth, and two short stubby arms.",
+    "bossPrompt": "A full-body chibi sticker of an underworld clerk chief stands on a flat magenta background, with a thick outline and no text. This larger pale sheet ghost has dark oval eyes, an open mouth, stubby arms, and a small black official cap.",
+    "backdropPrompt": "A wide 16:9 children's storybook landscape of the underworld, the Land of Darkness. Dim violet-gray sky fills the top above dark earthen ground. A clear empty pale stone path runs through the center toward distant shadowy gates, while soft lantern light and low stone walls stay only at the far sides. Painted in gentle watercolor storybook colors with an open middle. No characters, no letters, and no writing."
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "id": "ep95",
+  "order": 95,
+  "titleZh": "西游记 第95集",
+  "titleEn": "The Raptor Demon",
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep95/f1.jpg",
+  "hero": {
+    "id": "wukong"
+  },
+  "minor": {
+    "nameZh": "小妖"
+  },
+  "enemy": {
+    "css": "ghost"
+  },
+  "boss": {
+    "id": "liondemon",
+    "nameZh": "狮魔王",
+    "css": "ghost",
+    "attacks": ["dash", "ring"],
+    "hits": 8,
+    "countdownSec": 7
+  },
+  "words": [
+    {"zh": "漂浮", "en": "float"},
+    {"zh": "吃起来", "en": "taste"},
+    {"zh": "一道菜", "en": "course"},
+    {"zh": "主菜", "en": "main course"},
+    {"zh": "油炸", "en": "fry"},
+    {"zh": "大蒜", "en": "garlic"},
+    {"zh": "香料", "en": "spice"},
+    {"zh": "厨房", "en": "kitchen"},
+    {"zh": "无疑地", "en": "certainly"},
+    {"zh": "带瘀伤的", "en": "bruised"},
+    {"zh": "也不", "en": "neither"},
+    {"zh": "谣言", "en": "rumor"}
+  ],
+  "waves": [
+    {
+      "quota": 7,
+      "cap": 3,
+      "projectileHp": 1,
+      "tip": "打中「漂浮」的小妖"
+    },
+    {
+      "quota": 7,
+      "cap": 3,
+      "projectileHp": 2,
+      "tip": "第二波要打两下"
+    }
+  ],
+  "art": {
+    "enemyPrompt": "A chibi sticker of a full body pale ghost stands on a flat magenta background, with a thick outline and no text. It matches the ghost sprite: a rounded pale blue-white sheet, two dark oval eyes, a small open dark mouth, and two short stubby arms.",
+    "bossPrompt": "A chibi sticker of the Lion Demon King stands full body on a flat magenta background, with a thick outline and no text. He is the ghost sprite, a pale blue-white rounded sheet with two dark oval eyes, a small open dark mouth, and two short stubby arms, and he is not dressed as Sun Wukong.",
+    "backdropPrompt": "A wide 16:9 children's storybook landscape for the generic theme and the title The Raptor Demon, with a bright open sky above steep tawny cliffs and warm ochre ground below. A clear empty dirt path runs through the center toward a distant empty stone ledge, while wind-bent pines and rocky ridges stay only along the sides. Soft painted picture-book colors. No characters, no animals, no letters, and no writing."
+  }
+}

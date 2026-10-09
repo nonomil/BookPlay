@@ -1,0 +1,58 @@
+{
+  "id": "ep13",
+  "order": 13,
+  "titleZh": "西游记 第13集",
+  "titleEn": "The True Scriptures",
+  "theme": "episode-scene",
+  "illustration": "assets/adv_frames/ep13/f1.jpg",
+  "hero": {
+    "id": "wukong"
+  },
+  "boss": {
+    "id": "tang",
+    "nameZh": "唐僧",
+    "css": "ghost",
+    "attacks": ["ring", "dash"],
+    "hits": 6,
+    "countdownSec": 8
+  },
+  "minor": {
+    "nameZh": "小妖"
+  },
+  "enemy": {
+    "css": "ghost"
+  },
+  "words": [
+    { "zh": "经文", "en": "scripture" },
+    { "zh": "层", "en": "layer" },
+    { "zh": "苔藓", "en": "moss" },
+    { "zh": "雷声", "en": "thunderclap" },
+    { "zh": "修道院", "en": "monastery" },
+    { "zh": "欺骗", "en": "cheat" },
+    { "zh": "不断地", "en": "constantly" },
+    { "zh": "大堆", "en": "bundle" },
+    { "zh": "卷轴", "en": "scroll" },
+    { "zh": "修道士", "en": "monk" },
+    { "zh": "有价值的", "en": "worthy" },
+    { "zh": "宗教的", "en": "religious" }
+  ],
+  "waves": [
+    {
+      "quota": 5,
+      "cap": 2,
+      "projectileHp": 1,
+      "tip": "打中「经文」的小妖"
+    },
+    {
+      "quota": 5,
+      "cap": 2,
+      "projectileHp": 2,
+      "tip": "第二波要打两下"
+    }
+  ],
+  "art": {
+    "enemyPrompt": "A full body chibi sticker of a pale ghost with a rounded white sheet body, two dark oval eyes, a small open mouth, and short arms, drawn with a thick outline and no text. It stands alone on a flat magenta background.",
+    "bossPrompt": "A full body chibi sticker of Tang Seng as a pale ghost with a rounded white sheet body, two dark oval eyes, a small open mouth, and short arms, drawn with a thick outline and no text. The bald monk floats on a flat magenta background and is not dressed as Sun Wukong.",
+    "backdropPrompt": "A wide 16:9 children's storybook landscape for the episode-scene theme and the title The True Scriptures: a soft blue sky with pale gold clouds, warm sand slopes, mossy green hills, a distant quiet monastery set only at the sides, and grassy ground. A clear empty dirt path runs through the center, open and unoccupied. Painted as a gentle watercolor storybook scene with no characters, no animals, no letters, and no writing."
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "id": "ep92",
+  "order": 92,
+  "titleZh": "西游记 第92集",
+  "titleEn": "The Lion Demon",
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep92/f1.jpg",
+  "hero": {
+    "id": "wukong"
+  },
+  "minor": {
+    "nameZh": "小妖"
+  },
+  "enemy": {
+    "css": "ghost"
+  },
+  "boss": {
+    "id": "liondemon",
+    "nameZh": "狮魔王",
+    "css": "ghost",
+    "attacks": ["dash", "ring"],
+    "hits": 8,
+    "countdownSec": 7
+  },
+  "words": [
+    {"zh": "猛禽", "en": "raptor"},
+    {"zh": "飞扑", "en": "pounce"},
+    {"zh": "惊险的", "en": "close"},
+    {"zh": "集中", "en": "concentration"},
+    {"zh": "把...吓跑", "en": "scare away"},
+    {"zh": "自吹自擂说", "en": "boast"},
+    {"zh": "跌倒", "en": "fall over"},
+    {"zh": "几乎", "en": "nearly"},
+    {"zh": "发现", "en": "discover"},
+    {"zh": "拧", "en": "wring"},
+    {"zh": "摆脱", "en": "get rid of"},
+    {"zh": "照顾", "en": "look after"}
+  ],
+  "waves": [
+    {
+      "quota": 7,
+      "cap": 3,
+      "projectileHp": 1,
+      "tip": "打中「猛禽」的小妖"
+    },
+    {
+      "quota": 7,
+      "cap": 3,
+      "projectileHp": 2,
+      "tip": "第二波要打两下"
+    }
+  ],
+  "art": {
+    "enemyPrompt": "A chibi sticker of a full body pale ghost stands on a flat magenta background, with a thick outline and no text. It matches the ghost sprite: a rounded pale blue-white sheet, two dark oval eyes, a small open dark mouth, and two short stubby arms.",
+    "bossPrompt": "A chibi sticker of the Lion Demon King stands full body on a flat magenta background, with a thick outline and no text. He is the ghost sprite, a pale blue-white rounded sheet with a small tawny lion mane, two dark oval eyes, a small open dark mouth, and two short stubby arms, and he is not dressed as Sun Wukong.",
+    "backdropPrompt": "A wide 16:9 children's storybook landscape for the generic theme titled The Lion Demon, with a bright blue sky over warm ochre ground and a clear empty sandy path through the center between low tawny rocks and sparse golden grass, painted in soft picture-book colors, with no characters and no letters."
+  }
+}

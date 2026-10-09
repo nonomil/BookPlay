@@ -1,0 +1,58 @@
+{
+  "id": "ep103",
+  "order": 103,
+  "titleZh": "西游记 第103集",
+  "titleEn": "The Land of the West",
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep103/f1.jpg",
+  "hero": {
+    "id": "wukong"
+  },
+  "minor": {
+    "nameZh": "小妖"
+  },
+  "enemy": {
+    "css": "ghost"
+  },
+  "boss": {
+    "id": "imp",
+    "nameZh": "小妖",
+    "css": "ghost",
+    "attacks": ["ring", "dash"],
+    "hits": 8,
+    "countdownSec": 7
+  },
+  "words": [
+    {"zh": "身体", "en": "body"},
+    {"zh": "无生命的", "en": "lifeless"},
+    {"zh": "倾身", "en": "lean"},
+    {"zh": "舔", "en": "lick"},
+    {"zh": "盛宴", "en": "feast"},
+    {"zh": "拥抱", "en": "embrace"},
+    {"zh": "争执", "en": "argument"},
+    {"zh": "离开", "en": "depart"},
+    {"zh": "通过", "en": "through"},
+    {"zh": "继续", "en": "continue"},
+    {"zh": "壮丽的", "en": "magnificent"},
+    {"zh": "提供", "en": "offer"}
+  ],
+  "waves": [
+    {
+      "quota": 7,
+      "cap": 3,
+      "projectileHp": 1,
+      "tip": "打中「身体」的小妖"
+    },
+    {
+      "quota": 7,
+      "cap": 3,
+      "projectileHp": 2,
+      "tip": "第二波要打两下"
+    }
+  ],
+  "art": {
+    "enemyPrompt": "A chibi sticker of a full body pale ghost stands on a flat magenta background, with a thick outline and no text. It matches the ghost sprite: a rounded pale blue-white sheet, two dark oval eyes, a small open dark mouth, and two short stubby arms.",
+    "bossPrompt": "A chibi sticker of the little demon stands full body on a flat magenta background, with a thick outline and no text. He is the ghost sprite, a pale blue-white rounded sheet with two dark oval eyes, a small open dark mouth, and two short stubby arms, and he is not dressed as Sun Wukong.",
+    "backdropPrompt": "A wide 16:9 children's storybook landscape for the generic theme and the title The Land of the West: a pale blue daytime sky with soft white clouds, warm green grassy ground, magnificent flowering trees and flower beds set back on the left, and a quiet abbey gate with tall tiled roofs set back on the right. A clear empty dirt path runs through the center, open and unoccupied. No characters, no animals, no letters, and no writing."
+  }
+}

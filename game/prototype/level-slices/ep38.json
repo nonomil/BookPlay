@@ -1,0 +1,58 @@
+{
+  "id": "ep38",
+  "order": 38,
+  "titleZh": "西游记 第38集",
+  "titleEn": "Bajie Tries to Sleep",
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep38/f1.jpg",
+  "hero": {
+    "id": "wukong"
+  },
+  "minor": {
+    "nameZh": "小妖"
+  },
+  "enemy": {
+    "css": "ghost"
+  },
+  "boss": {
+    "id": "bajie",
+    "nameZh": "猪八戒",
+    "css": "toad",
+    "attacks": ["dash", "ring"],
+    "hits": 7,
+    "countdownSec": 7
+  },
+  "words": [
+    {"zh": "开花", "en": "bloom"},
+    {"zh": "骤然下降", "en": "swoop"},
+    {"zh": "费力的", "en": "hard"},
+    {"zh": "拖曳", "en": "drag"},
+    {"zh": "无形的", "en": "invisible"},
+    {"zh": "笨蛋", "en": "dummy"},
+    {"zh": "作为替代", "en": "instead"},
+    {"zh": "懒惰的", "en": "lazy"},
+    {"zh": "啄木鸟", "en": "woodpecker"},
+    {"zh": "啄", "en": "peck"},
+    {"zh": "说谎", "en": "lie"},
+    {"zh": "安全的", "en": "safe"}
+  ],
+  "waves": [
+    {
+      "quota": 6,
+      "cap": 3,
+      "projectileHp": 1,
+      "tip": "打中「开花」的小妖"
+    },
+    {
+      "quota": 6,
+      "cap": 3,
+      "projectileHp": 2,
+      "tip": "第二波要打两下"
+    }
+  ],
+  "art": {
+    "enemyPrompt": "A full body chibi sticker of a pale ghost with a rounded white sheet body, two dark oval eyes, a small open mouth, and short arms, drawn with a thick outline and no text. It stands alone on a flat magenta background.",
+    "bossPrompt": "A full body chibi sticker of Zhu Bajie as a green toad with a squat rounded body, two large pale eyes, a dark back spot, a wide mouth, and short feet, drawn with a thick outline and no text. He stands on a flat magenta background and is not dressed as Sun Wukong.",
+    "backdropPrompt": "A wide 16:9 children's storybook landscape for the generic theme and the title Bajie Tries to Sleep: a bright spring sky with soft clouds, warm green mountain slopes, flowering trees and blooming blossoms kept to the sides, a large fallen log resting off the path, and grassy ground. A clear empty dirt path runs uphill through the center, open and unoccupied. No characters, no animals, no letters, and no writing."
+  }
+}

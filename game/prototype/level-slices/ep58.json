@@ -1,0 +1,58 @@
+{
+  "id": "ep58",
+  "order": 58,
+  "titleZh": "西游记 第58集",
+  "titleEn": "The Meditation Contest",
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep58/f1.jpg",
+  "hero": {
+    "id": "wukong"
+  },
+  "minor": {
+    "nameZh": "小妖"
+  },
+  "enemy": {
+    "css": "ghost"
+  },
+  "boss": {
+    "id": "tigerimmortal",
+    "nameZh": "虎力大仙",
+    "css": "ghost",
+    "attacks": ["dash", "ring"],
+    "hits": 7,
+    "countdownSec": 7
+  },
+  "words": [
+    {"zh": "冥想", "en": "meditation"},
+    {"zh": "冥想", "en": "meditate"},
+    {"zh": "最近", "en": "lately"},
+    {"zh": "静止的", "en": "still"},
+    {"zh": "嘻嘻笑", "en": "grin"},
+    {"zh": "击掌", "en": "clap"},
+    {"zh": "喋喋不休", "en": "babble"},
+    {"zh": "厉声说", "en": "snap"},
+    {"zh": "手掌", "en": "palm"},
+    {"zh": "面向", "en": "face"},
+    {"zh": "举起", "en": "lift off"},
+    {"zh": "保持", "en": "remain"}
+  ],
+  "waves": [
+    {
+      "quota": 6,
+      "cap": 3,
+      "projectileHp": 1,
+      "tip": "打中「冥想」的小妖"
+    },
+    {
+      "quota": 6,
+      "cap": 3,
+      "projectileHp": 2,
+      "tip": "第二波要打两下"
+    }
+  ],
+  "art": {
+    "enemyPrompt": "A full body chibi sticker of a pale ghost stands on a flat magenta background, with a thick outline and no text. It matches the ghost sprite: a rounded pale blue-white sheet, two dark oval eyes, a small open dark mouth, and two short stubby arms.",
+    "bossPrompt": "A full body chibi sticker of 虎力大仙, the Tiger Immortal, stands on a flat magenta background, with a thick outline and no text. He matches the ghost sprite as a pale blue-white rounded sheet with tiger ears, orange stripes, two dark oval eyes, a small open dark mouth, and short stubby arms, and he is not dressed as Sun Wukong.",
+    "backdropPrompt": "A wide 16:9 children's storybook landscape for the generic theme and the title The Meditation Contest: a bright daytime sky with soft clouds above a quiet kingdom courtyard, warm stone paving, and earthy ground. Two empty raised wooden platforms stand on the left and right, with plain pale mats and small incense bowls, and distant teal and coral tiled roofs frame the sides. A clear empty dirt path runs through the center, open and unoccupied. No characters, no animals, no letters, and no writing."
+  }
+}

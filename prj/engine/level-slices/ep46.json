@@ -1,0 +1,58 @@
+{
+  "id": "ep46",
+  "order": 46,
+  "titleZh": "西游记 第46集",
+  "titleEn": "One Thousand Pills",
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep46/f1.jpg",
+  "hero": {
+    "id": "wukong"
+  },
+  "minor": {
+    "nameZh": "小妖"
+  },
+  "enemy": {
+    "css": "ghost"
+  },
+  "boss": {
+    "id": "imp",
+    "nameZh": "小妖",
+    "css": "ghost",
+    "attacks": ["bubble", "dash"],
+    "hits": 7,
+    "countdownSec": 7
+  },
+  "words": [
+    {"zh": "药丸", "en": "pill"},
+    {"zh": "永远地", "en": "forever"},
+    {"zh": "药水", "en": "potion"},
+    {"zh": "大锅", "en": "cauldron"},
+    {"zh": "装备", "en": "equipment"},
+    {"zh": "液体", "en": "liquid"},
+    {"zh": "开玩笑", "en": "kid"},
+    {"zh": "拳头", "en": "fist"},
+    {"zh": "抓", "en": "scratch"},
+    {"zh": "粗鲁的", "en": "rude"},
+    {"zh": "无礼的", "en": "disrespectful"},
+    {"zh": "搅动", "en": "stir"}
+  ],
+  "waves": [
+    {
+      "quota": 6,
+      "cap": 3,
+      "projectileHp": 1,
+      "tip": "打中「药丸」的小妖"
+    },
+    {
+      "quota": 6,
+      "cap": 3,
+      "projectileHp": 2,
+      "tip": "第二波要打两下"
+    }
+  ],
+  "art": {
+    "enemyPrompt": "A full body chibi sticker of a pale ghost stands on a flat magenta background, with a thick outline and no text. It matches the ghost sprite: a rounded pale blue-white sheet, two dark oval eyes, a small open dark mouth, and two short stubby arms.",
+    "bossPrompt": "A full body chibi sticker of the Little Demon stands on a flat magenta background, with a thick outline and no text. This Little Demon is the ghost sprite, a pale blue-white rounded sheet with two dark oval eyes, a small open dark mouth, and two short stubby arms, and is not dressed as Sun Wukong.",
+    "backdropPrompt": "A wide 16:9 children's storybook landscape for the generic theme and the title One Thousand Pills. A soft blue daytime sky with pale gold clouds fills the top, and warm earthen ground covers the bottom. A clear empty stone path runs through the center from the foreground into the distance, open and unoccupied. Bronze cauldrons, plain clay jars of round pills, ceramic bottles of colored liquid, and low herb beds stay only along the left and right sides of an outdoor alchemy courtyard. No characters, no letters, and no writing."
+  }
+}

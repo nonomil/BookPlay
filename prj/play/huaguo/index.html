@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<title>花果山 · 打跑猴群</title>
+<link rel="stylesheet" href="game.css">
+</head>
+<body>
+<section class="screen on scene" id="title">
+  <img class="poster" src="../../assets/generated/arena/clay/wukong/wukong-south-idle.png" alt="孙悟空">
+  <div class="caption">
+    <h1>花果山</h1>
+    <p>打跑猴群</p>
+    <button class="gold" id="enter" type="button">进入游戏</button>
+  </div>
+</section>
+
+<section class="screen scene" id="load">
+  <img class="poster dim" src="../../assets/generated/arena/clay/wukong/wukong-south-idle.png" alt="">
+  <div class="caption">
+    <h2>正在上山</h2>
+    <div class="track"><i id="load-bar"></i></div>
+    <b id="load-pct">0%</b>
+  </div>
+</section>
+
+<section class="screen scene" id="lobby">
+  <div class="chapters">
+    <button class="chapter hot" id="chapter-play" type="button"><b>花果山之战</b><small>打跑挡路的猴群</small></button>
+    <button class="chapter" type="button" data-locked="龙宫借宝"><b>龙宫借宝</b><small>还没开</small></button>
+    <button class="chapter" type="button" data-locked="水脏洞除妖"><b>水脏洞除妖</b><small>还没开</small></button>
+    <button class="chapter" type="button" data-locked="幽冥除名"><b>幽冥除名</b><small>还没开</small></button>
+  </div>
+  <img class="poster lobby" src="../../assets/generated/arena/clay/wukong/wukong-south-idle.png" alt="孙悟空">
+  <button class="gold start" id="start" type="button">开始游戏</button>
+</section>
+
+<section class="screen scene" id="pick">
+  <div class="roster" id="roster"></div>
+  <img class="poster pick" id="pick-fig" src="../../assets/generated/arena/clay/wukong/wukong-south-idle.png" alt="">
+  <aside class="sheet" id="sheet"></aside>
+  <button class="ghost back" id="pick-back" type="button">返回</button>
+  <div class="shout" id="shout" hidden>俺老孙来也</div>
+</section>
+
+<section class="screen" id="battle">
+  <div id="field" class="scene">
+    <div id="world"></div>
+    <div id="hud">
+      <div id="lives"></div>
+      <div id="move">这一棒 · <b id="move-zh">旅行</b></div>
+      <div id="wave">第 1 波</div>
+      <div id="banner" hidden></div>
+    </div>
+  </div>
+  <div id="dock">
+    <div id="stick" aria-label="移动"><b id="knob"></b></div>
+    <p class="hint">WASD 走动 · J 挥棒 · K 跳</p>
+    <button class="gold act" id="atk" type="button">挥棒<small>J</small></button>
+    <button class="blue act" id="jump" type="button">跳<small>K</small></button>
+  </div>
+  <div class="overlay" id="win">
+    <div class="panel">
+      <h2>猴群散了</h2>
+      <p>这一仗打完了。</p>
+      <button class="gold" id="again" type="button">再打一次</button>
+      <button class="ghost" id="win-back" type="button">回大厅</button>
+    </div>
+  </div>
+  <div class="overlay" id="lose">
+    <div class="panel">
+      <h2>被打下了山</h2>
+      <p>再上一次。</p>
+      <button class="gold" id="retry" type="button">再打一次</button>
+    </div>
+  </div>
+</section>
+<div id="toast" hidden></div>
+<script src="fight-rules.js"></script>
+<script src="game.js"></script>
+</body>
+</html>

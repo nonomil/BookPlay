@@ -1,0 +1,58 @@
+{
+  "id": "ep41",
+  "order": 41,
+  "titleZh": "西游记 第41集",
+  "titleEn": "A Trade",
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep41/f1.jpg",
+  "hero": {
+    "id": "wukong"
+  },
+  "minor": {
+    "nameZh": "小妖"
+  },
+  "enemy": {
+    "css": "ghost"
+  },
+  "boss": {
+    "id": "goldenhorn",
+    "nameZh": "金角大王",
+    "css": "ghost",
+    "attacks": ["ring", "dash"],
+    "hits": 7,
+    "countdownSec": 7
+  },
+  "words": [
+    { "zh": "变模糊", "en": "dim" },
+    { "zh": "允许", "en": "permission" },
+    { "zh": "砰地放下", "en": "slam" },
+    { "zh": "拳头", "en": "fist" },
+    { "zh": "糟糕的", "en": "rotten" },
+    { "zh": "变装", "en": "disguise" },
+    { "zh": "魔鬼", "en": "demon" },
+    { "zh": "行星", "en": "planet" },
+    { "zh": "迷人的", "en": "fascinating" },
+    { "zh": "交换", "en": "trade" },
+    { "zh": "无形的", "en": "invisible" },
+    { "zh": "马上", "en": "at" }
+  ],
+  "waves": [
+    {
+      "quota": 6,
+      "cap": 3,
+      "projectileHp": 1,
+      "tip": "打中「变模糊」的小妖"
+    },
+    {
+      "quota": 6,
+      "cap": 3,
+      "projectileHp": 2,
+      "tip": "第二波要打两下"
+    }
+  ],
+  "art": {
+    "enemyPrompt": "A chibi sticker of a full body pale ghost stands on a flat magenta background, with a thick outline and no text. It matches the ghost sprite: a rounded pale blue-white sheet, two dark oval eyes, a small open dark mouth, and two short stubby arms.",
+    "bossPrompt": "A chibi sticker of Golden Horn King stands full body on a flat magenta background, with a thick outline and no text. He is the ghost sprite, a pale blue-white rounded sheet with two dark oval eyes, a small open dark mouth, and two short stubby arms, and he is not dressed as Sun Wukong.",
+    "backdropPrompt": "A wide 16:9 children's storybook landscape for the generic theme and the title A Trade, painted like a soft gouache picture book. A bright pale blue sky with soft cream clouds fills the top, and warm white cloud banks form the ground. A clear empty path of pale gold cloud runs through the center from the foreground toward a distant red-and-gold Southern Heaven Gate. Rounded gate towers, jade railings, and two large purple-gold gourds stay only along the left and right sides, suggesting a peaceful treasure exchange. No characters, no letters, and no text."
+  }
+}

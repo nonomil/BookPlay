@@ -1,0 +1,58 @@
+{
+  "id": "ep84",
+  "order": 84,
+  "titleZh": "西游记 第84集",
+  "titleEn": "The Sad King",
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep84/f1.jpg",
+  "hero": {
+    "id": "wukong"
+  },
+  "minor": {
+    "nameZh": "小妖"
+  },
+  "enemy": {
+    "css": "ghost"
+  },
+  "boss": {
+    "id": "powerdemon",
+    "nameZh": "大力妖王",
+    "css": "ghost",
+    "attacks": ["dash", "ring"],
+    "hits": 8,
+    "countdownSec": 7
+  },
+  "words": [
+    {"zh": "抱怨", "en": "moan"},
+    {"zh": "猩红色的", "en": "scarlet"},
+    {"zh": "王国", "en": "kingdom"},
+    {"zh": "排队", "en": "line"},
+    {"zh": "一群人", "en": "a crowd of"},
+    {"zh": "告示", "en": "sign"},
+    {"zh": "寻求", "en": "seek"},
+    {"zh": "战胜", "en": "defeat"},
+    {"zh": "报到", "en": "report"},
+    {"zh": "王的", "en": "royal"},
+    {"zh": "使延缓", "en": "delay"},
+    {"zh": "大师", "en": "master"}
+  ],
+  "waves": [
+    {
+      "quota": 7,
+      "cap": 3,
+      "projectileHp": 1,
+      "tip": "打中「抱怨」的小妖"
+    },
+    {
+      "quota": 7,
+      "cap": 3,
+      "projectileHp": 2,
+      "tip": "第二波要打两下"
+    }
+  ],
+  "art": {
+    "enemyPrompt": "A full-body chibi sticker of a small ghost stands on a flat magenta background, with a thick outline and no text. Its body is a pale blue-white rounded sheet with a darker lower edge, two oval navy eyes, a small open mouth, and short stubby arms.",
+    "bossPrompt": "A full-body chibi sticker of the Mighty Demon King stands on a flat magenta background, with a thick outline and no text. He keeps the ghost sprite as a larger pale blue-white rounded sheet with a darker lower edge, two oval navy eyes, a small open mouth, and short stubby arms, and he is not dressed as Sun Wukong.",
+    "backdropPrompt": "A wide 16:9 children's storybook landscape for the generic theme and the title The Sad King, painted like a soft gouache picture book. A pale gray-blue daytime sky with soft cream clouds fills the top, and warm stone paving with muted green verges forms the ground. A clear empty tan path runs through the center of a quiet market street in the Scarlet Kingdom, open and unoccupied, leading toward a distant red-roofed royal palace. Empty food stalls, hanging lanterns, and low city walls stay only along the left and right sides. No characters, no animals, no letters, and no writing."
+  }
+}

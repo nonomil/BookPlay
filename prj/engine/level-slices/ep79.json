@@ -1,0 +1,58 @@
+{
+  "id": "ep79",
+  "order": 79,
+  "titleZh": "西游记 第79集",
+  "titleEn": "The Mountain of Flames",
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep79/f1.jpg",
+  "hero": {
+    "id": "wukong"
+  },
+  "minor": {
+    "nameZh": "小妖"
+  },
+  "enemy": {
+    "css": "ghost"
+  },
+  "boss": {
+    "id": "bullking",
+    "nameZh": "牛魔王",
+    "css": "ghost",
+    "attacks": ["dash", "ring"],
+    "hits": 8,
+    "countdownSec": 7
+  },
+  "words": [
+    {"zh": "公牛", "en": "bull"},
+    {"zh": "打碎", "en": "smash"},
+    {"zh": "坏人", "en": "villain"},
+    {"zh": "突击", "en": "charge"},
+    {"zh": "转变为", "en": "turn"},
+    {"zh": "起重机", "en": "crane"},
+    {"zh": "凤凰", "en": "phoenix"},
+    {"zh": "爪子", "en": "claw"},
+    {"zh": "猛扑", "en": "swoop"},
+    {"zh": "下沉", "en": "dip"},
+    {"zh": "羚羊", "en": "antelope"},
+    {"zh": "啃草", "en": "graze"}
+  ],
+  "waves": [
+    {
+      "quota": 7,
+      "cap": 3,
+      "projectileHp": 1,
+      "tip": "打中「公牛」的小妖"
+    },
+    {
+      "quota": 7,
+      "cap": 3,
+      "projectileHp": 2,
+      "tip": "第二波要打两下"
+    }
+  ],
+  "art": {
+    "enemyPrompt": "A chibi sticker of a full body pale ghost stands on a flat magenta background, with a thick outline and no text. It matches the ghost sprite: a rounded pale blue-white sheet, two dark oval eyes, a small open dark mouth, and two short stubby arms.",
+    "bossPrompt": "A chibi sticker of the Bull Demon King stands full body on a flat magenta background, with a thick outline and no text. He is the ghost sprite, a pale blue-white rounded sheet with two dark oval eyes, a small open dark mouth, two short stubby arms, and two short curved bull horns, and he is not dressed as Sun Wukong.",
+    "backdropPrompt": "A wide 16:9 children's storybook landscape for the generic theme titled The Mountain of Flames: a soft painted sky of warm gold and pale orange above red-brown rocky hills glowing with gentle painted flames, green-brown ground, and a clear empty sandy path running through the center. No characters and no letters."
+  }
+}

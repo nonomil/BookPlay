@@ -1,0 +1,58 @@
+{
+  "id": "ep18",
+  "order": 18,
+  "titleZh": "西游记 第18集",
+  "titleEn": "The Robe",
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep18/f1.jpg",
+  "hero": {
+    "id": "wukong"
+  },
+  "boss": {
+    "id": "imp",
+    "nameZh": "小妖",
+    "css": "ghost",
+    "attacks": ["bubble", "dash"],
+    "hits": 7,
+    "countdownSec": 7
+  },
+  "minor": {
+    "nameZh": "小妖"
+  },
+  "enemy": {
+    "css": "ghost"
+  },
+  "words": [
+    { "zh": "长袍", "en": "robe" },
+    { "zh": "马上", "en": "at" },
+    { "zh": "休息", "en": "rest" },
+    { "zh": "恶意的", "en": "nasty" },
+    { "zh": "包围", "en": "surround" },
+    { "zh": "逐渐消失", "en": "fade" },
+    { "zh": "准确地", "en": "exactly" },
+    { "zh": "离开", "en": "left" },
+    { "zh": "乘坐", "en": "ride" },
+    { "zh": "船夫", "en": "boatman" },
+    { "zh": "走出", "en": "step out" },
+    { "zh": "继续", "en": "continue" }
+  ],
+  "waves": [
+    {
+      "quota": 5,
+      "cap": 2,
+      "projectileHp": 1,
+      "tip": "打中「长袍」的小妖"
+    },
+    {
+      "quota": 5,
+      "cap": 2,
+      "projectileHp": 2,
+      "tip": "第二波要打两下"
+    }
+  ],
+  "art": {
+    "enemyPrompt": "A full-body chibi sticker of a small sheet ghost stands on a flat magenta background, with a thick outline and no text. The ghost has a rounded pale blue-white body, two dark oval eyes, an open dark mouth, and two short stubby arms.",
+    "bossPrompt": "A full-body chibi sticker of the little demon boss stands on a flat magenta background, with a thick outline and no text. This larger pale blue-white sheet ghost has a rounded body, two dark oval eyes, an open dark mouth, and two short stubby arms, and is not dressed as Sun Wukong.",
+    "backdropPrompt": "A wide 16:9 children's storybook landscape for the generic theme and the title The Robe, showing a quiet riverside Buddhist monastery: a pale blue sky with soft cream clouds above, warm green grass and packed earth below, grey tiled roofs and a wooden gate far ahead, willows and a calm wide river only along the sides. A clear empty tan path runs through the center, open and unoccupied. No characters, no animals, no letters, and no writing."
+  }
+}

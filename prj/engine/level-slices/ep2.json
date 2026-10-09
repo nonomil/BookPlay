@@ -1,0 +1,58 @@
+{
+  "id": "ep2",
+  "order": 2,
+  "titleZh": "西游记 第2集",
+  "titleEn": "The Waterfall Cave",
+  "theme": "water-curtain-cave",
+  "illustration": "assets/adv_frames/ep2/f1.jpg",
+  "hero": {
+    "id": "wukong"
+  },
+  "boss": {
+    "id": "monkey-minor",
+    "nameZh": "瀑洞守门猴",
+    "css": "monkey",
+    "attacks": ["dash", "ring"],
+    "hits": 6,
+    "countdownSec": 8
+  },
+  "minor": {
+    "nameZh": "小猴子"
+  },
+  "enemy": {
+    "css": "monkey"
+  },
+  "words": [
+    { "zh": "降落", "en": "land" },
+    { "zh": "很宽", "en": "wide" },
+    { "zh": "竹子", "en": "bamboo" },
+    { "zh": "苔藓", "en": "moss" },
+    { "zh": "鲜艳的", "en": "glowing" },
+    { "zh": "壁炉", "en": "fireplace" },
+    { "zh": "舒适的", "en": "cozy" },
+    { "zh": "外面", "en": "outside" },
+    { "zh": "冲走", "en": "wash away" },
+    { "zh": "完美的", "en": "perfect" },
+    { "zh": "危险的", "en": "dangerous" },
+    { "zh": "争论", "en": "argue" }
+  ],
+  "waves": [
+    {
+      "quota": 5,
+      "cap": 2,
+      "projectileHp": 1,
+      "tip": "打中「降落」的小猴子"
+    },
+    {
+      "quota": 5,
+      "cap": 2,
+      "projectileHp": 2,
+      "tip": "第二波要打两下"
+    }
+  ],
+  "art": {
+    "enemyPrompt": "A full-body chibi sticker shows one small monkey minion on a flat solid #FF00FF magenta background, with a round chestnut-brown head, a beige oval muzzle, round ears with beige centers, a short lighter-brown body, and a curled brown tail. The sticker uses a thick dark outline and contains no text, clothes, or weapon.",
+    "bossPrompt": "A full-body chibi sticker shows the waterfall-cave gatekeeper monkey on a flat solid #FF00FF magenta background, with the same round chestnut-brown head, beige muzzle, round ears, short brown body, and curled tail, plus damp fur and a small moss badge as he guards the cave mouth. The sticker uses a thick dark outline and contains no text, and he wears only plain fur without a golden circlet, tiger skirt, or staff.",
+    "backdropPrompt": "A wide 16:9 children's storybook landscape of the water-curtain cave titled The Waterfall Cave, with a bright open sky above and mossy green ground below. A clear empty path runs through the center toward a blue waterfall curtain between stone cliffs, while bamboo, damp moss, and a warm cozy cave glow stay only along the left and right edges. The picture shows no people, no animals, and no letters."
+  }
+}

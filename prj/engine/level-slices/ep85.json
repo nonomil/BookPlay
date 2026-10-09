@@ -1,0 +1,58 @@
+{
+  "id": "ep85",
+  "order": 85,
+  "titleZh": "西游记 第85集",
+  "titleEn": "Fire, Smoke, and Sand",
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep85/f1.jpg",
+  "hero": {
+    "id": "wukong"
+  },
+  "minor": {
+    "nameZh": "小妖"
+  },
+  "enemy": {
+    "css": "ghost"
+  },
+  "boss": {
+    "id": "powerdemon",
+    "nameZh": "大力妖王",
+    "css": "ghost",
+    "attacks": ["ring", "dash"],
+    "hits": 8,
+    "countdownSec": 7
+  },
+  "words": [
+    {"zh": "山顶", "en": "peak"},
+    {"zh": "可怕的", "en": "awful"},
+    {"zh": "犹豫", "en": "hesitate"},
+    {"zh": "招数", "en": "trick"},
+    {"zh": "偷偷地走", "en": "sneak"},
+    {"zh": "环视", "en": "look around"},
+    {"zh": "创造", "en": "create"},
+    {"zh": "明亮地", "en": "brightly"},
+    {"zh": "照亮的", "en": "lit"},
+    {"zh": "家具", "en": "furniture"},
+    {"zh": "别致的", "en": "fancy"},
+    {"zh": "装饰品", "en": "decoration"}
+  ],
+  "waves": [
+    {
+      "quota": 7,
+      "cap": 3,
+      "projectileHp": 1,
+      "tip": "打中「山顶」的小妖"
+    },
+    {
+      "quota": 7,
+      "cap": 3,
+      "projectileHp": 2,
+      "tip": "第二波要打两下"
+    }
+  ],
+  "art": {
+    "enemyPrompt": "A full body chibi sticker of a pale ghost stands on a flat magenta background, with a thick outline and no text. It matches the ghost sprite: a rounded pale blue-white sheet, two dark oval eyes, a small open dark mouth, and two short stubby arms.",
+    "bossPrompt": "A full body chibi sticker of the Demon of Power stands on a flat magenta background, with a thick outline and no text. He is the ghost sprite, a pale blue-white rounded sheet with two dark oval eyes, a small open dark mouth, and two short stubby arms, and he is not dressed as Sun Wukong.",
+    "backdropPrompt": "A wide 16:9 children's storybook landscape for the generic theme and the title Fire, Smoke, and Sand, with a warm hazy sky of soft cream clouds and drifting pale smoke above golden sand ground. Gentle storybook flames glow on low dunes only along the sides, and a rocky sandy peak sits far in the distance. A clear empty sand path runs through the center, open and unoccupied. No characters, no animals, no letters, and no writing."
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "id": "ep101",
+  "order": 101,
+  "titleZh": "西游记 第101集",
+  "titleEn": "Arrested!",
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep101/f1.jpg",
+  "hero": {
+    "id": "wukong"
+  },
+  "minor": {
+    "nameZh": "小妖"
+  },
+  "enemy": {
+    "css": "ghost"
+  },
+  "boss": {
+    "id": "imp",
+    "nameZh": "小妖",
+    "css": "ghost",
+    "attacks": ["ring", "dash"],
+    "hits": 8,
+    "countdownSec": 7
+  },
+  "words": [
+    {"zh": "可笑的", "en": "ridiculous"},
+    {"zh": "特别", "en": "especially"},
+    {"zh": "被偷走的", "en": "stolen"},
+    {"zh": "放开", "en": "let go"},
+    {"zh": "法院", "en": "courthouse"},
+    {"zh": "锁起来", "en": "lock up"},
+    {"zh": "错误", "en": "mistake"},
+    {"zh": "恳求", "en": "plead"},
+    {"zh": "推", "en": "shove"},
+    {"zh": "监狱", "en": "jail"},
+    {"zh": "杀人者", "en": "killer"},
+    {"zh": "死亡的", "en": "dead"}
+  ],
+  "waves": [
+    {
+      "quota": 7,
+      "cap": 3,
+      "projectileHp": 1,
+      "tip": "打中「可笑的」的小妖"
+    },
+    {
+      "quota": 7,
+      "cap": 3,
+      "projectileHp": 2,
+      "tip": "第二波要打两下"
+    }
+  ],
+  "art": {
+    "enemyPrompt": "A full body chibi sticker of a pale ghost stands on a flat magenta background, with a thick outline and no text. It matches the ghost sprite: a rounded pale blue-white sheet, two dark oval eyes, a small open dark mouth, and two short stubby arms.",
+    "bossPrompt": "A full body chibi sticker of the little demon 小妖 stands on a flat magenta background, with a thick outline and no text. He is the ghost sprite, a pale blue-white rounded sheet with two dark oval eyes, a small open dark mouth, and two short stubby arms, and he is not dressed as Sun Wukong.",
+    "backdropPrompt": "A wide 16:9 children's storybook landscape for the generic theme and the title Arrested!: a pale blue daytime sky with soft white clouds above warm tan ground and low green grass. A small painted courthouse and a simple stone jail sit far to the left and right. A clear empty dirt path runs through the center, open and unoccupied. Painted as a gentle watercolor storybook scene with no characters, no animals, no letters, and no writing."
+  }
+}

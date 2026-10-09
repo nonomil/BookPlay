@@ -1,0 +1,58 @@
+{
+  "id": "ep37",
+  "order": 37,
+  "titleZh": "西游记 第37集",
+  "titleEn": "Missing from Heaven",
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep37/f1.jpg",
+  "hero": {
+    "id": "wukong"
+  },
+  "minor": {
+    "nameZh": "小妖"
+  },
+  "enemy": {
+    "css": "ghost"
+  },
+  "boss": {
+    "id": "imp",
+    "nameZh": "小妖",
+    "css": "ghost",
+    "attacks": ["dash", "ring"],
+    "hits": 7,
+    "countdownSec": 7
+  },
+  "words": [
+    {"zh": "抵达", "en": "reach"},
+    {"zh": "方向", "en": "direction"},
+    {"zh": "失踪的", "en": "missing"},
+    {"zh": "南方的", "en": "southern"},
+    {"zh": "警卫", "en": "guard"},
+    {"zh": "核对", "en": "check"},
+    {"zh": "有意义", "en": "make"},
+    {"zh": "同等的", "en": "equal"},
+    {"zh": "紧张不安的", "en": "nervous"},
+    {"zh": "指引", "en": "led"},
+    {"zh": "庆祝", "en": "celebration"},
+    {"zh": "发生", "en": "take"}
+  ],
+  "waves": [
+    {
+      "quota": 6,
+      "cap": 3,
+      "projectileHp": 1,
+      "tip": "打中「抵达」的小妖"
+    },
+    {
+      "quota": 6,
+      "cap": 3,
+      "projectileHp": 2,
+      "tip": "第二波要打两下"
+    }
+  ],
+  "art": {
+    "enemyPrompt": "A full body chibi sticker of a pale ghost shows a rounded white sheet body, two dark oval eyes, a small open mouth, and short arms. It has a thick outline, no text, and stands alone on a flat magenta background.",
+    "bossPrompt": "A full body chibi sticker of a little demon as a pale ghost shows a rounded white sheet body, two dark oval eyes, a small open mouth, and short arms. The little demon floats on a flat magenta background with a thick outline and no text, and is not dressed as Sun Wukong.",
+    "backdropPrompt": "A wide 16:9 children's storybook landscape for Missing from Heaven, in the generic theme: the quiet southern gate of Heaven in soft painted daylight. A pale gold sky with cream clouds fills the top, and soft white cloud ground covers the bottom. A clear empty pale path runs through the center from the foreground toward distant jade gate towers. Cloud banks and low golden railings stay only along the left and right sides. No characters, no letters, and no writing."
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "id": "ep53",
+  "order": 53,
+  "titleZh": "西游记 第53集",
+  "titleEn": "The Man in the Canoe",
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep53/f1.jpg",
+  "hero": {
+    "id": "wukong"
+  },
+  "minor": {
+    "nameZh": "小妖"
+  },
+  "enemy": {
+    "css": "ghost"
+  },
+  "boss": {
+    "id": "redboy",
+    "nameZh": "红孩儿",
+    "css": "ghost",
+    "attacks": ["ring", "dash"],
+    "hits": 7,
+    "countdownSec": 7
+  },
+  "words": [
+    {"zh": "闪光", "en": "flash"},
+    {"zh": "夹紧", "en": "clamp"},
+    {"zh": "手腕", "en": "wrist"},
+    {"zh": "脚踝", "en": "ankle"},
+    {"zh": "不能...的", "en": "unable"},
+    {"zh": "宽的", "en": "wide"},
+    {"zh": "低声嘟囔", "en": "mutter"},
+    {"zh": "独木舟", "en": "canoe"},
+    {"zh": "看得见", "en": "come into"},
+    {"zh": "用桨划", "en": "paddle"},
+    {"zh": "好奇", "en": "wonder"},
+    {"zh": "经文", "en": "scripture"}
+  ],
+  "waves": [
+    {
+      "quota": 6,
+      "cap": 3,
+      "projectileHp": 1,
+      "tip": "打中「闪光」的小妖"
+    },
+    {
+      "quota": 6,
+      "cap": 3,
+      "projectileHp": 2,
+      "tip": "第二波要打两下"
+    }
+  ],
+  "art": {
+    "enemyPrompt": "A full body chibi sticker of a pale ghost shows a rounded white sheet body, two dark oval eyes, a small open mouth, and short arms. It has a thick outline, no text, and stands alone on a flat magenta background.",
+    "bossPrompt": "A full body chibi sticker of Red Boy as a pale ghost shows a rounded white sheet body, two dark oval eyes, a small open mouth, and short arms. He floats on a flat magenta background with a thick outline and no text, and he is not dressed as Sun Wukong.",
+    "backdropPrompt": "A wide 16:9 children's storybook landscape for the generic theme episode The Man in the Canoe: a pale blue sky with soft clouds above warm grassy ground, quiet riverbanks and reeds kept to the sides, an empty wooden canoe resting off the path, and a clear empty dirt path running through the center. No characters, no letters, and no text."
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "id": "ep20",
+  "order": 20,
+  "titleZh": "西游记 第20集",
+  "titleEn": "The Black Bear Spirit",
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep20/f1.jpg",
+  "hero": {
+    "id": "wukong"
+  },
+  "minor": {
+    "nameZh": "小妖"
+  },
+  "enemy": {
+    "css": "ghost",
+    "nameZh": "小妖"
+  },
+  "boss": {
+    "id": "blackwind",
+    "nameZh": "黑风大王",
+    "css": "ghost",
+    "attacks": ["ring", "dash"],
+    "hits": 7,
+    "countdownSec": 7
+  },
+  "words": [
+    { "zh": "害怕的", "en": "scared" },
+    { "zh": "完全", "en": "at all" },
+    { "zh": "命令", "en": "command" },
+    { "zh": "立刻", "en": "instantly" },
+    { "zh": "安静地", "en": "quietly" },
+    { "zh": "疼", "en": "hurt" },
+    { "zh": "呼吸", "en": "breath" },
+    { "zh": "昨天晚上", "en": "last night" },
+    { "zh": "怪物", "en": "monster" },
+    { "zh": "魔鬼", "en": "demon" },
+    { "zh": "偷窃", "en": "stolen" },
+    { "zh": "在附近", "en": "nearby" }
+  ],
+  "waves": [
+    {
+      "quota": 5,
+      "cap": 2,
+      "projectileHp": 1,
+      "tip": "打中「害怕的」的小妖"
+    },
+    {
+      "quota": 5,
+      "cap": 2,
+      "projectileHp": 2,
+      "tip": "第二波要打两下"
+    }
+  ],
+  "art": {
+    "enemyPrompt": "A chibi sticker shows one full-body ghost minion with a pale ice-white rounded sheet body, two oval navy eyes, a small open mouth, and two short stubby arms. It sits on a flat magenta background with a thick dark outline and no text.",
+    "bossPrompt": "A chibi sticker shows 黑风大王, the Black Wind King, as one full-body black bear spirit in the ghost shape, with a rounded sheet body, two oval eyes, a small open mouth, short stubby arms, charcoal fur, round bear ears, and a bear muzzle. He stands on a flat magenta background with a thick dark outline and no text, and he is not dressed as 孙悟空.",
+    "backdropPrompt": "A wide 16:9 children's storybook landscape for the generic theme and the title The Black Bear Spirit, with a pale blue-gray sky and green mossy ground on Black Wind Mountain. Dark pine woods frame a clear empty dirt path through the center toward a distant quiet monastery. No characters and no letters."
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "id": "ep45",
+  "order": 45,
+  "titleZh": "西游记 第45集",
+  "titleEn": "The Treasure in the Well",
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep45/f1.jpg",
+  "hero": {
+    "id": "wukong"
+  },
+  "minor": {
+    "nameZh": "小妖"
+  },
+  "enemy": {
+    "css": "ghost"
+  },
+  "boss": {
+    "id": "bajie",
+    "nameZh": "猪八戒",
+    "css": "ghost",
+    "attacks": ["bubble", "dash"],
+    "hits": 7,
+    "countdownSec": 7
+  },
+  "words": [
+    {"zh": "介绍", "en": "introduce"},
+    {"zh": "经文", "en": "scripture"},
+    {"zh": "统治", "en": "rule"},
+    {"zh": "非常愤怒的", "en": "furious"},
+    {"zh": "编造", "en": "make up"},
+    {"zh": "一直以来", "en": "all this time"},
+    {"zh": "邪恶的", "en": "evil"},
+    {"zh": "醒着躺在那里", "en": "lie awake"},
+    {"zh": "否认", "en": "deny"},
+    {"zh": "证据", "en": "proof"},
+    {"zh": "戳", "en": "poke"},
+    {"zh": "熟睡的", "en": "fast asleep"}
+  ],
+  "waves": [
+    {
+      "quota": 6,
+      "cap": 3,
+      "projectileHp": 1,
+      "tip": "打中「介绍」的小妖"
+    },
+    {
+      "quota": 6,
+      "cap": 3,
+      "projectileHp": 2,
+      "tip": "第二波要打两下"
+    }
+  ],
+  "art": {
+    "enemyPrompt": "A full body chibi sticker of a pale ghost stands on a flat magenta background, with a thick outline and no text. It matches the ghost sprite as a rounded pale blue-white sheet with two dark oval eyes, a small open dark mouth, and two short stubby arms.",
+    "bossPrompt": "A full body chibi sticker of Zhu Bajie the pig stands on a flat magenta background, with a thick outline and no text. He matches the ghost sprite as a pale blue-white rounded sheet with a pig snout, floppy pig ears, two dark oval eyes, and short stubby arms, and he is not dressed as Sun Wukong.",
+    "backdropPrompt": "A wide 16:9 children's storybook landscape of the generic theme for The Treasure in the Well: a bright daytime sky with soft white clouds, warm green grass and packed earth for the ground, and a clear empty dirt path running through the center, open and unoccupied. Off to one side stands a round gray stone well with a simple wooden frame, a faint gold shimmer rising from the dark water, with quiet tiled palace walls, pines, and garden rocks set farther back. Painted as a gentle watercolor storybook scene. No characters, no animals, no letters, and no writing."
+  }
+}

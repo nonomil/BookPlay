@@ -1,0 +1,58 @@
+{
+  "id": "ep82",
+  "order": 82,
+  "titleZh": "西游记 第82集",
+  "titleEn": "The Magic Cloth",
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep82/f1.jpg",
+  "hero": {
+    "id": "wukong"
+  },
+  "minor": {
+    "nameZh": "小妖"
+  },
+  "enemy": {
+    "css": "ghost"
+  },
+  "boss": {
+    "id": "yellowbrows",
+    "nameZh": "黄眉怪",
+    "css": "ghost",
+    "attacks": ["ring", "dash"],
+    "hits": 8,
+    "countdownSec": 7
+  },
+  "words": [
+    {"zh": "眉毛", "en": "brow"},
+    {"zh": "空的", "en": "empty"},
+    {"zh": "拍击", "en": "slap"},
+    {"zh": "前额", "en": "forehead"},
+    {"zh": "走路的声音", "en": "footstep"},
+    {"zh": "接近", "en": "approach"},
+    {"zh": "迅速地", "en": "quickly"},
+    {"zh": "小声说", "en": "hiss"},
+    {"zh": "猛烈地", "en": "heavily"},
+    {"zh": "变成", "en": "gotten"},
+    {"zh": "抽出", "en": "pull out"},
+    {"zh": "使赤裸", "en": "bare"}
+  ],
+  "waves": [
+    {
+      "quota": 7,
+      "cap": 3,
+      "projectileHp": 1,
+      "tip": "打中「眉毛」的小妖"
+    },
+    {
+      "quota": 7,
+      "cap": 3,
+      "projectileHp": 2,
+      "tip": "第二波要打两下"
+    }
+  ],
+  "art": {
+    "enemyPrompt": "A chibi sticker of a full body pale ghost stands on a flat magenta background, with a thick outline and no text. It matches the ghost sprite: a rounded pale blue-white sheet, two dark oval eyes, a small open dark mouth, and two short stubby arms.",
+    "bossPrompt": "A chibi sticker of 黄眉怪 stands full body on a flat magenta background, with a thick outline and no text. He is the ghost sprite, a pale blue-white rounded sheet with thick yellow eyebrows, two dark oval eyes, a small open dark mouth, and two short stubby arms, and he is not dressed as 孙悟空.",
+    "backdropPrompt": "A wide 16:9 children's storybook landscape for the generic theme and the title The Magic Cloth. A bright blue daytime sky with soft cream clouds sits above warm green grass and packed earth. A clear empty dirt path runs through the center, open and unoccupied, toward a quiet mountain monastery. Curved golden roofs, a closed red wooden gate, pine trees, and stone steps stay only at the sides, with one folded pale gold cloth resting off the path. Painted as a gentle watercolor storybook scene with no characters, no animals, no letters, and no writing."
+  }
+}

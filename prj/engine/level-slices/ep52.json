@@ -1,0 +1,58 @@
+{
+  "id": "ep52",
+  "order": 52,
+  "titleZh": "西游记 第52集",
+  "titleEn": "An Ocean from a Vase",
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep52/f1.jpg",
+  "hero": {
+    "id": "wukong"
+  },
+  "minor": {
+    "nameZh": "小妖"
+  },
+  "enemy": {
+    "css": "ghost"
+  },
+  "boss": {
+    "id": "redboy",
+    "nameZh": "红孩儿",
+    "css": "ghost",
+    "attacks": ["ring", "dash"],
+    "hits": 7,
+    "countdownSec": 7
+  },
+  "words": [
+    {"zh": "损伤", "en": "harm"},
+    {"zh": "本地的", "en": "local"},
+    {"zh": "急匆匆地跑", "en": "scurry"},
+    {"zh": "蜂拥", "en": "stampede"},
+    {"zh": "单一的", "en": "single"},
+    {"zh": "倾斜", "en": "tip"},
+    {"zh": "山坡", "en": "slope"},
+    {"zh": "同高度的", "en": "level"},
+    {"zh": "水位", "en": "water"},
+    {"zh": "建立", "en": "form"},
+    {"zh": "作为替代", "en": "instead"},
+    {"zh": "爆发", "en": "explode"}
+  ],
+  "waves": [
+    {
+      "quota": 6,
+      "cap": 3,
+      "projectileHp": 1,
+      "tip": "打中「损伤」的小妖"
+    },
+    {
+      "quota": 6,
+      "cap": 3,
+      "projectileHp": 2,
+      "tip": "第二波要打两下"
+    }
+  ],
+  "art": {
+    "enemyPrompt": "A full body chibi sticker of a pale ghost on a flat magenta background, with a thick outline and no text, shows a rounded white-blue sheet body, two dark oval eyes, an open dark mouth, and two short stubby arms. The whole ghost is visible from the front, with nothing cropped and no extra scenery.",
+    "bossPrompt": "A full body chibi sticker of 红孩儿 Red Boy on a flat magenta background, with a thick outline and no text, shows the ghost sprite as a larger pale white-blue sheet with two dark oval eyes, an open dark mouth, and two short stubby arms. He is not dressed as 孙悟空 and has no monkey fur, golden headband, or staff.",
+    "backdropPrompt": "A wide 16:9 children's storybook landscape for the generic theme and the title An Ocean from a Vase, with a pale blue sky of soft white clouds and warm sandy ground. A calm blue-green sea spreads from a pale porcelain vase resting on the far left shore, while a clear empty tan path runs through the center, open and unoccupied. No characters and no letters."
+  }
+}

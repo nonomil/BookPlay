@@ -1,0 +1,58 @@
+{
+  "id": "ep6",
+  "order": 6,
+  "titleZh": "西游记 第6集",
+  "titleEn": "The Dragon King",
+  "theme": "dragon-palace",
+  "illustration": "assets/adv_frames/ep6/f1.jpg",
+  "hero": {
+    "id": "wukong"
+  },
+  "boss": {
+    "id": "dragonking",
+    "nameZh": "东海龙王",
+    "css": "dragon",
+    "attacks": ["bubble", "ring", "dash"],
+    "hits": 6,
+    "countdownSec": 7
+  },
+  "minor": {
+    "nameZh": "虾兵"
+  },
+  "enemy": {
+    "css": "shrimp"
+  },
+  "words": [
+    {"zh": "矛", "en": "spear"},
+    {"zh": "正常的", "en": "normal"},
+    {"zh": "底部", "en": "bottom"},
+    {"zh": "东边的", "en": "eastern"},
+    {"zh": "快的", "en": "quick"},
+    {"zh": "在水里面地", "en": "underwater"},
+    {"zh": "军人", "en": "soldier"},
+    {"zh": "拉", "en": "drag"},
+    {"zh": "喘不过气来", "en": "out of breath"},
+    {"zh": "困难", "en": "trouble"},
+    {"zh": "假装", "en": "pretend"},
+    {"zh": "粗鲁的", "en": "rude"}
+  ],
+  "waves": [
+    {
+      "quota": 5,
+      "cap": 2,
+      "projectileHp": 1,
+      "tip": "打中「矛」的虾兵"
+    },
+    {
+      "quota": 5,
+      "cap": 2,
+      "projectileHp": 2,
+      "tip": "第二波要打两下"
+    }
+  ],
+  "art": {
+    "enemyPrompt": "A full-body chibi shrimp sticker has a curved coral-pink body with darker pink belly segments, a pale pink fan tail, one round black eye, two thin pale pink antennae, and short pale pink legs. It is drawn with a thick outline on a flat magenta background and contains no text.",
+    "bossPrompt": "A full-body chibi East Sea Dragon King sticker has a green head, a pale green snout, two yellow horns, a darker green body, one white eye with a black pupil, and a small gold crown. He is not dressed as Sun Wukong, with no monkey fur, headband, or staff, on a flat magenta background with a thick outline and no text.",
+    "backdropPrompt": "A wide 16:9 children's storybook landscape of the dragon palace for The Dragon King: a soft aqua sky above a pale sandy seabed ground, with pale jade pillars, coral gardens, and rising bubbles only along the left and right sides. A clear empty path runs through the center, with no characters and no letters."
+  }
+}

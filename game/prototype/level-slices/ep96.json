@@ -1,0 +1,58 @@
+{
+  "id": "ep96",
+  "order": 96,
+  "titleZh": "西游记 第96集",
+  "titleEn": "Wind and Fog",
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep96/f1.jpg",
+  "hero": {
+    "id": "wukong"
+  },
+  "minor": {
+    "nameZh": "小妖"
+  },
+  "enemy": {
+    "css": "ghost"
+  },
+  "boss": {
+    "id": "bajie",
+    "nameZh": "猪八戒",
+    "css": "toad",
+    "attacks": ["dash", "bubble"],
+    "hits": 8,
+    "countdownSec": 7
+  },
+  "words": [
+    {"zh": "雾", "en": "fog"},
+    {"zh": "危险的", "en": "dangerous"},
+    {"zh": "腌", "en": "pickle"},
+    {"zh": "甚至", "en": "even"},
+    {"zh": "惩罚", "en": "punish"},
+    {"zh": "救", "en": "save"},
+    {"zh": "紧张不安的", "en": "nervous"},
+    {"zh": "导致", "en": "cause"},
+    {"zh": "放松", "en": "relax"},
+    {"zh": "无害的", "en": "harmless"},
+    {"zh": "转弯处", "en": "bend"},
+    {"zh": "边缘", "en": "edge"}
+  ],
+  "waves": [
+    {
+      "quota": 7,
+      "cap": 3,
+      "projectileHp": 1,
+      "tip": "打中「雾」的小妖"
+    },
+    {
+      "quota": 7,
+      "cap": 3,
+      "projectileHp": 2,
+      "tip": "第二波要打两下"
+    }
+  ],
+  "art": {
+    "enemyPrompt": "A full body chibi sticker of a pale ghost stands on a flat magenta background, with a thick outline and no text. It matches the ghost sprite as a rounded pale blue-white sheet with two dark oval eyes, a small open dark mouth, and two short stubby arms.",
+    "bossPrompt": "A full body chibi sticker of Zhu Bajie as a green toad with a squat rounded body, two large pale eyes, a dark back spot, a wide mouth, and short feet, drawn with a thick outline and no text. He stands on a flat magenta background and is not dressed as Sun Wukong.",
+    "backdropPrompt": "A wide 16:9 children's storybook landscape for the generic theme and the title Wind and Fog: a pale blue sky above with wind-swept cream clouds and soft grey fog drifting between distant peaks, warm green grassy ground and packed earth below, rocky cliffs and a far road bend only along the sides, with grasses leaning in the wind. A clear empty dirt path runs through the center, open and unoccupied. Painted as a gentle watercolor storybook scene with no characters, no animals, no letters, and no writing."
+  }
+}

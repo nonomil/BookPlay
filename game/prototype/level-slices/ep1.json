@@ -1,0 +1,94 @@
+{
+  "id": "ep1",
+  "order": 1,
+  "titleZh": "西游记 第1集",
+  "titleEn": "The Monkey",
+  "theme": "flower-fruit-mountain",
+  "illustration": "assets/adv_frames/ep1/f1.jpg",
+  "hero": {
+    "id": "wukong"
+  },
+  "minor": {
+    "nameZh": "小猴子"
+  },
+  "enemy": {
+    "css": "monkey"
+  },
+  "boss": {
+    "id": "monkey-minor",
+    "nameZh": "猴群小头目",
+    "css": "monkey",
+    "attacks": ["dash", "ring"],
+    "hits": 6,
+    "countdownSec": 8
+  },
+  "words": [
+    {
+      "zh": "旅行",
+      "en": "journey"
+    },
+    {
+      "zh": "西方",
+      "en": "west"
+    },
+    {
+      "zh": "劈开",
+      "en": "split"
+    },
+    {
+      "zh": "强大的",
+      "en": "powerful"
+    },
+    {
+      "zh": "射击",
+      "en": "shot"
+    },
+    {
+      "zh": "皇帝",
+      "en": "emperor"
+    },
+    {
+      "zh": "玉皇大帝",
+      "en": "Jade Emperor"
+    },
+    {
+      "zh": "指挥官",
+      "en": "captain"
+    },
+    {
+      "zh": "在附近",
+      "en": "nearby"
+    },
+    {
+      "zh": "南方的",
+      "en": "southern"
+    },
+    {
+      "zh": "魔术的",
+      "en": "magical"
+    },
+    {
+      "zh": "景色",
+      "en": "sight"
+    }
+  ],
+  "waves": [
+    {
+      "quota": 5,
+      "cap": 2,
+      "projectileHp": 1,
+      "tip": "打退和这一棒意思相同的小猴子"
+    },
+    {
+      "quota": 5,
+      "cap": 2,
+      "projectileHp": 2,
+      "tip": "第二波要打两下"
+    }
+  ],
+  "art": {
+    "enemyPrompt": "A full-body chibi sticker of a small monkey with a round chestnut-brown head, a peach oval face, two round ears with peach insides, a short tan-brown body, and a curled brown tail. It stands on a flat magenta background with a thick dark outline, no clothes, and no text.",
+    "bossPrompt": "A full-body chibi sticker of the minor leader of the monkey troop, with the same monkey parts: a round chestnut-brown head, a peach oval face, two round ears with peach insides, a short tan-brown body, and a curled brown tail. He stands on a flat magenta background with a thick dark outline and no text, and he is not dressed as Sun Wukong, so he has no golden headband, staff, tiger-skin skirt, armor, or crown.",
+    "backdropPrompt": "A wide 16:9 children's storybook landscape of Flower-Fruit Mountain for The Monkey: a bright daytime sky with soft clouds, green slopes of peach-blossom trees and ripe peaches, a distant waterfall, and warm grassy ground. A clear empty dirt path runs through the center, open and unoccupied. No characters, no animals, no letters, and no writing."
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "id": "ep5",
+  "order": 5,
+  "titleZh": "西游记 第5集",
+  "titleEn": "The Demon of Chaos",
+  "theme": "water-dirty-cave",
+  "illustration": "assets/adv_frames/ep5/f1.jpg",
+  "hero": {
+    "id": "wukong"
+  },
+  "boss": {
+    "id": "chaosdemon",
+    "nameZh": "混世魔王",
+    "css": "ghost",
+    "attacks": ["bubble", "ring", "dash"],
+    "hits": 6,
+    "countdownSec": 8
+  },
+  "minor": {
+    "nameZh": "水妖"
+  },
+  "enemy": {
+    "css": "shrimp"
+  },
+  "words": [
+    {"zh": "魔鬼", "en": "demon"},
+    {"zh": "混乱", "en": "chaos"},
+    {"zh": "绑架", "en": "kidnap"},
+    {"zh": "非常愤怒的", "en": "furious"},
+    {"zh": "处理", "en": "handle"},
+    {"zh": "臣服者", "en": "subject"},
+    {"zh": "惊奇", "en": "amazement"},
+    {"zh": "忧郁的", "en": "gloomy"},
+    {"zh": "入口", "en": "entrance"},
+    {"zh": "报仇", "en": "revenge"},
+    {"zh": "尖叫", "en": "shriek"},
+    {"zh": "膳食", "en": "meal"}
+  ],
+  "waves": [
+    {"quota": 5, "cap": 2, "projectileHp": 1, "tip": "打中「魔鬼」的水妖"},
+    {"quota": 5, "cap": 2, "projectileHp": 2, "tip": "第二波要打两下"}
+  ],
+  "art": {
+    "enemyPrompt": "A full body chibi sticker of a pink shrimp on a flat magenta background, with a thick outline and no text, shows a curved rosy body, a pale fan tail, one black eye, two pale antennae, and tiny pale legs. The whole shrimp is visible from the side, with nothing cropped and no extra scenery.",
+    "bossPrompt": "A full body chibi sticker of the Chaos Demon King on a flat magenta background, with a thick outline and no text, shows a pale ghost with a rounded white-blue sheet body, two dark oval eyes, an open dark mouth, and short stubby arms. He is not dressed as Sun Wukong and has no monkey fur, golden headband, or staff.",
+    "backdropPrompt": "A wide 16:9 children's storybook landscape of the water-dirty-cave from The Demon of Chaos, with a grey-green cloudy sky above mossy rock cliffs, dripping stone, and murky olive pools set into the muddy ground. A clear empty path runs through the center, with no characters, no letters, and no flat color field behind the scene."
+  }
+}

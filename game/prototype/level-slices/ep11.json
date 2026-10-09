@@ -1,0 +1,58 @@
+{
+  "id": "ep11",
+  "order": 11,
+  "titleZh": "西游记 第11集",
+  "titleEn": "Trouble in Heaven",
+  "theme": "episode-scene",
+  "illustration": "assets/adv_frames/ep11/f1.jpg",
+  "hero": {
+    "id": "wukong"
+  },
+  "minor": {
+    "nameZh": "小妖"
+  },
+  "enemy": {
+    "css": "monkey"
+  },
+  "boss": {
+    "id": "wukong",
+    "nameZh": "孙悟空",
+    "css": "monkey",
+    "attacks": ["dash", "ring"],
+    "hits": 6,
+    "countdownSec": 8
+  },
+  "words": [
+    { "zh": "破坏", "en": "destroy" },
+    { "zh": "粉碎", "en": "shatter" },
+    { "zh": "信差", "en": "messenger" },
+    { "zh": "消散", "en": "clear" },
+    { "zh": "损伤", "en": "harm" },
+    { "zh": "桃子", "en": "peach" },
+    { "zh": "皱眉", "en": "frown" },
+    { "zh": "使发痒", "en": "tickle" },
+    { "zh": "摆脱", "en": "get rid of" },
+    { "zh": "药水", "en": "potion" },
+    { "zh": "盖子", "en": "lid" },
+    { "zh": "照顾", "en": "tend" }
+  ],
+  "waves": [
+    {
+      "quota": 5,
+      "cap": 2,
+      "projectileHp": 1,
+      "tip": "打中「破坏」的小妖"
+    },
+    {
+      "quota": 5,
+      "cap": 2,
+      "projectileHp": 2,
+      "tip": "第二波要打两下"
+    }
+  ],
+  "art": {
+    "enemyPrompt": "A full body chibi sticker of a brown monkey with round ears, a peach face, a rounded torso, and a curled tail, drawn with a thick outline and no text. It stands alone on a flat magenta background.",
+    "bossPrompt": "A full body chibi sticker of Sun Wukong as a brown monkey with round ears, a peach face, a rounded torso, and a curled tail, drawn with a thick outline and no text. He stands on a flat magenta background and is not dressed as Sun Wukong.",
+    "backdropPrompt": "A wide 16:9 children's storybook landscape for the episode-scene theme and the title Trouble in Heaven, showing a heavenly court: a bright sky of warm sand-gold clouds, distant jade palace roofs, green garden edges with peach trees, and soft pale cloud ground. A clear empty stone path runs through the center, open and unoccupied. No characters, no animals, no letters, and no writing."
+  }
+}

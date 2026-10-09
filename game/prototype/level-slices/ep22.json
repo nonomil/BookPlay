@@ -1,0 +1,58 @@
+{
+  "id": "ep22",
+  "order": 22,
+  "titleZh": "西游记 第22集",
+  "titleEn": "A Very Strange Pill",
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep22/f1.jpg",
+  "hero": {
+    "id": "wukong"
+  },
+  "minor": {
+    "nameZh": "小妖"
+  },
+  "enemy": {
+    "css": "ghost"
+  },
+  "boss": {
+    "id": "blackwind",
+    "nameZh": "黑风大王",
+    "css": "ghost",
+    "attacks": ["dash", "ring"],
+    "hits": 7,
+    "countdownSec": 7
+  },
+  "words": [
+    {"zh": "变装", "en": "disguise"},
+    {"zh": "练习", "en": "practice"},
+    {"zh": "技术", "en": "skill"},
+    {"zh": "里面", "en": "inside"},
+    {"zh": "翻跟斗", "en": "flip"},
+    {"zh": "头巾", "en": "headband"},
+    {"zh": "放置", "en": "place"},
+    {"zh": "弹出", "en": "pop out"},
+    {"zh": "正常的", "en": "normal"},
+    {"zh": "离开", "en": "left"},
+    {"zh": "金属", "en": "metal"},
+    {"zh": "带", "en": "band"}
+  ],
+  "waves": [
+    {
+      "quota": 6,
+      "cap": 3,
+      "projectileHp": 1,
+      "tip": "打中「变装」的小妖"
+    },
+    {
+      "quota": 6,
+      "cap": 3,
+      "projectileHp": 2,
+      "tip": "第二波要打两下"
+    }
+  ],
+  "art": {
+    "enemyPrompt": "A full body chibi sticker of a pale ghost with a rounded white-blue sheet body, two dark oval eyes, a small open mouth, and short stubby arms, drawn with a thick outline and no text. It floats alone on a flat magenta background.",
+    "bossPrompt": "A full body chibi sticker of the Black Wind King as a pale ghost with a rounded white-blue sheet body, two dark oval eyes, a small open mouth, and short stubby arms, drawn with a thick outline and no text. The black-wind demon floats on a flat magenta background and is not dressed as Sun Wukong.",
+    "backdropPrompt": "A wide 16:9 children's storybook landscape for the generic theme episode A Very Strange Pill: a pale blue sky above soft green mountain ground, dark pine slopes and a quiet cave mouth kept to the sides, smooth round stones like strange pills along the verges, and a clear empty dirt path running through the center. No characters, no letters, and no text."
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "id": "ep27",
+  "order": 27,
+  "titleZh": "西游记 第27集",
+  "titleEn": "The Ginseng Fruit",
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep27/f1.jpg",
+  "hero": {
+    "id": "wukong"
+  },
+  "minor": {
+    "nameZh": "小妖"
+  },
+  "enemy": {
+    "css": "ghost"
+  },
+  "boss": {
+    "id": "zhenyuan",
+    "nameZh": "镇元大仙",
+    "css": "ghost",
+    "attacks": ["dash", "ring"],
+    "hits": 7,
+    "countdownSec": 7
+  },
+  "words": [
+    {"zh": "人参", "en": "ginseng"},
+    {"zh": "发抖", "en": "tremble"},
+    {"zh": "牙齿", "en": "fang"},
+    {"zh": "好笑的", "en": "funny"},
+    {"zh": "皱眉", "en": "frown"},
+    {"zh": "完全", "en": "at all"},
+    {"zh": "兽", "en": "beast"},
+    {"zh": "胡说", "en": "nonsense"},
+    {"zh": "野生的", "en": "wild"},
+    {"zh": "赶上", "en": "catch up to"},
+    {"zh": "在前", "en": "ahead"},
+    {"zh": "道教的", "en": "Daoist"}
+  ],
+  "waves": [
+    {
+      "quota": 6,
+      "cap": 3,
+      "projectileHp": 1,
+      "tip": "打中「人参」的小妖"
+    },
+    {
+      "quota": 6,
+      "cap": 3,
+      "projectileHp": 2,
+      "tip": "第二波要打两下"
+    }
+  ],
+  "art": {
+    "enemyPrompt": "A chibi sticker of a full body pale ghost stands on a flat magenta background, with a thick outline and no text. It matches the ghost sprite: a rounded pale blue-white sheet, two dark oval eyes, a small open dark mouth, and two short stubby arms.",
+    "bossPrompt": "A chibi sticker of Great Immortal Zhenyuan stands full body on a flat magenta background, with a thick outline and no text. He is the ghost sprite, a pale blue-white rounded sheet with two dark oval eyes, a small open dark mouth, and two short stubby arms, and he is not dressed as Sun Wukong.",
+    "backdropPrompt": "A wide 16:9 children's storybook landscape for the generic theme and the title The Ginseng Fruit, with a bright daytime sky of soft clouds and warm green grassy ground at a quiet mountain temple garden. A huge ancient fruit tree with round golden fruits stands beside a clear empty dirt path running through the center toward a distant tiled courtyard. No characters and no letters."
+  }
+}

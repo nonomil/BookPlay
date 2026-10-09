@@ -1,0 +1,58 @@
+{
+  "id": "ep107",
+  "order": 107,
+  "titleZh": "西游记 第107集",
+  "titleEn": "Nothing Is Perfect",
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep107/f1.jpg",
+  "hero": {
+    "id": "wukong"
+  },
+  "minor": {
+    "nameZh": "小妖"
+  },
+  "enemy": {
+    "css": "ghost"
+  },
+  "boss": {
+    "id": "imp",
+    "nameZh": "小妖",
+    "css": "ghost",
+    "attacks": ["dash", "ring"],
+    "hits": 8,
+    "countdownSec": 7
+  },
+  "words": [
+    {"zh": "完美的", "en": "perfect"},
+    {"zh": "放", "en": "laid"},
+    {"zh": "变干", "en": "dry out"},
+    {"zh": "权利", "en": "right"},
+    {"zh": "没有权利", "en": "had no"},
+    {"zh": "丢下", "en": "dump"},
+    {"zh": "粗鲁的", "en": "rude"},
+    {"zh": "正如", "en": "just as"},
+    {"zh": "困难的", "en": "difficult"},
+    {"zh": "紧紧抓住", "en": "grasp"},
+    {"zh": "壮丽的", "en": "magnificent"},
+    {"zh": "湿的", "en": "wet"}
+  ],
+  "waves": [
+    {
+      "quota": 7,
+      "cap": 3,
+      "projectileHp": 1,
+      "tip": "打中「完美的」的小妖"
+    },
+    {
+      "quota": 7,
+      "cap": 3,
+      "projectileHp": 2,
+      "tip": "第二波要打两下"
+    }
+  ],
+  "art": {
+    "enemyPrompt": "A chibi sticker of a full body pale ghost stands on a flat magenta background, with a thick outline and no text. It matches the ghost sprite: a rounded pale blue-white sheet, two dark oval eyes, a small open dark mouth, and two short stubby arms.",
+    "bossPrompt": "A chibi sticker of the little demon stands full body on a flat magenta background, with a thick outline and no text. He is the ghost sprite, a pale blue-white rounded sheet with two dark oval eyes, a small open dark mouth, and two short stubby arms, and he is not dressed as Sun Wukong.",
+    "backdropPrompt": "A wide 16:9 children's storybook landscape for the generic theme and the title Nothing Is Perfect: a bright warm daytime sky with a soft sun and pale clouds above a quiet riverside, warm green grassy ground, and sunlit rocks along the sides where blank soaked pale sheets lie open to dry. A clear empty dirt path runs through the center, open and unoccupied. No characters, no animals, no letters, and no writing."
+  }
+}

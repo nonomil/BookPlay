@@ -1,0 +1,94 @@
+{
+  "id": "ep12",
+  "order": 12,
+  "titleZh": "西游记 第12集",
+  "titleEn": "The Bet",
+  "theme": "episode-scene",
+  "illustration": "assets/adv_frames/ep12/f1.jpg",
+  "hero": {
+    "id": "wukong"
+  },
+  "minor": {
+    "nameZh": "小妖"
+  },
+  "enemy": {
+    "css": "monkey"
+  },
+  "boss": {
+    "id": "wukong",
+    "nameZh": "孙悟空",
+    "css": "monkey",
+    "attacks": ["dash", "ring"],
+    "hits": 6,
+    "countdownSec": 8
+  },
+  "words": [
+    {
+      "zh": "赌注",
+      "en": "bet"
+    },
+    {
+      "zh": "强大的",
+      "en": "powerful"
+    },
+    {
+      "zh": "方式",
+      "en": "formula"
+    },
+    {
+      "zh": "一生",
+      "en": "lifetime"
+    },
+    {
+      "zh": "统治",
+      "en": "rule"
+    },
+    {
+      "zh": "高飞",
+      "en": "soar"
+    },
+    {
+      "zh": "打赌",
+      "en": "make a bet"
+    },
+    {
+      "zh": "严重地",
+      "en": "severely"
+    },
+    {
+      "zh": "手掌",
+      "en": "palm"
+    },
+    {
+      "zh": "想像",
+      "en": "imagine"
+    },
+    {
+      "zh": "轻拍",
+      "en": "tap"
+    },
+    {
+      "zh": "下巴",
+      "en": "chin"
+    }
+  ],
+  "waves": [
+    {
+      "quota": 5,
+      "cap": 2,
+      "projectileHp": 1,
+      "tip": "打中「赌注」的小妖"
+    },
+    {
+      "quota": 5,
+      "cap": 2,
+      "projectileHp": 2,
+      "tip": "第二波要打两下"
+    }
+  ],
+  "art": {
+    "enemyPrompt": "A full-body chibi monkey sticker stands on a flat magenta background, with brown fur, a peach face, round ears, a short tan body, a curled tail, a thick outline, and no text. This enemy matches the plain monkey sprite and wears no clothes, crown, staff, or armor.",
+    "bossPrompt": "A full-body chibi sticker shows the boss Sun Wukong as a plain monkey with brown fur, a peach face, round ears, a tan body, and a curled tail, on a flat magenta background with a thick outline and no text. He is not dressed as Sun Wukong, with no golden fillet, staff, armor, cape, or tiger-skin skirt.",
+    "backdropPrompt": "A wide 16:9 children's storybook landscape for the episode-scene theme and the title The Bet: a warm apricot sky above pale stone ground, with soft cream clouds. A clear empty path runs through the center, open and unoccupied. Red-and-gold heavenly palace halls stand only along the sides, and five enormous golden pillars rise far on the horizon beyond the path. Painted as a gentle watercolor storybook scene with no characters, no animals, no letters, and no writing."
+  }
+}

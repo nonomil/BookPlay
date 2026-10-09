@@ -1,0 +1,58 @@
+{
+  "id": "ep51",
+  "order": 51,
+  "titleZh": "西游记 第51集",
+  "titleEn": "Guanyin Becomes Angry",
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep51/f1.jpg",
+  "hero": {
+    "id": "wukong"
+  },
+  "minor": {
+    "nameZh": "小妖"
+  },
+  "enemy": {
+    "css": "ghost"
+  },
+  "boss": {
+    "id": "redboy",
+    "nameZh": "红孩儿",
+    "css": "ghost",
+    "attacks": ["ring", "dash"],
+    "hits": 7,
+    "countdownSec": 7
+  },
+  "words": [
+    { "zh": "变装", "en": "disguise" },
+    { "zh": "正常的", "en": "normal" },
+    { "zh": "外观", "en": "appearance" },
+    { "zh": "偷偷地走近", "en": "sneak up" },
+    { "zh": "困", "en": "trap" },
+    { "zh": "道德败坏的", "en": "filthy" },
+    { "zh": "到底", "en": "after all" },
+    { "zh": "出发", "en": "head" },
+    { "zh": "接住", "en": "caught" },
+    { "zh": "怒气", "en": "anger" },
+    { "zh": "怎么敢", "en": "how" },
+    { "zh": "花瓶", "en": "vase" }
+  ],
+  "waves": [
+    {
+      "quota": 6,
+      "cap": 3,
+      "projectileHp": 1,
+      "tip": "打中「变装」的小妖"
+    },
+    {
+      "quota": 6,
+      "cap": 3,
+      "projectileHp": 2,
+      "tip": "第二波要打两下"
+    }
+  ],
+  "art": {
+    "enemyPrompt": "A chibi sticker of a full body pale ghost stands on a flat magenta background, with a thick outline and no text. It matches the ghost sprite: a rounded pale blue-white sheet, two dark oval eyes, a small open dark mouth, and two short stubby arms.",
+    "bossPrompt": "A chibi sticker of Red Boy stands full body on a flat magenta background, with a thick outline and no text. He is the ghost sprite, a pale blue-white rounded sheet with two dark oval eyes, a small open dark mouth, and two short stubby arms, and he is not dressed as Sun Wukong.",
+    "backdropPrompt": "A wide 16:9 children's storybook landscape for the generic theme and the title Guanyin Becomes Angry, showing the empty South Sea shore by a quiet seaside pagoda: a pale blue sky darkening with soft grey storm clouds above, warm sand and green lotus-pond ground below, white stone steps and a distant tiled pagoda only along the sides, and a calm blue ocean beyond. A clear empty sand path runs through the center, open and unoccupied. No characters, no animals, no letters, and no writing."
+  }
+}

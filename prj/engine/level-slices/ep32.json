@@ -1,0 +1,58 @@
+{
+  "id": "ep32",
+  "order": 32,
+  "titleZh": "西游记 第32集",
+  "titleEn": "Lady Whitebone",
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep32/f1.jpg",
+  "hero": {
+    "id": "wukong"
+  },
+  "minor": {
+    "nameZh": "小妖"
+  },
+  "enemy": {
+    "css": "ghost"
+  },
+  "boss": {
+    "id": "whitebone",
+    "nameZh": "白骨夫人",
+    "css": "ghost",
+    "attacks": ["ring", "dash"],
+    "hits": 7,
+    "countdownSec": 7
+  },
+  "words": [
+    {"zh": "变装", "en": "disguise"},
+    {"zh": "视力", "en": "sight"},
+    {"zh": "果园", "en": "orchard"},
+    {"zh": "一千", "en": "thousand"},
+    {"zh": "伸出", "en": "hold out"},
+    {"zh": "抽出", "en": "pull out"},
+    {"zh": "人", "en": "human"},
+    {"zh": "不幸地", "en": "unfortunately"},
+    {"zh": "残忍的", "en": "cruel"},
+    {"zh": "可笑的", "en": "ridiculous"},
+    {"zh": "滚动", "en": "roll"},
+    {"zh": "带来", "en": "bring"}
+  ],
+  "waves": [
+    {
+      "quota": 6,
+      "cap": 3,
+      "projectileHp": 1,
+      "tip": "打中「变装」的小妖"
+    },
+    {
+      "quota": 6,
+      "cap": 3,
+      "projectileHp": 2,
+      "tip": "第二波要打两下"
+    }
+  ],
+  "art": {
+    "enemyPrompt": "A full body chibi sticker of a pale ghost with a rounded white sheet body, two dark oval eyes, a small open mouth, and short arms, drawn with a thick outline and no text. It stands alone on a flat magenta background.",
+    "bossPrompt": "A full body chibi sticker of 白骨夫人 Lady Whitebone as a pale ghost with a rounded white sheet body, two dark oval eyes, a small open mouth, and short arms, drawn with a thick outline and no text. She floats on a flat magenta background and is not dressed as Sun Wukong.",
+    "backdropPrompt": "A wide 16:9 children's storybook landscape for Lady Whitebone, in the generic theme: White Bone Ridge in soft painted daylight. A pale lavender sky with cream clouds fills the top, and pale mint grass covers the ground. A clear empty cream path runs through the center from the foreground into the distance. Chalky white rock spires and playful bare curly trees stand only along the left and right sides. No characters, no letters, and no writing."
+  }
+}

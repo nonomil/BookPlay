@@ -1,0 +1,58 @@
+{
+  "id": "ep14",
+  "order": 14,
+  "titleZh": "西游记 第14集",
+  "titleEn": "A Promise to Protect",
+  "theme": "episode-scene",
+  "illustration": "assets/adv_frames/ep14/f1.jpg",
+  "hero": {
+    "id": "wukong"
+  },
+  "boss": {
+    "id": "tang",
+    "nameZh": "唐僧",
+    "css": "ghost",
+    "attacks": ["ring", "dash"],
+    "hits": 6,
+    "countdownSec": 8
+  },
+  "minor": {
+    "nameZh": "小妖"
+  },
+  "enemy": {
+    "css": "ghost"
+  },
+  "words": [
+    {"zh": "发抖", "en": "tremble"},
+    {"zh": "惩罚", "en": "punish"},
+    {"zh": "放...自由", "en": "set free"},
+    {"zh": "放松", "en": "relax"},
+    {"zh": "移动", "en": "remove"},
+    {"zh": "推到一边", "en": "push aside"},
+    {"zh": "矮树", "en": "shrub"},
+    {"zh": "有刺灌木", "en": "bramble"},
+    {"zh": "卵石", "en": "boulder"},
+    {"zh": "顶端", "en": "peak"},
+    {"zh": "微风", "en": "breeze"},
+    {"zh": "迅速移动", "en": "swept"}
+  ],
+  "waves": [
+    {
+      "quota": 5,
+      "cap": 2,
+      "projectileHp": 1,
+      "tip": "打中「发抖」的小妖"
+    },
+    {
+      "quota": 5,
+      "cap": 2,
+      "projectileHp": 2,
+      "tip": "第二波要打两下"
+    }
+  ],
+  "art": {
+    "enemyPrompt": "A full-body chibi sticker of a small ghost stands on a flat magenta background, with a thick outline and no text. Its body is a pale blue-white rounded sheet with a darker lower edge, two oval navy eyes, a small open mouth, and short stubby arms.",
+    "bossPrompt": "A full-body chibi sticker of the monk Tang Seng stands on a flat magenta background, with a thick outline and no text. He has a pale blue-white ghost body, oval navy eyes, a small open mouth, stubby arms, a calm shaved head, and a thin saffron monk collar, and he is not dressed as Sun Wukong.",
+    "backdropPrompt": "A wide 16:9 children's storybook landscape of an episode-scene mountain for A Promise to Protect: a bright daytime sky with soft clouds and a gentle breeze, steep green slopes of shrubs and thorny brambles, pale cliffs, round trees, and large boulders beside a rocky peak, and warm grassy ground. A clear empty dirt path runs through the center, open and unoccupied. No characters, no animals, no letters, and no writing."
+  }
+}

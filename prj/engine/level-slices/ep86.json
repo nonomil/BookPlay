@@ -1,0 +1,58 @@
+{
+  "id": "ep86",
+  "order": 86,
+  "titleZh": "西游记 第86集",
+  "titleEn": "Magic Bells",
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep86/f1.jpg",
+  "hero": {
+    "id": "wukong"
+  },
+  "minor": {
+    "nameZh": "小妖"
+  },
+  "enemy": {
+    "css": "ghost"
+  },
+  "boss": {
+    "id": "powerdemon",
+    "nameZh": "大力妖王",
+    "css": "ghost",
+    "attacks": ["dash", "ring"],
+    "hits": 8,
+    "countdownSec": 7
+  },
+  "words": [
+    {"zh": "各式各样的", "en": "all kinds"},
+    {"zh": "污辱人的言行", "en": "insult"},
+    {"zh": "回到", "en": "back"},
+    {"zh": "假的", "en": "fake"},
+    {"zh": "赶走", "en": "chase away"},
+    {"zh": "怒目注视", "en": "glare"},
+    {"zh": "伸手去拿", "en": "reach for"},
+    {"zh": "眯着眼看", "en": "squint"},
+    {"zh": "怀疑", "en": "doubt"},
+    {"zh": "凝视", "en": "peer"},
+    {"zh": "有趣的", "en": "interesting"},
+    {"zh": "比较", "en": "compare"}
+  ],
+  "waves": [
+    {
+      "quota": 7,
+      "cap": 3,
+      "projectileHp": 1,
+      "tip": "打中「各式各样的」的小妖"
+    },
+    {
+      "quota": 7,
+      "cap": 3,
+      "projectileHp": 2,
+      "tip": "第二波要打两下"
+    }
+  ],
+  "art": {
+    "enemyPrompt": "A full body chibi sticker of a pale ghost has a rounded icy-white sheet body, two dark oval eyes, a small open dark mouth, and two short stubby arms, with a thick outline and no text. The whole ghost stands full body alone on a flat magenta background.",
+    "bossPrompt": "A full body chibi sticker of the Power Demon King as a pale ghost has a larger rounded icy-white sheet body, two dark oval eyes, a wide open dark mouth, and two thick stubby arms, with a thick outline and no text. He stands full body on a flat magenta background to show great strength, and he is not dressed as Sun Wukong.",
+    "backdropPrompt": "A wide 16:9 children's storybook landscape of the generic theme for Magic Bells: a bright daytime sky with soft white clouds, warm sandy grass and packed earth for the ground, and a clear empty dirt path running through the center, open and unoccupied. Rocky mountain slopes and one quiet empty cave mouth stay off to either side, with three small bronze bells resting on a stone ledge set back from the path, and a faint distant haze of smoke far beyond the ridge. Painted as a gentle watercolor storybook scene. No characters, no animals, no letters, and no writing."
+  }
+}

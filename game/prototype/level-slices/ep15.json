@@ -1,0 +1,58 @@
+{
+  "id": "ep15",
+  "order": 15,
+  "titleZh": "西游记 第15集",
+  "titleEn": "Tea with a Dragon",
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep15/f1.jpg",
+  "hero": {
+    "id": "wukong"
+  },
+  "minor": {
+    "nameZh": "小妖"
+  },
+  "enemy": {
+    "css": "ghost"
+  },
+  "boss": {
+    "id": "imp",
+    "nameZh": "小妖",
+    "css": "ghost",
+    "attacks": ["dash", "ring"],
+    "hits": 6,
+    "countdownSec": 7
+  },
+  "words": [
+    { "zh": "强盗", "en": "robber" },
+    { "zh": "接近", "en": "approach" },
+    { "zh": "绊", "en": "trip" },
+    { "zh": "回击", "en": "strike back" },
+    { "zh": "可笑的", "en": "ridiculous" },
+    { "zh": "打", "en": "beaten" },
+    { "zh": "暴力的", "en": "violent" },
+    { "zh": "救", "en": "save" },
+    { "zh": "责骂", "en": "scold" },
+    { "zh": "暂停", "en": "pause" },
+    { "zh": "接受", "en": "accept" },
+    { "zh": "对待", "en": "treatment" }
+  ],
+  "waves": [
+    {
+      "quota": 5,
+      "cap": 2,
+      "projectileHp": 1,
+      "tip": "打中「强盗」的小妖"
+    },
+    {
+      "quota": 5,
+      "cap": 2,
+      "projectileHp": 2,
+      "tip": "第二波要打两下"
+    }
+  ],
+  "art": {
+    "enemyPrompt": "A full-body chibi sticker of a small sheet ghost stands on a flat magenta background, with a thick dark outline and no text. The icy-white body is a tall rounded dome with a flatter bottom, two dark oval eyes, a small open mouth, and two stubby side arms.",
+    "bossPrompt": "A full-body chibi sticker of a little demon boss stands on a flat magenta background, with a thick dark outline and no text, shaped as a larger icy-white sheet ghost with dark oval eyes, a small open mouth, and stubby arms. It is not dressed as Sun Wukong and has no monkey face, golden fillet, tiger-skin skirt, or staff.",
+    "backdropPrompt": "A wide 16:9 children's storybook landscape of the generic theme for Tea with a Dragon. Pale blue sky and soft white clouds fill the top, and warm green stone ground fills the bottom. A clear empty dirt path runs straight through the center, open and unoccupied. Quiet Eastern Sea palace walls, pearl columns, coral eaves, and wave-pattern roof tiles stand off to either side, with a small unoccupied tea table set back from the path holding a teapot and empty cups, and a calm blue ocean beyond the courtyard. No characters, no animals, and no letters."
+  }
+}

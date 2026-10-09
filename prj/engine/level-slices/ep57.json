@@ -1,0 +1,58 @@
+{
+  "id": "ep57",
+  "order": 57,
+  "titleZh": "西游记 第57集",
+  "titleEn": "A Guessing Game",
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep57/f1.jpg",
+  "hero": {
+    "id": "wukong"
+  },
+  "minor": {
+    "nameZh": "小妖"
+  },
+  "enemy": {
+    "css": "ghost"
+  },
+  "boss": {
+    "id": "tigerimmortal",
+    "nameZh": "虎力大仙",
+    "css": "ghost",
+    "attacks": ["dash", "ring"],
+    "hits": 7,
+    "countdownSec": 7
+  },
+  "words": [
+    { "zh": "谜语", "en": "guessing" },
+    { "zh": "祷告", "en": "prayer" },
+    { "zh": "挂虑的", "en": "concerned" },
+    { "zh": "服从", "en": "obey" },
+    { "zh": "命令", "en": "order" },
+    { "zh": "消散", "en": "clear" },
+    { "zh": "显然地", "en": "obviously" },
+    { "zh": "重踩", "en": "stomp" },
+    { "zh": "失败", "en": "lose" },
+    { "zh": "忽视", "en": "ignore" },
+    { "zh": "竞赛", "en": "contest" },
+    { "zh": "挑战", "en": "challenge" }
+  ],
+  "waves": [
+    {
+      "quota": 6,
+      "cap": 3,
+      "projectileHp": 1,
+      "tip": "打中「谜语」的小妖"
+    },
+    {
+      "quota": 6,
+      "cap": 3,
+      "projectileHp": 2,
+      "tip": "第二波要打两下"
+    }
+  ],
+  "art": {
+    "enemyPrompt": "A chibi sticker of a full body pale ghost stands on a flat magenta background, with a thick outline and no text. It matches the ghost sprite: a rounded pale blue-white sheet, two dark oval eyes, a small open dark mouth, and two short stubby arms.",
+    "bossPrompt": "A chibi sticker of the Tiger Immortal, Huli Daxian, stands full body on a flat magenta background, with a thick outline and no text. He is the ghost sprite, a pale blue-white rounded sheet with two dark oval eyes, a small open dark mouth, and two short stubby arms, and he is not dressed as Sun Wukong.",
+    "backdropPrompt": "A wide 16:9 children's storybook landscape for the generic theme and the title A Guessing Game, showing an open royal contest courtyard after the rain has cleared: a bright blue sky with soft leftover clouds, warm sunlit stone ground, and red-and-gold palace halls kept only along the sides. A clear empty dirt path runs through the center, open and unoccupied. One small closed wooden box rests on a low stand beside the path. Painted as a gentle watercolor storybook scene with no characters, no animals, no letters, and no writing."
+  }
+}

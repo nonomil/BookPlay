@@ -1,0 +1,58 @@
+{
+  "id": "ep39",
+  "order": 39,
+  "titleZh": "西游记 第39集",
+  "titleEn": "The Injured Monk",
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep39/f1.jpg",
+  "hero": {
+    "id": "wukong"
+  },
+  "minor": {
+    "nameZh": "小妖"
+  },
+  "enemy": {
+    "css": "ghost"
+  },
+  "boss": {
+    "id": "goldenhorn",
+    "nameZh": "金角大王",
+    "css": "ghost",
+    "attacks": ["dash", "ring"],
+    "hits": 7,
+    "countdownSec": 7
+  },
+  "words": [
+    {"zh": "挥动", "en": "wave"},
+    {"zh": "冲", "en": "rush"},
+    {"zh": "机敏的", "en": "alert"},
+    {"zh": "保持警惕", "en": "stay alert"},
+    {"zh": "可是", "en": "though"},
+    {"zh": "谢天谢地", "en": "Thank"},
+    {"zh": "伤害", "en": "injure"},
+    {"zh": "非常地", "en": "terribly"},
+    {"zh": "怀疑地", "en": "suspiciously"},
+    {"zh": "极度地", "en": "badly"},
+    {"zh": "在前", "en": "ahead"},
+    {"zh": "简单的", "en": "simple"}
+  ],
+  "waves": [
+    {
+      "quota": 6,
+      "cap": 3,
+      "projectileHp": 1,
+      "tip": "打中「挥动」的小妖"
+    },
+    {
+      "quota": 6,
+      "cap": 3,
+      "projectileHp": 2,
+      "tip": "第二波要打两下"
+    }
+  ],
+  "art": {
+    "enemyPrompt": "A full body chibi sticker of a pale ghost with a rounded white sheet body, two dark oval eyes, a small open mouth, and short stubby arms, drawn with a thick outline and no text. It floats full body alone on a flat magenta background.",
+    "bossPrompt": "A full body chibi sticker of the Golden Horn King as a pale ghost with a rounded white sheet body, two dark oval eyes, a small open mouth, short stubby arms, and two curved golden horns, drawn with a thick outline and no text. He floats full body on a flat magenta background and is not dressed as Sun Wukong.",
+    "backdropPrompt": "A wide 16:9 children's storybook landscape for the generic theme and the title The Injured Monk. Paint a quiet mountain road under a pale blue sky with soft cream clouds, warm green slopes and brown earth below, pine trees and grey boulders only at the sides, and distant rounded peaks. A clear empty tan dirt path runs through the center, open and unoccupied. Soft watercolor colors. No characters, no people, no animals, no letters, and no writing."
+  }
+}

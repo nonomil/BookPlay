@@ -1,0 +1,58 @@
+{
+  "id": "ep74",
+  "order": 74,
+  "titleZh": "西游记 第74集",
+  "titleEn": "Curious Ear",
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep74/f1.jpg",
+  "hero": {
+    "id": "wukong"
+  },
+  "minor": {
+    "nameZh": "小妖"
+  },
+  "enemy": {
+    "css": "ghost"
+  },
+  "boss": {
+    "id": "imp",
+    "nameZh": "小妖",
+    "css": "ghost",
+    "attacks": ["ring", "dash"],
+    "hits": 8,
+    "countdownSec": 8
+  },
+  "words": [
+    {"zh": "好奇心强的", "en": "curious"},
+    {"zh": "吼叫", "en": "howl"},
+    {"zh": "过去经常", "en": "used to"},
+    {"zh": "谁是谁", "en": "who is"},
+    {"zh": "仿冒品", "en": "fake"},
+    {"zh": "躲闪", "en": "dodge"},
+    {"zh": "打击", "en": "blow"},
+    {"zh": "警卫", "en": "guard"},
+    {"zh": "变窄", "en": "narrow"},
+    {"zh": "精灵", "en": "spirit"},
+    {"zh": "逃走", "en": "fled"},
+    {"zh": "到处", "en": "all over"}
+  ],
+  "waves": [
+    {
+      "quota": 7,
+      "cap": 3,
+      "projectileHp": 1,
+      "tip": "打中「好奇心强的」的小妖"
+    },
+    {
+      "quota": 7,
+      "cap": 3,
+      "projectileHp": 2,
+      "tip": "第二波要打两下"
+    }
+  ],
+  "art": {
+    "enemyPrompt": "A chibi sticker of a full body pale ghost stands on a flat magenta background, with a thick outline and no text. It matches the ghost sprite: a rounded pale blue-white sheet, two dark oval eyes, a small open dark mouth, and two short stubby arms.",
+    "bossPrompt": "A chibi sticker of the little demon stands full body on a flat magenta background, with a thick outline and no text. He is the ghost sprite, a pale blue-white rounded sheet with two dark oval eyes, a small open dark mouth, and two short stubby arms, and he is not dressed as Sun Wukong.",
+    "backdropPrompt": "A wide 16:9 children's storybook landscape for the generic theme and the title Curious Ear, showing the quiet underworld hall of the Land of Darkness: a dim violet-gray sky above dark earthen ground, warm amber lanterns and tall stone pillars kept only along the sides, and an empty wooden desk set back from the walkway. A clear empty pale stone path runs through the center, open and unoccupied. Painted as a gentle watercolor storybook scene with no characters, no animals, no letters, and no writing."
+  }
+}

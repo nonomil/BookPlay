@@ -1,0 +1,58 @@
+{
+  "id": "ep35",
+  "order": 35,
+  "titleZh": "西游记 第35集",
+  "titleEn": "A Visit to the King",
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep35/f1.jpg",
+  "hero": {
+    "id": "wukong"
+  },
+  "minor": {
+    "nameZh": "小妖"
+  },
+  "enemy": {
+    "css": "ghost"
+  },
+  "boss": {
+    "id": "hundredflowers",
+    "nameZh": "百花羞公主",
+    "css": "ghost",
+    "attacks": ["ring", "dash"],
+    "hits": 7,
+    "countdownSec": 7
+  },
+  "words": [
+    {"zh": "踏", "en": "stamp"},
+    {"zh": "处于震惊之中", "en": "in shock"},
+    {"zh": "家伙", "en": "fellow"},
+    {"zh": "快的", "en": "quick"},
+    {"zh": "发光", "en": "sparkle"},
+    {"zh": "英俊的", "en": "handsome"},
+    {"zh": "捕获", "en": "capture"},
+    {"zh": "女婿", "en": "son-in-law"},
+    {"zh": "混乱的", "en": "confused"},
+    {"zh": "松懈的", "en": "relaxed"},
+    {"zh": "勇敢的", "en": "brave"},
+    {"zh": "报仇", "en": "revenge"}
+  ],
+  "waves": [
+    {
+      "quota": 6,
+      "cap": 3,
+      "projectileHp": 1,
+      "tip": "打中「踏」的小妖"
+    },
+    {
+      "quota": 6,
+      "cap": 3,
+      "projectileHp": 2,
+      "tip": "第二波要打两下"
+    }
+  ],
+  "art": {
+    "enemyPrompt": "A full body chibi sticker of a ghost enemy with a pale blue-white sheet body, a rounded top, a flat hem, two dark oval eyes, a small open mouth, and two short arms, drawn with a thick outline and no text. It stands alone on a flat magenta background.",
+    "bossPrompt": "A full body chibi sticker of Princess Hundred Flowers as a pale ghost with a pale blue-white sheet body, a rounded top, a flat hem, two dark oval eyes, a small open mouth, and two short arms, drawn with a thick outline and no text. She floats on a flat magenta background and is not dressed as Sun Wukong.",
+    "backdropPrompt": "A wide 16:9 children's storybook landscape for the generic theme and the title A Visit to the King, showing a quiet royal city approach: a bright daytime sky with soft white clouds, warm pale stone ground, flowering hedges and tiled palace roofs kept to the left and right, and a distant open palace gate. A clear empty path runs through the center, open and unoccupied. No characters, no animals, no letters, and no writing."
+  }
+}

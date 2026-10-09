@@ -1,0 +1,59 @@
+{
+  "id": "ep8",
+  "order": 8,
+  "titleZh": "西游记 第8集",
+  "titleEn": "A Job in Heaven",
+  "theme": "episode-scene",
+  "illustration": "assets/adv_frames/ep8/f1.jpg",
+  "hero": {
+    "id": "wukong"
+  },
+  "boss": {
+    "id": "jadeemperor",
+    "nameZh": "玉皇大帝",
+    "css": "dragon",
+    "attacks": ["ring", "dash"],
+    "hits": 6,
+    "countdownSec": 6
+  },
+  "minor": {
+    "nameZh": "小妖"
+  },
+  "enemy": {
+    "css": "ghost",
+    "nameZh": "小妖"
+  },
+  "words": [
+    {"zh": "王位", "en": "throne"},
+    {"zh": "信差", "en": "messenger"},
+    {"zh": "宫廷", "en": "court"},
+    {"zh": "抱怨", "en": "complaint"},
+    {"zh": "要求", "en": "demand"},
+    {"zh": "划掉", "en": "cross out"},
+    {"zh": "下巴", "en": "chin"},
+    {"zh": "收集", "en": "gather"},
+    {"zh": "军队", "en": "troop"},
+    {"zh": "行星", "en": "planet"},
+    {"zh": "金星", "en": "Venus"},
+    {"zh": "眉毛", "en": "eyebrow"}
+  ],
+  "waves": [
+    {
+      "quota": 5,
+      "cap": 2,
+      "projectileHp": 1,
+      "tip": "打中「王位」的小妖"
+    },
+    {
+      "quota": 5,
+      "cap": 2,
+      "projectileHp": 2,
+      "tip": "第二波要打两下"
+    }
+  ],
+  "art": {
+    "enemyPrompt": "A chibi sticker of a full body pale ice-white ghost, with a tall rounded sheet, two dark oval eyes, a small open dark mouth, and two short stubby arms. It has a thick outline on a flat magenta background and no text.",
+    "bossPrompt": "A chibi sticker of the Jade Emperor as a full body green dragon, with a rounded emerald head, a pale mint snout, two short gold horns, a darker green body, one white eye, and a small gold crown, and not dressed as Sun Wukong. It has a thick outline on a flat magenta background and no text.",
+    "backdropPrompt": "A wide 16:9 children's storybook landscape of a quiet heavenly court for A Job in Heaven, in the episode-scene theme, painted like a soft gouache picture book. A warm peach and pale-gold sky fills the top, with far jade palace roofs resting on cloud banks. Below is green garden ground and pale stone, split by a clear empty path through the center. Sky and ground are both visible, with no characters and no letters."
+  }
+}

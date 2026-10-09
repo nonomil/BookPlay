@@ -1,0 +1,58 @@
+{
+  "id": "ep19",
+  "order": 19,
+  "titleZh": "西游记 第19集",
+  "titleEn": "An Evil Plan",
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep19/f1.jpg",
+  "hero": {
+    "id": "wukong"
+  },
+  "boss": {
+    "id": "imp",
+    "nameZh": "小妖",
+    "css": "ghost",
+    "attacks": ["dash", "ring"],
+    "hits": 7,
+    "countdownSec": 7
+  },
+  "minor": {
+    "nameZh": "小妖"
+  },
+  "enemy": {
+    "css": "ghost"
+  },
+  "words": [
+    { "zh": "邪恶的", "en": "evil" },
+    { "zh": "首脑的", "en": "head" },
+    { "zh": "神职人员", "en": "priest" },
+    { "zh": "天堂", "en": "paradise" },
+    { "zh": "冥想", "en": "meditate" },
+    { "zh": "屋顶", "en": "rooftop" },
+    { "zh": "走路的声音", "en": "footstep" },
+    { "zh": "庭院", "en": "courtyard" },
+    { "zh": "木柴", "en": "firewood" },
+    { "zh": "堆", "en": "stack" },
+    { "zh": "点着", "en": "lit" },
+    { "zh": "火焰", "en": "flame" }
+  ],
+  "waves": [
+    {
+      "quota": 5,
+      "cap": 2,
+      "projectileHp": 1,
+      "tip": "打中「邪恶的」的小妖"
+    },
+    {
+      "quota": 5,
+      "cap": 2,
+      "projectileHp": 2,
+      "tip": "第二波要打两下"
+    }
+  ],
+  "art": {
+    "enemyPrompt": "A chibi sticker of a full body ghost enemy on a flat magenta background, with a thick outline and no text. The sprite matches ghost: a pale blue-white sheet body with a rounded top and flat hem, two dark oval eyes, a small open dark mouth, and two short stubby arms.",
+    "bossPrompt": "A chibi sticker of a full body little demon imp on a flat magenta background, with a thick outline and no text. The boss matches the ghost sprite with a larger pale blue-white sheet body, two dark oval eyes, a small open dark mouth, and two stubby arms, and is not dressed as Sun Wukong.",
+    "backdropPrompt": "A wide 16:9 children's storybook landscape for the generic Journey to the West theme and the title An Evil Plan. Paint a moonlit monastery courtyard under a deep blue night sky, with stone ground and a clear empty dirt path down the center. Curved tiled rooftops, quiet wooden halls, garden shrubs, and neat firewood stacks sit only at the sides. Soft painted colors and gentle moonlight. No characters, no people, no animals, no letters, and no writing."
+  }
+}

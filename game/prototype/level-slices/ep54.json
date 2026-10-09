@@ -1,0 +1,58 @@
+{
+  "id": "ep54",
+  "order": 54,
+  "titleZh": "西游记 第54集",
+  "titleEn": "The River God",
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep54/f1.jpg",
+  "hero": {
+    "id": "wukong"
+  },
+  "minor": {
+    "nameZh": "小妖"
+  },
+  "enemy": {
+    "css": "ghost"
+  },
+  "boss": {
+    "id": "shawujing",
+    "nameZh": "沙悟净",
+    "css": "ghost",
+    "attacks": ["bubble", "dash"],
+    "hits": 7,
+    "countdownSec": 7
+  },
+  "words": [
+    {"zh": "每当", "en": "whenever"},
+    {"zh": "警告", "en": "warn"},
+    {"zh": "相信", "en": "believe"},
+    {"zh": "轻拍", "en": "tap"},
+    {"zh": "矛", "en": "spear"},
+    {"zh": "往外偷看", "en": "peek out"},
+    {"zh": "蜥蜴", "en": "lizard"},
+    {"zh": "打", "en": "struck"},
+    {"zh": "推", "en": "shove"},
+    {"zh": "向上", "en": "upward"},
+    {"zh": "溅", "en": "splash"},
+    {"zh": "呼吸", "en": "breathe"}
+  ],
+  "waves": [
+    {
+      "quota": 6,
+      "cap": 3,
+      "projectileHp": 1,
+      "tip": "打中「每当」的小妖"
+    },
+    {
+      "quota": 6,
+      "cap": 3,
+      "projectileHp": 2,
+      "tip": "第二波要打两下"
+    }
+  ],
+  "art": {
+    "enemyPrompt": "A full body chibi sticker of a pale ghost stands on a flat magenta background, with a thick outline and no text. It matches the ghost sprite: a rounded pale blue-white sheet, two dark oval eyes, a small open dark mouth, and two short stubby arms.",
+    "bossPrompt": "A full body chibi sticker of Sha Wujing stands on a flat magenta background, with a thick outline and no text. He matches the ghost sprite as a pale blue-white rounded sheet with two dark oval eyes, a small open dark mouth, and two short stubby arms, and he is not dressed as Sun Wukong.",
+    "backdropPrompt": "A wide 16:9 children's storybook landscape of The River God, in the generic theme, painted like a soft watercolor picture book. A bright blue daytime sky with soft white clouds and a pale sun fills the top, and warm green grass covers the ground. A clear empty tan dirt path runs through the center from the foreground into the distance. Along the left and right sides only stand steep green mountains, gray rocks, and a wide blue river with a small waterfall. No characters, no animals, no letters, and no writing."
+  }
+}

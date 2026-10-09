@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<title>花果山 · 打跑猴群</title>
+<script>location.replace("../../play/huaguo/index.html");</script>
+<link rel="stylesheet" href="game.css">
+</head>
+<body>
+<section class="screen on scene" id="scr-title">
+  <img class="fig" src="../../assets/generated/arena/clay/wukong/wukong-south-idle.png" alt="孙悟空">
+  <div class="caption">
+    <h1>花果山</h1>
+    <p>打跑猴群</p>
+    <button class="gold" id="btn-enter" type="button">进入游戏</button>
+  </div>
+</section>
+
+<section class="screen scene" id="scr-load">
+  <img class="fig dim" src="../../assets/generated/arena/clay/wukong/wukong-south-idle.png" alt="">
+  <div class="caption">
+    <h2>正在上山</h2>
+    <div class="track"><i id="load-bar"></i></div>
+    <b id="load-pct">0%</b>
+  </div>
+</section>
+
+<section class="screen scene" id="scr-lobby">
+  <button id="test-chip" type="button">🧪 测试模式：关</button>
+  <div class="modes">
+    <button class="lv-card" id="lv-huaguoshan" type="button">
+      <span class="cover"><img src="../../assets/game-backgrounds/ep1.jpg" alt=""></span>
+      <span class="tx"><b class="no">第1关</b><b class="nm">花果山称王</b><i class="st">打跑挡路的猴群</i></span>
+      <em class="bd">开始</em>
+    </button>
+    <button class="lv-card soon" type="button" data-lock="龙宫借宝">
+      <span class="cover"><img src="../../assets/game-backgrounds/dragon-palace.jpg" alt=""></span>
+      <span class="tx"><b class="no">第2关</b><b class="nm">龙宫借宝</b><i class="st">虾兵拦路 · 定海神针</i></span>
+      <em class="bd">🔒</em>
+    </button>
+    <button class="lv-card soon" type="button" data-lock="水脏洞除妖">
+      <span class="cover"><img src="../../assets/game-backgrounds/water-dirty-cave.jpg" alt=""></span>
+      <span class="tx"><b class="no">第3关</b><b class="nm">水脏洞除妖</b><i class="st">水妖作乱 · 捣平洞府</i></span>
+      <em class="bd">🔒</em>
+    </button>
+    <button class="lv-card soon" type="button" data-lock="幽冥除名">
+      <span class="cover"><img src="../../assets/game-backgrounds/underworld.jpg" alt=""></span>
+      <span class="tx"><b class="no">第4关</b><b class="nm">幽冥除名</b><i class="st">勾掉生死簿 · 杀出森罗殿</i></span>
+      <em class="bd">🔒</em>
+    </button>
+  </div>
+  <img class="fig lobby-fig" src="../../assets/generated/arena/clay/wukong/wukong-south-idle.png" alt="孙悟空">
+  <button class="gold start" id="btn-start" type="button">开始游戏</button>
+</section>
+
+<section class="screen scene" id="scr-pick">
+  <div class="roster" id="roster"></div>
+  <img class="fig pick-fig" id="pick-fig" src="../../assets/generated/arena/clay/wukong/wukong-south-idle.png" alt="">
+  <aside class="sheet" id="pick-sheet"></aside>
+  <button class="ghost back" id="btn-pick-back" type="button">返回</button>
+  <div class="shout" id="shout" hidden>俺老孙来也</div>
+</section>
+
+<section class="screen" id="scr-battle">
+  <div id="arena" class="scene">
+    <div id="world"></div>
+    <div id="hud">
+      <div id="lives"></div>
+      <div id="move">这一棒 · <b id="move-zh">旅行</b></div>
+      <div id="wave">第 1 波</div>
+      <div id="banner" hidden></div>
+    </div>
+  </div>
+  <div id="dock">
+    <div id="stick" aria-label="移动"><b id="knob"></b></div>
+    <p class="hint">WASD 走动 · J 挥棒 · K 跳</p>
+    <button class="gold act" id="btn-atk" type="button">挥棒<small>J</small></button>
+    <button class="blue act" id="btn-jump" type="button">跳<small>K</small></button>
+  </div>
+  <div class="overlay" id="ov-win">
+    <div class="panel">
+      <h2>猴群散了</h2>
+      <p>这一仗打完了。</p>
+      <button class="gold" id="btn-again" type="button">再打一次</button>
+      <button class="ghost" id="btn-win-back" type="button">回大厅</button>
+    </div>
+  </div>
+  <div class="overlay" id="ov-lose">
+    <div class="panel">
+      <h2>被打下了山</h2>
+      <p>再上一次。</p>
+      <button class="gold" id="btn-retry" type="button">再打一次</button>
+    </div>
+  </div>
+</section>
+<div id="toast" hidden></div>
+<script src="game.js"></script>
+</body>
+</html>

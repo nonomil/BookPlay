@@ -1,0 +1,58 @@
+{
+  "id": "ep63",
+  "order": 63,
+  "titleZh": "西游记 第63集",
+  "titleEn": "A Question for Buddha",
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep63/f1.jpg",
+  "hero": {
+    "id": "wukong"
+  },
+  "minor": {
+    "nameZh": "小妖"
+  },
+  "enemy": {
+    "css": "ghost"
+  },
+  "boss": {
+    "id": "guanyin",
+    "nameZh": "观音",
+    "css": "ghost",
+    "attacks": ["ring", "bubble"],
+    "hits": 8,
+    "countdownSec": 8
+  },
+  "words": [
+    {"zh": "村民", "en": "villager"},
+    {"zh": "躲藏", "en": "hid"},
+    {"zh": "抽出", "en": "pull out"},
+    {"zh": "壳", "en": "shell"},
+    {"zh": "鞠躬", "en": "bow"},
+    {"zh": "接管", "en": "taken over"},
+    {"zh": "摆脱", "en": "get rid of"},
+    {"zh": "妨碍", "en": "interrupt"},
+    {"zh": "经文", "en": "scripture"},
+    {"zh": "仔细看", "en": "eye"},
+    {"zh": "最终", "en": "eventually"},
+    {"zh": "怀疑地", "en": "suspiciously"}
+  ],
+  "waves": [
+    {
+      "quota": 7,
+      "cap": 3,
+      "projectileHp": 1,
+      "tip": "打中「村民」的小妖"
+    },
+    {
+      "quota": 7,
+      "cap": 3,
+      "projectileHp": 2,
+      "tip": "第二波要打两下"
+    }
+  ],
+  "art": {
+    "enemyPrompt": "A chibi sticker of a full body pale ghost stands on a flat magenta background, with a thick outline and no text. It matches the ghost sprite: a rounded pale blue-white sheet, two dark oval eyes, a small open dark mouth, and two short stubby arms.",
+    "bossPrompt": "A chibi sticker of Guanyin stands full body on a flat magenta background, with a thick outline and no text. She is the ghost sprite, a pale blue-white rounded sheet with two dark oval eyes, a small open dark mouth, and two short stubby arms, and she is not dressed as Sun Wukong.",
+    "backdropPrompt": "A wide 16:9 children's storybook landscape of A Question for Buddha, in the generic theme, painted like a soft gouache picture book. A pale blue sky with soft cream clouds fills the top, and warm green grassy ground fills the bottom. A clear empty dirt path runs through the center from the foreground toward quiet far temple roofs. Along the left and right sides only stand low village roofs, stone steps, lotus ponds, and an empty wooden altar, with far blue hills. No characters, no statues, no letters, and no text."
+  }
+}
