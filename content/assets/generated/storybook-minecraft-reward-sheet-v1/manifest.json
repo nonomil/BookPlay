@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "asset_id": "storybook-minecraft-reward-sheet-v1",
+  "type": "sticker-badge-prop-sheet",
+  "series": "minecraft",
+  "episode": 1,
+  "tool": "gpt-image-workflow",
+  "provider": "cliprox",
+  "model": "gpt-image-2",
+  "prompt": "source/prompt.txt",
+  "prompt_sha256": "51BC7973C79C1E3D3E992E061A5789B022434D368D25FD364A61BF6FE80513AD",
+  "source_sheet": {"path": "2d/minecraft-reward-sheet-v1.png", "width": 1223, "height": 966, "sha256": "98B2EDFA1D8271E2D01C9A338E1BA6667BD1AE8ABB94D6D63894CA16FE5033A1"},
+  "split_grid": {"cols": 3, "rows": 3, "cell_count": 9},
+  "source_evidence": {
+    "storybook": "storybooks-minecraft/book1.json",
+    "bindings": {
+      "golden-helmet": {"storybook_pages": [1], "sentence_ids": ["mc-b1-p01-s02"]},
+      "nether-portal-shard": {"storybook_pages": [3], "sentence_ids": ["mc-b1-p03-s06"]},
+      "loyal-wolf": {"storybook_pages": [2], "sentence_ids": ["mc-b1-p02-s01", "mc-b1-p02-s02"]},
+      "first-block": {"storybook_pages": [1], "sentence_ids": ["mc-b1-p01-s01"]},
+      "nether-scout": {"storybook_pages": [3], "sentence_ids": ["mc-b1-p03-s06", "mc-b1-p03-s07"]},
+      "block-expedition-complete": {"storybook_pages": [1, 3], "sentence_ids": ["mc-b1-p01-s01", "mc-b1-p03-s07"]},
+      "treasure-chest": {"storybook_pages": [1], "sentence_ids": ["mc-b1-p01-s01"]},
+      "redstone-torch": {"storybook_pages": [3], "sentence_ids": ["mc-b1-p03-s06"]},
+      "portal-light": {"storybook_pages": [3], "sentence_ids": ["mc-b1-p03-s06", "mc-b1-p03-s07"]}
+    }
+  },
+  "outputs": [
+    {"id": "golden-helmet", "kind": "sticker", "file": "transparent/stickers/golden-helmet.png", "runtime_path": "assets/generated/storybooks/minecraft/rewards/stickers/golden-helmet.png", "alpha_report": "transparent/stickers/golden-helmet.png.report.json"},
+    {"id": "nether-portal-shard", "kind": "sticker", "file": "transparent/stickers/nether-portal-shard.png", "runtime_path": "assets/generated/storybooks/minecraft/rewards/stickers/nether-portal-shard.png", "alpha_report": "transparent/stickers/nether-portal-shard.png.report.json"},
+    {"id": "loyal-wolf", "kind": "sticker", "file": "transparent/stickers/loyal-wolf.png", "runtime_path": "assets/generated/storybooks/minecraft/rewards/stickers/loyal-wolf.png", "alpha_report": "transparent/stickers/loyal-wolf.png.report.json"},
+    {"id": "first-block", "kind": "badge", "file": "transparent/badges/first-block.png", "runtime_path": "assets/generated/storybooks/minecraft/rewards/badges/first-block.png", "alpha_report": "transparent/badges/first-block.png.report.json"},
+    {"id": "nether-scout", "kind": "badge", "file": "transparent/badges/nether-scout.png", "runtime_path": "assets/generated/storybooks/minecraft/rewards/badges/nether-scout.png", "alpha_report": "transparent/badges/nether-scout.png.report.json"},
+    {"id": "block-expedition-complete", "kind": "badge", "file": "transparent/badges/block-expedition-complete.png", "runtime_path": "assets/generated/storybooks/minecraft/rewards/badges/block-expedition-complete.png", "alpha_report": "transparent/badges/block-expedition-complete.png.report.json"},
+    {"id": "treasure-chest", "kind": "room-item", "file": "transparent/items/treasure-chest.png", "runtime_path": "assets/generated/storybooks/minecraft/rewards/items/treasure-chest.png", "alpha_report": "transparent/items/treasure-chest.png.report.json"},
+    {"id": "redstone-torch", "kind": "room-item", "file": "transparent/items/redstone-torch.png", "runtime_path": "assets/generated/storybooks/minecraft/rewards/items/redstone-torch.png", "alpha_report": "transparent/items/redstone-torch.png.report.json"},
+    {"id": "portal-light", "kind": "room-item", "file": "transparent/items/portal-light.png", "runtime_path": "assets/generated/storybooks/minecraft/rewards/items/portal-light.png", "alpha_report": "transparent/items/portal-light.png.report.json"}
+  ],
+  "acceptance": {"alpha_checked": true, "corners_transparent": true, "green_edge_percent_max": 0, "dimensions_checked": true, "ocr_text": ""},
+  "transparency": {"method": "chroma-key", "key": "0,255,0", "tolerance": 180, "feather": 2},
+  "limitations": ["本轮为 Book 1 pilot；其余书目先沿用语义目录，待逐本证据绑定后生成。"]
+}

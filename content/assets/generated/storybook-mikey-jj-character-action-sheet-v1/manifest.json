@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "asset_id": "storybook-mikey-jj-character-action-sheet-v1",
+  "type": "character-action-sheet",
+  "series": "mikey-jj",
+  "tool": "gpt-image-workflow",
+  "provider": "cliprox",
+  "model": "gpt-image-2",
+  "prompt": "source/prompt.txt",
+  "prompt_sha256": "CA1D50E4EF96ACD891B2FE656353E837B326E2B2483CB20DF939EF74FB904C88",
+  "source_sheet": {
+    "path": "2d/mikey-jj-character-action-sheet-v1.png",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "25BDFAEA7BF436263834437DA13E24027E3300CAB1E5DC4DB74496381535E5BA"
+  },
+  "split_grid": {"cols": 3, "rows": 3, "cell_count": 9, "cell_dimensions": "532x361"},
+  "outputs": [
+    {"id": "mikey-idle", "file": "transparent/mikey/idle.png", "runtime_path": "assets/generated/storybooks/mikey-jj/characters/mikey/transparent/idle.png", "alpha_report": "transparent/mikey/idle.png.report.json"},
+    {"id": "mikey-point", "file": "transparent/mikey/point.png", "runtime_path": "assets/generated/storybooks/mikey-jj/characters/mikey/transparent/point.png", "alpha_report": "transparent/mikey/point.png.report.json"},
+    {"id": "mikey-celebrate", "file": "transparent/mikey/celebrate.png", "runtime_path": "assets/generated/storybooks/mikey-jj/characters/mikey/transparent/celebrate.png", "alpha_report": "transparent/mikey/celebrate.png.report.json"},
+    {"id": "jj-idle", "file": "transparent/jj/idle.png", "runtime_path": "assets/generated/storybooks/mikey-jj/characters/jj/transparent/idle.png", "alpha_report": "transparent/jj/idle.png.report.json"},
+    {"id": "jj-listen", "file": "transparent/jj/listen.png", "runtime_path": "assets/generated/storybooks/mikey-jj/characters/jj/transparent/listen.png", "alpha_report": "transparent/jj/listen.png.report.json"},
+    {"id": "jj-celebrate", "file": "transparent/jj/celebrate.png", "runtime_path": "assets/generated/storybooks/mikey-jj/characters/jj/transparent/celebrate.png", "alpha_report": "transparent/jj/celebrate.png.report.json"},
+    {"id": "duo-high-five", "file": "transparent/duo/high-five.png", "runtime_path": "assets/generated/storybooks/mikey-jj/characters/duo/transparent/high-five.png", "alpha_report": "transparent/duo/high-five.png.report.json"},
+    {"id": "duo-defend", "file": "transparent/duo/defend.png", "runtime_path": "assets/generated/storybooks/mikey-jj/characters/duo/transparent/defend.png", "alpha_report": "transparent/duo/defend.png.report.json"},
+    {"id": "duo-rescue", "file": "transparent/duo/rescue.png", "runtime_path": "assets/generated/storybooks/mikey-jj/characters/duo/transparent/rescue.png", "alpha_report": "transparent/duo/rescue.png.report.json"}
+  ],
+  "source_evidence": {
+    "storybook": "storybooks-mikey-jj/book1.json",
+    "bindings": {
+      "mikey-idle": {"storybook_pages": [1], "sentence_ids": ["b1-p01-s01"]},
+      "mikey-point": {"storybook_pages": [2], "sentence_ids": ["b1-p02-s01"]},
+      "mikey-celebrate": {"storybook_pages": [10], "sentence_ids": ["b1-p10-s06"]},
+      "jj-idle": {"storybook_pages": [1], "sentence_ids": ["b1-p01-s01"]},
+      "jj-listen": {"storybook_pages": [2], "sentence_ids": ["b1-p02-s01"]},
+      "jj-celebrate": {"storybook_pages": [10], "sentence_ids": ["b1-p10-s06"]},
+      "duo-high-five": {"storybook_pages": [10], "sentence_ids": ["b1-p10-s06"]},
+      "duo-defend": {"storybook_pages": [9], "sentence_ids": ["b1-p09-s03"]},
+      "duo-rescue": {"storybook_pages": [2], "sentence_ids": ["b1-p02-s04"]}
+    }
+  },
+  "acceptance": {"alpha_checked": true, "corners_transparent": true, "green_edge_percent_max": 0, "dimensions_checked": true, "ocr_text": ""},
+  "transparency": {"method": "chroma-key", "key": "0,255,0", "tolerance": 180, "feather": 2},
+  "limitations": ["生成图保留像素漫画的轻微绿色地面高光；已通过严格绿残色报告，不作为文字或背景使用。", "角色动作是静态 PNG 样板，连续帧动画留在 P2。"]
+}

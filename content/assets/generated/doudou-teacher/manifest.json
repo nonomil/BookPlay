@@ -1,0 +1,84 @@
+{
+  "asset_id": "doudou-teacher",
+  "type": "character-portrait",
+  "tool": "CliproxAPI / gpt-image-2",
+  "generated_at": "2026-08-31",
+  "requested_size": "1024x1024",
+  "actual_source_dimensions": {
+    "width": 1254,
+    "height": 1254
+  },
+  "standardized_dimensions": {
+    "width": 1024,
+    "height": 1024
+  },
+  "runtime_dimensions": {
+    "width": 512,
+    "height": 512
+  },
+  "generation": {
+    "route": "POST /v1/images/generations",
+    "response_format": "b64_json",
+    "background_key": "#ff00ff",
+    "prompts": {
+      "shared": "Original friendly child-safe Chinese dragon teacher: long rounded green Chinese dragon, yellow segmented belly and dorsal fins, glossy golden deer antlers, cream eyebrows and two long cream whiskers, very large warm brown eyes, orange blush cheeks, exactly two tiny white fangs, pink earcups with light-blue centers and a purple-blue headphone band; polished children's 2D cartoon; centered three-quarter portrait; flat #ff00ff chroma-key background; no text, watermark, logo, UI, scenery, wings or western-dragon anatomy.",
+      "idle": "Calm friendly closed-mouth smile; one hand holds a blank light-blue framed teaching tablet at chest height; the other hand is relaxed.",
+      "talk": "Change only expression and free-hand gesture: friendly open mouth while explaining; same blank light-blue framed tablet; one small welcoming teaching gesture; exactly two fangs total and no other teeth."
+    },
+    "command": "cliprox_image_client.py generate --model gpt-image-2 --size 1024x1024 --prompt <manifest prompt> --output <source path>",
+    "postprocess": "chroma_key.py --key 255,0,255 --tolerance 72 --feather 36; alpha unmatte; premultiplied Lanczos resize"
+  },
+  "outputs": [
+    "2d/doudou-teacher-idle-front.png",
+    "2d/doudou-teacher-talk-front.png",
+    "transparent/doudou-teacher-idle-front.png",
+    "transparent/doudou-teacher-talk-front.png",
+    "review-contact-sheet.jpg"
+  ],
+  "runtime_outputs": [
+    "../../cast/doudou-teacher/idle.png",
+    "../../cast/doudou-teacher/talk.png"
+  ],
+  "source_references": [
+    "../../ui/doudou-loong-icon.png",
+    "../../../../data/参考图片 -- 瓦拉英语/微信图片_20260829120616_342_4.jpg",
+    "../../../../data/参考图片 -- 瓦拉英语/微信图片_20260829120617_343_4.jpg"
+  ],
+  "reference_usage": "References were visually inspected to derive identity, placement and teacher-tone constraints; the generations endpoint did not receive binary reference images.",
+  "source_outputs": {
+    "idle": {
+      "path": "source/doudou-teacher-idle-front.png",
+      "format": "PNG RGB",
+      "sha256": "a19489997b7251283bb79d3ace64276078e7f44b39ec8f696caf31638d1d1061"
+    },
+    "talk_rejected": {
+      "path": "source/doudou-teacher-talk-front.png",
+      "reason": "Four teeth and a gold tablet frame drifted from the character bible.",
+      "sha256": "108652e91b16f78f0b9be69f8a0fcada3d65a49ece73c5e57149e6058bd32acb"
+    },
+    "talk_accepted": {
+      "path": "source/doudou-teacher-talk-front-v2.png",
+      "format": "PNG RGB",
+      "sha256": "c1f7da983b269dfa96ce48fbba042649f5c53d39fa0275b3d5b2c90720c0a922"
+    }
+  },
+  "runtime_sha256": {
+    "idle.png": "d3cceaee3e983b8a33e3de571e99b3f6881017189627ccecee511152fb02f3c5",
+    "talk.png": "022addb76b27502525e6352c72f6f919e76f39ef23a59378c2690d8f93f7c156"
+  },
+  "acceptance": {
+    "dimensions_checked": true,
+    "format_checked": true,
+    "alpha_checked": true,
+    "has_real_alpha": true,
+    "four_corners_transparent": true,
+    "dark_and_light_background_reviewed": true,
+    "runtime_scale_reviewed": true
+  },
+  "limitations": [
+    "Idle and talk were generated independently, so small non-signature body-contour differences remain.",
+    "The API returned 1254x1254 images despite a 1024x1024 request; standardized and runtime outputs were resized with premultiplied Lanczos sampling.",
+    "No seed was returned by the API."
+  ],
+  "seed": null
+}

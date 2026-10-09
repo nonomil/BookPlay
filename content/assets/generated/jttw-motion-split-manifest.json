@@ -1,0 +1,626 @@
+{
+  "schemaVersion": 1,
+  "purpose": "降妖记：将现有 walk-action GIF 拆为纯走路循环、单次攻击和四向待机帧",
+  "sprites": {
+    "wukong": {
+      "south": {
+        "source": "assets/generated/jttw-player-walkers/wukong/directions/wukong-south-walk-action.gif",
+        "walk": "assets/generated/jttw-player-walkers/wukong/directions/wukong-south-walk.gif",
+        "attack": "assets/generated/jttw-player-walkers/wukong/directions/wukong-south-attack.gif",
+        "idle": "assets/generated/jttw-player-walkers/wukong/directions/wukong-south-idle.png",
+        "frameCount": {
+          "walk": 4,
+          "attack": 4
+        },
+        "durationMs": {
+          "walk": 180,
+          "attack": 80
+        },
+        "anchor": "bottom-center"
+      },
+      "west": {
+        "source": "assets/generated/jttw-player-walkers/wukong/directions/wukong-west-walk-action.gif",
+        "walk": "assets/generated/jttw-player-walkers/wukong/directions/wukong-west-walk.gif",
+        "attack": "assets/generated/jttw-player-walkers/wukong/directions/wukong-west-attack.gif",
+        "idle": "assets/generated/jttw-player-walkers/wukong/directions/wukong-west-idle.png",
+        "frameCount": {
+          "walk": 4,
+          "attack": 4
+        },
+        "durationMs": {
+          "walk": 180,
+          "attack": 80
+        },
+        "anchor": "bottom-center"
+      },
+      "east": {
+        "source": "assets/generated/jttw-player-walkers/wukong/directions/wukong-east-walk-action.gif",
+        "walk": "assets/generated/jttw-player-walkers/wukong/directions/wukong-east-walk.gif",
+        "attack": "assets/generated/jttw-player-walkers/wukong/directions/wukong-east-attack.gif",
+        "idle": "assets/generated/jttw-player-walkers/wukong/directions/wukong-east-idle.png",
+        "frameCount": {
+          "walk": 4,
+          "attack": 4
+        },
+        "durationMs": {
+          "walk": 180,
+          "attack": 80
+        },
+        "anchor": "bottom-center"
+      },
+      "north": {
+        "source": "assets/generated/jttw-player-walkers/wukong/directions/wukong-north-walk-action.gif",
+        "walk": "assets/generated/jttw-player-walkers/wukong/directions/wukong-north-walk.gif",
+        "attack": "assets/generated/jttw-player-walkers/wukong/directions/wukong-north-attack.gif",
+        "idle": "assets/generated/jttw-player-walkers/wukong/directions/wukong-north-idle.png",
+        "frameCount": {
+          "walk": 4,
+          "attack": 4
+        },
+        "durationMs": {
+          "walk": 180,
+          "attack": 80
+        },
+        "anchor": "bottom-center"
+      }
+    },
+    "subodhi": {
+      "south": {
+        "source": "assets/generated/jttw-player-walkers/subodhi/directions/subodhi-south-walk-action.gif",
+        "walk": "assets/generated/jttw-player-walkers/subodhi/directions/subodhi-south-walk.gif",
+        "attack": "assets/generated/jttw-player-walkers/subodhi/directions/subodhi-south-attack.gif",
+        "idle": "assets/generated/jttw-player-walkers/subodhi/directions/subodhi-south-idle.png",
+        "frameCount": {
+          "walk": 4,
+          "attack": 4
+        },
+        "durationMs": {
+          "walk": 180,
+          "attack": 80
+        },
+        "anchor": "bottom-center"
+      },
+      "west": {
+        "source": "assets/generated/jttw-player-walkers/subodhi/directions/subodhi-west-walk-action.gif",
+        "walk": "assets/generated/jttw-player-walkers/subodhi/directions/subodhi-west-walk.gif",
+        "attack": "assets/generated/jttw-player-walkers/subodhi/directions/subodhi-west-attack.gif",
+        "idle": "assets/generated/jttw-player-walkers/subodhi/directions/subodhi-west-idle.png",
+        "frameCount": {
+          "walk": 4,
+          "attack": 4
+        },
+        "durationMs": {
+          "walk": 180,
+          "attack": 80
+        },
+        "anchor": "bottom-center"
+      },
+      "east": {
+        "source": "assets/generated/jttw-player-walkers/subodhi/directions/subodhi-east-walk-action.gif",
+        "walk": "assets/generated/jttw-player-walkers/subodhi/directions/subodhi-east-walk.gif",
+        "attack": "assets/generated/jttw-player-walkers/subodhi/directions/subodhi-east-attack.gif",
+        "idle": "assets/generated/jttw-player-walkers/subodhi/directions/subodhi-east-idle.png",
+        "frameCount": {
+          "walk": 4,
+          "attack": 4
+        },
+        "durationMs": {
+          "walk": 180,
+          "attack": 80
+        },
+        "anchor": "bottom-center"
+      },
+      "north": {
+        "source": "assets/generated/jttw-player-walkers/subodhi/directions/subodhi-north-walk-action.gif",
+        "walk": "assets/generated/jttw-player-walkers/subodhi/directions/subodhi-north-walk.gif",
+        "attack": "assets/generated/jttw-player-walkers/subodhi/directions/subodhi-north-attack.gif",
+        "idle": "assets/generated/jttw-player-walkers/subodhi/directions/subodhi-north-idle.png",
+        "frameCount": {
+          "walk": 4,
+          "attack": 4
+        },
+        "durationMs": {
+          "walk": 180,
+          "attack": 80
+        },
+        "anchor": "bottom-center"
+      }
+    },
+    "chaosdemon": {
+      "south": {
+        "source": "assets/generated/jttw-player-walkers/chaosdemon/directions/chaosdemon-south-walk-action.gif",
+        "walk": "assets/generated/jttw-player-walkers/chaosdemon/directions/chaosdemon-south-walk.gif",
+        "attack": "assets/generated/jttw-player-walkers/chaosdemon/directions/chaosdemon-south-attack.gif",
+        "idle": "assets/generated/jttw-player-walkers/chaosdemon/directions/chaosdemon-south-idle.png",
+        "frameCount": {
+          "walk": 4,
+          "attack": 4
+        },
+        "durationMs": {
+          "walk": 180,
+          "attack": 80
+        },
+        "anchor": "bottom-center"
+      },
+      "west": {
+        "source": "assets/generated/jttw-player-walkers/chaosdemon/directions/chaosdemon-west-walk-action.gif",
+        "walk": "assets/generated/jttw-player-walkers/chaosdemon/directions/chaosdemon-west-walk.gif",
+        "attack": "assets/generated/jttw-player-walkers/chaosdemon/directions/chaosdemon-west-attack.gif",
+        "idle": "assets/generated/jttw-player-walkers/chaosdemon/directions/chaosdemon-west-idle.png",
+        "frameCount": {
+          "walk": 4,
+          "attack": 4
+        },
+        "durationMs": {
+          "walk": 180,
+          "attack": 80
+        },
+        "anchor": "bottom-center"
+      },
+      "east": {
+        "source": "assets/generated/jttw-player-walkers/chaosdemon/directions/chaosdemon-east-walk-action.gif",
+        "walk": "assets/generated/jttw-player-walkers/chaosdemon/directions/chaosdemon-east-walk.gif",
+        "attack": "assets/generated/jttw-player-walkers/chaosdemon/directions/chaosdemon-east-attack.gif",
+        "idle": "assets/generated/jttw-player-walkers/chaosdemon/directions/chaosdemon-east-idle.png",
+        "frameCount": {
+          "walk": 4,
+          "attack": 4
+        },
+        "durationMs": {
+          "walk": 180,
+          "attack": 80
+        },
+        "anchor": "bottom-center"
+      },
+      "north": {
+        "source": "assets/generated/jttw-player-walkers/chaosdemon/directions/chaosdemon-north-walk-action.gif",
+        "walk": "assets/generated/jttw-player-walkers/chaosdemon/directions/chaosdemon-north-walk.gif",
+        "attack": "assets/generated/jttw-player-walkers/chaosdemon/directions/chaosdemon-north-attack.gif",
+        "idle": "assets/generated/jttw-player-walkers/chaosdemon/directions/chaosdemon-north-idle.png",
+        "frameCount": {
+          "walk": 4,
+          "attack": 4
+        },
+        "durationMs": {
+          "walk": 180,
+          "attack": 80
+        },
+        "anchor": "bottom-center"
+      }
+    },
+    "dragonking": {
+      "south": {
+        "source": "assets/generated/jttw-player-walkers/dragonking/directions/dragonking-south-walk-action.gif",
+        "walk": "assets/generated/jttw-player-walkers/dragonking/directions/dragonking-south-walk.gif",
+        "attack": "assets/generated/jttw-player-walkers/dragonking/directions/dragonking-south-attack.gif",
+        "idle": "assets/generated/jttw-player-walkers/dragonking/directions/dragonking-south-idle.png",
+        "frameCount": {
+          "walk": 4,
+          "attack": 4
+        },
+        "durationMs": {
+          "walk": 180,
+          "attack": 80
+        },
+        "anchor": "bottom-center"
+      },
+      "west": {
+        "source": "assets/generated/jttw-player-walkers/dragonking/directions/dragonking-west-walk-action.gif",
+        "walk": "assets/generated/jttw-player-walkers/dragonking/directions/dragonking-west-walk.gif",
+        "attack": "assets/generated/jttw-player-walkers/dragonking/directions/dragonking-west-attack.gif",
+        "idle": "assets/generated/jttw-player-walkers/dragonking/directions/dragonking-west-idle.png",
+        "frameCount": {
+          "walk": 4,
+          "attack": 4
+        },
+        "durationMs": {
+          "walk": 180,
+          "attack": 80
+        },
+        "anchor": "bottom-center"
+      },
+      "east": {
+        "source": "assets/generated/jttw-player-walkers/dragonking/directions/dragonking-east-walk-action.gif",
+        "walk": "assets/generated/jttw-player-walkers/dragonking/directions/dragonking-east-walk.gif",
+        "attack": "assets/generated/jttw-player-walkers/dragonking/directions/dragonking-east-attack.gif",
+        "idle": "assets/generated/jttw-player-walkers/dragonking/directions/dragonking-east-idle.png",
+        "frameCount": {
+          "walk": 4,
+          "attack": 4
+        },
+        "durationMs": {
+          "walk": 180,
+          "attack": 80
+        },
+        "anchor": "bottom-center"
+      },
+      "north": {
+        "source": "assets/generated/jttw-player-walkers/dragonking/directions/dragonking-north-walk-action.gif",
+        "walk": "assets/generated/jttw-player-walkers/dragonking/directions/dragonking-north-walk.gif",
+        "attack": "assets/generated/jttw-player-walkers/dragonking/directions/dragonking-north-attack.gif",
+        "idle": "assets/generated/jttw-player-walkers/dragonking/directions/dragonking-north-idle.png",
+        "frameCount": {
+          "walk": 4,
+          "attack": 4
+        },
+        "durationMs": {
+          "walk": 180,
+          "attack": 80
+        },
+        "anchor": "bottom-center"
+      }
+    },
+    "monkey-minor": {
+      "south": {
+        "source": "assets/game-sprites/monkey-minor/monkey-minor-south-walk-action.gif",
+        "walk": "assets/game-sprites/monkey-minor/monkey-minor-south-walk.gif",
+        "attack": "assets/game-sprites/monkey-minor/monkey-minor-south-attack.gif",
+        "idle": "assets/game-sprites/monkey-minor/monkey-minor-south-idle.png",
+        "frameCount": {
+          "walk": 4,
+          "attack": 4
+        },
+        "durationMs": {
+          "walk": 180,
+          "attack": 80
+        },
+        "anchor": "bottom-center"
+      },
+      "west": {
+        "source": "assets/game-sprites/monkey-minor/monkey-minor-west-walk-action.gif",
+        "walk": "assets/game-sprites/monkey-minor/monkey-minor-west-walk.gif",
+        "attack": "assets/game-sprites/monkey-minor/monkey-minor-west-attack.gif",
+        "idle": "assets/game-sprites/monkey-minor/monkey-minor-west-idle.png",
+        "frameCount": {
+          "walk": 4,
+          "attack": 4
+        },
+        "durationMs": {
+          "walk": 180,
+          "attack": 80
+        },
+        "anchor": "bottom-center"
+      },
+      "east": {
+        "source": "assets/game-sprites/monkey-minor/monkey-minor-east-walk-action.gif",
+        "walk": "assets/game-sprites/monkey-minor/monkey-minor-east-walk.gif",
+        "attack": "assets/game-sprites/monkey-minor/monkey-minor-east-attack.gif",
+        "idle": "assets/game-sprites/monkey-minor/monkey-minor-east-idle.png",
+        "frameCount": {
+          "walk": 4,
+          "attack": 4
+        },
+        "durationMs": {
+          "walk": 180,
+          "attack": 80
+        },
+        "anchor": "bottom-center"
+      },
+      "north": {
+        "source": "assets/game-sprites/monkey-minor/monkey-minor-north-walk-action.gif",
+        "walk": "assets/game-sprites/monkey-minor/monkey-minor-north-walk.gif",
+        "attack": "assets/game-sprites/monkey-minor/monkey-minor-north-attack.gif",
+        "idle": "assets/game-sprites/monkey-minor/monkey-minor-north-idle.png",
+        "frameCount": {
+          "walk": 4,
+          "attack": 4
+        },
+        "durationMs": {
+          "walk": 180,
+          "attack": 80
+        },
+        "anchor": "bottom-center"
+      }
+    },
+    "subodhi-disciple": {
+      "south": {
+        "source": "assets/game-sprites/subodhi-disciple/subodhi-disciple-south-walk-action.gif",
+        "walk": "assets/game-sprites/subodhi-disciple/subodhi-disciple-south-walk.gif",
+        "attack": "assets/game-sprites/subodhi-disciple/subodhi-disciple-south-attack.gif",
+        "idle": "assets/game-sprites/subodhi-disciple/subodhi-disciple-south-idle.png",
+        "frameCount": {
+          "walk": 4,
+          "attack": 4
+        },
+        "durationMs": {
+          "walk": 180,
+          "attack": 80
+        },
+        "anchor": "bottom-center"
+      },
+      "west": {
+        "source": "assets/game-sprites/subodhi-disciple/subodhi-disciple-west-walk-action.gif",
+        "walk": "assets/game-sprites/subodhi-disciple/subodhi-disciple-west-walk.gif",
+        "attack": "assets/game-sprites/subodhi-disciple/subodhi-disciple-west-attack.gif",
+        "idle": "assets/game-sprites/subodhi-disciple/subodhi-disciple-west-idle.png",
+        "frameCount": {
+          "walk": 4,
+          "attack": 4
+        },
+        "durationMs": {
+          "walk": 180,
+          "attack": 80
+        },
+        "anchor": "bottom-center"
+      },
+      "east": {
+        "source": "assets/game-sprites/subodhi-disciple/subodhi-disciple-east-walk-action.gif",
+        "walk": "assets/game-sprites/subodhi-disciple/subodhi-disciple-east-walk.gif",
+        "attack": "assets/game-sprites/subodhi-disciple/subodhi-disciple-east-attack.gif",
+        "idle": "assets/game-sprites/subodhi-disciple/subodhi-disciple-east-idle.png",
+        "frameCount": {
+          "walk": 4,
+          "attack": 4
+        },
+        "durationMs": {
+          "walk": 180,
+          "attack": 80
+        },
+        "anchor": "bottom-center"
+      },
+      "north": {
+        "source": "assets/game-sprites/subodhi-disciple/subodhi-disciple-north-walk-action.gif",
+        "walk": "assets/game-sprites/subodhi-disciple/subodhi-disciple-north-walk.gif",
+        "attack": "assets/game-sprites/subodhi-disciple/subodhi-disciple-north-attack.gif",
+        "idle": "assets/game-sprites/subodhi-disciple/subodhi-disciple-north-idle.png",
+        "frameCount": {
+          "walk": 4,
+          "attack": 4
+        },
+        "durationMs": {
+          "walk": 180,
+          "attack": 80
+        },
+        "anchor": "bottom-center"
+      }
+    },
+    "chaosdemon-minion": {
+      "south": {
+        "source": "assets/game-sprites/chaosdemon-minion/chaosdemon-minion-south-walk-action.gif",
+        "walk": "assets/game-sprites/chaosdemon-minion/chaosdemon-minion-south-walk.gif",
+        "attack": "assets/game-sprites/chaosdemon-minion/chaosdemon-minion-south-attack.gif",
+        "idle": "assets/game-sprites/chaosdemon-minion/chaosdemon-minion-south-idle.png",
+        "frameCount": {
+          "walk": 4,
+          "attack": 4
+        },
+        "durationMs": {
+          "walk": 180,
+          "attack": 80
+        },
+        "anchor": "bottom-center"
+      },
+      "west": {
+        "source": "assets/game-sprites/chaosdemon-minion/chaosdemon-minion-west-walk-action.gif",
+        "walk": "assets/game-sprites/chaosdemon-minion/chaosdemon-minion-west-walk.gif",
+        "attack": "assets/game-sprites/chaosdemon-minion/chaosdemon-minion-west-attack.gif",
+        "idle": "assets/game-sprites/chaosdemon-minion/chaosdemon-minion-west-idle.png",
+        "frameCount": {
+          "walk": 4,
+          "attack": 4
+        },
+        "durationMs": {
+          "walk": 180,
+          "attack": 80
+        },
+        "anchor": "bottom-center"
+      },
+      "east": {
+        "source": "assets/game-sprites/chaosdemon-minion/chaosdemon-minion-east-walk-action.gif",
+        "walk": "assets/game-sprites/chaosdemon-minion/chaosdemon-minion-east-walk.gif",
+        "attack": "assets/game-sprites/chaosdemon-minion/chaosdemon-minion-east-attack.gif",
+        "idle": "assets/game-sprites/chaosdemon-minion/chaosdemon-minion-east-idle.png",
+        "frameCount": {
+          "walk": 4,
+          "attack": 4
+        },
+        "durationMs": {
+          "walk": 180,
+          "attack": 80
+        },
+        "anchor": "bottom-center"
+      },
+      "north": {
+        "source": "assets/game-sprites/chaosdemon-minion/chaosdemon-minion-north-walk-action.gif",
+        "walk": "assets/game-sprites/chaosdemon-minion/chaosdemon-minion-north-walk.gif",
+        "attack": "assets/game-sprites/chaosdemon-minion/chaosdemon-minion-north-attack.gif",
+        "idle": "assets/game-sprites/chaosdemon-minion/chaosdemon-minion-north-idle.png",
+        "frameCount": {
+          "walk": 4,
+          "attack": 4
+        },
+        "durationMs": {
+          "walk": 180,
+          "attack": 80
+        },
+        "anchor": "bottom-center"
+      }
+    },
+    "dragonking-soldier": {
+      "south": {
+        "source": "assets/game-sprites/dragonking-soldier/dragonking-soldier-south-walk-action.gif",
+        "walk": "assets/game-sprites/dragonking-soldier/dragonking-soldier-south-walk.gif",
+        "attack": "assets/game-sprites/dragonking-soldier/dragonking-soldier-south-attack.gif",
+        "idle": "assets/game-sprites/dragonking-soldier/dragonking-soldier-south-idle.png",
+        "frameCount": {
+          "walk": 4,
+          "attack": 4
+        },
+        "durationMs": {
+          "walk": 180,
+          "attack": 80
+        },
+        "anchor": "bottom-center"
+      },
+      "west": {
+        "source": "assets/game-sprites/dragonking-soldier/dragonking-soldier-west-walk-action.gif",
+        "walk": "assets/game-sprites/dragonking-soldier/dragonking-soldier-west-walk.gif",
+        "attack": "assets/game-sprites/dragonking-soldier/dragonking-soldier-west-attack.gif",
+        "idle": "assets/game-sprites/dragonking-soldier/dragonking-soldier-west-idle.png",
+        "frameCount": {
+          "walk": 4,
+          "attack": 4
+        },
+        "durationMs": {
+          "walk": 180,
+          "attack": 80
+        },
+        "anchor": "bottom-center"
+      },
+      "east": {
+        "source": "assets/game-sprites/dragonking-soldier/dragonking-soldier-east-walk-action.gif",
+        "walk": "assets/game-sprites/dragonking-soldier/dragonking-soldier-east-walk.gif",
+        "attack": "assets/game-sprites/dragonking-soldier/dragonking-soldier-east-attack.gif",
+        "idle": "assets/game-sprites/dragonking-soldier/dragonking-soldier-east-idle.png",
+        "frameCount": {
+          "walk": 4,
+          "attack": 4
+        },
+        "durationMs": {
+          "walk": 180,
+          "attack": 80
+        },
+        "anchor": "bottom-center"
+      },
+      "north": {
+        "source": "assets/game-sprites/dragonking-soldier/dragonking-soldier-north-walk-action.gif",
+        "walk": "assets/game-sprites/dragonking-soldier/dragonking-soldier-north-walk.gif",
+        "attack": "assets/game-sprites/dragonking-soldier/dragonking-soldier-north-attack.gif",
+        "idle": "assets/game-sprites/dragonking-soldier/dragonking-soldier-north-idle.png",
+        "frameCount": {
+          "walk": 4,
+          "attack": 4
+        },
+        "durationMs": {
+          "walk": 180,
+          "attack": 80
+        },
+        "anchor": "bottom-center"
+      }
+    },
+    "underworld-clerk": {
+      "south": {
+        "source": "assets/game-sprites/underworld-clerk/underworld-clerk-south-walk-action.gif",
+        "walk": "assets/game-sprites/underworld-clerk/underworld-clerk-south-walk.gif",
+        "attack": "assets/game-sprites/underworld-clerk/underworld-clerk-south-attack.gif",
+        "idle": "assets/game-sprites/underworld-clerk/underworld-clerk-south-idle.png",
+        "frameCount": {
+          "walk": 4,
+          "attack": 4
+        },
+        "durationMs": {
+          "walk": 180,
+          "attack": 80
+        },
+        "anchor": "bottom-center"
+      },
+      "west": {
+        "source": "assets/game-sprites/underworld-clerk/underworld-clerk-west-walk-action.gif",
+        "walk": "assets/game-sprites/underworld-clerk/underworld-clerk-west-walk.gif",
+        "attack": "assets/game-sprites/underworld-clerk/underworld-clerk-west-attack.gif",
+        "idle": "assets/game-sprites/underworld-clerk/underworld-clerk-west-idle.png",
+        "frameCount": {
+          "walk": 4,
+          "attack": 4
+        },
+        "durationMs": {
+          "walk": 180,
+          "attack": 80
+        },
+        "anchor": "bottom-center"
+      },
+      "east": {
+        "source": "assets/game-sprites/underworld-clerk/underworld-clerk-east-walk-action.gif",
+        "walk": "assets/game-sprites/underworld-clerk/underworld-clerk-east-walk.gif",
+        "attack": "assets/game-sprites/underworld-clerk/underworld-clerk-east-attack.gif",
+        "idle": "assets/game-sprites/underworld-clerk/underworld-clerk-east-idle.png",
+        "frameCount": {
+          "walk": 4,
+          "attack": 4
+        },
+        "durationMs": {
+          "walk": 180,
+          "attack": 80
+        },
+        "anchor": "bottom-center"
+      },
+      "north": {
+        "source": "assets/game-sprites/underworld-clerk/underworld-clerk-north-walk-action.gif",
+        "walk": "assets/game-sprites/underworld-clerk/underworld-clerk-north-walk.gif",
+        "attack": "assets/game-sprites/underworld-clerk/underworld-clerk-north-attack.gif",
+        "idle": "assets/game-sprites/underworld-clerk/underworld-clerk-north-idle.png",
+        "frameCount": {
+          "walk": 4,
+          "attack": 4
+        },
+        "durationMs": {
+          "walk": 180,
+          "attack": 80
+        },
+        "anchor": "bottom-center"
+      }
+    },
+    "imp": {
+      "south": {
+        "source": "assets/game-sprites/imp/imp-south-walk-action.gif",
+        "walk": "assets/game-sprites/imp/imp-south-walk.gif",
+        "attack": "assets/game-sprites/imp/imp-south-attack.gif",
+        "idle": "assets/game-sprites/imp/imp-south-idle.png",
+        "frameCount": {
+          "walk": 4,
+          "attack": 4
+        },
+        "durationMs": {
+          "walk": 180,
+          "attack": 80
+        },
+        "anchor": "bottom-center"
+      },
+      "west": {
+        "source": "assets/game-sprites/imp/imp-west-walk-action.gif",
+        "walk": "assets/game-sprites/imp/imp-west-walk.gif",
+        "attack": "assets/game-sprites/imp/imp-west-attack.gif",
+        "idle": "assets/game-sprites/imp/imp-west-idle.png",
+        "frameCount": {
+          "walk": 4,
+          "attack": 4
+        },
+        "durationMs": {
+          "walk": 180,
+          "attack": 80
+        },
+        "anchor": "bottom-center"
+      },
+      "east": {
+        "source": "assets/game-sprites/imp/imp-east-walk-action.gif",
+        "walk": "assets/game-sprites/imp/imp-east-walk.gif",
+        "attack": "assets/game-sprites/imp/imp-east-attack.gif",
+        "idle": "assets/game-sprites/imp/imp-east-idle.png",
+        "frameCount": {
+          "walk": 4,
+          "attack": 4
+        },
+        "durationMs": {
+          "walk": 180,
+          "attack": 80
+        },
+        "anchor": "bottom-center"
+      },
+      "north": {
+        "source": "assets/game-sprites/imp/imp-north-walk-action.gif",
+        "walk": "assets/game-sprites/imp/imp-north-walk.gif",
+        "attack": "assets/game-sprites/imp/imp-north-attack.gif",
+        "idle": "assets/game-sprites/imp/imp-north-idle.png",
+        "frameCount": {
+          "walk": 4,
+          "attack": 4
+        },
+        "durationMs": {
+          "walk": 180,
+          "attack": 80
+        },
+        "anchor": "bottom-center"
+      }
+    }
+  }
+}\n

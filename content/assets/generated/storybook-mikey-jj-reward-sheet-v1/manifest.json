@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "asset_id": "storybook-mikey-jj-reward-sheet-v1",
+  "type": "sticker-badge-prop-sheet",
+  "series": "mikey-jj",
+  "episode": 1,
+  "tool": "gpt-image-workflow",
+  "provider": "cliprox",
+  "model": "gpt-image-2",
+  "prompt": "source/prompt.txt",
+  "prompt_sha256": "0CF2B103FBB1BC387115881C3B478A00771629B452832A14C3DBCF9528D26A36",
+  "source_sheet": {"path": "2d/mikey-jj-reward-sheet-v1.png", "width": 1536, "height": 1024, "sha256": "C1C8024048610F0EED4F0C0B9CCE1A34D053FCAAAF5A1FEF3B66BF853EF328A0"},
+  "split_grid": {"cols": 3, "rows": 3, "cell_count": 9},
+  "source_evidence": {
+    "storybook": "storybooks-mikey-jj/book1.json",
+    "bindings": {
+      "rooftop-helicopter": {"storybook_pages": [2], "sentence_ids": ["b1-p02-s04"]},
+      "golden-apple": {"storybook_pages": [3], "sentence_ids": ["b1-p03-s02", "b1-p03-s03"]},
+      "healing-potion": {"storybook_pages": [4], "sentence_ids": ["b1-p04-s01", "b1-p04-s02"]},
+      "school-key": {"storybook_pages": [10], "sentence_ids": ["b1-p10-s01"]},
+      "zombie-alert": {"storybook_pages": [2], "sentence_ids": ["b1-p02-s01"]},
+      "rooftop-pad": {"storybook_pages": [2], "sentence_ids": ["b1-p02-s04"]},
+      "rooftop-team": {"storybook_pages": [2], "sentence_ids": ["b1-p02-s03", "b1-p02-s04"]},
+      "first-escape": {"storybook_pages": [1, 2, 10], "sentence_ids": ["b1-p01-s01", "b1-p02-s04", "b1-p10-s06"]},
+      "adventure-complete": {"storybook_pages": [1, 10], "sentence_ids": ["b1-p01-s01", "b1-p10-s06"]}
+    }
+  },
+  "outputs": [
+    {"id": "rooftop-helicopter", "kind": "sticker", "file": "transparent/stickers/rooftop-helicopter.png", "runtime_path": "assets/generated/storybooks/mikey-jj/rewards/stickers/rooftop-helicopter.png", "alpha_report": "transparent/stickers/rooftop-helicopter.png.report.json"},
+    {"id": "golden-apple", "kind": "sticker", "file": "transparent/stickers/golden-apple.png", "runtime_path": "assets/generated/storybooks/mikey-jj/rewards/stickers/golden-apple.png", "alpha_report": "transparent/stickers/golden-apple.png.report.json"},
+    {"id": "healing-potion", "kind": "sticker", "file": "transparent/stickers/healing-potion.png", "runtime_path": "assets/generated/storybooks/mikey-jj/rewards/stickers/healing-potion.png", "alpha_report": "transparent/stickers/healing-potion.png.report.json"},
+    {"id": "school-key", "kind": "room-item", "file": "transparent/items/school-key.png", "runtime_path": "assets/generated/storybooks/mikey-jj/rewards/items/school-key.png", "alpha_report": "transparent/items/school-key.png.report.json"},
+    {"id": "rooftop-team", "kind": "badge", "file": "transparent/badges/rooftop-team.png", "runtime_path": "assets/generated/storybooks/mikey-jj/rewards/badges/rooftop-team.png", "alpha_report": "transparent/badges/rooftop-team.png.report.json"},
+    {"id": "first-escape", "kind": "badge", "file": "transparent/badges/first-escape.png", "runtime_path": "assets/generated/storybooks/mikey-jj/rewards/badges/first-escape.png", "alpha_report": "transparent/badges/first-escape.png.report.json"},
+    {"id": "zombie-alert", "kind": "sticker", "file": "transparent/stickers/zombie-alert.png", "runtime_path": "assets/generated/storybooks/mikey-jj/rewards/stickers/zombie-alert.png", "alpha_report": "transparent/stickers/zombie-alert.png.report.json"},
+    {"id": "rooftop-pad", "kind": "room-item", "file": "transparent/items/rooftop-pad.png", "runtime_path": "assets/generated/storybooks/mikey-jj/rewards/items/rooftop-pad.png", "alpha_report": "transparent/items/rooftop-pad.png.report.json"},
+    {"id": "adventure-complete", "kind": "badge", "file": "transparent/badges/adventure-complete.png", "runtime_path": "assets/generated/storybooks/mikey-jj/rewards/badges/adventure-complete.png", "alpha_report": "transparent/badges/adventure-complete.png.report.json"}
+  ],
+  "acceptance": {"alpha_checked": true, "corners_transparent": true, "green_edge_percent_max": 0, "dimensions_checked": true, "ocr_text": ""},
+  "transparency": {"method": "chroma-key", "key": "0,255,0", "tolerance": 180, "feather": 2},
+  "limitations": ["本轮为 Book 1 pilot；其余书目先沿用语义目录，待逐本证据绑定后生成。"]
+}

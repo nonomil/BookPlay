@@ -1,0 +1,162 @@
+{
+  "asset_id": "jttw-ep001-story-rewards",
+  "type": "reward-collection",
+  "generation_status": "generated-and-validated",
+  "generated_at": "2026-09-03",
+  "tool": "gpt-image-workflow/scripts/bee_image_workflow.py",
+  "provider": "cliprox",
+  "model": "gpt-image-2",
+  "api_base": "https://rn6.nonom.top/v1",
+  "tls": {
+    "verified": true,
+    "trust": "pinned-ca",
+    "proxy": "direct"
+  },
+  "source_references": [
+    "content/storybooks/ep1.json",
+    "content/assets/lf_ep1/pages/p03.png",
+    "content/assets/lf_ep1/pages/p04.png",
+    "content/assets/lf_ep1/pages/p06.png",
+    "content/assets/lf_ep1/pages/p07.png",
+    "content/assets/lf_ep1/pages/p08.png",
+    "content/assets/lf_ep1/frames/monkey_in_stone.jpg",
+    "content/assets/lf_ep1/frames/cand_25.jpg",
+    "content/assets/lf_ep1/frames/forest.jpg"
+  ],
+  "prompt_sources": [
+    "source/prompt.txt",
+    "source/prompt-stone-shard.txt",
+    "source/prompt-heaven-light.txt",
+    "source/prompt-peach-pip.txt",
+    "source/prompt-stream-splash.txt",
+    "source/prompt-waterfall-gate.txt",
+    "source/prompt-brave-ribbon.txt",
+    "source/prompt-water-curtain-token.txt"
+  ],
+  "generation_request": {
+    "size": "1024x1024",
+    "response_format": "b64_json",
+    "background": "chroma-key #00ff00",
+    "count_per_prompt": 1
+  },
+  "outputs": [
+    {
+      "id": "jttw-ep001-stone-shard",
+      "raw": "2d/jttw-ep001-stone-shard.png",
+      "transparent_png": "transparent/jttw-ep001-stone-shard.png",
+      "transparent_webp": "transparent/jttw-ep001-stone-shard.webp",
+      "size": [1254, 1254],
+      "png_bytes": 922955,
+      "webp_bytes": 585816,
+      "sha256_png": "a7b0ad8895a25e10ed2b149c7a0d0d280c900faae1db42687025f2385de09507",
+      "sha256_webp": "04096a15974b14fa235ab01d601a5f9e3ac51aebd27b754218656b043121ad6a"
+    },
+    {
+      "id": "jttw-ep001-heaven-light",
+      "raw": "2d/jttw-ep001-heaven-light.png",
+      "transparent_png": "transparent/jttw-ep001-heaven-light.png",
+      "transparent_webp": "transparent/jttw-ep001-heaven-light.webp",
+      "size": [1254, 1254],
+      "png_bytes": 686159,
+      "webp_bytes": 438556,
+      "sha256_png": "1d84a43d6d6a090659b5559e1176ad9b6aab83ad7ef748af7881140537915b76",
+      "sha256_webp": "ae4d427e6a0a0745cd634f35c1150e911bed77475c26a61eece2af7c41fc6bf4"
+    },
+    {
+      "id": "jttw-ep001-peach-pip",
+      "raw": "2d/jttw-ep001-peach-pip.png",
+      "transparent_png": "transparent/jttw-ep001-peach-pip.png",
+      "transparent_webp": "transparent/jttw-ep001-peach-pip.webp",
+      "size": [1254, 1254],
+      "png_bytes": 523107,
+      "webp_bytes": 334828,
+      "sha256_png": "4b8cdb2182a0f5d2836b730908d26c9dad17035ece7b6fb6cbbc6970f792563c",
+      "sha256_webp": "87725f834ebf9854abace7fa9c10285cd6d4a6cc3ee55e53d9777fa84d6e5473"
+    },
+    {
+      "id": "jttw-ep001-stream-splash",
+      "raw": "2d/jttw-ep001-stream-splash.png",
+      "transparent_png": "transparent/jttw-ep001-stream-splash.png",
+      "transparent_webp": "transparent/jttw-ep001-stream-splash.webp",
+      "quality_report": "transparent/jttw-ep001-stream-splash.report.json",
+      "size": [1254, 1254],
+      "png_bytes": 2411856,
+      "webp_bytes": 319824,
+      "sha256_png": "5857004462b7f184d3e42d7ae999f0232b825b70d1839e391b6c5ac2d8fb626c"
+    },
+    {
+      "id": "jttw-ep001-waterfall-gate",
+      "raw": "2d/jttw-ep001-waterfall-gate.png",
+      "transparent_png": "transparent/jttw-ep001-waterfall-gate.png",
+      "transparent_webp": "transparent/jttw-ep001-waterfall-gate.webp",
+      "quality_report": "transparent/jttw-ep001-waterfall-gate.report.json",
+      "size": [1254, 1254],
+      "png_bytes": 2063411,
+      "webp_bytes": 217540,
+      "sha256_png": "7ab6e9869c1526d215b69a57d2ff81de2fb797583701d1495f882c3c5d7e8173"
+    },
+    {
+      "id": "jttw-ep001-brave-ribbon",
+      "raw": "2d/jttw-ep001-brave-ribbon.png",
+      "transparent_png": "transparent/jttw-ep001-brave-ribbon.png",
+      "transparent_webp": "transparent/jttw-ep001-brave-ribbon.webp",
+      "quality_report": "transparent/jttw-ep001-brave-ribbon.report.json",
+      "size": [1254, 1254],
+      "png_bytes": 1916126,
+      "webp_bytes": 170590,
+      "sha256_png": "d4a868bfde6862e50233c4a92ddc112884f6195154e5bce74ed2fdea2252a1af"
+    },
+    {
+      "id": "jttw-ep001-water-curtain-token",
+      "raw": "2d/jttw-ep001-water-curtain-token.png",
+      "transparent_png": "transparent/jttw-ep001-water-curtain-token.png",
+      "transparent_webp": "transparent/jttw-ep001-water-curtain-token.webp",
+      "quality_report": "transparent/jttw-ep001-water-curtain-token.report.json",
+      "size": [1254, 1254],
+      "png_bytes": 1906960,
+      "webp_bytes": 159428,
+      "sha256_png": "f23b5ea0db564ee553f9bf20b67c466f6051567eee46acc2db4a534474ccf19b"
+    }
+  ],
+  "postprocess": {
+    "tool": "publish_transparent_assets.py",
+    "mode": "solid-color",
+    "key_color": "green",
+    "tolerance": 120,
+    "feather": 2,
+    "trim": false,
+    "webp_quality": 92,
+    "lossy": false
+  },
+  "acceptance": {
+    "alpha_checked": true,
+    "dimensions_checked": true,
+    "hashes_recorded": true,
+    "transparent_corners": true,
+    "edge_alpha_nonzero": 0,
+    "key_green_distance_lt40": 0,
+    "semi_transparent_pixels_alpha_lt64": 0,
+    "runtime_readability_target_px": 82,
+    "visual_review": "passed",
+    "notes": "Green-dominant pixels remaining inside the silhouette are intentional jade watercolor motifs; no near-key-green residual (<40 RGB distance) remains."
+  },
+  "runtime": {
+    "catalog": "content/rewards/jttw.json",
+    "published_paths": [
+      "assets/generated/jttw-ep001-story-rewards/transparent/jttw-ep001-stone-shard.png",
+      "assets/generated/jttw-ep001-story-rewards/transparent/jttw-ep001-heaven-light.png",
+      "assets/generated/jttw-ep001-story-rewards/transparent/jttw-ep001-peach-pip.png",
+      "assets/generated/jttw-ep001-story-rewards/transparent/jttw-ep001-stream-splash.png",
+      "assets/generated/jttw-ep001-story-rewards/transparent/jttw-ep001-waterfall-gate.png",
+      "assets/generated/jttw-ep001-story-rewards/transparent/jttw-ep001-brave-ribbon.png",
+      "assets/generated/jttw-ep001-story-rewards/transparent/jttw-ep001-water-curtain-token.png"
+    ],
+    "pack_allowlist_updated": true,
+    "android_data_tree_updated": true
+  },
+  "limitations": [
+    "The model returns 1254x1254 despite a 1024x1024 request; the actual dimensions are recorded and no upscaling was applied.",
+    "PNG is wired into runtime for broad WebView compatibility; lossless WebP siblings are retained for a later size comparison.",
+    "The PNGs are generated reward art, not replacements for storybook page or video media."
+  ]
+}

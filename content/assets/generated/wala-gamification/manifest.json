@@ -1,0 +1,16 @@
+{
+  "schema": "wala-gamification-assets-v1",
+  "generated_at": "2026-09-01",
+  "provider": "cliprox",
+  "model": "gpt-image-2",
+  "notes": "UI text is intentionally absent from generated images; overlay labels in HTML/CSS. alpha-v2 files were reprocessed from the original chroma-key renders with transparent-image-generator/scripts/chroma_key.py (key #00ff00, tolerance 180, feather 8). The Doudou dragon final asset is alpha-v3: tolerance 140 plus transparent RGB cleanup (alpha <= 16) to avoid green preview artifacts without cutting holes in the dark teal body.",
+  "assets": [
+    {"id":"cloud-coin","file":"cloud-coin-v1-alpha-v2.png","source":"cloud-coin-v1.png","kind":"transparent-icon","size":"1254x1254","quality_report":"cloud-coin-v1-alpha-v2.png.report.json"},
+    {"id":"reward-chest","file":"reward-chest-v1-alpha-v2.png","source":"reward-chest-v1.png","kind":"transparent-icon","size":"1254x1254","quality_report":"reward-chest-v1-alpha-v2.png.report.json"},
+    {"id":"doudou-dragon","file":"doudou-dragon-companion-v1-alpha-v3.png","source":"doudou-dragon-companion-v1.png","kind":"transparent-character","size":"1254x1254","quality_report":"doudou-dragon-companion-v1-alpha-v3.png.report.json"},
+    {"id":"white-dragon-gear-sheet","file":"white-dragon-gear-set-v1-alpha-v2.png","source":"white-dragon-gear-set-v1.png","kind":"transparent-sheet","size":"1254x1254","quality_report":"white-dragon-gear-set-v1-alpha-v2.png.report.json","parts_dir":"clean/gear-parts","parts":["gear01_541x573.png","gear02_454x525.png","gear03_514x504.png","gear04_569x480.png"]},
+    {"id":"room-decor-sheet","file":"room-decor-set-v1-alpha-v2.png","source":"room-decor-set-v1.png","kind":"transparent-sheet","size":"1254x1254","quality_report":"room-decor-set-v1-alpha-v2.png.report.json","parts_dir":"clean/decor-parts","parts":["decor01_417x485.png","decor02_336x495.png","decor03_396x465.png","decor04_411x452.png","decor05_305x433.png","decor06_534x383.png"]},
+    {"id":"companion-room-bg","file":"companion-room-bg-v1.png","kind":"background","size":"1536x1024"},
+    {"id":"wala-shop-room-mockup","file":"wala-shop-room-mockup-v2.png","kind":"concept-only","size":"1536x1024"}
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "asset_id": "storybook-minecraft-character-action-sheet-v1",
+  "type": "character-action-sheet",
+  "series": "minecraft",
+  "tool": "gpt-image-workflow",
+  "provider": "cliprox",
+  "model": "gpt-image-2",
+  "prompt": "source/prompt.txt",
+  "prompt_sha256": "4913EDE3E12360476A703A4123F269FBB16DB3E5A64404FE3AF7732C3C6E25F4",
+  "source_sheet": {
+    "path": "2d/minecraft-character-action-sheet-v1.png",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "31E694D3C7DB21BDB44C48656936B5AB3369C47A6F3C3894E82F13A6E986BE84"
+  },
+  "split_grid": {"cols": 3, "rows": 3, "cell_count": 9, "cell_dimensions": "532x361"},
+  "outputs": [
+    {"id": "steve-idle", "file": "transparent/steve/idle.png", "runtime_path": "assets/generated/storybooks/minecraft/characters/steve/transparent/idle.png", "alpha_report": "transparent/steve/idle.png.report.json"},
+    {"id": "steve-listen", "file": "transparent/steve/listen.png", "runtime_path": "assets/generated/storybooks/minecraft/characters/steve/transparent/listen.png", "alpha_report": "transparent/steve/listen.png.report.json"},
+    {"id": "steve-build", "file": "transparent/steve/build.png", "runtime_path": "assets/generated/storybooks/minecraft/characters/steve/transparent/build.png", "alpha_report": "transparent/steve/build.png.report.json"},
+    {"id": "alex-idle", "file": "transparent/alex/idle.png", "runtime_path": "assets/generated/storybooks/minecraft/characters/alex/transparent/idle.png", "alpha_report": "transparent/alex/idle.png.report.json"},
+    {"id": "alex-point", "file": "transparent/alex/point.png", "runtime_path": "assets/generated/storybooks/minecraft/characters/alex/transparent/point.png", "alpha_report": "transparent/alex/point.png.report.json"},
+    {"id": "alex-rescue", "file": "transparent/alex/rescue.png", "runtime_path": "assets/generated/storybooks/minecraft/characters/alex/transparent/rescue.png", "alpha_report": "transparent/alex/rescue.png.report.json"},
+    {"id": "byte-idle", "file": "transparent/byte/idle.png", "runtime_path": "assets/generated/storybooks/minecraft/characters/byte/transparent/idle.png", "alpha_report": "transparent/byte/idle.png.report.json"},
+    {"id": "byte-high-five", "file": "transparent/byte/high-five.png", "runtime_path": "assets/generated/storybooks/minecraft/characters/byte/transparent/high-five.png", "alpha_report": "transparent/byte/high-five.png.report.json"},
+    {"id": "duo-celebrate", "file": "transparent/duo/celebrate.png", "runtime_path": "assets/generated/storybooks/minecraft/characters/duo/transparent/celebrate.png", "alpha_report": "transparent/duo/celebrate.png.report.json"}
+  ],
+  "source_evidence": {
+    "storybook": "storybooks-minecraft/book1.json",
+    "bindings": {
+      "steve-idle": {"storybook_pages": [1], "sentence_ids": ["mc-b1-p01-s01"]},
+      "steve-listen": {"storybook_pages": [1], "sentence_ids": ["mc-b1-p01-s01"]},
+      "steve-build": {"storybook_pages": [1], "sentence_ids": ["mc-b1-p01-s02"]},
+      "alex-idle": {"storybook_pages": [1], "sentence_ids": ["mc-b1-p01-s01"]},
+      "alex-point": {"storybook_pages": [3], "sentence_ids": ["mc-b1-p03-s06"]},
+      "alex-rescue": {"storybook_pages": [3], "sentence_ids": ["mc-b1-p03-s07"]},
+      "byte-idle": {"storybook_pages": [2], "sentence_ids": ["mc-b1-p02-s01"]},
+      "byte-high-five": {"storybook_pages": [2], "sentence_ids": ["mc-b1-p02-s02"]},
+      "duo-celebrate": {"storybook_pages": [3], "sentence_ids": ["mc-b1-p03-s07"]}
+    }
+  },
+  "acceptance": {"alpha_checked": true, "corners_transparent": true, "green_edge_percent_max": 0, "dimensions_checked": true, "ocr_text": ""},
+  "transparency": {"method": "chroma-key", "key": "0,255,0", "tolerance": 180, "feather": 2},
+  "limitations": ["生成图包含符合世界观的草地方块高光；透明处理移除了绿幕色，运行时不依赖背景。", "角色动作是静态 PNG 样板，连续帧动画留在 P2。"]
+}

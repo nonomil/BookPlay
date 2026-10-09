@@ -1,0 +1,70 @@
+{
+  "asset_id": "jttw-story-stickers-v1",
+  "type": "story-reward-sprite-sheet",
+  "deprecated": true,
+  "deprecation_reason": "混合图集无法保持逐关故事绑定；EP1 已迁移到 jttw-ep001-story-rewards 的单件提示词与资产。",
+  "runtime_replaced_by": "assets/generated/jttw-story-scenes-v1/ (story cards) + assets/generated/jttw-ep001-story-rewards/transparent/ (EP1 keepsakes)",
+  "tool": "gpt-image-workflow + transparent-image-generator",
+  "generation_status": "complete-quality-gate",
+  "outputs": [
+    "assets/generated/jttw-story-stickers-v1/transparent/stone.png",
+    "assets/generated/jttw-story-stickers-v1/transparent/peach.png",
+    "assets/generated/jttw-story-stickers-v1/transparent/waterfall.png",
+    "assets/generated/jttw-story-stickers-v1/transparent/cloud.png",
+    "assets/generated/jttw-story-stickers-v1/transparent/bell.png",
+    "assets/generated/jttw-story-stickers-v1/transparent/dragon.png",
+    "assets/generated/jttw-story-stickers-v1/transparent/saddle.png",
+    "assets/generated/jttw-story-stickers-v1/transparent/gourd.png",
+    "assets/generated/jttw-story-stickers-v1/transparent/tree.png",
+    "assets/generated/jttw-story-stickers-v1/transparent/golden-ring.png",
+    "assets/generated/jttw-story-stickers-v1/transparent/fan.png",
+    "assets/generated/jttw-story-stickers-v1/transparent/river-fish.png"
+  ],
+  "prompt_source": "source/prompt.txt",
+  "generation": {
+    "provider": "cliprox",
+    "model": "gpt-image-2",
+    "api_base": "https://rn6.nonom.top/v1",
+    "endpoint_path": "/v1/images/generations",
+    "requested_size": "1536x1024",
+    "actual_size": "1448x1086",
+    "response_format": "b64_json",
+    "background": "chroma-key #00ff00",
+    "api_key_source": "environment:CLIPROX_API_KEY",
+    "tls_verified": true,
+    "pinned_ca": "gpt-image-workflow/certs/cliprox-rn6.pem",
+    "run_manifest": "2d-r2/manifest.json"
+  },
+  "grid": {
+    "requested_cols": 4,
+    "requested_rows": 3,
+    "actual_detected_cols": 3,
+    "actual_detected_rows": 4,
+    "count": 12,
+    "semantic_order_source": "strict/semantic-v2"
+  },
+  "acceptance": {
+    "alpha_checked": true,
+    "dimensions_checked": true,
+    "hashes_recorded": true,
+    "all_png_rgba": true,
+    "all_corners_transparent": true,
+    "all_edges_fully_transparent": true,
+    "green_visible_total": 0,
+    "quality_report": "transparent/quality-report.json",
+    "publish_manifest": "transparent/publish_manifest.json"
+  },
+  "fallback": {
+    "runtime_keeps_existing_assets": true,
+    "glyph_fallback": true,
+    "note": "The old motif PNGs remain a compatibility fallback only; story cards lead with the exact episode scene thumbnail."
+  },
+  "diagnostics": {
+    "checked_at": "2026-09-02",
+    "public_tcp_443": true,
+    "public_tls": "verified with pinned CA",
+    "local_proxy_127_0_0_1_8317": false,
+    "key_present": true,
+    "notes": "Credential stayed in the process environment; no TLS bypass was used."
+  }
+}

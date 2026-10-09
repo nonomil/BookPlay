@@ -1,0 +1,15 @@
+{
+  "asset_id": "jttw-story-scenes-v1",
+  "type": "storybook-scene-thumbnail-set",
+  "count": 108,
+  "source": "assets/lf_epN/pages/p03.png",
+  "generator": "prj/tools/generate_story_scene_thumbs.py",
+  "published_pattern": "assets/generated/jttw-story-scenes-v1/epNNN.jpg",
+  "image_role": "story truth anchor for sticker cards and chapter scenes",
+  "crop": {
+    "relative_box": [0.105, 0.065, 0.895, 0.535],
+    "output": "512x399 JPEG quality 88",
+    "text_excluded": true
+  },
+  "fallback_policy": "If an authored thumbnail is missing, use the reviewed transparent EP1 keepsake or glyph; never substitute a random mixed-sheet cell."
+}
