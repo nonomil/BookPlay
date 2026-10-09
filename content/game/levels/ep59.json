@@ -1,0 +1,584 @@
+{
+ "schema_version": 1,
+ "ep": 59,
+ "title": {
+  "en": "Scared Villagers",
+  "zh": "西游记 第59集"
+ },
+ "collection": "c08",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "imp",
+   "nameZh": "小妖",
+   "mode": "sparring",
+   "sprite": "imp"
+  },
+  "minors": [
+   {
+    "id": "imp",
+    "nameZh": "小妖",
+    "sprite": "imp"
+   }
+  ]
+ },
+ "background": {
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep59/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "\"Can we please stop to rest?\" moaned Bajie one day.",
+   "textZh": "\"我们能停下来休息一下吗?\"有一天,八戒呻吟道。",
+   "illustration": "assets/adv_frames/ep59/f1.jpg",
+   "sourceNodeId": "n001",
+   "audioRef": "sent_en:\"Can we please stop to rest?\" moaned Bajie one day."
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "The group had spent the morning walking down a long mountain trail.",
+   "textZh": "这个小组上午一直沿着一条长长的山间小径行走。",
+   "illustration": "assets/adv_frames/ep59/f2.jpg",
+   "sourceNodeId": "n002",
+   "audioRef": "sent_en:The group had spent the morning walking down a long mountain trail."
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "villager",
+   "zh": "村民",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep59/f1.jpg"
+  },
+  {
+   "term": "moan",
+   "zh": "1. 抱怨,(2. 呻吟)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep59/f1.jpg"
+  },
+  {
+   "term": "trail",
+   "zh": "小径,(踩出的)小路",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep59/f2.jpg"
+  },
+  {
+   "term": "weak",
+   "zh": "虚弱的,无力的",
+   "ipa": "wiːk",
+   "illustration": "assets/adv_frames/ep59/f1.jpg"
+  },
+  {
+   "term": "leap",
+   "zh": "跳,跳跃",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep59/f0.jpg"
+  },
+  {
+   "term": "deserted",
+   "zh": "荒芜的,无人居住的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep59/f0.jpg"
+  },
+  {
+   "term": "well",
+   "zh": "1. 井,(2. 很好地)",
+   "ipa": "wel",
+   "illustration": "assets/adv_frames/ep59/f2.jpg"
+  },
+  {
+   "term": "startle",
+   "zh": "使大吃一惊",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep59/f1.jpg"
+  },
+  {
+   "term": "bucket",
+   "zh": "水桶,提桶,吊桶",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep59/f1.jpg"
+  },
+  {
+   "term": "relax",
+   "zh": "放松,缓和(紧张)",
+   "ipa": "rɪˈlæks",
+   "illustration": "assets/adv_frames/ep59/f2.jpg"
+  },
+  {
+   "term": "boil",
+   "zh": "煮沸,烧开",
+   "ipa": "bɔɪl",
+   "illustration": "assets/adv_frames/ep59/f2.jpg"
+  },
+  {
+   "term": "wrong",
+   "zh": "错的,不对的",
+   "ipa": "rɒŋ",
+   "illustration": "assets/adv_frames/ep59/f1.jpg"
+  }
+ ],
+ "wordPool": [
+  {
+   "term": "villager",
+   "zh": "村民",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep59/f1.jpg"
+  },
+  {
+   "term": "moan",
+   "zh": "1. 抱怨,(2. 呻吟)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep59/f1.jpg"
+  },
+  {
+   "term": "trail",
+   "zh": "小径,(踩出的)小路",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep59/f2.jpg"
+  },
+  {
+   "term": "weak",
+   "zh": "虚弱的,无力的",
+   "ipa": "wiːk",
+   "illustration": "assets/adv_frames/ep59/f1.jpg"
+  },
+  {
+   "term": "leap",
+   "zh": "跳,跳跃",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep59/f0.jpg"
+  },
+  {
+   "term": "deserted",
+   "zh": "荒芜的,无人居住的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep59/f0.jpg"
+  },
+  {
+   "term": "well",
+   "zh": "1. 井,(2. 很好地)",
+   "ipa": "wel",
+   "illustration": "assets/adv_frames/ep59/f2.jpg"
+  },
+  {
+   "term": "startle",
+   "zh": "使大吃一惊",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep59/f1.jpg"
+  },
+  {
+   "term": "bucket",
+   "zh": "水桶,提桶,吊桶",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep59/f1.jpg"
+  },
+  {
+   "term": "relax",
+   "zh": "放松,缓和(紧张)",
+   "ipa": "rɪˈlæks",
+   "illustration": "assets/adv_frames/ep59/f2.jpg"
+  },
+  {
+   "term": "boil",
+   "zh": "煮沸,烧开",
+   "ipa": "bɔɪl",
+   "illustration": "assets/adv_frames/ep59/f2.jpg"
+  },
+  {
+   "term": "wrong",
+   "zh": "错的,不对的",
+   "ipa": "rɒŋ",
+   "illustration": "assets/adv_frames/ep59/f1.jpg"
+  },
+  {
+   "term": "upset",
+   "zh": "1. 使不快,使心烦意乱,(2. 不快的,心烦意乱的)",
+   "ipa": "ˌʌpˈset][ʌpˈset",
+   "illustration": "assets/adv_frames/ep59/f1.jpg"
+  },
+  {
+   "term": "badly",
+   "zh": "1. 坏地,(2. 极度地,严重地)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep59/f1.jpg"
+  },
+  {
+   "term": "worse",
+   "zh": "更坏的,更糟糕的 (bad-worse)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep59/f1.jpg"
+  },
+  {
+   "term": "destroy",
+   "zh": "破坏,毁坏",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep59/f1.jpg"
+  },
+  {
+   "term": "hand over",
+   "zh": "交出,移交",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep59/f1.jpg"
+  },
+  {
+   "term": "burst",
+   "zh": "突然开始(某事),突然进入(某种状态)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep59/f2.jpg"
+  },
+  {
+   "term": "all over again",
+   "zh": "重新,再一次",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep59/f2.jpg"
+  },
+  {
+   "term": "cruel",
+   "zh": "残忍的,残酷的",
+   "ipa": "ˈkruːəl",
+   "illustration": "assets/adv_frames/ep59/f0.jpg"
+  },
+  {
+   "term": "examine",
+   "zh": "调查,检查",
+   "ipa": "ɪɡˈzæmɪn",
+   "illustration": "assets/adv_frames/ep59/f3.jpg"
+  },
+  {
+   "term": "closely",
+   "zh": "仔细地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep59/f1.jpg"
+  },
+  {
+   "term": "fold",
+   "zh": "1. 弯曲着,弓着(脚,身体等),(2. 折叠(纸,布等))",
+   "ipa": "fəʊld",
+   "illustration": "assets/adv_frames/ep59/f3.jpg"
+  },
+  {
+   "term": "fold one's",
+   "zh": "双臂交叉",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep59/f2.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "villager",
+     "zh": "村民",
+     "sprite": "imp"
+    },
+    {
+     "term": "moan",
+     "zh": "1. 抱怨,(2. 呻吟)",
+     "sprite": "imp"
+    },
+    {
+     "term": "trail",
+     "zh": "小径,(踩出的)小路",
+     "sprite": "imp"
+    },
+    {
+     "term": "weak",
+     "zh": "虚弱的,无力的",
+     "sprite": "imp"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "leap",
+     "zh": "跳,跳跃",
+     "sprite": "imp"
+    },
+    {
+     "term": "deserted",
+     "zh": "荒芜的,无人居住的",
+     "sprite": "imp"
+    },
+    {
+     "term": "well",
+     "zh": "1. 井,(2. 很好地)",
+     "sprite": "imp"
+    },
+    {
+     "term": "startle",
+     "zh": "使大吃一惊",
+     "sprite": "imp"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "bucket",
+    "zh": "水桶,提桶,吊桶"
+   },
+   {
+    "term": "relax",
+    "zh": "放松,缓和(紧张)"
+   },
+   {
+    "term": "boil",
+    "zh": "煮沸,烧开"
+   },
+   {
+    "term": "wrong",
+    "zh": "错的,不对的"
+   }
+  ],
+  "taunts": [
+   "imp.1",
+   "imp.2",
+   "imp.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=59",
+ "npcDialogue": {
+  "intro": {
+   "id": "ep59-map-intro",
+   "lines": [
+    {
+     "id": "ep59-map-intro-1",
+     "sourceNodeId": "n001",
+     "speaker": "narrator",
+     "textEn": "\"Can we please stop to rest?\" moaned Bajie one day.",
+     "textZh": "\"我们能停下来休息一下吗?\"有一天,八戒呻吟道。",
+     "audioRef": "sent_en:\"Can we please stop to rest?\" moaned Bajie one day.",
+     "audioStart": 10.937,
+     "audioEnd": 20.138
+    },
+    {
+     "id": "ep59-map-intro-2",
+     "sourceNodeId": "n002",
+     "speaker": "narrator",
+     "textEn": "The group had spent the morning walking down a long mountain trail.",
+     "textZh": "这个小组上午一直沿着一条长长的山间小径行走。",
+     "audioRef": "sent_en:The group had spent the morning walking down a long mountain trail.",
+     "audioStart": 20.139,
+     "audioEnd": 24.821
+    }
+   ]
+  },
+  "quiz": {
+   "id": "ep59-map-quiz",
+   "lines": [
+    {
+     "id": "ep59-map-quiz-1",
+     "sourceNodeId": "n010",
+     "speaker": "narrator",
+     "textEn": "\"How will we cross this river?\" said the Tang Monk.",
+     "textZh": "\"我们该如何过这条河?\"唐僧问道。",
+     "audioRef": "sent_en:\"How will we cross this river?\" said the Tang Monk.",
+     "audioStart": 52.348,
+     "audioEnd": 55.992
+    }
+   ],
+   "question": {
+    "id": "ep059-official-quiz-001",
+    "textEn": "which is not true?",
+    "textZh": "哪一项是不正确的？"
+   },
+   "word": {
+    "term": "villager",
+    "zh": "村民",
+    "ipa": ""
+   },
+   "options": [
+    {
+     "id": "a",
+     "textEn": "wukong was scared of the demon.",
+     "textZh": "悟空害怕那个妖怪。",
+     "correct": true,
+     "feedback": "对了。悟空害怕那个妖怪。"
+    },
+    {
+     "id": "b",
+     "textEn": "the travelers couldn't cross the river.",
+     "textZh": "旅行者们无法过河。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    },
+    {
+     "id": "c",
+     "textEn": "chen had to give his son to the demon.",
+     "textZh": "陈不得不把他的儿子交给恶魔。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    }
+   ],
+   "lessonCardId": "ep059-official-quiz-001"
+  }
+ },
+ "map": {
+  "theme": "generic",
+  "coordinateSpace": "world-normalized",
+  "worldTiles": 2,
+  "regions": {
+   "hero": 0,
+   "waves": [
+    0,
+    1
+   ],
+   "npc": {
+    "intro": 0,
+    "quiz": 1
+   },
+   "boss": 3
+  },
+  "walkable": {
+   "space": "world",
+   "x": 0.0,
+   "y": 0.16,
+   "w": 1.0,
+   "h": 0.79,
+   "rects": [
+    {
+     "x": 0.0,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.66,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    }
+   ]
+  },
+  "heroSpawn": {
+   "x": 0.06,
+   "y": 0.31
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.31,
+    "y": 0.23
+   },
+   {
+    "x": 0.38,
+    "y": 0.27
+   },
+   {
+    "x": 0.34,
+    "y": 0.33
+   },
+   {
+    "x": 0.41,
+    "y": 0.24
+   }
+  ],
+  "waveSpawns": [
+   [
+    {
+     "x": 0.31,
+     "y": 0.23
+    },
+    {
+     "x": 0.38,
+     "y": 0.27
+    },
+    {
+     "x": 0.34,
+     "y": 0.33
+    },
+    {
+     "x": 0.41,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.81,
+     "y": 0.23
+    },
+    {
+     "x": 0.88,
+     "y": 0.27
+    },
+    {
+     "x": 0.84,
+     "y": 0.33
+    },
+    {
+     "x": 0.91,
+     "y": 0.24
+    }
+   ]
+  ],
+  "orbSpawns": [
+   [
+    {
+     "x": 0.11,
+     "y": 0.25
+    },
+    {
+     "x": 0.16,
+     "y": 0.31
+    },
+    {
+     "x": 0.12,
+     "y": 0.37
+    },
+    {
+     "x": 0.18,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.61,
+     "y": 0.25
+    },
+    {
+     "x": 0.66,
+     "y": 0.31
+    },
+    {
+     "x": 0.62,
+     "y": 0.37
+    },
+    {
+     "x": 0.68,
+     "y": 0.24
+    }
+   ]
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "imp",
+    "nameZh": "小妖",
+    "x": 0.08,
+    "y": 0.26
+   },
+   {
+    "role": "quiz",
+    "sprite": "imp",
+    "nameZh": "小妖",
+    "x": 0.7,
+    "y": 0.39
+   }
+  ],
+  "bossSpot": {
+   "x": 0.94,
+   "y": 0.85
+  }
+ }
+}

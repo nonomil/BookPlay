@@ -1,0 +1,584 @@
+{
+ "schema_version": 1,
+ "ep": 89,
+ "title": {
+  "en": "Many Eyes",
+  "zh": "西游记 第89集"
+ },
+ "collection": "c11",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "centipededemon",
+   "nameZh": "多目怪",
+   "mode": "sparring",
+   "sprite": "centipededemon"
+  },
+  "minors": [
+   {
+    "id": "imp",
+    "nameZh": "小妖",
+    "sprite": "imp"
+   }
+  ]
+ },
+ "background": {
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep89/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "Wukong gasped as his companions began to look ill.",
+   "textZh": "悟空倒吸一口气,只见他的同伴们脸色开始变得苍白。",
+   "illustration": "assets/adv_frames/ep89/f1.jpg",
+   "sourceNodeId": "n001",
+   "audioRef": "sent_en:Wukong gasped as his companions began to look ill."
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "The Tang Monk's head bobbed forward, and his teacup dropped from his hand.",
+   "textZh": "唐僧的头微微前倾,手中的茶杯随之掉落。",
+   "illustration": "assets/adv_frames/ep89/f2.jpg",
+   "sourceNodeId": "n002",
+   "audioRef": "sent_en:The Tang Monk's head bobbed forward, and his teacup dropped from his hand."
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "ill",
+   "zh": "生病的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep89/f1.jpg"
+  },
+  {
+   "term": "bob",
+   "zh": "上下动,跳动",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep89/f2.jpg"
+  },
+  {
+   "term": "teacup",
+   "zh": "茶杯",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep89/f2.jpg"
+  },
+  {
+   "term": "topple",
+   "zh": "推倒,打翻",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep89/f3.jpg"
+  },
+  {
+   "term": "pass out",
+   "zh": "1. 昏倒,失去知觉,(2. 分发(东西))",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep89/f0.jpg"
+  },
+  {
+   "term": "villain",
+   "zh": "坏人,恶棍",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep89/f1.jpg"
+  },
+  {
+   "term": "out of the",
+   "zh": "靠边,避开",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep89/f1.jpg"
+  },
+  {
+   "term": "flip",
+   "zh": "翻跟斗",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep89/f2.jpg"
+  },
+  {
+   "term": "directly",
+   "zh": "就在...(某个特定位置)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep89/f2.jpg"
+  },
+  {
+   "term": "clear",
+   "zh": "1. (云,雾)消散,(2. 明亮的,透明的)",
+   "ipa": "klɪə(r)",
+   "illustration": "assets/adv_frames/ep89/f3.jpg"
+  },
+  {
+   "term": "horror",
+   "zh": "恐惧,害怕",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep89/f2.jpg"
+  },
+  {
+   "term": "monster",
+   "zh": "怪物",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep89/f0.jpg"
+  }
+ ],
+ "wordPool": [
+  {
+   "term": "ill",
+   "zh": "生病的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep89/f1.jpg"
+  },
+  {
+   "term": "bob",
+   "zh": "上下动,跳动",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep89/f2.jpg"
+  },
+  {
+   "term": "teacup",
+   "zh": "茶杯",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep89/f2.jpg"
+  },
+  {
+   "term": "topple",
+   "zh": "推倒,打翻",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep89/f3.jpg"
+  },
+  {
+   "term": "pass out",
+   "zh": "1. 昏倒,失去知觉,(2. 分发(东西))",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep89/f0.jpg"
+  },
+  {
+   "term": "villain",
+   "zh": "坏人,恶棍",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep89/f1.jpg"
+  },
+  {
+   "term": "out of the",
+   "zh": "靠边,避开",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep89/f1.jpg"
+  },
+  {
+   "term": "flip",
+   "zh": "翻跟斗",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep89/f2.jpg"
+  },
+  {
+   "term": "directly",
+   "zh": "就在...(某个特定位置)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep89/f2.jpg"
+  },
+  {
+   "term": "clear",
+   "zh": "1. (云,雾)消散,(2. 明亮的,透明的)",
+   "ipa": "klɪə(r)",
+   "illustration": "assets/adv_frames/ep89/f3.jpg"
+  },
+  {
+   "term": "horror",
+   "zh": "恐惧,害怕",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep89/f2.jpg"
+  },
+  {
+   "term": "monster",
+   "zh": "怪物",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep89/f0.jpg"
+  },
+  {
+   "term": "dear",
+   "zh": "1. 心爱的,敬爱的,(2. 老公,老婆,亲爱的(通常是叫丈夫、妻子或子女时用的话))",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep89/f0.jpg"
+  },
+  {
+   "term": "fury",
+   "zh": "愤怒",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep89/f1.jpg"
+  },
+  {
+   "term": "regret",
+   "zh": "后悔,遗憾",
+   "ipa": "rɪˈɡret",
+   "illustration": "assets/adv_frames/ep89/f1.jpg"
+  },
+  {
+   "term": "reveal",
+   "zh": "揭露,暴露,泄露(隐藏的事物)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep89/f3.jpg"
+  },
+  {
+   "term": "blinding",
+   "zh": "使人眩目的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep89/f0.jpg"
+  },
+  {
+   "term": "abbey",
+   "zh": "大修道院,大寺院",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep89/f0.jpg"
+  },
+  {
+   "term": "mole",
+   "zh": "鼹鼠(动物名)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep89/f2.jpg"
+  },
+  {
+   "term": "claw",
+   "zh": "爪子",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep89/f3.jpg"
+  },
+  {
+   "term": "tunnel",
+   "zh": "1. 凿隧道,(2. 隧道)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep89/f3.jpg"
+  },
+  {
+   "term": "sob",
+   "zh": "1. 呜咽,啜泣,(2. 呜咽声,啜泣声)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep89/f1.jpg"
+  },
+  {
+   "term": "centipede",
+   "zh": "蜈蚣",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep89/f1.jpg"
+  },
+  {
+   "term": "needle",
+   "zh": "针",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep89/f2.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "ill",
+     "zh": "生病的",
+     "sprite": "imp"
+    },
+    {
+     "term": "bob",
+     "zh": "上下动,跳动",
+     "sprite": "imp"
+    },
+    {
+     "term": "teacup",
+     "zh": "茶杯",
+     "sprite": "imp"
+    },
+    {
+     "term": "topple",
+     "zh": "推倒,打翻",
+     "sprite": "imp"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "pass out",
+     "zh": "1. 昏倒,失去知觉,(2. 分发(东西))",
+     "sprite": "imp"
+    },
+    {
+     "term": "villain",
+     "zh": "坏人,恶棍",
+     "sprite": "imp"
+    },
+    {
+     "term": "out of the",
+     "zh": "靠边,避开",
+     "sprite": "imp"
+    },
+    {
+     "term": "flip",
+     "zh": "翻跟斗",
+     "sprite": "imp"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "directly",
+    "zh": "就在...(某个特定位置)"
+   },
+   {
+    "term": "clear",
+    "zh": "1. (云,雾)消散,(2. 明亮的,透明的)"
+   },
+   {
+    "term": "horror",
+    "zh": "恐惧,害怕"
+   },
+   {
+    "term": "monster",
+    "zh": "怪物"
+   }
+  ],
+  "taunts": [
+   "centipededemon.1",
+   "centipededemon.2",
+   "centipededemon.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=89",
+ "npcDialogue": {
+  "intro": {
+   "id": "ep89-map-intro",
+   "lines": [
+    {
+     "id": "ep89-map-intro-1",
+     "sourceNodeId": "n001",
+     "speaker": "narrator",
+     "textEn": "Wukong gasped as his companions began to look ill.",
+     "textZh": "悟空倒吸一口气,只见他的同伴们脸色开始变得苍白。",
+     "audioRef": "sent_en:Wukong gasped as his companions began to look ill.",
+     "audioStart": 10.934,
+     "audioEnd": 18.937
+    },
+    {
+     "id": "ep89-map-intro-2",
+     "sourceNodeId": "n002",
+     "speaker": "narrator",
+     "textEn": "The Tang Monk's head bobbed forward, and his teacup dropped from his hand.",
+     "textZh": "唐僧的头微微前倾,手中的茶杯随之掉落。",
+     "audioRef": "sent_en:The Tang Monk's head bobbed forward, and his teacup dropped from his hand.",
+     "audioStart": 18.938,
+     "audioEnd": 24.678
+    }
+   ]
+  },
+  "quiz": {
+   "id": "ep89-map-quiz",
+   "lines": [
+    {
+     "id": "ep89-map-quiz-1",
+     "sourceNodeId": "n036",
+     "speaker": "narrator",
+     "textEn": "\"What will I do? I have no way to save my friends. That priest's light is too powerful.\"",
+     "textZh": "\"我该怎么办?我无计可施,无法救出我的朋友们。那位神父的法术太强大了。\"",
+     "audioRef": "sent_en:\"What will I do? I have no way to save my friends. That priest's light is too powerful.\"",
+     "audioStart": 167.672,
+     "audioEnd": 175.446
+    }
+   ],
+   "question": {
+    "id": "ep089-official-quiz-001",
+    "textEn": "which is most important from the story?",
+    "textZh": "故事中什么最重要？"
+   },
+   "word": {
+    "term": "ill",
+    "zh": "生病的",
+    "ipa": ""
+   },
+   "options": [
+    {
+     "id": "a",
+     "textEn": "pralambra helped wukong defeat the priest.",
+     "textZh": "普拉兰布拉帮助悟空打败了牧师。",
+     "correct": true,
+     "feedback": "对了。普拉兰布拉帮助悟空打败了牧师。"
+    },
+    {
+     "id": "b",
+     "textEn": "the journey was too easy lately.",
+     "textZh": "最近这段旅程太轻松了。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    },
+    {
+     "id": "c",
+     "textEn": "wukong turned into a mole.",
+     "textZh": "悟空变成了一只鼹鼠。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    }
+   ],
+   "lessonCardId": "ep089-official-quiz-001"
+  }
+ },
+ "map": {
+  "theme": "generic",
+  "coordinateSpace": "world-normalized",
+  "worldTiles": 2,
+  "regions": {
+   "hero": 0,
+   "waves": [
+    0,
+    1
+   ],
+   "npc": {
+    "intro": 0,
+    "quiz": 1
+   },
+   "boss": 3
+  },
+  "walkable": {
+   "space": "world",
+   "x": 0.0,
+   "y": 0.16,
+   "w": 1.0,
+   "h": 0.79,
+   "rects": [
+    {
+     "x": 0.0,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.66,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    }
+   ]
+  },
+  "heroSpawn": {
+   "x": 0.06,
+   "y": 0.31
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.31,
+    "y": 0.23
+   },
+   {
+    "x": 0.38,
+    "y": 0.27
+   },
+   {
+    "x": 0.34,
+    "y": 0.33
+   },
+   {
+    "x": 0.41,
+    "y": 0.24
+   }
+  ],
+  "waveSpawns": [
+   [
+    {
+     "x": 0.31,
+     "y": 0.23
+    },
+    {
+     "x": 0.38,
+     "y": 0.27
+    },
+    {
+     "x": 0.34,
+     "y": 0.33
+    },
+    {
+     "x": 0.41,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.81,
+     "y": 0.23
+    },
+    {
+     "x": 0.88,
+     "y": 0.27
+    },
+    {
+     "x": 0.84,
+     "y": 0.33
+    },
+    {
+     "x": 0.91,
+     "y": 0.24
+    }
+   ]
+  ],
+  "orbSpawns": [
+   [
+    {
+     "x": 0.11,
+     "y": 0.25
+    },
+    {
+     "x": 0.16,
+     "y": 0.31
+    },
+    {
+     "x": 0.12,
+     "y": 0.37
+    },
+    {
+     "x": 0.18,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.61,
+     "y": 0.25
+    },
+    {
+     "x": 0.66,
+     "y": 0.31
+    },
+    {
+     "x": 0.62,
+     "y": 0.37
+    },
+    {
+     "x": 0.68,
+     "y": 0.24
+    }
+   ]
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "imp",
+    "nameZh": "小妖",
+    "x": 0.08,
+    "y": 0.26
+   },
+   {
+    "role": "quiz",
+    "sprite": "imp",
+    "nameZh": "小妖",
+    "x": 0.7,
+    "y": 0.39
+   }
+  ],
+  "bossSpot": {
+   "x": 0.94,
+   "y": 0.85
+  }
+ }
+}

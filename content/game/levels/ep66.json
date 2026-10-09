@@ -1,0 +1,584 @@
+{
+ "schema_version": 1,
+ "ep": 66,
+ "title": {
+  "en": "Help from Heaven",
+  "zh": "西游记 第66集"
+ },
+ "collection": "c09",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "imp",
+   "nameZh": "小妖",
+   "mode": "sparring",
+   "sprite": "imp"
+  },
+  "minors": [
+   {
+    "id": "imp",
+    "nameZh": "小妖",
+    "sprite": "imp"
+   }
+  ]
+ },
+ "background": {
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep66/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "One-Horned Buffalo went back into his cave and slammed the door shut.",
+   "textZh": "单角水牛回到自己的洞穴中,猛地关上了门。",
+   "illustration": "assets/adv_frames/ep66/f1.jpg",
+   "sourceNodeId": "n001",
+   "audioRef": "sent_en:One-Horned Buffalo went back into his cave and slammed the door shut."
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "\"He stole my iron bar!\" cried Wukong.",
+   "textZh": "\"他偷走了我的铁棒!\"悟空惊呼道。",
+   "illustration": "assets/adv_frames/ep66/f2.jpg",
+   "sourceNodeId": "n002",
+   "audioRef": "sent_en:\"He stole my iron bar!\" cried Wukong."
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "slam",
+   "zh": "砰然关上(门)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep66/f1.jpg"
+  },
+  {
+   "term": "shut",
+   "zh": "1. (门)关闭的,(眼睛等)合上的,(2. 关(门),闭(眼))",
+   "ipa": "ʃʌt",
+   "illustration": "assets/adv_frames/ep66/f1.jpg"
+  },
+  {
+   "term": "stole",
+   "zh": "偷窃 (steal-stole)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep66/f2.jpg"
+  },
+  {
+   "term": "mention",
+   "zh": "提及,说起",
+   "ipa": "ˈmenʃn",
+   "illustration": "assets/adv_frames/ep66/f1.jpg"
+  },
+  {
+   "term": "emperor",
+   "zh": "皇帝,帝王",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep66/f1.jpg"
+  },
+  {
+   "term": "southern",
+   "zh": "南方的",
+   "ipa": "ˈsʌðə(r)n",
+   "illustration": "assets/adv_frames/ep66/f1.jpg"
+  },
+  {
+   "term": "messenger",
+   "zh": "信差,传令员",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep66/f0.jpg"
+  },
+  {
+   "term": "spirit",
+   "zh": "精灵,妖精",
+   "ipa": "ˈspɪrɪt",
+   "illustration": "assets/adv_frames/ep66/f1.jpg"
+  },
+  {
+   "term": "missing",
+   "zh": "失踪的,不见的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep66/f1.jpg"
+  },
+  {
+   "term": "warrior",
+   "zh": "勇士,战士",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep66/f1.jpg"
+  },
+  {
+   "term": "arrest",
+   "zh": "逮捕",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep66/f0.jpg"
+  },
+  {
+   "term": "bang",
+   "zh": "砰地敲",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep66/f2.jpg"
+  }
+ ],
+ "wordPool": [
+  {
+   "term": "slam",
+   "zh": "砰然关上(门)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep66/f1.jpg"
+  },
+  {
+   "term": "shut",
+   "zh": "1. (门)关闭的,(眼睛等)合上的,(2. 关(门),闭(眼))",
+   "ipa": "ʃʌt",
+   "illustration": "assets/adv_frames/ep66/f1.jpg"
+  },
+  {
+   "term": "stole",
+   "zh": "偷窃 (steal-stole)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep66/f2.jpg"
+  },
+  {
+   "term": "mention",
+   "zh": "提及,说起",
+   "ipa": "ˈmenʃn",
+   "illustration": "assets/adv_frames/ep66/f1.jpg"
+  },
+  {
+   "term": "emperor",
+   "zh": "皇帝,帝王",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep66/f1.jpg"
+  },
+  {
+   "term": "southern",
+   "zh": "南方的",
+   "ipa": "ˈsʌðə(r)n",
+   "illustration": "assets/adv_frames/ep66/f1.jpg"
+  },
+  {
+   "term": "messenger",
+   "zh": "信差,传令员",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep66/f0.jpg"
+  },
+  {
+   "term": "spirit",
+   "zh": "精灵,妖精",
+   "ipa": "ˈspɪrɪt",
+   "illustration": "assets/adv_frames/ep66/f1.jpg"
+  },
+  {
+   "term": "missing",
+   "zh": "失踪的,不见的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep66/f1.jpg"
+  },
+  {
+   "term": "warrior",
+   "zh": "勇士,战士",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep66/f1.jpg"
+  },
+  {
+   "term": "arrest",
+   "zh": "逮捕",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep66/f0.jpg"
+  },
+  {
+   "term": "bang",
+   "zh": "砰地敲",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep66/f2.jpg"
+  },
+  {
+   "term": "eye",
+   "zh": "1. 集中注意力地看,(2. 眼睛)",
+   "ipa": "aɪ",
+   "illustration": "assets/adv_frames/ep66/f3.jpg"
+  },
+  {
+   "term": "puff out",
+   "zh": "(使)膨胀",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep66/f2.jpg"
+  },
+  {
+   "term": "dare",
+   "zh": "敢,敢于",
+   "ipa": "deə",
+   "illustration": "assets/adv_frames/ep66/f3.jpg"
+  },
+  {
+   "term": "point",
+   "zh": "1. 瞄准......,(2. 指向(物品、方向等),3. 尖端)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep66/f3.jpg"
+  },
+  {
+   "term": "go away",
+   "zh": "离开,走掉",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep66/f1.jpg"
+  },
+  {
+   "term": "Your Majesty",
+   "zh": "尊敬的陛下",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep66/f2.jpg"
+  },
+  {
+   "term": "general",
+   "zh": "将军",
+   "ipa": "ˈdʒenrəl",
+   "illustration": "assets/adv_frames/ep66/f1.jpg"
+  },
+  {
+   "term": "flaming",
+   "zh": "燃烧的,灼热的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep66/f3.jpg"
+  },
+  {
+   "term": "under arrest",
+   "zh": "被捕的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep66/f3.jpg"
+  },
+  {
+   "term": "threw",
+   "zh": "抛,掷 (throw-threw)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep66/f1.jpg"
+  },
+  {
+   "term": "able",
+   "zh": "有能力的,能够做",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep66/f1.jpg"
+  },
+  {
+   "term": "sigh",
+   "zh": "叹气,叹息",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep66/f2.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "slam",
+     "zh": "砰然关上(门)",
+     "sprite": "imp"
+    },
+    {
+     "term": "shut",
+     "zh": "1. (门)关闭的,(眼睛等)合上的,(2. 关(门),闭(眼))",
+     "sprite": "imp"
+    },
+    {
+     "term": "stole",
+     "zh": "偷窃 (steal-stole)",
+     "sprite": "imp"
+    },
+    {
+     "term": "mention",
+     "zh": "提及,说起",
+     "sprite": "imp"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "emperor",
+     "zh": "皇帝,帝王",
+     "sprite": "imp"
+    },
+    {
+     "term": "southern",
+     "zh": "南方的",
+     "sprite": "imp"
+    },
+    {
+     "term": "messenger",
+     "zh": "信差,传令员",
+     "sprite": "imp"
+    },
+    {
+     "term": "spirit",
+     "zh": "精灵,妖精",
+     "sprite": "imp"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "missing",
+    "zh": "失踪的,不见的"
+   },
+   {
+    "term": "warrior",
+    "zh": "勇士,战士"
+   },
+   {
+    "term": "arrest",
+    "zh": "逮捕"
+   },
+   {
+    "term": "bang",
+    "zh": "砰地敲"
+   }
+  ],
+  "taunts": [
+   "imp.1",
+   "imp.2",
+   "imp.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=66",
+ "npcDialogue": {
+  "intro": {
+   "id": "ep66-map-intro",
+   "lines": [
+    {
+     "id": "ep66-map-intro-1",
+     "sourceNodeId": "n001",
+     "speaker": "narrator",
+     "textEn": "One-Horned Buffalo went back into his cave and slammed the door shut.",
+     "textZh": "单角水牛回到自己的洞穴中,猛地关上了门。",
+     "audioRef": "sent_en:One-Horned Buffalo went back into his cave and slammed the door shut.",
+     "audioStart": 11.0,
+     "audioEnd": 18.696
+    },
+    {
+     "id": "ep66-map-intro-2",
+     "sourceNodeId": "n002",
+     "speaker": "narrator",
+     "textEn": "\"He stole my iron bar!\" cried Wukong.",
+     "textZh": "\"他偷走了我的铁棒!\"悟空惊呼道。",
+     "audioRef": "sent_en:\"He stole my iron bar!\" cried Wukong.",
+     "audioStart": 18.697,
+     "audioEnd": 22.271
+    }
+   ]
+  },
+  "quiz": {
+   "id": "ep66-map-quiz",
+   "lines": [
+    {
+     "id": "ep66-map-quiz-1",
+     "sourceNodeId": "n008",
+     "speaker": "narrator",
+     "textEn": "The guard sent a messenger to see if any spirits were missing from Heaven.",
+     "textZh": "守卫派来一名信使,探查天堂是否有人失踪。",
+     "audioRef": "sent_en:The guard sent a messenger to see if any spirits were missing from Heaven.",
+     "audioStart": 44.623,
+     "audioEnd": 50.786
+    }
+   ],
+   "question": {
+    "id": "ep066-official-quiz-001",
+    "textEn": "which is true?",
+    "textZh": "哪一个是真的？"
+   },
+   "word": {
+    "term": "slam",
+    "zh": "砰然关上(门)",
+    "ipa": ""
+   },
+   "options": [
+    {
+     "id": "a",
+     "textEn": "one-horned buffalo did not escape from heaven.",
+     "textZh": "独角水牛没有逃离天堂。",
+     "correct": true,
+     "feedback": "对了。独角水牛没有逃离天堂。"
+    },
+    {
+     "id": "b",
+     "textEn": "the rain god arrested one-horned buffalo.",
+     "textZh": "雨神逮捕了独角水牛。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    },
+    {
+     "id": "c",
+     "textEn": "wukong went to heaven to get back his iron bar.",
+     "textZh": "悟空上天去取回他的铁棒。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    }
+   ],
+   "lessonCardId": "ep066-official-quiz-001"
+  }
+ },
+ "map": {
+  "theme": "generic",
+  "coordinateSpace": "world-normalized",
+  "worldTiles": 2,
+  "regions": {
+   "hero": 0,
+   "waves": [
+    0,
+    1
+   ],
+   "npc": {
+    "intro": 0,
+    "quiz": 1
+   },
+   "boss": 3
+  },
+  "walkable": {
+   "space": "world",
+   "x": 0.0,
+   "y": 0.16,
+   "w": 1.0,
+   "h": 0.79,
+   "rects": [
+    {
+     "x": 0.0,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.66,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    }
+   ]
+  },
+  "heroSpawn": {
+   "x": 0.06,
+   "y": 0.31
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.31,
+    "y": 0.23
+   },
+   {
+    "x": 0.38,
+    "y": 0.27
+   },
+   {
+    "x": 0.34,
+    "y": 0.33
+   },
+   {
+    "x": 0.41,
+    "y": 0.24
+   }
+  ],
+  "waveSpawns": [
+   [
+    {
+     "x": 0.31,
+     "y": 0.23
+    },
+    {
+     "x": 0.38,
+     "y": 0.27
+    },
+    {
+     "x": 0.34,
+     "y": 0.33
+    },
+    {
+     "x": 0.41,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.81,
+     "y": 0.23
+    },
+    {
+     "x": 0.88,
+     "y": 0.27
+    },
+    {
+     "x": 0.84,
+     "y": 0.33
+    },
+    {
+     "x": 0.91,
+     "y": 0.24
+    }
+   ]
+  ],
+  "orbSpawns": [
+   [
+    {
+     "x": 0.11,
+     "y": 0.25
+    },
+    {
+     "x": 0.16,
+     "y": 0.31
+    },
+    {
+     "x": 0.12,
+     "y": 0.37
+    },
+    {
+     "x": 0.18,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.61,
+     "y": 0.25
+    },
+    {
+     "x": 0.66,
+     "y": 0.31
+    },
+    {
+     "x": 0.62,
+     "y": 0.37
+    },
+    {
+     "x": 0.68,
+     "y": 0.24
+    }
+   ]
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "imp",
+    "nameZh": "小妖",
+    "x": 0.08,
+    "y": 0.26
+   },
+   {
+    "role": "quiz",
+    "sprite": "imp",
+    "nameZh": "小妖",
+    "x": 0.7,
+    "y": 0.39
+   }
+  ],
+  "bossSpot": {
+   "x": 0.94,
+   "y": 0.85
+  }
+ }
+}

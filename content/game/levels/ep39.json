@@ -1,0 +1,584 @@
+{
+ "schema_version": 1,
+ "ep": 39,
+ "title": {
+  "en": "The Injured Monk",
+  "zh": "西游记 第39集"
+ },
+ "collection": "c05",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "goldenhorn",
+   "nameZh": "金角大王",
+   "mode": "sparring",
+   "sprite": "goldenhorn"
+  },
+  "minors": [
+   {
+    "id": "imp",
+    "nameZh": "小妖",
+    "sprite": "imp"
+   }
+  ]
+ },
+ "background": {
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep39/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "Bajie waved his rake at the demon Golden Horn.",
+   "textZh": "八戒挥动着他的锄头向那头名为\"金角\"的妖兽袭去。",
+   "illustration": "assets/adv_frames/ep39/f1.jpg",
+   "sourceNodeId": "n001",
+   "audioRef": "sent_en:Bajie waved his rake at the demon Golden Horn."
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "\"You'll never harm the Tang Monk!\" shouted the pig.",
+   "textZh": "\"你休想伤害唐僧!\"猪大声喊道。",
+   "illustration": "assets/adv_frames/ep39/f2.jpg",
+   "sourceNodeId": "n002",
+   "audioRef": "sent_en:\"You'll never harm the Tang Monk!\" shouted the pig."
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "wave",
+   "zh": "挥动,挥手示意(或致意)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep39/f1.jpg"
+  },
+  {
+   "term": "rush",
+   "zh": "冲,奔",
+   "ipa": "rʌʃ",
+   "illustration": "assets/adv_frames/ep39/f1.jpg"
+  },
+  {
+   "term": "alert",
+   "zh": "1. 机敏的,灵活的, (2. 使警觉,使注意)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep39/f1.jpg"
+  },
+  {
+   "term": "stay alert",
+   "zh": "保持警惕",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep39/f1.jpg"
+  },
+  {
+   "term": "though",
+   "zh": "可是,然而(用于句尾)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep39/f1.jpg"
+  },
+  {
+   "term": "Thank",
+   "zh": "谢天谢地!幸亏!",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep39/f0.jpg"
+  },
+  {
+   "term": "injure",
+   "zh": "伤害,使...受伤",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep39/f2.jpg"
+  },
+  {
+   "term": "terribly",
+   "zh": "非常地,极度地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep39/f2.jpg"
+  },
+  {
+   "term": "suspiciously",
+   "zh": "怀疑地,猜疑地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep39/f0.jpg"
+  },
+  {
+   "term": "badly",
+   "zh": "1. 极度地,严重地,(2. 坏地)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep39/f0.jpg"
+  },
+  {
+   "term": "ahead",
+   "zh": "在前,向前",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep39/f3.jpg"
+  },
+  {
+   "term": "simple",
+   "zh": "1. 简单的,单纯的,(2. 无装饰的,朴素的)",
+   "ipa": "ˈsɪmpl",
+   "illustration": "assets/adv_frames/ep39/f0.jpg"
+  }
+ ],
+ "wordPool": [
+  {
+   "term": "wave",
+   "zh": "挥动,挥手示意(或致意)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep39/f1.jpg"
+  },
+  {
+   "term": "rush",
+   "zh": "冲,奔",
+   "ipa": "rʌʃ",
+   "illustration": "assets/adv_frames/ep39/f1.jpg"
+  },
+  {
+   "term": "alert",
+   "zh": "1. 机敏的,灵活的, (2. 使警觉,使注意)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep39/f1.jpg"
+  },
+  {
+   "term": "stay alert",
+   "zh": "保持警惕",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep39/f1.jpg"
+  },
+  {
+   "term": "though",
+   "zh": "可是,然而(用于句尾)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep39/f1.jpg"
+  },
+  {
+   "term": "Thank",
+   "zh": "谢天谢地!幸亏!",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep39/f0.jpg"
+  },
+  {
+   "term": "injure",
+   "zh": "伤害,使...受伤",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep39/f2.jpg"
+  },
+  {
+   "term": "terribly",
+   "zh": "非常地,极度地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep39/f2.jpg"
+  },
+  {
+   "term": "suspiciously",
+   "zh": "怀疑地,猜疑地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep39/f0.jpg"
+  },
+  {
+   "term": "badly",
+   "zh": "1. 极度地,严重地,(2. 坏地)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep39/f0.jpg"
+  },
+  {
+   "term": "ahead",
+   "zh": "在前,向前",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep39/f3.jpg"
+  },
+  {
+   "term": "simple",
+   "zh": "1. 简单的,单纯的,(2. 无装饰的,朴素的)",
+   "ipa": "ˈsɪmpl",
+   "illustration": "assets/adv_frames/ep39/f0.jpg"
+  },
+  {
+   "term": "entire",
+   "zh": "整个的,全部的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep39/f0.jpg"
+  },
+  {
+   "term": "heavy",
+   "zh": "重的",
+   "ipa": "ˈhevi",
+   "illustration": "assets/adv_frames/ep39/f0.jpg"
+  },
+  {
+   "term": "weight",
+   "zh": "重量,体重",
+   "ipa": "weɪt",
+   "illustration": "assets/adv_frames/ep39/f0.jpg"
+  },
+  {
+   "term": "press",
+   "zh": "按,压",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep39/f1.jpg"
+  },
+  {
+   "term": "trap",
+   "zh": "困(在危险的场所或困境)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep39/f0.jpg"
+  },
+  {
+   "term": "lift",
+   "zh": "举起",
+   "ipa": "lɪft",
+   "illustration": "assets/adv_frames/ep39/f0.jpg"
+  },
+  {
+   "term": "buckle",
+   "zh": "1. (脚的力量)松掉,软掉,(2. 扣扣子)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep39/f0.jpg"
+  },
+  {
+   "term": "crash",
+   "zh": "碰撞,坠毁",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep39/f0.jpg"
+  },
+  {
+   "term": "delight",
+   "zh": "高兴,快乐",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep39/f0.jpg"
+  },
+  {
+   "term": "dine",
+   "zh": "进餐,用餐",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep39/f1.jpg"
+  },
+  {
+   "term": "toward",
+   "zh": "朝",
+   "ipa": "təˈwɔːd",
+   "illustration": "assets/adv_frames/ep39/f1.jpg"
+  },
+  {
+   "term": "strong",
+   "zh": "强烈的",
+   "ipa": "strɒŋ",
+   "illustration": "assets/adv_frames/ep39/f1.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "wave",
+     "zh": "挥动,挥手示意(或致意)",
+     "sprite": "imp"
+    },
+    {
+     "term": "rush",
+     "zh": "冲,奔",
+     "sprite": "imp"
+    },
+    {
+     "term": "alert",
+     "zh": "1. 机敏的,灵活的, (2. 使警觉,使注意)",
+     "sprite": "imp"
+    },
+    {
+     "term": "stay alert",
+     "zh": "保持警惕",
+     "sprite": "imp"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "though",
+     "zh": "可是,然而(用于句尾)",
+     "sprite": "imp"
+    },
+    {
+     "term": "Thank",
+     "zh": "谢天谢地!幸亏!",
+     "sprite": "imp"
+    },
+    {
+     "term": "injure",
+     "zh": "伤害,使...受伤",
+     "sprite": "imp"
+    },
+    {
+     "term": "terribly",
+     "zh": "非常地,极度地",
+     "sprite": "imp"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "suspiciously",
+    "zh": "怀疑地,猜疑地"
+   },
+   {
+    "term": "badly",
+    "zh": "1. 极度地,严重地,(2. 坏地)"
+   },
+   {
+    "term": "ahead",
+    "zh": "在前,向前"
+   },
+   {
+    "term": "simple",
+    "zh": "1. 简单的,单纯的,(2. 无装饰的,朴素的)"
+   }
+  ],
+  "taunts": [
+   "goldenhorn.1",
+   "goldenhorn.2",
+   "goldenhorn.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=39",
+ "npcDialogue": {
+  "intro": {
+   "id": "ep39-map-intro",
+   "lines": [
+    {
+     "id": "ep39-map-intro-1",
+     "sourceNodeId": "n001",
+     "speaker": "narrator",
+     "textEn": "Bajie waved his rake at the demon Golden Horn.",
+     "textZh": "八戒挥动着他的锄头向那头名为\"金角\"的妖兽袭去。",
+     "audioRef": "sent_en:Bajie waved his rake at the demon Golden Horn.",
+     "audioStart": 11.267,
+     "audioEnd": 16.086
+    },
+    {
+     "id": "ep39-map-intro-2",
+     "sourceNodeId": "n002",
+     "speaker": "narrator",
+     "textEn": "\"You'll never harm the Tang Monk!\" shouted the pig.",
+     "textZh": "\"你休想伤害唐僧!\"猪大声喊道。",
+     "audioRef": "sent_en:\"You'll never harm the Tang Monk!\" shouted the pig.",
+     "audioStart": 16.087,
+     "audioEnd": 19.47
+    }
+   ]
+  },
+  "quiz": {
+   "id": "ep39-map-quiz",
+   "lines": [
+    {
+     "id": "ep39-map-quiz-1",
+     "sourceNodeId": "n031",
+     "speaker": "narrator",
+     "textEn": "\"A tiger attacked me,\" said the old monk.",
+     "textZh": "\"一只老虎袭击了我,\"老僧说道。",
+     "audioRef": "sent_en:\"A tiger attacked me,\" said the old monk.",
+     "audioStart": 128.932,
+     "audioEnd": 132.718
+    }
+   ],
+   "question": {
+    "id": "ep039-official-quiz-001",
+    "textEn": "which is true?",
+    "textZh": "哪一个是真的？"
+   },
+   "word": {
+    "term": "wave",
+    "zh": "挥动,挥手示意(或致意)",
+    "ipa": ""
+   },
+   "options": [
+    {
+     "id": "a",
+     "textEn": "wukong knew the old man was a demon.",
+     "textZh": "悟空知道那个老人是个妖怪。",
+     "correct": true,
+     "feedback": "对了。悟空知道那个老人是个妖怪。"
+    },
+    {
+     "id": "b",
+     "textEn": "a tiger injured the tang monk's leg.",
+     "textZh": "一只老虎伤了唐僧的腿。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    },
+    {
+     "id": "c",
+     "textEn": "wujing carried the old man.",
+     "textZh": "悟净抱着老人。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    }
+   ],
+   "lessonCardId": "ep039-official-quiz-001"
+  }
+ },
+ "map": {
+  "theme": "generic",
+  "coordinateSpace": "world-normalized",
+  "worldTiles": 2,
+  "regions": {
+   "hero": 0,
+   "waves": [
+    0,
+    1
+   ],
+   "npc": {
+    "intro": 0,
+    "quiz": 1
+   },
+   "boss": 3
+  },
+  "walkable": {
+   "space": "world",
+   "x": 0.0,
+   "y": 0.16,
+   "w": 1.0,
+   "h": 0.79,
+   "rects": [
+    {
+     "x": 0.0,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.66,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    }
+   ]
+  },
+  "heroSpawn": {
+   "x": 0.06,
+   "y": 0.31
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.31,
+    "y": 0.23
+   },
+   {
+    "x": 0.38,
+    "y": 0.27
+   },
+   {
+    "x": 0.34,
+    "y": 0.33
+   },
+   {
+    "x": 0.41,
+    "y": 0.24
+   }
+  ],
+  "waveSpawns": [
+   [
+    {
+     "x": 0.31,
+     "y": 0.23
+    },
+    {
+     "x": 0.38,
+     "y": 0.27
+    },
+    {
+     "x": 0.34,
+     "y": 0.33
+    },
+    {
+     "x": 0.41,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.81,
+     "y": 0.23
+    },
+    {
+     "x": 0.88,
+     "y": 0.27
+    },
+    {
+     "x": 0.84,
+     "y": 0.33
+    },
+    {
+     "x": 0.91,
+     "y": 0.24
+    }
+   ]
+  ],
+  "orbSpawns": [
+   [
+    {
+     "x": 0.11,
+     "y": 0.25
+    },
+    {
+     "x": 0.16,
+     "y": 0.31
+    },
+    {
+     "x": 0.12,
+     "y": 0.37
+    },
+    {
+     "x": 0.18,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.61,
+     "y": 0.25
+    },
+    {
+     "x": 0.66,
+     "y": 0.31
+    },
+    {
+     "x": 0.62,
+     "y": 0.37
+    },
+    {
+     "x": 0.68,
+     "y": 0.24
+    }
+   ]
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "goldenhorn",
+    "nameZh": "金角大王",
+    "x": 0.08,
+    "y": 0.26
+   },
+   {
+    "role": "quiz",
+    "sprite": "goldenhorn",
+    "nameZh": "金角大王",
+    "x": 0.7,
+    "y": 0.39
+   }
+  ],
+  "bossSpot": {
+   "x": 0.94,
+   "y": 0.85
+  }
+ }
+}

@@ -1,0 +1,584 @@
+{
+ "schema_version": 1,
+ "ep": 28,
+ "title": {
+  "en": "Wukong Leaves His Body",
+  "zh": "西游记 第28集"
+ },
+ "collection": "c04",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "imp",
+   "nameZh": "小妖",
+   "mode": "sparring",
+   "sprite": "imp"
+  },
+  "minors": [
+   {
+    "id": "imp",
+    "nameZh": "小妖",
+    "sprite": "imp"
+   }
+  ]
+ },
+ "background": {
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep28/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "Bajie looked out the kitchen window.",
+   "textZh": "八戒望向厨房的窗外。",
+   "illustration": "assets/adv_frames/ep28/f1.jpg",
+   "sourceNodeId": "n001",
+   "audioRef": "sent_en:Bajie looked out the kitchen window."
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "Wukong and Wujing were outside talking.",
+   "textZh": "玄武与悟净正在外面交谈。",
+   "illustration": "assets/adv_frames/ep28/f2.jpg",
+   "sourceNodeId": "n002",
+   "audioRef": "sent_en:Wukong and Wujing were outside talking."
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "quietly",
+   "zh": "安静地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep28/f3.jpg"
+  },
+  {
+   "term": "valuable",
+   "zh": "1. 有用的,有价值的,(2. 值钱的,贵重的)",
+   "ipa": "ˈvæljuəbl",
+   "illustration": "assets/adv_frames/ep28/f1.jpg"
+  },
+  {
+   "term": "taste",
+   "zh": "吃起来......,尝起来......",
+   "ipa": "teɪst",
+   "illustration": "assets/adv_frames/ep28/f1.jpg"
+  },
+  {
+   "term": "belly",
+   "zh": "腹部,肚子",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep28/f3.jpg"
+  },
+  {
+   "term": "giant",
+   "zh": "巨大的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep28/f3.jpg"
+  },
+  {
+   "term": "sparkle",
+   "zh": "发光,闪耀",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep28/f0.jpg"
+  },
+  {
+   "term": "pluck",
+   "zh": "采,摘,拔",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep28/f1.jpg"
+  },
+  {
+   "term": "piece",
+   "zh": "一块,(大东西的)部分",
+   "ipa": "piːs",
+   "illustration": "assets/adv_frames/ep28/f1.jpg"
+  },
+  {
+   "term": "ashamed",
+   "zh": "羞愧的,感到难为情的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep28/f2.jpg"
+  },
+  {
+   "term": "chew",
+   "zh": "嚼",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep28/f3.jpg"
+  },
+  {
+   "term": "moment",
+   "zh": "1. (特定)时刻,瞬间,(2. 一会,片刻)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep28/f2.jpg"
+  },
+  {
+   "term": "search",
+   "zh": "(集中地)搜查,搜寻",
+   "ipa": "sɜː(r)tʃ",
+   "illustration": "assets/adv_frames/ep28/f1.jpg"
+  }
+ ],
+ "wordPool": [
+  {
+   "term": "quietly",
+   "zh": "安静地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep28/f3.jpg"
+  },
+  {
+   "term": "valuable",
+   "zh": "1. 有用的,有价值的,(2. 值钱的,贵重的)",
+   "ipa": "ˈvæljuəbl",
+   "illustration": "assets/adv_frames/ep28/f1.jpg"
+  },
+  {
+   "term": "taste",
+   "zh": "吃起来......,尝起来......",
+   "ipa": "teɪst",
+   "illustration": "assets/adv_frames/ep28/f1.jpg"
+  },
+  {
+   "term": "belly",
+   "zh": "腹部,肚子",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep28/f3.jpg"
+  },
+  {
+   "term": "giant",
+   "zh": "巨大的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep28/f3.jpg"
+  },
+  {
+   "term": "sparkle",
+   "zh": "发光,闪耀",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep28/f0.jpg"
+  },
+  {
+   "term": "pluck",
+   "zh": "采,摘,拔",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep28/f1.jpg"
+  },
+  {
+   "term": "piece",
+   "zh": "一块,(大东西的)部分",
+   "ipa": "piːs",
+   "illustration": "assets/adv_frames/ep28/f1.jpg"
+  },
+  {
+   "term": "ashamed",
+   "zh": "羞愧的,感到难为情的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep28/f2.jpg"
+  },
+  {
+   "term": "chew",
+   "zh": "嚼",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep28/f3.jpg"
+  },
+  {
+   "term": "moment",
+   "zh": "1. (特定)时刻,瞬间,(2. 一会,片刻)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep28/f2.jpg"
+  },
+  {
+   "term": "search",
+   "zh": "(集中地)搜查,搜寻",
+   "ipa": "sɜː(r)tʃ",
+   "illustration": "assets/adv_frames/ep28/f1.jpg"
+  },
+  {
+   "term": "criminal",
+   "zh": "罪犯",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep28/f2.jpg"
+  },
+  {
+   "term": "thieves",
+   "zh": "小偷 (单数:thief)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep28/f3.jpg"
+  },
+  {
+   "term": "steal",
+   "zh": "偷窃",
+   "ipa": "stiːl",
+   "illustration": "assets/adv_frames/ep28/f0.jpg"
+  },
+  {
+   "term": "wipe",
+   "zh": "擦",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep28/f3.jpg"
+  },
+  {
+   "term": "liar",
+   "zh": "说谎的人",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep28/f0.jpg"
+  },
+  {
+   "term": "repay",
+   "zh": "1. 报答,报恩, (2. 还(钱))",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep28/f1.jpg"
+  },
+  {
+   "term": "form",
+   "zh": "1. (人的)模样,形态,(2. 种类,类型,(3. 建立,形成))",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep28/f1.jpg"
+  },
+  {
+   "term": "rude",
+   "zh": "粗鲁的,无礼的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep28/f0.jpg"
+  },
+  {
+   "term": "struck",
+   "zh": "打,打击 (strike-struck)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep28/f3.jpg"
+  },
+  {
+   "term": "command",
+   "zh": "命令",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep28/f3.jpg"
+  },
+  {
+   "term": "mistake",
+   "zh": "错误,误会",
+   "ipa": "mɪˈsteɪk",
+   "illustration": "assets/adv_frames/ep28/f2.jpg"
+  },
+  {
+   "term": "count",
+   "zh": "计算,计数",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep28/f2.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "quietly",
+     "zh": "安静地",
+     "sprite": "imp"
+    },
+    {
+     "term": "valuable",
+     "zh": "1. 有用的,有价值的,(2. 值钱的,贵重的)",
+     "sprite": "imp"
+    },
+    {
+     "term": "taste",
+     "zh": "吃起来......,尝起来......",
+     "sprite": "imp"
+    },
+    {
+     "term": "belly",
+     "zh": "腹部,肚子",
+     "sprite": "imp"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "giant",
+     "zh": "巨大的",
+     "sprite": "imp"
+    },
+    {
+     "term": "sparkle",
+     "zh": "发光,闪耀",
+     "sprite": "imp"
+    },
+    {
+     "term": "pluck",
+     "zh": "采,摘,拔",
+     "sprite": "imp"
+    },
+    {
+     "term": "piece",
+     "zh": "一块,(大东西的)部分",
+     "sprite": "imp"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "ashamed",
+    "zh": "羞愧的,感到难为情的"
+   },
+   {
+    "term": "chew",
+    "zh": "嚼"
+   },
+   {
+    "term": "moment",
+    "zh": "1. (特定)时刻,瞬间,(2. 一会,片刻)"
+   },
+   {
+    "term": "search",
+    "zh": "(集中地)搜查,搜寻"
+   }
+  ],
+  "taunts": [
+   "imp.1",
+   "imp.2",
+   "imp.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=28",
+ "npcDialogue": {
+  "intro": {
+   "id": "ep28-map-intro",
+   "lines": [
+    {
+     "id": "ep28-map-intro-1",
+     "sourceNodeId": "n001",
+     "speaker": "narrator",
+     "textEn": "Bajie looked out the kitchen window.",
+     "textZh": "八戒望向厨房的窗外。",
+     "audioRef": "sent_en:Bajie looked out the kitchen window.",
+     "audioStart": 11.067,
+     "audioEnd": 18.505
+    },
+    {
+     "id": "ep28-map-intro-2",
+     "sourceNodeId": "n002",
+     "speaker": "narrator",
+     "textEn": "Wukong and Wujing were outside talking.",
+     "textZh": "玄武与悟净正在外面交谈。",
+     "audioRef": "sent_en:Wukong and Wujing were outside talking.",
+     "audioStart": 18.506,
+     "audioEnd": 22.625
+    }
+   ]
+  },
+  "quiz": {
+   "id": "ep28-map-quiz",
+   "lines": [
+    {
+     "id": "ep28-map-quiz-1",
+     "sourceNodeId": "n017",
+     "speaker": "narrator",
+     "textEn": "He plucked three pieces from the tree's branches and went back to the kitchen.",
+     "textZh": "他从树上摘下三片叶子,然后返回了厨房。",
+     "audioRef": "sent_en:He plucked three pieces from the tree's branches and went back to the kitchen.",
+     "audioStart": 77.944,
+     "audioEnd": 84.484
+    }
+   ],
+   "question": {
+    "id": "ep028-official-quiz-001",
+    "textEn": "which is true?",
+    "textZh": "哪一个是真的？"
+   },
+   "word": {
+    "term": "quietly",
+    "zh": "安静地",
+    "ipa": ""
+   },
+   "options": [
+    {
+     "id": "a",
+     "textEn": "the tree crashed down to the ground.",
+     "textZh": "那棵树倒在了地上。",
+     "correct": true,
+     "feedback": "对了。那棵树倒在了地上。"
+    },
+    {
+     "id": "b",
+     "textEn": "wukong did not eat the fruit.",
+     "textZh": "悟空没有吃那种果子。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    },
+    {
+     "id": "c",
+     "textEn": "the priests were polite to wukong.",
+     "textZh": "祭司们对悟空很礼貌。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    }
+   ],
+   "lessonCardId": "ep028-official-quiz-001"
+  }
+ },
+ "map": {
+  "theme": "generic",
+  "coordinateSpace": "world-normalized",
+  "worldTiles": 2,
+  "regions": {
+   "hero": 0,
+   "waves": [
+    0,
+    1
+   ],
+   "npc": {
+    "intro": 0,
+    "quiz": 1
+   },
+   "boss": 3
+  },
+  "walkable": {
+   "space": "world",
+   "x": 0.0,
+   "y": 0.16,
+   "w": 1.0,
+   "h": 0.79,
+   "rects": [
+    {
+     "x": 0.0,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.66,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    }
+   ]
+  },
+  "heroSpawn": {
+   "x": 0.06,
+   "y": 0.31
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.31,
+    "y": 0.23
+   },
+   {
+    "x": 0.38,
+    "y": 0.27
+   },
+   {
+    "x": 0.34,
+    "y": 0.33
+   },
+   {
+    "x": 0.41,
+    "y": 0.24
+   }
+  ],
+  "waveSpawns": [
+   [
+    {
+     "x": 0.31,
+     "y": 0.23
+    },
+    {
+     "x": 0.38,
+     "y": 0.27
+    },
+    {
+     "x": 0.34,
+     "y": 0.33
+    },
+    {
+     "x": 0.41,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.81,
+     "y": 0.23
+    },
+    {
+     "x": 0.88,
+     "y": 0.27
+    },
+    {
+     "x": 0.84,
+     "y": 0.33
+    },
+    {
+     "x": 0.91,
+     "y": 0.24
+    }
+   ]
+  ],
+  "orbSpawns": [
+   [
+    {
+     "x": 0.11,
+     "y": 0.25
+    },
+    {
+     "x": 0.16,
+     "y": 0.31
+    },
+    {
+     "x": 0.12,
+     "y": 0.37
+    },
+    {
+     "x": 0.18,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.61,
+     "y": 0.25
+    },
+    {
+     "x": 0.66,
+     "y": 0.31
+    },
+    {
+     "x": 0.62,
+     "y": 0.37
+    },
+    {
+     "x": 0.68,
+     "y": 0.24
+    }
+   ]
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "zhenyuan",
+    "nameZh": "镇元大仙",
+    "x": 0.08,
+    "y": 0.26
+   },
+   {
+    "role": "quiz",
+    "sprite": "zhenyuan",
+    "nameZh": "镇元大仙",
+    "x": 0.7,
+    "y": 0.39
+   }
+  ],
+  "bossSpot": {
+   "x": 0.94,
+   "y": 0.85
+  }
+ }
+}

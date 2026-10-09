@@ -1,0 +1,584 @@
+{
+ "schema_version": 1,
+ "ep": 52,
+ "title": {
+  "en": "An Ocean from a Vase",
+  "zh": "西游记 第52集"
+ },
+ "collection": "c07",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "redboy",
+   "nameZh": "红孩儿",
+   "mode": "sparring",
+   "sprite": "redboy"
+  },
+  "minors": [
+   {
+    "id": "imp",
+    "nameZh": "小妖",
+    "sprite": "imp"
+   }
+  ]
+ },
+ "background": {
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep52/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "Wukong and Guanyin stood on the lotus platform above Red Boy's mountain.",
+   "textZh": "悟空与观音立于红孩儿山上的莲花台上。",
+   "illustration": "assets/adv_frames/ep52/f1.jpg",
+   "sourceNodeId": "n001",
+   "audioRef": "sent_en:Wukong and Guanyin stood on the lotus platform above Red Boy's mountain."
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "\"Let's attack Red Boy now,\" said the monkey.",
+   "textZh": "\"现在让我们攻击红孩儿吧!\"猴子说道。",
+   "illustration": "assets/adv_frames/ep52/f2.jpg",
+   "sourceNodeId": "n002",
+   "audioRef": "sent_en:\"Let's attack Red Boy now,\" said the monkey."
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "harm",
+   "zh": "损伤,损害",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep52/f0.jpg"
+  },
+  {
+   "term": "local",
+   "zh": "本地的,当地的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep52/f2.jpg"
+  },
+  {
+   "term": "scurry",
+   "zh": "急匆匆地跑,急赶",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep52/f1.jpg"
+  },
+  {
+   "term": "stampede",
+   "zh": "(人群等)蜂拥",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep52/f3.jpg"
+  },
+  {
+   "term": "single",
+   "zh": "单一的,单个的",
+   "ipa": "ˈsɪŋɡ(ə)l",
+   "illustration": "assets/adv_frames/ep52/f1.jpg"
+  },
+  {
+   "term": "tip",
+   "zh": "倾斜",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep52/f2.jpg"
+  },
+  {
+   "term": "slope",
+   "zh": "山坡,斜面",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep52/f3.jpg"
+  },
+  {
+   "term": "level",
+   "zh": "1. 同高度的,(2. 水平,级别)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep52/f0.jpg"
+  },
+  {
+   "term": "water",
+   "zh": "水位(江河湖海水的高度)",
+   "ipa": "ˈwɔːtə",
+   "illustration": "assets/adv_frames/ep52/f1.jpg"
+  },
+  {
+   "term": "form",
+   "zh": "建立,形成",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep52/f1.jpg"
+  },
+  {
+   "term": "instead",
+   "zh": "作为替代",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep52/f3.jpg"
+  },
+  {
+   "term": "explode",
+   "zh": "爆发,爆炸",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep52/f2.jpg"
+  }
+ ],
+ "wordPool": [
+  {
+   "term": "harm",
+   "zh": "损伤,损害",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep52/f0.jpg"
+  },
+  {
+   "term": "local",
+   "zh": "本地的,当地的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep52/f2.jpg"
+  },
+  {
+   "term": "scurry",
+   "zh": "急匆匆地跑,急赶",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep52/f1.jpg"
+  },
+  {
+   "term": "stampede",
+   "zh": "(人群等)蜂拥",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep52/f3.jpg"
+  },
+  {
+   "term": "single",
+   "zh": "单一的,单个的",
+   "ipa": "ˈsɪŋɡ(ə)l",
+   "illustration": "assets/adv_frames/ep52/f1.jpg"
+  },
+  {
+   "term": "tip",
+   "zh": "倾斜",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep52/f2.jpg"
+  },
+  {
+   "term": "slope",
+   "zh": "山坡,斜面",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep52/f3.jpg"
+  },
+  {
+   "term": "level",
+   "zh": "1. 同高度的,(2. 水平,级别)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep52/f0.jpg"
+  },
+  {
+   "term": "water",
+   "zh": "水位(江河湖海水的高度)",
+   "ipa": "ˈwɔːtə",
+   "illustration": "assets/adv_frames/ep52/f1.jpg"
+  },
+  {
+   "term": "form",
+   "zh": "建立,形成",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep52/f1.jpg"
+  },
+  {
+   "term": "instead",
+   "zh": "作为替代",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep52/f3.jpg"
+  },
+  {
+   "term": "explode",
+   "zh": "爆发,爆炸",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep52/f2.jpg"
+  },
+  {
+   "term": "furious",
+   "zh": "非常愤怒的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep52/f3.jpg"
+  },
+  {
+   "term": "release",
+   "zh": "释放,解放",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep52/f2.jpg"
+  },
+  {
+   "term": "lance",
+   "zh": "长矛",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep52/f3.jpg"
+  },
+  {
+   "term": "stab",
+   "zh": "(用像刀一样尖锐的东西)刺",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep52/f3.jpg"
+  },
+  {
+   "term": "jab",
+   "zh": "刺,戳",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep52/f2.jpg"
+  },
+  {
+   "term": "silently",
+   "zh": "安静地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep52/f2.jpg"
+  },
+  {
+   "term": "empty",
+   "zh": "空的,未占用的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep52/f3.jpg"
+  },
+  {
+   "term": "instantly",
+   "zh": "立刻,马上",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep52/f2.jpg"
+  },
+  {
+   "term": "point",
+   "zh": "1. 尖端,(2. 指向(物品、方向等))",
+   "ipa": "pɔɪnt",
+   "illustration": "assets/adv_frames/ep52/f0.jpg"
+  },
+  {
+   "term": "on all sides",
+   "zh": "四面八方,从各个方面",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep52/f3.jpg"
+  },
+  {
+   "term": "stand",
+   "zh": "忍受",
+   "ipa": "stænd",
+   "illustration": "assets/adv_frames/ep52/f1.jpg"
+  },
+  {
+   "term": "mountain",
+   "zh": "高山",
+   "ipa": "ˈmaʊntən",
+   "illustration": "assets/adv_frames/ep52/f1.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "harm",
+     "zh": "损伤,损害",
+     "sprite": "imp"
+    },
+    {
+     "term": "local",
+     "zh": "本地的,当地的",
+     "sprite": "imp"
+    },
+    {
+     "term": "scurry",
+     "zh": "急匆匆地跑,急赶",
+     "sprite": "imp"
+    },
+    {
+     "term": "stampede",
+     "zh": "(人群等)蜂拥",
+     "sprite": "imp"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "single",
+     "zh": "单一的,单个的",
+     "sprite": "imp"
+    },
+    {
+     "term": "tip",
+     "zh": "倾斜",
+     "sprite": "imp"
+    },
+    {
+     "term": "slope",
+     "zh": "山坡,斜面",
+     "sprite": "imp"
+    },
+    {
+     "term": "level",
+     "zh": "1. 同高度的,(2. 水平,级别)",
+     "sprite": "imp"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "water",
+    "zh": "水位(江河湖海水的高度)"
+   },
+   {
+    "term": "form",
+    "zh": "建立,形成"
+   },
+   {
+    "term": "instead",
+    "zh": "作为替代"
+   },
+   {
+    "term": "explode",
+    "zh": "爆发,爆炸"
+   }
+  ],
+  "taunts": [
+   "redboy.1",
+   "redboy.2",
+   "redboy.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=52",
+ "npcDialogue": {
+  "intro": {
+   "id": "ep52-map-intro",
+   "lines": [
+    {
+     "id": "ep52-map-intro-1",
+     "sourceNodeId": "n001",
+     "speaker": "narrator",
+     "textEn": "Wukong and Guanyin stood on the lotus platform above Red Boy's mountain.",
+     "textZh": "悟空与观音立于红孩儿山上的莲花台上。",
+     "audioRef": "sent_en:Wukong and Guanyin stood on the lotus platform above Red Boy's mountain.",
+     "audioStart": 11.0,
+     "audioEnd": 16.522
+    },
+    {
+     "id": "ep52-map-intro-2",
+     "sourceNodeId": "n002",
+     "speaker": "narrator",
+     "textEn": "\"Let's attack Red Boy now,\" said the monkey.",
+     "textZh": "\"现在让我们攻击红孩儿吧!\"猴子说道。",
+     "audioRef": "sent_en:\"Let's attack Red Boy now,\" said the monkey.",
+     "audioStart": 16.523,
+     "audioEnd": 19.983
+    }
+   ]
+  },
+  "quiz": {
+   "id": "ep52-map-quiz",
+   "lines": [
+    {
+     "id": "ep52-map-quiz-1",
+     "sourceNodeId": "n061",
+     "speaker": "narrator",
+     "textEn": "Red Boy sat down on the platform.",
+     "textZh": "红孩儿坐在站台上。",
+     "audioRef": "sent_en:Red Boy sat down on the platform.",
+     "audioStart": 278.776,
+     "audioEnd": 281.718
+    }
+   ],
+   "question": {
+    "id": "ep052-official-quiz-001",
+    "textEn": "which is true?",
+    "textZh": "哪一个是真的？"
+   },
+   "word": {
+    "term": "harm",
+    "zh": "损伤,损害",
+    "ipa": ""
+   },
+   "options": [
+    {
+     "id": "a",
+     "textEn": "red boy was trapped.",
+     "textZh": "红孩儿被困住了。",
+     "correct": true,
+     "feedback": "对了。红孩儿被困住了。"
+    },
+    {
+     "id": "b",
+     "textEn": "guanyin made magic fire.",
+     "textZh": "观音点燃了魔法火。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    },
+    {
+     "id": "c",
+     "textEn": "wujing broke down the door.",
+     "textZh": "悟净撞坏了门。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    }
+   ],
+   "lessonCardId": "ep052-official-quiz-001"
+  }
+ },
+ "map": {
+  "theme": "generic",
+  "coordinateSpace": "world-normalized",
+  "worldTiles": 2,
+  "regions": {
+   "hero": 0,
+   "waves": [
+    0,
+    1
+   ],
+   "npc": {
+    "intro": 0,
+    "quiz": 1
+   },
+   "boss": 3
+  },
+  "walkable": {
+   "space": "world",
+   "x": 0.0,
+   "y": 0.16,
+   "w": 1.0,
+   "h": 0.79,
+   "rects": [
+    {
+     "x": 0.0,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.66,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    }
+   ]
+  },
+  "heroSpawn": {
+   "x": 0.06,
+   "y": 0.31
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.31,
+    "y": 0.23
+   },
+   {
+    "x": 0.38,
+    "y": 0.27
+   },
+   {
+    "x": 0.34,
+    "y": 0.33
+   },
+   {
+    "x": 0.41,
+    "y": 0.24
+   }
+  ],
+  "waveSpawns": [
+   [
+    {
+     "x": 0.31,
+     "y": 0.23
+    },
+    {
+     "x": 0.38,
+     "y": 0.27
+    },
+    {
+     "x": 0.34,
+     "y": 0.33
+    },
+    {
+     "x": 0.41,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.81,
+     "y": 0.23
+    },
+    {
+     "x": 0.88,
+     "y": 0.27
+    },
+    {
+     "x": 0.84,
+     "y": 0.33
+    },
+    {
+     "x": 0.91,
+     "y": 0.24
+    }
+   ]
+  ],
+  "orbSpawns": [
+   [
+    {
+     "x": 0.11,
+     "y": 0.25
+    },
+    {
+     "x": 0.16,
+     "y": 0.31
+    },
+    {
+     "x": 0.12,
+     "y": 0.37
+    },
+    {
+     "x": 0.18,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.61,
+     "y": 0.25
+    },
+    {
+     "x": 0.66,
+     "y": 0.31
+    },
+    {
+     "x": 0.62,
+     "y": 0.37
+    },
+    {
+     "x": 0.68,
+     "y": 0.24
+    }
+   ]
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "guanyin",
+    "nameZh": "观音",
+    "x": 0.08,
+    "y": 0.26
+   },
+   {
+    "role": "quiz",
+    "sprite": "guanyin",
+    "nameZh": "观音",
+    "x": 0.7,
+    "y": 0.39
+   }
+  ],
+  "bossSpot": {
+   "x": 0.94,
+   "y": 0.85
+  }
+ }
+}

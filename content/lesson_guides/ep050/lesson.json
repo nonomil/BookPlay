@@ -1,0 +1,2993 @@
+{
+  "schema_version": 1,
+  "episode": 50,
+  "title": {
+    "en": "Magic Fire",
+    "zh": "西游记 第50集"
+  },
+  "sources": [
+    {
+      "kind": "courseware_main_pptx",
+      "file": "G:\\Game\\BookPlay书戏\\data\\西游记课件\\3.3西游记  Journey to the West PPT课件\\050_Journey to the West 50_Magic Fire.pptx",
+      "sha256": "94201a8604a4b1d12b7ac07b7f9dd550121a128643808ce5681c096e7080b98c",
+      "pages": 20
+    },
+    {
+      "kind": "official_quiz_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+      "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929",
+      "pages": 131
+    },
+    {
+      "kind": "intensive_reader_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\02-西游记精读版台词本\\1、带标注版PDF 108集\\050 三昧真火 上.pdf",
+      "sha256": "d2dccbf7b12a7f7189ca09c7df3834aee89c6c8f016b20fc6cc392face79c959",
+      "pages": 4
+    },
+    {
+      "kind": "intensive_reader_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\02-西游记精读版台词本\\1、带标注版PDF 108集\\050 三昧真火 下.pdf",
+      "sha256": "9d6fe38bf55caba973a00cce78b0093ee97066043188dd995ecf96392f965871",
+      "pages": 3
+    },
+    {
+      "kind": "courseware_screenshots_pptx",
+      "file": "G:\\Game\\BookPlay书戏\\data\\西游记课件\\西游记-外教课动画截图\\Journey to the West 050  Magic Fire_20240114105627.pptx",
+      "sha256": "4e4238fa9a7be9b39ae68625811b688e11b12e2c9c5dabedfe3e14d849e6dd1c",
+      "pages": 44
+    }
+  ],
+  "cards": [
+    {
+      "card_id": "ep050-official-quiz-001",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 1,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "which is true?",
+        "zh": "哪一个是真的？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "wukong sent bajie to find guanyin.",
+            "zh": "悟空派八戒去找观音。"
+          },
+          {
+            "id": "b",
+            "en": "the dragon king didn't want to help.",
+            "zh": "龙王不想帮忙。"
+          },
+          {
+            "id": "c",
+            "en": "bajie breathed in a lot of smoke.",
+            "zh": "八戒吸入了大量烟雾。"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n012",
+            "quote": "When he returned, the Dragon King of the Eastern Sea was with him."
+          },
+          {
+            "node_id": "n014",
+            "quote": "\"I can summon rain clouds,\" said the Dragon King."
+          },
+          {
+            "node_id": "n015",
+            "quote": "\"Go back up the mountain, and get Red Boy to come out. As soon as he makes his fire, I'll create a huge rainstorm.\""
+          },
+          {
+            "node_id": "n031",
+            "quote": "Coughing and unable to breathe, Wukong covered his face."
+          },
+          {
+            "node_id": "n036",
+            "quote": "Finally he washed up on the riverbank, coughing and wheezing."
+          },
+          {
+            "node_id": "n044",
+            "quote": "\"I'll ask Guanyin for help,\" said Wukong, standing up."
+          },
+          {
+            "node_id": "n045",
+            "quote": "\"You rest,\" said Bajie."
+          },
+          {
+            "node_id": "n046",
+            "quote": "\"You breathed in a lot of smoke. I'll go to Guanyin.\""
+          },
+          {
+            "node_id": "n047",
+            "quote": "The monkey coughed again."
+          },
+          {
+            "node_id": "n048",
+            "quote": "\"Okay, Bajie. But go straight to Guanyin. No naps!\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 59,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep050-official-quiz-002",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 2,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "who did wukong bring to the mountain?",
+        "zh": "悟空把谁带到山上了？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "the dragon king",
+            "zh": "龙王"
+          },
+          {
+            "id": "b",
+            "en": "red boy",
+            "zh": "红孩儿"
+          },
+          {
+            "id": "c",
+            "en": "guanyin",
+            "zh": "观音"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n010",
+            "quote": "Wukong nodded. \"You two wait here. I know who can help us.\""
+          },
+          {
+            "node_id": "n011",
+            "quote": "The monkey shot into the air and flew away."
+          },
+          {
+            "node_id": "n012",
+            "quote": "When he returned, the Dragon King of the Eastern Sea was with him."
+          },
+          {
+            "node_id": "n013",
+            "quote": "Wukong introduced the Dragon King to Bajie and Wujing."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 59,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep050-official-quiz-003",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 3,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "what did the dragon king create?",
+        "zh": "龙王创造了什么？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "a huge rainstorm",
+            "zh": "一场大暴雨"
+          },
+          {
+            "id": "b",
+            "en": "a huge sandstorm",
+            "zh": "一场巨大的沙尘暴"
+          },
+          {
+            "id": "c",
+            "en": "a huge snowstorm",
+            "zh": "一场大雪"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n015",
+            "quote": "\"Go back up the mountain, and get Red Boy to come out. As soon as he makes his fire, I'll create a huge rainstorm.\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 59,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep050-official-quiz-004",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 4,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "what did water do to red boy's fire?",
+        "zh": "水对红孩儿的火做了什么？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "make it stronger",
+            "zh": "让它更强"
+          },
+          {
+            "id": "b",
+            "en": "put it out",
+            "zh": "把它熄掉"
+          },
+          {
+            "id": "c",
+            "en": "make it smaller",
+            "zh": "把它做小"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n027",
+            "quote": "Rain poured down."
+          },
+          {
+            "node_id": "n028",
+            "quote": "The fire, however, didn't go out."
+          },
+          {
+            "node_id": "n029",
+            "quote": "Instead it grew—bigger and bigger."
+          },
+          {
+            "node_id": "n041",
+            "quote": "\"That fire is no ordinary fire. The water made it worse.\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 59,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep050-official-quiz-005",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 5,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "why did red boy disguise himself as guanyin?",
+        "zh": "红孩儿为什么要伪装成观音？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "to trick bajie",
+            "zh": "欺骗八戒"
+          },
+          {
+            "id": "b",
+            "en": "to talk to wukong",
+            "zh": "和悟空说话"
+          },
+          {
+            "id": "c",
+            "en": "to eat the tang monk",
+            "zh": "吃唐僧"
+          }
+        ],
+        "answer": "b",
+        "answer_evidence": [
+          {
+            "node_id": "n050",
+            "quote": "\"My fire was too powerful for Sun Wukong and his friends,\" he said to himself."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 59,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep050-vocab-001",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 101,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "fire",
+        "zh": "炉火 v.解雇,开枪"
+      },
+      "payload": {
+        "term": "fire",
+        "ipa": "ˈfaɪə(r)",
+        "pos": "n.",
+        "def": "n.[U]火[C,U]火灾[C]炉火 v.解雇,开枪",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "050 三昧真火 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "d2dccbf7b12a7f7189ca09c7df3834aee89c6c8f016b20fc6cc392face79c959"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "050 三昧真火 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "9d6fe38bf55caba973a00cce78b0093ee97066043188dd995ecf96392f965871"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep050-vocab-002",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 102,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "near",
+        "zh": "在附近"
+      },
+      "payload": {
+        "term": "near",
+        "ipa": "nɪə",
+        "pos": "prep.",
+        "def": "在附近",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ],
+        "gloss": "在附近"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "050 三昧真火 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "d2dccbf7b12a7f7189ca09c7df3834aee89c6c8f016b20fc6cc392face79c959"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep050-vocab-003",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 103,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "mountain",
+        "zh": "高山"
+      },
+      "payload": {
+        "term": "mountain",
+        "ipa": "ˈmaʊntən",
+        "pos": "n.",
+        "def": "n.[C]高山",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          1,
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "050 三昧真火 上.pdf",
+          "half": "up",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "d2dccbf7b12a7f7189ca09c7df3834aee89c6c8f016b20fc6cc392face79c959"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "050 三昧真火 下.pdf",
+          "half": "down",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "9d6fe38bf55caba973a00cce78b0093ee97066043188dd995ecf96392f965871"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep050-vocab-004",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 104,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "die down",
+        "zh": "逐渐变弱;逐渐消失"
+      },
+      "payload": {
+        "term": "die down",
+        "ipa": "",
+        "pos": "",
+        "def": "逐渐变弱;逐渐消失",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "050 三昧真火 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "d2dccbf7b12a7f7189ca09c7df3834aee89c6c8f016b20fc6cc392face79c959"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep050-vocab-005",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 105,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "smoke",
+        "zh": "吸烟"
+      },
+      "payload": {
+        "term": "smoke",
+        "ipa": "sməʊk",
+        "pos": "v.",
+        "def": "v.吸烟,冒烟 n.[C]烟[C]吸烟",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          1,
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "050 三昧真火 上.pdf",
+          "half": "up",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "d2dccbf7b12a7f7189ca09c7df3834aee89c6c8f016b20fc6cc392face79c959"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "050 三昧真火 下.pdf",
+          "half": "down",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "9d6fe38bf55caba973a00cce78b0093ee97066043188dd995ecf96392f965871"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep050-vocab-006",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 106,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "again",
+        "zh": "adv.再一次,又一次"
+      },
+      "payload": {
+        "term": "again",
+        "ipa": "əˈɡen",
+        "pos": "adv.",
+        "def": "adv.再一次,又一次",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "050 三昧真火 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "d2dccbf7b12a7f7189ca09c7df3834aee89c6c8f016b20fc6cc392face79c959"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep050-vocab-007",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 107,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "water",
+        "zh": "(某一江、河、湖、 海的)水域 vt.给......浇水"
+      },
+      "payload": {
+        "term": "water",
+        "ipa": "ˈwɔː tə",
+        "pos": "n.",
+        "def": "n.[U]水[pl.](某一江、河、湖、 海的)水域 vt.给......浇水",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "050 三昧真火 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "d2dccbf7b12a7f7189ca09c7df3834aee89c6c8f016b20fc6cc392face79c959"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep050-vocab-008",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 108,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "nod",
+        "zh": "点头"
+      },
+      "payload": {
+        "term": "nod",
+        "ipa": "nɒd",
+        "pos": "v.",
+        "def": "v.点头 n.[C]点头",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "050 三昧真火 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "d2dccbf7b12a7f7189ca09c7df3834aee89c6c8f016b20fc6cc392face79c959"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep050-vocab-009",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 109,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "wait",
+        "zh": "v.等待,等候"
+      },
+      "payload": {
+        "term": "wait",
+        "ipa": "weɪt",
+        "pos": "v.",
+        "def": "v.等待,等候",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "050 三昧真火 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "d2dccbf7b12a7f7189ca09c7df3834aee89c6c8f016b20fc6cc392face79c959"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep050-vocab-010",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 110,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "help",
+        "zh": "有帮助的 人或物 v.帮助,援助"
+      },
+      "payload": {
+        "term": "help",
+        "ipa": "help",
+        "pos": "n.",
+        "def": "n.[U]帮助,援助[sing.]有帮助的 人或物 v.帮助,援助",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "050 三昧真火 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "d2dccbf7b12a7f7189ca09c7df3834aee89c6c8f016b20fc6cc392face79c959"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "050 三昧真火 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "9d6fe38bf55caba973a00cce78b0093ee97066043188dd995ecf96392f965871"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep050-vocab-011",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 111,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "monkey",
+        "zh": "猴子"
+      },
+      "payload": {
+        "term": "monkey",
+        "ipa": "ˈmʌŋki",
+        "pos": "n.",
+        "def": "n.[C]猴子",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "050 三昧真火 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "d2dccbf7b12a7f7189ca09c7df3834aee89c6c8f016b20fc6cc392face79c959"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "050 三昧真火 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "9d6fe38bf55caba973a00cce78b0093ee97066043188dd995ecf96392f965871"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep050-vocab-012",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 112,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "shoot",
+        "zh": "v.射击,发射;拍摄 n.幼苗"
+      },
+      "payload": {
+        "term": "shoot",
+        "ipa": "ʃuː t",
+        "pos": "v.",
+        "def": "v.射击,发射;拍摄 n.幼苗",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "050 三昧真火 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "d2dccbf7b12a7f7189ca09c7df3834aee89c6c8f016b20fc6cc392face79c959"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep050-vocab-013",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 113,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "fly",
+        "zh": "苍蝇"
+      },
+      "payload": {
+        "term": "fly",
+        "ipa": "flaɪ",
+        "pos": "v.",
+        "def": "v.飞,驾驶(飞机等);乘飞机, (旗)飘扬 n.[C]苍蝇",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "050 三昧真火 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "d2dccbf7b12a7f7189ca09c7df3834aee89c6c8f016b20fc6cc392face79c959"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep050-vocab-014",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 114,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "return",
+        "zh": "返回"
+      },
+      "payload": {
+        "term": "return",
+        "ipa": "rɪˈtɜː(r)n",
+        "pos": "vt.",
+        "def": "vt.归还 vi.回来,返回 n.[C,U]回报[sing.]返回",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "050 三昧真火 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "d2dccbf7b12a7f7189ca09c7df3834aee89c6c8f016b20fc6cc392face79c959"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep050-vocab-015",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 115,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "introduce",
+        "zh": "vt.介绍,引荐;引进"
+      },
+      "payload": {
+        "term": "introduce",
+        "ipa": "ˌɪntrəˈdjuː s",
+        "pos": "vt.",
+        "def": "vt.介绍,引荐;引进",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "050 三昧真火 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "d2dccbf7b12a7f7189ca09c7df3834aee89c6c8f016b20fc6cc392face79c959"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep050-vocab-016",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 116,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "create",
+        "zh": "vt.创造,创建,创作,引起,造 成"
+      },
+      "payload": {
+        "term": "create",
+        "ipa": "kriˈeɪt",
+        "pos": "vt.",
+        "def": "vt.创造,创建,创作,引起,造 成",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "050 三昧真火 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "d2dccbf7b12a7f7189ca09c7df3834aee89c6c8f016b20fc6cc392face79c959"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep050-vocab-017",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 117,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "huge",
+        "zh": "adj.巨大的,极多的"
+      },
+      "payload": {
+        "term": "huge",
+        "ipa": "hjuːdʒ",
+        "pos": "adj.",
+        "def": "adj.巨大的,极多的",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "050 三昧真火 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "d2dccbf7b12a7f7189ca09c7df3834aee89c6c8f016b20fc6cc392face79c959"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep050-vocab-018",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 118,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "king",
+        "zh": "君主,国王"
+      },
+      "payload": {
+        "term": "king",
+        "ipa": "kɪŋ",
+        "pos": "n.",
+        "def": "n.[C]君主,国王",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "050 三昧真火 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "d2dccbf7b12a7f7189ca09c7df3834aee89c6c8f016b20fc6cc392face79c959"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep050-vocab-019",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 119,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "sky",
+        "zh": "天空"
+      },
+      "payload": {
+        "term": "sky",
+        "ipa": "skaɪ",
+        "pos": "n.",
+        "def": "n.[C,U]天空",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "050 三昧真火 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "d2dccbf7b12a7f7189ca09c7df3834aee89c6c8f016b20fc6cc392face79c959"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "050 三昧真火 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "9d6fe38bf55caba973a00cce78b0093ee97066043188dd995ecf96392f965871"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep050-vocab-020",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 120,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "open",
+        "zh": "户外,公开"
+      },
+      "payload": {
+        "term": "open",
+        "ipa": "ˈəʊpən",
+        "pos": "v.",
+        "def": "v.开,打开,开业 adj.敞开的,开阔的 n.[sing.]户外,公开",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "050 三昧真火 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "d2dccbf7b12a7f7189ca09c7df3834aee89c6c8f016b20fc6cc392face79c959"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep050-vocab-021",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 121,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "pound",
+        "zh": "磅,英镑"
+      },
+      "payload": {
+        "term": "pound",
+        "ipa": "paʊnd",
+        "pos": "n.",
+        "def": "n.[C]磅,英镑",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "050 三昧真火 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "d2dccbf7b12a7f7189ca09c7df3834aee89c6c8f016b20fc6cc392face79c959"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep050-vocab-022",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 122,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "door",
+        "zh": "门"
+      },
+      "payload": {
+        "term": "door",
+        "ipa": "dɔː(r)",
+        "pos": "n.",
+        "def": "门",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ],
+        "gloss": "门"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "050 三昧真火 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "d2dccbf7b12a7f7189ca09c7df3834aee89c6c8f016b20fc6cc392face79c959"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep050-vocab-023",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 123,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "big",
+        "zh": "adj.大的,重要的"
+      },
+      "payload": {
+        "term": "big",
+        "ipa": "bɪɡ",
+        "pos": "adj.",
+        "def": "adj.大的,重要的",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "050 三昧真火 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "d2dccbf7b12a7f7189ca09c7df3834aee89c6c8f016b20fc6cc392face79c959"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep050-vocab-024",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 124,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "thick",
+        "zh": "adj.厚的,浓的"
+      },
+      "payload": {
+        "term": "thick",
+        "ipa": "θɪk",
+        "pos": "adj.",
+        "def": "adj.厚的,浓的",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "050 三昧真火 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "d2dccbf7b12a7f7189ca09c7df3834aee89c6c8f016b20fc6cc392face79c959"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep050-vocab-025",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 125,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "cover",
+        "zh": "覆盖物,盖子,封面"
+      },
+      "payload": {
+        "term": "cover",
+        "ipa": "ˈkʌvə(r)",
+        "pos": "vt.",
+        "def": "vt.遮盖,覆盖;占(一片面积) n.[C]覆盖物,盖子,封面",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "050 三昧真火 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "d2dccbf7b12a7f7189ca09c7df3834aee89c6c8f016b20fc6cc392face79c959"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep050-vocab-026",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 126,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "run",
+        "zh": "跑,跑步"
+      },
+      "payload": {
+        "term": "run",
+        "ipa": "rʌn",
+        "pos": "vi.",
+        "def": "vi.跑,奔 vt.经营 n.[C]跑,跑步",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "050 三昧真火 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "d2dccbf7b12a7f7189ca09c7df3834aee89c6c8f016b20fc6cc392face79c959"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep050-vocab-027",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 127,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "trip",
+        "zh": "旅游,旅行 vi.绊,绊倒"
+      },
+      "payload": {
+        "term": "trip",
+        "ipa": "trɪp",
+        "pos": "n.",
+        "def": "n.[C]旅游,旅行 vi.绊,绊倒",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "050 三昧真火 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "d2dccbf7b12a7f7189ca09c7df3834aee89c6c8f016b20fc6cc392face79c959"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep050-vocab-028",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 128,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "land",
+        "zh": "国家 v.降落,着陆"
+      },
+      "payload": {
+        "term": "land",
+        "ipa": "lænd",
+        "pos": "n.",
+        "def": "n.[U]大陆,土地 [C]国家 v.降落,着陆",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "050 三昧真火 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "9d6fe38bf55caba973a00cce78b0093ee97066043188dd995ecf96392f965871"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep050-vocab-029",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 129,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "river",
+        "zh": "河,江"
+      },
+      "payload": {
+        "term": "river",
+        "ipa": "ˈrɪvə(r)",
+        "pos": "n.",
+        "def": "n.[C]河,江",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "050 三昧真火 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "9d6fe38bf55caba973a00cce78b0093ee97066043188dd995ecf96392f965871"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep050-vocab-030",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 130,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "wash",
+        "zh": "v.洗;(被)冲走"
+      },
+      "payload": {
+        "term": "wash",
+        "ipa": "wɒʃ",
+        "pos": "v.",
+        "def": "v.洗;(被)冲走",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "050 三昧真火 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "9d6fe38bf55caba973a00cce78b0093ee97066043188dd995ecf96392f965871"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep050-vocab-031",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 131,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "cough",
+        "zh": "n./vi咳嗽"
+      },
+      "payload": {
+        "term": "cough",
+        "ipa": "kɒf",
+        "pos": "n.",
+        "def": "n./vi咳嗽",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "050 三昧真火 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "9d6fe38bf55caba973a00cce78b0093ee97066043188dd995ecf96392f965871"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep050-vocab-032",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 132,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "rush",
+        "zh": "迅速移动,仓促,急 促"
+      },
+      "payload": {
+        "term": "rush",
+        "ipa": "rʌʃ",
+        "pos": "v.",
+        "def": "v./n.[sing.]迅速移动,仓促,急 促",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "050 三昧真火 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "9d6fe38bf55caba973a00cce78b0093ee97066043188dd995ecf96392f965871"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep050-vocab-033",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 133,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "ask",
+        "zh": "v.请求,要求,询问"
+      },
+      "payload": {
+        "term": "ask",
+        "ipa": "ɑːsk",
+        "pos": "v.",
+        "def": "v.请求,要求,询问",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "050 三昧真火 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "9d6fe38bf55caba973a00cce78b0093ee97066043188dd995ecf96392f965871"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep050-vocab-034",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 134,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "think",
+        "zh": "v.认为,想。思考"
+      },
+      "payload": {
+        "term": "think",
+        "ipa": "θɪŋk",
+        "pos": "v.",
+        "def": "v.认为,想。思考",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "050 三昧真火 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "9d6fe38bf55caba973a00cce78b0093ee97066043188dd995ecf96392f965871"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep050-vocab-035",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 135,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "bad",
+        "zh": "adj.坏的,糟的,严重的"
+      },
+      "payload": {
+        "term": "bad",
+        "ipa": "bæd",
+        "pos": "adj.",
+        "def": "adj.坏的,糟的,严重的",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "050 三昧真火 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "9d6fe38bf55caba973a00cce78b0093ee97066043188dd995ecf96392f965871"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep050-vocab-036",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 136,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "magic",
+        "zh": "魔术;魔法,魔力,魅力"
+      },
+      "payload": {
+        "term": "magic",
+        "ipa": "ˈmædʒɪk",
+        "pos": "adj.",
+        "def": "adj.有魔力的,有神奇力量的 n.[U]魔术;魔法,魔力,魅力",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "050 三昧真火 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "9d6fe38bf55caba973a00cce78b0093ee97066043188dd995ecf96392f965871"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep050-vocab-037",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 137,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "stand",
+        "zh": "v.忍受,站立 觉!”"
+      },
+      "payload": {
+        "term": "stand",
+        "ipa": "stænd",
+        "pos": "v.",
+        "def": "v.忍受,站立 觉!”",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "050 三昧真火 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "9d6fe38bf55caba973a00cce78b0093ee97066043188dd995ecf96392f965871"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep050-vocab-038",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 138,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "rest",
+        "zh": "剩余部分"
+      },
+      "payload": {
+        "term": "rest",
+        "ipa": "rest",
+        "pos": "v.",
+        "def": "v./n.[C,U]休息 n.[sing.]剩余部分",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "050 三昧真火 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "9d6fe38bf55caba973a00cce78b0093ee97066043188dd995ecf96392f965871"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep050-vocab-039",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 139,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "straight",
+        "zh": "adj.直的;直率的,连续的 adv.笔直地,直接,径直;连续 不断地"
+      },
+      "payload": {
+        "term": "straight",
+        "ipa": "streɪt",
+        "pos": "adj.",
+        "def": "adj.直的;直率的,连续的 adv.笔直地,直接,径直;连续 不断地",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "050 三昧真火 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "9d6fe38bf55caba973a00cce78b0093ee97066043188dd995ecf96392f965871"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep050-vocab-040",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 140,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "must",
+        "zh": "modal v.必须,一定"
+      },
+      "payload": {
+        "term": "must",
+        "ipa": "mʌst",
+        "pos": "",
+        "def": "modal v.必须,一定",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "050 三昧真火 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "9d6fe38bf55caba973a00cce78b0093ee97066043188dd995ecf96392f965871"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep050-vocab-041",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 141,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "dead",
+        "zh": "adj.死的,失去生命的;无生命 的,不再通用的,完全的"
+      },
+      "payload": {
+        "term": "dead",
+        "ipa": "ded",
+        "pos": "adj.",
+        "def": "adj.死的,失去生命的;无生命 的,不再通用的,完全的",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "050 三昧真火 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "9d6fe38bf55caba973a00cce78b0093ee97066043188dd995ecf96392f965871"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep050-vocab-042",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 142,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "hungry",
+        "zh": "adj.饥饿的;渴望得到"
+      },
+      "payload": {
+        "term": "hungry",
+        "ipa": "ˈhʌŋɡri",
+        "pos": "adj.",
+        "def": "adj.饥饿的;渴望得到",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "050 三昧真火 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "9d6fe38bf55caba973a00cce78b0093ee97066043188dd995ecf96392f965871"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep050-vocab-043",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 143,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "cook",
+        "zh": "厨师"
+      },
+      "payload": {
+        "term": "cook",
+        "ipa": "kʊk",
+        "pos": "v.",
+        "def": "v.做饭,烹饪,煮 n.[C]厨师",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "050 三昧真火 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "9d6fe38bf55caba973a00cce78b0093ee97066043188dd995ecf96392f965871"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep050-vocab-044",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 144,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "pig",
+        "zh": "猪"
+      },
+      "payload": {
+        "term": "pig",
+        "ipa": "pɪɡ",
+        "pos": "n.",
+        "def": "n.[C]猪",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "050 三昧真火 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "9d6fe38bf55caba973a00cce78b0093ee97066043188dd995ecf96392f965871"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep050-vocab-045",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 145,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "head",
+        "zh": "队首 vi.朝(某方向)行进"
+      },
+      "payload": {
+        "term": "head",
+        "ipa": "hed",
+        "pos": "n.",
+        "def": "n.[C]头(部)[C,U]负责人 [sing.]队首 vi.朝(某方向)行进",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "050 三昧真火 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "9d6fe38bf55caba973a00cce78b0093ee97066043188dd995ecf96392f965871"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep050-vocab-046",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 146,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "south",
+        "zh": "adj.南方的 n.南部,南,南方 adv.向南,朝南"
+      },
+      "payload": {
+        "term": "south",
+        "ipa": "saʊθ",
+        "pos": "adj.",
+        "def": "adj.南方的 n.南部,南,南方 adv.向南,朝南",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "050 三昧真火 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "9d6fe38bf55caba973a00cce78b0093ee97066043188dd995ecf96392f965871"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep050-vocab-047",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 147,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "wonder",
+        "zh": "惊讶"
+      },
+      "payload": {
+        "term": "wonder",
+        "ipa": "ˈwʌndə(r)",
+        "pos": "v.",
+        "def": "v.想知道,琢磨;非常惊讶 n.[C]奇迹,奇观 [U]惊讶",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "050 三昧真火 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "9d6fe38bf55caba973a00cce78b0093ee97066043188dd995ecf96392f965871"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep050-vocab-048",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 148,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "quick",
+        "zh": "adj.快的,迅速的,敏捷的"
+      },
+      "payload": {
+        "term": "quick",
+        "ipa": "kwɪk",
+        "pos": "adj.",
+        "def": "adj.快的,迅速的,敏捷的",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "050 三昧真火 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "9d6fe38bf55caba973a00cce78b0093ee97066043188dd995ecf96392f965871"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep050-vocab-049",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 149,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "spell",
+        "zh": "咒语"
+      },
+      "payload": {
+        "term": "spell",
+        "ipa": "spel",
+        "pos": "v.",
+        "def": "v.用字母拼,拼写 n.[C]咒语",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "050 三昧真火 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "9d6fe38bf55caba973a00cce78b0093ee97066043188dd995ecf96392f965871"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep050-vocab-050",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 150,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "light",
+        "zh": "电灯 adj.轻的,轻柔的,程度轻的,少 量的,浅色的 v.点燃,照亮"
+      },
+      "payload": {
+        "term": "light",
+        "ipa": "laɪt",
+        "pos": "n.",
+        "def": "n.[U]光,光线,光亮;[C]电灯 adj.轻的,轻柔的,程度轻的,少 量的,浅色的 v.点燃,照亮",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "050 三昧真火 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "9d6fe38bf55caba973a00cce78b0093ee97066043188dd995ecf96392f965871"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep050-vocab-051",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 151,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "around",
+        "zh": "在周围"
+      },
+      "payload": {
+        "term": "around",
+        "ipa": "əˈraʊnd",
+        "pos": "",
+        "def": "在周围",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ],
+        "gloss": "在周围"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "050 三昧真火 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "9d6fe38bf55caba973a00cce78b0093ee97066043188dd995ecf96392f965871"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep050-vocab-052",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 152,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "look",
+        "zh": "看,注视,外表,表情"
+      },
+      "payload": {
+        "term": "look",
+        "ipa": "lʊk",
+        "pos": "vi.",
+        "def": "vi.看 v.-link.看上去 n.[C]看,注视,外表,表情",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "050 三昧真火 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "9d6fe38bf55caba973a00cce78b0093ee97066043188dd995ecf96392f965871"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep050-vocab-053",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 153,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "exactly",
+        "zh": "adv.确切地,精确地,完全正确"
+      },
+      "payload": {
+        "term": "exactly",
+        "ipa": "ɪɡˈzæktli",
+        "pos": "adv.",
+        "def": "adv.确切地,精确地,完全正确",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "050 三昧真火 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "9d6fe38bf55caba973a00cce78b0093ee97066043188dd995ecf96392f965871"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep050-vocab-054",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 154,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "like",
+        "zh": "喜好,爱好 conj.像......一样,如同"
+      },
+      "payload": {
+        "term": "like",
+        "ipa": "laɪk",
+        "pos": "vt.",
+        "def": "vt.喜欢,喜爱 prep.像,怎么样,例如 n.[pl.]喜好,爱好 conj.像......一样,如同",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "050 三昧真火 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "9d6fe38bf55caba973a00cce78b0093ee97066043188dd995ecf96392f965871"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep050-vocab-055",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 155,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "cloud",
+        "zh": "云,云朵"
+      },
+      "payload": {
+        "term": "cloud",
+        "ipa": "klaʊd",
+        "pos": "n.",
+        "def": "n.[C,U]云,云朵",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "050 三昧真火 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "9d6fe38bf55caba973a00cce78b0093ee97066043188dd995ecf96392f965871"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep050-vocab-056",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 156,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "come",
+        "zh": "vi.来,来到 v.-link.成为,变成,变得"
+      },
+      "payload": {
+        "term": "come",
+        "ipa": "kʌm",
+        "pos": "vi.",
+        "def": "vi.来,来到 v.-link.成为,变成,变得",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "050 三昧真火 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "9d6fe38bf55caba973a00cce78b0093ee97066043188dd995ecf96392f965871"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep050-vocab-057",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 157,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "toward",
+        "zh": "prep.朝,向,对着"
+      },
+      "payload": {
+        "term": "toward",
+        "ipa": "təˈwɔː d",
+        "pos": "prep.",
+        "def": "prep.朝,向,对着",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "050 三昧真火 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "9d6fe38bf55caba973a00cce78b0093ee97066043188dd995ecf96392f965871"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep050-vocab-058",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 158,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "smile",
+        "zh": "笑,微笑"
+      },
+      "payload": {
+        "term": "smile",
+        "ipa": "smaɪ",
+        "pos": "vi.",
+        "def": "vi./n.[C]笑,微笑",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "050 三昧真火 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "9d6fe38bf55caba973a00cce78b0093ee97066043188dd995ecf96392f965871"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep050-vocab-059",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 159,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "surprise",
+        "zh": "意 想不到的事 vt.使吃惊"
+      },
+      "payload": {
+        "term": "surprise",
+        "ipa": "sə(r)ˈpraɪz",
+        "pos": "n.",
+        "def": "n.[C,U]惊奇,惊讶,以外[C]意 想不到的事 vt.使吃惊",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "050 三昧真火 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "9d6fe38bf55caba973a00cce78b0093ee97066043188dd995ecf96392f965871"
+        }
+      ],
+      "review_status": "machine_verified"
+    }
+  ],
+  "teacher_guide": null,
+  "review": {
+    "status": "draft",
+    "reviewed_at": null,
+    "card_stats": {
+      "total": 64,
+      "sentence_choice": 5,
+      "word_review": 59,
+      "machine_verified": 61,
+      "assistant_reviewed": 3,
+      "verified": 64,
+      "needs_review": 0
+    }
+  },
+  "generated_at": "2026-08-31T04:49:41.913099+00:00"
+}

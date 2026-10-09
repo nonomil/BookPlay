@@ -1,0 +1,584 @@
+{
+ "schema_version": 1,
+ "ep": 31,
+ "title": {
+  "en": "Guanyin's Vase",
+  "zh": "西游记 第31集"
+ },
+ "collection": "c04",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "guanyin",
+   "nameZh": "观音",
+   "mode": "sparring",
+   "sprite": "guanyin"
+  },
+  "minors": [
+   {
+    "id": "imp",
+    "nameZh": "小妖",
+    "sprite": "imp"
+   }
+  ]
+ },
+ "background": {
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep31/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "The two priests pushed the Tang Monk toward the enormous frying pan.",
+   "textZh": "两位神父将唐僧推向那块巨大的煎锅。",
+   "illustration": "assets/adv_frames/ep31/f1.jpg",
+   "sourceNodeId": "n001",
+   "audioRef": "sent_en:The two priests pushed the Tang Monk toward the enormous frying pan."
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "\"Stop!\" cried Wukong.",
+   "textZh": "\"停!\"悟空喊道。",
+   "illustration": "assets/adv_frames/ep31/f2.jpg",
+   "sourceNodeId": "n002",
+   "audioRef": "sent_en:\"Stop!\" cried Wukong."
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "vase",
+   "zh": "花瓶",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep31/f3.jpg"
+  },
+  {
+   "term": "appear",
+   "zh": "出现,显露",
+   "ipa": "əˈpɪə(r)",
+   "illustration": "assets/adv_frames/ep31/f1.jpg"
+  },
+  {
+   "term": "nasty",
+   "zh": "龌龊的,使人难受的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep31/f0.jpg"
+  },
+  {
+   "term": "harm",
+   "zh": "损伤,损害",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep31/f3.jpg"
+  },
+  {
+   "term": "fix",
+   "zh": "修理",
+   "ipa": "fɪks",
+   "illustration": "assets/adv_frames/ep31/f1.jpg"
+  },
+  {
+   "term": "lying",
+   "zh": "说谎 (lie的现在分词,lie+ing=lying)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep31/f1.jpg"
+  },
+  {
+   "term": "doomed",
+   "zh": "注定失败的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep31/f3.jpg"
+  },
+  {
+   "term": "meditate",
+   "zh": "冥想,沉思",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep31/f1.jpg"
+  },
+  {
+   "term": "suspicious",
+   "zh": "可疑的,容易引起怀疑的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep31/f0.jpg"
+  },
+  {
+   "term": "rare",
+   "zh": "稀有的,罕见的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep31/f3.jpg"
+  },
+  {
+   "term": "shrug",
+   "zh": "耸肩",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep31/f0.jpg"
+  },
+  {
+   "term": "learn",
+   "zh": "学习,学会",
+   "ipa": "lɜː(r)n",
+   "illustration": "assets/adv_frames/ep31/f1.jpg"
+  }
+ ],
+ "wordPool": [
+  {
+   "term": "vase",
+   "zh": "花瓶",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep31/f3.jpg"
+  },
+  {
+   "term": "appear",
+   "zh": "出现,显露",
+   "ipa": "əˈpɪə(r)",
+   "illustration": "assets/adv_frames/ep31/f1.jpg"
+  },
+  {
+   "term": "nasty",
+   "zh": "龌龊的,使人难受的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep31/f0.jpg"
+  },
+  {
+   "term": "harm",
+   "zh": "损伤,损害",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep31/f3.jpg"
+  },
+  {
+   "term": "fix",
+   "zh": "修理",
+   "ipa": "fɪks",
+   "illustration": "assets/adv_frames/ep31/f1.jpg"
+  },
+  {
+   "term": "lying",
+   "zh": "说谎 (lie的现在分词,lie+ing=lying)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep31/f1.jpg"
+  },
+  {
+   "term": "doomed",
+   "zh": "注定失败的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep31/f3.jpg"
+  },
+  {
+   "term": "meditate",
+   "zh": "冥想,沉思",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep31/f1.jpg"
+  },
+  {
+   "term": "suspicious",
+   "zh": "可疑的,容易引起怀疑的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep31/f0.jpg"
+  },
+  {
+   "term": "rare",
+   "zh": "稀有的,罕见的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep31/f3.jpg"
+  },
+  {
+   "term": "shrug",
+   "zh": "耸肩",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep31/f0.jpg"
+  },
+  {
+   "term": "learn",
+   "zh": "学习,学会",
+   "ipa": "lɜː(r)n",
+   "illustration": "assets/adv_frames/ep31/f1.jpg"
+  },
+  {
+   "term": "control",
+   "zh": "1. 克制,抑制(情感等),(2. 控制,支配,管理,3. (机器的)操纵装置)",
+   "ipa": "kənˈtrəʊl",
+   "illustration": "assets/adv_frames/ep31/f1.jpg"
+  },
+  {
+   "term": "anger",
+   "zh": "怒气",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep31/f1.jpg"
+  },
+  {
+   "term": "shelf",
+   "zh": "架子",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep31/f3.jpg"
+  },
+  {
+   "term": "dew",
+   "zh": "露水",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep31/f0.jpg"
+  },
+  {
+   "term": "spirit",
+   "zh": "1. 精神,(2. 生气,活力,3. 精灵,妖精)",
+   "ipa": "ˈspɪrɪt",
+   "illustration": "assets/adv_frames/ep31/f1.jpg"
+  },
+  {
+   "term": "bring back to",
+   "zh": "使复活",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep31/f1.jpg"
+  },
+  {
+   "term": "a short",
+   "zh": "一会儿",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep31/f2.jpg"
+  },
+  {
+   "term": "droplet",
+   "zh": "(水等液体的)小滴",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep31/f1.jpg"
+  },
+  {
+   "term": "assure",
+   "zh": "向...保证,使确信",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep31/f2.jpg"
+  },
+  {
+   "term": "sniff",
+   "zh": "(抽动鼻子)闻,嗅",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep31/f3.jpg"
+  },
+  {
+   "term": "approach",
+   "zh": "接近,靠近",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep31/f0.jpg"
+  },
+  {
+   "term": "push",
+   "zh": "鞭策",
+   "ipa": "pʊʃ",
+   "illustration": "assets/adv_frames/ep31/f1.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "vase",
+     "zh": "花瓶",
+     "sprite": "imp"
+    },
+    {
+     "term": "appear",
+     "zh": "出现,显露",
+     "sprite": "imp"
+    },
+    {
+     "term": "nasty",
+     "zh": "龌龊的,使人难受的",
+     "sprite": "imp"
+    },
+    {
+     "term": "harm",
+     "zh": "损伤,损害",
+     "sprite": "imp"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "fix",
+     "zh": "修理",
+     "sprite": "imp"
+    },
+    {
+     "term": "lying",
+     "zh": "说谎 (lie的现在分词,lie+ing=lying)",
+     "sprite": "imp"
+    },
+    {
+     "term": "doomed",
+     "zh": "注定失败的",
+     "sprite": "imp"
+    },
+    {
+     "term": "meditate",
+     "zh": "冥想,沉思",
+     "sprite": "imp"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "suspicious",
+    "zh": "可疑的,容易引起怀疑的"
+   },
+   {
+    "term": "rare",
+    "zh": "稀有的,罕见的"
+   },
+   {
+    "term": "shrug",
+    "zh": "耸肩"
+   },
+   {
+    "term": "learn",
+    "zh": "学习,学会"
+   }
+  ],
+  "taunts": [
+   "guanyin.1",
+   "guanyin.2",
+   "guanyin.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=31",
+ "npcDialogue": {
+  "intro": {
+   "id": "ep31-map-intro",
+   "lines": [
+    {
+     "id": "ep31-map-intro-1",
+     "sourceNodeId": "n001",
+     "speaker": "narrator",
+     "textEn": "The two priests pushed the Tang Monk toward the enormous frying pan.",
+     "textZh": "两位神父将唐僧推向那块巨大的煎锅。",
+     "audioRef": "sent_en:The two priests pushed the Tang Monk toward the enormous frying pan.",
+     "audioStart": 11.267,
+     "audioEnd": 24.177
+    },
+    {
+     "id": "ep31-map-intro-2",
+     "sourceNodeId": "n002",
+     "speaker": "narrator",
+     "textEn": "\"Stop!\" cried Wukong.",
+     "textZh": "\"停!\"悟空喊道。",
+     "audioRef": "sent_en:\"Stop!\" cried Wukong.",
+     "audioStart": 24.178,
+     "audioEnd": 26.727
+    }
+   ]
+  },
+  "quiz": {
+   "id": "ep31-map-quiz",
+   "lines": [
+    {
+     "id": "ep31-map-quiz-1",
+     "sourceNodeId": "n038",
+     "speaker": "narrator",
+     "textEn": "A short while later, Wukong and Guanyin arrived at the abbey.",
+     "textZh": "不久之后,悟空与观音便抵达了寺院。",
+     "audioRef": "sent_en:A short while later, Wukong and Guanyin arrived at the abbey.",
+     "audioStart": 173.846,
+     "audioEnd": 179.549
+    }
+   ],
+   "question": {
+    "id": "ep031-official-quiz-001",
+    "textEn": "which is not true?",
+    "textZh": "哪一项是不正确的？"
+   },
+   "word": {
+    "term": "vase",
+    "zh": "花瓶",
+    "ipa": ""
+   },
+   "options": [
+    {
+     "id": "a",
+     "textEn": "guanyin didn't help wukong fix the ginseng tree.",
+     "textZh": "观音没有帮助悟空修理人参果树。",
+     "correct": true,
+     "feedback": "对了。观音没有帮助悟空修理人参果树。"
+    },
+    {
+     "id": "b",
+     "textEn": "lady whitebone had been waiting for the tang monk.",
+     "textZh": "白骨夫人一直在等待唐僧。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    },
+    {
+     "id": "c",
+     "textEn": "bajie apologized for not believing wukong.",
+     "textZh": "八戒为不相信悟空而道歉。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    }
+   ],
+   "lessonCardId": "ep031-official-quiz-001"
+  }
+ },
+ "map": {
+  "theme": "generic",
+  "coordinateSpace": "world-normalized",
+  "worldTiles": 2,
+  "regions": {
+   "hero": 0,
+   "waves": [
+    0,
+    1
+   ],
+   "npc": {
+    "intro": 0,
+    "quiz": 1
+   },
+   "boss": 3
+  },
+  "walkable": {
+   "space": "world",
+   "x": 0.0,
+   "y": 0.16,
+   "w": 1.0,
+   "h": 0.79,
+   "rects": [
+    {
+     "x": 0.0,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.66,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    }
+   ]
+  },
+  "heroSpawn": {
+   "x": 0.06,
+   "y": 0.31
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.31,
+    "y": 0.23
+   },
+   {
+    "x": 0.38,
+    "y": 0.27
+   },
+   {
+    "x": 0.34,
+    "y": 0.33
+   },
+   {
+    "x": 0.41,
+    "y": 0.24
+   }
+  ],
+  "waveSpawns": [
+   [
+    {
+     "x": 0.31,
+     "y": 0.23
+    },
+    {
+     "x": 0.38,
+     "y": 0.27
+    },
+    {
+     "x": 0.34,
+     "y": 0.33
+    },
+    {
+     "x": 0.41,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.81,
+     "y": 0.23
+    },
+    {
+     "x": 0.88,
+     "y": 0.27
+    },
+    {
+     "x": 0.84,
+     "y": 0.33
+    },
+    {
+     "x": 0.91,
+     "y": 0.24
+    }
+   ]
+  ],
+  "orbSpawns": [
+   [
+    {
+     "x": 0.11,
+     "y": 0.25
+    },
+    {
+     "x": 0.16,
+     "y": 0.31
+    },
+    {
+     "x": 0.12,
+     "y": 0.37
+    },
+    {
+     "x": 0.18,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.61,
+     "y": 0.25
+    },
+    {
+     "x": 0.66,
+     "y": 0.31
+    },
+    {
+     "x": 0.62,
+     "y": 0.37
+    },
+    {
+     "x": 0.68,
+     "y": 0.24
+    }
+   ]
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "zhenyuan",
+    "nameZh": "镇元大仙",
+    "x": 0.08,
+    "y": 0.26
+   },
+   {
+    "role": "quiz",
+    "sprite": "zhenyuan",
+    "nameZh": "镇元大仙",
+    "x": 0.7,
+    "y": 0.39
+   }
+  ],
+  "bossSpot": {
+   "x": 0.94,
+   "y": 0.85
+  }
+ }
+}

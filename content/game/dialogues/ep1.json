@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "ep": 1,
+  "intro": {
+    "id": "ep1-map-intro",
+    "lines": [
+      {
+        "id": "ep1-map-intro-1",
+        "sourceNodeId": "n003",
+        "speaker": "narrator",
+        "textEn": "One day the rock split open.",
+        "textZh": "有一天,这块岩石裂开了。",
+        "audioRef": "sent_en:One day the rock split open."
+      },
+      {
+        "id": "ep1-map-intro-2",
+        "sourceNodeId": "n004",
+        "speaker": "narrator",
+        "textEn": "Inside was a monkey.",
+        "textZh": "内部有一只猴子。",
+        "audioRef": "sent_en:Inside was a monkey."
+      }
+    ]
+  },
+  "quiz": {
+    "id": "ep1-map-quiz",
+    "lines": [
+      {
+        "id": "ep1-map-quiz-1",
+        "sourceNodeId": "n006",
+        "speaker": "narrator",
+        "textEn": "Suddenly powerful light shot from his eyes.",
+        "textZh": "突然,一道强光从他眼中射出。",
+        "audioRef": "sent_en:Suddenly powerful light shot from his eyes."
+      }
+    ],
+    "word": {
+      "term": "powerful",
+      "zh": "强大的,强而有力的"
+    },
+    "question": {
+      "id": "ep001-official-quiz-001",
+      "textEn": "what did monkey come out of?",
+      "textZh": "猴子是从什么出来的？"
+    },
+    "lessonCardId": "ep001-official-quiz-001",
+    "options": [
+      {
+        "id": "a",
+        "textEn": "a rock",
+        "textZh": "一块石头",
+        "correct": true,
+        "feedback": "对了，石猴是从岩石里出来的。"
+      },
+      {
+        "id": "b",
+        "textEn": "a tree",
+        "textZh": "一棵树",
+        "correct": false,
+        "feedback": "再想想，课文里说猴子是从山上的岩石里出来的。"
+      },
+      {
+        "id": "c",
+        "textEn": "a river",
+        "textZh": "一条河",
+        "correct": false,
+        "feedback": "再想想，课文里说猴子是从山上的岩石里出来的。"
+      }
+    ]
+  }
+}

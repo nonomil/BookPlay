@@ -1,0 +1,584 @@
+{
+ "schema_version": 1,
+ "ep": 21,
+ "title": {
+  "en": "The Monster's Friend",
+  "zh": "西游记 第21集"
+ },
+ "collection": "c03",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "blackwind",
+   "nameZh": "黑风大王",
+   "mode": "sparring",
+   "sprite": "blackwind"
+  },
+  "minors": [
+   {
+    "id": "imp",
+    "nameZh": "小妖",
+    "sprite": "imp"
+   }
+  ]
+ },
+ "background": {
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep21/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "Wukong stood before Guanyin.",
+   "textZh": "悟空站在观音面前。",
+   "illustration": "assets/adv_frames/ep21/f1.jpg",
+   "sourceNodeId": "n001",
+   "audioRef": "sent_en:Wukong stood before Guanyin."
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "He was telling the bodhisattva everything that had happened at the monastery.",
+   "textZh": "他向菩萨讲述了寺院里发生的一切。",
+   "illustration": "assets/adv_frames/ep21/f2.jpg",
+   "sourceNodeId": "n002",
+   "audioRef": "sent_en:He was telling the bodhisattva everything that had happened at the monastery."
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "demand",
+   "zh": "1. 要求,请求,(2. 查问,质问)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep21/f0.jpg"
+  },
+  {
+   "term": "lunchtime",
+   "zh": "午餐时间",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep21/f0.jpg"
+  },
+  {
+   "term": "insult",
+   "zh": "1. 污辱人的言行,(2. 侮辱)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep21/f1.jpg"
+  },
+  {
+   "term": "treasure",
+   "zh": "珍品,珍宝",
+   "ipa": "ˈtreʒə(r)",
+   "illustration": "assets/adv_frames/ep21/f1.jpg"
+  },
+  {
+   "term": "head",
+   "zh": "1. 首脑的,为首的,(2. 头)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep21/f2.jpg"
+  },
+  {
+   "term": "harm",
+   "zh": "损伤,损害",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep21/f1.jpg"
+  },
+  {
+   "term": "dumb",
+   "zh": "像傻瓜一样的,发傻的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep21/f0.jpg"
+  },
+  {
+   "term": "interrupt",
+   "zh": "妨碍,中断",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep21/f0.jpg"
+  },
+  {
+   "term": "pebble",
+   "zh": "小卵石",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep21/f3.jpg"
+  },
+  {
+   "term": "soar",
+   "zh": "高飞,往上飞舞",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep21/f2.jpg"
+  },
+  {
+   "term": "pill",
+   "zh": "药丸,药片",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep21/f2.jpg"
+  },
+  {
+   "term": "tray",
+   "zh": "托盘",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep21/f1.jpg"
+  }
+ ],
+ "wordPool": [
+  {
+   "term": "demand",
+   "zh": "1. 要求,请求,(2. 查问,质问)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep21/f0.jpg"
+  },
+  {
+   "term": "lunchtime",
+   "zh": "午餐时间",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep21/f0.jpg"
+  },
+  {
+   "term": "insult",
+   "zh": "1. 污辱人的言行,(2. 侮辱)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep21/f1.jpg"
+  },
+  {
+   "term": "treasure",
+   "zh": "珍品,珍宝",
+   "ipa": "ˈtreʒə(r)",
+   "illustration": "assets/adv_frames/ep21/f1.jpg"
+  },
+  {
+   "term": "head",
+   "zh": "1. 首脑的,为首的,(2. 头)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep21/f2.jpg"
+  },
+  {
+   "term": "harm",
+   "zh": "损伤,损害",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep21/f1.jpg"
+  },
+  {
+   "term": "dumb",
+   "zh": "像傻瓜一样的,发傻的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep21/f0.jpg"
+  },
+  {
+   "term": "interrupt",
+   "zh": "妨碍,中断",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep21/f0.jpg"
+  },
+  {
+   "term": "pebble",
+   "zh": "小卵石",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep21/f3.jpg"
+  },
+  {
+   "term": "soar",
+   "zh": "高飞,往上飞舞",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep21/f2.jpg"
+  },
+  {
+   "term": "pill",
+   "zh": "药丸,药片",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep21/f2.jpg"
+  },
+  {
+   "term": "tray",
+   "zh": "托盘",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep21/f1.jpg"
+  },
+  {
+   "term": "sight",
+   "zh": "1. 视野,(2. 景色,景象)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep21/f2.jpg"
+  },
+  {
+   "term": "fly open",
+   "zh": "(门等)突然打开",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep21/f0.jpg"
+  },
+  {
+   "term": "pesky",
+   "zh": "麻烦的,讨厌的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep21/f3.jpg"
+  },
+  {
+   "term": "bang",
+   "zh": "砰地敲",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep21/f0.jpg"
+  },
+  {
+   "term": "celebrate",
+   "zh": "庆祝",
+   "ipa": "ˈselɪbreɪt",
+   "illustration": "assets/adv_frames/ep21/f2.jpg"
+  },
+  {
+   "term": "interested",
+   "zh": "感兴趣的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep21/f2.jpg"
+  },
+  {
+   "term": "stroke",
+   "zh": "抚,抚摸",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep21/f2.jpg"
+  },
+  {
+   "term": "wiggle",
+   "zh": "摆动,摇摆(身体、尾巴等)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep21/f1.jpg"
+  },
+  {
+   "term": "slid",
+   "zh": "1. 滑动,滑行 (slide-slid),(2. 悄悄地走)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep21/f3.jpg"
+  },
+  {
+   "term": "throat",
+   "zh": "喉咙",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep21/f3.jpg"
+  },
+  {
+   "term": "tell",
+   "zh": "讲述",
+   "ipa": "tel",
+   "illustration": "assets/adv_frames/ep21/f1.jpg"
+  },
+  {
+   "term": "bear",
+   "zh": "熊",
+   "ipa": "beə(r)",
+   "illustration": "assets/adv_frames/ep21/f1.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "demand",
+     "zh": "1. 要求,请求,(2. 查问,质问)",
+     "sprite": "imp"
+    },
+    {
+     "term": "lunchtime",
+     "zh": "午餐时间",
+     "sprite": "imp"
+    },
+    {
+     "term": "insult",
+     "zh": "1. 污辱人的言行,(2. 侮辱)",
+     "sprite": "imp"
+    },
+    {
+     "term": "treasure",
+     "zh": "珍品,珍宝",
+     "sprite": "imp"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "head",
+     "zh": "1. 首脑的,为首的,(2. 头)",
+     "sprite": "imp"
+    },
+    {
+     "term": "harm",
+     "zh": "损伤,损害",
+     "sprite": "imp"
+    },
+    {
+     "term": "dumb",
+     "zh": "像傻瓜一样的,发傻的",
+     "sprite": "imp"
+    },
+    {
+     "term": "interrupt",
+     "zh": "妨碍,中断",
+     "sprite": "imp"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "pebble",
+    "zh": "小卵石"
+   },
+   {
+    "term": "soar",
+    "zh": "高飞,往上飞舞"
+   },
+   {
+    "term": "pill",
+    "zh": "药丸,药片"
+   },
+   {
+    "term": "tray",
+    "zh": "托盘"
+   }
+  ],
+  "taunts": [
+   "blackwind.1",
+   "blackwind.2",
+   "blackwind.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=21",
+ "npcDialogue": {
+  "intro": {
+   "id": "ep21-map-intro",
+   "lines": [
+    {
+     "id": "ep21-map-intro-1",
+     "sourceNodeId": "n001",
+     "speaker": "narrator",
+     "textEn": "Wukong stood before Guanyin.",
+     "textZh": "悟空站在观音面前。",
+     "audioRef": "sent_en:Wukong stood before Guanyin.",
+     "audioStart": 11.267,
+     "audioEnd": 17.522
+    },
+    {
+     "id": "ep21-map-intro-2",
+     "sourceNodeId": "n002",
+     "speaker": "narrator",
+     "textEn": "He was telling the bodhisattva everything that had happened at the monastery.",
+     "textZh": "他向菩萨讲述了寺院里发生的一切。",
+     "audioRef": "sent_en:He was telling the bodhisattva everything that had happened at the monastery.",
+     "audioStart": 17.523,
+     "audioEnd": 22.585
+    }
+   ]
+  },
+  "quiz": {
+   "id": "ep21-map-quiz",
+   "lines": [
+    {
+     "id": "ep21-map-quiz-1",
+     "sourceNodeId": "n005",
+     "speaker": "narrator",
+     "textEn": "Guanyin sighed. \"The Tang Monk should not have shown that robe to the priest,\" she said.",
+     "textZh": "观音叹了口气:\"唐僧本不该把那件袈裟展示给那位僧人,\"她说道。",
+     "audioRef": "sent_en:Guanyin sighed. \"The Tang Monk should not have shown that robe to the priest,\" she said.",
+     "audioStart": 47.881,
+     "audioEnd": 55.313
+    }
+   ],
+   "question": {
+    "id": "ep021-official-quiz-001",
+    "textEn": "which is not true?",
+    "textZh": "哪一项是不正确的？"
+   },
+   "word": {
+    "term": "demand",
+    "zh": "1. 要求,请求,(2. 查问,质问)",
+    "ipa": ""
+   },
+   "options": [
+    {
+     "id": "a",
+     "textEn": "guanyin was very proud of wukong and the monk.",
+     "textZh": "观音对悟空和和尚感到非常自豪。",
+     "correct": true,
+     "feedback": "对了。观音对悟空和和尚感到非常自豪。"
+    },
+    {
+     "id": "b",
+     "textEn": "the pill jumped into the black wind king's mouth.",
+     "textZh": "药丸跳进了黑风王的嘴里。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    },
+    {
+     "id": "c",
+     "textEn": "the priest wanted to celebrate the buddhist treasure.",
+     "textZh": "这位牧师想要庆祝佛教宝物。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    }
+   ],
+   "lessonCardId": "ep021-official-quiz-001"
+  }
+ },
+ "map": {
+  "theme": "generic",
+  "coordinateSpace": "world-normalized",
+  "worldTiles": 2,
+  "regions": {
+   "hero": 0,
+   "waves": [
+    0,
+    1
+   ],
+   "npc": {
+    "intro": 0,
+    "quiz": 1
+   },
+   "boss": 3
+  },
+  "walkable": {
+   "space": "world",
+   "x": 0.0,
+   "y": 0.16,
+   "w": 1.0,
+   "h": 0.79,
+   "rects": [
+    {
+     "x": 0.0,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.66,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    }
+   ]
+  },
+  "heroSpawn": {
+   "x": 0.06,
+   "y": 0.31
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.31,
+    "y": 0.23
+   },
+   {
+    "x": 0.38,
+    "y": 0.27
+   },
+   {
+    "x": 0.34,
+    "y": 0.33
+   },
+   {
+    "x": 0.41,
+    "y": 0.24
+   }
+  ],
+  "waveSpawns": [
+   [
+    {
+     "x": 0.31,
+     "y": 0.23
+    },
+    {
+     "x": 0.38,
+     "y": 0.27
+    },
+    {
+     "x": 0.34,
+     "y": 0.33
+    },
+    {
+     "x": 0.41,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.81,
+     "y": 0.23
+    },
+    {
+     "x": 0.88,
+     "y": 0.27
+    },
+    {
+     "x": 0.84,
+     "y": 0.33
+    },
+    {
+     "x": 0.91,
+     "y": 0.24
+    }
+   ]
+  ],
+  "orbSpawns": [
+   [
+    {
+     "x": 0.11,
+     "y": 0.25
+    },
+    {
+     "x": 0.16,
+     "y": 0.31
+    },
+    {
+     "x": 0.12,
+     "y": 0.37
+    },
+    {
+     "x": 0.18,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.61,
+     "y": 0.25
+    },
+    {
+     "x": 0.66,
+     "y": 0.31
+    },
+    {
+     "x": 0.62,
+     "y": 0.37
+    },
+    {
+     "x": 0.68,
+     "y": 0.24
+    }
+   ]
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "blackwind",
+    "nameZh": "黑风王",
+    "x": 0.08,
+    "y": 0.26
+   },
+   {
+    "role": "quiz",
+    "sprite": "blackwind",
+    "nameZh": "黑风王",
+    "x": 0.7,
+    "y": 0.39
+   }
+  ],
+  "bossSpot": {
+   "x": 0.94,
+   "y": 0.85
+  }
+ }
+}

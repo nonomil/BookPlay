@@ -1,0 +1,584 @@
+{
+ "schema_version": 1,
+ "ep": 76,
+ "title": {
+  "en": "The Iron Immortal",
+  "zh": "西游记 第76集"
+ },
+ "collection": "c10",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "ironfan",
+   "nameZh": "铁扇公主",
+   "mode": "sparring",
+   "sprite": "ironfan"
+  },
+  "minors": [
+   {
+    "id": "imp",
+    "nameZh": "小妖",
+    "sprite": "imp"
+   }
+  ]
+ },
+ "background": {
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep76/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "Wukong was once again traveling west with the Tang Monk.",
+   "textZh": "猿猴再次与唐僧一同西行。",
+   "illustration": "assets/adv_frames/ep76/f1.jpg",
+   "sourceNodeId": "n001",
+   "audioRef": "sent_en:Wukong was once again traveling west with the Tang Monk."
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "\"Master,\" said Wukong.",
+   "textZh": "\"师父!\"悟空说道。",
+   "illustration": "assets/adv_frames/ep76/f2.jpg",
+   "sourceNodeId": "n002",
+   "audioRef": "sent_en:\"Master,\" said Wukong."
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "iron",
+   "zh": "1. 铁,(2. 熨)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep76/f0.jpg"
+  },
+  {
+   "term": "immortal",
+   "zh": "神,不朽的人物",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep76/f0.jpg"
+  },
+  {
+   "term": "once again",
+   "zh": "再一次",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep76/f1.jpg"
+  },
+  {
+   "term": "wipe",
+   "zh": "擦",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep76/f1.jpg"
+  },
+  {
+   "term": "brow",
+   "zh": "额头",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep76/f1.jpg"
+  },
+  {
+   "term": "take a",
+   "zh": "休息一下",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep76/f2.jpg"
+  },
+  {
+   "term": "offer",
+   "zh": "1. 提议,(2. 提供,给予)",
+   "ipa": "ˈɒfə",
+   "illustration": "assets/adv_frames/ep76/f1.jpg"
+  },
+  {
+   "term": "take somebody",
+   "zh": "收留",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep76/f2.jpg"
+  },
+  {
+   "term": "for the",
+   "zh": "为了休息,那天晚上",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep76/f1.jpg"
+  },
+  {
+   "term": "flame",
+   "zh": "火焰,火舌",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep76/f1.jpg"
+  },
+  {
+   "term": "get away",
+   "zh": "逃脱,离开",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep76/f3.jpg"
+  },
+  {
+   "term": "impossible",
+   "zh": "不可能的,做不到的",
+   "ipa": "ɪm ˈpɒsəb(ə)l",
+   "illustration": "assets/adv_frames/ep76/f1.jpg"
+  }
+ ],
+ "wordPool": [
+  {
+   "term": "iron",
+   "zh": "1. 铁,(2. 熨)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep76/f0.jpg"
+  },
+  {
+   "term": "immortal",
+   "zh": "神,不朽的人物",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep76/f0.jpg"
+  },
+  {
+   "term": "once again",
+   "zh": "再一次",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep76/f1.jpg"
+  },
+  {
+   "term": "wipe",
+   "zh": "擦",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep76/f1.jpg"
+  },
+  {
+   "term": "brow",
+   "zh": "额头",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep76/f1.jpg"
+  },
+  {
+   "term": "take a",
+   "zh": "休息一下",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep76/f2.jpg"
+  },
+  {
+   "term": "offer",
+   "zh": "1. 提议,(2. 提供,给予)",
+   "ipa": "ˈɒfə",
+   "illustration": "assets/adv_frames/ep76/f1.jpg"
+  },
+  {
+   "term": "take somebody",
+   "zh": "收留",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep76/f2.jpg"
+  },
+  {
+   "term": "for the",
+   "zh": "为了休息,那天晚上",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep76/f1.jpg"
+  },
+  {
+   "term": "flame",
+   "zh": "火焰,火舌",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep76/f1.jpg"
+  },
+  {
+   "term": "get away",
+   "zh": "逃脱,离开",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep76/f3.jpg"
+  },
+  {
+   "term": "impossible",
+   "zh": "不可能的,做不到的",
+   "ipa": "ɪm ˈpɒsəb(ə)l",
+   "illustration": "assets/adv_frames/ep76/f1.jpg"
+  },
+  {
+   "term": "pass",
+   "zh": "1. 经过,通过,(2. 传递(东西),3. (时间)推移,流逝)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep76/f3.jpg"
+  },
+  {
+   "term": "stretch",
+   "zh": "1. 延伸,延续,(2. 伸出(手臂、头、身子等),3. 拉直,拉长)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep76/f2.jpg"
+  },
+  {
+   "term": "rainstorm",
+   "zh": "暴风雨",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep76/f3.jpg"
+  },
+  {
+   "term": "put out",
+   "zh": "(把火)熄灭",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep76/f0.jpg"
+  },
+  {
+   "term": "magical",
+   "zh": "魔术的,魔法的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep76/f2.jpg"
+  },
+  {
+   "term": "spirit",
+   "zh": "精灵,妖精",
+   "ipa": "ˈspɪrɪt",
+   "illustration": "assets/adv_frames/ep76/f2.jpg"
+  },
+  {
+   "term": "plantain",
+   "zh": "大蕉",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep76/f1.jpg"
+  },
+  {
+   "term": "demand",
+   "zh": "1. 要求,请求,(2. 查问,质问)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep76/f3.jpg"
+  },
+  {
+   "term": "chest",
+   "zh": "1. 胸部,(2. 箱子,盒子)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep76/f2.jpg"
+  },
+  {
+   "term": "borrow",
+   "zh": "借,借入",
+   "ipa": "ˈbɒrəʊ",
+   "illustration": "assets/adv_frames/ep76/f0.jpg"
+  },
+  {
+   "term": "worst",
+   "zh": "最坏的,最差的 (bad-worse-worst)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep76/f1.jpg"
+  },
+  {
+   "term": "enemy",
+   "zh": "敌人",
+   "ipa": "ˈenəmi",
+   "illustration": "assets/adv_frames/ep76/f0.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "iron",
+     "zh": "1. 铁,(2. 熨)",
+     "sprite": "imp"
+    },
+    {
+     "term": "immortal",
+     "zh": "神,不朽的人物",
+     "sprite": "imp"
+    },
+    {
+     "term": "once again",
+     "zh": "再一次",
+     "sprite": "imp"
+    },
+    {
+     "term": "wipe",
+     "zh": "擦",
+     "sprite": "imp"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "brow",
+     "zh": "额头",
+     "sprite": "imp"
+    },
+    {
+     "term": "take a",
+     "zh": "休息一下",
+     "sprite": "imp"
+    },
+    {
+     "term": "offer",
+     "zh": "1. 提议,(2. 提供,给予)",
+     "sprite": "imp"
+    },
+    {
+     "term": "take somebody",
+     "zh": "收留",
+     "sprite": "imp"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "for the",
+    "zh": "为了休息,那天晚上"
+   },
+   {
+    "term": "flame",
+    "zh": "火焰,火舌"
+   },
+   {
+    "term": "get away",
+    "zh": "逃脱,离开"
+   },
+   {
+    "term": "impossible",
+    "zh": "不可能的,做不到的"
+   }
+  ],
+  "taunts": [
+   "ironfan.1",
+   "ironfan.2",
+   "ironfan.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=76",
+ "npcDialogue": {
+  "intro": {
+   "id": "ep76-map-intro",
+   "lines": [
+    {
+     "id": "ep76-map-intro-1",
+     "sourceNodeId": "n001",
+     "speaker": "narrator",
+     "textEn": "Wukong was once again traveling west with the Tang Monk.",
+     "textZh": "猿猴再次与唐僧一同西行。",
+     "audioRef": "sent_en:Wukong was once again traveling west with the Tang Monk.",
+     "audioStart": 10.934,
+     "audioEnd": 18.337
+    },
+    {
+     "id": "ep76-map-intro-2",
+     "sourceNodeId": "n002",
+     "speaker": "narrator",
+     "textEn": "\"Master,\" said Wukong.",
+     "textZh": "\"师父!\"悟空说道。",
+     "audioRef": "sent_en:\"Master,\" said Wukong.",
+     "audioStart": 18.338,
+     "audioEnd": 20.883
+    }
+   ]
+  },
+  "quiz": {
+   "id": "ep76-map-quiz",
+   "lines": [
+    {
+     "id": "ep76-map-quiz-1",
+     "sourceNodeId": "n005",
+     "speaker": "narrator",
+     "textEn": "\"Can we please slow down?\" Bajie moaned.",
+     "textZh": "\"能放慢点速度吗?\"八戒呻吟道。",
+     "audioRef": "sent_en:\"Can we please slow down?\" Bajie moaned.",
+     "audioStart": 33.619,
+     "audioEnd": 37.31
+    }
+   ],
+   "question": {
+    "id": "ep076-official-quiz-001",
+    "textEn": "why did the travelers decide to stop?",
+    "textZh": "旅行者为什么决定停下来？"
+   },
+   "word": {
+    "term": "iron",
+    "zh": "1. 铁,(2. 熨)",
+    "ipa": ""
+   },
+   "options": [
+    {
+     "id": "a",
+     "textEn": "it was really hot.",
+     "textZh": "天气真的很热。",
+     "correct": true,
+     "feedback": "对了。天气真的很热。"
+    },
+    {
+     "id": "b",
+     "textEn": "it was really cold.",
+     "textZh": "真的很冷。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    },
+    {
+     "id": "c",
+     "textEn": "it was raining.",
+     "textZh": "下雨了。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    }
+   ],
+   "lessonCardId": "ep076-official-quiz-001"
+  }
+ },
+ "map": {
+  "theme": "generic",
+  "coordinateSpace": "world-normalized",
+  "worldTiles": 2,
+  "regions": {
+   "hero": 0,
+   "waves": [
+    0,
+    1
+   ],
+   "npc": {
+    "intro": 0,
+    "quiz": 1
+   },
+   "boss": 3
+  },
+  "walkable": {
+   "space": "world",
+   "x": 0.0,
+   "y": 0.16,
+   "w": 1.0,
+   "h": 0.79,
+   "rects": [
+    {
+     "x": 0.0,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.66,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    }
+   ]
+  },
+  "heroSpawn": {
+   "x": 0.06,
+   "y": 0.31
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.31,
+    "y": 0.23
+   },
+   {
+    "x": 0.38,
+    "y": 0.27
+   },
+   {
+    "x": 0.34,
+    "y": 0.33
+   },
+   {
+    "x": 0.41,
+    "y": 0.24
+   }
+  ],
+  "waveSpawns": [
+   [
+    {
+     "x": 0.31,
+     "y": 0.23
+    },
+    {
+     "x": 0.38,
+     "y": 0.27
+    },
+    {
+     "x": 0.34,
+     "y": 0.33
+    },
+    {
+     "x": 0.41,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.81,
+     "y": 0.23
+    },
+    {
+     "x": 0.88,
+     "y": 0.27
+    },
+    {
+     "x": 0.84,
+     "y": 0.33
+    },
+    {
+     "x": 0.91,
+     "y": 0.24
+    }
+   ]
+  ],
+  "orbSpawns": [
+   [
+    {
+     "x": 0.11,
+     "y": 0.25
+    },
+    {
+     "x": 0.16,
+     "y": 0.31
+    },
+    {
+     "x": 0.12,
+     "y": 0.37
+    },
+    {
+     "x": 0.18,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.61,
+     "y": 0.25
+    },
+    {
+     "x": 0.66,
+     "y": 0.31
+    },
+    {
+     "x": 0.62,
+     "y": 0.37
+    },
+    {
+     "x": 0.68,
+     "y": 0.24
+    }
+   ]
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "imp",
+    "nameZh": "小妖",
+    "x": 0.08,
+    "y": 0.26
+   },
+   {
+    "role": "quiz",
+    "sprite": "imp",
+    "nameZh": "小妖",
+    "x": 0.7,
+    "y": 0.39
+   }
+  ],
+  "bossSpot": {
+   "x": 0.94,
+   "y": 0.85
+  }
+ }
+}

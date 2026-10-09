@@ -1,0 +1,584 @@
+{
+ "schema_version": 1,
+ "ep": 38,
+ "title": {
+  "en": "Bajie Tries to Sleep",
+  "zh": "西游记 第38集"
+ },
+ "collection": "c05",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "bajie",
+   "nameZh": "猪八戒",
+   "mode": "sparring",
+   "sprite": "bajie"
+  },
+  "minors": [
+   {
+    "id": "imp",
+    "nameZh": "小妖",
+    "sprite": "imp"
+   }
+  ]
+ },
+ "background": {
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep38/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "Time passed, and it was soon spring.",
+   "textZh": "时光荏苒,转眼间已是春日。",
+   "illustration": "assets/adv_frames/ep38/f1.jpg",
+   "sourceNodeId": "n001",
+   "audioRef": "sent_en:Time passed, and it was soon spring."
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "The air grew warm, flowers bloomed, and birds swooped from tree to tree.",
+   "textZh": "温暖的空气里,百花盛开,鸟儿在枝头翩翩起舞。",
+   "illustration": "assets/adv_frames/ep38/f2.jpg",
+   "sourceNodeId": "n002",
+   "audioRef": "sent_en:The air grew warm, flowers bloomed, and birds swooped from tree to tree."
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "bloom",
+   "zh": "开花",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep38/f2.jpg"
+  },
+  {
+   "term": "swoop",
+   "zh": "(鸟、飞机等)骤然下降,俯冲",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep38/f2.jpg"
+  },
+  {
+   "term": "hard",
+   "zh": "费力的,困难的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep38/f3.jpg"
+  },
+  {
+   "term": "drag",
+   "zh": "拖曳,慢吞吞地行进",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep38/f0.jpg"
+  },
+  {
+   "term": "invisible",
+   "zh": "无形的,隐形的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep38/f3.jpg"
+  },
+  {
+   "term": "dummy",
+   "zh": "笨蛋,傻瓜",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep38/f2.jpg"
+  },
+  {
+   "term": "instead",
+   "zh": "作为替代",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep38/f3.jpg"
+  },
+  {
+   "term": "lazy",
+   "zh": "懒惰的",
+   "ipa": "ˈleɪzi",
+   "illustration": "assets/adv_frames/ep38/f1.jpg"
+  },
+  {
+   "term": "woodpecker",
+   "zh": "啄木鸟",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep38/f0.jpg"
+  },
+  {
+   "term": "peck",
+   "zh": "(用鸟嘴)啄,啄食",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep38/f0.jpg"
+  },
+  {
+   "term": "lie",
+   "zh": "说谎",
+   "ipa": "laɪ",
+   "illustration": "assets/adv_frames/ep38/f1.jpg"
+  },
+  {
+   "term": "safe",
+   "zh": "安全的",
+   "ipa": "seɪf",
+   "illustration": "assets/adv_frames/ep38/f1.jpg"
+  }
+ ],
+ "wordPool": [
+  {
+   "term": "bloom",
+   "zh": "开花",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep38/f2.jpg"
+  },
+  {
+   "term": "swoop",
+   "zh": "(鸟、飞机等)骤然下降,俯冲",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep38/f2.jpg"
+  },
+  {
+   "term": "hard",
+   "zh": "费力的,困难的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep38/f3.jpg"
+  },
+  {
+   "term": "drag",
+   "zh": "拖曳,慢吞吞地行进",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep38/f0.jpg"
+  },
+  {
+   "term": "invisible",
+   "zh": "无形的,隐形的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep38/f3.jpg"
+  },
+  {
+   "term": "dummy",
+   "zh": "笨蛋,傻瓜",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep38/f2.jpg"
+  },
+  {
+   "term": "instead",
+   "zh": "作为替代",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep38/f3.jpg"
+  },
+  {
+   "term": "lazy",
+   "zh": "懒惰的",
+   "ipa": "ˈleɪzi",
+   "illustration": "assets/adv_frames/ep38/f1.jpg"
+  },
+  {
+   "term": "woodpecker",
+   "zh": "啄木鸟",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep38/f0.jpg"
+  },
+  {
+   "term": "peck",
+   "zh": "(用鸟嘴)啄,啄食",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep38/f0.jpg"
+  },
+  {
+   "term": "lie",
+   "zh": "说谎",
+   "ipa": "laɪ",
+   "illustration": "assets/adv_frames/ep38/f1.jpg"
+  },
+  {
+   "term": "safe",
+   "zh": "安全的",
+   "ipa": "seɪf",
+   "illustration": "assets/adv_frames/ep38/f1.jpg"
+  },
+  {
+   "term": "ashamed",
+   "zh": "羞愧的,感到难为情的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep38/f3.jpg"
+  },
+  {
+   "term": "head back",
+   "zh": "回去,掉头",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep38/f2.jpg"
+  },
+  {
+   "term": "trot",
+   "zh": "小跑着前进,快步",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep38/f2.jpg"
+  },
+  {
+   "term": "robin",
+   "zh": "知更鸟",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep38/f3.jpg"
+  },
+  {
+   "term": "trip",
+   "zh": "绊,绊倒",
+   "ipa": "trɪp",
+   "illustration": "assets/adv_frames/ep38/f0.jpg"
+  },
+  {
+   "term": "steep",
+   "zh": "陡峭的,险峻的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep38/f3.jpg"
+  },
+  {
+   "term": "curl",
+   "zh": "1. 卷起来,(2. 卷曲的头发)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep38/f1.jpg"
+  },
+  {
+   "term": "along",
+   "zh": "1. 顺著,沿著,(2. 和...一起)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep38/f1.jpg"
+  },
+  {
+   "term": "spring",
+   "zh": "春天",
+   "ipa": "sprɪŋ",
+   "illustration": "assets/adv_frames/ep38/f1.jpg"
+  },
+  {
+   "term": "air",
+   "zh": "空气",
+   "ipa": "eə",
+   "illustration": "assets/adv_frames/ep38/f1.jpg"
+  },
+  {
+   "term": "grow",
+   "zh": "种植",
+   "ipa": "ɡrəʊ",
+   "illustration": "assets/adv_frames/ep38/f1.jpg"
+  },
+  {
+   "term": "warm",
+   "zh": "温暖的",
+   "ipa": "wɔːrm",
+   "illustration": "assets/adv_frames/ep38/f1.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "bloom",
+     "zh": "开花",
+     "sprite": "imp"
+    },
+    {
+     "term": "swoop",
+     "zh": "(鸟、飞机等)骤然下降,俯冲",
+     "sprite": "imp"
+    },
+    {
+     "term": "hard",
+     "zh": "费力的,困难的",
+     "sprite": "imp"
+    },
+    {
+     "term": "drag",
+     "zh": "拖曳,慢吞吞地行进",
+     "sprite": "imp"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "invisible",
+     "zh": "无形的,隐形的",
+     "sprite": "imp"
+    },
+    {
+     "term": "dummy",
+     "zh": "笨蛋,傻瓜",
+     "sprite": "imp"
+    },
+    {
+     "term": "instead",
+     "zh": "作为替代",
+     "sprite": "imp"
+    },
+    {
+     "term": "lazy",
+     "zh": "懒惰的",
+     "sprite": "imp"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "woodpecker",
+    "zh": "啄木鸟"
+   },
+   {
+    "term": "peck",
+    "zh": "(用鸟嘴)啄,啄食"
+   },
+   {
+    "term": "lie",
+    "zh": "说谎"
+   },
+   {
+    "term": "safe",
+    "zh": "安全的"
+   }
+  ],
+  "taunts": [
+   "bajie.1",
+   "bajie.2",
+   "bajie.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=38",
+ "npcDialogue": {
+  "intro": {
+   "id": "ep38-map-intro",
+   "lines": [
+    {
+     "id": "ep38-map-intro-1",
+     "sourceNodeId": "n001",
+     "speaker": "narrator",
+     "textEn": "Time passed, and it was soon spring.",
+     "textZh": "时光荏苒,转眼间已是春日。",
+     "audioRef": "sent_en:Time passed, and it was soon spring.",
+     "audioStart": 11.267,
+     "audioEnd": 16.419
+    },
+    {
+     "id": "ep38-map-intro-2",
+     "sourceNodeId": "n002",
+     "speaker": "narrator",
+     "textEn": "The air grew warm, flowers bloomed, and birds swooped from tree to tree.",
+     "textZh": "温暖的空气里,百花盛开,鸟儿在枝头翩翩起舞。",
+     "audioRef": "sent_en:The air grew warm, flowers bloomed, and birds swooped from tree to tree.",
+     "audioStart": 16.42,
+     "audioEnd": 24.097
+    }
+   ]
+  },
+  "quiz": {
+   "id": "ep38-map-quiz",
+   "lines": [
+    {
+     "id": "ep38-map-quiz-1",
+     "sourceNodeId": "n020",
+     "speaker": "narrator",
+     "textEn": "The monkey turned himself into a woodpecker and pecked the log.",
+     "textZh": "这只猴子化身为一只啄木鸟,然后用喙啄击着那根原木。",
+     "audioRef": "sent_en:The monkey turned himself into a woodpecker and pecked the log.",
+     "audioStart": 118.605,
+     "audioEnd": 123.029
+    }
+   ],
+   "question": {
+    "id": "ep038-official-quiz-001",
+    "textEn": "which is not true?",
+    "textZh": "哪一项是不正确的？"
+   },
+   "word": {
+    "term": "bloom",
+    "zh": "开花",
+    "ipa": ""
+   },
+   "options": [
+    {
+     "id": "a",
+     "textEn": "wujing turned into a woodpecker.",
+     "textZh": "悟净变成了一只啄木鸟。",
+     "correct": true,
+     "feedback": "对了。悟净变成了一只啄木鸟。"
+    },
+    {
+     "id": "b",
+     "textEn": "wukong knew bajie took a nap.",
+     "textZh": "悟空知道八戒在打盹。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    },
+    {
+     "id": "c",
+     "textEn": "bajie met golden horn.",
+     "textZh": "八戒遇到了金角。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    }
+   ],
+   "lessonCardId": "ep038-official-quiz-001"
+  }
+ },
+ "map": {
+  "theme": "generic",
+  "coordinateSpace": "world-normalized",
+  "worldTiles": 2,
+  "regions": {
+   "hero": 0,
+   "waves": [
+    0,
+    1
+   ],
+   "npc": {
+    "intro": 0,
+    "quiz": 1
+   },
+   "boss": 3
+  },
+  "walkable": {
+   "space": "world",
+   "x": 0.0,
+   "y": 0.16,
+   "w": 1.0,
+   "h": 0.79,
+   "rects": [
+    {
+     "x": 0.0,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.66,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    }
+   ]
+  },
+  "heroSpawn": {
+   "x": 0.06,
+   "y": 0.31
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.31,
+    "y": 0.23
+   },
+   {
+    "x": 0.38,
+    "y": 0.27
+   },
+   {
+    "x": 0.34,
+    "y": 0.33
+   },
+   {
+    "x": 0.41,
+    "y": 0.24
+   }
+  ],
+  "waveSpawns": [
+   [
+    {
+     "x": 0.31,
+     "y": 0.23
+    },
+    {
+     "x": 0.38,
+     "y": 0.27
+    },
+    {
+     "x": 0.34,
+     "y": 0.33
+    },
+    {
+     "x": 0.41,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.81,
+     "y": 0.23
+    },
+    {
+     "x": 0.88,
+     "y": 0.27
+    },
+    {
+     "x": 0.84,
+     "y": 0.33
+    },
+    {
+     "x": 0.91,
+     "y": 0.24
+    }
+   ]
+  ],
+  "orbSpawns": [
+   [
+    {
+     "x": 0.11,
+     "y": 0.25
+    },
+    {
+     "x": 0.16,
+     "y": 0.31
+    },
+    {
+     "x": 0.12,
+     "y": 0.37
+    },
+    {
+     "x": 0.18,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.61,
+     "y": 0.25
+    },
+    {
+     "x": 0.66,
+     "y": 0.31
+    },
+    {
+     "x": 0.62,
+     "y": 0.37
+    },
+    {
+     "x": 0.68,
+     "y": 0.24
+    }
+   ]
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "goldenhorn",
+    "nameZh": "金角大王",
+    "x": 0.08,
+    "y": 0.26
+   },
+   {
+    "role": "quiz",
+    "sprite": "goldenhorn",
+    "nameZh": "金角大王",
+    "x": 0.7,
+    "y": 0.39
+   }
+  ],
+  "bossSpot": {
+   "x": 0.94,
+   "y": 0.85
+  }
+ }
+}

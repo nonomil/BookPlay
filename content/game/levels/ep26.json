@@ -1,0 +1,584 @@
+{
+ "schema_version": 1,
+ "ep": 26,
+ "title": {
+  "en": "The Monster in the River",
+  "zh": "西游记 第26集"
+ },
+ "collection": "c04",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "shawujing",
+   "nameZh": "沙悟净",
+   "mode": "sparring",
+   "sprite": "shawujing"
+  },
+  "minors": [
+   {
+    "id": "imp",
+    "nameZh": "小妖",
+    "sprite": "imp"
+   }
+  ]
+ },
+ "background": {
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep26/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "\"I hope we reach the Western Paradise soon,\" said the Tang Monk one morning.",
+   "textZh": "\"我希望我们能早日抵达西方极乐世界,\"唐僧某天早晨说道。",
+   "illustration": "assets/adv_frames/ep26/f1.jpg",
+   "sourceNodeId": "n001",
+   "audioRef": "sent_en:\"I hope we reach the Western Paradise soon,\" said the Tang Monk one morning."
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "Wukong and his companions were eating breakfast.",
+   "textZh": "悟空和他的同伴们正在吃早餐。",
+   "illustration": "assets/adv_frames/ep26/f2.jpg",
+   "sourceNodeId": "n002",
+   "audioRef": "sent_en:Wukong and his companions were eating breakfast."
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "challenge",
+   "zh": "挑战",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep26/f3.jpg"
+  },
+  {
+   "term": "along the",
+   "zh": "沿途,一路上",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep26/f3.jpg"
+  },
+  {
+   "term": "prove",
+   "zh": "证明,证实",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep26/f1.jpg"
+  },
+  {
+   "term": "worthy",
+   "zh": "1. 有价值的,很好的,(2. 值得的,足以......的,配得上的)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep26/f1.jpg"
+  },
+  {
+   "term": "survive",
+   "zh": "活下来,幸存",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep26/f1.jpg"
+  },
+  {
+   "term": "bowl",
+   "zh": "碗",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep26/f1.jpg"
+  },
+  {
+   "term": "tired of",
+   "zh": "厌烦",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep26/f2.jpg"
+  },
+  {
+   "term": "enough",
+   "zh": "足够的,充分的",
+   "ipa": "ɪˈnʌf",
+   "illustration": "assets/adv_frames/ep26/f1.jpg"
+  },
+  {
+   "term": "spear",
+   "zh": "矛",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep26/f3.jpg"
+  },
+  {
+   "term": "underwater",
+   "zh": "水中的,水里的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep26/f1.jpg"
+  },
+  {
+   "term": "all the",
+   "zh": "一直",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep26/f0.jpg"
+  },
+  {
+   "term": "shore",
+   "zh": "(江、海的)岸,滨",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep26/f0.jpg"
+  }
+ ],
+ "wordPool": [
+  {
+   "term": "challenge",
+   "zh": "挑战",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep26/f3.jpg"
+  },
+  {
+   "term": "along the",
+   "zh": "沿途,一路上",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep26/f3.jpg"
+  },
+  {
+   "term": "prove",
+   "zh": "证明,证实",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep26/f1.jpg"
+  },
+  {
+   "term": "worthy",
+   "zh": "1. 有价值的,很好的,(2. 值得的,足以......的,配得上的)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep26/f1.jpg"
+  },
+  {
+   "term": "survive",
+   "zh": "活下来,幸存",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep26/f1.jpg"
+  },
+  {
+   "term": "bowl",
+   "zh": "碗",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep26/f1.jpg"
+  },
+  {
+   "term": "tired of",
+   "zh": "厌烦",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep26/f2.jpg"
+  },
+  {
+   "term": "enough",
+   "zh": "足够的,充分的",
+   "ipa": "ɪˈnʌf",
+   "illustration": "assets/adv_frames/ep26/f1.jpg"
+  },
+  {
+   "term": "spear",
+   "zh": "矛",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep26/f3.jpg"
+  },
+  {
+   "term": "underwater",
+   "zh": "水中的,水里的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep26/f1.jpg"
+  },
+  {
+   "term": "all the",
+   "zh": "一直",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep26/f0.jpg"
+  },
+  {
+   "term": "shore",
+   "zh": "(江、海的)岸,滨",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep26/f0.jpg"
+  },
+  {
+   "term": "impatient",
+   "zh": "没耐心的,不耐烦的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep26/f2.jpg"
+  },
+  {
+   "term": "arrive",
+   "zh": "到达",
+   "ipa": "əˈraɪv",
+   "illustration": "assets/adv_frames/ep26/f2.jpg"
+  },
+  {
+   "term": "toward",
+   "zh": "向",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep26/f3.jpg"
+  },
+  {
+   "term": "attack",
+   "zh": "攻击",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep26/f1.jpg"
+  },
+  {
+   "term": "argue",
+   "zh": "争论,辩论",
+   "ipa": "ˈɑːrɡjuː",
+   "illustration": "assets/adv_frames/ep26/f2.jpg"
+  },
+  {
+   "term": "join",
+   "zh": "参加,加入",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep26/f2.jpg"
+  },
+  {
+   "term": "led",
+   "zh": "指引,带领 (lead-led)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep26/f3.jpg"
+  },
+  {
+   "term": "forgiven",
+   "zh": "原谅 forgive-forgave-forgiven",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep26/f1.jpg"
+  },
+  {
+   "term": "crime",
+   "zh": "犯罪,犯罪活动",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep26/f2.jpg"
+  },
+  {
+   "term": "doubtful",
+   "zh": "怀疑的,不确定的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep26/f0.jpg"
+  },
+  {
+   "term": "lightning",
+   "zh": "闪电",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep26/f0.jpg"
+  },
+  {
+   "term": "rein",
+   "zh": "(马、牛等的)缰绳",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep26/f1.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "challenge",
+     "zh": "挑战",
+     "sprite": "imp"
+    },
+    {
+     "term": "along the",
+     "zh": "沿途,一路上",
+     "sprite": "imp"
+    },
+    {
+     "term": "prove",
+     "zh": "证明,证实",
+     "sprite": "imp"
+    },
+    {
+     "term": "worthy",
+     "zh": "1. 有价值的,很好的,(2. 值得的,足以......的,配得上的)",
+     "sprite": "imp"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "survive",
+     "zh": "活下来,幸存",
+     "sprite": "imp"
+    },
+    {
+     "term": "bowl",
+     "zh": "碗",
+     "sprite": "imp"
+    },
+    {
+     "term": "tired of",
+     "zh": "厌烦",
+     "sprite": "imp"
+    },
+    {
+     "term": "enough",
+     "zh": "足够的,充分的",
+     "sprite": "imp"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "spear",
+    "zh": "矛"
+   },
+   {
+    "term": "underwater",
+    "zh": "水中的,水里的"
+   },
+   {
+    "term": "all the",
+    "zh": "一直"
+   },
+   {
+    "term": "shore",
+    "zh": "(江、海的)岸,滨"
+   }
+  ],
+  "taunts": [
+   "shawujing.1",
+   "shawujing.2",
+   "shawujing.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=26",
+ "npcDialogue": {
+  "intro": {
+   "id": "ep26-map-intro",
+   "lines": [
+    {
+     "id": "ep26-map-intro-1",
+     "sourceNodeId": "n001",
+     "speaker": "narrator",
+     "textEn": "\"I hope we reach the Western Paradise soon,\" said the Tang Monk one morning.",
+     "textZh": "\"我希望我们能早日抵达西方极乐世界,\"唐僧某天早晨说道。",
+     "audioRef": "sent_en:\"I hope we reach the Western Paradise soon,\" said the Tang Monk one morning.",
+     "audioStart": 11.267,
+     "audioEnd": 19.732
+    },
+    {
+     "id": "ep26-map-intro-2",
+     "sourceNodeId": "n002",
+     "speaker": "narrator",
+     "textEn": "Wukong and his companions were eating breakfast.",
+     "textZh": "悟空和他的同伴们正在吃早餐。",
+     "audioRef": "sent_en:Wukong and his companions were eating breakfast.",
+     "audioStart": 19.733,
+     "audioEnd": 25.187
+    }
+   ]
+  },
+  "quiz": {
+   "id": "ep26-map-quiz",
+   "lines": [
+    {
+     "id": "ep26-map-quiz-1",
+     "sourceNodeId": "n034",
+     "speaker": "narrator",
+     "textEn": "\"His name is Sha Wujing,\" said Guanyin.",
+     "textZh": "\"他的名字叫沙悟净,\"观音说道。",
+     "audioRef": "sent_en:\"His name is Sha Wujing,\" said Guanyin.",
+     "audioStart": 176.118,
+     "audioEnd": 180.081
+    }
+   ],
+   "question": {
+    "id": "ep026-official-quiz-001",
+    "textEn": "which is true?",
+    "textZh": "哪一个是真的？"
+   },
+   "word": {
+    "term": "challenge",
+    "zh": "挑战",
+    "ipa": ""
+   },
+   "options": [
+    {
+     "id": "a",
+     "textEn": "the monster was supposed to help the tang monk.",
+     "textZh": "这个怪物本应该帮助唐僧。",
+     "correct": true,
+     "feedback": "对了。这个怪物本应该帮助唐僧。"
+    },
+    {
+     "id": "b",
+     "textEn": "wujing believed the horse was really a dragon.",
+     "textZh": "悟净相信那匹马真的是一条龙。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    },
+    {
+     "id": "c",
+     "textEn": "wukong was punished for breaking a glass in heaven.",
+     "textZh": "悟空因为在天上打碎了一只玻璃而受到了惩罚。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    }
+   ],
+   "lessonCardId": "ep026-official-quiz-001"
+  }
+ },
+ "map": {
+  "theme": "generic",
+  "coordinateSpace": "world-normalized",
+  "worldTiles": 2,
+  "regions": {
+   "hero": 0,
+   "waves": [
+    0,
+    1
+   ],
+   "npc": {
+    "intro": 0,
+    "quiz": 1
+   },
+   "boss": 3
+  },
+  "walkable": {
+   "space": "world",
+   "x": 0.0,
+   "y": 0.16,
+   "w": 1.0,
+   "h": 0.79,
+   "rects": [
+    {
+     "x": 0.0,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.66,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    }
+   ]
+  },
+  "heroSpawn": {
+   "x": 0.06,
+   "y": 0.31
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.31,
+    "y": 0.23
+   },
+   {
+    "x": 0.38,
+    "y": 0.27
+   },
+   {
+    "x": 0.34,
+    "y": 0.33
+   },
+   {
+    "x": 0.41,
+    "y": 0.24
+   }
+  ],
+  "waveSpawns": [
+   [
+    {
+     "x": 0.31,
+     "y": 0.23
+    },
+    {
+     "x": 0.38,
+     "y": 0.27
+    },
+    {
+     "x": 0.34,
+     "y": 0.33
+    },
+    {
+     "x": 0.41,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.81,
+     "y": 0.23
+    },
+    {
+     "x": 0.88,
+     "y": 0.27
+    },
+    {
+     "x": 0.84,
+     "y": 0.33
+    },
+    {
+     "x": 0.91,
+     "y": 0.24
+    }
+   ]
+  ],
+  "orbSpawns": [
+   [
+    {
+     "x": 0.11,
+     "y": 0.25
+    },
+    {
+     "x": 0.16,
+     "y": 0.31
+    },
+    {
+     "x": 0.12,
+     "y": 0.37
+    },
+    {
+     "x": 0.18,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.61,
+     "y": 0.25
+    },
+    {
+     "x": 0.66,
+     "y": 0.31
+    },
+    {
+     "x": 0.62,
+     "y": 0.37
+    },
+    {
+     "x": 0.68,
+     "y": 0.24
+    }
+   ]
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "shawujing",
+    "nameZh": "沙僧",
+    "x": 0.08,
+    "y": 0.26
+   },
+   {
+    "role": "quiz",
+    "sprite": "shawujing",
+    "nameZh": "沙僧",
+    "x": 0.7,
+    "y": 0.39
+   }
+  ],
+  "bossSpot": {
+   "x": 0.94,
+   "y": 0.85
+  }
+ }
+}

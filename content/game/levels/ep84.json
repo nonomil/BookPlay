@@ -1,0 +1,584 @@
+{
+ "schema_version": 1,
+ "ep": 84,
+ "title": {
+  "en": "The Sad King",
+  "zh": "西游记 第84集"
+ },
+ "collection": "c11",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "powerdemon",
+   "nameZh": "大力妖王",
+   "mode": "sparring",
+   "sprite": "powerdemon"
+  },
+  "minors": [
+   {
+    "id": "imp",
+    "nameZh": "小妖",
+    "sprite": "imp"
+   }
+  ]
+ },
+ "background": {
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep84/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "\"I wish I had money,\" Bajie moaned.",
+   "textZh": "\"真希望我有钱啊,\"八戒哀叹道。",
+   "illustration": "assets/adv_frames/ep84/f1.jpg",
+   "sourceNodeId": "n001",
+   "audioRef": "sent_en:\"I wish I had money,\" Bajie moaned."
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "\"All this food looks so good.\"",
+   "textZh": "\"这些食物看起来都很好吃。\"",
+   "illustration": "assets/adv_frames/ep84/f2.jpg",
+   "sourceNodeId": "n002",
+   "audioRef": "sent_en:\"All this food looks so good.\""
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "moan",
+   "zh": "1. 抱怨,(2. 呻吟)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep84/f1.jpg"
+  },
+  {
+   "term": "scarlet",
+   "zh": "猩红色的,绯红色的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep84/f3.jpg"
+  },
+  {
+   "term": "kingdom",
+   "zh": "王国",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep84/f3.jpg"
+  },
+  {
+   "term": "line",
+   "zh": "1. 排队,排列成行,(2. 线,绳)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep84/f0.jpg"
+  },
+  {
+   "term": "a crowd of",
+   "zh": "一群人",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep84/f3.jpg"
+  },
+  {
+   "term": "sign",
+   "zh": "1. 告示,(2. 征兆,前兆,3. 手势,暗号)",
+   "ipa": "saɪn",
+   "illustration": "assets/adv_frames/ep84/f1.jpg"
+  },
+  {
+   "term": "seek",
+   "zh": "1. 寻求(方法,帮助等),(2. 搜索,寻觅,3. 谋求,追求)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep84/f1.jpg"
+  },
+  {
+   "term": "defeat",
+   "zh": "1. 战胜,击败,(2. 失败,挫折)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep84/f1.jpg"
+  },
+  {
+   "term": "report",
+   "zh": "1. 报到,(2. 报告, 3. (报纸等的)报导)",
+   "ipa": "rɪˈpɔː(r)t",
+   "illustration": "assets/adv_frames/ep84/f1.jpg"
+  },
+  {
+   "term": "royal",
+   "zh": "王的,王室的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep84/f1.jpg"
+  },
+  {
+   "term": "delay",
+   "zh": "使延缓,使延期",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep84/f3.jpg"
+  },
+  {
+   "term": "master",
+   "zh": "1. 大师,师傅,2. (狗、仆人等的)主人",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep84/f0.jpg"
+  }
+ ],
+ "wordPool": [
+  {
+   "term": "moan",
+   "zh": "1. 抱怨,(2. 呻吟)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep84/f1.jpg"
+  },
+  {
+   "term": "scarlet",
+   "zh": "猩红色的,绯红色的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep84/f3.jpg"
+  },
+  {
+   "term": "kingdom",
+   "zh": "王国",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep84/f3.jpg"
+  },
+  {
+   "term": "line",
+   "zh": "1. 排队,排列成行,(2. 线,绳)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep84/f0.jpg"
+  },
+  {
+   "term": "a crowd of",
+   "zh": "一群人",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep84/f3.jpg"
+  },
+  {
+   "term": "sign",
+   "zh": "1. 告示,(2. 征兆,前兆,3. 手势,暗号)",
+   "ipa": "saɪn",
+   "illustration": "assets/adv_frames/ep84/f1.jpg"
+  },
+  {
+   "term": "seek",
+   "zh": "1. 寻求(方法,帮助等),(2. 搜索,寻觅,3. 谋求,追求)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep84/f1.jpg"
+  },
+  {
+   "term": "defeat",
+   "zh": "1. 战胜,击败,(2. 失败,挫折)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep84/f1.jpg"
+  },
+  {
+   "term": "report",
+   "zh": "1. 报到,(2. 报告, 3. (报纸等的)报导)",
+   "ipa": "rɪˈpɔː(r)t",
+   "illustration": "assets/adv_frames/ep84/f1.jpg"
+  },
+  {
+   "term": "royal",
+   "zh": "王的,王室的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep84/f1.jpg"
+  },
+  {
+   "term": "delay",
+   "zh": "使延缓,使延期",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep84/f3.jpg"
+  },
+  {
+   "term": "master",
+   "zh": "1. 大师,师傅,2. (狗、仆人等的)主人",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep84/f0.jpg"
+  },
+  {
+   "term": "gate",
+   "zh": "大门",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep84/f3.jpg"
+  },
+  {
+   "term": "court",
+   "zh": "1. 宫廷,王室,(2. 法庭,法院,3. (竞赛的)场地,球场)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep84/f0.jpg"
+  },
+  {
+   "term": "throne",
+   "zh": "王位,王座",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep84/f1.jpg"
+  },
+  {
+   "term": "Your Majesty",
+   "zh": "尊敬的陛下",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep84/f0.jpg"
+  },
+  {
+   "term": "upset",
+   "zh": "不快的,心烦意乱的",
+   "ipa": "ˌʌpˈset][ʌpˈset",
+   "illustration": "assets/adv_frames/ep84/f1.jpg"
+  },
+  {
+   "term": "cover",
+   "zh": "藏着,捂住,遮蔽",
+   "ipa": "ˈkʌvə(r)",
+   "illustration": "assets/adv_frames/ep84/f1.jpg"
+  },
+  {
+   "term": "burst out",
+   "zh": "突然开始(某事),突然进入(某种状态)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep84/f1.jpg"
+  },
+  {
+   "term": "hope",
+   "zh": "希望",
+   "ipa": "həʊp",
+   "illustration": "assets/adv_frames/ep84/f1.jpg"
+  },
+  {
+   "term": "scratch",
+   "zh": "抓,搔",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep84/f0.jpg"
+  },
+  {
+   "term": "hiss",
+   "zh": "1. (以不满的语气)小声说,(2. (蛇等)发出嘶嘶声)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep84/f0.jpg"
+  },
+  {
+   "term": "respect",
+   "zh": "尊敬,尊重",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep84/f0.jpg"
+  },
+  {
+   "term": "ignore",
+   "zh": "忽视,不理会",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep84/f1.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "moan",
+     "zh": "1. 抱怨,(2. 呻吟)",
+     "sprite": "imp"
+    },
+    {
+     "term": "scarlet",
+     "zh": "猩红色的,绯红色的",
+     "sprite": "imp"
+    },
+    {
+     "term": "kingdom",
+     "zh": "王国",
+     "sprite": "imp"
+    },
+    {
+     "term": "line",
+     "zh": "1. 排队,排列成行,(2. 线,绳)",
+     "sprite": "imp"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "a crowd of",
+     "zh": "一群人",
+     "sprite": "imp"
+    },
+    {
+     "term": "sign",
+     "zh": "1. 告示,(2. 征兆,前兆,3. 手势,暗号)",
+     "sprite": "imp"
+    },
+    {
+     "term": "seek",
+     "zh": "1. 寻求(方法,帮助等),(2. 搜索,寻觅,3. 谋求,追求)",
+     "sprite": "imp"
+    },
+    {
+     "term": "defeat",
+     "zh": "1. 战胜,击败,(2. 失败,挫折)",
+     "sprite": "imp"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "report",
+    "zh": "1. 报到,(2. 报告, 3. (报纸等的)报导)"
+   },
+   {
+    "term": "royal",
+    "zh": "王的,王室的"
+   },
+   {
+    "term": "delay",
+    "zh": "使延缓,使延期"
+   },
+   {
+    "term": "master",
+    "zh": "1. 大师,师傅,2. (狗、仆人等的)主人"
+   }
+  ],
+  "taunts": [
+   "powerdemon.1",
+   "powerdemon.2",
+   "powerdemon.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=84",
+ "npcDialogue": {
+  "intro": {
+   "id": "ep84-map-intro",
+   "lines": [
+    {
+     "id": "ep84-map-intro-1",
+     "sourceNodeId": "n001",
+     "speaker": "narrator",
+     "textEn": "\"I wish I had money,\" Bajie moaned.",
+     "textZh": "\"真希望我有钱啊,\"八戒哀叹道。",
+     "audioRef": "sent_en:\"I wish I had money,\" Bajie moaned.",
+     "audioStart": 11.0,
+     "audioEnd": 16.325
+    },
+    {
+     "id": "ep84-map-intro-2",
+     "sourceNodeId": "n002",
+     "speaker": "narrator",
+     "textEn": "\"All this food looks so good.\"",
+     "textZh": "\"这些食物看起来都很好吃。\"",
+     "audioRef": "sent_en:\"All this food looks so good.\"",
+     "audioStart": 16.326,
+     "audioEnd": 19.277
+    }
+   ]
+  },
+  "quiz": {
+   "id": "ep84-map-quiz",
+   "lines": [
+    {
+     "id": "ep84-map-quiz-1",
+     "sourceNodeId": "n009",
+     "speaker": "narrator",
+     "textEn": "The sign read: \"The King of the Scarlet Kingdom is seeking help. Anyone who can defeat demons must report to the royal palace.\"",
+     "textZh": "标牌上写着:\"猩红王国国王现寻求援助。任何能够击败恶魔者,请立即前往皇宫报到。\"",
+     "audioRef": "sent_en:The sign read: \"The King of the Scarlet Kingdom is seeking help. Anyone who can defeat demons must report to the royal palace.\"",
+     "audioStart": 44.783,
+     "audioEnd": 56.745
+    }
+   ],
+   "question": {
+    "id": "ep084-official-quiz-001",
+    "textEn": "which is not true?",
+    "textZh": "哪一项是不正确的？"
+   },
+   "word": {
+    "term": "moan",
+    "zh": "1. 抱怨,(2. 呻吟)",
+    "ipa": ""
+   },
+   "options": [
+    {
+     "id": "a",
+     "textEn": "the demon attacked with water.",
+     "textZh": "恶魔用水攻击。",
+     "correct": true,
+     "feedback": "对了。恶魔用水攻击。"
+    },
+    {
+     "id": "b",
+     "textEn": "the travelers reported to the palace.",
+     "textZh": "旅行者向宫殿报告了。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    },
+    {
+     "id": "c",
+     "textEn": "wukong jumped off of the mountain.",
+     "textZh": "悟空从山上跳了下来。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    }
+   ],
+   "lessonCardId": "ep084-official-quiz-001"
+  }
+ },
+ "map": {
+  "theme": "generic",
+  "coordinateSpace": "world-normalized",
+  "worldTiles": 2,
+  "regions": {
+   "hero": 0,
+   "waves": [
+    0,
+    1
+   ],
+   "npc": {
+    "intro": 0,
+    "quiz": 1
+   },
+   "boss": 3
+  },
+  "walkable": {
+   "space": "world",
+   "x": 0.0,
+   "y": 0.16,
+   "w": 1.0,
+   "h": 0.79,
+   "rects": [
+    {
+     "x": 0.0,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.66,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    }
+   ]
+  },
+  "heroSpawn": {
+   "x": 0.06,
+   "y": 0.31
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.31,
+    "y": 0.23
+   },
+   {
+    "x": 0.38,
+    "y": 0.27
+   },
+   {
+    "x": 0.34,
+    "y": 0.33
+   },
+   {
+    "x": 0.41,
+    "y": 0.24
+   }
+  ],
+  "waveSpawns": [
+   [
+    {
+     "x": 0.31,
+     "y": 0.23
+    },
+    {
+     "x": 0.38,
+     "y": 0.27
+    },
+    {
+     "x": 0.34,
+     "y": 0.33
+    },
+    {
+     "x": 0.41,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.81,
+     "y": 0.23
+    },
+    {
+     "x": 0.88,
+     "y": 0.27
+    },
+    {
+     "x": 0.84,
+     "y": 0.33
+    },
+    {
+     "x": 0.91,
+     "y": 0.24
+    }
+   ]
+  ],
+  "orbSpawns": [
+   [
+    {
+     "x": 0.11,
+     "y": 0.25
+    },
+    {
+     "x": 0.16,
+     "y": 0.31
+    },
+    {
+     "x": 0.12,
+     "y": 0.37
+    },
+    {
+     "x": 0.18,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.61,
+     "y": 0.25
+    },
+    {
+     "x": 0.66,
+     "y": 0.31
+    },
+    {
+     "x": 0.62,
+     "y": 0.37
+    },
+    {
+     "x": 0.68,
+     "y": 0.24
+    }
+   ]
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "imp",
+    "nameZh": "小妖",
+    "x": 0.08,
+    "y": 0.26
+   },
+   {
+    "role": "quiz",
+    "sprite": "imp",
+    "nameZh": "小妖",
+    "x": 0.7,
+    "y": 0.39
+   }
+  ],
+  "bossSpot": {
+   "x": 0.94,
+   "y": 0.85
+  }
+ }
+}

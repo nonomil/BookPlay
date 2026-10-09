@@ -1,0 +1,2862 @@
+{
+  "schema_version": 1,
+  "episode": 6,
+  "title": {
+    "en": "The Dragon King",
+    "zh": "西游记 第6集"
+  },
+  "sources": [
+    {
+      "kind": "courseware_main_pptx",
+      "file": "G:\\Game\\BookPlay书戏\\data\\西游记课件\\3.3西游记  Journey to the West PPT课件\\006_Journey to the West 6_The Dragon King.pptx",
+      "sha256": "2953b3e1a9080abde7fee5ac8acd24ecd3fcefeb02c56b7ae28ec757e2699d69",
+      "pages": 20
+    },
+    {
+      "kind": "official_quiz_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+      "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929",
+      "pages": 131
+    },
+    {
+      "kind": "intensive_reader_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\02-西游记精读版台词本\\1、带标注版PDF 108集\\006 东海龙王 上.pdf",
+      "sha256": "a7748495a183eaaa6fc878b26004e81e69349b990ea882126cf898023e226814",
+      "pages": 4
+    },
+    {
+      "kind": "intensive_reader_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\02-西游记精读版台词本\\1、带标注版PDF 108集\\006 东海龙王 下.pdf",
+      "sha256": "ce20d081cecd1f4f64f0ddd2854a8298483cc291c4fc0d5f6e382567d03856e1",
+      "pages": 3
+    },
+    {
+      "kind": "courseware_teacher_pptx",
+      "file": "G:\\Game\\BookPlay书戏\\data\\西游记课件\\西游记外教培训11集课件\\西游记外教E006.pptx",
+      "sha256": "c7cebec2aaa15261e1ab06877535a25eaa7f12b1d130f42cfc77678787eabfad",
+      "pages": 23
+    },
+    {
+      "kind": "courseware_screenshots_pptx",
+      "file": "G:\\Game\\BookPlay书戏\\data\\西游记课件\\西游记-外教课动画截图\\Journey to the West 006  The Dragon King_20240106163829.pptx",
+      "sha256": "ab4b23a098f93a42b3db0a56838b703cb7f889368b035cc37636070e43b9cc04",
+      "pages": 45
+    }
+  ],
+  "cards": [
+    {
+      "card_id": "ep006-official-quiz-001",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 1,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "who needed a powerful weapon?",
+        "zh": "谁需要一件强大的武器？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "wukong",
+            "zh": "悟空"
+          },
+          {
+            "id": "b",
+            "en": "the dragon king",
+            "zh": "龙王"
+          },
+          {
+            "id": "c",
+            "en": "the dragon queen",
+            "zh": "龙后"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n001",
+            "quote": "\"What's wrong with our swords and spears?\" asked the gibbon."
+          },
+          {
+            "node_id": "n002",
+            "quote": "\"They're fine for normal monkeys and apes,\" said Wukong."
+          },
+          {
+            "node_id": "n003",
+            "quote": "\"But I am very powerful. I need a much heavier weapon.\""
+          },
+          {
+            "node_id": "n021",
+            "quote": "\"I need a heavy weapon because I'm as strong as a god. I want one of yours.\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 8,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep006-official-quiz-002",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 2,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "where did the dragon king live?",
+        "zh": "龙王住在哪里？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "the bottom of the eastern sea",
+            "zh": "东海之底"
+          },
+          {
+            "id": "b",
+            "en": "the fruit and flower mountain",
+            "zh": "花果山"
+          },
+          {
+            "id": "c",
+            "en": "the cloud palace in heaven",
+            "zh": "天上的云宫"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n005",
+            "quote": "\"A dragon king lives at the bottom of the Eastern Sea,\" he said."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 8,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep006-official-quiz-003",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 3,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "why were the sword and spear not good for wukong?",
+        "zh": "为什么剑和矛对悟空不好？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "they were too light.",
+            "zh": "它们太轻了。"
+          },
+          {
+            "id": "b",
+            "en": "they were too heavy.",
+            "zh": "它们太重了。"
+          },
+          {
+            "id": "c",
+            "en": "they were made of wood.",
+            "zh": "它们是木头做的。"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n026",
+            "quote": "He soon came back, slowly dragging a huge sword."
+          },
+          {
+            "node_id": "n028",
+            "quote": "Wukong picked up the sword with no trouble at all."
+          },
+          {
+            "node_id": "n030",
+            "quote": "\"This sword is too light,\" said Wukong."
+          },
+          {
+            "node_id": "n035",
+            "quote": "A few minutes later, several turtles and octopuses dragged an enormous spear into the room."
+          },
+          {
+            "node_id": "n038",
+            "quote": "Wukong lifted the spear and began stabbing at the air."
+          },
+          {
+            "node_id": "n040",
+            "quote": "\"This spear is too light.\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 8,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep006-official-quiz-004",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 4,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "what did the queen want?",
+        "zh": "女王想要什么？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "she wanted wukong out of the palace.",
+            "zh": "她想让悟空离开宫殿。"
+          },
+          {
+            "id": "b",
+            "en": "she wanted a heavy weapon.",
+            "zh": "她想要一件重型武器。"
+          },
+          {
+            "id": "c",
+            "en": "she wanted to measure the oceans.",
+            "zh": "她想要测量海洋。"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n032",
+            "quote": "\"This monkey is rude,\" the Dragon Queen whispered to her husband."
+          },
+          {
+            "node_id": "n034",
+            "quote": "\"Let's find him something quickly so he'll leave.\""
+          },
+          {
+            "node_id": "n051",
+            "quote": "\"What about the magical iron bar in the treasury? I'm sure that's heavy enough.\""
+          },
+          {
+            "node_id": "n055",
+            "quote": "\"I just want this monkey out of my palace!\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 8,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep006-official-quiz-005",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 5,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "what did the king not say about the pillar?",
+        "zh": "国王没有说过关于那根柱子什么？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "it was small and easy to handle.",
+            "zh": "它很小，易于处理。"
+          },
+          {
+            "id": "b",
+            "en": "it would be wukong's if he could lift it.",
+            "zh": "如果他能举起它，那就是悟空的了。"
+          },
+          {
+            "id": "c",
+            "en": "it was used to measure the oceans and rivers.",
+            "zh": "它被用来测量海洋和河流。"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n060",
+            "quote": "\"It's too heavy for anyone to lift. But if you can lift it, we'll let you have it.\""
+          },
+          {
+            "node_id": "n063",
+            "quote": "An enormous iron pillar stood in the center of the room."
+          },
+          {
+            "node_id": "n065",
+            "quote": "\"That pillar was used to measure all the oceans and rivers,\" said the Dragon King."
+          },
+          {
+            "node_id": "n068",
+            "quote": "\"If you can pick it up, you can have it.\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 8,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep006-vocab-001",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 101,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "fine",
+        "zh": "好的"
+      },
+      "payload": {
+        "term": "fine",
+        "ipa": "faɪn",
+        "pos": "",
+        "def": "好的",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ],
+        "gloss": "好的"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "006 东海龙王 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "a7748495a183eaaa6fc878b26004e81e69349b990ea882126cf898023e226814"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep006-vocab-002",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 102,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "normal",
+        "zh": "常态,通常标准"
+      },
+      "payload": {
+        "term": "normal",
+        "ipa": "ˈnɔː (r)ml",
+        "pos": "adj.",
+        "def": "adj.正常的,一般的 n.[U]常态,通常标准",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "006 东海龙王 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "a7748495a183eaaa6fc878b26004e81e69349b990ea882126cf898023e226814"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep006-vocab-003",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 103,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "monkey",
+        "zh": "猴子"
+      },
+      "payload": {
+        "term": "monkey",
+        "ipa": "ˈmʌŋki",
+        "pos": "n.",
+        "def": "n.[C]猴子",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "006 东海龙王 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "a7748495a183eaaa6fc878b26004e81e69349b990ea882126cf898023e226814"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep006-vocab-004",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 104,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "heavy",
+        "zh": "adj.重的,大量的,严重的"
+      },
+      "payload": {
+        "term": "heavy",
+        "ipa": "ˈhevi",
+        "pos": "adj.",
+        "def": "adj.重的,大量的,严重的",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "006 东海龙王 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "a7748495a183eaaa6fc878b26004e81e69349b990ea882126cf898023e226814"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "006 东海龙王 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "ce20d081cecd1f4f64f0ddd2854a8298483cc291c4fc0d5f6e382567d03856e1"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep006-vocab-005",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 105,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "think",
+        "zh": "v.认为,想。思考"
+      },
+      "payload": {
+        "term": "think",
+        "ipa": "θɪŋk",
+        "pos": "v.",
+        "def": "v.认为,想。思考",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "006 东海龙王 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "a7748495a183eaaa6fc878b26004e81e69349b990ea882126cf898023e226814"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep006-vocab-006",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 106,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "king",
+        "zh": "君主,国王"
+      },
+      "payload": {
+        "term": "king",
+        "ipa": "kɪŋ",
+        "pos": "n.",
+        "def": "n.[C]君主,国王",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          1,
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "006 东海龙王 上.pdf",
+          "half": "up",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "a7748495a183eaaa6fc878b26004e81e69349b990ea882126cf898023e226814"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "006 东海龙王 下.pdf",
+          "half": "down",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "ce20d081cecd1f4f64f0ddd2854a8298483cc291c4fc0d5f6e382567d03856e1"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep006-vocab-007",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 107,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "good",
+        "zh": "好处,利益,善行"
+      },
+      "payload": {
+        "term": "good",
+        "ipa": "gʊd",
+        "pos": "adj.",
+        "def": "adj.好的,擅长的,有好处的 n.[U]好处,利益,善行",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "006 东海龙王 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "a7748495a183eaaa6fc878b26004e81e69349b990ea882126cf898023e226814"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep006-vocab-008",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 108,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "idea",
+        "zh": "想法,主意"
+      },
+      "payload": {
+        "term": "idea",
+        "ipa": "aɪˈdɪə",
+        "pos": "n.",
+        "def": "n.[C]想法,主意",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "006 东海龙王 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "a7748495a183eaaa6fc878b26004e81e69349b990ea882126cf898023e226814"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep006-vocab-009",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 109,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "quick",
+        "zh": "adj.快的,迅速的,敏捷的"
+      },
+      "payload": {
+        "term": "quick",
+        "ipa": "kwɪk",
+        "pos": "adj.",
+        "def": "adj.快的,迅速的,敏捷的",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "006 东海龙王 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "a7748495a183eaaa6fc878b26004e81e69349b990ea882126cf898023e226814"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep006-vocab-010",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 110,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "ocean",
+        "zh": "(五大洋之一的)洋"
+      },
+      "payload": {
+        "term": "ocean",
+        "ipa": "ˈəʊʃ(ə)n",
+        "pos": "n.",
+        "def": "n.[sing.]大海,海洋 [C](五大洋之一的)洋",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          1,
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "006 东海龙王 上.pdf",
+          "half": "up",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "a7748495a183eaaa6fc878b26004e81e69349b990ea882126cf898023e226814"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "006 东海龙王 下.pdf",
+          "half": "down",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "ce20d081cecd1f4f64f0ddd2854a8298483cc291c4fc0d5f6e382567d03856e1"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep006-vocab-011",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 111,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "deep",
+        "zh": "adj.深的,纵深的 adv.深深地"
+      },
+      "payload": {
+        "term": "deep",
+        "ipa": "diːp",
+        "pos": "adj.",
+        "def": "adj.深的,纵深的 adv.深深地",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "006 东海龙王 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "a7748495a183eaaa6fc878b26004e81e69349b990ea882126cf898023e226814"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep006-vocab-012",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 112,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "large",
+        "zh": "adj.大号的,大的,大量的"
+      },
+      "payload": {
+        "term": "large",
+        "ipa": "lɑː(r)dʒ",
+        "pos": "adj.",
+        "def": "adj.大号的,大的,大量的",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          1,
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "006 东海龙王 上.pdf",
+          "half": "up",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "a7748495a183eaaa6fc878b26004e81e69349b990ea882126cf898023e226814"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "006 东海龙王 下.pdf",
+          "half": "down",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "ce20d081cecd1f4f64f0ddd2854a8298483cc291c4fc0d5f6e382567d03856e1"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep006-vocab-013",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 113,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "palace",
+        "zh": "王宫,宫殿 快,他就来到了一座非常大的宫殿 兵器”"
+      },
+      "payload": {
+        "term": "palace",
+        "ipa": "ˈpæləs",
+        "pos": "n.",
+        "def": "n.[C]王宫,宫殿 快,他就来到了一座非常大的宫殿 兵器”",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "006 东海龙王 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "a7748495a183eaaa6fc878b26004e81e69349b990ea882126cf898023e226814"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "006 东海龙王 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "ce20d081cecd1f4f64f0ddd2854a8298483cc291c4fc0d5f6e382567d03856e1"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep006-vocab-014",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 114,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "sit",
+        "zh": "v.坐"
+      },
+      "payload": {
+        "term": "sit",
+        "ipa": "sɪt",
+        "pos": "v.",
+        "def": "v.坐",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "006 东海龙王 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "a7748495a183eaaa6fc878b26004e81e69349b990ea882126cf898023e226814"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep006-vocab-015",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 115,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "have",
+        "zh": "vt.经受,有,吃,得(病) aux v.与过去分词构成完成时态"
+      },
+      "payload": {
+        "term": "have",
+        "ipa": "hæv",
+        "pos": "vt.",
+        "def": "vt.经受,有,吃,得(病) aux v.与过去分词构成完成时态",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "006 东海龙王 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "a7748495a183eaaa6fc878b26004e81e69349b990ea882126cf898023e226814"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "006 东海龙王 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "ce20d081cecd1f4f64f0ddd2854a8298483cc291c4fc0d5f6e382567d03856e1"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep006-vocab-016",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 116,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "look",
+        "zh": "看,注视,外表,表情"
+      },
+      "payload": {
+        "term": "look",
+        "ipa": "lʊk",
+        "pos": "vi.",
+        "def": "vi.看 v.-link.看上去 n.[C]看,注视,外表,表情",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "006 东海龙王 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "a7748495a183eaaa6fc878b26004e81e69349b990ea882126cf898023e226814"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "006 东海龙王 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "ce20d081cecd1f4f64f0ddd2854a8298483cc291c4fc0d5f6e382567d03856e1"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep006-vocab-017",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 117,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "walk",
+        "zh": "步行的路径"
+      },
+      "payload": {
+        "term": "walk",
+        "ipa": "wɔː k",
+        "pos": "n.",
+        "def": "n.[C]行走,步行 v.行走,步行 n.[C]步行的路径",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "006 东海龙王 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "a7748495a183eaaa6fc878b26004e81e69349b990ea882126cf898023e226814"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep006-vocab-018",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 118,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "name",
+        "zh": "名字,名称 vt.命名,给......取名"
+      },
+      "payload": {
+        "term": "name",
+        "ipa": "neɪm",
+        "pos": "n.",
+        "def": "n.[C]名字,名称 vt.命名,给......取名",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "006 东海龙王 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "a7748495a183eaaa6fc878b26004e81e69349b990ea882126cf898023e226814"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep006-vocab-019",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 119,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "nice",
+        "zh": "adj.令人愉快的,宜人的,友好的"
+      },
+      "payload": {
+        "term": "nice",
+        "ipa": "naɪs",
+        "pos": "adj.",
+        "def": "adj.令人愉快的,宜人的,友好的",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "006 东海龙王 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "a7748495a183eaaa6fc878b26004e81e69349b990ea882126cf898023e226814"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep006-vocab-020",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 120,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "meet",
+        "zh": "v.遇见,相逢;迎接,满足"
+      },
+      "payload": {
+        "term": "meet",
+        "ipa": "miːt",
+        "pos": "v.",
+        "def": "v.遇见,相逢;迎接,满足",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "006 东海龙王 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "a7748495a183eaaa6fc878b26004e81e69349b990ea882126cf898023e226814"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep006-vocab-021",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 121,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "queen",
+        "zh": "王后,女王"
+      },
+      "payload": {
+        "term": "queen",
+        "ipa": "kwiːn",
+        "pos": "n.",
+        "def": "n.[C]王后,女王",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          1,
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "006 东海龙王 上.pdf",
+          "half": "up",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "a7748495a183eaaa6fc878b26004e81e69349b990ea882126cf898023e226814"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "006 东海龙王 下.pdf",
+          "half": "down",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "ce20d081cecd1f4f64f0ddd2854a8298483cc291c4fc0d5f6e382567d03856e1"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep006-vocab-022",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 122,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "like",
+        "zh": "喜好,爱好 conj.像......一样,如同"
+      },
+      "payload": {
+        "term": "like",
+        "ipa": "laɪk",
+        "pos": "vt.",
+        "def": "vt.喜欢,喜爱 prep.像,怎么样,例如 n.[pl.]喜好,爱好 conj.像......一样,如同",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "006 东海龙王 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "a7748495a183eaaa6fc878b26004e81e69349b990ea882126cf898023e226814"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep006-vocab-023",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 123,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "tea",
+        "zh": "茶,茶叶"
+      },
+      "payload": {
+        "term": "tea",
+        "ipa": "tiː",
+        "pos": "n.",
+        "def": "n.[U]茶,茶叶",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "006 东海龙王 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "a7748495a183eaaa6fc878b26004e81e69349b990ea882126cf898023e226814"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep006-vocab-024",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 124,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "strong",
+        "zh": "adj.强烈的,强壮的"
+      },
+      "payload": {
+        "term": "strong",
+        "ipa": "strɒŋ",
+        "pos": "adj.",
+        "def": "adj.强烈的,强壮的",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "006 东海龙王 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "a7748495a183eaaa6fc878b26004e81e69349b990ea882126cf898023e226814"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep006-vocab-025",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 125,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "go",
+        "zh": "vi.去,走 v.link.变成,变得"
+      },
+      "payload": {
+        "term": "go",
+        "ipa": "ɡəʊ",
+        "pos": "vi.",
+        "def": "vi.去,走 v.link.变成,变得",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "006 东海龙王 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "a7748495a183eaaa6fc878b26004e81e69349b990ea882126cf898023e226814"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep006-vocab-026",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 126,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "fall",
+        "zh": "落下,瀑布,(美式)秋天"
+      },
+      "payload": {
+        "term": "fall",
+        "ipa": "fɔːl",
+        "pos": "vi.",
+        "def": "vi.倒塌,跌倒,掉落,(数量) 减少,下降 v-link.进入某种状态 n.[C]落下,瀑布,(美式)秋天",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "006 东海龙王 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "a7748495a183eaaa6fc878b26004e81e69349b990ea882126cf898023e226814"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep006-vocab-027",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 127,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "trouble",
+        "zh": "困 境;麻烦 vt.使烦恼,麻烦"
+      },
+      "payload": {
+        "term": "trouble",
+        "ipa": "ˈtrʌbl",
+        "pos": "n.",
+        "def": "n.[C,U]问题,困难,苦恼[U]困 境;麻烦 vt.使烦恼,麻烦",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "006 东海龙王 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "a7748495a183eaaa6fc878b26004e81e69349b990ea882126cf898023e226814"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep006-vocab-028",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 128,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "right",
+        "zh": "权利"
+      },
+      "payload": {
+        "term": "right",
+        "ipa": "raɪt",
+        "pos": "adj.",
+        "def": "adj.正确的,适当的,右边的 adv.向右边,立即 n.[sing.]右边[C,U]权利",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "006 东海龙王 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "a7748495a183eaaa6fc878b26004e81e69349b990ea882126cf898023e226814"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep006-vocab-029",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 129,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "dear",
+        "zh": "亲爱的"
+      },
+      "payload": {
+        "term": "dear",
+        "ipa": "dɪə(r)",
+        "pos": "adj.",
+        "def": "亲爱的",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ],
+        "gloss": "亲爱的"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "006 东海龙王 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "a7748495a183eaaa6fc878b26004e81e69349b990ea882126cf898023e226814"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep006-vocab-030",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 130,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "leave",
+        "zh": "休假"
+      },
+      "payload": {
+        "term": "leave",
+        "ipa": "liːv",
+        "pos": "v.",
+        "def": "v.离开,留下,使处于...... n.[U]休假",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          1,
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "006 东海龙王 上.pdf",
+          "half": "up",
+          "pages": [
+            1,
+            3
+          ],
+          "sha256": "a7748495a183eaaa6fc878b26004e81e69349b990ea882126cf898023e226814"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "006 东海龙王 下.pdf",
+          "half": "down",
+          "pages": [
+            1,
+            3
+          ],
+          "sha256": "ce20d081cecd1f4f64f0ddd2854a8298483cc291c4fc0d5f6e382567d03856e1"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep006-vocab-031",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 131,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "minute",
+        "zh": "时刻,一会儿"
+      },
+      "payload": {
+        "term": "minute",
+        "ipa": "ˈmɪnɪt",
+        "pos": "n.",
+        "def": "n.[C]分钟 [sing.]时刻,一会儿",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "006 东海龙王 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "a7748495a183eaaa6fc878b26004e81e69349b990ea882126cf898023e226814"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep006-vocab-032",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 132,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "several",
+        "zh": "adj.几个的,数个的 pron.几个,数个,一些"
+      },
+      "payload": {
+        "term": "several",
+        "ipa": "ˈsevrəl",
+        "pos": "adj.",
+        "def": "adj.几个的,数个的 pron.几个,数个,一些",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "006 东海龙王 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "a7748495a183eaaa6fc878b26004e81e69349b990ea882126cf898023e226814"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep006-vocab-033",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 133,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "light",
+        "zh": "电灯 adj.轻的,轻柔的,程度轻的,少 量的,浅色的 v.点燃,照亮"
+      },
+      "payload": {
+        "term": "light",
+        "ipa": "laɪt",
+        "pos": "n.",
+        "def": "n.[U]光,光线,光亮;[C]电灯 adj.轻的,轻柔的,程度轻的,少 量的,浅色的 v.点燃,照亮",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "006 东海龙王 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "ce20d081cecd1f4f64f0ddd2854a8298483cc291c4fc0d5f6e382567d03856e1"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep006-vocab-034",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 134,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "find",
+        "zh": "vt.找到,发现,查找,查明"
+      },
+      "payload": {
+        "term": "find",
+        "ipa": "faɪnd",
+        "pos": "vt.",
+        "def": "vt.找到,发现,查找,查明",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "006 东海龙王 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "ce20d081cecd1f4f64f0ddd2854a8298483cc291c4fc0d5f6e382567d03856e1"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep006-vocab-035",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 135,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "something",
+        "zh": "pron.(表示不确切的描述或数 量)大致,某事,某物"
+      },
+      "payload": {
+        "term": "something",
+        "ipa": "ˈsʌmθɪŋ",
+        "pos": "pron.",
+        "def": "pron.(表示不确切的描述或数 量)大致,某事,某物",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "006 东海龙王 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "ce20d081cecd1f4f64f0ddd2854a8298483cc291c4fc0d5f6e382567d03856e1"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep006-vocab-036",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 136,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "anything",
+        "zh": "pron.(常用于否定句或疑问句) 任何东西,任何事物"
+      },
+      "payload": {
+        "term": "anything",
+        "ipa": "ˈeniθɪŋ",
+        "pos": "pron.",
+        "def": "pron.(常用于否定句或疑问句) 任何东西,任何事物",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "006 东海龙王 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "ce20d081cecd1f4f64f0ddd2854a8298483cc291c4fc0d5f6e382567d03856e1"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep006-vocab-037",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 137,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "say",
+        "zh": "v.说,讲"
+      },
+      "payload": {
+        "term": "say",
+        "ipa": "seɪ",
+        "pos": "v.",
+        "def": "v.说,讲",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "006 东海龙王 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "ce20d081cecd1f4f64f0ddd2854a8298483cc291c4fc0d5f6e382567d03856e1"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep006-vocab-038",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 138,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "magic",
+        "zh": "魔术;魔法,魔力,魅力"
+      },
+      "payload": {
+        "term": "magic",
+        "ipa": "ˈmædʒɪk",
+        "pos": "adj.",
+        "def": "adj.有魔力的,有神奇力量的 n.[U]魔术;魔法,魔力,魅力",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "006 东海龙王 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "ce20d081cecd1f4f64f0ddd2854a8298483cc291c4fc0d5f6e382567d03856e1"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep006-vocab-039",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 139,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "treasure",
+        "zh": "宝物 vt.珍视,珍惜"
+      },
+      "payload": {
+        "term": "treasure",
+        "ipa": "ˈtreʒə(r)",
+        "pos": "n.",
+        "def": "n.[U]珠宝,财富 [C]宝物 vt.珍视,珍惜",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "006 东海龙王 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "ce20d081cecd1f4f64f0ddd2854a8298483cc291c4fc0d5f6e382567d03856e1"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep006-vocab-040",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 140,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "care",
+        "zh": "照顾,小心"
+      },
+      "payload": {
+        "term": "care",
+        "ipa": "keə(r)",
+        "pos": "v.",
+        "def": "v.关心,担忧,在意 n.[U]照顾,小心",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "006 东海龙王 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "ce20d081cecd1f4f64f0ddd2854a8298483cc291c4fc0d5f6e382567d03856e1"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep006-vocab-041",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 141,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "enough",
+        "zh": "足够的"
+      },
+      "payload": {
+        "term": "enough",
+        "ipa": "ɪˈnʌf",
+        "pos": "adj.",
+        "def": "足够的",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ],
+        "gloss": "足够的"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "006 东海龙王 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "ce20d081cecd1f4f64f0ddd2854a8298483cc291c4fc0d5f6e382567d03856e1"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep006-vocab-042",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 142,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "bring",
+        "zh": "vt.带来,取来,使处于某种状况"
+      },
+      "payload": {
+        "term": "bring",
+        "ipa": "brɪŋ",
+        "pos": "vt.",
+        "def": "vt.带来,取来,使处于某种状况",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "006 东海龙王 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "ce20d081cecd1f4f64f0ddd2854a8298483cc291c4fc0d5f6e382567d03856e1"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep006-vocab-043",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 143,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "here",
+        "zh": "adv.这就是,在这里"
+      },
+      "payload": {
+        "term": "here",
+        "ipa": "hɪə(r)",
+        "pos": "adv.",
+        "def": "adv.这就是,在这里",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "006 东海龙王 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "ce20d081cecd1f4f64f0ddd2854a8298483cc291c4fc0d5f6e382567d03856e1"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep006-vocab-044",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 144,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "anyone",
+        "zh": "pron.任何人"
+      },
+      "payload": {
+        "term": "anyone",
+        "ipa": "ˈeniwʌn",
+        "pos": "pron.",
+        "def": "pron.任何人",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "006 东海龙王 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "ce20d081cecd1f4f64f0ddd2854a8298483cc291c4fc0d5f6e382567d03856e1"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep006-vocab-045",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 145,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "lift",
+        "zh": "电梯,搭便车"
+      },
+      "payload": {
+        "term": "lift",
+        "ipa": "lɪft",
+        "pos": "v.",
+        "def": "v.举起,抬高;使高兴起来 n.[C]电梯,搭便车",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "006 东海龙王 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "ce20d081cecd1f4f64f0ddd2854a8298483cc291c4fc0d5f6e382567d03856e1"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep006-vocab-046",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 146,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "let",
+        "zh": "vt.允许,让"
+      },
+      "payload": {
+        "term": "let",
+        "ipa": "let",
+        "pos": "vt.",
+        "def": "vt.允许,让",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "006 东海龙王 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "ce20d081cecd1f4f64f0ddd2854a8298483cc291c4fc0d5f6e382567d03856e1"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep006-vocab-047",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 147,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "show",
+        "zh": "展览 vt.给......看,显示,表明"
+      },
+      "payload": {
+        "term": "show",
+        "ipa": "ʃəʊ",
+        "pos": "n.",
+        "def": "n.[C]演出,节目[C,U]展览 vt.给......看,显示,表明",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "006 东海龙王 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "ce20d081cecd1f4f64f0ddd2854a8298483cc291c4fc0d5f6e382567d03856e1"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep006-vocab-048",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 148,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "where",
+        "zh": "adv.在哪里,到哪里"
+      },
+      "payload": {
+        "term": "where",
+        "ipa": "weə(r)",
+        "pos": "adv.",
+        "def": "adv.在哪里,到哪里",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "006 东海龙王 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "ce20d081cecd1f4f64f0ddd2854a8298483cc291c4fc0d5f6e382567d03856e1"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep006-vocab-049",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 149,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "group",
+        "zh": "组,群 vt.把......分组/归类,聚集"
+      },
+      "payload": {
+        "term": "group",
+        "ipa": "ɡruːp",
+        "pos": "n.",
+        "def": "n.[C]组,群 vt.把......分组/归类,聚集",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "006 东海龙王 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "ce20d081cecd1f4f64f0ddd2854a8298483cc291c4fc0d5f6e382567d03856e1"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep006-vocab-050",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 150,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "center",
+        "zh": "中心,中央"
+      },
+      "payload": {
+        "term": "center",
+        "ipa": "ˈsentə(r)",
+        "pos": "n.",
+        "def": "n.(亦作centre)[C]中心,中央",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "006 东海龙王 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "ce20d081cecd1f4f64f0ddd2854a8298483cc291c4fc0d5f6e382567d03856e1"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep006-vocab-051",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 151,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "river",
+        "zh": "河,江"
+      },
+      "payload": {
+        "term": "river",
+        "ipa": "ˈrɪvə(r)",
+        "pos": "n.",
+        "def": "n.[C]河,江",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "006 东海龙王 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "ce20d081cecd1f4f64f0ddd2854a8298483cc291c4fc0d5f6e382567d03856e1"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep006-vocab-052",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 152,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "close",
+        "zh": "adj.亲密的,(在空间、时间上) 接近的 adv.接近 v.关闭"
+      },
+      "payload": {
+        "term": "close",
+        "ipa": "kləʊz",
+        "pos": "adj.",
+        "def": "adj.亲密的,(在空间、时间上) 接近的 adv.接近 v.关闭",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "006 东海龙王 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "ce20d081cecd1f4f64f0ddd2854a8298483cc291c4fc0d5f6e382567d03856e1"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep006-vocab-053",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 153,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "piece",
+        "zh": "片,块,段,条,碎片,一 件,一首,一张"
+      },
+      "payload": {
+        "term": "piece",
+        "ipa": "piːs",
+        "pos": "n.",
+        "def": "n.[C]片,块,段,条,碎片,一 件,一首,一张",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "006 东海龙王 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "ce20d081cecd1f4f64f0ddd2854a8298483cc291c4fc0d5f6e382567d03856e1"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep006-vocab-054",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 154,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "fold",
+        "zh": "v.折叠,对折"
+      },
+      "payload": {
+        "term": "fold",
+        "ipa": "fəʊld",
+        "pos": "v.",
+        "def": "v.折叠,对折",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "006 东海龙王 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "ce20d081cecd1f4f64f0ddd2854a8298483cc291c4fc0d5f6e382567d03856e1"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep006-vocab-055",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 155,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "pick",
+        "zh": "vt.采,摘,选择,挑选,拿取, 挪移"
+      },
+      "payload": {
+        "term": "pick",
+        "ipa": "pɪk",
+        "pos": "vt.",
+        "def": "vt.采,摘,选择,挑选,拿取, 挪移",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "006 东海龙王 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "ce20d081cecd1f4f64f0ddd2854a8298483cc291c4fc0d5f6e382567d03856e1"
+        }
+      ],
+      "review_status": "machine_verified"
+    }
+  ],
+  "teacher_guide": null,
+  "review": {
+    "status": "draft",
+    "reviewed_at": null,
+    "card_stats": {
+      "total": 60,
+      "sentence_choice": 5,
+      "word_review": 55,
+      "machine_verified": 56,
+      "assistant_reviewed": 4,
+      "verified": 60,
+      "needs_review": 0
+    }
+  },
+  "generated_at": "2026-08-31T04:49:35.171736+00:00"
+}

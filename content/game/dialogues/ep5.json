@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "ep": 5,
+  "intro": {
+    "id": "ep5-map-intro",
+    "lines": [
+      {
+        "id": "ep5-map-intro-1",
+        "sourceNodeId": "n001",
+        "speaker": "narrator",
+        "textEn": "\"What happened here?\" Wukong asked the gibbon.",
+        "textZh": "\"这里发生了什么?\"悟空问着那只长臂猿。",
+        "audioRef": "sent_en:\"What happened here?\" Wukong asked the gibbon."
+      },
+      {
+        "id": "ep5-map-intro-2",
+        "sourceNodeId": "n004",
+        "speaker": "narrator",
+        "textEn": "\"A demon attacked us,\" said the gibbon.",
+        "textZh": "\"有个恶魔袭击了我们,\"长臂猿说道。",
+        "audioRef": "sent_en:\"A demon attacked us,\" said the gibbon."
+      }
+    ]
+  },
+  "quiz": {
+    "id": "ep5-map-quiz",
+    "lines": [
+      {
+        "id": "ep5-map-quiz-1",
+        "sourceNodeId": "n010",
+        "speaker": "narrator",
+        "textEn": "\"Wait here,\" Wukong ordered. \"I will handle the demon.\"",
+        "textZh": "\"请在此等候,\"悟空命令道,\"我来对付那妖怪。\"",
+        "audioRef": "sent_en:\"Wait here,\" Wukong ordered. \"I will handle the demon.\""
+      }
+    ],
+    "word": {
+      "term": "demon",
+      "zh": "恶魔"
+    },
+    "question": {
+      "id": "ep005-official-quiz-001",
+      "textEn": "why did wukong go after the demon?",
+      "textZh": "悟空为什么要去追那个妖怪？"
+    },
+    "lessonCardId": "ep005-official-quiz-001",
+    "options": [
+      {
+        "id": "a",
+        "textEn": "to rescue the kidnapped monkeys",
+        "textZh": "营救被绑架的猴子",
+        "correct": true,
+        "feedback": "对了，悟空是去救被抓走的猴子。"
+      },
+      {
+        "id": "b",
+        "textEn": "to show how powerful he is",
+        "textZh": "显示他有多强大",
+        "correct": false,
+        "feedback": "再想想，他是因为猴子被绑架才去的。"
+      },
+      {
+        "id": "c",
+        "textEn": "to be friends with the demon",
+        "textZh": "与恶魔为友",
+        "correct": false,
+        "feedback": "再想想，他是因为猴子被绑架才去的。"
+      }
+    ]
+  }
+}

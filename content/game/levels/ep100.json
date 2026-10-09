@@ -1,0 +1,584 @@
+{
+ "schema_version": 1,
+ "ep": 100,
+ "title": {
+  "en": "A Terrible Robbery",
+  "zh": "西游记 第100集"
+ },
+ "collection": "c13",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "imp",
+   "nameZh": "小妖",
+   "mode": "sparring",
+   "sprite": "imp"
+  },
+  "minors": [
+   {
+    "id": "imp",
+    "nameZh": "小妖",
+    "sprite": "imp"
+   }
+  ]
+ },
+ "background": {
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep100/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "For over a month, the travelers stayed at Squire Kou's house.",
+   "textZh": "一个多月来,这些旅行者一直住在寇员外的家中。",
+   "illustration": "assets/adv_frames/ep100/f1.jpg",
+   "sourceNodeId": "n001",
+   "audioRef": "sent_en:For over a month, the travelers stayed at Squire Kou's house."
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "Every time they tried to leave, the squire begged them to stay longer.",
+   "textZh": "每当他们试图离开时,家仆都会恳求他们再住一会儿。",
+   "illustration": "assets/adv_frames/ep100/f2.jpg",
+   "sourceNodeId": "n002",
+   "audioRef": "sent_en:Every time they tried to leave, the squire begged them to stay longer."
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "robbery",
+   "zh": "抢劫,抢劫案",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep100/f1.jpg"
+  },
+  {
+   "term": "insist",
+   "zh": "坚持要求,主张",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep100/f3.jpg"
+  },
+  {
+   "term": "bite",
+   "zh": "1. 一又的份量,(2. 咬,啃)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep100/f0.jpg"
+  },
+  {
+   "term": "ungrateful",
+   "zh": "忘恩负义的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep100/f0.jpg"
+  },
+  {
+   "term": "fed",
+   "zh": "1. 为......提供食物 (feed-fed),(2. 喂养(动物))",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep100/f0.jpg"
+  },
+  {
+   "term": "grateful",
+   "zh": "感激的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep100/f1.jpg"
+  },
+  {
+   "term": "stable",
+   "zh": "马厩",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep100/f3.jpg"
+  },
+  {
+   "term": "gather",
+   "zh": "1. 收集,(2. 聚集)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep100/f0.jpg"
+  },
+  {
+   "term": "courthouse",
+   "zh": "法院",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep100/f3.jpg"
+  },
+  {
+   "term": "breathlessly",
+   "zh": "气喘地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep100/f0.jpg"
+  },
+  {
+   "term": "valuable",
+   "zh": "1. 值钱的,贵重的,(2. 有用的,有价值的)",
+   "ipa": "ˈvæljuəbl",
+   "illustration": "assets/adv_frames/ep100/f1.jpg"
+  },
+  {
+   "term": "judge",
+   "zh": "1. 法官,审判员,(2. 评委,裁判)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep100/f1.jpg"
+  }
+ ],
+ "wordPool": [
+  {
+   "term": "robbery",
+   "zh": "抢劫,抢劫案",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep100/f1.jpg"
+  },
+  {
+   "term": "insist",
+   "zh": "坚持要求,主张",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep100/f3.jpg"
+  },
+  {
+   "term": "bite",
+   "zh": "1. 一又的份量,(2. 咬,啃)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep100/f0.jpg"
+  },
+  {
+   "term": "ungrateful",
+   "zh": "忘恩负义的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep100/f0.jpg"
+  },
+  {
+   "term": "fed",
+   "zh": "1. 为......提供食物 (feed-fed),(2. 喂养(动物))",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep100/f0.jpg"
+  },
+  {
+   "term": "grateful",
+   "zh": "感激的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep100/f1.jpg"
+  },
+  {
+   "term": "stable",
+   "zh": "马厩",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep100/f3.jpg"
+  },
+  {
+   "term": "gather",
+   "zh": "1. 收集,(2. 聚集)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep100/f0.jpg"
+  },
+  {
+   "term": "courthouse",
+   "zh": "法院",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep100/f3.jpg"
+  },
+  {
+   "term": "breathlessly",
+   "zh": "气喘地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep100/f0.jpg"
+  },
+  {
+   "term": "valuable",
+   "zh": "1. 值钱的,贵重的,(2. 有用的,有价值的)",
+   "ipa": "ˈvæljuəbl",
+   "illustration": "assets/adv_frames/ep100/f1.jpg"
+  },
+  {
+   "term": "judge",
+   "zh": "1. 法官,审判员,(2. 评委,裁判)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep100/f1.jpg"
+  },
+  {
+   "term": "robber",
+   "zh": "强盗",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep100/f1.jpg"
+  },
+  {
+   "term": "broke",
+   "zh": "强行闯入",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep100/f0.jpg"
+  },
+  {
+   "term": "grit",
+   "zh": "咯咯地磨(牙),咬紧(牙)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep100/f0.jpg"
+  },
+  {
+   "term": "arrest",
+   "zh": "逮捕",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep100/f3.jpg"
+  },
+  {
+   "term": "eager",
+   "zh": "渴望的,热切的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep100/f1.jpg"
+  },
+  {
+   "term": "delay",
+   "zh": "1. 使延缓,使延期,(2. 耽搁,延误)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep100/f3.jpg"
+  },
+  {
+   "term": "ax",
+   "zh": "斧子 (=axe)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep100/f3.jpg"
+  },
+  {
+   "term": "bundle",
+   "zh": "1. 捆,卷,束,包裹,(2. 大堆,大批,大量)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep100/f0.jpg"
+  },
+  {
+   "term": "beat up",
+   "zh": "痛打",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep100/f2.jpg"
+  },
+  {
+   "term": "rob",
+   "zh": "抢劫,盗取",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep100/f2.jpg"
+  },
+  {
+   "term": "wealthy",
+   "zh": "富有的,富裕的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep100/f2.jpg"
+  },
+  {
+   "term": "froze",
+   "zh": "1. 愣住,呆住 (freeze-froze), 2. (冻结)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep100/f0.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "robbery",
+     "zh": "抢劫,抢劫案",
+     "sprite": "imp"
+    },
+    {
+     "term": "insist",
+     "zh": "坚持要求,主张",
+     "sprite": "imp"
+    },
+    {
+     "term": "bite",
+     "zh": "1. 一又的份量,(2. 咬,啃)",
+     "sprite": "imp"
+    },
+    {
+     "term": "ungrateful",
+     "zh": "忘恩负义的",
+     "sprite": "imp"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "fed",
+     "zh": "1. 为......提供食物 (feed-fed),(2. 喂养(动物))",
+     "sprite": "imp"
+    },
+    {
+     "term": "grateful",
+     "zh": "感激的",
+     "sprite": "imp"
+    },
+    {
+     "term": "stable",
+     "zh": "马厩",
+     "sprite": "imp"
+    },
+    {
+     "term": "gather",
+     "zh": "1. 收集,(2. 聚集)",
+     "sprite": "imp"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "courthouse",
+    "zh": "法院"
+   },
+   {
+    "term": "breathlessly",
+    "zh": "气喘地"
+   },
+   {
+    "term": "valuable",
+    "zh": "1. 值钱的,贵重的,(2. 有用的,有价值的)"
+   },
+   {
+    "term": "judge",
+    "zh": "1. 法官,审判员,(2. 评委,裁判)"
+   }
+  ],
+  "taunts": [
+   "imp.1",
+   "imp.2",
+   "imp.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=100",
+ "npcDialogue": {
+  "intro": {
+   "id": "ep100-map-intro",
+   "lines": [
+    {
+     "id": "ep100-map-intro-1",
+     "sourceNodeId": "n001",
+     "speaker": "narrator",
+     "textEn": "For over a month, the travelers stayed at Squire Kou's house.",
+     "textZh": "一个多月来,这些旅行者一直住在寇员外的家中。",
+     "audioRef": "sent_en:For over a month, the travelers stayed at Squire Kou's house.",
+     "audioStart": 10.934,
+     "audioEnd": 18.452
+    },
+    {
+     "id": "ep100-map-intro-2",
+     "sourceNodeId": "n002",
+     "speaker": "narrator",
+     "textEn": "Every time they tried to leave, the squire begged them to stay longer.",
+     "textZh": "每当他们试图离开时,家仆都会恳求他们再住一会儿。",
+     "audioRef": "sent_en:Every time they tried to leave, the squire begged them to stay longer.",
+     "audioStart": 18.453,
+     "audioEnd": 25.996
+    }
+   ]
+  },
+  "quiz": {
+   "id": "ep100-map-quiz",
+   "lines": [
+    {
+     "id": "ep100-map-quiz-1",
+     "sourceNodeId": "n024",
+     "speaker": "narrator",
+     "textEn": "\"Robbers broke into our house last night,\" said Lady Kou breathlessly.",
+     "textZh": "\"昨晚有强盗闯入了我们的家,\"寇夫人气喘吁吁地说。",
+     "audioRef": "sent_en:\"Robbers broke into our house last night,\" said Lady Kou breathlessly.",
+     "audioStart": 116.905,
+     "audioEnd": 122.506
+    }
+   ],
+   "question": {
+    "id": "ep100-official-quiz-001",
+    "textEn": "which is not true?",
+    "textZh": "哪一项是不正确的？"
+   },
+   "word": {
+    "term": "robbery",
+    "zh": "抢劫,抢劫案",
+    "ipa": ""
+   },
+   "options": [
+    {
+     "id": "a",
+     "textEn": "the judge scared the robbers away.",
+     "textZh": "法官把抢劫犯吓跑了。",
+     "correct": true,
+     "feedback": "对了。法官把抢劫犯吓跑了。"
+    },
+    {
+     "id": "b",
+     "textEn": "the robbers killed squire kou.",
+     "textZh": "强盗杀了考爵士。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    },
+    {
+     "id": "c",
+     "textEn": "lady kou blamed the travelers.",
+     "textZh": "寇夫人责怪了旅行者。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    }
+   ],
+   "lessonCardId": "ep100-official-quiz-001"
+  }
+ },
+ "map": {
+  "theme": "generic",
+  "coordinateSpace": "world-normalized",
+  "worldTiles": 2,
+  "regions": {
+   "hero": 0,
+   "waves": [
+    0,
+    1
+   ],
+   "npc": {
+    "intro": 0,
+    "quiz": 1
+   },
+   "boss": 3
+  },
+  "walkable": {
+   "space": "world",
+   "x": 0.0,
+   "y": 0.16,
+   "w": 1.0,
+   "h": 0.79,
+   "rects": [
+    {
+     "x": 0.0,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.66,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    }
+   ]
+  },
+  "heroSpawn": {
+   "x": 0.06,
+   "y": 0.31
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.31,
+    "y": 0.23
+   },
+   {
+    "x": 0.38,
+    "y": 0.27
+   },
+   {
+    "x": 0.34,
+    "y": 0.33
+   },
+   {
+    "x": 0.41,
+    "y": 0.24
+   }
+  ],
+  "waveSpawns": [
+   [
+    {
+     "x": 0.31,
+     "y": 0.23
+    },
+    {
+     "x": 0.38,
+     "y": 0.27
+    },
+    {
+     "x": 0.34,
+     "y": 0.33
+    },
+    {
+     "x": 0.41,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.81,
+     "y": 0.23
+    },
+    {
+     "x": 0.88,
+     "y": 0.27
+    },
+    {
+     "x": 0.84,
+     "y": 0.33
+    },
+    {
+     "x": 0.91,
+     "y": 0.24
+    }
+   ]
+  ],
+  "orbSpawns": [
+   [
+    {
+     "x": 0.11,
+     "y": 0.25
+    },
+    {
+     "x": 0.16,
+     "y": 0.31
+    },
+    {
+     "x": 0.12,
+     "y": 0.37
+    },
+    {
+     "x": 0.18,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.61,
+     "y": 0.25
+    },
+    {
+     "x": 0.66,
+     "y": 0.31
+    },
+    {
+     "x": 0.62,
+     "y": 0.37
+    },
+    {
+     "x": 0.68,
+     "y": 0.24
+    }
+   ]
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "imp",
+    "nameZh": "小妖",
+    "x": 0.08,
+    "y": 0.26
+   },
+   {
+    "role": "quiz",
+    "sprite": "imp",
+    "nameZh": "小妖",
+    "x": 0.7,
+    "y": 0.39
+   }
+  ],
+  "bossSpot": {
+   "x": 0.94,
+   "y": 0.85
+  }
+ }
+}

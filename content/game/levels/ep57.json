@@ -1,0 +1,584 @@
+{
+ "schema_version": 1,
+ "ep": 57,
+ "title": {
+  "en": "A Guessing Game",
+  "zh": "西游记 第57集"
+ },
+ "collection": "c08",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "tigerimmortal",
+   "nameZh": "虎力大仙",
+   "mode": "sparring",
+   "sprite": "tigerimmortal"
+  },
+  "minors": [
+   {
+    "id": "imp",
+    "nameZh": "小妖",
+    "sprite": "imp"
+   }
+  ]
+ },
+ "background": {
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep57/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "\"Don't make any rain yet,\" Wukong repeated.",
+   "textZh": "\"现在还不到下雨的时候,\"悟空重复道。",
+   "illustration": "assets/adv_frames/ep57/f1.jpg",
+   "sourceNodeId": "n001",
+   "audioRef": "sent_en:\"Don't make any rain yet,\" Wukong repeated."
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "\"But we must,\" said the Old Woman of the Wind.",
+   "textZh": "\"但我们必须这样做,\"风中老妇说道。",
+   "illustration": "assets/adv_frames/ep57/f2.jpg",
+   "sourceNodeId": "n002",
+   "audioRef": "sent_en:\"But we must,\" said the Old Woman of the Wind."
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "guessing",
+   "zh": "谜语,猜猜看游戏",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep57/f3.jpg"
+  },
+  {
+   "term": "prayer",
+   "zh": "祷告",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep57/f0.jpg"
+  },
+  {
+   "term": "concerned",
+   "zh": "挂虑的,担心的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep57/f3.jpg"
+  },
+  {
+   "term": "obey",
+   "zh": "服从,顺从",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep57/f1.jpg"
+  },
+  {
+   "term": "order",
+   "zh": "1. 命令,指示,(2. 点(菜、饮料等))",
+   "ipa": "ˈɔː(r)də(r)",
+   "illustration": "assets/adv_frames/ep57/f1.jpg"
+  },
+  {
+   "term": "clear",
+   "zh": "1. (云,雾)消散,(2. 明亮的,透明的)",
+   "ipa": "klɪə(r)",
+   "illustration": "assets/adv_frames/ep57/f0.jpg"
+  },
+  {
+   "term": "obviously",
+   "zh": "显然地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep57/f0.jpg"
+  },
+  {
+   "term": "stomp",
+   "zh": "重踩,重踏",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep57/f3.jpg"
+  },
+  {
+   "term": "lose",
+   "zh": "1. (在竞争或比赛中)失败,输掉,(2. 失去,丢失)",
+   "ipa": "luːz",
+   "illustration": "assets/adv_frames/ep57/f1.jpg"
+  },
+  {
+   "term": "ignore",
+   "zh": "忽视,不理会",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep57/f2.jpg"
+  },
+  {
+   "term": "contest",
+   "zh": "竞赛,比赛",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep57/f0.jpg"
+  },
+  {
+   "term": "challenge",
+   "zh": "挑战",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep57/f3.jpg"
+  }
+ ],
+ "wordPool": [
+  {
+   "term": "guessing",
+   "zh": "谜语,猜猜看游戏",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep57/f3.jpg"
+  },
+  {
+   "term": "prayer",
+   "zh": "祷告",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep57/f0.jpg"
+  },
+  {
+   "term": "concerned",
+   "zh": "挂虑的,担心的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep57/f3.jpg"
+  },
+  {
+   "term": "obey",
+   "zh": "服从,顺从",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep57/f1.jpg"
+  },
+  {
+   "term": "order",
+   "zh": "1. 命令,指示,(2. 点(菜、饮料等))",
+   "ipa": "ˈɔː(r)də(r)",
+   "illustration": "assets/adv_frames/ep57/f1.jpg"
+  },
+  {
+   "term": "clear",
+   "zh": "1. (云,雾)消散,(2. 明亮的,透明的)",
+   "ipa": "klɪə(r)",
+   "illustration": "assets/adv_frames/ep57/f0.jpg"
+  },
+  {
+   "term": "obviously",
+   "zh": "显然地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep57/f0.jpg"
+  },
+  {
+   "term": "stomp",
+   "zh": "重踩,重踏",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep57/f3.jpg"
+  },
+  {
+   "term": "lose",
+   "zh": "1. (在竞争或比赛中)失败,输掉,(2. 失去,丢失)",
+   "ipa": "luːz",
+   "illustration": "assets/adv_frames/ep57/f1.jpg"
+  },
+  {
+   "term": "ignore",
+   "zh": "忽视,不理会",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep57/f2.jpg"
+  },
+  {
+   "term": "contest",
+   "zh": "竞赛,比赛",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep57/f0.jpg"
+  },
+  {
+   "term": "challenge",
+   "zh": "挑战",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep57/f3.jpg"
+  },
+  {
+   "term": "guess",
+   "zh": "1. 猜测",
+   "ipa": "ɡes",
+   "illustration": "assets/adv_frames/ep57/f1.jpg"
+  },
+  {
+   "term": "fell open",
+   "zh": "张又结舌",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep57/f0.jpg"
+  },
+  {
+   "term": "pluck",
+   "zh": "采,摘,拔",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep57/f2.jpg"
+  },
+  {
+   "term": "tiny",
+   "zh": "极小的,微小的",
+   "ipa": "ˈtaɪni",
+   "illustration": "assets/adv_frames/ep57/f0.jpg"
+  },
+  {
+   "term": "squeeze",
+   "zh": "挤过(勉强通过)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep57/f0.jpg"
+  },
+  {
+   "term": "crack",
+   "zh": "1. 裂缝,裂痕,(2. 裂开,断裂,3. 打破,打碎)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep57/f1.jpg"
+  },
+  {
+   "term": "ripe",
+   "zh": "(水果、谷物等)成熟的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep57/f1.jpg"
+  },
+  {
+   "term": "pit",
+   "zh": "1. 果核,(2. 洼坑,凹处)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep57/f2.jpg"
+  },
+  {
+   "term": "nervously",
+   "zh": "焦急地,神经质地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep57/f1.jpg"
+  },
+  {
+   "term": "correctly",
+   "zh": "正确地,得体地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep57/f1.jpg"
+  },
+  {
+   "term": "glare",
+   "zh": "怒目注视",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep57/f3.jpg"
+  },
+  {
+   "term": "set free",
+   "zh": "放...自由,释放",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep57/f2.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "guessing",
+     "zh": "谜语,猜猜看游戏",
+     "sprite": "imp"
+    },
+    {
+     "term": "prayer",
+     "zh": "祷告",
+     "sprite": "imp"
+    },
+    {
+     "term": "concerned",
+     "zh": "挂虑的,担心的",
+     "sprite": "imp"
+    },
+    {
+     "term": "obey",
+     "zh": "服从,顺从",
+     "sprite": "imp"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "order",
+     "zh": "1. 命令,指示,(2. 点(菜、饮料等))",
+     "sprite": "imp"
+    },
+    {
+     "term": "clear",
+     "zh": "1. (云,雾)消散,(2. 明亮的,透明的)",
+     "sprite": "imp"
+    },
+    {
+     "term": "obviously",
+     "zh": "显然地",
+     "sprite": "imp"
+    },
+    {
+     "term": "stomp",
+     "zh": "重踩,重踏",
+     "sprite": "imp"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "lose",
+    "zh": "1. (在竞争或比赛中)失败,输掉,(2. 失去,丢失)"
+   },
+   {
+    "term": "ignore",
+    "zh": "忽视,不理会"
+   },
+   {
+    "term": "contest",
+    "zh": "竞赛,比赛"
+   },
+   {
+    "term": "challenge",
+    "zh": "挑战"
+   }
+  ],
+  "taunts": [
+   "tigerimmortal.1",
+   "tigerimmortal.2",
+   "tigerimmortal.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=57",
+ "npcDialogue": {
+  "intro": {
+   "id": "ep57-map-intro",
+   "lines": [
+    {
+     "id": "ep57-map-intro-1",
+     "sourceNodeId": "n001",
+     "speaker": "narrator",
+     "textEn": "\"Don't make any rain yet,\" Wukong repeated.",
+     "textZh": "\"现在还不到下雨的时候,\"悟空重复道。",
+     "audioRef": "sent_en:\"Don't make any rain yet,\" Wukong repeated.",
+     "audioStart": 11.0,
+     "audioEnd": 16.818
+    },
+    {
+     "id": "ep57-map-intro-2",
+     "sourceNodeId": "n002",
+     "speaker": "narrator",
+     "textEn": "\"But we must,\" said the Old Woman of the Wind.",
+     "textZh": "\"但我们必须这样做,\"风中老妇说道。",
+     "audioRef": "sent_en:\"But we must,\" said the Old Woman of the Wind.",
+     "audioStart": 16.819,
+     "audioEnd": 21.205
+    }
+   ]
+  },
+  "quiz": {
+   "id": "ep57-map-quiz",
+   "lines": [
+    {
+     "id": "ep57-map-quiz-1",
+     "sourceNodeId": "n066",
+     "speaker": "narrator",
+     "textEn": "\"You will set the Buddhist monks free now, right?\"",
+     "textZh": "\"您现在要释放这些佛教僧侣了,对吧?\"",
+     "audioRef": "sent_en:\"You will set the Buddhist monks free now, right?\"",
+     "audioStart": 288.046,
+     "audioEnd": 292.195
+    }
+   ],
+   "question": {
+    "id": "ep057-official-quiz-006",
+    "textEn": "which is true?",
+    "textZh": "哪一个是真的？"
+   },
+   "word": {
+    "term": "guessing",
+    "zh": "谜语,猜猜看游戏",
+    "ipa": ""
+   },
+   "options": [
+    {
+     "id": "a",
+     "textEn": "the tiger immortal lost both challenges.",
+     "textZh": "虎力大仙两个挑战都输了。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    },
+    {
+     "id": "b",
+     "textEn": "the tiger immortal set the buddhist monks free.",
+     "textZh": "虎力大仙释放了佛教僧侣。",
+     "correct": true,
+     "feedback": "对了。虎力大仙释放了佛教僧侣。"
+    },
+    {
+     "id": "c",
+     "textEn": "the tiger immortal won the guessing game.",
+     "textZh": "虎力大仙赢了猜谜游戏。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    }
+   ],
+   "lessonCardId": "ep057-official-quiz-006"
+  }
+ },
+ "map": {
+  "theme": "generic",
+  "coordinateSpace": "world-normalized",
+  "worldTiles": 2,
+  "regions": {
+   "hero": 0,
+   "waves": [
+    0,
+    1
+   ],
+   "npc": {
+    "intro": 0,
+    "quiz": 1
+   },
+   "boss": 3
+  },
+  "walkable": {
+   "space": "world",
+   "x": 0.0,
+   "y": 0.16,
+   "w": 1.0,
+   "h": 0.79,
+   "rects": [
+    {
+     "x": 0.0,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.66,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    }
+   ]
+  },
+  "heroSpawn": {
+   "x": 0.06,
+   "y": 0.31
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.31,
+    "y": 0.23
+   },
+   {
+    "x": 0.38,
+    "y": 0.27
+   },
+   {
+    "x": 0.34,
+    "y": 0.33
+   },
+   {
+    "x": 0.41,
+    "y": 0.24
+   }
+  ],
+  "waveSpawns": [
+   [
+    {
+     "x": 0.31,
+     "y": 0.23
+    },
+    {
+     "x": 0.38,
+     "y": 0.27
+    },
+    {
+     "x": 0.34,
+     "y": 0.33
+    },
+    {
+     "x": 0.41,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.81,
+     "y": 0.23
+    },
+    {
+     "x": 0.88,
+     "y": 0.27
+    },
+    {
+     "x": 0.84,
+     "y": 0.33
+    },
+    {
+     "x": 0.91,
+     "y": 0.24
+    }
+   ]
+  ],
+  "orbSpawns": [
+   [
+    {
+     "x": 0.11,
+     "y": 0.25
+    },
+    {
+     "x": 0.16,
+     "y": 0.31
+    },
+    {
+     "x": 0.12,
+     "y": 0.37
+    },
+    {
+     "x": 0.18,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.61,
+     "y": 0.25
+    },
+    {
+     "x": 0.66,
+     "y": 0.31
+    },
+    {
+     "x": 0.62,
+     "y": 0.37
+    },
+    {
+     "x": 0.68,
+     "y": 0.24
+    }
+   ]
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "imp",
+    "nameZh": "小妖",
+    "x": 0.08,
+    "y": 0.26
+   },
+   {
+    "role": "quiz",
+    "sprite": "imp",
+    "nameZh": "小妖",
+    "x": 0.7,
+    "y": 0.39
+   }
+  ],
+  "bossSpot": {
+   "x": 0.94,
+   "y": 0.85
+  }
+ }
+}

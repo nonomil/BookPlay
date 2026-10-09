@@ -1,0 +1,2844 @@
+{
+  "schema_version": 1,
+  "episode": 63,
+  "title": {
+    "en": "A Question for Buddha",
+    "zh": "西游记 第63集"
+  },
+  "sources": [
+    {
+      "kind": "courseware_main_pptx",
+      "file": "G:\\Game\\BookPlay书戏\\data\\西游记课件\\3.3西游记  Journey to the West PPT课件\\063_Journey to the West 63_A Question for Buddha.pptx",
+      "sha256": "81ab845c83d3aff2b48eab69a6edcefec0ab3a4c0160df2c2f1846913929ce54",
+      "pages": 20
+    },
+    {
+      "kind": "official_quiz_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+      "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929",
+      "pages": 131
+    },
+    {
+      "kind": "intensive_reader_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\02-西游记精读版台词本\\1、带标注版PDF 108集\\063 老龟的问题 上.pdf",
+      "sha256": "14d9c2d2b6c6e4575b650911248d573063774e3e5db514b280e5e543ee287554",
+      "pages": 4
+    },
+    {
+      "kind": "intensive_reader_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\02-西游记精读版台词本\\1、带标注版PDF 108集\\063 老龟的问题 下.pdf",
+      "sha256": "784f0945f33c9b25e6aa51ff2c8d020f63c617f6d8d1f27a62ae0d7d57111b33",
+      "pages": 4
+    },
+    {
+      "kind": "courseware_screenshots_pptx",
+      "file": "G:\\Game\\BookPlay书戏\\data\\西游记课件\\西游记-外教课动画截图\\Journey to the West 063  A Question for Buddha_20240114123113.pptx",
+      "sha256": "e4be4700a3de44d042d00bcba0f50da30dac18afc8f9e54d515819e6a6b6912d",
+      "pages": 39
+    }
+  ],
+  "cards": [
+    {
+      "card_id": "ep063-official-quiz-001",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 1,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "which is true?",
+        "zh": "哪一个是真的？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "the turtle thanked the travelers.",
+            "zh": "乌龟感谢了旅行者。"
+          },
+          {
+            "id": "b",
+            "en": "the turtle went to the monastery.",
+            "zh": "乌龟去了修道院。"
+          },
+          {
+            "id": "c",
+            "en": "the turtle had just become a buddhist.",
+            "zh": "这只乌龟刚刚成为了一名佛教徒。"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n003",
+            "quote": "A large shell rose from the water."
+          },
+          {
+            "node_id": "n004",
+            "quote": "\"It's a giant turtle!\" said Bajie."
+          },
+          {
+            "node_id": "n005",
+            "quote": "The turtle bowed its head toward Wukong."
+          },
+          {
+            "node_id": "n006",
+            "quote": "\"That demon had taken over my house and river. Thank you for getting rid of him.\""
+          },
+          {
+            "node_id": "n029",
+            "quote": "\"I have been a good Buddhist for over a thousand years,\" said the turtle."
+          },
+          {
+            "node_id": "n030",
+            "quote": "\"But sadly I'm still just a turtle. Can you ask Buddha when I will be reborn as a human?\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 74,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep063-official-quiz-002",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 2,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "what did the turtle offer to do?",
+        "zh": "乌龟提出要做什么？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "take the travelers across the river",
+            "zh": "把旅客送过河"
+          },
+          {
+            "id": "b",
+            "en": "build a boat for the travelers",
+            "zh": "为旅行者建造一艘船"
+          },
+          {
+            "id": "c",
+            "en": "give his house to the demon",
+            "zh": "把他的房子给恶魔"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n007",
+            "quote": "The turtle then looked at the villagers."
+          },
+          {
+            "node_id": "n008",
+            "quote": "\"You don't need to make a boat. I can take the travelers across the river.\""
+          },
+          {
+            "node_id": "n011",
+            "quote": "\"You're traveling to the Western Paradise to get scriptures from Buddha. I knew you would cross my river eventually. Climb onto my shell.\""
+          },
+          {
+            "node_id": "n017",
+            "quote": "After a little more hesitation, the travelers stepped onto the turtle's shell."
+          },
+          {
+            "node_id": "n018",
+            "quote": "The turtle began to paddle."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 74,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep063-official-quiz-003",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 3,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "what did the turtle want to know?",
+        "zh": "乌龟想知道什么？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "when he would be reborn as a human",
+            "zh": "当他会转生为人类时"
+          },
+          {
+            "id": "b",
+            "en": "where the western paradise was",
+            "zh": "西方极乐世界在哪里"
+          },
+          {
+            "id": "c",
+            "en": "why there were so many demons",
+            "zh": "为什么会有这么多恶魔"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n025",
+            "quote": "The turtle glanced back at the Tang Monk."
+          },
+          {
+            "node_id": "n026",
+            "quote": "\"Excuse me, but can you do me a favor?\""
+          },
+          {
+            "node_id": "n027",
+            "quote": "\"Of course,\" said the monk."
+          },
+          {
+            "node_id": "n028",
+            "quote": "\"What do you need me to do?\""
+          },
+          {
+            "node_id": "n029",
+            "quote": "\"I have been a good Buddhist for over a thousand years,\" said the turtle."
+          },
+          {
+            "node_id": "n030",
+            "quote": "\"But sadly I'm still just a turtle. Can you ask Buddha when I will be reborn as a human?\""
+          },
+          {
+            "node_id": "n031",
+            "quote": "The Tang Monk nodded."
+          },
+          {
+            "node_id": "n032",
+            "quote": "\"I will ask him.\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 74,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep063-official-quiz-004",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 4,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "what did wukong see over the monastery?",
+        "zh": "悟空在寺庙上方看到了什么？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "a dark mist",
+            "zh": "一层黑色的雾"
+          },
+          {
+            "id": "b",
+            "en": "a rainbow",
+            "zh": "一条彩虹"
+          },
+          {
+            "id": "c",
+            "en": "a fire",
+            "zh": "一场火"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n058",
+            "quote": "\"And I see a dark mist hanging over that monastery. A demon could be in there.\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 74,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep063-official-quiz-005",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 5,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "what did wukong tell the tang monk not to do?",
+        "zh": "悟空告诉唐僧不要做什么？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "go to the monastery",
+            "zh": "去修道院"
+          },
+          {
+            "id": "b",
+            "en": "ask buddha a question",
+            "zh": "问佛一个问题"
+          },
+          {
+            "id": "c",
+            "en": "ride on the turtle's shell",
+            "zh": "骑在乌龟的壳上"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n049",
+            "quote": "\"Look!\" said the Tang Monk, pointing."
+          },
+          {
+            "node_id": "n050",
+            "quote": "Higher up the mountain was a large monastery."
+          },
+          {
+            "node_id": "n052",
+            "quote": "Wukong looked at the monastery."
+          },
+          {
+            "node_id": "n053",
+            "quote": "A dark mist hung over it."
+          },
+          {
+            "node_id": "n054",
+            "quote": "The monkey shook his head."
+          },
+          {
+            "node_id": "n055",
+            "quote": "\"That's a bad place. We're not going there.\""
+          },
+          {
+            "node_id": "n058",
+            "quote": "\"And I see a dark mist hanging over that monastery. A demon could be in there.\""
+          },
+          {
+            "node_id": "n065",
+            "quote": "\"No,\" said Wukong sharply. \"Stay here. I will find food for us.\""
+          },
+          {
+            "node_id": "n066",
+            "quote": "He looked at the monk and warned him again, \"Do not go to that monastery!\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 74,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep063-vocab-001",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 101,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "make",
+        "zh": "v.使成为,制造,做,做出,组 成,挣钱,铺床"
+      },
+      "payload": {
+        "term": "make",
+        "ipa": "meɪk",
+        "pos": "v.",
+        "def": "v.使成为,制造,做,做出,组 成,挣钱,铺床",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "063 老龟的问题 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "14d9c2d2b6c6e4575b650911248d573063774e3e5db514b280e5e543ee287554"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep063-vocab-002",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 102,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "across",
+        "zh": "adv.过,穿过,在对面 prep.过,遍及"
+      },
+      "payload": {
+        "term": "across",
+        "ipa": "əˈkrɒs",
+        "pos": "adv.",
+        "def": "adv.过,穿过,在对面 prep.过,遍及",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "063 老龟的问题 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "14d9c2d2b6c6e4575b650911248d573063774e3e5db514b280e5e543ee287554"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep063-vocab-003",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 103,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "wonder",
+        "zh": "惊讶"
+      },
+      "payload": {
+        "term": "wonder",
+        "ipa": "ˈwʌndə(r)",
+        "pos": "v.",
+        "def": "v.想知道,琢磨;非常惊讶 n.[C]奇迹,奇观 [U]惊讶",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "063 老龟的问题 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "14d9c2d2b6c6e4575b650911248d573063774e3e5db514b280e5e543ee287554"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep063-vocab-004",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 104,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "know",
+        "zh": "v.知道,了解"
+      },
+      "payload": {
+        "term": "know",
+        "ipa": "nəʊ",
+        "pos": "v.",
+        "def": "v.知道,了解",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "063 老龟的问题 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "14d9c2d2b6c6e4575b650911248d573063774e3e5db514b280e5e543ee287554"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep063-vocab-005",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 105,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "travel",
+        "zh": "游历"
+      },
+      "payload": {
+        "term": "travel",
+        "ipa": "ˈtrævl",
+        "pos": "v.",
+        "def": "v.旅行,游历幽;传播 n.[C,U]旅行[U]游历",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "063 老龟的问题 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "14d9c2d2b6c6e4575b650911248d573063774e3e5db514b280e5e543ee287554"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep063-vocab-006",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 106,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "cross",
+        "zh": "十字形记号"
+      },
+      "payload": {
+        "term": "cross",
+        "ipa": "krɒs",
+        "pos": "v.",
+        "def": "v.横过,越过 n.[C]十字形记号",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "063 老龟的问题 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "14d9c2d2b6c6e4575b650911248d573063774e3e5db514b280e5e543ee287554"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep063-vocab-007",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 107,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "climb",
+        "zh": "攀登"
+      },
+      "payload": {
+        "term": "climb",
+        "ipa": "klaɪm",
+        "pos": "v.",
+        "def": "v.爬 n.[C]攀登",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "063 老龟的问题 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "14d9c2d2b6c6e4575b650911248d573063774e3e5db514b280e5e543ee287554"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep063-vocab-008",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 108,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "on",
+        "zh": "在……上；进行中"
+      },
+      "payload": {
+        "term": "on",
+        "ipa": "ɒn",
+        "pos": "prep.",
+        "def": "在……上；进行中",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ],
+        "gloss": "在……上；进行中"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "063 老龟的问题 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "14d9c2d2b6c6e4575b650911248d573063774e3e5db514b280e5e543ee287554"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep063-vocab-009",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 109,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "trust",
+        "zh": "信任"
+      },
+      "payload": {
+        "term": "trust",
+        "ipa": "trʌst",
+        "pos": "vt.",
+        "def": "vt.相信,信任 [U]信任",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "063 老龟的问题 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "14d9c2d2b6c6e4575b650911248d573063774e3e5db514b280e5e543ee287554"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep063-vocab-010",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 110,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "wait",
+        "zh": "v.等待,等候"
+      },
+      "payload": {
+        "term": "wait",
+        "ipa": "weɪt",
+        "pos": "v.",
+        "def": "v.等待,等候",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "063 老龟的问题 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "14d9c2d2b6c6e4575b650911248d573063774e3e5db514b280e5e543ee287554"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep063-vocab-011",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 111,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "want",
+        "zh": "vt.需要,想要"
+      },
+      "payload": {
+        "term": "want",
+        "ipa": "wɒnt",
+        "pos": "vt.",
+        "def": "vt.需要,想要",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "063 老龟的问题 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "14d9c2d2b6c6e4575b650911248d573063774e3e5db514b280e5e543ee287554"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep063-vocab-012",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 112,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "eat",
+        "zh": "v.吃"
+      },
+      "payload": {
+        "term": "eat",
+        "ipa": "iːt",
+        "pos": "v.",
+        "def": "v.吃",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "063 老龟的问题 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "14d9c2d2b6c6e4575b650911248d573063774e3e5db514b280e5e543ee287554"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep063-vocab-013",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 113,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "promise",
+        "zh": "承诺,诺言"
+      },
+      "payload": {
+        "term": "promise",
+        "ipa": "ˈprɒmɪs",
+        "pos": "v.",
+        "def": "v.许诺,承诺 n.[C]承诺,诺言",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "063 老龟的问题 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "14d9c2d2b6c6e4575b650911248d573063774e3e5db514b280e5e543ee287554"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep063-vocab-014",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 114,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "hurt",
+        "zh": "v.(使)疼痛,受伤,感到疼痛, (使)伤心 adj.受伤的"
+      },
+      "payload": {
+        "term": "hurt",
+        "ipa": "hɜː(r)t",
+        "pos": "v.",
+        "def": "v.(使)疼痛,受伤,感到疼痛, (使)伤心 adj.受伤的",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "063 老龟的问题 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "14d9c2d2b6c6e4575b650911248d573063774e3e5db514b280e5e543ee287554"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep063-vocab-015",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 115,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "help",
+        "zh": "有帮助的 人或物 v.帮助,援助"
+      },
+      "payload": {
+        "term": "help",
+        "ipa": "help",
+        "pos": "n.",
+        "def": "n.[U]帮助,援助[sing.]有帮助的 人或物 v.帮助,援助",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "063 老龟的问题 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "14d9c2d2b6c6e4575b650911248d573063774e3e5db514b280e5e543ee287554"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep063-vocab-016",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 116,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "reach",
+        "zh": "v.伸手,到达,抵达;打成(协 议),实现 n.能及的范围"
+      },
+      "payload": {
+        "term": "reach",
+        "ipa": "riː tʃ",
+        "pos": "v.",
+        "def": "v.伸手,到达,抵达;打成(协 议),实现 n.能及的范围",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "063 老龟的问题 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "14d9c2d2b6c6e4575b650911248d573063774e3e5db514b280e5e543ee287554"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep063-vocab-017",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 117,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "step",
+        "zh": "步,步骤 vi.踏"
+      },
+      "payload": {
+        "term": "step",
+        "ipa": "step",
+        "pos": "n.",
+        "def": "n.[C]步,步骤 vi.踏",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "063 老龟的问题 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "14d9c2d2b6c6e4575b650911248d573063774e3e5db514b280e5e543ee287554"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep063-vocab-018",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 118,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "begin",
+        "zh": "v.开始"
+      },
+      "payload": {
+        "term": "begin",
+        "ipa": "bɪˈɡɪn",
+        "pos": "v.",
+        "def": "v.开始",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "063 老龟的问题 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "14d9c2d2b6c6e4575b650911248d573063774e3e5db514b280e5e543ee287554"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep063-vocab-019",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 119,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "behind",
+        "zh": "prep.在......的后面 adv.在......的后面,留在原地"
+      },
+      "payload": {
+        "term": "behind",
+        "ipa": "bɪˈhaɪnd",
+        "pos": "prep.",
+        "def": "prep.在......的后面 adv.在......的后面,留在原地",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "063 老龟的问题 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "14d9c2d2b6c6e4575b650911248d573063774e3e5db514b280e5e543ee287554"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep063-vocab-020",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 120,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "call",
+        "zh": "电话,叫声圈国"
+      },
+      "payload": {
+        "term": "call",
+        "ipa": "kɔː l",
+        "pos": "v.",
+        "def": "v.给......打电话,把......叫作,呼 喊 n.[C]电话,叫声圈国",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "063 老龟的问题 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "14d9c2d2b6c6e4575b650911248d573063774e3e5db514b280e5e543ee287554"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep063-vocab-021",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 121,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "visit",
+        "zh": "拜访,访问,参观"
+      },
+      "payload": {
+        "term": "visit",
+        "ipa": "ˈvɪzɪt",
+        "pos": "v.",
+        "def": "v.拜访,参观;访问 n.[C]拜访,访问,参观",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "063 老龟的问题 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "14d9c2d2b6c6e4575b650911248d573063774e3e5db514b280e5e543ee287554"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep063-vocab-022",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 122,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "home",
+        "zh": "家,养老院 adv.到家,在家"
+      },
+      "payload": {
+        "term": "home",
+        "ipa": "həʊm",
+        "pos": "n.",
+        "def": "n.[C,U]家,养老院 adv.到家,在家",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "063 老龟的问题 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "14d9c2d2b6c6e4575b650911248d573063774e3e5db514b280e5e543ee287554"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep063-vocab-023",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 123,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "far",
+        "zh": "adv.远,非常,远远 adj.远,远的,(某方向)最远的"
+      },
+      "payload": {
+        "term": "far",
+        "ipa": "fɑː(r)",
+        "pos": "adv.",
+        "def": "adv.远,非常,远远 adj.远,远的,(某方向)最远的",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "063 老龟的问题 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "14d9c2d2b6c6e4575b650911248d573063774e3e5db514b280e5e543ee287554"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep063-vocab-024",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 124,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "fall",
+        "zh": "落下,瀑布,(美式)秋天"
+      },
+      "payload": {
+        "term": "fall",
+        "ipa": "fɔːl",
+        "pos": "vi.",
+        "def": "vi.倒塌,跌倒,掉落,(数量) 减少,下降 v-link.进入某种状态 n.[C]落下,瀑布,(美式)秋天",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "063 老龟的问题 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "14d9c2d2b6c6e4575b650911248d573063774e3e5db514b280e5e543ee287554"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep063-vocab-025",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 125,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "asleep",
+        "zh": "adj.睡着"
+      },
+      "payload": {
+        "term": "asleep",
+        "ipa": "əˈsliːp",
+        "pos": "adj.",
+        "def": "adj.睡着",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "063 老龟的问题 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "14d9c2d2b6c6e4575b650911248d573063774e3e5db514b280e5e543ee287554"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep063-vocab-026",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 126,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "do",
+        "zh": "v.做,干 aux v.构成疑问句和否定句"
+      },
+      "payload": {
+        "term": "do",
+        "ipa": "duː",
+        "pos": "v.",
+        "def": "v.做,干 aux v.构成疑问句和否定句",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "063 老龟的问题 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "14d9c2d2b6c6e4575b650911248d573063774e3e5db514b280e5e543ee287554"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep063-vocab-027",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 127,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "thousand",
+        "zh": "num.一千"
+      },
+      "payload": {
+        "term": "thousand",
+        "ipa": "ˈθaʊznd",
+        "pos": "num.",
+        "def": "num.一千",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "063 老龟的问题 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "14d9c2d2b6c6e4575b650911248d573063774e3e5db514b280e5e543ee287554"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep063-vocab-028",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 128,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "ask",
+        "zh": "v.请求,要求,询问"
+      },
+      "payload": {
+        "term": "ask",
+        "ipa": "ɑːsk",
+        "pos": "v.",
+        "def": "v.请求,要求,询问",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "063 老龟的问题 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "14d9c2d2b6c6e4575b650911248d573063774e3e5db514b280e5e543ee287554"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep063-vocab-029",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 129,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "human",
+        "zh": "人"
+      },
+      "payload": {
+        "term": "human",
+        "ipa": "ˈhjuːmən",
+        "pos": "adj.",
+        "def": "adj.人的 n.[C]人",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "063 老龟的问题 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "14d9c2d2b6c6e4575b650911248d573063774e3e5db514b280e5e543ee287554"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "063 老龟的问题 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "784f0945f33c9b25e6aa51ff2c8d020f63c617f6d8d1f27a62ae0d7d57111b33"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep063-vocab-030",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 130,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "nod",
+        "zh": "点头"
+      },
+      "payload": {
+        "term": "nod",
+        "ipa": "nɒd",
+        "pos": "v.",
+        "def": "v.点头 n.[C]点头",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "063 老龟的问题 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "14d9c2d2b6c6e4575b650911248d573063774e3e5db514b280e5e543ee287554"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep063-vocab-031",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 131,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "land",
+        "zh": "国家 v.降落,着陆"
+      },
+      "payload": {
+        "term": "land",
+        "ipa": "lænd",
+        "pos": "n.",
+        "def": "n.[U]大陆,土地 [C]国家 v.降落,着陆",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "063 老龟的问题 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "14d9c2d2b6c6e4575b650911248d573063774e3e5db514b280e5e543ee287554"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep063-vocab-032",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 132,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "ride",
+        "zh": "旅程,供乘骑的游乐设施"
+      },
+      "payload": {
+        "term": "ride",
+        "ipa": "raɪd",
+        "pos": "v.",
+        "def": "v.骑 n.[C]旅程,供乘骑的游乐设施",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "063 老龟的问题 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "784f0945f33c9b25e6aa51ff2c8d020f63c617f6d8d1f27a62ae0d7d57111b33"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep063-vocab-033",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 133,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "happy",
+        "zh": "adj.愉快的,高兴的,幸福的"
+      },
+      "payload": {
+        "term": "happy",
+        "ipa": "ˈhæpi",
+        "pos": "adj.",
+        "def": "adj.愉快的,高兴的,幸福的",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "063 老龟的问题 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "784f0945f33c9b25e6aa51ff2c8d020f63c617f6d8d1f27a62ae0d7d57111b33"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep063-vocab-034",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 134,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "mountain",
+        "zh": "高山"
+      },
+      "payload": {
+        "term": "mountain",
+        "ipa": "ˈmaʊntən",
+        "pos": "n.",
+        "def": "n.[C]高山",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "063 老龟的问题 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "784f0945f33c9b25e6aa51ff2c8d020f63c617f6d8d1f27a62ae0d7d57111b33"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep063-vocab-035",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 135,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "cold",
+        "zh": "寒冷"
+      },
+      "payload": {
+        "term": "cold",
+        "ipa": "kəʊld",
+        "pos": "adj.",
+        "def": "adj.寒冷的,冷的;冷淡的 n.[C]感冒;[U]寒冷",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "063 老龟的问题 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "784f0945f33c9b25e6aa51ff2c8d020f63c617f6d8d1f27a62ae0d7d57111b33"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep063-vocab-036",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 136,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "wind",
+        "zh": "风"
+      },
+      "payload": {
+        "term": "wind",
+        "ipa": "wɪnd",
+        "pos": "n.",
+        "def": "n.[C,U]风",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "063 老龟的问题 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "784f0945f33c9b25e6aa51ff2c8d020f63c617f6d8d1f27a62ae0d7d57111b33"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep063-vocab-037",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 137,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "past",
+        "zh": "过去,过往国 adv.经过,(时间)过去"
+      },
+      "payload": {
+        "term": "past",
+        "ipa": "pɑː st",
+        "pos": "prep.",
+        "def": "prep.晚于,在......之后;到另一 侧 adj.过去的 n.[sing.]过去,过往国 adv.经过,(时间)过去",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "063 老龟的问题 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "784f0945f33c9b25e6aa51ff2c8d020f63c617f6d8d1f27a62ae0d7d57111b33"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep063-vocab-038",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 138,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "them",
+        "zh": "pron.(they的宾格)他(她、 它)们"
+      },
+      "payload": {
+        "term": "them",
+        "ipa": "ðem",
+        "pos": "pron.",
+        "def": "pron.(they的宾格)他(她、 它)们",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "063 老龟的问题 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "784f0945f33c9b25e6aa51ff2c8d020f63c617f6d8d1f27a62ae0d7d57111b33"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep063-vocab-039",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 139,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "point",
+        "zh": "目的 v.指,指向"
+      },
+      "payload": {
+        "term": "point",
+        "ipa": "pɔɪnt",
+        "pos": "n.",
+        "def": "n.[C]得分,点,小数点,时刻, 特点,观点,要点[U]目的 v.指,指向",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "063 老龟的问题 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "784f0945f33c9b25e6aa51ff2c8d020f63c617f6d8d1f27a62ae0d7d57111b33"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep063-vocab-040",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 140,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "rest",
+        "zh": "剩余部分"
+      },
+      "payload": {
+        "term": "rest",
+        "ipa": "rest",
+        "pos": "v.",
+        "def": "v./n.[C,U]休息 n.[sing.]剩余部分",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "063 老龟的问题 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "784f0945f33c9b25e6aa51ff2c8d020f63c617f6d8d1f27a62ae0d7d57111b33"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep063-vocab-041",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 141,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "look",
+        "zh": "看,注视,外表,表情"
+      },
+      "payload": {
+        "term": "look",
+        "ipa": "lʊk",
+        "pos": "vi.",
+        "def": "vi.看 v.-link.看上去 n.[C]看,注视,外表,表情",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "063 老龟的问题 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "784f0945f33c9b25e6aa51ff2c8d020f63c617f6d8d1f27a62ae0d7d57111b33"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep063-vocab-042",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 142,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "dark",
+        "zh": "黑暗"
+      },
+      "payload": {
+        "term": "dark",
+        "ipa": "dɑː (r)k",
+        "pos": "adj.",
+        "def": "adj.黑暗的 n.[sing.]黑暗",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "063 老龟的问题 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "784f0945f33c9b25e6aa51ff2c8d020f63c617f6d8d1f27a62ae0d7d57111b33"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep063-vocab-043",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 143,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "monkey",
+        "zh": "猴子"
+      },
+      "payload": {
+        "term": "monkey",
+        "ipa": "ˈmʌŋki",
+        "pos": "n.",
+        "def": "n.[C]猴子",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "063 老龟的问题 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "784f0945f33c9b25e6aa51ff2c8d020f63c617f6d8d1f27a62ae0d7d57111b33"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep063-vocab-044",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 144,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "shake",
+        "zh": "摇动,抖动,奶昔"
+      },
+      "payload": {
+        "term": "shake",
+        "ipa": "ʃeɪk",
+        "pos": "v.",
+        "def": "v.摇动,抖动,(与某人)握手, 发抖 n.[C]摇动,抖动,奶昔",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "063 老龟的问题 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "784f0945f33c9b25e6aa51ff2c8d020f63c617f6d8d1f27a62ae0d7d57111b33"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep063-vocab-045",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 145,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "head",
+        "zh": "队首 vi.朝(某方向)行进"
+      },
+      "payload": {
+        "term": "head",
+        "ipa": "hed",
+        "pos": "n.",
+        "def": "n.[C]头(部)[C,U]负责人 [sing.]队首 vi.朝(某方向)行进",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "063 老龟的问题 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "784f0945f33c9b25e6aa51ff2c8d020f63c617f6d8d1f27a62ae0d7d57111b33"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep063-vocab-046",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 146,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "bad",
+        "zh": "adj.坏的,糟的,严重的"
+      },
+      "payload": {
+        "term": "bad",
+        "ipa": "bæd",
+        "pos": "adj.",
+        "def": "adj.坏的,糟的,严重的",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "063 老龟的问题 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "784f0945f33c9b25e6aa51ff2c8d020f63c617f6d8d1f27a62ae0d7d57111b33"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep063-vocab-047",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 147,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "fine",
+        "zh": "好的"
+      },
+      "payload": {
+        "term": "fine",
+        "ipa": "faɪn",
+        "pos": "",
+        "def": "好的",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ],
+        "gloss": "好的"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "063 老龟的问题 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "784f0945f33c9b25e6aa51ff2c8d020f63c617f6d8d1f27a62ae0d7d57111b33"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep063-vocab-048",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 148,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "see",
+        "zh": "v.理解,明白,观看,会见,看 见,送别,确保"
+      },
+      "payload": {
+        "term": "see",
+        "ipa": "siː",
+        "pos": "v.",
+        "def": "v.理解,明白,观看,会见,看 见,送别,确保",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "063 老龟的问题 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "784f0945f33c9b25e6aa51ff2c8d020f63c617f6d8d1f27a62ae0d7d57111b33"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep063-vocab-049",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 149,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "sudden",
+        "zh": "adj.突然(的)"
+      },
+      "payload": {
+        "term": "sudden",
+        "ipa": "ˈsʌdən",
+        "pos": "adj.",
+        "def": "adj.突然(的)",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "063 老龟的问题 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "784f0945f33c9b25e6aa51ff2c8d020f63c617f6d8d1f27a62ae0d7d57111b33"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep063-vocab-050",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 150,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "sound",
+        "zh": "声响"
+      },
+      "payload": {
+        "term": "sound",
+        "ipa": "saʊnd",
+        "pos": "v.",
+        "def": "v.-link.听起来好像 v.(使)发出声音 n.声音,发音[U]声响",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "063 老龟的问题 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "784f0945f33c9b25e6aa51ff2c8d020f63c617f6d8d1f27a62ae0d7d57111b33"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep063-vocab-051",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 151,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "around",
+        "zh": "adv.在周围,大约,四处,掉头 prep.在......周围,到处"
+      },
+      "payload": {
+        "term": "around",
+        "ipa": "əˈraʊnd",
+        "pos": "adv.",
+        "def": "adv.在周围,大约,四处,掉头 prep.在......周围,到处",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "063 老龟的问题 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "784f0945f33c9b25e6aa51ff2c8d020f63c617f6d8d1f27a62ae0d7d57111b33"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep063-vocab-052",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 152,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "cause",
+        "zh": "原因"
+      },
+      "payload": {
+        "term": "cause",
+        "ipa": "kɔː z",
+        "pos": "vt.",
+        "def": "vt.造成,引起 n.[C]原因",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "063 老龟的问题 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "784f0945f33c9b25e6aa51ff2c8d020f63c617f6d8d1f27a62ae0d7d57111b33"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep063-vocab-053",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 153,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "stomach",
+        "zh": "胃,肚子,腹部"
+      },
+      "payload": {
+        "term": "stomach",
+        "ipa": "ˈstʌmək",
+        "pos": "n.",
+        "def": "n.[C]胃,肚子,腹部",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "063 老龟的问题 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "784f0945f33c9b25e6aa51ff2c8d020f63c617f6d8d1f27a62ae0d7d57111b33"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep063-vocab-054",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 154,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "stay",
+        "zh": "逗留"
+      },
+      "payload": {
+        "term": "stay",
+        "ipa": "steɪ",
+        "pos": "vi.",
+        "def": "vi.停留,待 v-link.保持 n.[C]逗留",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "063 老龟的问题 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "784f0945f33c9b25e6aa51ff2c8d020f63c617f6d8d1f27a62ae0d7d57111b33"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep063-vocab-055",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 155,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "find",
+        "zh": "vt.找到,发现,查找,查明"
+      },
+      "payload": {
+        "term": "find",
+        "ipa": "faɪnd",
+        "pos": "vt.",
+        "def": "vt.找到,发现,查找,查明",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "063 老龟的问题 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "784f0945f33c9b25e6aa51ff2c8d020f63c617f6d8d1f27a62ae0d7d57111b33"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep063-vocab-056",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 156,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "food",
+        "zh": "食物"
+      },
+      "payload": {
+        "term": "food",
+        "ipa": "fuːd",
+        "pos": "n.",
+        "def": "食物",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ],
+        "gloss": "食物"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "063 老龟的问题 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "784f0945f33c9b25e6aa51ff2c8d020f63c617f6d8d1f27a62ae0d7d57111b33"
+        }
+      ],
+      "review_status": "machine_verified"
+    }
+  ],
+  "teacher_guide": null,
+  "review": {
+    "status": "draft",
+    "reviewed_at": null,
+    "card_stats": {
+      "total": 61,
+      "sentence_choice": 5,
+      "word_review": 56,
+      "machine_verified": 57,
+      "assistant_reviewed": 4,
+      "verified": 61,
+      "needs_review": 0
+    }
+  },
+  "generated_at": "2026-08-31T04:49:43.890219+00:00"
+}

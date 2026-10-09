@@ -1,0 +1,584 @@
+{
+ "schema_version": 1,
+ "ep": 97,
+ "title": {
+  "en": "Bajie and the Monster",
+  "zh": "西游记 第97集"
+ },
+ "collection": "c12",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "bajie",
+   "nameZh": "猪八戒",
+   "mode": "sparring",
+   "sprite": "bajie"
+  },
+  "minors": [
+   {
+    "id": "imp",
+    "nameZh": "小妖",
+    "sprite": "imp"
+   }
+  ]
+ },
+ "background": {
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep97/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "Bajie took a step back as a dark mist surrounded the people on the road.",
+   "textZh": "当一道黑雾笼罩着路旁的众人时,八戒后退了一步。",
+   "illustration": "assets/adv_frames/ep97/f1.jpg",
+   "sourceNodeId": "n001",
+   "audioRef": "sent_en:Bajie took a step back as a dark mist surrounded the people on the road."
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "When the mist cleared, he saw they were really a monster and several little demons.",
+   "textZh": "当雾气散去时,他发现那其实是一只怪物和几只小恶魔。",
+   "illustration": "assets/adv_frames/ep97/f2.jpg",
+   "sourceNodeId": "n002",
+   "audioRef": "sent_en:When the mist cleared, he saw they were really a monster and several little demons."
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "mist",
+   "zh": "薄雾",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep97/f1.jpg"
+  },
+  {
+   "term": "surround",
+   "zh": "包围",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep97/f1.jpg"
+  },
+  {
+   "term": "clear",
+   "zh": "1. (云,雾)消散,(2. 明亮的,透明的)",
+   "ipa": "klɪə(r)",
+   "illustration": "assets/adv_frames/ep97/f1.jpg"
+  },
+  {
+   "term": "grin",
+   "zh": "(不发出声音)嘻嘻笑,咧嘴笑",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep97/f3.jpg"
+  },
+  {
+   "term": "feast",
+   "zh": "盛宴,筵席",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep97/f0.jpg"
+  },
+  {
+   "term": "threw",
+   "zh": "抛,掷 (throw-threw)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep97/f1.jpg"
+  },
+  {
+   "term": "punch",
+   "zh": "1. 重击,(2. 用拳猛击)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep97/f1.jpg"
+  },
+  {
+   "term": "block",
+   "zh": "1. 挡住,妨碍(某种行动,动作等),(2. 阻挡,封锁(道路等))",
+   "ipa": "blɒk",
+   "illustration": "assets/adv_frames/ep97/f1.jpg"
+  },
+  {
+   "term": "sneak up",
+   "zh": "偷偷地走近",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep97/f0.jpg"
+  },
+  {
+   "term": "cause",
+   "zh": "导致,使发生,引起",
+   "ipa": "kɔːz",
+   "illustration": "assets/adv_frames/ep97/f1.jpg"
+  },
+  {
+   "term": "cause problem",
+   "zh": "引发问题,制造麻烦",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep97/f1.jpg"
+  },
+  {
+   "term": "trick",
+   "zh": "1. 欺骗,(2. 诡计,恶作剧,3. 技巧,把戏)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep97/f3.jpg"
+  }
+ ],
+ "wordPool": [
+  {
+   "term": "mist",
+   "zh": "薄雾",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep97/f1.jpg"
+  },
+  {
+   "term": "surround",
+   "zh": "包围",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep97/f1.jpg"
+  },
+  {
+   "term": "clear",
+   "zh": "1. (云,雾)消散,(2. 明亮的,透明的)",
+   "ipa": "klɪə(r)",
+   "illustration": "assets/adv_frames/ep97/f1.jpg"
+  },
+  {
+   "term": "grin",
+   "zh": "(不发出声音)嘻嘻笑,咧嘴笑",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep97/f3.jpg"
+  },
+  {
+   "term": "feast",
+   "zh": "盛宴,筵席",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep97/f0.jpg"
+  },
+  {
+   "term": "threw",
+   "zh": "抛,掷 (throw-threw)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep97/f1.jpg"
+  },
+  {
+   "term": "punch",
+   "zh": "1. 重击,(2. 用拳猛击)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep97/f1.jpg"
+  },
+  {
+   "term": "block",
+   "zh": "1. 挡住,妨碍(某种行动,动作等),(2. 阻挡,封锁(道路等))",
+   "ipa": "blɒk",
+   "illustration": "assets/adv_frames/ep97/f1.jpg"
+  },
+  {
+   "term": "sneak up",
+   "zh": "偷偷地走近",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep97/f0.jpg"
+  },
+  {
+   "term": "cause",
+   "zh": "导致,使发生,引起",
+   "ipa": "kɔːz",
+   "illustration": "assets/adv_frames/ep97/f1.jpg"
+  },
+  {
+   "term": "cause problem",
+   "zh": "引发问题,制造麻烦",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep97/f1.jpg"
+  },
+  {
+   "term": "trick",
+   "zh": "1. 欺骗,(2. 诡计,恶作剧,3. 技巧,把戏)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep97/f3.jpg"
+  },
+  {
+   "term": "thrust",
+   "zh": "猛推,塞进",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep97/f1.jpg"
+  },
+  {
+   "term": "curiously",
+   "zh": "好奇地,觉得很新奇地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep97/f3.jpg"
+  },
+  {
+   "term": "interested",
+   "zh": "感兴趣的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep97/f0.jpg"
+  },
+  {
+   "term": "suspiciously",
+   "zh": "怀疑地,猜疑地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep97/f0.jpg"
+  },
+  {
+   "term": "panicked",
+   "zh": "恐慌的,惊慌的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep97/f3.jpg"
+  },
+  {
+   "term": "instead",
+   "zh": "取而代之",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep97/f2.jpg"
+  },
+  {
+   "term": "ashamed",
+   "zh": "羞愧的,感到难为情的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep97/f0.jpg"
+  },
+  {
+   "term": "recite",
+   "zh": "背诵,朗诵",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep97/f0.jpg"
+  },
+  {
+   "term": "admit",
+   "zh": "(不得已地) 承认,坦白",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep97/f0.jpg"
+  },
+  {
+   "term": "scoff",
+   "zh": "嘲笑,嘲弄",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep97/f2.jpg"
+  },
+  {
+   "term": "spy",
+   "zh": "监视...,密切注视...",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep97/f3.jpg"
+  },
+  {
+   "term": "fellow",
+   "zh": "家伙,小伙儿",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep97/f3.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "mist",
+     "zh": "薄雾",
+     "sprite": "imp"
+    },
+    {
+     "term": "surround",
+     "zh": "包围",
+     "sprite": "imp"
+    },
+    {
+     "term": "clear",
+     "zh": "1. (云,雾)消散,(2. 明亮的,透明的)",
+     "sprite": "imp"
+    },
+    {
+     "term": "grin",
+     "zh": "(不发出声音)嘻嘻笑,咧嘴笑",
+     "sprite": "imp"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "feast",
+     "zh": "盛宴,筵席",
+     "sprite": "imp"
+    },
+    {
+     "term": "threw",
+     "zh": "抛,掷 (throw-threw)",
+     "sprite": "imp"
+    },
+    {
+     "term": "punch",
+     "zh": "1. 重击,(2. 用拳猛击)",
+     "sprite": "imp"
+    },
+    {
+     "term": "block",
+     "zh": "1. 挡住,妨碍(某种行动,动作等),(2. 阻挡,封锁(道路等))",
+     "sprite": "imp"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "sneak up",
+    "zh": "偷偷地走近"
+   },
+   {
+    "term": "cause",
+    "zh": "导致,使发生,引起"
+   },
+   {
+    "term": "cause problem",
+    "zh": "引发问题,制造麻烦"
+   },
+   {
+    "term": "trick",
+    "zh": "1. 欺骗,(2. 诡计,恶作剧,3. 技巧,把戏)"
+   }
+  ],
+  "taunts": [
+   "bajie.1",
+   "bajie.2",
+   "bajie.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=97",
+ "npcDialogue": {
+  "intro": {
+   "id": "ep97-map-intro",
+   "lines": [
+    {
+     "id": "ep97-map-intro-1",
+     "sourceNodeId": "n001",
+     "speaker": "narrator",
+     "textEn": "Bajie took a step back as a dark mist surrounded the people on the road.",
+     "textZh": "当一道黑雾笼罩着路旁的众人时,八戒后退了一步。",
+     "audioRef": "sent_en:Bajie took a step back as a dark mist surrounded the people on the road.",
+     "audioStart": 10.934,
+     "audioEnd": 19.894
+    },
+    {
+     "id": "ep97-map-intro-2",
+     "sourceNodeId": "n002",
+     "speaker": "narrator",
+     "textEn": "When the mist cleared, he saw they were really a monster and several little demons.",
+     "textZh": "当雾气散去时,他发现那其实是一只怪物和几只小恶魔。",
+     "audioRef": "sent_en:When the mist cleared, he saw they were really a monster and several little demons.",
+     "audioStart": 19.895,
+     "audioEnd": 26.682
+    }
+   ]
+  },
+  "quiz": {
+   "id": "ep97-map-quiz",
+   "lines": [
+    {
+     "id": "ep97-map-quiz-1",
+     "sourceNodeId": "n004",
+     "speaker": "narrator",
+     "textEn": "\"Yes, you <font color=\"#ffff00\"><i>are</i></font> here for the feast, Pig. We're going to eat you for lunch!\"",
+     "textZh": "\"没错,Pig,<font color=\"#ffff00\">(i)你就是(/i)</font>来参加这场盛宴的。我们今天午餐就吃你!\"",
+     "audioRef": "sent_en:\"Yes, you <font color=\"#ffff00\"><i>are</i></font> here for the feast, Pig. We're going to eat you for lunch!\"",
+     "audioStart": 29.035,
+     "audioEnd": 37.612
+    }
+   ],
+   "question": {
+    "id": "ep097-official-quiz-001",
+    "textEn": "which is not true?",
+    "textZh": "哪一项是不正确的？"
+   },
+   "word": {
+    "term": "mist",
+    "zh": "薄雾",
+    "ipa": ""
+   },
+   "options": [
+    {
+     "id": "a",
+     "textEn": "the demons wanted to eat wujing.",
+     "textZh": "妖怪们想吃悟净。",
+     "correct": true,
+     "feedback": "对了。妖怪们想吃悟净。"
+    },
+    {
+     "id": "b",
+     "textEn": "the demons wanted to eat bajie.",
+     "textZh": "魔鬼想吃八戒。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    },
+    {
+     "id": "c",
+     "textEn": "the demons wanted to eat the tang monk.",
+     "textZh": "妖怪们想吃唐僧。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    }
+   ],
+   "lessonCardId": "ep097-official-quiz-001"
+  }
+ },
+ "map": {
+  "theme": "generic",
+  "coordinateSpace": "world-normalized",
+  "worldTiles": 2,
+  "regions": {
+   "hero": 0,
+   "waves": [
+    0,
+    1
+   ],
+   "npc": {
+    "intro": 0,
+    "quiz": 1
+   },
+   "boss": 3
+  },
+  "walkable": {
+   "space": "world",
+   "x": 0.0,
+   "y": 0.16,
+   "w": 1.0,
+   "h": 0.79,
+   "rects": [
+    {
+     "x": 0.0,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.66,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    }
+   ]
+  },
+  "heroSpawn": {
+   "x": 0.06,
+   "y": 0.31
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.31,
+    "y": 0.23
+   },
+   {
+    "x": 0.38,
+    "y": 0.27
+   },
+   {
+    "x": 0.34,
+    "y": 0.33
+   },
+   {
+    "x": 0.41,
+    "y": 0.24
+   }
+  ],
+  "waveSpawns": [
+   [
+    {
+     "x": 0.31,
+     "y": 0.23
+    },
+    {
+     "x": 0.38,
+     "y": 0.27
+    },
+    {
+     "x": 0.34,
+     "y": 0.33
+    },
+    {
+     "x": 0.41,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.81,
+     "y": 0.23
+    },
+    {
+     "x": 0.88,
+     "y": 0.27
+    },
+    {
+     "x": 0.84,
+     "y": 0.33
+    },
+    {
+     "x": 0.91,
+     "y": 0.24
+    }
+   ]
+  ],
+  "orbSpawns": [
+   [
+    {
+     "x": 0.11,
+     "y": 0.25
+    },
+    {
+     "x": 0.16,
+     "y": 0.31
+    },
+    {
+     "x": 0.12,
+     "y": 0.37
+    },
+    {
+     "x": 0.18,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.61,
+     "y": 0.25
+    },
+    {
+     "x": 0.66,
+     "y": 0.31
+    },
+    {
+     "x": 0.62,
+     "y": 0.37
+    },
+    {
+     "x": 0.68,
+     "y": 0.24
+    }
+   ]
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "imp",
+    "nameZh": "小妖",
+    "x": 0.08,
+    "y": 0.26
+   },
+   {
+    "role": "quiz",
+    "sprite": "imp",
+    "nameZh": "小妖",
+    "x": 0.7,
+    "y": 0.39
+   }
+  ],
+  "bossSpot": {
+   "x": 0.94,
+   "y": 0.85
+  }
+ }
+}

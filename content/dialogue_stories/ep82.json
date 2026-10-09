@@ -1,0 +1,6403 @@
+{
+  "schema_version": 1,
+  "story_id": "adv_ep82",
+  "episode": 82,
+  "title": {
+    "en": "The Magic Cloth",
+    "zh": "西游记 第82集"
+  },
+  "source_note": "台词英文本来自 data/08 原文台词本与外挂英文字幕；词汇短语来自 data/05 中英对照词汇；中文句译按英文逐句对照。个人使用。",
+  "audio": "assets/lf_ep82/audio_ep82.mp3",
+  "video": "assets/video/ep82.mp4",
+  "frames": [
+    "assets/adv_frames/ep82/f0.jpg",
+    "assets/adv_frames/ep82/f1.jpg",
+    "assets/adv_frames/ep82/f2.jpg",
+    "assets/adv_frames/ep82/f3.jpg"
+  ],
+  "vocab_pool": {
+    "monkey": "猴子",
+    "monk": "和尚",
+    "demon": "妖怪",
+    "scriptures": "经文",
+    "west": "西方",
+    "dragon": "龙",
+    "fight": "打架",
+    "robe": "袈裟；袍",
+    "powerful": "强大的",
+    "leaped": "跃入",
+    "cloud": "云",
+    "rescue": "营救",
+    "emperor": "皇帝",
+    "captured": "抓住",
+    "mountain": "山"
+  },
+  "nodes": [
+    {
+      "node_id": "n001",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"Oh no,\" thought Wukong. \"Yellow Brows is coming!\"",
+      "text_zh": "\"哦不,\"悟空 thought,\"黄眉怪要来了!\"",
+      "illustration": "assets/adv_frames/ep82/f1.jpg",
+      "audio_start": 11.007,
+      "audio_end": 18.563,
+      "vocab": [
+        {
+          "term": "brow",
+          "zh": "1. (常用复数) 眉毛,(2. 额头)",
+          "mode": "learn",
+          "phrase_en": "Yellow Brows is coming!",
+          "phrase_zh": "1.",
+          "source": "official_words"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "think",
+          "ipa": "θɪŋk",
+          "def": "v.认为，想。思考",
+          "zh": "认为"
+        },
+        {
+          "term": "come",
+          "ipa": "kʌm",
+          "def": "vi.来，来到v.-link.成为，变成，变得",
+          "zh": "来"
+        },
+        {
+          "term": "jump",
+          "ipa": "dʒʌmp",
+          "def": "v.跳，跃n.[C]跳，跃（指运动）",
+          "zh": "跳"
+        },
+        {
+          "term": "run",
+          "ipa": "rʌn",
+          "def": "vi.跑，奔vt.经营n.[C]跑，跑步",
+          "zh": "跑"
+        },
+        {
+          "term": "fast",
+          "ipa": "fɑːst",
+          "def": "adj.快的adv.快地；完全地，牢固地",
+          "zh": "快的"
+        },
+        {
+          "term": "outside",
+          "ipa": "",
+          "def": "adj.外面的，外部的adv.在外面prep.在……外面n.[C]外部",
+          "zh": "外面的"
+        },
+        {
+          "term": "everyone",
+          "ipa": "ˈevriwʌn",
+          "def": "pron.每人，人人，所有人",
+          "zh": "每人"
+        },
+        {
+          "term": "bag",
+          "ipa": "bæɡ",
+          "def": "n.[C]袋，包",
+          "zh": "袋"
+        },
+        {
+          "term": "ask",
+          "ipa": "ɑːsk",
+          "def": "v.请求，要求，询问",
+          "zh": "请求"
+        },
+        {
+          "term": "monkey",
+          "ipa": "ˈmʌŋki",
+          "def": "n.[C]猴子",
+          "zh": "猴子"
+        },
+        {
+          "term": "empty",
+          "ipa": "ˈempti",
+          "def": "adj.空的，空洞的；无意义的vt.倒空，掏空",
+          "zh": "空的"
+        },
+        {
+          "term": "drop",
+          "ipa": "drɒp",
+          "def": "",
+          "zh": "drop"
+        }
+      ]
+    },
+    {
+      "node_id": "n002",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "The monkey jumped back to his feet and ran fast out of the monastery.",
+      "text_zh": "这只猴子猛地跳起身,迅速逃离了寺院。",
+      "illustration": "assets/adv_frames/ep82/f2.jpg",
+      "audio_start": 18.564,
+      "audio_end": 23.393,
+      "vocab": [
+        {
+          "term": "monkey",
+          "zh": "猴子",
+          "mode": "learn",
+          "phrase_en": "The monkey jumped back",
+          "phrase_zh": "猴子跳了回去",
+          "ipa": "ˈmʌŋki",
+          "pos": "n.",
+          "def": "n.[C]猴子",
+          "gloss": "猴子"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "think",
+          "ipa": "θɪŋk",
+          "def": "v.认为，想。思考",
+          "zh": "认为"
+        },
+        {
+          "term": "come",
+          "ipa": "kʌm",
+          "def": "vi.来，来到v.-link.成为，变成，变得",
+          "zh": "来"
+        },
+        {
+          "term": "jump",
+          "ipa": "dʒʌmp",
+          "def": "v.跳，跃n.[C]跳，跃（指运动）",
+          "zh": "跳"
+        },
+        {
+          "term": "run",
+          "ipa": "rʌn",
+          "def": "vi.跑，奔vt.经营n.[C]跑，跑步",
+          "zh": "跑"
+        },
+        {
+          "term": "fast",
+          "ipa": "fɑːst",
+          "def": "adj.快的adv.快地；完全地，牢固地",
+          "zh": "快的"
+        },
+        {
+          "term": "outside",
+          "ipa": "",
+          "def": "adj.外面的，外部的adv.在外面prep.在……外面n.[C]外部",
+          "zh": "外面的"
+        },
+        {
+          "term": "everyone",
+          "ipa": "ˈevriwʌn",
+          "def": "pron.每人，人人，所有人",
+          "zh": "每人"
+        },
+        {
+          "term": "bag",
+          "ipa": "bæɡ",
+          "def": "n.[C]袋，包",
+          "zh": "袋"
+        },
+        {
+          "term": "ask",
+          "ipa": "ɑːsk",
+          "def": "v.请求，要求，询问",
+          "zh": "请求"
+        },
+        {
+          "term": "monkey",
+          "ipa": "ˈmʌŋki",
+          "def": "n.[C]猴子",
+          "zh": "猴子"
+        },
+        {
+          "term": "empty",
+          "ipa": "ˈempti",
+          "def": "adj.空的，空洞的；无意义的vt.倒空，掏空",
+          "zh": "空的"
+        },
+        {
+          "term": "drop",
+          "ipa": "drɒp",
+          "def": "",
+          "zh": "drop"
+        }
+      ]
+    },
+    {
+      "node_id": "n003",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "When he got outside, everyone was waiting for him.",
+      "text_zh": "他走到室外时,所有人都在等着他。",
+      "illustration": "assets/adv_frames/ep82/f3.jpg",
+      "audio_start": 23.394,
+      "audio_end": 27.29,
+      "vocab": [],
+      "page_words": [
+        {
+          "term": "think",
+          "ipa": "θɪŋk",
+          "def": "v.认为，想。思考",
+          "zh": "认为"
+        },
+        {
+          "term": "come",
+          "ipa": "kʌm",
+          "def": "vi.来，来到v.-link.成为，变成，变得",
+          "zh": "来"
+        },
+        {
+          "term": "jump",
+          "ipa": "dʒʌmp",
+          "def": "v.跳，跃n.[C]跳，跃（指运动）",
+          "zh": "跳"
+        },
+        {
+          "term": "run",
+          "ipa": "rʌn",
+          "def": "vi.跑，奔vt.经营n.[C]跑，跑步",
+          "zh": "跑"
+        },
+        {
+          "term": "fast",
+          "ipa": "fɑːst",
+          "def": "adj.快的adv.快地；完全地，牢固地",
+          "zh": "快的"
+        },
+        {
+          "term": "outside",
+          "ipa": "",
+          "def": "adj.外面的，外部的adv.在外面prep.在……外面n.[C]外部",
+          "zh": "外面的"
+        },
+        {
+          "term": "everyone",
+          "ipa": "ˈevriwʌn",
+          "def": "pron.每人，人人，所有人",
+          "zh": "每人"
+        },
+        {
+          "term": "bag",
+          "ipa": "bæɡ",
+          "def": "n.[C]袋，包",
+          "zh": "袋"
+        },
+        {
+          "term": "ask",
+          "ipa": "ɑːsk",
+          "def": "v.请求，要求，询问",
+          "zh": "请求"
+        },
+        {
+          "term": "monkey",
+          "ipa": "ˈmʌŋki",
+          "def": "n.[C]猴子",
+          "zh": "猴子"
+        },
+        {
+          "term": "empty",
+          "ipa": "ˈempti",
+          "def": "adj.空的，空洞的；无意义的vt.倒空，掏空",
+          "zh": "空的"
+        },
+        {
+          "term": "drop",
+          "ipa": "drɒp",
+          "def": "",
+          "zh": "drop"
+        }
+      ]
+    },
+    {
+      "node_id": "n004",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"Where are the bags?\" asked Wujing.",
+      "text_zh": "\"包在哪里?\"悟净问道。",
+      "illustration": "assets/adv_frames/ep82/f0.jpg",
+      "audio_start": 27.291,
+      "audio_end": 30.973,
+      "vocab": [],
+      "page_words": [
+        {
+          "term": "think",
+          "ipa": "θɪŋk",
+          "def": "v.认为，想。思考",
+          "zh": "认为"
+        },
+        {
+          "term": "come",
+          "ipa": "kʌm",
+          "def": "vi.来，来到v.-link.成为，变成，变得",
+          "zh": "来"
+        },
+        {
+          "term": "jump",
+          "ipa": "dʒʌmp",
+          "def": "v.跳，跃n.[C]跳，跃（指运动）",
+          "zh": "跳"
+        },
+        {
+          "term": "run",
+          "ipa": "rʌn",
+          "def": "vi.跑，奔vt.经营n.[C]跑，跑步",
+          "zh": "跑"
+        },
+        {
+          "term": "fast",
+          "ipa": "fɑːst",
+          "def": "adj.快的adv.快地；完全地，牢固地",
+          "zh": "快的"
+        },
+        {
+          "term": "outside",
+          "ipa": "",
+          "def": "adj.外面的，外部的adv.在外面prep.在……外面n.[C]外部",
+          "zh": "外面的"
+        },
+        {
+          "term": "everyone",
+          "ipa": "ˈevriwʌn",
+          "def": "pron.每人，人人，所有人",
+          "zh": "每人"
+        },
+        {
+          "term": "bag",
+          "ipa": "bæɡ",
+          "def": "n.[C]袋，包",
+          "zh": "袋"
+        },
+        {
+          "term": "ask",
+          "ipa": "ɑːsk",
+          "def": "v.请求，要求，询问",
+          "zh": "请求"
+        },
+        {
+          "term": "monkey",
+          "ipa": "ˈmʌŋki",
+          "def": "n.[C]猴子",
+          "zh": "猴子"
+        },
+        {
+          "term": "empty",
+          "ipa": "ˈempti",
+          "def": "adj.空的，空洞的；无意义的vt.倒空，掏空",
+          "zh": "空的"
+        },
+        {
+          "term": "drop",
+          "ipa": "drɒp",
+          "def": "",
+          "zh": "drop"
+        }
+      ]
+    },
+    {
+      "node_id": "n005",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "The monkey looked at his empty hands.",
+      "text_zh": "这只猴子望着自己空空如也的双手。",
+      "illustration": "assets/adv_frames/ep82/f1.jpg",
+      "audio_start": 30.974,
+      "audio_end": 33.391,
+      "vocab": [
+        {
+          "term": "empty",
+          "zh": "空的,未占用的",
+          "mode": "learn",
+          "phrase_en": "The monkey looked at his empty hands.",
+          "phrase_zh": "空的,未占用的",
+          "source": "official_words"
+        },
+        {
+          "term": "monkey",
+          "zh": "猴子",
+          "mode": "test",
+          "options": [
+            "抓住",
+            "强大的",
+            "猴子",
+            "跃入"
+          ],
+          "answer": 2,
+          "phrase_en": "The monkey looked at his empty hands",
+          "phrase_zh": "这只猴子望着自己空空如也的双手。",
+          "ipa": "ˈmʌŋki",
+          "pos": "n.",
+          "def": "n.[C]猴子",
+          "gloss": "猴子"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "think",
+          "ipa": "θɪŋk",
+          "def": "v.认为，想。思考",
+          "zh": "认为"
+        },
+        {
+          "term": "come",
+          "ipa": "kʌm",
+          "def": "vi.来，来到v.-link.成为，变成，变得",
+          "zh": "来"
+        },
+        {
+          "term": "jump",
+          "ipa": "dʒʌmp",
+          "def": "v.跳，跃n.[C]跳，跃（指运动）",
+          "zh": "跳"
+        },
+        {
+          "term": "run",
+          "ipa": "rʌn",
+          "def": "vi.跑，奔vt.经营n.[C]跑，跑步",
+          "zh": "跑"
+        },
+        {
+          "term": "fast",
+          "ipa": "fɑːst",
+          "def": "adj.快的adv.快地；完全地，牢固地",
+          "zh": "快的"
+        },
+        {
+          "term": "outside",
+          "ipa": "",
+          "def": "adj.外面的，外部的adv.在外面prep.在……外面n.[C]外部",
+          "zh": "外面的"
+        },
+        {
+          "term": "everyone",
+          "ipa": "ˈevriwʌn",
+          "def": "pron.每人，人人，所有人",
+          "zh": "每人"
+        },
+        {
+          "term": "bag",
+          "ipa": "bæɡ",
+          "def": "n.[C]袋，包",
+          "zh": "袋"
+        },
+        {
+          "term": "ask",
+          "ipa": "ɑːsk",
+          "def": "v.请求，要求，询问",
+          "zh": "请求"
+        },
+        {
+          "term": "monkey",
+          "ipa": "ˈmʌŋki",
+          "def": "n.[C]猴子",
+          "zh": "猴子"
+        },
+        {
+          "term": "empty",
+          "ipa": "ˈempti",
+          "def": "adj.空的，空洞的；无意义的vt.倒空，掏空",
+          "zh": "空的"
+        },
+        {
+          "term": "drop",
+          "ipa": "drɒp",
+          "def": "",
+          "zh": "drop"
+        }
+      ]
+    },
+    {
+      "node_id": "n006",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "He slapped his forehead.",
+      "text_zh": "他拍了拍自己的前额。",
+      "illustration": "assets/adv_frames/ep82/f2.jpg",
+      "audio_start": 33.392,
+      "audio_end": 34.867,
+      "vocab": [
+        {
+          "term": "forehead",
+          "zh": "前额,额头",
+          "mode": "learn",
+          "phrase_en": "He slapped his forehead.",
+          "phrase_zh": "前额,额头",
+          "source": "official_words"
+        },
+        {
+          "term": "slap",
+          "zh": "拍击,用手掌打",
+          "mode": "learn",
+          "phrase_en": "He slapped his forehead.",
+          "phrase_zh": "拍击,用手掌打",
+          "source": "official_words"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "think",
+          "ipa": "θɪŋk",
+          "def": "v.认为，想。思考",
+          "zh": "认为"
+        },
+        {
+          "term": "come",
+          "ipa": "kʌm",
+          "def": "vi.来，来到v.-link.成为，变成，变得",
+          "zh": "来"
+        },
+        {
+          "term": "jump",
+          "ipa": "dʒʌmp",
+          "def": "v.跳，跃n.[C]跳，跃（指运动）",
+          "zh": "跳"
+        },
+        {
+          "term": "run",
+          "ipa": "rʌn",
+          "def": "vi.跑，奔vt.经营n.[C]跑，跑步",
+          "zh": "跑"
+        },
+        {
+          "term": "fast",
+          "ipa": "fɑːst",
+          "def": "adj.快的adv.快地；完全地，牢固地",
+          "zh": "快的"
+        },
+        {
+          "term": "outside",
+          "ipa": "",
+          "def": "adj.外面的，外部的adv.在外面prep.在……外面n.[C]外部",
+          "zh": "外面的"
+        },
+        {
+          "term": "everyone",
+          "ipa": "ˈevriwʌn",
+          "def": "pron.每人，人人，所有人",
+          "zh": "每人"
+        },
+        {
+          "term": "bag",
+          "ipa": "bæɡ",
+          "def": "n.[C]袋，包",
+          "zh": "袋"
+        },
+        {
+          "term": "ask",
+          "ipa": "ɑːsk",
+          "def": "v.请求，要求，询问",
+          "zh": "请求"
+        },
+        {
+          "term": "monkey",
+          "ipa": "ˈmʌŋki",
+          "def": "n.[C]猴子",
+          "zh": "猴子"
+        },
+        {
+          "term": "empty",
+          "ipa": "ˈempti",
+          "def": "adj.空的，空洞的；无意义的vt.倒空，掏空",
+          "zh": "空的"
+        },
+        {
+          "term": "drop",
+          "ipa": "drɒp",
+          "def": "",
+          "zh": "drop"
+        }
+      ]
+    },
+    {
+      "node_id": "n007",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"I must have dropped them.\"",
+      "text_zh": "\"我肯定是把它们弄丢了。\"",
+      "illustration": "assets/adv_frames/ep82/f3.jpg",
+      "audio_start": 34.868,
+      "audio_end": 37.166,
+      "vocab": [],
+      "page_words": [
+        {
+          "term": "think",
+          "ipa": "θɪŋk",
+          "def": "v.认为，想。思考",
+          "zh": "认为"
+        },
+        {
+          "term": "come",
+          "ipa": "kʌm",
+          "def": "vi.来，来到v.-link.成为，变成，变得",
+          "zh": "来"
+        },
+        {
+          "term": "jump",
+          "ipa": "dʒʌmp",
+          "def": "v.跳，跃n.[C]跳，跃（指运动）",
+          "zh": "跳"
+        },
+        {
+          "term": "run",
+          "ipa": "rʌn",
+          "def": "vi.跑，奔vt.经营n.[C]跑，跑步",
+          "zh": "跑"
+        },
+        {
+          "term": "fast",
+          "ipa": "fɑːst",
+          "def": "adj.快的adv.快地；完全地，牢固地",
+          "zh": "快的"
+        },
+        {
+          "term": "outside",
+          "ipa": "",
+          "def": "adj.外面的，外部的adv.在外面prep.在……外面n.[C]外部",
+          "zh": "外面的"
+        },
+        {
+          "term": "everyone",
+          "ipa": "ˈevriwʌn",
+          "def": "pron.每人，人人，所有人",
+          "zh": "每人"
+        },
+        {
+          "term": "bag",
+          "ipa": "bæɡ",
+          "def": "n.[C]袋，包",
+          "zh": "袋"
+        },
+        {
+          "term": "ask",
+          "ipa": "ɑːsk",
+          "def": "v.请求，要求，询问",
+          "zh": "请求"
+        },
+        {
+          "term": "monkey",
+          "ipa": "ˈmʌŋki",
+          "def": "n.[C]猴子",
+          "zh": "猴子"
+        },
+        {
+          "term": "empty",
+          "ipa": "ˈempti",
+          "def": "adj.空的，空洞的；无意义的vt.倒空，掏空",
+          "zh": "空的"
+        },
+        {
+          "term": "drop",
+          "ipa": "drɒp",
+          "def": "",
+          "zh": "drop"
+        }
+      ]
+    },
+    {
+      "node_id": "n008",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "He heard footsteps approaching from inside the monastery.",
+      "text_zh": "他听到脚步声从修道院内传来。",
+      "illustration": "assets/adv_frames/ep82/f0.jpg",
+      "audio_start": 37.167,
+      "audio_end": 40.817,
+      "vocab": [
+        {
+          "term": "approach",
+          "zh": "接近,靠近",
+          "mode": "learn",
+          "phrase_en": "He heard footsteps approaching from inside the monastery.",
+          "phrase_zh": "接近,靠近",
+          "source": "official_words"
+        },
+        {
+          "term": "footstep",
+          "zh": "1. 走路的声音,(2. 脚印)",
+          "mode": "learn",
+          "phrase_en": "He heard footsteps approaching from inside the monastery.",
+          "phrase_zh": "1. 走路的声音,",
+          "source": "official_words"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "worry",
+          "ipa": "ˈwʌri",
+          "def": "v./n.[C]担心，担忧n.[C]令人担忧的事",
+          "zh": "担心"
+        },
+        {
+          "term": "quick",
+          "ipa": "kwɪk",
+          "def": "adj.快的，迅速的，敏捷的",
+          "zh": "快的"
+        },
+        {
+          "term": "help",
+          "ipa": "help",
+          "def": "n.[U]帮助，援助[sing.]有帮助的人或物v.帮助，援助",
+          "zh": "帮助"
+        },
+        {
+          "term": "horse",
+          "ipa": "hɔː(r)s",
+          "def": "n.[C]马",
+          "zh": "马"
+        },
+        {
+          "term": "group",
+          "ipa": "ɡruːp",
+          "def": "n.[C]组，群vt.把……分组/归类，聚集",
+          "zh": "组"
+        },
+        {
+          "term": "hurry",
+          "ipa": "ˈhʌri",
+          "def": "v.匆忙，赶快n.匆忙，急忙",
+          "zh": "匆忙"
+        },
+        {
+          "term": "down",
+          "ipa": "daʊn",
+          "def": "adj.沮丧，悲哀adv.（坐、躺、倒）下，降低服国；向下prep.向下，沿着",
+          "zh": "沮丧"
+        },
+        {
+          "term": "road",
+          "ipa": "rəʊd",
+          "def": "n.[C]路",
+          "zh": "路"
+        },
+        {
+          "term": "heavy",
+          "ipa": "ˈhevi",
+          "def": "adj.重的，大量的，严重的",
+          "zh": "重的"
+        },
+        {
+          "term": "like",
+          "ipa": "laɪk",
+          "def": "vt.喜欢，喜爱prep.像，怎么样，例如n.[pl.]喜好，爱好conj.像……一样，如同",
+          "zh": "喜欢"
+        },
+        {
+          "term": "get",
+          "ipa": "ɡet",
+          "def": "vt.去取（或带来），得到v.-link.（与形容词连用）变得，（使）达到，进入",
+          "zh": "去取"
+        },
+        {
+          "term": "far",
+          "ipa": "fɑː(r)",
+          "def": "adv.远，非常，远远adj.远，远的，（某方向）最远的",
+          "zh": "远"
+        },
+        {
+          "term": "before",
+          "ipa": "bɪˈfɔː(r)",
+          "def": "prep./conj.在……以前adv.以前",
+          "zh": "在"
+        },
+        {
+          "term": "fly",
+          "ipa": "flaɪ",
+          "def": "v.飞，驾驶（飞机等）；乘飞机，（旗）飘扬n.[C]苍蝇",
+          "zh": "飞"
+        },
+        {
+          "term": "gold",
+          "ipa": "ɡəʊld",
+          "def": "n.[C]金子，金币adj金色的",
+          "zh": "金子"
+        }
+      ]
+    },
+    {
+      "node_id": "n009",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"We can't worry about the bags now,\" whispered Wukong.",
+      "text_zh": "\"我们现在不必担心那些包了,\"悟空低声说道。",
+      "illustration": "assets/adv_frames/ep82/f1.jpg",
+      "audio_start": 40.818,
+      "audio_end": 44.415,
+      "vocab": [],
+      "page_words": [
+        {
+          "term": "worry",
+          "ipa": "ˈwʌri",
+          "def": "v./n.[C]担心，担忧n.[C]令人担忧的事",
+          "zh": "担心"
+        },
+        {
+          "term": "quick",
+          "ipa": "kwɪk",
+          "def": "adj.快的，迅速的，敏捷的",
+          "zh": "快的"
+        },
+        {
+          "term": "help",
+          "ipa": "help",
+          "def": "n.[U]帮助，援助[sing.]有帮助的人或物v.帮助，援助",
+          "zh": "帮助"
+        },
+        {
+          "term": "horse",
+          "ipa": "hɔː(r)s",
+          "def": "n.[C]马",
+          "zh": "马"
+        },
+        {
+          "term": "group",
+          "ipa": "ɡruːp",
+          "def": "n.[C]组，群vt.把……分组/归类，聚集",
+          "zh": "组"
+        },
+        {
+          "term": "hurry",
+          "ipa": "ˈhʌri",
+          "def": "v.匆忙，赶快n.匆忙，急忙",
+          "zh": "匆忙"
+        },
+        {
+          "term": "down",
+          "ipa": "daʊn",
+          "def": "adj.沮丧，悲哀adv.（坐、躺、倒）下，降低服国；向下prep.向下，沿着",
+          "zh": "沮丧"
+        },
+        {
+          "term": "road",
+          "ipa": "rəʊd",
+          "def": "n.[C]路",
+          "zh": "路"
+        },
+        {
+          "term": "heavy",
+          "ipa": "ˈhevi",
+          "def": "adj.重的，大量的，严重的",
+          "zh": "重的"
+        },
+        {
+          "term": "like",
+          "ipa": "laɪk",
+          "def": "vt.喜欢，喜爱prep.像，怎么样，例如n.[pl.]喜好，爱好conj.像……一样，如同",
+          "zh": "喜欢"
+        },
+        {
+          "term": "get",
+          "ipa": "ɡet",
+          "def": "vt.去取（或带来），得到v.-link.（与形容词连用）变得，（使）达到，进入",
+          "zh": "去取"
+        },
+        {
+          "term": "far",
+          "ipa": "fɑː(r)",
+          "def": "adv.远，非常，远远adj.远，远的，（某方向）最远的",
+          "zh": "远"
+        },
+        {
+          "term": "before",
+          "ipa": "bɪˈfɔː(r)",
+          "def": "prep./conj.在……以前adv.以前",
+          "zh": "在"
+        },
+        {
+          "term": "fly",
+          "ipa": "flaɪ",
+          "def": "v.飞，驾驶（飞机等）；乘飞机，（旗）飘扬n.[C]苍蝇",
+          "zh": "飞"
+        },
+        {
+          "term": "gold",
+          "ipa": "ɡəʊld",
+          "def": "n.[C]金子，金币adj金色的",
+          "zh": "金子"
+        }
+      ]
+    },
+    {
+      "node_id": "n010",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"Yellow Brows is coming. We have to go—quickly!\"",
+      "text_zh": "\"Yellow Brows 即将到来!我们必须快点离开!\"",
+      "illustration": "assets/adv_frames/ep82/f2.jpg",
+      "audio_start": 44.416,
+      "audio_end": 50.546,
+      "vocab": [
+        {
+          "term": "quickly",
+          "zh": "迅速地",
+          "mode": "learn",
+          "phrase_en": "We have to go— quickly!",
+          "phrase_zh": "迅速地",
+          "source": "official_words"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "worry",
+          "ipa": "ˈwʌri",
+          "def": "v./n.[C]担心，担忧n.[C]令人担忧的事",
+          "zh": "担心"
+        },
+        {
+          "term": "quick",
+          "ipa": "kwɪk",
+          "def": "adj.快的，迅速的，敏捷的",
+          "zh": "快的"
+        },
+        {
+          "term": "help",
+          "ipa": "help",
+          "def": "n.[U]帮助，援助[sing.]有帮助的人或物v.帮助，援助",
+          "zh": "帮助"
+        },
+        {
+          "term": "horse",
+          "ipa": "hɔː(r)s",
+          "def": "n.[C]马",
+          "zh": "马"
+        },
+        {
+          "term": "group",
+          "ipa": "ɡruːp",
+          "def": "n.[C]组，群vt.把……分组/归类，聚集",
+          "zh": "组"
+        },
+        {
+          "term": "hurry",
+          "ipa": "ˈhʌri",
+          "def": "v.匆忙，赶快n.匆忙，急忙",
+          "zh": "匆忙"
+        },
+        {
+          "term": "down",
+          "ipa": "daʊn",
+          "def": "adj.沮丧，悲哀adv.（坐、躺、倒）下，降低服国；向下prep.向下，沿着",
+          "zh": "沮丧"
+        },
+        {
+          "term": "road",
+          "ipa": "rəʊd",
+          "def": "n.[C]路",
+          "zh": "路"
+        },
+        {
+          "term": "heavy",
+          "ipa": "ˈhevi",
+          "def": "adj.重的，大量的，严重的",
+          "zh": "重的"
+        },
+        {
+          "term": "like",
+          "ipa": "laɪk",
+          "def": "vt.喜欢，喜爱prep.像，怎么样，例如n.[pl.]喜好，爱好conj.像……一样，如同",
+          "zh": "喜欢"
+        },
+        {
+          "term": "get",
+          "ipa": "ɡet",
+          "def": "vt.去取（或带来），得到v.-link.（与形容词连用）变得，（使）达到，进入",
+          "zh": "去取"
+        },
+        {
+          "term": "far",
+          "ipa": "fɑː(r)",
+          "def": "adv.远，非常，远远adj.远，远的，（某方向）最远的",
+          "zh": "远"
+        },
+        {
+          "term": "before",
+          "ipa": "bɪˈfɔː(r)",
+          "def": "prep./conj.在……以前adv.以前",
+          "zh": "在"
+        },
+        {
+          "term": "fly",
+          "ipa": "flaɪ",
+          "def": "v.飞，驾驶（飞机等）；乘飞机，（旗）飘扬n.[C]苍蝇",
+          "zh": "飞"
+        },
+        {
+          "term": "gold",
+          "ipa": "ɡəʊld",
+          "def": "n.[C]金子，金币adj金色的",
+          "zh": "金子"
+        }
+      ]
+    },
+    {
+      "node_id": "n011",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "He helped the Tang Monk up onto the horse.",
+      "text_zh": "他帮助唐僧上马。",
+      "illustration": "assets/adv_frames/ep82/f3.jpg",
+      "audio_start": 50.547,
+      "audio_end": 54.337,
+      "vocab": [
+        {
+          "term": "monk",
+          "zh": "和尚",
+          "mode": "learn",
+          "phrase_en": "the Tang monk up onto",
+          "phrase_zh": "唐僧登上"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "worry",
+          "ipa": "ˈwʌri",
+          "def": "v./n.[C]担心，担忧n.[C]令人担忧的事",
+          "zh": "担心"
+        },
+        {
+          "term": "quick",
+          "ipa": "kwɪk",
+          "def": "adj.快的，迅速的，敏捷的",
+          "zh": "快的"
+        },
+        {
+          "term": "help",
+          "ipa": "help",
+          "def": "n.[U]帮助，援助[sing.]有帮助的人或物v.帮助，援助",
+          "zh": "帮助"
+        },
+        {
+          "term": "horse",
+          "ipa": "hɔː(r)s",
+          "def": "n.[C]马",
+          "zh": "马"
+        },
+        {
+          "term": "group",
+          "ipa": "ɡruːp",
+          "def": "n.[C]组，群vt.把……分组/归类，聚集",
+          "zh": "组"
+        },
+        {
+          "term": "hurry",
+          "ipa": "ˈhʌri",
+          "def": "v.匆忙，赶快n.匆忙，急忙",
+          "zh": "匆忙"
+        },
+        {
+          "term": "down",
+          "ipa": "daʊn",
+          "def": "adj.沮丧，悲哀adv.（坐、躺、倒）下，降低服国；向下prep.向下，沿着",
+          "zh": "沮丧"
+        },
+        {
+          "term": "road",
+          "ipa": "rəʊd",
+          "def": "n.[C]路",
+          "zh": "路"
+        },
+        {
+          "term": "heavy",
+          "ipa": "ˈhevi",
+          "def": "adj.重的，大量的，严重的",
+          "zh": "重的"
+        },
+        {
+          "term": "like",
+          "ipa": "laɪk",
+          "def": "vt.喜欢，喜爱prep.像，怎么样，例如n.[pl.]喜好，爱好conj.像……一样，如同",
+          "zh": "喜欢"
+        },
+        {
+          "term": "get",
+          "ipa": "ɡet",
+          "def": "vt.去取（或带来），得到v.-link.（与形容词连用）变得，（使）达到，进入",
+          "zh": "去取"
+        },
+        {
+          "term": "far",
+          "ipa": "fɑː(r)",
+          "def": "adv.远，非常，远远adj.远，远的，（某方向）最远的",
+          "zh": "远"
+        },
+        {
+          "term": "before",
+          "ipa": "bɪˈfɔː(r)",
+          "def": "prep./conj.在……以前adv.以前",
+          "zh": "在"
+        },
+        {
+          "term": "fly",
+          "ipa": "flaɪ",
+          "def": "v.飞，驾驶（飞机等）；乘飞机，（旗）飘扬n.[C]苍蝇",
+          "zh": "飞"
+        },
+        {
+          "term": "gold",
+          "ipa": "ɡəʊld",
+          "def": "n.[C]金子，金币adj金色的",
+          "zh": "金子"
+        }
+      ]
+    },
+    {
+      "node_id": "n012",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "The group hurried down the road.",
+      "text_zh": "这群人匆匆沿路前行。",
+      "illustration": "assets/adv_frames/ep82/f0.jpg",
+      "audio_start": 54.338,
+      "audio_end": 62.87,
+      "vocab": [],
+      "page_words": [
+        {
+          "term": "worry",
+          "ipa": "ˈwʌri",
+          "def": "v./n.[C]担心，担忧n.[C]令人担忧的事",
+          "zh": "担心"
+        },
+        {
+          "term": "quick",
+          "ipa": "kwɪk",
+          "def": "adj.快的，迅速的，敏捷的",
+          "zh": "快的"
+        },
+        {
+          "term": "help",
+          "ipa": "help",
+          "def": "n.[U]帮助，援助[sing.]有帮助的人或物v.帮助，援助",
+          "zh": "帮助"
+        },
+        {
+          "term": "horse",
+          "ipa": "hɔː(r)s",
+          "def": "n.[C]马",
+          "zh": "马"
+        },
+        {
+          "term": "group",
+          "ipa": "ɡruːp",
+          "def": "n.[C]组，群vt.把……分组/归类，聚集",
+          "zh": "组"
+        },
+        {
+          "term": "hurry",
+          "ipa": "ˈhʌri",
+          "def": "v.匆忙，赶快n.匆忙，急忙",
+          "zh": "匆忙"
+        },
+        {
+          "term": "down",
+          "ipa": "daʊn",
+          "def": "adj.沮丧，悲哀adv.（坐、躺、倒）下，降低服国；向下prep.向下，沿着",
+          "zh": "沮丧"
+        },
+        {
+          "term": "road",
+          "ipa": "rəʊd",
+          "def": "n.[C]路",
+          "zh": "路"
+        },
+        {
+          "term": "heavy",
+          "ipa": "ˈhevi",
+          "def": "adj.重的，大量的，严重的",
+          "zh": "重的"
+        },
+        {
+          "term": "like",
+          "ipa": "laɪk",
+          "def": "vt.喜欢，喜爱prep.像，怎么样，例如n.[pl.]喜好，爱好conj.像……一样，如同",
+          "zh": "喜欢"
+        },
+        {
+          "term": "get",
+          "ipa": "ɡet",
+          "def": "vt.去取（或带来），得到v.-link.（与形容词连用）变得，（使）达到，进入",
+          "zh": "去取"
+        },
+        {
+          "term": "far",
+          "ipa": "fɑː(r)",
+          "def": "adv.远，非常，远远adj.远，远的，（某方向）最远的",
+          "zh": "远"
+        },
+        {
+          "term": "before",
+          "ipa": "bɪˈfɔː(r)",
+          "def": "prep./conj.在……以前adv.以前",
+          "zh": "在"
+        },
+        {
+          "term": "fly",
+          "ipa": "flaɪ",
+          "def": "v.飞，驾驶（飞机等）；乘飞机，（旗）飘扬n.[C]苍蝇",
+          "zh": "飞"
+        },
+        {
+          "term": "gold",
+          "ipa": "ɡəʊld",
+          "def": "n.[C]金子，金币adj金色的",
+          "zh": "金子"
+        }
+      ]
+    },
+    {
+      "node_id": "n013",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"Run faster, Bajie!\" hissed Wujing.",
+      "text_zh": "\"跑得快点,八戒!\"悟净低吼道。",
+      "illustration": "assets/adv_frames/ep82/f1.jpg",
+      "audio_start": 62.871,
+      "audio_end": 66.219,
+      "vocab": [
+        {
+          "term": "hiss",
+          "zh": "1. (以不满的语气)小声说,(2. (蛇等)发出嘶嘶声)",
+          "mode": "learn",
+          "phrase_en": "\"Run faster, Bajie!\" hissed Wujing.",
+          "phrase_zh": "1.",
+          "source": "official_words"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "worry",
+          "ipa": "ˈwʌri",
+          "def": "v./n.[C]担心，担忧n.[C]令人担忧的事",
+          "zh": "担心"
+        },
+        {
+          "term": "quick",
+          "ipa": "kwɪk",
+          "def": "adj.快的，迅速的，敏捷的",
+          "zh": "快的"
+        },
+        {
+          "term": "help",
+          "ipa": "help",
+          "def": "n.[U]帮助，援助[sing.]有帮助的人或物v.帮助，援助",
+          "zh": "帮助"
+        },
+        {
+          "term": "horse",
+          "ipa": "hɔː(r)s",
+          "def": "n.[C]马",
+          "zh": "马"
+        },
+        {
+          "term": "group",
+          "ipa": "ɡruːp",
+          "def": "n.[C]组，群vt.把……分组/归类，聚集",
+          "zh": "组"
+        },
+        {
+          "term": "hurry",
+          "ipa": "ˈhʌri",
+          "def": "v.匆忙，赶快n.匆忙，急忙",
+          "zh": "匆忙"
+        },
+        {
+          "term": "down",
+          "ipa": "daʊn",
+          "def": "adj.沮丧，悲哀adv.（坐、躺、倒）下，降低服国；向下prep.向下，沿着",
+          "zh": "沮丧"
+        },
+        {
+          "term": "road",
+          "ipa": "rəʊd",
+          "def": "n.[C]路",
+          "zh": "路"
+        },
+        {
+          "term": "heavy",
+          "ipa": "ˈhevi",
+          "def": "adj.重的，大量的，严重的",
+          "zh": "重的"
+        },
+        {
+          "term": "like",
+          "ipa": "laɪk",
+          "def": "vt.喜欢，喜爱prep.像，怎么样，例如n.[pl.]喜好，爱好conj.像……一样，如同",
+          "zh": "喜欢"
+        },
+        {
+          "term": "get",
+          "ipa": "ɡet",
+          "def": "vt.去取（或带来），得到v.-link.（与形容词连用）变得，（使）达到，进入",
+          "zh": "去取"
+        },
+        {
+          "term": "far",
+          "ipa": "fɑː(r)",
+          "def": "adv.远，非常，远远adj.远，远的，（某方向）最远的",
+          "zh": "远"
+        },
+        {
+          "term": "before",
+          "ipa": "bɪˈfɔː(r)",
+          "def": "prep./conj.在……以前adv.以前",
+          "zh": "在"
+        },
+        {
+          "term": "fly",
+          "ipa": "flaɪ",
+          "def": "v.飞，驾驶（飞机等）；乘飞机，（旗）飘扬n.[C]苍蝇",
+          "zh": "飞"
+        },
+        {
+          "term": "gold",
+          "ipa": "ɡəʊld",
+          "def": "n.[C]金子，金币adj金色的",
+          "zh": "金子"
+        }
+      ]
+    },
+    {
+      "node_id": "n014",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "Bajie breathed heavily.",
+      "text_zh": "祖八戒气喘吁吁。",
+      "illustration": "assets/adv_frames/ep82/f2.jpg",
+      "audio_start": 66.22,
+      "audio_end": 70.304,
+      "vocab": [
+        {
+          "term": "heavily",
+          "zh": "1. 猛烈地,厉害地,(2. 沉重地)",
+          "mode": "learn",
+          "phrase_en": "Bajie breathed heavily.",
+          "phrase_zh": "1. 猛烈地,厉害地,",
+          "source": "official_words"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "worry",
+          "ipa": "ˈwʌri",
+          "def": "v./n.[C]担心，担忧n.[C]令人担忧的事",
+          "zh": "担心"
+        },
+        {
+          "term": "quick",
+          "ipa": "kwɪk",
+          "def": "adj.快的，迅速的，敏捷的",
+          "zh": "快的"
+        },
+        {
+          "term": "help",
+          "ipa": "help",
+          "def": "n.[U]帮助，援助[sing.]有帮助的人或物v.帮助，援助",
+          "zh": "帮助"
+        },
+        {
+          "term": "horse",
+          "ipa": "hɔː(r)s",
+          "def": "n.[C]马",
+          "zh": "马"
+        },
+        {
+          "term": "group",
+          "ipa": "ɡruːp",
+          "def": "n.[C]组，群vt.把……分组/归类，聚集",
+          "zh": "组"
+        },
+        {
+          "term": "hurry",
+          "ipa": "ˈhʌri",
+          "def": "v.匆忙，赶快n.匆忙，急忙",
+          "zh": "匆忙"
+        },
+        {
+          "term": "down",
+          "ipa": "daʊn",
+          "def": "adj.沮丧，悲哀adv.（坐、躺、倒）下，降低服国；向下prep.向下，沿着",
+          "zh": "沮丧"
+        },
+        {
+          "term": "road",
+          "ipa": "rəʊd",
+          "def": "n.[C]路",
+          "zh": "路"
+        },
+        {
+          "term": "heavy",
+          "ipa": "ˈhevi",
+          "def": "adj.重的，大量的，严重的",
+          "zh": "重的"
+        },
+        {
+          "term": "like",
+          "ipa": "laɪk",
+          "def": "vt.喜欢，喜爱prep.像，怎么样，例如n.[pl.]喜好，爱好conj.像……一样，如同",
+          "zh": "喜欢"
+        },
+        {
+          "term": "get",
+          "ipa": "ɡet",
+          "def": "vt.去取（或带来），得到v.-link.（与形容词连用）变得，（使）达到，进入",
+          "zh": "去取"
+        },
+        {
+          "term": "far",
+          "ipa": "fɑː(r)",
+          "def": "adv.远，非常，远远adj.远，远的，（某方向）最远的",
+          "zh": "远"
+        },
+        {
+          "term": "before",
+          "ipa": "bɪˈfɔː(r)",
+          "def": "prep./conj.在……以前adv.以前",
+          "zh": "在"
+        },
+        {
+          "term": "fly",
+          "ipa": "flaɪ",
+          "def": "v.飞，驾驶（飞机等）；乘飞机，（旗）飘扬n.[C]苍蝇",
+          "zh": "飞"
+        },
+        {
+          "term": "gold",
+          "ipa": "ɡəʊld",
+          "def": "n.[C]金子，金币adj金色的",
+          "zh": "金子"
+        }
+      ]
+    },
+    {
+      "node_id": "n015",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"I . . . don't . . . like . . . running!\"",
+      "text_zh": "\"我......不喜欢......跑步!\"",
+      "illustration": "assets/adv_frames/ep82/f3.jpg",
+      "audio_start": 70.305,
+      "audio_end": 75.092,
+      "vocab": [],
+      "page_words": [
+        {
+          "term": "worry",
+          "ipa": "ˈwʌri",
+          "def": "v./n.[C]担心，担忧n.[C]令人担忧的事",
+          "zh": "担心"
+        },
+        {
+          "term": "quick",
+          "ipa": "kwɪk",
+          "def": "adj.快的，迅速的，敏捷的",
+          "zh": "快的"
+        },
+        {
+          "term": "help",
+          "ipa": "help",
+          "def": "n.[U]帮助，援助[sing.]有帮助的人或物v.帮助，援助",
+          "zh": "帮助"
+        },
+        {
+          "term": "horse",
+          "ipa": "hɔː(r)s",
+          "def": "n.[C]马",
+          "zh": "马"
+        },
+        {
+          "term": "group",
+          "ipa": "ɡruːp",
+          "def": "n.[C]组，群vt.把……分组/归类，聚集",
+          "zh": "组"
+        },
+        {
+          "term": "hurry",
+          "ipa": "ˈhʌri",
+          "def": "v.匆忙，赶快n.匆忙，急忙",
+          "zh": "匆忙"
+        },
+        {
+          "term": "down",
+          "ipa": "daʊn",
+          "def": "adj.沮丧，悲哀adv.（坐、躺、倒）下，降低服国；向下prep.向下，沿着",
+          "zh": "沮丧"
+        },
+        {
+          "term": "road",
+          "ipa": "rəʊd",
+          "def": "n.[C]路",
+          "zh": "路"
+        },
+        {
+          "term": "heavy",
+          "ipa": "ˈhevi",
+          "def": "adj.重的，大量的，严重的",
+          "zh": "重的"
+        },
+        {
+          "term": "like",
+          "ipa": "laɪk",
+          "def": "vt.喜欢，喜爱prep.像，怎么样，例如n.[pl.]喜好，爱好conj.像……一样，如同",
+          "zh": "喜欢"
+        },
+        {
+          "term": "get",
+          "ipa": "ɡet",
+          "def": "vt.去取（或带来），得到v.-link.（与形容词连用）变得，（使）达到，进入",
+          "zh": "去取"
+        },
+        {
+          "term": "far",
+          "ipa": "fɑː(r)",
+          "def": "adv.远，非常，远远adj.远，远的，（某方向）最远的",
+          "zh": "远"
+        },
+        {
+          "term": "before",
+          "ipa": "bɪˈfɔː(r)",
+          "def": "prep./conj.在……以前adv.以前",
+          "zh": "在"
+        },
+        {
+          "term": "fly",
+          "ipa": "flaɪ",
+          "def": "v.飞，驾驶（飞机等）；乘飞机，（旗）飘扬n.[C]苍蝇",
+          "zh": "飞"
+        },
+        {
+          "term": "gold",
+          "ipa": "ɡəʊld",
+          "def": "n.[C]金子，金币adj金色的",
+          "zh": "金子"
+        }
+      ]
+    },
+    {
+      "node_id": "n016",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "They hadn't gotten far before Yellow Brows flew over them.",
+      "text_zh": "他们刚行进不久,黄眉便从他们头顶飞过。",
+      "illustration": "assets/adv_frames/ep82/f0.jpg",
+      "audio_start": 75.093,
+      "audio_end": 79.991,
+      "vocab": [
+        {
+          "term": "gotten",
+          "zh": "变成(某种状态) get-got-gotten",
+          "mode": "learn",
+          "phrase_en": "They hadn't gotten far before Yellow Brows flew over them.",
+          "phrase_zh": "变成",
+          "source": "official_words"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "worry",
+          "ipa": "ˈwʌri",
+          "def": "v./n.[C]担心，担忧n.[C]令人担忧的事",
+          "zh": "担心"
+        },
+        {
+          "term": "quick",
+          "ipa": "kwɪk",
+          "def": "adj.快的，迅速的，敏捷的",
+          "zh": "快的"
+        },
+        {
+          "term": "help",
+          "ipa": "help",
+          "def": "n.[U]帮助，援助[sing.]有帮助的人或物v.帮助，援助",
+          "zh": "帮助"
+        },
+        {
+          "term": "horse",
+          "ipa": "hɔː(r)s",
+          "def": "n.[C]马",
+          "zh": "马"
+        },
+        {
+          "term": "group",
+          "ipa": "ɡruːp",
+          "def": "n.[C]组，群vt.把……分组/归类，聚集",
+          "zh": "组"
+        },
+        {
+          "term": "hurry",
+          "ipa": "ˈhʌri",
+          "def": "v.匆忙，赶快n.匆忙，急忙",
+          "zh": "匆忙"
+        },
+        {
+          "term": "down",
+          "ipa": "daʊn",
+          "def": "adj.沮丧，悲哀adv.（坐、躺、倒）下，降低服国；向下prep.向下，沿着",
+          "zh": "沮丧"
+        },
+        {
+          "term": "road",
+          "ipa": "rəʊd",
+          "def": "n.[C]路",
+          "zh": "路"
+        },
+        {
+          "term": "heavy",
+          "ipa": "ˈhevi",
+          "def": "adj.重的，大量的，严重的",
+          "zh": "重的"
+        },
+        {
+          "term": "like",
+          "ipa": "laɪk",
+          "def": "vt.喜欢，喜爱prep.像，怎么样，例如n.[pl.]喜好，爱好conj.像……一样，如同",
+          "zh": "喜欢"
+        },
+        {
+          "term": "get",
+          "ipa": "ɡet",
+          "def": "vt.去取（或带来），得到v.-link.（与形容词连用）变得，（使）达到，进入",
+          "zh": "去取"
+        },
+        {
+          "term": "far",
+          "ipa": "fɑː(r)",
+          "def": "adv.远，非常，远远adj.远，远的，（某方向）最远的",
+          "zh": "远"
+        },
+        {
+          "term": "before",
+          "ipa": "bɪˈfɔː(r)",
+          "def": "prep./conj.在……以前adv.以前",
+          "zh": "在"
+        },
+        {
+          "term": "fly",
+          "ipa": "flaɪ",
+          "def": "v.飞，驾驶（飞机等）；乘飞机，（旗）飘扬n.[C]苍蝇",
+          "zh": "飞"
+        },
+        {
+          "term": "gold",
+          "ipa": "ɡəʊld",
+          "def": "n.[C]金子，金币adj金色的",
+          "zh": "金子"
+        }
+      ]
+    },
+    {
+      "node_id": "n017",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"You can't escape from me!\" shouted the demon.",
+      "text_zh": "\"你无法逃脱我的魔掌!\"恶魔高声喊道。 \"",
+      "illustration": "assets/adv_frames/ep82/f1.jpg",
+      "audio_start": 79.992,
+      "audio_end": 83.667,
+      "vocab": [
+        {
+          "term": "demon",
+          "zh": "妖怪",
+          "mode": "learn",
+          "phrase_en": "You can't escape from me!\" shouted the demon",
+          "phrase_zh": "你无法逃脱我的魔掌!\"恶魔高声喊道。",
+          "gloss": "恶魔"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "worry",
+          "ipa": "ˈwʌri",
+          "def": "v./n.[C]担心，担忧n.[C]令人担忧的事",
+          "zh": "担心"
+        },
+        {
+          "term": "quick",
+          "ipa": "kwɪk",
+          "def": "adj.快的，迅速的，敏捷的",
+          "zh": "快的"
+        },
+        {
+          "term": "help",
+          "ipa": "help",
+          "def": "n.[U]帮助，援助[sing.]有帮助的人或物v.帮助，援助",
+          "zh": "帮助"
+        },
+        {
+          "term": "horse",
+          "ipa": "hɔː(r)s",
+          "def": "n.[C]马",
+          "zh": "马"
+        },
+        {
+          "term": "group",
+          "ipa": "ɡruːp",
+          "def": "n.[C]组，群vt.把……分组/归类，聚集",
+          "zh": "组"
+        },
+        {
+          "term": "hurry",
+          "ipa": "ˈhʌri",
+          "def": "v.匆忙，赶快n.匆忙，急忙",
+          "zh": "匆忙"
+        },
+        {
+          "term": "down",
+          "ipa": "daʊn",
+          "def": "adj.沮丧，悲哀adv.（坐、躺、倒）下，降低服国；向下prep.向下，沿着",
+          "zh": "沮丧"
+        },
+        {
+          "term": "road",
+          "ipa": "rəʊd",
+          "def": "n.[C]路",
+          "zh": "路"
+        },
+        {
+          "term": "heavy",
+          "ipa": "ˈhevi",
+          "def": "adj.重的，大量的，严重的",
+          "zh": "重的"
+        },
+        {
+          "term": "like",
+          "ipa": "laɪk",
+          "def": "vt.喜欢，喜爱prep.像，怎么样，例如n.[pl.]喜好，爱好conj.像……一样，如同",
+          "zh": "喜欢"
+        },
+        {
+          "term": "get",
+          "ipa": "ɡet",
+          "def": "vt.去取（或带来），得到v.-link.（与形容词连用）变得，（使）达到，进入",
+          "zh": "去取"
+        },
+        {
+          "term": "far",
+          "ipa": "fɑː(r)",
+          "def": "adv.远，非常，远远adj.远，远的，（某方向）最远的",
+          "zh": "远"
+        },
+        {
+          "term": "before",
+          "ipa": "bɪˈfɔː(r)",
+          "def": "prep./conj.在……以前adv.以前",
+          "zh": "在"
+        },
+        {
+          "term": "fly",
+          "ipa": "flaɪ",
+          "def": "v.飞，驾驶（飞机等）；乘飞机，（旗）飘扬n.[C]苍蝇",
+          "zh": "飞"
+        },
+        {
+          "term": "gold",
+          "ipa": "ɡəʊld",
+          "def": "n.[C]金子，金币adj金色的",
+          "zh": "金子"
+        }
+      ]
+    },
+    {
+      "node_id": "n018",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"And you will not be going to the west. I am a true Buddhist, and I will be the one to get the True Scriptures!\"",
+      "text_zh": "\"你无需前往西方。我乃真正的佛教徒,我将亲自获取真经!\"",
+      "illustration": "assets/adv_frames/ep82/f2.jpg",
+      "audio_start": 83.668,
+      "audio_end": 93.543,
+      "vocab": [
+        {
+          "term": "scriptures",
+          "zh": "经文",
+          "mode": "learn",
+          "phrase_en": "the True scriptures",
+          "phrase_zh": "真正的经文",
+          "gloss": "真经"
+        },
+        {
+          "term": "west",
+          "zh": "西方",
+          "mode": "learn",
+          "phrase_en": "to the west",
+          "phrase_zh": "西侧 \""
+        }
+      ],
+      "quiz_after": {
+        "q": "Which is NOT true?",
+        "choices": [
+          "Wukong went to Guanyin for help.",
+          "Spirits from Wudang Mountain came to help.",
+          "The Tang Monk was captured again."
+        ],
+        "answer": 1,
+        "q_zh": "哪一项是不正确的？",
+        "choices_zh": [
+          "悟空去找观音求助。",
+          "武当山的神灵前来帮忙。",
+          "唐僧再次被捕。"
+        ]
+      },
+      "page_words": [
+        {
+          "term": "worry",
+          "ipa": "ˈwʌri",
+          "def": "v./n.[C]担心，担忧n.[C]令人担忧的事",
+          "zh": "担心"
+        },
+        {
+          "term": "quick",
+          "ipa": "kwɪk",
+          "def": "adj.快的，迅速的，敏捷的",
+          "zh": "快的"
+        },
+        {
+          "term": "help",
+          "ipa": "help",
+          "def": "n.[U]帮助，援助[sing.]有帮助的人或物v.帮助，援助",
+          "zh": "帮助"
+        },
+        {
+          "term": "horse",
+          "ipa": "hɔː(r)s",
+          "def": "n.[C]马",
+          "zh": "马"
+        },
+        {
+          "term": "group",
+          "ipa": "ɡruːp",
+          "def": "n.[C]组，群vt.把……分组/归类，聚集",
+          "zh": "组"
+        },
+        {
+          "term": "hurry",
+          "ipa": "ˈhʌri",
+          "def": "v.匆忙，赶快n.匆忙，急忙",
+          "zh": "匆忙"
+        },
+        {
+          "term": "down",
+          "ipa": "daʊn",
+          "def": "adj.沮丧，悲哀adv.（坐、躺、倒）下，降低服国；向下prep.向下，沿着",
+          "zh": "沮丧"
+        },
+        {
+          "term": "road",
+          "ipa": "rəʊd",
+          "def": "n.[C]路",
+          "zh": "路"
+        },
+        {
+          "term": "heavy",
+          "ipa": "ˈhevi",
+          "def": "adj.重的，大量的，严重的",
+          "zh": "重的"
+        },
+        {
+          "term": "like",
+          "ipa": "laɪk",
+          "def": "vt.喜欢，喜爱prep.像，怎么样，例如n.[pl.]喜好，爱好conj.像……一样，如同",
+          "zh": "喜欢"
+        },
+        {
+          "term": "get",
+          "ipa": "ɡet",
+          "def": "vt.去取（或带来），得到v.-link.（与形容词连用）变得，（使）达到，进入",
+          "zh": "去取"
+        },
+        {
+          "term": "far",
+          "ipa": "fɑː(r)",
+          "def": "adv.远，非常，远远adj.远，远的，（某方向）最远的",
+          "zh": "远"
+        },
+        {
+          "term": "before",
+          "ipa": "bɪˈfɔː(r)",
+          "def": "prep./conj.在……以前adv.以前",
+          "zh": "在"
+        },
+        {
+          "term": "fly",
+          "ipa": "flaɪ",
+          "def": "v.飞，驾驶（飞机等）；乘飞机，（旗）飘扬n.[C]苍蝇",
+          "zh": "飞"
+        },
+        {
+          "term": "gold",
+          "ipa": "ɡəʊld",
+          "def": "n.[C]金子，金币adj金色的",
+          "zh": "金子"
+        }
+      ]
+    },
+    {
+      "node_id": "n019",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "Wukong, Bajie, and Wujing pulled out their weapons.",
+      "text_zh": "悟空、八戒和悟净拔出了他们的武器。",
+      "illustration": "assets/adv_frames/ep82/f3.jpg",
+      "audio_start": 93.544,
+      "audio_end": 97.862,
+      "vocab": [
+        {
+          "term": "pull out",
+          "zh": "抽出,拿出",
+          "mode": "learn",
+          "phrase_en": "Wukong, Bajie, and Wujing pulled out their weapons.",
+          "phrase_zh": "抽出,拿出",
+          "source": "official_words"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "fight",
+          "ipa": "faɪt",
+          "def": "v./n.[C]打架，战斗v.与……作斗争",
+          "zh": "打架"
+        },
+        {
+          "term": "reach",
+          "ipa": "riːtʃ",
+          "def": "v.伸手，到达，抵达；打成（协议），实现n.能及的范围",
+          "zh": "伸手"
+        },
+        {
+          "term": "yellow",
+          "ipa": "ˈjeləʊ",
+          "def": "adj./n.[C,U]黄色（的）",
+          "zh": "黄色"
+        },
+        {
+          "term": "throw",
+          "ipa": "θrəʊ",
+          "def": "v.扔，掷",
+          "zh": "扔"
+        },
+        {
+          "term": "toward",
+          "ipa": "təˈwɔːd",
+          "def": "prep.朝，向，对着",
+          "zh": "朝"
+        },
+        {
+          "term": "look",
+          "ipa": "lʊk",
+          "def": "vi.看v.-link.看上去n.[C]看，注视，外表，表情",
+          "zh": "看"
+        },
+        {
+          "term": "door",
+          "ipa": "dɔː(r)",
+          "def": "n.[C]门",
+          "zh": "门"
+        },
+        {
+          "term": "cloud",
+          "ipa": "klaʊd",
+          "def": "n.[C,U]云，云朵",
+          "zh": "云"
+        }
+      ]
+    },
+    {
+      "node_id": "n020",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "The Gold Dragon bared its claws.",
+      "text_zh": "金龙展开了它的利爪。",
+      "illustration": "assets/adv_frames/ep82/f0.jpg",
+      "audio_start": 97.863,
+      "audio_end": 104.996,
+      "vocab": [
+        {
+          "term": "bare",
+          "zh": "1. 使赤裸,露出,(2. (山、树等)光秃秃的,3. 赤裸的,露出的)",
+          "mode": "learn",
+          "phrase_en": "The Gold Dragon bared its claws.",
+          "phrase_zh": "1. 使赤裸,露出,",
+          "source": "official_words"
+        },
+        {
+          "term": "dragon",
+          "zh": "龙",
+          "mode": "learn",
+          "phrase_en": "The Gold Dragon bared its claws",
+          "phrase_zh": "金龙展开了利爪",
+          "gloss": "龙"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "fight",
+          "ipa": "faɪt",
+          "def": "v./n.[C]打架，战斗v.与……作斗争",
+          "zh": "打架"
+        },
+        {
+          "term": "reach",
+          "ipa": "riːtʃ",
+          "def": "v.伸手，到达，抵达；打成（协议），实现n.能及的范围",
+          "zh": "伸手"
+        },
+        {
+          "term": "yellow",
+          "ipa": "ˈjeləʊ",
+          "def": "adj./n.[C,U]黄色（的）",
+          "zh": "黄色"
+        },
+        {
+          "term": "throw",
+          "ipa": "θrəʊ",
+          "def": "v.扔，掷",
+          "zh": "扔"
+        },
+        {
+          "term": "toward",
+          "ipa": "təˈwɔːd",
+          "def": "prep.朝，向，对着",
+          "zh": "朝"
+        },
+        {
+          "term": "look",
+          "ipa": "lʊk",
+          "def": "vi.看v.-link.看上去n.[C]看，注视，外表，表情",
+          "zh": "看"
+        },
+        {
+          "term": "door",
+          "ipa": "dɔː(r)",
+          "def": "n.[C]门",
+          "zh": "门"
+        },
+        {
+          "term": "cloud",
+          "ipa": "klaʊd",
+          "def": "n.[C,U]云，云朵",
+          "zh": "云"
+        }
+      ]
+    },
+    {
+      "node_id": "n021",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "Yellow Brows scoffed.",
+      "text_zh": "黄眉撇了撇嘴。",
+      "illustration": "assets/adv_frames/ep82/f1.jpg",
+      "audio_start": 104.997,
+      "audio_end": 106.593,
+      "vocab": [
+        {
+          "term": "scoff",
+          "zh": "嘲笑,嘲弄",
+          "mode": "learn",
+          "phrase_en": "Yellow Brows scoffed.",
+          "phrase_zh": "嘲笑,嘲弄",
+          "source": "official_words"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "fight",
+          "ipa": "faɪt",
+          "def": "v./n.[C]打架，战斗v.与……作斗争",
+          "zh": "打架"
+        },
+        {
+          "term": "reach",
+          "ipa": "riːtʃ",
+          "def": "v.伸手，到达，抵达；打成（协议），实现n.能及的范围",
+          "zh": "伸手"
+        },
+        {
+          "term": "yellow",
+          "ipa": "ˈjeləʊ",
+          "def": "adj./n.[C,U]黄色（的）",
+          "zh": "黄色"
+        },
+        {
+          "term": "throw",
+          "ipa": "θrəʊ",
+          "def": "v.扔，掷",
+          "zh": "扔"
+        },
+        {
+          "term": "toward",
+          "ipa": "təˈwɔːd",
+          "def": "prep.朝，向，对着",
+          "zh": "朝"
+        },
+        {
+          "term": "look",
+          "ipa": "lʊk",
+          "def": "vi.看v.-link.看上去n.[C]看，注视，外表，表情",
+          "zh": "看"
+        },
+        {
+          "term": "door",
+          "ipa": "dɔː(r)",
+          "def": "n.[C]门",
+          "zh": "门"
+        },
+        {
+          "term": "cloud",
+          "ipa": "klaʊd",
+          "def": "n.[C,U]云，云朵",
+          "zh": "云"
+        }
+      ]
+    },
+    {
+      "node_id": "n022",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"Do you really think you can fight me?\"",
+      "text_zh": "\"你真的认为自己能打败我吗?\"",
+      "illustration": "assets/adv_frames/ep82/f2.jpg",
+      "audio_start": 106.594,
+      "audio_end": 109.887,
+      "vocab": [
+        {
+          "term": "fight",
+          "zh": "打架",
+          "mode": "learn",
+          "phrase_en": "Do you really think you can fight me",
+          "phrase_zh": "你真的认为自己能打败我吗?",
+          "ipa": "faɪt",
+          "pos": "v.",
+          "def": "v./n.[C]打架，战斗v.与……作斗争",
+          "gloss": "打斗"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "fight",
+          "ipa": "faɪt",
+          "def": "v./n.[C]打架，战斗v.与……作斗争",
+          "zh": "打架"
+        },
+        {
+          "term": "reach",
+          "ipa": "riːtʃ",
+          "def": "v.伸手，到达，抵达；打成（协议），实现n.能及的范围",
+          "zh": "伸手"
+        },
+        {
+          "term": "yellow",
+          "ipa": "ˈjeləʊ",
+          "def": "adj./n.[C,U]黄色（的）",
+          "zh": "黄色"
+        },
+        {
+          "term": "throw",
+          "ipa": "θrəʊ",
+          "def": "v.扔，掷",
+          "zh": "扔"
+        },
+        {
+          "term": "toward",
+          "ipa": "təˈwɔːd",
+          "def": "prep.朝，向，对着",
+          "zh": "朝"
+        },
+        {
+          "term": "look",
+          "ipa": "lʊk",
+          "def": "vi.看v.-link.看上去n.[C]看，注视，外表，表情",
+          "zh": "看"
+        },
+        {
+          "term": "door",
+          "ipa": "dɔː(r)",
+          "def": "n.[C]门",
+          "zh": "门"
+        },
+        {
+          "term": "cloud",
+          "ipa": "klaʊd",
+          "def": "n.[C,U]云，云朵",
+          "zh": "云"
+        }
+      ]
+    },
+    {
+      "node_id": "p01",
+      "type": "puzzle",
+      "speaker": "system",
+      "text_en": "Put the words in order",
+      "text_zh": "点词块组句，完成后点确定",
+      "illustration": null,
+      "puzzle": {
+        "sentence": "We have powerful weapons.",
+        "words": [
+          "have",
+          "powerful",
+          "We",
+          "weapons"
+        ]
+      },
+      "vocab": []
+    },
+    {
+      "node_id": "n023",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "He reached into his robe and pulled out the cloth.",
+      "text_zh": "他伸手从长袍中掏出那块布料。",
+      "illustration": "assets/adv_frames/ep82/f3.jpg",
+      "audio_start": 109.888,
+      "audio_end": 114.117,
+      "vocab": [
+        {
+          "term": "robe",
+          "zh": "袈裟；袍",
+          "mode": "learn",
+          "phrase_en": "into his robe and pulled",
+          "phrase_zh": "将衣物套入袍中,然后拉上",
+          "gloss": "长袍"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "fight",
+          "ipa": "faɪt",
+          "def": "v./n.[C]打架，战斗v.与……作斗争",
+          "zh": "打架"
+        },
+        {
+          "term": "reach",
+          "ipa": "riːtʃ",
+          "def": "v.伸手，到达，抵达；打成（协议），实现n.能及的范围",
+          "zh": "伸手"
+        },
+        {
+          "term": "yellow",
+          "ipa": "ˈjeləʊ",
+          "def": "adj./n.[C,U]黄色（的）",
+          "zh": "黄色"
+        },
+        {
+          "term": "throw",
+          "ipa": "θrəʊ",
+          "def": "v.扔，掷",
+          "zh": "扔"
+        },
+        {
+          "term": "toward",
+          "ipa": "təˈwɔːd",
+          "def": "prep.朝，向，对着",
+          "zh": "朝"
+        },
+        {
+          "term": "look",
+          "ipa": "lʊk",
+          "def": "vi.看v.-link.看上去n.[C]看，注视，外表，表情",
+          "zh": "看"
+        },
+        {
+          "term": "door",
+          "ipa": "dɔː(r)",
+          "def": "n.[C]门",
+          "zh": "门"
+        },
+        {
+          "term": "cloud",
+          "ipa": "klaʊd",
+          "def": "n.[C,U]云，云朵",
+          "zh": "云"
+        }
+      ]
+    },
+    {
+      "node_id": "n024",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "Bajie lowered his rake and laughed.",
+      "text_zh": "八戒放下锄头,笑了起来。",
+      "illustration": "assets/adv_frames/ep82/f0.jpg",
+      "audio_start": 114.118,
+      "audio_end": 117.701,
+      "vocab": [
+        {
+          "term": "rake",
+          "zh": "1. 耙子,(2. (用耙子等)耙)",
+          "mode": "learn",
+          "phrase_en": "Bajie lowered his rake and laughed.",
+          "phrase_zh": "1. 耙子,",
+          "source": "official_words"
+        },
+        {
+          "term": "lower",
+          "zh": "降低,放下",
+          "mode": "learn",
+          "phrase_en": "Bajie lowered his rake and laughed.",
+          "phrase_zh": "降低,放下",
+          "source": "official_words"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "fight",
+          "ipa": "faɪt",
+          "def": "v./n.[C]打架，战斗v.与……作斗争",
+          "zh": "打架"
+        },
+        {
+          "term": "reach",
+          "ipa": "riːtʃ",
+          "def": "v.伸手，到达，抵达；打成（协议），实现n.能及的范围",
+          "zh": "伸手"
+        },
+        {
+          "term": "yellow",
+          "ipa": "ˈjeləʊ",
+          "def": "adj./n.[C,U]黄色（的）",
+          "zh": "黄色"
+        },
+        {
+          "term": "throw",
+          "ipa": "θrəʊ",
+          "def": "v.扔，掷",
+          "zh": "扔"
+        },
+        {
+          "term": "toward",
+          "ipa": "təˈwɔːd",
+          "def": "prep.朝，向，对着",
+          "zh": "朝"
+        },
+        {
+          "term": "look",
+          "ipa": "lʊk",
+          "def": "vi.看v.-link.看上去n.[C]看，注视，外表，表情",
+          "zh": "看"
+        },
+        {
+          "term": "door",
+          "ipa": "dɔː(r)",
+          "def": "n.[C]门",
+          "zh": "门"
+        },
+        {
+          "term": "cloud",
+          "ipa": "klaʊd",
+          "def": "n.[C,U]云，云朵",
+          "zh": "云"
+        }
+      ]
+    },
+    {
+      "node_id": "n025",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"We have powerful weapons. And all you have is a piece of cloth!\"",
+      "text_zh": "\"我们拥有强大的武器,而你们手中不过是一块布!\"",
+      "illustration": "assets/adv_frames/ep82/f1.jpg",
+      "audio_start": 117.702,
+      "audio_end": 123.428,
+      "vocab": [
+        {
+          "term": "piece",
+          "zh": "一块,(大东西的)部分",
+          "mode": "learn",
+          "phrase_en": "And all you have is a piece of cloth!",
+          "phrase_zh": "一块,",
+          "source": "official_words"
+        },
+        {
+          "term": "powerful",
+          "zh": "强大的",
+          "mode": "learn",
+          "phrase_en": "We have powerful weapons",
+          "phrase_zh": "我们拥有强大的武器",
+          "gloss": "有力量的"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "fight",
+          "ipa": "faɪt",
+          "def": "v./n.[C]打架，战斗v.与……作斗争",
+          "zh": "打架"
+        },
+        {
+          "term": "reach",
+          "ipa": "riːtʃ",
+          "def": "v.伸手，到达，抵达；打成（协议），实现n.能及的范围",
+          "zh": "伸手"
+        },
+        {
+          "term": "yellow",
+          "ipa": "ˈjeləʊ",
+          "def": "adj./n.[C,U]黄色（的）",
+          "zh": "黄色"
+        },
+        {
+          "term": "throw",
+          "ipa": "θrəʊ",
+          "def": "v.扔，掷",
+          "zh": "扔"
+        },
+        {
+          "term": "toward",
+          "ipa": "təˈwɔːd",
+          "def": "prep.朝，向，对着",
+          "zh": "朝"
+        },
+        {
+          "term": "look",
+          "ipa": "lʊk",
+          "def": "vi.看v.-link.看上去n.[C]看，注视，外表，表情",
+          "zh": "看"
+        },
+        {
+          "term": "door",
+          "ipa": "dɔː(r)",
+          "def": "n.[C]门",
+          "zh": "门"
+        },
+        {
+          "term": "cloud",
+          "ipa": "klaʊd",
+          "def": "n.[C,U]云，云朵",
+          "zh": "云"
+        }
+      ]
+    },
+    {
+      "node_id": "n026",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"That's not an ordinary cloth,\" warned the dragon.",
+      "text_zh": "\"这并非普通的布料,\"龙警告道。",
+      "illustration": "assets/adv_frames/ep82/f2.jpg",
+      "audio_start": 123.429,
+      "audio_end": 127.326,
+      "vocab": [
+        {
+          "term": "ordinary",
+          "zh": "平常的,普通的",
+          "mode": "learn",
+          "phrase_en": "That's not an ordinary cloth.",
+          "phrase_zh": "平常的,普通的",
+          "source": "official_words"
+        },
+        {
+          "term": "dragon",
+          "zh": "龙",
+          "mode": "test",
+          "options": [
+            "和尚",
+            "龙",
+            "妖怪",
+            "营救"
+          ],
+          "answer": 1,
+          "phrase_en": "warned the dragon",
+          "phrase_zh": "警告了龙",
+          "gloss": "龙"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "fight",
+          "ipa": "faɪt",
+          "def": "v./n.[C]打架，战斗v.与……作斗争",
+          "zh": "打架"
+        },
+        {
+          "term": "reach",
+          "ipa": "riːtʃ",
+          "def": "v.伸手，到达，抵达；打成（协议），实现n.能及的范围",
+          "zh": "伸手"
+        },
+        {
+          "term": "yellow",
+          "ipa": "ˈjeləʊ",
+          "def": "adj./n.[C,U]黄色（的）",
+          "zh": "黄色"
+        },
+        {
+          "term": "throw",
+          "ipa": "θrəʊ",
+          "def": "v.扔，掷",
+          "zh": "扔"
+        },
+        {
+          "term": "toward",
+          "ipa": "təˈwɔːd",
+          "def": "prep.朝，向，对着",
+          "zh": "朝"
+        },
+        {
+          "term": "look",
+          "ipa": "lʊk",
+          "def": "vi.看v.-link.看上去n.[C]看，注视，外表，表情",
+          "zh": "看"
+        },
+        {
+          "term": "door",
+          "ipa": "dɔː(r)",
+          "def": "n.[C]门",
+          "zh": "门"
+        },
+        {
+          "term": "cloud",
+          "ipa": "klaʊd",
+          "def": "n.[C,U]云，云朵",
+          "zh": "云"
+        }
+      ]
+    },
+    {
+      "node_id": "n027",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "Yellow Brows threw the cloth toward the group.",
+      "text_zh": "黄眉毛将布料朝众人方向抛去。",
+      "illustration": "assets/adv_frames/ep82/f3.jpg",
+      "audio_start": 127.327,
+      "audio_end": 132.286,
+      "vocab": [],
+      "quiz_after": {
+        "q": "What did Yellow Brows want to get?",
+        "choices": [
+          "the True Scriptures",
+          "the Tang Monk's bag",
+          "Wukong's iron bar"
+        ],
+        "answer": 0,
+        "q_zh": "黄眉想得到什么？",
+        "choices_zh": [
+          "真经",
+          "唐僧的包",
+          "悟空的铁棍"
+        ]
+      },
+      "page_words": [
+        {
+          "term": "fight",
+          "ipa": "faɪt",
+          "def": "v./n.[C]打架，战斗v.与……作斗争",
+          "zh": "打架"
+        },
+        {
+          "term": "reach",
+          "ipa": "riːtʃ",
+          "def": "v.伸手，到达，抵达；打成（协议），实现n.能及的范围",
+          "zh": "伸手"
+        },
+        {
+          "term": "yellow",
+          "ipa": "ˈjeləʊ",
+          "def": "adj./n.[C,U]黄色（的）",
+          "zh": "黄色"
+        },
+        {
+          "term": "throw",
+          "ipa": "θrəʊ",
+          "def": "v.扔，掷",
+          "zh": "扔"
+        },
+        {
+          "term": "toward",
+          "ipa": "təˈwɔːd",
+          "def": "prep.朝，向，对着",
+          "zh": "朝"
+        },
+        {
+          "term": "look",
+          "ipa": "lʊk",
+          "def": "vi.看v.-link.看上去n.[C]看，注视，外表，表情",
+          "zh": "看"
+        },
+        {
+          "term": "door",
+          "ipa": "dɔː(r)",
+          "def": "n.[C]门",
+          "zh": "门"
+        },
+        {
+          "term": "cloud",
+          "ipa": "klaʊd",
+          "def": "n.[C,U]云，云朵",
+          "zh": "云"
+        }
+      ]
+    },
+    {
+      "node_id": "n028",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"Look out!\" cried Wukong.",
+      "text_zh": "\"当心!\"悟空喊道。",
+      "illustration": "assets/adv_frames/ep82/f0.jpg",
+      "audio_start": 132.287,
+      "audio_end": 135.017,
+      "vocab": [
+        {
+          "term": "look out",
+          "zh": "提防,当心",
+          "mode": "learn",
+          "phrase_en": "Look out!",
+          "phrase_zh": "提防,当心",
+          "source": "official_words"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "fight",
+          "ipa": "faɪt",
+          "def": "v./n.[C]打架，战斗v.与……作斗争",
+          "zh": "打架"
+        },
+        {
+          "term": "reach",
+          "ipa": "riːtʃ",
+          "def": "v.伸手，到达，抵达；打成（协议），实现n.能及的范围",
+          "zh": "伸手"
+        },
+        {
+          "term": "yellow",
+          "ipa": "ˈjeləʊ",
+          "def": "adj./n.[C,U]黄色（的）",
+          "zh": "黄色"
+        },
+        {
+          "term": "throw",
+          "ipa": "θrəʊ",
+          "def": "v.扔，掷",
+          "zh": "扔"
+        },
+        {
+          "term": "toward",
+          "ipa": "təˈwɔːd",
+          "def": "prep.朝，向，对着",
+          "zh": "朝"
+        },
+        {
+          "term": "look",
+          "ipa": "lʊk",
+          "def": "vi.看v.-link.看上去n.[C]看，注视，外表，表情",
+          "zh": "看"
+        },
+        {
+          "term": "door",
+          "ipa": "dɔː(r)",
+          "def": "n.[C]门",
+          "zh": "门"
+        },
+        {
+          "term": "cloud",
+          "ipa": "klaʊd",
+          "def": "n.[C,U]云，云朵",
+          "zh": "云"
+        }
+      ]
+    },
+    {
+      "node_id": "n029",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "The monkey leaped up to the sky just before the cloth wrapped around his companions.",
+      "text_zh": "就在包裹着同伴们的布料即将覆盖它们之前,这只猴子跃上了天空。",
+      "illustration": "assets/adv_frames/ep82/f1.jpg",
+      "audio_start": 135.018,
+      "audio_end": 140.13,
+      "vocab": [
+        {
+          "term": "wrap",
+          "zh": "(用纸、布等)包",
+          "mode": "learn",
+          "phrase_en": "The monkey leaped up to the sky just before the cloth wrappped around his companions.",
+          "phrase_zh": "",
+          "source": "official_words"
+        },
+        {
+          "term": "monkey",
+          "zh": "猴子",
+          "mode": "review",
+          "options": [
+            "rescue",
+            "west",
+            "monkey",
+            "mountain"
+          ],
+          "answer": 2,
+          "phrase_en": "The monkey leaped up",
+          "phrase_zh": "猴子跳了起来",
+          "ipa": "ˈmʌŋki",
+          "pos": "n.",
+          "def": "n.[C]猴子",
+          "gloss": "猴子"
+        },
+        {
+          "term": "leaped",
+          "zh": "跃入",
+          "mode": "learn",
+          "phrase_en": "The monkey leaped up",
+          "phrase_zh": "猴子跳了起来",
+          "gloss": "跳跃"
+        }
+      ]
+    },
+    {
+      "node_id": "n030",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "Quickly the demon grabbed the cloth, with the group in it.",
+      "text_zh": "那恶魔迅速抓起那块布,布上正带着整个小队的人。",
+      "illustration": "assets/adv_frames/ep82/f2.jpg",
+      "audio_start": 140.131,
+      "audio_end": 143.813,
+      "vocab": [
+        {
+          "term": "demon",
+          "zh": "妖怪",
+          "mode": "test",
+          "options": [
+            "猴子",
+            "妖怪",
+            "跃入",
+            "强大的"
+          ],
+          "answer": 1,
+          "phrase_en": "Quickly the demon grabbed the cloth",
+          "phrase_zh": "邪灵迅速抓起那块布。",
+          "gloss": "恶魔"
+        }
+      ]
+    },
+    {
+      "node_id": "n031",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "He ran back into his monastery and slammed the door shut.",
+      "text_zh": "他冲回自己的修道院,猛地关上了门。",
+      "illustration": "assets/adv_frames/ep82/f3.jpg",
+      "audio_start": 143.814,
+      "audio_end": 148.277,
+      "vocab": [
+        {
+          "term": "slam",
+          "zh": "砰然关上(门)",
+          "mode": "learn",
+          "phrase_en": "He ran back into his monastery and slammed the door shut.",
+          "phrase_zh": "砰然关上",
+          "source": "official_words"
+        }
+      ]
+    },
+    {
+      "node_id": "n032",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "Wukong sat down on a cloud to think.",
+      "text_zh": "悟空坐在一朵云上沉思。",
+      "illustration": "assets/adv_frames/ep82/f0.jpg",
+      "audio_start": 148.278,
+      "audio_end": 152.301,
+      "vocab": [
+        {
+          "term": "cloud",
+          "zh": "云",
+          "mode": "learn",
+          "phrase_en": "Wukong sat down on a cloud to think",
+          "phrase_zh": "悟空坐在一朵云上沉思。",
+          "ipa": "klaʊd",
+          "pos": "n.",
+          "def": "n.[C,U]云，云朵",
+          "gloss": "云"
+        }
+      ]
+    },
+    {
+      "node_id": "n033",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "How could he rescue his companions?",
+      "text_zh": "他该如何营救他的同伴们?",
+      "illustration": "assets/adv_frames/ep82/f1.jpg",
+      "audio_start": 152.302,
+      "audio_end": 155.475,
+      "vocab": [
+        {
+          "term": "rescue",
+          "zh": "援救,营救",
+          "mode": "learn",
+          "phrase_en": "How could he rescue his companions?",
+          "phrase_zh": "他该如何营救他的同伴们?",
+          "gloss": "营救",
+          "source": "official_words"
+        }
+      ]
+    },
+    {
+      "node_id": "n034",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"I can't ask the Jade Emperor for help,\" thought Wukong.",
+      "text_zh": "\"我无法向玉帝求助,\"悟空心想。",
+      "illustration": "assets/adv_frames/ep82/f2.jpg",
+      "audio_start": 155.476,
+      "audio_end": 159.237,
+      "vocab": [
+        {
+          "term": "emperor",
+          "zh": "皇帝",
+          "mode": "learn",
+          "phrase_en": "I can't ask the Jade Emperor for help",
+          "phrase_zh": "我无法向玉皇大帝求援",
+          "gloss": "玉皇大帝"
+        }
+      ],
+      "quiz_after": {
+        "q": "Why did the travelers need to run away quickly?",
+        "choices": [
+          "Yellow Brows was after them.",
+          "Maitreya needed their help.",
+          "Bajie liked to run."
+        ],
+        "answer": 1,
+        "q_zh": "旅行者为什么需要迅速逃跑？",
+        "choices_zh": [
+          "黄眉正在追他们。",
+          "弥勒需要他们的帮助。",
+          "八戒喜欢跑步。"
+        ]
+      }
+    },
+    {
+      "node_id": "n035",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"He already sent the Gold Dragon, who was just captured again. Maybe I can ask Guanyin for help.\"",
+      "text_zh": "\"他刚刚派出了金龙——而金龙又刚刚被俘。或许我可以向观音菩萨求援。\"",
+      "illustration": "assets/adv_frames/ep82/f3.jpg",
+      "audio_start": 159.238,
+      "audio_end": 166.443,
+      "vocab": [
+        {
+          "term": "captured",
+          "zh": "抓住",
+          "mode": "learn",
+          "phrase_en": "who was just captured again",
+          "phrase_zh": "这位人物刚刚再次被俘",
+          "gloss": "被捕"
+        },
+        {
+          "term": "dragon",
+          "zh": "龙",
+          "mode": "review",
+          "options": [
+            "mountain",
+            "west",
+            "leaped",
+            "dragon"
+          ],
+          "answer": 3,
+          "phrase_en": "He already sent the Gold Dragon",
+          "phrase_zh": "他已派遣金龙前往。",
+          "gloss": "龙"
+        }
+      ]
+    },
+    {
+      "node_id": "n036",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "As Wukong was wondering what to do, two spirits approached him.",
+      "text_zh": "正当悟空正在思量该怎么做时,两位灵体向他走来。",
+      "illustration": "assets/adv_frames/ep82/f0.jpg",
+      "audio_start": 166.444,
+      "audio_end": 171.356,
+      "vocab": [],
+      "page_words": [
+        {
+          "term": "wonder",
+          "ipa": "ˈwʌndə(r)",
+          "def": "v.想知道，琢磨；非常惊讶n.[C]奇迹，奇观 [U]惊讶",
+          "zh": "想知道"
+        },
+        {
+          "term": "spirit",
+          "ipa": "ˈspɪrɪt",
+          "def": "n.[U]勇气，意志，实质[C]灵魂，鬼魂，幽灵[C,U]精神[pl.]情绪",
+          "zh": "勇气"
+        },
+        {
+          "term": "help",
+          "ipa": "help",
+          "def": "n.[U]帮助，援助[sing.]有帮助的人或物v.帮助，援助",
+          "zh": "帮助"
+        },
+        {
+          "term": "nod",
+          "ipa": "nɒd",
+          "def": "v.点头n.[C]点头",
+          "zh": "点头"
+        },
+        {
+          "term": "call",
+          "ipa": "kɔːl",
+          "def": "v.给……打电话，把……叫作，呼喊n.[C]电话，叫声圈国",
+          "zh": "给"
+        },
+        {
+          "term": "thank",
+          "ipa": "θæŋk",
+          "def": "vt.感谢，谢谢",
+          "zh": "感谢"
+        },
+        {
+          "term": "come",
+          "ipa": "kʌm",
+          "def": "vi.来，来到v.-link.成为，变成，变得",
+          "zh": "来"
+        },
+        {
+          "term": "say",
+          "ipa": "seɪ",
+          "def": "v.说，讲",
+          "zh": "说"
+        },
+        {
+          "term": "quick",
+          "ipa": "kwɪk",
+          "def": "adj.快的，迅速的，敏捷的",
+          "zh": "快的"
+        },
+        {
+          "term": "able",
+          "ipa": "ˈeɪbl",
+          "def": "adj.能够",
+          "zh": "能够"
+        },
+        {
+          "term": "fight",
+          "ipa": "faɪt",
+          "def": "v./n.[C]打架，战斗v.与……作斗争",
+          "zh": "打架"
+        },
+        {
+          "term": "three",
+          "ipa": "θriː",
+          "def": "",
+          "zh": "three"
+        }
+      ]
+    },
+    {
+      "node_id": "n037",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "One was a turtle, and the other was a serpent.",
+      "text_zh": "一只是乌龟,另一只是蛇。",
+      "illustration": "assets/adv_frames/ep82/f1.jpg",
+      "audio_start": 171.357,
+      "audio_end": 174.934,
+      "vocab": [
+        {
+          "term": "serpent",
+          "zh": "(大且有毒的)蛇",
+          "mode": "learn",
+          "phrase_en": "One was a turtle, and the other was a serpent.",
+          "phrase_zh": "",
+          "source": "official_words"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "wonder",
+          "ipa": "ˈwʌndə(r)",
+          "def": "v.想知道，琢磨；非常惊讶n.[C]奇迹，奇观 [U]惊讶",
+          "zh": "想知道"
+        },
+        {
+          "term": "spirit",
+          "ipa": "ˈspɪrɪt",
+          "def": "n.[U]勇气，意志，实质[C]灵魂，鬼魂，幽灵[C,U]精神[pl.]情绪",
+          "zh": "勇气"
+        },
+        {
+          "term": "help",
+          "ipa": "help",
+          "def": "n.[U]帮助，援助[sing.]有帮助的人或物v.帮助，援助",
+          "zh": "帮助"
+        },
+        {
+          "term": "nod",
+          "ipa": "nɒd",
+          "def": "v.点头n.[C]点头",
+          "zh": "点头"
+        },
+        {
+          "term": "call",
+          "ipa": "kɔːl",
+          "def": "v.给……打电话，把……叫作，呼喊n.[C]电话，叫声圈国",
+          "zh": "给"
+        },
+        {
+          "term": "thank",
+          "ipa": "θæŋk",
+          "def": "vt.感谢，谢谢",
+          "zh": "感谢"
+        },
+        {
+          "term": "come",
+          "ipa": "kʌm",
+          "def": "vi.来，来到v.-link.成为，变成，变得",
+          "zh": "来"
+        },
+        {
+          "term": "say",
+          "ipa": "seɪ",
+          "def": "v.说，讲",
+          "zh": "说"
+        },
+        {
+          "term": "quick",
+          "ipa": "kwɪk",
+          "def": "adj.快的，迅速的，敏捷的",
+          "zh": "快的"
+        },
+        {
+          "term": "able",
+          "ipa": "ˈeɪbl",
+          "def": "adj.能够",
+          "zh": "能够"
+        },
+        {
+          "term": "fight",
+          "ipa": "faɪt",
+          "def": "v./n.[C]打架，战斗v.与……作斗争",
+          "zh": "打架"
+        },
+        {
+          "term": "three",
+          "ipa": "θriː",
+          "def": "",
+          "zh": "three"
+        }
+      ]
+    },
+    {
+      "node_id": "n038",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "The two spirits each carried a sword and a shield.",
+      "text_zh": "两位仙人各持一把剑与一面盾牌。",
+      "illustration": "assets/adv_frames/ep82/f2.jpg",
+      "audio_start": 174.935,
+      "audio_end": 179.252,
+      "vocab": [
+        {
+          "term": "shield",
+          "zh": "盾",
+          "mode": "learn",
+          "phrase_en": "The two spirits each carried a sword and a shield.",
+          "phrase_zh": "盾",
+          "source": "official_words"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "wonder",
+          "ipa": "ˈwʌndə(r)",
+          "def": "v.想知道，琢磨；非常惊讶n.[C]奇迹，奇观 [U]惊讶",
+          "zh": "想知道"
+        },
+        {
+          "term": "spirit",
+          "ipa": "ˈspɪrɪt",
+          "def": "n.[U]勇气，意志，实质[C]灵魂，鬼魂，幽灵[C,U]精神[pl.]情绪",
+          "zh": "勇气"
+        },
+        {
+          "term": "help",
+          "ipa": "help",
+          "def": "n.[U]帮助，援助[sing.]有帮助的人或物v.帮助，援助",
+          "zh": "帮助"
+        },
+        {
+          "term": "nod",
+          "ipa": "nɒd",
+          "def": "v.点头n.[C]点头",
+          "zh": "点头"
+        },
+        {
+          "term": "call",
+          "ipa": "kɔːl",
+          "def": "v.给……打电话，把……叫作，呼喊n.[C]电话，叫声圈国",
+          "zh": "给"
+        },
+        {
+          "term": "thank",
+          "ipa": "θæŋk",
+          "def": "vt.感谢，谢谢",
+          "zh": "感谢"
+        },
+        {
+          "term": "come",
+          "ipa": "kʌm",
+          "def": "vi.来，来到v.-link.成为，变成，变得",
+          "zh": "来"
+        },
+        {
+          "term": "say",
+          "ipa": "seɪ",
+          "def": "v.说，讲",
+          "zh": "说"
+        },
+        {
+          "term": "quick",
+          "ipa": "kwɪk",
+          "def": "adj.快的，迅速的，敏捷的",
+          "zh": "快的"
+        },
+        {
+          "term": "able",
+          "ipa": "ˈeɪbl",
+          "def": "adj.能够",
+          "zh": "能够"
+        },
+        {
+          "term": "fight",
+          "ipa": "faɪt",
+          "def": "v./n.[C]打架，战斗v.与……作斗争",
+          "zh": "打架"
+        },
+        {
+          "term": "three",
+          "ipa": "θriː",
+          "def": "",
+          "zh": "three"
+        }
+      ]
+    },
+    {
+      "node_id": "n039",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"We're from Wudang Mountain,\" said the turtle.",
+      "text_zh": "\"我们来自武当山,\"乌龟说道。",
+      "illustration": "assets/adv_frames/ep82/f3.jpg",
+      "audio_start": 179.253,
+      "audio_end": 183.048,
+      "vocab": [
+        {
+          "term": "mountain",
+          "zh": "山",
+          "mode": "learn",
+          "phrase_en": "We're from Wudang Mountain",
+          "phrase_zh": "我们来自武当山",
+          "ipa": "ˈmaʊntən",
+          "pos": "n.",
+          "def": "n.[C]高山",
+          "gloss": "山"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "wonder",
+          "ipa": "ˈwʌndə(r)",
+          "def": "v.想知道，琢磨；非常惊讶n.[C]奇迹，奇观 [U]惊讶",
+          "zh": "想知道"
+        },
+        {
+          "term": "spirit",
+          "ipa": "ˈspɪrɪt",
+          "def": "n.[U]勇气，意志，实质[C]灵魂，鬼魂，幽灵[C,U]精神[pl.]情绪",
+          "zh": "勇气"
+        },
+        {
+          "term": "help",
+          "ipa": "help",
+          "def": "n.[U]帮助，援助[sing.]有帮助的人或物v.帮助，援助",
+          "zh": "帮助"
+        },
+        {
+          "term": "nod",
+          "ipa": "nɒd",
+          "def": "v.点头n.[C]点头",
+          "zh": "点头"
+        },
+        {
+          "term": "call",
+          "ipa": "kɔːl",
+          "def": "v.给……打电话，把……叫作，呼喊n.[C]电话，叫声圈国",
+          "zh": "给"
+        },
+        {
+          "term": "thank",
+          "ipa": "θæŋk",
+          "def": "vt.感谢，谢谢",
+          "zh": "感谢"
+        },
+        {
+          "term": "come",
+          "ipa": "kʌm",
+          "def": "vi.来，来到v.-link.成为，变成，变得",
+          "zh": "来"
+        },
+        {
+          "term": "say",
+          "ipa": "seɪ",
+          "def": "v.说，讲",
+          "zh": "说"
+        },
+        {
+          "term": "quick",
+          "ipa": "kwɪk",
+          "def": "adj.快的，迅速的，敏捷的",
+          "zh": "快的"
+        },
+        {
+          "term": "able",
+          "ipa": "ˈeɪbl",
+          "def": "adj.能够",
+          "zh": "能够"
+        },
+        {
+          "term": "fight",
+          "ipa": "faɪt",
+          "def": "v./n.[C]打架，战斗v.与……作斗争",
+          "zh": "打架"
+        },
+        {
+          "term": "three",
+          "ipa": "θriː",
+          "def": "",
+          "zh": "three"
+        }
+      ]
+    },
+    {
+      "node_id": "n040",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"We've come to help you.\"",
+      "text_zh": "\"我们来帮您了。\"",
+      "illustration": "assets/adv_frames/ep82/f0.jpg",
+      "audio_start": 183.049,
+      "audio_end": 185.931,
+      "vocab": [],
+      "page_words": [
+        {
+          "term": "wonder",
+          "ipa": "ˈwʌndə(r)",
+          "def": "v.想知道，琢磨；非常惊讶n.[C]奇迹，奇观 [U]惊讶",
+          "zh": "想知道"
+        },
+        {
+          "term": "spirit",
+          "ipa": "ˈspɪrɪt",
+          "def": "n.[U]勇气，意志，实质[C]灵魂，鬼魂，幽灵[C,U]精神[pl.]情绪",
+          "zh": "勇气"
+        },
+        {
+          "term": "help",
+          "ipa": "help",
+          "def": "n.[U]帮助，援助[sing.]有帮助的人或物v.帮助，援助",
+          "zh": "帮助"
+        },
+        {
+          "term": "nod",
+          "ipa": "nɒd",
+          "def": "v.点头n.[C]点头",
+          "zh": "点头"
+        },
+        {
+          "term": "call",
+          "ipa": "kɔːl",
+          "def": "v.给……打电话，把……叫作，呼喊n.[C]电话，叫声圈国",
+          "zh": "给"
+        },
+        {
+          "term": "thank",
+          "ipa": "θæŋk",
+          "def": "vt.感谢，谢谢",
+          "zh": "感谢"
+        },
+        {
+          "term": "come",
+          "ipa": "kʌm",
+          "def": "vi.来，来到v.-link.成为，变成，变得",
+          "zh": "来"
+        },
+        {
+          "term": "say",
+          "ipa": "seɪ",
+          "def": "v.说，讲",
+          "zh": "说"
+        },
+        {
+          "term": "quick",
+          "ipa": "kwɪk",
+          "def": "adj.快的，迅速的，敏捷的",
+          "zh": "快的"
+        },
+        {
+          "term": "able",
+          "ipa": "ˈeɪbl",
+          "def": "adj.能够",
+          "zh": "能够"
+        },
+        {
+          "term": "fight",
+          "ipa": "faɪt",
+          "def": "v./n.[C]打架，战斗v.与……作斗争",
+          "zh": "打架"
+        },
+        {
+          "term": "three",
+          "ipa": "θriː",
+          "def": "",
+          "zh": "three"
+        }
+      ]
+    },
+    {
+      "node_id": "n041",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "The serpent nodded.",
+      "text_zh": "龙蛇点了点头。",
+      "illustration": "assets/adv_frames/ep82/f1.jpg",
+      "audio_start": 185.932,
+      "audio_end": 187.548,
+      "vocab": [],
+      "page_words": [
+        {
+          "term": "wonder",
+          "ipa": "ˈwʌndə(r)",
+          "def": "v.想知道，琢磨；非常惊讶n.[C]奇迹，奇观 [U]惊讶",
+          "zh": "想知道"
+        },
+        {
+          "term": "spirit",
+          "ipa": "ˈspɪrɪt",
+          "def": "n.[U]勇气，意志，实质[C]灵魂，鬼魂，幽灵[C,U]精神[pl.]情绪",
+          "zh": "勇气"
+        },
+        {
+          "term": "help",
+          "ipa": "help",
+          "def": "n.[U]帮助，援助[sing.]有帮助的人或物v.帮助，援助",
+          "zh": "帮助"
+        },
+        {
+          "term": "nod",
+          "ipa": "nɒd",
+          "def": "v.点头n.[C]点头",
+          "zh": "点头"
+        },
+        {
+          "term": "call",
+          "ipa": "kɔːl",
+          "def": "v.给……打电话，把……叫作，呼喊n.[C]电话，叫声圈国",
+          "zh": "给"
+        },
+        {
+          "term": "thank",
+          "ipa": "θæŋk",
+          "def": "vt.感谢，谢谢",
+          "zh": "感谢"
+        },
+        {
+          "term": "come",
+          "ipa": "kʌm",
+          "def": "vi.来，来到v.-link.成为，变成，变得",
+          "zh": "来"
+        },
+        {
+          "term": "say",
+          "ipa": "seɪ",
+          "def": "v.说，讲",
+          "zh": "说"
+        },
+        {
+          "term": "quick",
+          "ipa": "kwɪk",
+          "def": "adj.快的，迅速的，敏捷的",
+          "zh": "快的"
+        },
+        {
+          "term": "able",
+          "ipa": "ˈeɪbl",
+          "def": "adj.能够",
+          "zh": "能够"
+        },
+        {
+          "term": "fight",
+          "ipa": "faɪt",
+          "def": "v./n.[C]打架，战斗v.与……作斗争",
+          "zh": "打架"
+        },
+        {
+          "term": "three",
+          "ipa": "θriː",
+          "def": "",
+          "zh": "three"
+        }
+      ]
+    },
+    {
+      "node_id": "n042",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"We heard the Tang Monk was captured by a demon called Yellow Brows.\"",
+      "text_zh": "\"我们听说唐僧被一个名叫'黄眉'的恶魔俘虏了。\"",
+      "illustration": "assets/adv_frames/ep82/f2.jpg",
+      "audio_start": 187.549,
+      "audio_end": 193.434,
+      "vocab": [
+        {
+          "term": "captured",
+          "zh": "抓住",
+          "mode": "test",
+          "options": [
+            "营救",
+            "抓住",
+            "和尚",
+            "猴子"
+          ],
+          "answer": 1,
+          "phrase_en": "Monk was captured by",
+          "phrase_zh": "僧侣被俘",
+          "gloss": "被捕"
+        },
+        {
+          "term": "demon",
+          "zh": "妖怪",
+          "mode": "review",
+          "options": [
+            "cloud",
+            "west",
+            "demon",
+            "powerful"
+          ],
+          "answer": 2,
+          "phrase_en": "by a demon called Yellow",
+          "phrase_zh": "由名为\"黄\"的恶魔所为",
+          "gloss": "恶魔"
+        },
+        {
+          "term": "monk",
+          "zh": "和尚",
+          "mode": "test",
+          "options": [
+            "和尚",
+            "抓住",
+            "猴子",
+            "西方"
+          ],
+          "answer": 0,
+          "phrase_en": "the Tang monk was captured",
+          "phrase_zh": "这位唐僧被俘"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "wonder",
+          "ipa": "ˈwʌndə(r)",
+          "def": "v.想知道，琢磨；非常惊讶n.[C]奇迹，奇观 [U]惊讶",
+          "zh": "想知道"
+        },
+        {
+          "term": "spirit",
+          "ipa": "ˈspɪrɪt",
+          "def": "n.[U]勇气，意志，实质[C]灵魂，鬼魂，幽灵[C,U]精神[pl.]情绪",
+          "zh": "勇气"
+        },
+        {
+          "term": "help",
+          "ipa": "help",
+          "def": "n.[U]帮助，援助[sing.]有帮助的人或物v.帮助，援助",
+          "zh": "帮助"
+        },
+        {
+          "term": "nod",
+          "ipa": "nɒd",
+          "def": "v.点头n.[C]点头",
+          "zh": "点头"
+        },
+        {
+          "term": "call",
+          "ipa": "kɔːl",
+          "def": "v.给……打电话，把……叫作，呼喊n.[C]电话，叫声圈国",
+          "zh": "给"
+        },
+        {
+          "term": "thank",
+          "ipa": "θæŋk",
+          "def": "vt.感谢，谢谢",
+          "zh": "感谢"
+        },
+        {
+          "term": "come",
+          "ipa": "kʌm",
+          "def": "vi.来，来到v.-link.成为，变成，变得",
+          "zh": "来"
+        },
+        {
+          "term": "say",
+          "ipa": "seɪ",
+          "def": "v.说，讲",
+          "zh": "说"
+        },
+        {
+          "term": "quick",
+          "ipa": "kwɪk",
+          "def": "adj.快的，迅速的，敏捷的",
+          "zh": "快的"
+        },
+        {
+          "term": "able",
+          "ipa": "ˈeɪbl",
+          "def": "adj.能够",
+          "zh": "能够"
+        },
+        {
+          "term": "fight",
+          "ipa": "faɪt",
+          "def": "v./n.[C]打架，战斗v.与……作斗争",
+          "zh": "打架"
+        },
+        {
+          "term": "three",
+          "ipa": "θriː",
+          "def": "",
+          "zh": "three"
+        }
+      ]
+    },
+    {
+      "node_id": "n043",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"Thank you for coming,\" said Wukong.",
+      "text_zh": "\"感谢您的到来,\"悟空说道。",
+      "illustration": "assets/adv_frames/ep82/f3.jpg",
+      "audio_start": 193.435,
+      "audio_end": 196.4,
+      "vocab": [],
+      "page_words": [
+        {
+          "term": "careful",
+          "ipa": "ˈkeəfl",
+          "def": "adj.小心的，细致的，精心的，慎重的",
+          "zh": "小心的"
+        },
+        {
+          "term": "mountain",
+          "ipa": "ˈmaʊntən",
+          "def": "n.[C]高山",
+          "zh": "高山"
+        },
+        {
+          "term": "door",
+          "ipa": "dɔː(r)",
+          "def": "n.[C]门",
+          "zh": "门"
+        },
+        {
+          "term": "fly",
+          "ipa": "flaɪ",
+          "def": "v.飞，驾驶（飞机等）；乘飞机，（旗）飘扬n.[C]苍蝇",
+          "zh": "飞"
+        },
+        {
+          "term": "open",
+          "ipa": "ˈəʊpən",
+          "def": "v.开，打开，开业adj.敞开的，开阔的n.[sing.]户外，公开",
+          "zh": "开"
+        },
+        {
+          "term": "step",
+          "ipa": "step",
+          "def": "n.[C]步，步骤vi.踏",
+          "zh": "步"
+        },
+        {
+          "term": "throw",
+          "ipa": "θrəʊ",
+          "def": "v.扔，掷",
+          "zh": "扔"
+        },
+        {
+          "term": "look",
+          "ipa": "lʊk",
+          "def": "vi.看v.-link.看上去n.[C]看，注视，外表，表情",
+          "zh": "看"
+        },
+        {
+          "term": "out",
+          "ipa": "aʊt",
+          "def": "adv.外出，出来",
+          "zh": "外出"
+        },
+        {
+          "term": "cry",
+          "ipa": "kraɪ",
+          "def": "v./n.[sing.]哭 [C]叫喊",
+          "zh": "哭"
+        },
+        {
+          "term": "monkey",
+          "ipa": "ˈmʌŋki",
+          "def": "n.[C]猴子",
+          "zh": "猴子"
+        },
+        {
+          "term": "jump",
+          "ipa": "dʒʌmp",
+          "def": "v.跳，跃n.[C]跳，跃（指运动）",
+          "zh": "跳"
+        },
+        {
+          "term": "fast",
+          "ipa": "fɑːst",
+          "def": "adj.快的adv.快地；完全地，牢固地",
+          "zh": "快的"
+        },
+        {
+          "term": "enough",
+          "ipa": "ɪˈnʌf",
+          "def": "adj./adv.足够的（地），充足的（地），充分的（地）pron.足够，充分",
+          "zh": "足够的"
+        },
+        {
+          "term": "around",
+          "ipa": "əˈraʊnd",
+          "def": "adv.在周围，大约，四处，掉头prep.在……周围，到处",
+          "zh": "在周围"
+        },
+        {
+          "term": "them",
+          "ipa": "ðem",
+          "def": "pron.（they的宾格）他（她、它）们",
+          "zh": "的宾格"
+        },
+        {
+          "term": "sky",
+          "ipa": "skaɪ",
+          "def": "",
+          "zh": "sky"
+        }
+      ]
+    },
+    {
+      "node_id": "n044",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "He quickly told them what had happened.",
+      "text_zh": "他迅速向他们讲述了发生的事情。",
+      "illustration": "assets/adv_frames/ep82/f0.jpg",
+      "audio_start": 196.401,
+      "audio_end": 199.965,
+      "vocab": [],
+      "page_words": [
+        {
+          "term": "careful",
+          "ipa": "ˈkeəfl",
+          "def": "adj.小心的，细致的，精心的，慎重的",
+          "zh": "小心的"
+        },
+        {
+          "term": "mountain",
+          "ipa": "ˈmaʊntən",
+          "def": "n.[C]高山",
+          "zh": "高山"
+        },
+        {
+          "term": "door",
+          "ipa": "dɔː(r)",
+          "def": "n.[C]门",
+          "zh": "门"
+        },
+        {
+          "term": "fly",
+          "ipa": "flaɪ",
+          "def": "v.飞，驾驶（飞机等）；乘飞机，（旗）飘扬n.[C]苍蝇",
+          "zh": "飞"
+        },
+        {
+          "term": "open",
+          "ipa": "ˈəʊpən",
+          "def": "v.开，打开，开业adj.敞开的，开阔的n.[sing.]户外，公开",
+          "zh": "开"
+        },
+        {
+          "term": "step",
+          "ipa": "step",
+          "def": "n.[C]步，步骤vi.踏",
+          "zh": "步"
+        },
+        {
+          "term": "throw",
+          "ipa": "θrəʊ",
+          "def": "v.扔，掷",
+          "zh": "扔"
+        },
+        {
+          "term": "look",
+          "ipa": "lʊk",
+          "def": "vi.看v.-link.看上去n.[C]看，注视，外表，表情",
+          "zh": "看"
+        },
+        {
+          "term": "out",
+          "ipa": "aʊt",
+          "def": "adv.外出，出来",
+          "zh": "外出"
+        },
+        {
+          "term": "cry",
+          "ipa": "kraɪ",
+          "def": "v./n.[sing.]哭 [C]叫喊",
+          "zh": "哭"
+        },
+        {
+          "term": "monkey",
+          "ipa": "ˈmʌŋki",
+          "def": "n.[C]猴子",
+          "zh": "猴子"
+        },
+        {
+          "term": "jump",
+          "ipa": "dʒʌmp",
+          "def": "v.跳，跃n.[C]跳，跃（指运动）",
+          "zh": "跳"
+        },
+        {
+          "term": "fast",
+          "ipa": "fɑːst",
+          "def": "adj.快的adv.快地；完全地，牢固地",
+          "zh": "快的"
+        },
+        {
+          "term": "enough",
+          "ipa": "ɪˈnʌf",
+          "def": "adj./adv.足够的（地），充足的（地），充分的（地）pron.足够，充分",
+          "zh": "足够的"
+        },
+        {
+          "term": "around",
+          "ipa": "əˈraʊnd",
+          "def": "adv.在周围，大约，四处，掉头prep.在……周围，到处",
+          "zh": "在周围"
+        },
+        {
+          "term": "them",
+          "ipa": "ðem",
+          "def": "pron.（they的宾格）他（她、它）们",
+          "zh": "的宾格"
+        },
+        {
+          "term": "sky",
+          "ipa": "skaɪ",
+          "def": "",
+          "zh": "sky"
+        }
+      ]
+    },
+    {
+      "node_id": "n045",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"Let's go to the monastery now,\" said the turtle.",
+      "text_zh": "\"我们现在就去寺院吧,\"乌龟说道。",
+      "illustration": "assets/adv_frames/ep82/f1.jpg",
+      "audio_start": 199.966,
+      "audio_end": 203.507,
+      "vocab": [],
+      "page_words": [
+        {
+          "term": "careful",
+          "ipa": "ˈkeəfl",
+          "def": "adj.小心的，细致的，精心的，慎重的",
+          "zh": "小心的"
+        },
+        {
+          "term": "mountain",
+          "ipa": "ˈmaʊntən",
+          "def": "n.[C]高山",
+          "zh": "高山"
+        },
+        {
+          "term": "door",
+          "ipa": "dɔː(r)",
+          "def": "n.[C]门",
+          "zh": "门"
+        },
+        {
+          "term": "fly",
+          "ipa": "flaɪ",
+          "def": "v.飞，驾驶（飞机等）；乘飞机，（旗）飘扬n.[C]苍蝇",
+          "zh": "飞"
+        },
+        {
+          "term": "open",
+          "ipa": "ˈəʊpən",
+          "def": "v.开，打开，开业adj.敞开的，开阔的n.[sing.]户外，公开",
+          "zh": "开"
+        },
+        {
+          "term": "step",
+          "ipa": "step",
+          "def": "n.[C]步，步骤vi.踏",
+          "zh": "步"
+        },
+        {
+          "term": "throw",
+          "ipa": "θrəʊ",
+          "def": "v.扔，掷",
+          "zh": "扔"
+        },
+        {
+          "term": "look",
+          "ipa": "lʊk",
+          "def": "vi.看v.-link.看上去n.[C]看，注视，外表，表情",
+          "zh": "看"
+        },
+        {
+          "term": "out",
+          "ipa": "aʊt",
+          "def": "adv.外出，出来",
+          "zh": "外出"
+        },
+        {
+          "term": "cry",
+          "ipa": "kraɪ",
+          "def": "v./n.[sing.]哭 [C]叫喊",
+          "zh": "哭"
+        },
+        {
+          "term": "monkey",
+          "ipa": "ˈmʌŋki",
+          "def": "n.[C]猴子",
+          "zh": "猴子"
+        },
+        {
+          "term": "jump",
+          "ipa": "dʒʌmp",
+          "def": "v.跳，跃n.[C]跳，跃（指运动）",
+          "zh": "跳"
+        },
+        {
+          "term": "fast",
+          "ipa": "fɑːst",
+          "def": "adj.快的adv.快地；完全地，牢固地",
+          "zh": "快的"
+        },
+        {
+          "term": "enough",
+          "ipa": "ɪˈnʌf",
+          "def": "adj./adv.足够的（地），充足的（地），充分的（地）pron.足够，充分",
+          "zh": "足够的"
+        },
+        {
+          "term": "around",
+          "ipa": "əˈraʊnd",
+          "def": "adv.在周围，大约，四处，掉头prep.在……周围，到处",
+          "zh": "在周围"
+        },
+        {
+          "term": "them",
+          "ipa": "ðem",
+          "def": "pron.（they的宾格）他（她、它）们",
+          "zh": "的宾格"
+        },
+        {
+          "term": "sky",
+          "ipa": "skaɪ",
+          "def": "",
+          "zh": "sky"
+        }
+      ]
+    },
+    {
+      "node_id": "p02",
+      "type": "puzzle",
+      "speaker": "system",
+      "text_en": "Put the words in order",
+      "text_zh": "点词块组句，完成后点确定",
+      "illustration": null,
+      "puzzle": {
+        "sentence": "The group hurried down the road.",
+        "words": [
+          "road",
+          "hurried",
+          "down",
+          "group",
+          "the",
+          "The"
+        ]
+      },
+      "vocab": []
+    },
+    {
+      "node_id": "n046",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"Yellow Brows won't be able to fight all three of us.\"",
+      "text_zh": "\"Yellow Brows 没办法同时对抗我们三个人。\"",
+      "illustration": "assets/adv_frames/ep82/f2.jpg",
+      "audio_start": 203.508,
+      "audio_end": 207.591,
+      "vocab": [
+        {
+          "term": "fight",
+          "zh": "打架",
+          "mode": "test",
+          "options": [
+            "皇帝",
+            "打架",
+            "经文",
+            "妖怪"
+          ],
+          "answer": 1,
+          "phrase_en": "able to fight all three",
+          "phrase_zh": "能同时对抗三者",
+          "ipa": "faɪt",
+          "pos": "v.",
+          "def": "v./n.[C]打架，战斗v.与……作斗争",
+          "gloss": "打斗"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "careful",
+          "ipa": "ˈkeəfl",
+          "def": "adj.小心的，细致的，精心的，慎重的",
+          "zh": "小心的"
+        },
+        {
+          "term": "mountain",
+          "ipa": "ˈmaʊntən",
+          "def": "n.[C]高山",
+          "zh": "高山"
+        },
+        {
+          "term": "door",
+          "ipa": "dɔː(r)",
+          "def": "n.[C]门",
+          "zh": "门"
+        },
+        {
+          "term": "fly",
+          "ipa": "flaɪ",
+          "def": "v.飞，驾驶（飞机等）；乘飞机，（旗）飘扬n.[C]苍蝇",
+          "zh": "飞"
+        },
+        {
+          "term": "open",
+          "ipa": "ˈəʊpən",
+          "def": "v.开，打开，开业adj.敞开的，开阔的n.[sing.]户外，公开",
+          "zh": "开"
+        },
+        {
+          "term": "step",
+          "ipa": "step",
+          "def": "n.[C]步，步骤vi.踏",
+          "zh": "步"
+        },
+        {
+          "term": "throw",
+          "ipa": "θrəʊ",
+          "def": "v.扔，掷",
+          "zh": "扔"
+        },
+        {
+          "term": "look",
+          "ipa": "lʊk",
+          "def": "vi.看v.-link.看上去n.[C]看，注视，外表，表情",
+          "zh": "看"
+        },
+        {
+          "term": "out",
+          "ipa": "aʊt",
+          "def": "adv.外出，出来",
+          "zh": "外出"
+        },
+        {
+          "term": "cry",
+          "ipa": "kraɪ",
+          "def": "v./n.[sing.]哭 [C]叫喊",
+          "zh": "哭"
+        },
+        {
+          "term": "monkey",
+          "ipa": "ˈmʌŋki",
+          "def": "n.[C]猴子",
+          "zh": "猴子"
+        },
+        {
+          "term": "jump",
+          "ipa": "dʒʌmp",
+          "def": "v.跳，跃n.[C]跳，跃（指运动）",
+          "zh": "跳"
+        },
+        {
+          "term": "fast",
+          "ipa": "fɑːst",
+          "def": "adj.快的adv.快地；完全地，牢固地",
+          "zh": "快的"
+        },
+        {
+          "term": "enough",
+          "ipa": "ɪˈnʌf",
+          "def": "adj./adv.足够的（地），充足的（地），充分的（地）pron.足够，充分",
+          "zh": "足够的"
+        },
+        {
+          "term": "around",
+          "ipa": "əˈraʊnd",
+          "def": "adv.在周围，大约，四处，掉头prep.在……周围，到处",
+          "zh": "在周围"
+        },
+        {
+          "term": "them",
+          "ipa": "ðem",
+          "def": "pron.（they的宾格）他（她、它）们",
+          "zh": "的宾格"
+        },
+        {
+          "term": "sky",
+          "ipa": "skaɪ",
+          "def": "",
+          "zh": "sky"
+        }
+      ]
+    },
+    {
+      "node_id": "n047",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"We are much too powerful for him,\" added the serpent.",
+      "text_zh": "\"我们对它来说过于强大了,\"蛇补充道。",
+      "illustration": "assets/adv_frames/ep82/f3.jpg",
+      "audio_start": 207.592,
+      "audio_end": 211.54,
+      "vocab": [
+        {
+          "term": "powerful",
+          "zh": "强大的",
+          "mode": "test",
+          "options": [
+            "猴子",
+            "经文",
+            "龙",
+            "强大的"
+          ],
+          "answer": 3,
+          "phrase_en": "We are much too powerful for him",
+          "phrase_zh": "我们对他来说太过强大了。",
+          "gloss": "有力量的"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "careful",
+          "ipa": "ˈkeəfl",
+          "def": "adj.小心的，细致的，精心的，慎重的",
+          "zh": "小心的"
+        },
+        {
+          "term": "mountain",
+          "ipa": "ˈmaʊntən",
+          "def": "n.[C]高山",
+          "zh": "高山"
+        },
+        {
+          "term": "door",
+          "ipa": "dɔː(r)",
+          "def": "n.[C]门",
+          "zh": "门"
+        },
+        {
+          "term": "fly",
+          "ipa": "flaɪ",
+          "def": "v.飞，驾驶（飞机等）；乘飞机，（旗）飘扬n.[C]苍蝇",
+          "zh": "飞"
+        },
+        {
+          "term": "open",
+          "ipa": "ˈəʊpən",
+          "def": "v.开，打开，开业adj.敞开的，开阔的n.[sing.]户外，公开",
+          "zh": "开"
+        },
+        {
+          "term": "step",
+          "ipa": "step",
+          "def": "n.[C]步，步骤vi.踏",
+          "zh": "步"
+        },
+        {
+          "term": "throw",
+          "ipa": "θrəʊ",
+          "def": "v.扔，掷",
+          "zh": "扔"
+        },
+        {
+          "term": "look",
+          "ipa": "lʊk",
+          "def": "vi.看v.-link.看上去n.[C]看，注视，外表，表情",
+          "zh": "看"
+        },
+        {
+          "term": "out",
+          "ipa": "aʊt",
+          "def": "adv.外出，出来",
+          "zh": "外出"
+        },
+        {
+          "term": "cry",
+          "ipa": "kraɪ",
+          "def": "v./n.[sing.]哭 [C]叫喊",
+          "zh": "哭"
+        },
+        {
+          "term": "monkey",
+          "ipa": "ˈmʌŋki",
+          "def": "n.[C]猴子",
+          "zh": "猴子"
+        },
+        {
+          "term": "jump",
+          "ipa": "dʒʌmp",
+          "def": "v.跳，跃n.[C]跳，跃（指运动）",
+          "zh": "跳"
+        },
+        {
+          "term": "fast",
+          "ipa": "fɑːst",
+          "def": "adj.快的adv.快地；完全地，牢固地",
+          "zh": "快的"
+        },
+        {
+          "term": "enough",
+          "ipa": "ɪˈnʌf",
+          "def": "adj./adv.足够的（地），充足的（地），充分的（地）pron.足够，充分",
+          "zh": "足够的"
+        },
+        {
+          "term": "around",
+          "ipa": "əˈraʊnd",
+          "def": "adv.在周围，大约，四处，掉头prep.在……周围，到处",
+          "zh": "在周围"
+        },
+        {
+          "term": "them",
+          "ipa": "ðem",
+          "def": "pron.（they的宾格）他（她、它）们",
+          "zh": "的宾格"
+        },
+        {
+          "term": "sky",
+          "ipa": "skaɪ",
+          "def": "",
+          "zh": "sky"
+        }
+      ]
+    },
+    {
+      "node_id": "n048",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "Wukong led the two spirits down to the monastery.",
+      "text_zh": "悟空带领两位神灵前往寺院。",
+      "illustration": "assets/adv_frames/ep82/f0.jpg",
+      "audio_start": 211.541,
+      "audio_end": 217.576,
+      "vocab": [
+        {
+          "term": "led",
+          "zh": "指引,带领 (lead-led)",
+          "mode": "learn",
+          "phrase_en": "Wukong led the two spirits down to the monastery.",
+          "phrase_zh": "指引,带领",
+          "source": "official_words"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "careful",
+          "ipa": "ˈkeəfl",
+          "def": "adj.小心的，细致的，精心的，慎重的",
+          "zh": "小心的"
+        },
+        {
+          "term": "mountain",
+          "ipa": "ˈmaʊntən",
+          "def": "n.[C]高山",
+          "zh": "高山"
+        },
+        {
+          "term": "door",
+          "ipa": "dɔː(r)",
+          "def": "n.[C]门",
+          "zh": "门"
+        },
+        {
+          "term": "fly",
+          "ipa": "flaɪ",
+          "def": "v.飞，驾驶（飞机等）；乘飞机，（旗）飘扬n.[C]苍蝇",
+          "zh": "飞"
+        },
+        {
+          "term": "open",
+          "ipa": "ˈəʊpən",
+          "def": "v.开，打开，开业adj.敞开的，开阔的n.[sing.]户外，公开",
+          "zh": "开"
+        },
+        {
+          "term": "step",
+          "ipa": "step",
+          "def": "n.[C]步，步骤vi.踏",
+          "zh": "步"
+        },
+        {
+          "term": "throw",
+          "ipa": "θrəʊ",
+          "def": "v.扔，掷",
+          "zh": "扔"
+        },
+        {
+          "term": "look",
+          "ipa": "lʊk",
+          "def": "vi.看v.-link.看上去n.[C]看，注视，外表，表情",
+          "zh": "看"
+        },
+        {
+          "term": "out",
+          "ipa": "aʊt",
+          "def": "adv.外出，出来",
+          "zh": "外出"
+        },
+        {
+          "term": "cry",
+          "ipa": "kraɪ",
+          "def": "v./n.[sing.]哭 [C]叫喊",
+          "zh": "哭"
+        },
+        {
+          "term": "monkey",
+          "ipa": "ˈmʌŋki",
+          "def": "n.[C]猴子",
+          "zh": "猴子"
+        },
+        {
+          "term": "jump",
+          "ipa": "dʒʌmp",
+          "def": "v.跳，跃n.[C]跳，跃（指运动）",
+          "zh": "跳"
+        },
+        {
+          "term": "fast",
+          "ipa": "fɑːst",
+          "def": "adj.快的adv.快地；完全地，牢固地",
+          "zh": "快的"
+        },
+        {
+          "term": "enough",
+          "ipa": "ɪˈnʌf",
+          "def": "adj./adv.足够的（地），充足的（地），充分的（地）pron.足够，充分",
+          "zh": "足够的"
+        },
+        {
+          "term": "around",
+          "ipa": "əˈraʊnd",
+          "def": "adv.在周围，大约，四处，掉头prep.在……周围，到处",
+          "zh": "在周围"
+        },
+        {
+          "term": "them",
+          "ipa": "ðem",
+          "def": "pron.（they的宾格）他（她、它）们",
+          "zh": "的宾格"
+        },
+        {
+          "term": "sky",
+          "ipa": "skaɪ",
+          "def": "",
+          "zh": "sky"
+        }
+      ]
+    },
+    {
+      "node_id": "n049",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"Just be careful of his cloth,\" warned the monkey.",
+      "text_zh": "\"要当心他的布料,\"猴子警告道。",
+      "illustration": "assets/adv_frames/ep82/f1.jpg",
+      "audio_start": 217.577,
+      "audio_end": 221.662,
+      "vocab": [
+        {
+          "term": "monkey",
+          "zh": "猴子",
+          "mode": "review",
+          "options": [
+            "robe",
+            "emperor",
+            "dragon",
+            "monkey"
+          ],
+          "answer": 3,
+          "phrase_en": "warned the monkey",
+          "phrase_zh": "警告了猴子",
+          "ipa": "ˈmʌŋki",
+          "pos": "n.",
+          "def": "n.[C]猴子",
+          "gloss": "猴子"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "careful",
+          "ipa": "ˈkeəfl",
+          "def": "adj.小心的，细致的，精心的，慎重的",
+          "zh": "小心的"
+        },
+        {
+          "term": "mountain",
+          "ipa": "ˈmaʊntən",
+          "def": "n.[C]高山",
+          "zh": "高山"
+        },
+        {
+          "term": "door",
+          "ipa": "dɔː(r)",
+          "def": "n.[C]门",
+          "zh": "门"
+        },
+        {
+          "term": "fly",
+          "ipa": "flaɪ",
+          "def": "v.飞，驾驶（飞机等）；乘飞机，（旗）飘扬n.[C]苍蝇",
+          "zh": "飞"
+        },
+        {
+          "term": "open",
+          "ipa": "ˈəʊpən",
+          "def": "v.开，打开，开业adj.敞开的，开阔的n.[sing.]户外，公开",
+          "zh": "开"
+        },
+        {
+          "term": "step",
+          "ipa": "step",
+          "def": "n.[C]步，步骤vi.踏",
+          "zh": "步"
+        },
+        {
+          "term": "throw",
+          "ipa": "θrəʊ",
+          "def": "v.扔，掷",
+          "zh": "扔"
+        },
+        {
+          "term": "look",
+          "ipa": "lʊk",
+          "def": "vi.看v.-link.看上去n.[C]看，注视，外表，表情",
+          "zh": "看"
+        },
+        {
+          "term": "out",
+          "ipa": "aʊt",
+          "def": "adv.外出，出来",
+          "zh": "外出"
+        },
+        {
+          "term": "cry",
+          "ipa": "kraɪ",
+          "def": "v./n.[sing.]哭 [C]叫喊",
+          "zh": "哭"
+        },
+        {
+          "term": "monkey",
+          "ipa": "ˈmʌŋki",
+          "def": "n.[C]猴子",
+          "zh": "猴子"
+        },
+        {
+          "term": "jump",
+          "ipa": "dʒʌmp",
+          "def": "v.跳，跃n.[C]跳，跃（指运动）",
+          "zh": "跳"
+        },
+        {
+          "term": "fast",
+          "ipa": "fɑːst",
+          "def": "adj.快的adv.快地；完全地，牢固地",
+          "zh": "快的"
+        },
+        {
+          "term": "enough",
+          "ipa": "ɪˈnʌf",
+          "def": "adj./adv.足够的（地），充足的（地），充分的（地）pron.足够，充分",
+          "zh": "足够的"
+        },
+        {
+          "term": "around",
+          "ipa": "əˈraʊnd",
+          "def": "adv.在周围，大约，四处，掉头prep.在……周围，到处",
+          "zh": "在周围"
+        },
+        {
+          "term": "them",
+          "ipa": "ðem",
+          "def": "pron.（they的宾格）他（她、它）们",
+          "zh": "的宾格"
+        },
+        {
+          "term": "sky",
+          "ipa": "skaɪ",
+          "def": "",
+          "zh": "sky"
+        }
+      ]
+    },
+    {
+      "node_id": "n050",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"He'll try to capture us with it.\"",
+      "text_zh": "\"他想用这东西把我们困住。\"",
+      "illustration": "assets/adv_frames/ep82/f2.jpg",
+      "audio_start": 221.663,
+      "audio_end": 224.644,
+      "vocab": [],
+      "page_words": [
+        {
+          "term": "careful",
+          "ipa": "ˈkeəfl",
+          "def": "adj.小心的，细致的，精心的，慎重的",
+          "zh": "小心的"
+        },
+        {
+          "term": "mountain",
+          "ipa": "ˈmaʊntən",
+          "def": "n.[C]高山",
+          "zh": "高山"
+        },
+        {
+          "term": "door",
+          "ipa": "dɔː(r)",
+          "def": "n.[C]门",
+          "zh": "门"
+        },
+        {
+          "term": "fly",
+          "ipa": "flaɪ",
+          "def": "v.飞，驾驶（飞机等）；乘飞机，（旗）飘扬n.[C]苍蝇",
+          "zh": "飞"
+        },
+        {
+          "term": "open",
+          "ipa": "ˈəʊpən",
+          "def": "v.开，打开，开业adj.敞开的，开阔的n.[sing.]户外，公开",
+          "zh": "开"
+        },
+        {
+          "term": "step",
+          "ipa": "step",
+          "def": "n.[C]步，步骤vi.踏",
+          "zh": "步"
+        },
+        {
+          "term": "throw",
+          "ipa": "θrəʊ",
+          "def": "v.扔，掷",
+          "zh": "扔"
+        },
+        {
+          "term": "look",
+          "ipa": "lʊk",
+          "def": "vi.看v.-link.看上去n.[C]看，注视，外表，表情",
+          "zh": "看"
+        },
+        {
+          "term": "out",
+          "ipa": "aʊt",
+          "def": "adv.外出，出来",
+          "zh": "外出"
+        },
+        {
+          "term": "cry",
+          "ipa": "kraɪ",
+          "def": "v./n.[sing.]哭 [C]叫喊",
+          "zh": "哭"
+        },
+        {
+          "term": "monkey",
+          "ipa": "ˈmʌŋki",
+          "def": "n.[C]猴子",
+          "zh": "猴子"
+        },
+        {
+          "term": "jump",
+          "ipa": "dʒʌmp",
+          "def": "v.跳，跃n.[C]跳，跃（指运动）",
+          "zh": "跳"
+        },
+        {
+          "term": "fast",
+          "ipa": "fɑːst",
+          "def": "adj.快的adv.快地；完全地，牢固地",
+          "zh": "快的"
+        },
+        {
+          "term": "enough",
+          "ipa": "ɪˈnʌf",
+          "def": "adj./adv.足够的（地），充足的（地），充分的（地）pron.足够，充分",
+          "zh": "足够的"
+        },
+        {
+          "term": "around",
+          "ipa": "əˈraʊnd",
+          "def": "adv.在周围，大约，四处，掉头prep.在……周围，到处",
+          "zh": "在周围"
+        },
+        {
+          "term": "them",
+          "ipa": "ðem",
+          "def": "pron.（they的宾格）他（她、它）们",
+          "zh": "的宾格"
+        },
+        {
+          "term": "sky",
+          "ipa": "skaɪ",
+          "def": "",
+          "zh": "sky"
+        }
+      ]
+    },
+    {
+      "node_id": "n051",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "Wukong banged on the monastery door.",
+      "text_zh": "悟空猛击 monastery 的门扉。",
+      "illustration": "assets/adv_frames/ep82/f3.jpg",
+      "audio_start": 224.645,
+      "audio_end": 227.967,
+      "vocab": [
+        {
+          "term": "bang",
+          "zh": "砰地敲",
+          "mode": "learn",
+          "phrase_en": "Wukong banged on the monastery door.",
+          "phrase_zh": "砰地敲",
+          "source": "official_words"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "careful",
+          "ipa": "ˈkeəfl",
+          "def": "adj.小心的，细致的，精心的，慎重的",
+          "zh": "小心的"
+        },
+        {
+          "term": "mountain",
+          "ipa": "ˈmaʊntən",
+          "def": "n.[C]高山",
+          "zh": "高山"
+        },
+        {
+          "term": "door",
+          "ipa": "dɔː(r)",
+          "def": "n.[C]门",
+          "zh": "门"
+        },
+        {
+          "term": "fly",
+          "ipa": "flaɪ",
+          "def": "v.飞，驾驶（飞机等）；乘飞机，（旗）飘扬n.[C]苍蝇",
+          "zh": "飞"
+        },
+        {
+          "term": "open",
+          "ipa": "ˈəʊpən",
+          "def": "v.开，打开，开业adj.敞开的，开阔的n.[sing.]户外，公开",
+          "zh": "开"
+        },
+        {
+          "term": "step",
+          "ipa": "step",
+          "def": "n.[C]步，步骤vi.踏",
+          "zh": "步"
+        },
+        {
+          "term": "throw",
+          "ipa": "θrəʊ",
+          "def": "v.扔，掷",
+          "zh": "扔"
+        },
+        {
+          "term": "look",
+          "ipa": "lʊk",
+          "def": "vi.看v.-link.看上去n.[C]看，注视，外表，表情",
+          "zh": "看"
+        },
+        {
+          "term": "out",
+          "ipa": "aʊt",
+          "def": "adv.外出，出来",
+          "zh": "外出"
+        },
+        {
+          "term": "cry",
+          "ipa": "kraɪ",
+          "def": "v./n.[sing.]哭 [C]叫喊",
+          "zh": "哭"
+        },
+        {
+          "term": "monkey",
+          "ipa": "ˈmʌŋki",
+          "def": "n.[C]猴子",
+          "zh": "猴子"
+        },
+        {
+          "term": "jump",
+          "ipa": "dʒʌmp",
+          "def": "v.跳，跃n.[C]跳，跃（指运动）",
+          "zh": "跳"
+        },
+        {
+          "term": "fast",
+          "ipa": "fɑːst",
+          "def": "adj.快的adv.快地；完全地，牢固地",
+          "zh": "快的"
+        },
+        {
+          "term": "enough",
+          "ipa": "ɪˈnʌf",
+          "def": "adj./adv.足够的（地），充足的（地），充分的（地）pron.足够，充分",
+          "zh": "足够的"
+        },
+        {
+          "term": "around",
+          "ipa": "əˈraʊnd",
+          "def": "adv.在周围，大约，四处，掉头prep.在……周围，到处",
+          "zh": "在周围"
+        },
+        {
+          "term": "them",
+          "ipa": "ðem",
+          "def": "pron.（they的宾格）他（她、它）们",
+          "zh": "的宾格"
+        },
+        {
+          "term": "sky",
+          "ipa": "skaɪ",
+          "def": "",
+          "zh": "sky"
+        }
+      ]
+    },
+    {
+      "node_id": "n052",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"Release my friends right now, Yellow Brows! If you don't, I'll knock down your monastery! Then I'll smash your entire mountain!\"",
+      "text_zh": "\"现在立刻放我走,黄眉!如果你们不放我,我就摧毁你们的寺院!然后,我将彻底摧毁整座山!\"",
+      "illustration": "assets/adv_frames/ep82/f0.jpg",
+      "audio_start": 227.968,
+      "audio_end": 239.139,
+      "vocab": [
+        {
+          "term": "knock",
+          "zh": "拆除,撞到,击倒",
+          "mode": "learn",
+          "phrase_en": "down If you don't, I'll knock down your monastery!",
+          "phrase_zh": "拆除,撞到,击倒",
+          "source": "official_words"
+        },
+        {
+          "term": "release",
+          "zh": "释放,解放",
+          "mode": "learn",
+          "phrase_en": "Release my friends right now, Yellow Brows!",
+          "phrase_zh": "释放,解放",
+          "source": "official_words"
+        },
+        {
+          "term": "mountain",
+          "zh": "山",
+          "mode": "test",
+          "options": [
+            "山",
+            "妖怪",
+            "西方",
+            "跃入"
+          ],
+          "answer": 0,
+          "phrase_en": "your entire mountain",
+          "phrase_zh": "您的整座山峦",
+          "ipa": "ˈmaʊntən",
+          "pos": "n.",
+          "def": "n.[C]高山",
+          "gloss": "山"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "careful",
+          "ipa": "ˈkeəfl",
+          "def": "adj.小心的，细致的，精心的，慎重的",
+          "zh": "小心的"
+        },
+        {
+          "term": "mountain",
+          "ipa": "ˈmaʊntən",
+          "def": "n.[C]高山",
+          "zh": "高山"
+        },
+        {
+          "term": "door",
+          "ipa": "dɔː(r)",
+          "def": "n.[C]门",
+          "zh": "门"
+        },
+        {
+          "term": "fly",
+          "ipa": "flaɪ",
+          "def": "v.飞，驾驶（飞机等）；乘飞机，（旗）飘扬n.[C]苍蝇",
+          "zh": "飞"
+        },
+        {
+          "term": "open",
+          "ipa": "ˈəʊpən",
+          "def": "v.开，打开，开业adj.敞开的，开阔的n.[sing.]户外，公开",
+          "zh": "开"
+        },
+        {
+          "term": "step",
+          "ipa": "step",
+          "def": "n.[C]步，步骤vi.踏",
+          "zh": "步"
+        },
+        {
+          "term": "throw",
+          "ipa": "θrəʊ",
+          "def": "v.扔，掷",
+          "zh": "扔"
+        },
+        {
+          "term": "look",
+          "ipa": "lʊk",
+          "def": "vi.看v.-link.看上去n.[C]看，注视，外表，表情",
+          "zh": "看"
+        },
+        {
+          "term": "out",
+          "ipa": "aʊt",
+          "def": "adv.外出，出来",
+          "zh": "外出"
+        },
+        {
+          "term": "cry",
+          "ipa": "kraɪ",
+          "def": "v./n.[sing.]哭 [C]叫喊",
+          "zh": "哭"
+        },
+        {
+          "term": "monkey",
+          "ipa": "ˈmʌŋki",
+          "def": "n.[C]猴子",
+          "zh": "猴子"
+        },
+        {
+          "term": "jump",
+          "ipa": "dʒʌmp",
+          "def": "v.跳，跃n.[C]跳，跃（指运动）",
+          "zh": "跳"
+        },
+        {
+          "term": "fast",
+          "ipa": "fɑːst",
+          "def": "adj.快的adv.快地；完全地，牢固地",
+          "zh": "快的"
+        },
+        {
+          "term": "enough",
+          "ipa": "ɪˈnʌf",
+          "def": "adj./adv.足够的（地），充足的（地），充分的（地）pron.足够，充分",
+          "zh": "足够的"
+        },
+        {
+          "term": "around",
+          "ipa": "əˈraʊnd",
+          "def": "adv.在周围，大约，四处，掉头prep.在……周围，到处",
+          "zh": "在周围"
+        },
+        {
+          "term": "them",
+          "ipa": "ðem",
+          "def": "pron.（they的宾格）他（她、它）们",
+          "zh": "的宾格"
+        },
+        {
+          "term": "sky",
+          "ipa": "skaɪ",
+          "def": "",
+          "zh": "sky"
+        }
+      ]
+    },
+    {
+      "node_id": "n053",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "The door flew open.",
+      "text_zh": "门猛地打开。",
+      "illustration": "assets/adv_frames/ep82/f1.jpg",
+      "audio_start": 239.14,
+      "audio_end": 241.301,
+      "vocab": [],
+      "page_words": [
+        {
+          "term": "cloud",
+          "ipa": "klaʊd",
+          "def": "n.[C,U]云，云朵",
+          "zh": "云"
+        },
+        {
+          "term": "think",
+          "ipa": "θɪŋk",
+          "def": "v.认为，想。思考",
+          "zh": "认为"
+        },
+        {
+          "term": "voice",
+          "ipa": "vɔɪs",
+          "def": "n.[C,U]声音，嗓音[sing.]发言权；主/被动语态vt.表达（情感或意见）",
+          "zh": "声音"
+        },
+        {
+          "term": "toward",
+          "ipa": "təˈwɔːd",
+          "def": "prep.朝，向，对着",
+          "zh": "朝"
+        },
+        {
+          "term": "smile",
+          "ipa": "smaɪ",
+          "def": "vi./n.[C]笑，微笑",
+          "zh": "笑"
+        },
+        {
+          "term": "know",
+          "ipa": "nəʊ",
+          "def": "v.知道，了解",
+          "zh": "知道"
+        },
+        {
+          "term": "who",
+          "ipa": "huː",
+          "def": "pron.谁，什么人",
+          "zh": "谁"
+        }
+      ]
+    },
+    {
+      "node_id": "n054",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "Yellow Brows stepped out and threw the cloth.",
+      "text_zh": "黄眉步出一步,将布料扔了出去。",
+      "illustration": "assets/adv_frames/ep82/f2.jpg",
+      "audio_start": 241.302,
+      "audio_end": 246.216,
+      "vocab": [],
+      "quiz_after": {
+        "q": "What did Yellow Brows use to capture everyone?",
+        "choices": [
+          "a cloth",
+          "a bag",
+          "a net"
+        ],
+        "answer": 0,
+        "q_zh": "黄眉用什么抓住了大家？",
+        "choices_zh": [
+          "一块布",
+          "一个包",
+          "一个网"
+        ]
+      },
+      "page_words": [
+        {
+          "term": "cloud",
+          "ipa": "klaʊd",
+          "def": "n.[C,U]云，云朵",
+          "zh": "云"
+        },
+        {
+          "term": "think",
+          "ipa": "θɪŋk",
+          "def": "v.认为，想。思考",
+          "zh": "认为"
+        },
+        {
+          "term": "voice",
+          "ipa": "vɔɪs",
+          "def": "n.[C,U]声音，嗓音[sing.]发言权；主/被动语态vt.表达（情感或意见）",
+          "zh": "声音"
+        },
+        {
+          "term": "toward",
+          "ipa": "təˈwɔːd",
+          "def": "prep.朝，向，对着",
+          "zh": "朝"
+        },
+        {
+          "term": "smile",
+          "ipa": "smaɪ",
+          "def": "vi./n.[C]笑，微笑",
+          "zh": "笑"
+        },
+        {
+          "term": "know",
+          "ipa": "nəʊ",
+          "def": "v.知道，了解",
+          "zh": "知道"
+        },
+        {
+          "term": "who",
+          "ipa": "huː",
+          "def": "pron.谁，什么人",
+          "zh": "谁"
+        }
+      ]
+    },
+    {
+      "node_id": "n055",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"Look out!\" cried Wukong.",
+      "text_zh": "\"当心!\"悟空喊道。",
+      "illustration": "assets/adv_frames/ep82/f3.jpg",
+      "audio_start": 246.217,
+      "audio_end": 248.568,
+      "vocab": [],
+      "page_words": [
+        {
+          "term": "fight",
+          "ipa": "faɪt",
+          "def": "v./n.[C]打架，战斗v.与……作斗争",
+          "zh": "打架"
+        },
+        {
+          "term": "reach",
+          "ipa": "riːtʃ",
+          "def": "v.伸手，到达，抵达；打成（协议），实现n.能及的范围",
+          "zh": "伸手"
+        },
+        {
+          "term": "yellow",
+          "ipa": "ˈjeləʊ",
+          "def": "adj./n.[C,U]黄色（的）",
+          "zh": "黄色"
+        },
+        {
+          "term": "throw",
+          "ipa": "θrəʊ",
+          "def": "v.扔，掷",
+          "zh": "扔"
+        },
+        {
+          "term": "toward",
+          "ipa": "təˈwɔːd",
+          "def": "prep.朝，向，对着",
+          "zh": "朝"
+        },
+        {
+          "term": "look",
+          "ipa": "lʊk",
+          "def": "vi.看v.-link.看上去n.[C]看，注视，外表，表情",
+          "zh": "看"
+        },
+        {
+          "term": "door",
+          "ipa": "dɔː(r)",
+          "def": "n.[C]门",
+          "zh": "门"
+        },
+        {
+          "term": "cloud",
+          "ipa": "klaʊd",
+          "def": "n.[C,U]云，云朵",
+          "zh": "云"
+        }
+      ]
+    },
+    {
+      "node_id": "n056",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "The monkey jumped out of the way, but the turtle and serpent weren't fast enough.",
+      "text_zh": "猴子迅速闪开了,但乌龟和蛇的速度还不够快。",
+      "illustration": "assets/adv_frames/ep82/f0.jpg",
+      "audio_start": 248.569,
+      "audio_end": 253.231,
+      "vocab": [
+        {
+          "term": "out of the",
+          "zh": "靠边,避开",
+          "mode": "learn",
+          "phrase_en": "way The monkey jumped out of the way, but the turtle and serpent weren't fast enough.",
+          "phrase_zh": "靠边,避开",
+          "source": "official_words"
+        },
+        {
+          "term": "monkey",
+          "zh": "猴子",
+          "mode": "review",
+          "options": [
+            "dragon",
+            "robe",
+            "monkey",
+            "scriptures"
+          ],
+          "answer": 2,
+          "phrase_en": "The monkey jumped out of the way",
+          "phrase_zh": "猴子迅速跳开",
+          "ipa": "ˈmʌŋki",
+          "pos": "n.",
+          "def": "n.[C]猴子",
+          "gloss": "猴子"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "cloud",
+          "ipa": "klaʊd",
+          "def": "n.[C,U]云，云朵",
+          "zh": "云"
+        },
+        {
+          "term": "think",
+          "ipa": "θɪŋk",
+          "def": "v.认为，想。思考",
+          "zh": "认为"
+        },
+        {
+          "term": "voice",
+          "ipa": "vɔɪs",
+          "def": "n.[C,U]声音，嗓音[sing.]发言权；主/被动语态vt.表达（情感或意见）",
+          "zh": "声音"
+        },
+        {
+          "term": "toward",
+          "ipa": "təˈwɔːd",
+          "def": "prep.朝，向，对着",
+          "zh": "朝"
+        },
+        {
+          "term": "smile",
+          "ipa": "smaɪ",
+          "def": "vi./n.[C]笑，微笑",
+          "zh": "笑"
+        },
+        {
+          "term": "know",
+          "ipa": "nəʊ",
+          "def": "v.知道，了解",
+          "zh": "知道"
+        },
+        {
+          "term": "who",
+          "ipa": "huː",
+          "def": "pron.谁，什么人",
+          "zh": "谁"
+        }
+      ]
+    },
+    {
+      "node_id": "n057",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "The cloth wrapped around them.",
+      "text_zh": "包裹着他们的布料。",
+      "illustration": "assets/adv_frames/ep82/f1.jpg",
+      "audio_start": 253.232,
+      "audio_end": 257.215,
+      "vocab": [],
+      "page_words": [
+        {
+          "term": "cloud",
+          "ipa": "klaʊd",
+          "def": "n.[C,U]云，云朵",
+          "zh": "云"
+        },
+        {
+          "term": "think",
+          "ipa": "θɪŋk",
+          "def": "v.认为，想。思考",
+          "zh": "认为"
+        },
+        {
+          "term": "voice",
+          "ipa": "vɔɪs",
+          "def": "n.[C,U]声音，嗓音[sing.]发言权；主/被动语态vt.表达（情感或意见）",
+          "zh": "声音"
+        },
+        {
+          "term": "toward",
+          "ipa": "təˈwɔːd",
+          "def": "prep.朝，向，对着",
+          "zh": "朝"
+        },
+        {
+          "term": "smile",
+          "ipa": "smaɪ",
+          "def": "vi./n.[C]笑，微笑",
+          "zh": "笑"
+        },
+        {
+          "term": "know",
+          "ipa": "nəʊ",
+          "def": "v.知道，了解",
+          "zh": "知道"
+        },
+        {
+          "term": "who",
+          "ipa": "huː",
+          "def": "pron.谁，什么人",
+          "zh": "谁"
+        }
+      ]
+    },
+    {
+      "node_id": "n058",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "Laughing, the demon grabbed the bundle and went back into the monastery.",
+      "text_zh": "鬼怪笑着,抓起那捆东西,便返回了修道院。",
+      "illustration": "assets/adv_frames/ep82/f2.jpg",
+      "audio_start": 257.216,
+      "audio_end": 262.79,
+      "vocab": [
+        {
+          "term": "bundle",
+          "zh": "1. 大堆,大批,大量,(2. 捆, 卷, 束; 包裹)",
+          "mode": "learn",
+          "phrase_en": "Laughing, the demon grabbed the bundle and went back into the monastery.",
+          "phrase_zh": "1. 大堆,大批,大量,",
+          "source": "official_words"
+        },
+        {
+          "term": "demon",
+          "zh": "妖怪",
+          "mode": "review",
+          "options": [
+            "powerful",
+            "demon",
+            "scriptures",
+            "monk"
+          ],
+          "answer": 1,
+          "phrase_en": "the demon grabbed",
+          "phrase_zh": "恶魔抓住了",
+          "gloss": "恶魔"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "cloud",
+          "ipa": "klaʊd",
+          "def": "n.[C,U]云，云朵",
+          "zh": "云"
+        },
+        {
+          "term": "think",
+          "ipa": "θɪŋk",
+          "def": "v.认为，想。思考",
+          "zh": "认为"
+        },
+        {
+          "term": "voice",
+          "ipa": "vɔɪs",
+          "def": "n.[C,U]声音，嗓音[sing.]发言权；主/被动语态vt.表达（情感或意见）",
+          "zh": "声音"
+        },
+        {
+          "term": "toward",
+          "ipa": "təˈwɔːd",
+          "def": "prep.朝，向，对着",
+          "zh": "朝"
+        },
+        {
+          "term": "smile",
+          "ipa": "smaɪ",
+          "def": "vi./n.[C]笑，微笑",
+          "zh": "笑"
+        },
+        {
+          "term": "know",
+          "ipa": "nəʊ",
+          "def": "v.知道，了解",
+          "zh": "知道"
+        },
+        {
+          "term": "who",
+          "ipa": "huː",
+          "def": "pron.谁，什么人",
+          "zh": "谁"
+        }
+      ]
+    },
+    {
+      "node_id": "n059",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "Wukong flew back up into the sky.",
+      "text_zh": "悟空再次飞向天空。",
+      "illustration": "assets/adv_frames/ep82/f3.jpg",
+      "audio_start": 262.791,
+      "audio_end": 265.904,
+      "vocab": [],
+      "page_words": [
+        {
+          "term": "cloud",
+          "ipa": "klaʊd",
+          "def": "n.[C,U]云，云朵",
+          "zh": "云"
+        },
+        {
+          "term": "think",
+          "ipa": "θɪŋk",
+          "def": "v.认为，想。思考",
+          "zh": "认为"
+        },
+        {
+          "term": "voice",
+          "ipa": "vɔɪs",
+          "def": "n.[C,U]声音，嗓音[sing.]发言权；主/被动语态vt.表达（情感或意见）",
+          "zh": "声音"
+        },
+        {
+          "term": "toward",
+          "ipa": "təˈwɔːd",
+          "def": "prep.朝，向，对着",
+          "zh": "朝"
+        },
+        {
+          "term": "smile",
+          "ipa": "smaɪ",
+          "def": "vi./n.[C]笑，微笑",
+          "zh": "笑"
+        },
+        {
+          "term": "know",
+          "ipa": "nəʊ",
+          "def": "v.知道，了解",
+          "zh": "知道"
+        },
+        {
+          "term": "who",
+          "ipa": "huː",
+          "def": "pron.谁，什么人",
+          "zh": "谁"
+        }
+      ]
+    },
+    {
+      "node_id": "n060",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "He sat on a cloud and moaned.",
+      "text_zh": "他坐在云朵上,发出呻吟声。",
+      "illustration": "assets/adv_frames/ep82/f0.jpg",
+      "audio_start": 265.905,
+      "audio_end": 269.733,
+      "vocab": [
+        {
+          "term": "cloud",
+          "zh": "云",
+          "mode": "test",
+          "options": [
+            "龙",
+            "强大的",
+            "抓住",
+            "云"
+          ],
+          "answer": 3,
+          "phrase_en": "He sat on a cloud and moaned",
+          "phrase_zh": "他坐在云朵上,发出呻吟声。",
+          "ipa": "klaʊd",
+          "pos": "n.",
+          "def": "n.[C,U]云，云朵",
+          "gloss": "云"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "cloud",
+          "ipa": "klaʊd",
+          "def": "n.[C,U]云，云朵",
+          "zh": "云"
+        },
+        {
+          "term": "think",
+          "ipa": "θɪŋk",
+          "def": "v.认为，想。思考",
+          "zh": "认为"
+        },
+        {
+          "term": "voice",
+          "ipa": "vɔɪs",
+          "def": "n.[C,U]声音，嗓音[sing.]发言权；主/被动语态vt.表达（情感或意见）",
+          "zh": "声音"
+        },
+        {
+          "term": "toward",
+          "ipa": "təˈwɔːd",
+          "def": "prep.朝，向，对着",
+          "zh": "朝"
+        },
+        {
+          "term": "smile",
+          "ipa": "smaɪ",
+          "def": "vi./n.[C]笑，微笑",
+          "zh": "笑"
+        },
+        {
+          "term": "know",
+          "ipa": "nəʊ",
+          "def": "v.知道，了解",
+          "zh": "知道"
+        },
+        {
+          "term": "who",
+          "ipa": "huː",
+          "def": "pron.谁，什么人",
+          "zh": "谁"
+        }
+      ]
+    },
+    {
+      "node_id": "n061",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"Now what will I do?\"",
+      "text_zh": "\"现在我该怎么办?\"",
+      "illustration": "assets/adv_frames/ep82/f1.jpg",
+      "audio_start": 269.734,
+      "audio_end": 272.212,
+      "vocab": [],
+      "page_words": [
+        {
+          "term": "cloud",
+          "ipa": "klaʊd",
+          "def": "n.[C,U]云，云朵",
+          "zh": "云"
+        },
+        {
+          "term": "think",
+          "ipa": "θɪŋk",
+          "def": "v.认为，想。思考",
+          "zh": "认为"
+        },
+        {
+          "term": "voice",
+          "ipa": "vɔɪs",
+          "def": "n.[C,U]声音，嗓音[sing.]发言权；主/被动语态vt.表达（情感或意见）",
+          "zh": "声音"
+        },
+        {
+          "term": "toward",
+          "ipa": "təˈwɔːd",
+          "def": "prep.朝，向，对着",
+          "zh": "朝"
+        },
+        {
+          "term": "smile",
+          "ipa": "smaɪ",
+          "def": "vi./n.[C]笑，微笑",
+          "zh": "笑"
+        },
+        {
+          "term": "know",
+          "ipa": "nəʊ",
+          "def": "v.知道，了解",
+          "zh": "知道"
+        },
+        {
+          "term": "who",
+          "ipa": "huː",
+          "def": "pron.谁，什么人",
+          "zh": "谁"
+        }
+      ]
+    },
+    {
+      "node_id": "n062",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "He was still thinking when he heard a voice. \"Hello, Wukong!\"",
+      "text_zh": "他还在思考时,突然听到一个声音:\"喂,悟空!\"",
+      "illustration": "assets/adv_frames/ep82/f2.jpg",
+      "audio_start": 272.213,
+      "audio_end": 277.433,
+      "vocab": [],
+      "page_words": [
+        {
+          "term": "cloud",
+          "ipa": "klaʊd",
+          "def": "n.[C,U]云，云朵",
+          "zh": "云"
+        },
+        {
+          "term": "think",
+          "ipa": "θɪŋk",
+          "def": "v.认为，想。思考",
+          "zh": "认为"
+        },
+        {
+          "term": "voice",
+          "ipa": "vɔɪs",
+          "def": "n.[C,U]声音，嗓音[sing.]发言权；主/被动语态vt.表达（情感或意见）",
+          "zh": "声音"
+        },
+        {
+          "term": "toward",
+          "ipa": "təˈwɔːd",
+          "def": "prep.朝，向，对着",
+          "zh": "朝"
+        },
+        {
+          "term": "smile",
+          "ipa": "smaɪ",
+          "def": "vi./n.[C]笑，微笑",
+          "zh": "笑"
+        },
+        {
+          "term": "know",
+          "ipa": "nəʊ",
+          "def": "v.知道，了解",
+          "zh": "知道"
+        },
+        {
+          "term": "who",
+          "ipa": "huː",
+          "def": "pron.谁，什么人",
+          "zh": "谁"
+        }
+      ]
+    },
+    {
+      "node_id": "n063",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "Wukong looked toward the voice and saw a man with a big belly.",
+      "text_zh": "猿猴向声音来源望去,只见一名腹部隆起的男子。",
+      "illustration": "assets/adv_frames/ep82/f3.jpg",
+      "audio_start": 277.434,
+      "audio_end": 281.649,
+      "vocab": [
+        {
+          "term": "belly",
+          "zh": "腹部,肚子",
+          "mode": "learn",
+          "phrase_en": "Wukong looked toward the voice and saw a man with a big belly.",
+          "phrase_zh": "腹部,肚子",
+          "source": "official_words"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "cloud",
+          "ipa": "klaʊd",
+          "def": "n.[C,U]云，云朵",
+          "zh": "云"
+        },
+        {
+          "term": "think",
+          "ipa": "θɪŋk",
+          "def": "v.认为，想。思考",
+          "zh": "认为"
+        },
+        {
+          "term": "voice",
+          "ipa": "vɔɪs",
+          "def": "n.[C,U]声音，嗓音[sing.]发言权；主/被动语态vt.表达（情感或意见）",
+          "zh": "声音"
+        },
+        {
+          "term": "toward",
+          "ipa": "təˈwɔːd",
+          "def": "prep.朝，向，对着",
+          "zh": "朝"
+        },
+        {
+          "term": "smile",
+          "ipa": "smaɪ",
+          "def": "vi./n.[C]笑，微笑",
+          "zh": "笑"
+        },
+        {
+          "term": "know",
+          "ipa": "nəʊ",
+          "def": "v.知道，了解",
+          "zh": "知道"
+        },
+        {
+          "term": "who",
+          "ipa": "huː",
+          "def": "pron.谁，什么人",
+          "zh": "谁"
+        }
+      ]
+    },
+    {
+      "node_id": "n064",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "The man was smiling.",
+      "text_zh": "这位男子正在微笑。",
+      "illustration": "assets/adv_frames/ep82/f0.jpg",
+      "audio_start": 281.65,
+      "audio_end": 283.627,
+      "vocab": [],
+      "page_words": [
+        {
+          "term": "cloud",
+          "ipa": "klaʊd",
+          "def": "n.[C,U]云，云朵",
+          "zh": "云"
+        },
+        {
+          "term": "think",
+          "ipa": "θɪŋk",
+          "def": "v.认为，想。思考",
+          "zh": "认为"
+        },
+        {
+          "term": "voice",
+          "ipa": "vɔɪs",
+          "def": "n.[C,U]声音，嗓音[sing.]发言权；主/被动语态vt.表达（情感或意见）",
+          "zh": "声音"
+        },
+        {
+          "term": "toward",
+          "ipa": "təˈwɔːd",
+          "def": "prep.朝，向，对着",
+          "zh": "朝"
+        },
+        {
+          "term": "smile",
+          "ipa": "smaɪ",
+          "def": "vi./n.[C]笑，微笑",
+          "zh": "笑"
+        },
+        {
+          "term": "know",
+          "ipa": "nəʊ",
+          "def": "v.知道，了解",
+          "zh": "知道"
+        },
+        {
+          "term": "who",
+          "ipa": "huː",
+          "def": "pron.谁，什么人",
+          "zh": "谁"
+        }
+      ]
+    },
+    {
+      "node_id": "n065",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"Do you know who I am?\" asked the man.",
+      "text_zh": "\"你知道我是谁吗?\"这位男子问道。",
+      "illustration": "assets/adv_frames/ep82/f1.jpg",
+      "audio_start": 283.628,
+      "audio_end": 286.63,
+      "vocab": []
+    },
+    {
+      "node_id": "n066",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "Wukong smiled.",
+      "text_zh": "悟空微笑着。",
+      "illustration": "assets/adv_frames/ep82/f2.jpg",
+      "audio_start": 286.631,
+      "audio_end": 288.04,
+      "vocab": []
+    },
+    {
+      "node_id": "n067",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"You're the buddha Maitreya.\"",
+      "text_zh": "\"你就是弥勒佛。\"",
+      "illustration": "assets/adv_frames/ep82/f3.jpg",
+      "audio_start": 288.041,
+      "audio_end": 290.731,
+      "vocab": [],
+      "quiz_after": {
+        "q": "Who was the man with the big belly?",
+        "choices": [
+          "Maitreya",
+          "Buddha",
+          "Yellow Brows"
+        ],
+        "answer": 0,
+        "q_zh": "那个大肚子的男人是谁？",
+        "choices_zh": [
+          "弥勒",
+          "佛陀",
+          "黄眉"
+        ]
+      }
+    },
+    {
+      "node_id": "n068",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"Yes,\" said Maitreya. \"And I've come to help you.\"",
+      "text_zh": "\"是的,\"弥勒佛说道,\"我前来是为帮助你。\"",
+      "illustration": "assets/adv_frames/ep82/f0.jpg",
+      "audio_start": 290.732,
+      "audio_end": 298.407,
+      "vocab": []
+    }
+  ],
+  "puzzles": [
+    {
+      "sentence": "We have powerful weapons.",
+      "words": [
+        "have",
+        "powerful",
+        "We",
+        "weapons"
+      ]
+    },
+    {
+      "sentence": "The group hurried down the road.",
+      "words": [
+        "road",
+        "hurried",
+        "down",
+        "group",
+        "the",
+        "The"
+      ]
+    }
+  ],
+  "patterns": [
+    {
+      "pattern": "The monkey jumped back to his feet and ran fast out of the monastery.",
+      "term": "monkey",
+      "zh": "猴子"
+    },
+    {
+      "pattern": "The monkey looked at his empty hands.",
+      "term": "monkey",
+      "zh": "猴子"
+    },
+    {
+      "pattern": "He helped the Tang Monk up onto the horse.",
+      "term": "monk",
+      "zh": "和尚"
+    }
+  ],
+  "quiz": [],
+  "script_lexicon": {
+    "think": {
+      "ipa": "θɪŋk",
+      "pos": "v.",
+      "def": "v.认为，想。思考",
+      "zh": "认为"
+    },
+    "come": {
+      "ipa": "kʌm",
+      "pos": "vi.",
+      "def": "vi.来，来到v.-link.成为，变成，变得",
+      "zh": "来"
+    },
+    "jump": {
+      "ipa": "dʒʌmp",
+      "pos": "v.",
+      "def": "v.跳，跃n.[C]跳，跃（指运动）",
+      "zh": "跳"
+    },
+    "run": {
+      "ipa": "rʌn",
+      "pos": "vi.",
+      "def": "vi.跑，奔vt.经营n.[C]跑，跑步",
+      "zh": "跑"
+    },
+    "fast": {
+      "ipa": "fɑːst",
+      "pos": "adj.",
+      "def": "adj.快的adv.快地；完全地，牢固地",
+      "zh": "快的"
+    },
+    "outside": {
+      "ipa": "",
+      "pos": "adj.",
+      "def": "adj.外面的，外部的adv.在外面prep.在……外面n.[C]外部",
+      "zh": "外面的"
+    },
+    "everyone": {
+      "ipa": "ˈevriwʌn",
+      "pos": "pron.",
+      "def": "pron.每人，人人，所有人",
+      "zh": "每人"
+    },
+    "bag": {
+      "ipa": "bæɡ",
+      "pos": "n.",
+      "def": "n.[C]袋，包",
+      "zh": "袋"
+    },
+    "ask": {
+      "ipa": "ɑːsk",
+      "pos": "v.",
+      "def": "v.请求，要求，询问",
+      "zh": "请求"
+    },
+    "monkey": {
+      "ipa": "ˈmʌŋki",
+      "pos": "n.",
+      "def": "n.[C]猴子",
+      "zh": "猴子"
+    },
+    "empty": {
+      "ipa": "ˈempti",
+      "pos": "adj.",
+      "def": "adj.空的，空洞的；无意义的vt.倒空，掏空",
+      "zh": "空的"
+    },
+    "drop": {
+      "ipa": "drɒp",
+      "pos": "",
+      "def": "",
+      "zh": "drop"
+    },
+    "worry": {
+      "ipa": "ˈwʌri",
+      "pos": "v.",
+      "def": "v./n.[C]担心，担忧n.[C]令人担忧的事",
+      "zh": "担心"
+    },
+    "quick": {
+      "ipa": "kwɪk",
+      "pos": "adj.",
+      "def": "adj.快的，迅速的，敏捷的",
+      "zh": "快的"
+    },
+    "help": {
+      "ipa": "help",
+      "pos": "n.",
+      "def": "n.[U]帮助，援助[sing.]有帮助的人或物v.帮助，援助",
+      "zh": "帮助"
+    },
+    "horse": {
+      "ipa": "hɔː(r)s",
+      "pos": "n.",
+      "def": "n.[C]马",
+      "zh": "马"
+    },
+    "group": {
+      "ipa": "ɡruːp",
+      "pos": "n.",
+      "def": "n.[C]组，群vt.把……分组/归类，聚集",
+      "zh": "组"
+    },
+    "hurry": {
+      "ipa": "ˈhʌri",
+      "pos": "v.",
+      "def": "v.匆忙，赶快n.匆忙，急忙",
+      "zh": "匆忙"
+    },
+    "down": {
+      "ipa": "daʊn",
+      "pos": "adj.",
+      "def": "adj.沮丧，悲哀adv.（坐、躺、倒）下，降低服国；向下prep.向下，沿着",
+      "zh": "沮丧"
+    },
+    "road": {
+      "ipa": "rəʊd",
+      "pos": "n.",
+      "def": "n.[C]路",
+      "zh": "路"
+    },
+    "heavy": {
+      "ipa": "ˈhevi",
+      "pos": "adj.",
+      "def": "adj.重的，大量的，严重的",
+      "zh": "重的"
+    },
+    "like": {
+      "ipa": "laɪk",
+      "pos": "vt.",
+      "def": "vt.喜欢，喜爱prep.像，怎么样，例如n.[pl.]喜好，爱好conj.像……一样，如同",
+      "zh": "喜欢"
+    },
+    "get": {
+      "ipa": "ɡet",
+      "pos": "vt.",
+      "def": "vt.去取（或带来），得到v.-link.（与形容词连用）变得，（使）达到，进入",
+      "zh": "去取"
+    },
+    "far": {
+      "ipa": "fɑː(r)",
+      "pos": "adv.",
+      "def": "adv.远，非常，远远adj.远，远的，（某方向）最远的",
+      "zh": "远"
+    },
+    "before": {
+      "ipa": "bɪˈfɔː(r)",
+      "pos": "prep.",
+      "def": "prep./conj.在……以前adv.以前",
+      "zh": "在"
+    },
+    "fly": {
+      "ipa": "flaɪ",
+      "pos": "v.",
+      "def": "v.飞，驾驶（飞机等）；乘飞机，（旗）飘扬n.[C]苍蝇",
+      "zh": "飞"
+    },
+    "gold": {
+      "ipa": "ɡəʊld",
+      "pos": "n.",
+      "def": "n.[C]金子，金币adj金色的",
+      "zh": "金子"
+    },
+    "fight": {
+      "ipa": "faɪt",
+      "pos": "v.",
+      "def": "v./n.[C]打架，战斗v.与……作斗争",
+      "zh": "打架"
+    },
+    "reach": {
+      "ipa": "riːtʃ",
+      "pos": "v.",
+      "def": "v.伸手，到达，抵达；打成（协议），实现n.能及的范围",
+      "zh": "伸手"
+    },
+    "yellow": {
+      "ipa": "ˈjeləʊ",
+      "pos": "adj.",
+      "def": "adj./n.[C,U]黄色（的）",
+      "zh": "黄色"
+    },
+    "throw": {
+      "ipa": "θrəʊ",
+      "pos": "v.",
+      "def": "v.扔，掷",
+      "zh": "扔"
+    },
+    "toward": {
+      "ipa": "təˈwɔːd",
+      "pos": "prep.",
+      "def": "prep.朝，向，对着",
+      "zh": "朝"
+    },
+    "look": {
+      "ipa": "lʊk",
+      "pos": "vi.",
+      "def": "vi.看v.-link.看上去n.[C]看，注视，外表，表情",
+      "zh": "看"
+    },
+    "door": {
+      "ipa": "dɔː(r)",
+      "pos": "n.",
+      "def": "n.[C]门",
+      "zh": "门"
+    },
+    "cloud": {
+      "ipa": "klaʊd",
+      "pos": "n.",
+      "def": "n.[C,U]云，云朵",
+      "zh": "云"
+    },
+    "wonder": {
+      "ipa": "ˈwʌndə(r)",
+      "pos": "v.",
+      "def": "v.想知道，琢磨；非常惊讶n.[C]奇迹，奇观 [U]惊讶",
+      "zh": "想知道"
+    },
+    "spirit": {
+      "ipa": "ˈspɪrɪt",
+      "pos": "n.",
+      "def": "n.[U]勇气，意志，实质[C]灵魂，鬼魂，幽灵[C,U]精神[pl.]情绪",
+      "zh": "勇气"
+    },
+    "nod": {
+      "ipa": "nɒd",
+      "pos": "v.",
+      "def": "v.点头n.[C]点头",
+      "zh": "点头"
+    },
+    "call": {
+      "ipa": "kɔːl",
+      "pos": "v.",
+      "def": "v.给……打电话，把……叫作，呼喊n.[C]电话，叫声圈国",
+      "zh": "给"
+    },
+    "thank": {
+      "ipa": "θæŋk",
+      "pos": "vt.",
+      "def": "vt.感谢，谢谢",
+      "zh": "感谢"
+    },
+    "say": {
+      "ipa": "seɪ",
+      "pos": "v.",
+      "def": "v.说，讲",
+      "zh": "说"
+    },
+    "able": {
+      "ipa": "ˈeɪbl",
+      "pos": "adj.",
+      "def": "adj.能够",
+      "zh": "能够"
+    },
+    "three": {
+      "ipa": "θriː",
+      "pos": "",
+      "def": "",
+      "zh": "three"
+    },
+    "careful": {
+      "ipa": "ˈkeəfl",
+      "pos": "adj.",
+      "def": "adj.小心的，细致的，精心的，慎重的",
+      "zh": "小心的"
+    },
+    "mountain": {
+      "ipa": "ˈmaʊntən",
+      "pos": "n.",
+      "def": "n.[C]高山",
+      "zh": "高山"
+    },
+    "open": {
+      "ipa": "ˈəʊpən",
+      "pos": "v.",
+      "def": "v.开，打开，开业adj.敞开的，开阔的n.[sing.]户外，公开",
+      "zh": "开"
+    },
+    "step": {
+      "ipa": "step",
+      "pos": "n.",
+      "def": "n.[C]步，步骤vi.踏",
+      "zh": "步"
+    },
+    "out": {
+      "ipa": "aʊt",
+      "pos": "adv.",
+      "def": "adv.外出，出来",
+      "zh": "外出"
+    },
+    "cry": {
+      "ipa": "kraɪ",
+      "pos": "v.",
+      "def": "v./n.[sing.]哭 [C]叫喊",
+      "zh": "哭"
+    },
+    "enough": {
+      "ipa": "ɪˈnʌf",
+      "pos": "adj.",
+      "def": "adj./adv.足够的（地），充足的（地），充分的（地）pron.足够，充分",
+      "zh": "足够的"
+    },
+    "around": {
+      "ipa": "əˈraʊnd",
+      "pos": "adv.",
+      "def": "adv.在周围，大约，四处，掉头prep.在……周围，到处",
+      "zh": "在周围"
+    },
+    "them": {
+      "ipa": "ðem",
+      "pos": "pron.",
+      "def": "pron.（they的宾格）他（她、它）们",
+      "zh": "的宾格"
+    },
+    "sky": {
+      "ipa": "skaɪ",
+      "pos": "",
+      "def": "",
+      "zh": "sky"
+    },
+    "voice": {
+      "ipa": "vɔɪs",
+      "pos": "n.",
+      "def": "n.[C,U]声音，嗓音[sing.]发言权；主/被动语态vt.表达（情感或意见）",
+      "zh": "声音"
+    },
+    "smile": {
+      "ipa": "smaɪ",
+      "pos": "vi.",
+      "def": "vi./n.[C]笑，微笑",
+      "zh": "笑"
+    },
+    "know": {
+      "ipa": "nəʊ",
+      "pos": "v.",
+      "def": "v.知道，了解",
+      "zh": "知道"
+    },
+    "who": {
+      "ipa": "huː",
+      "pos": "pron.",
+      "def": "pron.谁，什么人",
+      "zh": "谁"
+    }
+  },
+  "script_gloss": {
+    "thought": "想",
+    "wukong": "悟空",
+    "yellow": "黄色的",
+    "coming": "来",
+    "jumped": "跳",
+    "ran": "跑",
+    "fast": "快的",
+    "monastery": "修道院",
+    "outside": "外面",
+    "everyone": "每个人",
+    "bags": "包",
+    "asked": "问",
+    "monkey": "猴子",
+    "empty": "空的",
+    "slapped": "拍打",
+    "forehead": "额头",
+    "dropped": "掉落",
+    "footsteps": "脚步声",
+    "approaching": "靠近",
+    "worry": "担心",
+    "whispered": "低声说",
+    "quickly": "迅速地",
+    "helped": "帮助",
+    "tang": "唐僧",
+    "horse": "马",
+    "group": "群体",
+    "hurried": "快速的",
+    "down": "朝下",
+    "road": "道路",
+    "run": "跑",
+    "faster": "更快地",
+    "hissed": "嘶嘶声",
+    "bajie": "八戒",
+    "breathed": "呼吸",
+    "heavily": "沉重地",
+    "like": "喜欢",
+    "running": "跑步",
+    "gotten": "得到",
+    "far": "远",
+    "before": "在",
+    "flew": "飞",
+    "escape": "逃跑",
+    "buddhist": "佛教徒",
+    "scriptures": "真经",
+    "wujing": "悟净",
+    "weapons": "武器",
+    "gold": "金龙",
+    "dragon": "龙",
+    "bared": "暴露",
+    "claws": "爪子",
+    "scoffed": "嘲笑",
+    "fight": "打斗",
+    "reached": "达到",
+    "robe": "长袍",
+    "pulled": "拔出",
+    "powerful": "有力量的",
+    "ordinary": "普通的",
+    "cloth": "布料",
+    "threw": "扔",
+    "toward": "朝向",
+    "look": "看",
+    "leaped": "跳跃",
+    "wrapped": "包裹",
+    "companions": "伙伴",
+    "demon": "恶魔",
+    "grabbed": "抓住",
+    "slammed": "猛关",
+    "door": "门",
+    "cloud": "云",
+    "rescue": "营救",
+    "ask": "询问",
+    "emperor": "玉皇大帝",
+    "help": "帮助",
+    "guanyin": "观音菩萨",
+    "wondering": "思考",
+    "spirits": "灵魂",
+    "approached": "接近",
+    "turtle": "乌龟",
+    "serpent": "蛇",
+    "sword": "剑",
+    "shield": "盾牌",
+    "wudang": "武当山",
+    "mountain": "山",
+    "nodded": "点头",
+    "captured": "被捕",
+    "called": "叫做",
+    "brows": "黄眉",
+    "thank": "感谢",
+    "said": "说",
+    "able": "有能力的",
+    "three": "三",
+    "careful": "小心的",
+    "capture": "捕捉",
+    "release": "释放",
+    "friends": "朋友",
+    "knock": "击倒",
+    "smash": "打碎",
+    "entire": "整个的",
+    "open": "打开",
+    "stepped": "走",
+    "out": "出去",
+    "cried": "哭",
+    "enough": "足够",
+    "around": "在",
+    "bundle": "一捆",
+    "sky": "天空",
+    "moaned": "呻吟",
+    "thinking": "思考",
+    "voice": "声音",
+    "hello": "你好",
+    "looked": "看",
+    "belly": "大肚子",
+    "smiling": "微笑",
+    "know": "知道",
+    "who": "谁",
+    "smiled": "微笑",
+    "buddha": "佛陀",
+    "maitreya": "弥勒佛"
+  },
+  "official_words": [
+    {
+      "term": "brow",
+      "zh": "1. (常用复数) 眉毛,(2. 额头)",
+      "example": "Yellow Brows is coming!"
+    },
+    {
+      "term": "empty",
+      "zh": "空的,未占用的",
+      "example": "The monkey looked at his empty hands."
+    },
+    {
+      "term": "slap",
+      "zh": "拍击,用手掌打",
+      "example": "He slapped his forehead."
+    },
+    {
+      "term": "forehead",
+      "zh": "前额,额头",
+      "example": "He slapped his forehead."
+    },
+    {
+      "term": "footstep",
+      "zh": "1. 走路的声音,(2. 脚印)",
+      "example": "He heard footsteps approaching from inside the monastery."
+    },
+    {
+      "term": "approach",
+      "zh": "接近,靠近",
+      "example": "He heard footsteps approaching from inside the monastery."
+    },
+    {
+      "term": "quickly",
+      "zh": "迅速地",
+      "example": "We have to go— quickly!"
+    },
+    {
+      "term": "hiss",
+      "zh": "1. (以不满的语气)小声说,(2. (蛇等)发出嘶嘶声)",
+      "example": "\"Run faster, Bajie!\" hissed Wujing."
+    },
+    {
+      "term": "heavily",
+      "zh": "1. 猛烈地,厉害地,(2. 沉重地)",
+      "example": "Bajie breathed heavily."
+    },
+    {
+      "term": "gotten",
+      "zh": "变成(某种状态) get-got-gotten",
+      "example": "They hadn't gotten far before Yellow Brows flew over them."
+    },
+    {
+      "term": "pull out",
+      "zh": "抽出,拿出",
+      "example": "Wukong, Bajie, and Wujing pulled out their weapons."
+    },
+    {
+      "term": "bare",
+      "zh": "1. 使赤裸,露出,(2. (山、树等)光秃秃的,3. 赤裸的,露出的)",
+      "example": "The Gold Dragon bared its claws."
+    },
+    {
+      "term": "scoff",
+      "zh": "嘲笑,嘲弄",
+      "example": "Yellow Brows scoffed."
+    },
+    {
+      "term": "lower",
+      "zh": "降低,放下",
+      "example": "Bajie lowered his rake and laughed."
+    },
+    {
+      "term": "rake",
+      "zh": "1. 耙子,(2. (用耙子等)耙)",
+      "example": "Bajie lowered his rake and laughed."
+    },
+    {
+      "term": "piece",
+      "zh": "一块,(大东西的)部分",
+      "example": "And all you have is a piece of cloth!"
+    },
+    {
+      "term": "ordinary",
+      "zh": "平常的,普通的",
+      "example": "That's not an ordinary cloth."
+    },
+    {
+      "term": "look out",
+      "zh": "提防,当心",
+      "example": "Look out!"
+    },
+    {
+      "term": "wrap",
+      "zh": "(用纸、布等)包",
+      "example": "The monkey leaped up to the sky just before the cloth wrappped around his companions."
+    },
+    {
+      "term": "slam",
+      "zh": "砰然关上(门)",
+      "example": "He ran back into his monastery and slammed the door shut."
+    },
+    {
+      "term": "rescue",
+      "zh": "援救,营救",
+      "example": "How could he rescue his companions?"
+    },
+    {
+      "term": "serpent",
+      "zh": "(大且有毒的)蛇",
+      "example": "One was a turtle, and the other was a serpent."
+    },
+    {
+      "term": "shield",
+      "zh": "盾",
+      "example": "The two spirits each carried a sword and a shield."
+    },
+    {
+      "term": "led",
+      "zh": "指引,带领 (lead-led)",
+      "example": "Wukong led the two spirits down to the monastery."
+    },
+    {
+      "term": "bang",
+      "zh": "砰地敲",
+      "example": "Wukong banged on the monastery door."
+    },
+    {
+      "term": "release",
+      "zh": "释放,解放",
+      "example": "Release my friends right now, Yellow Brows!"
+    },
+    {
+      "term": "knock",
+      "zh": "拆除,撞到,击倒",
+      "example": "down If you don't, I'll knock down your monastery!"
+    },
+    {
+      "term": "out of the",
+      "zh": "靠边,避开",
+      "example": "way The monkey jumped out of the way, but the turtle and serpent weren't fast enough."
+    },
+    {
+      "term": "bundle",
+      "zh": "1. 大堆,大批,大量,(2. 捆, 卷, 束; 包裹)",
+      "example": "Laughing, the demon grabbed the bundle and went back into the monastery."
+    },
+    {
+      "term": "belly",
+      "zh": "腹部,肚子",
+      "example": "Wukong looked toward the voice and saw a man with a big belly."
+    }
+  ],
+  "official_quiz": [
+    {
+      "q": "Which is NOT true?",
+      "choices": [
+        "Wukong went to Guanyin for help.",
+        "Spirits from Wudang Mountain came to help.",
+        "The Tang Monk was captured again."
+      ],
+      "answer": 1,
+      "q_zh": "哪一项是不正确的？",
+      "choices_zh": [
+        "悟空去找观音求助。",
+        "武当山的神灵前来帮忙。",
+        "唐僧再次被捕。"
+      ]
+    },
+    {
+      "q": "Why did the travelers need to run away quickly?",
+      "choices": [
+        "Yellow Brows was after them.",
+        "Maitreya needed their help.",
+        "Bajie liked to run."
+      ],
+      "answer": 1,
+      "q_zh": "旅行者为什么需要迅速逃跑？",
+      "choices_zh": [
+        "黄眉正在追他们。",
+        "弥勒需要他们的帮助。",
+        "八戒喜欢跑步。"
+      ]
+    },
+    {
+      "q": "What did Yellow Brows want to get?",
+      "choices": [
+        "the True Scriptures",
+        "the Tang Monk's bag",
+        "Wukong's iron bar"
+      ],
+      "answer": 0,
+      "q_zh": "黄眉想得到什么？",
+      "choices_zh": [
+        "真经",
+        "唐僧的包",
+        "悟空的铁棍"
+      ]
+    },
+    {
+      "q": "What did Yellow Brows use to capture everyone?",
+      "choices": [
+        "a cloth",
+        "a bag",
+        "a net"
+      ],
+      "answer": 0,
+      "q_zh": "黄眉用什么抓住了大家？",
+      "choices_zh": [
+        "一块布",
+        "一个包",
+        "一个网"
+      ]
+    },
+    {
+      "q": "Who was the man with the big belly?",
+      "choices": [
+        "Maitreya",
+        "Buddha",
+        "Yellow Brows"
+      ],
+      "answer": 0,
+      "q_zh": "那个大肚子的男人是谁？",
+      "choices_zh": [
+        "弥勒",
+        "佛陀",
+        "黄眉"
+      ]
+    }
+  ]
+}

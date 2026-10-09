@@ -1,0 +1,584 @@
+{
+ "schema_version": 1,
+ "ep": 50,
+ "title": {
+  "en": "Magic Fire",
+  "zh": "西游记 第50集"
+ },
+ "collection": "c07",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "redboy",
+   "nameZh": "红孩儿",
+   "mode": "sparring",
+   "sprite": "redboy"
+  },
+  "minors": [
+   {
+    "id": "imp",
+    "nameZh": "小妖",
+    "sprite": "imp"
+   }
+  ]
+ },
+ "background": {
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep50/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "Wukong and his companions ran back down the mountain, escaping the fire.",
+   "textZh": "悟空与同伴们迅速沿山而下,成功逃离了火场。",
+   "illustration": "assets/adv_frames/ep50/f1.jpg",
+   "sourceNodeId": "n001",
+   "audioRef": "sent_en:Wukong and his companions ran back down the mountain, escaping the fire."
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "\"Red Boy's fire is powerful,\" said the monkey.",
+   "textZh": "\"红孩儿的火焰威力巨大,\"猴子说道。",
+   "illustration": "assets/adv_frames/ep50/f2.jpg",
+   "sourceNodeId": "n002",
+   "audioRef": "sent_en:\"Red Boy's fire is powerful,\" said the monkey."
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "roast",
+   "zh": "1. (用烤箱或火)烤,(2. 烘烤的)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep50/f3.jpg"
+  },
+  {
+   "term": "die",
+   "zh": "渐渐消失,变弱",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep50/f1.jpg"
+  },
+  {
+   "term": "wisp",
+   "zh": "1. 一缕(云、烟等),(2. 小捆,小把(稻草等))",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep50/f2.jpg"
+  },
+  {
+   "term": "put out",
+   "zh": "(把火)熄灭",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep50/f1.jpg"
+  },
+  {
+   "term": "rainstorm",
+   "zh": "暴风雨",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep50/f3.jpg"
+  },
+  {
+   "term": "pound",
+   "zh": "重打,重敲",
+   "ipa": "paʊnd",
+   "illustration": "assets/adv_frames/ep50/f0.jpg"
+  },
+  {
+   "term": "punch",
+   "zh": "用拳猛击",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep50/f3.jpg"
+  },
+  {
+   "term": "rumble",
+   "zh": "(雷、炮等)隆隆响",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep50/f2.jpg"
+  },
+  {
+   "term": "go out",
+   "zh": "1. 熄灭,(2. 出去)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep50/f0.jpg"
+  },
+  {
+   "term": "thick",
+   "zh": "1. 多雾的,(2. 厚的)",
+   "ipa": "θɪk",
+   "illustration": "assets/adv_frames/ep50/f0.jpg"
+  },
+  {
+   "term": "cough",
+   "zh": "咳嗽",
+   "ipa": "kɒf",
+   "illustration": "assets/adv_frames/ep50/f3.jpg"
+  },
+  {
+   "term": "unable",
+   "zh": "不能...的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep50/f3.jpg"
+  }
+ ],
+ "wordPool": [
+  {
+   "term": "roast",
+   "zh": "1. (用烤箱或火)烤,(2. 烘烤的)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep50/f3.jpg"
+  },
+  {
+   "term": "die",
+   "zh": "渐渐消失,变弱",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep50/f1.jpg"
+  },
+  {
+   "term": "wisp",
+   "zh": "1. 一缕(云、烟等),(2. 小捆,小把(稻草等))",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep50/f2.jpg"
+  },
+  {
+   "term": "put out",
+   "zh": "(把火)熄灭",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep50/f1.jpg"
+  },
+  {
+   "term": "rainstorm",
+   "zh": "暴风雨",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep50/f3.jpg"
+  },
+  {
+   "term": "pound",
+   "zh": "重打,重敲",
+   "ipa": "paʊnd",
+   "illustration": "assets/adv_frames/ep50/f0.jpg"
+  },
+  {
+   "term": "punch",
+   "zh": "用拳猛击",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep50/f3.jpg"
+  },
+  {
+   "term": "rumble",
+   "zh": "(雷、炮等)隆隆响",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep50/f2.jpg"
+  },
+  {
+   "term": "go out",
+   "zh": "1. 熄灭,(2. 出去)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep50/f0.jpg"
+  },
+  {
+   "term": "thick",
+   "zh": "1. 多雾的,(2. 厚的)",
+   "ipa": "θɪk",
+   "illustration": "assets/adv_frames/ep50/f0.jpg"
+  },
+  {
+   "term": "cough",
+   "zh": "咳嗽",
+   "ipa": "kɒf",
+   "illustration": "assets/adv_frames/ep50/f3.jpg"
+  },
+  {
+   "term": "unable",
+   "zh": "不能...的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep50/f3.jpg"
+  },
+  {
+   "term": "trip",
+   "zh": "绊,绊倒",
+   "ipa": "trɪp",
+   "illustration": "assets/adv_frames/ep50/f0.jpg"
+  },
+  {
+   "term": "tumble",
+   "zh": "滚翻",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep50/f2.jpg"
+  },
+  {
+   "term": "float",
+   "zh": "(在水上或空中)漂浮",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep50/f3.jpg"
+  },
+  {
+   "term": "downstream",
+   "zh": "(江)下面,往下流地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep50/f3.jpg"
+  },
+  {
+   "term": "wash up",
+   "zh": "冲上",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep50/f0.jpg"
+  },
+  {
+   "term": "riverbank",
+   "zh": "河岸",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep50/f0.jpg"
+  },
+  {
+   "term": "wheeze",
+   "zh": "(因难以呼吸而)喘息地发出",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep50/f1.jpg"
+  },
+  {
+   "term": "ordinary",
+   "zh": "平常的,普通的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep50/f1.jpg"
+  },
+  {
+   "term": "rest",
+   "zh": "休息",
+   "ipa": "rest",
+   "illustration": "assets/adv_frames/ep50/f2.jpg"
+  },
+  {
+   "term": "straight",
+   "zh": "1. 径直,直接地,(2. 直的,笔直的)",
+   "ipa": "streɪt",
+   "illustration": "assets/adv_frames/ep50/f2.jpg"
+  },
+  {
+   "term": "meanwhile",
+   "zh": "同时,在...期间",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep50/f1.jpg"
+  },
+  {
+   "term": "belly",
+   "zh": "腹部,肚子",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep50/f0.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "roast",
+     "zh": "1. (用烤箱或火)烤,(2. 烘烤的)",
+     "sprite": "imp"
+    },
+    {
+     "term": "die",
+     "zh": "渐渐消失,变弱",
+     "sprite": "imp"
+    },
+    {
+     "term": "wisp",
+     "zh": "1. 一缕(云、烟等),(2. 小捆,小把(稻草等))",
+     "sprite": "imp"
+    },
+    {
+     "term": "put out",
+     "zh": "(把火)熄灭",
+     "sprite": "imp"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "rainstorm",
+     "zh": "暴风雨",
+     "sprite": "imp"
+    },
+    {
+     "term": "pound",
+     "zh": "重打,重敲",
+     "sprite": "imp"
+    },
+    {
+     "term": "punch",
+     "zh": "用拳猛击",
+     "sprite": "imp"
+    },
+    {
+     "term": "rumble",
+     "zh": "(雷、炮等)隆隆响",
+     "sprite": "imp"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "go out",
+    "zh": "1. 熄灭,(2. 出去)"
+   },
+   {
+    "term": "thick",
+    "zh": "1. 多雾的,(2. 厚的)"
+   },
+   {
+    "term": "cough",
+    "zh": "咳嗽"
+   },
+   {
+    "term": "unable",
+    "zh": "不能...的"
+   }
+  ],
+  "taunts": [
+   "redboy.1",
+   "redboy.2",
+   "redboy.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=50",
+ "npcDialogue": {
+  "intro": {
+   "id": "ep50-map-intro",
+   "lines": [
+    {
+     "id": "ep50-map-intro-1",
+     "sourceNodeId": "n001",
+     "speaker": "narrator",
+     "textEn": "Wukong and his companions ran back down the mountain, escaping the fire.",
+     "textZh": "悟空与同伴们迅速沿山而下,成功逃离了火场。",
+     "audioRef": "sent_en:Wukong and his companions ran back down the mountain, escaping the fire.",
+     "audioStart": 11.0,
+     "audioEnd": 21.443
+    },
+    {
+     "id": "ep50-map-intro-2",
+     "sourceNodeId": "n002",
+     "speaker": "narrator",
+     "textEn": "\"Red Boy's fire is powerful,\" said the monkey.",
+     "textZh": "\"红孩儿的火焰威力巨大,\"猴子说道。",
+     "audioRef": "sent_en:\"Red Boy's fire is powerful,\" said the monkey.",
+     "audioStart": 21.444,
+     "audioEnd": 24.942
+    }
+   ]
+  },
+  "quiz": {
+   "id": "ep50-map-quiz",
+   "lines": [
+    {
+     "id": "ep50-map-quiz-1",
+     "sourceNodeId": "n012",
+     "speaker": "narrator",
+     "textEn": "When he returned, the Dragon King of the Eastern Sea was with him.",
+     "textZh": "他返回时,东海龙王也随行在侧。",
+     "audioRef": "sent_en:When he returned, the Dragon King of the Eastern Sea was with him.",
+     "audioStart": 62.643,
+     "audioEnd": 68.152
+    }
+   ],
+   "question": {
+    "id": "ep050-official-quiz-001",
+    "textEn": "which is true?",
+    "textZh": "哪一个是真的？"
+   },
+   "word": {
+    "term": "roast",
+    "zh": "1. (用烤箱或火)烤,(2. 烘烤的)",
+    "ipa": ""
+   },
+   "options": [
+    {
+     "id": "a",
+     "textEn": "wukong sent bajie to find guanyin.",
+     "textZh": "悟空派八戒去找观音。",
+     "correct": true,
+     "feedback": "对了。悟空派八戒去找观音。"
+    },
+    {
+     "id": "b",
+     "textEn": "the dragon king didn't want to help.",
+     "textZh": "龙王不想帮忙。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    },
+    {
+     "id": "c",
+     "textEn": "bajie breathed in a lot of smoke.",
+     "textZh": "八戒吸入了大量烟雾。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    }
+   ],
+   "lessonCardId": "ep050-official-quiz-001"
+  }
+ },
+ "map": {
+  "theme": "generic",
+  "coordinateSpace": "world-normalized",
+  "worldTiles": 2,
+  "regions": {
+   "hero": 0,
+   "waves": [
+    0,
+    1
+   ],
+   "npc": {
+    "intro": 0,
+    "quiz": 1
+   },
+   "boss": 3
+  },
+  "walkable": {
+   "space": "world",
+   "x": 0.0,
+   "y": 0.16,
+   "w": 1.0,
+   "h": 0.79,
+   "rects": [
+    {
+     "x": 0.0,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.66,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    }
+   ]
+  },
+  "heroSpawn": {
+   "x": 0.06,
+   "y": 0.31
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.31,
+    "y": 0.23
+   },
+   {
+    "x": 0.38,
+    "y": 0.27
+   },
+   {
+    "x": 0.34,
+    "y": 0.33
+   },
+   {
+    "x": 0.41,
+    "y": 0.24
+   }
+  ],
+  "waveSpawns": [
+   [
+    {
+     "x": 0.31,
+     "y": 0.23
+    },
+    {
+     "x": 0.38,
+     "y": 0.27
+    },
+    {
+     "x": 0.34,
+     "y": 0.33
+    },
+    {
+     "x": 0.41,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.81,
+     "y": 0.23
+    },
+    {
+     "x": 0.88,
+     "y": 0.27
+    },
+    {
+     "x": 0.84,
+     "y": 0.33
+    },
+    {
+     "x": 0.91,
+     "y": 0.24
+    }
+   ]
+  ],
+  "orbSpawns": [
+   [
+    {
+     "x": 0.11,
+     "y": 0.25
+    },
+    {
+     "x": 0.16,
+     "y": 0.31
+    },
+    {
+     "x": 0.12,
+     "y": 0.37
+    },
+    {
+     "x": 0.18,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.61,
+     "y": 0.25
+    },
+    {
+     "x": 0.66,
+     "y": 0.31
+    },
+    {
+     "x": 0.62,
+     "y": 0.37
+    },
+    {
+     "x": 0.68,
+     "y": 0.24
+    }
+   ]
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "redboy",
+    "nameZh": "红孩儿",
+    "x": 0.08,
+    "y": 0.26
+   },
+   {
+    "role": "quiz",
+    "sprite": "redboy",
+    "nameZh": "红孩儿",
+    "x": 0.7,
+    "y": 0.39
+   }
+  ],
+  "bossSpot": {
+   "x": 0.94,
+   "y": 0.85
+  }
+ }
+}

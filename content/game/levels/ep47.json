@@ -1,0 +1,584 @@
+{
+ "schema_version": 1,
+ "ep": 47,
+ "title": {
+  "en": "Two Tang Monks",
+  "zh": "西游记 第47集"
+ },
+ "collection": "c06",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "imp",
+   "nameZh": "小妖",
+   "mode": "sparring",
+   "sprite": "imp"
+  },
+  "minors": [
+   {
+    "id": "imp",
+    "nameZh": "小妖",
+    "sprite": "imp"
+   }
+  ]
+ },
+ "background": {
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep47/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "The Daoist had vanished!",
+   "textZh": "道家人物消失了!",
+   "illustration": "assets/adv_frames/ep47/f1.jpg",
+   "sourceNodeId": "n001",
+   "audioRef": "sent_en:The Daoist had vanished!"
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "Wukong ran outside and shot into the air.",
+   "textZh": "悟空跑出院子,随即纵身跃向空中。",
+   "illustration": "assets/adv_frames/ep47/f2.jpg",
+   "sourceNodeId": "n002",
+   "audioRef": "sent_en:Wukong ran outside and shot into the air."
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "vanish",
+   "zh": "(突然)消失不见",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep47/f1.jpg"
+  },
+  {
+   "term": "side by side",
+   "zh": "肩并肩地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep47/f0.jpg"
+  },
+  {
+   "term": "tell apart",
+   "zh": "区分,区别",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep47/f1.jpg"
+  },
+  {
+   "term": "alike",
+   "zh": "相同的,相像的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep47/f2.jpg"
+  },
+  {
+   "term": "recite",
+   "zh": "背诵,朗诵",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep47/f0.jpg"
+  },
+  {
+   "term": "fake",
+   "zh": "假的,冒充的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep47/f1.jpg"
+  },
+  {
+   "term": "pain",
+   "zh": "疼痛,痛苦",
+   "ipa": "peɪn",
+   "illustration": "assets/adv_frames/ep47/f1.jpg"
+  },
+  {
+   "term": "mumble",
+   "zh": "含糊地说,咕哝着说",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep47/f0.jpg"
+  },
+  {
+   "term": "nonsense",
+   "zh": "胡说,废话",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep47/f0.jpg"
+  },
+  {
+   "term": "swirl",
+   "zh": "打旋,旋动",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep47/f0.jpg"
+  },
+  {
+   "term": "surround",
+   "zh": "包围",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep47/f0.jpg"
+  },
+  {
+   "term": "strike",
+   "zh": "攻击,进攻,打击",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep47/f1.jpg"
+  }
+ ],
+ "wordPool": [
+  {
+   "term": "vanish",
+   "zh": "(突然)消失不见",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep47/f1.jpg"
+  },
+  {
+   "term": "side by side",
+   "zh": "肩并肩地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep47/f0.jpg"
+  },
+  {
+   "term": "tell apart",
+   "zh": "区分,区别",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep47/f1.jpg"
+  },
+  {
+   "term": "alike",
+   "zh": "相同的,相像的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep47/f2.jpg"
+  },
+  {
+   "term": "recite",
+   "zh": "背诵,朗诵",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep47/f0.jpg"
+  },
+  {
+   "term": "fake",
+   "zh": "假的,冒充的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep47/f1.jpg"
+  },
+  {
+   "term": "pain",
+   "zh": "疼痛,痛苦",
+   "ipa": "peɪn",
+   "illustration": "assets/adv_frames/ep47/f1.jpg"
+  },
+  {
+   "term": "mumble",
+   "zh": "含糊地说,咕哝着说",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep47/f0.jpg"
+  },
+  {
+   "term": "nonsense",
+   "zh": "胡说,废话",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep47/f0.jpg"
+  },
+  {
+   "term": "swirl",
+   "zh": "打旋,旋动",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep47/f0.jpg"
+  },
+  {
+   "term": "surround",
+   "zh": "包围",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep47/f0.jpg"
+  },
+  {
+   "term": "strike",
+   "zh": "攻击,进攻,打击",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep47/f1.jpg"
+  },
+  {
+   "term": "deep",
+   "zh": "深的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep47/f2.jpg"
+  },
+  {
+   "term": "bodhisattva",
+   "zh": "菩萨",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep47/f0.jpg"
+  },
+  {
+   "term": "rooster",
+   "zh": "公鸡",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep47/f2.jpg"
+  },
+  {
+   "term": "punishment",
+   "zh": "惩罚,处罚",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep47/f2.jpg"
+  },
+  {
+   "term": "host",
+   "zh": "举办,主办(活动,会议等)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep47/f0.jpg"
+  },
+  {
+   "term": "mysterious",
+   "zh": "不可思议的,成谜的,神秘的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep47/f0.jpg"
+  },
+  {
+   "term": "reappear",
+   "zh": "再次出现,重新显露",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep47/f2.jpg"
+  },
+  {
+   "term": "groan",
+   "zh": "(因为痛苦,烦心等原因)发出呻吟,抱怨",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep47/f0.jpg"
+  },
+  {
+   "term": "run",
+   "zh": "跑",
+   "ipa": "rʌn",
+   "illustration": "assets/adv_frames/ep47/f1.jpg"
+  },
+  {
+   "term": "outside",
+   "zh": "外面的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep47/f1.jpg"
+  },
+  {
+   "term": "shoot",
+   "zh": "射击",
+   "ipa": "ʃuːt",
+   "illustration": "assets/adv_frames/ep47/f1.jpg"
+  },
+  {
+   "term": "direction",
+   "zh": "方向",
+   "ipa": "dəˈrekʃn",
+   "illustration": "assets/adv_frames/ep47/f1.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "vanish",
+     "zh": "(突然)消失不见",
+     "sprite": "imp"
+    },
+    {
+     "term": "side by side",
+     "zh": "肩并肩地",
+     "sprite": "imp"
+    },
+    {
+     "term": "tell apart",
+     "zh": "区分,区别",
+     "sprite": "imp"
+    },
+    {
+     "term": "alike",
+     "zh": "相同的,相像的",
+     "sprite": "imp"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "recite",
+     "zh": "背诵,朗诵",
+     "sprite": "imp"
+    },
+    {
+     "term": "fake",
+     "zh": "假的,冒充的",
+     "sprite": "imp"
+    },
+    {
+     "term": "pain",
+     "zh": "疼痛,痛苦",
+     "sprite": "imp"
+    },
+    {
+     "term": "mumble",
+     "zh": "含糊地说,咕哝着说",
+     "sprite": "imp"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "nonsense",
+    "zh": "胡说,废话"
+   },
+   {
+    "term": "swirl",
+    "zh": "打旋,旋动"
+   },
+   {
+    "term": "surround",
+    "zh": "包围"
+   },
+   {
+    "term": "strike",
+    "zh": "攻击,进攻,打击"
+   }
+  ],
+  "taunts": [
+   "imp.1",
+   "imp.2",
+   "imp.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=47",
+ "npcDialogue": {
+  "intro": {
+   "id": "ep47-map-intro",
+   "lines": [
+    {
+     "id": "ep47-map-intro-1",
+     "sourceNodeId": "n001",
+     "speaker": "narrator",
+     "textEn": "The Daoist had vanished!",
+     "textZh": "道家人物消失了!",
+     "audioRef": "sent_en:The Daoist had vanished!",
+     "audioStart": 11.0,
+     "audioEnd": 14.377
+    },
+    {
+     "id": "ep47-map-intro-2",
+     "sourceNodeId": "n002",
+     "speaker": "narrator",
+     "textEn": "Wukong ran outside and shot into the air.",
+     "textZh": "悟空跑出院子,随即纵身跃向空中。",
+     "audioRef": "sent_en:Wukong ran outside and shot into the air.",
+     "audioStart": 14.378,
+     "audioEnd": 20.898
+    }
+   ]
+  },
+  "quiz": {
+   "id": "ep47-map-quiz",
+   "lines": [
+    {
+     "id": "ep47-map-quiz-1",
+     "sourceNodeId": "n043",
+     "speaker": "narrator",
+     "textEn": "But the monk changed into a green lion and ran out of the throne room.",
+     "textZh": "然而,这位僧人化身为一尊绿狮,随即从御座厅中奔逃而出。",
+     "audioRef": "sent_en:But the monk changed into a green lion and ran out of the throne room.",
+     "audioStart": 174.961,
+     "audioEnd": 181.422
+    }
+   ],
+   "question": {
+    "id": "ep047-official-quiz-001",
+    "textEn": "which is not true?",
+    "textZh": "哪一项是不正确的？"
+   },
+   "word": {
+    "term": "vanish",
+    "zh": "(突然)消失不见",
+    "ipa": ""
+   },
+   "options": [
+    {
+     "id": "a",
+     "textEn": "wukong defeated the lion.",
+     "textZh": "悟空打败了狮子。",
+     "correct": true,
+     "feedback": "对了。悟空打败了狮子。"
+    },
+    {
+     "id": "b",
+     "textEn": "the fake monk turned into a green lion.",
+     "textZh": "那个假和尚变成了一只绿色的狮子。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    },
+    {
+     "id": "c",
+     "textEn": "the daoist turned into a fake monk.",
+     "textZh": "道士变成了一个假和尚。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    }
+   ],
+   "lessonCardId": "ep047-official-quiz-001"
+  }
+ },
+ "map": {
+  "theme": "generic",
+  "coordinateSpace": "world-normalized",
+  "worldTiles": 2,
+  "regions": {
+   "hero": 0,
+   "waves": [
+    0,
+    1
+   ],
+   "npc": {
+    "intro": 0,
+    "quiz": 1
+   },
+   "boss": 3
+  },
+  "walkable": {
+   "space": "world",
+   "x": 0.0,
+   "y": 0.16,
+   "w": 1.0,
+   "h": 0.79,
+   "rects": [
+    {
+     "x": 0.0,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.66,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    }
+   ]
+  },
+  "heroSpawn": {
+   "x": 0.06,
+   "y": 0.31
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.31,
+    "y": 0.23
+   },
+   {
+    "x": 0.38,
+    "y": 0.27
+   },
+   {
+    "x": 0.34,
+    "y": 0.33
+   },
+   {
+    "x": 0.41,
+    "y": 0.24
+   }
+  ],
+  "waveSpawns": [
+   [
+    {
+     "x": 0.31,
+     "y": 0.23
+    },
+    {
+     "x": 0.38,
+     "y": 0.27
+    },
+    {
+     "x": 0.34,
+     "y": 0.33
+    },
+    {
+     "x": 0.41,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.81,
+     "y": 0.23
+    },
+    {
+     "x": 0.88,
+     "y": 0.27
+    },
+    {
+     "x": 0.84,
+     "y": 0.33
+    },
+    {
+     "x": 0.91,
+     "y": 0.24
+    }
+   ]
+  ],
+  "orbSpawns": [
+   [
+    {
+     "x": 0.11,
+     "y": 0.25
+    },
+    {
+     "x": 0.16,
+     "y": 0.31
+    },
+    {
+     "x": 0.12,
+     "y": 0.37
+    },
+    {
+     "x": 0.18,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.61,
+     "y": 0.25
+    },
+    {
+     "x": 0.66,
+     "y": 0.31
+    },
+    {
+     "x": 0.62,
+     "y": 0.37
+    },
+    {
+     "x": 0.68,
+     "y": 0.24
+    }
+   ]
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "tang",
+    "nameZh": "唐僧",
+    "x": 0.08,
+    "y": 0.26
+   },
+   {
+    "role": "quiz",
+    "sprite": "tang",
+    "nameZh": "唐僧",
+    "x": 0.7,
+    "y": 0.39
+   }
+  ],
+  "bossSpot": {
+   "x": 0.94,
+   "y": 0.85
+  }
+ }
+}

@@ -1,0 +1,3107 @@
+{
+  "schema_version": 1,
+  "episode": 62,
+  "title": {
+    "en": "The Goldfish in the Basket",
+    "zh": "西游记 第62集"
+  },
+  "sources": [
+    {
+      "kind": "courseware_main_pptx",
+      "file": "G:\\Game\\BookPlay书戏\\data\\西游记课件\\3.3西游记  Journey to the West PPT课件\\062_Journey to the West 62_The Goldfish in the Basket.pptx",
+      "sha256": "cae722d797d7c7b80a7a6aec7d0f69938d7bab6317c799adc83cc7acd5b936ae",
+      "pages": 15
+    },
+    {
+      "kind": "official_quiz_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+      "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929",
+      "pages": 131
+    },
+    {
+      "kind": "intensive_reader_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\02-西游记精读版台词本\\1、带标注版PDF 108集\\062 观音菩萨的金鱼 上.pdf",
+      "sha256": "73fddcf44b82457e253be951720ee9ac43e1c1576699df2323f1cfa370208446",
+      "pages": 4
+    },
+    {
+      "kind": "intensive_reader_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\02-西游记精读版台词本\\1、带标注版PDF 108集\\062 观音菩萨的金鱼 下.pdf",
+      "sha256": "08c0f15a4bb1189bf50fa742042d0627b6808024fcad7b8b7fc3da4c97ed46f4",
+      "pages": 3
+    },
+    {
+      "kind": "courseware_screenshots_pptx",
+      "file": "G:\\Game\\BookPlay书戏\\data\\西游记课件\\西游记-外教课动画截图\\Journey to the West 062  The Goldfish in the Basket_20240114123106.pptx",
+      "sha256": "7c855914401aaed45b8d16abb212ff1a8bb328e4785b23ebd598809a6f28c316",
+      "pages": 40
+    }
+  ],
+  "cards": [
+    {
+      "card_id": "ep062-official-quiz-001",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 1,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "which is not true?",
+        "zh": "哪一项是不正确的？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "wukong chopped down trees.",
+            "zh": "悟空砍伐了树。"
+          },
+          {
+            "id": "b",
+            "en": "guanyin helped capture the demon.",
+            "zh": "观音帮助抓住了妖怪。"
+          },
+          {
+            "id": "c",
+            "en": "the villagers held a feast.",
+            "zh": "村民们举行了宴会。"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n021",
+            "quote": "\"This basket has magical powers,\" said Guanyin."
+          },
+          {
+            "node_id": "n022",
+            "quote": "\"I will catch the demon with it. Let's go.\""
+          },
+          {
+            "node_id": "n026",
+            "quote": "After a moment she pulled the basket out of the water."
+          },
+          {
+            "node_id": "n028",
+            "quote": "A small goldfish was flopping around in it."
+          },
+          {
+            "node_id": "n049",
+            "quote": "The villagers held a feast for the travelers that evening."
+          },
+          {
+            "node_id": "n051",
+            "quote": "The next morning the travelers woke to the sound of chopping."
+          },
+          {
+            "node_id": "n054",
+            "quote": "Several men were chopping down trees."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 73,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep062-official-quiz-002",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 2,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "whom did wukong find on mount potalaka?",
+        "zh": "悟空在普陀洛迦山找到了谁？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "red boy",
+            "zh": "红孩儿"
+          },
+          {
+            "id": "b",
+            "en": "the demon",
+            "zh": "恶魔"
+          },
+          {
+            "id": "c",
+            "en": "chen's son",
+            "zh": "陈的儿子"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n001",
+            "quote": "Wukong landed on Mount Potalaka."
+          },
+          {
+            "node_id": "n002",
+            "quote": "A young man was meditating in the garden."
+          },
+          {
+            "node_id": "n009",
+            "quote": "\"Don't you recognize me?\" said the man."
+          },
+          {
+            "node_id": "n010",
+            "quote": "Wukong stared for a moment and then gasped."
+          },
+          {
+            "node_id": "n011",
+            "quote": "\"You're Red Boy! You look like a kind spirit now.\""
+          },
+          {
+            "node_id": "n012",
+            "quote": "\"Yes,\" said Red Boy."
+          },
+          {
+            "node_id": "n013",
+            "quote": "\"I'm not an evil demon anymore. And I have you to thank for that. You brought Guanyin to me. She has taught me all about Buddhism, and now I'm very happy.\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 73,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep062-official-quiz-003",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 3,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "what did guanyin catch in her basket?",
+        "zh": "观音在她的篮子里抓到了什么？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "a goldfish",
+            "zh": "一条金鱼"
+          },
+          {
+            "id": "b",
+            "en": "a rock",
+            "zh": "一块石头"
+          },
+          {
+            "id": "c",
+            "en": "a boy",
+            "zh": "一个男孩"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n024",
+            "quote": "The bodhisattva used a rope to lower the basket into the river."
+          },
+          {
+            "node_id": "n025",
+            "quote": "She recited a spell and then waited."
+          },
+          {
+            "node_id": "n026",
+            "quote": "After a moment she pulled the basket out of the water."
+          },
+          {
+            "node_id": "n027",
+            "quote": "Wukong looked in the basket."
+          },
+          {
+            "node_id": "n028",
+            "quote": "A small goldfish was flopping around in it."
+          },
+          {
+            "node_id": "n031",
+            "quote": "\"This is my goldfish,\" said Guanyin."
+          },
+          {
+            "node_id": "n032",
+            "quote": "\"It usually lives in my lotus pond. The pond is near my garden, where I teach my students. After years of listening to my lessons, the fish became a spirit. It escaped to Earth a few days ago. I had been wondering where it was.\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 73,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep062-official-quiz-004",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 4,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "how did the goldfish become a spirit?",
+        "zh": "金鱼是怎么变成灵魂的？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "it listened to guanyin's lessons.",
+            "zh": "它聆听了观音的教诲。"
+          },
+          {
+            "id": "b",
+            "en": "red boy used magic on it.",
+            "zh": "红孩儿对它使用了魔法。"
+          },
+          {
+            "id": "c",
+            "en": "it ate the tang monk.",
+            "zh": "它吃了唐僧。"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n032",
+            "quote": "\"It usually lives in my lotus pond. The pond is near my garden, where I teach my students. After years of listening to my lessons, the fish became a spirit. It escaped to Earth a few days ago. I had been wondering where it was.\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 73,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep062-official-quiz-005",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 5,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "what were the villagers making for the travelers?",
+        "zh": "村民们正在为旅客准备什么？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "a boat",
+            "zh": "一艘船"
+          },
+          {
+            "id": "b",
+            "en": "a basket",
+            "zh": "一个篮子"
+          },
+          {
+            "id": "c",
+            "en": "a rope",
+            "zh": "一根绳子"
+          }
+        ],
+        "answer": "b",
+        "answer_evidence": [
+          {
+            "node_id": "n004",
+            "quote": "\"She's making a basket,\" said the man."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 73,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep062-vocab-001",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 101,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "spirit",
+        "zh": "情绪"
+      },
+      "payload": {
+        "term": "spirit",
+        "ipa": "ˈspɪrɪt",
+        "pos": "n.",
+        "def": "n.[U]勇气,意志,实质 [C]灵魂,鬼魂,幽灵 [C,U]精神 [pl.]情绪",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "062 观音菩萨的金鱼 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "73fddcf44b82457e253be951720ee9ac43e1c1576699df2323f1cfa370208446"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep062-vocab-002",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 102,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "thank",
+        "zh": "vt.感谢,谢谢"
+      },
+      "payload": {
+        "term": "thank",
+        "ipa": "θæŋk",
+        "pos": "vt.",
+        "def": "vt.感谢,谢谢",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "062 观音菩萨的金鱼 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "73fddcf44b82457e253be951720ee9ac43e1c1576699df2323f1cfa370208446"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep062-vocab-003",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 103,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "bring",
+        "zh": "vt.带来,取来,使处于某种状况"
+      },
+      "payload": {
+        "term": "bring",
+        "ipa": "brɪŋ",
+        "pos": "vt.",
+        "def": "vt.带来,取来,使处于某种状况",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "062 观音菩萨的金鱼 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "73fddcf44b82457e253be951720ee9ac43e1c1576699df2323f1cfa370208446"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep062-vocab-004",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 104,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "welcome",
+        "zh": "/interj.欢迎"
+      },
+      "payload": {
+        "term": "welcome",
+        "ipa": "ˈwelkəm",
+        "pos": "adj.",
+        "def": "adj.受欢迎的 vt./n.[C,U]/interj.欢迎",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "062 观音菩萨的金鱼 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "73fddcf44b82457e253be951720ee9ac43e1c1576699df2323f1cfa370208446"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep062-vocab-005",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 105,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "common",
+        "zh": "adj.普通的,常见的,共同的 n.(常用作固定搭配)"
+      },
+      "payload": {
+        "term": "common",
+        "ipa": "ˈkɒmən",
+        "pos": "adj.",
+        "def": "adj.普通的,常见的,共同的 n.(常用作固定搭配)",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "062 观音菩萨的金鱼 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "73fddcf44b82457e253be951720ee9ac43e1c1576699df2323f1cfa370208446"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep062-vocab-006",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 106,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "come",
+        "zh": "vi.来,来到 v.-link.成为,变成,变得"
+      },
+      "payload": {
+        "term": "come",
+        "ipa": "kʌm",
+        "pos": "vi.",
+        "def": "vi.来,来到 v.-link.成为,变成,变得",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "062 观音菩萨的金鱼 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "73fddcf44b82457e253be951720ee9ac43e1c1576699df2323f1cfa370208446"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep062-vocab-007",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 107,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "hold",
+        "zh": "抓"
+      },
+      "payload": {
+        "term": "hold",
+        "ipa": "həʊld",
+        "pos": "v.",
+        "def": "v.拥有,抓住,保持,举行,容纳 n.[C,U]抓",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "062 观音菩萨的金鱼 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "73fddcf44b82457e253be951720ee9ac43e1c1576699df2323f1cfa370208446"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep062-vocab-008",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 108,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "would",
+        "zh": "modal v.(表示意愿)愿意"
+      },
+      "payload": {
+        "term": "would",
+        "ipa": "wʊd",
+        "pos": "",
+        "def": "modal v.(表示意愿)愿意",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "062 观音菩萨的金鱼 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "73fddcf44b82457e253be951720ee9ac43e1c1576699df2323f1cfa370208446"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep062-vocab-009",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 109,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "today",
+        "zh": "今天,当今"
+      },
+      "payload": {
+        "term": "today",
+        "ipa": "təˈdeɪ",
+        "pos": "adv.",
+        "def": "adv.在今天 n.[U]今天,当今",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "062 观音菩萨的金鱼 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "73fddcf44b82457e253be951720ee9ac43e1c1576699df2323f1cfa370208446"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep062-vocab-010",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 110,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "work",
+        "zh": "(音乐、艺术) 作品"
+      },
+      "payload": {
+        "term": "work",
+        "ipa": "wɜː(r)k",
+        "pos": "v.",
+        "def": "v.工作,运作 n.[U]工作;[C](音乐、艺术) 作品",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "062 观音菩萨的金鱼 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "73fddcf44b82457e253be951720ee9ac43e1c1576699df2323f1cfa370208446"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep062-vocab-011",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 111,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "spread",
+        "zh": "蔓延,传播"
+      },
+      "payload": {
+        "term": "spread",
+        "ipa": "spred",
+        "pos": "v.",
+        "def": "v.传播,展开;蔓延 n.[U]蔓延,传播",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "062 观音菩萨的金鱼 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "73fddcf44b82457e253be951720ee9ac43e1c1576699df2323f1cfa370208446"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep062-vocab-012",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 112,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "face",
+        "zh": "面子,脸面 v.面对"
+      },
+      "payload": {
+        "term": "face",
+        "ipa": "feɪs",
+        "pos": "n.",
+        "def": "n.[C]脸,面孔,面部表情,表面 [U]面子,脸面 v.面对",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "062 观音菩萨的金鱼 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "73fddcf44b82457e253be951720ee9ac43e1c1576699df2323f1cfa370208446"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep062-vocab-013",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 113,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "magic",
+        "zh": "魔术;魔法,魔力,魅力"
+      },
+      "payload": {
+        "term": "magic",
+        "ipa": "ˈmædʒɪk",
+        "pos": "adj.",
+        "def": "adj.有魔力的,有神奇力量的 n.[U]魔术;魔法,魔力,魅力",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "062 观音菩萨的金鱼 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "73fddcf44b82457e253be951720ee9ac43e1c1576699df2323f1cfa370208446"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep062-vocab-014",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 114,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "go",
+        "zh": "vi.去,走 v.link.变成,变得"
+      },
+      "payload": {
+        "term": "go",
+        "ipa": "ɡəʊ",
+        "pos": "vi.",
+        "def": "vi.去,走 v.link.变成,变得",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "062 观音菩萨的金鱼 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "73fddcf44b82457e253be951720ee9ac43e1c1576699df2323f1cfa370208446"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "062 观音菩萨的金鱼 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "08c0f15a4bb1189bf50fa742042d0627b6808024fcad7b8b7fc3da4c97ed46f4"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep062-vocab-015",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 115,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "return",
+        "zh": "返回"
+      },
+      "payload": {
+        "term": "return",
+        "ipa": "rɪˈtɜː(r)n",
+        "pos": "vt.",
+        "def": "vt.归还 vi.回来,返回 n.[C,U]回报[sing.]返回",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "062 观音菩萨的金鱼 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "73fddcf44b82457e253be951720ee9ac43e1c1576699df2323f1cfa370208446"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "062 观音菩萨的金鱼 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "08c0f15a4bb1189bf50fa742042d0627b6808024fcad7b8b7fc3da4c97ed46f4"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep062-vocab-016",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 116,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "river",
+        "zh": "河"
+      },
+      "payload": {
+        "term": "river",
+        "ipa": "ˈrɪvə(r)",
+        "pos": "n.",
+        "def": "河",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          2
+        ],
+        "gloss": "河"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "062 观音菩萨的金鱼 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "73fddcf44b82457e253be951720ee9ac43e1c1576699df2323f1cfa370208446"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "062 观音菩萨的金鱼 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "08c0f15a4bb1189bf50fa742042d0627b6808024fcad7b8b7fc3da4c97ed46f4"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep062-vocab-017",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 117,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "with",
+        "zh": "和……一起"
+      },
+      "payload": {
+        "term": "with",
+        "ipa": "wɪð",
+        "pos": "",
+        "def": "和……一起",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ],
+        "gloss": "和……一起"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "062 观音菩萨的金鱼 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "73fddcf44b82457e253be951720ee9ac43e1c1576699df2323f1cfa370208446"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep062-vocab-018",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 118,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "spell",
+        "zh": "咒语"
+      },
+      "payload": {
+        "term": "spell",
+        "ipa": "spel",
+        "pos": "v.",
+        "def": "v.用字母拼,拼写 n.[C]咒语",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "062 观音菩萨的金鱼 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "73fddcf44b82457e253be951720ee9ac43e1c1576699df2323f1cfa370208446"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep062-vocab-019",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 119,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "wait",
+        "zh": "v.等待,等候"
+      },
+      "payload": {
+        "term": "wait",
+        "ipa": "weɪt",
+        "pos": "v.",
+        "def": "v.等待,等候",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "062 观音菩萨的金鱼 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "73fddcf44b82457e253be951720ee9ac43e1c1576699df2323f1cfa370208446"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "062 观音菩萨的金鱼 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "08c0f15a4bb1189bf50fa742042d0627b6808024fcad7b8b7fc3da4c97ed46f4"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep062-vocab-020",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 120,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "pull",
+        "zh": "引力,吸引力"
+      },
+      "payload": {
+        "term": "pull",
+        "ipa": "pʊl",
+        "pos": "v.",
+        "def": "v.拉,托 n.[C]拉,托[sing.]引力,吸引力",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "062 观音菩萨的金鱼 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "73fddcf44b82457e253be951720ee9ac43e1c1576699df2323f1cfa370208446"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep062-vocab-021",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 121,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "water",
+        "zh": "(某一江、河、湖、 海的)水域 vt.给......浇水"
+      },
+      "payload": {
+        "term": "water",
+        "ipa": "ˈwɔː tə",
+        "pos": "n.",
+        "def": "n.[U]水[pl.](某一江、河、湖、 海的)水域 vt.给......浇水",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "062 观音菩萨的金鱼 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "73fddcf44b82457e253be951720ee9ac43e1c1576699df2323f1cfa370208446"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep062-vocab-022",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 122,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "small",
+        "zh": "adj.小的,小号的"
+      },
+      "payload": {
+        "term": "small",
+        "ipa": "smɔː l",
+        "pos": "adj.",
+        "def": "adj.小的,小号的",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "062 观音菩萨的金鱼 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "73fddcf44b82457e253be951720ee9ac43e1c1576699df2323f1cfa370208446"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep062-vocab-023",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 123,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "around",
+        "zh": "adv.在周围,大约,四处,掉头 prep.在......周围,到处"
+      },
+      "payload": {
+        "term": "around",
+        "ipa": "əˈraʊnd",
+        "pos": "adv.",
+        "def": "adv.在周围,大约,四处,掉头 prep.在......周围,到处",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "062 观音菩萨的金鱼 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "73fddcf44b82457e253be951720ee9ac43e1c1576699df2323f1cfa370208446"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep062-vocab-024",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 124,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "laugh",
+        "zh": "v.笑,发笑 n.笑声"
+      },
+      "payload": {
+        "term": "laugh",
+        "ipa": "lɑːf",
+        "pos": "v.",
+        "def": "v.笑,发笑 n.笑声",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "062 观音菩萨的金鱼 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "73fddcf44b82457e253be951720ee9ac43e1c1576699df2323f1cfa370208446"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep062-vocab-025",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 125,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "guess",
+        "zh": "猜测"
+      },
+      "payload": {
+        "term": "guess",
+        "ipa": "ɡes",
+        "pos": "v.",
+        "def": "v.猜测,估计,猜到 n.[C]猜测",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "062 观音菩萨的金鱼 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "73fddcf44b82457e253be951720ee9ac43e1c1576699df2323f1cfa370208446"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep062-vocab-026",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 126,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "need",
+        "zh": "需要的事物"
+      },
+      "payload": {
+        "term": "need",
+        "ipa": "niːd",
+        "pos": "v.",
+        "def": "v.需要,必要,必需 n.[C,U]需要[C]需要的事物",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "062 观音菩萨的金鱼 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "73fddcf44b82457e253be951720ee9ac43e1c1576699df2323f1cfa370208446"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep062-vocab-027",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 127,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "try",
+        "zh": "尝试,设法,努力"
+      },
+      "payload": {
+        "term": "try",
+        "ipa": "traɪ",
+        "pos": "v.",
+        "def": "v./n.[C]尝试,设法,努力",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "062 观音菩萨的金鱼 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "73fddcf44b82457e253be951720ee9ac43e1c1576699df2323f1cfa370208446"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep062-vocab-028",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 128,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "usual",
+        "zh": "adj.通常的,寻常的"
+      },
+      "payload": {
+        "term": "usual",
+        "ipa": "ˈjuːʒuəl",
+        "pos": "adj.",
+        "def": "adj.通常的,寻常的",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "062 观音菩萨的金鱼 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "73fddcf44b82457e253be951720ee9ac43e1c1576699df2323f1cfa370208446"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep062-vocab-029",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 129,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "teach",
+        "zh": "v.教,讲授,教导"
+      },
+      "payload": {
+        "term": "teach",
+        "ipa": "tiːtʃ",
+        "pos": "v.",
+        "def": "v.教,讲授,教导",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "062 观音菩萨的金鱼 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "73fddcf44b82457e253be951720ee9ac43e1c1576699df2323f1cfa370208446"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep062-vocab-030",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 130,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "listen",
+        "zh": "vi.听,倾听;注意听"
+      },
+      "payload": {
+        "term": "listen",
+        "ipa": "ˈlɪs(ə)n",
+        "pos": "vi.",
+        "def": "vi.听,倾听;注意听",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "062 观音菩萨的金鱼 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "73fddcf44b82457e253be951720ee9ac43e1c1576699df2323f1cfa370208446"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep062-vocab-031",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 131,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "few",
+        "zh": "adj./pron.不多,很少,有些"
+      },
+      "payload": {
+        "term": "few",
+        "ipa": "fjuː",
+        "pos": "adj.",
+        "def": "adj./pron.不多,很少,有些",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "062 观音菩萨的金鱼 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "73fddcf44b82457e253be951720ee9ac43e1c1576699df2323f1cfa370208446"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep062-vocab-032",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 132,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "day",
+        "zh": "白天"
+      },
+      "payload": {
+        "term": "day",
+        "ipa": "deɪ",
+        "pos": "n.",
+        "def": "n.[C]一天,一日[U]白天",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "062 观音菩萨的金鱼 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "73fddcf44b82457e253be951720ee9ac43e1c1576699df2323f1cfa370208446"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep062-vocab-033",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 133,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "wonder",
+        "zh": "惊讶"
+      },
+      "payload": {
+        "term": "wonder",
+        "ipa": "ˈwʌndə(r)",
+        "pos": "v.",
+        "def": "v.想知道,琢磨;非常惊讶 n.[C]奇迹,奇观 [U]惊讶",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "062 观音菩萨的金鱼 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "73fddcf44b82457e253be951720ee9ac43e1c1576699df2323f1cfa370208446"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep062-vocab-034",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 134,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "rock",
+        "zh": "摇滚乐"
+      },
+      "payload": {
+        "term": "rock",
+        "ipa": "rɒk",
+        "pos": "n.",
+        "def": "n.[C,U]岩石[U]摇滚乐",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "062 观音菩萨的金鱼 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "08c0f15a4bb1189bf50fa742042d0627b6808024fcad7b8b7fc3da4c97ed46f4"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep062-vocab-035",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 135,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "inside",
+        "zh": "里面,内部 adj.内部的"
+      },
+      "payload": {
+        "term": "inside",
+        "ipa": "ˌɪnˈsaɪd",
+        "pos": "adv.",
+        "def": "adv./prep.在......里面 n.[C]里面,内部 adj.内部的",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "062 观音菩萨的金鱼 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "08c0f15a4bb1189bf50fa742042d0627b6808024fcad7b8b7fc3da4c97ed46f4"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep062-vocab-036",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 136,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "here",
+        "zh": "adv.这就是,在这里"
+      },
+      "payload": {
+        "term": "here",
+        "ipa": "hɪə(r)",
+        "pos": "adv.",
+        "def": "adv.这就是,在这里",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "062 观音菩萨的金鱼 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "08c0f15a4bb1189bf50fa742042d0627b6808024fcad7b8b7fc3da4c97ed46f4"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep062-vocab-037",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 137,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "cry",
+        "zh": "叫喊"
+      },
+      "payload": {
+        "term": "cry",
+        "ipa": "kraɪ",
+        "pos": "v.",
+        "def": "v./n.[sing.]哭 [C]叫喊",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "062 观音菩萨的金鱼 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "08c0f15a4bb1189bf50fa742042d0627b6808024fcad7b8b7fc3da4c97ed46f4"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep062-vocab-038",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 138,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "box",
+        "zh": "箱,盒 v.击打(某人)"
+      },
+      "payload": {
+        "term": "box",
+        "ipa": "bɒks",
+        "pos": "n.",
+        "def": "n.[C]箱,盒 v.击打(某人)",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "062 观音菩萨的金鱼 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "08c0f15a4bb1189bf50fa742042d0627b6808024fcad7b8b7fc3da4c97ed46f4"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep062-vocab-039",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 139,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "carry",
+        "zh": "vt.拿,提,扛,运送,传送,承 载"
+      },
+      "payload": {
+        "term": "carry",
+        "ipa": "ˈkæri",
+        "pos": "vt.",
+        "def": "vt.拿,提,扛,运送,传送,承 载",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "062 观音菩萨的金鱼 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "08c0f15a4bb1189bf50fa742042d0627b6808024fcad7b8b7fc3da4c97ed46f4"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep062-vocab-040",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 140,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "hear",
+        "zh": "v.听说,听到,听见,接到(信或 电话)"
+      },
+      "payload": {
+        "term": "hear",
+        "ipa": "hɪə",
+        "pos": "v.",
+        "def": "v.听说,听到,听见,接到(信或 电话)",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "062 观音菩萨的金鱼 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "08c0f15a4bb1189bf50fa742042d0627b6808024fcad7b8b7fc3da4c97ed46f4"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep062-vocab-041",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 141,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "save",
+        "zh": "v.救,救助,节省;储蓄;保存"
+      },
+      "payload": {
+        "term": "save",
+        "ipa": "seɪv",
+        "pos": "v.",
+        "def": "v.救,救助,节省;储蓄;保存",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "062 观音菩萨的金鱼 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "08c0f15a4bb1189bf50fa742042d0627b6808024fcad7b8b7fc3da4c97ed46f4"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep062-vocab-042",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 142,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "cheer",
+        "zh": "欢乐(或幸福) 的气氛"
+      },
+      "payload": {
+        "term": "cheer",
+        "ipa": "tʃɪə(r)",
+        "pos": "v.",
+        "def": "v.欢呼,喝彩,使高兴,鼓舞 n.[C]欢呼声 [U]欢乐(或幸福) 的气氛",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "062 观音菩萨的金鱼 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "08c0f15a4bb1189bf50fa742042d0627b6808024fcad7b8b7fc3da4c97ed46f4"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep062-vocab-043",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 143,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "stay",
+        "zh": "逗留"
+      },
+      "payload": {
+        "term": "stay",
+        "ipa": "steɪ",
+        "pos": "vi.",
+        "def": "vi.停留,待 v-link.保持 n.[C]逗留",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "062 观音菩萨的金鱼 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "08c0f15a4bb1189bf50fa742042d0627b6808024fcad7b8b7fc3da4c97ed46f4"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep062-vocab-044",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 144,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "village",
+        "zh": "村庄,村镇"
+      },
+      "payload": {
+        "term": "village",
+        "ipa": "ˈvɪlɪdʒ",
+        "pos": "n.",
+        "def": "n.[C]村庄,村镇",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "062 观音菩萨的金鱼 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "08c0f15a4bb1189bf50fa742042d0627b6808024fcad7b8b7fc3da4c97ed46f4"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep062-vocab-045",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 145,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "woman",
+        "zh": "女子"
+      },
+      "payload": {
+        "term": "woman",
+        "ipa": "ˈwʊmən",
+        "pos": "n.",
+        "def": "n.[C]女子",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "062 观音菩萨的金鱼 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "08c0f15a4bb1189bf50fa742042d0627b6808024fcad7b8b7fc3da4c97ed46f4"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep062-vocab-046",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 146,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "rush",
+        "zh": "迅速移动,仓促,急 促"
+      },
+      "payload": {
+        "term": "rush",
+        "ipa": "rʌʃ",
+        "pos": "v.",
+        "def": "v./n.[sing.]迅速移动,仓促,急 促",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "062 观音菩萨的金鱼 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "08c0f15a4bb1189bf50fa742042d0627b6808024fcad7b8b7fc3da4c97ed46f4"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep062-vocab-047",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 147,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "leave",
+        "zh": "休假 去 里面 大师 这里 哭,叫喊"
+      },
+      "payload": {
+        "term": "leave",
+        "ipa": "liːv",
+        "pos": "v.",
+        "def": "v.离开,留下,使处于...... n.[U]休假 去 里面 大师 这里 哭,叫喊",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "062 观音菩萨的金鱼 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "08c0f15a4bb1189bf50fa742042d0627b6808024fcad7b8b7fc3da4c97ed46f4"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep062-vocab-048",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 148,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "rest",
+        "zh": "剩余部分"
+      },
+      "payload": {
+        "term": "rest",
+        "ipa": "rest",
+        "pos": "v.",
+        "def": "v./n.[C,U]休息 n.[sing.]剩余部分",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "062 观音菩萨的金鱼 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "08c0f15a4bb1189bf50fa742042d0627b6808024fcad7b8b7fc3da4c97ed46f4"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep062-vocab-049",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 149,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "morning",
+        "zh": "早晨,上午"
+      },
+      "payload": {
+        "term": "morning",
+        "ipa": "ˈmɔː(r)nɪŋ",
+        "pos": "n.",
+        "def": "n.[C,U]早晨,上午",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "062 观音菩萨的金鱼 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "08c0f15a4bb1189bf50fa742042d0627b6808024fcad7b8b7fc3da4c97ed46f4"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep062-vocab-050",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 150,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "travel",
+        "zh": "游历"
+      },
+      "payload": {
+        "term": "travel",
+        "ipa": "ˈtrævl",
+        "pos": "v.",
+        "def": "v.旅行,游历幽;传播 n.[C,U]旅行[U]游历",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "062 观音菩萨的金鱼 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "08c0f15a4bb1189bf50fa742042d0627b6808024fcad7b8b7fc3da4c97ed46f4"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep062-vocab-051",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 151,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "evening",
+        "zh": "晚上,傍晚"
+      },
+      "payload": {
+        "term": "evening",
+        "ipa": "ˈiːvnɪŋ",
+        "pos": "n.",
+        "def": "n.[C,U]晚上,傍晚",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "062 观音菩萨的金鱼 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "08c0f15a4bb1189bf50fa742042d0627b6808024fcad7b8b7fc3da4c97ed46f4"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep062-vocab-052",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 152,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "next",
+        "zh": "下一个(的) adv.紧接着,随后"
+      },
+      "payload": {
+        "term": "next",
+        "ipa": "nekst",
+        "pos": "adj.",
+        "def": "adj./n[sing.]下一个(的) adv.紧接着,随后",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "062 观音菩萨的金鱼 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "08c0f15a4bb1189bf50fa742042d0627b6808024fcad7b8b7fc3da4c97ed46f4"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep062-vocab-053",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 153,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "wake",
+        "zh": "v.弄醒,醒 n.(常构成搭配)"
+      },
+      "payload": {
+        "term": "wake",
+        "ipa": "weɪk",
+        "pos": "v.",
+        "def": "v.弄醒,醒 n.(常构成搭配)",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "062 观音菩萨的金鱼 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "08c0f15a4bb1189bf50fa742042d0627b6808024fcad7b8b7fc3da4c97ed46f4"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep062-vocab-054",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 154,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "sound",
+        "zh": "声响"
+      },
+      "payload": {
+        "term": "sound",
+        "ipa": "saʊnd",
+        "pos": "v.",
+        "def": "v.-link.听起来好像 v.(使)发出声音 n.声音,发音[U]声响",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "062 观音菩萨的金鱼 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "08c0f15a4bb1189bf50fa742042d0627b6808024fcad7b8b7fc3da4c97ed46f4"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep062-vocab-055",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 155,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "busy",
+        "zh": "adj.忙碌的,无暇的,繁华的 v.忙于做"
+      },
+      "payload": {
+        "term": "busy",
+        "ipa": "ˈbɪzi",
+        "pos": "adj.",
+        "def": "adj.忙碌的,无暇的,繁华的 v.忙于做",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "062 观音菩萨的金鱼 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "08c0f15a4bb1189bf50fa742042d0627b6808024fcad7b8b7fc3da4c97ed46f4"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep062-vocab-056",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 156,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "man",
+        "zh": "人,人类"
+      },
+      "payload": {
+        "term": "man",
+        "ipa": "mæn",
+        "pos": "n.",
+        "def": "n.[C]男人[U]人,人类",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "062 观音菩萨的金鱼 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "08c0f15a4bb1189bf50fa742042d0627b6808024fcad7b8b7fc3da4c97ed46f4"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep062-vocab-057",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 157,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "tree",
+        "zh": "树"
+      },
+      "payload": {
+        "term": "tree",
+        "ipa": "triː",
+        "pos": "n.",
+        "def": "n.[C]树",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "062 观音菩萨的金鱼 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "08c0f15a4bb1189bf50fa742042d0627b6808024fcad7b8b7fc3da4c97ed46f4"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep062-vocab-058",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 158,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "tool",
+        "zh": "工具"
+      },
+      "payload": {
+        "term": "tool",
+        "ipa": "tuːl",
+        "pos": "n.",
+        "def": "n.[C]工具",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "062 观音菩萨的金鱼 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "08c0f15a4bb1189bf50fa742042d0627b6808024fcad7b8b7fc3da4c97ed46f4"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep062-vocab-059",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 159,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "build",
+        "zh": "身材"
+      },
+      "payload": {
+        "term": "build",
+        "ipa": "bɪld",
+        "pos": "v.",
+        "def": "v.建筑,建造,增强,建立 n.[C,U]身材",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "062 观音菩萨的金鱼 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "08c0f15a4bb1189bf50fa742042d0627b6808024fcad7b8b7fc3da4c97ed46f4"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep062-vocab-060",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 160,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "boat",
+        "zh": "小船,舟"
+      },
+      "payload": {
+        "term": "boat",
+        "ipa": "bəʊt",
+        "pos": "n.",
+        "def": "n.[C]小船,舟",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "062 观音菩萨的金鱼 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "08c0f15a4bb1189bf50fa742042d0627b6808024fcad7b8b7fc3da4c97ed46f4"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep062-vocab-061",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 161,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "smile",
+        "zh": "笑,微笑"
+      },
+      "payload": {
+        "term": "smile",
+        "ipa": "smaɪ",
+        "pos": "vi.",
+        "def": "vi./n.[C]笑,微笑",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "062 观音菩萨的金鱼 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "08c0f15a4bb1189bf50fa742042d0627b6808024fcad7b8b7fc3da4c97ed46f4"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep062-vocab-062",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 162,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "fear",
+        "zh": "害怕,惧怕,担忧"
+      },
+      "payload": {
+        "term": "fear",
+        "ipa": "fɪə",
+        "pos": "v.",
+        "def": "v./n.[C,U]害怕,惧怕,担忧",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "062 观音菩萨的金鱼 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "08c0f15a4bb1189bf50fa742042d0627b6808024fcad7b8b7fc3da4c97ed46f4"
+        }
+      ],
+      "review_status": "machine_verified"
+    }
+  ],
+  "teacher_guide": null,
+  "review": {
+    "status": "draft",
+    "reviewed_at": null,
+    "card_stats": {
+      "total": 67,
+      "sentence_choice": 5,
+      "word_review": 62,
+      "machine_verified": 64,
+      "assistant_reviewed": 3,
+      "verified": 67,
+      "needs_review": 0
+    }
+  },
+  "generated_at": "2026-08-31T04:49:43.709468+00:00"
+}

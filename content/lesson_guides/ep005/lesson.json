@@ -1,0 +1,3025 @@
+{
+  "schema_version": 1,
+  "episode": 5,
+  "title": {
+    "en": "The Demon of Chaos",
+    "zh": "西游记 第5集"
+  },
+  "sources": [
+    {
+      "kind": "courseware_main_pptx",
+      "file": "G:\\Game\\BookPlay书戏\\data\\西游记课件\\3.3西游记  Journey to the West PPT课件\\005_Journey to the West 5_The Demon of Chaos.pptx",
+      "sha256": "094aa7e72aee9ebdd19bdb7bb1c5370ab3082aae0cddd723a6e859c5c4bb275c",
+      "pages": 15
+    },
+    {
+      "kind": "official_quiz_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+      "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929",
+      "pages": 131
+    },
+    {
+      "kind": "intensive_reader_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\02-西游记精读版台词本\\1、带标注版PDF 108集\\005 混世魔王 上.pdf",
+      "sha256": "eac1d784c3f339b88b7938fe0720f87567c9a799094393953f1b7c3df34609cf",
+      "pages": 4
+    },
+    {
+      "kind": "intensive_reader_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\02-西游记精读版台词本\\1、带标注版PDF 108集\\005 混世魔王 下.pdf",
+      "sha256": "72f136042501db3cfc50ed35300557a24a5c8ac45d416cab12e4fd36fbc0dbf6",
+      "pages": 4
+    },
+    {
+      "kind": "courseware_teacher_pptx",
+      "file": "G:\\Game\\BookPlay书戏\\data\\西游记课件\\西游记外教培训11集课件\\西游记外教E005.pptx",
+      "sha256": "f5189f0ae42ce38ffa456d51d884408024556a23e9c922ca27d9c833096d9c93",
+      "pages": 23
+    },
+    {
+      "kind": "courseware_screenshots_pptx",
+      "file": "G:\\Game\\BookPlay书戏\\data\\西游记课件\\西游记-外教课动画截图\\Journey to the West 005  The Demon of Chaos_20240106163558.pptx",
+      "sha256": "f6a310fa7210b9ba47f8d86cc34ba24d1e4e1da96eff5b64d46ad292e8aa0b41",
+      "pages": 47
+    }
+  ],
+  "cards": [
+    {
+      "card_id": "ep005-official-quiz-001",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 1,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "why did wukong go after the demon?",
+        "zh": "悟空为什么要去追那个妖怪？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "to rescue the kidnapped monkeys",
+            "zh": "营救被绑架的猴子"
+          },
+          {
+            "id": "b",
+            "en": "to show how powerful he is",
+            "zh": "显示他有多强大"
+          },
+          {
+            "id": "c",
+            "en": "to be friends with the demon",
+            "zh": "与恶魔为友"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n004",
+            "quote": "\"A demon attacked us,\" said the gibbon."
+          },
+          {
+            "node_id": "n005",
+            "quote": "\"We tried to fight him, but he was too powerful. He stole most of our things and kidnapped many of us.\""
+          },
+          {
+            "node_id": "n006",
+            "quote": "Wukong was furious."
+          },
+          {
+            "node_id": "n010",
+            "quote": "\"Wait here,\" Wukong ordered. \"I will handle the demon.\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 7,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep005-official-quiz-002",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 2,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "where did the demon live?",
+        "zh": "那个恶魔住在哪里？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "a cave on a gloomy mountain",
+            "zh": "阴沉山上的一个洞穴"
+          },
+          {
+            "id": "b",
+            "en": "the fruit and flower mountain",
+            "zh": "花果山"
+          },
+          {
+            "id": "c",
+            "en": "the cloud palace",
+            "zh": "云宫"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n017",
+            "quote": "Wukong soon spotted a gloomy mountain."
+          },
+          {
+            "node_id": "n018",
+            "quote": "Dark clouds hung over it."
+          },
+          {
+            "node_id": "n019",
+            "quote": "\"That looks like a demon's home,\" he thought."
+          },
+          {
+            "node_id": "n020",
+            "quote": "Wukong landed on the mountain and found a cave."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 7,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep005-official-quiz-003",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 3,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "what did the demon ask his guards to bring?",
+        "zh": "恶魔让他的守卫带来什么？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "a sword and armor",
+            "zh": "一把剑和一副盔甲"
+          },
+          {
+            "id": "b",
+            "en": "a meal",
+            "zh": "一顿饭"
+          },
+          {
+            "id": "c",
+            "en": "a fake monkey",
+            "zh": "一只假猴子"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n025",
+            "quote": "The Demon of Chaos was sitting at a table, eating a meal."
+          },
+          {
+            "node_id": "n032",
+            "quote": "The demon stood up."
+          },
+          {
+            "node_id": "n033",
+            "quote": "\"Does the monkey have any weapons?\""
+          },
+          {
+            "node_id": "n034",
+            "quote": "\"No,\" said one guard."
+          },
+          {
+            "node_id": "n035",
+            "quote": "\"Then get me my armor and my sword,\" said the demon."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 7,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep005-official-quiz-004",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 4,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "what did wukong use to destroy the demon?",
+        "zh": "悟空用什么来消灭那个妖怪？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "a magic spell",
+            "zh": "魔法咒语"
+          },
+          {
+            "id": "b",
+            "en": "a sword",
+            "zh": "一把剑"
+          },
+          {
+            "id": "c",
+            "en": "a spear",
+            "zh": "一根矛"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n046",
+            "quote": "Wukong pulled out a handful of his own hair and blew on it."
+          },
+          {
+            "node_id": "n047",
+            "quote": "<font color=\"#ffff00\"><i>Poof!</i></font> Each strand of hair turned into a fake monkey—exactly like Wukong."
+          },
+          {
+            "node_id": "n048",
+            "quote": "All at once the fake monkeys attacked the demon, punching and kicking him."
+          },
+          {
+            "node_id": "n051",
+            "quote": "\"It's a magic spell,\" said Wukong."
+          },
+          {
+            "node_id": "n052",
+            "quote": "\"It's called Body Beyond the Body.\""
+          },
+          {
+            "node_id": "n053",
+            "quote": "The Demon of Chaos was soon destroyed."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 7,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep005-official-quiz-005",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 5,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "what did wukong teach his subjects?",
+        "zh": "悟空教他的臣民什么？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "how to fight with swords and spears",
+            "zh": "如何使用剑和矛进行战斗"
+          },
+          {
+            "id": "b",
+            "en": "how to use magic spells",
+            "zh": "如何使用魔法咒语"
+          },
+          {
+            "id": "c",
+            "en": "how to fly on clouds",
+            "zh": "如何在云上飞"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n063",
+            "quote": "Wukong spent the day teaching his subjects how to fight."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 7,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep005-vocab-001",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 101,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "happen",
+        "zh": "vi.发生,出现,碰巧"
+      },
+      "payload": {
+        "term": "happen",
+        "ipa": "ˈhæpən",
+        "pos": "vi.",
+        "def": "vi.发生,出现,碰巧",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "005 混世魔王 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "eac1d784c3f339b88b7938fe0720f87567c9a799094393953f1b7c3df34609cf"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep005-vocab-002",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 102,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "here",
+        "zh": "adv.这就是,在这里"
+      },
+      "payload": {
+        "term": "here",
+        "ipa": "hɪə(r)",
+        "pos": "adv.",
+        "def": "adv.这就是,在这里",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "005 混世魔王 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "eac1d784c3f339b88b7938fe0720f87567c9a799094393953f1b7c3df34609cf"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep005-vocab-003",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 103,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "ask",
+        "zh": "v.请求,要求,询问"
+      },
+      "payload": {
+        "term": "ask",
+        "ipa": "ɑːsk",
+        "pos": "v.",
+        "def": "v.请求,要求,询问",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          1,
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "005 混世魔王 上.pdf",
+          "half": "up",
+          "pages": [
+            1,
+            3
+          ],
+          "sha256": "eac1d784c3f339b88b7938fe0720f87567c9a799094393953f1b7c3df34609cf"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "005 混世魔王 下.pdf",
+          "half": "down",
+          "pages": [
+            1,
+            3
+          ],
+          "sha256": "72f136042501db3cfc50ed35300557a24a5c8ac45d416cab12e4fd36fbc0dbf6"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep005-vocab-004",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 104,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "monkey",
+        "zh": "猴子"
+      },
+      "payload": {
+        "term": "monkey",
+        "ipa": "ˈmʌŋki",
+        "pos": "n.",
+        "def": "n.[C]猴子",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "005 混世魔王 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "eac1d784c3f339b88b7938fe0720f87567c9a799094393953f1b7c3df34609cf"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "005 混世魔王 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "72f136042501db3cfc50ed35300557a24a5c8ac45d416cab12e4fd36fbc0dbf6"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep005-vocab-005",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 105,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "look",
+        "zh": "看,注视,外表,表情"
+      },
+      "payload": {
+        "term": "look",
+        "ipa": "lʊk",
+        "pos": "vi.",
+        "def": "vi.看 v.-link.看上去 n.[C]看,注视,外表,表情",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "005 混世魔王 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "eac1d784c3f339b88b7938fe0720f87567c9a799094393953f1b7c3df34609cf"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "005 混世魔王 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "72f136042501db3cfc50ed35300557a24a5c8ac45d416cab12e4fd36fbc0dbf6"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep005-vocab-006",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 106,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "fight",
+        "zh": "打架,战斗 v.与......作斗争"
+      },
+      "payload": {
+        "term": "fight",
+        "ipa": "faɪt",
+        "pos": "v.",
+        "def": "v./n.[C]打架,战斗 v.与......作斗争",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          1,
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "005 混世魔王 上.pdf",
+          "half": "up",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "eac1d784c3f339b88b7938fe0720f87567c9a799094393953f1b7c3df34609cf"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "005 混世魔王 下.pdf",
+          "half": "down",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "72f136042501db3cfc50ed35300557a24a5c8ac45d416cab12e4fd36fbc0dbf6"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep005-vocab-007",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 107,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "steal",
+        "zh": "v.偷,窃取"
+      },
+      "payload": {
+        "term": "steal",
+        "ipa": "stiːl",
+        "pos": "v.",
+        "def": "v.偷,窃取",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "005 混世魔王 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "eac1d784c3f339b88b7938fe0720f87567c9a799094393953f1b7c3df34609cf"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep005-vocab-008",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 108,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "who",
+        "zh": "pron.谁,什么人"
+      },
+      "payload": {
+        "term": "who",
+        "ipa": "huː",
+        "pos": "pron.",
+        "def": "pron.谁,什么人",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "005 混世魔王 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "eac1d784c3f339b88b7938fe0720f87567c9a799094393953f1b7c3df34609cf"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep005-vocab-009",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 109,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "live[lɪv] [laɪv]",
+        "zh": "v.居住,生活 adj.活的,生动的,现场直播的"
+      },
+      "payload": {
+        "term": "live[lɪv] [laɪv]",
+        "ipa": "",
+        "pos": "v.",
+        "def": "v.居住,生活 adj.活的,生动的,现场直播的",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "005 混世魔王 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "eac1d784c3f339b88b7938fe0720f87567c9a799094393953f1b7c3df34609cf"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep005-vocab-010",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 110,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "come",
+        "zh": "vi.来,来到 v.-link.成为,变成,变得"
+      },
+      "payload": {
+        "term": "come",
+        "ipa": "kʌm",
+        "pos": "vi.",
+        "def": "vi.来,来到 v.-link.成为,变成,变得",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          1,
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "005 混世魔王 上.pdf",
+          "half": "up",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "eac1d784c3f339b88b7938fe0720f87567c9a799094393953f1b7c3df34609cf"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "005 混世魔王 下.pdf",
+          "half": "down",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "72f136042501db3cfc50ed35300557a24a5c8ac45d416cab12e4fd36fbc0dbf6"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep005-vocab-011",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 111,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "north",
+        "zh": "n.北,北方 adj.北方的 adv.向北"
+      },
+      "payload": {
+        "term": "north",
+        "ipa": "/nɔːrθ",
+        "pos": "n.",
+        "def": "n.北,北方 adj.北方的 adv.向北",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "005 混世魔王 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "eac1d784c3f339b88b7938fe0720f87567c9a799094393953f1b7c3df34609cf"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep005-vocab-012",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 112,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "wait",
+        "zh": "v.等待,等候"
+      },
+      "payload": {
+        "term": "wait",
+        "ipa": "weɪt",
+        "pos": "v.",
+        "def": "v.等待,等候",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "005 混世魔王 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "eac1d784c3f339b88b7938fe0720f87567c9a799094393953f1b7c3df34609cf"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep005-vocab-013",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 113,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "order",
+        "zh": "命令；顺序"
+      },
+      "payload": {
+        "term": "order",
+        "ipa": "ˈɔː(r)də(r)",
+        "pos": "",
+        "def": "命令；顺序",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ],
+        "gloss": "命令；顺序"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "005 混世魔王 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "eac1d784c3f339b88b7938fe0720f87567c9a799094393953f1b7c3df34609cf"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep005-vocab-014",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 114,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "warn",
+        "zh": "v.警告,告诫"
+      },
+      "payload": {
+        "term": "warn",
+        "ipa": "wɔː (r)n",
+        "pos": "v.",
+        "def": "v.警告,告诫",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "005 混世魔王 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "eac1d784c3f339b88b7938fe0720f87567c9a799094393953f1b7c3df34609cf"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep005-vocab-015",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 115,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "learn",
+        "zh": "v.学习,学会,了解"
+      },
+      "payload": {
+        "term": "learn",
+        "ipa": "lɜː(r)n",
+        "pos": "v.",
+        "def": "v.学习,学会,了解",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "005 混世魔王 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "eac1d784c3f339b88b7938fe0720f87567c9a799094393953f1b7c3df34609cf"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep005-vocab-016",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 116,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "reply",
+        "zh": "答复"
+      },
+      "payload": {
+        "term": "reply",
+        "ipa": "rɪˈplaɪ",
+        "pos": "v.",
+        "def": "v.回答,答复 n.[C,U]答复",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "005 混世魔王 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "eac1d784c3f339b88b7938fe0720f87567c9a799094393953f1b7c3df34609cf"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep005-vocab-017",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 117,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "back",
+        "zh": "后面,背部 adj.后面的 adv.回原处,向后地"
+      },
+      "payload": {
+        "term": "back",
+        "ipa": "bæk",
+        "pos": "n.",
+        "def": "n.[C]后面,背部 adj.后面的 adv.回原处,向后地",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "005 混世魔王 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "eac1d784c3f339b88b7938fe0720f87567c9a799094393953f1b7c3df34609cf"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep005-vocab-018",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 118,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "soon",
+        "zh": "adv.不久,很快"
+      },
+      "payload": {
+        "term": "soon",
+        "ipa": "suːn",
+        "pos": "adv.",
+        "def": "adv.不久,很快",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "005 混世魔王 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "eac1d784c3f339b88b7938fe0720f87567c9a799094393953f1b7c3df34609cf"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep005-vocab-019",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 119,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "fly",
+        "zh": "苍蝇"
+      },
+      "payload": {
+        "term": "fly",
+        "ipa": "flaɪ",
+        "pos": "v.",
+        "def": "v.飞,驾驶(飞机等);乘飞机, (旗)飘扬 n.[C]苍蝇",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "005 混世魔王 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "eac1d784c3f339b88b7938fe0720f87567c9a799094393953f1b7c3df34609cf"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep005-vocab-020",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 120,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "subject",
+        "zh": "学科,课程,科目;主题, 话题"
+      },
+      "payload": {
+        "term": "subject",
+        "ipa": "ˈsʌbdʒɪk",
+        "pos": "n.",
+        "def": "n.[C]学科,课程,科目;主题, 话题",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          2,
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "005 混世魔王 上.pdf",
+          "half": "up",
+          "pages": [
+            2,
+            3
+          ],
+          "sha256": "eac1d784c3f339b88b7938fe0720f87567c9a799094393953f1b7c3df34609cf"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "005 混世魔王 下.pdf",
+          "half": "down",
+          "pages": [
+            2,
+            3
+          ],
+          "sha256": "72f136042501db3cfc50ed35300557a24a5c8ac45d416cab12e4fd36fbc0dbf6"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep005-vocab-021",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 121,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "king",
+        "zh": "君主,国王"
+      },
+      "payload": {
+        "term": "king",
+        "ipa": "kɪŋ",
+        "pos": "n.",
+        "def": "n.[C]君主,国王",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "005 混世魔王 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "eac1d784c3f339b88b7938fe0720f87567c9a799094393953f1b7c3df34609cf"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep005-vocab-022",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 122,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "say",
+        "zh": "v.说,讲"
+      },
+      "payload": {
+        "term": "say",
+        "ipa": "seɪ",
+        "pos": "v.",
+        "def": "v.说,讲",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          1,
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "005 混世魔王 上.pdf",
+          "half": "up",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "eac1d784c3f339b88b7938fe0720f87567c9a799094393953f1b7c3df34609cf"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "005 混世魔王 下.pdf",
+          "half": "down",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "72f136042501db3cfc50ed35300557a24a5c8ac45d416cab12e4fd36fbc0dbf6"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep005-vocab-023",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 123,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "cloud",
+        "zh": "云,云朵"
+      },
+      "payload": {
+        "term": "cloud",
+        "ipa": "klaʊd",
+        "pos": "n.",
+        "def": "n.[C,U]云,云朵",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "005 混世魔王 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "eac1d784c3f339b88b7938fe0720f87567c9a799094393953f1b7c3df34609cf"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep005-vocab-024",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 124,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "hang",
+        "zh": "v.悬挂,垂下;绞死"
+      },
+      "payload": {
+        "term": "hang",
+        "ipa": "hæŋ",
+        "pos": "v.",
+        "def": "v.悬挂,垂下;绞死",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "005 混世魔王 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "eac1d784c3f339b88b7938fe0720f87567c9a799094393953f1b7c3df34609cf"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep005-vocab-025",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 125,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "over",
+        "zh": "在上方；超过"
+      },
+      "payload": {
+        "term": "over",
+        "ipa": "ˈəʊvə®",
+        "pos": "prep.",
+        "def": "在上方；超过",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ],
+        "gloss": "在上方；超过"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "005 混世魔王 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "eac1d784c3f339b88b7938fe0720f87567c9a799094393953f1b7c3df34609cf"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep005-vocab-026",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 126,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "home",
+        "zh": "家,养老院 adv.到家,在家"
+      },
+      "payload": {
+        "term": "home",
+        "ipa": "həʊm",
+        "pos": "n.",
+        "def": "n.[C,U]家,养老院 adv.到家,在家",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "005 混世魔王 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "eac1d784c3f339b88b7938fe0720f87567c9a799094393953f1b7c3df34609cf"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "005 混世魔王 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "72f136042501db3cfc50ed35300557a24a5c8ac45d416cab12e4fd36fbc0dbf6"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep005-vocab-027",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 127,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "land",
+        "zh": "国家 v.降落,着陆"
+      },
+      "payload": {
+        "term": "land",
+        "ipa": "lænd",
+        "pos": "n.",
+        "def": "n.[U]大陆,土地 [C]国家 v.降落,着陆",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "005 混世魔王 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "eac1d784c3f339b88b7938fe0720f87567c9a799094393953f1b7c3df34609cf"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep005-vocab-028",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 128,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "guard",
+        "zh": "警卫,看守;防护装置 vt.守卫,保卫"
+      },
+      "payload": {
+        "term": "guard",
+        "ipa": "ɡɑː (r)d",
+        "pos": "n.",
+        "def": "n.[C]警卫,看守;防护装置 vt.守卫,保卫",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          1,
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "005 混世魔王 上.pdf",
+          "half": "up",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "eac1d784c3f339b88b7938fe0720f87567c9a799094393953f1b7c3df34609cf"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "005 混世魔王 下.pdf",
+          "half": "down",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "72f136042501db3cfc50ed35300557a24a5c8ac45d416cab12e4fd36fbc0dbf6"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep005-vocab-029",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 129,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "practice",
+        "zh": "实践 居住 恶魔 混沌 仇!”"
+      },
+      "payload": {
+        "term": "practice",
+        "ipa": "ˈpræktɪs",
+        "pos": "v.",
+        "def": "v.(亦作practise)练习 n.[C,U]练习,(医生的)工作地 点[U]实践 居住 恶魔 混沌 仇!”",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          2,
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "005 混世魔王 上.pdf",
+          "half": "up",
+          "pages": [
+            2,
+            3
+          ],
+          "sha256": "eac1d784c3f339b88b7938fe0720f87567c9a799094393953f1b7c3df34609cf"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "005 混世魔王 下.pdf",
+          "half": "down",
+          "pages": [
+            2,
+            3
+          ],
+          "sha256": "72f136042501db3cfc50ed35300557a24a5c8ac45d416cab12e4fd36fbc0dbf6"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep005-vocab-030",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 130,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "sit",
+        "zh": "v.坐"
+      },
+      "payload": {
+        "term": "sit",
+        "ipa": "sɪt",
+        "pos": "v.",
+        "def": "v.坐",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "005 混世魔王 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "eac1d784c3f339b88b7938fe0720f87567c9a799094393953f1b7c3df34609cf"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep005-vocab-031",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 131,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "eat",
+        "zh": "v.吃"
+      },
+      "payload": {
+        "term": "eat",
+        "ipa": "iːt",
+        "pos": "v.",
+        "def": "v.吃",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "005 混世魔王 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "eac1d784c3f339b88b7938fe0720f87567c9a799094393953f1b7c3df34609cf"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep005-vocab-032",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 132,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "meal",
+        "zh": "早(或午、晚)餐,一餐所 吃的食物"
+      },
+      "payload": {
+        "term": "meal",
+        "ipa": "miːl",
+        "pos": "n.",
+        "def": "n.[C]早(或午、晚)餐,一餐所 吃的食物",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "005 混世魔王 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "eac1d784c3f339b88b7938fe0720f87567c9a799094393953f1b7c3df34609cf"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep005-vocab-033",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 133,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "cry",
+        "zh": "叫喊"
+      },
+      "payload": {
+        "term": "cry",
+        "ipa": "kraɪ",
+        "pos": "v.",
+        "def": "v./n.[sing.]哭 [C]叫喊",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          1,
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "005 混世魔王 上.pdf",
+          "half": "up",
+          "pages": [
+            1,
+            3
+          ],
+          "sha256": "eac1d784c3f339b88b7938fe0720f87567c9a799094393953f1b7c3df34609cf"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "005 混世魔王 下.pdf",
+          "half": "down",
+          "pages": [
+            1,
+            3
+          ],
+          "sha256": "72f136042501db3cfc50ed35300557a24a5c8ac45d416cab12e4fd36fbc0dbf6"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep005-vocab-034",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 134,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "speak",
+        "zh": "vt.说(某种语言) vi.说话,提起"
+      },
+      "payload": {
+        "term": "speak",
+        "ipa": "spiːk",
+        "pos": "vt.",
+        "def": "vt.说(某种语言) vi.说话,提起",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "005 混世魔王 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "eac1d784c3f339b88b7938fe0720f87567c9a799094393953f1b7c3df34609cf"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep005-vocab-035",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 135,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "return",
+        "zh": "归还"
+      },
+      "payload": {
+        "term": "return",
+        "ipa": "rɪˈtɜː(r)n",
+        "pos": "vt.",
+        "def": "归还",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ],
+        "gloss": "归还"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "005 混世魔王 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "eac1d784c3f339b88b7938fe0720f87567c9a799094393953f1b7c3df34609cf"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep005-vocab-036",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 136,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "laugh",
+        "zh": "v.笑,发笑 n.笑声"
+      },
+      "payload": {
+        "term": "laugh",
+        "ipa": "lɑːf",
+        "pos": "v.",
+        "def": "v.笑,发笑 n.笑声",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "005 混世魔王 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "72f136042501db3cfc50ed35300557a24a5c8ac45d416cab12e4fd36fbc0dbf6"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep005-vocab-037",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 137,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "imagine",
+        "zh": "v.想象,设想"
+      },
+      "payload": {
+        "term": "imagine",
+        "ipa": "ɪˈmædʒɪn",
+        "pos": "v.",
+        "def": "v.想象,设想",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "005 混世魔王 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "72f136042501db3cfc50ed35300557a24a5c8ac45d416cab12e4fd36fbc0dbf6"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep005-vocab-038",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 138,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "afraid",
+        "zh": "adj.害怕,畏惧"
+      },
+      "payload": {
+        "term": "afraid",
+        "ipa": "əˈfreɪd",
+        "pos": "adj.",
+        "def": "adj.害怕,畏惧",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "005 混世魔王 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "72f136042501db3cfc50ed35300557a24a5c8ac45d416cab12e4fd36fbc0dbf6"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep005-vocab-039",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 139,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "jump",
+        "zh": "跳,跃(指运动)"
+      },
+      "payload": {
+        "term": "jump",
+        "ipa": "dʒʌmp",
+        "pos": "v.",
+        "def": "v.跳,跃 n.[C]跳,跃(指运动)",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "005 混世魔王 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "72f136042501db3cfc50ed35300557a24a5c8ac45d416cab12e4fd36fbc0dbf6"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep005-vocab-040",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 140,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "hit",
+        "zh": "击中"
+      },
+      "payload": {
+        "term": "hit",
+        "ipa": "hɪt",
+        "pos": "v.",
+        "def": "v.打,袭击 n.[C]击中",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "005 混世魔王 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "72f136042501db3cfc50ed35300557a24a5c8ac45d416cab12e4fd36fbc0dbf6"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep005-vocab-041",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 141,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "blow",
+        "zh": "v.吹,刮;炸开"
+      },
+      "payload": {
+        "term": "blow",
+        "ipa": "bləʊ",
+        "pos": "v.",
+        "def": "v.吹,刮;炸开",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "005 混世魔王 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "72f136042501db3cfc50ed35300557a24a5c8ac45d416cab12e4fd36fbc0dbf6"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep005-vocab-042",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 142,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "turn",
+        "zh": "轮流圈国"
+      },
+      "payload": {
+        "term": "turn",
+        "ipa": "tɜː (r)n",
+        "pos": "v.",
+        "def": "v.转向,翻圈v.-link.(使)变成 n.[C]轮流圈国",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "005 混世魔王 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "72f136042501db3cfc50ed35300557a24a5c8ac45d416cab12e4fd36fbc0dbf6"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep005-vocab-043",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 143,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "kick",
+        "zh": "极大的乐趣,踢"
+      },
+      "payload": {
+        "term": "kick",
+        "ipa": "kɪk",
+        "pos": "",
+        "def": "样这些猴子立刻向妖怪飞去,不停地打他 v.踢,踹 n.[C]极大的乐趣,踢",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "005 混世魔王 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "72f136042501db3cfc50ed35300557a24a5c8ac45d416cab12e4fd36fbc0dbf6"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep005-vocab-044",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 144,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "what",
+        "zh": "pron./adj.什么"
+      },
+      "payload": {
+        "term": "what",
+        "ipa": "wɒt",
+        "pos": "pron.",
+        "def": "pron./adj.什么",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "005 混世魔王 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "72f136042501db3cfc50ed35300557a24a5c8ac45d416cab12e4fd36fbc0dbf6"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep005-vocab-045",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 145,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "try",
+        "zh": "尝试,设法,努力"
+      },
+      "payload": {
+        "term": "try",
+        "ipa": "traɪ",
+        "pos": "v.",
+        "def": "v./n.[C]尝试,设法,努力",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "005 混世魔王 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "72f136042501db3cfc50ed35300557a24a5c8ac45d416cab12e4fd36fbc0dbf6"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep005-vocab-046",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 146,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "magic",
+        "zh": "魔术;魔法,魔力,魅力"
+      },
+      "payload": {
+        "term": "magic",
+        "ipa": "ˈmædʒɪk",
+        "pos": "adj.",
+        "def": "adj.有魔力的,有神奇力量的 n.[U]魔术;魔法,魔力,魅力",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "005 混世魔王 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "72f136042501db3cfc50ed35300557a24a5c8ac45d416cab12e4fd36fbc0dbf6"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep005-vocab-047",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 147,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "spell",
+        "zh": "咒语"
+      },
+      "payload": {
+        "term": "spell",
+        "ipa": "spel",
+        "pos": "v.",
+        "def": "v.用字母拼,拼写 n.[C]咒语",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "005 混世魔王 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "72f136042501db3cfc50ed35300557a24a5c8ac45d416cab12e4fd36fbc0dbf6"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep005-vocab-048",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 148,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "call",
+        "zh": "电话,叫声圈国"
+      },
+      "payload": {
+        "term": "call",
+        "ipa": "kɔː l",
+        "pos": "v.",
+        "def": "v.给......打电话,把......叫作,呼 喊 n.[C]电话,叫声圈国",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "005 混世魔王 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "72f136042501db3cfc50ed35300557a24a5c8ac45d416cab12e4fd36fbc0dbf6"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep005-vocab-049",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 149,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "cheer",
+        "zh": "欢乐(或幸福) 的气氛"
+      },
+      "payload": {
+        "term": "cheer",
+        "ipa": "tʃɪə(r)",
+        "pos": "v.",
+        "def": "v.欢呼,喝彩,使高兴,鼓舞 n.[C]欢呼声 [U]欢乐(或幸福) 的气氛",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "005 混世魔王 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "72f136042501db3cfc50ed35300557a24a5c8ac45d416cab12e4fd36fbc0dbf6"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep005-vocab-050",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 150,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "smile",
+        "zh": "笑,微笑"
+      },
+      "payload": {
+        "term": "smile",
+        "ipa": "smaɪ",
+        "pos": "vi.",
+        "def": "vi./n.[C]笑,微笑",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "005 混世魔王 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "72f136042501db3cfc50ed35300557a24a5c8ac45d416cab12e4fd36fbc0dbf6"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep005-vocab-051",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 151,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "take",
+        "zh": "拿；带走"
+      },
+      "payload": {
+        "term": "take",
+        "ipa": "teɪk",
+        "pos": "v.",
+        "def": "拿；带走",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ],
+        "gloss": "拿；带走"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "005 混世魔王 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "72f136042501db3cfc50ed35300557a24a5c8ac45d416cab12e4fd36fbc0dbf6"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep005-vocab-052",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 152,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "next",
+        "zh": "下一个(的) adv.紧接着,随后"
+      },
+      "payload": {
+        "term": "next",
+        "ipa": "nekst",
+        "pos": "adj.",
+        "def": "adj./n[sing.]下一个(的) adv.紧接着,随后",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "005 混世魔王 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "72f136042501db3cfc50ed35300557a24a5c8ac45d416cab12e4fd36fbc0dbf6"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep005-vocab-053",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 153,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "morning",
+        "zh": "早晨,上午"
+      },
+      "payload": {
+        "term": "morning",
+        "ipa": "ˈmɔː(r)nɪŋ",
+        "pos": "n.",
+        "def": "n.[C,U]早晨,上午",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "005 混世魔王 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "72f136042501db3cfc50ed35300557a24a5c8ac45d416cab12e4fd36fbc0dbf6"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep005-vocab-054",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 154,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "wake",
+        "zh": "v.弄醒,醒 n.(常构成搭配)"
+      },
+      "payload": {
+        "term": "wake",
+        "ipa": "weɪk",
+        "pos": "v.",
+        "def": "v.弄醒,醒 n.(常构成搭配)",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "005 混世魔王 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "72f136042501db3cfc50ed35300557a24a5c8ac45d416cab12e4fd36fbc0dbf6"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep005-vocab-055",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 155,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "early",
+        "zh": "adv./adj.早(的)"
+      },
+      "payload": {
+        "term": "early",
+        "ipa": "ˈɜː(r)li",
+        "pos": "adv.",
+        "def": "adv./adj.早(的)",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "005 混世魔王 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "72f136042501db3cfc50ed35300557a24a5c8ac45d416cab12e4fd36fbc0dbf6"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep005-vocab-056",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 156,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "protect",
+        "zh": "v.保护,防护"
+      },
+      "payload": {
+        "term": "protect",
+        "ipa": "prəˈtek",
+        "pos": "v.",
+        "def": "v.保护,防护",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "005 混世魔王 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "72f136042501db3cfc50ed35300557a24a5c8ac45d416cab12e4fd36fbc0dbf6"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep005-vocab-057",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 157,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "teach",
+        "zh": "家!” 如何战斗。让他们练习剑和矛 v.教,讲授,教导"
+      },
+      "payload": {
+        "term": "teach",
+        "ipa": "tiːtʃ",
+        "pos": "",
+        "def": "家!” 如何战斗。让他们练习剑和矛 v.教,讲授,教导",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "005 混世魔王 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "72f136042501db3cfc50ed35300557a24a5c8ac45d416cab12e4fd36fbc0dbf6"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep005-vocab-058",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 158,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "army",
+        "zh": "陆军,陆军部队"
+      },
+      "payload": {
+        "term": "army",
+        "ipa": "ˈɑː(r)mi",
+        "pos": "n.",
+        "def": "n.[C]陆军,陆军部队",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "005 混世魔王 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "72f136042501db3cfc50ed35300557a24a5c8ac45d416cab12e4fd36fbc0dbf6"
+        }
+      ],
+      "review_status": "machine_verified"
+    }
+  ],
+  "teacher_guide": null,
+  "review": {
+    "status": "draft",
+    "reviewed_at": null,
+    "card_stats": {
+      "total": 63,
+      "sentence_choice": 5,
+      "word_review": 58,
+      "machine_verified": 59,
+      "assistant_reviewed": 4,
+      "verified": 63,
+      "needs_review": 0
+    }
+  },
+  "generated_at": "2026-08-31T04:49:35.033888+00:00"
+}

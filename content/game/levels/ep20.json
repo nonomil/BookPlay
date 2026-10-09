@@ -1,0 +1,584 @@
+{
+ "schema_version": 1,
+ "ep": 20,
+ "title": {
+  "en": "The Black Bear Spirit",
+  "zh": "西游记 第20集"
+ },
+ "collection": "c03",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "blackwind",
+   "nameZh": "黑风大王",
+   "mode": "sparring",
+   "sprite": "blackwind"
+  },
+  "minors": [
+   {
+    "id": "imp",
+    "nameZh": "小妖",
+    "sprite": "imp"
+   }
+  ]
+ },
+ "background": {
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep20/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "Wukong glared at the two scared priests.",
+   "textZh": "悟空怒视着那两位惊恐的僧侣。",
+   "illustration": "assets/adv_frames/ep20/f1.jpg",
+   "sourceNodeId": "n001",
+   "audioRef": "sent_en:Wukong glared at the two scared priests."
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "\"The robe is gone?\" he cried.",
+   "textZh": "\"长袍不见了?\"他惊呼道。",
+   "illustration": "assets/adv_frames/ep20/f2.jpg",
+   "sourceNodeId": "n002",
+   "audioRef": "sent_en:\"The robe is gone?\" he cried."
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "scared",
+   "zh": "害怕的,恐惧的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep20/f1.jpg"
+  },
+  {
+   "term": "at all",
+   "zh": "(和not,no连用)完全(不),一点也(不)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep20/f2.jpg"
+  },
+  {
+   "term": "command",
+   "zh": "命令",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep20/f0.jpg"
+  },
+  {
+   "term": "instantly",
+   "zh": "立刻,马上",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep20/f3.jpg"
+  },
+  {
+   "term": "quietly",
+   "zh": "安静地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep20/f1.jpg"
+  },
+  {
+   "term": "hurt",
+   "zh": "疼,痛",
+   "ipa": "hɜː(r)t",
+   "illustration": "assets/adv_frames/ep20/f3.jpg"
+  },
+  {
+   "term": "breath",
+   "zh": "呼吸,气息",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep20/f3.jpg"
+  },
+  {
+   "term": "last night",
+   "zh": "昨天晚上",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep20/f3.jpg"
+  },
+  {
+   "term": "monster",
+   "zh": "怪物",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep20/f1.jpg"
+  },
+  {
+   "term": "demon",
+   "zh": "魔鬼,恶魔",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep20/f1.jpg"
+  },
+  {
+   "term": "stolen",
+   "zh": "偷窃 steal-stole-stolen",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep20/f1.jpg"
+  },
+  {
+   "term": "nearby",
+   "zh": "在附近",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep20/f2.jpg"
+  }
+ ],
+ "wordPool": [
+  {
+   "term": "scared",
+   "zh": "害怕的,恐惧的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep20/f1.jpg"
+  },
+  {
+   "term": "at all",
+   "zh": "(和not,no连用)完全(不),一点也(不)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep20/f2.jpg"
+  },
+  {
+   "term": "command",
+   "zh": "命令",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep20/f0.jpg"
+  },
+  {
+   "term": "instantly",
+   "zh": "立刻,马上",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep20/f3.jpg"
+  },
+  {
+   "term": "quietly",
+   "zh": "安静地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep20/f1.jpg"
+  },
+  {
+   "term": "hurt",
+   "zh": "疼,痛",
+   "ipa": "hɜː(r)t",
+   "illustration": "assets/adv_frames/ep20/f3.jpg"
+  },
+  {
+   "term": "breath",
+   "zh": "呼吸,气息",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep20/f3.jpg"
+  },
+  {
+   "term": "last night",
+   "zh": "昨天晚上",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep20/f3.jpg"
+  },
+  {
+   "term": "monster",
+   "zh": "怪物",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep20/f1.jpg"
+  },
+  {
+   "term": "demon",
+   "zh": "魔鬼,恶魔",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep20/f1.jpg"
+  },
+  {
+   "term": "stolen",
+   "zh": "偷窃 steal-stole-stolen",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep20/f1.jpg"
+  },
+  {
+   "term": "nearby",
+   "zh": "在附近",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep20/f2.jpg"
+  },
+  {
+   "term": "feast",
+   "zh": "盛宴,筵席",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep20/f2.jpg"
+  },
+  {
+   "term": "celebrate",
+   "zh": "庆祝",
+   "ipa": "ˈselɪbreɪt",
+   "illustration": "assets/adv_frames/ep20/f2.jpg"
+  },
+  {
+   "term": "direction",
+   "zh": "方向",
+   "ipa": "dəˈrekʃn",
+   "illustration": "assets/adv_frames/ep20/f3.jpg"
+  },
+  {
+   "term": "entrance",
+   "zh": "入又",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep20/f1.jpg"
+  },
+  {
+   "term": "slam",
+   "zh": "砰然关上(门)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep20/f2.jpg"
+  },
+  {
+   "term": "lance",
+   "zh": "长矛",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep20/f3.jpg"
+  },
+  {
+   "term": "cause",
+   "zh": "导致,使发生,引起",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep20/f1.jpg"
+  },
+  {
+   "term": "snort",
+   "zh": "1. 轻蔑(或愤怒)地哼,嘲讽地笑,(2. (用鼻子等)发出鼻息声)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep20/f2.jpg"
+  },
+  {
+   "term": "impress",
+   "zh": "给予...极深的印象,使感动",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep20/f3.jpg"
+  },
+  {
+   "term": "jab",
+   "zh": "刺,戳",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep20/f0.jpg"
+  },
+  {
+   "term": "tumble",
+   "zh": "跌倒,滚下",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep20/f2.jpg"
+  },
+  {
+   "term": "downhill",
+   "zh": "下坡路",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep20/f2.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "scared",
+     "zh": "害怕的,恐惧的",
+     "sprite": "imp"
+    },
+    {
+     "term": "at all",
+     "zh": "(和not,no连用)完全(不),一点也(不)",
+     "sprite": "imp"
+    },
+    {
+     "term": "command",
+     "zh": "命令",
+     "sprite": "imp"
+    },
+    {
+     "term": "instantly",
+     "zh": "立刻,马上",
+     "sprite": "imp"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "quietly",
+     "zh": "安静地",
+     "sprite": "imp"
+    },
+    {
+     "term": "hurt",
+     "zh": "疼,痛",
+     "sprite": "imp"
+    },
+    {
+     "term": "breath",
+     "zh": "呼吸,气息",
+     "sprite": "imp"
+    },
+    {
+     "term": "last night",
+     "zh": "昨天晚上",
+     "sprite": "imp"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "monster",
+    "zh": "怪物"
+   },
+   {
+    "term": "demon",
+    "zh": "魔鬼,恶魔"
+   },
+   {
+    "term": "stolen",
+    "zh": "偷窃 steal-stole-stolen"
+   },
+   {
+    "term": "nearby",
+    "zh": "在附近"
+   }
+  ],
+  "taunts": [
+   "blackwind.1",
+   "blackwind.2",
+   "blackwind.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=20",
+ "npcDialogue": {
+  "intro": {
+   "id": "ep20-map-intro",
+   "lines": [
+    {
+     "id": "ep20-map-intro-1",
+     "sourceNodeId": "n001",
+     "speaker": "narrator",
+     "textEn": "Wukong glared at the two scared priests.",
+     "textZh": "悟空怒视着那两位惊恐的僧侣。",
+     "audioRef": "sent_en:Wukong glared at the two scared priests.",
+     "audioStart": 11.2,
+     "audioEnd": 17.862
+    },
+    {
+     "id": "ep20-map-intro-2",
+     "sourceNodeId": "n002",
+     "speaker": "narrator",
+     "textEn": "\"The robe is gone?\" he cried.",
+     "textZh": "\"长袍不见了?\"他惊呼道。",
+     "audioRef": "sent_en:\"The robe is gone?\" he cried.",
+     "audioStart": 17.863,
+     "audioEnd": 21.297
+    }
+   ]
+  },
+  "quiz": {
+   "id": "ep20-map-quiz",
+   "lines": [
+    {
+     "id": "ep20-map-quiz-1",
+     "sourceNodeId": "n013",
+     "speaker": "narrator",
+     "textEn": "The Tang Monk was quietly reciting the Tight Headband spell.",
+     "textZh": "唐僧正 quietly 诵念着\"紧头带咒\"。",
+     "audioRef": "sent_en:The Tang Monk was quietly reciting the Tight Headband spell.",
+     "audioStart": 58.333,
+     "audioEnd": 62.353
+    }
+   ],
+   "question": {
+    "id": "ep020-official-quiz-001",
+    "textEn": "which is not true?",
+    "textZh": "哪一项是不正确的？"
+   },
+   "word": {
+    "term": "scared",
+    "zh": "害怕的,恐惧的",
+    "ipa": ""
+   },
+   "options": [
+    {
+     "id": "a",
+     "textEn": "the tang monk hurt the priests.",
+     "textZh": "唐僧伤害了那些和尚。",
+     "correct": true,
+     "feedback": "对了。唐僧伤害了那些和尚。"
+    },
+    {
+     "id": "b",
+     "textEn": "wukong wanted to find the robe.",
+     "textZh": "悟空想找到那件长袍。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    },
+    {
+     "id": "c",
+     "textEn": "the head priest didn't have the robe.",
+     "textZh": "大祭司没有长袍。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    }
+   ],
+   "lessonCardId": "ep020-official-quiz-001"
+  }
+ },
+ "map": {
+  "theme": "generic",
+  "coordinateSpace": "world-normalized",
+  "worldTiles": 2,
+  "regions": {
+   "hero": 0,
+   "waves": [
+    0,
+    1
+   ],
+   "npc": {
+    "intro": 0,
+    "quiz": 1
+   },
+   "boss": 3
+  },
+  "walkable": {
+   "space": "world",
+   "x": 0.0,
+   "y": 0.16,
+   "w": 1.0,
+   "h": 0.79,
+   "rects": [
+    {
+     "x": 0.0,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.66,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    }
+   ]
+  },
+  "heroSpawn": {
+   "x": 0.06,
+   "y": 0.31
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.31,
+    "y": 0.23
+   },
+   {
+    "x": 0.38,
+    "y": 0.27
+   },
+   {
+    "x": 0.34,
+    "y": 0.33
+   },
+   {
+    "x": 0.41,
+    "y": 0.24
+   }
+  ],
+  "waveSpawns": [
+   [
+    {
+     "x": 0.31,
+     "y": 0.23
+    },
+    {
+     "x": 0.38,
+     "y": 0.27
+    },
+    {
+     "x": 0.34,
+     "y": 0.33
+    },
+    {
+     "x": 0.41,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.81,
+     "y": 0.23
+    },
+    {
+     "x": 0.88,
+     "y": 0.27
+    },
+    {
+     "x": 0.84,
+     "y": 0.33
+    },
+    {
+     "x": 0.91,
+     "y": 0.24
+    }
+   ]
+  ],
+  "orbSpawns": [
+   [
+    {
+     "x": 0.11,
+     "y": 0.25
+    },
+    {
+     "x": 0.16,
+     "y": 0.31
+    },
+    {
+     "x": 0.12,
+     "y": 0.37
+    },
+    {
+     "x": 0.18,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.61,
+     "y": 0.25
+    },
+    {
+     "x": 0.66,
+     "y": 0.31
+    },
+    {
+     "x": 0.62,
+     "y": 0.37
+    },
+    {
+     "x": 0.68,
+     "y": 0.24
+    }
+   ]
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "blackwind",
+    "nameZh": "黑风王",
+    "x": 0.08,
+    "y": 0.26
+   },
+   {
+    "role": "quiz",
+    "sprite": "blackwind",
+    "nameZh": "黑风王",
+    "x": 0.7,
+    "y": 0.39
+   }
+  ],
+  "bossSpot": {
+   "x": 0.94,
+   "y": 0.85
+  }
+ }
+}

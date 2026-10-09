@@ -1,0 +1,584 @@
+{
+ "schema_version": 1,
+ "ep": 98,
+ "title": {
+  "en": "Three Fights",
+  "zh": "西游记 第98集"
+ },
+ "collection": "c12",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "imp",
+   "nameZh": "小妖",
+   "mode": "sparring",
+   "sprite": "imp"
+  },
+  "minors": [
+   {
+    "id": "imp",
+    "nameZh": "小妖",
+    "sprite": "imp"
+   }
+  ]
+ },
+ "background": {
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep98/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "Wukong and his companions walked on the mountain road.",
+   "textZh": "悟空与他的同伴们沿着山路前行。",
+   "illustration": "assets/adv_frames/ep98/f1.jpg",
+   "sourceNodeId": "n001",
+   "audioRef": "sent_en:Wukong and his companions walked on the mountain road."
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "The monkey watched carefully for the monster and demons.",
+   "textZh": "这只猴子仔细地观察着四周,寻找着怪物和恶魔。",
+   "illustration": "assets/adv_frames/ep98/f2.jpg",
+   "sourceNodeId": "n002",
+   "audioRef": "sent_en:The monkey watched carefully for the monster and demons."
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "carefully",
+   "zh": "小心地,仔细地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep98/f2.jpg"
+  },
+  {
+   "term": "slope",
+   "zh": "山坡,斜面",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep98/f3.jpg"
+  },
+  {
+   "term": "race",
+   "zh": "1. 疾走,全速前进,(2. 赛跑,竞赛)",
+   "ipa": "reɪs",
+   "illustration": "assets/adv_frames/ep98/f1.jpg"
+  },
+  {
+   "term": "out of sight",
+   "zh": "在看不见的地方",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep98/f0.jpg"
+  },
+  {
+   "term": "grunt",
+   "zh": "1. 嘟哝声,哼声,(2. 发出嘟哝声,发出哼声)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep98/f1.jpg"
+  },
+  {
+   "term": "clash",
+   "zh": "砰地相碰撞,发出铿锵声",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep98/f1.jpg"
+  },
+  {
+   "term": "fought",
+   "zh": "打架 (fight-fought)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep98/f0.jpg"
+  },
+  {
+   "term": "strength",
+   "zh": "力,气力",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep98/f0.jpg"
+  },
+  {
+   "term": "nervously",
+   "zh": "焦急地,神经质地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep98/f0.jpg"
+  },
+  {
+   "term": "definitely",
+   "zh": "确实地,肯定地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep98/f1.jpg"
+  },
+  {
+   "term": "wonder",
+   "zh": "对......感到好奇,想知道",
+   "ipa": "ˈwʌndə(r)",
+   "illustration": "assets/adv_frames/ep98/f0.jpg"
+  },
+  {
+   "term": "get past",
+   "zh": "通过",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep98/f1.jpg"
+  }
+ ],
+ "wordPool": [
+  {
+   "term": "carefully",
+   "zh": "小心地,仔细地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep98/f2.jpg"
+  },
+  {
+   "term": "slope",
+   "zh": "山坡,斜面",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep98/f3.jpg"
+  },
+  {
+   "term": "race",
+   "zh": "1. 疾走,全速前进,(2. 赛跑,竞赛)",
+   "ipa": "reɪs",
+   "illustration": "assets/adv_frames/ep98/f1.jpg"
+  },
+  {
+   "term": "out of sight",
+   "zh": "在看不见的地方",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep98/f0.jpg"
+  },
+  {
+   "term": "grunt",
+   "zh": "1. 嘟哝声,哼声,(2. 发出嘟哝声,发出哼声)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep98/f1.jpg"
+  },
+  {
+   "term": "clash",
+   "zh": "砰地相碰撞,发出铿锵声",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep98/f1.jpg"
+  },
+  {
+   "term": "fought",
+   "zh": "打架 (fight-fought)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep98/f0.jpg"
+  },
+  {
+   "term": "strength",
+   "zh": "力,气力",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep98/f0.jpg"
+  },
+  {
+   "term": "nervously",
+   "zh": "焦急地,神经质地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep98/f0.jpg"
+  },
+  {
+   "term": "definitely",
+   "zh": "确实地,肯定地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep98/f1.jpg"
+  },
+  {
+   "term": "wonder",
+   "zh": "对......感到好奇,想知道",
+   "ipa": "ˈwʌndə(r)",
+   "illustration": "assets/adv_frames/ep98/f0.jpg"
+  },
+  {
+   "term": "get past",
+   "zh": "通过",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep98/f1.jpg"
+  },
+  {
+   "term": "attack",
+   "zh": "攻击",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep98/f2.jpg"
+  },
+  {
+   "term": "dust",
+   "zh": "灰尘",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep98/f3.jpg"
+  },
+  {
+   "term": "kick up dust",
+   "zh": "扬起灰尘",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep98/f3.jpg"
+  },
+  {
+   "term": "tumble",
+   "zh": "跌倒,滚下",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep98/f1.jpg"
+  },
+  {
+   "term": "mountainside",
+   "zh": "山坡,山腰",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep98/f1.jpg"
+  },
+  {
+   "term": "footstep",
+   "zh": "1. 走路的声音,(2. 脚印)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep98/f1.jpg"
+  },
+  {
+   "term": "wickedly",
+   "zh": "邪恶地,居心叵测地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep98/f3.jpg"
+  },
+  {
+   "term": "scoff",
+   "zh": "嘲笑,嘲弄",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep98/f0.jpg"
+  },
+  {
+   "term": "expect",
+   "zh": "期待,预想",
+   "ipa": "ɪkˈspekt",
+   "illustration": "assets/adv_frames/ep98/f0.jpg"
+  },
+  {
+   "term": "annoyed",
+   "zh": "恼怒的,气恼的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep98/f2.jpg"
+  },
+  {
+   "term": "impossible",
+   "zh": "不可能的,做不到的",
+   "ipa": "ɪm ˈpɒsəb(ə)l",
+   "illustration": "assets/adv_frames/ep98/f2.jpg"
+  },
+  {
+   "term": "lure",
+   "zh": "1. 引诱,诱惑,(2. 诱惑物)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep98/f1.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "carefully",
+     "zh": "小心地,仔细地",
+     "sprite": "imp"
+    },
+    {
+     "term": "slope",
+     "zh": "山坡,斜面",
+     "sprite": "imp"
+    },
+    {
+     "term": "race",
+     "zh": "1. 疾走,全速前进,(2. 赛跑,竞赛)",
+     "sprite": "imp"
+    },
+    {
+     "term": "out of sight",
+     "zh": "在看不见的地方",
+     "sprite": "imp"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "grunt",
+     "zh": "1. 嘟哝声,哼声,(2. 发出嘟哝声,发出哼声)",
+     "sprite": "imp"
+    },
+    {
+     "term": "clash",
+     "zh": "砰地相碰撞,发出铿锵声",
+     "sprite": "imp"
+    },
+    {
+     "term": "fought",
+     "zh": "打架 (fight-fought)",
+     "sprite": "imp"
+    },
+    {
+     "term": "strength",
+     "zh": "力,气力",
+     "sprite": "imp"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "nervously",
+    "zh": "焦急地,神经质地"
+   },
+   {
+    "term": "definitely",
+    "zh": "确实地,肯定地"
+   },
+   {
+    "term": "wonder",
+    "zh": "对......感到好奇,想知道"
+   },
+   {
+    "term": "get past",
+    "zh": "通过"
+   }
+  ],
+  "taunts": [
+   "imp.1",
+   "imp.2",
+   "imp.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=98",
+ "npcDialogue": {
+  "intro": {
+   "id": "ep98-map-intro",
+   "lines": [
+    {
+     "id": "ep98-map-intro-1",
+     "sourceNodeId": "n001",
+     "speaker": "narrator",
+     "textEn": "Wukong and his companions walked on the mountain road.",
+     "textZh": "悟空与他的同伴们沿着山路前行。",
+     "audioRef": "sent_en:Wukong and his companions walked on the mountain road.",
+     "audioStart": 10.934,
+     "audioEnd": 17.278
+    },
+    {
+     "id": "ep98-map-intro-2",
+     "sourceNodeId": "n002",
+     "speaker": "narrator",
+     "textEn": "The monkey watched carefully for the monster and demons.",
+     "textZh": "这只猴子仔细地观察着四周,寻找着怪物和恶魔。",
+     "audioRef": "sent_en:The monkey watched carefully for the monster and demons.",
+     "audioStart": 17.279,
+     "audioEnd": 21.797
+    }
+   ]
+  },
+  "quiz": {
+   "id": "ep98-map-quiz",
+   "lines": [
+    {
+     "id": "ep98-map-quiz-1",
+     "sourceNodeId": "n004",
+     "speaker": "narrator",
+     "textEn": "\"Stay here, everyone!\" shouted Bajie.",
+     "textZh": "\"大家待在这里!\"八戒喊道。",
+     "audioRef": "sent_en:\"Stay here, everyone!\" shouted Bajie.",
+     "audioStart": 27.78,
+     "audioEnd": 30.52
+    }
+   ],
+   "question": {
+    "id": "ep098-official-quiz-001",
+    "textEn": "which is true?",
+    "textZh": "哪一个是真的？"
+   },
+   "word": {
+    "term": "carefully",
+    "zh": "小心地,仔细地",
+    "ipa": ""
+   },
+   "options": [
+    {
+     "id": "a",
+     "textEn": "bajie, wukong, and wujing fought demons.",
+     "textZh": "八戒、悟空和沙僧与妖怪作战。",
+     "correct": true,
+     "feedback": "对了。八戒、悟空和沙僧与妖怪作战。"
+    },
+    {
+     "id": "b",
+     "textEn": "the tang monk searched for a cave.",
+     "textZh": "唐僧寻找一个洞穴。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    },
+    {
+     "id": "c",
+     "textEn": "the monster ran down a slope.",
+     "textZh": "那个怪物沿着斜坡跑下去。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    }
+   ],
+   "lessonCardId": "ep098-official-quiz-001"
+  }
+ },
+ "map": {
+  "theme": "generic",
+  "coordinateSpace": "world-normalized",
+  "worldTiles": 2,
+  "regions": {
+   "hero": 0,
+   "waves": [
+    0,
+    1
+   ],
+   "npc": {
+    "intro": 0,
+    "quiz": 1
+   },
+   "boss": 3
+  },
+  "walkable": {
+   "space": "world",
+   "x": 0.0,
+   "y": 0.16,
+   "w": 1.0,
+   "h": 0.79,
+   "rects": [
+    {
+     "x": 0.0,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.66,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    }
+   ]
+  },
+  "heroSpawn": {
+   "x": 0.06,
+   "y": 0.31
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.31,
+    "y": 0.23
+   },
+   {
+    "x": 0.38,
+    "y": 0.27
+   },
+   {
+    "x": 0.34,
+    "y": 0.33
+   },
+   {
+    "x": 0.41,
+    "y": 0.24
+   }
+  ],
+  "waveSpawns": [
+   [
+    {
+     "x": 0.31,
+     "y": 0.23
+    },
+    {
+     "x": 0.38,
+     "y": 0.27
+    },
+    {
+     "x": 0.34,
+     "y": 0.33
+    },
+    {
+     "x": 0.41,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.81,
+     "y": 0.23
+    },
+    {
+     "x": 0.88,
+     "y": 0.27
+    },
+    {
+     "x": 0.84,
+     "y": 0.33
+    },
+    {
+     "x": 0.91,
+     "y": 0.24
+    }
+   ]
+  ],
+  "orbSpawns": [
+   [
+    {
+     "x": 0.11,
+     "y": 0.25
+    },
+    {
+     "x": 0.16,
+     "y": 0.31
+    },
+    {
+     "x": 0.12,
+     "y": 0.37
+    },
+    {
+     "x": 0.18,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.61,
+     "y": 0.25
+    },
+    {
+     "x": 0.66,
+     "y": 0.31
+    },
+    {
+     "x": 0.62,
+     "y": 0.37
+    },
+    {
+     "x": 0.68,
+     "y": 0.24
+    }
+   ]
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "imp",
+    "nameZh": "小妖",
+    "x": 0.08,
+    "y": 0.26
+   },
+   {
+    "role": "quiz",
+    "sprite": "imp",
+    "nameZh": "小妖",
+    "x": 0.7,
+    "y": 0.39
+   }
+  ],
+  "bossSpot": {
+   "x": 0.94,
+   "y": 0.85
+  }
+ }
+}

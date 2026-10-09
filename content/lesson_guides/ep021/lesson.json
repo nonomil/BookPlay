@@ -1,0 +1,2092 @@
+{
+  "schema_version": 1,
+  "episode": 21,
+  "title": {
+    "en": "The Monster's Friend",
+    "zh": "西游记 第21集"
+  },
+  "sources": [
+    {
+      "kind": "courseware_main_pptx",
+      "file": "G:\\Game\\BookPlay书戏\\data\\西游记课件\\3.3西游记  Journey to the West PPT课件\\021_Journey to the West 21_The Monster's Friend.pptx",
+      "sha256": "a1d153b13a4408198dc3929728b06c8d76db745038e35b5d7c20b39efce0b4c6",
+      "pages": 20
+    },
+    {
+      "kind": "official_quiz_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+      "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929",
+      "pages": 131
+    },
+    {
+      "kind": "intensive_reader_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\02-西游记精读版台词本\\1、带标注版PDF 108集\\021 妖怪的朋友 上.pdf",
+      "sha256": "7830ba50a61b3f1bd98529cc20d0bf43ecc45b0953abb7ad450f8ec1bc2b227f",
+      "pages": 3
+    },
+    {
+      "kind": "intensive_reader_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\02-西游记精读版台词本\\1、带标注版PDF 108集\\021 妖怪的朋友 下.pdf",
+      "sha256": "945a8ec460e0d60f906a7234ca722512f09e840a90808aa08ed2935543f58a69",
+      "pages": 4
+    },
+    {
+      "kind": "courseware_screenshots_pptx",
+      "file": "G:\\Game\\BookPlay书戏\\data\\西游记课件\\西游记-外教课动画截图\\Journey to the West 021  The Monster's Friend_20240106164240.pptx",
+      "sha256": "27b0479156a7eb12583e411c3c8f79c54a208618956d4b5816236322b0be8b1a",
+      "pages": 38
+    }
+  ],
+  "cards": [
+    {
+      "card_id": "ep021-official-quiz-001",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 1,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "which is not true?",
+        "zh": "哪一项是不正确的？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "guanyin was very proud of wukong and the monk.",
+            "zh": "观音对悟空和和尚感到非常自豪。"
+          },
+          {
+            "id": "b",
+            "en": "the pill jumped into the black wind king's mouth.",
+            "zh": "药丸跳进了黑风王的嘴里。"
+          },
+          {
+            "id": "c",
+            "en": "the priest wanted to celebrate the buddhist treasure.",
+            "zh": "这位牧师想要庆祝佛教宝物。"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n005",
+            "quote": "Guanyin sighed. \"The Tang Monk should not have shown that robe to the priest,\" she said."
+          },
+          {
+            "node_id": "n008",
+            "quote": "\"I've told the Tang Monk many times not to do dumb things. But still he—\" \"And you should have put out that fire,\" Guanyin said, interrupting Wukong."
+          },
+          {
+            "node_id": "n009",
+            "quote": "\"What you did was terrible!\""
+          },
+          {
+            "node_id": "n044",
+            "quote": "\"I brought you a gift, to celebrate your new Buddhist treasure.\""
+          },
+          {
+            "node_id": "n053",
+            "quote": "As he brought the pill up to his mouth, the pill wiggled."
+          },
+          {
+            "node_id": "n055",
+            "quote": "It shot into his mouth and slid down his throat."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 24,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep021-official-quiz-002",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 2,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "who was helping wukong?",
+        "zh": "谁在帮助悟空？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "guanyin",
+            "zh": "观音"
+          },
+          {
+            "id": "b",
+            "en": "the tang monk",
+            "zh": "唐僧"
+          },
+          {
+            "id": "c",
+            "en": "the black wind king",
+            "zh": "黑风王"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n013",
+            "quote": "\"I'll help you get back the robe,\" said Guanyin. \"Let's go.\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 24,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep021-official-quiz-003",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 3,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "what did the priest have?",
+        "zh": "牧师有什么？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "a purple pill",
+            "zh": "一颗紫色药丸"
+          },
+          {
+            "id": "b",
+            "en": "another robe",
+            "zh": "另一件长袍"
+          },
+          {
+            "id": "c",
+            "en": "a monkey",
+            "zh": "一只猴子"
+          }
+        ],
+        "answer": "c",
+        "answer_evidence": [
+          {
+            "node_id": "n038",
+            "quote": "\"A monkey spirit was here?\" asked the priest."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 24,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep021-official-quiz-004",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 4,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "what did wukong notice about the priest?",
+        "zh": "悟空注意到那个和尚什么了？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "he was a wolf spirit in disguise.",
+            "zh": "他伪装成狼的灵魂。"
+          },
+          {
+            "id": "b",
+            "en": "he was really the tang monk.",
+            "zh": "他真的是唐僧。"
+          },
+          {
+            "id": "c",
+            "en": "he was a bodhisattva.",
+            "zh": "他是一位菩萨。"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n026",
+            "quote": "Wukong stared at the priest, using his magic sight."
+          },
+          {
+            "node_id": "n027",
+            "quote": "\"That's not a priest!\" Wukong realized."
+          },
+          {
+            "node_id": "n028",
+            "quote": "\"It's a wolf spirit dressed as a priest.\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 24,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep021-official-quiz-005",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 5,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "what would the priest's gift do?",
+        "zh": "牧师的礼物会做什么？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "make the black wind king live forever",
+            "zh": "让黑风王永生"
+          },
+          {
+            "id": "b",
+            "en": "keep the robe safe from harm",
+            "zh": "保护长袍免受伤害"
+          },
+          {
+            "id": "c",
+            "en": "disguise the black wind king",
+            "zh": "伪装黑风王"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n025",
+            "quote": "\"The Black Wind King has a new robe that is a Buddhist treasure. And I hope he likes the pill I made for him. It will make him live forever.\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 24,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep021-vocab-001",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 101,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "terrible",
+        "zh": "adj.非常讨厌的,非常严重的,可 怕的,糟糕的"
+      },
+      "payload": {
+        "term": "terrible",
+        "ipa": "ˈterəbl",
+        "pos": "adj.",
+        "def": "adj.非常讨厌的,非常严重的,可 怕的,糟糕的",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "021 妖怪的朋友 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "7830ba50a61b3f1bd98529cc20d0bf43ecc45b0953abb7ad450f8ec1bc2b227f"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep021-vocab-002",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 102,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "look",
+        "zh": "看,注视,外表,表情"
+      },
+      "payload": {
+        "term": "look",
+        "ipa": "lʊk",
+        "pos": "vi.",
+        "def": "vi.看 v.-link.看上去 n.[C]看,注视,外表,表情",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          2,
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "021 妖怪的朋友 上.pdf",
+          "half": "up",
+          "pages": [
+            2,
+            3
+          ],
+          "sha256": "7830ba50a61b3f1bd98529cc20d0bf43ecc45b0953abb7ad450f8ec1bc2b227f"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "021 妖怪的朋友 下.pdf",
+          "half": "down",
+          "pages": [
+            2,
+            3
+          ],
+          "sha256": "945a8ec460e0d60f906a7234ca722512f09e840a90808aa08ed2935543f58a69"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep021-vocab-003",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 103,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "ground",
+        "zh": "地,地面"
+      },
+      "payload": {
+        "term": "ground",
+        "ipa": "ɡraʊnd",
+        "pos": "n.",
+        "def": "n.[U]地,地面",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "021 妖怪的朋友 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "7830ba50a61b3f1bd98529cc20d0bf43ecc45b0953abb7ad450f8ec1bc2b227f"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep021-vocab-004",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 104,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "ocean",
+        "zh": "(五大洋之一的)洋"
+      },
+      "payload": {
+        "term": "ocean",
+        "ipa": "ˈəʊʃ(ə)n",
+        "pos": "n.",
+        "def": "n.[sing.]大海,海洋 [C](五大洋之一的)洋",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "021 妖怪的朋友 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "7830ba50a61b3f1bd98529cc20d0bf43ecc45b0953abb7ad450f8ec1bc2b227f"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep021-vocab-005",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 105,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "mountain",
+        "zh": "高山"
+      },
+      "payload": {
+        "term": "mountain",
+        "ipa": "ˈmaʊntən",
+        "pos": "n.",
+        "def": "n.[C]高山",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "021 妖怪的朋友 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "7830ba50a61b3f1bd98529cc20d0bf43ecc45b0953abb7ad450f8ec1bc2b227f"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep021-vocab-006",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 106,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "close",
+        "zh": "靠近的；关闭"
+      },
+      "payload": {
+        "term": "close",
+        "ipa": "kləʊz",
+        "pos": "adj.",
+        "def": "靠近的；关闭",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ],
+        "gloss": "靠近的；关闭"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "021 妖怪的朋友 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "7830ba50a61b3f1bd98529cc20d0bf43ecc45b0953abb7ad450f8ec1bc2b227f"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep021-vocab-007",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 107,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "treasure",
+        "zh": "宝物 vt.珍视,珍惜"
+      },
+      "payload": {
+        "term": "treasure",
+        "ipa": "ˈtreʒə(r)",
+        "pos": "n.",
+        "def": "n.[U]珠宝,财富 [C]宝物 vt.珍视,珍惜",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "021 妖怪的朋友 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "945a8ec460e0d60f906a7234ca722512f09e840a90808aa08ed2935543f58a69"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep021-vocab-008",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 108,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "hope",
+        "zh": "希望,期望"
+      },
+      "payload": {
+        "term": "hope",
+        "ipa": "həʊp",
+        "pos": "v.",
+        "def": "v./n.[C,U]希望,期望",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "021 妖怪的朋友 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "945a8ec460e0d60f906a7234ca722512f09e840a90808aa08ed2935543f58a69"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep021-vocab-009",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 109,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "live[lɪv] [laɪv]",
+        "zh": "v.居住,生活 adj.活的,生动的,现场直播的"
+      },
+      "payload": {
+        "term": "live[lɪv] [laɪv]",
+        "ipa": "",
+        "pos": "v.",
+        "def": "v.居住,生活 adj.活的,生动的,现场直播的",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "021 妖怪的朋友 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "945a8ec460e0d60f906a7234ca722512f09e840a90808aa08ed2935543f58a69"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep021-vocab-010",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 110,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "magic",
+        "zh": "魔术;魔法,魔力,魅力"
+      },
+      "payload": {
+        "term": "magic",
+        "ipa": "ˈmædʒɪk",
+        "pos": "adj.",
+        "def": "adj.有魔力的,有神奇力量的 n.[U]魔术;魔法,魔力,魅力",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "021 妖怪的朋友 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "945a8ec460e0d60f906a7234ca722512f09e840a90808aa08ed2935543f58a69"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep021-vocab-011",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 111,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "dress",
+        "zh": "服装"
+      },
+      "payload": {
+        "term": "dress",
+        "ipa": "dres",
+        "pos": "v.",
+        "def": "v.穿衣服 n.[C]连衣裙[U]服装",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "021 妖怪的朋友 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "945a8ec460e0d60f906a7234ca722512f09e840a90808aa08ed2935543f58a69"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep021-vocab-012",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 112,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "eye",
+        "zh": "眼睛"
+      },
+      "payload": {
+        "term": "eye",
+        "ipa": "aɪ",
+        "pos": "n.",
+        "def": "n.[C]眼睛",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "021 妖怪的朋友 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "945a8ec460e0d60f906a7234ca722512f09e840a90808aa08ed2935543f58a69"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep021-vocab-013",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 113,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "idea",
+        "zh": "想法,主意"
+      },
+      "payload": {
+        "term": "idea",
+        "ipa": "aɪˈdɪə",
+        "pos": "n.",
+        "def": "n.[C]想法,主意",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "021 妖怪的朋友 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "945a8ec460e0d60f906a7234ca722512f09e840a90808aa08ed2935543f58a69"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep021-vocab-014",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 114,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "knock",
+        "zh": "敲击声,敲击"
+      },
+      "payload": {
+        "term": "knock",
+        "ipa": "nɒk",
+        "pos": "v.",
+        "def": "v.敲,击,撞 n.[C]敲击声,敲击",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "021 妖怪的朋友 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "945a8ec460e0d60f906a7234ca722512f09e840a90808aa08ed2935543f58a69"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep021-vocab-015",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 115,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "fly",
+        "zh": "苍蝇"
+      },
+      "payload": {
+        "term": "fly",
+        "ipa": "flaɪ",
+        "pos": "v.",
+        "def": "v.飞,驾驶(飞机等);乘飞机, (旗)飘扬 n.[C]苍蝇",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "021 妖怪的朋友 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "945a8ec460e0d60f906a7234ca722512f09e840a90808aa08ed2935543f58a69"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep021-vocab-016",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 116,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "open",
+        "zh": "户外,公开"
+      },
+      "payload": {
+        "term": "open",
+        "ipa": "ˈəʊpən",
+        "pos": "v.",
+        "def": "v.开,打开,开业 adj.敞开的,开阔的 n.[sing.]户外,公开",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "021 妖怪的朋友 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "945a8ec460e0d60f906a7234ca722512f09e840a90808aa08ed2935543f58a69"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep021-vocab-017",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 117,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "still",
+        "zh": "adv.还,仍然 adj.静止的"
+      },
+      "payload": {
+        "term": "still",
+        "ipa": "stɪl",
+        "pos": "adv.",
+        "def": "adv.还,仍然 adj.静止的",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "021 妖怪的朋友 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "945a8ec460e0d60f906a7234ca722512f09e840a90808aa08ed2935543f58a69"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep021-vocab-018",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 118,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "little",
+        "zh": "小的"
+      },
+      "payload": {
+        "term": "little",
+        "ipa": "ˈlɪtl",
+        "pos": "adj.",
+        "def": "小的",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ],
+        "gloss": "小的"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "021 妖怪的朋友 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "945a8ec460e0d60f906a7234ca722512f09e840a90808aa08ed2935543f58a69"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep021-vocab-019",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 119,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "monkey",
+        "zh": "猴子"
+      },
+      "payload": {
+        "term": "monkey",
+        "ipa": "ˈmʌŋki",
+        "pos": "n.",
+        "def": "n.[C]猴子",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "021 妖怪的朋友 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "945a8ec460e0d60f906a7234ca722512f09e840a90808aa08ed2935543f58a69"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep021-vocab-020",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 120,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "shout",
+        "zh": "呼喊,叫喊"
+      },
+      "payload": {
+        "term": "shout",
+        "ipa": "ʃaʊt",
+        "pos": "v.",
+        "def": "v.呼叫,喊叫 n.[C]呼喊,叫喊",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "021 妖怪的朋友 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "945a8ec460e0d60f906a7234ca722512f09e840a90808aa08ed2935543f58a69"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep021-vocab-021",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 121,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "smile",
+        "zh": "笑,微笑"
+      },
+      "payload": {
+        "term": "smile",
+        "ipa": "smaɪ",
+        "pos": "vi.",
+        "def": "vi./n.[C]笑,微笑",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "021 妖怪的朋友 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "945a8ec460e0d60f906a7234ca722512f09e840a90808aa08ed2935543f58a69"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep021-vocab-022",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 122,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "spirit",
+        "zh": "精神"
+      },
+      "payload": {
+        "term": "spirit",
+        "ipa": "ˈspɪrɪt",
+        "pos": "n.",
+        "def": "精神",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ],
+        "gloss": "精神"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "021 妖怪的朋友 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "945a8ec460e0d60f906a7234ca722512f09e840a90808aa08ed2935543f58a69"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep021-vocab-023",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 123,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "around",
+        "zh": "adv.在周围,大约,四处,掉头 prep.在......周围,到处"
+      },
+      "payload": {
+        "term": "around",
+        "ipa": "əˈraʊnd",
+        "pos": "adv.",
+        "def": "adv.在周围,大约,四处,掉头 prep.在......周围,到处",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "021 妖怪的朋友 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "945a8ec460e0d60f906a7234ca722512f09e840a90808aa08ed2935543f58a69"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep021-vocab-024",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 124,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "guess",
+        "zh": "猜测"
+      },
+      "payload": {
+        "term": "guess",
+        "ipa": "ɡes",
+        "pos": "v.",
+        "def": "v.猜测,估计,猜到 n.[C]猜测",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "021 妖怪的朋友 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "945a8ec460e0d60f906a7234ca722512f09e840a90808aa08ed2935543f58a69"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep021-vocab-025",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 125,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "go",
+        "zh": "vi.去,走 v.link.变成,变得"
+      },
+      "payload": {
+        "term": "go",
+        "ipa": "ɡəʊ",
+        "pos": "vi.",
+        "def": "vi.去,走 v.link.变成,变得",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "021 妖怪的朋友 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "945a8ec460e0d60f906a7234ca722512f09e840a90808aa08ed2935543f58a69"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep021-vocab-026",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 126,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "shoulder",
+        "zh": "肩,肩膀"
+      },
+      "payload": {
+        "term": "shoulder",
+        "ipa": "ˈʃəʊldə(r)",
+        "pos": "n.",
+        "def": "n.[C]肩,肩膀",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "021 妖怪的朋友 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "945a8ec460e0d60f906a7234ca722512f09e840a90808aa08ed2935543f58a69"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep021-vocab-027",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 127,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "good",
+        "zh": "好处,利益,善行"
+      },
+      "payload": {
+        "term": "good",
+        "ipa": "gʊd",
+        "pos": "adj.",
+        "def": "adj.好的,擅长的,有好处的 n.[U]好处,利益,善行",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "021 妖怪的朋友 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "945a8ec460e0d60f906a7234ca722512f09e840a90808aa08ed2935543f58a69"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep021-vocab-028",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 128,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "be",
+        "zh": "v.-link是,存在 aux v.构成被动语态或进行时态"
+      },
+      "payload": {
+        "term": "be",
+        "ipa": "biː",
+        "pos": "v.",
+        "def": "v.-link是,存在 aux v.构成被动语态或进行时态",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "021 妖怪的朋友 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "945a8ec460e0d60f906a7234ca722512f09e840a90808aa08ed2935543f58a69"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep021-vocab-029",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 129,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "well",
+        "zh": "水井"
+      },
+      "payload": {
+        "term": "well",
+        "ipa": "wel",
+        "pos": "adj.",
+        "def": "adj.健康 adv.好,令人满意地 interj.嗯,好吧 n.[C]水井",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "021 妖怪的朋友 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "945a8ec460e0d60f906a7234ca722512f09e840a90808aa08ed2935543f58a69"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep021-vocab-030",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 130,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "gift",
+        "zh": "礼物,赠品;天赋 vt.捐赠"
+      },
+      "payload": {
+        "term": "gift",
+        "ipa": "ɡɪft",
+        "pos": "n.",
+        "def": "n.[C]礼物,赠品;天赋 vt.捐赠",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "021 妖怪的朋友 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "945a8ec460e0d60f906a7234ca722512f09e840a90808aa08ed2935543f58a69"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep021-vocab-031",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 131,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "celebrate",
+        "zh": "v.庆祝,庆贺"
+      },
+      "payload": {
+        "term": "celebrate",
+        "ipa": "ˈselɪbreɪt",
+        "pos": "v.",
+        "def": "v.庆祝,庆贺",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "021 妖怪的朋友 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "945a8ec460e0d60f906a7234ca722512f09e840a90808aa08ed2935543f58a69"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep021-vocab-032",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 132,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "king",
+        "zh": "君主,国王"
+      },
+      "payload": {
+        "term": "king",
+        "ipa": "kɪŋ",
+        "pos": "n.",
+        "def": "n.[C]君主,国王",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "021 妖怪的朋友 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "945a8ec460e0d60f906a7234ca722512f09e840a90808aa08ed2935543f58a69"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep021-vocab-033",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 133,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "interest",
+        "zh": "趣味;利息 vt.使感兴趣,使关注"
+      },
+      "payload": {
+        "term": "interest",
+        "ipa": "ˈɪntrəst",
+        "pos": "n.",
+        "def": "n.兴趣,关注[U]趣味;利息 vt.使感兴趣,使关注",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "021 妖怪的朋友 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "945a8ec460e0d60f906a7234ca722512f09e840a90808aa08ed2935543f58a69"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep021-vocab-034",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 134,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "special",
+        "zh": "特色菜,特价商品"
+      },
+      "payload": {
+        "term": "special",
+        "ipa": "ˈspeʃəl",
+        "pos": "adj.",
+        "def": "adj.特别的,特殊的 n.[C]特色菜,特价商品",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "021 妖怪的朋友 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "945a8ec460e0d60f906a7234ca722512f09e840a90808aa08ed2935543f58a69"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep021-vocab-035",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 135,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "forever",
+        "zh": "adv.永远"
+      },
+      "payload": {
+        "term": "forever",
+        "ipa": "fərˈevə(r)",
+        "pos": "adv.",
+        "def": "adv.永远",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "021 妖怪的朋友 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "945a8ec460e0d60f906a7234ca722512f09e840a90808aa08ed2935543f58a69"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep021-vocab-036",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 136,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "think",
+        "zh": "v.认为,想。思考"
+      },
+      "payload": {
+        "term": "think",
+        "ipa": "θɪŋk",
+        "pos": "v.",
+        "def": "v.认为,想。思考",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "021 妖怪的朋友 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "945a8ec460e0d60f906a7234ca722512f09e840a90808aa08ed2935543f58a69"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep021-vocab-037",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 137,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "bear",
+        "zh": "熊 vt.承受,忍受"
+      },
+      "payload": {
+        "term": "bear",
+        "ipa": "beə(r)",
+        "pos": "n.",
+        "def": "n.[C]熊 vt.承受,忍受",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "021 妖怪的朋友 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "945a8ec460e0d60f906a7234ca722512f09e840a90808aa08ed2935543f58a69"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep021-vocab-038",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 138,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "pick",
+        "zh": "采,摘,选择,挑选,拿取"
+      },
+      "payload": {
+        "term": "pick",
+        "ipa": "pɪk",
+        "pos": "vt.",
+        "def": "采,摘,选择,挑选,拿取",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ],
+        "gloss": "采,摘,选择,挑选,拿取"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "021 妖怪的朋友 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "945a8ec460e0d60f906a7234ca722512f09e840a90808aa08ed2935543f58a69"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep021-vocab-039",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 139,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "mouth",
+        "zh": "口,口腔,嘴"
+      },
+      "payload": {
+        "term": "mouth",
+        "ipa": "maʊθ",
+        "pos": "n.",
+        "def": "n.[C]口,口腔,嘴",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          4
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "021 妖怪的朋友 下.pdf",
+          "half": "down",
+          "pages": [
+            4
+          ],
+          "sha256": "945a8ec460e0d60f906a7234ca722512f09e840a90808aa08ed2935543f58a69"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep021-vocab-040",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 140,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "just",
+        "zh": "adv.只是,恰好"
+      },
+      "payload": {
+        "term": "just",
+        "ipa": "dʒʌst",
+        "pos": "adv.",
+        "def": "adv.只是,恰好",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          4
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "021 妖怪的朋友 下.pdf",
+          "half": "down",
+          "pages": [
+            4
+          ],
+          "sha256": "945a8ec460e0d60f906a7234ca722512f09e840a90808aa08ed2935543f58a69"
+        }
+      ],
+      "review_status": "machine_verified"
+    }
+  ],
+  "teacher_guide": null,
+  "review": {
+    "status": "draft",
+    "reviewed_at": null,
+    "card_stats": {
+      "total": 45,
+      "sentence_choice": 5,
+      "word_review": 40,
+      "machine_verified": 43,
+      "assistant_reviewed": 2,
+      "verified": 45,
+      "needs_review": 0
+    }
+  },
+  "generated_at": "2026-08-31T04:49:37.272896+00:00"
+}

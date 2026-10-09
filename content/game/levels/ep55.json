@@ -1,0 +1,584 @@
+{
+ "schema_version": 1,
+ "ep": 55,
+ "title": {
+  "en": "The Monks and the Cart",
+  "zh": "西游记 第55集"
+ },
+ "collection": "c08",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "tigerimmortal",
+   "nameZh": "虎力大仙",
+   "mode": "sparring",
+   "sprite": "tigerimmortal"
+  },
+  "minors": [
+   {
+    "id": "imp",
+    "nameZh": "小妖",
+    "sprite": "imp"
+   }
+  ]
+ },
+ "background": {
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep55/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "\"Everybody, wake up!\" called Wukong.",
+   "textZh": "\"所有人,醒醒!\"悟空喊道。",
+   "illustration": "assets/adv_frames/ep55/f1.jpg",
+   "sourceNodeId": "n001",
+   "audioRef": "sent_en:\"Everybody, wake up!\" called Wukong."
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "The travelers had camped for a night in the woods.",
+   "textZh": "这些旅人曾在林中露营过一夜。",
+   "illustration": "assets/adv_frames/ep55/f2.jpg",
+   "sourceNodeId": "n002",
+   "audioRef": "sent_en:The travelers had camped for a night in the woods."
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "cart",
+   "zh": "小车,手推车",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep55/f1.jpg"
+  },
+  {
+   "term": "camp",
+   "zh": "1. 扎营,露营,(2. 野营,营地)",
+   "ipa": "kæmp",
+   "illustration": "assets/adv_frames/ep55/f1.jpg"
+  },
+  {
+   "term": "stretch",
+   "zh": "伸展,伸出(手臂、头、身子等)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep55/f3.jpg"
+  },
+  {
+   "term": "yawn",
+   "zh": "1. 哈欠,(2. 打哈欠)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep55/f0.jpg"
+  },
+  {
+   "term": "noble",
+   "zh": "1. 高尚的,崇高的,(2. 优秀的,杰出的,3. 贵族的)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep55/f3.jpg"
+  },
+  {
+   "term": "mission",
+   "zh": "使命,任务",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep55/f3.jpg"
+  },
+  {
+   "term": "investigate",
+   "zh": "调查(事件,犯罪等)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep55/f3.jpg"
+  },
+  {
+   "term": "steep",
+   "zh": "陡峭的,险峻的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep55/f1.jpg"
+  },
+  {
+   "term": "load",
+   "zh": "1. 装货,装载,(2. 货物,装载物)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep55/f2.jpg"
+  },
+  {
+   "term": "ripped",
+   "zh": "破裂的,被撕破的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep55/f0.jpg"
+  },
+  {
+   "term": "miserable",
+   "zh": "悲惨的,不幸的,痛苦的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep55/f3.jpg"
+  },
+  {
+   "term": "fine",
+   "zh": "优秀的,杰出的,不错的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep55/f2.jpg"
+  }
+ ],
+ "wordPool": [
+  {
+   "term": "cart",
+   "zh": "小车,手推车",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep55/f1.jpg"
+  },
+  {
+   "term": "camp",
+   "zh": "1. 扎营,露营,(2. 野营,营地)",
+   "ipa": "kæmp",
+   "illustration": "assets/adv_frames/ep55/f1.jpg"
+  },
+  {
+   "term": "stretch",
+   "zh": "伸展,伸出(手臂、头、身子等)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep55/f3.jpg"
+  },
+  {
+   "term": "yawn",
+   "zh": "1. 哈欠,(2. 打哈欠)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep55/f0.jpg"
+  },
+  {
+   "term": "noble",
+   "zh": "1. 高尚的,崇高的,(2. 优秀的,杰出的,3. 贵族的)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep55/f3.jpg"
+  },
+  {
+   "term": "mission",
+   "zh": "使命,任务",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep55/f3.jpg"
+  },
+  {
+   "term": "investigate",
+   "zh": "调查(事件,犯罪等)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep55/f3.jpg"
+  },
+  {
+   "term": "steep",
+   "zh": "陡峭的,险峻的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep55/f1.jpg"
+  },
+  {
+   "term": "load",
+   "zh": "1. 装货,装载,(2. 货物,装载物)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep55/f2.jpg"
+  },
+  {
+   "term": "ripped",
+   "zh": "破裂的,被撕破的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep55/f0.jpg"
+  },
+  {
+   "term": "miserable",
+   "zh": "悲惨的,不幸的,痛苦的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep55/f3.jpg"
+  },
+  {
+   "term": "fine",
+   "zh": "优秀的,杰出的,不错的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep55/f2.jpg"
+  },
+  {
+   "term": "priest",
+   "zh": "神职人员(神父、牧师、僧侣等)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep55/f1.jpg"
+  },
+  {
+   "term": "struggle",
+   "zh": "1. 努力,(2. 挣扎,搏斗)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep55/f1.jpg"
+  },
+  {
+   "term": "discover",
+   "zh": "发现,发觉",
+   "ipa": "dɪˈskʌvə(r)",
+   "illustration": "assets/adv_frames/ep55/f2.jpg"
+  },
+  {
+   "term": "in charge",
+   "zh": "负责",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep55/f1.jpg"
+  },
+  {
+   "term": "religion",
+   "zh": "宗教",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep55/f2.jpg"
+  },
+  {
+   "term": "get along",
+   "zh": "相处友善,关系良好",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep55/f2.jpg"
+  },
+  {
+   "term": "kingdom",
+   "zh": "王国",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep55/f3.jpg"
+  },
+  {
+   "term": "treat",
+   "zh": "1. 对待,把...看做,(2. (饼干、糖果等)点心,小礼物)",
+   "ipa": "triːt",
+   "illustration": "assets/adv_frames/ep55/f2.jpg"
+  },
+  {
+   "term": "horribly",
+   "zh": "可怕地,厉害的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep55/f0.jpg"
+  },
+  {
+   "term": "badly",
+   "zh": "1. 坏地,(2. 极度地,严重地)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep55/f1.jpg"
+  },
+  {
+   "term": "drought",
+   "zh": "干旱",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep55/f2.jpg"
+  },
+  {
+   "term": "crop",
+   "zh": "作物,庄稼",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep55/f3.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "cart",
+     "zh": "小车,手推车",
+     "sprite": "imp"
+    },
+    {
+     "term": "camp",
+     "zh": "1. 扎营,露营,(2. 野营,营地)",
+     "sprite": "imp"
+    },
+    {
+     "term": "stretch",
+     "zh": "伸展,伸出(手臂、头、身子等)",
+     "sprite": "imp"
+    },
+    {
+     "term": "yawn",
+     "zh": "1. 哈欠,(2. 打哈欠)",
+     "sprite": "imp"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "noble",
+     "zh": "1. 高尚的,崇高的,(2. 优秀的,杰出的,3. 贵族的)",
+     "sprite": "imp"
+    },
+    {
+     "term": "mission",
+     "zh": "使命,任务",
+     "sprite": "imp"
+    },
+    {
+     "term": "investigate",
+     "zh": "调查(事件,犯罪等)",
+     "sprite": "imp"
+    },
+    {
+     "term": "steep",
+     "zh": "陡峭的,险峻的",
+     "sprite": "imp"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "load",
+    "zh": "1. 装货,装载,(2. 货物,装载物)"
+   },
+   {
+    "term": "ripped",
+    "zh": "破裂的,被撕破的"
+   },
+   {
+    "term": "miserable",
+    "zh": "悲惨的,不幸的,痛苦的"
+   },
+   {
+    "term": "fine",
+    "zh": "优秀的,杰出的,不错的"
+   }
+  ],
+  "taunts": [
+   "tigerimmortal.1",
+   "tigerimmortal.2",
+   "tigerimmortal.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=55",
+ "npcDialogue": {
+  "intro": {
+   "id": "ep55-map-intro",
+   "lines": [
+    {
+     "id": "ep55-map-intro-1",
+     "sourceNodeId": "n001",
+     "speaker": "narrator",
+     "textEn": "\"Everybody, wake up!\" called Wukong.",
+     "textZh": "\"所有人,醒醒!\"悟空喊道。",
+     "audioRef": "sent_en:\"Everybody, wake up!\" called Wukong.",
+     "audioStart": 11.0,
+     "audioEnd": 21.241
+    },
+    {
+     "id": "ep55-map-intro-2",
+     "sourceNodeId": "n002",
+     "speaker": "narrator",
+     "textEn": "The travelers had camped for a night in the woods.",
+     "textZh": "这些旅人曾在林中露营过一夜。",
+     "audioRef": "sent_en:The travelers had camped for a night in the woods.",
+     "audioStart": 21.242,
+     "audioEnd": 25.134
+    }
+   ]
+  },
+  "quiz": {
+   "id": "ep55-map-quiz",
+   "lines": [
+    {
+     "id": "ep55-map-quiz-1",
+     "sourceNodeId": "n058",
+     "speaker": "narrator",
+     "textEn": "Wukong smiled. \"I've heard of Sun Wukong. And it's true that he's very powerful. Did Venus tell you what he looks like?\"",
+     "textZh": "悟空 smiled。\"我听说过孙悟空。他确实非常强大。太白金星是否告诉过你他长什么样?\"",
+     "audioRef": "sent_en:Wukong smiled. \"I've heard of Sun Wukong. And it's true that he's very powerful. Did Venus tell you what he looks like?\"",
+     "audioStart": 273.046,
+     "audioEnd": 283.123
+    }
+   ],
+   "question": {
+    "id": "ep055-official-quiz-001",
+    "textEn": "which is true?",
+    "textZh": "哪一个是真的？"
+   },
+   "word": {
+    "term": "cart",
+    "zh": "小车,手推车",
+    "ipa": ""
+   },
+   "options": [
+    {
+     "id": "a",
+     "textEn": "the daoists were in charge.",
+     "textZh": "道教徒负责。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    },
+    {
+     "id": "b",
+     "textEn": "the buddhists caused a drought.",
+     "textZh": "佛教徒引起了干旱。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    },
+    {
+     "id": "c",
+     "textEn": "venus saved the buddhists.",
+     "textZh": "金星拯救了佛教徒。",
+     "correct": true,
+     "feedback": "对了。金星拯救了佛教徒。"
+    }
+   ],
+   "lessonCardId": "ep055-official-quiz-001"
+  }
+ },
+ "map": {
+  "theme": "generic",
+  "coordinateSpace": "world-normalized",
+  "worldTiles": 2,
+  "regions": {
+   "hero": 0,
+   "waves": [
+    0,
+    1
+   ],
+   "npc": {
+    "intro": 0,
+    "quiz": 1
+   },
+   "boss": 3
+  },
+  "walkable": {
+   "space": "world",
+   "x": 0.0,
+   "y": 0.16,
+   "w": 1.0,
+   "h": 0.79,
+   "rects": [
+    {
+     "x": 0.0,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.66,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    }
+   ]
+  },
+  "heroSpawn": {
+   "x": 0.06,
+   "y": 0.31
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.31,
+    "y": 0.23
+   },
+   {
+    "x": 0.38,
+    "y": 0.27
+   },
+   {
+    "x": 0.34,
+    "y": 0.33
+   },
+   {
+    "x": 0.41,
+    "y": 0.24
+   }
+  ],
+  "waveSpawns": [
+   [
+    {
+     "x": 0.31,
+     "y": 0.23
+    },
+    {
+     "x": 0.38,
+     "y": 0.27
+    },
+    {
+     "x": 0.34,
+     "y": 0.33
+    },
+    {
+     "x": 0.41,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.81,
+     "y": 0.23
+    },
+    {
+     "x": 0.88,
+     "y": 0.27
+    },
+    {
+     "x": 0.84,
+     "y": 0.33
+    },
+    {
+     "x": 0.91,
+     "y": 0.24
+    }
+   ]
+  ],
+  "orbSpawns": [
+   [
+    {
+     "x": 0.11,
+     "y": 0.25
+    },
+    {
+     "x": 0.16,
+     "y": 0.31
+    },
+    {
+     "x": 0.12,
+     "y": 0.37
+    },
+    {
+     "x": 0.18,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.61,
+     "y": 0.25
+    },
+    {
+     "x": 0.66,
+     "y": 0.31
+    },
+    {
+     "x": 0.62,
+     "y": 0.37
+    },
+    {
+     "x": 0.68,
+     "y": 0.24
+    }
+   ]
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "imp",
+    "nameZh": "小妖",
+    "x": 0.08,
+    "y": 0.26
+   },
+   {
+    "role": "quiz",
+    "sprite": "imp",
+    "nameZh": "小妖",
+    "x": 0.7,
+    "y": 0.39
+   }
+  ],
+  "bossSpot": {
+   "x": 0.94,
+   "y": 0.85
+  }
+ }
+}

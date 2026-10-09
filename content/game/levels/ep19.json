@@ -1,0 +1,584 @@
+{
+ "schema_version": 1,
+ "ep": 19,
+ "title": {
+  "en": "An Evil Plan",
+  "zh": "西游记 第19集"
+ },
+ "collection": "c03",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "imp",
+   "nameZh": "小妖",
+   "mode": "sparring",
+   "sprite": "imp"
+  },
+  "minors": [
+   {
+    "id": "imp",
+    "nameZh": "小妖",
+    "sprite": "imp"
+   }
+  ]
+ },
+ "background": {
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep19/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "The head priest called for two other priests, who quickly ran into the room.",
+   "textZh": "主祭司召来了另外两名祭司,他们迅速跑进房间。",
+   "illustration": "assets/adv_frames/ep19/f1.jpg",
+   "sourceNodeId": "n001",
+   "audioRef": "sent_en:The head priest called for two other priests, who quickly ran into the room."
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "\"Is everything okay, Master?\" one priest asked.",
+   "textZh": "\"大师,一切安好吗?\"一位神父问道。",
+   "illustration": "assets/adv_frames/ep19/f2.jpg",
+   "sourceNodeId": "n002",
+   "audioRef": "sent_en:\"Is everything okay, Master?\" one priest asked."
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "evil",
+   "zh": "邪恶的,坏的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep19/f1.jpg"
+  },
+  {
+   "term": "head",
+   "zh": "1. 首脑的,为首的,(2. 头)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep19/f1.jpg"
+  },
+  {
+   "term": "priest",
+   "zh": "神职人员(神父、牧师、僧侣等)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep19/f1.jpg"
+  },
+  {
+   "term": "paradise",
+   "zh": "天堂,乐园",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep19/f2.jpg"
+  },
+  {
+   "term": "meditate",
+   "zh": "冥想,沉思",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep19/f3.jpg"
+  },
+  {
+   "term": "rooftop",
+   "zh": "屋顶",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep19/f3.jpg"
+  },
+  {
+   "term": "footstep",
+   "zh": "1. 走路的声音,(2. 脚印)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep19/f1.jpg"
+  },
+  {
+   "term": "courtyard",
+   "zh": "庭院,天井(建筑或墙围成的空间)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep19/f0.jpg"
+  },
+  {
+   "term": "firewood",
+   "zh": "木柴,柴火",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep19/f1.jpg"
+  },
+  {
+   "term": "stack",
+   "zh": "堆,堆放,堆叠",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep19/f0.jpg"
+  },
+  {
+   "term": "lit",
+   "zh": "点着 (light-lit/lighted)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep19/f3.jpg"
+  },
+  {
+   "term": "flame",
+   "zh": "火焰,火舌",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep19/f2.jpg"
+  }
+ ],
+ "wordPool": [
+  {
+   "term": "evil",
+   "zh": "邪恶的,坏的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep19/f1.jpg"
+  },
+  {
+   "term": "head",
+   "zh": "1. 首脑的,为首的,(2. 头)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep19/f1.jpg"
+  },
+  {
+   "term": "priest",
+   "zh": "神职人员(神父、牧师、僧侣等)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep19/f1.jpg"
+  },
+  {
+   "term": "paradise",
+   "zh": "天堂,乐园",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep19/f2.jpg"
+  },
+  {
+   "term": "meditate",
+   "zh": "冥想,沉思",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep19/f3.jpg"
+  },
+  {
+   "term": "rooftop",
+   "zh": "屋顶",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep19/f3.jpg"
+  },
+  {
+   "term": "footstep",
+   "zh": "1. 走路的声音,(2. 脚印)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep19/f1.jpg"
+  },
+  {
+   "term": "courtyard",
+   "zh": "庭院,天井(建筑或墙围成的空间)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep19/f0.jpg"
+  },
+  {
+   "term": "firewood",
+   "zh": "木柴,柴火",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep19/f1.jpg"
+  },
+  {
+   "term": "stack",
+   "zh": "堆,堆放,堆叠",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep19/f0.jpg"
+  },
+  {
+   "term": "lit",
+   "zh": "点着 (light-lit/lighted)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep19/f3.jpg"
+  },
+  {
+   "term": "flame",
+   "zh": "火焰,火舌",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep19/f2.jpg"
+  },
+  {
+   "term": "crumble",
+   "zh": "破碎,摧毁",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep19/f0.jpg"
+  },
+  {
+   "term": "cave in",
+   "zh": "(建筑物、洞穴等)塌落",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep19/f0.jpg"
+  },
+  {
+   "term": "run for one's",
+   "zh": "逃命",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep19/f1.jpg"
+  },
+  {
+   "term": "peacefully",
+   "zh": "平静地,温和地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep19/f0.jpg"
+  },
+  {
+   "term": "burn",
+   "zh": "(房舍)完全烧毁",
+   "ipa": "bɜː(r)n",
+   "illustration": "assets/adv_frames/ep19/f0.jpg"
+  },
+  {
+   "term": "drift",
+   "zh": "(随着水,空气等)漂移,漂流",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep19/f3.jpg"
+  },
+  {
+   "term": "in",
+   "zh": "成堆地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep19/f0.jpg"
+  },
+  {
+   "term": "spread",
+   "zh": "传开,蔓延",
+   "ipa": "spred",
+   "illustration": "assets/adv_frames/ep19/f0.jpg"
+  },
+  {
+   "term": "else",
+   "zh": "其它地,另外",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep19/f0.jpg"
+  },
+  {
+   "term": "deserve",
+   "zh": "应得,该得",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep19/f1.jpg"
+  },
+  {
+   "term": "villain",
+   "zh": "坏人,恶棍",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep19/f0.jpg"
+  },
+  {
+   "term": "club",
+   "zh": "1. 用棍棒打,(2. 社团,3. 棍棒)",
+   "ipa": "klʌb",
+   "illustration": "assets/adv_frames/ep19/f0.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "evil",
+     "zh": "邪恶的,坏的",
+     "sprite": "imp"
+    },
+    {
+     "term": "head",
+     "zh": "1. 首脑的,为首的,(2. 头)",
+     "sprite": "imp"
+    },
+    {
+     "term": "priest",
+     "zh": "神职人员(神父、牧师、僧侣等)",
+     "sprite": "imp"
+    },
+    {
+     "term": "paradise",
+     "zh": "天堂,乐园",
+     "sprite": "imp"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "meditate",
+     "zh": "冥想,沉思",
+     "sprite": "imp"
+    },
+    {
+     "term": "rooftop",
+     "zh": "屋顶",
+     "sprite": "imp"
+    },
+    {
+     "term": "footstep",
+     "zh": "1. 走路的声音,(2. 脚印)",
+     "sprite": "imp"
+    },
+    {
+     "term": "courtyard",
+     "zh": "庭院,天井(建筑或墙围成的空间)",
+     "sprite": "imp"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "firewood",
+    "zh": "木柴,柴火"
+   },
+   {
+    "term": "stack",
+    "zh": "堆,堆放,堆叠"
+   },
+   {
+    "term": "lit",
+    "zh": "点着 (light-lit/lighted)"
+   },
+   {
+    "term": "flame",
+    "zh": "火焰,火舌"
+   }
+  ],
+  "taunts": [
+   "imp.1",
+   "imp.2",
+   "imp.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=19",
+ "npcDialogue": {
+  "intro": {
+   "id": "ep19-map-intro",
+   "lines": [
+    {
+     "id": "ep19-map-intro-1",
+     "sourceNodeId": "n001",
+     "speaker": "narrator",
+     "textEn": "The head priest called for two other priests, who quickly ran into the room.",
+     "textZh": "主祭司召来了另外两名祭司,他们迅速跑进房间。",
+     "audioRef": "sent_en:The head priest called for two other priests, who quickly ran into the room.",
+     "audioStart": 11.0,
+     "audioEnd": 20.063
+    },
+    {
+     "id": "ep19-map-intro-2",
+     "sourceNodeId": "n002",
+     "speaker": "narrator",
+     "textEn": "\"Is everything okay, Master?\" one priest asked.",
+     "textZh": "\"大师,一切安好吗?\"一位神父问道。",
+     "audioRef": "sent_en:\"Is everything okay, Master?\" one priest asked.",
+     "audioStart": 20.064,
+     "audioEnd": 24.002
+    }
+   ]
+  },
+  "quiz": {
+   "id": "ep19-map-quiz",
+   "lines": [
+    {
+     "id": "ep19-map-quiz-1",
+     "sourceNodeId": "n018",
+     "speaker": "narrator",
+     "textEn": "\"I'll bet that head priest wants to keep our robe. He's planning to kill us.\"",
+     "textZh": "\"我敢打赌,那位首席祭司想保留我们的法袍。他打算杀了我们。\"",
+     "audioRef": "sent_en:\"I'll bet that head priest wants to keep our robe. He's planning to kill us.\"",
+     "audioStart": 90.054,
+     "audioEnd": 95.486
+    }
+   ],
+   "question": {
+    "id": "ep019-official-quiz-001",
+    "textEn": "which is true?",
+    "textZh": "哪一个是真的？"
+   },
+   "word": {
+    "term": "evil",
+    "zh": "邪恶的,坏的",
+    "ipa": ""
+   },
+   "options": [
+    {
+     "id": "a",
+     "textEn": "the head priest wanted to keep the robe.",
+     "textZh": "首席祭司想要保留那件长袍。",
+     "correct": true,
+     "feedback": "对了。首席祭司想要保留那件长袍。"
+    },
+    {
+     "id": "b",
+     "textEn": "wukong tried to put out the fire.",
+     "textZh": "悟空试图扑灭火焰。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    },
+    {
+     "id": "c",
+     "textEn": "the tang monk was happy about the fire.",
+     "textZh": "唐僧对火感到高兴。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    }
+   ],
+   "lessonCardId": "ep019-official-quiz-001"
+  }
+ },
+ "map": {
+  "theme": "generic",
+  "coordinateSpace": "world-normalized",
+  "worldTiles": 2,
+  "regions": {
+   "hero": 0,
+   "waves": [
+    0,
+    1
+   ],
+   "npc": {
+    "intro": 0,
+    "quiz": 1
+   },
+   "boss": 3
+  },
+  "walkable": {
+   "space": "world",
+   "x": 0.0,
+   "y": 0.16,
+   "w": 1.0,
+   "h": 0.79,
+   "rects": [
+    {
+     "x": 0.0,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.66,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    }
+   ]
+  },
+  "heroSpawn": {
+   "x": 0.06,
+   "y": 0.31
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.31,
+    "y": 0.23
+   },
+   {
+    "x": 0.38,
+    "y": 0.27
+   },
+   {
+    "x": 0.34,
+    "y": 0.33
+   },
+   {
+    "x": 0.41,
+    "y": 0.24
+   }
+  ],
+  "waveSpawns": [
+   [
+    {
+     "x": 0.31,
+     "y": 0.23
+    },
+    {
+     "x": 0.38,
+     "y": 0.27
+    },
+    {
+     "x": 0.34,
+     "y": 0.33
+    },
+    {
+     "x": 0.41,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.81,
+     "y": 0.23
+    },
+    {
+     "x": 0.88,
+     "y": 0.27
+    },
+    {
+     "x": 0.84,
+     "y": 0.33
+    },
+    {
+     "x": 0.91,
+     "y": 0.24
+    }
+   ]
+  ],
+  "orbSpawns": [
+   [
+    {
+     "x": 0.11,
+     "y": 0.25
+    },
+    {
+     "x": 0.16,
+     "y": 0.31
+    },
+    {
+     "x": 0.12,
+     "y": 0.37
+    },
+    {
+     "x": 0.18,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.61,
+     "y": 0.25
+    },
+    {
+     "x": 0.66,
+     "y": 0.31
+    },
+    {
+     "x": 0.62,
+     "y": 0.37
+    },
+    {
+     "x": 0.68,
+     "y": 0.24
+    }
+   ]
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "temple-novice",
+    "nameZh": "小沙弥",
+    "x": 0.08,
+    "y": 0.26
+   },
+   {
+    "role": "quiz",
+    "sprite": "jinchi",
+    "nameZh": "金池长老",
+    "x": 0.7,
+    "y": 0.39
+   }
+  ],
+  "bossSpot": {
+   "x": 0.94,
+   "y": 0.85
+  }
+ }
+}

@@ -1,0 +1,584 @@
+{
+ "schema_version": 1,
+ "ep": 8,
+ "title": {
+  "en": "A Job in Heaven",
+  "zh": "西游记 第8集"
+ },
+ "collection": "c02",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "jadeemperor",
+   "nameZh": "玉皇大帝",
+   "mode": "sparring",
+   "sprite": "jadeemperor"
+  },
+  "minors": [
+   {
+    "id": "imp",
+    "nameZh": "小妖",
+    "sprite": "imp"
+   }
+  ]
+ },
+ "background": {
+  "theme": "episode-scene",
+  "illustration": "assets/adv_frames/ep8/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "The Jade Emperor was sitting on his throne in the Cloud Palace.",
+   "textZh": "玉皇大帝正端坐于云宫的御座之上。",
+   "illustration": "assets/adv_frames/ep8/f1.jpg",
+   "sourceNodeId": "n001",
+   "audioRef": "sent_en:The Jade Emperor was sitting on his throne in the Cloud Palace."
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "A messenger ran into the court.",
+   "textZh": "一名信使冲进庭院。",
+   "illustration": "assets/adv_frames/ep8/f2.jpg",
+   "sourceNodeId": "n002",
+   "audioRef": "sent_en:A messenger ran into the court."
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "throne",
+   "zh": "王位,王座",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep8/f1.jpg"
+  },
+  {
+   "term": "messenger",
+   "zh": "信差,传令员",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep8/f2.jpg"
+  },
+  {
+   "term": "court",
+   "zh": "1. 宫廷,王室,(2. 法庭,法院,3. (竞赛的)场地,球场)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep8/f2.jpg"
+  },
+  {
+   "term": "complaint",
+   "zh": "抱怨,怨言",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep8/f3.jpg"
+  },
+  {
+   "term": "demand",
+   "zh": "1. 要求,请求,(2. 查问,质问)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep8/f3.jpg"
+  },
+  {
+   "term": "cross out",
+   "zh": "划掉,删去",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep8/f3.jpg"
+  },
+  {
+   "term": "chin",
+   "zh": "下巴",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep8/f0.jpg"
+  },
+  {
+   "term": "gather",
+   "zh": "1. 收集,(2. 聚集)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep8/f1.jpg"
+  },
+  {
+   "term": "troop",
+   "zh": "(常用复数)(尤其是大规模的)军队,部队",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep8/f1.jpg"
+  },
+  {
+   "term": "planet",
+   "zh": "行星(围着太阳转的星星)",
+   "ipa": "ˈplænɪt",
+   "illustration": "assets/adv_frames/ep8/f0.jpg"
+  },
+  {
+   "term": "Venus",
+   "zh": "金星(行星名)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep8/f2.jpg"
+  },
+  {
+   "term": "eyebrow",
+   "zh": "眉毛",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep8/f1.jpg"
+  }
+ ],
+ "wordPool": [
+  {
+   "term": "throne",
+   "zh": "王位,王座",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep8/f1.jpg"
+  },
+  {
+   "term": "messenger",
+   "zh": "信差,传令员",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep8/f2.jpg"
+  },
+  {
+   "term": "court",
+   "zh": "1. 宫廷,王室,(2. 法庭,法院,3. (竞赛的)场地,球场)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep8/f2.jpg"
+  },
+  {
+   "term": "complaint",
+   "zh": "抱怨,怨言",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep8/f3.jpg"
+  },
+  {
+   "term": "demand",
+   "zh": "1. 要求,请求,(2. 查问,质问)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep8/f3.jpg"
+  },
+  {
+   "term": "cross out",
+   "zh": "划掉,删去",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep8/f3.jpg"
+  },
+  {
+   "term": "chin",
+   "zh": "下巴",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep8/f0.jpg"
+  },
+  {
+   "term": "gather",
+   "zh": "1. 收集,(2. 聚集)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep8/f1.jpg"
+  },
+  {
+   "term": "troop",
+   "zh": "(常用复数)(尤其是大规模的)军队,部队",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep8/f1.jpg"
+  },
+  {
+   "term": "planet",
+   "zh": "行星(围着太阳转的星星)",
+   "ipa": "ˈplænɪt",
+   "illustration": "assets/adv_frames/ep8/f0.jpg"
+  },
+  {
+   "term": "Venus",
+   "zh": "金星(行星名)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep8/f2.jpg"
+  },
+  {
+   "term": "eyebrow",
+   "zh": "眉毛",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep8/f1.jpg"
+  },
+  {
+   "term": "invite",
+   "zh": "邀请",
+   "ipa": "ɪnˈvaɪt",
+   "illustration": "assets/adv_frames/ep8/f0.jpg"
+  },
+  {
+   "term": "adventure",
+   "zh": "冒险,冒险活动(或经历)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep8/f3.jpg"
+  },
+  {
+   "term": "hooray",
+   "zh": "耶!(高兴时的欢呼)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep8/f2.jpg"
+  },
+  {
+   "term": "nearby",
+   "zh": "在附近",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep8/f3.jpg"
+  },
+  {
+   "term": "invitation",
+   "zh": "邀请,邀请函",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep8/f2.jpg"
+  },
+  {
+   "term": "royal",
+   "zh": "王的,王室的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep8/f2.jpg"
+  },
+  {
+   "term": "respect",
+   "zh": "尊敬,尊重",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep8/f2.jpg"
+  },
+  {
+   "term": "excuse",
+   "zh": "请求谅解",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep8/f0.jpg"
+  },
+  {
+   "term": "gardener",
+   "zh": "园丁(照料花园的人)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep8/f0.jpg"
+  },
+  {
+   "term": "bite",
+   "zh": "一又的份量",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep8/f3.jpg"
+  },
+  {
+   "term": "take a bite of",
+   "zh": "吃一又",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep8/f3.jpg"
+  },
+  {
+   "term": "inspect",
+   "zh": "检查,检阅",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep8/f0.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "throne",
+     "zh": "王位,王座",
+     "sprite": "imp"
+    },
+    {
+     "term": "messenger",
+     "zh": "信差,传令员",
+     "sprite": "imp"
+    },
+    {
+     "term": "court",
+     "zh": "1. 宫廷,王室,(2. 法庭,法院,3. (竞赛的)场地,球场)",
+     "sprite": "imp"
+    },
+    {
+     "term": "complaint",
+     "zh": "抱怨,怨言",
+     "sprite": "imp"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "demand",
+     "zh": "1. 要求,请求,(2. 查问,质问)",
+     "sprite": "imp"
+    },
+    {
+     "term": "cross out",
+     "zh": "划掉,删去",
+     "sprite": "imp"
+    },
+    {
+     "term": "chin",
+     "zh": "下巴",
+     "sprite": "imp"
+    },
+    {
+     "term": "gather",
+     "zh": "1. 收集,(2. 聚集)",
+     "sprite": "imp"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "troop",
+    "zh": "(常用复数)(尤其是大规模的)军队,部队"
+   },
+   {
+    "term": "planet",
+    "zh": "行星(围着太阳转的星星)"
+   },
+   {
+    "term": "Venus",
+    "zh": "金星(行星名)"
+   },
+   {
+    "term": "eyebrow",
+    "zh": "眉毛"
+   }
+  ],
+  "taunts": [
+   "jadeemperor.1",
+   "jadeemperor.2",
+   "jadeemperor.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=8",
+ "npcDialogue": {
+  "intro": {
+   "id": "ep8-map-intro",
+   "lines": [
+    {
+     "id": "ep8-map-intro-1",
+     "sourceNodeId": "n001",
+     "speaker": "narrator",
+     "textEn": "The Jade Emperor was sitting on his throne in the Cloud Palace.",
+     "textZh": "玉皇大帝正端坐于云宫的御座之上。",
+     "audioRef": "sent_en:The Jade Emperor was sitting on his throne in the Cloud Palace.",
+     "audioStart": 11.134,
+     "audioEnd": 18.006
+    },
+    {
+     "id": "ep8-map-intro-2",
+     "sourceNodeId": "n002",
+     "speaker": "narrator",
+     "textEn": "A messenger ran into the court.",
+     "textZh": "一名信使冲进庭院。",
+     "audioRef": "sent_en:A messenger ran into the court.",
+     "audioStart": 18.007,
+     "audioEnd": 21.357
+    }
+   ]
+  },
+  "quiz": {
+   "id": "ep8-map-quiz",
+   "lines": [
+    {
+     "id": "ep8-map-quiz-1",
+     "sourceNodeId": "n004",
+     "speaker": "narrator",
+     "textEn": "\"The Dragon King of the Eastern Sea is here to see you.\"",
+     "textZh": "\"东海龙王前来见你了。\"",
+     "audioRef": "sent_en:\"The Dragon King of the Eastern Sea is here to see you.\"",
+     "audioStart": 23.837,
+     "audioEnd": 28.04
+    }
+   ],
+   "question": {
+    "id": "ep008-official-quiz-001",
+    "textEn": "who did not come to see the jade emperor?",
+    "textZh": "谁没有来拜见玉皇大帝？"
+   },
+   "word": {
+    "term": "throne",
+    "zh": "王位,王座",
+    "ipa": ""
+   },
+   "options": [
+    {
+     "id": "a",
+     "textEn": "the demon of chaos",
+     "textZh": "混沌恶魔",
+     "correct": true,
+     "feedback": "对了。混沌恶魔"
+    },
+    {
+     "id": "b",
+     "textEn": "the dragon king",
+     "textZh": "龙王",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    },
+    {
+     "id": "c",
+     "textEn": "the judge of the dead",
+     "textZh": "死者的审判者",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    }
+   ],
+   "lessonCardId": "ep008-official-quiz-001"
+  }
+ },
+ "map": {
+  "theme": "episode-scene",
+  "coordinateSpace": "world-normalized",
+  "worldTiles": 2,
+  "regions": {
+   "hero": 0,
+   "waves": [
+    0,
+    1
+   ],
+   "npc": {
+    "intro": 0,
+    "quiz": 1
+   },
+   "boss": 3
+  },
+  "walkable": {
+   "space": "world",
+   "x": 0.0,
+   "y": 0.16,
+   "w": 1.0,
+   "h": 0.79,
+   "rects": [
+    {
+     "x": 0.0,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.66,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    }
+   ]
+  },
+  "heroSpawn": {
+   "x": 0.06,
+   "y": 0.31
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.31,
+    "y": 0.23
+   },
+   {
+    "x": 0.38,
+    "y": 0.27
+   },
+   {
+    "x": 0.34,
+    "y": 0.33
+   },
+   {
+    "x": 0.41,
+    "y": 0.24
+   }
+  ],
+  "waveSpawns": [
+   [
+    {
+     "x": 0.31,
+     "y": 0.23
+    },
+    {
+     "x": 0.38,
+     "y": 0.27
+    },
+    {
+     "x": 0.34,
+     "y": 0.33
+    },
+    {
+     "x": 0.41,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.81,
+     "y": 0.23
+    },
+    {
+     "x": 0.88,
+     "y": 0.27
+    },
+    {
+     "x": 0.84,
+     "y": 0.33
+    },
+    {
+     "x": 0.91,
+     "y": 0.24
+    }
+   ]
+  ],
+  "orbSpawns": [
+   [
+    {
+     "x": 0.11,
+     "y": 0.25
+    },
+    {
+     "x": 0.16,
+     "y": 0.31
+    },
+    {
+     "x": 0.12,
+     "y": 0.37
+    },
+    {
+     "x": 0.18,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.61,
+     "y": 0.25
+    },
+    {
+     "x": 0.66,
+     "y": 0.31
+    },
+    {
+     "x": 0.62,
+     "y": 0.37
+    },
+    {
+     "x": 0.68,
+     "y": 0.24
+    }
+   ]
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "heaven-captain",
+    "nameZh": "天将",
+    "x": 0.08,
+    "y": 0.26
+   },
+   {
+    "role": "quiz",
+    "sprite": "heaven-captain",
+    "nameZh": "天将",
+    "x": 0.7,
+    "y": 0.39
+   }
+  ],
+  "bossSpot": {
+   "x": 0.94,
+   "y": 0.85
+  }
+ }
+}

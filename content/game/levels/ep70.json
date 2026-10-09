@@ -1,0 +1,584 @@
+{
+ "schema_version": 1,
+ "ep": 70,
+ "title": {
+  "en": "The Star Lord",
+  "zh": "西游记 第70集"
+ },
+ "collection": "c09",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "guanyin",
+   "nameZh": "观音",
+   "mode": "sparring",
+   "sprite": "guanyin"
+  },
+  "minors": [
+   {
+    "id": "imp",
+    "nameZh": "小妖",
+    "sprite": "imp"
+   }
+  ]
+ },
+ "background": {
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep70/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "\"You cannot go back to that cave,\" said Guanyin.",
+   "textZh": "\"你无法再回到那座洞穴了,\"观音说道。",
+   "illustration": "assets/adv_frames/ep70/f1.jpg",
+   "sourceNodeId": "n001",
+   "audioRef": "sent_en:\"You cannot go back to that cave,\" said Guanyin."
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "\"But we must go back!\" said Wukong.",
+   "textZh": "\"但我们必须回去!\"悟空说道。",
+   "illustration": "assets/adv_frames/ep70/f2.jpg",
+   "sourceNodeId": "n002",
+   "audioRef": "sent_en:\"But we must go back!\" said Wukong."
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "lord",
+   "zh": "1. 长官,(2. 领主(中世纪欧洲受封在一个区域里掌握权力并领有土地的人),3. (英国)有爵位的贵族)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep70/f2.jpg"
+  },
+  {
+   "term": "stab",
+   "zh": "(用像刀一样尖锐的东西)刺",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep70/f3.jpg"
+  },
+  {
+   "term": "anyway",
+   "zh": "1. 用以转换话题或回到先前的话题,(2. 无论如何,不管怎样)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep70/f3.jpg"
+  },
+  {
+   "term": "stinger",
+   "zh": "(昆虫的)刺",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep70/f0.jpg"
+  },
+  {
+   "term": "shudder",
+   "zh": "发抖,战栗",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep70/f1.jpg"
+  },
+  {
+   "term": "pain",
+   "zh": "疼痛,痛苦",
+   "ipa": "peɪn",
+   "illustration": "assets/adv_frames/ep70/f1.jpg"
+  },
+  {
+   "term": "creep",
+   "zh": "蹑手蹑脚地走,缓慢地行进",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep70/f3.jpg"
+  },
+  {
+   "term": "stung",
+   "zh": "(昆虫等)叮,刺 (sting-stung)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep70/f3.jpg"
+  },
+  {
+   "term": "capture",
+   "zh": "捕获,俘虏",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep70/f1.jpg"
+  },
+  {
+   "term": "escape",
+   "zh": "逃亡,逃跑",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep70/f1.jpg"
+  },
+  {
+   "term": "flash",
+   "zh": "闪光,闪烁",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep70/f3.jpg"
+  },
+  {
+   "term": "greeting",
+   "zh": "1. (常用复数)您好 (=hello), (2. (见面时)打招呼,打招呼的话)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep70/f1.jpg"
+  }
+ ],
+ "wordPool": [
+  {
+   "term": "lord",
+   "zh": "1. 长官,(2. 领主(中世纪欧洲受封在一个区域里掌握权力并领有土地的人),3. (英国)有爵位的贵族)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep70/f2.jpg"
+  },
+  {
+   "term": "stab",
+   "zh": "(用像刀一样尖锐的东西)刺",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep70/f3.jpg"
+  },
+  {
+   "term": "anyway",
+   "zh": "1. 用以转换话题或回到先前的话题,(2. 无论如何,不管怎样)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep70/f3.jpg"
+  },
+  {
+   "term": "stinger",
+   "zh": "(昆虫的)刺",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep70/f0.jpg"
+  },
+  {
+   "term": "shudder",
+   "zh": "发抖,战栗",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep70/f1.jpg"
+  },
+  {
+   "term": "pain",
+   "zh": "疼痛,痛苦",
+   "ipa": "peɪn",
+   "illustration": "assets/adv_frames/ep70/f1.jpg"
+  },
+  {
+   "term": "creep",
+   "zh": "蹑手蹑脚地走,缓慢地行进",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep70/f3.jpg"
+  },
+  {
+   "term": "stung",
+   "zh": "(昆虫等)叮,刺 (sting-stung)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep70/f3.jpg"
+  },
+  {
+   "term": "capture",
+   "zh": "捕获,俘虏",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep70/f1.jpg"
+  },
+  {
+   "term": "escape",
+   "zh": "逃亡,逃跑",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep70/f1.jpg"
+  },
+  {
+   "term": "flash",
+   "zh": "闪光,闪烁",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep70/f3.jpg"
+  },
+  {
+   "term": "greeting",
+   "zh": "1. (常用复数)您好 (=hello), (2. (见面时)打招呼,打招呼的话)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep70/f1.jpg"
+  },
+  {
+   "term": "travel",
+   "zh": "旅行",
+   "ipa": "ˈtrævl",
+   "illustration": "assets/adv_frames/ep70/f2.jpg"
+  },
+  {
+   "term": "demon",
+   "zh": "魔鬼,恶魔",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep70/f3.jpg"
+  },
+  {
+   "term": "confused",
+   "zh": "混乱的,困惑的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep70/f0.jpg"
+  },
+  {
+   "term": "quite",
+   "zh": "相当,很",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep70/f1.jpg"
+  },
+  {
+   "term": "nod",
+   "zh": "点头",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep70/f3.jpg"
+  },
+  {
+   "term": "lead",
+   "zh": "指引,带领",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep70/f3.jpg"
+  },
+  {
+   "term": "heal",
+   "zh": "治愈,使恢复健康",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep70/f0.jpg"
+  },
+  {
+   "term": "injury",
+   "zh": "伤害,受伤",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep70/f2.jpg"
+  },
+  {
+   "term": "instantly",
+   "zh": "立刻,马上",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep70/f2.jpg"
+  },
+  {
+   "term": "mark",
+   "zh": "1. 痕迹,(2. 作记号)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep70/f1.jpg"
+  },
+  {
+   "term": "entrance",
+   "zh": "入又",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep70/f1.jpg"
+  },
+  {
+   "term": "wildly",
+   "zh": "疯狂地,粗暴地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep70/f3.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "lord",
+     "zh": "1. 长官,(2. 领主(中世纪欧洲受封在一个区域里掌握权力并领有土地的人),3. (英国)有爵位的贵族)",
+     "sprite": "imp"
+    },
+    {
+     "term": "stab",
+     "zh": "(用像刀一样尖锐的东西)刺",
+     "sprite": "imp"
+    },
+    {
+     "term": "anyway",
+     "zh": "1. 用以转换话题或回到先前的话题,(2. 无论如何,不管怎样)",
+     "sprite": "imp"
+    },
+    {
+     "term": "stinger",
+     "zh": "(昆虫的)刺",
+     "sprite": "imp"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "shudder",
+     "zh": "发抖,战栗",
+     "sprite": "imp"
+    },
+    {
+     "term": "pain",
+     "zh": "疼痛,痛苦",
+     "sprite": "imp"
+    },
+    {
+     "term": "creep",
+     "zh": "蹑手蹑脚地走,缓慢地行进",
+     "sprite": "imp"
+    },
+    {
+     "term": "stung",
+     "zh": "(昆虫等)叮,刺 (sting-stung)",
+     "sprite": "imp"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "capture",
+    "zh": "捕获,俘虏"
+   },
+   {
+    "term": "escape",
+    "zh": "逃亡,逃跑"
+   },
+   {
+    "term": "flash",
+    "zh": "闪光,闪烁"
+   },
+   {
+    "term": "greeting",
+    "zh": "1. (常用复数)您好 (=hello), (2. (见面时)打招呼,打招呼的话)"
+   }
+  ],
+  "taunts": [
+   "guanyin.1",
+   "guanyin.2",
+   "guanyin.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=70",
+ "npcDialogue": {
+  "intro": {
+   "id": "ep70-map-intro",
+   "lines": [
+    {
+     "id": "ep70-map-intro-1",
+     "sourceNodeId": "n001",
+     "speaker": "narrator",
+     "textEn": "\"You cannot go back to that cave,\" said Guanyin.",
+     "textZh": "\"你无法再回到那座洞穴了,\"观音说道。",
+     "audioRef": "sent_en:\"You cannot go back to that cave,\" said Guanyin.",
+     "audioStart": 10.934,
+     "audioEnd": 16.832
+    },
+    {
+     "id": "ep70-map-intro-2",
+     "sourceNodeId": "n002",
+     "speaker": "narrator",
+     "textEn": "\"But we must go back!\" said Wukong.",
+     "textZh": "\"但我们必须回去!\"悟空说道。",
+     "audioRef": "sent_en:\"But we must go back!\" said Wukong.",
+     "audioStart": 16.833,
+     "audioEnd": 19.864
+    }
+   ]
+  },
+  "quiz": {
+   "id": "ep70-map-quiz",
+   "lines": [
+    {
+     "id": "ep70-map-quiz-1",
+     "sourceNodeId": "n010",
+     "speaker": "narrator",
+     "textEn": "\"I won't go near her,\" said Guanyin.",
+     "textZh": "\"我不会靠近她,\"观音说道。",
+     "audioRef": "sent_en:\"I won't go near her,\" said Guanyin.",
+     "audioStart": 43.933,
+     "audioEnd": 47.018
+    }
+   ],
+   "question": {
+    "id": "ep070-official-quiz-001",
+    "textEn": "which is true?",
+    "textZh": "哪一个是真的？"
+   },
+   "word": {
+    "term": "lord",
+    "zh": "1. 长官,(2. 领主(中世纪欧洲受封在一个区域里掌握权力并领有土地的人),3. (英国)有爵位的贵族)",
+    "ipa": ""
+   },
+   "options": [
+    {
+     "id": "a",
+     "textEn": "buddha was afraid of the scorpion spirit.",
+     "textZh": "佛陀害怕蝎子精。",
+     "correct": true,
+     "feedback": "对了。佛陀害怕蝎子精。"
+    },
+    {
+     "id": "b",
+     "textEn": "guanyin healed bajie.",
+     "textZh": "观音治好了八戒。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    },
+    {
+     "id": "c",
+     "textEn": "wukong defeated the scorpion.",
+     "textZh": "悟空打败了蝎子。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    }
+   ],
+   "lessonCardId": "ep070-official-quiz-001"
+  }
+ },
+ "map": {
+  "theme": "generic",
+  "coordinateSpace": "world-normalized",
+  "worldTiles": 2,
+  "regions": {
+   "hero": 0,
+   "waves": [
+    0,
+    1
+   ],
+   "npc": {
+    "intro": 0,
+    "quiz": 1
+   },
+   "boss": 3
+  },
+  "walkable": {
+   "space": "world",
+   "x": 0.0,
+   "y": 0.16,
+   "w": 1.0,
+   "h": 0.79,
+   "rects": [
+    {
+     "x": 0.0,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.66,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    }
+   ]
+  },
+  "heroSpawn": {
+   "x": 0.06,
+   "y": 0.31
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.31,
+    "y": 0.23
+   },
+   {
+    "x": 0.38,
+    "y": 0.27
+   },
+   {
+    "x": 0.34,
+    "y": 0.33
+   },
+   {
+    "x": 0.41,
+    "y": 0.24
+   }
+  ],
+  "waveSpawns": [
+   [
+    {
+     "x": 0.31,
+     "y": 0.23
+    },
+    {
+     "x": 0.38,
+     "y": 0.27
+    },
+    {
+     "x": 0.34,
+     "y": 0.33
+    },
+    {
+     "x": 0.41,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.81,
+     "y": 0.23
+    },
+    {
+     "x": 0.88,
+     "y": 0.27
+    },
+    {
+     "x": 0.84,
+     "y": 0.33
+    },
+    {
+     "x": 0.91,
+     "y": 0.24
+    }
+   ]
+  ],
+  "orbSpawns": [
+   [
+    {
+     "x": 0.11,
+     "y": 0.25
+    },
+    {
+     "x": 0.16,
+     "y": 0.31
+    },
+    {
+     "x": 0.12,
+     "y": 0.37
+    },
+    {
+     "x": 0.18,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.61,
+     "y": 0.25
+    },
+    {
+     "x": 0.66,
+     "y": 0.31
+    },
+    {
+     "x": 0.62,
+     "y": 0.37
+    },
+    {
+     "x": 0.68,
+     "y": 0.24
+    }
+   ]
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "imp",
+    "nameZh": "小妖",
+    "x": 0.08,
+    "y": 0.26
+   },
+   {
+    "role": "quiz",
+    "sprite": "imp",
+    "nameZh": "小妖",
+    "x": 0.7,
+    "y": 0.39
+   }
+  ],
+  "bossSpot": {
+   "x": 0.94,
+   "y": 0.85
+  }
+ }
+}

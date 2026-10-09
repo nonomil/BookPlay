@@ -1,0 +1,584 @@
+{
+ "schema_version": 1,
+ "ep": 10,
+ "title": {
+  "en": "The Powerful Sage",
+  "zh": "西游记 第10集"
+ },
+ "collection": "c02",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "jadeemperor",
+   "nameZh": "玉皇大帝",
+   "mode": "sparring",
+   "sprite": "jadeemperor"
+  },
+  "minors": [
+   {
+    "id": "imp",
+    "nameZh": "小妖",
+    "sprite": "imp"
+   }
+  ]
+ },
+ "background": {
+  "theme": "episode-scene",
+  "illustration": "assets/adv_frames/ep10/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "\"How will we defeat Sun Wukong?\" moaned the Jade Emperor.",
+   "textZh": "\"我们该如何击败孙悟空?\"玉皇大帝哀叹道。",
+   "illustration": "assets/adv_frames/ep10/f1.jpg",
+   "sourceNodeId": "n001",
+   "audioRef": "sent_en:\"How will we defeat Sun Wukong?\" moaned the Jade Emperor."
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "\"I sent our entire army, and they couldn't arrest him!\"",
+   "textZh": "\"我派出了全部军队,但他们还是没能逮捕到他!\"",
+   "illustration": "assets/adv_frames/ep10/f2.jpg",
+   "sourceNodeId": "n002",
+   "audioRef": "sent_en:\"I sent our entire army, and they couldn't arrest him!\""
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "capture",
+   "zh": "捕获,俘虏",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep10/f3.jpg"
+  },
+  {
+   "term": "army",
+   "zh": "军队,陆军",
+   "ipa": "ˈɑː(r)mi",
+   "illustration": "assets/adv_frames/ep10/f1.jpg"
+  },
+  {
+   "term": "lesson",
+   "zh": "1. 教训,(2. 课程)",
+   "ipa": "ˈlesn",
+   "illustration": "assets/adv_frames/ep10/f1.jpg"
+  },
+  {
+   "term": "no match",
+   "zh": "无法对抗",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep10/f2.jpg"
+  },
+  {
+   "term": "deep",
+   "zh": "深的",
+   "ipa": "diːp",
+   "illustration": "assets/adv_frames/ep10/f1.jpg"
+  },
+  {
+   "term": "voice",
+   "zh": "声音",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep10/f1.jpg"
+  },
+  {
+   "term": "boom",
+   "zh": "1. 用低沉洪亮的声音说话,(2. 隆隆声)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep10/f1.jpg"
+  },
+  {
+   "term": "hid",
+   "zh": "躲藏 (hide-hid)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep10/f1.jpg"
+  },
+  {
+   "term": "block",
+   "zh": "1. (道路等)阻塞,堵住,(2. 块,3. (四面围有街道的)街区)",
+   "ipa": "blɒk",
+   "illustration": "assets/adv_frames/ep10/f0.jpg"
+  },
+  {
+   "term": "strike back",
+   "zh": "回击,反击",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep10/f0.jpg"
+  },
+  {
+   "term": "get out of the",
+   "zh": "走开,避开",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep10/f1.jpg"
+  },
+  {
+   "term": "suddenly",
+   "zh": "忽然",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep10/f3.jpg"
+  }
+ ],
+ "wordPool": [
+  {
+   "term": "capture",
+   "zh": "捕获,俘虏",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep10/f3.jpg"
+  },
+  {
+   "term": "army",
+   "zh": "军队,陆军",
+   "ipa": "ˈɑː(r)mi",
+   "illustration": "assets/adv_frames/ep10/f1.jpg"
+  },
+  {
+   "term": "lesson",
+   "zh": "1. 教训,(2. 课程)",
+   "ipa": "ˈlesn",
+   "illustration": "assets/adv_frames/ep10/f1.jpg"
+  },
+  {
+   "term": "no match",
+   "zh": "无法对抗",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep10/f2.jpg"
+  },
+  {
+   "term": "deep",
+   "zh": "深的",
+   "ipa": "diːp",
+   "illustration": "assets/adv_frames/ep10/f1.jpg"
+  },
+  {
+   "term": "voice",
+   "zh": "声音",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep10/f1.jpg"
+  },
+  {
+   "term": "boom",
+   "zh": "1. 用低沉洪亮的声音说话,(2. 隆隆声)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep10/f1.jpg"
+  },
+  {
+   "term": "hid",
+   "zh": "躲藏 (hide-hid)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep10/f1.jpg"
+  },
+  {
+   "term": "block",
+   "zh": "1. (道路等)阻塞,堵住,(2. 块,3. (四面围有街道的)街区)",
+   "ipa": "blɒk",
+   "illustration": "assets/adv_frames/ep10/f0.jpg"
+  },
+  {
+   "term": "strike back",
+   "zh": "回击,反击",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep10/f0.jpg"
+  },
+  {
+   "term": "get out of the",
+   "zh": "走开,避开",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep10/f1.jpg"
+  },
+  {
+   "term": "suddenly",
+   "zh": "忽然",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep10/f3.jpg"
+  },
+  {
+   "term": "swirl",
+   "zh": "1. 打旋,旋动,(2. 漩涡)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep10/f2.jpg"
+  },
+  {
+   "term": "himself",
+   "zh": "他自己",
+   "ipa": "hɪmˈself",
+   "illustration": "assets/adv_frames/ep10/f0.jpg"
+  },
+  {
+   "term": "sparrow",
+   "zh": "麻雀",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep10/f0.jpg"
+  },
+  {
+   "term": "perch",
+   "zh": "坐,栖息",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep10/f1.jpg"
+  },
+  {
+   "term": "hawk",
+   "zh": "老鹰",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep10/f2.jpg"
+  },
+  {
+   "term": "swoop",
+   "zh": "(鸟、飞机等)骤然下降,俯冲",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep10/f3.jpg"
+  },
+  {
+   "term": "crane",
+   "zh": "起重机,吊车",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep10/f3.jpg"
+  },
+  {
+   "term": "temple",
+   "zh": "神殿,庙宇,寺院",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep10/f0.jpg"
+  },
+  {
+   "term": "flagpole",
+   "zh": "旗竿",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep10/f3.jpg"
+  },
+  {
+   "term": "scratch",
+   "zh": "抓,搔",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep10/f1.jpg"
+  },
+  {
+   "term": "Laozi",
+   "zh": "老子",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep10/f0.jpg"
+  },
+  {
+   "term": "metal",
+   "zh": "金属",
+   "ipa": "ˈmetl",
+   "illustration": "assets/adv_frames/ep10/f0.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "capture",
+     "zh": "捕获,俘虏",
+     "sprite": "imp"
+    },
+    {
+     "term": "army",
+     "zh": "军队,陆军",
+     "sprite": "imp"
+    },
+    {
+     "term": "lesson",
+     "zh": "1. 教训,(2. 课程)",
+     "sprite": "imp"
+    },
+    {
+     "term": "no match",
+     "zh": "无法对抗",
+     "sprite": "imp"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "deep",
+     "zh": "深的",
+     "sprite": "imp"
+    },
+    {
+     "term": "voice",
+     "zh": "声音",
+     "sprite": "imp"
+    },
+    {
+     "term": "boom",
+     "zh": "1. 用低沉洪亮的声音说话,(2. 隆隆声)",
+     "sprite": "imp"
+    },
+    {
+     "term": "hid",
+     "zh": "躲藏 (hide-hid)",
+     "sprite": "imp"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "block",
+    "zh": "1. (道路等)阻塞,堵住,(2. 块,3. (四面围有街道的)街区)"
+   },
+   {
+    "term": "strike back",
+    "zh": "回击,反击"
+   },
+   {
+    "term": "get out of the",
+    "zh": "走开,避开"
+   },
+   {
+    "term": "suddenly",
+    "zh": "忽然"
+   }
+  ],
+  "taunts": [
+   "jadeemperor.1",
+   "jadeemperor.2",
+   "jadeemperor.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=10",
+ "npcDialogue": {
+  "intro": {
+   "id": "ep10-map-intro",
+   "lines": [
+    {
+     "id": "ep10-map-intro-1",
+     "sourceNodeId": "n001",
+     "speaker": "narrator",
+     "textEn": "\"How will we defeat Sun Wukong?\" moaned the Jade Emperor.",
+     "textZh": "\"我们该如何击败孙悟空?\"玉皇大帝哀叹道。",
+     "audioRef": "sent_en:\"How will we defeat Sun Wukong?\" moaned the Jade Emperor.",
+     "audioStart": 11.267,
+     "audioEnd": 17.078
+    },
+    {
+     "id": "ep10-map-intro-2",
+     "sourceNodeId": "n002",
+     "speaker": "narrator",
+     "textEn": "\"I sent our entire army, and they couldn't arrest him!\"",
+     "textZh": "\"我派出了全部军队,但他们还是没能逮捕到他!\"",
+     "audioRef": "sent_en:\"I sent our entire army, and they couldn't arrest him!\"",
+     "audioStart": 17.079,
+     "audioEnd": 21.366
+    }
+   ]
+  },
+  "quiz": {
+   "id": "ep10-map-quiz",
+   "lines": [
+    {
+     "id": "ep10-map-quiz-1",
+     "sourceNodeId": "n008",
+     "speaker": "narrator",
+     "textEn": "\"Our king has just defeated an entire army from Heaven!\" said the gibbon.",
+     "textZh": "\"我们的国王刚刚击败了来自天界的整支军队!\"长臂猿说道。",
+     "audioRef": "sent_en:\"Our king has just defeated an entire army from Heaven!\" said the gibbon.",
+     "audioStart": 50.764,
+     "audioEnd": 56.656
+    }
+   ],
+   "question": {
+    "id": "ep010-official-quiz-001",
+    "textEn": "why was wukong happy?",
+    "textZh": "悟空为什么高兴？"
+   },
+   "word": {
+    "term": "capture",
+    "zh": "捕获,俘虏",
+    "ipa": ""
+   },
+   "options": [
+    {
+     "id": "a",
+     "textEn": "he defeated the army.",
+     "textZh": "他击败了军队。",
+     "correct": true,
+     "feedback": "对了。他击败了军队。"
+    },
+    {
+     "id": "b",
+     "textEn": "he ate all the peaches.",
+     "textZh": "他吃光了所有的桃子。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    },
+    {
+     "id": "c",
+     "textEn": "he had a flagpole.",
+     "textZh": "他有一根旗杆。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    }
+   ],
+   "lessonCardId": "ep010-official-quiz-001"
+  }
+ },
+ "map": {
+  "theme": "episode-scene",
+  "coordinateSpace": "world-normalized",
+  "worldTiles": 2,
+  "regions": {
+   "hero": 0,
+   "waves": [
+    0,
+    1
+   ],
+   "npc": {
+    "intro": 0,
+    "quiz": 1
+   },
+   "boss": 3
+  },
+  "walkable": {
+   "space": "world",
+   "x": 0.0,
+   "y": 0.16,
+   "w": 1.0,
+   "h": 0.79,
+   "rects": [
+    {
+     "x": 0.0,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.66,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    }
+   ]
+  },
+  "heroSpawn": {
+   "x": 0.06,
+   "y": 0.31
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.31,
+    "y": 0.23
+   },
+   {
+    "x": 0.38,
+    "y": 0.27
+   },
+   {
+    "x": 0.34,
+    "y": 0.33
+   },
+   {
+    "x": 0.41,
+    "y": 0.24
+   }
+  ],
+  "waveSpawns": [
+   [
+    {
+     "x": 0.31,
+     "y": 0.23
+    },
+    {
+     "x": 0.38,
+     "y": 0.27
+    },
+    {
+     "x": 0.34,
+     "y": 0.33
+    },
+    {
+     "x": 0.41,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.81,
+     "y": 0.23
+    },
+    {
+     "x": 0.88,
+     "y": 0.27
+    },
+    {
+     "x": 0.84,
+     "y": 0.33
+    },
+    {
+     "x": 0.91,
+     "y": 0.24
+    }
+   ]
+  ],
+  "orbSpawns": [
+   [
+    {
+     "x": 0.11,
+     "y": 0.25
+    },
+    {
+     "x": 0.16,
+     "y": 0.31
+    },
+    {
+     "x": 0.12,
+     "y": 0.37
+    },
+    {
+     "x": 0.18,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.61,
+     "y": 0.25
+    },
+    {
+     "x": 0.66,
+     "y": 0.31
+    },
+    {
+     "x": 0.62,
+     "y": 0.37
+    },
+    {
+     "x": 0.68,
+     "y": 0.24
+    }
+   ]
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "heaven-captain",
+    "nameZh": "天将",
+    "x": 0.08,
+    "y": 0.26
+   },
+   {
+    "role": "quiz",
+    "sprite": "heaven-captain",
+    "nameZh": "天将",
+    "x": 0.7,
+    "y": 0.39
+   }
+  ],
+  "bossSpot": {
+   "x": 0.94,
+   "y": 0.85
+  }
+ }
+}

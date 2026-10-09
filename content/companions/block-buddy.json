@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "companion": "minecraft-byte",
+  "note": "Byte 是绘本里的忠诚狼伙伴；成长只记录阅读进度，不会因为漏学而退回。",
+  "stages": [
+    {
+      "id": "block-egg",
+      "form": "egg",
+      "name": "神秘方块蛋",
+      "hint": "读完第一本绘本，Byte 就会从方块世界跑来和你见面。",
+      "condition": { "type": "episodes", "count": 0 },
+      "art": "assets/generated/storybooks/minecraft/characters/byte/transparent/idle.png"
+    },
+    {
+      "id": "byte-pup",
+      "form": "wolf",
+      "name": "Byte 小狼",
+      "hint": "Byte 想和你玩接物游戏，一起读完下一本吧！",
+      "condition": { "type": "episodes", "count": 1 },
+      "art": "assets/generated/storybooks/minecraft/characters/byte/transparent/idle.png"
+    },
+    {
+      "id": "block-adventure-buddy",
+      "form": "buddy",
+      "name": "方块探险伙伴",
+      "hint": "两本故事都到家啦！Byte 会在小屋里陪你庆祝。",
+      "condition": { "type": "episodes", "count": 2 },
+      "art": "assets/generated/storybooks/minecraft/characters/byte/transparent/high-five.png"
+    }
+  ],
+  "care_actions": [
+    { "id": "feed", "response": "Byte 接住了一颗小苹果！" },
+    { "id": "groom", "response": "把方块灰尘拍拍干净，Byte 亮晶晶。" },
+    { "id": "play", "response": "木棍飞起来啦，Byte 开始接物！" },
+    { "id": "rest", "response": "在柔软的草方块上休息一下。" }
+  ],
+  "cosmetics": [
+    { "id": "blue-collar", "name": "蓝色项圈", "days": 3 },
+    { "id": "grass-bed", "name": "草方块小床", "days": 7 },
+    { "id": "portal-lamp", "name": "传送门夜灯", "days": 14 }
+  ]
+}

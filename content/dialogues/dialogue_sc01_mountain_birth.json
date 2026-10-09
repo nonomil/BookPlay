@@ -1,0 +1,307 @@
+{
+  "schema_version": 1,
+  "scene_id": "sc01_mountain_birth",
+  "start_node": "d01",
+  "end_node": "d16",
+  "nodes": [
+    {
+      "node_id": "d01",
+      "speaker": "narrator",
+      "intent": "交代背景：花果山之巅有一块仙石，日夜吞吐日月精华，渐渐有了灵性。营造神话开场氛围。",
+      "fallback_text": {
+        "en": "High on the Mountain of Flowers and Fruit stood a magic stone. Day and night, it drank in the light of the sun and the moon.",
+        "zh": "花果山之巅立着一块仙石，日夜吞吐着日月精华。"
+      },
+      "next": "d02",
+      "illustration": "assets/lf_ep1/frames/rock_mountain.jpg"
+    },
+    {
+      "node_id": "d02",
+      "speaker": "narrator",
+      "intent": "仙石迸裂，蹦出一只石猴，双目金光直冲云霄，惊动天地。节奏要快，有爆破感。",
+      "fallback_text": {
+        "en": "One day — CRACK! The stone split open, and a little stone monkey leaped out. Golden light flashed from his eyes, straight up to the sky.",
+        "zh": "忽一日——砰！仙石迸裂，蹦出一只小石猴。他目运金光，直冲云霄。"
+      },
+      "next": "d03",
+      "illustration": "assets/lf_ep1/frames/monkey_in_stone.jpg"
+    },
+    {
+      "node_id": "d03",
+      "speaker": "elder_monkey",
+      "emotion": "awed",
+      "intent": "老猴看见石猴出世，又惊又喜，大声惊呼并招呼群猴围观。",
+      "fallback_text": {
+        "en": "Look! A baby monkey — born from stone! Oh my, oh my! Come and see!",
+        "zh": "快看！石缝里蹦出一只小猴！哎呀呀，大家快来看！"
+      },
+      "next": "d04",
+      "illustration": "assets/lf_ep1/frames/reactions.jpg"
+    },
+    {
+      "node_id": "d04",
+      "speaker": "narrator",
+      "intent": "群猴朝拜石猴；镜头交给玩家——你就是这只石猴，整个世界对你都是新的。",
+      "fallback_text": {
+        "en": "The monkeys bowed to the strange newborn. And you — yes, YOU are that stone monkey. The whole mountain is new to you.",
+        "zh": "群猴向这只奇石所生的猴儿俯首。而你——就是那只石猴。这整座山，对你来说都是新的。"
+      },
+      "next": "d05",
+      "illustration": "assets/lf_ep1/frames/baby_monkey.jpg"
+    },
+    {
+      "node_id": "d05",
+      "speaker": "you",
+      "emotion": "curious",
+      "intent": "瀑布声如雷，玩家决定先做什么。三个行动选项：径直走向瀑布 / 询问老猴 / 绕山观察。",
+      "fallback_text": {
+        "en": "A waterfall thunders nearby, pouring into the valley. What will you do?",
+        "zh": "不远处瀑布轰鸣，直泻深涧。你要做什么？"
+      },
+      "player_choices": [
+        {
+          "text": {
+            "en": "March straight to the waterfall.",
+            "zh": "径直朝瀑布走去。"
+          },
+          "next": "d06a"
+        },
+        {
+          "text": {
+            "en": "Ask Old Monkey about the roar.",
+            "zh": "去问老猴，这轰鸣是什么。"
+          },
+          "next": "d06b"
+        },
+        {
+          "text": {
+            "en": "Climb around the mountain and look around first.",
+            "zh": "先绕着山转一转，观察四周。"
+          },
+          "next": "d06c"
+        }
+      ],
+      "illustration": "assets/lf_ep1/frames/waterfall_wide.jpg"
+    },
+    {
+      "node_id": "d06a",
+      "speaker": "narrator",
+      "intent": "玩家选了直面路线：径直走到瀑布前，水声如鼓、水雾扑面，但石猴毫不退缩。体现胆气。",
+      "fallback_text": {
+        "en": "You walk right up to the falls. The water crashes like drums. Mist sprays your face — but you do not step back.",
+        "zh": "你径直走到瀑布跟前。水声如鼓，水雾扑面——你半步不退。"
+      },
+      "set_flags": [
+        "stood_at_falls"
+      ],
+      "next": "d07",
+      "illustration": "assets/lf_ep1/frames/at_the_falls.png"
+    },
+    {
+      "node_id": "d06b",
+      "speaker": "elder_monkey",
+      "emotion": "neutral",
+      "intent": "玩家选择询问：老猴讲传说——那是水帘，帘子后头似乎藏着东西，但水势凶猛，从没有猴敢进去。",
+      "fallback_text": {
+        "en": "That roar? That is the Water Curtain! They say something hides behind it... But the water is fierce. No monkey has ever dared to go in.",
+        "zh": "那轰鸣？那是水帘！听说帘子后头藏着东西……可水势太凶，从来没有猴敢进去。"
+      },
+      "set_flags": [
+        "heard_legend"
+      ],
+      "next": "d07",
+      "illustration": "assets/lf_ep1/frames/storyteller.jpg"
+    },
+    {
+      "node_id": "d06c",
+      "speaker": "narrator",
+      "intent": "玩家选择观察：绕山一圈，发现瀑布边垂着藤蔓，水帘起落之间有一线间隙——把这条线索记在心里。",
+      "fallback_text": {
+        "en": "You circle the mountain. Vines hang down beside the falls. And look — the water curtain rises and falls. For a breath, there is a gap.",
+        "zh": "你绕山一圈，看见瀑布边垂着藤蔓。再看——水帘起起落落之间，似乎有一线间隙。"
+      },
+      "set_flags": [
+        "saw_vines"
+      ],
+      "next": "d07",
+      "illustration": "assets/lf_ep1/frames/forest.jpg"
+    },
+    {
+      "node_id": "d07",
+      "speaker": "elder_monkey",
+      "emotion": "awed",
+      "intent": "老猴当众立约：谁敢钻进瀑布再平安出来，就拜谁为王。要念得庄重、有仪式感。",
+      "fallback_text": {
+        "en": "Monkeys! Let us make a promise! Whoever can go through the waterfall and come back safe — we will make him KING!",
+        "zh": "猴儿们！我们立个约定！哪个敢钻进瀑布、还能平安出来——我们就拜他为王！"
+      },
+      "next": "d08",
+      "illustration": "assets/lf_ep1/frames/promise.jpg"
+    },
+    {
+      "node_id": "d08",
+      "speaker": "you",
+      "emotion": "curious",
+      "intent": "决断时刻。基础选项：闭目纵身跳入 / 退后观察水势；若此前见过藤蔓（saw_vines），额外出现借藤蔓寻隙的稳妥选项。",
+      "fallback_text": {
+        "en": "The water roars. The monkeys hold their breath. This is the moment.",
+        "zh": "水声轰鸣，群猴屏息。就是此刻了。"
+      },
+      "player_choices": [
+        {
+          "text": {
+            "en": "Shut your eyes and leap into the falls!",
+            "zh": "闭目蹲身，纵身跳入瀑布！"
+          },
+          "next": "d09a"
+        },
+        {
+          "text": {
+            "en": "Step back and watch the water first.",
+            "zh": "先退后几步，观察水势。"
+          },
+          "next": "d09b"
+        },
+        {
+          "text": {
+            "en": "Use the vines — wait beside the falls for a gap.",
+            "zh": "借藤蔓到瀑布侧面，等水帘露隙。"
+          },
+          "require_flag": "saw_vines",
+          "next": "d09c"
+        }
+      ],
+      "illustration": "assets/lf_ep1/frames/step_forward.jpg"
+    },
+    {
+      "node_id": "d09a",
+      "speaker": "narrator",
+      "intent": "勇者路线：闭目蹲身纵身一跃，飞流接住石猴，把他裹进水帘。",
+      "fallback_text": {
+        "en": "Eyes shut, body low — you leap! The falling water catches you and pulls you through.",
+        "zh": "你闭目蹲身，纵身一跃！飞流接住你，把你裹了进去。"
+      },
+      "next": "d10",
+      "illustration": "assets/lf_ep1/frames/eyes_shut.jpg"
+    },
+    {
+      "node_id": "d09b",
+      "speaker": "narrator",
+      "intent": "谨慎路线：玩家数着水帘起落的节奏，看准间隙跳入。",
+      "fallback_text": {
+        "en": "You watch the curtain rise... and fall... NOW! You leap through the gap.",
+        "zh": "你看准水帘起落的节奏——就是现在！你从间隙跃了进去。"
+      },
+      "next": "d10",
+      "illustration": "assets/lf_ep1/frames/waterfall_wide.jpg"
+    },
+    {
+      "node_id": "d09c",
+      "speaker": "narrator",
+      "intent": "机敏路线：借藤蔓荡到瀑布侧面，从水薄处钻入，稳稳当当。体现观察的回报。",
+      "fallback_text": {
+        "en": "Swing on the vines, slip in where the water is thin — smooth as silk. In you go!",
+        "zh": "你荡着藤蔓，从水薄处一钻——稳稳当当，进去了！"
+      },
+      "next": "d10",
+      "illustration": "assets/lf_ep1/frames/forest.jpg"
+    },
+    {
+      "node_id": "d10",
+      "speaker": "narrator",
+      "intent": "睁眼所见：一座石桥、石锅石灶石碗石盆、桥下泉水叮咚——真的是好地方。惊喜感。",
+      "fallback_text": {
+        "en": "You open your eyes. A stone bridge! Pots and bowls of stone! A spring sings under the bridge. What a wonderful place!",
+        "zh": "你睁开眼——一座石桥！石锅、石灶、石碗、石盆！桥下泉水叮咚。真是个好地方！"
+      },
+      "next": "d11",
+      "illustration": "assets/lf_ep1/frames/cave_inside.png"
+    },
+    {
+      "node_id": "d11",
+      "speaker": "you",
+      "emotion": "curious",
+      "intent": "石猴发现石碣上有刻字，既好奇又兴奋，迫不及待。",
+      "fallback_text": {
+        "en": "On a stone pillar, there are carved words! Words! You cannot wait to read them.",
+        "zh": "石碣上刻着一行字！你迫不及待要念出来。"
+      },
+      "player_choices": [
+        {
+          "text": {
+            "en": "Read the carved words out loud.",
+            "zh": "大声念出石碣上的字。"
+          },
+          "next": "d13a"
+        },
+        {
+          "text": {
+            "en": "Look around the cave first.",
+            "zh": "先在洞里四处看看。"
+          },
+          "next": "d13b"
+        }
+      ],
+      "illustration": "assets/lf_ep1/frames/inscription.png"
+    },
+    {
+      "node_id": "d13a",
+      "speaker": "narrator",
+      "intent": "石碣铭文：花果山福地，水帘洞洞天。石猴一字一句念出，铿锵响亮。",
+      "fallback_text": {
+        "en": "'Flower-Fruit Mountain, a blessed land. Water-Curtain Cave, a cave of heaven.' You read every word loud and clear!",
+        "zh": "「花果山福地，水帘洞洞天。」你一字一句，念得铿锵响亮！"
+      },
+      "next": "d14",
+      "illustration": "assets/lf_ep1/frames/inscription.png"
+    },
+    {
+      "node_id": "d13b",
+      "speaker": "narrator",
+      "intent": "先逛洞的收获：石桌石凳，一线清泉从洞中流过，取水正好方便。",
+      "fallback_text": {
+        "en": "Stone tables! Stone seats! And a thin, clear spring flows right through the cave — perfect for drinking.",
+        "zh": "石桌！石凳！还有一线清泉从洞中流过——取水正方便。"
+      },
+      "set_flags": [
+        "seen_spring"
+      ],
+      "next": "d14",
+      "illustration": "assets/lf_ep1/frames/cave_inside.png"
+    },
+    {
+      "node_id": "d14",
+      "speaker": "narrator",
+      "intent": "石猴纵身跳出瀑布，稳稳落在群猴面前，毫发无伤。",
+      "fallback_text": {
+        "en": "You leap back out through the curtain and land in front of all the monkeys. Safe and sound!",
+        "zh": "你纵身跳出瀑布，稳稳落在群猴面前，毫发无伤！"
+      },
+      "next": "d15",
+      "illustration": "assets/lf_ep1/frames/at_the_falls.png"
+    },
+    {
+      "node_id": "d15",
+      "speaker": "elder_monkey",
+      "emotion": "happy",
+      "intent": "老猴兑现承诺，率群猴拜石猴为王。全场欢呼的高潮。",
+      "fallback_text": {
+        "en": "He went in AND came out! A promise is a promise! All hail the Stone Monkey — our king!",
+        "zh": "他进得来，出得去！说话算话！拜石猴为王！拜王喽——"
+      },
+      "next": "d16",
+      "illustration": "assets/lf_ep1/frames/monkey_king.png"
+    },
+    {
+      "node_id": "d16",
+      "speaker": "system",
+      "node_type": "chapter_end",
+      "intent": "章节结束卡：宣布石猴成为美猴王，引导查看本章小结。",
+      "fallback_text": {
+        "en": "From this day on, you are the Handsome Monkey King of the Water-Curtain Cave!",
+        "zh": "从这一天起，你就是水帘洞的美猴王！"
+      },
+      "illustration": "assets/lf_ep1/frames/monkey_king.png"
+    }
+  ]
+}

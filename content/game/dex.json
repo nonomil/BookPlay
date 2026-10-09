@@ -1,0 +1,618 @@
+{
+ "_comment": "降妖记图鉴（手写源，勿用生成器覆盖）。每只妖怪绑定词：对应词进入 mastered 后可捕捉；evolution.requireWords = 需再掌握的词数；habitat = 出现主题（themesByEp）。元素环形克制见 elements.json。",
+ "schema_version": 1,
+ "elements": [
+  "water",
+  "fire",
+  "forest",
+  "earth",
+  "light"
+ ],
+ "dex": [
+  {
+   "id": "monkey-minor",
+   "nameZh": "小猴子",
+   "element": "forest",
+   "tier": 1,
+   "words": [
+    "monkey",
+    "rock",
+    "mountain"
+   ],
+   "sprite": "monkey-minor",
+   "habitat": [
+    "flower-fruit-mountain",
+    "water-curtain-cave"
+   ],
+   "catchQuiz": {
+    "kind": "meaning-choice",
+    "count": 2
+   },
+   "evolution": null
+  },
+  {
+   "id": "subodhi-disciple",
+   "nameZh": "道童",
+   "element": "light",
+   "tier": 1,
+   "words": [
+    "master",
+    "magic",
+    "secret"
+   ],
+   "sprite": "subodhi-disciple",
+   "habitat": [
+    "three-star-cave"
+   ],
+   "catchQuiz": {
+    "kind": "meaning-choice",
+    "count": 2
+   },
+   "evolution": null
+  },
+  {
+   "id": "chaosdemon-minion",
+   "nameZh": "水妖",
+   "element": "water",
+   "tier": 1,
+   "words": [
+    "demon",
+    "chaos",
+    "kidnap"
+   ],
+   "sprite": "chaosdemon-minion",
+   "habitat": [
+    "water-dirty-cave"
+   ],
+   "catchQuiz": {
+    "kind": "meaning-choice",
+    "count": 2
+   },
+   "evolution": {
+    "to": "chaosdemon",
+    "requireWords": 6,
+    "requireStars": 4
+   }
+  },
+  {
+   "id": "dragonking-soldier",
+   "nameZh": "虾兵",
+   "element": "water",
+   "tier": 1,
+   "words": [
+    "soldier",
+    "palace",
+    "treasure"
+   ],
+   "sprite": "dragonking-soldier",
+   "habitat": [
+    "dragon-palace"
+   ],
+   "catchQuiz": {
+    "kind": "meaning-choice",
+    "count": 2
+   },
+   "evolution": null
+  },
+  {
+   "id": "underworld-clerk",
+   "nameZh": "阴差",
+   "element": "earth",
+   "tier": 1,
+   "words": [
+    "dark",
+    "book",
+    "name"
+   ],
+   "sprite": "underworld-clerk",
+   "habitat": [
+    "underworld"
+   ],
+   "catchQuiz": {
+    "kind": "meaning-choice",
+    "count": 2
+   },
+   "evolution": null
+  },
+  {
+   "id": "imp",
+   "nameZh": "小妖",
+   "element": "earth",
+   "tier": 1,
+   "words": [
+    "trick",
+    "small",
+    "hide"
+   ],
+   "sprite": "imp",
+   "habitat": [
+    "generic"
+   ],
+   "catchQuiz": {
+    "kind": "meaning-choice",
+    "count": 1
+   },
+   "evolution": null
+  },
+  {
+   "id": "chaosdemon",
+   "nameZh": "混世魔王",
+   "element": "water",
+   "tier": 2,
+   "words": [
+    "furious",
+    "revenge",
+    "gloomy"
+   ],
+   "sprite": "chaosdemon",
+   "habitat": [
+    "water-dirty-cave"
+   ],
+   "catchQuiz": {
+    "kind": "meaning-choice",
+    "count": 3
+   },
+   "evolution": null
+  },
+  {
+   "id": "dragonking",
+   "nameZh": "东海龙王",
+   "element": "water",
+   "tier": 2,
+   "words": [
+    "dragon",
+    "king",
+    "ocean"
+   ],
+   "sprite": "dragonking",
+   "habitat": [
+    "dragon-palace"
+   ],
+   "catchQuiz": {
+    "kind": "meaning-choice",
+    "count": 3
+   },
+   "evolution": null
+  },
+  {
+   "id": "subodhi",
+   "nameZh": "菩提祖师",
+   "element": "light",
+   "tier": 2,
+   "words": [
+    "wisdom",
+    "formula",
+    "change"
+   ],
+   "sprite": "subodhi",
+   "habitat": [
+    "three-star-cave"
+   ],
+   "catchQuiz": {
+    "kind": "meaning-choice",
+    "count": 3
+   },
+   "evolution": null
+  },
+  {
+   "id": "jadeemperor",
+   "nameZh": "玉皇大帝",
+   "element": "light",
+   "tier": 2,
+   "words": [
+    "heaven",
+    "emperor",
+    "throne"
+   ],
+   "sprite": "jadeemperor",
+   "habitat": [
+    "generic"
+   ],
+   "catchQuiz": {
+    "kind": "meaning-choice",
+    "count": 3
+   },
+   "evolution": null
+  },
+  {
+   "id": "tang",
+   "nameZh": "唐僧",
+   "element": "light",
+   "tier": 2,
+   "words": [
+    "monk",
+    "journey",
+    "promise"
+   ],
+   "sprite": "tang",
+   "habitat": [
+    "generic"
+   ],
+   "catchQuiz": {
+    "kind": "meaning-choice",
+    "count": 3
+   },
+   "evolution": null
+  },
+  {
+   "id": "whitedragonhorse",
+   "nameZh": "白龙马",
+   "element": "water",
+   "tier": 2,
+   "words": [
+    "along the",
+    "do not",
+    "dive"
+   ],
+   "sprite": "whitedragonhorse",
+   "habitat": [
+    "generic"
+   ],
+   "catchQuiz": {
+    "kind": "meaning-choice",
+    "count": 3
+   },
+   "evolution": null
+  },
+  {
+   "id": "blackwind",
+   "nameZh": "黑风大王",
+   "element": "fire",
+   "tier": 2,
+   "words": [
+    "scared",
+    "at all",
+    "command"
+   ],
+   "sprite": "blackwind",
+   "habitat": [
+    "generic"
+   ],
+   "catchQuiz": {
+    "kind": "meaning-choice",
+    "count": 3
+   },
+   "evolution": null
+  },
+  {
+   "id": "yellowwind",
+   "nameZh": "黄风大王",
+   "element": "forest",
+   "tier": 2,
+   "words": [
+    "slump",
+    "companion",
+    "tremble"
+   ],
+   "sprite": "yellowwind",
+   "habitat": [
+    "generic"
+   ],
+   "catchQuiz": {
+    "kind": "meaning-choice",
+    "count": 3
+   },
+   "evolution": null
+  },
+  {
+   "id": "shawujing",
+   "nameZh": "沙悟净",
+   "element": "earth",
+   "tier": 2,
+   "words": [
+    "challenge",
+    "prove",
+    "worthy"
+   ],
+   "sprite": "shawujing",
+   "habitat": [
+    "generic"
+   ],
+   "catchQuiz": {
+    "kind": "meaning-choice",
+    "count": 3
+   },
+   "evolution": null
+  },
+  {
+   "id": "zhenyuan",
+   "nameZh": "镇元大仙",
+   "element": "light",
+   "tier": 2,
+   "words": [
+    "ginseng",
+    "fang",
+    "funny"
+   ],
+   "sprite": "zhenyuan",
+   "habitat": [
+    "generic"
+   ],
+   "catchQuiz": {
+    "kind": "meaning-choice",
+    "count": 3
+   },
+   "evolution": null
+  },
+  {
+   "id": "guanyin",
+   "nameZh": "观音",
+   "element": "water",
+   "tier": 2,
+   "words": [
+    "vase",
+    "appear",
+    "nasty"
+   ],
+   "sprite": "guanyin",
+   "habitat": [
+    "generic"
+   ],
+   "catchQuiz": {
+    "kind": "meaning-choice",
+    "count": 3
+   },
+   "evolution": null
+  },
+  {
+   "id": "whitebone",
+   "nameZh": "白骨夫人",
+   "element": "fire",
+   "tier": 2,
+   "words": [
+    "disguise",
+    "sight",
+    "orchard"
+   ],
+   "sprite": "whitebone",
+   "habitat": [
+    "generic"
+   ],
+   "catchQuiz": {
+    "kind": "meaning-choice",
+    "count": 3
+   },
+   "evolution": null
+  },
+  {
+   "id": "bajie",
+   "nameZh": "猪八戒",
+   "element": "forest",
+   "tier": 2,
+   "words": [
+    "let out",
+    "wander off",
+    "all alone"
+   ],
+   "sprite": "bajie",
+   "habitat": [
+    "generic"
+   ],
+   "catchQuiz": {
+    "kind": "meaning-choice",
+    "count": 3
+   },
+   "evolution": null
+  },
+  {
+   "id": "hundredflowers",
+   "nameZh": "百花羞公主",
+   "element": "earth",
+   "tier": 2,
+   "words": [
+    "weapon",
+    "clash",
+    "rescue"
+   ],
+   "sprite": "hundredflowers",
+   "habitat": [
+    "generic"
+   ],
+   "catchQuiz": {
+    "kind": "meaning-choice",
+    "count": 3
+   },
+   "evolution": null
+  },
+  {
+   "id": "goldenhorn",
+   "nameZh": "金角大王",
+   "element": "light",
+   "tier": 2,
+   "words": [
+    "wave",
+    "rush",
+    "alert"
+   ],
+   "sprite": "goldenhorn",
+   "habitat": [
+    "generic"
+   ],
+   "catchQuiz": {
+    "kind": "meaning-choice",
+    "count": 3
+   },
+   "evolution": null
+  },
+  {
+   "id": "redboy",
+   "nameZh": "红孩儿",
+   "element": "water",
+   "tier": 2,
+   "words": [
+    "nap",
+    "walk away",
+    "crazy"
+   ],
+   "sprite": "redboy",
+   "habitat": [
+    "generic"
+   ],
+   "catchQuiz": {
+    "kind": "meaning-choice",
+    "count": 3
+   },
+   "evolution": null
+  },
+  {
+   "id": "tigerimmortal",
+   "nameZh": "虎力大仙",
+   "element": "fire",
+   "tier": 2,
+   "words": [
+    "cart",
+    "camp",
+    "stretch"
+   ],
+   "sprite": "tigerimmortal",
+   "habitat": [
+    "generic"
+   ],
+   "catchQuiz": {
+    "kind": "meaning-choice",
+    "count": 3
+   },
+   "evolution": null
+  },
+  {
+   "id": "ironfan",
+   "nameZh": "铁扇公主",
+   "element": "forest",
+   "tier": 2,
+   "words": [
+    "iron",
+    "immortal",
+    "once again"
+   ],
+   "sprite": "ironfan",
+   "habitat": [
+    "generic"
+   ],
+   "catchQuiz": {
+    "kind": "meaning-choice",
+    "count": 3
+   },
+   "evolution": null
+  },
+  {
+   "id": "bullking",
+   "nameZh": "牛魔王",
+   "element": "earth",
+   "tier": 2,
+   "words": [
+    "bull",
+    "smash",
+    "villain"
+   ],
+   "sprite": "bullking",
+   "habitat": [
+    "generic"
+   ],
+   "catchQuiz": {
+    "kind": "meaning-choice",
+    "count": 3
+   },
+   "evolution": null
+  },
+  {
+   "id": "yellowbrows",
+   "nameZh": "黄眉怪",
+   "element": "light",
+   "tier": 2,
+   "words": [
+    "brow",
+    "empty",
+    "slap"
+   ],
+   "sprite": "yellowbrows",
+   "habitat": [
+    "generic"
+   ],
+   "catchQuiz": {
+    "kind": "meaning-choice",
+    "count": 3
+   },
+   "evolution": null
+  },
+  {
+   "id": "powerdemon",
+   "nameZh": "大力妖王",
+   "element": "water",
+   "tier": 2,
+   "words": [
+    "moan",
+    "scarlet",
+    "kingdom"
+   ],
+   "sprite": "powerdemon",
+   "habitat": [
+    "generic"
+   ],
+   "catchQuiz": {
+    "kind": "meaning-choice",
+    "count": 3
+   },
+   "evolution": null
+  },
+  {
+   "id": "spiderdemon",
+   "nameZh": "蜘蛛精",
+   "element": "fire",
+   "tier": 2,
+   "words": [
+    "shady",
+    "shade",
+    "suspiciously"
+   ],
+   "sprite": "spiderdemon",
+   "habitat": [
+    "generic"
+   ],
+   "catchQuiz": {
+    "kind": "meaning-choice",
+    "count": 3
+   },
+   "evolution": null
+  },
+  {
+   "id": "centipededemon",
+   "nameZh": "多目怪",
+   "element": "forest",
+   "tier": 2,
+   "words": [
+    "ill",
+    "bob",
+    "teacup"
+   ],
+   "sprite": "centipededemon",
+   "habitat": [
+    "generic"
+   ],
+   "catchQuiz": {
+    "kind": "meaning-choice",
+    "count": 3
+   },
+   "evolution": null
+  },
+  {
+   "id": "liondemon",
+   "nameZh": "狮魔王",
+   "element": "earth",
+   "tier": 2,
+   "words": [
+    "raptor",
+    "pounce",
+    "close"
+   ],
+   "sprite": "liondemon",
+   "habitat": [
+    "generic"
+   ],
+   "catchQuiz": {
+    "kind": "meaning-choice",
+    "count": 3
+   },
+   "evolution": null
+  }
+ ]
+}

@@ -1,0 +1,584 @@
+{
+ "schema_version": 1,
+ "ep": 92,
+ "title": {
+  "en": "The Lion Demon",
+  "zh": "西游记 第92集"
+ },
+ "collection": "c12",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "liondemon",
+   "nameZh": "狮魔王",
+   "mode": "sparring",
+   "sprite": "liondemon"
+  },
+  "minors": [
+   {
+    "id": "imp",
+    "nameZh": "小妖",
+    "sprite": "imp"
+   }
+  ]
+ },
+ "background": {
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep92/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "The elephant pointed at Wukong.",
+   "textZh": "老象指了指悟空。",
+   "illustration": "assets/adv_frames/ep92/f1.jpg",
+   "sourceNodeId": "n001",
+   "audioRef": "sent_en:The elephant pointed at Wukong."
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "\"He's not a demon. He's a monkey!\"",
+   "textZh": "\"他不是恶魔,他只是只猴子!\"",
+   "illustration": "assets/adv_frames/ep92/f2.jpg",
+   "sourceNodeId": "n002",
+   "audioRef": "sent_en:\"He's not a demon. He's a monkey!\""
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "raptor",
+   "zh": "猛禽(类)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep92/f3.jpg"
+  },
+  {
+   "term": "pounce",
+   "zh": "飞扑,猛扑",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep92/f1.jpg"
+  },
+  {
+   "term": "close",
+   "zh": "1. 惊险的,玄乎的,(2. 近的,接近的,3. 关闭)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep92/f1.jpg"
+  },
+  {
+   "term": "concentration",
+   "zh": "集中,专注",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep92/f1.jpg"
+  },
+  {
+   "term": "scare away",
+   "zh": "把...吓跑",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep92/f0.jpg"
+  },
+  {
+   "term": "boast",
+   "zh": "自吹自擂说,吹嘘",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep92/f0.jpg"
+  },
+  {
+   "term": "fall over",
+   "zh": "跌倒",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep92/f2.jpg"
+  },
+  {
+   "term": "nearly",
+   "zh": "几乎",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep92/f2.jpg"
+  },
+  {
+   "term": "discover",
+   "zh": "发现,发觉",
+   "ipa": "dɪˈskʌvə(r)",
+   "illustration": "assets/adv_frames/ep92/f2.jpg"
+  },
+  {
+   "term": "wring",
+   "zh": "拧,扭,挤",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep92/f2.jpg"
+  },
+  {
+   "term": "get rid of",
+   "zh": "摆脱,除掉",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep92/f0.jpg"
+  },
+  {
+   "term": "look after",
+   "zh": "照顾,看管",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep92/f2.jpg"
+  }
+ ],
+ "wordPool": [
+  {
+   "term": "raptor",
+   "zh": "猛禽(类)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep92/f3.jpg"
+  },
+  {
+   "term": "pounce",
+   "zh": "飞扑,猛扑",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep92/f1.jpg"
+  },
+  {
+   "term": "close",
+   "zh": "1. 惊险的,玄乎的,(2. 近的,接近的,3. 关闭)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep92/f1.jpg"
+  },
+  {
+   "term": "concentration",
+   "zh": "集中,专注",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep92/f1.jpg"
+  },
+  {
+   "term": "scare away",
+   "zh": "把...吓跑",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep92/f0.jpg"
+  },
+  {
+   "term": "boast",
+   "zh": "自吹自擂说,吹嘘",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep92/f0.jpg"
+  },
+  {
+   "term": "fall over",
+   "zh": "跌倒",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep92/f2.jpg"
+  },
+  {
+   "term": "nearly",
+   "zh": "几乎",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep92/f2.jpg"
+  },
+  {
+   "term": "discover",
+   "zh": "发现,发觉",
+   "ipa": "dɪˈskʌvə(r)",
+   "illustration": "assets/adv_frames/ep92/f2.jpg"
+  },
+  {
+   "term": "wring",
+   "zh": "拧,扭,挤",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep92/f2.jpg"
+  },
+  {
+   "term": "get rid of",
+   "zh": "摆脱,除掉",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep92/f0.jpg"
+  },
+  {
+   "term": "look after",
+   "zh": "照顾,看管",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep92/f2.jpg"
+  },
+  {
+   "term": "entrance",
+   "zh": "入又",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep92/f3.jpg"
+  },
+  {
+   "term": "talking",
+   "zh": "1. 交谈,谈话,(2. 讲话的)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep92/f2.jpg"
+  },
+  {
+   "term": "tower",
+   "zh": "1. 高耸,(2. 塔,塔楼)",
+   "ipa": "ˈtaʊə(r)",
+   "illustration": "assets/adv_frames/ep92/f3.jpg"
+  },
+  {
+   "term": "tower over",
+   "zh": "高过,胜过",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep92/f2.jpg"
+  },
+  {
+   "term": "calmly",
+   "zh": "冷静地,沉着地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep92/f3.jpg"
+  },
+  {
+   "term": "bother",
+   "zh": "烦扰,打搅",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep92/f2.jpg"
+  },
+  {
+   "term": "villain",
+   "zh": "坏人,恶棍",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep92/f2.jpg"
+  },
+  {
+   "term": "reveal",
+   "zh": "揭露,暴露,泄露(隐藏的事物)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep92/f1.jpg"
+  },
+  {
+   "term": "fang",
+   "zh": "(肉食动物的)牙齿,犬齿",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep92/f1.jpg"
+  },
+  {
+   "term": "swallow",
+   "zh": "咽下,吞下",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep92/f0.jpg"
+  },
+  {
+   "term": "meanwhile",
+   "zh": "同时,在...期间",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep92/f1.jpg"
+  },
+  {
+   "term": "puff",
+   "zh": "1. 膨胀,鼓起,(2. 吹气,喷烟)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep92/f2.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "raptor",
+     "zh": "猛禽(类)",
+     "sprite": "imp"
+    },
+    {
+     "term": "pounce",
+     "zh": "飞扑,猛扑",
+     "sprite": "imp"
+    },
+    {
+     "term": "close",
+     "zh": "1. 惊险的,玄乎的,(2. 近的,接近的,3. 关闭)",
+     "sprite": "imp"
+    },
+    {
+     "term": "concentration",
+     "zh": "集中,专注",
+     "sprite": "imp"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "scare away",
+     "zh": "把...吓跑",
+     "sprite": "imp"
+    },
+    {
+     "term": "boast",
+     "zh": "自吹自擂说,吹嘘",
+     "sprite": "imp"
+    },
+    {
+     "term": "fall over",
+     "zh": "跌倒",
+     "sprite": "imp"
+    },
+    {
+     "term": "nearly",
+     "zh": "几乎",
+     "sprite": "imp"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "discover",
+    "zh": "发现,发觉"
+   },
+   {
+    "term": "wring",
+    "zh": "拧,扭,挤"
+   },
+   {
+    "term": "get rid of",
+    "zh": "摆脱,除掉"
+   },
+   {
+    "term": "look after",
+    "zh": "照顾,看管"
+   }
+  ],
+  "taunts": [
+   "liondemon.1",
+   "liondemon.2",
+   "liondemon.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=92",
+ "npcDialogue": {
+  "intro": {
+   "id": "ep92-map-intro",
+   "lines": [
+    {
+     "id": "ep92-map-intro-1",
+     "sourceNodeId": "n001",
+     "speaker": "narrator",
+     "textEn": "The elephant pointed at Wukong.",
+     "textZh": "老象指了指悟空。",
+     "audioRef": "sent_en:The elephant pointed at Wukong.",
+     "audioStart": 10.934,
+     "audioEnd": 15.33
+    },
+    {
+     "id": "ep92-map-intro-2",
+     "sourceNodeId": "n002",
+     "speaker": "narrator",
+     "textEn": "\"He's not a demon. He's a monkey!\"",
+     "textZh": "\"他不是恶魔,他只是只猴子!\"",
+     "audioRef": "sent_en:\"He's not a demon. He's a monkey!\"",
+     "audioStart": 15.331,
+     "audioEnd": 19.478
+    }
+   ]
+  },
+  "quiz": {
+   "id": "ep92-map-quiz",
+   "lines": [
+    {
+     "id": "ep92-map-quiz-1",
+     "sourceNodeId": "n019",
+     "speaker": "narrator",
+     "textEn": "Wukong turned to Bajie and Wujing.",
+     "textZh": "悟空转过身来,面向八戒和悟净。",
+     "audioRef": "sent_en:Wukong turned to Bajie and Wujing.",
+     "audioStart": 101.762,
+     "audioEnd": 105.096
+    }
+   ],
+   "question": {
+    "id": "ep092-official-quiz-001",
+    "textEn": "which is true?",
+    "textZh": "哪一个是真的？"
+   },
+   "word": {
+    "term": "raptor",
+    "zh": "猛禽(类)",
+    "ipa": ""
+   },
+   "options": [
+    {
+     "id": "a",
+     "textEn": "bajie went with wukong.",
+     "textZh": "八戒和悟空一起去了。",
+     "correct": true,
+     "feedback": "对了。八戒和悟空一起去了。"
+    },
+    {
+     "id": "b",
+     "textEn": "wujing yelled at the demons.",
+     "textZh": "悟净对恶魔们大喊。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    },
+    {
+     "id": "c",
+     "textEn": "the demons were immortal.",
+     "textZh": "这些恶魔是不朽的。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    }
+   ],
+   "lessonCardId": "ep092-official-quiz-001"
+  }
+ },
+ "map": {
+  "theme": "generic",
+  "coordinateSpace": "world-normalized",
+  "worldTiles": 2,
+  "regions": {
+   "hero": 0,
+   "waves": [
+    0,
+    1
+   ],
+   "npc": {
+    "intro": 0,
+    "quiz": 1
+   },
+   "boss": 3
+  },
+  "walkable": {
+   "space": "world",
+   "x": 0.0,
+   "y": 0.16,
+   "w": 1.0,
+   "h": 0.79,
+   "rects": [
+    {
+     "x": 0.0,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.66,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    }
+   ]
+  },
+  "heroSpawn": {
+   "x": 0.06,
+   "y": 0.31
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.31,
+    "y": 0.23
+   },
+   {
+    "x": 0.38,
+    "y": 0.27
+   },
+   {
+    "x": 0.34,
+    "y": 0.33
+   },
+   {
+    "x": 0.41,
+    "y": 0.24
+   }
+  ],
+  "waveSpawns": [
+   [
+    {
+     "x": 0.31,
+     "y": 0.23
+    },
+    {
+     "x": 0.38,
+     "y": 0.27
+    },
+    {
+     "x": 0.34,
+     "y": 0.33
+    },
+    {
+     "x": 0.41,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.81,
+     "y": 0.23
+    },
+    {
+     "x": 0.88,
+     "y": 0.27
+    },
+    {
+     "x": 0.84,
+     "y": 0.33
+    },
+    {
+     "x": 0.91,
+     "y": 0.24
+    }
+   ]
+  ],
+  "orbSpawns": [
+   [
+    {
+     "x": 0.11,
+     "y": 0.25
+    },
+    {
+     "x": 0.16,
+     "y": 0.31
+    },
+    {
+     "x": 0.12,
+     "y": 0.37
+    },
+    {
+     "x": 0.18,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.61,
+     "y": 0.25
+    },
+    {
+     "x": 0.66,
+     "y": 0.31
+    },
+    {
+     "x": 0.62,
+     "y": 0.37
+    },
+    {
+     "x": 0.68,
+     "y": 0.24
+    }
+   ]
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "imp",
+    "nameZh": "小妖",
+    "x": 0.08,
+    "y": 0.26
+   },
+   {
+    "role": "quiz",
+    "sprite": "imp",
+    "nameZh": "小妖",
+    "x": 0.7,
+    "y": 0.39
+   }
+  ],
+  "bossSpot": {
+   "x": 0.94,
+   "y": 0.85
+  }
+ }
+}

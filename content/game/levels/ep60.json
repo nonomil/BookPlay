@@ -1,0 +1,584 @@
+{
+ "schema_version": 1,
+ "ep": 60,
+ "title": {
+  "en": "Snow!",
+  "zh": "西游记 第60集"
+ },
+ "collection": "c08",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "imp",
+   "nameZh": "小妖",
+   "mode": "sparring",
+   "sprite": "imp"
+  },
+  "minors": [
+   {
+    "id": "imp",
+    "nameZh": "小妖",
+    "sprite": "imp"
+   }
+  ]
+ },
+ "background": {
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep60/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "The demon eyed the smiling boy suspiciously.",
+   "textZh": "那个恶魔怀疑地打量着那个面带微笑的男孩。",
+   "illustration": "assets/adv_frames/ep60/f1.jpg",
+   "sourceNodeId": "n001",
+   "audioRef": "sent_en:The demon eyed the smiling boy suspiciously."
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "\"Aren't you scared of me?\" asked the demon.",
+   "textZh": "\"你不怕我吗?\"恶魔问道。",
+   "illustration": "assets/adv_frames/ep60/f2.jpg",
+   "sourceNodeId": "n002",
+   "audioRef": "sent_en:\"Aren't you scared of me?\" asked the demon."
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "eye",
+   "zh": "1. 集中注意力地看,(2. 眼睛)",
+   "ipa": "aɪ",
+   "illustration": "assets/adv_frames/ep60/f1.jpg"
+  },
+  {
+   "term": "suspiciously",
+   "zh": "怀疑地,猜疑地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep60/f1.jpg"
+  },
+  {
+   "term": "not really",
+   "zh": "不完全是",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep60/f1.jpg"
+  },
+  {
+   "term": "hesitate",
+   "zh": "犹豫,踌躇",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep60/f2.jpg"
+  },
+  {
+   "term": "demand",
+   "zh": "1. 查问,质问,(2. 要求,请求)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep60/f2.jpg"
+  },
+  {
+   "term": "ashamed",
+   "zh": "羞愧的,感到难为情的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep60/f0.jpg"
+  },
+  {
+   "term": "trap",
+   "zh": "1. 困(在危险的场所或困境),(2. 陷阱)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep60/f2.jpg"
+  },
+  {
+   "term": "punishment",
+   "zh": "惩罚,处罚",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep60/f3.jpg"
+  },
+  {
+   "term": "lunge",
+   "zh": "冲,扑",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep60/f3.jpg"
+  },
+  {
+   "term": "spun around",
+   "zh": "转身",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep60/f0.jpg"
+  },
+  {
+   "term": "disappear",
+   "zh": "消失",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep60/f0.jpg"
+  },
+  {
+   "term": "capture",
+   "zh": "捕获,俘虏",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep60/f0.jpg"
+  }
+ ],
+ "wordPool": [
+  {
+   "term": "eye",
+   "zh": "1. 集中注意力地看,(2. 眼睛)",
+   "ipa": "aɪ",
+   "illustration": "assets/adv_frames/ep60/f1.jpg"
+  },
+  {
+   "term": "suspiciously",
+   "zh": "怀疑地,猜疑地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep60/f1.jpg"
+  },
+  {
+   "term": "not really",
+   "zh": "不完全是",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep60/f1.jpg"
+  },
+  {
+   "term": "hesitate",
+   "zh": "犹豫,踌躇",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep60/f2.jpg"
+  },
+  {
+   "term": "demand",
+   "zh": "1. 查问,质问,(2. 要求,请求)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep60/f2.jpg"
+  },
+  {
+   "term": "ashamed",
+   "zh": "羞愧的,感到难为情的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep60/f0.jpg"
+  },
+  {
+   "term": "trap",
+   "zh": "1. 困(在危险的场所或困境),(2. 陷阱)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep60/f2.jpg"
+  },
+  {
+   "term": "punishment",
+   "zh": "惩罚,处罚",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep60/f3.jpg"
+  },
+  {
+   "term": "lunge",
+   "zh": "冲,扑",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep60/f3.jpg"
+  },
+  {
+   "term": "spun around",
+   "zh": "转身",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep60/f0.jpg"
+  },
+  {
+   "term": "disappear",
+   "zh": "消失",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep60/f0.jpg"
+  },
+  {
+   "term": "capture",
+   "zh": "捕获,俘虏",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep60/f0.jpg"
+  },
+  {
+   "term": "blew",
+   "zh": "(风等)吹,刮 (blow-blew)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep60/f0.jpg"
+  },
+  {
+   "term": "snowflake",
+   "zh": "雪花,雪片",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep60/f1.jpg"
+  },
+  {
+   "term": "drift",
+   "zh": "(随着水,空气等)漂移,漂流",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep60/f1.jpg"
+  },
+  {
+   "term": "freezing",
+   "zh": "非常冷的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep60/f0.jpg"
+  },
+  {
+   "term": "soundly",
+   "zh": "酣然地(睡)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep60/f2.jpg"
+  },
+  {
+   "term": "comfortable",
+   "zh": "舒服的,舒适的",
+   "ipa": "ˈkʌmftə(r)bl",
+   "illustration": "assets/adv_frames/ep60/f2.jpg"
+  },
+  {
+   "term": "no wonder",
+   "zh": "难怪,怪不得",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep60/f1.jpg"
+  },
+  {
+   "term": "tuck",
+   "zh": "1. 把...舒适温暖地盖好(或包裹起),(2. 塞进)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep60/f1.jpg"
+  },
+  {
+   "term": "cozily",
+   "zh": "舒适地,安乐地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep60/f1.jpg"
+  },
+  {
+   "term": "thief",
+   "zh": "小偷",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep60/f0.jpg"
+  },
+  {
+   "term": "stole",
+   "zh": "偷窃 (steal-stole)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep60/f2.jpg"
+  },
+  {
+   "term": "scratch",
+   "zh": "抓,搔",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep60/f3.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "eye",
+     "zh": "1. 集中注意力地看,(2. 眼睛)",
+     "sprite": "imp"
+    },
+    {
+     "term": "suspiciously",
+     "zh": "怀疑地,猜疑地",
+     "sprite": "imp"
+    },
+    {
+     "term": "not really",
+     "zh": "不完全是",
+     "sprite": "imp"
+    },
+    {
+     "term": "hesitate",
+     "zh": "犹豫,踌躇",
+     "sprite": "imp"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "demand",
+     "zh": "1. 查问,质问,(2. 要求,请求)",
+     "sprite": "imp"
+    },
+    {
+     "term": "ashamed",
+     "zh": "羞愧的,感到难为情的",
+     "sprite": "imp"
+    },
+    {
+     "term": "trap",
+     "zh": "1. 困(在危险的场所或困境),(2. 陷阱)",
+     "sprite": "imp"
+    },
+    {
+     "term": "punishment",
+     "zh": "惩罚,处罚",
+     "sprite": "imp"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "lunge",
+    "zh": "冲,扑"
+   },
+   {
+    "term": "spun around",
+    "zh": "转身"
+   },
+   {
+    "term": "disappear",
+    "zh": "消失"
+   },
+   {
+    "term": "capture",
+    "zh": "捕获,俘虏"
+   }
+  ],
+  "taunts": [
+   "imp.1",
+   "imp.2",
+   "imp.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=60",
+ "npcDialogue": {
+  "intro": {
+   "id": "ep60-map-intro",
+   "lines": [
+    {
+     "id": "ep60-map-intro-1",
+     "sourceNodeId": "n001",
+     "speaker": "narrator",
+     "textEn": "The demon eyed the smiling boy suspiciously.",
+     "textZh": "那个恶魔怀疑地打量着那个面带微笑的男孩。",
+     "audioRef": "sent_en:The demon eyed the smiling boy suspiciously.",
+     "audioStart": 11.0,
+     "audioEnd": 15.253
+    },
+    {
+     "id": "ep60-map-intro-2",
+     "sourceNodeId": "n002",
+     "speaker": "narrator",
+     "textEn": "\"Aren't you scared of me?\" asked the demon.",
+     "textZh": "\"你不怕我吗?\"恶魔问道。",
+     "audioRef": "sent_en:\"Aren't you scared of me?\" asked the demon.",
+     "audioStart": 15.254,
+     "audioEnd": 18.948
+    }
+   ]
+  },
+  "quiz": {
+   "id": "ep60-map-quiz",
+   "lines": [
+    {
+     "id": "ep60-map-quiz-1",
+     "sourceNodeId": "n007",
+     "speaker": "narrator",
+     "textEn": "Suddenly the boy changed into Wukong.",
+     "textZh": "突然,这个男孩化身为孙悟空。",
+     "audioRef": "sent_en:Suddenly the boy changed into Wukong.",
+     "audioStart": 39.791,
+     "audioEnd": 43.68
+    }
+   ],
+   "question": {
+    "id": "ep060-official-quiz-001",
+    "textEn": "which is not true?",
+    "textZh": "哪一项是不正确的？"
+   },
+   "word": {
+    "term": "eye",
+    "zh": "1. 集中注意力地看,(2. 眼睛)",
+    "ipa": "aɪ"
+   },
+   "options": [
+    {
+     "id": "a",
+     "textEn": "wujing took bajie's blanket.",
+     "textZh": "悟净拿了八戒的毯子。",
+     "correct": true,
+     "feedback": "对了。悟净拿了八戒的毯子。"
+    },
+    {
+     "id": "b",
+     "textEn": "wukong saved the boy.",
+     "textZh": "悟空救了那个男孩。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    },
+    {
+     "id": "c",
+     "textEn": "the river was frozen.",
+     "textZh": "河流已经结冰了。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    }
+   ],
+   "lessonCardId": "ep060-official-quiz-001"
+  }
+ },
+ "map": {
+  "theme": "generic",
+  "coordinateSpace": "world-normalized",
+  "worldTiles": 2,
+  "regions": {
+   "hero": 0,
+   "waves": [
+    0,
+    1
+   ],
+   "npc": {
+    "intro": 0,
+    "quiz": 1
+   },
+   "boss": 3
+  },
+  "walkable": {
+   "space": "world",
+   "x": 0.0,
+   "y": 0.16,
+   "w": 1.0,
+   "h": 0.79,
+   "rects": [
+    {
+     "x": 0.0,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.66,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    }
+   ]
+  },
+  "heroSpawn": {
+   "x": 0.06,
+   "y": 0.31
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.31,
+    "y": 0.23
+   },
+   {
+    "x": 0.38,
+    "y": 0.27
+   },
+   {
+    "x": 0.34,
+    "y": 0.33
+   },
+   {
+    "x": 0.41,
+    "y": 0.24
+   }
+  ],
+  "waveSpawns": [
+   [
+    {
+     "x": 0.31,
+     "y": 0.23
+    },
+    {
+     "x": 0.38,
+     "y": 0.27
+    },
+    {
+     "x": 0.34,
+     "y": 0.33
+    },
+    {
+     "x": 0.41,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.81,
+     "y": 0.23
+    },
+    {
+     "x": 0.88,
+     "y": 0.27
+    },
+    {
+     "x": 0.84,
+     "y": 0.33
+    },
+    {
+     "x": 0.91,
+     "y": 0.24
+    }
+   ]
+  ],
+  "orbSpawns": [
+   [
+    {
+     "x": 0.11,
+     "y": 0.25
+    },
+    {
+     "x": 0.16,
+     "y": 0.31
+    },
+    {
+     "x": 0.12,
+     "y": 0.37
+    },
+    {
+     "x": 0.18,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.61,
+     "y": 0.25
+    },
+    {
+     "x": 0.66,
+     "y": 0.31
+    },
+    {
+     "x": 0.62,
+     "y": 0.37
+    },
+    {
+     "x": 0.68,
+     "y": 0.24
+    }
+   ]
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "imp",
+    "nameZh": "小妖",
+    "x": 0.08,
+    "y": 0.26
+   },
+   {
+    "role": "quiz",
+    "sprite": "imp",
+    "nameZh": "小妖",
+    "x": 0.7,
+    "y": 0.39
+   }
+  ],
+  "bossSpot": {
+   "x": 0.94,
+   "y": 0.85
+  }
+ }
+}

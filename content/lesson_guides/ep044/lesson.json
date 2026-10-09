@@ -1,0 +1,2780 @@
+{
+  "schema_version": 1,
+  "episode": 44,
+  "title": {
+    "en": "The King's Ghost",
+    "zh": "西游记 第44集"
+  },
+  "sources": [
+    {
+      "kind": "courseware_main_pptx",
+      "file": "G:\\Game\\BookPlay书戏\\data\\西游记课件\\3.3西游记  Journey to the West PPT课件\\044_Journey to the West 44_The King's Ghost.pptx",
+      "sha256": "9bd5a590ccd35e2781087898ae2d51d0e6a71c0ae215a5b0a5d5af4b63971c3e",
+      "pages": 20
+    },
+    {
+      "kind": "official_quiz_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+      "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929",
+      "pages": 131
+    },
+    {
+      "kind": "intensive_reader_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\02-西游记精读版台词本\\1、带标注版PDF 108集\\044 国王的鬼魂 上.pdf",
+      "sha256": "56853035363c5d9ed354ef74453c53434f339e6e40499090ff8d1846dc938604",
+      "pages": 3
+    },
+    {
+      "kind": "intensive_reader_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\02-西游记精读版台词本\\1、带标注版PDF 108集\\044 国王的鬼魂 下.pdf",
+      "sha256": "d8af5c10454805cfcbb68fb18365229330913ec980cda454aa3097c23eb077ad",
+      "pages": 4
+    },
+    {
+      "kind": "courseware_screenshots_pptx",
+      "file": "G:\\Game\\BookPlay书戏\\data\\西游记课件\\西游记-外教课动画截图\\Journey to the West 044  The King's Ghost_20240114110104.pptx",
+      "sha256": "97401db2882e6a73d85a8f9081f8bfaa641b38b0171ad1a46306d161e31db44d",
+      "pages": 45
+    }
+  ],
+  "cards": [
+    {
+      "card_id": "ep044-official-quiz-001",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 1,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "which is not true?",
+        "zh": "哪一项是不正确的？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "the prince was trapped in a well.",
+            "zh": "王子被困在一口井里。"
+          },
+          {
+            "id": "b",
+            "en": "the king's ghost came to see the tang monk.",
+            "zh": "国王的鬼魂来看唐僧。"
+          },
+          {
+            "id": "c",
+            "en": "the black rooster kingdom suffered a drought.",
+            "zh": "黑公鸡王国遭受了旱灾。"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n004",
+            "quote": "\"My kingdom suffered a horrible drought five years ago. Crops wouldn't grow, and my people were starving. One day a Daoist arrived in the kingdom. He said he had great powers and could pray for rain.\""
+          },
+          {
+            "node_id": "n012",
+            "quote": "\"After the Daoist brought the rain, we became close friends. One day we were walking when I noticed a strange light coming from my well. I went to the well and looked in. Suddenly I felt someone push me in. It was the Daoist! He had made the light with magic so he could trick me. I fell deep into the water, and he sealed the well shut.\""
+          },
+          {
+            "node_id": "n014",
+            "quote": "\"My body is still down there. I'm just a . . . ghost.\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 53,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep044-official-quiz-002",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 2,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "where did the daoist seal the king?",
+        "zh": "道士把国王封在哪里？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "in a well",
+            "zh": "在井里"
+          },
+          {
+            "id": "b",
+            "en": "in a lake",
+            "zh": "在湖里"
+          },
+          {
+            "id": "c",
+            "en": "in the palace",
+            "zh": "在宫殿里"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n012",
+            "quote": "\"After the Daoist brought the rain, we became close friends. One day we were walking when I noticed a strange light coming from my well. I went to the well and looked in. Suddenly I felt someone push me in. It was the Daoist! He had made the light with magic so he could trick me. I fell deep into the water, and he sealed the well shut.\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 53,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep044-official-quiz-003",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 3,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "how did the daoist disguise himself?",
+        "zh": "道士是如何伪装自己的？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "as the king",
+            "zh": "作为国王"
+          },
+          {
+            "id": "b",
+            "en": "as a monk",
+            "zh": "作为一名僧侣"
+          },
+          {
+            "id": "c",
+            "en": "as wukong",
+            "zh": "像悟空"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n018",
+            "quote": "\"The Daoist made himself look like me, and now everyone thinks he's the real king.\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 53,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep044-official-quiz-004",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 4,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "what did the king leave for the tang monk?",
+        "zh": "国王为唐僧留下了什么？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "a jade coin",
+            "zh": "一枚玉币"
+          },
+          {
+            "id": "b",
+            "en": "an arrow",
+            "zh": "一支箭"
+          },
+          {
+            "id": "c",
+            "en": "a rooster",
+            "zh": "一只公鸡"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n035",
+            "quote": "The king held up a jade coin."
+          },
+          {
+            "node_id": "n036",
+            "quote": "\"This is the one royal treasure I still have. When my son sees it, he'll know you're telling the truth.\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 53,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep044-official-quiz-005",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 5,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "what did the prince chase?",
+        "zh": "王子追逐了什么？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "a rabbit",
+            "zh": "一只兔子"
+          },
+          {
+            "id": "b",
+            "en": "a rooster",
+            "zh": "一只公鸡"
+          },
+          {
+            "id": "c",
+            "en": "a coin",
+            "zh": "一枚硬币"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n053",
+            "quote": "The prince chased the rabbit as it ran into a monastery."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 53,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep044-vocab-001",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 101,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "man",
+        "zh": "人,人类"
+      },
+      "payload": {
+        "term": "man",
+        "ipa": "mæn",
+        "pos": "n.",
+        "def": "n.[C]男人[U]人,人类",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "044 国王的鬼魂 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "56853035363c5d9ed354ef74453c53434f339e6e40499090ff8d1846dc938604"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep044-vocab-002",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 102,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "walk",
+        "zh": "步行的路径"
+      },
+      "payload": {
+        "term": "walk",
+        "ipa": "wɔː k",
+        "pos": "n.",
+        "def": "n.[C]行走,步行 v.行走,步行 n.[C]步行的路径",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "044 国王的鬼魂 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "56853035363c5d9ed354ef74453c53434f339e6e40499090ff8d1846dc938604"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep044-vocab-003",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 103,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "ask",
+        "zh": "v.请求,要求,询问"
+      },
+      "payload": {
+        "term": "ask",
+        "ipa": "ɑːsk",
+        "pos": "v.",
+        "def": "v.请求,要求,询问",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "044 国王的鬼魂 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "56853035363c5d9ed354ef74453c53434f339e6e40499090ff8d1846dc938604"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "044 国王的鬼魂 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "d8af5c10454805cfcbb68fb18365229330913ec980cda454aa3097c23eb077ad"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep044-vocab-004",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 104,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "nervous",
+        "zh": "adj.焦虑的,担忧的;神经系统的"
+      },
+      "payload": {
+        "term": "nervous",
+        "ipa": "ˈnɜː(r)vəs",
+        "pos": "adj.",
+        "def": "adj.焦虑的,担忧的;神经系统的",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "044 国王的鬼魂 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "56853035363c5d9ed354ef74453c53434f339e6e40499090ff8d1846dc938604"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep044-vocab-005",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 105,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "king",
+        "zh": "君主,国王"
+      },
+      "payload": {
+        "term": "king",
+        "ipa": "kɪŋ",
+        "pos": "n.",
+        "def": "n.[C]君主,国王",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          1,
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "044 国王的鬼魂 上.pdf",
+          "half": "up",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "56853035363c5d9ed354ef74453c53434f339e6e40499090ff8d1846dc938604"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "044 国王的鬼魂 下.pdf",
+          "half": "down",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "d8af5c10454805cfcbb68fb18365229330913ec980cda454aa3097c23eb077ad"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep044-vocab-006",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 106,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "great",
+        "zh": "伟大的"
+      },
+      "payload": {
+        "term": "great",
+        "ipa": "ɡreɪt",
+        "pos": "adj.",
+        "def": "伟大的",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ],
+        "gloss": "伟大的"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "044 国王的鬼魂 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "56853035363c5d9ed354ef74453c53434f339e6e40499090ff8d1846dc938604"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep044-vocab-007",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 107,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "bring",
+        "zh": "vt.带来,取来,使处于某种状况"
+      },
+      "payload": {
+        "term": "bring",
+        "ipa": "brɪŋ",
+        "pos": "vt.",
+        "def": "vt.带来,取来,使处于某种状况",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "044 国王的鬼魂 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "56853035363c5d9ed354ef74453c53434f339e6e40499090ff8d1846dc938604"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep044-vocab-008",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 108,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "rain",
+        "zh": "雨,雨水"
+      },
+      "payload": {
+        "term": "rain",
+        "ipa": "reɪn",
+        "pos": "vi.",
+        "def": "vi.下雨 n.[C]雨,雨水",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "044 国王的鬼魂 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "56853035363c5d9ed354ef74453c53434f339e6e40499090ff8d1846dc938604"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep044-vocab-009",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 109,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "wonderful",
+        "zh": "adj.精彩的,绝妙的"
+      },
+      "payload": {
+        "term": "wonderful",
+        "ipa": "ˈwʌndəf(ə)l",
+        "pos": "adj.",
+        "def": "adj.精彩的,绝妙的",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "044 国王的鬼魂 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "56853035363c5d9ed354ef74453c53434f339e6e40499090ff8d1846dc938604"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep044-vocab-010",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 110,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "smile",
+        "zh": "笑,微笑"
+      },
+      "payload": {
+        "term": "smile",
+        "ipa": "smaɪ",
+        "pos": "vi.",
+        "def": "vi./n.[C]笑,微笑",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "044 国王的鬼魂 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "56853035363c5d9ed354ef74453c53434f339e6e40499090ff8d1846dc938604"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep044-vocab-011",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 111,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "help",
+        "zh": "有帮助的 人或物 v.帮助,援助"
+      },
+      "payload": {
+        "term": "help",
+        "ipa": "help",
+        "pos": "n.",
+        "def": "n.[U]帮助,援助[sing.]有帮助的 人或物 v.帮助,援助",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "044 国王的鬼魂 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "56853035363c5d9ed354ef74453c53434f339e6e40499090ff8d1846dc938604"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "044 国王的鬼魂 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "d8af5c10454805cfcbb68fb18365229330913ec980cda454aa3097c23eb077ad"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep044-vocab-012",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 112,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "take",
+        "zh": "拿；带走"
+      },
+      "payload": {
+        "term": "take",
+        "ipa": "teɪk",
+        "pos": "v.",
+        "def": "拿；带走",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ],
+        "gloss": "拿；带走"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "044 国王的鬼魂 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "56853035363c5d9ed354ef74453c53434f339e6e40499090ff8d1846dc938604"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep044-vocab-013",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 113,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "deep",
+        "zh": "adj.深的,纵深的 adv.深深地"
+      },
+      "payload": {
+        "term": "deep",
+        "ipa": "diːp",
+        "pos": "adj.",
+        "def": "adj.深的,纵深的 adv.深深地",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "044 国王的鬼魂 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "56853035363c5d9ed354ef74453c53434f339e6e40499090ff8d1846dc938604"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep044-vocab-014",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 114,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "become",
+        "zh": "v.-link.开始变得,变成"
+      },
+      "payload": {
+        "term": "become",
+        "ipa": "bɪˈkʌm",
+        "pos": "v.",
+        "def": "v.-link.开始变得,变成",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "044 国王的鬼魂 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "56853035363c5d9ed354ef74453c53434f339e6e40499090ff8d1846dc938604"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep044-vocab-015",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 115,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "close",
+        "zh": "adj.亲密的,(在空间、时间上) 接近的 adv.接近 v.关闭"
+      },
+      "payload": {
+        "term": "close",
+        "ipa": "kləʊz",
+        "pos": "adj.",
+        "def": "adj.亲密的,(在空间、时间上) 接近的 adv.接近 v.关闭",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "044 国王的鬼魂 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "56853035363c5d9ed354ef74453c53434f339e6e40499090ff8d1846dc938604"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep044-vocab-016",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 116,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "notice",
+        "zh": "注意 v.注意到,意识到"
+      },
+      "payload": {
+        "term": "notice",
+        "ipa": "ˈnəʊtɪs",
+        "pos": "n.",
+        "def": "n.通知,通告 [U]注意 v.注意到,意识到",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "044 国王的鬼魂 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "56853035363c5d9ed354ef74453c53434f339e6e40499090ff8d1846dc938604"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep044-vocab-017",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 117,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "strange",
+        "zh": "adj.奇特的,奇怪的,陌生的"
+      },
+      "payload": {
+        "term": "strange",
+        "ipa": "streɪndʒ",
+        "pos": "adj.",
+        "def": "adj.奇特的,奇怪的,陌生的",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "044 国王的鬼魂 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "56853035363c5d9ed354ef74453c53434f339e6e40499090ff8d1846dc938604"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep044-vocab-018",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 118,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "light",
+        "zh": "电灯 adj.轻的,轻柔的,程度轻的,少 量的,浅色的 v.点燃,照亮"
+      },
+      "payload": {
+        "term": "light",
+        "ipa": "laɪt",
+        "pos": "n.",
+        "def": "n.[U]光,光线,光亮;[C]电灯 adj.轻的,轻柔的,程度轻的,少 量的,浅色的 v.点燃,照亮",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "044 国王的鬼魂 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "56853035363c5d9ed354ef74453c53434f339e6e40499090ff8d1846dc938604"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep044-vocab-019",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 119,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "come",
+        "zh": "vi.来,来到 v.-link.成为,变成,变得"
+      },
+      "payload": {
+        "term": "come",
+        "ipa": "kʌm",
+        "pos": "vi.",
+        "def": "vi.来,来到 v.-link.成为,变成,变得",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "044 国王的鬼魂 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "56853035363c5d9ed354ef74453c53434f339e6e40499090ff8d1846dc938604"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep044-vocab-020",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 120,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "well",
+        "zh": "水井"
+      },
+      "payload": {
+        "term": "well",
+        "ipa": "wel",
+        "pos": "adj.",
+        "def": "adj.健康 adv.好,令人满意地 interj.嗯,好吧 n.[C]水井",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "044 国王的鬼魂 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "56853035363c5d9ed354ef74453c53434f339e6e40499090ff8d1846dc938604"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep044-vocab-021",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 121,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "sudden",
+        "zh": "adj.突然(的)"
+      },
+      "payload": {
+        "term": "sudden",
+        "ipa": "ˈsʌdən",
+        "pos": "adj.",
+        "def": "adj.突然(的)",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          1,
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "044 国王的鬼魂 上.pdf",
+          "half": "up",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "56853035363c5d9ed354ef74453c53434f339e6e40499090ff8d1846dc938604"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "044 国王的鬼魂 下.pdf",
+          "half": "down",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "d8af5c10454805cfcbb68fb18365229330913ec980cda454aa3097c23eb077ad"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep044-vocab-022",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 122,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "push",
+        "zh": "推"
+      },
+      "payload": {
+        "term": "push",
+        "ipa": "pʊʃ",
+        "pos": "v.",
+        "def": "v.鞭策,督促,推动 n.[C]推",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "044 国王的鬼魂 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "56853035363c5d9ed354ef74453c53434f339e6e40499090ff8d1846dc938604"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep044-vocab-023",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 123,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "magic",
+        "zh": "魔术;魔法,魔力,魅力"
+      },
+      "payload": {
+        "term": "magic",
+        "ipa": "ˈmædʒɪk",
+        "pos": "adj.",
+        "def": "adj.有魔力的,有神奇力量的 n.[U]魔术;魔法,魔力,魅力",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "044 国王的鬼魂 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "56853035363c5d9ed354ef74453c53434f339e6e40499090ff8d1846dc938604"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep044-vocab-024",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 124,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "fall",
+        "zh": "落下,瀑布,(美式)秋天"
+      },
+      "payload": {
+        "term": "fall",
+        "ipa": "fɔːl",
+        "pos": "vi.",
+        "def": "vi.倒塌,跌倒,掉落,(数量) 减少,下降 v-link.进入某种状态 n.[C]落下,瀑布,(美式)秋天",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "044 国王的鬼魂 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "56853035363c5d9ed354ef74453c53434f339e6e40499090ff8d1846dc938604"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep044-vocab-025",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 125,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "water",
+        "zh": "(某一江、河、湖、 海的)水域 vt.给......浇水"
+      },
+      "payload": {
+        "term": "water",
+        "ipa": "ˈwɔː tə",
+        "pos": "n.",
+        "def": "n.[U]水[pl.](某一江、河、湖、 海的)水域 vt.给......浇水",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "044 国王的鬼魂 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "56853035363c5d9ed354ef74453c53434f339e6e40499090ff8d1846dc938604"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep044-vocab-026",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 126,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "eye",
+        "zh": "眼睛"
+      },
+      "payload": {
+        "term": "eye",
+        "ipa": "aɪ",
+        "pos": "n.",
+        "def": "n.[C]眼睛",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "044 国王的鬼魂 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "56853035363c5d9ed354ef74453c53434f339e6e40499090ff8d1846dc938604"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep044-vocab-027",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 127,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "body",
+        "zh": "身体;尸体"
+      },
+      "payload": {
+        "term": "body",
+        "ipa": "ˈbɒdi",
+        "pos": "n.",
+        "def": "n.[C]身体;尸体",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "044 国王的鬼魂 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "56853035363c5d9ed354ef74453c53434f339e6e40499090ff8d1846dc938604"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep044-vocab-028",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 128,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "still",
+        "zh": "仍然"
+      },
+      "payload": {
+        "term": "still",
+        "ipa": "stɪl",
+        "pos": "",
+        "def": "仍然",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ],
+        "gloss": "仍然"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "044 国王的鬼魂 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "56853035363c5d9ed354ef74453c53434f339e6e40499090ff8d1846dc938604"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep044-vocab-029",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 129,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "punish",
+        "zh": "vt.处罚,惩罚"
+      },
+      "payload": {
+        "term": "punish",
+        "ipa": "ˈpʌnɪʃ",
+        "pos": "vt.",
+        "def": "vt.处罚,惩罚",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "044 国王的鬼魂 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "56853035363c5d9ed354ef74453c53434f339e6e40499090ff8d1846dc938604"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep044-vocab-030",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 130,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "shake",
+        "zh": "摇动,抖动,奶昔"
+      },
+      "payload": {
+        "term": "shake",
+        "ipa": "ʃeɪk",
+        "pos": "v.",
+        "def": "v.摇动,抖动,(与某人)握手, 发抖 n.[C]摇动,抖动,奶昔",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "044 国王的鬼魂 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "56853035363c5d9ed354ef74453c53434f339e6e40499090ff8d1846dc938604"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep044-vocab-031",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 131,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "think",
+        "zh": "v.认为,想。思考"
+      },
+      "payload": {
+        "term": "think",
+        "ipa": "θɪŋk",
+        "pos": "v.",
+        "def": "v.认为,想。思考",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          1,
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "044 国王的鬼魂 上.pdf",
+          "half": "up",
+          "pages": [
+            1,
+            3
+          ],
+          "sha256": "56853035363c5d9ed354ef74453c53434f339e6e40499090ff8d1846dc938604"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "044 国王的鬼魂 下.pdf",
+          "half": "down",
+          "pages": [
+            1,
+            3
+          ],
+          "sha256": "d8af5c10454805cfcbb68fb18365229330913ec980cda454aa3097c23eb077ad"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep044-vocab-032",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 132,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "spirit",
+        "zh": "情绪"
+      },
+      "payload": {
+        "term": "spirit",
+        "ipa": "ˈspɪrɪt",
+        "pos": "n.",
+        "def": "n.[U]勇气,意志,实质 [C]灵魂,鬼魂,幽灵 [C,U]精神 [pl.]情绪",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          2,
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "044 国王的鬼魂 上.pdf",
+          "half": "up",
+          "pages": [
+            2,
+            3
+          ],
+          "sha256": "56853035363c5d9ed354ef74453c53434f339e6e40499090ff8d1846dc938604"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "044 国王的鬼魂 下.pdf",
+          "half": "down",
+          "pages": [
+            2,
+            3
+          ],
+          "sha256": "d8af5c10454805cfcbb68fb18365229330913ec980cda454aa3097c23eb077ad"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep044-vocab-033",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 133,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "travel",
+        "zh": "游历"
+      },
+      "payload": {
+        "term": "travel",
+        "ipa": "ˈtrævl",
+        "pos": "v.",
+        "def": "v.旅行,游历幽;传播 n.[C,U]旅行[U]游历",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "044 国王的鬼魂 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "d8af5c10454805cfcbb68fb18365229330913ec980cda454aa3097c23eb077ad"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep044-vocab-034",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 134,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "reason",
+        "zh": "正当理由,道理"
+      },
+      "payload": {
+        "term": "reason",
+        "ipa": "ˈriːzn",
+        "pos": "n.",
+        "def": "n.[C]原因,理由 [U]正当理由,道理",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "044 国王的鬼魂 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "d8af5c10454805cfcbb68fb18365229330913ec980cda454aa3097c23eb077ad"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep044-vocab-035",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 135,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "palace",
+        "zh": "王宫,宫殿"
+      },
+      "payload": {
+        "term": "palace",
+        "ipa": "ˈpæləs",
+        "pos": "n.",
+        "def": "n.[C]王宫,宫殿",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "044 国王的鬼魂 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "d8af5c10454805cfcbb68fb18365229330913ec980cda454aa3097c23eb077ad"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep044-vocab-036",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 136,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "fight",
+        "zh": "打架,战斗 v.与......作斗争"
+      },
+      "payload": {
+        "term": "fight",
+        "ipa": "faɪt",
+        "pos": "v.",
+        "def": "v./n.[C]打架,战斗 v.与......作斗争",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "044 国王的鬼魂 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "d8af5c10454805cfcbb68fb18365229330913ec980cda454aa3097c23eb077ad"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep044-vocab-037",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 137,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "private",
+        "zh": "adj.私人的,私密的;私立的"
+      },
+      "payload": {
+        "term": "private",
+        "ipa": "ˈpraɪvət",
+        "pos": "adj.",
+        "def": "adj.私人的,私密的;私立的",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "044 国王的鬼魂 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "d8af5c10454805cfcbb68fb18365229330913ec980cda454aa3097c23eb077ad"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep044-vocab-038",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 138,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "find",
+        "zh": "vt.找到,发现,查找,查明"
+      },
+      "payload": {
+        "term": "find",
+        "ipa": "faɪnd",
+        "pos": "vt.",
+        "def": "vt.找到,发现,查找,查明",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "044 国王的鬼魂 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "d8af5c10454805cfcbb68fb18365229330913ec980cda454aa3097c23eb077ad"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep044-vocab-039",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 139,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "tomorrow",
+        "zh": "明天,未来"
+      },
+      "payload": {
+        "term": "tomorrow",
+        "ipa": "təˈmɒrəʊ",
+        "pos": "adv.",
+        "def": "adv.在明天 n.[U]明天,未来",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "044 国王的鬼魂 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "d8af5c10454805cfcbb68fb18365229330913ec980cda454aa3097c23eb077ad"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep044-vocab-040",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 140,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "believe",
+        "zh": "v.相信,认为有可能"
+      },
+      "payload": {
+        "term": "believe",
+        "ipa": "bɪˈliːv",
+        "pos": "v.",
+        "def": "v.相信,认为有可能",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "044 国王的鬼魂 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "d8af5c10454805cfcbb68fb18365229330913ec980cda454aa3097c23eb077ad"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep044-vocab-041",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 141,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "treasure",
+        "zh": "宝物 vt.珍视,珍惜"
+      },
+      "payload": {
+        "term": "treasure",
+        "ipa": "ˈtreʒə(r)",
+        "pos": "n.",
+        "def": "n.[U]珠宝,财富 [C]宝物 vt.珍视,珍惜",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "044 国王的鬼魂 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "d8af5c10454805cfcbb68fb18365229330913ec980cda454aa3097c23eb077ad"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep044-vocab-042",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 142,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "call",
+        "zh": "电话,叫声圈国"
+      },
+      "payload": {
+        "term": "call",
+        "ipa": "kɔː l",
+        "pos": "v.",
+        "def": "v.给......打电话,把......叫作,呼 喊 n.[C]电话,叫声圈国",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "044 国王的鬼魂 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "d8af5c10454805cfcbb68fb18365229330913ec980cda454aa3097c23eb077ad"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep044-vocab-043",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 143,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "rush",
+        "zh": "迅速移动,仓促,急 促"
+      },
+      "payload": {
+        "term": "rush",
+        "ipa": "rʌʃ",
+        "pos": "v.",
+        "def": "v./n.[sing.]迅速移动,仓促,急 促",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "044 国王的鬼魂 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "d8af5c10454805cfcbb68fb18365229330913ec980cda454aa3097c23eb077ad"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep044-vocab-044",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 144,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "everything",
+        "zh": "pron.所有事物,一切"
+      },
+      "payload": {
+        "term": "everything",
+        "ipa": "ˈevriθɪŋ",
+        "pos": "pron.",
+        "def": "pron.所有事物,一切",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "044 国王的鬼魂 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "d8af5c10454805cfcbb68fb18365229330913ec980cda454aa3097c23eb077ad"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep044-vocab-045",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 145,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "coin",
+        "zh": "硬币"
+      },
+      "payload": {
+        "term": "coin",
+        "ipa": "kɔɪn",
+        "pos": "n.",
+        "def": "n.[C,U]硬币",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "044 国王的鬼魂 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "d8af5c10454805cfcbb68fb18365229330913ec980cda454aa3097c23eb077ad"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep044-vocab-046",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 146,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "dream",
+        "zh": "梦想,睡梦 v.做梦,梦想"
+      },
+      "payload": {
+        "term": "dream",
+        "ipa": "driːm",
+        "pos": "n.",
+        "def": "n.[C]梦想,睡梦 v.做梦,梦想",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "044 国王的鬼魂 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "d8af5c10454805cfcbb68fb18365229330913ec980cda454aa3097c23eb077ad"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep044-vocab-047",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 147,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "ground",
+        "zh": "地,地面"
+      },
+      "payload": {
+        "term": "ground",
+        "ipa": "ɡraʊnd",
+        "pos": "n.",
+        "def": "n.[U]地,地面",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "044 国王的鬼魂 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "d8af5c10454805cfcbb68fb18365229330913ec980cda454aa3097c23eb077ad"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep044-vocab-048",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 148,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "door",
+        "zh": "门"
+      },
+      "payload": {
+        "term": "door",
+        "ipa": "dɔː(r)",
+        "pos": "n.",
+        "def": "n.[C]门",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "044 国王的鬼魂 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "d8af5c10454805cfcbb68fb18365229330913ec980cda454aa3097c23eb077ad"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep044-vocab-049",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 149,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "rabbit",
+        "zh": "兔,野兔"
+      },
+      "payload": {
+        "term": "rabbit",
+        "ipa": "ˈræbɪt",
+        "pos": "n.",
+        "def": "n.[C]兔,野兔",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "044 国王的鬼魂 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "d8af5c10454805cfcbb68fb18365229330913ec980cda454aa3097c23eb077ad"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep044-vocab-050",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 150,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "pig",
+        "zh": "猪"
+      },
+      "payload": {
+        "term": "pig",
+        "ipa": "pɪɡ",
+        "pos": "n.",
+        "def": "n.[C]猪",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "044 国王的鬼魂 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "d8af5c10454805cfcbb68fb18365229330913ec980cda454aa3097c23eb077ad"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep044-vocab-051",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 151,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "monkey",
+        "zh": "猴子"
+      },
+      "payload": {
+        "term": "monkey",
+        "ipa": "ˈmʌŋki",
+        "pos": "n.",
+        "def": "n.[C]猴子",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "044 国王的鬼魂 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "d8af5c10454805cfcbb68fb18365229330913ec980cda454aa3097c23eb077ad"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep044-vocab-052",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 152,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "go",
+        "zh": "vi.去,走 v.link.变成,变得"
+      },
+      "payload": {
+        "term": "go",
+        "ipa": "ɡəʊ",
+        "pos": "vi.",
+        "def": "vi.去,走 v.link.变成,变得",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "044 国王的鬼魂 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "d8af5c10454805cfcbb68fb18365229330913ec980cda454aa3097c23eb077ad"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep044-vocab-053",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 153,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "step",
+        "zh": "步,步骤 vi.踏"
+      },
+      "payload": {
+        "term": "step",
+        "ipa": "step",
+        "pos": "n.",
+        "def": "n.[C]步,步骤 vi.踏",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "044 国王的鬼魂 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "d8af5c10454805cfcbb68fb18365229330913ec980cda454aa3097c23eb077ad"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep044-vocab-054",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 154,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "forward",
+        "zh": "vt.转寄,发送 adv.向前,前进"
+      },
+      "payload": {
+        "term": "forward",
+        "ipa": "ˈfɔː(r)wə(r)d",
+        "pos": "vt.",
+        "def": "vt.转寄,发送 adv.向前,前进",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "044 国王的鬼魂 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "d8af5c10454805cfcbb68fb18365229330913ec980cda454aa3097c23eb077ad"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep044-vocab-055",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 155,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "must",
+        "zh": "必须,一定"
+      },
+      "payload": {
+        "term": "must",
+        "ipa": "mʌst",
+        "pos": "",
+        "def": "必须,一定",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ],
+        "gloss": "必须,一定"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "044 国王的鬼魂 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "d8af5c10454805cfcbb68fb18365229330913ec980cda454aa3097c23eb077ad"
+        }
+      ],
+      "review_status": "machine_verified"
+    }
+  ],
+  "teacher_guide": null,
+  "review": {
+    "status": "draft",
+    "reviewed_at": null,
+    "card_stats": {
+      "total": 60,
+      "sentence_choice": 5,
+      "word_review": 55,
+      "machine_verified": 58,
+      "assistant_reviewed": 2,
+      "verified": 60,
+      "needs_review": 0
+    }
+  },
+  "generated_at": "2026-08-31T04:49:40.965195+00:00"
+}

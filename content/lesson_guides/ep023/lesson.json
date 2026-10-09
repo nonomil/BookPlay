@@ -1,0 +1,3572 @@
+{
+  "schema_version": 1,
+  "episode": 23,
+  "title": {
+    "en": "Great Protectors",
+    "zh": "西游记 第23集"
+  },
+  "sources": [
+    {
+      "kind": "courseware_main_pptx",
+      "file": "G:\\Game\\BookPlay书戏\\data\\西游记课件\\3.3西游记  Journey to the West PPT课件\\023_Journey to the West 23_Great Protectors.pptx",
+      "sha256": "26cdc09d23a264aabbaebe3ac150bca1fb0f98d5a4461711c4d7c77306e81575",
+      "pages": 15
+    },
+    {
+      "kind": "official_quiz_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+      "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929",
+      "pages": 131
+    },
+    {
+      "kind": "intensive_reader_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\02-西游记精读版台词本\\1、带标注版PDF 108集\\023 厉害的护卫 上.pdf",
+      "sha256": "f76302e43d5f3468c5c0a730af4980783a8d2afb95a0a572b3460ec3458d13a0",
+      "pages": 4
+    },
+    {
+      "kind": "intensive_reader_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\02-西游记精读版台词本\\1、带标注版PDF 108集\\023 厉害的护卫 下.pdf",
+      "sha256": "b464c5707cec2bda25ce66d61fb76cac9cba2da341af4718b34140e2bba0195a",
+      "pages": 4
+    },
+    {
+      "kind": "courseware_screenshots_pptx",
+      "file": "G:\\Game\\BookPlay书戏\\data\\西游记课件\\西游记-外教课动画截图\\Journey to the West 023  Great Protectors_20240106164307.pptx",
+      "sha256": "1b1fea99abd4d25be53b983f5f1a4a1ab028d88fc5b3ae8b4a8ae368bfa55fc1",
+      "pages": 46
+    }
+  ],
+  "cards": [
+    {
+      "card_id": "ep023-official-quiz-001",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 1,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "which is not true?",
+        "zh": "哪一项是不正确的？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "wukong caught the tiger.",
+            "zh": "悟空抓住了老虎。"
+          },
+          {
+            "id": "b",
+            "en": "bajie was sent to earth.",
+            "zh": "八戒被送到了地球。"
+          },
+          {
+            "id": "c",
+            "en": "yellow wind was hosting a feast.",
+            "zh": "黄风正在举办一场宴会。"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n027",
+            "quote": "\"I was sent to Earth as a punishment,\" said the pig."
+          },
+          {
+            "node_id": "n028",
+            "quote": "\"My name is Bajie. I caused trouble in Heaven too. Guanyin said I would be forgiven if I helped protect the Tang Monk.\""
+          },
+          {
+            "node_id": "n043",
+            "quote": "\"My master, the great king Yellow Wind, is hosting a feast,\" said the tiger."
+          },
+          {
+            "node_id": "n063",
+            "quote": "But the tiger wasn't there."
+          },
+          {
+            "node_id": "n064",
+            "quote": "Instead a tiger skin lay over a rock."
+          },
+          {
+            "node_id": "n065",
+            "quote": "Wukong laughed. \"He was so scared, he ran right out of his skin!\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 27,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep023-official-quiz-002",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 2,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "what was bajie supposed to do?",
+        "zh": "八戒本应该做什么？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "go with the tang monk",
+            "zh": "跟唐僧走"
+          },
+          {
+            "id": "b",
+            "en": "find guanyin",
+            "zh": "寻找观音"
+          },
+          {
+            "id": "c",
+            "en": "fight wukong",
+            "zh": "与悟空战斗"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n025",
+            "quote": "\"I'm supposed to go with him too!\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 27,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep023-official-quiz-003",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 3,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "why did the tiger want to eat the tang monk?",
+        "zh": "老虎为什么想吃唐僧？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "to live forever",
+            "zh": "永生"
+          },
+          {
+            "id": "b",
+            "en": "to steal the robe",
+            "zh": "偷袍子"
+          },
+          {
+            "id": "c",
+            "en": "to be forgiven",
+            "zh": "被原谅"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n048",
+            "quote": "\"He is the Tang Monk. He's going to the west to get the True Scriptures.\""
+          },
+          {
+            "node_id": "n050",
+            "quote": "\"I heard that eating the Tang Monk will make someone live forever.\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 27,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep023-official-quiz-004",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 4,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "what did wukong and bajie notice?",
+        "zh": "悟空和八戒注意到了什么？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "the tang monk was gone.",
+            "zh": "唐僧不见了。"
+          },
+          {
+            "id": "b",
+            "en": "the tiger caused trouble in heaven.",
+            "zh": "老虎在天上惹了麻烦。"
+          },
+          {
+            "id": "c",
+            "en": "king yellow wind arrived.",
+            "zh": "黄风王到了。"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n068",
+            "quote": "The two friends walked back to the road, laughing."
+          },
+          {
+            "node_id": "n069",
+            "quote": "But suddenly their laughter stopped."
+          },
+          {
+            "node_id": "n070",
+            "quote": "\"Oh no!\" cried Wukong. \"Where is the Tang Monk?\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 27,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep023-official-quiz-005",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 5,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "what did wukong and bajie find on the rock?",
+        "zh": "悟空和八戒在岩石上找到了什么？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "a tiger skin",
+            "zh": "一张虎皮"
+          },
+          {
+            "id": "b",
+            "en": "the tang monk",
+            "zh": "唐僧"
+          },
+          {
+            "id": "c",
+            "en": "their bags",
+            "zh": "他们的包"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n064",
+            "quote": "Instead a tiger skin lay over a rock."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 27,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep023-vocab-001",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 101,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "ear",
+        "zh": "耳朵"
+      },
+      "payload": {
+        "term": "ear",
+        "ipa": "ɪə",
+        "pos": "n.",
+        "def": "n.[C]耳朵",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "023 厉害的护卫 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "f76302e43d5f3468c5c0a730af4980783a8d2afb95a0a572b3460ec3458d13a0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep023-vocab-002",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 102,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "run",
+        "zh": "跑,跑步"
+      },
+      "payload": {
+        "term": "run",
+        "ipa": "rʌn",
+        "pos": "vi.",
+        "def": "vi.跑,奔 vt.经营 n.[C]跑,跑步",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "023 厉害的护卫 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "f76302e43d5f3468c5c0a730af4980783a8d2afb95a0a572b3460ec3458d13a0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep023-vocab-003",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 103,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "leg",
+        "zh": "腿"
+      },
+      "payload": {
+        "term": "leg",
+        "ipa": "leɡ",
+        "pos": "n.",
+        "def": "n.[C]腿",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "023 厉害的护卫 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "f76302e43d5f3468c5c0a730af4980783a8d2afb95a0a572b3460ec3458d13a0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep023-vocab-004",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 104,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "swing",
+        "zh": "摆动,秋千 v.摇摆"
+      },
+      "payload": {
+        "term": "swing",
+        "ipa": "swɪŋ",
+        "pos": "n.",
+        "def": "n.[C]摆动,秋千 v.摇摆",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "023 厉害的护卫 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "f76302e43d5f3468c5c0a730af4980783a8d2afb95a0a572b3460ec3458d13a0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep023-vocab-005",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 105,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "block",
+        "zh": "街区,块 vt.堵塞"
+      },
+      "payload": {
+        "term": "block",
+        "ipa": "blɒk",
+        "pos": "n.",
+        "def": "n.[C]街区,块 vt.堵塞",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "023 厉害的护卫 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "f76302e43d5f3468c5c0a730af4980783a8d2afb95a0a572b3460ec3458d13a0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep023-vocab-006",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 106,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "foot",
+        "zh": "脚,足,英尺"
+      },
+      "payload": {
+        "term": "foot",
+        "ipa": "fʊt",
+        "pos": "n.",
+        "def": "n.[C]脚,足,英尺",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "023 厉害的护卫 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "f76302e43d5f3468c5c0a730af4980783a8d2afb95a0a572b3460ec3458d13a0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep023-vocab-007",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 107,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "cry",
+        "zh": "叫喊"
+      },
+      "payload": {
+        "term": "cry",
+        "ipa": "kraɪ",
+        "pos": "v.",
+        "def": "v./n.[sing.]哭 [C]叫喊",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "023 厉害的护卫 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "f76302e43d5f3468c5c0a730af4980783a8d2afb95a0a572b3460ec3458d13a0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep023-vocab-008",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 108,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "fall",
+        "zh": "落下,瀑布,(美式)秋天"
+      },
+      "payload": {
+        "term": "fall",
+        "ipa": "fɔːl",
+        "pos": "vi.",
+        "def": "vi.倒塌,跌倒,掉落,(数量) 减少,下降 v-link.进入某种状态 n.[C]落下,瀑布,(美式)秋天",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "023 厉害的护卫 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "f76302e43d5f3468c5c0a730af4980783a8d2afb95a0a572b3460ec3458d13a0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep023-vocab-009",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 109,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "jump",
+        "zh": "跳,跃(指运动)"
+      },
+      "payload": {
+        "term": "jump",
+        "ipa": "dʒʌmp",
+        "pos": "v.",
+        "def": "v.跳,跃 n.[C]跳,跃(指运动)",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "023 厉害的护卫 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "f76302e43d5f3468c5c0a730af4980783a8d2afb95a0a572b3460ec3458d13a0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep023-vocab-010",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 110,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "back",
+        "zh": "后面,背部 adj.后面的 adv.回原处,向后地"
+      },
+      "payload": {
+        "term": "back",
+        "ipa": "bæk",
+        "pos": "n.",
+        "def": "n.[C]后面,背部 adj.后面的 adv.回原处,向后地",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          1,
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "023 厉害的护卫 上.pdf",
+          "half": "up",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "f76302e43d5f3468c5c0a730af4980783a8d2afb95a0a572b3460ec3458d13a0"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "023 厉害的护卫 下.pdf",
+          "half": "down",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "b464c5707cec2bda25ce66d61fb76cac9cba2da341af4718b34140e2bba0195a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep023-vocab-011",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 111,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "up",
+        "zh": "adv.向上 prep.向......上游"
+      },
+      "payload": {
+        "term": "up",
+        "ipa": "ʌp",
+        "pos": "adv.",
+        "def": "adv.向上 prep.向......上游",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "023 厉害的护卫 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "f76302e43d5f3468c5c0a730af4980783a8d2afb95a0a572b3460ec3458d13a0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep023-vocab-012",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 112,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "wish",
+        "zh": "祝愿 v.希望,祝愿"
+      },
+      "payload": {
+        "term": "wish",
+        "ipa": "wɪʃ",
+        "pos": "",
+        "def": "后悔这么做的!” n.[C]愿望,希望[pl.]祝愿 v.希望,祝愿",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "023 厉害的护卫 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "f76302e43d5f3468c5c0a730af4980783a8d2afb95a0a572b3460ec3458d13a0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep023-vocab-013",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 113,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "do",
+        "zh": "v.做,干 aux v.构成疑问句和否定句"
+      },
+      "payload": {
+        "term": "do",
+        "ipa": "duː",
+        "pos": "v.",
+        "def": "v.做,干 aux v.构成疑问句和否定句",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          1,
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "023 厉害的护卫 上.pdf",
+          "half": "up",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "f76302e43d5f3468c5c0a730af4980783a8d2afb95a0a572b3460ec3458d13a0"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "023 厉害的护卫 下.pdf",
+          "half": "down",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "b464c5707cec2bda25ce66d61fb76cac9cba2da341af4718b34140e2bba0195a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep023-vocab-014",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 114,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "fight",
+        "zh": "打架,战斗 v.与......作斗争"
+      },
+      "payload": {
+        "term": "fight",
+        "ipa": "faɪt",
+        "pos": "v.",
+        "def": "v./n.[C]打架,战斗 v.与......作斗争",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "023 厉害的护卫 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "f76302e43d5f3468c5c0a730af4980783a8d2afb95a0a572b3460ec3458d13a0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep023-vocab-015",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 115,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "rock",
+        "zh": "摇滚乐"
+      },
+      "payload": {
+        "term": "rock",
+        "ipa": "rɒk",
+        "pos": "n.",
+        "def": "n.[C,U]岩石[U]摇滚乐",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "023 厉害的护卫 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "f76302e43d5f3468c5c0a730af4980783a8d2afb95a0a572b3460ec3458d13a0"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "023 厉害的护卫 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "b464c5707cec2bda25ce66d61fb76cac9cba2da341af4718b34140e2bba0195a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep023-vocab-016",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 116,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "hide",
+        "zh": "v.隐藏,隐蔽;隐瞒,掩盖"
+      },
+      "payload": {
+        "term": "hide",
+        "ipa": "haɪd",
+        "pos": "v.",
+        "def": "v.隐藏,隐蔽;隐瞒,掩盖",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "023 厉害的护卫 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "f76302e43d5f3468c5c0a730af4980783a8d2afb95a0a572b3460ec3458d13a0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep023-vocab-017",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 117,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "behind",
+        "zh": "prep.在......的后面 adv.在......的后面,留在原地"
+      },
+      "payload": {
+        "term": "behind",
+        "ipa": "bɪˈhaɪnd",
+        "pos": "prep.",
+        "def": "prep.在......的后面 adv.在......的后面,留在原地",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "023 厉害的护卫 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "f76302e43d5f3468c5c0a730af4980783a8d2afb95a0a572b3460ec3458d13a0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep023-vocab-018",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 118,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "horse",
+        "zh": "马"
+      },
+      "payload": {
+        "term": "horse",
+        "ipa": "hɔː(r)s",
+        "pos": "n.",
+        "def": "n.[C]马",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "023 厉害的护卫 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "f76302e43d5f3468c5c0a730af4980783a8d2afb95a0a572b3460ec3458d13a0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep023-vocab-019",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 119,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "trouble",
+        "zh": "困 境;麻烦 vt.使烦恼,麻烦"
+      },
+      "payload": {
+        "term": "trouble",
+        "ipa": "ˈtrʌbl",
+        "pos": "n.",
+        "def": "n.[C,U]问题,困难,苦恼[U]困 境;麻烦 vt.使烦恼,麻烦",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "023 厉害的护卫 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "f76302e43d5f3468c5c0a730af4980783a8d2afb95a0a572b3460ec3458d13a0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep023-vocab-020",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 120,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "army",
+        "zh": "陆军,陆军部队"
+      },
+      "payload": {
+        "term": "army",
+        "ipa": "ˈɑː(r)mi",
+        "pos": "n.",
+        "def": "n.[C]陆军,陆军部队",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "023 厉害的护卫 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "f76302e43d5f3468c5c0a730af4980783a8d2afb95a0a572b3460ec3458d13a0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep023-vocab-021",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 121,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "stop",
+        "zh": "车站,停止 v.停止,阻止,逗留"
+      },
+      "payload": {
+        "term": "stop",
+        "ipa": "stɒp",
+        "pos": "n.",
+        "def": "n.[C]车站,停止 v.停止,阻止,逗留",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "023 厉害的护卫 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "f76302e43d5f3468c5c0a730af4980783a8d2afb95a0a572b3460ec3458d13a0"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "023 厉害的护卫 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "b464c5707cec2bda25ce66d61fb76cac9cba2da341af4718b34140e2bba0195a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep023-vocab-022",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 122,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "hear",
+        "zh": "v.听说,听到,听见,接到(信或 电话)"
+      },
+      "payload": {
+        "term": "hear",
+        "ipa": "hɪə",
+        "pos": "v.",
+        "def": "v.听说,听到,听见,接到(信或 电话)",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "023 厉害的护卫 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "f76302e43d5f3468c5c0a730af4980783a8d2afb95a0a572b3460ec3458d13a0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep023-vocab-023",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 123,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "say",
+        "zh": "v.说,讲"
+      },
+      "payload": {
+        "term": "say",
+        "ipa": "seɪ",
+        "pos": "v.",
+        "def": "v.说,讲",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "023 厉害的护卫 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "f76302e43d5f3468c5c0a730af4980783a8d2afb95a0a572b3460ec3458d13a0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep023-vocab-024",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 124,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "think",
+        "zh": "v.认为,想。思考"
+      },
+      "payload": {
+        "term": "think",
+        "ipa": "θɪŋk",
+        "pos": "v.",
+        "def": "v.认为,想。思考",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "023 厉害的护卫 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "f76302e43d5f3468c5c0a730af4980783a8d2afb95a0a572b3460ec3458d13a0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep023-vocab-025",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 125,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "punish",
+        "zh": "vt.处罚,惩罚"
+      },
+      "payload": {
+        "term": "punish",
+        "ipa": "ˈpʌnɪʃ",
+        "pos": "vt.",
+        "def": "vt.处罚,惩罚",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "023 厉害的护卫 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "f76302e43d5f3468c5c0a730af4980783a8d2afb95a0a572b3460ec3458d13a0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep023-vocab-026",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 126,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "mountain",
+        "zh": "高山"
+      },
+      "payload": {
+        "term": "mountain",
+        "ipa": "ˈmaʊntən",
+        "pos": "n.",
+        "def": "n.[C]高山",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "023 厉害的护卫 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "f76302e43d5f3468c5c0a730af4980783a8d2afb95a0a572b3460ec3458d13a0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep023-vocab-027",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 127,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "free",
+        "zh": "adj.空闲的,免费的,自由的 adv.免费 vt.释放,解放,解除"
+      },
+      "payload": {
+        "term": "free",
+        "ipa": "friː",
+        "pos": "adj.",
+        "def": "adj.空闲的,免费的,自由的 adv.免费 vt.释放,解放,解除",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "023 厉害的护卫 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "f76302e43d5f3468c5c0a730af4980783a8d2afb95a0a572b3460ec3458d13a0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep023-vocab-028",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 128,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "now",
+        "zh": "adv.现在,目前"
+      },
+      "payload": {
+        "term": "now",
+        "ipa": "naʊ",
+        "pos": "adv.",
+        "def": "adv.现在,目前",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "023 厉害的护卫 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "f76302e43d5f3468c5c0a730af4980783a8d2afb95a0a572b3460ec3458d13a0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep023-vocab-029",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 129,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "west",
+        "zh": "adv.向西,朝西 adj.向西的,西部的 n.西,西方 下了吗?”"
+      },
+      "payload": {
+        "term": "west",
+        "ipa": "west",
+        "pos": "adv.",
+        "def": "adv.向西,朝西 adj.向西的,西部的 n.西,西方 下了吗?”",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "023 厉害的护卫 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "f76302e43d5f3468c5c0a730af4980783a8d2afb95a0a572b3460ec3458d13a0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep023-vocab-030",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 130,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "pig",
+        "zh": "猪"
+      },
+      "payload": {
+        "term": "pig",
+        "ipa": "pɪɡ",
+        "pos": "n.",
+        "def": "n.[C]猪",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          2,
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "023 厉害的护卫 上.pdf",
+          "half": "up",
+          "pages": [
+            2,
+            3
+          ],
+          "sha256": "f76302e43d5f3468c5c0a730af4980783a8d2afb95a0a572b3460ec3458d13a0"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "023 厉害的护卫 下.pdf",
+          "half": "down",
+          "pages": [
+            2,
+            3
+          ],
+          "sha256": "b464c5707cec2bda25ce66d61fb76cac9cba2da341af4718b34140e2bba0195a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep023-vocab-031",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 131,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "drop",
+        "zh": "滴,下降"
+      },
+      "payload": {
+        "term": "drop",
+        "ipa": "drɒp",
+        "pos": "v.",
+        "def": "v.落下,掉下,扔下,降低 n.[C]滴,下降",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "023 厉害的护卫 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "f76302e43d5f3468c5c0a730af4980783a8d2afb95a0a572b3460ec3458d13a0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep023-vocab-032",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 132,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "suppose",
+        "zh": "vt.推断,料想;假设"
+      },
+      "payload": {
+        "term": "suppose",
+        "ipa": "səˈpəʊz",
+        "pos": "vt.",
+        "def": "vt.推断,料想;假设",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "023 厉害的护卫 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "f76302e43d5f3468c5c0a730af4980783a8d2afb95a0a572b3460ec3458d13a0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep023-vocab-033",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 133,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "go",
+        "zh": "vi.去,走 v.link.变成,变得"
+      },
+      "payload": {
+        "term": "go",
+        "ipa": "ɡəʊ",
+        "pos": "vi.",
+        "def": "vi.去,走 v.link.变成,变得",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "023 厉害的护卫 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "f76302e43d5f3468c5c0a730af4980783a8d2afb95a0a572b3460ec3458d13a0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep023-vocab-034",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 134,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "you",
+        "zh": "pron.你,你们"
+      },
+      "payload": {
+        "term": "you",
+        "ipa": "juː",
+        "pos": "pron.",
+        "def": "pron.你,你们",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "023 厉害的护卫 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "f76302e43d5f3468c5c0a730af4980783a8d2afb95a0a572b3460ec3458d13a0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep023-vocab-035",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 135,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "be",
+        "zh": "v.-link是,存在 aux v.构成被动语态或进行时态"
+      },
+      "payload": {
+        "term": "be",
+        "ipa": "biː",
+        "pos": "v.",
+        "def": "v.-link是,存在 aux v.构成被动语态或进行时态",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "023 厉害的护卫 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "f76302e43d5f3468c5c0a730af4980783a8d2afb95a0a572b3460ec3458d13a0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep023-vocab-036",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 136,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "ask",
+        "zh": "v.请求,要求,询问"
+      },
+      "payload": {
+        "term": "ask",
+        "ipa": "ɑːsk",
+        "pos": "v.",
+        "def": "v.请求,要求,询问",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "023 厉害的护卫 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "f76302e43d5f3468c5c0a730af4980783a8d2afb95a0a572b3460ec3458d13a0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep023-vocab-037",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 137,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "name",
+        "zh": "名字,名称 vt.命名,给......取名"
+      },
+      "payload": {
+        "term": "name",
+        "ipa": "neɪm",
+        "pos": "n.",
+        "def": "n.[C]名字,名称 vt.命名,给......取名",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "023 厉害的护卫 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "f76302e43d5f3468c5c0a730af4980783a8d2afb95a0a572b3460ec3458d13a0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep023-vocab-038",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 138,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "cause",
+        "zh": "原因"
+      },
+      "payload": {
+        "term": "cause",
+        "ipa": "kɔː z",
+        "pos": "vt.",
+        "def": "vt.造成,引起 n.[C]原因",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "023 厉害的护卫 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "f76302e43d5f3468c5c0a730af4980783a8d2afb95a0a572b3460ec3458d13a0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep023-vocab-039",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 139,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "help",
+        "zh": "有帮助的 人或物 v.帮助,援助"
+      },
+      "payload": {
+        "term": "help",
+        "ipa": "help",
+        "pos": "n.",
+        "def": "n.[U]帮助,援助[sing.]有帮助的 人或物 v.帮助,援助",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "023 厉害的护卫 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "f76302e43d5f3468c5c0a730af4980783a8d2afb95a0a572b3460ec3458d13a0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep023-vocab-040",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 140,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "protect",
+        "zh": "v.保护,防护"
+      },
+      "payload": {
+        "term": "protect",
+        "ipa": "prəˈtek",
+        "pos": "v.",
+        "def": "v.保护,防护",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "023 厉害的护卫 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "f76302e43d5f3468c5c0a730af4980783a8d2afb95a0a572b3460ec3458d13a0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep023-vocab-041",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 141,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "carry",
+        "zh": "vt.拿,提,扛,运送,传送,承 载"
+      },
+      "payload": {
+        "term": "carry",
+        "ipa": "ˈkæri",
+        "pos": "vt.",
+        "def": "vt.拿,提,扛,运送,传送,承 载",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "023 厉害的护卫 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "f76302e43d5f3468c5c0a730af4980783a8d2afb95a0a572b3460ec3458d13a0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep023-vocab-042",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 142,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "join",
+        "zh": "v.参加,加入,组合"
+      },
+      "payload": {
+        "term": "join",
+        "ipa": "dʒɔɪn",
+        "pos": "v.",
+        "def": "v.参加,加入,组合",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "023 厉害的护卫 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "f76302e43d5f3468c5c0a730af4980783a8d2afb95a0a572b3460ec3458d13a0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep023-vocab-043",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 143,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "group",
+        "zh": "组,群 vt.把......分组/归类,聚集"
+      },
+      "payload": {
+        "term": "group",
+        "ipa": "ɡruːp",
+        "pos": "n.",
+        "def": "n.[C]组,群 vt.把......分组/归类,聚集",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "023 厉害的护卫 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "f76302e43d5f3468c5c0a730af4980783a8d2afb95a0a572b3460ec3458d13a0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep023-vocab-044",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 144,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "continue",
+        "zh": "v.持续,继续做"
+      },
+      "payload": {
+        "term": "continue",
+        "ipa": "kənˈtɪnjuː",
+        "pos": "v.",
+        "def": "v.持续,继续做",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "023 厉害的护卫 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "f76302e43d5f3468c5c0a730af4980783a8d2afb95a0a572b3460ec3458d13a0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep023-vocab-045",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 145,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "travel",
+        "zh": "游历"
+      },
+      "payload": {
+        "term": "travel",
+        "ipa": "ˈtrævl",
+        "pos": "v.",
+        "def": "v.旅行,游历幽;传播 n.[C,U]旅行[U]游历",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "023 厉害的护卫 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "f76302e43d5f3468c5c0a730af4980783a8d2afb95a0a572b3460ec3458d13a0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep023-vocab-046",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 146,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "bag",
+        "zh": "袋,包"
+      },
+      "payload": {
+        "term": "bag",
+        "ipa": "bæɡ",
+        "pos": "n.",
+        "def": "n.[C]袋,包",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "023 厉害的护卫 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "f76302e43d5f3468c5c0a730af4980783a8d2afb95a0a572b3460ec3458d13a0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep023-vocab-047",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 147,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "heavy",
+        "zh": "adj.重的,大量的,严重的"
+      },
+      "payload": {
+        "term": "heavy",
+        "ipa": "ˈhevi",
+        "pos": "adj.",
+        "def": "adj.重的,大量的,严重的",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "023 厉害的护卫 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "f76302e43d5f3468c5c0a730af4980783a8d2afb95a0a572b3460ec3458d13a0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep023-vocab-048",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 148,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "really",
+        "zh": "西吗?” adv.真正地,确实,非常"
+      },
+      "payload": {
+        "term": "really",
+        "ipa": "ˈriːəli",
+        "pos": "",
+        "def": "西吗?” adv.真正地,确实,非常",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "023 厉害的护卫 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "f76302e43d5f3468c5c0a730af4980783a8d2afb95a0a572b3460ec3458d13a0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep023-vocab-049",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 149,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "bring",
+        "zh": "vt.带来,取来,使处于某种状况"
+      },
+      "payload": {
+        "term": "bring",
+        "ipa": "brɪŋ",
+        "pos": "vt.",
+        "def": "vt.带来,取来,使处于某种状况",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          4
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "023 厉害的护卫 上.pdf",
+          "half": "up",
+          "pages": [
+            4
+          ],
+          "sha256": "f76302e43d5f3468c5c0a730af4980783a8d2afb95a0a572b3460ec3458d13a0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep023-vocab-050",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 150,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "difficult",
+        "zh": "adj.困难的"
+      },
+      "payload": {
+        "term": "difficult",
+        "ipa": "ˈdɪfɪkəlt",
+        "pos": "adj.",
+        "def": "adj.困难的",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          4
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "023 厉害的护卫 上.pdf",
+          "half": "up",
+          "pages": [
+            4
+          ],
+          "sha256": "f76302e43d5f3468c5c0a730af4980783a8d2afb95a0a572b3460ec3458d13a0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep023-vocab-051",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 151,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "hungry",
+        "zh": "adj.饥饿的;渴望得到"
+      },
+      "payload": {
+        "term": "hungry",
+        "ipa": "ˈhʌŋɡri",
+        "pos": "adj.",
+        "def": "adj.饥饿的;渴望得到",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          4
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "023 厉害的护卫 上.pdf",
+          "half": "up",
+          "pages": [
+            4
+          ],
+          "sha256": "f76302e43d5f3468c5c0a730af4980783a8d2afb95a0a572b3460ec3458d13a0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep023-vocab-052",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 152,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "eat",
+        "zh": "v.吃"
+      },
+      "payload": {
+        "term": "eat",
+        "ipa": "iːt",
+        "pos": "v.",
+        "def": "v.吃",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          2,
+          4
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "023 厉害的护卫 上.pdf",
+          "half": "up",
+          "pages": [
+            2,
+            4
+          ],
+          "sha256": "f76302e43d5f3468c5c0a730af4980783a8d2afb95a0a572b3460ec3458d13a0"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "023 厉害的护卫 下.pdf",
+          "half": "down",
+          "pages": [
+            2,
+            4
+          ],
+          "sha256": "b464c5707cec2bda25ce66d61fb76cac9cba2da341af4718b34140e2bba0195a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep023-vocab-053",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 153,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "tiger",
+        "zh": "老虎"
+      },
+      "payload": {
+        "term": "tiger",
+        "ipa": "ˈtaɪɡə(r)",
+        "pos": "n.",
+        "def": "n.[C]老虎",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "023 厉害的护卫 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "b464c5707cec2bda25ce66d61fb76cac9cba2da341af4718b34140e2bba0195a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep023-vocab-054",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 154,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "quick",
+        "zh": "adj.快的,迅速的,敏捷的"
+      },
+      "payload": {
+        "term": "quick",
+        "ipa": "kwɪk",
+        "pos": "adj.",
+        "def": "adj.快的,迅速的,敏捷的",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "023 厉害的护卫 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "b464c5707cec2bda25ce66d61fb76cac9cba2da341af4718b34140e2bba0195a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep023-vocab-055",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 155,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "who",
+        "zh": "pron.谁,什么人"
+      },
+      "payload": {
+        "term": "who",
+        "ipa": "huː",
+        "pos": "pron.",
+        "def": "pron.谁,什么人",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "023 厉害的护卫 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "b464c5707cec2bda25ce66d61fb76cac9cba2da341af4718b34140e2bba0195a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep023-vocab-056",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 156,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "master",
+        "zh": "n.大师,能手,主人,硕士 vt.掌握 adj.熟练的"
+      },
+      "payload": {
+        "term": "master",
+        "ipa": "ˈmɑː stə",
+        "pos": "n.",
+        "def": "n.大师,能手,主人,硕士 vt.掌握 adj.熟练的",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "023 厉害的护卫 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "b464c5707cec2bda25ce66d61fb76cac9cba2da341af4718b34140e2bba0195a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep023-vocab-057",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 157,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "great",
+        "zh": "伟大的"
+      },
+      "payload": {
+        "term": "great",
+        "ipa": "ɡreɪt",
+        "pos": "adj.",
+        "def": "伟大的",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ],
+        "gloss": "伟大的"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "023 厉害的护卫 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "b464c5707cec2bda25ce66d61fb76cac9cba2da341af4718b34140e2bba0195a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep023-vocab-058",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 158,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "turn",
+        "zh": "轮流圈国"
+      },
+      "payload": {
+        "term": "turn",
+        "ipa": "tɜː (r)n",
+        "pos": "v.",
+        "def": "v.转向,翻圈v.-link.(使)变成 n.[C]轮流圈国",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "023 厉害的护卫 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "b464c5707cec2bda25ce66d61fb76cac9cba2da341af4718b34140e2bba0195a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep023-vocab-059",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 159,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "pale",
+        "zh": "adj.苍白的,灰白的"
+      },
+      "payload": {
+        "term": "pale",
+        "ipa": "peɪl",
+        "pos": "adj.",
+        "def": "adj.苍白的,灰白的",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "023 厉害的护卫 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "b464c5707cec2bda25ce66d61fb76cac9cba2da341af4718b34140e2bba0195a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep023-vocab-060",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 160,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "dare",
+        "zh": "挑战"
+      },
+      "payload": {
+        "term": "dare",
+        "ipa": "deə",
+        "pos": "vi.",
+        "def": "vi.敢于,胆敢 modal v.敢,敢于 n.[C]挑战",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "023 厉害的护卫 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "b464c5707cec2bda25ce66d61fb76cac9cba2da341af4718b34140e2bba0195a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep023-vocab-061",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 161,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "eye",
+        "zh": "眼睛"
+      },
+      "payload": {
+        "term": "eye",
+        "ipa": "aɪ",
+        "pos": "n.",
+        "def": "n.[C]眼睛",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "023 厉害的护卫 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "b464c5707cec2bda25ce66d61fb76cac9cba2da341af4718b34140e2bba0195a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep023-vocab-062",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 162,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "open",
+        "zh": "户外,公开"
+      },
+      "payload": {
+        "term": "open",
+        "ipa": "ˈəʊpən",
+        "pos": "v.",
+        "def": "v.开,打开,开业 adj.敞开的,开阔的 n.[sing.]户外,公开",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "023 厉害的护卫 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "b464c5707cec2bda25ce66d61fb76cac9cba2da341af4718b34140e2bba0195a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep023-vocab-063",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 163,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "wide",
+        "zh": "宽的；充分地"
+      },
+      "payload": {
+        "term": "wide",
+        "ipa": "waɪd",
+        "pos": "",
+        "def": "宽的；充分地",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ],
+        "gloss": "宽的；充分地"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "023 厉害的护卫 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "b464c5707cec2bda25ce66d61fb76cac9cba2da341af4718b34140e2bba0195a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep023-vocab-064",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 164,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "live[lɪv] [laɪv]",
+        "zh": "v.居住,生活 adj.活的,生动的,现场直播的"
+      },
+      "payload": {
+        "term": "live[lɪv] [laɪv]",
+        "ipa": "",
+        "pos": "v.",
+        "def": "v.居住,生活 adj.活的,生动的,现场直播的",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "023 厉害的护卫 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "b464c5707cec2bda25ce66d61fb76cac9cba2da341af4718b34140e2bba0195a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep023-vocab-065",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 165,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "forever",
+        "zh": "adv.永远"
+      },
+      "payload": {
+        "term": "forever",
+        "ipa": "fərˈevə(r)",
+        "pos": "adv.",
+        "def": "adv.永远",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "023 厉害的护卫 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "b464c5707cec2bda25ce66d61fb76cac9cba2da341af4718b34140e2bba0195a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep023-vocab-066",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 166,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "hit",
+        "zh": "击中"
+      },
+      "payload": {
+        "term": "hit",
+        "ipa": "hɪt",
+        "pos": "v.",
+        "def": "v.打,袭击 n.[C]击中",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "023 厉害的护卫 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "b464c5707cec2bda25ce66d61fb76cac9cba2da341af4718b34140e2bba0195a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep023-vocab-067",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 167,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "lose",
+        "zh": "v.失去,丢失,输掉,减少,使专 注(于)"
+      },
+      "payload": {
+        "term": "lose",
+        "ipa": "luːz",
+        "pos": "v.",
+        "def": "v.失去,丢失,输掉,减少,使专 注(于)",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "023 厉害的护卫 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "b464c5707cec2bda25ce66d61fb76cac9cba2da341af4718b34140e2bba0195a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep023-vocab-068",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 168,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "orange",
+        "zh": "橙汁,橘黄色 adj.橘黄色的"
+      },
+      "payload": {
+        "term": "orange",
+        "ipa": "ˈɒrɪndʒ",
+        "pos": "n.",
+        "def": "n.[C]橙子[U]橙汁,橘黄色 adj.橘黄色的",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "023 厉害的护卫 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "b464c5707cec2bda25ce66d61fb76cac9cba2da341af4718b34140e2bba0195a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep023-vocab-069",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 169,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "monkey",
+        "zh": "猴子"
+      },
+      "payload": {
+        "term": "monkey",
+        "ipa": "ˈmʌŋki",
+        "pos": "n.",
+        "def": "n.[C]猴子",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "023 厉害的护卫 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "b464c5707cec2bda25ce66d61fb76cac9cba2da341af4718b34140e2bba0195a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep023-vocab-070",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 170,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "instead",
+        "zh": "adv.代替,反而,却,而不是"
+      },
+      "payload": {
+        "term": "instead",
+        "ipa": "ɪnˈsted",
+        "pos": "adv.",
+        "def": "adv.代替,反而,却,而不是",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "023 厉害的护卫 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "b464c5707cec2bda25ce66d61fb76cac9cba2da341af4718b34140e2bba0195a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep023-vocab-071",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 171,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "laugh",
+        "zh": "v.笑,发笑 n.笑声"
+      },
+      "payload": {
+        "term": "laugh",
+        "ipa": "lɑːf",
+        "pos": "v.",
+        "def": "v.笑,发笑 n.笑声",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "023 厉害的护卫 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "b464c5707cec2bda25ce66d61fb76cac9cba2da341af4718b34140e2bba0195a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep023-vocab-072",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 172,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "walk",
+        "zh": "步行的路径"
+      },
+      "payload": {
+        "term": "walk",
+        "ipa": "wɔː k",
+        "pos": "n.",
+        "def": "n.[C]行走,步行 v.行走,步行 n.[C]步行的路径",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "023 厉害的护卫 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "b464c5707cec2bda25ce66d61fb76cac9cba2da341af4718b34140e2bba0195a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep023-vocab-073",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 173,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "sudden",
+        "zh": "adj.突然(的)"
+      },
+      "payload": {
+        "term": "sudden",
+        "ipa": "ˈsʌdən",
+        "pos": "adj.",
+        "def": "adj.突然(的)",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "023 厉害的护卫 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "b464c5707cec2bda25ce66d61fb76cac9cba2da341af4718b34140e2bba0195a"
+        }
+      ],
+      "review_status": "machine_verified"
+    }
+  ],
+  "teacher_guide": null,
+  "review": {
+    "status": "draft",
+    "reviewed_at": null,
+    "card_stats": {
+      "total": 78,
+      "sentence_choice": 5,
+      "word_review": 73,
+      "machine_verified": 75,
+      "assistant_reviewed": 3,
+      "verified": 78,
+      "needs_review": 0
+    }
+  },
+  "generated_at": "2026-08-31T04:49:37.587550+00:00"
+}

@@ -1,0 +1,584 @@
+{
+ "schema_version": 1,
+ "ep": 33,
+ "title": {
+  "en": "Bajie Takes a Nap",
+  "zh": "西游记 第33集"
+ },
+ "collection": "c05",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "bajie",
+   "nameZh": "猪八戒",
+   "mode": "sparring",
+   "sprite": "bajie"
+  },
+  "minors": [
+   {
+    "id": "imp",
+    "nameZh": "小妖",
+    "sprite": "imp"
+   }
+  ]
+ },
+ "background": {
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep33/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "After the Tang Monk sent Wukong away, he and the others continued west.",
+   "textZh": "在唐僧将悟空送走后,他与同伴们继续向西行进。",
+   "illustration": "assets/adv_frames/ep33/f1.jpg",
+   "sourceNodeId": "n001",
+   "audioRef": "sent_en:After the Tang Monk sent Wukong away, he and the others continued west."
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "Later that day they stopped to rest.",
+   "textZh": "当天晚些时候,他们停下来休息了。",
+   "illustration": "assets/adv_frames/ep33/f2.jpg",
+   "sourceNodeId": "n002",
+   "audioRef": "sent_en:Later that day they stopped to rest."
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "let out",
+   "zh": "泄露(消息、秘密等),透露",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep33/f0.jpg"
+  },
+  {
+   "term": "wander off",
+   "zh": "走失,迷路",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep33/f2.jpg"
+  },
+  {
+   "term": "all alone",
+   "zh": "独自",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep33/f0.jpg"
+  },
+  {
+   "term": "everywhere",
+   "zh": "到处,所有地方",
+   "ipa": "ˈevriweə(r)",
+   "illustration": "assets/adv_frames/ep33/f3.jpg"
+  },
+  {
+   "term": "snore",
+   "zh": "打呼",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep33/f1.jpg"
+  },
+  {
+   "term": "head",
+   "zh": "1. (朝特定方向)出发,前进,(2. 头)",
+   "ipa": "hed",
+   "illustration": "assets/adv_frames/ep33/f3.jpg"
+  },
+  {
+   "term": "meanwhile",
+   "zh": "同时,在...期间",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep33/f1.jpg"
+  },
+  {
+   "term": "bored",
+   "zh": "无聊的,厌烦的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep33/f1.jpg"
+  },
+  {
+   "term": "walk",
+   "zh": "走,行走",
+   "ipa": "wɔːk",
+   "illustration": "assets/adv_frames/ep33/f1.jpg"
+  },
+  {
+   "term": "admire",
+   "zh": "佩服,赞赏",
+   "ipa": "ədˈmaɪə(r)",
+   "illustration": "assets/adv_frames/ep33/f0.jpg"
+  },
+  {
+   "term": "midst",
+   "zh": "中间,中央",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep33/f0.jpg"
+  },
+  {
+   "term": "fang",
+   "zh": "(肉食动物的)牙齿,犬齿",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep33/f1.jpg"
+  }
+ ],
+ "wordPool": [
+  {
+   "term": "let out",
+   "zh": "泄露(消息、秘密等),透露",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep33/f0.jpg"
+  },
+  {
+   "term": "wander off",
+   "zh": "走失,迷路",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep33/f2.jpg"
+  },
+  {
+   "term": "all alone",
+   "zh": "独自",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep33/f0.jpg"
+  },
+  {
+   "term": "everywhere",
+   "zh": "到处,所有地方",
+   "ipa": "ˈevriweə(r)",
+   "illustration": "assets/adv_frames/ep33/f3.jpg"
+  },
+  {
+   "term": "snore",
+   "zh": "打呼",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep33/f1.jpg"
+  },
+  {
+   "term": "head",
+   "zh": "1. (朝特定方向)出发,前进,(2. 头)",
+   "ipa": "hed",
+   "illustration": "assets/adv_frames/ep33/f3.jpg"
+  },
+  {
+   "term": "meanwhile",
+   "zh": "同时,在...期间",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep33/f1.jpg"
+  },
+  {
+   "term": "bored",
+   "zh": "无聊的,厌烦的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep33/f1.jpg"
+  },
+  {
+   "term": "walk",
+   "zh": "走,行走",
+   "ipa": "wɔːk",
+   "illustration": "assets/adv_frames/ep33/f1.jpg"
+  },
+  {
+   "term": "admire",
+   "zh": "佩服,赞赏",
+   "ipa": "ədˈmaɪə(r)",
+   "illustration": "assets/adv_frames/ep33/f0.jpg"
+  },
+  {
+   "term": "midst",
+   "zh": "中间,中央",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep33/f0.jpg"
+  },
+  {
+   "term": "fang",
+   "zh": "(肉食动物的)牙齿,犬齿",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep33/f1.jpg"
+  },
+  {
+   "term": "walk away",
+   "zh": "走开,离去",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep33/f2.jpg"
+  },
+  {
+   "term": "fear",
+   "zh": "害怕,恐惧",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep33/f1.jpg"
+  },
+  {
+   "term": "lick",
+   "zh": "(用舌头)舔",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep33/f1.jpg"
+  },
+  {
+   "term": "light up",
+   "zh": "照亮,使发亮",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep33/f3.jpg"
+  },
+  {
+   "term": "peer",
+   "zh": "凝视,盯着看",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep33/f2.jpg"
+  },
+  {
+   "term": "stomp",
+   "zh": "重踩,重踏",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep33/f1.jpg"
+  },
+  {
+   "term": "tofu",
+   "zh": "豆腐",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep33/f3.jpg"
+  },
+  {
+   "term": "wipe",
+   "zh": "擦",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep33/f3.jpg"
+  },
+  {
+   "term": "drool",
+   "zh": "1. 又水,(2. 流又水)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep33/f3.jpg"
+  },
+  {
+   "term": "continue",
+   "zh": "持续",
+   "ipa": "kənˈtɪnjuː",
+   "illustration": "assets/adv_frames/ep33/f1.jpg"
+  },
+  {
+   "term": "stop",
+   "zh": "车站",
+   "ipa": "stɒp",
+   "illustration": "assets/adv_frames/ep33/f1.jpg"
+  },
+  {
+   "term": "grass",
+   "zh": "草",
+   "ipa": "ɡrɑːs",
+   "illustration": "assets/adv_frames/ep33/f1.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "let out",
+     "zh": "泄露(消息、秘密等),透露",
+     "sprite": "imp"
+    },
+    {
+     "term": "wander off",
+     "zh": "走失,迷路",
+     "sprite": "imp"
+    },
+    {
+     "term": "all alone",
+     "zh": "独自",
+     "sprite": "imp"
+    },
+    {
+     "term": "everywhere",
+     "zh": "到处,所有地方",
+     "sprite": "imp"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "snore",
+     "zh": "打呼",
+     "sprite": "imp"
+    },
+    {
+     "term": "head",
+     "zh": "1. (朝特定方向)出发,前进,(2. 头)",
+     "sprite": "imp"
+    },
+    {
+     "term": "meanwhile",
+     "zh": "同时,在...期间",
+     "sprite": "imp"
+    },
+    {
+     "term": "bored",
+     "zh": "无聊的,厌烦的",
+     "sprite": "imp"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "walk",
+    "zh": "走,行走"
+   },
+   {
+    "term": "admire",
+    "zh": "佩服,赞赏"
+   },
+   {
+    "term": "midst",
+    "zh": "中间,中央"
+   },
+   {
+    "term": "fang",
+    "zh": "(肉食动物的)牙齿,犬齿"
+   }
+  ],
+  "taunts": [
+   "bajie.1",
+   "bajie.2",
+   "bajie.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=33",
+ "npcDialogue": {
+  "intro": {
+   "id": "ep33-map-intro",
+   "lines": [
+    {
+     "id": "ep33-map-intro-1",
+     "sourceNodeId": "n001",
+     "speaker": "narrator",
+     "textEn": "After the Tang Monk sent Wukong away, he and the others continued west.",
+     "textZh": "在唐僧将悟空送走后,他与同伴们继续向西行进。",
+     "audioRef": "sent_en:After the Tang Monk sent Wukong away, he and the others continued west.",
+     "audioStart": 11.267,
+     "audioEnd": 19.319
+    },
+    {
+     "id": "ep33-map-intro-2",
+     "sourceNodeId": "n002",
+     "speaker": "narrator",
+     "textEn": "Later that day they stopped to rest.",
+     "textZh": "当天晚些时候,他们停下来休息了。",
+     "audioRef": "sent_en:Later that day they stopped to rest.",
+     "audioStart": 19.32,
+     "audioEnd": 26.872
+    }
+   ]
+  },
+  "quiz": {
+   "id": "ep33-map-quiz",
+   "lines": [
+    {
+     "id": "ep33-map-quiz-1",
+     "sourceNodeId": "n016",
+     "speaker": "narrator",
+     "textEn": "The pig lay down behind some bushes.",
+     "textZh": "猪躺在一些灌木后面。",
+     "audioRef": "sent_en:The pig lay down behind some bushes.",
+     "audioStart": 96.491,
+     "audioEnd": 101.67
+    }
+   ],
+   "question": {
+    "id": "ep033-official-quiz-001",
+    "textEn": "which is not true?",
+    "textZh": "哪一项是不正确的？"
+   },
+   "word": {
+    "term": "let out",
+    "zh": "泄露(消息、秘密等),透露",
+    "ipa": ""
+   },
+   "options": [
+    {
+     "id": "a",
+     "textEn": "wujing ate tofu and noodles.",
+     "textZh": "悟净吃了豆腐和面条。",
+     "correct": true,
+     "feedback": "对了。悟净吃了豆腐和面条。"
+    },
+    {
+     "id": "b",
+     "textEn": "the tang monk was captured.",
+     "textZh": "唐僧被抓了。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    },
+    {
+     "id": "c",
+     "textEn": "bajie slept behind some bushes.",
+     "textZh": "八戒睡在一些灌木后面。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    }
+   ],
+   "lessonCardId": "ep033-official-quiz-001"
+  }
+ },
+ "map": {
+  "theme": "generic",
+  "coordinateSpace": "world-normalized",
+  "worldTiles": 2,
+  "regions": {
+   "hero": 0,
+   "waves": [
+    0,
+    1
+   ],
+   "npc": {
+    "intro": 0,
+    "quiz": 1
+   },
+   "boss": 3
+  },
+  "walkable": {
+   "space": "world",
+   "x": 0.0,
+   "y": 0.16,
+   "w": 1.0,
+   "h": 0.79,
+   "rects": [
+    {
+     "x": 0.0,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.66,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    }
+   ]
+  },
+  "heroSpawn": {
+   "x": 0.06,
+   "y": 0.31
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.31,
+    "y": 0.23
+   },
+   {
+    "x": 0.38,
+    "y": 0.27
+   },
+   {
+    "x": 0.34,
+    "y": 0.33
+   },
+   {
+    "x": 0.41,
+    "y": 0.24
+   }
+  ],
+  "waveSpawns": [
+   [
+    {
+     "x": 0.31,
+     "y": 0.23
+    },
+    {
+     "x": 0.38,
+     "y": 0.27
+    },
+    {
+     "x": 0.34,
+     "y": 0.33
+    },
+    {
+     "x": 0.41,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.81,
+     "y": 0.23
+    },
+    {
+     "x": 0.88,
+     "y": 0.27
+    },
+    {
+     "x": 0.84,
+     "y": 0.33
+    },
+    {
+     "x": 0.91,
+     "y": 0.24
+    }
+   ]
+  ],
+  "orbSpawns": [
+   [
+    {
+     "x": 0.11,
+     "y": 0.25
+    },
+    {
+     "x": 0.16,
+     "y": 0.31
+    },
+    {
+     "x": 0.12,
+     "y": 0.37
+    },
+    {
+     "x": 0.18,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.61,
+     "y": 0.25
+    },
+    {
+     "x": 0.66,
+     "y": 0.31
+    },
+    {
+     "x": 0.62,
+     "y": 0.37
+    },
+    {
+     "x": 0.68,
+     "y": 0.24
+    }
+   ]
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "bajie",
+    "nameZh": "猪八戒",
+    "x": 0.08,
+    "y": 0.26
+   },
+   {
+    "role": "quiz",
+    "sprite": "bajie",
+    "nameZh": "猪八戒",
+    "x": 0.7,
+    "y": 0.39
+   }
+  ],
+  "bossSpot": {
+   "x": 0.94,
+   "y": 0.85
+  }
+ }
+}

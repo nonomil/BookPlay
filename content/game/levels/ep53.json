@@ -1,0 +1,584 @@
+{
+ "schema_version": 1,
+ "ep": 53,
+ "title": {
+  "en": "The Man in the Canoe",
+  "zh": "西游记 第53集"
+ },
+ "collection": "c07",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "redboy",
+   "nameZh": "红孩儿",
+   "mode": "sparring",
+   "sprite": "redboy"
+  },
+  "minors": [
+   {
+    "id": "imp",
+    "nameZh": "小妖",
+    "sprite": "imp"
+   }
+  ]
+ },
+ "background": {
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep53/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "From behind Guanyin, Wukong peeked at Red Boy.",
+   "textZh": "从观音身后,悟空偷偷打量着红孩儿。",
+   "illustration": "assets/adv_frames/ep53/f1.jpg",
+   "sourceNodeId": "n001",
+   "audioRef": "sent_en:From behind Guanyin, Wukong peeked at Red Boy."
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "The demon was trapped by the swords, all pointed at his face.",
+   "textZh": "那个恶魔被数把剑所困,所有剑刃均指向他的面部。",
+   "illustration": "assets/adv_frames/ep53/f2.jpg",
+   "sourceNodeId": "n002",
+   "audioRef": "sent_en:The demon was trapped by the swords, all pointed at his face."
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "flash",
+   "zh": "闪光,闪烁",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep53/f1.jpg"
+  },
+  {
+   "term": "clamp",
+   "zh": "夹紧,固定住",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep53/f3.jpg"
+  },
+  {
+   "term": "wrist",
+   "zh": "手腕",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep53/f3.jpg"
+  },
+  {
+   "term": "ankle",
+   "zh": "脚踝",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep53/f1.jpg"
+  },
+  {
+   "term": "unable",
+   "zh": "不能...的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep53/f2.jpg"
+  },
+  {
+   "term": "wide",
+   "zh": "1. 宽的,广阔的,(2. 张得(或开得)很大地)",
+   "ipa": "waɪd",
+   "illustration": "assets/adv_frames/ep53/f3.jpg"
+  },
+  {
+   "term": "mutter",
+   "zh": "低声嘟囔,喃喃自语",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep53/f3.jpg"
+  },
+  {
+   "term": "canoe",
+   "zh": "独木舟",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep53/f3.jpg"
+  },
+  {
+   "term": "come into",
+   "zh": "看得见,进入视野",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep53/f3.jpg"
+  },
+  {
+   "term": "paddle",
+   "zh": "用桨划(船),(安静地)搅",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep53/f0.jpg"
+  },
+  {
+   "term": "wonder",
+   "zh": "对......感到好奇,想知道",
+   "ipa": "ˈwʌndə(r)",
+   "illustration": "assets/adv_frames/ep53/f2.jpg"
+  },
+  {
+   "term": "scripture",
+   "zh": "经文",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep53/f1.jpg"
+  }
+ ],
+ "wordPool": [
+  {
+   "term": "flash",
+   "zh": "闪光,闪烁",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep53/f1.jpg"
+  },
+  {
+   "term": "clamp",
+   "zh": "夹紧,固定住",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep53/f3.jpg"
+  },
+  {
+   "term": "wrist",
+   "zh": "手腕",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep53/f3.jpg"
+  },
+  {
+   "term": "ankle",
+   "zh": "脚踝",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep53/f1.jpg"
+  },
+  {
+   "term": "unable",
+   "zh": "不能...的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep53/f2.jpg"
+  },
+  {
+   "term": "wide",
+   "zh": "1. 宽的,广阔的,(2. 张得(或开得)很大地)",
+   "ipa": "waɪd",
+   "illustration": "assets/adv_frames/ep53/f3.jpg"
+  },
+  {
+   "term": "mutter",
+   "zh": "低声嘟囔,喃喃自语",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep53/f3.jpg"
+  },
+  {
+   "term": "canoe",
+   "zh": "独木舟",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep53/f3.jpg"
+  },
+  {
+   "term": "come into",
+   "zh": "看得见,进入视野",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep53/f3.jpg"
+  },
+  {
+   "term": "paddle",
+   "zh": "用桨划(船),(安静地)搅",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep53/f0.jpg"
+  },
+  {
+   "term": "wonder",
+   "zh": "对......感到好奇,想知道",
+   "ipa": "ˈwʌndə(r)",
+   "illustration": "assets/adv_frames/ep53/f2.jpg"
+  },
+  {
+   "term": "scripture",
+   "zh": "经文",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep53/f1.jpg"
+  },
+  {
+   "term": "brightly",
+   "zh": "明亮地,闪亮地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep53/f2.jpg"
+  },
+  {
+   "term": "eventually",
+   "zh": "最终",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep53/f3.jpg"
+  },
+  {
+   "term": "passenger",
+   "zh": "乘客,旅客",
+   "ipa": "ˈpæsɪndʒə(r)",
+   "illustration": "assets/adv_frames/ep53/f2.jpg"
+  },
+  {
+   "term": "at a time",
+   "zh": "一次,同时,一下子",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep53/f3.jpg"
+  },
+  {
+   "term": "trust",
+   "zh": "信赖,信任",
+   "ipa": "trʌst",
+   "illustration": "assets/adv_frames/ep53/f2.jpg"
+  },
+  {
+   "term": "willing",
+   "zh": "情愿的,自发的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep53/f2.jpg"
+  },
+  {
+   "term": "glide",
+   "zh": "滑动,滑行",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep53/f1.jpg"
+  },
+  {
+   "term": "halfway",
+   "zh": "中途地,到一半地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep53/f2.jpg"
+  },
+  {
+   "term": "imagine",
+   "zh": "想像",
+   "ipa": "ɪˈmædʒɪn",
+   "illustration": "assets/adv_frames/ep53/f2.jpg"
+  },
+  {
+   "term": "sink",
+   "zh": "下沉",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep53/f3.jpg"
+  },
+  {
+   "term": "surface",
+   "zh": "1. 水面,(2. 表面)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep53/f2.jpg"
+  },
+  {
+   "term": "suspicious",
+   "zh": "可疑的,容易引起怀疑的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep53/f0.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "flash",
+     "zh": "闪光,闪烁",
+     "sprite": "imp"
+    },
+    {
+     "term": "clamp",
+     "zh": "夹紧,固定住",
+     "sprite": "imp"
+    },
+    {
+     "term": "wrist",
+     "zh": "手腕",
+     "sprite": "imp"
+    },
+    {
+     "term": "ankle",
+     "zh": "脚踝",
+     "sprite": "imp"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "unable",
+     "zh": "不能...的",
+     "sprite": "imp"
+    },
+    {
+     "term": "wide",
+     "zh": "1. 宽的,广阔的,(2. 张得(或开得)很大地)",
+     "sprite": "imp"
+    },
+    {
+     "term": "mutter",
+     "zh": "低声嘟囔,喃喃自语",
+     "sprite": "imp"
+    },
+    {
+     "term": "canoe",
+     "zh": "独木舟",
+     "sprite": "imp"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "come into",
+    "zh": "看得见,进入视野"
+   },
+   {
+    "term": "paddle",
+    "zh": "用桨划(船),(安静地)搅"
+   },
+   {
+    "term": "wonder",
+    "zh": "对......感到好奇,想知道"
+   },
+   {
+    "term": "scripture",
+    "zh": "经文"
+   }
+  ],
+  "taunts": [
+   "redboy.1",
+   "redboy.2",
+   "redboy.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=53",
+ "npcDialogue": {
+  "intro": {
+   "id": "ep53-map-intro",
+   "lines": [
+    {
+     "id": "ep53-map-intro-1",
+     "sourceNodeId": "n001",
+     "speaker": "narrator",
+     "textEn": "From behind Guanyin, Wukong peeked at Red Boy.",
+     "textZh": "从观音身后,悟空偷偷打量着红孩儿。",
+     "audioRef": "sent_en:From behind Guanyin, Wukong peeked at Red Boy.",
+     "audioStart": 11.0,
+     "audioEnd": 16.689
+    },
+    {
+     "id": "ep53-map-intro-2",
+     "sourceNodeId": "n002",
+     "speaker": "narrator",
+     "textEn": "The demon was trapped by the swords, all pointed at his face.",
+     "textZh": "那个恶魔被数把剑所困,所有剑刃均指向他的面部。",
+     "audioRef": "sent_en:The demon was trapped by the swords, all pointed at his face.",
+     "audioStart": 16.69,
+     "audioEnd": 21.172
+    }
+   ]
+  },
+  "quiz": {
+   "id": "ep53-map-quiz",
+   "lines": [
+    {
+     "id": "ep53-map-quiz-1",
+     "sourceNodeId": "n002",
+     "speaker": "narrator",
+     "textEn": "The demon was trapped by the swords, all pointed at his face.",
+     "textZh": "那个恶魔被数把剑所困,所有剑刃均指向他的面部。",
+     "audioRef": "sent_en:The demon was trapped by the swords, all pointed at his face.",
+     "audioStart": 16.69,
+     "audioEnd": 21.172
+    }
+   ],
+   "question": {
+    "id": "ep053-official-quiz-001",
+    "textEn": "which is not true?",
+    "textZh": "哪一项是不正确的？"
+   },
+   "word": {
+    "term": "flash",
+    "zh": "闪光,闪烁",
+    "ipa": ""
+   },
+   "options": [
+    {
+     "id": "a",
+     "textEn": "swords didn't scare red boy.",
+     "textZh": "剑不会吓到红孩儿。",
+     "correct": true,
+     "feedback": "对了。剑不会吓到红孩儿。"
+    },
+    {
+     "id": "b",
+     "textEn": "red boy tried to attack guanyin.",
+     "textZh": "红孩儿试图攻击观音。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    },
+    {
+     "id": "c",
+     "textEn": "the tang monk and bajie were kidnapped.",
+     "textZh": "唐僧和八戒被绑架了。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    }
+   ],
+   "lessonCardId": "ep053-official-quiz-001"
+  }
+ },
+ "map": {
+  "theme": "generic",
+  "coordinateSpace": "world-normalized",
+  "worldTiles": 2,
+  "regions": {
+   "hero": 0,
+   "waves": [
+    0,
+    1
+   ],
+   "npc": {
+    "intro": 0,
+    "quiz": 1
+   },
+   "boss": 3
+  },
+  "walkable": {
+   "space": "world",
+   "x": 0.0,
+   "y": 0.16,
+   "w": 1.0,
+   "h": 0.79,
+   "rects": [
+    {
+     "x": 0.0,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.66,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    }
+   ]
+  },
+  "heroSpawn": {
+   "x": 0.06,
+   "y": 0.31
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.31,
+    "y": 0.23
+   },
+   {
+    "x": 0.38,
+    "y": 0.27
+   },
+   {
+    "x": 0.34,
+    "y": 0.33
+   },
+   {
+    "x": 0.41,
+    "y": 0.24
+   }
+  ],
+  "waveSpawns": [
+   [
+    {
+     "x": 0.31,
+     "y": 0.23
+    },
+    {
+     "x": 0.38,
+     "y": 0.27
+    },
+    {
+     "x": 0.34,
+     "y": 0.33
+    },
+    {
+     "x": 0.41,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.81,
+     "y": 0.23
+    },
+    {
+     "x": 0.88,
+     "y": 0.27
+    },
+    {
+     "x": 0.84,
+     "y": 0.33
+    },
+    {
+     "x": 0.91,
+     "y": 0.24
+    }
+   ]
+  ],
+  "orbSpawns": [
+   [
+    {
+     "x": 0.11,
+     "y": 0.25
+    },
+    {
+     "x": 0.16,
+     "y": 0.31
+    },
+    {
+     "x": 0.12,
+     "y": 0.37
+    },
+    {
+     "x": 0.18,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.61,
+     "y": 0.25
+    },
+    {
+     "x": 0.66,
+     "y": 0.31
+    },
+    {
+     "x": 0.62,
+     "y": 0.37
+    },
+    {
+     "x": 0.68,
+     "y": 0.24
+    }
+   ]
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "guanyin",
+    "nameZh": "观音",
+    "x": 0.08,
+    "y": 0.26
+   },
+   {
+    "role": "quiz",
+    "sprite": "guanyin",
+    "nameZh": "观音",
+    "x": 0.7,
+    "y": 0.39
+   }
+  ],
+  "bossSpot": {
+   "x": 0.94,
+   "y": 0.85
+  }
+ }
+}

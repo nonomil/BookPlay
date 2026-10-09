@@ -1,0 +1,3564 @@
+{
+  "schema_version": 1,
+  "episode": 33,
+  "title": {
+    "en": "Bajie Takes a Nap",
+    "zh": "西游记 第33集"
+  },
+  "sources": [
+    {
+      "kind": "courseware_main_pptx",
+      "file": "G:\\Game\\BookPlay书戏\\data\\西游记课件\\3.3西游记  Journey to the West PPT课件\\033_Journey to the West 33_Bajie Takes a Nap.pptx",
+      "sha256": "fdf3353c47a909c97b4a9c1f2b77ba6af80333412ba5f0aa940ae6341c8ded07",
+      "pages": 20
+    },
+    {
+      "kind": "official_quiz_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+      "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929",
+      "pages": 131
+    },
+    {
+      "kind": "intensive_reader_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\02-西游记精读版台词本\\1、带标注版PDF 108集\\033 八戒打瞌睡 上.pdf",
+      "sha256": "586e7ca7f507a714a9a4636bd1af4a0da98bbd163d5d1a2944467c936a8eba75",
+      "pages": 4
+    },
+    {
+      "kind": "intensive_reader_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\02-西游记精读版台词本\\1、带标注版PDF 108集\\033 八戒打瞌睡 下.pdf",
+      "sha256": "49160acabf819768544005ebc971cca77ad29860c49fdbb2bcd65191b15b8a69",
+      "pages": 3
+    },
+    {
+      "kind": "courseware_screenshots_pptx",
+      "file": "G:\\Game\\BookPlay书戏\\data\\西游记课件\\西游记-外教课动画截图\\Journey to the West 033  Bajie Takes a Nap_20240106164611.pptx",
+      "sha256": "fc8bf754dcf61b1df1d1a274b63a4d57b5ed79203d64b6e900aa19d3ed373f24",
+      "pages": 59
+    }
+  ],
+  "cards": [
+    {
+      "card_id": "ep033-official-quiz-001",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 1,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "which is not true?",
+        "zh": "哪一项是不正确的？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "wujing ate tofu and noodles.",
+            "zh": "悟净吃了豆腐和面条。"
+          },
+          {
+            "id": "b",
+            "en": "the tang monk was captured.",
+            "zh": "唐僧被抓了。"
+          },
+          {
+            "id": "c",
+            "en": "bajie slept behind some bushes.",
+            "zh": "八戒睡在一些灌木后面。"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n016",
+            "quote": "The pig lay down behind some bushes."
+          },
+          {
+            "node_id": "n017",
+            "quote": "Soon he was snoring loudly."
+          },
+          {
+            "node_id": "n050",
+            "quote": "He peered behind some bushes and saw the pig fast asleep."
+          },
+          {
+            "node_id": "n051",
+            "quote": "\"May I have more tofu?\" asked Bajie."
+          },
+          {
+            "node_id": "n052",
+            "quote": "He was talking in his sleep."
+          },
+          {
+            "node_id": "n053",
+            "quote": "\"Yes, please cook lots more. I will eat it all.\""
+          },
+          {
+            "node_id": "n060",
+            "quote": "But when they got there, the Tang Monk was gone."
+          },
+          {
+            "node_id": "n068",
+            "quote": "The monster laughed."
+          },
+          {
+            "node_id": "n069",
+            "quote": "\"I have a monk here. I'm going to eat him for dinner!\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 41,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep033-official-quiz-002",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 2,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "what did the tang monk send bajie to do?",
+        "zh": "唐僧让八戒去做什么？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "to find some food",
+            "zh": "去找些食物"
+          },
+          {
+            "id": "b",
+            "en": "to save wujing",
+            "zh": "拯救悟净"
+          },
+          {
+            "id": "c",
+            "en": "to take a nap",
+            "zh": "小睡"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n005",
+            "quote": "\"Bajie,\" said the Tang Monk."
+          },
+          {
+            "node_id": "n006",
+            "quote": "\"Why don't you go find us some food? Wujing and I will wait here.\""
+          },
+          {
+            "node_id": "n007",
+            "quote": "The pig moaned. \"Ugh! I just sat down!\""
+          },
+          {
+            "node_id": "n010",
+            "quote": "Then he wandered off."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 41,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep033-official-quiz-003",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 3,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "why did the tang monk decide to go for a walk?",
+        "zh": "唐僧为什么决定去散步？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "to admire the forest",
+            "zh": "欣赏森林"
+          },
+          {
+            "id": "b",
+            "en": "to look for bajie",
+            "zh": "寻找八戒"
+          },
+          {
+            "id": "c",
+            "en": "to find some food",
+            "zh": "去找些食物"
+          }
+        ],
+        "answer": "c",
+        "answer_evidence": [
+          {
+            "node_id": "n006",
+            "quote": "\"Why don't you go find us some food? Wujing and I will wait here.\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 41,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep033-official-quiz-004",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 4,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "what did the tang monk find in the forest?",
+        "zh": "唐僧在森林里发现了什么？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "a pagoda",
+            "zh": "一座宝塔"
+          },
+          {
+            "id": "b",
+            "en": "a road",
+            "zh": "一条路"
+          },
+          {
+            "id": "c",
+            "en": "a monk",
+            "zh": "一名僧侣"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n025",
+            "quote": "Meanwhile the Tang Monk became bored."
+          },
+          {
+            "node_id": "n030",
+            "quote": "The monk walked quietly through the woods, admiring flowers and plants as he went."
+          },
+          {
+            "node_id": "n031",
+            "quote": "He went deeper and deeper into the forest."
+          },
+          {
+            "node_id": "n032",
+            "quote": "Then, in the midst of all the trees, he saw a pagoda."
+          },
+          {
+            "node_id": "n033",
+            "quote": "\"This is a strange place for a pagoda,\" he thought."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 41,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep033-official-quiz-005",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 5,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "who answered the door of the pagoda?",
+        "zh": "谁开了宝塔的门？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "a monster",
+            "zh": "一个怪物"
+          },
+          {
+            "id": "b",
+            "en": "bajie",
+            "zh": "八戒"
+          },
+          {
+            "id": "c",
+            "en": "wujing",
+            "zh": "五净"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n064",
+            "quote": "They knocked on the door, and the monster answered."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 41,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep033-vocab-001",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 101,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "continue",
+        "zh": "v.持续,继续做"
+      },
+      "payload": {
+        "term": "continue",
+        "ipa": "kənˈtɪnjuː",
+        "pos": "v.",
+        "def": "v.持续,继续做",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "033 八戒打瞌睡 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "586e7ca7f507a714a9a4636bd1af4a0da98bbd163d5d1a2944467c936a8eba75"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep033-vocab-002",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 102,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "stop",
+        "zh": "车站,停止 v.停止,阻止,逗留"
+      },
+      "payload": {
+        "term": "stop",
+        "ipa": "stɒp",
+        "pos": "n.",
+        "def": "n.[C]车站,停止 v.停止,阻止,逗留",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "033 八戒打瞌睡 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "586e7ca7f507a714a9a4636bd1af4a0da98bbd163d5d1a2944467c936a8eba75"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep033-vocab-003",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 103,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "grass",
+        "zh": "草 n.草地"
+      },
+      "payload": {
+        "term": "grass",
+        "ipa": "ɡrɑːs",
+        "pos": "n.",
+        "def": "n.[U]草 n.草地",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "033 八戒打瞌睡 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "586e7ca7f507a714a9a4636bd1af4a0da98bbd163d5d1a2944467c936a8eba75"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep033-vocab-004",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 104,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "great",
+        "zh": "伟大的"
+      },
+      "payload": {
+        "term": "great",
+        "ipa": "ɡreɪt",
+        "pos": "adj.",
+        "def": "伟大的",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ],
+        "gloss": "伟大的"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "033 八戒打瞌睡 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "586e7ca7f507a714a9a4636bd1af4a0da98bbd163d5d1a2944467c936a8eba75"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep033-vocab-005",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 105,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "food",
+        "zh": "(某种)食物"
+      },
+      "payload": {
+        "term": "food",
+        "ipa": "fuːd",
+        "pos": "n.",
+        "def": "n.[C,U](某种)食物",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "033 八戒打瞌睡 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "586e7ca7f507a714a9a4636bd1af4a0da98bbd163d5d1a2944467c936a8eba75"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep033-vocab-006",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 106,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "sit",
+        "zh": "v.坐"
+      },
+      "payload": {
+        "term": "sit",
+        "ipa": "sɪt",
+        "pos": "v.",
+        "def": "v.坐",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "033 八戒打瞌睡 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "586e7ca7f507a714a9a4636bd1af4a0da98bbd163d5d1a2944467c936a8eba75"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep033-vocab-007",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 107,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "down",
+        "zh": "向下"
+      },
+      "payload": {
+        "term": "down",
+        "ipa": "daʊn",
+        "pos": "adj.",
+        "def": "向下",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ],
+        "gloss": "向下"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "033 八戒打瞌睡 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "586e7ca7f507a714a9a4636bd1af4a0da98bbd163d5d1a2944467c936a8eba75"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep033-vocab-008",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 108,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "journey",
+        "zh": "(尤指长途)旅行,行程"
+      },
+      "payload": {
+        "term": "journey",
+        "ipa": "ˈdʒɜː(r)ni",
+        "pos": "n.",
+        "def": "n.[C](尤指长途)旅行,行程",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "033 八戒打瞌睡 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "586e7ca7f507a714a9a4636bd1af4a0da98bbd163d5d1a2944467c936a8eba75"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep033-vocab-009",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 109,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "difficult",
+        "zh": "adj.困难的"
+      },
+      "payload": {
+        "term": "difficult",
+        "ipa": "ˈdɪfɪkəlt",
+        "pos": "adj.",
+        "def": "adj.困难的",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "033 八戒打瞌睡 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "586e7ca7f507a714a9a4636bd1af4a0da98bbd163d5d1a2944467c936a8eba75"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep033-vocab-010",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 110,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "walk",
+        "zh": "步行的路径"
+      },
+      "payload": {
+        "term": "walk",
+        "ipa": "wɔː k",
+        "pos": "n.",
+        "def": "n.[C]行走,步行 v.行走,步行 n.[C]步行的路径",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          1,
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "033 八戒打瞌睡 上.pdf",
+          "half": "up",
+          "pages": [
+            1,
+            3
+          ],
+          "sha256": "586e7ca7f507a714a9a4636bd1af4a0da98bbd163d5d1a2944467c936a8eba75"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "033 八戒打瞌睡 下.pdf",
+          "half": "down",
+          "pages": [
+            1,
+            3
+          ],
+          "sha256": "49160acabf819768544005ebc971cca77ad29860c49fdbb2bcd65191b15b8a69"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep033-vocab-011",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 111,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "alone",
+        "zh": "adv.独自,单独 adj.孤独的"
+      },
+      "payload": {
+        "term": "alone",
+        "ipa": "əˈləʊn",
+        "pos": "adv.",
+        "def": "adv.独自,单独 adj.孤独的",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "033 八戒打瞌睡 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "586e7ca7f507a714a9a4636bd1af4a0da98bbd163d5d1a2944467c936a8eba75"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep033-vocab-012",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 112,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "look",
+        "zh": "寻找"
+      },
+      "payload": {
+        "term": "look",
+        "ipa": "lʊk",
+        "pos": "vi.",
+        "def": "寻找",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          1,
+          3
+        ],
+        "gloss": "寻找"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "033 八戒打瞌睡 上.pdf",
+          "half": "up",
+          "pages": [
+            1,
+            3
+          ],
+          "sha256": "586e7ca7f507a714a9a4636bd1af4a0da98bbd163d5d1a2944467c936a8eba75"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "033 八戒打瞌睡 下.pdf",
+          "half": "down",
+          "pages": [
+            1,
+            3
+          ],
+          "sha256": "49160acabf819768544005ebc971cca77ad29860c49fdbb2bcd65191b15b8a69"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep033-vocab-013",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 113,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "search",
+        "zh": "/v.搜索,搜查"
+      },
+      "payload": {
+        "term": "search",
+        "ipa": "sɜː(r)tʃ",
+        "pos": "n.",
+        "def": "n.[C]/v.搜索,搜查",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "033 八戒打瞌睡 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "586e7ca7f507a714a9a4636bd1af4a0da98bbd163d5d1a2944467c936a8eba75"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep033-vocab-014",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 114,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "everywhere",
+        "zh": "adv.处处,到处,各个地方"
+      },
+      "payload": {
+        "term": "everywhere",
+        "ipa": "ˈevriweə(r)",
+        "pos": "adv.",
+        "def": "adv.处处,到处,各个地方",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "033 八戒打瞌睡 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "586e7ca7f507a714a9a4636bd1af4a0da98bbd163d5d1a2944467c936a8eba75"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep033-vocab-015",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 115,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "pig",
+        "zh": "猪"
+      },
+      "payload": {
+        "term": "pig",
+        "ipa": "pɪɡ",
+        "pos": "n.",
+        "def": "n.[C]猪",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "033 八戒打瞌睡 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "586e7ca7f507a714a9a4636bd1af4a0da98bbd163d5d1a2944467c936a8eba75"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "033 八戒打瞌睡 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "49160acabf819768544005ebc971cca77ad29860c49fdbb2bcd65191b15b8a69"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep033-vocab-016",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 116,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "loud",
+        "zh": "adj.响亮的,大声的 adv.大声地,响亮地"
+      },
+      "payload": {
+        "term": "loud",
+        "ipa": "laʊd",
+        "pos": "adj.",
+        "def": "adj.响亮的,大声的 adv.大声地,响亮地",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "033 八戒打瞌睡 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "586e7ca7f507a714a9a4636bd1af4a0da98bbd163d5d1a2944467c936a8eba75"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep033-vocab-017",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 117,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "wait",
+        "zh": "v.等待,等候"
+      },
+      "payload": {
+        "term": "wait",
+        "ipa": "weɪt",
+        "pos": "v.",
+        "def": "v.等待,等候",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "033 八戒打瞌睡 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "586e7ca7f507a714a9a4636bd1af4a0da98bbd163d5d1a2944467c936a8eba75"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "033 八戒打瞌睡 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "49160acabf819768544005ebc971cca77ad29860c49fdbb2bcd65191b15b8a69"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep033-vocab-018",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 118,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "road",
+        "zh": "路"
+      },
+      "payload": {
+        "term": "road",
+        "ipa": "rəʊd",
+        "pos": "n.",
+        "def": "n.[C]路",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "033 八戒打瞌睡 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "586e7ca7f507a714a9a4636bd1af4a0da98bbd163d5d1a2944467c936a8eba75"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep033-vocab-019",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 119,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "take",
+        "zh": "拿；带走"
+      },
+      "payload": {
+        "term": "take",
+        "ipa": "teɪk",
+        "pos": "v.",
+        "def": "拿；带走",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ],
+        "gloss": "拿；带走"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "033 八戒打瞌睡 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "586e7ca7f507a714a9a4636bd1af4a0da98bbd163d5d1a2944467c936a8eba75"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep033-vocab-020",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 120,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "long",
+        "zh": "adj.长的 adv.长久的"
+      },
+      "payload": {
+        "term": "long",
+        "ipa": "lɒŋ",
+        "pos": "adj.",
+        "def": "adj.长的 adv.长久的",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "033 八戒打瞌睡 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "586e7ca7f507a714a9a4636bd1af4a0da98bbd163d5d1a2944467c936a8eba75"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep033-vocab-021",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 121,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "probably",
+        "zh": "adv.很可能,大概"
+      },
+      "payload": {
+        "term": "probably",
+        "ipa": "ˈprɒbəbli",
+        "pos": "adv.",
+        "def": "adv.很可能,大概",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "033 八戒打瞌睡 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "586e7ca7f507a714a9a4636bd1af4a0da98bbd163d5d1a2944467c936a8eba75"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep033-vocab-022",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 122,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "find",
+        "zh": "vt.找到,发现,查找,查明"
+      },
+      "payload": {
+        "term": "find",
+        "ipa": "faɪnd",
+        "pos": "vt.",
+        "def": "vt.找到,发现,查找,查明",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "033 八戒打瞌睡 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "586e7ca7f507a714a9a4636bd1af4a0da98bbd163d5d1a2944467c936a8eba75"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep033-vocab-023",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 123,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "eat",
+        "zh": "v.吃"
+      },
+      "payload": {
+        "term": "eat",
+        "ipa": "iːt",
+        "pos": "v.",
+        "def": "v.吃",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "033 八戒打瞌睡 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "586e7ca7f507a714a9a4636bd1af4a0da98bbd163d5d1a2944467c936a8eba75"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "033 八戒打瞌睡 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "49160acabf819768544005ebc971cca77ad29860c49fdbb2bcd65191b15b8a69"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep033-vocab-024",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 124,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "head",
+        "zh": "队首 vi.朝(某方向)行进"
+      },
+      "payload": {
+        "term": "head",
+        "ipa": "hed",
+        "pos": "n.",
+        "def": "n.[C]头(部)[C,U]负责人 [sing.]队首 vi.朝(某方向)行进",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "033 八戒打瞌睡 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "586e7ca7f507a714a9a4636bd1af4a0da98bbd163d5d1a2944467c936a8eba75"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep033-vocab-025",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 125,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "voice",
+        "zh": "发言 权;主/被动语态 vt.表达(情感或意见)"
+      },
+      "payload": {
+        "term": "voice",
+        "ipa": "vɔɪs",
+        "pos": "n.",
+        "def": "n.[C,U]声音,嗓音[sing.]发言 权;主/被动语态 vt.表达(情感或意见)",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "033 八戒打瞌睡 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "586e7ca7f507a714a9a4636bd1af4a0da98bbd163d5d1a2944467c936a8eba75"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep033-vocab-026",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 126,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "sudden",
+        "zh": "adj.突然(的)"
+      },
+      "payload": {
+        "term": "sudden",
+        "ipa": "ˈsʌdən",
+        "pos": "adj.",
+        "def": "adj.突然(的)",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "033 八戒打瞌睡 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "586e7ca7f507a714a9a4636bd1af4a0da98bbd163d5d1a2944467c936a8eba75"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep033-vocab-027",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 127,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "noodle",
+        "zh": "面条"
+      },
+      "payload": {
+        "term": "noodle",
+        "ipa": "ˈnuːdl",
+        "pos": "n.",
+        "def": "n.[C]面条",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "033 八戒打瞌睡 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "586e7ca7f507a714a9a4636bd1af4a0da98bbd163d5d1a2944467c936a8eba75"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep033-vocab-028",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 128,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "not",
+        "zh": "adv.不,没有"
+      },
+      "payload": {
+        "term": "not",
+        "ipa": "nɒt",
+        "pos": "adv.",
+        "def": "adv.不,没有",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "033 八戒打瞌睡 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "586e7ca7f507a714a9a4636bd1af4a0da98bbd163d5d1a2944467c936a8eba75"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep033-vocab-029",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 129,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "share",
+        "zh": "一份"
+      },
+      "payload": {
+        "term": "share",
+        "ipa": "ʃeə",
+        "pos": "v.",
+        "def": "v.分享,分担,共用,分摊 n.[sing.]一份",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "033 八戒打瞌睡 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "586e7ca7f507a714a9a4636bd1af4a0da98bbd163d5d1a2944467c936a8eba75"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep033-vocab-030",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 130,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "forest",
+        "zh": "森林"
+      },
+      "payload": {
+        "term": "forest",
+        "ipa": "ˈfɒrɪst",
+        "pos": "n.",
+        "def": "n.[C,U]森林",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "033 八戒打瞌睡 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "586e7ca7f507a714a9a4636bd1af4a0da98bbd163d5d1a2944467c936a8eba75"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep033-vocab-031",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 131,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "quiet",
+        "zh": "宁静,安静"
+      },
+      "payload": {
+        "term": "quiet",
+        "ipa": "ˈkwaɪət",
+        "pos": "adj.",
+        "def": "adj.安静的 n.[U]宁静,安静",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "033 八戒打瞌睡 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "586e7ca7f507a714a9a4636bd1af4a0da98bbd163d5d1a2944467c936a8eba75"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep033-vocab-032",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 132,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "wood",
+        "zh": "树林"
+      },
+      "payload": {
+        "term": "wood",
+        "ipa": "wʊd",
+        "pos": "n.",
+        "def": "n.[C,U]木,木头[C]树林",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "033 八戒打瞌睡 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "586e7ca7f507a714a9a4636bd1af4a0da98bbd163d5d1a2944467c936a8eba75"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "033 八戒打瞌睡 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "49160acabf819768544005ebc971cca77ad29860c49fdbb2bcd65191b15b8a69"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep033-vocab-033",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 133,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "admire",
+        "zh": "vt.欣赏,仰慕,钦佩"
+      },
+      "payload": {
+        "term": "admire",
+        "ipa": "ədˈmaɪə(r)",
+        "pos": "vt.",
+        "def": "vt.欣赏,仰慕,钦佩",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "033 八戒打瞌睡 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "586e7ca7f507a714a9a4636bd1af4a0da98bbd163d5d1a2944467c936a8eba75"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep033-vocab-034",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 134,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "flower",
+        "zh": "花"
+      },
+      "payload": {
+        "term": "flower",
+        "ipa": "ˈflaʊə(r)",
+        "pos": "n.",
+        "def": "n.[C]花",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "033 八戒打瞌睡 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "586e7ca7f507a714a9a4636bd1af4a0da98bbd163d5d1a2944467c936a8eba75"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep033-vocab-035",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 135,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "plant",
+        "zh": "植物"
+      },
+      "payload": {
+        "term": "plant",
+        "ipa": "plɑːnt",
+        "pos": "vt.",
+        "def": "vt.种植 n.[C]植物",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "033 八戒打瞌睡 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "586e7ca7f507a714a9a4636bd1af4a0da98bbd163d5d1a2944467c936a8eba75"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep033-vocab-036",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 136,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "go",
+        "zh": "vi.去,走 v.link.变成,变得"
+      },
+      "payload": {
+        "term": "go",
+        "ipa": "ɡəʊ",
+        "pos": "vi.",
+        "def": "vi.去,走 v.link.变成,变得",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "033 八戒打瞌睡 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "586e7ca7f507a714a9a4636bd1af4a0da98bbd163d5d1a2944467c936a8eba75"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "033 八戒打瞌睡 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "49160acabf819768544005ebc971cca77ad29860c49fdbb2bcd65191b15b8a69"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep033-vocab-037",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 137,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "deep",
+        "zh": "adj.深的,纵深的 adv.深深地"
+      },
+      "payload": {
+        "term": "deep",
+        "ipa": "diːp",
+        "pos": "adj.",
+        "def": "adj.深的,纵深的 adv.深深地",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "033 八戒打瞌睡 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "586e7ca7f507a714a9a4636bd1af4a0da98bbd163d5d1a2944467c936a8eba75"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep033-vocab-038",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 138,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "into",
+        "zh": "prep.到......里面,进入,(表示 状态的变化)"
+      },
+      "payload": {
+        "term": "into",
+        "ipa": "ˈɪntuː",
+        "pos": "prep.",
+        "def": "prep.到......里面,进入,(表示 状态的变化)",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "033 八戒打瞌睡 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "586e7ca7f507a714a9a4636bd1af4a0da98bbd163d5d1a2944467c936a8eba75"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep033-vocab-039",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 139,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "strange",
+        "zh": "adj.奇特的,奇怪的,陌生的"
+      },
+      "payload": {
+        "term": "strange",
+        "ipa": "streɪndʒ",
+        "pos": "adj.",
+        "def": "adj.奇特的,奇怪的,陌生的",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "033 八戒打瞌睡 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "49160acabf819768544005ebc971cca77ad29860c49fdbb2bcd65191b15b8a69"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep033-vocab-040",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 140,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "place",
+        "zh": "地点,位置,名次,地位, 有某种用途的建筑 vt.放置"
+      },
+      "payload": {
+        "term": "place",
+        "ipa": "pleɪs",
+        "pos": "n.",
+        "def": "n.[C]地点,位置,名次,地位, 有某种用途的建筑 vt.放置",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "033 八戒打瞌睡 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "49160acabf819768544005ebc971cca77ad29860c49fdbb2bcd65191b15b8a69"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep033-vocab-041",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 141,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "tonight",
+        "zh": "(在)今晚,(在)今 夜"
+      },
+      "payload": {
+        "term": "tonight",
+        "ipa": "təˈnaɪt",
+        "pos": "adv.",
+        "def": "adv./n.[U](在)今晚,(在)今 夜",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "033 八戒打瞌睡 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "49160acabf819768544005ebc971cca77ad29860c49fdbb2bcd65191b15b8a69"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep033-vocab-042",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 142,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "purple",
+        "zh": "紫色(的)"
+      },
+      "payload": {
+        "term": "purple",
+        "ipa": "ˈpɜː (r)pl",
+        "pos": "adj.",
+        "def": "adj./n.[C,U]紫色(的)",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "033 八戒打瞌睡 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "49160acabf819768544005ebc971cca77ad29860c49fdbb2bcd65191b15b8a69"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep033-vocab-043",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 143,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "try",
+        "zh": "尝试,设法,努力"
+      },
+      "payload": {
+        "term": "try",
+        "ipa": "traɪ",
+        "pos": "v.",
+        "def": "v./n.[C]尝试,设法,努力",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "033 八戒打瞌睡 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "49160acabf819768544005ebc971cca77ad29860c49fdbb2bcd65191b15b8a69"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep033-vocab-044",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 144,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "who",
+        "zh": "pron.谁,什么人"
+      },
+      "payload": {
+        "term": "who",
+        "ipa": "huː",
+        "pos": "pron.",
+        "def": "pron.谁,什么人",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "033 八戒打瞌睡 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "49160acabf819768544005ebc971cca77ad29860c49fdbb2bcd65191b15b8a69"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep033-vocab-045",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 145,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "call",
+        "zh": "电话,叫声圈国"
+      },
+      "payload": {
+        "term": "call",
+        "ipa": "kɔː l",
+        "pos": "v.",
+        "def": "v.给......打电话,把......叫作,呼 喊 n.[C]电话,叫声圈国",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "033 八戒打瞌睡 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "49160acabf819768544005ebc971cca77ad29860c49fdbb2bcd65191b15b8a69"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep033-vocab-046",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 146,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "stand",
+        "zh": "v.忍受,站立"
+      },
+      "payload": {
+        "term": "stand",
+        "ipa": "stænd",
+        "pos": "v.",
+        "def": "v.忍受,站立",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "033 八戒打瞌睡 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "49160acabf819768544005ebc971cca77ad29860c49fdbb2bcd65191b15b8a69"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep033-vocab-047",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 147,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "sorry",
+        "zh": "adj.抱歉的,难过的,惋惜的"
+      },
+      "payload": {
+        "term": "sorry",
+        "ipa": "ˈsɒri",
+        "pos": "adj.",
+        "def": "adj.抱歉的,难过的,惋惜的",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "033 八戒打瞌睡 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "49160acabf819768544005ebc971cca77ad29860c49fdbb2bcd65191b15b8a69"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep033-vocab-048",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 148,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "wake",
+        "zh": "v.弄醒,醒 n.(常构成搭配)"
+      },
+      "payload": {
+        "term": "wake",
+        "ipa": "weɪk",
+        "pos": "v.",
+        "def": "v.弄醒,醒 n.(常构成搭配)",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "033 八戒打瞌睡 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "49160acabf819768544005ebc971cca77ad29860c49fdbb2bcd65191b15b8a69"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep033-vocab-049",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 149,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "you",
+        "zh": "pron.你,你们"
+      },
+      "payload": {
+        "term": "you",
+        "ipa": "juː",
+        "pos": "pron.",
+        "def": "pron.你,你们",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "033 八戒打瞌睡 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "49160acabf819768544005ebc971cca77ad29860c49fdbb2bcd65191b15b8a69"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep033-vocab-050",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 150,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "say",
+        "zh": "v.说,讲"
+      },
+      "payload": {
+        "term": "say",
+        "ipa": "seɪ",
+        "pos": "v.",
+        "def": "v.说,讲",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "033 八戒打瞌睡 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "49160acabf819768544005ebc971cca77ad29860c49fdbb2bcd65191b15b8a69"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep033-vocab-051",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 151,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "smile",
+        "zh": "笑,微笑"
+      },
+      "payload": {
+        "term": "smile",
+        "ipa": "smaɪ",
+        "pos": "vi.",
+        "def": "vi./n.[C]笑,微笑",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "033 八戒打瞌睡 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "49160acabf819768544005ebc971cca77ad29860c49fdbb2bcd65191b15b8a69"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep033-vocab-052",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 152,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "yes",
+        "zh": "interj.是的,可以"
+      },
+      "payload": {
+        "term": "yes",
+        "ipa": "jes",
+        "pos": "interj.",
+        "def": "interj.是的,可以",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "033 八戒打瞌睡 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "49160acabf819768544005ebc971cca77ad29860c49fdbb2bcd65191b15b8a69"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep033-vocab-053",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 153,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "eye",
+        "zh": "眼睛"
+      },
+      "payload": {
+        "term": "eye",
+        "ipa": "aɪ",
+        "pos": "n.",
+        "def": "n.[C]眼睛",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "033 八戒打瞌睡 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "49160acabf819768544005ebc971cca77ad29860c49fdbb2bcd65191b15b8a69"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep033-vocab-054",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 154,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "light",
+        "zh": "电灯 adj.轻的,轻柔的,程度轻的,少 量的,浅色的 v.点燃,照亮"
+      },
+      "payload": {
+        "term": "light",
+        "ipa": "laɪt",
+        "pos": "n.",
+        "def": "n.[U]光,光线,光亮;[C]电灯 adj.轻的,轻柔的,程度轻的,少 量的,浅色的 v.点燃,照亮",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "033 八戒打瞌睡 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "49160acabf819768544005ebc971cca77ad29860c49fdbb2bcd65191b15b8a69"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep033-vocab-055",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 155,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "toward",
+        "zh": "prep.朝,向,对着"
+      },
+      "payload": {
+        "term": "toward",
+        "ipa": "təˈwɔː d",
+        "pos": "prep.",
+        "def": "prep.朝,向,对着",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "033 八戒打瞌睡 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "49160acabf819768544005ebc971cca77ad29860c49fdbb2bcd65191b15b8a69"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep033-vocab-056",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 156,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "fast",
+        "zh": "adj.快的 adv.快地;完全地,牢固地"
+      },
+      "payload": {
+        "term": "fast",
+        "ipa": "fɑːst",
+        "pos": "adj.",
+        "def": "adj.快的 adv.快地;完全地,牢固地",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "033 八戒打瞌睡 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "49160acabf819768544005ebc971cca77ad29860c49fdbb2bcd65191b15b8a69"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep033-vocab-057",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 157,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "asleep",
+        "zh": "adj.睡着"
+      },
+      "payload": {
+        "term": "asleep",
+        "ipa": "əˈsliːp",
+        "pos": "adj.",
+        "def": "adj.睡着",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "033 八戒打瞌睡 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "49160acabf819768544005ebc971cca77ad29860c49fdbb2bcd65191b15b8a69"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep033-vocab-058",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 158,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "ask",
+        "zh": "v.请求,要求,询问"
+      },
+      "payload": {
+        "term": "ask",
+        "ipa": "ɑːsk",
+        "pos": "v.",
+        "def": "v.请求,要求,询问",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "033 八戒打瞌睡 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "49160acabf819768544005ebc971cca77ad29860c49fdbb2bcd65191b15b8a69"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep033-vocab-059",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 159,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "sleep",
+        "zh": "一觉"
+      },
+      "payload": {
+        "term": "sleep",
+        "ipa": "sliː p",
+        "pos": "vi.",
+        "def": "vi./n.[U]睡觉[sing.]一觉",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "033 八戒打瞌睡 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "49160acabf819768544005ebc971cca77ad29860c49fdbb2bcd65191b15b8a69"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep033-vocab-060",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 160,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "cook",
+        "zh": "厨师"
+      },
+      "payload": {
+        "term": "cook",
+        "ipa": "kʊk",
+        "pos": "v.",
+        "def": "v.做饭,烹饪,煮 n.[C]厨师",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "033 八戒打瞌睡 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "49160acabf819768544005ebc971cca77ad29860c49fdbb2bcd65191b15b8a69"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep033-vocab-061",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 161,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "lot",
+        "zh": "pron.大量,许多 adv.很,非常"
+      },
+      "payload": {
+        "term": "lot",
+        "ipa": "lɒt",
+        "pos": "pron.",
+        "def": "pron.大量,许多 adv.很,非常",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "033 八戒打瞌睡 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "49160acabf819768544005ebc971cca77ad29860c49fdbb2bcd65191b15b8a69"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep033-vocab-062",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 162,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "all",
+        "zh": "adj.所有的,全部的 pron.全部,一切 adv.完全"
+      },
+      "payload": {
+        "term": "all",
+        "ipa": "ɔːl",
+        "pos": "adj.",
+        "def": "adj.所有的,全部的 pron.全部,一切 adv.完全",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "033 八戒打瞌睡 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "49160acabf819768544005ebc971cca77ad29860c49fdbb2bcd65191b15b8a69"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep033-vocab-063",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 163,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "kick",
+        "zh": "极大的乐趣,踢"
+      },
+      "payload": {
+        "term": "kick",
+        "ipa": "kɪk",
+        "pos": "v.",
+        "def": "v.踢,踹 n.[C]极大的乐趣,踢",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "033 八戒打瞌睡 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "49160acabf819768544005ebc971cca77ad29860c49fdbb2bcd65191b15b8a69"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep033-vocab-064",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 164,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "jump",
+        "zh": "跳,跃(指运动)"
+      },
+      "payload": {
+        "term": "jump",
+        "ipa": "dʒʌmp",
+        "pos": "v.",
+        "def": "v.跳,跃 n.[C]跳,跃(指运动)",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "033 八戒打瞌睡 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "49160acabf819768544005ebc971cca77ad29860c49fdbb2bcd65191b15b8a69"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep033-vocab-065",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 165,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "dare",
+        "zh": "挑战"
+      },
+      "payload": {
+        "term": "dare",
+        "ipa": "deə",
+        "pos": "vi.",
+        "def": "vi.敢于,胆敢 modal v.敢,敢于 n.[C]挑战",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "033 八戒打瞌睡 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "49160acabf819768544005ebc971cca77ad29860c49fdbb2bcd65191b15b8a69"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep033-vocab-066",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 166,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "hang",
+        "zh": "呢!” v.悬挂,垂下;绞死"
+      },
+      "payload": {
+        "term": "hang",
+        "ipa": "hæŋ",
+        "pos": "",
+        "def": "呢!” v.悬挂,垂下;绞死",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "033 八戒打瞌睡 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "49160acabf819768544005ebc971cca77ad29860c49fdbb2bcd65191b15b8a69"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep033-vocab-067",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 167,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "maybe",
+        "zh": "adv.大概,或许,可能"
+      },
+      "payload": {
+        "term": "maybe",
+        "ipa": "ˈmeɪbi",
+        "pos": "adv.",
+        "def": "adv.大概,或许,可能",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "033 八戒打瞌睡 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "49160acabf819768544005ebc971cca77ad29860c49fdbb2bcd65191b15b8a69"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep033-vocab-068",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 168,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "through",
+        "zh": "穿过"
+      },
+      "payload": {
+        "term": "through",
+        "ipa": "θruː",
+        "pos": "prep.",
+        "def": "穿过",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ],
+        "gloss": "穿过"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "033 八戒打瞌睡 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "49160acabf819768544005ebc971cca77ad29860c49fdbb2bcd65191b15b8a69"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep033-vocab-069",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 169,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "knock",
+        "zh": "敲击声,敲击"
+      },
+      "payload": {
+        "term": "knock",
+        "ipa": "nɒk",
+        "pos": "v.",
+        "def": "v.敲,击,撞 n.[C]敲击声,敲击",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "033 八戒打瞌睡 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "49160acabf819768544005ebc971cca77ad29860c49fdbb2bcd65191b15b8a69"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep033-vocab-070",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 170,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "door",
+        "zh": "门"
+      },
+      "payload": {
+        "term": "door",
+        "ipa": "dɔː(r)",
+        "pos": "n.",
+        "def": "n.[C]门",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "033 八戒打瞌睡 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "49160acabf819768544005ebc971cca77ad29860c49fdbb2bcd65191b15b8a69"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep033-vocab-071",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 171,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "laugh",
+        "zh": "v.笑,发笑 n.笑声"
+      },
+      "payload": {
+        "term": "laugh",
+        "ipa": "lɑːf",
+        "pos": "v.",
+        "def": "v.笑,发笑 n.笑声",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "033 八戒打瞌睡 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "49160acabf819768544005ebc971cca77ad29860c49fdbb2bcd65191b15b8a69"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep033-vocab-072",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 172,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "dinner",
+        "zh": "(中午或晚上吃的)正餐"
+      },
+      "payload": {
+        "term": "dinner",
+        "ipa": "ˈdɪnə(r)",
+        "pos": "n.",
+        "def": "n.[C,U](中午或晚上吃的)正餐",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "033 八戒打瞌睡 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "49160acabf819768544005ebc971cca77ad29860c49fdbb2bcd65191b15b8a69"
+        }
+      ],
+      "review_status": "machine_verified"
+    }
+  ],
+  "teacher_guide": null,
+  "review": {
+    "status": "draft",
+    "reviewed_at": null,
+    "card_stats": {
+      "total": 77,
+      "sentence_choice": 5,
+      "word_review": 72,
+      "machine_verified": 74,
+      "assistant_reviewed": 3,
+      "verified": 77,
+      "needs_review": 0
+    }
+  },
+  "generated_at": "2026-08-31T04:49:39.168454+00:00"
+}

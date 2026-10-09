@@ -1,0 +1,584 @@
+{
+ "schema_version": 1,
+ "ep": 36,
+ "title": {
+  "en": "Tricked Again",
+  "zh": "西游记 第36集"
+ },
+ "collection": "c05",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "hundredflowers",
+   "nameZh": "百花羞公主",
+   "mode": "sparring",
+   "sprite": "hundredflowers"
+  },
+  "minors": [
+   {
+    "id": "imp",
+    "nameZh": "小妖",
+    "sprite": "imp"
+   }
+  ]
+ },
+ "background": {
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep36/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "\"Why won't Wukong help us?\" the horse asked Bajie.",
+   "textZh": "\"悟空为什么不肯帮我们呢?\"马对八戒问道。",
+   "illustration": "assets/adv_frames/ep36/f1.jpg",
+   "sourceNodeId": "n001",
+   "audioRef": "sent_en:\"Why won't Wukong help us?\" the horse asked Bajie."
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "The pig sighed.",
+   "textZh": "猪叹了口气。",
+   "illustration": "assets/adv_frames/ep36/f2.jpg",
+   "sourceNodeId": "n002",
+   "audioRef": "sent_en:The pig sighed."
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "mad",
+   "zh": "非常生气的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep36/f3.jpg"
+  },
+  {
+   "term": "soar",
+   "zh": "高飞,往上飞舞",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep36/f3.jpg"
+  },
+  {
+   "term": "waterfall",
+   "zh": "瀑布",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep36/f0.jpg"
+  },
+  {
+   "term": "spear",
+   "zh": "矛",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep36/f2.jpg"
+  },
+  {
+   "term": "silently",
+   "zh": "安静地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep36/f3.jpg"
+  },
+  {
+   "term": "scowl",
+   "zh": "皱眉",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep36/f1.jpg"
+  },
+  {
+   "term": "miss",
+   "zh": "想念",
+   "ipa": "mɪs",
+   "illustration": "assets/adv_frames/ep36/f2.jpg"
+  },
+  {
+   "term": "clobber",
+   "zh": "痛打",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep36/f1.jpg"
+  },
+  {
+   "term": "joke",
+   "zh": "说笑话,开玩笑",
+   "ipa": "dʒəʊk",
+   "illustration": "assets/adv_frames/ep36/f2.jpg"
+  },
+  {
+   "term": "protect",
+   "zh": "保护,防护",
+   "ipa": "prəˈtek",
+   "illustration": "assets/adv_frames/ep36/f2.jpg"
+  },
+  {
+   "term": "danger",
+   "zh": "危险",
+   "ipa": "ˈdeɪndʒə(r)",
+   "illustration": "assets/adv_frames/ep36/f2.jpg"
+  },
+  {
+   "term": "leave alone",
+   "zh": "不打扰,不干涉",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep36/f1.jpg"
+  }
+ ],
+ "wordPool": [
+  {
+   "term": "mad",
+   "zh": "非常生气的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep36/f3.jpg"
+  },
+  {
+   "term": "soar",
+   "zh": "高飞,往上飞舞",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep36/f3.jpg"
+  },
+  {
+   "term": "waterfall",
+   "zh": "瀑布",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep36/f0.jpg"
+  },
+  {
+   "term": "spear",
+   "zh": "矛",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep36/f2.jpg"
+  },
+  {
+   "term": "silently",
+   "zh": "安静地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep36/f3.jpg"
+  },
+  {
+   "term": "scowl",
+   "zh": "皱眉",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep36/f1.jpg"
+  },
+  {
+   "term": "miss",
+   "zh": "想念",
+   "ipa": "mɪs",
+   "illustration": "assets/adv_frames/ep36/f2.jpg"
+  },
+  {
+   "term": "clobber",
+   "zh": "痛打",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep36/f1.jpg"
+  },
+  {
+   "term": "joke",
+   "zh": "说笑话,开玩笑",
+   "ipa": "dʒəʊk",
+   "illustration": "assets/adv_frames/ep36/f2.jpg"
+  },
+  {
+   "term": "protect",
+   "zh": "保护,防护",
+   "ipa": "prəˈtek",
+   "illustration": "assets/adv_frames/ep36/f2.jpg"
+  },
+  {
+   "term": "danger",
+   "zh": "危险",
+   "ipa": "ˈdeɪndʒə(r)",
+   "illustration": "assets/adv_frames/ep36/f2.jpg"
+  },
+  {
+   "term": "leave alone",
+   "zh": "不打扰,不干涉",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep36/f1.jpg"
+  },
+  {
+   "term": "coward",
+   "zh": "懦夫,胆怯者",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep36/f2.jpg"
+  },
+  {
+   "term": "regret",
+   "zh": "后悔,遗憾",
+   "ipa": "rɪˈɡret",
+   "illustration": "assets/adv_frames/ep36/f2.jpg"
+  },
+  {
+   "term": "dining hall",
+   "zh": "(住宅,学校等的)大餐厅",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep36/f1.jpg"
+  },
+  {
+   "term": "hand",
+   "zh": "1. 传递,(2. 手)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep36/f3.jpg"
+  },
+  {
+   "term": "pillar",
+   "zh": "(兼有装饰作用的)柱子",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep36/f3.jpg"
+  },
+  {
+   "term": "panic",
+   "zh": "恐慌,惊慌",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep36/f0.jpg"
+  },
+  {
+   "term": "in a",
+   "zh": "惊慌地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep36/f0.jpg"
+  },
+  {
+   "term": "free",
+   "zh": "1. 使...获得自由,(2. 自由的,3. 免费地)",
+   "ipa": "friː",
+   "illustration": "assets/adv_frames/ep36/f3.jpg"
+  },
+  {
+   "term": "flash",
+   "zh": "闪光,闪烁",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep36/f2.jpg"
+  },
+  {
+   "term": "forever",
+   "zh": "永远地",
+   "ipa": "fərˈevə(r)",
+   "illustration": "assets/adv_frames/ep36/f3.jpg"
+  },
+  {
+   "term": "help",
+   "zh": "帮助",
+   "ipa": "help",
+   "illustration": "assets/adv_frames/ep36/f1.jpg"
+  },
+  {
+   "term": "ask",
+   "zh": "请求",
+   "ipa": "ɑːsk",
+   "illustration": "assets/adv_frames/ep36/f1.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "mad",
+     "zh": "非常生气的",
+     "sprite": "imp"
+    },
+    {
+     "term": "soar",
+     "zh": "高飞,往上飞舞",
+     "sprite": "imp"
+    },
+    {
+     "term": "waterfall",
+     "zh": "瀑布",
+     "sprite": "imp"
+    },
+    {
+     "term": "spear",
+     "zh": "矛",
+     "sprite": "imp"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "silently",
+     "zh": "安静地",
+     "sprite": "imp"
+    },
+    {
+     "term": "scowl",
+     "zh": "皱眉",
+     "sprite": "imp"
+    },
+    {
+     "term": "miss",
+     "zh": "想念",
+     "sprite": "imp"
+    },
+    {
+     "term": "clobber",
+     "zh": "痛打",
+     "sprite": "imp"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "joke",
+    "zh": "说笑话,开玩笑"
+   },
+   {
+    "term": "protect",
+    "zh": "保护,防护"
+   },
+   {
+    "term": "danger",
+    "zh": "危险"
+   },
+   {
+    "term": "leave alone",
+    "zh": "不打扰,不干涉"
+   }
+  ],
+  "taunts": [
+   "hundredflowers.1",
+   "hundredflowers.2",
+   "hundredflowers.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=36",
+ "npcDialogue": {
+  "intro": {
+   "id": "ep36-map-intro",
+   "lines": [
+    {
+     "id": "ep36-map-intro-1",
+     "sourceNodeId": "n001",
+     "speaker": "narrator",
+     "textEn": "\"Why won't Wukong help us?\" the horse asked Bajie.",
+     "textZh": "\"悟空为什么不肯帮我们呢?\"马对八戒问道。",
+     "audioRef": "sent_en:\"Why won't Wukong help us?\" the horse asked Bajie.",
+     "audioStart": 11.267,
+     "audioEnd": 18.106
+    },
+    {
+     "id": "ep36-map-intro-2",
+     "sourceNodeId": "n002",
+     "speaker": "narrator",
+     "textEn": "The pig sighed.",
+     "textZh": "猪叹了口气。",
+     "audioRef": "sent_en:The pig sighed.",
+     "audioStart": 18.107,
+     "audioEnd": 19.95
+    }
+   ]
+  },
+  "quiz": {
+   "id": "ep36-map-quiz",
+   "lines": [
+    {
+     "id": "ep36-map-quiz-1",
+     "sourceNodeId": "n044",
+     "speaker": "narrator",
+     "textEn": "Light sparkled, and the servant turned into Bajie.",
+     "textZh": "灯光闪烁,仆人顿时化身为八戒。",
+     "audioRef": "sent_en:Light sparkled, and the servant turned into Bajie.",
+     "audioStart": 220.258,
+     "audioEnd": 226.061
+    }
+   ],
+   "question": {
+    "id": "ep036-official-quiz-001",
+    "textEn": "which is not true?",
+    "textZh": "哪一项是不正确的？"
+   },
+   "word": {
+    "term": "mad",
+    "zh": "非常生气的",
+    "ipa": ""
+   },
+   "options": [
+    {
+     "id": "a",
+     "textEn": "the monster's pagoda was destroyed.",
+     "textZh": "怪物的宝塔被摧毁了。",
+     "correct": true,
+     "feedback": "对了。怪物的宝塔被摧毁了。"
+    },
+    {
+     "id": "b",
+     "textEn": "bajie was disguised as a servant.",
+     "textZh": "八戒伪装成了一个仆人。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    },
+    {
+     "id": "c",
+     "textEn": "wukong freed the princess.",
+     "textZh": "悟空救了公主。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    }
+   ],
+   "lessonCardId": "ep036-official-quiz-001"
+  }
+ },
+ "map": {
+  "theme": "generic",
+  "coordinateSpace": "world-normalized",
+  "worldTiles": 2,
+  "regions": {
+   "hero": 0,
+   "waves": [
+    0,
+    1
+   ],
+   "npc": {
+    "intro": 0,
+    "quiz": 1
+   },
+   "boss": 3
+  },
+  "walkable": {
+   "space": "world",
+   "x": 0.0,
+   "y": 0.16,
+   "w": 1.0,
+   "h": 0.79,
+   "rects": [
+    {
+     "x": 0.0,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.66,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    }
+   ]
+  },
+  "heroSpawn": {
+   "x": 0.06,
+   "y": 0.31
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.31,
+    "y": 0.23
+   },
+   {
+    "x": 0.38,
+    "y": 0.27
+   },
+   {
+    "x": 0.34,
+    "y": 0.33
+   },
+   {
+    "x": 0.41,
+    "y": 0.24
+   }
+  ],
+  "waveSpawns": [
+   [
+    {
+     "x": 0.31,
+     "y": 0.23
+    },
+    {
+     "x": 0.38,
+     "y": 0.27
+    },
+    {
+     "x": 0.34,
+     "y": 0.33
+    },
+    {
+     "x": 0.41,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.81,
+     "y": 0.23
+    },
+    {
+     "x": 0.88,
+     "y": 0.27
+    },
+    {
+     "x": 0.84,
+     "y": 0.33
+    },
+    {
+     "x": 0.91,
+     "y": 0.24
+    }
+   ]
+  ],
+  "orbSpawns": [
+   [
+    {
+     "x": 0.11,
+     "y": 0.25
+    },
+    {
+     "x": 0.16,
+     "y": 0.31
+    },
+    {
+     "x": 0.12,
+     "y": 0.37
+    },
+    {
+     "x": 0.18,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.61,
+     "y": 0.25
+    },
+    {
+     "x": 0.66,
+     "y": 0.31
+    },
+    {
+     "x": 0.62,
+     "y": 0.37
+    },
+    {
+     "x": 0.68,
+     "y": 0.24
+    }
+   ]
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "yellowrobe-imp",
+    "nameZh": "黄袍小妖",
+    "x": 0.08,
+    "y": 0.26
+   },
+   {
+    "role": "quiz",
+    "sprite": "yellowrobe",
+    "nameZh": "黄袍怪",
+    "x": 0.7,
+    "y": 0.39
+   }
+  ],
+  "bossSpot": {
+   "x": 0.94,
+   "y": 0.85
+  }
+ }
+}

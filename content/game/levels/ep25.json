@@ -1,0 +1,584 @@
+{
+ "schema_version": 1,
+ "ep": 25,
+ "title": {
+  "en": "Powerful Wind Magic",
+  "zh": "西游记 第25集"
+ },
+ "collection": "c04",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "yellowwind",
+   "nameZh": "黄风大王",
+   "mode": "sparring",
+   "sprite": "yellowwind"
+  },
+  "minors": [
+   {
+    "id": "imp",
+    "nameZh": "小妖",
+    "sprite": "imp"
+   }
+  ]
+ },
+ "background": {
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep25/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "The wind stopped.",
+   "textZh": "风停了。",
+   "illustration": "assets/adv_frames/ep25/f1.jpg",
+   "sourceNodeId": "n001",
+   "audioRef": "sent_en:The wind stopped."
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "Wukong jumped to his feet and called back the little Wukongs.",
+   "textZh": "猿猴灵猴猛地站起身,向身边的小猿猴们喊道。",
+   "illustration": "assets/adv_frames/ep25/f2.jpg",
+   "sourceNodeId": "n002",
+   "audioRef": "sent_en:Wukong jumped to his feet and called back the little Wukongs."
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "save",
+   "zh": "救(命)",
+   "ipa": "seɪv",
+   "illustration": "assets/adv_frames/ep25/f1.jpg"
+  },
+  {
+   "term": "rub",
+   "zh": "擦,磨擦",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep25/f2.jpg"
+  },
+  {
+   "term": "tap",
+   "zh": "轻拍",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep25/f0.jpg"
+  },
+  {
+   "term": "chin",
+   "zh": "下巴",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep25/f0.jpg"
+  },
+  {
+   "term": "sneak",
+   "zh": "偷偷地走,溜",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep25/f1.jpg"
+  },
+  {
+   "term": "find out",
+   "zh": "发现,找出来",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep25/f1.jpg"
+  },
+  {
+   "term": "mosquito",
+   "zh": "蚊子",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep25/f2.jpg"
+  },
+  {
+   "term": "crack",
+   "zh": "1. 裂缝,裂痕,(2. 裂开,断裂,3. 打破,打碎)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep25/f2.jpg"
+  },
+  {
+   "term": "defeat",
+   "zh": "战胜,击败",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep25/f3.jpg"
+  },
+  {
+   "term": "pagoda",
+   "zh": "(佛教寺院的)塔",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep25/f0.jpg"
+  },
+  {
+   "term": "emergency",
+   "zh": "紧急状况,突发事件",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep25/f0.jpg"
+  },
+  {
+   "term": "weasel",
+   "zh": "黄鼠狼",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep25/f1.jpg"
+  }
+ ],
+ "wordPool": [
+  {
+   "term": "save",
+   "zh": "救(命)",
+   "ipa": "seɪv",
+   "illustration": "assets/adv_frames/ep25/f1.jpg"
+  },
+  {
+   "term": "rub",
+   "zh": "擦,磨擦",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep25/f2.jpg"
+  },
+  {
+   "term": "tap",
+   "zh": "轻拍",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep25/f0.jpg"
+  },
+  {
+   "term": "chin",
+   "zh": "下巴",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep25/f0.jpg"
+  },
+  {
+   "term": "sneak",
+   "zh": "偷偷地走,溜",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep25/f1.jpg"
+  },
+  {
+   "term": "find out",
+   "zh": "发现,找出来",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep25/f1.jpg"
+  },
+  {
+   "term": "mosquito",
+   "zh": "蚊子",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep25/f2.jpg"
+  },
+  {
+   "term": "crack",
+   "zh": "1. 裂缝,裂痕,(2. 裂开,断裂,3. 打破,打碎)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep25/f2.jpg"
+  },
+  {
+   "term": "defeat",
+   "zh": "战胜,击败",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep25/f3.jpg"
+  },
+  {
+   "term": "pagoda",
+   "zh": "(佛教寺院的)塔",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep25/f0.jpg"
+  },
+  {
+   "term": "emergency",
+   "zh": "紧急状况,突发事件",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep25/f0.jpg"
+  },
+  {
+   "term": "weasel",
+   "zh": "黄鼠狼",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep25/f1.jpg"
+  },
+  {
+   "term": "keep an eye",
+   "zh": "照看,监视",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep25/f1.jpg"
+  },
+  {
+   "term": "staff",
+   "zh": "拐杖,棍,棒",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep25/f3.jpg"
+  },
+  {
+   "term": "rest",
+   "zh": "剩余部分",
+   "ipa": "rest",
+   "illustration": "assets/adv_frames/ep25/f0.jpg"
+  },
+  {
+   "term": "rubble",
+   "zh": "(倒塌建筑物的)碎石,瓦砾",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep25/f0.jpg"
+  },
+  {
+   "term": "breath",
+   "zh": "呼吸,气息",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep25/f2.jpg"
+  },
+  {
+   "term": "pearl",
+   "zh": "珍珠",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep25/f2.jpg"
+  },
+  {
+   "term": "threw",
+   "zh": "抛,掷 (throw-threw)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep25/f1.jpg"
+  },
+  {
+   "term": "golden",
+   "zh": "金的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep25/f1.jpg"
+  },
+  {
+   "term": "puff",
+   "zh": "一阵(风、空气、烟等)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep25/f3.jpg"
+  },
+  {
+   "term": "companion",
+   "zh": "同伴,伴侣,朋友",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep25/f1.jpg"
+  },
+  {
+   "term": "Good",
+   "zh": "祝好运!",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep25/f1.jpg"
+  },
+  {
+   "term": "chase away",
+   "zh": "赶走,驱逐",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep25/f2.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "save",
+     "zh": "救(命)",
+     "sprite": "imp"
+    },
+    {
+     "term": "rub",
+     "zh": "擦,磨擦",
+     "sprite": "imp"
+    },
+    {
+     "term": "tap",
+     "zh": "轻拍",
+     "sprite": "imp"
+    },
+    {
+     "term": "chin",
+     "zh": "下巴",
+     "sprite": "imp"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "sneak",
+     "zh": "偷偷地走,溜",
+     "sprite": "imp"
+    },
+    {
+     "term": "find out",
+     "zh": "发现,找出来",
+     "sprite": "imp"
+    },
+    {
+     "term": "mosquito",
+     "zh": "蚊子",
+     "sprite": "imp"
+    },
+    {
+     "term": "crack",
+     "zh": "1. 裂缝,裂痕,(2. 裂开,断裂,3. 打破,打碎)",
+     "sprite": "imp"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "defeat",
+    "zh": "战胜,击败"
+   },
+   {
+    "term": "pagoda",
+    "zh": "(佛教寺院的)塔"
+   },
+   {
+    "term": "emergency",
+    "zh": "紧急状况,突发事件"
+   },
+   {
+    "term": "weasel",
+    "zh": "黄鼠狼"
+   }
+  ],
+  "taunts": [
+   "yellowwind.1",
+   "yellowwind.2",
+   "yellowwind.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=25",
+ "npcDialogue": {
+  "intro": {
+   "id": "ep25-map-intro",
+   "lines": [
+    {
+     "id": "ep25-map-intro-1",
+     "sourceNodeId": "n001",
+     "speaker": "narrator",
+     "textEn": "The wind stopped.",
+     "textZh": "风停了。",
+     "audioRef": "sent_en:The wind stopped.",
+     "audioStart": 11.0,
+     "audioEnd": 14.078
+    },
+    {
+     "id": "ep25-map-intro-2",
+     "sourceNodeId": "n002",
+     "speaker": "narrator",
+     "textEn": "Wukong jumped to his feet and called back the little Wukongs.",
+     "textZh": "猿猴灵猴猛地站起身,向身边的小猿猴们喊道。",
+     "audioRef": "sent_en:Wukong jumped to his feet and called back the little Wukongs.",
+     "audioStart": 14.079,
+     "audioEnd": 22.173
+    }
+   ]
+  },
+  "quiz": {
+   "id": "ep25-map-quiz",
+   "lines": [
+    {
+     "id": "ep25-map-quiz-1",
+     "sourceNodeId": "n030",
+     "speaker": "narrator",
+     "textEn": "\"The bodhisattva Lingji lives on Mount Sumeru. I will ask him for help—quickly!\"",
+     "textZh": "\"灵吉菩萨居住在须弥山。我将立即向他求援!\"",
+     "audioRef": "sent_en:\"The bodhisattva Lingji lives on Mount Sumeru. I will ask him for help—quickly!\"",
+     "audioStart": 142.182,
+     "audioEnd": 149.927
+    }
+   ],
+   "question": {
+    "id": "ep025-official-quiz-001",
+    "textEn": "which is not true?",
+    "textZh": "哪一项是不正确的？"
+   },
+   "word": {
+    "term": "save",
+    "zh": "救(命)",
+    "ipa": "seɪv"
+   },
+   "options": [
+    {
+     "id": "a",
+     "textEn": "wukong went to find guanyin.",
+     "textZh": "悟空去找观音。",
+     "correct": true,
+     "feedback": "对了。悟空去找观音。"
+    },
+    {
+     "id": "b",
+     "textEn": "bajie slept outside of the cave.",
+     "textZh": "八戒睡在洞外。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    },
+    {
+     "id": "c",
+     "textEn": "yellow wind was causing trouble.",
+     "textZh": "黄风正在制造麻烦。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    }
+   ],
+   "lessonCardId": "ep025-official-quiz-001"
+  }
+ },
+ "map": {
+  "theme": "generic",
+  "coordinateSpace": "world-normalized",
+  "worldTiles": 2,
+  "regions": {
+   "hero": 0,
+   "waves": [
+    0,
+    1
+   ],
+   "npc": {
+    "intro": 0,
+    "quiz": 1
+   },
+   "boss": 3
+  },
+  "walkable": {
+   "space": "world",
+   "x": 0.0,
+   "y": 0.16,
+   "w": 1.0,
+   "h": 0.79,
+   "rects": [
+    {
+     "x": 0.0,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.66,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    }
+   ]
+  },
+  "heroSpawn": {
+   "x": 0.06,
+   "y": 0.31
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.31,
+    "y": 0.23
+   },
+   {
+    "x": 0.38,
+    "y": 0.27
+   },
+   {
+    "x": 0.34,
+    "y": 0.33
+   },
+   {
+    "x": 0.41,
+    "y": 0.24
+   }
+  ],
+  "waveSpawns": [
+   [
+    {
+     "x": 0.31,
+     "y": 0.23
+    },
+    {
+     "x": 0.38,
+     "y": 0.27
+    },
+    {
+     "x": 0.34,
+     "y": 0.33
+    },
+    {
+     "x": 0.41,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.81,
+     "y": 0.23
+    },
+    {
+     "x": 0.88,
+     "y": 0.27
+    },
+    {
+     "x": 0.84,
+     "y": 0.33
+    },
+    {
+     "x": 0.91,
+     "y": 0.24
+    }
+   ]
+  ],
+  "orbSpawns": [
+   [
+    {
+     "x": 0.11,
+     "y": 0.25
+    },
+    {
+     "x": 0.16,
+     "y": 0.31
+    },
+    {
+     "x": 0.12,
+     "y": 0.37
+    },
+    {
+     "x": 0.18,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.61,
+     "y": 0.25
+    },
+    {
+     "x": 0.66,
+     "y": 0.31
+    },
+    {
+     "x": 0.62,
+     "y": 0.37
+    },
+    {
+     "x": 0.68,
+     "y": 0.24
+    }
+   ]
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "yellowwind",
+    "nameZh": "黄风大王",
+    "x": 0.08,
+    "y": 0.26
+   },
+   {
+    "role": "quiz",
+    "sprite": "yellowwind",
+    "nameZh": "黄风大王",
+    "x": 0.7,
+    "y": 0.39
+   }
+  ],
+  "bossSpot": {
+   "x": 0.94,
+   "y": 0.85
+  }
+ }
+}

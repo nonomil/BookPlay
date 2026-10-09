@@ -1,0 +1,1921 @@
+{
+  "schema_version": 1,
+  "episode": 53,
+  "title": {
+    "en": "The Man in the Canoe",
+    "zh": "西游记 第53集"
+  },
+  "sources": [
+    {
+      "kind": "courseware_main_pptx",
+      "file": "G:\\Game\\BookPlay书戏\\data\\西游记课件\\3.3西游记  Journey to the West PPT课件\\053_Journey to the West 53_The Man in the Canoe.pptx",
+      "sha256": "ca34cf79fb7c8e5c3a89fe21910cffbd6c6e26451ac8122f69f22d8fe782badb",
+      "pages": 20
+    },
+    {
+      "kind": "official_quiz_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+      "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929",
+      "pages": 131
+    },
+    {
+      "kind": "intensive_reader_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\02-西游记精读版台词本\\1、带标注版PDF 108集\\053 小船上的男人 上.pdf",
+      "sha256": "95e77ca9f64d3697043830944ac032fea5666bfc46295ef77fede423b2889d72",
+      "pages": 4
+    },
+    {
+      "kind": "intensive_reader_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\02-西游记精读版台词本\\1、带标注版PDF 108集\\053 小船上的男人 下.pdf",
+      "sha256": "d0279f9a9e3523b457d941b578809472b0baecd20865ec0659aa0d77d71ace2f",
+      "pages": 4
+    },
+    {
+      "kind": "courseware_screenshots_pptx",
+      "file": "G:\\Game\\BookPlay书戏\\data\\西游记课件\\西游记-外教课动画截图\\Journey to the West 053  The Man in the Canoe_20240114105612.pptx",
+      "sha256": "fbd7eeb06e2ecea432d89caaad64c454ad5ba76144b5d62c929a42d74f973381",
+      "pages": 39
+    }
+  ],
+  "cards": [
+    {
+      "card_id": "ep053-official-quiz-001",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 1,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "which is not true?",
+        "zh": "哪一项是不正确的？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "swords didn't scare red boy.",
+            "zh": "剑不会吓到红孩儿。"
+          },
+          {
+            "id": "b",
+            "en": "red boy tried to attack guanyin.",
+            "zh": "红孩儿试图攻击观音。"
+          },
+          {
+            "id": "c",
+            "en": "the tang monk and bajie were kidnapped.",
+            "zh": "唐僧和八戒被绑架了。"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n002",
+            "quote": "The demon was trapped by the swords, all pointed at his face."
+          },
+          {
+            "node_id": "n003",
+            "quote": "\"Get these swords away from me!\" cried the demon."
+          },
+          {
+            "node_id": "n011",
+            "quote": "Red Boy charged toward Guanyin."
+          },
+          {
+            "node_id": "n016",
+            "quote": "\"Evil demon!\" said Guanyin."
+          },
+          {
+            "node_id": "n017",
+            "quote": "\"How dare you try to attack me!\""
+          },
+          {
+            "node_id": "n025",
+            "quote": "Wukong went into Red Boy's cave and freed the Tang Monk."
+          },
+          {
+            "node_id": "n026",
+            "quote": "Then he found Bajie and freed him."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 62,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep053-official-quiz-002",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 2,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "what did red boy promise to do?",
+        "zh": "红孩儿答应做什么？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "become a buddhist",
+            "zh": "成为佛教徒"
+          },
+          {
+            "id": "b",
+            "en": "free the tang monk",
+            "zh": "解救唐僧"
+          },
+          {
+            "id": "c",
+            "en": "paddle the canoe",
+            "zh": "划独木舟"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n004",
+            "quote": "\"You must become a Buddhist,\" said Guanyin."
+          },
+          {
+            "node_id": "n005",
+            "quote": "\"Then I'll release you.\""
+          },
+          {
+            "node_id": "n006",
+            "quote": "\"I promise!\" cried Red Boy."
+          },
+          {
+            "node_id": "n007",
+            "quote": "\"I'll do whatever you say!\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 62,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep053-official-quiz-003",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 3,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "where did guanyin take red boy?",
+        "zh": "观音把红孩儿带到哪里了？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "to mount potalaka",
+            "zh": "到波陀拉伽山"
+          },
+          {
+            "id": "b",
+            "en": "to a wide river",
+            "zh": "到一条宽阔的河"
+          },
+          {
+            "id": "c",
+            "en": "to red boy's mountain",
+            "zh": "去红孩儿的山"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n020",
+            "quote": "\"No, Wukong,\" said Guanyin. \"Don't hurt the demon. I will take him back to Mount Potalaka to be my student.\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 62,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep053-official-quiz-004",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 4,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "who did not get in the canoe?",
+        "zh": "谁没有上独木舟？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "wukong",
+            "zh": "悟空"
+          },
+          {
+            "id": "b",
+            "en": "the tang monk",
+            "zh": "唐僧"
+          },
+          {
+            "id": "c",
+            "en": "bajie",
+            "zh": "八戒"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n047",
+            "quote": "\"I would be happy to take you all across. But as you can see, my canoe is not very big. I can take only two passengers at a time.\""
+          },
+          {
+            "node_id": "n050",
+            "quote": "The monkey was about to say something when Bajie stepped forward."
+          },
+          {
+            "node_id": "n051",
+            "quote": "\"The Tang Monk and I will go first,\" said the pig."
+          },
+          {
+            "node_id": "n055",
+            "quote": "The monkey bit his lip as the monk and Bajie climbed into the canoe."
+          },
+          {
+            "node_id": "n056",
+            "quote": "They sat down, and the man paddled away from shore."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 62,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep053-official-quiz-005",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 5,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "what did the canoe do?",
+        "zh": "独木舟做了什么？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "sink into the water",
+            "zh": "沉入水中"
+          },
+          {
+            "id": "b",
+            "en": "float in the air",
+            "zh": "在空中漂浮"
+          },
+          {
+            "id": "c",
+            "en": "turn into swords",
+            "zh": "变成剑"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n057",
+            "quote": "Wukong watched the canoe glide across the river."
+          },
+          {
+            "node_id": "n058",
+            "quote": "When it was about halfway across, Wukong noticed something."
+          },
+          {
+            "node_id": "n059",
+            "quote": "\"Am I imagining things, or is the canoe sinking?\" asked the monkey."
+          },
+          {
+            "node_id": "n060",
+            "quote": "Wujing looked. \"You're not imagining things,\" he said."
+          },
+          {
+            "node_id": "n061",
+            "quote": "\"It is sinking!\""
+          },
+          {
+            "node_id": "n062",
+            "quote": "The two of them watched as the canoe slipped under the surface of the water."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 62,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep053-vocab-001",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 101,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "throw",
+        "zh": "v.扔,掷"
+      },
+      "payload": {
+        "term": "throw",
+        "ipa": "θrəʊ",
+        "pos": "v.",
+        "def": "v.扔,掷",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "053 小船上的男人 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "95e77ca9f64d3697043830944ac032fea5666bfc46295ef77fede423b2889d72"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep053-vocab-002",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 102,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "move",
+        "zh": "移动"
+      },
+      "payload": {
+        "term": "move",
+        "ipa": "muːv",
+        "pos": "v.",
+        "def": "v.移动;使感动,推动 n.[sing.]移动",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "053 小船上的男人 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "95e77ca9f64d3697043830944ac032fea5666bfc46295ef77fede423b2889d72"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep053-vocab-003",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 103,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "raise",
+        "zh": "vt.募集,征集,提高,举起,养 育,饲养;提出"
+      },
+      "payload": {
+        "term": "raise",
+        "ipa": "reɪz",
+        "pos": "vt.",
+        "def": "vt.募集,征集,提高,举起,养 育,饲养;提出",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "053 小船上的男人 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "95e77ca9f64d3697043830944ac032fea5666bfc46295ef77fede423b2889d72"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep053-vocab-004",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 104,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "hurt",
+        "zh": "v.(使)疼痛,受伤,感到疼痛, (使)伤心 adj.受伤的"
+      },
+      "payload": {
+        "term": "hurt",
+        "ipa": "hɜː(r)t",
+        "pos": "v.",
+        "def": "v.(使)疼痛,受伤,感到疼痛, (使)伤心 adj.受伤的",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "053 小船上的男人 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "95e77ca9f64d3697043830944ac032fea5666bfc46295ef77fede423b2889d72"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep053-vocab-005",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 105,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "take",
+        "zh": "拿；带走"
+      },
+      "payload": {
+        "term": "take",
+        "ipa": "teɪk",
+        "pos": "v.",
+        "def": "拿；带走",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ],
+        "gloss": "拿；带走"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "053 小船上的男人 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "95e77ca9f64d3697043830944ac032fea5666bfc46295ef77fede423b2889d72"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep053-vocab-006",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 106,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "say",
+        "zh": "v.说,讲"
+      },
+      "payload": {
+        "term": "say",
+        "ipa": "seɪ",
+        "pos": "v.",
+        "def": "v.说,讲",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "053 小船上的男人 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "95e77ca9f64d3697043830944ac032fea5666bfc46295ef77fede423b2889d72"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep053-vocab-007",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 107,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "earth",
+        "zh": "泥土"
+      },
+      "payload": {
+        "term": "earth",
+        "ipa": "ɜːθ",
+        "pos": "n.",
+        "def": "n.[sing.]地球,世界 [U]泥土",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "053 小船上的男人 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "95e77ca9f64d3697043830944ac032fea5666bfc46295ef77fede423b2889d72"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep053-vocab-008",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 108,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "lead",
+        "zh": "主角"
+      },
+      "payload": {
+        "term": "lead",
+        "ipa": "liːd",
+        "pos": "v.",
+        "def": "v.带路,领路,导致,通往 n.[sing.]领先地位[C]主角",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "053 小船上的男人 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "95e77ca9f64d3697043830944ac032fea5666bfc46295ef77fede423b2889d72"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep053-vocab-009",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 109,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "south",
+        "zh": "adj.南方的 n.南部,南,南方 adv.向南,朝南"
+      },
+      "payload": {
+        "term": "south",
+        "ipa": "saʊθ",
+        "pos": "adj.",
+        "def": "adj.南方的 n.南部,南,南方 adv.向南,朝南",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "053 小船上的男人 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "95e77ca9f64d3697043830944ac032fea5666bfc46295ef77fede423b2889d72"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep053-vocab-010",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 110,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "free",
+        "zh": "adj.空闲的,免费的,自由的 adv.免费 vt.释放,解放,解除"
+      },
+      "payload": {
+        "term": "free",
+        "ipa": "friː",
+        "pos": "adj.",
+        "def": "adj.空闲的,免费的,自由的 adv.免费 vt.释放,解放,解除",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "053 小船上的男人 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "95e77ca9f64d3697043830944ac032fea5666bfc46295ef77fede423b2889d72"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep053-vocab-011",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 111,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "find",
+        "zh": "vt.找到,发现,查找,查明"
+      },
+      "payload": {
+        "term": "find",
+        "ipa": "faɪnd",
+        "pos": "vt.",
+        "def": "vt.找到,发现,查找,查明",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "053 小船上的男人 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "95e77ca9f64d3697043830944ac032fea5666bfc46295ef77fede423b2889d72"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep053-vocab-012",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 112,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "three",
+        "zh": "num.三"
+      },
+      "payload": {
+        "term": "three",
+        "ipa": "θriː",
+        "pos": "num.",
+        "def": "num.三",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "053 小船上的男人 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "95e77ca9f64d3697043830944ac032fea5666bfc46295ef77fede423b2889d72"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep053-vocab-013",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 113,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "mountain",
+        "zh": "高山"
+      },
+      "payload": {
+        "term": "mountain",
+        "ipa": "ˈmaʊntən",
+        "pos": "n.",
+        "def": "n.[C]高山",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "053 小船上的男人 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "95e77ca9f64d3697043830944ac032fea5666bfc46295ef77fede423b2889d72"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep053-vocab-014",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 114,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "group",
+        "zh": "组,群 vt.把......分组/归类,聚集"
+      },
+      "payload": {
+        "term": "group",
+        "ipa": "ɡruːp",
+        "pos": "n.",
+        "def": "n.[C]组,群 vt.把......分组/归类,聚集",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "053 小船上的男人 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "95e77ca9f64d3697043830944ac032fea5666bfc46295ef77fede423b2889d72"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep053-vocab-015",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 115,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "travel",
+        "zh": "游历"
+      },
+      "payload": {
+        "term": "travel",
+        "ipa": "ˈtrævl",
+        "pos": "v.",
+        "def": "v.旅行,游历幽;传播 n.[C,U]旅行[U]游历",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "053 小船上的男人 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "95e77ca9f64d3697043830944ac032fea5666bfc46295ef77fede423b2889d72"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep053-vocab-016",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 116,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "week",
+        "zh": "周,星期"
+      },
+      "payload": {
+        "term": "week",
+        "ipa": "wiːk",
+        "pos": "n.",
+        "def": "n.[C]周,星期",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "053 小船上的男人 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "95e77ca9f64d3697043830944ac032fea5666bfc46295ef77fede423b2889d72"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep053-vocab-017",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 117,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "month",
+        "zh": "月,月份"
+      },
+      "payload": {
+        "term": "month",
+        "ipa": "mʌnθ",
+        "pos": "n.",
+        "def": "月,月份",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ],
+        "gloss": "月,月份"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "053 小船上的男人 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "95e77ca9f64d3697043830944ac032fea5666bfc46295ef77fede423b2889d72"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep053-vocab-018",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 118,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "come",
+        "zh": "vi.来,来到 v.-link.成为,变成,变得"
+      },
+      "payload": {
+        "term": "come",
+        "ipa": "kʌm",
+        "pos": "vi.",
+        "def": "vi.来,来到 v.-link.成为,变成,变得",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "053 小船上的男人 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "95e77ca9f64d3697043830944ac032fea5666bfc46295ef77fede423b2889d72"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep053-vocab-019",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 119,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "wide",
+        "zh": "adj.宽的,宽阔的,......宽的 adv.尽可能远地,充分地"
+      },
+      "payload": {
+        "term": "wide",
+        "ipa": "waɪd",
+        "pos": "adj.",
+        "def": "adj.宽的,宽阔的,......宽的 adv.尽可能远地,充分地",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "053 小船上的男人 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "95e77ca9f64d3697043830944ac032fea5666bfc46295ef77fede423b2889d72"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep053-vocab-020",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 120,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "believe",
+        "zh": "v.相信,认为有可能"
+      },
+      "payload": {
+        "term": "believe",
+        "ipa": "bɪˈliːv",
+        "pos": "v.",
+        "def": "v.相信,认为有可能",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "053 小船上的男人 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "95e77ca9f64d3697043830944ac032fea5666bfc46295ef77fede423b2889d72"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep053-vocab-021",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 121,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "cross",
+        "zh": "十字形记号"
+      },
+      "payload": {
+        "term": "cross",
+        "ipa": "krɒs",
+        "pos": "v.",
+        "def": "v.横过,越过 n.[C]十字形记号",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "053 小船上的男人 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "95e77ca9f64d3697043830944ac032fea5666bfc46295ef77fede423b2889d72"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep053-vocab-022",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 122,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "another",
+        "zh": "adj./pron.另一,又一"
+      },
+      "payload": {
+        "term": "another",
+        "ipa": "əˈnʌðə(r)",
+        "pos": "adj.",
+        "def": "adj./pron.另一,又一",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "053 小船上的男人 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "95e77ca9f64d3697043830944ac032fea5666bfc46295ef77fede423b2889d72"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep053-vocab-023",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 123,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "river",
+        "zh": "河,江"
+      },
+      "payload": {
+        "term": "river",
+        "ipa": "ˈrɪvə(r)",
+        "pos": "n.",
+        "def": "n.[C]河,江",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          2,
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "053 小船上的男人 上.pdf",
+          "half": "up",
+          "pages": [
+            2,
+            3
+          ],
+          "sha256": "95e77ca9f64d3697043830944ac032fea5666bfc46295ef77fede423b2889d72"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "053 小船上的男人 下.pdf",
+          "half": "down",
+          "pages": [
+            2,
+            3
+          ],
+          "sha256": "d0279f9a9e3523b457d941b578809472b0baecd20865ec0659aa0d77d71ace2f"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep053-vocab-024",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 124,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "between",
+        "zh": "在两者之间"
+      },
+      "payload": {
+        "term": "between",
+        "ipa": "bɪˈtwiːn",
+        "pos": "prep.",
+        "def": "在两者之间",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ],
+        "gloss": "在两者之间"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "053 小船上的男人 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "95e77ca9f64d3697043830944ac032fea5666bfc46295ef77fede423b2889d72"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep053-vocab-025",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 125,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "man",
+        "zh": "人,人类"
+      },
+      "payload": {
+        "term": "man",
+        "ipa": "mæn",
+        "pos": "n.",
+        "def": "n.[C]男人[U]人,人类",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "053 小船上的男人 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "d0279f9a9e3523b457d941b578809472b0baecd20865ec0659aa0d77d71ace2f"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep053-vocab-026",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 126,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "look",
+        "zh": "看,注视,外表,表情"
+      },
+      "payload": {
+        "term": "look",
+        "ipa": "lʊk",
+        "pos": "vi.",
+        "def": "vi.看 v.-link.看上去 n.[C]看,注视,外表,表情",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "053 小船上的男人 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "d0279f9a9e3523b457d941b578809472b0baecd20865ec0659aa0d77d71ace2f"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep053-vocab-027",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 127,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "monkey",
+        "zh": "猴子"
+      },
+      "payload": {
+        "term": "monkey",
+        "ipa": "ˈmʌŋki",
+        "pos": "n.",
+        "def": "n.[C]猴子",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "053 小船上的男人 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "d0279f9a9e3523b457d941b578809472b0baecd20865ec0659aa0d77d71ace2f"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep053-vocab-028",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 128,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "something",
+        "zh": "pron.(表示不确切的描述或数 量)大致,某事,某物"
+      },
+      "payload": {
+        "term": "something",
+        "ipa": "ˈsʌmθɪŋ",
+        "pos": "pron.",
+        "def": "pron.(表示不确切的描述或数 量)大致,某事,某物",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "053 小船上的男人 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "d0279f9a9e3523b457d941b578809472b0baecd20865ec0659aa0d77d71ace2f"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep053-vocab-029",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 129,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "forward",
+        "zh": "vt.转寄,发送 adv.向前,前进"
+      },
+      "payload": {
+        "term": "forward",
+        "ipa": "ˈfɔː(r)wə(r)d",
+        "pos": "vt.",
+        "def": "vt.转寄,发送 adv.向前,前进",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "053 小船上的男人 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "d0279f9a9e3523b457d941b578809472b0baecd20865ec0659aa0d77d71ace2f"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep053-vocab-030",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 130,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "first",
+        "zh": "第一,最初"
+      },
+      "payload": {
+        "term": "first",
+        "ipa": "fɜː(r)st",
+        "pos": "num.",
+        "def": "num.第一 adj.第一的;首要的 adv.第一,最初 n.[sing.]第一,最初",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "053 小船上的男人 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "d0279f9a9e3523b457d941b578809472b0baecd20865ec0659aa0d77d71ace2f"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep053-vocab-031",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 131,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "trust",
+        "zh": "信任"
+      },
+      "payload": {
+        "term": "trust",
+        "ipa": "trʌst",
+        "pos": "vt.",
+        "def": "vt.相信,信任 [U]信任",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "053 小船上的男人 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "d0279f9a9e3523b457d941b578809472b0baecd20865ec0659aa0d77d71ace2f"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep053-vocab-032",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 132,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "sit",
+        "zh": "v.坐"
+      },
+      "payload": {
+        "term": "sit",
+        "ipa": "sɪt",
+        "pos": "v.",
+        "def": "v.坐",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "053 小船上的男人 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "d0279f9a9e3523b457d941b578809472b0baecd20865ec0659aa0d77d71ace2f"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep053-vocab-033",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 133,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "imagine",
+        "zh": "v.想象,设想"
+      },
+      "payload": {
+        "term": "imagine",
+        "ipa": "ɪˈmædʒɪn",
+        "pos": "v.",
+        "def": "v.想象,设想",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "053 小船上的男人 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "d0279f9a9e3523b457d941b578809472b0baecd20865ec0659aa0d77d71ace2f"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep053-vocab-034",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 134,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "ask",
+        "zh": "v.请求,要求,询问"
+      },
+      "payload": {
+        "term": "ask",
+        "ipa": "ɑːsk",
+        "pos": "v.",
+        "def": "v.请求,要求,询问",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "053 小船上的男人 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "d0279f9a9e3523b457d941b578809472b0baecd20865ec0659aa0d77d71ace2f"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep053-vocab-035",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 135,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "stamp",
+        "zh": "邮票,印章"
+      },
+      "payload": {
+        "term": "stamp",
+        "ipa": "stæmp",
+        "pos": "n.",
+        "def": "邮票,印章",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ],
+        "gloss": "邮票,印章"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "053 小船上的男人 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "d0279f9a9e3523b457d941b578809472b0baecd20865ec0659aa0d77d71ace2f"
+        }
+      ],
+      "review_status": "machine_verified"
+    }
+  ],
+  "teacher_guide": null,
+  "review": {
+    "status": "draft",
+    "reviewed_at": null,
+    "card_stats": {
+      "total": 40,
+      "sentence_choice": 5,
+      "word_review": 35,
+      "machine_verified": 36,
+      "assistant_reviewed": 4,
+      "verified": 40,
+      "needs_review": 0
+    }
+  },
+  "generated_at": "2026-08-31T04:49:42.330404+00:00"
+}

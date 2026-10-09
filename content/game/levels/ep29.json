@@ -1,0 +1,584 @@
+{
+ "schema_version": 1,
+ "ep": 29,
+ "title": {
+  "en": "The Magic Sleeve",
+  "zh": "西游记 第29集"
+ },
+ "collection": "c04",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "zhenyuan",
+   "nameZh": "镇元大仙",
+   "mode": "sparring",
+   "sprite": "zhenyuan"
+  },
+  "minors": [
+   {
+    "id": "imp",
+    "nameZh": "小妖",
+    "sprite": "imp"
+   }
+  ]
+ },
+ "background": {
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep29/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "\"I know we counted the fruit correctly,\" said one priest.",
+   "textZh": "\"我知道我们数水果的数目没错,\"一位神父说道。",
+   "illustration": "assets/adv_frames/ep29/f1.jpg",
+   "sourceNodeId": "n001",
+   "audioRef": "sent_en:\"I know we counted the fruit correctly,\" said one priest."
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "\"But we'll count again anyway.\"",
+   "textZh": "\"不过,我们还是再数一遍吧。\"",
+   "illustration": "assets/adv_frames/ep29/f2.jpg",
+   "sourceNodeId": "n002",
+   "audioRef": "sent_en:\"But we'll count again anyway.\""
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "sleeve",
+   "zh": "(衣服的)袖子",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep29/f0.jpg"
+  },
+  {
+   "term": "correctly",
+   "zh": "正确地,得体地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep29/f1.jpg"
+  },
+  {
+   "term": "anyway",
+   "zh": "无论如何,不管怎样",
+   "ipa": "ˈeniweɪ",
+   "illustration": "assets/adv_frames/ep29/f1.jpg"
+  },
+  {
+   "term": "gasp",
+   "zh": "(因惊吓等而)倒抽一又气",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep29/f3.jpg"
+  },
+  {
+   "term": "dead",
+   "zh": "死亡的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep29/f2.jpg"
+  },
+  {
+   "term": "dangerous",
+   "zh": "危险的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep29/f2.jpg"
+  },
+  {
+   "term": "scold",
+   "zh": "责骂",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep29/f0.jpg"
+  },
+  {
+   "term": "guest",
+   "zh": "客人",
+   "ipa": "ɡest",
+   "illustration": "assets/adv_frames/ep29/f2.jpg"
+  },
+  {
+   "term": "stole",
+   "zh": "偷窃 (steal-stole)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep29/f2.jpg"
+  },
+  {
+   "term": "host",
+   "zh": "主人",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep29/f2.jpg"
+  },
+  {
+   "term": "apology",
+   "zh": "道歉,赔罪",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep29/f0.jpg"
+  },
+  {
+   "term": "missing",
+   "zh": "失踪的,不见的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep29/f1.jpg"
+  }
+ ],
+ "wordPool": [
+  {
+   "term": "sleeve",
+   "zh": "(衣服的)袖子",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep29/f0.jpg"
+  },
+  {
+   "term": "correctly",
+   "zh": "正确地,得体地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep29/f1.jpg"
+  },
+  {
+   "term": "anyway",
+   "zh": "无论如何,不管怎样",
+   "ipa": "ˈeniweɪ",
+   "illustration": "assets/adv_frames/ep29/f1.jpg"
+  },
+  {
+   "term": "gasp",
+   "zh": "(因惊吓等而)倒抽一又气",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep29/f3.jpg"
+  },
+  {
+   "term": "dead",
+   "zh": "死亡的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep29/f2.jpg"
+  },
+  {
+   "term": "dangerous",
+   "zh": "危险的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep29/f2.jpg"
+  },
+  {
+   "term": "scold",
+   "zh": "责骂",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep29/f0.jpg"
+  },
+  {
+   "term": "guest",
+   "zh": "客人",
+   "ipa": "ɡest",
+   "illustration": "assets/adv_frames/ep29/f2.jpg"
+  },
+  {
+   "term": "stole",
+   "zh": "偷窃 (steal-stole)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep29/f2.jpg"
+  },
+  {
+   "term": "host",
+   "zh": "主人",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep29/f2.jpg"
+  },
+  {
+   "term": "apology",
+   "zh": "道歉,赔罪",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep29/f0.jpg"
+  },
+  {
+   "term": "missing",
+   "zh": "失踪的,不见的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep29/f1.jpg"
+  },
+  {
+   "term": "suspicious",
+   "zh": "可疑的,容易引起怀疑的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep29/f0.jpg"
+  },
+  {
+   "term": "spend",
+   "zh": "花(钱、时间等)",
+   "ipa": "spend",
+   "illustration": "assets/adv_frames/ep29/f2.jpg"
+  },
+  {
+   "term": "lock",
+   "zh": "1. 锁,(2. 把...锁起来,把...关起来)",
+   "ipa": "lɒk",
+   "illustration": "assets/adv_frames/ep29/f3.jpg"
+  },
+  {
+   "term": "click",
+   "zh": "1. 发出喀嚓声,(2. 喀嚓声)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep29/f1.jpg"
+  },
+  {
+   "term": "lock in",
+   "zh": "把...锁在(屋等)里,把...关在里面",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep29/f2.jpg"
+  },
+  {
+   "term": "glare",
+   "zh": "怒目注视",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep29/f3.jpg"
+  },
+  {
+   "term": "fault",
+   "zh": "错误,过失",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep29/f2.jpg"
+  },
+  {
+   "term": "lock-picking",
+   "zh": "撬锁的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep29/f1.jpg"
+  },
+  {
+   "term": "escape",
+   "zh": "逃亡,逃跑",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep29/f2.jpg"
+  },
+  {
+   "term": "nervously",
+   "zh": "焦急地,神经质地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep29/f2.jpg"
+  },
+  {
+   "term": "farther",
+   "zh": "更远地 (far-farther)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep29/f2.jpg"
+  },
+  {
+   "term": "raise",
+   "zh": "举起,使升高",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep29/f0.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "sleeve",
+     "zh": "(衣服的)袖子",
+     "sprite": "imp"
+    },
+    {
+     "term": "correctly",
+     "zh": "正确地,得体地",
+     "sprite": "imp"
+    },
+    {
+     "term": "anyway",
+     "zh": "无论如何,不管怎样",
+     "sprite": "imp"
+    },
+    {
+     "term": "gasp",
+     "zh": "(因惊吓等而)倒抽一又气",
+     "sprite": "imp"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "dead",
+     "zh": "死亡的",
+     "sprite": "imp"
+    },
+    {
+     "term": "dangerous",
+     "zh": "危险的",
+     "sprite": "imp"
+    },
+    {
+     "term": "scold",
+     "zh": "责骂",
+     "sprite": "imp"
+    },
+    {
+     "term": "guest",
+     "zh": "客人",
+     "sprite": "imp"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "stole",
+    "zh": "偷窃 (steal-stole)"
+   },
+   {
+    "term": "host",
+    "zh": "主人"
+   },
+   {
+    "term": "apology",
+    "zh": "道歉,赔罪"
+   },
+   {
+    "term": "missing",
+    "zh": "失踪的,不见的"
+   }
+  ],
+  "taunts": [
+   "zhenyuan.1",
+   "zhenyuan.2",
+   "zhenyuan.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=29",
+ "npcDialogue": {
+  "intro": {
+   "id": "ep29-map-intro",
+   "lines": [
+    {
+     "id": "ep29-map-intro-1",
+     "sourceNodeId": "n001",
+     "speaker": "narrator",
+     "textEn": "\"I know we counted the fruit correctly,\" said one priest.",
+     "textZh": "\"我知道我们数水果的数目没错,\"一位神父说道。",
+     "audioRef": "sent_en:\"I know we counted the fruit correctly,\" said one priest.",
+     "audioStart": 11.134,
+     "audioEnd": 16.786
+    },
+    {
+     "id": "ep29-map-intro-2",
+     "sourceNodeId": "n002",
+     "speaker": "narrator",
+     "textEn": "\"But we'll count again anyway.\"",
+     "textZh": "\"不过,我们还是再数一遍吧。\"",
+     "audioRef": "sent_en:\"But we'll count again anyway.\"",
+     "audioStart": 16.787,
+     "audioEnd": 19.685
+    }
+   ]
+  },
+  "quiz": {
+   "id": "ep29-map-quiz",
+   "lines": [
+    {
+     "id": "ep29-map-quiz-1",
+     "sourceNodeId": "n008",
+     "speaker": "narrator",
+     "textEn": "\"But the monkey was inside the whole time,\" said the other priest.",
+     "textZh": "\"但那只猴子整段时间都待在里面,\"另一位神父说道。",
+     "audioRef": "sent_en:\"But the monkey was inside the whole time,\" said the other priest.",
+     "audioStart": 41.102,
+     "audioEnd": 45.124
+    }
+   ],
+   "question": {
+    "id": "ep029-official-quiz-001",
+    "textEn": "which is not true?",
+    "textZh": "哪一项是不正确的？"
+   },
+   "word": {
+    "term": "sleeve",
+    "zh": "(衣服的)袖子",
+    "ipa": ""
+   },
+   "options": [
+    {
+     "id": "a",
+     "textEn": "everyone saw wukong knock down the tree.",
+     "textZh": "每个人都看见悟空把树打倒了。",
+     "correct": true,
+     "feedback": "对了。每个人都看见悟空把树打倒了。"
+    },
+    {
+     "id": "b",
+     "textEn": "the tang monk was upset with wukong.",
+     "textZh": "唐僧对悟空很生气。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    },
+    {
+     "id": "c",
+     "textEn": "the great immortal wanted a new ginseng tree.",
+     "textZh": "大罗天想要一棵新的人参树。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    }
+   ],
+   "lessonCardId": "ep029-official-quiz-001"
+  }
+ },
+ "map": {
+  "theme": "generic",
+  "coordinateSpace": "world-normalized",
+  "worldTiles": 2,
+  "regions": {
+   "hero": 0,
+   "waves": [
+    0,
+    1
+   ],
+   "npc": {
+    "intro": 0,
+    "quiz": 1
+   },
+   "boss": 3
+  },
+  "walkable": {
+   "space": "world",
+   "x": 0.0,
+   "y": 0.16,
+   "w": 1.0,
+   "h": 0.79,
+   "rects": [
+    {
+     "x": 0.0,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.66,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    }
+   ]
+  },
+  "heroSpawn": {
+   "x": 0.06,
+   "y": 0.31
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.31,
+    "y": 0.23
+   },
+   {
+    "x": 0.38,
+    "y": 0.27
+   },
+   {
+    "x": 0.34,
+    "y": 0.33
+   },
+   {
+    "x": 0.41,
+    "y": 0.24
+   }
+  ],
+  "waveSpawns": [
+   [
+    {
+     "x": 0.31,
+     "y": 0.23
+    },
+    {
+     "x": 0.38,
+     "y": 0.27
+    },
+    {
+     "x": 0.34,
+     "y": 0.33
+    },
+    {
+     "x": 0.41,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.81,
+     "y": 0.23
+    },
+    {
+     "x": 0.88,
+     "y": 0.27
+    },
+    {
+     "x": 0.84,
+     "y": 0.33
+    },
+    {
+     "x": 0.91,
+     "y": 0.24
+    }
+   ]
+  ],
+  "orbSpawns": [
+   [
+    {
+     "x": 0.11,
+     "y": 0.25
+    },
+    {
+     "x": 0.16,
+     "y": 0.31
+    },
+    {
+     "x": 0.12,
+     "y": 0.37
+    },
+    {
+     "x": 0.18,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.61,
+     "y": 0.25
+    },
+    {
+     "x": 0.66,
+     "y": 0.31
+    },
+    {
+     "x": 0.62,
+     "y": 0.37
+    },
+    {
+     "x": 0.68,
+     "y": 0.24
+    }
+   ]
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "zhenyuan",
+    "nameZh": "镇元大仙",
+    "x": 0.08,
+    "y": 0.26
+   },
+   {
+    "role": "quiz",
+    "sprite": "zhenyuan",
+    "nameZh": "镇元大仙",
+    "x": 0.7,
+    "y": 0.39
+   }
+  ],
+  "bossSpot": {
+   "x": 0.94,
+   "y": 0.85
+  }
+ }
+}

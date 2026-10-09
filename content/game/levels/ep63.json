@@ -1,0 +1,584 @@
+{
+ "schema_version": 1,
+ "ep": 63,
+ "title": {
+  "en": "A Question for Buddha",
+  "zh": "西游记 第63集"
+ },
+ "collection": "c08",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "guanyin",
+   "nameZh": "观音",
+   "mode": "sparring",
+   "sprite": "guanyin"
+  },
+  "minors": [
+   {
+    "id": "imp",
+    "nameZh": "小妖",
+    "sprite": "imp"
+   }
+  ]
+ },
+ "background": {
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep63/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "The Tang Monk jumped to his feet as the villagers hid behind trees.",
+   "textZh": "当村民们躲藏在树后时,唐僧猛地站了起来。",
+   "illustration": "assets/adv_frames/ep63/f1.jpg",
+   "sourceNodeId": "n001",
+   "audioRef": "sent_en:The Tang Monk jumped to his feet as the villagers hid behind trees."
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "Wukong, Wujing, and Bajie pulled out their weapons.",
+   "textZh": "悟空、悟空和八戒各自抽出武器。",
+   "illustration": "assets/adv_frames/ep63/f2.jpg",
+   "sourceNodeId": "n002",
+   "audioRef": "sent_en:Wukong, Wujing, and Bajie pulled out their weapons."
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "villager",
+   "zh": "村民",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep63/f1.jpg"
+  },
+  {
+   "term": "hid",
+   "zh": "躲藏 (hide-hid)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep63/f1.jpg"
+  },
+  {
+   "term": "pull out",
+   "zh": "1. 抽出,拿出,(2. 拔出(牙齿、塞子等))",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep63/f2.jpg"
+  },
+  {
+   "term": "shell",
+   "zh": "壳,贝壳",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep63/f3.jpg"
+  },
+  {
+   "term": "bow",
+   "zh": "鞠躬,弯腰",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep63/f1.jpg"
+  },
+  {
+   "term": "taken over",
+   "zh": "1. 接管(建筑、国家等) (take over-took over-taken over), (2. 接任,接办)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep63/f2.jpg"
+  },
+  {
+   "term": "get rid of",
+   "zh": "摆脱,除掉",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep63/f2.jpg"
+  },
+  {
+   "term": "interrupt",
+   "zh": "妨碍,中断",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep63/f2.jpg"
+  },
+  {
+   "term": "scripture",
+   "zh": "经文",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep63/f3.jpg"
+  },
+  {
+   "term": "eye",
+   "zh": "1. 集中注意力地看,(2. 眼睛)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep63/f0.jpg"
+  },
+  {
+   "term": "eventually",
+   "zh": "最终",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep63/f3.jpg"
+  },
+  {
+   "term": "suspiciously",
+   "zh": "怀疑地,猜疑地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep63/f0.jpg"
+  }
+ ],
+ "wordPool": [
+  {
+   "term": "villager",
+   "zh": "村民",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep63/f1.jpg"
+  },
+  {
+   "term": "hid",
+   "zh": "躲藏 (hide-hid)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep63/f1.jpg"
+  },
+  {
+   "term": "pull out",
+   "zh": "1. 抽出,拿出,(2. 拔出(牙齿、塞子等))",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep63/f2.jpg"
+  },
+  {
+   "term": "shell",
+   "zh": "壳,贝壳",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep63/f3.jpg"
+  },
+  {
+   "term": "bow",
+   "zh": "鞠躬,弯腰",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep63/f1.jpg"
+  },
+  {
+   "term": "taken over",
+   "zh": "1. 接管(建筑、国家等) (take over-took over-taken over), (2. 接任,接办)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep63/f2.jpg"
+  },
+  {
+   "term": "get rid of",
+   "zh": "摆脱,除掉",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep63/f2.jpg"
+  },
+  {
+   "term": "interrupt",
+   "zh": "妨碍,中断",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep63/f2.jpg"
+  },
+  {
+   "term": "scripture",
+   "zh": "经文",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep63/f3.jpg"
+  },
+  {
+   "term": "eye",
+   "zh": "1. 集中注意力地看,(2. 眼睛)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep63/f0.jpg"
+  },
+  {
+   "term": "eventually",
+   "zh": "最终",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep63/f3.jpg"
+  },
+  {
+   "term": "suspiciously",
+   "zh": "怀疑地,猜疑地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep63/f0.jpg"
+  },
+  {
+   "term": "along the",
+   "zh": "沿途,一路上",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep63/f1.jpg"
+  },
+  {
+   "term": "pass by",
+   "zh": "经过,过去",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep63/f1.jpg"
+  },
+  {
+   "term": "hesitation",
+   "zh": "犹豫,踌躇",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep63/f1.jpg"
+  },
+  {
+   "term": "paddle",
+   "zh": "用桨划(船),(安静地)搅17. on one's way home 在回家的路上",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep63/f2.jpg"
+  },
+  {
+   "term": "do me a",
+   "zh": "帮助我",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep63/f2.jpg"
+  },
+  {
+   "term": "sadly",
+   "zh": "悲伤地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep63/f2.jpg"
+  },
+  {
+   "term": "reborn",
+   "zh": "再生的,复活的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep63/f2.jpg"
+  },
+  {
+   "term": "human",
+   "zh": "人,人类",
+   "ipa": "ˈhjuːmən",
+   "illustration": "assets/adv_frames/ep63/f1.jpg"
+  },
+  {
+   "term": "the other",
+   "zh": "另一边",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep63/f1.jpg"
+  },
+  {
+   "term": "as",
+   "zh": "照例,像往常一样",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep63/f0.jpg"
+  },
+  {
+   "term": "complain",
+   "zh": "抱怨,发牢骚",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep63/f0.jpg"
+  },
+  {
+   "term": "flat",
+   "zh": "平的,平坦的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep63/f3.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "villager",
+     "zh": "村民",
+     "sprite": "imp"
+    },
+    {
+     "term": "hid",
+     "zh": "躲藏 (hide-hid)",
+     "sprite": "imp"
+    },
+    {
+     "term": "pull out",
+     "zh": "1. 抽出,拿出,(2. 拔出(牙齿、塞子等))",
+     "sprite": "imp"
+    },
+    {
+     "term": "shell",
+     "zh": "壳,贝壳",
+     "sprite": "imp"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "bow",
+     "zh": "鞠躬,弯腰",
+     "sprite": "imp"
+    },
+    {
+     "term": "taken over",
+     "zh": "1. 接管(建筑、国家等) (take over-took over-taken over), (2. 接任,接办)",
+     "sprite": "imp"
+    },
+    {
+     "term": "get rid of",
+     "zh": "摆脱,除掉",
+     "sprite": "imp"
+    },
+    {
+     "term": "interrupt",
+     "zh": "妨碍,中断",
+     "sprite": "imp"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "scripture",
+    "zh": "经文"
+   },
+   {
+    "term": "eye",
+    "zh": "1. 集中注意力地看,(2. 眼睛)"
+   },
+   {
+    "term": "eventually",
+    "zh": "最终"
+   },
+   {
+    "term": "suspiciously",
+    "zh": "怀疑地,猜疑地"
+   }
+  ],
+  "taunts": [
+   "guanyin.1",
+   "guanyin.2",
+   "guanyin.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=63",
+ "npcDialogue": {
+  "intro": {
+   "id": "ep63-map-intro",
+   "lines": [
+    {
+     "id": "ep63-map-intro-1",
+     "sourceNodeId": "n001",
+     "speaker": "narrator",
+     "textEn": "The Tang Monk jumped to his feet as the villagers hid behind trees.",
+     "textZh": "当村民们躲藏在树后时,唐僧猛地站了起来。",
+     "audioRef": "sent_en:The Tang Monk jumped to his feet as the villagers hid behind trees.",
+     "audioStart": 11.067,
+     "audioEnd": 18.344
+    },
+    {
+     "id": "ep63-map-intro-2",
+     "sourceNodeId": "n002",
+     "speaker": "narrator",
+     "textEn": "Wukong, Wujing, and Bajie pulled out their weapons.",
+     "textZh": "悟空、悟空和八戒各自抽出武器。",
+     "audioRef": "sent_en:Wukong, Wujing, and Bajie pulled out their weapons.",
+     "audioStart": 18.345,
+     "audioEnd": 22.424
+    }
+   ]
+  },
+  "quiz": {
+   "id": "ep63-map-quiz",
+   "lines": [
+    {
+     "id": "ep63-map-quiz-1",
+     "sourceNodeId": "n003",
+     "speaker": "narrator",
+     "textEn": "A large shell rose from the water.",
+     "textZh": "一只巨大的贝壳从水中浮出。",
+     "audioRef": "sent_en:A large shell rose from the water.",
+     "audioStart": 22.425,
+     "audioEnd": 26.008
+    }
+   ],
+   "question": {
+    "id": "ep063-official-quiz-001",
+    "textEn": "which is true?",
+    "textZh": "哪一个是真的？"
+   },
+   "word": {
+    "term": "villager",
+    "zh": "村民",
+    "ipa": ""
+   },
+   "options": [
+    {
+     "id": "a",
+     "textEn": "the turtle thanked the travelers.",
+     "textZh": "乌龟感谢了旅行者。",
+     "correct": true,
+     "feedback": "对了。乌龟感谢了旅行者。"
+    },
+    {
+     "id": "b",
+     "textEn": "the turtle went to the monastery.",
+     "textZh": "乌龟去了修道院。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    },
+    {
+     "id": "c",
+     "textEn": "the turtle had just become a buddhist.",
+     "textZh": "这只乌龟刚刚成为了一名佛教徒。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    }
+   ],
+   "lessonCardId": "ep063-official-quiz-001"
+  }
+ },
+ "map": {
+  "theme": "generic",
+  "coordinateSpace": "world-normalized",
+  "worldTiles": 2,
+  "regions": {
+   "hero": 0,
+   "waves": [
+    0,
+    1
+   ],
+   "npc": {
+    "intro": 0,
+    "quiz": 1
+   },
+   "boss": 3
+  },
+  "walkable": {
+   "space": "world",
+   "x": 0.0,
+   "y": 0.16,
+   "w": 1.0,
+   "h": 0.79,
+   "rects": [
+    {
+     "x": 0.0,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.66,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    }
+   ]
+  },
+  "heroSpawn": {
+   "x": 0.06,
+   "y": 0.31
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.31,
+    "y": 0.23
+   },
+   {
+    "x": 0.38,
+    "y": 0.27
+   },
+   {
+    "x": 0.34,
+    "y": 0.33
+   },
+   {
+    "x": 0.41,
+    "y": 0.24
+   }
+  ],
+  "waveSpawns": [
+   [
+    {
+     "x": 0.31,
+     "y": 0.23
+    },
+    {
+     "x": 0.38,
+     "y": 0.27
+    },
+    {
+     "x": 0.34,
+     "y": 0.33
+    },
+    {
+     "x": 0.41,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.81,
+     "y": 0.23
+    },
+    {
+     "x": 0.88,
+     "y": 0.27
+    },
+    {
+     "x": 0.84,
+     "y": 0.33
+    },
+    {
+     "x": 0.91,
+     "y": 0.24
+    }
+   ]
+  ],
+  "orbSpawns": [
+   [
+    {
+     "x": 0.11,
+     "y": 0.25
+    },
+    {
+     "x": 0.16,
+     "y": 0.31
+    },
+    {
+     "x": 0.12,
+     "y": 0.37
+    },
+    {
+     "x": 0.18,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.61,
+     "y": 0.25
+    },
+    {
+     "x": 0.66,
+     "y": 0.31
+    },
+    {
+     "x": 0.62,
+     "y": 0.37
+    },
+    {
+     "x": 0.68,
+     "y": 0.24
+    }
+   ]
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "imp",
+    "nameZh": "小妖",
+    "x": 0.08,
+    "y": 0.26
+   },
+   {
+    "role": "quiz",
+    "sprite": "imp",
+    "nameZh": "小妖",
+    "x": 0.7,
+    "y": 0.39
+   }
+  ],
+  "bossSpot": {
+   "x": 0.94,
+   "y": 0.85
+  }
+ }
+}

@@ -1,0 +1,584 @@
+{
+ "schema_version": 1,
+ "ep": 48,
+ "title": {
+  "en": "The Scared Boy",
+  "zh": "西游记 第48集"
+ },
+ "collection": "c06",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "imp",
+   "nameZh": "小妖",
+   "mode": "sparring",
+   "sprite": "imp"
+  },
+  "minors": [
+   {
+    "id": "imp",
+    "nameZh": "小妖",
+    "sprite": "imp"
+   }
+  ]
+ },
+ "background": {
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep48/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "Wukong stared at the mountains.",
+   "textZh": "猿猴孙悟空凝视着群山。",
+   "illustration": "assets/adv_frames/ep48/f1.jpg",
+   "sourceNodeId": "n001",
+   "audioRef": "sent_en:Wukong stared at the mountains."
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "\"A red cloud keeps appearing over those mountains,\" he said.",
+   "textZh": "\"那座山峰上总浮现出一道红云,\"他说道。",
+   "illustration": "assets/adv_frames/ep48/f2.jpg",
+   "sourceNodeId": "n002",
+   "audioRef": "sent_en:\"A red cloud keeps appearing over those mountains,\" he said."
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "cautiously",
+   "zh": "小心地,谨慎地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep48/f0.jpg"
+  },
+  {
+   "term": "approach",
+   "zh": "接近,靠近",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep48/f1.jpg"
+  },
+  {
+   "term": "alongside",
+   "zh": "并排地,在旁边",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep48/f3.jpg"
+  },
+  {
+   "term": "robber",
+   "zh": "强盗",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep48/f2.jpg"
+  },
+  {
+   "term": "horrified",
+   "zh": "受惊的,害怕的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep48/f2.jpg"
+  },
+  {
+   "term": "glare",
+   "zh": "怒目注视",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep48/f1.jpg"
+  },
+  {
+   "term": "angrily",
+   "zh": "愤怒地,生气地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep48/f1.jpg"
+  },
+  {
+   "term": "injure",
+   "zh": "伤害,使...受伤",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep48/f2.jpg"
+  },
+  {
+   "term": "continue",
+   "zh": "继续,持续",
+   "ipa": "kənˈtɪnjuː",
+   "illustration": "assets/adv_frames/ep48/f1.jpg"
+  },
+  {
+   "term": "uproot",
+   "zh": "连根拔起",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep48/f2.jpg"
+  },
+  {
+   "term": "knock over",
+   "zh": "打翻,撞倒",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep48/f2.jpg"
+  },
+  {
+   "term": "magic",
+   "zh": "魔术,魔法",
+   "ipa": "ˈmædʒɪk",
+   "illustration": "assets/adv_frames/ep48/f2.jpg"
+  }
+ ],
+ "wordPool": [
+  {
+   "term": "cautiously",
+   "zh": "小心地,谨慎地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep48/f0.jpg"
+  },
+  {
+   "term": "approach",
+   "zh": "接近,靠近",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep48/f1.jpg"
+  },
+  {
+   "term": "alongside",
+   "zh": "并排地,在旁边",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep48/f3.jpg"
+  },
+  {
+   "term": "robber",
+   "zh": "强盗",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep48/f2.jpg"
+  },
+  {
+   "term": "horrified",
+   "zh": "受惊的,害怕的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep48/f2.jpg"
+  },
+  {
+   "term": "glare",
+   "zh": "怒目注视",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep48/f1.jpg"
+  },
+  {
+   "term": "angrily",
+   "zh": "愤怒地,生气地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep48/f1.jpg"
+  },
+  {
+   "term": "injure",
+   "zh": "伤害,使...受伤",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep48/f2.jpg"
+  },
+  {
+   "term": "continue",
+   "zh": "继续,持续",
+   "ipa": "kənˈtɪnjuː",
+   "illustration": "assets/adv_frames/ep48/f1.jpg"
+  },
+  {
+   "term": "uproot",
+   "zh": "连根拔起",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep48/f2.jpg"
+  },
+  {
+   "term": "knock over",
+   "zh": "打翻,撞倒",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep48/f2.jpg"
+  },
+  {
+   "term": "magic",
+   "zh": "魔术,魔法",
+   "ipa": "ˈmædʒɪk",
+   "illustration": "assets/adv_frames/ep48/f2.jpg"
+  },
+  {
+   "term": "entire",
+   "zh": "整个的,全部的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep48/f0.jpg"
+  },
+  {
+   "term": "army",
+   "zh": "军队,陆军",
+   "ipa": "ˈɑː(r)mi",
+   "illustration": "assets/adv_frames/ep48/f2.jpg"
+  },
+  {
+   "term": "edge",
+   "zh": "边缘",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep48/f1.jpg"
+  },
+  {
+   "term": "cliff",
+   "zh": "悬崖,绝壁",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep48/f1.jpg"
+  },
+  {
+   "term": "grab",
+   "zh": "抓住,抓取",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep48/f1.jpg"
+  },
+  {
+   "term": "disappear",
+   "zh": "消失",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep48/f2.jpg"
+  },
+  {
+   "term": "gotten",
+   "zh": "变成(某种状态) get-got-gotten",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep48/f3.jpg"
+  },
+  {
+   "term": "dust",
+   "zh": "灰尘",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep48/f0.jpg"
+  },
+  {
+   "term": "frantically",
+   "zh": "非常兴奋地,像疯了一样地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep48/f3.jpg"
+  },
+  {
+   "term": "kidnap",
+   "zh": "绑架,诱拐",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep48/f1.jpg"
+  },
+  {
+   "term": "mountain",
+   "zh": "高山",
+   "ipa": "ˈmaʊntən",
+   "illustration": "assets/adv_frames/ep48/f1.jpg"
+  },
+  {
+   "term": "cloud",
+   "zh": "云",
+   "ipa": "klaʊd",
+   "illustration": "assets/adv_frames/ep48/f1.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "cautiously",
+     "zh": "小心地,谨慎地",
+     "sprite": "imp"
+    },
+    {
+     "term": "approach",
+     "zh": "接近,靠近",
+     "sprite": "imp"
+    },
+    {
+     "term": "alongside",
+     "zh": "并排地,在旁边",
+     "sprite": "imp"
+    },
+    {
+     "term": "robber",
+     "zh": "强盗",
+     "sprite": "imp"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "horrified",
+     "zh": "受惊的,害怕的",
+     "sprite": "imp"
+    },
+    {
+     "term": "glare",
+     "zh": "怒目注视",
+     "sprite": "imp"
+    },
+    {
+     "term": "angrily",
+     "zh": "愤怒地,生气地",
+     "sprite": "imp"
+    },
+    {
+     "term": "injure",
+     "zh": "伤害,使...受伤",
+     "sprite": "imp"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "continue",
+    "zh": "继续,持续"
+   },
+   {
+    "term": "uproot",
+    "zh": "连根拔起"
+   },
+   {
+    "term": "knock over",
+    "zh": "打翻,撞倒"
+   },
+   {
+    "term": "magic",
+    "zh": "魔术,魔法"
+   }
+  ],
+  "taunts": [
+   "imp.1",
+   "imp.2",
+   "imp.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=48",
+ "npcDialogue": {
+  "intro": {
+   "id": "ep48-map-intro",
+   "lines": [
+    {
+     "id": "ep48-map-intro-1",
+     "sourceNodeId": "n001",
+     "speaker": "narrator",
+     "textEn": "Wukong stared at the mountains.",
+     "textZh": "猿猴孙悟空凝视着群山。",
+     "audioRef": "sent_en:Wukong stared at the mountains.",
+     "audioStart": 11.0,
+     "audioEnd": 15.158
+    },
+    {
+     "id": "ep48-map-intro-2",
+     "sourceNodeId": "n002",
+     "speaker": "narrator",
+     "textEn": "\"A red cloud keeps appearing over those mountains,\" he said.",
+     "textZh": "\"那座山峰上总浮现出一道红云,\"他说道。",
+     "audioRef": "sent_en:\"A red cloud keeps appearing over those mountains,\" he said.",
+     "audioStart": 15.159,
+     "audioEnd": 19.342
+    }
+   ]
+  },
+  "quiz": {
+   "id": "ep48-map-quiz",
+   "lines": [
+    {
+     "id": "ep48-map-quiz-1",
+     "sourceNodeId": "n041",
+     "speaker": "narrator",
+     "textEn": "The group continued west, with Wukong carrying the boy on his back.",
+     "textZh": "这支队伍继续向西行进,悟空将男孩背在背上。",
+     "audioRef": "sent_en:The group continued west, with Wukong carrying the boy on his back.",
+     "audioStart": 175.896,
+     "audioEnd": 182.097
+    }
+   ],
+   "question": {
+    "id": "ep048-official-quiz-001",
+    "textEn": "which is true?",
+    "textZh": "哪一个是真的？"
+   },
+   "word": {
+    "term": "cautiously",
+    "zh": "小心地,谨慎地",
+    "ipa": ""
+   },
+   "options": [
+    {
+     "id": "a",
+     "textEn": "bajie realized the boy was a demon.",
+     "textZh": "八戒意识到那个男孩是个妖怪。",
+     "correct": true,
+     "feedback": "对了。八戒意识到那个男孩是个妖怪。"
+    },
+    {
+     "id": "b",
+     "textEn": "wujing carried the boy on his back.",
+     "textZh": "悟净背着那个男孩。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    },
+    {
+     "id": "c",
+     "textEn": "wukong walked ahead of everyone.",
+     "textZh": "悟空走在所有人前面。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    }
+   ],
+   "lessonCardId": "ep048-official-quiz-001"
+  }
+ },
+ "map": {
+  "theme": "generic",
+  "coordinateSpace": "world-normalized",
+  "worldTiles": 2,
+  "regions": {
+   "hero": 0,
+   "waves": [
+    0,
+    1
+   ],
+   "npc": {
+    "intro": 0,
+    "quiz": 1
+   },
+   "boss": 3
+  },
+  "walkable": {
+   "space": "world",
+   "x": 0.0,
+   "y": 0.16,
+   "w": 1.0,
+   "h": 0.79,
+   "rects": [
+    {
+     "x": 0.0,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.66,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    }
+   ]
+  },
+  "heroSpawn": {
+   "x": 0.06,
+   "y": 0.31
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.31,
+    "y": 0.23
+   },
+   {
+    "x": 0.38,
+    "y": 0.27
+   },
+   {
+    "x": 0.34,
+    "y": 0.33
+   },
+   {
+    "x": 0.41,
+    "y": 0.24
+   }
+  ],
+  "waveSpawns": [
+   [
+    {
+     "x": 0.31,
+     "y": 0.23
+    },
+    {
+     "x": 0.38,
+     "y": 0.27
+    },
+    {
+     "x": 0.34,
+     "y": 0.33
+    },
+    {
+     "x": 0.41,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.81,
+     "y": 0.23
+    },
+    {
+     "x": 0.88,
+     "y": 0.27
+    },
+    {
+     "x": 0.84,
+     "y": 0.33
+    },
+    {
+     "x": 0.91,
+     "y": 0.24
+    }
+   ]
+  ],
+  "orbSpawns": [
+   [
+    {
+     "x": 0.11,
+     "y": 0.25
+    },
+    {
+     "x": 0.16,
+     "y": 0.31
+    },
+    {
+     "x": 0.12,
+     "y": 0.37
+    },
+    {
+     "x": 0.18,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.61,
+     "y": 0.25
+    },
+    {
+     "x": 0.66,
+     "y": 0.31
+    },
+    {
+     "x": 0.62,
+     "y": 0.37
+    },
+    {
+     "x": 0.68,
+     "y": 0.24
+    }
+   ]
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "redboy",
+    "nameZh": "红孩儿",
+    "x": 0.08,
+    "y": 0.26
+   },
+   {
+    "role": "quiz",
+    "sprite": "redboy",
+    "nameZh": "红孩儿",
+    "x": 0.7,
+    "y": 0.39
+   }
+  ],
+  "bossSpot": {
+   "x": 0.94,
+   "y": 0.85
+  }
+ }
+}

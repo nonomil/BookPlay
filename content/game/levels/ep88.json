@@ -1,0 +1,584 @@
+{
+ "schema_version": 1,
+ "ep": 88,
+ "title": {
+  "en": "The Priest's Plan",
+  "zh": "西游记 第88集"
+ },
+ "collection": "c11",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "spiderdemon",
+   "nameZh": "蜘蛛精",
+   "mode": "sparring",
+   "sprite": "spiderdemon"
+  },
+  "minors": [
+   {
+    "id": "imp",
+    "nameZh": "小妖",
+    "sprite": "imp"
+   }
+  ]
+ },
+ "background": {
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep88/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "\"Help!\" cried Bajie.",
+   "textZh": "\"救命!\"八戒喊道。",
+   "illustration": "assets/adv_frames/ep88/f1.jpg",
+   "sourceNodeId": "n001",
+   "audioRef": "sent_en:\"Help!\" cried Bajie."
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "Spiderwebs now covered the pig so he couldn't move at all.",
+   "textZh": "蜘蛛网此刻覆盖了整头猪,使其完全无法移动。",
+   "illustration": "assets/adv_frames/ep88/f2.jpg",
+   "sourceNodeId": "n002",
+   "audioRef": "sent_en:Spiderwebs now covered the pig so he couldn't move at all."
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "priest",
+   "zh": "神职人员(神父、牧师、僧侣等)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep88/f2.jpg"
+  },
+  {
+   "term": "young",
+   "zh": "年轻的",
+   "ipa": "jʌŋ",
+   "illustration": "assets/adv_frames/ep88/f0.jpg"
+  },
+  {
+   "term": "wrap",
+   "zh": "(用纸、布等)包",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep88/f2.jpg"
+  },
+  {
+   "term": "corner",
+   "zh": "角,街角",
+   "ipa": "ˈkɔː(r)nə(r)",
+   "illustration": "assets/adv_frames/ep88/f3.jpg"
+  },
+  {
+   "term": "pull off",
+   "zh": "脱下(衣服等)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep88/f0.jpg"
+  },
+  {
+   "term": "web",
+   "zh": "(蜘蛛等的)网",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep88/f0.jpg"
+  },
+  {
+   "term": "breathlessly",
+   "zh": "气喘地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep88/f1.jpg"
+  },
+  {
+   "term": "smirk",
+   "zh": "奸笑,假笑,傻笑",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep88/f0.jpg"
+  },
+  {
+   "term": "scare away",
+   "zh": "把...吓跑",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep88/f1.jpg"
+  },
+  {
+   "term": "real",
+   "zh": "真的,实际的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep88/f1.jpg"
+  },
+  {
+   "term": "hero",
+   "zh": "英雄",
+   "ipa": "ˈhɪərəʊ",
+   "illustration": "assets/adv_frames/ep88/f3.jpg"
+  },
+  {
+   "term": "brave",
+   "zh": "勇敢的",
+   "ipa": "breɪv",
+   "illustration": "assets/adv_frames/ep88/f3.jpg"
+  }
+ ],
+ "wordPool": [
+  {
+   "term": "priest",
+   "zh": "神职人员(神父、牧师、僧侣等)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep88/f2.jpg"
+  },
+  {
+   "term": "young",
+   "zh": "年轻的",
+   "ipa": "jʌŋ",
+   "illustration": "assets/adv_frames/ep88/f0.jpg"
+  },
+  {
+   "term": "wrap",
+   "zh": "(用纸、布等)包",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep88/f2.jpg"
+  },
+  {
+   "term": "corner",
+   "zh": "角,街角",
+   "ipa": "ˈkɔː(r)nə(r)",
+   "illustration": "assets/adv_frames/ep88/f3.jpg"
+  },
+  {
+   "term": "pull off",
+   "zh": "脱下(衣服等)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep88/f0.jpg"
+  },
+  {
+   "term": "web",
+   "zh": "(蜘蛛等的)网",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep88/f0.jpg"
+  },
+  {
+   "term": "breathlessly",
+   "zh": "气喘地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep88/f1.jpg"
+  },
+  {
+   "term": "smirk",
+   "zh": "奸笑,假笑,傻笑",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep88/f0.jpg"
+  },
+  {
+   "term": "scare away",
+   "zh": "把...吓跑",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep88/f1.jpg"
+  },
+  {
+   "term": "real",
+   "zh": "真的,实际的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep88/f1.jpg"
+  },
+  {
+   "term": "hero",
+   "zh": "英雄",
+   "ipa": "ˈhɪərəʊ",
+   "illustration": "assets/adv_frames/ep88/f3.jpg"
+  },
+  {
+   "term": "brave",
+   "zh": "勇敢的",
+   "ipa": "breɪv",
+   "illustration": "assets/adv_frames/ep88/f3.jpg"
+  },
+  {
+   "term": "struggle",
+   "zh": "挣扎,搏斗",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep88/f3.jpg"
+  },
+  {
+   "term": "abbey",
+   "zh": "大修道院,大寺院",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep88/f3.jpg"
+  },
+  {
+   "term": "rest",
+   "zh": "1. 休息, (2. 剩余部分)",
+   "ipa": "rest",
+   "illustration": "assets/adv_frames/ep88/f2.jpg"
+  },
+  {
+   "term": "potion",
+   "zh": "(魔法的)药水",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep88/f2.jpg"
+  },
+  {
+   "term": "sitting",
+   "zh": "入席,就座",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep88/f2.jpg"
+  },
+  {
+   "term": "area",
+   "zh": "地区,区域",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep88/f2.jpg"
+  },
+  {
+   "term": "sitting area",
+   "zh": "休息区域,客厅(=sitting room),接待室",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep88/f1.jpg"
+  },
+  {
+   "term": "observe",
+   "zh": "1. 说,评论,(2. 观察)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep88/f3.jpg"
+  },
+  {
+   "term": "on one's way",
+   "zh": "在路上",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep88/f2.jpg"
+  },
+  {
+   "term": "plenty of",
+   "zh": "(数、量等)很多",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep88/f0.jpg"
+  },
+  {
+   "term": "prepare",
+   "zh": "准备",
+   "ipa": "prɪˈpeə",
+   "illustration": "assets/adv_frames/ep88/f2.jpg"
+  },
+  {
+   "term": "left",
+   "zh": "1. 离开 (leave-left),(2. 左边)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep88/f2.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "priest",
+     "zh": "神职人员(神父、牧师、僧侣等)",
+     "sprite": "imp"
+    },
+    {
+     "term": "young",
+     "zh": "年轻的",
+     "sprite": "imp"
+    },
+    {
+     "term": "wrap",
+     "zh": "(用纸、布等)包",
+     "sprite": "imp"
+    },
+    {
+     "term": "corner",
+     "zh": "角,街角",
+     "sprite": "imp"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "pull off",
+     "zh": "脱下(衣服等)",
+     "sprite": "imp"
+    },
+    {
+     "term": "web",
+     "zh": "(蜘蛛等的)网",
+     "sprite": "imp"
+    },
+    {
+     "term": "breathlessly",
+     "zh": "气喘地",
+     "sprite": "imp"
+    },
+    {
+     "term": "smirk",
+     "zh": "奸笑,假笑,傻笑",
+     "sprite": "imp"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "scare away",
+    "zh": "把...吓跑"
+   },
+   {
+    "term": "real",
+    "zh": "真的,实际的"
+   },
+   {
+    "term": "hero",
+    "zh": "英雄"
+   },
+   {
+    "term": "brave",
+    "zh": "勇敢的"
+   }
+  ],
+  "taunts": [
+   "spiderdemon.1",
+   "spiderdemon.2",
+   "spiderdemon.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=88",
+ "npcDialogue": {
+  "intro": {
+   "id": "ep88-map-intro",
+   "lines": [
+    {
+     "id": "ep88-map-intro-1",
+     "sourceNodeId": "n001",
+     "speaker": "narrator",
+     "textEn": "\"Help!\" cried Bajie.",
+     "textZh": "\"救命!\"八戒喊道。",
+     "audioRef": "sent_en:\"Help!\" cried Bajie.",
+     "audioStart": 11.0,
+     "audioEnd": 14.761
+    },
+    {
+     "id": "ep88-map-intro-2",
+     "sourceNodeId": "n002",
+     "speaker": "narrator",
+     "textEn": "Spiderwebs now covered the pig so he couldn't move at all.",
+     "textZh": "蜘蛛网此刻覆盖了整头猪,使其完全无法移动。",
+     "audioRef": "sent_en:Spiderwebs now covered the pig so he couldn't move at all.",
+     "audioStart": 14.762,
+     "audioEnd": 19.543
+    }
+   ]
+  },
+  "quiz": {
+   "id": "ep88-map-quiz",
+   "lines": [
+    {
+     "id": "ep88-map-quiz-1",
+     "sourceNodeId": "n048",
+     "speaker": "narrator",
+     "textEn": "The priest was in the kitchen, boiling water for tea.",
+     "textZh": "教堂神父正在厨房里烧水泡茶。",
+     "audioRef": "sent_en:The priest was in the kitchen, boiling water for tea.",
+     "audioStart": 186.287,
+     "audioEnd": 190.127
+    }
+   ],
+   "question": {
+    "id": "ep088-official-quiz-001",
+    "textEn": "which is most important from the story?",
+    "textZh": "故事中什么最重要？"
+   },
+   "word": {
+    "term": "priest",
+    "zh": "神职人员(神父、牧师、僧侣等)",
+    "ipa": ""
+   },
+   "options": [
+    {
+     "id": "a",
+     "textEn": "the priest wanted to eat the tang monk.",
+     "textZh": "那个和尚想吃唐僧。",
+     "correct": true,
+     "feedback": "对了。那个和尚想吃唐僧。"
+    },
+    {
+     "id": "b",
+     "textEn": "wukong lied to the priest.",
+     "textZh": "悟空对牧师撒了谎。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    },
+    {
+     "id": "c",
+     "textEn": "the women were upset.",
+     "textZh": "这些女人很生气。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    }
+   ],
+   "lessonCardId": "ep088-official-quiz-001"
+  }
+ },
+ "map": {
+  "theme": "generic",
+  "coordinateSpace": "world-normalized",
+  "worldTiles": 2,
+  "regions": {
+   "hero": 0,
+   "waves": [
+    0,
+    1
+   ],
+   "npc": {
+    "intro": 0,
+    "quiz": 1
+   },
+   "boss": 3
+  },
+  "walkable": {
+   "space": "world",
+   "x": 0.0,
+   "y": 0.16,
+   "w": 1.0,
+   "h": 0.79,
+   "rects": [
+    {
+     "x": 0.0,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.66,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    }
+   ]
+  },
+  "heroSpawn": {
+   "x": 0.06,
+   "y": 0.31
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.31,
+    "y": 0.23
+   },
+   {
+    "x": 0.38,
+    "y": 0.27
+   },
+   {
+    "x": 0.34,
+    "y": 0.33
+   },
+   {
+    "x": 0.41,
+    "y": 0.24
+   }
+  ],
+  "waveSpawns": [
+   [
+    {
+     "x": 0.31,
+     "y": 0.23
+    },
+    {
+     "x": 0.38,
+     "y": 0.27
+    },
+    {
+     "x": 0.34,
+     "y": 0.33
+    },
+    {
+     "x": 0.41,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.81,
+     "y": 0.23
+    },
+    {
+     "x": 0.88,
+     "y": 0.27
+    },
+    {
+     "x": 0.84,
+     "y": 0.33
+    },
+    {
+     "x": 0.91,
+     "y": 0.24
+    }
+   ]
+  ],
+  "orbSpawns": [
+   [
+    {
+     "x": 0.11,
+     "y": 0.25
+    },
+    {
+     "x": 0.16,
+     "y": 0.31
+    },
+    {
+     "x": 0.12,
+     "y": 0.37
+    },
+    {
+     "x": 0.18,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.61,
+     "y": 0.25
+    },
+    {
+     "x": 0.66,
+     "y": 0.31
+    },
+    {
+     "x": 0.62,
+     "y": 0.37
+    },
+    {
+     "x": 0.68,
+     "y": 0.24
+    }
+   ]
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "imp",
+    "nameZh": "小妖",
+    "x": 0.08,
+    "y": 0.26
+   },
+   {
+    "role": "quiz",
+    "sprite": "imp",
+    "nameZh": "小妖",
+    "x": 0.7,
+    "y": 0.39
+   }
+  ],
+  "bossSpot": {
+   "x": 0.94,
+   "y": 0.85
+  }
+ }
+}

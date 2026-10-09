@@ -1,0 +1,584 @@
+{
+ "schema_version": 1,
+ "ep": 75,
+ "title": {
+  "en": "Battle of the Wukongs",
+  "zh": "西游记 第75集"
+ },
+ "collection": "c10",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "imp",
+   "nameZh": "小妖",
+   "mode": "sparring",
+   "sprite": "imp"
+  },
+  "minors": [
+   {
+    "id": "imp",
+    "nameZh": "小妖",
+    "sprite": "imp"
+   }
+  ]
+ },
+ "background": {
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep75/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "The two Wukongs stared at Curious Ear.",
+   "textZh": "两位孙悟空都盯着好奇耳看。",
+   "illustration": "assets/adv_frames/ep75/f1.jpg",
+   "sourceNodeId": "n001",
+   "audioRef": "sent_en:The two Wukongs stared at Curious Ear."
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "\"I'm the real Wukong!\" shouted one monkey. \"Right?\"",
+   "textZh": "\"我就是真正的悟空!\"一只猴子大喊道,\"对吧?\"",
+   "illustration": "assets/adv_frames/ep75/f2.jpg",
+   "sourceNodeId": "n002",
+   "audioRef": "sent_en:\"I'm the real Wukong!\" shouted one monkey. \"Right?\""
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "battle",
+   "zh": "1. 战争,战斗,(2. 斗争,对决)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep75/f2.jpg"
+  },
+  {
+   "term": "point out",
+   "zh": "指出,指明",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep75/f1.jpg"
+  },
+  {
+   "term": "entire",
+   "zh": "整个的,全部的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep75/f1.jpg"
+  },
+  {
+   "term": "whole",
+   "zh": "全部的,整整的,整个的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep75/f3.jpg"
+  },
+  {
+   "term": "tear",
+   "zh": "1. 撕,(2. 眼泪,3. 撕开的裂缝)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep75/f0.jpg"
+  },
+  {
+   "term": "furiously",
+   "zh": "1. 非常愤怒地,(2. 猛烈地,激烈地)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep75/f2.jpg"
+  },
+  {
+   "term": "get out",
+   "zh": "离开",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep75/f3.jpg"
+  },
+  {
+   "term": "swirl",
+   "zh": "打旋,旋动",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep75/f2.jpg"
+  },
+  {
+   "term": "mighty",
+   "zh": "巨大的,伟大的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep75/f1.jpg"
+  },
+  {
+   "term": "monastery",
+   "zh": "修道院,寺院",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep75/f0.jpg"
+  },
+  {
+   "term": "immediately",
+   "zh": "立刻,马上",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep75/f1.jpg"
+  },
+  {
+   "term": "another time",
+   "zh": "下次,再次",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep75/f1.jpg"
+  }
+ ],
+ "wordPool": [
+  {
+   "term": "battle",
+   "zh": "1. 战争,战斗,(2. 斗争,对决)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep75/f2.jpg"
+  },
+  {
+   "term": "point out",
+   "zh": "指出,指明",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep75/f1.jpg"
+  },
+  {
+   "term": "entire",
+   "zh": "整个的,全部的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep75/f1.jpg"
+  },
+  {
+   "term": "whole",
+   "zh": "全部的,整整的,整个的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep75/f3.jpg"
+  },
+  {
+   "term": "tear",
+   "zh": "1. 撕,(2. 眼泪,3. 撕开的裂缝)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep75/f0.jpg"
+  },
+  {
+   "term": "furiously",
+   "zh": "1. 非常愤怒地,(2. 猛烈地,激烈地)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep75/f2.jpg"
+  },
+  {
+   "term": "get out",
+   "zh": "离开",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep75/f3.jpg"
+  },
+  {
+   "term": "swirl",
+   "zh": "打旋,旋动",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep75/f2.jpg"
+  },
+  {
+   "term": "mighty",
+   "zh": "巨大的,伟大的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep75/f1.jpg"
+  },
+  {
+   "term": "monastery",
+   "zh": "修道院,寺院",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep75/f0.jpg"
+  },
+  {
+   "term": "immediately",
+   "zh": "立刻,马上",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep75/f1.jpg"
+  },
+  {
+   "term": "another time",
+   "zh": "下次,再次",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep75/f1.jpg"
+  },
+  {
+   "term": "back away",
+   "zh": "后退,退却",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep75/f2.jpg"
+  },
+  {
+   "term": "behave",
+   "zh": "(尤其是小孩)注意举止,行为规矩",
+   "ipa": "bɪˈheɪv",
+   "illustration": "assets/adv_frames/ep75/f0.jpg"
+  },
+  {
+   "term": "shot a",
+   "zh": "瞥了一眼",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep75/f2.jpg"
+  },
+  {
+   "term": "drag",
+   "zh": "拖曳,慢吞吞地行进",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep75/f0.jpg"
+  },
+  {
+   "term": "hesitate",
+   "zh": "犹豫,踌躇",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep75/f2.jpg"
+  },
+  {
+   "term": "greeting",
+   "zh": "1. (常用复数)您好 (=hello), (2. (见面时)打招呼,打招呼的话)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep75/f3.jpg"
+  },
+  {
+   "term": "vanish",
+   "zh": "(突然)消失不见",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep75/f0.jpg"
+  },
+  {
+   "term": "bowl",
+   "zh": "钵",
+   "ipa": "bəʊl",
+   "illustration": "assets/adv_frames/ep75/f2.jpg"
+  },
+  {
+   "term": "upside",
+   "zh": "颠倒地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep75/f1.jpg"
+  },
+  {
+   "term": "trap",
+   "zh": "1. 困(在危险的场所或困境),(2. 陷阱)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep75/f2.jpg"
+  },
+  {
+   "term": "lift",
+   "zh": "举起",
+   "ipa": "lɪft",
+   "illustration": "assets/adv_frames/ep75/f2.jpg"
+  },
+  {
+   "term": "lean",
+   "zh": "倾身,屈身",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep75/f0.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "battle",
+     "zh": "1. 战争,战斗,(2. 斗争,对决)",
+     "sprite": "imp"
+    },
+    {
+     "term": "point out",
+     "zh": "指出,指明",
+     "sprite": "imp"
+    },
+    {
+     "term": "entire",
+     "zh": "整个的,全部的",
+     "sprite": "imp"
+    },
+    {
+     "term": "whole",
+     "zh": "全部的,整整的,整个的",
+     "sprite": "imp"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "tear",
+     "zh": "1. 撕,(2. 眼泪,3. 撕开的裂缝)",
+     "sprite": "imp"
+    },
+    {
+     "term": "furiously",
+     "zh": "1. 非常愤怒地,(2. 猛烈地,激烈地)",
+     "sprite": "imp"
+    },
+    {
+     "term": "get out",
+     "zh": "离开",
+     "sprite": "imp"
+    },
+    {
+     "term": "swirl",
+     "zh": "打旋,旋动",
+     "sprite": "imp"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "mighty",
+    "zh": "巨大的,伟大的"
+   },
+   {
+    "term": "monastery",
+    "zh": "修道院,寺院"
+   },
+   {
+    "term": "immediately",
+    "zh": "立刻,马上"
+   },
+   {
+    "term": "another time",
+    "zh": "下次,再次"
+   }
+  ],
+  "taunts": [
+   "imp.1",
+   "imp.2",
+   "imp.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=75",
+ "npcDialogue": {
+  "intro": {
+   "id": "ep75-map-intro",
+   "lines": [
+    {
+     "id": "ep75-map-intro-1",
+     "sourceNodeId": "n001",
+     "speaker": "narrator",
+     "textEn": "The two Wukongs stared at Curious Ear.",
+     "textZh": "两位孙悟空都盯着好奇耳看。",
+     "audioRef": "sent_en:The two Wukongs stared at Curious Ear.",
+     "audioStart": 10.934,
+     "audioEnd": 15.079
+    },
+    {
+     "id": "ep75-map-intro-2",
+     "sourceNodeId": "n002",
+     "speaker": "narrator",
+     "textEn": "\"I'm the real Wukong!\" shouted one monkey. \"Right?\"",
+     "textZh": "\"我就是真正的悟空!\"一只猴子大喊道,\"对吧?\"",
+     "audioRef": "sent_en:\"I'm the real Wukong!\" shouted one monkey. \"Right?\"",
+     "audioStart": 15.08,
+     "audioEnd": 20.094
+    }
+   ]
+  },
+  "quiz": {
+   "id": "ep75-map-quiz",
+   "lines": [
+    {
+     "id": "ep75-map-quiz-1",
+     "sourceNodeId": "n026",
+     "speaker": "narrator",
+     "textEn": "Clouds swirled and thunder boomed as the two mighty spirits battled across the sky.",
+     "textZh": "云层翻滚,雷声轰鸣——两位威武的神灵在苍穹上展开激战。",
+     "audioRef": "sent_en:Clouds swirled and thunder boomed as the two mighty spirits battled across the sky.",
+     "audioStart": 127.53,
+     "audioEnd": 135.365
+    }
+   ],
+   "question": {
+    "id": "ep075-official-quiz-001",
+    "textEn": "which is not true?",
+    "textZh": "哪一项是不正确的？"
+   },
+   "word": {
+    "term": "battle",
+    "zh": "1. 战争,战斗,(2. 斗争,对决)",
+    "ipa": ""
+   },
+   "options": [
+    {
+     "id": "a",
+     "textEn": "guanyin found the fake wukong.",
+     "textZh": "观音找到了假的悟空。",
+     "correct": true,
+     "feedback": "对了。观音找到了假的悟空。"
+    },
+    {
+     "id": "b",
+     "textEn": "wukong rejoined the tang monk.",
+     "textZh": "悟空重新加入了唐僧。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    },
+    {
+     "id": "c",
+     "textEn": "the two wukongs battled across the sky.",
+     "textZh": "两个悟空在天空中战斗。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    }
+   ],
+   "lessonCardId": "ep075-official-quiz-001"
+  }
+ },
+ "map": {
+  "theme": "generic",
+  "coordinateSpace": "world-normalized",
+  "worldTiles": 2,
+  "regions": {
+   "hero": 0,
+   "waves": [
+    0,
+    1
+   ],
+   "npc": {
+    "intro": 0,
+    "quiz": 1
+   },
+   "boss": 3
+  },
+  "walkable": {
+   "space": "world",
+   "x": 0.0,
+   "y": 0.16,
+   "w": 1.0,
+   "h": 0.79,
+   "rects": [
+    {
+     "x": 0.0,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.66,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    }
+   ]
+  },
+  "heroSpawn": {
+   "x": 0.06,
+   "y": 0.31
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.31,
+    "y": 0.23
+   },
+   {
+    "x": 0.38,
+    "y": 0.27
+   },
+   {
+    "x": 0.34,
+    "y": 0.33
+   },
+   {
+    "x": 0.41,
+    "y": 0.24
+   }
+  ],
+  "waveSpawns": [
+   [
+    {
+     "x": 0.31,
+     "y": 0.23
+    },
+    {
+     "x": 0.38,
+     "y": 0.27
+    },
+    {
+     "x": 0.34,
+     "y": 0.33
+    },
+    {
+     "x": 0.41,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.81,
+     "y": 0.23
+    },
+    {
+     "x": 0.88,
+     "y": 0.27
+    },
+    {
+     "x": 0.84,
+     "y": 0.33
+    },
+    {
+     "x": 0.91,
+     "y": 0.24
+    }
+   ]
+  ],
+  "orbSpawns": [
+   [
+    {
+     "x": 0.11,
+     "y": 0.25
+    },
+    {
+     "x": 0.16,
+     "y": 0.31
+    },
+    {
+     "x": 0.12,
+     "y": 0.37
+    },
+    {
+     "x": 0.18,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.61,
+     "y": 0.25
+    },
+    {
+     "x": 0.66,
+     "y": 0.31
+    },
+    {
+     "x": 0.62,
+     "y": 0.37
+    },
+    {
+     "x": 0.68,
+     "y": 0.24
+    }
+   ]
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "imp",
+    "nameZh": "小妖",
+    "x": 0.08,
+    "y": 0.26
+   },
+   {
+    "role": "quiz",
+    "sprite": "imp",
+    "nameZh": "小妖",
+    "x": 0.7,
+    "y": 0.39
+   }
+  ],
+  "bossSpot": {
+   "x": 0.94,
+   "y": 0.85
+  }
+ }
+}

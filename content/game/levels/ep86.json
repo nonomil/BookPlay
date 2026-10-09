@@ -1,0 +1,584 @@
+{
+ "schema_version": 1,
+ "ep": 86,
+ "title": {
+  "en": "Magic Bells",
+  "zh": "西游记 第86集"
+ },
+ "collection": "c11",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "powerdemon",
+   "nameZh": "大力妖王",
+   "mode": "sparring",
+   "sprite": "powerdemon"
+  },
+  "minors": [
+   {
+    "id": "imp",
+    "nameZh": "小妖",
+    "sprite": "imp"
+   }
+  ]
+ },
+ "background": {
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep86/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "Wukong shouted outside the cave.",
+   "textZh": "猿猴在洞外大声喊道。",
+   "illustration": "assets/adv_frames/ep86/f1.jpg",
+   "sourceNodeId": "n001",
+   "audioRef": "sent_en:Wukong shouted outside the cave."
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "He shouted all kinds of insults about the Demon of Power.",
+   "textZh": "他对\"力量魔\"恶毒地辱骂了一番。",
+   "illustration": "assets/adv_frames/ep86/f2.jpg",
+   "sourceNodeId": "n002",
+   "audioRef": "sent_en:He shouted all kinds of insults about the Demon of Power."
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "all kinds",
+   "zh": "各式各样的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep86/f2.jpg"
+  },
+  {
+   "term": "insult",
+   "zh": "1. 污辱人的言行,(2. 侮辱)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep86/f2.jpg"
+  },
+  {
+   "term": "back",
+   "zh": "1. 回到(原位),回原处,2. (人、动物等的)背, (3. 后面的)",
+   "ipa": "bæk",
+   "illustration": "assets/adv_frames/ep86/f1.jpg"
+  },
+  {
+   "term": "fake",
+   "zh": "假的,冒充的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep86/f2.jpg"
+  },
+  {
+   "term": "chase away",
+   "zh": "赶走,驱逐",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep86/f3.jpg"
+  },
+  {
+   "term": "glare",
+   "zh": "怒目注视",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep86/f1.jpg"
+  },
+  {
+   "term": "reach for",
+   "zh": "伸手去拿",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep86/f1.jpg"
+  },
+  {
+   "term": "squint",
+   "zh": "眯着眼看,斜着眼看",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep86/f0.jpg"
+  },
+  {
+   "term": "doubt",
+   "zh": "怀疑,带着疑问",
+   "ipa": "daʊt",
+   "illustration": "assets/adv_frames/ep86/f2.jpg"
+  },
+  {
+   "term": "peer",
+   "zh": "凝视,盯着看",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep86/f3.jpg"
+  },
+  {
+   "term": "interesting",
+   "zh": "有趣的",
+   "ipa": "ˈɪntrəst",
+   "illustration": "assets/adv_frames/ep86/f3.jpg"
+  },
+  {
+   "term": "compare",
+   "zh": "比较,对照",
+   "ipa": "kəmˈpeə",
+   "illustration": "assets/adv_frames/ep86/f2.jpg"
+  }
+ ],
+ "wordPool": [
+  {
+   "term": "all kinds",
+   "zh": "各式各样的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep86/f2.jpg"
+  },
+  {
+   "term": "insult",
+   "zh": "1. 污辱人的言行,(2. 侮辱)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep86/f2.jpg"
+  },
+  {
+   "term": "back",
+   "zh": "1. 回到(原位),回原处,2. (人、动物等的)背, (3. 后面的)",
+   "ipa": "bæk",
+   "illustration": "assets/adv_frames/ep86/f1.jpg"
+  },
+  {
+   "term": "fake",
+   "zh": "假的,冒充的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep86/f2.jpg"
+  },
+  {
+   "term": "chase away",
+   "zh": "赶走,驱逐",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep86/f3.jpg"
+  },
+  {
+   "term": "glare",
+   "zh": "怒目注视",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep86/f1.jpg"
+  },
+  {
+   "term": "reach for",
+   "zh": "伸手去拿",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep86/f1.jpg"
+  },
+  {
+   "term": "squint",
+   "zh": "眯着眼看,斜着眼看",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep86/f0.jpg"
+  },
+  {
+   "term": "doubt",
+   "zh": "怀疑,带着疑问",
+   "ipa": "daʊt",
+   "illustration": "assets/adv_frames/ep86/f2.jpg"
+  },
+  {
+   "term": "peer",
+   "zh": "凝视,盯着看",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep86/f3.jpg"
+  },
+  {
+   "term": "interesting",
+   "zh": "有趣的",
+   "ipa": "ˈɪntrəst",
+   "illustration": "assets/adv_frames/ep86/f3.jpg"
+  },
+  {
+   "term": "compare",
+   "zh": "比较,对照",
+   "ipa": "kəmˈpeə",
+   "illustration": "assets/adv_frames/ep86/f2.jpg"
+  },
+  {
+   "term": "strange",
+   "zh": "1. 奇怪的,(2. 陌生的)",
+   "ipa": "streɪndʒ",
+   "illustration": "assets/adv_frames/ep86/f2.jpg"
+  },
+  {
+   "term": "mumble",
+   "zh": "含糊地说,咕哝着说",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep86/f1.jpg"
+  },
+  {
+   "term": "closely",
+   "zh": "仔细地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep86/f2.jpg"
+  },
+  {
+   "term": "pet",
+   "zh": "宠物",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep86/f3.jpg"
+  },
+  {
+   "term": "wolf",
+   "zh": "狼",
+   "ipa": "wʊlf",
+   "illustration": "assets/adv_frames/ep86/f2.jpg"
+  },
+  {
+   "term": "heaven",
+   "zh": "天堂,天国",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep86/f3.jpg"
+  },
+  {
+   "term": "sparkle",
+   "zh": "发光,闪耀",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep86/f2.jpg"
+  },
+  {
+   "term": "set",
+   "zh": "一组,一套",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep86/f3.jpg"
+  },
+  {
+   "term": "hand over",
+   "zh": "交出,移交",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep86/f1.jpg"
+  },
+  {
+   "term": "joke",
+   "zh": "说笑话,开玩笑",
+   "ipa": "dʒəʊk",
+   "illustration": "assets/adv_frames/ep86/f2.jpg"
+  },
+  {
+   "term": "sheepishly",
+   "zh": "(像绵羊般)怯懦地,羞怯地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep86/f1.jpg"
+  },
+  {
+   "term": "reunite",
+   "zh": "重聚",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep86/f3.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "all kinds",
+     "zh": "各式各样的",
+     "sprite": "imp"
+    },
+    {
+     "term": "insult",
+     "zh": "1. 污辱人的言行,(2. 侮辱)",
+     "sprite": "imp"
+    },
+    {
+     "term": "back",
+     "zh": "1. 回到(原位),回原处,2. (人、动物等的)背, (3. 后面的)",
+     "sprite": "imp"
+    },
+    {
+     "term": "fake",
+     "zh": "假的,冒充的",
+     "sprite": "imp"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "chase away",
+     "zh": "赶走,驱逐",
+     "sprite": "imp"
+    },
+    {
+     "term": "glare",
+     "zh": "怒目注视",
+     "sprite": "imp"
+    },
+    {
+     "term": "reach for",
+     "zh": "伸手去拿",
+     "sprite": "imp"
+    },
+    {
+     "term": "squint",
+     "zh": "眯着眼看,斜着眼看",
+     "sprite": "imp"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "doubt",
+    "zh": "怀疑,带着疑问"
+   },
+   {
+    "term": "peer",
+    "zh": "凝视,盯着看"
+   },
+   {
+    "term": "interesting",
+    "zh": "有趣的"
+   },
+   {
+    "term": "compare",
+    "zh": "比较,对照"
+   }
+  ],
+  "taunts": [
+   "powerdemon.1",
+   "powerdemon.2",
+   "powerdemon.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=86",
+ "npcDialogue": {
+  "intro": {
+   "id": "ep86-map-intro",
+   "lines": [
+    {
+     "id": "ep86-map-intro-1",
+     "sourceNodeId": "n001",
+     "speaker": "narrator",
+     "textEn": "Wukong shouted outside the cave.",
+     "textZh": "猿猴在洞外大声喊道。",
+     "audioRef": "sent_en:Wukong shouted outside the cave.",
+     "audioStart": 11.0,
+     "audioEnd": 13.882
+    },
+    {
+     "id": "ep86-map-intro-2",
+     "sourceNodeId": "n002",
+     "speaker": "narrator",
+     "textEn": "He shouted all kinds of insults about the Demon of Power.",
+     "textZh": "他对\"力量魔\"恶毒地辱骂了一番。",
+     "audioRef": "sent_en:He shouted all kinds of insults about the Demon of Power.",
+     "audioStart": 13.883,
+     "audioEnd": 18.624
+    }
+   ]
+  },
+  "quiz": {
+   "id": "ep86-map-quiz",
+   "lines": [
+    {
+     "id": "ep86-map-quiz-1",
+     "sourceNodeId": "n046",
+     "speaker": "narrator",
+     "textEn": "Wukong pulled out his iron bar and got ready to strike.",
+     "textZh": "悟空抽出铁棒,准备出招。",
+     "audioRef": "sent_en:Wukong pulled out his iron bar and got ready to strike.",
+     "audioStart": 186.579,
+     "audioEnd": 191.074
+    }
+   ],
+   "question": {
+    "id": "ep086-official-quiz-001",
+    "textEn": "which is most important from the story?",
+    "textZh": "故事中什么最重要？"
+   },
+   "word": {
+    "term": "all kinds",
+    "zh": "各式各样的",
+    "ipa": ""
+   },
+   "options": [
+    {
+     "id": "a",
+     "textEn": "the king and queen were reunited.",
+     "textZh": "国王和王后重聚了。",
+     "correct": true,
+     "feedback": "对了。国王和王后重聚了。"
+    },
+    {
+     "id": "b",
+     "textEn": "the demon's bells didn't work.",
+     "textZh": "恶魔的铃铛不起作用。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    },
+    {
+     "id": "c",
+     "textEn": "wukong insulted the demon.",
+     "textZh": "悟空侮辱了那个恶魔。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    }
+   ],
+   "lessonCardId": "ep086-official-quiz-001"
+  }
+ },
+ "map": {
+  "theme": "generic",
+  "coordinateSpace": "world-normalized",
+  "worldTiles": 2,
+  "regions": {
+   "hero": 0,
+   "waves": [
+    0,
+    1
+   ],
+   "npc": {
+    "intro": 0,
+    "quiz": 1
+   },
+   "boss": 3
+  },
+  "walkable": {
+   "space": "world",
+   "x": 0.0,
+   "y": 0.16,
+   "w": 1.0,
+   "h": 0.79,
+   "rects": [
+    {
+     "x": 0.0,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.66,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    }
+   ]
+  },
+  "heroSpawn": {
+   "x": 0.06,
+   "y": 0.31
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.31,
+    "y": 0.23
+   },
+   {
+    "x": 0.38,
+    "y": 0.27
+   },
+   {
+    "x": 0.34,
+    "y": 0.33
+   },
+   {
+    "x": 0.41,
+    "y": 0.24
+   }
+  ],
+  "waveSpawns": [
+   [
+    {
+     "x": 0.31,
+     "y": 0.23
+    },
+    {
+     "x": 0.38,
+     "y": 0.27
+    },
+    {
+     "x": 0.34,
+     "y": 0.33
+    },
+    {
+     "x": 0.41,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.81,
+     "y": 0.23
+    },
+    {
+     "x": 0.88,
+     "y": 0.27
+    },
+    {
+     "x": 0.84,
+     "y": 0.33
+    },
+    {
+     "x": 0.91,
+     "y": 0.24
+    }
+   ]
+  ],
+  "orbSpawns": [
+   [
+    {
+     "x": 0.11,
+     "y": 0.25
+    },
+    {
+     "x": 0.16,
+     "y": 0.31
+    },
+    {
+     "x": 0.12,
+     "y": 0.37
+    },
+    {
+     "x": 0.18,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.61,
+     "y": 0.25
+    },
+    {
+     "x": 0.66,
+     "y": 0.31
+    },
+    {
+     "x": 0.62,
+     "y": 0.37
+    },
+    {
+     "x": 0.68,
+     "y": 0.24
+    }
+   ]
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "imp",
+    "nameZh": "小妖",
+    "x": 0.08,
+    "y": 0.26
+   },
+   {
+    "role": "quiz",
+    "sprite": "imp",
+    "nameZh": "小妖",
+    "x": 0.7,
+    "y": 0.39
+   }
+  ],
+  "bossSpot": {
+   "x": 0.94,
+   "y": 0.85
+  }
+ }
+}

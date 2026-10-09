@@ -1,0 +1,584 @@
+{
+ "schema_version": 1,
+ "ep": 22,
+ "title": {
+  "en": "A Very Strange Pill",
+  "zh": "西游记 第22集"
+ },
+ "collection": "c03",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "blackwind",
+   "nameZh": "黑风大王",
+   "mode": "sparring",
+   "sprite": "blackwind"
+  },
+  "minors": [
+   {
+    "id": "imp",
+    "nameZh": "小妖",
+    "sprite": "imp"
+   }
+  ]
+ },
+ "background": {
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep22/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "The Black Wind King took a step back.",
+   "textZh": "黑风王后退了一步。",
+   "illustration": "assets/adv_frames/ep22/f1.jpg",
+   "sourceNodeId": "n001",
+   "audioRef": "sent_en:The Black Wind King took a step back."
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "He looked confused.",
+   "textZh": "他看起来很困惑。",
+   "illustration": "assets/adv_frames/ep22/f2.jpg",
+   "sourceNodeId": "n002",
+   "audioRef": "sent_en:He looked confused."
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "disguise",
+   "zh": "变装,伪装",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep22/f3.jpg"
+  },
+  {
+   "term": "practice",
+   "zh": "练习",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep22/f2.jpg"
+  },
+  {
+   "term": "skill",
+   "zh": "(专门)技术",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep22/f2.jpg"
+  },
+  {
+   "term": "inside",
+   "zh": "里面,在里面",
+   "ipa": "ˌɪnˈsaɪd",
+   "illustration": "assets/adv_frames/ep22/f1.jpg"
+  },
+  {
+   "term": "flip",
+   "zh": "翻跟斗",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep22/f1.jpg"
+  },
+  {
+   "term": "headband",
+   "zh": "头巾",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep22/f1.jpg"
+  },
+  {
+   "term": "place",
+   "zh": "1. 放置,安置,(2. 地方,地点)",
+   "ipa": "pleɪs",
+   "illustration": "assets/adv_frames/ep22/f2.jpg"
+  },
+  {
+   "term": "pop out",
+   "zh": "弹出,跳出来",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep22/f3.jpg"
+  },
+  {
+   "term": "normal",
+   "zh": "正常的",
+   "ipa": "ˈnɔː(r)ml",
+   "illustration": "assets/adv_frames/ep22/f2.jpg"
+  },
+  {
+   "term": "left",
+   "zh": "离开 (leave-left)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep22/f3.jpg"
+  },
+  {
+   "term": "metal",
+   "zh": "金属",
+   "ipa": "ˈmetl",
+   "illustration": "assets/adv_frames/ep22/f2.jpg"
+  },
+  {
+   "term": "band",
+   "zh": "带,细绳",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep22/f1.jpg"
+  }
+ ],
+ "wordPool": [
+  {
+   "term": "disguise",
+   "zh": "变装,伪装",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep22/f3.jpg"
+  },
+  {
+   "term": "practice",
+   "zh": "练习",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep22/f2.jpg"
+  },
+  {
+   "term": "skill",
+   "zh": "(专门)技术",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep22/f2.jpg"
+  },
+  {
+   "term": "inside",
+   "zh": "里面,在里面",
+   "ipa": "ˌɪnˈsaɪd",
+   "illustration": "assets/adv_frames/ep22/f1.jpg"
+  },
+  {
+   "term": "flip",
+   "zh": "翻跟斗",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep22/f1.jpg"
+  },
+  {
+   "term": "headband",
+   "zh": "头巾",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep22/f1.jpg"
+  },
+  {
+   "term": "place",
+   "zh": "1. 放置,安置,(2. 地方,地点)",
+   "ipa": "pleɪs",
+   "illustration": "assets/adv_frames/ep22/f2.jpg"
+  },
+  {
+   "term": "pop out",
+   "zh": "弹出,跳出来",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep22/f3.jpg"
+  },
+  {
+   "term": "normal",
+   "zh": "正常的",
+   "ipa": "ˈnɔː(r)ml",
+   "illustration": "assets/adv_frames/ep22/f2.jpg"
+  },
+  {
+   "term": "left",
+   "zh": "离开 (leave-left)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep22/f3.jpg"
+  },
+  {
+   "term": "metal",
+   "zh": "金属",
+   "ipa": "ˈmetl",
+   "illustration": "assets/adv_frames/ep22/f2.jpg"
+  },
+  {
+   "term": "band",
+   "zh": "带,细绳",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep22/f1.jpg"
+  },
+  {
+   "term": "clamp",
+   "zh": "夹紧,固定住",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep22/f2.jpg"
+  },
+  {
+   "term": "wrist",
+   "zh": "手腕",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep22/f2.jpg"
+  },
+  {
+   "term": "ankle",
+   "zh": "脚踝",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep22/f3.jpg"
+  },
+  {
+   "term": "recite",
+   "zh": "背诵,朗诵",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep22/f0.jpg"
+  },
+  {
+   "term": "spell",
+   "zh": "1. 咒语,(2. (用字母)拼,拼写)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep22/f0.jpg"
+  },
+  {
+   "term": "mercy",
+   "zh": "仁慈,宽容",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep22/f1.jpg"
+  },
+  {
+   "term": "guardian",
+   "zh": "保护的人,守护者",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep22/f2.jpg"
+  },
+  {
+   "term": "behave",
+   "zh": "有礼貌,表现好",
+   "ipa": "bɪˈheɪv",
+   "illustration": "assets/adv_frames/ep22/f3.jpg"
+  },
+  {
+   "term": "vanish",
+   "zh": "(突然)消失不见",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep22/f3.jpg"
+  },
+  {
+   "term": "adventure",
+   "zh": "冒险,冒险活动(或经历)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep22/f0.jpg"
+  },
+  {
+   "term": "evil",
+   "zh": "邪恶的,坏的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep22/f2.jpg"
+  },
+  {
+   "term": "valuable",
+   "zh": "有用的,有价值的",
+   "ipa": "ˈvæljuəbl",
+   "illustration": "assets/adv_frames/ep22/f3.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "disguise",
+     "zh": "变装,伪装",
+     "sprite": "imp"
+    },
+    {
+     "term": "practice",
+     "zh": "练习",
+     "sprite": "imp"
+    },
+    {
+     "term": "skill",
+     "zh": "(专门)技术",
+     "sprite": "imp"
+    },
+    {
+     "term": "inside",
+     "zh": "里面,在里面",
+     "sprite": "imp"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "flip",
+     "zh": "翻跟斗",
+     "sprite": "imp"
+    },
+    {
+     "term": "headband",
+     "zh": "头巾",
+     "sprite": "imp"
+    },
+    {
+     "term": "place",
+     "zh": "1. 放置,安置,(2. 地方,地点)",
+     "sprite": "imp"
+    },
+    {
+     "term": "pop out",
+     "zh": "弹出,跳出来",
+     "sprite": "imp"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "normal",
+    "zh": "正常的"
+   },
+   {
+    "term": "left",
+    "zh": "离开 (leave-left)"
+   },
+   {
+    "term": "metal",
+    "zh": "金属"
+   },
+   {
+    "term": "band",
+    "zh": "带,细绳"
+   }
+  ],
+  "taunts": [
+   "blackwind.1",
+   "blackwind.2",
+   "blackwind.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=22",
+ "npcDialogue": {
+  "intro": {
+   "id": "ep22-map-intro",
+   "lines": [
+    {
+     "id": "ep22-map-intro-1",
+     "sourceNodeId": "n001",
+     "speaker": "narrator",
+     "textEn": "The Black Wind King took a step back.",
+     "textZh": "黑风王后退了一步。",
+     "audioRef": "sent_en:The Black Wind King took a step back.",
+     "audioStart": 11.267,
+     "audioEnd": 16.34
+    },
+    {
+     "id": "ep22-map-intro-2",
+     "sourceNodeId": "n002",
+     "speaker": "narrator",
+     "textEn": "He looked confused.",
+     "textZh": "他看起来很困惑。",
+     "audioRef": "sent_en:He looked confused.",
+     "audioStart": 16.341,
+     "audioEnd": 18.667
+    }
+   ]
+  },
+  "quiz": {
+   "id": "ep22-map-quiz",
+   "lines": [
+    {
+     "id": "ep22-map-quiz-1",
+     "sourceNodeId": "n035",
+     "speaker": "narrator",
+     "textEn": "After Wukong left to get the robe, the Black Wind King charged at Guanyin.",
+     "textZh": "悟空去取长袍后,黑风王向观音冲去。",
+     "audioRef": "sent_en:After Wukong left to get the robe, the Black Wind King charged at Guanyin.",
+     "audioStart": 157.426,
+     "audioEnd": 165.297
+    }
+   ],
+   "question": {
+    "id": "ep022-official-quiz-001",
+    "textEn": "which is not true?",
+    "textZh": "哪一项是不正确的？"
+   },
+   "word": {
+    "term": "disguise",
+    "zh": "变装,伪装",
+    "ipa": ""
+   },
+   "options": [
+    {
+     "id": "a",
+     "textEn": "the bear destroyed the robe.",
+     "textZh": "熊毁坏了长袍。",
+     "correct": true,
+     "feedback": "对了。熊毁坏了长袍。"
+    },
+    {
+     "id": "b",
+     "textEn": "the bear tried to attack guanyin.",
+     "textZh": "熊试图攻击观音。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    },
+    {
+     "id": "c",
+     "textEn": "the bear will become guanyin's guardian.",
+     "textZh": "这只熊将成为观音的守护者。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    }
+   ],
+   "lessonCardId": "ep022-official-quiz-001"
+  }
+ },
+ "map": {
+  "theme": "generic",
+  "coordinateSpace": "world-normalized",
+  "worldTiles": 2,
+  "regions": {
+   "hero": 0,
+   "waves": [
+    0,
+    1
+   ],
+   "npc": {
+    "intro": 0,
+    "quiz": 1
+   },
+   "boss": 3
+  },
+  "walkable": {
+   "space": "world",
+   "x": 0.0,
+   "y": 0.16,
+   "w": 1.0,
+   "h": 0.79,
+   "rects": [
+    {
+     "x": 0.0,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.66,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    }
+   ]
+  },
+  "heroSpawn": {
+   "x": 0.06,
+   "y": 0.31
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.31,
+    "y": 0.23
+   },
+   {
+    "x": 0.38,
+    "y": 0.27
+   },
+   {
+    "x": 0.34,
+    "y": 0.33
+   },
+   {
+    "x": 0.41,
+    "y": 0.24
+   }
+  ],
+  "waveSpawns": [
+   [
+    {
+     "x": 0.31,
+     "y": 0.23
+    },
+    {
+     "x": 0.38,
+     "y": 0.27
+    },
+    {
+     "x": 0.34,
+     "y": 0.33
+    },
+    {
+     "x": 0.41,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.81,
+     "y": 0.23
+    },
+    {
+     "x": 0.88,
+     "y": 0.27
+    },
+    {
+     "x": 0.84,
+     "y": 0.33
+    },
+    {
+     "x": 0.91,
+     "y": 0.24
+    }
+   ]
+  ],
+  "orbSpawns": [
+   [
+    {
+     "x": 0.11,
+     "y": 0.25
+    },
+    {
+     "x": 0.16,
+     "y": 0.31
+    },
+    {
+     "x": 0.12,
+     "y": 0.37
+    },
+    {
+     "x": 0.18,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.61,
+     "y": 0.25
+    },
+    {
+     "x": 0.66,
+     "y": 0.31
+    },
+    {
+     "x": 0.62,
+     "y": 0.37
+    },
+    {
+     "x": 0.68,
+     "y": 0.24
+    }
+   ]
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "blackwind",
+    "nameZh": "黑风王",
+    "x": 0.08,
+    "y": 0.26
+   },
+   {
+    "role": "quiz",
+    "sprite": "blackwind",
+    "nameZh": "黑风王",
+    "x": 0.7,
+    "y": 0.39
+   }
+  ],
+  "bossSpot": {
+   "x": 0.94,
+   "y": 0.85
+  }
+ }
+}

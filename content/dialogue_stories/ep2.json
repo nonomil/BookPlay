@@ -1,0 +1,8196 @@
+{
+  "schema_version": 1,
+  "story_id": "adv_ep2",
+  "episode": 2,
+  "title": {
+    "en": "The Waterfall Cave",
+    "zh": "西游记 第2集"
+  },
+  "source_note": "台词英文本来自 data/08 原文台词本与外挂英文字幕；词汇短语来自 data/05 中英对照词汇；中文句译按英文逐句对照。个人使用。",
+  "audio": "assets/lf_ep2/audio_ep2.mp3",
+  "video": "assets/video/ep2.mp4",
+  "frames": [
+    "assets/adv_frames/ep2/f0.jpg",
+    "assets/adv_frames/ep2/f1.jpg",
+    "assets/adv_frames/ep2/f2.jpg",
+    "assets/adv_frames/ep2/f3.jpg"
+  ],
+  "vocab_pool": {
+    "waterfall": "瀑布",
+    "splashed": "戏水",
+    "monkey": "猴子",
+    "eyes": "眼睛",
+    "cave": "洞穴",
+    "stream": "小溪",
+    "light": "光",
+    "apes": "猿",
+    "river": "河",
+    "dangerous": "危险的",
+    "gibbon": "长臂猿",
+    "leaped": "跃入",
+    "king": "国王；大王"
+  },
+  "nodes": [
+    {
+      "node_id": "n001",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "Monkey splashed through the waterfall and landed in a large cave.",
+      "text_zh": "猴子跃过瀑布,落在一个巨大的洞穴中。",
+      "illustration": "assets/adv_frames/ep2/f1.jpg",
+      "audio_start": 11.134,
+      "audio_end": 19.631,
+      "vocab": [
+        {
+          "term": "cave",
+          "zh": "洞穴,洞窟",
+          "mode": "learn",
+          "phrase_en": "Monkey splashed through the waterfall and landed in a large cave.",
+          "phrase_zh": "洞穴,洞窟",
+          "source": "official_words"
+        },
+        {
+          "term": "land",
+          "zh": "降落,登陆",
+          "mode": "learn",
+          "phrase_en": "Monkey splashed through the waterfall and landed in a large cave.",
+          "phrase_zh": "降落,登陆",
+          "source": "official_words"
+        },
+        {
+          "term": "waterfall",
+          "zh": "瀑布",
+          "mode": "learn",
+          "phrase_en": "through the waterfall and landed",
+          "phrase_zh": "穿过瀑布后着陆",
+          "gloss": "瀑布"
+        },
+        {
+          "term": "splashed",
+          "zh": "戏水",
+          "mode": "learn",
+          "phrase_en": "Monkey splashed through",
+          "phrase_zh": "猴子跃过水面",
+          "gloss": "溅水"
+        },
+        {
+          "term": "monkey",
+          "zh": "猴子",
+          "mode": "learn",
+          "phrase_en": "monkey splashed through",
+          "phrase_zh": "猴子跃过水面",
+          "ipa": "ˈmʌŋki",
+          "pos": "n.",
+          "def": "n.[C]猴子",
+          "gloss": "猴子"
+        }
+      ],
+      "quiz_after": {
+        "q": "Why did everyone bow to Monkey?",
+        "choices": [
+          "He found the cave.",
+          "He gave everyone money.",
+          "He was really big and scary."
+        ],
+        "answer": 0,
+        "q_zh": "为什么大家都向猴子鞠躬？",
+        "choices_zh": [
+          "他找到了那个洞穴。",
+          "他给了每个人钱。",
+          "他真的又大又可怕。"
+        ]
+      },
+      "page_words": [
+        {
+          "term": "land",
+          "ipa": "lænd",
+          "def": "n.[U]大陆，土地 [C]国家v.降落，着陆",
+          "zh": "大陆"
+        },
+        {
+          "term": "large",
+          "ipa": "lɑː(r)dʒ",
+          "def": "adj.大号的，大的，大量的",
+          "zh": "大号的"
+        },
+        {
+          "term": "eye",
+          "ipa": "aɪ",
+          "def": "n.[C]眼睛",
+          "zh": "眼睛"
+        },
+        {
+          "term": "open",
+          "ipa": "ˈəʊpən",
+          "def": "v.开，打开，开业adj.敞开的，开阔的n.[sing.]户外，公开",
+          "zh": "开"
+        },
+        {
+          "term": "wide",
+          "ipa": "waɪd",
+          "def": "adj.宽的，宽阔的，……宽的adv.尽可能远地，充分地",
+          "zh": "宽的"
+        },
+        {
+          "term": "bamboo",
+          "ipa": "ˌbæmˈbuː",
+          "def": "n.[C,U]竹子",
+          "zh": "竹子"
+        },
+        {
+          "term": "beautiful",
+          "ipa": "ˈbjuːtɪfl",
+          "def": "adj.美妙的，美丽的，美好的",
+          "zh": "美妙的"
+        },
+        {
+          "term": "flower",
+          "ipa": "ˈflaʊə(r)",
+          "def": "n.[C]花",
+          "zh": "花"
+        },
+        {
+          "term": "cover",
+          "ipa": "ˈkʌvə(r)",
+          "def": "vt.遮盖，覆盖；占（一片面积）n.[C]覆盖物，盖子，封面",
+          "zh": "遮盖"
+        },
+        {
+          "term": "wall",
+          "ipa": "wɔːl",
+          "def": "n.[C]墙",
+          "zh": "墙"
+        },
+        {
+          "term": "fill",
+          "ipa": "fɪl",
+          "def": "v.（使）充满，装满",
+          "zh": "使"
+        },
+        {
+          "term": "air",
+          "ipa": "eə",
+          "def": "n.[U]空气，天空",
+          "zh": "空气"
+        },
+        {
+          "term": "long",
+          "ipa": "lɒŋ",
+          "def": "adj.长的adv.长久的",
+          "zh": "长的"
+        }
+      ]
+    },
+    {
+      "node_id": "n002",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "His eyes opened wide.",
+      "text_zh": "他的眼睛猛地睁大了。",
+      "illustration": "assets/adv_frames/ep2/f2.jpg",
+      "audio_start": 19.632,
+      "audio_end": 21.722,
+      "vocab": [
+        {
+          "term": "wide",
+          "zh": "张得(或开得)很大地",
+          "mode": "learn",
+          "phrase_en": "His eyes opened wide.",
+          "phrase_zh": "张得",
+          "source": "official_words"
+        },
+        {
+          "term": "eyes",
+          "zh": "眼睛",
+          "mode": "learn",
+          "phrase_en": "His eyes opened wide",
+          "phrase_zh": "他的眼睛猛地睁大了",
+          "ipa": "aɪ",
+          "pos": "n.",
+          "def": "n.[C]眼睛",
+          "gloss": "眼睛"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "land",
+          "ipa": "lænd",
+          "def": "n.[U]大陆，土地 [C]国家v.降落，着陆",
+          "zh": "大陆"
+        },
+        {
+          "term": "large",
+          "ipa": "lɑː(r)dʒ",
+          "def": "adj.大号的，大的，大量的",
+          "zh": "大号的"
+        },
+        {
+          "term": "eye",
+          "ipa": "aɪ",
+          "def": "n.[C]眼睛",
+          "zh": "眼睛"
+        },
+        {
+          "term": "open",
+          "ipa": "ˈəʊpən",
+          "def": "v.开，打开，开业adj.敞开的，开阔的n.[sing.]户外，公开",
+          "zh": "开"
+        },
+        {
+          "term": "wide",
+          "ipa": "waɪd",
+          "def": "adj.宽的，宽阔的，……宽的adv.尽可能远地，充分地",
+          "zh": "宽的"
+        },
+        {
+          "term": "bamboo",
+          "ipa": "ˌbæmˈbuː",
+          "def": "n.[C,U]竹子",
+          "zh": "竹子"
+        },
+        {
+          "term": "beautiful",
+          "ipa": "ˈbjuːtɪfl",
+          "def": "adj.美妙的，美丽的，美好的",
+          "zh": "美妙的"
+        },
+        {
+          "term": "flower",
+          "ipa": "ˈflaʊə(r)",
+          "def": "n.[C]花",
+          "zh": "花"
+        },
+        {
+          "term": "cover",
+          "ipa": "ˈkʌvə(r)",
+          "def": "vt.遮盖，覆盖；占（一片面积）n.[C]覆盖物，盖子，封面",
+          "zh": "遮盖"
+        },
+        {
+          "term": "wall",
+          "ipa": "wɔːl",
+          "def": "n.[C]墙",
+          "zh": "墙"
+        },
+        {
+          "term": "fill",
+          "ipa": "fɪl",
+          "def": "v.（使）充满，装满",
+          "zh": "使"
+        },
+        {
+          "term": "air",
+          "ipa": "eə",
+          "def": "n.[U]空气，天空",
+          "zh": "空气"
+        },
+        {
+          "term": "long",
+          "ipa": "lɒŋ",
+          "def": "adj.长的adv.长久的",
+          "zh": "长的"
+        }
+      ]
+    },
+    {
+      "node_id": "n003",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "The cave was filled with bamboo, trees, and beautiful flowers.",
+      "text_zh": "这座洞穴里种满了竹子、树木和美丽的花朵。",
+      "illustration": "assets/adv_frames/ep2/f3.jpg",
+      "audio_start": 21.723,
+      "audio_end": 27.384,
+      "vocab": [
+        {
+          "term": "bamboo",
+          "zh": "竹子",
+          "mode": "learn",
+          "phrase_en": "The cave was filled with bamboo, trees, and beautiful flowers.",
+          "phrase_zh": "竹子",
+          "source": "official_words"
+        },
+        {
+          "term": "cave",
+          "zh": "洞穴",
+          "mode": "learn",
+          "phrase_en": "a large cave",
+          "phrase_zh": "一个大型洞穴",
+          "gloss": "洞穴"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "land",
+          "ipa": "lænd",
+          "def": "n.[U]大陆，土地 [C]国家v.降落，着陆",
+          "zh": "大陆"
+        },
+        {
+          "term": "large",
+          "ipa": "lɑː(r)dʒ",
+          "def": "adj.大号的，大的，大量的",
+          "zh": "大号的"
+        },
+        {
+          "term": "eye",
+          "ipa": "aɪ",
+          "def": "n.[C]眼睛",
+          "zh": "眼睛"
+        },
+        {
+          "term": "open",
+          "ipa": "ˈəʊpən",
+          "def": "v.开，打开，开业adj.敞开的，开阔的n.[sing.]户外，公开",
+          "zh": "开"
+        },
+        {
+          "term": "wide",
+          "ipa": "waɪd",
+          "def": "adj.宽的，宽阔的，……宽的adv.尽可能远地，充分地",
+          "zh": "宽的"
+        },
+        {
+          "term": "bamboo",
+          "ipa": "ˌbæmˈbuː",
+          "def": "n.[C,U]竹子",
+          "zh": "竹子"
+        },
+        {
+          "term": "beautiful",
+          "ipa": "ˈbjuːtɪfl",
+          "def": "adj.美妙的，美丽的，美好的",
+          "zh": "美妙的"
+        },
+        {
+          "term": "flower",
+          "ipa": "ˈflaʊə(r)",
+          "def": "n.[C]花",
+          "zh": "花"
+        },
+        {
+          "term": "cover",
+          "ipa": "ˈkʌvə(r)",
+          "def": "vt.遮盖，覆盖；占（一片面积）n.[C]覆盖物，盖子，封面",
+          "zh": "遮盖"
+        },
+        {
+          "term": "wall",
+          "ipa": "wɔːl",
+          "def": "n.[C]墙",
+          "zh": "墙"
+        },
+        {
+          "term": "fill",
+          "ipa": "fɪl",
+          "def": "v.（使）充满，装满",
+          "zh": "使"
+        },
+        {
+          "term": "air",
+          "ipa": "eə",
+          "def": "n.[U]空气，天空",
+          "zh": "空气"
+        },
+        {
+          "term": "long",
+          "ipa": "lɒŋ",
+          "def": "adj.长的adv.长久的",
+          "zh": "长的"
+        }
+      ]
+    },
+    {
+      "node_id": "n004",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "Moss covered the walls.",
+      "text_zh": "墙壁上覆盖着苔藓。",
+      "illustration": "assets/adv_frames/ep2/f0.jpg",
+      "audio_start": 27.385,
+      "audio_end": 31.007,
+      "vocab": [
+        {
+          "term": "moss",
+          "zh": "苔藓,地衣",
+          "mode": "learn",
+          "phrase_en": "Moss covered the walls.",
+          "phrase_zh": "苔藓,地衣",
+          "source": "official_words"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "land",
+          "ipa": "lænd",
+          "def": "n.[U]大陆，土地 [C]国家v.降落，着陆",
+          "zh": "大陆"
+        },
+        {
+          "term": "large",
+          "ipa": "lɑː(r)dʒ",
+          "def": "adj.大号的，大的，大量的",
+          "zh": "大号的"
+        },
+        {
+          "term": "eye",
+          "ipa": "aɪ",
+          "def": "n.[C]眼睛",
+          "zh": "眼睛"
+        },
+        {
+          "term": "open",
+          "ipa": "ˈəʊpən",
+          "def": "v.开，打开，开业adj.敞开的，开阔的n.[sing.]户外，公开",
+          "zh": "开"
+        },
+        {
+          "term": "wide",
+          "ipa": "waɪd",
+          "def": "adj.宽的，宽阔的，……宽的adv.尽可能远地，充分地",
+          "zh": "宽的"
+        },
+        {
+          "term": "bamboo",
+          "ipa": "ˌbæmˈbuː",
+          "def": "n.[C,U]竹子",
+          "zh": "竹子"
+        },
+        {
+          "term": "beautiful",
+          "ipa": "ˈbjuːtɪfl",
+          "def": "adj.美妙的，美丽的，美好的",
+          "zh": "美妙的"
+        },
+        {
+          "term": "flower",
+          "ipa": "ˈflaʊə(r)",
+          "def": "n.[C]花",
+          "zh": "花"
+        },
+        {
+          "term": "cover",
+          "ipa": "ˈkʌvə(r)",
+          "def": "vt.遮盖，覆盖；占（一片面积）n.[C]覆盖物，盖子，封面",
+          "zh": "遮盖"
+        },
+        {
+          "term": "wall",
+          "ipa": "wɔːl",
+          "def": "n.[C]墙",
+          "zh": "墙"
+        },
+        {
+          "term": "fill",
+          "ipa": "fɪl",
+          "def": "v.（使）充满，装满",
+          "zh": "使"
+        },
+        {
+          "term": "air",
+          "ipa": "eə",
+          "def": "n.[U]空气，天空",
+          "zh": "空气"
+        },
+        {
+          "term": "long",
+          "ipa": "lɒŋ",
+          "def": "adj.长的adv.长久的",
+          "zh": "长的"
+        }
+      ]
+    },
+    {
+      "node_id": "n005",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "A stream flowed through the cave, and glowing light and mist filled the air.",
+      "text_zh": "一条溪流穿行于洞穴之中,明亮的光芒与薄雾弥漫在空气中。",
+      "illustration": "assets/adv_frames/ep2/f1.jpg",
+      "audio_start": 31.008,
+      "audio_end": 37.877,
+      "vocab": [
+        {
+          "term": "glowing",
+          "zh": "鲜艳的,鲜明的,炽热的",
+          "mode": "learn",
+          "phrase_en": "A stream flowed through the cave, and glowing light and mist filled the air.",
+          "phrase_zh": "鲜艳的,鲜明的,炽热的",
+          "source": "official_words"
+        },
+        {
+          "term": "stream",
+          "zh": "小溪",
+          "mode": "learn",
+          "phrase_en": "A stream flowed through the cave",
+          "phrase_zh": "一股溪流流经洞穴",
+          "gloss": "小河"
+        },
+        {
+          "term": "light",
+          "zh": "光",
+          "mode": "learn",
+          "phrase_en": "and glowing light and mist filled the air",
+          "phrase_zh": "皎洁的光芒与薄雾弥漫在空气中"
+        },
+        {
+          "term": "cave",
+          "zh": "洞穴",
+          "mode": "test",
+          "options": [
+            "光",
+            "猴子",
+            "洞穴",
+            "河"
+          ],
+          "answer": 2,
+          "phrase_en": "a large cave",
+          "phrase_zh": "一个大型洞穴",
+          "gloss": "洞穴"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "land",
+          "ipa": "lænd",
+          "def": "n.[U]大陆，土地 [C]国家v.降落，着陆",
+          "zh": "大陆"
+        },
+        {
+          "term": "large",
+          "ipa": "lɑː(r)dʒ",
+          "def": "adj.大号的，大的，大量的",
+          "zh": "大号的"
+        },
+        {
+          "term": "eye",
+          "ipa": "aɪ",
+          "def": "n.[C]眼睛",
+          "zh": "眼睛"
+        },
+        {
+          "term": "open",
+          "ipa": "ˈəʊpən",
+          "def": "v.开，打开，开业adj.敞开的，开阔的n.[sing.]户外，公开",
+          "zh": "开"
+        },
+        {
+          "term": "wide",
+          "ipa": "waɪd",
+          "def": "adj.宽的，宽阔的，……宽的adv.尽可能远地，充分地",
+          "zh": "宽的"
+        },
+        {
+          "term": "bamboo",
+          "ipa": "ˌbæmˈbuː",
+          "def": "n.[C,U]竹子",
+          "zh": "竹子"
+        },
+        {
+          "term": "beautiful",
+          "ipa": "ˈbjuːtɪfl",
+          "def": "adj.美妙的，美丽的，美好的",
+          "zh": "美妙的"
+        },
+        {
+          "term": "flower",
+          "ipa": "ˈflaʊə(r)",
+          "def": "n.[C]花",
+          "zh": "花"
+        },
+        {
+          "term": "cover",
+          "ipa": "ˈkʌvə(r)",
+          "def": "vt.遮盖，覆盖；占（一片面积）n.[C]覆盖物，盖子，封面",
+          "zh": "遮盖"
+        },
+        {
+          "term": "wall",
+          "ipa": "wɔːl",
+          "def": "n.[C]墙",
+          "zh": "墙"
+        },
+        {
+          "term": "fill",
+          "ipa": "fɪl",
+          "def": "v.（使）充满，装满",
+          "zh": "使"
+        },
+        {
+          "term": "air",
+          "ipa": "eə",
+          "def": "n.[U]空气，天空",
+          "zh": "空气"
+        },
+        {
+          "term": "long",
+          "ipa": "lɒŋ",
+          "def": "adj.长的adv.长久的",
+          "zh": "长的"
+        }
+      ]
+    },
+    {
+      "node_id": "n006",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "Monkey found a long table with bowls, cups, and plates.",
+      "text_zh": "猴子发现了一张摆满碗、杯和盘子的长桌。",
+      "illustration": "assets/adv_frames/ep2/f2.jpg",
+      "audio_start": 37.878,
+      "audio_end": 42.398,
+      "vocab": [
+        {
+          "term": "monkey",
+          "zh": "猴子",
+          "mode": "test",
+          "options": [
+            "戏水",
+            "猴子",
+            "眼睛",
+            "长臂猿"
+          ],
+          "answer": 1,
+          "phrase_en": "Monkey found a long table with bowls",
+          "phrase_zh": "猴子发现了一张摆着碗碟的长桌",
+          "ipa": "ˈmʌŋki",
+          "pos": "n.",
+          "def": "n.[C]猴子",
+          "gloss": "猴子"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "land",
+          "ipa": "lænd",
+          "def": "n.[U]大陆，土地 [C]国家v.降落，着陆",
+          "zh": "大陆"
+        },
+        {
+          "term": "large",
+          "ipa": "lɑː(r)dʒ",
+          "def": "adj.大号的，大的，大量的",
+          "zh": "大号的"
+        },
+        {
+          "term": "eye",
+          "ipa": "aɪ",
+          "def": "n.[C]眼睛",
+          "zh": "眼睛"
+        },
+        {
+          "term": "open",
+          "ipa": "ˈəʊpən",
+          "def": "v.开，打开，开业adj.敞开的，开阔的n.[sing.]户外，公开",
+          "zh": "开"
+        },
+        {
+          "term": "wide",
+          "ipa": "waɪd",
+          "def": "adj.宽的，宽阔的，……宽的adv.尽可能远地，充分地",
+          "zh": "宽的"
+        },
+        {
+          "term": "bamboo",
+          "ipa": "ˌbæmˈbuː",
+          "def": "n.[C,U]竹子",
+          "zh": "竹子"
+        },
+        {
+          "term": "beautiful",
+          "ipa": "ˈbjuːtɪfl",
+          "def": "adj.美妙的，美丽的，美好的",
+          "zh": "美妙的"
+        },
+        {
+          "term": "flower",
+          "ipa": "ˈflaʊə(r)",
+          "def": "n.[C]花",
+          "zh": "花"
+        },
+        {
+          "term": "cover",
+          "ipa": "ˈkʌvə(r)",
+          "def": "vt.遮盖，覆盖；占（一片面积）n.[C]覆盖物，盖子，封面",
+          "zh": "遮盖"
+        },
+        {
+          "term": "wall",
+          "ipa": "wɔːl",
+          "def": "n.[C]墙",
+          "zh": "墙"
+        },
+        {
+          "term": "fill",
+          "ipa": "fɪl",
+          "def": "v.（使）充满，装满",
+          "zh": "使"
+        },
+        {
+          "term": "air",
+          "ipa": "eə",
+          "def": "n.[U]空气，天空",
+          "zh": "空气"
+        },
+        {
+          "term": "long",
+          "ipa": "lɒŋ",
+          "def": "adj.长的adv.长久的",
+          "zh": "长的"
+        }
+      ]
+    },
+    {
+      "node_id": "n007",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "A fireplace sat against one wall.",
+      "text_zh": "一盏壁炉倚靠在一面墙上。",
+      "illustration": "assets/adv_frames/ep2/f3.jpg",
+      "audio_start": 42.399,
+      "audio_end": 46.623,
+      "vocab": [
+        {
+          "term": "fireplace",
+          "zh": "壁炉",
+          "mode": "learn",
+          "phrase_en": "A fireplace sat against one wall.",
+          "phrase_zh": "壁炉",
+          "source": "official_words"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "land",
+          "ipa": "lænd",
+          "def": "n.[U]大陆，土地 [C]国家v.降落，着陆",
+          "zh": "大陆"
+        },
+        {
+          "term": "large",
+          "ipa": "lɑː(r)dʒ",
+          "def": "adj.大号的，大的，大量的",
+          "zh": "大号的"
+        },
+        {
+          "term": "eye",
+          "ipa": "aɪ",
+          "def": "n.[C]眼睛",
+          "zh": "眼睛"
+        },
+        {
+          "term": "open",
+          "ipa": "ˈəʊpən",
+          "def": "v.开，打开，开业adj.敞开的，开阔的n.[sing.]户外，公开",
+          "zh": "开"
+        },
+        {
+          "term": "wide",
+          "ipa": "waɪd",
+          "def": "adj.宽的，宽阔的，……宽的adv.尽可能远地，充分地",
+          "zh": "宽的"
+        },
+        {
+          "term": "bamboo",
+          "ipa": "ˌbæmˈbuː",
+          "def": "n.[C,U]竹子",
+          "zh": "竹子"
+        },
+        {
+          "term": "beautiful",
+          "ipa": "ˈbjuːtɪfl",
+          "def": "adj.美妙的，美丽的，美好的",
+          "zh": "美妙的"
+        },
+        {
+          "term": "flower",
+          "ipa": "ˈflaʊə(r)",
+          "def": "n.[C]花",
+          "zh": "花"
+        },
+        {
+          "term": "cover",
+          "ipa": "ˈkʌvə(r)",
+          "def": "vt.遮盖，覆盖；占（一片面积）n.[C]覆盖物，盖子，封面",
+          "zh": "遮盖"
+        },
+        {
+          "term": "wall",
+          "ipa": "wɔːl",
+          "def": "n.[C]墙",
+          "zh": "墙"
+        },
+        {
+          "term": "fill",
+          "ipa": "fɪl",
+          "def": "v.（使）充满，装满",
+          "zh": "使"
+        },
+        {
+          "term": "air",
+          "ipa": "eə",
+          "def": "n.[U]空气，天空",
+          "zh": "空气"
+        },
+        {
+          "term": "long",
+          "ipa": "lɒŋ",
+          "def": "adj.长的adv.长久的",
+          "zh": "长的"
+        }
+      ]
+    },
+    {
+      "node_id": "n008",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "Deeper in the cave, Monkey found bedrooms with cozy beds.",
+      "text_zh": "在洞穴深处,猴子发现了设有舒适床铺的卧室。",
+      "illustration": "assets/adv_frames/ep2/f0.jpg",
+      "audio_start": 46.624,
+      "audio_end": 51.917,
+      "vocab": [
+        {
+          "term": "cozy",
+          "zh": "(房间或者家里)舒适的,惬意的",
+          "mode": "learn",
+          "phrase_en": "Deeper in the cave, Monkey found bedrooms with cozy beds.",
+          "phrase_zh": "",
+          "source": "official_words"
+        },
+        {
+          "term": "monkey",
+          "zh": "猴子",
+          "mode": "review",
+          "options": [
+            "eyes",
+            "apes",
+            "monkey",
+            "splashed"
+          ],
+          "answer": 2,
+          "phrase_en": "Monkey found bedrooms with cozy beds",
+          "phrase_zh": "发现猴子居住的卧室,配有舒适的床铺",
+          "ipa": "ˈmʌŋki",
+          "pos": "n.",
+          "def": "n.[C]猴子",
+          "gloss": "猴子"
+        },
+        {
+          "term": "cave",
+          "zh": "洞穴",
+          "mode": "review",
+          "options": [
+            "king",
+            "cave",
+            "leaped",
+            "eyes"
+          ],
+          "answer": 1,
+          "phrase_en": "a large cave",
+          "phrase_zh": "一个大型洞穴",
+          "gloss": "洞穴"
+        }
+      ],
+      "quiz_after": {
+        "q": "What did Monkey find in the cave?",
+        "choices": [
+          "bedrooms",
+          "spiders",
+          "a lake"
+        ],
+        "answer": 0,
+        "q_zh": "猴子在洞里找到了什么？",
+        "choices_zh": [
+          "卧室",
+          "蜘蛛",
+          "一​​个湖"
+        ]
+      },
+      "page_words": [
+        {
+          "term": "bowl",
+          "ipa": "bəʊl",
+          "def": "n.[C]碗",
+          "zh": "碗"
+        },
+        {
+          "term": "cup",
+          "ipa": "kʌp",
+          "def": "n.[C]杯，杯子",
+          "zh": "杯"
+        },
+        {
+          "term": "plate",
+          "ipa": "pleɪt",
+          "def": "n.[C]盘子，碟子",
+          "zh": "盘子"
+        },
+        {
+          "term": "against",
+          "ipa": "əˈɡenst",
+          "def": "prep.倚，碰，撞，违反，反对",
+          "zh": "倚"
+        },
+        {
+          "term": "bedroom",
+          "ipa": "ˈbedruːm",
+          "def": "n.[C]卧室",
+          "zh": "卧室"
+        },
+        {
+          "term": "bed",
+          "ipa": "bed",
+          "def": "n.[C,U]床[C]河床，海底",
+          "zh": "床"
+        },
+        {
+          "term": "monkey",
+          "ipa": "ˈmʌŋki",
+          "def": "n.[C]猴子",
+          "zh": "猴子"
+        },
+        {
+          "term": "think",
+          "ipa": "θɪŋk",
+          "def": "v.认为，想。思考",
+          "zh": "认为"
+        },
+        {
+          "term": "make",
+          "ipa": "meɪk",
+          "def": "v.使成为，制造，做，做出，组成，挣钱，铺床",
+          "zh": "使成为"
+        },
+        {
+          "term": "through",
+          "ipa": "θruː",
+          "def": "prep.以，凭借，穿过，自始至终adv.通过，完全，彻底，自始至终",
+          "zh": "以"
+        },
+        {
+          "term": "probably",
+          "ipa": "ˈprɒbəbli",
+          "def": "adv.很可能，大概",
+          "zh": "很可能"
+        },
+        {
+          "term": "river",
+          "ipa": "ˈrɪvə(r)",
+          "def": "n.[C]河，江",
+          "zh": "河"
+        },
+        {
+          "term": "alive",
+          "ipa": "əˈlaɪv",
+          "def": "adj.活着，有生气的",
+          "zh": "活着"
+        },
+        {
+          "term": "laugh",
+          "ipa": "lɑːf",
+          "def": "v.笑，发笑n.笑声",
+          "zh": "笑"
+        },
+        {
+          "term": "lucky",
+          "ipa": "ˈlʌki",
+          "def": "adj.幸运的",
+          "zh": "幸运的"
+        },
+        {
+          "term": "perfect",
+          "ipa": "",
+          "def": "adj.完美的，完全的；正合适，最佳的vt.使完美，使完善",
+          "zh": "完美的"
+        },
+        {
+          "term": "home",
+          "ipa": "həʊm",
+          "def": "n.[C,U]家，养老院adv.到家，在家",
+          "zh": "家"
+        },
+        {
+          "term": "follow",
+          "ipa": "ˈfɒləʊ",
+          "def": "v.遵循，接受，跟随，关注",
+          "zh": "遵循"
+        },
+        {
+          "term": "jump",
+          "ipa": "dʒʌmp",
+          "def": "",
+          "zh": "jump"
+        }
+      ]
+    },
+    {
+      "node_id": "n009",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "Outside, the other monkeys and apes were looking at the waterfall.",
+      "text_zh": "在外面,其他猴子和类人猿都在注视着瀑布。",
+      "illustration": "assets/adv_frames/ep2/f1.jpg",
+      "audio_start": 51.918,
+      "audio_end": 56.756,
+      "vocab": [
+        {
+          "term": "outside",
+          "zh": "(在)外面",
+          "mode": "learn",
+          "phrase_en": "Outside, the other monkeys and apes were looking at the waterfall.",
+          "phrase_zh": "",
+          "source": "official_words"
+        },
+        {
+          "term": "waterfall",
+          "zh": "瀑布",
+          "mode": "test",
+          "options": [
+            "眼睛",
+            "瀑布",
+            "长臂猿",
+            "跃入"
+          ],
+          "answer": 1,
+          "phrase_en": "at the waterfall",
+          "phrase_zh": "悬于瀑布边",
+          "gloss": "瀑布"
+        },
+        {
+          "term": "apes",
+          "zh": "猿",
+          "mode": "learn",
+          "phrase_en": "monkeys and apes were looking",
+          "phrase_zh": "猴子与类人猿正在观察",
+          "gloss": "猿"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "bowl",
+          "ipa": "bəʊl",
+          "def": "n.[C]碗",
+          "zh": "碗"
+        },
+        {
+          "term": "cup",
+          "ipa": "kʌp",
+          "def": "n.[C]杯，杯子",
+          "zh": "杯"
+        },
+        {
+          "term": "plate",
+          "ipa": "pleɪt",
+          "def": "n.[C]盘子，碟子",
+          "zh": "盘子"
+        },
+        {
+          "term": "against",
+          "ipa": "əˈɡenst",
+          "def": "prep.倚，碰，撞，违反，反对",
+          "zh": "倚"
+        },
+        {
+          "term": "bedroom",
+          "ipa": "ˈbedruːm",
+          "def": "n.[C]卧室",
+          "zh": "卧室"
+        },
+        {
+          "term": "bed",
+          "ipa": "bed",
+          "def": "n.[C,U]床[C]河床，海底",
+          "zh": "床"
+        },
+        {
+          "term": "monkey",
+          "ipa": "ˈmʌŋki",
+          "def": "n.[C]猴子",
+          "zh": "猴子"
+        },
+        {
+          "term": "think",
+          "ipa": "θɪŋk",
+          "def": "v.认为，想。思考",
+          "zh": "认为"
+        },
+        {
+          "term": "make",
+          "ipa": "meɪk",
+          "def": "v.使成为，制造，做，做出，组成，挣钱，铺床",
+          "zh": "使成为"
+        },
+        {
+          "term": "through",
+          "ipa": "θruː",
+          "def": "prep.以，凭借，穿过，自始至终adv.通过，完全，彻底，自始至终",
+          "zh": "以"
+        },
+        {
+          "term": "probably",
+          "ipa": "ˈprɒbəbli",
+          "def": "adv.很可能，大概",
+          "zh": "很可能"
+        },
+        {
+          "term": "river",
+          "ipa": "ˈrɪvə(r)",
+          "def": "n.[C]河，江",
+          "zh": "河"
+        },
+        {
+          "term": "alive",
+          "ipa": "əˈlaɪv",
+          "def": "adj.活着，有生气的",
+          "zh": "活着"
+        },
+        {
+          "term": "laugh",
+          "ipa": "lɑːf",
+          "def": "v.笑，发笑n.笑声",
+          "zh": "笑"
+        },
+        {
+          "term": "lucky",
+          "ipa": "ˈlʌki",
+          "def": "adj.幸运的",
+          "zh": "幸运的"
+        },
+        {
+          "term": "perfect",
+          "ipa": "",
+          "def": "adj.完美的，完全的；正合适，最佳的vt.使完美，使完善",
+          "zh": "完美的"
+        },
+        {
+          "term": "home",
+          "ipa": "həʊm",
+          "def": "n.[C,U]家，养老院adv.到家，在家",
+          "zh": "家"
+        },
+        {
+          "term": "follow",
+          "ipa": "ˈfɒləʊ",
+          "def": "v.遵循，接受，跟随，关注",
+          "zh": "遵循"
+        },
+        {
+          "term": "jump",
+          "ipa": "dʒʌmp",
+          "def": "",
+          "zh": "jump"
+        }
+      ]
+    },
+    {
+      "node_id": "n010",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"Do you think he made it through?\" asked one monkey.",
+      "text_zh": "\"你认为他能挺过来吗?\"一只猴子问道。",
+      "illustration": "assets/adv_frames/ep2/f2.jpg",
+      "audio_start": 56.757,
+      "audio_end": 60.327,
+      "vocab": [
+        {
+          "term": "monkey",
+          "zh": "猴子",
+          "mode": "review",
+          "options": [
+            "light",
+            "waterfall",
+            "monkey",
+            "river"
+          ],
+          "answer": 2,
+          "phrase_en": "asked one monkey",
+          "phrase_zh": "问了一只猴子",
+          "ipa": "ˈmʌŋki",
+          "pos": "n.",
+          "def": "n.[C]猴子",
+          "gloss": "猴子"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "bowl",
+          "ipa": "bəʊl",
+          "def": "n.[C]碗",
+          "zh": "碗"
+        },
+        {
+          "term": "cup",
+          "ipa": "kʌp",
+          "def": "n.[C]杯，杯子",
+          "zh": "杯"
+        },
+        {
+          "term": "plate",
+          "ipa": "pleɪt",
+          "def": "n.[C]盘子，碟子",
+          "zh": "盘子"
+        },
+        {
+          "term": "against",
+          "ipa": "əˈɡenst",
+          "def": "prep.倚，碰，撞，违反，反对",
+          "zh": "倚"
+        },
+        {
+          "term": "bedroom",
+          "ipa": "ˈbedruːm",
+          "def": "n.[C]卧室",
+          "zh": "卧室"
+        },
+        {
+          "term": "bed",
+          "ipa": "bed",
+          "def": "n.[C,U]床[C]河床，海底",
+          "zh": "床"
+        },
+        {
+          "term": "monkey",
+          "ipa": "ˈmʌŋki",
+          "def": "n.[C]猴子",
+          "zh": "猴子"
+        },
+        {
+          "term": "think",
+          "ipa": "θɪŋk",
+          "def": "v.认为，想。思考",
+          "zh": "认为"
+        },
+        {
+          "term": "make",
+          "ipa": "meɪk",
+          "def": "v.使成为，制造，做，做出，组成，挣钱，铺床",
+          "zh": "使成为"
+        },
+        {
+          "term": "through",
+          "ipa": "θruː",
+          "def": "prep.以，凭借，穿过，自始至终adv.通过，完全，彻底，自始至终",
+          "zh": "以"
+        },
+        {
+          "term": "probably",
+          "ipa": "ˈprɒbəbli",
+          "def": "adv.很可能，大概",
+          "zh": "很可能"
+        },
+        {
+          "term": "river",
+          "ipa": "ˈrɪvə(r)",
+          "def": "n.[C]河，江",
+          "zh": "河"
+        },
+        {
+          "term": "alive",
+          "ipa": "əˈlaɪv",
+          "def": "adj.活着，有生气的",
+          "zh": "活着"
+        },
+        {
+          "term": "laugh",
+          "ipa": "lɑːf",
+          "def": "v.笑，发笑n.笑声",
+          "zh": "笑"
+        },
+        {
+          "term": "lucky",
+          "ipa": "ˈlʌki",
+          "def": "adj.幸运的",
+          "zh": "幸运的"
+        },
+        {
+          "term": "perfect",
+          "ipa": "",
+          "def": "adj.完美的，完全的；正合适，最佳的vt.使完美，使完善",
+          "zh": "完美的"
+        },
+        {
+          "term": "home",
+          "ipa": "həʊm",
+          "def": "n.[C,U]家，养老院adv.到家，在家",
+          "zh": "家"
+        },
+        {
+          "term": "follow",
+          "ipa": "ˈfɒləʊ",
+          "def": "v.遵循，接受，跟随，关注",
+          "zh": "遵循"
+        },
+        {
+          "term": "jump",
+          "ipa": "dʒʌmp",
+          "def": "",
+          "zh": "jump"
+        }
+      ]
+    },
+    {
+      "node_id": "n011",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"No,\" said another monkey.",
+      "text_zh": "\"不,\"另一只猴子说道。",
+      "illustration": "assets/adv_frames/ep2/f3.jpg",
+      "audio_start": 60.328,
+      "audio_end": 63.247,
+      "vocab": [
+        {
+          "term": "monkey",
+          "zh": "猴子",
+          "mode": "review",
+          "options": [
+            "gibbon",
+            "cave",
+            "monkey",
+            "river"
+          ],
+          "answer": 2,
+          "phrase_en": "said another monkey",
+          "phrase_zh": "另一只猴子说道",
+          "ipa": "ˈmʌŋki",
+          "pos": "n.",
+          "def": "n.[C]猴子",
+          "gloss": "猴子"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "bowl",
+          "ipa": "bəʊl",
+          "def": "n.[C]碗",
+          "zh": "碗"
+        },
+        {
+          "term": "cup",
+          "ipa": "kʌp",
+          "def": "n.[C]杯，杯子",
+          "zh": "杯"
+        },
+        {
+          "term": "plate",
+          "ipa": "pleɪt",
+          "def": "n.[C]盘子，碟子",
+          "zh": "盘子"
+        },
+        {
+          "term": "against",
+          "ipa": "əˈɡenst",
+          "def": "prep.倚，碰，撞，违反，反对",
+          "zh": "倚"
+        },
+        {
+          "term": "bedroom",
+          "ipa": "ˈbedruːm",
+          "def": "n.[C]卧室",
+          "zh": "卧室"
+        },
+        {
+          "term": "bed",
+          "ipa": "bed",
+          "def": "n.[C,U]床[C]河床，海底",
+          "zh": "床"
+        },
+        {
+          "term": "monkey",
+          "ipa": "ˈmʌŋki",
+          "def": "n.[C]猴子",
+          "zh": "猴子"
+        },
+        {
+          "term": "think",
+          "ipa": "θɪŋk",
+          "def": "v.认为，想。思考",
+          "zh": "认为"
+        },
+        {
+          "term": "make",
+          "ipa": "meɪk",
+          "def": "v.使成为，制造，做，做出，组成，挣钱，铺床",
+          "zh": "使成为"
+        },
+        {
+          "term": "through",
+          "ipa": "θruː",
+          "def": "prep.以，凭借，穿过，自始至终adv.通过，完全，彻底，自始至终",
+          "zh": "以"
+        },
+        {
+          "term": "probably",
+          "ipa": "ˈprɒbəbli",
+          "def": "adv.很可能，大概",
+          "zh": "很可能"
+        },
+        {
+          "term": "river",
+          "ipa": "ˈrɪvə(r)",
+          "def": "n.[C]河，江",
+          "zh": "河"
+        },
+        {
+          "term": "alive",
+          "ipa": "əˈlaɪv",
+          "def": "adj.活着，有生气的",
+          "zh": "活着"
+        },
+        {
+          "term": "laugh",
+          "ipa": "lɑːf",
+          "def": "v.笑，发笑n.笑声",
+          "zh": "笑"
+        },
+        {
+          "term": "lucky",
+          "ipa": "ˈlʌki",
+          "def": "adj.幸运的",
+          "zh": "幸运的"
+        },
+        {
+          "term": "perfect",
+          "ipa": "",
+          "def": "adj.完美的，完全的；正合适，最佳的vt.使完美，使完善",
+          "zh": "完美的"
+        },
+        {
+          "term": "home",
+          "ipa": "həʊm",
+          "def": "n.[C,U]家，养老院adv.到家，在家",
+          "zh": "家"
+        },
+        {
+          "term": "follow",
+          "ipa": "ˈfɒləʊ",
+          "def": "v.遵循，接受，跟随，关注",
+          "zh": "遵循"
+        },
+        {
+          "term": "jump",
+          "ipa": "dʒʌmp",
+          "def": "",
+          "zh": "jump"
+        }
+      ]
+    },
+    {
+      "node_id": "n012",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"He probably got washed away down the river.\"",
+      "text_zh": "\"他很可能被河水冲走了。\"",
+      "illustration": "assets/adv_frames/ep2/f0.jpg",
+      "audio_start": 63.248,
+      "audio_end": 67.946,
+      "vocab": [
+        {
+          "term": "wash away",
+          "zh": "冲走",
+          "mode": "learn",
+          "phrase_en": "He probably got washed away down the river.",
+          "phrase_zh": "冲走",
+          "source": "official_words"
+        },
+        {
+          "term": "river",
+          "zh": "河",
+          "mode": "learn",
+          "phrase_en": "He probably got washed away down the river",
+          "phrase_zh": "他很可能被河水冲走了。",
+          "ipa": "ˈrɪvə(r)",
+          "pos": "n.",
+          "def": "n.[C]河，江",
+          "gloss": "河"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "bowl",
+          "ipa": "bəʊl",
+          "def": "n.[C]碗",
+          "zh": "碗"
+        },
+        {
+          "term": "cup",
+          "ipa": "kʌp",
+          "def": "n.[C]杯，杯子",
+          "zh": "杯"
+        },
+        {
+          "term": "plate",
+          "ipa": "pleɪt",
+          "def": "n.[C]盘子，碟子",
+          "zh": "盘子"
+        },
+        {
+          "term": "against",
+          "ipa": "əˈɡenst",
+          "def": "prep.倚，碰，撞，违反，反对",
+          "zh": "倚"
+        },
+        {
+          "term": "bedroom",
+          "ipa": "ˈbedruːm",
+          "def": "n.[C]卧室",
+          "zh": "卧室"
+        },
+        {
+          "term": "bed",
+          "ipa": "bed",
+          "def": "n.[C,U]床[C]河床，海底",
+          "zh": "床"
+        },
+        {
+          "term": "monkey",
+          "ipa": "ˈmʌŋki",
+          "def": "n.[C]猴子",
+          "zh": "猴子"
+        },
+        {
+          "term": "think",
+          "ipa": "θɪŋk",
+          "def": "v.认为，想。思考",
+          "zh": "认为"
+        },
+        {
+          "term": "make",
+          "ipa": "meɪk",
+          "def": "v.使成为，制造，做，做出，组成，挣钱，铺床",
+          "zh": "使成为"
+        },
+        {
+          "term": "through",
+          "ipa": "θruː",
+          "def": "prep.以，凭借，穿过，自始至终adv.通过，完全，彻底，自始至终",
+          "zh": "以"
+        },
+        {
+          "term": "probably",
+          "ipa": "ˈprɒbəbli",
+          "def": "adv.很可能，大概",
+          "zh": "很可能"
+        },
+        {
+          "term": "river",
+          "ipa": "ˈrɪvə(r)",
+          "def": "n.[C]河，江",
+          "zh": "河"
+        },
+        {
+          "term": "alive",
+          "ipa": "əˈlaɪv",
+          "def": "adj.活着，有生气的",
+          "zh": "活着"
+        },
+        {
+          "term": "laugh",
+          "ipa": "lɑːf",
+          "def": "v.笑，发笑n.笑声",
+          "zh": "笑"
+        },
+        {
+          "term": "lucky",
+          "ipa": "ˈlʌki",
+          "def": "adj.幸运的",
+          "zh": "幸运的"
+        },
+        {
+          "term": "perfect",
+          "ipa": "",
+          "def": "adj.完美的，完全的；正合适，最佳的vt.使完美，使完善",
+          "zh": "完美的"
+        },
+        {
+          "term": "home",
+          "ipa": "həʊm",
+          "def": "n.[C,U]家，养老院adv.到家，在家",
+          "zh": "家"
+        },
+        {
+          "term": "follow",
+          "ipa": "ˈfɒləʊ",
+          "def": "v.遵循，接受，跟随，关注",
+          "zh": "遵循"
+        },
+        {
+          "term": "jump",
+          "ipa": "dʒʌmp",
+          "def": "",
+          "zh": "jump"
+        }
+      ]
+    },
+    {
+      "node_id": "n013",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "Suddenly—<font color=\"#ffff00\"><i>splash!</i></font> Monkey shot out of the waterfall and landed in front of the group.",
+      "text_zh": "突然——<font color=\"#ffff00\">(i)哗啦!(/i)</font>——猴子从瀑布中跃出,落在众人面前。",
+      "illustration": "assets/adv_frames/ep2/f1.jpg",
+      "audio_start": 67.947,
+      "audio_end": 76.428,
+      "vocab": [
+        {
+          "term": "waterfall",
+          "zh": "瀑布",
+          "mode": "review",
+          "options": [
+            "stream",
+            "monkey",
+            "waterfall",
+            "apes"
+          ],
+          "answer": 2,
+          "phrase_en": "of the waterfall and landed",
+          "phrase_zh": "跨越瀑布后着陆",
+          "gloss": "瀑布"
+        },
+        {
+          "term": "monkey",
+          "zh": "猴子",
+          "mode": "review",
+          "options": [
+            "splashed",
+            "leaped",
+            "monkey",
+            "waterfall"
+          ],
+          "answer": 2,
+          "phrase_en": "Suddenly—<font color=\"#ffff00\"><i>splash!</i></font> monkey shot out",
+          "phrase_zh": "突然——<font color=\"#ffff00\">(i)水花!(/i)</font> 猴子猛地冲了出去",
+          "ipa": "ˈmʌŋki",
+          "pos": "n.",
+          "def": "n.[C]猴子",
+          "gloss": "猴子"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "bowl",
+          "ipa": "bəʊl",
+          "def": "n.[C]碗",
+          "zh": "碗"
+        },
+        {
+          "term": "cup",
+          "ipa": "kʌp",
+          "def": "n.[C]杯，杯子",
+          "zh": "杯"
+        },
+        {
+          "term": "plate",
+          "ipa": "pleɪt",
+          "def": "n.[C]盘子，碟子",
+          "zh": "盘子"
+        },
+        {
+          "term": "against",
+          "ipa": "əˈɡenst",
+          "def": "prep.倚，碰，撞，违反，反对",
+          "zh": "倚"
+        },
+        {
+          "term": "bedroom",
+          "ipa": "ˈbedruːm",
+          "def": "n.[C]卧室",
+          "zh": "卧室"
+        },
+        {
+          "term": "bed",
+          "ipa": "bed",
+          "def": "n.[C,U]床[C]河床，海底",
+          "zh": "床"
+        },
+        {
+          "term": "monkey",
+          "ipa": "ˈmʌŋki",
+          "def": "n.[C]猴子",
+          "zh": "猴子"
+        },
+        {
+          "term": "think",
+          "ipa": "θɪŋk",
+          "def": "v.认为，想。思考",
+          "zh": "认为"
+        },
+        {
+          "term": "make",
+          "ipa": "meɪk",
+          "def": "v.使成为，制造，做，做出，组成，挣钱，铺床",
+          "zh": "使成为"
+        },
+        {
+          "term": "through",
+          "ipa": "θruː",
+          "def": "prep.以，凭借，穿过，自始至终adv.通过，完全，彻底，自始至终",
+          "zh": "以"
+        },
+        {
+          "term": "probably",
+          "ipa": "ˈprɒbəbli",
+          "def": "adv.很可能，大概",
+          "zh": "很可能"
+        },
+        {
+          "term": "river",
+          "ipa": "ˈrɪvə(r)",
+          "def": "n.[C]河，江",
+          "zh": "河"
+        },
+        {
+          "term": "alive",
+          "ipa": "əˈlaɪv",
+          "def": "adj.活着，有生气的",
+          "zh": "活着"
+        },
+        {
+          "term": "laugh",
+          "ipa": "lɑːf",
+          "def": "v.笑，发笑n.笑声",
+          "zh": "笑"
+        },
+        {
+          "term": "lucky",
+          "ipa": "ˈlʌki",
+          "def": "adj.幸运的",
+          "zh": "幸运的"
+        },
+        {
+          "term": "perfect",
+          "ipa": "",
+          "def": "adj.完美的，完全的；正合适，最佳的vt.使完美，使完善",
+          "zh": "完美的"
+        },
+        {
+          "term": "home",
+          "ipa": "həʊm",
+          "def": "n.[C,U]家，养老院adv.到家，在家",
+          "zh": "家"
+        },
+        {
+          "term": "follow",
+          "ipa": "ˈfɒləʊ",
+          "def": "v.遵循，接受，跟随，关注",
+          "zh": "遵循"
+        },
+        {
+          "term": "jump",
+          "ipa": "dʒʌmp",
+          "def": "",
+          "zh": "jump"
+        }
+      ]
+    },
+    {
+      "node_id": "n014",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"You're alive!\" said a monkey.",
+      "text_zh": "\"你活了!\"一只猴子说道。 \"",
+      "illustration": "assets/adv_frames/ep2/f2.jpg",
+      "audio_start": 76.429,
+      "audio_end": 79.207,
+      "vocab": [
+        {
+          "term": "monkey",
+          "zh": "猴子",
+          "mode": "review",
+          "options": [
+            "gibbon",
+            "apes",
+            "dangerous",
+            "monkey"
+          ],
+          "answer": 3,
+          "phrase_en": "You're alive!\" said a monkey",
+          "phrase_zh": "你活了!\"一只猴子说道。",
+          "ipa": "ˈmʌŋki",
+          "pos": "n.",
+          "def": "n.[C]猴子",
+          "gloss": "猴子"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "bowl",
+          "ipa": "bəʊl",
+          "def": "n.[C]碗",
+          "zh": "碗"
+        },
+        {
+          "term": "cup",
+          "ipa": "kʌp",
+          "def": "n.[C]杯，杯子",
+          "zh": "杯"
+        },
+        {
+          "term": "plate",
+          "ipa": "pleɪt",
+          "def": "n.[C]盘子，碟子",
+          "zh": "盘子"
+        },
+        {
+          "term": "against",
+          "ipa": "əˈɡenst",
+          "def": "prep.倚，碰，撞，违反，反对",
+          "zh": "倚"
+        },
+        {
+          "term": "bedroom",
+          "ipa": "ˈbedruːm",
+          "def": "n.[C]卧室",
+          "zh": "卧室"
+        },
+        {
+          "term": "bed",
+          "ipa": "bed",
+          "def": "n.[C,U]床[C]河床，海底",
+          "zh": "床"
+        },
+        {
+          "term": "monkey",
+          "ipa": "ˈmʌŋki",
+          "def": "n.[C]猴子",
+          "zh": "猴子"
+        },
+        {
+          "term": "think",
+          "ipa": "θɪŋk",
+          "def": "v.认为，想。思考",
+          "zh": "认为"
+        },
+        {
+          "term": "make",
+          "ipa": "meɪk",
+          "def": "v.使成为，制造，做，做出，组成，挣钱，铺床",
+          "zh": "使成为"
+        },
+        {
+          "term": "through",
+          "ipa": "θruː",
+          "def": "prep.以，凭借，穿过，自始至终adv.通过，完全，彻底，自始至终",
+          "zh": "以"
+        },
+        {
+          "term": "probably",
+          "ipa": "ˈprɒbəbli",
+          "def": "adv.很可能，大概",
+          "zh": "很可能"
+        },
+        {
+          "term": "river",
+          "ipa": "ˈrɪvə(r)",
+          "def": "n.[C]河，江",
+          "zh": "河"
+        },
+        {
+          "term": "alive",
+          "ipa": "əˈlaɪv",
+          "def": "adj.活着，有生气的",
+          "zh": "活着"
+        },
+        {
+          "term": "laugh",
+          "ipa": "lɑːf",
+          "def": "v.笑，发笑n.笑声",
+          "zh": "笑"
+        },
+        {
+          "term": "lucky",
+          "ipa": "ˈlʌki",
+          "def": "adj.幸运的",
+          "zh": "幸运的"
+        },
+        {
+          "term": "perfect",
+          "ipa": "",
+          "def": "adj.完美的，完全的；正合适，最佳的vt.使完美，使完善",
+          "zh": "完美的"
+        },
+        {
+          "term": "home",
+          "ipa": "həʊm",
+          "def": "n.[C,U]家，养老院adv.到家，在家",
+          "zh": "家"
+        },
+        {
+          "term": "follow",
+          "ipa": "ˈfɒləʊ",
+          "def": "v.遵循，接受，跟随，关注",
+          "zh": "遵循"
+        },
+        {
+          "term": "jump",
+          "ipa": "dʒʌmp",
+          "def": "",
+          "zh": "jump"
+        }
+      ]
+    },
+    {
+      "node_id": "n015",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "Monkey laughed. \"Yes! And we are very lucky! I found a perfect home for all of us. Follow me!\"",
+      "text_zh": "猴子笑了起来:\"没错!我们真是太幸运了!我为我们所有人找到了一个完美的家。跟我来!\"",
+      "illustration": "assets/adv_frames/ep2/f3.jpg",
+      "audio_start": 79.208,
+      "audio_end": 89.208,
+      "vocab": [
+        {
+          "term": "perfect",
+          "zh": "完美的",
+          "mode": "learn",
+          "phrase_en": "I found a perfect home for all of us.",
+          "phrase_zh": "完美的",
+          "source": "official_words"
+        },
+        {
+          "term": "monkey",
+          "zh": "猴子",
+          "mode": "review",
+          "options": [
+            "stream",
+            "river",
+            "cave",
+            "monkey"
+          ],
+          "answer": 3,
+          "phrase_en": "Monkey laughed",
+          "phrase_zh": "猴子笑了",
+          "ipa": "ˈmʌŋki",
+          "pos": "n.",
+          "def": "n.[C]猴子",
+          "gloss": "猴子"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "bowl",
+          "ipa": "bəʊl",
+          "def": "n.[C]碗",
+          "zh": "碗"
+        },
+        {
+          "term": "cup",
+          "ipa": "kʌp",
+          "def": "n.[C]杯，杯子",
+          "zh": "杯"
+        },
+        {
+          "term": "plate",
+          "ipa": "pleɪt",
+          "def": "n.[C]盘子，碟子",
+          "zh": "盘子"
+        },
+        {
+          "term": "against",
+          "ipa": "əˈɡenst",
+          "def": "prep.倚，碰，撞，违反，反对",
+          "zh": "倚"
+        },
+        {
+          "term": "bedroom",
+          "ipa": "ˈbedruːm",
+          "def": "n.[C]卧室",
+          "zh": "卧室"
+        },
+        {
+          "term": "bed",
+          "ipa": "bed",
+          "def": "n.[C,U]床[C]河床，海底",
+          "zh": "床"
+        },
+        {
+          "term": "monkey",
+          "ipa": "ˈmʌŋki",
+          "def": "n.[C]猴子",
+          "zh": "猴子"
+        },
+        {
+          "term": "think",
+          "ipa": "θɪŋk",
+          "def": "v.认为，想。思考",
+          "zh": "认为"
+        },
+        {
+          "term": "make",
+          "ipa": "meɪk",
+          "def": "v.使成为，制造，做，做出，组成，挣钱，铺床",
+          "zh": "使成为"
+        },
+        {
+          "term": "through",
+          "ipa": "θruː",
+          "def": "prep.以，凭借，穿过，自始至终adv.通过，完全，彻底，自始至终",
+          "zh": "以"
+        },
+        {
+          "term": "probably",
+          "ipa": "ˈprɒbəbli",
+          "def": "adv.很可能，大概",
+          "zh": "很可能"
+        },
+        {
+          "term": "river",
+          "ipa": "ˈrɪvə(r)",
+          "def": "n.[C]河，江",
+          "zh": "河"
+        },
+        {
+          "term": "alive",
+          "ipa": "əˈlaɪv",
+          "def": "adj.活着，有生气的",
+          "zh": "活着"
+        },
+        {
+          "term": "laugh",
+          "ipa": "lɑːf",
+          "def": "v.笑，发笑n.笑声",
+          "zh": "笑"
+        },
+        {
+          "term": "lucky",
+          "ipa": "ˈlʌki",
+          "def": "adj.幸运的",
+          "zh": "幸运的"
+        },
+        {
+          "term": "perfect",
+          "ipa": "",
+          "def": "adj.完美的，完全的；正合适，最佳的vt.使完美，使完善",
+          "zh": "完美的"
+        },
+        {
+          "term": "home",
+          "ipa": "həʊm",
+          "def": "n.[C,U]家，养老院adv.到家，在家",
+          "zh": "家"
+        },
+        {
+          "term": "follow",
+          "ipa": "ˈfɒləʊ",
+          "def": "v.遵循，接受，跟随，关注",
+          "zh": "遵循"
+        },
+        {
+          "term": "jump",
+          "ipa": "dʒʌmp",
+          "def": "",
+          "zh": "jump"
+        }
+      ]
+    },
+    {
+      "node_id": "n016",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "Monkey jumped back through the water.",
+      "text_zh": "猴子从水中跳了回来。",
+      "illustration": "assets/adv_frames/ep2/f0.jpg",
+      "audio_start": 89.209,
+      "audio_end": 93.004,
+      "vocab": [
+        {
+          "term": "monkey",
+          "zh": "猴子",
+          "mode": "review",
+          "options": [
+            "monkey",
+            "stream",
+            "light",
+            "gibbon"
+          ],
+          "answer": 0,
+          "phrase_en": "Monkey jumped back through the water",
+          "phrase_zh": "猴子从水中跃回",
+          "ipa": "ˈmʌŋki",
+          "pos": "n.",
+          "def": "n.[C]猴子",
+          "gloss": "猴子"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "bowl",
+          "ipa": "bəʊl",
+          "def": "n.[C]碗",
+          "zh": "碗"
+        },
+        {
+          "term": "cup",
+          "ipa": "kʌp",
+          "def": "n.[C]杯，杯子",
+          "zh": "杯"
+        },
+        {
+          "term": "plate",
+          "ipa": "pleɪt",
+          "def": "n.[C]盘子，碟子",
+          "zh": "盘子"
+        },
+        {
+          "term": "against",
+          "ipa": "əˈɡenst",
+          "def": "prep.倚，碰，撞，违反，反对",
+          "zh": "倚"
+        },
+        {
+          "term": "bedroom",
+          "ipa": "ˈbedruːm",
+          "def": "n.[C]卧室",
+          "zh": "卧室"
+        },
+        {
+          "term": "bed",
+          "ipa": "bed",
+          "def": "n.[C,U]床[C]河床，海底",
+          "zh": "床"
+        },
+        {
+          "term": "monkey",
+          "ipa": "ˈmʌŋki",
+          "def": "n.[C]猴子",
+          "zh": "猴子"
+        },
+        {
+          "term": "think",
+          "ipa": "θɪŋk",
+          "def": "v.认为，想。思考",
+          "zh": "认为"
+        },
+        {
+          "term": "make",
+          "ipa": "meɪk",
+          "def": "v.使成为，制造，做，做出，组成，挣钱，铺床",
+          "zh": "使成为"
+        },
+        {
+          "term": "through",
+          "ipa": "θruː",
+          "def": "prep.以，凭借，穿过，自始至终adv.通过，完全，彻底，自始至终",
+          "zh": "以"
+        },
+        {
+          "term": "probably",
+          "ipa": "ˈprɒbəbli",
+          "def": "adv.很可能，大概",
+          "zh": "很可能"
+        },
+        {
+          "term": "river",
+          "ipa": "ˈrɪvə(r)",
+          "def": "n.[C]河，江",
+          "zh": "河"
+        },
+        {
+          "term": "alive",
+          "ipa": "əˈlaɪv",
+          "def": "adj.活着，有生气的",
+          "zh": "活着"
+        },
+        {
+          "term": "laugh",
+          "ipa": "lɑːf",
+          "def": "v.笑，发笑n.笑声",
+          "zh": "笑"
+        },
+        {
+          "term": "lucky",
+          "ipa": "ˈlʌki",
+          "def": "adj.幸运的",
+          "zh": "幸运的"
+        },
+        {
+          "term": "perfect",
+          "ipa": "",
+          "def": "adj.完美的，完全的；正合适，最佳的vt.使完美，使完善",
+          "zh": "完美的"
+        },
+        {
+          "term": "home",
+          "ipa": "həʊm",
+          "def": "n.[C,U]家，养老院adv.到家，在家",
+          "zh": "家"
+        },
+        {
+          "term": "follow",
+          "ipa": "ˈfɒləʊ",
+          "def": "v.遵循，接受，跟随，关注",
+          "zh": "遵循"
+        },
+        {
+          "term": "jump",
+          "ipa": "dʒʌmp",
+          "def": "",
+          "zh": "jump"
+        }
+      ]
+    },
+    {
+      "node_id": "n017",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "Some of the monkeys scratched their heads.",
+      "text_zh": "部分猴子挠了挠头。",
+      "illustration": "assets/adv_frames/ep2/f1.jpg",
+      "audio_start": 93.005,
+      "audio_end": 95.971,
+      "vocab": [],
+      "page_words": [
+        {
+          "term": "back",
+          "ipa": "bæk",
+          "def": "n.[C]后面，背部adj.后面的adv.回原处，向后地",
+          "zh": "后面"
+        },
+        {
+          "term": "water",
+          "ipa": "ˈwɔːtə",
+          "def": "n.[U]水[pl.]（某一江、河、湖、海的）水域vt.给……浇水",
+          "zh": "水"
+        },
+        {
+          "term": "head",
+          "ipa": "hed",
+          "def": "n.[C]头（部）[C,U]负责人[sing.]队首vi.朝（某方向）行进",
+          "zh": "头"
+        },
+        {
+          "term": "danger",
+          "ipa": "ˈdeɪndʒə(r)",
+          "def": "n.[U]危险[C]危害；威胁",
+          "zh": "危险"
+        },
+        {
+          "term": "wonderful",
+          "ipa": "ˈwʌndəf(ə)l",
+          "def": "adj.精彩的，绝妙的",
+          "zh": "精彩的"
+        },
+        {
+          "term": "fight",
+          "ipa": "faɪt",
+          "def": "v./n.[C]打架，战斗v.与……作斗争",
+          "zh": "打架"
+        },
+        {
+          "term": "argue",
+          "ipa": "ˈɑːrɡjuː",
+          "def": "v.争吵，争论，讨论；认为互相",
+          "zh": "争吵"
+        },
+        {
+          "term": "first",
+          "ipa": "fɜː(r)st",
+          "def": "num.第一adj.第一的；首要的adv.第一，最初n.[sing.]第一，最初",
+          "zh": "第一"
+        },
+        {
+          "term": "another",
+          "ipa": "əˈnʌðə(r)",
+          "def": "adj./pron.另一，又一",
+          "zh": "另一"
+        },
+        {
+          "term": "do",
+          "ipa": "duː",
+          "def": "v.做，干aux v.构成疑问句和否定句",
+          "zh": "做"
+        },
+        {
+          "term": "watch",
+          "ipa": "wɒtʃ",
+          "def": "v.注视，观看，留意，小心n.[C]表，手表[U]观察",
+          "zh": "注视"
+        },
+        {
+          "term": "fold",
+          "ipa": "fəʊld",
+          "def": "v.折叠，对折",
+          "zh": "折叠"
+        },
+        {
+          "term": "arm",
+          "ipa": "ɑːrm",
+          "def": "n.[C]手臂，上肢v.装备，武装",
+          "zh": "手臂"
+        },
+        {
+          "term": "call",
+          "ipa": "kɔːl",
+          "def": "v.给……打电话，把……叫作，呼喊n.[C]电话，叫声圈国",
+          "zh": "给"
+        }
+      ]
+    },
+    {
+      "node_id": "n018",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"It still looks dangerous,\" said one monkey.",
+      "text_zh": "\"看起来仍然很危险,\"一只猴子说道。",
+      "illustration": "assets/adv_frames/ep2/f2.jpg",
+      "audio_start": 95.972,
+      "audio_end": 100.786,
+      "vocab": [
+        {
+          "term": "dangerous",
+          "zh": "危险的",
+          "mode": "learn",
+          "phrase_en": "\"It still looks dangerous ,\" said one monkey.",
+          "phrase_zh": "这看起来仍然很危险",
+          "gloss": "危险的",
+          "source": "official_words"
+        },
+        {
+          "term": "monkey",
+          "zh": "猴子",
+          "mode": "review",
+          "options": [
+            "monkey",
+            "eyes",
+            "leaped",
+            "cave"
+          ],
+          "answer": 0,
+          "phrase_en": "said one monkey",
+          "phrase_zh": "一只猴子说道",
+          "ipa": "ˈmʌŋki",
+          "pos": "n.",
+          "def": "n.[C]猴子",
+          "gloss": "猴子"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "back",
+          "ipa": "bæk",
+          "def": "n.[C]后面，背部adj.后面的adv.回原处，向后地",
+          "zh": "后面"
+        },
+        {
+          "term": "water",
+          "ipa": "ˈwɔːtə",
+          "def": "n.[U]水[pl.]（某一江、河、湖、海的）水域vt.给……浇水",
+          "zh": "水"
+        },
+        {
+          "term": "head",
+          "ipa": "hed",
+          "def": "n.[C]头（部）[C,U]负责人[sing.]队首vi.朝（某方向）行进",
+          "zh": "头"
+        },
+        {
+          "term": "danger",
+          "ipa": "ˈdeɪndʒə(r)",
+          "def": "n.[U]危险[C]危害；威胁",
+          "zh": "危险"
+        },
+        {
+          "term": "wonderful",
+          "ipa": "ˈwʌndəf(ə)l",
+          "def": "adj.精彩的，绝妙的",
+          "zh": "精彩的"
+        },
+        {
+          "term": "fight",
+          "ipa": "faɪt",
+          "def": "v./n.[C]打架，战斗v.与……作斗争",
+          "zh": "打架"
+        },
+        {
+          "term": "argue",
+          "ipa": "ˈɑːrɡjuː",
+          "def": "v.争吵，争论，讨论；认为互相",
+          "zh": "争吵"
+        },
+        {
+          "term": "first",
+          "ipa": "fɜː(r)st",
+          "def": "num.第一adj.第一的；首要的adv.第一，最初n.[sing.]第一，最初",
+          "zh": "第一"
+        },
+        {
+          "term": "another",
+          "ipa": "əˈnʌðə(r)",
+          "def": "adj./pron.另一，又一",
+          "zh": "另一"
+        },
+        {
+          "term": "do",
+          "ipa": "duː",
+          "def": "v.做，干aux v.构成疑问句和否定句",
+          "zh": "做"
+        },
+        {
+          "term": "watch",
+          "ipa": "wɒtʃ",
+          "def": "v.注视，观看，留意，小心n.[C]表，手表[U]观察",
+          "zh": "注视"
+        },
+        {
+          "term": "fold",
+          "ipa": "fəʊld",
+          "def": "v.折叠，对折",
+          "zh": "折叠"
+        },
+        {
+          "term": "arm",
+          "ipa": "ɑːrm",
+          "def": "n.[C]手臂，上肢v.装备，武装",
+          "zh": "手臂"
+        },
+        {
+          "term": "call",
+          "ipa": "kɔːl",
+          "def": "v.给……打电话，把……叫作，呼喊n.[C]电话，叫声圈国",
+          "zh": "给"
+        }
+      ]
+    },
+    {
+      "node_id": "n019",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"Let's go,\" said the gibbon.",
+      "text_zh": "\"走吧,\"长臂猿说道。",
+      "illustration": "assets/adv_frames/ep2/f3.jpg",
+      "audio_start": 100.787,
+      "audio_end": 103.252,
+      "vocab": [
+        {
+          "term": "gibbon",
+          "zh": "长臂猿",
+          "mode": "learn",
+          "phrase_en": "said the gibbon",
+          "phrase_zh": ",长臂猿说道",
+          "gloss": "猿"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "back",
+          "ipa": "bæk",
+          "def": "n.[C]后面，背部adj.后面的adv.回原处，向后地",
+          "zh": "后面"
+        },
+        {
+          "term": "water",
+          "ipa": "ˈwɔːtə",
+          "def": "n.[U]水[pl.]（某一江、河、湖、海的）水域vt.给……浇水",
+          "zh": "水"
+        },
+        {
+          "term": "head",
+          "ipa": "hed",
+          "def": "n.[C]头（部）[C,U]负责人[sing.]队首vi.朝（某方向）行进",
+          "zh": "头"
+        },
+        {
+          "term": "danger",
+          "ipa": "ˈdeɪndʒə(r)",
+          "def": "n.[U]危险[C]危害；威胁",
+          "zh": "危险"
+        },
+        {
+          "term": "wonderful",
+          "ipa": "ˈwʌndəf(ə)l",
+          "def": "adj.精彩的，绝妙的",
+          "zh": "精彩的"
+        },
+        {
+          "term": "fight",
+          "ipa": "faɪt",
+          "def": "v./n.[C]打架，战斗v.与……作斗争",
+          "zh": "打架"
+        },
+        {
+          "term": "argue",
+          "ipa": "ˈɑːrɡjuː",
+          "def": "v.争吵，争论，讨论；认为互相",
+          "zh": "争吵"
+        },
+        {
+          "term": "first",
+          "ipa": "fɜː(r)st",
+          "def": "num.第一adj.第一的；首要的adv.第一，最初n.[sing.]第一，最初",
+          "zh": "第一"
+        },
+        {
+          "term": "another",
+          "ipa": "əˈnʌðə(r)",
+          "def": "adj./pron.另一，又一",
+          "zh": "另一"
+        },
+        {
+          "term": "do",
+          "ipa": "duː",
+          "def": "v.做，干aux v.构成疑问句和否定句",
+          "zh": "做"
+        },
+        {
+          "term": "watch",
+          "ipa": "wɒtʃ",
+          "def": "v.注视，观看，留意，小心n.[C]表，手表[U]观察",
+          "zh": "注视"
+        },
+        {
+          "term": "fold",
+          "ipa": "fəʊld",
+          "def": "v.折叠，对折",
+          "zh": "折叠"
+        },
+        {
+          "term": "arm",
+          "ipa": "ɑːrm",
+          "def": "n.[C]手臂，上肢v.装备，武装",
+          "zh": "手臂"
+        },
+        {
+          "term": "call",
+          "ipa": "kɔːl",
+          "def": "v.给……打电话，把……叫作，呼喊n.[C]电话，叫声圈国",
+          "zh": "给"
+        }
+      ]
+    },
+    {
+      "node_id": "n020",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "He leaped through the waterfall.",
+      "text_zh": "他跃过瀑布。",
+      "illustration": "assets/adv_frames/ep2/f0.jpg",
+      "audio_start": 103.253,
+      "audio_end": 105.801,
+      "vocab": [
+        {
+          "term": "waterfall",
+          "zh": "瀑布",
+          "mode": "review",
+          "options": [
+            "gibbon",
+            "waterfall",
+            "splashed",
+            "river"
+          ],
+          "answer": 1,
+          "phrase_en": "He leaped through the waterfall",
+          "phrase_zh": "他跃过瀑布",
+          "gloss": "瀑布"
+        },
+        {
+          "term": "leaped",
+          "zh": "跃入",
+          "mode": "learn",
+          "phrase_en": "He leaped through the waterfall",
+          "phrase_zh": "他跃过瀑布"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "back",
+          "ipa": "bæk",
+          "def": "n.[C]后面，背部adj.后面的adv.回原处，向后地",
+          "zh": "后面"
+        },
+        {
+          "term": "water",
+          "ipa": "ˈwɔːtə",
+          "def": "n.[U]水[pl.]（某一江、河、湖、海的）水域vt.给……浇水",
+          "zh": "水"
+        },
+        {
+          "term": "head",
+          "ipa": "hed",
+          "def": "n.[C]头（部）[C,U]负责人[sing.]队首vi.朝（某方向）行进",
+          "zh": "头"
+        },
+        {
+          "term": "danger",
+          "ipa": "ˈdeɪndʒə(r)",
+          "def": "n.[U]危险[C]危害；威胁",
+          "zh": "危险"
+        },
+        {
+          "term": "wonderful",
+          "ipa": "ˈwʌndəf(ə)l",
+          "def": "adj.精彩的，绝妙的",
+          "zh": "精彩的"
+        },
+        {
+          "term": "fight",
+          "ipa": "faɪt",
+          "def": "v./n.[C]打架，战斗v.与……作斗争",
+          "zh": "打架"
+        },
+        {
+          "term": "argue",
+          "ipa": "ˈɑːrɡjuː",
+          "def": "v.争吵，争论，讨论；认为互相",
+          "zh": "争吵"
+        },
+        {
+          "term": "first",
+          "ipa": "fɜː(r)st",
+          "def": "num.第一adj.第一的；首要的adv.第一，最初n.[sing.]第一，最初",
+          "zh": "第一"
+        },
+        {
+          "term": "another",
+          "ipa": "əˈnʌðə(r)",
+          "def": "adj./pron.另一，又一",
+          "zh": "另一"
+        },
+        {
+          "term": "do",
+          "ipa": "duː",
+          "def": "v.做，干aux v.构成疑问句和否定句",
+          "zh": "做"
+        },
+        {
+          "term": "watch",
+          "ipa": "wɒtʃ",
+          "def": "v.注视，观看，留意，小心n.[C]表，手表[U]观察",
+          "zh": "注视"
+        },
+        {
+          "term": "fold",
+          "ipa": "fəʊld",
+          "def": "v.折叠，对折",
+          "zh": "折叠"
+        },
+        {
+          "term": "arm",
+          "ipa": "ɑːrm",
+          "def": "n.[C]手臂，上肢v.装备，武装",
+          "zh": "手臂"
+        },
+        {
+          "term": "call",
+          "ipa": "kɔːl",
+          "def": "v.给……打电话，把……叫作，呼喊n.[C]电话，叫声圈国",
+          "zh": "给"
+        }
+      ]
+    },
+    {
+      "node_id": "n021",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "After that, another monkey jumped through.",
+      "text_zh": "随后,又有一只猴子跳了进来。",
+      "illustration": "assets/adv_frames/ep2/f1.jpg",
+      "audio_start": 105.802,
+      "audio_end": 110.725,
+      "vocab": [
+        {
+          "term": "monkey",
+          "zh": "猴子",
+          "mode": "review",
+          "options": [
+            "splashed",
+            "cave",
+            "monkey",
+            "apes"
+          ],
+          "answer": 2,
+          "phrase_en": "another monkey jumped through",
+          "phrase_zh": "另一只猴子跳了进去",
+          "ipa": "ˈmʌŋki",
+          "pos": "n.",
+          "def": "n.[C]猴子",
+          "gloss": "猴子"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "back",
+          "ipa": "bæk",
+          "def": "n.[C]后面，背部adj.后面的adv.回原处，向后地",
+          "zh": "后面"
+        },
+        {
+          "term": "water",
+          "ipa": "ˈwɔːtə",
+          "def": "n.[U]水[pl.]（某一江、河、湖、海的）水域vt.给……浇水",
+          "zh": "水"
+        },
+        {
+          "term": "head",
+          "ipa": "hed",
+          "def": "n.[C]头（部）[C,U]负责人[sing.]队首vi.朝（某方向）行进",
+          "zh": "头"
+        },
+        {
+          "term": "danger",
+          "ipa": "ˈdeɪndʒə(r)",
+          "def": "n.[U]危险[C]危害；威胁",
+          "zh": "危险"
+        },
+        {
+          "term": "wonderful",
+          "ipa": "ˈwʌndəf(ə)l",
+          "def": "adj.精彩的，绝妙的",
+          "zh": "精彩的"
+        },
+        {
+          "term": "fight",
+          "ipa": "faɪt",
+          "def": "v./n.[C]打架，战斗v.与……作斗争",
+          "zh": "打架"
+        },
+        {
+          "term": "argue",
+          "ipa": "ˈɑːrɡjuː",
+          "def": "v.争吵，争论，讨论；认为互相",
+          "zh": "争吵"
+        },
+        {
+          "term": "first",
+          "ipa": "fɜː(r)st",
+          "def": "num.第一adj.第一的；首要的adv.第一，最初n.[sing.]第一，最初",
+          "zh": "第一"
+        },
+        {
+          "term": "another",
+          "ipa": "əˈnʌðə(r)",
+          "def": "adj./pron.另一，又一",
+          "zh": "另一"
+        },
+        {
+          "term": "do",
+          "ipa": "duː",
+          "def": "v.做，干aux v.构成疑问句和否定句",
+          "zh": "做"
+        },
+        {
+          "term": "watch",
+          "ipa": "wɒtʃ",
+          "def": "v.注视，观看，留意，小心n.[C]表，手表[U]观察",
+          "zh": "注视"
+        },
+        {
+          "term": "fold",
+          "ipa": "fəʊld",
+          "def": "v.折叠，对折",
+          "zh": "折叠"
+        },
+        {
+          "term": "arm",
+          "ipa": "ɑːrm",
+          "def": "n.[C]手臂，上肢v.装备，武装",
+          "zh": "手臂"
+        },
+        {
+          "term": "call",
+          "ipa": "kɔːl",
+          "def": "v.给……打电话，把……叫作，呼喊n.[C]电话，叫声圈国",
+          "zh": "给"
+        }
+      ]
+    },
+    {
+      "node_id": "n022",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "Then some more jumped.",
+      "text_zh": "随后,又有更多人跳了起来。",
+      "illustration": "assets/adv_frames/ep2/f2.jpg",
+      "audio_start": 110.726,
+      "audio_end": 115.01,
+      "vocab": [],
+      "page_words": [
+        {
+          "term": "back",
+          "ipa": "bæk",
+          "def": "n.[C]后面，背部adj.后面的adv.回原处，向后地",
+          "zh": "后面"
+        },
+        {
+          "term": "water",
+          "ipa": "ˈwɔːtə",
+          "def": "n.[U]水[pl.]（某一江、河、湖、海的）水域vt.给……浇水",
+          "zh": "水"
+        },
+        {
+          "term": "head",
+          "ipa": "hed",
+          "def": "n.[C]头（部）[C,U]负责人[sing.]队首vi.朝（某方向）行进",
+          "zh": "头"
+        },
+        {
+          "term": "danger",
+          "ipa": "ˈdeɪndʒə(r)",
+          "def": "n.[U]危险[C]危害；威胁",
+          "zh": "危险"
+        },
+        {
+          "term": "wonderful",
+          "ipa": "ˈwʌndəf(ə)l",
+          "def": "adj.精彩的，绝妙的",
+          "zh": "精彩的"
+        },
+        {
+          "term": "fight",
+          "ipa": "faɪt",
+          "def": "v./n.[C]打架，战斗v.与……作斗争",
+          "zh": "打架"
+        },
+        {
+          "term": "argue",
+          "ipa": "ˈɑːrɡjuː",
+          "def": "v.争吵，争论，讨论；认为互相",
+          "zh": "争吵"
+        },
+        {
+          "term": "first",
+          "ipa": "fɜː(r)st",
+          "def": "num.第一adj.第一的；首要的adv.第一，最初n.[sing.]第一，最初",
+          "zh": "第一"
+        },
+        {
+          "term": "another",
+          "ipa": "əˈnʌðə(r)",
+          "def": "adj./pron.另一，又一",
+          "zh": "另一"
+        },
+        {
+          "term": "do",
+          "ipa": "duː",
+          "def": "v.做，干aux v.构成疑问句和否定句",
+          "zh": "做"
+        },
+        {
+          "term": "watch",
+          "ipa": "wɒtʃ",
+          "def": "v.注视，观看，留意，小心n.[C]表，手表[U]观察",
+          "zh": "注视"
+        },
+        {
+          "term": "fold",
+          "ipa": "fəʊld",
+          "def": "v.折叠，对折",
+          "zh": "折叠"
+        },
+        {
+          "term": "arm",
+          "ipa": "ɑːrm",
+          "def": "n.[C]手臂，上肢v.装备，武装",
+          "zh": "手臂"
+        },
+        {
+          "term": "call",
+          "ipa": "kɔːl",
+          "def": "v.给……打电话，把……叫作，呼喊n.[C]电话，叫声圈国",
+          "zh": "给"
+        }
+      ]
+    },
+    {
+      "node_id": "n023",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "Soon all of the monkeys and apes were in the cave.",
+      "text_zh": "不久,所有的猴子和类人猿都聚集在了洞穴里。",
+      "illustration": "assets/adv_frames/ep2/f3.jpg",
+      "audio_start": 115.011,
+      "audio_end": 118.879,
+      "vocab": [
+        {
+          "term": "apes",
+          "zh": "猿",
+          "mode": "test",
+          "options": [
+            "猿",
+            "瀑布",
+            "光",
+            "跃入"
+          ],
+          "answer": 0,
+          "phrase_en": "monkeys and apes were",
+          "phrase_zh": "猴子与类人猿曾",
+          "gloss": "猿"
+        },
+        {
+          "term": "cave",
+          "zh": "洞穴",
+          "mode": "review",
+          "options": [
+            "cave",
+            "eyes",
+            "light",
+            "apes"
+          ],
+          "answer": 0,
+          "phrase_en": "a large cave",
+          "phrase_zh": "一个大型洞穴",
+          "gloss": "洞穴"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "back",
+          "ipa": "bæk",
+          "def": "n.[C]后面，背部adj.后面的adv.回原处，向后地",
+          "zh": "后面"
+        },
+        {
+          "term": "water",
+          "ipa": "ˈwɔːtə",
+          "def": "n.[U]水[pl.]（某一江、河、湖、海的）水域vt.给……浇水",
+          "zh": "水"
+        },
+        {
+          "term": "head",
+          "ipa": "hed",
+          "def": "n.[C]头（部）[C,U]负责人[sing.]队首vi.朝（某方向）行进",
+          "zh": "头"
+        },
+        {
+          "term": "danger",
+          "ipa": "ˈdeɪndʒə(r)",
+          "def": "n.[U]危险[C]危害；威胁",
+          "zh": "危险"
+        },
+        {
+          "term": "wonderful",
+          "ipa": "ˈwʌndəf(ə)l",
+          "def": "adj.精彩的，绝妙的",
+          "zh": "精彩的"
+        },
+        {
+          "term": "fight",
+          "ipa": "faɪt",
+          "def": "v./n.[C]打架，战斗v.与……作斗争",
+          "zh": "打架"
+        },
+        {
+          "term": "argue",
+          "ipa": "ˈɑːrɡjuː",
+          "def": "v.争吵，争论，讨论；认为互相",
+          "zh": "争吵"
+        },
+        {
+          "term": "first",
+          "ipa": "fɜː(r)st",
+          "def": "num.第一adj.第一的；首要的adv.第一，最初n.[sing.]第一，最初",
+          "zh": "第一"
+        },
+        {
+          "term": "another",
+          "ipa": "əˈnʌðə(r)",
+          "def": "adj./pron.另一，又一",
+          "zh": "另一"
+        },
+        {
+          "term": "do",
+          "ipa": "duː",
+          "def": "v.做，干aux v.构成疑问句和否定句",
+          "zh": "做"
+        },
+        {
+          "term": "watch",
+          "ipa": "wɒtʃ",
+          "def": "v.注视，观看，留意，小心n.[C]表，手表[U]观察",
+          "zh": "注视"
+        },
+        {
+          "term": "fold",
+          "ipa": "fəʊld",
+          "def": "v.折叠，对折",
+          "zh": "折叠"
+        },
+        {
+          "term": "arm",
+          "ipa": "ɑːrm",
+          "def": "n.[C]手臂，上肢v.装备，武装",
+          "zh": "手臂"
+        },
+        {
+          "term": "call",
+          "ipa": "kɔːl",
+          "def": "v.给……打电话，把……叫作，呼喊n.[C]电话，叫声圈国",
+          "zh": "给"
+        }
+      ]
+    },
+    {
+      "node_id": "p01",
+      "type": "puzzle",
+      "speaker": "system",
+      "text_en": "Put the words in order",
+      "text_zh": "点词块组句，完成后点确定",
+      "illustration": null,
+      "puzzle": {
+        "sentence": "They can turn themselves into other animals.",
+        "words": [
+          "into",
+          "turn",
+          "themselves",
+          "other",
+          "animals",
+          "can",
+          "They"
+        ]
+      },
+      "vocab": []
+    },
+    {
+      "node_id": "n024",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "Everyone ran around to see all the wonderful things.",
+      "text_zh": "大家纷纷跑来欣赏那些美妙的事物。",
+      "illustration": "assets/adv_frames/ep2/f0.jpg",
+      "audio_start": 118.88,
+      "audio_end": 123.97,
+      "vocab": [],
+      "page_words": [
+        {
+          "term": "back",
+          "ipa": "bæk",
+          "def": "n.[C]后面，背部adj.后面的adv.回原处，向后地",
+          "zh": "后面"
+        },
+        {
+          "term": "water",
+          "ipa": "ˈwɔːtə",
+          "def": "n.[U]水[pl.]（某一江、河、湖、海的）水域vt.给……浇水",
+          "zh": "水"
+        },
+        {
+          "term": "head",
+          "ipa": "hed",
+          "def": "n.[C]头（部）[C,U]负责人[sing.]队首vi.朝（某方向）行进",
+          "zh": "头"
+        },
+        {
+          "term": "danger",
+          "ipa": "ˈdeɪndʒə(r)",
+          "def": "n.[U]危险[C]危害；威胁",
+          "zh": "危险"
+        },
+        {
+          "term": "wonderful",
+          "ipa": "ˈwʌndəf(ə)l",
+          "def": "adj.精彩的，绝妙的",
+          "zh": "精彩的"
+        },
+        {
+          "term": "fight",
+          "ipa": "faɪt",
+          "def": "v./n.[C]打架，战斗v.与……作斗争",
+          "zh": "打架"
+        },
+        {
+          "term": "argue",
+          "ipa": "ˈɑːrɡjuː",
+          "def": "v.争吵，争论，讨论；认为互相",
+          "zh": "争吵"
+        },
+        {
+          "term": "first",
+          "ipa": "fɜː(r)st",
+          "def": "num.第一adj.第一的；首要的adv.第一，最初n.[sing.]第一，最初",
+          "zh": "第一"
+        },
+        {
+          "term": "another",
+          "ipa": "əˈnʌðə(r)",
+          "def": "adj./pron.另一，又一",
+          "zh": "另一"
+        },
+        {
+          "term": "do",
+          "ipa": "duː",
+          "def": "v.做，干aux v.构成疑问句和否定句",
+          "zh": "做"
+        },
+        {
+          "term": "watch",
+          "ipa": "wɒtʃ",
+          "def": "v.注视，观看，留意，小心n.[C]表，手表[U]观察",
+          "zh": "注视"
+        },
+        {
+          "term": "fold",
+          "ipa": "fəʊld",
+          "def": "v.折叠，对折",
+          "zh": "折叠"
+        },
+        {
+          "term": "arm",
+          "ipa": "ɑːrm",
+          "def": "n.[C]手臂，上肢v.装备，武装",
+          "zh": "手臂"
+        },
+        {
+          "term": "call",
+          "ipa": "kɔːl",
+          "def": "v.给……打电话，把……叫作，呼喊n.[C]电话，叫声圈国",
+          "zh": "给"
+        }
+      ]
+    },
+    {
+      "node_id": "n025",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"This cave is beautiful,\" said the gibbon.",
+      "text_zh": "\"这个洞穴真美,\"长臂猿说道。",
+      "illustration": "assets/adv_frames/ep2/f1.jpg",
+      "audio_start": 123.971,
+      "audio_end": 126.938,
+      "vocab": [
+        {
+          "term": "gibbon",
+          "zh": "长臂猿",
+          "mode": "test",
+          "options": [
+            "国王；大王",
+            "跃入",
+            "长臂猿",
+            "光"
+          ],
+          "answer": 2,
+          "phrase_en": "said the gibbon",
+          "phrase_zh": ",长臂猿说道",
+          "gloss": "猿"
+        },
+        {
+          "term": "cave",
+          "zh": "洞穴",
+          "mode": "review",
+          "options": [
+            "gibbon",
+            "monkey",
+            "leaped",
+            "cave"
+          ],
+          "answer": 3,
+          "phrase_en": "a large cave",
+          "phrase_zh": "一个大型洞穴",
+          "gloss": "洞穴"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "back",
+          "ipa": "bæk",
+          "def": "n.[C]后面，背部adj.后面的adv.回原处，向后地",
+          "zh": "后面"
+        },
+        {
+          "term": "water",
+          "ipa": "ˈwɔːtə",
+          "def": "n.[U]水[pl.]（某一江、河、湖、海的）水域vt.给……浇水",
+          "zh": "水"
+        },
+        {
+          "term": "head",
+          "ipa": "hed",
+          "def": "n.[C]头（部）[C,U]负责人[sing.]队首vi.朝（某方向）行进",
+          "zh": "头"
+        },
+        {
+          "term": "danger",
+          "ipa": "ˈdeɪndʒə(r)",
+          "def": "n.[U]危险[C]危害；威胁",
+          "zh": "危险"
+        },
+        {
+          "term": "wonderful",
+          "ipa": "ˈwʌndəf(ə)l",
+          "def": "adj.精彩的，绝妙的",
+          "zh": "精彩的"
+        },
+        {
+          "term": "fight",
+          "ipa": "faɪt",
+          "def": "v./n.[C]打架，战斗v.与……作斗争",
+          "zh": "打架"
+        },
+        {
+          "term": "argue",
+          "ipa": "ˈɑːrɡjuː",
+          "def": "v.争吵，争论，讨论；认为互相",
+          "zh": "争吵"
+        },
+        {
+          "term": "first",
+          "ipa": "fɜː(r)st",
+          "def": "num.第一adj.第一的；首要的adv.第一，最初n.[sing.]第一，最初",
+          "zh": "第一"
+        },
+        {
+          "term": "another",
+          "ipa": "əˈnʌðə(r)",
+          "def": "adj./pron.另一，又一",
+          "zh": "另一"
+        },
+        {
+          "term": "do",
+          "ipa": "duː",
+          "def": "v.做，干aux v.构成疑问句和否定句",
+          "zh": "做"
+        },
+        {
+          "term": "watch",
+          "ipa": "wɒtʃ",
+          "def": "v.注视，观看，留意，小心n.[C]表，手表[U]观察",
+          "zh": "注视"
+        },
+        {
+          "term": "fold",
+          "ipa": "fəʊld",
+          "def": "v.折叠，对折",
+          "zh": "折叠"
+        },
+        {
+          "term": "arm",
+          "ipa": "ɑːrm",
+          "def": "n.[C]手臂，上肢v.装备，武装",
+          "zh": "手臂"
+        },
+        {
+          "term": "call",
+          "ipa": "kɔːl",
+          "def": "v.给……打电话，把……叫作，呼喊n.[C]电话，叫声圈国",
+          "zh": "给"
+        }
+      ]
+    },
+    {
+      "node_id": "n026",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "Some of the monkeys and apes began fighting and arguing.",
+      "text_zh": "部分猴子和类人猿开始互相打斗和争吵。",
+      "illustration": "assets/adv_frames/ep2/f2.jpg",
+      "audio_start": 126.939,
+      "audio_end": 130.914,
+      "vocab": [
+        {
+          "term": "argue",
+          "zh": "争论,辩论",
+          "mode": "learn",
+          "phrase_en": "Some of the monkeys and apes began fighting and arguing.",
+          "phrase_zh": "争论,辩论",
+          "source": "official_words"
+        },
+        {
+          "term": "apes",
+          "zh": "猿",
+          "mode": "review",
+          "options": [
+            "dangerous",
+            "stream",
+            "river",
+            "apes"
+          ],
+          "answer": 3,
+          "phrase_en": "monkeys and apes began fighting",
+          "phrase_zh": "猴子与类人猿开始发生争斗",
+          "gloss": "猿"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "back",
+          "ipa": "bæk",
+          "def": "n.[C]后面，背部adj.后面的adv.回原处，向后地",
+          "zh": "后面"
+        },
+        {
+          "term": "water",
+          "ipa": "ˈwɔːtə",
+          "def": "n.[U]水[pl.]（某一江、河、湖、海的）水域vt.给……浇水",
+          "zh": "水"
+        },
+        {
+          "term": "head",
+          "ipa": "hed",
+          "def": "n.[C]头（部）[C,U]负责人[sing.]队首vi.朝（某方向）行进",
+          "zh": "头"
+        },
+        {
+          "term": "danger",
+          "ipa": "ˈdeɪndʒə(r)",
+          "def": "n.[U]危险[C]危害；威胁",
+          "zh": "危险"
+        },
+        {
+          "term": "wonderful",
+          "ipa": "ˈwʌndəf(ə)l",
+          "def": "adj.精彩的，绝妙的",
+          "zh": "精彩的"
+        },
+        {
+          "term": "fight",
+          "ipa": "faɪt",
+          "def": "v./n.[C]打架，战斗v.与……作斗争",
+          "zh": "打架"
+        },
+        {
+          "term": "argue",
+          "ipa": "ˈɑːrɡjuː",
+          "def": "v.争吵，争论，讨论；认为互相",
+          "zh": "争吵"
+        },
+        {
+          "term": "first",
+          "ipa": "fɜː(r)st",
+          "def": "num.第一adj.第一的；首要的adv.第一，最初n.[sing.]第一，最初",
+          "zh": "第一"
+        },
+        {
+          "term": "another",
+          "ipa": "əˈnʌðə(r)",
+          "def": "adj./pron.另一，又一",
+          "zh": "另一"
+        },
+        {
+          "term": "do",
+          "ipa": "duː",
+          "def": "v.做，干aux v.构成疑问句和否定句",
+          "zh": "做"
+        },
+        {
+          "term": "watch",
+          "ipa": "wɒtʃ",
+          "def": "v.注视，观看，留意，小心n.[C]表，手表[U]观察",
+          "zh": "注视"
+        },
+        {
+          "term": "fold",
+          "ipa": "fəʊld",
+          "def": "v.折叠，对折",
+          "zh": "折叠"
+        },
+        {
+          "term": "arm",
+          "ipa": "ɑːrm",
+          "def": "n.[C]手臂，上肢v.装备，武装",
+          "zh": "手臂"
+        },
+        {
+          "term": "call",
+          "ipa": "kɔːl",
+          "def": "v.给……打电话，把……叫作，呼喊n.[C]电话，叫声圈国",
+          "zh": "给"
+        }
+      ]
+    },
+    {
+      "node_id": "n027",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "They grabbed plates and bowls from one another.",
+      "text_zh": "他们互相取走了盘子和碗。",
+      "illustration": "assets/adv_frames/ep2/f3.jpg",
+      "audio_start": 130.915,
+      "audio_end": 134.326,
+      "vocab": [],
+      "page_words": [
+        {
+          "term": "back",
+          "ipa": "bæk",
+          "def": "n.[C]后面，背部adj.后面的adv.回原处，向后地",
+          "zh": "后面"
+        },
+        {
+          "term": "water",
+          "ipa": "ˈwɔːtə",
+          "def": "n.[U]水[pl.]（某一江、河、湖、海的）水域vt.给……浇水",
+          "zh": "水"
+        },
+        {
+          "term": "head",
+          "ipa": "hed",
+          "def": "n.[C]头（部）[C,U]负责人[sing.]队首vi.朝（某方向）行进",
+          "zh": "头"
+        },
+        {
+          "term": "danger",
+          "ipa": "ˈdeɪndʒə(r)",
+          "def": "n.[U]危险[C]危害；威胁",
+          "zh": "危险"
+        },
+        {
+          "term": "wonderful",
+          "ipa": "ˈwʌndəf(ə)l",
+          "def": "adj.精彩的，绝妙的",
+          "zh": "精彩的"
+        },
+        {
+          "term": "fight",
+          "ipa": "faɪt",
+          "def": "v./n.[C]打架，战斗v.与……作斗争",
+          "zh": "打架"
+        },
+        {
+          "term": "argue",
+          "ipa": "ˈɑːrɡjuː",
+          "def": "v.争吵，争论，讨论；认为互相",
+          "zh": "争吵"
+        },
+        {
+          "term": "first",
+          "ipa": "fɜː(r)st",
+          "def": "num.第一adj.第一的；首要的adv.第一，最初n.[sing.]第一，最初",
+          "zh": "第一"
+        },
+        {
+          "term": "another",
+          "ipa": "əˈnʌðə(r)",
+          "def": "adj./pron.另一，又一",
+          "zh": "另一"
+        },
+        {
+          "term": "do",
+          "ipa": "duː",
+          "def": "v.做，干aux v.构成疑问句和否定句",
+          "zh": "做"
+        },
+        {
+          "term": "watch",
+          "ipa": "wɒtʃ",
+          "def": "v.注视，观看，留意，小心n.[C]表，手表[U]观察",
+          "zh": "注视"
+        },
+        {
+          "term": "fold",
+          "ipa": "fəʊld",
+          "def": "v.折叠，对折",
+          "zh": "折叠"
+        },
+        {
+          "term": "arm",
+          "ipa": "ɑːrm",
+          "def": "n.[C]手臂，上肢v.装备，武装",
+          "zh": "手臂"
+        },
+        {
+          "term": "call",
+          "ipa": "kɔːl",
+          "def": "v.给……打电话，把……叫作，呼喊n.[C]电话，叫声圈国",
+          "zh": "给"
+        }
+      ]
+    },
+    {
+      "node_id": "n028",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "Others fought over the bedrooms.",
+      "text_zh": "其他人则为卧室争执不休。",
+      "illustration": "assets/adv_frames/ep2/f0.jpg",
+      "audio_start": 134.327,
+      "audio_end": 137.495,
+      "vocab": [],
+      "page_words": [
+        {
+          "term": "back",
+          "ipa": "bæk",
+          "def": "n.[C]后面，背部adj.后面的adv.回原处，向后地",
+          "zh": "后面"
+        },
+        {
+          "term": "water",
+          "ipa": "ˈwɔːtə",
+          "def": "n.[U]水[pl.]（某一江、河、湖、海的）水域vt.给……浇水",
+          "zh": "水"
+        },
+        {
+          "term": "head",
+          "ipa": "hed",
+          "def": "n.[C]头（部）[C,U]负责人[sing.]队首vi.朝（某方向）行进",
+          "zh": "头"
+        },
+        {
+          "term": "danger",
+          "ipa": "ˈdeɪndʒə(r)",
+          "def": "n.[U]危险[C]危害；威胁",
+          "zh": "危险"
+        },
+        {
+          "term": "wonderful",
+          "ipa": "ˈwʌndəf(ə)l",
+          "def": "adj.精彩的，绝妙的",
+          "zh": "精彩的"
+        },
+        {
+          "term": "fight",
+          "ipa": "faɪt",
+          "def": "v./n.[C]打架，战斗v.与……作斗争",
+          "zh": "打架"
+        },
+        {
+          "term": "argue",
+          "ipa": "ˈɑːrɡjuː",
+          "def": "v.争吵，争论，讨论；认为互相",
+          "zh": "争吵"
+        },
+        {
+          "term": "first",
+          "ipa": "fɜː(r)st",
+          "def": "num.第一adj.第一的；首要的adv.第一，最初n.[sing.]第一，最初",
+          "zh": "第一"
+        },
+        {
+          "term": "another",
+          "ipa": "əˈnʌðə(r)",
+          "def": "adj./pron.另一，又一",
+          "zh": "另一"
+        },
+        {
+          "term": "do",
+          "ipa": "duː",
+          "def": "v.做，干aux v.构成疑问句和否定句",
+          "zh": "做"
+        },
+        {
+          "term": "watch",
+          "ipa": "wɒtʃ",
+          "def": "v.注视，观看，留意，小心n.[C]表，手表[U]观察",
+          "zh": "注视"
+        },
+        {
+          "term": "fold",
+          "ipa": "fəʊld",
+          "def": "v.折叠，对折",
+          "zh": "折叠"
+        },
+        {
+          "term": "arm",
+          "ipa": "ɑːrm",
+          "def": "n.[C]手臂，上肢v.装备，武装",
+          "zh": "手臂"
+        },
+        {
+          "term": "call",
+          "ipa": "kɔːl",
+          "def": "v.给……打电话，把……叫作，呼喊n.[C]电话，叫声圈国",
+          "zh": "给"
+        }
+      ]
+    },
+    {
+      "node_id": "n029",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"I saw this bed first!\" yelled one monkey.",
+      "text_zh": "\"我先看到这张床!\"一只猴子喊道。 \"",
+      "illustration": "assets/adv_frames/ep2/f1.jpg",
+      "audio_start": 137.496,
+      "audio_end": 141.146,
+      "vocab": [
+        {
+          "term": "monkey",
+          "zh": "猴子",
+          "mode": "review",
+          "options": [
+            "river",
+            "monkey",
+            "waterfall",
+            "king"
+          ],
+          "answer": 1,
+          "phrase_en": "I saw this bed first!\" yelled one monkey",
+          "phrase_zh": "我是第一个看到这张床的!\"一只猴子喊道。",
+          "ipa": "ˈmʌŋki",
+          "pos": "n.",
+          "def": "n.[C]猴子",
+          "gloss": "猴子"
+        }
+      ]
+    },
+    {
+      "node_id": "n030",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"No!\" yelled another monkey. \"I did!\"",
+      "text_zh": "\"不!\"另一只猴子大喊道,\"是我!\"",
+      "illustration": "assets/adv_frames/ep2/f2.jpg",
+      "audio_start": 141.147,
+      "audio_end": 145.132,
+      "vocab": [
+        {
+          "term": "monkey",
+          "zh": "猴子",
+          "mode": "review",
+          "options": [
+            "monkey",
+            "eyes",
+            "waterfall",
+            "stream"
+          ],
+          "answer": 0,
+          "phrase_en": "No!\" yelled another monkey",
+          "phrase_zh": "\"不!\"另一只猴子大喊道",
+          "ipa": "ˈmʌŋki",
+          "pos": "n.",
+          "def": "n.[C]猴子",
+          "gloss": "猴子"
+        }
+      ]
+    },
+    {
+      "node_id": "n031",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "Monkey watched his friends for a moment and then folded his arms.",
+      "text_zh": "猴子观察了片刻自己的朋友们,随后双臂交叉抱在胸前。",
+      "illustration": "assets/adv_frames/ep2/f3.jpg",
+      "audio_start": 145.133,
+      "audio_end": 149.943,
+      "vocab": [
+        {
+          "term": "fold",
+          "zh": "1. 弯曲着,弓着(脚,身体等),(2. 折叠(纸,布等))",
+          "mode": "learn",
+          "phrase_en": "Monkey watched his friends for a moment and then folded his arms.",
+          "phrase_zh": "1. 弯曲着,弓着",
+          "source": "official_words"
+        },
+        {
+          "term": "monkey",
+          "zh": "猴子",
+          "mode": "review",
+          "options": [
+            "eyes",
+            "monkey",
+            "waterfall",
+            "light"
+          ],
+          "answer": 1,
+          "phrase_en": "monkey watched his",
+          "phrase_zh": "猴子注视着他",
+          "ipa": "ˈmʌŋki",
+          "pos": "n.",
+          "def": "n.[C]猴子",
+          "gloss": "猴子"
+        }
+      ],
+      "quiz_after": {
+        "q": "Why was Monkey sad?",
+        "choices": [
+          "He wanted to live forever.",
+          "He didn't get enough food.",
+          "He wanted more friends."
+        ],
+        "answer": 2,
+        "q_zh": "猴子为什么难过？",
+        "choices_zh": [
+          "他想永远活下去。",
+          "他没有吃够食物。",
+          "他想要更多的朋友。"
+        ]
+      }
+    },
+    {
+      "node_id": "n032",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"Ahem!\" he called.",
+      "text_zh": "\"咳咳!\"他喊道。",
+      "illustration": "assets/adv_frames/ep2/f0.jpg",
+      "audio_start": 149.944,
+      "audio_end": 152.352,
+      "vocab": []
+    },
+    {
+      "node_id": "n033",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "All the monkeys and apes stopped what they were doing.",
+      "text_zh": "所有猴子和类人猿都停止了手中的活动。",
+      "illustration": "assets/adv_frames/ep2/f1.jpg",
+      "audio_start": 152.353,
+      "audio_end": 155.536,
+      "vocab": [
+        {
+          "term": "apes",
+          "zh": "猿",
+          "mode": "review",
+          "options": [
+            "monkey",
+            "waterfall",
+            "apes",
+            "leaped"
+          ],
+          "answer": 2,
+          "phrase_en": "monkeys and apes stopped what",
+          "phrase_zh": "猴子与类人猿停止了什么?",
+          "gloss": "猿"
+        }
+      ],
+      "quiz_after": {
+        "q": "What did the monkeys do in the cave?",
+        "choices": [
+          "They argued and fought.",
+          "They played games.",
+          "They broke everything."
+        ],
+        "answer": 0,
+        "q_zh": "猴子在洞里做了什么？",
+        "choices_zh": [
+          "他们争吵并打架。",
+          "他们玩游戏。",
+          "他们把一切都弄坏了。"
+        ]
+      },
+      "page_words": [
+        {
+          "term": "monkey",
+          "ipa": "ˈmʌŋki",
+          "def": "n.[C]猴子",
+          "zh": "猴子"
+        },
+        {
+          "term": "stop",
+          "ipa": "stɒp",
+          "def": "n.[C]车站，停止v.停止，阻止，逗留",
+          "zh": "车站"
+        },
+        {
+          "term": "look",
+          "ipa": "lʊk",
+          "def": "vi.看v.-link.看上去n.[C]看，注视，外表，表情",
+          "zh": "看"
+        },
+        {
+          "term": "right",
+          "ipa": "raɪt",
+          "def": "adj.正确的，适当的，右边的adv.向右边，立即n.[sing.]右边[C，U]权利",
+          "zh": "正确的"
+        },
+        {
+          "term": "play",
+          "ipa": "pleɪ",
+          "def": "v.参加（比赛或运动），玩耍，吹奏（乐器），演奏，播放，发挥（作用）；开（玩笑）n.[C]戏剧",
+          "zh": "参加"
+        },
+        {
+          "term": "forest",
+          "ipa": "ˈfɒrɪst",
+          "def": "n.[C,U]森林",
+          "zh": "森林"
+        },
+        {
+          "term": "safe",
+          "ipa": "seɪf",
+          "def": "adj.安全的，无危险的；谨慎的n.[C]保险箱",
+          "zh": "安全的"
+        },
+        {
+          "term": "night",
+          "ipa": "naɪt",
+          "def": "n.[C,U]晚上，夜晚",
+          "zh": "晚上"
+        },
+        {
+          "term": "huge",
+          "ipa": "hjuːdʒ",
+          "def": "adj.巨大的，极多的",
+          "zh": "巨大的"
+        },
+        {
+          "term": "cover",
+          "ipa": "ˈkʌvə(r)",
+          "def": "vt.遮盖，覆盖；占（一片面积）n.[C]覆盖物，盖子，封面",
+          "zh": "遮盖"
+        },
+        {
+          "term": "dance",
+          "ipa": "dɑːns",
+          "def": "v.跳舞n.[C,U]舞蹈",
+          "zh": "跳舞"
+        },
+        {
+          "term": "sing",
+          "ipa": "sɪŋ",
+          "def": "",
+          "zh": "sing"
+        }
+      ]
+    },
+    {
+      "node_id": "n034",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "They looked at Monkey.",
+      "text_zh": "他们看着猴子。",
+      "illustration": "assets/adv_frames/ep2/f2.jpg",
+      "audio_start": 155.537,
+      "audio_end": 157.711,
+      "vocab": [
+        {
+          "term": "monkey",
+          "zh": "猴子",
+          "mode": "review",
+          "options": [
+            "king",
+            "waterfall",
+            "apes",
+            "monkey"
+          ],
+          "answer": 3,
+          "phrase_en": "They looked at Monkey",
+          "phrase_zh": "他们看着猴子",
+          "ipa": "ˈmʌŋki",
+          "pos": "n.",
+          "def": "n.[C]猴子",
+          "gloss": "猴子"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "monkey",
+          "ipa": "ˈmʌŋki",
+          "def": "n.[C]猴子",
+          "zh": "猴子"
+        },
+        {
+          "term": "stop",
+          "ipa": "stɒp",
+          "def": "n.[C]车站，停止v.停止，阻止，逗留",
+          "zh": "车站"
+        },
+        {
+          "term": "look",
+          "ipa": "lʊk",
+          "def": "vi.看v.-link.看上去n.[C]看，注视，外表，表情",
+          "zh": "看"
+        },
+        {
+          "term": "right",
+          "ipa": "raɪt",
+          "def": "adj.正确的，适当的，右边的adv.向右边，立即n.[sing.]右边[C，U]权利",
+          "zh": "正确的"
+        },
+        {
+          "term": "play",
+          "ipa": "pleɪ",
+          "def": "v.参加（比赛或运动），玩耍，吹奏（乐器），演奏，播放，发挥（作用）；开（玩笑）n.[C]戏剧",
+          "zh": "参加"
+        },
+        {
+          "term": "forest",
+          "ipa": "ˈfɒrɪst",
+          "def": "n.[C,U]森林",
+          "zh": "森林"
+        },
+        {
+          "term": "safe",
+          "ipa": "seɪf",
+          "def": "adj.安全的，无危险的；谨慎的n.[C]保险箱",
+          "zh": "安全的"
+        },
+        {
+          "term": "night",
+          "ipa": "naɪt",
+          "def": "n.[C,U]晚上，夜晚",
+          "zh": "晚上"
+        },
+        {
+          "term": "huge",
+          "ipa": "hjuːdʒ",
+          "def": "adj.巨大的，极多的",
+          "zh": "巨大的"
+        },
+        {
+          "term": "cover",
+          "ipa": "ˈkʌvə(r)",
+          "def": "vt.遮盖，覆盖；占（一片面积）n.[C]覆盖物，盖子，封面",
+          "zh": "遮盖"
+        },
+        {
+          "term": "dance",
+          "ipa": "dɑːns",
+          "def": "v.跳舞n.[C,U]舞蹈",
+          "zh": "跳舞"
+        },
+        {
+          "term": "sing",
+          "ipa": "sɪŋ",
+          "def": "",
+          "zh": "sing"
+        }
+      ]
+    },
+    {
+      "node_id": "n035",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"I found this cave for us,\" said Monkey.",
+      "text_zh": "\"我为咱们找到了这个洞穴,\"猴子说道。",
+      "illustration": "assets/adv_frames/ep2/f3.jpg",
+      "audio_start": 157.712,
+      "audio_end": 161.175,
+      "vocab": [
+        {
+          "term": "monkey",
+          "zh": "猴子",
+          "mode": "review",
+          "options": [
+            "leaped",
+            "king",
+            "waterfall",
+            "monkey"
+          ],
+          "answer": 3,
+          "phrase_en": "said Monkey",
+          "phrase_zh": "猴子说道",
+          "ipa": "ˈmʌŋki",
+          "pos": "n.",
+          "def": "n.[C]猴子",
+          "gloss": "猴子"
+        },
+        {
+          "term": "cave",
+          "zh": "洞穴",
+          "mode": "review",
+          "options": [
+            "dangerous",
+            "leaped",
+            "light",
+            "cave"
+          ],
+          "answer": 3,
+          "phrase_en": "a large cave",
+          "phrase_zh": "一个大型洞穴",
+          "gloss": "洞穴"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "monkey",
+          "ipa": "ˈmʌŋki",
+          "def": "n.[C]猴子",
+          "zh": "猴子"
+        },
+        {
+          "term": "stop",
+          "ipa": "stɒp",
+          "def": "n.[C]车站，停止v.停止，阻止，逗留",
+          "zh": "车站"
+        },
+        {
+          "term": "look",
+          "ipa": "lʊk",
+          "def": "vi.看v.-link.看上去n.[C]看，注视，外表，表情",
+          "zh": "看"
+        },
+        {
+          "term": "right",
+          "ipa": "raɪt",
+          "def": "adj.正确的，适当的，右边的adv.向右边，立即n.[sing.]右边[C，U]权利",
+          "zh": "正确的"
+        },
+        {
+          "term": "play",
+          "ipa": "pleɪ",
+          "def": "v.参加（比赛或运动），玩耍，吹奏（乐器），演奏，播放，发挥（作用）；开（玩笑）n.[C]戏剧",
+          "zh": "参加"
+        },
+        {
+          "term": "forest",
+          "ipa": "ˈfɒrɪst",
+          "def": "n.[C,U]森林",
+          "zh": "森林"
+        },
+        {
+          "term": "safe",
+          "ipa": "seɪf",
+          "def": "adj.安全的，无危险的；谨慎的n.[C]保险箱",
+          "zh": "安全的"
+        },
+        {
+          "term": "night",
+          "ipa": "naɪt",
+          "def": "n.[C,U]晚上，夜晚",
+          "zh": "晚上"
+        },
+        {
+          "term": "huge",
+          "ipa": "hjuːdʒ",
+          "def": "adj.巨大的，极多的",
+          "zh": "巨大的"
+        },
+        {
+          "term": "cover",
+          "ipa": "ˈkʌvə(r)",
+          "def": "vt.遮盖，覆盖；占（一片面积）n.[C]覆盖物，盖子，封面",
+          "zh": "遮盖"
+        },
+        {
+          "term": "dance",
+          "ipa": "dɑːns",
+          "def": "v.跳舞n.[C,U]舞蹈",
+          "zh": "跳舞"
+        },
+        {
+          "term": "sing",
+          "ipa": "sɪŋ",
+          "def": "",
+          "zh": "sing"
+        }
+      ]
+    },
+    {
+      "node_id": "n036",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"That means I am now your king. Why aren't you bowing to me?\"",
+      "text_zh": "\"这意味着我现在就是你的国王了。你为何不向我行屈膝礼呢?\"",
+      "illustration": "assets/adv_frames/ep2/f0.jpg",
+      "audio_start": 161.176,
+      "audio_end": 165.425,
+      "vocab": [
+        {
+          "term": "king",
+          "zh": "国王；大王",
+          "mode": "learn",
+          "phrase_en": "That means I am now your king",
+          "phrase_zh": "这意味着我现在就是你的国王了"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "monkey",
+          "ipa": "ˈmʌŋki",
+          "def": "n.[C]猴子",
+          "zh": "猴子"
+        },
+        {
+          "term": "stop",
+          "ipa": "stɒp",
+          "def": "n.[C]车站，停止v.停止，阻止，逗留",
+          "zh": "车站"
+        },
+        {
+          "term": "look",
+          "ipa": "lʊk",
+          "def": "vi.看v.-link.看上去n.[C]看，注视，外表，表情",
+          "zh": "看"
+        },
+        {
+          "term": "right",
+          "ipa": "raɪt",
+          "def": "adj.正确的，适当的，右边的adv.向右边，立即n.[sing.]右边[C，U]权利",
+          "zh": "正确的"
+        },
+        {
+          "term": "play",
+          "ipa": "pleɪ",
+          "def": "v.参加（比赛或运动），玩耍，吹奏（乐器），演奏，播放，发挥（作用）；开（玩笑）n.[C]戏剧",
+          "zh": "参加"
+        },
+        {
+          "term": "forest",
+          "ipa": "ˈfɒrɪst",
+          "def": "n.[C,U]森林",
+          "zh": "森林"
+        },
+        {
+          "term": "safe",
+          "ipa": "seɪf",
+          "def": "adj.安全的，无危险的；谨慎的n.[C]保险箱",
+          "zh": "安全的"
+        },
+        {
+          "term": "night",
+          "ipa": "naɪt",
+          "def": "n.[C,U]晚上，夜晚",
+          "zh": "晚上"
+        },
+        {
+          "term": "huge",
+          "ipa": "hjuːdʒ",
+          "def": "adj.巨大的，极多的",
+          "zh": "巨大的"
+        },
+        {
+          "term": "cover",
+          "ipa": "ˈkʌvə(r)",
+          "def": "vt.遮盖，覆盖；占（一片面积）n.[C]覆盖物，盖子，封面",
+          "zh": "遮盖"
+        },
+        {
+          "term": "dance",
+          "ipa": "dɑːns",
+          "def": "v.跳舞n.[C,U]舞蹈",
+          "zh": "跳舞"
+        },
+        {
+          "term": "sing",
+          "ipa": "sɪŋ",
+          "def": "",
+          "zh": "sing"
+        }
+      ]
+    },
+    {
+      "node_id": "n037",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"He's right,\" said the gibbon.",
+      "text_zh": "\"他说得对,\"长臂猿说道。",
+      "illustration": "assets/adv_frames/ep2/f1.jpg",
+      "audio_start": 165.426,
+      "audio_end": 167.863,
+      "vocab": [
+        {
+          "term": "gibbon",
+          "zh": "长臂猿",
+          "mode": "review",
+          "options": [
+            "river",
+            "gibbon",
+            "cave",
+            "stream"
+          ],
+          "answer": 1,
+          "phrase_en": "said the gibbon",
+          "phrase_zh": ",长臂猿说道",
+          "gloss": "猿"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "monkey",
+          "ipa": "ˈmʌŋki",
+          "def": "n.[C]猴子",
+          "zh": "猴子"
+        },
+        {
+          "term": "stop",
+          "ipa": "stɒp",
+          "def": "n.[C]车站，停止v.停止，阻止，逗留",
+          "zh": "车站"
+        },
+        {
+          "term": "look",
+          "ipa": "lʊk",
+          "def": "vi.看v.-link.看上去n.[C]看，注视，外表，表情",
+          "zh": "看"
+        },
+        {
+          "term": "right",
+          "ipa": "raɪt",
+          "def": "adj.正确的，适当的，右边的adv.向右边，立即n.[sing.]右边[C，U]权利",
+          "zh": "正确的"
+        },
+        {
+          "term": "play",
+          "ipa": "pleɪ",
+          "def": "v.参加（比赛或运动），玩耍，吹奏（乐器），演奏，播放，发挥（作用）；开（玩笑）n.[C]戏剧",
+          "zh": "参加"
+        },
+        {
+          "term": "forest",
+          "ipa": "ˈfɒrɪst",
+          "def": "n.[C,U]森林",
+          "zh": "森林"
+        },
+        {
+          "term": "safe",
+          "ipa": "seɪf",
+          "def": "adj.安全的，无危险的；谨慎的n.[C]保险箱",
+          "zh": "安全的"
+        },
+        {
+          "term": "night",
+          "ipa": "naɪt",
+          "def": "n.[C,U]晚上，夜晚",
+          "zh": "晚上"
+        },
+        {
+          "term": "huge",
+          "ipa": "hjuːdʒ",
+          "def": "adj.巨大的，极多的",
+          "zh": "巨大的"
+        },
+        {
+          "term": "cover",
+          "ipa": "ˈkʌvə(r)",
+          "def": "vt.遮盖，覆盖；占（一片面积）n.[C]覆盖物，盖子，封面",
+          "zh": "遮盖"
+        },
+        {
+          "term": "dance",
+          "ipa": "dɑːns",
+          "def": "v.跳舞n.[C,U]舞蹈",
+          "zh": "跳舞"
+        },
+        {
+          "term": "sing",
+          "ipa": "sɪŋ",
+          "def": "",
+          "zh": "sing"
+        }
+      ]
+    },
+    {
+      "node_id": "n038",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "He bowed to Monkey and said, \"All hail the Monkey King.\"",
+      "text_zh": "他向孙悟空行礼,说道:\"万岁,猴王!\"",
+      "illustration": "assets/adv_frames/ep2/f2.jpg",
+      "audio_start": 167.864,
+      "audio_end": 172.638,
+      "vocab": [
+        {
+          "term": "all hail",
+          "zh": "万岁!",
+          "mode": "learn",
+          "phrase_en": "He bowed to Monkey and said, \" All hail the Monkey King.\"",
+          "phrase_zh": "万岁!",
+          "source": "official_words"
+        },
+        {
+          "term": "hail",
+          "zh": "1. 欢呼,喝采,(2. 大声招呼(车辆、人等),3. 雹,冰雹)",
+          "mode": "learn",
+          "phrase_en": "He bowed to Monkey and said, \"All hail the Monkey King.\"",
+          "phrase_zh": "1. 欢呼,喝采,",
+          "source": "official_words"
+        },
+        {
+          "term": "monkey",
+          "zh": "猴子",
+          "mode": "review",
+          "options": [
+            "dangerous",
+            "leaped",
+            "monkey",
+            "eyes"
+          ],
+          "answer": 2,
+          "phrase_en": "He bowed to Monkey and said",
+          "phrase_zh": "他向猴王行礼,说道:",
+          "ipa": "ˈmʌŋki",
+          "pos": "n.",
+          "def": "n.[C]猴子",
+          "gloss": "猴子"
+        },
+        {
+          "term": "king",
+          "zh": "国王；大王",
+          "mode": "test",
+          "options": [
+            "猴子",
+            "洞穴",
+            "危险的",
+            "国王；大王"
+          ],
+          "answer": 3,
+          "phrase_en": "All hail the Monkey King",
+          "phrase_zh": "万岁,猴王!"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "monkey",
+          "ipa": "ˈmʌŋki",
+          "def": "n.[C]猴子",
+          "zh": "猴子"
+        },
+        {
+          "term": "stop",
+          "ipa": "stɒp",
+          "def": "n.[C]车站，停止v.停止，阻止，逗留",
+          "zh": "车站"
+        },
+        {
+          "term": "look",
+          "ipa": "lʊk",
+          "def": "vi.看v.-link.看上去n.[C]看，注视，外表，表情",
+          "zh": "看"
+        },
+        {
+          "term": "right",
+          "ipa": "raɪt",
+          "def": "adj.正确的，适当的，右边的adv.向右边，立即n.[sing.]右边[C，U]权利",
+          "zh": "正确的"
+        },
+        {
+          "term": "play",
+          "ipa": "pleɪ",
+          "def": "v.参加（比赛或运动），玩耍，吹奏（乐器），演奏，播放，发挥（作用）；开（玩笑）n.[C]戏剧",
+          "zh": "参加"
+        },
+        {
+          "term": "forest",
+          "ipa": "ˈfɒrɪst",
+          "def": "n.[C,U]森林",
+          "zh": "森林"
+        },
+        {
+          "term": "safe",
+          "ipa": "seɪf",
+          "def": "adj.安全的，无危险的；谨慎的n.[C]保险箱",
+          "zh": "安全的"
+        },
+        {
+          "term": "night",
+          "ipa": "naɪt",
+          "def": "n.[C,U]晚上，夜晚",
+          "zh": "晚上"
+        },
+        {
+          "term": "huge",
+          "ipa": "hjuːdʒ",
+          "def": "adj.巨大的，极多的",
+          "zh": "巨大的"
+        },
+        {
+          "term": "cover",
+          "ipa": "ˈkʌvə(r)",
+          "def": "vt.遮盖，覆盖；占（一片面积）n.[C]覆盖物，盖子，封面",
+          "zh": "遮盖"
+        },
+        {
+          "term": "dance",
+          "ipa": "dɑːns",
+          "def": "v.跳舞n.[C,U]舞蹈",
+          "zh": "跳舞"
+        },
+        {
+          "term": "sing",
+          "ipa": "sɪŋ",
+          "def": "",
+          "zh": "sing"
+        }
+      ]
+    },
+    {
+      "node_id": "n039",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "Everyone else bowed too.",
+      "text_zh": "其他所有人都也鞠躬了。",
+      "illustration": "assets/adv_frames/ep2/f3.jpg",
+      "audio_start": 172.639,
+      "audio_end": 175.062,
+      "vocab": [],
+      "page_words": [
+        {
+          "term": "monkey",
+          "ipa": "ˈmʌŋki",
+          "def": "n.[C]猴子",
+          "zh": "猴子"
+        },
+        {
+          "term": "stop",
+          "ipa": "stɒp",
+          "def": "n.[C]车站，停止v.停止，阻止，逗留",
+          "zh": "车站"
+        },
+        {
+          "term": "look",
+          "ipa": "lʊk",
+          "def": "vi.看v.-link.看上去n.[C]看，注视，外表，表情",
+          "zh": "看"
+        },
+        {
+          "term": "right",
+          "ipa": "raɪt",
+          "def": "adj.正确的，适当的，右边的adv.向右边，立即n.[sing.]右边[C，U]权利",
+          "zh": "正确的"
+        },
+        {
+          "term": "play",
+          "ipa": "pleɪ",
+          "def": "v.参加（比赛或运动），玩耍，吹奏（乐器），演奏，播放，发挥（作用）；开（玩笑）n.[C]戏剧",
+          "zh": "参加"
+        },
+        {
+          "term": "forest",
+          "ipa": "ˈfɒrɪst",
+          "def": "n.[C,U]森林",
+          "zh": "森林"
+        },
+        {
+          "term": "safe",
+          "ipa": "seɪf",
+          "def": "adj.安全的，无危险的；谨慎的n.[C]保险箱",
+          "zh": "安全的"
+        },
+        {
+          "term": "night",
+          "ipa": "naɪt",
+          "def": "n.[C,U]晚上，夜晚",
+          "zh": "晚上"
+        },
+        {
+          "term": "huge",
+          "ipa": "hjuːdʒ",
+          "def": "adj.巨大的，极多的",
+          "zh": "巨大的"
+        },
+        {
+          "term": "cover",
+          "ipa": "ˈkʌvə(r)",
+          "def": "vt.遮盖，覆盖；占（一片面积）n.[C]覆盖物，盖子，封面",
+          "zh": "遮盖"
+        },
+        {
+          "term": "dance",
+          "ipa": "dɑːns",
+          "def": "v.跳舞n.[C,U]舞蹈",
+          "zh": "跳舞"
+        },
+        {
+          "term": "sing",
+          "ipa": "sɪŋ",
+          "def": "",
+          "zh": "sing"
+        }
+      ]
+    },
+    {
+      "node_id": "n040",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"All hail the Monkey King!\" they shouted.",
+      "text_zh": "\"万岁,猴王!\"他们齐声高喊。",
+      "illustration": "assets/adv_frames/ep2/f0.jpg",
+      "audio_start": 175.063,
+      "audio_end": 183.445,
+      "vocab": [
+        {
+          "term": "monkey",
+          "zh": "猴子",
+          "mode": "review",
+          "options": [
+            "monkey",
+            "king",
+            "light",
+            "waterfall"
+          ],
+          "answer": 0,
+          "phrase_en": "All hail the Monkey King",
+          "phrase_zh": "万岁,猴王!",
+          "ipa": "ˈmʌŋki",
+          "pos": "n.",
+          "def": "n.[C]猴子",
+          "gloss": "猴子"
+        },
+        {
+          "term": "king",
+          "zh": "国王；大王",
+          "mode": "review",
+          "options": [
+            "king",
+            "monkey",
+            "leaped",
+            "waterfall"
+          ],
+          "answer": 0,
+          "phrase_en": "All hail the Monkey King",
+          "phrase_zh": "万岁,猴王!"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "monkey",
+          "ipa": "ˈmʌŋki",
+          "def": "n.[C]猴子",
+          "zh": "猴子"
+        },
+        {
+          "term": "stop",
+          "ipa": "stɒp",
+          "def": "n.[C]车站，停止v.停止，阻止，逗留",
+          "zh": "车站"
+        },
+        {
+          "term": "look",
+          "ipa": "lʊk",
+          "def": "vi.看v.-link.看上去n.[C]看，注视，外表，表情",
+          "zh": "看"
+        },
+        {
+          "term": "right",
+          "ipa": "raɪt",
+          "def": "adj.正确的，适当的，右边的adv.向右边，立即n.[sing.]右边[C，U]权利",
+          "zh": "正确的"
+        },
+        {
+          "term": "play",
+          "ipa": "pleɪ",
+          "def": "v.参加（比赛或运动），玩耍，吹奏（乐器），演奏，播放，发挥（作用）；开（玩笑）n.[C]戏剧",
+          "zh": "参加"
+        },
+        {
+          "term": "forest",
+          "ipa": "ˈfɒrɪst",
+          "def": "n.[C,U]森林",
+          "zh": "森林"
+        },
+        {
+          "term": "safe",
+          "ipa": "seɪf",
+          "def": "adj.安全的，无危险的；谨慎的n.[C]保险箱",
+          "zh": "安全的"
+        },
+        {
+          "term": "night",
+          "ipa": "naɪt",
+          "def": "n.[C,U]晚上，夜晚",
+          "zh": "晚上"
+        },
+        {
+          "term": "huge",
+          "ipa": "hjuːdʒ",
+          "def": "adj.巨大的，极多的",
+          "zh": "巨大的"
+        },
+        {
+          "term": "cover",
+          "ipa": "ˈkʌvə(r)",
+          "def": "vt.遮盖，覆盖；占（一片面积）n.[C]覆盖物，盖子，封面",
+          "zh": "遮盖"
+        },
+        {
+          "term": "dance",
+          "ipa": "dɑːns",
+          "def": "v.跳舞n.[C,U]舞蹈",
+          "zh": "跳舞"
+        },
+        {
+          "term": "sing",
+          "ipa": "sɪŋ",
+          "def": "",
+          "zh": "sing"
+        }
+      ]
+    },
+    {
+      "node_id": "n041",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "Many years went by.",
+      "text_zh": "多年过去了。",
+      "illustration": "assets/adv_frames/ep2/f1.jpg",
+      "audio_start": 183.446,
+      "audio_end": 185.93,
+      "vocab": [],
+      "page_words": [
+        {
+          "term": "smile",
+          "ipa": "smaɪ",
+          "def": "vi./n.[C]笑，微笑",
+          "zh": "笑"
+        },
+        {
+          "term": "rush",
+          "ipa": "rʌʃ",
+          "def": "v./n.[sing.]迅速移动，仓促，急促",
+          "zh": "迅速移动"
+        },
+        {
+          "term": "sad",
+          "ipa": "sæd",
+          "def": "adj.悲哀的，难过的",
+          "zh": "悲哀的"
+        },
+        {
+          "term": "wrong",
+          "ipa": "rɒŋ",
+          "def": "dj.有毛病的，错误的adv.错误地vt.误会，不公平对待n.[C]不义行为[C]罪恶，欺骗",
+          "zh": "有毛病的"
+        },
+        {
+          "term": "here",
+          "ipa": "hɪə(r)",
+          "def": "adv.这就是，在这里",
+          "zh": "这就是"
+        },
+        {
+          "term": "perfect",
+          "ipa": "",
+          "def": "adj.完美的，完全的；正合适，最佳的vt.使完美，使完善",
+          "zh": "完美的"
+        },
+        {
+          "term": "true",
+          "ipa": "truː",
+          "def": "adj.真的，符合事实的，真正的，正确的",
+          "zh": "真的"
+        },
+        {
+          "term": "say",
+          "ipa": "seɪ",
+          "def": "v.说，讲",
+          "zh": "说"
+        },
+        {
+          "term": "quiet",
+          "ipa": "ˈkwaɪət",
+          "def": "adj.安静的n.[U]宁静，安静",
+          "zh": "安静的"
+        },
+        {
+          "term": "forever",
+          "ipa": "fərˈevə(r)",
+          "def": "adv.永远",
+          "zh": "永远"
+        },
+        {
+          "term": "eye",
+          "ipa": "aɪ",
+          "def": "n.[C]眼睛",
+          "zh": "眼睛"
+        },
+        {
+          "term": "live",
+          "ipa": "lɪv][laɪv",
+          "def": "v.居住，生活adj.活的，生动的，现场直播的",
+          "zh": "居住"
+        },
+        {
+          "term": "do",
+          "ipa": "duː",
+          "def": "v.做，干aux v.构成疑问句和否定句",
+          "zh": "做"
+        },
+        {
+          "term": "wise",
+          "ipa": "waɪz",
+          "def": "adj.聪明的，明智的",
+          "zh": "聪明的"
+        },
+        {
+          "term": "find",
+          "ipa": "faɪnd",
+          "def": "vt.找到，发现，查找，查明",
+          "zh": "找到"
+        },
+        {
+          "term": "land",
+          "ipa": "lænd",
+          "def": "n.[U]大陆，土地 [C]国家v.降落，着陆",
+          "zh": "大陆"
+        },
+        {
+          "term": "people",
+          "ipa": "ˈpiːpl",
+          "def": "n.[pl.]人，人们；平民 [C]民族，种族",
+          "zh": "人"
+        }
+      ]
+    },
+    {
+      "node_id": "n042",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "During the day the monkeys and apes played in the forest and the stream.",
+      "text_zh": "白天,猴子和类人猿们在森林和溪流中嬉戏。",
+      "illustration": "assets/adv_frames/ep2/f2.jpg",
+      "audio_start": 185.931,
+      "audio_end": 190.523,
+      "vocab": [
+        {
+          "term": "stream",
+          "zh": "小溪",
+          "mode": "test",
+          "options": [
+            "瀑布",
+            "戏水",
+            "小溪",
+            "危险的"
+          ],
+          "answer": 2,
+          "phrase_en": "and the stream",
+          "phrase_zh": "与数据流",
+          "gloss": "小河"
+        },
+        {
+          "term": "apes",
+          "zh": "猿",
+          "mode": "review",
+          "options": [
+            "light",
+            "apes",
+            "gibbon",
+            "leaped"
+          ],
+          "answer": 1,
+          "phrase_en": "monkeys and apes played",
+          "phrase_zh": "猴子与类人猿参与游戏",
+          "gloss": "猿"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "smile",
+          "ipa": "smaɪ",
+          "def": "vi./n.[C]笑，微笑",
+          "zh": "笑"
+        },
+        {
+          "term": "rush",
+          "ipa": "rʌʃ",
+          "def": "v./n.[sing.]迅速移动，仓促，急促",
+          "zh": "迅速移动"
+        },
+        {
+          "term": "sad",
+          "ipa": "sæd",
+          "def": "adj.悲哀的，难过的",
+          "zh": "悲哀的"
+        },
+        {
+          "term": "wrong",
+          "ipa": "rɒŋ",
+          "def": "dj.有毛病的，错误的adv.错误地vt.误会，不公平对待n.[C]不义行为[C]罪恶，欺骗",
+          "zh": "有毛病的"
+        },
+        {
+          "term": "here",
+          "ipa": "hɪə(r)",
+          "def": "adv.这就是，在这里",
+          "zh": "这就是"
+        },
+        {
+          "term": "perfect",
+          "ipa": "",
+          "def": "adj.完美的，完全的；正合适，最佳的vt.使完美，使完善",
+          "zh": "完美的"
+        },
+        {
+          "term": "true",
+          "ipa": "truː",
+          "def": "adj.真的，符合事实的，真正的，正确的",
+          "zh": "真的"
+        },
+        {
+          "term": "say",
+          "ipa": "seɪ",
+          "def": "v.说，讲",
+          "zh": "说"
+        },
+        {
+          "term": "quiet",
+          "ipa": "ˈkwaɪət",
+          "def": "adj.安静的n.[U]宁静，安静",
+          "zh": "安静的"
+        },
+        {
+          "term": "forever",
+          "ipa": "fərˈevə(r)",
+          "def": "adv.永远",
+          "zh": "永远"
+        },
+        {
+          "term": "eye",
+          "ipa": "aɪ",
+          "def": "n.[C]眼睛",
+          "zh": "眼睛"
+        },
+        {
+          "term": "live",
+          "ipa": "lɪv][laɪv",
+          "def": "v.居住，生活adj.活的，生动的，现场直播的",
+          "zh": "居住"
+        },
+        {
+          "term": "do",
+          "ipa": "duː",
+          "def": "v.做，干aux v.构成疑问句和否定句",
+          "zh": "做"
+        },
+        {
+          "term": "wise",
+          "ipa": "waɪz",
+          "def": "adj.聪明的，明智的",
+          "zh": "聪明的"
+        },
+        {
+          "term": "find",
+          "ipa": "faɪnd",
+          "def": "vt.找到，发现，查找，查明",
+          "zh": "找到"
+        },
+        {
+          "term": "land",
+          "ipa": "lænd",
+          "def": "n.[U]大陆，土地 [C]国家v.降落，着陆",
+          "zh": "大陆"
+        },
+        {
+          "term": "people",
+          "ipa": "ˈpiːpl",
+          "def": "n.[pl.]人，人们；平民 [C]民族，种族",
+          "zh": "人"
+        }
+      ]
+    },
+    {
+      "node_id": "n043",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "And every night they slept safely in their cave.",
+      "text_zh": "每晚,它们都安然地睡在自己的洞穴里。",
+      "illustration": "assets/adv_frames/ep2/f3.jpg",
+      "audio_start": 190.524,
+      "audio_end": 194.969,
+      "vocab": [
+        {
+          "term": "safely",
+          "zh": "安全地",
+          "mode": "learn",
+          "phrase_en": "And every night they slept safely in their cave.",
+          "phrase_zh": "安全地",
+          "source": "official_words"
+        },
+        {
+          "term": "cave",
+          "zh": "洞穴",
+          "mode": "review",
+          "options": [
+            "splashed",
+            "stream",
+            "dangerous",
+            "cave"
+          ],
+          "answer": 3,
+          "phrase_en": "a large cave",
+          "phrase_zh": "一个大型洞穴",
+          "gloss": "洞穴"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "smile",
+          "ipa": "smaɪ",
+          "def": "vi./n.[C]笑，微笑",
+          "zh": "笑"
+        },
+        {
+          "term": "rush",
+          "ipa": "rʌʃ",
+          "def": "v./n.[sing.]迅速移动，仓促，急促",
+          "zh": "迅速移动"
+        },
+        {
+          "term": "sad",
+          "ipa": "sæd",
+          "def": "adj.悲哀的，难过的",
+          "zh": "悲哀的"
+        },
+        {
+          "term": "wrong",
+          "ipa": "rɒŋ",
+          "def": "dj.有毛病的，错误的adv.错误地vt.误会，不公平对待n.[C]不义行为[C]罪恶，欺骗",
+          "zh": "有毛病的"
+        },
+        {
+          "term": "here",
+          "ipa": "hɪə(r)",
+          "def": "adv.这就是，在这里",
+          "zh": "这就是"
+        },
+        {
+          "term": "perfect",
+          "ipa": "",
+          "def": "adj.完美的，完全的；正合适，最佳的vt.使完美，使完善",
+          "zh": "完美的"
+        },
+        {
+          "term": "true",
+          "ipa": "truː",
+          "def": "adj.真的，符合事实的，真正的，正确的",
+          "zh": "真的"
+        },
+        {
+          "term": "say",
+          "ipa": "seɪ",
+          "def": "v.说，讲",
+          "zh": "说"
+        },
+        {
+          "term": "quiet",
+          "ipa": "ˈkwaɪət",
+          "def": "adj.安静的n.[U]宁静，安静",
+          "zh": "安静的"
+        },
+        {
+          "term": "forever",
+          "ipa": "fərˈevə(r)",
+          "def": "adv.永远",
+          "zh": "永远"
+        },
+        {
+          "term": "eye",
+          "ipa": "aɪ",
+          "def": "n.[C]眼睛",
+          "zh": "眼睛"
+        },
+        {
+          "term": "live",
+          "ipa": "lɪv][laɪv",
+          "def": "v.居住，生活adj.活的，生动的，现场直播的",
+          "zh": "居住"
+        },
+        {
+          "term": "do",
+          "ipa": "duː",
+          "def": "v.做，干aux v.构成疑问句和否定句",
+          "zh": "做"
+        },
+        {
+          "term": "wise",
+          "ipa": "waɪz",
+          "def": "adj.聪明的，明智的",
+          "zh": "聪明的"
+        },
+        {
+          "term": "find",
+          "ipa": "faɪnd",
+          "def": "vt.找到，发现，查找，查明",
+          "zh": "找到"
+        },
+        {
+          "term": "land",
+          "ipa": "lænd",
+          "def": "n.[U]大陆，土地 [C]国家v.降落，着陆",
+          "zh": "大陆"
+        },
+        {
+          "term": "people",
+          "ipa": "ˈpiːpl",
+          "def": "n.[pl.]人，人们；平民 [C]民族，种族",
+          "zh": "人"
+        }
+      ]
+    },
+    {
+      "node_id": "n044",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "One night the monkeys and apes had a huge feast.",
+      "text_zh": "某个夜晚,猴子和类人猿们举办了一场盛大的宴会。",
+      "illustration": "assets/adv_frames/ep2/f0.jpg",
+      "audio_start": 194.97,
+      "audio_end": 198.888,
+      "vocab": [
+        {
+          "term": "feast",
+          "zh": "盛宴,筵席",
+          "mode": "learn",
+          "phrase_en": "One night the monkeys and apes had a huge feast.",
+          "phrase_zh": "盛宴,筵席",
+          "source": "official_words"
+        },
+        {
+          "term": "apes",
+          "zh": "猿",
+          "mode": "review",
+          "options": [
+            "waterfall",
+            "stream",
+            "apes",
+            "splashed"
+          ],
+          "answer": 2,
+          "phrase_en": "monkeys and apes had",
+          "phrase_zh": "猴类与类人猿曾",
+          "gloss": "猿"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "smile",
+          "ipa": "smaɪ",
+          "def": "vi./n.[C]笑，微笑",
+          "zh": "笑"
+        },
+        {
+          "term": "rush",
+          "ipa": "rʌʃ",
+          "def": "v./n.[sing.]迅速移动，仓促，急促",
+          "zh": "迅速移动"
+        },
+        {
+          "term": "sad",
+          "ipa": "sæd",
+          "def": "adj.悲哀的，难过的",
+          "zh": "悲哀的"
+        },
+        {
+          "term": "wrong",
+          "ipa": "rɒŋ",
+          "def": "dj.有毛病的，错误的adv.错误地vt.误会，不公平对待n.[C]不义行为[C]罪恶，欺骗",
+          "zh": "有毛病的"
+        },
+        {
+          "term": "here",
+          "ipa": "hɪə(r)",
+          "def": "adv.这就是，在这里",
+          "zh": "这就是"
+        },
+        {
+          "term": "perfect",
+          "ipa": "",
+          "def": "adj.完美的，完全的；正合适，最佳的vt.使完美，使完善",
+          "zh": "完美的"
+        },
+        {
+          "term": "true",
+          "ipa": "truː",
+          "def": "adj.真的，符合事实的，真正的，正确的",
+          "zh": "真的"
+        },
+        {
+          "term": "say",
+          "ipa": "seɪ",
+          "def": "v.说，讲",
+          "zh": "说"
+        },
+        {
+          "term": "quiet",
+          "ipa": "ˈkwaɪət",
+          "def": "adj.安静的n.[U]宁静，安静",
+          "zh": "安静的"
+        },
+        {
+          "term": "forever",
+          "ipa": "fərˈevə(r)",
+          "def": "adv.永远",
+          "zh": "永远"
+        },
+        {
+          "term": "eye",
+          "ipa": "aɪ",
+          "def": "n.[C]眼睛",
+          "zh": "眼睛"
+        },
+        {
+          "term": "live",
+          "ipa": "lɪv][laɪv",
+          "def": "v.居住，生活adj.活的，生动的，现场直播的",
+          "zh": "居住"
+        },
+        {
+          "term": "do",
+          "ipa": "duː",
+          "def": "v.做，干aux v.构成疑问句和否定句",
+          "zh": "做"
+        },
+        {
+          "term": "wise",
+          "ipa": "waɪz",
+          "def": "adj.聪明的，明智的",
+          "zh": "聪明的"
+        },
+        {
+          "term": "find",
+          "ipa": "faɪnd",
+          "def": "vt.找到，发现，查找，查明",
+          "zh": "找到"
+        },
+        {
+          "term": "land",
+          "ipa": "lænd",
+          "def": "n.[U]大陆，土地 [C]国家v.降落，着陆",
+          "zh": "大陆"
+        },
+        {
+          "term": "people",
+          "ipa": "ˈpiːpl",
+          "def": "n.[pl.]人，人们；平民 [C]民族，种族",
+          "zh": "人"
+        }
+      ]
+    },
+    {
+      "node_id": "n045",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "Fruits and nuts covered the table.",
+      "text_zh": "桌上摆满了水果和坚果。",
+      "illustration": "assets/adv_frames/ep2/f1.jpg",
+      "audio_start": 198.889,
+      "audio_end": 201.697,
+      "vocab": [],
+      "page_words": [
+        {
+          "term": "smile",
+          "ipa": "smaɪ",
+          "def": "vi./n.[C]笑，微笑",
+          "zh": "笑"
+        },
+        {
+          "term": "rush",
+          "ipa": "rʌʃ",
+          "def": "v./n.[sing.]迅速移动，仓促，急促",
+          "zh": "迅速移动"
+        },
+        {
+          "term": "sad",
+          "ipa": "sæd",
+          "def": "adj.悲哀的，难过的",
+          "zh": "悲哀的"
+        },
+        {
+          "term": "wrong",
+          "ipa": "rɒŋ",
+          "def": "dj.有毛病的，错误的adv.错误地vt.误会，不公平对待n.[C]不义行为[C]罪恶，欺骗",
+          "zh": "有毛病的"
+        },
+        {
+          "term": "here",
+          "ipa": "hɪə(r)",
+          "def": "adv.这就是，在这里",
+          "zh": "这就是"
+        },
+        {
+          "term": "perfect",
+          "ipa": "",
+          "def": "adj.完美的，完全的；正合适，最佳的vt.使完美，使完善",
+          "zh": "完美的"
+        },
+        {
+          "term": "true",
+          "ipa": "truː",
+          "def": "adj.真的，符合事实的，真正的，正确的",
+          "zh": "真的"
+        },
+        {
+          "term": "say",
+          "ipa": "seɪ",
+          "def": "v.说，讲",
+          "zh": "说"
+        },
+        {
+          "term": "quiet",
+          "ipa": "ˈkwaɪət",
+          "def": "adj.安静的n.[U]宁静，安静",
+          "zh": "安静的"
+        },
+        {
+          "term": "forever",
+          "ipa": "fərˈevə(r)",
+          "def": "adv.永远",
+          "zh": "永远"
+        },
+        {
+          "term": "eye",
+          "ipa": "aɪ",
+          "def": "n.[C]眼睛",
+          "zh": "眼睛"
+        },
+        {
+          "term": "live",
+          "ipa": "lɪv][laɪv",
+          "def": "v.居住，生活adj.活的，生动的，现场直播的",
+          "zh": "居住"
+        },
+        {
+          "term": "do",
+          "ipa": "duː",
+          "def": "v.做，干aux v.构成疑问句和否定句",
+          "zh": "做"
+        },
+        {
+          "term": "wise",
+          "ipa": "waɪz",
+          "def": "adj.聪明的，明智的",
+          "zh": "聪明的"
+        },
+        {
+          "term": "find",
+          "ipa": "faɪnd",
+          "def": "vt.找到，发现，查找，查明",
+          "zh": "找到"
+        },
+        {
+          "term": "land",
+          "ipa": "lænd",
+          "def": "n.[U]大陆，土地 [C]国家v.降落，着陆",
+          "zh": "大陆"
+        },
+        {
+          "term": "people",
+          "ipa": "ˈpiːpl",
+          "def": "n.[pl.]人，人们；平民 [C]民族，种族",
+          "zh": "人"
+        }
+      ]
+    },
+    {
+      "node_id": "n046",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "Monkeys and apes danced and sang while music played.",
+      "text_zh": "猴子和类人猿在音乐伴奏下翩翩起舞、欢快歌唱。",
+      "illustration": "assets/adv_frames/ep2/f2.jpg",
+      "audio_start": 201.698,
+      "audio_end": 206.238,
+      "vocab": [
+        {
+          "term": "apes",
+          "zh": "猿",
+          "mode": "review",
+          "options": [
+            "dangerous",
+            "light",
+            "apes",
+            "leaped"
+          ],
+          "answer": 2,
+          "phrase_en": "Monkeys and apes danced",
+          "phrase_zh": "猴子与类人猿翩翩起舞",
+          "gloss": "猿"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "smile",
+          "ipa": "smaɪ",
+          "def": "vi./n.[C]笑，微笑",
+          "zh": "笑"
+        },
+        {
+          "term": "rush",
+          "ipa": "rʌʃ",
+          "def": "v./n.[sing.]迅速移动，仓促，急促",
+          "zh": "迅速移动"
+        },
+        {
+          "term": "sad",
+          "ipa": "sæd",
+          "def": "adj.悲哀的，难过的",
+          "zh": "悲哀的"
+        },
+        {
+          "term": "wrong",
+          "ipa": "rɒŋ",
+          "def": "dj.有毛病的，错误的adv.错误地vt.误会，不公平对待n.[C]不义行为[C]罪恶，欺骗",
+          "zh": "有毛病的"
+        },
+        {
+          "term": "here",
+          "ipa": "hɪə(r)",
+          "def": "adv.这就是，在这里",
+          "zh": "这就是"
+        },
+        {
+          "term": "perfect",
+          "ipa": "",
+          "def": "adj.完美的，完全的；正合适，最佳的vt.使完美，使完善",
+          "zh": "完美的"
+        },
+        {
+          "term": "true",
+          "ipa": "truː",
+          "def": "adj.真的，符合事实的，真正的，正确的",
+          "zh": "真的"
+        },
+        {
+          "term": "say",
+          "ipa": "seɪ",
+          "def": "v.说，讲",
+          "zh": "说"
+        },
+        {
+          "term": "quiet",
+          "ipa": "ˈkwaɪət",
+          "def": "adj.安静的n.[U]宁静，安静",
+          "zh": "安静的"
+        },
+        {
+          "term": "forever",
+          "ipa": "fərˈevə(r)",
+          "def": "adv.永远",
+          "zh": "永远"
+        },
+        {
+          "term": "eye",
+          "ipa": "aɪ",
+          "def": "n.[C]眼睛",
+          "zh": "眼睛"
+        },
+        {
+          "term": "live",
+          "ipa": "lɪv][laɪv",
+          "def": "v.居住，生活adj.活的，生动的，现场直播的",
+          "zh": "居住"
+        },
+        {
+          "term": "do",
+          "ipa": "duː",
+          "def": "v.做，干aux v.构成疑问句和否定句",
+          "zh": "做"
+        },
+        {
+          "term": "wise",
+          "ipa": "waɪz",
+          "def": "adj.聪明的，明智的",
+          "zh": "聪明的"
+        },
+        {
+          "term": "find",
+          "ipa": "faɪnd",
+          "def": "vt.找到，发现，查找，查明",
+          "zh": "找到"
+        },
+        {
+          "term": "land",
+          "ipa": "lænd",
+          "def": "n.[U]大陆，土地 [C]国家v.降落，着陆",
+          "zh": "大陆"
+        },
+        {
+          "term": "people",
+          "ipa": "ˈpiːpl",
+          "def": "n.[pl.]人，人们；平民 [C]民族，种族",
+          "zh": "人"
+        }
+      ]
+    },
+    {
+      "node_id": "n047",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "Monkey sat on his throne and smiled.",
+      "text_zh": "猴子坐在王座上,微笑着。",
+      "illustration": "assets/adv_frames/ep2/f3.jpg",
+      "audio_start": 206.239,
+      "audio_end": 209.488,
+      "vocab": [
+        {
+          "term": "throne",
+          "zh": "王位,王座",
+          "mode": "learn",
+          "phrase_en": "Monkey sat on his throne and smiled.",
+          "phrase_zh": "王位,王座",
+          "source": "official_words"
+        },
+        {
+          "term": "monkey",
+          "zh": "猴子",
+          "mode": "review",
+          "options": [
+            "leaped",
+            "dangerous",
+            "waterfall",
+            "monkey"
+          ],
+          "answer": 3,
+          "phrase_en": "Monkey sat on his throne and smiled",
+          "phrase_zh": "猴子坐在王座上,微笑着。",
+          "ipa": "ˈmʌŋki",
+          "pos": "n.",
+          "def": "n.[C]猴子",
+          "gloss": "猴子"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "smile",
+          "ipa": "smaɪ",
+          "def": "vi./n.[C]笑，微笑",
+          "zh": "笑"
+        },
+        {
+          "term": "rush",
+          "ipa": "rʌʃ",
+          "def": "v./n.[sing.]迅速移动，仓促，急促",
+          "zh": "迅速移动"
+        },
+        {
+          "term": "sad",
+          "ipa": "sæd",
+          "def": "adj.悲哀的，难过的",
+          "zh": "悲哀的"
+        },
+        {
+          "term": "wrong",
+          "ipa": "rɒŋ",
+          "def": "dj.有毛病的，错误的adv.错误地vt.误会，不公平对待n.[C]不义行为[C]罪恶，欺骗",
+          "zh": "有毛病的"
+        },
+        {
+          "term": "here",
+          "ipa": "hɪə(r)",
+          "def": "adv.这就是，在这里",
+          "zh": "这就是"
+        },
+        {
+          "term": "perfect",
+          "ipa": "",
+          "def": "adj.完美的，完全的；正合适，最佳的vt.使完美，使完善",
+          "zh": "完美的"
+        },
+        {
+          "term": "true",
+          "ipa": "truː",
+          "def": "adj.真的，符合事实的，真正的，正确的",
+          "zh": "真的"
+        },
+        {
+          "term": "say",
+          "ipa": "seɪ",
+          "def": "v.说，讲",
+          "zh": "说"
+        },
+        {
+          "term": "quiet",
+          "ipa": "ˈkwaɪət",
+          "def": "adj.安静的n.[U]宁静，安静",
+          "zh": "安静的"
+        },
+        {
+          "term": "forever",
+          "ipa": "fərˈevə(r)",
+          "def": "adv.永远",
+          "zh": "永远"
+        },
+        {
+          "term": "eye",
+          "ipa": "aɪ",
+          "def": "n.[C]眼睛",
+          "zh": "眼睛"
+        },
+        {
+          "term": "live",
+          "ipa": "lɪv][laɪv",
+          "def": "v.居住，生活adj.活的，生动的，现场直播的",
+          "zh": "居住"
+        },
+        {
+          "term": "do",
+          "ipa": "duː",
+          "def": "v.做，干aux v.构成疑问句和否定句",
+          "zh": "做"
+        },
+        {
+          "term": "wise",
+          "ipa": "waɪz",
+          "def": "adj.聪明的，明智的",
+          "zh": "聪明的"
+        },
+        {
+          "term": "find",
+          "ipa": "faɪnd",
+          "def": "vt.找到，发现，查找，查明",
+          "zh": "找到"
+        },
+        {
+          "term": "land",
+          "ipa": "lænd",
+          "def": "n.[U]大陆，土地 [C]国家v.降落，着陆",
+          "zh": "大陆"
+        },
+        {
+          "term": "people",
+          "ipa": "ˈpiːpl",
+          "def": "n.[pl.]人，人们；平民 [C]民族，种族",
+          "zh": "人"
+        }
+      ]
+    },
+    {
+      "node_id": "p02",
+      "type": "puzzle",
+      "speaker": "system",
+      "text_en": "Put the words in order",
+      "text_zh": "点词块组句，完成后点确定",
+      "illustration": null,
+      "puzzle": {
+        "sentence": "Others fought over the bedrooms.",
+        "words": [
+          "the",
+          "bedrooms",
+          "over",
+          "Others",
+          "fought"
+        ]
+      },
+      "vocab": []
+    },
+    {
+      "node_id": "n048",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "But then his smile faded.",
+      "text_zh": "然而,他的笑容随即消失了。",
+      "illustration": "assets/adv_frames/ep2/f0.jpg",
+      "audio_start": 209.489,
+      "audio_end": 211.84,
+      "vocab": [
+        {
+          "term": "fade",
+          "zh": "1. 逐渐消失,逐渐变弱,(2. (颜色)退色,褪去)",
+          "mode": "learn",
+          "phrase_en": "But then his smile faded.",
+          "phrase_zh": "1. 逐渐消失,逐渐变弱,",
+          "source": "official_words"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "smile",
+          "ipa": "smaɪ",
+          "def": "vi./n.[C]笑，微笑",
+          "zh": "笑"
+        },
+        {
+          "term": "rush",
+          "ipa": "rʌʃ",
+          "def": "v./n.[sing.]迅速移动，仓促，急促",
+          "zh": "迅速移动"
+        },
+        {
+          "term": "sad",
+          "ipa": "sæd",
+          "def": "adj.悲哀的，难过的",
+          "zh": "悲哀的"
+        },
+        {
+          "term": "wrong",
+          "ipa": "rɒŋ",
+          "def": "dj.有毛病的，错误的adv.错误地vt.误会，不公平对待n.[C]不义行为[C]罪恶，欺骗",
+          "zh": "有毛病的"
+        },
+        {
+          "term": "here",
+          "ipa": "hɪə(r)",
+          "def": "adv.这就是，在这里",
+          "zh": "这就是"
+        },
+        {
+          "term": "perfect",
+          "ipa": "",
+          "def": "adj.完美的，完全的；正合适，最佳的vt.使完美，使完善",
+          "zh": "完美的"
+        },
+        {
+          "term": "true",
+          "ipa": "truː",
+          "def": "adj.真的，符合事实的，真正的，正确的",
+          "zh": "真的"
+        },
+        {
+          "term": "say",
+          "ipa": "seɪ",
+          "def": "v.说，讲",
+          "zh": "说"
+        },
+        {
+          "term": "quiet",
+          "ipa": "ˈkwaɪət",
+          "def": "adj.安静的n.[U]宁静，安静",
+          "zh": "安静的"
+        },
+        {
+          "term": "forever",
+          "ipa": "fərˈevə(r)",
+          "def": "adv.永远",
+          "zh": "永远"
+        },
+        {
+          "term": "eye",
+          "ipa": "aɪ",
+          "def": "n.[C]眼睛",
+          "zh": "眼睛"
+        },
+        {
+          "term": "live",
+          "ipa": "lɪv][laɪv",
+          "def": "v.居住，生活adj.活的，生动的，现场直播的",
+          "zh": "居住"
+        },
+        {
+          "term": "do",
+          "ipa": "duː",
+          "def": "v.做，干aux v.构成疑问句和否定句",
+          "zh": "做"
+        },
+        {
+          "term": "wise",
+          "ipa": "waɪz",
+          "def": "adj.聪明的，明智的",
+          "zh": "聪明的"
+        },
+        {
+          "term": "find",
+          "ipa": "faɪnd",
+          "def": "vt.找到，发现，查找，查明",
+          "zh": "找到"
+        },
+        {
+          "term": "land",
+          "ipa": "lænd",
+          "def": "n.[U]大陆，土地 [C]国家v.降落，着陆",
+          "zh": "大陆"
+        },
+        {
+          "term": "people",
+          "ipa": "ˈpiːpl",
+          "def": "n.[pl.]人，人们；平民 [C]民族，种族",
+          "zh": "人"
+        }
+      ]
+    },
+    {
+      "node_id": "n049",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "Soon he was frowning.",
+      "text_zh": "不久,他便皱起了眉头。",
+      "illustration": "assets/adv_frames/ep2/f1.jpg",
+      "audio_start": 211.841,
+      "audio_end": 214.056,
+      "vocab": [
+        {
+          "term": "frown",
+          "zh": "皱眉",
+          "mode": "learn",
+          "phrase_en": "Soon he was frowning.",
+          "phrase_zh": "皱眉",
+          "source": "official_words"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "smile",
+          "ipa": "smaɪ",
+          "def": "vi./n.[C]笑，微笑",
+          "zh": "笑"
+        },
+        {
+          "term": "rush",
+          "ipa": "rʌʃ",
+          "def": "v./n.[sing.]迅速移动，仓促，急促",
+          "zh": "迅速移动"
+        },
+        {
+          "term": "sad",
+          "ipa": "sæd",
+          "def": "adj.悲哀的，难过的",
+          "zh": "悲哀的"
+        },
+        {
+          "term": "wrong",
+          "ipa": "rɒŋ",
+          "def": "dj.有毛病的，错误的adv.错误地vt.误会，不公平对待n.[C]不义行为[C]罪恶，欺骗",
+          "zh": "有毛病的"
+        },
+        {
+          "term": "here",
+          "ipa": "hɪə(r)",
+          "def": "adv.这就是，在这里",
+          "zh": "这就是"
+        },
+        {
+          "term": "perfect",
+          "ipa": "",
+          "def": "adj.完美的，完全的；正合适，最佳的vt.使完美，使完善",
+          "zh": "完美的"
+        },
+        {
+          "term": "true",
+          "ipa": "truː",
+          "def": "adj.真的，符合事实的，真正的，正确的",
+          "zh": "真的"
+        },
+        {
+          "term": "say",
+          "ipa": "seɪ",
+          "def": "v.说，讲",
+          "zh": "说"
+        },
+        {
+          "term": "quiet",
+          "ipa": "ˈkwaɪət",
+          "def": "adj.安静的n.[U]宁静，安静",
+          "zh": "安静的"
+        },
+        {
+          "term": "forever",
+          "ipa": "fərˈevə(r)",
+          "def": "adv.永远",
+          "zh": "永远"
+        },
+        {
+          "term": "eye",
+          "ipa": "aɪ",
+          "def": "n.[C]眼睛",
+          "zh": "眼睛"
+        },
+        {
+          "term": "live",
+          "ipa": "lɪv][laɪv",
+          "def": "v.居住，生活adj.活的，生动的，现场直播的",
+          "zh": "居住"
+        },
+        {
+          "term": "do",
+          "ipa": "duː",
+          "def": "v.做，干aux v.构成疑问句和否定句",
+          "zh": "做"
+        },
+        {
+          "term": "wise",
+          "ipa": "waɪz",
+          "def": "adj.聪明的，明智的",
+          "zh": "聪明的"
+        },
+        {
+          "term": "find",
+          "ipa": "faɪnd",
+          "def": "vt.找到，发现，查找，查明",
+          "zh": "找到"
+        },
+        {
+          "term": "land",
+          "ipa": "lænd",
+          "def": "n.[U]大陆，土地 [C]国家v.降落，着陆",
+          "zh": "大陆"
+        },
+        {
+          "term": "people",
+          "ipa": "ˈpiːpl",
+          "def": "n.[pl.]人，人们；平民 [C]民族，种族",
+          "zh": "人"
+        }
+      ]
+    },
+    {
+      "node_id": "n050",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "The gibbon saw Monkey and rushed over.",
+      "text_zh": "猴子看到猴子后,便飞快地跑过来了。",
+      "illustration": "assets/adv_frames/ep2/f2.jpg",
+      "audio_start": 214.057,
+      "audio_end": 219.019,
+      "vocab": [
+        {
+          "term": "monkey",
+          "zh": "猴子",
+          "mode": "review",
+          "options": [
+            "monkey",
+            "apes",
+            "light",
+            "leaped"
+          ],
+          "answer": 0,
+          "phrase_en": "The gibbon saw Monkey and rushed over",
+          "phrase_zh": "猕猴看到猴子后便飞奔而来",
+          "ipa": "ˈmʌŋki",
+          "pos": "n.",
+          "def": "n.[C]猴子",
+          "gloss": "猴子"
+        },
+        {
+          "term": "gibbon",
+          "zh": "长臂猿",
+          "mode": "review",
+          "options": [
+            "dangerous",
+            "king",
+            "cave",
+            "gibbon"
+          ],
+          "answer": 3,
+          "phrase_en": "The gibbon saw Monkey and rushed over",
+          "phrase_zh": "猕猴看到猴子后便飞奔而来",
+          "gloss": "猿"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "smile",
+          "ipa": "smaɪ",
+          "def": "vi./n.[C]笑，微笑",
+          "zh": "笑"
+        },
+        {
+          "term": "rush",
+          "ipa": "rʌʃ",
+          "def": "v./n.[sing.]迅速移动，仓促，急促",
+          "zh": "迅速移动"
+        },
+        {
+          "term": "sad",
+          "ipa": "sæd",
+          "def": "adj.悲哀的，难过的",
+          "zh": "悲哀的"
+        },
+        {
+          "term": "wrong",
+          "ipa": "rɒŋ",
+          "def": "dj.有毛病的，错误的adv.错误地vt.误会，不公平对待n.[C]不义行为[C]罪恶，欺骗",
+          "zh": "有毛病的"
+        },
+        {
+          "term": "here",
+          "ipa": "hɪə(r)",
+          "def": "adv.这就是，在这里",
+          "zh": "这就是"
+        },
+        {
+          "term": "perfect",
+          "ipa": "",
+          "def": "adj.完美的，完全的；正合适，最佳的vt.使完美，使完善",
+          "zh": "完美的"
+        },
+        {
+          "term": "true",
+          "ipa": "truː",
+          "def": "adj.真的，符合事实的，真正的，正确的",
+          "zh": "真的"
+        },
+        {
+          "term": "say",
+          "ipa": "seɪ",
+          "def": "v.说，讲",
+          "zh": "说"
+        },
+        {
+          "term": "quiet",
+          "ipa": "ˈkwaɪət",
+          "def": "adj.安静的n.[U]宁静，安静",
+          "zh": "安静的"
+        },
+        {
+          "term": "forever",
+          "ipa": "fərˈevə(r)",
+          "def": "adv.永远",
+          "zh": "永远"
+        },
+        {
+          "term": "eye",
+          "ipa": "aɪ",
+          "def": "n.[C]眼睛",
+          "zh": "眼睛"
+        },
+        {
+          "term": "live",
+          "ipa": "lɪv][laɪv",
+          "def": "v.居住，生活adj.活的，生动的，现场直播的",
+          "zh": "居住"
+        },
+        {
+          "term": "do",
+          "ipa": "duː",
+          "def": "v.做，干aux v.构成疑问句和否定句",
+          "zh": "做"
+        },
+        {
+          "term": "wise",
+          "ipa": "waɪz",
+          "def": "adj.聪明的，明智的",
+          "zh": "聪明的"
+        },
+        {
+          "term": "find",
+          "ipa": "faɪnd",
+          "def": "vt.找到，发现，查找，查明",
+          "zh": "找到"
+        },
+        {
+          "term": "land",
+          "ipa": "lænd",
+          "def": "n.[U]大陆，土地 [C]国家v.降落，着陆",
+          "zh": "大陆"
+        },
+        {
+          "term": "people",
+          "ipa": "ˈpiːpl",
+          "def": "n.[pl.]人，人们；平民 [C]民族，种族",
+          "zh": "人"
+        }
+      ]
+    },
+    {
+      "node_id": "n051",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"Your Majesty,\" said the gibbon.",
+      "text_zh": "\"陛下,\"长臂猿说道。",
+      "illustration": "assets/adv_frames/ep2/f3.jpg",
+      "audio_start": 219.02,
+      "audio_end": 221.454,
+      "vocab": [
+        {
+          "term": "gibbon",
+          "zh": "长臂猿",
+          "mode": "review",
+          "options": [
+            "dangerous",
+            "eyes",
+            "monkey",
+            "gibbon"
+          ],
+          "answer": 3,
+          "phrase_en": "said the gibbon",
+          "phrase_zh": ",长臂猿说道",
+          "gloss": "猿"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "smile",
+          "ipa": "smaɪ",
+          "def": "vi./n.[C]笑，微笑",
+          "zh": "笑"
+        },
+        {
+          "term": "rush",
+          "ipa": "rʌʃ",
+          "def": "v./n.[sing.]迅速移动，仓促，急促",
+          "zh": "迅速移动"
+        },
+        {
+          "term": "sad",
+          "ipa": "sæd",
+          "def": "adj.悲哀的，难过的",
+          "zh": "悲哀的"
+        },
+        {
+          "term": "wrong",
+          "ipa": "rɒŋ",
+          "def": "dj.有毛病的，错误的adv.错误地vt.误会，不公平对待n.[C]不义行为[C]罪恶，欺骗",
+          "zh": "有毛病的"
+        },
+        {
+          "term": "here",
+          "ipa": "hɪə(r)",
+          "def": "adv.这就是，在这里",
+          "zh": "这就是"
+        },
+        {
+          "term": "perfect",
+          "ipa": "",
+          "def": "adj.完美的，完全的；正合适，最佳的vt.使完美，使完善",
+          "zh": "完美的"
+        },
+        {
+          "term": "true",
+          "ipa": "truː",
+          "def": "adj.真的，符合事实的，真正的，正确的",
+          "zh": "真的"
+        },
+        {
+          "term": "say",
+          "ipa": "seɪ",
+          "def": "v.说，讲",
+          "zh": "说"
+        },
+        {
+          "term": "quiet",
+          "ipa": "ˈkwaɪət",
+          "def": "adj.安静的n.[U]宁静，安静",
+          "zh": "安静的"
+        },
+        {
+          "term": "forever",
+          "ipa": "fərˈevə(r)",
+          "def": "adv.永远",
+          "zh": "永远"
+        },
+        {
+          "term": "eye",
+          "ipa": "aɪ",
+          "def": "n.[C]眼睛",
+          "zh": "眼睛"
+        },
+        {
+          "term": "live",
+          "ipa": "lɪv][laɪv",
+          "def": "v.居住，生活adj.活的，生动的，现场直播的",
+          "zh": "居住"
+        },
+        {
+          "term": "do",
+          "ipa": "duː",
+          "def": "v.做，干aux v.构成疑问句和否定句",
+          "zh": "做"
+        },
+        {
+          "term": "wise",
+          "ipa": "waɪz",
+          "def": "adj.聪明的，明智的",
+          "zh": "聪明的"
+        },
+        {
+          "term": "find",
+          "ipa": "faɪnd",
+          "def": "vt.找到，发现，查找，查明",
+          "zh": "找到"
+        },
+        {
+          "term": "land",
+          "ipa": "lænd",
+          "def": "n.[U]大陆，土地 [C]国家v.降落，着陆",
+          "zh": "大陆"
+        },
+        {
+          "term": "people",
+          "ipa": "ˈpiːpl",
+          "def": "n.[pl.]人，人们；平民 [C]民族，种族",
+          "zh": "人"
+        }
+      ]
+    },
+    {
+      "node_id": "n052",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"You look sad. What's wrong?\"",
+      "text_zh": "\"你看起来很伤心,怎么了?\"",
+      "illustration": "assets/adv_frames/ep2/f0.jpg",
+      "audio_start": 221.455,
+      "audio_end": 224.617,
+      "vocab": [
+        {
+          "term": "wrong",
+          "zh": "错的,不对的",
+          "mode": "learn",
+          "phrase_en": "What's wrong?",
+          "phrase_zh": "错的,不对的",
+          "source": "official_words"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "smile",
+          "ipa": "smaɪ",
+          "def": "vi./n.[C]笑，微笑",
+          "zh": "笑"
+        },
+        {
+          "term": "rush",
+          "ipa": "rʌʃ",
+          "def": "v./n.[sing.]迅速移动，仓促，急促",
+          "zh": "迅速移动"
+        },
+        {
+          "term": "sad",
+          "ipa": "sæd",
+          "def": "adj.悲哀的，难过的",
+          "zh": "悲哀的"
+        },
+        {
+          "term": "wrong",
+          "ipa": "rɒŋ",
+          "def": "dj.有毛病的，错误的adv.错误地vt.误会，不公平对待n.[C]不义行为[C]罪恶，欺骗",
+          "zh": "有毛病的"
+        },
+        {
+          "term": "here",
+          "ipa": "hɪə(r)",
+          "def": "adv.这就是，在这里",
+          "zh": "这就是"
+        },
+        {
+          "term": "perfect",
+          "ipa": "",
+          "def": "adj.完美的，完全的；正合适，最佳的vt.使完美，使完善",
+          "zh": "完美的"
+        },
+        {
+          "term": "true",
+          "ipa": "truː",
+          "def": "adj.真的，符合事实的，真正的，正确的",
+          "zh": "真的"
+        },
+        {
+          "term": "say",
+          "ipa": "seɪ",
+          "def": "v.说，讲",
+          "zh": "说"
+        },
+        {
+          "term": "quiet",
+          "ipa": "ˈkwaɪət",
+          "def": "adj.安静的n.[U]宁静，安静",
+          "zh": "安静的"
+        },
+        {
+          "term": "forever",
+          "ipa": "fərˈevə(r)",
+          "def": "adv.永远",
+          "zh": "永远"
+        },
+        {
+          "term": "eye",
+          "ipa": "aɪ",
+          "def": "n.[C]眼睛",
+          "zh": "眼睛"
+        },
+        {
+          "term": "live",
+          "ipa": "lɪv][laɪv",
+          "def": "v.居住，生活adj.活的，生动的，现场直播的",
+          "zh": "居住"
+        },
+        {
+          "term": "do",
+          "ipa": "duː",
+          "def": "v.做，干aux v.构成疑问句和否定句",
+          "zh": "做"
+        },
+        {
+          "term": "wise",
+          "ipa": "waɪz",
+          "def": "adj.聪明的，明智的",
+          "zh": "聪明的"
+        },
+        {
+          "term": "find",
+          "ipa": "faɪnd",
+          "def": "vt.找到，发现，查找，查明",
+          "zh": "找到"
+        },
+        {
+          "term": "land",
+          "ipa": "lænd",
+          "def": "n.[U]大陆，土地 [C]国家v.降落，着陆",
+          "zh": "大陆"
+        },
+        {
+          "term": "people",
+          "ipa": "ˈpiːpl",
+          "def": "n.[pl.]人，人们；平民 [C]民族，种族",
+          "zh": "人"
+        }
+      ]
+    },
+    {
+      "node_id": "n053",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "Monkey sighed. \"Our life here is perfect.\"",
+      "text_zh": "猴子叹了口气:\"我们在这里的生活简直完美。\"",
+      "illustration": "assets/adv_frames/ep2/f1.jpg",
+      "audio_start": 224.618,
+      "audio_end": 229.019,
+      "vocab": [
+        {
+          "term": "sigh",
+          "zh": "叹气,叹息",
+          "mode": "learn",
+          "phrase_en": "Monkey sighed.",
+          "phrase_zh": "叹气,叹息",
+          "source": "official_words"
+        },
+        {
+          "term": "monkey",
+          "zh": "猴子",
+          "mode": "review",
+          "options": [
+            "gibbon",
+            "waterfall",
+            "apes",
+            "monkey"
+          ],
+          "answer": 3,
+          "phrase_en": "Monkey sighed",
+          "phrase_zh": "猴子叹了口气",
+          "ipa": "ˈmʌŋki",
+          "pos": "n.",
+          "def": "n.[C]猴子",
+          "gloss": "猴子"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "smile",
+          "ipa": "smaɪ",
+          "def": "vi./n.[C]笑，微笑",
+          "zh": "笑"
+        },
+        {
+          "term": "rush",
+          "ipa": "rʌʃ",
+          "def": "v./n.[sing.]迅速移动，仓促，急促",
+          "zh": "迅速移动"
+        },
+        {
+          "term": "sad",
+          "ipa": "sæd",
+          "def": "adj.悲哀的，难过的",
+          "zh": "悲哀的"
+        },
+        {
+          "term": "wrong",
+          "ipa": "rɒŋ",
+          "def": "dj.有毛病的，错误的adv.错误地vt.误会，不公平对待n.[C]不义行为[C]罪恶，欺骗",
+          "zh": "有毛病的"
+        },
+        {
+          "term": "here",
+          "ipa": "hɪə(r)",
+          "def": "adv.这就是，在这里",
+          "zh": "这就是"
+        },
+        {
+          "term": "perfect",
+          "ipa": "",
+          "def": "adj.完美的，完全的；正合适，最佳的vt.使完美，使完善",
+          "zh": "完美的"
+        },
+        {
+          "term": "true",
+          "ipa": "truː",
+          "def": "adj.真的，符合事实的，真正的，正确的",
+          "zh": "真的"
+        },
+        {
+          "term": "say",
+          "ipa": "seɪ",
+          "def": "v.说，讲",
+          "zh": "说"
+        },
+        {
+          "term": "quiet",
+          "ipa": "ˈkwaɪət",
+          "def": "adj.安静的n.[U]宁静，安静",
+          "zh": "安静的"
+        },
+        {
+          "term": "forever",
+          "ipa": "fərˈevə(r)",
+          "def": "adv.永远",
+          "zh": "永远"
+        },
+        {
+          "term": "eye",
+          "ipa": "aɪ",
+          "def": "n.[C]眼睛",
+          "zh": "眼睛"
+        },
+        {
+          "term": "live",
+          "ipa": "lɪv][laɪv",
+          "def": "v.居住，生活adj.活的，生动的，现场直播的",
+          "zh": "居住"
+        },
+        {
+          "term": "do",
+          "ipa": "duː",
+          "def": "v.做，干aux v.构成疑问句和否定句",
+          "zh": "做"
+        },
+        {
+          "term": "wise",
+          "ipa": "waɪz",
+          "def": "adj.聪明的，明智的",
+          "zh": "聪明的"
+        },
+        {
+          "term": "find",
+          "ipa": "faɪnd",
+          "def": "vt.找到，发现，查找，查明",
+          "zh": "找到"
+        },
+        {
+          "term": "land",
+          "ipa": "lænd",
+          "def": "n.[U]大陆，土地 [C]国家v.降落，着陆",
+          "zh": "大陆"
+        },
+        {
+          "term": "people",
+          "ipa": "ˈpiːpl",
+          "def": "n.[pl.]人，人们；平民 [C]民族，种族",
+          "zh": "人"
+        }
+      ]
+    },
+    {
+      "node_id": "n054",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"Yes, that's true,\" said the gibbon.",
+      "text_zh": "\"是的,没错,\"长臂猿说道。",
+      "illustration": "assets/adv_frames/ep2/f2.jpg",
+      "audio_start": 229.02,
+      "audio_end": 231.476,
+      "vocab": [
+        {
+          "term": "gibbon",
+          "zh": "长臂猿",
+          "mode": "review",
+          "options": [
+            "leaped",
+            "cave",
+            "king",
+            "gibbon"
+          ],
+          "answer": 3,
+          "phrase_en": "said the gibbon",
+          "phrase_zh": ",长臂猿说道",
+          "gloss": "猿"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "smile",
+          "ipa": "smaɪ",
+          "def": "vi./n.[C]笑，微笑",
+          "zh": "笑"
+        },
+        {
+          "term": "rush",
+          "ipa": "rʌʃ",
+          "def": "v./n.[sing.]迅速移动，仓促，急促",
+          "zh": "迅速移动"
+        },
+        {
+          "term": "sad",
+          "ipa": "sæd",
+          "def": "adj.悲哀的，难过的",
+          "zh": "悲哀的"
+        },
+        {
+          "term": "wrong",
+          "ipa": "rɒŋ",
+          "def": "dj.有毛病的，错误的adv.错误地vt.误会，不公平对待n.[C]不义行为[C]罪恶，欺骗",
+          "zh": "有毛病的"
+        },
+        {
+          "term": "here",
+          "ipa": "hɪə(r)",
+          "def": "adv.这就是，在这里",
+          "zh": "这就是"
+        },
+        {
+          "term": "perfect",
+          "ipa": "",
+          "def": "adj.完美的，完全的；正合适，最佳的vt.使完美，使完善",
+          "zh": "完美的"
+        },
+        {
+          "term": "true",
+          "ipa": "truː",
+          "def": "adj.真的，符合事实的，真正的，正确的",
+          "zh": "真的"
+        },
+        {
+          "term": "say",
+          "ipa": "seɪ",
+          "def": "v.说，讲",
+          "zh": "说"
+        },
+        {
+          "term": "quiet",
+          "ipa": "ˈkwaɪət",
+          "def": "adj.安静的n.[U]宁静，安静",
+          "zh": "安静的"
+        },
+        {
+          "term": "forever",
+          "ipa": "fərˈevə(r)",
+          "def": "adv.永远",
+          "zh": "永远"
+        },
+        {
+          "term": "eye",
+          "ipa": "aɪ",
+          "def": "n.[C]眼睛",
+          "zh": "眼睛"
+        },
+        {
+          "term": "live",
+          "ipa": "lɪv][laɪv",
+          "def": "v.居住，生活adj.活的，生动的，现场直播的",
+          "zh": "居住"
+        },
+        {
+          "term": "do",
+          "ipa": "duː",
+          "def": "v.做，干aux v.构成疑问句和否定句",
+          "zh": "做"
+        },
+        {
+          "term": "wise",
+          "ipa": "waɪz",
+          "def": "adj.聪明的，明智的",
+          "zh": "聪明的"
+        },
+        {
+          "term": "find",
+          "ipa": "faɪnd",
+          "def": "vt.找到，发现，查找，查明",
+          "zh": "找到"
+        },
+        {
+          "term": "land",
+          "ipa": "lænd",
+          "def": "n.[U]大陆，土地 [C]国家v.降落，着陆",
+          "zh": "大陆"
+        },
+        {
+          "term": "people",
+          "ipa": "ˈpiːpl",
+          "def": "n.[pl.]人，人们；平民 [C]民族，种族",
+          "zh": "人"
+        }
+      ]
+    },
+    {
+      "node_id": "n055",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"So why are you sad?\"",
+      "text_zh": "\"那你为什么这么难过呢?\"",
+      "illustration": "assets/adv_frames/ep2/f3.jpg",
+      "audio_start": 231.477,
+      "audio_end": 233.663,
+      "vocab": [],
+      "page_words": [
+        {
+          "term": "smile",
+          "ipa": "smaɪ",
+          "def": "vi./n.[C]笑，微笑",
+          "zh": "笑"
+        },
+        {
+          "term": "rush",
+          "ipa": "rʌʃ",
+          "def": "v./n.[sing.]迅速移动，仓促，急促",
+          "zh": "迅速移动"
+        },
+        {
+          "term": "sad",
+          "ipa": "sæd",
+          "def": "adj.悲哀的，难过的",
+          "zh": "悲哀的"
+        },
+        {
+          "term": "wrong",
+          "ipa": "rɒŋ",
+          "def": "dj.有毛病的，错误的adv.错误地vt.误会，不公平对待n.[C]不义行为[C]罪恶，欺骗",
+          "zh": "有毛病的"
+        },
+        {
+          "term": "here",
+          "ipa": "hɪə(r)",
+          "def": "adv.这就是，在这里",
+          "zh": "这就是"
+        },
+        {
+          "term": "perfect",
+          "ipa": "",
+          "def": "adj.完美的，完全的；正合适，最佳的vt.使完美，使完善",
+          "zh": "完美的"
+        },
+        {
+          "term": "true",
+          "ipa": "truː",
+          "def": "adj.真的，符合事实的，真正的，正确的",
+          "zh": "真的"
+        },
+        {
+          "term": "say",
+          "ipa": "seɪ",
+          "def": "v.说，讲",
+          "zh": "说"
+        },
+        {
+          "term": "quiet",
+          "ipa": "ˈkwaɪət",
+          "def": "adj.安静的n.[U]宁静，安静",
+          "zh": "安静的"
+        },
+        {
+          "term": "forever",
+          "ipa": "fərˈevə(r)",
+          "def": "adv.永远",
+          "zh": "永远"
+        },
+        {
+          "term": "eye",
+          "ipa": "aɪ",
+          "def": "n.[C]眼睛",
+          "zh": "眼睛"
+        },
+        {
+          "term": "live",
+          "ipa": "lɪv][laɪv",
+          "def": "v.居住，生活adj.活的，生动的，现场直播的",
+          "zh": "居住"
+        },
+        {
+          "term": "do",
+          "ipa": "duː",
+          "def": "v.做，干aux v.构成疑问句和否定句",
+          "zh": "做"
+        },
+        {
+          "term": "wise",
+          "ipa": "waɪz",
+          "def": "adj.聪明的，明智的",
+          "zh": "聪明的"
+        },
+        {
+          "term": "find",
+          "ipa": "faɪnd",
+          "def": "vt.找到，发现，查找，查明",
+          "zh": "找到"
+        },
+        {
+          "term": "land",
+          "ipa": "lænd",
+          "def": "n.[U]大陆，土地 [C]国家v.降落，着陆",
+          "zh": "大陆"
+        },
+        {
+          "term": "people",
+          "ipa": "ˈpiːpl",
+          "def": "n.[pl.]人，人们；平民 [C]民族，种族",
+          "zh": "人"
+        }
+      ]
+    },
+    {
+      "node_id": "n056",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "Monkey was quiet for a moment.",
+      "text_zh": "猴子沉默了片刻。",
+      "illustration": "assets/adv_frames/ep2/f0.jpg",
+      "audio_start": 233.664,
+      "audio_end": 236.327,
+      "vocab": [
+        {
+          "term": "monkey",
+          "zh": "猴子",
+          "mode": "review",
+          "options": [
+            "river",
+            "king",
+            "monkey",
+            "stream"
+          ],
+          "answer": 2,
+          "phrase_en": "Monkey was quiet for a moment",
+          "phrase_zh": "猴子沉默了片刻",
+          "ipa": "ˈmʌŋki",
+          "pos": "n.",
+          "def": "n.[C]猴子",
+          "gloss": "猴子"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "jump",
+          "ipa": "dʒʌmp",
+          "def": "v.跳，跃n.[C]跳，跃（指运动）",
+          "zh": "跳"
+        },
+        {
+          "term": "worry",
+          "ipa": "ˈwʌri",
+          "def": "v./n.[C]担心，担忧n.[C]令人担忧的事",
+          "zh": "担心"
+        },
+        {
+          "term": "learn",
+          "ipa": "lɜː(r)n",
+          "def": "v.学习，学会，了解",
+          "zh": "学习"
+        },
+        {
+          "term": "return",
+          "ipa": "rɪˈtɜː(r)n",
+          "def": "vt.归还vi.回来，返回n.[C,U]回报[sing.]返回",
+          "zh": "归还"
+        }
+      ]
+    },
+    {
+      "node_id": "n057",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "Then he said, \"Someday our lives will end. I wish this perfect life could last forever.\"",
+      "text_zh": "然后他说道:\"终有一日,我们的生命将走到尽头。我多么希望这完美的生活能永远持续下去。\"",
+      "illustration": "assets/adv_frames/ep2/f1.jpg",
+      "audio_start": 236.328,
+      "audio_end": 242.361,
+      "vocab": [
+        {
+          "term": "last",
+          "zh": "1. 维持,持续,(2. 最后的)",
+          "mode": "learn",
+          "phrase_en": "I wish this perfect life could last forever.",
+          "phrase_zh": "1. 维持,持续,",
+          "source": "official_words"
+        },
+        {
+          "term": "someday",
+          "zh": "将来有一天",
+          "mode": "learn",
+          "phrase_en": "Someday our lives will end.",
+          "phrase_zh": "将来有一天",
+          "source": "official_words"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "jump",
+          "ipa": "dʒʌmp",
+          "def": "v.跳，跃n.[C]跳，跃（指运动）",
+          "zh": "跳"
+        },
+        {
+          "term": "worry",
+          "ipa": "ˈwʌri",
+          "def": "v./n.[C]担心，担忧n.[C]令人担忧的事",
+          "zh": "担心"
+        },
+        {
+          "term": "learn",
+          "ipa": "lɜː(r)n",
+          "def": "v.学习，学会，了解",
+          "zh": "学习"
+        },
+        {
+          "term": "return",
+          "ipa": "rɪˈtɜː(r)n",
+          "def": "vt.归还vi.回来，返回n.[C,U]回报[sing.]返回",
+          "zh": "归还"
+        }
+      ]
+    },
+    {
+      "node_id": "n058",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "The gibbon's eyes lit up.",
+      "text_zh": "猕猴的眼睛顿时亮了起来。",
+      "illustration": "assets/adv_frames/ep2/f2.jpg",
+      "audio_start": 242.362,
+      "audio_end": 244.538,
+      "vocab": [
+        {
+          "term": "lit up",
+          "zh": "(眼神等)发亮,面露喜色",
+          "mode": "learn",
+          "phrase_en": "The gibbon's eyes lit up.",
+          "phrase_zh": "",
+          "source": "official_words"
+        },
+        {
+          "term": "gibbon",
+          "zh": "长臂猿",
+          "mode": "review",
+          "options": [
+            "king",
+            "gibbon",
+            "eyes",
+            "dangerous"
+          ],
+          "answer": 1,
+          "phrase_en": "The gibbon's eyes lit up",
+          "phrase_zh": "翼手猿的眼睛亮了起来",
+          "gloss": "猿"
+        },
+        {
+          "term": "eyes",
+          "zh": "眼睛",
+          "mode": "test",
+          "options": [
+            "跃入",
+            "长臂猿",
+            "瀑布",
+            "眼睛"
+          ],
+          "answer": 3,
+          "phrase_en": "The gibbon's eyes lit up",
+          "phrase_zh": "翼手猿的眼睛亮了起来",
+          "ipa": "aɪ",
+          "pos": "n.",
+          "def": "n.[C]眼睛",
+          "gloss": "眼睛"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "jump",
+          "ipa": "dʒʌmp",
+          "def": "v.跳，跃n.[C]跳，跃（指运动）",
+          "zh": "跳"
+        },
+        {
+          "term": "worry",
+          "ipa": "ˈwʌri",
+          "def": "v./n.[C]担心，担忧n.[C]令人担忧的事",
+          "zh": "担心"
+        },
+        {
+          "term": "learn",
+          "ipa": "lɜː(r)n",
+          "def": "v.学习，学会，了解",
+          "zh": "学习"
+        },
+        {
+          "term": "return",
+          "ipa": "rɪˈtɜː(r)n",
+          "def": "vt.归还vi.回来，返回n.[C,U]回报[sing.]返回",
+          "zh": "归还"
+        }
+      ]
+    },
+    {
+      "node_id": "n059",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"Oh,\" he said. \"You want to live forever?\"",
+      "text_zh": "\"哦,\"他说道,\"你想永生吗?\"",
+      "illustration": "assets/adv_frames/ep2/f3.jpg",
+      "audio_start": 244.539,
+      "audio_end": 248.553,
+      "vocab": [],
+      "page_words": [
+        {
+          "term": "jump",
+          "ipa": "dʒʌmp",
+          "def": "v.跳，跃n.[C]跳，跃（指运动）",
+          "zh": "跳"
+        },
+        {
+          "term": "worry",
+          "ipa": "ˈwʌri",
+          "def": "v./n.[C]担心，担忧n.[C]令人担忧的事",
+          "zh": "担心"
+        },
+        {
+          "term": "learn",
+          "ipa": "lɜː(r)n",
+          "def": "v.学习，学会，了解",
+          "zh": "学习"
+        },
+        {
+          "term": "return",
+          "ipa": "rɪˈtɜː(r)n",
+          "def": "vt.归还vi.回来，返回n.[C,U]回报[sing.]返回",
+          "zh": "归还"
+        }
+      ]
+    },
+    {
+      "node_id": "n060",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"I do,\" said Monkey.",
+      "text_zh": "\"我同意,\"猴子说道。",
+      "illustration": "assets/adv_frames/ep2/f0.jpg",
+      "audio_start": 248.554,
+      "audio_end": 251.069,
+      "vocab": [
+        {
+          "term": "monkey",
+          "zh": "猴子",
+          "mode": "review",
+          "options": [
+            "waterfall",
+            "monkey",
+            "king",
+            "apes"
+          ],
+          "answer": 1,
+          "phrase_en": "said Monkey",
+          "phrase_zh": "猴子说道",
+          "ipa": "ˈmʌŋki",
+          "pos": "n.",
+          "def": "n.[C]猴子",
+          "gloss": "猴子"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "bowl",
+          "ipa": "bəʊl",
+          "def": "n.[C]碗",
+          "zh": "碗"
+        },
+        {
+          "term": "cup",
+          "ipa": "kʌp",
+          "def": "n.[C]杯，杯子",
+          "zh": "杯"
+        },
+        {
+          "term": "plate",
+          "ipa": "pleɪt",
+          "def": "n.[C]盘子，碟子",
+          "zh": "盘子"
+        },
+        {
+          "term": "against",
+          "ipa": "əˈɡenst",
+          "def": "prep.倚，碰，撞，违反，反对",
+          "zh": "倚"
+        },
+        {
+          "term": "bedroom",
+          "ipa": "ˈbedruːm",
+          "def": "n.[C]卧室",
+          "zh": "卧室"
+        },
+        {
+          "term": "bed",
+          "ipa": "bed",
+          "def": "n.[C,U]床[C]河床，海底",
+          "zh": "床"
+        },
+        {
+          "term": "monkey",
+          "ipa": "ˈmʌŋki",
+          "def": "n.[C]猴子",
+          "zh": "猴子"
+        },
+        {
+          "term": "think",
+          "ipa": "θɪŋk",
+          "def": "v.认为，想。思考",
+          "zh": "认为"
+        },
+        {
+          "term": "make",
+          "ipa": "meɪk",
+          "def": "v.使成为，制造，做，做出，组成，挣钱，铺床",
+          "zh": "使成为"
+        },
+        {
+          "term": "through",
+          "ipa": "θruː",
+          "def": "prep.以，凭借，穿过，自始至终adv.通过，完全，彻底，自始至终",
+          "zh": "以"
+        },
+        {
+          "term": "probably",
+          "ipa": "ˈprɒbəbli",
+          "def": "adv.很可能，大概",
+          "zh": "很可能"
+        },
+        {
+          "term": "river",
+          "ipa": "ˈrɪvə(r)",
+          "def": "n.[C]河，江",
+          "zh": "河"
+        },
+        {
+          "term": "alive",
+          "ipa": "əˈlaɪv",
+          "def": "adj.活着，有生气的",
+          "zh": "活着"
+        },
+        {
+          "term": "laugh",
+          "ipa": "lɑːf",
+          "def": "v.笑，发笑n.笑声",
+          "zh": "笑"
+        },
+        {
+          "term": "lucky",
+          "ipa": "ˈlʌki",
+          "def": "adj.幸运的",
+          "zh": "幸运的"
+        },
+        {
+          "term": "perfect",
+          "ipa": "",
+          "def": "adj.完美的，完全的；正合适，最佳的vt.使完美，使完善",
+          "zh": "完美的"
+        },
+        {
+          "term": "home",
+          "ipa": "həʊm",
+          "def": "n.[C,U]家，养老院adv.到家，在家",
+          "zh": "家"
+        },
+        {
+          "term": "follow",
+          "ipa": "ˈfɒləʊ",
+          "def": "v.遵循，接受，跟随，关注",
+          "zh": "遵循"
+        },
+        {
+          "term": "jump",
+          "ipa": "dʒʌmp",
+          "def": "",
+          "zh": "jump"
+        }
+      ]
+    },
+    {
+      "node_id": "n061",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "The gibbon rubbed his chin.",
+      "text_zh": "猴子揉了揉下巴。",
+      "illustration": "assets/adv_frames/ep2/f1.jpg",
+      "audio_start": 251.07,
+      "audio_end": 253.583,
+      "vocab": [
+        {
+          "term": "gibbon",
+          "zh": "长臂猿",
+          "mode": "review",
+          "options": [
+            "dangerous",
+            "gibbon",
+            "monkey",
+            "splashed"
+          ],
+          "answer": 1,
+          "phrase_en": "The gibbon rubbed his chin",
+          "phrase_zh": "猫猿揉了揉下巴。",
+          "gloss": "猿"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "jump",
+          "ipa": "dʒʌmp",
+          "def": "v.跳，跃n.[C]跳，跃（指运动）",
+          "zh": "跳"
+        },
+        {
+          "term": "worry",
+          "ipa": "ˈwʌri",
+          "def": "v./n.[C]担心，担忧n.[C]令人担忧的事",
+          "zh": "担心"
+        },
+        {
+          "term": "learn",
+          "ipa": "lɜː(r)n",
+          "def": "v.学习，学会，了解",
+          "zh": "学习"
+        },
+        {
+          "term": "return",
+          "ipa": "rɪˈtɜː(r)n",
+          "def": "vt.归还vi.回来，返回n.[C,U]回报[sing.]返回",
+          "zh": "归还"
+        }
+      ]
+    },
+    {
+      "node_id": "n062",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"Then you must study with a sage. Sages are very wise people. They can turn themselves into other animals. They can fly through the sky. And they know how to live forever.\"",
+      "text_zh": "\"那么,你必须与贤者一同学习。贤者都是智慧非凡的人;他们能够化身为其他动物,也能在空中翱翔;而且他们懂得如何永生。\"",
+      "illustration": "assets/adv_frames/ep2/f2.jpg",
+      "audio_start": 253.584,
+      "audio_end": 269.315,
+      "vocab": [
+        {
+          "term": "sage",
+          "zh": "圣人,圣贤",
+          "mode": "learn",
+          "phrase_en": "Then you must study with a sage.",
+          "phrase_zh": "圣人,圣贤",
+          "source": "official_words"
+        }
+      ],
+      "quiz_after": {
+        "q": "What are sages?",
+        "choices": [
+          "very wise people",
+          "very young people",
+          "very rich people"
+        ],
+        "answer": 0,
+        "q_zh": "圣人是什么？",
+        "choices_zh": [
+          "非常聪明的人",
+          "非常年轻的人",
+          "非常富有的人"
+        ]
+      },
+      "page_words": [
+        {
+          "term": "jump",
+          "ipa": "dʒʌmp",
+          "def": "v.跳，跃n.[C]跳，跃（指运动）",
+          "zh": "跳"
+        },
+        {
+          "term": "worry",
+          "ipa": "ˈwʌri",
+          "def": "v./n.[C]担心，担忧n.[C]令人担忧的事",
+          "zh": "担心"
+        },
+        {
+          "term": "learn",
+          "ipa": "lɜː(r)n",
+          "def": "v.学习，学会，了解",
+          "zh": "学习"
+        },
+        {
+          "term": "return",
+          "ipa": "rɪˈtɜː(r)n",
+          "def": "vt.归还vi.回来，返回n.[C,U]回报[sing.]返回",
+          "zh": "归还"
+        }
+      ]
+    },
+    {
+      "node_id": "n063",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "Monkey smiled again.",
+      "text_zh": "猴子又笑了。",
+      "illustration": "assets/adv_frames/ep2/f3.jpg",
+      "audio_start": 269.316,
+      "audio_end": 271.834,
+      "vocab": [
+        {
+          "term": "monkey",
+          "zh": "猴子",
+          "mode": "review",
+          "options": [
+            "waterfall",
+            "cave",
+            "monkey",
+            "gibbon"
+          ],
+          "answer": 2,
+          "phrase_en": "Monkey smiled again",
+          "phrase_zh": "猴子再次笑了",
+          "ipa": "ˈmʌŋki",
+          "pos": "n.",
+          "def": "n.[C]猴子",
+          "gloss": "猴子"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "jump",
+          "ipa": "dʒʌmp",
+          "def": "v.跳，跃n.[C]跳，跃（指运动）",
+          "zh": "跳"
+        },
+        {
+          "term": "worry",
+          "ipa": "ˈwʌri",
+          "def": "v./n.[C]担心，担忧n.[C]令人担忧的事",
+          "zh": "担心"
+        },
+        {
+          "term": "learn",
+          "ipa": "lɜː(r)n",
+          "def": "v.学习，学会，了解",
+          "zh": "学习"
+        },
+        {
+          "term": "return",
+          "ipa": "rɪˈtɜː(r)n",
+          "def": "vt.归还vi.回来，返回n.[C,U]回报[sing.]返回",
+          "zh": "归还"
+        }
+      ]
+    },
+    {
+      "node_id": "n064",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"Where can I find a sage?\" he asked.",
+      "text_zh": "\"我可以在哪里找到智者?\"他问道。",
+      "illustration": "assets/adv_frames/ep2/f0.jpg",
+      "audio_start": 271.835,
+      "audio_end": 274.961,
+      "vocab": [],
+      "page_words": [
+        {
+          "term": "jump",
+          "ipa": "dʒʌmp",
+          "def": "v.跳，跃n.[C]跳，跃（指运动）",
+          "zh": "跳"
+        },
+        {
+          "term": "worry",
+          "ipa": "ˈwʌri",
+          "def": "v./n.[C]担心，担忧n.[C]令人担忧的事",
+          "zh": "担心"
+        },
+        {
+          "term": "learn",
+          "ipa": "lɜː(r)n",
+          "def": "v.学习，学会，了解",
+          "zh": "学习"
+        },
+        {
+          "term": "return",
+          "ipa": "rɪˈtɜː(r)n",
+          "def": "vt.归还vi.回来，返回n.[C,U]回报[sing.]返回",
+          "zh": "归还"
+        }
+      ]
+    },
+    {
+      "node_id": "n065",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"You must find a land with people,\" said the gibbon.",
+      "text_zh": "\"你必须找到一片有人居住的土地,\"长臂猿说道。",
+      "illustration": "assets/adv_frames/ep2/f1.jpg",
+      "audio_start": 274.962,
+      "audio_end": 278.532,
+      "vocab": [
+        {
+          "term": "gibbon",
+          "zh": "长臂猿",
+          "mode": "review",
+          "options": [
+            "dangerous",
+            "gibbon",
+            "leaped",
+            "king"
+          ],
+          "answer": 1,
+          "phrase_en": "said the gibbon",
+          "phrase_zh": ",长臂猿说道",
+          "gloss": "猿"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "jump",
+          "ipa": "dʒʌmp",
+          "def": "v.跳，跃n.[C]跳，跃（指运动）",
+          "zh": "跳"
+        },
+        {
+          "term": "worry",
+          "ipa": "ˈwʌri",
+          "def": "v./n.[C]担心，担忧n.[C]令人担忧的事",
+          "zh": "担心"
+        },
+        {
+          "term": "learn",
+          "ipa": "lɜː(r)n",
+          "def": "v.学习，学会，了解",
+          "zh": "学习"
+        },
+        {
+          "term": "return",
+          "ipa": "rɪˈtɜː(r)n",
+          "def": "vt.归还vi.回来，返回n.[C,U]回报[sing.]返回",
+          "zh": "归还"
+        }
+      ]
+    },
+    {
+      "node_id": "n066",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"That's where you'll find a sage.\"",
+      "text_zh": "\"在那里你可以找到一位萨迦大师。\"",
+      "illustration": "assets/adv_frames/ep2/f2.jpg",
+      "audio_start": 278.533,
+      "audio_end": 282.281,
+      "vocab": [],
+      "page_words": [
+        {
+          "term": "jump",
+          "ipa": "dʒʌmp",
+          "def": "v.跳，跃n.[C]跳，跃（指运动）",
+          "zh": "跳"
+        },
+        {
+          "term": "worry",
+          "ipa": "ˈwʌri",
+          "def": "v./n.[C]担心，担忧n.[C]令人担忧的事",
+          "zh": "担心"
+        },
+        {
+          "term": "learn",
+          "ipa": "lɜː(r)n",
+          "def": "v.学习，学会，了解",
+          "zh": "学习"
+        },
+        {
+          "term": "return",
+          "ipa": "rɪˈtɜː(r)n",
+          "def": "vt.归还vi.回来，返回n.[C,U]回报[sing.]返回",
+          "zh": "归还"
+        }
+      ]
+    },
+    {
+      "node_id": "n067",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "The next morning Monkey built a raft and loaded food onto it.",
+      "text_zh": "次日清晨,猴子制作了一艘木筏,并将食物装上船。",
+      "illustration": "assets/adv_frames/ep2/f3.jpg",
+      "audio_start": 282.282,
+      "audio_end": 288.3,
+      "vocab": [
+        {
+          "term": "raft",
+          "zh": "木筏,橡皮船",
+          "mode": "learn",
+          "phrase_en": "The next morning Monkey built a raft and loaded food onto it.",
+          "phrase_zh": "木筏,橡皮船",
+          "source": "official_words"
+        },
+        {
+          "term": "built",
+          "zh": "建筑,建造 (build-built)",
+          "mode": "learn",
+          "phrase_en": "The next morning Monkey built a raft and loaded food onto it.",
+          "phrase_zh": "建筑,建造",
+          "source": "official_words"
+        },
+        {
+          "term": "monkey",
+          "zh": "猴子",
+          "mode": "review",
+          "options": [
+            "gibbon",
+            "stream",
+            "monkey",
+            "light"
+          ],
+          "answer": 2,
+          "phrase_en": "next morning monkey built",
+          "phrase_zh": "次日清晨,猴子完成了建造。",
+          "ipa": "ˈmʌŋki",
+          "pos": "n.",
+          "def": "n.[C]猴子",
+          "gloss": "猴子"
+        }
+      ]
+    },
+    {
+      "node_id": "n068",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "He pushed the raft into the stream and jumped on.",
+      "text_zh": "他将木筏推入溪流中,然后跳了上去。",
+      "illustration": "assets/adv_frames/ep2/f0.jpg",
+      "audio_start": 288.301,
+      "audio_end": 292.185,
+      "vocab": [
+        {
+          "term": "stream",
+          "zh": "小溪",
+          "mode": "review",
+          "options": [
+            "stream",
+            "gibbon",
+            "apes",
+            "king"
+          ],
+          "answer": 0,
+          "phrase_en": "into the stream and jumped",
+          "phrase_zh": "进入溪流后跃起",
+          "gloss": "小河"
+        }
+      ]
+    },
+    {
+      "node_id": "n069",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "As the raft began to float away, Monkey waved to his friends.",
+      "text_zh": "当木筏开始漂离时,猴子向他的朋友们挥手致意。",
+      "illustration": "assets/adv_frames/ep2/f1.jpg",
+      "audio_start": 292.186,
+      "audio_end": 297.342,
+      "vocab": [
+        {
+          "term": "float",
+          "zh": "1. 漂流,(2. (在水上或空中)漂浮)",
+          "mode": "learn",
+          "phrase_en": "As the raft began to float away, Monkey waved to his friends.",
+          "phrase_zh": "1. 漂流,",
+          "source": "official_words"
+        },
+        {
+          "term": "monkey",
+          "zh": "猴子",
+          "mode": "review",
+          "options": [
+            "monkey",
+            "leaped",
+            "waterfall",
+            "dangerous"
+          ],
+          "answer": 0,
+          "phrase_en": "Monkey waved to his friends",
+          "phrase_zh": "猴子向朋友们挥手致意",
+          "ipa": "ˈmʌŋki",
+          "pos": "n.",
+          "def": "n.[C]猴子",
+          "gloss": "猴子"
+        }
+      ]
+    },
+    {
+      "node_id": "n070",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"Don't worry!\" he called.",
+      "text_zh": "\"别担心!\"他喊道。",
+      "illustration": "assets/adv_frames/ep2/f2.jpg",
+      "audio_start": 297.343,
+      "audio_end": 299.612,
+      "vocab": []
+    },
+    {
+      "node_id": "n071",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"After I learn how to live forever, I will return!\"",
+      "text_zh": "\"当我学会永生之后,我将归来!\"",
+      "illustration": "assets/adv_frames/ep2/f3.jpg",
+      "audio_start": 299.613,
+      "audio_end": 307.423,
+      "vocab": []
+    }
+  ],
+  "puzzles": [
+    {
+      "sentence": "They can turn themselves into other animals.",
+      "words": [
+        "into",
+        "turn",
+        "themselves",
+        "other",
+        "animals",
+        "can",
+        "They"
+      ]
+    },
+    {
+      "sentence": "Others fought over the bedrooms.",
+      "words": [
+        "the",
+        "bedrooms",
+        "over",
+        "Others",
+        "fought"
+      ]
+    }
+  ],
+  "patterns": [
+    {
+      "pattern": "Monkey splashed through the waterfall and landed in a large cave.",
+      "term": "waterfall",
+      "zh": "瀑布"
+    },
+    {
+      "pattern": "His eyes opened wide.",
+      "term": "eyes",
+      "zh": "眼睛"
+    },
+    {
+      "pattern": "The cave was filled with bamboo, trees, and beautiful flowers.",
+      "term": "cave",
+      "zh": "洞穴"
+    }
+  ],
+  "quiz": [],
+  "script_lexicon": {
+    "land": {
+      "ipa": "lænd",
+      "pos": "n.",
+      "def": "n.[U]大陆，土地 [C]国家v.降落，着陆",
+      "zh": "大陆"
+    },
+    "large": {
+      "ipa": "lɑː(r)dʒ",
+      "pos": "adj.",
+      "def": "adj.大号的，大的，大量的",
+      "zh": "大号的"
+    },
+    "eye": {
+      "ipa": "aɪ",
+      "pos": "n.",
+      "def": "n.[C]眼睛",
+      "zh": "眼睛"
+    },
+    "open": {
+      "ipa": "ˈəʊpən",
+      "pos": "v.",
+      "def": "v.开，打开，开业adj.敞开的，开阔的n.[sing.]户外，公开",
+      "zh": "开"
+    },
+    "wide": {
+      "ipa": "waɪd",
+      "pos": "adj.",
+      "def": "adj.宽的，宽阔的，……宽的adv.尽可能远地，充分地",
+      "zh": "宽的"
+    },
+    "bamboo": {
+      "ipa": "ˌbæmˈbuː",
+      "pos": "n.",
+      "def": "n.[C,U]竹子",
+      "zh": "竹子"
+    },
+    "beautiful": {
+      "ipa": "ˈbjuːtɪfl",
+      "pos": "adj.",
+      "def": "adj.美妙的，美丽的，美好的",
+      "zh": "美妙的"
+    },
+    "flower": {
+      "ipa": "ˈflaʊə(r)",
+      "pos": "n.",
+      "def": "n.[C]花",
+      "zh": "花"
+    },
+    "cover": {
+      "ipa": "ˈkʌvə(r)",
+      "pos": "vt.",
+      "def": "vt.遮盖，覆盖；占（一片面积）n.[C]覆盖物，盖子，封面",
+      "zh": "遮盖"
+    },
+    "wall": {
+      "ipa": "wɔːl",
+      "pos": "n.",
+      "def": "n.[C]墙",
+      "zh": "墙"
+    },
+    "fill": {
+      "ipa": "fɪl",
+      "pos": "v.",
+      "def": "v.（使）充满，装满",
+      "zh": "使"
+    },
+    "air": {
+      "ipa": "eə",
+      "pos": "n.",
+      "def": "n.[U]空气，天空",
+      "zh": "空气"
+    },
+    "long": {
+      "ipa": "lɒŋ",
+      "pos": "adj.",
+      "def": "adj.长的adv.长久的",
+      "zh": "长的"
+    },
+    "bowl": {
+      "ipa": "bəʊl",
+      "pos": "n.",
+      "def": "n.[C]碗",
+      "zh": "碗"
+    },
+    "cup": {
+      "ipa": "kʌp",
+      "pos": "n.",
+      "def": "n.[C]杯，杯子",
+      "zh": "杯"
+    },
+    "plate": {
+      "ipa": "pleɪt",
+      "pos": "n.",
+      "def": "n.[C]盘子，碟子",
+      "zh": "盘子"
+    },
+    "against": {
+      "ipa": "əˈɡenst",
+      "pos": "prep.",
+      "def": "prep.倚，碰，撞，违反，反对",
+      "zh": "倚"
+    },
+    "bedroom": {
+      "ipa": "ˈbedruːm",
+      "pos": "n.",
+      "def": "n.[C]卧室",
+      "zh": "卧室"
+    },
+    "bed": {
+      "ipa": "bed",
+      "pos": "n.",
+      "def": "n.[C,U]床[C]河床，海底",
+      "zh": "床"
+    },
+    "monkey": {
+      "ipa": "ˈmʌŋki",
+      "pos": "n.",
+      "def": "n.[C]猴子",
+      "zh": "猴子"
+    },
+    "think": {
+      "ipa": "θɪŋk",
+      "pos": "v.",
+      "def": "v.认为，想。思考",
+      "zh": "认为"
+    },
+    "make": {
+      "ipa": "meɪk",
+      "pos": "v.",
+      "def": "v.使成为，制造，做，做出，组成，挣钱，铺床",
+      "zh": "使成为"
+    },
+    "through": {
+      "ipa": "θruː",
+      "pos": "prep.",
+      "def": "prep.以，凭借，穿过，自始至终adv.通过，完全，彻底，自始至终",
+      "zh": "以"
+    },
+    "probably": {
+      "ipa": "ˈprɒbəbli",
+      "pos": "adv.",
+      "def": "adv.很可能，大概",
+      "zh": "很可能"
+    },
+    "river": {
+      "ipa": "ˈrɪvə(r)",
+      "pos": "n.",
+      "def": "n.[C]河，江",
+      "zh": "河"
+    },
+    "alive": {
+      "ipa": "əˈlaɪv",
+      "pos": "adj.",
+      "def": "adj.活着，有生气的",
+      "zh": "活着"
+    },
+    "laugh": {
+      "ipa": "lɑːf",
+      "pos": "v.",
+      "def": "v.笑，发笑n.笑声",
+      "zh": "笑"
+    },
+    "lucky": {
+      "ipa": "ˈlʌki",
+      "pos": "adj.",
+      "def": "adj.幸运的",
+      "zh": "幸运的"
+    },
+    "perfect": {
+      "ipa": "",
+      "pos": "adj.",
+      "def": "adj.完美的，完全的；正合适，最佳的vt.使完美，使完善",
+      "zh": "完美的"
+    },
+    "home": {
+      "ipa": "həʊm",
+      "pos": "n.",
+      "def": "n.[C,U]家，养老院adv.到家，在家",
+      "zh": "家"
+    },
+    "follow": {
+      "ipa": "ˈfɒləʊ",
+      "pos": "v.",
+      "def": "v.遵循，接受，跟随，关注",
+      "zh": "遵循"
+    },
+    "jump": {
+      "ipa": "dʒʌmp",
+      "pos": "",
+      "def": "",
+      "zh": "jump"
+    },
+    "back": {
+      "ipa": "bæk",
+      "pos": "n.",
+      "def": "n.[C]后面，背部adj.后面的adv.回原处，向后地",
+      "zh": "后面"
+    },
+    "water": {
+      "ipa": "ˈwɔːtə",
+      "pos": "n.",
+      "def": "n.[U]水[pl.]（某一江、河、湖、海的）水域vt.给……浇水",
+      "zh": "水"
+    },
+    "head": {
+      "ipa": "hed",
+      "pos": "n.",
+      "def": "n.[C]头（部）[C,U]负责人[sing.]队首vi.朝（某方向）行进",
+      "zh": "头"
+    },
+    "danger": {
+      "ipa": "ˈdeɪndʒə(r)",
+      "pos": "n.",
+      "def": "n.[U]危险[C]危害；威胁",
+      "zh": "危险"
+    },
+    "wonderful": {
+      "ipa": "ˈwʌndəf(ə)l",
+      "pos": "adj.",
+      "def": "adj.精彩的，绝妙的",
+      "zh": "精彩的"
+    },
+    "fight": {
+      "ipa": "faɪt",
+      "pos": "v.",
+      "def": "v./n.[C]打架，战斗v.与……作斗争",
+      "zh": "打架"
+    },
+    "argue": {
+      "ipa": "ˈɑːrɡjuː",
+      "pos": "v.",
+      "def": "v.争吵，争论，讨论；认为互相",
+      "zh": "争吵"
+    },
+    "first": {
+      "ipa": "fɜː(r)st",
+      "pos": "num.",
+      "def": "num.第一adj.第一的；首要的adv.第一，最初n.[sing.]第一，最初",
+      "zh": "第一"
+    },
+    "another": {
+      "ipa": "əˈnʌðə(r)",
+      "pos": "adj.",
+      "def": "adj./pron.另一，又一",
+      "zh": "另一"
+    },
+    "do": {
+      "ipa": "duː",
+      "pos": "v.",
+      "def": "v.做，干aux v.构成疑问句和否定句",
+      "zh": "做"
+    },
+    "watch": {
+      "ipa": "wɒtʃ",
+      "pos": "v.",
+      "def": "v.注视，观看，留意，小心n.[C]表，手表[U]观察",
+      "zh": "注视"
+    },
+    "fold": {
+      "ipa": "fəʊld",
+      "pos": "v.",
+      "def": "v.折叠，对折",
+      "zh": "折叠"
+    },
+    "arm": {
+      "ipa": "ɑːrm",
+      "pos": "n.",
+      "def": "n.[C]手臂，上肢v.装备，武装",
+      "zh": "手臂"
+    },
+    "call": {
+      "ipa": "kɔːl",
+      "pos": "v.",
+      "def": "v.给……打电话，把……叫作，呼喊n.[C]电话，叫声圈国",
+      "zh": "给"
+    },
+    "stop": {
+      "ipa": "stɒp",
+      "pos": "n.",
+      "def": "n.[C]车站，停止v.停止，阻止，逗留",
+      "zh": "车站"
+    },
+    "look": {
+      "ipa": "lʊk",
+      "pos": "vi.",
+      "def": "vi.看v.-link.看上去n.[C]看，注视，外表，表情",
+      "zh": "看"
+    },
+    "right": {
+      "ipa": "raɪt",
+      "pos": "adj.",
+      "def": "adj.正确的，适当的，右边的adv.向右边，立即n.[sing.]右边[C，U]权利",
+      "zh": "正确的"
+    },
+    "play": {
+      "ipa": "pleɪ",
+      "pos": "v.",
+      "def": "v.参加（比赛或运动），玩耍，吹奏（乐器），演奏，播放，发挥（作用）；开（玩笑）n.[C]戏剧",
+      "zh": "参加"
+    },
+    "forest": {
+      "ipa": "ˈfɒrɪst",
+      "pos": "n.",
+      "def": "n.[C,U]森林",
+      "zh": "森林"
+    },
+    "safe": {
+      "ipa": "seɪf",
+      "pos": "adj.",
+      "def": "adj.安全的，无危险的；谨慎的n.[C]保险箱",
+      "zh": "安全的"
+    },
+    "night": {
+      "ipa": "naɪt",
+      "pos": "n.",
+      "def": "n.[C,U]晚上，夜晚",
+      "zh": "晚上"
+    },
+    "huge": {
+      "ipa": "hjuːdʒ",
+      "pos": "adj.",
+      "def": "adj.巨大的，极多的",
+      "zh": "巨大的"
+    },
+    "dance": {
+      "ipa": "dɑːns",
+      "pos": "v.",
+      "def": "v.跳舞n.[C,U]舞蹈",
+      "zh": "跳舞"
+    },
+    "sing": {
+      "ipa": "sɪŋ",
+      "pos": "",
+      "def": "",
+      "zh": "sing"
+    },
+    "smile": {
+      "ipa": "smaɪ",
+      "pos": "vi.",
+      "def": "vi./n.[C]笑，微笑",
+      "zh": "笑"
+    },
+    "rush": {
+      "ipa": "rʌʃ",
+      "pos": "v.",
+      "def": "v./n.[sing.]迅速移动，仓促，急促",
+      "zh": "迅速移动"
+    },
+    "sad": {
+      "ipa": "sæd",
+      "pos": "adj.",
+      "def": "adj.悲哀的，难过的",
+      "zh": "悲哀的"
+    },
+    "wrong": {
+      "ipa": "rɒŋ",
+      "pos": "",
+      "def": "dj.有毛病的，错误的adv.错误地vt.误会，不公平对待n.[C]不义行为[C]罪恶，欺骗",
+      "zh": "有毛病的"
+    },
+    "here": {
+      "ipa": "hɪə(r)",
+      "pos": "adv.",
+      "def": "adv.这就是，在这里",
+      "zh": "这就是"
+    },
+    "true": {
+      "ipa": "truː",
+      "pos": "adj.",
+      "def": "adj.真的，符合事实的，真正的，正确的",
+      "zh": "真的"
+    },
+    "say": {
+      "ipa": "seɪ",
+      "pos": "v.",
+      "def": "v.说，讲",
+      "zh": "说"
+    },
+    "quiet": {
+      "ipa": "ˈkwaɪət",
+      "pos": "adj.",
+      "def": "adj.安静的n.[U]宁静，安静",
+      "zh": "安静的"
+    },
+    "forever": {
+      "ipa": "fərˈevə(r)",
+      "pos": "adv.",
+      "def": "adv.永远",
+      "zh": "永远"
+    },
+    "live": {
+      "ipa": "lɪv][laɪv",
+      "pos": "v.",
+      "def": "v.居住，生活adj.活的，生动的，现场直播的",
+      "zh": "居住"
+    },
+    "wise": {
+      "ipa": "waɪz",
+      "pos": "adj.",
+      "def": "adj.聪明的，明智的",
+      "zh": "聪明的"
+    },
+    "find": {
+      "ipa": "faɪnd",
+      "pos": "vt.",
+      "def": "vt.找到，发现，查找，查明",
+      "zh": "找到"
+    },
+    "people": {
+      "ipa": "ˈpiːpl",
+      "pos": "n.",
+      "def": "n.[pl.]人，人们；平民 [C]民族，种族",
+      "zh": "人"
+    },
+    "worry": {
+      "ipa": "ˈwʌri",
+      "pos": "v.",
+      "def": "v./n.[C]担心，担忧n.[C]令人担忧的事",
+      "zh": "担心"
+    },
+    "learn": {
+      "ipa": "lɜː(r)n",
+      "pos": "v.",
+      "def": "v.学习，学会，了解",
+      "zh": "学习"
+    },
+    "return": {
+      "ipa": "rɪˈtɜː(r)n",
+      "pos": "vt.",
+      "def": "vt.归还vi.回来，返回n.[C,U]回报[sing.]返回",
+      "zh": "归还"
+    }
+  },
+  "script_gloss": {
+    "monkey": "猴子",
+    "splashed": "溅水",
+    "waterfall": "瀑布",
+    "landed": "着陆",
+    "large": "大的",
+    "cave": "洞穴",
+    "eyes": "眼睛",
+    "opened": "打开",
+    "wide": "宽阔的",
+    "bamboo": "竹子",
+    "beautiful": "美丽的",
+    "flowers": "花",
+    "moss": "苔藓",
+    "covered": "覆盖",
+    "walls": "墙壁",
+    "stream": "小河",
+    "flowed": "流动",
+    "glowing": "发光的",
+    "mist": "雾气",
+    "filled": "充满了",
+    "air": "空气",
+    "long": "长的",
+    "table": "桌子",
+    "bowls": "碗",
+    "cups": "杯子",
+    "plates": "盘子",
+    "fireplace": "壁炉",
+    "against": "靠着",
+    "bedrooms": "卧室",
+    "cozy": "舒适的",
+    "beds": "床",
+    "monkeys": "猴子",
+    "apes": "猿",
+    "think": "想",
+    "made": "制造",
+    "through": "穿过",
+    "probably": "大概",
+    "washed": "冲走",
+    "river": "河",
+    "splash": "溅湿",
+    "alive": "活着的",
+    "laughed": "笑",
+    "lucky": "幸运的",
+    "perfect": "完美的",
+    "home": "家",
+    "follow": "跟随",
+    "jumped": "跳跃",
+    "back": "后面",
+    "water": "水",
+    "scratched": "抓",
+    "heads": "头",
+    "dangerous": "危险的",
+    "gibbon": "猿",
+    "wonderful": "极好的",
+    "fighting": "打斗",
+    "arguing": "争论",
+    "grabbed": "抓住",
+    "another": "另一个",
+    "fought": "战斗",
+    "bed": "床",
+    "first": "第一",
+    "yelled": "大喊",
+    "watched": "观看",
+    "friends": "朋友",
+    "moment": "时刻",
+    "folded": "折叠",
+    "arms": "手臂",
+    "ahem": "咳",
+    "called": "叫",
+    "stopped": "停止",
+    "looked": "看",
+    "right": "正确的",
+    "bowed": "鞠躬",
+    "hail": "致敬",
+    "played": "玩",
+    "forest": "森林",
+    "safely": "安全地",
+    "night": "夜晚",
+    "huge": "巨大的",
+    "feast": "盛宴",
+    "danced": "跳舞",
+    "sang": "唱",
+    "music": "音乐",
+    "throne": "王座",
+    "smiled": "微笑",
+    "faded": "消失",
+    "frowning": "皱眉",
+    "rushed": "冲",
+    "majesty": "陛下",
+    "sad": "悲伤的",
+    "wrong": "错误",
+    "sighed": "叹息",
+    "life": "生活",
+    "here": "这里",
+    "true": "真实的",
+    "said": "说",
+    "quiet": "安静的",
+    "someday": "某天",
+    "lives": "生命",
+    "forever": "永远",
+    "lit": "点亮",
+    "sage": "智者",
+    "wise": "智慧的",
+    "find": "发现",
+    "land": "土地",
+    "people": "人们",
+    "raft": "木筏",
+    "loaded": "装载",
+    "float": "漂浮",
+    "waved": "挥手",
+    "worry": "担心",
+    "learn": "学习",
+    "live": "生活",
+    "return": "返回"
+  },
+  "official_words": [
+    {
+      "term": "land",
+      "zh": "降落,登陆",
+      "example": "Monkey splashed through the waterfall and landed in a large cave."
+    },
+    {
+      "term": "wide",
+      "zh": "张得(或开得)很大地",
+      "example": "His eyes opened wide."
+    },
+    {
+      "term": "bamboo",
+      "zh": "竹子",
+      "example": "The cave was filled with bamboo, trees, and beautiful flowers."
+    },
+    {
+      "term": "moss",
+      "zh": "苔藓,地衣",
+      "example": "Moss covered the walls."
+    },
+    {
+      "term": "glowing",
+      "zh": "鲜艳的,鲜明的,炽热的",
+      "example": "A stream flowed through the cave, and glowing light and mist filled the air."
+    },
+    {
+      "term": "fireplace",
+      "zh": "壁炉",
+      "example": "A fireplace sat against one wall."
+    },
+    {
+      "term": "cozy",
+      "zh": "(房间或者家里)舒适的,惬意的",
+      "example": "Deeper in the cave, Monkey found bedrooms with cozy beds."
+    },
+    {
+      "term": "outside",
+      "zh": "(在)外面",
+      "example": "Outside, the other monkeys and apes were looking at the waterfall."
+    },
+    {
+      "term": "wash away",
+      "zh": "冲走",
+      "example": "He probably got washed away down the river."
+    },
+    {
+      "term": "perfect",
+      "zh": "完美的",
+      "example": "I found a perfect home for all of us."
+    },
+    {
+      "term": "dangerous",
+      "zh": "危险的",
+      "example": "\"It still looks dangerous ,\" said one monkey."
+    },
+    {
+      "term": "argue",
+      "zh": "争论,辩论",
+      "example": "Some of the monkeys and apes began fighting and arguing."
+    },
+    {
+      "term": "fold",
+      "zh": "1. 弯曲着,弓着(脚,身体等),(2. 折叠(纸,布等))",
+      "example": "Monkey watched his friends for a moment and then folded his arms."
+    },
+    {
+      "term": "cave",
+      "zh": "洞穴,洞窟",
+      "example": "Monkey splashed through the waterfall and landed in a large cave."
+    },
+    {
+      "term": "hail",
+      "zh": "1. 欢呼,喝采,(2. 大声招呼(车辆、人等),3. 雹,冰雹)",
+      "example": "He bowed to Monkey and said, \"All hail the Monkey King.\""
+    },
+    {
+      "term": "all hail",
+      "zh": "万岁!",
+      "example": "He bowed to Monkey and said, \" All hail the Monkey King.\""
+    },
+    {
+      "term": "safely",
+      "zh": "安全地",
+      "example": "And every night they slept safely in their cave."
+    },
+    {
+      "term": "feast",
+      "zh": "盛宴,筵席",
+      "example": "One night the monkeys and apes had a huge feast."
+    },
+    {
+      "term": "throne",
+      "zh": "王位,王座",
+      "example": "Monkey sat on his throne and smiled."
+    },
+    {
+      "term": "fade",
+      "zh": "1. 逐渐消失,逐渐变弱,(2. (颜色)退色,褪去)",
+      "example": "But then his smile faded."
+    },
+    {
+      "term": "frown",
+      "zh": "皱眉",
+      "example": "Soon he was frowning."
+    },
+    {
+      "term": "wrong",
+      "zh": "错的,不对的",
+      "example": "What's wrong?"
+    },
+    {
+      "term": "sigh",
+      "zh": "叹气,叹息",
+      "example": "Monkey sighed."
+    },
+    {
+      "term": "someday",
+      "zh": "将来有一天",
+      "example": "Someday our lives will end."
+    },
+    {
+      "term": "last",
+      "zh": "1. 维持,持续,(2. 最后的)",
+      "example": "I wish this perfect life could last forever."
+    },
+    {
+      "term": "forever",
+      "zh": "永远地",
+      "example": "I wish this perfect life could last forever."
+    },
+    {
+      "term": "lit up",
+      "zh": "(眼神等)发亮,面露喜色",
+      "example": "The gibbon's eyes lit up."
+    },
+    {
+      "term": "sage",
+      "zh": "圣人,圣贤",
+      "example": "Then you must study with a sage."
+    },
+    {
+      "term": "built",
+      "zh": "建筑,建造 (build-built)",
+      "example": "The next morning Monkey built a raft and loaded food onto it."
+    },
+    {
+      "term": "raft",
+      "zh": "木筏,橡皮船",
+      "example": "The next morning Monkey built a raft and loaded food onto it."
+    },
+    {
+      "term": "load",
+      "zh": "1. 装货,装载,(2. 货物,装载物)",
+      "example": "The next morning Monkey built a raft and loaded food onto it."
+    },
+    {
+      "term": "float",
+      "zh": "1. 漂流,(2. (在水上或空中)漂浮)",
+      "example": "As the raft began to float away, Monkey waved to his friends."
+    }
+  ],
+  "official_quiz": [
+    {
+      "q": "What did Monkey find in the cave?",
+      "choices": [
+        "bedrooms",
+        "spiders",
+        "a lake"
+      ],
+      "answer": 0,
+      "q_zh": "猴子在洞里找到了什么？",
+      "choices_zh": [
+        "卧室",
+        "蜘蛛",
+        "一​​个湖"
+      ]
+    },
+    {
+      "q": "What did the monkeys do in the cave?",
+      "choices": [
+        "They argued and fought.",
+        "They played games.",
+        "They broke everything."
+      ],
+      "answer": 0,
+      "q_zh": "猴子在洞里做了什么？",
+      "choices_zh": [
+        "他们争吵并打架。",
+        "他们玩游戏。",
+        "他们把一切都弄坏了。"
+      ]
+    },
+    {
+      "q": "Why did everyone bow to Monkey?",
+      "choices": [
+        "He found the cave.",
+        "He gave everyone money.",
+        "He was really big and scary."
+      ],
+      "answer": 0,
+      "q_zh": "为什么大家都向猴子鞠躬？",
+      "choices_zh": [
+        "他找到了那个洞穴。",
+        "他给了每个人钱。",
+        "他真的又大又可怕。"
+      ]
+    },
+    {
+      "q": "Why was Monkey sad?",
+      "choices": [
+        "He wanted to live forever.",
+        "He didn't get enough food.",
+        "He wanted more friends."
+      ],
+      "answer": 2,
+      "q_zh": "猴子为什么难过？",
+      "choices_zh": [
+        "他想永远活下去。",
+        "他没有吃够食物。",
+        "他想要更多的朋友。"
+      ]
+    },
+    {
+      "q": "What are sages?",
+      "choices": [
+        "very wise people",
+        "very young people",
+        "very rich people"
+      ],
+      "answer": 0,
+      "q_zh": "圣人是什么？",
+      "choices_zh": [
+        "非常聪明的人",
+        "非常年轻的人",
+        "非常富有的人"
+      ]
+    }
+  ]
+}

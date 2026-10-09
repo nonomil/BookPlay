@@ -1,0 +1,584 @@
+{
+ "schema_version": 1,
+ "ep": 24,
+ "title": {
+  "en": "The Great King Yellow Wind",
+  "zh": "西游记 第24集"
+ },
+ "collection": "c04",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "yellowwind",
+   "nameZh": "黄风大王",
+   "mode": "sparring",
+   "sprite": "yellowwind"
+  },
+  "minors": [
+   {
+    "id": "imp",
+    "nameZh": "小妖",
+    "sprite": "imp"
+   }
+  ]
+ },
+ "background": {
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep24/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "Wukong and Bajie looked all around.",
+   "textZh": "悟空与猪八戒环顾四周。",
+   "illustration": "assets/adv_frames/ep24/f1.jpg",
+   "sourceNodeId": "n001",
+   "audioRef": "sent_en:Wukong and Bajie looked all around."
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "But the Tang Monk was gone.",
+   "textZh": "然而,唐僧已然离去了。",
+   "illustration": "assets/adv_frames/ep24/f2.jpg",
+   "sourceNodeId": "n002",
+   "audioRef": "sent_en:But the Tang Monk was gone."
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "demon",
+   "zh": "魔鬼,恶魔",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep24/f0.jpg"
+  },
+  {
+   "term": "slump",
+   "zh": "1. 倒下,弯垂,(2. 弯腰坐着)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep24/f2.jpg"
+  },
+  {
+   "term": "throne",
+   "zh": "王位,王座",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep24/f3.jpg"
+  },
+  {
+   "term": "companion",
+   "zh": "同伴,伴侣,朋友",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep24/f1.jpg"
+  },
+  {
+   "term": "tremble",
+   "zh": "(因恐惧而)发抖,打颤",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep24/f1.jpg"
+  },
+  {
+   "term": "distract",
+   "zh": "转移(注意力),使不集中",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep24/f3.jpg"
+  },
+  {
+   "term": "fake",
+   "zh": "假的,冒充的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep24/f3.jpg"
+  },
+  {
+   "term": "spice",
+   "zh": "香料,调味料",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep24/f1.jpg"
+  },
+  {
+   "term": "meal",
+   "zh": "膳食,一餐",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep24/f3.jpg"
+  },
+  {
+   "term": "stranger",
+   "zh": "陌生人",
+   "ipa": "ˈstreɪndʒə(r)",
+   "illustration": "assets/adv_frames/ep24/f0.jpg"
+  },
+  {
+   "term": "hand over",
+   "zh": "交出,移交",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep24/f2.jpg"
+  },
+  {
+   "term": "destroy",
+   "zh": "破坏,毁坏",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep24/f1.jpg"
+  }
+ ],
+ "wordPool": [
+  {
+   "term": "demon",
+   "zh": "魔鬼,恶魔",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep24/f0.jpg"
+  },
+  {
+   "term": "slump",
+   "zh": "1. 倒下,弯垂,(2. 弯腰坐着)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep24/f2.jpg"
+  },
+  {
+   "term": "throne",
+   "zh": "王位,王座",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep24/f3.jpg"
+  },
+  {
+   "term": "companion",
+   "zh": "同伴,伴侣,朋友",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep24/f1.jpg"
+  },
+  {
+   "term": "tremble",
+   "zh": "(因恐惧而)发抖,打颤",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep24/f1.jpg"
+  },
+  {
+   "term": "distract",
+   "zh": "转移(注意力),使不集中",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep24/f3.jpg"
+  },
+  {
+   "term": "fake",
+   "zh": "假的,冒充的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep24/f3.jpg"
+  },
+  {
+   "term": "spice",
+   "zh": "香料,调味料",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep24/f1.jpg"
+  },
+  {
+   "term": "meal",
+   "zh": "膳食,一餐",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep24/f3.jpg"
+  },
+  {
+   "term": "stranger",
+   "zh": "陌生人",
+   "ipa": "ˈstreɪndʒə(r)",
+   "illustration": "assets/adv_frames/ep24/f0.jpg"
+  },
+  {
+   "term": "hand over",
+   "zh": "交出,移交",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep24/f2.jpg"
+  },
+  {
+   "term": "destroy",
+   "zh": "破坏,毁坏",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep24/f1.jpg"
+  },
+  {
+   "term": "entire",
+   "zh": "整个的,全部的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep24/f1.jpg"
+  },
+  {
+   "term": "moan",
+   "zh": "1. 呻吟,(2. 抱怨)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep24/f3.jpg"
+  },
+  {
+   "term": "disaster",
+   "zh": "灾害,灾难,巨大的不幸",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep24/f2.jpg"
+  },
+  {
+   "term": "trident",
+   "zh": "三叉戟",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep24/f1.jpg"
+  },
+  {
+   "term": "stomp",
+   "zh": "重踩,重踏",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep24/f2.jpg"
+  },
+  {
+   "term": "hesitate",
+   "zh": "犹豫,踌躇",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep24/f1.jpg"
+  },
+  {
+   "term": "instantly",
+   "zh": "立刻,马上",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep24/f0.jpg"
+  },
+  {
+   "term": "dozen",
+   "zh": "12个,一打",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep24/f3.jpg"
+  },
+  {
+   "term": "dark",
+   "zh": "黑暗的,暗的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep24/f2.jpg"
+  },
+  {
+   "term": "whip",
+   "zh": "1. (风雨)迅速地移动,通过,(2. 鞭子)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep24/f3.jpg"
+  },
+  {
+   "term": "snap",
+   "zh": "突然折断,断掉",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep24/f0.jpg"
+  },
+  {
+   "term": "tumble",
+   "zh": "跌倒,滚下",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep24/f0.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "demon",
+     "zh": "魔鬼,恶魔",
+     "sprite": "imp"
+    },
+    {
+     "term": "slump",
+     "zh": "1. 倒下,弯垂,(2. 弯腰坐着)",
+     "sprite": "imp"
+    },
+    {
+     "term": "throne",
+     "zh": "王位,王座",
+     "sprite": "imp"
+    },
+    {
+     "term": "companion",
+     "zh": "同伴,伴侣,朋友",
+     "sprite": "imp"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "tremble",
+     "zh": "(因恐惧而)发抖,打颤",
+     "sprite": "imp"
+    },
+    {
+     "term": "distract",
+     "zh": "转移(注意力),使不集中",
+     "sprite": "imp"
+    },
+    {
+     "term": "fake",
+     "zh": "假的,冒充的",
+     "sprite": "imp"
+    },
+    {
+     "term": "spice",
+     "zh": "香料,调味料",
+     "sprite": "imp"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "meal",
+    "zh": "膳食,一餐"
+   },
+   {
+    "term": "stranger",
+    "zh": "陌生人"
+   },
+   {
+    "term": "hand over",
+    "zh": "交出,移交"
+   },
+   {
+    "term": "destroy",
+    "zh": "破坏,毁坏"
+   }
+  ],
+  "taunts": [
+   "yellowwind.1",
+   "yellowwind.2",
+   "yellowwind.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=24",
+ "npcDialogue": {
+  "intro": {
+   "id": "ep24-map-intro",
+   "lines": [
+    {
+     "id": "ep24-map-intro-1",
+     "sourceNodeId": "n001",
+     "speaker": "narrator",
+     "textEn": "Wukong and Bajie looked all around.",
+     "textZh": "悟空与猪八戒环顾四周。",
+     "audioRef": "sent_en:Wukong and Bajie looked all around.",
+     "audioStart": 11.067,
+     "audioEnd": 14.698
+    },
+    {
+     "id": "ep24-map-intro-2",
+     "sourceNodeId": "n002",
+     "speaker": "narrator",
+     "textEn": "But the Tang Monk was gone.",
+     "textZh": "然而,唐僧已然离去了。",
+     "audioRef": "sent_en:But the Tang Monk was gone.",
+     "audioStart": 14.699,
+     "audioEnd": 17.459
+    }
+   ]
+  },
+  "quiz": {
+   "id": "ep24-map-quiz",
+   "lines": [
+    {
+     "id": "ep24-map-quiz-1",
+     "sourceNodeId": "n014",
+     "speaker": "narrator",
+     "textEn": "\"I have heard that anyone who eats the Tang Monk will live forever. Was the monk alone?\"",
+     "textZh": "\"我听说,凡是吃下唐僧的人就能永生。这位僧人是独自一人吗?\"",
+     "audioRef": "sent_en:\"I have heard that anyone who eats the Tang Monk will live forever. Was the monk alone?\"",
+     "audioStart": 72.606,
+     "audioEnd": 80.06
+    }
+   ],
+   "question": {
+    "id": "ep024-official-quiz-001",
+    "textEn": "which is true?",
+    "textZh": "哪一个是真的？"
+   },
+   "word": {
+    "term": "demon",
+    "zh": "魔鬼,恶魔",
+    "ipa": ""
+   },
+   "options": [
+    {
+     "id": "a",
+     "textEn": "yellow wind wanted to eat the tang monk.",
+     "textZh": "黄风怪想吃唐僧。",
+     "correct": true,
+     "feedback": "对了。黄风怪想吃唐僧。"
+    },
+    {
+     "id": "b",
+     "textEn": "bajie's hair turned into dozens of little pigs.",
+     "textZh": "八戒的头发变成了几十只小猪。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    },
+    {
+     "id": "c",
+     "textEn": "the tang monk carried the tiger to the cave.",
+     "textZh": "唐僧把老虎带到洞里。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    }
+   ],
+   "lessonCardId": "ep024-official-quiz-001"
+  }
+ },
+ "map": {
+  "theme": "generic",
+  "coordinateSpace": "world-normalized",
+  "worldTiles": 2,
+  "regions": {
+   "hero": 0,
+   "waves": [
+    0,
+    1
+   ],
+   "npc": {
+    "intro": 0,
+    "quiz": 1
+   },
+   "boss": 3
+  },
+  "walkable": {
+   "space": "world",
+   "x": 0.0,
+   "y": 0.16,
+   "w": 1.0,
+   "h": 0.79,
+   "rects": [
+    {
+     "x": 0.0,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.66,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    }
+   ]
+  },
+  "heroSpawn": {
+   "x": 0.06,
+   "y": 0.31
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.31,
+    "y": 0.23
+   },
+   {
+    "x": 0.38,
+    "y": 0.27
+   },
+   {
+    "x": 0.34,
+    "y": 0.33
+   },
+   {
+    "x": 0.41,
+    "y": 0.24
+   }
+  ],
+  "waveSpawns": [
+   [
+    {
+     "x": 0.31,
+     "y": 0.23
+    },
+    {
+     "x": 0.38,
+     "y": 0.27
+    },
+    {
+     "x": 0.34,
+     "y": 0.33
+    },
+    {
+     "x": 0.41,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.81,
+     "y": 0.23
+    },
+    {
+     "x": 0.88,
+     "y": 0.27
+    },
+    {
+     "x": 0.84,
+     "y": 0.33
+    },
+    {
+     "x": 0.91,
+     "y": 0.24
+    }
+   ]
+  ],
+  "orbSpawns": [
+   [
+    {
+     "x": 0.11,
+     "y": 0.25
+    },
+    {
+     "x": 0.16,
+     "y": 0.31
+    },
+    {
+     "x": 0.12,
+     "y": 0.37
+    },
+    {
+     "x": 0.18,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.61,
+     "y": 0.25
+    },
+    {
+     "x": 0.66,
+     "y": 0.31
+    },
+    {
+     "x": 0.62,
+     "y": 0.37
+    },
+    {
+     "x": 0.68,
+     "y": 0.24
+    }
+   ]
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "yellowwind",
+    "nameZh": "黄风大王",
+    "x": 0.08,
+    "y": 0.26
+   },
+   {
+    "role": "quiz",
+    "sprite": "yellowwind",
+    "nameZh": "黄风大王",
+    "x": 0.7,
+    "y": 0.39
+   }
+  ],
+  "bossSpot": {
+   "x": 0.94,
+   "y": 0.85
+  }
+ }
+}

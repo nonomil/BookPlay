@@ -1,0 +1,584 @@
+{
+ "schema_version": 1,
+ "ep": 13,
+ "title": {
+  "en": "The True Scriptures",
+  "zh": "西游记 第13集"
+ },
+ "collection": "c02",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "tang",
+   "nameZh": "唐僧",
+   "mode": "sparring",
+   "sprite": "tang"
+  },
+  "minors": [
+   {
+    "id": "imp",
+    "nameZh": "小妖",
+    "sprite": "imp"
+   }
+  ]
+ },
+ "background": {
+  "theme": "episode-scene",
+  "illustration": "assets/adv_frames/ep13/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "Five hundred years passed.",
+   "textZh": "五百载光阴荏苒。",
+   "illustration": "assets/adv_frames/ep13/f1.jpg",
+   "sourceNodeId": "n001",
+   "audioRef": "sent_en:Five hundred years passed."
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "Wukong stayed trapped under the mountain.",
+   "textZh": "悟空被困在山下。",
+   "illustration": "assets/adv_frames/ep13/f2.jpg",
+   "sourceNodeId": "n002",
+   "audioRef": "sent_en:Wukong stayed trapped under the mountain."
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "scripture",
+   "zh": "经文",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep13/f1.jpg"
+  },
+  {
+   "term": "layer",
+   "zh": "层,膜",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep13/f3.jpg"
+  },
+  {
+   "term": "moss",
+   "zh": "苔藓,地衣",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep13/f3.jpg"
+  },
+  {
+   "term": "thunderclap",
+   "zh": "雷声,霹雳",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep13/f0.jpg"
+  },
+  {
+   "term": "monastery",
+   "zh": "修道院,寺院",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep13/f0.jpg"
+  },
+  {
+   "term": "cheat",
+   "zh": "欺骗,骗取",
+   "ipa": "tʃiːt",
+   "illustration": "assets/adv_frames/ep13/f1.jpg"
+  },
+  {
+   "term": "constantly",
+   "zh": "不断地,时常地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep13/f3.jpg"
+  },
+  {
+   "term": "bundle",
+   "zh": "大堆,大批,大量",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep13/f0.jpg"
+  },
+  {
+   "term": "scroll",
+   "zh": "卷轴",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep13/f0.jpg"
+  },
+  {
+   "term": "monk",
+   "zh": "修道士,僧侣",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep13/f2.jpg"
+  },
+  {
+   "term": "worthy",
+   "zh": "1. 有价值的,很好的,(2. 值得的,足以......的,配得上的)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep13/f2.jpg"
+  },
+  {
+   "term": "religious",
+   "zh": "宗教的,宗教上的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep13/f2.jpg"
+  }
+ ],
+ "wordPool": [
+  {
+   "term": "scripture",
+   "zh": "经文",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep13/f1.jpg"
+  },
+  {
+   "term": "layer",
+   "zh": "层,膜",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep13/f3.jpg"
+  },
+  {
+   "term": "moss",
+   "zh": "苔藓,地衣",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep13/f3.jpg"
+  },
+  {
+   "term": "thunderclap",
+   "zh": "雷声,霹雳",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep13/f0.jpg"
+  },
+  {
+   "term": "monastery",
+   "zh": "修道院,寺院",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep13/f0.jpg"
+  },
+  {
+   "term": "cheat",
+   "zh": "欺骗,骗取",
+   "ipa": "tʃiːt",
+   "illustration": "assets/adv_frames/ep13/f1.jpg"
+  },
+  {
+   "term": "constantly",
+   "zh": "不断地,时常地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep13/f3.jpg"
+  },
+  {
+   "term": "bundle",
+   "zh": "大堆,大批,大量",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep13/f0.jpg"
+  },
+  {
+   "term": "scroll",
+   "zh": "卷轴",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep13/f0.jpg"
+  },
+  {
+   "term": "monk",
+   "zh": "修道士,僧侣",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep13/f2.jpg"
+  },
+  {
+   "term": "worthy",
+   "zh": "1. 有价值的,很好的,(2. 值得的,足以......的,配得上的)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep13/f2.jpg"
+  },
+  {
+   "term": "religious",
+   "zh": "宗教的,宗教上的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep13/f2.jpg"
+  },
+  {
+   "term": "text",
+   "zh": "短文,文字",
+   "ipa": "tekst",
+   "illustration": "assets/adv_frames/ep13/f0.jpg"
+  },
+  {
+   "term": "interrupt",
+   "zh": "妨碍,中断",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep13/f3.jpg"
+  },
+  {
+   "term": "contain",
+   "zh": "包含,容纳,装有",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep13/f3.jpg"
+  },
+  {
+   "term": "suffer",
+   "zh": "受痛苦,感到痛苦(或苦恼)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep13/f3.jpg"
+  },
+  {
+   "term": "believer",
+   "zh": "信徒,相信...的人",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep13/f1.jpg"
+  },
+  {
+   "term": "beam",
+   "zh": "1. 光线,光束,(2. 堆满笑容,眉开眼笑)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep13/f2.jpg"
+  },
+  {
+   "term": "shone",
+   "zh": "发光,闪烁 (shine-shone)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep13/f2.jpg"
+  },
+  {
+   "term": "honor",
+   "zh": "1. 荣誉,(2. 表达敬意,崇敬)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep13/f3.jpg"
+  },
+  {
+   "term": "steep",
+   "zh": "陡峭的,险峻的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep13/f1.jpg"
+  },
+  {
+   "term": "fierce",
+   "zh": "凶猛的,残酷的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep13/f1.jpg"
+  },
+  {
+   "term": "creature",
+   "zh": "生物,动物",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep13/f1.jpg"
+  },
+  {
+   "term": "demon",
+   "zh": "魔鬼,恶魔",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep13/f1.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "scripture",
+     "zh": "经文",
+     "sprite": "imp"
+    },
+    {
+     "term": "layer",
+     "zh": "层,膜",
+     "sprite": "imp"
+    },
+    {
+     "term": "moss",
+     "zh": "苔藓,地衣",
+     "sprite": "imp"
+    },
+    {
+     "term": "thunderclap",
+     "zh": "雷声,霹雳",
+     "sprite": "imp"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "monastery",
+     "zh": "修道院,寺院",
+     "sprite": "imp"
+    },
+    {
+     "term": "cheat",
+     "zh": "欺骗,骗取",
+     "sprite": "imp"
+    },
+    {
+     "term": "constantly",
+     "zh": "不断地,时常地",
+     "sprite": "imp"
+    },
+    {
+     "term": "bundle",
+     "zh": "大堆,大批,大量",
+     "sprite": "imp"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "scroll",
+    "zh": "卷轴"
+   },
+   {
+    "term": "monk",
+    "zh": "修道士,僧侣"
+   },
+   {
+    "term": "worthy",
+    "zh": "1. 有价值的,很好的,(2. 值得的,足以......的,配得上的)"
+   },
+   {
+    "term": "religious",
+    "zh": "宗教的,宗教上的"
+   }
+  ],
+  "taunts": [
+   "tang.1",
+   "tang.2",
+   "tang.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=13",
+ "npcDialogue": {
+  "intro": {
+   "id": "ep13-map-intro",
+   "lines": [
+    {
+     "id": "ep13-map-intro-1",
+     "sourceNodeId": "n001",
+     "speaker": "narrator",
+     "textEn": "Five hundred years passed.",
+     "textZh": "五百载光阴荏苒。",
+     "audioRef": "sent_en:Five hundred years passed.",
+     "audioStart": 11.267,
+     "audioEnd": 16.057
+    },
+    {
+     "id": "ep13-map-intro-2",
+     "sourceNodeId": "n002",
+     "speaker": "narrator",
+     "textEn": "Wukong stayed trapped under the mountain.",
+     "textZh": "悟空被困在山下。",
+     "audioRef": "sent_en:Wukong stayed trapped under the mountain.",
+     "audioStart": 16.058,
+     "audioEnd": 19.721
+    }
+   ]
+  },
+  "quiz": {
+   "id": "ep13-map-quiz",
+   "lines": [
+    {
+     "id": "ep13-map-quiz-1",
+     "sourceNodeId": "n030",
+     "speaker": "narrator",
+     "textEn": "\"They are with Buddha in the Western Paradise. Someone must travel to the Thunderclap Monastery to get them. But only a true believer may make the journey.\"",
+     "textZh": "\"他们正与佛陀一同驻守于西方极乐世界。需有人前往雷音寺将他们接回,但唯有虔诚的信徒方可踏上此番旅程。\"",
+     "audioRef": "sent_en:\"They are with Buddha in the Western Paradise. Someone must travel to the Thunderclap Monastery to get them. But only a true believer may make the journey.\"",
+     "audioStart": 148.493,
+     "audioEnd": 162.017
+    }
+   ],
+   "question": {
+    "id": "ep013-official-quiz-001",
+    "textEn": "which is not true?",
+    "textZh": "哪一项是不正确的？"
+   },
+   "word": {
+    "term": "scripture",
+    "zh": "经文",
+    "ipa": ""
+   },
+   "options": [
+    {
+     "id": "a",
+     "textEn": "the monk would bring buddha to the west.",
+     "textZh": "这位僧侣会把佛带到西方。",
+     "correct": true,
+     "feedback": "对了。这位僧侣会把佛带到西方。"
+    },
+    {
+     "id": "b",
+     "textEn": "wukong was trapped for five hundred years.",
+     "textZh": "悟空被困了五百年。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    },
+    {
+     "id": "c",
+     "textEn": "the woman was really guanyin.",
+     "textZh": "那个女人真的是观音。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    }
+   ],
+   "lessonCardId": "ep013-official-quiz-001"
+  }
+ },
+ "map": {
+  "theme": "episode-scene",
+  "coordinateSpace": "world-normalized",
+  "worldTiles": 2,
+  "regions": {
+   "hero": 0,
+   "waves": [
+    0,
+    1
+   ],
+   "npc": {
+    "intro": 0,
+    "quiz": 1
+   },
+   "boss": 3
+  },
+  "walkable": {
+   "space": "world",
+   "x": 0.0,
+   "y": 0.16,
+   "w": 1.0,
+   "h": 0.79,
+   "rects": [
+    {
+     "x": 0.0,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.66,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    }
+   ]
+  },
+  "heroSpawn": {
+   "x": 0.06,
+   "y": 0.31
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.31,
+    "y": 0.23
+   },
+   {
+    "x": 0.38,
+    "y": 0.27
+   },
+   {
+    "x": 0.34,
+    "y": 0.33
+   },
+   {
+    "x": 0.41,
+    "y": 0.24
+   }
+  ],
+  "waveSpawns": [
+   [
+    {
+     "x": 0.31,
+     "y": 0.23
+    },
+    {
+     "x": 0.38,
+     "y": 0.27
+    },
+    {
+     "x": 0.34,
+     "y": 0.33
+    },
+    {
+     "x": 0.41,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.81,
+     "y": 0.23
+    },
+    {
+     "x": 0.88,
+     "y": 0.27
+    },
+    {
+     "x": 0.84,
+     "y": 0.33
+    },
+    {
+     "x": 0.91,
+     "y": 0.24
+    }
+   ]
+  ],
+  "orbSpawns": [
+   [
+    {
+     "x": 0.11,
+     "y": 0.25
+    },
+    {
+     "x": 0.16,
+     "y": 0.31
+    },
+    {
+     "x": 0.12,
+     "y": 0.37
+    },
+    {
+     "x": 0.18,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.61,
+     "y": 0.25
+    },
+    {
+     "x": 0.66,
+     "y": 0.31
+    },
+    {
+     "x": 0.62,
+     "y": 0.37
+    },
+    {
+     "x": 0.68,
+     "y": 0.24
+    }
+   ]
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "temple-novice",
+    "nameZh": "小沙弥",
+    "x": 0.08,
+    "y": 0.26
+   },
+   {
+    "role": "quiz",
+    "sprite": "rulai",
+    "nameZh": "如来",
+    "x": 0.7,
+    "y": 0.39
+   }
+  ],
+  "bossSpot": {
+   "x": 0.94,
+   "y": 0.85
+  }
+ }
+}

@@ -1,0 +1,584 @@
+{
+ "schema_version": 1,
+ "ep": 45,
+ "title": {
+  "en": "The Treasure in the Well",
+  "zh": "西游记 第45集"
+ },
+ "collection": "c06",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "bajie",
+   "nameZh": "猪八戒",
+   "mode": "sparring",
+   "sprite": "bajie"
+  },
+  "minors": [
+   {
+    "id": "imp",
+    "nameZh": "小妖",
+    "sprite": "imp"
+   }
+  ]
+ },
+ "background": {
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep45/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "The Tang Monk introduced himself to the prince and then waved toward the others.",
+   "textZh": "唐僧向王子自我介绍后,向其他众人挥手示意。",
+   "illustration": "assets/adv_frames/ep45/f1.jpg",
+   "sourceNodeId": "n001",
+   "audioRef": "sent_en:The Tang Monk introduced himself to the prince and then waved toward the others."
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "\"These are my companions. We're going to the Western Paradise to get scriptures from Buddha.\"",
+   "textZh": "\"这些是我的同伴们。我们将前往西方极乐世界取回佛经。\"",
+   "illustration": "assets/adv_frames/ep45/f2.jpg",
+   "sourceNodeId": "n002",
+   "audioRef": "sent_en:\"These are my companions. We're going to the Western Paradise to get scriptures from Buddha.\""
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "introduce",
+   "zh": "介绍",
+   "ipa": "ˌɪntrəˈdjuːs",
+   "illustration": "assets/adv_frames/ep45/f1.jpg"
+  },
+  {
+   "term": "scripture",
+   "zh": "经文",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep45/f2.jpg"
+  },
+  {
+   "term": "rule",
+   "zh": "1. 统治,支配,(2. 规则,规定)",
+   "ipa": "ruːl",
+   "illustration": "assets/adv_frames/ep45/f1.jpg"
+  },
+  {
+   "term": "furious",
+   "zh": "非常愤怒的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep45/f3.jpg"
+  },
+  {
+   "term": "make up",
+   "zh": "编造",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep45/f0.jpg"
+  },
+  {
+   "term": "all this time",
+   "zh": "一直以来",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep45/f3.jpg"
+  },
+  {
+   "term": "evil",
+   "zh": "邪恶的,坏的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep45/f3.jpg"
+  },
+  {
+   "term": "lie awake",
+   "zh": "醒着躺在那里",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep45/f2.jpg"
+  },
+  {
+   "term": "deny",
+   "zh": "否认,拒绝",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep45/f3.jpg"
+  },
+  {
+   "term": "proof",
+   "zh": "证据",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep45/f0.jpg"
+  },
+  {
+   "term": "poke",
+   "zh": "1. (用棍棒、手指等)戳,捅,(2. 伸出(鼻子、头等))",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep45/f1.jpg"
+  },
+  {
+   "term": "fast asleep",
+   "zh": "熟睡的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep45/f1.jpg"
+  }
+ ],
+ "wordPool": [
+  {
+   "term": "introduce",
+   "zh": "介绍",
+   "ipa": "ˌɪntrəˈdjuːs",
+   "illustration": "assets/adv_frames/ep45/f1.jpg"
+  },
+  {
+   "term": "scripture",
+   "zh": "经文",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep45/f2.jpg"
+  },
+  {
+   "term": "rule",
+   "zh": "1. 统治,支配,(2. 规则,规定)",
+   "ipa": "ruːl",
+   "illustration": "assets/adv_frames/ep45/f1.jpg"
+  },
+  {
+   "term": "furious",
+   "zh": "非常愤怒的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep45/f3.jpg"
+  },
+  {
+   "term": "make up",
+   "zh": "编造",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep45/f0.jpg"
+  },
+  {
+   "term": "all this time",
+   "zh": "一直以来",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep45/f3.jpg"
+  },
+  {
+   "term": "evil",
+   "zh": "邪恶的,坏的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep45/f3.jpg"
+  },
+  {
+   "term": "lie awake",
+   "zh": "醒着躺在那里",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep45/f2.jpg"
+  },
+  {
+   "term": "deny",
+   "zh": "否认,拒绝",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep45/f3.jpg"
+  },
+  {
+   "term": "proof",
+   "zh": "证据",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep45/f0.jpg"
+  },
+  {
+   "term": "poke",
+   "zh": "1. (用棍棒、手指等)戳,捅,(2. 伸出(鼻子、头等))",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep45/f1.jpg"
+  },
+  {
+   "term": "fast asleep",
+   "zh": "熟睡的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep45/f1.jpg"
+  },
+  {
+   "term": "courtyard",
+   "zh": "庭院,天井(建筑或墙围成的空间)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep45/f0.jpg"
+  },
+  {
+   "term": "lid",
+   "zh": "盖子",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep45/f1.jpg"
+  },
+  {
+   "term": "definitely",
+   "zh": "明确地,清楚地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep45/f1.jpg"
+  },
+  {
+   "term": "not",
+   "zh": "不完全对",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep45/f3.jpg"
+  },
+  {
+   "term": "eyebrow",
+   "zh": "眉毛",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep45/f1.jpg"
+  },
+  {
+   "term": "revenge",
+   "zh": "报仇,报复",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep45/f2.jpg"
+  },
+  {
+   "term": "bring back to",
+   "zh": "使复活",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep45/f0.jpg"
+  },
+  {
+   "term": "giggle",
+   "zh": "咯咯地笑",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep45/f1.jpg"
+  },
+  {
+   "term": "protest",
+   "zh": "反对,对...提出异议",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep45/f1.jpg"
+  },
+  {
+   "term": "himself",
+   "zh": "他自己",
+   "ipa": "hɪmˈself",
+   "illustration": "assets/adv_frames/ep45/f1.jpg"
+  },
+  {
+   "term": "go",
+   "zh": "去",
+   "ipa": "ɡəʊ",
+   "illustration": "assets/adv_frames/ep45/f1.jpg"
+  },
+  {
+   "term": "ask",
+   "zh": "请求",
+   "ipa": "ɑːsk",
+   "illustration": "assets/adv_frames/ep45/f1.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "introduce",
+     "zh": "介绍",
+     "sprite": "imp"
+    },
+    {
+     "term": "scripture",
+     "zh": "经文",
+     "sprite": "imp"
+    },
+    {
+     "term": "rule",
+     "zh": "1. 统治,支配,(2. 规则,规定)",
+     "sprite": "imp"
+    },
+    {
+     "term": "furious",
+     "zh": "非常愤怒的",
+     "sprite": "imp"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "make up",
+     "zh": "编造",
+     "sprite": "imp"
+    },
+    {
+     "term": "all this time",
+     "zh": "一直以来",
+     "sprite": "imp"
+    },
+    {
+     "term": "evil",
+     "zh": "邪恶的,坏的",
+     "sprite": "imp"
+    },
+    {
+     "term": "lie awake",
+     "zh": "醒着躺在那里",
+     "sprite": "imp"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "deny",
+    "zh": "否认,拒绝"
+   },
+   {
+    "term": "proof",
+    "zh": "证据"
+   },
+   {
+    "term": "poke",
+    "zh": "1. (用棍棒、手指等)戳,捅,(2. 伸出(鼻子、头等))"
+   },
+   {
+    "term": "fast asleep",
+    "zh": "熟睡的"
+   }
+  ],
+  "taunts": [
+   "bajie.1",
+   "bajie.2",
+   "bajie.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=45",
+ "npcDialogue": {
+  "intro": {
+   "id": "ep45-map-intro",
+   "lines": [
+    {
+     "id": "ep45-map-intro-1",
+     "sourceNodeId": "n001",
+     "speaker": "narrator",
+     "textEn": "The Tang Monk introduced himself to the prince and then waved toward the others.",
+     "textZh": "唐僧向王子自我介绍后,向其他众人挥手示意。",
+     "audioRef": "sent_en:The Tang Monk introduced himself to the prince and then waved toward the others.",
+     "audioStart": 11.0,
+     "audioEnd": 16.811
+    },
+    {
+     "id": "ep45-map-intro-2",
+     "sourceNodeId": "n002",
+     "speaker": "narrator",
+     "textEn": "\"These are my companions. We're going to the Western Paradise to get scriptures from Buddha.\"",
+     "textZh": "\"这些是我的同伴们。我们将前往西方极乐世界取回佛经。\"",
+     "audioRef": "sent_en:\"These are my companions. We're going to the Western Paradise to get scriptures from Buddha.\"",
+     "audioStart": 16.812,
+     "audioEnd": 22.946
+    }
+   ]
+  },
+  "quiz": {
+   "id": "ep45-map-quiz",
+   "lines": [
+    {
+     "id": "ep45-map-quiz-1",
+     "sourceNodeId": "n006",
+     "speaker": "narrator",
+     "textEn": "He told the prince everything.",
+     "textZh": "他将所有事情都告诉了王子。",
+     "audioRef": "sent_en:He told the prince everything.",
+     "audioStart": 35.425,
+     "audioEnd": 37.948
+    }
+   ],
+   "question": {
+    "id": "ep045-official-quiz-001",
+    "textEn": "which is not true?",
+    "textZh": "哪一项是不正确的？"
+   },
+   "word": {
+    "term": "introduce",
+    "zh": "介绍",
+    "ipa": "ˌɪntrəˈdjuːs"
+   },
+   "options": [
+    {
+     "id": "a",
+     "textEn": "bajie knew how to get rid of the fake king.",
+     "textZh": "八戒知道如何除掉假的国王。",
+     "correct": true,
+     "feedback": "对了。八戒知道如何除掉假的国王。"
+    },
+    {
+     "id": "b",
+     "textEn": "wukong tricked bajie into diving down the well.",
+     "textZh": "悟空欺骗八戒跳进了井里。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    },
+    {
+     "id": "c",
+     "textEn": "the tang monk told the prince about the daoist.",
+     "textZh": "唐僧告诉王子关于道士的事情。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    }
+   ],
+   "lessonCardId": "ep045-official-quiz-001"
+  }
+ },
+ "map": {
+  "theme": "generic",
+  "coordinateSpace": "world-normalized",
+  "worldTiles": 2,
+  "regions": {
+   "hero": 0,
+   "waves": [
+    0,
+    1
+   ],
+   "npc": {
+    "intro": 0,
+    "quiz": 1
+   },
+   "boss": 3
+  },
+  "walkable": {
+   "space": "world",
+   "x": 0.0,
+   "y": 0.16,
+   "w": 1.0,
+   "h": 0.79,
+   "rects": [
+    {
+     "x": 0.0,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.66,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    }
+   ]
+  },
+  "heroSpawn": {
+   "x": 0.06,
+   "y": 0.31
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.31,
+    "y": 0.23
+   },
+   {
+    "x": 0.38,
+    "y": 0.27
+   },
+   {
+    "x": 0.34,
+    "y": 0.33
+   },
+   {
+    "x": 0.41,
+    "y": 0.24
+   }
+  ],
+  "waveSpawns": [
+   [
+    {
+     "x": 0.31,
+     "y": 0.23
+    },
+    {
+     "x": 0.38,
+     "y": 0.27
+    },
+    {
+     "x": 0.34,
+     "y": 0.33
+    },
+    {
+     "x": 0.41,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.81,
+     "y": 0.23
+    },
+    {
+     "x": 0.88,
+     "y": 0.27
+    },
+    {
+     "x": 0.84,
+     "y": 0.33
+    },
+    {
+     "x": 0.91,
+     "y": 0.24
+    }
+   ]
+  ],
+  "orbSpawns": [
+   [
+    {
+     "x": 0.11,
+     "y": 0.25
+    },
+    {
+     "x": 0.16,
+     "y": 0.31
+    },
+    {
+     "x": 0.12,
+     "y": 0.37
+    },
+    {
+     "x": 0.18,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.61,
+     "y": 0.25
+    },
+    {
+     "x": 0.66,
+     "y": 0.31
+    },
+    {
+     "x": 0.62,
+     "y": 0.37
+    },
+    {
+     "x": 0.68,
+     "y": 0.24
+    }
+   ]
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "tang",
+    "nameZh": "唐僧",
+    "x": 0.08,
+    "y": 0.26
+   },
+   {
+    "role": "quiz",
+    "sprite": "prince",
+    "nameZh": "太子",
+    "x": 0.7,
+    "y": 0.39
+   }
+  ],
+  "bossSpot": {
+   "x": 0.94,
+   "y": 0.85
+  }
+ }
+}

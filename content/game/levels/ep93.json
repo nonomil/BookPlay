@@ -1,0 +1,584 @@
+{
+ "schema_version": 1,
+ "ep": 93,
+ "title": {
+  "en": "A Problem for the Lion Demon",
+  "zh": "西游记 第93集"
+ },
+ "collection": "c12",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "liondemon",
+   "nameZh": "狮魔王",
+   "mode": "sparring",
+   "sprite": "liondemon"
+  },
+  "minors": [
+   {
+    "id": "imp",
+    "nameZh": "小妖",
+    "sprite": "imp"
+   }
+  ]
+ },
+ "background": {
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep93/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "The elephant and the raptor stared at the lion.",
+   "textZh": "大象与猛禽正凝视着狮子。",
+   "illustration": "assets/adv_frames/ep93/f1.jpg",
+   "sourceNodeId": "n001",
+   "audioRef": "sent_en:The elephant and the raptor stared at the lion."
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "\"Sun Wukong is alive inside you,\" said the raptor.",
+   "textZh": "\"孙悟空活在你体内,\"猛禽说道。",
+   "illustration": "assets/adv_frames/ep93/f2.jpg",
+   "sourceNodeId": "n002",
+   "audioRef": "sent_en:\"Sun Wukong is alive inside you,\" said the raptor."
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "inside",
+   "zh": "在...的里面",
+   "ipa": "ˌɪnˈsaɪd",
+   "illustration": "assets/adv_frames/ep93/f1.jpg"
+  },
+  {
+   "term": "defiantly",
+   "zh": "挑战地,大胆对抗地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep93/f0.jpg"
+  },
+  {
+   "term": "bother",
+   "zh": "1. 烦扰,打搅,(2. 为...烦恼,为...苦恼)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep93/f3.jpg"
+  },
+  {
+   "term": "starve",
+   "zh": "挨饿",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep93/f0.jpg"
+  },
+  {
+   "term": "try",
+   "zh": "尝试,试图",
+   "ipa": "traɪ",
+   "illustration": "assets/adv_frames/ep93/f2.jpg"
+  },
+  {
+   "term": "stove",
+   "zh": "1. (做菜用的)小炉子,炉灶,(2. 暖炉)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep93/f2.jpg"
+  },
+  {
+   "term": "meal",
+   "zh": "膳食,一餐",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep93/f1.jpg"
+  },
+  {
+   "term": "fire up",
+   "zh": "生火,发动(机器等)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep93/f0.jpg"
+  },
+  {
+   "term": "plus",
+   "zh": "并且,而且",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep93/f0.jpg"
+  },
+  {
+   "term": "sneeze",
+   "zh": "打喷嚏",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep93/f1.jpg"
+  },
+  {
+   "term": "cough",
+   "zh": "咳嗽",
+   "ipa": "kɒf",
+   "illustration": "assets/adv_frames/ep93/f0.jpg"
+  },
+  {
+   "term": "bent over",
+   "zh": "弯腰",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep93/f1.jpg"
+  }
+ ],
+ "wordPool": [
+  {
+   "term": "inside",
+   "zh": "在...的里面",
+   "ipa": "ˌɪnˈsaɪd",
+   "illustration": "assets/adv_frames/ep93/f1.jpg"
+  },
+  {
+   "term": "defiantly",
+   "zh": "挑战地,大胆对抗地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep93/f0.jpg"
+  },
+  {
+   "term": "bother",
+   "zh": "1. 烦扰,打搅,(2. 为...烦恼,为...苦恼)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep93/f3.jpg"
+  },
+  {
+   "term": "starve",
+   "zh": "挨饿",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep93/f0.jpg"
+  },
+  {
+   "term": "try",
+   "zh": "尝试,试图",
+   "ipa": "traɪ",
+   "illustration": "assets/adv_frames/ep93/f2.jpg"
+  },
+  {
+   "term": "stove",
+   "zh": "1. (做菜用的)小炉子,炉灶,(2. 暖炉)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep93/f2.jpg"
+  },
+  {
+   "term": "meal",
+   "zh": "膳食,一餐",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep93/f1.jpg"
+  },
+  {
+   "term": "fire up",
+   "zh": "生火,发动(机器等)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep93/f0.jpg"
+  },
+  {
+   "term": "plus",
+   "zh": "并且,而且",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep93/f0.jpg"
+  },
+  {
+   "term": "sneeze",
+   "zh": "打喷嚏",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep93/f1.jpg"
+  },
+  {
+   "term": "cough",
+   "zh": "咳嗽",
+   "ipa": "kɒf",
+   "illustration": "assets/adv_frames/ep93/f0.jpg"
+  },
+  {
+   "term": "bent over",
+   "zh": "弯腰",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep93/f1.jpg"
+  },
+  {
+   "term": "practice",
+   "zh": "练习",
+   "ipa": "ˈpræktɪs",
+   "illustration": "assets/adv_frames/ep93/f0.jpg"
+  },
+  {
+   "term": "skill",
+   "zh": "(专门)技术",
+   "ipa": "skɪl",
+   "illustration": "assets/adv_frames/ep93/f1.jpg"
+  },
+  {
+   "term": "make a deal",
+   "zh": "做交易,协商",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep93/f2.jpg"
+  },
+  {
+   "term": "safely",
+   "zh": "安全地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep93/f3.jpg"
+  },
+  {
+   "term": "chomp",
+   "zh": "大声咀嚼(草料等)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep93/f3.jpg"
+  },
+  {
+   "term": "fight back",
+   "zh": "反击,抵抗",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep93/f3.jpg"
+  },
+  {
+   "term": "dumb",
+   "zh": "像傻瓜一样的,发傻的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep93/f1.jpg"
+  },
+  {
+   "term": "snicker",
+   "zh": "1. 窃笑,(2. (轻视别人的)窃笑)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep93/f2.jpg"
+  },
+  {
+   "term": "bit",
+   "zh": "1. 咬,啃 (bite-bit),(2. 一点点)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep93/f1.jpg"
+  },
+  {
+   "term": "shatter",
+   "zh": "粉碎,破碎,砸碎",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep93/f2.jpg"
+  },
+  {
+   "term": "paw",
+   "zh": "(动物的)脚爪,爪子",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep93/f1.jpg"
+  },
+  {
+   "term": "trick",
+   "zh": "1. 诡计,恶作剧,(2. 技巧,把戏,3. 欺骗)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep93/f3.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "inside",
+     "zh": "在...的里面",
+     "sprite": "imp"
+    },
+    {
+     "term": "defiantly",
+     "zh": "挑战地,大胆对抗地",
+     "sprite": "imp"
+    },
+    {
+     "term": "bother",
+     "zh": "1. 烦扰,打搅,(2. 为...烦恼,为...苦恼)",
+     "sprite": "imp"
+    },
+    {
+     "term": "starve",
+     "zh": "挨饿",
+     "sprite": "imp"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "try",
+     "zh": "尝试,试图",
+     "sprite": "imp"
+    },
+    {
+     "term": "stove",
+     "zh": "1. (做菜用的)小炉子,炉灶,(2. 暖炉)",
+     "sprite": "imp"
+    },
+    {
+     "term": "meal",
+     "zh": "膳食,一餐",
+     "sprite": "imp"
+    },
+    {
+     "term": "fire up",
+     "zh": "生火,发动(机器等)",
+     "sprite": "imp"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "plus",
+    "zh": "并且,而且"
+   },
+   {
+    "term": "sneeze",
+    "zh": "打喷嚏"
+   },
+   {
+    "term": "cough",
+    "zh": "咳嗽"
+   },
+   {
+    "term": "bent over",
+    "zh": "弯腰"
+   }
+  ],
+  "taunts": [
+   "liondemon.1",
+   "liondemon.2",
+   "liondemon.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=93",
+ "npcDialogue": {
+  "intro": {
+   "id": "ep93-map-intro",
+   "lines": [
+    {
+     "id": "ep93-map-intro-1",
+     "sourceNodeId": "n001",
+     "speaker": "narrator",
+     "textEn": "The elephant and the raptor stared at the lion.",
+     "textZh": "大象与猛禽正凝视着狮子。",
+     "audioRef": "sent_en:The elephant and the raptor stared at the lion.",
+     "audioStart": 10.934,
+     "audioEnd": 15.6
+    },
+    {
+     "id": "ep93-map-intro-2",
+     "sourceNodeId": "n002",
+     "speaker": "narrator",
+     "textEn": "\"Sun Wukong is alive inside you,\" said the raptor.",
+     "textZh": "\"孙悟空活在你体内,\"猛禽说道。",
+     "audioRef": "sent_en:\"Sun Wukong is alive inside you,\" said the raptor.",
+     "audioStart": 15.601,
+     "audioEnd": 19.961
+    }
+   ]
+  },
+  "quiz": {
+   "id": "ep93-map-quiz",
+   "lines": [
+    {
+     "id": "ep93-map-quiz-1",
+     "sourceNodeId": "n071",
+     "speaker": "narrator",
+     "textEn": "\"I'm coming out now. You'd better not try any more tricks!\"",
+     "textZh": "\"我现在就要出柜了!你最好别再耍什么花招了!\"",
+     "audioRef": "sent_en:\"I'm coming out now. You'd better not try any more tricks!\"",
+     "audioStart": 303.183,
+     "audioEnd": 309.12
+    }
+   ],
+   "question": {
+    "id": "ep093-official-quiz-001",
+    "textEn": "which is most important from the story?",
+    "textZh": "故事中什么最重要？"
+   },
+   "word": {
+    "term": "inside",
+    "zh": "在...的里面",
+    "ipa": "ˌɪnˈsaɪd"
+   },
+   "options": [
+    {
+     "id": "a",
+     "textEn": "wukong came out of the lion.",
+     "textZh": "悟空从狮子里出来了。",
+     "correct": true,
+     "feedback": "对了。悟空从狮子里出来了。"
+    },
+    {
+     "id": "b",
+     "textEn": "the lion's tooth shattered into pieces.",
+     "textZh": "狮子的牙齿碎成了碎片。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    },
+    {
+     "id": "c",
+     "textEn": "the demons whispered to each other.",
+     "textZh": "恶魔们相互低声耳语。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    }
+   ],
+   "lessonCardId": "ep093-official-quiz-001"
+  }
+ },
+ "map": {
+  "theme": "generic",
+  "coordinateSpace": "world-normalized",
+  "worldTiles": 2,
+  "regions": {
+   "hero": 0,
+   "waves": [
+    0,
+    1
+   ],
+   "npc": {
+    "intro": 0,
+    "quiz": 1
+   },
+   "boss": 3
+  },
+  "walkable": {
+   "space": "world",
+   "x": 0.0,
+   "y": 0.16,
+   "w": 1.0,
+   "h": 0.79,
+   "rects": [
+    {
+     "x": 0.0,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.66,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    }
+   ]
+  },
+  "heroSpawn": {
+   "x": 0.06,
+   "y": 0.31
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.31,
+    "y": 0.23
+   },
+   {
+    "x": 0.38,
+    "y": 0.27
+   },
+   {
+    "x": 0.34,
+    "y": 0.33
+   },
+   {
+    "x": 0.41,
+    "y": 0.24
+   }
+  ],
+  "waveSpawns": [
+   [
+    {
+     "x": 0.31,
+     "y": 0.23
+    },
+    {
+     "x": 0.38,
+     "y": 0.27
+    },
+    {
+     "x": 0.34,
+     "y": 0.33
+    },
+    {
+     "x": 0.41,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.81,
+     "y": 0.23
+    },
+    {
+     "x": 0.88,
+     "y": 0.27
+    },
+    {
+     "x": 0.84,
+     "y": 0.33
+    },
+    {
+     "x": 0.91,
+     "y": 0.24
+    }
+   ]
+  ],
+  "orbSpawns": [
+   [
+    {
+     "x": 0.11,
+     "y": 0.25
+    },
+    {
+     "x": 0.16,
+     "y": 0.31
+    },
+    {
+     "x": 0.12,
+     "y": 0.37
+    },
+    {
+     "x": 0.18,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.61,
+     "y": 0.25
+    },
+    {
+     "x": 0.66,
+     "y": 0.31
+    },
+    {
+     "x": 0.62,
+     "y": 0.37
+    },
+    {
+     "x": 0.68,
+     "y": 0.24
+    }
+   ]
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "imp",
+    "nameZh": "小妖",
+    "x": 0.08,
+    "y": 0.26
+   },
+   {
+    "role": "quiz",
+    "sprite": "imp",
+    "nameZh": "小妖",
+    "x": 0.7,
+    "y": 0.39
+   }
+  ],
+  "bossSpot": {
+   "x": 0.94,
+   "y": 0.85
+  }
+ }
+}

@@ -1,0 +1,584 @@
+{
+ "schema_version": 1,
+ "ep": 61,
+ "title": {
+  "en": "The Demon under the Ice",
+  "zh": "西游记 第61集"
+ },
+ "collection": "c08",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "shawujing",
+   "nameZh": "沙悟净",
+   "mode": "sparring",
+   "sprite": "shawujing"
+  },
+  "minors": [
+   {
+    "id": "imp",
+    "nameZh": "小妖",
+    "sprite": "imp"
+   }
+  ]
+ },
+ "background": {
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep61/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "Wukong leaped into the air.",
+   "textZh": "悟空凌空跃起。",
+   "illustration": "assets/adv_frames/ep61/f1.jpg",
+   "sourceNodeId": "n001",
+   "audioRef": "sent_en:Wukong leaped into the air."
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "His three companions and the horse fell into the water with a splash.",
+   "textZh": "他的三位同伴与那匹马一起哗啦一声掉进了水中。",
+   "illustration": "assets/adv_frames/ep61/f2.jpg",
+   "sourceNodeId": "n002",
+   "audioRef": "sent_en:His three companions and the horse fell into the water with a splash."
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "struggle",
+   "zh": "挣扎,搏斗",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep61/f2.jpg"
+  },
+  {
+   "term": "deep",
+   "zh": "1. 深深地,(2. 深的)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep61/f2.jpg"
+  },
+  {
+   "term": "underwater",
+   "zh": "在水里面地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep61/f1.jpg"
+  },
+  {
+   "term": "fell for",
+   "zh": "听信...,受骗于",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep61/f0.jpg"
+  },
+  {
+   "term": "crack",
+   "zh": "1. 打破,打碎,(2. 裂开,断裂,3. 裂缝,裂痕)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep61/f0.jpg"
+  },
+  {
+   "term": "residence",
+   "zh": "住宅,居住地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep61/f2.jpg"
+  },
+  {
+   "term": "pace",
+   "zh": "(因焦躁、生气等)踱步,慢慢地走",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep61/f0.jpg"
+  },
+  {
+   "term": "back and forth",
+   "zh": "来来回回地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep61/f0.jpg"
+  },
+  {
+   "term": "by accident",
+   "zh": "偶然地,意外地,碰巧",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep61/f1.jpg"
+  },
+  {
+   "term": "cause",
+   "zh": "导致,使发生,引起",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep61/f2.jpg"
+  },
+  {
+   "term": "hammer",
+   "zh": "铁锤,榔头",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep61/f1.jpg"
+  },
+  {
+   "term": "kidnap",
+   "zh": "绑架,诱拐",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep61/f3.jpg"
+  }
+ ],
+ "wordPool": [
+  {
+   "term": "struggle",
+   "zh": "挣扎,搏斗",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep61/f2.jpg"
+  },
+  {
+   "term": "deep",
+   "zh": "1. 深深地,(2. 深的)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep61/f2.jpg"
+  },
+  {
+   "term": "underwater",
+   "zh": "在水里面地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep61/f1.jpg"
+  },
+  {
+   "term": "fell for",
+   "zh": "听信...,受骗于",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep61/f0.jpg"
+  },
+  {
+   "term": "crack",
+   "zh": "1. 打破,打碎,(2. 裂开,断裂,3. 裂缝,裂痕)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep61/f0.jpg"
+  },
+  {
+   "term": "residence",
+   "zh": "住宅,居住地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep61/f2.jpg"
+  },
+  {
+   "term": "pace",
+   "zh": "(因焦躁、生气等)踱步,慢慢地走",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep61/f0.jpg"
+  },
+  {
+   "term": "back and forth",
+   "zh": "来来回回地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep61/f0.jpg"
+  },
+  {
+   "term": "by accident",
+   "zh": "偶然地,意外地,碰巧",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep61/f1.jpg"
+  },
+  {
+   "term": "cause",
+   "zh": "导致,使发生,引起",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep61/f2.jpg"
+  },
+  {
+   "term": "hammer",
+   "zh": "铁锤,榔头",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep61/f1.jpg"
+  },
+  {
+   "term": "kidnap",
+   "zh": "绑架,诱拐",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep61/f3.jpg"
+  },
+  {
+   "term": "plan",
+   "zh": "计划",
+   "ipa": "plæn",
+   "illustration": "assets/adv_frames/ep61/f1.jpg"
+  },
+  {
+   "term": "block",
+   "zh": "1. (道路等)阻塞,堵住,(2. 积木)",
+   "ipa": "blɒk",
+   "illustration": "assets/adv_frames/ep61/f3.jpg"
+  },
+  {
+   "term": "creature",
+   "zh": "生物,动物",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep61/f1.jpg"
+  },
+  {
+   "term": "fled",
+   "zh": "逃走,逃逸 (flee-fled)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep61/f1.jpg"
+  },
+  {
+   "term": "coward",
+   "zh": "懦夫,胆怯者",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep61/f0.jpg"
+  },
+  {
+   "term": "surface",
+   "zh": "1. 水面,(2. 表面)",
+   "ipa": "ˈsɜː(r)fɪs",
+   "illustration": "assets/adv_frames/ep61/f1.jpg"
+  },
+  {
+   "term": "duck",
+   "zh": "1. 稍微躲避一下,躲避,(2. 快速地低下头,弯下身子,3.鸭子)",
+   "ipa": "dʌk",
+   "illustration": "assets/adv_frames/ep61/f1.jpg"
+  },
+  {
+   "term": "form",
+   "zh": "建立,形成",
+   "ipa": "fɔːm",
+   "illustration": "assets/adv_frames/ep61/f3.jpg"
+  },
+  {
+   "term": "slip",
+   "zh": "滑脱,滑落",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep61/f0.jpg"
+  },
+  {
+   "term": "escape",
+   "zh": "逃亡,逃跑",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep61/f3.jpg"
+  },
+  {
+   "term": "bounce off",
+   "zh": "从...弹回",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep61/f1.jpg"
+  },
+  {
+   "term": "stab",
+   "zh": "(用像刀一样尖锐的东西)刺",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep61/f3.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "struggle",
+     "zh": "挣扎,搏斗",
+     "sprite": "imp"
+    },
+    {
+     "term": "deep",
+     "zh": "1. 深深地,(2. 深的)",
+     "sprite": "imp"
+    },
+    {
+     "term": "underwater",
+     "zh": "在水里面地",
+     "sprite": "imp"
+    },
+    {
+     "term": "fell for",
+     "zh": "听信...,受骗于",
+     "sprite": "imp"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "crack",
+     "zh": "1. 打破,打碎,(2. 裂开,断裂,3. 裂缝,裂痕)",
+     "sprite": "imp"
+    },
+    {
+     "term": "residence",
+     "zh": "住宅,居住地",
+     "sprite": "imp"
+    },
+    {
+     "term": "pace",
+     "zh": "(因焦躁、生气等)踱步,慢慢地走",
+     "sprite": "imp"
+    },
+    {
+     "term": "back and forth",
+     "zh": "来来回回地",
+     "sprite": "imp"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "by accident",
+    "zh": "偶然地,意外地,碰巧"
+   },
+   {
+    "term": "cause",
+    "zh": "导致,使发生,引起"
+   },
+   {
+    "term": "hammer",
+    "zh": "铁锤,榔头"
+   },
+   {
+    "term": "kidnap",
+    "zh": "绑架,诱拐"
+   }
+  ],
+  "taunts": [
+   "shawujing.1",
+   "shawujing.2",
+   "shawujing.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=61",
+ "npcDialogue": {
+  "intro": {
+   "id": "ep61-map-intro",
+   "lines": [
+    {
+     "id": "ep61-map-intro-1",
+     "sourceNodeId": "n001",
+     "speaker": "narrator",
+     "textEn": "Wukong leaped into the air.",
+     "textZh": "悟空凌空跃起。",
+     "audioRef": "sent_en:Wukong leaped into the air.",
+     "audioStart": 11.0,
+     "audioEnd": 15.174
+    },
+    {
+     "id": "ep61-map-intro-2",
+     "sourceNodeId": "n002",
+     "speaker": "narrator",
+     "textEn": "His three companions and the horse fell into the water with a splash.",
+     "textZh": "他的三位同伴与那匹马一起哗啦一声掉进了水中。",
+     "audioRef": "sent_en:His three companions and the horse fell into the water with a splash.",
+     "audioStart": 15.175,
+     "audioEnd": 22.162
+    }
+   ]
+  },
+  "quiz": {
+   "id": "ep61-map-quiz",
+   "lines": [
+    {
+     "id": "ep61-map-quiz-1",
+     "sourceNodeId": "n005",
+     "speaker": "narrator",
+     "textEn": "\"Where's the Tang Monk?\" cried Wukong.",
+     "textZh": "\"唐僧在哪里?\"悟空喊道。",
+     "audioRef": "sent_en:\"Where's the Tang Monk?\" cried Wukong.",
+     "audioStart": 31.978,
+     "audioEnd": 35.459
+    }
+   ],
+   "question": {
+    "id": "ep061-official-quiz-001",
+    "textEn": "which is true?",
+    "textZh": "哪一个是真的？"
+   },
+   "word": {
+    "term": "struggle",
+    "zh": "挣扎,搏斗",
+    "ipa": ""
+   },
+   "options": [
+    {
+     "id": "a",
+     "textEn": "the demon captured the tang monk.",
+     "textZh": "妖怪抓住了唐僧。",
+     "correct": true,
+     "feedback": "对了。妖怪抓住了唐僧。"
+    },
+    {
+     "id": "b",
+     "textEn": "wukong froze the river.",
+     "textZh": "悟空冻结了河流。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    },
+    {
+     "id": "c",
+     "textEn": "bajie had a large hammer.",
+     "textZh": "八戒有一把大锤。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    }
+   ],
+   "lessonCardId": "ep061-official-quiz-001"
+  }
+ },
+ "map": {
+  "theme": "generic",
+  "coordinateSpace": "world-normalized",
+  "worldTiles": 2,
+  "regions": {
+   "hero": 0,
+   "waves": [
+    0,
+    1
+   ],
+   "npc": {
+    "intro": 0,
+    "quiz": 1
+   },
+   "boss": 3
+  },
+  "walkable": {
+   "space": "world",
+   "x": 0.0,
+   "y": 0.16,
+   "w": 1.0,
+   "h": 0.79,
+   "rects": [
+    {
+     "x": 0.0,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.66,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    }
+   ]
+  },
+  "heroSpawn": {
+   "x": 0.06,
+   "y": 0.31
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.31,
+    "y": 0.23
+   },
+   {
+    "x": 0.38,
+    "y": 0.27
+   },
+   {
+    "x": 0.34,
+    "y": 0.33
+   },
+   {
+    "x": 0.41,
+    "y": 0.24
+   }
+  ],
+  "waveSpawns": [
+   [
+    {
+     "x": 0.31,
+     "y": 0.23
+    },
+    {
+     "x": 0.38,
+     "y": 0.27
+    },
+    {
+     "x": 0.34,
+     "y": 0.33
+    },
+    {
+     "x": 0.41,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.81,
+     "y": 0.23
+    },
+    {
+     "x": 0.88,
+     "y": 0.27
+    },
+    {
+     "x": 0.84,
+     "y": 0.33
+    },
+    {
+     "x": 0.91,
+     "y": 0.24
+    }
+   ]
+  ],
+  "orbSpawns": [
+   [
+    {
+     "x": 0.11,
+     "y": 0.25
+    },
+    {
+     "x": 0.16,
+     "y": 0.31
+    },
+    {
+     "x": 0.12,
+     "y": 0.37
+    },
+    {
+     "x": 0.18,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.61,
+     "y": 0.25
+    },
+    {
+     "x": 0.66,
+     "y": 0.31
+    },
+    {
+     "x": 0.62,
+     "y": 0.37
+    },
+    {
+     "x": 0.68,
+     "y": 0.24
+    }
+   ]
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "imp",
+    "nameZh": "小妖",
+    "x": 0.08,
+    "y": 0.26
+   },
+   {
+    "role": "quiz",
+    "sprite": "imp",
+    "nameZh": "小妖",
+    "x": 0.7,
+    "y": 0.39
+   }
+  ],
+  "bossSpot": {
+   "x": 0.94,
+   "y": 0.85
+  }
+ }
+}

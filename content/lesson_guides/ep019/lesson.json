@@ -1,0 +1,2778 @@
+{
+  "schema_version": 1,
+  "episode": 19,
+  "title": {
+    "en": "An Evil Plan",
+    "zh": "西游记 第19集"
+  },
+  "sources": [
+    {
+      "kind": "courseware_main_pptx",
+      "file": "G:\\Game\\BookPlay书戏\\data\\西游记课件\\3.3西游记  Journey to the West PPT课件\\019_Journey to the West 19_An Evil Plan.pptx",
+      "sha256": "e9720d802082292b443928bcac0d718c6cf74e7fca957654996842f8a4db2b4b",
+      "pages": 20
+    },
+    {
+      "kind": "official_quiz_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+      "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929",
+      "pages": 131
+    },
+    {
+      "kind": "intensive_reader_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\02-西游记精读版台词本\\1、带标注版PDF 108集\\019 邪恶的计划 上.pdf",
+      "sha256": "caec8f8e619a588236cb6a04c20664806fc75489b7e5c94debafc61eb82b2c4f",
+      "pages": 3
+    },
+    {
+      "kind": "intensive_reader_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\02-西游记精读版台词本\\1、带标注版PDF 108集\\019 邪恶的计划 下.pdf",
+      "sha256": "ffc16373df87f6d22bf0139efd20db743e1065f4ad40471aa2dfb71041d3045a",
+      "pages": 4
+    },
+    {
+      "kind": "courseware_screenshots_pptx",
+      "file": "G:\\Game\\BookPlay书戏\\data\\西游记课件\\西游记-外教课动画截图\\Journey to the West 019  An Evil Plan_20240106164102.pptx",
+      "sha256": "3997c71ff978000b99747c559edbe29112628e89f335c659cd2484d689d62867",
+      "pages": 43
+    }
+  ],
+  "cards": [
+    {
+      "card_id": "ep019-official-quiz-001",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 1,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "which is true?",
+        "zh": "哪一个是真的？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "the head priest wanted to keep the robe.",
+            "zh": "首席祭司想要保留那件长袍。"
+          },
+          {
+            "id": "b",
+            "en": "wukong tried to put out the fire.",
+            "zh": "悟空试图扑灭火焰。"
+          },
+          {
+            "id": "c",
+            "en": "the tang monk was happy about the fire.",
+            "zh": "唐僧对火感到高兴。"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n018",
+            "quote": "\"I'll bet that head priest wants to keep our robe. He's planning to kill us.\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 22,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep019-official-quiz-002",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 2,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "what were the priests carrying in the courtyard?",
+        "zh": "祭司们在院子里拿着什么？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "firewood",
+            "zh": "柴火"
+          },
+          {
+            "id": "b",
+            "en": "the robe",
+            "zh": "长袍"
+          },
+          {
+            "id": "c",
+            "en": "books",
+            "zh": "书"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n013",
+            "quote": "They were carrying bundles of firewood."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 22,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep019-official-quiz-003",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 3,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "what did the tang monk do at night?",
+        "zh": "唐僧晚上做了什么？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "slept peacefully",
+            "zh": "安睡"
+          },
+          {
+            "id": "b",
+            "en": "put out the fire",
+            "zh": "扑灭火焰"
+          },
+          {
+            "id": "c",
+            "en": "ran away",
+            "zh": "跑掉了"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n028",
+            "quote": "The Tang Monk slept peacefully as the rest of the monastery burned down."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 22,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep019-official-quiz-004",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 4,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "what did wukong's spell not do?",
+        "zh": "悟空的法术没有做什么？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "find the head priest",
+            "zh": "找到首席牧师"
+          },
+          {
+            "id": "b",
+            "en": "protect the tang monk",
+            "zh": "保护唐僧"
+          },
+          {
+            "id": "c",
+            "en": "burn the monastery down",
+            "zh": "烧毁修道院"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n047",
+            "quote": "\"I used my magic for that too,\" said Wukong with a smile."
+          },
+          {
+            "node_id": "n048",
+            "quote": "\"I used a spell that protected only your building and the robe. The spell made the fire spread everywhere else, though.\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 22,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep019-official-quiz-005",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 5,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "what happened to the robe?",
+        "zh": "长袍怎么了？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "no one could find it.",
+            "zh": "没有人能找到它。"
+          },
+          {
+            "id": "b",
+            "en": "wukong burnt it.",
+            "zh": "悟空烧了它。"
+          },
+          {
+            "id": "c",
+            "en": "the monks gave it back.",
+            "zh": "僧侣们把它还回去了。"
+          }
+        ],
+        "answer": "b",
+        "answer_evidence": [
+          {
+            "node_id": "n039",
+            "quote": "\"Wukong!\" cried the monk. \"What happened here?\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 22,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep019-vocab-001",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 101,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "call",
+        "zh": "电话,叫声圈国"
+      },
+      "payload": {
+        "term": "call",
+        "ipa": "kɔː l",
+        "pos": "v.",
+        "def": "v.给......打电话,把......叫作,呼 喊 n.[C]电话,叫声圈国",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "019 邪恶的计划 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "caec8f8e619a588236cb6a04c20664806fc75489b7e5c94debafc61eb82b2c4f"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep019-vocab-002",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 102,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "quick",
+        "zh": "adj.快的,迅速的,敏捷的"
+      },
+      "payload": {
+        "term": "quick",
+        "ipa": "kwɪk",
+        "pos": "adj.",
+        "def": "adj.快的,迅速的,敏捷的",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "019 邪恶的计划 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "caec8f8e619a588236cb6a04c20664806fc75489b7e5c94debafc61eb82b2c4f"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep019-vocab-003",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 103,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "everything",
+        "zh": "pron.所有事物,一切"
+      },
+      "payload": {
+        "term": "everything",
+        "ipa": "ˈevriθɪŋ",
+        "pos": "pron.",
+        "def": "pron.所有事物,一切",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "019 邪恶的计划 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "caec8f8e619a588236cb6a04c20664806fc75489b7e5c94debafc61eb82b2c4f"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep019-vocab-004",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 104,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "ask",
+        "zh": "v.请求,要求,询问"
+      },
+      "payload": {
+        "term": "ask",
+        "ipa": "ɑːsk",
+        "pos": "v.",
+        "def": "v.请求,要求,询问",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "019 邪恶的计划 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "caec8f8e619a588236cb6a04c20664806fc75489b7e5c94debafc61eb82b2c4f"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep019-vocab-005",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 105,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "give",
+        "zh": "v.提供,给,捐赠,发表"
+      },
+      "payload": {
+        "term": "give",
+        "ipa": "ɡɪv",
+        "pos": "v.",
+        "def": "v.提供,给,捐赠,发表",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "019 邪恶的计划 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "caec8f8e619a588236cb6a04c20664806fc75489b7e5c94debafc61eb82b2c4f"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep019-vocab-006",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 106,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "back",
+        "zh": "后面,背部 adj.后面的 adv.回原处,向后地"
+      },
+      "payload": {
+        "term": "back",
+        "ipa": "bæk",
+        "pos": "n.",
+        "def": "n.[C]后面,背部 adj.后面的 adv.回原处,向后地",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "019 邪恶的计划 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "caec8f8e619a588236cb6a04c20664806fc75489b7e5c94debafc61eb82b2c4f"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep019-vocab-007",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 107,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "treasure",
+        "zh": "宝物 vt.珍视,珍惜"
+      },
+      "payload": {
+        "term": "treasure",
+        "ipa": "ˈtreʒə(r)",
+        "pos": "n.",
+        "def": "n.[U]珠宝,财富 [C]宝物 vt.珍视,珍惜",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "019 邪恶的计划 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "caec8f8e619a588236cb6a04c20664806fc75489b7e5c94debafc61eb82b2c4f"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep019-vocab-008",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 108,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "keep",
+        "zh": "保持；保留"
+      },
+      "payload": {
+        "term": "keep",
+        "ipa": "kiːp",
+        "pos": "v.",
+        "def": "保持；保留",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ],
+        "gloss": "保持；保留"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "019 邪恶的计划 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "caec8f8e619a588236cb6a04c20664806fc75489b7e5c94debafc61eb82b2c4f"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep019-vocab-009",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 109,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "smile",
+        "zh": "笑,微笑"
+      },
+      "payload": {
+        "term": "smile",
+        "ipa": "smaɪ",
+        "pos": "vi.",
+        "def": "vi./n.[C]笑,微笑",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "019 邪恶的计划 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "caec8f8e619a588236cb6a04c20664806fc75489b7e5c94debafc61eb82b2c4f"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep019-vocab-010",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 110,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "look",
+        "zh": "看,注视,外表,表情"
+      },
+      "payload": {
+        "term": "look",
+        "ipa": "lʊk",
+        "pos": "vi.",
+        "def": "vi.看 v.-link.看上去 n.[C]看,注视,外表,表情",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          1,
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "019 邪恶的计划 上.pdf",
+          "half": "up",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "caec8f8e619a588236cb6a04c20664806fc75489b7e5c94debafc61eb82b2c4f"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "019 邪恶的计划 下.pdf",
+          "half": "down",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "ffc16373df87f6d22bf0139efd20db743e1065f4ad40471aa2dfb71041d3045a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep019-vocab-011",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 111,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "eye",
+        "zh": "眼睛"
+      },
+      "payload": {
+        "term": "eye",
+        "ipa": "aɪ",
+        "pos": "n.",
+        "def": "n.[C]眼睛",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          1,
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "019 邪恶的计划 上.pdf",
+          "half": "up",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "caec8f8e619a588236cb6a04c20664806fc75489b7e5c94debafc61eb82b2c4f"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "019 邪恶的计划 下.pdf",
+          "half": "down",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "ffc16373df87f6d22bf0139efd20db743e1065f4ad40471aa2dfb71041d3045a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep019-vocab-012",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 112,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "plan",
+        "zh": "打算,计划"
+      },
+      "payload": {
+        "term": "plan",
+        "ipa": "plæn",
+        "pos": "v.",
+        "def": "v./n.打算,计划 [C]打算,计划",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "019 邪恶的计划 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "caec8f8e619a588236cb6a04c20664806fc75489b7e5c94debafc61eb82b2c4f"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep019-vocab-013",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 113,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "say",
+        "zh": "v.说,讲"
+      },
+      "payload": {
+        "term": "say",
+        "ipa": "seɪ",
+        "pos": "v.",
+        "def": "v.说,讲",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "019 邪恶的计划 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "caec8f8e619a588236cb6a04c20664806fc75489b7e5c94debafc61eb82b2c4f"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep019-vocab-014",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 114,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "awake",
+        "zh": "adj.醒着 v.(使)醒来,唤醒"
+      },
+      "payload": {
+        "term": "awake",
+        "ipa": "əˈweɪk",
+        "pos": "adj.",
+        "def": "adj.醒着 v.(使)醒来,唤醒",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "019 邪恶的计划 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "caec8f8e619a588236cb6a04c20664806fc75489b7e5c94debafc61eb82b2c4f"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep019-vocab-015",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 115,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "walk",
+        "zh": "步行的路径"
+      },
+      "payload": {
+        "term": "walk",
+        "ipa": "wɔː k",
+        "pos": "n.",
+        "def": "n.[C]行走,步行 v.行走,步行 n.[C]步行的路径",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          1,
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "019 邪恶的计划 上.pdf",
+          "half": "up",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "caec8f8e619a588236cb6a04c20664806fc75489b7e5c94debafc61eb82b2c4f"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "019 邪恶的计划 下.pdf",
+          "half": "down",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "ffc16373df87f6d22bf0139efd20db743e1065f4ad40471aa2dfb71041d3045a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep019-vocab-016",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 116,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "carry",
+        "zh": "vt.拿,提,扛,运送,传送,承 载"
+      },
+      "payload": {
+        "term": "carry",
+        "ipa": "ˈkæri",
+        "pos": "vt.",
+        "def": "vt.拿,提,扛,运送,传送,承 载",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "019 邪恶的计划 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "caec8f8e619a588236cb6a04c20664806fc75489b7e5c94debafc61eb82b2c4f"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep019-vocab-017",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 117,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "middle",
+        "zh": "adj.中间的 n.中间"
+      },
+      "payload": {
+        "term": "middle",
+        "ipa": "ˈmɪdl",
+        "pos": "adj.",
+        "def": "adj.中间的 n.中间",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "019 邪恶的计划 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "caec8f8e619a588236cb6a04c20664806fc75489b7e5c94debafc61eb82b2c4f"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep019-vocab-018",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 118,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "night",
+        "zh": "晚上,夜晚"
+      },
+      "payload": {
+        "term": "night",
+        "ipa": "naɪt",
+        "pos": "n.",
+        "def": "n.[C,U]晚上,夜晚",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "019 邪恶的计划 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "caec8f8e619a588236cb6a04c20664806fc75489b7e5c94debafc61eb82b2c4f"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep019-vocab-019",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 119,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "think",
+        "zh": "v.认为,想。思考"
+      },
+      "payload": {
+        "term": "think",
+        "ipa": "θɪŋk",
+        "pos": "v.",
+        "def": "v.认为,想。思考",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "019 邪恶的计划 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "caec8f8e619a588236cb6a04c20664806fc75489b7e5c94debafc61eb82b2c4f"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep019-vocab-020",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 120,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "start",
+        "zh": "起点,开端"
+      },
+      "payload": {
+        "term": "start",
+        "ipa": "stɑː (r)t",
+        "pos": "v.",
+        "def": "v.开始,着手,创办 n.[C]起点,开端",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "019 邪恶的计划 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "caec8f8e619a588236cb6a04c20664806fc75489b7e5c94debafc61eb82b2c4f"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep019-vocab-021",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 121,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "fire",
+        "zh": "炉火 v.解雇,开枪"
+      },
+      "payload": {
+        "term": "fire",
+        "ipa": "ˈfaɪə(r)",
+        "pos": "n.",
+        "def": "n.[U]火[C,U]火灾[C]炉火 v.解雇,开枪",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          1,
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "019 邪恶的计划 上.pdf",
+          "half": "up",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "caec8f8e619a588236cb6a04c20664806fc75489b7e5c94debafc61eb82b2c4f"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "019 邪恶的计划 下.pdf",
+          "half": "down",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "ffc16373df87f6d22bf0139efd20db743e1065f4ad40471aa2dfb71041d3045a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep019-vocab-022",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 122,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "sleep",
+        "zh": "一觉"
+      },
+      "payload": {
+        "term": "sleep",
+        "ipa": "sliː p",
+        "pos": "vi.",
+        "def": "vi./n.[U]睡觉[sing.]一觉",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "019 邪恶的计划 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "caec8f8e619a588236cb6a04c20664806fc75489b7e5c94debafc61eb82b2c4f"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep019-vocab-023",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 123,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "want",
+        "zh": "vt.需要,想要"
+      },
+      "payload": {
+        "term": "want",
+        "ipa": "wɒnt",
+        "pos": "vt.",
+        "def": "vt.需要,想要",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "019 邪恶的计划 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "caec8f8e619a588236cb6a04c20664806fc75489b7e5c94debafc61eb82b2c4f"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep019-vocab-024",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 124,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "wait",
+        "zh": "v.等待,等候"
+      },
+      "payload": {
+        "term": "wait",
+        "ipa": "weɪt",
+        "pos": "v.",
+        "def": "v.等待,等候",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "019 邪恶的计划 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "caec8f8e619a588236cb6a04c20664806fc75489b7e5c94debafc61eb82b2c4f"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep019-vocab-025",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 125,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "light",
+        "zh": "电灯 adj.轻的,轻柔的,程度轻的,少 量的,浅色的 v.点燃,照亮"
+      },
+      "payload": {
+        "term": "light",
+        "ipa": "laɪt",
+        "pos": "n.",
+        "def": "n.[U]光,光线,光亮;[C]电灯 adj.轻的,轻柔的,程度轻的,少 量的,浅色的 v.点燃,照亮",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "019 邪恶的计划 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "caec8f8e619a588236cb6a04c20664806fc75489b7e5c94debafc61eb82b2c4f"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep019-vocab-026",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 126,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "magic power",
+        "zh": "神奇的力量;魔力"
+      },
+      "payload": {
+        "term": "magic power",
+        "ipa": "",
+        "pos": "",
+        "def": "神奇的力量;魔力",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "019 邪恶的计划 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "caec8f8e619a588236cb6a04c20664806fc75489b7e5c94debafc61eb82b2c4f"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep019-vocab-027",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 127,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "run",
+        "zh": "跑,跑步"
+      },
+      "payload": {
+        "term": "run",
+        "ipa": "rʌn",
+        "pos": "vi.",
+        "def": "vi.跑,奔 vt.经营 n.[C]跑,跑步",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "019 邪恶的计划 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "caec8f8e619a588236cb6a04c20664806fc75489b7e5c94debafc61eb82b2c4f"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep019-vocab-028",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 128,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "build",
+        "zh": "身材"
+      },
+      "payload": {
+        "term": "build",
+        "ipa": "bɪld",
+        "pos": "v.",
+        "def": "v.建筑,建造,增强,建立 n.[C,U]身材",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          1,
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "019 邪恶的计划 上.pdf",
+          "half": "up",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "caec8f8e619a588236cb6a04c20664806fc75489b7e5c94debafc61eb82b2c4f"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "019 邪恶的计划 下.pdf",
+          "half": "down",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "ffc16373df87f6d22bf0139efd20db743e1065f4ad40471aa2dfb71041d3045a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep019-vocab-029",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 129,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "cry",
+        "zh": "叫喊"
+      },
+      "payload": {
+        "term": "cry",
+        "ipa": "kraɪ",
+        "pos": "v.",
+        "def": "v./n.[sing.]哭 [C]叫喊",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          1,
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "019 邪恶的计划 上.pdf",
+          "half": "up",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "caec8f8e619a588236cb6a04c20664806fc75489b7e5c94debafc61eb82b2c4f"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "019 邪恶的计划 下.pdf",
+          "half": "down",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "ffc16373df87f6d22bf0139efd20db743e1065f4ad40471aa2dfb71041d3045a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep019-vocab-030",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 130,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "another",
+        "zh": "adj./pron.另一,又一"
+      },
+      "payload": {
+        "term": "another",
+        "ipa": "əˈnʌðə(r)",
+        "pos": "adj.",
+        "def": "adj./pron.另一,又一",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "019 邪恶的计划 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "caec8f8e619a588236cb6a04c20664806fc75489b7e5c94debafc61eb82b2c4f"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep019-vocab-031",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 131,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "peaceful",
+        "zh": "adj.和平的,安宁的,平静的"
+      },
+      "payload": {
+        "term": "peaceful",
+        "ipa": "ˈpiːsf(ə)l",
+        "pos": "adj.",
+        "def": "adj.和平的,安宁的,平静的",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "019 邪恶的计划 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "caec8f8e619a588236cb6a04c20664806fc75489b7e5c94debafc61eb82b2c4f"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep019-vocab-032",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 132,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "next",
+        "zh": "下一个(的) adv.紧接着,随后"
+      },
+      "payload": {
+        "term": "next",
+        "ipa": "nekst",
+        "pos": "adj.",
+        "def": "adj./n[sing.]下一个(的) adv.紧接着,随后",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "019 邪恶的计划 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "ffc16373df87f6d22bf0139efd20db743e1065f4ad40471aa2dfb71041d3045a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep019-vocab-033",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 133,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "morning",
+        "zh": "早晨,上午"
+      },
+      "payload": {
+        "term": "morning",
+        "ipa": "ˈmɔː(r)nɪŋ",
+        "pos": "n.",
+        "def": "n.[C,U]早晨,上午",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "019 邪恶的计划 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "ffc16373df87f6d22bf0139efd20db743e1065f4ad40471aa2dfb71041d3045a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep019-vocab-034",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 134,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "realize",
+        "zh": "vt.(亦作realise)理解,领会, 意识到,认识到,实现"
+      },
+      "payload": {
+        "term": "realize",
+        "ipa": "ˈriːəlaɪz",
+        "pos": "vt.",
+        "def": "vt.(亦作realise)理解,领会, 意识到,认识到,实现",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "019 邪恶的计划 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "ffc16373df87f6d22bf0139efd20db743e1065f4ad40471aa2dfb71041d3045a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep019-vocab-035",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 135,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "over",
+        "zh": "在上方；超过"
+      },
+      "payload": {
+        "term": "over",
+        "ipa": "ˈəʊvə®",
+        "pos": "prep.",
+        "def": "在上方；超过",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ],
+        "gloss": "在上方；超过"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "019 邪恶的计划 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "ffc16373df87f6d22bf0139efd20db743e1065f4ad40471aa2dfb71041d3045a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep019-vocab-036",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 136,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "happen",
+        "zh": "vi.发生,出现,碰巧"
+      },
+      "payload": {
+        "term": "happen",
+        "ipa": "ˈhæpən",
+        "pos": "vi.",
+        "def": "vi.发生,出现,碰巧",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "019 邪恶的计划 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "ffc16373df87f6d22bf0139efd20db743e1065f4ad40471aa2dfb71041d3045a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep019-vocab-037",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 137,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "kill",
+        "zh": "v.杀死,弄死,使停止;消磨(时 间)"
+      },
+      "payload": {
+        "term": "kill",
+        "ipa": "kɪl",
+        "pos": "v.",
+        "def": "v.杀死,弄死,使停止;消磨(时 间)",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "019 邪恶的计划 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "ffc16373df87f6d22bf0139efd20db743e1065f4ad40471aa2dfb71041d3045a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep019-vocab-038",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 138,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "fine",
+        "zh": "好的"
+      },
+      "payload": {
+        "term": "fine",
+        "ipa": "faɪn",
+        "pos": "",
+        "def": "好的",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ],
+        "gloss": "好的"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "019 邪恶的计划 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "ffc16373df87f6d22bf0139efd20db743e1065f4ad40471aa2dfb71041d3045a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep019-vocab-039",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 139,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "magic",
+        "zh": "魔术;魔法,魔力,魅力"
+      },
+      "payload": {
+        "term": "magic",
+        "ipa": "ˈmædʒɪk",
+        "pos": "adj.",
+        "def": "adj.有魔力的,有神奇力量的 n.[U]魔术;魔法,魔力,魅力",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "019 邪恶的计划 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "ffc16373df87f6d22bf0139efd20db743e1065f4ad40471aa2dfb71041d3045a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep019-vocab-040",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 140,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "stop",
+        "zh": "车站,停止 v.停止,阻止,逗留"
+      },
+      "payload": {
+        "term": "stop",
+        "ipa": "stɒp",
+        "pos": "n.",
+        "def": "n.[C]车站,停止 v.停止,阻止,逗留",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "019 邪恶的计划 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "ffc16373df87f6d22bf0139efd20db743e1065f4ad40471aa2dfb71041d3045a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep019-vocab-041",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 141,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "burn",
+        "zh": "烧伤"
+      },
+      "payload": {
+        "term": "burn",
+        "ipa": "bɜː (r)n",
+        "pos": "v.",
+        "def": "v.着火,燃烧 n.[C]烧伤",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "019 邪恶的计划 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "ffc16373df87f6d22bf0139efd20db743e1065f4ad40471aa2dfb71041d3045a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep019-vocab-042",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 142,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "spell",
+        "zh": "咒语"
+      },
+      "payload": {
+        "term": "spell",
+        "ipa": "spel",
+        "pos": "v.",
+        "def": "v.用字母拼,拼写 n.[C]咒语",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "019 邪恶的计划 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "ffc16373df87f6d22bf0139efd20db743e1065f4ad40471aa2dfb71041d3045a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep019-vocab-043",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 143,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "protect",
+        "zh": "v.保护,防护"
+      },
+      "payload": {
+        "term": "protect",
+        "ipa": "prəˈtek",
+        "pos": "v.",
+        "def": "v.保护,防护",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "019 邪恶的计划 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "ffc16373df87f6d22bf0139efd20db743e1065f4ad40471aa2dfb71041d3045a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep019-vocab-044",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 144,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "spread",
+        "zh": "蔓延,传播"
+      },
+      "payload": {
+        "term": "spread",
+        "ipa": "spred",
+        "pos": "v.",
+        "def": "v.传播,展开;蔓延 n.[U]蔓延,传播",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "019 邪恶的计划 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "ffc16373df87f6d22bf0139efd20db743e1065f4ad40471aa2dfb71041d3045a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep019-vocab-045",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 145,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "fill",
+        "zh": "v.(使)充满,装满"
+      },
+      "payload": {
+        "term": "fill",
+        "ipa": "fɪl",
+        "pos": "v.",
+        "def": "v.(使)充满,装满",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "019 邪恶的计划 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "ffc16373df87f6d22bf0139efd20db743e1065f4ad40471aa2dfb71041d3045a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep019-vocab-046",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 146,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "angry",
+        "zh": "adj.发怒的,愤怒的,生气的"
+      },
+      "payload": {
+        "term": "angry",
+        "ipa": "ˈæŋɡri",
+        "pos": "adj.",
+        "def": "adj.发怒的,愤怒的,生气的",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "019 邪恶的计划 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "ffc16373df87f6d22bf0139efd20db743e1065f4ad40471aa2dfb71041d3045a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep019-vocab-047",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 147,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "shout",
+        "zh": "呼喊,叫喊"
+      },
+      "payload": {
+        "term": "shout",
+        "ipa": "ʃaʊt",
+        "pos": "v.",
+        "def": "v.呼叫,喊叫 n.[C]呼喊,叫喊",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "019 邪恶的计划 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "ffc16373df87f6d22bf0139efd20db743e1065f4ad40471aa2dfb71041d3045a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep019-vocab-048",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 148,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "master",
+        "zh": "n.大师,能手,主人,硕士 vt.掌握 adj.熟练的"
+      },
+      "payload": {
+        "term": "master",
+        "ipa": "ˈmɑː stə",
+        "pos": "n.",
+        "def": "n.大师,能手,主人,硕士 vt.掌握 adj.熟练的",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "019 邪恶的计划 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "ffc16373df87f6d22bf0139efd20db743e1065f4ad40471aa2dfb71041d3045a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep019-vocab-049",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 149,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "club",
+        "zh": "俱乐部,社团"
+      },
+      "payload": {
+        "term": "club",
+        "ipa": "klʌb",
+        "pos": "n.",
+        "def": "n.[C]俱乐部,社团",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "019 邪恶的计划 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "ffc16373df87f6d22bf0139efd20db743e1065f4ad40471aa2dfb71041d3045a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep019-vocab-050",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 150,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "idea",
+        "zh": "想法,主意"
+      },
+      "payload": {
+        "term": "idea",
+        "ipa": "aɪˈdɪə",
+        "pos": "n.",
+        "def": "n.[C]想法,主意",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "019 邪恶的计划 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "ffc16373df87f6d22bf0139efd20db743e1065f4ad40471aa2dfb71041d3045a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep019-vocab-051",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 151,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "relax",
+        "zh": "v.放松,休息"
+      },
+      "payload": {
+        "term": "relax",
+        "ipa": "rɪˈlæks",
+        "pos": "v.",
+        "def": "v.放松,休息",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "019 邪恶的计划 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "ffc16373df87f6d22bf0139efd20db743e1065f4ad40471aa2dfb71041d3045a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep019-vocab-052",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 152,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "continue",
+        "zh": "v.持续,继续做"
+      },
+      "payload": {
+        "term": "continue",
+        "ipa": "kənˈtɪnjuː",
+        "pos": "v.",
+        "def": "v.持续,继续做",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "019 邪恶的计划 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "ffc16373df87f6d22bf0139efd20db743e1065f4ad40471aa2dfb71041d3045a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep019-vocab-053",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 153,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "can",
+        "zh": "罐"
+      },
+      "payload": {
+        "term": "can",
+        "ipa": "kæn",
+        "pos": "",
+        "def": "modal v.能,可能 n.[C]罐",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "019 邪恶的计划 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "ffc16373df87f6d22bf0139efd20db743e1065f4ad40471aa2dfb71041d3045a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep019-vocab-054",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 154,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "shake",
+        "zh": "摇动,抖动,奶昔"
+      },
+      "payload": {
+        "term": "shake",
+        "ipa": "ʃeɪk",
+        "pos": "v.",
+        "def": "v.摇动,抖动,(与某人)握手, 发抖 n.[C]摇动,抖动,奶昔",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "019 邪恶的计划 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "ffc16373df87f6d22bf0139efd20db743e1065f4ad40471aa2dfb71041d3045a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep019-vocab-055",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 155,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "go",
+        "zh": "去,走"
+      },
+      "payload": {
+        "term": "go",
+        "ipa": "ɡəʊ",
+        "pos": "vi.",
+        "def": "去,走",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ],
+        "gloss": "去,走"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "019 邪恶的计划 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "ffc16373df87f6d22bf0139efd20db743e1065f4ad40471aa2dfb71041d3045a"
+        }
+      ],
+      "review_status": "machine_verified"
+    }
+  ],
+  "teacher_guide": null,
+  "review": {
+    "status": "draft",
+    "reviewed_at": null,
+    "card_stats": {
+      "total": 60,
+      "sentence_choice": 5,
+      "word_review": 55,
+      "machine_verified": 58,
+      "assistant_reviewed": 2,
+      "verified": 60,
+      "needs_review": 0
+    }
+  },
+  "generated_at": "2026-08-31T04:49:36.979703+00:00"
+}

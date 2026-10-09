@@ -1,0 +1,584 @@
+{
+ "schema_version": 1,
+ "ep": 79,
+ "title": {
+  "en": "The Mountain of Flames",
+  "zh": "西游记 第79集"
+ },
+ "collection": "c10",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "bullking",
+   "nameZh": "牛魔王",
+   "mode": "sparring",
+   "sprite": "bullking"
+  },
+  "minors": [
+   {
+    "id": "imp",
+    "nameZh": "小妖",
+    "sprite": "imp"
+   }
+  ]
+ },
+ "background": {
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep79/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "Wukong was furious.",
+   "textZh": "悟空勃然大怒。",
+   "illustration": "assets/adv_frames/ep79/f1.jpg",
+   "sourceNodeId": "n001",
+   "audioRef": "sent_en:Wukong was furious."
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "\"The Bull Demon King tricked me!\"",
+   "textZh": "\"牛魔王骗了我!\"",
+   "illustration": "assets/adv_frames/ep79/f2.jpg",
+   "sourceNodeId": "n002",
+   "audioRef": "sent_en:\"The Bull Demon King tricked me!\""
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "bull",
+   "zh": "(未阉割过的)公牛",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep79/f2.jpg"
+  },
+  {
+   "term": "smash",
+   "zh": "打碎,打破",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep79/f3.jpg"
+  },
+  {
+   "term": "villain",
+   "zh": "坏人,恶棍",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep79/f0.jpg"
+  },
+  {
+   "term": "charge",
+   "zh": "突击,进攻",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep79/f0.jpg"
+  },
+  {
+   "term": "turn",
+   "zh": "转变为,变成",
+   "ipa": "tɜː(r)n",
+   "illustration": "assets/adv_frames/ep79/f1.jpg"
+  },
+  {
+   "term": "crane",
+   "zh": "起重机,吊车",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep79/f1.jpg"
+  },
+  {
+   "term": "phoenix",
+   "zh": "凤凰",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep79/f3.jpg"
+  },
+  {
+   "term": "claw",
+   "zh": "爪子",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep79/f0.jpg"
+  },
+  {
+   "term": "swoop",
+   "zh": "(从上到下)猛扑",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep79/f0.jpg"
+  },
+  {
+   "term": "dip",
+   "zh": "1. 下沉,下降,(2. (在水或液态物体中稍微)浸,蘸)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep79/f1.jpg"
+  },
+  {
+   "term": "antelope",
+   "zh": "羚羊(一种长的像鹿的动物)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep79/f0.jpg"
+  },
+  {
+   "term": "graze",
+   "zh": "(家畜)啃草",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep79/f0.jpg"
+  }
+ ],
+ "wordPool": [
+  {
+   "term": "bull",
+   "zh": "(未阉割过的)公牛",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep79/f2.jpg"
+  },
+  {
+   "term": "smash",
+   "zh": "打碎,打破",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep79/f3.jpg"
+  },
+  {
+   "term": "villain",
+   "zh": "坏人,恶棍",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep79/f0.jpg"
+  },
+  {
+   "term": "charge",
+   "zh": "突击,进攻",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep79/f0.jpg"
+  },
+  {
+   "term": "turn",
+   "zh": "转变为,变成",
+   "ipa": "tɜː(r)n",
+   "illustration": "assets/adv_frames/ep79/f1.jpg"
+  },
+  {
+   "term": "crane",
+   "zh": "起重机,吊车",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep79/f1.jpg"
+  },
+  {
+   "term": "phoenix",
+   "zh": "凤凰",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep79/f3.jpg"
+  },
+  {
+   "term": "claw",
+   "zh": "爪子",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep79/f0.jpg"
+  },
+  {
+   "term": "swoop",
+   "zh": "(从上到下)猛扑",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep79/f0.jpg"
+  },
+  {
+   "term": "dip",
+   "zh": "1. 下沉,下降,(2. (在水或液态物体中稍微)浸,蘸)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep79/f1.jpg"
+  },
+  {
+   "term": "antelope",
+   "zh": "羚羊(一种长的像鹿的动物)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep79/f0.jpg"
+  },
+  {
+   "term": "graze",
+   "zh": "(家畜)啃草",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep79/f0.jpg"
+  },
+  {
+   "term": "caught up",
+   "zh": "赶上,追上",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep79/f2.jpg"
+  },
+  {
+   "term": "stand back",
+   "zh": "靠后站",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep79/f3.jpg"
+  },
+  {
+   "term": "soldier",
+   "zh": "军人",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep79/f0.jpg"
+  },
+  {
+   "term": "snort",
+   "zh": "1. 喷鼻息,鼻息声,(2. 轻蔑(或愤怒)地哼,嘲讽地笑)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep79/f3.jpg"
+  },
+  {
+   "term": "the other",
+   "zh": "另一个方向",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep79/f3.jpg"
+  },
+  {
+   "term": "path",
+   "zh": "(前面的) 道路",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep79/f0.jpg"
+  },
+  {
+   "term": "surround",
+   "zh": "包围",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep79/f1.jpg"
+  },
+  {
+   "term": "point",
+   "zh": "指向......",
+   "ipa": "pɔɪnt",
+   "illustration": "assets/adv_frames/ep79/f0.jpg"
+  },
+  {
+   "term": "form",
+   "zh": "1. (人的)模样,形态,(2. 种类,类型,(3. 建立,形成))",
+   "ipa": "fɔːm",
+   "illustration": "assets/adv_frames/ep79/f0.jpg"
+  },
+  {
+   "term": "evil",
+   "zh": "1. 邪恶的,坏的,(2. 恶,罪恶)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep79/f3.jpg"
+  },
+  {
+   "term": "lower",
+   "zh": "降低,放下",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep79/f0.jpg"
+  },
+  {
+   "term": "truly",
+   "zh": "真实地,真正地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep79/f1.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "bull",
+     "zh": "(未阉割过的)公牛",
+     "sprite": "imp"
+    },
+    {
+     "term": "smash",
+     "zh": "打碎,打破",
+     "sprite": "imp"
+    },
+    {
+     "term": "villain",
+     "zh": "坏人,恶棍",
+     "sprite": "imp"
+    },
+    {
+     "term": "charge",
+     "zh": "突击,进攻",
+     "sprite": "imp"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "turn",
+     "zh": "转变为,变成",
+     "sprite": "imp"
+    },
+    {
+     "term": "crane",
+     "zh": "起重机,吊车",
+     "sprite": "imp"
+    },
+    {
+     "term": "phoenix",
+     "zh": "凤凰",
+     "sprite": "imp"
+    },
+    {
+     "term": "claw",
+     "zh": "爪子",
+     "sprite": "imp"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "swoop",
+    "zh": "(从上到下)猛扑"
+   },
+   {
+    "term": "dip",
+    "zh": "1. 下沉,下降,(2. (在水或液态物体中稍微)浸,蘸)"
+   },
+   {
+    "term": "antelope",
+    "zh": "羚羊(一种长的像鹿的动物)"
+   },
+   {
+    "term": "graze",
+    "zh": "(家畜)啃草"
+   }
+  ],
+  "taunts": [
+   "bullking.1",
+   "bullking.2",
+   "bullking.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=79",
+ "npcDialogue": {
+  "intro": {
+   "id": "ep79-map-intro",
+   "lines": [
+    {
+     "id": "ep79-map-intro-1",
+     "sourceNodeId": "n001",
+     "speaker": "narrator",
+     "textEn": "Wukong was furious.",
+     "textZh": "悟空勃然大怒。",
+     "audioRef": "sent_en:Wukong was furious.",
+     "audioStart": 10.934,
+     "audioEnd": 15.168
+    },
+    {
+     "id": "ep79-map-intro-2",
+     "sourceNodeId": "n002",
+     "speaker": "narrator",
+     "textEn": "\"The Bull Demon King tricked me!\"",
+     "textZh": "\"牛魔王骗了我!\"",
+     "audioRef": "sent_en:\"The Bull Demon King tricked me!\"",
+     "audioStart": 15.169,
+     "audioEnd": 18.682
+    }
+   ]
+  },
+  "quiz": {
+   "id": "ep79-map-quiz",
+   "lines": [
+    {
+     "id": "ep79-map-quiz-1",
+     "sourceNodeId": "n046",
+     "speaker": "narrator",
+     "textEn": "The soldier handed the fan to Wukong.",
+     "textZh": "这名士兵将扇子递给了悟空。",
+     "audioRef": "sent_en:The soldier handed the fan to Wukong.",
+     "audioStart": 202.079,
+     "audioEnd": 206.037
+    }
+   ],
+   "question": {
+    "id": "ep079-official-quiz-001",
+    "textEn": "which is most important from the story?",
+    "textZh": "故事中什么最重要？"
+   },
+   "word": {
+    "term": "bull",
+    "zh": "(未阉割过的)公牛",
+    "ipa": ""
+   },
+   "options": [
+    {
+     "id": "a",
+     "textEn": "wukong put out the fire with the fan.",
+     "textZh": "悟空用扇子扑灭了火。",
+     "correct": true,
+     "feedback": "对了。悟空用扇子扑灭了火。"
+    },
+    {
+     "id": "b",
+     "textEn": "wukong changed into a phoenix.",
+     "textZh": "悟空变成了一只凤凰。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    },
+    {
+     "id": "c",
+     "textEn": "laozi tried to burn wukong.",
+     "textZh": "老子试图烧悟空。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    }
+   ],
+   "lessonCardId": "ep079-official-quiz-001"
+  }
+ },
+ "map": {
+  "theme": "generic",
+  "coordinateSpace": "world-normalized",
+  "worldTiles": 2,
+  "regions": {
+   "hero": 0,
+   "waves": [
+    0,
+    1
+   ],
+   "npc": {
+    "intro": 0,
+    "quiz": 1
+   },
+   "boss": 3
+  },
+  "walkable": {
+   "space": "world",
+   "x": 0.0,
+   "y": 0.16,
+   "w": 1.0,
+   "h": 0.79,
+   "rects": [
+    {
+     "x": 0.0,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.66,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    }
+   ]
+  },
+  "heroSpawn": {
+   "x": 0.06,
+   "y": 0.31
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.31,
+    "y": 0.23
+   },
+   {
+    "x": 0.38,
+    "y": 0.27
+   },
+   {
+    "x": 0.34,
+    "y": 0.33
+   },
+   {
+    "x": 0.41,
+    "y": 0.24
+   }
+  ],
+  "waveSpawns": [
+   [
+    {
+     "x": 0.31,
+     "y": 0.23
+    },
+    {
+     "x": 0.38,
+     "y": 0.27
+    },
+    {
+     "x": 0.34,
+     "y": 0.33
+    },
+    {
+     "x": 0.41,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.81,
+     "y": 0.23
+    },
+    {
+     "x": 0.88,
+     "y": 0.27
+    },
+    {
+     "x": 0.84,
+     "y": 0.33
+    },
+    {
+     "x": 0.91,
+     "y": 0.24
+    }
+   ]
+  ],
+  "orbSpawns": [
+   [
+    {
+     "x": 0.11,
+     "y": 0.25
+    },
+    {
+     "x": 0.16,
+     "y": 0.31
+    },
+    {
+     "x": 0.12,
+     "y": 0.37
+    },
+    {
+     "x": 0.18,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.61,
+     "y": 0.25
+    },
+    {
+     "x": 0.66,
+     "y": 0.31
+    },
+    {
+     "x": 0.62,
+     "y": 0.37
+    },
+    {
+     "x": 0.68,
+     "y": 0.24
+    }
+   ]
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "imp",
+    "nameZh": "小妖",
+    "x": 0.08,
+    "y": 0.26
+   },
+   {
+    "role": "quiz",
+    "sprite": "imp",
+    "nameZh": "小妖",
+    "x": 0.7,
+    "y": 0.39
+   }
+  ],
+  "bossSpot": {
+   "x": 0.94,
+   "y": 0.85
+  }
+ }
+}

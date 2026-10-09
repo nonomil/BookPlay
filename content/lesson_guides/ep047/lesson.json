@@ -1,0 +1,2250 @@
+{
+  "schema_version": 1,
+  "episode": 47,
+  "title": {
+    "en": "Two Tang Monks",
+    "zh": "西游记 第47集"
+  },
+  "sources": [
+    {
+      "kind": "courseware_main_pptx",
+      "file": "G:\\Game\\BookPlay书戏\\data\\西游记课件\\3.3西游记  Journey to the West PPT课件\\047_Journey to the West 47_Two Tang Monks.pptx",
+      "sha256": "d37e1867cb0236273036787f1123484c1d86369452a617b59ba526b9d3e4c8e5",
+      "pages": 20
+    },
+    {
+      "kind": "official_quiz_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+      "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929",
+      "pages": 131
+    },
+    {
+      "kind": "intensive_reader_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\02-西游记精读版台词本\\1、带标注版PDF 108集\\047 两个唐僧 上.pdf",
+      "sha256": "72e2aa4fcaa155e7860291560f1ef4fb69bb156343faba3b92bb6709ecf142d2",
+      "pages": 4
+    },
+    {
+      "kind": "intensive_reader_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\02-西游记精读版台词本\\1、带标注版PDF 108集\\047 两个唐僧 下.pdf",
+      "sha256": "bc80f7fbcf0c01666f3f9867c83dfd4858e8b7a61feb5566596fbfaa280f1eba",
+      "pages": 3
+    },
+    {
+      "kind": "courseware_screenshots_pptx",
+      "file": "G:\\Game\\BookPlay书戏\\data\\西游记课件\\西游记-外教课动画截图\\Journey to the West 047  Two Tang Monks_20240114105642.pptx",
+      "sha256": "72bfd5802ee3452ef66492f1142b32380f1c2d47c2bda45a0516ab4c9b4fdc67",
+      "pages": 45
+    }
+  ],
+  "cards": [
+    {
+      "card_id": "ep047-official-quiz-001",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 1,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "which is not true?",
+        "zh": "哪一项是不正确的？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "wukong defeated the lion.",
+            "zh": "悟空打败了狮子。"
+          },
+          {
+            "id": "b",
+            "en": "the fake monk turned into a green lion.",
+            "zh": "那个假和尚变成了一只绿色的狮子。"
+          },
+          {
+            "id": "c",
+            "en": "the daoist turned into a fake monk.",
+            "zh": "道士变成了一个假和尚。"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n043",
+            "quote": "But the monk changed into a green lion and ran out of the throne room."
+          },
+          {
+            "node_id": "n049",
+            "quote": "Wukong pulled out his iron bar and raised it to strike."
+          },
+          {
+            "node_id": "n050",
+            "quote": "Just then a deep voice called out, \"Do not hit him, Sun Wukong!\""
+          },
+          {
+            "node_id": "n053",
+            "quote": "\"This green lion is my pet,\" said the bodhisattva."
+          },
+          {
+            "node_id": "n054",
+            "quote": "\"The king of the Black Rooster Kingdom was cruel to someone many years ago. So my lion came to Earth to punish him. The king's punishment is over now.\""
+          },
+          {
+            "node_id": "n055",
+            "quote": "The bodhisattva and the lion disappeared above the clouds."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 56,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep047-official-quiz-002",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 2,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "what helped bajie find the real tang monk?",
+        "zh": "是什么帮助八戒找到了真正的唐僧？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "the tight headband spell",
+            "zh": "紧头带魔法"
+          },
+          {
+            "id": "b",
+            "en": "wukong's iron bar",
+            "zh": "悟空的铁棍"
+          },
+          {
+            "id": "c",
+            "en": "a green lion",
+            "zh": "一只绿色的狮子"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n028",
+            "quote": "\"The two Tang Monks should recite the Tight Headband spell,\" said the pig."
+          },
+          {
+            "node_id": "n029",
+            "quote": "\"Only the Tang Monk, Guanyin, and Buddha know the spell. We'll know right away which Tang Monk is fake.\""
+          },
+          {
+            "node_id": "n034",
+            "quote": "Both monks began speaking, and Wukong fell to the floor."
+          },
+          {
+            "node_id": "n037",
+            "quote": "One of them was reciting the spell."
+          },
+          {
+            "node_id": "n038",
+            "quote": "But the other one wasn't."
+          },
+          {
+            "node_id": "n039",
+            "quote": "\"This is the fake Tang Monk!\" shouted the pig, pointing."
+          },
+          {
+            "node_id": "n041",
+            "quote": "The real monk stopped reciting the spell."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 56,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep047-official-quiz-003",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 3,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "who was manjusri?",
+        "zh": "文殊是谁？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "a bodhisattva",
+            "zh": "菩萨"
+          },
+          {
+            "id": "b",
+            "en": "a king",
+            "zh": "一位国王"
+          },
+          {
+            "id": "c",
+            "en": "a monk",
+            "zh": "一名僧侣"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n052",
+            "quote": "\"It's the bodhisattva Manjusri!\" said Wukong."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 56,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep047-official-quiz-004",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 4,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "why was the king of the black rooster kingdom being punished?",
+        "zh": "黑鸡王国的国王为什么会受到惩罚？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "he was cruel to someone.",
+            "zh": "他对某人很残忍。"
+          },
+          {
+            "id": "b",
+            "en": "he killed someone.",
+            "zh": "他杀了人。"
+          },
+          {
+            "id": "c",
+            "en": "he stole something.",
+            "zh": "他偷了东西。"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n053",
+            "quote": "\"This green lion is my pet,\" said the bodhisattva."
+          },
+          {
+            "node_id": "n054",
+            "quote": "\"The king of the Black Rooster Kingdom was cruel to someone many years ago. So my lion came to Earth to punish him. The king's punishment is over now.\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 56,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep047-official-quiz-005",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 5,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "what color was the cloud?",
+        "zh": "那朵云是什么颜色的？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "red",
+            "zh": "红色"
+          },
+          {
+            "id": "b",
+            "en": "green",
+            "zh": "绿色"
+          },
+          {
+            "id": "c",
+            "en": "purple",
+            "zh": "紫色"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n060",
+            "quote": "One day Wukong saw a mysterious red cloud over the mountains ahead."
+          },
+          {
+            "node_id": "n063",
+            "quote": "The red cloud disappeared."
+          },
+          {
+            "node_id": "n067",
+            "quote": "Wukong saw the red cloud again."
+          },
+          {
+            "node_id": "n070",
+            "quote": "But then the red cloud reappeared."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 56,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep047-vocab-001",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 101,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "run",
+        "zh": "跑,奔"
+      },
+      "payload": {
+        "term": "run",
+        "ipa": "rʌn",
+        "pos": "vi.",
+        "def": "跑,奔",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ],
+        "gloss": "跑,奔"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "047 两个唐僧 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "72e2aa4fcaa155e7860291560f1ef4fb69bb156343faba3b92bb6709ecf142d2"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep047-vocab-002",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 102,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "which",
+        "zh": "pron./adj.哪一个,哪一些"
+      },
+      "payload": {
+        "term": "which",
+        "ipa": "wɪtʃ",
+        "pos": "pron.",
+        "def": "pron./adj.哪一个,哪一些",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "047 两个唐僧 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "72e2aa4fcaa155e7860291560f1ef4fb69bb156343faba3b92bb6709ecf142d2"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep047-vocab-003",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 103,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "be",
+        "zh": "v.-link是,存在 aux v.构成被动语态或进行时态"
+      },
+      "payload": {
+        "term": "be",
+        "ipa": "biː",
+        "pos": "v.",
+        "def": "v.-link是,存在 aux v.构成被动语态或进行时态",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "047 两个唐僧 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "72e2aa4fcaa155e7860291560f1ef4fb69bb156343faba3b92bb6709ecf142d2"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep047-vocab-004",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 104,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "believe",
+        "zh": "v.相信,认为有可能"
+      },
+      "payload": {
+        "term": "believe",
+        "ipa": "bɪˈliːv",
+        "pos": "v.",
+        "def": "v.相信,认为有可能",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "047 两个唐僧 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "72e2aa4fcaa155e7860291560f1ef4fb69bb156343faba3b92bb6709ecf142d2"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep047-vocab-005",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 105,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "real",
+        "zh": "adj.真正的,真实的"
+      },
+      "payload": {
+        "term": "real",
+        "ipa": "rɪəl",
+        "pos": "adj.",
+        "def": "adj.真正的,真实的",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "047 两个唐僧 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "72e2aa4fcaa155e7860291560f1ef4fb69bb156343faba3b92bb6709ecf142d2"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep047-vocab-006",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 106,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "angry",
+        "zh": "adj.发怒的,愤怒的,生气的"
+      },
+      "payload": {
+        "term": "angry",
+        "ipa": "ˈæŋɡri",
+        "pos": "adj.",
+        "def": "adj.发怒的,愤怒的,生气的",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "047 两个唐僧 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "72e2aa4fcaa155e7860291560f1ef4fb69bb156343faba3b92bb6709ecf142d2"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep047-vocab-007",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 107,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "pull",
+        "zh": "引力,吸引力"
+      },
+      "payload": {
+        "term": "pull",
+        "ipa": "pʊl",
+        "pos": "v.",
+        "def": "v.拉,托 n.[C]拉,托[sing.]引力,吸引力",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "047 两个唐僧 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "72e2aa4fcaa155e7860291560f1ef4fb69bb156343faba3b92bb6709ecf142d2"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep047-vocab-008",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 108,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "knee",
+        "zh": "膝,膝盖"
+      },
+      "payload": {
+        "term": "knee",
+        "ipa": "niː",
+        "pos": "n.",
+        "def": "n.[C]膝,膝盖",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "047 两个唐僧 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "72e2aa4fcaa155e7860291560f1ef4fb69bb156343faba3b92bb6709ecf142d2"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep047-vocab-009",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 109,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "shake",
+        "zh": "摇动,抖动,奶昔"
+      },
+      "payload": {
+        "term": "shake",
+        "ipa": "ʃeɪk",
+        "pos": "v.",
+        "def": "v.摇动,抖动,(与某人)握手, 发抖 n.[C]摇动,抖动,奶昔",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "047 两个唐僧 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "72e2aa4fcaa155e7860291560f1ef4fb69bb156343faba3b92bb6709ecf142d2"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep047-vocab-010",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 110,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "fear",
+        "zh": "害怕,惧怕,担忧"
+      },
+      "payload": {
+        "term": "fear",
+        "ipa": "fɪə",
+        "pos": "v.",
+        "def": "v./n.[C,U]害怕,惧怕,担忧",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "047 两个唐僧 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "72e2aa4fcaa155e7860291560f1ef4fb69bb156343faba3b92bb6709ecf142d2"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep047-vocab-011",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 111,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "monkey",
+        "zh": "猴子"
+      },
+      "payload": {
+        "term": "monkey",
+        "ipa": "ˈmʌŋki",
+        "pos": "n.",
+        "def": "n.[C]猴子",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "047 两个唐僧 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "72e2aa4fcaa155e7860291560f1ef4fb69bb156343faba3b92bb6709ecf142d2"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep047-vocab-012",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 112,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "turn",
+        "zh": "轮流圈国"
+      },
+      "payload": {
+        "term": "turn",
+        "ipa": "tɜː (r)n",
+        "pos": "v.",
+        "def": "v.转向,翻圈v.-link.(使)变成 n.[C]轮流圈国",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "047 两个唐僧 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "72e2aa4fcaa155e7860291560f1ef4fb69bb156343faba3b92bb6709ecf142d2"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "047 两个唐僧 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "bc80f7fbcf0c01666f3f9867c83dfd4858e8b7a61feb5566596fbfaa280f1eba"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep047-vocab-013",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 113,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "what",
+        "zh": "pron./adj.什么"
+      },
+      "payload": {
+        "term": "what",
+        "ipa": "wɒt",
+        "pos": "pron.",
+        "def": "pron./adj.什么",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "047 两个唐僧 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "72e2aa4fcaa155e7860291560f1ef4fb69bb156343faba3b92bb6709ecf142d2"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep047-vocab-014",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 114,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "do",
+        "zh": "v.做,干 aux v.构成疑问句和否定句"
+      },
+      "payload": {
+        "term": "do",
+        "ipa": "duː",
+        "pos": "v.",
+        "def": "v.做,干 aux v.构成疑问句和否定句",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "047 两个唐僧 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "72e2aa4fcaa155e7860291560f1ef4fb69bb156343faba3b92bb6709ecf142d2"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep047-vocab-015",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 115,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "idea",
+        "zh": "想法,主意"
+      },
+      "payload": {
+        "term": "idea",
+        "ipa": "aɪˈdɪə",
+        "pos": "n.",
+        "def": "n.[C]想法,主意",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "047 两个唐僧 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "72e2aa4fcaa155e7860291560f1ef4fb69bb156343faba3b92bb6709ecf142d2"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep047-vocab-016",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 116,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "smile",
+        "zh": "笑,微笑"
+      },
+      "payload": {
+        "term": "smile",
+        "ipa": "smaɪ",
+        "pos": "vi.",
+        "def": "vi./n.[C]笑,微笑",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "047 两个唐僧 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "72e2aa4fcaa155e7860291560f1ef4fb69bb156343faba3b92bb6709ecf142d2"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep047-vocab-017",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 117,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "ask",
+        "zh": "v.请求,要求,询问"
+      },
+      "payload": {
+        "term": "ask",
+        "ipa": "ɑːsk",
+        "pos": "v.",
+        "def": "v.请求,要求,询问",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "047 两个唐僧 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "72e2aa4fcaa155e7860291560f1ef4fb69bb156343faba3b92bb6709ecf142d2"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep047-vocab-018",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 118,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "spell",
+        "zh": "咒语"
+      },
+      "payload": {
+        "term": "spell",
+        "ipa": "spel",
+        "pos": "v.",
+        "def": "v.用字母拼,拼写 n.[C]咒语",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "047 两个唐僧 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "72e2aa4fcaa155e7860291560f1ef4fb69bb156343faba3b92bb6709ecf142d2"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep047-vocab-019",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 119,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "pain",
+        "zh": "痛苦,苦恼"
+      },
+      "payload": {
+        "term": "pain",
+        "ipa": "peɪn",
+        "pos": "n.",
+        "def": "n.[C,U]痛苦,苦恼",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "047 两个唐僧 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "72e2aa4fcaa155e7860291560f1ef4fb69bb156343faba3b92bb6709ecf142d2"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep047-vocab-020",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 120,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "near",
+        "zh": "在附近"
+      },
+      "payload": {
+        "term": "near",
+        "ipa": "nɪə",
+        "pos": "prep.",
+        "def": "在附近",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ],
+        "gloss": "在附近"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "047 两个唐僧 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "72e2aa4fcaa155e7860291560f1ef4fb69bb156343faba3b92bb6709ecf142d2"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep047-vocab-021",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 121,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "begin",
+        "zh": "v.开始"
+      },
+      "payload": {
+        "term": "begin",
+        "ipa": "bɪˈɡɪn",
+        "pos": "v.",
+        "def": "v.开始",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "047 两个唐僧 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "72e2aa4fcaa155e7860291560f1ef4fb69bb156343faba3b92bb6709ecf142d2"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep047-vocab-022",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 122,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "speak",
+        "zh": "vt.说(某种语言) vi.说话,提起"
+      },
+      "payload": {
+        "term": "speak",
+        "ipa": "spiːk",
+        "pos": "vt.",
+        "def": "vt.说(某种语言) vi.说话,提起",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "047 两个唐僧 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "72e2aa4fcaa155e7860291560f1ef4fb69bb156343faba3b92bb6709ecf142d2"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep047-vocab-023",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 123,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "hurt",
+        "zh": "v.(使)疼痛,受伤,感到疼痛, (使)伤心 adj.受伤的"
+      },
+      "payload": {
+        "term": "hurt",
+        "ipa": "hɜː(r)t",
+        "pos": "v.",
+        "def": "v.(使)疼痛,受伤,感到疼痛, (使)伤心 adj.受伤的",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "047 两个唐僧 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "72e2aa4fcaa155e7860291560f1ef4fb69bb156343faba3b92bb6709ecf142d2"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep047-vocab-024",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 124,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "watch",
+        "zh": "观察"
+      },
+      "payload": {
+        "term": "watch",
+        "ipa": "wɒtʃ",
+        "pos": "v.",
+        "def": "v.注视,观看,留意,小心 n.[C]表,手表[U]观察",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "047 两个唐僧 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "72e2aa4fcaa155e7860291560f1ef4fb69bb156343faba3b92bb6709ecf142d2"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep047-vocab-025",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 125,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "careful",
+        "zh": "adj.小心的,细致的,精心的,慎 重的"
+      },
+      "payload": {
+        "term": "careful",
+        "ipa": "ˈkeəfl",
+        "pos": "adj.",
+        "def": "adj.小心的,细致的,精心的,慎 重的",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "047 两个唐僧 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "72e2aa4fcaa155e7860291560f1ef4fb69bb156343faba3b92bb6709ecf142d2"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep047-vocab-026",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 126,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "other",
+        "zh": "adj.另外的,其他的 pron.另外的人(或物)"
+      },
+      "payload": {
+        "term": "other",
+        "ipa": "ˈʌðə(r)",
+        "pos": "adj.",
+        "def": "adj.另外的,其他的 pron.另外的人(或物)",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "047 两个唐僧 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "72e2aa4fcaa155e7860291560f1ef4fb69bb156343faba3b92bb6709ecf142d2"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep047-vocab-027",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 127,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "shout",
+        "zh": "呼喊,叫喊"
+      },
+      "payload": {
+        "term": "shout",
+        "ipa": "ʃaʊt",
+        "pos": "v.",
+        "def": "v.呼叫,喊叫 n.[C]呼喊,叫喊",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "047 两个唐僧 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "bc80f7fbcf0c01666f3f9867c83dfd4858e8b7a61feb5566596fbfaa280f1eba"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep047-vocab-028",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 128,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "point",
+        "zh": "目的 v.指,指向"
+      },
+      "payload": {
+        "term": "point",
+        "ipa": "pɔɪnt",
+        "pos": "n.",
+        "def": "n.[C]得分,点,小数点,时刻, 特点,观点,要点[U]目的 v.指,指向",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "047 两个唐僧 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "bc80f7fbcf0c01666f3f9867c83dfd4858e8b7a61feb5566596fbfaa280f1eba"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep047-vocab-029",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 129,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "stop",
+        "zh": "车站,停止 v.停止,阻止,逗留"
+      },
+      "payload": {
+        "term": "stop",
+        "ipa": "stɒp",
+        "pos": "n.",
+        "def": "n.[C]车站,停止 v.停止,阻止,逗留",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "047 两个唐僧 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "bc80f7fbcf0c01666f3f9867c83dfd4858e8b7a61feb5566596fbfaa280f1eba"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep047-vocab-030",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 130,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "change",
+        "zh": "变化,改变 v.变化,改变"
+      },
+      "payload": {
+        "term": "change",
+        "ipa": "tʃeɪndʒ",
+        "pos": "n.",
+        "def": "n.[C,U]变化,改变 v.变化,改变",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "047 两个唐僧 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "bc80f7fbcf0c01666f3f9867c83dfd4858e8b7a61feb5566596fbfaa280f1eba"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep047-vocab-031",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 131,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "lion",
+        "zh": "狮子"
+      },
+      "payload": {
+        "term": "lion",
+        "ipa": "ˈlaɪən",
+        "pos": "n.",
+        "def": "n.[C]狮子",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "047 两个唐僧 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "bc80f7fbcf0c01666f3f9867c83dfd4858e8b7a61feb5566596fbfaa280f1eba"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep047-vocab-032",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 132,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "get",
+        "zh": "得到"
+      },
+      "payload": {
+        "term": "get",
+        "ipa": "ɡet",
+        "pos": "vt.",
+        "def": "得到",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ],
+        "gloss": "得到"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "047 两个唐僧 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "bc80f7fbcf0c01666f3f9867c83dfd4858e8b7a61feb5566596fbfaa280f1eba"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep047-vocab-033",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 133,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "raise",
+        "zh": "vt.募集,征集,提高,举起,养 育,饲养;提出"
+      },
+      "payload": {
+        "term": "raise",
+        "ipa": "reɪz",
+        "pos": "vt.",
+        "def": "vt.募集,征集,提高,举起,养 育,饲养;提出",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "047 两个唐僧 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "bc80f7fbcf0c01666f3f9867c83dfd4858e8b7a61feb5566596fbfaa280f1eba"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep047-vocab-034",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 134,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "voice",
+        "zh": "发言 权;主/被动语态 vt.表达(情感或意见)"
+      },
+      "payload": {
+        "term": "voice",
+        "ipa": "vɔɪs",
+        "pos": "n.",
+        "def": "n.[C,U]声音,嗓音[sing.]发言 权;主/被动语态 vt.表达(情感或意见)",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "047 两个唐僧 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "bc80f7fbcf0c01666f3f9867c83dfd4858e8b7a61feb5566596fbfaa280f1eba"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep047-vocab-035",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 135,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "call",
+        "zh": "电话,叫声圈国"
+      },
+      "payload": {
+        "term": "call",
+        "ipa": "kɔː l",
+        "pos": "v.",
+        "def": "v.给......打电话,把......叫作,呼 喊 n.[C]电话,叫声圈国",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "047 两个唐僧 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "bc80f7fbcf0c01666f3f9867c83dfd4858e8b7a61feb5566596fbfaa280f1eba"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep047-vocab-036",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 136,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "hit",
+        "zh": "击中"
+      },
+      "payload": {
+        "term": "hit",
+        "ipa": "hɪt",
+        "pos": "v.",
+        "def": "v.打,袭击 n.[C]击中",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "047 两个唐僧 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "bc80f7fbcf0c01666f3f9867c83dfd4858e8b7a61feb5566596fbfaa280f1eba"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep047-vocab-037",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 137,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "look",
+        "zh": "看,注视,外表,表情"
+      },
+      "payload": {
+        "term": "look",
+        "ipa": "lʊk",
+        "pos": "vi.",
+        "def": "vi.看 v.-link.看上去 n.[C]看,注视,外表,表情",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "047 两个唐僧 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "bc80f7fbcf0c01666f3f9867c83dfd4858e8b7a61feb5566596fbfaa280f1eba"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep047-vocab-038",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 138,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "cruel",
+        "zh": "adj.残酷的,残忍的"
+      },
+      "payload": {
+        "term": "cruel",
+        "ipa": "ˈkruːəl",
+        "pos": "adj.",
+        "def": "adj.残酷的,残忍的",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "047 两个唐僧 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "bc80f7fbcf0c01666f3f9867c83dfd4858e8b7a61feb5566596fbfaa280f1eba"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep047-vocab-039",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 139,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "punish",
+        "zh": "vt.处罚,惩罚"
+      },
+      "payload": {
+        "term": "punish",
+        "ipa": "ˈpʌnɪʃ",
+        "pos": "vt.",
+        "def": "vt.处罚,惩罚",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "047 两个唐僧 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "bc80f7fbcf0c01666f3f9867c83dfd4858e8b7a61feb5566596fbfaa280f1eba"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep047-vocab-040",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 140,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "cloud",
+        "zh": "云,云朵"
+      },
+      "payload": {
+        "term": "cloud",
+        "ipa": "klaʊd",
+        "pos": "n.",
+        "def": "n.[C,U]云,云朵",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "047 两个唐僧 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "bc80f7fbcf0c01666f3f9867c83dfd4858e8b7a61feb5566596fbfaa280f1eba"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep047-vocab-041",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 141,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "thank",
+        "zh": "vt.感谢,谢谢"
+      },
+      "payload": {
+        "term": "thank",
+        "ipa": "θæŋk",
+        "pos": "vt.",
+        "def": "vt.感谢,谢谢",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "047 两个唐僧 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "bc80f7fbcf0c01666f3f9867c83dfd4858e8b7a61feb5566596fbfaa280f1eba"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep047-vocab-042",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 142,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "help",
+        "zh": "有帮助的 人或物 v.帮助,援助"
+      },
+      "payload": {
+        "term": "help",
+        "ipa": "help",
+        "pos": "n.",
+        "def": "n.[U]帮助,援助[sing.]有帮助的 人或物 v.帮助,援助",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "047 两个唐僧 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "bc80f7fbcf0c01666f3f9867c83dfd4858e8b7a61feb5566596fbfaa280f1eba"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep047-vocab-043",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 143,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "hope",
+        "zh": "希望"
+      },
+      "payload": {
+        "term": "hope",
+        "ipa": "həʊp",
+        "pos": "v.",
+        "def": "希望",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ],
+        "gloss": "希望"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "047 两个唐僧 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "bc80f7fbcf0c01666f3f9867c83dfd4858e8b7a61feb5566596fbfaa280f1eba"
+        }
+      ],
+      "review_status": "machine_verified"
+    }
+  ],
+  "teacher_guide": null,
+  "review": {
+    "status": "draft",
+    "reviewed_at": null,
+    "card_stats": {
+      "total": 48,
+      "sentence_choice": 5,
+      "word_review": 43,
+      "machine_verified": 44,
+      "assistant_reviewed": 4,
+      "verified": 48,
+      "needs_review": 0
+    }
+  },
+  "generated_at": "2026-08-31T04:49:41.431890+00:00"
+}

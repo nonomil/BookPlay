@@ -1,0 +1,1961 @@
+{
+  "schema_version": 1,
+  "episode": 72,
+  "title": {
+    "en": "A Surprise at the Fruit and Flower Mountain",
+    "zh": "西游记 第72集"
+  },
+  "sources": [
+    {
+      "kind": "courseware_main_pptx",
+      "file": "G:\\Game\\BookPlay书戏\\data\\西游记课件\\3.3西游记  Journey to the West PPT课件\\072_Journey to the West 72_A Surprise at the Fruit and Flower Mountain.pptx",
+      "sha256": "02db3a97a1d93994b7e7007d623b9c51c2811b7325d709c9a024f54a28dfb1ee",
+      "pages": 20
+    },
+    {
+      "kind": "official_quiz_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+      "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929",
+      "pages": 131
+    },
+    {
+      "kind": "intensive_reader_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\02-西游记精读版台词本\\1、带标注版PDF 108集\\072 沙悟净大吃一惊 上.pdf",
+      "sha256": "f169fa18e2d50393c9531377e3f7d067b69d7be4b4394b713b39a9bafeb5a06b",
+      "pages": 3
+    },
+    {
+      "kind": "intensive_reader_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\02-西游记精读版台词本\\1、带标注版PDF 108集\\072 沙悟净大吃一惊 下.pdf",
+      "sha256": "661e958ea6b30f7b60d5d4c757fab34bb0da13002c2e0e08f222eb9486b45e52",
+      "pages": 4
+    },
+    {
+      "kind": "courseware_screenshots_pptx",
+      "file": "G:\\Game\\BookPlay书戏\\data\\西游记课件\\西游记-外教课动画截图\\Journey to the West 072  A Surprise at the Fruit and Flower Mountain_20240114123151.pptx",
+      "sha256": "58060845188792f70c5b3874ad11645d9a0c70a3d854574481250b8df3b74d00",
+      "pages": 48
+    }
+  ],
+  "cards": [
+    {
+      "card_id": "ep072-official-quiz-001",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 1,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "which did not happen at the fruit and flower mountain?",
+        "zh": "在花果山没有发生什么？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "wukong attacked the tang monk.",
+            "zh": "悟空攻击了唐僧。"
+          },
+          {
+            "id": "b",
+            "en": "wukong said he didn't know wujing.",
+            "zh": "悟空说他不认识悟净。"
+          },
+          {
+            "id": "c",
+            "en": "wujing saw wukong, bajie, and the tang monk.",
+            "zh": "悟净看见了悟空、八戒和唐僧。"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n028",
+            "quote": "The monk sat down in the grass next to the road and closed his eyes."
+          },
+          {
+            "node_id": "n038",
+            "quote": "Before the monk could recite the spell, Wukong struck. <font color=\"#ffff00\"><i>Whap!</i></font> He knocked out the monk."
+          },
+          {
+            "node_id": "n049",
+            "quote": "\"We can't let him get away with this! He probably went home, to the Fruit and Flower Mountain.\""
+          },
+          {
+            "node_id": "n052",
+            "quote": "When Wujing arrived there, he found Wukong near the waterfall."
+          },
+          {
+            "node_id": "n064",
+            "quote": "A monk who looked exactly like the Tang Monk sat on a horse."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 84,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep072-official-quiz-002",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 2,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "what did guanyin tell wukong to do?",
+        "zh": "观音告诉悟空做什么？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "stay with her at mount potalaka for a while",
+            "zh": "在普陀洛迦山与她待一会儿"
+          },
+          {
+            "id": "b",
+            "en": "beg forgiveness from the tang monk",
+            "zh": "向唐僧求饶"
+          },
+          {
+            "id": "c",
+            "en": "go to the fruit and flower mountain",
+            "zh": "去花果山"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n017",
+            "quote": "\"Don't cry, Wukong,\" said Guanyin."
+          },
+          {
+            "node_id": "n018",
+            "quote": "\"You will still help the Tang Monk reach the Western Paradise. He will need your help soon. In the meantime you may stay here with me.\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 84,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep072-official-quiz-003",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 3,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "what did wujing and bajie go to do?",
+        "zh": "悟净和八戒去做什么了？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "beg for food",
+            "zh": "乞讨"
+          },
+          {
+            "id": "b",
+            "en": "find guanyin",
+            "zh": "寻找观音"
+          },
+          {
+            "id": "c",
+            "en": "ask for money",
+            "zh": "要钱"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n023",
+            "quote": "\"We're out of rice,\" said the pig."
+          },
+          {
+            "node_id": "n026",
+            "quote": "\"Master, you wait here while Bajie and I find a village.\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 84,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep072-official-quiz-004",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 4,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "what did wukong take after knocking out the tang monk?",
+        "zh": "悟空在击昏唐僧后拿了什么？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "the bags",
+            "zh": "这些包"
+          },
+          {
+            "id": "b",
+            "en": "the horse",
+            "zh": "那匹马"
+          },
+          {
+            "id": "c",
+            "en": "the headband",
+            "zh": "头带"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n038",
+            "quote": "Before the monk could recite the spell, Wukong struck. <font color=\"#ffff00\"><i>Whap!</i></font> He knocked out the monk."
+          },
+          {
+            "node_id": "n039",
+            "quote": "Quickly, the monkey grabbed the bags and then vanished."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 84,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep072-official-quiz-005",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 5,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "who went to the fruit and flower mountain?",
+        "zh": "谁去了水花果山？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "wujing",
+            "zh": "五净"
+          },
+          {
+            "id": "b",
+            "en": "bajie",
+            "zh": "八戒"
+          },
+          {
+            "id": "c",
+            "en": "guanyin",
+            "zh": "观音"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n050",
+            "quote": "\"I'll go there and deal with him,\" said Wujing."
+          },
+          {
+            "node_id": "n052",
+            "quote": "When Wujing arrived there, he found Wukong near the waterfall."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 84,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep072-vocab-001",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 101,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "difference",
+        "zh": "差别,差异;差"
+      },
+      "payload": {
+        "term": "difference",
+        "ipa": "ˈdɪfrəns",
+        "pos": "n.",
+        "def": "n.[C,U]差别,差异;差",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "072 沙悟净大吃一惊 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "f169fa18e2d50393c9531377e3f7d067b69d7be4b4394b713b39a9bafeb5a06b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep072-vocab-002",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 102,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "monkey",
+        "zh": "猴子"
+      },
+      "payload": {
+        "term": "monkey",
+        "ipa": "ˈmʌŋki",
+        "pos": "n.",
+        "def": "n.[C]猴子",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "072 沙悟净大吃一惊 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "f169fa18e2d50393c9531377e3f7d067b69d7be4b4394b713b39a9bafeb5a06b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep072-vocab-003",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 103,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "cry",
+        "zh": "叫喊"
+      },
+      "payload": {
+        "term": "cry",
+        "ipa": "kraɪ",
+        "pos": "v.",
+        "def": "v./n.[sing.]哭 [C]叫喊",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "072 沙悟净大吃一惊 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "f169fa18e2d50393c9531377e3f7d067b69d7be4b4394b713b39a9bafeb5a06b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep072-vocab-004",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 104,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "terrible",
+        "zh": "adj.非常讨厌的,非常严重的,可 怕的,糟糕的"
+      },
+      "payload": {
+        "term": "terrible",
+        "ipa": "ˈterəbl",
+        "pos": "adj.",
+        "def": "adj.非常讨厌的,非常严重的,可 怕的,糟糕的",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "072 沙悟净大吃一惊 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "f169fa18e2d50393c9531377e3f7d067b69d7be4b4394b713b39a9bafeb5a06b"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "072 沙悟净大吃一惊 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "661e958ea6b30f7b60d5d4c757fab34bb0da13002c2e0e08f222eb9486b45e52"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep072-vocab-005",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 105,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "help",
+        "zh": "有帮助的 人或物 v.帮助,援助"
+      },
+      "payload": {
+        "term": "help",
+        "ipa": "help",
+        "pos": "n.",
+        "def": "n.[U]帮助,援助[sing.]有帮助的 人或物 v.帮助,援助",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "072 沙悟净大吃一惊 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "f169fa18e2d50393c9531377e3f7d067b69d7be4b4394b713b39a9bafeb5a06b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep072-vocab-006",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 106,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "reach",
+        "zh": "v.伸手,到达,抵达;打成(协 议),实现 n.能及的范围"
+      },
+      "payload": {
+        "term": "reach",
+        "ipa": "riː tʃ",
+        "pos": "v.",
+        "def": "v.伸手,到达,抵达;打成(协 议),实现 n.能及的范围",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "072 沙悟净大吃一惊 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "f169fa18e2d50393c9531377e3f7d067b69d7be4b4394b713b39a9bafeb5a06b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep072-vocab-007",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 107,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "drop",
+        "zh": "滴,下降"
+      },
+      "payload": {
+        "term": "drop",
+        "ipa": "drɒp",
+        "pos": "v.",
+        "def": "v.落下,掉下,扔下,降低 n.[C]滴,下降",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "072 沙悟净大吃一惊 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "f169fa18e2d50393c9531377e3f7d067b69d7be4b4394b713b39a9bafeb5a06b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep072-vocab-008",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 108,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "bag",
+        "zh": "袋,包"
+      },
+      "payload": {
+        "term": "bag",
+        "ipa": "bæɡ",
+        "pos": "n.",
+        "def": "n.[C]袋,包",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "072 沙悟净大吃一惊 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "f169fa18e2d50393c9531377e3f7d067b69d7be4b4394b713b39a9bafeb5a06b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep072-vocab-009",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 109,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "rest",
+        "zh": "剩余部分"
+      },
+      "payload": {
+        "term": "rest",
+        "ipa": "rest",
+        "pos": "v.",
+        "def": "v./n.[C,U]休息 n.[sing.]剩余部分",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "072 沙悟净大吃一惊 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "f169fa18e2d50393c9531377e3f7d067b69d7be4b4394b713b39a9bafeb5a06b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep072-vocab-010",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 110,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "climb",
+        "zh": "攀登"
+      },
+      "payload": {
+        "term": "climb",
+        "ipa": "klaɪm",
+        "pos": "v.",
+        "def": "v.爬 n.[C]攀登",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "072 沙悟净大吃一惊 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "f169fa18e2d50393c9531377e3f7d067b69d7be4b4394b713b39a9bafeb5a06b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep072-vocab-011",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 111,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "rice",
+        "zh": "米饭,大米"
+      },
+      "payload": {
+        "term": "rice",
+        "ipa": "raɪs",
+        "pos": "n.",
+        "def": "n.[U]米饭,大米",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "072 沙悟净大吃一惊 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "f169fa18e2d50393c9531377e3f7d067b69d7be4b4394b713b39a9bafeb5a06b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep072-vocab-012",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 112,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "food",
+        "zh": "(某种)食物"
+      },
+      "payload": {
+        "term": "food",
+        "ipa": "fuːd",
+        "pos": "n.",
+        "def": "n.[C,U](某种)食物",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "072 沙悟净大吃一惊 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "f169fa18e2d50393c9531377e3f7d067b69d7be4b4394b713b39a9bafeb5a06b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep072-vocab-013",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 113,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "somewhere",
+        "zh": "adv.在某处,到某处"
+      },
+      "payload": {
+        "term": "somewhere",
+        "ipa": "ˈsʌmweə",
+        "pos": "adv.",
+        "def": "adv.在某处,到某处",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "072 沙悟净大吃一惊 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "f169fa18e2d50393c9531377e3f7d067b69d7be4b4394b713b39a9bafeb5a06b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep072-vocab-014",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 114,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "master",
+        "zh": "n.大师,能手,主人,硕士 vt.掌握 adj.熟练的"
+      },
+      "payload": {
+        "term": "master",
+        "ipa": "ˈmɑː stə",
+        "pos": "n.",
+        "def": "n.大师,能手,主人,硕士 vt.掌握 adj.熟练的",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "072 沙悟净大吃一惊 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "f169fa18e2d50393c9531377e3f7d067b69d7be4b4394b713b39a9bafeb5a06b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep072-vocab-015",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 115,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "wait",
+        "zh": "v.等待,等候"
+      },
+      "payload": {
+        "term": "wait",
+        "ipa": "weɪt",
+        "pos": "v.",
+        "def": "v.等待,等候",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "072 沙悟净大吃一惊 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "f169fa18e2d50393c9531377e3f7d067b69d7be4b4394b713b39a9bafeb5a06b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep072-vocab-016",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 116,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "village",
+        "zh": "村庄,村镇"
+      },
+      "payload": {
+        "term": "village",
+        "ipa": "ˈvɪlɪdʒ",
+        "pos": "n.",
+        "def": "n.[C]村庄,村镇",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "072 沙悟净大吃一惊 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "f169fa18e2d50393c9531377e3f7d067b69d7be4b4394b713b39a9bafeb5a06b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep072-vocab-017",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 117,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "fly",
+        "zh": "苍蝇"
+      },
+      "payload": {
+        "term": "fly",
+        "ipa": "flaɪ",
+        "pos": "v.",
+        "def": "v.飞,驾驶(飞机等);乘飞机, (旗)飘扬 n.[C]苍蝇",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "072 沙悟净大吃一惊 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "f169fa18e2d50393c9531377e3f7d067b69d7be4b4394b713b39a9bafeb5a06b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep072-vocab-018",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 118,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "close",
+        "zh": "adj.亲密的,(在空间、时间上) 接近的 adv.接近 v.关闭"
+      },
+      "payload": {
+        "term": "close",
+        "ipa": "kləʊz",
+        "pos": "adj.",
+        "def": "adj.亲密的,(在空间、时间上) 接近的 adv.接近 v.关闭",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "072 沙悟净大吃一惊 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "f169fa18e2d50393c9531377e3f7d067b69d7be4b4394b713b39a9bafeb5a06b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep072-vocab-019",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 119,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "look",
+        "zh": "看,注视,外表,表情"
+      },
+      "payload": {
+        "term": "look",
+        "ipa": "lʊk",
+        "pos": "vi.",
+        "def": "vi.看 v.-link.看上去 n.[C]看,注视,外表,表情",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "072 沙悟净大吃一惊 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "661e958ea6b30f7b60d5d4c757fab34bb0da13002c2e0e08f222eb9486b45e52"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep072-vocab-020",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 120,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "around",
+        "zh": "adv.在周围,大约,四处,掉头 prep.在......周围,到处"
+      },
+      "payload": {
+        "term": "around",
+        "ipa": "əˈraʊnd",
+        "pos": "adv.",
+        "def": "adv.在周围,大约,四处,掉头 prep.在......周围,到处",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "072 沙悟净大吃一惊 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "661e958ea6b30f7b60d5d4c757fab34bb0da13002c2e0e08f222eb9486b45e52"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep072-vocab-021",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 121,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "probably",
+        "zh": "adv.很可能,大概"
+      },
+      "payload": {
+        "term": "probably",
+        "ipa": "ˈprɒbəbli",
+        "pos": "adv.",
+        "def": "adv.很可能,大概",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "072 沙悟净大吃一惊 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "661e958ea6b30f7b60d5d4c757fab34bb0da13002c2e0e08f222eb9486b45e52"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep072-vocab-022",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 122,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "go",
+        "zh": "vi.去,走 v.link.变成,变得"
+      },
+      "payload": {
+        "term": "go",
+        "ipa": "ɡəʊ",
+        "pos": "vi.",
+        "def": "vi.去,走 v.link.变成,变得",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "072 沙悟净大吃一惊 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "661e958ea6b30f7b60d5d4c757fab34bb0da13002c2e0e08f222eb9486b45e52"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep072-vocab-023",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 123,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "deal",
+        "zh": "大量,很多 vi.对付,对待"
+      },
+      "payload": {
+        "term": "deal",
+        "ipa": "diː l",
+        "pos": "n.",
+        "def": "n.协议,交易[sing.]大量,很多 vi.对付,对待",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "072 沙悟净大吃一惊 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "661e958ea6b30f7b60d5d4c757fab34bb0da13002c2e0e08f222eb9486b45e52"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep072-vocab-024",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 124,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "direction",
+        "zh": "方向,方位"
+      },
+      "payload": {
+        "term": "direction",
+        "ipa": "dəˈrekʃn",
+        "pos": "n.",
+        "def": "n.[C,U]方向,方位",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "072 沙悟净大吃一惊 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "661e958ea6b30f7b60d5d4c757fab34bb0da13002c2e0e08f222eb9486b45e52"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep072-vocab-025",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 125,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "arrive",
+        "zh": "vi.到达"
+      },
+      "payload": {
+        "term": "arrive",
+        "ipa": "əˈraɪv",
+        "pos": "vi.",
+        "def": "vi.到达",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "072 沙悟净大吃一惊 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "661e958ea6b30f7b60d5d4c757fab34bb0da13002c2e0e08f222eb9486b45e52"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep072-vocab-026",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 126,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "shout",
+        "zh": "呼喊,叫喊"
+      },
+      "payload": {
+        "term": "shout",
+        "ipa": "ʃaʊt",
+        "pos": "v.",
+        "def": "v.呼叫,喊叫 n.[C]呼喊,叫喊",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "072 沙悟净大吃一惊 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "661e958ea6b30f7b60d5d4c757fab34bb0da13002c2e0e08f222eb9486b45e52"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep072-vocab-027",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 127,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "who",
+        "zh": "pron.谁,什么人"
+      },
+      "payload": {
+        "term": "who",
+        "ipa": "huː",
+        "pos": "pron.",
+        "def": "pron.谁,什么人",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "072 沙悟净大吃一惊 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "661e958ea6b30f7b60d5d4c757fab34bb0da13002c2e0e08f222eb9486b45e52"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep072-vocab-028",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 128,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "be",
+        "zh": "v.-link是,存在 aux v.构成被动语态或进行时态"
+      },
+      "payload": {
+        "term": "be",
+        "ipa": "biː",
+        "pos": "v.",
+        "def": "v.-link是,存在 aux v.构成被动语态或进行时态",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "072 沙悟净大吃一惊 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "661e958ea6b30f7b60d5d4c757fab34bb0da13002c2e0e08f222eb9486b45e52"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep072-vocab-029",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 129,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "raise",
+        "zh": "vt.募集,征集,提高,举起,养 育,饲养;提出"
+      },
+      "payload": {
+        "term": "raise",
+        "ipa": "reɪz",
+        "pos": "vt.",
+        "def": "vt.募集,征集,提高,举起,养 育,饲养;提出",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "072 沙悟净大吃一惊 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "661e958ea6b30f7b60d5d4c757fab34bb0da13002c2e0e08f222eb9486b45e52"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep072-vocab-030",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 130,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "know",
+        "zh": "v.知道,了解"
+      },
+      "payload": {
+        "term": "know",
+        "ipa": "nəʊ",
+        "pos": "v.",
+        "def": "v.知道,了解",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "072 沙悟净大吃一惊 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "661e958ea6b30f7b60d5d4c757fab34bb0da13002c2e0e08f222eb9486b45e52"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep072-vocab-031",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 131,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "no",
+        "zh": "adv./adj.不,没有,不是"
+      },
+      "payload": {
+        "term": "no",
+        "ipa": "nəʊ",
+        "pos": "adv.",
+        "def": "adv./adj.不,没有,不是",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "072 沙悟净大吃一惊 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "661e958ea6b30f7b60d5d4c757fab34bb0da13002c2e0e08f222eb9486b45e52"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep072-vocab-032",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 132,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "say",
+        "zh": "v.说,讲"
+      },
+      "payload": {
+        "term": "say",
+        "ipa": "seɪ",
+        "pos": "v.",
+        "def": "v.说,讲",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "072 沙悟净大吃一惊 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "661e958ea6b30f7b60d5d4c757fab34bb0da13002c2e0e08f222eb9486b45e52"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep072-vocab-033",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 133,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "travel",
+        "zh": "游历"
+      },
+      "payload": {
+        "term": "travel",
+        "ipa": "ˈtrævl",
+        "pos": "v.",
+        "def": "v.旅行,游历幽;传播 n.[C,U]旅行[U]游历",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "072 沙悟净大吃一惊 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "661e958ea6b30f7b60d5d4c757fab34bb0da13002c2e0e08f222eb9486b45e52"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep072-vocab-034",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 134,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "group",
+        "zh": "组,群 vt.把......分组/归类,聚集"
+      },
+      "payload": {
+        "term": "group",
+        "ipa": "ɡruːp",
+        "pos": "n.",
+        "def": "n.[C]组,群 vt.把......分组/归类,聚集",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "072 沙悟净大吃一惊 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "661e958ea6b30f7b60d5d4c757fab34bb0da13002c2e0e08f222eb9486b45e52"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep072-vocab-035",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 135,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "them",
+        "zh": "pron.(they的宾格)他(她、 它)们"
+      },
+      "payload": {
+        "term": "them",
+        "ipa": "ðem",
+        "pos": "pron.",
+        "def": "pron.(they的宾格)他(她、 它)们",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "072 沙悟净大吃一惊 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "661e958ea6b30f7b60d5d4c757fab34bb0da13002c2e0e08f222eb9486b45e52"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep072-vocab-036",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 136,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "horse",
+        "zh": "马"
+      },
+      "payload": {
+        "term": "horse",
+        "ipa": "hɔː(r)s",
+        "pos": "n.",
+        "def": "n.[C]马",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "072 沙悟净大吃一惊 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "661e958ea6b30f7b60d5d4c757fab34bb0da13002c2e0e08f222eb9486b45e52"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep072-vocab-037",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 137,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "walk",
+        "zh": "走"
+      },
+      "payload": {
+        "term": "walk",
+        "ipa": "wɔː k",
+        "pos": "n.",
+        "def": "走",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ],
+        "gloss": "走"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "072 沙悟净大吃一惊 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "661e958ea6b30f7b60d5d4c757fab34bb0da13002c2e0e08f222eb9486b45e52"
+        }
+      ],
+      "review_status": "machine_verified"
+    }
+  ],
+  "teacher_guide": null,
+  "review": {
+    "status": "draft",
+    "reviewed_at": null,
+    "card_stats": {
+      "total": 42,
+      "sentence_choice": 5,
+      "word_review": 37,
+      "machine_verified": 37,
+      "assistant_reviewed": 5,
+      "verified": 42,
+      "needs_review": 0
+    }
+  },
+  "generated_at": "2026-08-31T04:49:45.423547+00:00"
+}

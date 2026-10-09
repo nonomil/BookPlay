@@ -1,0 +1,584 @@
+{
+ "schema_version": 1,
+ "ep": 96,
+ "title": {
+  "en": "Wind and Fog",
+  "zh": "西游记 第96集"
+ },
+ "collection": "c12",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "bajie",
+   "nameZh": "猪八戒",
+   "mode": "sparring",
+   "sprite": "bajie"
+  },
+  "minors": [
+   {
+    "id": "imp",
+    "nameZh": "小妖",
+    "sprite": "imp"
+   }
+  ]
+ },
+ "background": {
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep96/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "\"I hope we reach the Western Paradise soon,\" said the Tang Monk.",
+   "textZh": "\"我希望我们能尽快抵达西方极乐世界,\"唐僧说道。",
+   "illustration": "assets/adv_frames/ep96/f1.jpg",
+   "sourceNodeId": "n001",
+   "audioRef": "sent_en:\"I hope we reach the Western Paradise soon,\" said the Tang Monk."
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "\"This journey has been very dangerous.\"",
+   "textZh": "\"这次旅程非常危险。\"",
+   "illustration": "assets/adv_frames/ep96/f2.jpg",
+   "sourceNodeId": "n002",
+   "audioRef": "sent_en:\"This journey has been very dangerous.\""
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "fog",
+   "zh": "雾",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep96/f1.jpg"
+  },
+  {
+   "term": "dangerous",
+   "zh": "危险的",
+   "ipa": "ˈdeɪndʒərəs",
+   "illustration": "assets/adv_frames/ep96/f1.jpg"
+  },
+  {
+   "term": "pickle",
+   "zh": "1. 腌,(2. 腌菜,泡菜(用盐、食醋等腌制的蔬菜))",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep96/f0.jpg"
+  },
+  {
+   "term": "even",
+   "zh": "甚至",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep96/f1.jpg"
+  },
+  {
+   "term": "punish",
+   "zh": "惩罚,处罚",
+   "ipa": "ˈpʌnɪʃ",
+   "illustration": "assets/adv_frames/ep96/f1.jpg"
+  },
+  {
+   "term": "save",
+   "zh": "救(命)",
+   "ipa": "seɪv",
+   "illustration": "assets/adv_frames/ep96/f1.jpg"
+  },
+  {
+   "term": "nervous",
+   "zh": "紧张不安的",
+   "ipa": "ˈnɜː(r)vəs",
+   "illustration": "assets/adv_frames/ep96/f2.jpg"
+  },
+  {
+   "term": "cause",
+   "zh": "导致,使发生,引起",
+   "ipa": "kɔːz",
+   "illustration": "assets/adv_frames/ep96/f2.jpg"
+  },
+  {
+   "term": "relax",
+   "zh": "放松,缓和(紧张)",
+   "ipa": "rɪˈlæks",
+   "illustration": "assets/adv_frames/ep96/f2.jpg"
+  },
+  {
+   "term": "harmless",
+   "zh": "无害的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep96/f1.jpg"
+  },
+  {
+   "term": "bend",
+   "zh": "1. (道路等的)转弯处,(2. 使弯曲,折弯)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep96/f2.jpg"
+  },
+  {
+   "term": "edge",
+   "zh": "边缘",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep96/f0.jpg"
+  }
+ ],
+ "wordPool": [
+  {
+   "term": "fog",
+   "zh": "雾",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep96/f1.jpg"
+  },
+  {
+   "term": "dangerous",
+   "zh": "危险的",
+   "ipa": "ˈdeɪndʒərəs",
+   "illustration": "assets/adv_frames/ep96/f1.jpg"
+  },
+  {
+   "term": "pickle",
+   "zh": "1. 腌,(2. 腌菜,泡菜(用盐、食醋等腌制的蔬菜))",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep96/f0.jpg"
+  },
+  {
+   "term": "even",
+   "zh": "甚至",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep96/f1.jpg"
+  },
+  {
+   "term": "punish",
+   "zh": "惩罚,处罚",
+   "ipa": "ˈpʌnɪʃ",
+   "illustration": "assets/adv_frames/ep96/f1.jpg"
+  },
+  {
+   "term": "save",
+   "zh": "救(命)",
+   "ipa": "seɪv",
+   "illustration": "assets/adv_frames/ep96/f1.jpg"
+  },
+  {
+   "term": "nervous",
+   "zh": "紧张不安的",
+   "ipa": "ˈnɜː(r)vəs",
+   "illustration": "assets/adv_frames/ep96/f2.jpg"
+  },
+  {
+   "term": "cause",
+   "zh": "导致,使发生,引起",
+   "ipa": "kɔːz",
+   "illustration": "assets/adv_frames/ep96/f2.jpg"
+  },
+  {
+   "term": "relax",
+   "zh": "放松,缓和(紧张)",
+   "ipa": "rɪˈlæks",
+   "illustration": "assets/adv_frames/ep96/f2.jpg"
+  },
+  {
+   "term": "harmless",
+   "zh": "无害的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep96/f1.jpg"
+  },
+  {
+   "term": "bend",
+   "zh": "1. (道路等的)转弯处,(2. 使弯曲,折弯)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep96/f2.jpg"
+  },
+  {
+   "term": "edge",
+   "zh": "边缘",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep96/f0.jpg"
+  },
+  {
+   "term": "cliff",
+   "zh": "悬崖,绝壁",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep96/f0.jpg"
+  },
+  {
+   "term": "several",
+   "zh": "几个的,数个的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep96/f1.jpg"
+  },
+  {
+   "term": "concentrate",
+   "zh": "集中",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep96/f3.jpg"
+  },
+  {
+   "term": "burp",
+   "zh": "打嗝",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep96/f0.jpg"
+  },
+  {
+   "term": "thunder",
+   "zh": "雷",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep96/f0.jpg"
+  },
+  {
+   "term": "giggle",
+   "zh": "咯咯地笑",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep96/f1.jpg"
+  },
+  {
+   "term": "pat",
+   "zh": "轻拍,抚拍",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep96/f3.jpg"
+  },
+  {
+   "term": "belly",
+   "zh": "腹部,肚子",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep96/f3.jpg"
+  },
+  {
+   "term": "proud",
+   "zh": "骄傲的,自豪的",
+   "ipa": "praʊd",
+   "illustration": "assets/adv_frames/ep96/f3.jpg"
+  },
+  {
+   "term": "Coming right",
+   "zh": "马上送到!马上就来!",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep96/f2.jpg"
+  },
+  {
+   "term": "nostril",
+   "zh": "鼻孔",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep96/f3.jpg"
+  },
+  {
+   "term": "roar",
+   "zh": "1. 吼声,喧闹声,(2. (野兽等)吼叫,(风等)呼啸,(雷、炮等)轰鸣)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep96/f0.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "fog",
+     "zh": "雾",
+     "sprite": "imp"
+    },
+    {
+     "term": "dangerous",
+     "zh": "危险的",
+     "sprite": "imp"
+    },
+    {
+     "term": "pickle",
+     "zh": "1. 腌,(2. 腌菜,泡菜(用盐、食醋等腌制的蔬菜))",
+     "sprite": "imp"
+    },
+    {
+     "term": "even",
+     "zh": "甚至",
+     "sprite": "imp"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "punish",
+     "zh": "惩罚,处罚",
+     "sprite": "imp"
+    },
+    {
+     "term": "save",
+     "zh": "救(命)",
+     "sprite": "imp"
+    },
+    {
+     "term": "nervous",
+     "zh": "紧张不安的",
+     "sprite": "imp"
+    },
+    {
+     "term": "cause",
+     "zh": "导致,使发生,引起",
+     "sprite": "imp"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "relax",
+    "zh": "放松,缓和(紧张)"
+   },
+   {
+    "term": "harmless",
+    "zh": "无害的"
+   },
+   {
+    "term": "bend",
+    "zh": "1. (道路等的)转弯处,(2. 使弯曲,折弯)"
+   },
+   {
+    "term": "edge",
+    "zh": "边缘"
+   }
+  ],
+  "taunts": [
+   "bajie.1",
+   "bajie.2",
+   "bajie.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=96",
+ "npcDialogue": {
+  "intro": {
+   "id": "ep96-map-intro",
+   "lines": [
+    {
+     "id": "ep96-map-intro-1",
+     "sourceNodeId": "n001",
+     "speaker": "narrator",
+     "textEn": "\"I hope we reach the Western Paradise soon,\" said the Tang Monk.",
+     "textZh": "\"我希望我们能尽快抵达西方极乐世界,\"唐僧说道。",
+     "audioRef": "sent_en:\"I hope we reach the Western Paradise soon,\" said the Tang Monk.",
+     "audioStart": 10.934,
+     "audioEnd": 18.726
+    },
+    {
+     "id": "ep96-map-intro-2",
+     "sourceNodeId": "n002",
+     "speaker": "narrator",
+     "textEn": "\"This journey has been very dangerous.\"",
+     "textZh": "\"这次旅程非常危险。\"",
+     "audioRef": "sent_en:\"This journey has been very dangerous.\"",
+     "audioStart": 18.727,
+     "audioEnd": 21.799
+    }
+   ]
+  },
+  "quiz": {
+   "id": "ep96-map-quiz",
+   "lines": [
+    {
+     "id": "ep96-map-quiz-1",
+     "sourceNodeId": "n042",
+     "speaker": "narrator",
+     "textEn": "\"It does give me an idea though . . .\"",
+     "textZh": "\"不过,这确实给了我一个想法......\"",
+     "audioRef": "sent_en:\"It does give me an idea though . . .\"",
+     "audioStart": 181.206,
+     "audioEnd": 185.361
+    }
+   ],
+   "question": {
+    "id": "ep096-official-quiz-001",
+    "textEn": "which is true?",
+    "textZh": "哪一个是真的？"
+   },
+   "word": {
+    "term": "fog",
+    "zh": "雾",
+    "ipa": ""
+   },
+   "options": [
+    {
+     "id": "a",
+     "textEn": "wukong decided to play a trick on bajie.",
+     "textZh": "悟空决定捉弄八戒。",
+     "correct": true,
+     "feedback": "对了。悟空决定捉弄八戒。"
+    },
+    {
+     "id": "b",
+     "textEn": "the tang monk wanted to go to the feast.",
+     "textZh": "唐僧想去参加宴会。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    },
+    {
+     "id": "c",
+     "textEn": "bajie was practicing his burping.",
+     "textZh": "八戒在练习打嗝。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    }
+   ],
+   "lessonCardId": "ep096-official-quiz-001"
+  }
+ },
+ "map": {
+  "theme": "generic",
+  "coordinateSpace": "world-normalized",
+  "worldTiles": 2,
+  "regions": {
+   "hero": 0,
+   "waves": [
+    0,
+    1
+   ],
+   "npc": {
+    "intro": 0,
+    "quiz": 1
+   },
+   "boss": 3
+  },
+  "walkable": {
+   "space": "world",
+   "x": 0.0,
+   "y": 0.16,
+   "w": 1.0,
+   "h": 0.79,
+   "rects": [
+    {
+     "x": 0.0,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.66,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    }
+   ]
+  },
+  "heroSpawn": {
+   "x": 0.06,
+   "y": 0.31
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.31,
+    "y": 0.23
+   },
+   {
+    "x": 0.38,
+    "y": 0.27
+   },
+   {
+    "x": 0.34,
+    "y": 0.33
+   },
+   {
+    "x": 0.41,
+    "y": 0.24
+   }
+  ],
+  "waveSpawns": [
+   [
+    {
+     "x": 0.31,
+     "y": 0.23
+    },
+    {
+     "x": 0.38,
+     "y": 0.27
+    },
+    {
+     "x": 0.34,
+     "y": 0.33
+    },
+    {
+     "x": 0.41,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.81,
+     "y": 0.23
+    },
+    {
+     "x": 0.88,
+     "y": 0.27
+    },
+    {
+     "x": 0.84,
+     "y": 0.33
+    },
+    {
+     "x": 0.91,
+     "y": 0.24
+    }
+   ]
+  ],
+  "orbSpawns": [
+   [
+    {
+     "x": 0.11,
+     "y": 0.25
+    },
+    {
+     "x": 0.16,
+     "y": 0.31
+    },
+    {
+     "x": 0.12,
+     "y": 0.37
+    },
+    {
+     "x": 0.18,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.61,
+     "y": 0.25
+    },
+    {
+     "x": 0.66,
+     "y": 0.31
+    },
+    {
+     "x": 0.62,
+     "y": 0.37
+    },
+    {
+     "x": 0.68,
+     "y": 0.24
+    }
+   ]
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "imp",
+    "nameZh": "小妖",
+    "x": 0.08,
+    "y": 0.26
+   },
+   {
+    "role": "quiz",
+    "sprite": "imp",
+    "nameZh": "小妖",
+    "x": 0.7,
+    "y": 0.39
+   }
+  ],
+  "bossSpot": {
+   "x": 0.94,
+   "y": 0.85
+  }
+ }
+}

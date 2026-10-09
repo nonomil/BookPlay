@@ -1,0 +1,3587 @@
+{
+  "schema_version": 1,
+  "episode": 77,
+  "title": {
+    "en": "The Magic Fan",
+    "zh": "西游记 第77集"
+  },
+  "sources": [
+    {
+      "kind": "courseware_main_pptx",
+      "file": "G:\\Game\\BookPlay书戏\\data\\西游记课件\\3.3西游记  Journey to the West PPT课件\\077_Journey to the West 77_The Magic Fan.pptx",
+      "sha256": "4215a3fea86ea6694763628d03930e1c6c23a2aadd280fa65013e5c2ad8050cc",
+      "pages": 19
+    },
+    {
+      "kind": "official_quiz_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+      "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929",
+      "pages": 131
+    },
+    {
+      "kind": "intensive_reader_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\02-西游记精读版台词本\\1、带标注版PDF 108集\\077 有法力的扇子 上.pdf",
+      "sha256": "8b1496ead0ce1b8b2061b01a4cff7573a5e2e202b4accd24da18363654b338aa",
+      "pages": 4
+    },
+    {
+      "kind": "intensive_reader_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\02-西游记精读版台词本\\1、带标注版PDF 108集\\077 有法力的扇子 下.pdf",
+      "sha256": "238cdfbe3a6a5bd7fb054c20daf1fbae0937846318143c9c7816434481fdbc6e",
+      "pages": 3
+    },
+    {
+      "kind": "courseware_screenshots_pptx",
+      "file": "G:\\Game\\BookPlay书戏\\data\\西游记课件\\西游记-外教课动画截图\\Journey to the West 077  The Magic Fan_20240114123215.pptx",
+      "sha256": "4dc2e73a4d09c8ce74610fb648eae26345b5c25d4931df92842d1e451948dd99",
+      "pages": 50
+    }
+  ],
+  "cards": [
+    {
+      "card_id": "ep077-official-quiz-001",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 1,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "which is not true?",
+        "zh": "哪一项是不正确的？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "wukong stole the iron immortal's stone.",
+            "zh": "悟空偷了铁扇公主的石头。"
+          },
+          {
+            "id": "b",
+            "en": "wukong landed near lingji's mountain.",
+            "zh": "悟空降落在灵姬的山附近。"
+          },
+          {
+            "id": "c",
+            "en": "the iron immortal couldn't blow wukong away.",
+            "zh": "铁扇公主无法将悟空吹走。"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n003",
+            "quote": "Wukong looked around and saw a mountain nearby."
+          },
+          {
+            "node_id": "n005",
+            "quote": "\"Mount Sumeru!\" said Wukong."
+          },
+          {
+            "node_id": "n014",
+            "quote": "The bodhisattva handed a small stone to Wukong."
+          },
+          {
+            "node_id": "n015",
+            "quote": "\"Keep this magic stone in your pocket. It will stop the wind from blowing you away.\""
+          },
+          {
+            "node_id": "n026",
+            "quote": "The woman waved the fan furiously."
+          },
+          {
+            "node_id": "n027",
+            "quote": "A terrible wind blew past Wukong."
+          },
+          {
+            "node_id": "n028",
+            "quote": "But the monkey didn't move."
+          },
+          {
+            "node_id": "n030",
+            "quote": "\"How did you—\" \"The bodhisattva Lingji gave me a magic stone,\" said Wukong."
+          },
+          {
+            "node_id": "n031",
+            "quote": "\"Your fan can't blow me away now.\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 93,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep077-official-quiz-002",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 2,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "what did lingji give wukong?",
+        "zh": "灵姬给了悟空什么？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "a magic stone",
+            "zh": "一块魔法石"
+          },
+          {
+            "id": "b",
+            "en": "a magic fan",
+            "zh": "一把魔法扇"
+          },
+          {
+            "id": "c",
+            "en": "a magic cricket",
+            "zh": "一只魔法蟋蟀"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n030",
+            "quote": "\"How did you—\" \"The bodhisattva Lingji gave me a magic stone,\" said Wukong."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 93,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep077-official-quiz-003",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 3,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "how did wukong sneak into the cave?",
+        "zh": "悟空是如何溜进洞穴的？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "he turned into a cricket.",
+            "zh": "他变成了一只蟋蟀。"
+          },
+          {
+            "id": "b",
+            "en": "he broke down the door.",
+            "zh": "他撞开了门。"
+          },
+          {
+            "id": "c",
+            "en": "he turned into water.",
+            "zh": "他变成了水。"
+          }
+        ],
+        "answer": "b",
+        "answer_evidence": [
+          {
+            "node_id": "n020",
+            "quote": "Wukong returned to the Iron Immortal's cave door."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 93,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep077-official-quiz-004",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 4,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "why did the iron immortal suddenly feel awful?",
+        "zh": "为什么铁扇公主突然感觉很糟？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "wukong was in her stomach.",
+            "zh": "悟空在她的肚子里。"
+          },
+          {
+            "id": "b",
+            "en": "the water made her sick.",
+            "zh": "水让她生病了。"
+          },
+          {
+            "id": "c",
+            "en": "something was in her nose.",
+            "zh": "她的鼻子里有东西。"
+          }
+        ],
+        "answer": "b",
+        "answer_evidence": [
+          {
+            "node_id": "n047",
+            "quote": "\"Ahh! What was in that water? I feel awful!\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 93,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep077-official-quiz-005",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 5,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "what happened when wukong waved the fan?",
+        "zh": "当悟空挥动扇子时发生了什么？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "the flames grew bigger.",
+            "zh": "火焰变得更大了。"
+          },
+          {
+            "id": "b",
+            "en": "the fire went out.",
+            "zh": "火熄灭了。"
+          },
+          {
+            "id": "c",
+            "en": "the tang monk blew away.",
+            "zh": "唐僧被吹走了。"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n062",
+            "quote": "They came to the top of a hill and saw the Mountain of Flames."
+          },
+          {
+            "node_id": "n063",
+            "quote": "Fire covered all the land around it."
+          },
+          {
+            "node_id": "n064",
+            "quote": "\"Watch this,\" said Wukong."
+          },
+          {
+            "node_id": "n065",
+            "quote": "The monkey waved the fan hard. <font color=\"#ffff00\"><i>Whoosh!</i></font> A strong wind blew toward the mountain."
+          },
+          {
+            "node_id": "n066",
+            "quote": "Wukong smiled. \"In a moment, we'll—\" Suddenly there was a roar as the flames grew bigger, filling the sky!"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 93,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep077-vocab-001",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 101,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "wind",
+        "zh": "风"
+      },
+      "payload": {
+        "term": "wind",
+        "ipa": "wɪnd",
+        "pos": "n.",
+        "def": "n.[C,U]风",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          1,
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "077 有法力的扇子 上.pdf",
+          "half": "up",
+          "pages": [
+            1,
+            3
+          ],
+          "sha256": "8b1496ead0ce1b8b2061b01a4cff7573a5e2e202b4accd24da18363654b338aa"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "077 有法力的扇子 下.pdf",
+          "half": "down",
+          "pages": [
+            1,
+            3
+          ],
+          "sha256": "238cdfbe3a6a5bd7fb054c20daf1fbae0937846318143c9c7816434481fdbc6e"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep077-vocab-002",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 102,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "carry",
+        "zh": "vt.拿,提,扛,运送,传送,承 载"
+      },
+      "payload": {
+        "term": "carry",
+        "ipa": "ˈkæri",
+        "pos": "vt.",
+        "def": "vt.拿,提,扛,运送,传送,承 载",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "077 有法力的扇子 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "8b1496ead0ce1b8b2061b01a4cff7573a5e2e202b4accd24da18363654b338aa"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep077-vocab-003",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 103,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "land",
+        "zh": "国家 v.降落,着陆"
+      },
+      "payload": {
+        "term": "land",
+        "ipa": "lænd",
+        "pos": "n.",
+        "def": "n.[U]大陆,土地 [C]国家 v.降落,着陆",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          1,
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "077 有法力的扇子 上.pdf",
+          "half": "up",
+          "pages": [
+            1,
+            3
+          ],
+          "sha256": "8b1496ead0ce1b8b2061b01a4cff7573a5e2e202b4accd24da18363654b338aa"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "077 有法力的扇子 下.pdf",
+          "half": "down",
+          "pages": [
+            1,
+            3
+          ],
+          "sha256": "238cdfbe3a6a5bd7fb054c20daf1fbae0937846318143c9c7816434481fdbc6e"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep077-vocab-004",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 104,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "mountain",
+        "zh": "高山"
+      },
+      "payload": {
+        "term": "mountain",
+        "ipa": "ˈmaʊntən",
+        "pos": "n.",
+        "def": "n.[C]高山",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          1,
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "077 有法力的扇子 上.pdf",
+          "half": "up",
+          "pages": [
+            1,
+            3
+          ],
+          "sha256": "8b1496ead0ce1b8b2061b01a4cff7573a5e2e202b4accd24da18363654b338aa"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "077 有法力的扇子 下.pdf",
+          "half": "down",
+          "pages": [
+            1,
+            3
+          ],
+          "sha256": "238cdfbe3a6a5bd7fb054c20daf1fbae0937846318143c9c7816434481fdbc6e"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep077-vocab-005",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 105,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "look",
+        "zh": "看,注视,外表,表情"
+      },
+      "payload": {
+        "term": "look",
+        "ipa": "lʊk",
+        "pos": "vi.",
+        "def": "vi.看 v.-link.看上去 n.[C]看,注视,外表,表情",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "077 有法力的扇子 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "8b1496ead0ce1b8b2061b01a4cff7573a5e2e202b4accd24da18363654b338aa"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep077-vocab-006",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 106,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "monkey",
+        "zh": "猴子"
+      },
+      "payload": {
+        "term": "monkey",
+        "ipa": "ˈmʌŋki",
+        "pos": "n.",
+        "def": "n.[C]猴子",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "077 有法力的扇子 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "8b1496ead0ce1b8b2061b01a4cff7573a5e2e202b4accd24da18363654b338aa"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "077 有法力的扇子 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "238cdfbe3a6a5bd7fb054c20daf1fbae0937846318143c9c7816434481fdbc6e"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep077-vocab-007",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 107,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "garden",
+        "zh": "花园,园子"
+      },
+      "payload": {
+        "term": "garden",
+        "ipa": "ˈɡɑːrdn",
+        "pos": "n.",
+        "def": "n.[C]花园,园子",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "077 有法力的扇子 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "8b1496ead0ce1b8b2061b01a4cff7573a5e2e202b4accd24da18363654b338aa"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep077-vocab-008",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 108,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "say",
+        "zh": "v.说,讲"
+      },
+      "payload": {
+        "term": "say",
+        "ipa": "seɪ",
+        "pos": "v.",
+        "def": "v.说,讲",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "077 有法力的扇子 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "8b1496ead0ce1b8b2061b01a4cff7573a5e2e202b4accd24da18363654b338aa"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep077-vocab-009",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 109,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "good",
+        "zh": "好处,利益,善行"
+      },
+      "payload": {
+        "term": "good",
+        "ipa": "gʊd",
+        "pos": "adj.",
+        "def": "adj.好的,擅长的,有好处的 n.[U]好处,利益,善行",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "077 有法力的扇子 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "8b1496ead0ce1b8b2061b01a4cff7573a5e2e202b4accd24da18363654b338aa"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep077-vocab-010",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 110,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "see",
+        "zh": "v.理解,明白,观看,会见,看 见,送别,确保"
+      },
+      "payload": {
+        "term": "see",
+        "ipa": "siː",
+        "pos": "v.",
+        "def": "v.理解,明白,观看,会见,看 见,送别,确保",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "077 有法力的扇子 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "8b1496ead0ce1b8b2061b01a4cff7573a5e2e202b4accd24da18363654b338aa"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep077-vocab-011",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 111,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "again",
+        "zh": "adv.再一次,又一次"
+      },
+      "payload": {
+        "term": "again",
+        "ipa": "əˈɡen",
+        "pos": "adv.",
+        "def": "adv.再一次,又一次",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "077 有法力的扇子 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "8b1496ead0ce1b8b2061b01a4cff7573a5e2e202b4accd24da18363654b338aa"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep077-vocab-012",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 112,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "have",
+        "zh": "经受,有,吃,得(病)"
+      },
+      "payload": {
+        "term": "have",
+        "ipa": "hæv",
+        "pos": "vt.",
+        "def": "经受,有,吃,得(病)",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ],
+        "gloss": "经受,有,吃,得(病)"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "077 有法力的扇子 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "8b1496ead0ce1b8b2061b01a4cff7573a5e2e202b4accd24da18363654b338aa"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep077-vocab-013",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 113,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "drink",
+        "zh": "饮料,一杯,酒"
+      },
+      "payload": {
+        "term": "drink",
+        "ipa": "drɪŋk",
+        "pos": "v.",
+        "def": "v.喝 n.[C,U]饮料,一杯,酒",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          1,
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "077 有法力的扇子 上.pdf",
+          "half": "up",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "8b1496ead0ce1b8b2061b01a4cff7573a5e2e202b4accd24da18363654b338aa"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "077 有法力的扇子 下.pdf",
+          "half": "down",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "238cdfbe3a6a5bd7fb054c20daf1fbae0937846318143c9c7816434481fdbc6e"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep077-vocab-014",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 114,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "everything",
+        "zh": "pron.所有事物,一切"
+      },
+      "payload": {
+        "term": "everything",
+        "ipa": "ˈevriθɪŋ",
+        "pos": "pron.",
+        "def": "pron.所有事物,一切",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "077 有法力的扇子 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "8b1496ead0ce1b8b2061b01a4cff7573a5e2e202b4accd24da18363654b338aa"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep077-vocab-015",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 115,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "hand",
+        "zh": "帮助 vt.交,递,给"
+      },
+      "payload": {
+        "term": "hand",
+        "ipa": "hænd",
+        "pos": "n.",
+        "def": "n.[C]手[sing.]帮助 vt.交,递,给",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "077 有法力的扇子 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "8b1496ead0ce1b8b2061b01a4cff7573a5e2e202b4accd24da18363654b338aa"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep077-vocab-016",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 116,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "pocket",
+        "zh": "衣袋,口袋"
+      },
+      "payload": {
+        "term": "pocket",
+        "ipa": "ˈpɒkɪt",
+        "pos": "n.",
+        "def": "n.[C]衣袋,口袋",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "077 有法力的扇子 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "8b1496ead0ce1b8b2061b01a4cff7573a5e2e202b4accd24da18363654b338aa"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep077-vocab-017",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 117,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "stop",
+        "zh": "车站,停止 v.停止,阻止,逗留"
+      },
+      "payload": {
+        "term": "stop",
+        "ipa": "stɒp",
+        "pos": "n.",
+        "def": "n.[C]车站,停止 v.停止,阻止,逗留",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "077 有法力的扇子 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "8b1496ead0ce1b8b2061b01a4cff7573a5e2e202b4accd24da18363654b338aa"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "077 有法力的扇子 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "238cdfbe3a6a5bd7fb054c20daf1fbae0937846318143c9c7816434481fdbc6e"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep077-vocab-018",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 118,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "lunch",
+        "zh": "午餐"
+      },
+      "payload": {
+        "term": "lunch",
+        "ipa": "lʌntʃ",
+        "pos": "n.",
+        "def": "n.[C,U]午餐",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "077 有法力的扇子 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "8b1496ead0ce1b8b2061b01a4cff7573a5e2e202b4accd24da18363654b338aa"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep077-vocab-019",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 119,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "must",
+        "zh": "modal v.必须,一定"
+      },
+      "payload": {
+        "term": "must",
+        "ipa": "mʌst",
+        "pos": "",
+        "def": "modal v.必须,一定",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "077 有法力的扇子 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "8b1496ead0ce1b8b2061b01a4cff7573a5e2e202b4accd24da18363654b338aa"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep077-vocab-020",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 120,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "continue",
+        "zh": "v.持续,继续做"
+      },
+      "payload": {
+        "term": "continue",
+        "ipa": "kənˈtɪnjuː",
+        "pos": "v.",
+        "def": "v.持续,继续做",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "077 有法力的扇子 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "8b1496ead0ce1b8b2061b01a4cff7573a5e2e202b4accd24da18363654b338aa"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep077-vocab-021",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 121,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "get rid of",
+        "zh": "摆脱;除掉"
+      },
+      "payload": {
+        "term": "get rid of",
+        "ipa": "",
+        "pos": "",
+        "def": "摆脱;除掉",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "077 有法力的扇子 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "8b1496ead0ce1b8b2061b01a4cff7573a5e2e202b4accd24da18363654b338aa"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep077-vocab-022",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 122,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "woman",
+        "zh": "女子"
+      },
+      "payload": {
+        "term": "woman",
+        "ipa": "ˈwʊmən",
+        "pos": "n.",
+        "def": "n.[C]女子",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "077 有法力的扇子 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "8b1496ead0ce1b8b2061b01a4cff7573a5e2e202b4accd24da18363654b338aa"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep077-vocab-023",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 123,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "terrible",
+        "zh": "adj.非常讨厌的,非常严重的,可 怕的,糟糕的"
+      },
+      "payload": {
+        "term": "terrible",
+        "ipa": "ˈterəbl",
+        "pos": "adj.",
+        "def": "adj.非常讨厌的,非常严重的,可 怕的,糟糕的",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "077 有法力的扇子 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "8b1496ead0ce1b8b2061b01a4cff7573a5e2e202b4accd24da18363654b338aa"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep077-vocab-024",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 124,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "blow",
+        "zh": "v.吹,刮;炸开"
+      },
+      "payload": {
+        "term": "blow",
+        "ipa": "bləʊ",
+        "pos": "v.",
+        "def": "v.吹,刮;炸开",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          2,
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "077 有法力的扇子 上.pdf",
+          "half": "up",
+          "pages": [
+            2,
+            3
+          ],
+          "sha256": "8b1496ead0ce1b8b2061b01a4cff7573a5e2e202b4accd24da18363654b338aa"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "077 有法力的扇子 下.pdf",
+          "half": "down",
+          "pages": [
+            2,
+            3
+          ],
+          "sha256": "238cdfbe3a6a5bd7fb054c20daf1fbae0937846318143c9c7816434481fdbc6e"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep077-vocab-025",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 125,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "move",
+        "zh": "移动"
+      },
+      "payload": {
+        "term": "move",
+        "ipa": "muːv",
+        "pos": "v.",
+        "def": "v.移动;使感动,推动 n.[sing.]移动",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "077 有法力的扇子 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "8b1496ead0ce1b8b2061b01a4cff7573a5e2e202b4accd24da18363654b338aa"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep077-vocab-026",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 126,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "magic",
+        "zh": "魔术;魔法,魔力,魅力"
+      },
+      "payload": {
+        "term": "magic",
+        "ipa": "ˈmædʒɪk",
+        "pos": "adj.",
+        "def": "adj.有魔力的,有神奇力量的 n.[U]魔术;魔法,魔力,魅力",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "077 有法力的扇子 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "8b1496ead0ce1b8b2061b01a4cff7573a5e2e202b4accd24da18363654b338aa"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep077-vocab-027",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 127,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "stone",
+        "zh": "石块"
+      },
+      "payload": {
+        "term": "stone",
+        "ipa": "stəʊn",
+        "pos": "n.",
+        "def": "n.[U]石头[C]石块",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "077 有法力的扇子 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "8b1496ead0ce1b8b2061b01a4cff7573a5e2e202b4accd24da18363654b338aa"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep077-vocab-028",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 128,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "away",
+        "zh": "adv.离开,在(某距离)处,远 离"
+      },
+      "payload": {
+        "term": "away",
+        "ipa": "əˈweɪ",
+        "pos": "adv.",
+        "def": "adv.离开,在(某距离)处,远 离",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "077 有法力的扇子 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "8b1496ead0ce1b8b2061b01a4cff7573a5e2e202b4accd24da18363654b338aa"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep077-vocab-029",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 129,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "now",
+        "zh": "adv.现在,目前"
+      },
+      "payload": {
+        "term": "now",
+        "ipa": "naʊ",
+        "pos": "adv.",
+        "def": "adv.现在,目前",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "077 有法力的扇子 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "8b1496ead0ce1b8b2061b01a4cff7573a5e2e202b4accd24da18363654b338aa"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep077-vocab-030",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 130,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "pull",
+        "zh": "拉,托"
+      },
+      "payload": {
+        "term": "pull",
+        "ipa": "pʊl",
+        "pos": "v.",
+        "def": "拉,托",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ],
+        "gloss": "拉,托"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "077 有法力的扇子 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "8b1496ead0ce1b8b2061b01a4cff7573a5e2e202b4accd24da18363654b338aa"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep077-vocab-031",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 131,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "give",
+        "zh": "v.提供,给,捐赠,发表"
+      },
+      "payload": {
+        "term": "give",
+        "ipa": "ɡɪv",
+        "pos": "v.",
+        "def": "v.提供,给,捐赠,发表",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "077 有法力的扇子 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "8b1496ead0ce1b8b2061b01a4cff7573a5e2e202b4accd24da18363654b338aa"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep077-vocab-032",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 132,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "fan",
+        "zh": "狂热爱好者,风扇"
+      },
+      "payload": {
+        "term": "fan",
+        "ipa": "fæn",
+        "pos": "n.",
+        "def": "n.[C]狂热爱好者,风扇",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          2,
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "077 有法力的扇子 上.pdf",
+          "half": "up",
+          "pages": [
+            2,
+            3
+          ],
+          "sha256": "8b1496ead0ce1b8b2061b01a4cff7573a5e2e202b4accd24da18363654b338aa"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "077 有法力的扇子 下.pdf",
+          "half": "down",
+          "pages": [
+            2,
+            3
+          ],
+          "sha256": "238cdfbe3a6a5bd7fb054c20daf1fbae0937846318143c9c7816434481fdbc6e"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep077-vocab-033",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 133,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "follow",
+        "zh": "v.遵循,接受,跟随,关注"
+      },
+      "payload": {
+        "term": "follow",
+        "ipa": "ˈfɒləʊ",
+        "pos": "v.",
+        "def": "v.遵循,接受,跟随,关注",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "077 有法力的扇子 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "8b1496ead0ce1b8b2061b01a4cff7573a5e2e202b4accd24da18363654b338aa"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep077-vocab-034",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 134,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "reach",
+        "zh": "伸手去......拿"
+      },
+      "payload": {
+        "term": "reach",
+        "ipa": "riː tʃ",
+        "pos": "v.",
+        "def": "伸手去......拿",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          1,
+          3
+        ],
+        "gloss": "伸手去......拿"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "077 有法力的扇子 上.pdf",
+          "half": "up",
+          "pages": [
+            1,
+            3
+          ],
+          "sha256": "8b1496ead0ce1b8b2061b01a4cff7573a5e2e202b4accd24da18363654b338aa"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "077 有法力的扇子 下.pdf",
+          "half": "down",
+          "pages": [
+            1,
+            3
+          ],
+          "sha256": "238cdfbe3a6a5bd7fb054c20daf1fbae0937846318143c9c7816434481fdbc6e"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep077-vocab-035",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 135,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "force",
+        "zh": "武装部队 vt.强迫,迫使"
+      },
+      "payload": {
+        "term": "force",
+        "ipa": "fɔː (r)s",
+        "pos": "n.",
+        "def": "n.[U]力,力量;武力,暴力 [C] 武装部队 vt.强迫,迫使",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "077 有法力的扇子 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "238cdfbe3a6a5bd7fb054c20daf1fbae0937846318143c9c7816434481fdbc6e"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep077-vocab-036",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 136,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "poor",
+        "zh": "adj.贫穷的,清贫的,差的"
+      },
+      "payload": {
+        "term": "poor",
+        "ipa": "pɔː(r)",
+        "pos": "adj.",
+        "def": "adj.贫穷的,清贫的,差的",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "077 有法力的扇子 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "238cdfbe3a6a5bd7fb054c20daf1fbae0937846318143c9c7816434481fdbc6e"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep077-vocab-037",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 137,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "cup",
+        "zh": "杯,杯子"
+      },
+      "payload": {
+        "term": "cup",
+        "ipa": "kʌp",
+        "pos": "n.",
+        "def": "n.[C]杯,杯子",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "077 有法力的扇子 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "238cdfbe3a6a5bd7fb054c20daf1fbae0937846318143c9c7816434481fdbc6e"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep077-vocab-038",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 138,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "water",
+        "zh": "(某一江、河、湖、 海的)水域 vt.给......浇水"
+      },
+      "payload": {
+        "term": "water",
+        "ipa": "ˈwɔː tə",
+        "pos": "n.",
+        "def": "n.[U]水[pl.](某一江、河、湖、 海的)水域 vt.给......浇水",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "077 有法力的扇子 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "238cdfbe3a6a5bd7fb054c20daf1fbae0937846318143c9c7816434481fdbc6e"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep077-vocab-039",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 139,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "stomach",
+        "zh": "胃,肚子,腹部"
+      },
+      "payload": {
+        "term": "stomach",
+        "ipa": "ˈstʌmək",
+        "pos": "n.",
+        "def": "n.[C]胃,肚子,腹部",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "077 有法力的扇子 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "238cdfbe3a6a5bd7fb054c20daf1fbae0937846318143c9c7816434481fdbc6e"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep077-vocab-040",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 140,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "change",
+        "zh": "变化,改变 v.变化,改变"
+      },
+      "payload": {
+        "term": "change",
+        "ipa": "tʃeɪndʒ",
+        "pos": "n.",
+        "def": "n.[C,U]变化,改变 v.变化,改变",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "077 有法力的扇子 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "238cdfbe3a6a5bd7fb054c20daf1fbae0937846318143c9c7816434481fdbc6e"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep077-vocab-041",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 141,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "back",
+        "zh": "后面,背部 adj.后面的 adv.回原处,向后地"
+      },
+      "payload": {
+        "term": "back",
+        "ipa": "bæk",
+        "pos": "n.",
+        "def": "n.[C]后面,背部 adj.后面的 adv.回原处,向后地",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "077 有法力的扇子 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "238cdfbe3a6a5bd7fb054c20daf1fbae0937846318143c9c7816434481fdbc6e"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep077-vocab-042",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 142,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "himself",
+        "zh": "pron.他自己"
+      },
+      "payload": {
+        "term": "himself",
+        "ipa": "hɪmˈself",
+        "pos": "pron.",
+        "def": "pron.他自己",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "077 有法力的扇子 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "238cdfbe3a6a5bd7fb054c20daf1fbae0937846318143c9c7816434481fdbc6e"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep077-vocab-043",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 143,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "kick",
+        "zh": "极大的乐趣,踢 又打!”砰!啪!"
+      },
+      "payload": {
+        "term": "kick",
+        "ipa": "kɪk",
+        "pos": "v.",
+        "def": "v.踢,踹 n.[C]极大的乐趣,踢 又打!”砰!啪!",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "077 有法力的扇子 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "238cdfbe3a6a5bd7fb054c20daf1fbae0937846318143c9c7816434481fdbc6e"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep077-vocab-044",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 144,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "shout",
+        "zh": "呼喊,叫喊"
+      },
+      "payload": {
+        "term": "shout",
+        "ipa": "ʃaʊt",
+        "pos": "v.",
+        "def": "v.呼叫,喊叫 n.[C]呼喊,叫喊",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "077 有法力的扇子 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "238cdfbe3a6a5bd7fb054c20daf1fbae0937846318143c9c7816434481fdbc6e"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep077-vocab-045",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 145,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "cry",
+        "zh": "叫喊"
+      },
+      "payload": {
+        "term": "cry",
+        "ipa": "kraɪ",
+        "pos": "v.",
+        "def": "v./n.[sing.]哭 [C]叫喊",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "077 有法力的扇子 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "238cdfbe3a6a5bd7fb054c20daf1fbae0937846318143c9c7816434481fdbc6e"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep077-vocab-046",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 146,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "hurt",
+        "zh": "v.(使)疼痛,受伤,感到疼痛, (使)伤心 adj.受伤的"
+      },
+      "payload": {
+        "term": "hurt",
+        "ipa": "hɜː(r)t",
+        "pos": "v.",
+        "def": "v.(使)疼痛,受伤,感到疼痛, (使)伤心 adj.受伤的",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "077 有法力的扇子 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "238cdfbe3a6a5bd7fb054c20daf1fbae0937846318143c9c7816434481fdbc6e"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep077-vocab-047",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 147,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "return",
+        "zh": "返回"
+      },
+      "payload": {
+        "term": "return",
+        "ipa": "rɪˈtɜː(r)n",
+        "pos": "vt.",
+        "def": "vt.归还 vi.回来,返回 n.[C,U]回报[sing.]返回",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "077 有法力的扇子 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "238cdfbe3a6a5bd7fb054c20daf1fbae0937846318143c9c7816434481fdbc6e"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep077-vocab-048",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 148,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "normal",
+        "zh": "常态,通常标准"
+      },
+      "payload": {
+        "term": "normal",
+        "ipa": "ˈnɔː (r)ml",
+        "pos": "adj.",
+        "def": "adj.正常的,一般的 n.[U]常态,通常标准",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "077 有法力的扇子 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "238cdfbe3a6a5bd7fb054c20daf1fbae0937846318143c9c7816434481fdbc6e"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep077-vocab-049",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 149,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "climb",
+        "zh": "攀登"
+      },
+      "payload": {
+        "term": "climb",
+        "ipa": "klaɪm",
+        "pos": "v.",
+        "def": "v.爬 n.[C]攀登",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "077 有法力的扇子 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "238cdfbe3a6a5bd7fb054c20daf1fbae0937846318143c9c7816434481fdbc6e"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep077-vocab-050",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 150,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "foot",
+        "zh": "脚,足,英尺"
+      },
+      "payload": {
+        "term": "foot",
+        "ipa": "fʊt",
+        "pos": "n.",
+        "def": "n.[C]脚,足,英尺",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "077 有法力的扇子 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "238cdfbe3a6a5bd7fb054c20daf1fbae0937846318143c9c7816434481fdbc6e"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep077-vocab-051",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 151,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "take",
+        "zh": "拿；带走"
+      },
+      "payload": {
+        "term": "take",
+        "ipa": "teɪk",
+        "pos": "v.",
+        "def": "拿；带走",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ],
+        "gloss": "拿；带走"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "077 有法力的扇子 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "238cdfbe3a6a5bd7fb054c20daf1fbae0937846318143c9c7816434481fdbc6e"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep077-vocab-052",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 152,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "leave",
+        "zh": "休假"
+      },
+      "payload": {
+        "term": "leave",
+        "ipa": "liːv",
+        "pos": "v.",
+        "def": "v.离开,留下,使处于...... n.[U]休假",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "077 有法力的扇子 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "238cdfbe3a6a5bd7fb054c20daf1fbae0937846318143c9c7816434481fdbc6e"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep077-vocab-053",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 153,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "village",
+        "zh": "村庄,村镇"
+      },
+      "payload": {
+        "term": "village",
+        "ipa": "ˈvɪlɪdʒ",
+        "pos": "n.",
+        "def": "n.[C]村庄,村镇",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "077 有法力的扇子 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "238cdfbe3a6a5bd7fb054c20daf1fbae0937846318143c9c7816434481fdbc6e"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep077-vocab-054",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 154,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "explain",
+        "zh": "v.解释,说明"
+      },
+      "payload": {
+        "term": "explain",
+        "ipa": "ɪkˈspleɪn",
+        "pos": "v.",
+        "def": "v.解释,说明",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "077 有法力的扇子 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "238cdfbe3a6a5bd7fb054c20daf1fbae0937846318143c9c7816434481fdbc6e"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep077-vocab-055",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 155,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "wonderful",
+        "zh": "adj.精彩的,绝妙的"
+      },
+      "payload": {
+        "term": "wonderful",
+        "ipa": "ˈwʌndəf(ə)l",
+        "pos": "adj.",
+        "def": "adj.精彩的,绝妙的",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "077 有法力的扇子 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "238cdfbe3a6a5bd7fb054c20daf1fbae0937846318143c9c7816434481fdbc6e"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep077-vocab-056",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 156,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "journey",
+        "zh": "(尤指长途)旅行,行程"
+      },
+      "payload": {
+        "term": "journey",
+        "ipa": "ˈdʒɜː(r)ni",
+        "pos": "n.",
+        "def": "n.[C](尤指长途)旅行,行程",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "077 有法力的扇子 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "238cdfbe3a6a5bd7fb054c20daf1fbae0937846318143c9c7816434481fdbc6e"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep077-vocab-057",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 157,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "thank",
+        "zh": "vt.感谢,谢谢"
+      },
+      "payload": {
+        "term": "thank",
+        "ipa": "θæŋk",
+        "pos": "vt.",
+        "def": "vt.感谢,谢谢",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "077 有法力的扇子 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "238cdfbe3a6a5bd7fb054c20daf1fbae0937846318143c9c7816434481fdbc6e"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep077-vocab-058",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 158,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "old",
+        "zh": "adj.年老的,旧的,古老的,...... 岁的,过去的"
+      },
+      "payload": {
+        "term": "old",
+        "ipa": "əʊld",
+        "pos": "adj.",
+        "def": "adj.年老的,旧的,古老的,...... 岁的,过去的",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "077 有法力的扇子 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "238cdfbe3a6a5bd7fb054c20daf1fbae0937846318143c9c7816434481fdbc6e"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep077-vocab-059",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 159,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "head",
+        "zh": "前往；朝向"
+      },
+      "payload": {
+        "term": "head",
+        "ipa": "hed",
+        "pos": "",
+        "def": "前往；朝向",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ],
+        "gloss": "前往；朝向"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "077 有法力的扇子 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "238cdfbe3a6a5bd7fb054c20daf1fbae0937846318143c9c7816434481fdbc6e"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep077-vocab-060",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 160,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "top",
+        "zh": "顶部,表面 adj.最高的"
+      },
+      "payload": {
+        "term": "top",
+        "ipa": "tɒp",
+        "pos": "n.",
+        "def": "n.[C]顶部,表面 adj.最高的",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "077 有法力的扇子 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "238cdfbe3a6a5bd7fb054c20daf1fbae0937846318143c9c7816434481fdbc6e"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep077-vocab-061",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 161,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "hill",
+        "zh": "小山,山丘"
+      },
+      "payload": {
+        "term": "hill",
+        "ipa": "hɪl",
+        "pos": "n.",
+        "def": "n.[C]小山,山丘",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "077 有法力的扇子 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "238cdfbe3a6a5bd7fb054c20daf1fbae0937846318143c9c7816434481fdbc6e"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep077-vocab-062",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 162,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "fire",
+        "zh": "炉火 v.解雇,开枪"
+      },
+      "payload": {
+        "term": "fire",
+        "ipa": "ˈfaɪə(r)",
+        "pos": "n.",
+        "def": "n.[U]火[C,U]火灾[C]炉火 v.解雇,开枪",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "077 有法力的扇子 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "238cdfbe3a6a5bd7fb054c20daf1fbae0937846318143c9c7816434481fdbc6e"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep077-vocab-063",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 163,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "cover",
+        "zh": "覆盖物,盖子,封面"
+      },
+      "payload": {
+        "term": "cover",
+        "ipa": "ˈkʌvə(r)",
+        "pos": "vt.",
+        "def": "vt.遮盖,覆盖;占(一片面积) n.[C]覆盖物,盖子,封面",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "077 有法力的扇子 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "238cdfbe3a6a5bd7fb054c20daf1fbae0937846318143c9c7816434481fdbc6e"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep077-vocab-064",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 164,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "around",
+        "zh": "adv.在周围,大约,四处,掉头 prep.在......周围,到处"
+      },
+      "payload": {
+        "term": "around",
+        "ipa": "əˈraʊnd",
+        "pos": "adv.",
+        "def": "adv.在周围,大约,四处,掉头 prep.在......周围,到处",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "077 有法力的扇子 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "238cdfbe3a6a5bd7fb054c20daf1fbae0937846318143c9c7816434481fdbc6e"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep077-vocab-065",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 165,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "watch",
+        "zh": "观察"
+      },
+      "payload": {
+        "term": "watch",
+        "ipa": "wɒtʃ",
+        "pos": "v.",
+        "def": "v.注视,观看,留意,小心 n.[C]表,手表[U]观察",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "077 有法力的扇子 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "238cdfbe3a6a5bd7fb054c20daf1fbae0937846318143c9c7816434481fdbc6e"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep077-vocab-066",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 166,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "hard",
+        "zh": "adj.困难的,坚硬的,苛刻的 adv.努力地,猛烈地,费力地"
+      },
+      "payload": {
+        "term": "hard",
+        "ipa": "hɑː(r)d",
+        "pos": "adj.",
+        "def": "adj.困难的,坚硬的,苛刻的 adv.努力地,猛烈地,费力地",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "077 有法力的扇子 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "238cdfbe3a6a5bd7fb054c20daf1fbae0937846318143c9c7816434481fdbc6e"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep077-vocab-067",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 167,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "strong",
+        "zh": "adj.强烈的,强壮的"
+      },
+      "payload": {
+        "term": "strong",
+        "ipa": "strɒŋ",
+        "pos": "adj.",
+        "def": "adj.强烈的,强壮的",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "077 有法力的扇子 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "238cdfbe3a6a5bd7fb054c20daf1fbae0937846318143c9c7816434481fdbc6e"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep077-vocab-068",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 168,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "toward",
+        "zh": "prep.朝,向,对着"
+      },
+      "payload": {
+        "term": "toward",
+        "ipa": "təˈwɔː d",
+        "pos": "prep.",
+        "def": "prep.朝,向,对着",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "077 有法力的扇子 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "238cdfbe3a6a5bd7fb054c20daf1fbae0937846318143c9c7816434481fdbc6e"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep077-vocab-069",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 169,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "smile",
+        "zh": "笑,微笑"
+      },
+      "payload": {
+        "term": "smile",
+        "ipa": "smaɪ",
+        "pos": "vi.",
+        "def": "vi./n.[C]笑,微笑",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "077 有法力的扇子 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "238cdfbe3a6a5bd7fb054c20daf1fbae0937846318143c9c7816434481fdbc6e"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep077-vocab-070",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 170,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "grow",
+        "zh": "v.种植,生长,发育 v.-link.变得,变成"
+      },
+      "payload": {
+        "term": "grow",
+        "ipa": "ɡrəʊ",
+        "pos": "v.",
+        "def": "v.种植,生长,发育 v.-link.变得,变成",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "077 有法力的扇子 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "238cdfbe3a6a5bd7fb054c20daf1fbae0937846318143c9c7816434481fdbc6e"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep077-vocab-071",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 171,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "big",
+        "zh": "adj.大的,重要的"
+      },
+      "payload": {
+        "term": "big",
+        "ipa": "bɪɡ",
+        "pos": "adj.",
+        "def": "adj.大的,重要的",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "077 有法力的扇子 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "238cdfbe3a6a5bd7fb054c20daf1fbae0937846318143c9c7816434481fdbc6e"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep077-vocab-072",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 172,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "fill",
+        "zh": "v.(使)充满,装满"
+      },
+      "payload": {
+        "term": "fill",
+        "ipa": "fɪl",
+        "pos": "v.",
+        "def": "v.(使)充满,装满",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "077 有法力的扇子 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "238cdfbe3a6a5bd7fb054c20daf1fbae0937846318143c9c7816434481fdbc6e"
+        }
+      ],
+      "review_status": "machine_verified"
+    }
+  ],
+  "teacher_guide": null,
+  "review": {
+    "status": "draft",
+    "reviewed_at": null,
+    "card_stats": {
+      "total": 77,
+      "sentence_choice": 5,
+      "word_review": 72,
+      "machine_verified": 75,
+      "assistant_reviewed": 2,
+      "verified": 77,
+      "needs_review": 0
+    }
+  },
+  "generated_at": "2026-08-31T04:49:46.283690+00:00"
+}

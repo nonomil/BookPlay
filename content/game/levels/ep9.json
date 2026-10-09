@@ -1,0 +1,584 @@
+{
+ "schema_version": 1,
+ "ep": 9,
+ "title": {
+  "en": "The Peach Garden",
+  "zh": "西游记 第9集"
+ },
+ "collection": "c02",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "wukong",
+   "nameZh": "孙悟空",
+   "mode": "sparring",
+   "sprite": "wukong"
+  },
+  "minors": [
+   {
+    "id": "imp",
+    "nameZh": "小妖",
+    "sprite": "imp"
+   }
+  ]
+ },
+ "background": {
+  "theme": "episode-scene",
+  "illustration": "assets/adv_frames/ep9/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "Wukong plucked a peach from a branch and bit into it.",
+   "textZh": "猿猴从树枝上摘下一颗桃子,咬了一口。",
+   "illustration": "assets/adv_frames/ep9/f1.jpg",
+   "sourceNodeId": "n001",
+   "audioRef": "sent_en:Wukong plucked a peach from a branch and bit into it."
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "\"This peach tastes wonderful!\" he said.",
+   "textZh": "\"这桃子味道真棒!\"他说道。",
+   "illustration": "assets/adv_frames/ep9/f2.jpg",
+   "sourceNodeId": "n002",
+   "audioRef": "sent_en:\"This peach tastes wonderful!\" he said."
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "pluck",
+   "zh": "采,摘,拔",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep9/f1.jpg"
+  },
+  {
+   "term": "branch",
+   "zh": "树枝",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep9/f1.jpg"
+  },
+  {
+   "term": "bit",
+   "zh": "1. 咬,啃 (bite-bit),(2. 一点点)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep9/f1.jpg"
+  },
+  {
+   "term": "secretly",
+   "zh": "偷偷地,秘密地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep9/f1.jpg"
+  },
+  {
+   "term": "heaven",
+   "zh": "天堂,天国",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep9/f3.jpg"
+  },
+  {
+   "term": "meanwhile",
+   "zh": "同时,在...期间",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep9/f0.jpg"
+  },
+  {
+   "term": "busy",
+   "zh": "忙碌的,繁忙的",
+   "ipa": "ˈbɪzi",
+   "illustration": "assets/adv_frames/ep9/f1.jpg"
+  },
+  {
+   "term": "annual",
+   "zh": "一年的,每年的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep9/f1.jpg"
+  },
+  {
+   "term": "maiden",
+   "zh": "少女,小姐",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep9/f2.jpg"
+  },
+  {
+   "term": "gown",
+   "zh": "(特指女性穿的)长袍,礼服",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep9/f2.jpg"
+  },
+  {
+   "term": "important",
+   "zh": "重要的",
+   "ipa": "ɪmˈpɔː(r)tnt",
+   "illustration": "assets/adv_frames/ep9/f0.jpg"
+  },
+  {
+   "term": "bodhisattva",
+   "zh": "菩萨",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep9/f1.jpg"
+  }
+ ],
+ "wordPool": [
+  {
+   "term": "pluck",
+   "zh": "采,摘,拔",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep9/f1.jpg"
+  },
+  {
+   "term": "branch",
+   "zh": "树枝",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep9/f1.jpg"
+  },
+  {
+   "term": "bit",
+   "zh": "1. 咬,啃 (bite-bit),(2. 一点点)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep9/f1.jpg"
+  },
+  {
+   "term": "secretly",
+   "zh": "偷偷地,秘密地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep9/f1.jpg"
+  },
+  {
+   "term": "heaven",
+   "zh": "天堂,天国",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep9/f3.jpg"
+  },
+  {
+   "term": "meanwhile",
+   "zh": "同时,在...期间",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep9/f0.jpg"
+  },
+  {
+   "term": "busy",
+   "zh": "忙碌的,繁忙的",
+   "ipa": "ˈbɪzi",
+   "illustration": "assets/adv_frames/ep9/f1.jpg"
+  },
+  {
+   "term": "annual",
+   "zh": "一年的,每年的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep9/f1.jpg"
+  },
+  {
+   "term": "maiden",
+   "zh": "少女,小姐",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep9/f2.jpg"
+  },
+  {
+   "term": "gown",
+   "zh": "(特指女性穿的)长袍,礼服",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep9/f2.jpg"
+  },
+  {
+   "term": "important",
+   "zh": "重要的",
+   "ipa": "ɪmˈpɔː(r)tnt",
+   "illustration": "assets/adv_frames/ep9/f0.jpg"
+  },
+  {
+   "term": "bodhisattva",
+   "zh": "菩萨",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep9/f1.jpg"
+  },
+  {
+   "term": "Guanyin",
+   "zh": "观音",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep9/f1.jpg"
+  },
+  {
+   "term": "goddess",
+   "zh": "女神",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep9/f1.jpg"
+  },
+  {
+   "term": "mercy",
+   "zh": "仁慈,宽容",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep9/f1.jpg"
+  },
+  {
+   "term": "plenty of",
+   "zh": "(数、量等)很多",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep9/f1.jpg"
+  },
+  {
+   "term": "terrible",
+   "zh": "可怕的,极坏的,糟糕的",
+   "ipa": "ˈterəbl",
+   "illustration": "assets/adv_frames/ep9/f0.jpg"
+  },
+  {
+   "term": "startle",
+   "zh": "使大吃一惊",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep9/f1.jpg"
+  },
+  {
+   "term": "noise",
+   "zh": "声响,喧闹声",
+   "ipa": "nɔɪz",
+   "illustration": "assets/adv_frames/ep9/f0.jpg"
+  },
+  {
+   "term": "furious",
+   "zh": "非常愤怒的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep9/f0.jpg"
+  },
+  {
+   "term": "single",
+   "zh": "单一的,单个的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep9/f1.jpg"
+  },
+  {
+   "term": "instantly",
+   "zh": "立刻,马上",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep9/f1.jpg"
+  },
+  {
+   "term": "empty",
+   "zh": "空的,未占用的",
+   "ipa": "ˈempti",
+   "illustration": "assets/adv_frames/ep9/f2.jpg"
+  },
+  {
+   "term": "cast",
+   "zh": "1. 施魔法 (cast-cast),(2. 投射(光,影,视线等) )",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep9/f0.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "pluck",
+     "zh": "采,摘,拔",
+     "sprite": "imp"
+    },
+    {
+     "term": "branch",
+     "zh": "树枝",
+     "sprite": "imp"
+    },
+    {
+     "term": "bit",
+     "zh": "1. 咬,啃 (bite-bit),(2. 一点点)",
+     "sprite": "imp"
+    },
+    {
+     "term": "secretly",
+     "zh": "偷偷地,秘密地",
+     "sprite": "imp"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "heaven",
+     "zh": "天堂,天国",
+     "sprite": "imp"
+    },
+    {
+     "term": "meanwhile",
+     "zh": "同时,在...期间",
+     "sprite": "imp"
+    },
+    {
+     "term": "busy",
+     "zh": "忙碌的,繁忙的",
+     "sprite": "imp"
+    },
+    {
+     "term": "annual",
+     "zh": "一年的,每年的",
+     "sprite": "imp"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "maiden",
+    "zh": "少女,小姐"
+   },
+   {
+    "term": "gown",
+    "zh": "(特指女性穿的)长袍,礼服"
+   },
+   {
+    "term": "important",
+    "zh": "重要的"
+   },
+   {
+    "term": "bodhisattva",
+    "zh": "菩萨"
+   }
+  ],
+  "taunts": [
+   "wukong.1",
+   "wukong.2",
+   "wukong.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=9",
+ "npcDialogue": {
+  "intro": {
+   "id": "ep9-map-intro",
+   "lines": [
+    {
+     "id": "ep9-map-intro-1",
+     "sourceNodeId": "n001",
+     "speaker": "narrator",
+     "textEn": "Wukong plucked a peach from a branch and bit into it.",
+     "textZh": "猿猴从树枝上摘下一颗桃子,咬了一口。",
+     "audioRef": "sent_en:Wukong plucked a peach from a branch and bit into it.",
+     "audioStart": 11.134,
+     "audioEnd": 25.69
+    },
+    {
+     "id": "ep9-map-intro-2",
+     "sourceNodeId": "n002",
+     "speaker": "narrator",
+     "textEn": "\"This peach tastes wonderful!\" he said.",
+     "textZh": "\"这桃子味道真棒!\"他说道。",
+     "audioRef": "sent_en:\"This peach tastes wonderful!\" he said.",
+     "audioStart": 25.691,
+     "audioEnd": 31.614
+    }
+   ]
+  },
+  "quiz": {
+   "id": "ep9-map-quiz",
+   "lines": [
+    {
+     "id": "ep9-map-quiz-1",
+     "sourceNodeId": "n009",
+     "speaker": "narrator",
+     "textEn": "It was almost time for the annual Peach Festival.",
+     "textZh": "年度桃子节即将来临。",
+     "audioRef": "sent_en:It was almost time for the annual Peach Festival.",
+     "audioStart": 62.403,
+     "audioEnd": 68.924
+    }
+   ],
+   "question": {
+    "id": "ep009-official-quiz-001",
+    "textEn": "which is not true?",
+    "textZh": "哪一项是不正确的？"
+   },
+   "word": {
+    "term": "pluck",
+    "zh": "采,摘,拔",
+    "ipa": ""
+   },
+   "options": [
+    {
+     "id": "a",
+     "textEn": "the maidens captured wukong.",
+     "textZh": "少女们抓住了悟空。",
+     "correct": true,
+     "feedback": "对了。少女们抓住了悟空。"
+    },
+    {
+     "id": "b",
+     "textEn": "it was time for the peach festival.",
+     "textZh": "到了桃子节的时候。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    },
+    {
+     "id": "c",
+     "textEn": "wukong ate all of the peaches.",
+     "textZh": "悟空吃了所有的桃子。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    }
+   ],
+   "lessonCardId": "ep009-official-quiz-001"
+  }
+ },
+ "map": {
+  "theme": "episode-scene",
+  "coordinateSpace": "world-normalized",
+  "worldTiles": 2,
+  "regions": {
+   "hero": 0,
+   "waves": [
+    0,
+    1
+   ],
+   "npc": {
+    "intro": 0,
+    "quiz": 1
+   },
+   "boss": 3
+  },
+  "walkable": {
+   "space": "world",
+   "x": 0.0,
+   "y": 0.16,
+   "w": 1.0,
+   "h": 0.79,
+   "rects": [
+    {
+     "x": 0.0,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.66,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    }
+   ]
+  },
+  "heroSpawn": {
+   "x": 0.06,
+   "y": 0.31
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.31,
+    "y": 0.23
+   },
+   {
+    "x": 0.38,
+    "y": 0.27
+   },
+   {
+    "x": 0.34,
+    "y": 0.33
+   },
+   {
+    "x": 0.41,
+    "y": 0.24
+   }
+  ],
+  "waveSpawns": [
+   [
+    {
+     "x": 0.31,
+     "y": 0.23
+    },
+    {
+     "x": 0.38,
+     "y": 0.27
+    },
+    {
+     "x": 0.34,
+     "y": 0.33
+    },
+    {
+     "x": 0.41,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.81,
+     "y": 0.23
+    },
+    {
+     "x": 0.88,
+     "y": 0.27
+    },
+    {
+     "x": 0.84,
+     "y": 0.33
+    },
+    {
+     "x": 0.91,
+     "y": 0.24
+    }
+   ]
+  ],
+  "orbSpawns": [
+   [
+    {
+     "x": 0.11,
+     "y": 0.25
+    },
+    {
+     "x": 0.16,
+     "y": 0.31
+    },
+    {
+     "x": 0.12,
+     "y": 0.37
+    },
+    {
+     "x": 0.18,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.61,
+     "y": 0.25
+    },
+    {
+     "x": 0.66,
+     "y": 0.31
+    },
+    {
+     "x": 0.62,
+     "y": 0.37
+    },
+    {
+     "x": 0.68,
+     "y": 0.24
+    }
+   ]
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "tudigong",
+    "nameZh": "土地公",
+    "x": 0.08,
+    "y": 0.26
+   },
+   {
+    "role": "quiz",
+    "sprite": "tudigong",
+    "nameZh": "土地公",
+    "x": 0.7,
+    "y": 0.39
+   }
+  ],
+  "bossSpot": {
+   "x": 0.94,
+   "y": 0.85
+  }
+ }
+}

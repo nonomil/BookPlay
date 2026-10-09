@@ -1,0 +1,584 @@
+{
+ "schema_version": 1,
+ "ep": 42,
+ "title": {
+  "en": "Sun Kongwu",
+  "zh": "西游记 第42集"
+ },
+ "collection": "c06",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "imp",
+   "nameZh": "小妖",
+   "mode": "sparring",
+   "sprite": "imp"
+  },
+  "minors": [
+   {
+    "id": "imp",
+    "nameZh": "小妖",
+    "sprite": "imp"
+   }
+  ]
+ },
+ "background": {
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep42/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "Wukong struggled to free himself from the golden rope.",
+   "textZh": "悟空奋力挣脱那根金绳。",
+   "illustration": "assets/adv_frames/ep42/f1.jpg",
+   "sourceNodeId": "n001",
+   "audioRef": "sent_en:Wukong struggled to free himself from the golden rope."
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "The gourd fell from his robe.",
+   "textZh": "番茄从他的袍子上掉了下来。",
+   "illustration": "assets/adv_frames/ep42/f2.jpg",
+   "sourceNodeId": "n002",
+   "audioRef": "sent_en:The gourd fell from his robe."
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "squeeze",
+   "zh": "1. (勉强)塞进,(2. 挤,压)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep42/f2.jpg"
+  },
+  {
+   "term": "main",
+   "zh": "主要的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep42/f1.jpg"
+  },
+  {
+   "term": "lie",
+   "zh": "1. 说谎,(2. 谎言)",
+   "ipa": "laɪ",
+   "illustration": "assets/adv_frames/ep42/f2.jpg"
+  },
+  {
+   "term": "set free",
+   "zh": "放...自由,释放",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep42/f3.jpg"
+  },
+  {
+   "term": "feel",
+   "zh": "为......感到难过",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep42/f2.jpg"
+  },
+  {
+   "term": "solve",
+   "zh": "解决(困难、问题等)",
+   "ipa": "sɒlv",
+   "illustration": "assets/adv_frames/ep42/f1.jpg"
+  },
+  {
+   "term": "violence",
+   "zh": "暴力,暴力行为",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep42/f3.jpg"
+  },
+  {
+   "term": "the whole time",
+   "zh": "自始至终",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep42/f1.jpg"
+  },
+  {
+   "term": "cap",
+   "zh": "1. (瓶子等的)盖,罩, (2. 帽子,棒球帽)",
+   "ipa": "kæp",
+   "illustration": "assets/adv_frames/ep42/f0.jpg"
+  },
+  {
+   "term": "exactly",
+   "zh": "准确地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep42/f1.jpg"
+  },
+  {
+   "term": "difference",
+   "zh": "差别,差异",
+   "ipa": "ˈdɪfrəns",
+   "illustration": "assets/adv_frames/ep42/f1.jpg"
+  },
+  {
+   "term": "puddle",
+   "zh": "(积雨水的)水坑",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep42/f0.jpg"
+  }
+ ],
+ "wordPool": [
+  {
+   "term": "squeeze",
+   "zh": "1. (勉强)塞进,(2. 挤,压)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep42/f2.jpg"
+  },
+  {
+   "term": "main",
+   "zh": "主要的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep42/f1.jpg"
+  },
+  {
+   "term": "lie",
+   "zh": "1. 说谎,(2. 谎言)",
+   "ipa": "laɪ",
+   "illustration": "assets/adv_frames/ep42/f2.jpg"
+  },
+  {
+   "term": "set free",
+   "zh": "放...自由,释放",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep42/f3.jpg"
+  },
+  {
+   "term": "feel",
+   "zh": "为......感到难过",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep42/f2.jpg"
+  },
+  {
+   "term": "solve",
+   "zh": "解决(困难、问题等)",
+   "ipa": "sɒlv",
+   "illustration": "assets/adv_frames/ep42/f1.jpg"
+  },
+  {
+   "term": "violence",
+   "zh": "暴力,暴力行为",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep42/f3.jpg"
+  },
+  {
+   "term": "the whole time",
+   "zh": "自始至终",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep42/f1.jpg"
+  },
+  {
+   "term": "cap",
+   "zh": "1. (瓶子等的)盖,罩, (2. 帽子,棒球帽)",
+   "ipa": "kæp",
+   "illustration": "assets/adv_frames/ep42/f0.jpg"
+  },
+  {
+   "term": "exactly",
+   "zh": "准确地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep42/f1.jpg"
+  },
+  {
+   "term": "difference",
+   "zh": "差别,差异",
+   "ipa": "ˈdɪfrəns",
+   "illustration": "assets/adv_frames/ep42/f1.jpg"
+  },
+  {
+   "term": "puddle",
+   "zh": "(积雨水的)水坑",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep42/f0.jpg"
+  },
+  {
+   "term": "opening",
+   "zh": "孔,缝隙",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep42/f0.jpg"
+  },
+  {
+   "term": "shot out",
+   "zh": "冲出,射出,弹出",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep42/f1.jpg"
+  },
+  {
+   "term": "remove",
+   "zh": "1. 去掉,消除,(2. 移动,搬开)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep42/f1.jpg"
+  },
+  {
+   "term": "peer",
+   "zh": "凝视,盯着看",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep42/f3.jpg"
+  },
+  {
+   "term": "tilt",
+   "zh": "倾斜,倾侧",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep42/f0.jpg"
+  },
+  {
+   "term": "quickly",
+   "zh": "迅速地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep42/f2.jpg"
+  },
+  {
+   "term": "nephew",
+   "zh": "外甥 (niece:外甥女)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep42/f3.jpg"
+  },
+  {
+   "term": "interrupt",
+   "zh": "妨碍,中断",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep42/f0.jpg"
+  },
+  {
+   "term": "free",
+   "zh": "空闲的",
+   "ipa": "friː",
+   "illustration": "assets/adv_frames/ep42/f1.jpg"
+  },
+  {
+   "term": "rope",
+   "zh": "绳索",
+   "ipa": "rəʊp",
+   "illustration": "assets/adv_frames/ep42/f1.jpg"
+  },
+  {
+   "term": "fall",
+   "zh": "倒塌",
+   "ipa": "fɔːl",
+   "illustration": "assets/adv_frames/ep42/f1.jpg"
+  },
+  {
+   "term": "magic",
+   "zh": "有魔力的",
+   "ipa": "ˈmædʒɪk",
+   "illustration": "assets/adv_frames/ep42/f1.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "squeeze",
+     "zh": "1. (勉强)塞进,(2. 挤,压)",
+     "sprite": "imp"
+    },
+    {
+     "term": "main",
+     "zh": "主要的",
+     "sprite": "imp"
+    },
+    {
+     "term": "lie",
+     "zh": "1. 说谎,(2. 谎言)",
+     "sprite": "imp"
+    },
+    {
+     "term": "set free",
+     "zh": "放...自由,释放",
+     "sprite": "imp"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "feel",
+     "zh": "为......感到难过",
+     "sprite": "imp"
+    },
+    {
+     "term": "solve",
+     "zh": "解决(困难、问题等)",
+     "sprite": "imp"
+    },
+    {
+     "term": "violence",
+     "zh": "暴力,暴力行为",
+     "sprite": "imp"
+    },
+    {
+     "term": "the whole time",
+     "zh": "自始至终",
+     "sprite": "imp"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "cap",
+    "zh": "1. (瓶子等的)盖,罩, (2. 帽子,棒球帽)"
+   },
+   {
+    "term": "exactly",
+    "zh": "准确地"
+   },
+   {
+    "term": "difference",
+    "zh": "差别,差异"
+   },
+   {
+    "term": "puddle",
+    "zh": "(积雨水的)水坑"
+   }
+  ],
+  "taunts": [
+   "imp.1",
+   "imp.2",
+   "imp.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=42",
+ "npcDialogue": {
+  "intro": {
+   "id": "ep42-map-intro",
+   "lines": [
+    {
+     "id": "ep42-map-intro-1",
+     "sourceNodeId": "n001",
+     "speaker": "narrator",
+     "textEn": "Wukong struggled to free himself from the golden rope.",
+     "textZh": "悟空奋力挣脱那根金绳。",
+     "audioRef": "sent_en:Wukong struggled to free himself from the golden rope.",
+     "audioStart": 11.0,
+     "audioEnd": 16.123
+    },
+    {
+     "id": "ep42-map-intro-2",
+     "sourceNodeId": "n002",
+     "speaker": "narrator",
+     "textEn": "The gourd fell from his robe.",
+     "textZh": "番茄从他的袍子上掉了下来。",
+     "audioRef": "sent_en:The gourd fell from his robe.",
+     "audioStart": 16.124,
+     "audioEnd": 19.771
+    }
+   ]
+  },
+  "quiz": {
+   "id": "ep42-map-quiz",
+   "lines": [
+    {
+     "id": "ep42-map-quiz-1",
+     "sourceNodeId": "n016",
+     "speaker": "narrator",
+     "textEn": "\"Sun Wukong is my twin brother. My name is Sun Kongwu.\"",
+     "textZh": "\"孙悟空是我的双胞胎兄弟。我的名字叫孙孔武。\"",
+     "audioRef": "sent_en:\"Sun Wukong is my twin brother. My name is Sun Kongwu.\"",
+     "audioStart": 79.698,
+     "audioEnd": 86.429
+    }
+   ],
+   "question": {
+    "id": "ep042-official-quiz-001",
+    "textEn": "which is true about wukong?",
+    "textZh": "关于悟空，哪一项是正确的？"
+   },
+   "word": {
+    "term": "squeeze",
+    "zh": "1. (勉强)塞进,(2. 挤,压)",
+    "ipa": ""
+   },
+   "options": [
+    {
+     "id": "a",
+     "textEn": "he had the real gourd.",
+     "textZh": "他有真正的葫芦。",
+     "correct": true,
+     "feedback": "对了。他有真正的葫芦。"
+    },
+    {
+     "id": "b",
+     "textEn": "he had a twin brother.",
+     "textZh": "他有一个双胞胎兄弟。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    },
+    {
+     "id": "c",
+     "textEn": "he could die in the gourd.",
+     "textZh": "他可能会死在葫芦里。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    }
+   ],
+   "lessonCardId": "ep042-official-quiz-001"
+  }
+ },
+ "map": {
+  "theme": "generic",
+  "coordinateSpace": "world-normalized",
+  "worldTiles": 2,
+  "regions": {
+   "hero": 0,
+   "waves": [
+    0,
+    1
+   ],
+   "npc": {
+    "intro": 0,
+    "quiz": 1
+   },
+   "boss": 3
+  },
+  "walkable": {
+   "space": "world",
+   "x": 0.0,
+   "y": 0.16,
+   "w": 1.0,
+   "h": 0.79,
+   "rects": [
+    {
+     "x": 0.0,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.66,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    }
+   ]
+  },
+  "heroSpawn": {
+   "x": 0.06,
+   "y": 0.31
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.31,
+    "y": 0.23
+   },
+   {
+    "x": 0.38,
+    "y": 0.27
+   },
+   {
+    "x": 0.34,
+    "y": 0.33
+   },
+   {
+    "x": 0.41,
+    "y": 0.24
+   }
+  ],
+  "waveSpawns": [
+   [
+    {
+     "x": 0.31,
+     "y": 0.23
+    },
+    {
+     "x": 0.38,
+     "y": 0.27
+    },
+    {
+     "x": 0.34,
+     "y": 0.33
+    },
+    {
+     "x": 0.41,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.81,
+     "y": 0.23
+    },
+    {
+     "x": 0.88,
+     "y": 0.27
+    },
+    {
+     "x": 0.84,
+     "y": 0.33
+    },
+    {
+     "x": 0.91,
+     "y": 0.24
+    }
+   ]
+  ],
+  "orbSpawns": [
+   [
+    {
+     "x": 0.11,
+     "y": 0.25
+    },
+    {
+     "x": 0.16,
+     "y": 0.31
+    },
+    {
+     "x": 0.12,
+     "y": 0.37
+    },
+    {
+     "x": 0.18,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.61,
+     "y": 0.25
+    },
+    {
+     "x": 0.66,
+     "y": 0.31
+    },
+    {
+     "x": 0.62,
+     "y": 0.37
+    },
+    {
+     "x": 0.68,
+     "y": 0.24
+    }
+   ]
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "goldenhorn",
+    "nameZh": "金角大王",
+    "x": 0.08,
+    "y": 0.26
+   },
+   {
+    "role": "quiz",
+    "sprite": "goldenhorn",
+    "nameZh": "金角大王",
+    "x": 0.7,
+    "y": 0.39
+   }
+  ],
+  "bossSpot": {
+   "x": 0.94,
+   "y": 0.85
+  }
+ }
+}

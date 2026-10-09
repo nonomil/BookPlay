@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "comment": "combat-core v2 五属性环形克制：ring water→fire→light→earth→forest→water。strong=攻击下一环 ×1.3，weak=攻击上一环 ×0.75，其余（含同属性）×1.0；互为反向（A.strong=B ⟺ B.weak=A）。调平衡只改这里的系数与指向。手写源文件，生成器不得覆盖；改动后需同步 data/game/ 副本。",
+  "strongMult": 1.3,
+  "weakMult": 0.75,
+  "elements": {
+    "water": { "strong": "fire", "weak": "forest" },
+    "fire": { "strong": "light", "weak": "water" },
+    "light": { "strong": "earth", "weak": "fire" },
+    "earth": { "strong": "forest", "weak": "light" },
+    "forest": { "strong": "water", "weak": "earth" }
+  }
+}

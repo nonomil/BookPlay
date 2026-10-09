@@ -1,0 +1,2434 @@
+{
+  "schema_version": 1,
+  "episode": 25,
+  "title": {
+    "en": "Powerful Wind Magic",
+    "zh": "西游记 第25集"
+  },
+  "sources": [
+    {
+      "kind": "courseware_main_pptx",
+      "file": "G:\\Game\\BookPlay书戏\\data\\西游记课件\\3.3西游记  Journey to the West PPT课件\\025_Journey to the West 25_Powerful Wind Magic.pptx",
+      "sha256": "5af224a08a3704cbc84beb6a3a2deb9a21e0840e7310f3eff9daeb00e1c12fe1",
+      "pages": 20
+    },
+    {
+      "kind": "official_quiz_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+      "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929",
+      "pages": 131
+    },
+    {
+      "kind": "intensive_reader_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\02-西游记精读版台词本\\1、带标注版PDF 108集\\025 厉害的吹风术 上.pdf",
+      "sha256": "529f50531bc5bb890b30a7a0d603115fdccbf86a17026a75efaccf2251d5a3c6",
+      "pages": 4
+    },
+    {
+      "kind": "intensive_reader_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\02-西游记精读版台词本\\1、带标注版PDF 108集\\025 厉害的吹风术 下.pdf",
+      "sha256": "53e4b48e5c282e1ee4b2e1044bdc9bd5a40e06f97f51a14b3fb8c31bbc7d088a",
+      "pages": 4
+    },
+    {
+      "kind": "courseware_screenshots_pptx",
+      "file": "G:\\Game\\BookPlay书戏\\data\\西游记课件\\西游记-外教课动画截图\\Journey to the West 025  Powerful Wind Magic_20240106164325.pptx",
+      "sha256": "af6ecf65aa6066f6c6a7efe17497040a58df8dafca05afebc099308a96b6d657",
+      "pages": 53
+    }
+  ],
+  "cards": [
+    {
+      "card_id": "ep025-official-quiz-001",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 1,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "which is not true?",
+        "zh": "哪一项是不正确的？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "wukong went to find guanyin.",
+            "zh": "悟空去找观音。"
+          },
+          {
+            "id": "b",
+            "en": "bajie slept outside of the cave.",
+            "zh": "八戒睡在洞外。"
+          },
+          {
+            "id": "c",
+            "en": "yellow wind was causing trouble.",
+            "zh": "黄风正在制造麻烦。"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n030",
+            "quote": "\"The bodhisattva Lingji lives on Mount Sumeru. I will ask him for help—quickly!\""
+          },
+          {
+            "node_id": "n032",
+            "quote": "When he arrived on Mount Sumeru, Lingji came out of his pagoda."
+          },
+          {
+            "node_id": "n041",
+            "quote": "\"He's a weasel spirit. Buddha asked me to keep an eye on him. I told the spirit he could live on that mountain if he behaved.\""
+          },
+          {
+            "node_id": "n043",
+            "quote": "\"I guess he's not behaving anymore.\""
+          },
+          {
+            "node_id": "n068",
+            "quote": "The two of them went back out and found Bajie sleeping."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 29,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep025-official-quiz-002",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 2,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "how did wukong sneak into the cave?",
+        "zh": "悟空是如何溜进洞穴的？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "he turned into a mosquito.",
+            "zh": "他变成了一只蚊子。"
+          },
+          {
+            "id": "b",
+            "en": "he climbed in from the ground.",
+            "zh": "他从地面爬进去。"
+          },
+          {
+            "id": "c",
+            "en": "he made a hole in the wall.",
+            "zh": "他在墙上打了一个洞。"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n009",
+            "quote": "\"I'll sneak into the cave to see what I can find out.\""
+          },
+          {
+            "node_id": "n010",
+            "quote": "The monkey changed into a mosquito and squeezed through a crack in the cave's door."
+          },
+          {
+            "node_id": "n019",
+            "quote": "\"I turned myself into a mosquito.\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 29,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep025-official-quiz-003",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 3,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "who was the only one who could stop yellow wind?",
+        "zh": "谁是唯一能阻止黄风的人？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "lingji",
+            "zh": "灵机"
+          },
+          {
+            "id": "b",
+            "en": "guanyin",
+            "zh": "观音"
+          },
+          {
+            "id": "c",
+            "en": "bajie",
+            "zh": "八戒"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n028",
+            "quote": "\"Only the bodhisattva Lingji can stop my wind magic. Start a fire. We're having a feast tonight!\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 29,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep025-official-quiz-004",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 4,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "why did the tang monk have to be saved right away?",
+        "zh": "为什么唐僧必须立即被救？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "he was going to be eaten.",
+            "zh": "他将要被吃掉。"
+          },
+          {
+            "id": "b",
+            "en": "he was very sick.",
+            "zh": "他病得很重。"
+          },
+          {
+            "id": "c",
+            "en": "he was scared of mosquitoes.",
+            "zh": "他害怕蚊子。"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n005",
+            "quote": "\"We have to save the Tang Monk before the demon king eats him!\""
+          },
+          {
+            "node_id": "n028",
+            "quote": "\"Only the bodhisattva Lingji can stop my wind magic. Start a fire. We're having a feast tonight!\""
+          },
+          {
+            "node_id": "n045",
+            "quote": "\"They're going to eat the Tang Monk tonight!\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 29,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep025-official-quiz-005",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 5,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "what did lingji have in his hand?",
+        "zh": "灵机手里拿的是什么？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "the wind-stopping pearl",
+            "zh": "止风珠"
+          },
+          {
+            "id": "b",
+            "en": "an iron bar",
+            "zh": "一根铁棒"
+          },
+          {
+            "id": "c",
+            "en": "a yellow ball",
+            "zh": "一个黄色的球"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n058",
+            "quote": "The bodhisattva was holding a pearl in one hand."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 29,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep025-vocab-001",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 101,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "dark",
+        "zh": "黑暗"
+      },
+      "payload": {
+        "term": "dark",
+        "ipa": "dɑː (r)k",
+        "pos": "adj.",
+        "def": "adj.黑暗的 n.[sing.]黑暗",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "025 厉害的吹风术 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "529f50531bc5bb890b30a7a0d603115fdccbf86a17026a75efaccf2251d5a3c6"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep025-vocab-002",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 102,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "land",
+        "zh": "国家 v.降落,着陆"
+      },
+      "payload": {
+        "term": "land",
+        "ipa": "lænd",
+        "pos": "n.",
+        "def": "n.[U]大陆,土地 [C]国家 v.降落,着陆",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "025 厉害的吹风术 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "529f50531bc5bb890b30a7a0d603115fdccbf86a17026a75efaccf2251d5a3c6"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep025-vocab-003",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 103,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "shoulder",
+        "zh": "肩,肩膀"
+      },
+      "payload": {
+        "term": "shoulder",
+        "ipa": "ˈʃəʊldə(r)",
+        "pos": "n.",
+        "def": "n.[C]肩,肩膀",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "025 厉害的吹风术 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "529f50531bc5bb890b30a7a0d603115fdccbf86a17026a75efaccf2251d5a3c6"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep025-vocab-004",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 104,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "ask",
+        "zh": "v.请求,要求,询问"
+      },
+      "payload": {
+        "term": "ask",
+        "ipa": "ɑːsk",
+        "pos": "v.",
+        "def": "v.请求,要求,询问",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "025 厉害的吹风术 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "529f50531bc5bb890b30a7a0d603115fdccbf86a17026a75efaccf2251d5a3c6"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "025 厉害的吹风术 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "53e4b48e5c282e1ee4b2e1044bdc9bd5a40e06f97f51a14b3fb8c31bbc7d088a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep025-vocab-005",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 105,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "look",
+        "zh": "看,注视,外表,表情"
+      },
+      "payload": {
+        "term": "look",
+        "ipa": "lʊk",
+        "pos": "vi.",
+        "def": "vi.看 v.-link.看上去 n.[C]看,注视,外表,表情",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "025 厉害的吹风术 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "529f50531bc5bb890b30a7a0d603115fdccbf86a17026a75efaccf2251d5a3c6"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "025 厉害的吹风术 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "53e4b48e5c282e1ee4b2e1044bdc9bd5a40e06f97f51a14b3fb8c31bbc7d088a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep025-vocab-006",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 106,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "around",
+        "zh": "adv.在周围,大约,四处,掉头 prep.在......周围,到处"
+      },
+      "payload": {
+        "term": "around",
+        "ipa": "əˈraʊnd",
+        "pos": "adv.",
+        "def": "adv.在周围,大约,四处,掉头 prep.在......周围,到处",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "025 厉害的吹风术 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "529f50531bc5bb890b30a7a0d603115fdccbf86a17026a75efaccf2251d5a3c6"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep025-vocab-007",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 107,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "where",
+        "zh": "adv.在哪里,到哪里"
+      },
+      "payload": {
+        "term": "where",
+        "ipa": "weə(r)",
+        "pos": "adv.",
+        "def": "adv.在哪里,到哪里",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "025 厉害的吹风术 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "529f50531bc5bb890b30a7a0d603115fdccbf86a17026a75efaccf2251d5a3c6"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep025-vocab-008",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 108,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "be",
+        "zh": "v.-link是,存在 aux v.构成被动语态或进行时态"
+      },
+      "payload": {
+        "term": "be",
+        "ipa": "biː",
+        "pos": "v.",
+        "def": "v.-link是,存在 aux v.构成被动语态或进行时态",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "025 厉害的吹风术 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "529f50531bc5bb890b30a7a0d603115fdccbf86a17026a75efaccf2251d5a3c6"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep025-vocab-009",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 109,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "you",
+        "zh": "pron.你,你们"
+      },
+      "payload": {
+        "term": "you",
+        "ipa": "juː",
+        "pos": "pron.",
+        "def": "pron.你,你们",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "025 厉害的吹风术 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "529f50531bc5bb890b30a7a0d603115fdccbf86a17026a75efaccf2251d5a3c6"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep025-vocab-010",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 110,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "turn",
+        "zh": "轮流圈国"
+      },
+      "payload": {
+        "term": "turn",
+        "ipa": "tɜː (r)n",
+        "pos": "v.",
+        "def": "v.转向,翻圈v.-link.(使)变成 n.[C]轮流圈国",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "025 厉害的吹风术 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "529f50531bc5bb890b30a7a0d603115fdccbf86a17026a75efaccf2251d5a3c6"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "025 厉害的吹风术 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "53e4b48e5c282e1ee4b2e1044bdc9bd5a40e06f97f51a14b3fb8c31bbc7d088a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep025-vocab-011",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 111,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "stop",
+        "zh": "车站,停止 v.停止,阻止,逗留"
+      },
+      "payload": {
+        "term": "stop",
+        "ipa": "stɒp",
+        "pos": "n.",
+        "def": "n.[C]车站,停止 v.停止,阻止,逗留",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "025 厉害的吹风术 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "529f50531bc5bb890b30a7a0d603115fdccbf86a17026a75efaccf2251d5a3c6"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "025 厉害的吹风术 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "53e4b48e5c282e1ee4b2e1044bdc9bd5a40e06f97f51a14b3fb8c31bbc7d088a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep025-vocab-012",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 112,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "fly",
+        "zh": "苍蝇"
+      },
+      "payload": {
+        "term": "fly",
+        "ipa": "flaɪ",
+        "pos": "v.",
+        "def": "v.飞,驾驶(飞机等);乘飞机, (旗)飘扬 n.[C]苍蝇",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "025 厉害的吹风术 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "529f50531bc5bb890b30a7a0d603115fdccbf86a17026a75efaccf2251d5a3c6"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep025-vocab-013",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 113,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "arrive",
+        "zh": "vi.到达"
+      },
+      "payload": {
+        "term": "arrive",
+        "ipa": "əˈraɪv",
+        "pos": "vi.",
+        "def": "vi.到达",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "025 厉害的吹风术 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "529f50531bc5bb890b30a7a0d603115fdccbf86a17026a75efaccf2251d5a3c6"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep025-vocab-014",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 114,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "talk",
+        "zh": "n.说话,交谈,演讲 vi.说话,交谈"
+      },
+      "payload": {
+        "term": "talk",
+        "ipa": "tɔːk",
+        "pos": "n.",
+        "def": "n.说话,交谈,演讲 vi.说话,交谈",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "025 厉害的吹风术 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "529f50531bc5bb890b30a7a0d603115fdccbf86a17026a75efaccf2251d5a3c6"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep025-vocab-015",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 115,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "some",
+        "zh": "adj.一些,某些 pron.有些,有的,若干"
+      },
+      "payload": {
+        "term": "some",
+        "ipa": "sʌm",
+        "pos": "adj.",
+        "def": "adj.一些,某些 pron.有些,有的,若干",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "025 厉害的吹风术 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "529f50531bc5bb890b30a7a0d603115fdccbf86a17026a75efaccf2251d5a3c6"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep025-vocab-016",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 116,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "other",
+        "zh": "adj.另外的,其他的 pron.另外的人(或物) 来!”"
+      },
+      "payload": {
+        "term": "other",
+        "ipa": "ˈʌðə(r)",
+        "pos": "adj.",
+        "def": "adj.另外的,其他的 pron.另外的人(或物) 来!”",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "025 厉害的吹风术 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "529f50531bc5bb890b30a7a0d603115fdccbf86a17026a75efaccf2251d5a3c6"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep025-vocab-017",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 117,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "magic",
+        "zh": "魔术;魔法,魔力,魅力"
+      },
+      "payload": {
+        "term": "magic",
+        "ipa": "ˈmædʒɪk",
+        "pos": "adj.",
+        "def": "adj.有魔力的,有神奇力量的 n.[U]魔术;魔法,魔力,魅力",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "025 厉害的吹风术 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "529f50531bc5bb890b30a7a0d603115fdccbf86a17026a75efaccf2251d5a3c6"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep025-vocab-018",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 118,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "help",
+        "zh": "有帮助的 人或物 v.帮助,援助"
+      },
+      "payload": {
+        "term": "help",
+        "ipa": "help",
+        "pos": "n.",
+        "def": "n.[U]帮助,援助[sing.]有帮助的 人或物 v.帮助,援助",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "025 厉害的吹风术 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "529f50531bc5bb890b30a7a0d603115fdccbf86a17026a75efaccf2251d5a3c6"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep025-vocab-019",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 119,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "cloud",
+        "zh": "云,云朵"
+      },
+      "payload": {
+        "term": "cloud",
+        "ipa": "klaʊd",
+        "pos": "n.",
+        "def": "n.[C,U]云,云朵",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "025 厉害的吹风术 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "529f50531bc5bb890b30a7a0d603115fdccbf86a17026a75efaccf2251d5a3c6"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep025-vocab-020",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 120,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "race",
+        "zh": "竞赛 v.快速移动,比赛"
+      },
+      "payload": {
+        "term": "race",
+        "ipa": "reɪs",
+        "pos": "n.",
+        "def": "n.[C]竞赛 v.快速移动,比赛",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "025 厉害的吹风术 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "529f50531bc5bb890b30a7a0d603115fdccbf86a17026a75efaccf2251d5a3c6"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep025-vocab-021",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 121,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "sky",
+        "zh": "天空"
+      },
+      "payload": {
+        "term": "sky",
+        "ipa": "skaɪ",
+        "pos": "n.",
+        "def": "n.[C,U]天空",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          2,
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "025 厉害的吹风术 上.pdf",
+          "half": "up",
+          "pages": [
+            2,
+            3
+          ],
+          "sha256": "529f50531bc5bb890b30a7a0d603115fdccbf86a17026a75efaccf2251d5a3c6"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "025 厉害的吹风术 下.pdf",
+          "half": "down",
+          "pages": [
+            2,
+            3
+          ],
+          "sha256": "53e4b48e5c282e1ee4b2e1044bdc9bd5a40e06f97f51a14b3fb8c31bbc7d088a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep025-vocab-022",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 122,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "nice",
+        "zh": "adj.令人愉快的,宜人的,友好的"
+      },
+      "payload": {
+        "term": "nice",
+        "ipa": "naɪs",
+        "pos": "adj.",
+        "def": "adj.令人愉快的,宜人的,友好的",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "025 厉害的吹风术 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "529f50531bc5bb890b30a7a0d603115fdccbf86a17026a75efaccf2251d5a3c6"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep025-vocab-023",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 123,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "see",
+        "zh": "v.理解,明白,观看,会见,看 见,送别,确保"
+      },
+      "payload": {
+        "term": "see",
+        "ipa": "siː",
+        "pos": "v.",
+        "def": "v.理解,明白,观看,会见,看 见,送别,确保",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "025 厉害的吹风术 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "529f50531bc5bb890b30a7a0d603115fdccbf86a17026a75efaccf2251d5a3c6"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep025-vocab-024",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 124,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "tea",
+        "zh": "茶"
+      },
+      "payload": {
+        "term": "tea",
+        "ipa": "tiː",
+        "pos": "n.",
+        "def": "茶",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ],
+        "gloss": "茶"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "025 厉害的吹风术 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "529f50531bc5bb890b30a7a0d603115fdccbf86a17026a75efaccf2251d5a3c6"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep025-vocab-025",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 125,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "tonight",
+        "zh": "(在)今晚,(在)今 夜"
+      },
+      "payload": {
+        "term": "tonight",
+        "ipa": "təˈnaɪt",
+        "pos": "adv.",
+        "def": "adv./n.[U](在)今晚,(在)今 夜",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "025 厉害的吹风术 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "53e4b48e5c282e1ee4b2e1044bdc9bd5a40e06f97f51a14b3fb8c31bbc7d088a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep025-vocab-026",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 126,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "object",
+        "zh": "物体,物品,宾语"
+      },
+      "payload": {
+        "term": "object",
+        "ipa": "ˈɒbdʒɪkt",
+        "pos": "n.",
+        "def": "n.[C]物体,物品,宾语",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "025 厉害的吹风术 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "53e4b48e5c282e1ee4b2e1044bdc9bd5a40e06f97f51a14b3fb8c31bbc7d088a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep025-vocab-027",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 127,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "knock",
+        "zh": "敲击声,敲击"
+      },
+      "payload": {
+        "term": "knock",
+        "ipa": "nɒk",
+        "pos": "v.",
+        "def": "v.敲,击,撞 n.[C]敲击声,敲击",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "025 厉害的吹风术 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "53e4b48e5c282e1ee4b2e1044bdc9bd5a40e06f97f51a14b3fb8c31bbc7d088a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep025-vocab-028",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 128,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "rest",
+        "zh": "剩余部分"
+      },
+      "payload": {
+        "term": "rest",
+        "ipa": "rest",
+        "pos": "v.",
+        "def": "v./n.[C,U]休息 n.[sing.]剩余部分",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "025 厉害的吹风术 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "53e4b48e5c282e1ee4b2e1044bdc9bd5a40e06f97f51a14b3fb8c31bbc7d088a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep025-vocab-029",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 129,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "door",
+        "zh": "门"
+      },
+      "payload": {
+        "term": "door",
+        "ipa": "dɔː(r)",
+        "pos": "n.",
+        "def": "n.[C]门",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "025 厉害的吹风术 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "53e4b48e5c282e1ee4b2e1044bdc9bd5a40e06f97f51a14b3fb8c31bbc7d088a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep025-vocab-030",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 130,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "rush",
+        "zh": "迅速移动,仓促,急 促"
+      },
+      "payload": {
+        "term": "rush",
+        "ipa": "rʌʃ",
+        "pos": "v.",
+        "def": "v./n.[sing.]迅速移动,仓促,急 促",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "025 厉害的吹风术 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "53e4b48e5c282e1ee4b2e1044bdc9bd5a40e06f97f51a14b3fb8c31bbc7d088a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep025-vocab-031",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 131,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "say",
+        "zh": "v.说,讲"
+      },
+      "payload": {
+        "term": "say",
+        "ipa": "seɪ",
+        "pos": "v.",
+        "def": "v.说,讲",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "025 厉害的吹风术 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "53e4b48e5c282e1ee4b2e1044bdc9bd5a40e06f97f51a14b3fb8c31bbc7d088a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep025-vocab-032",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 132,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "wind",
+        "zh": "风"
+      },
+      "payload": {
+        "term": "wind",
+        "ipa": "wɪnd",
+        "pos": "n.",
+        "def": "n.[C,U]风",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "025 厉害的吹风术 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "53e4b48e5c282e1ee4b2e1044bdc9bd5a40e06f97f51a14b3fb8c31bbc7d088a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep025-vocab-033",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 133,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "cry",
+        "zh": "叫喊"
+      },
+      "payload": {
+        "term": "cry",
+        "ipa": "kraɪ",
+        "pos": "v.",
+        "def": "v./n.[sing.]哭 [C]叫喊",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "025 厉害的吹风术 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "53e4b48e5c282e1ee4b2e1044bdc9bd5a40e06f97f51a14b3fb8c31bbc7d088a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep025-vocab-034",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 134,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "run",
+        "zh": "跑,跑步"
+      },
+      "payload": {
+        "term": "run",
+        "ipa": "rʌn",
+        "pos": "vi.",
+        "def": "vi.跑,奔 vt.经营 n.[C]跑,跑步",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "025 厉害的吹风术 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "53e4b48e5c282e1ee4b2e1044bdc9bd5a40e06f97f51a14b3fb8c31bbc7d088a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep025-vocab-035",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 135,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "throw",
+        "zh": "v.扔,掷"
+      },
+      "payload": {
+        "term": "throw",
+        "ipa": "θrəʊ",
+        "pos": "v.",
+        "def": "v.扔,掷",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "025 厉害的吹风术 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "53e4b48e5c282e1ee4b2e1044bdc9bd5a40e06f97f51a14b3fb8c31bbc7d088a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep025-vocab-036",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 136,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "against",
+        "zh": "prep.倚,碰,撞,违反,反对"
+      },
+      "payload": {
+        "term": "against",
+        "ipa": "əˈɡenst",
+        "pos": "prep.",
+        "def": "prep.倚,碰,撞,违反,反对",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "025 厉害的吹风术 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "53e4b48e5c282e1ee4b2e1044bdc9bd5a40e06f97f51a14b3fb8c31bbc7d088a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep025-vocab-037",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 137,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "rock",
+        "zh": "摇滚乐"
+      },
+      "payload": {
+        "term": "rock",
+        "ipa": "rɒk",
+        "pos": "n.",
+        "def": "n.[C,U]岩石[U]摇滚乐",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "025 厉害的吹风术 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "53e4b48e5c282e1ee4b2e1044bdc9bd5a40e06f97f51a14b3fb8c31bbc7d088a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep025-vocab-038",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 138,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "smoke",
+        "zh": "吸烟"
+      },
+      "payload": {
+        "term": "smoke",
+        "ipa": "sməʊk",
+        "pos": "",
+        "def": "运!” v.吸烟,冒烟 n.[C]烟[C]吸烟",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "025 厉害的吹风术 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "53e4b48e5c282e1ee4b2e1044bdc9bd5a40e06f97f51a14b3fb8c31bbc7d088a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep025-vocab-039",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 139,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "yellow",
+        "zh": "黄色(的)"
+      },
+      "payload": {
+        "term": "yellow",
+        "ipa": "ˈjeləʊ",
+        "pos": "adj.",
+        "def": "adj./n.[C,U]黄色(的)",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "025 厉害的吹风术 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "53e4b48e5c282e1ee4b2e1044bdc9bd5a40e06f97f51a14b3fb8c31bbc7d088a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep025-vocab-040",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 140,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "punish",
+        "zh": "vt.处罚,惩罚"
+      },
+      "payload": {
+        "term": "punish",
+        "ipa": "ˈpʌnɪʃ",
+        "pos": "vt.",
+        "def": "vt.处罚,惩罚",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "025 厉害的吹风术 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "53e4b48e5c282e1ee4b2e1044bdc9bd5a40e06f97f51a14b3fb8c31bbc7d088a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep025-vocab-041",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 141,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "luck",
+        "zh": "幸运,运气"
+      },
+      "payload": {
+        "term": "luck",
+        "ipa": "lʌk",
+        "pos": "n.",
+        "def": "n.[U]幸运,运气",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "025 厉害的吹风术 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "53e4b48e5c282e1ee4b2e1044bdc9bd5a40e06f97f51a14b3fb8c31bbc7d088a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep025-vocab-042",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 142,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "back",
+        "zh": "后面,背部 adj.后面的 adv.回原处,向后地"
+      },
+      "payload": {
+        "term": "back",
+        "ipa": "bæk",
+        "pos": "n.",
+        "def": "n.[C]后面,背部 adj.后面的 adv.回原处,向后地",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "025 厉害的吹风术 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "53e4b48e5c282e1ee4b2e1044bdc9bd5a40e06f97f51a14b3fb8c31bbc7d088a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep025-vocab-043",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 143,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "find",
+        "zh": "vt.找到,发现,查找,查明"
+      },
+      "payload": {
+        "term": "find",
+        "ipa": "faɪnd",
+        "pos": "vt.",
+        "def": "vt.找到,发现,查找,查明",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "025 厉害的吹风术 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "53e4b48e5c282e1ee4b2e1044bdc9bd5a40e06f97f51a14b3fb8c31bbc7d088a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep025-vocab-044",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 144,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "sleep",
+        "zh": "一觉"
+      },
+      "payload": {
+        "term": "sleep",
+        "ipa": "sliː p",
+        "pos": "vi.",
+        "def": "vi./n.[U]睡觉[sing.]一觉",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "025 厉害的吹风术 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "53e4b48e5c282e1ee4b2e1044bdc9bd5a40e06f97f51a14b3fb8c31bbc7d088a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep025-vocab-045",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 145,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "wake",
+        "zh": "v.弄醒,醒 n.(常构成搭配)"
+      },
+      "payload": {
+        "term": "wake",
+        "ipa": "weɪk",
+        "pos": "v.",
+        "def": "v.弄醒,醒 n.(常构成搭配)",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "025 厉害的吹风术 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "53e4b48e5c282e1ee4b2e1044bdc9bd5a40e06f97f51a14b3fb8c31bbc7d088a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep025-vocab-046",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 146,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "lazy",
+        "zh": "adj.懒散的,懒惰的"
+      },
+      "payload": {
+        "term": "lazy",
+        "ipa": "ˈleɪzi",
+        "pos": "adj.",
+        "def": "adj.懒散的,懒惰的",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "025 厉害的吹风术 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "53e4b48e5c282e1ee4b2e1044bdc9bd5a40e06f97f51a14b3fb8c31bbc7d088a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep025-vocab-047",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 147,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "shout",
+        "zh": "呼喊,叫喊"
+      },
+      "payload": {
+        "term": "shout",
+        "ipa": "ʃaʊt",
+        "pos": "v.",
+        "def": "v.呼叫,喊叫 n.[C]呼喊,叫喊",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "025 厉害的吹风术 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "53e4b48e5c282e1ee4b2e1044bdc9bd5a40e06f97f51a14b3fb8c31bbc7d088a"
+        }
+      ],
+      "review_status": "machine_verified"
+    }
+  ],
+  "teacher_guide": null,
+  "review": {
+    "status": "draft",
+    "reviewed_at": null,
+    "card_stats": {
+      "total": 52,
+      "sentence_choice": 5,
+      "word_review": 47,
+      "machine_verified": 49,
+      "assistant_reviewed": 3,
+      "verified": 52,
+      "needs_review": 0
+    }
+  },
+  "generated_at": "2026-08-31T04:49:37.922891+00:00"
+}

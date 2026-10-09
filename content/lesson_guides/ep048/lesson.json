@@ -1,0 +1,2788 @@
+{
+  "schema_version": 1,
+  "episode": 48,
+  "title": {
+    "en": "The Scared Boy",
+    "zh": "西游记 第48集"
+  },
+  "sources": [
+    {
+      "kind": "courseware_main_pptx",
+      "file": "G:\\Game\\BookPlay书戏\\data\\西游记课件\\3.3西游记  Journey to the West PPT课件\\048_Journey to the West 48_The Scared Boy.pptx",
+      "sha256": "86068037c5966c37a79f66c178312a74d5d01c8b7f477f52c45b907298ab8195",
+      "pages": 20
+    },
+    {
+      "kind": "official_quiz_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+      "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929",
+      "pages": 131
+    },
+    {
+      "kind": "intensive_reader_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\02-西游记精读版台词本\\1、带标注版PDF 108集\\048 受伤的男孩 上.pdf",
+      "sha256": "b6642e70a34fe3573888d7d342bf524b1869ff0c96be2ddf301d78031f47f6a5",
+      "pages": 4
+    },
+    {
+      "kind": "intensive_reader_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\02-西游记精读版台词本\\1、带标注版PDF 108集\\048 受伤的男孩 下.pdf",
+      "sha256": "98417c757139aadb7591133816d18b65119359fcc957d3ed9e99ff5dad31eec6",
+      "pages": 4
+    },
+    {
+      "kind": "courseware_screenshots_pptx",
+      "file": "G:\\Game\\BookPlay书戏\\data\\西游记课件\\西游记-外教课动画截图\\Journey to the West 048  The Scared Boy_20240114105635.pptx",
+      "sha256": "4652f48723a8cf79b27aaca13254fdbbacf7eabcd211ffc1bc7dbc867be67f39",
+      "pages": 48
+    }
+  ],
+  "cards": [
+    {
+      "card_id": "ep048-official-quiz-001",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 1,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "which is true?",
+        "zh": "哪一个是真的？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "bajie realized the boy was a demon.",
+            "zh": "八戒意识到那个男孩是个妖怪。"
+          },
+          {
+            "id": "b",
+            "en": "wujing carried the boy on his back.",
+            "zh": "悟净背着那个男孩。"
+          },
+          {
+            "id": "c",
+            "en": "wukong walked ahead of everyone.",
+            "zh": "悟空走在所有人前面。"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n041",
+            "quote": "The group continued west, with Wukong carrying the boy on his back."
+          },
+          {
+            "node_id": "n042",
+            "quote": "The monkey walked slowly, and soon his companions were far ahead."
+          },
+          {
+            "node_id": "n063",
+            "quote": "Wukong looked frantically around. \"Where's Master?\""
+          },
+          {
+            "node_id": "n064",
+            "quote": "\"Oh no!\" cried Bajie."
+          },
+          {
+            "node_id": "n065",
+            "quote": "\"That boy <font color=\"#ffff00\"><i>was</i></font> a demon. He kidnapped Master!\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 57,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep048-official-quiz-002",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 2,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "why did wukong think there was a demon ahead?",
+        "zh": "为什么悟空认为前面有妖怪？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "because of the red cloud",
+            "zh": "因为那片红云"
+          },
+          {
+            "id": "b",
+            "en": "because of the strong wind",
+            "zh": "因为大风"
+          },
+          {
+            "id": "c",
+            "en": "because of the robbers",
+            "zh": "因为强盗"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n001",
+            "quote": "Wukong stared at the mountains."
+          },
+          {
+            "node_id": "n002",
+            "quote": "\"A red cloud keeps appearing over those mountains,\" he said."
+          },
+          {
+            "node_id": "n003",
+            "quote": "\"There must be a demon ahead.\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 57,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep048-official-quiz-003",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 3,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "what was the demon's disguise?",
+        "zh": "恶魔的伪装是什么？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "a little boy",
+            "zh": "一个小男孩"
+          },
+          {
+            "id": "b",
+            "en": "a monk",
+            "zh": "一名僧侣"
+          },
+          {
+            "id": "c",
+            "en": "a robber",
+            "zh": "一个抢劫犯"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n013",
+            "quote": "\"Uh-oh. The monk's companions have their weapons out. They probably saw my red cloud. I'll have to trick them with a disguise.\""
+          },
+          {
+            "node_id": "n014",
+            "quote": "The demon made himself look like a scared little boy."
+          },
+          {
+            "node_id": "n015",
+            "quote": "Then he went down to the road, sat alongside it, and waited."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 57,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep048-official-quiz-004",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 4,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "what did wukong hear through the dust?",
+        "zh": "悟空从尘土中听到了什么？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "screams",
+            "zh": "尖叫"
+          },
+          {
+            "id": "b",
+            "en": "songs",
+            "zh": "歌曲"
+          },
+          {
+            "id": "c",
+            "en": "laughter",
+            "zh": "笑声"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n057",
+            "quote": "Wukong heard screams and rushed ahead to find his friends."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 57,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep048-official-quiz-005",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 5,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "what happened to the tang monk?",
+        "zh": "唐僧发生了什么事？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "he was kidnapped.",
+            "zh": "他被绑架了。"
+          },
+          {
+            "id": "b",
+            "en": "his leg was injured.",
+            "zh": "他的腿受伤了。"
+          },
+          {
+            "id": "c",
+            "en": "he fell off the cliff.",
+            "zh": "他从悬崖上掉了下来。"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n063",
+            "quote": "Wukong looked frantically around. \"Where's Master?\""
+          },
+          {
+            "node_id": "n064",
+            "quote": "\"Oh no!\" cried Bajie."
+          },
+          {
+            "node_id": "n065",
+            "quote": "\"That boy <font color=\"#ffff00\"><i>was</i></font> a demon. He kidnapped Master!\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 57,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep048-vocab-001",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 101,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "mountain",
+        "zh": "高山"
+      },
+      "payload": {
+        "term": "mountain",
+        "ipa": "ˈmaʊntən",
+        "pos": "n.",
+        "def": "n.[C]高山",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "048 受伤的男孩 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "b6642e70a34fe3573888d7d342bf524b1869ff0c96be2ddf301d78031f47f6a5"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep048-vocab-002",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 102,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "cloud",
+        "zh": "云,云朵"
+      },
+      "payload": {
+        "term": "cloud",
+        "ipa": "klaʊd",
+        "pos": "n.",
+        "def": "n.[C,U]云,云朵",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "048 受伤的男孩 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "b6642e70a34fe3573888d7d342bf524b1869ff0c96be2ddf301d78031f47f6a5"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep048-vocab-003",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 103,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "ahead",
+        "zh": "adv.向前面,在前面,预先"
+      },
+      "payload": {
+        "term": "ahead",
+        "ipa": "əˈhed",
+        "pos": "adv.",
+        "def": "adv.向前面,在前面,预先",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          1,
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "048 受伤的男孩 上.pdf",
+          "half": "up",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "b6642e70a34fe3573888d7d342bf524b1869ff0c96be2ddf301d78031f47f6a5"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "048 受伤的男孩 下.pdf",
+          "half": "down",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "98417c757139aadb7591133816d18b65119359fcc957d3ed9e99ff5dad31eec6"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep048-vocab-004",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 104,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "road",
+        "zh": "路"
+      },
+      "payload": {
+        "term": "road",
+        "ipa": "rəʊd",
+        "pos": "n.",
+        "def": "n.[C]路",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          1,
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "048 受伤的男孩 上.pdf",
+          "half": "up",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "b6642e70a34fe3573888d7d342bf524b1869ff0c96be2ddf301d78031f47f6a5"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "048 受伤的男孩 下.pdf",
+          "half": "down",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "98417c757139aadb7591133816d18b65119359fcc957d3ed9e99ff5dad31eec6"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep048-vocab-005",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 105,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "careful",
+        "zh": "adj.小心的,细致的,精心的,慎 重的"
+      },
+      "payload": {
+        "term": "careful",
+        "ipa": "ˈkeəfl",
+        "pos": "adj.",
+        "def": "adj.小心的,细致的,精心的,慎 重的",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "048 受伤的男孩 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "b6642e70a34fe3573888d7d342bf524b1869ff0c96be2ddf301d78031f47f6a5"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep048-vocab-006",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 106,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "eat",
+        "zh": "v.吃"
+      },
+      "payload": {
+        "term": "eat",
+        "ipa": "iːt",
+        "pos": "v.",
+        "def": "v.吃",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "048 受伤的男孩 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "b6642e70a34fe3573888d7d342bf524b1869ff0c96be2ddf301d78031f47f6a5"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep048-vocab-007",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 107,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "live[lɪv] [laɪv]",
+        "zh": "v.居住,生活 adj.活的,生动的,现场直播的"
+      },
+      "payload": {
+        "term": "live[lɪv] [laɪv]",
+        "ipa": "",
+        "pos": "v.",
+        "def": "v.居住,生活 adj.活的,生动的,现场直播的",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "048 受伤的男孩 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "b6642e70a34fe3573888d7d342bf524b1869ff0c96be2ddf301d78031f47f6a5"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep048-vocab-008",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 108,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "little",
+        "zh": "小的"
+      },
+      "payload": {
+        "term": "little",
+        "ipa": "ˈlɪtl",
+        "pos": "adj.",
+        "def": "小的",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ],
+        "gloss": "小的"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "048 受伤的男孩 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "b6642e70a34fe3573888d7d342bf524b1869ff0c96be2ddf301d78031f47f6a5"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep048-vocab-009",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 109,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "wait",
+        "zh": "v.等待,等候"
+      },
+      "payload": {
+        "term": "wait",
+        "ipa": "weɪt",
+        "pos": "v.",
+        "def": "v.等待,等候",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "048 受伤的男孩 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "b6642e70a34fe3573888d7d342bf524b1869ff0c96be2ddf301d78031f47f6a5"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep048-vocab-010",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 110,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "see",
+        "zh": "v.理解,明白,观看,会见,看 见,送别,确保"
+      },
+      "payload": {
+        "term": "see",
+        "ipa": "siː",
+        "pos": "v.",
+        "def": "v.理解,明白,观看,会见,看 见,送别,确保",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "048 受伤的男孩 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "b6642e70a34fe3573888d7d342bf524b1869ff0c96be2ddf301d78031f47f6a5"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep048-vocab-011",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 111,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "horse",
+        "zh": "马"
+      },
+      "payload": {
+        "term": "horse",
+        "ipa": "hɔː(r)s",
+        "pos": "n.",
+        "def": "n.[C]马",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "048 受伤的男孩 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "b6642e70a34fe3573888d7d342bf524b1869ff0c96be2ddf301d78031f47f6a5"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep048-vocab-012",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 112,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "warn",
+        "zh": "v.警告,告诫"
+      },
+      "payload": {
+        "term": "warn",
+        "ipa": "wɔː (r)n",
+        "pos": "v.",
+        "def": "v.警告,告诫",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "048 受伤的男孩 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "b6642e70a34fe3573888d7d342bf524b1869ff0c96be2ddf301d78031f47f6a5"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep048-vocab-013",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 113,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "wrong",
+        "zh": "罪恶,欺骗"
+      },
+      "payload": {
+        "term": "wrong",
+        "ipa": "rɒŋ",
+        "pos": "",
+        "def": "dj.有毛病的,错误的 adv.错误地 vt.误会,不公平对待 n.[C]不义行为[C]罪恶,欺骗",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "048 受伤的男孩 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "b6642e70a34fe3573888d7d342bf524b1869ff0c96be2ddf301d78031f47f6a5"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep048-vocab-014",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 114,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "help",
+        "zh": "有帮助的 人或物 v.帮助,援助"
+      },
+      "payload": {
+        "term": "help",
+        "ipa": "help",
+        "pos": "n.",
+        "def": "n.[U]帮助,援助[sing.]有帮助的 人或物 v.帮助,援助",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "048 受伤的男孩 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "b6642e70a34fe3573888d7d342bf524b1869ff0c96be2ddf301d78031f47f6a5"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep048-vocab-015",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 115,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "boy",
+        "zh": "男孩,儿子"
+      },
+      "payload": {
+        "term": "boy",
+        "ipa": "bɔɪ",
+        "pos": "n.",
+        "def": "n.[C]男孩,儿子",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "048 受伤的男孩 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "b6642e70a34fe3573888d7d342bf524b1869ff0c96be2ddf301d78031f47f6a5"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep048-vocab-016",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 116,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "look",
+        "zh": "看,注视,外表,表情"
+      },
+      "payload": {
+        "term": "look",
+        "ipa": "lʊk",
+        "pos": "vi.",
+        "def": "vi.看 v.-link.看上去 n.[C]看,注视,外表,表情",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "048 受伤的男孩 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "b6642e70a34fe3573888d7d342bf524b1869ff0c96be2ddf301d78031f47f6a5"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep048-vocab-017",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 117,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "fool",
+        "zh": "蠢人,傻瓜 vt.愚弄"
+      },
+      "payload": {
+        "term": "fool",
+        "ipa": "fuː l",
+        "pos": "n.",
+        "def": "n.[C]蠢人,傻瓜 vt.愚弄",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "048 受伤的男孩 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "b6642e70a34fe3573888d7d342bf524b1869ff0c96be2ddf301d78031f47f6a5"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep048-vocab-018",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 118,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "again",
+        "zh": "adv.再一次,又一次"
+      },
+      "payload": {
+        "term": "again",
+        "ipa": "əˈɡen",
+        "pos": "adv.",
+        "def": "adv.再一次,又一次",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "048 受伤的男孩 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "b6642e70a34fe3573888d7d342bf524b1869ff0c96be2ddf301d78031f47f6a5"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep048-vocab-019",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 119,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "believe",
+        "zh": "v.相信,认为有可能"
+      },
+      "payload": {
+        "term": "believe",
+        "ipa": "bɪˈliːv",
+        "pos": "v.",
+        "def": "v.相信,认为有可能",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "048 受伤的男孩 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "b6642e70a34fe3573888d7d342bf524b1869ff0c96be2ddf301d78031f47f6a5"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep048-vocab-020",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 120,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "quiet",
+        "zh": "宁静,安静"
+      },
+      "payload": {
+        "term": "quiet",
+        "ipa": "ˈkwaɪət",
+        "pos": "adj.",
+        "def": "adj.安静的 n.[U]宁静,安静",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "048 受伤的男孩 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "b6642e70a34fe3573888d7d342bf524b1869ff0c96be2ddf301d78031f47f6a5"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep048-vocab-021",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 121,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "angry",
+        "zh": "adj.发怒的,愤怒的,生气的"
+      },
+      "payload": {
+        "term": "angry",
+        "ipa": "ˈæŋɡri",
+        "pos": "adj.",
+        "def": "adj.发怒的,愤怒的,生气的",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "048 受伤的男孩 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "b6642e70a34fe3573888d7d342bf524b1869ff0c96be2ddf301d78031f47f6a5"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep048-vocab-022",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 122,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "another",
+        "zh": "adj./pron.另一,又一"
+      },
+      "payload": {
+        "term": "another",
+        "ipa": "əˈnʌðə(r)",
+        "pos": "adj.",
+        "def": "adj./pron.另一,又一",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "048 受伤的男孩 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "b6642e70a34fe3573888d7d342bf524b1869ff0c96be2ddf301d78031f47f6a5"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep048-vocab-023",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 123,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "word",
+        "zh": "单词,词"
+      },
+      "payload": {
+        "term": "word",
+        "ipa": "wɜːd",
+        "pos": "n.",
+        "def": "n.[C]单词,词",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "048 受伤的男孩 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "b6642e70a34fe3573888d7d342bf524b1869ff0c96be2ddf301d78031f47f6a5"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep048-vocab-024",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 124,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "stand",
+        "zh": "v.忍受,站立"
+      },
+      "payload": {
+        "term": "stand",
+        "ipa": "stænd",
+        "pos": "v.",
+        "def": "v.忍受,站立",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "048 受伤的男孩 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "b6642e70a34fe3573888d7d342bf524b1869ff0c96be2ddf301d78031f47f6a5"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep048-vocab-025",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 125,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "walk",
+        "zh": "步行的路径"
+      },
+      "payload": {
+        "term": "walk",
+        "ipa": "wɔː k",
+        "pos": "n.",
+        "def": "n.[C]行走,步行 v.行走,步行 n.[C]步行的路径",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          1,
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "048 受伤的男孩 上.pdf",
+          "half": "up",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "b6642e70a34fe3573888d7d342bf524b1869ff0c96be2ddf301d78031f47f6a5"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "048 受伤的男孩 下.pdf",
+          "half": "down",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "98417c757139aadb7591133816d18b65119359fcc957d3ed9e99ff5dad31eec6"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep048-vocab-026",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 126,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "shake",
+        "zh": "摇动,抖动,奶昔"
+      },
+      "payload": {
+        "term": "shake",
+        "ipa": "ʃeɪk",
+        "pos": "v.",
+        "def": "v.摇动,抖动,(与某人)握手, 发抖 n.[C]摇动,抖动,奶昔",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "048 受伤的男孩 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "b6642e70a34fe3573888d7d342bf524b1869ff0c96be2ddf301d78031f47f6a5"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep048-vocab-027",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 127,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "carry",
+        "zh": "vt.拿,提,扛,运送,传送,承 载"
+      },
+      "payload": {
+        "term": "carry",
+        "ipa": "ˈkæri",
+        "pos": "vt.",
+        "def": "vt.拿,提,扛,运送,传送,承 载",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          1,
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "048 受伤的男孩 上.pdf",
+          "half": "up",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "b6642e70a34fe3573888d7d342bf524b1869ff0c96be2ddf301d78031f47f6a5"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "048 受伤的男孩 下.pdf",
+          "half": "down",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "98417c757139aadb7591133816d18b65119359fcc957d3ed9e99ff5dad31eec6"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep048-vocab-028",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 128,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "mean",
+        "zh": "刻薄"
+      },
+      "payload": {
+        "term": "mean",
+        "ipa": "miːn",
+        "pos": "vt.",
+        "def": "刻薄",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ],
+        "gloss": "刻薄"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "048 受伤的男孩 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "b6642e70a34fe3573888d7d342bf524b1869ff0c96be2ddf301d78031f47f6a5"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep048-vocab-029",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 129,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "group",
+        "zh": "组,群 vt.把......分组/归类,聚集"
+      },
+      "payload": {
+        "term": "group",
+        "ipa": "ɡruːp",
+        "pos": "n.",
+        "def": "n.[C]组,群 vt.把......分组/归类,聚集",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "048 受伤的男孩 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "98417c757139aadb7591133816d18b65119359fcc957d3ed9e99ff5dad31eec6"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep048-vocab-030",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 130,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "continue",
+        "zh": "v.持续,继续做"
+      },
+      "payload": {
+        "term": "continue",
+        "ipa": "kənˈtɪnjuː",
+        "pos": "v.",
+        "def": "v.持续,继续做",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "048 受伤的男孩 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "98417c757139aadb7591133816d18b65119359fcc957d3ed9e99ff5dad31eec6"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep048-vocab-031",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 131,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "monkey",
+        "zh": "猴子"
+      },
+      "payload": {
+        "term": "monkey",
+        "ipa": "ˈmʌŋki",
+        "pos": "n.",
+        "def": "n.[C]猴子",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "048 受伤的男孩 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "98417c757139aadb7591133816d18b65119359fcc957d3ed9e99ff5dad31eec6"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep048-vocab-032",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 132,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "slow",
+        "zh": "adj.缓慢的 v.(使)减缓"
+      },
+      "payload": {
+        "term": "slow",
+        "ipa": "sləʊ",
+        "pos": "adj.",
+        "def": "adj.缓慢的 v.(使)减缓",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "048 受伤的男孩 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "98417c757139aadb7591133816d18b65119359fcc957d3ed9e99ff5dad31eec6"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep048-vocab-033",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 133,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "know",
+        "zh": "v.知道,了解"
+      },
+      "payload": {
+        "term": "know",
+        "ipa": "nəʊ",
+        "pos": "v.",
+        "def": "v.知道,了解",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "048 受伤的男孩 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "98417c757139aadb7591133816d18b65119359fcc957d3ed9e99ff5dad31eec6"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep048-vocab-034",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 134,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "talk",
+        "zh": "n.说话,交谈,演讲 vi.说话,交谈"
+      },
+      "payload": {
+        "term": "talk",
+        "ipa": "tɔːk",
+        "pos": "n.",
+        "def": "n.说话,交谈,演讲 vi.说话,交谈",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "048 受伤的男孩 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "98417c757139aadb7591133816d18b65119359fcc957d3ed9e99ff5dad31eec6"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep048-vocab-035",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 135,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "blow",
+        "zh": "v.吹,刮;炸开"
+      },
+      "payload": {
+        "term": "blow",
+        "ipa": "bləʊ",
+        "pos": "v.",
+        "def": "v.吹,刮;炸开",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "048 受伤的男孩 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "98417c757139aadb7591133816d18b65119359fcc957d3ed9e99ff5dad31eec6"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep048-vocab-036",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 136,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "knock",
+        "zh": "敲击声,敲击"
+      },
+      "payload": {
+        "term": "knock",
+        "ipa": "nɒk",
+        "pos": "v.",
+        "def": "v.敲,击,撞 n.[C]敲击声,敲击",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "048 受伤的男孩 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "98417c757139aadb7591133816d18b65119359fcc957d3ed9e99ff5dad31eec6"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep048-vocab-037",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 137,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "over",
+        "zh": "在上方；超过"
+      },
+      "payload": {
+        "term": "over",
+        "ipa": "ˈəʊvə®",
+        "pos": "prep.",
+        "def": "在上方；超过",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ],
+        "gloss": "在上方；超过"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "048 受伤的男孩 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "98417c757139aadb7591133816d18b65119359fcc957d3ed9e99ff5dad31eec6"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep048-vocab-038",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 138,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "laugh",
+        "zh": "v.笑,发笑 n.笑声 走我的。我曾打败过天庭的千军万马!”"
+      },
+      "payload": {
+        "term": "laugh",
+        "ipa": "lɑːf",
+        "pos": "v.",
+        "def": "v.笑,发笑 n.笑声 走我的。我曾打败过天庭的千军万马!”",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "048 受伤的男孩 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "98417c757139aadb7591133816d18b65119359fcc957d3ed9e99ff5dad31eec6"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep048-vocab-039",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 139,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "make",
+        "zh": "v.使成为,制造,做,做出,组 成,挣钱,铺床"
+      },
+      "payload": {
+        "term": "make",
+        "ipa": "meɪk",
+        "pos": "v.",
+        "def": "v.使成为,制造,做,做出,组 成,挣钱,铺床",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "048 受伤的男孩 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "98417c757139aadb7591133816d18b65119359fcc957d3ed9e99ff5dad31eec6"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep048-vocab-040",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 140,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "magic",
+        "zh": "魔术;魔法,魔力,魅力"
+      },
+      "payload": {
+        "term": "magic",
+        "ipa": "ˈmædʒɪk",
+        "pos": "adj.",
+        "def": "adj.有魔力的,有神奇力量的 n.[U]魔术;魔法,魔力,魅力",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "048 受伤的男孩 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "98417c757139aadb7591133816d18b65119359fcc957d3ed9e99ff5dad31eec6"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep048-vocab-041",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 141,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "army",
+        "zh": "陆军,陆军部队"
+      },
+      "payload": {
+        "term": "army",
+        "ipa": "ˈɑː(r)mi",
+        "pos": "n.",
+        "def": "n.[C]陆军,陆军部队",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "048 受伤的男孩 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "98417c757139aadb7591133816d18b65119359fcc957d3ed9e99ff5dad31eec6"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep048-vocab-042",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 142,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "throw",
+        "zh": "v.扔,掷"
+      },
+      "payload": {
+        "term": "throw",
+        "ipa": "θrəʊ",
+        "pos": "v.",
+        "def": "v.扔,掷",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "048 受伤的男孩 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "98417c757139aadb7591133816d18b65119359fcc957d3ed9e99ff5dad31eec6"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep048-vocab-043",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 143,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "must",
+        "zh": "modal v.必须,一定"
+      },
+      "payload": {
+        "term": "must",
+        "ipa": "mʌst",
+        "pos": "",
+        "def": "modal v.必须,一定",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "048 受伤的男孩 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "98417c757139aadb7591133816d18b65119359fcc957d3ed9e99ff5dad31eec6"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep048-vocab-044",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 144,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "wind",
+        "zh": "风"
+      },
+      "payload": {
+        "term": "wind",
+        "ipa": "wɪnd",
+        "pos": "n.",
+        "def": "n.[C,U]风",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "048 受伤的男孩 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "98417c757139aadb7591133816d18b65119359fcc957d3ed9e99ff5dad31eec6"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep048-vocab-045",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 145,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "sudden",
+        "zh": "adj.突然(的)"
+      },
+      "payload": {
+        "term": "sudden",
+        "ipa": "ˈsʌdən",
+        "pos": "adj.",
+        "def": "adj.突然(的)",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "048 受伤的男孩 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "98417c757139aadb7591133816d18b65119359fcc957d3ed9e99ff5dad31eec6"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep048-vocab-046",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 146,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "strong",
+        "zh": "adj.强烈的,强壮的"
+      },
+      "payload": {
+        "term": "strong",
+        "ipa": "strɒŋ",
+        "pos": "adj.",
+        "def": "adj.强烈的,强壮的",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "048 受伤的男孩 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "98417c757139aadb7591133816d18b65119359fcc957d3ed9e99ff5dad31eec6"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep048-vocab-047",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 147,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "rush",
+        "zh": "迅速移动,仓促,急 促"
+      },
+      "payload": {
+        "term": "rush",
+        "ipa": "rʌʃ",
+        "pos": "v.",
+        "def": "v./n.[sing.]迅速移动,仓促,急 促",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "048 受伤的男孩 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "98417c757139aadb7591133816d18b65119359fcc957d3ed9e99ff5dad31eec6"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep048-vocab-048",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 148,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "find",
+        "zh": "vt.找到,发现,查找,查明"
+      },
+      "payload": {
+        "term": "find",
+        "ipa": "faɪnd",
+        "pos": "vt.",
+        "def": "vt.找到,发现,查找,查明",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "048 受伤的男孩 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "98417c757139aadb7591133816d18b65119359fcc957d3ed9e99ff5dad31eec6"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep048-vocab-049",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 149,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "try",
+        "zh": "尝试,设法,努力"
+      },
+      "payload": {
+        "term": "try",
+        "ipa": "traɪ",
+        "pos": "v.",
+        "def": "v./n.[C]尝试,设法,努力",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "048 受伤的男孩 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "98417c757139aadb7591133816d18b65119359fcc957d3ed9e99ff5dad31eec6"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep048-vocab-050",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 150,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "where",
+        "zh": "adv.在哪里,到哪里"
+      },
+      "payload": {
+        "term": "where",
+        "ipa": "weə(r)",
+        "pos": "adv.",
+        "def": "adv.在哪里,到哪里",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "048 受伤的男孩 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "98417c757139aadb7591133816d18b65119359fcc957d3ed9e99ff5dad31eec6"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep048-vocab-051",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 151,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "stop",
+        "zh": "车站,停止 v.停止,阻止,逗留"
+      },
+      "payload": {
+        "term": "stop",
+        "ipa": "stɒp",
+        "pos": "n.",
+        "def": "n.[C]车站,停止 v.停止,阻止,逗留",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "048 受伤的男孩 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "98417c757139aadb7591133816d18b65119359fcc957d3ed9e99ff5dad31eec6"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep048-vocab-052",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 152,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "lie",
+        "zh": "vi.存在,平躺,处于,位于;说 谎 n.谎言"
+      },
+      "payload": {
+        "term": "lie",
+        "ipa": "laɪ",
+        "pos": "vi.",
+        "def": "vi.存在,平躺,处于,位于;说 谎 n.谎言",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "048 受伤的男孩 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "98417c757139aadb7591133816d18b65119359fcc957d3ed9e99ff5dad31eec6"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep048-vocab-053",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 153,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "master",
+        "zh": "n.大师,能手,主人,硕士 vt.掌握 adj.熟练的"
+      },
+      "payload": {
+        "term": "master",
+        "ipa": "ˈmɑː stə",
+        "pos": "n.",
+        "def": "n.大师,能手,主人,硕士 vt.掌握 adj.熟练的",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "048 受伤的男孩 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "98417c757139aadb7591133816d18b65119359fcc957d3ed9e99ff5dad31eec6"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep048-vocab-054",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 154,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "cry",
+        "zh": "叫喊"
+      },
+      "payload": {
+        "term": "cry",
+        "ipa": "kraɪ",
+        "pos": "v.",
+        "def": "v./n.[sing.]哭 [C]叫喊",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "048 受伤的男孩 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "98417c757139aadb7591133816d18b65119359fcc957d3ed9e99ff5dad31eec6"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep048-vocab-055",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 155,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "journey",
+        "zh": "旅程"
+      },
+      "payload": {
+        "term": "journey",
+        "ipa": "ˈdʒɜː(r)ni",
+        "pos": "n.",
+        "def": "旅程",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ],
+        "gloss": "旅程"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "048 受伤的男孩 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "98417c757139aadb7591133816d18b65119359fcc957d3ed9e99ff5dad31eec6"
+        }
+      ],
+      "review_status": "machine_verified"
+    }
+  ],
+  "teacher_guide": null,
+  "review": {
+    "status": "draft",
+    "reviewed_at": null,
+    "card_stats": {
+      "total": 60,
+      "sentence_choice": 5,
+      "word_review": 55,
+      "machine_verified": 56,
+      "assistant_reviewed": 4,
+      "verified": 60,
+      "needs_review": 0
+    }
+  },
+  "generated_at": "2026-08-31T04:49:41.603119+00:00"
+}

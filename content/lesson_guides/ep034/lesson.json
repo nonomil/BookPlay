@@ -1,0 +1,1409 @@
+{
+  "schema_version": 1,
+  "episode": 34,
+  "title": {
+    "en": "Tricked by the Princess",
+    "zh": "西游记 第34集"
+  },
+  "sources": [
+    {
+      "kind": "courseware_main_pptx",
+      "file": "G:\\Game\\BookPlay书戏\\data\\西游记课件\\3.3西游记  Journey to the West PPT课件\\034_Journey to the West 34_Tricked by the Princess.pptx",
+      "sha256": "b1da6755dae7e2d1c9829c0fd2076315bfe5dfb40c238f84f64ff199ba5c4545",
+      "pages": 20
+    },
+    {
+      "kind": "official_quiz_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+      "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929",
+      "pages": 131
+    },
+    {
+      "kind": "intensive_reader_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\02-西游记精读版台词本\\1、带标注版PDF 108集\\034 公主的骗局 上.pdf",
+      "sha256": "6a09350f0153f9b53899f8dfabc3e5a1db2dde981b5dfc2c1fc8a37983b4909b",
+      "pages": 4
+    },
+    {
+      "kind": "intensive_reader_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\02-西游记精读版台词本\\1、带标注版PDF 108集\\034 公主的骗局 下.pdf",
+      "sha256": "365c0d298b789fbc18e52dc315ca985cd531d3c0875ac05a96c122a8c1439b5a",
+      "pages": 4
+    },
+    {
+      "kind": "courseware_screenshots_pptx",
+      "file": "G:\\Game\\BookPlay书戏\\data\\西游记课件\\西游记-外教课动画截图\\Journey to the West 034  Tricked by the Princess_20240106164635.pptx",
+      "sha256": "c708380903e149a9174d75fd0c6a81533cf0f963b400cd6b443c0e3a4adb1715",
+      "pages": 49
+    }
+  ],
+  "cards": [
+    {
+      "card_id": "ep034-official-quiz-001",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 1,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "which is not true?",
+        "zh": "哪一项是不正确的？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "the tang monk arrived to rescue the princess.",
+            "zh": "唐僧来救公主了。"
+          },
+          {
+            "id": "b",
+            "en": "the king told the general to destroy the monster.",
+            "zh": "国王告诉将军去消灭怪物。"
+          },
+          {
+            "id": "c",
+            "en": "the princess was a prisoner for 13 years.",
+            "zh": "公主被囚禁了13年。"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n001",
+            "quote": "The Tang Monk was tied up in a room."
+          },
+          {
+            "node_id": "n008",
+            "quote": "\"I'm a prisoner here,\" said the woman."
+          },
+          {
+            "node_id": "n009",
+            "quote": "\"That monster kidnapped me 13 years ago and won't let me leave. Will you help me?\""
+          },
+          {
+            "node_id": "n037",
+            "quote": "The king stood up, his eyes blazing with anger."
+          },
+          {
+            "node_id": "n038",
+            "quote": "He called to his general, who was standing nearby."
+          },
+          {
+            "node_id": "n039",
+            "quote": "\"Gather your troops,\" said the king."
+          },
+          {
+            "node_id": "n040",
+            "quote": "\"I want my daughter back. And I want that monster destroyed!\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 42,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep034-official-quiz-002",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 2,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "what did the tang monk promise to do?",
+        "zh": "唐僧承诺要做什么？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "deliver a letter",
+            "zh": "递送一封信"
+          },
+          {
+            "id": "b",
+            "en": "rescue the princess",
+            "zh": "拯救公主"
+          },
+          {
+            "id": "c",
+            "en": "fight the monster",
+            "zh": "与怪物战斗"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n012",
+            "quote": "\"I can help you get free,\" said the young woman."
+          },
+          {
+            "node_id": "n013",
+            "quote": "\"If I do, will you deliver a letter to my parents?\""
+          },
+          {
+            "node_id": "n014",
+            "quote": "\"Of course,\" said the monk. \"Who are your parents?\""
+          },
+          {
+            "node_id": "n015",
+            "quote": "\"They're the king and queen of the Precious Image Kingdom,\" said the young woman."
+          },
+          {
+            "node_id": "n016",
+            "quote": "\"My name is Princess Hundred Flowers.\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 42,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep034-official-quiz-003",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 3,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "what did the princess ask the monster to do?",
+        "zh": "公主让怪物做了什么？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "free the tang monk",
+            "zh": "解救唐僧"
+          },
+          {
+            "id": "b",
+            "en": "deliver a letter",
+            "zh": "递送一封信"
+          },
+          {
+            "id": "c",
+            "en": "capture wujing",
+            "zh": "抓住悟净"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n017",
+            "quote": "Bajie and Wujing were still fighting the monster when the princess ran outside."
+          },
+          {
+            "node_id": "n018",
+            "quote": "\"Monster!\" she cried. \"I must ask you a favor.\""
+          },
+          {
+            "node_id": "n021",
+            "quote": "\"There's a monk inside,\" said the princess."
+          },
+          {
+            "node_id": "n022",
+            "quote": "\"It makes me so sad to see him tied up. Won't you let him go?\""
+          },
+          {
+            "node_id": "n024",
+            "quote": "\"That monk isn't an ordinary monk. He's the—\" Princess Hundred Flowers pretended to cry."
+          },
+          {
+            "node_id": "n026",
+            "quote": "\"Okay, okay, sweetie. You know I only want you to be happy. The monk may go.\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 42,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep034-official-quiz-004",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 4,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "why did bajie run away from the monster?",
+        "zh": "八戒为什么要从怪物那里逃跑？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "he was tired.",
+            "zh": "他累了。"
+          },
+          {
+            "id": "b",
+            "en": "he was hungry.",
+            "zh": "他饿了。"
+          },
+          {
+            "id": "c",
+            "en": "he was hurt.",
+            "zh": "他受伤了。"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n060",
+            "quote": "Finally Bajie, tired from fighting, turned and ran."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 42,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep034-official-quiz-005",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 5,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "who did the monster capture?",
+        "zh": "怪物捕获了谁？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "wujing",
+            "zh": "五净"
+          },
+          {
+            "id": "b",
+            "en": "bajie",
+            "zh": "八戒"
+          },
+          {
+            "id": "c",
+            "en": "wukong",
+            "zh": "悟空"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n057",
+            "quote": "Bajie and Wujing attacked."
+          },
+          {
+            "node_id": "n060",
+            "quote": "Finally Bajie, tired from fighting, turned and ran."
+          },
+          {
+            "node_id": "n061",
+            "quote": "Wujing was furious."
+          },
+          {
+            "node_id": "n062",
+            "quote": "\"Bajie!\" he shouted. \"Where are you—oof!\""
+          },
+          {
+            "node_id": "n063",
+            "quote": "The monster knocked out Wujing and tied him up."
+          },
+          {
+            "node_id": "n064",
+            "quote": "He dragged Wujing into the pagoda and locked him in a room."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 42,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep034-vocab-001",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 101,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "wish",
+        "zh": "祝愿 v.希望,祝愿"
+      },
+      "payload": {
+        "term": "wish",
+        "ipa": "wɪʃ",
+        "pos": "n.",
+        "def": "n.[C]愿望,希望[pl.]祝愿 v.希望,祝愿",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "034 公主的骗局 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "6a09350f0153f9b53899f8dfabc3e5a1db2dde981b5dfc2c1fc8a37983b4909b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep034-vocab-002",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 102,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "show",
+        "zh": "展览 vt.给......看,显示,表明"
+      },
+      "payload": {
+        "term": "show",
+        "ipa": "ʃəʊ",
+        "pos": "n.",
+        "def": "n.[C]演出,节目[C,U]展览 vt.给......看,显示,表明",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "034 公主的骗局 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "6a09350f0153f9b53899f8dfabc3e5a1db2dde981b5dfc2c1fc8a37983b4909b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep034-vocab-003",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 103,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "free",
+        "zh": "adj.空闲的,免费的,自由的 adv.免费 vt.释放,解放,解除"
+      },
+      "payload": {
+        "term": "free",
+        "ipa": "friː",
+        "pos": "adj.",
+        "def": "adj.空闲的,免费的,自由的 adv.免费 vt.释放,解放,解除",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "034 公主的骗局 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "6a09350f0153f9b53899f8dfabc3e5a1db2dde981b5dfc2c1fc8a37983b4909b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep034-vocab-004",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 104,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "say",
+        "zh": "v.说,讲"
+      },
+      "payload": {
+        "term": "say",
+        "ipa": "seɪ",
+        "pos": "v.",
+        "def": "v.说,讲",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "034 公主的骗局 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "6a09350f0153f9b53899f8dfabc3e5a1db2dde981b5dfc2c1fc8a37983b4909b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep034-vocab-005",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 105,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "parent",
+        "zh": "父(母)亲,家长"
+      },
+      "payload": {
+        "term": "parent",
+        "ipa": "ˈpeərənt",
+        "pos": "n.",
+        "def": "n.[C]父(母)亲,家长",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "034 公主的骗局 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "6a09350f0153f9b53899f8dfabc3e5a1db2dde981b5dfc2c1fc8a37983b4909b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep034-vocab-006",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 106,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "king",
+        "zh": "君主,国王"
+      },
+      "payload": {
+        "term": "king",
+        "ipa": "kɪŋ",
+        "pos": "n.",
+        "def": "n.[C]君主,国王",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "034 公主的骗局 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "6a09350f0153f9b53899f8dfabc3e5a1db2dde981b5dfc2c1fc8a37983b4909b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep034-vocab-007",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 107,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "queen",
+        "zh": "王后,女王"
+      },
+      "payload": {
+        "term": "queen",
+        "ipa": "kwiːn",
+        "pos": "n.",
+        "def": "n.[C]王后,女王",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "034 公主的骗局 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "6a09350f0153f9b53899f8dfabc3e5a1db2dde981b5dfc2c1fc8a37983b4909b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep034-vocab-008",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 108,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "fight",
+        "zh": "与…作斗争"
+      },
+      "payload": {
+        "term": "fight",
+        "ipa": "faɪt",
+        "pos": "v.",
+        "def": "与…作斗争",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          2
+        ],
+        "gloss": "与…作斗争"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "034 公主的骗局 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "6a09350f0153f9b53899f8dfabc3e5a1db2dde981b5dfc2c1fc8a37983b4909b"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "034 公主的骗局 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "365c0d298b789fbc18e52dc315ca985cd531d3c0875ac05a96c122a8c1439b5a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep034-vocab-009",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 109,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "must",
+        "zh": "modal v.必须,一定\"Monster 怪物"
+      },
+      "payload": {
+        "term": "must",
+        "ipa": "mʌst",
+        "pos": "",
+        "def": "modal v.必须,一定\"Monster 怪物",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "034 公主的骗局 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "6a09350f0153f9b53899f8dfabc3e5a1db2dde981b5dfc2c1fc8a37983b4909b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep034-vocab-010",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 110,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "swing",
+        "zh": "摆动,秋千 v.摇摆"
+      },
+      "payload": {
+        "term": "swing",
+        "ipa": "swɪŋ",
+        "pos": "n.",
+        "def": "n.[C]摆动,秋千 v.摇摆",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "034 公主的骗局 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "365c0d298b789fbc18e52dc315ca985cd531d3c0875ac05a96c122a8c1439b5a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep034-vocab-011",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 111,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "door",
+        "zh": "门"
+      },
+      "payload": {
+        "term": "door",
+        "ipa": "dɔː(r)",
+        "pos": "n.",
+        "def": "n.[C]门",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "034 公主的骗局 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "365c0d298b789fbc18e52dc315ca985cd531d3c0875ac05a96c122a8c1439b5a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep034-vocab-012",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 112,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "shout",
+        "zh": "呼喊,叫喊"
+      },
+      "payload": {
+        "term": "shout",
+        "ipa": "ʃaʊt",
+        "pos": "v.",
+        "def": "v.呼叫,喊叫 n.[C]呼喊,叫喊",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "034 公主的骗局 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "365c0d298b789fbc18e52dc315ca985cd531d3c0875ac05a96c122a8c1439b5a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep034-vocab-013",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 113,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "take",
+        "zh": "拿；带走"
+      },
+      "payload": {
+        "term": "take",
+        "ipa": "teɪk",
+        "pos": "v.",
+        "def": "拿；带走",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ],
+        "gloss": "拿；带走"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "034 公主的骗局 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "365c0d298b789fbc18e52dc315ca985cd531d3c0875ac05a96c122a8c1439b5a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep034-vocab-014",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 114,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "love",
+        "zh": "vt.很愿意,爱,喜爱 n.爱,关爱"
+      },
+      "payload": {
+        "term": "love",
+        "ipa": "lʌv",
+        "pos": "vt.",
+        "def": "vt.很愿意,爱,喜爱 n.爱,关爱",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "034 公主的骗局 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "365c0d298b789fbc18e52dc315ca985cd531d3c0875ac05a96c122a8c1439b5a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep034-vocab-015",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 115,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "turn",
+        "zh": "轮流圈国"
+      },
+      "payload": {
+        "term": "turn",
+        "ipa": "tɜː (r)n",
+        "pos": "v.",
+        "def": "v.转向,翻圈v.-link.(使)变成 n.[C]轮流圈国",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "034 公主的骗局 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "365c0d298b789fbc18e52dc315ca985cd531d3c0875ac05a96c122a8c1439b5a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep034-vocab-016",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 116,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "run",
+        "zh": "跑,跑步"
+      },
+      "payload": {
+        "term": "run",
+        "ipa": "rʌn",
+        "pos": "vi.",
+        "def": "vi.跑,奔 vt.经营 n.[C]跑,跑步",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "034 公主的骗局 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "365c0d298b789fbc18e52dc315ca985cd531d3c0875ac05a96c122a8c1439b5a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep034-vocab-017",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 117,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "where",
+        "zh": "adv.在哪里,到哪里"
+      },
+      "payload": {
+        "term": "where",
+        "ipa": "weə(r)",
+        "pos": "adv.",
+        "def": "adv.在哪里,到哪里",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "034 公主的骗局 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "365c0d298b789fbc18e52dc315ca985cd531d3c0875ac05a96c122a8c1439b5a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep034-vocab-018",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 118,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "lock",
+        "zh": "锁"
+      },
+      "payload": {
+        "term": "lock",
+        "ipa": "lɒk",
+        "pos": "v.",
+        "def": "v.锁上,锁住 n.[C]锁",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "034 公主的骗局 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "365c0d298b789fbc18e52dc315ca985cd531d3c0875ac05a96c122a8c1439b5a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep034-vocab-019",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 119,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "know",
+        "zh": "v.知道,了解"
+      },
+      "payload": {
+        "term": "know",
+        "ipa": "nəʊ",
+        "pos": "v.",
+        "def": "v.知道,了解",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "034 公主的骗局 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "365c0d298b789fbc18e52dc315ca985cd531d3c0875ac05a96c122a8c1439b5a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep034-vocab-020",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 120,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "think",
+        "zh": "v.认为,想。思考"
+      },
+      "payload": {
+        "term": "think",
+        "ipa": "θɪŋk",
+        "pos": "v.",
+        "def": "v.认为,想。思考",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "034 公主的骗局 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "365c0d298b789fbc18e52dc315ca985cd531d3c0875ac05a96c122a8c1439b5a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep034-vocab-021",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 121,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "ask",
+        "zh": "v.请求,要求,询问"
+      },
+      "payload": {
+        "term": "ask",
+        "ipa": "ɑːsk",
+        "pos": "v.",
+        "def": "v.请求,要求,询问",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "034 公主的骗局 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "365c0d298b789fbc18e52dc315ca985cd531d3c0875ac05a96c122a8c1439b5a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep034-vocab-022",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 122,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "dark",
+        "zh": "黑暗"
+      },
+      "payload": {
+        "term": "dark",
+        "ipa": "dɑː (r)k",
+        "pos": "adj.",
+        "def": "adj.黑暗的 n.[sing.]黑暗",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "034 公主的骗局 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "365c0d298b789fbc18e52dc315ca985cd531d3c0875ac05a96c122a8c1439b5a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep034-vocab-023",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 123,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "angry",
+        "zh": "生气的"
+      },
+      "payload": {
+        "term": "angry",
+        "ipa": "ˈæŋɡri",
+        "pos": "adj.",
+        "def": "生气的",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ],
+        "gloss": "生气的"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "034 公主的骗局 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "365c0d298b789fbc18e52dc315ca985cd531d3c0875ac05a96c122a8c1439b5a"
+        }
+      ],
+      "review_status": "machine_verified"
+    }
+  ],
+  "teacher_guide": null,
+  "review": {
+    "status": "draft",
+    "reviewed_at": null,
+    "card_stats": {
+      "total": 28,
+      "sentence_choice": 5,
+      "word_review": 23,
+      "machine_verified": 24,
+      "assistant_reviewed": 4,
+      "verified": 28,
+      "needs_review": 0
+    }
+  },
+  "generated_at": "2026-08-31T04:49:39.351451+00:00"
+}

@@ -1,0 +1,584 @@
+{
+ "schema_version": 1,
+ "ep": 95,
+ "title": {
+  "en": "The Raptor Demon",
+  "zh": "西游记 第95集"
+ },
+ "collection": "c12",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "liondemon",
+   "nameZh": "狮魔王",
+   "mode": "sparring",
+   "sprite": "liondemon"
+  },
+  "minors": [
+   {
+    "id": "imp",
+    "nameZh": "小妖",
+    "sprite": "imp"
+   }
+  ]
+ },
+ "background": {
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep95/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "The Tang Monk and Wujing were tied up inside the demons' cave.",
+   "textZh": "唐僧与武二郎被捆绑在恶魔洞穴内。",
+   "illustration": "assets/adv_frames/ep95/f1.jpg",
+   "sourceNodeId": "n001",
+   "audioRef": "sent_en:The Tang Monk and Wujing were tied up inside the demons' cave."
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "Bajie was also tied up, floating in the tub of salt water again.",
+   "textZh": "八戒也被捆绑着,再次漂浮在盐水中。",
+   "illustration": "assets/adv_frames/ep95/f2.jpg",
+   "sourceNodeId": "n002",
+   "audioRef": "sent_en:Bajie was also tied up, floating in the tub of salt water again."
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "float",
+   "zh": "(在水上或空中)漂浮",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep95/f2.jpg"
+  },
+  {
+   "term": "taste",
+   "zh": "吃起来......,尝起来......",
+   "ipa": "teɪst",
+   "illustration": "assets/adv_frames/ep95/f1.jpg"
+  },
+  {
+   "term": "course",
+   "zh": "1. 一道菜,(2. (船,飞机的)路线,航路)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep95/f2.jpg"
+  },
+  {
+   "term": "main course",
+   "zh": "主菜",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep95/f2.jpg"
+  },
+  {
+   "term": "fry",
+   "zh": "油炸",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep95/f0.jpg"
+  },
+  {
+   "term": "garlic",
+   "zh": "大蒜,蒜头",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep95/f0.jpg"
+  },
+  {
+   "term": "spice",
+   "zh": "香料,调味料",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep95/f1.jpg"
+  },
+  {
+   "term": "kitchen",
+   "zh": "厨房",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep95/f1.jpg"
+  },
+  {
+   "term": "certainly",
+   "zh": "无疑地,必定,确实地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep95/f2.jpg"
+  },
+  {
+   "term": "bruised",
+   "zh": "带瘀伤的,挫伤的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep95/f2.jpg"
+  },
+  {
+   "term": "neither",
+   "zh": "也不",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep95/f3.jpg"
+  },
+  {
+   "term": "rumor",
+   "zh": "谣言,传闻",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep95/f1.jpg"
+  }
+ ],
+ "wordPool": [
+  {
+   "term": "float",
+   "zh": "(在水上或空中)漂浮",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep95/f2.jpg"
+  },
+  {
+   "term": "taste",
+   "zh": "吃起来......,尝起来......",
+   "ipa": "teɪst",
+   "illustration": "assets/adv_frames/ep95/f1.jpg"
+  },
+  {
+   "term": "course",
+   "zh": "1. 一道菜,(2. (船,飞机的)路线,航路)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep95/f2.jpg"
+  },
+  {
+   "term": "main course",
+   "zh": "主菜",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep95/f2.jpg"
+  },
+  {
+   "term": "fry",
+   "zh": "油炸",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep95/f0.jpg"
+  },
+  {
+   "term": "garlic",
+   "zh": "大蒜,蒜头",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep95/f0.jpg"
+  },
+  {
+   "term": "spice",
+   "zh": "香料,调味料",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep95/f1.jpg"
+  },
+  {
+   "term": "kitchen",
+   "zh": "厨房",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep95/f1.jpg"
+  },
+  {
+   "term": "certainly",
+   "zh": "无疑地,必定,确实地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep95/f2.jpg"
+  },
+  {
+   "term": "bruised",
+   "zh": "带瘀伤的,挫伤的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep95/f2.jpg"
+  },
+  {
+   "term": "neither",
+   "zh": "也不",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep95/f3.jpg"
+  },
+  {
+   "term": "rumor",
+   "zh": "谣言,传闻",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep95/f1.jpg"
+  },
+  {
+   "term": "give up",
+   "zh": "放弃",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep95/f1.jpg"
+  },
+  {
+   "term": "hope",
+   "zh": "希望",
+   "ipa": "həʊp",
+   "illustration": "assets/adv_frames/ep95/f3.jpg"
+  },
+  {
+   "term": "area",
+   "zh": "地区,区域",
+   "ipa": "ˈeəriə",
+   "illustration": "assets/adv_frames/ep95/f0.jpg"
+  },
+  {
+   "term": "brilliant",
+   "zh": "杰出的,优秀的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep95/f2.jpg"
+  },
+  {
+   "term": "clobber",
+   "zh": "痛打",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep95/f3.jpg"
+  },
+  {
+   "term": "even if",
+   "zh": "即使",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep95/f3.jpg"
+  },
+  {
+   "term": "heartbroken",
+   "zh": "心碎的,悲伤的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep95/f3.jpg"
+  },
+  {
+   "term": "pour",
+   "zh": "倒,灌(水等)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep95/f0.jpg"
+  },
+  {
+   "term": "fail",
+   "zh": "1. 使失望,有负于,(2. 失败)",
+   "ipa": "feɪl",
+   "illustration": "assets/adv_frames/ep95/f2.jpg"
+  },
+  {
+   "term": "wipe",
+   "zh": "擦",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep95/f3.jpg"
+  },
+  {
+   "term": "burst into",
+   "zh": "突然大哭,(眼泪)夺眶而出",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep95/f1.jpg"
+  },
+  {
+   "term": "hopefully",
+   "zh": "带着希望地,期待地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep95/f1.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "float",
+     "zh": "(在水上或空中)漂浮",
+     "sprite": "imp"
+    },
+    {
+     "term": "taste",
+     "zh": "吃起来......,尝起来......",
+     "sprite": "imp"
+    },
+    {
+     "term": "course",
+     "zh": "1. 一道菜,(2. (船,飞机的)路线,航路)",
+     "sprite": "imp"
+    },
+    {
+     "term": "main course",
+     "zh": "主菜",
+     "sprite": "imp"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "fry",
+     "zh": "油炸",
+     "sprite": "imp"
+    },
+    {
+     "term": "garlic",
+     "zh": "大蒜,蒜头",
+     "sprite": "imp"
+    },
+    {
+     "term": "spice",
+     "zh": "香料,调味料",
+     "sprite": "imp"
+    },
+    {
+     "term": "kitchen",
+     "zh": "厨房",
+     "sprite": "imp"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "certainly",
+    "zh": "无疑地,必定,确实地"
+   },
+   {
+    "term": "bruised",
+    "zh": "带瘀伤的,挫伤的"
+   },
+   {
+    "term": "neither",
+    "zh": "也不"
+   },
+   {
+    "term": "rumor",
+    "zh": "谣言,传闻"
+   }
+  ],
+  "taunts": [
+   "liondemon.1",
+   "liondemon.2",
+   "liondemon.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=95",
+ "npcDialogue": {
+  "intro": {
+   "id": "ep95-map-intro",
+   "lines": [
+    {
+     "id": "ep95-map-intro-1",
+     "sourceNodeId": "n001",
+     "speaker": "narrator",
+     "textEn": "The Tang Monk and Wujing were tied up inside the demons' cave.",
+     "textZh": "唐僧与武二郎被捆绑在恶魔洞穴内。",
+     "audioRef": "sent_en:The Tang Monk and Wujing were tied up inside the demons' cave.",
+     "audioStart": 10.934,
+     "audioEnd": 17.519
+    },
+    {
+     "id": "ep95-map-intro-2",
+     "sourceNodeId": "n002",
+     "speaker": "narrator",
+     "textEn": "Bajie was also tied up, floating in the tub of salt water again.",
+     "textZh": "八戒也被捆绑着,再次漂浮在盐水中。",
+     "audioRef": "sent_en:Bajie was also tied up, floating in the tub of salt water again.",
+     "audioStart": 17.52,
+     "audioEnd": 22.881
+    }
+   ]
+  },
+  "quiz": {
+   "id": "ep95-map-quiz",
+   "lines": [
+    {
+     "id": "ep95-map-quiz-1",
+     "sourceNodeId": "n030",
+     "speaker": "narrator",
+     "textEn": "\"They ate the Tang Monk, and now they'll live forever,\" said the first fiend.",
+     "textZh": "\"他们吃掉了唐僧,如今便可永生,\"第一个魔头说道。",
+     "audioRef": "sent_en:\"They ate the Tang Monk, and now they'll live forever,\" said the first fiend.",
+     "audioStart": 139.089,
+     "audioEnd": 145.732
+    }
+   ],
+   "question": {
+    "id": "ep095-official-quiz-001",
+    "textEn": "which is true?",
+    "textZh": "哪一个是真的？"
+   },
+   "word": {
+    "term": "float",
+    "zh": "(在水上或空中)漂浮",
+    "ipa": ""
+   },
+   "options": [
+    {
+     "id": "a",
+     "textEn": "wukong went to the thunderclap monastery.",
+     "textZh": "悟空去了雷音寺。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    },
+    {
+     "id": "b",
+     "textEn": "buddha started a rumor about the demons.",
+     "textZh": "佛陀散布了关于恶魔的谣言。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    },
+    {
+     "id": "c",
+     "textEn": "the demons said they ate the tang monk.",
+     "textZh": "妖怪们说他们吃了唐僧。",
+     "correct": true,
+     "feedback": "对了。妖怪们说他们吃了唐僧。"
+    }
+   ],
+   "lessonCardId": "ep095-official-quiz-001"
+  }
+ },
+ "map": {
+  "theme": "generic",
+  "coordinateSpace": "world-normalized",
+  "worldTiles": 2,
+  "regions": {
+   "hero": 0,
+   "waves": [
+    0,
+    1
+   ],
+   "npc": {
+    "intro": 0,
+    "quiz": 1
+   },
+   "boss": 3
+  },
+  "walkable": {
+   "space": "world",
+   "x": 0.0,
+   "y": 0.16,
+   "w": 1.0,
+   "h": 0.79,
+   "rects": [
+    {
+     "x": 0.0,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.66,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    }
+   ]
+  },
+  "heroSpawn": {
+   "x": 0.06,
+   "y": 0.31
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.31,
+    "y": 0.23
+   },
+   {
+    "x": 0.38,
+    "y": 0.27
+   },
+   {
+    "x": 0.34,
+    "y": 0.33
+   },
+   {
+    "x": 0.41,
+    "y": 0.24
+   }
+  ],
+  "waveSpawns": [
+   [
+    {
+     "x": 0.31,
+     "y": 0.23
+    },
+    {
+     "x": 0.38,
+     "y": 0.27
+    },
+    {
+     "x": 0.34,
+     "y": 0.33
+    },
+    {
+     "x": 0.41,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.81,
+     "y": 0.23
+    },
+    {
+     "x": 0.88,
+     "y": 0.27
+    },
+    {
+     "x": 0.84,
+     "y": 0.33
+    },
+    {
+     "x": 0.91,
+     "y": 0.24
+    }
+   ]
+  ],
+  "orbSpawns": [
+   [
+    {
+     "x": 0.11,
+     "y": 0.25
+    },
+    {
+     "x": 0.16,
+     "y": 0.31
+    },
+    {
+     "x": 0.12,
+     "y": 0.37
+    },
+    {
+     "x": 0.18,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.61,
+     "y": 0.25
+    },
+    {
+     "x": 0.66,
+     "y": 0.31
+    },
+    {
+     "x": 0.62,
+     "y": 0.37
+    },
+    {
+     "x": 0.68,
+     "y": 0.24
+    }
+   ]
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "imp",
+    "nameZh": "小妖",
+    "x": 0.08,
+    "y": 0.26
+   },
+   {
+    "role": "quiz",
+    "sprite": "imp",
+    "nameZh": "小妖",
+    "x": 0.7,
+    "y": 0.39
+   }
+  ],
+  "bossSpot": {
+   "x": 0.94,
+   "y": 0.85
+  }
+ }
+}

@@ -1,0 +1,584 @@
+{
+ "schema_version": 1,
+ "ep": 81,
+ "title": {
+  "en": "Help from a Dragon",
+  "zh": "西游记 第81集"
+ },
+ "collection": "c11",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "whitedragonhorse",
+   "nameZh": "白龙马",
+   "mode": "sparring",
+   "sprite": "whitedragonhorse"
+  },
+  "minors": [
+   {
+    "id": "imp",
+    "nameZh": "小妖",
+    "sprite": "imp"
+   }
+  ]
+ },
+ "background": {
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep81/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "Bajie and Wujing swung their weapons at the demon.",
+   "textZh": "八戒与悟净挥动武器向那头魔物袭去。",
+   "illustration": "assets/adv_frames/ep81/f1.jpg",
+   "sourceNodeId": "n001",
+   "audioRef": "sent_en:Bajie and Wujing swung their weapons at the demon."
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "\"Ha!\" The demon laughed.",
+   "textZh": "\"哈!\"恶魔大笑起来。",
+   "illustration": "assets/adv_frames/ep81/f2.jpg",
+   "sourceNodeId": "n002",
+   "audioRef": "sent_en:\"Ha!\" The demon laughed."
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "grunt",
+   "zh": "1. 嘟哝声,哼声,(2. 发出嘟哝声,发出哼声)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep81/f1.jpg"
+  },
+  {
+   "term": "silence",
+   "zh": "无声,沉默",
+   "ipa": "ˈsaɪləns",
+   "illustration": "assets/adv_frames/ep81/f1.jpg"
+  },
+  {
+   "term": "for hours",
+   "zh": "好几个小时",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep81/f2.jpg"
+  },
+  {
+   "term": "apart",
+   "zh": "1. 拆散地,散开地,(2. 分开地,有距离地)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep81/f3.jpg"
+  },
+  {
+   "term": "come apart",
+   "zh": "破碎,崩溃,瓦解",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep81/f3.jpg"
+  },
+  {
+   "term": "wedge",
+   "zh": "挤进,强行挤入(窄缝间)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep81/f2.jpg"
+  },
+  {
+   "term": "pry",
+   "zh": "撬起,强制打开",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep81/f2.jpg"
+  },
+  {
+   "term": "poke",
+   "zh": "(用棍棒、手指等)戳,捅",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep81/f0.jpg"
+  },
+  {
+   "term": "through",
+   "zh": "通过,经过",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep81/f0.jpg"
+  },
+  {
+   "term": "tightly",
+   "zh": "紧紧地,坚固地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep81/f1.jpg"
+  },
+  {
+   "term": "clasp",
+   "zh": "紧抱,扣紧",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep81/f1.jpg"
+  },
+  {
+   "term": "escape",
+   "zh": "逃亡,逃跑",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep81/f2.jpg"
+  }
+ ],
+ "wordPool": [
+  {
+   "term": "grunt",
+   "zh": "1. 嘟哝声,哼声,(2. 发出嘟哝声,发出哼声)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep81/f1.jpg"
+  },
+  {
+   "term": "silence",
+   "zh": "无声,沉默",
+   "ipa": "ˈsaɪləns",
+   "illustration": "assets/adv_frames/ep81/f1.jpg"
+  },
+  {
+   "term": "for hours",
+   "zh": "好几个小时",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep81/f2.jpg"
+  },
+  {
+   "term": "apart",
+   "zh": "1. 拆散地,散开地,(2. 分开地,有距离地)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep81/f3.jpg"
+  },
+  {
+   "term": "come apart",
+   "zh": "破碎,崩溃,瓦解",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep81/f3.jpg"
+  },
+  {
+   "term": "wedge",
+   "zh": "挤进,强行挤入(窄缝间)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep81/f2.jpg"
+  },
+  {
+   "term": "pry",
+   "zh": "撬起,强制打开",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep81/f2.jpg"
+  },
+  {
+   "term": "poke",
+   "zh": "(用棍棒、手指等)戳,捅",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep81/f0.jpg"
+  },
+  {
+   "term": "through",
+   "zh": "通过,经过",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep81/f0.jpg"
+  },
+  {
+   "term": "tightly",
+   "zh": "紧紧地,坚固地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep81/f1.jpg"
+  },
+  {
+   "term": "clasp",
+   "zh": "紧抱,扣紧",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep81/f1.jpg"
+  },
+  {
+   "term": "escape",
+   "zh": "逃亡,逃跑",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep81/f2.jpg"
+  },
+  {
+   "term": "drill",
+   "zh": "钻孔机,锥子",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep81/f1.jpg"
+  },
+  {
+   "term": "normal",
+   "zh": "正常的",
+   "ipa": "ˈnɔː(r)ml",
+   "illustration": "assets/adv_frames/ep81/f0.jpg"
+  },
+  {
+   "term": "free",
+   "zh": "1. 使...获得自由,(2. 自由的,3. 免费地)",
+   "ipa": "friː",
+   "illustration": "assets/adv_frames/ep81/f0.jpg"
+  },
+  {
+   "term": "shatter",
+   "zh": "粉碎,破碎,砸碎",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep81/f1.jpg"
+  },
+  {
+   "term": "charge",
+   "zh": "突击,进攻",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep81/f2.jpg"
+  },
+  {
+   "term": "cloth",
+   "zh": "布,织物",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep81/f3.jpg"
+  },
+  {
+   "term": "wrap",
+   "zh": "(用纸、布等)包",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep81/f0.jpg"
+  },
+  {
+   "term": "tie up",
+   "zh": "绑(紧),系(住),缚牢",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep81/f1.jpg"
+  },
+  {
+   "term": "suspect",
+   "zh": "怀疑,猜疑",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep81/f1.jpg"
+  },
+  {
+   "term": "slip out",
+   "zh": "悄悄地溜出去",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep81/f1.jpg"
+  },
+  {
+   "term": "untie",
+   "zh": "解开(结等)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep81/f2.jpg"
+  },
+  {
+   "term": "warn",
+   "zh": "警告",
+   "ipa": "wɔː(r)n",
+   "illustration": "assets/adv_frames/ep81/f3.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "grunt",
+     "zh": "1. 嘟哝声,哼声,(2. 发出嘟哝声,发出哼声)",
+     "sprite": "imp"
+    },
+    {
+     "term": "silence",
+     "zh": "无声,沉默",
+     "sprite": "imp"
+    },
+    {
+     "term": "for hours",
+     "zh": "好几个小时",
+     "sprite": "imp"
+    },
+    {
+     "term": "apart",
+     "zh": "1. 拆散地,散开地,(2. 分开地,有距离地)",
+     "sprite": "imp"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "come apart",
+     "zh": "破碎,崩溃,瓦解",
+     "sprite": "imp"
+    },
+    {
+     "term": "wedge",
+     "zh": "挤进,强行挤入(窄缝间)",
+     "sprite": "imp"
+    },
+    {
+     "term": "pry",
+     "zh": "撬起,强制打开",
+     "sprite": "imp"
+    },
+    {
+     "term": "poke",
+     "zh": "(用棍棒、手指等)戳,捅",
+     "sprite": "imp"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "through",
+    "zh": "通过,经过"
+   },
+   {
+    "term": "tightly",
+    "zh": "紧紧地,坚固地"
+   },
+   {
+    "term": "clasp",
+    "zh": "紧抱,扣紧"
+   },
+   {
+    "term": "escape",
+    "zh": "逃亡,逃跑"
+   }
+  ],
+  "taunts": [
+   "whitedragonhorse.1",
+   "whitedragonhorse.2",
+   "whitedragonhorse.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=81",
+ "npcDialogue": {
+  "intro": {
+   "id": "ep81-map-intro",
+   "lines": [
+    {
+     "id": "ep81-map-intro-1",
+     "sourceNodeId": "n001",
+     "speaker": "narrator",
+     "textEn": "Bajie and Wujing swung their weapons at the demon.",
+     "textZh": "八戒与悟净挥动武器向那头魔物袭去。",
+     "audioRef": "sent_en:Bajie and Wujing swung their weapons at the demon.",
+     "audioStart": 11.007,
+     "audioEnd": 17.22
+    },
+    {
+     "id": "ep81-map-intro-2",
+     "sourceNodeId": "n002",
+     "speaker": "narrator",
+     "textEn": "\"Ha!\" The demon laughed.",
+     "textZh": "\"哈!\"恶魔大笑起来。",
+     "audioRef": "sent_en:\"Ha!\" The demon laughed.",
+     "audioStart": 17.221,
+     "audioEnd": 19.525
+    }
+   ]
+  },
+  "quiz": {
+   "id": "ep81-map-quiz",
+   "lines": [
+    {
+     "id": "ep81-map-quiz-1",
+     "sourceNodeId": "n017",
+     "speaker": "narrator",
+     "textEn": "\"I'm the Gold Dragon,\" said the voice.",
+     "textZh": "\"我是金龙,\"那声音说道。",
+     "audioRef": "sent_en:\"I'm the Gold Dragon,\" said the voice.",
+     "audioStart": 69.558,
+     "audioEnd": 72.591
+    }
+   ],
+   "question": {
+    "id": "ep081-official-quiz-001",
+    "textEn": "which is not true?",
+    "textZh": "哪一项是不正确的？"
+   },
+   "word": {
+    "term": "grunt",
+    "zh": "1. 嘟哝声,哼声,(2. 发出嘟哝声,发出哼声)",
+    "ipa": ""
+   },
+   "options": [
+    {
+     "id": "a",
+     "textEn": "bajie remembered to bring the bags.",
+     "textZh": "八戒记得带了袋子。",
+     "correct": true,
+     "feedback": "对了。八戒记得带了袋子。"
+    },
+    {
+     "id": "b",
+     "textEn": "wukong woke yellow brows twice.",
+     "textZh": "悟空叫醒了黄眉两次。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    },
+    {
+     "id": "c",
+     "textEn": "the jade emperor sent the gold dragon.",
+     "textZh": "玉皇大帝派来了金龙。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    }
+   ],
+   "lessonCardId": "ep081-official-quiz-001"
+  }
+ },
+ "map": {
+  "theme": "generic",
+  "coordinateSpace": "world-normalized",
+  "worldTiles": 2,
+  "regions": {
+   "hero": 0,
+   "waves": [
+    0,
+    1
+   ],
+   "npc": {
+    "intro": 0,
+    "quiz": 1
+   },
+   "boss": 3
+  },
+  "walkable": {
+   "space": "world",
+   "x": 0.0,
+   "y": 0.16,
+   "w": 1.0,
+   "h": 0.79,
+   "rects": [
+    {
+     "x": 0.0,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.66,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    }
+   ]
+  },
+  "heroSpawn": {
+   "x": 0.06,
+   "y": 0.31
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.31,
+    "y": 0.23
+   },
+   {
+    "x": 0.38,
+    "y": 0.27
+   },
+   {
+    "x": 0.34,
+    "y": 0.33
+   },
+   {
+    "x": 0.41,
+    "y": 0.24
+   }
+  ],
+  "waveSpawns": [
+   [
+    {
+     "x": 0.31,
+     "y": 0.23
+    },
+    {
+     "x": 0.38,
+     "y": 0.27
+    },
+    {
+     "x": 0.34,
+     "y": 0.33
+    },
+    {
+     "x": 0.41,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.81,
+     "y": 0.23
+    },
+    {
+     "x": 0.88,
+     "y": 0.27
+    },
+    {
+     "x": 0.84,
+     "y": 0.33
+    },
+    {
+     "x": 0.91,
+     "y": 0.24
+    }
+   ]
+  ],
+  "orbSpawns": [
+   [
+    {
+     "x": 0.11,
+     "y": 0.25
+    },
+    {
+     "x": 0.16,
+     "y": 0.31
+    },
+    {
+     "x": 0.12,
+     "y": 0.37
+    },
+    {
+     "x": 0.18,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.61,
+     "y": 0.25
+    },
+    {
+     "x": 0.66,
+     "y": 0.31
+    },
+    {
+     "x": 0.62,
+     "y": 0.37
+    },
+    {
+     "x": 0.68,
+     "y": 0.24
+    }
+   ]
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "imp",
+    "nameZh": "小妖",
+    "x": 0.08,
+    "y": 0.26
+   },
+   {
+    "role": "quiz",
+    "sprite": "imp",
+    "nameZh": "小妖",
+    "x": 0.7,
+    "y": 0.39
+   }
+  ],
+  "bossSpot": {
+   "x": 0.94,
+   "y": 0.85
+  }
+ }
+}

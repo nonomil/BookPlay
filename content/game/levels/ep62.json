@@ -1,0 +1,584 @@
+{
+ "schema_version": 1,
+ "ep": 62,
+ "title": {
+  "en": "The Goldfish in the Basket",
+  "zh": "西游记 第62集"
+ },
+ "collection": "c08",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "guanyin",
+   "nameZh": "观音",
+   "mode": "sparring",
+   "sprite": "guanyin"
+  },
+  "minors": [
+   {
+    "id": "imp",
+    "nameZh": "小妖",
+    "sprite": "imp"
+   }
+  ]
+ },
+ "background": {
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep62/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "Wukong landed on Mount Potalaka.",
+   "textZh": "悟空降落在普陀山。",
+   "illustration": "assets/adv_frames/ep62/f1.jpg",
+   "sourceNodeId": "n001",
+   "audioRef": "sent_en:Wukong landed on Mount Potalaka."
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "A young man was meditating in the garden.",
+   "textZh": "一个年轻人在花园里打坐。",
+   "illustration": "assets/adv_frames/ep62/f2.jpg",
+   "sourceNodeId": "n002",
+   "audioRef": "sent_en:A young man was meditating in the garden."
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "meditate",
+   "zh": "冥想,沉思",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep62/f1.jpg"
+  },
+  {
+   "term": "glance",
+   "zh": "粗略地一瞥,扫视",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep62/f1.jpg"
+  },
+  {
+   "term": "puzzled",
+   "zh": "困惑的,茫然的,搞糊涂的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep62/f3.jpg"
+  },
+  {
+   "term": "recognize",
+   "zh": "认出,识别(人、物等)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep62/f1.jpg"
+  },
+  {
+   "term": "taught",
+   "zh": "讲授,教 (teach-taught)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep62/f1.jpg"
+  },
+  {
+   "term": "common",
+   "zh": "1. 共同的,共有的,(2. 普通的,常见的)",
+   "ipa": "ˈkɒmən",
+   "illustration": "assets/adv_frames/ep62/f1.jpg"
+  },
+  {
+   "term": "in common",
+   "zh": "共同地,共有地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep62/f3.jpg"
+  },
+  {
+   "term": "all sorts",
+   "zh": "各式各样的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep62/f1.jpg"
+  },
+  {
+   "term": "work",
+   "zh": "工作,忙于...",
+   "ipa": "wɜː(r)k",
+   "illustration": "assets/adv_frames/ep62/f1.jpg"
+  },
+  {
+   "term": "confusion",
+   "zh": "困惑,慌乱",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep62/f3.jpg"
+  },
+  {
+   "term": "spread",
+   "zh": "1. 传开,蔓延,(2. (把被折起的东西)张开,展开,摊开)",
+   "ipa": "spred",
+   "illustration": "assets/adv_frames/ep62/f1.jpg"
+  },
+  {
+   "term": "lower",
+   "zh": "降低,放下",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep62/f0.jpg"
+  }
+ ],
+ "wordPool": [
+  {
+   "term": "meditate",
+   "zh": "冥想,沉思",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep62/f1.jpg"
+  },
+  {
+   "term": "glance",
+   "zh": "粗略地一瞥,扫视",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep62/f1.jpg"
+  },
+  {
+   "term": "puzzled",
+   "zh": "困惑的,茫然的,搞糊涂的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep62/f3.jpg"
+  },
+  {
+   "term": "recognize",
+   "zh": "认出,识别(人、物等)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep62/f1.jpg"
+  },
+  {
+   "term": "taught",
+   "zh": "讲授,教 (teach-taught)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep62/f1.jpg"
+  },
+  {
+   "term": "common",
+   "zh": "1. 共同的,共有的,(2. 普通的,常见的)",
+   "ipa": "ˈkɒmən",
+   "illustration": "assets/adv_frames/ep62/f1.jpg"
+  },
+  {
+   "term": "in common",
+   "zh": "共同地,共有地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep62/f3.jpg"
+  },
+  {
+   "term": "all sorts",
+   "zh": "各式各样的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep62/f1.jpg"
+  },
+  {
+   "term": "work",
+   "zh": "工作,忙于...",
+   "ipa": "wɜː(r)k",
+   "illustration": "assets/adv_frames/ep62/f1.jpg"
+  },
+  {
+   "term": "confusion",
+   "zh": "困惑,慌乱",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep62/f3.jpg"
+  },
+  {
+   "term": "spread",
+   "zh": "1. 传开,蔓延,(2. (把被折起的东西)张开,展开,摊开)",
+   "ipa": "spred",
+   "illustration": "assets/adv_frames/ep62/f1.jpg"
+  },
+  {
+   "term": "lower",
+   "zh": "降低,放下",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep62/f0.jpg"
+  },
+  {
+   "term": "flop",
+   "zh": "1. (鱼等)扑腾乱跳,(2. 猛然地坐下(或躺下、跪下))",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep62/f0.jpg"
+  },
+  {
+   "term": "lotus",
+   "zh": "莲花(植物)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep62/f0.jpg"
+  },
+  {
+   "term": "escape",
+   "zh": "逃亡,逃跑",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep62/f0.jpg"
+  },
+  {
+   "term": "correct",
+   "zh": "1. 正确的,对的,(2. 改正,纠正,)",
+   "ipa": "kəˈrekt",
+   "illustration": "assets/adv_frames/ep62/f1.jpg"
+  },
+  {
+   "term": "flew off",
+   "zh": "飞离,跑掉",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep62/f1.jpg"
+  },
+  {
+   "term": "now that",
+   "zh": "既然,由于",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep62/f2.jpg"
+  },
+  {
+   "term": "smash",
+   "zh": "打碎,打破",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep62/f3.jpg"
+  },
+  {
+   "term": "villager",
+   "zh": "村民",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep62/f2.jpg"
+  },
+  {
+   "term": "rush",
+   "zh": "1. 匆忙,紧急,(2. 冲,奔)",
+   "ipa": "rʌʃ",
+   "illustration": "assets/adv_frames/ep62/f1.jpg"
+  },
+  {
+   "term": "chop",
+   "zh": "1. 砍,劈,(2. 切细,剁碎)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep62/f3.jpg"
+  },
+  {
+   "term": "tool",
+   "zh": "(制作物品的)工具,器具",
+   "ipa": "tuːl",
+   "illustration": "assets/adv_frames/ep62/f3.jpg"
+  },
+  {
+   "term": "busy",
+   "zh": "忙碌的,繁忙的",
+   "ipa": "ˈbɪzi",
+   "illustration": "assets/adv_frames/ep62/f3.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "meditate",
+     "zh": "冥想,沉思",
+     "sprite": "imp"
+    },
+    {
+     "term": "glance",
+     "zh": "粗略地一瞥,扫视",
+     "sprite": "imp"
+    },
+    {
+     "term": "puzzled",
+     "zh": "困惑的,茫然的,搞糊涂的",
+     "sprite": "imp"
+    },
+    {
+     "term": "recognize",
+     "zh": "认出,识别(人、物等)",
+     "sprite": "imp"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "taught",
+     "zh": "讲授,教 (teach-taught)",
+     "sprite": "imp"
+    },
+    {
+     "term": "common",
+     "zh": "1. 共同的,共有的,(2. 普通的,常见的)",
+     "sprite": "imp"
+    },
+    {
+     "term": "in common",
+     "zh": "共同地,共有地",
+     "sprite": "imp"
+    },
+    {
+     "term": "all sorts",
+     "zh": "各式各样的",
+     "sprite": "imp"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "work",
+    "zh": "工作,忙于..."
+   },
+   {
+    "term": "confusion",
+    "zh": "困惑,慌乱"
+   },
+   {
+    "term": "spread",
+    "zh": "1. 传开,蔓延,(2. (把被折起的东西)张开,展开,摊开)"
+   },
+   {
+    "term": "lower",
+    "zh": "降低,放下"
+   }
+  ],
+  "taunts": [
+   "guanyin.1",
+   "guanyin.2",
+   "guanyin.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=62",
+ "npcDialogue": {
+  "intro": {
+   "id": "ep62-map-intro",
+   "lines": [
+    {
+     "id": "ep62-map-intro-1",
+     "sourceNodeId": "n001",
+     "speaker": "narrator",
+     "textEn": "Wukong landed on Mount Potalaka.",
+     "textZh": "悟空降落在普陀山。",
+     "audioRef": "sent_en:Wukong landed on Mount Potalaka.",
+     "audioStart": 11.0,
+     "audioEnd": 16.573
+    },
+    {
+     "id": "ep62-map-intro-2",
+     "sourceNodeId": "n002",
+     "speaker": "narrator",
+     "textEn": "A young man was meditating in the garden.",
+     "textZh": "一个年轻人在花园里打坐。",
+     "audioRef": "sent_en:A young man was meditating in the garden.",
+     "audioStart": 16.574,
+     "audioEnd": 19.687
+    }
+   ]
+  },
+  "quiz": {
+   "id": "ep62-map-quiz",
+   "lines": [
+    {
+     "id": "ep62-map-quiz-1",
+     "sourceNodeId": "n021",
+     "speaker": "narrator",
+     "textEn": "\"This basket has magical powers,\" said Guanyin.",
+     "textZh": "\"这个篮子拥有神奇的力量,\"观音说道。",
+     "audioRef": "sent_en:\"This basket has magical powers,\" said Guanyin.",
+     "audioStart": 94.318,
+     "audioEnd": 98.204
+    }
+   ],
+   "question": {
+    "id": "ep062-official-quiz-001",
+    "textEn": "which is not true?",
+    "textZh": "哪一项是不正确的？"
+   },
+   "word": {
+    "term": "meditate",
+    "zh": "冥想,沉思",
+    "ipa": ""
+   },
+   "options": [
+    {
+     "id": "a",
+     "textEn": "wukong chopped down trees.",
+     "textZh": "悟空砍伐了树。",
+     "correct": true,
+     "feedback": "对了。悟空砍伐了树。"
+    },
+    {
+     "id": "b",
+     "textEn": "guanyin helped capture the demon.",
+     "textZh": "观音帮助抓住了妖怪。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    },
+    {
+     "id": "c",
+     "textEn": "the villagers held a feast.",
+     "textZh": "村民们举行了宴会。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    }
+   ],
+   "lessonCardId": "ep062-official-quiz-001"
+  }
+ },
+ "map": {
+  "theme": "generic",
+  "coordinateSpace": "world-normalized",
+  "worldTiles": 2,
+  "regions": {
+   "hero": 0,
+   "waves": [
+    0,
+    1
+   ],
+   "npc": {
+    "intro": 0,
+    "quiz": 1
+   },
+   "boss": 3
+  },
+  "walkable": {
+   "space": "world",
+   "x": 0.0,
+   "y": 0.16,
+   "w": 1.0,
+   "h": 0.79,
+   "rects": [
+    {
+     "x": 0.0,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.66,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    }
+   ]
+  },
+  "heroSpawn": {
+   "x": 0.06,
+   "y": 0.31
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.31,
+    "y": 0.23
+   },
+   {
+    "x": 0.38,
+    "y": 0.27
+   },
+   {
+    "x": 0.34,
+    "y": 0.33
+   },
+   {
+    "x": 0.41,
+    "y": 0.24
+   }
+  ],
+  "waveSpawns": [
+   [
+    {
+     "x": 0.31,
+     "y": 0.23
+    },
+    {
+     "x": 0.38,
+     "y": 0.27
+    },
+    {
+     "x": 0.34,
+     "y": 0.33
+    },
+    {
+     "x": 0.41,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.81,
+     "y": 0.23
+    },
+    {
+     "x": 0.88,
+     "y": 0.27
+    },
+    {
+     "x": 0.84,
+     "y": 0.33
+    },
+    {
+     "x": 0.91,
+     "y": 0.24
+    }
+   ]
+  ],
+  "orbSpawns": [
+   [
+    {
+     "x": 0.11,
+     "y": 0.25
+    },
+    {
+     "x": 0.16,
+     "y": 0.31
+    },
+    {
+     "x": 0.12,
+     "y": 0.37
+    },
+    {
+     "x": 0.18,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.61,
+     "y": 0.25
+    },
+    {
+     "x": 0.66,
+     "y": 0.31
+    },
+    {
+     "x": 0.62,
+     "y": 0.37
+    },
+    {
+     "x": 0.68,
+     "y": 0.24
+    }
+   ]
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "imp",
+    "nameZh": "小妖",
+    "x": 0.08,
+    "y": 0.26
+   },
+   {
+    "role": "quiz",
+    "sprite": "imp",
+    "nameZh": "小妖",
+    "x": 0.7,
+    "y": 0.39
+   }
+  ],
+  "bossSpot": {
+   "x": 0.94,
+   "y": 0.85
+  }
+ }
+}

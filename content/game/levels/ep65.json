@@ -1,0 +1,584 @@
+{
+ "schema_version": 1,
+ "ep": 65,
+ "title": {
+  "en": "The Metal Ring",
+  "zh": "西游记 第65集"
+ },
+ "collection": "c09",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "imp",
+   "nameZh": "小妖",
+   "mode": "sparring",
+   "sprite": "imp"
+  },
+  "minors": [
+   {
+    "id": "imp",
+    "nameZh": "小妖",
+    "sprite": "imp"
+   }
+  ]
+ },
+ "background": {
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep65/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "The demon tied up the Tang Monk in a dark room.",
+   "textZh": "邪魔将唐僧囚禁在一间阴暗的房间里。",
+   "illustration": "assets/adv_frames/ep65/f1.jpg",
+   "sourceNodeId": "n001",
+   "audioRef": "sent_en:The demon tied up the Tang Monk in a dark room."
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "Then the demon dragged in Bajie and Wujing.",
+   "textZh": "随后,那恶魔将八戒和悟净拖了进来。",
+   "illustration": "assets/adv_frames/ep65/f2.jpg",
+   "sourceNodeId": "n002",
+   "audioRef": "sent_en:Then the demon dragged in Bajie and Wujing."
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "drag",
+   "zh": "拖曳,慢吞吞地行进",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep65/f2.jpg"
+  },
+  {
+   "term": "dump",
+   "zh": "倾倒",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep65/f0.jpg"
+  },
+  {
+   "term": "approach",
+   "zh": "接近,靠近",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep65/f0.jpg"
+  },
+  {
+   "term": "let ...",
+   "zh": "放走",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep65/f2.jpg"
+  },
+  {
+   "term": "face",
+   "zh": "1. 面向,面对,(2. 脸)",
+   "ipa": "feɪs",
+   "illustration": "assets/adv_frames/ep65/f1.jpg"
+  },
+  {
+   "term": "horned",
+   "zh": "有角的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep65/f0.jpg"
+  },
+  {
+   "term": "buffalo",
+   "zh": "(栖息于北美洲大陆的)野牛",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep65/f0.jpg"
+  },
+  {
+   "term": "learn",
+   "zh": "得知",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep65/f2.jpg"
+  },
+  {
+   "term": "kidnap",
+   "zh": "绑架,诱拐",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep65/f2.jpg"
+  },
+  {
+   "term": "destroy",
+   "zh": "破坏,毁坏",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep65/f1.jpg"
+  },
+  {
+   "term": "smirk",
+   "zh": "奸笑,假笑,傻笑",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep65/f3.jpg"
+  },
+  {
+   "term": "nervous",
+   "zh": "紧张不安的",
+   "ipa": "ˈnɜː(r)vəs",
+   "illustration": "assets/adv_frames/ep65/f1.jpg"
+  }
+ ],
+ "wordPool": [
+  {
+   "term": "drag",
+   "zh": "拖曳,慢吞吞地行进",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep65/f2.jpg"
+  },
+  {
+   "term": "dump",
+   "zh": "倾倒",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep65/f0.jpg"
+  },
+  {
+   "term": "approach",
+   "zh": "接近,靠近",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep65/f0.jpg"
+  },
+  {
+   "term": "let ...",
+   "zh": "放走",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep65/f2.jpg"
+  },
+  {
+   "term": "face",
+   "zh": "1. 面向,面对,(2. 脸)",
+   "ipa": "feɪs",
+   "illustration": "assets/adv_frames/ep65/f1.jpg"
+  },
+  {
+   "term": "horned",
+   "zh": "有角的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep65/f0.jpg"
+  },
+  {
+   "term": "buffalo",
+   "zh": "(栖息于北美洲大陆的)野牛",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep65/f0.jpg"
+  },
+  {
+   "term": "learn",
+   "zh": "得知",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep65/f2.jpg"
+  },
+  {
+   "term": "kidnap",
+   "zh": "绑架,诱拐",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep65/f2.jpg"
+  },
+  {
+   "term": "destroy",
+   "zh": "破坏,毁坏",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep65/f1.jpg"
+  },
+  {
+   "term": "smirk",
+   "zh": "奸笑,假笑,傻笑",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep65/f3.jpg"
+  },
+  {
+   "term": "nervous",
+   "zh": "紧张不安的",
+   "ipa": "ˈnɜː(r)vəs",
+   "illustration": "assets/adv_frames/ep65/f1.jpg"
+  },
+  {
+   "term": "defeat",
+   "zh": "战胜,击败",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep65/f2.jpg"
+  },
+  {
+   "term": "stood",
+   "zh": "有自信的站着,昂首站立(stand tall-stood tall)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep65/f0.jpg"
+  },
+  {
+   "term": "once",
+   "zh": "一...(就)...,一旦...(就...)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep65/f3.jpg"
+  },
+  {
+   "term": "sleeve",
+   "zh": "(衣服的)袖子",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep65/f2.jpg"
+  },
+  {
+   "term": "reveal",
+   "zh": "揭露,暴露,泄露(隐藏的事物)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep65/f2.jpg"
+  },
+  {
+   "term": "illusion",
+   "zh": "错觉,幻觉",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep65/f0.jpg"
+  },
+  {
+   "term": "trick",
+   "zh": "欺骗",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep65/f0.jpg"
+  },
+  {
+   "term": "warn",
+   "zh": "警告",
+   "ipa": "wɔː(r)n",
+   "illustration": "assets/adv_frames/ep65/f1.jpg"
+  },
+  {
+   "term": "pile",
+   "zh": "一堆",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep65/f1.jpg"
+  },
+  {
+   "term": "rubble",
+   "zh": "(倒塌建筑物的)碎石,瓦砾",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep65/f1.jpg"
+  },
+  {
+   "term": "rude",
+   "zh": "粗鲁的,无礼的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep65/f3.jpg"
+  },
+  {
+   "term": "fold",
+   "zh": "1. 弯曲着,弓着(脚,身体等),(2. 折叠(纸,布等))",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep65/f1.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "drag",
+     "zh": "拖曳,慢吞吞地行进",
+     "sprite": "imp"
+    },
+    {
+     "term": "dump",
+     "zh": "倾倒",
+     "sprite": "imp"
+    },
+    {
+     "term": "approach",
+     "zh": "接近,靠近",
+     "sprite": "imp"
+    },
+    {
+     "term": "let ...",
+     "zh": "放走",
+     "sprite": "imp"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "face",
+     "zh": "1. 面向,面对,(2. 脸)",
+     "sprite": "imp"
+    },
+    {
+     "term": "horned",
+     "zh": "有角的",
+     "sprite": "imp"
+    },
+    {
+     "term": "buffalo",
+     "zh": "(栖息于北美洲大陆的)野牛",
+     "sprite": "imp"
+    },
+    {
+     "term": "learn",
+     "zh": "得知",
+     "sprite": "imp"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "kidnap",
+    "zh": "绑架,诱拐"
+   },
+   {
+    "term": "destroy",
+    "zh": "破坏,毁坏"
+   },
+   {
+    "term": "smirk",
+    "zh": "奸笑,假笑,傻笑"
+   },
+   {
+    "term": "nervous",
+    "zh": "紧张不安的"
+   }
+  ],
+  "taunts": [
+   "imp.1",
+   "imp.2",
+   "imp.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=65",
+ "npcDialogue": {
+  "intro": {
+   "id": "ep65-map-intro",
+   "lines": [
+    {
+     "id": "ep65-map-intro-1",
+     "sourceNodeId": "n001",
+     "speaker": "narrator",
+     "textEn": "The demon tied up the Tang Monk in a dark room.",
+     "textZh": "邪魔将唐僧囚禁在一间阴暗的房间里。",
+     "audioRef": "sent_en:The demon tied up the Tang Monk in a dark room.",
+     "audioStart": 11.0,
+     "audioEnd": 17.511
+    },
+    {
+     "id": "ep65-map-intro-2",
+     "sourceNodeId": "n002",
+     "speaker": "narrator",
+     "textEn": "Then the demon dragged in Bajie and Wujing.",
+     "textZh": "随后,那恶魔将八戒和悟净拖了进来。",
+     "audioRef": "sent_en:Then the demon dragged in Bajie and Wujing.",
+     "audioStart": 17.512,
+     "audioEnd": 21.19
+    }
+   ]
+  },
+  "quiz": {
+   "id": "ep65-map-quiz",
+   "lines": [
+    {
+     "id": "ep65-map-quiz-1",
+     "sourceNodeId": "n030",
+     "speaker": "narrator",
+     "textEn": "He lifted his sleeve, revealing a metal ring around his arm.",
+     "textZh": "他抬起了袖子,露出腕间的一枚金属戒指。",
+     "audioRef": "sent_en:He lifted his sleeve, revealing a metal ring around his arm.",
+     "audioStart": 125.621,
+     "audioEnd": 132.262
+    }
+   ],
+   "question": {
+    "id": "ep065-official-quiz-001",
+    "textEn": "which is true?",
+    "textZh": "哪一个是真的？"
+   },
+   "word": {
+    "term": "drag",
+    "zh": "拖曳,慢吞吞地行进",
+    "ipa": ""
+   },
+   "options": [
+    {
+     "id": "a",
+     "textEn": "the demon had a ring up his sleeve.",
+     "textZh": "那个恶魔手里藏着一个诡计。",
+     "correct": true,
+     "feedback": "对了。那个恶魔手里藏着一个诡计。"
+    },
+    {
+     "id": "b",
+     "textEn": "the tang monk stole a vest.",
+     "textZh": "唐僧偷了一件背心。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    },
+    {
+     "id": "c",
+     "textEn": "bajie had a secret weapon.",
+     "textZh": "八戒有一个秘密武器。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    }
+   ],
+   "lessonCardId": "ep065-official-quiz-001"
+  }
+ },
+ "map": {
+  "theme": "generic",
+  "coordinateSpace": "world-normalized",
+  "worldTiles": 2,
+  "regions": {
+   "hero": 0,
+   "waves": [
+    0,
+    1
+   ],
+   "npc": {
+    "intro": 0,
+    "quiz": 1
+   },
+   "boss": 3
+  },
+  "walkable": {
+   "space": "world",
+   "x": 0.0,
+   "y": 0.16,
+   "w": 1.0,
+   "h": 0.79,
+   "rects": [
+    {
+     "x": 0.0,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.66,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    }
+   ]
+  },
+  "heroSpawn": {
+   "x": 0.06,
+   "y": 0.31
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.31,
+    "y": 0.23
+   },
+   {
+    "x": 0.38,
+    "y": 0.27
+   },
+   {
+    "x": 0.34,
+    "y": 0.33
+   },
+   {
+    "x": 0.41,
+    "y": 0.24
+   }
+  ],
+  "waveSpawns": [
+   [
+    {
+     "x": 0.31,
+     "y": 0.23
+    },
+    {
+     "x": 0.38,
+     "y": 0.27
+    },
+    {
+     "x": 0.34,
+     "y": 0.33
+    },
+    {
+     "x": 0.41,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.81,
+     "y": 0.23
+    },
+    {
+     "x": 0.88,
+     "y": 0.27
+    },
+    {
+     "x": 0.84,
+     "y": 0.33
+    },
+    {
+     "x": 0.91,
+     "y": 0.24
+    }
+   ]
+  ],
+  "orbSpawns": [
+   [
+    {
+     "x": 0.11,
+     "y": 0.25
+    },
+    {
+     "x": 0.16,
+     "y": 0.31
+    },
+    {
+     "x": 0.12,
+     "y": 0.37
+    },
+    {
+     "x": 0.18,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.61,
+     "y": 0.25
+    },
+    {
+     "x": 0.66,
+     "y": 0.31
+    },
+    {
+     "x": 0.62,
+     "y": 0.37
+    },
+    {
+     "x": 0.68,
+     "y": 0.24
+    }
+   ]
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "imp",
+    "nameZh": "小妖",
+    "x": 0.08,
+    "y": 0.26
+   },
+   {
+    "role": "quiz",
+    "sprite": "imp",
+    "nameZh": "小妖",
+    "x": 0.7,
+    "y": 0.39
+   }
+  ],
+  "bossSpot": {
+   "x": 0.94,
+   "y": 0.85
+  }
+ }
+}

@@ -1,0 +1,584 @@
+{
+ "schema_version": 1,
+ "ep": 87,
+ "title": {
+  "en": "The Three Young Women",
+  "zh": "西游记 第87集"
+ },
+ "collection": "c11",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "spiderdemon",
+   "nameZh": "蜘蛛精",
+   "mode": "sparring",
+   "sprite": "spiderdemon"
+  },
+  "minors": [
+   {
+    "id": "imp",
+    "nameZh": "小妖",
+    "sprite": "imp"
+   }
+  ]
+ },
+ "background": {
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep87/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "Wukong and his companions were walking through a forest.",
+   "textZh": "悟空与他的同伴们正漫步于一片森林之中。",
+   "illustration": "assets/adv_frames/ep87/f1.jpg",
+   "sourceNodeId": "n001",
+   "audioRef": "sent_en:Wukong and his companions were walking through a forest."
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "\"I'm glad the road goes through this shady forest,\" said the Tang Monk.",
+   "textZh": "\"很高兴这条路穿过这片阴凉的森林,\"唐僧说道。",
+   "illustration": "assets/adv_frames/ep87/f2.jpg",
+   "sourceNodeId": "n002",
+   "audioRef": "sent_en:\"I'm glad the road goes through this shady forest,\" said the Tang Monk."
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "shady",
+   "zh": "成荫的,多荫的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep87/f2.jpg"
+  },
+  {
+   "term": "shade",
+   "zh": "1. 荫,(2. (色彩的)浓淡,色度,3. 遮蔽,蔽荫)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep87/f0.jpg"
+  },
+  {
+   "term": "suspiciously",
+   "zh": "怀疑地,猜疑地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep87/f1.jpg"
+  },
+  {
+   "term": "flat",
+   "zh": "平的,平坦的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep87/f3.jpg"
+  },
+  {
+   "term": "trip",
+   "zh": "1. 绊,绊倒,(2. (短途)旅行)",
+   "ipa": "trɪp",
+   "illustration": "assets/adv_frames/ep87/f0.jpg"
+  },
+  {
+   "term": "ahead",
+   "zh": "在前,向前",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep87/f1.jpg"
+  },
+  {
+   "term": "wonder",
+   "zh": "对......感到好奇,想知道",
+   "ipa": "ˈwʌndə(r)",
+   "illustration": "assets/adv_frames/ep87/f0.jpg"
+  },
+  {
+   "term": "laughter",
+   "zh": "笑声,笑",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep87/f3.jpg"
+  },
+  {
+   "term": "head",
+   "zh": "1. (朝特定方向)出发,前进,(2. 头)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep87/f2.jpg"
+  },
+  {
+   "term": "frighten",
+   "zh": "使...受到惊吓",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep87/f1.jpg"
+  },
+  {
+   "term": "echo",
+   "zh": "1. 重复(他人的话、意见等),(2. 回音,回响)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep87/f2.jpg"
+  },
+  {
+   "term": "after all",
+   "zh": "1. 毕竟、总之,(2. (与预期相反)到底,结果)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep87/f0.jpg"
+  }
+ ],
+ "wordPool": [
+  {
+   "term": "shady",
+   "zh": "成荫的,多荫的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep87/f2.jpg"
+  },
+  {
+   "term": "shade",
+   "zh": "1. 荫,(2. (色彩的)浓淡,色度,3. 遮蔽,蔽荫)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep87/f0.jpg"
+  },
+  {
+   "term": "suspiciously",
+   "zh": "怀疑地,猜疑地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep87/f1.jpg"
+  },
+  {
+   "term": "flat",
+   "zh": "平的,平坦的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep87/f3.jpg"
+  },
+  {
+   "term": "trip",
+   "zh": "1. 绊,绊倒,(2. (短途)旅行)",
+   "ipa": "trɪp",
+   "illustration": "assets/adv_frames/ep87/f0.jpg"
+  },
+  {
+   "term": "ahead",
+   "zh": "在前,向前",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep87/f1.jpg"
+  },
+  {
+   "term": "wonder",
+   "zh": "对......感到好奇,想知道",
+   "ipa": "ˈwʌndə(r)",
+   "illustration": "assets/adv_frames/ep87/f0.jpg"
+  },
+  {
+   "term": "laughter",
+   "zh": "笑声,笑",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep87/f3.jpg"
+  },
+  {
+   "term": "head",
+   "zh": "1. (朝特定方向)出发,前进,(2. 头)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep87/f2.jpg"
+  },
+  {
+   "term": "frighten",
+   "zh": "使...受到惊吓",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep87/f1.jpg"
+  },
+  {
+   "term": "echo",
+   "zh": "1. 重复(他人的话、意见等),(2. 回音,回响)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep87/f2.jpg"
+  },
+  {
+   "term": "after all",
+   "zh": "1. 毕竟、总之,(2. (与预期相反)到底,结果)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep87/f0.jpg"
+  },
+  {
+   "term": "scary",
+   "zh": "可怕的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep87/f0.jpg"
+  },
+  {
+   "term": "approach",
+   "zh": "接近,靠近",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep87/f1.jpg"
+  },
+  {
+   "term": "visitor",
+   "zh": "拜访者,客人",
+   "ipa": "ˈvɪzɪtə(r)",
+   "illustration": "assets/adv_frames/ep87/f3.jpg"
+  },
+  {
+   "term": "third",
+   "zh": "第三个(人或物)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep87/f0.jpg"
+  },
+  {
+   "term": "spare",
+   "zh": "1. 分出,腾出(时间、金钱等),(2. 剩下的,备用的)",
+   "ipa": "speə",
+   "illustration": "assets/adv_frames/ep87/f3.jpg"
+  },
+  {
+   "term": "plenty",
+   "zh": "丰富,大量",
+   "ipa": "ˈplenti",
+   "illustration": "assets/adv_frames/ep87/f3.jpg"
+  },
+  {
+   "term": "as soon as",
+   "zh": "一...就...",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep87/f0.jpg"
+  },
+  {
+   "term": "interior",
+   "zh": "1. 内部,里面,(2. 室内装修)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep87/f1.jpg"
+  },
+  {
+   "term": "dreary",
+   "zh": "沉闷的,阴森的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep87/f1.jpg"
+  },
+  {
+   "term": "cobweb",
+   "zh": "蜘蛛网",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep87/f2.jpg"
+  },
+  {
+   "term": "nervously",
+   "zh": "焦急地,神经质地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep87/f1.jpg"
+  },
+  {
+   "term": "pull out",
+   "zh": "1. 抽出,拿出,(2. 拔出(牙齿、塞子等))",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep87/f3.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "shady",
+     "zh": "成荫的,多荫的",
+     "sprite": "imp"
+    },
+    {
+     "term": "shade",
+     "zh": "1. 荫,(2. (色彩的)浓淡,色度,3. 遮蔽,蔽荫)",
+     "sprite": "imp"
+    },
+    {
+     "term": "suspiciously",
+     "zh": "怀疑地,猜疑地",
+     "sprite": "imp"
+    },
+    {
+     "term": "flat",
+     "zh": "平的,平坦的",
+     "sprite": "imp"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "trip",
+     "zh": "1. 绊,绊倒,(2. (短途)旅行)",
+     "sprite": "imp"
+    },
+    {
+     "term": "ahead",
+     "zh": "在前,向前",
+     "sprite": "imp"
+    },
+    {
+     "term": "wonder",
+     "zh": "对......感到好奇,想知道",
+     "sprite": "imp"
+    },
+    {
+     "term": "laughter",
+     "zh": "笑声,笑",
+     "sprite": "imp"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "head",
+    "zh": "1. (朝特定方向)出发,前进,(2. 头)"
+   },
+   {
+    "term": "frighten",
+    "zh": "使...受到惊吓"
+   },
+   {
+    "term": "echo",
+    "zh": "1. 重复(他人的话、意见等),(2. 回音,回响)"
+   },
+   {
+    "term": "after all",
+    "zh": "1. 毕竟、总之,(2. (与预期相反)到底,结果)"
+   }
+  ],
+  "taunts": [
+   "spiderdemon.1",
+   "spiderdemon.2",
+   "spiderdemon.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=87",
+ "npcDialogue": {
+  "intro": {
+   "id": "ep87-map-intro",
+   "lines": [
+    {
+     "id": "ep87-map-intro-1",
+     "sourceNodeId": "n001",
+     "speaker": "narrator",
+     "textEn": "Wukong and his companions were walking through a forest.",
+     "textZh": "悟空与他的同伴们正漫步于一片森林之中。",
+     "audioRef": "sent_en:Wukong and his companions were walking through a forest.",
+     "audioStart": 11.007,
+     "audioEnd": 18.561
+    },
+    {
+     "id": "ep87-map-intro-2",
+     "sourceNodeId": "n002",
+     "speaker": "narrator",
+     "textEn": "\"I'm glad the road goes through this shady forest,\" said the Tang Monk.",
+     "textZh": "\"很高兴这条路穿过这片阴凉的森林,\"唐僧说道。",
+     "audioRef": "sent_en:\"I'm glad the road goes through this shady forest,\" said the Tang Monk.",
+     "audioStart": 18.562,
+     "audioEnd": 22.824
+    }
+   ]
+  },
+  "quiz": {
+   "id": "ep87-map-quiz",
+   "lines": [
+    {
+     "id": "ep87-map-quiz-1",
+     "sourceNodeId": "n043",
+     "speaker": "narrator",
+     "textEn": "The three young women led the Tang Monk into their house.",
+     "textZh": "这三位年轻女子引领唐僧进入了她们的家中。",
+     "audioRef": "sent_en:The three young women led the Tang Monk into their house.",
+     "audioStart": 173.606,
+     "audioEnd": 179.948
+    }
+   ],
+   "question": {
+    "id": "ep087-official-quiz-001",
+    "textEn": "which is most important from the story?",
+    "textZh": "故事中什么最重要？"
+   },
+   "word": {
+    "term": "shady",
+    "zh": "成荫的,多荫的",
+    "ipa": ""
+   },
+   "options": [
+    {
+     "id": "a",
+     "textEn": "the tang monk was captured.",
+     "textZh": "唐僧被抓了。",
+     "correct": true,
+     "feedback": "对了。唐僧被抓了。"
+    },
+    {
+     "id": "b",
+     "textEn": "bajie was hungry.",
+     "textZh": "八戒饿了。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    },
+    {
+     "id": "c",
+     "textEn": "wukong was scary.",
+     "textZh": "悟空很可怕。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    }
+   ],
+   "lessonCardId": "ep087-official-quiz-001"
+  }
+ },
+ "map": {
+  "theme": "generic",
+  "coordinateSpace": "world-normalized",
+  "worldTiles": 2,
+  "regions": {
+   "hero": 0,
+   "waves": [
+    0,
+    1
+   ],
+   "npc": {
+    "intro": 0,
+    "quiz": 1
+   },
+   "boss": 3
+  },
+  "walkable": {
+   "space": "world",
+   "x": 0.0,
+   "y": 0.16,
+   "w": 1.0,
+   "h": 0.79,
+   "rects": [
+    {
+     "x": 0.0,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.66,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    }
+   ]
+  },
+  "heroSpawn": {
+   "x": 0.06,
+   "y": 0.31
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.31,
+    "y": 0.23
+   },
+   {
+    "x": 0.38,
+    "y": 0.27
+   },
+   {
+    "x": 0.34,
+    "y": 0.33
+   },
+   {
+    "x": 0.41,
+    "y": 0.24
+   }
+  ],
+  "waveSpawns": [
+   [
+    {
+     "x": 0.31,
+     "y": 0.23
+    },
+    {
+     "x": 0.38,
+     "y": 0.27
+    },
+    {
+     "x": 0.34,
+     "y": 0.33
+    },
+    {
+     "x": 0.41,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.81,
+     "y": 0.23
+    },
+    {
+     "x": 0.88,
+     "y": 0.27
+    },
+    {
+     "x": 0.84,
+     "y": 0.33
+    },
+    {
+     "x": 0.91,
+     "y": 0.24
+    }
+   ]
+  ],
+  "orbSpawns": [
+   [
+    {
+     "x": 0.11,
+     "y": 0.25
+    },
+    {
+     "x": 0.16,
+     "y": 0.31
+    },
+    {
+     "x": 0.12,
+     "y": 0.37
+    },
+    {
+     "x": 0.18,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.61,
+     "y": 0.25
+    },
+    {
+     "x": 0.66,
+     "y": 0.31
+    },
+    {
+     "x": 0.62,
+     "y": 0.37
+    },
+    {
+     "x": 0.68,
+     "y": 0.24
+    }
+   ]
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "imp",
+    "nameZh": "小妖",
+    "x": 0.08,
+    "y": 0.26
+   },
+   {
+    "role": "quiz",
+    "sprite": "imp",
+    "nameZh": "小妖",
+    "x": 0.7,
+    "y": 0.39
+   }
+  ],
+  "bossSpot": {
+   "x": 0.94,
+   "y": 0.85
+  }
+ }
+}

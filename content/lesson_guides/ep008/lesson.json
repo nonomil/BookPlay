@@ -1,0 +1,2859 @@
+{
+  "schema_version": 1,
+  "episode": 8,
+  "title": {
+    "en": "A Job in Heaven",
+    "zh": "西游记 第8集"
+  },
+  "sources": [
+    {
+      "kind": "courseware_main_pptx",
+      "file": "G:\\Game\\BookPlay书戏\\data\\西游记课件\\3.3西游记  Journey to the West PPT课件\\008_Journey to the West 8_A Job in Heaven.pptx",
+      "sha256": "cf70acd3b554c5d7da555f4582eaec9ac5ca904428fee4f81a774141c2750993",
+      "pages": 17
+    },
+    {
+      "kind": "official_quiz_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+      "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929",
+      "pages": 131
+    },
+    {
+      "kind": "intensive_reader_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\02-西游记精读版台词本\\1、带标注版PDF 108集\\008 天庭任职 上.pdf",
+      "sha256": "52302322bce9764ab7860d42d3a2065afc65a1f9d04d5ff47627e65e8aab3469",
+      "pages": 4
+    },
+    {
+      "kind": "intensive_reader_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\02-西游记精读版台词本\\1、带标注版PDF 108集\\008 天庭任职 下.pdf",
+      "sha256": "9b38447f97c1b2c7a41eedf2ede76bd2470890b19e644b877dfd83aafb8763a1",
+      "pages": 3
+    },
+    {
+      "kind": "courseware_teacher_pptx",
+      "file": "G:\\Game\\BookPlay书戏\\data\\西游记课件\\西游记外教培训11集课件\\西游记外教E008.pptx",
+      "sha256": "1281eb008d258ed79fb1c985c7ab3f628f843e6e665d935e56488f6368773c2c",
+      "pages": 21
+    },
+    {
+      "kind": "courseware_screenshots_pptx",
+      "file": "G:\\Game\\BookPlay书戏\\data\\西游记课件\\西游记-外教课动画截图\\Journey to the West 008  A Job in Heaven_20240106163618.pptx",
+      "sha256": "a15a43c54765efa2138ac360490f3c0d87b5e8e0e2830d128f86936e387d0a1e",
+      "pages": 42
+    }
+  ],
+  "cards": [
+    {
+      "card_id": "ep008-official-quiz-001",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 1,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "who did not come to see the jade emperor?",
+        "zh": "谁没有来拜见玉皇大帝？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "the demon of chaos",
+            "zh": "混沌恶魔"
+          },
+          {
+            "id": "b",
+            "en": "the dragon king",
+            "zh": "龙王"
+          },
+          {
+            "id": "c",
+            "en": "the judge of the dead",
+            "zh": "死者的审判者"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n004",
+            "quote": "\"The Dragon King of the Eastern Sea is here to see you.\""
+          },
+          {
+            "node_id": "n006",
+            "quote": "The Dragon King entered and bowed."
+          },
+          {
+            "node_id": "n009",
+            "quote": "\"The Judge of the Dead would like to speak with you, Your Majesty.\""
+          },
+          {
+            "node_id": "n010",
+            "quote": "The judge came in and bowed."
+          },
+          {
+            "node_id": "n011",
+            "quote": "\"A monkey named Sun Wukong crossed out his name in the Directory. I beg you to punish him!\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 10,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep008-official-quiz-002",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 2,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "why did the jade emperor want to punish wukong?",
+        "zh": "玉皇为什么要惩罚悟空？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "he caused too much trouble.",
+            "zh": "他惹了太多麻烦。"
+          },
+          {
+            "id": "b",
+            "en": "he became too powerful.",
+            "zh": "他变得太强大了。"
+          },
+          {
+            "id": "c",
+            "en": "he took his job very seriously.",
+            "zh": "他对他的工作非常认真。"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n011",
+            "quote": "\"A monkey named Sun Wukong crossed out his name in the Directory. I beg you to punish him!\""
+          },
+          {
+            "node_id": "n012",
+            "quote": "The Jade Emperor rubbed his chin."
+          },
+          {
+            "node_id": "n013",
+            "quote": "\"Who is this Sun Wukong? And how did he become so powerful?\""
+          },
+          {
+            "node_id": "n017",
+            "quote": "\"I don't care how powerful he is. He is causing too much trouble on Earth. Gather some troops, and go down to the Fruit and Flower Mountain. I want Sun Wukong arrested!\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 10,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep008-official-quiz-003",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 3,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "why did wukong's subjects cheer for him?",
+        "zh": "为什么悟空的臣民为他欢呼？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "they will all live forever.",
+            "zh": "他们将永远活着。"
+          },
+          {
+            "id": "b",
+            "en": "he was invited to live in heaven.",
+            "zh": "他被邀请到天堂居住。"
+          },
+          {
+            "id": "c",
+            "en": "he had become powerful.",
+            "zh": "他已经变得强大了。"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n027",
+            "quote": "Wukong was telling his subjects about his adventure in the Land of Darkness."
+          },
+          {
+            "node_id": "n028",
+            "quote": "\"After I crossed out my name,\" he said, \"I crossed out all of your names too. We will all live forever!\""
+          },
+          {
+            "node_id": "n029",
+            "quote": "The monkeys and apes cheered."
+          },
+          {
+            "node_id": "n030",
+            "quote": "\"Hooray for the Monkey King!\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 10,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep008-official-quiz-004",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 4,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "what was wukong put in charge of?",
+        "zh": "悟空被安排负责什么？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "a garden",
+            "zh": "一个花园"
+          },
+          {
+            "id": "b",
+            "en": "a palace",
+            "zh": "一座宫殿"
+          },
+          {
+            "id": "c",
+            "en": "a mountain",
+            "zh": "一座山"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n026",
+            "quote": "\"Invite Wukong to come to live in Heaven. He will be in charge of the Royal Peach Garden.\""
+          },
+          {
+            "node_id": "n046",
+            "quote": "\"I'm putting you in charge of the Royal Peach Garden. You will have a home here in Heaven. I hope you won't cause any more trouble.\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 10,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep008-official-quiz-005",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 5,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "how long does it take the peaches to become ripe?",
+        "zh": "桃子要多久才能成熟？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "thousands of years",
+            "zh": "数千年"
+          },
+          {
+            "id": "b",
+            "en": "three hundred years",
+            "zh": "三百年"
+          },
+          {
+            "id": "c",
+            "en": "forever",
+            "zh": "永远"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n048",
+            "quote": "The next morning a gardener showed Wukong the peach garden."
+          },
+          {
+            "node_id": "n049",
+            "quote": "Bright, glowing peaches hung from every branch."
+          },
+          {
+            "node_id": "n050",
+            "quote": "\"The peaches in this garden are not like peaches on Earth,\" said the gardener."
+          },
+          {
+            "node_id": "n051",
+            "quote": "\"These peaches take thousands of years to become ripe. Anybody who takes a bite of one will live forever.\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 10,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep008-vocab-001",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 101,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "king",
+        "zh": "君主,国王"
+      },
+      "payload": {
+        "term": "king",
+        "ipa": "kɪŋ",
+        "pos": "n.",
+        "def": "n.[C]君主,国王",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "008 天庭任职 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "52302322bce9764ab7860d42d3a2065afc65a1f9d04d5ff47627e65e8aab3469"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep008-vocab-002",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 102,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "enter",
+        "zh": "v.进来,进去,成为......的一员, 参加,输入"
+      },
+      "payload": {
+        "term": "enter",
+        "ipa": "ˈentə(r)",
+        "pos": "v.",
+        "def": "v.进来,进去,成为......的一员, 参加,输入",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "008 天庭任职 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "52302322bce9764ab7860d42d3a2065afc65a1f9d04d5ff47627e65e8aab3469"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "008 天庭任职 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "9b38447f97c1b2c7a41eedf2ede76bd2470890b19e644b877dfd83aafb8763a1"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep008-vocab-003",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 103,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "dead",
+        "zh": "adj.死的,失去生命的;无生命 的,不再通用的,完全的"
+      },
+      "payload": {
+        "term": "dead",
+        "ipa": "ded",
+        "pos": "adj.",
+        "def": "adj.死的,失去生命的;无生命 的,不再通用的,完全的",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "008 天庭任职 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "52302322bce9764ab7860d42d3a2065afc65a1f9d04d5ff47627e65e8aab3469"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep008-vocab-004",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 104,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "monkey",
+        "zh": "猴子"
+      },
+      "payload": {
+        "term": "monkey",
+        "ipa": "ˈmʌŋki",
+        "pos": "n.",
+        "def": "n.[C]猴子",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "008 天庭任职 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "52302322bce9764ab7860d42d3a2065afc65a1f9d04d5ff47627e65e8aab3469"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep008-vocab-005",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 105,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "name",
+        "zh": "名字,名称 vt.命名,给......取名"
+      },
+      "payload": {
+        "term": "name",
+        "ipa": "neɪm",
+        "pos": "n.",
+        "def": "n.[C]名字,名称 vt.命名,给......取名",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "008 天庭任职 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "52302322bce9764ab7860d42d3a2065afc65a1f9d04d5ff47627e65e8aab3469"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep008-vocab-006",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 106,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "punish",
+        "zh": "vt.处罚,惩罚"
+      },
+      "payload": {
+        "term": "punish",
+        "ipa": "ˈpʌnɪʃ",
+        "pos": "vt.",
+        "def": "vt.处罚,惩罚",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "008 天庭任职 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "52302322bce9764ab7860d42d3a2065afc65a1f9d04d5ff47627e65e8aab3469"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep008-vocab-007",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 107,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "step",
+        "zh": "步,步骤 vi.踏"
+      },
+      "payload": {
+        "term": "step",
+        "ipa": "step",
+        "pos": "n.",
+        "def": "n.[C]步,步骤 vi.踏",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "008 天庭任职 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "52302322bce9764ab7860d42d3a2065afc65a1f9d04d5ff47627e65e8aab3469"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep008-vocab-008",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 108,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "forward",
+        "zh": "vt.转寄,发送 adv.向前,前进"
+      },
+      "payload": {
+        "term": "forward",
+        "ipa": "ˈfɔː(r)wə(r)d",
+        "pos": "vt.",
+        "def": "vt.转寄,发送 adv.向前,前进",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "008 天庭任职 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "52302322bce9764ab7860d42d3a2065afc65a1f9d04d5ff47627e65e8aab3469"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep008-vocab-009",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 109,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "remember",
+        "zh": "v.记住,记起"
+      },
+      "payload": {
+        "term": "remember",
+        "ipa": "rɪˈmembə(r)",
+        "pos": "v.",
+        "def": "v.记住,记起",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "008 天庭任职 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "52302322bce9764ab7860d42d3a2065afc65a1f9d04d5ff47627e65e8aab3469"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep008-vocab-010",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 110,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "cause",
+        "zh": "原因"
+      },
+      "payload": {
+        "term": "cause",
+        "ipa": "kɔː z",
+        "pos": "vt.",
+        "def": "vt.造成,引起 n.[C]原因",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "008 天庭任职 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "52302322bce9764ab7860d42d3a2065afc65a1f9d04d5ff47627e65e8aab3469"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep008-vocab-011",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 111,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "trouble",
+        "zh": "困 境;麻烦 vt.使烦恼,麻烦"
+      },
+      "payload": {
+        "term": "trouble",
+        "ipa": "ˈtrʌbl",
+        "pos": "n.",
+        "def": "n.[C,U]问题,困难,苦恼[U]困 境;麻烦 vt.使烦恼,麻烦",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "008 天庭任职 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "52302322bce9764ab7860d42d3a2065afc65a1f9d04d5ff47627e65e8aab3469"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep008-vocab-012",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 112,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "fruit",
+        "zh": "果实,成果 去。我求您惩罚他!”玉帝摸了摸下巴."
+      },
+      "payload": {
+        "term": "fruit",
+        "ipa": "fruː t",
+        "pos": "n.",
+        "def": "n.[C,U]水果 [C]果实,成果 去。我求您惩罚他!”玉帝摸了摸下巴.",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "008 天庭任职 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "52302322bce9764ab7860d42d3a2065afc65a1f9d04d5ff47627e65e8aab3469"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep008-vocab-013",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 113,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "flower",
+        "zh": "花"
+      },
+      "payload": {
+        "term": "flower",
+        "ipa": "ˈflaʊə(r)",
+        "pos": "n.",
+        "def": "n.[C]花",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "008 天庭任职 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "52302322bce9764ab7860d42d3a2065afc65a1f9d04d5ff47627e65e8aab3469"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep008-vocab-014",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 114,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "mountain",
+        "zh": "高山"
+      },
+      "payload": {
+        "term": "mountain",
+        "ipa": "ˈmaʊntən",
+        "pos": "n.",
+        "def": "n.[C]高山",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "008 天庭任职 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "52302322bce9764ab7860d42d3a2065afc65a1f9d04d5ff47627e65e8aab3469"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep008-vocab-015",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 115,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "spirit",
+        "zh": "情绪"
+      },
+      "payload": {
+        "term": "spirit",
+        "ipa": "ˈspɪrɪt",
+        "pos": "n.",
+        "def": "n.[U]勇气,意志,实质 [C]灵魂,鬼魂,幽灵 [C,U]精神 [pl.]情绪",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "008 天庭任职 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "52302322bce9764ab7860d42d3a2065afc65a1f9d04d5ff47627e65e8aab3469"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep008-vocab-016",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 116,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "planet",
+        "zh": "行星"
+      },
+      "payload": {
+        "term": "planet",
+        "ipa": "ˈplænɪt",
+        "pos": "n.",
+        "def": "n.[C]行星",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "008 天庭任职 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "52302322bce9764ab7860d42d3a2065afc65a1f9d04d5ff47627e65e8aab3469"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep008-vocab-017",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 117,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "give",
+        "zh": "v.提供,给,捐赠,发表"
+      },
+      "payload": {
+        "term": "give",
+        "ipa": "ɡɪv",
+        "pos": "v.",
+        "def": "v.提供,给,捐赠,发表",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "008 天庭任职 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "52302322bce9764ab7860d42d3a2065afc65a1f9d04d5ff47627e65e8aab3469"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep008-vocab-018",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 118,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "job",
+        "zh": "工作,职业"
+      },
+      "payload": {
+        "term": "job",
+        "ipa": "dʒɒb",
+        "pos": "n.",
+        "def": "n.[C]工作,职业",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "008 天庭任职 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "52302322bce9764ab7860d42d3a2065afc65a1f9d04d5ff47627e65e8aab3469"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "008 天庭任职 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "9b38447f97c1b2c7a41eedf2ede76bd2470890b19e644b877dfd83aafb8763a1"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep008-vocab-019",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 119,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "raise",
+        "zh": "vt.募集,征集,提高,举起,养 育,饲养;提出"
+      },
+      "payload": {
+        "term": "raise",
+        "ipa": "reɪz",
+        "pos": "vt.",
+        "def": "vt.募集,征集,提高,举起,养 育,饲养;提出",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "008 天庭任职 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "52302322bce9764ab7860d42d3a2065afc65a1f9d04d5ff47627e65e8aab3469"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep008-vocab-020",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 120,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "do",
+        "zh": "v.做,干 aux v.构成疑问句和否定句"
+      },
+      "payload": {
+        "term": "do",
+        "ipa": "duː",
+        "pos": "v.",
+        "def": "v.做,干 aux v.构成疑问句和否定句",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "008 天庭任职 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "52302322bce9764ab7860d42d3a2065afc65a1f9d04d5ff47627e65e8aab3469"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep008-vocab-021",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 121,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "keep",
+        "zh": "保持；保留"
+      },
+      "payload": {
+        "term": "keep",
+        "ipa": "kiːp",
+        "pos": "v.",
+        "def": "保持；保留",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ],
+        "gloss": "保持；保留"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "008 天庭任职 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "52302322bce9764ab7860d42d3a2065afc65a1f9d04d5ff47627e65e8aab3469"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep008-vocab-022",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 122,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "eye",
+        "zh": "眼睛"
+      },
+      "payload": {
+        "term": "eye",
+        "ipa": "aɪ",
+        "pos": "n.",
+        "def": "n.[C]眼睛",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "008 天庭任职 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "52302322bce9764ab7860d42d3a2065afc65a1f9d04d5ff47627e65e8aab3469"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep008-vocab-023",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 123,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "easy",
+        "zh": "adj.容易的,不费力的;安逸的 adv.放松地"
+      },
+      "payload": {
+        "term": "easy",
+        "ipa": "ˈiːzi",
+        "pos": "adj.",
+        "def": "adj.容易的,不费力的;安逸的 adv.放松地",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "008 天庭任职 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "52302322bce9764ab7860d42d3a2065afc65a1f9d04d5ff47627e65e8aab3469"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep008-vocab-024",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 124,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "invite",
+        "zh": "vt.邀请"
+      },
+      "payload": {
+        "term": "invite",
+        "ipa": "ɪnˈvaɪt",
+        "pos": "vt.",
+        "def": "vt.邀请",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          1,
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "008 天庭任职 上.pdf",
+          "half": "up",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "52302322bce9764ab7860d42d3a2065afc65a1f9d04d5ff47627e65e8aab3469"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "008 天庭任职 下.pdf",
+          "half": "down",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "9b38447f97c1b2c7a41eedf2ede76bd2470890b19e644b877dfd83aafb8763a1"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep008-vocab-025",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 125,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "subject",
+        "zh": "学科,课程,科目;主题, 话题"
+      },
+      "payload": {
+        "term": "subject",
+        "ipa": "ˈsʌbdʒɪk",
+        "pos": "n.",
+        "def": "n.[C]学科,课程,科目;主题, 话题",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "008 天庭任职 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "52302322bce9764ab7860d42d3a2065afc65a1f9d04d5ff47627e65e8aab3469"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep008-vocab-026",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 126,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "cross",
+        "zh": "十字形记号"
+      },
+      "payload": {
+        "term": "cross",
+        "ipa": "krɒs",
+        "pos": "v.",
+        "def": "v.横过,越过 n.[C]十字形记号",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "008 天庭任职 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "52302322bce9764ab7860d42d3a2065afc65a1f9d04d5ff47627e65e8aab3469"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep008-vocab-027",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 127,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "your",
+        "zh": "pron.你的,你们的"
+      },
+      "payload": {
+        "term": "your",
+        "ipa": "jɔː (r)",
+        "pos": "pron.",
+        "def": "pron.你的,你们的",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "008 天庭任职 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "52302322bce9764ab7860d42d3a2065afc65a1f9d04d5ff47627e65e8aab3469"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep008-vocab-028",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 128,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "live[lɪv] [laɪv]",
+        "zh": "v.居住,生活 adj.活的,生动的,现场直播的"
+      },
+      "payload": {
+        "term": "live[lɪv] [laɪv]",
+        "ipa": "",
+        "pos": "v.",
+        "def": "v.居住,生活 adj.活的,生动的,现场直播的",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          1,
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "008 天庭任职 上.pdf",
+          "half": "up",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "52302322bce9764ab7860d42d3a2065afc65a1f9d04d5ff47627e65e8aab3469"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "008 天庭任职 下.pdf",
+          "half": "down",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "9b38447f97c1b2c7a41eedf2ede76bd2470890b19e644b877dfd83aafb8763a1"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep008-vocab-029",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 129,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "forever",
+        "zh": "adv.永远"
+      },
+      "payload": {
+        "term": "forever",
+        "ipa": "fərˈevə(r)",
+        "pos": "adv.",
+        "def": "adv.永远",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "008 天庭任职 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "52302322bce9764ab7860d42d3a2065afc65a1f9d04d5ff47627e65e8aab3469"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "008 天庭任职 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "9b38447f97c1b2c7a41eedf2ede76bd2470890b19e644b877dfd83aafb8763a1"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep008-vocab-030",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 130,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "cheer",
+        "zh": "欢呼；喝彩"
+      },
+      "payload": {
+        "term": "cheer",
+        "ipa": "tʃɪə(r)",
+        "pos": "v.",
+        "def": "欢呼；喝彩",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ],
+        "gloss": "欢呼；喝彩"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "008 天庭任职 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "52302322bce9764ab7860d42d3a2065afc65a1f9d04d5ff47627e65e8aab3469"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep008-vocab-031",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 131,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "stand",
+        "zh": "v.忍受,站立"
+      },
+      "payload": {
+        "term": "stand",
+        "ipa": "stænd",
+        "pos": "v.",
+        "def": "v.忍受,站立",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "008 天庭任职 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "52302322bce9764ab7860d42d3a2065afc65a1f9d04d5ff47627e65e8aab3469"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep008-vocab-032",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 132,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "pull",
+        "zh": "引力,吸引力"
+      },
+      "payload": {
+        "term": "pull",
+        "ipa": "pʊl",
+        "pos": "v.",
+        "def": "v.拉,托 n.[C]拉,托[sing.]引力,吸引力",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "008 天庭任职 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "52302322bce9764ab7860d42d3a2065afc65a1f9d04d5ff47627e65e8aab3469"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep008-vocab-033",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 133,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "who",
+        "zh": "pron.谁,什么人"
+      },
+      "payload": {
+        "term": "who",
+        "ipa": "huː",
+        "pos": "pron.",
+        "def": "pron.谁,什么人",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "008 天庭任职 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "52302322bce9764ab7860d42d3a2065afc65a1f9d04d5ff47627e65e8aab3469"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep008-vocab-034",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 134,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "be",
+        "zh": "v.-link是,存在 aux v.构成被动语态或进行时态"
+      },
+      "payload": {
+        "term": "be",
+        "ipa": "biː",
+        "pos": "v.",
+        "def": "v.-link是,存在 aux v.构成被动语态或进行时态",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "008 天庭任职 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "52302322bce9764ab7860d42d3a2065afc65a1f9d04d5ff47627e65e8aab3469"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep008-vocab-035",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 135,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "you",
+        "zh": "pron.你,你们"
+      },
+      "payload": {
+        "term": "you",
+        "ipa": "juː",
+        "pos": "pron.",
+        "def": "pron.你,你们",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "008 天庭任职 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "52302322bce9764ab7860d42d3a2065afc65a1f9d04d5ff47627e65e8aab3469"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep008-vocab-036",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 136,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "like",
+        "zh": "喜好,爱好 conj.像......一样,如同"
+      },
+      "payload": {
+        "term": "like",
+        "ipa": "laɪk",
+        "pos": "vt.",
+        "def": "vt.喜欢,喜爱 prep.像,怎么样,例如 n.[pl.]喜好,爱好 conj.像......一样,如同",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "008 天庭任职 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "52302322bce9764ab7860d42d3a2065afc65a1f9d04d5ff47627e65e8aab3469"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep008-vocab-037",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 137,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "come",
+        "zh": "vi.来,来到 v.-link.成为,变成,变得"
+      },
+      "payload": {
+        "term": "come",
+        "ipa": "kʌm",
+        "pos": "vi.",
+        "def": "vi.来,来到 v.-link.成为,变成,变得",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "008 天庭任职 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "52302322bce9764ab7860d42d3a2065afc65a1f9d04d5ff47627e65e8aab3469"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep008-vocab-038",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 138,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "smile",
+        "zh": "笑,微笑"
+      },
+      "payload": {
+        "term": "smile",
+        "ipa": "smaɪ",
+        "pos": "vi.",
+        "def": "vi./n.[C]笑,微笑",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "008 天庭任职 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "52302322bce9764ab7860d42d3a2065afc65a1f9d04d5ff47627e65e8aab3469"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep008-vocab-039",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 139,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "last",
+        "zh": "最后"
+      },
+      "payload": {
+        "term": "last",
+        "ipa": "lɑːst",
+        "pos": "adj.",
+        "def": "最后",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ],
+        "gloss": "最后"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "008 天庭任职 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "52302322bce9764ab7860d42d3a2065afc65a1f9d04d5ff47627e65e8aab3469"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep008-vocab-040",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 140,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "suppose",
+        "zh": "vt.推断,料想;假设"
+      },
+      "payload": {
+        "term": "suppose",
+        "ipa": "səˈpəʊz",
+        "pos": "vt.",
+        "def": "vt.推断,料想;假设",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "008 天庭任职 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "9b38447f97c1b2c7a41eedf2ede76bd2470890b19e644b877dfd83aafb8763a1"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep008-vocab-041",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 141,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "look",
+        "zh": "看,注视,外表,表情"
+      },
+      "payload": {
+        "term": "look",
+        "ipa": "lʊk",
+        "pos": "vi.",
+        "def": "vi.看 v.-link.看上去 n.[C]看,注视,外表,表情",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "008 天庭任职 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "9b38447f97c1b2c7a41eedf2ede76bd2470890b19e644b877dfd83aafb8763a1"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep008-vocab-042",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 142,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "glad",
+        "zh": "adj.高兴,愿意"
+      },
+      "payload": {
+        "term": "glad",
+        "ipa": "ɡlæd",
+        "pos": "adj.",
+        "def": "adj.高兴,愿意",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "008 天庭任职 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "9b38447f97c1b2c7a41eedf2ede76bd2470890b19e644b877dfd83aafb8763a1"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep008-vocab-043",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 143,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "realize",
+        "zh": "vt.(亦作realise)理解,领会, 意识到,认识到,实现"
+      },
+      "payload": {
+        "term": "realize",
+        "ipa": "ˈriːəlaɪz",
+        "pos": "vt.",
+        "def": "vt.(亦作realise)理解,领会, 意识到,认识到,实现",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "008 天庭任职 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "9b38447f97c1b2c7a41eedf2ede76bd2470890b19e644b877dfd83aafb8763a1"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep008-vocab-044",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 144,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "should",
+        "zh": "modal v.应该,应当"
+      },
+      "payload": {
+        "term": "should",
+        "ipa": "ʃʊd",
+        "pos": "",
+        "def": "modal v.应该,应当",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "008 天庭任职 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "9b38447f97c1b2c7a41eedf2ede76bd2470890b19e644b877dfd83aafb8763a1"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep008-vocab-045",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 145,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "show",
+        "zh": "展览 vt.给......看,显示,表明"
+      },
+      "payload": {
+        "term": "show",
+        "ipa": "ʃəʊ",
+        "pos": "n.",
+        "def": "n.[C]演出,节目[C,U]展览 vt.给......看,显示,表明",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "008 天庭任职 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "9b38447f97c1b2c7a41eedf2ede76bd2470890b19e644b877dfd83aafb8763a1"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep008-vocab-046",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 146,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "excuse[ɪkˈskjuː z] [ɪk ˈskjuː s]",
+        "zh": "借口,理由"
+      },
+      "payload": {
+        "term": "excuse[ɪkˈskjuː z] [ɪk ˈskjuː s]",
+        "ipa": "",
+        "pos": "vt.",
+        "def": "vt.原谅,宽恕 n.[C]借口,理由",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "008 天庭任职 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "9b38447f97c1b2c7a41eedf2ede76bd2470890b19e644b877dfd83aafb8763a1"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep008-vocab-047",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 147,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "sound",
+        "zh": "声音；听起来"
+      },
+      "payload": {
+        "term": "sound",
+        "ipa": "saʊnd",
+        "pos": "v.",
+        "def": "声音；听起来",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ],
+        "gloss": "声音；听起来"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "008 天庭任职 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "9b38447f97c1b2c7a41eedf2ede76bd2470890b19e644b877dfd83aafb8763a1"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep008-vocab-048",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 148,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "garden",
+        "zh": "花园,园子"
+      },
+      "payload": {
+        "term": "garden",
+        "ipa": "ˈɡɑːrdn",
+        "pos": "n.",
+        "def": "n.[C]花园,园子",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "008 天庭任职 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "9b38447f97c1b2c7a41eedf2ede76bd2470890b19e644b877dfd83aafb8763a1"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep008-vocab-049",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 149,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "bright",
+        "zh": "明亮的"
+      },
+      "payload": {
+        "term": "bright",
+        "ipa": "braɪt",
+        "pos": "adv.",
+        "def": "明亮的",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ],
+        "gloss": "明亮的"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "008 天庭任职 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "9b38447f97c1b2c7a41eedf2ede76bd2470890b19e644b877dfd83aafb8763a1"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep008-vocab-050",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 150,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "thousand",
+        "zh": "num.一千"
+      },
+      "payload": {
+        "term": "thousand",
+        "ipa": "ˈθaʊznd",
+        "pos": "num.",
+        "def": "num.一千",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "008 天庭任职 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "9b38447f97c1b2c7a41eedf2ede76bd2470890b19e644b877dfd83aafb8763a1"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep008-vocab-051",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 151,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "year",
+        "zh": "年,岁"
+      },
+      "payload": {
+        "term": "year",
+        "ipa": "jɪə(r)",
+        "pos": "n.",
+        "def": "n.[C]年,岁",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "008 天庭任职 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "9b38447f97c1b2c7a41eedf2ede76bd2470890b19e644b877dfd83aafb8763a1"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep008-vocab-052",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 152,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "morning",
+        "zh": "早晨,上午"
+      },
+      "payload": {
+        "term": "morning",
+        "ipa": "ˈmɔː(r)nɪŋ",
+        "pos": "n.",
+        "def": "n.[C,U]早晨,上午",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "008 天庭任职 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "9b38447f97c1b2c7a41eedf2ede76bd2470890b19e644b877dfd83aafb8763a1"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep008-vocab-053",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 153,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "tree",
+        "zh": "树"
+      },
+      "payload": {
+        "term": "tree",
+        "ipa": "triː",
+        "pos": "n.",
+        "def": "n.[C]树",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "008 天庭任职 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "9b38447f97c1b2c7a41eedf2ede76bd2470890b19e644b877dfd83aafb8763a1"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep008-vocab-054",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 154,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "serious",
+        "zh": "adj.严重的,有危险的,严肃的, 稳重的,认真的"
+      },
+      "payload": {
+        "term": "serious",
+        "ipa": "ˈsɪəriəs",
+        "pos": "adj.",
+        "def": "adj.严重的,有危险的,严肃的, 稳重的,认真的",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "008 天庭任职 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "9b38447f97c1b2c7a41eedf2ede76bd2470890b19e644b877dfd83aafb8763a1"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep008-vocab-055",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 155,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "delicious",
+        "zh": "adj.可口的,美味的"
+      },
+      "payload": {
+        "term": "delicious",
+        "ipa": "dɪˈlɪʃəs",
+        "pos": "adj.",
+        "def": "adj.可口的,美味的",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "008 天庭任职 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "9b38447f97c1b2c7a41eedf2ede76bd2470890b19e644b877dfd83aafb8763a1"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep008-vocab-056",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 156,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "eat",
+        "zh": "吃"
+      },
+      "payload": {
+        "term": "eat",
+        "ipa": "iːt",
+        "pos": "v.",
+        "def": "吃",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ],
+        "gloss": "吃"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "008 天庭任职 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "9b38447f97c1b2c7a41eedf2ede76bd2470890b19e644b877dfd83aafb8763a1"
+        }
+      ],
+      "review_status": "machine_verified"
+    }
+  ],
+  "teacher_guide": null,
+  "review": {
+    "status": "draft",
+    "reviewed_at": null,
+    "card_stats": {
+      "total": 61,
+      "sentence_choice": 5,
+      "word_review": 56,
+      "machine_verified": 57,
+      "assistant_reviewed": 4,
+      "verified": 61,
+      "needs_review": 0
+    }
+  },
+  "generated_at": "2026-08-31T04:49:35.435598+00:00"
+}

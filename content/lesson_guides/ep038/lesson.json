@@ -1,0 +1,2452 @@
+{
+  "schema_version": 1,
+  "episode": 38,
+  "title": {
+    "en": "Bajie Tries to Sleep",
+    "zh": "西游记 第38集"
+  },
+  "sources": [
+    {
+      "kind": "courseware_main_pptx",
+      "file": "G:\\Game\\BookPlay书戏\\data\\西游记课件\\3.3西游记  Journey to the West PPT课件\\038_Journey to the West 38_Bajie Tries to Sleep.pptx",
+      "sha256": "dfedec5933547546fea269c282444f6d770b6393f6e33e7c3a72a4701f0fdfd3",
+      "pages": 20
+    },
+    {
+      "kind": "official_quiz_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+      "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929",
+      "pages": 131
+    },
+    {
+      "kind": "intensive_reader_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\02-西游记精读版台词本\\1、带标注版PDF 108集\\038 八戒想睡觉 上.pdf",
+      "sha256": "b7d42beeee9056224d95f3557519463b588b159516b37806b6cb43d03e341c35",
+      "pages": 4
+    },
+    {
+      "kind": "intensive_reader_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\02-西游记精读版台词本\\1、带标注版PDF 108集\\038 八戒想睡觉 下.pdf",
+      "sha256": "bc7e9120721cd878d50ee21e1da2324befd05f5686a26a7a101367ad21f94a4d",
+      "pages": 4
+    },
+    {
+      "kind": "courseware_screenshots_pptx",
+      "file": "G:\\Game\\BookPlay书戏\\data\\西游记课件\\西游记-外教课动画截图\\Journey to the West 038  Bajie Tries to Sleep_20240114105736.pptx",
+      "sha256": "3bd98cc1c15e409454d07d8e1c419b890aeb50b5957665e6355896a2c3a84a93",
+      "pages": 42
+    }
+  ],
+  "cards": [
+    {
+      "card_id": "ep038-official-quiz-001",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 1,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "which is not true?",
+        "zh": "哪一项是不正确的？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "wujing turned into a woodpecker.",
+            "zh": "悟净变成了一只啄木鸟。"
+          },
+          {
+            "id": "b",
+            "en": "wukong knew bajie took a nap.",
+            "zh": "悟空知道八戒在打盹。"
+          },
+          {
+            "id": "c",
+            "en": "bajie met golden horn.",
+            "zh": "八戒遇到了金角。"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n020",
+            "quote": "The monkey turned himself into a woodpecker and pecked the log."
+          },
+          {
+            "node_id": "n040",
+            "quote": "\"That was me, Bajie!\" shouted Wukong."
+          },
+          {
+            "node_id": "n064",
+            "quote": "\"My name is Golden Horn,\" said the demon."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 47,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep038-official-quiz-002",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 2,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "where did wukong tell bajie to search for demons?",
+        "zh": "悟空叫八戒去哪里找妖怪？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "the mountain",
+            "zh": "那座山"
+          },
+          {
+            "id": "b",
+            "en": "the river",
+            "zh": "那条河"
+          },
+          {
+            "id": "c",
+            "en": "the field",
+            "zh": "田地"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n005",
+            "quote": "\"Bajie, go up the road and search the mountain. There might be a demon up there, and I don't want Master to get hurt.\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 47,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep038-official-quiz-003",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 3,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "what did wukong decide to do?",
+        "zh": "悟空决定做什么？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "follow bajie",
+            "zh": "跟随八戒"
+          },
+          {
+            "id": "b",
+            "en": "take a nap",
+            "zh": "小睡一下"
+          },
+          {
+            "id": "c",
+            "en": "look for demons",
+            "zh": "寻找恶魔"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n010",
+            "quote": "\"I'm going to follow the pig. I want to make sure he really searches the mountain.\""
+          },
+          {
+            "node_id": "n011",
+            "quote": "The monkey turned invisible and followed Bajie up the road."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 47,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep038-official-quiz-004",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 4,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "what tapped bajie during his nap?",
+        "zh": "八戒在打盹时被什么拍了？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "a woodpecker",
+            "zh": "啄木鸟"
+          },
+          {
+            "id": "b",
+            "en": "a fox",
+            "zh": "一只狐狸"
+          },
+          {
+            "id": "c",
+            "en": "a demon",
+            "zh": "一个恶魔"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n020",
+            "quote": "The monkey turned himself into a woodpecker and pecked the log."
+          },
+          {
+            "node_id": "n021",
+            "quote": "<font color=\"#ffff00\"><i>Tap, tap, tap! Tap, tap, tap!</i></font> Bajie rolled over and mumbled."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 47,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep038-official-quiz-005",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 5,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "where did bajie see a demon?",
+        "zh": "八戒在哪里看到妖怪的？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "in front of a cave",
+            "zh": "在洞穴前"
+          },
+          {
+            "id": "b",
+            "en": "in front of a log",
+            "zh": "在一根原木前"
+          },
+          {
+            "id": "c",
+            "en": "in front of a tree",
+            "zh": "在树前"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n060",
+            "quote": "The pig soon came to a cave."
+          },
+          {
+            "node_id": "n061",
+            "quote": "In front of the cave was a demon."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 47,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep038-vocab-001",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 101,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "hurt",
+        "zh": "v.(使)疼痛,受伤,感到疼痛, (使)伤心 adj.受伤的"
+      },
+      "payload": {
+        "term": "hurt",
+        "ipa": "hɜː(r)t",
+        "pos": "v.",
+        "def": "v.(使)疼痛,受伤,感到疼痛, (使)伤心 adj.受伤的",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "038 八戒想睡觉 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "b7d42beeee9056224d95f3557519463b588b159516b37806b6cb43d03e341c35"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep038-vocab-002",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 102,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "head",
+        "zh": "队首 vi.朝(某方向)行进"
+      },
+      "payload": {
+        "term": "head",
+        "ipa": "hed",
+        "pos": "n.",
+        "def": "n.[C]头(部)[C,U]负责人 [sing.]队首 vi.朝(某方向)行进",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "038 八戒想睡觉 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "b7d42beeee9056224d95f3557519463b588b159516b37806b6cb43d03e341c35"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep038-vocab-003",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 103,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "follow",
+        "zh": "v.遵循,接受,跟随,关注"
+      },
+      "payload": {
+        "term": "follow",
+        "ipa": "ˈfɒləʊ",
+        "pos": "v.",
+        "def": "v.遵循,接受,跟随,关注",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "038 八戒想睡觉 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "b7d42beeee9056224d95f3557519463b588b159516b37806b6cb43d03e341c35"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep038-vocab-004",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 104,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "make sure",
+        "zh": "确保;查明"
+      },
+      "payload": {
+        "term": "make sure",
+        "ipa": "",
+        "pos": "",
+        "def": "确保;查明",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "038 八戒想睡觉 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "b7d42beeee9056224d95f3557519463b588b159516b37806b6cb43d03e341c35"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep038-vocab-005",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 105,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "monkey",
+        "zh": "猴子"
+      },
+      "payload": {
+        "term": "monkey",
+        "ipa": "ˈmʌŋki",
+        "pos": "n.",
+        "def": "n.[C]猴子",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "038 八戒想睡觉 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "b7d42beeee9056224d95f3557519463b588b159516b37806b6cb43d03e341c35"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep038-vocab-006",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 106,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "turn",
+        "zh": "轮流圈国"
+      },
+      "payload": {
+        "term": "turn",
+        "ipa": "tɜː (r)n",
+        "pos": "v.",
+        "def": "v.转向,翻圈v.-link.(使)变成 n.[C]轮流圈国",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "038 八戒想睡觉 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "b7d42beeee9056224d95f3557519463b588b159516b37806b6cb43d03e341c35"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep038-vocab-007",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 107,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "pig",
+        "zh": "猪"
+      },
+      "payload": {
+        "term": "pig",
+        "ipa": "pɪɡ",
+        "pos": "n.",
+        "def": "n.[C]猪",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "038 八戒想睡觉 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "b7d42beeee9056224d95f3557519463b588b159516b37806b6cb43d03e341c35"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "038 八戒想睡觉 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "bc7e9120721cd878d50ee21e1da2324befd05f5686a26a7a101367ad21f94a4d"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep038-vocab-008",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 108,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "sure",
+        "zh": "adv.当然,肯定,一定 adj.确信,确定,一定"
+      },
+      "payload": {
+        "term": "sure",
+        "ipa": "ʃʊə(r)",
+        "pos": "adv.",
+        "def": "adv.当然,肯定,一定 adj.确信,确定,一定",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "038 八戒想睡觉 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "b7d42beeee9056224d95f3557519463b588b159516b37806b6cb43d03e341c35"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep038-vocab-009",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 109,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "shout",
+        "zh": "呼喊,叫喊"
+      },
+      "payload": {
+        "term": "shout",
+        "ipa": "ʃaʊt",
+        "pos": "v.",
+        "def": "v.呼叫,喊叫 n.[C]呼喊,叫喊",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "038 八戒想睡觉 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "b7d42beeee9056224d95f3557519463b588b159516b37806b6cb43d03e341c35"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep038-vocab-010",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 110,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "guess",
+        "zh": "猜测"
+      },
+      "payload": {
+        "term": "guess",
+        "ipa": "ɡes",
+        "pos": "v.",
+        "def": "v.猜测,估计,猜到 n.[C]猜测",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "038 八戒想睡觉 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "b7d42beeee9056224d95f3557519463b588b159516b37806b6cb43d03e341c35"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep038-vocab-011",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 111,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "take",
+        "zh": "拿；带走"
+      },
+      "payload": {
+        "term": "take",
+        "ipa": "teɪk",
+        "pos": "v.",
+        "def": "拿；带走",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ],
+        "gloss": "拿；带走"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "038 八戒想睡觉 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "b7d42beeee9056224d95f3557519463b588b159516b37806b6cb43d03e341c35"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep038-vocab-012",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 112,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "lie",
+        "zh": "vi.存在,平躺,处于,位于;说 谎 n.谎言"
+      },
+      "payload": {
+        "term": "lie",
+        "ipa": "laɪ",
+        "pos": "vi.",
+        "def": "vi.存在,平躺,处于,位于;说 谎 n.谎言",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "038 八戒想睡觉 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "b7d42beeee9056224d95f3557519463b588b159516b37806b6cb43d03e341c35"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep038-vocab-013",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 113,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "find",
+        "zh": "vt.找到,发现,查找,查明"
+      },
+      "payload": {
+        "term": "find",
+        "ipa": "faɪnd",
+        "pos": "vt.",
+        "def": "vt.找到,发现,查找,查明",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "038 八戒想睡觉 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "b7d42beeee9056224d95f3557519463b588b159516b37806b6cb43d03e341c35"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep038-vocab-014",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 114,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "big",
+        "zh": "adj.大的,重要的"
+      },
+      "payload": {
+        "term": "big",
+        "ipa": "bɪɡ",
+        "pos": "adj.",
+        "def": "adj.大的,重要的",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "038 八戒想睡觉 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "b7d42beeee9056224d95f3557519463b588b159516b37806b6cb43d03e341c35"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep038-vocab-015",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 115,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "asleep",
+        "zh": "adj.睡着"
+      },
+      "payload": {
+        "term": "asleep",
+        "ipa": "əˈsliːp",
+        "pos": "adj.",
+        "def": "adj.睡着",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "038 八戒想睡觉 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "b7d42beeee9056224d95f3557519463b588b159516b37806b6cb43d03e341c35"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep038-vocab-016",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 116,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "lazy",
+        "zh": "adj.懒散的,懒惰的"
+      },
+      "payload": {
+        "term": "lazy",
+        "ipa": "ˈleɪzi",
+        "pos": "adj.",
+        "def": "adj.懒散的,懒惰的",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "038 八戒想睡觉 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "b7d42beeee9056224d95f3557519463b588b159516b37806b6cb43d03e341c35"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep038-vocab-017",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 117,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "teach",
+        "zh": "v.教,讲授,教导"
+      },
+      "payload": {
+        "term": "teach",
+        "ipa": "tiːtʃ",
+        "pos": "v.",
+        "def": "v.教,讲授,教导",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "038 八戒想睡觉 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "b7d42beeee9056224d95f3557519463b588b159516b37806b6cb43d03e341c35"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep038-vocab-018",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 118,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "lesson",
+        "zh": "课"
+      },
+      "payload": {
+        "term": "lesson",
+        "ipa": "ˈlesn",
+        "pos": "",
+        "def": "课",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ],
+        "gloss": "课"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "038 八戒想睡觉 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "b7d42beeee9056224d95f3557519463b588b159516b37806b6cb43d03e341c35"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep038-vocab-019",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 119,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "again",
+        "zh": "adv.再一次,又一次"
+      },
+      "payload": {
+        "term": "again",
+        "ipa": "əˈɡen",
+        "pos": "adv.",
+        "def": "adv.再一次,又一次",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "038 八戒想睡觉 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "b7d42beeee9056224d95f3557519463b588b159516b37806b6cb43d03e341c35"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep038-vocab-020",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 120,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "try",
+        "zh": "尝试,设法,努力"
+      },
+      "payload": {
+        "term": "try",
+        "ipa": "traɪ",
+        "pos": "v.",
+        "def": "v./n.[C]尝试,设法,努力",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "038 八戒想睡觉 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "b7d42beeee9056224d95f3557519463b588b159516b37806b6cb43d03e341c35"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep038-vocab-021",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 121,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "sleep",
+        "zh": "一觉"
+      },
+      "payload": {
+        "term": "sleep",
+        "ipa": "sliː p",
+        "pos": "vi.",
+        "def": "vi./n.[U]睡觉[sing.]一觉",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "038 八戒想睡觉 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "b7d42beeee9056224d95f3557519463b588b159516b37806b6cb43d03e341c35"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep038-vocab-022",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 122,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "fall asleep",
+        "zh": "入睡;睡着"
+      },
+      "payload": {
+        "term": "fall asleep",
+        "ipa": "",
+        "pos": "",
+        "def": "入睡;睡着",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "038 八戒想睡觉 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "b7d42beeee9056224d95f3557519463b588b159516b37806b6cb43d03e341c35"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep038-vocab-023",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 123,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "land",
+        "zh": "国家 v.降落,着陆"
+      },
+      "payload": {
+        "term": "land",
+        "ipa": "lænd",
+        "pos": "n.",
+        "def": "n.[U]大陆,土地 [C]国家 v.降落,着陆",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "038 八戒想睡觉 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "b7d42beeee9056224d95f3557519463b588b159516b37806b6cb43d03e341c35"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep038-vocab-024",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 124,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "jump",
+        "zh": "跳,跃(指运动)"
+      },
+      "payload": {
+        "term": "jump",
+        "ipa": "dʒʌmp",
+        "pos": "v.",
+        "def": "v.跳,跃 n.[C]跳,跃(指运动)",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "038 八戒想睡觉 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "b7d42beeee9056224d95f3557519463b588b159516b37806b6cb43d03e341c35"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep038-vocab-025",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 125,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "foot",
+        "zh": "脚,足,英尺"
+      },
+      "payload": {
+        "term": "foot",
+        "ipa": "fʊt",
+        "pos": "n.",
+        "def": "n.[C]脚,足,英尺",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "038 八戒想睡觉 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "b7d42beeee9056224d95f3557519463b588b159516b37806b6cb43d03e341c35"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep038-vocab-026",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 126,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "fly",
+        "zh": "苍蝇"
+      },
+      "payload": {
+        "term": "fly",
+        "ipa": "flaɪ",
+        "pos": "v.",
+        "def": "v.飞,驾驶(飞机等);乘飞机, (旗)飘扬 n.[C]苍蝇",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          2,
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "038 八戒想睡觉 上.pdf",
+          "half": "up",
+          "pages": [
+            2,
+            3
+          ],
+          "sha256": "b7d42beeee9056224d95f3557519463b588b159516b37806b6cb43d03e341c35"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "038 八戒想睡觉 下.pdf",
+          "half": "down",
+          "pages": [
+            2,
+            3
+          ],
+          "sha256": "bc7e9120721cd878d50ee21e1da2324befd05f5686a26a7a101367ad21f94a4d"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep038-vocab-027",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 127,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "away",
+        "zh": "离开"
+      },
+      "payload": {
+        "term": "away",
+        "ipa": "əˈweɪ",
+        "pos": "adv.",
+        "def": "离开",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          2,
+          3
+        ],
+        "gloss": "离开"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "038 八戒想睡觉 上.pdf",
+          "half": "up",
+          "pages": [
+            2,
+            3
+          ],
+          "sha256": "b7d42beeee9056224d95f3557519463b588b159516b37806b6cb43d03e341c35"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "038 八戒想睡觉 下.pdf",
+          "half": "down",
+          "pages": [
+            2,
+            3
+          ],
+          "sha256": "bc7e9120721cd878d50ee21e1da2324befd05f5686a26a7a101367ad21f94a4d"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep038-vocab-028",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 128,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "yourself",
+        "zh": "pron.你自己,您自己"
+      },
+      "payload": {
+        "term": "yourself",
+        "ipa": "jɔːˈself",
+        "pos": "pron.",
+        "def": "pron.你自己,您自己",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "038 八戒想睡觉 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "bc7e9120721cd878d50ee21e1da2324befd05f5686a26a7a101367ad21f94a4d"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep038-vocab-029",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 129,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "please",
+        "zh": "interj.(用于客气地请求)请"
+      },
+      "payload": {
+        "term": "please",
+        "ipa": "pliː z",
+        "pos": "interj.",
+        "def": "interj.(用于客气地请求)请",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "038 八戒想睡觉 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "bc7e9120721cd878d50ee21e1da2324befd05f5686a26a7a101367ad21f94a4d"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep038-vocab-030",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 130,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "back",
+        "zh": "后面,背部 adj.后面的 adv.回原处,向后地"
+      },
+      "payload": {
+        "term": "back",
+        "ipa": "bæk",
+        "pos": "n.",
+        "def": "n.[C]后面,背部 adj.后面的 adv.回原处,向后地",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "038 八戒想睡觉 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "bc7e9120721cd878d50ee21e1da2324befd05f5686a26a7a101367ad21f94a4d"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep038-vocab-031",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 131,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "road",
+        "zh": "路"
+      },
+      "payload": {
+        "term": "road",
+        "ipa": "rəʊd",
+        "pos": "n.",
+        "def": "n.[C]路",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "038 八戒想睡觉 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "bc7e9120721cd878d50ee21e1da2324befd05f5686a26a7a101367ad21f94a4d"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep038-vocab-032",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 132,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "walk",
+        "zh": "步行的路径"
+      },
+      "payload": {
+        "term": "walk",
+        "ipa": "wɔː k",
+        "pos": "n.",
+        "def": "n.[C]行走,步行 v.行走,步行 n.[C]步行的路径",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "038 八戒想睡觉 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "bc7e9120721cd878d50ee21e1da2324befd05f5686a26a7a101367ad21f94a4d"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep038-vocab-033",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 133,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "swing",
+        "zh": "摆动,秋千 v.摇摆"
+      },
+      "payload": {
+        "term": "swing",
+        "ipa": "swɪŋ",
+        "pos": "n.",
+        "def": "n.[C]摆动,秋千 v.摇摆",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "038 八戒想睡觉 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "bc7e9120721cd878d50ee21e1da2324befd05f5686a26a7a101367ad21f94a4d"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep038-vocab-034",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 134,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "trip",
+        "zh": "旅游,旅行 vi.绊,绊倒"
+      },
+      "payload": {
+        "term": "trip",
+        "ipa": "trɪp",
+        "pos": "n.",
+        "def": "n.[C]旅游,旅行 vi.绊,绊倒",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "038 八戒想睡觉 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "bc7e9120721cd878d50ee21e1da2324befd05f5686a26a7a101367ad21f94a4d"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep038-vocab-035",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 135,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "get",
+        "zh": "去取(或带来),得到"
+      },
+      "payload": {
+        "term": "get",
+        "ipa": "ɡet",
+        "pos": "vt.",
+        "def": "去取(或带来),得到",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ],
+        "gloss": "去取(或带来),得到"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "038 八戒想睡觉 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "bc7e9120721cd878d50ee21e1da2324befd05f5686a26a7a101367ad21f94a4d"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep038-vocab-036",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 136,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "stand",
+        "zh": "v.忍受,站立"
+      },
+      "payload": {
+        "term": "stand",
+        "ipa": "stænd",
+        "pos": "v.",
+        "def": "v.忍受,站立",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "038 八戒想睡觉 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "bc7e9120721cd878d50ee21e1da2324befd05f5686a26a7a101367ad21f94a4d"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep038-vocab-037",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 137,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "still",
+        "zh": "adv.还,仍然 adj.静止的"
+      },
+      "payload": {
+        "term": "still",
+        "ipa": "stɪl",
+        "pos": "adv.",
+        "def": "adv.还,仍然 adj.静止的",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "038 八戒想睡觉 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "bc7e9120721cd878d50ee21e1da2324befd05f5686a26a7a101367ad21f94a4d"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep038-vocab-038",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 138,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "continue",
+        "zh": "v.持续,继续做"
+      },
+      "payload": {
+        "term": "continue",
+        "ipa": "kənˈtɪnjuː",
+        "pos": "v.",
+        "def": "v.持续,继续做",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "038 八戒想睡觉 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "bc7e9120721cd878d50ee21e1da2324befd05f5686a26a7a101367ad21f94a4d"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep038-vocab-039",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 139,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "see",
+        "zh": "v.理解,明白,观看,会见,看 见,送别,确保"
+      },
+      "payload": {
+        "term": "see",
+        "ipa": "siː",
+        "pos": "v.",
+        "def": "v.理解,明白,观看,会见,看 见,送别,确保",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "038 八戒想睡觉 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "bc7e9120721cd878d50ee21e1da2324befd05f5686a26a7a101367ad21f94a4d"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep038-vocab-040",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 140,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "become",
+        "zh": "v.-link.开始变得,变成"
+      },
+      "payload": {
+        "term": "become",
+        "ipa": "bɪˈkʌm",
+        "pos": "v.",
+        "def": "v.-link.开始变得,变成",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "038 八戒想睡觉 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "bc7e9120721cd878d50ee21e1da2324befd05f5686a26a7a101367ad21f94a4d"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep038-vocab-041",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 141,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "come",
+        "zh": "vi.来,来到 v.-link.成为,变成,变得"
+      },
+      "payload": {
+        "term": "come",
+        "ipa": "kʌm",
+        "pos": "vi.",
+        "def": "vi.来,来到 v.-link.成为,变成,变得",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "038 八戒想睡觉 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "bc7e9120721cd878d50ee21e1da2324befd05f5686a26a7a101367ad21f94a4d"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep038-vocab-042",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 142,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "hold",
+        "zh": "抓"
+      },
+      "payload": {
+        "term": "hold",
+        "ipa": "həʊld",
+        "pos": "v.",
+        "def": "v.拥有,抓住,保持,举行,容纳 n.[C,U]抓",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "038 八戒想睡觉 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "bc7e9120721cd878d50ee21e1da2324befd05f5686a26a7a101367ad21f94a4d"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep038-vocab-043",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 143,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "name",
+        "zh": "名字,名称 vt.命名,给......取名"
+      },
+      "payload": {
+        "term": "name",
+        "ipa": "neɪm",
+        "pos": "n.",
+        "def": "n.[C]名字,名称 vt.命名,给......取名",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "038 八戒想睡觉 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "bc7e9120721cd878d50ee21e1da2324befd05f5686a26a7a101367ad21f94a4d"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep038-vocab-044",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 144,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "travel",
+        "zh": "游历"
+      },
+      "payload": {
+        "term": "travel",
+        "ipa": "ˈtrævl",
+        "pos": "v.",
+        "def": "v.旅行,游历幽;传播 n.[C,U]旅行[U]游历",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "038 八戒想睡觉 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "bc7e9120721cd878d50ee21e1da2324befd05f5686a26a7a101367ad21f94a4d"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep038-vocab-045",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 145,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "smile",
+        "zh": "笑,微笑"
+      },
+      "payload": {
+        "term": "smile",
+        "ipa": "smaɪ",
+        "pos": "vi.",
+        "def": "vi./n.[C]笑,微笑",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "038 八戒想睡觉 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "bc7e9120721cd878d50ee21e1da2324befd05f5686a26a7a101367ad21f94a4d"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep038-vocab-046",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 146,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "eat",
+        "zh": "v.吃"
+      },
+      "payload": {
+        "term": "eat",
+        "ipa": "iːt",
+        "pos": "v.",
+        "def": "v.吃",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "038 八戒想睡觉 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "bc7e9120721cd878d50ee21e1da2324befd05f5686a26a7a101367ad21f94a4d"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep038-vocab-047",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 147,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "live[lɪv] [laɪv]",
+        "zh": "v.居住,生活 adj.活的,生动的,现场直播的"
+      },
+      "payload": {
+        "term": "live[lɪv] [laɪv]",
+        "ipa": "",
+        "pos": "v.",
+        "def": "v.居住,生活 adj.活的,生动的,现场直播的",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "038 八戒想睡觉 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "bc7e9120721cd878d50ee21e1da2324befd05f5686a26a7a101367ad21f94a4d"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep038-vocab-048",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 148,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "forever",
+        "zh": "永远"
+      },
+      "payload": {
+        "term": "forever",
+        "ipa": "fərˈevə(r)",
+        "pos": "adv.",
+        "def": "永远",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ],
+        "gloss": "永远"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "038 八戒想睡觉 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "bc7e9120721cd878d50ee21e1da2324befd05f5686a26a7a101367ad21f94a4d"
+        }
+      ],
+      "review_status": "machine_verified"
+    }
+  ],
+  "teacher_guide": null,
+  "review": {
+    "status": "draft",
+    "reviewed_at": null,
+    "card_stats": {
+      "total": 53,
+      "sentence_choice": 5,
+      "word_review": 48,
+      "machine_verified": 48,
+      "assistant_reviewed": 5,
+      "verified": 53,
+      "needs_review": 0
+    }
+  },
+  "generated_at": "2026-08-31T04:49:39.996823+00:00"
+}

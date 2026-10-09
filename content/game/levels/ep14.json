@@ -1,0 +1,584 @@
+{
+ "schema_version": 1,
+ "ep": 14,
+ "title": {
+  "en": "A Promise to Protect",
+  "zh": "西游记 第14集"
+ },
+ "collection": "c03",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "tang",
+   "nameZh": "唐僧",
+   "mode": "sparring",
+   "sprite": "tang"
+  },
+  "minors": [
+   {
+    "id": "imp",
+    "nameZh": "小妖",
+    "sprite": "imp"
+   }
+  ]
+ },
+ "background": {
+  "theme": "episode-scene",
+  "illustration": "assets/adv_frames/ep14/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "The Tang Monk trembled with fear.",
+   "textZh": "唐僧浑身颤抖,心生恐惧。",
+   "illustration": "assets/adv_frames/ep14/f1.jpg",
+   "sourceNodeId": "n001",
+   "audioRef": "sent_en:The Tang Monk trembled with fear."
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "The angry voice spoke again.",
+   "textZh": "那愤怒的声音再次响起。",
+   "illustration": "assets/adv_frames/ep14/f2.jpg",
+   "sourceNodeId": "n002",
+   "audioRef": "sent_en:The angry voice spoke again."
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "tremble",
+   "zh": "(因恐惧而)发抖,打颤",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep14/f1.jpg"
+  },
+  {
+   "term": "punish",
+   "zh": "惩罚,处罚",
+   "ipa": "ˈpʌnɪʃ",
+   "illustration": "assets/adv_frames/ep14/f2.jpg"
+  },
+  {
+   "term": "set free",
+   "zh": "放...自由,释放",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep14/f1.jpg"
+  },
+  {
+   "term": "relax",
+   "zh": "放松,缓和(紧张)",
+   "ipa": "rɪˈlæks",
+   "illustration": "assets/adv_frames/ep14/f2.jpg"
+  },
+  {
+   "term": "remove",
+   "zh": "1. 移动,搬开,(2. 去掉,消除)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep14/f2.jpg"
+  },
+  {
+   "term": "push aside",
+   "zh": "把...推到一边去",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep14/f0.jpg"
+  },
+  {
+   "term": "shrub",
+   "zh": "矮树,灌木(底部有许多树枝,高度低的树种)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep14/f0.jpg"
+  },
+  {
+   "term": "bramble",
+   "zh": "有刺灌木",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep14/f1.jpg"
+  },
+  {
+   "term": "boulder",
+   "zh": "卵石,大圆石",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep14/f1.jpg"
+  },
+  {
+   "term": "peak",
+   "zh": "顶端,最高点",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep14/f1.jpg"
+  },
+  {
+   "term": "breeze",
+   "zh": "微风,和风",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep14/f3.jpg"
+  },
+  {
+   "term": "swept",
+   "zh": "1. 迅速移动 (sweep-swept),(2. 掠过)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep14/f3.jpg"
+  }
+ ],
+ "wordPool": [
+  {
+   "term": "tremble",
+   "zh": "(因恐惧而)发抖,打颤",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep14/f1.jpg"
+  },
+  {
+   "term": "punish",
+   "zh": "惩罚,处罚",
+   "ipa": "ˈpʌnɪʃ",
+   "illustration": "assets/adv_frames/ep14/f2.jpg"
+  },
+  {
+   "term": "set free",
+   "zh": "放...自由,释放",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep14/f1.jpg"
+  },
+  {
+   "term": "relax",
+   "zh": "放松,缓和(紧张)",
+   "ipa": "rɪˈlæks",
+   "illustration": "assets/adv_frames/ep14/f2.jpg"
+  },
+  {
+   "term": "remove",
+   "zh": "1. 移动,搬开,(2. 去掉,消除)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep14/f2.jpg"
+  },
+  {
+   "term": "push aside",
+   "zh": "把...推到一边去",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep14/f0.jpg"
+  },
+  {
+   "term": "shrub",
+   "zh": "矮树,灌木(底部有许多树枝,高度低的树种)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep14/f0.jpg"
+  },
+  {
+   "term": "bramble",
+   "zh": "有刺灌木",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep14/f1.jpg"
+  },
+  {
+   "term": "boulder",
+   "zh": "卵石,大圆石",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep14/f1.jpg"
+  },
+  {
+   "term": "peak",
+   "zh": "顶端,最高点",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep14/f1.jpg"
+  },
+  {
+   "term": "breeze",
+   "zh": "微风,和风",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep14/f3.jpg"
+  },
+  {
+   "term": "swept",
+   "zh": "1. 迅速移动 (sweep-swept),(2. 掠过)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep14/f3.jpg"
+  },
+  {
+   "term": "float",
+   "zh": "(在水上或空中)漂浮",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep14/f0.jpg"
+  },
+  {
+   "term": "disappear",
+   "zh": "消失",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep14/f0.jpg"
+  },
+  {
+   "term": "army",
+   "zh": "军队,陆军",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep14/f1.jpg"
+  },
+  {
+   "term": "defeat",
+   "zh": "战胜,击败",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep14/f1.jpg"
+  },
+  {
+   "term": "charge",
+   "zh": "责任",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep14/f2.jpg"
+  },
+  {
+   "term": "vulture",
+   "zh": "秃鹰(吃动物尸体的猛禽)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep14/f3.jpg"
+  },
+  {
+   "term": "tiny",
+   "zh": "极小的,微小的",
+   "ipa": "ˈtaɪni",
+   "illustration": "assets/adv_frames/ep14/f3.jpg"
+  },
+  {
+   "term": "shrank",
+   "zh": "收缩,缩短 (shrink-shrank/shrunk)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep14/f0.jpg"
+  },
+  {
+   "term": "normal",
+   "zh": "正常的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep14/f2.jpg"
+  },
+  {
+   "term": "struck",
+   "zh": "打,打击 (strike-struck)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep14/f0.jpg"
+  },
+  {
+   "term": "explode",
+   "zh": "爆发,爆炸",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep14/f1.jpg"
+  },
+  {
+   "term": "horror",
+   "zh": "恐惧,害怕",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep14/f2.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "tremble",
+     "zh": "(因恐惧而)发抖,打颤",
+     "sprite": "imp"
+    },
+    {
+     "term": "punish",
+     "zh": "惩罚,处罚",
+     "sprite": "imp"
+    },
+    {
+     "term": "set free",
+     "zh": "放...自由,释放",
+     "sprite": "imp"
+    },
+    {
+     "term": "relax",
+     "zh": "放松,缓和(紧张)",
+     "sprite": "imp"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "remove",
+     "zh": "1. 移动,搬开,(2. 去掉,消除)",
+     "sprite": "imp"
+    },
+    {
+     "term": "push aside",
+     "zh": "把...推到一边去",
+     "sprite": "imp"
+    },
+    {
+     "term": "shrub",
+     "zh": "矮树,灌木(底部有许多树枝,高度低的树种)",
+     "sprite": "imp"
+    },
+    {
+     "term": "bramble",
+     "zh": "有刺灌木",
+     "sprite": "imp"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "boulder",
+    "zh": "卵石,大圆石"
+   },
+   {
+    "term": "peak",
+    "zh": "顶端,最高点"
+   },
+   {
+    "term": "breeze",
+    "zh": "微风,和风"
+   },
+   {
+    "term": "swept",
+    "zh": "1. 迅速移动 (sweep-swept),(2. 掠过)"
+   }
+  ],
+  "taunts": [
+   "tang.1",
+   "tang.2",
+   "tang.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=14",
+ "npcDialogue": {
+  "intro": {
+   "id": "ep14-map-intro",
+   "lines": [
+    {
+     "id": "ep14-map-intro-1",
+     "sourceNodeId": "n001",
+     "speaker": "narrator",
+     "textEn": "The Tang Monk trembled with fear.",
+     "textZh": "唐僧浑身颤抖,心生恐惧。",
+     "audioRef": "sent_en:The Tang Monk trembled with fear.",
+     "audioStart": 11.8,
+     "audioEnd": 15.618
+    },
+    {
+     "id": "ep14-map-intro-2",
+     "sourceNodeId": "n002",
+     "speaker": "narrator",
+     "textEn": "The angry voice spoke again.",
+     "textZh": "那愤怒的声音再次响起。",
+     "audioRef": "sent_en:The angry voice spoke again.",
+     "audioStart": 15.619,
+     "audioEnd": 17.836
+    }
+   ]
+  },
+  "quiz": {
+   "id": "ep14-map-quiz",
+   "lines": [
+    {
+     "id": "ep14-map-quiz-1",
+     "sourceNodeId": "n012",
+     "speaker": "narrator",
+     "textEn": "\"Buddha put me here,\" said Wukong.",
+     "textZh": "\"是佛陀将我安置在这里的,\"悟空说道。",
+     "audioRef": "sent_en:\"Buddha put me here,\" said Wukong.",
+     "audioStart": 54.768,
+     "audioEnd": 57.574
+    }
+   ],
+   "question": {
+    "id": "ep014-official-quiz-001",
+    "textEn": "which is not true?",
+    "textZh": "哪一项是不正确的？"
+   },
+   "word": {
+    "term": "tremble",
+    "zh": "(因恐惧而)发抖,打颤",
+    "ipa": ""
+   },
+   "options": [
+    {
+     "id": "a",
+     "textEn": "guanyin punished wukong.",
+     "textZh": "观音惩罚了悟空。",
+     "correct": true,
+     "feedback": "对了。观音惩罚了悟空。"
+    },
+    {
+     "id": "b",
+     "textEn": "the angry voice was wukong.",
+     "textZh": "愤怒的声音是悟空。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    },
+    {
+     "id": "c",
+     "textEn": "wukong showed the monk his powers.",
+     "textZh": "悟空向和尚展示了他的神通。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    }
+   ],
+   "lessonCardId": "ep014-official-quiz-001"
+  }
+ },
+ "map": {
+  "theme": "episode-scene",
+  "coordinateSpace": "world-normalized",
+  "worldTiles": 2,
+  "regions": {
+   "hero": 0,
+   "waves": [
+    0,
+    1
+   ],
+   "npc": {
+    "intro": 0,
+    "quiz": 1
+   },
+   "boss": 3
+  },
+  "walkable": {
+   "space": "world",
+   "x": 0.0,
+   "y": 0.16,
+   "w": 1.0,
+   "h": 0.79,
+   "rects": [
+    {
+     "x": 0.0,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.66,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    }
+   ]
+  },
+  "heroSpawn": {
+   "x": 0.06,
+   "y": 0.31
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.31,
+    "y": 0.23
+   },
+   {
+    "x": 0.38,
+    "y": 0.27
+   },
+   {
+    "x": 0.34,
+    "y": 0.33
+   },
+   {
+    "x": 0.41,
+    "y": 0.24
+   }
+  ],
+  "waveSpawns": [
+   [
+    {
+     "x": 0.31,
+     "y": 0.23
+    },
+    {
+     "x": 0.38,
+     "y": 0.27
+    },
+    {
+     "x": 0.34,
+     "y": 0.33
+    },
+    {
+     "x": 0.41,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.81,
+     "y": 0.23
+    },
+    {
+     "x": 0.88,
+     "y": 0.27
+    },
+    {
+     "x": 0.84,
+     "y": 0.33
+    },
+    {
+     "x": 0.91,
+     "y": 0.24
+    }
+   ]
+  ],
+  "orbSpawns": [
+   [
+    {
+     "x": 0.11,
+     "y": 0.25
+    },
+    {
+     "x": 0.16,
+     "y": 0.31
+    },
+    {
+     "x": 0.12,
+     "y": 0.37
+    },
+    {
+     "x": 0.18,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.61,
+     "y": 0.25
+    },
+    {
+     "x": 0.66,
+     "y": 0.31
+    },
+    {
+     "x": 0.62,
+     "y": 0.37
+    },
+    {
+     "x": 0.68,
+     "y": 0.24
+    }
+   ]
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "mountain-bandit",
+    "nameZh": "山贼",
+    "x": 0.08,
+    "y": 0.26
+   },
+   {
+    "role": "quiz",
+    "sprite": "mountain-bandit",
+    "nameZh": "山贼",
+    "x": 0.7,
+    "y": 0.39
+   }
+  ],
+  "bossSpot": {
+   "x": 0.94,
+   "y": 0.85
+  }
+ }
+}

@@ -1,0 +1,584 @@
+{
+ "schema_version": 1,
+ "ep": 49,
+ "title": {
+  "en": "Red Boy",
+  "zh": "西游记 第49集"
+ },
+ "collection": "c07",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "redboy",
+   "nameZh": "红孩儿",
+   "mode": "sparring",
+   "sprite": "redboy"
+  },
+  "minors": [
+   {
+    "id": "imp",
+    "nameZh": "小妖",
+    "sprite": "imp"
+   }
+  ]
+ },
+ "background": {
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep49/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "\"Wukong is right,\" said Bajie.",
+   "textZh": "\"悟空说得对,\"八戒说道。",
+   "illustration": "assets/adv_frames/ep49/f1.jpg",
+   "sourceNodeId": "n001",
+   "audioRef": "sent_en:\"Wukong is right,\" said Bajie."
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "\"We should all go home and forget about reaching the Western Paradise. I'll return to my cave and take a nice long nap.\"",
+   "textZh": "\"我们大家都该回家,别再想着抵达西方乐园了。我回我的洞穴里,好好睡个长觉吧。\"",
+   "illustration": "assets/adv_frames/ep49/f2.jpg",
+   "sourceNodeId": "n002",
+   "audioRef": "sent_en:\"We should all go home and forget about reaching the Western Paradise. I'll return to my cave and take a nice long nap.\""
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "nap",
+   "zh": "小睡,打盹儿",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep49/f2.jpg"
+  },
+  {
+   "term": "walk away",
+   "zh": "走开,离去",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep49/f3.jpg"
+  },
+  {
+   "term": "crazy",
+   "zh": "疯狂的",
+   "ipa": "ˈkreɪzi",
+   "illustration": "assets/adv_frames/ep49/f1.jpg"
+  },
+  {
+   "term": "summon",
+   "zh": "召唤,召来",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep49/f2.jpg"
+  },
+  {
+   "term": "nasty",
+   "zh": "恶意的,难相处的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep49/f3.jpg"
+  },
+  {
+   "term": "peak",
+   "zh": "顶端,最高点",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep49/f3.jpg"
+  },
+  {
+   "term": "powerful",
+   "zh": "强大的,强而有力的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep49/f2.jpg"
+  },
+  {
+   "term": "ever",
+   "zh": "至今为止",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep49/f2.jpg"
+  },
+  {
+   "term": "release",
+   "zh": "释放,解放",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep49/f0.jpg"
+  },
+  {
+   "term": "snort",
+   "zh": "1. 轻蔑(或愤怒)地哼,嘲讽地笑,(2. (用鼻子等)发出鼻息声)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep49/f2.jpg"
+  },
+  {
+   "term": "get off",
+   "zh": "1. 从...离开,(2. 从(车子等)下来)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep49/f1.jpg"
+  },
+  {
+   "term": "disappointed",
+   "zh": "失望的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep49/f2.jpg"
+  }
+ ],
+ "wordPool": [
+  {
+   "term": "nap",
+   "zh": "小睡,打盹儿",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep49/f2.jpg"
+  },
+  {
+   "term": "walk away",
+   "zh": "走开,离去",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep49/f3.jpg"
+  },
+  {
+   "term": "crazy",
+   "zh": "疯狂的",
+   "ipa": "ˈkreɪzi",
+   "illustration": "assets/adv_frames/ep49/f1.jpg"
+  },
+  {
+   "term": "summon",
+   "zh": "召唤,召来",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep49/f2.jpg"
+  },
+  {
+   "term": "nasty",
+   "zh": "恶意的,难相处的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep49/f3.jpg"
+  },
+  {
+   "term": "peak",
+   "zh": "顶端,最高点",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep49/f3.jpg"
+  },
+  {
+   "term": "powerful",
+   "zh": "强大的,强而有力的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep49/f2.jpg"
+  },
+  {
+   "term": "ever",
+   "zh": "至今为止",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep49/f2.jpg"
+  },
+  {
+   "term": "release",
+   "zh": "释放,解放",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep49/f0.jpg"
+  },
+  {
+   "term": "snort",
+   "zh": "1. 轻蔑(或愤怒)地哼,嘲讽地笑,(2. (用鼻子等)发出鼻息声)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep49/f2.jpg"
+  },
+  {
+   "term": "get off",
+   "zh": "1. 从...离开,(2. 从(车子等)下来)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep49/f1.jpg"
+  },
+  {
+   "term": "disappointed",
+   "zh": "失望的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep49/f2.jpg"
+  },
+  {
+   "term": "solve",
+   "zh": "解决(困难、问题等)",
+   "ipa": "sɒlv",
+   "illustration": "assets/adv_frames/ep49/f1.jpg"
+  },
+  {
+   "term": "nicely",
+   "zh": "愉快地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep49/f3.jpg"
+  },
+  {
+   "term": "remove",
+   "zh": "1. 移动,搬开,(2. 去掉,消除)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep49/f0.jpg"
+  },
+  {
+   "term": "weapon",
+   "zh": "武器,兵器",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep49/f1.jpg"
+  },
+  {
+   "term": "measure",
+   "zh": "测量,计量(尺寸、数量等)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep49/f3.jpg"
+  },
+  {
+   "term": "whatever",
+   "zh": "无论什么,不管什么",
+   "ipa": "wɒtˈevə",
+   "illustration": "assets/adv_frames/ep49/f1.jpg"
+  },
+  {
+   "term": "chest",
+   "zh": "胸部",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep49/f0.jpg"
+  },
+  {
+   "term": "puff out one's",
+   "zh": "(骄傲地)展开胸膛",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep49/f0.jpg"
+  },
+  {
+   "term": "entire",
+   "zh": "整个的,全部的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep49/f1.jpg"
+  },
+  {
+   "term": "pour",
+   "zh": "倒,灌(水等)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep49/f1.jpg"
+  },
+  {
+   "term": "nostril",
+   "zh": "鼻孔",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep49/f1.jpg"
+  },
+  {
+   "term": "flame",
+   "zh": "火焰,火舌",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep49/f2.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "nap",
+     "zh": "小睡,打盹儿",
+     "sprite": "imp"
+    },
+    {
+     "term": "walk away",
+     "zh": "走开,离去",
+     "sprite": "imp"
+    },
+    {
+     "term": "crazy",
+     "zh": "疯狂的",
+     "sprite": "imp"
+    },
+    {
+     "term": "summon",
+     "zh": "召唤,召来",
+     "sprite": "imp"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "nasty",
+     "zh": "恶意的,难相处的",
+     "sprite": "imp"
+    },
+    {
+     "term": "peak",
+     "zh": "顶端,最高点",
+     "sprite": "imp"
+    },
+    {
+     "term": "powerful",
+     "zh": "强大的,强而有力的",
+     "sprite": "imp"
+    },
+    {
+     "term": "ever",
+     "zh": "至今为止",
+     "sprite": "imp"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "release",
+    "zh": "释放,解放"
+   },
+   {
+    "term": "snort",
+    "zh": "1. 轻蔑(或愤怒)地哼,嘲讽地笑,(2. (用鼻子等)发出鼻息声)"
+   },
+   {
+    "term": "get off",
+    "zh": "1. 从...离开,(2. 从(车子等)下来)"
+   },
+   {
+    "term": "disappointed",
+    "zh": "失望的"
+   }
+  ],
+  "taunts": [
+   "redboy.1",
+   "redboy.2",
+   "redboy.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=49",
+ "npcDialogue": {
+  "intro": {
+   "id": "ep49-map-intro",
+   "lines": [
+    {
+     "id": "ep49-map-intro-1",
+     "sourceNodeId": "n001",
+     "speaker": "narrator",
+     "textEn": "\"Wukong is right,\" said Bajie.",
+     "textZh": "\"悟空说得对,\"八戒说道。",
+     "audioRef": "sent_en:\"Wukong is right,\" said Bajie.",
+     "audioStart": 11.0,
+     "audioEnd": 15.589
+    },
+    {
+     "id": "ep49-map-intro-2",
+     "sourceNodeId": "n002",
+     "speaker": "narrator",
+     "textEn": "\"We should all go home and forget about reaching the Western Paradise. I'll return to my cave and take a nice long nap.\"",
+     "textZh": "\"我们大家都该回家,别再想着抵达西方乐园了。我回我的洞穴里,好好睡个长觉吧。\"",
+     "audioRef": "sent_en:\"We should all go home and forget about reaching the Western Paradise. I'll return to my cave and take a nice long nap.\"",
+     "audioStart": 15.59,
+     "audioEnd": 25.829
+    }
+   ]
+  },
+  "quiz": {
+   "id": "ep49-map-quiz",
+   "lines": [
+    {
+     "id": "ep49-map-quiz-1",
+     "sourceNodeId": "n050",
+     "speaker": "narrator",
+     "textEn": "\"I also have a powerful weapon,\" said Red Boy.",
+     "textZh": "\"我还拥有一件强大的武器,\"红孩儿说道。",
+     "audioRef": "sent_en:\"I also have a powerful weapon,\" said Red Boy.",
+     "audioStart": 257.342,
+     "audioEnd": 261.604
+    }
+   ],
+   "question": {
+    "id": "ep049-official-quiz-001",
+    "textEn": "which is true?",
+    "textZh": "哪一个是真的？"
+   },
+   "word": {
+    "term": "nap",
+    "zh": "小睡,打盹儿",
+    "ipa": ""
+   },
+   "options": [
+    {
+     "id": "a",
+     "textEn": "red boy punched himself.",
+     "textZh": "红孩儿打了自己一拳。",
+     "correct": true,
+     "feedback": "对了。红孩儿打了自己一拳。"
+    },
+    {
+     "id": "b",
+     "textEn": "red boy was wukong's father.",
+     "textZh": "红孩儿是悟空的父亲。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    },
+    {
+     "id": "c",
+     "textEn": "red boy returned the tang monk.",
+     "textZh": "红孩儿归还了唐僧。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    }
+   ],
+   "lessonCardId": "ep049-official-quiz-001"
+  }
+ },
+ "map": {
+  "theme": "generic",
+  "coordinateSpace": "world-normalized",
+  "worldTiles": 2,
+  "regions": {
+   "hero": 0,
+   "waves": [
+    0,
+    1
+   ],
+   "npc": {
+    "intro": 0,
+    "quiz": 1
+   },
+   "boss": 3
+  },
+  "walkable": {
+   "space": "world",
+   "x": 0.0,
+   "y": 0.16,
+   "w": 1.0,
+   "h": 0.79,
+   "rects": [
+    {
+     "x": 0.0,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.66,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    }
+   ]
+  },
+  "heroSpawn": {
+   "x": 0.06,
+   "y": 0.31
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.31,
+    "y": 0.23
+   },
+   {
+    "x": 0.38,
+    "y": 0.27
+   },
+   {
+    "x": 0.34,
+    "y": 0.33
+   },
+   {
+    "x": 0.41,
+    "y": 0.24
+   }
+  ],
+  "waveSpawns": [
+   [
+    {
+     "x": 0.31,
+     "y": 0.23
+    },
+    {
+     "x": 0.38,
+     "y": 0.27
+    },
+    {
+     "x": 0.34,
+     "y": 0.33
+    },
+    {
+     "x": 0.41,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.81,
+     "y": 0.23
+    },
+    {
+     "x": 0.88,
+     "y": 0.27
+    },
+    {
+     "x": 0.84,
+     "y": 0.33
+    },
+    {
+     "x": 0.91,
+     "y": 0.24
+    }
+   ]
+  ],
+  "orbSpawns": [
+   [
+    {
+     "x": 0.11,
+     "y": 0.25
+    },
+    {
+     "x": 0.16,
+     "y": 0.31
+    },
+    {
+     "x": 0.12,
+     "y": 0.37
+    },
+    {
+     "x": 0.18,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.61,
+     "y": 0.25
+    },
+    {
+     "x": 0.66,
+     "y": 0.31
+    },
+    {
+     "x": 0.62,
+     "y": 0.37
+    },
+    {
+     "x": 0.68,
+     "y": 0.24
+    }
+   ]
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "redboy",
+    "nameZh": "红孩儿",
+    "x": 0.08,
+    "y": 0.26
+   },
+   {
+    "role": "quiz",
+    "sprite": "redboy",
+    "nameZh": "红孩儿",
+    "x": 0.7,
+    "y": 0.39
+   }
+  ],
+  "bossSpot": {
+   "x": 0.94,
+   "y": 0.85
+  }
+ }
+}

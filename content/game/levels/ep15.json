@@ -1,0 +1,584 @@
+{
+ "schema_version": 1,
+ "ep": 15,
+ "title": {
+  "en": "Tea with a Dragon",
+  "zh": "西游记 第15集"
+ },
+ "collection": "c03",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "imp",
+   "nameZh": "小妖",
+   "mode": "sparring",
+   "sprite": "imp"
+  },
+  "minors": [
+   {
+    "id": "imp",
+    "nameZh": "小妖",
+    "sprite": "imp"
+   }
+  ]
+ },
+ "background": {
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep15/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "The Tang Monk looked at the robbers.",
+   "textZh": "唐僧望向了那些强盗。",
+   "illustration": "assets/adv_frames/ep15/f1.jpg",
+   "sourceNodeId": "n001",
+   "audioRef": "sent_en:The Tang Monk looked at the robbers."
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "He was shaking.",
+   "textZh": "他正在颤抖。",
+   "illustration": "assets/adv_frames/ep15/f2.jpg",
+   "sourceNodeId": "n002",
+   "audioRef": "sent_en:He was shaking."
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "robber",
+   "zh": "强盗",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep15/f1.jpg"
+  },
+  {
+   "term": "approach",
+   "zh": "接近,靠近",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep15/f1.jpg"
+  },
+  {
+   "term": "trip",
+   "zh": "绊,绊倒",
+   "ipa": "trɪp",
+   "illustration": "assets/adv_frames/ep15/f1.jpg"
+  },
+  {
+   "term": "strike back",
+   "zh": "回击,反击",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep15/f0.jpg"
+  },
+  {
+   "term": "ridiculous",
+   "zh": "可笑的,荒谬的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep15/f0.jpg"
+  },
+  {
+   "term": "beaten",
+   "zh": "打,击,敲打 beat-beat-beaten",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep15/f0.jpg"
+  },
+  {
+   "term": "violent",
+   "zh": "1. 暴力的,粗暴的,(2. 激烈的,猛烈的)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep15/f2.jpg"
+  },
+  {
+   "term": "save",
+   "zh": "救(命)",
+   "ipa": "seɪv",
+   "illustration": "assets/adv_frames/ep15/f1.jpg"
+  },
+  {
+   "term": "scold",
+   "zh": "责骂",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep15/f1.jpg"
+  },
+  {
+   "term": "pause",
+   "zh": "暂停,中断",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep15/f1.jpg"
+  },
+  {
+   "term": "accept",
+   "zh": "接受,承认",
+   "ipa": "əkˈsept",
+   "illustration": "assets/adv_frames/ep15/f1.jpg"
+  },
+  {
+   "term": "treatment",
+   "zh": "1. 对待,待遇,(2. 疗法)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep15/f2.jpg"
+  }
+ ],
+ "wordPool": [
+  {
+   "term": "robber",
+   "zh": "强盗",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep15/f1.jpg"
+  },
+  {
+   "term": "approach",
+   "zh": "接近,靠近",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep15/f1.jpg"
+  },
+  {
+   "term": "trip",
+   "zh": "绊,绊倒",
+   "ipa": "trɪp",
+   "illustration": "assets/adv_frames/ep15/f1.jpg"
+  },
+  {
+   "term": "strike back",
+   "zh": "回击,反击",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep15/f0.jpg"
+  },
+  {
+   "term": "ridiculous",
+   "zh": "可笑的,荒谬的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep15/f0.jpg"
+  },
+  {
+   "term": "beaten",
+   "zh": "打,击,敲打 beat-beat-beaten",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep15/f0.jpg"
+  },
+  {
+   "term": "violent",
+   "zh": "1. 暴力的,粗暴的,(2. 激烈的,猛烈的)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep15/f2.jpg"
+  },
+  {
+   "term": "save",
+   "zh": "救(命)",
+   "ipa": "seɪv",
+   "illustration": "assets/adv_frames/ep15/f1.jpg"
+  },
+  {
+   "term": "scold",
+   "zh": "责骂",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep15/f1.jpg"
+  },
+  {
+   "term": "pause",
+   "zh": "暂停,中断",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep15/f1.jpg"
+  },
+  {
+   "term": "accept",
+   "zh": "接受,承认",
+   "ipa": "əkˈsept",
+   "illustration": "assets/adv_frames/ep15/f1.jpg"
+  },
+  {
+   "term": "treatment",
+   "zh": "1. 对待,待遇,(2. 疗法)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep15/f2.jpg"
+  },
+  {
+   "term": "companion",
+   "zh": "同伴,伴侣,朋友",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep15/f2.jpg"
+  },
+  {
+   "term": "misbehave",
+   "zh": "品行不端,行为没礼貌",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep15/f3.jpg"
+  },
+  {
+   "term": "flash",
+   "zh": "闪光,闪烁",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep15/f0.jpg"
+  },
+  {
+   "term": "sip",
+   "zh": "啜饮,一小又一小又喝",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep15/f2.jpg"
+  },
+  {
+   "term": "teacup",
+   "zh": "茶杯",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep15/f0.jpg"
+  },
+  {
+   "term": "attitude",
+   "zh": "态度,看法",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep15/f1.jpg"
+  },
+  {
+   "term": "cruel",
+   "zh": "残忍的,残酷的",
+   "ipa": "ˈkruːəl",
+   "illustration": "assets/adv_frames/ep15/f1.jpg"
+  },
+  {
+   "term": "nervously",
+   "zh": "焦急地,神经质地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep15/f3.jpg"
+  },
+  {
+   "term": "glare",
+   "zh": "怒目注视",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep15/f1.jpg"
+  },
+  {
+   "term": "hesitate",
+   "zh": "犹豫,踌躇",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep15/f3.jpg"
+  },
+  {
+   "term": "fold",
+   "zh": "1. 弯曲着,弓着(脚,身体等),(2. 折叠(纸,布等))",
+   "ipa": "fəʊld",
+   "illustration": "assets/adv_frames/ep15/f3.jpg"
+  },
+  {
+   "term": "perhaps",
+   "zh": "大概,可能",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep15/f2.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "robber",
+     "zh": "强盗",
+     "sprite": "imp"
+    },
+    {
+     "term": "approach",
+     "zh": "接近,靠近",
+     "sprite": "imp"
+    },
+    {
+     "term": "trip",
+     "zh": "绊,绊倒",
+     "sprite": "imp"
+    },
+    {
+     "term": "strike back",
+     "zh": "回击,反击",
+     "sprite": "imp"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "ridiculous",
+     "zh": "可笑的,荒谬的",
+     "sprite": "imp"
+    },
+    {
+     "term": "beaten",
+     "zh": "打,击,敲打 beat-beat-beaten",
+     "sprite": "imp"
+    },
+    {
+     "term": "violent",
+     "zh": "1. 暴力的,粗暴的,(2. 激烈的,猛烈的)",
+     "sprite": "imp"
+    },
+    {
+     "term": "save",
+     "zh": "救(命)",
+     "sprite": "imp"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "scold",
+    "zh": "责骂"
+   },
+   {
+    "term": "pause",
+    "zh": "暂停,中断"
+   },
+   {
+    "term": "accept",
+    "zh": "接受,承认"
+   },
+   {
+    "term": "treatment",
+    "zh": "1. 对待,待遇,(2. 疗法)"
+   }
+  ],
+  "taunts": [
+   "imp.1",
+   "imp.2",
+   "imp.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=15",
+ "npcDialogue": {
+  "intro": {
+   "id": "ep15-map-intro",
+   "lines": [
+    {
+     "id": "ep15-map-intro-1",
+     "sourceNodeId": "n001",
+     "speaker": "narrator",
+     "textEn": "The Tang Monk looked at the robbers.",
+     "textZh": "唐僧望向了那些强盗。",
+     "audioRef": "sent_en:The Tang Monk looked at the robbers.",
+     "audioStart": 11.134,
+     "audioEnd": 16.044
+    },
+    {
+     "id": "ep15-map-intro-2",
+     "sourceNodeId": "n002",
+     "speaker": "narrator",
+     "textEn": "He was shaking.",
+     "textZh": "他正在颤抖。",
+     "audioRef": "sent_en:He was shaking.",
+     "audioStart": 16.045,
+     "audioEnd": 17.927
+    }
+   ]
+  },
+  "quiz": {
+   "id": "ep15-map-quiz",
+   "lines": [
+    {
+     "id": "ep15-map-quiz-1",
+     "sourceNodeId": "n068",
+     "speaker": "narrator",
+     "textEn": "\"Well, Wukong. The monk has a point.\"",
+     "textZh": "\"好吧,悟空。这位僧人说得有道理。\"",
+     "audioRef": "sent_en:\"Well, Wukong. The monk has a point.\"",
+     "audioStart": 281.155,
+     "audioEnd": 284.956
+    }
+   ],
+   "question": {
+    "id": "ep015-official-quiz-001",
+    "textEn": "which is not true?",
+    "textZh": "哪一项是不正确的？"
+   },
+   "word": {
+    "term": "robber",
+    "zh": "强盗",
+    "ipa": ""
+   },
+   "options": [
+    {
+     "id": "a",
+     "textEn": "the dragon king said the monk was wrong.",
+     "textZh": "龙王说那位和尚错了。",
+     "correct": true,
+     "feedback": "对了。龙王说那位和尚错了。"
+    },
+    {
+     "id": "b",
+     "textEn": "guanyin said wukong would come back.",
+     "textZh": "观音说悟空会回来的。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    },
+    {
+     "id": "c",
+     "textEn": "the monk didn't want to hurt the robbers.",
+     "textZh": "和尚不想伤害强盗。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    }
+   ],
+   "lessonCardId": "ep015-official-quiz-001"
+  }
+ },
+ "map": {
+  "theme": "generic",
+  "coordinateSpace": "world-normalized",
+  "worldTiles": 2,
+  "regions": {
+   "hero": 0,
+   "waves": [
+    0,
+    1
+   ],
+   "npc": {
+    "intro": 0,
+    "quiz": 1
+   },
+   "boss": 3
+  },
+  "walkable": {
+   "space": "world",
+   "x": 0.0,
+   "y": 0.16,
+   "w": 1.0,
+   "h": 0.79,
+   "rects": [
+    {
+     "x": 0.0,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.66,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    }
+   ]
+  },
+  "heroSpawn": {
+   "x": 0.06,
+   "y": 0.31
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.31,
+    "y": 0.23
+   },
+   {
+    "x": 0.38,
+    "y": 0.27
+   },
+   {
+    "x": 0.34,
+    "y": 0.33
+   },
+   {
+    "x": 0.41,
+    "y": 0.24
+   }
+  ],
+  "waveSpawns": [
+   [
+    {
+     "x": 0.31,
+     "y": 0.23
+    },
+    {
+     "x": 0.38,
+     "y": 0.27
+    },
+    {
+     "x": 0.34,
+     "y": 0.33
+    },
+    {
+     "x": 0.41,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.81,
+     "y": 0.23
+    },
+    {
+     "x": 0.88,
+     "y": 0.27
+    },
+    {
+     "x": 0.84,
+     "y": 0.33
+    },
+    {
+     "x": 0.91,
+     "y": 0.24
+    }
+   ]
+  ],
+  "orbSpawns": [
+   [
+    {
+     "x": 0.11,
+     "y": 0.25
+    },
+    {
+     "x": 0.16,
+     "y": 0.31
+    },
+    {
+     "x": 0.12,
+     "y": 0.37
+    },
+    {
+     "x": 0.18,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.61,
+     "y": 0.25
+    },
+    {
+     "x": 0.66,
+     "y": 0.31
+    },
+    {
+     "x": 0.62,
+     "y": 0.37
+    },
+    {
+     "x": 0.68,
+     "y": 0.24
+    }
+   ]
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "mountain-bandit",
+    "nameZh": "山贼",
+    "x": 0.08,
+    "y": 0.26
+   },
+   {
+    "role": "quiz",
+    "sprite": "mountain-bandit",
+    "nameZh": "山贼",
+    "x": 0.7,
+    "y": 0.39
+   }
+  ],
+  "bossSpot": {
+   "x": 0.94,
+   "y": 0.85
+  }
+ }
+}

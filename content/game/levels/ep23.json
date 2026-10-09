@@ -1,0 +1,584 @@
+{
+ "schema_version": 1,
+ "ep": 23,
+ "title": {
+  "en": "Great Protectors",
+  "zh": "西游记 第23集"
+ },
+ "collection": "c03",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "imp",
+   "nameZh": "小妖",
+   "mode": "sparring",
+   "sprite": "imp"
+  },
+  "minors": [
+   {
+    "id": "imp",
+    "nameZh": "小妖",
+    "sprite": "imp"
+   }
+  ]
+ },
+ "background": {
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep23/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "The creature had a pig's snout and ears.",
+   "textZh": "这个生物长着猪一样的口鼻和耳朵。",
+   "illustration": "assets/adv_frames/ep23/f1.jpg",
+   "sourceNodeId": "n001",
+   "audioRef": "sent_en:The creature had a pig's snout and ears."
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "But he ran on two legs like a person.",
+   "textZh": "但他像人一样用两条腿奔跑。",
+   "illustration": "assets/adv_frames/ep23/f2.jpg",
+   "sourceNodeId": "n002",
+   "audioRef": "sent_en:But he ran on two legs like a person."
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "protector",
+   "zh": "保护者",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep23/f1.jpg"
+  },
+  {
+   "term": "snout",
+   "zh": "(猪等的)鼻,又鼻部",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep23/f1.jpg"
+  },
+  {
+   "term": "swung",
+   "zh": "挥舞,挥动 (swing-swung)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep23/f3.jpg"
+  },
+  {
+   "term": "block",
+   "zh": "1. (道路等)阻塞,堵住,(2. 积木)",
+   "ipa": "blɒk",
+   "illustration": "assets/adv_frames/ep23/f1.jpg"
+  },
+  {
+   "term": "facedown",
+   "zh": "面朝下的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep23/f3.jpg"
+  },
+  {
+   "term": "slam",
+   "zh": "1. 猛然撞上,(2. 砰然关上(门))",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep23/f2.jpg"
+  },
+  {
+   "term": "smash",
+   "zh": "打碎,打破",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep23/f2.jpg"
+  },
+  {
+   "term": "dust",
+   "zh": "灰尘",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep23/f3.jpg"
+  },
+  {
+   "term": "surrender",
+   "zh": "投降",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep23/f1.jpg"
+  },
+  {
+   "term": "cause",
+   "zh": "导致,使发生,引起",
+   "ipa": "kɔːz",
+   "illustration": "assets/adv_frames/ep23/f2.jpg"
+  },
+  {
+   "term": "lunge",
+   "zh": "冲,扑",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep23/f1.jpg"
+  },
+  {
+   "term": "trap",
+   "zh": "困(在危险的场所或困境)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep23/f1.jpg"
+  }
+ ],
+ "wordPool": [
+  {
+   "term": "protector",
+   "zh": "保护者",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep23/f1.jpg"
+  },
+  {
+   "term": "snout",
+   "zh": "(猪等的)鼻,又鼻部",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep23/f1.jpg"
+  },
+  {
+   "term": "swung",
+   "zh": "挥舞,挥动 (swing-swung)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep23/f3.jpg"
+  },
+  {
+   "term": "block",
+   "zh": "1. (道路等)阻塞,堵住,(2. 积木)",
+   "ipa": "blɒk",
+   "illustration": "assets/adv_frames/ep23/f1.jpg"
+  },
+  {
+   "term": "facedown",
+   "zh": "面朝下的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep23/f3.jpg"
+  },
+  {
+   "term": "slam",
+   "zh": "1. 猛然撞上,(2. 砰然关上(门))",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep23/f2.jpg"
+  },
+  {
+   "term": "smash",
+   "zh": "打碎,打破",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep23/f2.jpg"
+  },
+  {
+   "term": "dust",
+   "zh": "灰尘",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep23/f3.jpg"
+  },
+  {
+   "term": "surrender",
+   "zh": "投降",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep23/f1.jpg"
+  },
+  {
+   "term": "cause",
+   "zh": "导致,使发生,引起",
+   "ipa": "kɔːz",
+   "illustration": "assets/adv_frames/ep23/f2.jpg"
+  },
+  {
+   "term": "lunge",
+   "zh": "冲,扑",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep23/f1.jpg"
+  },
+  {
+   "term": "trap",
+   "zh": "困(在危险的场所或困境)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep23/f1.jpg"
+  },
+  {
+   "term": "complain",
+   "zh": "抱怨,发牢骚",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep23/f0.jpg"
+  },
+  {
+   "term": "moan",
+   "zh": "1. 抱怨,(2. 呻吟)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep23/f0.jpg"
+  },
+  {
+   "term": "bend",
+   "zh": "1. (道路等的)转弯处,(2. 使弯曲,折弯)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep23/f3.jpg"
+  },
+  {
+   "term": "master",
+   "zh": "(狗、仆人等的)主人",
+   "ipa": "ˈmɑːstə",
+   "illustration": "assets/adv_frames/ep23/f3.jpg"
+  },
+  {
+   "term": "host",
+   "zh": "举办,主办(活动,会议等)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep23/f3.jpg"
+  },
+  {
+   "term": "feast",
+   "zh": "盛宴,筵席",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep23/f1.jpg"
+  },
+  {
+   "term": "pale",
+   "zh": "(脸色)苍白的",
+   "ipa": "peɪl",
+   "illustration": "assets/adv_frames/ep23/f3.jpg"
+  },
+  {
+   "term": "scripture",
+   "zh": "经文",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep23/f0.jpg"
+  },
+  {
+   "term": "claw",
+   "zh": "爪子",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep23/f3.jpg"
+  },
+  {
+   "term": "dodge",
+   "zh": "(快速)躲闪,灵活地避开",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep23/f0.jpg"
+  },
+  {
+   "term": "fled",
+   "zh": "逃走,逃逸 (flee-fled)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep23/f1.jpg"
+  },
+  {
+   "term": "flash",
+   "zh": "闪光,闪烁",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep23/f0.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "protector",
+     "zh": "保护者",
+     "sprite": "imp"
+    },
+    {
+     "term": "snout",
+     "zh": "(猪等的)鼻,又鼻部",
+     "sprite": "imp"
+    },
+    {
+     "term": "swung",
+     "zh": "挥舞,挥动 (swing-swung)",
+     "sprite": "imp"
+    },
+    {
+     "term": "block",
+     "zh": "1. (道路等)阻塞,堵住,(2. 积木)",
+     "sprite": "imp"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "facedown",
+     "zh": "面朝下的",
+     "sprite": "imp"
+    },
+    {
+     "term": "slam",
+     "zh": "1. 猛然撞上,(2. 砰然关上(门))",
+     "sprite": "imp"
+    },
+    {
+     "term": "smash",
+     "zh": "打碎,打破",
+     "sprite": "imp"
+    },
+    {
+     "term": "dust",
+     "zh": "灰尘",
+     "sprite": "imp"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "surrender",
+    "zh": "投降"
+   },
+   {
+    "term": "cause",
+    "zh": "导致,使发生,引起"
+   },
+   {
+    "term": "lunge",
+    "zh": "冲,扑"
+   },
+   {
+    "term": "trap",
+    "zh": "困(在危险的场所或困境)"
+   }
+  ],
+  "taunts": [
+   "imp.1",
+   "imp.2",
+   "imp.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=23",
+ "npcDialogue": {
+  "intro": {
+   "id": "ep23-map-intro",
+   "lines": [
+    {
+     "id": "ep23-map-intro-1",
+     "sourceNodeId": "n001",
+     "speaker": "narrator",
+     "textEn": "The creature had a pig's snout and ears.",
+     "textZh": "这个生物长着猪一样的口鼻和耳朵。",
+     "audioRef": "sent_en:The creature had a pig's snout and ears.",
+     "audioStart": 11.2,
+     "audioEnd": 16.95
+    },
+    {
+     "id": "ep23-map-intro-2",
+     "sourceNodeId": "n002",
+     "speaker": "narrator",
+     "textEn": "But he ran on two legs like a person.",
+     "textZh": "但他像人一样用两条腿奔跑。",
+     "audioRef": "sent_en:But he ran on two legs like a person.",
+     "audioStart": 16.951,
+     "audioEnd": 20.081
+    }
+   ]
+  },
+  "quiz": {
+   "id": "ep23-map-quiz",
+   "lines": [
+    {
+     "id": "ep23-map-quiz-1",
+     "sourceNodeId": "n027",
+     "speaker": "narrator",
+     "textEn": "\"I was sent to Earth as a punishment,\" said the pig.",
+     "textZh": "\"我被派到地球来作为惩罚,\"那头猪说道。",
+     "audioRef": "sent_en:\"I was sent to Earth as a punishment,\" said the pig.",
+     "audioStart": 107.751,
+     "audioEnd": 111.538
+    }
+   ],
+   "question": {
+    "id": "ep023-official-quiz-001",
+    "textEn": "which is not true?",
+    "textZh": "哪一项是不正确的？"
+   },
+   "word": {
+    "term": "protector",
+    "zh": "保护者",
+    "ipa": ""
+   },
+   "options": [
+    {
+     "id": "a",
+     "textEn": "wukong caught the tiger.",
+     "textZh": "悟空抓住了老虎。",
+     "correct": true,
+     "feedback": "对了。悟空抓住了老虎。"
+    },
+    {
+     "id": "b",
+     "textEn": "bajie was sent to earth.",
+     "textZh": "八戒被送到了地球。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    },
+    {
+     "id": "c",
+     "textEn": "yellow wind was hosting a feast.",
+     "textZh": "黄风正在举办一场宴会。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    }
+   ],
+   "lessonCardId": "ep023-official-quiz-001"
+  }
+ },
+ "map": {
+  "theme": "generic",
+  "coordinateSpace": "world-normalized",
+  "worldTiles": 2,
+  "regions": {
+   "hero": 0,
+   "waves": [
+    0,
+    1
+   ],
+   "npc": {
+    "intro": 0,
+    "quiz": 1
+   },
+   "boss": 3
+  },
+  "walkable": {
+   "space": "world",
+   "x": 0.0,
+   "y": 0.16,
+   "w": 1.0,
+   "h": 0.79,
+   "rects": [
+    {
+     "x": 0.0,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.66,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    }
+   ]
+  },
+  "heroSpawn": {
+   "x": 0.06,
+   "y": 0.31
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.31,
+    "y": 0.23
+   },
+   {
+    "x": 0.38,
+    "y": 0.27
+   },
+   {
+    "x": 0.34,
+    "y": 0.33
+   },
+   {
+    "x": 0.41,
+    "y": 0.24
+   }
+  ],
+  "waveSpawns": [
+   [
+    {
+     "x": 0.31,
+     "y": 0.23
+    },
+    {
+     "x": 0.38,
+     "y": 0.27
+    },
+    {
+     "x": 0.34,
+     "y": 0.33
+    },
+    {
+     "x": 0.41,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.81,
+     "y": 0.23
+    },
+    {
+     "x": 0.88,
+     "y": 0.27
+    },
+    {
+     "x": 0.84,
+     "y": 0.33
+    },
+    {
+     "x": 0.91,
+     "y": 0.24
+    }
+   ]
+  ],
+  "orbSpawns": [
+   [
+    {
+     "x": 0.11,
+     "y": 0.25
+    },
+    {
+     "x": 0.16,
+     "y": 0.31
+    },
+    {
+     "x": 0.12,
+     "y": 0.37
+    },
+    {
+     "x": 0.18,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.61,
+     "y": 0.25
+    },
+    {
+     "x": 0.66,
+     "y": 0.31
+    },
+    {
+     "x": 0.62,
+     "y": 0.37
+    },
+    {
+     "x": 0.68,
+     "y": 0.24
+    }
+   ]
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "bajie",
+    "nameZh": "猪八戒",
+    "x": 0.08,
+    "y": 0.26
+   },
+   {
+    "role": "quiz",
+    "sprite": "bajie",
+    "nameZh": "猪八戒",
+    "x": 0.7,
+    "y": 0.39
+   }
+  ],
+  "bossSpot": {
+   "x": 0.94,
+   "y": 0.85
+  }
+ }
+}

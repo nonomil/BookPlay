@@ -1,0 +1,584 @@
+{
+ "schema_version": 1,
+ "ep": 71,
+ "title": {
+  "en": "Money",
+  "zh": "西游记 第71集"
+ },
+ "collection": "c09",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "imp",
+   "nameZh": "小妖",
+   "mode": "sparring",
+   "sprite": "imp"
+  },
+  "minors": [
+   {
+    "id": "imp",
+    "nameZh": "小妖",
+    "sprite": "imp"
+   }
+  ]
+ },
+ "background": {
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep71/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "\"I'm hungry,\" Bajie moaned.",
+   "textZh": "\"我饿了,\"八戒呻吟道。",
+   "illustration": "assets/adv_frames/ep71/f1.jpg",
+   "sourceNodeId": "n001",
+   "audioRef": "sent_en:\"I'm hungry,\" Bajie moaned."
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "His stomach grumbled loudly.",
+   "textZh": "他的肚子发出响亮的咕咕声。",
+   "illustration": "assets/adv_frames/ep71/f2.jpg",
+   "sourceNodeId": "n002",
+   "audioRef": "sent_en:His stomach grumbled loudly."
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "grumble",
+   "zh": "1. (肚子发出的)低的咕咕的叫声,(2. 嘟囔着说,埋怨地表示)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep71/f2.jpg"
+  },
+  {
+   "term": "smooth",
+   "zh": "(物体表面)平坦的,光滑的",
+   "ipa": "smuː ð",
+   "illustration": "assets/adv_frames/ep71/f1.jpg"
+  },
+  {
+   "term": "eager",
+   "zh": "渴望的,热切的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep71/f1.jpg"
+  },
+  {
+   "term": "gladly",
+   "zh": "高兴地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep71/f3.jpg"
+  },
+  {
+   "term": "doubt",
+   "zh": "怀疑,带着疑问",
+   "ipa": "daʊt",
+   "illustration": "assets/adv_frames/ep71/f1.jpg"
+  },
+  {
+   "term": "puff",
+   "zh": "1. 膨胀,鼓起,(2. 吹气,喷烟)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep71/f2.jpg"
+  },
+  {
+   "term": "puff out",
+   "zh": "(使)膨胀",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep71/f2.jpg"
+  },
+  {
+   "term": "handsome",
+   "zh": "英俊的,帅的",
+   "ipa": "ˈhænsəm",
+   "illustration": "assets/adv_frames/ep71/f3.jpg"
+  },
+  {
+   "term": "include",
+   "zh": "包括,包含",
+   "ipa": "ɪnˈkluːd",
+   "illustration": "assets/adv_frames/ep71/f0.jpg"
+  },
+  {
+   "term": "complain",
+   "zh": "抱怨,发牢骚",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep71/f1.jpg"
+  },
+  {
+   "term": "smack",
+   "zh": "(用手)拍,打",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep71/f2.jpg"
+  },
+  {
+   "term": "tightly",
+   "zh": "紧紧地,坚固地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep71/f3.jpg"
+  }
+ ],
+ "wordPool": [
+  {
+   "term": "grumble",
+   "zh": "1. (肚子发出的)低的咕咕的叫声,(2. 嘟囔着说,埋怨地表示)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep71/f2.jpg"
+  },
+  {
+   "term": "smooth",
+   "zh": "(物体表面)平坦的,光滑的",
+   "ipa": "smuː ð",
+   "illustration": "assets/adv_frames/ep71/f1.jpg"
+  },
+  {
+   "term": "eager",
+   "zh": "渴望的,热切的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep71/f1.jpg"
+  },
+  {
+   "term": "gladly",
+   "zh": "高兴地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep71/f3.jpg"
+  },
+  {
+   "term": "doubt",
+   "zh": "怀疑,带着疑问",
+   "ipa": "daʊt",
+   "illustration": "assets/adv_frames/ep71/f1.jpg"
+  },
+  {
+   "term": "puff",
+   "zh": "1. 膨胀,鼓起,(2. 吹气,喷烟)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep71/f2.jpg"
+  },
+  {
+   "term": "puff out",
+   "zh": "(使)膨胀",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep71/f2.jpg"
+  },
+  {
+   "term": "handsome",
+   "zh": "英俊的,帅的",
+   "ipa": "ˈhænsəm",
+   "illustration": "assets/adv_frames/ep71/f3.jpg"
+  },
+  {
+   "term": "include",
+   "zh": "包括,包含",
+   "ipa": "ɪnˈkluːd",
+   "illustration": "assets/adv_frames/ep71/f0.jpg"
+  },
+  {
+   "term": "complain",
+   "zh": "抱怨,发牢骚",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep71/f1.jpg"
+  },
+  {
+   "term": "smack",
+   "zh": "(用手)拍,打",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep71/f2.jpg"
+  },
+  {
+   "term": "tightly",
+   "zh": "紧紧地,坚固地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep71/f3.jpg"
+  },
+  {
+   "term": "hang",
+   "zh": "1. 紧抓,握住不放,(2. 坚持)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep71/f3.jpg"
+  },
+  {
+   "term": "far",
+   "zh": "到很深的程度,到很远的距离",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep71/f0.jpg"
+  },
+  {
+   "term": "nasty",
+   "zh": "恶意的,难相处的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep71/f1.jpg"
+  },
+  {
+   "term": "dare",
+   "zh": "敢,敢于",
+   "ipa": "deə",
+   "illustration": "assets/adv_frames/ep71/f1.jpg"
+  },
+  {
+   "term": "make a bet",
+   "zh": "打赌",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep71/f1.jpg"
+  },
+  {
+   "term": "height",
+   "zh": "身高,高度",
+   "ipa": "haɪt",
+   "illustration": "assets/adv_frames/ep71/f2.jpg"
+  },
+  {
+   "term": "sweat",
+   "zh": "1. 汗,(2. 出汗,流汗)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep71/f1.jpg"
+  },
+  {
+   "term": "budge",
+   "zh": "推动,移动",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep71/f2.jpg"
+  },
+  {
+   "term": "twirl",
+   "zh": "快速旋转,快速转动",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep71/f0.jpg"
+  },
+  {
+   "term": "one",
+   "zh": "彼此,互相",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep71/f0.jpg"
+  },
+  {
+   "term": "furious",
+   "zh": "非常愤怒的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep71/f1.jpg"
+  },
+  {
+   "term": "command",
+   "zh": "命令",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep71/f3.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "grumble",
+     "zh": "1. (肚子发出的)低的咕咕的叫声,(2. 嘟囔着说,埋怨地表示)",
+     "sprite": "imp"
+    },
+    {
+     "term": "smooth",
+     "zh": "(物体表面)平坦的,光滑的",
+     "sprite": "imp"
+    },
+    {
+     "term": "eager",
+     "zh": "渴望的,热切的",
+     "sprite": "imp"
+    },
+    {
+     "term": "gladly",
+     "zh": "高兴地",
+     "sprite": "imp"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "doubt",
+     "zh": "怀疑,带着疑问",
+     "sprite": "imp"
+    },
+    {
+     "term": "puff",
+     "zh": "1. 膨胀,鼓起,(2. 吹气,喷烟)",
+     "sprite": "imp"
+    },
+    {
+     "term": "puff out",
+     "zh": "(使)膨胀",
+     "sprite": "imp"
+    },
+    {
+     "term": "handsome",
+     "zh": "英俊的,帅的",
+     "sprite": "imp"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "include",
+    "zh": "包括,包含"
+   },
+   {
+    "term": "complain",
+    "zh": "抱怨,发牢骚"
+   },
+   {
+    "term": "smack",
+    "zh": "(用手)拍,打"
+   },
+   {
+    "term": "tightly",
+    "zh": "紧紧地,坚固地"
+   }
+  ],
+  "taunts": [
+   "imp.1",
+   "imp.2",
+   "imp.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=71",
+ "npcDialogue": {
+  "intro": {
+   "id": "ep71-map-intro",
+   "lines": [
+    {
+     "id": "ep71-map-intro-1",
+     "sourceNodeId": "n001",
+     "speaker": "narrator",
+     "textEn": "\"I'm hungry,\" Bajie moaned.",
+     "textZh": "\"我饿了,\"八戒呻吟道。",
+     "audioRef": "sent_en:\"I'm hungry,\" Bajie moaned.",
+     "audioStart": 11.0,
+     "audioEnd": 20.126
+    },
+    {
+     "id": "ep71-map-intro-2",
+     "sourceNodeId": "n002",
+     "speaker": "narrator",
+     "textEn": "His stomach grumbled loudly.",
+     "textZh": "他的肚子发出响亮的咕咕声。",
+     "audioRef": "sent_en:His stomach grumbled loudly.",
+     "audioStart": 20.127,
+     "audioEnd": 23.368
+    }
+   ]
+  },
+  "quiz": {
+   "id": "ep71-map-quiz",
+   "lines": [
+    {
+     "id": "ep71-map-quiz-1",
+     "sourceNodeId": "n059",
+     "speaker": "narrator",
+     "textEn": "He fell to his knees as the Tang Monk quietly recited the Tight Headband spell.",
+     "textZh": "当唐僧低声吟诵着\"紧头带咒语\"时,他顿时跪倒在地。",
+     "audioRef": "sent_en:He fell to his knees as the Tang Monk quietly recited the Tight Headband spell.",
+     "audioStart": 239.549,
+     "audioEnd": 245.294
+    }
+   ],
+   "question": {
+    "id": "ep071-official-quiz-001",
+    "textEn": "which is true?",
+    "textZh": "哪一个是真的？"
+   },
+   "word": {
+    "term": "grumble",
+    "zh": "1. (肚子发出的)低的咕咕的叫声,(2. 嘟囔着说,埋怨地表示)",
+    "ipa": ""
+   },
+   "options": [
+    {
+     "id": "a",
+     "textEn": "the tang monk recited the tight headband spell.",
+     "textZh": "唐僧念了紧箍咒。",
+     "correct": true,
+     "feedback": "对了。唐僧念了紧箍咒。"
+    },
+    {
+     "id": "b",
+     "textEn": "wujing wanted to marry the scorpion spirit.",
+     "textZh": "悟净想娶蝎子精。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    },
+    {
+     "id": "c",
+     "textEn": "bajie said wukong was evil.",
+     "textZh": "八戒说悟空是恶的。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    }
+   ],
+   "lessonCardId": "ep071-official-quiz-001"
+  }
+ },
+ "map": {
+  "theme": "generic",
+  "coordinateSpace": "world-normalized",
+  "worldTiles": 2,
+  "regions": {
+   "hero": 0,
+   "waves": [
+    0,
+    1
+   ],
+   "npc": {
+    "intro": 0,
+    "quiz": 1
+   },
+   "boss": 3
+  },
+  "walkable": {
+   "space": "world",
+   "x": 0.0,
+   "y": 0.16,
+   "w": 1.0,
+   "h": 0.79,
+   "rects": [
+    {
+     "x": 0.0,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.66,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    }
+   ]
+  },
+  "heroSpawn": {
+   "x": 0.06,
+   "y": 0.31
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.31,
+    "y": 0.23
+   },
+   {
+    "x": 0.38,
+    "y": 0.27
+   },
+   {
+    "x": 0.34,
+    "y": 0.33
+   },
+   {
+    "x": 0.41,
+    "y": 0.24
+   }
+  ],
+  "waveSpawns": [
+   [
+    {
+     "x": 0.31,
+     "y": 0.23
+    },
+    {
+     "x": 0.38,
+     "y": 0.27
+    },
+    {
+     "x": 0.34,
+     "y": 0.33
+    },
+    {
+     "x": 0.41,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.81,
+     "y": 0.23
+    },
+    {
+     "x": 0.88,
+     "y": 0.27
+    },
+    {
+     "x": 0.84,
+     "y": 0.33
+    },
+    {
+     "x": 0.91,
+     "y": 0.24
+    }
+   ]
+  ],
+  "orbSpawns": [
+   [
+    {
+     "x": 0.11,
+     "y": 0.25
+    },
+    {
+     "x": 0.16,
+     "y": 0.31
+    },
+    {
+     "x": 0.12,
+     "y": 0.37
+    },
+    {
+     "x": 0.18,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.61,
+     "y": 0.25
+    },
+    {
+     "x": 0.66,
+     "y": 0.31
+    },
+    {
+     "x": 0.62,
+     "y": 0.37
+    },
+    {
+     "x": 0.68,
+     "y": 0.24
+    }
+   ]
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "imp",
+    "nameZh": "小妖",
+    "x": 0.08,
+    "y": 0.26
+   },
+   {
+    "role": "quiz",
+    "sprite": "imp",
+    "nameZh": "小妖",
+    "x": 0.7,
+    "y": 0.39
+   }
+  ],
+  "bossSpot": {
+   "x": 0.94,
+   "y": 0.85
+  }
+ }
+}

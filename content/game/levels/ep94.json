@@ -1,0 +1,584 @@
+{
+ "schema_version": 1,
+ "ep": 94,
+ "title": {
+  "en": "The Elephant Demon",
+  "zh": "西游记 第94集"
+ },
+ "collection": "c12",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "liondemon",
+   "nameZh": "狮魔王",
+   "mode": "sparring",
+   "sprite": "liondemon"
+  },
+  "minors": [
+   {
+    "id": "imp",
+    "nameZh": "小妖",
+    "sprite": "imp"
+   }
+  ]
+ },
+ "background": {
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep94/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "The lion demon rubbed his aching mouth.",
+   "textZh": "狮子魔揉了揉疼痛的嘴。",
+   "illustration": "assets/adv_frames/ep94/f1.jpg",
+   "sourceNodeId": "n001",
+   "audioRef": "sent_en:The lion demon rubbed his aching mouth."
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "\"Let's leave the Tang Monk alone. Wukong is dangerous.\"",
+   "textZh": "\"咱们别管唐僧了,悟空很危险。\"",
+   "illustration": "assets/adv_frames/ep94/f2.jpg",
+   "sourceNodeId": "n002",
+   "audioRef": "sent_en:\"Let's leave the Tang Monk alone. Wukong is dangerous.\""
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "aching",
+   "zh": "疼痛的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep94/f1.jpg"
+  },
+  {
+   "term": "ache",
+   "zh": "(持续地)疼痛",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep94/f1.jpg"
+  },
+  {
+   "term": "leave alone",
+   "zh": "不打扰,不干涉",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep94/f2.jpg"
+  },
+  {
+   "term": "dangerous",
+   "zh": "危险的",
+   "ipa": "ˈdeɪndʒərəs",
+   "illustration": "assets/adv_frames/ep94/f1.jpg"
+  },
+  {
+   "term": "perfect",
+   "zh": "完美的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep94/f1.jpg"
+  },
+  {
+   "term": "capture",
+   "zh": "捕获,俘虏",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep94/f1.jpg"
+  },
+  {
+   "term": "wound up",
+   "zh": "最后得到或处于某种状况(wind up-wound up)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep94/f3.jpg"
+  },
+  {
+   "term": "leave",
+   "zh": "1. 交托,交由...照管,(2. 离开,3. 留下,遗留,留给)",
+   "ipa": "liːv",
+   "illustration": "assets/adv_frames/ep94/f1.jpg"
+  },
+  {
+   "term": "argue",
+   "zh": "争论,辩论",
+   "ipa": "ˈɑːrɡjuː",
+   "illustration": "assets/adv_frames/ep94/f2.jpg"
+  },
+  {
+   "term": "eaten",
+   "zh": "吃 eat-ate-eaten",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep94/f2.jpg"
+  },
+  {
+   "term": "beat up",
+   "zh": "痛打",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep94/f0.jpg"
+  },
+  {
+   "term": "inside",
+   "zh": "1. 里面,内部,(2. 往里面)",
+   "ipa": "ˌɪnˈsaɪd",
+   "illustration": "assets/adv_frames/ep94/f2.jpg"
+  }
+ ],
+ "wordPool": [
+  {
+   "term": "aching",
+   "zh": "疼痛的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep94/f1.jpg"
+  },
+  {
+   "term": "ache",
+   "zh": "(持续地)疼痛",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep94/f1.jpg"
+  },
+  {
+   "term": "leave alone",
+   "zh": "不打扰,不干涉",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep94/f2.jpg"
+  },
+  {
+   "term": "dangerous",
+   "zh": "危险的",
+   "ipa": "ˈdeɪndʒərəs",
+   "illustration": "assets/adv_frames/ep94/f1.jpg"
+  },
+  {
+   "term": "perfect",
+   "zh": "完美的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep94/f1.jpg"
+  },
+  {
+   "term": "capture",
+   "zh": "捕获,俘虏",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep94/f1.jpg"
+  },
+  {
+   "term": "wound up",
+   "zh": "最后得到或处于某种状况(wind up-wound up)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep94/f3.jpg"
+  },
+  {
+   "term": "leave",
+   "zh": "1. 交托,交由...照管,(2. 离开,3. 留下,遗留,留给)",
+   "ipa": "liːv",
+   "illustration": "assets/adv_frames/ep94/f1.jpg"
+  },
+  {
+   "term": "argue",
+   "zh": "争论,辩论",
+   "ipa": "ˈɑːrɡjuː",
+   "illustration": "assets/adv_frames/ep94/f2.jpg"
+  },
+  {
+   "term": "eaten",
+   "zh": "吃 eat-ate-eaten",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep94/f2.jpg"
+  },
+  {
+   "term": "beat up",
+   "zh": "痛打",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep94/f0.jpg"
+  },
+  {
+   "term": "inside",
+   "zh": "1. 里面,内部,(2. 往里面)",
+   "ipa": "ˌɪnˈsaɪd",
+   "illustration": "assets/adv_frames/ep94/f2.jpg"
+  },
+  {
+   "term": "safely",
+   "zh": "安全地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep94/f1.jpg"
+  },
+  {
+   "term": "figure",
+   "zh": "(人的)体态,身影",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep94/f0.jpg"
+  },
+  {
+   "term": "faint",
+   "zh": "晕倒,昏倒",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep94/f0.jpg"
+  },
+  {
+   "term": "harm",
+   "zh": "损伤,损害",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep94/f1.jpg"
+  },
+  {
+   "term": "struck",
+   "zh": "1. 袭击 (strike-struck),(2. 打,打击)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep94/f2.jpg"
+  },
+  {
+   "term": "out of the",
+   "zh": "靠边,避开",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep94/f3.jpg"
+  },
+  {
+   "term": "jerk",
+   "zh": "猛然一动,颠簸",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep94/f0.jpg"
+  },
+  {
+   "term": "trunk",
+   "zh": "象鼻",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep94/f0.jpg"
+  },
+  {
+   "term": "tightly",
+   "zh": "紧紧地,坚固地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep94/f1.jpg"
+  },
+  {
+   "term": "groan",
+   "zh": "(因为痛苦,烦心等原因)发出呻吟,抱怨",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep94/f2.jpg"
+  },
+  {
+   "term": "ran off",
+   "zh": "迅速离开",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep94/f2.jpg"
+  },
+  {
+   "term": "fly",
+   "zh": "1. 苍蝇,(2. 飞)",
+   "ipa": "flaɪ",
+   "illustration": "assets/adv_frames/ep94/f1.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "aching",
+     "zh": "疼痛的",
+     "sprite": "imp"
+    },
+    {
+     "term": "ache",
+     "zh": "(持续地)疼痛",
+     "sprite": "imp"
+    },
+    {
+     "term": "leave alone",
+     "zh": "不打扰,不干涉",
+     "sprite": "imp"
+    },
+    {
+     "term": "dangerous",
+     "zh": "危险的",
+     "sprite": "imp"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "perfect",
+     "zh": "完美的",
+     "sprite": "imp"
+    },
+    {
+     "term": "capture",
+     "zh": "捕获,俘虏",
+     "sprite": "imp"
+    },
+    {
+     "term": "wound up",
+     "zh": "最后得到或处于某种状况(wind up-wound up)",
+     "sprite": "imp"
+    },
+    {
+     "term": "leave",
+     "zh": "1. 交托,交由...照管,(2. 离开,3. 留下,遗留,留给)",
+     "sprite": "imp"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "argue",
+    "zh": "争论,辩论"
+   },
+   {
+    "term": "eaten",
+    "zh": "吃 eat-ate-eaten"
+   },
+   {
+    "term": "beat up",
+    "zh": "痛打"
+   },
+   {
+    "term": "inside",
+    "zh": "1. 里面,内部,(2. 往里面)"
+   }
+  ],
+  "taunts": [
+   "liondemon.1",
+   "liondemon.2",
+   "liondemon.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=94",
+ "npcDialogue": {
+  "intro": {
+   "id": "ep94-map-intro",
+   "lines": [
+    {
+     "id": "ep94-map-intro-1",
+     "sourceNodeId": "n001",
+     "speaker": "narrator",
+     "textEn": "The lion demon rubbed his aching mouth.",
+     "textZh": "狮子魔揉了揉疼痛的嘴。",
+     "audioRef": "sent_en:The lion demon rubbed his aching mouth.",
+     "audioStart": 10.934,
+     "audioEnd": 16.057
+    },
+    {
+     "id": "ep94-map-intro-2",
+     "sourceNodeId": "n002",
+     "speaker": "narrator",
+     "textEn": "\"Let's leave the Tang Monk alone. Wukong is dangerous.\"",
+     "textZh": "\"咱们别管唐僧了,悟空很危险。\"",
+     "audioRef": "sent_en:\"Let's leave the Tang Monk alone. Wukong is dangerous.\"",
+     "audioStart": 16.058,
+     "audioEnd": 22.333
+    }
+   ]
+  },
+  "quiz": {
+   "id": "ep94-map-quiz",
+   "lines": [
+    {
+     "id": "ep94-map-quiz-1",
+     "sourceNodeId": "n067",
+     "speaker": "narrator",
+     "textEn": "As the travelers came around a bend, they saw the lion and the elephant.",
+     "textZh": "当旅人们拐过一个弯道时,他们看到了狮子和大象。",
+     "audioRef": "sent_en:As the travelers came around a bend, they saw the lion and the elephant.",
+     "audioStart": 283.072,
+     "audioEnd": 288.096
+    }
+   ],
+   "question": {
+    "id": "ep094-official-quiz-001",
+    "textEn": "which is most important from the story?",
+    "textZh": "故事中什么最重要？"
+   },
+   "word": {
+    "term": "aching",
+    "zh": "疼痛的",
+    "ipa": ""
+   },
+   "options": [
+    {
+     "id": "a",
+     "textEn": "the raptor captured wukong's companions.",
+     "textZh": "猛禽捕获了悟空的同伴。",
+     "correct": true,
+     "feedback": "对了。猛禽捕获了悟空的同伴。"
+    },
+    {
+     "id": "b",
+     "textEn": "wukong rescued bajie from the demons.",
+     "textZh": "悟空从妖怪手中救了八戒。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    },
+    {
+     "id": "c",
+     "textEn": "the lion had a plan to defeat wukong.",
+     "textZh": "狮子有一个击败悟空的计划。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    }
+   ],
+   "lessonCardId": "ep094-official-quiz-001"
+  }
+ },
+ "map": {
+  "theme": "generic",
+  "coordinateSpace": "world-normalized",
+  "worldTiles": 2,
+  "regions": {
+   "hero": 0,
+   "waves": [
+    0,
+    1
+   ],
+   "npc": {
+    "intro": 0,
+    "quiz": 1
+   },
+   "boss": 3
+  },
+  "walkable": {
+   "space": "world",
+   "x": 0.0,
+   "y": 0.16,
+   "w": 1.0,
+   "h": 0.79,
+   "rects": [
+    {
+     "x": 0.0,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.66,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    }
+   ]
+  },
+  "heroSpawn": {
+   "x": 0.06,
+   "y": 0.31
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.31,
+    "y": 0.23
+   },
+   {
+    "x": 0.38,
+    "y": 0.27
+   },
+   {
+    "x": 0.34,
+    "y": 0.33
+   },
+   {
+    "x": 0.41,
+    "y": 0.24
+   }
+  ],
+  "waveSpawns": [
+   [
+    {
+     "x": 0.31,
+     "y": 0.23
+    },
+    {
+     "x": 0.38,
+     "y": 0.27
+    },
+    {
+     "x": 0.34,
+     "y": 0.33
+    },
+    {
+     "x": 0.41,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.81,
+     "y": 0.23
+    },
+    {
+     "x": 0.88,
+     "y": 0.27
+    },
+    {
+     "x": 0.84,
+     "y": 0.33
+    },
+    {
+     "x": 0.91,
+     "y": 0.24
+    }
+   ]
+  ],
+  "orbSpawns": [
+   [
+    {
+     "x": 0.11,
+     "y": 0.25
+    },
+    {
+     "x": 0.16,
+     "y": 0.31
+    },
+    {
+     "x": 0.12,
+     "y": 0.37
+    },
+    {
+     "x": 0.18,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.61,
+     "y": 0.25
+    },
+    {
+     "x": 0.66,
+     "y": 0.31
+    },
+    {
+     "x": 0.62,
+     "y": 0.37
+    },
+    {
+     "x": 0.68,
+     "y": 0.24
+    }
+   ]
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "imp",
+    "nameZh": "小妖",
+    "x": 0.08,
+    "y": 0.26
+   },
+   {
+    "role": "quiz",
+    "sprite": "imp",
+    "nameZh": "小妖",
+    "x": 0.7,
+    "y": 0.39
+   }
+  ],
+  "bossSpot": {
+   "x": 0.94,
+   "y": 0.85
+  }
+ }
+}

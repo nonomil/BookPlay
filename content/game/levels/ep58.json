@@ -1,0 +1,584 @@
+{
+ "schema_version": 1,
+ "ep": 58,
+ "title": {
+  "en": "The Meditation Contest",
+  "zh": "西游记 第58集"
+ },
+ "collection": "c08",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "tigerimmortal",
+   "nameZh": "虎力大仙",
+   "mode": "sparring",
+   "sprite": "tigerimmortal"
+  },
+  "minors": [
+   {
+    "id": "imp",
+    "nameZh": "小妖",
+    "sprite": "imp"
+   }
+  ]
+ },
+ "background": {
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep58/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "\"I challenge you to a meditation contest,\" said the Tiger Immortal.",
+   "textZh": "\"我向你发起一场冥想竞赛!\"虎力大仙说道。",
+   "illustration": "assets/adv_frames/ep58/f1.jpg",
+   "sourceNodeId": "n001",
+   "audioRef": "sent_en:\"I challenge you to a meditation contest,\" said the Tiger Immortal."
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "\"Whoever can meditate the longest without moving is the winner.\"",
+   "textZh": "\"谁能持续冥想最长时间而不移动,谁就是获胜者。\"",
+   "illustration": "assets/adv_frames/ep58/f2.jpg",
+   "sourceNodeId": "n002",
+   "audioRef": "sent_en:\"Whoever can meditate the longest without moving is the winner.\""
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "meditation",
+   "zh": "冥想",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep58/f1.jpg"
+  },
+  {
+   "term": "meditate",
+   "zh": "冥想,沉思",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep58/f2.jpg"
+  },
+  {
+   "term": "lately",
+   "zh": "最近",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep58/f1.jpg"
+  },
+  {
+   "term": "still",
+   "zh": "1. 静止的,不动的,2. 还,仍然,(3. 尽管如此)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep58/f1.jpg"
+  },
+  {
+   "term": "grin",
+   "zh": "(不发出声音)嘻嘻笑,咧嘴笑",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep58/f3.jpg"
+  },
+  {
+   "term": "clap",
+   "zh": "1. 击掌,(2. 鼓掌,拍手)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep58/f2.jpg"
+  },
+  {
+   "term": "babble",
+   "zh": "喋喋不休,模煳不清地说话",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep58/f2.jpg"
+  },
+  {
+   "term": "snap",
+   "zh": "1. 厉声说,谩骂,(2. 突然折断,断掉)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep58/f2.jpg"
+  },
+  {
+   "term": "palm",
+   "zh": "手掌",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep58/f1.jpg"
+  },
+  {
+   "term": "face",
+   "zh": "1. 面向,面对,(2. 脸)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep58/f1.jpg"
+  },
+  {
+   "term": "lift off",
+   "zh": "举起",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep58/f0.jpg"
+  },
+  {
+   "term": "remain",
+   "zh": "1. 保持...的状态,(2. 剩下,留下)",
+   "ipa": "rɪˈmeɪn",
+   "illustration": "assets/adv_frames/ep58/f1.jpg"
+  }
+ ],
+ "wordPool": [
+  {
+   "term": "meditation",
+   "zh": "冥想",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep58/f1.jpg"
+  },
+  {
+   "term": "meditate",
+   "zh": "冥想,沉思",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep58/f2.jpg"
+  },
+  {
+   "term": "lately",
+   "zh": "最近",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep58/f1.jpg"
+  },
+  {
+   "term": "still",
+   "zh": "1. 静止的,不动的,2. 还,仍然,(3. 尽管如此)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep58/f1.jpg"
+  },
+  {
+   "term": "grin",
+   "zh": "(不发出声音)嘻嘻笑,咧嘴笑",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep58/f3.jpg"
+  },
+  {
+   "term": "clap",
+   "zh": "1. 击掌,(2. 鼓掌,拍手)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep58/f2.jpg"
+  },
+  {
+   "term": "babble",
+   "zh": "喋喋不休,模煳不清地说话",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep58/f2.jpg"
+  },
+  {
+   "term": "snap",
+   "zh": "1. 厉声说,谩骂,(2. 突然折断,断掉)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep58/f2.jpg"
+  },
+  {
+   "term": "palm",
+   "zh": "手掌",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep58/f1.jpg"
+  },
+  {
+   "term": "face",
+   "zh": "1. 面向,面对,(2. 脸)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep58/f1.jpg"
+  },
+  {
+   "term": "lift off",
+   "zh": "举起",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep58/f0.jpg"
+  },
+  {
+   "term": "remain",
+   "zh": "1. 保持...的状态,(2. 剩下,留下)",
+   "ipa": "rɪˈmeɪn",
+   "illustration": "assets/adv_frames/ep58/f1.jpg"
+  },
+  {
+   "term": "pretty",
+   "zh": "1. 相当地,(2. 漂亮的)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep58/f0.jpg"
+  },
+  {
+   "term": "compete",
+   "zh": "对抗,比赛",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep58/f1.jpg"
+  },
+  {
+   "term": "smirk",
+   "zh": "奸笑,假笑,傻笑",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep58/f2.jpg"
+  },
+  {
+   "term": "twitch",
+   "zh": "使抽搐,痉挛",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep58/f1.jpg"
+  },
+  {
+   "term": "headache",
+   "zh": "头痛",
+   "ipa": "ˈhedeɪk",
+   "illustration": "assets/adv_frames/ep58/f1.jpg"
+  },
+  {
+   "term": "itch",
+   "zh": "痒",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep58/f2.jpg"
+  },
+  {
+   "term": "invisible",
+   "zh": "无形的,隐形的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep58/f3.jpg"
+  },
+  {
+   "term": "flea",
+   "zh": "跳蚤",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep58/f0.jpg"
+  },
+  {
+   "term": "crawl",
+   "zh": "1. 爬行,蠕动, (2. 爬行,缓慢的行進)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep58/f0.jpg"
+  },
+  {
+   "term": "bit",
+   "zh": "1. 咬,啃 (bite-bit),(2. 一点点)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep58/f3.jpg"
+  },
+  {
+   "term": "rotten",
+   "zh": "1. 糟糕的,极差的,令人讨厌的,(2. 腐烂的)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep58/f0.jpg"
+  },
+  {
+   "term": "cheater",
+   "zh": "骗子,作弊的人",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep58/f0.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "meditation",
+     "zh": "冥想",
+     "sprite": "imp"
+    },
+    {
+     "term": "meditate",
+     "zh": "冥想,沉思",
+     "sprite": "imp"
+    },
+    {
+     "term": "lately",
+     "zh": "最近",
+     "sprite": "imp"
+    },
+    {
+     "term": "still",
+     "zh": "1. 静止的,不动的,2. 还,仍然,(3. 尽管如此)",
+     "sprite": "imp"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "grin",
+     "zh": "(不发出声音)嘻嘻笑,咧嘴笑",
+     "sprite": "imp"
+    },
+    {
+     "term": "clap",
+     "zh": "1. 击掌,(2. 鼓掌,拍手)",
+     "sprite": "imp"
+    },
+    {
+     "term": "babble",
+     "zh": "喋喋不休,模煳不清地说话",
+     "sprite": "imp"
+    },
+    {
+     "term": "snap",
+     "zh": "1. 厉声说,谩骂,(2. 突然折断,断掉)",
+     "sprite": "imp"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "palm",
+    "zh": "手掌"
+   },
+   {
+    "term": "face",
+    "zh": "1. 面向,面对,(2. 脸)"
+   },
+   {
+    "term": "lift off",
+    "zh": "举起"
+   },
+   {
+    "term": "remain",
+    "zh": "1. 保持...的状态,(2. 剩下,留下)"
+   }
+  ],
+  "taunts": [
+   "tigerimmortal.1",
+   "tigerimmortal.2",
+   "tigerimmortal.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=58",
+ "npcDialogue": {
+  "intro": {
+   "id": "ep58-map-intro",
+   "lines": [
+    {
+     "id": "ep58-map-intro-1",
+     "sourceNodeId": "n001",
+     "speaker": "narrator",
+     "textEn": "\"I challenge you to a meditation contest,\" said the Tiger Immortal.",
+     "textZh": "\"我向你发起一场冥想竞赛!\"虎力大仙说道。",
+     "audioRef": "sent_en:\"I challenge you to a meditation contest,\" said the Tiger Immortal.",
+     "audioStart": 11.0,
+     "audioEnd": 18.981
+    },
+    {
+     "id": "ep58-map-intro-2",
+     "sourceNodeId": "n002",
+     "speaker": "narrator",
+     "textEn": "\"Whoever can meditate the longest without moving is the winner.\"",
+     "textZh": "\"谁能持续冥想最长时间而不移动,谁就是获胜者。\"",
+     "audioRef": "sent_en:\"Whoever can meditate the longest without moving is the winner.\"",
+     "audioStart": 18.982,
+     "audioEnd": 23.067
+    }
+   ]
+  },
+  "quiz": {
+   "id": "ep58-map-quiz",
+   "lines": [
+    {
+     "id": "ep58-map-quiz-1",
+     "sourceNodeId": "n001",
+     "speaker": "narrator",
+     "textEn": "\"I challenge you to a meditation contest,\" said the Tiger Immortal.",
+     "textZh": "\"我向你发起一场冥想竞赛!\"虎力大仙说道。",
+     "audioRef": "sent_en:\"I challenge you to a meditation contest,\" said the Tiger Immortal.",
+     "audioStart": 11.0,
+     "audioEnd": 18.981
+    }
+   ],
+   "question": {
+    "id": "ep058-official-quiz-006",
+    "textEn": "which was not a part of the tiger immortal's contest?",
+    "textZh": "哪一项不是虎力大仙比赛的一部分？"
+   },
+   "word": {
+    "term": "meditation",
+    "zh": "冥想",
+    "ipa": ""
+   },
+   "options": [
+    {
+     "id": "a",
+     "textEn": "scratching",
+     "textZh": "抓",
+     "correct": true,
+     "feedback": "对了。抓"
+    },
+    {
+     "id": "b",
+     "textEn": "meditating",
+     "textZh": "冥想",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    },
+    {
+     "id": "c",
+     "textEn": "floating in the air",
+     "textZh": "漂浮在空中",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    }
+   ],
+   "lessonCardId": "ep058-official-quiz-006"
+  }
+ },
+ "map": {
+  "theme": "generic",
+  "coordinateSpace": "world-normalized",
+  "worldTiles": 2,
+  "regions": {
+   "hero": 0,
+   "waves": [
+    0,
+    1
+   ],
+   "npc": {
+    "intro": 0,
+    "quiz": 1
+   },
+   "boss": 3
+  },
+  "walkable": {
+   "space": "world",
+   "x": 0.0,
+   "y": 0.16,
+   "w": 1.0,
+   "h": 0.79,
+   "rects": [
+    {
+     "x": 0.0,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.66,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    }
+   ]
+  },
+  "heroSpawn": {
+   "x": 0.06,
+   "y": 0.31
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.31,
+    "y": 0.23
+   },
+   {
+    "x": 0.38,
+    "y": 0.27
+   },
+   {
+    "x": 0.34,
+    "y": 0.33
+   },
+   {
+    "x": 0.41,
+    "y": 0.24
+   }
+  ],
+  "waveSpawns": [
+   [
+    {
+     "x": 0.31,
+     "y": 0.23
+    },
+    {
+     "x": 0.38,
+     "y": 0.27
+    },
+    {
+     "x": 0.34,
+     "y": 0.33
+    },
+    {
+     "x": 0.41,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.81,
+     "y": 0.23
+    },
+    {
+     "x": 0.88,
+     "y": 0.27
+    },
+    {
+     "x": 0.84,
+     "y": 0.33
+    },
+    {
+     "x": 0.91,
+     "y": 0.24
+    }
+   ]
+  ],
+  "orbSpawns": [
+   [
+    {
+     "x": 0.11,
+     "y": 0.25
+    },
+    {
+     "x": 0.16,
+     "y": 0.31
+    },
+    {
+     "x": 0.12,
+     "y": 0.37
+    },
+    {
+     "x": 0.18,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.61,
+     "y": 0.25
+    },
+    {
+     "x": 0.66,
+     "y": 0.31
+    },
+    {
+     "x": 0.62,
+     "y": 0.37
+    },
+    {
+     "x": 0.68,
+     "y": 0.24
+    }
+   ]
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "imp",
+    "nameZh": "小妖",
+    "x": 0.08,
+    "y": 0.26
+   },
+   {
+    "role": "quiz",
+    "sprite": "imp",
+    "nameZh": "小妖",
+    "x": 0.7,
+    "y": 0.39
+   }
+  ],
+  "bossSpot": {
+   "x": 0.94,
+   "y": 0.85
+  }
+ }
+}

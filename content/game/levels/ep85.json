@@ -1,0 +1,584 @@
+{
+ "schema_version": 1,
+ "ep": 85,
+ "title": {
+  "en": "Fire, Smoke, and Sand",
+  "zh": "西游记 第85集"
+ },
+ "collection": "c11",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "powerdemon",
+   "nameZh": "大力妖王",
+   "mode": "sparring",
+   "sprite": "powerdemon"
+  },
+  "minors": [
+   {
+    "id": "imp",
+    "nameZh": "小妖",
+    "sprite": "imp"
+   }
+  ]
+ },
+ "background": {
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep85/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "Wukong landed on another mountain peak.",
+   "textZh": "猿猴降落在另一座山峰上。",
+   "illustration": "assets/adv_frames/ep85/f1.jpg",
+   "sourceNodeId": "n001",
+   "audioRef": "sent_en:Wukong landed on another mountain peak."
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "\"Ah-choo!\" The monkey groaned.",
+   "textZh": "\"啊咳!\"猴子呻吟道。",
+   "illustration": "assets/adv_frames/ep85/f2.jpg",
+   "sourceNodeId": "n002",
+   "audioRef": "sent_en:\"Ah-choo!\" The monkey groaned."
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "peak",
+   "zh": "1. 山顶,(2. 顶端,最高点)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep85/f1.jpg"
+  },
+  {
+   "term": "awful",
+   "zh": "可怕的,糟糕的",
+   "ipa": "ˈɔːfl",
+   "illustration": "assets/adv_frames/ep85/f1.jpg"
+  },
+  {
+   "term": "hesitate",
+   "zh": "犹豫,踌躇",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep85/f3.jpg"
+  },
+  {
+   "term": "trick",
+   "zh": "1. (魔术师的)招数,手法,(2. 诡计,恶作剧)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep85/f0.jpg"
+  },
+  {
+   "term": "sneak",
+   "zh": "偷偷地走,溜",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep85/f1.jpg"
+  },
+  {
+   "term": "look around",
+   "zh": "环视,东张西望",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep85/f1.jpg"
+  },
+  {
+   "term": "create",
+   "zh": "创造,创作",
+   "ipa": "kriˈeɪt",
+   "illustration": "assets/adv_frames/ep85/f1.jpg"
+  },
+  {
+   "term": "brightly",
+   "zh": "明亮地,闪亮地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep85/f0.jpg"
+  },
+  {
+   "term": "lit",
+   "zh": "照亮的,点着的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep85/f0.jpg"
+  },
+  {
+   "term": "furniture",
+   "zh": "家具",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep85/f1.jpg"
+  },
+  {
+   "term": "fancy",
+   "zh": "别致的,花俏的,装饰多的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep85/f1.jpg"
+  },
+  {
+   "term": "decoration",
+   "zh": "装饰品,装饰",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep85/f1.jpg"
+  }
+ ],
+ "wordPool": [
+  {
+   "term": "peak",
+   "zh": "1. 山顶,(2. 顶端,最高点)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep85/f1.jpg"
+  },
+  {
+   "term": "awful",
+   "zh": "可怕的,糟糕的",
+   "ipa": "ˈɔːfl",
+   "illustration": "assets/adv_frames/ep85/f1.jpg"
+  },
+  {
+   "term": "hesitate",
+   "zh": "犹豫,踌躇",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep85/f3.jpg"
+  },
+  {
+   "term": "trick",
+   "zh": "1. (魔术师的)招数,手法,(2. 诡计,恶作剧)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep85/f0.jpg"
+  },
+  {
+   "term": "sneak",
+   "zh": "偷偷地走,溜",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep85/f1.jpg"
+  },
+  {
+   "term": "look around",
+   "zh": "环视,东张西望",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep85/f1.jpg"
+  },
+  {
+   "term": "create",
+   "zh": "创造,创作",
+   "ipa": "kriˈeɪt",
+   "illustration": "assets/adv_frames/ep85/f1.jpg"
+  },
+  {
+   "term": "brightly",
+   "zh": "明亮地,闪亮地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep85/f0.jpg"
+  },
+  {
+   "term": "lit",
+   "zh": "照亮的,点着的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep85/f0.jpg"
+  },
+  {
+   "term": "furniture",
+   "zh": "家具",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep85/f1.jpg"
+  },
+  {
+   "term": "fancy",
+   "zh": "别致的,花俏的,装饰多的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep85/f1.jpg"
+  },
+  {
+   "term": "decoration",
+   "zh": "装饰品,装饰",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep85/f1.jpg"
+  },
+  {
+   "term": "broke",
+   "zh": "突然开始...",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep85/f1.jpg"
+  },
+  {
+   "term": "nasty",
+   "zh": "恶意的,难相处的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep85/f2.jpg"
+  },
+  {
+   "term": "ugly",
+   "zh": "丑的",
+   "ipa": "ˈʌɡli",
+   "illustration": "assets/adv_frames/ep85/f0.jpg"
+  },
+  {
+   "term": "smelly",
+   "zh": "臭的,难闻的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep85/f1.jpg"
+  },
+  {
+   "term": "shiver",
+   "zh": "(因寒冷或害怕而)发抖,打颤",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep85/f3.jpg"
+  },
+  {
+   "term": "marry",
+   "zh": "结婚",
+   "ipa": "ˈmæri",
+   "illustration": "assets/adv_frames/ep85/f0.jpg"
+  },
+  {
+   "term": "figure out",
+   "zh": "想出,理解出",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep85/f3.jpg"
+  },
+  {
+   "term": "simple",
+   "zh": "1. 简单的,单纯的,(2. 无装饰的,朴素的)",
+   "ipa": "ˈsɪmpl",
+   "illustration": "assets/adv_frames/ep85/f0.jpg"
+  },
+  {
+   "term": "wear",
+   "zh": "1. 穿(衣服等),(2. 涂(化妆品等)",
+   "ipa": "weə",
+   "illustration": "assets/adv_frames/ep85/f1.jpg"
+  },
+  {
+   "term": "steal",
+   "zh": "偷窃",
+   "ipa": "stiːl",
+   "illustration": "assets/adv_frames/ep85/f1.jpg"
+  },
+  {
+   "term": "gloomy",
+   "zh": "忧郁的,阴郁的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep85/f0.jpg"
+  },
+  {
+   "term": "ceiling",
+   "zh": "天花板",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep85/f3.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "peak",
+     "zh": "1. 山顶,(2. 顶端,最高点)",
+     "sprite": "imp"
+    },
+    {
+     "term": "awful",
+     "zh": "可怕的,糟糕的",
+     "sprite": "imp"
+    },
+    {
+     "term": "hesitate",
+     "zh": "犹豫,踌躇",
+     "sprite": "imp"
+    },
+    {
+     "term": "trick",
+     "zh": "1. (魔术师的)招数,手法,(2. 诡计,恶作剧)",
+     "sprite": "imp"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "sneak",
+     "zh": "偷偷地走,溜",
+     "sprite": "imp"
+    },
+    {
+     "term": "look around",
+     "zh": "环视,东张西望",
+     "sprite": "imp"
+    },
+    {
+     "term": "create",
+     "zh": "创造,创作",
+     "sprite": "imp"
+    },
+    {
+     "term": "brightly",
+     "zh": "明亮地,闪亮地",
+     "sprite": "imp"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "lit",
+    "zh": "照亮的,点着的"
+   },
+   {
+    "term": "furniture",
+    "zh": "家具"
+   },
+   {
+    "term": "fancy",
+    "zh": "别致的,花俏的,装饰多的"
+   },
+   {
+    "term": "decoration",
+    "zh": "装饰品,装饰"
+   }
+  ],
+  "taunts": [
+   "powerdemon.1",
+   "powerdemon.2",
+   "powerdemon.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=85",
+ "npcDialogue": {
+  "intro": {
+   "id": "ep85-map-intro",
+   "lines": [
+    {
+     "id": "ep85-map-intro-1",
+     "sourceNodeId": "n001",
+     "speaker": "narrator",
+     "textEn": "Wukong landed on another mountain peak.",
+     "textZh": "猿猴降落在另一座山峰上。",
+     "audioRef": "sent_en:Wukong landed on another mountain peak.",
+     "audioStart": 11.0,
+     "audioEnd": 15.872
+    },
+    {
+     "id": "ep85-map-intro-2",
+     "sourceNodeId": "n002",
+     "speaker": "narrator",
+     "textEn": "\"Ah-choo!\" The monkey groaned.",
+     "textZh": "\"啊咳!\"猴子呻吟道。",
+     "audioRef": "sent_en:\"Ah-choo!\" The monkey groaned.",
+     "audioStart": 15.873,
+     "audioEnd": 20.806
+    }
+   ]
+  },
+  "quiz": {
+   "id": "ep85-map-quiz",
+   "lines": [
+    {
+     "id": "ep85-map-quiz-1",
+     "sourceNodeId": "n029",
+     "speaker": "narrator",
+     "textEn": "\"He has three bells. The first bell makes fire. The second bell makes smoke. And the third bell makes sand.\"",
+     "textZh": "\"他有三口钟:第一口钟能生火,第二口钟能生烟,第三口钟则能生沙。\"",
+     "audioRef": "sent_en:\"He has three bells. The first bell makes fire. The second bell makes smoke. And the third bell makes sand.\"",
+     "audioStart": 136.38,
+     "audioEnd": 145.978
+    }
+   ],
+   "question": {
+    "id": "ep085-official-quiz-001",
+    "textEn": "which is true?",
+    "textZh": "哪一个是真的？"
+   },
+   "word": {
+    "term": "peak",
+    "zh": "1. 山顶,(2. 顶端,最高点)",
+    "ipa": ""
+   },
+   "options": [
+    {
+     "id": "a",
+     "textEn": "the bells made fire, sand, and smoke.",
+     "textZh": "钟声产生了火、沙和烟。",
+     "correct": true,
+     "feedback": "对了。钟声产生了火、沙和烟。"
+    },
+    {
+     "id": "b",
+     "textEn": "wukong plucked hairs from the demon.",
+     "textZh": "悟空从妖怪身上拔了毛。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    },
+    {
+     "id": "c",
+     "textEn": "the queen turned into a flea.",
+     "textZh": "女王变成了一只虱子。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    }
+   ],
+   "lessonCardId": "ep085-official-quiz-001"
+  }
+ },
+ "map": {
+  "theme": "generic",
+  "coordinateSpace": "world-normalized",
+  "worldTiles": 2,
+  "regions": {
+   "hero": 0,
+   "waves": [
+    0,
+    1
+   ],
+   "npc": {
+    "intro": 0,
+    "quiz": 1
+   },
+   "boss": 3
+  },
+  "walkable": {
+   "space": "world",
+   "x": 0.0,
+   "y": 0.16,
+   "w": 1.0,
+   "h": 0.79,
+   "rects": [
+    {
+     "x": 0.0,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.66,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    }
+   ]
+  },
+  "heroSpawn": {
+   "x": 0.06,
+   "y": 0.31
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.31,
+    "y": 0.23
+   },
+   {
+    "x": 0.38,
+    "y": 0.27
+   },
+   {
+    "x": 0.34,
+    "y": 0.33
+   },
+   {
+    "x": 0.41,
+    "y": 0.24
+   }
+  ],
+  "waveSpawns": [
+   [
+    {
+     "x": 0.31,
+     "y": 0.23
+    },
+    {
+     "x": 0.38,
+     "y": 0.27
+    },
+    {
+     "x": 0.34,
+     "y": 0.33
+    },
+    {
+     "x": 0.41,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.81,
+     "y": 0.23
+    },
+    {
+     "x": 0.88,
+     "y": 0.27
+    },
+    {
+     "x": 0.84,
+     "y": 0.33
+    },
+    {
+     "x": 0.91,
+     "y": 0.24
+    }
+   ]
+  ],
+  "orbSpawns": [
+   [
+    {
+     "x": 0.11,
+     "y": 0.25
+    },
+    {
+     "x": 0.16,
+     "y": 0.31
+    },
+    {
+     "x": 0.12,
+     "y": 0.37
+    },
+    {
+     "x": 0.18,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.61,
+     "y": 0.25
+    },
+    {
+     "x": 0.66,
+     "y": 0.31
+    },
+    {
+     "x": 0.62,
+     "y": 0.37
+    },
+    {
+     "x": 0.68,
+     "y": 0.24
+    }
+   ]
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "imp",
+    "nameZh": "小妖",
+    "x": 0.08,
+    "y": 0.26
+   },
+   {
+    "role": "quiz",
+    "sprite": "imp",
+    "nameZh": "小妖",
+    "x": 0.7,
+    "y": 0.39
+   }
+  ],
+  "bossSpot": {
+   "x": 0.94,
+   "y": 0.85
+  }
+ }
+}

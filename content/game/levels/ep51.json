@@ -1,0 +1,584 @@
+{
+ "schema_version": 1,
+ "ep": 51,
+ "title": {
+  "en": "Guanyin Becomes Angry",
+  "zh": "西游记 第51集"
+ },
+ "collection": "c07",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "redboy",
+   "nameZh": "红孩儿",
+   "mode": "sparring",
+   "sprite": "redboy"
+  },
+  "minors": [
+   {
+    "id": "imp",
+    "nameZh": "小妖",
+    "sprite": "imp"
+   }
+  ]
+ },
+ "background": {
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep51/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "Bajie didn't know Guanyin was really Red Boy in disguise.",
+   "textZh": "八戒并不知道观音其实是红孩儿变装而成的。",
+   "illustration": "assets/adv_frames/ep51/f1.jpg",
+   "sourceNodeId": "n001",
+   "audioRef": "sent_en:Bajie didn't know Guanyin was really Red Boy in disguise."
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "\"The Tang Monk is in trouble,\" said the pig to the fake Guanyin.",
+   "textZh": "\"唐僧遇险了,\"猪对假观音说道。",
+   "illustration": "assets/adv_frames/ep51/f2.jpg",
+   "sourceNodeId": "n002",
+   "audioRef": "sent_en:\"The Tang Monk is in trouble,\" said the pig to the fake Guanyin."
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "disguise",
+   "zh": "变装,伪装",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep51/f1.jpg"
+  },
+  {
+   "term": "normal",
+   "zh": "正常的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep51/f0.jpg"
+  },
+  {
+   "term": "appearance",
+   "zh": "1. 外观,外表,(2. 出现,登场)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep51/f0.jpg"
+  },
+  {
+   "term": "sneak up",
+   "zh": "偷偷地走近",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep51/f1.jpg"
+  },
+  {
+   "term": "trap",
+   "zh": "困(在危险的场所或困境)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep51/f1.jpg"
+  },
+  {
+   "term": "filthy",
+   "zh": "1. 道德败坏的,卑鄙的,(2. 不洁的,污秽的)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep51/f2.jpg"
+  },
+  {
+   "term": "after all",
+   "zh": "1. (与预期相反)到底,结果,(2. 毕竟,总之)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep51/f3.jpg"
+  },
+  {
+   "term": "head",
+   "zh": "1. (朝特定方向)出发,前进,(2. 头)",
+   "ipa": "hed",
+   "illustration": "assets/adv_frames/ep51/f3.jpg"
+  },
+  {
+   "term": "caught",
+   "zh": "接住,抓住 catch-caught-caught",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep51/f1.jpg"
+  },
+  {
+   "term": "anger",
+   "zh": "怒气",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep51/f2.jpg"
+  },
+  {
+   "term": "how",
+   "zh": "怎么敢,竟敢",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep51/f2.jpg"
+  },
+  {
+   "term": "vase",
+   "zh": "花瓶",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep51/f0.jpg"
+  }
+ ],
+ "wordPool": [
+  {
+   "term": "disguise",
+   "zh": "变装,伪装",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep51/f1.jpg"
+  },
+  {
+   "term": "normal",
+   "zh": "正常的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep51/f0.jpg"
+  },
+  {
+   "term": "appearance",
+   "zh": "1. 外观,外表,(2. 出现,登场)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep51/f0.jpg"
+  },
+  {
+   "term": "sneak up",
+   "zh": "偷偷地走近",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep51/f1.jpg"
+  },
+  {
+   "term": "trap",
+   "zh": "困(在危险的场所或困境)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep51/f1.jpg"
+  },
+  {
+   "term": "filthy",
+   "zh": "1. 道德败坏的,卑鄙的,(2. 不洁的,污秽的)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep51/f2.jpg"
+  },
+  {
+   "term": "after all",
+   "zh": "1. (与预期相反)到底,结果,(2. 毕竟,总之)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep51/f3.jpg"
+  },
+  {
+   "term": "head",
+   "zh": "1. (朝特定方向)出发,前进,(2. 头)",
+   "ipa": "hed",
+   "illustration": "assets/adv_frames/ep51/f3.jpg"
+  },
+  {
+   "term": "caught",
+   "zh": "接住,抓住 catch-caught-caught",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep51/f1.jpg"
+  },
+  {
+   "term": "anger",
+   "zh": "怒气",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep51/f2.jpg"
+  },
+  {
+   "term": "how",
+   "zh": "怎么敢,竟敢",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep51/f2.jpg"
+  },
+  {
+   "term": "vase",
+   "zh": "花瓶",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep51/f0.jpg"
+  },
+  {
+   "term": "storm",
+   "zh": "1. 怒气冲冲地奔跑,横冲直撞,(2. 暴风雨)",
+   "ipa": "stɔː(r)m",
+   "illustration": "assets/adv_frames/ep51/f0.jpg"
+  },
+  {
+   "term": "beneath",
+   "zh": "在...之下",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep51/f1.jpg"
+  },
+  {
+   "term": "atop",
+   "zh": "在...顶上",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep51/f2.jpg"
+  },
+  {
+   "term": "shell",
+   "zh": "壳,贝壳",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep51/f2.jpg"
+  },
+  {
+   "term": "grunt",
+   "zh": "发出嘟哝声,发出哼声",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep51/f2.jpg"
+  },
+  {
+   "term": "strength",
+   "zh": "力,气力",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep51/f2.jpg"
+  },
+  {
+   "term": "no",
+   "zh": "不论怎样,无论",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep51/f3.jpg"
+  },
+  {
+   "term": "lotus",
+   "zh": "莲花(植物)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep51/f1.jpg"
+  },
+  {
+   "term": "platform",
+   "zh": "讲台,戏台",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep51/f1.jpg"
+  },
+  {
+   "term": "trouble",
+   "zh": "问题",
+   "ipa": "ˈtrʌbl",
+   "illustration": "assets/adv_frames/ep51/f1.jpg"
+  },
+  {
+   "term": "plan",
+   "zh": "打算",
+   "ipa": "plæn",
+   "illustration": "assets/adv_frames/ep51/f1.jpg"
+  },
+  {
+   "term": "help",
+   "zh": "帮助",
+   "ipa": "help",
+   "illustration": "assets/adv_frames/ep51/f1.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "disguise",
+     "zh": "变装,伪装",
+     "sprite": "imp"
+    },
+    {
+     "term": "normal",
+     "zh": "正常的",
+     "sprite": "imp"
+    },
+    {
+     "term": "appearance",
+     "zh": "1. 外观,外表,(2. 出现,登场)",
+     "sprite": "imp"
+    },
+    {
+     "term": "sneak up",
+     "zh": "偷偷地走近",
+     "sprite": "imp"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "trap",
+     "zh": "困(在危险的场所或困境)",
+     "sprite": "imp"
+    },
+    {
+     "term": "filthy",
+     "zh": "1. 道德败坏的,卑鄙的,(2. 不洁的,污秽的)",
+     "sprite": "imp"
+    },
+    {
+     "term": "after all",
+     "zh": "1. (与预期相反)到底,结果,(2. 毕竟,总之)",
+     "sprite": "imp"
+    },
+    {
+     "term": "head",
+     "zh": "1. (朝特定方向)出发,前进,(2. 头)",
+     "sprite": "imp"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "caught",
+    "zh": "接住,抓住 catch-caught-caught"
+   },
+   {
+    "term": "anger",
+    "zh": "怒气"
+   },
+   {
+    "term": "how",
+    "zh": "怎么敢,竟敢"
+   },
+   {
+    "term": "vase",
+    "zh": "花瓶"
+   }
+  ],
+  "taunts": [
+   "redboy.1",
+   "redboy.2",
+   "redboy.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=51",
+ "npcDialogue": {
+  "intro": {
+   "id": "ep51-map-intro",
+   "lines": [
+    {
+     "id": "ep51-map-intro-1",
+     "sourceNodeId": "n001",
+     "speaker": "narrator",
+     "textEn": "Bajie didn't know Guanyin was really Red Boy in disguise.",
+     "textZh": "八戒并不知道观音其实是红孩儿变装而成的。",
+     "audioRef": "sent_en:Bajie didn't know Guanyin was really Red Boy in disguise.",
+     "audioStart": 11.0,
+     "audioEnd": 16.87
+    },
+    {
+     "id": "ep51-map-intro-2",
+     "sourceNodeId": "n002",
+     "speaker": "narrator",
+     "textEn": "\"The Tang Monk is in trouble,\" said the pig to the fake Guanyin.",
+     "textZh": "\"唐僧遇险了,\"猪对假观音说道。",
+     "audioRef": "sent_en:\"The Tang Monk is in trouble,\" said the pig to the fake Guanyin.",
+     "audioStart": 16.871,
+     "audioEnd": 21.23
+    }
+   ]
+  },
+  "quiz": {
+   "id": "ep51-map-quiz",
+   "lines": [
+    {
+     "id": "ep51-map-quiz-1",
+     "sourceNodeId": "n014",
+     "speaker": "narrator",
+     "textEn": "The demon locked Bajie in a room.",
+     "textZh": "邪魔将八戒锁在一间房子里。",
+     "audioRef": "sent_en:The demon locked Bajie in a room.",
+     "audioStart": 85.055,
+     "audioEnd": 90.646
+    }
+   ],
+   "question": {
+    "id": "ep051-official-quiz-001",
+    "textEn": "which is true?",
+    "textZh": "哪一个是真的？"
+   },
+   "word": {
+    "term": "disguise",
+    "zh": "变装,伪装",
+    "ipa": ""
+   },
+   "options": [
+    {
+     "id": "a",
+     "textEn": "guanyin was angry at red boy.",
+     "textZh": "观音生红孩儿的气。",
+     "correct": true,
+     "feedback": "对了。观音生红孩儿的气。"
+    },
+    {
+     "id": "b",
+     "textEn": "bajie stopped to take a nap.",
+     "textZh": "八戒停下来小睡了一会儿。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    },
+    {
+     "id": "c",
+     "textEn": "wujing was trapped in the cave.",
+     "textZh": "悟净被困在洞里。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    }
+   ],
+   "lessonCardId": "ep051-official-quiz-001"
+  }
+ },
+ "map": {
+  "theme": "generic",
+  "coordinateSpace": "world-normalized",
+  "worldTiles": 2,
+  "regions": {
+   "hero": 0,
+   "waves": [
+    0,
+    1
+   ],
+   "npc": {
+    "intro": 0,
+    "quiz": 1
+   },
+   "boss": 3
+  },
+  "walkable": {
+   "space": "world",
+   "x": 0.0,
+   "y": 0.16,
+   "w": 1.0,
+   "h": 0.79,
+   "rects": [
+    {
+     "x": 0.0,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.66,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    }
+   ]
+  },
+  "heroSpawn": {
+   "x": 0.06,
+   "y": 0.31
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.31,
+    "y": 0.23
+   },
+   {
+    "x": 0.38,
+    "y": 0.27
+   },
+   {
+    "x": 0.34,
+    "y": 0.33
+   },
+   {
+    "x": 0.41,
+    "y": 0.24
+   }
+  ],
+  "waveSpawns": [
+   [
+    {
+     "x": 0.31,
+     "y": 0.23
+    },
+    {
+     "x": 0.38,
+     "y": 0.27
+    },
+    {
+     "x": 0.34,
+     "y": 0.33
+    },
+    {
+     "x": 0.41,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.81,
+     "y": 0.23
+    },
+    {
+     "x": 0.88,
+     "y": 0.27
+    },
+    {
+     "x": 0.84,
+     "y": 0.33
+    },
+    {
+     "x": 0.91,
+     "y": 0.24
+    }
+   ]
+  ],
+  "orbSpawns": [
+   [
+    {
+     "x": 0.11,
+     "y": 0.25
+    },
+    {
+     "x": 0.16,
+     "y": 0.31
+    },
+    {
+     "x": 0.12,
+     "y": 0.37
+    },
+    {
+     "x": 0.18,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.61,
+     "y": 0.25
+    },
+    {
+     "x": 0.66,
+     "y": 0.31
+    },
+    {
+     "x": 0.62,
+     "y": 0.37
+    },
+    {
+     "x": 0.68,
+     "y": 0.24
+    }
+   ]
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "guanyin",
+    "nameZh": "观音",
+    "x": 0.08,
+    "y": 0.26
+   },
+   {
+    "role": "quiz",
+    "sprite": "guanyin",
+    "nameZh": "观音",
+    "x": 0.7,
+    "y": 0.39
+   }
+  ],
+  "bossSpot": {
+   "x": 0.94,
+   "y": 0.85
+  }
+ }
+}

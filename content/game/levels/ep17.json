@@ -1,0 +1,584 @@
+{
+ "schema_version": 1,
+ "ep": 17,
+ "title": {
+  "en": "The Dragon in the River",
+  "zh": "西游记 第17集"
+ },
+ "collection": "c03",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "whitedragonhorse",
+   "nameZh": "白龙马",
+   "mode": "sparring",
+   "sprite": "whitedragonhorse"
+  },
+  "minors": [
+   {
+    "id": "imp",
+    "nameZh": "小妖",
+    "sprite": "imp"
+   }
+  ]
+ },
+ "background": {
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep17/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "\"That dragon ate my horse!\" said the monk.",
+   "textZh": "\"那条龙吃了我的马!\"和尚说。",
+   "illustration": "assets/adv_frames/ep17/f1.jpg",
+   "sourceNodeId": "n001",
+   "audioRef": "sent_en:\"That dragon ate my horse!\" said the monk."
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "He fell to his knees.",
+   "textZh": "他双膝跪地。",
+   "illustration": "assets/adv_frames/ep17/f2.jpg",
+   "sourceNodeId": "n002",
+   "audioRef": "sent_en:He fell to his knees."
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "along the",
+   "zh": "沿途,一路上",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep17/f3.jpg"
+  },
+  {
+   "term": "do not",
+   "zh": "没有关系,不碍事",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep17/f3.jpg"
+  },
+  {
+   "term": "dive",
+   "zh": "潜水",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep17/f3.jpg"
+  },
+  {
+   "term": "stomp",
+   "zh": "重踩,重踏",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep17/f0.jpg"
+  },
+  {
+   "term": "coward",
+   "zh": "懦夫,胆怯者",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep17/f0.jpg"
+  },
+  {
+   "term": "swirl",
+   "zh": "打旋,旋动",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep17/f0.jpg"
+  },
+  {
+   "term": "crash",
+   "zh": "碰撞,坠毁",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep17/f2.jpg"
+  },
+  {
+   "term": "churn",
+   "zh": "翻滚,抖动",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep17/f2.jpg"
+  },
+  {
+   "term": "muddy",
+   "zh": "多烂泥的,泥泞的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep17/f0.jpg"
+  },
+  {
+   "term": "on earth",
+   "zh": "到底",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep17/f2.jpg"
+  },
+  {
+   "term": "demand",
+   "zh": "1. 查问,质问,(2. 要求,请求)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep17/f0.jpg"
+  },
+  {
+   "term": "stomach",
+   "zh": "腹,腹部,肚子",
+   "ipa": "ˈstʌmək",
+   "illustration": "assets/adv_frames/ep17/f1.jpg"
+  }
+ ],
+ "wordPool": [
+  {
+   "term": "along the",
+   "zh": "沿途,一路上",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep17/f3.jpg"
+  },
+  {
+   "term": "do not",
+   "zh": "没有关系,不碍事",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep17/f3.jpg"
+  },
+  {
+   "term": "dive",
+   "zh": "潜水",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep17/f3.jpg"
+  },
+  {
+   "term": "stomp",
+   "zh": "重踩,重踏",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep17/f0.jpg"
+  },
+  {
+   "term": "coward",
+   "zh": "懦夫,胆怯者",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep17/f0.jpg"
+  },
+  {
+   "term": "swirl",
+   "zh": "打旋,旋动",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep17/f0.jpg"
+  },
+  {
+   "term": "crash",
+   "zh": "碰撞,坠毁",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep17/f2.jpg"
+  },
+  {
+   "term": "churn",
+   "zh": "翻滚,抖动",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep17/f2.jpg"
+  },
+  {
+   "term": "muddy",
+   "zh": "多烂泥的,泥泞的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep17/f0.jpg"
+  },
+  {
+   "term": "on earth",
+   "zh": "到底",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep17/f2.jpg"
+  },
+  {
+   "term": "demand",
+   "zh": "1. 查问,质问,(2. 要求,请求)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep17/f0.jpg"
+  },
+  {
+   "term": "stomach",
+   "zh": "腹,腹部,肚子",
+   "ipa": "ˈstʌmək",
+   "illustration": "assets/adv_frames/ep17/f1.jpg"
+  },
+  {
+   "term": "insult",
+   "zh": "1. 污辱人的言行,(2. 侮辱)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep17/f2.jpg"
+  },
+  {
+   "term": "riverbank",
+   "zh": "河岸",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep17/f0.jpg"
+  },
+  {
+   "term": "tough",
+   "zh": "1. 棘手的,费劲的,(2. 强壮的,结实的)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep17/f1.jpg"
+  },
+  {
+   "term": "shoot a",
+   "zh": "看一眼,瞥一眼",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep17/f3.jpg"
+  },
+  {
+   "term": "tight",
+   "zh": "1. 绷紧的,拉紧的,(2. (衣服等)紧身的)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep17/f0.jpg"
+  },
+  {
+   "term": "pagoda",
+   "zh": "(佛教寺院的)塔",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep17/f1.jpg"
+  },
+  {
+   "term": "dirty",
+   "zh": "卑鄙的,下流的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep17/f0.jpg"
+  },
+  {
+   "term": "trick",
+   "zh": "诡计,恶作剧",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep17/f0.jpg"
+  },
+  {
+   "term": "set fire",
+   "zh": "放火",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep17/f2.jpg"
+  },
+  {
+   "term": "forgiveness",
+   "zh": "宽恕",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep17/f2.jpg"
+  },
+  {
+   "term": "danger",
+   "zh": "危险",
+   "ipa": "ˈdeɪndʒə(r)",
+   "illustration": "assets/adv_frames/ep17/f1.jpg"
+  },
+  {
+   "term": "worry",
+   "zh": "担心",
+   "ipa": "ˈwʌri",
+   "illustration": "assets/adv_frames/ep17/f1.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "along the",
+     "zh": "沿途,一路上",
+     "sprite": "imp"
+    },
+    {
+     "term": "do not",
+     "zh": "没有关系,不碍事",
+     "sprite": "imp"
+    },
+    {
+     "term": "dive",
+     "zh": "潜水",
+     "sprite": "imp"
+    },
+    {
+     "term": "stomp",
+     "zh": "重踩,重踏",
+     "sprite": "imp"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "coward",
+     "zh": "懦夫,胆怯者",
+     "sprite": "imp"
+    },
+    {
+     "term": "swirl",
+     "zh": "打旋,旋动",
+     "sprite": "imp"
+    },
+    {
+     "term": "crash",
+     "zh": "碰撞,坠毁",
+     "sprite": "imp"
+    },
+    {
+     "term": "churn",
+     "zh": "翻滚,抖动",
+     "sprite": "imp"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "muddy",
+    "zh": "多烂泥的,泥泞的"
+   },
+   {
+    "term": "on earth",
+    "zh": "到底"
+   },
+   {
+    "term": "demand",
+    "zh": "1. 查问,质问,(2. 要求,请求)"
+   },
+   {
+    "term": "stomach",
+    "zh": "腹,腹部,肚子"
+   }
+  ],
+  "taunts": [
+   "whitedragonhorse.1",
+   "whitedragonhorse.2",
+   "whitedragonhorse.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=17",
+ "npcDialogue": {
+  "intro": {
+   "id": "ep17-map-intro",
+   "lines": [
+    {
+     "id": "ep17-map-intro-1",
+     "sourceNodeId": "n001",
+     "speaker": "narrator",
+     "textEn": "\"That dragon ate my horse!\" said the monk.",
+     "textZh": "\"那条龙吃了我的马!\"和尚说。",
+     "audioRef": "sent_en:\"That dragon ate my horse!\" said the monk.",
+     "audioStart": 11.2,
+     "audioEnd": 16.387
+    },
+    {
+     "id": "ep17-map-intro-2",
+     "sourceNodeId": "n002",
+     "speaker": "narrator",
+     "textEn": "He fell to his knees.",
+     "textZh": "他双膝跪地。",
+     "audioRef": "sent_en:He fell to his knees.",
+     "audioStart": 16.388,
+     "audioEnd": 18.717
+    }
+   ]
+  },
+  "quiz": {
+   "id": "ep17-map-quiz",
+   "lines": [
+    {
+     "id": "ep17-map-quiz-1",
+     "sourceNodeId": "n019",
+     "speaker": "narrator",
+     "textEn": "Wukong nodded. \"And we can't cross the river with that dragon in there. I'll try another plan.\"",
+     "textZh": "悟空点了点头:\"既然那条龙还在里面,我们无法渡河了。我来试试别的办法吧。\"",
+     "audioRef": "sent_en:Wukong nodded. \"And we can't cross the river with that dragon in there. I'll try another plan.\"",
+     "audioStart": 104.766,
+     "audioEnd": 112.885
+    }
+   ],
+   "question": {
+    "id": "ep017-official-quiz-001",
+    "textEn": "what stopped wukong and the monk from crossing the river?",
+    "textZh": "是什么阻止了悟空和和尚过河？"
+   },
+   "word": {
+    "term": "along the",
+    "zh": "沿途,一路上",
+    "ipa": ""
+   },
+   "options": [
+    {
+     "id": "a",
+     "textEn": "a dragon",
+     "textZh": "一条龙",
+     "correct": true,
+     "feedback": "对了。一条龙"
+    },
+    {
+     "id": "b",
+     "textEn": "guanyin",
+     "textZh": "观音",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    },
+    {
+     "id": "c",
+     "textEn": "the headband",
+     "textZh": "头带",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    }
+   ],
+   "lessonCardId": "ep017-official-quiz-001"
+  }
+ },
+ "map": {
+  "theme": "generic",
+  "coordinateSpace": "world-normalized",
+  "worldTiles": 2,
+  "regions": {
+   "hero": 0,
+   "waves": [
+    0,
+    1
+   ],
+   "npc": {
+    "intro": 0,
+    "quiz": 1
+   },
+   "boss": 3
+  },
+  "walkable": {
+   "space": "world",
+   "x": 0.0,
+   "y": 0.16,
+   "w": 1.0,
+   "h": 0.79,
+   "rects": [
+    {
+     "x": 0.0,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.66,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    }
+   ]
+  },
+  "heroSpawn": {
+   "x": 0.06,
+   "y": 0.31
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.31,
+    "y": 0.23
+   },
+   {
+    "x": 0.38,
+    "y": 0.27
+   },
+   {
+    "x": 0.34,
+    "y": 0.33
+   },
+   {
+    "x": 0.41,
+    "y": 0.24
+   }
+  ],
+  "waveSpawns": [
+   [
+    {
+     "x": 0.31,
+     "y": 0.23
+    },
+    {
+     "x": 0.38,
+     "y": 0.27
+    },
+    {
+     "x": 0.34,
+     "y": 0.33
+    },
+    {
+     "x": 0.41,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.81,
+     "y": 0.23
+    },
+    {
+     "x": 0.88,
+     "y": 0.27
+    },
+    {
+     "x": 0.84,
+     "y": 0.33
+    },
+    {
+     "x": 0.91,
+     "y": 0.24
+    }
+   ]
+  ],
+  "orbSpawns": [
+   [
+    {
+     "x": 0.11,
+     "y": 0.25
+    },
+    {
+     "x": 0.16,
+     "y": 0.31
+    },
+    {
+     "x": 0.12,
+     "y": 0.37
+    },
+    {
+     "x": 0.18,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.61,
+     "y": 0.25
+    },
+    {
+     "x": 0.66,
+     "y": 0.31
+    },
+    {
+     "x": 0.62,
+     "y": 0.37
+    },
+    {
+     "x": 0.68,
+     "y": 0.24
+    }
+   ]
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "dragonking-soldier",
+    "nameZh": "虾兵",
+    "x": 0.08,
+    "y": 0.26
+   },
+   {
+    "role": "quiz",
+    "sprite": "yingchou",
+    "nameZh": "鹰愁涧龙",
+    "x": 0.7,
+    "y": 0.39
+   }
+  ],
+  "bossSpot": {
+   "x": 0.94,
+   "y": 0.85
+  }
+ }
+}

@@ -1,0 +1,584 @@
+{
+ "schema_version": 1,
+ "ep": 12,
+ "title": {
+  "en": "The Bet",
+  "zh": "西游记 第12集"
+ },
+ "collection": "c02",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "wukong",
+   "nameZh": "孙悟空",
+   "mode": "sparring",
+   "sprite": "wukong"
+  },
+  "minors": [
+   {
+    "id": "imp",
+    "nameZh": "小妖",
+    "sprite": "imp"
+   }
+  ]
+ },
+ "background": {
+  "theme": "episode-scene",
+  "illustration": "assets/adv_frames/ep12/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "Buddha smiled at Wukong.",
+   "textZh": "佛陀对悟空微微一笑。",
+   "illustration": "assets/adv_frames/ep12/f1.jpg",
+   "sourceNodeId": "n001",
+   "audioRef": "sent_en:Buddha smiled at Wukong."
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "\"How did you get so powerful?\"",
+   "textZh": "\"你究竟是如何变得如此强大的?\"",
+   "illustration": "assets/adv_frames/ep12/f2.jpg",
+   "sourceNodeId": "n002",
+   "audioRef": "sent_en:\"How did you get so powerful?\""
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "bet",
+   "zh": "1. 赌注,(2. 以(钱, 物等)打赌,与(某人)打赌)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep12/f1.jpg"
+  },
+  {
+   "term": "powerful",
+   "zh": "强大的,强而有力的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep12/f2.jpg"
+  },
+  {
+   "term": "formula",
+   "zh": "(可达到特定目的的)方式,方法",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep12/f3.jpg"
+  },
+  {
+   "term": "lifetime",
+   "zh": "一生,终生",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep12/f1.jpg"
+  },
+  {
+   "term": "rule",
+   "zh": "1. 统治,支配,(2. 规则,规定)",
+   "ipa": "ruːl",
+   "illustration": "assets/adv_frames/ep12/f1.jpg"
+  },
+  {
+   "term": "soar",
+   "zh": "高飞,往上飞舞",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep12/f0.jpg"
+  },
+  {
+   "term": "make a bet",
+   "zh": "打赌",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep12/f1.jpg"
+  },
+  {
+   "term": "severely",
+   "zh": "严重地,严厉地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep12/f2.jpg"
+  },
+  {
+   "term": "palm",
+   "zh": "手掌",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep12/f1.jpg"
+  },
+  {
+   "term": "imagine",
+   "zh": "想像",
+   "ipa": "ɪˈmædʒɪn",
+   "illustration": "assets/adv_frames/ep12/f3.jpg"
+  },
+  {
+   "term": "tap",
+   "zh": "轻拍",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep12/f0.jpg"
+  },
+  {
+   "term": "chin",
+   "zh": "下巴",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep12/f0.jpg"
+  }
+ ],
+ "wordPool": [
+  {
+   "term": "bet",
+   "zh": "1. 赌注,(2. 以(钱, 物等)打赌,与(某人)打赌)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep12/f1.jpg"
+  },
+  {
+   "term": "powerful",
+   "zh": "强大的,强而有力的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep12/f2.jpg"
+  },
+  {
+   "term": "formula",
+   "zh": "(可达到特定目的的)方式,方法",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep12/f3.jpg"
+  },
+  {
+   "term": "lifetime",
+   "zh": "一生,终生",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep12/f1.jpg"
+  },
+  {
+   "term": "rule",
+   "zh": "1. 统治,支配,(2. 规则,规定)",
+   "ipa": "ruːl",
+   "illustration": "assets/adv_frames/ep12/f1.jpg"
+  },
+  {
+   "term": "soar",
+   "zh": "高飞,往上飞舞",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep12/f0.jpg"
+  },
+  {
+   "term": "make a bet",
+   "zh": "打赌",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep12/f1.jpg"
+  },
+  {
+   "term": "severely",
+   "zh": "严重地,严厉地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep12/f2.jpg"
+  },
+  {
+   "term": "palm",
+   "zh": "手掌",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep12/f1.jpg"
+  },
+  {
+   "term": "imagine",
+   "zh": "想像",
+   "ipa": "ɪˈmædʒɪn",
+   "illustration": "assets/adv_frames/ep12/f3.jpg"
+  },
+  {
+   "term": "tap",
+   "zh": "轻拍",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep12/f0.jpg"
+  },
+  {
+   "term": "chin",
+   "zh": "下巴",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep12/f0.jpg"
+  },
+  {
+   "term": "pluck",
+   "zh": "采,摘,拔",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep12/f2.jpg"
+  },
+  {
+   "term": "ink",
+   "zh": "墨水",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep12/f2.jpg"
+  },
+  {
+   "term": "middle",
+   "zh": "1. 中间的,中央的,(2. 中间,中央)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep12/f2.jpg"
+  },
+  {
+   "term": "sort",
+   "zh": "种类",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep12/f3.jpg"
+  },
+  {
+   "term": "tightly",
+   "zh": "紧紧地,坚固地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep12/f1.jpg"
+  },
+  {
+   "term": "grunt",
+   "zh": "发出嘟哝声,发出哼声",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep12/f3.jpg"
+  },
+  {
+   "term": "strength",
+   "zh": "力,气力",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep12/f3.jpg"
+  },
+  {
+   "term": "sleeve",
+   "zh": "(衣服的)袖子",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep12/f1.jpg"
+  },
+  {
+   "term": "laid",
+   "zh": "1. 放 (lay-laid),(2. 下蛋)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep12/f2.jpg"
+  },
+  {
+   "term": "trap",
+   "zh": "1. 困(在危险的场所或困境),(2. 陷阱)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep12/f2.jpg"
+  },
+  {
+   "term": "punishment",
+   "zh": "惩罚,处罚",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep12/f2.jpg"
+  },
+  {
+   "term": "over",
+   "zh": "1. 结束的,(2. 在...之上)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep12/f1.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "bet",
+     "zh": "1. 赌注,(2. 以(钱, 物等)打赌,与(某人)打赌)",
+     "sprite": "imp"
+    },
+    {
+     "term": "powerful",
+     "zh": "强大的,强而有力的",
+     "sprite": "imp"
+    },
+    {
+     "term": "formula",
+     "zh": "(可达到特定目的的)方式,方法",
+     "sprite": "imp"
+    },
+    {
+     "term": "lifetime",
+     "zh": "一生,终生",
+     "sprite": "imp"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "rule",
+     "zh": "1. 统治,支配,(2. 规则,规定)",
+     "sprite": "imp"
+    },
+    {
+     "term": "soar",
+     "zh": "高飞,往上飞舞",
+     "sprite": "imp"
+    },
+    {
+     "term": "make a bet",
+     "zh": "打赌",
+     "sprite": "imp"
+    },
+    {
+     "term": "severely",
+     "zh": "严重地,严厉地",
+     "sprite": "imp"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "palm",
+    "zh": "手掌"
+   },
+   {
+    "term": "imagine",
+    "zh": "想像"
+   },
+   {
+    "term": "tap",
+    "zh": "轻拍"
+   },
+   {
+    "term": "chin",
+    "zh": "下巴"
+   }
+  ],
+  "taunts": [
+   "wukong.1",
+   "wukong.2",
+   "wukong.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=12",
+ "npcDialogue": {
+  "intro": {
+   "id": "ep12-map-intro",
+   "lines": [
+    {
+     "id": "ep12-map-intro-1",
+     "sourceNodeId": "n001",
+     "speaker": "narrator",
+     "textEn": "Buddha smiled at Wukong.",
+     "textZh": "佛陀对悟空微微一笑。",
+     "audioRef": "sent_en:Buddha smiled at Wukong.",
+     "audioStart": 10.934,
+     "audioEnd": 13.85
+    },
+    {
+     "id": "ep12-map-intro-2",
+     "sourceNodeId": "n002",
+     "speaker": "narrator",
+     "textEn": "\"How did you get so powerful?\"",
+     "textZh": "\"你究竟是如何变得如此强大的?\"",
+     "audioRef": "sent_en:\"How did you get so powerful?\"",
+     "audioStart": 13.851,
+     "audioEnd": 17.572
+    }
+   ]
+  },
+  "quiz": {
+   "id": "ep12-map-quiz",
+   "lines": [
+    {
+     "id": "ep12-map-quiz-1",
+     "sourceNodeId": "n013",
+     "speaker": "narrator",
+     "textEn": "\"Then let's make a bet,\" said Buddha.",
+     "textZh": "\"那么,我们来打个赌吧,\"佛陀说道。",
+     "audioRef": "sent_en:\"Then let's make a bet,\" said Buddha.",
+     "audioStart": 68.866,
+     "audioEnd": 71.902
+    }
+   ],
+   "question": {
+    "id": "ep012-official-quiz-001",
+    "textEn": "what was the bet?",
+    "textZh": "赌注是什么？"
+   },
+   "word": {
+    "term": "bet",
+    "zh": "1. 赌注,(2. 以(钱, 物等)打赌,与(某人)打赌)",
+    "ipa": ""
+   },
+   "options": [
+    {
+     "id": "a",
+     "textEn": "jump off buddha's hand",
+     "textZh": "从佛手上跳下",
+     "correct": true,
+     "feedback": "对了。从佛手上跳下"
+    },
+    {
+     "id": "b",
+     "textEn": "change into other animals",
+     "textZh": "变成其他动物",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    },
+    {
+     "id": "c",
+     "textEn": "leap across the ocean",
+     "textZh": "跃过海洋",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    }
+   ],
+   "lessonCardId": "ep012-official-quiz-001"
+  }
+ },
+ "map": {
+  "theme": "episode-scene",
+  "coordinateSpace": "world-normalized",
+  "worldTiles": 2,
+  "regions": {
+   "hero": 0,
+   "waves": [
+    0,
+    1
+   ],
+   "npc": {
+    "intro": 0,
+    "quiz": 1
+   },
+   "boss": 3
+  },
+  "walkable": {
+   "space": "world",
+   "x": 0.0,
+   "y": 0.16,
+   "w": 1.0,
+   "h": 0.79,
+   "rects": [
+    {
+     "x": 0.0,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.66,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    }
+   ]
+  },
+  "heroSpawn": {
+   "x": 0.06,
+   "y": 0.31
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.31,
+    "y": 0.23
+   },
+   {
+    "x": 0.38,
+    "y": 0.27
+   },
+   {
+    "x": 0.34,
+    "y": 0.33
+   },
+   {
+    "x": 0.41,
+    "y": 0.24
+   }
+  ],
+  "waveSpawns": [
+   [
+    {
+     "x": 0.31,
+     "y": 0.23
+    },
+    {
+     "x": 0.38,
+     "y": 0.27
+    },
+    {
+     "x": 0.34,
+     "y": 0.33
+    },
+    {
+     "x": 0.41,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.81,
+     "y": 0.23
+    },
+    {
+     "x": 0.88,
+     "y": 0.27
+    },
+    {
+     "x": 0.84,
+     "y": 0.33
+    },
+    {
+     "x": 0.91,
+     "y": 0.24
+    }
+   ]
+  ],
+  "orbSpawns": [
+   [
+    {
+     "x": 0.11,
+     "y": 0.25
+    },
+    {
+     "x": 0.16,
+     "y": 0.31
+    },
+    {
+     "x": 0.12,
+     "y": 0.37
+    },
+    {
+     "x": 0.18,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.61,
+     "y": 0.25
+    },
+    {
+     "x": 0.66,
+     "y": 0.31
+    },
+    {
+     "x": 0.62,
+     "y": 0.37
+    },
+    {
+     "x": 0.68,
+     "y": 0.24
+    }
+   ]
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "temple-novice",
+    "nameZh": "小沙弥",
+    "x": 0.08,
+    "y": 0.26
+   },
+   {
+    "role": "quiz",
+    "sprite": "rulai",
+    "nameZh": "如来",
+    "x": 0.7,
+    "y": 0.39
+   }
+  ],
+  "bossSpot": {
+   "x": 0.94,
+   "y": 0.85
+  }
+ }
+}

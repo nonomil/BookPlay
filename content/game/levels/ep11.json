@@ -1,0 +1,584 @@
+{
+ "schema_version": 1,
+ "ep": 11,
+ "title": {
+  "en": "Trouble in Heaven",
+  "zh": "西游记 第11集"
+ },
+ "collection": "c02",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "wukong",
+   "nameZh": "孙悟空",
+   "mode": "sparring",
+   "sprite": "wukong"
+  },
+  "minors": [
+   {
+    "id": "imp",
+    "nameZh": "小妖",
+    "sprite": "imp"
+   }
+  ]
+ },
+ "background": {
+  "theme": "episode-scene",
+  "illustration": "assets/adv_frames/ep11/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "Erlang quickly tied up Wukong and brought him up to Heaven.",
+   "textZh": "哪咤迅速擒住悟空,并将其押送上天。",
+   "illustration": "assets/adv_frames/ep11/f1.jpg",
+   "sourceNodeId": "n001",
+   "audioRef": "sent_en:Erlang quickly tied up Wukong and brought him up to Heaven."
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "\"I want Sun Wukong destroyed,\" said the Jade Emperor.",
+   "textZh": "\"我要消灭孙悟空!\"玉皇大帝说道。",
+   "illustration": "assets/adv_frames/ep11/f2.jpg",
+   "sourceNodeId": "n002",
+   "audioRef": "sent_en:\"I want Sun Wukong destroyed,\" said the Jade Emperor."
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "destroy",
+   "zh": "破坏,毁坏",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep11/f2.jpg"
+  },
+  {
+   "term": "shatter",
+   "zh": "粉碎,破碎,砸碎",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep11/f2.jpg"
+  },
+  {
+   "term": "messenger",
+   "zh": "信差,传令员",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep11/f0.jpg"
+  },
+  {
+   "term": "clear",
+   "zh": "1. (云,雾)消散,(2. 明亮的,透明的)",
+   "ipa": "klɪə(r)",
+   "illustration": "assets/adv_frames/ep11/f1.jpg"
+  },
+  {
+   "term": "harm",
+   "zh": "损伤,损害",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep11/f1.jpg"
+  },
+  {
+   "term": "peach",
+   "zh": "桃子",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep11/f1.jpg"
+  },
+  {
+   "term": "frown",
+   "zh": "皱眉",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep11/f3.jpg"
+  },
+  {
+   "term": "tickle",
+   "zh": "使发痒",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep11/f2.jpg"
+  },
+  {
+   "term": "get rid of",
+   "zh": "摆脱,除掉",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep11/f0.jpg"
+  },
+  {
+   "term": "potion",
+   "zh": "(魔法的)药水",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep11/f2.jpg"
+  },
+  {
+   "term": "lid",
+   "zh": "盖子",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep11/f2.jpg"
+  },
+  {
+   "term": "tend",
+   "zh": "1. 照顾,照料,(2. 倾向,易于)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep11/f0.jpg"
+  }
+ ],
+ "wordPool": [
+  {
+   "term": "destroy",
+   "zh": "破坏,毁坏",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep11/f2.jpg"
+  },
+  {
+   "term": "shatter",
+   "zh": "粉碎,破碎,砸碎",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep11/f2.jpg"
+  },
+  {
+   "term": "messenger",
+   "zh": "信差,传令员",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep11/f0.jpg"
+  },
+  {
+   "term": "clear",
+   "zh": "1. (云,雾)消散,(2. 明亮的,透明的)",
+   "ipa": "klɪə(r)",
+   "illustration": "assets/adv_frames/ep11/f1.jpg"
+  },
+  {
+   "term": "harm",
+   "zh": "损伤,损害",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep11/f1.jpg"
+  },
+  {
+   "term": "peach",
+   "zh": "桃子",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep11/f1.jpg"
+  },
+  {
+   "term": "frown",
+   "zh": "皱眉",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep11/f3.jpg"
+  },
+  {
+   "term": "tickle",
+   "zh": "使发痒",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep11/f2.jpg"
+  },
+  {
+   "term": "get rid of",
+   "zh": "摆脱,除掉",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep11/f0.jpg"
+  },
+  {
+   "term": "potion",
+   "zh": "(魔法的)药水",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep11/f2.jpg"
+  },
+  {
+   "term": "lid",
+   "zh": "盖子",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep11/f2.jpg"
+  },
+  {
+   "term": "tend",
+   "zh": "1. 照顾,照料,(2. 倾向,易于)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep11/f0.jpg"
+  },
+  {
+   "term": "opening",
+   "zh": "孔,缝隙",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep11/f0.jpg"
+  },
+  {
+   "term": "coal",
+   "zh": "煤,煤块",
+   "ipa": "kəʊl",
+   "illustration": "assets/adv_frames/ep11/f3.jpg"
+  },
+  {
+   "term": "cough",
+   "zh": "咳嗽",
+   "ipa": "kɒf",
+   "illustration": "assets/adv_frames/ep11/f3.jpg"
+  },
+  {
+   "term": "smash",
+   "zh": "打碎,打破",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep11/f2.jpg"
+  },
+  {
+   "term": "path",
+   "zh": "1. (前面的)道路,(2. 小径,小路)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep11/f1.jpg"
+  },
+  {
+   "term": "alive",
+   "zh": "活着的,现存的(不能放在名词前使用)",
+   "ipa": "əˈlaɪv",
+   "illustration": "assets/adv_frames/ep11/f3.jpg"
+  },
+  {
+   "term": "outrage",
+   "zh": "1. 愤慨,愤怒,(2. 严重违法的行为,暴行)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep11/f3.jpg"
+  },
+  {
+   "term": "hid",
+   "zh": "躲藏 (hide-hid)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep11/f2.jpg"
+  },
+  {
+   "term": "indoors",
+   "zh": "在室内",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep11/f2.jpg"
+  },
+  {
+   "term": "knock over",
+   "zh": "打翻,撞倒",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep11/f3.jpg"
+  },
+  {
+   "term": "figure",
+   "zh": "(人的)体态,身影",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep11/f1.jpg"
+  },
+  {
+   "term": "quick",
+   "zh": "快的",
+   "ipa": "kwɪk",
+   "illustration": "assets/adv_frames/ep11/f1.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "destroy",
+     "zh": "破坏,毁坏",
+     "sprite": "imp"
+    },
+    {
+     "term": "shatter",
+     "zh": "粉碎,破碎,砸碎",
+     "sprite": "imp"
+    },
+    {
+     "term": "messenger",
+     "zh": "信差,传令员",
+     "sprite": "imp"
+    },
+    {
+     "term": "clear",
+     "zh": "1. (云,雾)消散,(2. 明亮的,透明的)",
+     "sprite": "imp"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "harm",
+     "zh": "损伤,损害",
+     "sprite": "imp"
+    },
+    {
+     "term": "peach",
+     "zh": "桃子",
+     "sprite": "imp"
+    },
+    {
+     "term": "frown",
+     "zh": "皱眉",
+     "sprite": "imp"
+    },
+    {
+     "term": "tickle",
+     "zh": "使发痒",
+     "sprite": "imp"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "get rid of",
+    "zh": "摆脱,除掉"
+   },
+   {
+    "term": "potion",
+    "zh": "(魔法的)药水"
+   },
+   {
+    "term": "lid",
+    "zh": "盖子"
+   },
+   {
+    "term": "tend",
+    "zh": "1. 照顾,照料,(2. 倾向,易于)"
+   }
+  ],
+  "taunts": [
+   "wukong.1",
+   "wukong.2",
+   "wukong.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=11",
+ "npcDialogue": {
+  "intro": {
+   "id": "ep11-map-intro",
+   "lines": [
+    {
+     "id": "ep11-map-intro-1",
+     "sourceNodeId": "n001",
+     "speaker": "narrator",
+     "textEn": "Erlang quickly tied up Wukong and brought him up to Heaven.",
+     "textZh": "哪咤迅速擒住悟空,并将其押送上天。",
+     "audioRef": "sent_en:Erlang quickly tied up Wukong and brought him up to Heaven.",
+     "audioStart": 11.267,
+     "audioEnd": 25.273
+    },
+    {
+     "id": "ep11-map-intro-2",
+     "sourceNodeId": "n002",
+     "speaker": "narrator",
+     "textEn": "\"I want Sun Wukong destroyed,\" said the Jade Emperor.",
+     "textZh": "\"我要消灭孙悟空!\"玉皇大帝说道。",
+     "audioRef": "sent_en:\"I want Sun Wukong destroyed,\" said the Jade Emperor.",
+     "audioStart": 25.274,
+     "audioEnd": 31.564
+    }
+   ]
+  },
+  "quiz": {
+   "id": "ep11-map-quiz",
+   "lines": [
+    {
+     "id": "ep11-map-quiz-1",
+     "sourceNodeId": "n010",
+     "speaker": "narrator",
+     "textEn": "Several fire gods entered the courtyard and threw balls of flame at Wukong.",
+     "textZh": "几位火神步入庭院,向悟空投掷火焰球。",
+     "audioRef": "sent_en:Several fire gods entered the courtyard and threw balls of flame at Wukong.",
+     "audioStart": 58.743,
+     "audioEnd": 64.365
+    }
+   ],
+   "question": {
+    "id": "ep011-official-quiz-001",
+    "textEn": "who did not attack wukong?",
+    "textZh": "谁没有攻击悟空？"
+   },
+   "word": {
+    "term": "destroy",
+    "zh": "破坏,毁坏",
+    "ipa": ""
+   },
+   "options": [
+    {
+     "id": "a",
+     "textEn": "buddha",
+     "textZh": "佛陀",
+     "correct": true,
+     "feedback": "对了。佛陀"
+    },
+    {
+     "id": "b",
+     "textEn": "fire gods",
+     "textZh": "火神",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    },
+    {
+     "id": "c",
+     "textEn": "thunder gods",
+     "textZh": "雷神",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    }
+   ],
+   "lessonCardId": "ep011-official-quiz-001"
+  }
+ },
+ "map": {
+  "theme": "episode-scene",
+  "coordinateSpace": "world-normalized",
+  "worldTiles": 2,
+  "regions": {
+   "hero": 0,
+   "waves": [
+    0,
+    1
+   ],
+   "npc": {
+    "intro": 0,
+    "quiz": 1
+   },
+   "boss": 3
+  },
+  "walkable": {
+   "space": "world",
+   "x": 0.0,
+   "y": 0.16,
+   "w": 1.0,
+   "h": 0.79,
+   "rects": [
+    {
+     "x": 0.0,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.66,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    }
+   ]
+  },
+  "heroSpawn": {
+   "x": 0.06,
+   "y": 0.31
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.31,
+    "y": 0.23
+   },
+   {
+    "x": 0.38,
+    "y": 0.27
+   },
+   {
+    "x": 0.34,
+    "y": 0.33
+   },
+   {
+    "x": 0.41,
+    "y": 0.24
+   }
+  ],
+  "waveSpawns": [
+   [
+    {
+     "x": 0.31,
+     "y": 0.23
+    },
+    {
+     "x": 0.38,
+     "y": 0.27
+    },
+    {
+     "x": 0.34,
+     "y": 0.33
+    },
+    {
+     "x": 0.41,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.81,
+     "y": 0.23
+    },
+    {
+     "x": 0.88,
+     "y": 0.27
+    },
+    {
+     "x": 0.84,
+     "y": 0.33
+    },
+    {
+     "x": 0.91,
+     "y": 0.24
+    }
+   ]
+  ],
+  "orbSpawns": [
+   [
+    {
+     "x": 0.11,
+     "y": 0.25
+    },
+    {
+     "x": 0.16,
+     "y": 0.31
+    },
+    {
+     "x": 0.12,
+     "y": 0.37
+    },
+    {
+     "x": 0.18,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.61,
+     "y": 0.25
+    },
+    {
+     "x": 0.66,
+     "y": 0.31
+    },
+    {
+     "x": 0.62,
+     "y": 0.37
+    },
+    {
+     "x": 0.68,
+     "y": 0.24
+    }
+   ]
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "heaven-captain",
+    "nameZh": "天将",
+    "x": 0.08,
+    "y": 0.26
+   },
+   {
+    "role": "quiz",
+    "sprite": "heaven-captain",
+    "nameZh": "天将",
+    "x": 0.7,
+    "y": 0.39
+   }
+  ],
+  "bossSpot": {
+   "x": 0.94,
+   "y": 0.85
+  }
+ }
+}

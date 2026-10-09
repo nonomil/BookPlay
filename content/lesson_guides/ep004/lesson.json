@@ -1,0 +1,3271 @@
+{
+  "schema_version": 1,
+  "episode": 4,
+  "title": {
+    "en": "Secret Formulas",
+    "zh": "西游记 第4集"
+  },
+  "sources": [
+    {
+      "kind": "courseware_main_pptx",
+      "file": "G:\\Game\\BookPlay书戏\\data\\西游记课件\\3.3西游记  Journey to the West PPT课件\\004_Journey to the West 4_Secret Formulas.pptx",
+      "sha256": "2435854eb25b6a1ee2ce3e8ddc504c6dee1a232bf328d782e859b189456218f4",
+      "pages": 20
+    },
+    {
+      "kind": "official_quiz_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+      "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929",
+      "pages": 131
+    },
+    {
+      "kind": "intensive_reader_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\02-西游记精读版台词本\\1、带标注版PDF 108集\\004 秘诀 上.pdf",
+      "sha256": "2bd96b0d78311f272e19ff9a90bb09e8040e7649ca4c6a5d09198e2baa5d0717",
+      "pages": 4
+    },
+    {
+      "kind": "intensive_reader_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\02-西游记精读版台词本\\1、带标注版PDF 108集\\004 秘诀 下.pdf",
+      "sha256": "bcc149e049065ce16ed664850d0857dd7b02038f2b1f33b376a7d4191a0451d4",
+      "pages": 3
+    },
+    {
+      "kind": "courseware_teacher_pptx",
+      "file": "G:\\Game\\BookPlay书戏\\data\\西游记课件\\西游记外教培训11集课件\\西游记外教E004.pptx",
+      "sha256": "b34f5904b9d8529b6d992e24b9f603570a726687fae1f2634f100e1f4259cbdd",
+      "pages": 29
+    },
+    {
+      "kind": "courseware_screenshots_pptx",
+      "file": "G:\\Game\\BookPlay书戏\\data\\西游记课件\\西游记-外教课动画截图\\Journey to the West 004  Secret Formulas_20240106163550.pptx",
+      "sha256": "0d369cd32b63b5d635dfa353404e6f78ab488f251af83a93f4ca57ce466e1079",
+      "pages": 52
+    }
+  ],
+  "cards": [
+    {
+      "card_id": "ep004-official-quiz-001",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 1,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "how did wukong learn to live forever?",
+        "zh": "悟空是如何学会永生的？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "subodhi whispered formulas into his ear.",
+            "zh": "苏波迪在他耳边低声念着口诀。"
+          },
+          {
+            "id": "b",
+            "en": "subodhi turned himself into a tree.",
+            "zh": "苏波迪把自己变成了一棵树。"
+          },
+          {
+            "id": "c",
+            "en": "wukong learned by himself.",
+            "zh": "悟空自学成才。"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n007",
+            "quote": "Subodhi smiled. \"I knew you were a worthy student. Come closer.\""
+          },
+          {
+            "node_id": "n008",
+            "quote": "Subodhi whispered into Wukong's ear."
+          },
+          {
+            "node_id": "n009",
+            "quote": "The sage whispered prayers as well as secret formulas about the universe and nature."
+          },
+          {
+            "node_id": "n011",
+            "quote": "Now Wukong knew how to live forever!"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 5,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep004-official-quiz-002",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 2,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "what did wukong do while the other students slept?",
+        "zh": "当其他学生睡觉时，悟空做了什么？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "he practiced secret formulas.",
+            "zh": "他练习秘密配方。"
+          },
+          {
+            "id": "b",
+            "en": "he studied old books.",
+            "zh": "他研究古书。"
+          },
+          {
+            "id": "c",
+            "en": "he did powerful exercises.",
+            "zh": "他做了强力的锻炼。"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n012",
+            "quote": "For the next few years, Wukong meditated and practiced the secret formulas."
+          },
+          {
+            "node_id": "n013",
+            "quote": "While the other students slept at night, Wukong stayed up."
+          },
+          {
+            "node_id": "n019",
+            "quote": "\"I've been meditating and practicing secret formulas,\" said Wukong."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 5,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep004-official-quiz-003",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 3,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "what did wukong show the other students he could do?",
+        "zh": "悟空向其他学生展示了他能做什么？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "turn into a tree",
+            "zh": "变成一棵树"
+          },
+          {
+            "id": "b",
+            "en": "ride on a cloud",
+            "zh": "骑在云上"
+          },
+          {
+            "id": "c",
+            "en": "change into a bird",
+            "zh": "变成一只鸟"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n025",
+            "quote": "Wukong smiled. \"He taught me how to live forever. He also taught me how to change into other things.\""
+          },
+          {
+            "node_id": "n028",
+            "quote": "He muttered a quick spell and made a sign with his hands."
+          },
+          {
+            "node_id": "n029",
+            "quote": "Suddenly—<font color=\"#ffff00\"><i>zap!</i></font> The monkey was gone."
+          },
+          {
+            "node_id": "n030",
+            "quote": "An enormous pine tree stood in his place."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 5,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep004-official-quiz-004",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 4,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "why did wukong have to leave?",
+        "zh": "悟空为什么非得离开？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "he wasn't safe.",
+            "zh": "他不安全。"
+          },
+          {
+            "id": "b",
+            "en": "he learned everything.",
+            "zh": "他学会了一切。"
+          },
+          {
+            "id": "c",
+            "en": "he had to return home.",
+            "zh": "他不得不回家。"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n044",
+            "quote": "\"I taught you the secret formulas so you could live forever,\" said the sage."
+          },
+          {
+            "node_id": "n045",
+            "quote": "\"Not so you could show off!\""
+          },
+          {
+            "node_id": "n047",
+            "quote": "\"Now all of the students have seen what you can do. They will want to know how to do it too! If you don't tell them, they might harm you. It's not safe for you to stay here anymore. You must go.\""
+          },
+          {
+            "node_id": "n050",
+            "quote": "\"Go back home,\" said Subodhi."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 5,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep004-official-quiz-005",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 5,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "where did wukong arrive?",
+        "zh": "悟空到哪里了？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "the fruit and flower mountain",
+            "zh": "花果山"
+          },
+          {
+            "id": "b",
+            "en": "the ocean",
+            "zh": "海洋"
+          },
+          {
+            "id": "c",
+            "en": "the temple",
+            "zh": "寺庙"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n059",
+            "quote": "After a short journey, Wukong arrived at the Fruit and Flower Mountain."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 5,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep004-vocab-001",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 101,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "go",
+        "zh": "vi.去,走 v.link.变成,变得"
+      },
+      "payload": {
+        "term": "go",
+        "ipa": "ɡəʊ",
+        "pos": "vi.",
+        "def": "vi.去,走 v.link.变成,变得",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "004 秘诀 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "2bd96b0d78311f272e19ff9a90bb09e8040e7649ca4c6a5d09198e2baa5d0717"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "004 秘诀 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "bcc149e049065ce16ed664850d0857dd7b02038f2b1f33b376a7d4191a0451d4"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep004-vocab-002",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 102,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "awake",
+        "zh": "adj.醒着 v.(使)醒来,唤醒"
+      },
+      "payload": {
+        "term": "awake",
+        "ipa": "əˈweɪk",
+        "pos": "adj.",
+        "def": "adj.醒着 v.(使)醒来,唤醒",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "004 秘诀 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "2bd96b0d78311f272e19ff9a90bb09e8040e7649ca4c6a5d09198e2baa5d0717"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep004-vocab-003",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 103,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "quiet",
+        "zh": "宁静,安静"
+      },
+      "payload": {
+        "term": "quiet",
+        "ipa": "ˈkwaɪət",
+        "pos": "adj.",
+        "def": "adj.安静的 n.[U]宁静,安静",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "004 秘诀 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "2bd96b0d78311f272e19ff9a90bb09e8040e7649ca4c6a5d09198e2baa5d0717"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep004-vocab-004",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 104,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "enter",
+        "zh": "v.进来,进去,成为......的一员, 参加,输入"
+      },
+      "payload": {
+        "term": "enter",
+        "ipa": "ˈentə(r)",
+        "pos": "v.",
+        "def": "v.进来,进去,成为......的一员, 参加,输入",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "004 秘诀 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "2bd96b0d78311f272e19ff9a90bb09e8040e7649ca4c6a5d09198e2baa5d0717"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep004-vocab-005",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 105,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "understand",
+        "zh": "v.理解,领会,了解"
+      },
+      "payload": {
+        "term": "understand",
+        "ipa": "ˌʌndə ˈstænd",
+        "pos": "v.",
+        "def": "v.理解,领会,了解",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "004 秘诀 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "2bd96b0d78311f272e19ff9a90bb09e8040e7649ca4c6a5d09198e2baa5d0717"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep004-vocab-006",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 106,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "secret",
+        "zh": "秘诀 adj.秘密的,保密的,隐秘的"
+      },
+      "payload": {
+        "term": "secret",
+        "ipa": "ˈsiːkrət",
+        "pos": "n.",
+        "def": "n.[C]秘密[sing.]秘诀 adj.秘密的,保密的,隐秘的",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          1,
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "004 秘诀 上.pdf",
+          "half": "up",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "2bd96b0d78311f272e19ff9a90bb09e8040e7649ca4c6a5d09198e2baa5d0717"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "004 秘诀 下.pdf",
+          "half": "down",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "bcc149e049065ce16ed664850d0857dd7b02038f2b1f33b376a7d4191a0451d4"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep004-vocab-007",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 107,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "message",
+        "zh": "信息,消息 vt.给......发消息"
+      },
+      "payload": {
+        "term": "message",
+        "ipa": "ˈmesɪdʒ",
+        "pos": "n.",
+        "def": "n.[C]信息,消息 vt.给......发消息",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "004 秘诀 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "2bd96b0d78311f272e19ff9a90bb09e8040e7649ca4c6a5d09198e2baa5d0717"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep004-vocab-008",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 108,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "hit",
+        "zh": "击中"
+      },
+      "payload": {
+        "term": "hit",
+        "ipa": "hɪt",
+        "pos": "v.",
+        "def": "v.打,袭击 n.[C]击中",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "004 秘诀 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "2bd96b0d78311f272e19ff9a90bb09e8040e7649ca4c6a5d09198e2baa5d0717"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep004-vocab-009",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 109,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "head",
+        "zh": "队首 vi.朝(某方向)行进"
+      },
+      "payload": {
+        "term": "head",
+        "ipa": "hed",
+        "pos": "n.",
+        "def": "n.[C]头(部)[C,U]负责人 [sing.]队首 vi.朝(某方向)行进",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          1,
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "004 秘诀 上.pdf",
+          "half": "up",
+          "pages": [
+            1,
+            3
+          ],
+          "sha256": "2bd96b0d78311f272e19ff9a90bb09e8040e7649ca4c6a5d09198e2baa5d0717"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "004 秘诀 下.pdf",
+          "half": "down",
+          "pages": [
+            1,
+            3
+          ],
+          "sha256": "bcc149e049065ce16ed664850d0857dd7b02038f2b1f33b376a7d4191a0451d4"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep004-vocab-010",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 110,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "three",
+        "zh": "num.三"
+      },
+      "payload": {
+        "term": "three",
+        "ipa": "θriː",
+        "pos": "num.",
+        "def": "num.三",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "004 秘诀 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "2bd96b0d78311f272e19ff9a90bb09e8040e7649ca4c6a5d09198e2baa5d0717"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep004-vocab-011",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 111,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "mean",
+        "zh": "vt.意思是,打算,意味着,对某 人重要"
+      },
+      "payload": {
+        "term": "mean",
+        "ipa": "miːn",
+        "pos": "vt.",
+        "def": "vt.意思是,打算,意味着,对某 人重要",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "004 秘诀 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "2bd96b0d78311f272e19ff9a90bb09e8040e7649ca4c6a5d09198e2baa5d0717"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep004-vocab-012",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 112,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "want",
+        "zh": "想要"
+      },
+      "payload": {
+        "term": "want",
+        "ipa": "wɒnt",
+        "pos": "vt.",
+        "def": "想要",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          1,
+          2
+        ],
+        "gloss": "想要"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "004 秘诀 上.pdf",
+          "half": "up",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "2bd96b0d78311f272e19ff9a90bb09e8040e7649ca4c6a5d09198e2baa5d0717"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "004 秘诀 下.pdf",
+          "half": "down",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "bcc149e049065ce16ed664850d0857dd7b02038f2b1f33b376a7d4191a0451d4"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep004-vocab-013",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 113,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "visit",
+        "zh": "拜访,访问,参观"
+      },
+      "payload": {
+        "term": "visit",
+        "ipa": "ˈvɪzɪt",
+        "pos": "v.",
+        "def": "v.拜访,参观;访问 n.[C]拜访,访问,参观",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "004 秘诀 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "2bd96b0d78311f272e19ff9a90bb09e8040e7649ca4c6a5d09198e2baa5d0717"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep004-vocab-014",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 114,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "o'clock",
+        "zh": "adv.(表示整点)......点钟"
+      },
+      "payload": {
+        "term": "o'clock",
+        "ipa": "əˈklɒk",
+        "pos": "adv.",
+        "def": "adv.(表示整点)......点钟",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "004 秘诀 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "2bd96b0d78311f272e19ff9a90bb09e8040e7649ca4c6a5d09198e2baa5d0717"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep004-vocab-015",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 115,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "teach",
+        "zh": "v.教,讲授,教导"
+      },
+      "payload": {
+        "term": "teach",
+        "ipa": "tiːtʃ",
+        "pos": "v.",
+        "def": "v.教,讲授,教导",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          2,
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "004 秘诀 上.pdf",
+          "half": "up",
+          "pages": [
+            2,
+            3
+          ],
+          "sha256": "2bd96b0d78311f272e19ff9a90bb09e8040e7649ca4c6a5d09198e2baa5d0717"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "004 秘诀 下.pdf",
+          "half": "down",
+          "pages": [
+            2,
+            3
+          ],
+          "sha256": "bcc149e049065ce16ed664850d0857dd7b02038f2b1f33b376a7d4191a0451d4"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep004-vocab-016",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 116,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "live[lɪv] [laɪv]",
+        "zh": "v.居住,生活 adj.活的,生动的,现场直播的"
+      },
+      "payload": {
+        "term": "live[lɪv] [laɪv]",
+        "ipa": "",
+        "pos": "v.",
+        "def": "v.居住,生活 adj.活的,生动的,现场直播的",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "004 秘诀 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "2bd96b0d78311f272e19ff9a90bb09e8040e7649ca4c6a5d09198e2baa5d0717"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "004 秘诀 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "bcc149e049065ce16ed664850d0857dd7b02038f2b1f33b376a7d4191a0451d4"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep004-vocab-017",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 117,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "forever",
+        "zh": "adv.永远"
+      },
+      "payload": {
+        "term": "forever",
+        "ipa": "fərˈevə(r)",
+        "pos": "adv.",
+        "def": "adv.永远",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "004 秘诀 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "2bd96b0d78311f272e19ff9a90bb09e8040e7649ca4c6a5d09198e2baa5d0717"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "004 秘诀 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "bcc149e049065ce16ed664850d0857dd7b02038f2b1f33b376a7d4191a0451d4"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep004-vocab-018",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 118,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "smile",
+        "zh": "笑,微笑"
+      },
+      "payload": {
+        "term": "smile",
+        "ipa": "smaɪ",
+        "pos": "vi.",
+        "def": "vi./n.[C]笑,微笑",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "004 秘诀 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "2bd96b0d78311f272e19ff9a90bb09e8040e7649ca4c6a5d09198e2baa5d0717"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep004-vocab-019",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 119,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "into",
+        "zh": "prep.到......里面,进入,(表示 状态的变化)"
+      },
+      "payload": {
+        "term": "into",
+        "ipa": "ˈɪntuː",
+        "pos": "prep.",
+        "def": "prep.到......里面,进入,(表示 状态的变化)",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "004 秘诀 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "2bd96b0d78311f272e19ff9a90bb09e8040e7649ca4c6a5d09198e2baa5d0717"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep004-vocab-020",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 120,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "ear",
+        "zh": "耳朵"
+      },
+      "payload": {
+        "term": "ear",
+        "ipa": "ɪə",
+        "pos": "n.",
+        "def": "n.[C]耳朵",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "004 秘诀 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "2bd96b0d78311f272e19ff9a90bb09e8040e7649ca4c6a5d09198e2baa5d0717"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep004-vocab-021",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 121,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "nature",
+        "zh": "本质"
+      },
+      "payload": {
+        "term": "nature",
+        "ipa": "ˈneɪtʃə(r)",
+        "pos": "n.",
+        "def": "n.[U]自然界,大自然 [C,U]本性 [sing.]本质",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "004 秘诀 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "2bd96b0d78311f272e19ff9a90bb09e8040e7649ca4c6a5d09198e2baa5d0717"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep004-vocab-022",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 122,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "monkey",
+        "zh": "猴子"
+      },
+      "payload": {
+        "term": "monkey",
+        "ipa": "ˈmʌŋki",
+        "pos": "n.",
+        "def": "n.[C]猴子",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "004 秘诀 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "2bd96b0d78311f272e19ff9a90bb09e8040e7649ca4c6a5d09198e2baa5d0717"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep004-vocab-023",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 123,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "light",
+        "zh": "电灯 adj.轻的,轻柔的,程度轻的,少 量的,浅色的 v.点燃,照亮"
+      },
+      "payload": {
+        "term": "light",
+        "ipa": "laɪt",
+        "pos": "n.",
+        "def": "n.[U]光,光线,光亮;[C]电灯 adj.轻的,轻柔的,程度轻的,少 量的,浅色的 v.点燃,照亮",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "004 秘诀 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "2bd96b0d78311f272e19ff9a90bb09e8040e7649ca4c6a5d09198e2baa5d0717"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep004-vocab-024",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 124,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "practice",
+        "zh": "实践"
+      },
+      "payload": {
+        "term": "practice",
+        "ipa": "ˈpræktɪs",
+        "pos": "v.",
+        "def": "v.(亦作practise)练习 n.[C,U]练习,(医生的)工作地 点[U]实践",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "004 秘诀 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "2bd96b0d78311f272e19ff9a90bb09e8040e7649ca4c6a5d09198e2baa5d0717"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep004-vocab-025",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 125,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "sleep",
+        "zh": "一觉"
+      },
+      "payload": {
+        "term": "sleep",
+        "ipa": "sliː p",
+        "pos": "vi.",
+        "def": "vi./n.[U]睡觉[sing.]一觉",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "004 秘诀 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "2bd96b0d78311f272e19ff9a90bb09e8040e7649ca4c6a5d09198e2baa5d0717"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep004-vocab-026",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 126,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "night",
+        "zh": "晚上,夜晚"
+      },
+      "payload": {
+        "term": "night",
+        "ipa": "naɪt",
+        "pos": "n.",
+        "def": "n.[C,U]晚上,夜晚",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "004 秘诀 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "2bd96b0d78311f272e19ff9a90bb09e8040e7649ca4c6a5d09198e2baa5d0717"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep004-vocab-027",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 127,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "stay",
+        "zh": "逗留"
+      },
+      "payload": {
+        "term": "stay",
+        "ipa": "steɪ",
+        "pos": "vi.",
+        "def": "vi.停留,待 v-link.保持 n.[C]逗留",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "004 秘诀 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "2bd96b0d78311f272e19ff9a90bb09e8040e7649ca4c6a5d09198e2baa5d0717"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep004-vocab-028",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 128,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "change",
+        "zh": "变化,改变 v.变化,改变"
+      },
+      "payload": {
+        "term": "change",
+        "ipa": "tʃeɪndʒ",
+        "pos": "n.",
+        "def": "n.[C,U]变化,改变 v.变化,改变",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "004 秘诀 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "2bd96b0d78311f272e19ff9a90bb09e8040e7649ca4c6a5d09198e2baa5d0717"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep004-vocab-029",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 129,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "sit",
+        "zh": "v.坐 那棵巨大的松树"
+      },
+      "payload": {
+        "term": "sit",
+        "ipa": "sɪt",
+        "pos": "v.",
+        "def": "v.坐 那棵巨大的松树",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "004 秘诀 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "2bd96b0d78311f272e19ff9a90bb09e8040e7649ca4c6a5d09198e2baa5d0717"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep004-vocab-030",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 130,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "voice",
+        "zh": "发言 权;主/被动语态 vt.表达(情感或意见)"
+      },
+      "payload": {
+        "term": "voice",
+        "ipa": "vɔɪs",
+        "pos": "n.",
+        "def": "n.[C,U]声音,嗓音[sing.]发言 权;主/被动语态 vt.表达(情感或意见)",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          4
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "004 秘诀 上.pdf",
+          "half": "up",
+          "pages": [
+            4
+          ],
+          "sha256": "2bd96b0d78311f272e19ff9a90bb09e8040e7649ca4c6a5d09198e2baa5d0717"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep004-vocab-031",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 131,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "think",
+        "zh": "v.认为,想。思考"
+      },
+      "payload": {
+        "term": "think",
+        "ipa": "θɪŋk",
+        "pos": "v.",
+        "def": "v.认为,想。思考",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          4
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "004 秘诀 上.pdf",
+          "half": "up",
+          "pages": [
+            4
+          ],
+          "sha256": "2bd96b0d78311f272e19ff9a90bb09e8040e7649ca4c6a5d09198e2baa5d0717"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep004-vocab-032",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 132,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "cheer",
+        "zh": "欢乐(或幸福) 的气氛 做 个手势 突然"
+      },
+      "payload": {
+        "term": "cheer",
+        "ipa": "tʃɪə(r)",
+        "pos": "v.",
+        "def": "v.欢呼,喝彩,使高兴,鼓舞 n.[C]欢呼声 [U]欢乐(或幸福) 的气氛 做 个手势 突然",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          1,
+          4
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "004 秘诀 上.pdf",
+          "half": "up",
+          "pages": [
+            1,
+            4
+          ],
+          "sha256": "2bd96b0d78311f272e19ff9a90bb09e8040e7649ca4c6a5d09198e2baa5d0717"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "004 秘诀 下.pdf",
+          "half": "down",
+          "pages": [
+            1,
+            4
+          ],
+          "sha256": "bcc149e049065ce16ed664850d0857dd7b02038f2b1f33b376a7d4191a0451d4"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep004-vocab-033",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 133,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "shout",
+        "zh": "呼喊,叫喊"
+      },
+      "payload": {
+        "term": "shout",
+        "ipa": "ʃaʊt",
+        "pos": "v.",
+        "def": "v.呼叫,喊叫 n.[C]呼喊,叫喊",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "004 秘诀 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "bcc149e049065ce16ed664850d0857dd7b02038f2b1f33b376a7d4191a0451d4"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep004-vocab-034",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 134,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "stop",
+        "zh": "车站,停止 v.停止,阻止,逗留"
+      },
+      "payload": {
+        "term": "stop",
+        "ipa": "stɒp",
+        "pos": "n.",
+        "def": "n.[C]车站,停止 v.停止,阻止,逗留",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "004 秘诀 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "bcc149e049065ce16ed664850d0857dd7b02038f2b1f33b376a7d4191a0451d4"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep004-vocab-035",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 135,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "quick",
+        "zh": "adj.快的,迅速的,敏捷的"
+      },
+      "payload": {
+        "term": "quick",
+        "ipa": "kwɪk",
+        "pos": "adj.",
+        "def": "adj.快的,迅速的,敏捷的",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "004 秘诀 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "bcc149e049065ce16ed664850d0857dd7b02038f2b1f33b376a7d4191a0451d4"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep004-vocab-036",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 136,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "turn",
+        "zh": "轮流圈国"
+      },
+      "payload": {
+        "term": "turn",
+        "ipa": "tɜː (r)n",
+        "pos": "v.",
+        "def": "v.转向,翻圈v.-link.(使)变成 n.[C]轮流圈国",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "004 秘诀 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "bcc149e049065ce16ed664850d0857dd7b02038f2b1f33b376a7d4191a0451d4"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep004-vocab-037",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 137,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "back",
+        "zh": "后面,背部 adj.后面的 adv.回原处,向后地"
+      },
+      "payload": {
+        "term": "back",
+        "ipa": "bæk",
+        "pos": "n.",
+        "def": "n.[C]后面,背部 adj.后面的 adv.回原处,向后地",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "004 秘诀 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "bcc149e049065ce16ed664850d0857dd7b02038f2b1f33b376a7d4191a0451d4"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep004-vocab-038",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 138,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "in",
+        "zh": "在里面；进入"
+      },
+      "payload": {
+        "term": "in",
+        "ipa": "ɪn",
+        "pos": "prep.",
+        "def": "在里面；进入",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ],
+        "gloss": "在里面；进入"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "004 秘诀 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "bcc149e049065ce16ed664850d0857dd7b02038f2b1f33b376a7d4191a0451d4"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep004-vocab-039",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 139,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "himself",
+        "zh": "pron.他自己"
+      },
+      "payload": {
+        "term": "himself",
+        "ipa": "hɪmˈself",
+        "pos": "pron.",
+        "def": "pron.他自己",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "004 秘诀 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "bcc149e049065ce16ed664850d0857dd7b02038f2b1f33b376a7d4191a0451d4"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep004-vocab-040",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 140,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "eye",
+        "zh": "眼睛"
+      },
+      "payload": {
+        "term": "eye",
+        "ipa": "aɪ",
+        "pos": "n.",
+        "def": "n.[C]眼睛",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "004 秘诀 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "bcc149e049065ce16ed664850d0857dd7b02038f2b1f33b376a7d4191a0451d4"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep004-vocab-041",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 141,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "inside",
+        "zh": "里面"
+      },
+      "payload": {
+        "term": "inside",
+        "ipa": "ˌɪnˈsaɪd",
+        "pos": "adv.",
+        "def": "里面",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ],
+        "gloss": "里面"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "004 秘诀 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "bcc149e049065ce16ed664850d0857dd7b02038f2b1f33b376a7d4191a0451d4"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep004-vocab-042",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 142,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "wait",
+        "zh": "v.等待,等候"
+      },
+      "payload": {
+        "term": "wait",
+        "ipa": "weɪt",
+        "pos": "v.",
+        "def": "v.等待,等候",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "004 秘诀 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "bcc149e049065ce16ed664850d0857dd7b02038f2b1f33b376a7d4191a0451d4"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep004-vocab-043",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 143,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "leave",
+        "zh": "休假"
+      },
+      "payload": {
+        "term": "leave",
+        "ipa": "liːv",
+        "pos": "v.",
+        "def": "v.离开,留下,使处于...... n.[U]休假",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "004 秘诀 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "bcc149e049065ce16ed664850d0857dd7b02038f2b1f33b376a7d4191a0451d4"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep004-vocab-044",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 144,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "sorry",
+        "zh": "adj.抱歉的,难过的,惋惜的"
+      },
+      "payload": {
+        "term": "sorry",
+        "ipa": "ˈsɒri",
+        "pos": "adj.",
+        "def": "adj.抱歉的,难过的,惋惜的",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "004 秘诀 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "bcc149e049065ce16ed664850d0857dd7b02038f2b1f33b376a7d4191a0451d4"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep004-vocab-045",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 145,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "say",
+        "zh": "v.说,讲"
+      },
+      "payload": {
+        "term": "say",
+        "ipa": "seɪ",
+        "pos": "v.",
+        "def": "v.说,讲",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "004 秘诀 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "bcc149e049065ce16ed664850d0857dd7b02038f2b1f33b376a7d4191a0451d4"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep004-vocab-046",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 146,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "keep",
+        "zh": "保持；保留"
+      },
+      "payload": {
+        "term": "keep",
+        "ipa": "kiːp",
+        "pos": "v.",
+        "def": "保持；保留",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ],
+        "gloss": "保持；保留"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "004 秘诀 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "bcc149e049065ce16ed664850d0857dd7b02038f2b1f33b376a7d4191a0451d4"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep004-vocab-047",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 147,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "talk",
+        "zh": "n.说话,交谈,演讲 vi.说话,交谈"
+      },
+      "payload": {
+        "term": "talk",
+        "ipa": "tɔːk",
+        "pos": "n.",
+        "def": "n.说话,交谈,演讲 vi.说话,交谈",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "004 秘诀 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "bcc149e049065ce16ed664850d0857dd7b02038f2b1f33b376a7d4191a0451d4"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep004-vocab-048",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 148,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "see",
+        "zh": "v.理解,明白,观看,会见,看 见,送别,确保"
+      },
+      "payload": {
+        "term": "see",
+        "ipa": "siː",
+        "pos": "v.",
+        "def": "v.理解,明白,观看,会见,看 见,送别,确保",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "004 秘诀 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "bcc149e049065ce16ed664850d0857dd7b02038f2b1f33b376a7d4191a0451d4"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep004-vocab-049",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 149,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "do",
+        "zh": "v.做,干 aux v.构成疑问句和否定句"
+      },
+      "payload": {
+        "term": "do",
+        "ipa": "duː",
+        "pos": "v.",
+        "def": "v.做,干 aux v.构成疑问句和否定句",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "004 秘诀 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "bcc149e049065ce16ed664850d0857dd7b02038f2b1f33b376a7d4191a0451d4"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep004-vocab-050",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 150,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "know",
+        "zh": "v.知道,了解"
+      },
+      "payload": {
+        "term": "know",
+        "ipa": "nəʊ",
+        "pos": "v.",
+        "def": "v.知道,了解",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "004 秘诀 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "bcc149e049065ce16ed664850d0857dd7b02038f2b1f33b376a7d4191a0451d4"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep004-vocab-051",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 151,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "safe",
+        "zh": "保险箱"
+      },
+      "payload": {
+        "term": "safe",
+        "ipa": "seɪf",
+        "pos": "adj.",
+        "def": "adj.安全的,无危险的;谨慎的 n.[C]保险箱",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "004 秘诀 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "bcc149e049065ce16ed664850d0857dd7b02038f2b1f33b376a7d4191a0451d4"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep004-vocab-052",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 152,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "must",
+        "zh": "modal v.必须,一定"
+      },
+      "payload": {
+        "term": "must",
+        "ipa": "mʌst",
+        "pos": "",
+        "def": "modal v.必须,一定",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "004 秘诀 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "bcc149e049065ce16ed664850d0857dd7b02038f2b1f33b376a7d4191a0451d4"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep004-vocab-053",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 153,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "start",
+        "zh": "起点,开端"
+      },
+      "payload": {
+        "term": "start",
+        "ipa": "stɑː (r)t",
+        "pos": "v.",
+        "def": "v.开始,着手,创办 n.[C]起点,开端",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "004 秘诀 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "bcc149e049065ce16ed664850d0857dd7b02038f2b1f33b376a7d4191a0451d4"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep004-vocab-054",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 154,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "cry",
+        "zh": "叫喊"
+      },
+      "payload": {
+        "term": "cry",
+        "ipa": "kraɪ",
+        "pos": "v.",
+        "def": "v./n.[sing.]哭 [C]叫喊",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "004 秘诀 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "bcc149e049065ce16ed664850d0857dd7b02038f2b1f33b376a7d4191a0451d4"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep004-vocab-055",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 155,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "home",
+        "zh": "家,养老院 adv.到家,在家"
+      },
+      "payload": {
+        "term": "home",
+        "ipa": "həʊm",
+        "pos": "",
+        "def": "大叫。长臂猿跑向了他。“大王!不好了!” n.[C,U]家,养老院 adv.到家,在家",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "004 秘诀 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "bcc149e049065ce16ed664850d0857dd7b02038f2b1f33b376a7d4191a0451d4"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep004-vocab-056",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 156,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "tell",
+        "zh": "vt.讲述,告诉,分辨,辨别"
+      },
+      "payload": {
+        "term": "tell",
+        "ipa": "tel",
+        "pos": "vt.",
+        "def": "vt.讲述,告诉,分辨,辨别",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "004 秘诀 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "bcc149e049065ce16ed664850d0857dd7b02038f2b1f33b376a7d4191a0451d4"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep004-vocab-057",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 157,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "anyone",
+        "zh": "pron.任何人"
+      },
+      "payload": {
+        "term": "anyone",
+        "ipa": "ˈeniwʌn",
+        "pos": "pron.",
+        "def": "pron.任何人",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "004 秘诀 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "bcc149e049065ce16ed664850d0857dd7b02038f2b1f33b376a7d4191a0451d4"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep004-vocab-058",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 158,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "hang",
+        "zh": "v.悬挂,垂下;绞死"
+      },
+      "payload": {
+        "term": "hang",
+        "ipa": "hæŋ",
+        "pos": "v.",
+        "def": "v.悬挂,垂下;绞死",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "004 秘诀 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "bcc149e049065ce16ed664850d0857dd7b02038f2b1f33b376a7d4191a0451d4"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep004-vocab-059",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 159,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "cloud",
+        "zh": "云,云朵"
+      },
+      "payload": {
+        "term": "cloud",
+        "ipa": "klaʊd",
+        "pos": "n.",
+        "def": "n.[C,U]云,云朵",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "004 秘诀 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "bcc149e049065ce16ed664850d0857dd7b02038f2b1f33b376a7d4191a0451d4"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep004-vocab-060",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 160,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "journey",
+        "zh": "(尤指长途)旅行,行程"
+      },
+      "payload": {
+        "term": "journey",
+        "ipa": "ˈdʒɜː(r)ni",
+        "pos": "n.",
+        "def": "n.[C](尤指长途)旅行,行程",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "004 秘诀 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "bcc149e049065ce16ed664850d0857dd7b02038f2b1f33b376a7d4191a0451d4"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep004-vocab-061",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 161,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "arrive",
+        "zh": "vi.到达"
+      },
+      "payload": {
+        "term": "arrive",
+        "ipa": "əˈraɪv",
+        "pos": "vi.",
+        "def": "vi.到达",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "004 秘诀 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "bcc149e049065ce16ed664850d0857dd7b02038f2b1f33b376a7d4191a0451d4"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep004-vocab-062",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 162,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "return",
+        "zh": "返回"
+      },
+      "payload": {
+        "term": "return",
+        "ipa": "rɪˈtɜː(r)n",
+        "pos": "vt.",
+        "def": "vt.归还 vi.回来,返回 n.[C,U]回报[sing.]返回",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "004 秘诀 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "bcc149e049065ce16ed664850d0857dd7b02038f2b1f33b376a7d4191a0451d4"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep004-vocab-063",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 163,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "call",
+        "zh": "电话,叫声圈国"
+      },
+      "payload": {
+        "term": "call",
+        "ipa": "kɔː l",
+        "pos": "v.",
+        "def": "v.给......打电话,把......叫作,呼 喊 n.[C]电话,叫声圈国",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "004 秘诀 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "bcc149e049065ce16ed664850d0857dd7b02038f2b1f33b376a7d4191a0451d4"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep004-vocab-064",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 164,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "terrible",
+        "zh": "adj.非常讨厌的,非常严重的,可 怕的,糟糕的"
+      },
+      "payload": {
+        "term": "terrible",
+        "ipa": "ˈterəbl",
+        "pos": "adj.",
+        "def": "adj.非常讨厌的,非常严重的,可 怕的,糟糕的",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "004 秘诀 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "bcc149e049065ce16ed664850d0857dd7b02038f2b1f33b376a7d4191a0451d4"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep004-vocab-065",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 165,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "happen",
+        "zh": "vi.发生,出现,碰巧"
+      },
+      "payload": {
+        "term": "happen",
+        "ipa": "ˈhæpən",
+        "pos": "vi.",
+        "def": "vi.发生,出现,碰巧",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "004 秘诀 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "bcc149e049065ce16ed664850d0857dd7b02038f2b1f33b376a7d4191a0451d4"
+        }
+      ],
+      "review_status": "machine_verified"
+    }
+  ],
+  "teacher_guide": null,
+  "review": {
+    "status": "draft",
+    "reviewed_at": null,
+    "card_stats": {
+      "total": 70,
+      "sentence_choice": 5,
+      "word_review": 65,
+      "machine_verified": 66,
+      "assistant_reviewed": 4,
+      "verified": 70,
+      "needs_review": 0
+    }
+  },
+  "generated_at": "2026-08-31T04:49:34.903404+00:00"
+}

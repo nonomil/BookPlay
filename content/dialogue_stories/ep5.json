@@ -1,0 +1,7244 @@
+{
+  "schema_version": 1,
+  "story_id": "adv_ep5",
+  "episode": 5,
+  "title": {
+    "en": "The Demon of Chaos",
+    "zh": "西游记 第5集"
+  },
+  "source_note": "台词英文本来自 data/08 原文台词本与外挂英文字幕；词汇短语来自 data/05 中英对照词汇；中文句译按英文逐句对照。个人使用。",
+  "audio": "assets/lf_ep5/audio_ep5.mp3",
+  "video": "assets/video/ep5.mp4",
+  "frames": [
+    "assets/adv_frames/ep5/f0.jpg",
+    "assets/adv_frames/ep5/f1.jpg",
+    "assets/adv_frames/ep5/f2.jpg",
+    "assets/adv_frames/ep5/f3.jpg"
+  ],
+  "vocab_pool": {
+    "gibbon": "长臂猿",
+    "gathered": "采集",
+    "apes": "猿",
+    "demon": "妖怪",
+    "powerful": "强大的",
+    "fight": "打架",
+    "learned": "学会了",
+    "afraid": "害怕的",
+    "leaped": "跃入",
+    "king": "国王；大王",
+    "mountain": "山",
+    "cave": "洞穴",
+    "fruit": "果实",
+    "monkey": "猴子",
+    "returned": "返回",
+    "swung": "荡",
+    "hair": "毫毛；头发",
+    "magic": "魔法；神奇的",
+    "spell": "咒语",
+    "protect": "保护"
+  },
+  "nodes": [
+    {
+      "node_id": "n001",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"What happened here?\" Wukong asked the gibbon.",
+      "text_zh": "\"这里发生了什么?\"悟空问着那只长臂猿。",
+      "illustration": "assets/adv_frames/ep5/f1.jpg",
+      "audio_start": 11.267,
+      "audio_end": 17.649,
+      "vocab": [
+        {
+          "term": "gibbon",
+          "zh": "长臂猿",
+          "mode": "learn",
+          "phrase_en": "What happened here?\" Wukong asked the gibbon",
+          "phrase_zh": "\"这里发生了什么?\"悟空问着那只长臂猿。",
+          "gloss": "长臂猿"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "happen",
+          "ipa": "ˈhæpən",
+          "def": "vi.发生，出现，碰巧",
+          "zh": "发生"
+        },
+        {
+          "term": "here",
+          "ipa": "hɪə(r)",
+          "def": "adv.这就是，在这里",
+          "zh": "这就是"
+        },
+        {
+          "term": "ask",
+          "ipa": "ɑːsk",
+          "def": "v.请求，要求，询问",
+          "zh": "请求"
+        },
+        {
+          "term": "monkey",
+          "ipa": "ˈmʌŋki",
+          "def": "n.[C]猴子",
+          "zh": "猴子"
+        },
+        {
+          "term": "look",
+          "ipa": "lʊk",
+          "def": "vi.看v.-link.看上去n.[C]看，注视，外表，表情",
+          "zh": "看"
+        },
+        {
+          "term": "fight",
+          "ipa": "faɪt",
+          "def": "v./n.[C]打架，战斗v.与……作斗争",
+          "zh": "打架"
+        },
+        {
+          "term": "steal",
+          "ipa": "stiːl",
+          "def": "v.偷，窃取",
+          "zh": "偷"
+        },
+        {
+          "term": "who",
+          "ipa": "huː",
+          "def": "pron.谁，什么人",
+          "zh": "谁"
+        },
+        {
+          "term": "live",
+          "ipa": "lɪv][laɪv",
+          "def": "v.居住，生活adj.活的，生动的，现场直播的",
+          "zh": "居住"
+        },
+        {
+          "term": "come",
+          "ipa": "kʌm",
+          "def": "vi.来，来到v.-link.成为，变成，变得",
+          "zh": "来"
+        },
+        {
+          "term": "north",
+          "ipa": "/nɔːrθ",
+          "def": "n.北，北方adj.北方的adv.向北",
+          "zh": "北"
+        },
+        {
+          "term": "wait",
+          "ipa": "weɪt",
+          "def": "v.等待，等候",
+          "zh": "等待"
+        },
+        {
+          "term": "order",
+          "ipa": "ˈɔː(r)də(r)",
+          "def": "",
+          "zh": "order"
+        }
+      ]
+    },
+    {
+      "node_id": "n002",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "A few more monkeys and apes gathered around Sun Wukong and the gibbon.",
+      "text_zh": "又有几只猴子和类人猿围聚在孙悟空和长臂猿周围。",
+      "illustration": "assets/adv_frames/ep5/f2.jpg",
+      "audio_start": 17.65,
+      "audio_end": 22.233,
+      "vocab": [
+        {
+          "term": "gathered",
+          "zh": "采集",
+          "mode": "learn",
+          "phrase_en": "and apes gathered around Sun",
+          "phrase_zh": "以及类人猿们聚集在孙身边",
+          "gloss": "聚集"
+        },
+        {
+          "term": "gibbon",
+          "zh": "长臂猿",
+          "mode": "test",
+          "options": [
+            "荡",
+            "长臂猿",
+            "打架",
+            "返回"
+          ],
+          "answer": 1,
+          "phrase_en": "and the gibbon",
+          "phrase_zh": "与长臂猿",
+          "gloss": "长臂猿"
+        },
+        {
+          "term": "apes",
+          "zh": "猿",
+          "mode": "learn",
+          "phrase_en": "monkeys and apes gathered around",
+          "phrase_zh": "猴子与类人猿围聚在一起",
+          "gloss": "猿"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "happen",
+          "ipa": "ˈhæpən",
+          "def": "vi.发生，出现，碰巧",
+          "zh": "发生"
+        },
+        {
+          "term": "here",
+          "ipa": "hɪə(r)",
+          "def": "adv.这就是，在这里",
+          "zh": "这就是"
+        },
+        {
+          "term": "ask",
+          "ipa": "ɑːsk",
+          "def": "v.请求，要求，询问",
+          "zh": "请求"
+        },
+        {
+          "term": "monkey",
+          "ipa": "ˈmʌŋki",
+          "def": "n.[C]猴子",
+          "zh": "猴子"
+        },
+        {
+          "term": "look",
+          "ipa": "lʊk",
+          "def": "vi.看v.-link.看上去n.[C]看，注视，外表，表情",
+          "zh": "看"
+        },
+        {
+          "term": "fight",
+          "ipa": "faɪt",
+          "def": "v./n.[C]打架，战斗v.与……作斗争",
+          "zh": "打架"
+        },
+        {
+          "term": "steal",
+          "ipa": "stiːl",
+          "def": "v.偷，窃取",
+          "zh": "偷"
+        },
+        {
+          "term": "who",
+          "ipa": "huː",
+          "def": "pron.谁，什么人",
+          "zh": "谁"
+        },
+        {
+          "term": "live",
+          "ipa": "lɪv][laɪv",
+          "def": "v.居住，生活adj.活的，生动的，现场直播的",
+          "zh": "居住"
+        },
+        {
+          "term": "come",
+          "ipa": "kʌm",
+          "def": "vi.来，来到v.-link.成为，变成，变得",
+          "zh": "来"
+        },
+        {
+          "term": "north",
+          "ipa": "/nɔːrθ",
+          "def": "n.北，北方adj.北方的adv.向北",
+          "zh": "北"
+        },
+        {
+          "term": "wait",
+          "ipa": "weɪt",
+          "def": "v.等待，等候",
+          "zh": "等待"
+        },
+        {
+          "term": "order",
+          "ipa": "ˈɔː(r)də(r)",
+          "def": "",
+          "zh": "order"
+        }
+      ]
+    },
+    {
+      "node_id": "n003",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "They looked scared.",
+      "text_zh": "他们看起来很害怕。",
+      "illustration": "assets/adv_frames/ep5/f3.jpg",
+      "audio_start": 22.234,
+      "audio_end": 24.188,
+      "vocab": [],
+      "page_words": [
+        {
+          "term": "happen",
+          "ipa": "ˈhæpən",
+          "def": "vi.发生，出现，碰巧",
+          "zh": "发生"
+        },
+        {
+          "term": "here",
+          "ipa": "hɪə(r)",
+          "def": "adv.这就是，在这里",
+          "zh": "这就是"
+        },
+        {
+          "term": "ask",
+          "ipa": "ɑːsk",
+          "def": "v.请求，要求，询问",
+          "zh": "请求"
+        },
+        {
+          "term": "monkey",
+          "ipa": "ˈmʌŋki",
+          "def": "n.[C]猴子",
+          "zh": "猴子"
+        },
+        {
+          "term": "look",
+          "ipa": "lʊk",
+          "def": "vi.看v.-link.看上去n.[C]看，注视，外表，表情",
+          "zh": "看"
+        },
+        {
+          "term": "fight",
+          "ipa": "faɪt",
+          "def": "v./n.[C]打架，战斗v.与……作斗争",
+          "zh": "打架"
+        },
+        {
+          "term": "steal",
+          "ipa": "stiːl",
+          "def": "v.偷，窃取",
+          "zh": "偷"
+        },
+        {
+          "term": "who",
+          "ipa": "huː",
+          "def": "pron.谁，什么人",
+          "zh": "谁"
+        },
+        {
+          "term": "live",
+          "ipa": "lɪv][laɪv",
+          "def": "v.居住，生活adj.活的，生动的，现场直播的",
+          "zh": "居住"
+        },
+        {
+          "term": "come",
+          "ipa": "kʌm",
+          "def": "vi.来，来到v.-link.成为，变成，变得",
+          "zh": "来"
+        },
+        {
+          "term": "north",
+          "ipa": "/nɔːrθ",
+          "def": "n.北，北方adj.北方的adv.向北",
+          "zh": "北"
+        },
+        {
+          "term": "wait",
+          "ipa": "weɪt",
+          "def": "v.等待，等候",
+          "zh": "等待"
+        },
+        {
+          "term": "order",
+          "ipa": "ˈɔː(r)də(r)",
+          "def": "",
+          "zh": "order"
+        }
+      ]
+    },
+    {
+      "node_id": "n004",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"A demon attacked us,\" said the gibbon.",
+      "text_zh": "\"有个恶魔袭击了我们,\"长臂猿说道。",
+      "illustration": "assets/adv_frames/ep5/f0.jpg",
+      "audio_start": 24.189,
+      "audio_end": 27.056,
+      "vocab": [
+        {
+          "term": "gibbon",
+          "zh": "长臂猿",
+          "mode": "review",
+          "options": [
+            "gathered",
+            "powerful",
+            "gibbon",
+            "mountain"
+          ],
+          "answer": 2,
+          "phrase_en": "said the gibbon",
+          "phrase_zh": ",长臂猿说道",
+          "gloss": "长臂猿"
+        },
+        {
+          "term": "demon",
+          "zh": "魔鬼,恶魔",
+          "mode": "learn",
+          "phrase_en": "A demon attacked us.",
+          "phrase_zh": "一个恶魔袭击了我们",
+          "gloss": "恶魔",
+          "source": "official_words"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "happen",
+          "ipa": "ˈhæpən",
+          "def": "vi.发生，出现，碰巧",
+          "zh": "发生"
+        },
+        {
+          "term": "here",
+          "ipa": "hɪə(r)",
+          "def": "adv.这就是，在这里",
+          "zh": "这就是"
+        },
+        {
+          "term": "ask",
+          "ipa": "ɑːsk",
+          "def": "v.请求，要求，询问",
+          "zh": "请求"
+        },
+        {
+          "term": "monkey",
+          "ipa": "ˈmʌŋki",
+          "def": "n.[C]猴子",
+          "zh": "猴子"
+        },
+        {
+          "term": "look",
+          "ipa": "lʊk",
+          "def": "vi.看v.-link.看上去n.[C]看，注视，外表，表情",
+          "zh": "看"
+        },
+        {
+          "term": "fight",
+          "ipa": "faɪt",
+          "def": "v./n.[C]打架，战斗v.与……作斗争",
+          "zh": "打架"
+        },
+        {
+          "term": "steal",
+          "ipa": "stiːl",
+          "def": "v.偷，窃取",
+          "zh": "偷"
+        },
+        {
+          "term": "who",
+          "ipa": "huː",
+          "def": "pron.谁，什么人",
+          "zh": "谁"
+        },
+        {
+          "term": "live",
+          "ipa": "lɪv][laɪv",
+          "def": "v.居住，生活adj.活的，生动的，现场直播的",
+          "zh": "居住"
+        },
+        {
+          "term": "come",
+          "ipa": "kʌm",
+          "def": "vi.来，来到v.-link.成为，变成，变得",
+          "zh": "来"
+        },
+        {
+          "term": "north",
+          "ipa": "/nɔːrθ",
+          "def": "n.北，北方adj.北方的adv.向北",
+          "zh": "北"
+        },
+        {
+          "term": "wait",
+          "ipa": "weɪt",
+          "def": "v.等待，等候",
+          "zh": "等待"
+        },
+        {
+          "term": "order",
+          "ipa": "ˈɔː(r)də(r)",
+          "def": "",
+          "zh": "order"
+        }
+      ]
+    },
+    {
+      "node_id": "n005",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"We tried to fight him, but he was too powerful. He stole most of our things and kidnapped many of us.\"",
+      "text_zh": "\"我们曾试图对抗他,但他实力过于强大。他偷走了我们大部分财物,并绑架了我们中的许多人。\"",
+      "illustration": "assets/adv_frames/ep5/f1.jpg",
+      "audio_start": 27.057,
+      "audio_end": 34.163,
+      "vocab": [
+        {
+          "term": "kidnap",
+          "zh": "绑架,诱拐",
+          "mode": "learn",
+          "phrase_en": "He stole most of our things and kidnapped many of us.",
+          "phrase_zh": "绑架,诱拐",
+          "source": "official_words"
+        },
+        {
+          "term": "powerful",
+          "zh": "强大的",
+          "mode": "learn",
+          "phrase_en": "but he was too powerful",
+          "phrase_zh": "但他实力过于强大",
+          "gloss": "强大的"
+        },
+        {
+          "term": "fight",
+          "zh": "打架",
+          "mode": "learn",
+          "phrase_en": "We tried to fight him",
+          "phrase_zh": "我们试图与他对抗",
+          "ipa": "faɪt",
+          "pos": "v.",
+          "def": "v./n.[C]打架，战斗v.与……作斗争",
+          "gloss": "打斗"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "happen",
+          "ipa": "ˈhæpən",
+          "def": "vi.发生，出现，碰巧",
+          "zh": "发生"
+        },
+        {
+          "term": "here",
+          "ipa": "hɪə(r)",
+          "def": "adv.这就是，在这里",
+          "zh": "这就是"
+        },
+        {
+          "term": "ask",
+          "ipa": "ɑːsk",
+          "def": "v.请求，要求，询问",
+          "zh": "请求"
+        },
+        {
+          "term": "monkey",
+          "ipa": "ˈmʌŋki",
+          "def": "n.[C]猴子",
+          "zh": "猴子"
+        },
+        {
+          "term": "look",
+          "ipa": "lʊk",
+          "def": "vi.看v.-link.看上去n.[C]看，注视，外表，表情",
+          "zh": "看"
+        },
+        {
+          "term": "fight",
+          "ipa": "faɪt",
+          "def": "v./n.[C]打架，战斗v.与……作斗争",
+          "zh": "打架"
+        },
+        {
+          "term": "steal",
+          "ipa": "stiːl",
+          "def": "v.偷，窃取",
+          "zh": "偷"
+        },
+        {
+          "term": "who",
+          "ipa": "huː",
+          "def": "pron.谁，什么人",
+          "zh": "谁"
+        },
+        {
+          "term": "live",
+          "ipa": "lɪv][laɪv",
+          "def": "v.居住，生活adj.活的，生动的，现场直播的",
+          "zh": "居住"
+        },
+        {
+          "term": "come",
+          "ipa": "kʌm",
+          "def": "vi.来，来到v.-link.成为，变成，变得",
+          "zh": "来"
+        },
+        {
+          "term": "north",
+          "ipa": "/nɔːrθ",
+          "def": "n.北，北方adj.北方的adv.向北",
+          "zh": "北"
+        },
+        {
+          "term": "wait",
+          "ipa": "weɪt",
+          "def": "v.等待，等候",
+          "zh": "等待"
+        },
+        {
+          "term": "order",
+          "ipa": "ˈɔː(r)də(r)",
+          "def": "",
+          "zh": "order"
+        }
+      ]
+    },
+    {
+      "node_id": "n006",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "Wukong was furious.",
+      "text_zh": "悟空勃然大怒。",
+      "illustration": "assets/adv_frames/ep5/f2.jpg",
+      "audio_start": 34.164,
+      "audio_end": 36.49,
+      "vocab": [
+        {
+          "term": "furious",
+          "zh": "非常愤怒的",
+          "mode": "learn",
+          "phrase_en": "Wukong was furious.",
+          "phrase_zh": "非常愤怒的",
+          "source": "official_words"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "happen",
+          "ipa": "ˈhæpən",
+          "def": "vi.发生，出现，碰巧",
+          "zh": "发生"
+        },
+        {
+          "term": "here",
+          "ipa": "hɪə(r)",
+          "def": "adv.这就是，在这里",
+          "zh": "这就是"
+        },
+        {
+          "term": "ask",
+          "ipa": "ɑːsk",
+          "def": "v.请求，要求，询问",
+          "zh": "请求"
+        },
+        {
+          "term": "monkey",
+          "ipa": "ˈmʌŋki",
+          "def": "n.[C]猴子",
+          "zh": "猴子"
+        },
+        {
+          "term": "look",
+          "ipa": "lʊk",
+          "def": "vi.看v.-link.看上去n.[C]看，注视，外表，表情",
+          "zh": "看"
+        },
+        {
+          "term": "fight",
+          "ipa": "faɪt",
+          "def": "v./n.[C]打架，战斗v.与……作斗争",
+          "zh": "打架"
+        },
+        {
+          "term": "steal",
+          "ipa": "stiːl",
+          "def": "v.偷，窃取",
+          "zh": "偷"
+        },
+        {
+          "term": "who",
+          "ipa": "huː",
+          "def": "pron.谁，什么人",
+          "zh": "谁"
+        },
+        {
+          "term": "live",
+          "ipa": "lɪv][laɪv",
+          "def": "v.居住，生活adj.活的，生动的，现场直播的",
+          "zh": "居住"
+        },
+        {
+          "term": "come",
+          "ipa": "kʌm",
+          "def": "vi.来，来到v.-link.成为，变成，变得",
+          "zh": "来"
+        },
+        {
+          "term": "north",
+          "ipa": "/nɔːrθ",
+          "def": "n.北，北方adj.北方的adv.向北",
+          "zh": "北"
+        },
+        {
+          "term": "wait",
+          "ipa": "weɪt",
+          "def": "v.等待，等候",
+          "zh": "等待"
+        },
+        {
+          "term": "order",
+          "ipa": "ˈɔː(r)də(r)",
+          "def": "",
+          "zh": "order"
+        }
+      ]
+    },
+    {
+      "node_id": "n007",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"Who is he? Where does he live?\"",
+      "text_zh": "\"他是谁?他住在哪里?\"",
+      "illustration": "assets/adv_frames/ep5/f3.jpg",
+      "audio_start": 36.491,
+      "audio_end": 39.071,
+      "vocab": [],
+      "page_words": [
+        {
+          "term": "happen",
+          "ipa": "ˈhæpən",
+          "def": "vi.发生，出现，碰巧",
+          "zh": "发生"
+        },
+        {
+          "term": "here",
+          "ipa": "hɪə(r)",
+          "def": "adv.这就是，在这里",
+          "zh": "这就是"
+        },
+        {
+          "term": "ask",
+          "ipa": "ɑːsk",
+          "def": "v.请求，要求，询问",
+          "zh": "请求"
+        },
+        {
+          "term": "monkey",
+          "ipa": "ˈmʌŋki",
+          "def": "n.[C]猴子",
+          "zh": "猴子"
+        },
+        {
+          "term": "look",
+          "ipa": "lʊk",
+          "def": "vi.看v.-link.看上去n.[C]看，注视，外表，表情",
+          "zh": "看"
+        },
+        {
+          "term": "fight",
+          "ipa": "faɪt",
+          "def": "v./n.[C]打架，战斗v.与……作斗争",
+          "zh": "打架"
+        },
+        {
+          "term": "steal",
+          "ipa": "stiːl",
+          "def": "v.偷，窃取",
+          "zh": "偷"
+        },
+        {
+          "term": "who",
+          "ipa": "huː",
+          "def": "pron.谁，什么人",
+          "zh": "谁"
+        },
+        {
+          "term": "live",
+          "ipa": "lɪv][laɪv",
+          "def": "v.居住，生活adj.活的，生动的，现场直播的",
+          "zh": "居住"
+        },
+        {
+          "term": "come",
+          "ipa": "kʌm",
+          "def": "vi.来，来到v.-link.成为，变成，变得",
+          "zh": "来"
+        },
+        {
+          "term": "north",
+          "ipa": "/nɔːrθ",
+          "def": "n.北，北方adj.北方的adv.向北",
+          "zh": "北"
+        },
+        {
+          "term": "wait",
+          "ipa": "weɪt",
+          "def": "v.等待，等候",
+          "zh": "等待"
+        },
+        {
+          "term": "order",
+          "ipa": "ˈɔː(r)də(r)",
+          "def": "",
+          "zh": "order"
+        }
+      ]
+    },
+    {
+      "node_id": "n008",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"He is called the Demon of Chaos,\" said the gibbon.",
+      "text_zh": "\"他被称为'混沌魔',\"长臂猿说道。",
+      "illustration": "assets/adv_frames/ep5/f0.jpg",
+      "audio_start": 39.072,
+      "audio_end": 42.588,
+      "vocab": [
+        {
+          "term": "chaos",
+          "zh": "混乱,杂乱的一团",
+          "mode": "learn",
+          "phrase_en": "He is called the Demon of Chaos.",
+          "phrase_zh": "混乱,杂乱的一团",
+          "source": "official_words"
+        },
+        {
+          "term": "gibbon",
+          "zh": "长臂猿",
+          "mode": "review",
+          "options": [
+            "returned",
+            "gibbon",
+            "hair",
+            "monkey"
+          ],
+          "answer": 1,
+          "phrase_en": "said the gibbon",
+          "phrase_zh": ",长臂猿说道",
+          "gloss": "长臂猿"
+        },
+        {
+          "term": "demon",
+          "zh": "妖怪",
+          "mode": "test",
+          "options": [
+            "学会了",
+            "长臂猿",
+            "妖怪",
+            "跃入"
+          ],
+          "answer": 2,
+          "phrase_en": "A demon attacked us",
+          "phrase_zh": "一个恶魔袭击了我们",
+          "gloss": "恶魔"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "happen",
+          "ipa": "ˈhæpən",
+          "def": "vi.发生，出现，碰巧",
+          "zh": "发生"
+        },
+        {
+          "term": "here",
+          "ipa": "hɪə(r)",
+          "def": "adv.这就是，在这里",
+          "zh": "这就是"
+        },
+        {
+          "term": "ask",
+          "ipa": "ɑːsk",
+          "def": "v.请求，要求，询问",
+          "zh": "请求"
+        },
+        {
+          "term": "monkey",
+          "ipa": "ˈmʌŋki",
+          "def": "n.[C]猴子",
+          "zh": "猴子"
+        },
+        {
+          "term": "look",
+          "ipa": "lʊk",
+          "def": "vi.看v.-link.看上去n.[C]看，注视，外表，表情",
+          "zh": "看"
+        },
+        {
+          "term": "fight",
+          "ipa": "faɪt",
+          "def": "v./n.[C]打架，战斗v.与……作斗争",
+          "zh": "打架"
+        },
+        {
+          "term": "steal",
+          "ipa": "stiːl",
+          "def": "v.偷，窃取",
+          "zh": "偷"
+        },
+        {
+          "term": "who",
+          "ipa": "huː",
+          "def": "pron.谁，什么人",
+          "zh": "谁"
+        },
+        {
+          "term": "live",
+          "ipa": "lɪv][laɪv",
+          "def": "v.居住，生活adj.活的，生动的，现场直播的",
+          "zh": "居住"
+        },
+        {
+          "term": "come",
+          "ipa": "kʌm",
+          "def": "vi.来，来到v.-link.成为，变成，变得",
+          "zh": "来"
+        },
+        {
+          "term": "north",
+          "ipa": "/nɔːrθ",
+          "def": "n.北，北方adj.北方的adv.向北",
+          "zh": "北"
+        },
+        {
+          "term": "wait",
+          "ipa": "weɪt",
+          "def": "v.等待，等候",
+          "zh": "等待"
+        },
+        {
+          "term": "order",
+          "ipa": "ˈɔː(r)də(r)",
+          "def": "",
+          "zh": "order"
+        }
+      ]
+    },
+    {
+      "node_id": "n009",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"He came from the north.\"",
+      "text_zh": "\"他来自北方。\"",
+      "illustration": "assets/adv_frames/ep5/f1.jpg",
+      "audio_start": 42.589,
+      "audio_end": 45.487,
+      "vocab": [],
+      "page_words": [
+        {
+          "term": "warn",
+          "ipa": "wɔː(r)n",
+          "def": "v.警告，告诫",
+          "zh": "警告"
+        },
+        {
+          "term": "learn",
+          "ipa": "lɜː(r)n",
+          "def": "v.学习，学会，了解",
+          "zh": "学习"
+        },
+        {
+          "term": "reply",
+          "ipa": "rɪˈplaɪ",
+          "def": "v.回答，答复n.[C,U]答复",
+          "zh": "回答"
+        },
+        {
+          "term": "back",
+          "ipa": "bæk",
+          "def": "n.[C]后面，背部adj.后面的adv.回原处，向后地",
+          "zh": "后面"
+        },
+        {
+          "term": "soon",
+          "ipa": "suːn",
+          "def": "adv.不久，很快",
+          "zh": "不久"
+        },
+        {
+          "term": "fly",
+          "ipa": "flaɪ",
+          "def": "v.飞，驾驶（飞机等）；乘飞机，（旗）飘扬n.[C]苍蝇",
+          "zh": "飞"
+        },
+        {
+          "term": "subject",
+          "ipa": "ˈsʌbdʒɪk",
+          "def": "n.[C]学科，课程，科目；主题，话题",
+          "zh": "学科"
+        },
+        {
+          "term": "king",
+          "ipa": "kɪŋ",
+          "def": "n.[C]君主，国王",
+          "zh": "君主"
+        },
+        {
+          "term": "say",
+          "ipa": "seɪ",
+          "def": "v.说，讲",
+          "zh": "说"
+        },
+        {
+          "term": "cloud",
+          "ipa": "klaʊd",
+          "def": "n.[C,U]云，云朵",
+          "zh": "云"
+        },
+        {
+          "term": "hang",
+          "ipa": "hæŋ",
+          "def": "v.悬挂，垂下；绞死",
+          "zh": "悬挂"
+        },
+        {
+          "term": "over",
+          "ipa": "ˈəʊvə®",
+          "def": "prep.超过，多于，在……上方，遍及adv.再，结束，大于",
+          "zh": "超过"
+        },
+        {
+          "term": "home",
+          "ipa": "həʊm",
+          "def": "n.[C,U]家，养老院adv.到家，在家",
+          "zh": "家"
+        },
+        {
+          "term": "land",
+          "ipa": "lænd",
+          "def": "n.[U]大陆，土地 [C]国家v.降落，着陆",
+          "zh": "大陆"
+        },
+        {
+          "term": "guard",
+          "ipa": "ɡɑː(r)d",
+          "def": "n.[C]警卫，看守；防护装置vt.守卫，保卫",
+          "zh": "警卫"
+        },
+        {
+          "term": "practice",
+          "ipa": "ˈpræktɪs",
+          "def": "v.（亦作practise）练习n.[C,U]练习，（医生的）工作地点[U]实践",
+          "zh": "亦作"
+        }
+      ]
+    },
+    {
+      "node_id": "n010",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"Wait here,\" Wukong ordered. \"I will handle the demon.\"",
+      "text_zh": "\"请在此等候,\"悟空命令道,\"我来对付那妖怪。\"",
+      "illustration": "assets/adv_frames/ep5/f2.jpg",
+      "audio_start": 45.488,
+      "audio_end": 50.312,
+      "vocab": [
+        {
+          "term": "handle",
+          "zh": "处理,对待",
+          "mode": "learn",
+          "phrase_en": "I will handle the demon.",
+          "phrase_zh": "处理,对待",
+          "source": "official_words"
+        },
+        {
+          "term": "demon",
+          "zh": "妖怪",
+          "mode": "review",
+          "options": [
+            "demon",
+            "cave",
+            "magic",
+            "protect"
+          ],
+          "answer": 0,
+          "phrase_en": "A demon attacked us",
+          "phrase_zh": "一个恶魔袭击了我们",
+          "gloss": "恶魔"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "warn",
+          "ipa": "wɔː(r)n",
+          "def": "v.警告，告诫",
+          "zh": "警告"
+        },
+        {
+          "term": "learn",
+          "ipa": "lɜː(r)n",
+          "def": "v.学习，学会，了解",
+          "zh": "学习"
+        },
+        {
+          "term": "reply",
+          "ipa": "rɪˈplaɪ",
+          "def": "v.回答，答复n.[C,U]答复",
+          "zh": "回答"
+        },
+        {
+          "term": "back",
+          "ipa": "bæk",
+          "def": "n.[C]后面，背部adj.后面的adv.回原处，向后地",
+          "zh": "后面"
+        },
+        {
+          "term": "soon",
+          "ipa": "suːn",
+          "def": "adv.不久，很快",
+          "zh": "不久"
+        },
+        {
+          "term": "fly",
+          "ipa": "flaɪ",
+          "def": "v.飞，驾驶（飞机等）；乘飞机，（旗）飘扬n.[C]苍蝇",
+          "zh": "飞"
+        },
+        {
+          "term": "subject",
+          "ipa": "ˈsʌbdʒɪk",
+          "def": "n.[C]学科，课程，科目；主题，话题",
+          "zh": "学科"
+        },
+        {
+          "term": "king",
+          "ipa": "kɪŋ",
+          "def": "n.[C]君主，国王",
+          "zh": "君主"
+        },
+        {
+          "term": "say",
+          "ipa": "seɪ",
+          "def": "v.说，讲",
+          "zh": "说"
+        },
+        {
+          "term": "cloud",
+          "ipa": "klaʊd",
+          "def": "n.[C,U]云，云朵",
+          "zh": "云"
+        },
+        {
+          "term": "hang",
+          "ipa": "hæŋ",
+          "def": "v.悬挂，垂下；绞死",
+          "zh": "悬挂"
+        },
+        {
+          "term": "over",
+          "ipa": "ˈəʊvə®",
+          "def": "prep.超过，多于，在……上方，遍及adv.再，结束，大于",
+          "zh": "超过"
+        },
+        {
+          "term": "home",
+          "ipa": "həʊm",
+          "def": "n.[C,U]家，养老院adv.到家，在家",
+          "zh": "家"
+        },
+        {
+          "term": "land",
+          "ipa": "lænd",
+          "def": "n.[U]大陆，土地 [C]国家v.降落，着陆",
+          "zh": "大陆"
+        },
+        {
+          "term": "guard",
+          "ipa": "ɡɑː(r)d",
+          "def": "n.[C]警卫，看守；防护装置vt.守卫，保卫",
+          "zh": "警卫"
+        },
+        {
+          "term": "practice",
+          "ipa": "ˈpræktɪs",
+          "def": "v.（亦作practise）练习n.[C,U]练习，（医生的）工作地点[U]实践",
+          "zh": "亦作"
+        }
+      ]
+    },
+    {
+      "node_id": "n011",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"The demon is very powerful,\" the gibbon warned.",
+      "text_zh": "\"那恶魔实力极强,\"长臂猿警告道。",
+      "illustration": "assets/adv_frames/ep5/f3.jpg",
+      "audio_start": 50.313,
+      "audio_end": 53.628,
+      "vocab": [
+        {
+          "term": "powerful",
+          "zh": "强大的",
+          "mode": "test",
+          "options": [
+            "跃入",
+            "强大的",
+            "猿",
+            "果实"
+          ],
+          "answer": 1,
+          "phrase_en": "The demon is very powerful",
+          "phrase_zh": "这个恶魔实力强大",
+          "gloss": "强大的"
+        },
+        {
+          "term": "gibbon",
+          "zh": "长臂猿",
+          "mode": "review",
+          "options": [
+            "gibbon",
+            "fight",
+            "king",
+            "learned"
+          ],
+          "answer": 0,
+          "phrase_en": "the gibbon warned",
+          "phrase_zh": "猴面发出警告",
+          "gloss": "长臂猿"
+        },
+        {
+          "term": "demon",
+          "zh": "妖怪",
+          "mode": "review",
+          "options": [
+            "mountain",
+            "returned",
+            "demon",
+            "protect"
+          ],
+          "answer": 2,
+          "phrase_en": "A demon attacked us",
+          "phrase_zh": "一个恶魔袭击了我们",
+          "gloss": "恶魔"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "warn",
+          "ipa": "wɔː(r)n",
+          "def": "v.警告，告诫",
+          "zh": "警告"
+        },
+        {
+          "term": "learn",
+          "ipa": "lɜː(r)n",
+          "def": "v.学习，学会，了解",
+          "zh": "学习"
+        },
+        {
+          "term": "reply",
+          "ipa": "rɪˈplaɪ",
+          "def": "v.回答，答复n.[C,U]答复",
+          "zh": "回答"
+        },
+        {
+          "term": "back",
+          "ipa": "bæk",
+          "def": "n.[C]后面，背部adj.后面的adv.回原处，向后地",
+          "zh": "后面"
+        },
+        {
+          "term": "soon",
+          "ipa": "suːn",
+          "def": "adv.不久，很快",
+          "zh": "不久"
+        },
+        {
+          "term": "fly",
+          "ipa": "flaɪ",
+          "def": "v.飞，驾驶（飞机等）；乘飞机，（旗）飘扬n.[C]苍蝇",
+          "zh": "飞"
+        },
+        {
+          "term": "subject",
+          "ipa": "ˈsʌbdʒɪk",
+          "def": "n.[C]学科，课程，科目；主题，话题",
+          "zh": "学科"
+        },
+        {
+          "term": "king",
+          "ipa": "kɪŋ",
+          "def": "n.[C]君主，国王",
+          "zh": "君主"
+        },
+        {
+          "term": "say",
+          "ipa": "seɪ",
+          "def": "v.说，讲",
+          "zh": "说"
+        },
+        {
+          "term": "cloud",
+          "ipa": "klaʊd",
+          "def": "n.[C,U]云，云朵",
+          "zh": "云"
+        },
+        {
+          "term": "hang",
+          "ipa": "hæŋ",
+          "def": "v.悬挂，垂下；绞死",
+          "zh": "悬挂"
+        },
+        {
+          "term": "over",
+          "ipa": "ˈəʊvə®",
+          "def": "prep.超过，多于，在……上方，遍及adv.再，结束，大于",
+          "zh": "超过"
+        },
+        {
+          "term": "home",
+          "ipa": "həʊm",
+          "def": "n.[C,U]家，养老院adv.到家，在家",
+          "zh": "家"
+        },
+        {
+          "term": "land",
+          "ipa": "lænd",
+          "def": "n.[U]大陆，土地 [C]国家v.降落，着陆",
+          "zh": "大陆"
+        },
+        {
+          "term": "guard",
+          "ipa": "ɡɑː(r)d",
+          "def": "n.[C]警卫，看守；防护装置vt.守卫，保卫",
+          "zh": "警卫"
+        },
+        {
+          "term": "practice",
+          "ipa": "ˈpræktɪs",
+          "def": "v.（亦作practise）练习n.[C,U]练习，（医生的）工作地点[U]实践",
+          "zh": "亦作"
+        }
+      ]
+    },
+    {
+      "node_id": "n012",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"I learned many things from a sage,\" Wukong replied.",
+      "text_zh": "\"我从一位圣贤那里学到了许多东西,\"悟空答道。",
+      "illustration": "assets/adv_frames/ep5/f0.jpg",
+      "audio_start": 53.629,
+      "audio_end": 57.72,
+      "vocab": [
+        {
+          "term": "sage",
+          "zh": "圣人,圣贤",
+          "mode": "learn",
+          "phrase_en": "I learned many things from a sage.",
+          "phrase_zh": "圣人,圣贤",
+          "source": "official_words"
+        },
+        {
+          "term": "learned",
+          "zh": "学会了",
+          "mode": "learn",
+          "phrase_en": "I learned many things from a sage",
+          "phrase_zh": "我从一位智者那里学到了许多东西",
+          "ipa": "lɜː(r)n",
+          "pos": "v.",
+          "def": "v.学习，学会，了解",
+          "gloss": "学习"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "warn",
+          "ipa": "wɔː(r)n",
+          "def": "v.警告，告诫",
+          "zh": "警告"
+        },
+        {
+          "term": "learn",
+          "ipa": "lɜː(r)n",
+          "def": "v.学习，学会，了解",
+          "zh": "学习"
+        },
+        {
+          "term": "reply",
+          "ipa": "rɪˈplaɪ",
+          "def": "v.回答，答复n.[C,U]答复",
+          "zh": "回答"
+        },
+        {
+          "term": "back",
+          "ipa": "bæk",
+          "def": "n.[C]后面，背部adj.后面的adv.回原处，向后地",
+          "zh": "后面"
+        },
+        {
+          "term": "soon",
+          "ipa": "suːn",
+          "def": "adv.不久，很快",
+          "zh": "不久"
+        },
+        {
+          "term": "fly",
+          "ipa": "flaɪ",
+          "def": "v.飞，驾驶（飞机等）；乘飞机，（旗）飘扬n.[C]苍蝇",
+          "zh": "飞"
+        },
+        {
+          "term": "subject",
+          "ipa": "ˈsʌbdʒɪk",
+          "def": "n.[C]学科，课程，科目；主题，话题",
+          "zh": "学科"
+        },
+        {
+          "term": "king",
+          "ipa": "kɪŋ",
+          "def": "n.[C]君主，国王",
+          "zh": "君主"
+        },
+        {
+          "term": "say",
+          "ipa": "seɪ",
+          "def": "v.说，讲",
+          "zh": "说"
+        },
+        {
+          "term": "cloud",
+          "ipa": "klaʊd",
+          "def": "n.[C,U]云，云朵",
+          "zh": "云"
+        },
+        {
+          "term": "hang",
+          "ipa": "hæŋ",
+          "def": "v.悬挂，垂下；绞死",
+          "zh": "悬挂"
+        },
+        {
+          "term": "over",
+          "ipa": "ˈəʊvə®",
+          "def": "prep.超过，多于，在……上方，遍及adv.再，结束，大于",
+          "zh": "超过"
+        },
+        {
+          "term": "home",
+          "ipa": "həʊm",
+          "def": "n.[C,U]家，养老院adv.到家，在家",
+          "zh": "家"
+        },
+        {
+          "term": "land",
+          "ipa": "lænd",
+          "def": "n.[U]大陆，土地 [C]国家v.降落，着陆",
+          "zh": "大陆"
+        },
+        {
+          "term": "guard",
+          "ipa": "ɡɑː(r)d",
+          "def": "n.[C]警卫，看守；防护装置vt.守卫，保卫",
+          "zh": "警卫"
+        },
+        {
+          "term": "practice",
+          "ipa": "ˈpræktɪs",
+          "def": "v.（亦作practise）练习n.[C,U]练习，（医生的）工作地点[U]实践",
+          "zh": "亦作"
+        }
+      ]
+    },
+    {
+      "node_id": "n013",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"I am now as powerful as a god! I'm not afraid of any demon. I'll be back soon.\"",
+      "text_zh": "\"我现在已如神明般强大!我不再畏惧任何恶魔,很快就会归来。\"",
+      "illustration": "assets/adv_frames/ep5/f1.jpg",
+      "audio_start": 57.721,
+      "audio_end": 65.606,
+      "vocab": [
+        {
+          "term": "powerful",
+          "zh": "强大的",
+          "mode": "review",
+          "options": [
+            "powerful",
+            "leaped",
+            "returned",
+            "apes"
+          ],
+          "answer": 0,
+          "phrase_en": "I am now as powerful as a god",
+          "phrase_zh": "我现在如同神一样强大",
+          "gloss": "强大的"
+        },
+        {
+          "term": "afraid",
+          "zh": "害怕的",
+          "mode": "learn",
+          "phrase_en": "I'm not afraid of any",
+          "phrase_zh": "我无所畏惧",
+          "ipa": "əˈfreɪd",
+          "pos": "adj.",
+          "def": "adj.害怕，畏惧",
+          "gloss": "害怕的"
+        },
+        {
+          "term": "demon",
+          "zh": "妖怪",
+          "mode": "review",
+          "options": [
+            "fruit",
+            "learned",
+            "demon",
+            "powerful"
+          ],
+          "answer": 2,
+          "phrase_en": "A demon attacked us",
+          "phrase_zh": "一个恶魔袭击了我们",
+          "gloss": "恶魔"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "warn",
+          "ipa": "wɔː(r)n",
+          "def": "v.警告，告诫",
+          "zh": "警告"
+        },
+        {
+          "term": "learn",
+          "ipa": "lɜː(r)n",
+          "def": "v.学习，学会，了解",
+          "zh": "学习"
+        },
+        {
+          "term": "reply",
+          "ipa": "rɪˈplaɪ",
+          "def": "v.回答，答复n.[C,U]答复",
+          "zh": "回答"
+        },
+        {
+          "term": "back",
+          "ipa": "bæk",
+          "def": "n.[C]后面，背部adj.后面的adv.回原处，向后地",
+          "zh": "后面"
+        },
+        {
+          "term": "soon",
+          "ipa": "suːn",
+          "def": "adv.不久，很快",
+          "zh": "不久"
+        },
+        {
+          "term": "fly",
+          "ipa": "flaɪ",
+          "def": "v.飞，驾驶（飞机等）；乘飞机，（旗）飘扬n.[C]苍蝇",
+          "zh": "飞"
+        },
+        {
+          "term": "subject",
+          "ipa": "ˈsʌbdʒɪk",
+          "def": "n.[C]学科，课程，科目；主题，话题",
+          "zh": "学科"
+        },
+        {
+          "term": "king",
+          "ipa": "kɪŋ",
+          "def": "n.[C]君主，国王",
+          "zh": "君主"
+        },
+        {
+          "term": "say",
+          "ipa": "seɪ",
+          "def": "v.说，讲",
+          "zh": "说"
+        },
+        {
+          "term": "cloud",
+          "ipa": "klaʊd",
+          "def": "n.[C,U]云，云朵",
+          "zh": "云"
+        },
+        {
+          "term": "hang",
+          "ipa": "hæŋ",
+          "def": "v.悬挂，垂下；绞死",
+          "zh": "悬挂"
+        },
+        {
+          "term": "over",
+          "ipa": "ˈəʊvə®",
+          "def": "prep.超过，多于，在……上方，遍及adv.再，结束，大于",
+          "zh": "超过"
+        },
+        {
+          "term": "home",
+          "ipa": "həʊm",
+          "def": "n.[C,U]家，养老院adv.到家，在家",
+          "zh": "家"
+        },
+        {
+          "term": "land",
+          "ipa": "lænd",
+          "def": "n.[U]大陆，土地 [C]国家v.降落，着陆",
+          "zh": "大陆"
+        },
+        {
+          "term": "guard",
+          "ipa": "ɡɑː(r)d",
+          "def": "n.[C]警卫，看守；防护装置vt.守卫，保卫",
+          "zh": "警卫"
+        },
+        {
+          "term": "practice",
+          "ipa": "ˈpræktɪs",
+          "def": "v.（亦作practise）练习n.[C,U]练习，（医生的）工作地点[U]实践",
+          "zh": "亦作"
+        }
+      ]
+    },
+    {
+      "node_id": "n014",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "He leaped into the air and flew north.",
+      "text_zh": "他纵身跃起,向北飞去。",
+      "illustration": "assets/adv_frames/ep5/f2.jpg",
+      "audio_start": 65.607,
+      "audio_end": 70.586,
+      "vocab": [
+        {
+          "term": "leaped",
+          "zh": "跃入",
+          "mode": "learn",
+          "phrase_en": "He leaped into the air and flew north",
+          "phrase_zh": "他纵身跃起,向北飞去",
+          "gloss": "跳跃"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "warn",
+          "ipa": "wɔː(r)n",
+          "def": "v.警告，告诫",
+          "zh": "警告"
+        },
+        {
+          "term": "learn",
+          "ipa": "lɜː(r)n",
+          "def": "v.学习，学会，了解",
+          "zh": "学习"
+        },
+        {
+          "term": "reply",
+          "ipa": "rɪˈplaɪ",
+          "def": "v.回答，答复n.[C,U]答复",
+          "zh": "回答"
+        },
+        {
+          "term": "back",
+          "ipa": "bæk",
+          "def": "n.[C]后面，背部adj.后面的adv.回原处，向后地",
+          "zh": "后面"
+        },
+        {
+          "term": "soon",
+          "ipa": "suːn",
+          "def": "adv.不久，很快",
+          "zh": "不久"
+        },
+        {
+          "term": "fly",
+          "ipa": "flaɪ",
+          "def": "v.飞，驾驶（飞机等）；乘飞机，（旗）飘扬n.[C]苍蝇",
+          "zh": "飞"
+        },
+        {
+          "term": "subject",
+          "ipa": "ˈsʌbdʒɪk",
+          "def": "n.[C]学科，课程，科目；主题，话题",
+          "zh": "学科"
+        },
+        {
+          "term": "king",
+          "ipa": "kɪŋ",
+          "def": "n.[C]君主，国王",
+          "zh": "君主"
+        },
+        {
+          "term": "say",
+          "ipa": "seɪ",
+          "def": "v.说，讲",
+          "zh": "说"
+        },
+        {
+          "term": "cloud",
+          "ipa": "klaʊd",
+          "def": "n.[C,U]云，云朵",
+          "zh": "云"
+        },
+        {
+          "term": "hang",
+          "ipa": "hæŋ",
+          "def": "v.悬挂，垂下；绞死",
+          "zh": "悬挂"
+        },
+        {
+          "term": "over",
+          "ipa": "ˈəʊvə®",
+          "def": "prep.超过，多于，在……上方，遍及adv.再，结束，大于",
+          "zh": "超过"
+        },
+        {
+          "term": "home",
+          "ipa": "həʊm",
+          "def": "n.[C,U]家，养老院adv.到家，在家",
+          "zh": "家"
+        },
+        {
+          "term": "land",
+          "ipa": "lænd",
+          "def": "n.[U]大陆，土地 [C]国家v.降落，着陆",
+          "zh": "大陆"
+        },
+        {
+          "term": "guard",
+          "ipa": "ɡɑː(r)d",
+          "def": "n.[C]警卫，看守；防护装置vt.守卫，保卫",
+          "zh": "警卫"
+        },
+        {
+          "term": "practice",
+          "ipa": "ˈpræktɪs",
+          "def": "v.（亦作practise）练习n.[C,U]练习，（医生的）工作地点[U]实践",
+          "zh": "亦作"
+        }
+      ]
+    },
+    {
+      "node_id": "n015",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "His subjects stared in amazement.",
+      "text_zh": "他的臣民们惊奇地盯着他。",
+      "illustration": "assets/adv_frames/ep5/f3.jpg",
+      "audio_start": 70.587,
+      "audio_end": 73.337,
+      "vocab": [
+        {
+          "term": "amazement",
+          "zh": "(相当)惊奇,诧异",
+          "mode": "learn",
+          "phrase_en": "His subjects stared in amazement.",
+          "phrase_zh": "",
+          "source": "official_words"
+        },
+        {
+          "term": "subject",
+          "zh": "1. 臣服者,国民,(2. (故事等的)主题,3. 科目)",
+          "mode": "learn",
+          "phrase_en": "His subjects stared in amazement.",
+          "phrase_zh": "1. 臣服者,国民,",
+          "source": "official_words"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "warn",
+          "ipa": "wɔː(r)n",
+          "def": "v.警告，告诫",
+          "zh": "警告"
+        },
+        {
+          "term": "learn",
+          "ipa": "lɜː(r)n",
+          "def": "v.学习，学会，了解",
+          "zh": "学习"
+        },
+        {
+          "term": "reply",
+          "ipa": "rɪˈplaɪ",
+          "def": "v.回答，答复n.[C,U]答复",
+          "zh": "回答"
+        },
+        {
+          "term": "back",
+          "ipa": "bæk",
+          "def": "n.[C]后面，背部adj.后面的adv.回原处，向后地",
+          "zh": "后面"
+        },
+        {
+          "term": "soon",
+          "ipa": "suːn",
+          "def": "adv.不久，很快",
+          "zh": "不久"
+        },
+        {
+          "term": "fly",
+          "ipa": "flaɪ",
+          "def": "v.飞，驾驶（飞机等）；乘飞机，（旗）飘扬n.[C]苍蝇",
+          "zh": "飞"
+        },
+        {
+          "term": "subject",
+          "ipa": "ˈsʌbdʒɪk",
+          "def": "n.[C]学科，课程，科目；主题，话题",
+          "zh": "学科"
+        },
+        {
+          "term": "king",
+          "ipa": "kɪŋ",
+          "def": "n.[C]君主，国王",
+          "zh": "君主"
+        },
+        {
+          "term": "say",
+          "ipa": "seɪ",
+          "def": "v.说，讲",
+          "zh": "说"
+        },
+        {
+          "term": "cloud",
+          "ipa": "klaʊd",
+          "def": "n.[C,U]云，云朵",
+          "zh": "云"
+        },
+        {
+          "term": "hang",
+          "ipa": "hæŋ",
+          "def": "v.悬挂，垂下；绞死",
+          "zh": "悬挂"
+        },
+        {
+          "term": "over",
+          "ipa": "ˈəʊvə®",
+          "def": "prep.超过，多于，在……上方，遍及adv.再，结束，大于",
+          "zh": "超过"
+        },
+        {
+          "term": "home",
+          "ipa": "həʊm",
+          "def": "n.[C,U]家，养老院adv.到家，在家",
+          "zh": "家"
+        },
+        {
+          "term": "land",
+          "ipa": "lænd",
+          "def": "n.[U]大陆，土地 [C]国家v.降落，着陆",
+          "zh": "大陆"
+        },
+        {
+          "term": "guard",
+          "ipa": "ɡɑː(r)d",
+          "def": "n.[C]警卫，看守；防护装置vt.守卫，保卫",
+          "zh": "警卫"
+        },
+        {
+          "term": "practice",
+          "ipa": "ˈpræktɪs",
+          "def": "v.（亦作practise）练习n.[C,U]练习，（医生的）工作地点[U]实践",
+          "zh": "亦作"
+        }
+      ]
+    },
+    {
+      "node_id": "n016",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"Our king can fly!\" said the gibbon.",
+      "text_zh": "\"我们的国王会飞!\"长臂猿说。",
+      "illustration": "assets/adv_frames/ep5/f0.jpg",
+      "audio_start": 73.338,
+      "audio_end": 77.526,
+      "vocab": [
+        {
+          "term": "gibbon",
+          "zh": "长臂猿",
+          "mode": "review",
+          "options": [
+            "gibbon",
+            "monkey",
+            "apes",
+            "magic"
+          ],
+          "answer": 0,
+          "phrase_en": "Our king can fly!\" said the gibbon",
+          "phrase_zh": "我们的国王会飞!\"长臂猿说",
+          "gloss": "长臂猿"
+        },
+        {
+          "term": "king",
+          "zh": "国王；大王",
+          "mode": "learn",
+          "phrase_en": "Our king can fly",
+          "phrase_zh": "我们的国王会飞",
+          "ipa": "kɪŋ",
+          "pos": "n.",
+          "def": "n.[C]君主，国王",
+          "gloss": "国王"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "warn",
+          "ipa": "wɔː(r)n",
+          "def": "v.警告，告诫",
+          "zh": "警告"
+        },
+        {
+          "term": "learn",
+          "ipa": "lɜː(r)n",
+          "def": "v.学习，学会，了解",
+          "zh": "学习"
+        },
+        {
+          "term": "reply",
+          "ipa": "rɪˈplaɪ",
+          "def": "v.回答，答复n.[C,U]答复",
+          "zh": "回答"
+        },
+        {
+          "term": "back",
+          "ipa": "bæk",
+          "def": "n.[C]后面，背部adj.后面的adv.回原处，向后地",
+          "zh": "后面"
+        },
+        {
+          "term": "soon",
+          "ipa": "suːn",
+          "def": "adv.不久，很快",
+          "zh": "不久"
+        },
+        {
+          "term": "fly",
+          "ipa": "flaɪ",
+          "def": "v.飞，驾驶（飞机等）；乘飞机，（旗）飘扬n.[C]苍蝇",
+          "zh": "飞"
+        },
+        {
+          "term": "subject",
+          "ipa": "ˈsʌbdʒɪk",
+          "def": "n.[C]学科，课程，科目；主题，话题",
+          "zh": "学科"
+        },
+        {
+          "term": "king",
+          "ipa": "kɪŋ",
+          "def": "n.[C]君主，国王",
+          "zh": "君主"
+        },
+        {
+          "term": "say",
+          "ipa": "seɪ",
+          "def": "v.说，讲",
+          "zh": "说"
+        },
+        {
+          "term": "cloud",
+          "ipa": "klaʊd",
+          "def": "n.[C,U]云，云朵",
+          "zh": "云"
+        },
+        {
+          "term": "hang",
+          "ipa": "hæŋ",
+          "def": "v.悬挂，垂下；绞死",
+          "zh": "悬挂"
+        },
+        {
+          "term": "over",
+          "ipa": "ˈəʊvə®",
+          "def": "prep.超过，多于，在……上方，遍及adv.再，结束，大于",
+          "zh": "超过"
+        },
+        {
+          "term": "home",
+          "ipa": "həʊm",
+          "def": "n.[C,U]家，养老院adv.到家，在家",
+          "zh": "家"
+        },
+        {
+          "term": "land",
+          "ipa": "lænd",
+          "def": "n.[U]大陆，土地 [C]国家v.降落，着陆",
+          "zh": "大陆"
+        },
+        {
+          "term": "guard",
+          "ipa": "ɡɑː(r)d",
+          "def": "n.[C]警卫，看守；防护装置vt.守卫，保卫",
+          "zh": "警卫"
+        },
+        {
+          "term": "practice",
+          "ipa": "ˈpræktɪs",
+          "def": "v.（亦作practise）练习n.[C,U]练习，（医生的）工作地点[U]实践",
+          "zh": "亦作"
+        }
+      ]
+    },
+    {
+      "node_id": "n017",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "Wukong soon spotted a gloomy mountain.",
+      "text_zh": "猿猴很快便发现了一座阴郁的山峰。",
+      "illustration": "assets/adv_frames/ep5/f1.jpg",
+      "audio_start": 77.527,
+      "audio_end": 80.999,
+      "vocab": [
+        {
+          "term": "gloomy",
+          "zh": "忧郁的,阴郁的",
+          "mode": "learn",
+          "phrase_en": "Wukong soon spotted a gloomy mountain.",
+          "phrase_zh": "忧郁的,阴郁的",
+          "source": "official_words"
+        },
+        {
+          "term": "mountain",
+          "zh": "山",
+          "mode": "learn",
+          "phrase_en": "Wukong soon spotted a gloomy mountain",
+          "phrase_zh": "悟空很快就注意到一座阴郁的山峰",
+          "gloss": "山"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "warn",
+          "ipa": "wɔː(r)n",
+          "def": "v.警告，告诫",
+          "zh": "警告"
+        },
+        {
+          "term": "learn",
+          "ipa": "lɜː(r)n",
+          "def": "v.学习，学会，了解",
+          "zh": "学习"
+        },
+        {
+          "term": "reply",
+          "ipa": "rɪˈplaɪ",
+          "def": "v.回答，答复n.[C,U]答复",
+          "zh": "回答"
+        },
+        {
+          "term": "back",
+          "ipa": "bæk",
+          "def": "n.[C]后面，背部adj.后面的adv.回原处，向后地",
+          "zh": "后面"
+        },
+        {
+          "term": "soon",
+          "ipa": "suːn",
+          "def": "adv.不久，很快",
+          "zh": "不久"
+        },
+        {
+          "term": "fly",
+          "ipa": "flaɪ",
+          "def": "v.飞，驾驶（飞机等）；乘飞机，（旗）飘扬n.[C]苍蝇",
+          "zh": "飞"
+        },
+        {
+          "term": "subject",
+          "ipa": "ˈsʌbdʒɪk",
+          "def": "n.[C]学科，课程，科目；主题，话题",
+          "zh": "学科"
+        },
+        {
+          "term": "king",
+          "ipa": "kɪŋ",
+          "def": "n.[C]君主，国王",
+          "zh": "君主"
+        },
+        {
+          "term": "say",
+          "ipa": "seɪ",
+          "def": "v.说，讲",
+          "zh": "说"
+        },
+        {
+          "term": "cloud",
+          "ipa": "klaʊd",
+          "def": "n.[C,U]云，云朵",
+          "zh": "云"
+        },
+        {
+          "term": "hang",
+          "ipa": "hæŋ",
+          "def": "v.悬挂，垂下；绞死",
+          "zh": "悬挂"
+        },
+        {
+          "term": "over",
+          "ipa": "ˈəʊvə®",
+          "def": "prep.超过，多于，在……上方，遍及adv.再，结束，大于",
+          "zh": "超过"
+        },
+        {
+          "term": "home",
+          "ipa": "həʊm",
+          "def": "n.[C,U]家，养老院adv.到家，在家",
+          "zh": "家"
+        },
+        {
+          "term": "land",
+          "ipa": "lænd",
+          "def": "n.[U]大陆，土地 [C]国家v.降落，着陆",
+          "zh": "大陆"
+        },
+        {
+          "term": "guard",
+          "ipa": "ɡɑː(r)d",
+          "def": "n.[C]警卫，看守；防护装置vt.守卫，保卫",
+          "zh": "警卫"
+        },
+        {
+          "term": "practice",
+          "ipa": "ˈpræktɪs",
+          "def": "v.（亦作practise）练习n.[C,U]练习，（医生的）工作地点[U]实践",
+          "zh": "亦作"
+        }
+      ]
+    },
+    {
+      "node_id": "n018",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "Dark clouds hung over it.",
+      "text_zh": "暗云密布,笼罩着它。",
+      "illustration": "assets/adv_frames/ep5/f2.jpg",
+      "audio_start": 81.0,
+      "audio_end": 84.113,
+      "vocab": [],
+      "page_words": [
+        {
+          "term": "warn",
+          "ipa": "wɔː(r)n",
+          "def": "v.警告，告诫",
+          "zh": "警告"
+        },
+        {
+          "term": "learn",
+          "ipa": "lɜː(r)n",
+          "def": "v.学习，学会，了解",
+          "zh": "学习"
+        },
+        {
+          "term": "reply",
+          "ipa": "rɪˈplaɪ",
+          "def": "v.回答，答复n.[C,U]答复",
+          "zh": "回答"
+        },
+        {
+          "term": "back",
+          "ipa": "bæk",
+          "def": "n.[C]后面，背部adj.后面的adv.回原处，向后地",
+          "zh": "后面"
+        },
+        {
+          "term": "soon",
+          "ipa": "suːn",
+          "def": "adv.不久，很快",
+          "zh": "不久"
+        },
+        {
+          "term": "fly",
+          "ipa": "flaɪ",
+          "def": "v.飞，驾驶（飞机等）；乘飞机，（旗）飘扬n.[C]苍蝇",
+          "zh": "飞"
+        },
+        {
+          "term": "subject",
+          "ipa": "ˈsʌbdʒɪk",
+          "def": "n.[C]学科，课程，科目；主题，话题",
+          "zh": "学科"
+        },
+        {
+          "term": "king",
+          "ipa": "kɪŋ",
+          "def": "n.[C]君主，国王",
+          "zh": "君主"
+        },
+        {
+          "term": "say",
+          "ipa": "seɪ",
+          "def": "v.说，讲",
+          "zh": "说"
+        },
+        {
+          "term": "cloud",
+          "ipa": "klaʊd",
+          "def": "n.[C,U]云，云朵",
+          "zh": "云"
+        },
+        {
+          "term": "hang",
+          "ipa": "hæŋ",
+          "def": "v.悬挂，垂下；绞死",
+          "zh": "悬挂"
+        },
+        {
+          "term": "over",
+          "ipa": "ˈəʊvə®",
+          "def": "prep.超过，多于，在……上方，遍及adv.再，结束，大于",
+          "zh": "超过"
+        },
+        {
+          "term": "home",
+          "ipa": "həʊm",
+          "def": "n.[C,U]家，养老院adv.到家，在家",
+          "zh": "家"
+        },
+        {
+          "term": "land",
+          "ipa": "lænd",
+          "def": "n.[U]大陆，土地 [C]国家v.降落，着陆",
+          "zh": "大陆"
+        },
+        {
+          "term": "guard",
+          "ipa": "ɡɑː(r)d",
+          "def": "n.[C]警卫，看守；防护装置vt.守卫，保卫",
+          "zh": "警卫"
+        },
+        {
+          "term": "practice",
+          "ipa": "ˈpræktɪs",
+          "def": "v.（亦作practise）练习n.[C,U]练习，（医生的）工作地点[U]实践",
+          "zh": "亦作"
+        }
+      ]
+    },
+    {
+      "node_id": "n019",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"That looks like a demon's home,\" he thought.",
+      "text_zh": "\"这看起来像是恶魔的巢穴,\"他想道。",
+      "illustration": "assets/adv_frames/ep5/f3.jpg",
+      "audio_start": 84.114,
+      "audio_end": 89.207,
+      "vocab": [
+        {
+          "term": "demon",
+          "zh": "妖怪",
+          "mode": "review",
+          "options": [
+            "swung",
+            "magic",
+            "fight",
+            "demon"
+          ],
+          "answer": 3,
+          "phrase_en": "A demon attacked us",
+          "phrase_zh": "一个恶魔袭击了我们",
+          "gloss": "恶魔"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "warn",
+          "ipa": "wɔː(r)n",
+          "def": "v.警告，告诫",
+          "zh": "警告"
+        },
+        {
+          "term": "learn",
+          "ipa": "lɜː(r)n",
+          "def": "v.学习，学会，了解",
+          "zh": "学习"
+        },
+        {
+          "term": "reply",
+          "ipa": "rɪˈplaɪ",
+          "def": "v.回答，答复n.[C,U]答复",
+          "zh": "回答"
+        },
+        {
+          "term": "back",
+          "ipa": "bæk",
+          "def": "n.[C]后面，背部adj.后面的adv.回原处，向后地",
+          "zh": "后面"
+        },
+        {
+          "term": "soon",
+          "ipa": "suːn",
+          "def": "adv.不久，很快",
+          "zh": "不久"
+        },
+        {
+          "term": "fly",
+          "ipa": "flaɪ",
+          "def": "v.飞，驾驶（飞机等）；乘飞机，（旗）飘扬n.[C]苍蝇",
+          "zh": "飞"
+        },
+        {
+          "term": "subject",
+          "ipa": "ˈsʌbdʒɪk",
+          "def": "n.[C]学科，课程，科目；主题，话题",
+          "zh": "学科"
+        },
+        {
+          "term": "king",
+          "ipa": "kɪŋ",
+          "def": "n.[C]君主，国王",
+          "zh": "君主"
+        },
+        {
+          "term": "say",
+          "ipa": "seɪ",
+          "def": "v.说，讲",
+          "zh": "说"
+        },
+        {
+          "term": "cloud",
+          "ipa": "klaʊd",
+          "def": "n.[C,U]云，云朵",
+          "zh": "云"
+        },
+        {
+          "term": "hang",
+          "ipa": "hæŋ",
+          "def": "v.悬挂，垂下；绞死",
+          "zh": "悬挂"
+        },
+        {
+          "term": "over",
+          "ipa": "ˈəʊvə®",
+          "def": "prep.超过，多于，在……上方，遍及adv.再，结束，大于",
+          "zh": "超过"
+        },
+        {
+          "term": "home",
+          "ipa": "həʊm",
+          "def": "n.[C,U]家，养老院adv.到家，在家",
+          "zh": "家"
+        },
+        {
+          "term": "land",
+          "ipa": "lænd",
+          "def": "n.[U]大陆，土地 [C]国家v.降落，着陆",
+          "zh": "大陆"
+        },
+        {
+          "term": "guard",
+          "ipa": "ɡɑː(r)d",
+          "def": "n.[C]警卫，看守；防护装置vt.守卫，保卫",
+          "zh": "警卫"
+        },
+        {
+          "term": "practice",
+          "ipa": "ˈpræktɪs",
+          "def": "v.（亦作practise）练习n.[C,U]练习，（医生的）工作地点[U]实践",
+          "zh": "亦作"
+        }
+      ]
+    },
+    {
+      "node_id": "n020",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "Wukong landed on the mountain and found a cave.",
+      "text_zh": "猿猴降落在山上,发现了一座洞穴。",
+      "illustration": "assets/adv_frames/ep5/f0.jpg",
+      "audio_start": 89.208,
+      "audio_end": 92.825,
+      "vocab": [
+        {
+          "term": "mountain",
+          "zh": "山",
+          "mode": "test",
+          "options": [
+            "国王；大王",
+            "猿",
+            "洞穴",
+            "山"
+          ],
+          "answer": 3,
+          "phrase_en": "on the mountain and found",
+          "phrase_zh": "在山上发现",
+          "gloss": "山"
+        },
+        {
+          "term": "cave",
+          "zh": "洞穴",
+          "mode": "learn",
+          "phrase_en": "found a cave",
+          "phrase_zh": "发现了一个洞穴",
+          "gloss": "山洞"
+        }
+      ],
+      "quiz_after": {
+        "q": "Where did the demon live?",
+        "choices": [
+          "a cave on a gloomy mountain",
+          "the Fruit and Flower mountain",
+          "the Cloud Palace"
+        ],
+        "answer": 0,
+        "q_zh": "那个恶魔住在哪里？",
+        "choices_zh": [
+          "阴沉山上的一个洞穴",
+          "花果山",
+          "云宫"
+        ]
+      },
+      "page_words": [
+        {
+          "term": "sit",
+          "ipa": "sɪt",
+          "def": "v.坐",
+          "zh": "坐"
+        },
+        {
+          "term": "eat",
+          "ipa": "iːt",
+          "def": "v.吃",
+          "zh": "吃"
+        },
+        {
+          "term": "meal",
+          "ipa": "miːl",
+          "def": "n.[C]早（或午、晚）餐，一餐所吃的食物",
+          "zh": "早"
+        },
+        {
+          "term": "cry",
+          "ipa": "kraɪ",
+          "def": "v./n.[sing.]哭 [C]叫喊",
+          "zh": "哭"
+        },
+        {
+          "term": "speak",
+          "ipa": "spiːk",
+          "def": "vt.说（某种语言）vi.说话，提起",
+          "zh": "说"
+        },
+        {
+          "term": "return",
+          "ipa": "rɪˈtɜː(r)n",
+          "def": "vt.归还vi.回来，返回n.[C,U]回报[sing.]返回",
+          "zh": "归还"
+        }
+      ]
+    },
+    {
+      "node_id": "n021",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "Two guards stood at the entrance, practicing sword fighting.",
+      "text_zh": "两名守卫站在门口,正在练习剑术。",
+      "illustration": "assets/adv_frames/ep5/f1.jpg",
+      "audio_start": 92.826,
+      "audio_end": 97.77,
+      "vocab": [
+        {
+          "term": "guard",
+          "zh": "警卫,保安",
+          "mode": "learn",
+          "phrase_en": "Two guards stood at the entrance, practicing sword fighting.",
+          "phrase_zh": "警卫,保安",
+          "source": "official_words"
+        },
+        {
+          "term": "entrance",
+          "zh": "入又",
+          "mode": "learn",
+          "phrase_en": "Two guards stood at the entrance, practicing sword fighting.",
+          "phrase_zh": "入又",
+          "source": "official_words"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "sit",
+          "ipa": "sɪt",
+          "def": "v.坐",
+          "zh": "坐"
+        },
+        {
+          "term": "eat",
+          "ipa": "iːt",
+          "def": "v.吃",
+          "zh": "吃"
+        },
+        {
+          "term": "meal",
+          "ipa": "miːl",
+          "def": "n.[C]早（或午、晚）餐，一餐所吃的食物",
+          "zh": "早"
+        },
+        {
+          "term": "cry",
+          "ipa": "kraɪ",
+          "def": "v./n.[sing.]哭 [C]叫喊",
+          "zh": "哭"
+        },
+        {
+          "term": "speak",
+          "ipa": "spiːk",
+          "def": "vt.说（某种语言）vi.说话，提起",
+          "zh": "说"
+        },
+        {
+          "term": "return",
+          "ipa": "rɪˈtɜː(r)n",
+          "def": "vt.归还vi.回来，返回n.[C,U]回报[sing.]返回",
+          "zh": "归还"
+        }
+      ]
+    },
+    {
+      "node_id": "n022",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"I'm king of the Fruit and Flower Mountain!\" yelled Wukong.",
+      "text_zh": "\"我是花果山之王!\"悟空高声喊道。",
+      "illustration": "assets/adv_frames/ep5/f2.jpg",
+      "audio_start": 97.771,
+      "audio_end": 102.098,
+      "vocab": [
+        {
+          "term": "mountain",
+          "zh": "山",
+          "mode": "review",
+          "options": [
+            "mountain",
+            "gathered",
+            "fight",
+            "protect"
+          ],
+          "answer": 0,
+          "phrase_en": "I'm king of the Fruit and Flower Mountain",
+          "phrase_zh": "我是花果山之王",
+          "gloss": "山"
+        },
+        {
+          "term": "fruit",
+          "zh": "果实",
+          "mode": "learn",
+          "phrase_en": "I'm king of the Fruit and Flower Mountain",
+          "phrase_zh": "我是花果山之王"
+        },
+        {
+          "term": "king",
+          "zh": "国王；大王",
+          "mode": "test",
+          "options": [
+            "国王；大王",
+            "咒语",
+            "长臂猿",
+            "猴子"
+          ],
+          "answer": 0,
+          "phrase_en": "I'm king of the Fruit and Flower Mountain",
+          "phrase_zh": "我是花果山之王",
+          "ipa": "kɪŋ",
+          "pos": "n.",
+          "def": "n.[C]君主，国王",
+          "gloss": "国王"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "sit",
+          "ipa": "sɪt",
+          "def": "v.坐",
+          "zh": "坐"
+        },
+        {
+          "term": "eat",
+          "ipa": "iːt",
+          "def": "v.吃",
+          "zh": "吃"
+        },
+        {
+          "term": "meal",
+          "ipa": "miːl",
+          "def": "n.[C]早（或午、晚）餐，一餐所吃的食物",
+          "zh": "早"
+        },
+        {
+          "term": "cry",
+          "ipa": "kraɪ",
+          "def": "v./n.[sing.]哭 [C]叫喊",
+          "zh": "哭"
+        },
+        {
+          "term": "speak",
+          "ipa": "spiːk",
+          "def": "vt.说（某种语言）vi.说话，提起",
+          "zh": "说"
+        },
+        {
+          "term": "return",
+          "ipa": "rɪˈtɜː(r)n",
+          "def": "vt.归还vi.回来，返回n.[C,U]回报[sing.]返回",
+          "zh": "归还"
+        }
+      ]
+    },
+    {
+      "node_id": "n023",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"The Demon of Chaos attacked my subjects! I want revenge!\"",
+      "text_zh": "\"混沌魔物袭击了我的臣民!我要复仇!\"",
+      "illustration": "assets/adv_frames/ep5/f3.jpg",
+      "audio_start": 102.099,
+      "audio_end": 109.634,
+      "vocab": [
+        {
+          "term": "revenge",
+          "zh": "报仇,报复",
+          "mode": "learn",
+          "phrase_en": "I want revenge!",
+          "phrase_zh": "报仇,报复",
+          "source": "official_words"
+        },
+        {
+          "term": "demon",
+          "zh": "妖怪",
+          "mode": "review",
+          "options": [
+            "demon",
+            "king",
+            "returned",
+            "apes"
+          ],
+          "answer": 0,
+          "phrase_en": "A demon attacked us",
+          "phrase_zh": "一个恶魔袭击了我们",
+          "gloss": "恶魔"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "sit",
+          "ipa": "sɪt",
+          "def": "v.坐",
+          "zh": "坐"
+        },
+        {
+          "term": "eat",
+          "ipa": "iːt",
+          "def": "v.吃",
+          "zh": "吃"
+        },
+        {
+          "term": "meal",
+          "ipa": "miːl",
+          "def": "n.[C]早（或午、晚）餐，一餐所吃的食物",
+          "zh": "早"
+        },
+        {
+          "term": "cry",
+          "ipa": "kraɪ",
+          "def": "v./n.[sing.]哭 [C]叫喊",
+          "zh": "哭"
+        },
+        {
+          "term": "speak",
+          "ipa": "spiːk",
+          "def": "vt.说（某种语言）vi.说话，提起",
+          "zh": "说"
+        },
+        {
+          "term": "return",
+          "ipa": "rɪˈtɜː(r)n",
+          "def": "vt.归还vi.回来，返回n.[C,U]回报[sing.]返回",
+          "zh": "归还"
+        }
+      ]
+    },
+    {
+      "node_id": "p01",
+      "type": "puzzle",
+      "speaker": "system",
+      "text_en": "Put the words in order",
+      "text_zh": "点词块组句，完成后点确定",
+      "illustration": null,
+      "puzzle": {
+        "sentence": "You attacked his subjects.",
+        "words": [
+          "attacked",
+          "his",
+          "You",
+          "subjects"
+        ]
+      },
+      "vocab": []
+    },
+    {
+      "node_id": "n024",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"Ahh!\" the guards shrieked, and ran into the cave.",
+      "text_zh": "\"啊!\"守卫们惊叫一声,随即冲进了洞穴。",
+      "illustration": "assets/adv_frames/ep5/f0.jpg",
+      "audio_start": 109.635,
+      "audio_end": 114.998,
+      "vocab": [
+        {
+          "term": "shriek",
+          "zh": "(尖声)说话,尖叫",
+          "mode": "learn",
+          "phrase_en": "\"Ahh!\" the guards shrieked, and ran into the cave.",
+          "phrase_zh": "",
+          "source": "official_words"
+        },
+        {
+          "term": "cave",
+          "zh": "洞穴",
+          "mode": "test",
+          "options": [
+            "毫毛；头发",
+            "强大的",
+            "山",
+            "洞穴"
+          ],
+          "answer": 3,
+          "phrase_en": "and ran into the cave",
+          "phrase_zh": "并跑进了洞穴",
+          "gloss": "山洞"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "sit",
+          "ipa": "sɪt",
+          "def": "v.坐",
+          "zh": "坐"
+        },
+        {
+          "term": "eat",
+          "ipa": "iːt",
+          "def": "v.吃",
+          "zh": "吃"
+        },
+        {
+          "term": "meal",
+          "ipa": "miːl",
+          "def": "n.[C]早（或午、晚）餐，一餐所吃的食物",
+          "zh": "早"
+        },
+        {
+          "term": "cry",
+          "ipa": "kraɪ",
+          "def": "v./n.[sing.]哭 [C]叫喊",
+          "zh": "哭"
+        },
+        {
+          "term": "speak",
+          "ipa": "spiːk",
+          "def": "vt.说（某种语言）vi.说话，提起",
+          "zh": "说"
+        },
+        {
+          "term": "return",
+          "ipa": "rɪˈtɜː(r)n",
+          "def": "vt.归还vi.回来，返回n.[C,U]回报[sing.]返回",
+          "zh": "归还"
+        }
+      ]
+    },
+    {
+      "node_id": "n025",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "The Demon of Chaos was sitting at a table, eating a meal.",
+      "text_zh": "混沌魔君正坐在一张桌旁用餐。",
+      "illustration": "assets/adv_frames/ep5/f1.jpg",
+      "audio_start": 114.999,
+      "audio_end": 119.023,
+      "vocab": [
+        {
+          "term": "meal",
+          "zh": "膳食,一餐",
+          "mode": "learn",
+          "phrase_en": "The Demon of Chaos was sitting at a table, eating a meal.",
+          "phrase_zh": "膳食,一餐",
+          "source": "official_words"
+        },
+        {
+          "term": "demon",
+          "zh": "妖怪",
+          "mode": "review",
+          "options": [
+            "learned",
+            "king",
+            "demon",
+            "gibbon"
+          ],
+          "answer": 2,
+          "phrase_en": "A demon attacked us",
+          "phrase_zh": "一个恶魔袭击了我们",
+          "gloss": "恶魔"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "sit",
+          "ipa": "sɪt",
+          "def": "v.坐",
+          "zh": "坐"
+        },
+        {
+          "term": "eat",
+          "ipa": "iːt",
+          "def": "v.吃",
+          "zh": "吃"
+        },
+        {
+          "term": "meal",
+          "ipa": "miːl",
+          "def": "n.[C]早（或午、晚）餐，一餐所吃的食物",
+          "zh": "早"
+        },
+        {
+          "term": "cry",
+          "ipa": "kraɪ",
+          "def": "v./n.[sing.]哭 [C]叫喊",
+          "zh": "哭"
+        },
+        {
+          "term": "speak",
+          "ipa": "spiːk",
+          "def": "vt.说（某种语言）vi.说话，提起",
+          "zh": "说"
+        },
+        {
+          "term": "return",
+          "ipa": "rɪˈtɜː(r)n",
+          "def": "vt.归还vi.回来，返回n.[C,U]回报[sing.]返回",
+          "zh": "归还"
+        }
+      ]
+    },
+    {
+      "node_id": "n026",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"Disaster!\" one guard cried.",
+      "text_zh": "\"灾变了!\"一名守卫惊呼道。",
+      "illustration": "assets/adv_frames/ep5/f2.jpg",
+      "audio_start": 119.024,
+      "audio_end": 121.917,
+      "vocab": [],
+      "page_words": [
+        {
+          "term": "sit",
+          "ipa": "sɪt",
+          "def": "v.坐",
+          "zh": "坐"
+        },
+        {
+          "term": "eat",
+          "ipa": "iːt",
+          "def": "v.吃",
+          "zh": "吃"
+        },
+        {
+          "term": "meal",
+          "ipa": "miːl",
+          "def": "n.[C]早（或午、晚）餐，一餐所吃的食物",
+          "zh": "早"
+        },
+        {
+          "term": "cry",
+          "ipa": "kraɪ",
+          "def": "v./n.[sing.]哭 [C]叫喊",
+          "zh": "哭"
+        },
+        {
+          "term": "speak",
+          "ipa": "spiːk",
+          "def": "vt.说（某种语言）vi.说话，提起",
+          "zh": "说"
+        },
+        {
+          "term": "return",
+          "ipa": "rɪˈtɜː(r)n",
+          "def": "vt.归还vi.回来，返回n.[C,U]回报[sing.]返回",
+          "zh": "归还"
+        }
+      ]
+    },
+    {
+      "node_id": "n027",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"What sort of disaster?\" asked the demon.",
+      "text_zh": "\"是什么样的灾难?\"恶魔问道。",
+      "illustration": "assets/adv_frames/ep5/f3.jpg",
+      "audio_start": 121.918,
+      "audio_end": 126.173,
+      "vocab": [
+        {
+          "term": "sort",
+          "zh": "1. 种类,(2. 分类)",
+          "mode": "learn",
+          "phrase_en": "What sort of disaster?",
+          "phrase_zh": "1. 种类,",
+          "source": "official_words"
+        },
+        {
+          "term": "disaster",
+          "zh": "灾害,灾难,巨大的不幸",
+          "mode": "learn",
+          "phrase_en": "What sort of disaster?",
+          "phrase_zh": "灾害,灾难,巨大的不幸",
+          "source": "official_words"
+        },
+        {
+          "term": "demon",
+          "zh": "妖怪",
+          "mode": "review",
+          "options": [
+            "demon",
+            "fight",
+            "spell",
+            "magic"
+          ],
+          "answer": 0,
+          "phrase_en": "A demon attacked us",
+          "phrase_zh": "一个恶魔袭击了我们",
+          "gloss": "恶魔"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "sit",
+          "ipa": "sɪt",
+          "def": "v.坐",
+          "zh": "坐"
+        },
+        {
+          "term": "eat",
+          "ipa": "iːt",
+          "def": "v.吃",
+          "zh": "吃"
+        },
+        {
+          "term": "meal",
+          "ipa": "miːl",
+          "def": "n.[C]早（或午、晚）餐，一餐所吃的食物",
+          "zh": "早"
+        },
+        {
+          "term": "cry",
+          "ipa": "kraɪ",
+          "def": "v./n.[sing.]哭 [C]叫喊",
+          "zh": "哭"
+        },
+        {
+          "term": "speak",
+          "ipa": "spiːk",
+          "def": "vt.说（某种语言）vi.说话，提起",
+          "zh": "说"
+        },
+        {
+          "term": "return",
+          "ipa": "rɪˈtɜː(r)n",
+          "def": "vt.归还vi.回来，返回n.[C,U]回报[sing.]返回",
+          "zh": "归还"
+        }
+      ]
+    },
+    {
+      "node_id": "n028",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"There's a monkey outside,\" said the other guard.",
+      "text_zh": "\"外面有一只猴子,\"另一名守卫说道。",
+      "illustration": "assets/adv_frames/ep5/f0.jpg",
+      "audio_start": 126.174,
+      "audio_end": 129.957,
+      "vocab": [
+        {
+          "term": "monkey",
+          "zh": "猴子",
+          "mode": "learn",
+          "phrase_en": "There's a monkey outside",
+          "phrase_zh": "外面有一只猴子",
+          "ipa": "ˈmʌŋki",
+          "pos": "n.",
+          "def": "n.[C]猴子",
+          "gloss": "猴子"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "sit",
+          "ipa": "sɪt",
+          "def": "v.坐",
+          "zh": "坐"
+        },
+        {
+          "term": "eat",
+          "ipa": "iːt",
+          "def": "v.吃",
+          "zh": "吃"
+        },
+        {
+          "term": "meal",
+          "ipa": "miːl",
+          "def": "n.[C]早（或午、晚）餐，一餐所吃的食物",
+          "zh": "早"
+        },
+        {
+          "term": "cry",
+          "ipa": "kraɪ",
+          "def": "v./n.[sing.]哭 [C]叫喊",
+          "zh": "哭"
+        },
+        {
+          "term": "speak",
+          "ipa": "spiːk",
+          "def": "vt.说（某种语言）vi.说话，提起",
+          "zh": "说"
+        },
+        {
+          "term": "return",
+          "ipa": "rɪˈtɜː(r)n",
+          "def": "vt.归还vi.回来，返回n.[C,U]回报[sing.]返回",
+          "zh": "归还"
+        }
+      ]
+    },
+    {
+      "node_id": "n029",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"He said he's king of the Fruit and Flower Mountain. You attacked his subjects. Now he wants revenge!\"",
+      "text_zh": "\"他说自己是花果山之王。你袭击了他的臣民,如今他想要复仇!\"",
+      "illustration": "assets/adv_frames/ep5/f1.jpg",
+      "audio_start": 129.958,
+      "audio_end": 138.726,
+      "vocab": [
+        {
+          "term": "mountain",
+          "zh": "山",
+          "mode": "review",
+          "options": [
+            "leaped",
+            "mountain",
+            "learned",
+            "fruit"
+          ],
+          "answer": 1,
+          "phrase_en": "and Flower mountain",
+          "phrase_zh": "与花山",
+          "gloss": "山"
+        },
+        {
+          "term": "fruit",
+          "zh": "果实",
+          "mode": "test",
+          "options": [
+            "猴子",
+            "果实",
+            "猿",
+            "跃入"
+          ],
+          "answer": 1,
+          "phrase_en": "of the fruit and Flower",
+          "phrase_zh": "果实与花卉"
+        },
+        {
+          "term": "king",
+          "zh": "国王；大王",
+          "mode": "review",
+          "options": [
+            "king",
+            "cave",
+            "gibbon",
+            "protect"
+          ],
+          "answer": 0,
+          "phrase_en": "said he's king",
+          "phrase_zh": "说他就是国王",
+          "ipa": "kɪŋ",
+          "pos": "n.",
+          "def": "n.[C]君主，国王",
+          "gloss": "国王"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "sit",
+          "ipa": "sɪt",
+          "def": "v.坐",
+          "zh": "坐"
+        },
+        {
+          "term": "eat",
+          "ipa": "iːt",
+          "def": "v.吃",
+          "zh": "吃"
+        },
+        {
+          "term": "meal",
+          "ipa": "miːl",
+          "def": "n.[C]早（或午、晚）餐，一餐所吃的食物",
+          "zh": "早"
+        },
+        {
+          "term": "cry",
+          "ipa": "kraɪ",
+          "def": "v./n.[sing.]哭 [C]叫喊",
+          "zh": "哭"
+        },
+        {
+          "term": "speak",
+          "ipa": "spiːk",
+          "def": "vt.说（某种语言）vi.说话，提起",
+          "zh": "说"
+        },
+        {
+          "term": "return",
+          "ipa": "rɪˈtɜː(r)n",
+          "def": "vt.归还vi.回来，返回n.[C,U]回报[sing.]返回",
+          "zh": "归还"
+        }
+      ]
+    },
+    {
+      "node_id": "n030",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"The monkeys and apes have spoken of a king,\" said the demon.",
+      "text_zh": "\"猴子和类人猿都提到了一位国王,\"恶魔说道。",
+      "illustration": "assets/adv_frames/ep5/f2.jpg",
+      "audio_start": 138.727,
+      "audio_end": 143.294,
+      "vocab": [
+        {
+          "term": "demon",
+          "zh": "妖怪",
+          "mode": "review",
+          "options": [
+            "swung",
+            "king",
+            "afraid",
+            "demon"
+          ],
+          "answer": 3,
+          "phrase_en": "A demon attacked us",
+          "phrase_zh": "一个恶魔袭击了我们",
+          "gloss": "恶魔"
+        },
+        {
+          "term": "apes",
+          "zh": "猿",
+          "mode": "test",
+          "options": [
+            "保护",
+            "学会了",
+            "害怕的",
+            "猿"
+          ],
+          "answer": 3,
+          "phrase_en": "monkeys and apes have spoken",
+          "phrase_zh": "猴类与类人猿已能使用语言 \"",
+          "gloss": "猿"
+        },
+        {
+          "term": "king",
+          "zh": "国王；大王",
+          "mode": "review",
+          "options": [
+            "monkey",
+            "king",
+            "leaped",
+            "fruit"
+          ],
+          "answer": 1,
+          "phrase_en": "of a king",
+          "phrase_zh": "国王之子",
+          "ipa": "kɪŋ",
+          "pos": "n.",
+          "def": "n.[C]君主，国王",
+          "gloss": "国王"
+        }
+      ]
+    },
+    {
+      "node_id": "n031",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"He left to find a sage. I guess he returned.\"",
+      "text_zh": "\"他离家寻找一位智者;我想,他后来回来了。\"",
+      "illustration": "assets/adv_frames/ep5/f3.jpg",
+      "audio_start": 143.295,
+      "audio_end": 147.929,
+      "vocab": [
+        {
+          "term": "returned",
+          "zh": "返回",
+          "mode": "learn",
+          "phrase_en": "guess he returned",
+          "phrase_zh": "他回来了吧?",
+          "ipa": "rɪˈtɜː(r)n",
+          "pos": "vt.",
+          "def": "vt.归还vi.回来，返回n.[C,U]回报[sing.]返回",
+          "gloss": "返回"
+        }
+      ]
+    },
+    {
+      "node_id": "n032",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "The demon stood up.",
+      "text_zh": "邪魔站了起来。",
+      "illustration": "assets/adv_frames/ep5/f0.jpg",
+      "audio_start": 147.93,
+      "audio_end": 149.773,
+      "vocab": [
+        {
+          "term": "demon",
+          "zh": "妖怪",
+          "mode": "review",
+          "options": [
+            "leaped",
+            "mountain",
+            "demon",
+            "magic"
+          ],
+          "answer": 2,
+          "phrase_en": "A demon attacked us",
+          "phrase_zh": "一个恶魔袭击了我们",
+          "gloss": "恶魔"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "sit",
+          "ipa": "sɪt",
+          "def": "v.坐",
+          "zh": "坐"
+        },
+        {
+          "term": "eat",
+          "ipa": "iːt",
+          "def": "v.吃",
+          "zh": "吃"
+        },
+        {
+          "term": "meal",
+          "ipa": "miːl",
+          "def": "n.[C]早（或午、晚）餐，一餐所吃的食物",
+          "zh": "早"
+        },
+        {
+          "term": "cry",
+          "ipa": "kraɪ",
+          "def": "v./n.[sing.]哭 [C]叫喊",
+          "zh": "哭"
+        },
+        {
+          "term": "speak",
+          "ipa": "spiːk",
+          "def": "vt.说（某种语言）vi.说话，提起",
+          "zh": "说"
+        },
+        {
+          "term": "return",
+          "ipa": "rɪˈtɜː(r)n",
+          "def": "vt.归还vi.回来，返回n.[C,U]回报[sing.]返回",
+          "zh": "归还"
+        }
+      ]
+    },
+    {
+      "node_id": "n033",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"Does the monkey have any weapons?\"",
+      "text_zh": "\"猴子身上带武器吗?\"",
+      "illustration": "assets/adv_frames/ep5/f1.jpg",
+      "audio_start": 149.774,
+      "audio_end": 153.188,
+      "vocab": [
+        {
+          "term": "weapon",
+          "zh": "武器,兵器",
+          "mode": "learn",
+          "phrase_en": "Does the monkey have any weapons?",
+          "phrase_zh": "武器,兵器",
+          "source": "official_words"
+        },
+        {
+          "term": "monkey",
+          "zh": "猴子",
+          "mode": "test",
+          "options": [
+            "长臂猿",
+            "洞穴",
+            "猴子",
+            "毫毛；头发"
+          ],
+          "answer": 2,
+          "phrase_en": "Does the monkey have any weapons",
+          "phrase_zh": "这只猴子身上带武器吗?",
+          "ipa": "ˈmʌŋki",
+          "pos": "n.",
+          "def": "n.[C]猴子",
+          "gloss": "猴子"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "say",
+          "ipa": "seɪ",
+          "def": "v.说，讲",
+          "zh": "说"
+        },
+        {
+          "term": "guard",
+          "ipa": "ɡɑː(r)d",
+          "def": "n.[C]警卫，看守；防护装置vt.守卫，保卫",
+          "zh": "警卫"
+        },
+        {
+          "term": "look",
+          "ipa": "lʊk",
+          "def": "vi.看v.-link.看上去n.[C]看，注视，外表，表情",
+          "zh": "看"
+        },
+        {
+          "term": "laugh",
+          "ipa": "lɑːf",
+          "def": "v.笑，发笑n.笑声",
+          "zh": "笑"
+        },
+        {
+          "term": "monkey",
+          "ipa": "ˈmʌŋki",
+          "def": "n.[C]猴子",
+          "zh": "猴子"
+        },
+        {
+          "term": "imagine",
+          "ipa": "ɪˈmædʒɪn",
+          "def": "v.想象，设想",
+          "zh": "想象"
+        },
+        {
+          "term": "afraid",
+          "ipa": "əˈfreɪd",
+          "def": "adj.害怕，畏惧",
+          "zh": "害怕"
+        },
+        {
+          "term": "jump",
+          "ipa": "dʒʌmp",
+          "def": "v.跳，跃n.[C]跳，跃（指运动）",
+          "zh": "跳"
+        },
+        {
+          "term": "hit",
+          "ipa": "hɪt",
+          "def": "v.打，袭击n.[C]击中",
+          "zh": "打"
+        },
+        {
+          "term": "cry",
+          "ipa": "kraɪ",
+          "def": "v./n.[sing.]哭 [C]叫喊",
+          "zh": "哭"
+        },
+        {
+          "term": "blow",
+          "ipa": "bləʊ",
+          "def": "v.吹，刮；炸开",
+          "zh": "吹"
+        },
+        {
+          "term": "turn",
+          "ipa": "tɜː(r)n",
+          "def": "v.转向，翻圈v.-link.（使）变成n.[C]轮流圈国",
+          "zh": "转向"
+        },
+        {
+          "term": "kick",
+          "ipa": "kɪk",
+          "def": "",
+          "zh": "kick"
+        }
+      ]
+    },
+    {
+      "node_id": "n034",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"No,\" said one guard.",
+      "text_zh": "\"不,\"一名守卫说道。",
+      "illustration": "assets/adv_frames/ep5/f2.jpg",
+      "audio_start": 153.189,
+      "audio_end": 156.114,
+      "vocab": [],
+      "page_words": [
+        {
+          "term": "sit",
+          "ipa": "sɪt",
+          "def": "v.坐",
+          "zh": "坐"
+        },
+        {
+          "term": "eat",
+          "ipa": "iːt",
+          "def": "v.吃",
+          "zh": "吃"
+        },
+        {
+          "term": "meal",
+          "ipa": "miːl",
+          "def": "n.[C]早（或午、晚）餐，一餐所吃的食物",
+          "zh": "早"
+        },
+        {
+          "term": "cry",
+          "ipa": "kraɪ",
+          "def": "v./n.[sing.]哭 [C]叫喊",
+          "zh": "哭"
+        },
+        {
+          "term": "speak",
+          "ipa": "spiːk",
+          "def": "vt.说（某种语言）vi.说话，提起",
+          "zh": "说"
+        },
+        {
+          "term": "return",
+          "ipa": "rɪˈtɜː(r)n",
+          "def": "vt.归还vi.回来，返回n.[C,U]回报[sing.]返回",
+          "zh": "归还"
+        }
+      ]
+    },
+    {
+      "node_id": "n035",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"Then get me my armor and my sword,\" said the demon.",
+      "text_zh": "\"然后把我的盔甲和剑给我吧,\"恶魔说道。",
+      "illustration": "assets/adv_frames/ep5/f3.jpg",
+      "audio_start": 156.115,
+      "audio_end": 161.055,
+      "vocab": [
+        {
+          "term": "demon",
+          "zh": "妖怪",
+          "mode": "review",
+          "options": [
+            "protect",
+            "gathered",
+            "learned",
+            "demon"
+          ],
+          "answer": 3,
+          "phrase_en": "A demon attacked us",
+          "phrase_zh": "一个恶魔袭击了我们",
+          "gloss": "恶魔"
+        }
+      ],
+      "quiz_after": {
+        "q": "What did the demon ask his guards to bring?",
+        "choices": [
+          "a sword and armor",
+          "a meal",
+          "a fake monkey"
+        ],
+        "answer": 0,
+        "q_zh": "恶魔让他的守卫带来什么？",
+        "choices_zh": [
+          "一把剑和一副盔甲",
+          "一顿饭",
+          "一只假猴子"
+        ]
+      },
+      "page_words": [
+        {
+          "term": "say",
+          "ipa": "seɪ",
+          "def": "v.说，讲",
+          "zh": "说"
+        },
+        {
+          "term": "guard",
+          "ipa": "ɡɑː(r)d",
+          "def": "n.[C]警卫，看守；防护装置vt.守卫，保卫",
+          "zh": "警卫"
+        },
+        {
+          "term": "look",
+          "ipa": "lʊk",
+          "def": "vi.看v.-link.看上去n.[C]看，注视，外表，表情",
+          "zh": "看"
+        },
+        {
+          "term": "laugh",
+          "ipa": "lɑːf",
+          "def": "v.笑，发笑n.笑声",
+          "zh": "笑"
+        },
+        {
+          "term": "monkey",
+          "ipa": "ˈmʌŋki",
+          "def": "n.[C]猴子",
+          "zh": "猴子"
+        },
+        {
+          "term": "imagine",
+          "ipa": "ɪˈmædʒɪn",
+          "def": "v.想象，设想",
+          "zh": "想象"
+        },
+        {
+          "term": "afraid",
+          "ipa": "əˈfreɪd",
+          "def": "adj.害怕，畏惧",
+          "zh": "害怕"
+        },
+        {
+          "term": "jump",
+          "ipa": "dʒʌmp",
+          "def": "v.跳，跃n.[C]跳，跃（指运动）",
+          "zh": "跳"
+        },
+        {
+          "term": "hit",
+          "ipa": "hɪt",
+          "def": "v.打，袭击n.[C]击中",
+          "zh": "打"
+        },
+        {
+          "term": "cry",
+          "ipa": "kraɪ",
+          "def": "v./n.[sing.]哭 [C]叫喊",
+          "zh": "哭"
+        },
+        {
+          "term": "blow",
+          "ipa": "bləʊ",
+          "def": "v.吹，刮；炸开",
+          "zh": "吹"
+        },
+        {
+          "term": "turn",
+          "ipa": "tɜː(r)n",
+          "def": "v.转向，翻圈v.-link.（使）变成n.[C]轮流圈国",
+          "zh": "转向"
+        },
+        {
+          "term": "kick",
+          "ipa": "kɪk",
+          "def": "",
+          "zh": "kick"
+        }
+      ]
+    },
+    {
+      "node_id": "n036",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "A moment later the Demon of Chaos walked outside.",
+      "text_zh": "moment later,混沌魔尊步出室外。",
+      "illustration": "assets/adv_frames/ep5/f0.jpg",
+      "audio_start": 161.056,
+      "audio_end": 168.744,
+      "vocab": [
+        {
+          "term": "demon",
+          "zh": "妖怪",
+          "mode": "review",
+          "options": [
+            "learned",
+            "fruit",
+            "demon",
+            "mountain"
+          ],
+          "answer": 2,
+          "phrase_en": "A demon attacked us",
+          "phrase_zh": "一个恶魔袭击了我们",
+          "gloss": "恶魔"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "say",
+          "ipa": "seɪ",
+          "def": "v.说，讲",
+          "zh": "说"
+        },
+        {
+          "term": "guard",
+          "ipa": "ɡɑː(r)d",
+          "def": "n.[C]警卫，看守；防护装置vt.守卫，保卫",
+          "zh": "警卫"
+        },
+        {
+          "term": "look",
+          "ipa": "lʊk",
+          "def": "vi.看v.-link.看上去n.[C]看，注视，外表，表情",
+          "zh": "看"
+        },
+        {
+          "term": "laugh",
+          "ipa": "lɑːf",
+          "def": "v.笑，发笑n.笑声",
+          "zh": "笑"
+        },
+        {
+          "term": "monkey",
+          "ipa": "ˈmʌŋki",
+          "def": "n.[C]猴子",
+          "zh": "猴子"
+        },
+        {
+          "term": "imagine",
+          "ipa": "ɪˈmædʒɪn",
+          "def": "v.想象，设想",
+          "zh": "想象"
+        },
+        {
+          "term": "afraid",
+          "ipa": "əˈfreɪd",
+          "def": "adj.害怕，畏惧",
+          "zh": "害怕"
+        },
+        {
+          "term": "jump",
+          "ipa": "dʒʌmp",
+          "def": "v.跳，跃n.[C]跳，跃（指运动）",
+          "zh": "跳"
+        },
+        {
+          "term": "hit",
+          "ipa": "hɪt",
+          "def": "v.打，袭击n.[C]击中",
+          "zh": "打"
+        },
+        {
+          "term": "cry",
+          "ipa": "kraɪ",
+          "def": "v./n.[sing.]哭 [C]叫喊",
+          "zh": "哭"
+        },
+        {
+          "term": "blow",
+          "ipa": "bləʊ",
+          "def": "v.吹，刮；炸开",
+          "zh": "吹"
+        },
+        {
+          "term": "turn",
+          "ipa": "tɜː(r)n",
+          "def": "v.转向，翻圈v.-link.（使）变成n.[C]轮流圈国",
+          "zh": "转向"
+        },
+        {
+          "term": "kick",
+          "ipa": "kɪk",
+          "def": "",
+          "zh": "kick"
+        }
+      ]
+    },
+    {
+      "node_id": "n037",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "He looked at Wukong and laughed.",
+      "text_zh": "他看着悟空,笑了起来。",
+      "illustration": "assets/adv_frames/ep5/f1.jpg",
+      "audio_start": 168.745,
+      "audio_end": 171.411,
+      "vocab": [],
+      "page_words": [
+        {
+          "term": "say",
+          "ipa": "seɪ",
+          "def": "v.说，讲",
+          "zh": "说"
+        },
+        {
+          "term": "guard",
+          "ipa": "ɡɑː(r)d",
+          "def": "n.[C]警卫，看守；防护装置vt.守卫，保卫",
+          "zh": "警卫"
+        },
+        {
+          "term": "look",
+          "ipa": "lʊk",
+          "def": "vi.看v.-link.看上去n.[C]看，注视，外表，表情",
+          "zh": "看"
+        },
+        {
+          "term": "laugh",
+          "ipa": "lɑːf",
+          "def": "v.笑，发笑n.笑声",
+          "zh": "笑"
+        },
+        {
+          "term": "monkey",
+          "ipa": "ˈmʌŋki",
+          "def": "n.[C]猴子",
+          "zh": "猴子"
+        },
+        {
+          "term": "imagine",
+          "ipa": "ɪˈmædʒɪn",
+          "def": "v.想象，设想",
+          "zh": "想象"
+        },
+        {
+          "term": "afraid",
+          "ipa": "əˈfreɪd",
+          "def": "adj.害怕，畏惧",
+          "zh": "害怕"
+        },
+        {
+          "term": "jump",
+          "ipa": "dʒʌmp",
+          "def": "v.跳，跃n.[C]跳，跃（指运动）",
+          "zh": "跳"
+        },
+        {
+          "term": "hit",
+          "ipa": "hɪt",
+          "def": "v.打，袭击n.[C]击中",
+          "zh": "打"
+        },
+        {
+          "term": "cry",
+          "ipa": "kraɪ",
+          "def": "v./n.[sing.]哭 [C]叫喊",
+          "zh": "哭"
+        },
+        {
+          "term": "blow",
+          "ipa": "bləʊ",
+          "def": "v.吹，刮；炸开",
+          "zh": "吹"
+        },
+        {
+          "term": "turn",
+          "ipa": "tɜː(r)n",
+          "def": "v.转向，翻圈v.-link.（使）变成n.[C]轮流圈国",
+          "zh": "转向"
+        },
+        {
+          "term": "kick",
+          "ipa": "kɪk",
+          "def": "",
+          "zh": "kick"
+        }
+      ]
+    },
+    {
+      "node_id": "n038",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"You're just a little monkey!\" he said.",
+      "text_zh": "\"你不过是个小猴子罢了!\"他说道。",
+      "illustration": "assets/adv_frames/ep5/f2.jpg",
+      "audio_start": 171.412,
+      "audio_end": 174.871,
+      "vocab": [
+        {
+          "term": "monkey",
+          "zh": "猴子",
+          "mode": "review",
+          "options": [
+            "fight",
+            "monkey",
+            "apes",
+            "gibbon"
+          ],
+          "answer": 1,
+          "phrase_en": "You're just a little monkey",
+          "phrase_zh": "你不过是个小猴子而已",
+          "ipa": "ˈmʌŋki",
+          "pos": "n.",
+          "def": "n.[C]猴子",
+          "gloss": "猴子"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "say",
+          "ipa": "seɪ",
+          "def": "v.说，讲",
+          "zh": "说"
+        },
+        {
+          "term": "guard",
+          "ipa": "ɡɑː(r)d",
+          "def": "n.[C]警卫，看守；防护装置vt.守卫，保卫",
+          "zh": "警卫"
+        },
+        {
+          "term": "look",
+          "ipa": "lʊk",
+          "def": "vi.看v.-link.看上去n.[C]看，注视，外表，表情",
+          "zh": "看"
+        },
+        {
+          "term": "laugh",
+          "ipa": "lɑːf",
+          "def": "v.笑，发笑n.笑声",
+          "zh": "笑"
+        },
+        {
+          "term": "monkey",
+          "ipa": "ˈmʌŋki",
+          "def": "n.[C]猴子",
+          "zh": "猴子"
+        },
+        {
+          "term": "imagine",
+          "ipa": "ɪˈmædʒɪn",
+          "def": "v.想象，设想",
+          "zh": "想象"
+        },
+        {
+          "term": "afraid",
+          "ipa": "əˈfreɪd",
+          "def": "adj.害怕，畏惧",
+          "zh": "害怕"
+        },
+        {
+          "term": "jump",
+          "ipa": "dʒʌmp",
+          "def": "v.跳，跃n.[C]跳，跃（指运动）",
+          "zh": "跳"
+        },
+        {
+          "term": "hit",
+          "ipa": "hɪt",
+          "def": "v.打，袭击n.[C]击中",
+          "zh": "打"
+        },
+        {
+          "term": "cry",
+          "ipa": "kraɪ",
+          "def": "v./n.[sing.]哭 [C]叫喊",
+          "zh": "哭"
+        },
+        {
+          "term": "blow",
+          "ipa": "bləʊ",
+          "def": "v.吹，刮；炸开",
+          "zh": "吹"
+        },
+        {
+          "term": "turn",
+          "ipa": "tɜː(r)n",
+          "def": "v.转向，翻圈v.-link.（使）变成n.[C]轮流圈国",
+          "zh": "转向"
+        },
+        {
+          "term": "kick",
+          "ipa": "kɪk",
+          "def": "",
+          "zh": "kick"
+        }
+      ]
+    },
+    {
+      "node_id": "n039",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "Wukong looked up at the huge demon.",
+      "text_zh": "悟空抬头望向那头巨大的妖怪。",
+      "illustration": "assets/adv_frames/ep5/f3.jpg",
+      "audio_start": 174.872,
+      "audio_end": 178.036,
+      "vocab": [
+        {
+          "term": "demon",
+          "zh": "妖怪",
+          "mode": "review",
+          "options": [
+            "demon",
+            "apes",
+            "fight",
+            "spell"
+          ],
+          "answer": 0,
+          "phrase_en": "A demon attacked us",
+          "phrase_zh": "一个恶魔袭击了我们",
+          "gloss": "恶魔"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "say",
+          "ipa": "seɪ",
+          "def": "v.说，讲",
+          "zh": "说"
+        },
+        {
+          "term": "guard",
+          "ipa": "ɡɑː(r)d",
+          "def": "n.[C]警卫，看守；防护装置vt.守卫，保卫",
+          "zh": "警卫"
+        },
+        {
+          "term": "look",
+          "ipa": "lʊk",
+          "def": "vi.看v.-link.看上去n.[C]看，注视，外表，表情",
+          "zh": "看"
+        },
+        {
+          "term": "laugh",
+          "ipa": "lɑːf",
+          "def": "v.笑，发笑n.笑声",
+          "zh": "笑"
+        },
+        {
+          "term": "monkey",
+          "ipa": "ˈmʌŋki",
+          "def": "n.[C]猴子",
+          "zh": "猴子"
+        },
+        {
+          "term": "imagine",
+          "ipa": "ɪˈmædʒɪn",
+          "def": "v.想象，设想",
+          "zh": "想象"
+        },
+        {
+          "term": "afraid",
+          "ipa": "əˈfreɪd",
+          "def": "adj.害怕，畏惧",
+          "zh": "害怕"
+        },
+        {
+          "term": "jump",
+          "ipa": "dʒʌmp",
+          "def": "v.跳，跃n.[C]跳，跃（指运动）",
+          "zh": "跳"
+        },
+        {
+          "term": "hit",
+          "ipa": "hɪt",
+          "def": "v.打，袭击n.[C]击中",
+          "zh": "打"
+        },
+        {
+          "term": "cry",
+          "ipa": "kraɪ",
+          "def": "v./n.[sing.]哭 [C]叫喊",
+          "zh": "哭"
+        },
+        {
+          "term": "blow",
+          "ipa": "bləʊ",
+          "def": "v.吹，刮；炸开",
+          "zh": "吹"
+        },
+        {
+          "term": "turn",
+          "ipa": "tɜː(r)n",
+          "def": "v.转向，翻圈v.-link.（使）变成n.[C]轮流圈国",
+          "zh": "转向"
+        },
+        {
+          "term": "kick",
+          "ipa": "kɪk",
+          "def": "",
+          "zh": "kick"
+        }
+      ]
+    },
+    {
+      "node_id": "n040",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"I am small,\" he said, \"but I am more powerful than you can imagine.\"",
+      "text_zh": "\"我虽渺小,\"他说道,\"但我所拥有的力量远超你的想象。\"",
+      "illustration": "assets/adv_frames/ep5/f0.jpg",
+      "audio_start": 178.037,
+      "audio_end": 184.945,
+      "vocab": [
+        {
+          "term": "imagine",
+          "zh": "想像",
+          "mode": "learn",
+          "phrase_en": "\"I am small,\" he said, \"but I am more powerful than you can imagine .\"",
+          "phrase_zh": "想像",
+          "source": "official_words"
+        },
+        {
+          "term": "powerful",
+          "zh": "强大的",
+          "mode": "review",
+          "options": [
+            "fruit",
+            "leaped",
+            "powerful",
+            "spell"
+          ],
+          "answer": 2,
+          "phrase_en": "am more powerful than you",
+          "phrase_zh": "我比你更强",
+          "gloss": "强大的"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "what",
+          "ipa": "wɒt",
+          "def": "pron./adj.什么",
+          "zh": "什么"
+        },
+        {
+          "term": "try",
+          "ipa": "traɪ",
+          "def": "v./n.[C]尝试，设法，努力",
+          "zh": "尝试"
+        },
+        {
+          "term": "fight",
+          "ipa": "faɪt",
+          "def": "v./n.[C]打架，战斗v.与……作斗争",
+          "zh": "打架"
+        },
+        {
+          "term": "magic",
+          "ipa": "ˈmædʒɪk",
+          "def": "adj.有魔力的，有神奇力量的n.[U]魔术；魔法，魔力，魅力",
+          "zh": "有魔力的"
+        },
+        {
+          "term": "spell",
+          "ipa": "spel",
+          "def": "v.用字母拼，拼写n.[C]咒语",
+          "zh": "用字母拼"
+        },
+        {
+          "term": "call",
+          "ipa": "kɔːl",
+          "def": "v.给……打电话，把……叫作，呼喊n.[C]电话，叫声圈国",
+          "zh": "给"
+        },
+        {
+          "term": "cheer",
+          "ipa": "tʃɪə(r)",
+          "def": "v.欢呼，喝彩，使高兴，鼓舞n.[C]欢呼声 [U]欢乐（或幸福）的气氛",
+          "zh": "欢呼"
+        },
+        {
+          "term": "come",
+          "ipa": "kʌm",
+          "def": "vi.来，来到v.-link.成为，变成，变得",
+          "zh": "来"
+        },
+        {
+          "term": "smile",
+          "ipa": "smaɪ",
+          "def": "vi./n.[C]笑，微笑",
+          "zh": "笑"
+        },
+        {
+          "term": "take",
+          "ipa": "teɪk",
+          "def": "v.买下，花费，拿走，乘坐，服药，记录，拍照，参加（考试或测验），接受",
+          "zh": "买下"
+        },
+        {
+          "term": "home",
+          "ipa": "həʊm",
+          "def": "n.[C,U]家，养老院adv.到家，在家",
+          "zh": "家"
+        },
+        {
+          "term": "next",
+          "ipa": "nekst",
+          "def": "adj./n[sing.]下一个（的）adv.紧接着，随后",
+          "zh": "下一个"
+        },
+        {
+          "term": "morning",
+          "ipa": "ˈmɔː(r)nɪŋ",
+          "def": "n.[C,U]早晨，上午",
+          "zh": "早晨"
+        },
+        {
+          "term": "wake",
+          "ipa": "weɪk",
+          "def": "v.弄醒，醒n.（常构成搭配）",
+          "zh": "弄醒"
+        },
+        {
+          "term": "early",
+          "ipa": "ˈɜː(r)li",
+          "def": "adv./adj.早（的）",
+          "zh": "早"
+        },
+        {
+          "term": "protect",
+          "ipa": "prəˈtek",
+          "def": "v.保护，防护",
+          "zh": "保护"
+        },
+        {
+          "term": "teach",
+          "ipa": "tiːtʃ",
+          "def": "",
+          "zh": "teach"
+        }
+      ]
+    },
+    {
+      "node_id": "n041",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"I'm not afraid of you!\" said the demon.",
+      "text_zh": "\"我不怕你!\"恶魔说道。",
+      "illustration": "assets/adv_frames/ep5/f1.jpg",
+      "audio_start": 184.946,
+      "audio_end": 188.415,
+      "vocab": [
+        {
+          "term": "afraid",
+          "zh": "害怕的",
+          "mode": "test",
+          "options": [
+            "打架",
+            "洞穴",
+            "跃入",
+            "害怕的"
+          ],
+          "answer": 3,
+          "phrase_en": "I'm not afraid of you",
+          "phrase_zh": "我不怕你",
+          "ipa": "əˈfreɪd",
+          "pos": "adj.",
+          "def": "adj.害怕，畏惧",
+          "gloss": "害怕的"
+        },
+        {
+          "term": "demon",
+          "zh": "妖怪",
+          "mode": "review",
+          "options": [
+            "demon",
+            "monkey",
+            "fruit",
+            "magic"
+          ],
+          "answer": 0,
+          "phrase_en": "A demon attacked us",
+          "phrase_zh": "一个恶魔袭击了我们",
+          "gloss": "恶魔"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "what",
+          "ipa": "wɒt",
+          "def": "pron./adj.什么",
+          "zh": "什么"
+        },
+        {
+          "term": "try",
+          "ipa": "traɪ",
+          "def": "v./n.[C]尝试，设法，努力",
+          "zh": "尝试"
+        },
+        {
+          "term": "fight",
+          "ipa": "faɪt",
+          "def": "v./n.[C]打架，战斗v.与……作斗争",
+          "zh": "打架"
+        },
+        {
+          "term": "magic",
+          "ipa": "ˈmædʒɪk",
+          "def": "adj.有魔力的，有神奇力量的n.[U]魔术；魔法，魔力，魅力",
+          "zh": "有魔力的"
+        },
+        {
+          "term": "spell",
+          "ipa": "spel",
+          "def": "v.用字母拼，拼写n.[C]咒语",
+          "zh": "用字母拼"
+        },
+        {
+          "term": "call",
+          "ipa": "kɔːl",
+          "def": "v.给……打电话，把……叫作，呼喊n.[C]电话，叫声圈国",
+          "zh": "给"
+        },
+        {
+          "term": "cheer",
+          "ipa": "tʃɪə(r)",
+          "def": "v.欢呼，喝彩，使高兴，鼓舞n.[C]欢呼声 [U]欢乐（或幸福）的气氛",
+          "zh": "欢呼"
+        },
+        {
+          "term": "come",
+          "ipa": "kʌm",
+          "def": "vi.来，来到v.-link.成为，变成，变得",
+          "zh": "来"
+        },
+        {
+          "term": "smile",
+          "ipa": "smaɪ",
+          "def": "vi./n.[C]笑，微笑",
+          "zh": "笑"
+        },
+        {
+          "term": "take",
+          "ipa": "teɪk",
+          "def": "v.买下，花费，拿走，乘坐，服药，记录，拍照，参加（考试或测验），接受",
+          "zh": "买下"
+        },
+        {
+          "term": "home",
+          "ipa": "həʊm",
+          "def": "n.[C,U]家，养老院adv.到家，在家",
+          "zh": "家"
+        },
+        {
+          "term": "next",
+          "ipa": "nekst",
+          "def": "adj./n[sing.]下一个（的）adv.紧接着，随后",
+          "zh": "下一个"
+        },
+        {
+          "term": "morning",
+          "ipa": "ˈmɔː(r)nɪŋ",
+          "def": "n.[C,U]早晨，上午",
+          "zh": "早晨"
+        },
+        {
+          "term": "wake",
+          "ipa": "weɪk",
+          "def": "v.弄醒，醒n.（常构成搭配）",
+          "zh": "弄醒"
+        },
+        {
+          "term": "early",
+          "ipa": "ˈɜː(r)li",
+          "def": "adv./adj.早（的）",
+          "zh": "早"
+        },
+        {
+          "term": "protect",
+          "ipa": "prəˈtek",
+          "def": "v.保护，防护",
+          "zh": "保护"
+        },
+        {
+          "term": "teach",
+          "ipa": "tiːtʃ",
+          "def": "",
+          "zh": "teach"
+        }
+      ]
+    },
+    {
+      "node_id": "n042",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "He swung his sword.",
+      "text_zh": "他挥动起剑来。",
+      "illustration": "assets/adv_frames/ep5/f2.jpg",
+      "audio_start": 188.416,
+      "audio_end": 190.66,
+      "vocab": [
+        {
+          "term": "swung",
+          "zh": "荡",
+          "mode": "learn",
+          "phrase_en": "He swung his sword",
+          "phrase_zh": "他挥动起剑来"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "what",
+          "ipa": "wɒt",
+          "def": "pron./adj.什么",
+          "zh": "什么"
+        },
+        {
+          "term": "try",
+          "ipa": "traɪ",
+          "def": "v./n.[C]尝试，设法，努力",
+          "zh": "尝试"
+        },
+        {
+          "term": "fight",
+          "ipa": "faɪt",
+          "def": "v./n.[C]打架，战斗v.与……作斗争",
+          "zh": "打架"
+        },
+        {
+          "term": "magic",
+          "ipa": "ˈmædʒɪk",
+          "def": "adj.有魔力的，有神奇力量的n.[U]魔术；魔法，魔力，魅力",
+          "zh": "有魔力的"
+        },
+        {
+          "term": "spell",
+          "ipa": "spel",
+          "def": "v.用字母拼，拼写n.[C]咒语",
+          "zh": "用字母拼"
+        },
+        {
+          "term": "call",
+          "ipa": "kɔːl",
+          "def": "v.给……打电话，把……叫作，呼喊n.[C]电话，叫声圈国",
+          "zh": "给"
+        },
+        {
+          "term": "cheer",
+          "ipa": "tʃɪə(r)",
+          "def": "v.欢呼，喝彩，使高兴，鼓舞n.[C]欢呼声 [U]欢乐（或幸福）的气氛",
+          "zh": "欢呼"
+        },
+        {
+          "term": "come",
+          "ipa": "kʌm",
+          "def": "vi.来，来到v.-link.成为，变成，变得",
+          "zh": "来"
+        },
+        {
+          "term": "smile",
+          "ipa": "smaɪ",
+          "def": "vi./n.[C]笑，微笑",
+          "zh": "笑"
+        },
+        {
+          "term": "take",
+          "ipa": "teɪk",
+          "def": "v.买下，花费，拿走，乘坐，服药，记录，拍照，参加（考试或测验），接受",
+          "zh": "买下"
+        },
+        {
+          "term": "home",
+          "ipa": "həʊm",
+          "def": "n.[C,U]家，养老院adv.到家，在家",
+          "zh": "家"
+        },
+        {
+          "term": "next",
+          "ipa": "nekst",
+          "def": "adj./n[sing.]下一个（的）adv.紧接着，随后",
+          "zh": "下一个"
+        },
+        {
+          "term": "morning",
+          "ipa": "ˈmɔː(r)nɪŋ",
+          "def": "n.[C,U]早晨，上午",
+          "zh": "早晨"
+        },
+        {
+          "term": "wake",
+          "ipa": "weɪk",
+          "def": "v.弄醒，醒n.（常构成搭配）",
+          "zh": "弄醒"
+        },
+        {
+          "term": "early",
+          "ipa": "ˈɜː(r)li",
+          "def": "adv./adj.早（的）",
+          "zh": "早"
+        },
+        {
+          "term": "protect",
+          "ipa": "prəˈtek",
+          "def": "v.保护，防护",
+          "zh": "保护"
+        },
+        {
+          "term": "teach",
+          "ipa": "tiːtʃ",
+          "def": "",
+          "zh": "teach"
+        }
+      ]
+    },
+    {
+      "node_id": "n043",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "Wukong jumped out of the way and then flew at the demon.",
+      "text_zh": "猿猴从原地跳开,随即向那头魔怪飞去。",
+      "illustration": "assets/adv_frames/ep5/f3.jpg",
+      "audio_start": 190.661,
+      "audio_end": 194.732,
+      "vocab": [
+        {
+          "term": "demon",
+          "zh": "妖怪",
+          "mode": "review",
+          "options": [
+            "magic",
+            "demon",
+            "leaped",
+            "gibbon"
+          ],
+          "answer": 1,
+          "phrase_en": "A demon attacked us",
+          "phrase_zh": "一个恶魔袭击了我们",
+          "gloss": "恶魔"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "what",
+          "ipa": "wɒt",
+          "def": "pron./adj.什么",
+          "zh": "什么"
+        },
+        {
+          "term": "try",
+          "ipa": "traɪ",
+          "def": "v./n.[C]尝试，设法，努力",
+          "zh": "尝试"
+        },
+        {
+          "term": "fight",
+          "ipa": "faɪt",
+          "def": "v./n.[C]打架，战斗v.与……作斗争",
+          "zh": "打架"
+        },
+        {
+          "term": "magic",
+          "ipa": "ˈmædʒɪk",
+          "def": "adj.有魔力的，有神奇力量的n.[U]魔术；魔法，魔力，魅力",
+          "zh": "有魔力的"
+        },
+        {
+          "term": "spell",
+          "ipa": "spel",
+          "def": "v.用字母拼，拼写n.[C]咒语",
+          "zh": "用字母拼"
+        },
+        {
+          "term": "call",
+          "ipa": "kɔːl",
+          "def": "v.给……打电话，把……叫作，呼喊n.[C]电话，叫声圈国",
+          "zh": "给"
+        },
+        {
+          "term": "cheer",
+          "ipa": "tʃɪə(r)",
+          "def": "v.欢呼，喝彩，使高兴，鼓舞n.[C]欢呼声 [U]欢乐（或幸福）的气氛",
+          "zh": "欢呼"
+        },
+        {
+          "term": "come",
+          "ipa": "kʌm",
+          "def": "vi.来，来到v.-link.成为，变成，变得",
+          "zh": "来"
+        },
+        {
+          "term": "smile",
+          "ipa": "smaɪ",
+          "def": "vi./n.[C]笑，微笑",
+          "zh": "笑"
+        },
+        {
+          "term": "take",
+          "ipa": "teɪk",
+          "def": "v.买下，花费，拿走，乘坐，服药，记录，拍照，参加（考试或测验），接受",
+          "zh": "买下"
+        },
+        {
+          "term": "home",
+          "ipa": "həʊm",
+          "def": "n.[C,U]家，养老院adv.到家，在家",
+          "zh": "家"
+        },
+        {
+          "term": "next",
+          "ipa": "nekst",
+          "def": "adj./n[sing.]下一个（的）adv.紧接着，随后",
+          "zh": "下一个"
+        },
+        {
+          "term": "morning",
+          "ipa": "ˈmɔː(r)nɪŋ",
+          "def": "n.[C,U]早晨，上午",
+          "zh": "早晨"
+        },
+        {
+          "term": "wake",
+          "ipa": "weɪk",
+          "def": "v.弄醒，醒n.（常构成搭配）",
+          "zh": "弄醒"
+        },
+        {
+          "term": "early",
+          "ipa": "ˈɜː(r)li",
+          "def": "adv./adj.早（的）",
+          "zh": "早"
+        },
+        {
+          "term": "protect",
+          "ipa": "prəˈtek",
+          "def": "v.保护，防护",
+          "zh": "保护"
+        },
+        {
+          "term": "teach",
+          "ipa": "tiːtʃ",
+          "def": "",
+          "zh": "teach"
+        }
+      ]
+    },
+    {
+      "node_id": "n044",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "<font color=\"#ffff00\"><i>Pow!</i></font> Wukong hit the demon on the nose.",
+      "text_zh": "<font color=\"#ffff00\">(i)砰!(/i)</font> 悟空击中了那妖怪的鼻子。",
+      "illustration": "assets/adv_frames/ep5/f0.jpg",
+      "audio_start": 194.733,
+      "audio_end": 199.412,
+      "vocab": [
+        {
+          "term": "demon",
+          "zh": "妖怪",
+          "mode": "review",
+          "options": [
+            "demon",
+            "afraid",
+            "apes",
+            "returned"
+          ],
+          "answer": 0,
+          "phrase_en": "A demon attacked us",
+          "phrase_zh": "一个恶魔袭击了我们",
+          "gloss": "恶魔"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "what",
+          "ipa": "wɒt",
+          "def": "pron./adj.什么",
+          "zh": "什么"
+        },
+        {
+          "term": "try",
+          "ipa": "traɪ",
+          "def": "v./n.[C]尝试，设法，努力",
+          "zh": "尝试"
+        },
+        {
+          "term": "fight",
+          "ipa": "faɪt",
+          "def": "v./n.[C]打架，战斗v.与……作斗争",
+          "zh": "打架"
+        },
+        {
+          "term": "magic",
+          "ipa": "ˈmædʒɪk",
+          "def": "adj.有魔力的，有神奇力量的n.[U]魔术；魔法，魔力，魅力",
+          "zh": "有魔力的"
+        },
+        {
+          "term": "spell",
+          "ipa": "spel",
+          "def": "v.用字母拼，拼写n.[C]咒语",
+          "zh": "用字母拼"
+        },
+        {
+          "term": "call",
+          "ipa": "kɔːl",
+          "def": "v.给……打电话，把……叫作，呼喊n.[C]电话，叫声圈国",
+          "zh": "给"
+        },
+        {
+          "term": "cheer",
+          "ipa": "tʃɪə(r)",
+          "def": "v.欢呼，喝彩，使高兴，鼓舞n.[C]欢呼声 [U]欢乐（或幸福）的气氛",
+          "zh": "欢呼"
+        },
+        {
+          "term": "come",
+          "ipa": "kʌm",
+          "def": "vi.来，来到v.-link.成为，变成，变得",
+          "zh": "来"
+        },
+        {
+          "term": "smile",
+          "ipa": "smaɪ",
+          "def": "vi./n.[C]笑，微笑",
+          "zh": "笑"
+        },
+        {
+          "term": "take",
+          "ipa": "teɪk",
+          "def": "v.买下，花费，拿走，乘坐，服药，记录，拍照，参加（考试或测验），接受",
+          "zh": "买下"
+        },
+        {
+          "term": "home",
+          "ipa": "həʊm",
+          "def": "n.[C,U]家，养老院adv.到家，在家",
+          "zh": "家"
+        },
+        {
+          "term": "next",
+          "ipa": "nekst",
+          "def": "adj./n[sing.]下一个（的）adv.紧接着，随后",
+          "zh": "下一个"
+        },
+        {
+          "term": "morning",
+          "ipa": "ˈmɔː(r)nɪŋ",
+          "def": "n.[C,U]早晨，上午",
+          "zh": "早晨"
+        },
+        {
+          "term": "wake",
+          "ipa": "weɪk",
+          "def": "v.弄醒，醒n.（常构成搭配）",
+          "zh": "弄醒"
+        },
+        {
+          "term": "early",
+          "ipa": "ˈɜː(r)li",
+          "def": "adv./adj.早（的）",
+          "zh": "早"
+        },
+        {
+          "term": "protect",
+          "ipa": "prəˈtek",
+          "def": "v.保护，防护",
+          "zh": "保护"
+        },
+        {
+          "term": "teach",
+          "ipa": "tiːtʃ",
+          "def": "",
+          "zh": "teach"
+        }
+      ]
+    },
+    {
+      "node_id": "n045",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"Argh!\" cried the demon.",
+      "text_zh": "\"啊!\"恶魔惊呼道。",
+      "illustration": "assets/adv_frames/ep5/f1.jpg",
+      "audio_start": 199.413,
+      "audio_end": 202.177,
+      "vocab": [
+        {
+          "term": "demon",
+          "zh": "妖怪",
+          "mode": "review",
+          "options": [
+            "leaped",
+            "demon",
+            "spell",
+            "fight"
+          ],
+          "answer": 1,
+          "phrase_en": "A demon attacked us",
+          "phrase_zh": "一个恶魔袭击了我们",
+          "gloss": "恶魔"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "what",
+          "ipa": "wɒt",
+          "def": "pron./adj.什么",
+          "zh": "什么"
+        },
+        {
+          "term": "try",
+          "ipa": "traɪ",
+          "def": "v./n.[C]尝试，设法，努力",
+          "zh": "尝试"
+        },
+        {
+          "term": "fight",
+          "ipa": "faɪt",
+          "def": "v./n.[C]打架，战斗v.与……作斗争",
+          "zh": "打架"
+        },
+        {
+          "term": "magic",
+          "ipa": "ˈmædʒɪk",
+          "def": "adj.有魔力的，有神奇力量的n.[U]魔术；魔法，魔力，魅力",
+          "zh": "有魔力的"
+        },
+        {
+          "term": "spell",
+          "ipa": "spel",
+          "def": "v.用字母拼，拼写n.[C]咒语",
+          "zh": "用字母拼"
+        },
+        {
+          "term": "call",
+          "ipa": "kɔːl",
+          "def": "v.给……打电话，把……叫作，呼喊n.[C]电话，叫声圈国",
+          "zh": "给"
+        },
+        {
+          "term": "cheer",
+          "ipa": "tʃɪə(r)",
+          "def": "v.欢呼，喝彩，使高兴，鼓舞n.[C]欢呼声 [U]欢乐（或幸福）的气氛",
+          "zh": "欢呼"
+        },
+        {
+          "term": "come",
+          "ipa": "kʌm",
+          "def": "vi.来，来到v.-link.成为，变成，变得",
+          "zh": "来"
+        },
+        {
+          "term": "smile",
+          "ipa": "smaɪ",
+          "def": "vi./n.[C]笑，微笑",
+          "zh": "笑"
+        },
+        {
+          "term": "take",
+          "ipa": "teɪk",
+          "def": "v.买下，花费，拿走，乘坐，服药，记录，拍照，参加（考试或测验），接受",
+          "zh": "买下"
+        },
+        {
+          "term": "home",
+          "ipa": "həʊm",
+          "def": "n.[C,U]家，养老院adv.到家，在家",
+          "zh": "家"
+        },
+        {
+          "term": "next",
+          "ipa": "nekst",
+          "def": "adj./n[sing.]下一个（的）adv.紧接着，随后",
+          "zh": "下一个"
+        },
+        {
+          "term": "morning",
+          "ipa": "ˈmɔː(r)nɪŋ",
+          "def": "n.[C,U]早晨，上午",
+          "zh": "早晨"
+        },
+        {
+          "term": "wake",
+          "ipa": "weɪk",
+          "def": "v.弄醒，醒n.（常构成搭配）",
+          "zh": "弄醒"
+        },
+        {
+          "term": "early",
+          "ipa": "ˈɜː(r)li",
+          "def": "adv./adj.早（的）",
+          "zh": "早"
+        },
+        {
+          "term": "protect",
+          "ipa": "prəˈtek",
+          "def": "v.保护，防护",
+          "zh": "保护"
+        },
+        {
+          "term": "teach",
+          "ipa": "tiːtʃ",
+          "def": "",
+          "zh": "teach"
+        }
+      ]
+    },
+    {
+      "node_id": "n046",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "Wukong pulled out a handful of his own hair and blew on it.",
+      "text_zh": "悟空抓起一把自己的头发,吹了吹。",
+      "illustration": "assets/adv_frames/ep5/f2.jpg",
+      "audio_start": 202.178,
+      "audio_end": 206.57,
+      "vocab": [
+        {
+          "term": "handful",
+          "zh": "一撮,一把",
+          "mode": "learn",
+          "phrase_en": "Wukong pulled out a handful of his own hair and blew on it.",
+          "phrase_zh": "一撮,一把",
+          "source": "official_words"
+        },
+        {
+          "term": "hair",
+          "zh": "毫毛；头发",
+          "mode": "learn",
+          "phrase_en": "his own hair and blew",
+          "phrase_zh": "他吹了吹自己的头发"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "what",
+          "ipa": "wɒt",
+          "def": "pron./adj.什么",
+          "zh": "什么"
+        },
+        {
+          "term": "try",
+          "ipa": "traɪ",
+          "def": "v./n.[C]尝试，设法，努力",
+          "zh": "尝试"
+        },
+        {
+          "term": "fight",
+          "ipa": "faɪt",
+          "def": "v./n.[C]打架，战斗v.与……作斗争",
+          "zh": "打架"
+        },
+        {
+          "term": "magic",
+          "ipa": "ˈmædʒɪk",
+          "def": "adj.有魔力的，有神奇力量的n.[U]魔术；魔法，魔力，魅力",
+          "zh": "有魔力的"
+        },
+        {
+          "term": "spell",
+          "ipa": "spel",
+          "def": "v.用字母拼，拼写n.[C]咒语",
+          "zh": "用字母拼"
+        },
+        {
+          "term": "call",
+          "ipa": "kɔːl",
+          "def": "v.给……打电话，把……叫作，呼喊n.[C]电话，叫声圈国",
+          "zh": "给"
+        },
+        {
+          "term": "cheer",
+          "ipa": "tʃɪə(r)",
+          "def": "v.欢呼，喝彩，使高兴，鼓舞n.[C]欢呼声 [U]欢乐（或幸福）的气氛",
+          "zh": "欢呼"
+        },
+        {
+          "term": "come",
+          "ipa": "kʌm",
+          "def": "vi.来，来到v.-link.成为，变成，变得",
+          "zh": "来"
+        },
+        {
+          "term": "smile",
+          "ipa": "smaɪ",
+          "def": "vi./n.[C]笑，微笑",
+          "zh": "笑"
+        },
+        {
+          "term": "take",
+          "ipa": "teɪk",
+          "def": "v.买下，花费，拿走，乘坐，服药，记录，拍照，参加（考试或测验），接受",
+          "zh": "买下"
+        },
+        {
+          "term": "home",
+          "ipa": "həʊm",
+          "def": "n.[C,U]家，养老院adv.到家，在家",
+          "zh": "家"
+        },
+        {
+          "term": "next",
+          "ipa": "nekst",
+          "def": "adj./n[sing.]下一个（的）adv.紧接着，随后",
+          "zh": "下一个"
+        },
+        {
+          "term": "morning",
+          "ipa": "ˈmɔː(r)nɪŋ",
+          "def": "n.[C,U]早晨，上午",
+          "zh": "早晨"
+        },
+        {
+          "term": "wake",
+          "ipa": "weɪk",
+          "def": "v.弄醒，醒n.（常构成搭配）",
+          "zh": "弄醒"
+        },
+        {
+          "term": "early",
+          "ipa": "ˈɜː(r)li",
+          "def": "adv./adj.早（的）",
+          "zh": "早"
+        },
+        {
+          "term": "protect",
+          "ipa": "prəˈtek",
+          "def": "v.保护，防护",
+          "zh": "保护"
+        },
+        {
+          "term": "teach",
+          "ipa": "tiːtʃ",
+          "def": "",
+          "zh": "teach"
+        }
+      ]
+    },
+    {
+      "node_id": "p02",
+      "type": "puzzle",
+      "speaker": "system",
+      "text_en": "Put the words in order",
+      "text_zh": "点词块组句，完成后点确定",
+      "illustration": null,
+      "puzzle": {
+        "sentence": "His subjects stared in amazement.",
+        "words": [
+          "amazement",
+          "stared",
+          "in",
+          "subjects",
+          "His"
+        ]
+      },
+      "vocab": []
+    },
+    {
+      "node_id": "n047",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "<font color=\"#ffff00\"><i>Poof!</i></font> Each strand of hair turned into a fake monkey—exactly like Wukong.",
+      "text_zh": "<font color=\"#ffff00\">(i)倏地!(/i)</font> 每根头发都化作一只假猴子——与悟空一模一样。",
+      "illustration": "assets/adv_frames/ep5/f3.jpg",
+      "audio_start": 206.571,
+      "audio_end": 214.774,
+      "vocab": [
+        {
+          "term": "fake",
+          "zh": "假的,冒充的",
+          "mode": "learn",
+          "phrase_en": "Each strand of hair turned into a fake monkey—exactly like Wukong.",
+          "phrase_zh": "假的,冒充的",
+          "source": "official_words"
+        },
+        {
+          "term": "strand",
+          "zh": "(绳、线等的)一股,一缕",
+          "mode": "learn",
+          "phrase_en": "Each strand of hair turned into a fake monkey—exactly like Wukong.",
+          "phrase_zh": "",
+          "source": "official_words"
+        },
+        {
+          "term": "monkey",
+          "zh": "猴子",
+          "mode": "review",
+          "options": [
+            "demon",
+            "monkey",
+            "afraid",
+            "hair"
+          ],
+          "answer": 1,
+          "phrase_en": "a fake monkey —exactly like",
+          "phrase_zh": "一只假猴子——与真实猴子完全相同",
+          "ipa": "ˈmʌŋki",
+          "pos": "n.",
+          "def": "n.[C]猴子",
+          "gloss": "猴子"
+        },
+        {
+          "term": "hair",
+          "zh": "毫毛；头发",
+          "mode": "test",
+          "options": [
+            "洞穴",
+            "咒语",
+            "荡",
+            "毫毛；头发"
+          ],
+          "answer": 3,
+          "phrase_en": "strand of hair turned into",
+          "phrase_zh": "一缕头发变成了"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "what",
+          "ipa": "wɒt",
+          "def": "pron./adj.什么",
+          "zh": "什么"
+        },
+        {
+          "term": "try",
+          "ipa": "traɪ",
+          "def": "v./n.[C]尝试，设法，努力",
+          "zh": "尝试"
+        },
+        {
+          "term": "fight",
+          "ipa": "faɪt",
+          "def": "v./n.[C]打架，战斗v.与……作斗争",
+          "zh": "打架"
+        },
+        {
+          "term": "magic",
+          "ipa": "ˈmædʒɪk",
+          "def": "adj.有魔力的，有神奇力量的n.[U]魔术；魔法，魔力，魅力",
+          "zh": "有魔力的"
+        },
+        {
+          "term": "spell",
+          "ipa": "spel",
+          "def": "v.用字母拼，拼写n.[C]咒语",
+          "zh": "用字母拼"
+        },
+        {
+          "term": "call",
+          "ipa": "kɔːl",
+          "def": "v.给……打电话，把……叫作，呼喊n.[C]电话，叫声圈国",
+          "zh": "给"
+        },
+        {
+          "term": "cheer",
+          "ipa": "tʃɪə(r)",
+          "def": "v.欢呼，喝彩，使高兴，鼓舞n.[C]欢呼声 [U]欢乐（或幸福）的气氛",
+          "zh": "欢呼"
+        },
+        {
+          "term": "come",
+          "ipa": "kʌm",
+          "def": "vi.来，来到v.-link.成为，变成，变得",
+          "zh": "来"
+        },
+        {
+          "term": "smile",
+          "ipa": "smaɪ",
+          "def": "vi./n.[C]笑，微笑",
+          "zh": "笑"
+        },
+        {
+          "term": "take",
+          "ipa": "teɪk",
+          "def": "v.买下，花费，拿走，乘坐，服药，记录，拍照，参加（考试或测验），接受",
+          "zh": "买下"
+        },
+        {
+          "term": "home",
+          "ipa": "həʊm",
+          "def": "n.[C,U]家，养老院adv.到家，在家",
+          "zh": "家"
+        },
+        {
+          "term": "next",
+          "ipa": "nekst",
+          "def": "adj./n[sing.]下一个（的）adv.紧接着，随后",
+          "zh": "下一个"
+        },
+        {
+          "term": "morning",
+          "ipa": "ˈmɔː(r)nɪŋ",
+          "def": "n.[C,U]早晨，上午",
+          "zh": "早晨"
+        },
+        {
+          "term": "wake",
+          "ipa": "weɪk",
+          "def": "v.弄醒，醒n.（常构成搭配）",
+          "zh": "弄醒"
+        },
+        {
+          "term": "early",
+          "ipa": "ˈɜː(r)li",
+          "def": "adv./adj.早（的）",
+          "zh": "早"
+        },
+        {
+          "term": "protect",
+          "ipa": "prəˈtek",
+          "def": "v.保护，防护",
+          "zh": "保护"
+        },
+        {
+          "term": "teach",
+          "ipa": "tiːtʃ",
+          "def": "",
+          "zh": "teach"
+        }
+      ]
+    },
+    {
+      "node_id": "n048",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "All at once the fake monkeys attacked the demon, punching and kicking him.",
+      "text_zh": "突然,假猴子们一起攻击了恶魔,拳打脚踢他。",
+      "illustration": "assets/adv_frames/ep5/f0.jpg",
+      "audio_start": 214.775,
+      "audio_end": 220.162,
+      "vocab": [
+        {
+          "term": "all at",
+          "zh": "突然",
+          "mode": "learn",
+          "phrase_en": "once All at once the fake monkeys attacked the demon, punching and kicking him.",
+          "phrase_zh": "突然",
+          "source": "official_words"
+        },
+        {
+          "term": "demon",
+          "zh": "妖怪",
+          "mode": "review",
+          "options": [
+            "fight",
+            "gibbon",
+            "learned",
+            "demon"
+          ],
+          "answer": 3,
+          "phrase_en": "A demon attacked us",
+          "phrase_zh": "一个恶魔袭击了我们",
+          "gloss": "恶魔"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "what",
+          "ipa": "wɒt",
+          "def": "pron./adj.什么",
+          "zh": "什么"
+        },
+        {
+          "term": "try",
+          "ipa": "traɪ",
+          "def": "v./n.[C]尝试，设法，努力",
+          "zh": "尝试"
+        },
+        {
+          "term": "fight",
+          "ipa": "faɪt",
+          "def": "v./n.[C]打架，战斗v.与……作斗争",
+          "zh": "打架"
+        },
+        {
+          "term": "magic",
+          "ipa": "ˈmædʒɪk",
+          "def": "adj.有魔力的，有神奇力量的n.[U]魔术；魔法，魔力，魅力",
+          "zh": "有魔力的"
+        },
+        {
+          "term": "spell",
+          "ipa": "spel",
+          "def": "v.用字母拼，拼写n.[C]咒语",
+          "zh": "用字母拼"
+        },
+        {
+          "term": "call",
+          "ipa": "kɔːl",
+          "def": "v.给……打电话，把……叫作，呼喊n.[C]电话，叫声圈国",
+          "zh": "给"
+        },
+        {
+          "term": "cheer",
+          "ipa": "tʃɪə(r)",
+          "def": "v.欢呼，喝彩，使高兴，鼓舞n.[C]欢呼声 [U]欢乐（或幸福）的气氛",
+          "zh": "欢呼"
+        },
+        {
+          "term": "come",
+          "ipa": "kʌm",
+          "def": "vi.来，来到v.-link.成为，变成，变得",
+          "zh": "来"
+        },
+        {
+          "term": "smile",
+          "ipa": "smaɪ",
+          "def": "vi./n.[C]笑，微笑",
+          "zh": "笑"
+        },
+        {
+          "term": "take",
+          "ipa": "teɪk",
+          "def": "v.买下，花费，拿走，乘坐，服药，记录，拍照，参加（考试或测验），接受",
+          "zh": "买下"
+        },
+        {
+          "term": "home",
+          "ipa": "həʊm",
+          "def": "n.[C,U]家，养老院adv.到家，在家",
+          "zh": "家"
+        },
+        {
+          "term": "next",
+          "ipa": "nekst",
+          "def": "adj./n[sing.]下一个（的）adv.紧接着，随后",
+          "zh": "下一个"
+        },
+        {
+          "term": "morning",
+          "ipa": "ˈmɔː(r)nɪŋ",
+          "def": "n.[C,U]早晨，上午",
+          "zh": "早晨"
+        },
+        {
+          "term": "wake",
+          "ipa": "weɪk",
+          "def": "v.弄醒，醒n.（常构成搭配）",
+          "zh": "弄醒"
+        },
+        {
+          "term": "early",
+          "ipa": "ˈɜː(r)li",
+          "def": "adv./adj.早（的）",
+          "zh": "早"
+        },
+        {
+          "term": "protect",
+          "ipa": "prəˈtek",
+          "def": "v.保护，防护",
+          "zh": "保护"
+        },
+        {
+          "term": "teach",
+          "ipa": "tiːtʃ",
+          "def": "",
+          "zh": "teach"
+        }
+      ]
+    },
+    {
+      "node_id": "n049",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"What . . . What's going on?\"",
+      "text_zh": "\"什......发生了什么?\"",
+      "illustration": "assets/adv_frames/ep5/f1.jpg",
+      "audio_start": 220.163,
+      "audio_end": 222.492,
+      "vocab": [],
+      "page_words": [
+        {
+          "term": "what",
+          "ipa": "wɒt",
+          "def": "pron./adj.什么",
+          "zh": "什么"
+        },
+        {
+          "term": "try",
+          "ipa": "traɪ",
+          "def": "v./n.[C]尝试，设法，努力",
+          "zh": "尝试"
+        },
+        {
+          "term": "fight",
+          "ipa": "faɪt",
+          "def": "v./n.[C]打架，战斗v.与……作斗争",
+          "zh": "打架"
+        },
+        {
+          "term": "magic",
+          "ipa": "ˈmædʒɪk",
+          "def": "adj.有魔力的，有神奇力量的n.[U]魔术；魔法，魔力，魅力",
+          "zh": "有魔力的"
+        },
+        {
+          "term": "spell",
+          "ipa": "spel",
+          "def": "v.用字母拼，拼写n.[C]咒语",
+          "zh": "用字母拼"
+        },
+        {
+          "term": "call",
+          "ipa": "kɔːl",
+          "def": "v.给……打电话，把……叫作，呼喊n.[C]电话，叫声圈国",
+          "zh": "给"
+        },
+        {
+          "term": "cheer",
+          "ipa": "tʃɪə(r)",
+          "def": "v.欢呼，喝彩，使高兴，鼓舞n.[C]欢呼声 [U]欢乐（或幸福）的气氛",
+          "zh": "欢呼"
+        },
+        {
+          "term": "come",
+          "ipa": "kʌm",
+          "def": "vi.来，来到v.-link.成为，变成，变得",
+          "zh": "来"
+        },
+        {
+          "term": "smile",
+          "ipa": "smaɪ",
+          "def": "vi./n.[C]笑，微笑",
+          "zh": "笑"
+        },
+        {
+          "term": "take",
+          "ipa": "teɪk",
+          "def": "v.买下，花费，拿走，乘坐，服药，记录，拍照，参加（考试或测验），接受",
+          "zh": "买下"
+        },
+        {
+          "term": "home",
+          "ipa": "həʊm",
+          "def": "n.[C,U]家，养老院adv.到家，在家",
+          "zh": "家"
+        },
+        {
+          "term": "next",
+          "ipa": "nekst",
+          "def": "adj./n[sing.]下一个（的）adv.紧接着，随后",
+          "zh": "下一个"
+        },
+        {
+          "term": "morning",
+          "ipa": "ˈmɔː(r)nɪŋ",
+          "def": "n.[C,U]早晨，上午",
+          "zh": "早晨"
+        },
+        {
+          "term": "wake",
+          "ipa": "weɪk",
+          "def": "v.弄醒，醒n.（常构成搭配）",
+          "zh": "弄醒"
+        },
+        {
+          "term": "early",
+          "ipa": "ˈɜː(r)li",
+          "def": "adv./adj.早（的）",
+          "zh": "早"
+        },
+        {
+          "term": "protect",
+          "ipa": "prəˈtek",
+          "def": "v.保护，防护",
+          "zh": "保护"
+        },
+        {
+          "term": "teach",
+          "ipa": "tiːtʃ",
+          "def": "",
+          "zh": "teach"
+        }
+      ]
+    },
+    {
+      "node_id": "n050",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "cried the demon, trying to fight all the fake monkeys.",
+      "text_zh": "恶魔喊道,努力对抗所有假猴子。",
+      "illustration": "assets/adv_frames/ep5/f2.jpg",
+      "audio_start": 222.493,
+      "audio_end": 227.054,
+      "vocab": [
+        {
+          "term": "demon",
+          "zh": "妖怪",
+          "mode": "review",
+          "options": [
+            "fruit",
+            "demon",
+            "apes",
+            "hair"
+          ],
+          "answer": 1,
+          "phrase_en": "A demon attacked us",
+          "phrase_zh": "一个恶魔袭击了我们",
+          "gloss": "恶魔"
+        },
+        {
+          "term": "fight",
+          "zh": "打架",
+          "mode": "test",
+          "options": [
+            "保护",
+            "打架",
+            "采集",
+            "返回"
+          ],
+          "answer": 1,
+          "phrase_en": "trying to fight all the fake monkeys",
+          "phrase_zh": "试图与所有假猴子作战",
+          "ipa": "faɪt",
+          "pos": "v.",
+          "def": "v./n.[C]打架，战斗v.与……作斗争",
+          "gloss": "打斗"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "what",
+          "ipa": "wɒt",
+          "def": "pron./adj.什么",
+          "zh": "什么"
+        },
+        {
+          "term": "try",
+          "ipa": "traɪ",
+          "def": "v./n.[C]尝试，设法，努力",
+          "zh": "尝试"
+        },
+        {
+          "term": "fight",
+          "ipa": "faɪt",
+          "def": "v./n.[C]打架，战斗v.与……作斗争",
+          "zh": "打架"
+        },
+        {
+          "term": "magic",
+          "ipa": "ˈmædʒɪk",
+          "def": "adj.有魔力的，有神奇力量的n.[U]魔术；魔法，魔力，魅力",
+          "zh": "有魔力的"
+        },
+        {
+          "term": "spell",
+          "ipa": "spel",
+          "def": "v.用字母拼，拼写n.[C]咒语",
+          "zh": "用字母拼"
+        },
+        {
+          "term": "call",
+          "ipa": "kɔːl",
+          "def": "v.给……打电话，把……叫作，呼喊n.[C]电话，叫声圈国",
+          "zh": "给"
+        },
+        {
+          "term": "cheer",
+          "ipa": "tʃɪə(r)",
+          "def": "v.欢呼，喝彩，使高兴，鼓舞n.[C]欢呼声 [U]欢乐（或幸福）的气氛",
+          "zh": "欢呼"
+        },
+        {
+          "term": "come",
+          "ipa": "kʌm",
+          "def": "vi.来，来到v.-link.成为，变成，变得",
+          "zh": "来"
+        },
+        {
+          "term": "smile",
+          "ipa": "smaɪ",
+          "def": "vi./n.[C]笑，微笑",
+          "zh": "笑"
+        },
+        {
+          "term": "take",
+          "ipa": "teɪk",
+          "def": "v.买下，花费，拿走，乘坐，服药，记录，拍照，参加（考试或测验），接受",
+          "zh": "买下"
+        },
+        {
+          "term": "home",
+          "ipa": "həʊm",
+          "def": "n.[C,U]家，养老院adv.到家，在家",
+          "zh": "家"
+        },
+        {
+          "term": "next",
+          "ipa": "nekst",
+          "def": "adj./n[sing.]下一个（的）adv.紧接着，随后",
+          "zh": "下一个"
+        },
+        {
+          "term": "morning",
+          "ipa": "ˈmɔː(r)nɪŋ",
+          "def": "n.[C,U]早晨，上午",
+          "zh": "早晨"
+        },
+        {
+          "term": "wake",
+          "ipa": "weɪk",
+          "def": "v.弄醒，醒n.（常构成搭配）",
+          "zh": "弄醒"
+        },
+        {
+          "term": "early",
+          "ipa": "ˈɜː(r)li",
+          "def": "adv./adj.早（的）",
+          "zh": "早"
+        },
+        {
+          "term": "protect",
+          "ipa": "prəˈtek",
+          "def": "v.保护，防护",
+          "zh": "保护"
+        },
+        {
+          "term": "teach",
+          "ipa": "tiːtʃ",
+          "def": "",
+          "zh": "teach"
+        }
+      ]
+    },
+    {
+      "node_id": "n051",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"It's a magic spell,\" said Wukong.",
+      "text_zh": "\"这是魔法咒语,\"悟空说。",
+      "illustration": "assets/adv_frames/ep5/f3.jpg",
+      "audio_start": 227.055,
+      "audio_end": 230.236,
+      "vocab": [
+        {
+          "term": "magic",
+          "zh": "魔法；神奇的",
+          "mode": "learn",
+          "phrase_en": "It's a magic spell",
+          "phrase_zh": "这是魔法咒语",
+          "ipa": "ˈmædʒɪk",
+          "pos": "adj.",
+          "def": "adj.有魔力的，有神奇力量的n.[U]魔术；魔法，魔力，魅力",
+          "gloss": "魔法"
+        },
+        {
+          "term": "spell",
+          "zh": "咒语",
+          "mode": "learn",
+          "phrase_en": "It's a magic spell",
+          "phrase_zh": "这是魔法咒语",
+          "ipa": "spel",
+          "pos": "v.",
+          "def": "v.用字母拼，拼写n.[C]咒语",
+          "gloss": "咒语"
+        }
+      ],
+      "quiz_after": {
+        "q": "What did Wukong use to destroy the demon?",
+        "choices": [
+          "a magic spell",
+          "a sword",
+          "a spear"
+        ],
+        "answer": 0,
+        "q_zh": "悟空用什么来消灭那个妖怪？",
+        "choices_zh": [
+          "魔法咒语",
+          "一把剑",
+          "一根矛"
+        ]
+      },
+      "page_words": [
+        {
+          "term": "what",
+          "ipa": "wɒt",
+          "def": "pron./adj.什么",
+          "zh": "什么"
+        },
+        {
+          "term": "try",
+          "ipa": "traɪ",
+          "def": "v./n.[C]尝试，设法，努力",
+          "zh": "尝试"
+        },
+        {
+          "term": "fight",
+          "ipa": "faɪt",
+          "def": "v./n.[C]打架，战斗v.与……作斗争",
+          "zh": "打架"
+        },
+        {
+          "term": "magic",
+          "ipa": "ˈmædʒɪk",
+          "def": "adj.有魔力的，有神奇力量的n.[U]魔术；魔法，魔力，魅力",
+          "zh": "有魔力的"
+        },
+        {
+          "term": "spell",
+          "ipa": "spel",
+          "def": "v.用字母拼，拼写n.[C]咒语",
+          "zh": "用字母拼"
+        },
+        {
+          "term": "call",
+          "ipa": "kɔːl",
+          "def": "v.给……打电话，把……叫作，呼喊n.[C]电话，叫声圈国",
+          "zh": "给"
+        },
+        {
+          "term": "cheer",
+          "ipa": "tʃɪə(r)",
+          "def": "v.欢呼，喝彩，使高兴，鼓舞n.[C]欢呼声 [U]欢乐（或幸福）的气氛",
+          "zh": "欢呼"
+        },
+        {
+          "term": "come",
+          "ipa": "kʌm",
+          "def": "vi.来，来到v.-link.成为，变成，变得",
+          "zh": "来"
+        },
+        {
+          "term": "smile",
+          "ipa": "smaɪ",
+          "def": "vi./n.[C]笑，微笑",
+          "zh": "笑"
+        },
+        {
+          "term": "take",
+          "ipa": "teɪk",
+          "def": "v.买下，花费，拿走，乘坐，服药，记录，拍照，参加（考试或测验），接受",
+          "zh": "买下"
+        },
+        {
+          "term": "home",
+          "ipa": "həʊm",
+          "def": "n.[C,U]家，养老院adv.到家，在家",
+          "zh": "家"
+        },
+        {
+          "term": "next",
+          "ipa": "nekst",
+          "def": "adj./n[sing.]下一个（的）adv.紧接着，随后",
+          "zh": "下一个"
+        },
+        {
+          "term": "morning",
+          "ipa": "ˈmɔː(r)nɪŋ",
+          "def": "n.[C,U]早晨，上午",
+          "zh": "早晨"
+        },
+        {
+          "term": "wake",
+          "ipa": "weɪk",
+          "def": "v.弄醒，醒n.（常构成搭配）",
+          "zh": "弄醒"
+        },
+        {
+          "term": "early",
+          "ipa": "ˈɜː(r)li",
+          "def": "adv./adj.早（的）",
+          "zh": "早"
+        },
+        {
+          "term": "protect",
+          "ipa": "prəˈtek",
+          "def": "v.保护，防护",
+          "zh": "保护"
+        },
+        {
+          "term": "teach",
+          "ipa": "tiːtʃ",
+          "def": "",
+          "zh": "teach"
+        }
+      ]
+    },
+    {
+      "node_id": "n052",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"It's called Body Beyond the Body.\"",
+      "text_zh": "\"这叫做身体之外的身体。\"",
+      "illustration": "assets/adv_frames/ep5/f0.jpg",
+      "audio_start": 230.237,
+      "audio_end": 233.03,
+      "vocab": [],
+      "page_words": [
+        {
+          "term": "what",
+          "ipa": "wɒt",
+          "def": "pron./adj.什么",
+          "zh": "什么"
+        },
+        {
+          "term": "try",
+          "ipa": "traɪ",
+          "def": "v./n.[C]尝试，设法，努力",
+          "zh": "尝试"
+        },
+        {
+          "term": "fight",
+          "ipa": "faɪt",
+          "def": "v./n.[C]打架，战斗v.与……作斗争",
+          "zh": "打架"
+        },
+        {
+          "term": "magic",
+          "ipa": "ˈmædʒɪk",
+          "def": "adj.有魔力的，有神奇力量的n.[U]魔术；魔法，魔力，魅力",
+          "zh": "有魔力的"
+        },
+        {
+          "term": "spell",
+          "ipa": "spel",
+          "def": "v.用字母拼，拼写n.[C]咒语",
+          "zh": "用字母拼"
+        },
+        {
+          "term": "call",
+          "ipa": "kɔːl",
+          "def": "v.给……打电话，把……叫作，呼喊n.[C]电话，叫声圈国",
+          "zh": "给"
+        },
+        {
+          "term": "cheer",
+          "ipa": "tʃɪə(r)",
+          "def": "v.欢呼，喝彩，使高兴，鼓舞n.[C]欢呼声 [U]欢乐（或幸福）的气氛",
+          "zh": "欢呼"
+        },
+        {
+          "term": "come",
+          "ipa": "kʌm",
+          "def": "vi.来，来到v.-link.成为，变成，变得",
+          "zh": "来"
+        },
+        {
+          "term": "smile",
+          "ipa": "smaɪ",
+          "def": "vi./n.[C]笑，微笑",
+          "zh": "笑"
+        },
+        {
+          "term": "take",
+          "ipa": "teɪk",
+          "def": "v.买下，花费，拿走，乘坐，服药，记录，拍照，参加（考试或测验），接受",
+          "zh": "买下"
+        },
+        {
+          "term": "home",
+          "ipa": "həʊm",
+          "def": "n.[C,U]家，养老院adv.到家，在家",
+          "zh": "家"
+        },
+        {
+          "term": "next",
+          "ipa": "nekst",
+          "def": "adj./n[sing.]下一个（的）adv.紧接着，随后",
+          "zh": "下一个"
+        },
+        {
+          "term": "morning",
+          "ipa": "ˈmɔː(r)nɪŋ",
+          "def": "n.[C,U]早晨，上午",
+          "zh": "早晨"
+        },
+        {
+          "term": "wake",
+          "ipa": "weɪk",
+          "def": "v.弄醒，醒n.（常构成搭配）",
+          "zh": "弄醒"
+        },
+        {
+          "term": "early",
+          "ipa": "ˈɜː(r)li",
+          "def": "adv./adj.早（的）",
+          "zh": "早"
+        },
+        {
+          "term": "protect",
+          "ipa": "prəˈtek",
+          "def": "v.保护，防护",
+          "zh": "保护"
+        },
+        {
+          "term": "teach",
+          "ipa": "tiːtʃ",
+          "def": "",
+          "zh": "teach"
+        }
+      ]
+    },
+    {
+      "node_id": "n053",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "The Demon of Chaos was soon destroyed.",
+      "text_zh": "混沌恶魔很快被消灭了。",
+      "illustration": "assets/adv_frames/ep5/f1.jpg",
+      "audio_start": 233.031,
+      "audio_end": 238.66,
+      "vocab": [
+        {
+          "term": "demon",
+          "zh": "妖怪",
+          "mode": "review",
+          "options": [
+            "demon",
+            "spell",
+            "fruit",
+            "returned"
+          ],
+          "answer": 0,
+          "phrase_en": "A demon attacked us",
+          "phrase_zh": "一个恶魔袭击了我们",
+          "gloss": "恶魔"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "subject",
+          "ipa": "ˈsʌbdʒɪk",
+          "def": "n.[C]学科，课程，科目；主题，话题",
+          "zh": "学科"
+        },
+        {
+          "term": "practice",
+          "ipa": "ˈpræktɪs",
+          "def": "v.（亦作practise）练习n.[C,U]练习，（医生的）工作地点[U]实践",
+          "zh": "亦作"
+        },
+        {
+          "term": "army",
+          "ipa": "ˈɑː(r)mi",
+          "def": "n.[C]陆军，陆军部队",
+          "zh": "陆军"
+        },
+        {
+          "term": "ask",
+          "ipa": "ɑːsk",
+          "def": "v.请求，要求，询问",
+          "zh": "请求"
+        }
+      ]
+    },
+    {
+      "node_id": "n054",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "Wukong chased away the guards and then went into the cave.",
+      "text_zh": "猿猴大闹天宫后,便进入了洞穴。",
+      "illustration": "assets/adv_frames/ep5/f2.jpg",
+      "audio_start": 238.661,
+      "audio_end": 245.237,
+      "vocab": [
+        {
+          "term": "cave",
+          "zh": "洞穴",
+          "mode": "review",
+          "options": [
+            "monkey",
+            "cave",
+            "fruit",
+            "demon"
+          ],
+          "answer": 1,
+          "phrase_en": "into the cave",
+          "phrase_zh": "进入洞穴",
+          "gloss": "山洞"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "subject",
+          "ipa": "ˈsʌbdʒɪk",
+          "def": "n.[C]学科，课程，科目；主题，话题",
+          "zh": "学科"
+        },
+        {
+          "term": "practice",
+          "ipa": "ˈpræktɪs",
+          "def": "v.（亦作practise）练习n.[C,U]练习，（医生的）工作地点[U]实践",
+          "zh": "亦作"
+        },
+        {
+          "term": "army",
+          "ipa": "ˈɑː(r)mi",
+          "def": "n.[C]陆军，陆军部队",
+          "zh": "陆军"
+        },
+        {
+          "term": "ask",
+          "ipa": "ɑːsk",
+          "def": "v.请求，要求，询问",
+          "zh": "请求"
+        }
+      ]
+    },
+    {
+      "node_id": "n055",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "He found all the monkeys and apes that the demon had kidnapped.",
+      "text_zh": "他找到了恶魔绑架的所有猴子和类人猿。",
+      "illustration": "assets/adv_frames/ep5/f3.jpg",
+      "audio_start": 245.238,
+      "audio_end": 249.082,
+      "vocab": [
+        {
+          "term": "demon",
+          "zh": "妖怪",
+          "mode": "review",
+          "options": [
+            "fruit",
+            "hair",
+            "demon",
+            "magic"
+          ],
+          "answer": 2,
+          "phrase_en": "A demon attacked us",
+          "phrase_zh": "一个恶魔袭击了我们",
+          "gloss": "恶魔"
+        },
+        {
+          "term": "apes",
+          "zh": "猿",
+          "mode": "review",
+          "options": [
+            "apes",
+            "gathered",
+            "returned",
+            "afraid"
+          ],
+          "answer": 0,
+          "phrase_en": "monkeys and apes that",
+          "phrase_zh": "猴类与类人猿",
+          "gloss": "猿"
+        }
+      ],
+      "quiz_after": {
+        "q": "Why did Wukong go after the demon?",
+        "choices": [
+          "to rescue the kidnapped monkeys",
+          "to show how powerful he is",
+          "to be friends with the demon"
+        ],
+        "answer": 0,
+        "q_zh": "悟空为什么要去追那个妖怪？",
+        "choices_zh": [
+          "营救被绑架的猴子",
+          "显示他有多强大",
+          "与恶魔为友"
+        ]
+      },
+      "page_words": [
+        {
+          "term": "subject",
+          "ipa": "ˈsʌbdʒɪk",
+          "def": "n.[C]学科，课程，科目；主题，话题",
+          "zh": "学科"
+        },
+        {
+          "term": "practice",
+          "ipa": "ˈpræktɪs",
+          "def": "v.（亦作practise）练习n.[C,U]练习，（医生的）工作地点[U]实践",
+          "zh": "亦作"
+        },
+        {
+          "term": "army",
+          "ipa": "ˈɑː(r)mi",
+          "def": "n.[C]陆军，陆军部队",
+          "zh": "陆军"
+        },
+        {
+          "term": "ask",
+          "ipa": "ɑːsk",
+          "def": "v.请求，要求，询问",
+          "zh": "请求"
+        }
+      ]
+    },
+    {
+      "node_id": "n056",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "When they saw him, they cheered.",
+      "text_zh": "当他们看到他时,便爆发出热烈的欢呼声。",
+      "illustration": "assets/adv_frames/ep5/f0.jpg",
+      "audio_start": 249.083,
+      "audio_end": 253.044,
+      "vocab": [],
+      "page_words": [
+        {
+          "term": "subject",
+          "ipa": "ˈsʌbdʒɪk",
+          "def": "n.[C]学科，课程，科目；主题，话题",
+          "zh": "学科"
+        },
+        {
+          "term": "practice",
+          "ipa": "ˈpræktɪs",
+          "def": "v.（亦作practise）练习n.[C,U]练习，（医生的）工作地点[U]实践",
+          "zh": "亦作"
+        },
+        {
+          "term": "army",
+          "ipa": "ˈɑː(r)mi",
+          "def": "n.[C]陆军，陆军部队",
+          "zh": "陆军"
+        },
+        {
+          "term": "ask",
+          "ipa": "ɑːsk",
+          "def": "v.请求，要求，询问",
+          "zh": "请求"
+        }
+      ]
+    },
+    {
+      "node_id": "n057",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"Your Majesty!\" cried the monkeys and apes.",
+      "text_zh": "\"陛下!\"猴子和大猩猩们喊道。",
+      "illustration": "assets/adv_frames/ep5/f1.jpg",
+      "audio_start": 253.045,
+      "audio_end": 256.961,
+      "vocab": [
+        {
+          "term": "apes",
+          "zh": "猿",
+          "mode": "review",
+          "options": [
+            "apes",
+            "fight",
+            "gathered",
+            "swung"
+          ],
+          "answer": 0,
+          "phrase_en": "Your Majesty!\" cried the monkeys and apes",
+          "phrase_zh": "\"陛下!\"猴子和大猩猩们喊道。",
+          "gloss": "猿"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "subject",
+          "ipa": "ˈsʌbdʒɪk",
+          "def": "n.[C]学科，课程，科目；主题，话题",
+          "zh": "学科"
+        },
+        {
+          "term": "practice",
+          "ipa": "ˈpræktɪs",
+          "def": "v.（亦作practise）练习n.[C,U]练习，（医生的）工作地点[U]实践",
+          "zh": "亦作"
+        },
+        {
+          "term": "army",
+          "ipa": "ˈɑː(r)mi",
+          "def": "n.[C]陆军，陆军部队",
+          "zh": "陆军"
+        },
+        {
+          "term": "ask",
+          "ipa": "ɑːsk",
+          "def": "v.请求，要求，询问",
+          "zh": "请求"
+        }
+      ]
+    },
+    {
+      "node_id": "n058",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"You came back!\"",
+      "text_zh": "\"你回来了!\"",
+      "illustration": "assets/adv_frames/ep5/f2.jpg",
+      "audio_start": 256.962,
+      "audio_end": 259.425,
+      "vocab": [],
+      "page_words": [
+        {
+          "term": "subject",
+          "ipa": "ˈsʌbdʒɪk",
+          "def": "n.[C]学科，课程，科目；主题，话题",
+          "zh": "学科"
+        },
+        {
+          "term": "practice",
+          "ipa": "ˈpræktɪs",
+          "def": "v.（亦作practise）练习n.[C,U]练习，（医生的）工作地点[U]实践",
+          "zh": "亦作"
+        },
+        {
+          "term": "army",
+          "ipa": "ˈɑː(r)mi",
+          "def": "n.[C]陆军，陆军部队",
+          "zh": "陆军"
+        },
+        {
+          "term": "ask",
+          "ipa": "ɑːsk",
+          "def": "v.请求，要求，询问",
+          "zh": "请求"
+        }
+      ]
+    },
+    {
+      "node_id": "n059",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "Wukong smiled. \"I will take you home!\"",
+      "text_zh": "悟空微笑道:\"我会带你们回家!\"",
+      "illustration": "assets/adv_frames/ep5/f3.jpg",
+      "audio_start": 259.426,
+      "audio_end": 266.554,
+      "vocab": [],
+      "page_words": [
+        {
+          "term": "subject",
+          "ipa": "ˈsʌbdʒɪk",
+          "def": "n.[C]学科，课程，科目；主题，话题",
+          "zh": "学科"
+        },
+        {
+          "term": "practice",
+          "ipa": "ˈpræktɪs",
+          "def": "v.（亦作practise）练习n.[C,U]练习，（医生的）工作地点[U]实践",
+          "zh": "亦作"
+        },
+        {
+          "term": "army",
+          "ipa": "ˈɑː(r)mi",
+          "def": "n.[C]陆军，陆军部队",
+          "zh": "陆军"
+        },
+        {
+          "term": "ask",
+          "ipa": "ɑːsk",
+          "def": "v.请求，要求，询问",
+          "zh": "请求"
+        }
+      ]
+    },
+    {
+      "node_id": "n060",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "The next morning Wukong woke up early.",
+      "text_zh": "次日清晨,悟空早早醒来。",
+      "illustration": "assets/adv_frames/ep5/f0.jpg",
+      "audio_start": 266.555,
+      "audio_end": 271.179,
+      "vocab": [],
+      "page_words": [
+        {
+          "term": "subject",
+          "ipa": "ˈsʌbdʒɪk",
+          "def": "n.[C]学科，课程，科目；主题，话题",
+          "zh": "学科"
+        },
+        {
+          "term": "practice",
+          "ipa": "ˈpræktɪs",
+          "def": "v.（亦作practise）练习n.[C,U]练习，（医生的）工作地点[U]实践",
+          "zh": "亦作"
+        },
+        {
+          "term": "army",
+          "ipa": "ˈɑː(r)mi",
+          "def": "n.[C]陆军，陆军部队",
+          "zh": "陆军"
+        },
+        {
+          "term": "ask",
+          "ipa": "ɑːsk",
+          "def": "v.请求，要求，询问",
+          "zh": "请求"
+        }
+      ]
+    },
+    {
+      "node_id": "n061",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"Other demons might attack us,\" he thought.",
+      "text_zh": "\"其他恶魔可能会袭击我们,\"他想道。",
+      "illustration": "assets/adv_frames/ep5/f1.jpg",
+      "audio_start": 271.18,
+      "audio_end": 274.624,
+      "vocab": [],
+      "page_words": [
+        {
+          "term": "subject",
+          "ipa": "ˈsʌbdʒɪk",
+          "def": "n.[C]学科，课程，科目；主题，话题",
+          "zh": "学科"
+        },
+        {
+          "term": "practice",
+          "ipa": "ˈpræktɪs",
+          "def": "v.（亦作practise）练习n.[C,U]练习，（医生的）工作地点[U]实践",
+          "zh": "亦作"
+        },
+        {
+          "term": "army",
+          "ipa": "ˈɑː(r)mi",
+          "def": "n.[C]陆军，陆军部队",
+          "zh": "陆军"
+        },
+        {
+          "term": "ask",
+          "ipa": "ɑːsk",
+          "def": "v.请求，要求，询问",
+          "zh": "请求"
+        }
+      ]
+    },
+    {
+      "node_id": "n062",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"We must be ready to protect ourselves.\"",
+      "text_zh": "\"我们必须准备好保护自己。\"",
+      "illustration": "assets/adv_frames/ep5/f2.jpg",
+      "audio_start": 274.625,
+      "audio_end": 279.306,
+      "vocab": [
+        {
+          "term": "protect",
+          "zh": "保护",
+          "mode": "learn",
+          "phrase_en": "We must be ready to protect ourselves",
+          "phrase_zh": "我们必须做好自我保护的准备。",
+          "ipa": "prəˈtek",
+          "pos": "v.",
+          "def": "v.保护，防护",
+          "gloss": "保护"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "subject",
+          "ipa": "ˈsʌbdʒɪk",
+          "def": "n.[C]学科，课程，科目；主题，话题",
+          "zh": "学科"
+        },
+        {
+          "term": "practice",
+          "ipa": "ˈpræktɪs",
+          "def": "v.（亦作practise）练习n.[C,U]练习，（医生的）工作地点[U]实践",
+          "zh": "亦作"
+        },
+        {
+          "term": "army",
+          "ipa": "ˈɑː(r)mi",
+          "def": "n.[C]陆军，陆军部队",
+          "zh": "陆军"
+        },
+        {
+          "term": "ask",
+          "ipa": "ɑːsk",
+          "def": "v.请求，要求，询问",
+          "zh": "请求"
+        }
+      ]
+    },
+    {
+      "node_id": "n063",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "Wukong spent the day teaching his subjects how to fight.",
+      "text_zh": "悟空花了一天时间教导他的属下如何战斗。",
+      "illustration": "assets/adv_frames/ep5/f3.jpg",
+      "audio_start": 279.307,
+      "audio_end": 283.877,
+      "vocab": [
+        {
+          "term": "fight",
+          "zh": "打架",
+          "mode": "review",
+          "options": [
+            "demon",
+            "magic",
+            "fight",
+            "leaped"
+          ],
+          "answer": 2,
+          "phrase_en": "how to fight",
+          "phrase_zh": "如何战斗",
+          "ipa": "faɪt",
+          "pos": "v.",
+          "def": "v./n.[C]打架，战斗v.与……作斗争",
+          "gloss": "打斗"
+        }
+      ],
+      "quiz_after": {
+        "q": "What did Wukong teach his subjects?",
+        "choices": [
+          "how to fight with swords and spears",
+          "how to use magic spells",
+          "how to fly on clouds"
+        ],
+        "answer": 0,
+        "q_zh": "悟空教他的臣民什么？",
+        "choices_zh": [
+          "如何使用剑和矛进行战斗",
+          "如何使用魔法咒语",
+          "如何在云上飞"
+        ]
+      },
+      "page_words": [
+        {
+          "term": "subject",
+          "ipa": "ˈsʌbdʒɪk",
+          "def": "n.[C]学科，课程，科目；主题，话题",
+          "zh": "学科"
+        },
+        {
+          "term": "practice",
+          "ipa": "ˈpræktɪs",
+          "def": "v.（亦作practise）练习n.[C,U]练习，（医生的）工作地点[U]实践",
+          "zh": "亦作"
+        },
+        {
+          "term": "army",
+          "ipa": "ˈɑː(r)mi",
+          "def": "n.[C]陆军，陆军部队",
+          "zh": "陆军"
+        },
+        {
+          "term": "ask",
+          "ipa": "ɑːsk",
+          "def": "v.请求，要求，询问",
+          "zh": "请求"
+        }
+      ]
+    },
+    {
+      "node_id": "n064",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "They practiced with swords and spears.",
+      "text_zh": "他们练习了持剑和持矛的格斗技巧。",
+      "illustration": "assets/adv_frames/ep5/f0.jpg",
+      "audio_start": 283.878,
+      "audio_end": 287.306,
+      "vocab": [],
+      "page_words": [
+        {
+          "term": "subject",
+          "ipa": "ˈsʌbdʒɪk",
+          "def": "n.[C]学科，课程，科目；主题，话题",
+          "zh": "学科"
+        },
+        {
+          "term": "practice",
+          "ipa": "ˈpræktɪs",
+          "def": "v.（亦作practise）练习n.[C,U]练习，（医生的）工作地点[U]实践",
+          "zh": "亦作"
+        },
+        {
+          "term": "army",
+          "ipa": "ˈɑː(r)mi",
+          "def": "n.[C]陆军，陆军部队",
+          "zh": "陆军"
+        },
+        {
+          "term": "ask",
+          "ipa": "ɑːsk",
+          "def": "v.请求，要求，询问",
+          "zh": "请求"
+        }
+      ]
+    },
+    {
+      "node_id": "n065",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "Before long, the monkeys and apes were a fierce army.",
+      "text_zh": "不久之后,这些猴子和类人猿便组成了一支骁勇善战的军队。",
+      "illustration": "assets/adv_frames/ep5/f1.jpg",
+      "audio_start": 287.307,
+      "audio_end": 292.316,
+      "vocab": [
+        {
+          "term": "army",
+          "zh": "军队,陆军",
+          "mode": "learn",
+          "phrase_en": "Before long, the monkeys and apes were a fierce army.",
+          "phrase_zh": "军队,陆军",
+          "source": "official_words"
+        },
+        {
+          "term": "fierce",
+          "zh": "凶猛的,残酷的",
+          "mode": "learn",
+          "phrase_en": "Before long, the monkeys and apes were a fierce army.",
+          "phrase_zh": "凶猛的,残酷的",
+          "source": "official_words"
+        },
+        {
+          "term": "apes",
+          "zh": "猿",
+          "mode": "review",
+          "options": [
+            "apes",
+            "king",
+            "monkey",
+            "demon"
+          ],
+          "answer": 0,
+          "phrase_en": "the monkeys and apes were a fierce army",
+          "phrase_zh": "这些猴子与类人猿组成了一支骁勇善战的军队",
+          "gloss": "猿"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "subject",
+          "ipa": "ˈsʌbdʒɪk",
+          "def": "n.[C]学科，课程，科目；主题，话题",
+          "zh": "学科"
+        },
+        {
+          "term": "practice",
+          "ipa": "ˈpræktɪs",
+          "def": "v.（亦作practise）练习n.[C,U]练习，（医生的）工作地点[U]实践",
+          "zh": "亦作"
+        },
+        {
+          "term": "army",
+          "ipa": "ˈɑː(r)mi",
+          "def": "n.[C]陆军，陆军部队",
+          "zh": "陆军"
+        },
+        {
+          "term": "ask",
+          "ipa": "ɑːsk",
+          "def": "v.请求，要求，询问",
+          "zh": "请求"
+        }
+      ]
+    },
+    {
+      "node_id": "n066",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"No demon will dare bother us now,\" said the gibbon.",
+      "text_zh": "\"如今再无恶灵敢来打扰我们了,\"长臂猿说道。",
+      "illustration": "assets/adv_frames/ep5/f2.jpg",
+      "audio_start": 292.317,
+      "audio_end": 296.298,
+      "vocab": [
+        {
+          "term": "bother",
+          "zh": "烦扰,打搅",
+          "mode": "learn",
+          "phrase_en": "No demon will dare bother us now.",
+          "phrase_zh": "烦扰,打搅",
+          "source": "official_words"
+        },
+        {
+          "term": "gibbon",
+          "zh": "长臂猿",
+          "mode": "review",
+          "options": [
+            "swung",
+            "learned",
+            "cave",
+            "gibbon"
+          ],
+          "answer": 3,
+          "phrase_en": "said the gibbon",
+          "phrase_zh": ",长臂猿说道",
+          "gloss": "长臂猿"
+        },
+        {
+          "term": "demon",
+          "zh": "妖怪",
+          "mode": "review",
+          "options": [
+            "protect",
+            "hair",
+            "demon",
+            "returned"
+          ],
+          "answer": 2,
+          "phrase_en": "A demon attacked us",
+          "phrase_zh": "一个恶魔袭击了我们",
+          "gloss": "恶魔"
+        }
+      ],
+      "page_words": [
+        {
+          "term": "subject",
+          "ipa": "ˈsʌbdʒɪk",
+          "def": "n.[C]学科，课程，科目；主题，话题",
+          "zh": "学科"
+        },
+        {
+          "term": "practice",
+          "ipa": "ˈpræktɪs",
+          "def": "v.（亦作practise）练习n.[C,U]练习，（医生的）工作地点[U]实践",
+          "zh": "亦作"
+        },
+        {
+          "term": "army",
+          "ipa": "ˈɑː(r)mi",
+          "def": "n.[C]陆军，陆军部队",
+          "zh": "陆军"
+        },
+        {
+          "term": "ask",
+          "ipa": "ɑːsk",
+          "def": "v.请求，要求，询问",
+          "zh": "请求"
+        }
+      ]
+    },
+    {
+      "node_id": "n067",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"No,\" said Wukong. \"There's just one problem though.\"",
+      "text_zh": "\"不,\"悟空说,\"不过只有一个问题。\"",
+      "illustration": "assets/adv_frames/ep5/f3.jpg",
+      "audio_start": 296.299,
+      "audio_end": 301.222,
+      "vocab": [
+        {
+          "term": "though",
+          "zh": "可是,然而(用于句尾)",
+          "mode": "learn",
+          "phrase_en": "There's just one problem though.",
+          "phrase_zh": "可是,然而",
+          "source": "official_words"
+        }
+      ]
+    },
+    {
+      "node_id": "n068",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"What's that?\" asked the gibbon.",
+      "text_zh": "\"是什么问题?\"长臂猿问。",
+      "illustration": "assets/adv_frames/ep5/f0.jpg",
+      "audio_start": 301.223,
+      "audio_end": 305.3,
+      "vocab": [
+        {
+          "term": "gibbon",
+          "zh": "长臂猿",
+          "mode": "review",
+          "options": [
+            "gibbon",
+            "powerful",
+            "apes",
+            "monkey"
+          ],
+          "answer": 0,
+          "phrase_en": "What's that?\" asked the gibbon",
+          "phrase_zh": "\"是什么问题?\"长臂猿问。",
+          "gloss": "长臂猿"
+        }
+      ]
+    },
+    {
+      "node_id": "n069",
+      "type": "narration",
+      "speaker": "narrator",
+      "text_en": "\"I can't use any of the weapons we have!\" said Wukong.",
+      "text_zh": "\"我不能使用我们拥有的任何武器!\"悟空说。",
+      "illustration": "assets/adv_frames/ep5/f1.jpg",
+      "audio_start": 305.301,
+      "audio_end": 311.746,
+      "vocab": []
+    }
+  ],
+  "puzzles": [
+    {
+      "sentence": "You attacked his subjects.",
+      "words": [
+        "attacked",
+        "his",
+        "You",
+        "subjects"
+      ]
+    },
+    {
+      "sentence": "His subjects stared in amazement.",
+      "words": [
+        "amazement",
+        "stared",
+        "in",
+        "subjects",
+        "His"
+      ]
+    }
+  ],
+  "patterns": [
+    {
+      "pattern": "\"What happened here?\" Wukong asked the gibbon.",
+      "term": "gibbon",
+      "zh": "长臂猿"
+    },
+    {
+      "pattern": "A few more monkeys and apes gathered around Sun Wukong and the gibbon.",
+      "term": "gibbon",
+      "zh": "长臂猿"
+    },
+    {
+      "pattern": "\"A demon attacked us,\" said the gibbon.",
+      "term": "gibbon",
+      "zh": "长臂猿"
+    }
+  ],
+  "quiz": [],
+  "script_lexicon": {
+    "happen": {
+      "ipa": "ˈhæpən",
+      "pos": "vi.",
+      "def": "vi.发生，出现，碰巧",
+      "zh": "发生"
+    },
+    "here": {
+      "ipa": "hɪə(r)",
+      "pos": "adv.",
+      "def": "adv.这就是，在这里",
+      "zh": "这就是"
+    },
+    "ask": {
+      "ipa": "ɑːsk",
+      "pos": "v.",
+      "def": "v.请求，要求，询问",
+      "zh": "请求"
+    },
+    "monkey": {
+      "ipa": "ˈmʌŋki",
+      "pos": "n.",
+      "def": "n.[C]猴子",
+      "zh": "猴子"
+    },
+    "look": {
+      "ipa": "lʊk",
+      "pos": "vi.",
+      "def": "vi.看v.-link.看上去n.[C]看，注视，外表，表情",
+      "zh": "看"
+    },
+    "fight": {
+      "ipa": "faɪt",
+      "pos": "v.",
+      "def": "v./n.[C]打架，战斗v.与……作斗争",
+      "zh": "打架"
+    },
+    "steal": {
+      "ipa": "stiːl",
+      "pos": "v.",
+      "def": "v.偷，窃取",
+      "zh": "偷"
+    },
+    "who": {
+      "ipa": "huː",
+      "pos": "pron.",
+      "def": "pron.谁，什么人",
+      "zh": "谁"
+    },
+    "live": {
+      "ipa": "lɪv][laɪv",
+      "pos": "v.",
+      "def": "v.居住，生活adj.活的，生动的，现场直播的",
+      "zh": "居住"
+    },
+    "come": {
+      "ipa": "kʌm",
+      "pos": "vi.",
+      "def": "vi.来，来到v.-link.成为，变成，变得",
+      "zh": "来"
+    },
+    "north": {
+      "ipa": "/nɔːrθ",
+      "pos": "n.",
+      "def": "n.北，北方adj.北方的adv.向北",
+      "zh": "北"
+    },
+    "wait": {
+      "ipa": "weɪt",
+      "pos": "v.",
+      "def": "v.等待，等候",
+      "zh": "等待"
+    },
+    "order": {
+      "ipa": "ˈɔː(r)də(r)",
+      "pos": "",
+      "def": "",
+      "zh": "order"
+    },
+    "warn": {
+      "ipa": "wɔː(r)n",
+      "pos": "v.",
+      "def": "v.警告，告诫",
+      "zh": "警告"
+    },
+    "learn": {
+      "ipa": "lɜː(r)n",
+      "pos": "v.",
+      "def": "v.学习，学会，了解",
+      "zh": "学习"
+    },
+    "reply": {
+      "ipa": "rɪˈplaɪ",
+      "pos": "v.",
+      "def": "v.回答，答复n.[C,U]答复",
+      "zh": "回答"
+    },
+    "back": {
+      "ipa": "bæk",
+      "pos": "n.",
+      "def": "n.[C]后面，背部adj.后面的adv.回原处，向后地",
+      "zh": "后面"
+    },
+    "soon": {
+      "ipa": "suːn",
+      "pos": "adv.",
+      "def": "adv.不久，很快",
+      "zh": "不久"
+    },
+    "fly": {
+      "ipa": "flaɪ",
+      "pos": "v.",
+      "def": "v.飞，驾驶（飞机等）；乘飞机，（旗）飘扬n.[C]苍蝇",
+      "zh": "飞"
+    },
+    "subject": {
+      "ipa": "ˈsʌbdʒɪk",
+      "pos": "n.",
+      "def": "n.[C]学科，课程，科目；主题，话题",
+      "zh": "学科"
+    },
+    "king": {
+      "ipa": "kɪŋ",
+      "pos": "n.",
+      "def": "n.[C]君主，国王",
+      "zh": "君主"
+    },
+    "say": {
+      "ipa": "seɪ",
+      "pos": "v.",
+      "def": "v.说，讲",
+      "zh": "说"
+    },
+    "cloud": {
+      "ipa": "klaʊd",
+      "pos": "n.",
+      "def": "n.[C,U]云，云朵",
+      "zh": "云"
+    },
+    "hang": {
+      "ipa": "hæŋ",
+      "pos": "v.",
+      "def": "v.悬挂，垂下；绞死",
+      "zh": "悬挂"
+    },
+    "over": {
+      "ipa": "ˈəʊvə®",
+      "pos": "prep.",
+      "def": "prep.超过，多于，在……上方，遍及adv.再，结束，大于",
+      "zh": "超过"
+    },
+    "home": {
+      "ipa": "həʊm",
+      "pos": "n.",
+      "def": "n.[C,U]家，养老院adv.到家，在家",
+      "zh": "家"
+    },
+    "land": {
+      "ipa": "lænd",
+      "pos": "n.",
+      "def": "n.[U]大陆，土地 [C]国家v.降落，着陆",
+      "zh": "大陆"
+    },
+    "guard": {
+      "ipa": "ɡɑː(r)d",
+      "pos": "n.",
+      "def": "n.[C]警卫，看守；防护装置vt.守卫，保卫",
+      "zh": "警卫"
+    },
+    "practice": {
+      "ipa": "ˈpræktɪs",
+      "pos": "v.",
+      "def": "v.（亦作practise）练习n.[C,U]练习，（医生的）工作地点[U]实践",
+      "zh": "亦作"
+    },
+    "sit": {
+      "ipa": "sɪt",
+      "pos": "v.",
+      "def": "v.坐",
+      "zh": "坐"
+    },
+    "eat": {
+      "ipa": "iːt",
+      "pos": "v.",
+      "def": "v.吃",
+      "zh": "吃"
+    },
+    "meal": {
+      "ipa": "miːl",
+      "pos": "n.",
+      "def": "n.[C]早（或午、晚）餐，一餐所吃的食物",
+      "zh": "早"
+    },
+    "cry": {
+      "ipa": "kraɪ",
+      "pos": "v.",
+      "def": "v./n.[sing.]哭 [C]叫喊",
+      "zh": "哭"
+    },
+    "speak": {
+      "ipa": "spiːk",
+      "pos": "vt.",
+      "def": "vt.说（某种语言）vi.说话，提起",
+      "zh": "说"
+    },
+    "return": {
+      "ipa": "rɪˈtɜː(r)n",
+      "pos": "vt.",
+      "def": "vt.归还vi.回来，返回n.[C,U]回报[sing.]返回",
+      "zh": "归还"
+    },
+    "laugh": {
+      "ipa": "lɑːf",
+      "pos": "v.",
+      "def": "v.笑，发笑n.笑声",
+      "zh": "笑"
+    },
+    "imagine": {
+      "ipa": "ɪˈmædʒɪn",
+      "pos": "v.",
+      "def": "v.想象，设想",
+      "zh": "想象"
+    },
+    "afraid": {
+      "ipa": "əˈfreɪd",
+      "pos": "adj.",
+      "def": "adj.害怕，畏惧",
+      "zh": "害怕"
+    },
+    "jump": {
+      "ipa": "dʒʌmp",
+      "pos": "v.",
+      "def": "v.跳，跃n.[C]跳，跃（指运动）",
+      "zh": "跳"
+    },
+    "hit": {
+      "ipa": "hɪt",
+      "pos": "v.",
+      "def": "v.打，袭击n.[C]击中",
+      "zh": "打"
+    },
+    "blow": {
+      "ipa": "bləʊ",
+      "pos": "v.",
+      "def": "v.吹，刮；炸开",
+      "zh": "吹"
+    },
+    "turn": {
+      "ipa": "tɜː(r)n",
+      "pos": "v.",
+      "def": "v.转向，翻圈v.-link.（使）变成n.[C]轮流圈国",
+      "zh": "转向"
+    },
+    "kick": {
+      "ipa": "kɪk",
+      "pos": "",
+      "def": "",
+      "zh": "kick"
+    },
+    "what": {
+      "ipa": "wɒt",
+      "pos": "pron.",
+      "def": "pron./adj.什么",
+      "zh": "什么"
+    },
+    "try": {
+      "ipa": "traɪ",
+      "pos": "v.",
+      "def": "v./n.[C]尝试，设法，努力",
+      "zh": "尝试"
+    },
+    "magic": {
+      "ipa": "ˈmædʒɪk",
+      "pos": "adj.",
+      "def": "adj.有魔力的，有神奇力量的n.[U]魔术；魔法，魔力，魅力",
+      "zh": "有魔力的"
+    },
+    "spell": {
+      "ipa": "spel",
+      "pos": "v.",
+      "def": "v.用字母拼，拼写n.[C]咒语",
+      "zh": "用字母拼"
+    },
+    "call": {
+      "ipa": "kɔːl",
+      "pos": "v.",
+      "def": "v.给……打电话，把……叫作，呼喊n.[C]电话，叫声圈国",
+      "zh": "给"
+    },
+    "cheer": {
+      "ipa": "tʃɪə(r)",
+      "pos": "v.",
+      "def": "v.欢呼，喝彩，使高兴，鼓舞n.[C]欢呼声 [U]欢乐（或幸福）的气氛",
+      "zh": "欢呼"
+    },
+    "smile": {
+      "ipa": "smaɪ",
+      "pos": "vi.",
+      "def": "vi./n.[C]笑，微笑",
+      "zh": "笑"
+    },
+    "take": {
+      "ipa": "teɪk",
+      "pos": "v.",
+      "def": "v.买下，花费，拿走，乘坐，服药，记录，拍照，参加（考试或测验），接受",
+      "zh": "买下"
+    },
+    "next": {
+      "ipa": "nekst",
+      "pos": "adj.",
+      "def": "adj./n[sing.]下一个（的）adv.紧接着，随后",
+      "zh": "下一个"
+    },
+    "morning": {
+      "ipa": "ˈmɔː(r)nɪŋ",
+      "pos": "n.",
+      "def": "n.[C,U]早晨，上午",
+      "zh": "早晨"
+    },
+    "wake": {
+      "ipa": "weɪk",
+      "pos": "v.",
+      "def": "v.弄醒，醒n.（常构成搭配）",
+      "zh": "弄醒"
+    },
+    "early": {
+      "ipa": "ˈɜː(r)li",
+      "pos": "adv.",
+      "def": "adv./adj.早（的）",
+      "zh": "早"
+    },
+    "protect": {
+      "ipa": "prəˈtek",
+      "pos": "v.",
+      "def": "v.保护，防护",
+      "zh": "保护"
+    },
+    "teach": {
+      "ipa": "tiːtʃ",
+      "pos": "",
+      "def": "",
+      "zh": "teach"
+    },
+    "army": {
+      "ipa": "ˈɑː(r)mi",
+      "pos": "n.",
+      "def": "n.[C]陆军，陆军部队",
+      "zh": "陆军"
+    }
+  },
+  "script_gloss": {
+    "happened": "发生",
+    "here": "这里",
+    "asked": "问",
+    "gibbon": "长臂猿",
+    "monkeys": "猴子",
+    "apes": "猿",
+    "gathered": "聚集",
+    "looked": "看",
+    "scared": "害怕的",
+    "demon": "恶魔",
+    "attacked": "袭击",
+    "fight": "打斗",
+    "powerful": "强大的",
+    "stole": "偷",
+    "furious": "狂怒的",
+    "who": "谁",
+    "live": "居住",
+    "chaos": "混乱",
+    "came": "来",
+    "north": "北方",
+    "wait": "等",
+    "ordered": "命令",
+    "handle": "处理",
+    "warned": "警告",
+    "learned": "学习",
+    "sage": "智者",
+    "replied": "回应",
+    "back": "回来",
+    "soon": "很快",
+    "leaped": "跳跃",
+    "flew": "飞",
+    "subjects": "学科",
+    "stared": "盯着看",
+    "king": "国王",
+    "fly": "飞",
+    "said": "说",
+    "spotted": "发现",
+    "gloomy": "阴暗的",
+    "mountain": "山",
+    "clouds": "云",
+    "hung": "悬挂",
+    "over": "在",
+    "home": "家",
+    "landed": "降落",
+    "guards": "守卫",
+    "entrance": "入口",
+    "practicing": "练习",
+    "fighting": "剑术",
+    "flower": "水果与花朵山",
+    "revenge": "报仇",
+    "shrieked": "尖叫",
+    "sitting": "坐着",
+    "table": "桌子",
+    "eating": "吃",
+    "meal": "餐",
+    "disaster": "灾难",
+    "guard": "守卫",
+    "cried": "哭",
+    "sort": "种类",
+    "monkey": "猴子",
+    "spoken": "说",
+    "returned": "返回",
+    "weapons": "武器",
+    "armor": "盔甲",
+    "sword": "剑",
+    "moment": "时刻",
+    "wukong": "悟空",
+    "laughed": "笑",
+    "imagine": "想象",
+    "afraid": "害怕的",
+    "jumped": "跳",
+    "way": "方式",
+    "pow": "哇",
+    "hit": "击打",
+    "handful": "一把",
+    "blew": "吹",
+    "poof": "砰",
+    "strand": "一缕",
+    "turned": "变成",
+    "fake": "假冒的",
+    "punching": "打击",
+    "kicking": "踢",
+    "what": "什么",
+    "going": "发生",
+    "trying": "试图",
+    "magic": "魔法",
+    "spell": "咒语",
+    "called": "称为",
+    "beyond": "身体超越身体",
+    "destroyed": "摧毁",
+    "chased": "追逐",
+    "cave": "山洞",
+    "kidnapped": "绑架",
+    "cheered": "欢呼",
+    "majesty": "陛下",
+    "smiled": "微笑",
+    "take": "拿",
+    "next": "下一个",
+    "morning": "早晨",
+    "woke": "醒来",
+    "early": "早的",
+    "demons": "恶魔",
+    "attack": "攻击",
+    "protect": "保护",
+    "ourselves": "我们自己",
+    "teaching": "教",
+    "practiced": "练习",
+    "swords": "剑",
+    "spears": "矛",
+    "fierce": "凶猛的",
+    "army": "军队",
+    "bother": "打扰",
+    "problem": "问题"
+  },
+  "official_words": [
+    {
+      "term": "demon",
+      "zh": "魔鬼,恶魔",
+      "example": "A demon attacked us."
+    },
+    {
+      "term": "chaos",
+      "zh": "混乱,杂乱的一团",
+      "example": "He is called the Demon of Chaos."
+    },
+    {
+      "term": "kidnap",
+      "zh": "绑架,诱拐",
+      "example": "He stole most of our things and kidnapped many of us."
+    },
+    {
+      "term": "furious",
+      "zh": "非常愤怒的",
+      "example": "Wukong was furious."
+    },
+    {
+      "term": "handle",
+      "zh": "处理,对待",
+      "example": "I will handle the demon."
+    },
+    {
+      "term": "subject",
+      "zh": "1. 臣服者,国民,(2. (故事等的)主题,3. 科目)",
+      "example": "His subjects stared in amazement."
+    },
+    {
+      "term": "amazement",
+      "zh": "(相当)惊奇,诧异",
+      "example": "His subjects stared in amazement."
+    },
+    {
+      "term": "gloomy",
+      "zh": "忧郁的,阴郁的",
+      "example": "Wukong soon spotted a gloomy mountain."
+    },
+    {
+      "term": "entrance",
+      "zh": "入又",
+      "example": "Two guards stood at the entrance, practicing sword fighting."
+    },
+    {
+      "term": "revenge",
+      "zh": "报仇,报复",
+      "example": "I want revenge!"
+    },
+    {
+      "term": "shriek",
+      "zh": "(尖声)说话,尖叫",
+      "example": "\"Ahh!\" the guards shrieked, and ran into the cave."
+    },
+    {
+      "term": "meal",
+      "zh": "膳食,一餐",
+      "example": "The Demon of Chaos was sitting at a table, eating a meal."
+    },
+    {
+      "term": "disaster",
+      "zh": "灾害,灾难,巨大的不幸",
+      "example": "What sort of disaster?"
+    },
+    {
+      "term": "sort",
+      "zh": "1. 种类,(2. 分类)",
+      "example": "What sort of disaster?"
+    },
+    {
+      "term": "sage",
+      "zh": "圣人,圣贤",
+      "example": "I learned many things from a sage."
+    },
+    {
+      "term": "weapon",
+      "zh": "武器,兵器",
+      "example": "Does the monkey have any weapons?"
+    },
+    {
+      "term": "guard",
+      "zh": "警卫,保安",
+      "example": "Two guards stood at the entrance, practicing sword fighting."
+    },
+    {
+      "term": "imagine",
+      "zh": "想像",
+      "example": "\"I am small,\" he said, \"but I am more powerful than you can imagine .\""
+    },
+    {
+      "term": "handful",
+      "zh": "一撮,一把",
+      "example": "Wukong pulled out a handful of his own hair and blew on it."
+    },
+    {
+      "term": "strand",
+      "zh": "(绳、线等的)一股,一缕",
+      "example": "Each strand of hair turned into a fake monkey—exactly like Wukong."
+    },
+    {
+      "term": "fake",
+      "zh": "假的,冒充的",
+      "example": "Each strand of hair turned into a fake monkey—exactly like Wukong."
+    },
+    {
+      "term": "all at",
+      "zh": "突然",
+      "example": "once All at once the fake monkeys attacked the demon, punching and kicking him."
+    },
+    {
+      "term": "chase away",
+      "zh": "赶走,驱逐",
+      "example": ""
+    },
+    {
+      "term": "fierce",
+      "zh": "凶猛的,残酷的",
+      "example": "Before long, the monkeys and apes were a fierce army."
+    },
+    {
+      "term": "army",
+      "zh": "军队,陆军",
+      "example": "Before long, the monkeys and apes were a fierce army."
+    },
+    {
+      "term": "bother",
+      "zh": "烦扰,打搅",
+      "example": "No demon will dare bother us now."
+    },
+    {
+      "term": "though",
+      "zh": "可是,然而(用于句尾)",
+      "example": "There's just one problem though."
+    }
+  ],
+  "official_quiz": [
+    {
+      "q": "Why did Wukong go after the demon?",
+      "choices": [
+        "to rescue the kidnapped monkeys",
+        "to show how powerful he is",
+        "to be friends with the demon"
+      ],
+      "answer": 0,
+      "q_zh": "悟空为什么要去追那个妖怪？",
+      "choices_zh": [
+        "营救被绑架的猴子",
+        "显示他有多强大",
+        "与恶魔为友"
+      ]
+    },
+    {
+      "q": "Where did the demon live?",
+      "choices": [
+        "a cave on a gloomy mountain",
+        "the Fruit and Flower mountain",
+        "the Cloud Palace"
+      ],
+      "answer": 0,
+      "q_zh": "那个恶魔住在哪里？",
+      "choices_zh": [
+        "阴沉山上的一个洞穴",
+        "花果山",
+        "云宫"
+      ]
+    },
+    {
+      "q": "What did the demon ask his guards to bring?",
+      "choices": [
+        "a sword and armor",
+        "a meal",
+        "a fake monkey"
+      ],
+      "answer": 0,
+      "q_zh": "恶魔让他的守卫带来什么？",
+      "choices_zh": [
+        "一把剑和一副盔甲",
+        "一顿饭",
+        "一只假猴子"
+      ]
+    },
+    {
+      "q": "What did Wukong use to destroy the demon?",
+      "choices": [
+        "a magic spell",
+        "a sword",
+        "a spear"
+      ],
+      "answer": 0,
+      "q_zh": "悟空用什么来消灭那个妖怪？",
+      "choices_zh": [
+        "魔法咒语",
+        "一把剑",
+        "一根矛"
+      ]
+    },
+    {
+      "q": "What did Wukong teach his subjects?",
+      "choices": [
+        "how to fight with swords and spears",
+        "how to use magic spells",
+        "how to fly on clouds"
+      ],
+      "answer": 0,
+      "q_zh": "悟空教他的臣民什么？",
+      "choices_zh": [
+        "如何使用剑和矛进行战斗",
+        "如何使用魔法咒语",
+        "如何在云上飞"
+      ]
+    }
+  ]
+}

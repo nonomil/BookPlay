@@ -1,0 +1,584 @@
+{
+ "schema_version": 1,
+ "ep": 16,
+ "title": {
+  "en": "Wukong Gets Tricked",
+  "zh": "西游记 第16集"
+ },
+ "collection": "c03",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "imp",
+   "nameZh": "小妖",
+   "mode": "sparring",
+   "sprite": "imp"
+  },
+  "minors": [
+   {
+    "id": "imp",
+    "nameZh": "小妖",
+    "sprite": "imp"
+   }
+  ]
+ },
+ "background": {
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep16/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "Wukong looked at the Dragon King and sighed.",
+   "textZh": "悟空望向龙王,叹了口气。",
+   "illustration": "assets/adv_frames/ep16/f1.jpg",
+   "sourceNodeId": "n001",
+   "audioRef": "sent_en:Wukong looked at the Dragon King and sighed."
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "\"You're right,\" said the monkey.",
+   "textZh": "\"你说得对,\"猴子说道。",
+   "illustration": "assets/adv_frames/ep16/f2.jpg",
+   "sourceNodeId": "n002",
+   "audioRef": "sent_en:\"You're right,\" said the monkey."
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "alongside",
+   "zh": "并排地,在旁边",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep16/f1.jpg"
+  },
+  {
+   "term": "village",
+   "zh": "村庄",
+   "ipa": "ˈvɪlɪdʒ",
+   "illustration": "assets/adv_frames/ep16/f1.jpg"
+  },
+  {
+   "term": "beg",
+   "zh": "请求,恳请",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep16/f0.jpg"
+  },
+  {
+   "term": "closely",
+   "zh": "仔细地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep16/f0.jpg"
+  },
+  {
+   "term": "reflection",
+   "zh": "(由镜子等倒映出的)映象,倒影",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep16/f3.jpg"
+  },
+  {
+   "term": "handsome",
+   "zh": "英俊的,帅的",
+   "ipa": "ˈhænsəm",
+   "illustration": "assets/adv_frames/ep16/f0.jpg"
+  },
+  {
+   "term": "side",
+   "zh": "旁边,侧面",
+   "ipa": "saɪd",
+   "illustration": "assets/adv_frames/ep16/f0.jpg"
+  },
+  {
+   "term": "bulge",
+   "zh": "膨胀,凸起",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep16/f2.jpg"
+  },
+  {
+   "term": "force",
+   "zh": "勉强(做...),迫使(他人或自己)做...",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep16/f0.jpg"
+  },
+  {
+   "term": "come off",
+   "zh": "(原来贴着的东西)脱落,掉落",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep16/f2.jpg"
+  },
+  {
+   "term": "stamp",
+   "zh": "1. (用脚)踏,用力踩,(2. 邮票,3. 印章)",
+   "ipa": "stæmp",
+   "illustration": "assets/adv_frames/ep16/f0.jpg"
+  },
+  {
+   "term": "own",
+   "zh": "自己的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep16/f2.jpg"
+  }
+ ],
+ "wordPool": [
+  {
+   "term": "alongside",
+   "zh": "并排地,在旁边",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep16/f1.jpg"
+  },
+  {
+   "term": "village",
+   "zh": "村庄",
+   "ipa": "ˈvɪlɪdʒ",
+   "illustration": "assets/adv_frames/ep16/f1.jpg"
+  },
+  {
+   "term": "beg",
+   "zh": "请求,恳请",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep16/f0.jpg"
+  },
+  {
+   "term": "closely",
+   "zh": "仔细地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep16/f0.jpg"
+  },
+  {
+   "term": "reflection",
+   "zh": "(由镜子等倒映出的)映象,倒影",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep16/f3.jpg"
+  },
+  {
+   "term": "handsome",
+   "zh": "英俊的,帅的",
+   "ipa": "ˈhænsəm",
+   "illustration": "assets/adv_frames/ep16/f0.jpg"
+  },
+  {
+   "term": "side",
+   "zh": "旁边,侧面",
+   "ipa": "saɪd",
+   "illustration": "assets/adv_frames/ep16/f0.jpg"
+  },
+  {
+   "term": "bulge",
+   "zh": "膨胀,凸起",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep16/f2.jpg"
+  },
+  {
+   "term": "force",
+   "zh": "勉强(做...),迫使(他人或自己)做...",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep16/f0.jpg"
+  },
+  {
+   "term": "come off",
+   "zh": "(原来贴着的东西)脱落,掉落",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep16/f2.jpg"
+  },
+  {
+   "term": "stamp",
+   "zh": "1. (用脚)踏,用力踩,(2. 邮票,3. 印章)",
+   "ipa": "stæmp",
+   "illustration": "assets/adv_frames/ep16/f0.jpg"
+  },
+  {
+   "term": "own",
+   "zh": "自己的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep16/f2.jpg"
+  },
+  {
+   "term": "lunge",
+   "zh": "冲,扑",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep16/f0.jpg"
+  },
+  {
+   "term": "pain",
+   "zh": "疼痛,痛苦",
+   "ipa": "peɪn",
+   "illustration": "assets/adv_frames/ep16/f0.jpg"
+  },
+  {
+   "term": "furious",
+   "zh": "非常愤怒的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep16/f0.jpg"
+  },
+  {
+   "term": "pound",
+   "zh": "重打,重敲",
+   "ipa": "paʊnd",
+   "illustration": "assets/adv_frames/ep16/f0.jpg"
+  },
+  {
+   "term": "wide",
+   "zh": "1. 宽的,广阔的,(2. 张得(或开得)很大地)",
+   "ipa": "waɪd",
+   "illustration": "assets/adv_frames/ep16/f1.jpg"
+  },
+  {
+   "term": "too",
+   "zh": "真遗憾,真可惜",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep16/f3.jpg"
+  },
+  {
+   "term": "human",
+   "zh": "人,人类",
+   "ipa": "ˈhjuːmən",
+   "illustration": "assets/adv_frames/ep16/f0.jpg"
+  },
+  {
+   "term": "swell",
+   "zh": "膨胀,鼓胀",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep16/f1.jpg"
+  },
+  {
+   "term": "dragon",
+   "zh": "龙",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep16/f1.jpg"
+  },
+  {
+   "term": "swallow",
+   "zh": "咽下,吞下",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep16/f0.jpg"
+  },
+  {
+   "term": "underwater",
+   "zh": "在水里面地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep16/f0.jpg"
+  },
+  {
+   "term": "right",
+   "zh": "正确的",
+   "ipa": "raɪt",
+   "illustration": "assets/adv_frames/ep16/f1.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "alongside",
+     "zh": "并排地,在旁边",
+     "sprite": "imp"
+    },
+    {
+     "term": "village",
+     "zh": "村庄",
+     "sprite": "imp"
+    },
+    {
+     "term": "beg",
+     "zh": "请求,恳请",
+     "sprite": "imp"
+    },
+    {
+     "term": "closely",
+     "zh": "仔细地",
+     "sprite": "imp"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "reflection",
+     "zh": "(由镜子等倒映出的)映象,倒影",
+     "sprite": "imp"
+    },
+    {
+     "term": "handsome",
+     "zh": "英俊的,帅的",
+     "sprite": "imp"
+    },
+    {
+     "term": "side",
+     "zh": "旁边,侧面",
+     "sprite": "imp"
+    },
+    {
+     "term": "bulge",
+     "zh": "膨胀,凸起",
+     "sprite": "imp"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "force",
+    "zh": "勉强(做...),迫使(他人或自己)做..."
+   },
+   {
+    "term": "come off",
+    "zh": "(原来贴着的东西)脱落,掉落"
+   },
+   {
+    "term": "stamp",
+    "zh": "1. (用脚)踏,用力踩,(2. 邮票,3. 印章)"
+   },
+   {
+    "term": "own",
+    "zh": "自己的"
+   }
+  ],
+  "taunts": [
+   "imp.1",
+   "imp.2",
+   "imp.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=16",
+ "npcDialogue": {
+  "intro": {
+   "id": "ep16-map-intro",
+   "lines": [
+    {
+     "id": "ep16-map-intro-1",
+     "sourceNodeId": "n001",
+     "speaker": "narrator",
+     "textEn": "Wukong looked at the Dragon King and sighed.",
+     "textZh": "悟空望向龙王,叹了口气。",
+     "audioRef": "sent_en:Wukong looked at the Dragon King and sighed.",
+     "audioStart": 11.267,
+     "audioEnd": 15.951
+    },
+    {
+     "id": "ep16-map-intro-2",
+     "sourceNodeId": "n002",
+     "speaker": "narrator",
+     "textEn": "\"You're right,\" said the monkey.",
+     "textZh": "\"你说得对,\"猴子说道。",
+     "audioRef": "sent_en:\"You're right,\" said the monkey.",
+     "audioStart": 15.952,
+     "audioEnd": 18.507
+    }
+   ]
+  },
+  "quiz": {
+   "id": "ep16-map-quiz",
+   "lines": [
+    {
+     "id": "ep16-map-quiz-1",
+     "sourceNodeId": "n035",
+     "speaker": "narrator",
+     "textEn": "\"The bodhisattva Guanyin taught me a spell,\" said the monk.",
+     "textZh": "\"观世音菩萨教给我一个咒语,\"唐僧说。",
+     "audioRef": "sent_en:\"The bodhisattva Guanyin taught me a spell,\" said the monk.",
+     "audioStart": 140.885,
+     "audioEnd": 144.789
+    }
+   ],
+   "question": {
+    "id": "ep016-official-quiz-001",
+    "textEn": "which is not true?",
+    "textZh": "哪一项是不正确的？"
+   },
+   "word": {
+    "term": "alongside",
+    "zh": "并排地,在旁边",
+    "ipa": ""
+   },
+   "options": [
+    {
+     "id": "a",
+     "textEn": "the dragon king gave wukong the headband.",
+     "textZh": "龙王把头箍给了悟空。",
+     "correct": true,
+     "feedback": "对了。龙王把头箍给了悟空。"
+    },
+    {
+     "id": "b",
+     "textEn": "wukong found a headband in a bag.",
+     "textZh": "悟空在一个包里发现了一条头带。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    },
+    {
+     "id": "c",
+     "textEn": "the monk learned the spell from guanyin.",
+     "textZh": "和尚从观音那里学会了咒语。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    }
+   ],
+   "lessonCardId": "ep016-official-quiz-001"
+  }
+ },
+ "map": {
+  "theme": "generic",
+  "coordinateSpace": "world-normalized",
+  "worldTiles": 2,
+  "regions": {
+   "hero": 0,
+   "waves": [
+    0,
+    1
+   ],
+   "npc": {
+    "intro": 0,
+    "quiz": 1
+   },
+   "boss": 3
+  },
+  "walkable": {
+   "space": "world",
+   "x": 0.0,
+   "y": 0.16,
+   "w": 1.0,
+   "h": 0.79,
+   "rects": [
+    {
+     "x": 0.0,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.66,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    }
+   ]
+  },
+  "heroSpawn": {
+   "x": 0.06,
+   "y": 0.31
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.31,
+    "y": 0.23
+   },
+   {
+    "x": 0.38,
+    "y": 0.27
+   },
+   {
+    "x": 0.34,
+    "y": 0.33
+   },
+   {
+    "x": 0.41,
+    "y": 0.24
+   }
+  ],
+  "waveSpawns": [
+   [
+    {
+     "x": 0.31,
+     "y": 0.23
+    },
+    {
+     "x": 0.38,
+     "y": 0.27
+    },
+    {
+     "x": 0.34,
+     "y": 0.33
+    },
+    {
+     "x": 0.41,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.81,
+     "y": 0.23
+    },
+    {
+     "x": 0.88,
+     "y": 0.27
+    },
+    {
+     "x": 0.84,
+     "y": 0.33
+    },
+    {
+     "x": 0.91,
+     "y": 0.24
+    }
+   ]
+  ],
+  "orbSpawns": [
+   [
+    {
+     "x": 0.11,
+     "y": 0.25
+    },
+    {
+     "x": 0.16,
+     "y": 0.31
+    },
+    {
+     "x": 0.12,
+     "y": 0.37
+    },
+    {
+     "x": 0.18,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.61,
+     "y": 0.25
+    },
+    {
+     "x": 0.66,
+     "y": 0.31
+    },
+    {
+     "x": 0.62,
+     "y": 0.37
+    },
+    {
+     "x": 0.68,
+     "y": 0.24
+    }
+   ]
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "dragonking-soldier",
+    "nameZh": "虾兵",
+    "x": 0.08,
+    "y": 0.26
+   },
+   {
+    "role": "quiz",
+    "sprite": "dragonking",
+    "nameZh": "dragonking",
+    "x": 0.7,
+    "y": 0.39
+   }
+  ],
+  "bossSpot": {
+   "x": 0.94,
+   "y": 0.85
+  }
+ }
+}

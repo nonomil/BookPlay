@@ -1,0 +1,1787 @@
+{
+  "schema_version": 1,
+  "episode": 28,
+  "title": {
+    "en": "Wukong Leaves His Body",
+    "zh": "西游记 第28集"
+  },
+  "sources": [
+    {
+      "kind": "courseware_main_pptx",
+      "file": "G:\\Game\\BookPlay书戏\\data\\西游记课件\\3.3西游记  Journey to the West PPT课件\\028_Journey to the West 28_Wukong Leaves His Body.pptx",
+      "sha256": "9fa10b2219c4614131ee93ab88fc04ce8e73d9b12bf7639a40fa7df92e452033",
+      "pages": 20
+    },
+    {
+      "kind": "official_quiz_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+      "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929",
+      "pages": 131
+    },
+    {
+      "kind": "intensive_reader_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\02-西游记精读版台词本\\1、带标注版PDF 108集\\028 悟空出窍 上.pdf",
+      "sha256": "fe915db07e5ca115e81a2dc7c2fcd6ef7b84fa6eaf19d00b904c4f4e90a31dfb",
+      "pages": 4
+    },
+    {
+      "kind": "intensive_reader_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\02-西游记精读版台词本\\1、带标注版PDF 108集\\028 悟空出窍 下.pdf",
+      "sha256": "512607f0865ddc9b56fad4db514e0fe7c8770842a3954ba5805e1f1a3157ced7",
+      "pages": 4
+    },
+    {
+      "kind": "courseware_screenshots_pptx",
+      "file": "G:\\Game\\BookPlay书戏\\data\\西游记课件\\西游记-外教课动画截图\\Journey to the West 028  Wukong Leaves His Body_20240106164351.pptx",
+      "sha256": "f71dfdca8004421ca6e98428fd9a07b2b1c125c83b04c964d9cb0b010acb67bd",
+      "pages": 44
+    }
+  ],
+  "cards": [
+    {
+      "card_id": "ep028-official-quiz-001",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 1,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "which is true?",
+        "zh": "哪一个是真的？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "the tree crashed down to the ground.",
+            "zh": "那棵树倒在了地上。"
+          },
+          {
+            "id": "b",
+            "en": "wukong did not eat the fruit.",
+            "zh": "悟空没有吃那种果子。"
+          },
+          {
+            "id": "c",
+            "en": "the priests were polite to wukong.",
+            "zh": "祭司们对悟空很礼貌。"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n017",
+            "quote": "He plucked three pieces from the tree's branches and went back to the kitchen."
+          },
+          {
+            "node_id": "n018",
+            "quote": "He handed Bajie and Wujing each a ginseng fruit."
+          },
+          {
+            "node_id": "n020",
+            "quote": "\"This fruit is delicious!\""
+          },
+          {
+            "node_id": "n021",
+            "quote": "\"Yes,\" said Wukong. \"It truly is.\""
+          },
+          {
+            "node_id": "n050",
+            "quote": "The two priests yelled and yelled."
+          },
+          {
+            "node_id": "n051",
+            "quote": "They called Wukong and his companions all sorts of terrible names."
+          },
+          {
+            "node_id": "n060",
+            "quote": "There was a loud crack, and the entire tree crashed to the ground."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 34,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep028-official-quiz-002",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 2,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "who went to go pick the fruit?",
+        "zh": "谁去采水果了？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "wukong",
+            "zh": "悟空"
+          },
+          {
+            "id": "b",
+            "en": "bajie",
+            "zh": "八戒"
+          },
+          {
+            "id": "c",
+            "en": "wujing",
+            "zh": "五净"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n013",
+            "quote": "\"You two wait here,\" said Wukong."
+          },
+          {
+            "node_id": "n014",
+            "quote": "\"I'll go pick some of that fruit.\""
+          },
+          {
+            "node_id": "n015",
+            "quote": "The monkey went behind the abbey and found the giant ginseng tree."
+          },
+          {
+            "node_id": "n017",
+            "quote": "He plucked three pieces from the tree's branches and went back to the kitchen."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 34,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep028-official-quiz-003",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 3,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "why was wukong angry?",
+        "zh": "悟空为什么生气？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "the priests called him names.",
+            "zh": "祭司们叫他名字。"
+          },
+          {
+            "id": "b",
+            "en": "the fruit didn't taste good.",
+            "zh": "那个水果尝起来不好吃。"
+          },
+          {
+            "id": "c",
+            "en": "the tang monk didn't eat the fruit.",
+            "zh": "唐僧没有吃那种果子。"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n048",
+            "quote": "\"You're all thieves and liars!\" cried one of the priests."
+          },
+          {
+            "node_id": "n050",
+            "quote": "The two priests yelled and yelled."
+          },
+          {
+            "node_id": "n051",
+            "quote": "They called Wukong and his companions all sorts of terrible names."
+          },
+          {
+            "node_id": "n056",
+            "quote": "\"Those priests are rude!\" he said to himself."
+          },
+          {
+            "node_id": "n057",
+            "quote": "\"So what if we ate some ginseng fruit? They have no right to call us names!\""
+          },
+          {
+            "node_id": "n058",
+            "quote": "Wukong grew very angry."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 34,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep028-official-quiz-004",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 4,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "how did wukong leave his body?",
+        "zh": "悟空是怎么离开他的身体的？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "he recited a spell.",
+            "zh": "他念了一段咒语。"
+          },
+          {
+            "id": "b",
+            "en": "he fell asleep.",
+            "zh": "他睡着了。"
+          },
+          {
+            "id": "c",
+            "en": "he split in two.",
+            "zh": "他裂成两半。"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n052",
+            "quote": "\"I don't want to listen to this,\" thought the monkey."
+          },
+          {
+            "node_id": "n053",
+            "quote": "He recited a quick spell and changed into a spirit form."
+          },
+          {
+            "node_id": "n054",
+            "quote": "He left his body standing in the room and went out behind the abbey."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 34,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep028-official-quiz-005",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 5,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "what did wukong strike with his iron bar?",
+        "zh": "悟空用他的铁棒击打了什么？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "the ginseng tree",
+            "zh": "人参树"
+          },
+          {
+            "id": "b",
+            "en": "the abbey",
+            "zh": "修道院"
+          },
+          {
+            "id": "c",
+            "en": "the priests",
+            "zh": "祭司们"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n059",
+            "quote": "Finally he took out his iron bar and struck the tree."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 34,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep028-vocab-001",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 101,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "wonderful",
+        "zh": "adj.精彩的,绝妙的"
+      },
+      "payload": {
+        "term": "wonderful",
+        "ipa": "ˈwʌndəf(ə)l",
+        "pos": "adj.",
+        "def": "adj.精彩的,绝妙的",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "028 悟空出窍 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "fe915db07e5ca115e81a2dc7c2fcd6ef7b84fa6eaf19d00b904c4f4e90a31dfb"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep028-vocab-002",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 102,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "eat",
+        "zh": "v.吃"
+      },
+      "payload": {
+        "term": "eat",
+        "ipa": "iːt",
+        "pos": "v.",
+        "def": "v.吃",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "028 悟空出窍 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "fe915db07e5ca115e81a2dc7c2fcd6ef7b84fa6eaf19d00b904c4f4e90a31dfb"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep028-vocab-003",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 103,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "should",
+        "zh": "modal v.应该,应当"
+      },
+      "payload": {
+        "term": "should",
+        "ipa": "ʃʊd",
+        "pos": "",
+        "def": "modal v.应该,应当",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "028 悟空出窍 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "fe915db07e5ca115e81a2dc7c2fcd6ef7b84fa6eaf19d00b904c4f4e90a31dfb"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep028-vocab-004",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 104,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "wait",
+        "zh": "v.等待,等候"
+      },
+      "payload": {
+        "term": "wait",
+        "ipa": "weɪt",
+        "pos": "v.",
+        "def": "v.等待,等候",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "028 悟空出窍 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "fe915db07e5ca115e81a2dc7c2fcd6ef7b84fa6eaf19d00b904c4f4e90a31dfb"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep028-vocab-005",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 105,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "here",
+        "zh": "adv.这就是,在这里"
+      },
+      "payload": {
+        "term": "here",
+        "ipa": "hɪə(r)",
+        "pos": "adv.",
+        "def": "adv.这就是,在这里",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "028 悟空出窍 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "fe915db07e5ca115e81a2dc7c2fcd6ef7b84fa6eaf19d00b904c4f4e90a31dfb"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep028-vocab-006",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 106,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "pick",
+        "zh": "vt.采,摘,选择,挑选,拿取, 挪移"
+      },
+      "payload": {
+        "term": "pick",
+        "ipa": "pɪk",
+        "pos": "vt.",
+        "def": "vt.采,摘,选择,挑选,拿取, 挪移",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "028 悟空出窍 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "fe915db07e5ca115e81a2dc7c2fcd6ef7b84fa6eaf19d00b904c4f4e90a31dfb"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep028-vocab-007",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 107,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "monkey",
+        "zh": "猴子"
+      },
+      "payload": {
+        "term": "monkey",
+        "ipa": "ˈmʌŋki",
+        "pos": "n.",
+        "def": "n.[C]猴子",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "028 悟空出窍 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "fe915db07e5ca115e81a2dc7c2fcd6ef7b84fa6eaf19d00b904c4f4e90a31dfb"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "028 悟空出窍 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "512607f0865ddc9b56fad4db514e0fe7c8770842a3954ba5805e1f1a3157ced7"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep028-vocab-008",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 108,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "delicious",
+        "zh": "adj.可口的,美味的"
+      },
+      "payload": {
+        "term": "delicious",
+        "ipa": "dɪˈlɪʃəs",
+        "pos": "adj.",
+        "def": "adj.可口的,美味的",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "028 悟空出窍 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "fe915db07e5ca115e81a2dc7c2fcd6ef7b84fa6eaf19d00b904c4f4e90a31dfb"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep028-vocab-009",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 109,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "wish",
+        "zh": "祝愿 v.希望,祝愿"
+      },
+      "payload": {
+        "term": "wish",
+        "ipa": "wɪʃ",
+        "pos": "n.",
+        "def": "n.[C]愿望,希望[pl.]祝愿 v.希望,祝愿",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "028 悟空出窍 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "fe915db07e5ca115e81a2dc7c2fcd6ef7b84fa6eaf19d00b904c4f4e90a31dfb"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep028-vocab-010",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 110,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "walk",
+        "zh": "步行的路径"
+      },
+      "payload": {
+        "term": "walk",
+        "ipa": "wɔː k",
+        "pos": "n.",
+        "def": "n.[C]行走,步行 v.行走,步行 n.[C]步行的路径",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "028 悟空出窍 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "fe915db07e5ca115e81a2dc7c2fcd6ef7b84fa6eaf19d00b904c4f4e90a31dfb"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep028-vocab-011",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 111,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "hear",
+        "zh": "v.听说,听到,听见,接到(信或 电话)"
+      },
+      "payload": {
+        "term": "hear",
+        "ipa": "hɪə",
+        "pos": "v.",
+        "def": "v.听说,听到,听见,接到(信或 电话)",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "028 悟空出窍 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "fe915db07e5ca115e81a2dc7c2fcd6ef7b84fa6eaf19d00b904c4f4e90a31dfb"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep028-vocab-012",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 112,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "pig",
+        "zh": "猪"
+      },
+      "payload": {
+        "term": "pig",
+        "ipa": "pɪɡ",
+        "pos": "n.",
+        "def": "n.[C]猪",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "028 悟空出窍 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "fe915db07e5ca115e81a2dc7c2fcd6ef7b84fa6eaf19d00b904c4f4e90a31dfb"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep028-vocab-013",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 113,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "search",
+        "zh": "/v.搜索,搜查"
+      },
+      "payload": {
+        "term": "search",
+        "ipa": "sɜː(r)tʃ",
+        "pos": "n.",
+        "def": "n.[C]/v.搜索,搜查",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "028 悟空出窍 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "fe915db07e5ca115e81a2dc7c2fcd6ef7b84fa6eaf19d00b904c4f4e90a31dfb"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep028-vocab-014",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 114,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "piece",
+        "zh": "片,块,段,条,碎片,一 件,一首,一张"
+      },
+      "payload": {
+        "term": "piece",
+        "ipa": "piːs",
+        "pos": "n.",
+        "def": "n.[C]片,块,段,条,碎片,一 件,一首,一张",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "028 悟空出窍 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "fe915db07e5ca115e81a2dc7c2fcd6ef7b84fa6eaf19d00b904c4f4e90a31dfb"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep028-vocab-015",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 115,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "go",
+        "zh": "vi.去,走 v.link.变成,变得"
+      },
+      "payload": {
+        "term": "go",
+        "ipa": "ɡəʊ",
+        "pos": "vi.",
+        "def": "vi.去,走 v.link.变成,变得",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "028 悟空出窍 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "fe915db07e5ca115e81a2dc7c2fcd6ef7b84fa6eaf19d00b904c4f4e90a31dfb"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep028-vocab-016",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 116,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "terrible",
+        "zh": "adj.非常讨厌的,非常严重的,可 怕的,糟糕的"
+      },
+      "payload": {
+        "term": "terrible",
+        "ipa": "ˈterəbl",
+        "pos": "adj.",
+        "def": "adj.非常讨厌的,非常严重的,可 怕的,糟糕的",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "028 悟空出窍 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "fe915db07e5ca115e81a2dc7c2fcd6ef7b84fa6eaf19d00b904c4f4e90a31dfb"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "028 悟空出窍 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "512607f0865ddc9b56fad4db514e0fe7c8770842a3954ba5805e1f1a3157ced7"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep028-vocab-017",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 117,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "hard",
+        "zh": "adj.困难的,坚硬的,苛刻的 adv.努力地,猛烈地,费力地"
+      },
+      "payload": {
+        "term": "hard",
+        "ipa": "hɑː(r)d",
+        "pos": "adj.",
+        "def": "adj.困难的,坚硬的,苛刻的 adv.努力地,猛烈地,费力地",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "028 悟空出窍 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "512607f0865ddc9b56fad4db514e0fe7c8770842a3954ba5805e1f1a3157ced7"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep028-vocab-018",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 118,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "point",
+        "zh": "目的 v.指,指向"
+      },
+      "payload": {
+        "term": "point",
+        "ipa": "pɔɪnt",
+        "pos": "n.",
+        "def": "n.[C]得分,点,小数点,时刻, 特点,观点,要点[U]目的 v.指,指向",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "028 悟空出窍 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "512607f0865ddc9b56fad4db514e0fe7c8770842a3954ba5805e1f1a3157ced7"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep028-vocab-019",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 119,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "idea",
+        "zh": "想法,主意"
+      },
+      "payload": {
+        "term": "idea",
+        "ipa": "aɪˈdɪə",
+        "pos": "n.",
+        "def": "n.[C]想法,主意",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "028 悟空出窍 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "512607f0865ddc9b56fad4db514e0fe7c8770842a3954ba5805e1f1a3157ced7"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep028-vocab-020",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 120,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "steal",
+        "zh": "v.偷,窃取"
+      },
+      "payload": {
+        "term": "steal",
+        "ipa": "stiːl",
+        "pos": "v.",
+        "def": "v.偷,窃取",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "028 悟空出窍 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "512607f0865ddc9b56fad4db514e0fe7c8770842a3954ba5805e1f1a3157ced7"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep028-vocab-021",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 121,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "invite",
+        "zh": "vt.邀请"
+      },
+      "payload": {
+        "term": "invite",
+        "ipa": "ɪnˈvaɪt",
+        "pos": "vt.",
+        "def": "vt.邀请",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "028 悟空出窍 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "512607f0865ddc9b56fad4db514e0fe7c8770842a3954ba5805e1f1a3157ced7"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep028-vocab-022",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 122,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "call",
+        "zh": "电话,叫声圈国"
+      },
+      "payload": {
+        "term": "call",
+        "ipa": "kɔː l",
+        "pos": "v.",
+        "def": "v.给......打电话,把......叫作,呼 喊 n.[C]电话,叫声圈国",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "028 悟空出窍 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "512607f0865ddc9b56fad4db514e0fe7c8770842a3954ba5805e1f1a3157ced7"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep028-vocab-023",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 123,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "name",
+        "zh": "名字,名称 vt.命名,给......取名"
+      },
+      "payload": {
+        "term": "name",
+        "ipa": "neɪm",
+        "pos": "n.",
+        "def": "n.[C]名字,名称 vt.命名,给......取名",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "028 悟空出窍 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "512607f0865ddc9b56fad4db514e0fe7c8770842a3954ba5805e1f1a3157ced7"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep028-vocab-024",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 124,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "listen",
+        "zh": "vi.听,倾听;注意听"
+      },
+      "payload": {
+        "term": "listen",
+        "ipa": "ˈlɪs(ə)n",
+        "pos": "vi.",
+        "def": "vi.听,倾听;注意听",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "028 悟空出窍 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "512607f0865ddc9b56fad4db514e0fe7c8770842a3954ba5805e1f1a3157ced7"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep028-vocab-025",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 125,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "change",
+        "zh": "变化,改变 v.变化,改变"
+      },
+      "payload": {
+        "term": "change",
+        "ipa": "tʃeɪndʒ",
+        "pos": "n.",
+        "def": "n.[C,U]变化,改变 v.变化,改变",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "028 悟空出窍 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "512607f0865ddc9b56fad4db514e0fe7c8770842a3954ba5805e1f1a3157ced7"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep028-vocab-026",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 126,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "leave",
+        "zh": "休假"
+      },
+      "payload": {
+        "term": "leave",
+        "ipa": "liːv",
+        "pos": "v.",
+        "def": "v.离开,留下,使处于...... n.[U]休假",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "028 悟空出窍 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "512607f0865ddc9b56fad4db514e0fe7c8770842a3954ba5805e1f1a3157ced7"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep028-vocab-027",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 127,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "loud",
+        "zh": "adj.响亮的,大声的 adv.大声地,响亮地"
+      },
+      "payload": {
+        "term": "loud",
+        "ipa": "laʊd",
+        "pos": "adj.",
+        "def": "adj.响亮的,大声的 adv.大声地,响亮地",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "028 悟空出窍 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "512607f0865ddc9b56fad4db514e0fe7c8770842a3954ba5805e1f1a3157ced7"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep028-vocab-028",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 128,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "return",
+        "zh": "返回"
+      },
+      "payload": {
+        "term": "return",
+        "ipa": "rɪˈtɜː(r)n",
+        "pos": "vt.",
+        "def": "vt.归还 vi.回来,返回 n.[C,U]回报[sing.]返回",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "028 悟空出窍 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "512607f0865ddc9b56fad4db514e0fe7c8770842a3954ba5805e1f1a3157ced7"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep028-vocab-029",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 129,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "body",
+        "zh": "身体;尸体"
+      },
+      "payload": {
+        "term": "body",
+        "ipa": "ˈbɒdi",
+        "pos": "n.",
+        "def": "n.[C]身体;尸体",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "028 悟空出窍 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "512607f0865ddc9b56fad4db514e0fe7c8770842a3954ba5805e1f1a3157ced7"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep028-vocab-030",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 130,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "stop",
+        "zh": "车站,停止 v.停止,阻止,逗留"
+      },
+      "payload": {
+        "term": "stop",
+        "ipa": "stɒp",
+        "pos": "n.",
+        "def": "n.[C]车站,停止 v.停止,阻止,逗留",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "028 悟空出窍 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "512607f0865ddc9b56fad4db514e0fe7c8770842a3954ba5805e1f1a3157ced7"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep028-vocab-031",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 131,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "look",
+        "zh": "看,注视,外表,表情"
+      },
+      "payload": {
+        "term": "look",
+        "ipa": "lʊk",
+        "pos": "vi.",
+        "def": "vi.看 v.-link.看上去 n.[C]看,注视,外表,表情",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "028 悟空出窍 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "512607f0865ddc9b56fad4db514e0fe7c8770842a3954ba5805e1f1a3157ced7"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep028-vocab-032",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 132,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "mistake",
+        "zh": "错误,失误 vt.误会,误解 树那儿,再数一数果子?”"
+      },
+      "payload": {
+        "term": "mistake",
+        "ipa": "mɪˈsteɪk",
+        "pos": "n.",
+        "def": "n.[C]错误,失误 vt.误会,误解 树那儿,再数一数果子?”",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "028 悟空出窍 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "512607f0865ddc9b56fad4db514e0fe7c8770842a3954ba5805e1f1a3157ced7"
+        }
+      ],
+      "review_status": "machine_verified"
+    }
+  ],
+  "teacher_guide": null,
+  "review": {
+    "status": "draft",
+    "reviewed_at": null,
+    "card_stats": {
+      "total": 37,
+      "sentence_choice": 5,
+      "word_review": 32,
+      "machine_verified": 33,
+      "assistant_reviewed": 4,
+      "verified": 37,
+      "needs_review": 0
+    }
+  },
+  "generated_at": "2026-08-31T04:49:38.396081+00:00"
+}

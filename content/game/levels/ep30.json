@@ -1,0 +1,584 @@
+{
+ "schema_version": 1,
+ "ep": 30,
+ "title": {
+  "en": "The Frying Pan",
+  "zh": "西游记 第30集"
+ },
+ "collection": "c04",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "zhenyuan",
+   "nameZh": "镇元大仙",
+   "mode": "sparring",
+   "sprite": "zhenyuan"
+  },
+  "minors": [
+   {
+    "id": "imp",
+    "nameZh": "小妖",
+    "sprite": "imp"
+   }
+  ]
+ },
+ "background": {
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep30/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "Wukong and his companions were tied up in a room in the abbey.",
+   "textZh": "悟空与他的同伴们被捆绑在寺院的一间房内。",
+   "illustration": "assets/adv_frames/ep30/f1.jpg",
+   "sourceNodeId": "n001",
+   "audioRef": "sent_en:Wukong and his companions were tied up in a room in the abbey."
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "\"I will deal with you all in the morning,\" said the Great Immortal.",
+   "textZh": "\"我将于清晨与诸位相见,\"大仙说道。",
+   "illustration": "assets/adv_frames/ep30/f2.jpg",
+   "sourceNodeId": "n002",
+   "audioRef": "sent_en:\"I will deal with you all in the morning,\" said the Great Immortal."
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "danger",
+   "zh": "危险",
+   "ipa": "ˈdeɪndʒə(r)",
+   "illustration": "assets/adv_frames/ep30/f1.jpg"
+  },
+  {
+   "term": "cause",
+   "zh": "导致,使发生,引起",
+   "ipa": "kɔːz",
+   "illustration": "assets/adv_frames/ep30/f1.jpg"
+  },
+  {
+   "term": "calm",
+   "zh": "镇定下来",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep30/f3.jpg"
+  },
+  {
+   "term": "fault",
+   "zh": "错误,过失",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep30/f1.jpg"
+  },
+  {
+   "term": "knock",
+   "zh": "拆除,撞到,击倒",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep30/f2.jpg"
+  },
+  {
+   "term": "refuse",
+   "zh": "拒绝",
+   "ipa": "rɪˈfjuːz",
+   "illustration": "assets/adv_frames/ep30/f3.jpg"
+  },
+  {
+   "term": "figure out",
+   "zh": "想出,理解出",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep30/f2.jpg"
+  },
+  {
+   "term": "asleep",
+   "zh": "睡着的",
+   "ipa": "əˈsliːp",
+   "illustration": "assets/adv_frames/ep30/f3.jpg"
+  },
+  {
+   "term": "shrank",
+   "zh": "收缩,缩短 (shrink-shrank/shrunk)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep30/f2.jpg"
+  },
+  {
+   "term": "tiptoe",
+   "zh": "踮着脚走",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep30/f1.jpg"
+  },
+  {
+   "term": "silent",
+   "zh": "安静的,无声的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep30/f1.jpg"
+  },
+  {
+   "term": "boom",
+   "zh": "1. 用低沉洪亮的声音说话,(2. 隆隆声)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep30/f1.jpg"
+  }
+ ],
+ "wordPool": [
+  {
+   "term": "danger",
+   "zh": "危险",
+   "ipa": "ˈdeɪndʒə(r)",
+   "illustration": "assets/adv_frames/ep30/f1.jpg"
+  },
+  {
+   "term": "cause",
+   "zh": "导致,使发生,引起",
+   "ipa": "kɔːz",
+   "illustration": "assets/adv_frames/ep30/f1.jpg"
+  },
+  {
+   "term": "calm",
+   "zh": "镇定下来",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep30/f3.jpg"
+  },
+  {
+   "term": "fault",
+   "zh": "错误,过失",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep30/f1.jpg"
+  },
+  {
+   "term": "knock",
+   "zh": "拆除,撞到,击倒",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep30/f2.jpg"
+  },
+  {
+   "term": "refuse",
+   "zh": "拒绝",
+   "ipa": "rɪˈfjuːz",
+   "illustration": "assets/adv_frames/ep30/f3.jpg"
+  },
+  {
+   "term": "figure out",
+   "zh": "想出,理解出",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep30/f2.jpg"
+  },
+  {
+   "term": "asleep",
+   "zh": "睡着的",
+   "ipa": "əˈsliːp",
+   "illustration": "assets/adv_frames/ep30/f3.jpg"
+  },
+  {
+   "term": "shrank",
+   "zh": "收缩,缩短 (shrink-shrank/shrunk)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep30/f2.jpg"
+  },
+  {
+   "term": "tiptoe",
+   "zh": "踮着脚走",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep30/f1.jpg"
+  },
+  {
+   "term": "silent",
+   "zh": "安静的,无声的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep30/f1.jpg"
+  },
+  {
+   "term": "boom",
+   "zh": "1. 用低沉洪亮的声音说话,(2. 隆隆声)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep30/f1.jpg"
+  },
+  {
+   "term": "stab",
+   "zh": "(用像刀一样尖锐的东西)刺",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep30/f2.jpg"
+  },
+  {
+   "term": "frying pan",
+   "zh": "煎锅",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep30/f3.jpg"
+  },
+  {
+   "term": "fry",
+   "zh": "油炸",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep30/f0.jpg"
+  },
+  {
+   "term": "enormous",
+   "zh": "巨大的,庞大的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep30/f1.jpg"
+  },
+  {
+   "term": "crisp",
+   "zh": "松脆的东西",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep30/f0.jpg"
+  },
+  {
+   "term": "quick",
+   "zh": "快的,敏捷的",
+   "ipa": "kwɪk",
+   "illustration": "assets/adv_frames/ep30/f3.jpg"
+  },
+  {
+   "term": "exactly",
+   "zh": "准确地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep30/f2.jpg"
+  },
+  {
+   "term": "disappear",
+   "zh": "消失",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep30/f3.jpg"
+  },
+  {
+   "term": "heavy",
+   "zh": "重的",
+   "ipa": "ˈhevi",
+   "illustration": "assets/adv_frames/ep30/f3.jpg"
+  },
+  {
+   "term": "heavily",
+   "zh": "1. 猛烈地,厉害地,(2. 沉重地)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep30/f2.jpg"
+  },
+  {
+   "term": "pant",
+   "zh": "喘息",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep30/f3.jpg"
+  },
+  {
+   "term": "drag",
+   "zh": "拖曳,慢吞吞地行进",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep30/f0.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "danger",
+     "zh": "危险",
+     "sprite": "imp"
+    },
+    {
+     "term": "cause",
+     "zh": "导致,使发生,引起",
+     "sprite": "imp"
+    },
+    {
+     "term": "calm",
+     "zh": "镇定下来",
+     "sprite": "imp"
+    },
+    {
+     "term": "fault",
+     "zh": "错误,过失",
+     "sprite": "imp"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "knock",
+     "zh": "拆除,撞到,击倒",
+     "sprite": "imp"
+    },
+    {
+     "term": "refuse",
+     "zh": "拒绝",
+     "sprite": "imp"
+    },
+    {
+     "term": "figure out",
+     "zh": "想出,理解出",
+     "sprite": "imp"
+    },
+    {
+     "term": "asleep",
+     "zh": "睡着的",
+     "sprite": "imp"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "shrank",
+    "zh": "收缩,缩短 (shrink-shrank/shrunk)"
+   },
+   {
+    "term": "tiptoe",
+    "zh": "踮着脚走"
+   },
+   {
+    "term": "silent",
+    "zh": "安静的,无声的"
+   },
+   {
+    "term": "boom",
+    "zh": "1. 用低沉洪亮的声音说话,(2. 隆隆声)"
+   }
+  ],
+  "taunts": [
+   "zhenyuan.1",
+   "zhenyuan.2",
+   "zhenyuan.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=30",
+ "npcDialogue": {
+  "intro": {
+   "id": "ep30-map-intro",
+   "lines": [
+    {
+     "id": "ep30-map-intro-1",
+     "sourceNodeId": "n001",
+     "speaker": "narrator",
+     "textEn": "Wukong and his companions were tied up in a room in the abbey.",
+     "textZh": "悟空与他的同伴们被捆绑在寺院的一间房内。",
+     "audioRef": "sent_en:Wukong and his companions were tied up in a room in the abbey.",
+     "audioStart": 10.934,
+     "audioEnd": 18.169
+    },
+    {
+     "id": "ep30-map-intro-2",
+     "sourceNodeId": "n002",
+     "speaker": "narrator",
+     "textEn": "\"I will deal with you all in the morning,\" said the Great Immortal.",
+     "textZh": "\"我将于清晨与诸位相见,\"大仙说道。",
+     "audioRef": "sent_en:\"I will deal with you all in the morning,\" said the Great Immortal.",
+     "audioStart": 18.17,
+     "audioEnd": 22.538
+    }
+   ]
+  },
+  "quiz": {
+   "id": "ep30-map-quiz",
+   "lines": [
+    {
+     "id": "ep30-map-quiz-1",
+     "sourceNodeId": "n034",
+     "speaker": "narrator",
+     "textEn": "Back at the abbey, the Great Immortal told his priests to start a fire.",
+     "textZh": "回到修道院后,大仙命他的僧侣们生起火来。",
+     "audioRef": "sent_en:Back at the abbey, the Great Immortal told his priests to start a fire.",
+     "audioStart": 153.271,
+     "audioEnd": 159.267
+    }
+   ],
+   "question": {
+    "id": "ep030-official-quiz-001",
+    "textEn": "which is true?",
+    "textZh": "哪一个是真的？"
+   },
+   "word": {
+    "term": "danger",
+    "zh": "危险",
+    "ipa": "ˈdeɪndʒə(r)"
+   },
+   "options": [
+    {
+     "id": "a",
+     "textEn": "the great immortal wanted to fry everyone.",
+     "textZh": "大仙想炸掉所有人。",
+     "correct": true,
+     "feedback": "对了。大仙想炸掉所有人。"
+    },
+    {
+     "id": "b",
+     "textEn": "wukong returned to the fruit and flower mountain.",
+     "textZh": "悟空回到了花果山。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    },
+    {
+     "id": "c",
+     "textEn": "fire would not hurt the tang monk.",
+     "textZh": "火不会伤到唐僧。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    }
+   ],
+   "lessonCardId": "ep030-official-quiz-001"
+  }
+ },
+ "map": {
+  "theme": "generic",
+  "coordinateSpace": "world-normalized",
+  "worldTiles": 2,
+  "regions": {
+   "hero": 0,
+   "waves": [
+    0,
+    1
+   ],
+   "npc": {
+    "intro": 0,
+    "quiz": 1
+   },
+   "boss": 3
+  },
+  "walkable": {
+   "space": "world",
+   "x": 0.0,
+   "y": 0.16,
+   "w": 1.0,
+   "h": 0.79,
+   "rects": [
+    {
+     "x": 0.0,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.66,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    }
+   ]
+  },
+  "heroSpawn": {
+   "x": 0.06,
+   "y": 0.31
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.31,
+    "y": 0.23
+   },
+   {
+    "x": 0.38,
+    "y": 0.27
+   },
+   {
+    "x": 0.34,
+    "y": 0.33
+   },
+   {
+    "x": 0.41,
+    "y": 0.24
+   }
+  ],
+  "waveSpawns": [
+   [
+    {
+     "x": 0.31,
+     "y": 0.23
+    },
+    {
+     "x": 0.38,
+     "y": 0.27
+    },
+    {
+     "x": 0.34,
+     "y": 0.33
+    },
+    {
+     "x": 0.41,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.81,
+     "y": 0.23
+    },
+    {
+     "x": 0.88,
+     "y": 0.27
+    },
+    {
+     "x": 0.84,
+     "y": 0.33
+    },
+    {
+     "x": 0.91,
+     "y": 0.24
+    }
+   ]
+  ],
+  "orbSpawns": [
+   [
+    {
+     "x": 0.11,
+     "y": 0.25
+    },
+    {
+     "x": 0.16,
+     "y": 0.31
+    },
+    {
+     "x": 0.12,
+     "y": 0.37
+    },
+    {
+     "x": 0.18,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.61,
+     "y": 0.25
+    },
+    {
+     "x": 0.66,
+     "y": 0.31
+    },
+    {
+     "x": 0.62,
+     "y": 0.37
+    },
+    {
+     "x": 0.68,
+     "y": 0.24
+    }
+   ]
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "zhenyuan",
+    "nameZh": "镇元大仙",
+    "x": 0.08,
+    "y": 0.26
+   },
+   {
+    "role": "quiz",
+    "sprite": "zhenyuan",
+    "nameZh": "镇元大仙",
+    "x": 0.7,
+    "y": 0.39
+   }
+  ],
+  "bossSpot": {
+   "x": 0.94,
+   "y": 0.85
+  }
+ }
+}

@@ -1,0 +1,584 @@
+{
+ "schema_version": 1,
+ "ep": 18,
+ "title": {
+  "en": "The Robe",
+  "zh": "西游记 第18集"
+ },
+ "collection": "c03",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "imp",
+   "nameZh": "小妖",
+   "mode": "sparring",
+   "sprite": "imp"
+  },
+  "minors": [
+   {
+    "id": "imp",
+    "nameZh": "小妖",
+    "sprite": "imp"
+   }
+  ]
+ },
+ "background": {
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep18/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "Wukong and Guanyin flew over the ocean and back to the wide river.",
+   "textZh": "悟空与观音飞越海洋,返回宽阔的河流。",
+   "illustration": "assets/adv_frames/ep18/f1.jpg",
+   "sourceNodeId": "n001",
+   "audioRef": "sent_en:Wukong and Guanyin flew over the ocean and back to the wide river."
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "From the sky Guanyin called, \"Dragon! Come out of the river at once. The Tang Monk is here!\"",
+   "textZh": "从天而降的观音呼唤道:\"龙啊!快从河中现身!唐僧来了!\"",
+   "illustration": "assets/adv_frames/ep18/f2.jpg",
+   "sourceNodeId": "n002",
+   "audioRef": "sent_en:From the sky Guanyin called, \"Dragon! Come out of the river at once. The Tang Monk is here!\""
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "robe",
+   "zh": "长袍(长又宽松的外衣)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep18/f3.jpg"
+  },
+  {
+   "term": "at",
+   "zh": "1. 马上,(2. 同时)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep18/f2.jpg"
+  },
+  {
+   "term": "rest",
+   "zh": "休息",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep18/f0.jpg"
+  },
+  {
+   "term": "nasty",
+   "zh": "恶意的,难相处的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep18/f0.jpg"
+  },
+  {
+   "term": "surround",
+   "zh": "包围",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep18/f0.jpg"
+  },
+  {
+   "term": "fade",
+   "zh": "1. 逐渐消失,逐渐变弱,(2. (颜色)退色,褪去)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep18/f1.jpg"
+  },
+  {
+   "term": "exactly",
+   "zh": "准确地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep18/f2.jpg"
+  },
+  {
+   "term": "left",
+   "zh": "1. 离开 (leave-left),(2. 左边)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep18/f3.jpg"
+  },
+  {
+   "term": "ride",
+   "zh": "(车、自行车、马等的)乘坐,搭乘,载",
+   "ipa": "raɪd",
+   "illustration": "assets/adv_frames/ep18/f0.jpg"
+  },
+  {
+   "term": "boatman",
+   "zh": "船夫,出租船的人",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep18/f3.jpg"
+  },
+  {
+   "term": "step out",
+   "zh": "(从家、房间等)走出,出去",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep18/f3.jpg"
+  },
+  {
+   "term": "continue",
+   "zh": "继续,持续",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep18/f3.jpg"
+  }
+ ],
+ "wordPool": [
+  {
+   "term": "robe",
+   "zh": "长袍(长又宽松的外衣)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep18/f3.jpg"
+  },
+  {
+   "term": "at",
+   "zh": "1. 马上,(2. 同时)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep18/f2.jpg"
+  },
+  {
+   "term": "rest",
+   "zh": "休息",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep18/f0.jpg"
+  },
+  {
+   "term": "nasty",
+   "zh": "恶意的,难相处的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep18/f0.jpg"
+  },
+  {
+   "term": "surround",
+   "zh": "包围",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep18/f0.jpg"
+  },
+  {
+   "term": "fade",
+   "zh": "1. 逐渐消失,逐渐变弱,(2. (颜色)退色,褪去)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep18/f1.jpg"
+  },
+  {
+   "term": "exactly",
+   "zh": "准确地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep18/f2.jpg"
+  },
+  {
+   "term": "left",
+   "zh": "1. 离开 (leave-left),(2. 左边)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep18/f3.jpg"
+  },
+  {
+   "term": "ride",
+   "zh": "(车、自行车、马等的)乘坐,搭乘,载",
+   "ipa": "raɪd",
+   "illustration": "assets/adv_frames/ep18/f0.jpg"
+  },
+  {
+   "term": "boatman",
+   "zh": "船夫,出租船的人",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep18/f3.jpg"
+  },
+  {
+   "term": "step out",
+   "zh": "(从家、房间等)走出,出去",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep18/f3.jpg"
+  },
+  {
+   "term": "continue",
+   "zh": "继续,持续",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep18/f3.jpg"
+  },
+  {
+   "term": "plain",
+   "zh": "1. 平原,旷野,(2. 平凡的,普通的)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep18/f3.jpg"
+  },
+  {
+   "term": "barely",
+   "zh": "勉强,几乎没有,仅仅,几乎(不、无法)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep18/f2.jpg"
+  },
+  {
+   "term": "gladly",
+   "zh": "高兴地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep18/f1.jpg"
+  },
+  {
+   "term": "honor",
+   "zh": "1. 荣誉,(2. 表达敬意,崇敬)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep18/f1.jpg"
+  },
+  {
+   "term": "believer",
+   "zh": "信徒,相信...的人",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep18/f2.jpg"
+  },
+  {
+   "term": "treasure",
+   "zh": "珍品,珍宝",
+   "ipa": "ˈtreʒə(r)",
+   "illustration": "assets/adv_frames/ep18/f0.jpg"
+  },
+  {
+   "term": "sparkle",
+   "zh": "发光,闪耀",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep18/f3.jpg"
+  },
+  {
+   "term": "admire",
+   "zh": "佩服,赞赏",
+   "ipa": "ədˈmaɪə(r)",
+   "illustration": "assets/adv_frames/ep18/f0.jpg"
+  },
+  {
+   "term": "borrow",
+   "zh": "借,借入",
+   "ipa": "ˈbɒrəʊ",
+   "illustration": "assets/adv_frames/ep18/f0.jpg"
+  },
+  {
+   "term": "gaze",
+   "zh": "凝视,注视",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep18/f2.jpg"
+  },
+  {
+   "term": "return",
+   "zh": "1. 归还,送回,(2. 返回,回归)",
+   "ipa": "rɪˈtɜː(r)n",
+   "illustration": "assets/adv_frames/ep18/f0.jpg"
+  },
+  {
+   "term": "fly",
+   "zh": "飞",
+   "ipa": "flaɪ",
+   "illustration": "assets/adv_frames/ep18/f1.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "robe",
+     "zh": "长袍(长又宽松的外衣)",
+     "sprite": "imp"
+    },
+    {
+     "term": "at",
+     "zh": "1. 马上,(2. 同时)",
+     "sprite": "imp"
+    },
+    {
+     "term": "rest",
+     "zh": "休息",
+     "sprite": "imp"
+    },
+    {
+     "term": "nasty",
+     "zh": "恶意的,难相处的",
+     "sprite": "imp"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "surround",
+     "zh": "包围",
+     "sprite": "imp"
+    },
+    {
+     "term": "fade",
+     "zh": "1. 逐渐消失,逐渐变弱,(2. (颜色)退色,褪去)",
+     "sprite": "imp"
+    },
+    {
+     "term": "exactly",
+     "zh": "准确地",
+     "sprite": "imp"
+    },
+    {
+     "term": "left",
+     "zh": "1. 离开 (leave-left),(2. 左边)",
+     "sprite": "imp"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "ride",
+    "zh": "(车、自行车、马等的)乘坐,搭乘,载"
+   },
+   {
+    "term": "boatman",
+    "zh": "船夫,出租船的人"
+   },
+   {
+    "term": "step out",
+    "zh": "(从家、房间等)走出,出去"
+   },
+   {
+    "term": "continue",
+    "zh": "继续,持续"
+   }
+  ],
+  "taunts": [
+   "imp.1",
+   "imp.2",
+   "imp.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=18",
+ "npcDialogue": {
+  "intro": {
+   "id": "ep18-map-intro",
+   "lines": [
+    {
+     "id": "ep18-map-intro-1",
+     "sourceNodeId": "n001",
+     "speaker": "narrator",
+     "textEn": "Wukong and Guanyin flew over the ocean and back to the wide river.",
+     "textZh": "悟空与观音飞越海洋,返回宽阔的河流。",
+     "audioRef": "sent_en:Wukong and Guanyin flew over the ocean and back to the wide river.",
+     "audioStart": 11.134,
+     "audioEnd": 19.541
+    },
+    {
+     "id": "ep18-map-intro-2",
+     "sourceNodeId": "n002",
+     "speaker": "narrator",
+     "textEn": "From the sky Guanyin called, \"Dragon! Come out of the river at once. The Tang Monk is here!\"",
+     "textZh": "从天而降的观音呼唤道:\"龙啊!快从河中现身!唐僧来了!\"",
+     "audioRef": "sent_en:From the sky Guanyin called, \"Dragon! Come out of the river at once. The Tang Monk is here!\"",
+     "audioStart": 19.542,
+     "audioEnd": 31.335
+    }
+   ]
+  },
+  "quiz": {
+   "id": "ep18-map-quiz",
+   "lines": [
+    {
+     "id": "ep18-map-quiz-1",
+     "sourceNodeId": "n012",
+     "speaker": "narrator",
+     "textEn": "\"From now on, you must tell people who you are. There are others waiting for you too.\"",
+     "textZh": "\"从今往后,你必须向人们表明自己的身份。还有其他人也在等待着你。\"",
+     "audioRef": "sent_en:\"From now on, you must tell people who you are. There are others waiting for you too.\"",
+     "audioStart": 76.728,
+     "audioEnd": 85.675
+    }
+   ],
+   "question": {
+    "id": "ep018-official-quiz-001",
+    "textEn": "which is not true?",
+    "textZh": "哪一项是不正确的？"
+   },
+   "word": {
+    "term": "robe",
+    "zh": "长袍(长又宽松的外衣)",
+    "ipa": ""
+   },
+   "options": [
+    {
+     "id": "a",
+     "textEn": "guanyin was the boatman.",
+     "textZh": "观音是划船的人。",
+     "correct": true,
+     "feedback": "对了。观音是划船的人。"
+    },
+    {
+     "id": "b",
+     "textEn": "the priest borrowed the monk's robe.",
+     "textZh": "神父借了和尚的袍子。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    },
+    {
+     "id": "c",
+     "textEn": "wukong must tell people who he is.",
+     "textZh": "悟空必须告诉人们他是谁。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    }
+   ],
+   "lessonCardId": "ep018-official-quiz-001"
+  }
+ },
+ "map": {
+  "theme": "generic",
+  "coordinateSpace": "world-normalized",
+  "worldTiles": 2,
+  "regions": {
+   "hero": 0,
+   "waves": [
+    0,
+    1
+   ],
+   "npc": {
+    "intro": 0,
+    "quiz": 1
+   },
+   "boss": 3
+  },
+  "walkable": {
+   "space": "world",
+   "x": 0.0,
+   "y": 0.16,
+   "w": 1.0,
+   "h": 0.79,
+   "rects": [
+    {
+     "x": 0.0,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.66,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    }
+   ]
+  },
+  "heroSpawn": {
+   "x": 0.06,
+   "y": 0.31
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.31,
+    "y": 0.23
+   },
+   {
+    "x": 0.38,
+    "y": 0.27
+   },
+   {
+    "x": 0.34,
+    "y": 0.33
+   },
+   {
+    "x": 0.41,
+    "y": 0.24
+   }
+  ],
+  "waveSpawns": [
+   [
+    {
+     "x": 0.31,
+     "y": 0.23
+    },
+    {
+     "x": 0.38,
+     "y": 0.27
+    },
+    {
+     "x": 0.34,
+     "y": 0.33
+    },
+    {
+     "x": 0.41,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.81,
+     "y": 0.23
+    },
+    {
+     "x": 0.88,
+     "y": 0.27
+    },
+    {
+     "x": 0.84,
+     "y": 0.33
+    },
+    {
+     "x": 0.91,
+     "y": 0.24
+    }
+   ]
+  ],
+  "orbSpawns": [
+   [
+    {
+     "x": 0.11,
+     "y": 0.25
+    },
+    {
+     "x": 0.16,
+     "y": 0.31
+    },
+    {
+     "x": 0.12,
+     "y": 0.37
+    },
+    {
+     "x": 0.18,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.61,
+     "y": 0.25
+    },
+    {
+     "x": 0.66,
+     "y": 0.31
+    },
+    {
+     "x": 0.62,
+     "y": 0.37
+    },
+    {
+     "x": 0.68,
+     "y": 0.24
+    }
+   ]
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "whitedragonhorse",
+    "nameZh": "白龙马",
+    "x": 0.08,
+    "y": 0.26
+   },
+   {
+    "role": "quiz",
+    "sprite": "whitedragonhorse",
+    "nameZh": "白龙马",
+    "x": 0.7,
+    "y": 0.39
+   }
+  ],
+  "bossSpot": {
+   "x": 0.94,
+   "y": 0.85
+  }
+ }
+}

@@ -1,0 +1,2400 @@
+{
+  "schema_version": 1,
+  "episode": 70,
+  "title": {
+    "en": "The Star Lord",
+    "zh": "西游记 第70集"
+  },
+  "sources": [
+    {
+      "kind": "courseware_main_pptx",
+      "file": "G:\\Game\\BookPlay书戏\\data\\西游记课件\\3.3西游记  Journey to the West PPT课件\\070_Journey to the West 70_The Star Lord.pptx",
+      "sha256": "9dd4ab03263215544e706f20612356a5a05c46e940a70f6cd8339d96db904938",
+      "pages": 20
+    },
+    {
+      "kind": "official_quiz_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+      "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929",
+      "pages": 131
+    },
+    {
+      "kind": "intensive_reader_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\02-西游记精读版台词本\\1、带标注版PDF 108集\\070 星官 上.pdf",
+      "sha256": "27a4284dd548a4ea4bc328dbcbde0d140764334e98572acc956652df210fe483",
+      "pages": 3
+    },
+    {
+      "kind": "intensive_reader_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\02-西游记精读版台词本\\1、带标注版PDF 108集\\070 星官 下.pdf",
+      "sha256": "2f38dc665328e22aca4d23c1ce1725a9efff064b4d6254ded021d74d9085c731",
+      "pages": 4
+    },
+    {
+      "kind": "courseware_screenshots_pptx",
+      "file": "G:\\Game\\BookPlay书戏\\data\\西游记课件\\西游记-外教课动画截图\\Journey to the West 070  The Star Lord_20240114123140.pptx",
+      "sha256": "54320959eeb9e4ef1c5e7c604f167774f918409391010a3fc31f96be1555b404",
+      "pages": 43
+    }
+  ],
+  "cards": [
+    {
+      "card_id": "ep070-official-quiz-001",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 1,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "which is true?",
+        "zh": "哪一个是真的？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "buddha was afraid of the scorpion spirit.",
+            "zh": "佛陀害怕蝎子精。"
+          },
+          {
+            "id": "b",
+            "en": "guanyin healed bajie.",
+            "zh": "观音治好了八戒。"
+          },
+          {
+            "id": "c",
+            "en": "wukong defeated the scorpion.",
+            "zh": "悟空打败了蝎子。"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n010",
+            "quote": "\"I won't go near her,\" said Guanyin."
+          },
+          {
+            "node_id": "n011",
+            "quote": "\"Even Buddha is afraid of her. He was teaching his students one day and saw that scorpion creeping toward him. He tried to move it away, but it stung him. The pain was horrible! He told his guards to capture the scorpion. But it escaped to Earth.\""
+          },
+          {
+            "node_id": "n033",
+            "quote": "Bajie walked over to the Star Lord, who then blew on the pig's nose."
+          },
+          {
+            "node_id": "n048",
+            "quote": "Suddenly the Star Lord turned into an enormous rooster."
+          },
+          {
+            "node_id": "n052",
+            "quote": "In her place was a dead scorpion."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 82,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep070-official-quiz-002",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 2,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "what did the scorpion spirit use to stab wukong?",
+        "zh": "蝎子精用什么刺伤了悟空？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "a stinger",
+            "zh": "刺针"
+          },
+          {
+            "id": "b",
+            "en": "a knife",
+            "zh": "一把刀"
+          },
+          {
+            "id": "c",
+            "en": "a sword",
+            "zh": "一把剑"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n008",
+            "quote": "\"It was her stinger that stabbed you,\" said Guanyin."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 82,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep070-official-quiz-003",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 3,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "whom did wukong ask for help?",
+        "zh": "悟空向谁求助了？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "the star lord",
+            "zh": "星爵"
+          },
+          {
+            "id": "b",
+            "en": "guanyin",
+            "zh": "观音"
+          },
+          {
+            "id": "c",
+            "en": "buddha",
+            "zh": "佛陀"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n021",
+            "quote": "\"Wukong,\" said the Star Lord. \"What can I do for you?\""
+          },
+          {
+            "node_id": "n023",
+            "quote": "\"I'm traveling to the Western Paradise with the Tang Monk. But he was captured by a demon. Guanyin said you can help me.\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 82,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep070-official-quiz-004",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 4,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "what did the star lord turn into?",
+        "zh": "星爵变成了什么？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "a rooster",
+            "zh": "一只公鸡"
+          },
+          {
+            "id": "b",
+            "en": "a scorpion",
+            "zh": "一只蝎子"
+          },
+          {
+            "id": "c",
+            "en": "a mountain",
+            "zh": "一座山"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n048",
+            "quote": "Suddenly the Star Lord turned into an enormous rooster."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 82,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep070-official-quiz-005",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 5,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "why did the woman kidnap the tang monk?",
+        "zh": "那个女人为什么要绑架唐僧？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "she wanted to marry him.",
+            "zh": "她想嫁给他。"
+          },
+          {
+            "id": "b",
+            "en": "she wanted to eat him.",
+            "zh": "她想吃掉他。"
+          },
+          {
+            "id": "c",
+            "en": "she wanted to injure him.",
+            "zh": "她想伤害他。"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n054",
+            "quote": "He found the Tang Monk sitting at a table."
+          },
+          {
+            "node_id": "n060",
+            "quote": "\"That woman didn't want to harm me—she wanted to marry me!\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 82,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep070-vocab-001",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 101,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "go",
+        "zh": "vi.去,走 v.link.变成,变得"
+      },
+      "payload": {
+        "term": "go",
+        "ipa": "ɡəʊ",
+        "pos": "vi.",
+        "def": "vi.去,走 v.link.变成,变得",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "070 星官 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "27a4284dd548a4ea4bc328dbcbde0d140764334e98572acc956652df210fe483"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep070-vocab-002",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 102,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "back",
+        "zh": "后面,背部 adj.后面的 adv.回原处,向后地"
+      },
+      "payload": {
+        "term": "back",
+        "ipa": "bæk",
+        "pos": "n.",
+        "def": "n.[C]后面,背部 adj.后面的 adv.回原处,向后地",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "070 星官 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "27a4284dd548a4ea4bc328dbcbde0d140764334e98572acc956652df210fe483"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep070-vocab-003",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 103,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "woman",
+        "zh": "女子"
+      },
+      "payload": {
+        "term": "woman",
+        "ipa": "ˈwʊmən",
+        "pos": "n.",
+        "def": "n.[C]女子",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          1,
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "070 星官 上.pdf",
+          "half": "up",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "27a4284dd548a4ea4bc328dbcbde0d140764334e98572acc956652df210fe483"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "070 星官 下.pdf",
+          "half": "down",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "2f38dc665328e22aca4d23c1ce1725a9efff064b4d6254ded021d74d9085c731"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep070-vocab-004",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 104,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "shake",
+        "zh": "摇动,抖动,奶昔"
+      },
+      "payload": {
+        "term": "shake",
+        "ipa": "ʃeɪk",
+        "pos": "v.",
+        "def": "v.摇动,抖动,(与某人)握手, 发抖 n.[C]摇动,抖动,奶昔",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "070 星官 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "27a4284dd548a4ea4bc328dbcbde0d140764334e98572acc956652df210fe483"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep070-vocab-005",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 105,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "dangerous",
+        "zh": "adj.有危险的,不安全的"
+      },
+      "payload": {
+        "term": "dangerous",
+        "ipa": "ˈdeɪndʒərəs",
+        "pos": "adj.",
+        "def": "adj.有危险的,不安全的",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "070 星官 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "27a4284dd548a4ea4bc328dbcbde0d140764334e98572acc956652df210fe483"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep070-vocab-006",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 106,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "think",
+        "zh": "v.认为,想。思考"
+      },
+      "payload": {
+        "term": "think",
+        "ipa": "θɪŋk",
+        "pos": "v.",
+        "def": "v.认为,想。思考",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "070 星官 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "27a4284dd548a4ea4bc328dbcbde0d140764334e98572acc956652df210fe483"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep070-vocab-007",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 107,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "pain",
+        "zh": "痛苦,苦恼"
+      },
+      "payload": {
+        "term": "pain",
+        "ipa": "peɪn",
+        "pos": "n.",
+        "def": "n.[C,U]痛苦,苦恼",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "070 星官 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "27a4284dd548a4ea4bc328dbcbde0d140764334e98572acc956652df210fe483"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep070-vocab-008",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 108,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "feel",
+        "zh": "v.-link.感受,觉得,摸起来 vt.触摸,感觉到"
+      },
+      "payload": {
+        "term": "feel",
+        "ipa": "fiːl",
+        "pos": "v.",
+        "def": "v.-link.感受,觉得,摸起来 vt.触摸,感觉到",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "070 星官 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "27a4284dd548a4ea4bc328dbcbde0d140764334e98572acc956652df210fe483"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep070-vocab-009",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 109,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "afraid",
+        "zh": "adj.害怕,畏惧"
+      },
+      "payload": {
+        "term": "afraid",
+        "ipa": "əˈfreɪd",
+        "pos": "adj.",
+        "def": "adj.害怕,畏惧",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "070 星官 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "27a4284dd548a4ea4bc328dbcbde0d140764334e98572acc956652df210fe483"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep070-vocab-010",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 110,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "start",
+        "zh": "起点,开端"
+      },
+      "payload": {
+        "term": "start",
+        "ipa": "stɑː (r)t",
+        "pos": "v.",
+        "def": "v.开始,着手,创办 n.[C]起点,开端",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "070 星官 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "27a4284dd548a4ea4bc328dbcbde0d140764334e98572acc956652df210fe483"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep070-vocab-011",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 111,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "must",
+        "zh": "modal v.必须,一定"
+      },
+      "payload": {
+        "term": "must",
+        "ipa": "mʌst",
+        "pos": "",
+        "def": "modal v.必须,一定",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "070 星官 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "27a4284dd548a4ea4bc328dbcbde0d140764334e98572acc956652df210fe483"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep070-vocab-012",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 112,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "save",
+        "zh": "v.救,救助,节省;储蓄;保存"
+      },
+      "payload": {
+        "term": "save",
+        "ipa": "seɪv",
+        "pos": "v.",
+        "def": "v.救,救助,节省;储蓄;保存",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          1,
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "070 星官 上.pdf",
+          "half": "up",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "27a4284dd548a4ea4bc328dbcbde0d140764334e98572acc956652df210fe483"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "070 星官 下.pdf",
+          "half": "down",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "2f38dc665328e22aca4d23c1ce1725a9efff064b4d6254ded021d74d9085c731"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep070-vocab-013",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 113,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "help",
+        "zh": "帮助"
+      },
+      "payload": {
+        "term": "help",
+        "ipa": "help",
+        "pos": "",
+        "def": "帮助",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ],
+        "gloss": "帮助"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "070 星官 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "27a4284dd548a4ea4bc328dbcbde0d140764334e98572acc956652df210fe483"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep070-vocab-014",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 114,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "stand",
+        "zh": "v.忍受,站立"
+      },
+      "payload": {
+        "term": "stand",
+        "ipa": "stænd",
+        "pos": "v.",
+        "def": "v.忍受,站立",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "070 星官 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "27a4284dd548a4ea4bc328dbcbde0d140764334e98572acc956652df210fe483"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep070-vocab-015",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 115,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "south",
+        "zh": "adj.南方的 n.南部,南,南方 adv.向南,朝南"
+      },
+      "payload": {
+        "term": "south",
+        "ipa": "saʊθ",
+        "pos": "adj.",
+        "def": "adj.南方的 n.南部,南,南方 adv.向南,朝南",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "070 星官 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "27a4284dd548a4ea4bc328dbcbde0d140764334e98572acc956652df210fe483"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep070-vocab-016",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 116,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "gate",
+        "zh": "大门"
+      },
+      "payload": {
+        "term": "gate",
+        "ipa": "ɡeɪt",
+        "pos": "n.",
+        "def": "n.[C]大门",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "070 星官 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "27a4284dd548a4ea4bc328dbcbde0d140764334e98572acc956652df210fe483"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep070-vocab-017",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 117,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "guard",
+        "zh": "警卫,看守;防护装置 vt.守卫,保卫"
+      },
+      "payload": {
+        "term": "guard",
+        "ipa": "ɡɑː (r)d",
+        "pos": "n.",
+        "def": "n.[C]警卫,看守;防护装置 vt.守卫,保卫",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "070 星官 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "27a4284dd548a4ea4bc328dbcbde0d140764334e98572acc956652df210fe483"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep070-vocab-018",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 118,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "speak",
+        "zh": "vt.说(某种语言) vi.说话,提起"
+      },
+      "payload": {
+        "term": "speak",
+        "ipa": "spiːk",
+        "pos": "vt.",
+        "def": "vt.说(某种语言) vi.说话,提起",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "070 星官 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "27a4284dd548a4ea4bc328dbcbde0d140764334e98572acc956652df210fe483"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep070-vocab-019",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 119,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "what",
+        "zh": "pron./adj.什么"
+      },
+      "payload": {
+        "term": "what",
+        "ipa": "wɒt",
+        "pos": "pron.",
+        "def": "pron./adj.什么",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "070 星官 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "27a4284dd548a4ea4bc328dbcbde0d140764334e98572acc956652df210fe483"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep070-vocab-020",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 120,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "can",
+        "zh": "罐"
+      },
+      "payload": {
+        "term": "can",
+        "ipa": "kæn",
+        "pos": "",
+        "def": "modal v.能,可能 n.[C]罐",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "070 星官 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "27a4284dd548a4ea4bc328dbcbde0d140764334e98572acc956652df210fe483"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep070-vocab-021",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 121,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "do",
+        "zh": "v.做,干 aux v.构成疑问句和否定句"
+      },
+      "payload": {
+        "term": "do",
+        "ipa": "duː",
+        "pos": "v.",
+        "def": "v.做,干 aux v.构成疑问句和否定句",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "070 星官 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "27a4284dd548a4ea4bc328dbcbde0d140764334e98572acc956652df210fe483"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep070-vocab-022",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 122,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "you",
+        "zh": "pron.你,你们"
+      },
+      "payload": {
+        "term": "you",
+        "ipa": "juː",
+        "pos": "pron.",
+        "def": "pron.你,你们",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "070 星官 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "27a4284dd548a4ea4bc328dbcbde0d140764334e98572acc956652df210fe483"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep070-vocab-023",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 123,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "travel",
+        "zh": "游历"
+      },
+      "payload": {
+        "term": "travel",
+        "ipa": "ˈtrævl",
+        "pos": "v.",
+        "def": "v.旅行,游历幽;传播 n.[C,U]旅行[U]游历",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "070 星官 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "27a4284dd548a4ea4bc328dbcbde0d140764334e98572acc956652df210fe483"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep070-vocab-024",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 124,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "strong",
+        "zh": "强壮的"
+      },
+      "payload": {
+        "term": "strong",
+        "ipa": "strɒŋ",
+        "pos": "adj.",
+        "def": "强壮的",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ],
+        "gloss": "强壮的"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "070 星官 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "27a4284dd548a4ea4bc328dbcbde0d140764334e98572acc956652df210fe483"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep070-vocab-025",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 125,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "spirit",
+        "zh": "情绪"
+      },
+      "payload": {
+        "term": "spirit",
+        "ipa": "ˈspɪrɪt",
+        "pos": "n.",
+        "def": "n.[U]勇气,意志,实质 [C]灵魂,鬼魂,幽灵 [C,U]精神 [pl.]情绪",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "070 星官 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "2f38dc665328e22aca4d23c1ce1725a9efff064b4d6254ded021d74d9085c731"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep070-vocab-026",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 126,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "monkey",
+        "zh": "猴子"
+      },
+      "payload": {
+        "term": "monkey",
+        "ipa": "ˈmʌŋki",
+        "pos": "n.",
+        "def": "n.[C]猴子",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "070 星官 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "2f38dc665328e22aca4d23c1ce1725a9efff064b4d6254ded021d74d9085c731"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep070-vocab-027",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 127,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "understand",
+        "zh": "v.理解,领会,了解"
+      },
+      "payload": {
+        "term": "understand",
+        "ipa": "ˌʌndə ˈstænd",
+        "pos": "v.",
+        "def": "v.理解,领会,了解",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "070 星官 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "2f38dc665328e22aca4d23c1ce1725a9efff064b4d6254ded021d74d9085c731"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep070-vocab-028",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 128,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "hurry",
+        "zh": "v.匆忙,赶快 n.匆忙,急忙"
+      },
+      "payload": {
+        "term": "hurry",
+        "ipa": "ˈhʌri",
+        "pos": "v.",
+        "def": "v.匆忙,赶快 n.匆忙,急忙",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "070 星官 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "2f38dc665328e22aca4d23c1ce1725a9efff064b4d6254ded021d74d9085c731"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep070-vocab-029",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 129,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "land",
+        "zh": "国家 v.降落,着陆"
+      },
+      "payload": {
+        "term": "land",
+        "ipa": "lænd",
+        "pos": "n.",
+        "def": "n.[U]大陆,土地 [C]国家 v.降落,着陆",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "070 星官 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "2f38dc665328e22aca4d23c1ce1725a9efff064b4d6254ded021d74d9085c731"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep070-vocab-030",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 130,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "mountain",
+        "zh": "高山"
+      },
+      "payload": {
+        "term": "mountain",
+        "ipa": "ˈmaʊntən",
+        "pos": "n.",
+        "def": "n.[C]高山",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "070 星官 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "2f38dc665328e22aca4d23c1ce1725a9efff064b4d6254ded021d74d9085c731"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep070-vocab-031",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 131,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "thank",
+        "zh": "vt.感谢,谢谢"
+      },
+      "payload": {
+        "term": "thank",
+        "ipa": "θæŋk",
+        "pos": "vt.",
+        "def": "vt.感谢,谢谢",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "070 星官 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "2f38dc665328e22aca4d23c1ce1725a9efff064b4d6254ded021d74d9085c731"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep070-vocab-032",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 132,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "say",
+        "zh": "v.说,讲"
+      },
+      "payload": {
+        "term": "say",
+        "ipa": "seɪ",
+        "pos": "v.",
+        "def": "v.说,讲",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "070 星官 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "2f38dc665328e22aca4d23c1ce1725a9efff064b4d6254ded021d74d9085c731"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep070-vocab-033",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 133,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "smile",
+        "zh": "笑,微笑"
+      },
+      "payload": {
+        "term": "smile",
+        "ipa": "smaɪ",
+        "pos": "vi.",
+        "def": "vi./n.[C]笑,微笑",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "070 星官 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "2f38dc665328e22aca4d23c1ce1725a9efff064b4d6254ded021d74d9085c731"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep070-vocab-034",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 134,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "special",
+        "zh": "特色菜,特价商品"
+      },
+      "payload": {
+        "term": "special",
+        "ipa": "ˈspeʃəl",
+        "pos": "adj.",
+        "def": "adj.特别的,特殊的 n.[C]特色菜,特价商品",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "070 星官 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "2f38dc665328e22aca4d23c1ce1725a9efff064b4d6254ded021d74d9085c731"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep070-vocab-035",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 135,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "magic",
+        "zh": "魔术;魔法,魔力,魅力"
+      },
+      "payload": {
+        "term": "magic",
+        "ipa": "ˈmædʒɪk",
+        "pos": "adj.",
+        "def": "adj.有魔力的,有神奇力量的 n.[U]魔术;魔法,魔力,魅力",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "070 星官 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "2f38dc665328e22aca4d23c1ce1725a9efff064b4d6254ded021d74d9085c731"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep070-vocab-036",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 136,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "hide",
+        "zh": "v.隐藏,隐蔽;隐瞒,掩盖"
+      },
+      "payload": {
+        "term": "hide",
+        "ipa": "haɪd",
+        "pos": "v.",
+        "def": "v.隐藏,隐蔽;隐瞒,掩盖",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "070 星官 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "2f38dc665328e22aca4d23c1ce1725a9efff064b4d6254ded021d74d9085c731"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep070-vocab-037",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 137,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "master",
+        "zh": "帮你治好。\" n.大师,能手,主人,硕士 vt.掌握 adj.熟练的"
+      },
+      "payload": {
+        "term": "master",
+        "ipa": "ˈmɑː stə",
+        "pos": "",
+        "def": "帮你治好。\" n.大师,能手,主人,硕士 vt.掌握 adj.熟练的",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "070 星官 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "2f38dc665328e22aca4d23c1ce1725a9efff064b4d6254ded021d74d9085c731"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep070-vocab-038",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 138,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "rush",
+        "zh": "迅速移动,仓促,急 促"
+      },
+      "payload": {
+        "term": "rush",
+        "ipa": "rʌʃ",
+        "pos": "v.",
+        "def": "v./n.[sing.]迅速移动,仓促,急 促",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "070 星官 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "2f38dc665328e22aca4d23c1ce1725a9efff064b4d6254ded021d74d9085c731"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep070-vocab-039",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 139,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "wild",
+        "zh": "自然环境 adv.野生,在野外"
+      },
+      "payload": {
+        "term": "wild",
+        "ipa": "waɪld",
+        "pos": "adj.",
+        "def": "adj.野生的;野蛮的,感情炽烈的 n.[sing.]自然环境 adv.野生,在野外",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "070 星官 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "2f38dc665328e22aca4d23c1ce1725a9efff064b4d6254ded021d74d9085c731"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep070-vocab-040",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 140,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "turn",
+        "zh": "轮流圈国"
+      },
+      "payload": {
+        "term": "turn",
+        "ipa": "tɜː (r)n",
+        "pos": "v.",
+        "def": "v.转向,翻圈v.-link.(使)变成 n.[C]轮流圈国",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "070 星官 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "2f38dc665328e22aca4d23c1ce1725a9efff064b4d6254ded021d74d9085c731"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep070-vocab-041",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 141,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "hold",
+        "zh": "抓"
+      },
+      "payload": {
+        "term": "hold",
+        "ipa": "həʊld",
+        "pos": "v.",
+        "def": "v.拥有,抓住,保持,举行,容纳 n.[C,U]抓",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "070 星官 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "2f38dc665328e22aca4d23c1ce1725a9efff064b4d6254ded021d74d9085c731"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep070-vocab-042",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 142,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "hand",
+        "zh": "帮助 vt.交,递,给"
+      },
+      "payload": {
+        "term": "hand",
+        "ipa": "hænd",
+        "pos": "n.",
+        "def": "n.[C]手[sing.]帮助 vt.交,递,给",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "070 星官 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "2f38dc665328e22aca4d23c1ce1725a9efff064b4d6254ded021d74d9085c731"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep070-vocab-043",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 143,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "ear",
+        "zh": "耳朵"
+      },
+      "payload": {
+        "term": "ear",
+        "ipa": "ɪə",
+        "pos": "n.",
+        "def": "n.[C]耳朵",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "070 星官 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "2f38dc665328e22aca4d23c1ce1725a9efff064b4d6254ded021d74d9085c731"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep070-vocab-044",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 144,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "eye",
+        "zh": "眼睛"
+      },
+      "payload": {
+        "term": "eye",
+        "ipa": "aɪ",
+        "pos": "n.",
+        "def": "n.[C]眼睛",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "070 星官 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "2f38dc665328e22aca4d23c1ce1725a9efff064b4d6254ded021d74d9085c731"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep070-vocab-045",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 145,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "protect",
+        "zh": "v.保护,防护"
+      },
+      "payload": {
+        "term": "protect",
+        "ipa": "prəˈtek",
+        "pos": "v.",
+        "def": "v.保护,防护",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "070 星官 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "2f38dc665328e22aca4d23c1ce1725a9efff064b4d6254ded021d74d9085c731"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep070-vocab-046",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 146,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "marry",
+        "zh": "v.(和某人)结婚,嫁"
+      },
+      "payload": {
+        "term": "marry",
+        "ipa": "ˈmæri",
+        "pos": "v.",
+        "def": "v.(和某人)结婚,嫁",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "070 星官 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "2f38dc665328e22aca4d23c1ce1725a9efff064b4d6254ded021d74d9085c731"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep070-vocab-047",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 147,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "goal",
+        "zh": "球门,射门,目标 救了我!\""
+      },
+      "payload": {
+        "term": "goal",
+        "ipa": "ɡəʊl",
+        "pos": "n.",
+        "def": "n.[C]球门,射门,目标 救了我!\"",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "070 星官 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "2f38dc665328e22aca4d23c1ce1725a9efff064b4d6254ded021d74d9085c731"
+        }
+      ],
+      "review_status": "machine_verified"
+    }
+  ],
+  "teacher_guide": null,
+  "review": {
+    "status": "draft",
+    "reviewed_at": null,
+    "card_stats": {
+      "total": 52,
+      "sentence_choice": 5,
+      "word_review": 47,
+      "machine_verified": 49,
+      "assistant_reviewed": 3,
+      "verified": 52,
+      "needs_review": 0
+    }
+  },
+  "generated_at": "2026-08-31T04:49:45.119711+00:00"
+}

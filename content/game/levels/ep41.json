@@ -1,0 +1,584 @@
+{
+ "schema_version": 1,
+ "ep": 41,
+ "title": {
+  "en": "A Trade",
+  "zh": "西游记 第41集"
+ },
+ "collection": "c06",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "goldenhorn",
+   "nameZh": "金角大王",
+   "mode": "sparring",
+   "sprite": "goldenhorn"
+  },
+  "minors": [
+   {
+    "id": "imp",
+    "nameZh": "小妖",
+    "sprite": "imp"
+   }
+  ]
+ },
+ "background": {
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep41/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "Wukong was angry at the guard at the southern gate of Heaven.",
+   "textZh": "悟空对天界南门的守卫感到愤怒。",
+   "illustration": "assets/adv_frames/ep41/f1.jpg",
+   "sourceNodeId": "n001",
+   "audioRef": "sent_en:Wukong was angry at the guard at the southern gate of Heaven."
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "\"Why can't you close the gate and dim the stars?\"",
+   "textZh": "\"你为什么不能关上大门、让星光变得暗淡一些呢?\"",
+   "illustration": "assets/adv_frames/ep41/f2.jpg",
+   "sourceNodeId": "n002",
+   "audioRef": "sent_en:\"Why can't you close the gate and dim the stars?\""
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "dim",
+   "zh": "1. 变模糊,(2. 模糊的,朦胧的)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep41/f2.jpg"
+  },
+  {
+   "term": "permission",
+   "zh": "允许,许可,同意",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep41/f0.jpg"
+  },
+  {
+   "term": "slam",
+   "zh": "1. 砰地放下,(2. 砰然关上(门))",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep41/f1.jpg"
+  },
+  {
+   "term": "fist",
+   "zh": "拳头",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep41/f1.jpg"
+  },
+  {
+   "term": "rotten",
+   "zh": "糟糕的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep41/f2.jpg"
+  },
+  {
+   "term": "disguise",
+   "zh": "变装,伪装",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep41/f0.jpg"
+  },
+  {
+   "term": "demon",
+   "zh": "魔鬼,恶魔",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep41/f2.jpg"
+  },
+  {
+   "term": "planet",
+   "zh": "行星(围着太阳转的星星)",
+   "ipa": "ˈplænɪt",
+   "illustration": "assets/adv_frames/ep41/f1.jpg"
+  },
+  {
+   "term": "fascinating",
+   "zh": "迷人的,极好的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep41/f3.jpg"
+  },
+  {
+   "term": "trade",
+   "zh": "交换",
+   "ipa": "treɪd",
+   "illustration": "assets/adv_frames/ep41/f1.jpg"
+  },
+  {
+   "term": "invisible",
+   "zh": "无形的,隐形的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep41/f3.jpg"
+  },
+  {
+   "term": "at",
+   "zh": "1. 马上,(2. 同时)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep41/f3.jpg"
+  }
+ ],
+ "wordPool": [
+  {
+   "term": "dim",
+   "zh": "1. 变模糊,(2. 模糊的,朦胧的)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep41/f2.jpg"
+  },
+  {
+   "term": "permission",
+   "zh": "允许,许可,同意",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep41/f0.jpg"
+  },
+  {
+   "term": "slam",
+   "zh": "1. 砰地放下,(2. 砰然关上(门))",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep41/f1.jpg"
+  },
+  {
+   "term": "fist",
+   "zh": "拳头",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep41/f1.jpg"
+  },
+  {
+   "term": "rotten",
+   "zh": "糟糕的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep41/f2.jpg"
+  },
+  {
+   "term": "disguise",
+   "zh": "变装,伪装",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep41/f0.jpg"
+  },
+  {
+   "term": "demon",
+   "zh": "魔鬼,恶魔",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep41/f2.jpg"
+  },
+  {
+   "term": "planet",
+   "zh": "行星(围着太阳转的星星)",
+   "ipa": "ˈplænɪt",
+   "illustration": "assets/adv_frames/ep41/f1.jpg"
+  },
+  {
+   "term": "fascinating",
+   "zh": "迷人的,极好的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep41/f3.jpg"
+  },
+  {
+   "term": "trade",
+   "zh": "交换",
+   "ipa": "treɪd",
+   "illustration": "assets/adv_frames/ep41/f1.jpg"
+  },
+  {
+   "term": "invisible",
+   "zh": "无形的,隐形的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep41/f3.jpg"
+  },
+  {
+   "term": "at",
+   "zh": "1. 马上,(2. 同时)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep41/f3.jpg"
+  },
+  {
+   "term": "clobber",
+   "zh": "痛打",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep41/f0.jpg"
+  },
+  {
+   "term": "direction",
+   "zh": "方向",
+   "ipa": "dəˈrekʃn",
+   "illustration": "assets/adv_frames/ep41/f2.jpg"
+  },
+  {
+   "term": "trip",
+   "zh": "绊,绊倒",
+   "ipa": "trɪp",
+   "illustration": "assets/adv_frames/ep41/f2.jpg"
+  },
+  {
+   "term": "one",
+   "zh": "彼此,互相",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep41/f1.jpg"
+  },
+  {
+   "term": "sleeve",
+   "zh": "(衣服的)袖子",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep41/f0.jpg"
+  },
+  {
+   "term": "snag",
+   "zh": "迅速抓到",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep41/f2.jpg"
+  },
+  {
+   "term": "loop",
+   "zh": "1. (把绳索等)打成环,使成圈,(2. 圈,环)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep41/f3.jpg"
+  },
+  {
+   "term": "waist",
+   "zh": "腰",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep41/f3.jpg"
+  },
+  {
+   "term": "wriggle",
+   "zh": "蠕动,扭动",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep41/f0.jpg"
+  },
+  {
+   "term": "dine",
+   "zh": "进餐,用餐",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep41/f2.jpg"
+  },
+  {
+   "term": "angry",
+   "zh": "发怒的",
+   "ipa": "ˈæŋɡri",
+   "illustration": "assets/adv_frames/ep41/f1.jpg"
+  },
+  {
+   "term": "guard",
+   "zh": "警卫",
+   "ipa": "ɡɑː(r)d",
+   "illustration": "assets/adv_frames/ep41/f1.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "dim",
+     "zh": "1. 变模糊,(2. 模糊的,朦胧的)",
+     "sprite": "imp"
+    },
+    {
+     "term": "permission",
+     "zh": "允许,许可,同意",
+     "sprite": "imp"
+    },
+    {
+     "term": "slam",
+     "zh": "1. 砰地放下,(2. 砰然关上(门))",
+     "sprite": "imp"
+    },
+    {
+     "term": "fist",
+     "zh": "拳头",
+     "sprite": "imp"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "rotten",
+     "zh": "糟糕的",
+     "sprite": "imp"
+    },
+    {
+     "term": "disguise",
+     "zh": "变装,伪装",
+     "sprite": "imp"
+    },
+    {
+     "term": "demon",
+     "zh": "魔鬼,恶魔",
+     "sprite": "imp"
+    },
+    {
+     "term": "planet",
+     "zh": "行星(围着太阳转的星星)",
+     "sprite": "imp"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "fascinating",
+    "zh": "迷人的,极好的"
+   },
+   {
+    "term": "trade",
+    "zh": "交换"
+   },
+   {
+    "term": "invisible",
+    "zh": "无形的,隐形的"
+   },
+   {
+    "term": "at",
+    "zh": "1. 马上,(2. 同时)"
+   }
+  ],
+  "taunts": [
+   "goldenhorn.1",
+   "goldenhorn.2",
+   "goldenhorn.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=41",
+ "npcDialogue": {
+  "intro": {
+   "id": "ep41-map-intro",
+   "lines": [
+    {
+     "id": "ep41-map-intro-1",
+     "sourceNodeId": "n001",
+     "speaker": "narrator",
+     "textEn": "Wukong was angry at the guard at the southern gate of Heaven.",
+     "textZh": "悟空对天界南门的守卫感到愤怒。",
+     "audioRef": "sent_en:Wukong was angry at the guard at the southern gate of Heaven.",
+     "audioStart": 11.0,
+     "audioEnd": 16.301
+    },
+    {
+     "id": "ep41-map-intro-2",
+     "sourceNodeId": "n002",
+     "speaker": "narrator",
+     "textEn": "\"Why can't you close the gate and dim the stars?\"",
+     "textZh": "\"你为什么不能关上大门、让星光变得暗淡一些呢?\"",
+     "audioRef": "sent_en:\"Why can't you close the gate and dim the stars?\"",
+     "audioStart": 16.302,
+     "audioEnd": 19.545
+    }
+   ]
+  },
+  "quiz": {
+   "id": "ep41-map-quiz",
+   "lines": [
+    {
+     "id": "ep41-map-quiz-1",
+     "sourceNodeId": "n063",
+     "speaker": "narrator",
+     "textEn": "Wukong swung his iron bar at Golden Horn.",
+     "textZh": "悟空挥动铁棒击向金角。",
+     "audioRef": "sent_en:Wukong swung his iron bar at Golden Horn.",
+     "audioStart": 275.119,
+     "audioEnd": 278.499
+    }
+   ],
+   "question": {
+    "id": "ep041-official-quiz-001",
+    "textEn": "which is true?",
+    "textZh": "哪一个是真的？"
+   },
+   "word": {
+    "term": "dim",
+    "zh": "1. 变模糊,(2. 模糊的,朦胧的)",
+    "ipa": ""
+   },
+   "options": [
+    {
+     "id": "a",
+     "textEn": "wukong tricked the demon.",
+     "textZh": "悟空欺骗了那个妖怪。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    },
+    {
+     "id": "b",
+     "textEn": "golden horn had an iron bar.",
+     "textZh": "金角有一根铁棍。",
+     "correct": true,
+     "feedback": "对了。金角有一根铁棍。"
+    },
+    {
+     "id": "c",
+     "textEn": "wukong broke the gourd.",
+     "textZh": "悟空打破了葫芦。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    }
+   ],
+   "lessonCardId": "ep041-official-quiz-001"
+  }
+ },
+ "map": {
+  "theme": "generic",
+  "coordinateSpace": "world-normalized",
+  "worldTiles": 2,
+  "regions": {
+   "hero": 0,
+   "waves": [
+    0,
+    1
+   ],
+   "npc": {
+    "intro": 0,
+    "quiz": 1
+   },
+   "boss": 3
+  },
+  "walkable": {
+   "space": "world",
+   "x": 0.0,
+   "y": 0.16,
+   "w": 1.0,
+   "h": 0.79,
+   "rects": [
+    {
+     "x": 0.0,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.66,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    }
+   ]
+  },
+  "heroSpawn": {
+   "x": 0.06,
+   "y": 0.31
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.31,
+    "y": 0.23
+   },
+   {
+    "x": 0.38,
+    "y": 0.27
+   },
+   {
+    "x": 0.34,
+    "y": 0.33
+   },
+   {
+    "x": 0.41,
+    "y": 0.24
+   }
+  ],
+  "waveSpawns": [
+   [
+    {
+     "x": 0.31,
+     "y": 0.23
+    },
+    {
+     "x": 0.38,
+     "y": 0.27
+    },
+    {
+     "x": 0.34,
+     "y": 0.33
+    },
+    {
+     "x": 0.41,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.81,
+     "y": 0.23
+    },
+    {
+     "x": 0.88,
+     "y": 0.27
+    },
+    {
+     "x": 0.84,
+     "y": 0.33
+    },
+    {
+     "x": 0.91,
+     "y": 0.24
+    }
+   ]
+  ],
+  "orbSpawns": [
+   [
+    {
+     "x": 0.11,
+     "y": 0.25
+    },
+    {
+     "x": 0.16,
+     "y": 0.31
+    },
+    {
+     "x": 0.12,
+     "y": 0.37
+    },
+    {
+     "x": 0.18,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.61,
+     "y": 0.25
+    },
+    {
+     "x": 0.66,
+     "y": 0.31
+    },
+    {
+     "x": 0.62,
+     "y": 0.37
+    },
+    {
+     "x": 0.68,
+     "y": 0.24
+    }
+   ]
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "heaven-captain",
+    "nameZh": "天将",
+    "x": 0.08,
+    "y": 0.26
+   },
+   {
+    "role": "quiz",
+    "sprite": "heaven-captain",
+    "nameZh": "天将",
+    "x": 0.7,
+    "y": 0.39
+   }
+  ],
+  "bossSpot": {
+   "x": 0.94,
+   "y": 0.85
+  }
+ }
+}

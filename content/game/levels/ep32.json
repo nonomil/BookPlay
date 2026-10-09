@@ -1,0 +1,584 @@
+{
+ "schema_version": 1,
+ "ep": 32,
+ "title": {
+  "en": "Lady Whitebone",
+  "zh": "西游记 第32集"
+ },
+ "collection": "c05",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "whitebone",
+   "nameZh": "白骨夫人",
+   "mode": "sparring",
+   "sprite": "whitebone"
+  },
+  "minors": [
+   {
+    "id": "imp",
+    "nameZh": "小妖",
+    "sprite": "imp"
+   }
+  ]
+ },
+ "background": {
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep32/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "Lady Whitebone sat by the road and sniffed the air again.",
+   "textZh": "白骨夫人坐在路边,再次嗅了嗅空气。",
+   "illustration": "assets/adv_frames/ep32/f1.jpg",
+   "sourceNodeId": "n001",
+   "audioRef": "sent_en:Lady Whitebone sat by the road and sniffed the air again."
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "\"The Tang Monk has some powerful companions,\" she said.",
+   "textZh": "\"唐僧身边有一些实力强大的同伴,\"她说道。",
+   "illustration": "assets/adv_frames/ep32/f2.jpg",
+   "sourceNodeId": "n002",
+   "audioRef": "sent_en:\"The Tang Monk has some powerful companions,\" she said."
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "disguise",
+   "zh": "变装,伪装",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep32/f3.jpg"
+  },
+  {
+   "term": "sight",
+   "zh": "1. 视力,(2. 景色,景象)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep32/f2.jpg"
+  },
+  {
+   "term": "orchard",
+   "zh": "果园",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep32/f2.jpg"
+  },
+  {
+   "term": "thousand",
+   "zh": "一千,1,000",
+   "ipa": "ˈθaʊznd",
+   "illustration": "assets/adv_frames/ep32/f1.jpg"
+  },
+  {
+   "term": "hold out",
+   "zh": "伸出(手等)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep32/f1.jpg"
+  },
+  {
+   "term": "pull out",
+   "zh": "1. 抽出,拿出,(2. 拔出(牙齿、塞子等))",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep32/f2.jpg"
+  },
+  {
+   "term": "human",
+   "zh": "人,人类",
+   "ipa": "ˈhjuːmən",
+   "illustration": "assets/adv_frames/ep32/f0.jpg"
+  },
+  {
+   "term": "unfortunately",
+   "zh": "不幸地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep32/f3.jpg"
+  },
+  {
+   "term": "cruel",
+   "zh": "残忍的,残酷的",
+   "ipa": "ˈkruːəl",
+   "illustration": "assets/adv_frames/ep32/f0.jpg"
+  },
+  {
+   "term": "ridiculous",
+   "zh": "可笑的,荒谬的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep32/f0.jpg"
+  },
+  {
+   "term": "roll",
+   "zh": "滚动,打滚",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep32/f1.jpg"
+  },
+  {
+   "term": "bring",
+   "zh": "带来,拿来",
+   "ipa": "brɪŋ",
+   "illustration": "assets/adv_frames/ep32/f0.jpg"
+  }
+ ],
+ "wordPool": [
+  {
+   "term": "disguise",
+   "zh": "变装,伪装",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep32/f3.jpg"
+  },
+  {
+   "term": "sight",
+   "zh": "1. 视力,(2. 景色,景象)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep32/f2.jpg"
+  },
+  {
+   "term": "orchard",
+   "zh": "果园",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep32/f2.jpg"
+  },
+  {
+   "term": "thousand",
+   "zh": "一千,1,000",
+   "ipa": "ˈθaʊznd",
+   "illustration": "assets/adv_frames/ep32/f1.jpg"
+  },
+  {
+   "term": "hold out",
+   "zh": "伸出(手等)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep32/f1.jpg"
+  },
+  {
+   "term": "pull out",
+   "zh": "1. 抽出,拿出,(2. 拔出(牙齿、塞子等))",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep32/f2.jpg"
+  },
+  {
+   "term": "human",
+   "zh": "人,人类",
+   "ipa": "ˈhjuːmən",
+   "illustration": "assets/adv_frames/ep32/f0.jpg"
+  },
+  {
+   "term": "unfortunately",
+   "zh": "不幸地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep32/f3.jpg"
+  },
+  {
+   "term": "cruel",
+   "zh": "残忍的,残酷的",
+   "ipa": "ˈkruːəl",
+   "illustration": "assets/adv_frames/ep32/f0.jpg"
+  },
+  {
+   "term": "ridiculous",
+   "zh": "可笑的,荒谬的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep32/f0.jpg"
+  },
+  {
+   "term": "roll",
+   "zh": "滚动,打滚",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep32/f1.jpg"
+  },
+  {
+   "term": "bring",
+   "zh": "带来,拿来",
+   "ipa": "brɪŋ",
+   "illustration": "assets/adv_frames/ep32/f0.jpg"
+  },
+  {
+   "term": "get away",
+   "zh": "逃脱,离开",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep32/f3.jpg"
+  },
+  {
+   "term": "innocent",
+   "zh": "无罪的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep32/f2.jpg"
+  },
+  {
+   "term": "person",
+   "zh": "人,个人",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep32/f2.jpg"
+  },
+  {
+   "term": "pain",
+   "zh": "疼痛,痛苦",
+   "ipa": "peɪn",
+   "illustration": "assets/adv_frames/ep32/f0.jpg"
+  },
+  {
+   "term": "explode",
+   "zh": "爆发,爆炸",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep32/f1.jpg"
+  },
+  {
+   "term": "destroy",
+   "zh": "破坏,毁坏",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep32/f1.jpg"
+  },
+  {
+   "term": "no matter",
+   "zh": "无论如何",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep32/f2.jpg"
+  },
+  {
+   "term": "whip out",
+   "zh": "突然拿出",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep32/f3.jpg"
+  },
+  {
+   "term": "clear",
+   "zh": "1. 清除,收拾,(2. 明亮的,透明的)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep32/f1.jpg"
+  },
+  {
+   "term": "skeleton",
+   "zh": "骨骼,骨骸",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep32/f1.jpg"
+  },
+  {
+   "term": "vanish",
+   "zh": "(突然)消失不见",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep32/f0.jpg"
+  },
+  {
+   "term": "air",
+   "zh": "空气",
+   "ipa": "eə",
+   "illustration": "assets/adv_frames/ep32/f1.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "disguise",
+     "zh": "变装,伪装",
+     "sprite": "imp"
+    },
+    {
+     "term": "sight",
+     "zh": "1. 视力,(2. 景色,景象)",
+     "sprite": "imp"
+    },
+    {
+     "term": "orchard",
+     "zh": "果园",
+     "sprite": "imp"
+    },
+    {
+     "term": "thousand",
+     "zh": "一千,1,000",
+     "sprite": "imp"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "hold out",
+     "zh": "伸出(手等)",
+     "sprite": "imp"
+    },
+    {
+     "term": "pull out",
+     "zh": "1. 抽出,拿出,(2. 拔出(牙齿、塞子等))",
+     "sprite": "imp"
+    },
+    {
+     "term": "human",
+     "zh": "人,人类",
+     "sprite": "imp"
+    },
+    {
+     "term": "unfortunately",
+     "zh": "不幸地",
+     "sprite": "imp"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "cruel",
+    "zh": "残忍的,残酷的"
+   },
+   {
+    "term": "ridiculous",
+    "zh": "可笑的,荒谬的"
+   },
+   {
+    "term": "roll",
+    "zh": "滚动,打滚"
+   },
+   {
+    "term": "bring",
+    "zh": "带来,拿来"
+   }
+  ],
+  "taunts": [
+   "whitebone.1",
+   "whitebone.2",
+   "whitebone.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=32",
+ "npcDialogue": {
+  "intro": {
+   "id": "ep32-map-intro",
+   "lines": [
+    {
+     "id": "ep32-map-intro-1",
+     "sourceNodeId": "n001",
+     "speaker": "narrator",
+     "textEn": "Lady Whitebone sat by the road and sniffed the air again.",
+     "textZh": "白骨夫人坐在路边,再次嗅了嗅空气。",
+     "audioRef": "sent_en:Lady Whitebone sat by the road and sniffed the air again.",
+     "audioStart": 11.134,
+     "audioEnd": 18.039
+    },
+    {
+     "id": "ep32-map-intro-2",
+     "sourceNodeId": "n002",
+     "speaker": "narrator",
+     "textEn": "\"The Tang Monk has some powerful companions,\" she said.",
+     "textZh": "\"唐僧身边有一些实力强大的同伴,\"她说道。",
+     "audioRef": "sent_en:\"The Tang Monk has some powerful companions,\" she said.",
+     "audioStart": 18.04,
+     "audioEnd": 24.035
+    }
+   ]
+  },
+  "quiz": {
+   "id": "ep32-map-quiz",
+   "lines": [
+    {
+     "id": "ep32-map-quiz-1",
+     "sourceNodeId": "n024",
+     "speaker": "narrator",
+     "textEn": "\"Don't believe Wukong,\" said Bajie.",
+     "textZh": "\"别相信悟空,\"八戒说道。",
+     "audioRef": "sent_en:\"Don't believe Wukong,\" said Bajie.",
+     "audioStart": 122.655,
+     "audioEnd": 125.962
+    }
+   ],
+   "question": {
+    "id": "ep032-official-quiz-001",
+    "textEn": "which is true?",
+    "textZh": "哪一个是真的？"
+   },
+   "word": {
+    "term": "disguise",
+    "zh": "变装,伪装",
+    "ipa": ""
+   },
+   "options": [
+    {
+     "id": "a",
+     "textEn": "the tang monk and bajie didn't believe wukong.",
+     "textZh": "唐僧和八戒不相信悟空。",
+     "correct": true,
+     "feedback": "对了。唐僧和八戒不相信悟空。"
+    },
+    {
+     "id": "b",
+     "textEn": "lady whitebone recited the tight headband spell.",
+     "textZh": "怀特博恩夫人念了紧头带咒语。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    },
+    {
+     "id": "c",
+     "textEn": "the tang monk saved wukong's life.",
+     "textZh": "唐僧救了悟空的命。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    }
+   ],
+   "lessonCardId": "ep032-official-quiz-001"
+  }
+ },
+ "map": {
+  "theme": "generic",
+  "coordinateSpace": "world-normalized",
+  "worldTiles": 2,
+  "regions": {
+   "hero": 0,
+   "waves": [
+    0,
+    1
+   ],
+   "npc": {
+    "intro": 0,
+    "quiz": 1
+   },
+   "boss": 3
+  },
+  "walkable": {
+   "space": "world",
+   "x": 0.0,
+   "y": 0.16,
+   "w": 1.0,
+   "h": 0.79,
+   "rects": [
+    {
+     "x": 0.0,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.66,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    }
+   ]
+  },
+  "heroSpawn": {
+   "x": 0.06,
+   "y": 0.31
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.31,
+    "y": 0.23
+   },
+   {
+    "x": 0.38,
+    "y": 0.27
+   },
+   {
+    "x": 0.34,
+    "y": 0.33
+   },
+   {
+    "x": 0.41,
+    "y": 0.24
+   }
+  ],
+  "waveSpawns": [
+   [
+    {
+     "x": 0.31,
+     "y": 0.23
+    },
+    {
+     "x": 0.38,
+     "y": 0.27
+    },
+    {
+     "x": 0.34,
+     "y": 0.33
+    },
+    {
+     "x": 0.41,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.81,
+     "y": 0.23
+    },
+    {
+     "x": 0.88,
+     "y": 0.27
+    },
+    {
+     "x": 0.84,
+     "y": 0.33
+    },
+    {
+     "x": 0.91,
+     "y": 0.24
+    }
+   ]
+  ],
+  "orbSpawns": [
+   [
+    {
+     "x": 0.11,
+     "y": 0.25
+    },
+    {
+     "x": 0.16,
+     "y": 0.31
+    },
+    {
+     "x": 0.12,
+     "y": 0.37
+    },
+    {
+     "x": 0.18,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.61,
+     "y": 0.25
+    },
+    {
+     "x": 0.66,
+     "y": 0.31
+    },
+    {
+     "x": 0.62,
+     "y": 0.37
+    },
+    {
+     "x": 0.68,
+     "y": 0.24
+    }
+   ]
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "whitebone",
+    "nameZh": "白骨夫人",
+    "x": 0.08,
+    "y": 0.26
+   },
+   {
+    "role": "quiz",
+    "sprite": "whitebone",
+    "nameZh": "白骨夫人",
+    "x": 0.7,
+    "y": 0.39
+   }
+  ],
+  "bossSpot": {
+   "x": 0.94,
+   "y": 0.85
+  }
+ }
+}

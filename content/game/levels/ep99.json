@@ -1,0 +1,584 @@
+{
+ "schema_version": 1,
+ "ep": 99,
+ "title": {
+  "en": "Squire Kou's Vow",
+  "zh": "西游记 第99集"
+ },
+ "collection": "c12",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "imp",
+   "nameZh": "小妖",
+   "mode": "sparring",
+   "sprite": "imp"
+  },
+  "minors": [
+   {
+    "id": "imp",
+    "nameZh": "小妖",
+    "sprite": "imp"
+   }
+  ]
+ },
+ "background": {
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep99/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "The monster yelled from inside the cave.",
+   "textZh": "那头怪物从洞穴深处发出一声巨吼。",
+   "illustration": "assets/adv_frames/ep99/f1.jpg",
+   "sourceNodeId": "n001",
+   "audioRef": "sent_en:The monster yelled from inside the cave."
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "\"We ate the Tang Monk! So you might as well leave!\"",
+   "textZh": "\"我们把唐僧吃掉了!那你不如直接离开!\"",
+   "illustration": "assets/adv_frames/ep99/f2.jpg",
+   "sourceNodeId": "n002",
+   "audioRef": "sent_en:\"We ate the Tang Monk! So you might as well leave!\""
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "squire",
+   "zh": "(以前英国的)大地主",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep99/f2.jpg"
+  },
+  {
+   "term": "vow",
+   "zh": "1. 誓言,誓约,(2. 发誓)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep99/f2.jpg"
+  },
+  {
+   "term": "might as well",
+   "zh": "最好,还是...的好",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep99/f2.jpg"
+  },
+  {
+   "term": "frown",
+   "zh": "皱眉",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep99/f2.jpg"
+  },
+  {
+   "term": "companion",
+   "zh": "同伴,伴侣,朋友",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep99/f2.jpg"
+  },
+  {
+   "term": "moth",
+   "zh": "蛾(昆虫名)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep99/f1.jpg"
+  },
+  {
+   "term": "snore",
+   "zh": "打呼",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep99/f0.jpg"
+  },
+  {
+   "term": "drift",
+   "zh": "(随着水,空气等)漂移,漂流",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep99/f0.jpg"
+  },
+  {
+   "term": "put to sleep",
+   "zh": "使入睡",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep99/f1.jpg"
+  },
+  {
+   "term": "thrill",
+   "zh": "1. 使激动,使极度兴奋,(2. (一阵)激动,一阵毛骨悚然的感觉)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep99/f0.jpg"
+  },
+  {
+   "term": "villain",
+   "zh": "坏人,恶棍",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep99/f3.jpg"
+  },
+  {
+   "term": "bother",
+   "zh": "烦扰,打搅",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep99/f3.jpg"
+  }
+ ],
+ "wordPool": [
+  {
+   "term": "squire",
+   "zh": "(以前英国的)大地主",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep99/f2.jpg"
+  },
+  {
+   "term": "vow",
+   "zh": "1. 誓言,誓约,(2. 发誓)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep99/f2.jpg"
+  },
+  {
+   "term": "might as well",
+   "zh": "最好,还是...的好",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep99/f2.jpg"
+  },
+  {
+   "term": "frown",
+   "zh": "皱眉",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep99/f2.jpg"
+  },
+  {
+   "term": "companion",
+   "zh": "同伴,伴侣,朋友",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep99/f2.jpg"
+  },
+  {
+   "term": "moth",
+   "zh": "蛾(昆虫名)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep99/f1.jpg"
+  },
+  {
+   "term": "snore",
+   "zh": "打呼",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep99/f0.jpg"
+  },
+  {
+   "term": "drift",
+   "zh": "(随着水,空气等)漂移,漂流",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep99/f0.jpg"
+  },
+  {
+   "term": "put to sleep",
+   "zh": "使入睡",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep99/f1.jpg"
+  },
+  {
+   "term": "thrill",
+   "zh": "1. 使激动,使极度兴奋,(2. (一阵)激动,一阵毛骨悚然的感觉)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep99/f0.jpg"
+  },
+  {
+   "term": "villain",
+   "zh": "坏人,恶棍",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep99/f3.jpg"
+  },
+  {
+   "term": "bother",
+   "zh": "烦扰,打搅",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep99/f3.jpg"
+  },
+  {
+   "term": "stand back",
+   "zh": "靠后站",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep99/f2.jpg"
+  },
+  {
+   "term": "smash",
+   "zh": "打碎,打破",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep99/f3.jpg"
+  },
+  {
+   "term": "rubble",
+   "zh": "(倒塌建筑物的)碎石,瓦砾",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep99/f1.jpg"
+  },
+  {
+   "term": "stomach",
+   "zh": "腹,腹部,肚子",
+   "ipa": "ˈstʌmək",
+   "illustration": "assets/adv_frames/ep99/f2.jpg"
+  },
+  {
+   "term": "growl",
+   "zh": "吼叫,低沉而大声地说话",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep99/f3.jpg"
+  },
+  {
+   "term": "loudly",
+   "zh": "大声地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep99/f1.jpg"
+  },
+  {
+   "term": "beg",
+   "zh": "请求,恳请",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep99/f0.jpg"
+  },
+  {
+   "term": "feed",
+   "zh": "1. 喂食(人),(2. 喂养(动物等))",
+   "ipa": "fiːd",
+   "illustration": "assets/adv_frames/ep99/f0.jpg"
+  },
+  {
+   "term": "direction",
+   "zh": "1. 方向,(2. (常用复数)说明,使用方法)",
+   "ipa": "dəˈrekʃn",
+   "illustration": "assets/adv_frames/ep99/f0.jpg"
+  },
+  {
+   "term": "servant",
+   "zh": "仆人,佣人",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep99/f1.jpg"
+  },
+  {
+   "term": "fancy",
+   "zh": "别致的,花俏的,装饰多的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep99/f2.jpg"
+  },
+  {
+   "term": "plenty of",
+   "zh": "(数、量等)很多",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep99/f3.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "squire",
+     "zh": "(以前英国的)大地主",
+     "sprite": "imp"
+    },
+    {
+     "term": "vow",
+     "zh": "1. 誓言,誓约,(2. 发誓)",
+     "sprite": "imp"
+    },
+    {
+     "term": "might as well",
+     "zh": "最好,还是...的好",
+     "sprite": "imp"
+    },
+    {
+     "term": "frown",
+     "zh": "皱眉",
+     "sprite": "imp"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "companion",
+     "zh": "同伴,伴侣,朋友",
+     "sprite": "imp"
+    },
+    {
+     "term": "moth",
+     "zh": "蛾(昆虫名)",
+     "sprite": "imp"
+    },
+    {
+     "term": "snore",
+     "zh": "打呼",
+     "sprite": "imp"
+    },
+    {
+     "term": "drift",
+     "zh": "(随着水,空气等)漂移,漂流",
+     "sprite": "imp"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "put to sleep",
+    "zh": "使入睡"
+   },
+   {
+    "term": "thrill",
+    "zh": "1. 使激动,使极度兴奋,(2. (一阵)激动,一阵毛骨悚然的感觉)"
+   },
+   {
+    "term": "villain",
+    "zh": "坏人,恶棍"
+   },
+   {
+    "term": "bother",
+    "zh": "烦扰,打搅"
+   }
+  ],
+  "taunts": [
+   "imp.1",
+   "imp.2",
+   "imp.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=99",
+ "npcDialogue": {
+  "intro": {
+   "id": "ep99-map-intro",
+   "lines": [
+    {
+     "id": "ep99-map-intro-1",
+     "sourceNodeId": "n001",
+     "speaker": "narrator",
+     "textEn": "The monster yelled from inside the cave.",
+     "textZh": "那头怪物从洞穴深处发出一声巨吼。",
+     "audioRef": "sent_en:The monster yelled from inside the cave.",
+     "audioStart": 10.934,
+     "audioEnd": 15.622
+    },
+    {
+     "id": "ep99-map-intro-2",
+     "sourceNodeId": "n002",
+     "speaker": "narrator",
+     "textEn": "\"We ate the Tang Monk! So you might as well leave!\"",
+     "textZh": "\"我们把唐僧吃掉了!那你不如直接离开!\"",
+     "audioRef": "sent_en:\"We ate the Tang Monk! So you might as well leave!\"",
+     "audioStart": 15.623,
+     "audioEnd": 20.89
+    }
+   ]
+  },
+  "quiz": {
+   "id": "ep99-map-quiz",
+   "lines": [
+    {
+     "id": "ep99-map-quiz-1",
+     "sourceNodeId": "n003",
+     "speaker": "narrator",
+     "textEn": "\"Oh no!\" Bajie fell to his knees and cried.",
+     "textZh": "\"哦不!\"八戒顿时跪倒在地,痛哭起来。",
+     "audioRef": "sent_en:\"Oh no!\" Bajie fell to his knees and cried.",
+     "audioStart": 20.891,
+     "audioEnd": 27.788
+    }
+   ],
+   "question": {
+    "id": "ep099-official-quiz-001",
+    "textEn": "which is not true?",
+    "textZh": "哪一项是不正确的？"
+   },
+   "word": {
+    "term": "squire",
+    "zh": "(以前英国的)大地主",
+    "ipa": ""
+   },
+   "options": [
+    {
+     "id": "a",
+     "textEn": "lady kou found the tang monk tied up.",
+     "textZh": "寇女士发现唐僧被绑起来了。",
+     "correct": true,
+     "feedback": "对了。寇女士发现唐僧被绑起来了。"
+    },
+    {
+     "id": "b",
+     "textEn": "squire kou invited everyone to the feast.",
+     "textZh": "寇员外邀请大家参加宴会。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    },
+    {
+     "id": "c",
+     "textEn": "wujing and bajie believed the monster.",
+     "textZh": "悟净和八戒相信了那个怪物。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    }
+   ],
+   "lessonCardId": "ep099-official-quiz-001"
+  }
+ },
+ "map": {
+  "theme": "generic",
+  "coordinateSpace": "world-normalized",
+  "worldTiles": 2,
+  "regions": {
+   "hero": 0,
+   "waves": [
+    0,
+    1
+   ],
+   "npc": {
+    "intro": 0,
+    "quiz": 1
+   },
+   "boss": 3
+  },
+  "walkable": {
+   "space": "world",
+   "x": 0.0,
+   "y": 0.16,
+   "w": 1.0,
+   "h": 0.79,
+   "rects": [
+    {
+     "x": 0.0,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.66,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    }
+   ]
+  },
+  "heroSpawn": {
+   "x": 0.06,
+   "y": 0.31
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.31,
+    "y": 0.23
+   },
+   {
+    "x": 0.38,
+    "y": 0.27
+   },
+   {
+    "x": 0.34,
+    "y": 0.33
+   },
+   {
+    "x": 0.41,
+    "y": 0.24
+   }
+  ],
+  "waveSpawns": [
+   [
+    {
+     "x": 0.31,
+     "y": 0.23
+    },
+    {
+     "x": 0.38,
+     "y": 0.27
+    },
+    {
+     "x": 0.34,
+     "y": 0.33
+    },
+    {
+     "x": 0.41,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.81,
+     "y": 0.23
+    },
+    {
+     "x": 0.88,
+     "y": 0.27
+    },
+    {
+     "x": 0.84,
+     "y": 0.33
+    },
+    {
+     "x": 0.91,
+     "y": 0.24
+    }
+   ]
+  ],
+  "orbSpawns": [
+   [
+    {
+     "x": 0.11,
+     "y": 0.25
+    },
+    {
+     "x": 0.16,
+     "y": 0.31
+    },
+    {
+     "x": 0.12,
+     "y": 0.37
+    },
+    {
+     "x": 0.18,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.61,
+     "y": 0.25
+    },
+    {
+     "x": 0.66,
+     "y": 0.31
+    },
+    {
+     "x": 0.62,
+     "y": 0.37
+    },
+    {
+     "x": 0.68,
+     "y": 0.24
+    }
+   ]
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "imp",
+    "nameZh": "小妖",
+    "x": 0.08,
+    "y": 0.26
+   },
+   {
+    "role": "quiz",
+    "sprite": "imp",
+    "nameZh": "小妖",
+    "x": 0.7,
+    "y": 0.39
+   }
+  ],
+  "bossSpot": {
+   "x": 0.94,
+   "y": 0.85
+  }
+ }
+}

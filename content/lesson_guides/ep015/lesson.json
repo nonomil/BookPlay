@@ -1,0 +1,2786 @@
+{
+  "schema_version": 1,
+  "episode": 15,
+  "title": {
+    "en": "Tea with a Dragon",
+    "zh": "西游记 第15集"
+  },
+  "sources": [
+    {
+      "kind": "courseware_main_pptx",
+      "file": "G:\\Game\\BookPlay书戏\\data\\西游记课件\\3.3西游记  Journey to the West PPT课件\\015_Journey to the West 15_Tea with a Dragon.pptx",
+      "sha256": "2589e740ea5f37fc73f11350e86213a3c6d9cac05d830eea093c1d87390ff320",
+      "pages": 20
+    },
+    {
+      "kind": "official_quiz_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+      "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929",
+      "pages": 131
+    },
+    {
+      "kind": "intensive_reader_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\02-西游记精读版台词本\\1、带标注版PDF 108集\\015 龙宫饮茶 上.pdf",
+      "sha256": "69d9757be006175c6564545aeeca4f588dc5eeeb9924fa5819a8f488e12f53c3",
+      "pages": 5
+    },
+    {
+      "kind": "intensive_reader_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\02-西游记精读版台词本\\1、带标注版PDF 108集\\015 龙宫饮茶 下.pdf",
+      "sha256": "176d13324d76fd205c4736f42a02a11ff851d0016565bf3e04393d2f01432c78",
+      "pages": 3
+    },
+    {
+      "kind": "courseware_screenshots_pptx",
+      "file": "G:\\Game\\BookPlay书戏\\data\\西游记课件\\西游记-外教课动画截图\\Journey to the West 015  Tea with a Dragon_20240106163952.pptx",
+      "sha256": "d798881ffa3d91d9197885e80d442754241a7e350efb383106272f1a34518165",
+      "pages": 45
+    }
+  ],
+  "cards": [
+    {
+      "card_id": "ep015-official-quiz-001",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 1,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "which is not true?",
+        "zh": "哪一项是不正确的？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "the dragon king said the monk was wrong.",
+            "zh": "龙王说那位和尚错了。"
+          },
+          {
+            "id": "b",
+            "en": "guanyin said wukong would come back.",
+            "zh": "观音说悟空会回来的。"
+          },
+          {
+            "id": "c",
+            "en": "the monk didn't want to hurt the robbers.",
+            "zh": "和尚不想伤害强盗。"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n068",
+            "quote": "\"Well, Wukong. The monk has a point.\""
+          },
+          {
+            "node_id": "n071",
+            "quote": "The king hesitated and then said, \"You <font color=\"#ffff00\"><i>are</i></font> violent sometimes.\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 17,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep015-official-quiz-002",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 2,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "why were the robbers scared of wukong?",
+        "zh": "为什么强盗会害怕悟空？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "they thought he was a spirit.",
+            "zh": "他们以为他是一个灵魂。"
+          },
+          {
+            "id": "b",
+            "en": "they thought he was a king.",
+            "zh": "他们认为他是国王。"
+          },
+          {
+            "id": "c",
+            "en": "they thought he was a monk.",
+            "zh": "他们以为他是一个和尚。"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n016",
+            "quote": "His iron bar grew, and his eyes flashed red with anger."
+          },
+          {
+            "node_id": "n019",
+            "quote": "The robbers tripped over one another, trying to get away."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 17,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep015-official-quiz-003",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 3,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "why did wukong leave the monk?",
+        "zh": "为什么悟空离开了和尚？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "the monk scolded him.",
+            "zh": "和尚骂了他。"
+          },
+          {
+            "id": "b",
+            "en": "the monk saved him.",
+            "zh": "那个僧侣救了他。"
+          },
+          {
+            "id": "c",
+            "en": "the journey was over.",
+            "zh": "旅程结束了。"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n043",
+            "quote": "\"But he got angry when I scolded him for being violent. He left.\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 17,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep015-official-quiz-004",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 4,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "what did guanyin give the monk?",
+        "zh": "观音给了和尚什么？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "a metal headband",
+            "zh": "金属头带"
+          },
+          {
+            "id": "b",
+            "en": "an iron bar",
+            "zh": "一根铁棒"
+          },
+          {
+            "id": "c",
+            "en": "a cup of tea",
+            "zh": "一杯茶"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n044",
+            "quote": "\"Your companion will come back,\" said the woman."
+          },
+          {
+            "node_id": "n048",
+            "quote": "The old woman whispered a magical spell to the Tang Monk."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 17,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep015-official-quiz-005",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 5,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "what did the dragon king not tell wukong?",
+        "zh": "龙王没有告诉悟空什么？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "he was small.",
+            "zh": "他个子很小。"
+          },
+          {
+            "id": "b",
+            "en": "he was violent.",
+            "zh": "他很暴力。"
+          },
+          {
+            "id": "c",
+            "en": "he made a promise.",
+            "zh": "他做了一个承诺。"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n071",
+            "quote": "The king hesitated and then said, \"You <font color=\"#ffff00\"><i>are</i></font> violent sometimes.\""
+          },
+          {
+            "node_id": "n074",
+            "quote": "\"Not only that, but you made a promise to Guanyin. Perhaps, Wukong, it is you who has a bad attitude?\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 17,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep015-vocab-001",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 101,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "shake",
+        "zh": "摇动,抖动,奶昔"
+      },
+      "payload": {
+        "term": "shake",
+        "ipa": "ʃeɪk",
+        "pos": "v.",
+        "def": "v.摇动,抖动,(与某人)握手, 发抖 n.[C]摇动,抖动,奶昔",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "015 龙宫饮茶 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "69d9757be006175c6564545aeeca4f588dc5eeeb9924fa5819a8f488e12f53c3"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep015-vocab-002",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 102,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "sorry",
+        "zh": "adj.抱歉的,难过的,惋惜的"
+      },
+      "payload": {
+        "term": "sorry",
+        "ipa": "ˈsɒri",
+        "pos": "adj.",
+        "def": "adj.抱歉的,难过的,惋惜的",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "015 龙宫饮茶 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "69d9757be006175c6564545aeeca4f588dc5eeeb9924fa5819a8f488e12f53c3"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep015-vocab-003",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 103,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "whatever",
+        "zh": "pron.任何,无论什么"
+      },
+      "payload": {
+        "term": "whatever",
+        "ipa": "wɒtˈevə",
+        "pos": "pron.",
+        "def": "pron.任何,无论什么",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "015 龙宫饮茶 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "69d9757be006175c6564545aeeca4f588dc5eeeb9924fa5819a8f488e12f53c3"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep015-vocab-004",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 104,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "else",
+        "zh": "adv.别的,其他的"
+      },
+      "payload": {
+        "term": "else",
+        "ipa": "els",
+        "pos": "adv.",
+        "def": "adv.别的,其他的",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "015 龙宫饮茶 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "69d9757be006175c6564545aeeca4f588dc5eeeb9924fa5819a8f488e12f53c3"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep015-vocab-005",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 105,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "deal",
+        "zh": "大量,很多 vi.对付,对待"
+      },
+      "payload": {
+        "term": "deal",
+        "ipa": "diː l",
+        "pos": "n.",
+        "def": "n.协议,交易[sing.]大量,很多 vi.对付,对待",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "015 龙宫饮茶 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "69d9757be006175c6564545aeeca4f588dc5eeeb9924fa5819a8f488e12f53c3"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep015-vocab-006",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 106,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "laugh",
+        "zh": "v.笑,发笑 n.笑声"
+      },
+      "payload": {
+        "term": "laugh",
+        "ipa": "lɑːf",
+        "pos": "v.",
+        "def": "v.笑,发笑 n.笑声",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "015 龙宫饮茶 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "69d9757be006175c6564545aeeca4f588dc5eeeb9924fa5819a8f488e12f53c3"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep015-vocab-007",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 107,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "little",
+        "zh": "小的"
+      },
+      "payload": {
+        "term": "little",
+        "ipa": "ˈlɪtl",
+        "pos": "adj.",
+        "def": "小的",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ],
+        "gloss": "小的"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "015 龙宫饮茶 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "69d9757be006175c6564545aeeca4f588dc5eeeb9924fa5819a8f488e12f53c3"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep015-vocab-008",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 108,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "monkey",
+        "zh": "猴子"
+      },
+      "payload": {
+        "term": "monkey",
+        "ipa": "ˈmʌŋki",
+        "pos": "n.",
+        "def": "n.[C]猴子",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "015 龙宫饮茶 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "69d9757be006175c6564545aeeca4f588dc5eeeb9924fa5819a8f488e12f53c3"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep015-vocab-009",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 109,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "spirit",
+        "zh": "情绪"
+      },
+      "payload": {
+        "term": "spirit",
+        "ipa": "ˈspɪrɪt",
+        "pos": "n.",
+        "def": "n.[U]勇气,意志,实质 [C]灵魂,鬼魂,幽灵 [C,U]精神 [pl.]情绪",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "015 龙宫饮茶 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "69d9757be006175c6564545aeeca4f588dc5eeeb9924fa5819a8f488e12f53c3"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep015-vocab-010",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 110,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "cry",
+        "zh": "叫喊"
+      },
+      "payload": {
+        "term": "cry",
+        "ipa": "kraɪ",
+        "pos": "v.",
+        "def": "v./n.[sing.]哭 [C]叫喊",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "015 龙宫饮茶 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "69d9757be006175c6564545aeeca4f588dc5eeeb9924fa5819a8f488e12f53c3"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "015 龙宫饮茶 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "176d13324d76fd205c4736f42a02a11ff851d0016565bf3e04393d2f01432c78"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep015-vocab-011",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 111,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "run",
+        "zh": "跑"
+      },
+      "payload": {
+        "term": "run",
+        "ipa": "rʌn",
+        "pos": "vi.",
+        "def": "跑",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ],
+        "gloss": "跑"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "015 龙宫饮茶 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "69d9757be006175c6564545aeeca4f588dc5eeeb9924fa5819a8f488e12f53c3"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep015-vocab-012",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 112,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "trip",
+        "zh": "旅游,旅行 vi.绊,绊倒"
+      },
+      "payload": {
+        "term": "trip",
+        "ipa": "trɪp",
+        "pos": "n.",
+        "def": "n.[C]旅游,旅行 vi.绊,绊倒",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "015 龙宫饮茶 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "69d9757be006175c6564545aeeca4f588dc5eeeb9924fa5819a8f488e12f53c3"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep015-vocab-013",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 113,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "raise",
+        "zh": "vt.募集,征集,提高,举起,养 育,饲养;提出"
+      },
+      "payload": {
+        "term": "raise",
+        "ipa": "reɪz",
+        "pos": "vt.",
+        "def": "vt.募集,征集,提高,举起,养 育,饲养;提出",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "015 龙宫饮茶 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "69d9757be006175c6564545aeeca4f588dc5eeeb9924fa5819a8f488e12f53c3"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep015-vocab-014",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 114,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "ready",
+        "zh": "adj.愿意的,准备好的"
+      },
+      "payload": {
+        "term": "ready",
+        "ipa": "ˈredi",
+        "pos": "adj.",
+        "def": "adj.愿意的,准备好的",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "015 龙宫饮茶 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "69d9757be006175c6564545aeeca4f588dc5eeeb9924fa5819a8f488e12f53c3"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep015-vocab-015",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 115,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "stop",
+        "zh": "车站,停止 v.停止,阻止,逗留"
+      },
+      "payload": {
+        "term": "stop",
+        "ipa": "stɒp",
+        "pos": "n.",
+        "def": "n.[C]车站,停止 v.停止,阻止,逗留",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "015 龙宫饮茶 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "69d9757be006175c6564545aeeca4f588dc5eeeb9924fa5819a8f488e12f53c3"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep015-vocab-016",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 116,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "hurt",
+        "zh": "v.(使)疼痛,受伤,感到疼痛, (使)伤心 adj.受伤的"
+      },
+      "payload": {
+        "term": "hurt",
+        "ipa": "hɜː(r)t",
+        "pos": "v.",
+        "def": "v.(使)疼痛,受伤,感到疼痛, (使)伤心 adj.受伤的",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "015 龙宫饮茶 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "69d9757be006175c6564545aeeca4f588dc5eeeb9924fa5819a8f488e12f53c3"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep015-vocab-017",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 117,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "someone",
+        "zh": "pron.某人"
+      },
+      "payload": {
+        "term": "someone",
+        "ipa": "ˈsʌmwʌn",
+        "pos": "pron.",
+        "def": "pron.某人",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "015 龙宫饮茶 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "69d9757be006175c6564545aeeca4f588dc5eeeb9924fa5819a8f488e12f53c3"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep015-vocab-018",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 118,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "cruel",
+        "zh": "adj.残酷的,残忍的"
+      },
+      "payload": {
+        "term": "cruel",
+        "ipa": "ˈkruːəl",
+        "pos": "adj.",
+        "def": "adj.残酷的,残忍的",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "015 龙宫饮茶 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "69d9757be006175c6564545aeeca4f588dc5eeeb9924fa5819a8f488e12f53c3"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "015 龙宫饮茶 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "176d13324d76fd205c4736f42a02a11ff851d0016565bf3e04393d2f01432c78"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep015-vocab-019",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 119,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "angry",
+        "zh": "adj.发怒的,愤怒的,生气的"
+      },
+      "payload": {
+        "term": "angry",
+        "ipa": "ˈæŋɡri",
+        "pos": "adj.",
+        "def": "adj.发怒的,愤怒的,生气的",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "015 龙宫饮茶 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "69d9757be006175c6564545aeeca4f588dc5eeeb9924fa5819a8f488e12f53c3"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep015-vocab-020",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 120,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "save",
+        "zh": "v.救,救助,节省;储蓄;保存"
+      },
+      "payload": {
+        "term": "save",
+        "ipa": "seɪv",
+        "pos": "v.",
+        "def": "v.救,救助,节省;储蓄;保存",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "015 龙宫饮茶 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "69d9757be006175c6564545aeeca4f588dc5eeeb9924fa5819a8f488e12f53c3"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep015-vocab-021",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 121,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "accept",
+        "zh": "v.接受;承担(责任等)"
+      },
+      "payload": {
+        "term": "accept",
+        "ipa": "əkˈsept",
+        "pos": "v.",
+        "def": "v.接受;承担(责任等)",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "015 龙宫饮茶 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "69d9757be006175c6564545aeeca4f588dc5eeeb9924fa5819a8f488e12f53c3"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep015-vocab-022",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 122,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "leave",
+        "zh": "休假"
+      },
+      "payload": {
+        "term": "leave",
+        "ipa": "liːv",
+        "pos": "v.",
+        "def": "v.离开,留下,使处于...... n.[U]休假",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "015 龙宫饮茶 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "69d9757be006175c6564545aeeca4f588dc5eeeb9924fa5819a8f488e12f53c3"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep015-vocab-023",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 123,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "continue",
+        "zh": "v.持续,继续做"
+      },
+      "payload": {
+        "term": "continue",
+        "ipa": "kənˈtɪnjuː",
+        "pos": "v.",
+        "def": "v.持续,继续做",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "015 龙宫饮茶 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "69d9757be006175c6564545aeeca4f588dc5eeeb9924fa5819a8f488e12f53c3"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "015 龙宫饮茶 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "176d13324d76fd205c4736f42a02a11ff851d0016565bf3e04393d2f01432c78"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep015-vocab-024",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 124,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "journey",
+        "zh": "(尤指长途)旅行,行程"
+      },
+      "payload": {
+        "term": "journey",
+        "ipa": "ˈdʒɜː(r)ni",
+        "pos": "n.",
+        "def": "n.[C](尤指长途)旅行,行程",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "015 龙宫饮茶 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "69d9757be006175c6564545aeeca4f588dc5eeeb9924fa5819a8f488e12f53c3"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep015-vocab-025",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 125,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "woman",
+        "zh": "女子"
+      },
+      "payload": {
+        "term": "woman",
+        "ipa": "ˈwʊmən",
+        "pos": "n.",
+        "def": "n.[C]女子",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "015 龙宫饮茶 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "69d9757be006175c6564545aeeca4f588dc5eeeb9924fa5819a8f488e12f53c3"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep015-vocab-026",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 126,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "go",
+        "zh": "vi.去,走 v.link.变成,变得"
+      },
+      "payload": {
+        "term": "go",
+        "ipa": "ɡəʊ",
+        "pos": "vi.",
+        "def": "vi.去,走 v.link.变成,变得",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "015 龙宫饮茶 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "69d9757be006175c6564545aeeca4f588dc5eeeb9924fa5819a8f488e12f53c3"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep015-vocab-027",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 127,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "anyone",
+        "zh": "pron.任何人"
+      },
+      "payload": {
+        "term": "anyone",
+        "ipa": "ˈeniwʌn",
+        "pos": "pron.",
+        "def": "pron.任何人",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "015 龙宫饮茶 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "69d9757be006175c6564545aeeca4f588dc5eeeb9924fa5819a8f488e12f53c3"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep015-vocab-028",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 128,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "alone",
+        "zh": "独自"
+      },
+      "payload": {
+        "term": "alone",
+        "ipa": "əˈləʊn",
+        "pos": "adv.",
+        "def": "独自",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ],
+        "gloss": "独自"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "015 龙宫饮茶 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "69d9757be006175c6564545aeeca4f588dc5eeeb9924fa5819a8f488e12f53c3"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep015-vocab-029",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 129,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "put",
+        "zh": "vt.放,猛推"
+      },
+      "payload": {
+        "term": "put",
+        "ipa": "pʊt",
+        "pos": "vt.",
+        "def": "vt.放,猛推",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "015 龙宫饮茶 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "176d13324d76fd205c4736f42a02a11ff851d0016565bf3e04393d2f01432c78"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep015-vocab-030",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 130,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "metal",
+        "zh": "金属"
+      },
+      "payload": {
+        "term": "metal",
+        "ipa": "ˈmetl",
+        "pos": "n.",
+        "def": "n.[C,U]金属",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "015 龙宫饮茶 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "176d13324d76fd205c4736f42a02a11ff851d0016565bf3e04393d2f01432c78"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep015-vocab-031",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 131,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "spell",
+        "zh": "咒语"
+      },
+      "payload": {
+        "term": "spell",
+        "ipa": "spel",
+        "pos": "v.",
+        "def": "v.用字母拼,拼写 n.[C]咒语",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "015 龙宫饮茶 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "176d13324d76fd205c4736f42a02a11ff851d0016565bf3e04393d2f01432c78"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep015-vocab-032",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 132,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "magic",
+        "zh": "魔术;魔法,魔力,魅力"
+      },
+      "payload": {
+        "term": "magic",
+        "ipa": "ˈmædʒɪk",
+        "pos": "adj.",
+        "def": "adj.有魔力的,有神奇力量的 n.[U]魔术;魔法,魔力,魅力",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "015 龙宫饮茶 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "176d13324d76fd205c4736f42a02a11ff851d0016565bf3e04393d2f01432c78"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep015-vocab-033",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 133,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "how",
+        "zh": "adv.怎样,如何"
+      },
+      "payload": {
+        "term": "how",
+        "ipa": "haʊ",
+        "pos": "adv.",
+        "def": "adv.怎样,如何",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "015 龙宫饮茶 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "176d13324d76fd205c4736f42a02a11ff851d0016565bf3e04393d2f01432c78"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep015-vocab-034",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 134,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "do",
+        "zh": "v.做,干 aux v.构成疑问句和否定句"
+      },
+      "payload": {
+        "term": "do",
+        "ipa": "duː",
+        "pos": "v.",
+        "def": "v.做,干 aux v.构成疑问句和否定句",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "015 龙宫饮茶 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "176d13324d76fd205c4736f42a02a11ff851d0016565bf3e04393d2f01432c78"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep015-vocab-035",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 135,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "bright",
+        "zh": "明亮的"
+      },
+      "payload": {
+        "term": "bright",
+        "ipa": "braɪt",
+        "pos": "adv.",
+        "def": "明亮的",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ],
+        "gloss": "明亮的"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "015 龙宫饮茶 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "176d13324d76fd205c4736f42a02a11ff851d0016565bf3e04393d2f01432c78"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep015-vocab-036",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 136,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "light",
+        "zh": "电灯 adj.轻的,轻柔的,程度轻的,少 量的,浅色的 v.点燃,照亮"
+      },
+      "payload": {
+        "term": "light",
+        "ipa": "laɪt",
+        "pos": "n.",
+        "def": "n.[U]光,光线,光亮;[C]电灯 adj.轻的,轻柔的,程度轻的,少 量的,浅色的 v.点燃,照亮",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "015 龙宫饮茶 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "176d13324d76fd205c4736f42a02a11ff851d0016565bf3e04393d2f01432c78"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep015-vocab-037",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 137,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "rise",
+        "zh": "升起,增加,上升 vi.起床"
+      },
+      "payload": {
+        "term": "rise",
+        "ipa": "raɪz",
+        "pos": "vi.",
+        "def": "vi./n.[C]升起,增加,上升 vi.起床",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "015 龙宫饮茶 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "176d13324d76fd205c4736f42a02a11ff851d0016565bf3e04393d2f01432c78"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep015-vocab-038",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 138,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "air",
+        "zh": "空气,天空"
+      },
+      "payload": {
+        "term": "air",
+        "ipa": "eə",
+        "pos": "n.",
+        "def": "n.[U]空气,天空",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "015 龙宫饮茶 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "176d13324d76fd205c4736f42a02a11ff851d0016565bf3e04393d2f01432c78"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep015-vocab-039",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 139,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "hope",
+        "zh": "希望"
+      },
+      "payload": {
+        "term": "hope",
+        "ipa": "həʊp",
+        "pos": "v.",
+        "def": "希望",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ],
+        "gloss": "希望"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "015 龙宫饮茶 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "176d13324d76fd205c4736f42a02a11ff851d0016565bf3e04393d2f01432c78"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep015-vocab-040",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 140,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "learn",
+        "zh": "v.学习,学会,了解"
+      },
+      "payload": {
+        "term": "learn",
+        "ipa": "lɜː(r)n",
+        "pos": "v.",
+        "def": "v.学习,学会,了解",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "015 龙宫饮茶 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "176d13324d76fd205c4736f42a02a11ff851d0016565bf3e04393d2f01432c78"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep015-vocab-041",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 141,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "say",
+        "zh": "v.说,讲"
+      },
+      "payload": {
+        "term": "say",
+        "ipa": "seɪ",
+        "pos": "v.",
+        "def": "v.说,讲",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "015 龙宫饮茶 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "176d13324d76fd205c4736f42a02a11ff851d0016565bf3e04393d2f01432c78"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep015-vocab-042",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 142,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "cause",
+        "zh": "原因"
+      },
+      "payload": {
+        "term": "cause",
+        "ipa": "kɔː z",
+        "pos": "vt.",
+        "def": "vt.造成,引起 n.[C]原因",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "015 龙宫饮茶 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "176d13324d76fd205c4736f42a02a11ff851d0016565bf3e04393d2f01432c78"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep015-vocab-043",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 143,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "trouble",
+        "zh": "困 境;麻烦 vt.使烦恼,麻烦"
+      },
+      "payload": {
+        "term": "trouble",
+        "ipa": "ˈtrʌbl",
+        "pos": "n.",
+        "def": "n.[C,U]问题,困难,苦恼[U]困 境;麻烦 vt.使烦恼,麻烦",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "015 龙宫饮茶 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "176d13324d76fd205c4736f42a02a11ff851d0016565bf3e04393d2f01432c78"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep015-vocab-044",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 144,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "tea",
+        "zh": "茶,茶叶"
+      },
+      "payload": {
+        "term": "tea",
+        "ipa": "tiː",
+        "pos": "n.",
+        "def": "n.[U]茶,茶叶",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "015 龙宫饮茶 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "176d13324d76fd205c4736f42a02a11ff851d0016565bf3e04393d2f01432c78"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep015-vocab-045",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 145,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "travel",
+        "zh": "游历"
+      },
+      "payload": {
+        "term": "travel",
+        "ipa": "ˈtrævl",
+        "pos": "v.",
+        "def": "v.旅行,游历幽;传播 n.[C,U]旅行[U]游历",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "015 龙宫饮茶 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "176d13324d76fd205c4736f42a02a11ff851d0016565bf3e04393d2f01432c78"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep015-vocab-046",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 146,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "promise",
+        "zh": "承诺,诺言"
+      },
+      "payload": {
+        "term": "promise",
+        "ipa": "ˈprɒmɪs",
+        "pos": "v.",
+        "def": "v.许诺,承诺 n.[C]承诺,诺言",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "015 龙宫饮茶 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "176d13324d76fd205c4736f42a02a11ff851d0016565bf3e04393d2f01432c78"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep015-vocab-047",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 147,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "wonderful",
+        "zh": "adj.精彩的,绝妙的"
+      },
+      "payload": {
+        "term": "wonderful",
+        "ipa": "ˈwʌndəf(ə)l",
+        "pos": "adj.",
+        "def": "adj.精彩的,绝妙的",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "015 龙宫饮茶 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "176d13324d76fd205c4736f42a02a11ff851d0016565bf3e04393d2f01432c78"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep015-vocab-048",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 148,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "cough",
+        "zh": "n./vi咳嗽"
+      },
+      "payload": {
+        "term": "cough",
+        "ipa": "kɒf",
+        "pos": "n.",
+        "def": "n./vi咳嗽",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "015 龙宫饮茶 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "176d13324d76fd205c4736f42a02a11ff851d0016565bf3e04393d2f01432c78"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep015-vocab-049",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 149,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "nervous",
+        "zh": "adj.焦虑的,担忧的;神经系统的"
+      },
+      "payload": {
+        "term": "nervous",
+        "ipa": "ˈnɜː(r)vəs",
+        "pos": "adj.",
+        "def": "adj.焦虑的,担忧的;神经系统的",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "015 龙宫饮茶 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "176d13324d76fd205c4736f42a02a11ff851d0016565bf3e04393d2f01432c78"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep015-vocab-050",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 150,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "point",
+        "zh": "目的 v.指,指向"
+      },
+      "payload": {
+        "term": "point",
+        "ipa": "pɔɪnt",
+        "pos": "n.",
+        "def": "n.[C]得分,点,小数点,时刻, 特点,观点,要点[U]目的 v.指,指向",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "015 龙宫饮茶 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "176d13324d76fd205c4736f42a02a11ff851d0016565bf3e04393d2f01432c78"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep015-vocab-051",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 151,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "king",
+        "zh": "君主,国王"
+      },
+      "payload": {
+        "term": "king",
+        "ipa": "kɪŋ",
+        "pos": "n.",
+        "def": "n.[C]君主,国王",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "015 龙宫饮茶 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "176d13324d76fd205c4736f42a02a11ff851d0016565bf3e04393d2f01432c78"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep015-vocab-052",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 152,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "mean",
+        "zh": "vt.意思是,打算,意味着,对某 人重要"
+      },
+      "payload": {
+        "term": "mean",
+        "ipa": "miːn",
+        "pos": "vt.",
+        "def": "vt.意思是,打算,意味着,对某 人重要",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "015 龙宫饮茶 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "176d13324d76fd205c4736f42a02a11ff851d0016565bf3e04393d2f01432c78"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep015-vocab-053",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 153,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "sometimes",
+        "zh": "adv.有时"
+      },
+      "payload": {
+        "term": "sometimes",
+        "ipa": "ˈsʌmtaɪmz",
+        "pos": "adv.",
+        "def": "adv.有时",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "015 龙宫饮茶 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "176d13324d76fd205c4736f42a02a11ff851d0016565bf3e04393d2f01432c78"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep015-vocab-054",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 154,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "fold",
+        "zh": "v.折叠,对折"
+      },
+      "payload": {
+        "term": "fold",
+        "ipa": "fəʊld",
+        "pos": "v.",
+        "def": "v.折叠,对折",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "015 龙宫饮茶 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "176d13324d76fd205c4736f42a02a11ff851d0016565bf3e04393d2f01432c78"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep015-vocab-055",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 155,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "arm",
+        "zh": "手臂,上肢 v.装备,武装"
+      },
+      "payload": {
+        "term": "arm",
+        "ipa": "ɑː rm",
+        "pos": "n.",
+        "def": "n.[C]手臂,上肢 v.装备,武装",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "015 龙宫饮茶 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "176d13324d76fd205c4736f42a02a11ff851d0016565bf3e04393d2f01432c78"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep015-vocab-056",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 156,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "ground",
+        "zh": "地,地面"
+      },
+      "payload": {
+        "term": "ground",
+        "ipa": "ɡraʊnd",
+        "pos": "n.",
+        "def": "n.[U]地,地面",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "015 龙宫饮茶 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "176d13324d76fd205c4736f42a02a11ff851d0016565bf3e04393d2f01432c78"
+        }
+      ],
+      "review_status": "machine_verified"
+    }
+  ],
+  "teacher_guide": null,
+  "review": {
+    "status": "draft",
+    "reviewed_at": null,
+    "card_stats": {
+      "total": 61,
+      "sentence_choice": 5,
+      "word_review": 56,
+      "machine_verified": 57,
+      "assistant_reviewed": 4,
+      "verified": 61,
+      "needs_review": 0
+    }
+  },
+  "generated_at": "2026-08-31T04:49:36.406563+00:00"
+}

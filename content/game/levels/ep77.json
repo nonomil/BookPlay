@@ -1,0 +1,584 @@
+{
+ "schema_version": 1,
+ "ep": 77,
+ "title": {
+  "en": "The Magic Fan",
+  "zh": "西游记 第77集"
+ },
+ "collection": "c10",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "ironfan",
+   "nameZh": "铁扇公主",
+   "mode": "sparring",
+   "sprite": "ironfan"
+  },
+  "minors": [
+   {
+    "id": "imp",
+    "nameZh": "小妖",
+    "sprite": "imp"
+   }
+  ]
+ },
+ "background": {
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep77/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "For over a day, the wind from the fan carried Wukong.",
+   "textZh": "一天来,风扇吹来的风一直将悟空吹着。",
+   "illustration": "assets/adv_frames/ep77/f1.jpg",
+   "sourceNodeId": "n001",
+   "audioRef": "sent_en:For over a day, the wind from the fan carried Wukong."
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "When he finally landed, he was far from the Iron Immortal's mountain.",
+   "textZh": "当他最终着陆时,他已远离那位铁扇公主所驻守的山峰。",
+   "illustration": "assets/adv_frames/ep77/f2.jpg",
+   "sourceNodeId": "n002",
+   "audioRef": "sent_en:When he finally landed, he was far from the Iron Immortal's mountain."
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "nearby",
+   "zh": "在附近",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep77/f3.jpg"
+  },
+  {
+   "term": "familiar",
+   "zh": "熟悉的,常见的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep77/f0.jpg"
+  },
+  {
+   "term": "deal with",
+   "zh": "对付",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep77/f2.jpg"
+  },
+  {
+   "term": "pagoda",
+   "zh": "(佛教寺院的)塔",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep77/f3.jpg"
+  },
+  {
+   "term": "tea",
+   "zh": "茶",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep77/f3.jpg"
+  },
+  {
+   "term": "hand",
+   "zh": "1. 传递,(2. 手)",
+   "ipa": "hænd",
+   "illustration": "assets/adv_frames/ep77/f3.jpg"
+  },
+  {
+   "term": "blow away",
+   "zh": "(被风或气息)吹走,驱散",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep77/f3.jpg"
+  },
+  {
+   "term": "continue",
+   "zh": "继续,持续",
+   "ipa": "kənˈtɪnjuː",
+   "illustration": "assets/adv_frames/ep77/f3.jpg"
+  },
+  {
+   "term": "wrinkle",
+   "zh": "1. 使皱,使起皱纹,(2. 皱纹)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep77/f2.jpg"
+  },
+  {
+   "term": "got rid of",
+   "zh": "摆脱,除去",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep77/f3.jpg"
+  },
+  {
+   "term": "raise",
+   "zh": "举起,使升高",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep77/f0.jpg"
+  },
+  {
+   "term": "furiously",
+   "zh": "1. 猛烈地,激烈地,(2. 非常愤怒地)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep77/f2.jpg"
+  }
+ ],
+ "wordPool": [
+  {
+   "term": "nearby",
+   "zh": "在附近",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep77/f3.jpg"
+  },
+  {
+   "term": "familiar",
+   "zh": "熟悉的,常见的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep77/f0.jpg"
+  },
+  {
+   "term": "deal with",
+   "zh": "对付",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep77/f2.jpg"
+  },
+  {
+   "term": "pagoda",
+   "zh": "(佛教寺院的)塔",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep77/f3.jpg"
+  },
+  {
+   "term": "tea",
+   "zh": "茶",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep77/f3.jpg"
+  },
+  {
+   "term": "hand",
+   "zh": "1. 传递,(2. 手)",
+   "ipa": "hænd",
+   "illustration": "assets/adv_frames/ep77/f3.jpg"
+  },
+  {
+   "term": "blow away",
+   "zh": "(被风或气息)吹走,驱散",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep77/f3.jpg"
+  },
+  {
+   "term": "continue",
+   "zh": "继续,持续",
+   "ipa": "kənˈtɪnjuː",
+   "illustration": "assets/adv_frames/ep77/f3.jpg"
+  },
+  {
+   "term": "wrinkle",
+   "zh": "1. 使皱,使起皱纹,(2. 皱纹)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep77/f2.jpg"
+  },
+  {
+   "term": "got rid of",
+   "zh": "摆脱,除去",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep77/f3.jpg"
+  },
+  {
+   "term": "raise",
+   "zh": "举起,使升高",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep77/f0.jpg"
+  },
+  {
+   "term": "furiously",
+   "zh": "1. 猛烈地,激烈地,(2. 非常愤怒地)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep77/f2.jpg"
+  },
+  {
+   "term": "turn",
+   "zh": "转变为,变成",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep77/f3.jpg"
+  },
+  {
+   "term": "cricket",
+   "zh": "蟋蟀",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep77/f3.jpg"
+  },
+  {
+   "term": "silently",
+   "zh": "安静地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep77/f1.jpg"
+  },
+  {
+   "term": "tunnel",
+   "zh": "隧道",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep77/f1.jpg"
+  },
+  {
+   "term": "tuck",
+   "zh": "塞进",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep77/f3.jpg"
+  },
+  {
+   "term": "horrible",
+   "zh": "可怕的,让人讨厌的 (=terrible)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep77/f0.jpg"
+  },
+  {
+   "term": "force",
+   "zh": "勉强(做...),迫使(他人或自己)做...",
+   "ipa": "fɔː(r)s",
+   "illustration": "assets/adv_frames/ep77/f0.jpg"
+  },
+  {
+   "term": "precious",
+   "zh": "珍爱的,心爱的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep77/f1.jpg"
+  },
+  {
+   "term": "reach for",
+   "zh": "伸手去拿",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep77/f2.jpg"
+  },
+  {
+   "term": "stomach",
+   "zh": "腹,腹部,肚子",
+   "ipa": "ˈstʌmək",
+   "illustration": "assets/adv_frames/ep77/f0.jpg"
+  },
+  {
+   "term": "punch",
+   "zh": "用拳猛击",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep77/f1.jpg"
+  },
+  {
+   "term": "awful",
+   "zh": "可怕的,糟糕的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep77/f3.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "nearby",
+     "zh": "在附近",
+     "sprite": "imp"
+    },
+    {
+     "term": "familiar",
+     "zh": "熟悉的,常见的",
+     "sprite": "imp"
+    },
+    {
+     "term": "deal with",
+     "zh": "对付",
+     "sprite": "imp"
+    },
+    {
+     "term": "pagoda",
+     "zh": "(佛教寺院的)塔",
+     "sprite": "imp"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "tea",
+     "zh": "茶",
+     "sprite": "imp"
+    },
+    {
+     "term": "hand",
+     "zh": "1. 传递,(2. 手)",
+     "sprite": "imp"
+    },
+    {
+     "term": "blow away",
+     "zh": "(被风或气息)吹走,驱散",
+     "sprite": "imp"
+    },
+    {
+     "term": "continue",
+     "zh": "继续,持续",
+     "sprite": "imp"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "wrinkle",
+    "zh": "1. 使皱,使起皱纹,(2. 皱纹)"
+   },
+   {
+    "term": "got rid of",
+    "zh": "摆脱,除去"
+   },
+   {
+    "term": "raise",
+    "zh": "举起,使升高"
+   },
+   {
+    "term": "furiously",
+    "zh": "1. 猛烈地,激烈地,(2. 非常愤怒地)"
+   }
+  ],
+  "taunts": [
+   "ironfan.1",
+   "ironfan.2",
+   "ironfan.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=77",
+ "npcDialogue": {
+  "intro": {
+   "id": "ep77-map-intro",
+   "lines": [
+    {
+     "id": "ep77-map-intro-1",
+     "sourceNodeId": "n001",
+     "speaker": "narrator",
+     "textEn": "For over a day, the wind from the fan carried Wukong.",
+     "textZh": "一天来,风扇吹来的风一直将悟空吹着。",
+     "audioRef": "sent_en:For over a day, the wind from the fan carried Wukong.",
+     "audioStart": 10.934,
+     "audioEnd": 18.881
+    },
+    {
+     "id": "ep77-map-intro-2",
+     "sourceNodeId": "n002",
+     "speaker": "narrator",
+     "textEn": "When he finally landed, he was far from the Iron Immortal's mountain.",
+     "textZh": "当他最终着陆时,他已远离那位铁扇公主所驻守的山峰。",
+     "audioRef": "sent_en:When he finally landed, he was far from the Iron Immortal's mountain.",
+     "audioStart": 18.882,
+     "audioEnd": 25.118
+    }
+   ]
+  },
+  "quiz": {
+   "id": "ep77-map-quiz",
+   "lines": [
+    {
+     "id": "ep77-map-quiz-1",
+     "sourceNodeId": "n003",
+     "speaker": "narrator",
+     "textEn": "Wukong looked around and saw a mountain nearby.",
+     "textZh": "玄武观四周环顾,见附近有一座山。",
+     "audioRef": "sent_en:Wukong looked around and saw a mountain nearby.",
+     "audioStart": 25.119,
+     "audioEnd": 28.781
+    }
+   ],
+   "question": {
+    "id": "ep077-official-quiz-001",
+    "textEn": "which is not true?",
+    "textZh": "哪一项是不正确的？"
+   },
+   "word": {
+    "term": "nearby",
+    "zh": "在附近",
+    "ipa": ""
+   },
+   "options": [
+    {
+     "id": "a",
+     "textEn": "wukong stole the iron immortal's stone.",
+     "textZh": "悟空偷了铁扇公主的石头。",
+     "correct": true,
+     "feedback": "对了。悟空偷了铁扇公主的石头。"
+    },
+    {
+     "id": "b",
+     "textEn": "wukong landed near lingji's mountain.",
+     "textZh": "悟空降落在灵姬的山附近。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    },
+    {
+     "id": "c",
+     "textEn": "the iron immortal couldn't blow wukong away.",
+     "textZh": "铁扇公主无法将悟空吹走。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    }
+   ],
+   "lessonCardId": "ep077-official-quiz-001"
+  }
+ },
+ "map": {
+  "theme": "generic",
+  "coordinateSpace": "world-normalized",
+  "worldTiles": 2,
+  "regions": {
+   "hero": 0,
+   "waves": [
+    0,
+    1
+   ],
+   "npc": {
+    "intro": 0,
+    "quiz": 1
+   },
+   "boss": 3
+  },
+  "walkable": {
+   "space": "world",
+   "x": 0.0,
+   "y": 0.16,
+   "w": 1.0,
+   "h": 0.79,
+   "rects": [
+    {
+     "x": 0.0,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.66,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    }
+   ]
+  },
+  "heroSpawn": {
+   "x": 0.06,
+   "y": 0.31
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.31,
+    "y": 0.23
+   },
+   {
+    "x": 0.38,
+    "y": 0.27
+   },
+   {
+    "x": 0.34,
+    "y": 0.33
+   },
+   {
+    "x": 0.41,
+    "y": 0.24
+   }
+  ],
+  "waveSpawns": [
+   [
+    {
+     "x": 0.31,
+     "y": 0.23
+    },
+    {
+     "x": 0.38,
+     "y": 0.27
+    },
+    {
+     "x": 0.34,
+     "y": 0.33
+    },
+    {
+     "x": 0.41,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.81,
+     "y": 0.23
+    },
+    {
+     "x": 0.88,
+     "y": 0.27
+    },
+    {
+     "x": 0.84,
+     "y": 0.33
+    },
+    {
+     "x": 0.91,
+     "y": 0.24
+    }
+   ]
+  ],
+  "orbSpawns": [
+   [
+    {
+     "x": 0.11,
+     "y": 0.25
+    },
+    {
+     "x": 0.16,
+     "y": 0.31
+    },
+    {
+     "x": 0.12,
+     "y": 0.37
+    },
+    {
+     "x": 0.18,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.61,
+     "y": 0.25
+    },
+    {
+     "x": 0.66,
+     "y": 0.31
+    },
+    {
+     "x": 0.62,
+     "y": 0.37
+    },
+    {
+     "x": 0.68,
+     "y": 0.24
+    }
+   ]
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "imp",
+    "nameZh": "小妖",
+    "x": 0.08,
+    "y": 0.26
+   },
+   {
+    "role": "quiz",
+    "sprite": "imp",
+    "nameZh": "小妖",
+    "x": 0.7,
+    "y": 0.39
+   }
+  ],
+  "bossSpot": {
+   "x": 0.94,
+   "y": 0.85
+  }
+ }
+}

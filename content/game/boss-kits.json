@@ -1,0 +1,573 @@
+{
+  "schemaVersion": 1,
+  "comment": "降妖记 Boss 套件：答题即出招。同一 id 多集复用。特效路径缺则用 generic。",
+  "hero": {
+    "id": "wukong",
+    "nameZh": "孙悟空",
+    "hpSlots": 3,
+    "skills": {
+      "attack": {
+        "id": "staff",
+        "nameZh": "金箍棒",
+        "fx": "assets/game-fx/wukong/attack.png"
+      },
+      "special": {
+        "id": "staff-combo",
+        "nameZh": "棒影连击",
+        "needCombo": 3,
+        "fx": "assets/game-fx/wukong/special.png"
+      },
+      "defend": {
+        "id": "aura",
+        "nameZh": "护体金光",
+        "usesPerBattle": 1,
+        "fx": "assets/game-fx/wukong/defend.png"
+      },
+      "hint": {
+        "id": "fiery-eyes",
+        "nameZh": "火眼金睛",
+        "fx": "assets/game-fx/wukong/hint.png"
+      }
+    }
+  },
+  "genericFx": {
+    "hitPlayer": "assets/game-fx/generic/hit-player.png",
+    "hitBoss": "assets/game-fx/generic/hit-boss.png",
+    "shock": "assets/game-fx/generic/shock.png"
+  },
+  "bosses": {
+    "monkey-minor": {
+      "nameZh": "猴群头目",
+      "attack": {
+        "id": "peach-throw",
+        "nameZh": "扔桃",
+        "fx": "assets/game-fx/monkey-minor/attack.png"
+      },
+      "special": {
+        "id": "mob-jeer",
+        "nameZh": "群猴起哄",
+        "fx": "assets/game-fx/monkey-minor/special.png"
+      },
+      "defend": {
+        "id": "tree-dodge",
+        "nameZh": "窜树",
+        "fx": "assets/game-fx/monkey-minor/defend.png"
+      }
+    },
+    "subodhi-disciple": {
+      "nameZh": "道童",
+      "attack": {
+        "id": "whisk",
+        "nameZh": "拂尘",
+        "fx": "assets/game-fx/subodhi-disciple/attack.png"
+      },
+      "special": {
+        "id": "recite",
+        "nameZh": "背书考问",
+        "preferQuestion": "listen-choice",
+        "fx": "assets/game-fx/subodhi-disciple/special.png"
+      },
+      "defend": {
+        "id": "cushion",
+        "nameZh": "蒲团一挡",
+        "fx": "assets/game-fx/subodhi-disciple/defend.png"
+      }
+    },
+    "subodhi": {
+      "nameZh": "菩提祖师",
+      "attack": {
+        "id": "finger",
+        "nameZh": "指点",
+        "fx": "assets/game-fx/subodhi/attack.png"
+      },
+      "special": {
+        "id": "sutra",
+        "nameZh": "心法考问",
+        "preferQuestion": "official",
+        "fx": "assets/game-fx/subodhi/special.png"
+      },
+      "defend": {
+        "id": "stillness",
+        "nameZh": "静气",
+        "fx": "assets/game-fx/subodhi/defend.png"
+      }
+    },
+    "chaosdemon": {
+      "nameZh": "混世魔王",
+      "attack": {
+        "id": "mace",
+        "nameZh": "狼牙棒",
+        "fx": "assets/game-fx/chaosdemon/attack.png"
+      },
+      "special": {
+        "id": "mud-wave",
+        "nameZh": "浊浪",
+        "fx": "assets/game-fx/chaosdemon/special.png"
+      },
+      "defend": {
+        "id": "cave-armor",
+        "nameZh": "洞石护甲",
+        "fx": "assets/game-fx/chaosdemon/defend.png"
+      }
+    },
+    "dragonking": {
+      "nameZh": "龙王",
+      "attack": {
+        "id": "water-pillar",
+        "nameZh": "水柱",
+        "fx": "assets/game-fx/dragonking/attack.png"
+      },
+      "special": {
+        "id": "night-pearl",
+        "nameZh": "夜明珠眩光",
+        "fx": "assets/game-fx/dragonking/special.png"
+      },
+      "defend": {
+        "id": "scales",
+        "nameZh": "龙鳞",
+        "fx": "assets/game-fx/dragonking/defend.png"
+      }
+    },
+    "underworld-clerk": {
+      "nameZh": "阴差",
+      "attack": {
+        "id": "soul-chain",
+        "nameZh": "锁魂链",
+        "fx": "assets/game-fx/underworld-clerk/attack.png"
+      },
+      "special": {
+        "id": "roll-call",
+        "nameZh": "点名勾魂",
+        "preferQuestion": "typing",
+        "fx": "assets/game-fx/underworld-clerk/special.png"
+      },
+      "defend": {
+        "id": "gloom-shield",
+        "nameZh": "阴气盾",
+        "fx": "assets/game-fx/underworld-clerk/defend.png"
+      }
+    },
+    "heaven-captain": {
+      "nameZh": "天将",
+      "attack": {
+        "id": "spear",
+        "nameZh": "枪戟",
+        "fx": "assets/game-fx/heaven-captain/attack.png"
+      },
+      "special": {
+        "id": "arrow-rain",
+        "nameZh": "令箭雨",
+        "fx": "assets/game-fx/heaven-captain/special.png"
+      },
+      "defend": {
+        "id": "cloud-armor",
+        "nameZh": "云甲",
+        "fx": "assets/game-fx/heaven-captain/defend.png"
+      }
+    },
+    "imp": {
+      "nameZh": "山妖",
+      "attack": {
+        "id": "pounce",
+        "nameZh": "扑咬",
+        "fx": "assets/game-fx/imp/attack.png"
+      },
+      "special": {
+        "id": "rocks",
+        "nameZh": "乱石砸",
+        "fx": "assets/game-fx/imp/special.png"
+      },
+      "defend": {
+        "id": "curl",
+        "nameZh": "缩成球",
+        "fx": "assets/game-fx/imp/defend.png"
+      }
+    },
+    "mountain-bandit": {
+      "nameZh": "山贼头目",
+      "attack": {
+        "id": "club",
+        "nameZh": "木棍砸",
+        "fx": "assets/game-fx/mountain-bandit/attack.png"
+      },
+      "special": {
+        "id": "rocks",
+        "nameZh": "乱石砸",
+        "fx": "assets/game-fx/mountain-bandit/special.png"
+      },
+      "defend": {
+        "id": "dust",
+        "nameZh": "烟尘闪",
+        "fx": "assets/game-fx/mountain-bandit/defend.png"
+      }
+    },
+    "forest-beast": {
+      "nameZh": "林中野兽",
+      "attack": {
+        "id": "tusk-branch",
+        "nameZh": "獠牙枝",
+        "fx": "assets/game-fx/forest-beast/attack.png"
+      },
+      "special": {
+        "id": "leaf-burst",
+        "nameZh": "落叶爆",
+        "fx": "assets/game-fx/forest-beast/special.png"
+      },
+      "defend": {
+        "id": "moss-curl",
+        "nameZh": "缩成球",
+        "fx": "assets/game-fx/forest-beast/defend.png"
+      }
+    },
+    "whitedragonhorse": {
+      "nameZh": "白龙",
+      "attack": {
+        "id": "breath",
+        "nameZh": "龙息",
+        "fx": "assets/game-fx/whitedragonhorse/attack.png"
+      },
+      "special": {
+        "id": "water-prison",
+        "nameZh": "水牢",
+        "fx": "assets/game-fx/whitedragonhorse/special.png"
+      },
+      "defend": {
+        "id": "pearl-guard",
+        "nameZh": "龙珠护",
+        "fx": "assets/game-fx/whitedragonhorse/defend.png"
+      }
+    },
+    "blackwind": {
+      "nameZh": "黑风王",
+      "attack": {
+        "id": "wind-blade",
+        "nameZh": "黑风刃",
+        "fx": "assets/game-fx/blackwind/attack.png"
+      },
+      "special": {
+        "id": "ambush",
+        "nameZh": "隐身偷袭",
+        "fx": "assets/game-fx/blackwind/special.png"
+      },
+      "defend": {
+        "id": "wind-veil",
+        "nameZh": "风罩",
+        "fx": "assets/game-fx/blackwind/defend.png"
+      }
+    },
+    "bajie": {
+      "nameZh": "猪八戒",
+      "attack": {
+        "id": "rake",
+        "nameZh": "九齿耙",
+        "fx": "assets/game-fx/bajie/attack.png"
+      },
+      "special": {
+        "id": "gluttony",
+        "nameZh": "贪吃减速",
+        "fx": "assets/game-fx/bajie/special.png"
+      },
+      "defend": {
+        "id": "belly",
+        "nameZh": "挺肚",
+        "fx": "assets/game-fx/bajie/defend.png"
+      }
+    },
+    "yellowwind": {
+      "nameZh": "黄风大王",
+      "attack": {
+        "id": "sand-palm",
+        "nameZh": "黄沙掌",
+        "fx": "assets/game-fx/yellowwind/attack.png"
+      },
+      "special": {
+        "id": "sandstorm",
+        "nameZh": "迷眼沙暴",
+        "fx": "assets/game-fx/yellowwind/special.png"
+      },
+      "defend": {
+        "id": "sand-shield",
+        "nameZh": "沙盾",
+        "fx": "assets/game-fx/yellowwind/defend.png"
+      }
+    },
+    "shawujing": {
+      "nameZh": "沙僧",
+      "attack": {
+        "id": "staff",
+        "nameZh": "宝杖",
+        "fx": "assets/game-fx/shawujing/attack.png"
+      },
+      "special": {
+        "id": "quicksand",
+        "nameZh": "流沙吞",
+        "fx": "assets/game-fx/shawujing/special.png"
+      },
+      "defend": {
+        "id": "skull-beads",
+        "nameZh": "念珠挡",
+        "fx": "assets/game-fx/shawujing/defend.png"
+      }
+    },
+    "zhenyuan": {
+      "nameZh": "镇元大仙",
+      "attack": {
+        "id": "sleeve",
+        "nameZh": "袖里乾坤",
+        "fx": "assets/game-fx/zhenyuan/attack.png"
+      },
+      "special": {
+        "id": "ginseng-quiz",
+        "nameZh": "人参果考问",
+        "preferQuestion": "official",
+        "fx": "assets/game-fx/zhenyuan/special.png"
+      },
+      "defend": {
+        "id": "earth-body",
+        "nameZh": "地仙体",
+        "fx": "assets/game-fx/zhenyuan/defend.png"
+      }
+    },
+    "whitebone": {
+      "nameZh": "白骨夫人",
+      "attack": {
+        "id": "bone-spike",
+        "nameZh": "骨刺",
+        "fx": "assets/game-fx/whitebone/attack.png"
+      },
+      "special": {
+        "id": "three-disguise",
+        "nameZh": "三打变身",
+        "fx": "assets/game-fx/whitebone/special.png"
+      },
+      "defend": {
+        "id": "mist",
+        "nameZh": "化烟",
+        "fx": "assets/game-fx/whitebone/defend.png"
+      }
+    },
+    "tang": {
+      "nameZh": "国王",
+      "attack": {
+        "id": "edict",
+        "nameZh": "圣旨",
+        "fx": "assets/game-fx/tang/attack.png"
+      },
+      "special": {
+        "id": "scripture",
+        "nameZh": "经文考问",
+        "preferQuestion": "official",
+        "fx": "assets/game-fx/tang/special.png"
+      },
+      "defend": {
+        "id": "robe",
+        "nameZh": "龙袍",
+        "fx": "assets/game-fx/tang/defend.png"
+      }
+    },
+    "goldenhorn": {
+      "nameZh": "金角大王",
+      "attack": {
+        "id": "gourd-suck",
+        "nameZh": "葫芦吸",
+        "fx": "assets/game-fx/goldenhorn/attack.png"
+      },
+      "special": {
+        "id": "gold-rope",
+        "nameZh": "幌金绳",
+        "fx": "assets/game-fx/goldenhorn/special.png"
+      },
+      "defend": {
+        "id": "gourd-shield",
+        "nameZh": "葫芦盾",
+        "fx": "assets/game-fx/goldenhorn/defend.png"
+      }
+    },
+    "redboy": {
+      "nameZh": "红孩儿",
+      "attack": {
+        "id": "samadhi-fire",
+        "nameZh": "三昧真火",
+        "fx": "assets/game-fx/redboy/attack.png"
+      },
+      "special": {
+        "id": "fire-lotus-rain",
+        "nameZh": "火莲雨",
+        "fx": "assets/game-fx/redboy/special.png"
+      },
+      "defend": {
+        "id": "fire-veil",
+        "nameZh": "火罩",
+        "fx": "assets/game-fx/redboy/defend.png"
+      }
+    },
+    "yellowrobe": {
+      "nameZh": "黄袍怪",
+      "attack": {
+        "id": "sleeve-slash",
+        "nameZh": "黄袖斩",
+        "fx": "assets/game-fx/yellowrobe/attack.png"
+      },
+      "special": {
+        "id": "ribbon-cage",
+        "nameZh": "星绸困",
+        "fx": "assets/game-fx/yellowrobe/special.png"
+      },
+      "defend": {
+        "id": "robe-ward",
+        "nameZh": "黄袍护",
+        "fx": "assets/game-fx/yellowrobe/defend.png"
+      }
+    },
+    "rulai": {
+      "nameZh": "如来",
+      "attack": {
+        "id": "lotus-palm",
+        "nameZh": "莲掌",
+        "fx": "assets/game-fx/rulai/attack.png"
+      },
+      "special": {
+        "id": "golden-halo",
+        "nameZh": "金光圈",
+        "preferQuestion": "official",
+        "fx": "assets/game-fx/rulai/special.png"
+      },
+      "defend": {
+        "id": "lotus-ward",
+        "nameZh": "莲盾",
+        "fx": "assets/game-fx/rulai/defend.png"
+      }
+    },
+    "jinchi": {
+      "nameZh": "金池长老",
+      "attack": {
+        "id": "staff",
+        "nameZh": "禅杖",
+        "fx": "assets/game-fx/jinchi/attack.png"
+      },
+      "special": {
+        "id": "muyu",
+        "nameZh": "木鱼",
+        "preferQuestion": "listen-choice",
+        "fx": "assets/game-fx/jinchi/special.png"
+      },
+      "defend": {
+        "id": "cushion",
+        "nameZh": "蒲团挡",
+        "fx": "assets/game-fx/jinchi/defend.png"
+      }
+    },
+    "laojun": {
+      "nameZh": "太上老君",
+      "attack": {
+        "id": "gourd-smoke",
+        "nameZh": "紫烟",
+        "fx": "assets/game-fx/laojun/attack.png"
+      },
+      "special": {
+        "id": "bagua",
+        "nameZh": "八卦",
+        "preferQuestion": "official",
+        "fx": "assets/game-fx/laojun/special.png"
+      },
+      "defend": {
+        "id": "elixir-ward",
+        "nameZh": "金丹护",
+        "fx": "assets/game-fx/laojun/defend.png"
+      }
+    },
+    "king": {
+      "nameZh": "国王",
+      "attack": {
+        "id": "edict-slash",
+        "nameZh": "圣旨斩",
+        "fx": "assets/game-fx/king/attack.png"
+      },
+      "special": {
+        "id": "dragon-seal",
+        "nameZh": "龙印",
+        "preferQuestion": "official",
+        "fx": "assets/game-fx/king/special.png"
+      },
+      "defend": {
+        "id": "dragon-robe",
+        "nameZh": "龙袍盾",
+        "fx": "assets/game-fx/king/defend.png"
+      }
+    },
+    "tudigong": {
+      "nameZh": "土地公",
+      "attack": {
+        "id": "staff",
+        "nameZh": "龙头杖",
+        "fx": "assets/game-fx/tudigong/attack.png"
+      },
+      "special": {
+        "id": "earth-quiz",
+        "nameZh": "土地考问",
+        "preferQuestion": "official",
+        "fx": "assets/game-fx/tudigong/special.png"
+      },
+      "defend": {
+        "id": "earth-body",
+        "nameZh": "土身",
+        "fx": "assets/game-fx/tudigong/defend.png"
+      }
+    },
+    "prince": {
+      "nameZh": "太子",
+      "attack": {
+        "id": "fan",
+        "nameZh": "折扇",
+        "fx": "assets/game-fx/prince/attack.png"
+      },
+      "special": {
+        "id": "scripture",
+        "nameZh": "经文考问",
+        "preferQuestion": "official",
+        "fx": "assets/game-fx/prince/special.png"
+      },
+      "defend": {
+        "id": "robe",
+        "nameZh": "宫袍",
+        "fx": "assets/game-fx/prince/defend.png"
+      }
+    },
+    "heishui": {
+      "nameZh": "黑水河神",
+      "attack": {
+        "id": "breath",
+        "nameZh": "黑水息",
+        "fx": "assets/game-fx/heishui/attack.png"
+      },
+      "special": {
+        "id": "water-prison",
+        "nameZh": "水牢",
+        "fx": "assets/game-fx/heishui/special.png"
+      },
+      "defend": {
+        "id": "pearl-guard",
+        "nameZh": "黑珠护",
+        "fx": "assets/game-fx/heishui/defend.png"
+      }
+    },
+    "yingchou": {
+      "nameZh": "鹰愁涧龙",
+      "attack": {
+        "id": "water-slash",
+        "nameZh": "白浪斩",
+        "fx": "assets/game-fx/yingchou/attack.png"
+      },
+      "special": {
+        "id": "whirlpool",
+        "nameZh": "漩涡困",
+        "fx": "assets/game-fx/yingchou/special.png"
+      },
+      "defend": {
+        "id": "pearl-ward",
+        "nameZh": "龙珠护",
+        "fx": "assets/game-fx/yingchou/defend.png"
+      }
+    }
+  }
+}

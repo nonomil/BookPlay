@@ -1,0 +1,584 @@
+{
+ "schema_version": 1,
+ "ep": 54,
+ "title": {
+  "en": "The River God",
+  "zh": "西游记 第54集"
+ },
+ "collection": "c07",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "shawujing",
+   "nameZh": "沙悟净",
+   "mode": "sparring",
+   "sprite": "shawujing"
+  },
+  "minors": [
+   {
+    "id": "imp",
+    "nameZh": "小妖",
+    "sprite": "imp"
+   }
+  ]
+ },
+ "background": {
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep54/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "Wukong stared at the river.",
+   "textZh": "猿猴孙悟空凝视着河流。",
+   "illustration": "assets/adv_frames/ep54/f1.jpg",
+   "sourceNodeId": "n001",
+   "audioRef": "sent_en:Wukong stared at the river."
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "\"I should have stopped Master from getting in that canoe. But whenever I warn him about someone, he doesn't believe me.\"",
+   "textZh": "\"我本该阻止师父登上那艘独木舟的,但每当我提醒他有陌生人时,他都不相信我。\"",
+   "illustration": "assets/adv_frames/ep54/f2.jpg",
+   "sourceNodeId": "n002",
+   "audioRef": "sent_en:\"I should have stopped Master from getting in that canoe. But whenever I warn him about someone, he doesn't believe me.\""
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "whenever",
+   "zh": "每当,无论什么时候",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep54/f2.jpg"
+  },
+  {
+   "term": "warn",
+   "zh": "警告",
+   "ipa": "wɔː (r)n",
+   "illustration": "assets/adv_frames/ep54/f2.jpg"
+  },
+  {
+   "term": "believe",
+   "zh": "相信,信任",
+   "ipa": "bɪˈliːv",
+   "illustration": "assets/adv_frames/ep54/f1.jpg"
+  },
+  {
+   "term": "tap",
+   "zh": "轻拍",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep54/f3.jpg"
+  },
+  {
+   "term": "spear",
+   "zh": "矛",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep54/f3.jpg"
+  },
+  {
+   "term": "peek out",
+   "zh": "往外偷看",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep54/f0.jpg"
+  },
+  {
+   "term": "lizard",
+   "zh": "蜥蜴",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep54/f0.jpg"
+  },
+  {
+   "term": "struck",
+   "zh": "打,打击 (strike-struck)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep54/f0.jpg"
+  },
+  {
+   "term": "shove",
+   "zh": "推,撞",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep54/f1.jpg"
+  },
+  {
+   "term": "upward",
+   "zh": "向上,上升",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep54/f3.jpg"
+  },
+  {
+   "term": "splash",
+   "zh": "溅,泼,激起水花",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep54/f0.jpg"
+  },
+  {
+   "term": "breathe",
+   "zh": "呼吸",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep54/f1.jpg"
+  }
+ ],
+ "wordPool": [
+  {
+   "term": "whenever",
+   "zh": "每当,无论什么时候",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep54/f2.jpg"
+  },
+  {
+   "term": "warn",
+   "zh": "警告",
+   "ipa": "wɔː (r)n",
+   "illustration": "assets/adv_frames/ep54/f2.jpg"
+  },
+  {
+   "term": "believe",
+   "zh": "相信,信任",
+   "ipa": "bɪˈliːv",
+   "illustration": "assets/adv_frames/ep54/f1.jpg"
+  },
+  {
+   "term": "tap",
+   "zh": "轻拍",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep54/f3.jpg"
+  },
+  {
+   "term": "spear",
+   "zh": "矛",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep54/f3.jpg"
+  },
+  {
+   "term": "peek out",
+   "zh": "往外偷看",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep54/f0.jpg"
+  },
+  {
+   "term": "lizard",
+   "zh": "蜥蜴",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep54/f0.jpg"
+  },
+  {
+   "term": "struck",
+   "zh": "打,打击 (strike-struck)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep54/f0.jpg"
+  },
+  {
+   "term": "shove",
+   "zh": "推,撞",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep54/f1.jpg"
+  },
+  {
+   "term": "upward",
+   "zh": "向上,上升",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep54/f3.jpg"
+  },
+  {
+   "term": "splash",
+   "zh": "溅,泼,激起水花",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep54/f0.jpg"
+  },
+  {
+   "term": "breathe",
+   "zh": "呼吸",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep54/f1.jpg"
+  },
+  {
+   "term": "heavily",
+   "zh": "1. 猛烈地,厉害地,(2. 沉重地)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep54/f1.jpg"
+  },
+  {
+   "term": "respond",
+   "zh": "回答,答覆",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep54/f3.jpg"
+  },
+  {
+   "term": "notice",
+   "zh": "注意到,察觉到",
+   "ipa": "ˈnəʊtɪs",
+   "illustration": "assets/adv_frames/ep54/f3.jpg"
+  },
+  {
+   "term": "pretend",
+   "zh": "假装,伪装",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep54/f1.jpg"
+  },
+  {
+   "term": "frightened",
+   "zh": "害怕的,惊吓的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep54/f2.jpg"
+  },
+  {
+   "term": "mighty",
+   "zh": "强大的,强而有力的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep54/f3.jpg"
+  },
+  {
+   "term": "nephew",
+   "zh": "外甥 (niece:外甥女)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep54/f0.jpg"
+  },
+  {
+   "term": "fade",
+   "zh": "逐渐消失,逐渐变弱",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep54/f1.jpg"
+  },
+  {
+   "term": "at",
+   "zh": "1. 马上,(2. 同时)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep54/f3.jpg"
+  },
+  {
+   "term": "muddy",
+   "zh": "多烂泥的,泥泞的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep54/f2.jpg"
+  },
+  {
+   "term": "riverbed",
+   "zh": "河床",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep54/f2.jpg"
+  },
+  {
+   "term": "monkey",
+   "zh": "猴子",
+   "ipa": "ˈmʌŋki",
+   "illustration": "assets/adv_frames/ep54/f1.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "whenever",
+     "zh": "每当,无论什么时候",
+     "sprite": "imp"
+    },
+    {
+     "term": "warn",
+     "zh": "警告",
+     "sprite": "imp"
+    },
+    {
+     "term": "believe",
+     "zh": "相信,信任",
+     "sprite": "imp"
+    },
+    {
+     "term": "tap",
+     "zh": "轻拍",
+     "sprite": "imp"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "spear",
+     "zh": "矛",
+     "sprite": "imp"
+    },
+    {
+     "term": "peek out",
+     "zh": "往外偷看",
+     "sprite": "imp"
+    },
+    {
+     "term": "lizard",
+     "zh": "蜥蜴",
+     "sprite": "imp"
+    },
+    {
+     "term": "struck",
+     "zh": "打,打击 (strike-struck)",
+     "sprite": "imp"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "shove",
+    "zh": "推,撞"
+   },
+   {
+    "term": "upward",
+    "zh": "向上,上升"
+   },
+   {
+    "term": "splash",
+    "zh": "溅,泼,激起水花"
+   },
+   {
+    "term": "breathe",
+    "zh": "呼吸"
+   }
+  ],
+  "taunts": [
+   "shawujing.1",
+   "shawujing.2",
+   "shawujing.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=54",
+ "npcDialogue": {
+  "intro": {
+   "id": "ep54-map-intro",
+   "lines": [
+    {
+     "id": "ep54-map-intro-1",
+     "sourceNodeId": "n001",
+     "speaker": "narrator",
+     "textEn": "Wukong stared at the river.",
+     "textZh": "猿猴孙悟空凝视着河流。",
+     "audioRef": "sent_en:Wukong stared at the river.",
+     "audioStart": 11.0,
+     "audioEnd": 15.809
+    },
+    {
+     "id": "ep54-map-intro-2",
+     "sourceNodeId": "n002",
+     "speaker": "narrator",
+     "textEn": "\"I should have stopped Master from getting in that canoe. But whenever I warn him about someone, he doesn't believe me.\"",
+     "textZh": "\"我本该阻止师父登上那艘独木舟的,但每当我提醒他有陌生人时,他都不相信我。\"",
+     "audioRef": "sent_en:\"I should have stopped Master from getting in that canoe. But whenever I warn him about someone, he doesn't believe me.\"",
+     "audioStart": 15.81,
+     "audioEnd": 23.86
+    }
+   ]
+  },
+  "quiz": {
+   "id": "ep54-map-quiz",
+   "lines": [
+    {
+     "id": "ep54-map-quiz-1",
+     "sourceNodeId": "n016",
+     "speaker": "narrator",
+     "textEn": "Wujing struck at the lizard with his spear.",
+     "textZh": "无界挥动长矛,向蜥蜴发起攻击。",
+     "audioRef": "sent_en:Wujing struck at the lizard with his spear.",
+     "audioStart": 81.239,
+     "audioEnd": 84.406
+    }
+   ],
+   "question": {
+    "id": "ep054-official-quiz-001",
+    "textEn": "which is true?",
+    "textZh": "哪一个是真的？"
+   },
+   "word": {
+    "term": "whenever",
+    "zh": "每当,无论什么时候",
+    "ipa": ""
+   },
+   "options": [
+    {
+     "id": "a",
+     "textEn": "the travelers walked across the riverbed.",
+     "textZh": "旅行者走过了河床。",
+     "correct": true,
+     "feedback": "对了。旅行者走过了河床。"
+    },
+    {
+     "id": "b",
+     "textEn": "wukong fought the black river god.",
+     "textZh": "悟空与黑水河神战斗。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    },
+    {
+     "id": "c",
+     "textEn": "a dragon kidnapped the tang monk.",
+     "textZh": "一条龙绑架了唐僧。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    }
+   ],
+   "lessonCardId": "ep054-official-quiz-001"
+  }
+ },
+ "map": {
+  "theme": "generic",
+  "coordinateSpace": "world-normalized",
+  "worldTiles": 2,
+  "regions": {
+   "hero": 0,
+   "waves": [
+    0,
+    1
+   ],
+   "npc": {
+    "intro": 0,
+    "quiz": 1
+   },
+   "boss": 3
+  },
+  "walkable": {
+   "space": "world",
+   "x": 0.0,
+   "y": 0.16,
+   "w": 1.0,
+   "h": 0.79,
+   "rects": [
+    {
+     "x": 0.0,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.66,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    }
+   ]
+  },
+  "heroSpawn": {
+   "x": 0.06,
+   "y": 0.31
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.31,
+    "y": 0.23
+   },
+   {
+    "x": 0.38,
+    "y": 0.27
+   },
+   {
+    "x": 0.34,
+    "y": 0.33
+   },
+   {
+    "x": 0.41,
+    "y": 0.24
+   }
+  ],
+  "waveSpawns": [
+   [
+    {
+     "x": 0.31,
+     "y": 0.23
+    },
+    {
+     "x": 0.38,
+     "y": 0.27
+    },
+    {
+     "x": 0.34,
+     "y": 0.33
+    },
+    {
+     "x": 0.41,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.81,
+     "y": 0.23
+    },
+    {
+     "x": 0.88,
+     "y": 0.27
+    },
+    {
+     "x": 0.84,
+     "y": 0.33
+    },
+    {
+     "x": 0.91,
+     "y": 0.24
+    }
+   ]
+  ],
+  "orbSpawns": [
+   [
+    {
+     "x": 0.11,
+     "y": 0.25
+    },
+    {
+     "x": 0.16,
+     "y": 0.31
+    },
+    {
+     "x": 0.12,
+     "y": 0.37
+    },
+    {
+     "x": 0.18,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.61,
+     "y": 0.25
+    },
+    {
+     "x": 0.66,
+     "y": 0.31
+    },
+    {
+     "x": 0.62,
+     "y": 0.37
+    },
+    {
+     "x": 0.68,
+     "y": 0.24
+    }
+   ]
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "shawujing",
+    "nameZh": "沙僧",
+    "x": 0.08,
+    "y": 0.26
+   },
+   {
+    "role": "quiz",
+    "sprite": "shawujing",
+    "nameZh": "沙僧",
+    "x": 0.7,
+    "y": 0.39
+   }
+  ],
+  "bossSpot": {
+   "x": 0.94,
+   "y": 0.85
+  }
+ }
+}

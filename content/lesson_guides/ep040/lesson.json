@@ -1,0 +1,2668 @@
+{
+  "schema_version": 1,
+  "episode": 40,
+  "title": {
+    "en": "The Magic Gourd",
+    "zh": "西游记 第40集"
+  },
+  "sources": [
+    {
+      "kind": "courseware_main_pptx",
+      "file": "G:\\Game\\BookPlay书戏\\data\\西游记课件\\3.3西游记  Journey to the West PPT课件\\040_Journey to the West 40_The Magic Gourd.pptx",
+      "sha256": "7cbbf2f0242a2c459285da0d5926fcb82c4270dc3537a9a10e6c4c63479d8a57",
+      "pages": 20
+    },
+    {
+      "kind": "official_quiz_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+      "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929",
+      "pages": 131
+    },
+    {
+      "kind": "intensive_reader_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\02-西游记精读版台词本\\1、带标注版PDF 108集\\040 魔法净瓶 上.pdf",
+      "sha256": "e4ebae38a461eaff0a99d82b3db3d759c7820247e3394fc9519a602b0f6cd2d0",
+      "pages": 3
+    },
+    {
+      "kind": "intensive_reader_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\02-西游记精读版台词本\\1、带标注版PDF 108集\\040 魔法净瓶 下.pdf",
+      "sha256": "3040ccadf2139be069b5302860a06609fc0d3061825ed43610c47d5d675215db",
+      "pages": 4
+    },
+    {
+      "kind": "courseware_screenshots_pptx",
+      "file": "G:\\Game\\BookPlay书戏\\data\\西游记课件\\西游记-外教课动画截图\\Journey to the West 040  The Magic Gourd_20240114105717.pptx",
+      "sha256": "0c2f867b37d7c9afdf6511a6820b7411fdecac81ee4d3557392f08736ff29d74",
+      "pages": 45
+    }
+  ],
+  "cards": [
+    {
+      "card_id": "ep040-official-quiz-001",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 1,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "which is true?",
+        "zh": "哪一个是真的？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "wukong flew to heaven.",
+            "zh": "悟空飞到了天堂。"
+          },
+          {
+            "id": "b",
+            "en": "wukong turned into liquid.",
+            "zh": "悟空变成了液体。"
+          },
+          {
+            "id": "c",
+            "en": "wukong lifted the mountains.",
+            "zh": "悟空搬起了大山。"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n014",
+            "quote": "\"Take this magic gourd to the monkey. Say his name, and he will be sucked into the gourd. After an hour he will turn into liquid.\""
+          },
+          {
+            "node_id": "n019",
+            "quote": "He was about to push again when the mountains rose into the air."
+          },
+          {
+            "node_id": "n053",
+            "quote": "He flew fast up to Heaven."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 49,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep040-official-quiz-002",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 2,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "who freed wukong from the mountains?",
+        "zh": "谁从山里释放了悟空？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "a spirit",
+            "zh": "一个精神"
+          },
+          {
+            "id": "b",
+            "en": "a demon",
+            "zh": "一个恶魔"
+          },
+          {
+            "id": "c",
+            "en": "a guard",
+            "zh": "一名警卫"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n021",
+            "quote": "A spirit stood nearby."
+          },
+          {
+            "node_id": "n023",
+            "quote": "The spirit bowed and then vanished with the mountains."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 49,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep040-official-quiz-003",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 3,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "what did golden horn give to a demon?",
+        "zh": "金角给了恶魔什么？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "a gourd",
+            "zh": "葫芦"
+          },
+          {
+            "id": "b",
+            "en": "a monkey",
+            "zh": "一只猴子"
+          },
+          {
+            "id": "c",
+            "en": "a gate",
+            "zh": "一扇门"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n013",
+            "quote": "He handed a gourd to one of the demons."
+          },
+          {
+            "node_id": "n014",
+            "quote": "\"Take this magic gourd to the monkey. Say his name, and he will be sucked into the gourd. After an hour he will turn into liquid.\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 49,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep040-official-quiz-004",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 4,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "what did wukong say his gourd could do?",
+        "zh": "悟空说他的葫芦能做什么？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "hold all of heaven",
+            "zh": "掌握整个天堂"
+          },
+          {
+            "id": "b",
+            "en": "fight off demons",
+            "zh": "击退恶魔"
+          },
+          {
+            "id": "c",
+            "en": "turn into liquid",
+            "zh": "变成液体"
+          }
+        ],
+        "answer": "c",
+        "answer_evidence": [
+          {
+            "node_id": "n014",
+            "quote": "\"Take this magic gourd to the monkey. Say his name, and he will be sucked into the gourd. After an hour he will turn into liquid.\""
+          },
+          {
+            "node_id": "n040",
+            "quote": "\"This gourd is magical. It can hold a demon or a spirit. I just have to say 'Sun Wukong,' and he'll be sucked into it. After an hour he'll turn into liquid.\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 49,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep040-official-quiz-005",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 5,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "what did wukong not ask the guard to do?",
+        "zh": "悟空没有叫守卫做什么？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "say his name",
+            "zh": "说出他的名字"
+          },
+          {
+            "id": "b",
+            "en": "close the gate",
+            "zh": "关上门"
+          },
+          {
+            "id": "c",
+            "en": "dim the stars",
+            "zh": "使星星黯淡"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n055",
+            "quote": "\"I'll ask the guard to close the gate and dim the stars. Then it will look like Heaven's gone.\""
+          },
+          {
+            "node_id": "n058",
+            "quote": "\"When I say 'Heaven,' close the gate and dim the stars.\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 49,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep040-vocab-001",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 101,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "enter",
+        "zh": "v.进来,进去,成为......的一员, 参加,输入"
+      },
+      "payload": {
+        "term": "enter",
+        "ipa": "ˈentə(r)",
+        "pos": "v.",
+        "def": "v.进来,进去,成为......的一员, 参加,输入",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "040 魔法净瓶 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "e4ebae38a461eaff0a99d82b3db3d759c7820247e3394fc9519a602b0f6cd2d0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep040-vocab-002",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 102,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "happen",
+        "zh": "vi.发生,出现,碰巧"
+      },
+      "payload": {
+        "term": "happen",
+        "ipa": "ˈhæpən",
+        "pos": "vi.",
+        "def": "vi.发生,出现,碰巧",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "040 魔法净瓶 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "e4ebae38a461eaff0a99d82b3db3d759c7820247e3394fc9519a602b0f6cd2d0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep040-vocab-003",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 103,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "cry",
+        "zh": "叫喊"
+      },
+      "payload": {
+        "term": "cry",
+        "ipa": "kraɪ",
+        "pos": "v.",
+        "def": "v./n.[sing.]哭 [C]叫喊",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "040 魔法净瓶 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "e4ebae38a461eaff0a99d82b3db3d759c7820247e3394fc9519a602b0f6cd2d0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep040-vocab-004",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 104,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "worry",
+        "zh": "令人担忧的事"
+      },
+      "payload": {
+        "term": "worry",
+        "ipa": "ˈwʌri",
+        "pos": "v.",
+        "def": "v./n.[C]担心,担忧 n.[C]令人担忧的事",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "040 魔法净瓶 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "e4ebae38a461eaff0a99d82b3db3d759c7820247e3394fc9519a602b0f6cd2d0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep040-vocab-005",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 105,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "know",
+        "zh": "v.知道,了解"
+      },
+      "payload": {
+        "term": "know",
+        "ipa": "nəʊ",
+        "pos": "v.",
+        "def": "v.知道,了解",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "040 魔法净瓶 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "e4ebae38a461eaff0a99d82b3db3d759c7820247e3394fc9519a602b0f6cd2d0"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "040 魔法净瓶 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "3040ccadf2139be069b5302860a06609fc0d3061825ed43610c47d5d675215db"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep040-vocab-006",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 106,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "another",
+        "zh": "adj./pron.另一,又一"
+      },
+      "payload": {
+        "term": "another",
+        "ipa": "əˈnʌðə(r)",
+        "pos": "adj.",
+        "def": "adj./pron.另一,又一",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "040 魔法净瓶 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "e4ebae38a461eaff0a99d82b3db3d759c7820247e3394fc9519a602b0f6cd2d0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep040-vocab-007",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 107,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "talk",
+        "zh": "n.说话,交谈,演讲 vi.说话,交谈"
+      },
+      "payload": {
+        "term": "talk",
+        "ipa": "tɔːk",
+        "pos": "n.",
+        "def": "n.说话,交谈,演讲 vi.说话,交谈",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "040 魔法净瓶 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "e4ebae38a461eaff0a99d82b3db3d759c7820247e3394fc9519a602b0f6cd2d0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep040-vocab-008",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 108,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "small",
+        "zh": "adj.小的,小号的"
+      },
+      "payload": {
+        "term": "small",
+        "ipa": "smɔː l",
+        "pos": "adj.",
+        "def": "adj.小的,小号的",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "040 魔法净瓶 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "e4ebae38a461eaff0a99d82b3db3d759c7820247e3394fc9519a602b0f6cd2d0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep040-vocab-009",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 109,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "laugh",
+        "zh": "v.笑,发笑 n.笑声"
+      },
+      "payload": {
+        "term": "laugh",
+        "ipa": "lɑːf",
+        "pos": "v.",
+        "def": "v.笑,发笑 n.笑声",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "040 魔法净瓶 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "e4ebae38a461eaff0a99d82b3db3d759c7820247e3394fc9519a602b0f6cd2d0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep040-vocab-010",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 110,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "mountain",
+        "zh": "高山"
+      },
+      "payload": {
+        "term": "mountain",
+        "ipa": "ˈmaʊntən",
+        "pos": "n.",
+        "def": "n.[C]高山",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "040 魔法净瓶 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "e4ebae38a461eaff0a99d82b3db3d759c7820247e3394fc9519a602b0f6cd2d0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep040-vocab-011",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 111,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "celebrate",
+        "zh": "v.庆祝,庆贺"
+      },
+      "payload": {
+        "term": "celebrate",
+        "ipa": "ˈselɪbreɪt",
+        "pos": "v.",
+        "def": "v.庆祝,庆贺",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "040 魔法净瓶 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "e4ebae38a461eaff0a99d82b3db3d759c7820247e3394fc9519a602b0f6cd2d0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep040-vocab-012",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 112,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "magic",
+        "zh": "魔术;魔法,魔力,魅力"
+      },
+      "payload": {
+        "term": "magic",
+        "ipa": "ˈmædʒɪk",
+        "pos": "adj.",
+        "def": "adj.有魔力的,有神奇力量的 n.[U]魔术;魔法,魔力,魅力",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "040 魔法净瓶 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "e4ebae38a461eaff0a99d82b3db3d759c7820247e3394fc9519a602b0f6cd2d0"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "040 魔法净瓶 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "3040ccadf2139be069b5302860a06609fc0d3061825ed43610c47d5d675215db"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep040-vocab-013",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 113,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "monkey",
+        "zh": "猴子"
+      },
+      "payload": {
+        "term": "monkey",
+        "ipa": "ˈmʌŋki",
+        "pos": "n.",
+        "def": "n.[C]猴子",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "040 魔法净瓶 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "e4ebae38a461eaff0a99d82b3db3d759c7820247e3394fc9519a602b0f6cd2d0"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "040 魔法净瓶 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "3040ccadf2139be069b5302860a06609fc0d3061825ed43610c47d5d675215db"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep040-vocab-014",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 114,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "name",
+        "zh": "名字,名称 vt.命名,给......取名"
+      },
+      "payload": {
+        "term": "name",
+        "ipa": "neɪm",
+        "pos": "n.",
+        "def": "n.[C]名字,名称 vt.命名,给......取名",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "040 魔法净瓶 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "e4ebae38a461eaff0a99d82b3db3d759c7820247e3394fc9519a602b0f6cd2d0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep040-vocab-015",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 115,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "hour",
+        "zh": "小时"
+      },
+      "payload": {
+        "term": "hour",
+        "ipa": "ˈaʊə(r)",
+        "pos": "n.",
+        "def": "n.[C]小时",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "040 魔法净瓶 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "e4ebae38a461eaff0a99d82b3db3d759c7820247e3394fc9519a602b0f6cd2d0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep040-vocab-016",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 116,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "master",
+        "zh": "n.大师,能手,主人,硕士 vt.掌握 adj.熟练的"
+      },
+      "payload": {
+        "term": "master",
+        "ipa": "ˈmɑː stə",
+        "pos": "n.",
+        "def": "n.大师,能手,主人,硕士 vt.掌握 adj.熟练的",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          1,
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "040 魔法净瓶 上.pdf",
+          "half": "up",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "e4ebae38a461eaff0a99d82b3db3d759c7820247e3394fc9519a602b0f6cd2d0"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "040 魔法净瓶 下.pdf",
+          "half": "down",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "3040ccadf2139be069b5302860a06609fc0d3061825ed43610c47d5d675215db"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep040-vocab-017",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 117,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "push",
+        "zh": "推"
+      },
+      "payload": {
+        "term": "push",
+        "ipa": "pʊʃ",
+        "pos": "v.",
+        "def": "v.鞭策,督促,推动 n.[C]推",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "040 魔法净瓶 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "e4ebae38a461eaff0a99d82b3db3d759c7820247e3394fc9519a602b0f6cd2d0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep040-vocab-018",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 118,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "hard",
+        "zh": "adj.困难的,坚硬的,苛刻的 adv.努力地,猛烈地,费力地"
+      },
+      "payload": {
+        "term": "hard",
+        "ipa": "hɑː(r)d",
+        "pos": "adj.",
+        "def": "adj.困难的,坚硬的,苛刻的 adv.努力地,猛烈地,费力地",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "040 魔法净瓶 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "e4ebae38a461eaff0a99d82b3db3d759c7820247e3394fc9519a602b0f6cd2d0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep040-vocab-019",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 119,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "can",
+        "zh": "罐"
+      },
+      "payload": {
+        "term": "can",
+        "ipa": "kæn",
+        "pos": "",
+        "def": "modal v.能,可能 n.[C]罐",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "040 魔法净瓶 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "e4ebae38a461eaff0a99d82b3db3d759c7820247e3394fc9519a602b0f6cd2d0"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "040 魔法净瓶 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "3040ccadf2139be069b5302860a06609fc0d3061825ed43610c47d5d675215db"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep040-vocab-020",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 120,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "heavy",
+        "zh": "adj.重的,大量的,严重的"
+      },
+      "payload": {
+        "term": "heavy",
+        "ipa": "ˈhevi",
+        "pos": "adj.",
+        "def": "adj.重的,大量的,严重的",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "040 魔法净瓶 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "e4ebae38a461eaff0a99d82b3db3d759c7820247e3394fc9519a602b0f6cd2d0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep040-vocab-021",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 121,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "ever",
+        "zh": "adv.在任何时候,从来,曾经"
+      },
+      "payload": {
+        "term": "ever",
+        "ipa": "ˈevə(r)",
+        "pos": "adv.",
+        "def": "adv.在任何时候,从来,曾经",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "040 魔法净瓶 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "e4ebae38a461eaff0a99d82b3db3d759c7820247e3394fc9519a602b0f6cd2d0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep040-vocab-022",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 122,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "rise",
+        "zh": "升起,增加,上升 vi.起床"
+      },
+      "payload": {
+        "term": "rise",
+        "ipa": "raɪz",
+        "pos": "vi.",
+        "def": "vi./n.[C]升起,增加,上升 vi.起床",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "040 魔法净瓶 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "e4ebae38a461eaff0a99d82b3db3d759c7820247e3394fc9519a602b0f6cd2d0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep040-vocab-023",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 123,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "air",
+        "zh": "空气,天空"
+      },
+      "payload": {
+        "term": "air",
+        "ipa": "eə",
+        "pos": "n.",
+        "def": "n.[U]空气,天空",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "040 魔法净瓶 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "e4ebae38a461eaff0a99d82b3db3d759c7820247e3394fc9519a602b0f6cd2d0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep040-vocab-024",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 124,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "jump",
+        "zh": "跳,跃(指运动)"
+      },
+      "payload": {
+        "term": "jump",
+        "ipa": "dʒʌmp",
+        "pos": "v.",
+        "def": "v.跳,跃 n.[C]跳,跃(指运动)",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "040 魔法净瓶 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "e4ebae38a461eaff0a99d82b3db3d759c7820247e3394fc9519a602b0f6cd2d0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep040-vocab-025",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 125,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "foot",
+        "zh": "脚,足,英尺"
+      },
+      "payload": {
+        "term": "foot",
+        "ipa": "fʊt",
+        "pos": "n.",
+        "def": "n.[C]脚,足,英尺",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "040 魔法净瓶 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "e4ebae38a461eaff0a99d82b3db3d759c7820247e3394fc9519a602b0f6cd2d0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep040-vocab-026",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 126,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "look",
+        "zh": "看,注视,外表,表情"
+      },
+      "payload": {
+        "term": "look",
+        "ipa": "lʊk",
+        "pos": "vi.",
+        "def": "vi.看 v.-link.看上去 n.[C]看,注视,外表,表情",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          1,
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "040 魔法净瓶 上.pdf",
+          "half": "up",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "e4ebae38a461eaff0a99d82b3db3d759c7820247e3394fc9519a602b0f6cd2d0"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "040 魔法净瓶 下.pdf",
+          "half": "down",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "3040ccadf2139be069b5302860a06609fc0d3061825ed43610c47d5d675215db"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep040-vocab-027",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 127,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "around",
+        "zh": "adv.在周围,大约,四处,掉头 prep.在......周围,到处"
+      },
+      "payload": {
+        "term": "around",
+        "ipa": "əˈraʊnd",
+        "pos": "adv.",
+        "def": "adv.在周围,大约,四处,掉头 prep.在......周围,到处",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "040 魔法净瓶 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "e4ebae38a461eaff0a99d82b3db3d759c7820247e3394fc9519a602b0f6cd2d0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep040-vocab-028",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 128,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "spirit",
+        "zh": "情绪"
+      },
+      "payload": {
+        "term": "spirit",
+        "ipa": "ˈspɪrɪt",
+        "pos": "n.",
+        "def": "n.[U]勇气,意志,实质 [C]灵魂,鬼魂,幽灵 [C,U]精神 [pl.]情绪",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          1,
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "040 魔法净瓶 上.pdf",
+          "half": "up",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "e4ebae38a461eaff0a99d82b3db3d759c7820247e3394fc9519a602b0f6cd2d0"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "040 魔法净瓶 下.pdf",
+          "half": "down",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "3040ccadf2139be069b5302860a06609fc0d3061825ed43610c47d5d675215db"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep040-vocab-029",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 129,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "stand",
+        "zh": "v.忍受,站立"
+      },
+      "payload": {
+        "term": "stand",
+        "ipa": "stænd",
+        "pos": "v.",
+        "def": "v.忍受,站立",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "040 魔法净瓶 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "e4ebae38a461eaff0a99d82b3db3d759c7820247e3394fc9519a602b0f6cd2d0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep040-vocab-030",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 130,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "luck",
+        "zh": "幸运,运气"
+      },
+      "payload": {
+        "term": "luck",
+        "ipa": "lʌk",
+        "pos": "n.",
+        "def": "n.[U]幸运,运气",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "040 魔法净瓶 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "e4ebae38a461eaff0a99d82b3db3d759c7820247e3394fc9519a602b0f6cd2d0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep040-vocab-031",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 131,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "arrive",
+        "zh": "到达"
+      },
+      "payload": {
+        "term": "arrive",
+        "ipa": "əˈraɪv",
+        "pos": "",
+        "def": "到达",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ],
+        "gloss": "到达"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "040 魔法净瓶 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "e4ebae38a461eaff0a99d82b3db3d759c7820247e3394fc9519a602b0f6cd2d0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep040-vocab-032",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 132,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "wonder",
+        "zh": "惊讶"
+      },
+      "payload": {
+        "term": "wonder",
+        "ipa": "ˈwʌndə(r)",
+        "pos": "v.",
+        "def": "v.想知道,琢磨;非常惊讶 n.[C]奇迹,奇观 [U]惊讶",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "040 魔法净瓶 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "e4ebae38a461eaff0a99d82b3db3d759c7820247e3394fc9519a602b0f6cd2d0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep040-vocab-033",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 133,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "duck",
+        "zh": "鸭肉"
+      },
+      "payload": {
+        "term": "duck",
+        "ipa": "dʌk",
+        "pos": "n.",
+        "def": "n.[C]鸭[U]鸭肉",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "040 魔法净瓶 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "3040ccadf2139be069b5302860a06609fc0d3061825ed43610c47d5d675215db"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep040-vocab-034",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 134,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "behind",
+        "zh": "prep.在......的后面 adv.在......的后面,留在原地"
+      },
+      "payload": {
+        "term": "behind",
+        "ipa": "bɪˈhaɪnd",
+        "pos": "prep.",
+        "def": "prep.在......的后面 adv.在......的后面,留在原地",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "040 魔法净瓶 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "3040ccadf2139be069b5302860a06609fc0d3061825ed43610c47d5d675215db"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep040-vocab-035",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 135,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "think",
+        "zh": "v.认为,想。思考"
+      },
+      "payload": {
+        "term": "think",
+        "ipa": "θɪŋk",
+        "pos": "v.",
+        "def": "v.认为,想。思考",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "040 魔法净瓶 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "3040ccadf2139be069b5302860a06609fc0d3061825ed43610c47d5d675215db"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep040-vocab-036",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 136,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "call",
+        "zh": "电话,叫声圈国"
+      },
+      "payload": {
+        "term": "call",
+        "ipa": "kɔː l",
+        "pos": "v.",
+        "def": "v.给......打电话,把......叫作,呼 喊 n.[C]电话,叫声圈国",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "040 魔法净瓶 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "3040ccadf2139be069b5302860a06609fc0d3061825ed43610c47d5d675215db"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep040-vocab-037",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 137,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "catch",
+        "zh": "接(球 等)"
+      },
+      "payload": {
+        "term": "catch",
+        "ipa": "kætʃ",
+        "pos": "v.",
+        "def": "v.及时赶上,接住,抓住,燃烧, 患病 n.[U]传球接球游戏[C]接(球 等)",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "040 魔法净瓶 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "3040ccadf2139be069b5302860a06609fc0d3061825ed43610c47d5d675215db"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep040-vocab-038",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 138,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "real",
+        "zh": "adj.真正的,真实的"
+      },
+      "payload": {
+        "term": "real",
+        "ipa": "rɪəl",
+        "pos": "adj.",
+        "def": "adj.真正的,真实的",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "040 魔法净瓶 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "3040ccadf2139be069b5302860a06609fc0d3061825ed43610c47d5d675215db"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep040-vocab-039",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 139,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "quick",
+        "zh": "adj.快的,迅速的,敏捷的"
+      },
+      "payload": {
+        "term": "quick",
+        "ipa": "kwɪk",
+        "pos": "adj.",
+        "def": "adj.快的,迅速的,敏捷的",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "040 魔法净瓶 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "3040ccadf2139be069b5302860a06609fc0d3061825ed43610c47d5d675215db"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep040-vocab-040",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 140,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "interest",
+        "zh": "趣味;利息 vt.使感兴趣,使关注"
+      },
+      "payload": {
+        "term": "interest",
+        "ipa": "ˈɪntrəst",
+        "pos": "n.",
+        "def": "n.兴趣,关注[U]趣味;利息 vt.使感兴趣,使关注",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "040 魔法净瓶 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "3040ccadf2139be069b5302860a06609fc0d3061825ed43610c47d5d675215db"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep040-vocab-041",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 141,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "wish",
+        "zh": "祝愿 v.希望,祝愿"
+      },
+      "payload": {
+        "term": "wish",
+        "ipa": "wɪʃ",
+        "pos": "n.",
+        "def": "n.[C]愿望,希望[pl.]祝愿 v.希望,祝愿",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "040 魔法净瓶 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "3040ccadf2139be069b5302860a06609fc0d3061825ed43610c47d5d675215db"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep040-vocab-042",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 142,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "will",
+        "zh": "意志"
+      },
+      "payload": {
+        "term": "will",
+        "ipa": "wɪl",
+        "pos": "",
+        "def": "modal v.将要 n.[C,U]意志",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "040 魔法净瓶 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "3040ccadf2139be069b5302860a06609fc0d3061825ed43610c47d5d675215db"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep040-vocab-043",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 143,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "trade",
+        "zh": "贸易 v.做买卖,从事贸易"
+      },
+      "payload": {
+        "term": "trade",
+        "ipa": "treɪd",
+        "pos": "n.",
+        "def": "n.[U]贸易 v.做买卖,从事贸易",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "040 魔法净瓶 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "3040ccadf2139be069b5302860a06609fc0d3061825ed43610c47d5d675215db"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep040-vocab-044",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 144,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "truth",
+        "zh": "真理"
+      },
+      "payload": {
+        "term": "truth",
+        "ipa": "truːθ",
+        "pos": "n.",
+        "def": "n.[sing.]实情,事实 [C]真理",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "040 魔法净瓶 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "3040ccadf2139be069b5302860a06609fc0d3061825ed43610c47d5d675215db"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep040-vocab-045",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 145,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "hold",
+        "zh": "抓"
+      },
+      "payload": {
+        "term": "hold",
+        "ipa": "həʊld",
+        "pos": "v.",
+        "def": "v.拥有,抓住,保持,举行,容纳 n.[C,U]抓",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "040 魔法净瓶 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "3040ccadf2139be069b5302860a06609fc0d3061825ed43610c47d5d675215db"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep040-vocab-046",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 146,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "spell",
+        "zh": "咒语"
+      },
+      "payload": {
+        "term": "spell",
+        "ipa": "spel",
+        "pos": "v.",
+        "def": "v.用字母拼,拼写 n.[C]咒语",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "040 魔法净瓶 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "3040ccadf2139be069b5302860a06609fc0d3061825ed43610c47d5d675215db"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep040-vocab-047",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 147,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "guard",
+        "zh": "警卫,看守;防护装置 vt.守卫,保卫"
+      },
+      "payload": {
+        "term": "guard",
+        "ipa": "ɡɑː (r)d",
+        "pos": "n.",
+        "def": "n.[C]警卫,看守;防护装置 vt.守卫,保卫",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "040 魔法净瓶 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "3040ccadf2139be069b5302860a06609fc0d3061825ed43610c47d5d675215db"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep040-vocab-048",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 148,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "star",
+        "zh": "明星,星星"
+      },
+      "payload": {
+        "term": "star",
+        "ipa": "stɑː(r)",
+        "pos": "n.",
+        "def": "n.[C]明星,星星",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "040 魔法净瓶 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "3040ccadf2139be069b5302860a06609fc0d3061825ed43610c47d5d675215db"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep040-vocab-049",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 149,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "greet",
+        "zh": "vt.和......打招呼,迎接"
+      },
+      "payload": {
+        "term": "greet",
+        "ipa": "ɡriː t",
+        "pos": "vt.",
+        "def": "vt.和......打招呼,迎接",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "040 魔法净瓶 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "3040ccadf2139be069b5302860a06609fc0d3061825ed43610c47d5d675215db"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep040-vocab-050",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 150,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "south",
+        "zh": "adj.南方的 n.南部,南,南方 adv.向南,朝南"
+      },
+      "payload": {
+        "term": "south",
+        "ipa": "saʊθ",
+        "pos": "adj.",
+        "def": "adj.南方的 n.南部,南,南方 adv.向南,朝南",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "040 魔法净瓶 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "3040ccadf2139be069b5302860a06609fc0d3061825ed43610c47d5d675215db"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep040-vocab-051",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 151,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "gate",
+        "zh": "大门"
+      },
+      "payload": {
+        "term": "gate",
+        "ipa": "ɡeɪt",
+        "pos": "n.",
+        "def": "n.[C]大门",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "040 魔法净瓶 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "3040ccadf2139be069b5302860a06609fc0d3061825ed43610c47d5d675215db"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep040-vocab-052",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 152,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "do",
+        "zh": "做,干"
+      },
+      "payload": {
+        "term": "do",
+        "ipa": "duː",
+        "pos": "v.",
+        "def": "做,干",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ],
+        "gloss": "做,干"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "040 魔法净瓶 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "3040ccadf2139be069b5302860a06609fc0d3061825ed43610c47d5d675215db"
+        }
+      ],
+      "review_status": "machine_verified"
+    }
+  ],
+  "teacher_guide": null,
+  "review": {
+    "status": "draft",
+    "reviewed_at": null,
+    "card_stats": {
+      "total": 57,
+      "sentence_choice": 5,
+      "word_review": 52,
+      "machine_verified": 53,
+      "assistant_reviewed": 4,
+      "verified": 57,
+      "needs_review": 0
+    }
+  },
+  "generated_at": "2026-08-31T04:49:40.354531+00:00"
+}

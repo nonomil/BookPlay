@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "id": "white-dragon-horse",
+  "name": "小白龙",
+  "note": "龙蛋与幼龙阶段是面向儿童的成长想象；第 17 集起衔接《西游记》正篇角色。",
+  "stages": [
+    { "id": "mysterious-egg", "name": "神秘龙蛋", "form": "egg", "art": "assets/companions/white-dragon/stages/mysterious-egg.png", "condition": { "type": "initial" }, "hint": "西海的云纹龙蛋正在等待故事开门。" },
+    { "id": "awakening-egg", "name": "龙蛋苏醒", "form": "egg", "art": "assets/companions/white-dragon/stages/awakening-egg.png", "condition": { "type": "episode", "episode": 1 }, "hint": "蛋壳里传来了轻轻的回应。" },
+    { "id": "west-sea-hatchling", "name": "西海小龙", "form": "dragon", "art": "assets/companions/white-dragon/stages/west-sea-hatchling.png", "condition": { "type": "collection", "collection_id": "c01" }, "hint": "想象中的幼年小白龙破壳啦。" },
+    { "id": "white-dragon-revealed", "name": "小白龙现身", "form": "dragon", "art": "assets/companions/white-dragon/stages/white-dragon-revealed.png", "condition": { "type": "episode", "episode": 17 }, "hint": "河里的龙正式与取经人相遇。" },
+    { "id": "white-dragon-horse", "name": "白龙马", "form": "horse", "art": "assets/companions/white-dragon/stages/white-dragon-horse.png", "condition": { "type": "episode", "episode": 18 }, "hint": "小白龙化作白马，加入取经队伍。" },
+    { "id": "cloud-riding-dragon", "name": "腾云白龙", "form": "dragon-horse", "art": "assets/companions/white-dragon/stages/cloud-riding-dragon.png", "condition": { "type": "collection", "collection_id": "c08" }, "hint": "白马与龙形可以在云间切换。" },
+    { "id": "eightfold-heavenly-dragon", "name": "八部天龙", "form": "celestial-dragon", "art": "assets/companions/white-dragon/stages/eightfold-heavenly-dragon.png", "condition": { "type": "collection", "collection_id": "c13" }, "hint": "一路护送功成，受封八部天龙。" }
+  ],
+  "care_actions": [
+    { "id": "feed", "label": "喂灵果", "response": "苹果真甜！apple，苹果。" },
+    { "id": "groom", "label": "洗澡梳洗", "response": "亮晶晶的鳞片和鬃毛都整理好啦。" },
+    { "id": "play", "label": "玩云球", "response": "小白龙把云球顶回来了！" },
+    { "id": "rest", "label": "一起休息", "response": "歇一会儿，我们再继续向西。" }
+  ],
+  "cosmetics": [
+    { "id": "cloud-reins", "name": "云纹缰绳", "days": 7 },
+    { "id": "journey-bell", "name": "同行铃铛", "days": 15 },
+    { "id": "cloud-saddlecloth", "name": "流云鞍毯", "days": 30 }
+  ]
+}

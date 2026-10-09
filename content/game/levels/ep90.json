@@ -1,0 +1,584 @@
+{
+ "schema_version": 1,
+ "ep": 90,
+ "title": {
+  "en": "The Demons' Plan",
+  "zh": "西游记 第90集"
+ },
+ "collection": "c11",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "imp",
+   "nameZh": "小妖",
+   "mode": "sparring",
+   "sprite": "imp"
+  },
+  "minors": [
+   {
+    "id": "imp",
+    "nameZh": "小妖",
+    "sprite": "imp"
+   }
+  ]
+ },
+ "background": {
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep90/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "The man on the road continued to wave a warning.",
+   "textZh": "那名男子在道路上继续挥手示意警告。",
+   "illustration": "assets/adv_frames/ep90/f1.jpg",
+   "sourceNodeId": "n001",
+   "audioRef": "sent_en:The man on the road continued to wave a warning."
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "Trembling with fear, the Tang Monk fell from his horse.",
+   "textZh": "唐僧因恐惧而浑身颤抖,随即从马背上跌落。",
+   "illustration": "assets/adv_frames/ep90/f2.jpg",
+   "sourceNodeId": "n002",
+   "audioRef": "sent_en:Trembling with fear, the Tang Monk fell from his horse."
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "warning",
+   "zh": "1. 警告,告诫,(2. 警告的,引以为戒的)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep90/f1.jpg"
+  },
+  {
+   "term": "be right",
+   "zh": "很快回来",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep90/f0.jpg"
+  },
+  {
+   "term": "sort",
+   "zh": "种类",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep90/f1.jpg"
+  },
+  {
+   "term": "up",
+   "zh": "前方,前面",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep90/f1.jpg"
+  },
+  {
+   "term": "ordinary",
+   "zh": "平常的,普通的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep90/f3.jpg"
+  },
+  {
+   "term": "planet",
+   "zh": "行星(围着太阳转的星星)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep90/f2.jpg"
+  },
+  {
+   "term": "disguise",
+   "zh": "变装,伪装",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep90/f2.jpg"
+  },
+  {
+   "term": "raptor",
+   "zh": "猛禽(类)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep90/f1.jpg"
+  },
+  {
+   "term": "silly",
+   "zh": "1. 愚蠢的,糊涂的,(2. 可笑的,荒唐的)",
+   "ipa": "ˈsɪli",
+   "illustration": "assets/adv_frames/ep90/f0.jpg"
+  },
+  {
+   "term": "command",
+   "zh": "命令",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep90/f2.jpg"
+  },
+  {
+   "term": "army",
+   "zh": "军队,陆军",
+   "ipa": "ˈɑː(r)mi",
+   "illustration": "assets/adv_frames/ep90/f0.jpg"
+  },
+  {
+   "term": "chin",
+   "zh": "下巴",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep90/f3.jpg"
+  }
+ ],
+ "wordPool": [
+  {
+   "term": "warning",
+   "zh": "1. 警告,告诫,(2. 警告的,引以为戒的)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep90/f1.jpg"
+  },
+  {
+   "term": "be right",
+   "zh": "很快回来",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep90/f0.jpg"
+  },
+  {
+   "term": "sort",
+   "zh": "种类",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep90/f1.jpg"
+  },
+  {
+   "term": "up",
+   "zh": "前方,前面",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep90/f1.jpg"
+  },
+  {
+   "term": "ordinary",
+   "zh": "平常的,普通的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep90/f3.jpg"
+  },
+  {
+   "term": "planet",
+   "zh": "行星(围着太阳转的星星)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep90/f2.jpg"
+  },
+  {
+   "term": "disguise",
+   "zh": "变装,伪装",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep90/f2.jpg"
+  },
+  {
+   "term": "raptor",
+   "zh": "猛禽(类)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep90/f1.jpg"
+  },
+  {
+   "term": "silly",
+   "zh": "1. 愚蠢的,糊涂的,(2. 可笑的,荒唐的)",
+   "ipa": "ˈsɪli",
+   "illustration": "assets/adv_frames/ep90/f0.jpg"
+  },
+  {
+   "term": "command",
+   "zh": "命令",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep90/f2.jpg"
+  },
+  {
+   "term": "army",
+   "zh": "军队,陆军",
+   "ipa": "ˈɑː(r)mi",
+   "illustration": "assets/adv_frames/ep90/f0.jpg"
+  },
+  {
+   "term": "chin",
+   "zh": "下巴",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep90/f3.jpg"
+  },
+  {
+   "term": "Very well.",
+   "zh": "很好",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep90/f1.jpg"
+  },
+  {
+   "term": "jaw",
+   "zh": "下巴,(动物的)嘴",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep90/f0.jpg"
+  },
+  {
+   "term": "forgotten",
+   "zh": "忘记 forget-forgot-forgotten",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep90/f2.jpg"
+  },
+  {
+   "term": "frown",
+   "zh": "皱眉",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep90/f3.jpg"
+  },
+  {
+   "term": "harm",
+   "zh": "损伤,损害",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep90/f1.jpg"
+  },
+  {
+   "term": "sideways",
+   "zh": "斜向一边的,向旁边的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep90/f2.jpg"
+  },
+  {
+   "term": "glance",
+   "zh": "粗略地一瞥,扫视",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep90/f2.jpg"
+  },
+  {
+   "term": "check out",
+   "zh": "确认,调查",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep90/f2.jpg"
+  },
+  {
+   "term": "military",
+   "zh": "1. 军队,(2. 军队的)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep90/f1.jpg"
+  },
+  {
+   "term": "officer",
+   "zh": "1. 军官,(2. 政府官员,公务员)",
+   "ipa": "ˈɒfɪsə(r)",
+   "illustration": "assets/adv_frames/ep90/f1.jpg"
+  },
+  {
+   "term": "spy",
+   "zh": "1. 暗中监视,侦察,(2. 间谍,密探)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep90/f2.jpg"
+  },
+  {
+   "term": "general",
+   "zh": "将军",
+   "ipa": "ˈdʒenrəl",
+   "illustration": "assets/adv_frames/ep90/f3.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "warning",
+     "zh": "1. 警告,告诫,(2. 警告的,引以为戒的)",
+     "sprite": "imp"
+    },
+    {
+     "term": "be right",
+     "zh": "很快回来",
+     "sprite": "imp"
+    },
+    {
+     "term": "sort",
+     "zh": "种类",
+     "sprite": "imp"
+    },
+    {
+     "term": "up",
+     "zh": "前方,前面",
+     "sprite": "imp"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "ordinary",
+     "zh": "平常的,普通的",
+     "sprite": "imp"
+    },
+    {
+     "term": "planet",
+     "zh": "行星(围着太阳转的星星)",
+     "sprite": "imp"
+    },
+    {
+     "term": "disguise",
+     "zh": "变装,伪装",
+     "sprite": "imp"
+    },
+    {
+     "term": "raptor",
+     "zh": "猛禽(类)",
+     "sprite": "imp"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "silly",
+    "zh": "1. 愚蠢的,糊涂的,(2. 可笑的,荒唐的)"
+   },
+   {
+    "term": "command",
+    "zh": "命令"
+   },
+   {
+    "term": "army",
+    "zh": "军队,陆军"
+   },
+   {
+    "term": "chin",
+    "zh": "下巴"
+   }
+  ],
+  "taunts": [
+   "imp.1",
+   "imp.2",
+   "imp.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=90",
+ "npcDialogue": {
+  "intro": {
+   "id": "ep90-map-intro",
+   "lines": [
+    {
+     "id": "ep90-map-intro-1",
+     "sourceNodeId": "n001",
+     "speaker": "narrator",
+     "textEn": "The man on the road continued to wave a warning.",
+     "textZh": "那名男子在道路上继续挥手示意警告。",
+     "audioRef": "sent_en:The man on the road continued to wave a warning.",
+     "audioStart": 10.934,
+     "audioEnd": 15.006
+    },
+    {
+     "id": "ep90-map-intro-2",
+     "sourceNodeId": "n002",
+     "speaker": "narrator",
+     "textEn": "Trembling with fear, the Tang Monk fell from his horse.",
+     "textZh": "唐僧因恐惧而浑身颤抖,随即从马背上跌落。",
+     "audioRef": "sent_en:Trembling with fear, the Tang Monk fell from his horse.",
+     "audioStart": 15.007,
+     "audioEnd": 19.079
+    }
+   ]
+  },
+  "quiz": {
+   "id": "ep90-map-quiz",
+   "lines": [
+    {
+     "id": "ep90-map-quiz-1",
+     "sourceNodeId": "n010",
+     "speaker": "narrator",
+     "textEn": "\"Yes, it's me, the spirit of the planet Venus. I came in disguise to warn you, Wukong. There are three powerful demons on the mountain up ahead. The first is a lion demon. The second is an elephant demon. And the third is a raptor demon.\"",
+     "textZh": "\"没错,就是我——金星之灵。我乔装打扮前来警告你,悟空。前方山上有三只强大的魔怪:第一只是狮子魔,第二只是象魔,第三只则是猛禽魔。\"",
+     "audioRef": "sent_en:\"Yes, it's me, the spirit of the planet Venus. I came in disguise to warn you, Wukong. There are three powerful demons on the mountain up ahead. The first is a lion demon. The second is an elephant demon. And the third is a raptor demon.\"",
+     "audioStart": 49.13,
+     "audioEnd": 69.631
+    }
+   ],
+   "question": {
+    "id": "ep090-official-quiz-001",
+    "textEn": "which is not true?",
+    "textZh": "哪一项是不正确的？"
+   },
+   "word": {
+    "term": "warning",
+    "zh": "1. 警告,告诫,(2. 警告的,引以为戒的)",
+    "ipa": ""
+   },
+   "options": [
+    {
+     "id": "a",
+     "textEn": "the demons were afraid of wujing.",
+     "textZh": "妖怪们害怕悟净。",
+     "correct": true,
+     "feedback": "对了。妖怪们害怕悟净。"
+    },
+    {
+     "id": "b",
+     "textEn": "venus warned wukong about danger ahead.",
+     "textZh": "金星警告悟空前方有危险。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    },
+    {
+     "id": "c",
+     "textEn": "the demons were dressed like military officers.",
+     "textZh": "这些恶魔打扮得像军官一样。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    }
+   ],
+   "lessonCardId": "ep090-official-quiz-001"
+  }
+ },
+ "map": {
+  "theme": "generic",
+  "coordinateSpace": "world-normalized",
+  "worldTiles": 2,
+  "regions": {
+   "hero": 0,
+   "waves": [
+    0,
+    1
+   ],
+   "npc": {
+    "intro": 0,
+    "quiz": 1
+   },
+   "boss": 3
+  },
+  "walkable": {
+   "space": "world",
+   "x": 0.0,
+   "y": 0.16,
+   "w": 1.0,
+   "h": 0.79,
+   "rects": [
+    {
+     "x": 0.0,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.66,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    }
+   ]
+  },
+  "heroSpawn": {
+   "x": 0.06,
+   "y": 0.31
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.31,
+    "y": 0.23
+   },
+   {
+    "x": 0.38,
+    "y": 0.27
+   },
+   {
+    "x": 0.34,
+    "y": 0.33
+   },
+   {
+    "x": 0.41,
+    "y": 0.24
+   }
+  ],
+  "waveSpawns": [
+   [
+    {
+     "x": 0.31,
+     "y": 0.23
+    },
+    {
+     "x": 0.38,
+     "y": 0.27
+    },
+    {
+     "x": 0.34,
+     "y": 0.33
+    },
+    {
+     "x": 0.41,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.81,
+     "y": 0.23
+    },
+    {
+     "x": 0.88,
+     "y": 0.27
+    },
+    {
+     "x": 0.84,
+     "y": 0.33
+    },
+    {
+     "x": 0.91,
+     "y": 0.24
+    }
+   ]
+  ],
+  "orbSpawns": [
+   [
+    {
+     "x": 0.11,
+     "y": 0.25
+    },
+    {
+     "x": 0.16,
+     "y": 0.31
+    },
+    {
+     "x": 0.12,
+     "y": 0.37
+    },
+    {
+     "x": 0.18,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.61,
+     "y": 0.25
+    },
+    {
+     "x": 0.66,
+     "y": 0.31
+    },
+    {
+     "x": 0.62,
+     "y": 0.37
+    },
+    {
+     "x": 0.68,
+     "y": 0.24
+    }
+   ]
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "imp",
+    "nameZh": "小妖",
+    "x": 0.08,
+    "y": 0.26
+   },
+   {
+    "role": "quiz",
+    "sprite": "imp",
+    "nameZh": "小妖",
+    "x": 0.7,
+    "y": 0.39
+   }
+  ],
+  "bossSpot": {
+   "x": 0.94,
+   "y": 0.85
+  }
+ }
+}

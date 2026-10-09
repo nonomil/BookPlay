@@ -1,0 +1,2440 @@
+{
+  "schema_version": 1,
+  "episode": 51,
+  "title": {
+    "en": "Guanyin Becomes Angry",
+    "zh": "西游记 第51集"
+  },
+  "sources": [
+    {
+      "kind": "courseware_main_pptx",
+      "file": "G:\\Game\\BookPlay书戏\\data\\西游记课件\\3.3西游记  Journey to the West PPT课件\\051_Journey to the West 51_Guanyin Becomes Angry.pptx",
+      "sha256": "44c5b72cc349d16850f7bd15d34d11c21c87086e8304cba01b3e0b6b998fbaa5",
+      "pages": 15
+    },
+    {
+      "kind": "official_quiz_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+      "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929",
+      "pages": 131
+    },
+    {
+      "kind": "intensive_reader_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\02-西游记精读版台词本\\1、带标注版PDF 108集\\051 观音菩萨大怒 上.pdf",
+      "sha256": "a40925995dcf934d38bfcf0819b074bd3af20a7c0dafe06022712becc38ac3c9",
+      "pages": 4
+    },
+    {
+      "kind": "intensive_reader_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\02-西游记精读版台词本\\1、带标注版PDF 108集\\051 观音菩萨大怒 下.pdf",
+      "sha256": "0563cc775c6959369e3aef3463fe99af8d19cf48416f08c95bf6777c532556b8",
+      "pages": 4
+    },
+    {
+      "kind": "courseware_screenshots_pptx",
+      "file": "G:\\Game\\BookPlay书戏\\data\\西游记课件\\西游记-外教课动画截图\\Journey to the West 051  Guanyin Becomes Angry_20240114105623.pptx",
+      "sha256": "be434dbd68b6728b6666bbd7f64795dfb054fa01ba8a2b49c0b90dc6188352a0",
+      "pages": 50
+    }
+  ],
+  "cards": [
+    {
+      "card_id": "ep051-official-quiz-001",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 1,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "which is true?",
+        "zh": "哪一个是真的？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "guanyin was angry at red boy.",
+            "zh": "观音生红孩儿的气。"
+          },
+          {
+            "id": "b",
+            "en": "bajie stopped to take a nap.",
+            "zh": "八戒停下来小睡了一会儿。"
+          },
+          {
+            "id": "c",
+            "en": "wujing was trapped in the cave.",
+            "zh": "悟净被困在洞里。"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n014",
+            "quote": "The demon locked Bajie in a room."
+          },
+          {
+            "node_id": "n016",
+            "quote": "Wukong frowned. \"He probably stopped to take a nap. That pig is so lazy.\""
+          },
+          {
+            "node_id": "n027",
+            "quote": "\"Aha!\" thought Wukong. \"Bajie didn't take a nap after all. I must go to the real Guanyin right away.\""
+          },
+          {
+            "node_id": "n033",
+            "quote": "\"The Tang Monk was caught by a demon named Red Boy. The demon makes magic fire that water can't put out. Bajie was on his way here to ask for your help. But the demon made himself look like you and tricked the pig.\""
+          },
+          {
+            "node_id": "n034",
+            "quote": "Guanyin's face burned with anger."
+          },
+          {
+            "node_id": "n035",
+            "quote": "\"How dare that demon make himself look like me!\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 60,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep051-official-quiz-002",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 2,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "whom did red boy capture?",
+        "zh": "红孩儿抓住了谁？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "bajie",
+            "zh": "八戒"
+          },
+          {
+            "id": "b",
+            "en": "wukong",
+            "zh": "悟空"
+          },
+          {
+            "id": "c",
+            "en": "guanyin",
+            "zh": "观音"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n006",
+            "quote": "Bajie and the fake Guanyin flew to Red Boy's cave."
+          },
+          {
+            "node_id": "n008",
+            "quote": "Red Boy returned to his normal appearance and then sneaked up behind Bajie."
+          },
+          {
+            "node_id": "n009",
+            "quote": "He threw a sack over the pig."
+          },
+          {
+            "node_id": "n013",
+            "quote": "\"I'm Red Boy! And now you're trapped!\""
+          },
+          {
+            "node_id": "n014",
+            "quote": "The demon locked Bajie in a room."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 60,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep051-official-quiz-003",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 3,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "why did wukong sneak into red boy's cave?",
+        "zh": "悟空为什么潜入红孩儿的洞穴？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "to check on the tang monk",
+            "zh": "去查看唐僧"
+          },
+          {
+            "id": "b",
+            "en": "to look for guanyin",
+            "zh": "寻找观音"
+          },
+          {
+            "id": "c",
+            "en": "to talk to red boy",
+            "zh": "与红孩儿交谈"
+          }
+        ],
+        "answer": "c",
+        "answer_evidence": [
+          {
+            "node_id": "n008",
+            "quote": "Red Boy returned to his normal appearance and then sneaked up behind Bajie."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 60,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep051-official-quiz-004",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 4,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "what did guanyin throw into the ocean?",
+        "zh": "观音把什么扔进了海里？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "a vase",
+            "zh": "一个花瓶"
+          },
+          {
+            "id": "b",
+            "en": "a shell",
+            "zh": "一个贝壳"
+          },
+          {
+            "id": "c",
+            "en": "a sack",
+            "zh": "一个麻袋"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n037",
+            "quote": "She threw the vase down into the ocean, where it sank beneath the waves."
+          },
+          {
+            "node_id": "n038",
+            "quote": "Wukong gasped. \"That vase was a Buddhist treasure! Why did you throw it away?\""
+          },
+          {
+            "node_id": "n050",
+            "quote": "\"That vase just traveled around the world, through all the oceans and rivers. It now holds an ocean's worth of water—magic water. The water will put out Red Boy's fire.\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 60,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep051-official-quiz-005",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 5,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "how much water was in the vase?",
+        "zh": "花瓶里有多少水？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "an ocean's worth",
+            "zh": "一海洋的量"
+          },
+          {
+            "id": "b",
+            "en": "a river's worth",
+            "zh": "一条河的价值"
+          },
+          {
+            "id": "c",
+            "en": "a lake's worth",
+            "zh": "一湖的价值"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n050",
+            "quote": "\"That vase just traveled around the world, through all the oceans and rivers. It now holds an ocean's worth of water—magic water. The water will put out Red Boy's fire.\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 60,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep051-vocab-001",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 101,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "stop",
+        "zh": "车站,停止 v.停止,阻止,逗留"
+      },
+      "payload": {
+        "term": "stop",
+        "ipa": "stɒp",
+        "pos": "n.",
+        "def": "n.[C]车站,停止 v.停止,阻止,逗留",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "051 观音菩萨大怒 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "a40925995dcf934d38bfcf0819b074bd3af20a7c0dafe06022712becc38ac3c9"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep051-vocab-002",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 102,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "take",
+        "zh": "拿；带走"
+      },
+      "payload": {
+        "term": "take",
+        "ipa": "teɪk",
+        "pos": "v.",
+        "def": "拿；带走",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ],
+        "gloss": "拿；带走"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "051 观音菩萨大怒 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "a40925995dcf934d38bfcf0819b074bd3af20a7c0dafe06022712becc38ac3c9"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep051-vocab-003",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 103,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "lazy",
+        "zh": "adj.懒散的,懒惰的"
+      },
+      "payload": {
+        "term": "lazy",
+        "ipa": "ˈleɪzi",
+        "pos": "adj.",
+        "def": "adj.懒散的,懒惰的",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "051 观音菩萨大怒 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "a40925995dcf934d38bfcf0819b074bd3af20a7c0dafe06022712becc38ac3c9"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep051-vocab-004",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 104,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "nod",
+        "zh": "点头"
+      },
+      "payload": {
+        "term": "nod",
+        "ipa": "nɒd",
+        "pos": "v.",
+        "def": "v.点头 n.[C]点头",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "051 观音菩萨大怒 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "a40925995dcf934d38bfcf0819b074bd3af20a7c0dafe06022712becc38ac3c9"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep051-vocab-005",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 105,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "alive",
+        "zh": "adj.活着,有生气的"
+      },
+      "payload": {
+        "term": "alive",
+        "ipa": "əˈlaɪv",
+        "pos": "adj.",
+        "def": "adj.活着,有生气的",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "051 观音菩萨大怒 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "a40925995dcf934d38bfcf0819b074bd3af20a7c0dafe06022712becc38ac3c9"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep051-vocab-006",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 106,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "monkey",
+        "zh": "猴子"
+      },
+      "payload": {
+        "term": "monkey",
+        "ipa": "ˈmʌŋki",
+        "pos": "n.",
+        "def": "n.[C]猴子",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "051 观音菩萨大怒 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "a40925995dcf934d38bfcf0819b074bd3af20a7c0dafe06022712becc38ac3c9"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "051 观音菩萨大怒 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "0563cc775c6959369e3aef3463fe99af8d19cf48416f08c95bf6777c532556b8"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep051-vocab-007",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 107,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "turn",
+        "zh": "轮流圈国"
+      },
+      "payload": {
+        "term": "turn",
+        "ipa": "tɜː (r)n",
+        "pos": "v.",
+        "def": "v.转向,翻圈v.-link.(使)变成 n.[C]轮流圈国",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          2,
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "051 观音菩萨大怒 上.pdf",
+          "half": "up",
+          "pages": [
+            2,
+            3
+          ],
+          "sha256": "a40925995dcf934d38bfcf0819b074bd3af20a7c0dafe06022712becc38ac3c9"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "051 观音菩萨大怒 下.pdf",
+          "half": "down",
+          "pages": [
+            2,
+            3
+          ],
+          "sha256": "0563cc775c6959369e3aef3463fe99af8d19cf48416f08c95bf6777c532556b8"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep051-vocab-008",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 108,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "himself",
+        "zh": "pron.他自己"
+      },
+      "payload": {
+        "term": "himself",
+        "ipa": "hɪmˈself",
+        "pos": "pron.",
+        "def": "pron.他自己",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "051 观音菩萨大怒 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "a40925995dcf934d38bfcf0819b074bd3af20a7c0dafe06022712becc38ac3c9"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep051-vocab-009",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 109,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "into",
+        "zh": "prep.到......里面,进入,(表示 状态的变化)"
+      },
+      "payload": {
+        "term": "into",
+        "ipa": "ˈɪntuː",
+        "pos": "prep.",
+        "def": "prep.到......里面,进入,(表示 状态的变化)",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "051 观音菩萨大怒 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "a40925995dcf934d38bfcf0819b074bd3af20a7c0dafe06022712becc38ac3c9"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep051-vocab-010",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 110,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "fly",
+        "zh": "苍蝇"
+      },
+      "payload": {
+        "term": "fly",
+        "ipa": "flaɪ",
+        "pos": "v.",
+        "def": "v.飞,驾驶(飞机等);乘飞机, (旗)飘扬 n.[C]苍蝇",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "051 观音菩萨大怒 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "a40925995dcf934d38bfcf0819b074bd3af20a7c0dafe06022712becc38ac3c9"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep051-vocab-011",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 111,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "mountain",
+        "zh": "高山"
+      },
+      "payload": {
+        "term": "mountain",
+        "ipa": "ˈmaʊntən",
+        "pos": "n.",
+        "def": "n.[C]高山",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "051 观音菩萨大怒 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "a40925995dcf934d38bfcf0819b074bd3af20a7c0dafe06022712becc38ac3c9"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "051 观音菩萨大怒 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "0563cc775c6959369e3aef3463fe99af8d19cf48416f08c95bf6777c532556b8"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep051-vocab-012",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 112,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "hear",
+        "zh": "v.听说,听到,听见,接到(信或 电话)"
+      },
+      "payload": {
+        "term": "hear",
+        "ipa": "hɪə",
+        "pos": "v.",
+        "def": "v.听说,听到,听见,接到(信或 电话)",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "051 观音菩萨大怒 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "a40925995dcf934d38bfcf0819b074bd3af20a7c0dafe06022712becc38ac3c9"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep051-vocab-013",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 113,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "cry",
+        "zh": "叫喊"
+      },
+      "payload": {
+        "term": "cry",
+        "ipa": "kraɪ",
+        "pos": "v.",
+        "def": "v./n.[sing.]哭 [C]叫喊",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "051 观音菩萨大怒 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "a40925995dcf934d38bfcf0819b074bd3af20a7c0dafe06022712becc38ac3c9"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep051-vocab-014",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 114,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "think",
+        "zh": "v.认为,想。思考"
+      },
+      "payload": {
+        "term": "think",
+        "ipa": "θɪŋk",
+        "pos": "v.",
+        "def": "v.认为,想。思考",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "051 观音菩萨大怒 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "a40925995dcf934d38bfcf0819b074bd3af20a7c0dafe06022712becc38ac3c9"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep051-vocab-015",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 115,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "live[lɪv] [laɪv]",
+        "zh": "v.居住,生活 adj.活的,生动的,现场直播的"
+      },
+      "payload": {
+        "term": "live[lɪv] [laɪv]",
+        "ipa": "",
+        "pos": "v.",
+        "def": "v.居住,生活 adj.活的,生动的,现场直播的",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "051 观音菩萨大怒 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "a40925995dcf934d38bfcf0819b074bd3af20a7c0dafe06022712becc38ac3c9"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep051-vocab-016",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 116,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "shout",
+        "zh": "呼喊,叫喊"
+      },
+      "payload": {
+        "term": "shout",
+        "ipa": "ʃaʊt",
+        "pos": "v.",
+        "def": "v.呼叫,喊叫 n.[C]呼喊,叫喊",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "051 观音菩萨大怒 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "a40925995dcf934d38bfcf0819b074bd3af20a7c0dafe06022712becc38ac3c9"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep051-vocab-017",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 117,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "dare",
+        "zh": "挑战"
+      },
+      "payload": {
+        "term": "dare",
+        "ipa": "deə",
+        "pos": "vi.",
+        "def": "vi.敢于,胆敢 modal v.敢,敢于 n.[C]挑战",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "051 观音菩萨大怒 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "a40925995dcf934d38bfcf0819b074bd3af20a7c0dafe06022712becc38ac3c9"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep051-vocab-018",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 118,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "must",
+        "zh": "必须,一定"
+      },
+      "payload": {
+        "term": "must",
+        "ipa": "mʌst",
+        "pos": "",
+        "def": "必须,一定",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ],
+        "gloss": "必须,一定"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "051 观音菩萨大怒 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "a40925995dcf934d38bfcf0819b074bd3af20a7c0dafe06022712becc38ac3c9"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep051-vocab-019",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 119,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "real",
+        "zh": "adj.真正的,真实的"
+      },
+      "payload": {
+        "term": "real",
+        "ipa": "rɪəl",
+        "pos": "adj.",
+        "def": "adj.真正的,真实的",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "051 观音菩萨大怒 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "a40925995dcf934d38bfcf0819b074bd3af20a7c0dafe06022712becc38ac3c9"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep051-vocab-020",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 120,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "right away",
+        "zh": "立刻,马上"
+      },
+      "payload": {
+        "term": "right away",
+        "ipa": "",
+        "pos": "",
+        "def": "立刻,马上",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "051 观音菩萨大怒 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "a40925995dcf934d38bfcf0819b074bd3af20a7c0dafe06022712becc38ac3c9"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep051-vocab-021",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 121,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "tell",
+        "zh": "vt.讲述,告诉,分辨,辨别"
+      },
+      "payload": {
+        "term": "tell",
+        "ipa": "tel",
+        "pos": "vt.",
+        "def": "vt.讲述,告诉,分辨,辨别",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "051 观音菩萨大怒 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "a40925995dcf934d38bfcf0819b074bd3af20a7c0dafe06022712becc38ac3c9"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep051-vocab-022",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 122,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "learn",
+        "zh": "v.学习,学会,了解"
+      },
+      "payload": {
+        "term": "learn",
+        "ipa": "lɜː(r)n",
+        "pos": "v.",
+        "def": "v.学习,学会,了解",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "051 观音菩萨大怒 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "a40925995dcf934d38bfcf0819b074bd3af20a7c0dafe06022712becc38ac3c9"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep051-vocab-023",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 123,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "jump",
+        "zh": "跳,跃(指运动)"
+      },
+      "payload": {
+        "term": "jump",
+        "ipa": "dʒʌmp",
+        "pos": "v.",
+        "def": "v.跳,跃 n.[C]跳,跃(指运动)",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "051 观音菩萨大怒 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "a40925995dcf934d38bfcf0819b074bd3af20a7c0dafe06022712becc38ac3c9"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep051-vocab-024",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 124,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "cloud",
+        "zh": "云,云朵"
+      },
+      "payload": {
+        "term": "cloud",
+        "ipa": "klaʊd",
+        "pos": "n.",
+        "def": "n.[C,U]云,云朵",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "051 观音菩萨大怒 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "a40925995dcf934d38bfcf0819b074bd3af20a7c0dafe06022712becc38ac3c9"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep051-vocab-025",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 125,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "head",
+        "zh": "队首 vi.朝(某方向)行进"
+      },
+      "payload": {
+        "term": "head",
+        "ipa": "hed",
+        "pos": "n.",
+        "def": "n.[C]头(部)[C,U]负责人 [sing.]队首 vi.朝(某方向)行进",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          2,
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "051 观音菩萨大怒 上.pdf",
+          "half": "up",
+          "pages": [
+            2,
+            3
+          ],
+          "sha256": "a40925995dcf934d38bfcf0819b074bd3af20a7c0dafe06022712becc38ac3c9"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "051 观音菩萨大怒 下.pdf",
+          "half": "down",
+          "pages": [
+            2,
+            3
+          ],
+          "sha256": "0563cc775c6959369e3aef3463fe99af8d19cf48416f08c95bf6777c532556b8"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep051-vocab-026",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 126,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "find",
+        "zh": "vt.找到,发现,查找,查明"
+      },
+      "payload": {
+        "term": "find",
+        "ipa": "faɪnd",
+        "pos": "vt.",
+        "def": "vt.找到,发现,查找,查明",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "051 观音菩萨大怒 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "a40925995dcf934d38bfcf0819b074bd3af20a7c0dafe06022712becc38ac3c9"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep051-vocab-027",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 127,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "why",
+        "zh": "adv.为什么"
+      },
+      "payload": {
+        "term": "why",
+        "ipa": "waɪ",
+        "pos": "adv.",
+        "def": "adv.为什么",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "051 观音菩萨大怒 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "a40925995dcf934d38bfcf0819b074bd3af20a7c0dafe06022712becc38ac3c9"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep051-vocab-028",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 128,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "here",
+        "zh": "adv.这就是,在这里"
+      },
+      "payload": {
+        "term": "here",
+        "ipa": "hɪə(r)",
+        "pos": "adv.",
+        "def": "adv.这就是,在这里",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "051 观音菩萨大怒 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "a40925995dcf934d38bfcf0819b074bd3af20a7c0dafe06022712becc38ac3c9"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep051-vocab-029",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 129,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "ask",
+        "zh": "v.请求,要求,询问"
+      },
+      "payload": {
+        "term": "ask",
+        "ipa": "ɑːsk",
+        "pos": "v.",
+        "def": "v.请求,要求,询问",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "051 观音菩萨大怒 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "a40925995dcf934d38bfcf0819b074bd3af20a7c0dafe06022712becc38ac3c9"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep051-vocab-030",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 130,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "treasure",
+        "zh": "宝物 vt.珍视,珍惜"
+      },
+      "payload": {
+        "term": "treasure",
+        "ipa": "ˈtreʒə(r)",
+        "pos": "n.",
+        "def": "n.[U]珠宝,财富 [C]宝物 vt.珍视,珍惜",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "051 观音菩萨大怒 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "0563cc775c6959369e3aef3463fe99af8d19cf48416f08c95bf6777c532556b8"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep051-vocab-031",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 131,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "minute",
+        "zh": "时刻,一会儿"
+      },
+      "payload": {
+        "term": "minute",
+        "ipa": "ˈmɪnɪt",
+        "pos": "n.",
+        "def": "n.[C]分钟 [sing.]时刻,一会儿",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "051 观音菩萨大怒 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "0563cc775c6959369e3aef3463fe99af8d19cf48416f08c95bf6777c532556b8"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep051-vocab-032",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 132,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "run",
+        "zh": "跑,跑步"
+      },
+      "payload": {
+        "term": "run",
+        "ipa": "rʌn",
+        "pos": "vi.",
+        "def": "vi.跑,奔 vt.经营 n.[C]跑,跑步",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "051 观音菩萨大怒 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "0563cc775c6959369e3aef3463fe99af8d19cf48416f08c95bf6777c532556b8"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep051-vocab-033",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 133,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "pick up",
+        "zh": "捡起"
+      },
+      "payload": {
+        "term": "pick up",
+        "ipa": "",
+        "pos": "",
+        "def": "捡起",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "051 观音菩萨大怒 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "0563cc775c6959369e3aef3463fe99af8d19cf48416f08c95bf6777c532556b8"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep051-vocab-034",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 134,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "matter",
+        "zh": "物质;物品 vi.要紧,有影响"
+      },
+      "payload": {
+        "term": "matter",
+        "ipa": "ˈmætə(r)",
+        "pos": "n.",
+        "def": "n.[sing.](询问某人的情况)怎 么了[pl]事态[U]物质;物品 vi.要紧,有影响",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "051 观音菩萨大怒 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "0563cc775c6959369e3aef3463fe99af8d19cf48416f08c95bf6777c532556b8"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep051-vocab-035",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 135,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "lift",
+        "zh": "电梯,搭便车"
+      },
+      "payload": {
+        "term": "lift",
+        "ipa": "lɪft",
+        "pos": "v.",
+        "def": "v.举起,抬高;使高兴起来 n.[C]电梯,搭便车",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "051 观音菩萨大怒 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "0563cc775c6959369e3aef3463fe99af8d19cf48416f08c95bf6777c532556b8"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep051-vocab-036",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 136,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "come",
+        "zh": "vi.来,来到 v.-link.成为,变成,变得"
+      },
+      "payload": {
+        "term": "come",
+        "ipa": "kʌm",
+        "pos": "vi.",
+        "def": "vi.来,来到 v.-link.成为,变成,变得",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "051 观音菩萨大怒 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "0563cc775c6959369e3aef3463fe99af8d19cf48416f08c95bf6777c532556b8"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep051-vocab-037",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 137,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "travel",
+        "zh": "游历"
+      },
+      "payload": {
+        "term": "travel",
+        "ipa": "ˈtrævl",
+        "pos": "v.",
+        "def": "v.旅行,游历幽;传播 n.[C,U]旅行[U]游历",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "051 观音菩萨大怒 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "0563cc775c6959369e3aef3463fe99af8d19cf48416f08c95bf6777c532556b8"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep051-vocab-038",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 138,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "river",
+        "zh": "河,江"
+      },
+      "payload": {
+        "term": "river",
+        "ipa": "ˈrɪvə(r)",
+        "pos": "n.",
+        "def": "n.[C]河,江",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "051 观音菩萨大怒 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "0563cc775c6959369e3aef3463fe99af8d19cf48416f08c95bf6777c532556b8"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep051-vocab-039",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 139,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "worth",
+        "zh": "价值"
+      },
+      "payload": {
+        "term": "worth",
+        "ipa": "wɜː (r)θ",
+        "pos": "adj.",
+        "def": "adj.值得,有......价值(的) n.[U]价值",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "051 观音菩萨大怒 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "0563cc775c6959369e3aef3463fe99af8d19cf48416f08c95bf6777c532556b8"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep051-vocab-040",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 140,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "fire",
+        "zh": "炉火 v.解雇,开枪"
+      },
+      "payload": {
+        "term": "fire",
+        "ipa": "ˈfaɪə(r)",
+        "pos": "n.",
+        "def": "n.[U]火[C,U]火灾[C]炉火 v.解雇,开枪",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "051 观音菩萨大怒 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "0563cc775c6959369e3aef3463fe99af8d19cf48416f08c95bf6777c532556b8"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep051-vocab-041",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 141,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "pick",
+        "zh": "vt.采,摘,选择,挑选,拿取, 挪移"
+      },
+      "payload": {
+        "term": "pick",
+        "ipa": "pɪk",
+        "pos": "vt.",
+        "def": "vt.采,摘,选择,挑选,拿取, 挪移",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "051 观音菩萨大怒 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "0563cc775c6959369e3aef3463fe99af8d19cf48416f08c95bf6777c532556b8"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep051-vocab-042",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 142,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "hand",
+        "zh": "帮助 vt.交,递,给"
+      },
+      "payload": {
+        "term": "hand",
+        "ipa": "hænd",
+        "pos": "n.",
+        "def": "n.[C]手[sing.]帮助 vt.交,递,给",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "051 观音菩萨大怒 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "0563cc775c6959369e3aef3463fe99af8d19cf48416f08c95bf6777c532556b8"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep051-vocab-043",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 143,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "hold",
+        "zh": "抓"
+      },
+      "payload": {
+        "term": "hold",
+        "ipa": "həʊld",
+        "pos": "",
+        "def": "动!” v.拥有,抓住,保持,举行,容纳 n.[C,U]抓",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "051 观音菩萨大怒 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "0563cc775c6959369e3aef3463fe99af8d19cf48416f08c95bf6777c532556b8"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep051-vocab-044",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 144,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "several",
+        "zh": "adj.几个的,数个的 pron.几个,数个,一些"
+      },
+      "payload": {
+        "term": "several",
+        "ipa": "ˈsevrəl",
+        "pos": "adj.",
+        "def": "adj.几个的,数个的 pron.几个,数个,一些",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "051 观音菩萨大怒 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "0563cc775c6959369e3aef3463fe99af8d19cf48416f08c95bf6777c532556b8"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep051-vocab-045",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 145,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "appear",
+        "zh": "vi.出现 v.-link.似乎,看起来"
+      },
+      "payload": {
+        "term": "appear",
+        "ipa": "əˈpɪə(r)",
+        "pos": "vi.",
+        "def": "vi.出现 v.-link.似乎,看起来",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "051 观音菩萨大怒 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "0563cc775c6959369e3aef3463fe99af8d19cf48416f08c95bf6777c532556b8"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep051-vocab-046",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 146,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "need",
+        "zh": "需要的事物"
+      },
+      "payload": {
+        "term": "need",
+        "ipa": "niːd",
+        "pos": "v.",
+        "def": "v.需要,必要,必需 n.[C,U]需要[C]需要的事物",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "051 观音菩萨大怒 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "0563cc775c6959369e3aef3463fe99af8d19cf48416f08c95bf6777c532556b8"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep051-vocab-047",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 147,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "go",
+        "zh": "vi.去,走 v.link.变成,变得"
+      },
+      "payload": {
+        "term": "go",
+        "ipa": "ɡəʊ",
+        "pos": "vi.",
+        "def": "vi.去,走 v.link.变成,变得",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "051 观音菩萨大怒 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "0563cc775c6959369e3aef3463fe99af8d19cf48416f08c95bf6777c532556b8"
+        }
+      ],
+      "review_status": "machine_verified"
+    }
+  ],
+  "teacher_guide": null,
+  "review": {
+    "status": "draft",
+    "reviewed_at": null,
+    "card_stats": {
+      "total": 52,
+      "sentence_choice": 5,
+      "word_review": 47,
+      "machine_verified": 50,
+      "assistant_reviewed": 2,
+      "verified": 52,
+      "needs_review": 0
+    }
+  },
+  "generated_at": "2026-08-31T04:49:42.059444+00:00"
+}

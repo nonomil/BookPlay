@@ -1,0 +1,2860 @@
+{
+  "schema_version": 1,
+  "episode": 30,
+  "title": {
+    "en": "The Frying Pan",
+    "zh": "西游记 第30集"
+  },
+  "sources": [
+    {
+      "kind": "courseware_main_pptx",
+      "file": "G:\\Game\\BookPlay书戏\\data\\西游记课件\\3.3西游记  Journey to the West PPT课件\\030_Journey to the West 30_The Frying Pan.pptx",
+      "sha256": "2464a743b44bf4c4256c691c0ab805a59eb3327122ec86429a9bb5d6327f674f",
+      "pages": 20
+    },
+    {
+      "kind": "official_quiz_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+      "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929",
+      "pages": 131
+    },
+    {
+      "kind": "intensive_reader_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\02-西游记精读版台词本\\1、带标注版PDF 108集\\030 油锅上.pdf",
+      "sha256": "0d2c9fbb1c6bb2dfc4a6251bb3e13f4c6fdf4e89eb51c7854d61747050ce67bf",
+      "pages": 4
+    },
+    {
+      "kind": "intensive_reader_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\02-西游记精读版台词本\\1、带标注版PDF 108集\\030 油锅下.pdf",
+      "sha256": "279ef434aee44d24907998f74dca8d2ae40b5b5bfdcd26552d08ad30951dbe5d",
+      "pages": 3
+    },
+    {
+      "kind": "courseware_screenshots_pptx",
+      "file": "G:\\Game\\BookPlay书戏\\data\\西游记课件\\西游记-外教课动画截图\\Journey to the West 030  The Frying Pan_20240106164412.pptx",
+      "sha256": "0d96777ad7b5274dcabf0633ba46a2e20a5eb144f9580769ce26f820a8af37c9",
+      "pages": 47
+    }
+  ],
+  "cards": [
+    {
+      "card_id": "ep030-official-quiz-001",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 1,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "which is true?",
+        "zh": "哪一个是真的？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "the great immortal wanted to fry everyone.",
+            "zh": "大仙想炸掉所有人。"
+          },
+          {
+            "id": "b",
+            "en": "wukong returned to the fruit and flower mountain.",
+            "zh": "悟空回到了花果山。"
+          },
+          {
+            "id": "c",
+            "en": "fire would not hurt the tang monk.",
+            "zh": "火不会伤到唐僧。"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n034",
+            "quote": "Back at the abbey, the Great Immortal told his priests to start a fire."
+          },
+          {
+            "node_id": "n035",
+            "quote": "\"Bring out a large frying pan,\" said the Great Immortal."
+          },
+          {
+            "node_id": "n036",
+            "quote": "\"We're going to fry these criminals. Let's start with Sun Wukong.\""
+          },
+          {
+            "node_id": "n040",
+            "quote": "\"I can sit on that frying pan all day and not get hurt at all. But the Tang Monk is mortal. He'll be burned to a crisp!\""
+          },
+          {
+            "node_id": "n053",
+            "quote": "\"He escaped without us!\""
+          },
+          {
+            "node_id": "n056",
+            "quote": "\"He's gone! He probably returned to the Fruit and Flower Mountain. I'm sure he's playing in a field of flowers right now. Meanwhile we're trapped here!\""
+          },
+          {
+            "node_id": "n062",
+            "quote": "\"Bring out another frying pan. We'll fry his companions, starting with the Tang Monk!\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 37,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep030-official-quiz-002",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 2,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "how did wukong escape from the ropes?",
+        "zh": "悟空是如何从绳索中逃脱的？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "he shrank to the size of a pea.",
+            "zh": "他缩小到了豌豆般的大小。"
+          },
+          {
+            "id": "b",
+            "en": "he broke them with his strength.",
+            "zh": "他用他的力量打破了它们。"
+          },
+          {
+            "id": "c",
+            "en": "he was untied by the tang monk.",
+            "zh": "他被唐僧解开了绳子。"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n018",
+            "quote": "He shrank to the size of a pea and then slipped out from his ropes."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 37,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep030-official-quiz-003",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 3,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "what did the priests place over the fire?",
+        "zh": "祭司把什么放在火上？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "a large frying pan",
+            "zh": "一个大煎锅"
+          },
+          {
+            "id": "b",
+            "en": "a huge pot",
+            "zh": "一个大锅"
+          },
+          {
+            "id": "c",
+            "en": "a giant kettle",
+            "zh": "一个巨大的水壶"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n034",
+            "quote": "Back at the abbey, the Great Immortal told his priests to start a fire."
+          },
+          {
+            "node_id": "n035",
+            "quote": "\"Bring out a large frying pan,\" said the Great Immortal."
+          },
+          {
+            "node_id": "n037",
+            "quote": "The priests carried an enormous frying pan into the room."
+          },
+          {
+            "node_id": "n038",
+            "quote": "They placed it over the fire."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 37,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep030-official-quiz-004",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 4,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "what did wukong do with the statue?",
+        "zh": "悟空对那座雕像做了什么？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "he made it look like himself.",
+            "zh": "他让它看起来像他自己。"
+          },
+          {
+            "id": "b",
+            "en": "he hid behind it.",
+            "zh": "他躲在它后面。"
+          },
+          {
+            "id": "c",
+            "en": "he dropped it into the pan.",
+            "zh": "他把它掉进了锅里。"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n042",
+            "quote": "The monkey recited a quick spell and made the statue look exactly like himself."
+          },
+          {
+            "node_id": "n051",
+            "quote": "\"He made that statue look like himself!\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 37,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep030-official-quiz-005",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 5,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "why did the frying pan break?",
+        "zh": "为什么平底锅会破？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "the statue was too heavy.",
+            "zh": "这座雕像太重了。"
+          },
+          {
+            "id": "b",
+            "en": "the fire was too hot.",
+            "zh": "火太热了。"
+          },
+          {
+            "id": "c",
+            "en": "wukong smashed it.",
+            "zh": "悟空砸碎了它。"
+          }
+        ],
+        "answer": "c",
+        "answer_evidence": [
+          {
+            "node_id": "n060",
+            "quote": "\"It's bad enough that Sun Wukong wanted to escape. But did he really have to break my frying pan too?\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 37,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep030-vocab-001",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 101,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "tie",
+        "zh": "领带 vt.捆,束;栓"
+      },
+      "payload": {
+        "term": "tie",
+        "ipa": "taɪ",
+        "pos": "n.",
+        "def": "n.[C]领带 vt.捆,束;栓",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "030 油锅上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "0d2c9fbb1c6bb2dfc4a6251bb3e13f4c6fdf4e89eb51c7854d61747050ce67bf"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep030-vocab-002",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 102,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "deal",
+        "zh": "大量,很多 vi.对付,对待"
+      },
+      "payload": {
+        "term": "deal",
+        "ipa": "diː l",
+        "pos": "n.",
+        "def": "n.协议,交易[sing.]大量,很多 vi.对付,对待",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "030 油锅上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "0d2c9fbb1c6bb2dfc4a6251bb3e13f4c6fdf4e89eb51c7854d61747050ce67bf"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep030-vocab-003",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 103,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "morning",
+        "zh": "早晨,上午"
+      },
+      "payload": {
+        "term": "morning",
+        "ipa": "ˈmɔː(r)nɪŋ",
+        "pos": "n.",
+        "def": "n.[C,U]早晨,上午",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "030 油锅上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "0d2c9fbb1c6bb2dfc4a6251bb3e13f4c6fdf4e89eb51c7854d61747050ce67bf"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep030-vocab-004",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 104,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "cry",
+        "zh": "叫喊"
+      },
+      "payload": {
+        "term": "cry",
+        "ipa": "kraɪ",
+        "pos": "v.",
+        "def": "v./n.[sing.]哭 [C]叫喊",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          1,
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "030 油锅上.pdf",
+          "half": "up",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "0d2c9fbb1c6bb2dfc4a6251bb3e13f4c6fdf4e89eb51c7854d61747050ce67bf"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "030 油锅下.pdf",
+          "half": "down",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "279ef434aee44d24907998f74dca8d2ae40b5b5bfdcd26552d08ad30951dbe5d"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep030-vocab-005",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 105,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "danger",
+        "zh": "危害;威胁"
+      },
+      "payload": {
+        "term": "danger",
+        "ipa": "ˈdeɪndʒə(r)",
+        "pos": "n.",
+        "def": "n.[U]危险 [C]危害;威胁",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "030 油锅上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "0d2c9fbb1c6bb2dfc4a6251bb3e13f4c6fdf4e89eb51c7854d61747050ce67bf"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep030-vocab-006",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 106,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "journey",
+        "zh": "(尤指长途)旅行,行程"
+      },
+      "payload": {
+        "term": "journey",
+        "ipa": "ˈdʒɜː(r)ni",
+        "pos": "n.",
+        "def": "n.[C](尤指长途)旅行,行程",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "030 油锅上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "0d2c9fbb1c6bb2dfc4a6251bb3e13f4c6fdf4e89eb51c7854d61747050ce67bf"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep030-vocab-007",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 107,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "cause",
+        "zh": "原因"
+      },
+      "payload": {
+        "term": "cause",
+        "ipa": "kɔː z",
+        "pos": "vt.",
+        "def": "vt.造成,引起 n.[C]原因",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "030 油锅上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "0d2c9fbb1c6bb2dfc4a6251bb3e13f4c6fdf4e89eb51c7854d61747050ce67bf"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep030-vocab-008",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 108,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "trouble",
+        "zh": "困 境;麻烦 vt.使烦恼,麻烦"
+      },
+      "payload": {
+        "term": "trouble",
+        "ipa": "ˈtrʌbl",
+        "pos": "n.",
+        "def": "n.[C,U]问题,困难,苦恼[U]困 境;麻烦 vt.使烦恼,麻烦",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "030 油锅上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "0d2c9fbb1c6bb2dfc4a6251bb3e13f4c6fdf4e89eb51c7854d61747050ce67bf"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep030-vocab-009",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 109,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "master",
+        "zh": "n.大师,能手,主人,硕士 vt.掌握 adj.熟练的"
+      },
+      "payload": {
+        "term": "master",
+        "ipa": "ˈmɑː stə",
+        "pos": "n.",
+        "def": "n.大师,能手,主人,硕士 vt.掌握 adj.熟练的",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "030 油锅上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "0d2c9fbb1c6bb2dfc4a6251bb3e13f4c6fdf4e89eb51c7854d61747050ce67bf"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep030-vocab-010",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 110,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "steal",
+        "zh": "v.偷,窃取"
+      },
+      "payload": {
+        "term": "steal",
+        "ipa": "stiːl",
+        "pos": "v.",
+        "def": "v.偷,窃取",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "030 油锅上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "0d2c9fbb1c6bb2dfc4a6251bb3e13f4c6fdf4e89eb51c7854d61747050ce67bf"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep030-vocab-011",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 111,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "fruit",
+        "zh": "果实,成果"
+      },
+      "payload": {
+        "term": "fruit",
+        "ipa": "fruː t",
+        "pos": "n.",
+        "def": "n.[C,U]水果 [C]果实,成果",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "030 油锅上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "0d2c9fbb1c6bb2dfc4a6251bb3e13f4c6fdf4e89eb51c7854d61747050ce67bf"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep030-vocab-012",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 112,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "idea",
+        "zh": "主意"
+      },
+      "payload": {
+        "term": "idea",
+        "ipa": "aɪˈdɪə",
+        "pos": "n.",
+        "def": "主意",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ],
+        "gloss": "主意"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "030 油锅上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "0d2c9fbb1c6bb2dfc4a6251bb3e13f4c6fdf4e89eb51c7854d61747050ce67bf"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep030-vocab-013",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 113,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "shout",
+        "zh": "呼喊,叫喊"
+      },
+      "payload": {
+        "term": "shout",
+        "ipa": "ʃaʊt",
+        "pos": "v.",
+        "def": "v.呼叫,喊叫 n.[C]呼喊,叫喊",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          1,
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "030 油锅上.pdf",
+          "half": "up",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "0d2c9fbb1c6bb2dfc4a6251bb3e13f4c6fdf4e89eb51c7854d61747050ce67bf"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "030 油锅下.pdf",
+          "half": "down",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "279ef434aee44d24907998f74dca8d2ae40b5b5bfdcd26552d08ad30951dbe5d"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep030-vocab-014",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 114,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "help",
+        "zh": "有帮助的 人或物 v.帮助,援助"
+      },
+      "payload": {
+        "term": "help",
+        "ipa": "help",
+        "pos": "n.",
+        "def": "n.[U]帮助,援助[sing.]有帮助的 人或物 v.帮助,援助",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "030 油锅上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "0d2c9fbb1c6bb2dfc4a6251bb3e13f4c6fdf4e89eb51c7854d61747050ce67bf"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep030-vocab-015",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 115,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "hungry",
+        "zh": "adj.饥饿的;渴望得到"
+      },
+      "payload": {
+        "term": "hungry",
+        "ipa": "ˈhʌŋɡri",
+        "pos": "adj.",
+        "def": "adj.饥饿的;渴望得到",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "030 油锅上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "0d2c9fbb1c6bb2dfc4a6251bb3e13f4c6fdf4e89eb51c7854d61747050ce67bf"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep030-vocab-016",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 116,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "refuse",
+        "zh": "v.拒绝"
+      },
+      "payload": {
+        "term": "refuse",
+        "ipa": "rɪˈfjuːz",
+        "pos": "v.",
+        "def": "v.拒绝",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "030 油锅上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "0d2c9fbb1c6bb2dfc4a6251bb3e13f4c6fdf4e89eb51c7854d61747050ce67bf"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep030-vocab-017",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 117,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "stop",
+        "zh": "车站,停止 v.停止,阻止,逗留"
+      },
+      "payload": {
+        "term": "stop",
+        "ipa": "stɒp",
+        "pos": "n.",
+        "def": "n.[C]车站,停止 v.停止,阻止,逗留",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "030 油锅上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "0d2c9fbb1c6bb2dfc4a6251bb3e13f4c6fdf4e89eb51c7854d61747050ce67bf"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep030-vocab-018",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 118,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "plan",
+        "zh": "打算,计划"
+      },
+      "payload": {
+        "term": "plan",
+        "ipa": "plæn",
+        "pos": "v.",
+        "def": "v./n.打算,计划 [C]打算,计划",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "030 油锅上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "0d2c9fbb1c6bb2dfc4a6251bb3e13f4c6fdf4e89eb51c7854d61747050ce67bf"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep030-vocab-019",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 119,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "say",
+        "zh": "v.说,讲"
+      },
+      "payload": {
+        "term": "say",
+        "ipa": "seɪ",
+        "pos": "v.",
+        "def": "v.说,讲",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "030 油锅上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "0d2c9fbb1c6bb2dfc4a6251bb3e13f4c6fdf4e89eb51c7854d61747050ce67bf"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep030-vocab-020",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 120,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "asleep",
+        "zh": "adj.睡着"
+      },
+      "payload": {
+        "term": "asleep",
+        "ipa": "əˈsliːp",
+        "pos": "adj.",
+        "def": "adj.睡着",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "030 油锅上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "0d2c9fbb1c6bb2dfc4a6251bb3e13f4c6fdf4e89eb51c7854d61747050ce67bf"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep030-vocab-021",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 121,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "spell",
+        "zh": "咒语"
+      },
+      "payload": {
+        "term": "spell",
+        "ipa": "spel",
+        "pos": "v.",
+        "def": "v.用字母拼,拼写 n.[C]咒语",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          1,
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "030 油锅上.pdf",
+          "half": "up",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "0d2c9fbb1c6bb2dfc4a6251bb3e13f4c6fdf4e89eb51c7854d61747050ce67bf"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "030 油锅下.pdf",
+          "half": "down",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "279ef434aee44d24907998f74dca8d2ae40b5b5bfdcd26552d08ad30951dbe5d"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep030-vocab-022",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 122,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "size",
+        "zh": "尺码"
+      },
+      "payload": {
+        "term": "size",
+        "ipa": "saɪz",
+        "pos": "n.",
+        "def": "n.[C,U]大小,规模 [C]尺码",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "030 油锅上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "0d2c9fbb1c6bb2dfc4a6251bb3e13f4c6fdf4e89eb51c7854d61747050ce67bf"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep030-vocab-023",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 123,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "rope",
+        "zh": "绳索"
+      },
+      "payload": {
+        "term": "rope",
+        "ipa": "rəʊp",
+        "pos": "n.",
+        "def": "n.[C,U]绳索",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "030 油锅上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "0d2c9fbb1c6bb2dfc4a6251bb3e13f4c6fdf4e89eb51c7854d61747050ce67bf"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep030-vocab-024",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 124,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "go",
+        "zh": "vi.去,走 v.link.变成,变得"
+      },
+      "payload": {
+        "term": "go",
+        "ipa": "ɡəʊ",
+        "pos": "vi.",
+        "def": "vi.去,走 v.link.变成,变得",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "030 油锅上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "0d2c9fbb1c6bb2dfc4a6251bb3e13f4c6fdf4e89eb51c7854d61747050ce67bf"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep030-vocab-025",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 125,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "dark",
+        "zh": "黑暗的"
+      },
+      "payload": {
+        "term": "dark",
+        "ipa": "dɑː (r)k",
+        "pos": "adj.",
+        "def": "黑暗的",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ],
+        "gloss": "黑暗的"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "030 油锅上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "0d2c9fbb1c6bb2dfc4a6251bb3e13f4c6fdf4e89eb51c7854d61747050ce67bf"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep030-vocab-026",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 126,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "lesson",
+        "zh": "课,一节课,教训"
+      },
+      "payload": {
+        "term": "lesson",
+        "ipa": "ˈlesn",
+        "pos": "n.",
+        "def": "n.[C]课,一节课,教训",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "030 油锅上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "0d2c9fbb1c6bb2dfc4a6251bb3e13f4c6fdf4e89eb51c7854d61747050ce67bf"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep030-vocab-027",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 127,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "voice",
+        "zh": "发言 权;主/被动语态 vt.表达(情感或意见)"
+      },
+      "payload": {
+        "term": "voice",
+        "ipa": "vɔɪs",
+        "pos": "n.",
+        "def": "n.[C,U]声音,嗓音[sing.]发言 权;主/被动语态 vt.表达(情感或意见)",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "030 油锅上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "0d2c9fbb1c6bb2dfc4a6251bb3e13f4c6fdf4e89eb51c7854d61747050ce67bf"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep030-vocab-028",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 128,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "great",
+        "zh": "伟大的"
+      },
+      "payload": {
+        "term": "great",
+        "ipa": "ɡreɪt",
+        "pos": "adj.",
+        "def": "伟大的",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ],
+        "gloss": "伟大的"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "030 油锅上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "0d2c9fbb1c6bb2dfc4a6251bb3e13f4c6fdf4e89eb51c7854d61747050ce67bf"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep030-vocab-029",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 129,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "fly",
+        "zh": "苍蝇"
+      },
+      "payload": {
+        "term": "fly",
+        "ipa": "flaɪ",
+        "pos": "v.",
+        "def": "v.飞,驾驶(飞机等);乘飞机, (旗)飘扬 n.[C]苍蝇",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "030 油锅上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "0d2c9fbb1c6bb2dfc4a6251bb3e13f4c6fdf4e89eb51c7854d61747050ce67bf"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep030-vocab-030",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 130,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "toward",
+        "zh": "prep.朝,向,对着"
+      },
+      "payload": {
+        "term": "toward",
+        "ipa": "təˈwɔː d",
+        "pos": "prep.",
+        "def": "prep.朝,向,对着",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "030 油锅上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "0d2c9fbb1c6bb2dfc4a6251bb3e13f4c6fdf4e89eb51c7854d61747050ce67bf"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep030-vocab-031",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 131,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "pull",
+        "zh": "引力,吸引力"
+      },
+      "payload": {
+        "term": "pull",
+        "ipa": "pʊl",
+        "pos": "v.",
+        "def": "v.拉,托 n.[C]拉,托[sing.]引力,吸引力",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "030 油锅上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "0d2c9fbb1c6bb2dfc4a6251bb3e13f4c6fdf4e89eb51c7854d61747050ce67bf"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep030-vocab-032",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 132,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "swing",
+        "zh": "摆动,秋千 v.摇摆"
+      },
+      "payload": {
+        "term": "swing",
+        "ipa": "swɪŋ",
+        "pos": "n.",
+        "def": "n.[C]摆动,秋千 v.摇摆",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "030 油锅上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "0d2c9fbb1c6bb2dfc4a6251bb3e13f4c6fdf4e89eb51c7854d61747050ce67bf"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep030-vocab-033",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 133,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "move",
+        "zh": "移动"
+      },
+      "payload": {
+        "term": "move",
+        "ipa": "muːv",
+        "pos": "v.",
+        "def": "v.移动;使感动,推动 n.[sing.]移动",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "030 油锅上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "0d2c9fbb1c6bb2dfc4a6251bb3e13f4c6fdf4e89eb51c7854d61747050ce67bf"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep030-vocab-034",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 134,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "fast",
+        "zh": "adj.快的 adv.快地;完全地,牢固地"
+      },
+      "payload": {
+        "term": "fast",
+        "ipa": "fɑːst",
+        "pos": "adj.",
+        "def": "adj.快的 adv.快地;完全地,牢固地",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "030 油锅上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "0d2c9fbb1c6bb2dfc4a6251bb3e13f4c6fdf4e89eb51c7854d61747050ce67bf"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep030-vocab-035",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 135,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "shoot",
+        "zh": "v.射击,发射;拍摄 n.幼苗"
+      },
+      "payload": {
+        "term": "shoot",
+        "ipa": "ʃuː t",
+        "pos": "v.",
+        "def": "v.射击,发射;拍摄 n.幼苗",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "030 油锅上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "0d2c9fbb1c6bb2dfc4a6251bb3e13f4c6fdf4e89eb51c7854d61747050ce67bf"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep030-vocab-036",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 136,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "group",
+        "zh": "组,群 vt.把......分组/归类,聚集"
+      },
+      "payload": {
+        "term": "group",
+        "ipa": "ɡruːp",
+        "pos": "n.",
+        "def": "n.[C]组,群 vt.把......分组/归类,聚集",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "030 油锅上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "0d2c9fbb1c6bb2dfc4a6251bb3e13f4c6fdf4e89eb51c7854d61747050ce67bf"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep030-vocab-037",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 137,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "sweep",
+        "zh": "挥动,掠"
+      },
+      "payload": {
+        "term": "sweep",
+        "ipa": "swiː p",
+        "pos": "v.",
+        "def": "v.扫,打扫;席卷 n.[C]挥动,掠",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "030 油锅上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "0d2c9fbb1c6bb2dfc4a6251bb3e13f4c6fdf4e89eb51c7854d61747050ce67bf"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep030-vocab-038",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 138,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "start",
+        "zh": "起点,开端"
+      },
+      "payload": {
+        "term": "start",
+        "ipa": "stɑː (r)t",
+        "pos": "v.",
+        "def": "v.开始,着手,创办 n.[C]起点,开端",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "030 油锅上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "0d2c9fbb1c6bb2dfc4a6251bb3e13f4c6fdf4e89eb51c7854d61747050ce67bf"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep030-vocab-039",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 139,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "fire",
+        "zh": "炉火 v.解雇,开枪"
+      },
+      "payload": {
+        "term": "fire",
+        "ipa": "ˈfaɪə(r)",
+        "pos": "n.",
+        "def": "n.[U]火[C,U]火灾[C]炉火 v.解雇,开枪",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "030 油锅上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "0d2c9fbb1c6bb2dfc4a6251bb3e13f4c6fdf4e89eb51c7854d61747050ce67bf"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep030-vocab-040",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 140,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "hurt",
+        "zh": "v.(使)疼痛,受伤,感到疼痛, (使)伤心 adj.受伤的"
+      },
+      "payload": {
+        "term": "hurt",
+        "ipa": "hɜː(r)t",
+        "pos": "v.",
+        "def": "v.(使)疼痛,受伤,感到疼痛, (使)伤心 adj.受伤的",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "030 油锅下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "279ef434aee44d24907998f74dca8d2ae40b5b5bfdcd26552d08ad30951dbe5d"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep030-vocab-041",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 141,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "lion",
+        "zh": "狮子"
+      },
+      "payload": {
+        "term": "lion",
+        "ipa": "ˈlaɪən",
+        "pos": "n.",
+        "def": "n.[C]狮子",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "030 油锅下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "279ef434aee44d24907998f74dca8d2ae40b5b5bfdcd26552d08ad30951dbe5d"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep030-vocab-042",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 142,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "monkey",
+        "zh": "猴子"
+      },
+      "payload": {
+        "term": "monkey",
+        "ipa": "ˈmʌŋki",
+        "pos": "n.",
+        "def": "n.[C]猴子",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "030 油锅下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "279ef434aee44d24907998f74dca8d2ae40b5b5bfdcd26552d08ad30951dbe5d"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep030-vocab-043",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 143,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "quick",
+        "zh": "adj.快的,迅速的,敏捷的"
+      },
+      "payload": {
+        "term": "quick",
+        "ipa": "kwɪk",
+        "pos": "adj.",
+        "def": "adj.快的,迅速的,敏捷的",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "030 油锅下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "279ef434aee44d24907998f74dca8d2ae40b5b5bfdcd26552d08ad30951dbe5d"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep030-vocab-044",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 144,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "heavy",
+        "zh": "adj.重的,大量的,严重的"
+      },
+      "payload": {
+        "term": "heavy",
+        "ipa": "ˈhevi",
+        "pos": "adj.",
+        "def": "adj.重的,大量的,严重的",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "030 油锅下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "279ef434aee44d24907998f74dca8d2ae40b5b5bfdcd26552d08ad30951dbe5d"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep030-vocab-045",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 145,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "drop",
+        "zh": "滴,下降"
+      },
+      "payload": {
+        "term": "drop",
+        "ipa": "drɒp",
+        "pos": "v.",
+        "def": "v.落下,掉下,扔下,降低 n.[C]滴,下降",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "030 油锅下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "279ef434aee44d24907998f74dca8d2ae40b5b5bfdcd26552d08ad30951dbe5d"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep030-vocab-046",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 146,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "break",
+        "zh": "间歇,休息"
+      },
+      "payload": {
+        "term": "break",
+        "ipa": "breɪk",
+        "pos": "v.",
+        "def": "v.(使)破,裂,违反,打破(记 录) n.[C]间歇,休息",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "030 油锅下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "279ef434aee44d24907998f74dca8d2ae40b5b5bfdcd26552d08ad30951dbe5d"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep030-vocab-047",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 147,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "half",
+        "zh": "/pron.一半,半数"
+      },
+      "payload": {
+        "term": "half",
+        "ipa": "hɑːf",
+        "pos": "n.",
+        "def": "n.[C]/pron.一半,半数",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "030 油锅下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "279ef434aee44d24907998f74dca8d2ae40b5b5bfdcd26552d08ad30951dbe5d"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep030-vocab-048",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 148,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "look",
+        "zh": "看,注视,外表,表情"
+      },
+      "payload": {
+        "term": "look",
+        "ipa": "lʊk",
+        "pos": "vi.",
+        "def": "vi.看 v.-link.看上去 n.[C]看,注视,外表,表情",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "030 油锅下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "279ef434aee44d24907998f74dca8d2ae40b5b5bfdcd26552d08ad30951dbe5d"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep030-vocab-049",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 149,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "real",
+        "zh": "adj.真正的,真实的 雕像变得和他自己一模一样!”"
+      },
+      "payload": {
+        "term": "real",
+        "ipa": "rɪəl",
+        "pos": "adj.",
+        "def": "adj.真正的,真实的 雕像变得和他自己一模一样!”",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "030 油锅下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "279ef434aee44d24907998f74dca8d2ae40b5b5bfdcd26552d08ad30951dbe5d"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep030-vocab-050",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 150,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "think",
+        "zh": "v.认为,想。思考"
+      },
+      "payload": {
+        "term": "think",
+        "ipa": "θɪŋk",
+        "pos": "v.",
+        "def": "v.认为,想。思考",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "030 油锅下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "279ef434aee44d24907998f74dca8d2ae40b5b5bfdcd26552d08ad30951dbe5d"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep030-vocab-051",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 151,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "around",
+        "zh": "adv.在周围,大约,四处,掉头 prep.在......周围,到处"
+      },
+      "payload": {
+        "term": "around",
+        "ipa": "əˈraʊnd",
+        "pos": "adv.",
+        "def": "adv.在周围,大约,四处,掉头 prep.在......周围,到处",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "030 油锅下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "279ef434aee44d24907998f74dca8d2ae40b5b5bfdcd26552d08ad30951dbe5d"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep030-vocab-052",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 152,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "probably",
+        "zh": "adv.很可能,大概"
+      },
+      "payload": {
+        "term": "probably",
+        "ipa": "ˈprɒbəbli",
+        "pos": "adv.",
+        "def": "adv.很可能,大概",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "030 油锅下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "279ef434aee44d24907998f74dca8d2ae40b5b5bfdcd26552d08ad30951dbe5d"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep030-vocab-053",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 153,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "return",
+        "zh": "返回"
+      },
+      "payload": {
+        "term": "return",
+        "ipa": "rɪˈtɜː(r)n",
+        "pos": "vt.",
+        "def": "vt.归还 vi.回来,返回 n.[C,U]回报[sing.]返回",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "030 油锅下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "279ef434aee44d24907998f74dca8d2ae40b5b5bfdcd26552d08ad30951dbe5d"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep030-vocab-054",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 154,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "leave",
+        "zh": "休假"
+      },
+      "payload": {
+        "term": "leave",
+        "ipa": "liːv",
+        "pos": "v.",
+        "def": "v.离开,留下,使处于...... n.[U]休假",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "030 油锅下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "279ef434aee44d24907998f74dca8d2ae40b5b5bfdcd26552d08ad30951dbe5d"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep030-vocab-055",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 155,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "shake",
+        "zh": "摇动,抖动,奶昔"
+      },
+      "payload": {
+        "term": "shake",
+        "ipa": "ʃeɪk",
+        "pos": "v.",
+        "def": "v.摇动,抖动,(与某人)握手, 发抖 n.[C]摇动,抖动,奶昔",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "030 油锅下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "279ef434aee44d24907998f74dca8d2ae40b5b5bfdcd26552d08ad30951dbe5d"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep030-vocab-056",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 156,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "bad",
+        "zh": "adj.坏的,糟的,严重的"
+      },
+      "payload": {
+        "term": "bad",
+        "ipa": "bæd",
+        "pos": "adj.",
+        "def": "adj.坏的,糟的,严重的",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "030 油锅下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "279ef434aee44d24907998f74dca8d2ae40b5b5bfdcd26552d08ad30951dbe5d"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep030-vocab-057",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 157,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "stamp",
+        "zh": "邮票,印章 我的煎锅给弄破了!” 始!”"
+      },
+      "payload": {
+        "term": "stamp",
+        "ipa": "stæmp",
+        "pos": "n.",
+        "def": "n.[C]邮票,印章 我的煎锅给弄破了!” 始!”",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "030 油锅下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "279ef434aee44d24907998f74dca8d2ae40b5b5bfdcd26552d08ad30951dbe5d"
+        }
+      ],
+      "review_status": "machine_verified"
+    }
+  ],
+  "teacher_guide": null,
+  "review": {
+    "status": "draft",
+    "reviewed_at": null,
+    "card_stats": {
+      "total": 62,
+      "sentence_choice": 5,
+      "word_review": 57,
+      "machine_verified": 60,
+      "assistant_reviewed": 2,
+      "verified": 62,
+      "needs_review": 0
+    }
+  },
+  "generated_at": "2026-08-31T04:49:38.701502+00:00"
+}

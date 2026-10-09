@@ -1,0 +1,3277 @@
+{
+  "schema_version": 1,
+  "episode": 3,
+  "title": {
+    "en": "菩提祖师",
+    "zh": "西游记 第3集"
+  },
+  "sources": [
+    {
+      "kind": "courseware_main_pptx",
+      "file": "G:\\Game\\BookPlay书戏\\data\\西游记课件\\3.3西游记  Journey to the West PPT课件\\003_Journey to the West 3_Subodhi.pptx",
+      "sha256": "4e2ea4c0ca101b61e74410cb640472e611ec60eef2c4a8d3b83e058c20e2b3b2",
+      "pages": 20
+    },
+    {
+      "kind": "official_quiz_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+      "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929",
+      "pages": 131
+    },
+    {
+      "kind": "intensive_reader_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\02-西游记精读版台词本\\1、带标注版PDF 108集\\003 菩提祖师 上.pdf",
+      "sha256": "1b224ff69dad1465a5cc5b669de3e86012c279fd8dc10b6df97bfaaf5fbf1359",
+      "pages": 4
+    },
+    {
+      "kind": "intensive_reader_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\02-西游记精读版台词本\\1、带标注版PDF 108集\\003 菩提祖师 下.pdf",
+      "sha256": "6aa611f3519b1c1b9a0e2ba6ea1df382d8ec15282fd4f604121529763392590a",
+      "pages": 4
+    },
+    {
+      "kind": "courseware_teacher_pptx",
+      "file": "G:\\Game\\BookPlay书戏\\data\\西游记课件\\西游记外教培训11集课件\\西游记外教E003.pptx",
+      "sha256": "ceee58bf938ceede75b4860c7a0ea4dc746fd30ccdf18cf6acbd1dea9d2c4744",
+      "pages": 25
+    },
+    {
+      "kind": "courseware_screenshots_pptx",
+      "file": "G:\\Game\\BookPlay书戏\\data\\西游记课件\\西游记-外教课动画截图\\Journey to the West 003  Subodhi_20240106163534.pptx",
+      "sha256": "cd428c723b09ca55466910bc3a02c3b34277fe9e1411f2b9efe415f222f03f1c",
+      "pages": 49
+    }
+  ],
+  "cards": [
+    {
+      "card_id": "ep003-official-quiz-001",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 1,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "which is not true?",
+        "zh": "哪一项是不正确的？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "monkey learned from the woodcutter.",
+            "zh": "猴子从伐木工那里学到了东西。"
+          },
+          {
+            "id": "b",
+            "en": "monkey wanted to learn how to live forever.",
+            "zh": "猴子想学会如何永生。"
+          },
+          {
+            "id": "c",
+            "en": "monkey found subodhi's temple.",
+            "zh": "猴子找到了须菩提的寺庙。"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n013",
+            "quote": "\"And I want to live forever. Do you know where I can find a sage?\""
+          },
+          {
+            "node_id": "n016",
+            "quote": "\"A sage named Subodhi lives on this mountain. He is very wise.\""
+          },
+          {
+            "node_id": "n019",
+            "quote": "\"Just follow this trail, and you will come to his home,\" said the woodcutter."
+          },
+          {
+            "node_id": "n022",
+            "quote": "Soon he saw a temple built into the side of the mountain."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 4,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep003-official-quiz-002",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 2,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "what was monkey looking for in the mountains?",
+        "zh": "猴子在山里找什么？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "a sage",
+            "zh": "一位智者"
+          },
+          {
+            "id": "b",
+            "en": "a woodcutter",
+            "zh": "伐木工"
+          },
+          {
+            "id": "c",
+            "en": "a rock",
+            "zh": "一块石头"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n008",
+            "quote": "\"Hello,\" said Monkey. \"Are there any sages in these mountains?\""
+          },
+          {
+            "node_id": "n013",
+            "quote": "\"And I want to live forever. Do you know where I can find a sage?\""
+          },
+          {
+            "node_id": "n016",
+            "quote": "\"A sage named Subodhi lives on this mountain. He is very wise.\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 4,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep003-official-quiz-003",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 3,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "what did monkey want to be?",
+        "zh": "猴子想成为什么？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "a student",
+            "zh": "一名学生"
+          },
+          {
+            "id": "b",
+            "en": "a sage",
+            "zh": "一位智者"
+          },
+          {
+            "id": "c",
+            "en": "a woodcutter",
+            "zh": "伐木工"
+          }
+        ],
+        "answer": "b",
+        "answer_evidence": [
+          {
+            "node_id": "n013",
+            "quote": "\"And I want to live forever. Do you know where I can find a sage?\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 4,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep003-official-quiz-004",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 4,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "why did wukong start to dance?",
+        "zh": "悟空为什么开始跳舞？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "he loved learning from subodhi.",
+            "zh": "他喜欢从菩提祖师那里学习。"
+          },
+          {
+            "id": "b",
+            "en": "he knew how to live forever.",
+            "zh": "他知道如何永生。"
+          },
+          {
+            "id": "c",
+            "en": "he received a secret message.",
+            "zh": "他收到了一个秘密信息。"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n048",
+            "quote": "One day, while Subodhi was giving a lesson, Wukong started to dance."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 4,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep003-official-quiz-005",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 5,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "how did subodhi give wukong a secret message?",
+        "zh": "苏婆地是如何给悟空一个秘密信息的？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "he knocked wukong on the head.",
+            "zh": "他敲了悟空的头。"
+          },
+          {
+            "id": "b",
+            "en": "he whispered it to wukong.",
+            "zh": "他悄悄地对悟空说了。"
+          },
+          {
+            "id": "c",
+            "en": "he delivered a letter.",
+            "zh": "他送了一封信。"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n066",
+            "quote": "Subodhi became angry."
+          },
+          {
+            "node_id": "n067",
+            "quote": "He stood up and knocked Wukong on the head three times."
+          },
+          {
+            "node_id": "n071",
+            "quote": "Wukong, however, smiled."
+          },
+          {
+            "node_id": "n072",
+            "quote": "None of the other students knew it, but Subodhi had given him a secret message."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 4,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep003-vocab-001",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 101,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "ocean",
+        "zh": "(五大洋之一的)洋"
+      },
+      "payload": {
+        "term": "ocean",
+        "ipa": "ˈəʊʃ(ə)n",
+        "pos": "n.",
+        "def": "n.[sing.]大海,海洋 [C](五大洋之一的)洋",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "003 菩提祖师 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "1b224ff69dad1465a5cc5b669de3e86012c279fd8dc10b6df97bfaaf5fbf1359"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep003-vocab-002",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 102,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "arrive",
+        "zh": "vi.到达"
+      },
+      "payload": {
+        "term": "arrive",
+        "ipa": "əˈraɪv",
+        "pos": "vi.",
+        "def": "vi.到达",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "003 菩提祖师 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "1b224ff69dad1465a5cc5b669de3e86012c279fd8dc10b6df97bfaaf5fbf1359"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep003-vocab-003",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 103,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "walk",
+        "zh": "步行的路径"
+      },
+      "payload": {
+        "term": "walk",
+        "ipa": "wɔː k",
+        "pos": "n.",
+        "def": "n.[C]行走,步行 v.行走,步行 n.[C]步行的路径",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "003 菩提祖师 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "1b224ff69dad1465a5cc5b669de3e86012c279fd8dc10b6df97bfaaf5fbf1359"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep003-vocab-004",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 104,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "visit",
+        "zh": "拜访,访问,参观"
+      },
+      "payload": {
+        "term": "visit",
+        "ipa": "ˈvɪzɪt",
+        "pos": "v.",
+        "def": "v.拜访,参观;访问 n.[C]拜访,访问,参观",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "003 菩提祖师 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "1b224ff69dad1465a5cc5b669de3e86012c279fd8dc10b6df97bfaaf5fbf1359"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep003-vocab-005",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 105,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "meet",
+        "zh": "v.遇见,相逢;迎接,满足"
+      },
+      "payload": {
+        "term": "meet",
+        "ipa": "miːt",
+        "pos": "v.",
+        "def": "v.遇见,相逢;迎接,满足",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "003 菩提祖师 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "1b224ff69dad1465a5cc5b669de3e86012c279fd8dc10b6df97bfaaf5fbf1359"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep003-vocab-006",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 106,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "mountain",
+        "zh": "高山"
+      },
+      "payload": {
+        "term": "mountain",
+        "ipa": "ˈmaʊntən",
+        "pos": "n.",
+        "def": "n.[C]高山",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "003 菩提祖师 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "1b224ff69dad1465a5cc5b669de3e86012c279fd8dc10b6df97bfaaf5fbf1359"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep003-vocab-007",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 107,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "cover",
+        "zh": "覆盖物,盖子,封面"
+      },
+      "payload": {
+        "term": "cover",
+        "ipa": "ˈkʌvə(r)",
+        "pos": "vt.",
+        "def": "vt.遮盖,覆盖;占(一片面积) n.[C]覆盖物,盖子,封面",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "003 菩提祖师 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "1b224ff69dad1465a5cc5b669de3e86012c279fd8dc10b6df97bfaaf5fbf1359"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep003-vocab-008",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 108,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "thick",
+        "zh": "adj.厚的,浓的"
+      },
+      "payload": {
+        "term": "thick",
+        "ipa": "θɪk",
+        "pos": "adj.",
+        "def": "adj.厚的,浓的",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "003 菩提祖师 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "1b224ff69dad1465a5cc5b669de3e86012c279fd8dc10b6df97bfaaf5fbf1359"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep003-vocab-009",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 109,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "forest",
+        "zh": "森林"
+      },
+      "payload": {
+        "term": "forest",
+        "ipa": "ˈfɒrɪst",
+        "pos": "n.",
+        "def": "n.[C,U]森林",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "003 菩提祖师 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "1b224ff69dad1465a5cc5b669de3e86012c279fd8dc10b6df97bfaaf5fbf1359"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep003-vocab-010",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 110,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "head",
+        "zh": "队首 vi.朝(某方向)行进"
+      },
+      "payload": {
+        "term": "head",
+        "ipa": "hed",
+        "pos": "n.",
+        "def": "n.[C]头(部)[C,U]负责人 [sing.]队首 vi.朝(某方向)行进",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "003 菩提祖师 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "1b224ff69dad1465a5cc5b669de3e86012c279fd8dc10b6df97bfaaf5fbf1359"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep003-vocab-011",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 111,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "drop",
+        "zh": "滴,下降"
+      },
+      "payload": {
+        "term": "drop",
+        "ipa": "drɒp",
+        "pos": "v.",
+        "def": "v.落下,掉下,扔下,降低 n.[C]滴,下降",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "003 菩提祖师 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "1b224ff69dad1465a5cc5b669de3e86012c279fd8dc10b6df97bfaaf5fbf1359"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep003-vocab-012",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 112,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "monkey",
+        "zh": "猴子"
+      },
+      "payload": {
+        "term": "monkey",
+        "ipa": "ˈmʌŋki",
+        "pos": "n.",
+        "def": "n.[C]猴子",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "003 菩提祖师 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "1b224ff69dad1465a5cc5b669de3e86012c279fd8dc10b6df97bfaaf5fbf1359"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "003 菩提祖师 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "6aa611f3519b1c1b9a0e2ba6ea1df382d8ec15282fd4f604121529763392590a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep003-vocab-013",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 113,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "talk",
+        "zh": "n.说话,交谈,演讲 vi.说话,交谈"
+      },
+      "payload": {
+        "term": "talk",
+        "ipa": "tɔːk",
+        "pos": "n.",
+        "def": "n.说话,交谈,演讲 vi.说话,交谈",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "003 菩提祖师 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "1b224ff69dad1465a5cc5b669de3e86012c279fd8dc10b6df97bfaaf5fbf1359"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep003-vocab-014",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 114,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "live[lɪv] [laɪv]",
+        "zh": "v.居住,生活 adj.活的,生动的,现场直播的"
+      },
+      "payload": {
+        "term": "live[lɪv] [laɪv]",
+        "ipa": "",
+        "pos": "v.",
+        "def": "v.居住,生活 adj.活的,生动的,现场直播的",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "003 菩提祖师 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "1b224ff69dad1465a5cc5b669de3e86012c279fd8dc10b6df97bfaaf5fbf1359"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "003 菩提祖师 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "6aa611f3519b1c1b9a0e2ba6ea1df382d8ec15282fd4f604121529763392590a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep003-vocab-015",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 115,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "forever",
+        "zh": "adv.永远"
+      },
+      "payload": {
+        "term": "forever",
+        "ipa": "fərˈevə(r)",
+        "pos": "adv.",
+        "def": "adv.永远",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "003 菩提祖师 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "1b224ff69dad1465a5cc5b669de3e86012c279fd8dc10b6df97bfaaf5fbf1359"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "003 菩提祖师 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "6aa611f3519b1c1b9a0e2ba6ea1df382d8ec15282fd4f604121529763392590a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep003-vocab-016",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 116,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "wise",
+        "zh": "adj.聪明的,明智的"
+      },
+      "payload": {
+        "term": "wise",
+        "ipa": "waɪz",
+        "pos": "adj.",
+        "def": "adj.聪明的,明智的",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "003 菩提祖师 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "1b224ff69dad1465a5cc5b669de3e86012c279fd8dc10b6df97bfaaf5fbf1359"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep003-vocab-017",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 117,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "find",
+        "zh": "vt.找到,发现,查找,查明"
+      },
+      "payload": {
+        "term": "find",
+        "ipa": "faɪnd",
+        "pos": "vt.",
+        "def": "vt.找到,发现,查找,查明",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "003 菩提祖师 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "1b224ff69dad1465a5cc5b669de3e86012c279fd8dc10b6df97bfaaf5fbf1359"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep003-vocab-018",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 118,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "follow",
+        "zh": "v.遵循,接受,跟随,关注"
+      },
+      "payload": {
+        "term": "follow",
+        "ipa": "ˈfɒləʊ",
+        "pos": "v.",
+        "def": "v.遵循,接受,跟随,关注",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "003 菩提祖师 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "1b224ff69dad1465a5cc5b669de3e86012c279fd8dc10b6df97bfaaf5fbf1359"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep003-vocab-019",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 119,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "thank",
+        "zh": "vt.感谢,谢谢"
+      },
+      "payload": {
+        "term": "thank",
+        "ipa": "θæŋk",
+        "pos": "vt.",
+        "def": "vt.感谢,谢谢",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "003 菩提祖师 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "1b224ff69dad1465a5cc5b669de3e86012c279fd8dc10b6df97bfaaf5fbf1359"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep003-vocab-020",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 120,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "sit",
+        "zh": "v.坐"
+      },
+      "payload": {
+        "term": "sit",
+        "ipa": "sɪt",
+        "pos": "v.",
+        "def": "v.坐",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "003 菩提祖师 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "1b224ff69dad1465a5cc5b669de3e86012c279fd8dc10b6df97bfaaf5fbf1359"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep003-vocab-021",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 121,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "old",
+        "zh": "adj.年老的,旧的,古老的,...... 岁的,过去的"
+      },
+      "payload": {
+        "term": "old",
+        "ipa": "əʊld",
+        "pos": "adj.",
+        "def": "adj.年老的,旧的,古老的,...... 岁的,过去的",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "003 菩提祖师 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "1b224ff69dad1465a5cc5b669de3e86012c279fd8dc10b6df97bfaaf5fbf1359"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep003-vocab-022",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 122,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "door",
+        "zh": "门"
+      },
+      "payload": {
+        "term": "door",
+        "ipa": "dɔː(r)",
+        "pos": "n.",
+        "def": "n.[C]门",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "003 菩提祖师 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "1b224ff69dad1465a5cc5b669de3e86012c279fd8dc10b6df97bfaaf5fbf1359"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep003-vocab-023",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 123,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "look",
+        "zh": "熊 vt.承受,忍受"
+      },
+      "payload": {
+        "term": "look",
+        "ipa": "lʊk",
+        "pos": "vi.",
+        "def": "vi.看 v.-link.看上去 n.[C]看,注视,外表,表情 见菩提祖师!” n.[C]熊 vt.承受,忍受",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "003 菩提祖师 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "1b224ff69dad1465a5cc5b669de3e86012c279fd8dc10b6df97bfaaf5fbf1359"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep003-vocab-024",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 124,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "rock",
+        "zh": "摇滚乐Subodhi was sitting 坐"
+      },
+      "payload": {
+        "term": "rock",
+        "ipa": "rɒk",
+        "pos": "n.",
+        "def": "n.[C,U]岩石[U]摇滚乐Subodhi was sitting 坐",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "003 菩提祖师 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "1b224ff69dad1465a5cc5b669de3e86012c279fd8dc10b6df97bfaaf5fbf1359"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep003-vocab-025",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 125,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "interest",
+        "zh": "趣味;利息 vt.使感兴趣,使关注"
+      },
+      "payload": {
+        "term": "interest",
+        "ipa": "ˈɪntrəst",
+        "pos": "n.",
+        "def": "n.兴趣,关注[U]趣味;利息 vt.使感兴趣,使关注",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "003 菩提祖师 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "6aa611f3519b1c1b9a0e2ba6ea1df382d8ec15282fd4f604121529763392590a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep003-vocab-026",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 126,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "create",
+        "zh": "vt.创造,创建,创作,引起,造 成"
+      },
+      "payload": {
+        "term": "create",
+        "ipa": "kriˈeɪt",
+        "pos": "vt.",
+        "def": "vt.创造,创建,创作,引起,造 成",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "003 菩提祖师 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "6aa611f3519b1c1b9a0e2ba6ea1df382d8ec15282fd4f604121529763392590a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep003-vocab-027",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 127,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "need",
+        "zh": "需要的事物"
+      },
+      "payload": {
+        "term": "need",
+        "ipa": "niːd",
+        "pos": "v.",
+        "def": "v.需要,必要,必需 n.[C,U]需要[C]需要的事物",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "003 菩提祖师 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "6aa611f3519b1c1b9a0e2ba6ea1df382d8ec15282fd4f604121529763392590a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep003-vocab-028",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 128,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "think",
+        "zh": "v.认为,想。思考"
+      },
+      "payload": {
+        "term": "think",
+        "ipa": "θɪŋk",
+        "pos": "v.",
+        "def": "v.认为,想。思考",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "003 菩提祖师 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "6aa611f3519b1c1b9a0e2ba6ea1df382d8ec15282fd4f604121529763392590a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep003-vocab-029",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 129,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "call",
+        "zh": "电话,叫声圈国"
+      },
+      "payload": {
+        "term": "call",
+        "ipa": "kɔː l",
+        "pos": "v.",
+        "def": "v.给......打电话,把......叫作,呼 喊 n.[C]电话,叫声圈国",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "003 菩提祖师 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "6aa611f3519b1c1b9a0e2ba6ea1df382d8ec15282fd4f604121529763392590a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep003-vocab-030",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 130,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "next",
+        "zh": "下一个(的) adv.紧接着,随后"
+      },
+      "payload": {
+        "term": "next",
+        "ipa": "nekst",
+        "pos": "adj.",
+        "def": "adj./n[sing.]下一个(的) adv.紧接着,随后",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "003 菩提祖师 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "6aa611f3519b1c1b9a0e2ba6ea1df382d8ec15282fd4f604121529763392590a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep003-vocab-031",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 131,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "year",
+        "zh": "年,岁"
+      },
+      "payload": {
+        "term": "year",
+        "ipa": "jɪə(r)",
+        "pos": "n.",
+        "def": "n.[C]年,岁",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "003 菩提祖师 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "6aa611f3519b1c1b9a0e2ba6ea1df382d8ec15282fd4f604121529763392590a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep003-vocab-032",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 132,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "listen",
+        "zh": "vi.听,倾听;注意听"
+      },
+      "payload": {
+        "term": "listen",
+        "ipa": "ˈlɪs(ə)n",
+        "pos": "vi.",
+        "def": "vi.听,倾听;注意听",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "003 菩提祖师 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "6aa611f3519b1c1b9a0e2ba6ea1df382d8ec15282fd4f604121529763392590a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep003-vocab-033",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 133,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "dance",
+        "zh": "舞蹈"
+      },
+      "payload": {
+        "term": "dance",
+        "ipa": "dɑː ns",
+        "pos": "v.",
+        "def": "v.跳舞 n.[C,U]舞蹈",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "003 菩提祖师 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "6aa611f3519b1c1b9a0e2ba6ea1df382d8ec15282fd4f604121529763392590a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep003-vocab-034",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 134,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "stand",
+        "zh": "v.忍受,站立"
+      },
+      "payload": {
+        "term": "stand",
+        "ipa": "stænd",
+        "pos": "v.",
+        "def": "v.忍受,站立",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "003 菩提祖师 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "6aa611f3519b1c1b9a0e2ba6ea1df382d8ec15282fd4f604121529763392590a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep003-vocab-035",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 135,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "up",
+        "zh": "adv.向上 prep.向......上游"
+      },
+      "payload": {
+        "term": "up",
+        "ipa": "ʌp",
+        "pos": "adv.",
+        "def": "adv.向上 prep.向......上游",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "003 菩提祖师 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "6aa611f3519b1c1b9a0e2ba6ea1df382d8ec15282fd4f604121529763392590a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep003-vocab-036",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 136,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "dare",
+        "zh": "挑战"
+      },
+      "payload": {
+        "term": "dare",
+        "ipa": "deə",
+        "pos": "vi.",
+        "def": "vi.敢于,胆敢 modal v.敢,敢于 n.[C]挑战",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "003 菩提祖师 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "6aa611f3519b1c1b9a0e2ba6ea1df382d8ec15282fd4f604121529763392590a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep003-vocab-037",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 137,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "teach",
+        "zh": "v.教,讲授,教导"
+      },
+      "payload": {
+        "term": "teach",
+        "ipa": "tiːtʃ",
+        "pos": "v.",
+        "def": "v.教,讲授,教导",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "003 菩提祖师 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "6aa611f3519b1c1b9a0e2ba6ea1df382d8ec15282fd4f604121529763392590a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep003-vocab-038",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 138,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "shout",
+        "zh": "呼喊,叫喊"
+      },
+      "payload": {
+        "term": "shout",
+        "ipa": "ʃaʊt",
+        "pos": "v.",
+        "def": "v.呼叫,喊叫 n.[C]呼喊,叫喊",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "003 菩提祖师 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "6aa611f3519b1c1b9a0e2ba6ea1df382d8ec15282fd4f604121529763392590a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep003-vocab-039",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 139,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "sorry",
+        "zh": "adj.抱歉的,难过的,惋惜的"
+      },
+      "payload": {
+        "term": "sorry",
+        "ipa": "ˈsɒri",
+        "pos": "adj.",
+        "def": "adj.抱歉的,难过的,惋惜的",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "003 菩提祖师 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "6aa611f3519b1c1b9a0e2ba6ea1df382d8ec15282fd4f604121529763392590a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep003-vocab-040",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 140,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "happy",
+        "zh": "adj.愉快的,高兴的,幸福的"
+      },
+      "payload": {
+        "term": "happy",
+        "ipa": "ˈhæpi",
+        "pos": "adj.",
+        "def": "adj.愉快的,高兴的,幸福的",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "003 菩提祖师 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "6aa611f3519b1c1b9a0e2ba6ea1df382d8ec15282fd4f604121529763392590a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep003-vocab-041",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 141,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "down",
+        "zh": "下来"
+      },
+      "payload": {
+        "term": "down",
+        "ipa": "daʊn",
+        "pos": "adj.",
+        "def": "下来",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ],
+        "gloss": "下来"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "003 菩提祖师 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "6aa611f3519b1c1b9a0e2ba6ea1df382d8ec15282fd4f604121529763392590a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep003-vocab-042",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 142,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "love",
+        "zh": "vt.很愿意,爱,喜爱 n.爱,关爱"
+      },
+      "payload": {
+        "term": "love",
+        "ipa": "lʌv",
+        "pos": "vt.",
+        "def": "vt.很愿意,爱,喜爱 n.爱,关爱",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "003 菩提祖师 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "6aa611f3519b1c1b9a0e2ba6ea1df382d8ec15282fd4f604121529763392590a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep003-vocab-043",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 143,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "learn",
+        "zh": "v.学习,学会,了解"
+      },
+      "payload": {
+        "term": "learn",
+        "ipa": "lɜː(r)n",
+        "pos": "v.",
+        "def": "v.学习,学会,了解",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "003 菩提祖师 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "6aa611f3519b1c1b9a0e2ba6ea1df382d8ec15282fd4f604121529763392590a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep003-vocab-044",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 144,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "here",
+        "zh": "adv.这就是,在这里"
+      },
+      "payload": {
+        "term": "here",
+        "ipa": "hɪə(r)",
+        "pos": "adv.",
+        "def": "adv.这就是,在这里",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "003 菩提祖师 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "6aa611f3519b1c1b9a0e2ba6ea1df382d8ec15282fd4f604121529763392590a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep003-vocab-045",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 145,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "long",
+        "zh": "adj.长的 adv.长久的"
+      },
+      "payload": {
+        "term": "long",
+        "ipa": "lɒŋ",
+        "pos": "adj.",
+        "def": "adj.长的 adv.长久的",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "003 菩提祖师 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "6aa611f3519b1c1b9a0e2ba6ea1df382d8ec15282fd4f604121529763392590a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep003-vocab-046",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 146,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "ask",
+        "zh": "v.请求,要求,询问"
+      },
+      "payload": {
+        "term": "ask",
+        "ipa": "ɑːsk",
+        "pos": "v.",
+        "def": "v.请求,要求,询问",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "003 菩提祖师 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "6aa611f3519b1c1b9a0e2ba6ea1df382d8ec15282fd4f604121529763392590a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep003-vocab-047",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 147,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "know",
+        "zh": "v.知道,了解"
+      },
+      "payload": {
+        "term": "know",
+        "ipa": "nəʊ",
+        "pos": "v.",
+        "def": "v.知道,了解",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "003 菩提祖师 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "6aa611f3519b1c1b9a0e2ba6ea1df382d8ec15282fd4f604121529763392590a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep003-vocab-048",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 148,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "tell",
+        "zh": "vt.讲述,告诉,分辨,辨别"
+      },
+      "payload": {
+        "term": "tell",
+        "ipa": "tel",
+        "pos": "vt.",
+        "def": "vt.讲述,告诉,分辨,辨别",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "003 菩提祖师 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "6aa611f3519b1c1b9a0e2ba6ea1df382d8ec15282fd4f604121529763392590a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep003-vocab-049",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 149,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "like",
+        "zh": "喜好,爱好 conj.像......一样,如同"
+      },
+      "payload": {
+        "term": "like",
+        "ipa": "laɪk",
+        "pos": "vt.",
+        "def": "vt.喜欢,喜爱 prep.像,怎么样,例如 n.[pl.]喜好,爱好 conj.像......一样,如同",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "003 菩提祖师 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "6aa611f3519b1c1b9a0e2ba6ea1df382d8ec15282fd4f604121529763392590a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep003-vocab-050",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 150,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "may",
+        "zh": "modal v.也许,可能"
+      },
+      "payload": {
+        "term": "may",
+        "ipa": "meɪ",
+        "pos": "",
+        "def": "modal v.也许,可能",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "003 菩提祖师 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "6aa611f3519b1c1b9a0e2ba6ea1df382d8ec15282fd4f604121529763392590a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep003-vocab-051",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 151,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "make",
+        "zh": "v.使成为,制造,做,做出,组 成,挣钱,铺床"
+      },
+      "payload": {
+        "term": "make",
+        "ipa": "meɪk",
+        "pos": "v.",
+        "def": "v.使成为,制造,做,做出,组 成,挣钱,铺床",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "003 菩提祖师 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "6aa611f3519b1c1b9a0e2ba6ea1df382d8ec15282fd4f604121529763392590a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep003-vocab-052",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 152,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "not",
+        "zh": "adv.不,没有"
+      },
+      "payload": {
+        "term": "not",
+        "ipa": "nɒt",
+        "pos": "adv.",
+        "def": "adv.不,没有",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "003 菩提祖师 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "6aa611f3519b1c1b9a0e2ba6ea1df382d8ec15282fd4f604121529763392590a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep003-vocab-053",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 153,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "forget",
+        "zh": "v.忘记,遗忘"
+      },
+      "payload": {
+        "term": "forget",
+        "ipa": "fəˈɡet",
+        "pos": "v.",
+        "def": "v.忘记,遗忘",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "003 菩提祖师 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "6aa611f3519b1c1b9a0e2ba6ea1df382d8ec15282fd4f604121529763392590a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep003-vocab-054",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 154,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "something",
+        "zh": "pron.(表示不确切的描述或数 量)大致,某事,某物"
+      },
+      "payload": {
+        "term": "something",
+        "ipa": "ˈsʌmθɪŋ",
+        "pos": "pron.",
+        "def": "pron.(表示不确切的描述或数 量)大致,某事,某物",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "003 菩提祖师 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "6aa611f3519b1c1b9a0e2ba6ea1df382d8ec15282fd4f604121529763392590a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep003-vocab-055",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 155,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "else",
+        "zh": "adv.别的,其他的"
+      },
+      "payload": {
+        "term": "else",
+        "ipa": "els",
+        "pos": "adv.",
+        "def": "adv.别的,其他的",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "003 菩提祖师 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "6aa611f3519b1c1b9a0e2ba6ea1df382d8ec15282fd4f604121529763392590a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep003-vocab-056",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 156,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "magic",
+        "zh": "魔术;魔法,魔力,魅力"
+      },
+      "payload": {
+        "term": "magic",
+        "ipa": "ˈmædʒɪk",
+        "pos": "adj.",
+        "def": "adj.有魔力的,有神奇力量的 n.[U]魔术;魔法,魔力,魅力",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "003 菩提祖师 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "6aa611f3519b1c1b9a0e2ba6ea1df382d8ec15282fd4f604121529763392590a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep003-vocab-057",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 157,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "exercise",
+        "zh": "练习"
+      },
+      "payload": {
+        "term": "exercise",
+        "ipa": "ˈeksəsaɪz",
+        "pos": "v.",
+        "def": "v.锻炼,练习 n.[U]锻炼[C]练习",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "003 菩提祖师 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "6aa611f3519b1c1b9a0e2ba6ea1df382d8ec15282fd4f604121529763392590a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep003-vocab-058",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 158,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "say",
+        "zh": "v.说,讲"
+      },
+      "payload": {
+        "term": "say",
+        "ipa": "seɪ",
+        "pos": "v.",
+        "def": "v.说,讲",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "003 菩提祖师 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "6aa611f3519b1c1b9a0e2ba6ea1df382d8ec15282fd4f604121529763392590a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep003-vocab-059",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 159,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "angry",
+        "zh": "adj.发怒的,愤怒的,生气的"
+      },
+      "payload": {
+        "term": "angry",
+        "ipa": "ˈæŋɡri",
+        "pos": "adj.",
+        "def": "adj.发怒的,愤怒的,生气的",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "003 菩提祖师 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "6aa611f3519b1c1b9a0e2ba6ea1df382d8ec15282fd4f604121529763392590a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep003-vocab-060",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 160,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "knock",
+        "zh": "敲击声,敲击"
+      },
+      "payload": {
+        "term": "knock",
+        "ipa": "nɒk",
+        "pos": "v.",
+        "def": "v.敲,击,撞 n.[C]敲击声,敲击",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "003 菩提祖师 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "6aa611f3519b1c1b9a0e2ba6ea1df382d8ec15282fd4f604121529763392590a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep003-vocab-061",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 161,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "three",
+        "zh": "num.三"
+      },
+      "payload": {
+        "term": "three",
+        "ipa": "θriː",
+        "pos": "num.",
+        "def": "num.三",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "003 菩提祖师 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "6aa611f3519b1c1b9a0e2ba6ea1df382d8ec15282fd4f604121529763392590a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep003-vocab-062",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 162,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "leave",
+        "zh": "休假"
+      },
+      "payload": {
+        "term": "leave",
+        "ipa": "liːv",
+        "pos": "v.",
+        "def": "v.离开,留下,使处于...... n.[U]休假",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "003 菩提祖师 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "6aa611f3519b1c1b9a0e2ba6ea1df382d8ec15282fd4f604121529763392590a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep003-vocab-063",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 163,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "agree",
+        "zh": "v.同意,赞成,应允"
+      },
+      "payload": {
+        "term": "agree",
+        "ipa": "əˈɡriː",
+        "pos": "v.",
+        "def": "v.同意,赞成,应允",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "003 菩提祖师 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "6aa611f3519b1c1b9a0e2ba6ea1df382d8ec15282fd4f604121529763392590a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep003-vocab-064",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 164,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "however",
+        "zh": "adv.然而,不过,不管"
+      },
+      "payload": {
+        "term": "however",
+        "ipa": "haʊˈevə(r)",
+        "pos": "adv.",
+        "def": "adv.然而,不过,不管",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "003 菩提祖师 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "6aa611f3519b1c1b9a0e2ba6ea1df382d8ec15282fd4f604121529763392590a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep003-vocab-065",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 165,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "smile",
+        "zh": "笑,微笑"
+      },
+      "payload": {
+        "term": "smile",
+        "ipa": "smaɪ",
+        "pos": "vi.",
+        "def": "vi./n.[C]笑,微笑",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "003 菩提祖师 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "6aa611f3519b1c1b9a0e2ba6ea1df382d8ec15282fd4f604121529763392590a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep003-vocab-066",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 166,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "secret",
+        "zh": "秘诀 adj.秘密的,保密的,隐秘的"
+      },
+      "payload": {
+        "term": "secret",
+        "ipa": "ˈsiːkrət",
+        "pos": "n.",
+        "def": "n.[C]秘密[sing.]秘诀 adj.秘密的,保密的,隐秘的",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "003 菩提祖师 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "6aa611f3519b1c1b9a0e2ba6ea1df382d8ec15282fd4f604121529763392590a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep003-vocab-067",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 167,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "message",
+        "zh": "信息,消息 vt.给......发消息"
+      },
+      "payload": {
+        "term": "message",
+        "ipa": "ˈmesɪdʒ",
+        "pos": "n.",
+        "def": "n.[C]信息,消息 vt.给......发消息",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "003 菩提祖师 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "6aa611f3519b1c1b9a0e2ba6ea1df382d8ec15282fd4f604121529763392590a"
+        }
+      ],
+      "review_status": "machine_verified"
+    }
+  ],
+  "teacher_guide": null,
+  "review": {
+    "status": "draft",
+    "reviewed_at": null,
+    "card_stats": {
+      "total": 72,
+      "sentence_choice": 5,
+      "word_review": 67,
+      "machine_verified": 69,
+      "assistant_reviewed": 3,
+      "verified": 72,
+      "needs_review": 0
+    }
+  },
+  "generated_at": "2026-08-31T04:49:34.762758+00:00"
+}

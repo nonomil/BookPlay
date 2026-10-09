@@ -1,0 +1,584 @@
+{
+ "schema_version": 1,
+ "ep": 74,
+ "title": {
+  "en": "Curious Ear",
+  "zh": "西游记 第74集"
+ },
+ "collection": "c10",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "imp",
+   "nameZh": "小妖",
+   "mode": "sparring",
+   "sprite": "imp"
+  },
+  "minors": [
+   {
+    "id": "imp",
+    "nameZh": "小妖",
+    "sprite": "imp"
+   }
+  ]
+ },
+ "background": {
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep74/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "Guanyin recited the Tight Headband spell.",
+   "textZh": "观音诵念了\"紧头带咒\"。",
+   "illustration": "assets/adv_frames/ep74/f1.jpg",
+   "sourceNodeId": "n001",
+   "audioRef": "sent_en:Guanyin recited the Tight Headband spell."
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "Both Wukongs fell to the ground, howling in pain.",
+   "textZh": "两位悟空均跌倒在地,因剧痛而悲鸣。",
+   "illustration": "assets/adv_frames/ep74/f2.jpg",
+   "sourceNodeId": "n002",
+   "audioRef": "sent_en:Both Wukongs fell to the ground, howling in pain."
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "curious",
+   "zh": "好奇心强的,渴望知道更多的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep74/f1.jpg"
+  },
+  {
+   "term": "howl",
+   "zh": "吼叫",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep74/f2.jpg"
+  },
+  {
+   "term": "used to",
+   "zh": "过去经常...",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep74/f2.jpg"
+  },
+  {
+   "term": "who is",
+   "zh": "谁是谁",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep74/f2.jpg"
+  },
+  {
+   "term": "fake",
+   "zh": "1. 仿冒品,冒牌货,(2. 假的,仿冒的)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep74/f1.jpg"
+  },
+  {
+   "term": "dodge",
+   "zh": "(快速)躲闪,灵活地避开",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep74/f0.jpg"
+  },
+  {
+   "term": "blow",
+   "zh": "1. 打击,(2. (用嘴)吹)",
+   "ipa": "bləʊ",
+   "illustration": "assets/adv_frames/ep74/f2.jpg"
+  },
+  {
+   "term": "guard",
+   "zh": "警卫,保安",
+   "ipa": "ɡɑː(r)d",
+   "illustration": "assets/adv_frames/ep74/f2.jpg"
+  },
+  {
+   "term": "narrow",
+   "zh": "1. 变窄,收缩,(2. 狭窄的)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep74/f2.jpg"
+  },
+  {
+   "term": "spirit",
+   "zh": "1. 精灵,妖精,(2. 生气,活力,3. 精神)",
+   "ipa": "ˈspɪrɪt",
+   "illustration": "assets/adv_frames/ep74/f1.jpg"
+  },
+  {
+   "term": "fled",
+   "zh": "逃走,逃逸 (flee-fled)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep74/f3.jpg"
+  },
+  {
+   "term": "all over",
+   "zh": "到处",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep74/f1.jpg"
+  }
+ ],
+ "wordPool": [
+  {
+   "term": "curious",
+   "zh": "好奇心强的,渴望知道更多的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep74/f1.jpg"
+  },
+  {
+   "term": "howl",
+   "zh": "吼叫",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep74/f2.jpg"
+  },
+  {
+   "term": "used to",
+   "zh": "过去经常...",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep74/f2.jpg"
+  },
+  {
+   "term": "who is",
+   "zh": "谁是谁",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep74/f2.jpg"
+  },
+  {
+   "term": "fake",
+   "zh": "1. 仿冒品,冒牌货,(2. 假的,仿冒的)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep74/f1.jpg"
+  },
+  {
+   "term": "dodge",
+   "zh": "(快速)躲闪,灵活地避开",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep74/f0.jpg"
+  },
+  {
+   "term": "blow",
+   "zh": "1. 打击,(2. (用嘴)吹)",
+   "ipa": "bləʊ",
+   "illustration": "assets/adv_frames/ep74/f2.jpg"
+  },
+  {
+   "term": "guard",
+   "zh": "警卫,保安",
+   "ipa": "ɡɑː(r)d",
+   "illustration": "assets/adv_frames/ep74/f2.jpg"
+  },
+  {
+   "term": "narrow",
+   "zh": "1. 变窄,收缩,(2. 狭窄的)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep74/f2.jpg"
+  },
+  {
+   "term": "spirit",
+   "zh": "1. 精灵,妖精,(2. 生气,活力,3. 精神)",
+   "ipa": "ˈspɪrɪt",
+   "illustration": "assets/adv_frames/ep74/f1.jpg"
+  },
+  {
+   "term": "fled",
+   "zh": "逃走,逃逸 (flee-fled)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep74/f3.jpg"
+  },
+  {
+   "term": "all over",
+   "zh": "到处",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep74/f1.jpg"
+  },
+  {
+   "term": "knock over",
+   "zh": "打翻,撞倒",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep74/f0.jpg"
+  },
+  {
+   "term": "statue",
+   "zh": "雕像,塑像,铸像",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep74/f0.jpg"
+  },
+  {
+   "term": "storm",
+   "zh": "1. 怒气冲冲地奔跑,横冲直撞,(2. 暴风雨)",
+   "ipa": "stɔː(r)m",
+   "illustration": "assets/adv_frames/ep74/f1.jpg"
+  },
+  {
+   "term": "furious",
+   "zh": "非常愤怒的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep74/f2.jpg"
+  },
+  {
+   "term": "boom",
+   "zh": "1. 用低沉洪亮的声音说话,(2. 隆隆声)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep74/f3.jpg"
+  },
+  {
+   "term": "Your Majesty",
+   "zh": "尊敬的陛下",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep74/f0.jpg"
+  },
+  {
+   "term": "punish",
+   "zh": "惩罚,处罚",
+   "ipa": "ˈpʌnɪʃ",
+   "illustration": "assets/adv_frames/ep74/f1.jpg"
+  },
+  {
+   "term": "pretend",
+   "zh": "假装,伪装",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep74/f1.jpg"
+  },
+  {
+   "term": "stand still",
+   "zh": "站着别动",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep74/f0.jpg"
+  },
+  {
+   "term": "get a good",
+   "zh": "仔细看清",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep74/f1.jpg"
+  },
+  {
+   "term": "exactly",
+   "zh": "1. 准确地,(2. (回应的话)对,是的)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep74/f0.jpg"
+  },
+  {
+   "term": "alike",
+   "zh": "相同的,相像的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep74/f0.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "curious",
+     "zh": "好奇心强的,渴望知道更多的",
+     "sprite": "imp"
+    },
+    {
+     "term": "howl",
+     "zh": "吼叫",
+     "sprite": "imp"
+    },
+    {
+     "term": "used to",
+     "zh": "过去经常...",
+     "sprite": "imp"
+    },
+    {
+     "term": "who is",
+     "zh": "谁是谁",
+     "sprite": "imp"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "fake",
+     "zh": "1. 仿冒品,冒牌货,(2. 假的,仿冒的)",
+     "sprite": "imp"
+    },
+    {
+     "term": "dodge",
+     "zh": "(快速)躲闪,灵活地避开",
+     "sprite": "imp"
+    },
+    {
+     "term": "blow",
+     "zh": "1. 打击,(2. (用嘴)吹)",
+     "sprite": "imp"
+    },
+    {
+     "term": "guard",
+     "zh": "警卫,保安",
+     "sprite": "imp"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "narrow",
+    "zh": "1. 变窄,收缩,(2. 狭窄的)"
+   },
+   {
+    "term": "spirit",
+    "zh": "1. 精灵,妖精,(2. 生气,活力,3. 精神)"
+   },
+   {
+    "term": "fled",
+    "zh": "逃走,逃逸 (flee-fled)"
+   },
+   {
+    "term": "all over",
+    "zh": "到处"
+   }
+  ],
+  "taunts": [
+   "imp.1",
+   "imp.2",
+   "imp.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=74",
+ "npcDialogue": {
+  "intro": {
+   "id": "ep74-map-intro",
+   "lines": [
+    {
+     "id": "ep74-map-intro-1",
+     "sourceNodeId": "n001",
+     "speaker": "narrator",
+     "textEn": "Guanyin recited the Tight Headband spell.",
+     "textZh": "观音诵念了\"紧头带咒\"。",
+     "audioRef": "sent_en:Guanyin recited the Tight Headband spell.",
+     "audioStart": 10.934,
+     "audioEnd": 18.035
+    },
+    {
+     "id": "ep74-map-intro-2",
+     "sourceNodeId": "n002",
+     "speaker": "narrator",
+     "textEn": "Both Wukongs fell to the ground, howling in pain.",
+     "textZh": "两位悟空均跌倒在地,因剧痛而悲鸣。",
+     "audioRef": "sent_en:Both Wukongs fell to the ground, howling in pain.",
+     "audioStart": 18.036,
+     "audioEnd": 22.555
+    }
+   ]
+  },
+  "quiz": {
+   "id": "ep74-map-quiz",
+   "lines": [
+    {
+     "id": "ep74-map-quiz-1",
+     "sourceNodeId": "n035",
+     "speaker": "narrator",
+     "textEn": "Finally the emperor shrugged.",
+     "textZh": "最后,皇帝耸了耸肩。",
+     "audioRef": "sent_en:Finally the emperor shrugged.",
+     "audioStart": 167.569,
+     "audioEnd": 169.744
+    }
+   ],
+   "question": {
+    "id": "ep074-official-quiz-001",
+    "textEn": "who knew which was the real wukong?",
+    "textZh": "谁知道哪个才是真的悟空？"
+   },
+   "word": {
+    "term": "curious",
+    "zh": "好奇心强的,渴望知道更多的",
+    "ipa": ""
+   },
+   "options": [
+    {
+     "id": "a",
+     "textEn": "curious ear",
+     "textZh": "好奇的耳朵",
+     "correct": true,
+     "feedback": "对了。好奇的耳朵"
+    },
+    {
+     "id": "b",
+     "textEn": "venus",
+     "textZh": "金星",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    },
+    {
+     "id": "c",
+     "textEn": "the jade emperor",
+     "textZh": "玉皇大帝",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    }
+   ],
+   "lessonCardId": "ep074-official-quiz-001"
+  }
+ },
+ "map": {
+  "theme": "generic",
+  "coordinateSpace": "world-normalized",
+  "worldTiles": 2,
+  "regions": {
+   "hero": 0,
+   "waves": [
+    0,
+    1
+   ],
+   "npc": {
+    "intro": 0,
+    "quiz": 1
+   },
+   "boss": 3
+  },
+  "walkable": {
+   "space": "world",
+   "x": 0.0,
+   "y": 0.16,
+   "w": 1.0,
+   "h": 0.79,
+   "rects": [
+    {
+     "x": 0.0,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.66,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    }
+   ]
+  },
+  "heroSpawn": {
+   "x": 0.06,
+   "y": 0.31
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.31,
+    "y": 0.23
+   },
+   {
+    "x": 0.38,
+    "y": 0.27
+   },
+   {
+    "x": 0.34,
+    "y": 0.33
+   },
+   {
+    "x": 0.41,
+    "y": 0.24
+   }
+  ],
+  "waveSpawns": [
+   [
+    {
+     "x": 0.31,
+     "y": 0.23
+    },
+    {
+     "x": 0.38,
+     "y": 0.27
+    },
+    {
+     "x": 0.34,
+     "y": 0.33
+    },
+    {
+     "x": 0.41,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.81,
+     "y": 0.23
+    },
+    {
+     "x": 0.88,
+     "y": 0.27
+    },
+    {
+     "x": 0.84,
+     "y": 0.33
+    },
+    {
+     "x": 0.91,
+     "y": 0.24
+    }
+   ]
+  ],
+  "orbSpawns": [
+   [
+    {
+     "x": 0.11,
+     "y": 0.25
+    },
+    {
+     "x": 0.16,
+     "y": 0.31
+    },
+    {
+     "x": 0.12,
+     "y": 0.37
+    },
+    {
+     "x": 0.18,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.61,
+     "y": 0.25
+    },
+    {
+     "x": 0.66,
+     "y": 0.31
+    },
+    {
+     "x": 0.62,
+     "y": 0.37
+    },
+    {
+     "x": 0.68,
+     "y": 0.24
+    }
+   ]
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "imp",
+    "nameZh": "小妖",
+    "x": 0.08,
+    "y": 0.26
+   },
+   {
+    "role": "quiz",
+    "sprite": "imp",
+    "nameZh": "小妖",
+    "x": 0.7,
+    "y": 0.39
+   }
+  ],
+  "bossSpot": {
+   "x": 0.94,
+   "y": 0.85
+  }
+ }
+}

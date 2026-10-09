@@ -1,0 +1,2067 @@
+{
+  "schema_version": 1,
+  "episode": 75,
+  "title": {
+    "en": "Battle of the Wukongs",
+    "zh": "西游记 第75集"
+  },
+  "sources": [
+    {
+      "kind": "courseware_main_pptx",
+      "file": "G:\\Game\\BookPlay书戏\\data\\西游记课件\\3.3西游记  Journey to the West PPT课件\\075_Journey to the West 75_Battle of the Wukongs.pptx",
+      "sha256": "828d770506afd1b8d6d9912beab4e999c692170b51ed3e4c9c8e77deddb8e5ea",
+      "pages": 20
+    },
+    {
+      "kind": "official_quiz_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+      "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929",
+      "pages": 131
+    },
+    {
+      "kind": "intensive_reader_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\02-西游记精读版台词本\\1、带标注版PDF 108集\\075 两个悟空之战 上.pdf",
+      "sha256": "b62592441bf23c82413dc2b6aa6d1bce8d38e6480b534199820d4d502446b450",
+      "pages": 4
+    },
+    {
+      "kind": "intensive_reader_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\02-西游记精读版台词本\\1、带标注版PDF 108集\\075 两个悟空之战 下.pdf",
+      "sha256": "12441ecdfdb28e85c69d12df796768290302ef87920c5e98a20d2b28453c387f",
+      "pages": 4
+    },
+    {
+      "kind": "courseware_screenshots_pptx",
+      "file": "G:\\Game\\BookPlay书戏\\data\\西游记课件\\西游记-外教课动画截图\\Journey to the West 075  Battle of the Wukongs_20240114123205.pptx",
+      "sha256": "89f1e0a6e9e614503ecfd69d1dca9ac68534857f0706177e91f9698c54b4c68f",
+      "pages": 48
+    }
+  ],
+  "cards": [
+    {
+      "card_id": "ep075-official-quiz-001",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 1,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "which is not true?",
+        "zh": "哪一项是不正确的？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "guanyin found the fake wukong.",
+            "zh": "观音找到了假的悟空。"
+          },
+          {
+            "id": "b",
+            "en": "wukong rejoined the tang monk.",
+            "zh": "悟空重新加入了唐僧。"
+          },
+          {
+            "id": "c",
+            "en": "the two wukongs battled across the sky.",
+            "zh": "两个悟空在天空中战斗。"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n026",
+            "quote": "Clouds swirled and thunder boomed as the two mighty spirits battled across the sky."
+          },
+          {
+            "node_id": "n051",
+            "quote": "\"And I know that <font color=\"#ffff00\"><i>you</i></font> are a fake.\""
+          },
+          {
+            "node_id": "n054",
+            "quote": "\"I've trapped the fake Wukong under this bowl,\" said Buddha."
+          },
+          {
+            "node_id": "n062",
+            "quote": "Guanyin decided it was time for Wukong to rejoin his companions on the journey."
+          },
+          {
+            "node_id": "n063",
+            "quote": "She and the monkey found the Tang Monk and the others along the road to the west."
+          },
+          {
+            "node_id": "n065",
+            "quote": "\"You must keep Wukong with you,\" explained Guanyin."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 90,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep075-official-quiz-002",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 2,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "whom did curious ear tell the wukongs to see?",
+        "zh": "好奇耳告诉悟空们去见谁？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "buddha",
+            "zh": "佛陀"
+          },
+          {
+            "id": "b",
+            "en": "guanyin",
+            "zh": "观音"
+          },
+          {
+            "id": "c",
+            "en": "the judge of the dead",
+            "zh": "死者的审判者"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n014",
+            "quote": "\"Buddha can help you,\" said Curious Ear."
+          },
+          {
+            "node_id": "n016",
+            "quote": "\"Of course!\" cried one Wukong. \"We'll go see Buddha!\""
+          },
+          {
+            "node_id": "n020",
+            "quote": "\"That's because you know Buddha is going to see who you really are.\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 90,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep075-official-quiz-003",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 3,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "where did buddha trap the fake wukong?",
+        "zh": "佛陀在哪里困住了假悟空？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "under a bowl",
+            "zh": "在碗下面"
+          },
+          {
+            "id": "b",
+            "en": "in his hand",
+            "zh": "在他手里"
+          },
+          {
+            "id": "c",
+            "en": "under a mountain",
+            "zh": "在一座山下"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n054",
+            "quote": "\"I've trapped the fake Wukong under this bowl,\" said Buddha."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 90,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep075-official-quiz-004",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 4,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "why did the monkey spirit want to become wukong?",
+        "zh": "为什么猴子精想要变成悟空？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "wukong was powerful.",
+            "zh": "悟空很强大。"
+          },
+          {
+            "id": "b",
+            "en": "wukong had many friends.",
+            "zh": "悟空有很多朋友。"
+          },
+          {
+            "id": "c",
+            "en": "wukong knew the tang monk.",
+            "zh": "悟空认识唐僧。"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n055",
+            "quote": "When Buddha lifted the bowl, a tiny monkey spirit lay on the table."
+          },
+          {
+            "node_id": "n057",
+            "quote": "\"He was a monkey who became an evil spirit,\" said Buddha."
+          },
+          {
+            "node_id": "n058",
+            "quote": "\"He wanted to be you because you're so powerful.\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 90,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep075-official-quiz-005",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 5,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "what did guanyin tell the tang monk?",
+        "zh": "观音告诉唐僧什么？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "he must keep wukong with him.",
+            "zh": "他必须把悟空留在身边。"
+          },
+          {
+            "id": "b",
+            "en": "he must punish wukong.",
+            "zh": "他必须惩罚悟空。"
+          },
+          {
+            "id": "c",
+            "en": "wukong was an evil spirit.",
+            "zh": "悟空是一个邪恶的灵魂。"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n062",
+            "quote": "Guanyin decided it was time for Wukong to rejoin his companions on the journey."
+          },
+          {
+            "node_id": "n063",
+            "quote": "She and the monkey found the Tang Monk and the others along the road to the west."
+          },
+          {
+            "node_id": "n064",
+            "quote": "The bodhisattva told the Tang Monk that it wasn't Wukong who'd attacked him."
+          },
+          {
+            "node_id": "n065",
+            "quote": "\"You must keep Wukong with you,\" explained Guanyin."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 90,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep075-vocab-001",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 101,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "able",
+        "zh": "adj.能够"
+      },
+      "payload": {
+        "term": "able",
+        "ipa": "ˈeɪbl",
+        "pos": "adj.",
+        "def": "adj.能够",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "075 两个悟空之战 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "b62592441bf23c82413dc2b6aa6d1bce8d38e6480b534199820d4d502446b450"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep075-vocab-002",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 102,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "see",
+        "zh": "v.理解,明白,观看,会见,看 见,送别,确保"
+      },
+      "payload": {
+        "term": "see",
+        "ipa": "siː",
+        "pos": "v.",
+        "def": "v.理解,明白,观看,会见,看 见,送别,确保",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "075 两个悟空之战 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "b62592441bf23c82413dc2b6aa6d1bce8d38e6480b534199820d4d502446b450"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep075-vocab-003",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 103,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "sure",
+        "zh": "adv.当然,肯定,一定 adj.确信,确定,一定"
+      },
+      "payload": {
+        "term": "sure",
+        "ipa": "ʃʊə(r)",
+        "pos": "adv.",
+        "def": "adv.当然,肯定,一定 adj.确信,确定,一定",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "075 两个悟空之战 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "b62592441bf23c82413dc2b6aa6d1bce8d38e6480b534199820d4d502446b450"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep075-vocab-004",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 104,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "worry",
+        "zh": "令人担忧的事"
+      },
+      "payload": {
+        "term": "worry",
+        "ipa": "ˈwʌri",
+        "pos": "v.",
+        "def": "v./n.[C]担心,担忧 n.[C]令人担忧的事",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "075 两个悟空之战 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "b62592441bf23c82413dc2b6aa6d1bce8d38e6480b534199820d4d502446b450"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep075-vocab-005",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 105,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "nervous",
+        "zh": "adj.焦虑的,担忧的;神经系统的"
+      },
+      "payload": {
+        "term": "nervous",
+        "ipa": "ˈnɜː(r)vəs",
+        "pos": "adj.",
+        "def": "adj.焦虑的,担忧的;神经系统的",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "075 两个悟空之战 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "b62592441bf23c82413dc2b6aa6d1bce8d38e6480b534199820d4d502446b450"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep075-vocab-006",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 106,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "get",
+        "zh": "走出"
+      },
+      "payload": {
+        "term": "get",
+        "ipa": "ɡet",
+        "pos": "vt.",
+        "def": "走出",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ],
+        "gloss": "走出"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "075 两个悟空之战 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "b62592441bf23c82413dc2b6aa6d1bce8d38e6480b534199820d4d502446b450"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep075-vocab-007",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 107,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "land",
+        "zh": "国家 v.降落,着陆"
+      },
+      "payload": {
+        "term": "land",
+        "ipa": "lænd",
+        "pos": "n.",
+        "def": "n.[U]大陆,土地 [C]国家 v.降落,着陆",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "075 两个悟空之战 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "b62592441bf23c82413dc2b6aa6d1bce8d38e6480b534199820d4d502446b450"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep075-vocab-008",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 108,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "cloud",
+        "zh": "云,云朵"
+      },
+      "payload": {
+        "term": "cloud",
+        "ipa": "klaʊd",
+        "pos": "n.",
+        "def": "n.[C,U]云,云朵",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "075 两个悟空之战 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "b62592441bf23c82413dc2b6aa6d1bce8d38e6480b534199820d4d502446b450"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep075-vocab-009",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 109,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "spirit",
+        "zh": "情绪"
+      },
+      "payload": {
+        "term": "spirit",
+        "ipa": "ˈspɪrɪt",
+        "pos": "n.",
+        "def": "n.[U]勇气,意志,实质 [C]灵魂,鬼魂,幽灵 [C,U]精神 [pl.]情绪",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "075 两个悟空之战 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "b62592441bf23c82413dc2b6aa6d1bce8d38e6480b534199820d4d502446b450"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "075 两个悟空之战 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "12441ecdfdb28e85c69d12df796768290302ef87920c5e98a20d2b28453c387f"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep075-vocab-010",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 110,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "across",
+        "zh": "adv.过,穿过,在对面 prep.过,遍及"
+      },
+      "payload": {
+        "term": "across",
+        "ipa": "əˈkrɒs",
+        "pos": "adv.",
+        "def": "adv.过,穿过,在对面 prep.过,遍及",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "075 两个悟空之战 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "b62592441bf23c82413dc2b6aa6d1bce8d38e6480b534199820d4d502446b450"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep075-vocab-011",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 111,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "sky",
+        "zh": "天空"
+      },
+      "payload": {
+        "term": "sky",
+        "ipa": "skaɪ",
+        "pos": "n.",
+        "def": "n.[C,U]天空",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "075 两个悟空之战 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "b62592441bf23c82413dc2b6aa6d1bce8d38e6480b534199820d4d502446b450"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep075-vocab-012",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 112,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "arrive",
+        "zh": "vi.到达"
+      },
+      "payload": {
+        "term": "arrive",
+        "ipa": "əˈraɪv",
+        "pos": "vi.",
+        "def": "vi.到达",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "075 两个悟空之战 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "b62592441bf23c82413dc2b6aa6d1bce8d38e6480b534199820d4d502446b450"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep075-vocab-013",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 113,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "guard",
+        "zh": "警卫,看守;防护装置 vt.守卫,保卫"
+      },
+      "payload": {
+        "term": "guard",
+        "ipa": "ɡɑː (r)d",
+        "pos": "n.",
+        "def": "n.[C]警卫,看守;防护装置 vt.守卫,保卫",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "075 两个悟空之战 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "b62592441bf23c82413dc2b6aa6d1bce8d38e6480b534199820d4d502446b450"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep075-vocab-014",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 114,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "rush",
+        "zh": "迅速移动,仓促,急 促"
+      },
+      "payload": {
+        "term": "rush",
+        "ipa": "rʌʃ",
+        "pos": "v.",
+        "def": "v./n.[sing.]迅速移动,仓促,急 促",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "075 两个悟空之战 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "b62592441bf23c82413dc2b6aa6d1bce8d38e6480b534199820d4d502446b450"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep075-vocab-015",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 115,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "fight",
+        "zh": "打架,战斗 v.与......作斗争"
+      },
+      "payload": {
+        "term": "fight",
+        "ipa": "faɪt",
+        "pos": "v.",
+        "def": "v./n.[C]打架,战斗 v.与......作斗争",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "075 两个悟空之战 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "b62592441bf23c82413dc2b6aa6d1bce8d38e6480b534199820d4d502446b450"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep075-vocab-016",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 116,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "tell",
+        "zh": "vt.讲述,告诉,分辨,辨别"
+      },
+      "payload": {
+        "term": "tell",
+        "ipa": "tel",
+        "pos": "vt.",
+        "def": "vt.讲述,告诉,分辨,辨别",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "075 两个悟空之战 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "b62592441bf23c82413dc2b6aa6d1bce8d38e6480b534199820d4d502446b450"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep075-vocab-017",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 117,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "look",
+        "zh": "看"
+      },
+      "payload": {
+        "term": "look",
+        "ipa": "lʊk",
+        "pos": "",
+        "def": "看",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ],
+        "gloss": "看"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "075 两个悟空之战 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "b62592441bf23c82413dc2b6aa6d1bce8d38e6480b534199820d4d502446b450"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep075-vocab-018",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 118,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "surprise",
+        "zh": "意 想不到的事 vt.使吃惊"
+      },
+      "payload": {
+        "term": "surprise",
+        "ipa": "sə(r)ˈpraɪz",
+        "pos": "n.",
+        "def": "n.[C,U]惊奇,惊讶,以外[C]意 想不到的事 vt.使吃惊",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "075 两个悟空之战 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "b62592441bf23c82413dc2b6aa6d1bce8d38e6480b534199820d4d502446b450"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep075-vocab-019",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 119,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "speak",
+        "zh": "说"
+      },
+      "payload": {
+        "term": "speak",
+        "ipa": "spiːk",
+        "pos": "vt.",
+        "def": "说",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ],
+        "gloss": "说"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "075 两个悟空之战 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "b62592441bf23c82413dc2b6aa6d1bce8d38e6480b534199820d4d502446b450"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep075-vocab-020",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 120,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "come",
+        "zh": "vi.来,来到 v.-link.成为,变成,变得"
+      },
+      "payload": {
+        "term": "come",
+        "ipa": "kʌm",
+        "pos": "vi.",
+        "def": "vi.来,来到 v.-link.成为,变成,变得",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "075 两个悟空之战 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "12441ecdfdb28e85c69d12df796768290302ef87920c5e98a20d2b28453c387f"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep075-vocab-021",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 121,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "know",
+        "zh": "v.知道,了解"
+      },
+      "payload": {
+        "term": "know",
+        "ipa": "nəʊ",
+        "pos": "v.",
+        "def": "v.知道,了解",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "075 两个悟空之战 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "12441ecdfdb28e85c69d12df796768290302ef87920c5e98a20d2b28453c387f"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep075-vocab-022",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 122,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "here",
+        "zh": "adv.这就是,在这里"
+      },
+      "payload": {
+        "term": "here",
+        "ipa": "hɪə(r)",
+        "pos": "adv.",
+        "def": "adv.这就是,在这里",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "075 两个悟空之战 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "12441ecdfdb28e85c69d12df796768290302ef87920c5e98a20d2b28453c387f"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep075-vocab-023",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 123,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "monkey",
+        "zh": "猴子"
+      },
+      "payload": {
+        "term": "monkey",
+        "ipa": "ˈmʌŋki",
+        "pos": "n.",
+        "def": "n.[C]猴子",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "075 两个悟空之战 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "12441ecdfdb28e85c69d12df796768290302ef87920c5e98a20d2b28453c387f"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep075-vocab-024",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 124,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "bowl",
+        "zh": "碗"
+      },
+      "payload": {
+        "term": "bowl",
+        "ipa": "bəʊl",
+        "pos": "n.",
+        "def": "n.[C]碗",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "075 两个悟空之战 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "12441ecdfdb28e85c69d12df796768290302ef87920c5e98a20d2b28453c387f"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep075-vocab-025",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 125,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "lift",
+        "zh": "电梯,搭便车"
+      },
+      "payload": {
+        "term": "lift",
+        "ipa": "lɪft",
+        "pos": "v.",
+        "def": "v.举起,抬高;使高兴起来 n.[C]电梯,搭便车",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "075 两个悟空之战 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "12441ecdfdb28e85c69d12df796768290302ef87920c5e98a20d2b28453c387f"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep075-vocab-026",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 126,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "tiny",
+        "zh": "adj.极小的,微小的"
+      },
+      "payload": {
+        "term": "tiny",
+        "ipa": "ˈtaɪni",
+        "pos": "adj.",
+        "def": "adj.极小的,微小的",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "075 两个悟空之战 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "12441ecdfdb28e85c69d12df796768290302ef87920c5e98a20d2b28453c387f"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep075-vocab-027",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 127,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "laugh",
+        "zh": "v.笑,发笑 n.笑声"
+      },
+      "payload": {
+        "term": "laugh",
+        "ipa": "lɑːf",
+        "pos": "v.",
+        "def": "v.笑,发笑 n.笑声",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "075 两个悟空之战 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "12441ecdfdb28e85c69d12df796768290302ef87920c5e98a20d2b28453c387f"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep075-vocab-028",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 128,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "want",
+        "zh": "vt.需要,想要"
+      },
+      "payload": {
+        "term": "want",
+        "ipa": "wɒnt",
+        "pos": "vt.",
+        "def": "vt.需要,想要",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "075 两个悟空之战 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "12441ecdfdb28e85c69d12df796768290302ef87920c5e98a20d2b28453c387f"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep075-vocab-029",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 129,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "i",
+        "zh": "pron.我"
+      },
+      "payload": {
+        "term": "i",
+        "ipa": "aɪ",
+        "pos": "pron.",
+        "def": "pron.我",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "075 两个悟空之战 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "12441ecdfdb28e85c69d12df796768290302ef87920c5e98a20d2b28453c387f"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep075-vocab-030",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 130,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "thank",
+        "zh": "vt.感谢,谢谢"
+      },
+      "payload": {
+        "term": "thank",
+        "ipa": "θæŋk",
+        "pos": "vt.",
+        "def": "vt.感谢,谢谢",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "075 两个悟空之战 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "12441ecdfdb28e85c69d12df796768290302ef87920c5e98a20d2b28453c387f"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep075-vocab-031",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 131,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "fly",
+        "zh": "苍蝇"
+      },
+      "payload": {
+        "term": "fly",
+        "ipa": "flaɪ",
+        "pos": "v.",
+        "def": "v.飞,驾驶(飞机等);乘飞机, (旗)飘扬 n.[C]苍蝇",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "075 两个悟空之战 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "12441ecdfdb28e85c69d12df796768290302ef87920c5e98a20d2b28453c387f"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep075-vocab-032",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 132,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "decide",
+        "zh": "v.决定,选定"
+      },
+      "payload": {
+        "term": "decide",
+        "ipa": "dɪˈsaɪd",
+        "pos": "v.",
+        "def": "v.决定,选定",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "075 两个悟空之战 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "12441ecdfdb28e85c69d12df796768290302ef87920c5e98a20d2b28453c387f"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep075-vocab-033",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 133,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "journey",
+        "zh": "(尤指长途)旅行,行程"
+      },
+      "payload": {
+        "term": "journey",
+        "ipa": "ˈdʒɜː(r)ni",
+        "pos": "n.",
+        "def": "n.[C](尤指长途)旅行,行程",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "075 两个悟空之战 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "12441ecdfdb28e85c69d12df796768290302ef87920c5e98a20d2b28453c387f"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep075-vocab-034",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 134,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "find",
+        "zh": "vt.找到,发现,查找,查明"
+      },
+      "payload": {
+        "term": "find",
+        "ipa": "faɪnd",
+        "pos": "vt.",
+        "def": "vt.找到,发现,查找,查明",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "075 两个悟空之战 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "12441ecdfdb28e85c69d12df796768290302ef87920c5e98a20d2b28453c387f"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep075-vocab-035",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 135,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "along",
+        "zh": "prep.沿着 adv.向前,一起"
+      },
+      "payload": {
+        "term": "along",
+        "ipa": "əˈlɒŋ",
+        "pos": "prep.",
+        "def": "prep.沿着 adv.向前,一起",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "075 两个悟空之战 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "12441ecdfdb28e85c69d12df796768290302ef87920c5e98a20d2b28453c387f"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep075-vocab-036",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 136,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "road",
+        "zh": "路"
+      },
+      "payload": {
+        "term": "road",
+        "ipa": "rəʊd",
+        "pos": "n.",
+        "def": "n.[C]路",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "075 两个悟空之战 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "12441ecdfdb28e85c69d12df796768290302ef87920c5e98a20d2b28453c387f"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep075-vocab-037",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 137,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "west",
+        "zh": "西"
+      },
+      "payload": {
+        "term": "west",
+        "ipa": "west",
+        "pos": "",
+        "def": "西",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ],
+        "gloss": "西"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "075 两个悟空之战 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "12441ecdfdb28e85c69d12df796768290302ef87920c5e98a20d2b28453c387f"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep075-vocab-038",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 138,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "keep",
+        "zh": "保持；保留"
+      },
+      "payload": {
+        "term": "keep",
+        "ipa": "kiːp",
+        "pos": "v.",
+        "def": "保持；保留",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ],
+        "gloss": "保持；保留"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "075 两个悟空之战 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "12441ecdfdb28e85c69d12df796768290302ef87920c5e98a20d2b28453c387f"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep075-vocab-039",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 139,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "explain",
+        "zh": "v.解释,说明"
+      },
+      "payload": {
+        "term": "explain",
+        "ipa": "ɪkˈspleɪn",
+        "pos": "v.",
+        "def": "v.解释,说明",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "075 两个悟空之战 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "12441ecdfdb28e85c69d12df796768290302ef87920c5e98a20d2b28453c387f"
+        }
+      ],
+      "review_status": "machine_verified"
+    }
+  ],
+  "teacher_guide": null,
+  "review": {
+    "status": "draft",
+    "reviewed_at": null,
+    "card_stats": {
+      "total": 44,
+      "sentence_choice": 5,
+      "word_review": 39,
+      "machine_verified": 41,
+      "assistant_reviewed": 3,
+      "verified": 44,
+      "needs_review": 0
+    }
+  },
+  "generated_at": "2026-08-31T04:49:45.939716+00:00"
+}

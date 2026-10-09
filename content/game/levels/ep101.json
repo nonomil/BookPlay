@@ -1,0 +1,584 @@
+{
+ "schema_version": 1,
+ "ep": 101,
+ "title": {
+  "en": "Arrested!",
+  "zh": "西游记 第101集"
+ },
+ "collection": "c13",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "imp",
+   "nameZh": "小妖",
+   "mode": "sparring",
+   "sprite": "imp"
+  },
+  "minors": [
+   {
+    "id": "imp",
+    "nameZh": "小妖",
+    "sprite": "imp"
+   }
+  ]
+ },
+ "background": {
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep101/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "\"This is ridiculous,\" said the Tang Monk.",
+   "textZh": "\"这太荒唐了,\"唐僧说道。",
+   "illustration": "assets/adv_frames/ep101/f1.jpg",
+   "sourceNodeId": "n001",
+   "audioRef": "sent_en:\"This is ridiculous,\" said the Tang Monk."
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "\"Why are we under arrest?\"",
+   "textZh": "\"我们为何被逮捕?\"",
+   "illustration": "assets/adv_frames/ep101/f2.jpg",
+   "sourceNodeId": "n002",
+   "audioRef": "sent_en:\"Why are we under arrest?\""
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "ridiculous",
+   "zh": "可笑的,荒谬的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep101/f1.jpg"
+  },
+  {
+   "term": "especially",
+   "zh": "特别,特别地",
+   "ipa": "ɪˈspeʃəli",
+   "illustration": "assets/adv_frames/ep101/f1.jpg"
+  },
+  {
+   "term": "stolen",
+   "zh": "被偷走的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep101/f3.jpg"
+  },
+  {
+   "term": "let go",
+   "zh": "放开,松手",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep101/f2.jpg"
+  },
+  {
+   "term": "courthouse",
+   "zh": "法院",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep101/f0.jpg"
+  },
+  {
+   "term": "lock up",
+   "zh": "把...锁起来,关起来",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep101/f2.jpg"
+  },
+  {
+   "term": "mistake",
+   "zh": "错误,误会",
+   "ipa": "mɪˈsteɪk",
+   "illustration": "assets/adv_frames/ep101/f1.jpg"
+  },
+  {
+   "term": "plead",
+   "zh": "恳求",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep101/f3.jpg"
+  },
+  {
+   "term": "shove",
+   "zh": "推,撞",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep101/f2.jpg"
+  },
+  {
+   "term": "jail",
+   "zh": "监狱,拘留所",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep101/f0.jpg"
+  },
+  {
+   "term": "killer",
+   "zh": "杀人者,杀手",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep101/f2.jpg"
+  },
+  {
+   "term": "dead",
+   "zh": "死亡的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep101/f3.jpg"
+  }
+ ],
+ "wordPool": [
+  {
+   "term": "ridiculous",
+   "zh": "可笑的,荒谬的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep101/f1.jpg"
+  },
+  {
+   "term": "especially",
+   "zh": "特别,特别地",
+   "ipa": "ɪˈspeʃəli",
+   "illustration": "assets/adv_frames/ep101/f1.jpg"
+  },
+  {
+   "term": "stolen",
+   "zh": "被偷走的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep101/f3.jpg"
+  },
+  {
+   "term": "let go",
+   "zh": "放开,松手",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep101/f2.jpg"
+  },
+  {
+   "term": "courthouse",
+   "zh": "法院",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep101/f0.jpg"
+  },
+  {
+   "term": "lock up",
+   "zh": "把...锁起来,关起来",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep101/f2.jpg"
+  },
+  {
+   "term": "mistake",
+   "zh": "错误,误会",
+   "ipa": "mɪˈsteɪk",
+   "illustration": "assets/adv_frames/ep101/f1.jpg"
+  },
+  {
+   "term": "plead",
+   "zh": "恳求",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep101/f3.jpg"
+  },
+  {
+   "term": "shove",
+   "zh": "推,撞",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep101/f2.jpg"
+  },
+  {
+   "term": "jail",
+   "zh": "监狱,拘留所",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep101/f0.jpg"
+  },
+  {
+   "term": "killer",
+   "zh": "杀人者,杀手",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep101/f2.jpg"
+  },
+  {
+   "term": "dead",
+   "zh": "死亡的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep101/f3.jpg"
+  },
+  {
+   "term": "narrow",
+   "zh": "1. 变窄,收缩,(2. 狭窄的)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep101/f0.jpg"
+  },
+  {
+   "term": "cell",
+   "zh": "单人牢房,小囚房",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep101/f2.jpg"
+  },
+  {
+   "term": "frame",
+   "zh": "1. 陷害(某人),(2. (家具、建筑等的)框架,构架)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep101/f2.jpg"
+  },
+  {
+   "term": "prove",
+   "zh": "证明,证实",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep101/f0.jpg"
+  },
+  {
+   "term": "innocence",
+   "zh": "1. 无罪,(2. 纯真)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep101/f0.jpg"
+  },
+  {
+   "term": "mourn",
+   "zh": "(因死亡、不幸等)哀痛,哀悼",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep101/f2.jpg"
+  },
+  {
+   "term": "coffin",
+   "zh": "棺材",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep101/f2.jpg"
+  },
+  {
+   "term": "imitate",
+   "zh": "模仿",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep101/f0.jpg"
+  },
+  {
+   "term": "hesitate",
+   "zh": "犹豫,踌躇",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep101/f1.jpg"
+  },
+  {
+   "term": "insult",
+   "zh": "1. 污辱人的言行,(2. 侮辱)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep101/f2.jpg"
+  },
+  {
+   "term": "innocent",
+   "zh": "无罪的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep101/f2.jpg"
+  },
+  {
+   "term": "haunt",
+   "zh": "缠住(某人),使困扰",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep101/f2.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "ridiculous",
+     "zh": "可笑的,荒谬的",
+     "sprite": "imp"
+    },
+    {
+     "term": "especially",
+     "zh": "特别,特别地",
+     "sprite": "imp"
+    },
+    {
+     "term": "stolen",
+     "zh": "被偷走的",
+     "sprite": "imp"
+    },
+    {
+     "term": "let go",
+     "zh": "放开,松手",
+     "sprite": "imp"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "courthouse",
+     "zh": "法院",
+     "sprite": "imp"
+    },
+    {
+     "term": "lock up",
+     "zh": "把...锁起来,关起来",
+     "sprite": "imp"
+    },
+    {
+     "term": "mistake",
+     "zh": "错误,误会",
+     "sprite": "imp"
+    },
+    {
+     "term": "plead",
+     "zh": "恳求",
+     "sprite": "imp"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "shove",
+    "zh": "推,撞"
+   },
+   {
+    "term": "jail",
+    "zh": "监狱,拘留所"
+   },
+   {
+    "term": "killer",
+    "zh": "杀人者,杀手"
+   },
+   {
+    "term": "dead",
+    "zh": "死亡的"
+   }
+  ],
+  "taunts": [
+   "imp.1",
+   "imp.2",
+   "imp.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=101",
+ "npcDialogue": {
+  "intro": {
+   "id": "ep101-map-intro",
+   "lines": [
+    {
+     "id": "ep101-map-intro-1",
+     "sourceNodeId": "n001",
+     "speaker": "narrator",
+     "textEn": "\"This is ridiculous,\" said the Tang Monk.",
+     "textZh": "\"这太荒唐了,\"唐僧说道。",
+     "audioRef": "sent_en:\"This is ridiculous,\" said the Tang Monk.",
+     "audioStart": 10.934,
+     "audioEnd": 16.205
+    },
+    {
+     "id": "ep101-map-intro-2",
+     "sourceNodeId": "n002",
+     "speaker": "narrator",
+     "textEn": "\"Why are we under arrest?\"",
+     "textZh": "\"我们为何被逮捕?\"",
+     "audioRef": "sent_en:\"Why are we under arrest?\"",
+     "audioStart": 16.206,
+     "audioEnd": 18.741
+    }
+   ]
+  },
+  "quiz": {
+   "id": "ep101-map-quiz",
+   "lines": [
+    {
+     "id": "ep101-map-quiz-1",
+     "sourceNodeId": "n045",
+     "speaker": "narrator",
+     "textEn": "That night Wukong turned into a bee and flew out of the jail and to Squire Kou's house.",
+     "textZh": "那晚,悟空化作一只蜜蜂,飞出牢房,直奔寇员外家而去。",
+     "audioRef": "sent_en:That night Wukong turned into a bee and flew out of the jail and to Squire Kou's house.",
+     "audioStart": 169.327,
+     "audioEnd": 178.142
+    }
+   ],
+   "question": {
+    "id": "ep101-official-quiz-001",
+    "textEn": "which is not true?",
+    "textZh": "哪一项是不正确的？"
+   },
+   "word": {
+    "term": "ridiculous",
+    "zh": "可笑的,荒谬的",
+    "ipa": ""
+   },
+   "options": [
+    {
+     "id": "a",
+     "textEn": "wukong stomped all over the town.",
+     "textZh": "悟空践踏了整个城镇。",
+     "correct": true,
+     "feedback": "对了。悟空践踏了整个城镇。"
+    },
+    {
+     "id": "b",
+     "textEn": "wukong tricked lady kou.",
+     "textZh": "悟空欺骗了寇夫人。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    },
+    {
+     "id": "c",
+     "textEn": "wukong scared the judge.",
+     "textZh": "悟空吓到了法官。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    }
+   ],
+   "lessonCardId": "ep101-official-quiz-001"
+  }
+ },
+ "map": {
+  "theme": "generic",
+  "coordinateSpace": "world-normalized",
+  "worldTiles": 2,
+  "regions": {
+   "hero": 0,
+   "waves": [
+    0,
+    1
+   ],
+   "npc": {
+    "intro": 0,
+    "quiz": 1
+   },
+   "boss": 3
+  },
+  "walkable": {
+   "space": "world",
+   "x": 0.0,
+   "y": 0.16,
+   "w": 1.0,
+   "h": 0.79,
+   "rects": [
+    {
+     "x": 0.0,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.66,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    }
+   ]
+  },
+  "heroSpawn": {
+   "x": 0.06,
+   "y": 0.31
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.31,
+    "y": 0.23
+   },
+   {
+    "x": 0.38,
+    "y": 0.27
+   },
+   {
+    "x": 0.34,
+    "y": 0.33
+   },
+   {
+    "x": 0.41,
+    "y": 0.24
+   }
+  ],
+  "waveSpawns": [
+   [
+    {
+     "x": 0.31,
+     "y": 0.23
+    },
+    {
+     "x": 0.38,
+     "y": 0.27
+    },
+    {
+     "x": 0.34,
+     "y": 0.33
+    },
+    {
+     "x": 0.41,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.81,
+     "y": 0.23
+    },
+    {
+     "x": 0.88,
+     "y": 0.27
+    },
+    {
+     "x": 0.84,
+     "y": 0.33
+    },
+    {
+     "x": 0.91,
+     "y": 0.24
+    }
+   ]
+  ],
+  "orbSpawns": [
+   [
+    {
+     "x": 0.11,
+     "y": 0.25
+    },
+    {
+     "x": 0.16,
+     "y": 0.31
+    },
+    {
+     "x": 0.12,
+     "y": 0.37
+    },
+    {
+     "x": 0.18,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.61,
+     "y": 0.25
+    },
+    {
+     "x": 0.66,
+     "y": 0.31
+    },
+    {
+     "x": 0.62,
+     "y": 0.37
+    },
+    {
+     "x": 0.68,
+     "y": 0.24
+    }
+   ]
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "imp",
+    "nameZh": "小妖",
+    "x": 0.08,
+    "y": 0.26
+   },
+   {
+    "role": "quiz",
+    "sprite": "imp",
+    "nameZh": "小妖",
+    "x": 0.7,
+    "y": 0.39
+   }
+  ],
+  "bossSpot": {
+   "x": 0.94,
+   "y": 0.85
+  }
+ }
+}

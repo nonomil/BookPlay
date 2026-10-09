@@ -1,0 +1,584 @@
+{
+ "schema_version": 1,
+ "ep": 105,
+ "title": {
+  "en": "The Thunderclap Monastery",
+  "zh": "西游记 第105集"
+ },
+ "collection": "c13",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "imp",
+   "nameZh": "小妖",
+   "mode": "sparring",
+   "sprite": "imp"
+  },
+  "minors": [
+   {
+    "id": "imp",
+    "nameZh": "小妖",
+    "sprite": "imp"
+   }
+  ]
+ },
+ "background": {
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep105/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "The travelers walked up the Spirit Mountain.",
+   "textZh": "旅人们沿着灵山而上。",
+   "illustration": "assets/adv_frames/ep105/f1.jpg",
+   "sourceNodeId": "n001",
+   "audioRef": "sent_en:The travelers walked up the Spirit Mountain."
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "The mountain's slopes were covered in pine trees, bamboo, and flowers.",
+   "textZh": "这座山的山坡上覆盖着松树、竹林和鲜花。",
+   "illustration": "assets/adv_frames/ep105/f2.jpg",
+   "sourceNodeId": "n002",
+   "audioRef": "sent_en:The mountain's slopes were covered in pine trees, bamboo, and flowers."
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "pine",
+   "zh": "松树",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep105/f2.jpg"
+  },
+  {
+   "term": "bamboo",
+   "zh": "竹子",
+   "ipa": "ˌbæmˈbuː",
+   "illustration": "assets/adv_frames/ep105/f1.jpg"
+  },
+  {
+   "term": "countless",
+   "zh": "数不尽的,无数的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep105/f2.jpg"
+  },
+  {
+   "term": "earn",
+   "zh": "获得,博得(称赞或名声等)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep105/f0.jpg"
+  },
+  {
+   "term": "forgiveness",
+   "zh": "宽恕",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep105/f0.jpg"
+  },
+  {
+   "term": "accidentally",
+   "zh": "偶然地,意外地,无意地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep105/f1.jpg"
+  },
+  {
+   "term": "set fire",
+   "zh": "放火",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep105/f1.jpg"
+  },
+  {
+   "term": "thankful",
+   "zh": "感谢的,感激的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep105/f3.jpg"
+  },
+  {
+   "term": "tower",
+   "zh": "塔,塔楼",
+   "ipa": "ˈtaʊə(r)",
+   "illustration": "assets/adv_frames/ep105/f2.jpg"
+  },
+  {
+   "term": "arch",
+   "zh": "拱门",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep105/f3.jpg"
+  },
+  {
+   "term": "chest",
+   "zh": "1. 箱子,盒子,(2. 胸部)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep105/f0.jpg"
+  },
+  {
+   "term": "opposite",
+   "zh": "1. 对面的,相对的,(2. 对立物,对立者)",
+   "ipa": "ˈɒpəzɪt",
+   "illustration": "assets/adv_frames/ep105/f2.jpg"
+  }
+ ],
+ "wordPool": [
+  {
+   "term": "pine",
+   "zh": "松树",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep105/f2.jpg"
+  },
+  {
+   "term": "bamboo",
+   "zh": "竹子",
+   "ipa": "ˌbæmˈbuː",
+   "illustration": "assets/adv_frames/ep105/f1.jpg"
+  },
+  {
+   "term": "countless",
+   "zh": "数不尽的,无数的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep105/f2.jpg"
+  },
+  {
+   "term": "earn",
+   "zh": "获得,博得(称赞或名声等)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep105/f0.jpg"
+  },
+  {
+   "term": "forgiveness",
+   "zh": "宽恕",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep105/f0.jpg"
+  },
+  {
+   "term": "accidentally",
+   "zh": "偶然地,意外地,无意地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep105/f1.jpg"
+  },
+  {
+   "term": "set fire",
+   "zh": "放火",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep105/f1.jpg"
+  },
+  {
+   "term": "thankful",
+   "zh": "感谢的,感激的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep105/f3.jpg"
+  },
+  {
+   "term": "tower",
+   "zh": "塔,塔楼",
+   "ipa": "ˈtaʊə(r)",
+   "illustration": "assets/adv_frames/ep105/f2.jpg"
+  },
+  {
+   "term": "arch",
+   "zh": "拱门",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep105/f3.jpg"
+  },
+  {
+   "term": "chest",
+   "zh": "1. 箱子,盒子,(2. 胸部)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep105/f0.jpg"
+  },
+  {
+   "term": "opposite",
+   "zh": "1. 对面的,相对的,(2. 对立物,对立者)",
+   "ipa": "ˈɒpəzɪt",
+   "illustration": "assets/adv_frames/ep105/f2.jpg"
+  },
+  {
+   "term": "opposite end",
+   "zh": "另一端",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep105/f0.jpg"
+  },
+  {
+   "term": "face",
+   "zh": "1. 面向,面对,(2. 面临,正视(问题、困难),3. 脸)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep105/f1.jpg"
+  },
+  {
+   "term": "challenge",
+   "zh": "挑战",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep105/f1.jpg"
+  },
+  {
+   "term": "swell",
+   "zh": "(感情、情绪等)加强,增长,高涨",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep105/f2.jpg"
+  },
+  {
+   "term": "honor",
+   "zh": "1. 荣誉,(2. 表达敬意,崇敬)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep105/f1.jpg"
+  },
+  {
+   "term": "mist",
+   "zh": "薄雾",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep105/f3.jpg"
+  },
+  {
+   "term": "line",
+   "zh": "1. 排队,排列成行,(2. 线,绳)",
+   "ipa": "laɪn",
+   "illustration": "assets/adv_frames/ep105/f2.jpg"
+  },
+  {
+   "term": "scroll",
+   "zh": "卷轴",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep105/f1.jpg"
+  },
+  {
+   "term": "marvelous",
+   "zh": "令人惊叹的,神奇的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep105/f2.jpg"
+  },
+  {
+   "term": "speechless",
+   "zh": "说不出话的,哑又无言的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep105/f1.jpg"
+  },
+  {
+   "term": "extremely",
+   "zh": "极度地,非常",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep105/f0.jpg"
+  },
+  {
+   "term": "deliver",
+   "zh": "递送",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep105/f0.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "pine",
+     "zh": "松树",
+     "sprite": "imp"
+    },
+    {
+     "term": "bamboo",
+     "zh": "竹子",
+     "sprite": "imp"
+    },
+    {
+     "term": "countless",
+     "zh": "数不尽的,无数的",
+     "sprite": "imp"
+    },
+    {
+     "term": "earn",
+     "zh": "获得,博得(称赞或名声等)",
+     "sprite": "imp"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "forgiveness",
+     "zh": "宽恕",
+     "sprite": "imp"
+    },
+    {
+     "term": "accidentally",
+     "zh": "偶然地,意外地,无意地",
+     "sprite": "imp"
+    },
+    {
+     "term": "set fire",
+     "zh": "放火",
+     "sprite": "imp"
+    },
+    {
+     "term": "thankful",
+     "zh": "感谢的,感激的",
+     "sprite": "imp"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "tower",
+    "zh": "塔,塔楼"
+   },
+   {
+    "term": "arch",
+    "zh": "拱门"
+   },
+   {
+    "term": "chest",
+    "zh": "1. 箱子,盒子,(2. 胸部)"
+   },
+   {
+    "term": "opposite",
+    "zh": "1. 对面的,相对的,(2. 对立物,对立者)"
+   }
+  ],
+  "taunts": [
+   "imp.1",
+   "imp.2",
+   "imp.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=105",
+ "npcDialogue": {
+  "intro": {
+   "id": "ep105-map-intro",
+   "lines": [
+    {
+     "id": "ep105-map-intro-1",
+     "sourceNodeId": "n001",
+     "speaker": "narrator",
+     "textEn": "The travelers walked up the Spirit Mountain.",
+     "textZh": "旅人们沿着灵山而上。",
+     "audioRef": "sent_en:The travelers walked up the Spirit Mountain.",
+     "audioStart": 10.937,
+     "audioEnd": 17.117
+    },
+    {
+     "id": "ep105-map-intro-2",
+     "sourceNodeId": "n002",
+     "speaker": "narrator",
+     "textEn": "The mountain's slopes were covered in pine trees, bamboo, and flowers.",
+     "textZh": "这座山的山坡上覆盖着松树、竹林和鲜花。",
+     "audioRef": "sent_en:The mountain's slopes were covered in pine trees, bamboo, and flowers.",
+     "audioStart": 17.118,
+     "audioEnd": 24.41
+    }
+   ]
+  },
+  "quiz": {
+   "id": "ep105-map-quiz",
+   "lines": [
+    {
+     "id": "ep105-map-quiz-1",
+     "sourceNodeId": "n035",
+     "speaker": "narrator",
+     "textEn": "When the travelers were done eating, a guard led them to a large room filled with magical light and mist.",
+     "textZh": "旅人们用餐完毕后,一名守卫领他们进入一间宽敞的房间,室内充盈着魔法般的光芒与薄雾。",
+     "audioRef": "sent_en:When the travelers were done eating, a guard led them to a large room filled with magical light and mist.",
+     "audioStart": 181.238,
+     "audioEnd": 188.98
+    }
+   ],
+   "question": {
+    "id": "ep105-official-quiz-001",
+    "textEn": "which is most important from the story?",
+    "textZh": "故事中什么最重要？"
+   },
+   "word": {
+    "term": "pine",
+    "zh": "松树",
+    "ipa": ""
+   },
+   "options": [
+    {
+     "id": "a",
+     "textEn": "the tang monk received the true scriptures.",
+     "textZh": "唐僧得到了真经。",
+     "correct": true,
+     "feedback": "对了。唐僧得到了真经。"
+    },
+    {
+     "id": "b",
+     "textEn": "guanyin was especially proud of wukong.",
+     "textZh": "观音特别为悟空感到自豪。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    },
+    {
+     "id": "c",
+     "textEn": "servants brought a meal to the travelers.",
+     "textZh": "仆人为旅客端来了一顿饭。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    }
+   ],
+   "lessonCardId": "ep105-official-quiz-001"
+  }
+ },
+ "map": {
+  "theme": "generic",
+  "coordinateSpace": "world-normalized",
+  "worldTiles": 2,
+  "regions": {
+   "hero": 0,
+   "waves": [
+    0,
+    1
+   ],
+   "npc": {
+    "intro": 0,
+    "quiz": 1
+   },
+   "boss": 3
+  },
+  "walkable": {
+   "space": "world",
+   "x": 0.0,
+   "y": 0.16,
+   "w": 1.0,
+   "h": 0.79,
+   "rects": [
+    {
+     "x": 0.0,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.66,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    }
+   ]
+  },
+  "heroSpawn": {
+   "x": 0.06,
+   "y": 0.31
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.31,
+    "y": 0.23
+   },
+   {
+    "x": 0.38,
+    "y": 0.27
+   },
+   {
+    "x": 0.34,
+    "y": 0.33
+   },
+   {
+    "x": 0.41,
+    "y": 0.24
+   }
+  ],
+  "waveSpawns": [
+   [
+    {
+     "x": 0.31,
+     "y": 0.23
+    },
+    {
+     "x": 0.38,
+     "y": 0.27
+    },
+    {
+     "x": 0.34,
+     "y": 0.33
+    },
+    {
+     "x": 0.41,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.81,
+     "y": 0.23
+    },
+    {
+     "x": 0.88,
+     "y": 0.27
+    },
+    {
+     "x": 0.84,
+     "y": 0.33
+    },
+    {
+     "x": 0.91,
+     "y": 0.24
+    }
+   ]
+  ],
+  "orbSpawns": [
+   [
+    {
+     "x": 0.11,
+     "y": 0.25
+    },
+    {
+     "x": 0.16,
+     "y": 0.31
+    },
+    {
+     "x": 0.12,
+     "y": 0.37
+    },
+    {
+     "x": 0.18,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.61,
+     "y": 0.25
+    },
+    {
+     "x": 0.66,
+     "y": 0.31
+    },
+    {
+     "x": 0.62,
+     "y": 0.37
+    },
+    {
+     "x": 0.68,
+     "y": 0.24
+    }
+   ]
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "imp",
+    "nameZh": "小妖",
+    "x": 0.08,
+    "y": 0.26
+   },
+   {
+    "role": "quiz",
+    "sprite": "imp",
+    "nameZh": "小妖",
+    "x": 0.7,
+    "y": 0.39
+   }
+  ],
+  "bossSpot": {
+   "x": 0.94,
+   "y": 0.85
+  }
+ }
+}

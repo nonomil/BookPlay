@@ -1,0 +1,2571 @@
+{
+  "schema_version": 1,
+  "episode": 35,
+  "title": {
+    "en": "A Visit to the King",
+    "zh": "西游记 第35集"
+  },
+  "sources": [
+    {
+      "kind": "courseware_main_pptx",
+      "file": "G:\\Game\\BookPlay书戏\\data\\西游记课件\\3.3西游记  Journey to the West PPT课件\\035_Journey to the West 35_A Visit to the King.pptx",
+      "sha256": "583ff40cd34517ec4e6f73ac4467c5c2c1a02028d05df700cc0081e93f78d4e5",
+      "pages": 15
+    },
+    {
+      "kind": "official_quiz_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+      "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929",
+      "pages": 131
+    },
+    {
+      "kind": "intensive_reader_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\02-西游记精读版台词本\\1、带标注版PDF 108集\\035 拜访国王 上.pdf",
+      "sha256": "178db1e0009323315dddfc8e72da37dfaa1d240d96e878fb2cd0f942e042bd32",
+      "pages": 3
+    },
+    {
+      "kind": "intensive_reader_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\02-西游记精读版台词本\\1、带标注版PDF 108集\\035 拜访国王 下.pdf",
+      "sha256": "d11457bb44c062018c219fa9cb62e837f02c3e6ee51af58b8bb2706ac8a525d8",
+      "pages": 4
+    },
+    {
+      "kind": "courseware_screenshots_pptx",
+      "file": "G:\\Game\\BookPlay书戏\\data\\西游记课件\\西游记-外教课动画截图\\Journey to the West 035  A Visit to the King_20240106164654.pptx",
+      "sha256": "663af95f29b5d277c61a3de806651878b52f00805c96f19fa9e33af44cd174e6",
+      "pages": 52
+    }
+  ],
+  "cards": [
+    {
+      "card_id": "ep035-official-quiz-001",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 1,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "which is not true?",
+        "zh": "哪一项是不正确的？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "the princess told her father what happened.",
+            "zh": "公主告诉了她的父亲发生的事情。"
+          },
+          {
+            "id": "b",
+            "en": "bajie ran back to the precious image kingdom.",
+            "zh": "八戒跑回了宝像国。"
+          },
+          {
+            "id": "c",
+            "en": "the king locked the tang monk in a cage.",
+            "zh": "国王把唐僧关进了笼子里。"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n001",
+            "quote": "\"Princess Hundred Flowers tricked me!\" said the monster."
+          },
+          {
+            "node_id": "n003",
+            "quote": "Then he sighed. \"I can't be angry with her. I love her too much. But that pig got away. He'll go back to the king, and troops will come.\""
+          },
+          {
+            "node_id": "n017",
+            "quote": "Bajie ran back to the Precious Image Kingdom."
+          },
+          {
+            "node_id": "n018",
+            "quote": "He told the king that he and Wujing couldn't save Princess Hundred Flowers."
+          },
+          {
+            "node_id": "n020",
+            "quote": "\"As I ran away, Wujing was captured.\""
+          },
+          {
+            "node_id": "n042",
+            "quote": "Everybody gasped. Now a tiger sat in the Tang Monk's spot!"
+          },
+          {
+            "node_id": "n047",
+            "quote": "\"He's locked up in a cage,\" said the other boy."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 43,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep035-official-quiz-002",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 2,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "what was the monster's disguise?",
+        "zh": "那个怪物的伪装是什么？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "a young man",
+            "zh": "一个年轻男子"
+          },
+          {
+            "id": "b",
+            "en": "a tiger",
+            "zh": "一只老虎"
+          },
+          {
+            "id": "c",
+            "en": "a horse",
+            "zh": "一匹马"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n013",
+            "quote": "\"I need a disguise,\" he said to himself."
+          },
+          {
+            "node_id": "n014",
+            "quote": "He recited a quick spell."
+          },
+          {
+            "node_id": "n015",
+            "quote": "Light sparkled. Now the monster looked like a handsome young man."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 43,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep035-official-quiz-003",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 3,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "what did the young man tell the king?",
+        "zh": "那个年轻人告诉国王什么？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "he saved the princess from a tiger.",
+            "zh": "他从老虎手中救了公主。"
+          },
+          {
+            "id": "b",
+            "en": "he chased away the tang monk.",
+            "zh": "他赶走了唐僧。"
+          },
+          {
+            "id": "c",
+            "en": "he rescued wujing from a monster.",
+            "zh": "他从一只怪物手中救了悟净。"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n028",
+            "quote": "A handsome young man walked into the hall."
+          },
+          {
+            "node_id": "n031",
+            "quote": "\"I married Princess Hundred Flowers 13 years ago,\" said the young man."
+          },
+          {
+            "node_id": "n032",
+            "quote": "\"I found her in a forest just as a tiger was about to attack her. I saved her life and chased away the tiger.\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 43,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep035-official-quiz-004",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 4,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "what happened to the tang monk?",
+        "zh": "唐僧发生了什么事？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "he was turned into a tiger.",
+            "zh": "他变成了一只老虎。"
+          },
+          {
+            "id": "b",
+            "en": "he was turned into a monster.",
+            "zh": "他变成了一个怪物。"
+          },
+          {
+            "id": "c",
+            "en": "he was turned into a young man.",
+            "zh": "他变成了一个年轻人。"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n037",
+            "quote": "The young man narrowed his eyes at the Tang Monk and pointed. \"That monk!\""
+          },
+          {
+            "node_id": "n040",
+            "quote": "\"I'll prove it,\" said the young man."
+          },
+          {
+            "node_id": "n041",
+            "quote": "He pointed at the monk again and recited a spell. Light sparkled."
+          },
+          {
+            "node_id": "n042",
+            "quote": "Everybody gasped. Now a tiger sat in the Tang Monk's spot!"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 43,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep035-official-quiz-005",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 5,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "whom did the horse tell bajie to find?",
+        "zh": "马告诉八戒去找谁？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "wukong",
+            "zh": "悟空"
+          },
+          {
+            "id": "b",
+            "en": "wujing",
+            "zh": "五净"
+          },
+          {
+            "id": "c",
+            "en": "guanyin",
+            "zh": "观音"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n052",
+            "quote": "He saw the horse peeking from behind a wall."
+          },
+          {
+            "node_id": "n054",
+            "quote": "\"Shh,\" said the horse. \"We have a problem. A young man turned the Tang Monk into a tiger. The monk is locked in a cage now.\""
+          },
+          {
+            "node_id": "n060",
+            "quote": "\"The young man is probably just the monster in disguise. We need to defeat him and save our companions.\""
+          },
+          {
+            "node_id": "n062",
+            "quote": "The horse thought for a minute."
+          },
+          {
+            "node_id": "n063",
+            "quote": "\"You must find Wukong. He can help us.\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 43,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep035-vocab-001",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 101,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "laugh",
+        "zh": "v.笑,发笑 n.笑声"
+      },
+      "payload": {
+        "term": "laugh",
+        "ipa": "lɑːf",
+        "pos": "v.",
+        "def": "v.笑,发笑 n.笑声",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "035 拜访国王 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "178db1e0009323315dddfc8e72da37dfaa1d240d96e878fb2cd0f942e042bd32"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep035-vocab-002",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 102,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "tell",
+        "zh": "vt.讲述,告诉,分辨,辨别"
+      },
+      "payload": {
+        "term": "tell",
+        "ipa": "tel",
+        "pos": "vt.",
+        "def": "vt.讲述,告诉,分辨,辨别",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "035 拜访国王 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "178db1e0009323315dddfc8e72da37dfaa1d240d96e878fb2cd0f942e042bd32"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep035-vocab-003",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 103,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "can",
+        "zh": "罐"
+      },
+      "payload": {
+        "term": "can",
+        "ipa": "kæn",
+        "pos": "",
+        "def": "modal v.能,可能 n.[C]罐",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "035 拜访国王 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "178db1e0009323315dddfc8e72da37dfaa1d240d96e878fb2cd0f942e042bd32"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep035-vocab-004",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 104,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "save",
+        "zh": "v.救,救助,节省;储蓄;保存"
+      },
+      "payload": {
+        "term": "save",
+        "ipa": "seɪv",
+        "pos": "v.",
+        "def": "v.救,救助,节省;储蓄;保存",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "035 拜访国王 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "178db1e0009323315dddfc8e72da37dfaa1d240d96e878fb2cd0f942e042bd32"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep035-vocab-005",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 105,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "pig",
+        "zh": "猪"
+      },
+      "payload": {
+        "term": "pig",
+        "ipa": "pɪɡ",
+        "pos": "n.",
+        "def": "n.[C]猪",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          2,
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "035 拜访国王 上.pdf",
+          "half": "up",
+          "pages": [
+            2,
+            3
+          ],
+          "sha256": "178db1e0009323315dddfc8e72da37dfaa1d240d96e878fb2cd0f942e042bd32"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "035 拜访国王 下.pdf",
+          "half": "down",
+          "pages": [
+            2,
+            3
+          ],
+          "sha256": "d11457bb44c062018c219fa9cb62e837f02c3e6ee51af58b8bb2706ac8a525d8"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep035-vocab-006",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 106,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "hang",
+        "zh": "v.悬挂,垂下;绞死"
+      },
+      "payload": {
+        "term": "hang",
+        "ipa": "hæŋ",
+        "pos": "v.",
+        "def": "v.悬挂,垂下;绞死",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "035 拜访国王 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "178db1e0009323315dddfc8e72da37dfaa1d240d96e878fb2cd0f942e042bd32"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep035-vocab-007",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 107,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "head",
+        "zh": "队首 vi.朝(某方向)行进"
+      },
+      "payload": {
+        "term": "head",
+        "ipa": "hed",
+        "pos": "n.",
+        "def": "n.[C]头(部)[C,U]负责人 [sing.]队首 vi.朝(某方向)行进",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "035 拜访国王 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "178db1e0009323315dddfc8e72da37dfaa1d240d96e878fb2cd0f942e042bd32"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep035-vocab-008",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 108,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "daughter",
+        "zh": "女儿"
+      },
+      "payload": {
+        "term": "daughter",
+        "ipa": "ˈdɔː tə(r)",
+        "pos": "n.",
+        "def": "n.[C]女儿",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "035 拜访国王 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "178db1e0009323315dddfc8e72da37dfaa1d240d96e878fb2cd0f942e042bd32"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep035-vocab-009",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 109,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "general",
+        "zh": "将军"
+      },
+      "payload": {
+        "term": "general",
+        "ipa": "ˈdʒenrəl",
+        "pos": "adj.",
+        "def": "adj.总的,普遍的,概括性的 n.[C]将军",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "035 拜访国王 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "178db1e0009323315dddfc8e72da37dfaa1d240d96e878fb2cd0f942e042bd32"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep035-vocab-010",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 110,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "king",
+        "zh": "君主,国王"
+      },
+      "payload": {
+        "term": "king",
+        "ipa": "kɪŋ",
+        "pos": "n.",
+        "def": "n.[C]君主,国王",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "035 拜访国王 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "178db1e0009323315dddfc8e72da37dfaa1d240d96e878fb2cd0f942e042bd32"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "035 拜访国王 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "d11457bb44c062018c219fa9cb62e837f02c3e6ee51af58b8bb2706ac8a525d8"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep035-vocab-011",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 111,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "walk",
+        "zh": "步行的路径"
+      },
+      "payload": {
+        "term": "walk",
+        "ipa": "wɔː k",
+        "pos": "n.",
+        "def": "n.[C]行走,步行 v.行走,步行 n.[C]步行的路径",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "035 拜访国王 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "178db1e0009323315dddfc8e72da37dfaa1d240d96e878fb2cd0f942e042bd32"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep035-vocab-012",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 112,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "until",
+        "zh": "conj./prep.到......时,直到...... 为止"
+      },
+      "payload": {
+        "term": "until",
+        "ipa": "ənˈtɪl",
+        "pos": "conj.",
+        "def": "conj./prep.到......时,直到...... 为止",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "035 拜访国王 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "178db1e0009323315dddfc8e72da37dfaa1d240d96e878fb2cd0f942e042bd32"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep035-vocab-013",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 113,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "who",
+        "zh": "pron.谁,什么人"
+      },
+      "payload": {
+        "term": "who",
+        "ipa": "huː",
+        "pos": "pron.",
+        "def": "pron.谁,什么人",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "035 拜访国王 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "178db1e0009323315dddfc8e72da37dfaa1d240d96e878fb2cd0f942e042bd32"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep035-vocab-014",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 114,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "ask",
+        "zh": "请求,要求,询问"
+      },
+      "payload": {
+        "term": "ask",
+        "ipa": "ɑːsk",
+        "pos": "v.",
+        "def": "请求,要求,询问",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ],
+        "gloss": "请求,要求,询问"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "035 拜访国王 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "178db1e0009323315dddfc8e72da37dfaa1d240d96e878fb2cd0f942e042bd32"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep035-vocab-015",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 115,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "believe",
+        "zh": "v.相信,认为有可能"
+      },
+      "payload": {
+        "term": "believe",
+        "ipa": "bɪˈliːv",
+        "pos": "v.",
+        "def": "v.相信,认为有可能",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "035 拜访国王 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "d11457bb44c062018c219fa9cb62e837f02c3e6ee51af58b8bb2706ac8a525d8"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep035-vocab-016",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 116,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "young",
+        "zh": "adj.幼小的,年轻的,青少年的"
+      },
+      "payload": {
+        "term": "young",
+        "ipa": "jʌŋ",
+        "pos": "adj.",
+        "def": "adj.幼小的,年轻的,青少年的",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "035 拜访国王 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "d11457bb44c062018c219fa9cb62e837f02c3e6ee51af58b8bb2706ac8a525d8"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep035-vocab-017",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 117,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "spell",
+        "zh": "咒语"
+      },
+      "payload": {
+        "term": "spell",
+        "ipa": "spel",
+        "pos": "v.",
+        "def": "v.用字母拼,拼写 n.[C]咒语",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "035 拜访国王 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "d11457bb44c062018c219fa9cb62e837f02c3e6ee51af58b8bb2706ac8a525d8"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep035-vocab-018",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 118,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "handsome",
+        "zh": "adj.英俊的;漂亮的"
+      },
+      "payload": {
+        "term": "handsome",
+        "ipa": "ˈhænsəm",
+        "pos": "adj.",
+        "def": "adj.英俊的;漂亮的",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "035 拜访国王 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "d11457bb44c062018c219fa9cb62e837f02c3e6ee51af58b8bb2706ac8a525d8"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep035-vocab-019",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 119,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "change",
+        "zh": "变化,改变 v.变化,改变"
+      },
+      "payload": {
+        "term": "change",
+        "ipa": "tʃeɪndʒ",
+        "pos": "n.",
+        "def": "n.[C,U]变化,改变 v.变化,改变",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "035 拜访国王 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "d11457bb44c062018c219fa9cb62e837f02c3e6ee51af58b8bb2706ac8a525d8"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep035-vocab-020",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 120,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "true",
+        "zh": "adj.真的,符合事实的,真正的, 正确的"
+      },
+      "payload": {
+        "term": "true",
+        "ipa": "truː",
+        "pos": "adj.",
+        "def": "adj.真的,符合事实的,真正的, 正确的",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "035 拜访国王 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "d11457bb44c062018c219fa9cb62e837f02c3e6ee51af58b8bb2706ac8a525d8"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep035-vocab-021",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 121,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "lock",
+        "zh": "锁"
+      },
+      "payload": {
+        "term": "lock",
+        "ipa": "lɒk",
+        "pos": "v.",
+        "def": "v.锁上,锁住 n.[C]锁",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "035 拜访国王 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "d11457bb44c062018c219fa9cb62e837f02c3e6ee51af58b8bb2706ac8a525d8"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep035-vocab-022",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 122,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "say",
+        "zh": "v.说,讲"
+      },
+      "payload": {
+        "term": "say",
+        "ipa": "seɪ",
+        "pos": "v.",
+        "def": "v.说,讲",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "035 拜访国王 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "d11457bb44c062018c219fa9cb62e837f02c3e6ee51af58b8bb2706ac8a525d8"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep035-vocab-023",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 123,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "other",
+        "zh": "adj.另外的,其他的 pron.另外的人(或物)"
+      },
+      "payload": {
+        "term": "other",
+        "ipa": "ˈʌðə(r)",
+        "pos": "adj.",
+        "def": "adj.另外的,其他的 pron.另外的人(或物)",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "035 拜访国王 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "d11457bb44c062018c219fa9cb62e837f02c3e6ee51af58b8bb2706ac8a525d8"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep035-vocab-024",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 124,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "boy",
+        "zh": "男孩,儿子"
+      },
+      "payload": {
+        "term": "boy",
+        "ipa": "bɔɪ",
+        "pos": "n.",
+        "def": "n.[C]男孩,儿子",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "035 拜访国王 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "d11457bb44c062018c219fa9cb62e837f02c3e6ee51af58b8bb2706ac8a525d8"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep035-vocab-025",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 125,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "night",
+        "zh": "晚上,夜晚"
+      },
+      "payload": {
+        "term": "night",
+        "ipa": "naɪt",
+        "pos": "n.",
+        "def": "n.[C,U]晚上,夜晚",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "035 拜访国王 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "d11457bb44c062018c219fa9cb62e837f02c3e6ee51af58b8bb2706ac8a525d8"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep035-vocab-026",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 126,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "sit",
+        "zh": "v.坐"
+      },
+      "payload": {
+        "term": "sit",
+        "ipa": "sɪt",
+        "pos": "v.",
+        "def": "v.坐",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "035 拜访国王 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "d11457bb44c062018c219fa9cb62e837f02c3e6ee51af58b8bb2706ac8a525d8"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep035-vocab-027",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 127,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "alone",
+        "zh": "adv.独自,单独 adj.孤独的"
+      },
+      "payload": {
+        "term": "alone",
+        "ipa": "əˈləʊn",
+        "pos": "adv.",
+        "def": "adv.独自,单独 adj.孤独的",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "035 拜访国王 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "d11457bb44c062018c219fa9cb62e837f02c3e6ee51af58b8bb2706ac8a525d8"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep035-vocab-028",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 128,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "hear",
+        "zh": "v.听说,听到,听见,接到(信或 电话)"
+      },
+      "payload": {
+        "term": "hear",
+        "ipa": "hɪə",
+        "pos": "v.",
+        "def": "v.听说,听到,听见,接到(信或 电话)",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "035 拜访国王 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "d11457bb44c062018c219fa9cb62e837f02c3e6ee51af58b8bb2706ac8a525d8"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep035-vocab-029",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 129,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "voice",
+        "zh": "发言 权;主/被动语态 vt.表达(情感或意见)"
+      },
+      "payload": {
+        "term": "voice",
+        "ipa": "vɔɪs",
+        "pos": "n.",
+        "def": "n.[C,U]声音,嗓音[sing.]发言 权;主/被动语态 vt.表达(情感或意见)",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "035 拜访国王 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "d11457bb44c062018c219fa9cb62e837f02c3e6ee51af58b8bb2706ac8a525d8"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep035-vocab-030",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 130,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "look",
+        "zh": "看,注视,外表,表情"
+      },
+      "payload": {
+        "term": "look",
+        "ipa": "lʊk",
+        "pos": "vi.",
+        "def": "vi.看 v.-link.看上去 n.[C]看,注视,外表,表情",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "035 拜访国王 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "d11457bb44c062018c219fa9cb62e837f02c3e6ee51af58b8bb2706ac8a525d8"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep035-vocab-031",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 131,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "call",
+        "zh": "打电话；呼喊"
+      },
+      "payload": {
+        "term": "call",
+        "ipa": "kɔː l",
+        "pos": "v.",
+        "def": "打电话；呼喊",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ],
+        "gloss": "打电话；呼喊"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "035 拜访国王 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "d11457bb44c062018c219fa9cb62e837f02c3e6ee51af58b8bb2706ac8a525d8"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep035-vocab-032",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 132,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "behind",
+        "zh": "prep.在......的后面 adv.在......的后面,留在原地"
+      },
+      "payload": {
+        "term": "behind",
+        "ipa": "bɪˈhaɪnd",
+        "pos": "prep.",
+        "def": "prep.在......的后面 adv.在......的后面,留在原地",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "035 拜访国王 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "d11457bb44c062018c219fa9cb62e837f02c3e6ee51af58b8bb2706ac8a525d8"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep035-vocab-033",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 133,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "talk",
+        "zh": "n.说话,交谈,演讲 vi.说话,交谈"
+      },
+      "payload": {
+        "term": "talk",
+        "ipa": "tɔːk",
+        "pos": "n.",
+        "def": "n.说话,交谈,演讲 vi.说话,交谈",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "035 拜访国王 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "d11457bb44c062018c219fa9cb62e837f02c3e6ee51af58b8bb2706ac8a525d8"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep035-vocab-034",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 134,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "horse",
+        "zh": "马"
+      },
+      "payload": {
+        "term": "horse",
+        "ipa": "hɔː(r)s",
+        "pos": "n.",
+        "def": "n.[C]马",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "035 拜访国王 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "d11457bb44c062018c219fa9cb62e837f02c3e6ee51af58b8bb2706ac8a525d8"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep035-vocab-035",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 135,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "turn",
+        "zh": "轮流圈国"
+      },
+      "payload": {
+        "term": "turn",
+        "ipa": "tɜː (r)n",
+        "pos": "v.",
+        "def": "v.转向,翻圈v.-link.(使)变成 n.[C]轮流圈国",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "035 拜访国王 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "d11457bb44c062018c219fa9cb62e837f02c3e6ee51af58b8bb2706ac8a525d8"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep035-vocab-036",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 136,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "know",
+        "zh": "v.知道,了解"
+      },
+      "payload": {
+        "term": "know",
+        "ipa": "nəʊ",
+        "pos": "v.",
+        "def": "v.知道,了解",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "035 拜访国王 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "d11457bb44c062018c219fa9cb62e837f02c3e6ee51af58b8bb2706ac8a525d8"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep035-vocab-037",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 137,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "terrible",
+        "zh": "adj.非常讨厌的,非常严重的,可 怕的,糟糕的"
+      },
+      "payload": {
+        "term": "terrible",
+        "ipa": "ˈterəbl",
+        "pos": "adj.",
+        "def": "adj.非常讨厌的,非常严重的,可 怕的,糟糕的",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "035 拜访国王 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "d11457bb44c062018c219fa9cb62e837f02c3e6ee51af58b8bb2706ac8a525d8"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep035-vocab-038",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 138,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "journey",
+        "zh": "(尤指长途)旅行,行程"
+      },
+      "payload": {
+        "term": "journey",
+        "ipa": "ˈdʒɜː(r)ni",
+        "pos": "n.",
+        "def": "n.[C](尤指长途)旅行,行程",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "035 拜访国王 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "d11457bb44c062018c219fa9cb62e837f02c3e6ee51af58b8bb2706ac8a525d8"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep035-vocab-039",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 139,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "leg",
+        "zh": "腿"
+      },
+      "payload": {
+        "term": "leg",
+        "ipa": "leɡ",
+        "pos": "n.",
+        "def": "n.[C]腿",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "035 拜访国王 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "d11457bb44c062018c219fa9cb62e837f02c3e6ee51af58b8bb2706ac8a525d8"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep035-vocab-040",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 140,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "why",
+        "zh": "adv.为什么"
+      },
+      "payload": {
+        "term": "why",
+        "ipa": "waɪ",
+        "pos": "adv.",
+        "def": "adv.为什么",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "035 拜访国王 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "d11457bb44c062018c219fa9cb62e837f02c3e6ee51af58b8bb2706ac8a525d8"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep035-vocab-041",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 141,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "do",
+        "zh": "v.做,干 aux v.构成疑问句和否定句"
+      },
+      "payload": {
+        "term": "do",
+        "ipa": "duː",
+        "pos": "v.",
+        "def": "v.做,干 aux v.构成疑问句和否定句",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "035 拜访国王 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "d11457bb44c062018c219fa9cb62e837f02c3e6ee51af58b8bb2706ac8a525d8"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep035-vocab-042",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 142,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "go",
+        "zh": "vi.去,走 v.link.变成,变得"
+      },
+      "payload": {
+        "term": "go",
+        "ipa": "ɡəʊ",
+        "pos": "vi.",
+        "def": "vi.去,走 v.link.变成,变得",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "035 拜访国王 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "d11457bb44c062018c219fa9cb62e837f02c3e6ee51af58b8bb2706ac8a525d8"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep035-vocab-043",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 143,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "home",
+        "zh": "家,养老院 adv.到家,在家"
+      },
+      "payload": {
+        "term": "home",
+        "ipa": "həʊm",
+        "pos": "n.",
+        "def": "n.[C,U]家,养老院 adv.到家,在家",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "035 拜访国王 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "d11457bb44c062018c219fa9cb62e837f02c3e6ee51af58b8bb2706ac8a525d8"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep035-vocab-044",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 144,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "probably",
+        "zh": "adv.很可能,大概"
+      },
+      "payload": {
+        "term": "probably",
+        "ipa": "ˈprɒbəbli",
+        "pos": "adv.",
+        "def": "adv.很可能,大概",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "035 拜访国王 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "d11457bb44c062018c219fa9cb62e837f02c3e6ee51af58b8bb2706ac8a525d8"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep035-vocab-045",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 145,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "but",
+        "zh": "conj.但是 prep.除......以外"
+      },
+      "payload": {
+        "term": "but",
+        "ipa": "bʌt",
+        "pos": "conj.",
+        "def": "conj.但是 prep.除......以外",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "035 拜访国王 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "d11457bb44c062018c219fa9cb62e837f02c3e6ee51af58b8bb2706ac8a525d8"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep035-vocab-046",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 146,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "think",
+        "zh": "v.认为,想。思考"
+      },
+      "payload": {
+        "term": "think",
+        "ipa": "θɪŋk",
+        "pos": "v.",
+        "def": "v.认为,想。思考",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "035 拜访国王 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "d11457bb44c062018c219fa9cb62e837f02c3e6ee51af58b8bb2706ac8a525d8"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep035-vocab-047",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 147,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "must",
+        "zh": "modal v.必须,一定"
+      },
+      "payload": {
+        "term": "must",
+        "ipa": "mʌst",
+        "pos": "",
+        "def": "modal v.必须,一定",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "035 拜访国王 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "d11457bb44c062018c219fa9cb62e837f02c3e6ee51af58b8bb2706ac8a525d8"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep035-vocab-048",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 148,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "help",
+        "zh": "帮助"
+      },
+      "payload": {
+        "term": "help",
+        "ipa": "help",
+        "pos": "n.",
+        "def": "帮助",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ],
+        "gloss": "帮助"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "035 拜访国王 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "d11457bb44c062018c219fa9cb62e837f02c3e6ee51af58b8bb2706ac8a525d8"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep035-vocab-049",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 149,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "shake",
+        "zh": "摇动,抖动,奶昔"
+      },
+      "payload": {
+        "term": "shake",
+        "ipa": "ʃeɪk",
+        "pos": "v.",
+        "def": "v.摇动,抖动,(与某人)握手, 发抖 n.[C]摇动,抖动,奶昔",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          4
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "035 拜访国王 下.pdf",
+          "half": "down",
+          "pages": [
+            4
+          ],
+          "sha256": "d11457bb44c062018c219fa9cb62e837f02c3e6ee51af58b8bb2706ac8a525d8"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep035-vocab-050",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 150,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "he",
+        "zh": "pron.他"
+      },
+      "payload": {
+        "term": "he",
+        "ipa": "hiː",
+        "pos": "pron.",
+        "def": "pron.他",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          4
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "035 拜访国王 下.pdf",
+          "half": "down",
+          "pages": [
+            4
+          ],
+          "sha256": "d11457bb44c062018c219fa9cb62e837f02c3e6ee51af58b8bb2706ac8a525d8"
+        }
+      ],
+      "review_status": "machine_verified"
+    }
+  ],
+  "teacher_guide": null,
+  "review": {
+    "status": "draft",
+    "reviewed_at": null,
+    "card_stats": {
+      "total": 55,
+      "sentence_choice": 5,
+      "word_review": 50,
+      "machine_verified": 50,
+      "assistant_reviewed": 5,
+      "verified": 55,
+      "needs_review": 0
+    }
+  },
+  "generated_at": "2026-08-31T04:49:39.497596+00:00"
+}

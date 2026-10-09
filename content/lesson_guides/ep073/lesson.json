@@ -1,0 +1,2573 @@
+{
+  "schema_version": 1,
+  "episode": 73,
+  "title": {
+    "en": "Two Wukongs",
+    "zh": "西游记 第73集"
+  },
+  "sources": [
+    {
+      "kind": "courseware_main_pptx",
+      "file": "G:\\Game\\BookPlay书戏\\data\\西游记课件\\3.3西游记  Journey to the West PPT课件\\073_Journey to the West 73_Two Wukongs.pptx",
+      "sha256": "00785e54c45078c9af5a9d60150544aa2d24aa9ed89b2ec683dd313445cb762c",
+      "pages": 20
+    },
+    {
+      "kind": "official_quiz_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+      "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929",
+      "pages": 131
+    },
+    {
+      "kind": "intensive_reader_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\02-西游记精读版台词本\\1、带标注版PDF 108集\\073 两个悟空 上.pdf",
+      "sha256": "480918a813a6b865a10e3e89d64f923bd8274a519c23ca36e83dfd2d990ee9fb",
+      "pages": 4
+    },
+    {
+      "kind": "intensive_reader_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\02-西游记精读版台词本\\1、带标注版PDF 108集\\073 两个悟空 下.pdf",
+      "sha256": "0c7cc8a2da304edc331b272fe2171212ab344bd9f93c407f02cf0c2072405120",
+      "pages": 3
+    },
+    {
+      "kind": "courseware_screenshots_pptx",
+      "file": "G:\\Game\\BookPlay书戏\\data\\西游记课件\\西游记-外教课动画截图\\Journey to the West 073  Two Wukongs_20240114123158.pptx",
+      "sha256": "f5a0c8cffaea26ba6f4e62f4722d13e1767714f6500f0ffb88b2dc6d162d2cf3",
+      "pages": 55
+    }
+  ],
+  "cards": [
+    {
+      "card_id": "ep073-official-quiz-001",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 1,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "which is not true?",
+        "zh": "哪一项是不正确的？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "the tang monk asked guanyin for help.",
+            "zh": "唐僧向观音求助。"
+          },
+          {
+            "id": "b",
+            "en": "wujing was surprised to see wukong at mount potalaka.",
+            "zh": "悟净惊讶地在普陀山见到悟空。"
+          },
+          {
+            "id": "c",
+            "en": "the two wukongs fought with their iron bars.",
+            "zh": "两个悟空用铁棍战斗。"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n008",
+            "quote": "When Wujing arrived at Mount Potalaka, he was even more shocked."
+          },
+          {
+            "node_id": "n009",
+            "quote": "Wukong was meditating in the bodhisattva's garden."
+          },
+          {
+            "node_id": "n021",
+            "quote": "Wujing was surprised. \"He has?\""
+          },
+          {
+            "node_id": "n033",
+            "quote": "Furious, Wukong pulled out his iron bar."
+          },
+          {
+            "node_id": "n034",
+            "quote": "The fake Wukong pulled out his iron bar."
+          },
+          {
+            "node_id": "n035",
+            "quote": "Wukong attacked, and so did the fake Wukong. <font color=\"#ffff00\"><i>Clang!</i></font> The ground shook as the iron bars crashed into each other."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 86,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep073-official-quiz-002",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 2,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "what did wujing tell guanyin?",
+        "zh": "悟净告诉观音什么了？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "wukong made fake versions of his companions.",
+            "zh": "悟空制造了他同伴的假冒版本。"
+          },
+          {
+            "id": "b",
+            "en": "he knew which one was the real wukong.",
+            "zh": "他知道哪一个才是真正的悟空。"
+          },
+          {
+            "id": "c",
+            "en": "the tang monk needed her help.",
+            "zh": "唐僧需要她的帮助。"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n015",
+            "quote": "\"Bodhisattva, I must speak with you. Wukong has made fake versions of me, Bajie, and the Tang Monk. He's planning to make the journey without us.\""
+          },
+          {
+            "node_id": "n018",
+            "quote": "\"I just saw him on the Fruit and Flower Mountain. I don't know how he got here before me.\""
+          },
+          {
+            "node_id": "n051",
+            "quote": "\"I don't know which one of you is the real Wukong,\" said Wujing."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 86,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep073-official-quiz-003",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 3,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "who went to the fruit and flower mountain?",
+        "zh": "谁去了水花果山？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "wukong and wujing",
+            "zh": "悟空和悟净"
+          },
+          {
+            "id": "b",
+            "en": "guanyin and wukong",
+            "zh": "观音和悟空"
+          },
+          {
+            "id": "c",
+            "en": "wujing and bajie",
+            "zh": "悟净和八戒"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n024",
+            "quote": "\"Someone is pretending to be me! And he's living on my mountain! I'm going there right now. I'm going to destroy him!\""
+          },
+          {
+            "node_id": "n025",
+            "quote": "\"I'll go with you,\" said Wujing."
+          },
+          {
+            "node_id": "n026",
+            "quote": "Wukong and Wujing soon arrived on the Fruit and Flower Mountain."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 86,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep073-official-quiz-004",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 4,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "why did wujing tell the two wukongs to go to guanyin?",
+        "zh": "为什么悟净叫两个悟空去找观音？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "she could tell which was the real one.",
+            "zh": "她可以分辨出哪个是真的。"
+          },
+          {
+            "id": "b",
+            "en": "he didn't want to bother the tang monk.",
+            "zh": "他不想打扰唐僧。"
+          },
+          {
+            "id": "c",
+            "en": "he didn't know the tight headband spell.",
+            "zh": "他不知道紧身头带咒语。"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n051",
+            "quote": "\"I don't know which one of you is the real Wukong,\" said Wujing."
+          },
+          {
+            "node_id": "n052",
+            "quote": "\"Go to Mount Potalaka. Guanyin will be able to tell who is who. I will return to the Tang Monk to tell him what's going on.\""
+          },
+          {
+            "node_id": "n055",
+            "quote": "\"Guanyin will easily see that I am the real Wukong.\""
+          },
+          {
+            "node_id": "n057",
+            "quote": "\"Guanyin will easily see that <font color=\"#ffff00\"><i>I</i></font> am the real Wukong.\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 86,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep073-official-quiz-005",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 5,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "what did the wukongs suggest to guanyin?",
+        "zh": "悟空们建议观音什么？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "using the tight headband spell",
+            "zh": "使用紧头带魔法"
+          },
+          {
+            "id": "b",
+            "en": "punishing the fake wukong",
+            "zh": "惩罚假悟空"
+          },
+          {
+            "id": "c",
+            "en": "finding the tang monk",
+            "zh": "寻找唐僧"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n060",
+            "quote": "\"I can't tell which one of you is the real Wukong,\" she said."
+          },
+          {
+            "node_id": "n061",
+            "quote": "One Wukong took a deep breath."
+          },
+          {
+            "node_id": "n062",
+            "quote": "\"Use the Tight Headband spell. The spell will work only with my headband—the real headband.\""
+          },
+          {
+            "node_id": "n063",
+            "quote": "\"Yes!\" said the other one."
+          },
+          {
+            "node_id": "n064",
+            "quote": "\"Use the Tight Headband spell! The spell will work only with <font color=\"#ffff00\"><i>my</i></font> headband.\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 86,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep073-vocab-001",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 101,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "watch",
+        "zh": "观察"
+      },
+      "payload": {
+        "term": "watch",
+        "ipa": "wɒtʃ",
+        "pos": "v.",
+        "def": "v.注视,观看,留意,小心 n.[C]表,手表[U]观察",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "073 两个悟空 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "480918a813a6b865a10e3e89d64f923bd8274a519c23ca36e83dfd2d990ee9fb"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep073-vocab-002",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 102,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "feed",
+        "zh": "一餐"
+      },
+      "payload": {
+        "term": "feed",
+        "ipa": "fiː d",
+        "pos": "vt.",
+        "def": "vt.喂养,饲养;养活,施肥 vi.进食 n.[C]一餐",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "073 两个悟空 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "480918a813a6b865a10e3e89d64f923bd8274a519c23ca36e83dfd2d990ee9fb"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep073-vocab-003",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 103,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "real",
+        "zh": "adj.真正的,真实的"
+      },
+      "payload": {
+        "term": "real",
+        "ipa": "rɪəl",
+        "pos": "adj.",
+        "def": "adj.真正的,真实的",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "073 两个悟空 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "480918a813a6b865a10e3e89d64f923bd8274a519c23ca36e83dfd2d990ee9fb"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "073 两个悟空 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "0c7cc8a2da304edc331b272fe2171212ab344bd9f93c407f02cf0c2072405120"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep073-vocab-004",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 104,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "fold",
+        "zh": "v.折叠,对折"
+      },
+      "payload": {
+        "term": "fold",
+        "ipa": "fəʊld",
+        "pos": "v.",
+        "def": "v.折叠,对折",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "073 两个悟空 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "480918a813a6b865a10e3e89d64f923bd8274a519c23ca36e83dfd2d990ee9fb"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep073-vocab-005",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 105,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "arm",
+        "zh": "手臂,上肢 v.装备,武装"
+      },
+      "payload": {
+        "term": "arm",
+        "ipa": "ɑː rm",
+        "pos": "n.",
+        "def": "n.[C]手臂,上肢 v.装备,武装",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "073 两个悟空 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "480918a813a6b865a10e3e89d64f923bd8274a519c23ca36e83dfd2d990ee9fb"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep073-vocab-006",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 106,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "will",
+        "zh": "意志"
+      },
+      "payload": {
+        "term": "will",
+        "ipa": "wɪl",
+        "pos": "",
+        "def": "modal v.将要 n.[C,U]意志",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "073 两个悟空 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "480918a813a6b865a10e3e89d64f923bd8274a519c23ca36e83dfd2d990ee9fb"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep073-vocab-007",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 107,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "think",
+        "zh": "v.认为,想。思考"
+      },
+      "payload": {
+        "term": "think",
+        "ipa": "θɪŋk",
+        "pos": "v.",
+        "def": "v.认为,想。思考",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "073 两个悟空 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "480918a813a6b865a10e3e89d64f923bd8274a519c23ca36e83dfd2d990ee9fb"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep073-vocab-008",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 108,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "cry",
+        "zh": "叫喊"
+      },
+      "payload": {
+        "term": "cry",
+        "ipa": "kraɪ",
+        "pos": "v.",
+        "def": "v./n.[sing.]哭 [C]叫喊",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "073 两个悟空 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "480918a813a6b865a10e3e89d64f923bd8274a519c23ca36e83dfd2d990ee9fb"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "073 两个悟空 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "0c7cc8a2da304edc331b272fe2171212ab344bd9f93c407f02cf0c2072405120"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep073-vocab-009",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 109,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "fast",
+        "zh": "adj.快的 adv.快地;完全地,牢固地"
+      },
+      "payload": {
+        "term": "fast",
+        "ipa": "fɑːst",
+        "pos": "adj.",
+        "def": "adj.快的 adv.快地;完全地,牢固地",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "073 两个悟空 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "480918a813a6b865a10e3e89d64f923bd8274a519c23ca36e83dfd2d990ee9fb"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep073-vocab-010",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 110,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "talk",
+        "zh": "n.说话,交谈,演讲 vi.说话,交谈"
+      },
+      "payload": {
+        "term": "talk",
+        "ipa": "tɔːk",
+        "pos": "n.",
+        "def": "n.说话,交谈,演讲 vi.说话,交谈",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "073 两个悟空 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "480918a813a6b865a10e3e89d64f923bd8274a519c23ca36e83dfd2d990ee9fb"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep073-vocab-011",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 111,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "about",
+        "zh": "prep.关于 adv.大约,各处,到处 adj.(通常构成搭配)"
+      },
+      "payload": {
+        "term": "about",
+        "ipa": "əˈbaʊt",
+        "pos": "prep.",
+        "def": "prep.关于 adv.大约,各处,到处 adj.(通常构成搭配)",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "073 两个悟空 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "480918a813a6b865a10e3e89d64f923bd8274a519c23ca36e83dfd2d990ee9fb"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep073-vocab-012",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 112,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "do",
+        "zh": "v.做,干 aux v.构成疑问句和否定句"
+      },
+      "payload": {
+        "term": "do",
+        "ipa": "duː",
+        "pos": "v.",
+        "def": "v.做,干 aux v.构成疑问句和否定句",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "073 两个悟空 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "480918a813a6b865a10e3e89d64f923bd8274a519c23ca36e83dfd2d990ee9fb"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep073-vocab-013",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 113,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "plan",
+        "zh": "打算,计划"
+      },
+      "payload": {
+        "term": "plan",
+        "ipa": "plæn",
+        "pos": "v.",
+        "def": "v./n.打算,计划 [C]打算,计划",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "073 两个悟空 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "480918a813a6b865a10e3e89d64f923bd8274a519c23ca36e83dfd2d990ee9fb"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep073-vocab-014",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 114,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "what",
+        "zh": "pron./adj.什么"
+      },
+      "payload": {
+        "term": "what",
+        "ipa": "wɒt",
+        "pos": "pron.",
+        "def": "pron./adj.什么",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "073 两个悟空 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "480918a813a6b865a10e3e89d64f923bd8274a519c23ca36e83dfd2d990ee9fb"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep073-vocab-015",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 115,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "shout",
+        "zh": "呼喊,叫喊"
+      },
+      "payload": {
+        "term": "shout",
+        "ipa": "ʃaʊt",
+        "pos": "v.",
+        "def": "v.呼叫,喊叫 n.[C]呼喊,叫喊",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          1,
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "073 两个悟空 上.pdf",
+          "half": "up",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "480918a813a6b865a10e3e89d64f923bd8274a519c23ca36e83dfd2d990ee9fb"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "073 两个悟空 下.pdf",
+          "half": "down",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "0c7cc8a2da304edc331b272fe2171212ab344bd9f93c407f02cf0c2072405120"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep073-vocab-016",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 116,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "monkey",
+        "zh": "猴子"
+      },
+      "payload": {
+        "term": "monkey",
+        "ipa": "ˈmʌŋki",
+        "pos": "n.",
+        "def": "n.[C]猴子",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          1,
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "073 两个悟空 上.pdf",
+          "half": "up",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "480918a813a6b865a10e3e89d64f923bd8274a519c23ca36e83dfd2d990ee9fb"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "073 两个悟空 下.pdf",
+          "half": "down",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "0c7cc8a2da304edc331b272fe2171212ab344bd9f93c407f02cf0c2072405120"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep073-vocab-017",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 117,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "lie",
+        "zh": "vi.存在,平躺,处于,位于;说 谎 n.谎言"
+      },
+      "payload": {
+        "term": "lie",
+        "ipa": "laɪ",
+        "pos": "vi.",
+        "def": "vi.存在,平躺,处于,位于;说 谎 n.谎言",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "073 两个悟空 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "480918a813a6b865a10e3e89d64f923bd8274a519c23ca36e83dfd2d990ee9fb"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep073-vocab-018",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 118,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "mistake",
+        "zh": "错误,失误 vt.误会,误解"
+      },
+      "payload": {
+        "term": "mistake",
+        "ipa": "mɪˈsteɪk",
+        "pos": "n.",
+        "def": "n.[C]错误,失误 vt.误会,误解",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "073 两个悟空 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "480918a813a6b865a10e3e89d64f923bd8274a519c23ca36e83dfd2d990ee9fb"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep073-vocab-019",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 119,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "here",
+        "zh": "adv.这就是,在这里"
+      },
+      "payload": {
+        "term": "here",
+        "ipa": "hɪə(r)",
+        "pos": "adv.",
+        "def": "adv.这就是,在这里",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "073 两个悟空 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "480918a813a6b865a10e3e89d64f923bd8274a519c23ca36e83dfd2d990ee9fb"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep073-vocab-020",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 120,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "surprise",
+        "zh": "意 想不到的事 vt.使吃惊"
+      },
+      "payload": {
+        "term": "surprise",
+        "ipa": "sə(r)ˈpraɪz",
+        "pos": "n.",
+        "def": "n.[C,U]惊奇,惊讶,以外[C]意 想不到的事 vt.使吃惊",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "073 两个悟空 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "480918a813a6b865a10e3e89d64f923bd8274a519c23ca36e83dfd2d990ee9fb"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep073-vocab-021",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 121,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "nod",
+        "zh": "点头"
+      },
+      "payload": {
+        "term": "nod",
+        "ipa": "nɒd",
+        "pos": "v.",
+        "def": "v.点头 n.[C]点头",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "073 两个悟空 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "480918a813a6b865a10e3e89d64f923bd8274a519c23ca36e83dfd2d990ee9fb"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep073-vocab-022",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 122,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "go",
+        "zh": "vi.去,走 v.link.变成,变得"
+      },
+      "payload": {
+        "term": "go",
+        "ipa": "ɡəʊ",
+        "pos": "vi.",
+        "def": "vi.去,走 v.link.变成,变得",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "073 两个悟空 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "480918a813a6b865a10e3e89d64f923bd8274a519c23ca36e83dfd2d990ee9fb"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep073-vocab-023",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 123,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "with",
+        "zh": "和……一起"
+      },
+      "payload": {
+        "term": "with",
+        "ipa": "wɪð",
+        "pos": "",
+        "def": "和……一起",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ],
+        "gloss": "和……一起"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "073 两个悟空 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "480918a813a6b865a10e3e89d64f923bd8274a519c23ca36e83dfd2d990ee9fb"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep073-vocab-024",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 124,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "you",
+        "zh": "pron.你,你们"
+      },
+      "payload": {
+        "term": "you",
+        "ipa": "juː",
+        "pos": "pron.",
+        "def": "pron.你,你们",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "073 两个悟空 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "480918a813a6b865a10e3e89d64f923bd8274a519c23ca36e83dfd2d990ee9fb"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep073-vocab-025",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 125,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "ask",
+        "zh": "v.请求,要求,询问"
+      },
+      "payload": {
+        "term": "ask",
+        "ipa": "ɑːsk",
+        "pos": "v.",
+        "def": "v.请求,要求,询问",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "073 两个悟空 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "480918a813a6b865a10e3e89d64f923bd8274a519c23ca36e83dfd2d990ee9fb"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep073-vocab-026",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 126,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "king",
+        "zh": "君主,国王"
+      },
+      "payload": {
+        "term": "king",
+        "ipa": "kɪŋ",
+        "pos": "n.",
+        "def": "n.[C]君主,国王",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "073 两个悟空 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "480918a813a6b865a10e3e89d64f923bd8274a519c23ca36e83dfd2d990ee9fb"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep073-vocab-027",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 127,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "pull",
+        "zh": "引力,吸引力"
+      },
+      "payload": {
+        "term": "pull",
+        "ipa": "pʊl",
+        "pos": "v.",
+        "def": "v.拉,托 n.[C]拉,托[sing.]引力,吸引力",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "073 两个悟空 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "480918a813a6b865a10e3e89d64f923bd8274a519c23ca36e83dfd2d990ee9fb"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep073-vocab-028",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 128,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "ground",
+        "zh": "地,地面"
+      },
+      "payload": {
+        "term": "ground",
+        "ipa": "ɡraʊnd",
+        "pos": "n.",
+        "def": "n.[U]地,地面",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "073 两个悟空 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "480918a813a6b865a10e3e89d64f923bd8274a519c23ca36e83dfd2d990ee9fb"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep073-vocab-029",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 129,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "shake",
+        "zh": "摇动,抖动,奶昔"
+      },
+      "payload": {
+        "term": "shake",
+        "ipa": "ʃeɪk",
+        "pos": "v.",
+        "def": "v.摇动,抖动,(与某人)握手, 发抖 n.[C]摇动,抖动,奶昔",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "073 两个悟空 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "480918a813a6b865a10e3e89d64f923bd8274a519c23ca36e83dfd2d990ee9fb"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep073-vocab-030",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 130,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "fight",
+        "zh": "打架,战斗 v.与......作斗争"
+      },
+      "payload": {
+        "term": "fight",
+        "ipa": "faɪt",
+        "pos": "v.",
+        "def": "v./n.[C]打架,战斗 v.与......作斗争",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          1,
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "073 两个悟空 上.pdf",
+          "half": "up",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "480918a813a6b865a10e3e89d64f923bd8274a519c23ca36e83dfd2d990ee9fb"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "073 两个悟空 下.pdf",
+          "half": "down",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "0c7cc8a2da304edc331b272fe2171212ab344bd9f93c407f02cf0c2072405120"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep073-vocab-031",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 131,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "block",
+        "zh": "挡住；阻塞"
+      },
+      "payload": {
+        "term": "block",
+        "ipa": "blɒk",
+        "pos": "n.",
+        "def": "挡住；阻塞",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          1,
+          3
+        ],
+        "gloss": "挡住；阻塞"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "073 两个悟空 上.pdf",
+          "half": "up",
+          "pages": [
+            1,
+            3
+          ],
+          "sha256": "480918a813a6b865a10e3e89d64f923bd8274a519c23ca36e83dfd2d990ee9fb"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "073 两个悟空 下.pdf",
+          "half": "down",
+          "pages": [
+            1,
+            3
+          ],
+          "sha256": "0c7cc8a2da304edc331b272fe2171212ab344bd9f93c407f02cf0c2072405120"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep073-vocab-032",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 132,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "help",
+        "zh": "有帮助的 人或物 v.帮助,援助"
+      },
+      "payload": {
+        "term": "help",
+        "ipa": "help",
+        "pos": "n.",
+        "def": "n.[U]帮助,援助[sing.]有帮助的 人或物 v.帮助,援助",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "073 两个悟空 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "0c7cc8a2da304edc331b272fe2171212ab344bd9f93c407f02cf0c2072405120"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep073-vocab-033",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 133,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "listen",
+        "zh": "vi.听,倾听;注意听"
+      },
+      "payload": {
+        "term": "listen",
+        "ipa": "ˈlɪs(ə)n",
+        "pos": "vi.",
+        "def": "vi.听,倾听;注意听",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "073 两个悟空 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "0c7cc8a2da304edc331b272fe2171212ab344bd9f93c407f02cf0c2072405120"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep073-vocab-034",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 134,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "stamp",
+        "zh": "邮票,印章"
+      },
+      "payload": {
+        "term": "stamp",
+        "ipa": "stæmp",
+        "pos": "n.",
+        "def": "n.[C]邮票,印章",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "073 两个悟空 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "0c7cc8a2da304edc331b272fe2171212ab344bd9f93c407f02cf0c2072405120"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep073-vocab-035",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 135,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "know",
+        "zh": "v.知道,了解"
+      },
+      "payload": {
+        "term": "know",
+        "ipa": "nəʊ",
+        "pos": "v.",
+        "def": "v.知道,了解",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "073 两个悟空 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "0c7cc8a2da304edc331b272fe2171212ab344bd9f93c407f02cf0c2072405120"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep073-vocab-036",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 136,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "able",
+        "zh": "adj.能够"
+      },
+      "payload": {
+        "term": "able",
+        "ipa": "ˈeɪbl",
+        "pos": "adj.",
+        "def": "adj.能够",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "073 两个悟空 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "0c7cc8a2da304edc331b272fe2171212ab344bd9f93c407f02cf0c2072405120"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep073-vocab-037",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 137,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "tell",
+        "zh": "vt.讲述,告诉,分辨,辨别"
+      },
+      "payload": {
+        "term": "tell",
+        "ipa": "tel",
+        "pos": "vt.",
+        "def": "vt.讲述,告诉,分辨,辨别",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "073 两个悟空 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "0c7cc8a2da304edc331b272fe2171212ab344bd9f93c407f02cf0c2072405120"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep073-vocab-038",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 138,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "who",
+        "zh": "pron.谁,什么人"
+      },
+      "payload": {
+        "term": "who",
+        "ipa": "huː",
+        "pos": "pron.",
+        "def": "pron.谁,什么人",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "073 两个悟空 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "0c7cc8a2da304edc331b272fe2171212ab344bd9f93c407f02cf0c2072405120"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep073-vocab-039",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 139,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "return",
+        "zh": "返回"
+      },
+      "payload": {
+        "term": "return",
+        "ipa": "rɪˈtɜː(r)n",
+        "pos": "",
+        "def": "方的攻击,一边喊道,“我才是!” vt.归还 vi.回来,返回 n.[C,U]回报[sing.]返回",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "073 两个悟空 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "0c7cc8a2da304edc331b272fe2171212ab344bd9f93c407f02cf0c2072405120"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep073-vocab-040",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 140,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "each other",
+        "zh": "互相,彼此"
+      },
+      "payload": {
+        "term": "each other",
+        "ipa": "",
+        "pos": "",
+        "def": "互相,彼此",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "073 两个悟空 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "0c7cc8a2da304edc331b272fe2171212ab344bd9f93c407f02cf0c2072405120"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep073-vocab-041",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 141,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "idea",
+        "zh": "想法,主意"
+      },
+      "payload": {
+        "term": "idea",
+        "ipa": "aɪˈdɪə",
+        "pos": "n.",
+        "def": "n.[C]想法,主意",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "073 两个悟空 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "0c7cc8a2da304edc331b272fe2171212ab344bd9f93c407f02cf0c2072405120"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep073-vocab-042",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 142,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "easy",
+        "zh": "adj.容易的,不费力的;安逸的 adv.放松地"
+      },
+      "payload": {
+        "term": "easy",
+        "ipa": "ˈiːzi",
+        "pos": "adj.",
+        "def": "adj.容易的,不费力的;安逸的 adv.放松地",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "073 两个悟空 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "0c7cc8a2da304edc331b272fe2171212ab344bd9f93c407f02cf0c2072405120"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep073-vocab-043",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 143,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "agree",
+        "zh": "v.同意,赞成,应允"
+      },
+      "payload": {
+        "term": "agree",
+        "ipa": "əˈɡriː",
+        "pos": "v.",
+        "def": "v.同意,赞成,应允",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "073 两个悟空 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "0c7cc8a2da304edc331b272fe2171212ab344bd9f93c407f02cf0c2072405120"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep073-vocab-044",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 144,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "see",
+        "zh": "v.理解,明白,观看,会见,看 见,送别,确保"
+      },
+      "payload": {
+        "term": "see",
+        "ipa": "siː",
+        "pos": "v.",
+        "def": "v.理解,明白,观看,会见,看 见,送别,确保",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "073 两个悟空 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "0c7cc8a2da304edc331b272fe2171212ab344bd9f93c407f02cf0c2072405120"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep073-vocab-045",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 145,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "look",
+        "zh": "看,注视,外表,表情"
+      },
+      "payload": {
+        "term": "look",
+        "ipa": "lʊk",
+        "pos": "vi.",
+        "def": "vi.看 v.-link.看上去 n.[C]看,注视,外表,表情",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "073 两个悟空 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "0c7cc8a2da304edc331b272fe2171212ab344bd9f93c407f02cf0c2072405120"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep073-vocab-046",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 146,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "careful",
+        "zh": "adj.小心的,细致的,精心的,慎 重的"
+      },
+      "payload": {
+        "term": "careful",
+        "ipa": "ˈkeəfl",
+        "pos": "adj.",
+        "def": "adj.小心的,细致的,精心的,慎 重的",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "073 两个悟空 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "0c7cc8a2da304edc331b272fe2171212ab344bd9f93c407f02cf0c2072405120"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep073-vocab-047",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 147,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "which",
+        "zh": "pron./adj.哪一个,哪一些"
+      },
+      "payload": {
+        "term": "which",
+        "ipa": "wɪtʃ",
+        "pos": "pron.",
+        "def": "pron./adj.哪一个,哪一些",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "073 两个悟空 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "0c7cc8a2da304edc331b272fe2171212ab344bd9f93c407f02cf0c2072405120"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep073-vocab-048",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 148,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "deep",
+        "zh": "adj.深的,纵深的 adv.深深地"
+      },
+      "payload": {
+        "term": "deep",
+        "ipa": "diːp",
+        "pos": "adj.",
+        "def": "adj.深的,纵深的 adv.深深地",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "073 两个悟空 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "0c7cc8a2da304edc331b272fe2171212ab344bd9f93c407f02cf0c2072405120"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep073-vocab-049",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 149,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "spell",
+        "zh": "咒语"
+      },
+      "payload": {
+        "term": "spell",
+        "ipa": "spel",
+        "pos": "v.",
+        "def": "咒语",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ],
+        "gloss": "咒语"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "073 两个悟空 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "0c7cc8a2da304edc331b272fe2171212ab344bd9f93c407f02cf0c2072405120"
+        }
+      ],
+      "review_status": "machine_verified"
+    }
+  ],
+  "teacher_guide": null,
+  "review": {
+    "status": "draft",
+    "reviewed_at": null,
+    "card_stats": {
+      "total": 54,
+      "sentence_choice": 5,
+      "word_review": 49,
+      "machine_verified": 49,
+      "assistant_reviewed": 5,
+      "verified": 54,
+      "needs_review": 0
+    }
+  },
+  "generated_at": "2026-08-31T04:49:45.604555+00:00"
+}

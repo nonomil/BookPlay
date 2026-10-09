@@ -1,0 +1,3149 @@
+{
+  "schema_version": 1,
+  "episode": 9,
+  "title": {
+    "en": "The Peach Garden",
+    "zh": "西游记 第9集"
+  },
+  "sources": [
+    {
+      "kind": "courseware_main_pptx",
+      "file": "G:\\Game\\BookPlay书戏\\data\\西游记课件\\3.3西游记  Journey to the West PPT课件\\009_Journey to the West 9_The Peach Garden.pptx",
+      "sha256": "b8af58f8fc5c12ffd21d692b6a0c58f4be381069a2fb6856659867841c4ed892",
+      "pages": 20
+    },
+    {
+      "kind": "official_quiz_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+      "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929",
+      "pages": 131
+    },
+    {
+      "kind": "intensive_reader_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\02-西游记精读版台词本\\1、带标注版PDF 108集\\009 蟠桃园 上.pdf",
+      "sha256": "2d0031cd366d0abf8003fb9569fd61d9838394556e96d8dca670b62d0087cb6b",
+      "pages": 5
+    },
+    {
+      "kind": "intensive_reader_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\02-西游记精读版台词本\\1、带标注版PDF 108集\\009 蟠桃园 下.pdf",
+      "sha256": "10c5c0de7318303adaeb026b229449e13ce95784a0dbd77b5d717a8bc7990d72",
+      "pages": 3
+    },
+    {
+      "kind": "courseware_teacher_pptx",
+      "file": "G:\\Game\\BookPlay书戏\\data\\西游记课件\\西游记外教培训11集课件\\西游记外教E009.pptx",
+      "sha256": "2790799eba66a7664ff84965b11c553655c52282fba7b464e243f964ec4a30e9",
+      "pages": 12
+    },
+    {
+      "kind": "courseware_screenshots_pptx",
+      "file": "G:\\Game\\BookPlay书戏\\data\\西游记课件\\西游记-外教课动画截图\\Journey to the West 009  The Peach Garden_20240106163625.pptx",
+      "sha256": "cf22747a987ec94f821998ee41a296a7dcbe466e05e1c4189e1926b631966440",
+      "pages": 45
+    }
+  ],
+  "cards": [
+    {
+      "card_id": "ep009-official-quiz-001",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 1,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "which is not true?",
+        "zh": "哪一项是不正确的？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "the maidens captured wukong.",
+            "zh": "少女们抓住了悟空。"
+          },
+          {
+            "id": "b",
+            "en": "it was time for the peach festival.",
+            "zh": "到了桃子节的时候。"
+          },
+          {
+            "id": "c",
+            "en": "wukong ate all of the peaches.",
+            "zh": "悟空吃了所有的桃子。"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n009",
+            "quote": "It was almost time for the annual Peach Festival."
+          },
+          {
+            "node_id": "n012",
+            "quote": "\"The Peach Festival is tomorrow,\" said the queen."
+          },
+          {
+            "node_id": "n040",
+            "quote": "\"I ate them,\" said Wukong."
+          },
+          {
+            "node_id": "n041",
+            "quote": "\"I ate every single one! And they were delicious!\""
+          },
+          {
+            "node_id": "n043",
+            "quote": "\"No, you're not going to tell the queen,\" said Wukong."
+          },
+          {
+            "node_id": "n044",
+            "quote": "He quickly said a spell."
+          },
+          {
+            "node_id": "n045",
+            "quote": "Instantly Red Gown and Blue Gown fell asleep."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 11,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep009-official-quiz-002",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 2,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "why did the maidens gasp at the garden?",
+        "zh": "少女们为什么在花园里倒吸一口凉气？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "the peaches were all gone.",
+            "zh": "桃子都没了。"
+          },
+          {
+            "id": "b",
+            "en": "the garden was so beautiful.",
+            "zh": "花园非常美丽。"
+          },
+          {
+            "id": "c",
+            "en": "the trees were very tall.",
+            "zh": "树非常高。"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n014",
+            "quote": "Red Gown and Blue Gown went to the garden."
+          },
+          {
+            "node_id": "n015",
+            "quote": "As soon as they went through the gate, both maidens gasped."
+          },
+          {
+            "node_id": "n016",
+            "quote": "\"Where are all the peaches?\" cried Red Gown."
+          },
+          {
+            "node_id": "n017",
+            "quote": "\"They're . . . gone!\" cried Blue Gown."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 11,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep009-official-quiz-003",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 3,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "who was angry at wukong?",
+        "zh": "谁对悟空生气了？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "the queen of heaven",
+            "zh": "天后"
+          },
+          {
+            "id": "b",
+            "en": "guanyin",
+            "zh": "观音"
+          },
+          {
+            "id": "c",
+            "en": "the judge of the dead",
+            "zh": "死者的审判者"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n019",
+            "quote": "\"The queen will be angry!\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 11,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep009-official-quiz-004",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 4,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "who was guanyin?",
+        "zh": "观音是谁？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "the goddess of mercy",
+            "zh": "慈悲女神"
+          },
+          {
+            "id": "b",
+            "en": "the queen of heaven",
+            "zh": "天后"
+          },
+          {
+            "id": "c",
+            "en": "the goddess of peaches",
+            "zh": "桃子女神"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n013",
+            "quote": "\"All the important gods and spirits in Heaven will be here. I also invited the bodhisattva Guanyin, the goddess of mercy. Go to the Peach Garden now, and pick plenty of ripe peaches.\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 11,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep009-official-quiz-005",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 5,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "what happened to the emperor's army?",
+        "zh": "皇帝的军队发生了什么事？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "wukong defeated them.",
+            "zh": "悟空打败了他们。"
+          },
+          {
+            "id": "b",
+            "en": "they arrested wukong.",
+            "zh": "他们逮捕了悟空。"
+          },
+          {
+            "id": "c",
+            "en": "they ate all the peaches.",
+            "zh": "他们吃光了所有的桃子。"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n058",
+            "quote": "\"Gather 100,000 soldiers. I want Wukong arrested!\""
+          },
+          {
+            "node_id": "n066",
+            "quote": "\"I sent 100,000 soldiers to arrest him. They'll bring him back to Heaven soon.\""
+          },
+          {
+            "node_id": "n067",
+            "quote": "Just then a messenger ran into the court."
+          },
+          {
+            "node_id": "n068",
+            "quote": "\"We need more soldiers, Your Majesty!\""
+          },
+          {
+            "node_id": "n070",
+            "quote": "\"Wukong defeated the entire army,\" said the messenger."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 11,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep009-vocab-001",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 101,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "taste",
+        "zh": "品味"
+      },
+      "payload": {
+        "term": "taste",
+        "ipa": "teɪst",
+        "pos": "v.",
+        "def": "v.-link.有......的味道,尝起来 vt.品尝 n.[C,U]味道,滋味,一口 [sing.]体验 [U]品味",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "009 蟠桃园 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "2d0031cd366d0abf8003fb9569fd61d9838394556e96d8dca670b62d0087cb6b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep009-vocab-002",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 102,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "wonderful",
+        "zh": "adj.精彩的,绝妙的"
+      },
+      "payload": {
+        "term": "wonderful",
+        "ipa": "ˈwʌndəf(ə)l",
+        "pos": "adj.",
+        "def": "adj.精彩的,绝妙的",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "009 蟠桃园 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "2d0031cd366d0abf8003fb9569fd61d9838394556e96d8dca670b62d0087cb6b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep009-vocab-003",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 103,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "another",
+        "zh": "adj./pron.另一,又一"
+      },
+      "payload": {
+        "term": "another",
+        "ipa": "əˈnʌðə(r)",
+        "pos": "adj.",
+        "def": "adj./pron.另一,又一",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "009 蟠桃园 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "2d0031cd366d0abf8003fb9569fd61d9838394556e96d8dca670b62d0087cb6b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep009-vocab-004",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 104,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "eat",
+        "zh": "v.吃"
+      },
+      "payload": {
+        "term": "eat",
+        "ipa": "iːt",
+        "pos": "v.",
+        "def": "v.吃",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "009 蟠桃园 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "2d0031cd366d0abf8003fb9569fd61d9838394556e96d8dca670b62d0087cb6b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep009-vocab-005",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 105,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "secret",
+        "zh": "秘诀 adj.秘密的,保密的,隐秘的"
+      },
+      "payload": {
+        "term": "secret",
+        "ipa": "ˈsiːkrət",
+        "pos": "n.",
+        "def": "n.[C]秘密[sing.]秘诀 adj.秘密的,保密的,隐秘的",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "009 蟠桃园 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "2d0031cd366d0abf8003fb9569fd61d9838394556e96d8dca670b62d0087cb6b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep009-vocab-006",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 106,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "climb",
+        "zh": "攀登"
+      },
+      "payload": {
+        "term": "climb",
+        "ipa": "klaɪm",
+        "pos": "v.",
+        "def": "v.爬 n.[C]攀登",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "009 蟠桃园 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "2d0031cd366d0abf8003fb9569fd61d9838394556e96d8dca670b62d0087cb6b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep009-vocab-007",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 107,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "tree",
+        "zh": "树"
+      },
+      "payload": {
+        "term": "tree",
+        "ipa": "triː",
+        "pos": "n.",
+        "def": "n.[C]树",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "009 蟠桃园 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "2d0031cd366d0abf8003fb9569fd61d9838394556e96d8dca670b62d0087cb6b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep009-vocab-008",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 108,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "take",
+        "zh": "拿；带走"
+      },
+      "payload": {
+        "term": "take",
+        "ipa": "teɪk",
+        "pos": "v.",
+        "def": "拿；带走",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ],
+        "gloss": "拿；带走"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "009 蟠桃园 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "2d0031cd366d0abf8003fb9569fd61d9838394556e96d8dca670b62d0087cb6b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep009-vocab-009",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 109,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "enjoy",
+        "zh": "vt.享受,喜爱,玩得痛快"
+      },
+      "payload": {
+        "term": "enjoy",
+        "ipa": "ɪnˈdʒɔɪ",
+        "pos": "vt.",
+        "def": "vt.享受,喜爱,玩得痛快",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "009 蟠桃园 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "2d0031cd366d0abf8003fb9569fd61d9838394556e96d8dca670b62d0087cb6b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep009-vocab-010",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 110,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "queen",
+        "zh": "王后,女王"
+      },
+      "payload": {
+        "term": "queen",
+        "ipa": "kwiːn",
+        "pos": "n.",
+        "def": "n.[C]王后,女王",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "009 蟠桃园 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "2d0031cd366d0abf8003fb9569fd61d9838394556e96d8dca670b62d0087cb6b"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "009 蟠桃园 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "10c5c0de7318303adaeb026b229449e13ce95784a0dbd77b5d717a8bc7990d72"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep009-vocab-011",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 111,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "busy",
+        "zh": "adj.忙碌的,无暇的,繁华的 v.忙于做"
+      },
+      "payload": {
+        "term": "busy",
+        "ipa": "ˈbɪzi",
+        "pos": "adj.",
+        "def": "adj.忙碌的,无暇的,繁华的 v.忙于做",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "009 蟠桃园 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "2d0031cd366d0abf8003fb9569fd61d9838394556e96d8dca670b62d0087cb6b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep009-vocab-012",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 112,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "call",
+        "zh": "打电话；呼喊"
+      },
+      "payload": {
+        "term": "call",
+        "ipa": "kɔː l",
+        "pos": "v.",
+        "def": "打电话；呼喊",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ],
+        "gloss": "打电话；呼喊"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "009 蟠桃园 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "2d0031cd366d0abf8003fb9569fd61d9838394556e96d8dca670b62d0087cb6b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep009-vocab-013",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 113,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "help",
+        "zh": "有帮助的 人或物 v.帮助,援助"
+      },
+      "payload": {
+        "term": "help",
+        "ipa": "help",
+        "pos": "n.",
+        "def": "n.[U]帮助,援助[sing.]有帮助的 人或物 v.帮助,援助",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "009 蟠桃园 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "2d0031cd366d0abf8003fb9569fd61d9838394556e96d8dca670b62d0087cb6b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep009-vocab-014",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 114,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "ask",
+        "zh": "v.请求,要求,询问"
+      },
+      "payload": {
+        "term": "ask",
+        "ipa": "ɑːsk",
+        "pos": "v.",
+        "def": "v.请求,要求,询问",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          1,
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "009 蟠桃园 上.pdf",
+          "half": "up",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "2d0031cd366d0abf8003fb9569fd61d9838394556e96d8dca670b62d0087cb6b"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "009 蟠桃园 下.pdf",
+          "half": "down",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "10c5c0de7318303adaeb026b229449e13ce95784a0dbd77b5d717a8bc7990d72"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep009-vocab-015",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 115,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "festival",
+        "zh": "(音乐、戏剧等的)会演 节,节庆,节日"
+      },
+      "payload": {
+        "term": "festival",
+        "ipa": "ˈfestɪvl",
+        "pos": "n.",
+        "def": "n.[C](音乐、戏剧等的)会演 节,节庆,节日",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "009 蟠桃园 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "2d0031cd366d0abf8003fb9569fd61d9838394556e96d8dca670b62d0087cb6b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep009-vocab-016",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 116,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "tomorrow",
+        "zh": "明天,未来"
+      },
+      "payload": {
+        "term": "tomorrow",
+        "ipa": "təˈmɒrəʊ",
+        "pos": "adv.",
+        "def": "adv.在明天 n.[U]明天,未来",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "009 蟠桃园 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "2d0031cd366d0abf8003fb9569fd61d9838394556e96d8dca670b62d0087cb6b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep009-vocab-017",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 117,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "important",
+        "zh": "adj.重要的,有重大影响的,有巨 大价值的"
+      },
+      "payload": {
+        "term": "important",
+        "ipa": "ɪmˈpɔː(r)tnt",
+        "pos": "adj.",
+        "def": "adj.重要的,有重大影响的,有巨 大价值的",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "009 蟠桃园 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "2d0031cd366d0abf8003fb9569fd61d9838394556e96d8dca670b62d0087cb6b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep009-vocab-018",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 118,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "spirit",
+        "zh": "情绪"
+      },
+      "payload": {
+        "term": "spirit",
+        "ipa": "ˈspɪrɪt",
+        "pos": "n.",
+        "def": "n.[U]勇气,意志,实质 [C]灵魂,鬼魂,幽灵 [C,U]精神 [pl.]情绪",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "009 蟠桃园 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "2d0031cd366d0abf8003fb9569fd61d9838394556e96d8dca670b62d0087cb6b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep009-vocab-019",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 119,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "garden",
+        "zh": "花园,园子"
+      },
+      "payload": {
+        "term": "garden",
+        "ipa": "ˈɡɑːrdn",
+        "pos": "n.",
+        "def": "n.[C]花园,园子",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "009 蟠桃园 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "2d0031cd366d0abf8003fb9569fd61d9838394556e96d8dca670b62d0087cb6b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep009-vocab-020",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 120,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "cry",
+        "zh": "叫喊"
+      },
+      "payload": {
+        "term": "cry",
+        "ipa": "kraɪ",
+        "pos": "v.",
+        "def": "v./n.[sing.]哭 [C]叫喊",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "009 蟠桃园 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "2d0031cd366d0abf8003fb9569fd61d9838394556e96d8dca670b62d0087cb6b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep009-vocab-021",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 121,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "go",
+        "zh": "vi.去,走 v.link.变成,变得"
+      },
+      "payload": {
+        "term": "go",
+        "ipa": "ɡəʊ",
+        "pos": "vi.",
+        "def": "vi.去,走 v.link.变成,变得",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "009 蟠桃园 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "2d0031cd366d0abf8003fb9569fd61d9838394556e96d8dca670b62d0087cb6b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep009-vocab-022",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 122,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "terrible",
+        "zh": "adj.非常讨厌的,非常严重的,可 怕的,糟糕的"
+      },
+      "payload": {
+        "term": "terrible",
+        "ipa": "ˈterəbl",
+        "pos": "adj.",
+        "def": "adj.非常讨厌的,非常严重的,可 怕的,糟糕的",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          1,
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "009 蟠桃园 上.pdf",
+          "half": "up",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "2d0031cd366d0abf8003fb9569fd61d9838394556e96d8dca670b62d0087cb6b"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "009 蟠桃园 下.pdf",
+          "half": "down",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "10c5c0de7318303adaeb026b229449e13ce95784a0dbd77b5d717a8bc7990d72"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep009-vocab-023",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 123,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "angry",
+        "zh": "adj.发怒的,愤怒的,生气的"
+      },
+      "payload": {
+        "term": "angry",
+        "ipa": "ˈæŋɡri",
+        "pos": "adj.",
+        "def": "adj.发怒的,愤怒的,生气的",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "009 蟠桃园 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "2d0031cd366d0abf8003fb9569fd61d9838394556e96d8dca670b62d0087cb6b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep009-vocab-024",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 124,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "sleep",
+        "zh": "一觉"
+      },
+      "payload": {
+        "term": "sleep",
+        "ipa": "sliː p",
+        "pos": "vi.",
+        "def": "vi./n.[U]睡觉[sing.]一觉",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "009 蟠桃园 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "2d0031cd366d0abf8003fb9569fd61d9838394556e96d8dca670b62d0087cb6b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep009-vocab-025",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 125,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "hear",
+        "zh": "v.听说,听到,听见,接到(信或 电话)"
+      },
+      "payload": {
+        "term": "hear",
+        "ipa": "hɪə",
+        "pos": "v.",
+        "def": "v.听说,听到,听见,接到(信或 电话)",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "009 蟠桃园 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "2d0031cd366d0abf8003fb9569fd61d9838394556e96d8dca670b62d0087cb6b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep009-vocab-026",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 126,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "wake",
+        "zh": "v.弄醒,醒 n.(常构成搭配)"
+      },
+      "payload": {
+        "term": "wake",
+        "ipa": "weɪk",
+        "pos": "v.",
+        "def": "v.弄醒,醒 n.(常构成搭配)",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "009 蟠桃园 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "2d0031cd366d0abf8003fb9569fd61d9838394556e96d8dca670b62d0087cb6b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep009-vocab-027",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 127,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "make",
+        "zh": "v.使成为,制造,做,做出,组 成,挣钱,铺床"
+      },
+      "payload": {
+        "term": "make",
+        "ipa": "meɪk",
+        "pos": "v.",
+        "def": "v.使成为,制造,做,做出,组 成,挣钱,铺床",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "009 蟠桃园 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "2d0031cd366d0abf8003fb9569fd61d9838394556e96d8dca670b62d0087cb6b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep009-vocab-028",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 128,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "noise",
+        "zh": "声音,噪音"
+      },
+      "payload": {
+        "term": "noise",
+        "ipa": "nɔɪz",
+        "pos": "n.",
+        "def": "n.[C,U]声音,噪音",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "009 蟠桃园 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "2d0031cd366d0abf8003fb9569fd61d9838394556e96d8dca670b62d0087cb6b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep009-vocab-029",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 129,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "try",
+        "zh": "尝试,设法,努力"
+      },
+      "payload": {
+        "term": "try",
+        "ipa": "traɪ",
+        "pos": "v.",
+        "def": "v./n.[C]尝试,设法,努力",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "009 蟠桃园 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "2d0031cd366d0abf8003fb9569fd61d9838394556e96d8dca670b62d0087cb6b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep009-vocab-030",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 130,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "sorry",
+        "zh": "对不起"
+      },
+      "payload": {
+        "term": "sorry",
+        "ipa": "ˈsɒri",
+        "pos": "",
+        "def": "对不起",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ],
+        "gloss": "对不起"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "009 蟠桃园 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "2d0031cd366d0abf8003fb9569fd61d9838394556e96d8dca670b62d0087cb6b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep009-vocab-031",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 131,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "eye",
+        "zh": "眼睛"
+      },
+      "payload": {
+        "term": "eye",
+        "ipa": "aɪ",
+        "pos": "n.",
+        "def": "n.[C]眼睛",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          1,
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "009 蟠桃园 上.pdf",
+          "half": "up",
+          "pages": [
+            1,
+            3
+          ],
+          "sha256": "2d0031cd366d0abf8003fb9569fd61d9838394556e96d8dca670b62d0087cb6b"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "009 蟠桃园 下.pdf",
+          "half": "down",
+          "pages": [
+            1,
+            3
+          ],
+          "sha256": "10c5c0de7318303adaeb026b229449e13ce95784a0dbd77b5d717a8bc7990d72"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep009-vocab-032",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 132,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "light",
+        "zh": "电灯 adj.轻的,轻柔的,程度轻的,少 量的,浅色的 v.点燃,照亮"
+      },
+      "payload": {
+        "term": "light",
+        "ipa": "laɪt",
+        "pos": "n.",
+        "def": "n.[U]光,光线,光亮;[C]电灯 adj.轻的,轻柔的,程度轻的,少 量的,浅色的 v.点燃,照亮",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "009 蟠桃园 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "2d0031cd366d0abf8003fb9569fd61d9838394556e96d8dca670b62d0087cb6b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep009-vocab-033",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 133,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "up",
+        "zh": "adv.向上 prep.向......上游"
+      },
+      "payload": {
+        "term": "up",
+        "ipa": "ʌp",
+        "pos": "adv.",
+        "def": "adv.向上 prep.向......上游",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "009 蟠桃园 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "2d0031cd366d0abf8003fb9569fd61d9838394556e96d8dca670b62d0087cb6b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep009-vocab-034",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 134,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "sound",
+        "zh": "声响"
+      },
+      "payload": {
+        "term": "sound",
+        "ipa": "saʊnd",
+        "pos": "v.",
+        "def": "v.-link.听起来好像 v.(使)发出声音 n.声音,发音[U]声响",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "009 蟠桃园 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "2d0031cd366d0abf8003fb9569fd61d9838394556e96d8dca670b62d0087cb6b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep009-vocab-035",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 135,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "fun",
+        "zh": "乐趣,快乐"
+      },
+      "payload": {
+        "term": "fun",
+        "ipa": "fʌn",
+        "pos": "adj.",
+        "def": "adj.有趣的,使人快乐的 n.[U]乐趣,快乐",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "009 蟠桃园 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "2d0031cd366d0abf8003fb9569fd61d9838394556e96d8dca670b62d0087cb6b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep009-vocab-036",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 136,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "sure",
+        "zh": "adv.当然,肯定,一定 adj.确信,确定,一定"
+      },
+      "payload": {
+        "term": "sure",
+        "ipa": "ʃʊə(r)",
+        "pos": "adv.",
+        "def": "adv.当然,肯定,一定 adj.确信,确定,一定",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "009 蟠桃园 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "2d0031cd366d0abf8003fb9569fd61d9838394556e96d8dca670b62d0087cb6b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep009-vocab-037",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 137,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "invite",
+        "zh": "vt.邀请"
+      },
+      "payload": {
+        "term": "invite",
+        "ipa": "ɪnˈvaɪt",
+        "pos": "vt.",
+        "def": "vt.邀请",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "009 蟠桃园 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "2d0031cd366d0abf8003fb9569fd61d9838394556e96d8dca670b62d0087cb6b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep009-vocab-038",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 138,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "right",
+        "zh": "权利"
+      },
+      "payload": {
+        "term": "right",
+        "ipa": "raɪt",
+        "pos": "adj.",
+        "def": "adj.正确的,适当的,右边的 adv.向右边,立即 n.[sing.]右边[C,U]权利",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "009 蟠桃园 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "2d0031cd366d0abf8003fb9569fd61d9838394556e96d8dca670b62d0087cb6b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep009-vocab-039",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 139,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "think",
+        "zh": "v.认为,想。思考"
+      },
+      "payload": {
+        "term": "think",
+        "ipa": "θɪŋk",
+        "pos": "v.",
+        "def": "v.认为,想。思考",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "009 蟠桃园 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "2d0031cd366d0abf8003fb9569fd61d9838394556e96d8dca670b62d0087cb6b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep009-vocab-040",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 140,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "look",
+        "zh": "看,注视,外表,表情"
+      },
+      "payload": {
+        "term": "look",
+        "ipa": "lʊk",
+        "pos": "vi.",
+        "def": "vi.看 v.-link.看上去 n.[C]看,注视,外表,表情",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "009 蟠桃园 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "2d0031cd366d0abf8003fb9569fd61d9838394556e96d8dca670b62d0087cb6b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep009-vocab-041",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 141,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "nervous",
+        "zh": "adj.焦虑的,担忧的;神经系统的"
+      },
+      "payload": {
+        "term": "nervous",
+        "ipa": "ˈnɜː(r)vəs",
+        "pos": "adj.",
+        "def": "adj.焦虑的,担忧的;神经系统的",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "009 蟠桃园 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "2d0031cd366d0abf8003fb9569fd61d9838394556e96d8dca670b62d0087cb6b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep009-vocab-042",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 142,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "say",
+        "zh": "v.说,讲"
+      },
+      "payload": {
+        "term": "say",
+        "ipa": "seɪ",
+        "pos": "v.",
+        "def": "v.说,讲",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "009 蟠桃园 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "2d0031cd366d0abf8003fb9569fd61d9838394556e96d8dca670b62d0087cb6b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep009-vocab-043",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 143,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "them",
+        "zh": "pron.(they的宾格)他(她、 它)们"
+      },
+      "payload": {
+        "term": "them",
+        "ipa": "ðem",
+        "pos": "pron.",
+        "def": "pron.(they的宾格)他(她、 它)们",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "009 蟠桃园 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "2d0031cd366d0abf8003fb9569fd61d9838394556e96d8dca670b62d0087cb6b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep009-vocab-044",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 144,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "delicious",
+        "zh": "adj.可口的,美味的"
+      },
+      "payload": {
+        "term": "delicious",
+        "ipa": "dɪˈlɪʃəs",
+        "pos": "adj.",
+        "def": "adj.可口的,美味的",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "009 蟠桃园 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "2d0031cd366d0abf8003fb9569fd61d9838394556e96d8dca670b62d0087cb6b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep009-vocab-045",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 145,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "no",
+        "zh": "adv./adj.不,没有,不是"
+      },
+      "payload": {
+        "term": "no",
+        "ipa": "nəʊ",
+        "pos": "adv.",
+        "def": "adv./adj.不,没有,不是",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "009 蟠桃园 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "2d0031cd366d0abf8003fb9569fd61d9838394556e96d8dca670b62d0087cb6b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep009-vocab-046",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 146,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "tell",
+        "zh": "vt.讲述,告诉,分辨,辨别"
+      },
+      "payload": {
+        "term": "tell",
+        "ipa": "tel",
+        "pos": "vt.",
+        "def": "vt.讲述,告诉,分辨,辨别",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "009 蟠桃园 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "2d0031cd366d0abf8003fb9569fd61d9838394556e96d8dca670b62d0087cb6b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep009-vocab-047",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 147,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "quick",
+        "zh": "快的,迅速的,敏捷的"
+      },
+      "payload": {
+        "term": "quick",
+        "ipa": "kwɪk",
+        "pos": "adj.",
+        "def": "快的,迅速的,敏捷的",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ],
+        "gloss": "快的,迅速的,敏捷的"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "009 蟠桃园 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "2d0031cd366d0abf8003fb9569fd61d9838394556e96d8dca670b62d0087cb6b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep009-vocab-048",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 148,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "spell",
+        "zh": "咒语"
+      },
+      "payload": {
+        "term": "spell",
+        "ipa": "spel",
+        "pos": "v.",
+        "def": "v.用字母拼,拼写 n.[C]咒语",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          4
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "009 蟠桃园 上.pdf",
+          "half": "up",
+          "pages": [
+            4
+          ],
+          "sha256": "2d0031cd366d0abf8003fb9569fd61d9838394556e96d8dca670b62d0087cb6b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep009-vocab-049",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 149,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "red",
+        "zh": "红色(的)"
+      },
+      "payload": {
+        "term": "red",
+        "ipa": "red",
+        "pos": "adj.",
+        "def": "adj./n.[C,U]红色(的)",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          4
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "009 蟠桃园 上.pdf",
+          "half": "up",
+          "pages": [
+            4
+          ],
+          "sha256": "2d0031cd366d0abf8003fb9569fd61d9838394556e96d8dca670b62d0087cb6b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep009-vocab-050",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 150,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "blue",
+        "zh": "蓝色"
+      },
+      "payload": {
+        "term": "blue",
+        "ipa": "bluː",
+        "pos": "adj.",
+        "def": "adj.蓝色的,忧郁的 n.[C,U]蓝色",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          4
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "009 蟠桃园 上.pdf",
+          "half": "up",
+          "pages": [
+            4
+          ],
+          "sha256": "2d0031cd366d0abf8003fb9569fd61d9838394556e96d8dca670b62d0087cb6b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep009-vocab-051",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 151,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "asleep",
+        "zh": "adj.睡着"
+      },
+      "payload": {
+        "term": "asleep",
+        "ipa": "əˈsliːp",
+        "pos": "adj.",
+        "def": "adj.睡着",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          4
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "009 蟠桃园 上.pdf",
+          "half": "up",
+          "pages": [
+            4
+          ],
+          "sha256": "2d0031cd366d0abf8003fb9569fd61d9838394556e96d8dca670b62d0087cb6b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep009-vocab-052",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 152,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "empty",
+        "zh": "adj.空的,空洞的;无意义的 vt.倒空,掏空"
+      },
+      "payload": {
+        "term": "empty",
+        "ipa": "ˈempti",
+        "pos": "adj.",
+        "def": "adj.空的,空洞的;无意义的 vt.倒空,掏空",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          4
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "009 蟠桃园 上.pdf",
+          "half": "up",
+          "pages": [
+            4
+          ],
+          "sha256": "2d0031cd366d0abf8003fb9569fd61d9838394556e96d8dca670b62d0087cb6b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep009-vocab-053",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 153,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "shake",
+        "zh": "摇动,抖动,奶昔"
+      },
+      "payload": {
+        "term": "shake",
+        "ipa": "ʃeɪk",
+        "pos": "v.",
+        "def": "v.摇动,抖动,(与某人)握手, 发抖 n.[C]摇动,抖动,奶昔",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          4
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "009 蟠桃园 上.pdf",
+          "half": "up",
+          "pages": [
+            4
+          ],
+          "sha256": "2d0031cd366d0abf8003fb9569fd61d9838394556e96d8dca670b62d0087cb6b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep009-vocab-054",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 154,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "head",
+        "zh": "队首 vi.朝(某方向)行进"
+      },
+      "payload": {
+        "term": "head",
+        "ipa": "hed",
+        "pos": "n.",
+        "def": "n.[C]头(部)[C,U]负责人 [sing.]队首 vi.朝(某方向)行进",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          4
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "009 蟠桃园 上.pdf",
+          "half": "up",
+          "pages": [
+            4
+          ],
+          "sha256": "2d0031cd366d0abf8003fb9569fd61d9838394556e96d8dca670b62d0087cb6b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep009-vocab-055",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 155,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "trouble",
+        "zh": "麻烦"
+      },
+      "payload": {
+        "term": "trouble",
+        "ipa": "ˈtrʌbl",
+        "pos": "n.",
+        "def": "麻烦",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          4
+        ],
+        "gloss": "麻烦"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "009 蟠桃园 上.pdf",
+          "half": "up",
+          "pages": [
+            4
+          ],
+          "sha256": "2d0031cd366d0abf8003fb9569fd61d9838394556e96d8dca670b62d0087cb6b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep009-vocab-056",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 156,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "happen",
+        "zh": "vi.发生,出现,碰巧"
+      },
+      "payload": {
+        "term": "happen",
+        "ipa": "ˈhæpən",
+        "pos": "vi.",
+        "def": "vi.发生,出现,碰巧",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "009 蟠桃园 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "10c5c0de7318303adaeb026b229449e13ce95784a0dbd77b5d717a8bc7990d72"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep009-vocab-057",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 157,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "cast a spell",
+        "zh": "施一个咒语"
+      },
+      "payload": {
+        "term": "cast a spell",
+        "ipa": "",
+        "pos": "",
+        "def": "施一个咒语",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "009 蟠桃园 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "10c5c0de7318303adaeb026b229449e13ce95784a0dbd77b5d717a8bc7990d72"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep009-vocab-058",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 158,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "nod",
+        "zh": "点头"
+      },
+      "payload": {
+        "term": "nod",
+        "ipa": "nɒd",
+        "pos": "v.",
+        "def": "v.点头 n.[C]点头",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "009 蟠桃园 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "10c5c0de7318303adaeb026b229449e13ce95784a0dbd77b5d717a8bc7990d72"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep009-vocab-059",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 159,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "palace",
+        "zh": "王宫,宫殿"
+      },
+      "payload": {
+        "term": "palace",
+        "ipa": "ˈpæləs",
+        "pos": "n.",
+        "def": "n.[C]王宫,宫殿",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "009 蟠桃园 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "10c5c0de7318303adaeb026b229449e13ce95784a0dbd77b5d717a8bc7990d72"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep009-vocab-060",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 160,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "arrive",
+        "zh": "vi.到达"
+      },
+      "payload": {
+        "term": "arrive",
+        "ipa": "əˈraɪv",
+        "pos": "vi.",
+        "def": "vi.到达",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "009 蟠桃园 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "10c5c0de7318303adaeb026b229449e13ce95784a0dbd77b5d717a8bc7990d72"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep009-vocab-061",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 161,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "monkey",
+        "zh": "猴子"
+      },
+      "payload": {
+        "term": "monkey",
+        "ipa": "ˈmʌŋki",
+        "pos": "n.",
+        "def": "n.[C]猴子",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "009 蟠桃园 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "10c5c0de7318303adaeb026b229449e13ce95784a0dbd77b5d717a8bc7990d72"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep009-vocab-062",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 162,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "what",
+        "zh": "pron./adj.什么"
+      },
+      "payload": {
+        "term": "what",
+        "ipa": "wɒt",
+        "pos": "pron.",
+        "def": "pron./adj.什么",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "009 蟠桃园 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "10c5c0de7318303adaeb026b229449e13ce95784a0dbd77b5d717a8bc7990d72"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep009-vocab-063",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 163,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "army",
+        "zh": "军队"
+      },
+      "payload": {
+        "term": "army",
+        "ipa": "ˈɑː(r)mi",
+        "pos": "n.",
+        "def": "军队",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ],
+        "gloss": "军队"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "009 蟠桃园 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "10c5c0de7318303adaeb026b229449e13ce95784a0dbd77b5d717a8bc7990d72"
+        }
+      ],
+      "review_status": "machine_verified"
+    }
+  ],
+  "teacher_guide": null,
+  "review": {
+    "status": "draft",
+    "reviewed_at": null,
+    "card_stats": {
+      "total": 68,
+      "sentence_choice": 5,
+      "word_review": 63,
+      "machine_verified": 65,
+      "assistant_reviewed": 3,
+      "verified": 68,
+      "needs_review": 0
+    }
+  },
+  "generated_at": "2026-08-31T04:49:35.542994+00:00"
+}

@@ -1,0 +1,584 @@
+{
+ "schema_version": 1,
+ "ep": 40,
+ "title": {
+  "en": "The Magic Gourd",
+  "zh": "西游记 第40集"
+ },
+ "collection": "c06",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "goldenhorn",
+   "nameZh": "金角大王",
+   "mode": "sparring",
+   "sprite": "goldenhorn"
+  },
+  "minors": [
+   {
+    "id": "imp",
+    "nameZh": "小妖",
+    "sprite": "imp"
+   }
+  ]
+ },
+ "background": {
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep40/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "Bajie was in the cave when the door opened.",
+   "textZh": "当洞门打开时,八戒正身处洞中。",
+   "illustration": "assets/adv_frames/ep40/f1.jpg",
+   "sourceNodeId": "n001",
+   "audioRef": "sent_en:Bajie was in the cave when the door opened."
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "Two small demons entered, dragging Wujing and the Tang Monk.",
+   "textZh": "两名小妖精闯入,拖着悟净与唐僧。",
+   "illustration": "assets/adv_frames/ep40/f2.jpg",
+   "sourceNodeId": "n002",
+   "audioRef": "sent_en:Two small demons entered, dragging Wujing and the Tang Monk."
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "celebrate",
+   "zh": "庆祝",
+   "ipa": "ˈselɪbreɪt",
+   "illustration": "assets/adv_frames/ep40/f1.jpg"
+  },
+  {
+   "term": "not yet",
+   "zh": "还没",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep40/f3.jpg"
+  },
+  {
+   "term": "gourd",
+   "zh": "葫芦",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep40/f1.jpg"
+  },
+  {
+   "term": "liquid",
+   "zh": "液体",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep40/f2.jpg"
+  },
+  {
+   "term": "about to",
+   "zh": "即将即将,打算做6. jump to one's feet 一跃而起,突然站起",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep40/f3.jpg"
+  },
+  {
+   "term": "wonder",
+   "zh": "对......感到好奇,想知道",
+   "ipa": "ˈwʌndə(r)",
+   "illustration": "assets/adv_frames/ep40/f0.jpg"
+  },
+  {
+   "term": "duck",
+   "zh": "1. 稍微躲避一下,躲避,(2. 鸭子)",
+   "ipa": "dʌk",
+   "illustration": "assets/adv_frames/ep40/f0.jpg"
+  },
+  {
+   "term": "master",
+   "zh": "1. 大师,师傅,(2. (狗、仆人等的)主人)",
+   "ipa": "ˈmɑːstə",
+   "illustration": "assets/adv_frames/ep40/f0.jpg"
+  },
+  {
+   "term": "capture",
+   "zh": "捕获,俘虏",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep40/f1.jpg"
+  },
+  {
+   "term": "quite",
+   "zh": "相当,很",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep40/f0.jpg"
+  },
+  {
+   "term": "hold",
+   "zh": "1. 装在(碗等容器里),(2. 拿住,握住,抓住,3. 举办(聚会等))",
+   "ipa": "həʊld",
+   "illustration": "assets/adv_frames/ep40/f2.jpg"
+  },
+  {
+   "term": "pluck",
+   "zh": "采,摘,拔",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep40/f2.jpg"
+  }
+ ],
+ "wordPool": [
+  {
+   "term": "celebrate",
+   "zh": "庆祝",
+   "ipa": "ˈselɪbreɪt",
+   "illustration": "assets/adv_frames/ep40/f1.jpg"
+  },
+  {
+   "term": "not yet",
+   "zh": "还没",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep40/f3.jpg"
+  },
+  {
+   "term": "gourd",
+   "zh": "葫芦",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep40/f1.jpg"
+  },
+  {
+   "term": "liquid",
+   "zh": "液体",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep40/f2.jpg"
+  },
+  {
+   "term": "about to",
+   "zh": "即将即将,打算做6. jump to one's feet 一跃而起,突然站起",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep40/f3.jpg"
+  },
+  {
+   "term": "wonder",
+   "zh": "对......感到好奇,想知道",
+   "ipa": "ˈwʌndə(r)",
+   "illustration": "assets/adv_frames/ep40/f0.jpg"
+  },
+  {
+   "term": "duck",
+   "zh": "1. 稍微躲避一下,躲避,(2. 鸭子)",
+   "ipa": "dʌk",
+   "illustration": "assets/adv_frames/ep40/f0.jpg"
+  },
+  {
+   "term": "master",
+   "zh": "1. 大师,师傅,(2. (狗、仆人等的)主人)",
+   "ipa": "ˈmɑːstə",
+   "illustration": "assets/adv_frames/ep40/f0.jpg"
+  },
+  {
+   "term": "capture",
+   "zh": "捕获,俘虏",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep40/f1.jpg"
+  },
+  {
+   "term": "quite",
+   "zh": "相当,很",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep40/f0.jpg"
+  },
+  {
+   "term": "hold",
+   "zh": "1. 装在(碗等容器里),(2. 拿住,握住,抓住,3. 举办(聚会等))",
+   "ipa": "həʊld",
+   "illustration": "assets/adv_frames/ep40/f2.jpg"
+  },
+  {
+   "term": "pluck",
+   "zh": "采,摘,拔",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep40/f2.jpg"
+  },
+  {
+   "term": "interested",
+   "zh": "感兴趣的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep40/f1.jpg"
+  },
+  {
+   "term": "willing",
+   "zh": "情愿的,自发的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep40/f0.jpg"
+  },
+  {
+   "term": "trade",
+   "zh": "交换",
+   "ipa": "treɪd",
+   "illustration": "assets/adv_frames/ep40/f2.jpg"
+  },
+  {
+   "term": "suspicious",
+   "zh": "可疑的,容易引起怀疑的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep40/f1.jpg"
+  },
+  {
+   "term": "prove",
+   "zh": "证明,证实",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep40/f2.jpg"
+  },
+  {
+   "term": "dim",
+   "zh": "1. 变模糊,(2. 模糊的,朦胧的)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep40/f3.jpg"
+  },
+  {
+   "term": "greeting",
+   "zh": "(见面时)打招呼,打招呼的话",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep40/f0.jpg"
+  },
+  {
+   "term": "pretend",
+   "zh": "假装,伪装",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep40/f1.jpg"
+  },
+  {
+   "term": "frown",
+   "zh": "皱眉",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep40/f3.jpg"
+  },
+  {
+   "term": "enter",
+   "zh": "进来",
+   "ipa": "ˈentə(r)",
+   "illustration": "assets/adv_frames/ep40/f1.jpg"
+  },
+  {
+   "term": "happen",
+   "zh": "发生",
+   "ipa": "ˈhæpən",
+   "illustration": "assets/adv_frames/ep40/f1.jpg"
+  },
+  {
+   "term": "cry",
+   "zh": "哭",
+   "ipa": "kraɪ",
+   "illustration": "assets/adv_frames/ep40/f1.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "celebrate",
+     "zh": "庆祝",
+     "sprite": "imp"
+    },
+    {
+     "term": "not yet",
+     "zh": "还没",
+     "sprite": "imp"
+    },
+    {
+     "term": "gourd",
+     "zh": "葫芦",
+     "sprite": "imp"
+    },
+    {
+     "term": "liquid",
+     "zh": "液体",
+     "sprite": "imp"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "about to",
+     "zh": "即将即将,打算做6. jump to one's feet 一跃而起,突然站起",
+     "sprite": "imp"
+    },
+    {
+     "term": "wonder",
+     "zh": "对......感到好奇,想知道",
+     "sprite": "imp"
+    },
+    {
+     "term": "duck",
+     "zh": "1. 稍微躲避一下,躲避,(2. 鸭子)",
+     "sprite": "imp"
+    },
+    {
+     "term": "master",
+     "zh": "1. 大师,师傅,(2. (狗、仆人等的)主人)",
+     "sprite": "imp"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "capture",
+    "zh": "捕获,俘虏"
+   },
+   {
+    "term": "quite",
+    "zh": "相当,很"
+   },
+   {
+    "term": "hold",
+    "zh": "1. 装在(碗等容器里),(2. 拿住,握住,抓住,3. 举办(聚会等))"
+   },
+   {
+    "term": "pluck",
+    "zh": "采,摘,拔"
+   }
+  ],
+  "taunts": [
+   "goldenhorn.1",
+   "goldenhorn.2",
+   "goldenhorn.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=40",
+ "npcDialogue": {
+  "intro": {
+   "id": "ep40-map-intro",
+   "lines": [
+    {
+     "id": "ep40-map-intro-1",
+     "sourceNodeId": "n001",
+     "speaker": "narrator",
+     "textEn": "Bajie was in the cave when the door opened.",
+     "textZh": "当洞门打开时,八戒正身处洞中。",
+     "audioRef": "sent_en:Bajie was in the cave when the door opened.",
+     "audioStart": 11.267,
+     "audioEnd": 24.035
+    },
+    {
+     "id": "ep40-map-intro-2",
+     "sourceNodeId": "n002",
+     "speaker": "narrator",
+     "textEn": "Two small demons entered, dragging Wujing and the Tang Monk.",
+     "textZh": "两名小妖精闯入,拖着悟净与唐僧。",
+     "audioRef": "sent_en:Two small demons entered, dragging Wujing and the Tang Monk.",
+     "audioStart": 24.036,
+     "audioEnd": 35.197
+    }
+   ]
+  },
+  "quiz": {
+   "id": "ep40-map-quiz",
+   "lines": [
+    {
+     "id": "ep40-map-quiz-1",
+     "sourceNodeId": "n014",
+     "speaker": "narrator",
+     "textEn": "\"Take this magic gourd to the monkey. Say his name, and he will be sucked into the gourd. After an hour he will turn into liquid.\"",
+     "textZh": "\"将这个神奇的葫芦交给猴子。呼唤它的名字,它便会吸入葫芦之中;一小时后,它将化为液体。\"",
+     "audioRef": "sent_en:\"Take this magic gourd to the monkey. Say his name, and he will be sucked into the gourd. After an hour he will turn into liquid.\"",
+     "audioStart": 80.704,
+     "audioEnd": 95.405
+    }
+   ],
+   "question": {
+    "id": "ep040-official-quiz-001",
+    "textEn": "which is true?",
+    "textZh": "哪一个是真的？"
+   },
+   "word": {
+    "term": "celebrate",
+    "zh": "庆祝",
+    "ipa": "ˈselɪbreɪt"
+   },
+   "options": [
+    {
+     "id": "a",
+     "textEn": "wukong flew to heaven.",
+     "textZh": "悟空飞到了天堂。",
+     "correct": true,
+     "feedback": "对了。悟空飞到了天堂。"
+    },
+    {
+     "id": "b",
+     "textEn": "wukong turned into liquid.",
+     "textZh": "悟空变成了液体。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    },
+    {
+     "id": "c",
+     "textEn": "wukong lifted the mountains.",
+     "textZh": "悟空搬起了大山。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    }
+   ],
+   "lessonCardId": "ep040-official-quiz-001"
+  }
+ },
+ "map": {
+  "theme": "generic",
+  "coordinateSpace": "world-normalized",
+  "worldTiles": 2,
+  "regions": {
+   "hero": 0,
+   "waves": [
+    0,
+    1
+   ],
+   "npc": {
+    "intro": 0,
+    "quiz": 1
+   },
+   "boss": 3
+  },
+  "walkable": {
+   "space": "world",
+   "x": 0.0,
+   "y": 0.16,
+   "w": 1.0,
+   "h": 0.79,
+   "rects": [
+    {
+     "x": 0.0,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.66,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    }
+   ]
+  },
+  "heroSpawn": {
+   "x": 0.06,
+   "y": 0.31
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.31,
+    "y": 0.23
+   },
+   {
+    "x": 0.38,
+    "y": 0.27
+   },
+   {
+    "x": 0.34,
+    "y": 0.33
+   },
+   {
+    "x": 0.41,
+    "y": 0.24
+   }
+  ],
+  "waveSpawns": [
+   [
+    {
+     "x": 0.31,
+     "y": 0.23
+    },
+    {
+     "x": 0.38,
+     "y": 0.27
+    },
+    {
+     "x": 0.34,
+     "y": 0.33
+    },
+    {
+     "x": 0.41,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.81,
+     "y": 0.23
+    },
+    {
+     "x": 0.88,
+     "y": 0.27
+    },
+    {
+     "x": 0.84,
+     "y": 0.33
+    },
+    {
+     "x": 0.91,
+     "y": 0.24
+    }
+   ]
+  ],
+  "orbSpawns": [
+   [
+    {
+     "x": 0.11,
+     "y": 0.25
+    },
+    {
+     "x": 0.16,
+     "y": 0.31
+    },
+    {
+     "x": 0.12,
+     "y": 0.37
+    },
+    {
+     "x": 0.18,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.61,
+     "y": 0.25
+    },
+    {
+     "x": 0.66,
+     "y": 0.31
+    },
+    {
+     "x": 0.62,
+     "y": 0.37
+    },
+    {
+     "x": 0.68,
+     "y": 0.24
+    }
+   ]
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "goldenhorn",
+    "nameZh": "金角大王",
+    "x": 0.08,
+    "y": 0.26
+   },
+   {
+    "role": "quiz",
+    "sprite": "goldenhorn",
+    "nameZh": "金角大王",
+    "x": 0.7,
+    "y": 0.39
+   }
+  ],
+  "bossSpot": {
+   "x": 0.94,
+   "y": 0.85
+  }
+ }
+}

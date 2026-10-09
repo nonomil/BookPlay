@@ -1,0 +1,584 @@
+{
+ "schema_version": 1,
+ "ep": 72,
+ "title": {
+  "en": "A Surprise at the Fruit and Flower Mountain",
+  "zh": "西游记 第72集"
+ },
+ "collection": "c10",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "imp",
+   "nameZh": "小妖",
+   "mode": "sparring",
+   "sprite": "imp"
+  },
+  "minors": [
+   {
+    "id": "imp",
+    "nameZh": "小妖",
+    "sprite": "imp"
+   }
+  ]
+ },
+ "background": {
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep72/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "Wukong went straight to Mount Potalaka.",
+   "textZh": "悟空径直前往普塔拉卡山。",
+   "illustration": "assets/adv_frames/ep72/f1.jpg",
+   "sourceNodeId": "n001",
+   "audioRef": "sent_en:Wukong went straight to Mount Potalaka."
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "The bodhisattva Guanyin was in her garden.",
+   "textZh": "贵州观音菩萨正在她的花园中。",
+   "illustration": "assets/adv_frames/ep72/f2.jpg",
+   "sourceNodeId": "n002",
+   "audioRef": "sent_en:The bodhisattva Guanyin was in her garden."
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "straight",
+   "zh": "1. 径直,直接地,(2. 直的,笔直的)",
+   "ipa": "streɪt",
+   "illustration": "assets/adv_frames/ep72/f1.jpg"
+  },
+  {
+   "term": "crazy",
+   "zh": "疯狂的",
+   "ipa": "ˈkreɪzi",
+   "illustration": "assets/adv_frames/ep72/f1.jpg"
+  },
+  {
+   "term": "robber",
+   "zh": "强盗",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep72/f0.jpg"
+  },
+  {
+   "term": "all the",
+   "zh": "一直,始终 (=always)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep72/f2.jpg"
+  },
+  {
+   "term": "get rid of",
+   "zh": "摆脱,除掉",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep72/f0.jpg"
+  },
+  {
+   "term": "earn",
+   "zh": "1. 获得,博得(称赞或名声等),(2. 赚得(金钱))",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep72/f0.jpg"
+  },
+  {
+   "term": "forgiveness",
+   "zh": "宽恕",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep72/f0.jpg"
+  },
+  {
+   "term": "meantime",
+   "zh": "同时,在...期间",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep72/f2.jpg"
+  },
+  {
+   "term": "in the",
+   "zh": "在此同时,同时也",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep72/f2.jpg"
+  },
+  {
+   "term": "stretch",
+   "zh": "1. 伸出(手臂、头、身子等),(2. 拉直,拉长)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep72/f1.jpg"
+  },
+  {
+   "term": "out of",
+   "zh": "1. 缺乏,没有,(2. 在...外,从...向外)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep72/f3.jpg"
+  },
+  {
+   "term": "beg",
+   "zh": "请求,恳请",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep72/f0.jpg"
+  }
+ ],
+ "wordPool": [
+  {
+   "term": "straight",
+   "zh": "1. 径直,直接地,(2. 直的,笔直的)",
+   "ipa": "streɪt",
+   "illustration": "assets/adv_frames/ep72/f1.jpg"
+  },
+  {
+   "term": "crazy",
+   "zh": "疯狂的",
+   "ipa": "ˈkreɪzi",
+   "illustration": "assets/adv_frames/ep72/f1.jpg"
+  },
+  {
+   "term": "robber",
+   "zh": "强盗",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep72/f0.jpg"
+  },
+  {
+   "term": "all the",
+   "zh": "一直,始终 (=always)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep72/f2.jpg"
+  },
+  {
+   "term": "get rid of",
+   "zh": "摆脱,除掉",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep72/f0.jpg"
+  },
+  {
+   "term": "earn",
+   "zh": "1. 获得,博得(称赞或名声等),(2. 赚得(金钱))",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep72/f0.jpg"
+  },
+  {
+   "term": "forgiveness",
+   "zh": "宽恕",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep72/f0.jpg"
+  },
+  {
+   "term": "meantime",
+   "zh": "同时,在...期间",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep72/f2.jpg"
+  },
+  {
+   "term": "in the",
+   "zh": "在此同时,同时也",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep72/f2.jpg"
+  },
+  {
+   "term": "stretch",
+   "zh": "1. 伸出(手臂、头、身子等),(2. 拉直,拉长)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep72/f1.jpg"
+  },
+  {
+   "term": "out of",
+   "zh": "1. 缺乏,没有,(2. 在...外,从...向外)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep72/f3.jpg"
+  },
+  {
+   "term": "beg",
+   "zh": "请求,恳请",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep72/f0.jpg"
+  },
+  {
+   "term": "somewhere",
+   "zh": "在某处,到某处",
+   "ipa": "ˈsʌmweə",
+   "illustration": "assets/adv_frames/ep72/f1.jpg"
+  },
+  {
+   "term": "doze",
+   "zh": "打瞌睡",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep72/f1.jpg"
+  },
+  {
+   "term": "doze off",
+   "zh": "打瞌睡",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep72/f1.jpg"
+  },
+  {
+   "term": "furious",
+   "zh": "非常愤怒的",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep72/f0.jpg"
+  },
+  {
+   "term": "knock out",
+   "zh": "使昏迷",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep72/f2.jpg"
+  },
+  {
+   "term": "vanish",
+   "zh": "(突然)消失不见",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep72/f3.jpg"
+  },
+  {
+   "term": "attack",
+   "zh": "攻击",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep72/f1.jpg"
+  },
+  {
+   "term": "rotten",
+   "zh": "1. 糟糕的,极差的,令人讨厌的,(2. 腐烂的)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep72/f3.jpg"
+  },
+  {
+   "term": "get away with",
+   "zh": "侥幸成功,侥幸逃脱",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep72/f1.jpg"
+  },
+  {
+   "term": "probably",
+   "zh": "大概,或许",
+   "ipa": "ˈprɒbəbli",
+   "illustration": "assets/adv_frames/ep72/f1.jpg"
+  },
+  {
+   "term": "deal",
+   "zh": "处理,应付(事情,问题等)",
+   "ipa": "diːl",
+   "illustration": "assets/adv_frames/ep72/f1.jpg"
+  },
+  {
+   "term": "deal with",
+   "zh": "对付",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep72/f2.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "straight",
+     "zh": "1. 径直,直接地,(2. 直的,笔直的)",
+     "sprite": "imp"
+    },
+    {
+     "term": "crazy",
+     "zh": "疯狂的",
+     "sprite": "imp"
+    },
+    {
+     "term": "robber",
+     "zh": "强盗",
+     "sprite": "imp"
+    },
+    {
+     "term": "all the",
+     "zh": "一直,始终 (=always)",
+     "sprite": "imp"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "get rid of",
+     "zh": "摆脱,除掉",
+     "sprite": "imp"
+    },
+    {
+     "term": "earn",
+     "zh": "1. 获得,博得(称赞或名声等),(2. 赚得(金钱))",
+     "sprite": "imp"
+    },
+    {
+     "term": "forgiveness",
+     "zh": "宽恕",
+     "sprite": "imp"
+    },
+    {
+     "term": "meantime",
+     "zh": "同时,在...期间",
+     "sprite": "imp"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "in the",
+    "zh": "在此同时,同时也"
+   },
+   {
+    "term": "stretch",
+    "zh": "1. 伸出(手臂、头、身子等),(2. 拉直,拉长)"
+   },
+   {
+    "term": "out of",
+    "zh": "1. 缺乏,没有,(2. 在...外,从...向外)"
+   },
+   {
+    "term": "beg",
+    "zh": "请求,恳请"
+   }
+  ],
+  "taunts": [
+   "imp.1",
+   "imp.2",
+   "imp.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=72",
+ "npcDialogue": {
+  "intro": {
+   "id": "ep72-map-intro",
+   "lines": [
+    {
+     "id": "ep72-map-intro-1",
+     "sourceNodeId": "n001",
+     "speaker": "narrator",
+     "textEn": "Wukong went straight to Mount Potalaka.",
+     "textZh": "悟空径直前往普塔拉卡山。",
+     "audioRef": "sent_en:Wukong went straight to Mount Potalaka.",
+     "audioStart": 10.934,
+     "audioEnd": 18.842
+    },
+    {
+     "id": "ep72-map-intro-2",
+     "sourceNodeId": "n002",
+     "speaker": "narrator",
+     "textEn": "The bodhisattva Guanyin was in her garden.",
+     "textZh": "贵州观音菩萨正在她的花园中。",
+     "audioRef": "sent_en:The bodhisattva Guanyin was in her garden.",
+     "audioStart": 18.843,
+     "audioEnd": 24.488
+    }
+   ]
+  },
+  "quiz": {
+   "id": "ep72-map-quiz",
+   "lines": [
+    {
+     "id": "ep72-map-quiz-1",
+     "sourceNodeId": "n028",
+     "speaker": "narrator",
+     "textEn": "The monk sat down in the grass next to the road and closed his eyes.",
+     "textZh": "这位僧人坐在路边的草地上,闭上双眼。",
+     "audioRef": "sent_en:The monk sat down in the grass next to the road and closed his eyes.",
+     "audioStart": 141.195,
+     "audioEnd": 146.348
+    }
+   ],
+   "question": {
+    "id": "ep072-official-quiz-001",
+    "textEn": "which did not happen at the fruit and flower mountain?",
+    "textZh": "在花果山没有发生什么？"
+   },
+   "word": {
+    "term": "straight",
+    "zh": "1. 径直,直接地,(2. 直的,笔直的)",
+    "ipa": "streɪt"
+   },
+   "options": [
+    {
+     "id": "a",
+     "textEn": "wukong attacked the tang monk.",
+     "textZh": "悟空攻击了唐僧。",
+     "correct": true,
+     "feedback": "对了。悟空攻击了唐僧。"
+    },
+    {
+     "id": "b",
+     "textEn": "wukong said he didn't know wujing.",
+     "textZh": "悟空说他不认识悟净。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    },
+    {
+     "id": "c",
+     "textEn": "wujing saw wukong, bajie, and the tang monk.",
+     "textZh": "悟净看见了悟空、八戒和唐僧。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    }
+   ],
+   "lessonCardId": "ep072-official-quiz-001"
+  }
+ },
+ "map": {
+  "theme": "generic",
+  "coordinateSpace": "world-normalized",
+  "worldTiles": 2,
+  "regions": {
+   "hero": 0,
+   "waves": [
+    0,
+    1
+   ],
+   "npc": {
+    "intro": 0,
+    "quiz": 1
+   },
+   "boss": 3
+  },
+  "walkable": {
+   "space": "world",
+   "x": 0.0,
+   "y": 0.16,
+   "w": 1.0,
+   "h": 0.79,
+   "rects": [
+    {
+     "x": 0.0,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.66,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    }
+   ]
+  },
+  "heroSpawn": {
+   "x": 0.06,
+   "y": 0.31
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.31,
+    "y": 0.23
+   },
+   {
+    "x": 0.38,
+    "y": 0.27
+   },
+   {
+    "x": 0.34,
+    "y": 0.33
+   },
+   {
+    "x": 0.41,
+    "y": 0.24
+   }
+  ],
+  "waveSpawns": [
+   [
+    {
+     "x": 0.31,
+     "y": 0.23
+    },
+    {
+     "x": 0.38,
+     "y": 0.27
+    },
+    {
+     "x": 0.34,
+     "y": 0.33
+    },
+    {
+     "x": 0.41,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.81,
+     "y": 0.23
+    },
+    {
+     "x": 0.88,
+     "y": 0.27
+    },
+    {
+     "x": 0.84,
+     "y": 0.33
+    },
+    {
+     "x": 0.91,
+     "y": 0.24
+    }
+   ]
+  ],
+  "orbSpawns": [
+   [
+    {
+     "x": 0.11,
+     "y": 0.25
+    },
+    {
+     "x": 0.16,
+     "y": 0.31
+    },
+    {
+     "x": 0.12,
+     "y": 0.37
+    },
+    {
+     "x": 0.18,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.61,
+     "y": 0.25
+    },
+    {
+     "x": 0.66,
+     "y": 0.31
+    },
+    {
+     "x": 0.62,
+     "y": 0.37
+    },
+    {
+     "x": 0.68,
+     "y": 0.24
+    }
+   ]
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "imp",
+    "nameZh": "小妖",
+    "x": 0.08,
+    "y": 0.26
+   },
+   {
+    "role": "quiz",
+    "sprite": "imp",
+    "nameZh": "小妖",
+    "x": 0.7,
+    "y": 0.39
+   }
+  ],
+  "bossSpot": {
+   "x": 0.94,
+   "y": 0.85
+  }
+ }
+}

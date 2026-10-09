@@ -1,0 +1,2372 @@
+{
+  "schema_version": 1,
+  "episode": 64,
+  "title": {
+    "en": "Magnificent Silk Vests",
+    "zh": "西游记 第64集"
+  },
+  "sources": [
+    {
+      "kind": "courseware_main_pptx",
+      "file": "G:\\Game\\BookPlay书戏\\data\\西游记课件\\3.3西游记  Journey to the West PPT课件\\064_Journey to the West 64_Magnificent Silk Vests.pptx",
+      "sha256": "409615c3d64b26f0440cdef48c889f73566291bf66960fe62b3514075acee249",
+      "pages": 20
+    },
+    {
+      "kind": "official_quiz_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+      "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929",
+      "pages": 131
+    },
+    {
+      "kind": "intensive_reader_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\02-西游记精读版台词本\\1、带标注版PDF 108集\\064 华丽的背心 上.pdf",
+      "sha256": "b870330b4407ca64e34352c378b7d91ce0d8158995525d196c7d554133e6bd3c",
+      "pages": 4
+    },
+    {
+      "kind": "intensive_reader_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\02-西游记精读版台词本\\1、带标注版PDF 108集\\064 华丽的背心 下.pdf",
+      "sha256": "063016fbe3af915f9ef8fafb9dc25065fbf7c4a782f440348557585226b71c50",
+      "pages": 3
+    },
+    {
+      "kind": "courseware_screenshots_pptx",
+      "file": "G:\\Game\\BookPlay书戏\\data\\西游记课件\\西游记-外教课动画截图\\Journey to the West 064  Magnificent Silk Vests_20240114123114.pptx",
+      "sha256": "9b47597166ea219bf029a4dd17dfb8afe6ba23419642266e194a120d0e16feec",
+      "pages": 48
+    }
+  ],
+  "cards": [
+    {
+      "card_id": "ep064-official-quiz-001",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 1,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "which is true?",
+        "zh": "哪一个是真的？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "the vests would not come off.",
+            "zh": "背心脱不下来。"
+          },
+          {
+            "id": "b",
+            "en": "the monks were cooking in the kitchen.",
+            "zh": "僧侣们正在厨房做饭。"
+          },
+          {
+            "id": "c",
+            "en": "the tang monk put on a vest.",
+            "zh": "唐僧穿上了一件背心。"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n065",
+            "quote": "They both fell to the ground, trying desperately to take the vests off."
+          },
+          {
+            "node_id": "n066",
+            "quote": "\"This vest won't come off!\" cried the pig."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 75,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep064-official-quiz-002",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 2,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "what happened when bajie knocked on the door?",
+        "zh": "八戒敲门时发生了什么？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "no one answered.",
+            "zh": "没有人回答。"
+          },
+          {
+            "id": "b",
+            "en": "a demon appeared.",
+            "zh": "一个恶魔出现了。"
+          },
+          {
+            "id": "c",
+            "en": "wukong arrived.",
+            "zh": "悟空到了。"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n019",
+            "quote": "Bajie knocked on the door, but no one answered."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 75,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep064-official-quiz-003",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 3,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "what did bajie find in the monastery?",
+        "zh": "八戒在寺庙里发现了什么？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "three silk vests",
+            "zh": "三件丝背心"
+          },
+          {
+            "id": "b",
+            "en": "noodles and vegetables",
+            "zh": "面条和蔬菜"
+          },
+          {
+            "id": "c",
+            "en": "broken windows",
+            "zh": "破碎的窗户"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n043",
+            "quote": "\"But I found these vests.\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 75,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep064-official-quiz-004",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 4,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "what did the tang monk tell bajie to do?",
+        "zh": "唐僧让八戒做什么？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "return the vests",
+            "zh": "归还背心"
+          },
+          {
+            "id": "b",
+            "en": "cook dinner",
+            "zh": "做晚饭"
+          },
+          {
+            "id": "c",
+            "en": "find wukong",
+            "zh": "找到悟空"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n051",
+            "quote": "The monk glared at him."
+          },
+          {
+            "node_id": "n052",
+            "quote": "\"You must return those vests right away!\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 75,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep064-official-quiz-005",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 5,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "what did the demon look like?",
+        "zh": "那个恶魔长什么样？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "he had one big horn.",
+            "zh": "他有一只大角。"
+          },
+          {
+            "id": "b",
+            "en": "he had two big noses.",
+            "zh": "他有两个大鼻子。"
+          },
+          {
+            "id": "c",
+            "en": "he had three big arms.",
+            "zh": "他有三条大手臂。"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n067",
+            "quote": "\"Who stole my vests?\" a voice shouted."
+          },
+          {
+            "node_id": "n068",
+            "quote": "A demon with one big horn rushed over."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 75,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep064-vocab-001",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 101,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "look",
+        "zh": "看,注视,外表,表情"
+      },
+      "payload": {
+        "term": "look",
+        "ipa": "lʊk",
+        "pos": "vi.",
+        "def": "vi.看 v.-link.看上去 n.[C]看,注视,外表,表情",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "064 华丽的背心 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "b870330b4407ca64e34352c378b7d91ce0d8158995525d196c7d554133e6bd3c"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "064 华丽的背心 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "063016fbe3af915f9ef8fafb9dc25065fbf7c4a782f440348557585226b71c50"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep064-vocab-002",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 102,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "warm",
+        "zh": "adj.温暖的 v.(使)变暖"
+      },
+      "payload": {
+        "term": "warm",
+        "ipa": "wɔː rm",
+        "pos": "adj.",
+        "def": "adj.温暖的 v.(使)变暖",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "064 华丽的背心 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "b870330b4407ca64e34352c378b7d91ce0d8158995525d196c7d554133e6bd3c"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep064-vocab-003",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 103,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "take in",
+        "zh": "吸收;欺骗"
+      },
+      "payload": {
+        "term": "take in",
+        "ipa": "",
+        "pos": "",
+        "def": "吸收;欺骗",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "064 华丽的背心 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "b870330b4407ca64e34352c378b7d91ce0d8158995525d196c7d554133e6bd3c"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep064-vocab-004",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 104,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "nice",
+        "zh": "adj.令人愉快的,宜人的,友好的"
+      },
+      "payload": {
+        "term": "nice",
+        "ipa": "naɪs",
+        "pos": "adj.",
+        "def": "adj.令人愉快的,宜人的,友好的",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "064 华丽的背心 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "b870330b4407ca64e34352c378b7d91ce0d8158995525d196c7d554133e6bd3c"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep064-vocab-005",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 105,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "head",
+        "zh": "队首 vi.朝(某方向)行进"
+      },
+      "payload": {
+        "term": "head",
+        "ipa": "hed",
+        "pos": "n.",
+        "def": "n.[C]头(部)[C,U]负责人 [sing.]队首 vi.朝(某方向)行进",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "064 华丽的背心 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "b870330b4407ca64e34352c378b7d91ce0d8158995525d196c7d554133e6bd3c"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep064-vocab-006",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 106,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "place",
+        "zh": "地点,位置,名次,地位, 有某种用途的建筑 vt.放置"
+      },
+      "payload": {
+        "term": "place",
+        "ipa": "pleɪs",
+        "pos": "n.",
+        "def": "n.[C]地点,位置,名次,地位, 有某种用途的建筑 vt.放置",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "064 华丽的背心 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "b870330b4407ca64e34352c378b7d91ce0d8158995525d196c7d554133e6bd3c"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep064-vocab-007",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 107,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "desert",
+        "zh": "沙漠"
+      },
+      "payload": {
+        "term": "desert",
+        "ipa": "ˈdezət",
+        "pos": "n.",
+        "def": "n.[C,U]沙漠",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "064 华丽的背心 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "b870330b4407ca64e34352c378b7d91ce0d8158995525d196c7d554133e6bd3c"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep064-vocab-008",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 108,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "knock",
+        "zh": "敲击声,敲击"
+      },
+      "payload": {
+        "term": "knock",
+        "ipa": "nɒk",
+        "pos": "v.",
+        "def": "v.敲,击,撞 n.[C]敲击声,敲击",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "064 华丽的背心 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "b870330b4407ca64e34352c378b7d91ce0d8158995525d196c7d554133e6bd3c"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep064-vocab-009",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 109,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "door",
+        "zh": "门"
+      },
+      "payload": {
+        "term": "door",
+        "ipa": "dɔː(r)",
+        "pos": "n.",
+        "def": "n.[C]门",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "064 华丽的背心 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "b870330b4407ca64e34352c378b7d91ce0d8158995525d196c7d554133e6bd3c"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep064-vocab-010",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 110,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "call",
+        "zh": "电话,叫声圈国"
+      },
+      "payload": {
+        "term": "call",
+        "ipa": "kɔː l",
+        "pos": "v.",
+        "def": "v.给......打电话,把......叫作,呼 喊 n.[C]电话,叫声圈国",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "064 华丽的背心 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "b870330b4407ca64e34352c378b7d91ce0d8158995525d196c7d554133e6bd3c"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep064-vocab-011",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 111,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "anybody",
+        "zh": "pron.任何人"
+      },
+      "payload": {
+        "term": "anybody",
+        "ipa": "ˈenibɒdi",
+        "pos": "pron.",
+        "def": "pron.任何人",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "064 华丽的背心 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "b870330b4407ca64e34352c378b7d91ce0d8158995525d196c7d554133e6bd3c"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep064-vocab-012",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 112,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "answer",
+        "zh": "答案 v.回答"
+      },
+      "payload": {
+        "term": "answer",
+        "ipa": "ˈɑːnsə",
+        "pos": "n.",
+        "def": "n.[C]答案 v.回答",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "064 华丽的背心 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "b870330b4407ca64e34352c378b7d91ce0d8158995525d196c7d554133e6bd3c"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep064-vocab-013",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 113,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "maybe",
+        "zh": "adv.大概,或许,可能"
+      },
+      "payload": {
+        "term": "maybe",
+        "ipa": "ˈmeɪbi",
+        "pos": "adv.",
+        "def": "adv.大概,或许,可能",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "064 华丽的背心 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "b870330b4407ca64e34352c378b7d91ce0d8158995525d196c7d554133e6bd3c"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep064-vocab-014",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 114,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "cook",
+        "zh": "厨师"
+      },
+      "payload": {
+        "term": "cook",
+        "ipa": "kʊk",
+        "pos": "v.",
+        "def": "v.做饭,烹饪,煮 n.[C]厨师",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "064 华丽的背心 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "b870330b4407ca64e34352c378b7d91ce0d8158995525d196c7d554133e6bd3c"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep064-vocab-015",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 115,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "boil",
+        "zh": "v.煮沸,烧开"
+      },
+      "payload": {
+        "term": "boil",
+        "ipa": "bɔɪl",
+        "pos": "v.",
+        "def": "v.煮沸,烧开",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "064 华丽的背心 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "b870330b4407ca64e34352c378b7d91ce0d8158995525d196c7d554133e6bd3c"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep064-vocab-016",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 116,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "noise",
+        "zh": "声音,噪音"
+      },
+      "payload": {
+        "term": "noise",
+        "ipa": "nɔɪz",
+        "pos": "n.",
+        "def": "n.[C,U]声音,噪音",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "064 华丽的背心 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "b870330b4407ca64e34352c378b7d91ce0d8158995525d196c7d554133e6bd3c"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep064-vocab-017",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 117,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "open",
+        "zh": "户外,公开"
+      },
+      "payload": {
+        "term": "open",
+        "ipa": "ˈəʊpən",
+        "pos": "v.",
+        "def": "v.开,打开,开业 adj.敞开的,开阔的 n.[sing.]户外,公开",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "064 华丽的背心 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "b870330b4407ca64e34352c378b7d91ce0d8158995525d196c7d554133e6bd3c"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep064-vocab-018",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 118,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "step",
+        "zh": "步,步骤 vi.踏"
+      },
+      "payload": {
+        "term": "step",
+        "ipa": "step",
+        "pos": "n.",
+        "def": "n.[C]步,步骤 vi.踏",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "064 华丽的背心 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "b870330b4407ca64e34352c378b7d91ce0d8158995525d196c7d554133e6bd3c"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep064-vocab-019",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 119,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "inside",
+        "zh": "里面,内部 adj.内部的"
+      },
+      "payload": {
+        "term": "inside",
+        "ipa": "ˌɪnˈsaɪd",
+        "pos": "adv.",
+        "def": "adv./prep.在......里面 n.[C]里面,内部 adj.内部的",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "064 华丽的背心 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "b870330b4407ca64e34352c378b7d91ce0d8158995525d196c7d554133e6bd3c"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep064-vocab-020",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 120,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "dark",
+        "zh": "黑暗"
+      },
+      "payload": {
+        "term": "dark",
+        "ipa": "dɑː (r)k",
+        "pos": "adj.",
+        "def": "adj.黑暗的 n.[sing.]黑暗",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "064 华丽的背心 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "b870330b4407ca64e34352c378b7d91ce0d8158995525d196c7d554133e6bd3c"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep064-vocab-021",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 121,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "silent",
+        "zh": "adj.寂静的,不说话的,沉默的"
+      },
+      "payload": {
+        "term": "silent",
+        "ipa": "ˈsaɪlənt",
+        "pos": "adj.",
+        "def": "adj.寂静的,不说话的,沉默的",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "064 华丽的背心 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "b870330b4407ca64e34352c378b7d91ce0d8158995525d196c7d554133e6bd3c"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep064-vocab-022",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 122,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "hear",
+        "zh": "v.听说,听到,听见,接到(信或 电话)"
+      },
+      "payload": {
+        "term": "hear",
+        "ipa": "hɪə",
+        "pos": "v.",
+        "def": "v.听说,听到,听见,接到(信或 电话)",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "064 华丽的背心 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "b870330b4407ca64e34352c378b7d91ce0d8158995525d196c7d554133e6bd3c"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep064-vocab-023",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 123,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "anyone",
+        "zh": "pron.任何人"
+      },
+      "payload": {
+        "term": "anyone",
+        "ipa": "ˈeniwʌn",
+        "pos": "pron.",
+        "def": "pron.任何人",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "064 华丽的背心 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "b870330b4407ca64e34352c378b7d91ce0d8158995525d196c7d554133e6bd3c"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep064-vocab-024",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 124,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "here",
+        "zh": "adv.这就是,在这里"
+      },
+      "payload": {
+        "term": "here",
+        "ipa": "hɪə(r)",
+        "pos": "adv.",
+        "def": "adv.这就是,在这里",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "064 华丽的背心 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "b870330b4407ca64e34352c378b7d91ce0d8158995525d196c7d554133e6bd3c"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep064-vocab-025",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 125,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "walk",
+        "zh": "步行的路径"
+      },
+      "payload": {
+        "term": "walk",
+        "ipa": "wɔː k",
+        "pos": "n.",
+        "def": "n.[C]行走,步行 v.行走,步行 n.[C]步行的路径",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "064 华丽的背心 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "b870330b4407ca64e34352c378b7d91ce0d8158995525d196c7d554133e6bd3c"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep064-vocab-026",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 126,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "again",
+        "zh": "adv.再一次,又一次"
+      },
+      "payload": {
+        "term": "again",
+        "ipa": "əˈɡen",
+        "pos": "adv.",
+        "def": "adv.再一次,又一次",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "064 华丽的背心 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "b870330b4407ca64e34352c378b7d91ce0d8158995525d196c7d554133e6bd3c"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep064-vocab-027",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 127,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "light",
+        "zh": "电灯 adj.轻的,轻柔的,程度轻的,少 量的,浅色的 v.点燃,照亮"
+      },
+      "payload": {
+        "term": "light",
+        "ipa": "laɪt",
+        "pos": "n.",
+        "def": "n.[U]光,光线,光亮;[C]电灯 adj.轻的,轻柔的,程度轻的,少 量的,浅色的 v.点燃,照亮",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "064 华丽的背心 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "b870330b4407ca64e34352c378b7d91ce0d8158995525d196c7d554133e6bd3c"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep064-vocab-028",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 128,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "sun",
+        "zh": "阳光"
+      },
+      "payload": {
+        "term": "sun",
+        "ipa": "sʌn",
+        "pos": "n.",
+        "def": "n.[sing.]太阳[U]阳光",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "064 华丽的背心 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "b870330b4407ca64e34352c378b7d91ce0d8158995525d196c7d554133e6bd3c"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep064-vocab-029",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 129,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "hurry",
+        "zh": "v.匆忙,赶快 n.匆忙,急忙"
+      },
+      "payload": {
+        "term": "hurry",
+        "ipa": "ˈhʌri",
+        "pos": "v.",
+        "def": "v.匆忙,赶快 n.匆忙,急忙",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "064 华丽的背心 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "b870330b4407ca64e34352c378b7d91ce0d8158995525d196c7d554133e6bd3c"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep064-vocab-030",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 130,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "say",
+        "zh": "v.说,讲"
+      },
+      "payload": {
+        "term": "say",
+        "ipa": "seɪ",
+        "pos": "v.",
+        "def": "v.说,讲",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "064 华丽的背心 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "063016fbe3af915f9ef8fafb9dc25065fbf7c4a782f440348557585226b71c50"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep064-vocab-031",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 131,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "pig",
+        "zh": "猪"
+      },
+      "payload": {
+        "term": "pig",
+        "ipa": "pɪɡ",
+        "pos": "n.",
+        "def": "n.[C]猪",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "064 华丽的背心 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "063016fbe3af915f9ef8fafb9dc25065fbf7c4a782f440348557585226b71c50"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep064-vocab-032",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 132,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "can",
+        "zh": "罐"
+      },
+      "payload": {
+        "term": "can",
+        "ipa": "kæn",
+        "pos": "",
+        "def": "modal v.能,可能 n.[C]罐",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "064 华丽的背心 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "063016fbe3af915f9ef8fafb9dc25065fbf7c4a782f440348557585226b71c50"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep064-vocab-033",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 133,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "terrible",
+        "zh": "adj.非常讨厌的,非常严重的,可 怕的,糟糕的"
+      },
+      "payload": {
+        "term": "terrible",
+        "ipa": "ˈterəbl",
+        "pos": "adj.",
+        "def": "adj.非常讨厌的,非常严重的,可 怕的,糟糕的",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "064 华丽的背心 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "063016fbe3af915f9ef8fafb9dc25065fbf7c4a782f440348557585226b71c50"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep064-vocab-034",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 134,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "master",
+        "zh": "n.大师,能手,主人,硕士 vt.掌握 adj.熟练的"
+      },
+      "payload": {
+        "term": "master",
+        "ipa": "ˈmɑː stə",
+        "pos": "n.",
+        "def": "n.大师,能手,主人,硕士 vt.掌握 adj.熟练的",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "064 华丽的背心 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "063016fbe3af915f9ef8fafb9dc25065fbf7c4a782f440348557585226b71c50"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep064-vocab-035",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 135,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "cold",
+        "zh": "寒冷"
+      },
+      "payload": {
+        "term": "cold",
+        "ipa": "kəʊld",
+        "pos": "adj.",
+        "def": "adj.寒冷的,冷的;冷淡的 n.[C]感冒;[U]寒冷",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "064 华丽的背心 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "063016fbe3af915f9ef8fafb9dc25065fbf7c4a782f440348557585226b71c50"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep064-vocab-036",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 136,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "arm",
+        "zh": "手臂,上肢 v.装备,武装"
+      },
+      "payload": {
+        "term": "arm",
+        "ipa": "ɑː rm",
+        "pos": "n.",
+        "def": "n.[C]手臂,上肢 v.装备,武装",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "064 华丽的背心 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "063016fbe3af915f9ef8fafb9dc25065fbf7c4a782f440348557585226b71c50"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep064-vocab-037",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 137,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "through",
+        "zh": "穿过"
+      },
+      "payload": {
+        "term": "through",
+        "ipa": "θruː",
+        "pos": "prep.",
+        "def": "穿过",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ],
+        "gloss": "穿过"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "064 华丽的背心 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "063016fbe3af915f9ef8fafb9dc25065fbf7c4a782f440348557585226b71c50"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep064-vocab-038",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 138,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "cry",
+        "zh": "叫喊"
+      },
+      "payload": {
+        "term": "cry",
+        "ipa": "kraɪ",
+        "pos": "v.",
+        "def": "v./n.[sing.]哭 [C]叫喊",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "064 华丽的背心 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "063016fbe3af915f9ef8fafb9dc25065fbf7c4a782f440348557585226b71c50"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep064-vocab-039",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 139,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "out",
+        "zh": "adv.外出,出来"
+      },
+      "payload": {
+        "term": "out",
+        "ipa": "aʊt",
+        "pos": "adv.",
+        "def": "adv.外出,出来",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "064 华丽的背心 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "063016fbe3af915f9ef8fafb9dc25065fbf7c4a782f440348557585226b71c50"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep064-vocab-040",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 140,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "fall",
+        "zh": "落下,瀑布,(美式)秋天"
+      },
+      "payload": {
+        "term": "fall",
+        "ipa": "fɔːl",
+        "pos": "vi.",
+        "def": "vi.倒塌,跌倒,掉落,(数量) 减少,下降 v-link.进入某种状态 n.[C]落下,瀑布,(美式)秋天",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "064 华丽的背心 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "063016fbe3af915f9ef8fafb9dc25065fbf7c4a782f440348557585226b71c50"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep064-vocab-041",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 141,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "take",
+        "zh": "拿；带走"
+      },
+      "payload": {
+        "term": "take",
+        "ipa": "teɪk",
+        "pos": "v.",
+        "def": "拿；带走",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ],
+        "gloss": "拿；带走"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "064 华丽的背心 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "063016fbe3af915f9ef8fafb9dc25065fbf7c4a782f440348557585226b71c50"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep064-vocab-042",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 142,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "rush",
+        "zh": "迅速移动,仓促,急 促"
+      },
+      "payload": {
+        "term": "rush",
+        "ipa": "rʌʃ",
+        "pos": "v.",
+        "def": "v./n.[sing.]迅速移动,仓促,急 促",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "064 华丽的背心 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "063016fbe3af915f9ef8fafb9dc25065fbf7c4a782f440348557585226b71c50"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep064-vocab-043",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 143,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "turn",
+        "zh": "轮流圈国"
+      },
+      "payload": {
+        "term": "turn",
+        "ipa": "tɜː (r)n",
+        "pos": "v.",
+        "def": "v.转向,翻圈v.-link.(使)变成 n.[C]轮流圈国",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "064 华丽的背心 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "063016fbe3af915f9ef8fafb9dc25065fbf7c4a782f440348557585226b71c50"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep064-vocab-044",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 144,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "shake",
+        "zh": "摇动,抖动,奶昔"
+      },
+      "payload": {
+        "term": "shake",
+        "ipa": "ʃeɪk",
+        "pos": "v.",
+        "def": "v.摇动,抖动,(与某人)握手, 发抖 双手一拍,“你就是唐僧!” n.[C]摇动,抖动,奶昔",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "064 华丽的背心 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "063016fbe3af915f9ef8fafb9dc25065fbf7c4a782f440348557585226b71c50"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep064-vocab-045",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 145,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "fear",
+        "zh": "害怕,惧怕,担忧"
+      },
+      "payload": {
+        "term": "fear",
+        "ipa": "fɪə",
+        "pos": "v.",
+        "def": "v./n.[C,U]害怕,惧怕,担忧",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "064 华丽的背心 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "063016fbe3af915f9ef8fafb9dc25065fbf7c4a782f440348557585226b71c50"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep064-vocab-046",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 146,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "travel",
+        "zh": "游历"
+      },
+      "payload": {
+        "term": "travel",
+        "ipa": "ˈtrævl",
+        "pos": "v.",
+        "def": "v.旅行,游历幽;传播 n.[C,U]旅行[U]游历",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "064 华丽的背心 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "063016fbe3af915f9ef8fafb9dc25065fbf7c4a782f440348557585226b71c50"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep064-vocab-047",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 147,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "together",
+        "zh": "adv.在一起,共同,(接触、结 合)到一起,合作地,团结一致 地"
+      },
+      "payload": {
+        "term": "together",
+        "ipa": "təˈɡeðə(r)",
+        "pos": "adv.",
+        "def": "adv.在一起,共同,(接触、结 合)到一起,合作地,团结一致 地",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "064 华丽的背心 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "063016fbe3af915f9ef8fafb9dc25065fbf7c4a782f440348557585226b71c50"
+        }
+      ],
+      "review_status": "machine_verified"
+    }
+  ],
+  "teacher_guide": null,
+  "review": {
+    "status": "draft",
+    "reviewed_at": null,
+    "card_stats": {
+      "total": 52,
+      "sentence_choice": 5,
+      "word_review": 47,
+      "machine_verified": 49,
+      "assistant_reviewed": 3,
+      "verified": 52,
+      "needs_review": 0
+    }
+  },
+  "generated_at": "2026-08-31T04:49:44.085791+00:00"
+}

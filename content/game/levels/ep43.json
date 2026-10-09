@@ -1,0 +1,584 @@
+{
+ "schema_version": 1,
+ "ep": 43,
+ "title": {
+  "en": "A Visit from Laozi",
+  "zh": "西游记 第43集"
+ },
+ "collection": "c06",
+ "cast": {
+  "hero": {
+   "id": "wukong",
+   "nameZh": "孙悟空"
+  },
+  "boss": {
+   "id": "goldenhorn",
+   "nameZh": "金角大王",
+   "mode": "sparring",
+   "sprite": "goldenhorn"
+  },
+  "minors": [
+   {
+    "id": "imp",
+    "nameZh": "小妖",
+    "sprite": "imp"
+   }
+  ]
+ },
+ "background": {
+  "theme": "generic",
+  "illustration": "assets/adv_frames/ep43/f1.jpg"
+ },
+ "intro": [
+  {
+   "speaker": "narrator",
+   "textEn": "Golden Horn scowled at Wukong.",
+   "textZh": "金角对悟空皱了皱眉。",
+   "illustration": "assets/adv_frames/ep43/f1.jpg",
+   "sourceNodeId": "n001",
+   "audioRef": "sent_en:Golden Horn scowled at Wukong."
+  },
+  {
+   "speaker": "narrator",
+   "textEn": "\"I doubt you have a gourd like mine.\"",
+   "textZh": "\"我怀疑你没有像我这样的葫芦。\"",
+   "illustration": "assets/adv_frames/ep43/f2.jpg",
+   "sourceNodeId": "n002",
+   "audioRef": "sent_en:\"I doubt you have a gourd like mine.\""
+  }
+ ],
+ "previewWords": [
+  {
+   "term": "scowl",
+   "zh": "皱眉",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep43/f1.jpg"
+  },
+  {
+   "term": "search",
+   "zh": "搜查,搜寻",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep43/f1.jpg"
+  },
+  {
+   "term": "companion",
+   "zh": "同伴,伴侣,朋友",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep43/f1.jpg"
+  },
+  {
+   "term": "trap",
+   "zh": "困(在危险的场所或困境)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep43/f2.jpg"
+  },
+  {
+   "term": "untie",
+   "zh": "解开(结等)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep43/f0.jpg"
+  },
+  {
+   "term": "get rid of",
+   "zh": "摆脱,除掉",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep43/f0.jpg"
+  },
+  {
+   "term": "nighttime",
+   "zh": "夜间",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep43/f2.jpg"
+  },
+  {
+   "term": "sage",
+   "zh": "圣人,圣贤",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep43/f3.jpg"
+  },
+  {
+   "term": "joke",
+   "zh": "说笑话,开玩笑",
+   "ipa": "dʒəʊk",
+   "illustration": "assets/adv_frames/ep43/f1.jpg"
+  },
+  {
+   "term": "joke around",
+   "zh": "开玩笑",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep43/f2.jpg"
+  },
+  {
+   "term": "work for",
+   "zh": "为......工作,为......效力",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep43/f1.jpg"
+  },
+  {
+   "term": "cause trouble",
+   "zh": "生事,肇事",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep43/f2.jpg"
+  }
+ ],
+ "wordPool": [
+  {
+   "term": "scowl",
+   "zh": "皱眉",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep43/f1.jpg"
+  },
+  {
+   "term": "search",
+   "zh": "搜查,搜寻",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep43/f1.jpg"
+  },
+  {
+   "term": "companion",
+   "zh": "同伴,伴侣,朋友",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep43/f1.jpg"
+  },
+  {
+   "term": "trap",
+   "zh": "困(在危险的场所或困境)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep43/f2.jpg"
+  },
+  {
+   "term": "untie",
+   "zh": "解开(结等)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep43/f0.jpg"
+  },
+  {
+   "term": "get rid of",
+   "zh": "摆脱,除掉",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep43/f0.jpg"
+  },
+  {
+   "term": "nighttime",
+   "zh": "夜间",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep43/f2.jpg"
+  },
+  {
+   "term": "sage",
+   "zh": "圣人,圣贤",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep43/f3.jpg"
+  },
+  {
+   "term": "joke",
+   "zh": "说笑话,开玩笑",
+   "ipa": "dʒəʊk",
+   "illustration": "assets/adv_frames/ep43/f1.jpg"
+  },
+  {
+   "term": "joke around",
+   "zh": "开玩笑",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep43/f2.jpg"
+  },
+  {
+   "term": "work for",
+   "zh": "为......工作,为......效力",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep43/f1.jpg"
+  },
+  {
+   "term": "cause trouble",
+   "zh": "生事,肇事",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep43/f2.jpg"
+  },
+  {
+   "term": "serious",
+   "zh": "严肃的,认真的",
+   "ipa": "ˈsɪəriəs",
+   "illustration": "assets/adv_frames/ep43/f1.jpg"
+  },
+  {
+   "term": "by now",
+   "zh": "如今,这时(已经)",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep43/f0.jpg"
+  },
+  {
+   "term": "fear",
+   "zh": "害怕,恐惧",
+   "ipa": "fɪə",
+   "illustration": "assets/adv_frames/ep43/f3.jpg"
+  },
+  {
+   "term": "ghost",
+   "zh": "鬼,幽灵",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep43/f1.jpg"
+  },
+  {
+   "term": "creak",
+   "zh": "发出咯吱咯吱声",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep43/f2.jpg"
+  },
+  {
+   "term": "doorway",
+   "zh": "大门又,玄关,出入又",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep43/f3.jpg"
+  },
+  {
+   "term": "drip",
+   "zh": "(液体)嘀嗒地往下掉",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep43/f3.jpg"
+  },
+  {
+   "term": "dripping",
+   "zh": "湿淋淋地",
+   "ipa": "",
+   "illustration": "assets/adv_frames/ep43/f1.jpg"
+  },
+  {
+   "term": "doubt",
+   "zh": "疑惑",
+   "ipa": "daʊt",
+   "illustration": "assets/adv_frames/ep43/f1.jpg"
+  },
+  {
+   "term": "look",
+   "zh": "看",
+   "ipa": "lʊk",
+   "illustration": "assets/adv_frames/ep43/f1.jpg"
+  },
+  {
+   "term": "careful",
+   "zh": "小心的",
+   "ipa": "ˈkeəfl",
+   "illustration": "assets/adv_frames/ep43/f1.jpg"
+  },
+  {
+   "term": "magic",
+   "zh": "有魔力的",
+   "ipa": "ˈmædʒɪk",
+   "illustration": "assets/adv_frames/ep43/f1.jpg"
+  }
+ ],
+ "waves": [
+  {
+   "monsters": [
+    {
+     "term": "scowl",
+     "zh": "皱眉",
+     "sprite": "imp"
+    },
+    {
+     "term": "search",
+     "zh": "搜查,搜寻",
+     "sprite": "imp"
+    },
+    {
+     "term": "companion",
+     "zh": "同伴,伴侣,朋友",
+     "sprite": "imp"
+    },
+    {
+     "term": "trap",
+     "zh": "困(在危险的场所或困境)",
+     "sprite": "imp"
+    }
+   ]
+  },
+  {
+   "monsters": [
+    {
+     "term": "untie",
+     "zh": "解开(结等)",
+     "sprite": "imp"
+    },
+    {
+     "term": "get rid of",
+     "zh": "摆脱,除掉",
+     "sprite": "imp"
+    },
+    {
+     "term": "nighttime",
+     "zh": "夜间",
+     "sprite": "imp"
+    },
+    {
+     "term": "sage",
+     "zh": "圣人,圣贤",
+     "sprite": "imp"
+    }
+   ]
+  }
+ ],
+ "boss": {
+  "hpWords": [
+   {
+    "term": "joke",
+    "zh": "说笑话,开玩笑"
+   },
+   {
+    "term": "joke around",
+    "zh": "开玩笑"
+   },
+   {
+    "term": "work for",
+    "zh": "为......工作,为......效力"
+   },
+   {
+    "term": "cause trouble",
+    "zh": "生事,肇事"
+   }
+  ],
+  "taunts": [
+   "goldenhorn.1",
+   "goldenhorn.2",
+   "goldenhorn.3"
+  ]
+ },
+ "quizUrl": "lesson.html?ep=43",
+ "npcDialogue": {
+  "intro": {
+   "id": "ep43-map-intro",
+   "lines": [
+    {
+     "id": "ep43-map-intro-1",
+     "sourceNodeId": "n001",
+     "speaker": "narrator",
+     "textEn": "Golden Horn scowled at Wukong.",
+     "textZh": "金角对悟空皱了皱眉。",
+     "audioRef": "sent_en:Golden Horn scowled at Wukong.",
+     "audioStart": 11.0,
+     "audioEnd": 15.164
+    },
+    {
+     "id": "ep43-map-intro-2",
+     "sourceNodeId": "n002",
+     "speaker": "narrator",
+     "textEn": "\"I doubt you have a gourd like mine.\"",
+     "textZh": "\"我怀疑你没有像我这样的葫芦。\"",
+     "audioRef": "sent_en:\"I doubt you have a gourd like mine.\"",
+     "audioStart": 15.165,
+     "audioEnd": 19.061
+    }
+   ]
+  },
+  "quiz": {
+   "id": "ep43-map-quiz",
+   "lines": [
+    {
+     "id": "ep43-map-quiz-1",
+     "sourceNodeId": "n051",
+     "speaker": "narrator",
+     "textEn": "Then Laozi the sage stood before the travelers.",
+     "textZh": "随后,圣人老子出现在旅人面前。",
+     "audioRef": "sent_en:Then Laozi the sage stood before the travelers.",
+     "audioStart": 221.784,
+     "audioEnd": 225.622
+    }
+   ],
+   "question": {
+    "id": "ep043-official-quiz-001",
+    "textEn": "which is not true?",
+    "textZh": "哪一项是不正确的？"
+   },
+   "word": {
+    "term": "scowl",
+    "zh": "皱眉",
+    "ipa": ""
+   },
+   "options": [
+    {
+     "id": "a",
+     "textEn": "buddha visited the travelers.",
+     "textZh": "佛陀拜访了旅行者。",
+     "correct": true,
+     "feedback": "对了。佛陀拜访了旅行者。"
+    },
+    {
+     "id": "b",
+     "textEn": "the gourd wouldn't harm golden horn.",
+     "textZh": "葫芦不会伤害金角。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    },
+    {
+     "id": "c",
+     "textEn": "the old man was really laozi.",
+     "textZh": "那个老人真的是老子。",
+     "correct": false,
+     "feedback": "再想想，选和本集故事相符的那一项。"
+    }
+   ],
+   "lessonCardId": "ep043-official-quiz-001"
+  }
+ },
+ "map": {
+  "theme": "generic",
+  "coordinateSpace": "world-normalized",
+  "worldTiles": 2,
+  "regions": {
+   "hero": 0,
+   "waves": [
+    0,
+    1
+   ],
+   "npc": {
+    "intro": 0,
+    "quiz": 1
+   },
+   "boss": 3
+  },
+  "walkable": {
+   "space": "world",
+   "x": 0.0,
+   "y": 0.16,
+   "w": 1.0,
+   "h": 0.79,
+   "rects": [
+    {
+     "x": 0.0,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.66,
+     "w": 0.5,
+     "h": 0.29
+    },
+    {
+     "x": 0.5,
+     "y": 0.16,
+     "w": 0.5,
+     "h": 0.29
+    }
+   ]
+  },
+  "heroSpawn": {
+   "x": 0.06,
+   "y": 0.31
+  },
+  "monsterSpawns": [
+   {
+    "x": 0.31,
+    "y": 0.23
+   },
+   {
+    "x": 0.38,
+    "y": 0.27
+   },
+   {
+    "x": 0.34,
+    "y": 0.33
+   },
+   {
+    "x": 0.41,
+    "y": 0.24
+   }
+  ],
+  "waveSpawns": [
+   [
+    {
+     "x": 0.31,
+     "y": 0.23
+    },
+    {
+     "x": 0.38,
+     "y": 0.27
+    },
+    {
+     "x": 0.34,
+     "y": 0.33
+    },
+    {
+     "x": 0.41,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.81,
+     "y": 0.23
+    },
+    {
+     "x": 0.88,
+     "y": 0.27
+    },
+    {
+     "x": 0.84,
+     "y": 0.33
+    },
+    {
+     "x": 0.91,
+     "y": 0.24
+    }
+   ]
+  ],
+  "orbSpawns": [
+   [
+    {
+     "x": 0.11,
+     "y": 0.25
+    },
+    {
+     "x": 0.16,
+     "y": 0.31
+    },
+    {
+     "x": 0.12,
+     "y": 0.37
+    },
+    {
+     "x": 0.18,
+     "y": 0.24
+    }
+   ],
+   [
+    {
+     "x": 0.61,
+     "y": 0.25
+    },
+    {
+     "x": 0.66,
+     "y": 0.31
+    },
+    {
+     "x": 0.62,
+     "y": 0.37
+    },
+    {
+     "x": 0.68,
+     "y": 0.24
+    }
+   ]
+  ],
+  "npcSpots": [
+   {
+    "role": "intro",
+    "sprite": "goldenhorn",
+    "nameZh": "金角大王",
+    "x": 0.08,
+    "y": 0.26
+   },
+   {
+    "role": "quiz",
+    "sprite": "goldenhorn",
+    "nameZh": "金角大王",
+    "x": 0.7,
+    "y": 0.39
+   }
+  ],
+  "bossSpot": {
+   "x": 0.94,
+   "y": 0.85
+  }
+ }
+}
