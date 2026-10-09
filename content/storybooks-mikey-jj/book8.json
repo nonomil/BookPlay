@@ -1,0 +1,2779 @@
+{
+ "schema_version": 1,
+ "storybook_id": "mikey-jj_burger-shop-adventure",
+ "series": "mikey-jj",
+ "book": 8,
+ "series_count": 11,
+ "published_count": 10,
+ "layout": "spread_with_right_caption",
+ "title": {
+  "en": "Burger Shop Adventure",
+  "zh": "汉堡店大对决"
+ },
+ "source_note": "页图逐页视觉核对；speaker 依据气泡尾部与角色位置标注。字幕以 faster-whisper base.en VAD 词级时间为主，原子句按真实停顿拆分；Godzilla 第9页仅有画面爆炸拟声，显式标记 audio_missing，未伪造人声。源 PDF、MP3 与页图只读。",
+ "sources": {
+  "pdf": "书籍资料库/Mikey & JJ 英文冒险/PDF/Burger Shop Adventure.pdf",
+  "mp3": "书籍资料库/Mikey & JJ 英文冒险/audio/Burger Shop Adventure.mp3",
+  "source_video": "书籍资料库/Mikey & JJ 英文冒险/MikeyJJ Audio Books/Burger Shop Adventure.mp4",
+  "derived_audio": "prj/data/storybooks-mikey-jj/source-audio/burger-shop-adventure.mp3"
+ },
+ "audio": "assets/mikey-jj/burger-shop-adventure/audio.mp3",
+ "audio_duration_sec": 140.779,
+ "pages": [
+  {
+   "page_no": 1,
+   "source_page": 1,
+   "image": "assets/mikey-jj/burger-shop-adventure/pages/p01.webp",
+   "text_en": "I want to open a hamburger shop. Me too. Let's see who can make the most money. I will take the million dollar hill.",
+   "start_ms": 1040,
+   "end_ms": 9320,
+   "sentences": [
+    {
+     "id": "b8-p01-s01",
+     "text_en": "I want to open a hamburger shop.",
+     "zh": "汉堡；商店。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.039,
+      "y": 0.033,
+      "w": 0.377,
+      "h": 0.114,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 1040,
+     "end_ms": 2940,
+     "audio": "assets/mikey-jj/burger-shop-adventure/sentences/page-01-sentence-01.mp3",
+     "words": [
+      {
+       "text": "I",
+       "start_ms": 0,
+       "end_ms": 60
+      },
+      {
+       "text": "want",
+       "start_ms": 60,
+       "end_ms": 300
+      },
+      {
+       "text": "to",
+       "start_ms": 300,
+       "end_ms": 460
+      },
+      {
+       "text": "open",
+       "start_ms": 460,
+       "end_ms": 800
+      },
+      {
+       "text": "a",
+       "start_ms": 800,
+       "end_ms": 940
+      },
+      {
+       "text": "hamburger",
+       "start_ms": 940,
+       "end_ms": 1460
+      },
+      {
+       "text": "shop.",
+       "start_ms": 1460,
+       "end_ms": 1900
+      }
+     ],
+     "glossary": [
+      {
+       "term": "hamburger",
+       "ipa": "ˈhæmbɜːɡə",
+       "pos": "N",
+       "zh": "汉堡包"
+      }
+     ]
+    },
+    {
+     "id": "b8-p01-s02",
+     "text_en": "Me too.",
+     "zh": "请跟读并理解这句话。",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.502,
+      "y": 0.036,
+      "w": 0.358,
+      "h": 0.093,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 3500,
+     "end_ms": 4080,
+     "audio": "assets/mikey-jj/burger-shop-adventure/sentences/page-01-sentence-02.mp3",
+     "words": [
+      {
+       "text": "Me",
+       "start_ms": 0,
+       "end_ms": 300
+      },
+      {
+       "text": "too.",
+       "start_ms": 300,
+       "end_ms": 580
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b8-p01-s03",
+     "text_en": "Let's see who can make the most money.",
+     "zh": "钱。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.193,
+      "y": 0.343,
+      "w": 0.455,
+      "h": 0.13,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 4540,
+     "end_ms": 6400,
+     "audio": "assets/mikey-jj/burger-shop-adventure/sentences/page-01-sentence-03.mp3",
+     "words": [
+      {
+       "text": "Let's",
+       "start_ms": 0,
+       "end_ms": 280
+      },
+      {
+       "text": "see",
+       "start_ms": 280,
+       "end_ms": 440
+      },
+      {
+       "text": "who",
+       "start_ms": 440,
+       "end_ms": 640
+      },
+      {
+       "text": "can",
+       "start_ms": 640,
+       "end_ms": 800
+      },
+      {
+       "text": "make",
+       "start_ms": 800,
+       "end_ms": 1000
+      },
+      {
+       "text": "the",
+       "start_ms": 1000,
+       "end_ms": 1200
+      },
+      {
+       "text": "most",
+       "start_ms": 1200,
+       "end_ms": 1440
+      },
+      {
+       "text": "money.",
+       "start_ms": 1440,
+       "end_ms": 1860
+      }
+     ],
+     "glossary": [
+      {
+       "term": "money",
+       "ipa": "ˈmʌni",
+       "pos": "N",
+       "zh": "钱"
+      }
+     ]
+    },
+    {
+     "id": "b8-p01-s04",
+     "text_en": "I will take the million dollar hill.",
+     "zh": "请跟读并理解这句话。",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.193,
+      "y": 0.343,
+      "w": 0.455,
+      "h": 0.13,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 7180,
+     "end_ms": 9320,
+     "audio": "assets/mikey-jj/burger-shop-adventure/sentences/page-01-sentence-04.mp3",
+     "words": [
+      {
+       "text": "I",
+       "start_ms": 0,
+       "end_ms": 280
+      },
+      {
+       "text": "will",
+       "start_ms": 280,
+       "end_ms": 460
+      },
+      {
+       "text": "take",
+       "start_ms": 460,
+       "end_ms": 700
+      },
+      {
+       "text": "the",
+       "start_ms": 700,
+       "end_ms": 940
+      },
+      {
+       "text": "million",
+       "start_ms": 940,
+       "end_ms": 1140
+      },
+      {
+       "text": "dollar",
+       "start_ms": 1140,
+       "end_ms": 1800
+      },
+      {
+       "text": "hill.",
+       "start_ms": 1800,
+       "end_ms": 2140
+      }
+     ],
+     "glossary": []
+    }
+   ],
+   "panel": [
+    0.0,
+    0.486,
+    0.502,
+    1.0
+   ]
+  },
+  {
+   "page_no": 2,
+   "source_page": 2,
+   "image": "assets/mikey-jj/burger-shop-adventure/pages/p02.webp",
+   "text_en": "Ooh, I will take the $1 swamp. It is a bargain. I am building a fancy restaurant. I am building a dirt house. It saves money.",
+   "start_ms": 9960,
+   "end_ms": 22600,
+   "sentences": [
+    {
+     "id": "b8-p02-s01",
+     "text_en": "Ooh, I will take the $1 swamp.",
+     "zh": "请跟读并理解这句话。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.036,
+      "y": 0.025,
+      "w": 0.198,
+      "h": 0.15,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 9960,
+     "end_ms": 12600,
+     "audio": "assets/mikey-jj/burger-shop-adventure/sentences/page-02-sentence-01.mp3",
+     "words": [
+      {
+       "text": "Ooh,",
+       "start_ms": 0,
+       "end_ms": 480
+      },
+      {
+       "text": "I",
+       "start_ms": 720,
+       "end_ms": 900
+      },
+      {
+       "text": "will",
+       "start_ms": 900,
+       "end_ms": 1080
+      },
+      {
+       "text": "take",
+       "start_ms": 1080,
+       "end_ms": 1360
+      },
+      {
+       "text": "the",
+       "start_ms": 1360,
+       "end_ms": 1560
+      },
+      {
+       "text": "$1",
+       "start_ms": 1560,
+       "end_ms": 1920
+      },
+      {
+       "text": "swamp.",
+       "start_ms": 1920,
+       "end_ms": 2640
+      }
+     ],
+     "glossary": [
+      {
+       "term": "swamp",
+       "ipa": "swɒmp",
+       "pos": "N",
+       "zh": "沼泽"
+      }
+     ]
+    },
+    {
+     "id": "b8-p02-s02",
+     "text_en": "It is a bargain.",
+     "zh": "便宜货。",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.295,
+      "y": 0.025,
+      "w": 0.438,
+      "h": 0.115,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 13080,
+     "end_ms": 13920,
+     "audio": "assets/mikey-jj/burger-shop-adventure/sentences/page-02-sentence-02.mp3",
+     "words": [
+      {
+       "text": "It",
+       "start_ms": 0,
+       "end_ms": 140
+      },
+      {
+       "text": "is",
+       "start_ms": 140,
+       "end_ms": 300
+      },
+      {
+       "text": "a",
+       "start_ms": 300,
+       "end_ms": 440
+      },
+      {
+       "text": "bargain.",
+       "start_ms": 440,
+       "end_ms": 840
+      }
+     ],
+     "glossary": [
+      {
+       "term": "bargain",
+       "ipa": "ˈbɑːɡən",
+       "pos": "N",
+       "zh": "便宜货"
+      }
+     ]
+    },
+    {
+     "id": "b8-p02-s03",
+     "text_en": "I am building a fancy restaurant.",
+     "zh": "餐厅。",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.266,
+      "y": 0.365,
+      "w": 0.33,
+      "h": 0.113,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 16100,
+     "end_ms": 18100,
+     "audio": "assets/mikey-jj/burger-shop-adventure/sentences/page-02-sentence-03.mp3",
+     "words": [
+      {
+       "text": "I",
+       "start_ms": 0,
+       "end_ms": 320
+      },
+      {
+       "text": "am",
+       "start_ms": 320,
+       "end_ms": 460
+      },
+      {
+       "text": "building",
+       "start_ms": 460,
+       "end_ms": 820
+      },
+      {
+       "text": "a",
+       "start_ms": 820,
+       "end_ms": 1040
+      },
+      {
+       "text": "fancy",
+       "start_ms": 1040,
+       "end_ms": 1340
+      },
+      {
+       "text": "restaurant.",
+       "start_ms": 1340,
+       "end_ms": 2000
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b8-p02-s04",
+     "text_en": "I am building a dirt house.",
+     "zh": "土房子。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.036,
+      "y": 0.517,
+      "w": 0.259,
+      "h": 0.268,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 19080,
+     "end_ms": 21120,
+     "audio": "assets/mikey-jj/burger-shop-adventure/sentences/page-02-sentence-04.mp3",
+     "words": [
+      {
+       "text": "I",
+       "start_ms": 0,
+       "end_ms": 340
+      },
+      {
+       "text": "am",
+       "start_ms": 340,
+       "end_ms": 500
+      },
+      {
+       "text": "building",
+       "start_ms": 500,
+       "end_ms": 880
+      },
+      {
+       "text": "a",
+       "start_ms": 880,
+       "end_ms": 1140
+      },
+      {
+       "text": "dirt",
+       "start_ms": 1140,
+       "end_ms": 1520
+      },
+      {
+       "text": "house.",
+       "start_ms": 1520,
+       "end_ms": 2040
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b8-p02-s05",
+     "text_en": "It saves money.",
+     "zh": "钱。",
+     "speaker": {
+      "id": "system",
+      "label": "角色"
+     },
+     "bubble": {
+      "x": 0.524,
+      "y": 0.531,
+      "w": 0.424,
+      "h": 0.094,
+      "tail": "none",
+      "variant": "narration"
+     },
+     "start_ms": 21720,
+     "end_ms": 22600,
+     "audio": "assets/mikey-jj/burger-shop-adventure/sentences/page-02-sentence-05.mp3",
+     "words": [
+      {
+       "text": "It",
+       "start_ms": 0,
+       "end_ms": 120
+      },
+      {
+       "text": "saves",
+       "start_ms": 120,
+       "end_ms": 360
+      },
+      {
+       "text": "money.",
+       "start_ms": 360,
+       "end_ms": 880
+      }
+     ],
+     "glossary": []
+    }
+   ],
+   "panel": [
+    0.0,
+    0.492,
+    0.507,
+    1.0
+   ]
+  },
+  {
+   "page_no": 3,
+   "source_page": 3,
+   "image": "assets/mikey-jj/burger-shop-adventure/pages/p03.webp",
+   "text_en": "Fresh beef, melted cheese, and toasted buns. Just in case I need to rescue him. He's here. Everyone inside! My secret ingredient is rotten flesh. Uh, is that safe to eat? I don't feel so good.",
+   "start_ms": 23540,
+   "end_ms": 39940,
+   "sentences": [
+    {
+     "id": "b8-p03-s01",
+     "text_en": "Fresh beef, melted cheese, and toasted buns.",
+     "zh": "请跟读并理解这句话。",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.504,
+      "y": 0.036,
+      "w": 0.441,
+      "h": 0.096,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 23540,
+     "end_ms": 27100,
+     "audio": "assets/mikey-jj/burger-shop-adventure/sentences/page-03-sentence-01.mp3",
+     "words": [
+      {
+       "text": "Fresh",
+       "start_ms": 0,
+       "end_ms": 380
+      },
+      {
+       "text": "beef,",
+       "start_ms": 380,
+       "end_ms": 740
+      },
+      {
+       "text": "melted",
+       "start_ms": 1260,
+       "end_ms": 1480
+      },
+      {
+       "text": "cheese,",
+       "start_ms": 1480,
+       "end_ms": 2000
+      },
+      {
+       "text": "and",
+       "start_ms": 2400,
+       "end_ms": 2520
+      },
+      {
+       "text": "toasted",
+       "start_ms": 2520,
+       "end_ms": 3060
+      },
+      {
+       "text": "buns.",
+       "start_ms": 3060,
+       "end_ms": 3560
+      }
+     ],
+     "glossary": [
+      {
+       "term": "fresh",
+       "ipa": "freʃ",
+       "pos": "Adj",
+       "zh": "新鲜的"
+      }
+     ]
+    },
+    {
+     "id": "b8-p03-s02",
+     "text_en": "Just in case I need to rescue him. He's here. Everyone inside!",
+     "zh": "营救。",
+     "speaker": {
+      "id": "system",
+      "label": "角色"
+     },
+     "bubble": {
+      "x": 0.504,
+      "y": 0.036,
+      "w": 0.441,
+      "h": 0.096,
+      "tail": "none",
+      "variant": "narration"
+     },
+     "start_ms": 27100,
+     "end_ms": 29140,
+     "audio": "assets/mikey-jj/burger-shop-adventure/sentences/page-03-sentence-02.mp3",
+     "words": [
+      {
+       "text": "Smells",
+       "start_ms": 0,
+       "end_ms": 220
+      },
+      {
+       "text": "delicious.",
+       "start_ms": 220,
+       "end_ms": 2040
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b8-p03-s03",
+     "text_en": "My secret ingredient is rotten flesh.",
+     "zh": "腐肉；食材；腐烂的。",
+     "speaker": {
+      "id": "system",
+      "label": "角色"
+     },
+     "bubble": {
+      "x": 0.697,
+      "y": 0.356,
+      "w": 0.243,
+      "h": 0.122,
+      "tail": "none",
+      "variant": "narration"
+     },
+     "start_ms": 30960,
+     "end_ms": 34640,
+     "audio": "assets/mikey-jj/burger-shop-adventure/sentences/page-03-sentence-03.mp3",
+     "words": [
+      {
+       "text": "My",
+       "start_ms": 0,
+       "end_ms": 720
+      },
+      {
+       "text": "secret",
+       "start_ms": 720,
+       "end_ms": 1160
+      },
+      {
+       "text": "ingredient",
+       "start_ms": 1160,
+       "end_ms": 1800
+      },
+      {
+       "text": "is",
+       "start_ms": 1800,
+       "end_ms": 2340
+      },
+      {
+       "text": "rotten",
+       "start_ms": 2340,
+       "end_ms": 3100
+      },
+      {
+       "text": "flesh.",
+       "start_ms": 3100,
+       "end_ms": 3680
+      }
+     ],
+     "glossary": [
+      {
+       "term": "ingredient",
+       "ipa": "ɪnˈɡriːdiənt",
+       "pos": "N",
+       "zh": "食材"
+      }
+     ]
+    },
+    {
+     "id": "b8-p03-s04",
+     "text_en": "Uh, is that safe to eat?",
+     "zh": "安全。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.469,
+      "y": 0.52,
+      "w": 0.294,
+      "h": 0.09,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 35700,
+     "end_ms": 37620,
+     "audio": "assets/mikey-jj/burger-shop-adventure/sentences/page-03-sentence-04.mp3",
+     "words": [
+      {
+       "text": "Uh,",
+       "start_ms": 0,
+       "end_ms": 340
+      },
+      {
+       "text": "is",
+       "start_ms": 620,
+       "end_ms": 820
+      },
+      {
+       "text": "that",
+       "start_ms": 820,
+       "end_ms": 1020
+      },
+      {
+       "text": "safe",
+       "start_ms": 1020,
+       "end_ms": 1460
+      },
+      {
+       "text": "to",
+       "start_ms": 1460,
+       "end_ms": 1740
+      },
+      {
+       "text": "eat?",
+       "start_ms": 1740,
+       "end_ms": 1920
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b8-p03-s05",
+     "text_en": "I don't feel so good.",
+     "zh": "请跟读并理解这句话。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.469,
+      "y": 0.52,
+      "w": 0.294,
+      "h": 0.09,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 38320,
+     "end_ms": 39940,
+     "audio": "assets/mikey-jj/burger-shop-adventure/sentences/page-03-sentence-05.mp3",
+     "words": [
+      {
+       "text": "I",
+       "start_ms": 0,
+       "end_ms": 480
+      },
+      {
+       "text": "don't",
+       "start_ms": 480,
+       "end_ms": 720
+      },
+      {
+       "text": "feel",
+       "start_ms": 720,
+       "end_ms": 960
+      },
+      {
+       "text": "so",
+       "start_ms": 960,
+       "end_ms": 1260
+      },
+      {
+       "text": "good.",
+       "start_ms": 1260,
+       "end_ms": 1620
+      }
+     ],
+     "glossary": []
+    }
+   ],
+   "panel": [
+    0.0,
+    0.492,
+    0.507,
+    1.0
+   ]
+  },
+  {
+   "page_no": 4,
+   "source_page": 4,
+   "image": "assets/mikey-jj/burger-shop-adventure/pages/p04.webp",
+   "text_en": "Hey, you didn't finish your meal. No refunds. Business is booming. Best burger ever. I have made so much money, I need a vault to store it all.",
+   "start_ms": 40500,
+   "end_ms": 54180,
+   "sentences": [
+    {
+     "id": "b8-p04-s01",
+     "text_en": "Hey, you didn't finish your meal.",
+     "zh": "请跟读并理解这句话。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.106,
+      "y": 0.049,
+      "w": 0.408,
+      "h": 0.095,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 40500,
+     "end_ms": 42440,
+     "audio": "assets/mikey-jj/burger-shop-adventure/sentences/page-04-sentence-01.mp3",
+     "words": [
+      {
+       "text": "Hey,",
+       "start_ms": 0,
+       "end_ms": 420
+      },
+      {
+       "text": "you",
+       "start_ms": 460,
+       "end_ms": 780
+      },
+      {
+       "text": "didn't",
+       "start_ms": 780,
+       "end_ms": 1120
+      },
+      {
+       "text": "finish",
+       "start_ms": 1120,
+       "end_ms": 1360
+      },
+      {
+       "text": "your",
+       "start_ms": 1360,
+       "end_ms": 1680
+      },
+      {
+       "text": "meal.",
+       "start_ms": 1680,
+       "end_ms": 1940
+      }
+     ],
+     "glossary": [
+      {
+       "term": "finish",
+       "ipa": "ˈfɪnɪʃ",
+       "pos": "V",
+       "zh": "完成"
+      }
+     ]
+    },
+    {
+     "id": "b8-p04-s02",
+     "text_en": "No refunds.",
+     "zh": "请跟读并理解这句话。",
+     "speaker": {
+      "id": "system",
+      "label": "角色"
+     },
+     "bubble": {
+      "x": 0.631,
+      "y": 0.116,
+      "w": 0.287,
+      "h": 0.096,
+      "tail": "none",
+      "variant": "narration"
+     },
+     "start_ms": 43180,
+     "end_ms": 43560,
+     "audio": "assets/mikey-jj/burger-shop-adventure/sentences/page-04-sentence-02.mp3",
+     "words": [
+      {
+       "text": "No",
+       "start_ms": 0,
+       "end_ms": 0
+      },
+      {
+       "text": "refunds.",
+       "start_ms": 0,
+       "end_ms": 380
+      }
+     ],
+     "glossary": [
+      {
+       "term": "refunds",
+       "ipa": "ˈriːfʌndz",
+       "pos": "N",
+       "zh": "退款"
+      }
+     ]
+    },
+    {
+     "id": "b8-p04-s03",
+     "text_en": "Business is booming.",
+     "zh": "生意。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.631,
+      "y": 0.116,
+      "w": 0.287,
+      "h": 0.096,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 46120,
+     "end_ms": 47260,
+     "audio": "assets/mikey-jj/burger-shop-adventure/sentences/page-04-sentence-03.mp3",
+     "words": [
+      {
+       "text": "Business",
+       "start_ms": 0,
+       "end_ms": 560
+      },
+      {
+       "text": "is",
+       "start_ms": 560,
+       "end_ms": 780
+      },
+      {
+       "text": "booming.",
+       "start_ms": 780,
+       "end_ms": 1140
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b8-p04-s04",
+     "text_en": "Best burger ever.",
+     "zh": "汉堡。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.631,
+      "y": 0.116,
+      "w": 0.287,
+      "h": 0.096,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 48060,
+     "end_ms": 49500,
+     "audio": "assets/mikey-jj/burger-shop-adventure/sentences/page-04-sentence-04.mp3",
+     "words": [
+      {
+       "text": "Best",
+       "start_ms": 0,
+       "end_ms": 300
+      },
+      {
+       "text": "burger",
+       "start_ms": 300,
+       "end_ms": 800
+      },
+      {
+       "text": "ever.",
+       "start_ms": 800,
+       "end_ms": 1440
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b8-p04-s05",
+     "text_en": "I have made so much money, I need a vault to store it all.",
+     "zh": "钱；金库。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.512,
+      "y": 0.52,
+      "w": 0.401,
+      "h": 0.122,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 50440,
+     "end_ms": 54180,
+     "audio": "assets/mikey-jj/burger-shop-adventure/sentences/page-04-sentence-05.mp3",
+     "words": [
+      {
+       "text": "I",
+       "start_ms": 0,
+       "end_ms": 360
+      },
+      {
+       "text": "have",
+       "start_ms": 360,
+       "end_ms": 520
+      },
+      {
+       "text": "made",
+       "start_ms": 520,
+       "end_ms": 700
+      },
+      {
+       "text": "so",
+       "start_ms": 700,
+       "end_ms": 1080
+      },
+      {
+       "text": "much",
+       "start_ms": 1080,
+       "end_ms": 1360
+      },
+      {
+       "text": "money,",
+       "start_ms": 1360,
+       "end_ms": 1820
+      },
+      {
+       "text": "I",
+       "start_ms": 1820,
+       "end_ms": 2120
+      },
+      {
+       "text": "need",
+       "start_ms": 2120,
+       "end_ms": 2280
+      },
+      {
+       "text": "a",
+       "start_ms": 2280,
+       "end_ms": 2440
+      },
+      {
+       "text": "vault",
+       "start_ms": 2440,
+       "end_ms": 2660
+      },
+      {
+       "text": "to",
+       "start_ms": 2660,
+       "end_ms": 2960
+      },
+      {
+       "text": "store",
+       "start_ms": 2960,
+       "end_ms": 3260
+      },
+      {
+       "text": "it",
+       "start_ms": 3260,
+       "end_ms": 3540
+      },
+      {
+       "text": "all.",
+       "start_ms": 3540,
+       "end_ms": 3740
+      }
+     ],
+     "glossary": []
+    }
+   ],
+   "panel": [
+    0.0,
+    0.492,
+    0.507,
+    1.0
+   ]
+  },
+  {
+   "page_no": 5,
+   "source_page": 5,
+   "image": "assets/mikey-jj/burger-shop-adventure/pages/p05.webp",
+   "text_en": "You are scaring my customers. This land is cursed. No burgers allowed.",
+   "start_ms": 61790,
+   "end_ms": 67570,
+   "sentences": [
+    {
+     "id": "b8-p05-s01",
+     "text_en": "You are scaring my customers.",
+     "zh": "顾客。",
+     "speaker": {
+      "id": "system",
+      "label": "角色"
+     },
+     "bubble": {
+      "x": 0.06,
+      "y": 0.048,
+      "w": 0.312,
+      "h": 0.11,
+      "tail": "none",
+      "variant": "narration"
+     },
+     "start_ms": 61790,
+     "end_ms": 63570,
+     "audio": "assets/mikey-jj/burger-shop-adventure/sentences/page-05-sentence-01.mp3",
+     "words": [
+      {
+       "text": "You",
+       "start_ms": 0,
+       "end_ms": 380
+      },
+      {
+       "text": "are",
+       "start_ms": 380,
+       "end_ms": 540
+      },
+      {
+       "text": "scaring",
+       "start_ms": 540,
+       "end_ms": 1040
+      },
+      {
+       "text": "my",
+       "start_ms": 1040,
+       "end_ms": 1340
+      },
+      {
+       "text": "customers.",
+       "start_ms": 1340,
+       "end_ms": 1780
+      }
+     ],
+     "glossary": [
+      {
+       "term": "customer",
+       "ipa": "ˈkʌstəmə",
+       "pos": "N",
+       "zh": "顾客"
+      },
+      {
+       "term": "scaring",
+       "ipa": "ˈskeərɪŋ",
+       "pos": "V",
+       "zh": "吓人"
+      }
+     ]
+    },
+    {
+     "id": "b8-p05-s02",
+     "text_en": "This land is cursed.",
+     "zh": "被诅咒。",
+     "speaker": {
+      "id": "system",
+      "label": "角色"
+     },
+     "bubble": {
+      "x": 0.06,
+      "y": 0.048,
+      "w": 0.312,
+      "h": 0.11,
+      "tail": "none",
+      "variant": "narration"
+     },
+     "start_ms": 64570,
+     "end_ms": 66030,
+     "audio": "assets/mikey-jj/burger-shop-adventure/sentences/page-05-sentence-02.mp3",
+     "words": [
+      {
+       "text": "This",
+       "start_ms": 0,
+       "end_ms": 460
+      },
+      {
+       "text": "land",
+       "start_ms": 460,
+       "end_ms": 860
+      },
+      {
+       "text": "is",
+       "start_ms": 860,
+       "end_ms": 1140
+      },
+      {
+       "text": "cursed.",
+       "start_ms": 1140,
+       "end_ms": 1460
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b8-p05-s03",
+     "text_en": "No burgers allowed.",
+     "zh": "汉堡。",
+     "speaker": {
+      "id": "system",
+      "label": "角色"
+     },
+     "bubble": {
+      "x": 0.696,
+      "y": 0.372,
+      "w": 0.245,
+      "h": 0.103,
+      "tail": "none",
+      "variant": "narration"
+     },
+     "start_ms": 66690,
+     "end_ms": 67570,
+     "audio": "assets/mikey-jj/burger-shop-adventure/sentences/page-05-sentence-03.mp3",
+     "words": [
+      {
+       "text": "No",
+       "start_ms": 0,
+       "end_ms": 120
+      },
+      {
+       "text": "burgers",
+       "start_ms": 120,
+       "end_ms": 440
+      },
+      {
+       "text": "allowed.",
+       "start_ms": 440,
+       "end_ms": 880
+      }
+     ],
+     "glossary": []
+    }
+   ],
+   "panel": [
+    0.0,
+    0.492,
+    0.507,
+    1.0
+   ]
+  },
+  {
+   "page_no": 6,
+   "source_page": 6,
+   "image": "assets/mikey-jj/burger-shop-adventure/pages/p06.webp",
+   "text_en": "I am the hamburger. His hands got it! My restaurant has top tier security. Turrets, full blast!",
+   "start_ms": 70680,
+   "end_ms": 82500,
+   "sentences": [
+    {
+     "id": "b8-p06-s01",
+     "text_en": "I am the hamburger.",
+     "zh": "汉堡。",
+     "speaker": {
+      "id": "system",
+      "label": "角色"
+     },
+     "bubble": {
+      "x": 0.422,
+      "y": 0.032,
+      "w": 0.424,
+      "h": 0.122,
+      "tail": "none",
+      "variant": "narration"
+     },
+     "start_ms": 70680,
+     "end_ms": 72020,
+     "audio": "assets/mikey-jj/burger-shop-adventure/sentences/page-06-sentence-01.mp3",
+     "words": [
+      {
+       "text": "I",
+       "start_ms": 0,
+       "end_ms": 400
+      },
+      {
+       "text": "am",
+       "start_ms": 400,
+       "end_ms": 580
+      },
+      {
+       "text": "the",
+       "start_ms": 580,
+       "end_ms": 720
+      },
+      {
+       "text": "hamburger.",
+       "start_ms": 720,
+       "end_ms": 1340
+      }
+     ],
+     "glossary": [
+      {
+       "term": "hamburger",
+       "ipa": "ˈhæmbɜːɡə",
+       "pos": "N",
+       "zh": "汉堡包"
+      }
+     ]
+    },
+    {
+     "id": "b8-p06-s02",
+     "text_en": "His hands got it!",
+     "zh": "请跟读并理解这句话。",
+     "speaker": {
+      "id": "system",
+      "label": "角色"
+     },
+     "bubble": {
+      "x": 0.422,
+      "y": 0.032,
+      "w": 0.424,
+      "h": 0.122,
+      "tail": "none",
+      "variant": "narration"
+     },
+     "start_ms": 72400,
+     "end_ms": 73760,
+     "audio": "assets/mikey-jj/burger-shop-adventure/sentences/page-06-sentence-02.mp3",
+     "words": [
+      {
+       "text": "I",
+       "start_ms": 0,
+       "end_ms": 180
+      },
+      {
+       "text": "will",
+       "start_ms": 180,
+       "end_ms": 360
+      },
+      {
+       "text": "steal",
+       "start_ms": 360,
+       "end_ms": 600
+      },
+      {
+       "text": "all",
+       "start_ms": 600,
+       "end_ms": 940
+      },
+      {
+       "text": "the",
+       "start_ms": 940,
+       "end_ms": 1100
+      },
+      {
+       "text": "burgers.",
+       "start_ms": 1100,
+       "end_ms": 1360
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b8-p06-s03",
+     "text_en": "My restaurant has top tier security.",
+     "zh": "餐厅；安保。",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.593,
+      "y": 0.378,
+      "w": 0.285,
+      "h": 0.1,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 77170,
+     "end_ms": 79600,
+     "audio": "assets/mikey-jj/burger-shop-adventure/sentences/page-06-sentence-03.mp3",
+     "words": [
+      {
+       "text": "My",
+       "start_ms": 0,
+       "end_ms": 370
+      },
+      {
+       "text": "restaurant",
+       "start_ms": 370,
+       "end_ms": 810
+      },
+      {
+       "text": "has",
+       "start_ms": 810,
+       "end_ms": 1270
+      },
+      {
+       "text": "top",
+       "start_ms": 1270,
+       "end_ms": 1610
+      },
+      {
+       "text": "tier",
+       "start_ms": 1610,
+       "end_ms": 1990
+      },
+      {
+       "text": "security.",
+       "start_ms": 1990,
+       "end_ms": 2430
+      }
+     ],
+     "glossary": [
+      {
+       "term": "security",
+       "ipa": "sɪˈkjʊərəti",
+       "pos": "N",
+       "zh": "保安"
+      }
+     ]
+    },
+    {
+     "id": "b8-p06-s04",
+     "text_en": "Turrets, full blast!",
+     "zh": "炮塔。",
+     "speaker": {
+      "id": "system",
+      "label": "角色"
+     },
+     "bubble": {
+      "x": 0.248,
+      "y": 0.52,
+      "w": 0.364,
+      "h": 0.094,
+      "tail": "none",
+      "variant": "narration"
+     },
+     "start_ms": 80680,
+     "end_ms": 82500,
+     "audio": "assets/mikey-jj/burger-shop-adventure/sentences/page-06-sentence-04.mp3",
+     "words": [
+      {
+       "text": "I",
+       "start_ms": 0,
+       "end_ms": 200
+      },
+      {
+       "text": "just",
+       "start_ms": 200,
+       "end_ms": 420
+      },
+      {
+       "text": "wanted",
+       "start_ms": 420,
+       "end_ms": 720
+      },
+      {
+       "text": "a",
+       "start_ms": 720,
+       "end_ms": 940
+      },
+      {
+       "text": "cheeseburger.",
+       "start_ms": 940,
+       "end_ms": 1820
+      }
+     ],
+     "glossary": []
+    }
+   ],
+   "panel": [
+    0.0,
+    0.492,
+    0.507,
+    1.0
+   ]
+  },
+  {
+   "page_no": 7,
+   "source_page": 7,
+   "image": "assets/mikey-jj/burger-shop-adventure/pages/p07.webp",
+   "text_en": "Give me all your money. I only have one dollar and a rotten burger. Never mind. Keep it. Hey, that is a premium burger.",
+   "start_ms": 84120,
+   "end_ms": 95060,
+   "sentences": [
+    {
+     "id": "b8-p07-s01",
+     "text_en": "Give me all your money.",
+     "zh": "钱。",
+     "speaker": {
+      "id": "system",
+      "label": "角色"
+     },
+     "bubble": {
+      "x": 0.415,
+      "y": 0.048,
+      "w": 0.361,
+      "h": 0.095,
+      "tail": "none",
+      "variant": "narration"
+     },
+     "start_ms": 84120,
+     "end_ms": 85940,
+     "audio": "assets/mikey-jj/burger-shop-adventure/sentences/page-07-sentence-01.mp3",
+     "words": [
+      {
+       "text": "Give",
+       "start_ms": 0,
+       "end_ms": 740
+      },
+      {
+       "text": "me",
+       "start_ms": 740,
+       "end_ms": 980
+      },
+      {
+       "text": "all",
+       "start_ms": 980,
+       "end_ms": 1260
+      },
+      {
+       "text": "your",
+       "start_ms": 1260,
+       "end_ms": 1460
+      },
+      {
+       "text": "money.",
+       "start_ms": 1460,
+       "end_ms": 1820
+      }
+     ],
+     "glossary": [
+      {
+       "term": "money",
+       "ipa": "ˈmʌni",
+       "pos": "N",
+       "zh": "钱"
+      }
+     ]
+    },
+    {
+     "id": "b8-p07-s02",
+     "text_en": "I only have one dollar and a rotten burger.",
+     "zh": "汉堡；腐烂的。",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.553,
+      "y": 0.123,
+      "w": 0.407,
+      "h": 0.09,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 86420,
+     "end_ms": 89740,
+     "audio": "assets/mikey-jj/burger-shop-adventure/sentences/page-07-sentence-02.mp3",
+     "words": [
+      {
+       "text": "I",
+       "start_ms": 0,
+       "end_ms": 420
+      },
+      {
+       "text": "only",
+       "start_ms": 420,
+       "end_ms": 620
+      },
+      {
+       "text": "have",
+       "start_ms": 620,
+       "end_ms": 960
+      },
+      {
+       "text": "one",
+       "start_ms": 960,
+       "end_ms": 1300
+      },
+      {
+       "text": "dollar",
+       "start_ms": 1300,
+       "end_ms": 1840
+      },
+      {
+       "text": "and",
+       "start_ms": 1840,
+       "end_ms": 2280
+      },
+      {
+       "text": "a",
+       "start_ms": 2280,
+       "end_ms": 2440
+      },
+      {
+       "text": "rotten",
+       "start_ms": 2440,
+       "end_ms": 2860
+      },
+      {
+       "text": "burger.",
+       "start_ms": 2860,
+       "end_ms": 3320
+      }
+     ],
+     "glossary": [
+      {
+       "term": "dollar",
+       "ipa": "ˈdɒlə",
+       "pos": "N",
+       "zh": "美元"
+      }
+     ]
+    },
+    {
+     "id": "b8-p07-s03",
+     "text_en": "Never mind.",
+     "zh": "请跟读并理解这句话。",
+     "speaker": {
+      "id": "system",
+      "label": "角色"
+     },
+     "bubble": {
+      "x": 0.397,
+      "y": 0.529,
+      "w": 0.369,
+      "h": 0.09,
+      "tail": "none",
+      "variant": "narration"
+     },
+     "start_ms": 90520,
+     "end_ms": 91540,
+     "audio": "assets/mikey-jj/burger-shop-adventure/sentences/page-07-sentence-03.mp3",
+     "words": [
+      {
+       "text": "Never",
+       "start_ms": 0,
+       "end_ms": 620
+      },
+      {
+       "text": "mind.",
+       "start_ms": 620,
+       "end_ms": 1020
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b8-p07-s04",
+     "text_en": "Keep it.",
+     "zh": "请跟读并理解这句话。",
+     "speaker": {
+      "id": "system",
+      "label": "角色"
+     },
+     "bubble": {
+      "x": 0.397,
+      "y": 0.529,
+      "w": 0.369,
+      "h": 0.09,
+      "tail": "none",
+      "variant": "narration"
+     },
+     "start_ms": 91980,
+     "end_ms": 92400,
+     "audio": "assets/mikey-jj/burger-shop-adventure/sentences/page-07-sentence-04.mp3",
+     "words": [
+      {
+       "text": "Keep",
+       "start_ms": 0,
+       "end_ms": 160
+      },
+      {
+       "text": "it.",
+       "start_ms": 160,
+       "end_ms": 420
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b8-p07-s05",
+     "text_en": "Hey, that is a premium burger.",
+     "zh": "汉堡；高级的。",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.636,
+      "y": 0.59,
+      "w": 0.318,
+      "h": 0.081,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 92940,
+     "end_ms": 95060,
+     "audio": "assets/mikey-jj/burger-shop-adventure/sentences/page-07-sentence-05.mp3",
+     "words": [
+      {
+       "text": "Hey,",
+       "start_ms": 0,
+       "end_ms": 360
+      },
+      {
+       "text": "that",
+       "start_ms": 680,
+       "end_ms": 860
+      },
+      {
+       "text": "is",
+       "start_ms": 860,
+       "end_ms": 980
+      },
+      {
+       "text": "a",
+       "start_ms": 980,
+       "end_ms": 1120
+      },
+      {
+       "text": "premium",
+       "start_ms": 1120,
+       "end_ms": 1540
+      },
+      {
+       "text": "burger.",
+       "start_ms": 1540,
+       "end_ms": 2120
+      }
+     ],
+     "glossary": []
+    }
+   ],
+   "panel": [
+    0.0,
+    0.491,
+    0.517,
+    1.0
+   ]
+  },
+  {
+   "page_no": 8,
+   "source_page": 8,
+   "image": "assets/mikey-jj/burger-shop-adventure/pages/p08.webp",
+   "text_en": "You haven't paid your rent, Mikey. Time to demolish the shop. Wait, I can pay you in rotten flesh. My business empire ruined. Everything, JJ, the curse was real.",
+   "start_ms": 97020,
+   "end_ms": 114120,
+   "sentences": [
+    {
+     "id": "b8-p08-s01",
+     "text_en": "You haven't paid your rent, Mikey.",
+     "zh": "租金。",
+     "speaker": {
+      "id": "system",
+      "label": "角色"
+     },
+     "bubble": {
+      "x": 0.377,
+      "y": 0.036,
+      "w": 0.474,
+      "h": 0.094,
+      "tail": "none",
+      "variant": "narration"
+     },
+     "start_ms": 97020,
+     "end_ms": 99440,
+     "audio": "assets/mikey-jj/burger-shop-adventure/sentences/page-08-sentence-01.mp3",
+     "words": [
+      {
+       "text": "You",
+       "start_ms": 0,
+       "end_ms": 680
+      },
+      {
+       "text": "haven't",
+       "start_ms": 680,
+       "end_ms": 1120
+      },
+      {
+       "text": "paid",
+       "start_ms": 1120,
+       "end_ms": 1320
+      },
+      {
+       "text": "your",
+       "start_ms": 1320,
+       "end_ms": 1540
+      },
+      {
+       "text": "rent,",
+       "start_ms": 1540,
+       "end_ms": 1860
+      },
+      {
+       "text": "Mikey.",
+       "start_ms": 2080,
+       "end_ms": 2420
+      }
+     ],
+     "glossary": [
+      {
+       "term": "rent",
+       "ipa": "rent",
+       "pos": "N",
+       "zh": "租金"
+      },
+      {
+       "term": "haven",
+       "ipa": "ˈheɪvən",
+       "pos": "N",
+       "zh": "避风港"
+      }
+     ]
+    },
+    {
+     "id": "b8-p08-s02",
+     "text_en": "Time to demolish the shop.",
+     "zh": "商店；拆除。",
+     "speaker": {
+      "id": "system",
+      "label": "角色"
+     },
+     "bubble": {
+      "x": 0.436,
+      "y": 0.367,
+      "w": 0.257,
+      "h": 0.108,
+      "tail": "none",
+      "variant": "narration"
+     },
+     "start_ms": 99700,
+     "end_ms": 101160,
+     "audio": "assets/mikey-jj/burger-shop-adventure/sentences/page-08-sentence-02.mp3",
+     "words": [
+      {
+       "text": "Time",
+       "start_ms": 0,
+       "end_ms": 140
+      },
+      {
+       "text": "to",
+       "start_ms": 140,
+       "end_ms": 380
+      },
+      {
+       "text": "demolish",
+       "start_ms": 380,
+       "end_ms": 960
+      },
+      {
+       "text": "the",
+       "start_ms": 960,
+       "end_ms": 1080
+      },
+      {
+       "text": "shop.",
+       "start_ms": 1080,
+       "end_ms": 1460
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b8-p08-s03",
+     "text_en": "Wait, I can pay you in rotten flesh.",
+     "zh": "腐肉；腐烂的。",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.436,
+      "y": 0.367,
+      "w": 0.257,
+      "h": 0.108,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 101720,
+     "end_ms": 104340,
+     "audio": "assets/mikey-jj/burger-shop-adventure/sentences/page-08-sentence-03.mp3",
+     "words": [
+      {
+       "text": "Wait,",
+       "start_ms": 0,
+       "end_ms": 400
+      },
+      {
+       "text": "I",
+       "start_ms": 540,
+       "end_ms": 1040
+      },
+      {
+       "text": "can",
+       "start_ms": 1040,
+       "end_ms": 1280
+      },
+      {
+       "text": "pay",
+       "start_ms": 1280,
+       "end_ms": 1520
+      },
+      {
+       "text": "you",
+       "start_ms": 1520,
+       "end_ms": 1760
+      },
+      {
+       "text": "in",
+       "start_ms": 1760,
+       "end_ms": 1920
+      },
+      {
+       "text": "rotten",
+       "start_ms": 1920,
+       "end_ms": 2160
+      },
+      {
+       "text": "flesh.",
+       "start_ms": 2160,
+       "end_ms": 2620
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b8-p08-s04",
+     "text_en": "My business empire ruined.",
+     "zh": "生意。",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.637,
+      "y": 0.508,
+      "w": 0.186,
+      "h": 0.062,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 105940,
+     "end_ms": 108280,
+     "audio": "assets/mikey-jj/burger-shop-adventure/sentences/page-08-sentence-04.mp3",
+     "words": [
+      {
+       "text": "My",
+       "start_ms": 0,
+       "end_ms": 340
+      },
+      {
+       "text": "business",
+       "start_ms": 340,
+       "end_ms": 800
+      },
+      {
+       "text": "empire",
+       "start_ms": 800,
+       "end_ms": 1440
+      },
+      {
+       "text": "ruined.",
+       "start_ms": 1440,
+       "end_ms": 2340
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b8-p08-s05",
+     "text_en": "Everything, JJ, the curse was real.",
+     "zh": "请跟读并理解这句话。",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.637,
+      "y": 0.508,
+      "w": 0.186,
+      "h": 0.062,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 111940,
+     "end_ms": 114120,
+     "audio": "assets/mikey-jj/burger-shop-adventure/sentences/page-08-sentence-05.mp3",
+     "words": [
+      {
+       "text": "Everything,",
+       "start_ms": 0,
+       "end_ms": 280
+      },
+      {
+       "text": "JJ,",
+       "start_ms": 460,
+       "end_ms": 560
+      },
+      {
+       "text": "the",
+       "start_ms": 1060,
+       "end_ms": 1140
+      },
+      {
+       "text": "curse",
+       "start_ms": 1140,
+       "end_ms": 1360
+      },
+      {
+       "text": "was",
+       "start_ms": 1360,
+       "end_ms": 1680
+      },
+      {
+       "text": "real.",
+       "start_ms": 1680,
+       "end_ms": 2180
+      }
+     ],
+     "glossary": []
+    }
+   ],
+   "panel": [
+    0.0,
+    0.491,
+    0.505,
+    1.0
+   ]
+  },
+  {
+   "page_no": 9,
+   "source_page": 9,
+   "image": "assets/mikey-jj/burger-shop-adventure/pages/p09.webp",
+   "text_en": "Tough luck, Mikey. Cheap isn't always better. But I do need a dishwasher at my restaurant. Really? You would hire me?",
+   "start_ms": 114720,
+   "end_ms": 124380,
+   "sentences": [
+    {
+     "id": "b8-p09-s01",
+     "text_en": "Tough luck, Mikey.",
+     "zh": "请跟读并理解这句话。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.07,
+      "y": 0.215,
+      "w": 0.29,
+      "h": 0.101,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 114720,
+     "end_ms": 116060,
+     "audio": "assets/mikey-jj/burger-shop-adventure/sentences/page-09-sentence-01.mp3",
+     "words": [
+      {
+       "text": "Tough",
+       "start_ms": 0,
+       "end_ms": 460
+      },
+      {
+       "text": "luck,",
+       "start_ms": 460,
+       "end_ms": 680
+      },
+      {
+       "text": "Mikey.",
+       "start_ms": 840,
+       "end_ms": 1340
+      }
+     ],
+     "glossary": [
+      {
+       "term": "tough",
+       "ipa": "tʌf",
+       "pos": "Adj",
+       "zh": "坚硬的"
+      },
+      {
+       "term": "mikey",
+       "ipa": "ˈmaɪki",
+       "pos": "N",
+       "zh": "Mikey（人名）"
+      }
+     ]
+    },
+    {
+     "id": "b8-p09-s02",
+     "text_en": "Cheap isn't always better.",
+     "zh": "请跟读并理解这句话。",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.07,
+      "y": 0.215,
+      "w": 0.29,
+      "h": 0.101,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 116380,
+     "end_ms": 117760,
+     "audio": "assets/mikey-jj/burger-shop-adventure/sentences/page-09-sentence-02.mp3",
+     "words": [
+      {
+       "text": "Cheap",
+       "start_ms": 0,
+       "end_ms": 160
+      },
+      {
+       "text": "isn't",
+       "start_ms": 160,
+       "end_ms": 640
+      },
+      {
+       "text": "always",
+       "start_ms": 640,
+       "end_ms": 980
+      },
+      {
+       "text": "better.",
+       "start_ms": 980,
+       "end_ms": 1380
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b8-p09-s03",
+     "text_en": "But I do need a dishwasher at my restaurant.",
+     "zh": "餐厅；洗碗工。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.07,
+      "y": 0.215,
+      "w": 0.29,
+      "h": 0.101,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 118540,
+     "end_ms": 121580,
+     "audio": "assets/mikey-jj/burger-shop-adventure/sentences/page-09-sentence-03.mp3",
+     "words": [
+      {
+       "text": "But",
+       "start_ms": 0,
+       "end_ms": 380
+      },
+      {
+       "text": "I",
+       "start_ms": 380,
+       "end_ms": 1140
+      },
+      {
+       "text": "do",
+       "start_ms": 1140,
+       "end_ms": 1360
+      },
+      {
+       "text": "need",
+       "start_ms": 1360,
+       "end_ms": 1560
+      },
+      {
+       "text": "a",
+       "start_ms": 1560,
+       "end_ms": 1700
+      },
+      {
+       "text": "dishwasher",
+       "start_ms": 1700,
+       "end_ms": 2140
+      },
+      {
+       "text": "at",
+       "start_ms": 2140,
+       "end_ms": 2540
+      },
+      {
+       "text": "my",
+       "start_ms": 2540,
+       "end_ms": 2680
+      },
+      {
+       "text": "restaurant.",
+       "start_ms": 2680,
+       "end_ms": 3040
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b8-p09-s04",
+     "text_en": "Really?",
+     "zh": "请跟读并理解这句话。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.426,
+      "y": 0.532,
+      "w": 0.266,
+      "h": 0.11,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 122480,
+     "end_ms": 122980,
+     "audio": "assets/mikey-jj/burger-shop-adventure/sentences/page-09-sentence-04.mp3",
+     "words": [
+      {
+       "text": "Really?",
+       "start_ms": 0,
+       "end_ms": 500
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b8-p09-s05",
+     "text_en": "You would hire me?",
+     "zh": "请跟读并理解这句话。",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.729,
+      "y": 0.629,
+      "w": 0.223,
+      "h": 0.089,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 123400,
+     "end_ms": 124380,
+     "audio": "assets/mikey-jj/burger-shop-adventure/sentences/page-09-sentence-05.mp3",
+     "words": [
+      {
+       "text": "You",
+       "start_ms": 0,
+       "end_ms": 100
+      },
+      {
+       "text": "would",
+       "start_ms": 100,
+       "end_ms": 280
+      },
+      {
+       "text": "hire",
+       "start_ms": 280,
+       "end_ms": 580
+      },
+      {
+       "text": "me?",
+       "start_ms": 580,
+       "end_ms": 980
+      }
+     ],
+     "glossary": []
+    }
+   ],
+   "panel": [
+    0.0,
+    0.494,
+    0.509,
+    1.0
+   ]
+  },
+  {
+   "page_no": 10,
+   "source_page": 10,
+   "image": "assets/mikey-jj/burger-shop-adventure/pages/p10.webp",
+   "text_en": "This job. No ghosts and no rotten meat. Just don't eat the burgers, Mikey. We make a great team. Best burger bros forever.",
+   "start_ms": 124380,
+   "end_ms": 138130,
+   "sentences": [
+    {
+     "id": "b8-p10-s01",
+     "text_en": "This job.",
+     "zh": "请跟读并理解这句话。",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.463,
+      "y": 0.025,
+      "w": 0.516,
+      "h": 0.215,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 124380,
+     "end_ms": 127810,
+     "audio": "assets/mikey-jj/burger-shop-adventure/sentences/page-10-sentence-01.mp3",
+     "words": [
+      {
+       "text": "This",
+       "start_ms": 0,
+       "end_ms": 660
+      },
+      {
+       "text": "job.",
+       "start_ms": 3090,
+       "end_ms": 3430
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b8-p10-s02",
+     "text_en": "No ghosts and no rotten meat.",
+     "zh": "腐烂的；鬼。",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.463,
+      "y": 0.025,
+      "w": 0.516,
+      "h": 0.215,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 128410,
+     "end_ms": 130430,
+     "audio": "assets/mikey-jj/burger-shop-adventure/sentences/page-10-sentence-02.mp3",
+     "words": [
+      {
+       "text": "No",
+       "start_ms": 0,
+       "end_ms": 80
+      },
+      {
+       "text": "ghosts",
+       "start_ms": 80,
+       "end_ms": 360
+      },
+      {
+       "text": "and",
+       "start_ms": 360,
+       "end_ms": 900
+      },
+      {
+       "text": "no",
+       "start_ms": 900,
+       "end_ms": 1180
+      },
+      {
+       "text": "rotten",
+       "start_ms": 1180,
+       "end_ms": 1520
+      },
+      {
+       "text": "meat.",
+       "start_ms": 1520,
+       "end_ms": 2020
+      }
+     ],
+     "glossary": [
+      {
+       "term": "ghosts",
+       "ipa": "ɡəʊsts",
+       "pos": "N",
+       "zh": "鬼魂"
+      },
+      {
+       "term": "rotten",
+       "ipa": "ˈrɒtən",
+       "pos": "Adj",
+       "zh": "腐烂的"
+      }
+     ]
+    },
+    {
+     "id": "b8-p10-s03",
+     "text_en": "Just don't eat the burgers, Mikey.",
+     "zh": "汉堡。",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.017,
+      "y": 0.27,
+      "w": 0.469,
+      "h": 0.224,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 131130,
+     "end_ms": 133190,
+     "audio": "assets/mikey-jj/burger-shop-adventure/sentences/page-10-sentence-03.mp3",
+     "words": [
+      {
+       "text": "Just",
+       "start_ms": 0,
+       "end_ms": 380
+      },
+      {
+       "text": "don't",
+       "start_ms": 380,
+       "end_ms": 780
+      },
+      {
+       "text": "eat",
+       "start_ms": 780,
+       "end_ms": 880
+      },
+      {
+       "text": "the",
+       "start_ms": 880,
+       "end_ms": 1040
+      },
+      {
+       "text": "burgers,",
+       "start_ms": 1040,
+       "end_ms": 1320
+      },
+      {
+       "text": "Mikey.",
+       "start_ms": 1440,
+       "end_ms": 2060
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b8-p10-s04",
+     "text_en": "We make a great team.",
+     "zh": "团队。",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.017,
+      "y": 0.27,
+      "w": 0.469,
+      "h": 0.224,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 133830,
+     "end_ms": 135430,
+     "audio": "assets/mikey-jj/burger-shop-adventure/sentences/page-10-sentence-04.mp3",
+     "words": [
+      {
+       "text": "We",
+       "start_ms": 0,
+       "end_ms": 360
+      },
+      {
+       "text": "make",
+       "start_ms": 360,
+       "end_ms": 540
+      },
+      {
+       "text": "a",
+       "start_ms": 540,
+       "end_ms": 760
+      },
+      {
+       "text": "great",
+       "start_ms": 760,
+       "end_ms": 1100
+      },
+      {
+       "text": "team.",
+       "start_ms": 1100,
+       "end_ms": 1600
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b8-p10-s05",
+     "text_en": "Best burger bros forever.",
+     "zh": "汉堡。",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.017,
+      "y": 0.27,
+      "w": 0.469,
+      "h": 0.224,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 136330,
+     "end_ms": 138130,
+     "audio": "assets/mikey-jj/burger-shop-adventure/sentences/page-10-sentence-05.mp3",
+     "words": [
+      {
+       "text": "Best",
+       "start_ms": 0,
+       "end_ms": 300
+      },
+      {
+       "text": "burger",
+       "start_ms": 300,
+       "end_ms": 780
+      },
+      {
+       "text": "bros",
+       "start_ms": 780,
+       "end_ms": 1520
+      },
+      {
+       "text": "forever.",
+       "start_ms": 1520,
+       "end_ms": 1800
+      }
+     ],
+     "glossary": []
+    }
+   ],
+   "panel": [
+    0.0,
+    0.494,
+    0.505,
+    1.0
+   ]
+  }
+ ],
+ "quiz": [
+  {
+   "id": "mikey-b8-q01",
+   "type": "comprehension",
+   "concept_id": "open-hamburger-shop",
+   "source_sentence_id": "b8-p01-s01",
+   "q": "What does Mikey want to open?",
+   "prompt_en": "What does Mikey want to open?",
+   "prompt_zh": "Mikey 想开什么店？",
+   "choices": [
+    "A hamburger shop",
+    "A school",
+    "A boat",
+    "A mine"
+   ],
+   "choices_en": [
+    "A hamburger shop",
+    "A school",
+    "A boat",
+    "A mine"
+   ],
+   "choices_zh": [
+    "一家汉堡店",
+    "一所学校",
+    "一艘船",
+    "一座矿井"
+   ],
+   "answer": 0
+  },
+  {
+   "id": "mikey-b8-q02",
+   "type": "meaning-choice",
+   "term": "hamburger",
+   "source_sentence_id": "b8-p01-s01",
+   "q": "What does hamburger mean in this story?",
+   "prompt_en": "What does “hamburger” mean in this story?",
+   "prompt_zh": "在这个故事中，hamburger 是什么意思？",
+   "choices": [
+    "hamburger",
+    "apple",
+    "umbrella",
+    "pencil"
+   ],
+   "choices_en": [
+    "hamburger",
+    "apple",
+    "umbrella",
+    "pencil"
+   ],
+   "choices_zh": [
+    "汉堡包",
+    "苹果",
+    "雨伞",
+    "铅笔"
+   ],
+   "answer": 0
+  },
+  {
+   "id": "mikey-b8-q03",
+   "type": "comprehension",
+   "concept_id": "compete-for-money",
+   "source_sentence_id": "b8-p01-s03",
+   "q": "What do Mikey and JJ try to make the most of?",
+   "prompt_en": "What do Mikey and JJ try to make the most of?",
+   "prompt_zh": "Mikey 和 JJ 想赚到最多的什么？",
+   "choices": [
+    "Money",
+    "Burgers",
+    "Gold",
+    "Water"
+   ],
+   "choices_en": [
+    "Money",
+    "Burgers",
+    "Gold",
+    "Water"
+   ],
+   "choices_zh": [
+    "钱",
+    "汉堡",
+    "金子",
+    "水"
+   ],
+   "answer": 0
+  },
+  {
+   "id": "mikey-b8-fill1",
+   "type": "context-fill",
+   "term": "swamp",
+   "source_sentence_id": "b8-p02-s01",
+   "source_text_en": "Ooh, I will take the $1 swamp.",
+   "q": "Ooh, I will take the $1 ____.",
+   "prompt_en": "Ooh, I will take the $1 ____.",
+   "prompt_zh": "请跟读并理解这句话。",
+   "choices": [
+    "swamp",
+    "bargain",
+    "fresh",
+    "ingredient"
+   ],
+   "choices_zh": [],
+   "answer": 0,
+   "audio": "assets/mikey-jj/burger-shop-adventure/sentences/page-02-sentence-01.mp3",
+   "explanation": "swamp = 沼泽"
+  },
+  {
+   "id": "mikey-b8-q04",
+   "type": "comprehension",
+   "concept_id": "cursed-shop-land",
+   "source_sentence_id": "b8-p05-s02",
+   "q": "What is wrong with the land?",
+   "prompt_en": "What is wrong with the land?",
+   "prompt_zh": "这片土地有什么问题？",
+   "choices": [
+    "It is cursed",
+    "It is underwater",
+    "It is frozen",
+    "It is empty"
+   ],
+   "choices_en": [
+    "It is cursed",
+    "It is underwater",
+    "It is frozen",
+    "It is empty"
+   ],
+   "choices_zh": [
+    "它被诅咒了",
+    "它被水淹没了",
+    "它被冻住了",
+    "它是空的"
+   ],
+   "answer": 0
+  },
+  {
+   "id": "mikey-b8-q05",
+   "type": "comprehension",
+   "concept_id": "jj-hires-mikey-dishwasher",
+   "source_sentence_id": "b8-p09-s03",
+   "q": "What job does JJ offer Mikey?",
+   "prompt_en": "What job does JJ offer Mikey?",
+   "prompt_zh": "JJ 给 Mikey 提供了什么工作？",
+   "choices": [
+    "Dishwasher at the restaurant",
+    "Ship captain",
+    "Village guard",
+    "Mining teacher"
+   ],
+   "choices_en": [
+    "Dishwasher at the restaurant",
+    "Ship captain",
+    "Village guard",
+    "Mining teacher"
+   ],
+   "choices_zh": [
+    "餐厅洗碗工",
+    "船长",
+    "村庄守卫",
+    "采矿老师"
+   ],
+   "answer": 0
+  },
+  {
+   "id": "mikey-b8-listen1",
+   "type": "listen-choice",
+   "source_sentence_id": "b8-p03-s02",
+   "source_text_en": "Just in case I need to rescue him. He's here. Everyone inside!",
+   "q": "🔊 Listen. Which sentence do you hear?",
+   "prompt_en": "🔊 Listen. Which sentence do you hear?",
+   "prompt_zh": "听录音，选出你听到的句子。",
+   "choices": [
+    "Just in case I need to rescue him. He's here. Everyone inside!",
+    "I will take the million dollar hill.",
+    "Fresh beef, melted cheese, and toasted buns.",
+    "My secret ingredient is rotten flesh."
+   ],
+   "choices_zh": [
+    "营救。",
+    "请跟读并理解这句话。",
+    "请跟读并理解这句话。",
+    "腐肉；食材；腐烂的。"
+   ],
+   "answer": 0,
+   "audio": "assets/mikey-jj/burger-shop-adventure/sentences/page-03-sentence-02.mp3",
+   "explanation": "营救。"
+  },
+  {
+   "id": "mikey-b8-fill2",
+   "type": "context-fill",
+   "term": "customer",
+   "source_sentence_id": "b8-p05-s01",
+   "source_text_en": "You are scaring my customers.",
+   "q": "You are scaring my ____.",
+   "prompt_en": "You are scaring my ____.",
+   "prompt_zh": "顾客。",
+   "choices": [
+    "fresh",
+    "bargain",
+    "customer",
+    "ingredient"
+   ],
+   "choices_zh": [],
+   "answer": 2,
+   "audio": "assets/mikey-jj/burger-shop-adventure/sentences/page-05-sentence-01.mp3",
+   "explanation": "customer = 顾客"
+  },
+  {
+   "id": "mikey-b8-listen2",
+   "type": "listen-choice",
+   "source_sentence_id": "b8-p07-s05",
+   "source_text_en": "Hey, that is a premium burger.",
+   "q": "🔊 Listen. Which sentence do you hear?",
+   "prompt_en": "🔊 Listen. Which sentence do you hear?",
+   "prompt_zh": "听录音，选出你听到的句子。",
+   "choices": [
+    "My secret ingredient is rotten flesh.",
+    "I will take the million dollar hill.",
+    "I am building a fancy restaurant.",
+    "Hey, that is a premium burger."
+   ],
+   "choices_zh": [
+    "腐肉；食材；腐烂的。",
+    "请跟读并理解这句话。",
+    "餐厅。",
+    "汉堡；高级的。"
+   ],
+   "answer": 3,
+   "audio": "assets/mikey-jj/burger-shop-adventure/sentences/page-07-sentence-05.mp3",
+   "explanation": "汉堡；高级的。"
+  }
+ ],
+ "quiz_bg": "assets/mikey-jj/burger-shop-adventure/quiz-bg.webp"
+}

@@ -1,0 +1,2822 @@
+{
+ "schema_version": 1,
+ "storybook_id": "mikey-jj_godzilla-adventure",
+ "series": "mikey-jj",
+ "book": 6,
+ "series_count": 11,
+ "published_count": 10,
+ "layout": "spread_with_right_caption",
+ "title": {
+  "en": "Godzilla Adventure",
+  "zh": "哥斯拉来袭"
+ },
+ "source_note": "页图逐页视觉核对；speaker 依据气泡尾部与角色位置标注。字幕以 faster-whisper base.en VAD 词级时间为主，原子句按真实停顿拆分；Godzilla 第9页仅有画面爆炸拟声，显式标记 audio_missing，未伪造人声。源 PDF、MP3 与页图只读。",
+ "sources": {
+  "pdf": "书籍资料库/Mikey & JJ 英文冒险/PDF/Godzilla Adventure.pdf",
+  "mp3": "书籍资料库/Mikey & JJ 英文冒险/audio/Godzilla Adventure.mp3",
+  "source_video": "书籍资料库/Mikey & JJ 英文冒险/MikeyJJ Audio Books/Godzilla Adventure.mp4",
+  "derived_audio": "prj/data/storybooks-mikey-jj/source-audio/godzilla-adventure.mp3"
+ },
+ "audio": "assets/mikey-jj/godzilla-adventure/audio.mp3",
+ "audio_duration_sec": 153.749,
+ "pages": [
+  {
+   "page_no": 1,
+   "source_page": 1,
+   "image": "assets/mikey-jj/godzilla-adventure/pages/p01.webp",
+   "text_en": "What a beautiful day for crafting! Warden Ting, Godzilla is entering the chunk. He will destroy the city in one hour. We need to defend the city. I have a plan. Seven layers of defense. He's huge, JJ. We need serious security hacks. Let's build!",
+   "start_ms": 690,
+   "end_ms": 21770,
+   "sentences": [
+    {
+     "id": "b6-p01-s01",
+     "text_en": "What a beautiful day for crafting!",
+     "zh": "请跟读并理解这句话。",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.637,
+      "y": 0.042,
+      "w": 0.258,
+      "h": 0.124,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 690,
+     "end_ms": 3050,
+     "audio": "assets/mikey-jj/godzilla-adventure/sentences/page-01-sentence-01.mp3",
+     "words": [
+      {
+       "text": "What",
+       "start_ms": 0,
+       "end_ms": 580
+      },
+      {
+       "text": "a",
+       "start_ms": 580,
+       "end_ms": 720
+      },
+      {
+       "text": "beautiful",
+       "start_ms": 720,
+       "end_ms": 980
+      },
+      {
+       "text": "day",
+       "start_ms": 980,
+       "end_ms": 1600
+      },
+      {
+       "text": "for",
+       "start_ms": 1600,
+       "end_ms": 1840
+      },
+      {
+       "text": "crafting!",
+       "start_ms": 1840,
+       "end_ms": 2360
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b6-p01-s02",
+     "text_en": "Warden Ting, Godzilla is entering the chunk.",
+     "zh": "哥斯拉。",
+     "speaker": {
+      "id": "system",
+      "label": "角色"
+     },
+     "bubble": {
+      "x": 0.637,
+      "y": 0.042,
+      "w": 0.258,
+      "h": 0.124,
+      "tail": "none",
+      "variant": "narration"
+     },
+     "start_ms": 3950,
+     "end_ms": 7130,
+     "audio": "assets/mikey-jj/godzilla-adventure/sentences/page-01-sentence-02.mp3",
+     "words": [
+      {
+       "text": "Warden",
+       "start_ms": 0,
+       "end_ms": 680
+      },
+      {
+       "text": "Ting,",
+       "start_ms": 680,
+       "end_ms": 1040
+      },
+      {
+       "text": "Godzilla",
+       "start_ms": 1500,
+       "end_ms": 1960
+      },
+      {
+       "text": "is",
+       "start_ms": 1960,
+       "end_ms": 2300
+      },
+      {
+       "text": "entering",
+       "start_ms": 2300,
+       "end_ms": 2680
+      },
+      {
+       "text": "the",
+       "start_ms": 2680,
+       "end_ms": 2920
+      },
+      {
+       "text": "chunk.",
+       "start_ms": 2920,
+       "end_ms": 3180
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b6-p01-s03",
+     "text_en": "He will destroy the city in one hour.",
+     "zh": "摧毁。",
+     "speaker": {
+      "id": "system",
+      "label": "角色"
+     },
+     "bubble": {
+      "x": 0.647,
+      "y": 0.345,
+      "w": 0.294,
+      "h": 0.146,
+      "tail": "none",
+      "variant": "narration"
+     },
+     "start_ms": 7750,
+     "end_ms": 9890,
+     "audio": "assets/mikey-jj/godzilla-adventure/sentences/page-01-sentence-03.mp3",
+     "words": [
+      {
+       "text": "He",
+       "start_ms": 0,
+       "end_ms": 80
+      },
+      {
+       "text": "will",
+       "start_ms": 80,
+       "end_ms": 260
+      },
+      {
+       "text": "destroy",
+       "start_ms": 260,
+       "end_ms": 640
+      },
+      {
+       "text": "the",
+       "start_ms": 640,
+       "end_ms": 980
+      },
+      {
+       "text": "city",
+       "start_ms": 980,
+       "end_ms": 1220
+      },
+      {
+       "text": "in",
+       "start_ms": 1220,
+       "end_ms": 1520
+      },
+      {
+       "text": "one",
+       "start_ms": 1520,
+       "end_ms": 1720
+      },
+      {
+       "text": "hour.",
+       "start_ms": 1720,
+       "end_ms": 2140
+      }
+     ],
+     "glossary": [
+      {
+       "term": "destroy",
+       "ipa": "dɪˈstrɔɪ",
+       "pos": "V",
+       "zh": "摧毁"
+      }
+     ]
+    },
+    {
+     "id": "b6-p01-s04",
+     "text_en": "We need to defend the city.",
+     "zh": "防守。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.056,
+      "y": 0.638,
+      "w": 0.303,
+      "h": 0.121,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 10650,
+     "end_ms": 12510,
+     "audio": "assets/mikey-jj/godzilla-adventure/sentences/page-01-sentence-04.mp3",
+     "words": [
+      {
+       "text": "We",
+       "start_ms": 0,
+       "end_ms": 240
+      },
+      {
+       "text": "need",
+       "start_ms": 240,
+       "end_ms": 880
+      },
+      {
+       "text": "to",
+       "start_ms": 880,
+       "end_ms": 1060
+      },
+      {
+       "text": "defend",
+       "start_ms": 1060,
+       "end_ms": 1380
+      },
+      {
+       "text": "the",
+       "start_ms": 1380,
+       "end_ms": 1620
+      },
+      {
+       "text": "city.",
+       "start_ms": 1620,
+       "end_ms": 1860
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b6-p01-s05",
+     "text_en": "I have a plan.",
+     "zh": "请跟读并理解这句话。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.056,
+      "y": 0.638,
+      "w": 0.303,
+      "h": 0.121,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 12910,
+     "end_ms": 13570,
+     "audio": "assets/mikey-jj/godzilla-adventure/sentences/page-01-sentence-05.mp3",
+     "words": [
+      {
+       "text": "I",
+       "start_ms": 0,
+       "end_ms": 120
+      },
+      {
+       "text": "have",
+       "start_ms": 120,
+       "end_ms": 320
+      },
+      {
+       "text": "a",
+       "start_ms": 320,
+       "end_ms": 420
+      },
+      {
+       "text": "plan.",
+       "start_ms": 420,
+       "end_ms": 660
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b6-p01-s06",
+     "text_en": "Seven layers of defense.",
+     "zh": "防御。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.702,
+      "y": 0.643,
+      "w": 0.243,
+      "h": 0.076,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 14110,
+     "end_ms": 15250,
+     "audio": "assets/mikey-jj/godzilla-adventure/sentences/page-01-sentence-06.mp3",
+     "words": [
+      {
+       "text": "Seven",
+       "start_ms": 0,
+       "end_ms": 320
+      },
+      {
+       "text": "layers",
+       "start_ms": 320,
+       "end_ms": 660
+      },
+      {
+       "text": "of",
+       "start_ms": 660,
+       "end_ms": 920
+      },
+      {
+       "text": "defense.",
+       "start_ms": 920,
+       "end_ms": 1140
+      }
+     ],
+     "glossary": [
+      {
+       "term": "defense",
+       "ipa": "dɪˈfens",
+       "pos": "N",
+       "zh": "防御"
+      },
+      {
+       "term": "layers",
+       "ipa": "ˈleɪəz",
+       "pos": "N",
+       "zh": "层层防线"
+      }
+     ]
+    },
+    {
+     "id": "b6-p01-s07",
+     "text_en": "He's huge, JJ.",
+     "zh": "请跟读并理解这句话。",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.702,
+      "y": 0.643,
+      "w": 0.243,
+      "h": 0.076,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 16290,
+     "end_ms": 17450,
+     "audio": "assets/mikey-jj/godzilla-adventure/sentences/page-01-sentence-07.mp3",
+     "words": [
+      {
+       "text": "He's",
+       "start_ms": 0,
+       "end_ms": 440
+      },
+      {
+       "text": "huge,",
+       "start_ms": 440,
+       "end_ms": 700
+      },
+      {
+       "text": "JJ.",
+       "start_ms": 1040,
+       "end_ms": 1160
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b6-p01-s08",
+     "text_en": "We need serious security hacks.",
+     "zh": "技巧；安保。",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.702,
+      "y": 0.643,
+      "w": 0.243,
+      "h": 0.076,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 18050,
+     "end_ms": 20030,
+     "audio": "assets/mikey-jj/godzilla-adventure/sentences/page-01-sentence-08.mp3",
+     "words": [
+      {
+       "text": "We",
+       "start_ms": 0,
+       "end_ms": 200
+      },
+      {
+       "text": "need",
+       "start_ms": 200,
+       "end_ms": 380
+      },
+      {
+       "text": "serious",
+       "start_ms": 380,
+       "end_ms": 840
+      },
+      {
+       "text": "security",
+       "start_ms": 840,
+       "end_ms": 1480
+      },
+      {
+       "text": "hacks.",
+       "start_ms": 1480,
+       "end_ms": 1980
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b6-p01-s09",
+     "text_en": "Let's build!",
+     "zh": "请跟读并理解这句话。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.688,
+      "y": 0.772,
+      "w": 0.183,
+      "h": 0.086,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 20990,
+     "end_ms": 21770,
+     "audio": "assets/mikey-jj/godzilla-adventure/sentences/page-01-sentence-09.mp3",
+     "words": [
+      {
+       "text": "Let's",
+       "start_ms": 0,
+       "end_ms": 540
+      },
+      {
+       "text": "build!",
+       "start_ms": 540,
+       "end_ms": 780
+      }
+     ],
+     "glossary": []
+    }
+   ]
+  },
+  {
+   "page_no": 2,
+   "source_page": 2,
+   "image": "assets/mikey-jj/godzilla-adventure/pages/p02.webp",
+   "text_en": "Hack number one, rapid fire TNT cannons. We'll blast him back to the ocean. Hack number two, an impenetrable obsidian wall. Good. According to game logic, nothing breaks obsidian.",
+   "start_ms": 24210,
+   "end_ms": 39010,
+   "sentences": [
+    {
+     "id": "b6-p02-s01",
+     "text_en": "Hack number one, rapid fire TNT cannons.",
+     "zh": "技巧；大炮。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.361,
+      "y": 0.035,
+      "w": 0.332,
+      "h": 0.123,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 24210,
+     "end_ms": 27730,
+     "audio": "assets/mikey-jj/godzilla-adventure/sentences/page-02-sentence-01.mp3",
+     "words": [
+      {
+       "text": "Hack",
+       "start_ms": 0,
+       "end_ms": 420
+      },
+      {
+       "text": "number",
+       "start_ms": 420,
+       "end_ms": 780
+      },
+      {
+       "text": "one,",
+       "start_ms": 780,
+       "end_ms": 1220
+      },
+      {
+       "text": "rapid",
+       "start_ms": 1560,
+       "end_ms": 1820
+      },
+      {
+       "text": "fire",
+       "start_ms": 1820,
+       "end_ms": 2380
+      },
+      {
+       "text": "TNT",
+       "start_ms": 2380,
+       "end_ms": 2780
+      },
+      {
+       "text": "cannons.",
+       "start_ms": 2780,
+       "end_ms": 3520
+      }
+     ],
+     "glossary": [
+      {
+       "term": "cannon",
+       "ipa": "ˈkænən",
+       "pos": "N",
+       "zh": "大炮"
+      },
+      {
+       "term": "number",
+       "ipa": "ˈnʌmbə",
+       "pos": "N",
+       "zh": "编号"
+      }
+     ]
+    },
+    {
+     "id": "b6-p02-s02",
+     "text_en": "We'll blast him back to the ocean.",
+     "zh": "请跟读并理解这句话。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.361,
+      "y": 0.035,
+      "w": 0.332,
+      "h": 0.123,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 28250,
+     "end_ms": 29730,
+     "audio": "assets/mikey-jj/godzilla-adventure/sentences/page-02-sentence-02.mp3",
+     "words": [
+      {
+       "text": "We'll",
+       "start_ms": 0,
+       "end_ms": 200
+      },
+      {
+       "text": "blast",
+       "start_ms": 200,
+       "end_ms": 400
+      },
+      {
+       "text": "him",
+       "start_ms": 400,
+       "end_ms": 780
+      },
+      {
+       "text": "back",
+       "start_ms": 780,
+       "end_ms": 980
+      },
+      {
+       "text": "to",
+       "start_ms": 980,
+       "end_ms": 1180
+      },
+      {
+       "text": "the",
+       "start_ms": 1180,
+       "end_ms": 1300
+      },
+      {
+       "text": "ocean.",
+       "start_ms": 1300,
+       "end_ms": 1480
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b6-p02-s03",
+     "text_en": "Hack number two, an impenetrable obsidian wall.",
+     "zh": "技巧；黑曜石。",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.52,
+      "y": 0.463,
+      "w": 0.293,
+      "h": 0.139,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 29730,
+     "end_ms": 34330,
+     "audio": "assets/mikey-jj/godzilla-adventure/sentences/page-02-sentence-03.mp3",
+     "words": [
+      {
+       "text": "Hack",
+       "start_ms": 0,
+       "end_ms": 1240
+      },
+      {
+       "text": "number",
+       "start_ms": 1240,
+       "end_ms": 1640
+      },
+      {
+       "text": "two,",
+       "start_ms": 1640,
+       "end_ms": 2160
+      },
+      {
+       "text": "an",
+       "start_ms": 2520,
+       "end_ms": 2620
+      },
+      {
+       "text": "impenetrable",
+       "start_ms": 2620,
+       "end_ms": 3500
+      },
+      {
+       "text": "obsidian",
+       "start_ms": 3500,
+       "end_ms": 4180
+      },
+      {
+       "text": "wall.",
+       "start_ms": 4180,
+       "end_ms": 4600
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b6-p02-s04",
+     "text_en": "Good.",
+     "zh": "请跟读并理解这句话。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.52,
+      "y": 0.463,
+      "w": 0.293,
+      "h": 0.139,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 34950,
+     "end_ms": 35510,
+     "audio": "assets/mikey-jj/godzilla-adventure/sentences/page-02-sentence-04.mp3",
+     "words": [
+      {
+       "text": "Good.",
+       "start_ms": 0,
+       "end_ms": 560
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b6-p02-s05",
+     "text_en": "According to game logic, nothing breaks obsidian.",
+     "zh": "黑曜石。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.52,
+      "y": 0.463,
+      "w": 0.293,
+      "h": 0.139,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 36310,
+     "end_ms": 39010,
+     "audio": "assets/mikey-jj/godzilla-adventure/sentences/page-02-sentence-05.mp3",
+     "words": [
+      {
+       "text": "According",
+       "start_ms": 0,
+       "end_ms": 0
+      },
+      {
+       "text": "to",
+       "start_ms": 0,
+       "end_ms": 200
+      },
+      {
+       "text": "game",
+       "start_ms": 200,
+       "end_ms": 420
+      },
+      {
+       "text": "logic,",
+       "start_ms": 420,
+       "end_ms": 780
+      },
+      {
+       "text": "nothing",
+       "start_ms": 1360,
+       "end_ms": 1620
+      },
+      {
+       "text": "breaks",
+       "start_ms": 1620,
+       "end_ms": 1940
+      },
+      {
+       "text": "obsidian.",
+       "start_ms": 1940,
+       "end_ms": 2700
+      }
+     ],
+     "glossary": []
+    }
+   ],
+   "panel": [
+    0.0,
+    0.441,
+    0.453,
+    1.0
+   ]
+  },
+  {
+   "page_no": 3,
+   "source_page": 3,
+   "image": "assets/mikey-jj/godzilla-adventure/pages/p03.webp",
+   "text_en": "Hack number three, land mines, one step, and kaboom. Watch your step? Hack number four, poison grenades. We hold the high ground. Even monsters have health bars. This will drain him.",
+   "start_ms": 41140,
+   "end_ms": 57200,
+   "sentences": [
+    {
+     "id": "b6-p03-s01",
+     "text_en": "Hack number three, land mines, one step, and kaboom.",
+     "zh": "技巧；地雷。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.37,
+      "y": 0.019,
+      "w": 0.444,
+      "h": 0.07,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 41140,
+     "end_ms": 45700,
+     "audio": "assets/mikey-jj/godzilla-adventure/sentences/page-03-sentence-01.mp3",
+     "words": [
+      {
+       "text": "Hack",
+       "start_ms": 0,
+       "end_ms": 280
+      },
+      {
+       "text": "number",
+       "start_ms": 280,
+       "end_ms": 700
+      },
+      {
+       "text": "three,",
+       "start_ms": 700,
+       "end_ms": 1200
+      },
+      {
+       "text": "land",
+       "start_ms": 1600,
+       "end_ms": 1780
+      },
+      {
+       "text": "mines,",
+       "start_ms": 1780,
+       "end_ms": 2140
+      },
+      {
+       "text": "one",
+       "start_ms": 2900,
+       "end_ms": 3020
+      },
+      {
+       "text": "step,",
+       "start_ms": 3020,
+       "end_ms": 3400
+      },
+      {
+       "text": "and",
+       "start_ms": 3620,
+       "end_ms": 3840
+      },
+      {
+       "text": "kaboom.",
+       "start_ms": 3840,
+       "end_ms": 4560
+      }
+     ],
+     "glossary": [
+      {
+       "term": "number",
+       "ipa": "ˈnʌmbə",
+       "pos": "N",
+       "zh": "编号"
+      },
+      {
+       "term": "three",
+       "ipa": "θriː",
+       "pos": "Num",
+       "zh": "三"
+      }
+     ]
+    },
+    {
+     "id": "b6-p03-s02",
+     "text_en": "Watch your step?",
+     "zh": "请跟读并理解这句话。",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.686,
+      "y": 0.196,
+      "w": 0.228,
+      "h": 0.098,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 46460,
+     "end_ms": 47560,
+     "audio": "assets/mikey-jj/godzilla-adventure/sentences/page-03-sentence-02.mp3",
+     "words": [
+      {
+       "text": "Watch",
+       "start_ms": 0,
+       "end_ms": 520
+      },
+      {
+       "text": "your",
+       "start_ms": 520,
+       "end_ms": 700
+      },
+      {
+       "text": "step?",
+       "start_ms": 700,
+       "end_ms": 1100
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b6-p03-s03",
+     "text_en": "Hack number four, poison grenades.",
+     "zh": "技巧；手榴弹。",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.686,
+      "y": 0.196,
+      "w": 0.228,
+      "h": 0.098,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 48520,
+     "end_ms": 50680,
+     "audio": "assets/mikey-jj/godzilla-adventure/sentences/page-03-sentence-03.mp3",
+     "words": [
+      {
+       "text": "Hack",
+       "start_ms": 0,
+       "end_ms": 260
+      },
+      {
+       "text": "number",
+       "start_ms": 260,
+       "end_ms": 640
+      },
+      {
+       "text": "four,",
+       "start_ms": 640,
+       "end_ms": 1180
+      },
+      {
+       "text": "poison",
+       "start_ms": 1420,
+       "end_ms": 1900
+      },
+      {
+       "text": "grenades.",
+       "start_ms": 1900,
+       "end_ms": 2160
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b6-p03-s04",
+     "text_en": "We hold the high ground.",
+     "zh": "请跟读并理解这句话。",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.686,
+      "y": 0.196,
+      "w": 0.228,
+      "h": 0.098,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 51580,
+     "end_ms": 52720,
+     "audio": "assets/mikey-jj/godzilla-adventure/sentences/page-03-sentence-04.mp3",
+     "words": [
+      {
+       "text": "We",
+       "start_ms": 0,
+       "end_ms": 80
+      },
+      {
+       "text": "hold",
+       "start_ms": 80,
+       "end_ms": 340
+      },
+      {
+       "text": "the",
+       "start_ms": 340,
+       "end_ms": 540
+      },
+      {
+       "text": "high",
+       "start_ms": 540,
+       "end_ms": 780
+      },
+      {
+       "text": "ground.",
+       "start_ms": 780,
+       "end_ms": 1140
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b6-p03-s05",
+     "text_en": "Even monsters have health bars.",
+     "zh": "请跟读并理解这句话。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.686,
+      "y": 0.196,
+      "w": 0.228,
+      "h": 0.098,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 53520,
+     "end_ms": 55540,
+     "audio": "assets/mikey-jj/godzilla-adventure/sentences/page-03-sentence-05.mp3",
+     "words": [
+      {
+       "text": "Even",
+       "start_ms": 0,
+       "end_ms": 560
+      },
+      {
+       "text": "monsters",
+       "start_ms": 560,
+       "end_ms": 960
+      },
+      {
+       "text": "have",
+       "start_ms": 960,
+       "end_ms": 1420
+      },
+      {
+       "text": "health",
+       "start_ms": 1420,
+       "end_ms": 1660
+      },
+      {
+       "text": "bars.",
+       "start_ms": 1660,
+       "end_ms": 2020
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b6-p03-s06",
+     "text_en": "This will drain him.",
+     "zh": "请跟读并理解这句话。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.686,
+      "y": 0.196,
+      "w": 0.228,
+      "h": 0.098,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 56080,
+     "end_ms": 57200,
+     "audio": "assets/mikey-jj/godzilla-adventure/sentences/page-03-sentence-06.mp3",
+     "words": [
+      {
+       "text": "This",
+       "start_ms": 0,
+       "end_ms": 120
+      },
+      {
+       "text": "will",
+       "start_ms": 120,
+       "end_ms": 360
+      },
+      {
+       "text": "drain",
+       "start_ms": 360,
+       "end_ms": 680
+      },
+      {
+       "text": "him.",
+       "start_ms": 680,
+       "end_ms": 1120
+      }
+     ],
+     "glossary": []
+    }
+   ],
+   "panel": [
+    0.0,
+    0.495,
+    0.504,
+    1.0
+   ]
+  },
+  {
+   "page_no": 4,
+   "source_page": 4,
+   "image": "assets/mikey-jj/godzilla-adventure/pages/p04.webp",
+   "text_en": "Hack number five, the nuclear missile. Our ultimate weapon. That looks unsafe. Hack number six, the fallout bunker. Deep underground so we survive the nuke. And finally, hack number seven, mech suits. I call the green one.",
+   "start_ms": 59820,
+   "end_ms": 79020,
+   "sentences": [
+    {
+     "id": "b6-p04-s01",
+     "text_en": "Hack number five, the nuclear missile.",
+     "zh": "技巧；核导弹。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.447,
+      "y": 0.019,
+      "w": 0.311,
+      "h": 0.1,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 59820,
+     "end_ms": 62400,
+     "audio": "assets/mikey-jj/godzilla-adventure/sentences/page-04-sentence-01.mp3",
+     "words": [
+      {
+       "text": "Hack",
+       "start_ms": 0,
+       "end_ms": 140
+      },
+      {
+       "text": "number",
+       "start_ms": 140,
+       "end_ms": 560
+      },
+      {
+       "text": "five,",
+       "start_ms": 560,
+       "end_ms": 1220
+      },
+      {
+       "text": "the",
+       "start_ms": 1540,
+       "end_ms": 1680
+      },
+      {
+       "text": "nuclear",
+       "start_ms": 1680,
+       "end_ms": 2040
+      },
+      {
+       "text": "missile,",
+       "start_ms": 2040,
+       "end_ms": 2580
+      }
+     ],
+     "glossary": [
+      {
+       "term": "number",
+       "ipa": "ˈnʌmbə",
+       "pos": "N",
+       "zh": "编号"
+      }
+     ]
+    },
+    {
+     "id": "b6-p04-s02",
+     "text_en": "Our ultimate weapon.",
+     "zh": "请跟读并理解这句话。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.756,
+      "y": 0.076,
+      "w": 0.213,
+      "h": 0.078,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 62400,
+     "end_ms": 63820,
+     "audio": "assets/mikey-jj/godzilla-adventure/sentences/page-04-sentence-02.mp3",
+     "words": [
+      {
+       "text": "are",
+       "start_ms": 0,
+       "end_ms": 440
+      },
+      {
+       "text": "ultimate",
+       "start_ms": 440,
+       "end_ms": 900
+      },
+      {
+       "text": "weapon.",
+       "start_ms": 900,
+       "end_ms": 1420
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b6-p04-s03",
+     "text_en": "That looks unsafe.",
+     "zh": "安全。",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.702,
+      "y": 0.388,
+      "w": 0.273,
+      "h": 0.106,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 64480,
+     "end_ms": 66120,
+     "audio": "assets/mikey-jj/godzilla-adventure/sentences/page-04-sentence-03.mp3",
+     "words": [
+      {
+       "text": "That",
+       "start_ms": 0,
+       "end_ms": 440
+      },
+      {
+       "text": "looks",
+       "start_ms": 440,
+       "end_ms": 640
+      },
+      {
+       "text": "unsafe.",
+       "start_ms": 640,
+       "end_ms": 1640
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b6-p04-s04",
+     "text_en": "Hack number six, the fallout bunker.",
+     "zh": "地堡；技巧。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.256,
+      "y": 0.644,
+      "w": 0.324,
+      "h": 0.123,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 67200,
+     "end_ms": 69720,
+     "audio": "assets/mikey-jj/godzilla-adventure/sentences/page-04-sentence-04.mp3",
+     "words": [
+      {
+       "text": "Hack",
+       "start_ms": 0,
+       "end_ms": 260
+      },
+      {
+       "text": "number",
+       "start_ms": 260,
+       "end_ms": 600
+      },
+      {
+       "text": "six,",
+       "start_ms": 600,
+       "end_ms": 1140
+      },
+      {
+       "text": "the",
+       "start_ms": 1480,
+       "end_ms": 1600
+      },
+      {
+       "text": "fallout",
+       "start_ms": 1600,
+       "end_ms": 2020
+      },
+      {
+       "text": "bunker.",
+       "start_ms": 2020,
+       "end_ms": 2520
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b6-p04-s05",
+     "text_en": "Deep underground so we survive the nuke.",
+     "zh": "地下；核弹。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.256,
+      "y": 0.644,
+      "w": 0.324,
+      "h": 0.123,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 70200,
+     "end_ms": 72400,
+     "audio": "assets/mikey-jj/godzilla-adventure/sentences/page-04-sentence-05.mp3",
+     "words": [
+      {
+       "text": "Deep",
+       "start_ms": 0,
+       "end_ms": 80
+      },
+      {
+       "text": "underground",
+       "start_ms": 80,
+       "end_ms": 420
+      },
+      {
+       "text": "so",
+       "start_ms": 420,
+       "end_ms": 1020
+      },
+      {
+       "text": "we",
+       "start_ms": 1020,
+       "end_ms": 1220
+      },
+      {
+       "text": "survive",
+       "start_ms": 1220,
+       "end_ms": 1480
+      },
+      {
+       "text": "the",
+       "start_ms": 1480,
+       "end_ms": 1900
+      },
+      {
+       "text": "nuke.",
+       "start_ms": 1900,
+       "end_ms": 2200
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b6-p04-s06",
+     "text_en": "And finally, hack number seven, mech suits.",
+     "zh": "技巧；机甲。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.256,
+      "y": 0.644,
+      "w": 0.324,
+      "h": 0.123,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 73300,
+     "end_ms": 76540,
+     "audio": "assets/mikey-jj/godzilla-adventure/sentences/page-04-sentence-06.mp3",
+     "words": [
+      {
+       "text": "And",
+       "start_ms": 0,
+       "end_ms": 140
+      },
+      {
+       "text": "finally,",
+       "start_ms": 140,
+       "end_ms": 640
+      },
+      {
+       "text": "hack",
+       "start_ms": 1080,
+       "end_ms": 1320
+      },
+      {
+       "text": "number",
+       "start_ms": 1320,
+       "end_ms": 1600
+      },
+      {
+       "text": "seven,",
+       "start_ms": 1600,
+       "end_ms": 2320
+      },
+      {
+       "text": "mech",
+       "start_ms": 2540,
+       "end_ms": 2860
+      },
+      {
+       "text": "suits.",
+       "start_ms": 2860,
+       "end_ms": 3240
+      }
+     ],
+     "glossary": [
+      {
+       "term": "mech",
+       "ipa": "mek",
+       "pos": "N",
+       "zh": "机甲"
+      }
+     ]
+    },
+    {
+     "id": "b6-p04-s07",
+     "text_en": "I call the green one.",
+     "zh": "请跟读并理解这句话。",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.509,
+      "y": 0.733,
+      "w": 0.168,
+      "h": 0.073,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 77480,
+     "end_ms": 79020,
+     "audio": "assets/mikey-jj/godzilla-adventure/sentences/page-04-sentence-07.mp3",
+     "words": [
+      {
+       "text": "I",
+       "start_ms": 0,
+       "end_ms": 400
+      },
+      {
+       "text": "call",
+       "start_ms": 400,
+       "end_ms": 660
+      },
+      {
+       "text": "the",
+       "start_ms": 660,
+       "end_ms": 880
+      },
+      {
+       "text": "green",
+       "start_ms": 880,
+       "end_ms": 1180
+      },
+      {
+       "text": "one.",
+       "start_ms": 1180,
+       "end_ms": 1540
+      }
+     ],
+     "glossary": []
+    }
+   ],
+   "panel": [
+    0.0,
+    0.637,
+    0.644,
+    1.0
+   ]
+  },
+  {
+   "page_no": 5,
+   "source_page": 5,
+   "image": "assets/mikey-jj/godzilla-adventure/pages/p05.webp",
+   "text_en": "Here he comes. Fire the cannon. It's bouncing off him. Is he in creative mode? He's too tanky.",
+   "start_ms": 81090,
+   "end_ms": 92250,
+   "sentences": [
+    {
+     "id": "b6-p05-s01",
+     "text_en": "Here he comes.",
+     "zh": "请跟读并理解这句话。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.514,
+      "y": 0.208,
+      "w": 0.286,
+      "h": 0.109,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 81090,
+     "end_ms": 81990,
+     "audio": "assets/mikey-jj/godzilla-adventure/sentences/page-05-sentence-01.mp3",
+     "words": [
+      {
+       "text": "Here",
+       "start_ms": 0,
+       "end_ms": 360
+      },
+      {
+       "text": "he",
+       "start_ms": 360,
+       "end_ms": 500
+      },
+      {
+       "text": "comes.",
+       "start_ms": 500,
+       "end_ms": 900
+      }
+     ],
+     "glossary": [
+      {
+       "term": "comes",
+       "ipa": "kʌmz",
+       "pos": "V",
+       "zh": "来"
+      }
+     ]
+    },
+    {
+     "id": "b6-p05-s02",
+     "text_en": "Fire the cannon.",
+     "zh": "大炮。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.514,
+      "y": 0.208,
+      "w": 0.286,
+      "h": 0.109,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 82370,
+     "end_ms": 83010,
+     "audio": "assets/mikey-jj/godzilla-adventure/sentences/page-05-sentence-02.mp3",
+     "words": [
+      {
+       "text": "Fire",
+       "start_ms": 0,
+       "end_ms": 220
+      },
+      {
+       "text": "the",
+       "start_ms": 220,
+       "end_ms": 440
+      },
+      {
+       "text": "cannon.",
+       "start_ms": 440,
+       "end_ms": 640
+      }
+     ],
+     "glossary": [
+      {
+       "term": "cannon",
+       "ipa": "ˈkænən",
+       "pos": "N",
+       "zh": "大炮"
+      }
+     ]
+    },
+    {
+     "id": "b6-p05-s03",
+     "text_en": "It's bouncing off him.",
+     "zh": "弹开。",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.59,
+      "y": 0.434,
+      "w": 0.183,
+      "h": 0.079,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 86170,
+     "end_ms": 88090,
+     "audio": "assets/mikey-jj/godzilla-adventure/sentences/page-05-sentence-03.mp3",
+     "words": [
+      {
+       "text": "It's",
+       "start_ms": 0,
+       "end_ms": 720
+      },
+      {
+       "text": "bouncing",
+       "start_ms": 720,
+       "end_ms": 1000
+      },
+      {
+       "text": "off",
+       "start_ms": 1000,
+       "end_ms": 1620
+      },
+      {
+       "text": "him.",
+       "start_ms": 1620,
+       "end_ms": 1920
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b6-p05-s04",
+     "text_en": "Is he in creative mode?",
+     "zh": "创造模式。",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.59,
+      "y": 0.434,
+      "w": 0.183,
+      "h": 0.079,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 88430,
+     "end_ms": 89910,
+     "audio": "assets/mikey-jj/godzilla-adventure/sentences/page-05-sentence-04.mp3",
+     "words": [
+      {
+       "text": "Is",
+       "start_ms": 0,
+       "end_ms": 140
+      },
+      {
+       "text": "he",
+       "start_ms": 140,
+       "end_ms": 340
+      },
+      {
+       "text": "in",
+       "start_ms": 340,
+       "end_ms": 620
+      },
+      {
+       "text": "creative",
+       "start_ms": 620,
+       "end_ms": 1060
+      },
+      {
+       "text": "mode?",
+       "start_ms": 1060,
+       "end_ms": 1480
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b6-p05-s05",
+     "text_en": "He's too tanky.",
+     "zh": "很能扛。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.55,
+      "y": 0.538,
+      "w": 0.182,
+      "h": 0.066,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 90750,
+     "end_ms": 92250,
+     "audio": "assets/mikey-jj/godzilla-adventure/sentences/page-05-sentence-05.mp3",
+     "words": [
+      {
+       "text": "He's",
+       "start_ms": 0,
+       "end_ms": 520
+      },
+      {
+       "text": "too",
+       "start_ms": 520,
+       "end_ms": 740
+      },
+      {
+       "text": "tanky.",
+       "start_ms": 740,
+       "end_ms": 1500
+      }
+     ],
+     "glossary": []
+    }
+   ],
+   "panel": [
+    0.0,
+    0.663,
+    0.669,
+    1.0
+   ]
+  },
+  {
+   "page_no": 6,
+   "source_page": 6,
+   "image": "assets/mikey-jj/godzilla-adventure/pages/p06.webp",
+   "text_en": "Hey! That wall was expensive! The mines are slowing him down, but not stopping him. The mines are slowing him down, but not stopping him.",
+   "start_ms": 96660,
+   "end_ms": 103590,
+   "sentences": [
+    {
+     "id": "b6-p06-s01",
+     "text_en": "Hey! That wall was expensive! The mines are slowing him down, but not stopping him.",
+     "zh": "请跟读并理解这句话。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.031,
+      "y": 0.185,
+      "w": 0.162,
+      "h": 0.1,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 96660,
+     "end_ms": 96860,
+     "audio": "assets/mikey-jj/godzilla-adventure/sentences/page-06-sentence-01.mp3",
+     "words": [
+      {
+       "text": "Fensive.",
+       "start_ms": 0,
+       "end_ms": 200
+      }
+     ],
+     "glossary": [
+      {
+       "term": "expensive",
+       "ipa": "ɪkˈspensɪv",
+       "pos": "Adj",
+       "zh": "昂贵的"
+      },
+      {
+       "term": "mines",
+       "ipa": "maɪnz",
+       "pos": "N",
+       "zh": "地雷"
+      }
+     ]
+    },
+    {
+     "id": "b6-p06-s02",
+     "text_en": "The mines are slowing him down, but not stopping him.",
+     "zh": "请跟读并理解这句话。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.031,
+      "y": 0.185,
+      "w": 0.162,
+      "h": 0.1,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 96860,
+     "end_ms": 103590,
+     "audio": "assets/mikey-jj/godzilla-adventure/sentences/page-06-sentence-02.mp3",
+     "words": [
+      {
+       "text": "The",
+       "start_ms": 0,
+       "end_ms": 980
+      },
+      {
+       "text": "mines",
+       "start_ms": 3410,
+       "end_ms": 4090
+      },
+      {
+       "text": "are",
+       "start_ms": 4090,
+       "end_ms": 4310
+      },
+      {
+       "text": "slowing",
+       "start_ms": 4310,
+       "end_ms": 4570
+      },
+      {
+       "text": "him",
+       "start_ms": 4570,
+       "end_ms": 4850
+      },
+      {
+       "text": "down,",
+       "start_ms": 4850,
+       "end_ms": 5150
+      },
+      {
+       "text": "but",
+       "start_ms": 5530,
+       "end_ms": 5650
+      },
+      {
+       "text": "not",
+       "start_ms": 5650,
+       "end_ms": 5850
+      },
+      {
+       "text": "stopping",
+       "start_ms": 5850,
+       "end_ms": 6470
+      },
+      {
+       "text": "him.",
+       "start_ms": 6470,
+       "end_ms": 6730
+      }
+     ],
+     "glossary": []
+    }
+   ],
+   "panel": [
+    0.0,
+    0.492,
+    0.502,
+    1.0
+   ]
+  },
+  {
+   "page_no": 7,
+   "source_page": 7,
+   "image": "assets/mikey-jj/godzilla-adventure/pages/p07.webp",
+   "text_en": "Eat vegetables, monster. Jump, he's deleting the chunks.",
+   "start_ms": 105630,
+   "end_ms": 109950,
+   "sentences": [
+    {
+     "id": "b6-p07-s01",
+     "text_en": "Eat vegetables, monster.",
+     "zh": "请跟读并理解这句话。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.753,
+      "y": 0.046,
+      "w": 0.182,
+      "h": 0.085,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 105630,
+     "end_ms": 107130,
+     "audio": "assets/mikey-jj/godzilla-adventure/sentences/page-07-sentence-01.mp3",
+     "words": [
+      {
+       "text": "Eat",
+       "start_ms": 0,
+       "end_ms": 360
+      },
+      {
+       "text": "vegetables,",
+       "start_ms": 360,
+       "end_ms": 900
+      },
+      {
+       "text": "monster.",
+       "start_ms": 1020,
+       "end_ms": 1500
+      }
+     ],
+     "glossary": [
+      {
+       "term": "vegetables",
+       "ipa": "ˈvedʒtəbəlz",
+       "pos": "N",
+       "zh": "蔬菜"
+      },
+      {
+       "term": "monster",
+       "ipa": "ˈmɒnstə",
+       "pos": "N",
+       "zh": "怪物"
+      }
+     ]
+    },
+    {
+     "id": "b6-p07-s02",
+     "text_en": "Jump, he's deleting the chunks.",
+     "zh": "请跟读并理解这句话。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.755,
+      "y": 0.675,
+      "w": 0.185,
+      "h": 0.104,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 108310,
+     "end_ms": 109950,
+     "audio": "assets/mikey-jj/godzilla-adventure/sentences/page-07-sentence-02.mp3",
+     "words": [
+      {
+       "text": "Jump,",
+       "start_ms": 0,
+       "end_ms": 400
+      },
+      {
+       "text": "he's",
+       "start_ms": 640,
+       "end_ms": 820
+      },
+      {
+       "text": "deleting",
+       "start_ms": 820,
+       "end_ms": 1160
+      },
+      {
+       "text": "the",
+       "start_ms": 1160,
+       "end_ms": 1420
+      },
+      {
+       "text": "chunks.",
+       "start_ms": 1420,
+       "end_ms": 1640
+      }
+     ],
+     "glossary": []
+    }
+   ],
+   "panel": [
+    0.0,
+    0.655,
+    0.665,
+    1.0
+   ]
+  },
+  {
+   "page_no": 8,
+   "source_page": 8,
+   "image": "assets/mikey-jj/godzilla-adventure/pages/p08.webp",
+   "text_en": "To the bunker, quick. Nothing is working. We have to use hack number five. Goodbye, Godzilla.",
+   "start_ms": 115820,
+   "end_ms": 123380,
+   "sentences": [
+    {
+     "id": "b6-p08-s01",
+     "text_en": "To the bunker, quick.",
+     "zh": "地堡。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.029,
+      "y": 0.159,
+      "w": 0.27,
+      "h": 0.089,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 115820,
+     "end_ms": 117240,
+     "audio": "assets/mikey-jj/godzilla-adventure/sentences/page-08-sentence-01.mp3",
+     "words": [
+      {
+       "text": "To",
+       "start_ms": 0,
+       "end_ms": 500
+      },
+      {
+       "text": "the",
+       "start_ms": 500,
+       "end_ms": 580
+      },
+      {
+       "text": "bunker,",
+       "start_ms": 580,
+       "end_ms": 800
+      },
+      {
+       "text": "quick.",
+       "start_ms": 1240,
+       "end_ms": 1420
+      }
+     ],
+     "glossary": [
+      {
+       "term": "bunker",
+       "ipa": "ˈbʌŋkə",
+       "pos": "N",
+       "zh": "地堡"
+      },
+      {
+       "term": "quick",
+       "ipa": "kwɪk",
+       "pos": "Adj",
+       "zh": "快速的"
+      }
+     ]
+    },
+    {
+     "id": "b6-p08-s02",
+     "text_en": "Nothing is working.",
+     "zh": "国王。",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.46,
+      "y": 0.081,
+      "w": 0.28,
+      "h": 0.139,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 117940,
+     "end_ms": 119080,
+     "audio": "assets/mikey-jj/godzilla-adventure/sentences/page-08-sentence-02.mp3",
+     "words": [
+      {
+       "text": "Nothing",
+       "start_ms": 0,
+       "end_ms": 440
+      },
+      {
+       "text": "is",
+       "start_ms": 440,
+       "end_ms": 740
+      },
+      {
+       "text": "working.",
+       "start_ms": 740,
+       "end_ms": 1140
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b6-p08-s03",
+     "text_en": "We have to use hack number five.",
+     "zh": "技巧。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.46,
+      "y": 0.081,
+      "w": 0.28,
+      "h": 0.139,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 119700,
+     "end_ms": 121800,
+     "audio": "assets/mikey-jj/godzilla-adventure/sentences/page-08-sentence-03.mp3",
+     "words": [
+      {
+       "text": "We",
+       "start_ms": 0,
+       "end_ms": 80
+      },
+      {
+       "text": "have",
+       "start_ms": 80,
+       "end_ms": 320
+      },
+      {
+       "text": "to",
+       "start_ms": 320,
+       "end_ms": 540
+      },
+      {
+       "text": "use",
+       "start_ms": 540,
+       "end_ms": 820
+      },
+      {
+       "text": "hack",
+       "start_ms": 820,
+       "end_ms": 1120
+      },
+      {
+       "text": "number",
+       "start_ms": 1120,
+       "end_ms": 1500
+      },
+      {
+       "text": "five.",
+       "start_ms": 1500,
+       "end_ms": 2100
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b6-p08-s04",
+     "text_en": "Goodbye, Godzilla.",
+     "zh": "哥斯拉。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.195,
+      "y": 0.577,
+      "w": 0.284,
+      "h": 0.085,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 122520,
+     "end_ms": 123380,
+     "audio": "assets/mikey-jj/godzilla-adventure/sentences/page-08-sentence-04.mp3",
+     "words": [
+      {
+       "text": "Goodbye,",
+       "start_ms": 0,
+       "end_ms": 300
+      },
+      {
+       "text": "Godzilla.",
+       "start_ms": 640,
+       "end_ms": 860
+      }
+     ],
+     "glossary": []
+    }
+   ],
+   "panel": [
+    0.0,
+    0.49,
+    0.498,
+    1.0
+   ]
+  },
+  {
+   "page_no": 9,
+   "source_page": 9,
+   "image": "assets/mikey-jj/godzilla-adventure/pages/p09.webp",
+   "text_en": "KABOOM! The nuclear blast fills the sky.",
+   "start_ms": 123380,
+   "end_ms": 136980,
+   "sentences": [
+    {
+     "id": "b6-p09-s01",
+     "text_en": "KABOOM! The nuclear blast fills the sky.",
+     "zh": "轰隆！核爆照亮了天空。",
+     "speaker": {
+      "id": "system",
+      "label": "画面音效"
+     },
+     "bubble": {
+      "x": 0.114,
+      "y": 0.113,
+      "w": 0.507,
+      "h": 0.209,
+      "tail": "none",
+      "variant": "narration"
+     },
+     "start_ms": 123380,
+     "end_ms": 136980,
+     "audio": null,
+     "audio_missing_reason": "本页只有漫画爆炸拟声，没有对应人声朗读。",
+     "words": [
+      {
+       "text": "KABOOM!",
+       "start_ms": 0,
+       "end_ms": 0
+      }
+     ],
+     "glossary": [
+      {
+       "term": "nuclear",
+       "ipa": "ˈnjuːkliə",
+       "pos": "Adj",
+       "zh": "核能的"
+      },
+      {
+       "term": "blast",
+       "ipa": "blɑːst",
+       "pos": "V",
+       "zh": "猛轰"
+      },
+      {
+       "term": "kaboom",
+       "ipa": "kəˈbuːm",
+       "pos": "Interj",
+       "zh": "轰隆"
+      }
+     ]
+    }
+   ],
+   "panel": [
+    0.0,
+    0.541,
+    0.69,
+    1.0
+   ]
+  },
+  {
+   "page_no": 10,
+   "source_page": 10,
+   "image": "assets/mikey-jj/godzilla-adventure/pages/p10.webp",
+   "text_en": "Is he gone? Did we win? Looks like the nuke did the trick. He despawned. Wait, so we didn't need the mech suit? Nope, but they look cool. Let's go find the Ender Dragon.",
+   "start_ms": 137280,
+   "end_ms": 151420,
+   "sentences": [
+    {
+     "id": "b6-p10-s01",
+     "text_en": "Is he gone?",
+     "zh": "请跟读并理解这句话。",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.312,
+      "y": 0.012,
+      "w": 0.204,
+      "h": 0.089,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 137280,
+     "end_ms": 138060,
+     "audio": "assets/mikey-jj/godzilla-adventure/sentences/page-10-sentence-01.mp3",
+     "words": [
+      {
+       "text": "Is",
+       "start_ms": 0,
+       "end_ms": 320
+      },
+      {
+       "text": "he",
+       "start_ms": 320,
+       "end_ms": 480
+      },
+      {
+       "text": "gone?",
+       "start_ms": 480,
+       "end_ms": 780
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b6-p10-s02",
+     "text_en": "Did we win?",
+     "zh": "请跟读并理解这句话。",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.53,
+      "y": 0.061,
+      "w": 0.295,
+      "h": 0.099,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 138540,
+     "end_ms": 139120,
+     "audio": "assets/mikey-jj/godzilla-adventure/sentences/page-10-sentence-02.mp3",
+     "words": [
+      {
+       "text": "Did",
+       "start_ms": 0,
+       "end_ms": 80
+      },
+      {
+       "text": "we",
+       "start_ms": 80,
+       "end_ms": 300
+      },
+      {
+       "text": "win?",
+       "start_ms": 300,
+       "end_ms": 580
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b6-p10-s03",
+     "text_en": "Looks like the nuke did the trick.",
+     "zh": "核弹。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.119,
+      "y": 0.558,
+      "w": 0.249,
+      "h": 0.108,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 139800,
+     "end_ms": 141460,
+     "audio": "assets/mikey-jj/godzilla-adventure/sentences/page-10-sentence-03.mp3",
+     "words": [
+      {
+       "text": "Looks",
+       "start_ms": 0,
+       "end_ms": 300
+      },
+      {
+       "text": "like",
+       "start_ms": 300,
+       "end_ms": 600
+      },
+      {
+       "text": "the",
+       "start_ms": 600,
+       "end_ms": 780
+      },
+      {
+       "text": "nuke",
+       "start_ms": 780,
+       "end_ms": 1060
+      },
+      {
+       "text": "did",
+       "start_ms": 1060,
+       "end_ms": 1240
+      },
+      {
+       "text": "the",
+       "start_ms": 1240,
+       "end_ms": 1400
+      },
+      {
+       "text": "trick.",
+       "start_ms": 1400,
+       "end_ms": 1660
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b6-p10-s04",
+     "text_en": "He despawned.",
+     "zh": "消失。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.119,
+      "y": 0.558,
+      "w": 0.249,
+      "h": 0.108,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 142000,
+     "end_ms": 142900,
+     "audio": "assets/mikey-jj/godzilla-adventure/sentences/page-10-sentence-04.mp3",
+     "words": [
+      {
+       "text": "He",
+       "start_ms": 0,
+       "end_ms": 80
+      },
+      {
+       "text": "despond.",
+       "start_ms": 80,
+       "end_ms": 900
+      }
+     ],
+     "glossary": [
+      {
+       "term": "despawn",
+       "ipa": "diːˈspɔːn",
+       "pos": "V",
+       "zh": "消失（游戏词）"
+      }
+     ]
+    },
+    {
+     "id": "b6-p10-s05",
+     "text_en": "Wait, so we didn't need the mech suit?",
+     "zh": "机甲。",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.119,
+      "y": 0.558,
+      "w": 0.249,
+      "h": 0.108,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 144180,
+     "end_ms": 146640,
+     "audio": "assets/mikey-jj/godzilla-adventure/sentences/page-10-sentence-05.mp3",
+     "words": [
+      {
+       "text": "Wait,",
+       "start_ms": 0,
+       "end_ms": 600
+      },
+      {
+       "text": "so",
+       "start_ms": 880,
+       "end_ms": 1180
+      },
+      {
+       "text": "we",
+       "start_ms": 1180,
+       "end_ms": 1360
+      },
+      {
+       "text": "didn't",
+       "start_ms": 1360,
+       "end_ms": 1680
+      },
+      {
+       "text": "need",
+       "start_ms": 1680,
+       "end_ms": 1860
+      },
+      {
+       "text": "the",
+       "start_ms": 1860,
+       "end_ms": 2020
+      },
+      {
+       "text": "mech",
+       "start_ms": 2020,
+       "end_ms": 2180
+      },
+      {
+       "text": "suit?",
+       "start_ms": 2180,
+       "end_ms": 2460
+      }
+     ],
+     "glossary": [
+      {
+       "term": "mech",
+       "ipa": "mek",
+       "pos": "N",
+       "zh": "机甲"
+      }
+     ]
+    },
+    {
+     "id": "b6-p10-s06",
+     "text_en": "Nope, but they look cool.",
+     "zh": "请跟读并理解这句话。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.119,
+      "y": 0.558,
+      "w": 0.249,
+      "h": 0.108,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 146640,
+     "end_ms": 149180,
+     "audio": "assets/mikey-jj/godzilla-adventure/sentences/page-10-sentence-06.mp3",
+     "words": [
+      {
+       "text": "Nope,",
+       "start_ms": 0,
+       "end_ms": 1060
+      },
+      {
+       "text": "but",
+       "start_ms": 1060,
+       "end_ms": 1600
+      },
+      {
+       "text": "they",
+       "start_ms": 1600,
+       "end_ms": 1800
+      },
+      {
+       "text": "look",
+       "start_ms": 1800,
+       "end_ms": 2100
+      },
+      {
+       "text": "cool.",
+       "start_ms": 2100,
+       "end_ms": 2540
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b6-p10-s07",
+     "text_en": "Let's go find the Ender Dragon.",
+     "zh": "末影龙。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.572,
+      "y": 0.564,
+      "w": 0.311,
+      "h": 0.106,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 149680,
+     "end_ms": 151420,
+     "audio": "assets/mikey-jj/godzilla-adventure/sentences/page-10-sentence-07.mp3",
+     "words": [
+      {
+       "text": "Let's",
+       "start_ms": 0,
+       "end_ms": 240
+      },
+      {
+       "text": "go",
+       "start_ms": 240,
+       "end_ms": 360
+      },
+      {
+       "text": "find",
+       "start_ms": 360,
+       "end_ms": 700
+      },
+      {
+       "text": "the",
+       "start_ms": 700,
+       "end_ms": 860
+      },
+      {
+       "text": "Ender",
+       "start_ms": 860,
+       "end_ms": 1160
+      },
+      {
+       "text": "Dragon.",
+       "start_ms": 1160,
+       "end_ms": 1740
+      }
+     ],
+     "glossary": []
+    }
+   ],
+   "panel": [
+    0.0,
+    0.492,
+    0.503,
+    1.0
+   ]
+  }
+ ],
+ "quiz": [
+  {
+   "id": "mikey-b6-q01",
+   "type": "comprehension",
+   "concept_id": "godzilla-threatens-city",
+   "source_sentence_ids": [
+    "b6-p01-s02",
+    "b6-p01-s03"
+   ],
+   "q": "What is happening at the start of the story?",
+   "choices": [
+    "Godzilla is entering the city",
+    "They are going on a picnic",
+    "The school is closed",
+    "They are looking for a pet"
+   ],
+   "prompt_en": "What is happening at the start of the story?",
+   "prompt_zh": "故事开始时发生了什么？",
+   "choices_en": [
+    "Godzilla is entering the city",
+    "They are going on a picnic",
+    "The school is closed",
+    "They are looking for a pet"
+   ],
+   "choices_zh": [
+    "Godzilla 正在进入城市",
+    "他们要去野餐",
+    "学校关门了",
+    "他们正在寻找宠物"
+   ],
+   "answer": 0
+  },
+  {
+   "id": "mikey-b6-q02",
+   "type": "meaning-choice",
+   "term": "destroy",
+   "source_sentence_id": "b6-p01-s03",
+   "q": "What does \"destroy\" mean in this story?",
+   "choices": [
+    "destroy",
+    "apple",
+    "umbrella",
+    "pencil"
+   ],
+   "prompt_en": "What does \"destroy\" mean in this story?",
+   "prompt_zh": "在这个故事中，\"destroy\" 是什么意思？",
+   "choices_en": [
+    "destroy",
+    "apple",
+    "umbrella",
+    "pencil"
+   ],
+   "choices_zh": [
+    "摧毁",
+    "苹果",
+    "雨伞",
+    "铅笔"
+   ],
+   "answer": 0
+  },
+  {
+   "id": "mikey-b6-q03",
+   "type": "comprehension",
+   "concept_id": "mikey-jj-defend-city",
+   "source_sentence_ids": [
+    "b6-p01-s04",
+    "b6-p01-s05"
+   ],
+   "q": "Who helps defend the city?",
+   "choices": [
+    "Mikey and JJ",
+    "A cat",
+    "The principal",
+    "A wandering trader"
+   ],
+   "prompt_en": "Who helps defend the city?",
+   "prompt_zh": "谁帮助保卫城市？",
+   "choices_en": [
+    "Mikey and JJ",
+    "A cat",
+    "The principal",
+    "A wandering trader"
+   ],
+   "choices_zh": [
+    "Mikey 和 JJ",
+    "一只猫",
+    "校长",
+    "陌生商人"
+   ],
+   "answer": 0
+  },
+  {
+   "id": "mikey-b6-fill1",
+   "type": "context-fill",
+   "term": "defense",
+   "source_sentence_id": "b6-p01-s06",
+   "source_text_en": "Seven layers of defense.",
+   "q": "Seven layers of ____.",
+   "prompt_en": "Seven layers of ____.",
+   "prompt_zh": "防御。",
+   "choices": [
+    "cannon",
+    "layers",
+    "defense",
+    "number"
+   ],
+   "choices_zh": [],
+   "answer": 2,
+   "audio": "assets/mikey-jj/godzilla-adventure/sentences/page-01-sentence-06.mp3",
+   "explanation": "defense = 防御"
+  },
+  {
+   "id": "mikey-b6-q04",
+   "type": "comprehension",
+   "concept_id": "seven-layers-of-defense",
+   "source_sentence_ids": [
+    "b6-p01-s05",
+    "b6-p01-s06"
+   ],
+   "q": "How many layers of defense do they plan?",
+   "choices": [
+    "Seven",
+    "Two",
+    "Ten",
+    "None"
+   ],
+   "prompt_en": "How many layers of defense do they plan?",
+   "prompt_zh": "他们计划设置几层防御？",
+   "choices_en": [
+    "Seven",
+    "Two",
+    "Ten",
+    "None"
+   ],
+   "choices_zh": [
+    "七层",
+    "两层",
+    "十层",
+    "没有"
+   ],
+   "answer": 0
+  },
+  {
+   "id": "mikey-b6-q05",
+   "type": "comprehension",
+   "concept_id": "nuke-makes-godzilla-despawn",
+   "source_sentence_ids": [
+    "b6-p10-s03",
+    "b6-p10-s04"
+   ],
+   "q": "How does the adventure end?",
+   "choices": [
+    "The nuke makes Godzilla despawn",
+    "Everyone gives up",
+    "The book disappears",
+    "They forget the lesson"
+   ],
+   "prompt_en": "How does the adventure end?",
+   "prompt_zh": "冒险最后如何结束？",
+   "choices_en": [
+    "The nuke makes Godzilla despawn",
+    "Everyone gives up",
+    "The book disappears",
+    "They forget the lesson"
+   ],
+   "choices_zh": [
+    "核弹让 Godzilla 消失了",
+    "大家放弃了",
+    "书消失了",
+    "他们忘记了教训"
+   ],
+   "answer": 0
+  },
+  {
+   "id": "mikey-b6-listen1",
+   "type": "listen-choice",
+   "source_sentence_id": "b6-p02-s03",
+   "source_text_en": "Hack number two, an impenetrable obsidian wall.",
+   "q": "🔊 Listen. Which sentence do you hear?",
+   "prompt_en": "🔊 Listen. Which sentence do you hear?",
+   "prompt_zh": "听录音，选出你听到的句子。",
+   "choices": [
+    "Warden Ting, Godzilla is entering the chunk.",
+    "What a beautiful day for crafting!",
+    "Hack number two, an impenetrable obsidian wall.",
+    "We need serious security hacks."
+   ],
+   "choices_zh": [
+    "哥斯拉。",
+    "请跟读并理解这句话。",
+    "技巧；黑曜石。",
+    "技巧；安保。"
+   ],
+   "answer": 2,
+   "audio": "assets/mikey-jj/godzilla-adventure/sentences/page-02-sentence-03.mp3",
+   "explanation": "技巧；黑曜石。"
+  },
+  {
+   "id": "mikey-b6-fill2",
+   "type": "context-fill",
+   "term": "mech",
+   "source_sentence_id": "b6-p04-s06",
+   "source_text_en": "And finally, hack number seven, mech suits.",
+   "q": "And finally, hack number seven, ____ suits.",
+   "prompt_en": "And finally, hack number seven, ____ suits.",
+   "prompt_zh": "技巧；机甲。",
+   "choices": [
+    "mech",
+    "layers",
+    "cannon",
+    "number"
+   ],
+   "choices_zh": [],
+   "answer": 0,
+   "audio": "assets/mikey-jj/godzilla-adventure/sentences/page-04-sentence-06.mp3",
+   "explanation": "mech = 机甲"
+  },
+  {
+   "id": "mikey-b6-listen2",
+   "type": "listen-choice",
+   "source_sentence_id": "b6-p06-s02",
+   "source_text_en": "The mines are slowing him down, but not stopping him.",
+   "q": "🔊 Listen. Which sentence do you hear?",
+   "prompt_en": "🔊 Listen. Which sentence do you hear?",
+   "prompt_zh": "听录音，选出你听到的句子。",
+   "choices": [
+    "What a beautiful day for crafting!",
+    "The mines are slowing him down, but not stopping him.",
+    "Warden Ting, Godzilla is entering the chunk.",
+    "We need serious security hacks."
+   ],
+   "choices_zh": [
+    "请跟读并理解这句话。",
+    "请跟读并理解这句话。",
+    "哥斯拉。",
+    "技巧；安保。"
+   ],
+   "answer": 1,
+   "audio": "assets/mikey-jj/godzilla-adventure/sentences/page-06-sentence-02.mp3",
+   "explanation": "请跟读并理解这句话。"
+  }
+ ],
+ "quiz_bg": "assets/mikey-jj/godzilla-adventure/quiz-bg.webp"
+}

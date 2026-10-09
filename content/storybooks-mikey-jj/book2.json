@@ -1,0 +1,3235 @@
+{
+ "schema_version": 1,
+ "storybook_id": "mikey-jj_water-house-adventure",
+ "series": "mikey-jj",
+ "book": 2,
+ "series_count": 11,
+ "published_count": 2,
+ "layout": "spread_with_right_caption",
+ "title": {
+  "en": "Water House Adventure",
+  "zh": "水上之家大冒险"
+ },
+ "source_note": "每页气泡文本经 Windows OCR 转写，并与 faster-whisper base.en 词级时间戳交叉核对（VAD 与非 VAD 两次转写）；句末标点与个别误识词（如第9页 swam away fast vs ASR from fat）以漫画画面为准。所有 start_ms/end_ms 为真实语音词边界；句音频由同名 MP3 按真实边界切片。源媒体只读，漫画整页未裁剪。",
+ "sources": {
+  "pdf": "书籍资料库/Mikey & JJ 英文冒险/PDF/Water House Adventure.pdf",
+  "mp3": "书籍资料库/Mikey & JJ 英文冒险/audio/Water House Adventure.mp3",
+  "source_video": "书籍资料库/Mikey & JJ 英文冒险/MikeyJJ Audio Books/Water House Adventure.mp4",
+  "derived_audio": "prj/data/storybooks-mikey-jj/source-audio/water-house-adventure.mp3"
+ },
+ "audio": "assets/mikey-jj/water-house-adventure/audio.mp3",
+ "audio_duration_sec": 130.795,
+ "pages": [
+  {
+   "page_no": 1,
+   "source_page": 1,
+   "image": "assets/mikey-jj/water-house-adventure/pages/p01.webp",
+   "text_en": "Warning! The sea level is rising. The world will flood! This is a disaster! We must build shelters immediately. The news was terrible. The ice was melting fast. I will build a tower on sturdy pillars. I will build a raft. It will float on the waves! They had to work quickly to save themselves.",
+   "start_ms": 460,
+   "end_ms": 23680,
+   "sentences": [
+    {
+     "id": "b2-p01-s01",
+     "text_en": "Warning!",
+     "zh": "警告！",
+     "speaker": {
+      "id": "narrator",
+      "label": "旁白"
+     },
+     "bubble": {
+      "x": 0.28,
+      "y": 0.027,
+      "w": 0.277,
+      "h": 0.137,
+      "tail": "none",
+      "variant": "narration"
+     },
+     "start_ms": 460,
+     "end_ms": 1240,
+     "audio": "assets/mikey-jj/water-house-adventure/sentences/page-01-sentence-01.mp3",
+     "words": [
+      {
+       "text": "Warning!",
+       "start_ms": 0,
+       "end_ms": 780
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b2-p01-s02",
+     "text_en": "The sea level is rising.",
+     "zh": "海平面正在上升。",
+     "speaker": {
+      "id": "narrator",
+      "label": "旁白"
+     },
+     "bubble": {
+      "x": 0.28,
+      "y": 0.027,
+      "w": 0.277,
+      "h": 0.137,
+      "tail": "none",
+      "variant": "narration"
+     },
+     "start_ms": 1680,
+     "end_ms": 2780,
+     "audio": "assets/mikey-jj/water-house-adventure/sentences/page-01-sentence-02.mp3",
+     "words": [
+      {
+       "text": "The",
+       "start_ms": 0,
+       "end_ms": 0
+      },
+      {
+       "text": "sea",
+       "start_ms": 0,
+       "end_ms": 220
+      },
+      {
+       "text": "level",
+       "start_ms": 220,
+       "end_ms": 540
+      },
+      {
+       "text": "is",
+       "start_ms": 540,
+       "end_ms": 820
+      },
+      {
+       "text": "rising.",
+       "start_ms": 820,
+       "end_ms": 1100
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b2-p01-s03",
+     "text_en": "The world will flood!",
+     "zh": "世界将被洪水淹没！",
+     "speaker": {
+      "id": "narrator",
+      "label": "旁白"
+     },
+     "bubble": {
+      "x": 0.28,
+      "y": 0.027,
+      "w": 0.277,
+      "h": 0.137,
+      "tail": "none",
+      "variant": "narration"
+     },
+     "start_ms": 3380,
+     "end_ms": 4340,
+     "audio": "assets/mikey-jj/water-house-adventure/sentences/page-01-sentence-03.mp3",
+     "words": [
+      {
+       "text": "The",
+       "start_ms": 0,
+       "end_ms": 20
+      },
+      {
+       "text": "world",
+       "start_ms": 20,
+       "end_ms": 320
+      },
+      {
+       "text": "will",
+       "start_ms": 320,
+       "end_ms": 660
+      },
+      {
+       "text": "flood!",
+       "start_ms": 660,
+       "end_ms": 960,
+       "term": "flood",
+       "zh": "洪水"
+      }
+     ],
+     "glossary": [
+      {
+       "term": "flood",
+       "ipa": "flʌd",
+       "pos": "N",
+       "zh": "洪水"
+      }
+     ]
+    },
+    {
+     "id": "b2-p01-s04",
+     "text_en": "This is a disaster!",
+     "zh": "这是一场灾难！",
+     "speaker": {
+      "id": "narrator",
+      "label": "旁白"
+     },
+     "bubble": {
+      "x": 0.602,
+      "y": 0.023,
+      "w": 0.366,
+      "h": 0.115,
+      "tail": "none",
+      "variant": "narration"
+     },
+     "start_ms": 5160,
+     "end_ms": 6300,
+     "audio": "assets/mikey-jj/water-house-adventure/sentences/page-01-sentence-04.mp3",
+     "words": [
+      {
+       "text": "This",
+       "start_ms": 0,
+       "end_ms": 460
+      },
+      {
+       "text": "is",
+       "start_ms": 460,
+       "end_ms": 600
+      },
+      {
+       "text": "a",
+       "start_ms": 600,
+       "end_ms": 740
+      },
+      {
+       "text": "disaster!",
+       "start_ms": 740,
+       "end_ms": 1140,
+       "term": "disaster",
+       "zh": "灾难"
+      }
+     ],
+     "glossary": [
+      {
+       "term": "disaster",
+       "ipa": "dɪˈzɑːstə(r)",
+       "pos": "N",
+       "zh": "灾难"
+      }
+     ]
+    },
+    {
+     "id": "b2-p01-s05",
+     "text_en": "We must build shelters immediately.",
+     "zh": "我们必须立即建造避难所。",
+     "speaker": {
+      "id": "narrator",
+      "label": "旁白"
+     },
+     "bubble": {
+      "x": 0.602,
+      "y": 0.023,
+      "w": 0.366,
+      "h": 0.115,
+      "tail": "none",
+      "variant": "narration"
+     },
+     "start_ms": 6980,
+     "end_ms": 8660,
+     "audio": "assets/mikey-jj/water-house-adventure/sentences/page-01-sentence-05.mp3",
+     "words": [
+      {
+       "text": "We",
+       "start_ms": 0,
+       "end_ms": 60
+      },
+      {
+       "text": "must",
+       "start_ms": 60,
+       "end_ms": 260
+      },
+      {
+       "text": "build",
+       "start_ms": 260,
+       "end_ms": 660
+      },
+      {
+       "text": "shelters",
+       "start_ms": 660,
+       "end_ms": 940
+      },
+      {
+       "text": "immediately.",
+       "start_ms": 940,
+       "end_ms": 1680
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b2-p01-s06",
+     "text_en": "The news was terrible.",
+     "zh": "新闻糟透了。",
+     "speaker": {
+      "id": "narrator",
+      "label": "旁白"
+     },
+     "bubble": {
+      "x": 0.039,
+      "y": 0.394,
+      "w": 0.391,
+      "h": 0.083,
+      "tail": "none",
+      "variant": "narration"
+     },
+     "start_ms": 9940,
+     "end_ms": 11120,
+     "audio": "assets/mikey-jj/water-house-adventure/sentences/page-01-sentence-06.mp3",
+     "words": [
+      {
+       "text": "The",
+       "start_ms": 0,
+       "end_ms": 140
+      },
+      {
+       "text": "news",
+       "start_ms": 140,
+       "end_ms": 400
+      },
+      {
+       "text": "was",
+       "start_ms": 400,
+       "end_ms": 760
+      },
+      {
+       "text": "terrible.",
+       "start_ms": 760,
+       "end_ms": 1180
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b2-p01-s07",
+     "text_en": "The ice was melting fast.",
+     "zh": "冰正在快速融化。",
+     "speaker": {
+      "id": "narrator",
+      "label": "旁白"
+     },
+     "bubble": {
+      "x": 0.039,
+      "y": 0.394,
+      "w": 0.391,
+      "h": 0.083,
+      "tail": "none",
+      "variant": "narration"
+     },
+     "start_ms": 11820,
+     "end_ms": 13200,
+     "audio": "assets/mikey-jj/water-house-adventure/sentences/page-01-sentence-07.mp3",
+     "words": [
+      {
+       "text": "The",
+       "start_ms": 0,
+       "end_ms": 40
+      },
+      {
+       "text": "ice",
+       "start_ms": 40,
+       "end_ms": 300
+      },
+      {
+       "text": "was",
+       "start_ms": 300,
+       "end_ms": 560
+      },
+      {
+       "text": "melting",
+       "start_ms": 560,
+       "end_ms": 800
+      },
+      {
+       "text": "fast.",
+       "start_ms": 800,
+       "end_ms": 1380
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b2-p01-s08",
+     "text_en": "I will build a tower on sturdy pillars.",
+     "zh": "我要在坚固的柱子上建一座塔。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.383,
+      "y": 0.546,
+      "w": 0.287,
+      "h": 0.113,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 14000,
+     "end_ms": 16520,
+     "audio": "assets/mikey-jj/water-house-adventure/sentences/page-01-sentence-08.mp3",
+     "words": [
+      {
+       "text": "I",
+       "start_ms": 0,
+       "end_ms": 480
+      },
+      {
+       "text": "will",
+       "start_ms": 480,
+       "end_ms": 640
+      },
+      {
+       "text": "build",
+       "start_ms": 640,
+       "end_ms": 880
+      },
+      {
+       "text": "a",
+       "start_ms": 880,
+       "end_ms": 1080
+      },
+      {
+       "text": "tower",
+       "start_ms": 1080,
+       "end_ms": 1460
+      },
+      {
+       "text": "on",
+       "start_ms": 1460,
+       "end_ms": 1760
+      },
+      {
+       "text": "sturdy",
+       "start_ms": 1760,
+       "end_ms": 2100,
+       "term": "sturdy",
+       "zh": "结实的"
+      },
+      {
+       "text": "pillars.",
+       "start_ms": 2100,
+       "end_ms": 2520
+      }
+     ],
+     "glossary": [
+      {
+       "term": "sturdy",
+       "ipa": "ˈstɜːdi",
+       "pos": "Adj",
+       "zh": "结实的；坚固的"
+      }
+     ]
+    },
+    {
+     "id": "b2-p01-s09",
+     "text_en": "I will build a raft.",
+     "zh": "我要造一只木筏。",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.383,
+      "y": 0.546,
+      "w": 0.287,
+      "h": 0.113,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 17280,
+     "end_ms": 18520,
+     "audio": "assets/mikey-jj/water-house-adventure/sentences/page-01-sentence-09.mp3",
+     "words": [
+      {
+       "text": "I",
+       "start_ms": 0,
+       "end_ms": 480
+      },
+      {
+       "text": "will",
+       "start_ms": 480,
+       "end_ms": 620
+      },
+      {
+       "text": "build",
+       "start_ms": 620,
+       "end_ms": 900
+      },
+      {
+       "text": "a",
+       "start_ms": 900,
+       "end_ms": 1040
+      },
+      {
+       "text": "raft.",
+       "start_ms": 1040,
+       "end_ms": 1240,
+       "term": "raft",
+       "zh": "木筏"
+      }
+     ],
+     "glossary": [
+      {
+       "term": "raft",
+       "ipa": "rɑːft",
+       "pos": "N",
+       "zh": "木筏"
+      }
+     ]
+    },
+    {
+     "id": "b2-p01-s10",
+     "text_en": "It will float on the waves!",
+     "zh": "它会漂浮在海浪上！",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.704,
+      "y": 0.554,
+      "w": 0.27,
+      "h": 0.133,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 19220,
+     "end_ms": 20480,
+     "audio": "assets/mikey-jj/water-house-adventure/sentences/page-01-sentence-10.mp3",
+     "words": [
+      {
+       "text": "It",
+       "start_ms": 0,
+       "end_ms": 60
+      },
+      {
+       "text": "will",
+       "start_ms": 60,
+       "end_ms": 220
+      },
+      {
+       "text": "float",
+       "start_ms": 220,
+       "end_ms": 520
+      },
+      {
+       "text": "on",
+       "start_ms": 520,
+       "end_ms": 880
+      },
+      {
+       "text": "the",
+       "start_ms": 880,
+       "end_ms": 1060
+      },
+      {
+       "text": "waves!",
+       "start_ms": 1060,
+       "end_ms": 1260
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b2-p01-s11",
+     "text_en": "They had to work quickly to save themselves.",
+     "zh": "他们必须迅速行动来拯救自己。",
+     "speaker": {
+      "id": "narrator",
+      "label": "旁白"
+     },
+     "bubble": {
+      "x": 0.039,
+      "y": 0.892,
+      "w": 0.396,
+      "h": 0.082,
+      "tail": "none",
+      "variant": "narration"
+     },
+     "start_ms": 21660,
+     "end_ms": 23680,
+     "audio": "assets/mikey-jj/water-house-adventure/sentences/page-01-sentence-11.mp3",
+     "words": [
+      {
+       "text": "They",
+       "start_ms": 0,
+       "end_ms": 380
+      },
+      {
+       "text": "had",
+       "start_ms": 380,
+       "end_ms": 580
+      },
+      {
+       "text": "to",
+       "start_ms": 580,
+       "end_ms": 720
+      },
+      {
+       "text": "work",
+       "start_ms": 720,
+       "end_ms": 940
+      },
+      {
+       "text": "quickly",
+       "start_ms": 940,
+       "end_ms": 1220
+      },
+      {
+       "text": "to",
+       "start_ms": 1220,
+       "end_ms": 1560
+      },
+      {
+       "text": "save",
+       "start_ms": 1560,
+       "end_ms": 1800
+      },
+      {
+       "text": "themselves.",
+       "start_ms": 1800,
+       "end_ms": 2020
+      }
+     ],
+     "glossary": []
+    }
+   ],
+   "panel": [
+    0.0,
+    0.49,
+    0.504,
+    1.0
+   ]
+  },
+  {
+   "page_no": 2,
+   "source_page": 2,
+   "image": "assets/mikey-jj/water-house-adventure/pages/p02.webp",
+   "text_en": "These titanium pillars will never rust! They are indestructible! JJ drilled deep into the ground! Mikey finished his simple raft! My house is light! It will bob like a cork!",
+   "start_ms": 25590,
+   "end_ms": 40290,
+   "sentences": [
+    {
+     "id": "b2-p02-s01",
+     "text_en": "These titanium pillars will never rust!",
+     "zh": "这些钛合金柱子永远不会生锈！",
+     "speaker": {
+      "id": "narrator",
+      "label": "旁白"
+     },
+     "bubble": {
+      "x": 0.074,
+      "y": 0.151,
+      "w": 0.263,
+      "h": 0.154,
+      "tail": "none",
+      "variant": "narration"
+     },
+     "start_ms": 25590,
+     "end_ms": 28350,
+     "audio": "assets/mikey-jj/water-house-adventure/sentences/page-02-sentence-01.mp3",
+     "words": [
+      {
+       "text": "These",
+       "start_ms": 0,
+       "end_ms": 500
+      },
+      {
+       "text": "titanium",
+       "start_ms": 500,
+       "end_ms": 1010,
+       "term": "titanium",
+       "zh": "钛"
+      },
+      {
+       "text": "pillars",
+       "start_ms": 1010,
+       "end_ms": 1620
+      },
+      {
+       "text": "will",
+       "start_ms": 1620,
+       "end_ms": 1980
+      },
+      {
+       "text": "never",
+       "start_ms": 1980,
+       "end_ms": 2420
+      },
+      {
+       "text": "rust!",
+       "start_ms": 2420,
+       "end_ms": 2760
+      }
+     ],
+     "glossary": [
+      {
+       "term": "titanium",
+       "ipa": "tɪˈteɪniəm",
+       "pos": "N",
+       "zh": "钛"
+      },
+      {
+       "term": "rust",
+       "ipa": "rʌst",
+       "pos": "V",
+       "zh": "生锈"
+      }
+     ]
+    },
+    {
+     "id": "b2-p02-s02",
+     "text_en": "They are indestructible!",
+     "zh": "它们坚不可摧！",
+     "speaker": {
+      "id": "narrator",
+      "label": "旁白"
+     },
+     "bubble": {
+      "x": 0.074,
+      "y": 0.151,
+      "w": 0.263,
+      "h": 0.154,
+      "tail": "none",
+      "variant": "narration"
+     },
+     "start_ms": 28830,
+     "end_ms": 30070,
+     "audio": "assets/mikey-jj/water-house-adventure/sentences/page-02-sentence-02.mp3",
+     "words": [
+      {
+       "text": "They",
+       "start_ms": 0,
+       "end_ms": 70
+      },
+      {
+       "text": "are",
+       "start_ms": 70,
+       "end_ms": 260
+      },
+      {
+       "text": "indestructible!",
+       "start_ms": 260,
+       "end_ms": 1240,
+       "term": "indestructible",
+       "zh": "坚不可摧的"
+      }
+     ],
+     "glossary": [
+      {
+       "term": "indestructible",
+       "ipa": "ˌɪndɪˈstrʌktəbl",
+       "pos": "Adj",
+       "zh": "坚不可摧的"
+      }
+     ]
+    },
+    {
+     "id": "b2-p02-s03",
+     "text_en": "JJ drilled deep into the ground!",
+     "zh": "JJ 往地下钻得很深！",
+     "speaker": {
+      "id": "narrator",
+      "label": "旁白"
+     },
+     "bubble": {
+      "x": 0.042,
+      "y": 0.408,
+      "w": 0.261,
+      "h": 0.069,
+      "tail": "none",
+      "variant": "narration"
+     },
+     "start_ms": 30070,
+     "end_ms": 32950,
+     "audio": "assets/mikey-jj/water-house-adventure/sentences/page-02-sentence-03.mp3",
+     "words": [
+      {
+       "text": "JJ",
+       "start_ms": 0,
+       "end_ms": 1140
+      },
+      {
+       "text": "drilled",
+       "start_ms": 1140,
+       "end_ms": 1710,
+       "term": "drilled",
+       "zh": "钻孔"
+      },
+      {
+       "text": "deep",
+       "start_ms": 1710,
+       "end_ms": 2110
+      },
+      {
+       "text": "into",
+       "start_ms": 2110,
+       "end_ms": 2420
+      },
+      {
+       "text": "the",
+       "start_ms": 2420,
+       "end_ms": 2520
+      },
+      {
+       "text": "ground!",
+       "start_ms": 2520,
+       "end_ms": 2880
+      }
+     ],
+     "glossary": [
+      {
+       "term": "drilled",
+       "ipa": "drɪld",
+       "pos": "V",
+       "zh": "钻孔（drill 的过去式）"
+      }
+     ]
+    },
+    {
+     "id": "b2-p02-s04",
+     "text_en": "Mikey finished his simple raft!",
+     "zh": "Mikey 造好了他的简易木筏！",
+     "speaker": {
+      "id": "narrator",
+      "label": "旁白"
+     },
+     "bubble": {
+      "x": 0.028,
+      "y": 0.509,
+      "w": 0.298,
+      "h": 0.072,
+      "tail": "none",
+      "variant": "narration"
+     },
+     "start_ms": 33850,
+     "end_ms": 36010,
+     "audio": "assets/mikey-jj/water-house-adventure/sentences/page-02-sentence-04.mp3",
+     "words": [
+      {
+       "text": "Mikey",
+       "start_ms": 0,
+       "end_ms": 700
+      },
+      {
+       "text": "finished",
+       "start_ms": 700,
+       "end_ms": 980
+      },
+      {
+       "text": "his",
+       "start_ms": 980,
+       "end_ms": 1400
+      },
+      {
+       "text": "simple",
+       "start_ms": 1400,
+       "end_ms": 1700
+      },
+      {
+       "text": "raft!",
+       "start_ms": 1700,
+       "end_ms": 2160
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b2-p02-s05",
+     "text_en": "My house is light!",
+     "zh": "我的房子很轻！",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.327,
+      "y": 0.537,
+      "w": 0.252,
+      "h": 0.122,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 37090,
+     "end_ms": 38290,
+     "audio": "assets/mikey-jj/water-house-adventure/sentences/page-02-sentence-05.mp3",
+     "words": [
+      {
+       "text": "My",
+       "start_ms": 0,
+       "end_ms": 240
+      },
+      {
+       "text": "house",
+       "start_ms": 240,
+       "end_ms": 610
+      },
+      {
+       "text": "is",
+       "start_ms": 610,
+       "end_ms": 860
+      },
+      {
+       "text": "light!",
+       "start_ms": 860,
+       "end_ms": 1200
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b2-p02-s06",
+     "text_en": "It will bob like a cork!",
+     "zh": "它会像软木塞一样上下漂浮！",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.327,
+      "y": 0.537,
+      "w": 0.252,
+      "h": 0.122,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 38850,
+     "end_ms": 40290,
+     "audio": "assets/mikey-jj/water-house-adventure/sentences/page-02-sentence-06.mp3",
+     "words": [
+      {
+       "text": "It",
+       "start_ms": 0,
+       "end_ms": 90
+      },
+      {
+       "text": "will",
+       "start_ms": 90,
+       "end_ms": 260
+      },
+      {
+       "text": "bob",
+       "start_ms": 260,
+       "end_ms": 500
+      },
+      {
+       "text": "like",
+       "start_ms": 500,
+       "end_ms": 900
+      },
+      {
+       "text": "a",
+       "start_ms": 900,
+       "end_ms": 1070
+      },
+      {
+       "text": "cork!",
+       "start_ms": 1070,
+       "end_ms": 1440
+      }
+     ],
+     "glossary": []
+    }
+   ],
+   "panel": [
+    0.0,
+    0.487,
+    0.501,
+    1.0
+   ]
+  },
+  {
+   "page_no": 3,
+   "source_page": 3,
+   "image": "assets/mikey-jj/water-house-adventure/pages/p03.webp",
+   "text_en": "Suddenly, the ocean swallowed the land! Here it comes! Hold on tight! My tower is safe and dry! Whew! My raft is floating perfectly!",
+   "start_ms": 42330,
+   "end_ms": 54070,
+   "sentences": [
+    {
+     "id": "b2-p03-s01",
+     "text_en": "Suddenly, the ocean swallowed the land!",
+     "zh": "突然，海水吞没了陆地！",
+     "speaker": {
+      "id": "narrator",
+      "label": "旁白"
+     },
+     "bubble": {
+      "x": 0.042,
+      "y": 0.031,
+      "w": 0.345,
+      "h": 0.071,
+      "tail": "none",
+      "variant": "narration"
+     },
+     "start_ms": 42330,
+     "end_ms": 44950,
+     "audio": "assets/mikey-jj/water-house-adventure/sentences/page-03-sentence-01.mp3",
+     "words": [
+      {
+       "text": "Suddenly,",
+       "start_ms": 0,
+       "end_ms": 900,
+       "term": "suddenly",
+       "zh": "突然"
+      },
+      {
+       "text": "the",
+       "start_ms": 900,
+       "end_ms": 1090
+      },
+      {
+       "text": "ocean",
+       "start_ms": 1090,
+       "end_ms": 1500
+      },
+      {
+       "text": "swallowed",
+       "start_ms": 1500,
+       "end_ms": 1960,
+       "term": "swallowed",
+       "zh": "吞没"
+      },
+      {
+       "text": "the",
+       "start_ms": 1960,
+       "end_ms": 2300
+      },
+      {
+       "text": "land!",
+       "start_ms": 2300,
+       "end_ms": 2620
+      }
+     ],
+     "glossary": [
+      {
+       "term": "suddenly",
+       "ipa": "ˈsʌdnli",
+       "pos": "Adv",
+       "zh": "突然"
+      },
+      {
+       "term": "swallowed",
+       "ipa": "ˈswɒləʊd",
+       "pos": "V",
+       "zh": "吞没（swallow 的过去式）"
+      }
+     ]
+    },
+    {
+     "id": "b2-p03-s02",
+     "text_en": "Here it comes!",
+     "zh": "它来了！",
+     "speaker": {
+      "id": "system",
+      "label": "角色"
+     },
+     "bubble": {
+      "x": 0.268,
+      "y": 0.434,
+      "w": 0.467,
+      "h": 0.049,
+      "tail": "none",
+      "variant": "narration"
+     },
+     "start_ms": 45910,
+     "end_ms": 46670,
+     "audio": "assets/mikey-jj/water-house-adventure/sentences/page-03-sentence-02.mp3",
+     "words": [
+      {
+       "text": "Here",
+       "start_ms": 0,
+       "end_ms": 340
+      },
+      {
+       "text": "it",
+       "start_ms": 340,
+       "end_ms": 440
+      },
+      {
+       "text": "comes!",
+       "start_ms": 440,
+       "end_ms": 760
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b2-p03-s03",
+     "text_en": "Hold on tight!",
+     "zh": "抓紧了！",
+     "speaker": {
+      "id": "system",
+      "label": "角色"
+     },
+     "bubble": {
+      "x": 0.268,
+      "y": 0.434,
+      "w": 0.467,
+      "h": 0.049,
+      "tail": "none",
+      "variant": "narration"
+     },
+     "start_ms": 47190,
+     "end_ms": 47770,
+     "audio": "assets/mikey-jj/water-house-adventure/sentences/page-03-sentence-03.mp3",
+     "words": [
+      {
+       "text": "Hold",
+       "start_ms": 20,
+       "end_ms": 90
+      },
+      {
+       "text": "on",
+       "start_ms": 90,
+       "end_ms": 300
+      },
+      {
+       "text": "tight!",
+       "start_ms": 300,
+       "end_ms": 580,
+       "term": "tight",
+       "zh": "紧紧地"
+      }
+     ],
+     "glossary": [
+      {
+       "term": "tight",
+       "ipa": "taɪt",
+       "pos": "Adv",
+       "zh": "紧紧地"
+      }
+     ]
+    },
+    {
+     "id": "b2-p03-s04",
+     "text_en": "My tower is safe and dry!",
+     "zh": "我的塔又安全又干燥！",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.438,
+      "y": 0.528,
+      "w": 0.281,
+      "h": 0.089,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 48750,
+     "end_ms": 50790,
+     "audio": "assets/mikey-jj/water-house-adventure/sentences/page-03-sentence-04.mp3",
+     "words": [
+      {
+       "text": "My",
+       "start_ms": 0,
+       "end_ms": 300
+      },
+      {
+       "text": "tower",
+       "start_ms": 300,
+       "end_ms": 580
+      },
+      {
+       "text": "is",
+       "start_ms": 580,
+       "end_ms": 1100
+      },
+      {
+       "text": "safe",
+       "start_ms": 1100,
+       "end_ms": 1440
+      },
+      {
+       "text": "and",
+       "start_ms": 1440,
+       "end_ms": 1740
+      },
+      {
+       "text": "dry!",
+       "start_ms": 1740,
+       "end_ms": 2040
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b2-p03-s05",
+     "text_en": "Whew!",
+     "zh": "呼！",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.24,
+      "y": 0.687,
+      "w": 0.477,
+      "h": 0.105,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 51790,
+     "end_ms": 52130,
+     "audio": "assets/mikey-jj/water-house-adventure/sentences/page-03-sentence-05.mp3",
+     "words": [
+      {
+       "text": "Whew!",
+       "start_ms": 0,
+       "end_ms": 340
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b2-p03-s06",
+     "text_en": "My raft is floating perfectly!",
+     "zh": "我的木筏浮得可好了！",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.24,
+      "y": 0.687,
+      "w": 0.477,
+      "h": 0.105,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 52610,
+     "end_ms": 54090,
+     "audio": "assets/mikey-jj/water-house-adventure/sentences/page-03-sentence-06.mp3",
+     "words": [
+      {
+       "text": "My",
+       "start_ms": 0,
+       "end_ms": 80
+      },
+      {
+       "text": "raft",
+       "start_ms": 80,
+       "end_ms": 330
+      },
+      {
+       "text": "is",
+       "start_ms": 330,
+       "end_ms": 650
+      },
+      {
+       "text": "floating",
+       "start_ms": 650,
+       "end_ms": 910,
+       "term": "floating",
+       "zh": "漂浮"
+      },
+      {
+       "text": "perfectly!",
+       "start_ms": 910,
+       "end_ms": 1480
+      }
+     ],
+     "glossary": [
+      {
+       "term": "floating",
+       "ipa": "ˈfləʊtɪŋ",
+       "pos": "V",
+       "zh": "漂浮（float 的进行时）"
+      }
+     ]
+    }
+   ],
+   "panel": [
+    0.0,
+    0.494,
+    0.51,
+    1.0
+   ]
+  },
+  {
+   "page_no": 4,
+   "source_page": 4,
+   "image": "assets/mikey-jj/water-house-adventure/pages/p04.webp",
+   "text_en": "JJ had a clever machine for survival! This filters the salt! Now I have fresh drinking water! Mikey found food in the sea! I caught a huge fish! I will not go hungry!",
+   "start_ms": 56000,
+   "end_ms": 70300,
+   "sentences": [
+    {
+     "id": "b2-p04-s01",
+     "text_en": "JJ had a clever machine for survival!",
+     "zh": "JJ 有一个聪明的求生机器！",
+     "speaker": {
+      "id": "narrator",
+      "label": "旁白"
+     },
+     "bubble": {
+      "x": 0.034,
+      "y": 0.024,
+      "w": 0.347,
+      "h": 0.078,
+      "tail": "none",
+      "variant": "narration"
+     },
+     "start_ms": 56040,
+     "end_ms": 58740,
+     "audio": "assets/mikey-jj/water-house-adventure/sentences/page-04-sentence-01.mp3",
+     "words": [
+      {
+       "text": "JJ",
+       "start_ms": 0,
+       "end_ms": 640
+      },
+      {
+       "text": "had",
+       "start_ms": 640,
+       "end_ms": 1100
+      },
+      {
+       "text": "a",
+       "start_ms": 1100,
+       "end_ms": 1240
+      },
+      {
+       "text": "clever",
+       "start_ms": 1240,
+       "end_ms": 1500
+      },
+      {
+       "text": "machine",
+       "start_ms": 1500,
+       "end_ms": 1980,
+       "term": "machine",
+       "zh": "机器"
+      },
+      {
+       "text": "for",
+       "start_ms": 1980,
+       "end_ms": 2340
+      },
+      {
+       "text": "survival!",
+       "start_ms": 2340,
+       "end_ms": 2700
+      }
+     ],
+     "glossary": [
+      {
+       "term": "machine",
+       "ipa": "məˈʃiːn",
+       "pos": "N",
+       "zh": "机器"
+      }
+     ]
+    },
+    {
+     "id": "b2-p04-s02",
+     "text_en": "This filters the salt!",
+     "zh": "这个能把盐过滤掉！",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.577,
+      "y": 0.013,
+      "w": 0.397,
+      "h": 0.177,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 59540,
+     "end_ms": 61240,
+     "audio": "assets/mikey-jj/water-house-adventure/sentences/page-04-sentence-02.mp3",
+     "words": [
+      {
+       "text": "This",
+       "start_ms": 0,
+       "end_ms": 660
+      },
+      {
+       "text": "filters",
+       "start_ms": 660,
+       "end_ms": 1040,
+       "term": "filters",
+       "zh": "过滤"
+      },
+      {
+       "text": "the",
+       "start_ms": 1040,
+       "end_ms": 1380
+      },
+      {
+       "text": "salt!",
+       "start_ms": 1380,
+       "end_ms": 1700
+      }
+     ],
+     "glossary": [
+      {
+       "term": "filters",
+       "ipa": "ˈfɪltəz",
+       "pos": "V",
+       "zh": "过滤（filter 的第三人称）"
+      }
+     ]
+    },
+    {
+     "id": "b2-p04-s03",
+     "text_en": "Now I have fresh drinking water!",
+     "zh": "现在我有干净的饮用水了！",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.577,
+      "y": 0.013,
+      "w": 0.397,
+      "h": 0.177,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 61720,
+     "end_ms": 63520,
+     "audio": "assets/mikey-jj/water-house-adventure/sentences/page-04-sentence-03.mp3",
+     "words": [
+      {
+       "text": "Now",
+       "start_ms": 0,
+       "end_ms": 100
+      },
+      {
+       "text": "I",
+       "start_ms": 100,
+       "end_ms": 360
+      },
+      {
+       "text": "have",
+       "start_ms": 360,
+       "end_ms": 560
+      },
+      {
+       "text": "fresh",
+       "start_ms": 560,
+       "end_ms": 860,
+       "term": "fresh",
+       "zh": "新鲜的"
+      },
+      {
+       "text": "drinking",
+       "start_ms": 860,
+       "end_ms": 1320
+      },
+      {
+       "text": "water!",
+       "start_ms": 1320,
+       "end_ms": 1800
+      }
+     ],
+     "glossary": [
+      {
+       "term": "fresh",
+       "ipa": "freʃ",
+       "pos": "Adj",
+       "zh": "新鲜的；干净的"
+      }
+     ]
+    },
+    {
+     "id": "b2-p04-s04",
+     "text_en": "Mikey found food in the sea!",
+     "zh": "Mikey 在海里找到了食物！",
+     "speaker": {
+      "id": "narrator",
+      "label": "旁白"
+     },
+     "bubble": {
+      "x": 0.02,
+      "y": 0.509,
+      "w": 0.311,
+      "h": 0.086,
+      "tail": "none",
+      "variant": "narration"
+     },
+     "start_ms": 64320,
+     "end_ms": 66140,
+     "audio": "assets/mikey-jj/water-house-adventure/sentences/page-04-sentence-04.mp3",
+     "words": [
+      {
+       "text": "Mikey",
+       "start_ms": 0,
+       "end_ms": 580
+      },
+      {
+       "text": "found",
+       "start_ms": 580,
+       "end_ms": 880
+      },
+      {
+       "text": "food",
+       "start_ms": 880,
+       "end_ms": 1180
+      },
+      {
+       "text": "in",
+       "start_ms": 1180,
+       "end_ms": 1460
+      },
+      {
+       "text": "the",
+       "start_ms": 1460,
+       "end_ms": 1600
+      },
+      {
+       "text": "sea!",
+       "start_ms": 1600,
+       "end_ms": 1820
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b2-p04-s05",
+     "text_en": "I caught a huge fish!",
+     "zh": "我抓了一条大鱼！",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.02,
+      "y": 0.509,
+      "w": 0.311,
+      "h": 0.086,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 67040,
+     "end_ms": 68500,
+     "audio": "assets/mikey-jj/water-house-adventure/sentences/page-04-sentence-05.mp3",
+     "words": [
+      {
+       "text": "I",
+       "start_ms": 0,
+       "end_ms": 260
+      },
+      {
+       "text": "caught",
+       "start_ms": 260,
+       "end_ms": 500,
+       "term": "caught",
+       "zh": "抓住"
+      },
+      {
+       "text": "a",
+       "start_ms": 500,
+       "end_ms": 680
+      },
+      {
+       "text": "huge",
+       "start_ms": 680,
+       "end_ms": 940
+      },
+      {
+       "text": "fish!",
+       "start_ms": 940,
+       "end_ms": 1460
+      }
+     ],
+     "glossary": [
+      {
+       "term": "caught",
+       "ipa": "kɔːt",
+       "pos": "V",
+       "zh": "抓住（catch 的过去式）"
+      }
+     ]
+    },
+    {
+     "id": "b2-p04-s06",
+     "text_en": "I will not go hungry!",
+     "zh": "我不会挨饿了！",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.493,
+      "y": 0.522,
+      "w": 0.389,
+      "h": 0.128,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 69040,
+     "end_ms": 70340,
+     "audio": "assets/mikey-jj/water-house-adventure/sentences/page-04-sentence-06.mp3",
+     "words": [
+      {
+       "text": "I",
+       "start_ms": 0,
+       "end_ms": 180
+      },
+      {
+       "text": "will",
+       "start_ms": 180,
+       "end_ms": 340
+      },
+      {
+       "text": "not",
+       "start_ms": 340,
+       "end_ms": 620
+      },
+      {
+       "text": "go",
+       "start_ms": 620,
+       "end_ms": 860
+      },
+      {
+       "text": "hungry!",
+       "start_ms": 860,
+       "end_ms": 1300
+      }
+     ],
+     "glossary": []
+    }
+   ],
+   "panel": [
+    0.0,
+    0.495,
+    0.509,
+    1.0
+   ]
+  },
+  {
+   "page_no": 5,
+   "source_page": 5,
+   "image": "assets/mikey-jj/water-house-adventure/pages/p05.webp",
+   "text_en": "Hey! Get away! That is my dinner! The birds stole everything and flew away! No! My food!",
+   "start_ms": 71020,
+   "end_ms": 81160,
+   "sentences": [
+    {
+     "id": "b2-p05-s01",
+     "text_en": "Hey!",
+     "zh": "嘿！",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.07,
+      "y": 0.077,
+      "w": 0.322,
+      "h": 0.114,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 71020,
+     "end_ms": 71340,
+     "audio": "assets/mikey-jj/water-house-adventure/sentences/page-05-sentence-01.mp3",
+     "words": [
+      {
+       "text": "Hey!",
+       "start_ms": 0,
+       "end_ms": 320
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b2-p05-s02",
+     "text_en": "Get away!",
+     "zh": "走开！",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.07,
+      "y": 0.077,
+      "w": 0.322,
+      "h": 0.114,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 73180,
+     "end_ms": 73560,
+     "audio": "assets/mikey-jj/water-house-adventure/sentences/page-05-sentence-02.mp3",
+     "words": [
+      {
+       "text": "Get",
+       "start_ms": 0,
+       "end_ms": 60
+      },
+      {
+       "text": "away!",
+       "start_ms": 60,
+       "end_ms": 380
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b2-p05-s03",
+     "text_en": "That is my dinner!",
+     "zh": "那是我的晚餐！",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.07,
+      "y": 0.077,
+      "w": 0.322,
+      "h": 0.114,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 74020,
+     "end_ms": 74800,
+     "audio": "assets/mikey-jj/water-house-adventure/sentences/page-05-sentence-03.mp3",
+     "words": [
+      {
+       "text": "That",
+       "start_ms": 0,
+       "end_ms": 80
+      },
+      {
+       "text": "is",
+       "start_ms": 80,
+       "end_ms": 220
+      },
+      {
+       "text": "my",
+       "start_ms": 220,
+       "end_ms": 420
+      },
+      {
+       "text": "dinner!",
+       "start_ms": 420,
+       "end_ms": 780,
+       "term": "dinner",
+       "zh": "晚餐"
+      }
+     ],
+     "glossary": [
+      {
+       "term": "dinner",
+       "ipa": "ˈdɪnə(r)",
+       "pos": "N",
+       "zh": "晚餐"
+      }
+     ]
+    },
+    {
+     "id": "b2-p05-s04",
+     "text_en": "The birds stole everything and flew away!",
+     "zh": "鸟儿们偷走了所有东西，飞走了！",
+     "speaker": {
+      "id": "narrator",
+      "label": "旁白"
+     },
+     "bubble": {
+      "x": 0.043,
+      "y": 0.519,
+      "w": 0.427,
+      "h": 0.07,
+      "tail": "none",
+      "variant": "narration"
+     },
+     "start_ms": 75500,
+     "end_ms": 78320,
+     "audio": "assets/mikey-jj/water-house-adventure/sentences/page-05-sentence-04.mp3",
+     "words": [
+      {
+       "text": "The",
+       "start_ms": 0,
+       "end_ms": 420
+      },
+      {
+       "text": "birds",
+       "start_ms": 420,
+       "end_ms": 680
+      },
+      {
+       "text": "stole",
+       "start_ms": 680,
+       "end_ms": 1100,
+       "term": "stole",
+       "zh": "偷"
+      },
+      {
+       "text": "everything",
+       "start_ms": 1100,
+       "end_ms": 1740
+      },
+      {
+       "text": "and",
+       "start_ms": 1740,
+       "end_ms": 2160
+      },
+      {
+       "text": "flew",
+       "start_ms": 2160,
+       "end_ms": 2440,
+       "term": "flew",
+       "zh": "飞"
+      },
+      {
+       "text": "away!",
+       "start_ms": 2440,
+       "end_ms": 2820
+      }
+     ],
+     "glossary": [
+      {
+       "term": "stole",
+       "ipa": "stəʊl",
+       "pos": "V",
+       "zh": "偷（steal 的过去式）"
+      },
+      {
+       "term": "flew",
+       "ipa": "fluː",
+       "pos": "V",
+       "zh": "飞（fly 的过去式）"
+      }
+     ]
+    },
+    {
+     "id": "b2-p05-s05",
+     "text_en": "No!",
+     "zh": "不！",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.329,
+      "y": 0.607,
+      "w": 0.166,
+      "h": 0.094,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 79020,
+     "end_ms": 79380,
+     "audio": "assets/mikey-jj/water-house-adventure/sentences/page-05-sentence-05.mp3",
+     "words": [
+      {
+       "text": "No!",
+       "start_ms": 0,
+       "end_ms": 360
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b2-p05-s06",
+     "text_en": "My food!",
+     "zh": "我的食物！",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.329,
+      "y": 0.607,
+      "w": 0.166,
+      "h": 0.094,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 80320,
+     "end_ms": 81320,
+     "audio": "assets/mikey-jj/water-house-adventure/sentences/page-05-sentence-06.mp3",
+     "words": [
+      {
+       "text": "My",
+       "start_ms": 0,
+       "end_ms": 460
+      },
+      {
+       "text": "food!",
+       "start_ms": 460,
+       "end_ms": 1000,
+       "term": "food",
+       "zh": "食物"
+      }
+     ],
+     "glossary": [
+      {
+       "term": "food",
+       "ipa": "fuːd",
+       "pos": "N",
+       "zh": "食物"
+      }
+     ]
+    }
+   ],
+   "panel": [
+    0.0,
+    0.493,
+    0.51,
+    1.0
+   ]
+  },
+  {
+   "page_no": 6,
+   "source_page": 6,
+   "image": "assets/mikey-jj/water-house-adventure/pages/p06.webp",
+   "text_en": "A storm began to howl across the ocean! Get inside, Mikey! The weather is turning bad! I feel terrible! The waves are too strong!",
+   "start_ms": 83260,
+   "end_ms": 93460,
+   "sentences": [
+    {
+     "id": "b2-p06-s01",
+     "text_en": "A storm began to howl across the ocean!",
+     "zh": "一场风暴开始在海上呼啸！",
+     "speaker": {
+      "id": "narrator",
+      "label": "旁白"
+     },
+     "bubble": {
+      "x": 0.048,
+      "y": 0.031,
+      "w": 0.356,
+      "h": 0.074,
+      "tail": "none",
+      "variant": "narration"
+     },
+     "start_ms": 83240,
+     "end_ms": 85920,
+     "audio": "assets/mikey-jj/water-house-adventure/sentences/page-06-sentence-01.mp3",
+     "words": [
+      {
+       "text": "A",
+       "start_ms": 0,
+       "end_ms": 480
+      },
+      {
+       "text": "storm",
+       "start_ms": 480,
+       "end_ms": 860,
+       "term": "storm",
+       "zh": "风暴"
+      },
+      {
+       "text": "began",
+       "start_ms": 860,
+       "end_ms": 1220
+      },
+      {
+       "text": "to",
+       "start_ms": 1220,
+       "end_ms": 1500
+      },
+      {
+       "text": "howl",
+       "start_ms": 1500,
+       "end_ms": 1900,
+       "term": "howl",
+       "zh": "呼啸"
+      },
+      {
+       "text": "across",
+       "start_ms": 1900,
+       "end_ms": 2080
+      },
+      {
+       "text": "the",
+       "start_ms": 2080,
+       "end_ms": 2420
+      },
+      {
+       "text": "ocean!",
+       "start_ms": 2420,
+       "end_ms": 2680
+      }
+     ],
+     "glossary": [
+      {
+       "term": "storm",
+       "ipa": "stɔːm",
+       "pos": "N",
+       "zh": "风暴"
+      },
+      {
+       "term": "howl",
+       "ipa": "haʊl",
+       "pos": "V",
+       "zh": "呼啸；嚎叫"
+      }
+     ]
+    },
+    {
+     "id": "b2-p06-s02",
+     "text_en": "Get inside, Mikey!",
+     "zh": "快进去，Mikey！",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.048,
+      "y": 0.031,
+      "w": 0.356,
+      "h": 0.074,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 86760,
+     "end_ms": 87960,
+     "audio": "assets/mikey-jj/water-house-adventure/sentences/page-06-sentence-02.mp3",
+     "words": [
+      {
+       "text": "Get",
+       "start_ms": 0,
+       "end_ms": 200
+      },
+      {
+       "text": "inside,",
+       "start_ms": 200,
+       "end_ms": 540
+      },
+      {
+       "text": "Mikey!",
+       "start_ms": 540,
+       "end_ms": 1200
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b2-p06-s03",
+     "text_en": "The weather is turning bad!",
+     "zh": "天气要变坏了！",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.504,
+      "y": 0.031,
+      "w": 0.277,
+      "h": 0.246,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 88340,
+     "end_ms": 89540,
+     "audio": "assets/mikey-jj/water-house-adventure/sentences/page-06-sentence-03.mp3",
+     "words": [
+      {
+       "text": "The",
+       "start_ms": 0,
+       "end_ms": 20
+      },
+      {
+       "text": "weather",
+       "start_ms": 20,
+       "end_ms": 240
+      },
+      {
+       "text": "is",
+       "start_ms": 240,
+       "end_ms": 500
+      },
+      {
+       "text": "turning",
+       "start_ms": 500,
+       "end_ms": 800
+      },
+      {
+       "text": "bad!",
+       "start_ms": 800,
+       "end_ms": 1200
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b2-p06-s04",
+     "text_en": "I feel terrible!",
+     "zh": "我难受极了！",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.288,
+      "y": 0.514,
+      "w": 0.266,
+      "h": 0.1,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 90180,
+     "end_ms": 91160,
+     "audio": "assets/mikey-jj/water-house-adventure/sentences/page-06-sentence-04.mp3",
+     "words": [
+      {
+       "text": "I",
+       "start_ms": 0,
+       "end_ms": 340
+      },
+      {
+       "text": "feel",
+       "start_ms": 340,
+       "end_ms": 620
+      },
+      {
+       "text": "terrible!",
+       "start_ms": 620,
+       "end_ms": 980
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b2-p06-s05",
+     "text_en": "The waves are too strong!",
+     "zh": "海浪太猛了！",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.288,
+      "y": 0.514,
+      "w": 0.266,
+      "h": 0.1,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 92020,
+     "end_ms": 93440,
+     "audio": "assets/mikey-jj/water-house-adventure/sentences/page-06-sentence-05.mp3",
+     "words": [
+      {
+       "text": "The",
+       "start_ms": 0,
+       "end_ms": 40
+      },
+      {
+       "text": "waves",
+       "start_ms": 40,
+       "end_ms": 260,
+       "term": "waves",
+       "zh": "海浪"
+      },
+      {
+       "text": "are",
+       "start_ms": 260,
+       "end_ms": 580
+      },
+      {
+       "text": "too",
+       "start_ms": 580,
+       "end_ms": 820
+      },
+      {
+       "text": "strong!",
+       "start_ms": 820,
+       "end_ms": 1420,
+       "term": "strong",
+       "zh": "猛烈的"
+      }
+     ],
+     "glossary": [
+      {
+       "term": "waves",
+       "ipa": "weɪvz",
+       "pos": "N",
+       "zh": "海浪"
+      },
+      {
+       "term": "strong",
+       "ipa": "strɒŋ",
+       "pos": "Adj",
+       "zh": "猛烈的；强壮的"
+      }
+     ]
+    }
+   ],
+   "panel": [
+    0.0,
+    0.487,
+    0.497,
+    1.0
+   ]
+  },
+  {
+   "page_no": 7,
+   "source_page": 7,
+   "image": "assets/mikey-jj/water-house-adventure/pages/p07.webp",
+   "text_en": "Something enormous was lurking below! Mikey, look at the water! Help me! It's going to eat the raft!",
+   "start_ms": 95340,
+   "end_ms": 103060,
+   "sentences": [
+    {
+     "id": "b2-p07-s01",
+     "text_en": "Something enormous was lurking below!",
+     "zh": "有什么巨大的东西潜伏在下面！",
+     "speaker": {
+      "id": "narrator",
+      "label": "旁白"
+     },
+     "bubble": {
+      "x": 0.021,
+      "y": 0.023,
+      "w": 0.418,
+      "h": 0.108,
+      "tail": "none",
+      "variant": "narration"
+     },
+     "start_ms": 93440,
+     "end_ms": 97560,
+     "audio": "assets/mikey-jj/water-house-adventure/sentences/page-07-sentence-01.mp3",
+     "words": [
+      {
+       "text": "Something",
+       "start_ms": 0,
+       "end_ms": 1420
+      },
+      {
+       "text": "enormous",
+       "start_ms": 1420,
+       "end_ms": 3040,
+       "term": "enormous",
+       "zh": "巨大的"
+      },
+      {
+       "text": "was",
+       "start_ms": 3040,
+       "end_ms": 3420
+      },
+      {
+       "text": "lurking",
+       "start_ms": 3420,
+       "end_ms": 3720,
+       "term": "lurking",
+       "zh": "潜伏"
+      },
+      {
+       "text": "below!",
+       "start_ms": 3720,
+       "end_ms": 4120,
+       "term": "below",
+       "zh": "在下面"
+      }
+     ],
+     "glossary": [
+      {
+       "term": "enormous",
+       "ipa": "ɪˈnɔːməs",
+       "pos": "Adj",
+       "zh": "巨大的"
+      },
+      {
+       "term": "lurking",
+       "ipa": "ˈlɜːkɪŋ",
+       "pos": "V",
+       "zh": "潜伏（lurk 的进行时）"
+      },
+      {
+       "term": "below",
+       "ipa": "bɪˈləʊ",
+       "pos": "Adv",
+       "zh": "在下面"
+      }
+     ]
+    },
+    {
+     "id": "b2-p07-s02",
+     "text_en": "Mikey, look at the water!",
+     "zh": "Mikey，快看水面！",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.394,
+      "y": 0.094,
+      "w": 0.305,
+      "h": 0.154,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 98480,
+     "end_ms": 99860,
+     "audio": "assets/mikey-jj/water-house-adventure/sentences/page-07-sentence-02.mp3",
+     "words": [
+      {
+       "text": "Mikey,",
+       "start_ms": 0,
+       "end_ms": 740
+      },
+      {
+       "text": "look",
+       "start_ms": 740,
+       "end_ms": 900
+      },
+      {
+       "text": "at",
+       "start_ms": 900,
+       "end_ms": 1040
+      },
+      {
+       "text": "the",
+       "start_ms": 1040,
+       "end_ms": 1120
+      },
+      {
+       "text": "water!",
+       "start_ms": 1120,
+       "end_ms": 1380
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b2-p07-s03",
+     "text_en": "Help me!",
+     "zh": "救命！",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.666,
+      "y": 0.585,
+      "w": 0.276,
+      "h": 0.167,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 100640,
+     "end_ms": 101340,
+     "audio": "assets/mikey-jj/water-house-adventure/sentences/page-07-sentence-03.mp3",
+     "words": [
+      {
+       "text": "Help",
+       "start_ms": 0,
+       "end_ms": 360
+      },
+      {
+       "text": "me!",
+       "start_ms": 360,
+       "end_ms": 700
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b2-p07-s04",
+     "text_en": "It's going to eat the raft!",
+     "zh": "它要吃木筏了！",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.666,
+      "y": 0.585,
+      "w": 0.276,
+      "h": 0.167,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 101660,
+     "end_ms": 103100,
+     "audio": "assets/mikey-jj/water-house-adventure/sentences/page-07-sentence-04.mp3",
+     "words": [
+      {
+       "text": "It's",
+       "start_ms": 0,
+       "end_ms": 360
+      },
+      {
+       "text": "going",
+       "start_ms": 360,
+       "end_ms": 520
+      },
+      {
+       "text": "to",
+       "start_ms": 520,
+       "end_ms": 740
+      },
+      {
+       "text": "eat",
+       "start_ms": 740,
+       "end_ms": 960,
+       "term": "eat",
+       "zh": "吃"
+      },
+      {
+       "text": "the",
+       "start_ms": 960,
+       "end_ms": 1160
+      },
+      {
+       "text": "raft!",
+       "start_ms": 1160,
+       "end_ms": 1440
+      }
+     ],
+     "glossary": [
+      {
+       "term": "eat",
+       "ipa": "iːt",
+       "pos": "V",
+       "zh": "吃"
+      }
+     ]
+    }
+   ],
+   "panel": [
+    0.0,
+    0.497,
+    0.511,
+    1.0
+   ]
+  },
+  {
+   "page_no": 8,
+   "source_page": 8,
+   "image": "assets/mikey-jj/water-house-adventure/pages/p08.webp",
+   "text_en": "My shelter is destroyed! JJ activated his secret weapon! Take this, you beast! Electric shock!",
+   "start_ms": 105160,
+   "end_ms": 113390,
+   "sentences": [
+    {
+     "id": "b2-p08-s01",
+     "text_en": "My shelter is destroyed!",
+     "zh": "我的避难所被毁了！",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.645,
+      "y": 0.055,
+      "w": 0.292,
+      "h": 0.151,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 105220,
+     "end_ms": 106760,
+     "audio": "assets/mikey-jj/water-house-adventure/sentences/page-08-sentence-01.mp3",
+     "words": [
+      {
+       "text": "My",
+       "start_ms": 0,
+       "end_ms": 220
+      },
+      {
+       "text": "shelter",
+       "start_ms": 220,
+       "end_ms": 520,
+       "term": "shelter",
+       "zh": "避难所"
+      },
+      {
+       "text": "is",
+       "start_ms": 520,
+       "end_ms": 980
+      },
+      {
+       "text": "destroyed!",
+       "start_ms": 980,
+       "end_ms": 1540
+      }
+     ],
+     "glossary": [
+      {
+       "term": "shelter",
+       "ipa": "ˈʃeltə(r)",
+       "pos": "N",
+       "zh": "避难所"
+      }
+     ]
+    },
+    {
+     "id": "b2-p08-s02",
+     "text_en": "JJ activated his secret weapon!",
+     "zh": "JJ 启动了他的秘密武器！",
+     "speaker": {
+      "id": "narrator",
+      "label": "旁白"
+     },
+     "bubble": {
+      "x": 0.659,
+      "y": 0.516,
+      "w": 0.298,
+      "h": 0.083,
+      "tail": "none",
+      "variant": "narration"
+     },
+     "start_ms": 107850,
+     "end_ms": 109870,
+     "audio": "assets/mikey-jj/water-house-adventure/sentences/page-08-sentence-02.mp3",
+     "words": [
+      {
+       "text": "JJ",
+       "start_ms": 0,
+       "end_ms": 260
+      },
+      {
+       "text": "activated",
+       "start_ms": 260,
+       "end_ms": 910,
+       "term": "activated",
+       "zh": "启动"
+      },
+      {
+       "text": "his",
+       "start_ms": 910,
+       "end_ms": 1310
+      },
+      {
+       "text": "secret",
+       "start_ms": 1310,
+       "end_ms": 1600
+      },
+      {
+       "text": "weapon!",
+       "start_ms": 1600,
+       "end_ms": 2020,
+       "term": "weapon",
+       "zh": "武器"
+      }
+     ],
+     "glossary": [
+      {
+       "term": "activated",
+       "ipa": "ˈæktɪveɪtɪd",
+       "pos": "V",
+       "zh": "启动（activate 的过去式）"
+      },
+      {
+       "term": "weapon",
+       "ipa": "ˈwepən",
+       "pos": "N",
+       "zh": "武器"
+      }
+     ]
+    },
+    {
+     "id": "b2-p08-s03",
+     "text_en": "Take this, you beast!",
+     "zh": "接招吧，你这怪物！",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.659,
+      "y": 0.516,
+      "w": 0.298,
+      "h": 0.083,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 110770,
+     "end_ms": 112030,
+     "audio": "assets/mikey-jj/water-house-adventure/sentences/page-08-sentence-03.mp3",
+     "words": [
+      {
+       "text": "Take",
+       "start_ms": 0,
+       "end_ms": 360
+      },
+      {
+       "text": "this,",
+       "start_ms": 360,
+       "end_ms": 730
+      },
+      {
+       "text": "you",
+       "start_ms": 730,
+       "end_ms": 970
+      },
+      {
+       "text": "beast!",
+       "start_ms": 970,
+       "end_ms": 1260
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b2-p08-s04",
+     "text_en": "Electric shock!",
+     "zh": "电击！",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.659,
+      "y": 0.516,
+      "w": 0.298,
+      "h": 0.083,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 112610,
+     "end_ms": 113390,
+     "audio": "assets/mikey-jj/water-house-adventure/sentences/page-08-sentence-04.mp3",
+     "words": [
+      {
+       "text": "Electric",
+       "start_ms": 0,
+       "end_ms": 420
+      },
+      {
+       "text": "shock!",
+       "start_ms": 420,
+       "end_ms": 780,
+       "term": "shock",
+       "zh": "电击"
+      }
+     ],
+     "glossary": [
+      {
+       "term": "shock",
+       "ipa": "ʃɒk",
+       "pos": "N",
+       "zh": "电击"
+      }
+     ]
+    }
+   ],
+   "panel": [
+    0.0,
+    0.493,
+    0.504,
+    1.0
+   ]
+  },
+  {
+   "page_no": 9,
+   "source_page": 9,
+   "image": "assets/mikey-jj/water-house-adventure/pages/p09.webp",
+   "text_en": "The shark was stunned and swam away fast! Climb up, Mikey! Hurry before it comes back!",
+   "start_ms": 115450,
+   "end_ms": 121550,
+   "sentences": [
+    {
+     "id": "b2-p09-s01",
+     "text_en": "The shark was stunned and swam away fast!",
+     "zh": "鲨鱼被电晕，飞快地游走了！",
+     "speaker": {
+      "id": "narrator",
+      "label": "旁白"
+     },
+     "bubble": {
+      "x": 0.034,
+      "y": 0.007,
+      "w": 0.37,
+      "h": 0.08,
+      "tail": "none",
+      "variant": "narration"
+     },
+     "start_ms": 115310,
+     "end_ms": 117930,
+     "audio": "assets/mikey-jj/water-house-adventure/sentences/page-09-sentence-01.mp3",
+     "words": [
+      {
+       "text": "The",
+       "start_ms": 0,
+       "end_ms": 280
+      },
+      {
+       "text": "shark",
+       "start_ms": 280,
+       "end_ms": 540,
+       "term": "shark",
+       "zh": "鲨鱼"
+      },
+      {
+       "text": "was",
+       "start_ms": 540,
+       "end_ms": 850
+      },
+      {
+       "text": "stunned",
+       "start_ms": 850,
+       "end_ms": 1160,
+       "term": "stunned",
+       "zh": "击晕"
+      },
+      {
+       "text": "and",
+       "start_ms": 1160,
+       "end_ms": 1410
+      },
+      {
+       "text": "swam",
+       "start_ms": 1410,
+       "end_ms": 1820
+      },
+      {
+       "text": "away",
+       "start_ms": 1820,
+       "end_ms": 2620
+      },
+      {
+       "text": "fast!",
+       "start_ms": 2620,
+       "end_ms": 2620
+      }
+     ],
+     "glossary": [
+      {
+       "term": "shark",
+       "ipa": "ʃɑːk",
+       "pos": "N",
+       "zh": "鲨鱼"
+      },
+      {
+       "term": "stunned",
+       "ipa": "stʌnd",
+       "pos": "V",
+       "zh": "击晕（stun 的过去式）"
+      }
+     ]
+    },
+    {
+     "id": "b2-p09-s02",
+     "text_en": "Climb up, Mikey!",
+     "zh": "快爬上来，Mikey！",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.243,
+      "y": 0.513,
+      "w": 0.336,
+      "h": 0.124,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 118750,
+     "end_ms": 120110,
+     "audio": "assets/mikey-jj/water-house-adventure/sentences/page-09-sentence-02.mp3",
+     "words": [
+      {
+       "text": "Climb",
+       "start_ms": 0,
+       "end_ms": 590,
+       "term": "climb",
+       "zh": "爬"
+      },
+      {
+       "text": "up,",
+       "start_ms": 590,
+       "end_ms": 760
+      },
+      {
+       "text": "Mikey!",
+       "start_ms": 760,
+       "end_ms": 1360
+      }
+     ],
+     "glossary": [
+      {
+       "term": "climb",
+       "ipa": "klaɪm",
+       "pos": "V",
+       "zh": "爬"
+      }
+     ]
+    },
+    {
+     "id": "b2-p09-s03",
+     "text_en": "Hurry before it comes back!",
+     "zh": "趁它回来之前快点！",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.243,
+      "y": 0.513,
+      "w": 0.336,
+      "h": 0.124,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 120350,
+     "end_ms": 121550,
+     "audio": "assets/mikey-jj/water-house-adventure/sentences/page-09-sentence-03.mp3",
+     "words": [
+      {
+       "text": "Hurry",
+       "start_ms": 0,
+       "end_ms": 300
+      },
+      {
+       "text": "before",
+       "start_ms": 300,
+       "end_ms": 530
+      },
+      {
+       "text": "it",
+       "start_ms": 530,
+       "end_ms": 760
+      },
+      {
+       "text": "comes",
+       "start_ms": 760,
+       "end_ms": 970
+      },
+      {
+       "text": "back!",
+       "start_ms": 970,
+       "end_ms": 1200
+      }
+     ],
+     "glossary": []
+    }
+   ],
+   "panel": [
+    0.0,
+    0.486,
+    0.5,
+    1.0
+   ]
+  },
+  {
+   "page_no": 10,
+   "source_page": 10,
+   "image": "assets/mikey-jj/water-house-adventure/pages/p10.webp",
+   "text_en": "You saved my life, JJ! Your house is amazing! We survived the water world!",
+   "start_ms": 122420,
+   "end_ms": 129680,
+   "sentences": [
+    {
+     "id": "b2-p10-s01",
+     "text_en": "You saved my life, JJ!",
+     "zh": "你救了我的命，JJ！",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.427,
+      "y": 0.027,
+      "w": 0.417,
+      "h": 0.119,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 122900,
+     "end_ms": 124780,
+     "audio": "assets/mikey-jj/water-house-adventure/sentences/page-10-sentence-01.mp3",
+     "words": [
+      {
+       "text": "You",
+       "start_ms": 0,
+       "end_ms": 480
+      },
+      {
+       "text": "saved",
+       "start_ms": 480,
+       "end_ms": 720,
+       "term": "saved",
+       "zh": "拯救"
+      },
+      {
+       "text": "my",
+       "start_ms": 720,
+       "end_ms": 1120
+      },
+      {
+       "text": "life,",
+       "start_ms": 1120,
+       "end_ms": 1540
+      },
+      {
+       "text": "JJ!",
+       "start_ms": 1540,
+       "end_ms": 1880
+      }
+     ],
+     "glossary": [
+      {
+       "term": "saved",
+       "ipa": "seɪvd",
+       "pos": "V",
+       "zh": "拯救（save 的过去式）"
+      }
+     ]
+    },
+    {
+     "id": "b2-p10-s02",
+     "text_en": "Your house is amazing!",
+     "zh": "你的房子太棒了！",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.427,
+      "y": 0.027,
+      "w": 0.417,
+      "h": 0.119,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 125520,
+     "end_ms": 126520,
+     "audio": "assets/mikey-jj/water-house-adventure/sentences/page-10-sentence-02.mp3",
+     "words": [
+      {
+       "text": "Your",
+       "start_ms": 0,
+       "end_ms": 100
+      },
+      {
+       "text": "house",
+       "start_ms": 100,
+       "end_ms": 460
+      },
+      {
+       "text": "is",
+       "start_ms": 460,
+       "end_ms": 680
+      },
+      {
+       "text": "amazing!",
+       "start_ms": 680,
+       "end_ms": 1000,
+       "term": "amazing",
+       "zh": "了不起的"
+      }
+     ],
+     "glossary": [
+      {
+       "term": "amazing",
+       "ipa": "əˈmeɪzɪŋ",
+       "pos": "Adj",
+       "zh": "了不起的"
+      }
+     ]
+    },
+    {
+     "id": "b2-p10-s03",
+     "text_en": "We survived the water world!",
+     "zh": "我们在水世界里活了下来！",
+     "speaker": {
+      "id": "narrator",
+      "label": "旁白"
+     },
+     "bubble": {
+      "x": 0.339,
+      "y": 0.559,
+      "w": 0.367,
+      "h": 0.126,
+      "tail": "none",
+      "variant": "narration"
+     },
+     "start_ms": 126520,
+     "end_ms": 129700,
+     "audio": "assets/mikey-jj/water-house-adventure/sentences/page-10-sentence-03.mp3",
+     "words": [
+      {
+       "text": "We",
+       "start_ms": 0,
+       "end_ms": 1580
+      },
+      {
+       "text": "survived",
+       "start_ms": 1580,
+       "end_ms": 1860,
+       "term": "survived",
+       "zh": "幸存"
+      },
+      {
+       "text": "the",
+       "start_ms": 1860,
+       "end_ms": 2320
+      },
+      {
+       "text": "water",
+       "start_ms": 2320,
+       "end_ms": 2600
+      },
+      {
+       "text": "world!",
+       "start_ms": 2600,
+       "end_ms": 3180
+      }
+     ],
+     "glossary": [
+      {
+       "term": "survived",
+       "ipa": "səˈvaɪvd",
+       "pos": "V",
+       "zh": "幸存（survive 的过去式）"
+      }
+     ]
+    }
+   ],
+   "panel": [
+    0.0,
+    0.492,
+    0.507,
+    1.0
+   ]
+  }
+ ],
+ "quiz": [
+  {
+   "id": "mikey-b2-q01",
+   "type": "comprehension",
+   "concept_id": "sea-level-rising-flood",
+   "source_sentence_ids": [
+    "b2-p01-s02",
+    "b2-p01-s03"
+   ],
+   "q": "What is happening at the start of the story?",
+   "choices": [
+    "海平面上升，世界将被洪水淹没",
+    "学校放假了",
+    "下了一场大雪",
+    "发生了一场地震"
+   ],
+   "prompt_en": "What is happening at the start of the story?",
+   "prompt_zh": "故事开始时发生了什么？",
+   "choices_en": [
+    "The sea level is rising and the world will flood",
+    "School is closed for a holiday",
+    "It snowed heavily",
+    "There was an earthquake"
+   ],
+   "choices_zh": [
+    "海平面上升，世界将被洪水淹没",
+    "学校放假了",
+    "下了一场大雪",
+    "发生了一场地震"
+   ],
+   "answer": 0
+  },
+  {
+   "id": "mikey-b2-q02",
+   "type": "comprehension",
+   "concept_id": "build-raft-for-safety",
+   "source_sentence_ids": [
+    "b2-p01-s09"
+   ],
+   "q": "What does Mikey build to stay safe in the water?",
+   "choices": [
+    "一座石柱高塔",
+    "一只简易木筏",
+    "一个地下避难所",
+    "一艘潜水艇"
+   ],
+   "prompt_en": "What does Mikey build to stay safe in the water?",
+   "prompt_zh": "Mikey 建造什么来保证在水中安全？",
+   "choices_en": [
+    "a stone pillar tower",
+    "a simple raft",
+    "an underground shelter",
+    "a submarine"
+   ],
+   "choices_zh": [
+    "一座石柱高塔",
+    "一只简易木筏",
+    "一个地下避难所",
+    "一艘潜水艇"
+   ],
+   "source_text_en": "I will build a raft.",
+   "answer": 1
+  },
+  {
+   "id": "mikey-b2-q03",
+   "type": "comprehension",
+   "concept_id": "birds-steal-dinner",
+   "source_sentence_ids": [
+    "b2-p05-s03",
+    "b2-p05-s04"
+   ],
+   "q": "What did the birds steal from Mikey?",
+   "choices": [
+    "他的晚餐",
+    "他的木筏",
+    "JJ 的塔",
+    "他的钥匙"
+   ],
+   "prompt_en": "What did the birds steal from Mikey?",
+   "prompt_zh": "鸟儿从 Mikey 那里偷走了什么？",
+   "choices_en": [
+    "his dinner",
+    "his raft",
+    "JJ's tower",
+    "his keys"
+   ],
+   "choices_zh": [
+    "他的晚餐",
+    "他的木筏",
+    "JJ 的塔",
+    "他的钥匙"
+   ],
+   "source_text_en": "The birds stole everything and flew away!",
+   "answer": 0
+  },
+  {
+   "id": "mikey-b2-fill1",
+   "type": "context-fill",
+   "term": "flood",
+   "source_sentence_id": "b2-p01-s03",
+   "source_text_en": "The world will flood!",
+   "q": "The world will ____!",
+   "prompt_en": "The world will ____!",
+   "prompt_zh": "世界将被洪水淹没！",
+   "choices": [
+    "sturdy",
+    "disaster",
+    "flood",
+    "raft"
+   ],
+   "choices_zh": [],
+   "answer": 2,
+   "audio": "assets/mikey-jj/water-house-adventure/sentences/page-01-sentence-03.mp3",
+   "explanation": "flood = 洪水"
+  },
+  {
+   "id": "mikey-b2-q04",
+   "type": "comprehension",
+   "concept_id": "stop-shark-with-electric-shock",
+   "source_sentence_ids": [
+    "b2-p08-s02",
+    "b2-p08-s04"
+   ],
+   "q": "How did JJ stop the shark?",
+   "choices": [
+    "用秘密武器的电击",
+    "用大炮轰",
+    "用平底锅砸",
+    "用弓箭射"
+   ],
+   "prompt_en": "How did JJ stop the shark?",
+   "prompt_zh": "JJ 是如何阻止鲨鱼的？",
+   "choices_en": [
+    "an electric shock from the secret weapon",
+    "a cannon blast",
+    "a frying pan",
+    "a bow and arrow"
+   ],
+   "choices_zh": [
+    "用秘密武器的电击",
+    "用大炮轰",
+    "用平底锅砸",
+    "用弓箭射"
+   ],
+   "source_text_en": "Electric shock!",
+   "answer": 0
+  },
+  {
+   "id": "mikey-b2-q05",
+   "type": "comprehension",
+   "concept_id": "survive-water-world",
+   "source_sentence_ids": [
+    "b2-p10-s03"
+   ],
+   "q": "What happens at the end of the story?",
+   "choices": [
+    "他们在水世界里活了下来",
+    "只有鲨鱼活了下来",
+    "木筏被海水吞没",
+    "海鸥抢走了房子"
+   ],
+   "prompt_en": "What happens at the end of the story?",
+   "prompt_zh": "故事结尾发生了什么？",
+   "choices_en": [
+    "They survived in the water world",
+    "Only the shark survived",
+    "The raft was swallowed by the sea",
+    "Seagulls stole the house"
+   ],
+   "choices_zh": [
+    "他们在水世界里活了下来",
+    "只有鲨鱼活了下来",
+    "木筏被海水吞没",
+    "海鸥抢走了房子"
+   ],
+   "source_text_en": "We survived the water world!",
+   "answer": 0
+  },
+  {
+   "id": "mikey-b2-listen1",
+   "type": "listen-choice",
+   "source_sentence_id": "b2-p02-s01",
+   "source_text_en": "These titanium pillars will never rust!",
+   "q": "🔊 Listen. Which sentence do you hear?",
+   "prompt_en": "🔊 Listen. Which sentence do you hear?",
+   "prompt_zh": "听录音，选出你听到的句子。",
+   "choices": [
+    "I will build a tower on sturdy pillars.",
+    "We must build shelters immediately.",
+    "These titanium pillars will never rust!",
+    "They had to work quickly to save themselves."
+   ],
+   "choices_zh": [
+    "我要在坚固的柱子上建一座塔。",
+    "我们必须立即建造避难所。",
+    "这些钛合金柱子永远不会生锈！",
+    "他们必须迅速行动来拯救自己。"
+   ],
+   "answer": 2,
+   "audio": "assets/mikey-jj/water-house-adventure/sentences/page-02-sentence-01.mp3",
+   "explanation": "这些钛合金柱子永远不会生锈！"
+  },
+  {
+   "id": "mikey-b2-fill2",
+   "type": "context-fill",
+   "term": "machine",
+   "source_sentence_id": "b2-p04-s01",
+   "source_text_en": "JJ had a clever machine for survival!",
+   "q": "JJ had a clever ____ for survival!",
+   "prompt_en": "JJ had a clever ____ for survival!",
+   "prompt_zh": "JJ 有一个聪明的求生机器！",
+   "choices": [
+    "machine",
+    "disaster",
+    "sturdy",
+    "raft"
+   ],
+   "choices_zh": [],
+   "answer": 0,
+   "audio": "assets/mikey-jj/water-house-adventure/sentences/page-04-sentence-01.mp3",
+   "explanation": "machine = 机器"
+  },
+  {
+   "id": "mikey-b2-listen2",
+   "type": "listen-choice",
+   "source_sentence_id": "b2-p05-s04",
+   "source_text_en": "The birds stole everything and flew away!",
+   "q": "🔊 Listen. Which sentence do you hear?",
+   "prompt_en": "🔊 Listen. Which sentence do you hear?",
+   "prompt_zh": "听录音，选出你听到的句子。",
+   "choices": [
+    "We must build shelters immediately.",
+    "The birds stole everything and flew away!",
+    "I will build a tower on sturdy pillars.",
+    "They had to work quickly to save themselves."
+   ],
+   "choices_zh": [
+    "我们必须立即建造避难所。",
+    "鸟儿们偷走了所有东西，飞走了！",
+    "我要在坚固的柱子上建一座塔。",
+    "他们必须迅速行动来拯救自己。"
+   ],
+   "answer": 1,
+   "audio": "assets/mikey-jj/water-house-adventure/sentences/page-05-sentence-04.mp3",
+   "explanation": "鸟儿们偷走了所有东西，飞走了！"
+  }
+ ],
+ "quiz_bg": "assets/mikey-jj/water-house-adventure/quiz-bg.webp"
+}

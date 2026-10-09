@@ -1,0 +1,1160 @@
+{
+  "schema_version": 1,
+  "book": 1,
+  "scope": "whole book (64 atomic sentences)",
+  "note": "speaker 归属基于 Codex 面板视觉审计（角色标签/位置）：JJ 与 MIKEY 按句精确指定，b1-p09-s01 为僵尸校长译文吼叫（system/角色）；无 narrator 冒充。bubble 坐标为 Windows OCR 行包围盒按整页 1440x1920 归一化；words 为 faster-whisper base.en 词级（VAD 主，noVAD 补缺，句内顺序消费）。",
+  "annotations": {
+    "b1-p01-s01": {
+      "text_en": "Run, Mikey!",
+      "zh": "快跑，Mikey！",
+      "speaker": {
+        "id": "jj",
+        "label": "JJ"
+      },
+      "bubble": {
+        "x": 0.169,
+        "y": 0.147,
+        "w": 0.271,
+        "h": 0.117,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 690,
+      "end_ms": 1790
+    },
+    "b1-p01-s02": {
+      "text_en": "We are late for class!",
+      "zh": "我们上课要迟到了！",
+      "speaker": {
+        "id": "jj",
+        "label": "JJ"
+      },
+      "bubble": {
+        "x": 0.169,
+        "y": 0.147,
+        "w": 0.271,
+        "h": 0.117,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 1990,
+      "end_ms": 3110
+    },
+    "b1-p01-s03": {
+      "text_en": "The teacher is going to give us detention!",
+      "zh": "老师会让我们留堂的！",
+      "speaker": {
+        "id": "mikey",
+        "label": "MIKEY"
+      },
+      "bubble": {
+        "x": 0.708,
+        "y": 0.209,
+        "w": 0.206,
+        "h": 0.114,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 3830,
+      "end_ms": 6130
+    },
+    "b1-p01-s04": {
+      "text_en": "Hello?",
+      "zh": "喂？",
+      "speaker": {
+        "id": "jj",
+        "label": "JJ"
+      },
+      "bubble": {
+        "x": 0.147,
+        "y": 0.58,
+        "w": 0.211,
+        "h": 0.106,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 7210,
+      "end_ms": 7770
+    },
+    "b1-p01-s05": {
+      "text_en": "Where is everybody?",
+      "zh": "大家都去哪儿了？",
+      "speaker": {
+        "id": "jj",
+        "label": "JJ"
+      },
+      "bubble": {
+        "x": 0.147,
+        "y": 0.58,
+        "w": 0.211,
+        "h": 0.106,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 8310,
+      "end_ms": 9270
+    },
+    "b1-p01-s06": {
+      "text_en": "Maybe it is a holiday?",
+      "zh": "也许今天是放假？",
+      "speaker": {
+        "id": "mikey",
+        "label": "MIKEY"
+      },
+      "bubble": {
+        "x": 0.634,
+        "y": 0.578,
+        "w": 0.277,
+        "h": 0.134,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 10070,
+      "end_ms": 11530
+    },
+    "b1-p01-s07": {
+      "text_en": "Or maybe everyone is hiding for a surprise party?",
+      "zh": "或者大家都躲起来，准备开惊喜派对！",
+      "speaker": {
+        "id": "mikey",
+        "label": "MIKEY"
+      },
+      "bubble": {
+        "x": 0.634,
+        "y": 0.578,
+        "w": 0.277,
+        "h": 0.134,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 11590,
+      "end_ms": 15090
+    },
+    "b1-p02-s01": {
+      "text_en": "Look outside! Zombies!",
+      "zh": "快看窗外——是僵尸！",
+      "speaker": {
+        "id": "jj",
+        "label": "JJ"
+      },
+      "bubble": {
+        "x": 0.338,
+        "y": 0.128,
+        "w": 0.192,
+        "h": 0.1,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 17070,
+      "end_ms": 19300
+    },
+    "b1-p02-s02": {
+      "text_en": "That is the worst surprise party ever!",
+      "zh": "这是史上最糟糕的惊喜派对了！",
+      "speaker": {
+        "id": "mikey",
+        "label": "MIKEY"
+      },
+      "bubble": {
+        "x": 0.721,
+        "y": 0.171,
+        "w": 0.247,
+        "h": 0.119,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 19710,
+      "end_ms": 22590
+    },
+    "b1-p02-s03": {
+      "text_en": "The school is surrounded!",
+      "zh": "学校被包围了！",
+      "speaker": {
+        "id": "jj",
+        "label": "JJ"
+      },
+      "bubble": {
+        "x": 0.373,
+        "y": 0.563,
+        "w": 0.275,
+        "h": 0.132,
+        "tail": "none",
+        "variant": "narration"
+      },
+      "start_ms": 23310,
+      "end_ms": 24530
+    },
+    "b1-p02-s04": {
+      "text_en": "We have to get to the helicopter on the roof!",
+      "zh": "我们得赶到屋顶上的直升机那里！",
+      "speaker": {
+        "id": "jj",
+        "label": "JJ"
+      },
+      "bubble": {
+        "x": 0.373,
+        "y": 0.563,
+        "w": 0.275,
+        "h": 0.132,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 24970,
+      "end_ms": 26990
+    },
+    "b1-p02-s05": {
+      "text_en": "But we are on the first floor!",
+      "zh": "可我们在一楼！",
+      "speaker": {
+        "id": "mikey",
+        "label": "MIKEY"
+      },
+      "bubble": {
+        "x": 0.699,
+        "y": 0.614,
+        "w": 0.257,
+        "h": 0.109,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 27650,
+      "end_ms": 29390
+    },
+    "b1-p02-s06": {
+      "text_en": "We have to go up!",
+      "zh": "我们得往上走！",
+      "speaker": {
+        "id": "mikey",
+        "label": "MIKEY"
+      },
+      "bubble": {
+        "x": 0.699,
+        "y": 0.614,
+        "w": 0.257,
+        "h": 0.109,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 29870,
+      "end_ms": 30890
+    },
+    "b1-p03-s01": {
+      "text_en": "Look!",
+      "zh": "看！",
+      "speaker": {
+        "id": "jj",
+        "label": "JJ"
+      },
+      "bubble": {
+        "x": 0.367,
+        "y": 0.114,
+        "w": 0.248,
+        "h": 0.124,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 32680,
+      "end_ms": 33280
+    },
+    "b1-p03-s02": {
+      "text_en": "Golden apples!",
+      "zh": "金苹果！",
+      "speaker": {
+        "id": "jj",
+        "label": "JJ"
+      },
+      "bubble": {
+        "x": 0.367,
+        "y": 0.114,
+        "w": 0.248,
+        "h": 0.124,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 33600,
+      "end_ms": 34360
+    },
+    "b1-p03-s03": {
+      "text_en": "These will heal us if we get bitten!",
+      "zh": "如果我们被咬了，这些能治好我们。",
+      "speaker": {
+        "id": "jj",
+        "label": "JJ"
+      },
+      "bubble": {
+        "x": 0.367,
+        "y": 0.114,
+        "w": 0.248,
+        "h": 0.124,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 35200,
+      "end_ms": 37240
+    },
+    "b1-p03-s04": {
+      "text_en": "Grab them!",
+      "zh": "快拿上它们！",
+      "speaker": {
+        "id": "mikey",
+        "label": "MIKEY"
+      },
+      "bubble": {
+        "x": 0.718,
+        "y": 0.119,
+        "w": 0.213,
+        "h": 0.122,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 38180,
+      "end_ms": 38860
+    },
+    "b1-p03-s05": {
+      "text_en": "I will use this frying pan as a weapon!",
+      "zh": "我要用这个平底锅当武器！",
+      "speaker": {
+        "id": "mikey",
+        "label": "MIKEY"
+      },
+      "bubble": {
+        "x": 0.718,
+        "y": 0.119,
+        "w": 0.213,
+        "h": 0.122,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 39180,
+      "end_ms": 41300
+    },
+    "b1-p03-s06": {
+      "text_en": "No snacks for you, zombie!",
+      "zh": "零食没你的份，僵尸！",
+      "speaker": {
+        "id": "jj",
+        "label": "JJ"
+      },
+      "bubble": {
+        "x": 0.589,
+        "y": 0.578,
+        "w": 0.203,
+        "h": 0.1,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 41820,
+      "end_ms": 43660
+    },
+    "b1-p03-s07": {
+      "text_en": "Nice swing, JJ!",
+      "zh": "挥得漂亮，JJ！",
+      "speaker": {
+        "id": "mikey",
+        "label": "MIKEY"
+      },
+      "bubble": {
+        "x": 0.806,
+        "y": 0.612,
+        "w": 0.161,
+        "h": 0.091,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 44280,
+      "end_ms": 45560
+    },
+    "b1-p04-s01": {
+      "text_en": "We need something to clear the path!",
+      "zh": "我们需要东西来清出一条路。",
+      "speaker": {
+        "id": "jj",
+        "label": "JJ"
+      },
+      "bubble": {
+        "x": 0.208,
+        "y": 0.136,
+        "w": 0.224,
+        "h": 0.1,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 47490,
+      "end_ms": 49710
+    },
+    "b1-p04-s02": {
+      "text_en": "Look!",
+      "zh": "看！",
+      "speaker": {
+        "id": "mikey",
+        "label": "MIKEY"
+      },
+      "bubble": {
+        "x": 0.616,
+        "y": 0.129,
+        "w": 0.232,
+        "h": 0.128,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 50330,
+      "end_ms": 50770
+    },
+    "b1-p04-s03": {
+      "text_en": "The science teacher left some TNT and splash potions!",
+      "zh": "科学老师留下了一些 TNT 和喷溅药水！",
+      "speaker": {
+        "id": "mikey",
+        "label": "MIKEY"
+      },
+      "bubble": {
+        "x": 0.616,
+        "y": 0.129,
+        "w": 0.232,
+        "h": 0.128,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 51250,
+      "end_ms": 54410
+    },
+    "b1-p04-s04": {
+      "text_en": "I will take the TNT!",
+      "zh": "我要拿 TNT！",
+      "speaker": {
+        "id": "mikey",
+        "label": "MIKEY"
+      },
+      "bubble": {
+        "x": 0.071,
+        "y": 0.56,
+        "w": 0.394,
+        "h": 0.122,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 55640,
+      "end_ms": 56740
+    },
+    "b1-p04-s05": {
+      "text_en": "Boom, boom is my specialty!",
+      "zh": "砰砰，这是我的拿手好戏！",
+      "speaker": {
+        "id": "mikey",
+        "label": "MIKEY"
+      },
+      "bubble": {
+        "x": 0.071,
+        "y": 0.56,
+        "w": 0.394,
+        "h": 0.122,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 57740,
+      "end_ms": 58980
+    },
+    "b1-p04-s06": {
+      "text_en": "I will take the healing potions!",
+      "zh": "我要拿治疗药水！",
+      "speaker": {
+        "id": "jj",
+        "label": "JJ"
+      },
+      "bubble": {
+        "x": 0.589,
+        "y": 0.56,
+        "w": 0.372,
+        "h": 0.123,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 59660,
+      "end_ms": 61460
+    },
+    "b1-p04-s07": {
+      "text_en": "Did you know healing magic hurts zombies?",
+      "zh": "你知道吗，治疗魔法会伤害僵尸哦！",
+      "speaker": {
+        "id": "jj",
+        "label": "JJ"
+      },
+      "bubble": {
+        "x": 0.589,
+        "y": 0.56,
+        "w": 0.372,
+        "h": 0.123,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 61460,
+      "end_ms": 64540
+    },
+    "b1-p05-s01": {
+      "text_en": "Three doors.",
+      "zh": "三扇门。",
+      "speaker": {
+        "id": "jj",
+        "label": "JJ"
+      },
+      "bubble": {
+        "x": 0.277,
+        "y": 0.107,
+        "w": 0.256,
+        "h": 0.134,
+        "tail": "none",
+        "variant": "narration"
+      },
+      "start_ms": 66540,
+      "end_ms": 67380
+    },
+    "b1-p05-s02": {
+      "text_en": "Only one leads to the stairs.",
+      "zh": "只有一扇通向楼梯。",
+      "speaker": {
+        "id": "jj",
+        "label": "JJ"
+      },
+      "bubble": {
+        "x": 0.277,
+        "y": 0.107,
+        "w": 0.256,
+        "h": 0.134,
+        "tail": "none",
+        "variant": "narration"
+      },
+      "start_ms": 68100,
+      "end_ms": 69680
+    },
+    "b1-p05-s03": {
+      "text_en": "The others are traps!",
+      "zh": "其他的都是陷阱！",
+      "speaker": {
+        "id": "jj",
+        "label": "JJ"
+      },
+      "bubble": {
+        "x": 0.277,
+        "y": 0.107,
+        "w": 0.256,
+        "h": 0.134,
+        "tail": "none",
+        "variant": "narration"
+      },
+      "start_ms": 70300,
+      "end_ms": 71360
+    },
+    "b1-p05-s04": {
+      "text_en": "Eenie, meenie, miney...",
+      "zh": "点点点……",
+      "speaker": {
+        "id": "mikey",
+        "label": "MIKEY"
+      },
+      "bubble": {
+        "x": 0.57,
+        "y": 0.137,
+        "w": 0.23,
+        "h": 0.115,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 72080,
+      "end_ms": 73560
+    },
+    "b1-p05-s05": {
+      "text_en": "I choose the middle door!",
+      "zh": "我选中间那扇门！",
+      "speaker": {
+        "id": "mikey",
+        "label": "MIKEY"
+      },
+      "bubble": {
+        "x": 0.57,
+        "y": 0.137,
+        "w": 0.23,
+        "h": 0.115,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 73860,
+      "end_ms": 75220
+    },
+    "b1-p05-s06": {
+      "text_en": "Mistake!",
+      "zh": "糟了！",
+      "speaker": {
+        "id": "mikey",
+        "label": "MIKEY"
+      },
+      "bubble": {
+        "x": 0.052,
+        "y": 0.581,
+        "w": 0.209,
+        "h": 0.109,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 76360,
+      "end_ms": 76960
+    },
+    "b1-p05-s07": {
+      "text_en": "It's a spider closet!",
+      "zh": "这是个蜘蛛储物间！",
+      "speaker": {
+        "id": "mikey",
+        "label": "MIKEY"
+      },
+      "bubble": {
+        "x": 0.052,
+        "y": 0.581,
+        "w": 0.209,
+        "h": 0.109,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 77300,
+      "end_ms": 78400
+    },
+    "b1-p05-s08": {
+      "text_en": "Close it, Mikey!",
+      "zh": "快关上它，Mikey！",
+      "speaker": {
+        "id": "jj",
+        "label": "JJ"
+      },
+      "bubble": {
+        "x": 0.802,
+        "y": 0.584,
+        "w": 0.141,
+        "h": 0.105,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 79120,
+      "end_ms": 80500
+    },
+    "b1-p06-s01": {
+      "text_en": "That was close!",
+      "zh": "真是太惊险了！",
+      "speaker": {
+        "id": "jj",
+        "label": "JJ"
+      },
+      "bubble": {
+        "x": 0.136,
+        "y": 0.107,
+        "w": 0.275,
+        "h": 0.131,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 82140,
+      "end_ms": 83080
+    },
+    "b1-p06-s02": {
+      "text_en": "Look at the floor, Mikey!",
+      "zh": "看地板，Mikey！",
+      "speaker": {
+        "id": "jj",
+        "label": "JJ"
+      },
+      "bubble": {
+        "x": 0.136,
+        "y": 0.107,
+        "w": 0.275,
+        "h": 0.131,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 83920,
+      "end_ms": 85120
+    },
+    "b1-p06-s03": {
+      "text_en": "Footprints lead to the left door!",
+      "zh": "脚印通向左边那扇门！",
+      "speaker": {
+        "id": "jj",
+        "label": "JJ"
+      },
+      "bubble": {
+        "x": 0.136,
+        "y": 0.107,
+        "w": 0.275,
+        "h": 0.131,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 85380,
+      "end_ms": 87300
+    },
+    "b1-p06-s04": {
+      "text_en": "That must be the way to the roof!",
+      "zh": "那一定就是通往屋顶的路！",
+      "speaker": {
+        "id": "mikey",
+        "label": "MIKEY"
+      },
+      "bubble": {
+        "x": 0.724,
+        "y": 0.209,
+        "w": 0.191,
+        "h": 0.115,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 87980,
+      "end_ms": 89840
+    },
+    "b1-p06-s05": {
+      "text_en": "It's the stairs!",
+      "zh": "是楼梯！",
+      "speaker": {
+        "id": "jj",
+        "label": "JJ"
+      },
+      "bubble": {
+        "x": 0.141,
+        "y": 0.572,
+        "w": 0.208,
+        "h": 0.116,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 90810,
+      "end_ms": 91780
+    },
+    "b1-p06-s06": {
+      "text_en": "We are almost there!",
+      "zh": "我们快到了！",
+      "speaker": {
+        "id": "jj",
+        "label": "JJ"
+      },
+      "bubble": {
+        "x": 0.141,
+        "y": 0.572,
+        "w": 0.208,
+        "h": 0.116,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 92300,
+      "end_ms": 93520
+    },
+    "b1-p06-s07": {
+      "text_en": "Goodbye, spiders!",
+      "zh": "再见啦，蜘蛛们！",
+      "speaker": {
+        "id": "mikey",
+        "label": "MIKEY"
+      },
+      "bubble": {
+        "x": 0.377,
+        "y": 0.648,
+        "w": 0.143,
+        "h": 0.09,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 94120,
+      "end_ms": 95080
+    },
+    "b1-p07-s01": {
+      "text_en": "The floor is gone!",
+      "zh": "地板不见了！",
+      "speaker": {
+        "id": "jj",
+        "label": "JJ"
+      },
+      "bubble": {
+        "x": 0.113,
+        "y": 0.097,
+        "w": 0.232,
+        "h": 0.114,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 97270,
+      "end_ms": 98790
+    },
+    "b1-p07-s02": {
+      "text_en": "We have to parkour across!",
+      "zh": "我们得跑酷跳过去！",
+      "speaker": {
+        "id": "jj",
+        "label": "JJ"
+      },
+      "bubble": {
+        "x": 0.113,
+        "y": 0.097,
+        "w": 0.232,
+        "h": 0.114,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 99290,
+      "end_ms": 101050
+    },
+    "b1-p07-s03": {
+      "text_en": "But I have a heavy shell!",
+      "zh": "但我有一个沉重的壳！",
+      "speaker": {
+        "id": "mikey",
+        "label": "MIKEY"
+      },
+      "bubble": {
+        "x": 0.665,
+        "y": 0.106,
+        "w": 0.174,
+        "h": 0.1,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 101850,
+      "end_ms": 103410
+    },
+    "b1-p07-s04": {
+      "text_en": "Turtle power!",
+      "zh": "乌龟力量！",
+      "speaker": {
+        "id": "mikey",
+        "label": "MIKEY"
+      },
+      "bubble": {
+        "x": 0.079,
+        "y": 0.567,
+        "w": 0.287,
+        "h": 0.127,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 104550,
+      "end_ms": 105690
+    },
+    "b1-p07-s05": {
+      "text_en": "Jump, Mikey!",
+      "zh": "跳，Mikey！",
+      "speaker": {
+        "id": "jj",
+        "label": "JJ"
+      },
+      "bubble": {
+        "x": 0.767,
+        "y": 0.565,
+        "w": 0.182,
+        "h": 0.091,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 106490,
+      "end_ms": 107530
+    },
+    "b1-p07-s06": {
+      "text_en": "I got you!",
+      "zh": "我接住你了！",
+      "speaker": {
+        "id": "jj",
+        "label": "JJ"
+      },
+      "bubble": {
+        "x": 0.767,
+        "y": 0.565,
+        "w": 0.182,
+        "h": 0.091,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 107770,
+      "end_ms": 108450
+    },
+    "b1-p08-s01": {
+      "text_en": "It's stuck!",
+      "zh": "卡住了！",
+      "speaker": {
+        "id": "jj",
+        "label": "JJ"
+      },
+      "bubble": {
+        "x": 0.076,
+        "y": 0.083,
+        "w": 0.191,
+        "h": 0.114,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 110180,
+      "end_ms": 111280
+    },
+    "b1-p08-s02": {
+      "text_en": "We can't break it!",
+      "zh": "我们打不开它！",
+      "speaker": {
+        "id": "jj",
+        "label": "JJ"
+      },
+      "bubble": {
+        "x": 0.076,
+        "y": 0.083,
+        "w": 0.191,
+        "h": 0.114,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 111280,
+      "end_ms": 112860
+    },
+    "b1-p08-s03": {
+      "text_en": "Stand back!",
+      "zh": "往后退！",
+      "speaker": {
+        "id": "mikey",
+        "label": "MIKEY"
+      },
+      "bubble": {
+        "x": 0.737,
+        "y": 0.088,
+        "w": 0.206,
+        "h": 0.115,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 112860,
+      "end_ms": 114320
+    },
+    "b1-p08-s04": {
+      "text_en": "It is science time!",
+      "zh": "科学时间到！",
+      "speaker": {
+        "id": "mikey",
+        "label": "MIKEY"
+      },
+      "bubble": {
+        "x": 0.737,
+        "y": 0.088,
+        "w": 0.206,
+        "h": 0.115,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 114320,
+      "end_ms": 115940
+    },
+    "b1-p08-s05": {
+      "text_en": "Good job, Mikey!",
+      "zh": "干得好，Mikey！",
+      "speaker": {
+        "id": "jj",
+        "label": "JJ"
+      },
+      "bubble": {
+        "x": 0.135,
+        "y": 0.658,
+        "w": 0.207,
+        "h": 0.117,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 117000,
+      "end_ms": 118560
+    },
+    "b1-p08-s06": {
+      "text_en": "To the roof!",
+      "zh": "去屋顶！",
+      "speaker": {
+        "id": "jj",
+        "label": "JJ"
+      },
+      "bubble": {
+        "x": 0.135,
+        "y": 0.658,
+        "w": 0.207,
+        "h": 0.117,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 118720,
+      "end_ms": 119380
+    },
+    "b1-p09-s01": {
+      "text_en": "No running in the halls!",
+      "zh": "走廊里不许跑！",
+      "speaker": {
+        "id": "system",
+        "label": "角色"
+      },
+      "bubble": {
+        "x": 0.574,
+        "y": 0.072,
+        "w": 0.414,
+        "h": 0.116,
+        "tail": "none",
+        "variant": "narration"
+      },
+      "start_ms": 123220,
+      "end_ms": 125000
+    },
+    "b1-p09-s02": {
+      "text_en": "He has the keys!",
+      "zh": "钥匙在他手里！",
+      "speaker": {
+        "id": "jj",
+        "label": "JJ"
+      },
+      "bubble": {
+        "x": 0.733,
+        "y": 0.238,
+        "w": 0.23,
+        "h": 0.124,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 125660,
+      "end_ms": 127100
+    },
+    "b1-p09-s03": {
+      "text_en": "We have to fight him!",
+      "zh": "我们得和他打一架！",
+      "speaker": {
+        "id": "jj",
+        "label": "JJ"
+      },
+      "bubble": {
+        "x": 0.733,
+        "y": 0.238,
+        "w": 0.23,
+        "h": 0.124,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 127800,
+      "end_ms": 128880
+    },
+    "b1-p09-s04": {
+      "text_en": "Eat healthy, Principal!",
+      "zh": "吃点健康的吧，校长！",
+      "speaker": {
+        "id": "jj",
+        "label": "JJ"
+      },
+      "bubble": {
+        "x": 0.166,
+        "y": 0.585,
+        "w": 0.229,
+        "h": 0.106,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 129640,
+      "end_ms": 130460
+    },
+    "b1-p10-s01": {
+      "text_en": "I got the keys!",
+      "zh": "我拿到钥匙了！",
+      "speaker": {
+        "id": "mikey",
+        "label": "MIKEY"
+      },
+      "bubble": {
+        "x": 0.079,
+        "y": 0.157,
+        "w": 0.248,
+        "h": 0.101,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 133110,
+      "end_ms": 134270
+    },
+    "b1-p10-s02": {
+      "text_en": "Start the engine!",
+      "zh": "发动引擎！",
+      "speaker": {
+        "id": "mikey",
+        "label": "MIKEY"
+      },
+      "bubble": {
+        "x": 0.079,
+        "y": 0.157,
+        "w": 0.248,
+        "h": 0.101,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 135070,
+      "end_ms": 135750
+    },
+    "b1-p10-s03": {
+      "text_en": "Goodbye, school!",
+      "zh": "再见，学校！",
+      "speaker": {
+        "id": "jj",
+        "label": "JJ"
+      },
+      "bubble": {
+        "x": 0.356,
+        "y": 0.524,
+        "w": 0.183,
+        "h": 0.069,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 136900,
+      "end_ms": 138160
+    },
+    "b1-p10-s04": {
+      "text_en": "Does this mean no homework?",
+      "zh": "这是不是意味着……没有家庭作业？",
+      "speaker": {
+        "id": "mikey",
+        "label": "MIKEY"
+      },
+      "bubble": {
+        "x": 0.321,
+        "y": 0.608,
+        "w": 0.24,
+        "h": 0.097,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 138780,
+      "end_ms": 140680
+    },
+    "b1-p10-s05": {
+      "text_en": "Yes, Mikey.",
+      "zh": "是的，Mikey。",
+      "speaker": {
+        "id": "jj",
+        "label": "JJ"
+      },
+      "bubble": {
+        "x": 0.69,
+        "y": 0.639,
+        "w": 0.203,
+        "h": 0.103,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 141810,
+      "end_ms": 142990
+    },
+    "b1-p10-s06": {
+      "text_en": "No homework!",
+      "zh": "没有家庭作业！",
+      "speaker": {
+        "id": "jj",
+        "label": "JJ"
+      },
+      "bubble": {
+        "x": 0.69,
+        "y": 0.639,
+        "w": 0.203,
+        "h": 0.103,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 143280,
+      "end_ms": 143810
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "story_id": "jttw_stone_monkey",
+  "title": {
+    "en": "The Stone Monkey",
+    "zh": "石猴出世"
+  },
+  "source_note": "改编自吴承恩《西游记》第一回（公共领域）。英文台词为原创简写，不含任何第三方分级读物内容。",
+  "chapters": [
+    {
+      "chapter_id": "ch01",
+      "title": {
+        "en": "Birth and the Waterfall",
+        "zh": "出世与瀑布"
+      },
+      "scenes": [
+        "sc01_mountain_birth"
+      ],
+      "summary_for_checkpoint": "石猴生于花果山仙石，勇探瀑布后洞天，率群猴进入水帘洞，被拜为美猴王。",
+      "checkpoint_after": "ch01",
+      "quiz": [
+        {
+          "q": "Where was Monkey born? 石猴从哪里出生？",
+          "choices": [
+            "A magic rock 一块仙石",
+            "A river 一条河",
+            "Heaven 天宫"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What did the monkeys promise? 群猴约定：谁敢跳进瀑布再出来，就拥他为什么？",
+          "choices": [
+            "Their king 拜他为王",
+            "A big banana 一根大香蕉",
+            "Nothing 什么都没有"
+          ],
+          "answer": 0
+        },
+        {
+          "q": "What was behind the waterfall? 瀑布后面藏着什么？",
+          "choices": [
+            "A tiger 一只老虎",
+            "The Water-Curtain Cave 水帘洞",
+            "A dragon 一条龙"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ],
+  "checkpoint": {
+    "max_chars": 80,
+    "summary_prompt": "用不超过80字总结本章关键事件和玩家的关键选择，第三人称，中文。",
+    "inject_into_next_chapter": true
+  }
+}

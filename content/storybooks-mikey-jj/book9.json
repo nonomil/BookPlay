@@ -1,0 +1,2302 @@
+{
+ "schema_version": 1,
+ "storybook_id": "mikey-jj_scary-cat-adventure",
+ "series": "mikey-jj",
+ "book": 9,
+ "series_count": 11,
+ "published_count": 10,
+ "layout": "spread_with_right_caption",
+ "title": {
+  "en": "Scary Cat Adventure",
+  "zh": "怪猫来袭之夜"
+ },
+ "source_note": "页图逐页视觉核对；speaker 依据气泡尾部与角色位置标注。字幕以 faster-whisper base.en VAD 词级时间为主，原子句按真实停顿拆分；Godzilla 第9页仅有画面爆炸拟声，显式标记 audio_missing，未伪造人声。源 PDF、MP3 与页图只读。",
+ "sources": {
+  "pdf": "书籍资料库/Mikey & JJ 英文冒险/PDF/Scary Cat Adventure.pdf",
+  "mp3": "书籍资料库/Mikey & JJ 英文冒险/audio/Scary Cat Adventure.mp3",
+  "source_video": "书籍资料库/Mikey & JJ 英文冒险/MikeyJJ Audio Books/Scary Cat Adventure.mp4",
+  "derived_audio": "prj/data/storybooks-mikey-jj/source-audio/scary-cat-adventure.mp3"
+ },
+ "audio": "assets/mikey-jj/scary-cat-adventure/audio.mp3",
+ "audio_duration_sec": 117.312,
+ "pages": [
+  {
+   "page_no": 1,
+   "source_page": 1,
+   "image": "assets/mikey-jj/scary-cat-adventure/pages/p01.webp",
+   "text_en": "Welcome aboard the Billionaires! Maiden voyage special, tickets only $10,000. I'll build a high-tech concrete fortress. I'll cover the house with sticky webs way faster.",
+   "start_ms": 620,
+   "end_ms": 18360,
+   "sentences": [
+    {
+     "id": "b9-p01-s01",
+     "text_en": "Welcome aboard the Billionaires!",
+     "zh": "登船。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.054,
+      "y": 0.048,
+      "w": 0.405,
+      "h": 0.137,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 620,
+     "end_ms": 5100,
+     "audio": "assets/mikey-jj/scary-cat-adventure/sentences/page-01-sentence-01.mp3",
+     "words": [
+      {
+       "text": "Scary",
+       "start_ms": 0,
+       "end_ms": 840
+      },
+      {
+       "text": "cat",
+       "start_ms": 840,
+       "end_ms": 1140
+      },
+      {
+       "text": "is",
+       "start_ms": 1140,
+       "end_ms": 1440
+      },
+      {
+       "text": "coming.",
+       "start_ms": 1440,
+       "end_ms": 1700
+      },
+      {
+       "text": "We",
+       "start_ms": 2280,
+       "end_ms": 2300
+      },
+      {
+       "text": "split",
+       "start_ms": 2300,
+       "end_ms": 2560
+      },
+      {
+       "text": "up",
+       "start_ms": 2560,
+       "end_ms": 2860
+      },
+      {
+       "text": "to",
+       "start_ms": 2860,
+       "end_ms": 3040
+      },
+      {
+       "text": "keep",
+       "start_ms": 3040,
+       "end_ms": 3240
+      },
+      {
+       "text": "our",
+       "start_ms": 3240,
+       "end_ms": 3440
+      },
+      {
+       "text": "families",
+       "start_ms": 3440,
+       "end_ms": 3900
+      },
+      {
+       "text": "safe.",
+       "start_ms": 3900,
+       "end_ms": 4480
+      }
+     ],
+     "glossary": [
+      {
+       "term": "welcome",
+       "ipa": "ˈwelkəm",
+       "pos": "V",
+       "zh": "欢迎"
+      }
+     ]
+    },
+    {
+     "id": "b9-p01-s02",
+     "text_en": "Maiden voyage special, tickets only $10,000.",
+     "zh": "航行。",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.539,
+      "y": 0.045,
+      "w": 0.416,
+      "h": 0.137,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 5680,
+     "end_ms": 10660,
+     "audio": "assets/mikey-jj/scary-cat-adventure/sentences/page-01-sentence-02.mp3",
+     "words": [
+      {
+       "text": "Good",
+       "start_ms": 0,
+       "end_ms": 360
+      },
+      {
+       "text": "plan!",
+       "start_ms": 360,
+       "end_ms": 700
+      },
+      {
+       "text": "You",
+       "start_ms": 1360,
+       "end_ms": 1500
+      },
+      {
+       "text": "take",
+       "start_ms": 1500,
+       "end_ms": 1760
+      },
+      {
+       "text": "your",
+       "start_ms": 1760,
+       "end_ms": 1960
+      },
+      {
+       "text": "family",
+       "start_ms": 1960,
+       "end_ms": 2380
+      },
+      {
+       "text": "that",
+       "start_ms": 2380,
+       "end_ms": 2740
+      },
+      {
+       "text": "way.",
+       "start_ms": 2740,
+       "end_ms": 3020
+      },
+      {
+       "text": "I'll",
+       "start_ms": 3480,
+       "end_ms": 3620
+      },
+      {
+       "text": "leave",
+       "start_ms": 3620,
+       "end_ms": 3820
+      },
+      {
+       "text": "mine",
+       "start_ms": 3820,
+       "end_ms": 4060
+      },
+      {
+       "text": "over",
+       "start_ms": 4060,
+       "end_ms": 4560
+      },
+      {
+       "text": "here.",
+       "start_ms": 4560,
+       "end_ms": 4980
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b9-p01-s03",
+     "text_en": "I'll build a high-tech concrete fortress.",
+     "zh": "堡垒；混凝土。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.068,
+      "y": 0.517,
+      "w": 0.362,
+      "h": 0.106,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 11200,
+     "end_ms": 13780,
+     "audio": "assets/mikey-jj/scary-cat-adventure/sentences/page-01-sentence-03.mp3",
+     "words": [
+      {
+       "text": "I'll",
+       "start_ms": 0,
+       "end_ms": 600
+      },
+      {
+       "text": "build",
+       "start_ms": 600,
+       "end_ms": 820
+      },
+      {
+       "text": "a",
+       "start_ms": 820,
+       "end_ms": 960
+      },
+      {
+       "text": "high",
+       "start_ms": 960,
+       "end_ms": 1240
+      },
+      {
+       "text": "-tech",
+       "start_ms": 1240,
+       "end_ms": 1540
+      },
+      {
+       "text": "concrete",
+       "start_ms": 1540,
+       "end_ms": 1900
+      },
+      {
+       "text": "fortress.",
+       "start_ms": 1900,
+       "end_ms": 2580
+      }
+     ],
+     "glossary": [
+      {
+       "term": "fortress",
+       "ipa": "ˈfɔːtrəs",
+       "pos": "N",
+       "zh": "堡垒"
+      }
+     ]
+    },
+    {
+     "id": "b9-p01-s04",
+     "text_en": "I'll cover the house with sticky webs way faster.",
+     "zh": "黏蜘蛛网。",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.547,
+      "y": 0.512,
+      "w": 0.4,
+      "h": 0.268,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 14740,
+     "end_ms": 18360,
+     "audio": "assets/mikey-jj/scary-cat-adventure/sentences/page-01-sentence-04.mp3",
+     "words": [
+      {
+       "text": "I'll",
+       "start_ms": 0,
+       "end_ms": 320
+      },
+      {
+       "text": "cover",
+       "start_ms": 320,
+       "end_ms": 580
+      },
+      {
+       "text": "the",
+       "start_ms": 580,
+       "end_ms": 880
+      },
+      {
+       "text": "house",
+       "start_ms": 880,
+       "end_ms": 1160
+      },
+      {
+       "text": "with",
+       "start_ms": 1160,
+       "end_ms": 1480
+      },
+      {
+       "text": "sticky",
+       "start_ms": 1480,
+       "end_ms": 1840
+      },
+      {
+       "text": "webs",
+       "start_ms": 1840,
+       "end_ms": 2360
+      },
+      {
+       "text": "way",
+       "start_ms": 2360,
+       "end_ms": 3040
+      },
+      {
+       "text": "faster.",
+       "start_ms": 3040,
+       "end_ms": 3620
+      }
+     ],
+     "glossary": []
+    }
+   ],
+   "panel": [
+    0.0,
+    0.5,
+    0.504,
+    1.0
+   ]
+  },
+  {
+   "page_no": 2,
+   "source_page": 2,
+   "image": "assets/mikey-jj/scary-cat-adventure/pages/p02.webp",
+   "text_en": "Phase 1, perimeter laser grid. Not even a fly gets in. Phase 2, lava curtain. The whole house wrapped in hot lava. Phase 3, rooftop turrets. Just in case he climbs.",
+   "start_ms": 20380,
+   "end_ms": 36080,
+   "sentences": [
+    {
+     "id": "b9-p02-s01",
+     "text_en": "Phase 1, perimeter laser grid. Not even a fly gets in.",
+     "zh": "外围；激光。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.077,
+      "y": 0.045,
+      "w": 0.375,
+      "h": 0.124,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 20380,
+     "end_ms": 24960,
+     "audio": "assets/mikey-jj/scary-cat-adventure/sentences/page-02-sentence-01.mp3",
+     "words": [
+      {
+       "text": "Phase",
+       "start_ms": 0,
+       "end_ms": 400
+      },
+      {
+       "text": "1,",
+       "start_ms": 400,
+       "end_ms": 980
+      },
+      {
+       "text": "perimeter",
+       "start_ms": 1320,
+       "end_ms": 1520
+      },
+      {
+       "text": "laser",
+       "start_ms": 1520,
+       "end_ms": 2080
+      },
+      {
+       "text": "grid.",
+       "start_ms": 2080,
+       "end_ms": 2580
+      },
+      {
+       "text": "Not",
+       "start_ms": 3100,
+       "end_ms": 3160
+      },
+      {
+       "text": "even",
+       "start_ms": 3160,
+       "end_ms": 3440
+      },
+      {
+       "text": "a",
+       "start_ms": 3440,
+       "end_ms": 3580
+      },
+      {
+       "text": "fly",
+       "start_ms": 3580,
+       "end_ms": 3880
+      },
+      {
+       "text": "gets",
+       "start_ms": 3880,
+       "end_ms": 4320
+      },
+      {
+       "text": "in.",
+       "start_ms": 4320,
+       "end_ms": 4580
+      }
+     ],
+     "glossary": [
+      {
+       "term": "laser",
+       "ipa": "ˈleɪzə",
+       "pos": "N",
+       "zh": "激光"
+      }
+     ]
+    },
+    {
+     "id": "b9-p02-s02",
+     "text_en": "Phase 2, lava curtain. The whole house wrapped in hot lava.",
+     "zh": "岩浆；岩浆幕墙。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.077,
+      "y": 0.045,
+      "w": 0.375,
+      "h": 0.124,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 25630,
+     "end_ms": 30260,
+     "audio": "assets/mikey-jj/scary-cat-adventure/sentences/page-02-sentence-02.mp3",
+     "words": [
+      {
+       "text": "Phase",
+       "start_ms": 0,
+       "end_ms": 370
+      },
+      {
+       "text": "2,",
+       "start_ms": 370,
+       "end_ms": 910
+      },
+      {
+       "text": "lava",
+       "start_ms": 1390,
+       "end_ms": 1610
+      },
+      {
+       "text": "curtain.",
+       "start_ms": 1610,
+       "end_ms": 2070
+      },
+      {
+       "text": "The",
+       "start_ms": 2570,
+       "end_ms": 2610
+      },
+      {
+       "text": "whole",
+       "start_ms": 2610,
+       "end_ms": 2770
+      },
+      {
+       "text": "house",
+       "start_ms": 2770,
+       "end_ms": 3290
+      },
+      {
+       "text": "wrapped",
+       "start_ms": 3290,
+       "end_ms": 3490
+      },
+      {
+       "text": "in",
+       "start_ms": 3490,
+       "end_ms": 3850
+      },
+      {
+       "text": "hot",
+       "start_ms": 3850,
+       "end_ms": 4090
+      },
+      {
+       "text": "lava.",
+       "start_ms": 4090,
+       "end_ms": 4630
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b9-p02-s03",
+     "text_en": "Phase 3, rooftop turrets. Just in case he climbs.",
+     "zh": "炮塔。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.527,
+      "y": 0.517,
+      "w": 0.421,
+      "h": 0.13,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 31780,
+     "end_ms": 36080,
+     "audio": "assets/mikey-jj/scary-cat-adventure/sentences/page-02-sentence-03.mp3",
+     "words": [
+      {
+       "text": "Phase",
+       "start_ms": 0,
+       "end_ms": 740
+      },
+      {
+       "text": "3,",
+       "start_ms": 740,
+       "end_ms": 1320
+      },
+      {
+       "text": "rooftop",
+       "start_ms": 1700,
+       "end_ms": 2080
+      },
+      {
+       "text": "turrets.",
+       "start_ms": 2080,
+       "end_ms": 2620
+      },
+      {
+       "text": "Just",
+       "start_ms": 3260,
+       "end_ms": 3360
+      },
+      {
+       "text": "in",
+       "start_ms": 3360,
+       "end_ms": 3600
+      },
+      {
+       "text": "case",
+       "start_ms": 3600,
+       "end_ms": 3820
+      },
+      {
+       "text": "he",
+       "start_ms": 3820,
+       "end_ms": 4060
+      },
+      {
+       "text": "climbs.",
+       "start_ms": 4060,
+       "end_ms": 4300
+      }
+     ],
+     "glossary": [
+      {
+       "term": "turret",
+       "ipa": "ˈtʌrət",
+       "pos": "N",
+       "zh": "炮塔"
+      }
+     ]
+    }
+   ],
+   "panel": [
+    0.0,
+    0.505,
+    0.51,
+    1.0
+   ]
+  },
+  {
+   "page_no": 3,
+   "source_page": 3,
+   "image": "assets/mikey-jj/scary-cat-adventure/pages/p03.webp",
+   "text_en": "Uh, Mikey, are you sure that's safe? Behold Super Web House. Perfect!",
+   "start_ms": 37200,
+   "end_ms": 43220,
+   "sentences": [
+    {
+     "id": "b9-p03-s01",
+     "text_en": "Uh, Mikey, are you sure that's safe?",
+     "zh": "安全。",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.063,
+      "y": 0.049,
+      "w": 0.384,
+      "h": 0.133,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 37200,
+     "end_ms": 39640,
+     "audio": "assets/mikey-jj/scary-cat-adventure/sentences/page-03-sentence-01.mp3",
+     "words": [
+      {
+       "text": "Uh,",
+       "start_ms": 0,
+       "end_ms": 180
+      },
+      {
+       "text": "Mikey,",
+       "start_ms": 620,
+       "end_ms": 1060
+      },
+      {
+       "text": "are",
+       "start_ms": 1220,
+       "end_ms": 1360
+      },
+      {
+       "text": "you",
+       "start_ms": 1360,
+       "end_ms": 1520
+      },
+      {
+       "text": "sure",
+       "start_ms": 1520,
+       "end_ms": 1760
+      },
+      {
+       "text": "that's",
+       "start_ms": 1760,
+       "end_ms": 2180
+      },
+      {
+       "text": "safe?",
+       "start_ms": 2180,
+       "end_ms": 2440
+      }
+     ],
+     "glossary": [
+      {
+       "term": "mikey",
+       "ipa": "ˈmaɪki",
+       "pos": "N",
+       "zh": "Mikey（人名）"
+      }
+     ]
+    },
+    {
+     "id": "b9-p03-s02",
+     "text_en": "Behold Super Web House. Perfect!",
+     "zh": "请跟读并理解这句话。",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.063,
+      "y": 0.049,
+      "w": 0.384,
+      "h": 0.133,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 40320,
+     "end_ms": 43220,
+     "audio": "assets/mikey-jj/scary-cat-adventure/sentences/page-03-sentence-02.mp3",
+     "words": [
+      {
+       "text": "Behold",
+       "start_ms": 0,
+       "end_ms": 580
+      },
+      {
+       "text": "Super",
+       "start_ms": 580,
+       "end_ms": 1100
+      },
+      {
+       "text": "Web",
+       "start_ms": 1100,
+       "end_ms": 1560
+      },
+      {
+       "text": "House.",
+       "start_ms": 1560,
+       "end_ms": 1960
+      },
+      {
+       "text": "Perfect!",
+       "start_ms": 2600,
+       "end_ms": 2900
+      }
+     ],
+     "glossary": [
+      {
+       "term": "behold",
+       "ipa": "bɪˈhəʊld",
+       "pos": "V",
+       "zh": "看啊"
+      }
+     ]
+    }
+   ],
+   "panel": [
+    0.0,
+    0.505,
+    0.51,
+    1.0
+   ]
+  },
+  {
+   "page_no": 4,
+   "source_page": 4,
+   "image": "assets/mikey-jj/scary-cat-adventure/pages/p04.webp",
+   "text_en": "I don't trust those webs. Opening a portal on Mikey's wall. Just in case I need to rescue him. He's here. Everyone inside!",
+   "start_ms": 44460,
+   "end_ms": 53700,
+   "sentences": [
+    {
+     "id": "b9-p04-s01",
+     "text_en": "I don't trust those webs. Opening a portal on Mikey's wall.",
+     "zh": "传送门。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.087,
+      "y": 0.039,
+      "w": 0.457,
+      "h": 0.149,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 44460,
+     "end_ms": 48680,
+     "audio": "assets/mikey-jj/scary-cat-adventure/sentences/page-04-sentence-01.mp3",
+     "words": [
+      {
+       "text": "I",
+       "start_ms": 0,
+       "end_ms": 740
+      },
+      {
+       "text": "don't",
+       "start_ms": 740,
+       "end_ms": 940
+      },
+      {
+       "text": "trust",
+       "start_ms": 940,
+       "end_ms": 1140
+      },
+      {
+       "text": "those",
+       "start_ms": 1140,
+       "end_ms": 1460
+      },
+      {
+       "text": "webs.",
+       "start_ms": 1460,
+       "end_ms": 1760
+      },
+      {
+       "text": "Opening",
+       "start_ms": 2600,
+       "end_ms": 2600
+      },
+      {
+       "text": "a",
+       "start_ms": 2600,
+       "end_ms": 2800
+      },
+      {
+       "text": "portal",
+       "start_ms": 2800,
+       "end_ms": 3120
+      },
+      {
+       "text": "on",
+       "start_ms": 3120,
+       "end_ms": 3420
+      },
+      {
+       "text": "Mikey's",
+       "start_ms": 3420,
+       "end_ms": 3980
+      },
+      {
+       "text": "wall.",
+       "start_ms": 3980,
+       "end_ms": 4220
+      }
+     ],
+     "glossary": [
+      {
+       "term": "portal",
+       "ipa": "ˈpɔːtl",
+       "pos": "N",
+       "zh": "传送门"
+      }
+     ]
+    },
+    {
+     "id": "b9-p04-s02",
+     "text_en": "Just in case I need to rescue him. He's here. Everyone inside!",
+     "zh": "营救。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.087,
+      "y": 0.039,
+      "w": 0.457,
+      "h": 0.149,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 49260,
+     "end_ms": 53700,
+     "audio": "assets/mikey-jj/scary-cat-adventure/sentences/page-04-sentence-02.mp3",
+     "words": [
+      {
+       "text": "Just",
+       "start_ms": 0,
+       "end_ms": 180
+      },
+      {
+       "text": "in",
+       "start_ms": 180,
+       "end_ms": 400
+      },
+      {
+       "text": "case",
+       "start_ms": 400,
+       "end_ms": 640
+      },
+      {
+       "text": "I",
+       "start_ms": 640,
+       "end_ms": 900
+      },
+      {
+       "text": "need",
+       "start_ms": 900,
+       "end_ms": 1080
+      },
+      {
+       "text": "to",
+       "start_ms": 1080,
+       "end_ms": 1220
+      },
+      {
+       "text": "rescue",
+       "start_ms": 1220,
+       "end_ms": 1540
+      },
+      {
+       "text": "him.",
+       "start_ms": 1540,
+       "end_ms": 1920
+      },
+      {
+       "text": "He's",
+       "start_ms": 2560,
+       "end_ms": 2940
+      },
+      {
+       "text": "here.",
+       "start_ms": 2940,
+       "end_ms": 3200
+      },
+      {
+       "text": "Everyone",
+       "start_ms": 3560,
+       "end_ms": 3960
+      },
+      {
+       "text": "inside!",
+       "start_ms": 3960,
+       "end_ms": 4440
+      }
+     ],
+     "glossary": [
+      {
+       "term": "rescue",
+       "ipa": "ˈreskjuː",
+       "pos": "V",
+       "zh": "营救"
+      }
+     ]
+    }
+   ],
+   "panel": [
+    0.0,
+    0.505,
+    0.51,
+    1.0
+   ]
+  },
+  {
+   "page_no": 5,
+   "source_page": 5,
+   "image": "assets/mikey-jj/scary-cat-adventure/pages/p05.webp",
+   "text_en": "Hmm. Sticky. You can't catch me too sticky, ha ha ha. Hey, that's cheating! He's tunneling under the webs!",
+   "start_ms": 55800,
+   "end_ms": 65140,
+   "sentences": [
+    {
+     "id": "b9-p05-s01",
+     "text_en": "Hmm. Sticky.",
+     "zh": "请跟读并理解这句话。",
+     "speaker": {
+      "id": "system",
+      "label": "角色"
+     },
+     "bubble": {
+      "x": 0.093,
+      "y": 0.021,
+      "w": 0.332,
+      "h": 0.149,
+      "tail": "none",
+      "variant": "narration"
+     },
+     "start_ms": 55800,
+     "end_ms": 56960,
+     "audio": "assets/mikey-jj/scary-cat-adventure/sentences/page-05-sentence-01.mp3",
+     "words": [
+      {
+       "text": "Hmm.",
+       "start_ms": 0,
+       "end_ms": 380
+      },
+      {
+       "text": "Sticky.",
+       "start_ms": 640,
+       "end_ms": 1160
+      }
+     ],
+     "glossary": [
+      {
+       "term": "sticky",
+       "ipa": "ˈstɪki",
+       "pos": "Adj",
+       "zh": "黏的"
+      }
+     ]
+    },
+    {
+     "id": "b9-p05-s02",
+     "text_en": "You can't catch me too sticky, ha ha ha.",
+     "zh": "请跟读并理解这句话。",
+     "speaker": {
+      "id": "system",
+      "label": "角色"
+     },
+     "bubble": {
+      "x": 0.093,
+      "y": 0.021,
+      "w": 0.332,
+      "h": 0.149,
+      "tail": "none",
+      "variant": "narration"
+     },
+     "start_ms": 57680,
+     "end_ms": 60920,
+     "audio": "assets/mikey-jj/scary-cat-adventure/sentences/page-05-sentence-02.mp3",
+     "words": [
+      {
+       "text": "You",
+       "start_ms": 0,
+       "end_ms": 300
+      },
+      {
+       "text": "can't",
+       "start_ms": 300,
+       "end_ms": 680
+      },
+      {
+       "text": "catch",
+       "start_ms": 680,
+       "end_ms": 940
+      },
+      {
+       "text": "me",
+       "start_ms": 940,
+       "end_ms": 1360
+      },
+      {
+       "text": "too",
+       "start_ms": 1360,
+       "end_ms": 1800
+      },
+      {
+       "text": "sticky,",
+       "start_ms": 1800,
+       "end_ms": 2320
+      },
+      {
+       "text": "ha",
+       "start_ms": 2760,
+       "end_ms": 2780
+      },
+      {
+       "text": "ha",
+       "start_ms": 2780,
+       "end_ms": 3000
+      },
+      {
+       "text": "ha.",
+       "start_ms": 3000,
+       "end_ms": 3240
+      }
+     ],
+     "glossary": [
+      {
+       "term": "catch",
+       "ipa": "kætʃ",
+       "pos": "V",
+       "zh": "抓住"
+      }
+     ]
+    },
+    {
+     "id": "b9-p05-s03",
+     "text_en": "Hey, that's cheating! He's tunneling under the webs!",
+     "zh": "挖洞。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.093,
+      "y": 0.021,
+      "w": 0.332,
+      "h": 0.149,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 61360,
+     "end_ms": 65140,
+     "audio": "assets/mikey-jj/scary-cat-adventure/sentences/page-05-sentence-03.mp3",
+     "words": [
+      {
+       "text": "Hey,",
+       "start_ms": 0,
+       "end_ms": 620
+      },
+      {
+       "text": "that's",
+       "start_ms": 1000,
+       "end_ms": 1300
+      },
+      {
+       "text": "cheating!",
+       "start_ms": 1300,
+       "end_ms": 1580
+      },
+      {
+       "text": "He's",
+       "start_ms": 2280,
+       "end_ms": 2480
+      },
+      {
+       "text": "tunneling",
+       "start_ms": 2480,
+       "end_ms": 3020
+      },
+      {
+       "text": "under",
+       "start_ms": 3020,
+       "end_ms": 3280
+      },
+      {
+       "text": "the",
+       "start_ms": 3280,
+       "end_ms": 3500
+      },
+      {
+       "text": "webs!",
+       "start_ms": 3500,
+       "end_ms": 3780
+      }
+     ],
+     "glossary": []
+    }
+   ],
+   "panel": [
+    0.0,
+    0.506,
+    0.51,
+    1.0
+   ]
+  },
+  {
+   "page_no": 6,
+   "source_page": 6,
+   "image": "assets/mikey-jj/scary-cat-adventure/pages/p06.webp",
+   "text_en": "To the portal! Got you. Safe inside my concrete fortress. My hero.",
+   "start_ms": 67510,
+   "end_ms": 73750,
+   "sentences": [
+    {
+     "id": "b9-p06-s01",
+     "text_en": "To the portal!",
+     "zh": "传送门。",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.355,
+      "y": 0.037,
+      "w": 0.207,
+      "h": 0.141,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 67510,
+     "end_ms": 67970,
+     "audio": "assets/mikey-jj/scary-cat-adventure/sentences/page-06-sentence-01.mp3",
+     "words": [
+      {
+       "text": "To",
+       "start_ms": 0,
+       "end_ms": 40
+      },
+      {
+       "text": "the",
+       "start_ms": 40,
+       "end_ms": 140
+      },
+      {
+       "text": "portal!",
+       "start_ms": 140,
+       "end_ms": 460
+      }
+     ],
+     "glossary": [
+      {
+       "term": "portal",
+       "ipa": "ˈpɔːtl",
+       "pos": "N",
+       "zh": "传送门"
+      }
+     ]
+    },
+    {
+     "id": "b9-p06-s02",
+     "text_en": "Got you. Safe inside my concrete fortress.",
+     "zh": "安全；堡垒；混凝土。",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.677,
+      "y": 0.044,
+      "w": 0.23,
+      "h": 0.116,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 68930,
+     "end_ms": 71890,
+     "audio": "assets/mikey-jj/scary-cat-adventure/sentences/page-06-sentence-02.mp3",
+     "words": [
+      {
+       "text": "Got",
+       "start_ms": 0,
+       "end_ms": 360
+      },
+      {
+       "text": "you.",
+       "start_ms": 360,
+       "end_ms": 580
+      },
+      {
+       "text": "Safe",
+       "start_ms": 1000,
+       "end_ms": 1200
+      },
+      {
+       "text": "inside",
+       "start_ms": 1200,
+       "end_ms": 1520
+      },
+      {
+       "text": "my",
+       "start_ms": 1520,
+       "end_ms": 2000
+      },
+      {
+       "text": "concrete",
+       "start_ms": 2000,
+       "end_ms": 2400
+      },
+      {
+       "text": "fortress.",
+       "start_ms": 2400,
+       "end_ms": 2960
+      }
+     ],
+     "glossary": [
+      {
+       "term": "inside",
+       "ipa": "ɪnˈsaɪd",
+       "pos": "Prep",
+       "zh": "在里面"
+      }
+     ]
+    },
+    {
+     "id": "b9-p06-s03",
+     "text_en": "My hero.",
+     "zh": "英雄。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.046,
+      "y": 0.339,
+      "w": 0.162,
+      "h": 0.093,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 72910,
+     "end_ms": 73750,
+     "audio": "assets/mikey-jj/scary-cat-adventure/sentences/page-06-sentence-03.mp3",
+     "words": [
+      {
+       "text": "My",
+       "start_ms": 0,
+       "end_ms": 320
+      },
+      {
+       "text": "hero.",
+       "start_ms": 320,
+       "end_ms": 840
+      }
+     ],
+     "glossary": []
+    }
+   ],
+   "panel": [
+    0.0,
+    0.505,
+    0.51,
+    1.0
+   ]
+  },
+  {
+   "page_no": 7,
+   "source_page": 7,
+   "image": "assets/mikey-jj/scary-cat-adventure/pages/p07.webp",
+   "text_en": "No way! He's tanking the lasers! Look! He got burned by the lava! Wait! He's not retreating. He's observing.",
+   "start_ms": 75590,
+   "end_ms": 84990,
+   "sentences": [
+    {
+     "id": "b9-p07-s01",
+     "text_en": "No way! He's tanking the lasers!",
+     "zh": "激光；国王。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.165,
+      "y": 0.057,
+      "w": 0.17,
+      "h": 0.078,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 75590,
+     "end_ms": 77970,
+     "audio": "assets/mikey-jj/scary-cat-adventure/sentences/page-07-sentence-01.mp3",
+     "words": [
+      {
+       "text": "No",
+       "start_ms": 0,
+       "end_ms": 380
+      },
+      {
+       "text": "way!",
+       "start_ms": 380,
+       "end_ms": 760
+      },
+      {
+       "text": "He's",
+       "start_ms": 1140,
+       "end_ms": 1400
+      },
+      {
+       "text": "tanking",
+       "start_ms": 1400,
+       "end_ms": 1960
+      },
+      {
+       "text": "the",
+       "start_ms": 1960,
+       "end_ms": 2080
+      },
+      {
+       "text": "lasers!",
+       "start_ms": 2080,
+       "end_ms": 2380
+      }
+     ],
+     "glossary": [
+      {
+       "term": "laser",
+       "ipa": "ˈleɪzə",
+       "pos": "N",
+       "zh": "激光"
+      },
+      {
+       "term": "tanking",
+       "ipa": "ˈtæŋkɪŋ",
+       "pos": "V",
+       "zh": "硬扛"
+      }
+     ]
+    },
+    {
+     "id": "b9-p07-s02",
+     "text_en": "Look! He got burned by the lava!",
+     "zh": "岩浆。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.619,
+      "y": 0.049,
+      "w": 0.323,
+      "h": 0.118,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 79130,
+     "end_ms": 81350,
+     "audio": "assets/mikey-jj/scary-cat-adventure/sentences/page-07-sentence-02.mp3",
+     "words": [
+      {
+       "text": "Look!",
+       "start_ms": 0,
+       "end_ms": 500
+      },
+      {
+       "text": "He",
+       "start_ms": 980,
+       "end_ms": 1060
+      },
+      {
+       "text": "got",
+       "start_ms": 1060,
+       "end_ms": 1220
+      },
+      {
+       "text": "burned",
+       "start_ms": 1220,
+       "end_ms": 1560
+      },
+      {
+       "text": "by",
+       "start_ms": 1560,
+       "end_ms": 1860
+      },
+      {
+       "text": "the",
+       "start_ms": 1860,
+       "end_ms": 2020
+      },
+      {
+       "text": "lava!",
+       "start_ms": 2020,
+       "end_ms": 2220
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b9-p07-s03",
+     "text_en": "Wait! He's not retreating. He's observing.",
+     "zh": "撤退；观察。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.047,
+      "y": 0.522,
+      "w": 0.359,
+      "h": 0.115,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 82130,
+     "end_ms": 84990,
+     "audio": "assets/mikey-jj/scary-cat-adventure/sentences/page-07-sentence-03.mp3",
+     "words": [
+      {
+       "text": "Wait!",
+       "start_ms": 0,
+       "end_ms": 420
+      },
+      {
+       "text": "He's",
+       "start_ms": 940,
+       "end_ms": 1080
+      },
+      {
+       "text": "not",
+       "start_ms": 1080,
+       "end_ms": 1260
+      },
+      {
+       "text": "retreating.",
+       "start_ms": 1260,
+       "end_ms": 1700
+      },
+      {
+       "text": "He's",
+       "start_ms": 2260,
+       "end_ms": 2440
+      },
+      {
+       "text": "observing.",
+       "start_ms": 2440,
+       "end_ms": 2860
+      }
+     ],
+     "glossary": []
+    }
+   ],
+   "panel": [
+    0.0,
+    0.505,
+    0.509,
+    1.0
+   ]
+  },
+  {
+   "page_no": 8,
+   "source_page": 8,
+   "image": "assets/mikey-jj/scary-cat-adventure/pages/p08.webp",
+   "text_en": "Oh no! He built a dirt bridge to the roof! He's smarter than he looks! Go, Mikey! To the roof! Force field up!",
+   "start_ms": 86630,
+   "end_ms": 96390,
+   "sentences": [
+    {
+     "id": "b9-p08-s01",
+     "text_en": "Oh no! He built a dirt bridge to the roof!",
+     "zh": "土桥。",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.082,
+      "y": 0.143,
+      "w": 0.208,
+      "h": 0.139,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 86630,
+     "end_ms": 89630,
+     "audio": "assets/mikey-jj/scary-cat-adventure/sentences/page-08-sentence-01.mp3",
+     "words": [
+      {
+       "text": "Oh",
+       "start_ms": 0,
+       "end_ms": 500
+      },
+      {
+       "text": "no!",
+       "start_ms": 500,
+       "end_ms": 780
+      },
+      {
+       "text": "He",
+       "start_ms": 1160,
+       "end_ms": 1220
+      },
+      {
+       "text": "built",
+       "start_ms": 1220,
+       "end_ms": 1460
+      },
+      {
+       "text": "a",
+       "start_ms": 1460,
+       "end_ms": 1620
+      },
+      {
+       "text": "dirt",
+       "start_ms": 1620,
+       "end_ms": 1820
+      },
+      {
+       "text": "bridge",
+       "start_ms": 1820,
+       "end_ms": 2240
+      },
+      {
+       "text": "to",
+       "start_ms": 2240,
+       "end_ms": 2560
+      },
+      {
+       "text": "the",
+       "start_ms": 2560,
+       "end_ms": 2660
+      },
+      {
+       "text": "roof!",
+       "start_ms": 2660,
+       "end_ms": 3000
+      }
+     ],
+     "glossary": [
+      {
+       "term": "built",
+       "ipa": "bɪlt",
+       "pos": "V",
+       "zh": "建造了"
+      },
+      {
+       "term": "bridge",
+       "ipa": "brɪdʒ",
+       "pos": "N",
+       "zh": "桥"
+      }
+     ]
+    },
+    {
+     "id": "b9-p08-s02",
+     "text_en": "He's smarter than he looks!",
+     "zh": "请跟读并理解这句话。",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.257,
+      "y": 0.252,
+      "w": 0.208,
+      "h": 0.109,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 90270,
+     "end_ms": 92130,
+     "audio": "assets/mikey-jj/scary-cat-adventure/sentences/page-08-sentence-02.mp3",
+     "words": [
+      {
+       "text": "He's",
+       "start_ms": 0,
+       "end_ms": 520
+      },
+      {
+       "text": "smarter",
+       "start_ms": 520,
+       "end_ms": 780
+      },
+      {
+       "text": "than",
+       "start_ms": 780,
+       "end_ms": 1280
+      },
+      {
+       "text": "he",
+       "start_ms": 1280,
+       "end_ms": 1500
+      },
+      {
+       "text": "looks!",
+       "start_ms": 1500,
+       "end_ms": 1860
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b9-p08-s03",
+     "text_en": "Go, Mikey! To the roof!",
+     "zh": "请跟读并理解这句话。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.257,
+      "y": 0.252,
+      "w": 0.208,
+      "h": 0.109,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 92970,
+     "end_ms": 94470,
+     "audio": "assets/mikey-jj/scary-cat-adventure/sentences/page-08-sentence-03.mp3",
+     "words": [
+      {
+       "text": "Go,",
+       "start_ms": 0,
+       "end_ms": 320
+      },
+      {
+       "text": "Mikey!",
+       "start_ms": 420,
+       "end_ms": 860
+      },
+      {
+       "text": "To",
+       "start_ms": 1120,
+       "end_ms": 1140
+      },
+      {
+       "text": "the",
+       "start_ms": 1140,
+       "end_ms": 1260
+      },
+      {
+       "text": "roof!",
+       "start_ms": 1260,
+       "end_ms": 1500
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b9-p08-s04",
+     "text_en": "Force field up!",
+     "zh": "请跟读并理解这句话。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.05,
+      "y": 0.659,
+      "w": 0.179,
+      "h": 0.094,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 95230,
+     "end_ms": 96390,
+     "audio": "assets/mikey-jj/scary-cat-adventure/sentences/page-08-sentence-04.mp3",
+     "words": [
+      {
+       "text": "His",
+       "start_ms": 0,
+       "end_ms": 180
+      },
+      {
+       "text": "hands",
+       "start_ms": 180,
+       "end_ms": 520
+      },
+      {
+       "text": "got",
+       "start_ms": 520,
+       "end_ms": 880
+      },
+      {
+       "text": "it!",
+       "start_ms": 880,
+       "end_ms": 1160
+      }
+     ],
+     "glossary": []
+    }
+   ],
+   "panel": [
+    0.0,
+    0.499,
+    0.509,
+    1.0
+   ]
+  },
+  {
+   "page_no": 9,
+   "source_page": 9,
+   "image": "assets/mikey-jj/scary-cat-adventure/pages/p09.webp",
+   "text_en": "Say hello to my little friends! Tourist, full blast!",
+   "start_ms": 97690,
+   "end_ms": 102170,
+   "sentences": [
+    {
+     "id": "b9-p09-s01",
+     "text_en": "Say hello to my little friends!",
+     "zh": "请跟读并理解这句话。",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.505,
+      "y": 0.042,
+      "w": 0.2,
+      "h": 0.096,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 97690,
+     "end_ms": 99750,
+     "audio": "assets/mikey-jj/scary-cat-adventure/sentences/page-09-sentence-01.mp3",
+     "words": [
+      {
+       "text": "Say",
+       "start_ms": 0,
+       "end_ms": 680
+      },
+      {
+       "text": "hello",
+       "start_ms": 680,
+       "end_ms": 980
+      },
+      {
+       "text": "to",
+       "start_ms": 980,
+       "end_ms": 1240
+      },
+      {
+       "text": "my",
+       "start_ms": 1240,
+       "end_ms": 1380
+      },
+      {
+       "text": "little",
+       "start_ms": 1380,
+       "end_ms": 1580
+      },
+      {
+       "text": "friends!",
+       "start_ms": 1580,
+       "end_ms": 2060
+      }
+     ],
+     "glossary": [
+      {
+       "term": "hello",
+       "ipa": "həˈləʊ",
+       "pos": "Interj",
+       "zh": "你好"
+      },
+      {
+       "term": "little",
+       "ipa": "ˈlɪtəl",
+       "pos": "Adj",
+       "zh": "小的"
+      }
+     ]
+    },
+    {
+     "id": "b9-p09-s02",
+     "text_en": "Tourist, full blast!",
+     "zh": "请跟读并理解这句话。",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.666,
+      "y": 0.177,
+      "w": 0.27,
+      "h": 0.098,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 100670,
+     "end_ms": 102170,
+     "audio": "assets/mikey-jj/scary-cat-adventure/sentences/page-09-sentence-02.mp3",
+     "words": [
+      {
+       "text": "Tourist,",
+       "start_ms": 0,
+       "end_ms": 640
+      },
+      {
+       "text": "full",
+       "start_ms": 960,
+       "end_ms": 1080
+      },
+      {
+       "text": "blast!",
+       "start_ms": 1080,
+       "end_ms": 1500
+      }
+     ],
+     "glossary": []
+    }
+   ],
+   "panel": [
+    0.0,
+    0.505,
+    0.509,
+    1.0
+   ]
+  },
+  {
+   "page_no": 10,
+   "source_page": 10,
+   "image": "assets/mikey-jj/scary-cat-adventure/pages/p10.webp",
+   "text_en": "Look at him run! Don't come back! Hand over all your treasure! Thanks for saving us, JJ! Your security is insane!",
+   "start_ms": 104480,
+   "end_ms": 115940,
+   "sentences": [
+    {
+     "id": "b9-p10-s01",
+     "text_en": "Look at him run!",
+     "zh": "请跟读并理解这句话。",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.579,
+      "y": 0.04,
+      "w": 0.363,
+      "h": 0.053,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 104480,
+     "end_ms": 105500,
+     "audio": "assets/mikey-jj/scary-cat-adventure/sentences/page-10-sentence-01.mp3",
+     "words": [
+      {
+       "text": "Look",
+       "start_ms": 0,
+       "end_ms": 220
+      },
+      {
+       "text": "at",
+       "start_ms": 220,
+       "end_ms": 460
+      },
+      {
+       "text": "him",
+       "start_ms": 460,
+       "end_ms": 660
+      },
+      {
+       "text": "run!",
+       "start_ms": 660,
+       "end_ms": 1020
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b9-p10-s02",
+     "text_en": "Don't come back!",
+     "zh": "请跟读并理解这句话。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.579,
+      "y": 0.04,
+      "w": 0.363,
+      "h": 0.053,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 106260,
+     "end_ms": 107640,
+     "audio": "assets/mikey-jj/scary-cat-adventure/sentences/page-10-sentence-02.mp3",
+     "words": [
+      {
+       "text": "Don't",
+       "start_ms": 0,
+       "end_ms": 680
+      },
+      {
+       "text": "come",
+       "start_ms": 680,
+       "end_ms": 900
+      },
+      {
+       "text": "back!",
+       "start_ms": 900,
+       "end_ms": 1380
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b9-p10-s03",
+     "text_en": "Hand over all your treasure!",
+     "zh": "宝藏。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.071,
+      "y": 0.543,
+      "w": 0.357,
+      "h": 0.107,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 108440,
+     "end_ms": 111560,
+     "audio": "assets/mikey-jj/scary-cat-adventure/sentences/page-10-sentence-03.mp3",
+     "words": [
+      {
+       "text": "Next",
+       "start_ms": 0,
+       "end_ms": 480
+      },
+      {
+       "text": "time,",
+       "start_ms": 480,
+       "end_ms": 940
+      },
+      {
+       "text": "use",
+       "start_ms": 1460,
+       "end_ms": 1780
+      },
+      {
+       "text": "concrete,",
+       "start_ms": 1780,
+       "end_ms": 2280
+      },
+      {
+       "text": "not",
+       "start_ms": 2660,
+       "end_ms": 2840
+      },
+      {
+       "text": "webs!",
+       "start_ms": 2840,
+       "end_ms": 3120
+      }
+     ],
+     "glossary": [
+      {
+       "term": "treasure",
+       "ipa": "ˈtreʒə",
+       "pos": "N",
+       "zh": "宝藏"
+      }
+     ]
+    },
+    {
+     "id": "b9-p10-s04",
+     "text_en": "Thanks for saving us, JJ! Your security is insane!",
+     "zh": "安保；厉害得离谱。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.071,
+      "y": 0.543,
+      "w": 0.357,
+      "h": 0.107,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 112340,
+     "end_ms": 115940,
+     "audio": "assets/mikey-jj/scary-cat-adventure/sentences/page-10-sentence-04.mp3",
+     "words": [
+      {
+       "text": "Thanks",
+       "start_ms": 0,
+       "end_ms": 600
+      },
+      {
+       "text": "for",
+       "start_ms": 600,
+       "end_ms": 840
+      },
+      {
+       "text": "saving",
+       "start_ms": 840,
+       "end_ms": 1200
+      },
+      {
+       "text": "us,",
+       "start_ms": 1200,
+       "end_ms": 1520
+      },
+      {
+       "text": "JJ!",
+       "start_ms": 1680,
+       "end_ms": 1960
+      },
+      {
+       "text": "Your",
+       "start_ms": 2260,
+       "end_ms": 2340
+      },
+      {
+       "text": "security",
+       "start_ms": 2340,
+       "end_ms": 2780
+      },
+      {
+       "text": "is",
+       "start_ms": 2780,
+       "end_ms": 3240
+      },
+      {
+       "text": "insane!",
+       "start_ms": 3240,
+       "end_ms": 3600
+      }
+     ],
+     "glossary": [
+      {
+       "term": "thanks",
+       "ipa": "θæŋks",
+       "pos": "Interj",
+       "zh": "谢谢"
+      }
+     ]
+    }
+   ],
+   "panel": [
+    0.0,
+    0.491,
+    0.496,
+    1.0
+   ]
+  }
+ ],
+ "quiz": [
+  {
+   "id": "mikey-b9-q01",
+   "type": "comprehension",
+   "concept_id": "build-concrete-fortress",
+   "source_sentence_id": "b9-p01-s03",
+   "q": "What does Mikey build to protect the house?",
+   "prompt_en": "What does Mikey build to protect the house?",
+   "prompt_zh": "Mikey 建造什么来保护房子？",
+   "choices": [
+    "A high-tech concrete fortress",
+    "A wooden bridge",
+    "A glass boat",
+    "A school tower"
+   ],
+   "choices_en": [
+    "A high-tech concrete fortress",
+    "A wooden bridge",
+    "A glass boat",
+    "A school tower"
+   ],
+   "choices_zh": [
+    "高科技混凝土堡垒",
+    "一座木桥",
+    "一艘玻璃船",
+    "一座学校高塔"
+   ],
+   "answer": 0
+  },
+  {
+   "id": "mikey-b9-q02",
+   "type": "meaning-choice",
+   "term": "fortress",
+   "source_sentence_id": "b9-p01-s03",
+   "q": "What does fortress mean in this story?",
+   "prompt_en": "What does “fortress” mean in this story?",
+   "prompt_zh": "在这个故事中，fortress 是什么意思？",
+   "choices": [
+    "fortress",
+    "apple",
+    "umbrella",
+    "pencil"
+   ],
+   "choices_en": [
+    "fortress",
+    "apple",
+    "umbrella",
+    "pencil"
+   ],
+   "choices_zh": [
+    "堡垒",
+    "苹果",
+    "雨伞",
+    "铅笔"
+   ],
+   "answer": 0
+  },
+  {
+   "id": "mikey-b9-q03",
+   "type": "comprehension",
+   "concept_id": "cat-bridge-to-roof",
+   "source_sentence_id": "b9-p08-s01",
+   "q": "How does the cat get to the roof?",
+   "prompt_en": "How does the cat get to the roof?",
+   "prompt_zh": "猫是怎样到屋顶的？",
+   "choices": [
+    "By building a dirt bridge",
+    "By swimming",
+    "By using a boat",
+    "By digging a tunnel"
+   ],
+   "choices_en": [
+    "By building a dirt bridge",
+    "By swimming",
+    "By using a boat",
+    "By digging a tunnel"
+   ],
+   "choices_zh": [
+    "搭建土桥",
+    "游泳",
+    "使用一艘船",
+    "挖隧道"
+   ],
+   "answer": 0
+  },
+  {
+   "id": "mikey-b9-fill1",
+   "type": "context-fill",
+   "term": "welcome",
+   "source_sentence_id": "b9-p01-s01",
+   "source_text_en": "Welcome aboard the Billionaires!",
+   "q": "____ aboard the Billionaires!",
+   "prompt_en": "____ aboard the Billionaires!",
+   "prompt_zh": "登船。",
+   "choices": [
+    "mikey",
+    "laser",
+    "turret",
+    "welcome"
+   ],
+   "choices_zh": [],
+   "answer": 3,
+   "audio": "assets/mikey-jj/scary-cat-adventure/sentences/page-01-sentence-01.mp3",
+   "explanation": "welcome = 欢迎"
+  },
+  {
+   "id": "mikey-b9-q04",
+   "type": "comprehension",
+   "concept_id": "rescue-inside-fortress",
+   "source_sentence_id": "b9-p06-s02",
+   "q": "Where are Mikey and JJ safe?",
+   "prompt_en": "Where are Mikey and JJ safe?",
+   "prompt_zh": "Mikey 和 JJ 在哪里安全？",
+   "choices": [
+    "Inside the concrete fortress",
+    "On the ship",
+    "Under the lava",
+    "At school"
+   ],
+   "choices_en": [
+    "Inside the concrete fortress",
+    "On the ship",
+    "Under the lava",
+    "At school"
+   ],
+   "choices_zh": [
+    "混凝土堡垒里面",
+    "船上",
+    "岩浆下面",
+    "学校里"
+   ],
+   "answer": 0
+  },
+  {
+   "id": "mikey-b9-q05",
+   "type": "comprehension",
+   "concept_id": "cat-demands-treasure",
+   "source_sentence_id": "b9-p10-s03",
+   "q": "What does the cat demand?",
+   "prompt_en": "What does the cat demand?",
+   "prompt_zh": "猫要求交出什么？",
+   "choices": [
+    "All their treasure",
+    "A bowl of milk",
+    "The concrete fortress",
+    "A golden helmet"
+   ],
+   "choices_en": [
+    "All their treasure",
+    "A bowl of milk",
+    "The concrete fortress",
+    "A golden helmet"
+   ],
+   "choices_zh": [
+    "他们所有的宝藏",
+    "一碗牛奶",
+    "混凝土堡垒",
+    "一顶金头盔"
+   ],
+   "answer": 0
+  },
+  {
+   "id": "mikey-b9-listen1",
+   "type": "listen-choice",
+   "source_sentence_id": "b9-p02-s02",
+   "source_text_en": "Phase 2, lava curtain. The whole house wrapped in hot lava.",
+   "q": "🔊 Listen. Which sentence do you hear?",
+   "prompt_en": "🔊 Listen. Which sentence do you hear?",
+   "prompt_zh": "听录音，选出你听到的句子。",
+   "choices": [
+    "Maiden voyage special, tickets only $10,000.",
+    "Phase 2, lava curtain. The whole house wrapped in hot lava.",
+    "I'll cover the house with sticky webs way faster.",
+    "Phase 1, perimeter laser grid. Not even a fly gets in."
+   ],
+   "choices_zh": [
+    "航行。",
+    "岩浆；岩浆幕墙。",
+    "黏蜘蛛网。",
+    "外围；激光。"
+   ],
+   "answer": 1,
+   "audio": "assets/mikey-jj/scary-cat-adventure/sentences/page-02-sentence-02.mp3",
+   "explanation": "岩浆；岩浆幕墙。"
+  },
+  {
+   "id": "mikey-b9-fill2",
+   "type": "context-fill",
+   "term": "portal",
+   "source_sentence_id": "b9-p04-s01",
+   "source_text_en": "I don't trust those webs. Opening a portal on Mikey's wall.",
+   "q": "I don't trust those webs. Opening a ____ on Mikey's wall.",
+   "prompt_en": "I don't trust those webs. Opening a ____ on Mikey's wall.",
+   "prompt_zh": "传送门。",
+   "choices": [
+    "laser",
+    "portal",
+    "turret",
+    "mikey"
+   ],
+   "choices_zh": [],
+   "answer": 1,
+   "audio": "assets/mikey-jj/scary-cat-adventure/sentences/page-04-sentence-01.mp3",
+   "explanation": "portal = 传送门"
+  },
+  {
+   "id": "mikey-b9-listen2",
+   "type": "listen-choice",
+   "source_sentence_id": "b9-p07-s01",
+   "source_text_en": "No way! He's tanking the lasers!",
+   "q": "🔊 Listen. Which sentence do you hear?",
+   "prompt_en": "🔊 Listen. Which sentence do you hear?",
+   "prompt_zh": "听录音，选出你听到的句子。",
+   "choices": [
+    "No way! He's tanking the lasers!",
+    "Maiden voyage special, tickets only $10,000.",
+    "Uh, Mikey, are you sure that's safe?",
+    "Behold Super Web House. Perfect!"
+   ],
+   "choices_zh": [
+    "激光；国王。",
+    "航行。",
+    "安全。",
+    "请跟读并理解这句话。"
+   ],
+   "answer": 0,
+   "audio": "assets/mikey-jj/scary-cat-adventure/sentences/page-07-sentence-01.mp3",
+   "explanation": "激光；国王。"
+  }
+ ],
+ "quiz_bg": "assets/mikey-jj/scary-cat-adventure/quiz-bg.webp"
+}

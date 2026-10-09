@@ -1,0 +1,5729 @@
+{
+  "schema_version": 1,
+  "series": "minecraft",
+  "book": 1,
+  "source_book": "storybooks-minecraft/book1.json",
+  "status": "enrichment-in-progress",
+  "named_entities": {
+    "Emmy": "Emmy",
+    "Birch": "Birch",
+    "Byte": "Byte",
+    "Nether": "下界",
+    "Overworld": "主世界",
+    "Piglin": "猪灵",
+    "Piglins": "猪灵",
+    "Enderman": "末影人",
+    "Creeper": "苦力怕",
+    "obsidian": "黑曜石"
+  },
+  "sentences": [
+    {
+      "id": "mc-b1-p01-s01",
+      "text_en": "Emmy and Birch were ready for adventure!",
+      "zh": "Emmy 和 Birch 已经准备好去冒险了！",
+      "audio": "assets/minecraft/escape-from-the-nether/sentences/page-01-sentence-01.mp3",
+      "start_ms": 158350,
+      "end_ms": 165170,
+      "words": [
+        {
+          "text": "Emmy",
+          "start_ms": 2460,
+          "end_ms": 2580,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "Emmy",
+          "asr_probability": 0.7459
+        },
+        {
+          "text": "and",
+          "start_ms": 2580,
+          "end_ms": 3300,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "and",
+          "asr_probability": 0.8232
+        },
+        {
+          "text": "Birch",
+          "start_ms": 3300,
+          "end_ms": 3680,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "Birch",
+          "asr_probability": 0.5564
+        },
+        {
+          "text": "were",
+          "start_ms": 3680,
+          "end_ms": 4600,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "were",
+          "asr_probability": 0.8155
+        },
+        {
+          "text": "ready",
+          "start_ms": 4600,
+          "end_ms": 5080,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "ready",
+          "asr_probability": 0.9991
+        },
+        {
+          "text": "for",
+          "start_ms": 5080,
+          "end_ms": 5820,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "for",
+          "asr_probability": 0.9989
+        },
+        {
+          "text": "adventure",
+          "start_ms": 5820,
+          "end_ms": 6800,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "adventure?",
+          "asr_probability": 0.9577
+        }
+      ],
+      "glossary": [
+        {
+          "term": "adventure",
+          "ipa": "ədˈventʃər",
+          "pos": "N",
+          "zh": "冒险"
+        }
+      ],
+      "translation_status": "reviewed",
+      "word_timing_status": "reviewed",
+      "word_timing_model": "base.en",
+      "reviewed_at": "2026-09-01T19:22:43+00:00",
+      "reviewer_note": "Codex 逐句复核：与英文语义、角色名及 Minecraft 官方术语核对；保留引号内儿童口吻。"
+    },
+    {
+      "id": "mc-b1-p01-s02",
+      "text_en": "Emmy had a brand-new helmet and matching boots made of yellow gold.",
+      "zh": "Emmy 戴着崭新的头盔，穿着配套的黄色金靴。",
+      "audio": "assets/minecraft/escape-from-the-nether/sentences/page-01-sentence-02.mp3",
+      "start_ms": 165170,
+      "end_ms": 174310,
+      "words": [
+        {
+          "text": "Emmy",
+          "start_ms": 960,
+          "end_ms": 1540,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "Emmy",
+          "asr_probability": 0.9756
+        },
+        {
+          "text": "had",
+          "start_ms": 1540,
+          "end_ms": 2200,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "had",
+          "asr_probability": 0.9926
+        },
+        {
+          "text": "a",
+          "start_ms": 2200,
+          "end_ms": 2600,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "a",
+          "asr_probability": 0.9984
+        },
+        {
+          "text": "brand-new",
+          "start_ms": 2600,
+          "end_ms": 3600,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "brand brand new",
+          "asr_probability": 0.9964
+        },
+        {
+          "text": "helmet",
+          "start_ms": 3600,
+          "end_ms": 4180,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "helmet,",
+          "asr_probability": 0.9945
+        },
+        {
+          "text": "and",
+          "start_ms": 4900,
+          "end_ms": 5220,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "and",
+          "asr_probability": 0.9677
+        },
+        {
+          "text": "matching",
+          "start_ms": 5220,
+          "end_ms": 5780,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "matching",
+          "asr_probability": 0.9919
+        },
+        {
+          "text": "boots",
+          "start_ms": 5780,
+          "end_ms": 6280,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "boots",
+          "asr_probability": 0.9876
+        },
+        {
+          "text": "made",
+          "start_ms": 6280,
+          "end_ms": 7340,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "made",
+          "asr_probability": 0.9129
+        },
+        {
+          "text": "of",
+          "start_ms": 7340,
+          "end_ms": 7680,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "of",
+          "asr_probability": 0.9939
+        },
+        {
+          "text": "yellow",
+          "start_ms": 7680,
+          "end_ms": 8060,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "yellow",
+          "asr_probability": 0.99
+        },
+        {
+          "text": "gold",
+          "start_ms": 8060,
+          "end_ms": 8940,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "gold.",
+          "asr_probability": 0.9936
+        }
+      ],
+      "glossary": [
+        {
+          "term": "helmet",
+          "ipa": "ˈhelmɪt",
+          "pos": "N",
+          "zh": "头盔"
+        }
+      ],
+      "translation_status": "reviewed",
+      "word_timing_status": "reviewed",
+      "word_timing_model": "base.en",
+      "reviewed_at": "2026-09-01T19:22:43+00:00",
+      "reviewer_note": "Codex 逐句复核：与英文语义、角色名及 Minecraft 官方术语核对；保留引号内儿童口吻。"
+    },
+    {
+      "id": "mc-b1-p01-s03",
+      "text_en": "Birch had a brand-new sword made of iron.",
+      "zh": "Birch 有一把崭新的铁剑。",
+      "audio": "assets/minecraft/escape-from-the-nether/sentences/page-01-sentence-03.mp3",
+      "start_ms": 174890,
+      "end_ms": 180090,
+      "words": [
+        {
+          "text": "Birch",
+          "start_ms": 80,
+          "end_ms": 500,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "Birch",
+          "asr_probability": 0.4992
+        },
+        {
+          "text": "had",
+          "start_ms": 500,
+          "end_ms": 1340,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "had",
+          "asr_probability": 0.9721
+        },
+        {
+          "text": "a",
+          "start_ms": 1340,
+          "end_ms": 1580,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "a",
+          "asr_probability": 0.9978
+        },
+        {
+          "text": "brand-new",
+          "start_ms": 1580,
+          "end_ms": 2000,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "brand",
+          "asr_probability": 0.9974
+        },
+        {
+          "text": "sword",
+          "start_ms": 2000,
+          "end_ms": 3140,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "new sword",
+          "asr_probability": 0.9783
+        },
+        {
+          "text": "made",
+          "start_ms": 3140,
+          "end_ms": 3960,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "made",
+          "asr_probability": 0.8761
+        },
+        {
+          "text": "of",
+          "start_ms": 3960,
+          "end_ms": 4500,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "of",
+          "asr_probability": 0.9984
+        },
+        {
+          "text": "iron",
+          "start_ms": 4500,
+          "end_ms": 5200,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "iron.",
+          "asr_probability": 0.9952
+        }
+      ],
+      "glossary": [
+        {
+          "term": "iron",
+          "ipa": "ˈaɪərn",
+          "pos": "N",
+          "zh": "铁"
+        }
+      ],
+      "translation_status": "reviewed",
+      "word_timing_status": "reviewed",
+      "word_timing_model": "base.en",
+      "reviewed_at": "2026-09-01T19:22:43+00:00",
+      "reviewer_note": "Codex 逐句复核：与英文语义、角色名及 Minecraft 官方术语核对；保留引号内儿童口吻。"
+    },
+    {
+      "id": "mc-b1-p02-s01",
+      "text_en": "Byte, their loyal wolf, just wanted to play.",
+      "zh": "他们忠诚的狼 Byte 只想玩耍。",
+      "audio": "assets/minecraft/escape-from-the-nether/sentences/page-02-sentence-01.mp3",
+      "start_ms": 181050,
+      "end_ms": 186370,
+      "words": [
+        {
+          "text": "Byte",
+          "start_ms": 0,
+          "end_ms": 560,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "Byte,",
+          "asr_probability": 0.0019
+        },
+        {
+          "text": "their",
+          "start_ms": 1060,
+          "end_ms": 1500,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "their",
+          "asr_probability": 0.9846
+        },
+        {
+          "text": "loyal",
+          "start_ms": 1500,
+          "end_ms": 1820,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "loyal",
+          "asr_probability": 0.9525
+        },
+        {
+          "text": "wolf",
+          "start_ms": 1820,
+          "end_ms": 2540,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "wolf,",
+          "asr_probability": 0.8319
+        },
+        {
+          "text": "just",
+          "start_ms": 2980,
+          "end_ms": 3720,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "just",
+          "asr_probability": 0.9924
+        },
+        {
+          "text": "wanted",
+          "start_ms": 3720,
+          "end_ms": 4180,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "wanted",
+          "asr_probability": 0.997
+        },
+        {
+          "text": "to",
+          "start_ms": 4180,
+          "end_ms": 4800,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "to",
+          "asr_probability": 0.9971
+        },
+        {
+          "text": "play",
+          "start_ms": 4800,
+          "end_ms": 5140,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "play.",
+          "asr_probability": 0.9758
+        }
+      ],
+      "glossary": [
+        {
+          "term": "loyal",
+          "ipa": "ˈlɔɪəl",
+          "pos": "Adj",
+          "zh": "忠诚的"
+        },
+        {
+          "term": "wolf",
+          "ipa": "wʊlf",
+          "pos": "N",
+          "zh": "狼"
+        }
+      ],
+      "translation_status": "reviewed",
+      "word_timing_status": "reviewed",
+      "word_timing_model": "base.en",
+      "reviewed_at": "2026-09-01T19:22:43+00:00",
+      "reviewer_note": "Codex 逐句复核：与英文语义、角色名及 Minecraft 官方术语核对；保留引号内儿童口吻。"
+    },
+    {
+      "id": "mc-b1-p02-s02",
+      "text_en": "\"We can play fetch,\" said Emmy.",
+      "zh": "“我们可以玩接球，”Emmy 说。",
+      "audio": "assets/minecraft/escape-from-the-nether/sentences/page-02-sentence-02.mp3",
+      "start_ms": 186370,
+      "end_ms": 190730,
+      "words": [
+        {
+          "text": "We",
+          "start_ms": 660,
+          "end_ms": 1380,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "We",
+          "asr_probability": 0.1435
+        },
+        {
+          "text": "can",
+          "start_ms": 1380,
+          "end_ms": 1740,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "can",
+          "asr_probability": 0.9948
+        },
+        {
+          "text": "play",
+          "start_ms": 1740,
+          "end_ms": 2320,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "play",
+          "asr_probability": 0.9972
+        },
+        {
+          "text": "fetch",
+          "start_ms": 2320,
+          "end_ms": 2780,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "fetch,",
+          "asr_probability": 0.9493
+        },
+        {
+          "text": "said",
+          "start_ms": 3580,
+          "end_ms": 4000,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "said",
+          "asr_probability": 0.9757
+        },
+        {
+          "text": "Emmy",
+          "start_ms": 4000,
+          "end_ms": 4280,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "Emmy.",
+          "asr_probability": 0.723
+        }
+      ],
+      "glossary": [
+        {
+          "term": "fetch",
+          "ipa": "fetʃ",
+          "pos": "N",
+          "zh": "捡球游戏"
+        }
+      ],
+      "translation_status": "reviewed",
+      "word_timing_status": "reviewed",
+      "word_timing_model": "base.en",
+      "reviewed_at": "2026-09-01T19:22:43+00:00",
+      "reviewer_note": "Codex 逐句复核：与英文语义、角色名及 Minecraft 官方术语核对；保留引号内儿童口吻。"
+    },
+    {
+      "id": "mc-b1-p02-s03",
+      "text_en": "\"Ready, boy?\" asked Birch.",
+      "zh": "“准备好了吗，小家伙？”Birch 问。",
+      "audio": "assets/minecraft/escape-from-the-nether/sentences/page-02-sentence-03.mp3",
+      "start_ms": 191450,
+      "end_ms": 194550,
+      "words": [
+        {
+          "text": "Ready",
+          "start_ms": 80,
+          "end_ms": 520,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "Ready",
+          "asr_probability": 0.6249
+        },
+        {
+          "text": "boy",
+          "start_ms": 520,
+          "end_ms": 960,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "boy,",
+          "asr_probability": 0.7206
+        },
+        {
+          "text": "asked",
+          "start_ms": 1600,
+          "end_ms": 2320,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "asked",
+          "asr_probability": 0.9736
+        },
+        {
+          "text": "Birch",
+          "start_ms": 2320,
+          "end_ms": 2760,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "Birch.",
+          "asr_probability": 0.9417
+        }
+      ],
+      "glossary": [],
+      "translation_status": "reviewed",
+      "word_timing_status": "reviewed",
+      "word_timing_model": "base.en",
+      "reviewed_at": "2026-09-01T19:22:43+00:00",
+      "reviewer_note": "Codex 逐句复核：与英文语义、角色名及 Minecraft 官方术语核对；保留引号内儿童口吻。"
+    },
+    {
+      "id": "mc-b1-p03-s01",
+      "text_en": "Byte ran after the stick.",
+      "zh": "Byte 追着木棍跑去。",
+      "audio": "assets/minecraft/escape-from-the-nether/sentences/page-03-sentence-01.mp3",
+      "start_ms": 196970,
+      "end_ms": 199630,
+      "words": [
+        {
+          "text": "Byte",
+          "start_ms": 0,
+          "end_ms": 440,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "Byte",
+          "asr_probability": 0.0038
+        },
+        {
+          "text": "ran",
+          "start_ms": 440,
+          "end_ms": 1140,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "ran",
+          "asr_probability": 0.9663
+        },
+        {
+          "text": "after",
+          "start_ms": 1140,
+          "end_ms": 1900,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "after",
+          "asr_probability": 0.9956
+        },
+        {
+          "text": "the",
+          "start_ms": 1900,
+          "end_ms": 2200,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "the",
+          "asr_probability": 0.9891
+        },
+        {
+          "text": "stick",
+          "start_ms": 2200,
+          "end_ms": 2480,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "stick.",
+          "asr_probability": 0.9681
+        }
+      ],
+      "glossary": [],
+      "translation_status": "reviewed",
+      "word_timing_status": "reviewed",
+      "word_timing_model": "base.en",
+      "reviewed_at": "2026-09-01T19:22:43+00:00",
+      "reviewer_note": "Codex 逐句复核：与英文语义、角色名及 Minecraft 官方术语核对；保留引号内儿童口吻。"
+    },
+    {
+      "id": "mc-b1-p03-s02",
+      "text_en": "But he did not return.",
+      "zh": "可是它没有回来。",
+      "audio": "assets/minecraft/escape-from-the-nether/sentences/page-03-sentence-02.mp3",
+      "start_ms": 200230,
+      "end_ms": 202870,
+      "words": [
+        {
+          "text": "But",
+          "start_ms": 0,
+          "end_ms": 440,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "But",
+          "asr_probability": 0.6056
+        },
+        {
+          "text": "he",
+          "start_ms": 440,
+          "end_ms": 1080,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "he",
+          "asr_probability": 0.6626
+        },
+        {
+          "text": "did",
+          "start_ms": 1080,
+          "end_ms": 1440,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "did",
+          "asr_probability": 0.9647
+        },
+        {
+          "text": "not",
+          "start_ms": 1440,
+          "end_ms": 1960,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "not",
+          "asr_probability": 0.9811
+        },
+        {
+          "text": "return",
+          "start_ms": 1960,
+          "end_ms": 2360,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "return.",
+          "asr_probability": 0.8675
+        }
+      ],
+      "glossary": [
+        {
+          "term": "return",
+          "ipa": "rɪˈtɜːrn",
+          "pos": "V",
+          "zh": "返回"
+        }
+      ],
+      "translation_status": "reviewed",
+      "word_timing_status": "reviewed",
+      "word_timing_model": "base.en",
+      "reviewed_at": "2026-09-01T19:22:43+00:00",
+      "reviewer_note": "Codex 逐句复核：与英文语义、角色名及 Minecraft 官方术语核对；保留引号内儿童口吻。"
+    },
+    {
+      "id": "mc-b1-p03-s03",
+      "text_en": "\"Where did he go?\" asked Birch.",
+      "zh": "“它去哪儿了？”Birch 问。",
+      "audio": "assets/minecraft/escape-from-the-nether/sentences/page-03-sentence-03.mp3",
+      "start_ms": 203890,
+      "end_ms": 207630,
+      "words": [
+        {
+          "text": "Where",
+          "start_ms": 0,
+          "end_ms": 560,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "Where",
+          "asr_probability": 0.316
+        },
+        {
+          "text": "did",
+          "start_ms": 560,
+          "end_ms": 960,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "did",
+          "asr_probability": 0.994
+        },
+        {
+          "text": "he",
+          "start_ms": 960,
+          "end_ms": 1260,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "he",
+          "asr_probability": 0.9948
+        },
+        {
+          "text": "go",
+          "start_ms": 1260,
+          "end_ms": 2480,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "go?\"",
+          "asr_probability": 0.6228
+        },
+        {
+          "text": "asked",
+          "start_ms": 2480,
+          "end_ms": 3060,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "asked",
+          "asr_probability": 0.8853
+        },
+        {
+          "text": "Birch",
+          "start_ms": 3060,
+          "end_ms": 3400,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "Birch.",
+          "asr_probability": 0.3112
+        }
+      ],
+      "glossary": [],
+      "translation_status": "reviewed",
+      "word_timing_status": "reviewed",
+      "word_timing_model": "base.en",
+      "reviewed_at": "2026-09-01T19:22:43+00:00",
+      "reviewer_note": "Codex 逐句复核：与英文语义、角色名及 Minecraft 官方术语核对；保留引号内儿童口吻。"
+    },
+    {
+      "id": "mc-b1-p03-s04",
+      "text_en": "They both called him.",
+      "zh": "他们俩一起呼唤它。",
+      "audio": "assets/minecraft/escape-from-the-nether/sentences/page-03-sentence-04.mp3",
+      "start_ms": 208290,
+      "end_ms": 209890,
+      "words": [
+        {
+          "text": "They",
+          "start_ms": 0,
+          "end_ms": 280,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "They",
+          "asr_probability": 0.8604
+        },
+        {
+          "text": "both",
+          "start_ms": 280,
+          "end_ms": 600,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "both",
+          "asr_probability": 0.9967
+        },
+        {
+          "text": "called",
+          "start_ms": 600,
+          "end_ms": 1040,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "called",
+          "asr_probability": 0.9946
+        },
+        {
+          "text": "him",
+          "start_ms": 1040,
+          "end_ms": 1440,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "him.",
+          "asr_probability": 0.999
+        }
+      ],
+      "glossary": [],
+      "translation_status": "reviewed",
+      "word_timing_status": "reviewed",
+      "word_timing_model": "base.en",
+      "reviewed_at": "2026-09-01T19:22:43+00:00",
+      "reviewer_note": "Codex 逐句复核：与英文语义、角色名及 Minecraft 官方术语核对；保留引号内儿童口吻。"
+    },
+    {
+      "id": "mc-b1-p03-s05",
+      "text_en": "They did not find Byte, but they saw something strange.",
+      "zh": "他们没有找到 Byte，却看见了奇怪的东西。",
+      "audio": "assets/minecraft/escape-from-the-nether/sentences/page-03-sentence-05.mp3",
+      "start_ms": 210580,
+      "end_ms": 216090,
+      "words": [
+        {
+          "text": "They",
+          "start_ms": 0,
+          "end_ms": 520,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "They",
+          "asr_probability": 0.8491
+        },
+        {
+          "text": "did",
+          "start_ms": 520,
+          "end_ms": 920,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "did",
+          "asr_probability": 0.99
+        },
+        {
+          "text": "not",
+          "start_ms": 920,
+          "end_ms": 1340,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "not",
+          "asr_probability": 0.9908
+        },
+        {
+          "text": "find",
+          "start_ms": 1340,
+          "end_ms": 1920,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "find",
+          "asr_probability": 0.9884
+        },
+        {
+          "text": "Byte",
+          "start_ms": 1920,
+          "end_ms": 2440,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "Byte,",
+          "asr_probability": 0.0001
+        },
+        {
+          "text": "but",
+          "start_ms": 3060,
+          "end_ms": 3460,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "but",
+          "asr_probability": 0.9813
+        },
+        {
+          "text": "they",
+          "start_ms": 3460,
+          "end_ms": 3720,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "they",
+          "asr_probability": 0.9951
+        },
+        {
+          "text": "saw",
+          "start_ms": 3720,
+          "end_ms": 4120,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "saw",
+          "asr_probability": 0.999
+        },
+        {
+          "text": "something",
+          "start_ms": 4120,
+          "end_ms": 4840,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "something",
+          "asr_probability": 0.9846
+        },
+        {
+          "text": "strange",
+          "start_ms": 4840,
+          "end_ms": 5220,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "strange.",
+          "asr_probability": 0.743
+        }
+      ],
+      "glossary": [],
+      "translation_status": "reviewed",
+      "word_timing_status": "reviewed",
+      "word_timing_model": "base.en",
+      "reviewed_at": "2026-09-01T19:22:43+00:00",
+      "reviewer_note": "Codex 逐句复核：与英文语义、角色名及 Minecraft 官方术语核对；保留引号内儿童口吻。"
+    },
+    {
+      "id": "mc-b1-p03-s06",
+      "text_en": "Beneath the trees, they found a rectangle of blocks made of black obsidian.",
+      "zh": "在树下，他们发现了一块由黑曜石方块组成的长方形。",
+      "audio": "assets/minecraft/escape-from-the-nether/sentences/page-03-sentence-06.mp3",
+      "start_ms": 217170,
+      "end_ms": 225110,
+      "words": [
+        {
+          "text": "Beneath",
+          "start_ms": 0,
+          "end_ms": 640,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "Beneath",
+          "asr_probability": 0.8025
+        },
+        {
+          "text": "the",
+          "start_ms": 640,
+          "end_ms": 940,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "the",
+          "asr_probability": 0.9917
+        },
+        {
+          "text": "trees",
+          "start_ms": 940,
+          "end_ms": 1400,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "trees,",
+          "asr_probability": 0.9649
+        },
+        {
+          "text": "they",
+          "start_ms": 2200,
+          "end_ms": 2460,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "they",
+          "asr_probability": 0.9862
+        },
+        {
+          "text": "found",
+          "start_ms": 2460,
+          "end_ms": 2900,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "found",
+          "asr_probability": 0.9973
+        },
+        {
+          "text": "a",
+          "start_ms": 2900,
+          "end_ms": 3320,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "a",
+          "asr_probability": 0.9955
+        },
+        {
+          "text": "rectangle",
+          "start_ms": 3320,
+          "end_ms": 3980,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "rectangle",
+          "asr_probability": 0.9967
+        },
+        {
+          "text": "of",
+          "start_ms": 3980,
+          "end_ms": 4640,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "of",
+          "asr_probability": 0.997
+        },
+        {
+          "text": "blocks",
+          "start_ms": 4640,
+          "end_ms": 5020,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "blocks",
+          "asr_probability": 0.996
+        },
+        {
+          "text": "made",
+          "start_ms": 5020,
+          "end_ms": 6100,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "made",
+          "asr_probability": 0.8582
+        },
+        {
+          "text": "of",
+          "start_ms": 6100,
+          "end_ms": 6480,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "of",
+          "asr_probability": 0.9955
+        },
+        {
+          "text": "black",
+          "start_ms": 6480,
+          "end_ms": 7000,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "black",
+          "asr_probability": 0.9062
+        },
+        {
+          "text": "obsidian",
+          "start_ms": 7000,
+          "end_ms": 7860,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "obsidian.",
+          "asr_probability": 0.8788
+        }
+      ],
+      "glossary": [
+        {
+          "term": "rectangle",
+          "ipa": "ˈrektæŋɡəl",
+          "pos": "N",
+          "zh": "长方形"
+        },
+        {
+          "term": "obsidian",
+          "ipa": "əbˈsɪdiən",
+          "pos": "N",
+          "zh": "黑曜石"
+        }
+      ],
+      "translation_status": "reviewed",
+      "word_timing_status": "reviewed",
+      "word_timing_model": "base.en",
+      "reviewed_at": "2026-09-01T19:22:43+00:00",
+      "reviewer_note": "Codex 逐句复核：与英文语义、角色名及 Minecraft 官方术语核对；保留引号内儿童口吻。"
+    },
+    {
+      "id": "mc-b1-p03-s07",
+      "text_en": "The air glowed purple inside it.",
+      "zh": "里面的空气泛着紫光。",
+      "audio": "assets/minecraft/escape-from-the-nether/sentences/page-03-sentence-07.mp3",
+      "start_ms": 225890,
+      "end_ms": 229470,
+      "words": [
+        {
+          "text": "The",
+          "start_ms": 0,
+          "end_ms": 180,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "The",
+          "asr_probability": 0.7745
+        },
+        {
+          "text": "air",
+          "start_ms": 180,
+          "end_ms": 600,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "air",
+          "asr_probability": 0.9845
+        },
+        {
+          "text": "glowed",
+          "start_ms": 600,
+          "end_ms": 1560,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "glowed",
+          "asr_probability": 0.9042
+        },
+        {
+          "text": "purple",
+          "start_ms": 1560,
+          "end_ms": 2060,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "purple",
+          "asr_probability": 0.997
+        },
+        {
+          "text": "inside",
+          "start_ms": 2060,
+          "end_ms": 3200,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "inside",
+          "asr_probability": 0.9876
+        },
+        {
+          "text": "it",
+          "start_ms": 3200,
+          "end_ms": 3500,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "it.",
+          "asr_probability": 0.9912
+        }
+      ],
+      "glossary": [],
+      "translation_status": "reviewed",
+      "word_timing_status": "reviewed",
+      "word_timing_model": "base.en",
+      "reviewed_at": "2026-09-01T19:22:43+00:00",
+      "reviewer_note": "Codex 逐句复核：与英文语义、角色名及 Minecraft 官方术语核对；保留引号内儿童口吻。"
+    },
+    {
+      "id": "mc-b1-p04-s01",
+      "text_en": "It's a portal to the Nether,\" said Emmy.",
+      "zh": "“这是通往下界的传送门，”Emmy 说。",
+      "audio": "assets/minecraft/escape-from-the-nether/sentences/page-04-sentence-01.mp3",
+      "start_ms": 230420,
+      "end_ms": 234550,
+      "words": [
+        {
+          "text": "It's",
+          "start_ms": 0,
+          "end_ms": 440,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "It's",
+          "asr_probability": 0.5483
+        },
+        {
+          "text": "a",
+          "start_ms": 440,
+          "end_ms": 660,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "a",
+          "asr_probability": 0.9887
+        },
+        {
+          "text": "portal",
+          "start_ms": 660,
+          "end_ms": 1280,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "portal",
+          "asr_probability": 0.9826
+        },
+        {
+          "text": "to",
+          "start_ms": 1280,
+          "end_ms": 1980,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "to",
+          "asr_probability": 0.9926
+        },
+        {
+          "text": "the",
+          "start_ms": 1980,
+          "end_ms": 2180,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "the",
+          "asr_probability": 0.9598
+        },
+        {
+          "text": "Nether",
+          "start_ms": 2180,
+          "end_ms": 3360,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "Nether,\"",
+          "asr_probability": 0.3763
+        },
+        {
+          "text": "said",
+          "start_ms": 3360,
+          "end_ms": 3760,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "said",
+          "asr_probability": 0.988
+        },
+        {
+          "text": "Emmy",
+          "start_ms": 3760,
+          "end_ms": 4040,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "Emmy.",
+          "asr_probability": 0.0004
+        }
+      ],
+      "glossary": [
+        {
+          "term": "portal",
+          "ipa": "ˈpɔːrtəl",
+          "pos": "N",
+          "zh": "传送门"
+        }
+      ],
+      "translation_status": "reviewed",
+      "word_timing_status": "reviewed",
+      "word_timing_model": "base.en",
+      "reviewed_at": "2026-09-01T19:22:43+00:00",
+      "reviewer_note": "Codex 逐句复核：与英文语义、角色名及 Minecraft 官方术语核对；保留引号内儿童口吻。"
+    },
+    {
+      "id": "mc-b1-p04-s02",
+      "text_en": "She put her hand into the purple light.",
+      "zh": "她把手伸进紫色的光里。",
+      "audio": "assets/minecraft/escape-from-the-nether/sentences/page-04-sentence-02.mp3",
+      "start_ms": 235350,
+      "end_ms": 239150,
+      "words": [
+        {
+          "text": "She",
+          "start_ms": 0,
+          "end_ms": 240,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "She",
+          "asr_probability": 0.9874
+        },
+        {
+          "text": "put",
+          "start_ms": 240,
+          "end_ms": 560,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "put",
+          "asr_probability": 0.9974
+        },
+        {
+          "text": "her",
+          "start_ms": 560,
+          "end_ms": 940,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "her",
+          "asr_probability": 0.9979
+        },
+        {
+          "text": "hand",
+          "start_ms": 940,
+          "end_ms": 1520,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "hand",
+          "asr_probability": 0.9955
+        },
+        {
+          "text": "into",
+          "start_ms": 1520,
+          "end_ms": 2340,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "and into",
+          "asr_probability": 0.082
+        },
+        {
+          "text": "the",
+          "start_ms": 2340,
+          "end_ms": 2660,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "the",
+          "asr_probability": 0.9961
+        },
+        {
+          "text": "purple",
+          "start_ms": 2660,
+          "end_ms": 3200,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "purple",
+          "asr_probability": 0.9428
+        },
+        {
+          "text": "light",
+          "start_ms": 3200,
+          "end_ms": 3700,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "light.",
+          "asr_probability": 0.9984
+        }
+      ],
+      "glossary": [
+        {
+          "term": "purple",
+          "ipa": "ˈpɜːrpəl",
+          "pos": "Adj",
+          "zh": "紫色的"
+        }
+      ],
+      "translation_status": "reviewed",
+      "word_timing_status": "reviewed",
+      "word_timing_model": "base.en",
+      "reviewed_at": "2026-09-01T19:22:43+00:00",
+      "reviewer_note": "Codex 逐句复核：与英文语义、角色名及 Minecraft 官方术语核对；保留引号内儿童口吻。"
+    },
+    {
+      "id": "mc-b1-p04-s03",
+      "text_en": "Her hand disappeared!",
+      "zh": "她的手消失了！",
+      "audio": "assets/minecraft/escape-from-the-nether/sentences/page-04-sentence-03.mp3",
+      "start_ms": 240030,
+      "end_ms": 241570,
+      "words": [
+        {
+          "text": "Her",
+          "start_ms": 0,
+          "end_ms": 160,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "Her",
+          "asr_probability": 0.7324
+        },
+        {
+          "text": "hand",
+          "start_ms": 160,
+          "end_ms": 600,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "hand",
+          "asr_probability": 0.9873
+        },
+        {
+          "text": "disappeared",
+          "start_ms": 600,
+          "end_ms": 1280,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "disappeared!",
+          "asr_probability": 0.0367
+        }
+      ],
+      "glossary": [
+        {
+          "term": "disappeared",
+          "ipa": "ˌdɪsəˈpɪərd",
+          "pos": "V-ed",
+          "zh": "消失了"
+        }
+      ],
+      "translation_status": "reviewed",
+      "word_timing_status": "reviewed",
+      "word_timing_model": "base.en",
+      "reviewed_at": "2026-09-01T19:22:43+00:00",
+      "reviewer_note": "Codex 逐句复核：与英文语义、角色名及 Minecraft 官方术语核对；保留引号内儿童口吻。"
+    },
+    {
+      "id": "mc-b1-p04-s04",
+      "text_en": "\"Do you think Byte went through the portal?\" asked Birch.",
+      "zh": "“你觉得 Byte 穿过传送门了吗？”Birch 问。",
+      "audio": "assets/minecraft/escape-from-the-nether/sentences/page-04-sentence-04.mp3",
+      "start_ms": 242830,
+      "end_ms": 248410,
+      "words": [
+        {
+          "text": "Do",
+          "start_ms": 0,
+          "end_ms": 400,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "Do",
+          "asr_probability": 0.6674
+        },
+        {
+          "text": "you",
+          "start_ms": 400,
+          "end_ms": 620,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "you",
+          "asr_probability": 0.9955
+        },
+        {
+          "text": "think",
+          "start_ms": 620,
+          "end_ms": 1040,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "think",
+          "asr_probability": 0.9988
+        },
+        {
+          "text": "Byte",
+          "start_ms": 1040,
+          "end_ms": 1440,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "Byte",
+          "asr_probability": 0.0117
+        },
+        {
+          "text": "went",
+          "start_ms": 1440,
+          "end_ms": 2440,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "went",
+          "asr_probability": 0.9784
+        },
+        {
+          "text": "through",
+          "start_ms": 2440,
+          "end_ms": 2920,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "through",
+          "asr_probability": 0.9943
+        },
+        {
+          "text": "the",
+          "start_ms": 2920,
+          "end_ms": 3280,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "the",
+          "asr_probability": 0.9961
+        },
+        {
+          "text": "portal",
+          "start_ms": 3280,
+          "end_ms": 3820,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "portal?",
+          "asr_probability": 0.9255
+        },
+        {
+          "text": "asked",
+          "start_ms": 4620,
+          "end_ms": 4940,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "asked",
+          "asr_probability": 0.0518
+        },
+        {
+          "text": "Birch",
+          "start_ms": 4940,
+          "end_ms": 5240,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "Birch.",
+          "asr_probability": 0.2212
+        }
+      ],
+      "glossary": [],
+      "translation_status": "reviewed",
+      "word_timing_status": "reviewed",
+      "word_timing_model": "base.en",
+      "reviewed_at": "2026-09-01T19:22:43+00:00",
+      "reviewer_note": "Codex 逐句复核：与英文语义、角色名及 Minecraft 官方术语核对；保留引号内儿童口吻。"
+    },
+    {
+      "id": "mc-b1-p04-s05",
+      "text_en": "There is only one way to find out,\" said Emmy.",
+      "zh": "“只有一个办法能知道，”Emmy 说。",
+      "audio": "assets/minecraft/escape-from-the-nether/sentences/page-04-sentence-05.mp3",
+      "start_ms": 249370,
+      "end_ms": 254650,
+      "words": [],
+      "glossary": [],
+      "translation_status": "reviewed",
+      "word_timing_status": "needs-review",
+      "word_timing_error": "ASR replace: source[0:10]=['There', 'is', 'only', 'one', 'way', 'to', 'find', 'out', 'said', 'Emmy'], heard=['Get']",
+      "reviewed_at": "2026-09-01T19:22:43+00:00",
+      "reviewer_note": "Codex 逐句复核：与英文语义、角色名及 Minecraft 官方术语核对；保留引号内儿童口吻。"
+    },
+    {
+      "id": "mc-b1-p04-s06",
+      "text_en": "\"Come on!\"",
+      "zh": "“走吧！”",
+      "audio": "assets/minecraft/escape-from-the-nether/sentences/page-04-sentence-06.mp3",
+      "start_ms": 255450,
+      "end_ms": 256130,
+      "words": [
+        {
+          "text": "Come",
+          "start_ms": 0,
+          "end_ms": 220,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "Come",
+          "asr_probability": 0.65
+        },
+        {
+          "text": "on",
+          "start_ms": 220,
+          "end_ms": 380,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "on!",
+          "asr_probability": 0.982
+        }
+      ],
+      "glossary": [],
+      "translation_status": "reviewed",
+      "word_timing_status": "reviewed",
+      "word_timing_model": "base.en",
+      "reviewed_at": "2026-09-01T19:22:43+00:00",
+      "reviewer_note": "Codex 逐句复核：与英文语义、角色名及 Minecraft 官方术语核对；保留引号内儿童口吻。"
+    },
+    {
+      "id": "mc-b1-p05-s01",
+      "text_en": "The two friends leaped into the portal.",
+      "zh": "两个朋友跳进了传送门。",
+      "audio": "assets/minecraft/escape-from-the-nether/sentences/page-05-sentence-01.mp3",
+      "start_ms": 257130,
+      "end_ms": 261330,
+      "words": [
+        {
+          "text": "The",
+          "start_ms": 0,
+          "end_ms": 600,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "The",
+          "asr_probability": 0.7843
+        },
+        {
+          "text": "two",
+          "start_ms": 600,
+          "end_ms": 900,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "two",
+          "asr_probability": 0.9609
+        },
+        {
+          "text": "friends",
+          "start_ms": 900,
+          "end_ms": 1620,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "friends",
+          "asr_probability": 0.9956
+        },
+        {
+          "text": "leaped",
+          "start_ms": 1620,
+          "end_ms": 2620,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "leaped",
+          "asr_probability": 0.9526
+        },
+        {
+          "text": "into",
+          "start_ms": 2620,
+          "end_ms": 3320,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "into",
+          "asr_probability": 0.9903
+        },
+        {
+          "text": "the",
+          "start_ms": 3320,
+          "end_ms": 3620,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "the",
+          "asr_probability": 0.9973
+        },
+        {
+          "text": "portal",
+          "start_ms": 3620,
+          "end_ms": 4020,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "portal.",
+          "asr_probability": 0.3434
+        }
+      ],
+      "glossary": [
+        {
+          "term": "leaped",
+          "ipa": "liːpt",
+          "pos": "V-ed",
+          "zh": "跳入"
+        }
+      ],
+      "translation_status": "reviewed",
+      "word_timing_status": "reviewed",
+      "word_timing_model": "base.en",
+      "reviewed_at": "2026-09-01T19:22:43+00:00",
+      "reviewer_note": "Codex 逐句复核：与英文语义、角色名及 Minecraft 官方术语核对；保留引号内儿童口吻。"
+    },
+    {
+      "id": "mc-b1-p05-s02",
+      "text_en": "At first, Birch thought they were still in the forest.",
+      "zh": "一开始，Birch 以为他们还在森林里。",
+      "audio": "assets/minecraft/escape-from-the-nether/sentences/page-05-sentence-02.mp3",
+      "start_ms": 262190,
+      "end_ms": 266970,
+      "words": [
+        {
+          "text": "At",
+          "start_ms": 0,
+          "end_ms": 140,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "At",
+          "asr_probability": 0.7473
+        },
+        {
+          "text": "first",
+          "start_ms": 140,
+          "end_ms": 480,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "first,",
+          "asr_probability": 0.9953
+        },
+        {
+          "text": "Birch",
+          "start_ms": 1040,
+          "end_ms": 1500,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "Birch",
+          "asr_probability": 0.3198
+        },
+        {
+          "text": "thought",
+          "start_ms": 1500,
+          "end_ms": 2380,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "thought",
+          "asr_probability": 0.972
+        },
+        {
+          "text": "they",
+          "start_ms": 2380,
+          "end_ms": 2680,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "they",
+          "asr_probability": 0.9824
+        },
+        {
+          "text": "were",
+          "start_ms": 2680,
+          "end_ms": 3060,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "were",
+          "asr_probability": 0.9961
+        },
+        {
+          "text": "still",
+          "start_ms": 3060,
+          "end_ms": 3580,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "still",
+          "asr_probability": 0.9963
+        },
+        {
+          "text": "in",
+          "start_ms": 3580,
+          "end_ms": 4060,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "in",
+          "asr_probability": 0.9975
+        },
+        {
+          "text": "the",
+          "start_ms": 4060,
+          "end_ms": 4220,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "the",
+          "asr_probability": 0.9973
+        },
+        {
+          "text": "forest",
+          "start_ms": 4220,
+          "end_ms": 4640,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "forest.",
+          "asr_probability": 0.4864
+        }
+      ],
+      "glossary": [
+        {
+          "term": "forest",
+          "ipa": "ˈfɔːrɪst",
+          "pos": "N",
+          "zh": "森林"
+        }
+      ],
+      "translation_status": "reviewed",
+      "word_timing_status": "reviewed",
+      "word_timing_model": "base.en",
+      "reviewed_at": "2026-09-01T19:22:43+00:00",
+      "reviewer_note": "Codex 逐句复核：与英文语义、角色名及 Minecraft 官方术语核对；保留引号内儿童口吻。"
+    },
+    {
+      "id": "mc-b1-p05-s03",
+      "text_en": "Then he saw that the trees were blue-green.",
+      "zh": "后来他发现树木是蓝绿色的。",
+      "audio": "assets/minecraft/escape-from-the-nether/sentences/page-05-sentence-03.mp3",
+      "start_ms": 267970,
+      "end_ms": 272910,
+      "words": [
+        {
+          "text": "Then",
+          "start_ms": 0,
+          "end_ms": 580,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "Then",
+          "asr_probability": 0.8286
+        },
+        {
+          "text": "he",
+          "start_ms": 580,
+          "end_ms": 1260,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "he",
+          "asr_probability": 0.5812
+        },
+        {
+          "text": "saw",
+          "start_ms": 1260,
+          "end_ms": 1740,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "saw",
+          "asr_probability": 0.999
+        },
+        {
+          "text": "that",
+          "start_ms": 1740,
+          "end_ms": 2240,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "that",
+          "asr_probability": 0.9953
+        },
+        {
+          "text": "the",
+          "start_ms": 2240,
+          "end_ms": 2520,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "the",
+          "asr_probability": 0.9936
+        },
+        {
+          "text": "trees",
+          "start_ms": 2520,
+          "end_ms": 2960,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "trees",
+          "asr_probability": 0.9967
+        },
+        {
+          "text": "were",
+          "start_ms": 2960,
+          "end_ms": 3880,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "were",
+          "asr_probability": 0.9893
+        },
+        {
+          "text": "blue-green",
+          "start_ms": 3880,
+          "end_ms": 4780,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "blue -green.",
+          "asr_probability": 0.9824
+        }
+      ],
+      "glossary": [],
+      "translation_status": "reviewed",
+      "word_timing_status": "reviewed",
+      "word_timing_model": "base.en",
+      "reviewed_at": "2026-09-01T19:22:43+00:00",
+      "reviewer_note": "Codex 逐句复核：与英文语义、角色名及 Minecraft 官方术语核对；保留引号内儿童口吻。"
+    },
+    {
+      "id": "mc-b1-p05-s04",
+      "text_en": "So was the grass.",
+      "zh": "草也是蓝绿色的。",
+      "audio": "assets/minecraft/escape-from-the-nether/sentences/page-05-sentence-04.mp3",
+      "start_ms": 273850,
+      "end_ms": 275450,
+      "words": [
+        {
+          "text": "So",
+          "start_ms": 0,
+          "end_ms": 440,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "So",
+          "asr_probability": 0.7665
+        },
+        {
+          "text": "was",
+          "start_ms": 440,
+          "end_ms": 900,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "was",
+          "asr_probability": 0.8293
+        },
+        {
+          "text": "the",
+          "start_ms": 900,
+          "end_ms": 1160,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "the",
+          "asr_probability": 0.9871
+        },
+        {
+          "text": "grass",
+          "start_ms": 1160,
+          "end_ms": 1460,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "graph.",
+          "asr_probability": 0.7443
+        }
+      ],
+      "glossary": [
+        {
+          "term": "grass",
+          "ipa": "ɡræs",
+          "pos": "N",
+          "zh": "草"
+        }
+      ],
+      "translation_status": "reviewed",
+      "word_timing_status": "reviewed",
+      "word_timing_model": "base.en",
+      "reviewed_at": "2026-09-01T19:22:43+00:00",
+      "reviewer_note": "Codex 逐句复核：与英文语义、角色名及 Minecraft 官方术语核对；保留引号内儿童口吻。"
+    },
+    {
+      "id": "mc-b1-p06-s01",
+      "text_en": "Birch and Emmy climbed a pair of vines to get a better view of the Nether.",
+      "zh": "Birch 和 Emmy 爬上两根藤蔓，好看清下界的景象。",
+      "audio": "assets/minecraft/escape-from-the-nether/sentences/page-06-sentence-01.mp3",
+      "start_ms": 276670,
+      "end_ms": 283710,
+      "words": [
+        {
+          "text": "Birch",
+          "start_ms": 0,
+          "end_ms": 480,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "Birch",
+          "asr_probability": 0.4179
+        },
+        {
+          "text": "and",
+          "start_ms": 480,
+          "end_ms": 900,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "and",
+          "asr_probability": 0.991
+        },
+        {
+          "text": "Emmy",
+          "start_ms": 900,
+          "end_ms": 1280,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "Emmy",
+          "asr_probability": 0.7743
+        },
+        {
+          "text": "climbed",
+          "start_ms": 1540,
+          "end_ms": 2020,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "climbed",
+          "asr_probability": 0.9907
+        },
+        {
+          "text": "a",
+          "start_ms": 2020,
+          "end_ms": 2620,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "a",
+          "asr_probability": 0.9976
+        },
+        {
+          "text": "pair",
+          "start_ms": 2620,
+          "end_ms": 3040,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "pair",
+          "asr_probability": 0.9964
+        },
+        {
+          "text": "of",
+          "start_ms": 3040,
+          "end_ms": 3220,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "of",
+          "asr_probability": 0.9992
+        },
+        {
+          "text": "vines",
+          "start_ms": 3220,
+          "end_ms": 3720,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "vines",
+          "asr_probability": 0.9949
+        },
+        {
+          "text": "to",
+          "start_ms": 3720,
+          "end_ms": 4460,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "to",
+          "asr_probability": 0.9825
+        },
+        {
+          "text": "get",
+          "start_ms": 4460,
+          "end_ms": 4720,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "get",
+          "asr_probability": 0.9992
+        },
+        {
+          "text": "a",
+          "start_ms": 4720,
+          "end_ms": 5040,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "a",
+          "asr_probability": 0.9934
+        },
+        {
+          "text": "better",
+          "start_ms": 5040,
+          "end_ms": 5420,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "better",
+          "asr_probability": 0.9987
+        },
+        {
+          "text": "view",
+          "start_ms": 5420,
+          "end_ms": 5840,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "view",
+          "asr_probability": 0.999
+        },
+        {
+          "text": "of",
+          "start_ms": 5840,
+          "end_ms": 6440,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "of",
+          "asr_probability": 0.997
+        },
+        {
+          "text": "the",
+          "start_ms": 6440,
+          "end_ms": 6640,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "the",
+          "asr_probability": 0.9955
+        },
+        {
+          "text": "Nether",
+          "start_ms": 6640,
+          "end_ms": 7040,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "nether.",
+          "asr_probability": 0.9054,
+          "boundary_clamped_ms": 40
+        }
+      ],
+      "glossary": [
+        {
+          "term": "vines",
+          "ipa": "vaɪnz",
+          "pos": "N",
+          "zh": "藤蔓"
+        }
+      ],
+      "translation_status": "reviewed",
+      "word_timing_status": "reviewed",
+      "word_timing_model": "base.en",
+      "reviewed_at": "2026-09-01T19:22:43+00:00",
+      "reviewer_note": "Codex 逐句复核：与英文语义、角色名及 Minecraft 官方术语核对；保留引号内儿童口吻。"
+    },
+    {
+      "id": "mc-b1-p06-s02",
+      "text_en": "Birch gasped in surprise.",
+      "zh": "Birch 惊讶地倒吸了一口气。",
+      "audio": "assets/minecraft/escape-from-the-nether/sentences/page-06-sentence-02.mp3",
+      "start_ms": 283710,
+      "end_ms": 286890,
+      "words": [
+        {
+          "text": "Birch",
+          "start_ms": 600,
+          "end_ms": 1160,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "Birch",
+          "asr_probability": 0.9816
+        },
+        {
+          "text": "gasped",
+          "start_ms": 1160,
+          "end_ms": 1720,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "gasped",
+          "asr_probability": 0.9891
+        },
+        {
+          "text": "in",
+          "start_ms": 1720,
+          "end_ms": 2540,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "in",
+          "asr_probability": 0.9753
+        },
+        {
+          "text": "surprise",
+          "start_ms": 2540,
+          "end_ms": 3020,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "surprise.",
+          "asr_probability": 0.9919
+        }
+      ],
+      "glossary": [],
+      "translation_status": "reviewed",
+      "word_timing_status": "reviewed",
+      "word_timing_model": "base.en",
+      "reviewed_at": "2026-09-01T19:22:43+00:00",
+      "reviewer_note": "Codex 逐句复核：与英文语义、角色名及 Minecraft 官方术语核对；保留引号内儿童口吻。"
+    },
+    {
+      "id": "mc-b1-p06-s03",
+      "text_en": "He saw a gray desert.",
+      "zh": "他看见了一片灰色的沙漠。",
+      "audio": "assets/minecraft/escape-from-the-nether/sentences/page-06-sentence-03.mp3",
+      "start_ms": 288150,
+      "end_ms": 290570,
+      "words": [
+        {
+          "text": "He",
+          "start_ms": 0,
+          "end_ms": 280,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "He",
+          "asr_probability": 0.8049
+        },
+        {
+          "text": "saw",
+          "start_ms": 280,
+          "end_ms": 740,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "saw",
+          "asr_probability": 0.99
+        },
+        {
+          "text": "a",
+          "start_ms": 740,
+          "end_ms": 1320,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "a",
+          "asr_probability": 0.9206
+        },
+        {
+          "text": "gray",
+          "start_ms": 1320,
+          "end_ms": 1740,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "gray",
+          "asr_probability": 0.3414
+        },
+        {
+          "text": "desert",
+          "start_ms": 1740,
+          "end_ms": 2180,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "desert.",
+          "asr_probability": 0.9899
+        }
+      ],
+      "glossary": [
+        {
+          "term": "desert",
+          "ipa": "ˈdezərt",
+          "pos": "N",
+          "zh": "沙漠"
+        }
+      ],
+      "translation_status": "reviewed",
+      "word_timing_status": "reviewed",
+      "word_timing_model": "base.en",
+      "reviewed_at": "2026-09-01T19:22:43+00:00",
+      "reviewer_note": "Codex 逐句复核：与英文语义、角色名及 Minecraft 官方术语核对；保留引号内儿童口吻。"
+    },
+    {
+      "id": "mc-b1-p06-s04",
+      "text_en": "He saw a red woodland.",
+      "zh": "他看见了一片红色的林地。",
+      "audio": "assets/minecraft/escape-from-the-nether/sentences/page-06-sentence-04.mp3",
+      "start_ms": 291330,
+      "end_ms": 294370,
+      "words": [
+        {
+          "text": "He",
+          "start_ms": 0,
+          "end_ms": 360,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "He",
+          "asr_probability": 0.8615
+        },
+        {
+          "text": "saw",
+          "start_ms": 360,
+          "end_ms": 880,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "saw",
+          "asr_probability": 0.9976
+        },
+        {
+          "text": "a",
+          "start_ms": 880,
+          "end_ms": 1420,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "a",
+          "asr_probability": 0.9878
+        },
+        {
+          "text": "red",
+          "start_ms": 1420,
+          "end_ms": 1860,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "red",
+          "asr_probability": 0.8007
+        },
+        {
+          "text": "woodland",
+          "start_ms": 1860,
+          "end_ms": 2680,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "woodland.",
+          "asr_probability": 0.8738
+        }
+      ],
+      "glossary": [],
+      "translation_status": "reviewed",
+      "word_timing_status": "reviewed",
+      "word_timing_model": "base.en",
+      "reviewed_at": "2026-09-01T19:22:43+00:00",
+      "reviewer_note": "Codex 逐句复核：与英文语义、角色名及 Minecraft 官方术语核对；保留引号内儿童口吻。"
+    },
+    {
+      "id": "mc-b1-p06-s05",
+      "text_en": "And he saw an ocean of lava.",
+      "zh": "他还看见了一片岩浆海。",
+      "audio": "assets/minecraft/escape-from-the-nether/sentences/page-06-sentence-05.mp3",
+      "start_ms": 294810,
+      "end_ms": 298550,
+      "words": [
+        {
+          "text": "And",
+          "start_ms": 200,
+          "end_ms": 580,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "And",
+          "asr_probability": 0.9869
+        },
+        {
+          "text": "he",
+          "start_ms": 580,
+          "end_ms": 1220,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "he",
+          "asr_probability": 0.84
+        },
+        {
+          "text": "saw",
+          "start_ms": 1220,
+          "end_ms": 1660,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "saw",
+          "asr_probability": 0.9995
+        },
+        {
+          "text": "an",
+          "start_ms": 1660,
+          "end_ms": 2120,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "an",
+          "asr_probability": 0.9895
+        },
+        {
+          "text": "ocean",
+          "start_ms": 2120,
+          "end_ms": 2760,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "ocean",
+          "asr_probability": 0.9967
+        },
+        {
+          "text": "of",
+          "start_ms": 2760,
+          "end_ms": 3260,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "of",
+          "asr_probability": 0.999
+        },
+        {
+          "text": "lava",
+          "start_ms": 3260,
+          "end_ms": 3620,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "lava.",
+          "asr_probability": 0.9906
+        }
+      ],
+      "glossary": [
+        {
+          "term": "lava",
+          "ipa": "ˈlɑːvə",
+          "pos": "N",
+          "zh": "岩浆"
+        }
+      ],
+      "translation_status": "reviewed",
+      "word_timing_status": "reviewed",
+      "word_timing_model": "base.en",
+      "reviewed_at": "2026-09-01T19:22:43+00:00",
+      "reviewer_note": "Codex 逐句复核：与英文语义、角色名及 Minecraft 官方术语核对；保留引号内儿童口吻。"
+    },
+    {
+      "id": "mc-b1-p07-s01",
+      "text_en": "Birch had never seen any place like this in Minecraft.",
+      "zh": "在 Minecraft 里，Birch 从没见过这样的地方。",
+      "audio": "assets/minecraft/escape-from-the-nether/sentences/page-07-sentence-01.mp3",
+      "start_ms": 299710,
+      "end_ms": 305010,
+      "words": [
+        {
+          "text": "Birch",
+          "start_ms": 0,
+          "end_ms": 400,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "Birch",
+          "asr_probability": 0.6651
+        },
+        {
+          "text": "had",
+          "start_ms": 400,
+          "end_ms": 900,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "had",
+          "asr_probability": 0.9864
+        },
+        {
+          "text": "never",
+          "start_ms": 900,
+          "end_ms": 1280,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "never",
+          "asr_probability": 0.9976
+        },
+        {
+          "text": "seen",
+          "start_ms": 1280,
+          "end_ms": 2000,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "seen",
+          "asr_probability": 0.9978
+        },
+        {
+          "text": "any",
+          "start_ms": 2000,
+          "end_ms": 2620,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "any",
+          "asr_probability": 0.9943
+        },
+        {
+          "text": "place",
+          "start_ms": 2620,
+          "end_ms": 3180,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "place",
+          "asr_probability": 0.9804
+        },
+        {
+          "text": "like",
+          "start_ms": 3180,
+          "end_ms": 3640,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "like",
+          "asr_probability": 0.9982
+        },
+        {
+          "text": "this",
+          "start_ms": 3640,
+          "end_ms": 4120,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "this",
+          "asr_probability": 0.9956
+        },
+        {
+          "text": "in",
+          "start_ms": 4120,
+          "end_ms": 4740,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "in",
+          "asr_probability": 0.9547
+        },
+        {
+          "text": "Minecraft",
+          "start_ms": 4740,
+          "end_ms": 4980,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "Minecraft.",
+          "asr_probability": 0.9316
+        }
+      ],
+      "glossary": [],
+      "translation_status": "reviewed",
+      "word_timing_status": "reviewed",
+      "word_timing_model": "base.en",
+      "reviewed_at": "2026-09-01T19:22:43+00:00",
+      "reviewer_note": "Codex 逐句复核：与英文语义、角色名及 Minecraft 官方术语核对；保留引号内儿童口吻。"
+    },
+    {
+      "id": "mc-b1-p07-s02",
+      "text_en": "\"Even the mushrooms are strange!\" Emmy told him with a laugh.",
+      "zh": "“连蘑菇都很奇怪！”Emmy 笑着告诉他。",
+      "audio": "assets/minecraft/escape-from-the-nether/sentences/page-07-sentence-02.mp3",
+      "start_ms": 305930,
+      "end_ms": 312270,
+      "words": [
+        {
+          "text": "Even",
+          "start_ms": 0,
+          "end_ms": 640,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "Even",
+          "asr_probability": 0.5111
+        },
+        {
+          "text": "the",
+          "start_ms": 640,
+          "end_ms": 1000,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "the",
+          "asr_probability": 0.9666
+        },
+        {
+          "text": "mushrooms",
+          "start_ms": 1000,
+          "end_ms": 1560,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "mushrooms",
+          "asr_probability": 0.9377
+        },
+        {
+          "text": "are",
+          "start_ms": 1560,
+          "end_ms": 2240,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "are",
+          "asr_probability": 0.9985
+        },
+        {
+          "text": "strange",
+          "start_ms": 2240,
+          "end_ms": 3100,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "strange!",
+          "asr_probability": 0.9976
+        },
+        {
+          "text": "Emmy",
+          "start_ms": 4040,
+          "end_ms": 4220,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "Emmy",
+          "asr_probability": 0.355
+        },
+        {
+          "text": "told",
+          "start_ms": 4220,
+          "end_ms": 4660,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "told",
+          "asr_probability": 0.9951
+        },
+        {
+          "text": "him",
+          "start_ms": 4660,
+          "end_ms": 5080,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "him",
+          "asr_probability": 0.998
+        },
+        {
+          "text": "with",
+          "start_ms": 5080,
+          "end_ms": 5680,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "with",
+          "asr_probability": 0.7888
+        },
+        {
+          "text": "a",
+          "start_ms": 5680,
+          "end_ms": 5840,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "a",
+          "asr_probability": 0.9764
+        },
+        {
+          "text": "laugh",
+          "start_ms": 5840,
+          "end_ms": 6100,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "laugh.",
+          "asr_probability": 0.999
+        }
+      ],
+      "glossary": [
+        {
+          "term": "mushrooms",
+          "ipa": "ˈmʌʃruːmz",
+          "pos": "N",
+          "zh": "蘑菇"
+        }
+      ],
+      "translation_status": "reviewed",
+      "word_timing_status": "reviewed",
+      "word_timing_model": "base.en",
+      "reviewed_at": "2026-09-01T19:22:43+00:00",
+      "reviewer_note": "Codex 逐句复核：与英文语义、角色名及 Minecraft 官方术语核对；保留引号内儿童口吻。"
+    },
+    {
+      "id": "mc-b1-p07-s03",
+      "text_en": "She put two blue-green fungi in her inventory.",
+      "zh": "她把两株蓝绿色真菌放进了物品栏。",
+      "audio": "assets/minecraft/escape-from-the-nether/sentences/page-07-sentence-03.mp3",
+      "start_ms": 312270,
+      "end_ms": 318050,
+      "words": [
+        {
+          "text": "She",
+          "start_ms": 660,
+          "end_ms": 980,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "She",
+          "asr_probability": 0.9845
+        },
+        {
+          "text": "put",
+          "start_ms": 980,
+          "end_ms": 1360,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "put",
+          "asr_probability": 0.9973
+        },
+        {
+          "text": "two",
+          "start_ms": 1360,
+          "end_ms": 2040,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "two",
+          "asr_probability": 0.909
+        },
+        {
+          "text": "blue-green",
+          "start_ms": 2040,
+          "end_ms": 3440,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "blue -green",
+          "asr_probability": 0.9176
+        },
+        {
+          "text": "fungi",
+          "start_ms": 3440,
+          "end_ms": 3780,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "fungi",
+          "asr_probability": 0.9928
+        },
+        {
+          "text": "in",
+          "start_ms": 3780,
+          "end_ms": 4700,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "in",
+          "asr_probability": 0.9951
+        },
+        {
+          "text": "her",
+          "start_ms": 4700,
+          "end_ms": 4960,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "her",
+          "asr_probability": 0.9982
+        },
+        {
+          "text": "inventory",
+          "start_ms": 4960,
+          "end_ms": 5500,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "inventory.",
+          "asr_probability": 0.9949
+        }
+      ],
+      "glossary": [
+        {
+          "term": "fungi",
+          "ipa": "ˈfʌndʒaɪ",
+          "pos": "N",
+          "zh": "真菌"
+        },
+        {
+          "term": "inventory",
+          "ipa": "ˈɪnvəntɔːri",
+          "pos": "N",
+          "zh": "背包；物品栏"
+        }
+      ],
+      "translation_status": "reviewed",
+      "word_timing_status": "reviewed",
+      "word_timing_model": "base.en",
+      "reviewed_at": "2026-09-01T19:22:43+00:00",
+      "reviewer_note": "Codex 逐句复核：与英文语义、角色名及 Minecraft 官方术语核对；保留引号内儿童口吻。"
+    },
+    {
+      "id": "mc-b1-p07-s04",
+      "text_en": "Setting out to find Byte, they started walking.",
+      "zh": "他们出发去寻找 Byte，开始向前走。",
+      "audio": "assets/minecraft/escape-from-the-nether/sentences/page-07-sentence-04.mp3",
+      "start_ms": 319090,
+      "end_ms": 323370,
+      "words": [
+        {
+          "text": "Setting",
+          "start_ms": 0,
+          "end_ms": 560,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "Setting",
+          "asr_probability": 0.972
+        },
+        {
+          "text": "out",
+          "start_ms": 560,
+          "end_ms": 920,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "out",
+          "asr_probability": 0.9978
+        },
+        {
+          "text": "to",
+          "start_ms": 920,
+          "end_ms": 1480,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "to",
+          "asr_probability": 0.9888
+        },
+        {
+          "text": "find",
+          "start_ms": 1480,
+          "end_ms": 1820,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "find",
+          "asr_probability": 0.9984
+        },
+        {
+          "text": "Byte",
+          "start_ms": 1820,
+          "end_ms": 2220,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "bite,",
+          "asr_probability": 0.9238
+        },
+        {
+          "text": "they",
+          "start_ms": 3080,
+          "end_ms": 3220,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "they",
+          "asr_probability": 0.9951
+        },
+        {
+          "text": "started",
+          "start_ms": 3220,
+          "end_ms": 3680,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "started",
+          "asr_probability": 0.9975
+        },
+        {
+          "text": "walking",
+          "start_ms": 3680,
+          "end_ms": 4160,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "walking.",
+          "asr_probability": 0.9975
+        }
+      ],
+      "glossary": [],
+      "translation_status": "reviewed",
+      "word_timing_status": "reviewed",
+      "word_timing_model": "base.en",
+      "reviewed_at": "2026-09-01T19:22:43+00:00",
+      "reviewer_note": "Codex 逐句复核：与英文语义、角色名及 Minecraft 官方术语核对；保留引号内儿童口吻。"
+    },
+    {
+      "id": "mc-b1-p07-s05",
+      "text_en": "The strange blue-green forest became a strange red forest.",
+      "zh": "奇怪的蓝绿色森林变成了奇怪的红色森林。",
+      "audio": "assets/minecraft/escape-from-the-nether/sentences/page-07-sentence-05.mp3",
+      "start_ms": 324250,
+      "end_ms": 330550,
+      "words": [
+        {
+          "text": "The",
+          "start_ms": 0,
+          "end_ms": 120,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "The",
+          "asr_probability": 0.9948
+        },
+        {
+          "text": "strange",
+          "start_ms": 120,
+          "end_ms": 560,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "strange",
+          "asr_probability": 0.9643
+        },
+        {
+          "text": "blue-green",
+          "start_ms": 560,
+          "end_ms": 1960,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "blue -green",
+          "asr_probability": 0.9396
+        },
+        {
+          "text": "forest",
+          "start_ms": 1960,
+          "end_ms": 2380,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "forest",
+          "asr_probability": 0.9963
+        },
+        {
+          "text": "became",
+          "start_ms": 2380,
+          "end_ms": 3200,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "became",
+          "asr_probability": 0.9909
+        },
+        {
+          "text": "a",
+          "start_ms": 3200,
+          "end_ms": 4240,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "a",
+          "asr_probability": 0.9906
+        },
+        {
+          "text": "strange",
+          "start_ms": 4240,
+          "end_ms": 5060,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "strange",
+          "asr_probability": 0.9977
+        },
+        {
+          "text": "red",
+          "start_ms": 5060,
+          "end_ms": 5640,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "red",
+          "asr_probability": 0.9068
+        },
+        {
+          "text": "forest",
+          "start_ms": 5640,
+          "end_ms": 6160,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "forest.",
+          "asr_probability": 0.9852
+        }
+      ],
+      "glossary": [],
+      "translation_status": "reviewed",
+      "word_timing_status": "reviewed",
+      "word_timing_model": "base.en",
+      "reviewed_at": "2026-09-01T19:22:43+00:00",
+      "reviewer_note": "Codex 逐句复核：与英文语义、角色名及 Minecraft 官方术语核对；保留引号内儿童口吻。"
+    },
+    {
+      "id": "mc-b1-p08-s01",
+      "text_en": "Birch raised his hand.",
+      "zh": "Birch 举起了手。",
+      "audio": "assets/minecraft/escape-from-the-nether/sentences/page-08-sentence-01.mp3",
+      "start_ms": 331470,
+      "end_ms": 333470,
+      "words": [
+        {
+          "text": "Birch",
+          "start_ms": 0,
+          "end_ms": 400,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "Birch",
+          "asr_probability": 0.4805
+        },
+        {
+          "text": "raised",
+          "start_ms": 400,
+          "end_ms": 1080,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "raised",
+          "asr_probability": 0.9054
+        },
+        {
+          "text": "his",
+          "start_ms": 1080,
+          "end_ms": 1480,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "his",
+          "asr_probability": 0.9984
+        },
+        {
+          "text": "hand",
+          "start_ms": 1480,
+          "end_ms": 1780,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "hand.",
+          "asr_probability": 0.6039
+        }
+      ],
+      "glossary": [],
+      "translation_status": "reviewed",
+      "word_timing_status": "reviewed",
+      "word_timing_model": "base.en",
+      "reviewed_at": "2026-09-01T19:22:43+00:00",
+      "reviewer_note": "Codex 逐句复核：与英文语义、角色名及 Minecraft 官方术语核对；保留引号内儿童口吻。"
+    },
+    {
+      "id": "mc-b1-p08-s02",
+      "text_en": "They were being watched.",
+      "zh": "有人正在监视他们。",
+      "audio": "assets/minecraft/escape-from-the-nether/sentences/page-08-sentence-02.mp3",
+      "start_ms": 334150,
+      "end_ms": 335570,
+      "words": [
+        {
+          "text": "They",
+          "start_ms": 0,
+          "end_ms": 140,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "They",
+          "asr_probability": 0.6918
+        },
+        {
+          "text": "were",
+          "start_ms": 140,
+          "end_ms": 400,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "were",
+          "asr_probability": 0.9946
+        },
+        {
+          "text": "being",
+          "start_ms": 400,
+          "end_ms": 760,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "being",
+          "asr_probability": 0.9963
+        },
+        {
+          "text": "watched",
+          "start_ms": 760,
+          "end_ms": 1220,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "watched.",
+          "asr_probability": 0.5553
+        }
+      ],
+      "glossary": [],
+      "translation_status": "reviewed",
+      "word_timing_status": "reviewed",
+      "word_timing_model": "base.en",
+      "reviewed_at": "2026-09-01T19:22:43+00:00",
+      "reviewer_note": "Codex 逐句复核：与英文语义、角色名及 Minecraft 官方术语核对；保留引号内儿童口吻。"
+    },
+    {
+      "id": "mc-b1-p08-s03",
+      "text_en": "Birch's warning was too late.",
+      "zh": "可是 Birch 的警告来得太晚了。",
+      "audio": "assets/minecraft/escape-from-the-nether/sentences/page-08-sentence-03.mp3",
+      "start_ms": 336410,
+      "end_ms": 338950,
+      "words": [
+        {
+          "text": "Birch's",
+          "start_ms": 0,
+          "end_ms": 560,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "Birch's",
+          "asr_probability": 0.7571
+        },
+        {
+          "text": "warning",
+          "start_ms": 560,
+          "end_ms": 1080,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "warning",
+          "asr_probability": 0.9718
+        },
+        {
+          "text": "was",
+          "start_ms": 1080,
+          "end_ms": 1560,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "was",
+          "asr_probability": 0.9971
+        },
+        {
+          "text": "too",
+          "start_ms": 1560,
+          "end_ms": 1920,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "too",
+          "asr_probability": 0.9592
+        },
+        {
+          "text": "late",
+          "start_ms": 1920,
+          "end_ms": 2380,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "late.",
+          "asr_probability": 0.9983
+        }
+      ],
+      "glossary": [
+        {
+          "term": "warning",
+          "ipa": "ˈwɔːrnɪŋ",
+          "pos": "N",
+          "zh": "警告"
+        }
+      ],
+      "translation_status": "reviewed",
+      "word_timing_status": "reviewed",
+      "word_timing_model": "base.en",
+      "reviewed_at": "2026-09-01T19:22:43+00:00",
+      "reviewer_note": "Codex 逐句复核：与英文语义、角色名及 Minecraft 官方术语核对；保留引号内儿童口吻。"
+    },
+    {
+      "id": "mc-b1-p08-s04",
+      "text_en": "Strange mobs surrounded them.",
+      "zh": "奇怪的生物把他们包围了。",
+      "audio": "assets/minecraft/escape-from-the-nether/sentences/page-08-sentence-04.mp3",
+      "start_ms": 338950,
+      "end_ms": 342210,
+      "words": [
+        {
+          "text": "Strange",
+          "start_ms": 520,
+          "end_ms": 1160,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "Strange",
+          "asr_probability": 0.9546
+        },
+        {
+          "text": "mobs",
+          "start_ms": 1160,
+          "end_ms": 1700,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "mobs",
+          "asr_probability": 0.9525
+        },
+        {
+          "text": "surrounded",
+          "start_ms": 1700,
+          "end_ms": 2680,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "surrounded",
+          "asr_probability": 0.9673
+        },
+        {
+          "text": "them",
+          "start_ms": 2680,
+          "end_ms": 3180,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "them.",
+          "asr_probability": 0.9983
+        }
+      ],
+      "glossary": [
+        {
+          "term": "surrounded",
+          "ipa": "səˈraʊndɪd",
+          "pos": "V-ed",
+          "zh": "包围了"
+        }
+      ],
+      "translation_status": "reviewed",
+      "word_timing_status": "reviewed",
+      "word_timing_model": "base.en",
+      "reviewed_at": "2026-09-01T19:22:43+00:00",
+      "reviewer_note": "Codex 逐句复核：与英文语义、角色名及 Minecraft 官方术语核对；保留引号内儿童口吻。"
+    },
+    {
+      "id": "mc-b1-p08-s05",
+      "text_en": "\"Piglins!\" cried Emmy.",
+      "zh": "“猪灵！”Emmy 喊道。",
+      "audio": "assets/minecraft/escape-from-the-nether/sentences/page-08-sentence-05.mp3",
+      "start_ms": 343130,
+      "end_ms": 345430,
+      "words": [
+        {
+          "text": "Piglins",
+          "start_ms": 0,
+          "end_ms": 740,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "\"'Piglins",
+          "asr_probability": 0.368
+        },
+        {
+          "text": "cried",
+          "start_ms": 1320,
+          "end_ms": 1760,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "cried",
+          "asr_probability": 0.9967
+        },
+        {
+          "text": "Emmy",
+          "start_ms": 1760,
+          "end_ms": 1780,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "Emmy.",
+          "asr_probability": 0.0006,
+          "boundary_repaired_ms": 20
+        }
+      ],
+      "glossary": [
+        {
+          "term": "piglins",
+          "ipa": "ˈpɪɡlɪnz",
+          "pos": "N",
+          "zh": "猪灵"
+        }
+      ],
+      "translation_status": "reviewed",
+      "word_timing_status": "reviewed",
+      "word_timing_model": "base.en",
+      "reviewed_at": "2026-09-01T19:22:43+00:00",
+      "reviewer_note": "Codex 逐句复核：与英文语义、角色名及 Minecraft 官方术语核对；保留引号内儿童口吻。"
+    },
+    {
+      "id": "mc-b1-p08-s06",
+      "text_en": "The piglins attacked Birch!",
+      "zh": "猪灵们向 Birch 发起了攻击！",
+      "audio": "assets/minecraft/escape-from-the-nether/sentences/page-08-sentence-06.mp3",
+      "start_ms": 346490,
+      "end_ms": 349370,
+      "words": [
+        {
+          "text": "The",
+          "start_ms": 0,
+          "end_ms": 220,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "The",
+          "asr_probability": 0.4412
+        },
+        {
+          "text": "piglins",
+          "start_ms": 220,
+          "end_ms": 880,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "piglins",
+          "asr_probability": 0.7065
+        },
+        {
+          "text": "attacked",
+          "start_ms": 880,
+          "end_ms": 1800,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "attacked",
+          "asr_probability": 0.918
+        },
+        {
+          "text": "Birch",
+          "start_ms": 1800,
+          "end_ms": 2500,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "Birch!",
+          "asr_probability": 0.1965
+        }
+      ],
+      "glossary": [],
+      "translation_status": "reviewed",
+      "word_timing_status": "reviewed",
+      "word_timing_model": "base.en",
+      "reviewed_at": "2026-09-01T19:22:43+00:00",
+      "reviewer_note": "Codex 逐句复核：与英文语义、角色名及 Minecraft 官方术语核对；保留引号内儿童口吻。"
+    },
+    {
+      "id": "mc-b1-p08-s07",
+      "text_en": "But they left Emmy alone.",
+      "zh": "但它们没有碰 Emmy。",
+      "audio": "assets/minecraft/escape-from-the-nether/sentences/page-08-sentence-07.mp3",
+      "start_ms": 349930,
+      "end_ms": 352050,
+      "words": [
+        {
+          "text": "But",
+          "start_ms": 0,
+          "end_ms": 260,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "But",
+          "asr_probability": 0.722
+        },
+        {
+          "text": "they",
+          "start_ms": 260,
+          "end_ms": 480,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "they",
+          "asr_probability": 0.9587
+        },
+        {
+          "text": "left",
+          "start_ms": 480,
+          "end_ms": 840,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "left",
+          "asr_probability": 0.9962
+        },
+        {
+          "text": "Emmy",
+          "start_ms": 840,
+          "end_ms": 1420,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "Emmy",
+          "asr_probability": 0.6778
+        },
+        {
+          "text": "alone",
+          "start_ms": 1420,
+          "end_ms": 1860,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "alone.",
+          "asr_probability": 0.0188
+        }
+      ],
+      "glossary": [],
+      "translation_status": "reviewed",
+      "word_timing_status": "reviewed",
+      "word_timing_model": "base.en",
+      "reviewed_at": "2026-09-01T19:22:43+00:00",
+      "reviewer_note": "Codex 逐句复核：与英文语义、角色名及 Minecraft 官方术语核对；保留引号内儿童口吻。"
+    },
+    {
+      "id": "mc-b1-p08-s08",
+      "text_en": "They liked her gold helmet and gold boots.",
+      "zh": "它们喜欢 Emmy 的金头盔和金靴子。",
+      "audio": "assets/minecraft/escape-from-the-nether/sentences/page-08-sentence-08.mp3",
+      "start_ms": 352890,
+      "end_ms": 356790,
+      "words": [
+        {
+          "text": "They",
+          "start_ms": 0,
+          "end_ms": 220,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "They",
+          "asr_probability": 0.9982
+        },
+        {
+          "text": "liked",
+          "start_ms": 220,
+          "end_ms": 560,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "liked",
+          "asr_probability": 0.9888
+        },
+        {
+          "text": "her",
+          "start_ms": 560,
+          "end_ms": 980,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "her",
+          "asr_probability": 0.9964
+        },
+        {
+          "text": "gold",
+          "start_ms": 980,
+          "end_ms": 1400,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "gold",
+          "asr_probability": 0.9403
+        },
+        {
+          "text": "helmet",
+          "start_ms": 1400,
+          "end_ms": 1880,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "helmet",
+          "asr_probability": 0.9983
+        },
+        {
+          "text": "and",
+          "start_ms": 1880,
+          "end_ms": 2800,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "and",
+          "asr_probability": 0.9558
+        },
+        {
+          "text": "gold",
+          "start_ms": 2800,
+          "end_ms": 3180,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "gold",
+          "asr_probability": 0.9955
+        },
+        {
+          "text": "boots",
+          "start_ms": 3180,
+          "end_ms": 3820,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "boots.",
+          "asr_probability": 0.9985
+        }
+      ],
+      "glossary": [],
+      "translation_status": "reviewed",
+      "word_timing_status": "reviewed",
+      "word_timing_model": "base.en",
+      "reviewed_at": "2026-09-01T19:22:43+00:00",
+      "reviewer_note": "Codex 逐句复核：与英文语义、角色名及 Minecraft 官方术语核对；保留引号内儿童口吻。"
+    },
+    {
+      "id": "mc-b1-p09-s01",
+      "text_en": "Emmy had an idea!",
+      "zh": "Emmy 想到了一个办法！",
+      "audio": "assets/minecraft/escape-from-the-nether/sentences/page-09-sentence-01.mp3",
+      "start_ms": 357870,
+      "end_ms": 359910,
+      "words": [
+        {
+          "text": "Emmy",
+          "start_ms": 0,
+          "end_ms": 580,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "Emmy",
+          "asr_probability": 0.955
+        },
+        {
+          "text": "had",
+          "start_ms": 580,
+          "end_ms": 1300,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "had",
+          "asr_probability": 0.9933
+        },
+        {
+          "text": "an",
+          "start_ms": 1300,
+          "end_ms": 1460,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "an",
+          "asr_probability": 0.9963
+        },
+        {
+          "text": "idea",
+          "start_ms": 1460,
+          "end_ms": 2040,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "idea.",
+          "asr_probability": 0.9996
+        }
+      ],
+      "glossary": [],
+      "translation_status": "reviewed",
+      "word_timing_status": "reviewed",
+      "word_timing_model": "base.en",
+      "reviewed_at": "2026-09-01T19:22:43+00:00",
+      "reviewer_note": "Codex 逐句复核：与英文语义、角色名及 Minecraft 官方术语核对；保留引号内儿童口吻。"
+    },
+    {
+      "id": "mc-b1-p09-s02",
+      "text_en": "She took off her gold helmet and put it on Birch's head.",
+      "zh": "她摘下自己的金头盔，戴到了 Birch 头上。",
+      "audio": "assets/minecraft/escape-from-the-nether/sentences/page-09-sentence-02.mp3",
+      "start_ms": 360590,
+      "end_ms": 365750,
+      "words": [
+        {
+          "text": "She",
+          "start_ms": 20,
+          "end_ms": 300,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "She",
+          "asr_probability": 0.9976
+        },
+        {
+          "text": "took",
+          "start_ms": 300,
+          "end_ms": 540,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "took",
+          "asr_probability": 0.9989
+        },
+        {
+          "text": "off",
+          "start_ms": 540,
+          "end_ms": 940,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "off",
+          "asr_probability": 0.9882
+        },
+        {
+          "text": "her",
+          "start_ms": 940,
+          "end_ms": 1440,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "her",
+          "asr_probability": 0.9916
+        },
+        {
+          "text": "gold",
+          "start_ms": 1440,
+          "end_ms": 1780,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "gold",
+          "asr_probability": 0.9926
+        },
+        {
+          "text": "helmet",
+          "start_ms": 1780,
+          "end_ms": 2360,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "helmet",
+          "asr_probability": 0.9991
+        },
+        {
+          "text": "and",
+          "start_ms": 2360,
+          "end_ms": 2960,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "and",
+          "asr_probability": 0.9859
+        },
+        {
+          "text": "put",
+          "start_ms": 2960,
+          "end_ms": 3280,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "put",
+          "asr_probability": 0.9987
+        },
+        {
+          "text": "it",
+          "start_ms": 3280,
+          "end_ms": 3500,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "it",
+          "asr_probability": 0.9946
+        },
+        {
+          "text": "on",
+          "start_ms": 3500,
+          "end_ms": 4040,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "on",
+          "asr_probability": 0.996
+        },
+        {
+          "text": "Birch's",
+          "start_ms": 4040,
+          "end_ms": 4720,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "Birch's",
+          "asr_probability": 0.9847
+        },
+        {
+          "text": "head",
+          "start_ms": 4720,
+          "end_ms": 5100,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "head.",
+          "asr_probability": 0.9944
+        }
+      ],
+      "glossary": [],
+      "translation_status": "reviewed",
+      "word_timing_status": "reviewed",
+      "word_timing_model": "base.en",
+      "reviewed_at": "2026-09-01T19:22:43+00:00",
+      "reviewer_note": "Codex 逐句复核：与英文语义、角色名及 Minecraft 官方术语核对；保留引号内儿童口吻。"
+    },
+    {
+      "id": "mc-b1-p09-s03",
+      "text_en": "The piglins stopped fighting Birch.",
+      "zh": "猪灵们停止攻击 Birch。",
+      "audio": "assets/minecraft/escape-from-the-nether/sentences/page-09-sentence-03.mp3",
+      "start_ms": 365750,
+      "end_ms": 369650,
+      "words": [
+        {
+          "text": "The",
+          "start_ms": 0,
+          "end_ms": 780,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "The",
+          "asr_probability": 0.779
+        },
+        {
+          "text": "piglins",
+          "start_ms": 780,
+          "end_ms": 1320,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "piglins",
+          "asr_probability": 0.6168
+        },
+        {
+          "text": "stopped",
+          "start_ms": 1320,
+          "end_ms": 2200,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "stopped",
+          "asr_probability": 0.9866
+        },
+        {
+          "text": "fighting",
+          "start_ms": 2200,
+          "end_ms": 3160,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "fighting",
+          "asr_probability": 0.9921
+        },
+        {
+          "text": "Birch",
+          "start_ms": 3160,
+          "end_ms": 3520,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "Birch.",
+          "asr_probability": 0.0532
+        }
+      ],
+      "glossary": [],
+      "translation_status": "reviewed",
+      "word_timing_status": "reviewed",
+      "word_timing_model": "base.en",
+      "reviewed_at": "2026-09-01T19:22:43+00:00",
+      "reviewer_note": "Codex 逐句复核：与英文语义、角色名及 Minecraft 官方术语核对；保留引号内儿童口吻。"
+    },
+    {
+      "id": "mc-b1-p09-s04",
+      "text_en": "The mobs oinked with happiness.",
+      "zh": "这些生物开心地哼哼起来。",
+      "audio": "assets/minecraft/escape-from-the-nether/sentences/page-09-sentence-04.mp3",
+      "start_ms": 370410,
+      "end_ms": 372690,
+      "words": [
+        {
+          "text": "The",
+          "start_ms": 0,
+          "end_ms": 180,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "The",
+          "asr_probability": 0.7251
+        },
+        {
+          "text": "mobs",
+          "start_ms": 180,
+          "end_ms": 480,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "mobs",
+          "asr_probability": 0.405
+        },
+        {
+          "text": "oinked",
+          "start_ms": 480,
+          "end_ms": 1320,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "oinked",
+          "asr_probability": 0.7625
+        },
+        {
+          "text": "with",
+          "start_ms": 1320,
+          "end_ms": 1720,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "with",
+          "asr_probability": 0.955
+        },
+        {
+          "text": "happiness",
+          "start_ms": 1720,
+          "end_ms": 2040,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "happiness.",
+          "asr_probability": 0.9846
+        }
+      ],
+      "glossary": [
+        {
+          "term": "happiness",
+          "ipa": "ˈhæpinəs",
+          "pos": "N",
+          "zh": "快乐"
+        }
+      ],
+      "translation_status": "reviewed",
+      "word_timing_status": "reviewed",
+      "word_timing_model": "base.en",
+      "reviewed_at": "2026-09-01T19:22:43+00:00",
+      "reviewer_note": "Codex 逐句复核：与英文语义、角色名及 Minecraft 官方术语核对；保留引号内儿童口吻。"
+    },
+    {
+      "id": "mc-b1-p09-s05",
+      "text_en": "Emmy and Birch followed them to a huge fortress.",
+      "zh": "Emmy 和 Birch 跟着它们来到一座巨大的堡垒。",
+      "audio": "assets/minecraft/escape-from-the-nether/sentences/page-09-sentence-05.mp3",
+      "start_ms": 373790,
+      "end_ms": 378410,
+      "words": [],
+      "glossary": [
+        {
+          "term": "fortress",
+          "ipa": "ˈfɔːrtrəs",
+          "pos": "N",
+          "zh": "堡垒"
+        },
+        {
+          "term": "followed",
+          "ipa": "ˈfɒloʊd",
+          "pos": "V-ed",
+          "zh": "跟随"
+        }
+      ],
+      "translation_status": "reviewed",
+      "word_timing_status": "needs-review",
+      "word_timing_error": "ASR delete: source[0:2]=['Emmy', 'and'], heard=[]",
+      "reviewed_at": "2026-09-01T19:22:43+00:00",
+      "reviewer_note": "Codex 逐句复核：与英文语义、角色名及 Minecraft 官方术语核对；保留引号内儿童口吻。"
+    },
+    {
+      "id": "mc-b1-p10-s01",
+      "text_en": "In the fortress, they found a treasure room filled with gold.",
+      "zh": "在堡垒里，他们找到了一间堆满黄金的宝藏室。",
+      "audio": "assets/minecraft/escape-from-the-nether/sentences/page-10-sentence-01.mp3",
+      "start_ms": 379610,
+      "end_ms": 385930,
+      "words": [
+        {
+          "text": "In",
+          "start_ms": 0,
+          "end_ms": 540,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "In",
+          "asr_probability": 0.9086
+        },
+        {
+          "text": "the",
+          "start_ms": 540,
+          "end_ms": 780,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "the",
+          "asr_probability": 0.886
+        },
+        {
+          "text": "fortress",
+          "start_ms": 780,
+          "end_ms": 1260,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "fortress,",
+          "asr_probability": 0.9037
+        },
+        {
+          "text": "they",
+          "start_ms": 2040,
+          "end_ms": 2400,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "they",
+          "asr_probability": 0.9944
+        },
+        {
+          "text": "found",
+          "start_ms": 2400,
+          "end_ms": 2900,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "found",
+          "asr_probability": 0.9987
+        },
+        {
+          "text": "a",
+          "start_ms": 2900,
+          "end_ms": 3500,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "a",
+          "asr_probability": 0.9819
+        },
+        {
+          "text": "treasure",
+          "start_ms": 3500,
+          "end_ms": 3780,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "treasure",
+          "asr_probability": 0.994
+        },
+        {
+          "text": "room",
+          "start_ms": 3780,
+          "end_ms": 4480,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "room",
+          "asr_probability": 0.971
+        },
+        {
+          "text": "filled",
+          "start_ms": 4480,
+          "end_ms": 5180,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "filled",
+          "asr_probability": 0.9563
+        },
+        {
+          "text": "with",
+          "start_ms": 5180,
+          "end_ms": 5820,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "with",
+          "asr_probability": 0.9987
+        },
+        {
+          "text": "gold",
+          "start_ms": 5820,
+          "end_ms": 6100,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "gold.",
+          "asr_probability": 0.8144
+        }
+      ],
+      "glossary": [
+        {
+          "term": "treasure",
+          "ipa": "ˈtreʒər",
+          "pos": "N",
+          "zh": "宝藏"
+        }
+      ],
+      "translation_status": "reviewed",
+      "word_timing_status": "reviewed",
+      "word_timing_model": "base.en",
+      "reviewed_at": "2026-09-01T19:22:43+00:00",
+      "reviewer_note": "Codex 逐句复核：与英文语义、角色名及 Minecraft 官方术语核对；保留引号内儿童口吻。"
+    },
+    {
+      "id": "mc-b1-p10-s02",
+      "text_en": "Birch opened a chest.",
+      "zh": "Birch 打开了一个箱子。",
+      "audio": "assets/minecraft/escape-from-the-nether/sentences/page-10-sentence-02.mp3",
+      "start_ms": 386690,
+      "end_ms": 388750,
+      "words": [
+        {
+          "text": "Birch",
+          "start_ms": 0,
+          "end_ms": 360,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "Birch",
+          "asr_probability": 0.3507
+        },
+        {
+          "text": "opened",
+          "start_ms": 590,
+          "end_ms": 1140,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "opened",
+          "asr_probability": 0.9994
+        },
+        {
+          "text": "a",
+          "start_ms": 1140,
+          "end_ms": 1600,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "a",
+          "asr_probability": 0.9992
+        },
+        {
+          "text": "chest",
+          "start_ms": 1600,
+          "end_ms": 1920,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "chest.",
+          "asr_probability": 0.9949
+        }
+      ],
+      "glossary": [
+        {
+          "term": "chest",
+          "ipa": "tʃest",
+          "pos": "N",
+          "zh": "箱子"
+        }
+      ],
+      "translation_status": "reviewed",
+      "word_timing_status": "reviewed",
+      "word_timing_model": "base.en",
+      "reviewed_at": "2026-09-01T19:22:43+00:00",
+      "reviewer_note": "Codex 逐句复核：与英文语义、角色名及 Minecraft 官方术语核对；保留引号内儿童口吻。"
+    },
+    {
+      "id": "mc-b1-p10-s03",
+      "text_en": "The piglins drew their swords and made angry noises!",
+      "zh": "猪灵们拔出剑，发出了愤怒的声音！",
+      "audio": "assets/minecraft/escape-from-the-nether/sentences/page-10-sentence-03.mp3",
+      "start_ms": 389730,
+      "end_ms": 394590,
+      "words": [
+        {
+          "text": "The",
+          "start_ms": 0,
+          "end_ms": 120,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "The",
+          "asr_probability": 0.7656
+        },
+        {
+          "text": "piglins",
+          "start_ms": 120,
+          "end_ms": 680,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "piglins",
+          "asr_probability": 0.8288
+        },
+        {
+          "text": "drew",
+          "start_ms": 680,
+          "end_ms": 1160,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "drew",
+          "asr_probability": 0.9971
+        },
+        {
+          "text": "their",
+          "start_ms": 1160,
+          "end_ms": 1540,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "their",
+          "asr_probability": 0.998
+        },
+        {
+          "text": "swords",
+          "start_ms": 1540,
+          "end_ms": 2000,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "swords",
+          "asr_probability": 0.9966
+        },
+        {
+          "text": "and",
+          "start_ms": 2000,
+          "end_ms": 2940,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "and",
+          "asr_probability": 0.8812
+        },
+        {
+          "text": "made",
+          "start_ms": 2940,
+          "end_ms": 3360,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "made",
+          "asr_probability": 0.9978
+        },
+        {
+          "text": "angry",
+          "start_ms": 3360,
+          "end_ms": 4020,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "angry",
+          "asr_probability": 0.9951
+        },
+        {
+          "text": "noises",
+          "start_ms": 4020,
+          "end_ms": 4580,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "noises!",
+          "asr_probability": 0.9058
+        }
+      ],
+      "glossary": [],
+      "translation_status": "reviewed",
+      "word_timing_status": "reviewed",
+      "word_timing_model": "base.en",
+      "reviewed_at": "2026-09-01T19:22:43+00:00",
+      "reviewer_note": "Codex 逐句复核：与英文语义、角色名及 Minecraft 官方术语核对；保留引号内儿童口吻。"
+    },
+    {
+      "id": "mc-b1-p10-s04",
+      "text_en": "Emmy and Birch escaped the mobs by smashing a big hole in the wall.",
+      "zh": "Emmy 和 Birch 砸穿墙壁上的大洞，逃离了这些生物。",
+      "audio": "assets/minecraft/escape-from-the-nether/sentences/page-10-sentence-04.mp3",
+      "start_ms": 394590,
+      "end_ms": 402890,
+      "words": [
+        {
+          "text": "Emmy",
+          "start_ms": 800,
+          "end_ms": 1500,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "Emmie",
+          "asr_probability": 0.9912
+        },
+        {
+          "text": "and",
+          "start_ms": 1500,
+          "end_ms": 1900,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "and",
+          "asr_probability": 0.9987
+        },
+        {
+          "text": "Birch",
+          "start_ms": 1900,
+          "end_ms": 2440,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "birch",
+          "asr_probability": 0.9567
+        },
+        {
+          "text": "escaped",
+          "start_ms": 2440,
+          "end_ms": 3280,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "were escaped",
+          "asr_probability": 0.1471
+        },
+        {
+          "text": "the",
+          "start_ms": 3280,
+          "end_ms": 3740,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "the",
+          "asr_probability": 0.9936
+        },
+        {
+          "text": "mobs",
+          "start_ms": 3740,
+          "end_ms": 3980,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "mobs",
+          "asr_probability": 0.9612
+        },
+        {
+          "text": "by",
+          "start_ms": 3980,
+          "end_ms": 4760,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "by",
+          "asr_probability": 0.9708
+        },
+        {
+          "text": "smashing",
+          "start_ms": 4760,
+          "end_ms": 5400,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "smashing",
+          "asr_probability": 0.9886
+        },
+        {
+          "text": "a",
+          "start_ms": 5400,
+          "end_ms": 5820,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "a",
+          "asr_probability": 0.9956
+        },
+        {
+          "text": "big",
+          "start_ms": 5820,
+          "end_ms": 6220,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "big",
+          "asr_probability": 0.9977
+        },
+        {
+          "text": "hole",
+          "start_ms": 6220,
+          "end_ms": 6680,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "hole",
+          "asr_probability": 0.9961
+        },
+        {
+          "text": "in",
+          "start_ms": 6680,
+          "end_ms": 7480,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "in",
+          "asr_probability": 0.9962
+        },
+        {
+          "text": "the",
+          "start_ms": 7480,
+          "end_ms": 7700,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "the",
+          "asr_probability": 0.9988
+        },
+        {
+          "text": "wall",
+          "start_ms": 7700,
+          "end_ms": 8160,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "wall.",
+          "asr_probability": 0.9829
+        }
+      ],
+      "glossary": [
+        {
+          "term": "smashing",
+          "ipa": "ˈsmæʃɪŋ",
+          "pos": "V-ing",
+          "zh": "打碎"
+        }
+      ],
+      "translation_status": "reviewed",
+      "word_timing_status": "reviewed",
+      "word_timing_model": "base.en",
+      "reviewed_at": "2026-09-01T19:22:43+00:00",
+      "reviewer_note": "Codex 逐句复核：与英文语义、角色名及 Minecraft 官方术语核对；保留引号内儿童口吻。"
+    },
+    {
+      "id": "mc-b1-p10-s05",
+      "text_en": "On the other side was a desert.",
+      "zh": "墙的另一边是一片沙漠。",
+      "audio": "assets/minecraft/escape-from-the-nether/sentences/page-10-sentence-05.mp3",
+      "start_ms": 403570,
+      "end_ms": 406450,
+      "words": [
+        {
+          "text": "On",
+          "start_ms": 120,
+          "end_ms": 360,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "On",
+          "asr_probability": 0.9665
+        },
+        {
+          "text": "the",
+          "start_ms": 360,
+          "end_ms": 580,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "the",
+          "asr_probability": 0.9984
+        },
+        {
+          "text": "other",
+          "start_ms": 580,
+          "end_ms": 940,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "other",
+          "asr_probability": 0.9955
+        },
+        {
+          "text": "side",
+          "start_ms": 940,
+          "end_ms": 1600,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "side",
+          "asr_probability": 0.9907
+        },
+        {
+          "text": "was",
+          "start_ms": 1600,
+          "end_ms": 2240,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "was",
+          "asr_probability": 0.9698
+        },
+        {
+          "text": "a",
+          "start_ms": 2240,
+          "end_ms": 2400,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "a",
+          "asr_probability": 0.9895
+        },
+        {
+          "text": "desert",
+          "start_ms": 2400,
+          "end_ms": 2780,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "desert.",
+          "asr_probability": 0.9916
+        }
+      ],
+      "glossary": [],
+      "translation_status": "reviewed",
+      "word_timing_status": "reviewed",
+      "word_timing_model": "base.en",
+      "reviewed_at": "2026-09-01T19:22:43+00:00",
+      "reviewer_note": "Codex 逐句复核：与英文语义、角色名及 Minecraft 官方术语核对；保留引号内儿童口吻。"
+    },
+    {
+      "id": "mc-b1-p11-s01",
+      "text_en": "Piglins chased them.",
+      "zh": "猪灵们追了上来。",
+      "audio": "assets/minecraft/escape-from-the-nether/sentences/page-11-sentence-01.mp3",
+      "start_ms": 407410,
+      "end_ms": 408970,
+      "words": [
+        {
+          "text": "Piglins",
+          "start_ms": 0,
+          "end_ms": 500,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "Piglins",
+          "asr_probability": 0.6838
+        },
+        {
+          "text": "chased",
+          "start_ms": 500,
+          "end_ms": 1040,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "chased",
+          "asr_probability": 0.3147
+        },
+        {
+          "text": "them",
+          "start_ms": 1040,
+          "end_ms": 1440,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "them.",
+          "asr_probability": 0.1664
+        }
+      ],
+      "glossary": [],
+      "translation_status": "reviewed",
+      "word_timing_status": "reviewed",
+      "word_timing_model": "base.en",
+      "reviewed_at": "2026-09-01T19:22:43+00:00",
+      "reviewer_note": "Codex 逐句复核：与英文语义、角色名及 Minecraft 官方术语核对；保留引号内儿童口吻。"
+    },
+    {
+      "id": "mc-b1-p11-s02",
+      "text_en": "It was very difficult to run.",
+      "zh": "跑起来非常困难。",
+      "audio": "assets/minecraft/escape-from-the-nether/sentences/page-11-sentence-02.mp3",
+      "start_ms": 409690,
+      "end_ms": 413050,
+      "words": [
+        {
+          "text": "It",
+          "start_ms": 0,
+          "end_ms": 220,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "It",
+          "asr_probability": 0.6901
+        },
+        {
+          "text": "was",
+          "start_ms": 220,
+          "end_ms": 500,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "was",
+          "asr_probability": 0.9974
+        },
+        {
+          "text": "very",
+          "start_ms": 500,
+          "end_ms": 1180,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "very",
+          "asr_probability": 0.9783
+        },
+        {
+          "text": "difficult",
+          "start_ms": 1180,
+          "end_ms": 2140,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "difficult",
+          "asr_probability": 0.995
+        },
+        {
+          "text": "to",
+          "start_ms": 2140,
+          "end_ms": 2820,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "to",
+          "asr_probability": 0.9945
+        },
+        {
+          "text": "run",
+          "start_ms": 2820,
+          "end_ms": 3160,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "run.",
+          "asr_probability": 0.9522
+        }
+      ],
+      "glossary": [
+        {
+          "term": "difficult",
+          "ipa": "ˈdɪfɪkəlt",
+          "pos": "Adj",
+          "zh": "困难的"
+        }
+      ],
+      "translation_status": "reviewed",
+      "word_timing_status": "reviewed",
+      "word_timing_model": "base.en",
+      "reviewed_at": "2026-09-01T19:22:43+00:00",
+      "reviewer_note": "Codex 逐句复核：与英文语义、角色名及 Minecraft 官方术语核对；保留引号内儿童口吻。"
+    },
+    {
+      "id": "mc-b1-p11-s03",
+      "text_en": "\"This is not ordinary sand,\" said Emmy.",
+      "zh": "“这不是普通的沙子，”Emmy 说。",
+      "audio": "assets/minecraft/escape-from-the-nether/sentences/page-11-sentence-03.mp3",
+      "start_ms": 413850,
+      "end_ms": 418470,
+      "words": [
+        {
+          "text": "This",
+          "start_ms": 0,
+          "end_ms": 460,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "This",
+          "asr_probability": 0.1407
+        },
+        {
+          "text": "is",
+          "start_ms": 460,
+          "end_ms": 700,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "is",
+          "asr_probability": 0.9886
+        },
+        {
+          "text": "not",
+          "start_ms": 700,
+          "end_ms": 1160,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "not",
+          "asr_probability": 0.985
+        },
+        {
+          "text": "ordinary",
+          "start_ms": 1160,
+          "end_ms": 1780,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "ordinary",
+          "asr_probability": 0.9798
+        },
+        {
+          "text": "sand",
+          "start_ms": 1780,
+          "end_ms": 3560,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "sand,\"",
+          "asr_probability": 0.5913
+        },
+        {
+          "text": "said",
+          "start_ms": 3560,
+          "end_ms": 4240,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "said",
+          "asr_probability": 0.989
+        },
+        {
+          "text": "Emmy",
+          "start_ms": 4240,
+          "end_ms": 4480,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "Emmy.",
+          "asr_probability": 0.1809
+        }
+      ],
+      "glossary": [
+        {
+          "term": "ordinary",
+          "ipa": "ˈɔːrdəneri",
+          "pos": "Adj",
+          "zh": "普通的"
+        }
+      ],
+      "translation_status": "reviewed",
+      "word_timing_status": "reviewed",
+      "word_timing_model": "base.en",
+      "reviewed_at": "2026-09-01T19:22:43+00:00",
+      "reviewer_note": "Codex 逐句复核：与英文语义、角色名及 Minecraft 官方术语核对；保留引号内儿童口吻。"
+    },
+    {
+      "id": "mc-b1-p11-s04",
+      "text_en": "\"It is soul sand!\" Skeletons also started firing arrows at them!",
+      "zh": "“这是灵魂沙！”骷髅也开始向他们射箭！",
+      "audio": "assets/minecraft/escape-from-the-nether/sentences/page-11-sentence-04.mp3",
+      "start_ms": 419350,
+      "end_ms": 426830,
+      "words": [
+        {
+          "text": "It",
+          "start_ms": 0,
+          "end_ms": 160,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "It",
+          "asr_probability": 0.7013
+        },
+        {
+          "text": "is",
+          "start_ms": 160,
+          "end_ms": 320,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "is",
+          "asr_probability": 0.9666
+        },
+        {
+          "text": "soul",
+          "start_ms": 320,
+          "end_ms": 840,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "soul",
+          "asr_probability": 0.6112
+        },
+        {
+          "text": "sand",
+          "start_ms": 840,
+          "end_ms": 1540,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "sand!",
+          "asr_probability": 0.9234
+        },
+        {
+          "text": "Skeletons",
+          "start_ms": 2740,
+          "end_ms": 3580,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "Skeletons",
+          "asr_probability": 0.9148
+        },
+        {
+          "text": "also",
+          "start_ms": 3580,
+          "end_ms": 4360,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "also",
+          "asr_probability": 0.9732
+        },
+        {
+          "text": "started",
+          "start_ms": 4360,
+          "end_ms": 5140,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "started",
+          "asr_probability": 0.9968
+        },
+        {
+          "text": "firing",
+          "start_ms": 5140,
+          "end_ms": 5900,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "firing",
+          "asr_probability": 0.993
+        },
+        {
+          "text": "arrows",
+          "start_ms": 5900,
+          "end_ms": 6460,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "arrows",
+          "asr_probability": 0.9785
+        },
+        {
+          "text": "at",
+          "start_ms": 6460,
+          "end_ms": 7080,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "at",
+          "asr_probability": 0.9954
+        },
+        {
+          "text": "them",
+          "start_ms": 7080,
+          "end_ms": 7340,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "them!",
+          "asr_probability": 0.9933
+        }
+      ],
+      "glossary": [
+        {
+          "term": "skeletons",
+          "ipa": "ˈskelɪtənz",
+          "pos": "N",
+          "zh": "骷髅"
+        }
+      ],
+      "translation_status": "reviewed",
+      "word_timing_status": "reviewed",
+      "word_timing_model": "base.en",
+      "reviewed_at": "2026-09-01T19:22:43+00:00",
+      "reviewer_note": "Codex 逐句复核：与英文语义、角色名及 Minecraft 官方术语核对；保留引号内儿童口吻。"
+    },
+    {
+      "id": "mc-b1-p11-s05",
+      "text_en": "Emmy and Birch ran faster.",
+      "zh": "Emmy 和 Birch 跑得更快了。",
+      "audio": "assets/minecraft/escape-from-the-nether/sentences/page-11-sentence-05.mp3",
+      "start_ms": 427610,
+      "end_ms": 430450,
+      "words": [
+        {
+          "text": "Emmy",
+          "start_ms": 0,
+          "end_ms": 300,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "Emmy",
+          "asr_probability": 0.5878
+        },
+        {
+          "text": "and",
+          "start_ms": 300,
+          "end_ms": 860,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "and",
+          "asr_probability": 0.8517
+        },
+        {
+          "text": "Birch",
+          "start_ms": 860,
+          "end_ms": 1240,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "Birch",
+          "asr_probability": 0.5875
+        },
+        {
+          "text": "ran",
+          "start_ms": 1240,
+          "end_ms": 2120,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "ran",
+          "asr_probability": 0.9876
+        },
+        {
+          "text": "faster",
+          "start_ms": 2120,
+          "end_ms": 2520,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "faster.",
+          "asr_probability": 0.912
+        }
+      ],
+      "glossary": [],
+      "translation_status": "reviewed",
+      "word_timing_status": "reviewed",
+      "word_timing_model": "base.en",
+      "reviewed_at": "2026-09-01T19:22:43+00:00",
+      "reviewer_note": "Codex 逐句复核：与英文语义、角色名及 Minecraft 官方术语核对；保留引号内儿童口吻。"
+    },
+    {
+      "id": "mc-b1-p11-s06",
+      "text_en": "They could see a portal on the other side of a river of lava!",
+      "zh": "他们看见岩浆河的另一边有一座传送门！",
+      "audio": "assets/minecraft/escape-from-the-nether/sentences/page-11-sentence-06.mp3",
+      "start_ms": 431190,
+      "end_ms": 437330,
+      "words": [
+        {
+          "text": "They",
+          "start_ms": 60,
+          "end_ms": 320,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "They",
+          "asr_probability": 0.9942
+        },
+        {
+          "text": "could",
+          "start_ms": 320,
+          "end_ms": 560,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "could",
+          "asr_probability": 0.9993
+        },
+        {
+          "text": "see",
+          "start_ms": 560,
+          "end_ms": 980,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "see",
+          "asr_probability": 0.9957
+        },
+        {
+          "text": "a",
+          "start_ms": 980,
+          "end_ms": 1420,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "a",
+          "asr_probability": 0.9983
+        },
+        {
+          "text": "portal",
+          "start_ms": 1420,
+          "end_ms": 1940,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "portal",
+          "asr_probability": 0.9945
+        },
+        {
+          "text": "on",
+          "start_ms": 1940,
+          "end_ms": 2600,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "on",
+          "asr_probability": 0.9941
+        },
+        {
+          "text": "the",
+          "start_ms": 2600,
+          "end_ms": 2760,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "the",
+          "asr_probability": 0.9986
+        },
+        {
+          "text": "other",
+          "start_ms": 2760,
+          "end_ms": 3080,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "other",
+          "asr_probability": 0.9975
+        },
+        {
+          "text": "side",
+          "start_ms": 3080,
+          "end_ms": 3780,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "side",
+          "asr_probability": 0.9979
+        },
+        {
+          "text": "of",
+          "start_ms": 3780,
+          "end_ms": 4380,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "of",
+          "asr_probability": 0.9925
+        },
+        {
+          "text": "a",
+          "start_ms": 4380,
+          "end_ms": 4540,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "a",
+          "asr_probability": 0.9945
+        },
+        {
+          "text": "river",
+          "start_ms": 4540,
+          "end_ms": 4960,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "river",
+          "asr_probability": 0.9965
+        },
+        {
+          "text": "of",
+          "start_ms": 4960,
+          "end_ms": 5620,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "of",
+          "asr_probability": 0.9962
+        },
+        {
+          "text": "lava",
+          "start_ms": 5620,
+          "end_ms": 5960,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "lava.",
+          "asr_probability": 0.9801
+        }
+      ],
+      "glossary": [],
+      "translation_status": "reviewed",
+      "word_timing_status": "reviewed",
+      "word_timing_model": "base.en",
+      "reviewed_at": "2026-09-01T19:22:43+00:00",
+      "reviewer_note": "Codex 逐句复核：与英文语义、角色名及 Minecraft 官方术语核对；保留引号内儿童口吻。"
+    },
+    {
+      "id": "mc-b1-p12-s01",
+      "text_en": "\"We're trapped,\" said Birch.",
+      "zh": "“我们被困住了，”Birch 说。",
+      "audio": "assets/minecraft/escape-from-the-nether/sentences/page-12-sentence-01.mp3",
+      "start_ms": 438230,
+      "end_ms": 441450,
+      "words": [
+        {
+          "text": "We're",
+          "start_ms": 0,
+          "end_ms": 740,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "We're",
+          "asr_probability": 0.6505
+        },
+        {
+          "text": "trapped",
+          "start_ms": 740,
+          "end_ms": 2060,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "trapped,\"",
+          "asr_probability": 0.5038
+        },
+        {
+          "text": "said",
+          "start_ms": 2060,
+          "end_ms": 2560,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "said",
+          "asr_probability": 0.9792
+        },
+        {
+          "text": "Birch",
+          "start_ms": 2560,
+          "end_ms": 2840,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "Birch.",
+          "asr_probability": 0.4244
+        }
+      ],
+      "glossary": [
+        {
+          "term": "trapped",
+          "ipa": "træpt",
+          "pos": "Adj",
+          "zh": "被困住的"
+        }
+      ],
+      "translation_status": "reviewed",
+      "word_timing_status": "reviewed",
+      "word_timing_model": "base.en",
+      "reviewed_at": "2026-09-01T19:22:43+00:00",
+      "reviewer_note": "Codex 逐句复核：与英文语义、角色名及 Minecraft 官方术语核对；保留引号内儿童口吻。"
+    },
+    {
+      "id": "mc-b1-p12-s02",
+      "text_en": "Emmy pointed at two striders with red skin and stringy hair.",
+      "zh": "Emmy 指着两只红皮肤、长着细长头发的炽足兽。",
+      "audio": "assets/minecraft/escape-from-the-nether/sentences/page-12-sentence-02.mp3",
+      "start_ms": 442050,
+      "end_ms": 448370,
+      "words": [
+        {
+          "text": "Emmy",
+          "start_ms": 0,
+          "end_ms": 440,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "Emmy",
+          "asr_probability": 0.7561
+        },
+        {
+          "text": "pointed",
+          "start_ms": 440,
+          "end_ms": 940,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "pointed",
+          "asr_probability": 0.9744
+        },
+        {
+          "text": "at",
+          "start_ms": 940,
+          "end_ms": 1440,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "at",
+          "asr_probability": 0.9936
+        },
+        {
+          "text": "two",
+          "start_ms": 1440,
+          "end_ms": 1800,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "two",
+          "asr_probability": 0.8389
+        },
+        {
+          "text": "striders",
+          "start_ms": 1800,
+          "end_ms": 2680,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "striders",
+          "asr_probability": 0.9008
+        },
+        {
+          "text": "with",
+          "start_ms": 2680,
+          "end_ms": 3380,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "with",
+          "asr_probability": 0.9436
+        },
+        {
+          "text": "red",
+          "start_ms": 3380,
+          "end_ms": 3700,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "red",
+          "asr_probability": 0.9932
+        },
+        {
+          "text": "skin",
+          "start_ms": 3700,
+          "end_ms": 4340,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "skin",
+          "asr_probability": 0.9903
+        },
+        {
+          "text": "and",
+          "start_ms": 4340,
+          "end_ms": 5080,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "and",
+          "asr_probability": 0.9833
+        },
+        {
+          "text": "stringy",
+          "start_ms": 5080,
+          "end_ms": 5840,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "stringy",
+          "asr_probability": 0.9913
+        },
+        {
+          "text": "hair",
+          "start_ms": 5840,
+          "end_ms": 6160,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "hair.",
+          "asr_probability": 0.9941
+        }
+      ],
+      "glossary": [
+        {
+          "term": "striders",
+          "ipa": "ˈstraɪdərz",
+          "pos": "N",
+          "zh": "炽足兽"
+        }
+      ],
+      "translation_status": "reviewed",
+      "word_timing_status": "reviewed",
+      "word_timing_model": "base.en",
+      "reviewed_at": "2026-09-01T19:22:43+00:00",
+      "reviewer_note": "Codex 逐句复核：与英文语义、角色名及 Minecraft 官方术语核对；保留引号内儿童口吻。"
+    },
+    {
+      "id": "mc-b1-p12-s03",
+      "text_en": "\"We can't cross the lava,\" said Emmy, \"but striders can!\" Emmy saddled the striders.",
+      "zh": "“我们过不了岩浆，”Emmy 说，“但炽足兽可以！”Emmy 给炽足兽装上了鞍。",
+      "audio": "assets/minecraft/escape-from-the-nether/sentences/page-12-sentence-03.mp3",
+      "start_ms": 448370,
+      "end_ms": 458350,
+      "words": [
+        {
+          "text": "We",
+          "start_ms": 480,
+          "end_ms": 1300,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "We",
+          "asr_probability": 0.031
+        },
+        {
+          "text": "can't",
+          "start_ms": 1300,
+          "end_ms": 1760,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "can't",
+          "asr_probability": 0.994
+        },
+        {
+          "text": "cross",
+          "start_ms": 1760,
+          "end_ms": 2080,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "cross",
+          "asr_probability": 0.9991
+        },
+        {
+          "text": "the",
+          "start_ms": 2080,
+          "end_ms": 2440,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "the",
+          "asr_probability": 0.9992
+        },
+        {
+          "text": "lava",
+          "start_ms": 2440,
+          "end_ms": 2840,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "lava,",
+          "asr_probability": 0.9418
+        },
+        {
+          "text": "said",
+          "start_ms": 3480,
+          "end_ms": 3820,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "said",
+          "asr_probability": 0.9895
+        },
+        {
+          "text": "Emmy",
+          "start_ms": 3820,
+          "end_ms": 4340,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "Emmie,",
+          "asr_probability": 0.9561
+        },
+        {
+          "text": "but",
+          "start_ms": 4880,
+          "end_ms": 5120,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "but",
+          "asr_probability": 0.7982
+        },
+        {
+          "text": "striders",
+          "start_ms": 5120,
+          "end_ms": 5780,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "striders",
+          "asr_probability": 0.8523
+        },
+        {
+          "text": "can",
+          "start_ms": 5780,
+          "end_ms": 6240,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "can.",
+          "asr_probability": 0.9891
+        },
+        {
+          "text": "Emmy",
+          "start_ms": 7000,
+          "end_ms": 8080,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "Emmie",
+          "asr_probability": 0.9919
+        },
+        {
+          "text": "saddled",
+          "start_ms": 8080,
+          "end_ms": 8980,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "saddled",
+          "asr_probability": 0.8942
+        },
+        {
+          "text": "the",
+          "start_ms": 8980,
+          "end_ms": 9360,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "the",
+          "asr_probability": 0.9989
+        },
+        {
+          "text": "striders",
+          "start_ms": 9360,
+          "end_ms": 9960,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "striders.",
+          "asr_probability": 0.9254
+        }
+      ],
+      "glossary": [],
+      "translation_status": "reviewed",
+      "word_timing_status": "reviewed",
+      "word_timing_model": "base.en",
+      "reviewed_at": "2026-09-01T19:22:43+00:00",
+      "reviewer_note": "Codex 逐句复核：与英文语义、角色名及 Minecraft 官方术语核对；保留引号内儿童口吻。"
+    },
+    {
+      "id": "mc-b1-p12-s04",
+      "text_en": "She and Birch climbed onto the passive mobs, but the striders stood there, chirping.",
+      "zh": "她和 Birch 爬上这些被动型生物，可炽足兽只是站在那里啾啾叫。",
+      "audio": "assets/minecraft/escape-from-the-nether/sentences/page-12-sentence-04.mp3",
+      "start_ms": 459190,
+      "end_ms": 467330,
+      "words": [
+        {
+          "text": "She",
+          "start_ms": 0,
+          "end_ms": 280,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "She",
+          "asr_probability": 0.7233
+        },
+        {
+          "text": "and",
+          "start_ms": 280,
+          "end_ms": 840,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "and",
+          "asr_probability": 0.8415
+        },
+        {
+          "text": "Birch",
+          "start_ms": 840,
+          "end_ms": 1220,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "Birch",
+          "asr_probability": 0.416
+        },
+        {
+          "text": "climbed",
+          "start_ms": 1220,
+          "end_ms": 1940,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "climbed",
+          "asr_probability": 0.9932
+        },
+        {
+          "text": "onto",
+          "start_ms": 1940,
+          "end_ms": 2880,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "onto",
+          "asr_probability": 0.7875
+        },
+        {
+          "text": "the",
+          "start_ms": 2880,
+          "end_ms": 3180,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "the",
+          "asr_probability": 0.9959
+        },
+        {
+          "text": "passive",
+          "start_ms": 3180,
+          "end_ms": 3680,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "passive",
+          "asr_probability": 0.9297
+        },
+        {
+          "text": "mobs",
+          "start_ms": 3680,
+          "end_ms": 4140,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "mobs,",
+          "asr_probability": 0.9728
+        },
+        {
+          "text": "but",
+          "start_ms": 4840,
+          "end_ms": 5320,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "but",
+          "asr_probability": 0.9848
+        },
+        {
+          "text": "the",
+          "start_ms": 5320,
+          "end_ms": 5480,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "the",
+          "asr_probability": 0.9978
+        },
+        {
+          "text": "striders",
+          "start_ms": 5480,
+          "end_ms": 6120,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "striders",
+          "asr_probability": 0.6799
+        },
+        {
+          "text": "stood",
+          "start_ms": 6120,
+          "end_ms": 6820,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "stood",
+          "asr_probability": 0.9992
+        },
+        {
+          "text": "there",
+          "start_ms": 6820,
+          "end_ms": 7380,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "there,",
+          "asr_probability": 0.9971
+        },
+        {
+          "text": "chirping",
+          "start_ms": 7760,
+          "end_ms": 8120,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "chirping.",
+          "asr_probability": 0.5095
+        }
+      ],
+      "glossary": [
+        {
+          "term": "chirping",
+          "ipa": "ˈtʃɜːrpɪŋ",
+          "pos": "V-ing",
+          "zh": "唧唧叫"
+        }
+      ],
+      "translation_status": "reviewed",
+      "word_timing_status": "reviewed",
+      "word_timing_model": "base.en",
+      "reviewed_at": "2026-09-01T19:22:43+00:00",
+      "reviewer_note": "Codex 逐句复核：与英文语义、角色名及 Minecraft 官方术语核对；保留引号内儿童口吻。"
+    },
+    {
+      "id": "mc-b1-p13-s01",
+      "text_en": "Emmy offered them carrots.",
+      "zh": "Emmy 给它们胡萝卜。",
+      "audio": "assets/minecraft/escape-from-the-nether/sentences/page-13-sentence-01.mp3",
+      "start_ms": 468390,
+      "end_ms": 470490,
+      "words": [
+        {
+          "text": "Emmy",
+          "start_ms": 80,
+          "end_ms": 540,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "Emi",
+          "asr_probability": 0.3752
+        },
+        {
+          "text": "offered",
+          "start_ms": 540,
+          "end_ms": 1280,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "offered",
+          "asr_probability": 0.9946
+        },
+        {
+          "text": "them",
+          "start_ms": 1280,
+          "end_ms": 1620,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "them",
+          "asr_probability": 0.9988
+        },
+        {
+          "text": "carrots",
+          "start_ms": 1620,
+          "end_ms": 1940,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "carrots,",
+          "asr_probability": 0.9886
+        }
+      ],
+      "glossary": [
+        {
+          "term": "carrots",
+          "ipa": "ˈkærəts",
+          "pos": "N",
+          "zh": "胡萝卜"
+        }
+      ],
+      "translation_status": "reviewed",
+      "word_timing_status": "reviewed",
+      "word_timing_model": "base.en",
+      "reviewed_at": "2026-09-01T19:22:43+00:00",
+      "reviewer_note": "Codex 逐句复核：与英文语义、角色名及 Minecraft 官方术语核对；保留引号内儿童口吻。"
+    },
+    {
+      "id": "mc-b1-p13-s02",
+      "text_en": "They just kept chirping.",
+      "zh": "它们只是继续啾啾叫。",
+      "audio": "assets/minecraft/escape-from-the-nether/sentences/page-13-sentence-02.mp3",
+      "start_ms": 471250,
+      "end_ms": 472570,
+      "words": [
+        {
+          "text": "They",
+          "start_ms": 0,
+          "end_ms": 160,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "They",
+          "asr_probability": 0.7996
+        },
+        {
+          "text": "just",
+          "start_ms": 160,
+          "end_ms": 440,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "just",
+          "asr_probability": 0.9937
+        },
+        {
+          "text": "kept",
+          "start_ms": 440,
+          "end_ms": 800,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "kept",
+          "asr_probability": 0.9959
+        },
+        {
+          "text": "chirping",
+          "start_ms": 800,
+          "end_ms": 1300,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "chirping.",
+          "asr_probability": 0.6534
+        }
+      ],
+      "glossary": [],
+      "translation_status": "reviewed",
+      "word_timing_status": "reviewed",
+      "word_timing_model": "base.en",
+      "reviewed_at": "2026-09-01T19:22:43+00:00",
+      "reviewer_note": "Codex 逐句复核：与英文语义、角色名及 Minecraft 官方术语核对；保留引号内儿童口吻。"
+    },
+    {
+      "id": "mc-b1-p13-s03",
+      "text_en": "Birch had an idea.",
+      "zh": "Birch 想到了一个办法。",
+      "audio": "assets/minecraft/escape-from-the-nether/sentences/page-13-sentence-03.mp3",
+      "start_ms": 473550,
+      "end_ms": 475650,
+      "words": [
+        {
+          "text": "Birch",
+          "start_ms": 20,
+          "end_ms": 340,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "Birch",
+          "asr_probability": 0.2807
+        },
+        {
+          "text": "had",
+          "start_ms": 340,
+          "end_ms": 1240,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "had",
+          "asr_probability": 0.9962
+        },
+        {
+          "text": "an",
+          "start_ms": 1240,
+          "end_ms": 1380,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "an",
+          "asr_probability": 0.996
+        },
+        {
+          "text": "idea",
+          "start_ms": 1380,
+          "end_ms": 2020,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "idea.",
+          "asr_probability": 0.9984
+        }
+      ],
+      "glossary": [],
+      "translation_status": "reviewed",
+      "word_timing_status": "reviewed",
+      "word_timing_model": "base.en",
+      "reviewed_at": "2026-09-01T19:22:43+00:00",
+      "reviewer_note": "Codex 逐句复核：与英文语义、角色名及 Minecraft 官方术语核对；保留引号内儿童口吻。"
+    },
+    {
+      "id": "mc-b1-p13-s04",
+      "text_en": "Carrots did not grow in the Nether.",
+      "zh": "下界里不会生长胡萝卜。",
+      "audio": "assets/minecraft/escape-from-the-nether/sentences/page-13-sentence-04.mp3",
+      "start_ms": 475650,
+      "end_ms": 479650,
+      "words": [
+        {
+          "text": "Carrots",
+          "start_ms": 840,
+          "end_ms": 1520,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "Carrots",
+          "asr_probability": 0.9206
+        },
+        {
+          "text": "did",
+          "start_ms": 1520,
+          "end_ms": 2080,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "did",
+          "asr_probability": 0.9829
+        },
+        {
+          "text": "not",
+          "start_ms": 2080,
+          "end_ms": 2340,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "not",
+          "asr_probability": 0.9997
+        },
+        {
+          "text": "grow",
+          "start_ms": 2340,
+          "end_ms": 2920,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "grow",
+          "asr_probability": 0.9982
+        },
+        {
+          "text": "in",
+          "start_ms": 2920,
+          "end_ms": 3420,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "in",
+          "asr_probability": 0.9984
+        },
+        {
+          "text": "the",
+          "start_ms": 3420,
+          "end_ms": 3580,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "the",
+          "asr_probability": 0.9979
+        },
+        {
+          "text": "Nether",
+          "start_ms": 3580,
+          "end_ms": 4000,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "nether,",
+          "asr_probability": 0.9783,
+          "boundary_clamped_ms": 80
+        }
+      ],
+      "glossary": [],
+      "translation_status": "reviewed",
+      "word_timing_status": "reviewed",
+      "word_timing_model": "base.en",
+      "reviewed_at": "2026-09-01T19:22:43+00:00",
+      "reviewer_note": "Codex 逐句复核：与英文语义、角色名及 Minecraft 官方术语核对；保留引号内儿童口吻。"
+    },
+    {
+      "id": "mc-b1-p13-s05",
+      "text_en": "Maybe striders did not eat them.",
+      "zh": "也许炽足兽根本不吃胡萝卜。",
+      "audio": "assets/minecraft/escape-from-the-nether/sentences/page-13-sentence-05.mp3",
+      "start_ms": 480350,
+      "end_ms": 483370,
+      "words": [
+        {
+          "text": "Maybe",
+          "start_ms": 60,
+          "end_ms": 580,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "maybe",
+          "asr_probability": 0.975
+        },
+        {
+          "text": "striders",
+          "start_ms": 580,
+          "end_ms": 1440,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "striders",
+          "asr_probability": 0.9615
+        },
+        {
+          "text": "did",
+          "start_ms": 1440,
+          "end_ms": 2000,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "did",
+          "asr_probability": 0.9909
+        },
+        {
+          "text": "not",
+          "start_ms": 2000,
+          "end_ms": 2300,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "not",
+          "asr_probability": 0.9993
+        },
+        {
+          "text": "eat",
+          "start_ms": 2300,
+          "end_ms": 2640,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "eat",
+          "asr_probability": 0.9994
+        },
+        {
+          "text": "them",
+          "start_ms": 2640,
+          "end_ms": 2980,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "them.",
+          "asr_probability": 0.9986
+        }
+      ],
+      "glossary": [],
+      "translation_status": "reviewed",
+      "word_timing_status": "reviewed",
+      "word_timing_model": "base.en",
+      "reviewed_at": "2026-09-01T19:22:43+00:00",
+      "reviewer_note": "Codex 逐句复核：与英文语义、角色名及 Minecraft 官方术语核对；保留引号内儿童口吻。"
+    },
+    {
+      "id": "mc-b1-p13-s06",
+      "text_en": "\"Quick! Offer them the blue-green fungi,' Birch shouted as a floating ghast joined the skeletons and piglins.",
+      "zh": "“快！把蓝绿色真菌给它们！”Birch 喊道。这时，一只漂浮的恶魂加入了骷髅和猪灵的队伍。",
+      "audio": "assets/minecraft/escape-from-the-nether/sentences/page-13-sentence-06.mp3",
+      "start_ms": 484370,
+      "end_ms": 496210,
+      "words": [],
+      "glossary": [
+        {
+          "term": "ghast",
+          "ipa": "ɡɑːst",
+          "pos": "N",
+          "zh": "恶魂"
+        },
+        {
+          "term": "floating",
+          "ipa": "ˈfloʊtɪŋ",
+          "pos": "V-ing",
+          "zh": "飘浮的"
+        }
+      ],
+      "translation_status": "reviewed",
+      "word_timing_status": "needs-review",
+      "word_timing_error": "ASR delete: source[0:2]=['Quick', 'Offer'], heard=[]",
+      "reviewed_at": "2026-09-01T19:22:43+00:00",
+      "reviewer_note": "Codex 逐句复核：与英文语义、角色名及 Minecraft 官方术语核对；保留引号内儿童口吻。"
+    },
+    {
+      "id": "mc-b1-p14-s01",
+      "text_en": "When the striders saw the fungi, they started running!",
+      "zh": "炽足兽看见真菌后，开始奔跑！",
+      "audio": "assets/minecraft/escape-from-the-nether/sentences/page-14-sentence-01.mp3",
+      "start_ms": 497230,
+      "end_ms": 502070,
+      "words": [
+        {
+          "text": "When",
+          "start_ms": 0,
+          "end_ms": 460,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "When",
+          "asr_probability": 0.8089
+        },
+        {
+          "text": "the",
+          "start_ms": 460,
+          "end_ms": 620,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "the",
+          "asr_probability": 0.9945
+        },
+        {
+          "text": "striders",
+          "start_ms": 620,
+          "end_ms": 1380,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "striders",
+          "asr_probability": 0.5928
+        },
+        {
+          "text": "saw",
+          "start_ms": 1380,
+          "end_ms": 1900,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "saw",
+          "asr_probability": 0.9978
+        },
+        {
+          "text": "the",
+          "start_ms": 1900,
+          "end_ms": 2220,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "the",
+          "asr_probability": 0.9907
+        },
+        {
+          "text": "fungi",
+          "start_ms": 2220,
+          "end_ms": 2700,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "fungi,",
+          "asr_probability": 0.9438
+        },
+        {
+          "text": "they",
+          "start_ms": 3240,
+          "end_ms": 3680,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "they",
+          "asr_probability": 0.9872
+        },
+        {
+          "text": "started",
+          "start_ms": 3680,
+          "end_ms": 4260,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "started",
+          "asr_probability": 0.9959
+        },
+        {
+          "text": "running",
+          "start_ms": 4260,
+          "end_ms": 4620,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "running!",
+          "asr_probability": 0.8628
+        }
+      ],
+      "glossary": [],
+      "translation_status": "reviewed",
+      "word_timing_status": "reviewed",
+      "word_timing_model": "base.en",
+      "reviewed_at": "2026-09-01T19:22:43+00:00",
+      "reviewer_note": "Codex 逐句复核：与英文语义、角色名及 Minecraft 官方术语核对；保留引号内儿童口吻。"
+    },
+    {
+      "id": "mc-b1-p14-s02",
+      "text_en": "Emmy and Birch raced toward the portal.",
+      "zh": "Emmy 和 Birch 朝传送门冲去。",
+      "audio": "assets/minecraft/escape-from-the-nether/sentences/page-14-sentence-02.mp3",
+      "start_ms": 502070,
+      "end_ms": 506950,
+      "words": [
+        {
+          "text": "Emmy",
+          "start_ms": 940,
+          "end_ms": 1320,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "Emmie",
+          "asr_probability": 0.4816
+        },
+        {
+          "text": "and",
+          "start_ms": 1320,
+          "end_ms": 1660,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "and",
+          "asr_probability": 0.9932
+        },
+        {
+          "text": "Birch",
+          "start_ms": 1660,
+          "end_ms": 2100,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "Burch",
+          "asr_probability": 0.8786
+        },
+        {
+          "text": "raced",
+          "start_ms": 2100,
+          "end_ms": 3100,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "raced",
+          "asr_probability": 0.9962
+        },
+        {
+          "text": "toward",
+          "start_ms": 3100,
+          "end_ms": 3880,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "toward",
+          "asr_probability": 0.9302
+        },
+        {
+          "text": "the",
+          "start_ms": 3880,
+          "end_ms": 4360,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "the",
+          "asr_probability": 0.9988
+        },
+        {
+          "text": "portal",
+          "start_ms": 4360,
+          "end_ms": 4760,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "portal.",
+          "asr_probability": 0.9761
+        }
+      ],
+      "glossary": [
+        {
+          "term": "raced",
+          "ipa": "reɪst",
+          "pos": "V-ed",
+          "zh": "飞跑"
+        }
+      ],
+      "translation_status": "reviewed",
+      "word_timing_status": "reviewed",
+      "word_timing_model": "base.en",
+      "reviewed_at": "2026-09-01T19:22:43+00:00",
+      "reviewer_note": "Codex 逐句复核：与英文语义、角色名及 Minecraft 官方术语核对；保留引号内儿童口吻。"
+    },
+    {
+      "id": "mc-b1-p14-s03",
+      "text_en": "On the other side of the portal, they could see Byte.",
+      "zh": "在传送门的另一边，他们看见了 Byte。",
+      "audio": "assets/minecraft/escape-from-the-nether/sentences/page-14-sentence-03.mp3",
+      "start_ms": 508010,
+      "end_ms": 512110,
+      "words": [
+        {
+          "text": "On",
+          "start_ms": 0,
+          "end_ms": 200,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "On",
+          "asr_probability": 0.5919
+        },
+        {
+          "text": "the",
+          "start_ms": 200,
+          "end_ms": 320,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "the",
+          "asr_probability": 0.9979
+        },
+        {
+          "text": "other",
+          "start_ms": 320,
+          "end_ms": 660,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "other",
+          "asr_probability": 0.9972
+        },
+        {
+          "text": "side",
+          "start_ms": 660,
+          "end_ms": 1240,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "side",
+          "asr_probability": 0.9987
+        },
+        {
+          "text": "of",
+          "start_ms": 1240,
+          "end_ms": 1500,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "of",
+          "asr_probability": 0.9948
+        },
+        {
+          "text": "the",
+          "start_ms": 1500,
+          "end_ms": 1640,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "the",
+          "asr_probability": 0.9973
+        },
+        {
+          "text": "portal",
+          "start_ms": 1640,
+          "end_ms": 2220,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "portal,",
+          "asr_probability": 0.9017
+        },
+        {
+          "text": "they",
+          "start_ms": 2760,
+          "end_ms": 2940,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "they",
+          "asr_probability": 0.9845
+        },
+        {
+          "text": "could",
+          "start_ms": 2940,
+          "end_ms": 3280,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "could",
+          "asr_probability": 0.9921
+        },
+        {
+          "text": "see",
+          "start_ms": 3280,
+          "end_ms": 3620,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "see",
+          "asr_probability": 0.9884
+        },
+        {
+          "text": "Byte",
+          "start_ms": 3620,
+          "end_ms": 3960,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "Byte.",
+          "asr_probability": 0.0
+        }
+      ],
+      "glossary": [],
+      "translation_status": "reviewed",
+      "word_timing_status": "reviewed",
+      "word_timing_model": "base.en",
+      "reviewed_at": "2026-09-01T19:22:43+00:00",
+      "reviewer_note": "Codex 逐句复核：与英文语义、角色名及 Minecraft 官方术语核对；保留引号内儿童口吻。"
+    },
+    {
+      "id": "mc-b1-p14-s04",
+      "text_en": "He was waiting for them.",
+      "zh": "它正在等他们。",
+      "audio": "assets/minecraft/escape-from-the-nether/sentences/page-14-sentence-04.mp3",
+      "start_ms": 513010,
+      "end_ms": 514810,
+      "words": [
+        {
+          "text": "He",
+          "start_ms": 0,
+          "end_ms": 260,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "He",
+          "asr_probability": 0.8361
+        },
+        {
+          "text": "was",
+          "start_ms": 260,
+          "end_ms": 520,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "was",
+          "asr_probability": 0.9963
+        },
+        {
+          "text": "waiting",
+          "start_ms": 520,
+          "end_ms": 940,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "waiting",
+          "asr_probability": 0.9914
+        },
+        {
+          "text": "for",
+          "start_ms": 940,
+          "end_ms": 1380,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "for",
+          "asr_probability": 0.997
+        },
+        {
+          "text": "them",
+          "start_ms": 1380,
+          "end_ms": 1640,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "them.",
+          "asr_probability": 0.7739
+        }
+      ],
+      "glossary": [],
+      "translation_status": "reviewed",
+      "word_timing_status": "reviewed",
+      "word_timing_model": "base.en",
+      "reviewed_at": "2026-09-01T19:22:43+00:00",
+      "reviewer_note": "Codex 逐句复核：与英文语义、角色名及 Minecraft 官方术语核对；保留引号内儿童口吻。"
+    },
+    {
+      "id": "mc-b1-p14-s05",
+      "text_en": "He had his stick in his mouth.",
+      "zh": "它嘴里叼着那根木棍。",
+      "audio": "assets/minecraft/escape-from-the-nether/sentences/page-14-sentence-05.mp3",
+      "start_ms": 515430,
+      "end_ms": 518610,
+      "words": [
+        {
+          "text": "He",
+          "start_ms": 120,
+          "end_ms": 400,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "He",
+          "asr_probability": 0.993
+        },
+        {
+          "text": "had",
+          "start_ms": 400,
+          "end_ms": 800,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "had",
+          "asr_probability": 0.9978
+        },
+        {
+          "text": "his",
+          "start_ms": 800,
+          "end_ms": 1100,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "his",
+          "asr_probability": 0.9923
+        },
+        {
+          "text": "stick",
+          "start_ms": 1100,
+          "end_ms": 1660,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "stick",
+          "asr_probability": 0.9912
+        },
+        {
+          "text": "in",
+          "start_ms": 1660,
+          "end_ms": 2320,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "in",
+          "asr_probability": 0.9796
+        },
+        {
+          "text": "his",
+          "start_ms": 2320,
+          "end_ms": 2560,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "his",
+          "asr_probability": 0.997
+        },
+        {
+          "text": "mouth",
+          "start_ms": 2560,
+          "end_ms": 3100,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "mouth.",
+          "asr_probability": 0.9991
+        }
+      ],
+      "glossary": [
+        {
+          "term": "mouth",
+          "ipa": "maʊθ",
+          "pos": "N",
+          "zh": "嘴巴"
+        },
+        {
+          "term": "stick",
+          "ipa": "stɪk",
+          "pos": "N",
+          "zh": "木棍"
+        }
+      ],
+      "translation_status": "reviewed",
+      "word_timing_status": "reviewed",
+      "word_timing_model": "base.en",
+      "reviewed_at": "2026-09-01T19:22:43+00:00",
+      "reviewer_note": "Codex 逐句复核：与英文语义、角色名及 Minecraft 官方术语核对；保留引号内儿童口吻。"
+    },
+    {
+      "id": "mc-b1-p14-s06",
+      "text_en": "They were going to make it!",
+      "zh": "他们就要成功了！",
+      "audio": "assets/minecraft/escape-from-the-nether/sentences/page-14-sentence-06.mp3",
+      "start_ms": 519330,
+      "end_ms": 521510,
+      "words": [
+        {
+          "text": "They",
+          "start_ms": 80,
+          "end_ms": 380,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "They",
+          "asr_probability": 0.9821
+        },
+        {
+          "text": "were",
+          "start_ms": 380,
+          "end_ms": 580,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "were",
+          "asr_probability": 0.9981
+        },
+        {
+          "text": "going",
+          "start_ms": 580,
+          "end_ms": 1000,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "going",
+          "asr_probability": 0.994
+        },
+        {
+          "text": "to",
+          "start_ms": 1000,
+          "end_ms": 1420,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "to",
+          "asr_probability": 0.9981
+        },
+        {
+          "text": "make",
+          "start_ms": 1420,
+          "end_ms": 1820,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "make",
+          "asr_probability": 0.9982
+        },
+        {
+          "text": "it",
+          "start_ms": 1820,
+          "end_ms": 2100,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "it.",
+          "asr_probability": 0.9989
+        }
+      ],
+      "glossary": [],
+      "translation_status": "reviewed",
+      "word_timing_status": "reviewed",
+      "word_timing_model": "base.en",
+      "reviewed_at": "2026-09-01T19:22:43+00:00",
+      "reviewer_note": "Codex 逐句复核：与英文语义、角色名及 Minecraft 官方术语核对；保留引号内儿童口吻。"
+    },
+    {
+      "id": "mc-b1-p15-s01",
+      "text_en": "Safe in the Overworld, Emmy threw the stick.",
+      "zh": "回到安全的主世界后，Emmy 把木棍扔了出去。",
+      "audio": "assets/minecraft/escape-from-the-nether/sentences/page-15-sentence-01.mp3",
+      "start_ms": 522330,
+      "end_ms": 526770,
+      "words": [
+        {
+          "text": "Safe",
+          "start_ms": 140,
+          "end_ms": 680,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "Safe",
+          "asr_probability": 0.916
+        },
+        {
+          "text": "in",
+          "start_ms": 680,
+          "end_ms": 1240,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "in",
+          "asr_probability": 0.9799
+        },
+        {
+          "text": "the",
+          "start_ms": 1240,
+          "end_ms": 1420,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "the",
+          "asr_probability": 0.9983
+        },
+        {
+          "text": "Overworld",
+          "start_ms": 1420,
+          "end_ms": 2260,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "overworld,",
+          "asr_probability": 0.8755
+        },
+        {
+          "text": "Emmy",
+          "start_ms": 3060,
+          "end_ms": 3340,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "Emi",
+          "asr_probability": 0.3727
+        },
+        {
+          "text": "threw",
+          "start_ms": 3340,
+          "end_ms": 3680,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "threw",
+          "asr_probability": 0.956
+        },
+        {
+          "text": "the",
+          "start_ms": 3680,
+          "end_ms": 4040,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "the",
+          "asr_probability": 0.9968
+        },
+        {
+          "text": "stick",
+          "start_ms": 4040,
+          "end_ms": 4340,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "stick.",
+          "asr_probability": 0.9998
+        }
+      ],
+      "glossary": [
+        {
+          "term": "safe",
+          "ipa": "seɪf",
+          "pos": "Adj",
+          "zh": "安全的"
+        }
+      ],
+      "translation_status": "reviewed",
+      "word_timing_status": "reviewed",
+      "word_timing_model": "base.en",
+      "reviewed_at": "2026-09-01T19:22:43+00:00",
+      "reviewer_note": "Codex 逐句复核：与英文语义、角色名及 Minecraft 官方术语核对；保留引号内儿童口吻。"
+    },
+    {
+      "id": "mc-b1-p15-s02",
+      "text_en": "Byte fetched it, and then Birch threw it.",
+      "zh": "Byte 把木棍捡回来，然后 Birch 又把它扔了出去。",
+      "audio": "assets/minecraft/escape-from-the-nether/sentences/page-15-sentence-02.mp3",
+      "start_ms": 527590,
+      "end_ms": 530990,
+      "words": [],
+      "glossary": [
+        {
+          "term": "fetched",
+          "ipa": "fetʃt",
+          "pos": "V-ed",
+          "zh": "捡回"
+        }
+      ],
+      "translation_status": "reviewed",
+      "word_timing_status": "needs-review",
+      "word_timing_error": "ASR delete: source[0:2]=['Byte', 'fetched'], heard=[]",
+      "reviewed_at": "2026-09-01T19:22:43+00:00",
+      "reviewer_note": "Codex 逐句复核：与英文语义、角色名及 Minecraft 官方术语核对；保留引号内儿童口吻。"
+    },
+    {
+      "id": "mc-b1-p15-s03",
+      "text_en": "Playing with Byte was a great end to a great adventure!",
+      "zh": "和 Byte 玩耍，为这场精彩的冒险画上了完美句号！",
+      "audio": "assets/minecraft/escape-from-the-nether/sentences/page-15-sentence-03.mp3",
+      "start_ms": 530990,
+      "end_ms": 537150,
+      "words": [
+        {
+          "text": "Playing",
+          "start_ms": 0,
+          "end_ms": 840,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "Playing",
+          "asr_probability": 0.6992
+        },
+        {
+          "text": "with",
+          "start_ms": 840,
+          "end_ms": 1240,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "with",
+          "asr_probability": 0.9607
+        },
+        {
+          "text": "Byte",
+          "start_ms": 1240,
+          "end_ms": 1660,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "Byte",
+          "asr_probability": 0.0049
+        },
+        {
+          "text": "was",
+          "start_ms": 1660,
+          "end_ms": 2360,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "was",
+          "asr_probability": 0.9673
+        },
+        {
+          "text": "a",
+          "start_ms": 2360,
+          "end_ms": 2580,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "a",
+          "asr_probability": 0.996
+        },
+        {
+          "text": "great",
+          "start_ms": 2580,
+          "end_ms": 3040,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "great",
+          "asr_probability": 0.9978
+        },
+        {
+          "text": "end",
+          "start_ms": 3040,
+          "end_ms": 3600,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "end",
+          "asr_probability": 0.6967
+        },
+        {
+          "text": "to",
+          "start_ms": 3600,
+          "end_ms": 4240,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "to",
+          "asr_probability": 0.9873
+        },
+        {
+          "text": "a",
+          "start_ms": 4240,
+          "end_ms": 4480,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "a",
+          "asr_probability": 0.9886
+        },
+        {
+          "text": "great",
+          "start_ms": 4480,
+          "end_ms": 5080,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "great",
+          "asr_probability": 0.9842
+        },
+        {
+          "text": "adventure",
+          "start_ms": 5080,
+          "end_ms": 5680,
+          "timing_source": "faster-whisper-base.en",
+          "asr_text": "adventure!",
+          "asr_probability": 0.8899
+        }
+      ],
+      "glossary": [
+        {
+          "term": "adventure",
+          "ipa": "ədˈventʃər",
+          "pos": "N",
+          "zh": "冒险"
+        }
+      ],
+      "translation_status": "reviewed",
+      "word_timing_status": "reviewed",
+      "word_timing_model": "base.en",
+      "reviewed_at": "2026-09-01T19:22:43+00:00",
+      "reviewer_note": "Codex 逐句复核：与英文语义、角色名及 Minecraft 官方术语核对；保留引号内儿童口吻。"
+    }
+  ]
+}

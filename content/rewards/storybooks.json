@@ -1,0 +1,299 @@
+{
+  "schema_version": 1,
+  "description": "Minecraft 与 Mikey & JJ 绘本的首次测验奖励目录；所有物品均为不增加数值的故事纪念。",
+  "storybooks": {
+    "minecraft": {
+      "series": "minecraft",
+      "collection_catalog": "storybook-collections/catalog.json",
+      "sp_reward": 10,
+      "daily_drop_cap": 2,
+      "sticker_count": 2,
+      "story_image_template": "assets/generated/storybooks/minecraft-story-scenes-v1/book{episode}.jpg",
+      "rooms": {
+        "room.minecraft": {
+          "title": "方块探险小屋",
+          "title_en": "Block Adventure Nook",
+          "default_slot": "shelf.left",
+          "background": "assets/collections/mc01.jpg",
+          "toy_rack": { "title_zh": "方块玩具架", "slots": ["rack.left", "rack.center", "rack.right"] },
+          "decor_slots": ["shelf.left", "shelf.center", "shelf.right", "floor.left", "floor.right"]
+        }
+      },
+      "sticker_themes": [
+        {
+          "chapter": 1,
+          "from": 1,
+          "to": 1,
+          "title_zh": "逃出下界",
+          "title_en": "Escape from the Nether",
+          "shape": "pixel-shield",
+          "tone": "nether-violet",
+          "cover_asset": "assets/generated/storybooks/minecraft-story-scenes-v1/book001.jpg",
+          "detail_asset": "assets/generated/storybooks/minecraft-story-scenes-v1/book001.jpg",
+          "motifs": [{
+            "id": "nether-escape",
+            "title_zh": "下界逃生",
+            "title_en": "Nether Escape",
+            "glyph": "🟪",
+            "type": "sticker",
+            "source_label_zh": "第 14 页：骑着炽足兽冲向传送门",
+            "source_label_en": "Page 14: racing striders toward the portal",
+            "story_binding": {
+              "storybook_pages": [14, 15],
+              "scene_ids": ["mc-b1-p14-s01", "mc-b1-p14-s02", "mc-b1-p15-s01"],
+              "trigger_terms": ["striders", "portal", "Byte", "adventure"]
+            }
+          }]
+        },
+        {
+          "chapter": 2,
+          "from": 2,
+          "to": 2,
+          "title_zh": "主世界的生物",
+          "title_en": "Mobs in the Overworld",
+          "shape": "pixel-burst",
+          "tone": "grass-green",
+          "cover_asset": "assets/generated/storybooks/minecraft-story-scenes-v1/book002.jpg",
+          "detail_asset": "assets/generated/storybooks/minecraft-story-scenes-v1/book002.jpg",
+          "motifs": [{
+            "id": "ink-home",
+            "title_zh": "Ink 回家",
+            "title_en": "Ink Comes Home",
+            "glyph": "🐎",
+            "type": "sticker",
+            "source_label_zh": "第 15 页：Ink 带着 Emmy 回家",
+            "source_label_en": "Page 15: Ink carries Emmy home",
+            "story_binding": {
+              "storybook_pages": [13, 14, 15],
+              "scene_ids": ["mc-b2-p13-s05", "mc-b2-p14-s05", "mc-b2-p15-s01"],
+              "trigger_terms": ["horse", "Ink", "saddle", "success"]
+            }
+          }]
+        }
+      ],
+      "episodes": {
+        "1": {
+          "room": "room.minecraft",
+          "items": [
+            {
+              "id": "minecraft.b1.gold-helmet",
+              "title_zh": "Emmy 的金头盔",
+              "title_en": "Emmy's Golden Helmet",
+              "reward_type": "gear",
+              "non_power": true,
+              "slot": "shelf.left",
+              "asset": "assets/generated/storybooks/minecraft-story-scenes-v1/b1-gold-helmet.jpg",
+              "room_asset": "assets/generated/storybooks/minecraft/rewards/stickers/golden-helmet.png",
+              "story_image": "assets/generated/storybooks/minecraft-story-scenes-v1/b1-gold-helmet.jpg",
+              "glyph": "⛑️",
+              "interaction": { "kind": "equip", "text_zh": "戴上金头盔，准备好出发！", "text_en": "Put on the golden helmet and get ready!" },
+              "story_binding": {
+                "storybook_pages": [1],
+                "scene_ids": ["mc-b1-p01-s01", "mc-b1-p01-s02", "mc-b1-p01-s03"],
+                "trigger_terms": ["adventure", "helmet", "yellow gold"],
+                "source_label_zh": "第 1 页：准备冒险与金头盔",
+                "source_label_en": "Page 1: ready for adventure and a golden helmet",
+                "asset_prompt_id": "source-page-crop:minecraft-b1-p01"
+              }
+            },
+            {
+              "id": "minecraft.b1.portal-shard",
+              "title_zh": "紫色传送门碎片",
+              "title_en": "Purple Portal Shard",
+              "reward_type": "decor",
+              "non_power": true,
+              "slot": "shelf.center",
+              "asset": "assets/generated/storybooks/minecraft-story-scenes-v1/b1-portal-shard.jpg",
+              "room_asset": "assets/generated/storybooks/minecraft/rewards/stickers/nether-portal-shard.png",
+              "story_image": "assets/generated/storybooks/minecraft-story-scenes-v1/b1-portal-shard.jpg",
+              "glyph": "🟪",
+              "interaction": { "kind": "portal", "text_zh": "紫光一闪，通往下界的门打开了。", "text_en": "A purple flash opens the gate to the Nether." },
+              "story_binding": {
+                "storybook_pages": [3, 4],
+                "scene_ids": ["mc-b1-p03-s06", "mc-b1-p03-s07", "mc-b1-p04-s01"],
+                "trigger_terms": ["rectangle", "obsidian", "purple"],
+                "source_label_zh": "第 3 页：黑曜石矩形与紫色光",
+                "source_label_en": "Page 3: an obsidian rectangle glowing purple",
+                "asset_prompt_id": "source-page-crop:minecraft-b1-p03"
+              }
+            },
+            {
+              "id": "minecraft.b1.wolf-tag",
+              "title_zh": "Byte 的忠诚狼牌",
+              "title_en": "Byte's Loyal Wolf Tag",
+              "reward_type": "animal",
+              "non_power": true,
+              "slot": "shelf.right",
+              "asset": "assets/generated/storybooks/minecraft-story-scenes-v1/b1-wolf-tag.jpg",
+              "room_asset": "assets/generated/storybooks/minecraft/rewards/stickers/loyal-wolf.png",
+              "story_image": "assets/generated/storybooks/minecraft-story-scenes-v1/b1-wolf-tag.jpg",
+              "glyph": "🐺",
+              "interaction": { "kind": "fetch", "text_zh": "Byte 摇摇尾巴：再来一次接物游戏！", "text_en": "Byte wags his tail: one more game of fetch!" },
+              "story_binding": {
+                "storybook_pages": [2],
+                "scene_ids": ["mc-b1-p02-s01", "mc-b1-p02-s02"],
+                "trigger_terms": ["loyal", "wolf", "fetch"],
+                "source_label_zh": "第 2 页：忠诚的狼 Byte 想玩接物",
+                "source_label_en": "Page 2: loyal wolf Byte wants to play fetch",
+                "asset_prompt_id": "source-page-crop:minecraft-b1-p02"
+              }
+            }
+          ]
+        },
+        "2": {
+          "room": "room.minecraft",
+          "items": [
+            {
+              "id": "minecraft.b2.bee-nest",
+              "title_zh": "小蜂巢装饰",
+              "title_en": "Little Bee Nest Decor",
+              "reward_type": "decor",
+              "non_power": true,
+              "slot": "shelf.left",
+              "asset": "assets/generated/storybooks/minecraft-story-scenes-v1/b2-bee-nest.jpg",
+              "story_image": "assets/generated/storybooks/minecraft-story-scenes-v1/b2-bee-nest.jpg",
+              "room_asset": "assets/generated/storybooks/minecraft/rewards/stickers/bee-nest.png",
+              "glyph": "🐝",
+              "interaction": { "kind": "buzz", "text_zh": "小蜜蜂嗡嗡唱歌，蜂巢亮起来啦！", "text_en": "The little bees hum and the nest glows!" },
+              "story_binding": {
+                "storybook_pages": [4],
+                "scene_ids": ["mc-b2-p04-s01", "mc-b2-p04-s02", "mc-b2-p04-s03"],
+                "trigger_terms": ["bees' nest", "honey", "campfire"],
+                "source_label_zh": "第 4 页：发现蜂巢与蜂蜜",
+                "source_label_en": "Page 4: a bee nest and honey",
+                "asset_prompt_id": "source-page-crop:minecraft-b2-p04"
+              }
+            },
+            {
+              "id": "minecraft.b2.panda-sneeze",
+              "title_zh": "小熊猫喷嚏贴",
+              "title_en": "Baby Panda Sneeze Sticker",
+              "reward_type": "animal",
+              "non_power": true,
+              "slot": "shelf.center",
+              "asset": "assets/generated/storybooks/minecraft-story-scenes-v1/b2-panda-sneeze.jpg",
+              "story_image": "assets/generated/storybooks/minecraft-story-scenes-v1/b2-panda-sneeze.jpg",
+              "room_asset": "assets/generated/storybooks/minecraft/rewards/stickers/panda-sneeze.png",
+              "glyph": "🐼",
+              "interaction": { "kind": "sneeze", "text_zh": "阿——嚏！小熊猫送来一颗软软的史莱姆球。", "text_en": "Achoo! The baby panda sends a bouncy slimeball." },
+              "story_binding": {
+                "storybook_pages": [8],
+                "scene_ids": ["mc-b2-p08-s04", "mc-b2-p08-s05"],
+                "trigger_terms": ["baby panda", "sneezed", "slimeball"],
+                "source_label_zh": "第 8 页：竹林里的小熊猫打喷嚏",
+                "source_label_en": "Page 8: a baby panda sneezes in the bamboo jungle",
+                "asset_prompt_id": "source-page-crop:minecraft-b2-p08"
+              }
+            },
+            {
+              "id": "minecraft.b2.ink-saddle",
+              "title_zh": "Ink 的小马鞍",
+              "title_en": "Ink's Little Saddle",
+              "reward_type": "gear",
+              "non_power": true,
+              "slot": "shelf.right",
+              "asset": "assets/generated/storybooks/minecraft-story-scenes-v1/b2-ink-saddle.jpg",
+              "story_image": "assets/generated/storybooks/minecraft-story-scenes-v1/b2-ink-saddle.jpg",
+              "room_asset": "assets/generated/storybooks/minecraft/rewards/stickers/ink-saddle.png",
+              "glyph": "🐎",
+              "interaction": { "kind": "ride", "text_zh": "Ink 轻轻踏步，准备带你回家！", "text_en": "Ink takes a happy step, ready to carry you home!" },
+              "story_binding": {
+                "storybook_pages": [13, 14, 15],
+                "scene_ids": ["mc-b2-p13-s05", "mc-b2-p14-s05", "mc-b2-p15-s01"],
+                "trigger_terms": ["horse", "Ink", "lead", "saddle", "success"],
+                "source_label_zh": "第 13–15 页：找到 Ink，骑马回家",
+                "source_label_en": "Pages 13–15: finding Ink and riding home",
+                "asset_prompt_id": "source-page-crop:minecraft-b2-p15"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "mikey-jj": {
+      "series": "mikey-jj",
+      "collection_catalog": "storybook-collections/catalog.json",
+      "sp_reward": 10,
+      "daily_drop_cap": 2,
+      "sticker_count": 10,
+      "rooms": {
+        "room.mikey-jj": { "title": "Mikey & JJ 冒险墙", "default_slot": "shelf.left" }
+      },
+      "sticker_themes": [{
+        "chapter": 1,
+        "from": 1,
+        "to": 10,
+        "title_zh": "校园逃生",
+        "title_en": "School Escape",
+        "motifs": [
+          { "id": "school-key", "title_zh": "校门钥匙", "title_en": "School Key", "glyph": "🔑", "type": "gear", "asset": "assets/generated/storybooks/mikey-jj/rewards/items/school-key.png" },
+          { "id": "helicopter", "title_zh": "屋顶直升机", "title_en": "Rooftop Helicopter", "glyph": "🚁", "type": "vehicle", "asset": "assets/generated/storybooks/mikey-jj/rewards/stickers/rooftop-helicopter.png" },
+          { "id": "golden-apple", "title_zh": "金苹果", "title_en": "Golden Apple", "glyph": "🍎", "type": "food", "asset": "assets/generated/storybooks/mikey-jj/rewards/stickers/golden-apple.png" },
+          { "id": "potion", "title_zh": "治疗药水", "title_en": "Healing Potion", "glyph": "🧪", "type": "item", "asset": "assets/generated/storybooks/mikey-jj/rewards/stickers/healing-potion.png" },
+          { "id": "zombie-alert", "title_zh": "僵尸警报", "title_en": "Zombie Alert", "glyph": "🚨", "type": "sticker", "asset": "assets/generated/storybooks/mikey-jj/rewards/stickers/zombie-alert.png" }
+        ]
+      }],
+      "episodes": {
+        "1": {
+          "room": "room.mikey-jj",
+          "items": [
+            {
+              "id": "mikey-jj.b1.helicopter-badge",
+              "title_zh": "屋顶直升机徽章",
+              "title_en": "Rooftop Helicopter Badge",
+              "reward_type": "vehicle",
+              "non_power": true,
+              "slot": "shelf.left",
+              "asset": "assets/generated/storybooks/mikey-jj/rewards/stickers/rooftop-helicopter.png",
+              "story_binding": {
+                "storybook_pages": [2],
+                "scene_ids": ["b1-p02-s03", "b1-p02-s04"],
+                "video": { "start_sec": 23.31, "end_sec": 26.99 },
+                "trigger_terms": ["surrounded", "helicopter"],
+                "source_label_zh": "第 2 页：学校被包围，赶往屋顶直升机",
+                "source_label_en": "Page 2: the school is surrounded; reach the rooftop helicopter",
+                "asset_prompt_id": "mikey-jj-reward-sheet-v1:rooftop-helicopter"
+              }
+            },
+            {
+              "id": "mikey-jj.b1.golden-apple",
+              "title_zh": "金苹果贴纸",
+              "title_en": "Golden Apple Sticker",
+              "reward_type": "food",
+              "non_power": true,
+              "slot": "shelf.center",
+              "asset": "assets/generated/storybooks/mikey-jj/rewards/stickers/golden-apple.png",
+              "story_binding": {
+                "storybook_pages": [3],
+                "scene_ids": ["b1-p03-s02", "b1-p03-s03"],
+                "video": { "start_sec": 33.6, "end_sec": 37.24 },
+                "trigger_terms": ["golden", "heal", "bitten"],
+                "source_label_zh": "第 3 页：金苹果可以帮助被咬伤的人",
+                "source_label_en": "Page 3: golden apples can heal a bitten hero",
+                "asset_prompt_id": "mikey-jj-reward-sheet-v1:golden-apple"
+              }
+            },
+            {
+              "id": "mikey-jj.b1.potion-kit",
+              "title_zh": "治疗药水小套装",
+              "title_en": "Healing Potion Kit",
+              "reward_type": "toy",
+              "non_power": true,
+              "slot": "shelf.right",
+              "asset": "assets/generated/storybooks/mikey-jj/rewards/stickers/healing-potion.png",
+              "story_binding": {
+                "storybook_pages": [4],
+                "scene_ids": ["b1-p04-s01", "b1-p04-s02"],
+                "video": { "start_sec": 47.78, "end_sec": 55.33 },
+                "trigger_terms": ["potion", "weapon", "magic"],
+                "source_label_zh": "第 4 页：药水、武器和魔法",
+                "source_label_en": "Page 4: potion, weapon and magic",
+                "asset_prompt_id": "mikey-jj-reward-sheet-v1:healing-potion"
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

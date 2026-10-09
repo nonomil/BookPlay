@@ -1,0 +1,2820 @@
+{
+ "schema_version": 1,
+ "storybook_id": "mikey-jj_tornado-adventure",
+ "series": "mikey-jj",
+ "book": 5,
+ "series_count": 11,
+ "published_count": 10,
+ "layout": "spread_with_right_caption",
+ "title": {
+  "en": "Tornado Adventure",
+  "zh": "龙卷风避难所"
+ },
+ "source_note": "页图逐页视觉核对；speaker 依据气泡尾部与角色位置标注。字幕以 faster-whisper base.en VAD 词级时间为主，原子句按真实停顿拆分；Godzilla 第9页仅有画面爆炸拟声，显式标记 audio_missing，未伪造人声。源 PDF、MP3 与页图只读。",
+ "sources": {
+  "pdf": "书籍资料库/Mikey & JJ 英文冒险/PDF/Tornado Adventure.pdf",
+  "mp3": "书籍资料库/Mikey & JJ 英文冒险/audio/Tornado Adventure.mp3",
+  "source_video": "书籍资料库/Mikey & JJ 英文冒险/MikeyJJ Audio Books/Tornado Adventure.mp4",
+  "derived_audio": "prj/data/storybooks-mikey-jj/source-audio/tornado-adventure.mp3"
+ },
+ "audio": "assets/mikey-jj/tornado-adventure/audio.mp3",
+ "audio_duration_sec": 159.381,
+ "pages": [
+  {
+   "page_no": 1,
+   "source_page": 1,
+   "image": "assets/mikey-jj/tornado-adventure/pages/p01.webp",
+   "text_en": "Warning! The mega tornado is coming. It will last for one month. A mega tornado? We need a shelter immediately. We have to build a doomsday bunker deep underground. Leave the digging to me. I have the boom-boom blocks.",
+   "start_ms": 560,
+   "end_ms": 16400,
+   "sentences": [
+    {
+     "id": "b5-p01-s01",
+     "text_en": "Warning! The mega tornado is coming. It will last for one month.",
+     "zh": "警告！；龙卷风。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.272,
+      "y": 0.03,
+      "w": 0.388,
+      "h": 0.143,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 560,
+     "end_ms": 4960,
+     "audio": "assets/mikey-jj/tornado-adventure/sentences/page-01-sentence-01.mp3",
+     "words": [
+      {
+       "text": "Warning!",
+       "start_ms": 0,
+       "end_ms": 700
+      },
+      {
+       "text": "The",
+       "start_ms": 1160,
+       "end_ms": 1240
+      },
+      {
+       "text": "mega",
+       "start_ms": 1240,
+       "end_ms": 1460
+      },
+      {
+       "text": "tornado",
+       "start_ms": 1460,
+       "end_ms": 1800
+      },
+      {
+       "text": "is",
+       "start_ms": 1800,
+       "end_ms": 2300
+      },
+      {
+       "text": "coming.",
+       "start_ms": 2300,
+       "end_ms": 2520
+      },
+      {
+       "text": "It",
+       "start_ms": 2920,
+       "end_ms": 3000
+      },
+      {
+       "text": "will",
+       "start_ms": 3000,
+       "end_ms": 3140
+      },
+      {
+       "text": "last",
+       "start_ms": 3140,
+       "end_ms": 3440
+      },
+      {
+       "text": "for",
+       "start_ms": 3440,
+       "end_ms": 3780
+      },
+      {
+       "text": "one",
+       "start_ms": 3780,
+       "end_ms": 4020
+      },
+      {
+       "text": "month.",
+       "start_ms": 4020,
+       "end_ms": 4400
+      }
+     ],
+     "glossary": [
+      {
+       "term": "tornado",
+       "ipa": "ˈtɔːneɪdəʊ",
+       "pos": "N",
+       "zh": "龙卷风"
+      }
+     ]
+    },
+    {
+     "id": "b5-p01-s02",
+     "text_en": "A mega tornado? We need a shelter immediately.",
+     "zh": "龙卷风；避难所。",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.699,
+      "y": 0.038,
+      "w": 0.263,
+      "h": 0.125,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 5840,
+     "end_ms": 8680,
+     "audio": "assets/mikey-jj/tornado-adventure/sentences/page-01-sentence-02.mp3",
+     "words": [
+      {
+       "text": "A",
+       "start_ms": 0,
+       "end_ms": 160
+      },
+      {
+       "text": "mega",
+       "start_ms": 160,
+       "end_ms": 420
+      },
+      {
+       "text": "tornado?",
+       "start_ms": 420,
+       "end_ms": 860
+      },
+      {
+       "text": "We",
+       "start_ms": 1620,
+       "end_ms": 1660
+      },
+      {
+       "text": "need",
+       "start_ms": 1660,
+       "end_ms": 1840
+      },
+      {
+       "text": "a",
+       "start_ms": 1840,
+       "end_ms": 1960
+      },
+      {
+       "text": "shelter",
+       "start_ms": 1960,
+       "end_ms": 2280
+      },
+      {
+       "text": "immediately.",
+       "start_ms": 2280,
+       "end_ms": 2840
+      }
+     ],
+     "glossary": [
+      {
+       "term": "shelter",
+       "ipa": "ˈʃeltə",
+       "pos": "N",
+       "zh": "避难所"
+      }
+     ]
+    },
+    {
+     "id": "b5-p01-s03",
+     "text_en": "We have to build a doomsday bunker deep underground.",
+     "zh": "地堡；地下。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.023,
+      "y": 0.51,
+      "w": 0.266,
+      "h": 0.144,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 9700,
+     "end_ms": 12420,
+     "audio": "assets/mikey-jj/tornado-adventure/sentences/page-01-sentence-03.mp3",
+     "words": [
+      {
+       "text": "We",
+       "start_ms": 0,
+       "end_ms": 460
+      },
+      {
+       "text": "have",
+       "start_ms": 460,
+       "end_ms": 660
+      },
+      {
+       "text": "to",
+       "start_ms": 660,
+       "end_ms": 820
+      },
+      {
+       "text": "build",
+       "start_ms": 820,
+       "end_ms": 1020
+      },
+      {
+       "text": "a",
+       "start_ms": 1020,
+       "end_ms": 1180
+      },
+      {
+       "text": "doomsday",
+       "start_ms": 1180,
+       "end_ms": 1540
+      },
+      {
+       "text": "bunker",
+       "start_ms": 1540,
+       "end_ms": 1960
+      },
+      {
+       "text": "deep",
+       "start_ms": 1960,
+       "end_ms": 2380
+      },
+      {
+       "text": "underground.",
+       "start_ms": 2380,
+       "end_ms": 2720
+      }
+     ],
+     "glossary": [
+      {
+       "term": "underground",
+       "ipa": "ˌʌndəˈɡraʊnd",
+       "pos": "Adv",
+       "zh": "地下"
+      }
+     ]
+    },
+    {
+     "id": "b5-p01-s04",
+     "text_en": "Leave the digging to me. I have the boom-boom blocks.",
+     "zh": "请跟读并理解这句话。",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.697,
+      "y": 0.507,
+      "w": 0.285,
+      "h": 0.149,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 13280,
+     "end_ms": 16400,
+     "audio": "assets/mikey-jj/tornado-adventure/sentences/page-01-sentence-04.mp3",
+     "words": [
+      {
+       "text": "Leave",
+       "start_ms": 0,
+       "end_ms": 340
+      },
+      {
+       "text": "the",
+       "start_ms": 340,
+       "end_ms": 580
+      },
+      {
+       "text": "digging",
+       "start_ms": 580,
+       "end_ms": 840
+      },
+      {
+       "text": "to",
+       "start_ms": 840,
+       "end_ms": 1160
+      },
+      {
+       "text": "me.",
+       "start_ms": 1160,
+       "end_ms": 1380
+      },
+      {
+       "text": "I",
+       "start_ms": 1800,
+       "end_ms": 1880
+      },
+      {
+       "text": "have",
+       "start_ms": 1880,
+       "end_ms": 2040
+      },
+      {
+       "text": "the",
+       "start_ms": 2040,
+       "end_ms": 2240
+      },
+      {
+       "text": "boom",
+       "start_ms": 2240,
+       "end_ms": 2480
+      },
+      {
+       "text": "-boom",
+       "start_ms": 2480,
+       "end_ms": 2920
+      },
+      {
+       "text": "blocks.",
+       "start_ms": 2920,
+       "end_ms": 3120
+      }
+     ],
+     "glossary": []
+    }
+   ],
+   "panel": [
+    0.0,
+    0.492,
+    0.507,
+    1.0
+   ]
+  },
+  {
+   "page_no": 2,
+   "source_page": 2,
+   "image": "assets/mikey-jj/tornado-adventure/pages/p02.webp",
+   "text_en": "Make sure it's deep enough so the house doesn't fall on us. Fire in the hole! A perfect square room. I am an artist. Good job. Now let's furnish it before the storm hits. Kitchen, beds, bathroom. It is perfect.",
+   "start_ms": 18930,
+   "end_ms": 38080,
+   "sentences": [
+    {
+     "id": "b5-p02-s01",
+     "text_en": "Make sure it's deep enough so the house doesn't fall on us.",
+     "zh": "请跟读并理解这句话。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.223,
+      "y": 0.022,
+      "w": 0.2,
+      "h": 0.14,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 18930,
+     "end_ms": 22050,
+     "audio": "assets/mikey-jj/tornado-adventure/sentences/page-02-sentence-01.mp3",
+     "words": [
+      {
+       "text": "Make",
+       "start_ms": 0,
+       "end_ms": 440
+      },
+      {
+       "text": "sure",
+       "start_ms": 440,
+       "end_ms": 740
+      },
+      {
+       "text": "it's",
+       "start_ms": 740,
+       "end_ms": 980
+      },
+      {
+       "text": "deep",
+       "start_ms": 980,
+       "end_ms": 1200
+      },
+      {
+       "text": "enough",
+       "start_ms": 1200,
+       "end_ms": 1460
+      },
+      {
+       "text": "so",
+       "start_ms": 1460,
+       "end_ms": 1700
+      },
+      {
+       "text": "the",
+       "start_ms": 1700,
+       "end_ms": 1820
+      },
+      {
+       "text": "house",
+       "start_ms": 1820,
+       "end_ms": 2080
+      },
+      {
+       "text": "doesn't",
+       "start_ms": 2080,
+       "end_ms": 2500
+      },
+      {
+       "text": "fall",
+       "start_ms": 2500,
+       "end_ms": 2720
+      },
+      {
+       "text": "on",
+       "start_ms": 2720,
+       "end_ms": 2980
+      },
+      {
+       "text": "us.",
+       "start_ms": 2980,
+       "end_ms": 3120
+      }
+     ],
+     "glossary": [
+      {
+       "term": "enough",
+       "ipa": "ɪˈnʌf",
+       "pos": "Adj",
+       "zh": "足够的"
+      },
+      {
+       "term": "house",
+       "ipa": "haʊs",
+       "pos": "N",
+       "zh": "房子"
+      }
+     ]
+    },
+    {
+     "id": "b5-p02-s02",
+     "text_en": "Fire in the hole! A perfect square room. I am an artist.",
+     "zh": "请跟读并理解这句话。",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.463,
+      "y": 0.06,
+      "w": 0.518,
+      "h": 0.483,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 22910,
+     "end_ms": 28010,
+     "audio": "assets/mikey-jj/tornado-adventure/sentences/page-02-sentence-02.mp3",
+     "words": [
+      {
+       "text": "Fire",
+       "start_ms": 0,
+       "end_ms": 520
+      },
+      {
+       "text": "in",
+       "start_ms": 520,
+       "end_ms": 760
+      },
+      {
+       "text": "the",
+       "start_ms": 760,
+       "end_ms": 880
+      },
+      {
+       "text": "hole!",
+       "start_ms": 880,
+       "end_ms": 1120
+      },
+      {
+       "text": "A",
+       "start_ms": 2320,
+       "end_ms": 2560
+      },
+      {
+       "text": "perfect",
+       "start_ms": 2560,
+       "end_ms": 2920
+      },
+      {
+       "text": "square",
+       "start_ms": 2920,
+       "end_ms": 3340
+      },
+      {
+       "text": "room.",
+       "start_ms": 3340,
+       "end_ms": 3800
+      },
+      {
+       "text": "I",
+       "start_ms": 4300,
+       "end_ms": 4460
+      },
+      {
+       "text": "am",
+       "start_ms": 4460,
+       "end_ms": 4640
+      },
+      {
+       "text": "an",
+       "start_ms": 4640,
+       "end_ms": 4740
+      },
+      {
+       "text": "artist.",
+       "start_ms": 4740,
+       "end_ms": 5100
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b5-p02-s03",
+     "text_en": "Good job. Now let's furnish it before the storm hits.",
+     "zh": "风暴。",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.463,
+      "y": 0.06,
+      "w": 0.518,
+      "h": 0.483,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 28770,
+     "end_ms": 32410,
+     "audio": "assets/mikey-jj/tornado-adventure/sentences/page-02-sentence-03.mp3",
+     "words": [
+      {
+       "text": "Good",
+       "start_ms": 0,
+       "end_ms": 640
+      },
+      {
+       "text": "job.",
+       "start_ms": 640,
+       "end_ms": 1040
+      },
+      {
+       "text": "Now",
+       "start_ms": 1500,
+       "end_ms": 1580
+      },
+      {
+       "text": "let's",
+       "start_ms": 1580,
+       "end_ms": 1920
+      },
+      {
+       "text": "furnish",
+       "start_ms": 1920,
+       "end_ms": 2240
+      },
+      {
+       "text": "it",
+       "start_ms": 2240,
+       "end_ms": 2480
+      },
+      {
+       "text": "before",
+       "start_ms": 2480,
+       "end_ms": 2720
+      },
+      {
+       "text": "the",
+       "start_ms": 2720,
+       "end_ms": 2940
+      },
+      {
+       "text": "storm",
+       "start_ms": 2940,
+       "end_ms": 3180
+      },
+      {
+       "text": "hits.",
+       "start_ms": 3180,
+       "end_ms": 3640
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b5-p02-s04",
+     "text_en": "Kitchen, beds, bathroom. It is perfect.",
+     "zh": "请跟读并理解这句话。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.129,
+      "y": 0.661,
+      "w": 0.262,
+      "h": 0.113,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 34840,
+     "end_ms": 38080,
+     "audio": "assets/mikey-jj/tornado-adventure/sentences/page-02-sentence-04.mp3",
+     "words": [
+      {
+       "text": "Kitchen,",
+       "start_ms": 0,
+       "end_ms": 640
+      },
+      {
+       "text": "beds,",
+       "start_ms": 940,
+       "end_ms": 1180
+      },
+      {
+       "text": "bathroom.",
+       "start_ms": 2160,
+       "end_ms": 2160
+      },
+      {
+       "text": "It",
+       "start_ms": 2640,
+       "end_ms": 2720
+      },
+      {
+       "text": "is",
+       "start_ms": 2720,
+       "end_ms": 2820
+      },
+      {
+       "text": "perfect.",
+       "start_ms": 2820,
+       "end_ms": 3240
+      }
+     ],
+     "glossary": []
+    }
+   ],
+   "panel": [
+    0.0,
+    0.575,
+    0.585,
+    1.0
+   ]
+  },
+  {
+   "page_no": 3,
+   "source_page": 3,
+   "image": "assets/mikey-jj/tornado-adventure/pages/p03.webp",
+   "text_en": "And most importantly, the gaming corner. We can't survive a month without video games. Hurry everyone. Get inside. The storm is starting. Don't push. There is room for everyone.",
+   "start_ms": 38920,
+   "end_ms": 52600,
+   "sentences": [
+    {
+     "id": "b5-p03-s01",
+     "text_en": "And most importantly, the gaming corner. We can't survive a month without video games.",
+     "zh": "请跟读并理解这句话。",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.616,
+      "y": 0.029,
+      "w": 0.349,
+      "h": 0.138,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 38920,
+     "end_ms": 44960,
+     "audio": "assets/mikey-jj/tornado-adventure/sentences/page-03-sentence-01.mp3",
+     "words": [
+      {
+       "text": "And",
+       "start_ms": 0,
+       "end_ms": 280
+      },
+      {
+       "text": "most",
+       "start_ms": 280,
+       "end_ms": 500
+      },
+      {
+       "text": "importantly,",
+       "start_ms": 500,
+       "end_ms": 1300
+      },
+      {
+       "text": "the",
+       "start_ms": 1800,
+       "end_ms": 1920
+      },
+      {
+       "text": "gaming",
+       "start_ms": 1920,
+       "end_ms": 2300
+      },
+      {
+       "text": "corner.",
+       "start_ms": 2300,
+       "end_ms": 2780
+      },
+      {
+       "text": "We",
+       "start_ms": 3260,
+       "end_ms": 3420
+      },
+      {
+       "text": "can't",
+       "start_ms": 3420,
+       "end_ms": 3880
+      },
+      {
+       "text": "survive",
+       "start_ms": 3880,
+       "end_ms": 4140
+      },
+      {
+       "text": "a",
+       "start_ms": 4140,
+       "end_ms": 4480
+      },
+      {
+       "text": "month",
+       "start_ms": 4480,
+       "end_ms": 4740
+      },
+      {
+       "text": "without",
+       "start_ms": 4740,
+       "end_ms": 5120
+      },
+      {
+       "text": "video",
+       "start_ms": 5120,
+       "end_ms": 5520
+      },
+      {
+       "text": "games.",
+       "start_ms": 5520,
+       "end_ms": 6040
+      }
+     ],
+     "glossary": [
+      {
+       "term": "importantly",
+       "ipa": "ɪmˈpɔːtəntli",
+       "pos": "Adv",
+       "zh": "重要的是"
+      },
+      {
+       "term": "gaming",
+       "ipa": "ˈɡeɪmɪŋ",
+       "pos": "N",
+       "zh": "游戏"
+      }
+     ]
+    },
+    {
+     "id": "b5-p03-s02",
+     "text_en": "Hurry everyone. Get inside. The storm is starting.",
+     "zh": "风暴。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.023,
+      "y": 0.51,
+      "w": 0.266,
+      "h": 0.144,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 46020,
+     "end_ms": 49140,
+     "audio": "assets/mikey-jj/tornado-adventure/sentences/page-03-sentence-02.mp3",
+     "words": [
+      {
+       "text": "Hurry",
+       "start_ms": 0,
+       "end_ms": 520
+      },
+      {
+       "text": "everyone.",
+       "start_ms": 520,
+       "end_ms": 700
+      },
+      {
+       "text": "Get",
+       "start_ms": 1220,
+       "end_ms": 1320
+      },
+      {
+       "text": "inside.",
+       "start_ms": 1320,
+       "end_ms": 1560
+      },
+      {
+       "text": "The",
+       "start_ms": 2180,
+       "end_ms": 2240
+      },
+      {
+       "text": "storm",
+       "start_ms": 2240,
+       "end_ms": 2560
+      },
+      {
+       "text": "is",
+       "start_ms": 2560,
+       "end_ms": 2760
+      },
+      {
+       "text": "starting.",
+       "start_ms": 2760,
+       "end_ms": 3120
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b5-p03-s03",
+     "text_en": "Don't push. There is room for everyone.",
+     "zh": "请跟读并理解这句话。",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.733,
+      "y": 0.52,
+      "w": 0.234,
+      "h": 0.123,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 49700,
+     "end_ms": 52600,
+     "audio": "assets/mikey-jj/tornado-adventure/sentences/page-03-sentence-03.mp3",
+     "words": [
+      {
+       "text": "Don't",
+       "start_ms": 0,
+       "end_ms": 520
+      },
+      {
+       "text": "push.",
+       "start_ms": 520,
+       "end_ms": 780
+      },
+      {
+       "text": "There",
+       "start_ms": 1460,
+       "end_ms": 1520
+      },
+      {
+       "text": "is",
+       "start_ms": 1520,
+       "end_ms": 1720
+      },
+      {
+       "text": "room",
+       "start_ms": 1720,
+       "end_ms": 2020
+      },
+      {
+       "text": "for",
+       "start_ms": 2020,
+       "end_ms": 2360
+      },
+      {
+       "text": "everyone.",
+       "start_ms": 2360,
+       "end_ms": 2900
+      }
+     ],
+     "glossary": []
+    }
+   ],
+   "panel": [
+    0.0,
+    0.492,
+    0.507,
+    1.0
+   ]
+  },
+  {
+   "page_no": 4,
+   "source_page": 4,
+   "image": "assets/mikey-jj/tornado-adventure/pages/p04.webp",
+   "text_en": "We are sealed in. Now we wait for the storm to pass.",
+   "start_ms": 55580,
+   "end_ms": 58920,
+   "sentences": [
+    {
+     "id": "b5-p04-s01",
+     "text_en": "We are sealed in. Now we wait for the storm to pass.",
+     "zh": "风暴。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.681,
+      "y": 0.027,
+      "w": 0.285,
+      "h": 0.123,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 55580,
+     "end_ms": 58920,
+     "audio": "assets/mikey-jj/tornado-adventure/sentences/page-04-sentence-01.mp3",
+     "words": [
+      {
+       "text": "We",
+       "start_ms": 0,
+       "end_ms": 320
+      },
+      {
+       "text": "are",
+       "start_ms": 320,
+       "end_ms": 520
+      },
+      {
+       "text": "sealed",
+       "start_ms": 520,
+       "end_ms": 840
+      },
+      {
+       "text": "in.",
+       "start_ms": 840,
+       "end_ms": 1280
+      },
+      {
+       "text": "Now",
+       "start_ms": 1600,
+       "end_ms": 1780
+      },
+      {
+       "text": "we",
+       "start_ms": 1780,
+       "end_ms": 2020
+      },
+      {
+       "text": "wait",
+       "start_ms": 2020,
+       "end_ms": 2240
+      },
+      {
+       "text": "for",
+       "start_ms": 2240,
+       "end_ms": 2440
+      },
+      {
+       "text": "the",
+       "start_ms": 2440,
+       "end_ms": 2560
+      },
+      {
+       "text": "storm",
+       "start_ms": 2560,
+       "end_ms": 2840
+      },
+      {
+       "text": "to",
+       "start_ms": 2840,
+       "end_ms": 3060
+      },
+      {
+       "text": "pass.",
+       "start_ms": 3060,
+       "end_ms": 3340
+      }
+     ],
+     "glossary": [
+      {
+       "term": "sealed",
+       "ipa": "siːld",
+       "pos": "Adj",
+       "zh": "密封的"
+      },
+      {
+       "term": "storm",
+       "ipa": "stɔːm",
+       "pos": "N",
+       "zh": "暴风雨"
+      }
+     ]
+    }
+   ],
+   "panel": [
+    0.0,
+    0.492,
+    0.507,
+    1.0
+   ]
+  },
+  {
+   "page_no": 5,
+   "source_page": 5,
+   "image": "assets/mikey-jj/tornado-adventure/pages/p05.webp",
+   "text_en": "Mikey, the fridge is empty. We had enough food for a month. I got nervous. When I get nervous, I eat. We are going to starve. We have to go to the surface and find the village food pantry. Outside? In the tornado? But I just washed my shell.",
+   "start_ms": 66290,
+   "end_ms": 84610,
+   "sentences": [
+    {
+     "id": "b5-p05-s01",
+     "text_en": "Mikey, the fridge is empty. We had enough food for a month.",
+     "zh": "冰箱；空的。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.383,
+      "y": 0.025,
+      "w": 0.277,
+      "h": 0.134,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 66290,
+     "end_ms": 69770,
+     "audio": "assets/mikey-jj/tornado-adventure/sentences/page-05-sentence-01.mp3",
+     "words": [
+      {
+       "text": "Mikey,",
+       "start_ms": 0,
+       "end_ms": 540
+      },
+      {
+       "text": "the",
+       "start_ms": 740,
+       "end_ms": 900
+      },
+      {
+       "text": "fridge",
+       "start_ms": 900,
+       "end_ms": 1140
+      },
+      {
+       "text": "is",
+       "start_ms": 1140,
+       "end_ms": 1420
+      },
+      {
+       "text": "empty.",
+       "start_ms": 1420,
+       "end_ms": 1760
+      },
+      {
+       "text": "We",
+       "start_ms": 2100,
+       "end_ms": 2180
+      },
+      {
+       "text": "had",
+       "start_ms": 2180,
+       "end_ms": 2380
+      },
+      {
+       "text": "enough",
+       "start_ms": 2380,
+       "end_ms": 2580
+      },
+      {
+       "text": "food",
+       "start_ms": 2580,
+       "end_ms": 2880
+      },
+      {
+       "text": "for",
+       "start_ms": 2880,
+       "end_ms": 3100
+      },
+      {
+       "text": "a",
+       "start_ms": 3100,
+       "end_ms": 3240
+      },
+      {
+       "text": "month.",
+       "start_ms": 3240,
+       "end_ms": 3480
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b5-p05-s02",
+     "text_en": "I got nervous. When I get nervous, I eat.",
+     "zh": "紧张。",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.729,
+      "y": 0.031,
+      "w": 0.223,
+      "h": 0.111,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 70410,
+     "end_ms": 73670,
+     "audio": "assets/mikey-jj/tornado-adventure/sentences/page-05-sentence-02.mp3",
+     "words": [
+      {
+       "text": "I",
+       "start_ms": 0,
+       "end_ms": 340
+      },
+      {
+       "text": "got",
+       "start_ms": 340,
+       "end_ms": 520
+      },
+      {
+       "text": "nervous.",
+       "start_ms": 520,
+       "end_ms": 960
+      },
+      {
+       "text": "When",
+       "start_ms": 1620,
+       "end_ms": 1780
+      },
+      {
+       "text": "I",
+       "start_ms": 1780,
+       "end_ms": 1960
+      },
+      {
+       "text": "get",
+       "start_ms": 1960,
+       "end_ms": 2140
+      },
+      {
+       "text": "nervous,",
+       "start_ms": 2140,
+       "end_ms": 2540
+      },
+      {
+       "text": "I",
+       "start_ms": 2560,
+       "end_ms": 3020
+      },
+      {
+       "text": "eat.",
+       "start_ms": 3020,
+       "end_ms": 3260
+      }
+     ],
+     "glossary": [
+      {
+       "term": "nervous",
+       "ipa": "ˈnɜːvəs",
+       "pos": "Adj",
+       "zh": "紧张的"
+      }
+     ]
+    },
+    {
+     "id": "b5-p05-s03",
+     "text_en": "We are going to starve. We have to go to the surface and find the village food pantry.",
+     "zh": "挨饿；地面；食品柜。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.024,
+      "y": 0.511,
+      "w": 0.27,
+      "h": 0.154,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 74890,
+     "end_ms": 79990,
+     "audio": "assets/mikey-jj/tornado-adventure/sentences/page-05-sentence-03.mp3",
+     "words": [
+      {
+       "text": "We",
+       "start_ms": 0,
+       "end_ms": 540
+      },
+      {
+       "text": "are",
+       "start_ms": 540,
+       "end_ms": 700
+      },
+      {
+       "text": "going",
+       "start_ms": 700,
+       "end_ms": 940
+      },
+      {
+       "text": "to",
+       "start_ms": 940,
+       "end_ms": 1100
+      },
+      {
+       "text": "starve.",
+       "start_ms": 1100,
+       "end_ms": 1460
+      },
+      {
+       "text": "We",
+       "start_ms": 1920,
+       "end_ms": 2040
+      },
+      {
+       "text": "have",
+       "start_ms": 2040,
+       "end_ms": 2220
+      },
+      {
+       "text": "to",
+       "start_ms": 2220,
+       "end_ms": 2420
+      },
+      {
+       "text": "go",
+       "start_ms": 2420,
+       "end_ms": 2580
+      },
+      {
+       "text": "to",
+       "start_ms": 2580,
+       "end_ms": 2700
+      },
+      {
+       "text": "the",
+       "start_ms": 2700,
+       "end_ms": 2780
+      },
+      {
+       "text": "surface",
+       "start_ms": 2780,
+       "end_ms": 3140
+      },
+      {
+       "text": "and",
+       "start_ms": 3140,
+       "end_ms": 3480
+      },
+      {
+       "text": "find",
+       "start_ms": 3480,
+       "end_ms": 3760
+      },
+      {
+       "text": "the",
+       "start_ms": 3760,
+       "end_ms": 3940
+      },
+      {
+       "text": "village",
+       "start_ms": 3940,
+       "end_ms": 4220
+      },
+      {
+       "text": "food",
+       "start_ms": 4220,
+       "end_ms": 4520
+      },
+      {
+       "text": "pantry.",
+       "start_ms": 4520,
+       "end_ms": 5100
+      }
+     ],
+     "glossary": [
+      {
+       "term": "starve",
+       "ipa": "stɑːv",
+       "pos": "V",
+       "zh": "挨饿"
+      }
+     ]
+    },
+    {
+     "id": "b5-p05-s04",
+     "text_en": "Outside? In the tornado? But I just washed my shell.",
+     "zh": "龙卷风；龟壳。",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.729,
+      "y": 0.512,
+      "w": 0.246,
+      "h": 0.144,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 80490,
+     "end_ms": 84610,
+     "audio": "assets/mikey-jj/tornado-adventure/sentences/page-05-sentence-04.mp3",
+     "words": [
+      {
+       "text": "Outside?",
+       "start_ms": 0,
+       "end_ms": 540
+      },
+      {
+       "text": "In",
+       "start_ms": 1240,
+       "end_ms": 1260
+      },
+      {
+       "text": "the",
+       "start_ms": 1260,
+       "end_ms": 1400
+      },
+      {
+       "text": "tornado?",
+       "start_ms": 1400,
+       "end_ms": 1640
+      },
+      {
+       "text": "But",
+       "start_ms": 2680,
+       "end_ms": 2740
+      },
+      {
+       "text": "I",
+       "start_ms": 2740,
+       "end_ms": 2900
+      },
+      {
+       "text": "just",
+       "start_ms": 2900,
+       "end_ms": 3100
+      },
+      {
+       "text": "washed",
+       "start_ms": 3100,
+       "end_ms": 3400
+      },
+      {
+       "text": "my",
+       "start_ms": 3400,
+       "end_ms": 3780
+      },
+      {
+       "text": "shell.",
+       "start_ms": 3780,
+       "end_ms": 4120
+      }
+     ],
+     "glossary": [
+      {
+       "term": "tornado",
+       "ipa": "ˈtɔːneɪdəʊ",
+       "pos": "N",
+       "zh": "龙卷风"
+      }
+     ]
+    }
+   ],
+   "panel": [
+    0.0,
+    0.492,
+    0.507,
+    1.0
+   ]
+  },
+  {
+   "page_no": 6,
+   "source_page": 6,
+   "image": "assets/mikey-jj/tornado-adventure/pages/p06.webp",
+   "text_en": "Oh no. The village is destroyed. It looks like my room after I clean it. Stay low, Mikey. Don't let the wind grab you.",
+   "start_ms": 87470,
+   "end_ms": 96950,
+   "sentences": [
+    {
+     "id": "b5-p06-s01",
+     "text_en": "Oh no. The village is destroyed.",
+     "zh": "被毁了；摧毁。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.141,
+      "y": 0.315,
+      "w": 0.222,
+      "h": 0.121,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 87470,
+     "end_ms": 89510,
+     "audio": "assets/mikey-jj/tornado-adventure/sentences/page-06-sentence-01.mp3",
+     "words": [
+      {
+       "text": "Oh",
+       "start_ms": 0,
+       "end_ms": 240
+      },
+      {
+       "text": "no.",
+       "start_ms": 240,
+       "end_ms": 480
+      },
+      {
+       "text": "The",
+       "start_ms": 1040,
+       "end_ms": 1100
+      },
+      {
+       "text": "village",
+       "start_ms": 1100,
+       "end_ms": 1420
+      },
+      {
+       "text": "is",
+       "start_ms": 1420,
+       "end_ms": 1620
+      },
+      {
+       "text": "destroyed.",
+       "start_ms": 1620,
+       "end_ms": 2040
+      }
+     ],
+     "glossary": [
+      {
+       "term": "village",
+       "ipa": "ˈvɪlɪdʒ",
+       "pos": "N",
+       "zh": "村庄"
+      },
+      {
+       "term": "destroyed",
+       "ipa": "dɪˈstrɔɪd",
+       "pos": "V",
+       "zh": "被摧毁"
+      }
+     ]
+    },
+    {
+     "id": "b5-p06-s02",
+     "text_en": "It looks like my room after I clean it.",
+     "zh": "请跟读并理解这句话。",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.141,
+      "y": 0.315,
+      "w": 0.222,
+      "h": 0.121,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 90510,
+     "end_ms": 93050,
+     "audio": "assets/mikey-jj/tornado-adventure/sentences/page-06-sentence-02.mp3",
+     "words": [
+      {
+       "text": "It",
+       "start_ms": 0,
+       "end_ms": 300
+      },
+      {
+       "text": "looks",
+       "start_ms": 300,
+       "end_ms": 500
+      },
+      {
+       "text": "like",
+       "start_ms": 500,
+       "end_ms": 800
+      },
+      {
+       "text": "my",
+       "start_ms": 800,
+       "end_ms": 1000
+      },
+      {
+       "text": "room",
+       "start_ms": 1000,
+       "end_ms": 1340
+      },
+      {
+       "text": "after",
+       "start_ms": 1340,
+       "end_ms": 1800
+      },
+      {
+       "text": "I",
+       "start_ms": 1800,
+       "end_ms": 2000
+      },
+      {
+       "text": "clean",
+       "start_ms": 2000,
+       "end_ms": 2260
+      },
+      {
+       "text": "it.",
+       "start_ms": 2260,
+       "end_ms": 2540
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b5-p06-s03",
+     "text_en": "Stay low, Mikey. Don't let the wind grab you.",
+     "zh": "风。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.141,
+      "y": 0.315,
+      "w": 0.222,
+      "h": 0.121,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 94010,
+     "end_ms": 96950,
+     "audio": "assets/mikey-jj/tornado-adventure/sentences/page-06-sentence-03.mp3",
+     "words": [
+      {
+       "text": "Stay",
+       "start_ms": 0,
+       "end_ms": 340
+      },
+      {
+       "text": "low,",
+       "start_ms": 340,
+       "end_ms": 680
+      },
+      {
+       "text": "Mikey.",
+       "start_ms": 840,
+       "end_ms": 1260
+      },
+      {
+       "text": "Don't",
+       "start_ms": 1620,
+       "end_ms": 1760
+      },
+      {
+       "text": "let",
+       "start_ms": 1760,
+       "end_ms": 1920
+      },
+      {
+       "text": "the",
+       "start_ms": 1920,
+       "end_ms": 2060
+      },
+      {
+       "text": "wind",
+       "start_ms": 2060,
+       "end_ms": 2240
+      },
+      {
+       "text": "grab",
+       "start_ms": 2240,
+       "end_ms": 2600
+      },
+      {
+       "text": "you.",
+       "start_ms": 2600,
+       "end_ms": 2940
+      }
+     ],
+     "glossary": []
+    }
+   ],
+   "panel": [
+    0.0,
+    0.492,
+    0.507,
+    1.0
+   ]
+  },
+  {
+   "page_no": 7,
+   "source_page": 7,
+   "image": "assets/mikey-jj/tornado-adventure/pages/p07.webp",
+   "text_en": "Ow! Focus. The food pantry is that obsidian building over there. Ha! My shell is storm proof. Keep moving. We are almost there.",
+   "start_ms": 97270,
+   "end_ms": 112280,
+   "sentences": [
+    {
+     "id": "b5-p07-s01",
+     "text_en": "Ow! Focus. The food pantry is that obsidian building over there.",
+     "zh": "食品柜；黑曜石。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.336,
+      "y": 0.03,
+      "w": 0.277,
+      "h": 0.096,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 97270,
+     "end_ms": 105740,
+     "audio": "assets/mikey-jj/tornado-adventure/sentences/page-07-sentence-01.mp3",
+     "words": [
+      {
+       "text": "Ow!",
+       "start_ms": 0,
+       "end_ms": 420
+      },
+      {
+       "text": "Focus.",
+       "start_ms": 4930,
+       "end_ms": 5490
+      },
+      {
+       "text": "The",
+       "start_ms": 6030,
+       "end_ms": 6110
+      },
+      {
+       "text": "food",
+       "start_ms": 6110,
+       "end_ms": 6330
+      },
+      {
+       "text": "pantry",
+       "start_ms": 6330,
+       "end_ms": 6810
+      },
+      {
+       "text": "is",
+       "start_ms": 6810,
+       "end_ms": 6970
+      },
+      {
+       "text": "that",
+       "start_ms": 6970,
+       "end_ms": 7130
+      },
+      {
+       "text": "obsidian",
+       "start_ms": 7130,
+       "end_ms": 7590
+      },
+      {
+       "text": "building",
+       "start_ms": 7590,
+       "end_ms": 7850
+      },
+      {
+       "text": "over",
+       "start_ms": 7850,
+       "end_ms": 8230
+      },
+      {
+       "text": "there.",
+       "start_ms": 8230,
+       "end_ms": 8470
+      }
+     ],
+     "glossary": [
+      {
+       "term": "focus",
+       "ipa": "ˈfəʊkəs",
+       "pos": "V",
+       "zh": "专注"
+      },
+      {
+       "term": "pantry",
+       "ipa": "ˈpæntri",
+       "pos": "N",
+       "zh": "食品储藏室"
+      }
+     ]
+    },
+    {
+     "id": "b5-p07-s02",
+     "text_en": "Ha! My shell is storm proof.",
+     "zh": "风暴；龟壳。",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.265,
+      "y": 0.331,
+      "w": 0.243,
+      "h": 0.111,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 106640,
+     "end_ms": 109120,
+     "audio": "assets/mikey-jj/tornado-adventure/sentences/page-07-sentence-02.mp3",
+     "words": [
+      {
+       "text": "Ha!",
+       "start_ms": 0,
+       "end_ms": 620
+      },
+      {
+       "text": "My",
+       "start_ms": 920,
+       "end_ms": 1100
+      },
+      {
+       "text": "shell",
+       "start_ms": 1100,
+       "end_ms": 1420
+      },
+      {
+       "text": "is",
+       "start_ms": 1420,
+       "end_ms": 1720
+      },
+      {
+       "text": "storm",
+       "start_ms": 1720,
+       "end_ms": 2080
+      },
+      {
+       "text": "proof.",
+       "start_ms": 2080,
+       "end_ms": 2480
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b5-p07-s03",
+     "text_en": "Keep moving. We are almost there.",
+     "zh": "请跟读并理解这句话。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.265,
+      "y": 0.331,
+      "w": 0.243,
+      "h": 0.111,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 109800,
+     "end_ms": 112280,
+     "audio": "assets/mikey-jj/tornado-adventure/sentences/page-07-sentence-03.mp3",
+     "words": [
+      {
+       "text": "Keep",
+       "start_ms": 0,
+       "end_ms": 400
+      },
+      {
+       "text": "moving.",
+       "start_ms": 400,
+       "end_ms": 700
+      },
+      {
+       "text": "We",
+       "start_ms": 1300,
+       "end_ms": 1400
+      },
+      {
+       "text": "are",
+       "start_ms": 1400,
+       "end_ms": 1560
+      },
+      {
+       "text": "almost",
+       "start_ms": 1560,
+       "end_ms": 2040
+      },
+      {
+       "text": "there.",
+       "start_ms": 2040,
+       "end_ms": 2480
+      }
+     ],
+     "glossary": []
+    }
+   ],
+   "panel": [
+    0.0,
+    0.492,
+    0.507,
+    1.0
+   ]
+  },
+  {
+   "page_no": 8,
+   "source_page": 8,
+   "image": "assets/mikey-jj/tornado-adventure/pages/p08.webp",
+   "text_en": "The food pantry is made of obsidian. It survived the storm. Grab everything we can carry. I got the potatoes and the rotten flesh. Wait. You. Not the rotten flesh.",
+   "start_ms": 115040,
+   "end_ms": 131070,
+   "sentences": [
+    {
+     "id": "b5-p08-s01",
+     "text_en": "The food pantry is made of obsidian. It survived the storm.",
+     "zh": "风暴；食品柜；黑曜石。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.421,
+      "y": 0.029,
+      "w": 0.316,
+      "h": 0.153,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 115040,
+     "end_ms": 118560,
+     "audio": "assets/mikey-jj/tornado-adventure/sentences/page-08-sentence-01.mp3",
+     "words": [
+      {
+       "text": "The",
+       "start_ms": 0,
+       "end_ms": 100
+      },
+      {
+       "text": "food",
+       "start_ms": 100,
+       "end_ms": 360
+      },
+      {
+       "text": "pantry",
+       "start_ms": 360,
+       "end_ms": 960
+      },
+      {
+       "text": "is",
+       "start_ms": 960,
+       "end_ms": 1140
+      },
+      {
+       "text": "made",
+       "start_ms": 1140,
+       "end_ms": 1340
+      },
+      {
+       "text": "of",
+       "start_ms": 1340,
+       "end_ms": 1500
+      },
+      {
+       "text": "obsidian.",
+       "start_ms": 1500,
+       "end_ms": 2000
+      },
+      {
+       "text": "It",
+       "start_ms": 2300,
+       "end_ms": 2380
+      },
+      {
+       "text": "survived",
+       "start_ms": 2380,
+       "end_ms": 2720
+      },
+      {
+       "text": "the",
+       "start_ms": 2720,
+       "end_ms": 3160
+      },
+      {
+       "text": "storm.",
+       "start_ms": 3160,
+       "end_ms": 3520
+      }
+     ],
+     "glossary": [
+      {
+       "term": "pantry",
+       "ipa": "ˈpæntri",
+       "pos": "N",
+       "zh": "食品柜"
+      },
+      {
+       "term": "obsidian",
+       "ipa": "əbˈsɪdiən",
+       "pos": "N",
+       "zh": "黑曜石"
+      }
+     ]
+    },
+    {
+     "id": "b5-p08-s02",
+     "text_en": "Grab everything we can carry.",
+     "zh": "请跟读并理解这句话。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.755,
+      "y": 0.118,
+      "w": 0.209,
+      "h": 0.099,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 123010,
+     "end_ms": 124490,
+     "audio": "assets/mikey-jj/tornado-adventure/sentences/page-08-sentence-02.mp3",
+     "words": [
+      {
+       "text": "Grab",
+       "start_ms": 0,
+       "end_ms": 160
+      },
+      {
+       "text": "everything",
+       "start_ms": 160,
+       "end_ms": 560
+      },
+      {
+       "text": "we",
+       "start_ms": 560,
+       "end_ms": 920
+      },
+      {
+       "text": "can",
+       "start_ms": 920,
+       "end_ms": 1100
+      },
+      {
+       "text": "carry.",
+       "start_ms": 1100,
+       "end_ms": 1480
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b5-p08-s03",
+     "text_en": "I got the potatoes and the rotten flesh.",
+     "zh": "土豆；腐肉；腐烂的。",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.056,
+      "y": 0.519,
+      "w": 0.246,
+      "h": 0.121,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 125050,
+     "end_ms": 127970,
+     "audio": "assets/mikey-jj/tornado-adventure/sentences/page-08-sentence-03.mp3",
+     "words": [
+      {
+       "text": "I",
+       "start_ms": 0,
+       "end_ms": 540
+      },
+      {
+       "text": "got",
+       "start_ms": 540,
+       "end_ms": 720
+      },
+      {
+       "text": "the",
+       "start_ms": 720,
+       "end_ms": 900
+      },
+      {
+       "text": "potatoes",
+       "start_ms": 900,
+       "end_ms": 1180
+      },
+      {
+       "text": "and",
+       "start_ms": 1180,
+       "end_ms": 2120
+      },
+      {
+       "text": "the",
+       "start_ms": 2120,
+       "end_ms": 2300
+      },
+      {
+       "text": "rotten",
+       "start_ms": 2300,
+       "end_ms": 2540
+      },
+      {
+       "text": "flesh.",
+       "start_ms": 2540,
+       "end_ms": 2920
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b5-p08-s04",
+     "text_en": "Wait. You. Not the rotten flesh.",
+     "zh": "腐肉；腐烂的。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.056,
+      "y": 0.519,
+      "w": 0.246,
+      "h": 0.121,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 128750,
+     "end_ms": 131070,
+     "audio": "assets/mikey-jj/tornado-adventure/sentences/page-08-sentence-04.mp3",
+     "words": [
+      {
+       "text": "Wait.",
+       "start_ms": 0,
+       "end_ms": 220
+      },
+      {
+       "text": "You.",
+       "start_ms": 900,
+       "end_ms": 900
+      },
+      {
+       "text": "Not",
+       "start_ms": 1360,
+       "end_ms": 1440
+      },
+      {
+       "text": "the",
+       "start_ms": 1440,
+       "end_ms": 1680
+      },
+      {
+       "text": "rotten",
+       "start_ms": 1680,
+       "end_ms": 1940
+      },
+      {
+       "text": "flesh.",
+       "start_ms": 1940,
+       "end_ms": 2320
+      }
+     ],
+     "glossary": []
+    }
+   ],
+   "panel": [
+    0.0,
+    0.492,
+    0.507,
+    1.0
+   ]
+  },
+  {
+   "page_no": 9,
+   "source_page": 9,
+   "image": "assets/mikey-jj/tornado-adventure/pages/p09.webp",
+   "text_en": "On Mikey, it's right behind us. My short turtle legs are moving as fast as they can. Get in. Whoa.",
+   "start_ms": 131070,
+   "end_ms": 143040,
+   "sentences": [
+    {
+     "id": "b5-p09-s01",
+     "text_en": "On Mikey, it's right behind us.",
+     "zh": "请跟读并理解这句话。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.467,
+      "y": 0.091,
+      "w": 0.257,
+      "h": 0.107,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 131070,
+     "end_ms": 136180,
+     "audio": "assets/mikey-jj/tornado-adventure/sentences/page-09-sentence-01.mp3",
+     "words": [
+      {
+       "text": "On",
+       "start_ms": 0,
+       "end_ms": 1100
+      },
+      {
+       "text": "Mikey,",
+       "start_ms": 3370,
+       "end_ms": 3850
+      },
+      {
+       "text": "it's",
+       "start_ms": 4070,
+       "end_ms": 4250
+      },
+      {
+       "text": "right",
+       "start_ms": 4250,
+       "end_ms": 4450
+      },
+      {
+       "text": "behind",
+       "start_ms": 4450,
+       "end_ms": 4830
+      },
+      {
+       "text": "us.",
+       "start_ms": 4830,
+       "end_ms": 5110
+      }
+     ],
+     "glossary": [
+      {
+       "term": "mikey",
+       "ipa": "ˈmaɪki",
+       "pos": "N",
+       "zh": "Mikey（人名）"
+      },
+      {
+       "term": "right",
+       "ipa": "raɪt",
+       "pos": "Adj",
+       "zh": "对的"
+      }
+     ]
+    },
+    {
+     "id": "b5-p09-s02",
+     "text_en": "My short turtle legs are moving as fast as they can.",
+     "zh": "乌龟腿。",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.732,
+      "y": 0.067,
+      "w": 0.25,
+      "h": 0.149,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 136780,
+     "end_ms": 140140,
+     "audio": "assets/mikey-jj/tornado-adventure/sentences/page-09-sentence-02.mp3",
+     "words": [
+      {
+       "text": "My",
+       "start_ms": 0,
+       "end_ms": 360
+      },
+      {
+       "text": "short",
+       "start_ms": 360,
+       "end_ms": 680
+      },
+      {
+       "text": "turtle",
+       "start_ms": 680,
+       "end_ms": 1000
+      },
+      {
+       "text": "legs",
+       "start_ms": 1000,
+       "end_ms": 1360
+      },
+      {
+       "text": "are",
+       "start_ms": 1360,
+       "end_ms": 1600
+      },
+      {
+       "text": "moving",
+       "start_ms": 1600,
+       "end_ms": 1820
+      },
+      {
+       "text": "as",
+       "start_ms": 1820,
+       "end_ms": 2080
+      },
+      {
+       "text": "fast",
+       "start_ms": 2080,
+       "end_ms": 2360
+      },
+      {
+       "text": "as",
+       "start_ms": 2360,
+       "end_ms": 2720
+      },
+      {
+       "text": "they",
+       "start_ms": 2720,
+       "end_ms": 2900
+      },
+      {
+       "text": "can.",
+       "start_ms": 2900,
+       "end_ms": 3360
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b5-p09-s03",
+     "text_en": "Get in.",
+     "zh": "请跟读并理解这句话。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.747,
+      "y": 0.529,
+      "w": 0.181,
+      "h": 0.095,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 140860,
+     "end_ms": 141700,
+     "audio": "assets/mikey-jj/tornado-adventure/sentences/page-09-sentence-03.mp3",
+     "words": [
+      {
+       "text": "Get",
+       "start_ms": 0,
+       "end_ms": 640
+      },
+      {
+       "text": "in.",
+       "start_ms": 640,
+       "end_ms": 840
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b5-p09-s04",
+     "text_en": "Whoa.",
+     "zh": "请跟读并理解这句话。",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.747,
+      "y": 0.529,
+      "w": 0.181,
+      "h": 0.095,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 142400,
+     "end_ms": 143040,
+     "audio": "assets/mikey-jj/tornado-adventure/sentences/page-09-sentence-04.mp3",
+     "words": [
+      {
+       "text": "Whoa.",
+       "start_ms": 0,
+       "end_ms": 640
+      }
+     ],
+     "glossary": []
+    }
+   ],
+   "panel": [
+    0.0,
+    0.492,
+    0.507,
+    1.0
+   ]
+  },
+  {
+   "page_no": 10,
+   "source_page": 10,
+   "image": "assets/mikey-jj/tornado-adventure/pages/p10.webp",
+   "text_en": "We made it. We have food for two more weeks. That was too close. No more eating everything in one day, Mikey. Deal. Pass the potatoes.",
+   "start_ms": 145770,
+   "end_ms": 156510,
+   "sentences": [
+    {
+     "id": "b5-p10-s01",
+     "text_en": "We made it. We have food for two more weeks.",
+     "zh": "周。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.053,
+      "y": 0.064,
+      "w": 0.25,
+      "h": 0.116,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 145770,
+     "end_ms": 148470,
+     "audio": "assets/mikey-jj/tornado-adventure/sentences/page-10-sentence-01.mp3",
+     "words": [
+      {
+       "text": "We",
+       "start_ms": 0,
+       "end_ms": 360
+      },
+      {
+       "text": "made",
+       "start_ms": 360,
+       "end_ms": 560
+      },
+      {
+       "text": "it.",
+       "start_ms": 560,
+       "end_ms": 760
+      },
+      {
+       "text": "We",
+       "start_ms": 1020,
+       "end_ms": 1120
+      },
+      {
+       "text": "have",
+       "start_ms": 1120,
+       "end_ms": 1320
+      },
+      {
+       "text": "food",
+       "start_ms": 1320,
+       "end_ms": 1620
+      },
+      {
+       "text": "for",
+       "start_ms": 1620,
+       "end_ms": 1920
+      },
+      {
+       "text": "two",
+       "start_ms": 1920,
+       "end_ms": 2120
+      },
+      {
+       "text": "more",
+       "start_ms": 2120,
+       "end_ms": 2380
+      },
+      {
+       "text": "weeks.",
+       "start_ms": 2380,
+       "end_ms": 2700
+      }
+     ],
+     "glossary": [
+      {
+       "term": "weeks",
+       "ipa": "wiːks",
+       "pos": "N",
+       "zh": "周"
+      }
+     ]
+    },
+    {
+     "id": "b5-p10-s02",
+     "text_en": "That was too close.",
+     "zh": "请跟读并理解这句话。",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.761,
+      "y": 0.134,
+      "w": 0.16,
+      "h": 0.094,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 149170,
+     "end_ms": 150530,
+     "audio": "assets/mikey-jj/tornado-adventure/sentences/page-10-sentence-02.mp3",
+     "words": [
+      {
+       "text": "That",
+       "start_ms": 0,
+       "end_ms": 260
+      },
+      {
+       "text": "was",
+       "start_ms": 260,
+       "end_ms": 460
+      },
+      {
+       "text": "too",
+       "start_ms": 460,
+       "end_ms": 840
+      },
+      {
+       "text": "close.",
+       "start_ms": 840,
+       "end_ms": 1360
+      }
+     ],
+     "glossary": [
+      {
+       "term": "close",
+       "ipa": "kləʊz",
+       "pos": "V",
+       "zh": "关闭"
+      }
+     ]
+    },
+    {
+     "id": "b5-p10-s03",
+     "text_en": "No more eating everything in one day, Mikey.",
+     "zh": "请跟读并理解这句话。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.409,
+      "y": 0.523,
+      "w": 0.236,
+      "h": 0.107,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 151590,
+     "end_ms": 154270,
+     "audio": "assets/mikey-jj/tornado-adventure/sentences/page-10-sentence-03.mp3",
+     "words": [
+      {
+       "text": "No",
+       "start_ms": 0,
+       "end_ms": 400
+      },
+      {
+       "text": "more",
+       "start_ms": 400,
+       "end_ms": 640
+      },
+      {
+       "text": "eating",
+       "start_ms": 640,
+       "end_ms": 900
+      },
+      {
+       "text": "everything",
+       "start_ms": 900,
+       "end_ms": 1460
+      },
+      {
+       "text": "in",
+       "start_ms": 1460,
+       "end_ms": 1640
+      },
+      {
+       "text": "one",
+       "start_ms": 1640,
+       "end_ms": 1800
+      },
+      {
+       "text": "day,",
+       "start_ms": 1800,
+       "end_ms": 2120
+      },
+      {
+       "text": "Mikey.",
+       "start_ms": 2120,
+       "end_ms": 2680
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b5-p10-s04",
+     "text_en": "Deal. Pass the potatoes.",
+     "zh": "土豆。",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.731,
+      "y": 0.557,
+      "w": 0.16,
+      "h": 0.106,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 154710,
+     "end_ms": 156510,
+     "audio": "assets/mikey-jj/tornado-adventure/sentences/page-10-sentence-04.mp3",
+     "words": [
+      {
+       "text": "Deal.",
+       "start_ms": 0,
+       "end_ms": 480
+      },
+      {
+       "text": "Pass",
+       "start_ms": 1060,
+       "end_ms": 1240
+      },
+      {
+       "text": "the",
+       "start_ms": 1240,
+       "end_ms": 1480
+      },
+      {
+       "text": "potatoes.",
+       "start_ms": 1480,
+       "end_ms": 1800
+      }
+     ],
+     "glossary": []
+    }
+   ],
+   "panel": [
+    0.0,
+    0.492,
+    0.507,
+    1.0
+   ]
+  }
+ ],
+ "quiz": [
+  {
+   "id": "mikey-b5-q01",
+   "type": "comprehension",
+   "concept_id": "survive-mega-tornado",
+   "source_sentence_ids": [
+    "b5-p01-s01",
+    "b5-p01-s02"
+   ],
+   "q": "What is the key challenge at the start of the story?",
+   "choices": [
+    "A mega tornado is coming",
+    "The school is closed",
+    "A snowstorm is coming",
+    "An earthquake begins"
+   ],
+   "prompt_en": "What is the key challenge at the start of the story?",
+   "prompt_zh": "故事开始时最大的挑战是什么？",
+   "choices_en": [
+    "A mega tornado is coming",
+    "The school is closed",
+    "A snowstorm is coming",
+    "An earthquake begins"
+   ],
+   "choices_zh": [
+    "一场超级龙卷风要来了",
+    "学校关门了",
+    "一场暴风雪要来了",
+    "地震开始了"
+   ],
+   "answer": 0
+  },
+  {
+   "id": "mikey-b5-q02",
+   "type": "meaning-choice",
+   "term": "tornado",
+   "source_sentence_id": "b5-p01-s01",
+   "q": "Which word is a key word from this story?",
+   "choices": [
+    "龙卷风",
+    "苹果",
+    "雨伞",
+    "铅笔"
+   ],
+   "prompt_en": "What does \"tornado\" mean in this story?",
+   "prompt_zh": "在这个故事中，\"tornado\" 是什么意思？",
+   "choices_en": [
+    "tornado",
+    "apple",
+    "umbrella",
+    "pencil"
+   ],
+   "choices_zh": [
+    "龙卷风",
+    "苹果",
+    "雨伞",
+    "铅笔"
+   ],
+   "answer": 0
+  },
+  {
+   "id": "mikey-b5-q03",
+   "type": "comprehension",
+   "concept_id": "mikey-jj-build-shelter-together",
+   "source_sentence_ids": [
+    "b5-p01-s02",
+    "b5-p01-s03"
+   ],
+   "q": "Who works together to solve the shelter problem?",
+   "choices": [
+    "Mikey and JJ",
+    "A cat",
+    "The principal",
+    "A wandering trader"
+   ],
+   "prompt_en": "Who works together to solve the shelter problem?",
+   "prompt_zh": "谁一起解决了避难所问题？",
+   "choices_en": [
+    "Mikey and JJ",
+    "A cat",
+    "The principal",
+    "A wandering trader"
+   ],
+   "choices_zh": [
+    "Mikey 和 JJ",
+    "一只猫",
+    "校长",
+    "陌生商人"
+   ],
+   "answer": 0
+  },
+  {
+   "id": "mikey-b5-fill1",
+   "type": "context-fill",
+   "term": "shelter",
+   "source_sentence_id": "b5-p01-s02",
+   "source_text_en": "A mega tornado? We need a shelter immediately.",
+   "q": "A mega tornado? We need a ____ immediately.",
+   "prompt_en": "A mega tornado? We need a ____ immediately.",
+   "prompt_zh": "龙卷风；避难所。",
+   "choices": [
+    "house",
+    "underground",
+    "enough",
+    "shelter"
+   ],
+   "choices_zh": [],
+   "answer": 3,
+   "audio": "assets/mikey-jj/tornado-adventure/sentences/page-01-sentence-02.mp3",
+   "explanation": "shelter = 避难所"
+  },
+  {
+   "id": "mikey-b5-q04",
+   "type": "comprehension",
+   "concept_id": "build-bunker-before-storm",
+   "source_sentence_ids": [
+    "b5-p01-s02",
+    "b5-p01-s03"
+   ],
+   "q": "What do they do before the storm arrives?",
+   "choices": [
+    "Build a deep bunker",
+    "Go swimming",
+    "Climb a mountain",
+    "Open a portal"
+   ],
+   "prompt_en": "What do they do before the storm arrives?",
+   "prompt_zh": "暴风雨到来前，他们做了什么？",
+   "choices_en": [
+    "Build a deep bunker",
+    "Go swimming",
+    "Climb a mountain",
+    "Open a portal"
+   ],
+   "choices_zh": [
+    "建造一个深地堡",
+    "去游泳",
+    "爬山",
+    "打开传送门"
+   ],
+   "answer": 0
+  },
+  {
+   "id": "mikey-b5-q05",
+   "type": "comprehension",
+   "concept_id": "food-for-two-more-weeks",
+   "source_sentence_ids": [
+    "b5-p10-s01"
+   ],
+   "q": "What do they have at the end of the adventure?",
+   "choices": [
+    "Food for two more weeks",
+    "No food at all",
+    "A new school",
+    "A golden apple"
+   ],
+   "prompt_en": "What do they have at the end of the adventure?",
+   "prompt_zh": "冒险结束时，他们有什么？",
+   "choices_en": [
+    "Food for two more weeks",
+    "No food at all",
+    "A new school",
+    "A golden apple"
+   ],
+   "choices_zh": [
+    "够吃两周的食物",
+    "一点食物也没有",
+    "一所新学校",
+    "一个金苹果"
+   ],
+   "answer": 0
+  },
+  {
+   "id": "mikey-b5-listen1",
+   "type": "listen-choice",
+   "source_sentence_id": "b5-p03-s01",
+   "source_text_en": "And most importantly, the gaming corner. We can't survive a month without video games.",
+   "q": "🔊 Listen. Which sentence do you hear?",
+   "prompt_en": "🔊 Listen. Which sentence do you hear?",
+   "prompt_zh": "听录音，选出你听到的句子。",
+   "choices": [
+    "We have to build a doomsday bunker deep underground.",
+    "And most importantly, the gaming corner. We can't survive a month without video games.",
+    "Leave the digging to me. I have the boom-boom blocks.",
+    "Make sure it's deep enough so the house doesn't fall on us."
+   ],
+   "choices_zh": [
+    "地堡；地下。",
+    "请跟读并理解这句话。",
+    "请跟读并理解这句话。",
+    "请跟读并理解这句话。"
+   ],
+   "answer": 1,
+   "audio": "assets/mikey-jj/tornado-adventure/sentences/page-03-sentence-01.mp3",
+   "explanation": "请跟读并理解这句话。"
+  },
+  {
+   "id": "mikey-b5-fill2",
+   "type": "context-fill",
+   "term": "storm",
+   "source_sentence_id": "b5-p04-s01",
+   "source_text_en": "We are sealed in. Now we wait for the storm to pass.",
+   "q": "We are sealed in. Now we wait for the ____ to pass.",
+   "prompt_en": "We are sealed in. Now we wait for the ____ to pass.",
+   "prompt_zh": "风暴。",
+   "choices": [
+    "underground",
+    "storm",
+    "enough",
+    "house"
+   ],
+   "choices_zh": [],
+   "answer": 1,
+   "audio": "assets/mikey-jj/tornado-adventure/sentences/page-04-sentence-01.mp3",
+   "explanation": "storm = 暴风雨"
+  },
+  {
+   "id": "mikey-b5-listen2",
+   "type": "listen-choice",
+   "source_sentence_id": "b5-p07-s03",
+   "source_text_en": "Keep moving. We are almost there.",
+   "q": "🔊 Listen. Which sentence do you hear?",
+   "prompt_en": "🔊 Listen. Which sentence do you hear?",
+   "prompt_zh": "听录音，选出你听到的句子。",
+   "choices": [
+    "Keep moving. We are almost there.",
+    "Kitchen, beds, bathroom. It is perfect.",
+    "Don't push. There is room for everyone.",
+    "I got nervous. When I get nervous, I eat."
+   ],
+   "choices_zh": [
+    "请跟读并理解这句话。",
+    "请跟读并理解这句话。",
+    "请跟读并理解这句话。",
+    "紧张。"
+   ],
+   "answer": 0,
+   "audio": "assets/mikey-jj/tornado-adventure/sentences/page-07-sentence-03.mp3",
+   "explanation": "请跟读并理解这句话。"
+  }
+ ],
+ "quiz_bg": "assets/mikey-jj/tornado-adventure/quiz-bg.webp"
+}

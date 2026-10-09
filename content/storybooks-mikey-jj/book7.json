@@ -1,0 +1,2652 @@
+{
+ "schema_version": 1,
+ "storybook_id": "mikey-jj_piglin-adventure",
+ "series": "mikey-jj",
+ "book": 7,
+ "series_count": 11,
+ "published_count": 10,
+ "layout": "spread_with_right_caption",
+ "title": {
+  "en": "Piglin Adventure",
+  "zh": "猪灵堡垒大冒险"
+ },
+ "source_note": "页图逐页视觉核对；speaker 依据气泡尾部与角色位置标注。字幕以 faster-whisper base.en VAD 词级时间为主，原子句按真实停顿拆分；Godzilla 第9页仅有画面爆炸拟声，显式标记 audio_missing，未伪造人声。源 PDF、MP3 与页图只读。",
+ "sources": {
+  "pdf": "书籍资料库/Mikey & JJ 英文冒险/PDF/Piglin Adventure.pdf",
+  "mp3": "书籍资料库/Mikey & JJ 英文冒险/audio/Piglin Adventure.mp3",
+  "source_video": "书籍资料库/Mikey & JJ 英文冒险/MikeyJJ Audio Books/Piglin Adventure.mp4",
+  "derived_audio": "prj/data/storybooks-mikey-jj/source-audio/piglin-adventure.mp3"
+ },
+ "audio": "assets/mikey-jj/piglin-adventure/audio.mp3",
+ "audio_duration_sec": 154.987,
+ "pages": [
+  {
+   "page_no": 1,
+   "source_page": 1,
+   "image": "assets/mikey-jj/piglin-adventure/pages/p01.webp",
+   "text_en": "Portals ready. We're heading to the nether. The nether? The place full of spicy hot lava? Yep. There's a piglin bastion packed with gold. Gold? How many pizzas can that buy? Let's roll.",
+   "start_ms": 690,
+   "end_ms": 16010,
+   "sentences": [
+    {
+     "id": "b7-p01-s01",
+     "text_en": "Portals ready. We're heading to the nether.",
+     "zh": "传送门；下界。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.447,
+      "y": 0.082,
+      "w": 0.21,
+      "h": 0.098,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 690,
+     "end_ms": 3450,
+     "audio": "assets/mikey-jj/piglin-adventure/sentences/page-01-sentence-01.mp3",
+     "words": [
+      {
+       "text": "Portals",
+       "start_ms": 0,
+       "end_ms": 800
+      },
+      {
+       "text": "ready.",
+       "start_ms": 800,
+       "end_ms": 980
+      },
+      {
+       "text": "We're",
+       "start_ms": 1600,
+       "end_ms": 1700
+      },
+      {
+       "text": "heading",
+       "start_ms": 1700,
+       "end_ms": 1920
+      },
+      {
+       "text": "to",
+       "start_ms": 1920,
+       "end_ms": 2160
+      },
+      {
+       "text": "the",
+       "start_ms": 2160,
+       "end_ms": 2280
+      },
+      {
+       "text": "nether.",
+       "start_ms": 2280,
+       "end_ms": 2760
+      }
+     ],
+     "glossary": [
+      {
+       "term": "portal",
+       "ipa": "ˈpɔːtl",
+       "pos": "N",
+       "zh": "传送门"
+      }
+     ]
+    },
+    {
+     "id": "b7-p01-s02",
+     "text_en": "The nether? The place full of spicy hot lava?",
+     "zh": "下界；岩浆。",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.713,
+      "y": 0.12,
+      "w": 0.225,
+      "h": 0.097,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 4050,
+     "end_ms": 7170,
+     "audio": "assets/mikey-jj/piglin-adventure/sentences/page-01-sentence-02.mp3",
+     "words": [
+      {
+       "text": "The",
+       "start_ms": 0,
+       "end_ms": 220
+      },
+      {
+       "text": "nether?",
+       "start_ms": 220,
+       "end_ms": 680
+      },
+      {
+       "text": "The",
+       "start_ms": 980,
+       "end_ms": 1020
+      },
+      {
+       "text": "place",
+       "start_ms": 1020,
+       "end_ms": 1320
+      },
+      {
+       "text": "full",
+       "start_ms": 1320,
+       "end_ms": 1700
+      },
+      {
+       "text": "of",
+       "start_ms": 1700,
+       "end_ms": 1900
+      },
+      {
+       "text": "spicy",
+       "start_ms": 1900,
+       "end_ms": 2260
+      },
+      {
+       "text": "hot",
+       "start_ms": 2260,
+       "end_ms": 2760
+      },
+      {
+       "text": "lava?",
+       "start_ms": 2760,
+       "end_ms": 3120
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b7-p01-s03",
+     "text_en": "Yep. There's a piglin bastion packed with gold.",
+     "zh": "猪灵；堡垒；金子。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.053,
+      "y": 0.526,
+      "w": 0.212,
+      "h": 0.101,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 8070,
+     "end_ms": 11390,
+     "audio": "assets/mikey-jj/piglin-adventure/sentences/page-01-sentence-03.mp3",
+     "words": [
+      {
+       "text": "Yep.",
+       "start_ms": 0,
+       "end_ms": 720
+      },
+      {
+       "text": "There's",
+       "start_ms": 1120,
+       "end_ms": 1300
+      },
+      {
+       "text": "a",
+       "start_ms": 1300,
+       "end_ms": 1380
+      },
+      {
+       "text": "piglin",
+       "start_ms": 1380,
+       "end_ms": 1820
+      },
+      {
+       "text": "bastion",
+       "start_ms": 1820,
+       "end_ms": 2400
+      },
+      {
+       "text": "packed",
+       "start_ms": 2400,
+       "end_ms": 2660
+      },
+      {
+       "text": "with",
+       "start_ms": 2660,
+       "end_ms": 3040
+      },
+      {
+       "text": "gold.",
+       "start_ms": 3040,
+       "end_ms": 3320
+      }
+     ],
+     "glossary": [
+      {
+       "term": "bastion",
+       "ipa": "ˈbæstiən",
+       "pos": "N",
+       "zh": "堡垒"
+      }
+     ]
+    },
+    {
+     "id": "b7-p01-s04",
+     "text_en": "Gold? How many pizzas can that buy? Let's roll.",
+     "zh": "金子。",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.749,
+      "y": 0.629,
+      "w": 0.205,
+      "h": 0.114,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 12190,
+     "end_ms": 16010,
+     "audio": "assets/mikey-jj/piglin-adventure/sentences/page-01-sentence-04.mp3",
+     "words": [
+      {
+       "text": "Gold?",
+       "start_ms": 0,
+       "end_ms": 340
+      },
+      {
+       "text": "How",
+       "start_ms": 880,
+       "end_ms": 1080
+      },
+      {
+       "text": "many",
+       "start_ms": 1080,
+       "end_ms": 1280
+      },
+      {
+       "text": "pizzas",
+       "start_ms": 1280,
+       "end_ms": 1920
+      },
+      {
+       "text": "can",
+       "start_ms": 1920,
+       "end_ms": 2160
+      },
+      {
+       "text": "that",
+       "start_ms": 2160,
+       "end_ms": 2380
+      },
+      {
+       "text": "buy?",
+       "start_ms": 2380,
+       "end_ms": 2760
+      },
+      {
+       "text": "Let's",
+       "start_ms": 3280,
+       "end_ms": 3580
+      },
+      {
+       "text": "roll.",
+       "start_ms": 3580,
+       "end_ms": 3820
+      }
+     ],
+     "glossary": []
+    }
+   ],
+   "panel": [
+    0.0,
+    0.491,
+    0.508,
+    1.0
+   ]
+  },
+  {
+   "page_no": 2,
+   "source_page": 2,
+   "image": "assets/mikey-jj/piglin-adventure/pages/p02.webp",
+   "text_en": "Welcome to the nether. Watch your step, Mikey. So hot, hot, hot. I'm turning into grilled turtle. Stop! Put on this golden helmet. Piglins attack anyone without gold. Gold in fashion. Fancy.",
+   "start_ms": 18290,
+   "end_ms": 35170,
+   "sentences": [
+    {
+     "id": "b7-p02-s01",
+     "text_en": "Welcome to the nether. Watch your step, Mikey.",
+     "zh": "下界。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.085,
+      "y": 0.126,
+      "w": 0.251,
+      "h": 0.102,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 18290,
+     "end_ms": 21530,
+     "audio": "assets/mikey-jj/piglin-adventure/sentences/page-02-sentence-01.mp3",
+     "words": [
+      {
+       "text": "Welcome",
+       "start_ms": 0,
+       "end_ms": 680
+      },
+      {
+       "text": "to",
+       "start_ms": 680,
+       "end_ms": 900
+      },
+      {
+       "text": "the",
+       "start_ms": 900,
+       "end_ms": 1020
+      },
+      {
+       "text": "nether.",
+       "start_ms": 1020,
+       "end_ms": 1440
+      },
+      {
+       "text": "Watch",
+       "start_ms": 1860,
+       "end_ms": 2000
+      },
+      {
+       "text": "your",
+       "start_ms": 2000,
+       "end_ms": 2260
+      },
+      {
+       "text": "step,",
+       "start_ms": 2260,
+       "end_ms": 2600
+      },
+      {
+       "text": "Mikey.",
+       "start_ms": 2840,
+       "end_ms": 3240
+      }
+     ],
+     "glossary": [
+      {
+       "term": "welcome",
+       "ipa": "ˈwelkəm",
+       "pos": "V",
+       "zh": "欢迎"
+      }
+     ]
+    },
+    {
+     "id": "b7-p02-s02",
+     "text_en": "So hot, hot, hot. I'm turning into grilled turtle.",
+     "zh": "请跟读并理解这句话。",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.692,
+      "y": 0.158,
+      "w": 0.232,
+      "h": 0.102,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 22050,
+     "end_ms": 26090,
+     "audio": "assets/mikey-jj/piglin-adventure/sentences/page-02-sentence-02.mp3",
+     "words": [
+      {
+       "text": "So",
+       "start_ms": 0,
+       "end_ms": 440
+      },
+      {
+       "text": "hot,",
+       "start_ms": 440,
+       "end_ms": 960
+      },
+      {
+       "text": "hot,",
+       "start_ms": 1200,
+       "end_ms": 1420
+      },
+      {
+       "text": "hot.",
+       "start_ms": 1420,
+       "end_ms": 1920
+      },
+      {
+       "text": "I'm",
+       "start_ms": 2360,
+       "end_ms": 2640
+      },
+      {
+       "text": "turning",
+       "start_ms": 2640,
+       "end_ms": 2880
+      },
+      {
+       "text": "into",
+       "start_ms": 2880,
+       "end_ms": 3300
+      },
+      {
+       "text": "grilled",
+       "start_ms": 3300,
+       "end_ms": 3620
+      },
+      {
+       "text": "turtle.",
+       "start_ms": 3620,
+       "end_ms": 4040
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b7-p02-s03",
+     "text_en": "Stop! Put on this golden helmet.",
+     "zh": "金子；金头盔。",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.692,
+      "y": 0.158,
+      "w": 0.232,
+      "h": 0.102,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 27010,
+     "end_ms": 29670,
+     "audio": "assets/mikey-jj/piglin-adventure/sentences/page-02-sentence-03.mp3",
+     "words": [
+      {
+       "text": "Stop!",
+       "start_ms": 0,
+       "end_ms": 760
+      },
+      {
+       "text": "Put",
+       "start_ms": 1340,
+       "end_ms": 1520
+      },
+      {
+       "text": "on",
+       "start_ms": 1520,
+       "end_ms": 1740
+      },
+      {
+       "text": "this",
+       "start_ms": 1740,
+       "end_ms": 1940
+      },
+      {
+       "text": "golden",
+       "start_ms": 1940,
+       "end_ms": 2260
+      },
+      {
+       "text": "helmet.",
+       "start_ms": 2260,
+       "end_ms": 2660
+      }
+     ],
+     "glossary": [
+      {
+       "term": "golden",
+       "ipa": "ˈɡəʊldən",
+       "pos": "Adj",
+       "zh": "金色的"
+      }
+     ]
+    },
+    {
+     "id": "b7-p02-s04",
+     "text_en": "Piglins attack anyone without gold.",
+     "zh": "猪灵；金子。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.363,
+      "y": 0.527,
+      "w": 0.283,
+      "h": 0.123,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 30130,
+     "end_ms": 32310,
+     "audio": "assets/mikey-jj/piglin-adventure/sentences/page-02-sentence-04.mp3",
+     "words": [
+      {
+       "text": "Piglins",
+       "start_ms": 0,
+       "end_ms": 340
+      },
+      {
+       "text": "attack",
+       "start_ms": 340,
+       "end_ms": 720
+      },
+      {
+       "text": "anyone",
+       "start_ms": 720,
+       "end_ms": 1280
+      },
+      {
+       "text": "without",
+       "start_ms": 1280,
+       "end_ms": 1800
+      },
+      {
+       "text": "gold.",
+       "start_ms": 1800,
+       "end_ms": 2180
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b7-p02-s05",
+     "text_en": "Gold in fashion. Fancy.",
+     "zh": "金子。",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.363,
+      "y": 0.527,
+      "w": 0.283,
+      "h": 0.123,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 32930,
+     "end_ms": 35170,
+     "audio": "assets/mikey-jj/piglin-adventure/sentences/page-02-sentence-05.mp3",
+     "words": [
+      {
+       "text": "Gold",
+       "start_ms": 0,
+       "end_ms": 520
+      },
+      {
+       "text": "in",
+       "start_ms": 520,
+       "end_ms": 800
+      },
+      {
+       "text": "fashion.",
+       "start_ms": 800,
+       "end_ms": 1080
+      },
+      {
+       "text": "Fancy.",
+       "start_ms": 2240,
+       "end_ms": 2240
+      }
+     ],
+     "glossary": []
+    }
+   ],
+   "panel": [
+    0.0,
+    0.491,
+    0.508,
+    1.0
+   ]
+  },
+  {
+   "page_no": 3,
+   "source_page": 3,
+   "image": "assets/mikey-jj/piglin-adventure/pages/p03.webp",
+   "text_en": "Hi, Mr. Pig. Nice snout. There it is. The bastion. Treasures in the center. Creepy. Maybe hide and seek instead?",
+   "start_ms": 37780,
+   "end_ms": 48100,
+   "sentences": [
+    {
+     "id": "b7-p03-s01",
+     "text_en": "Hi, Mr. Pig. Nice snout.",
+     "zh": "请跟读并理解这句话。",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.581,
+      "y": 0.048,
+      "w": 0.147,
+      "h": 0.086,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 37780,
+     "end_ms": 40160,
+     "audio": "assets/mikey-jj/piglin-adventure/sentences/page-03-sentence-01.mp3",
+     "words": [
+      {
+       "text": "Hi,",
+       "start_ms": 0,
+       "end_ms": 180
+      },
+      {
+       "text": "Mr.",
+       "start_ms": 340,
+       "end_ms": 560
+      },
+      {
+       "text": "Pig.",
+       "start_ms": 780,
+       "end_ms": 880
+      },
+      {
+       "text": "Nice",
+       "start_ms": 1600,
+       "end_ms": 1600
+      },
+      {
+       "text": "snout.",
+       "start_ms": 1600,
+       "end_ms": 2380
+      }
+     ],
+     "glossary": [
+      {
+       "term": "snout",
+       "ipa": "snaʊt",
+       "pos": "N",
+       "zh": "鼻吻"
+      }
+     ]
+    },
+    {
+     "id": "b7-p03-s02",
+     "text_en": "There it is. The bastion. Treasures in the center.",
+     "zh": "堡垒；宝藏。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.606,
+      "y": 0.33,
+      "w": 0.146,
+      "h": 0.097,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 41080,
+     "end_ms": 44720,
+     "audio": "assets/mikey-jj/piglin-adventure/sentences/page-03-sentence-02.mp3",
+     "words": [
+      {
+       "text": "There",
+       "start_ms": 0,
+       "end_ms": 520
+      },
+      {
+       "text": "it",
+       "start_ms": 520,
+       "end_ms": 700
+      },
+      {
+       "text": "is.",
+       "start_ms": 700,
+       "end_ms": 900
+      },
+      {
+       "text": "The",
+       "start_ms": 1340,
+       "end_ms": 1380
+      },
+      {
+       "text": "bastion.",
+       "start_ms": 1380,
+       "end_ms": 2080
+      },
+      {
+       "text": "Treasures",
+       "start_ms": 2560,
+       "end_ms": 2900
+      },
+      {
+       "text": "in",
+       "start_ms": 2900,
+       "end_ms": 3200
+      },
+      {
+       "text": "the",
+       "start_ms": 3200,
+       "end_ms": 3340
+      },
+      {
+       "text": "center.",
+       "start_ms": 3340,
+       "end_ms": 3640
+      }
+     ],
+     "glossary": [
+      {
+       "term": "bastion",
+       "ipa": "ˈbæstiən",
+       "pos": "N",
+       "zh": "堡垒"
+      }
+     ]
+    },
+    {
+     "id": "b7-p03-s03",
+     "text_en": "Creepy. Maybe hide and seek instead?",
+     "zh": "请跟读并理解这句话。",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.606,
+      "y": 0.33,
+      "w": 0.146,
+      "h": 0.097,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 45500,
+     "end_ms": 48100,
+     "audio": "assets/mikey-jj/piglin-adventure/sentences/page-03-sentence-03.mp3",
+     "words": [
+      {
+       "text": "Creepy.",
+       "start_ms": 0,
+       "end_ms": 680
+      },
+      {
+       "text": "Maybe",
+       "start_ms": 1140,
+       "end_ms": 1220
+      },
+      {
+       "text": "hide",
+       "start_ms": 1220,
+       "end_ms": 1800
+      },
+      {
+       "text": "and",
+       "start_ms": 1800,
+       "end_ms": 2020
+      },
+      {
+       "text": "seek",
+       "start_ms": 2020,
+       "end_ms": 2300
+      },
+      {
+       "text": "instead?",
+       "start_ms": 2300,
+       "end_ms": 2600
+      }
+     ],
+     "glossary": []
+    }
+   ],
+   "panel": [
+    0.0,
+    0.491,
+    0.508,
+    1.0
+   ]
+  },
+  {
+   "page_no": 4,
+   "source_page": 4,
+   "image": "assets/mikey-jj/piglin-adventure/pages/p04.webp",
+   "text_en": "Hug the wall. Floors are broken. Huh? Something glowing blue over there. Don't eat that, Mikey. That's warped fungus. Blue mushroom. Souvenir.",
+   "start_ms": 50540,
+   "end_ms": 63280,
+   "sentences": [
+    {
+     "id": "b7-p04-s01",
+     "text_en": "Hug the wall. Floors are broken.",
+     "zh": "请跟读并理解这句话。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.103,
+      "y": 0.054,
+      "w": 0.193,
+      "h": 0.1,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 50540,
+     "end_ms": 53180,
+     "audio": "assets/mikey-jj/piglin-adventure/sentences/page-04-sentence-01.mp3",
+     "words": [
+      {
+       "text": "Hug",
+       "start_ms": 0,
+       "end_ms": 520
+      },
+      {
+       "text": "the",
+       "start_ms": 520,
+       "end_ms": 760
+      },
+      {
+       "text": "wall.",
+       "start_ms": 760,
+       "end_ms": 1000
+      },
+      {
+       "text": "Floors",
+       "start_ms": 1840,
+       "end_ms": 2160
+      },
+      {
+       "text": "are",
+       "start_ms": 2160,
+       "end_ms": 2300
+      },
+      {
+       "text": "broken.",
+       "start_ms": 2300,
+       "end_ms": 2640
+      }
+     ],
+     "glossary": [
+      {
+       "term": "floors",
+       "ipa": "flɔːz",
+       "pos": "N",
+       "zh": "地板"
+      },
+      {
+       "term": "broken",
+       "ipa": "ˈbrəʊkən",
+       "pos": "Adj",
+       "zh": "破损的"
+      }
+     ]
+    },
+    {
+     "id": "b7-p04-s02",
+     "text_en": "Huh? Something glowing blue over there.",
+     "zh": "请跟读并理解这句话。",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.582,
+      "y": 0.058,
+      "w": 0.23,
+      "h": 0.098,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 53920,
+     "end_ms": 56380,
+     "audio": "assets/mikey-jj/piglin-adventure/sentences/page-04-sentence-02.mp3",
+     "words": [
+      {
+       "text": "Huh?",
+       "start_ms": 0,
+       "end_ms": 220
+      },
+      {
+       "text": "Something",
+       "start_ms": 920,
+       "end_ms": 920
+      },
+      {
+       "text": "glowing",
+       "start_ms": 920,
+       "end_ms": 1360
+      },
+      {
+       "text": "blue",
+       "start_ms": 1360,
+       "end_ms": 1740
+      },
+      {
+       "text": "over",
+       "start_ms": 1740,
+       "end_ms": 2180
+      },
+      {
+       "text": "there.",
+       "start_ms": 2180,
+       "end_ms": 2460
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b7-p04-s03",
+     "text_en": "Don't eat that, Mikey. That's warped fungus.",
+     "zh": "诡异菌。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.727,
+      "y": 0.526,
+      "w": 0.218,
+      "h": 0.125,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 57120,
+     "end_ms": 59880,
+     "audio": "assets/mikey-jj/piglin-adventure/sentences/page-04-sentence-03.mp3",
+     "words": [
+      {
+       "text": "Don't",
+       "start_ms": 0,
+       "end_ms": 620
+      },
+      {
+       "text": "eat",
+       "start_ms": 620,
+       "end_ms": 760
+      },
+      {
+       "text": "that,",
+       "start_ms": 760,
+       "end_ms": 1040
+      },
+      {
+       "text": "Mikey.",
+       "start_ms": 1180,
+       "end_ms": 1520
+      },
+      {
+       "text": "That's",
+       "start_ms": 1740,
+       "end_ms": 2000
+      },
+      {
+       "text": "warped",
+       "start_ms": 2000,
+       "end_ms": 2260
+      },
+      {
+       "text": "fungus.",
+       "start_ms": 2260,
+       "end_ms": 2760
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b7-p04-s04",
+     "text_en": "Blue mushroom. Souvenir.",
+     "zh": "请跟读并理解这句话。",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.727,
+      "y": 0.526,
+      "w": 0.218,
+      "h": 0.125,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 60780,
+     "end_ms": 63280,
+     "audio": "assets/mikey-jj/piglin-adventure/sentences/page-04-sentence-04.mp3",
+     "words": [
+      {
+       "text": "Blue",
+       "start_ms": 0,
+       "end_ms": 460
+      },
+      {
+       "text": "mushroom.",
+       "start_ms": 460,
+       "end_ms": 940
+      },
+      {
+       "text": "Souvenir.",
+       "start_ms": 1880,
+       "end_ms": 2500
+      }
+     ],
+     "glossary": []
+    }
+   ],
+   "panel": [
+    0.0,
+    0.491,
+    0.508,
+    1.0
+   ]
+  },
+  {
+   "page_no": 5,
+   "source_page": 5,
+   "image": "assets/mikey-jj/piglin-adventure/pages/p05.webp",
+   "text_en": "Business is booming. Rule two? Cover your mouth when you sneeze. I have made so much money, I need a vault to store it all. Then how do we get the goodies?",
+   "start_ms": 65410,
+   "end_ms": 81650,
+   "sentences": [
+    {
+     "id": "b7-p05-s01",
+     "text_en": "Business is booming.",
+     "zh": "生意。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.149,
+      "y": 0.044,
+      "w": 0.348,
+      "h": 0.105,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 65410,
+     "end_ms": 69210,
+     "audio": "assets/mikey-jj/piglin-adventure/sentences/page-05-sentence-01.mp3",
+     "words": [
+      {
+       "text": "Fluked",
+       "start_ms": 0,
+       "end_ms": 620
+      },
+      {
+       "text": "in",
+       "start_ms": 620,
+       "end_ms": 840
+      },
+      {
+       "text": "that",
+       "start_ms": 840,
+       "end_ms": 1020
+      },
+      {
+       "text": "chest.",
+       "start_ms": 1020,
+       "end_ms": 1360
+      },
+      {
+       "text": "But",
+       "start_ms": 1980,
+       "end_ms": 2080
+      },
+      {
+       "text": "remember",
+       "start_ms": 2080,
+       "end_ms": 2420
+      },
+      {
+       "text": "nether",
+       "start_ms": 2420,
+       "end_ms": 3140
+      },
+      {
+       "text": "rule",
+       "start_ms": 3140,
+       "end_ms": 3360
+      },
+      {
+       "text": "two.",
+       "start_ms": 3360,
+       "end_ms": 3800
+      }
+     ],
+     "glossary": [
+      {
+       "term": "business",
+       "ipa": "ˈbɪznəs",
+       "pos": "N",
+       "zh": "生意"
+      }
+     ]
+    },
+    {
+     "id": "b7-p05-s02",
+     "text_en": "Rule two? Cover your mouth when you sneeze.",
+     "zh": "请跟读并理解这句话。",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.698,
+      "y": 0.328,
+      "w": 0.245,
+      "h": 0.083,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 69830,
+     "end_ms": 73270,
+     "audio": "assets/mikey-jj/piglin-adventure/sentences/page-05-sentence-02.mp3",
+     "words": [
+      {
+       "text": "Rule",
+       "start_ms": 0,
+       "end_ms": 360
+      },
+      {
+       "text": "two?",
+       "start_ms": 360,
+       "end_ms": 820
+      },
+      {
+       "text": "Cover",
+       "start_ms": 1420,
+       "end_ms": 1580
+      },
+      {
+       "text": "your",
+       "start_ms": 1580,
+       "end_ms": 1820
+      },
+      {
+       "text": "mouth",
+       "start_ms": 1820,
+       "end_ms": 2120
+      },
+      {
+       "text": "when",
+       "start_ms": 2120,
+       "end_ms": 2420
+      },
+      {
+       "text": "you",
+       "start_ms": 2420,
+       "end_ms": 2600
+      },
+      {
+       "text": "sneeze.",
+       "start_ms": 2600,
+       "end_ms": 3440
+      }
+     ],
+     "glossary": [
+      {
+       "term": "rule",
+       "ipa": "ruːl",
+       "pos": "N",
+       "zh": "规矩"
+      }
+     ]
+    },
+    {
+     "id": "b7-p05-s03",
+     "text_en": "I have made so much money, I need a vault to store it all.",
+     "zh": "钱；金库。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.587,
+      "y": 0.554,
+      "w": 0.352,
+      "h": 0.117,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 73870,
+     "end_ms": 79230,
+     "audio": "assets/mikey-jj/piglin-adventure/sentences/page-05-sentence-03.mp3",
+     "words": [
+      {
+       "text": "No.",
+       "start_ms": 0,
+       "end_ms": 620
+      },
+      {
+       "text": "Never",
+       "start_ms": 1500,
+       "end_ms": 1500
+      },
+      {
+       "text": "open",
+       "start_ms": 1500,
+       "end_ms": 1840
+      },
+      {
+       "text": "a",
+       "start_ms": 1840,
+       "end_ms": 2000
+      },
+      {
+       "text": "chest",
+       "start_ms": 2000,
+       "end_ms": 2240
+      },
+      {
+       "text": "in",
+       "start_ms": 2240,
+       "end_ms": 2540
+      },
+      {
+       "text": "front",
+       "start_ms": 2540,
+       "end_ms": 2760
+      },
+      {
+       "text": "of",
+       "start_ms": 2760,
+       "end_ms": 2920
+      },
+      {
+       "text": "piglins.",
+       "start_ms": 2920,
+       "end_ms": 3380
+      },
+      {
+       "text": "They'll",
+       "start_ms": 3740,
+       "end_ms": 3940
+      },
+      {
+       "text": "think",
+       "start_ms": 3940,
+       "end_ms": 4140
+      },
+      {
+       "text": "you're",
+       "start_ms": 4140,
+       "end_ms": 4380
+      },
+      {
+       "text": "stealing",
+       "start_ms": 4380,
+       "end_ms": 4700
+      },
+      {
+       "text": "in",
+       "start_ms": 4700,
+       "end_ms": 5060
+      },
+      {
+       "text": "rage.",
+       "start_ms": 5060,
+       "end_ms": 5360
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b7-p05-s04",
+     "text_en": "Then how do we get the goodies?",
+     "zh": "请跟读并理解这句话。",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.587,
+      "y": 0.554,
+      "w": 0.352,
+      "h": 0.117,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 80150,
+     "end_ms": 81650,
+     "audio": "assets/mikey-jj/piglin-adventure/sentences/page-05-sentence-04.mp3",
+     "words": [
+      {
+       "text": "Then",
+       "start_ms": 0,
+       "end_ms": 260
+      },
+      {
+       "text": "how",
+       "start_ms": 260,
+       "end_ms": 520
+      },
+      {
+       "text": "do",
+       "start_ms": 520,
+       "end_ms": 720
+      },
+      {
+       "text": "we",
+       "start_ms": 720,
+       "end_ms": 860
+      },
+      {
+       "text": "get",
+       "start_ms": 860,
+       "end_ms": 1060
+      },
+      {
+       "text": "the",
+       "start_ms": 1060,
+       "end_ms": 1240
+      },
+      {
+       "text": "goodies?",
+       "start_ms": 1240,
+       "end_ms": 1500
+      }
+     ],
+     "glossary": []
+    }
+   ],
+   "panel": [
+    0.0,
+    0.492,
+    0.502,
+    1.0
+   ]
+  },
+  {
+   "page_no": 6,
+   "source_page": 6,
+   "image": "assets/mikey-jj/piglin-adventure/pages/p06.webp",
+   "text_en": "Piglins love gold more than anything. Watch. Mine. Gold. I am the Hamburger. Just like me with donuts. Ecpot. Look at this dark metal.",
+   "start_ms": 84570,
+   "end_ms": 99400,
+   "sentences": [
+    {
+     "id": "b7-p06-s01",
+     "text_en": "Piglins love gold more than anything. Watch.",
+     "zh": "猪灵；金子。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.343,
+      "y": 0.039,
+      "w": 0.273,
+      "h": 0.099,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 84570,
+     "end_ms": 87530,
+     "audio": "assets/mikey-jj/piglin-adventure/sentences/page-06-sentence-01.mp3",
+     "words": [
+      {
+       "text": "Piglins",
+       "start_ms": 0,
+       "end_ms": 620
+      },
+      {
+       "text": "love",
+       "start_ms": 620,
+       "end_ms": 1000
+      },
+      {
+       "text": "gold",
+       "start_ms": 1000,
+       "end_ms": 1220
+      },
+      {
+       "text": "more",
+       "start_ms": 1220,
+       "end_ms": 1620
+      },
+      {
+       "text": "than",
+       "start_ms": 1620,
+       "end_ms": 1840
+      },
+      {
+       "text": "anything.",
+       "start_ms": 1840,
+       "end_ms": 2180
+      },
+      {
+       "text": "Watch.",
+       "start_ms": 2760,
+       "end_ms": 2960
+      }
+     ],
+     "glossary": [
+      {
+       "term": "piglins",
+       "ipa": "ˈpɪɡlɪnz",
+       "pos": "N",
+       "zh": "猪灵"
+      },
+      {
+       "term": "anything",
+       "ipa": "ˈeniθɪŋ",
+       "pos": "Pron",
+       "zh": "任何事"
+      }
+     ]
+    },
+    {
+     "id": "b7-p06-s02",
+     "text_en": "Mine. Gold.",
+     "zh": "金子。",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.343,
+      "y": 0.039,
+      "w": 0.273,
+      "h": 0.099,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 88550,
+     "end_ms": 89950,
+     "audio": "assets/mikey-jj/piglin-adventure/sentences/page-06-sentence-02.mp3",
+     "words": [
+      {
+       "text": "Mine.",
+       "start_ms": 0,
+       "end_ms": 720
+      },
+      {
+       "text": "Gold.",
+       "start_ms": 1100,
+       "end_ms": 1400
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b7-p06-s03",
+     "text_en": "I am the Hamburger.",
+     "zh": "汉堡。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.076,
+      "y": 0.526,
+      "w": 0.159,
+      "h": 0.096,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 90370,
+     "end_ms": 92210,
+     "audio": "assets/mikey-jj/piglin-adventure/sentences/page-06-sentence-03.mp3",
+     "words": [
+      {
+       "text": "So",
+       "start_ms": 0,
+       "end_ms": 700
+      },
+      {
+       "text": "easily",
+       "start_ms": 700,
+       "end_ms": 1100
+      },
+      {
+       "text": "distracted?",
+       "start_ms": 1100,
+       "end_ms": 1840
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b7-p06-s04",
+     "text_en": "Just like me with donuts. Ecpot. Look at this dark metal.",
+     "zh": "请跟读并理解这句话。",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.76,
+      "y": 0.629,
+      "w": 0.193,
+      "h": 0.114,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 93010,
+     "end_ms": 99400,
+     "audio": "assets/mikey-jj/piglin-adventure/sentences/page-06-sentence-04.mp3",
+     "words": [
+      {
+       "text": "Just",
+       "start_ms": 0,
+       "end_ms": 280
+      },
+      {
+       "text": "like",
+       "start_ms": 280,
+       "end_ms": 520
+      },
+      {
+       "text": "me",
+       "start_ms": 520,
+       "end_ms": 800
+      },
+      {
+       "text": "with",
+       "start_ms": 800,
+       "end_ms": 1060
+      },
+      {
+       "text": "donuts.",
+       "start_ms": 1060,
+       "end_ms": 1660
+      },
+      {
+       "text": "Ecpot.",
+       "start_ms": 4290,
+       "end_ms": 4670
+      },
+      {
+       "text": "Look",
+       "start_ms": 5150,
+       "end_ms": 5270
+      },
+      {
+       "text": "at",
+       "start_ms": 5270,
+       "end_ms": 5450
+      },
+      {
+       "text": "this",
+       "start_ms": 5450,
+       "end_ms": 5670
+      },
+      {
+       "text": "dark",
+       "start_ms": 5670,
+       "end_ms": 5950
+      },
+      {
+       "text": "metal.",
+       "start_ms": 5950,
+       "end_ms": 6390
+      }
+     ],
+     "glossary": []
+    }
+   ],
+   "panel": [
+    0.0,
+    0.491,
+    0.508,
+    1.0
+   ]
+  },
+  {
+   "page_no": 7,
+   "source_page": 7,
+   "image": "assets/mikey-jj/piglin-adventure/pages/p07.webp",
+   "text_en": "That's netherite. Harder than diamond. Grab it. Uh-oh. Piglin brute. Quick. Show it your golden helmet. We're members.",
+   "start_ms": 100160,
+   "end_ms": 110060,
+   "sentences": [
+    {
+     "id": "b7-p07-s01",
+     "text_en": "That's netherite. Harder than diamond. Grab it.",
+     "zh": "下界；下界合金。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.445,
+      "y": 0.223,
+      "w": 0.211,
+      "h": 0.112,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 100160,
+     "end_ms": 103600,
+     "audio": "assets/mikey-jj/piglin-adventure/sentences/page-07-sentence-01.mp3",
+     "words": [
+      {
+       "text": "That's",
+       "start_ms": 0,
+       "end_ms": 660
+      },
+      {
+       "text": "netherite.",
+       "start_ms": 660,
+       "end_ms": 1320
+      },
+      {
+       "text": "Harder",
+       "start_ms": 1740,
+       "end_ms": 2000
+      },
+      {
+       "text": "than",
+       "start_ms": 2000,
+       "end_ms": 2140
+      },
+      {
+       "text": "diamond.",
+       "start_ms": 2140,
+       "end_ms": 2360
+      },
+      {
+       "text": "Grab",
+       "start_ms": 3000,
+       "end_ms": 3180
+      },
+      {
+       "text": "it.",
+       "start_ms": 3180,
+       "end_ms": 3440
+      }
+     ],
+     "glossary": [
+      {
+       "term": "netherite",
+       "ipa": "ˈneðəraɪt",
+       "pos": "N",
+       "zh": "下界合金"
+      }
+     ]
+    },
+    {
+     "id": "b7-p07-s02",
+     "text_en": "Uh-oh. Piglin brute.",
+     "zh": "猪灵；蛮兵。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.445,
+      "y": 0.223,
+      "w": 0.211,
+      "h": 0.112,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 104260,
+     "end_ms": 105960,
+     "audio": "assets/mikey-jj/piglin-adventure/sentences/page-07-sentence-02.mp3",
+     "words": [
+      {
+       "text": "Uh",
+       "start_ms": 0,
+       "end_ms": 500
+      },
+      {
+       "text": "-oh.",
+       "start_ms": 500,
+       "end_ms": 700
+      },
+      {
+       "text": "Piglin",
+       "start_ms": 1200,
+       "end_ms": 1500
+      },
+      {
+       "text": "brute.",
+       "start_ms": 1500,
+       "end_ms": 1700
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b7-p07-s03",
+     "text_en": "Quick. Show it your golden helmet. We're members.",
+     "zh": "金子；金头盔。",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.699,
+      "y": 0.21,
+      "w": 0.28,
+      "h": 0.121,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 106900,
+     "end_ms": 110060,
+     "audio": "assets/mikey-jj/piglin-adventure/sentences/page-07-sentence-03.mp3",
+     "words": [
+      {
+       "text": "Quick.",
+       "start_ms": 0,
+       "end_ms": 360
+      },
+      {
+       "text": "Show",
+       "start_ms": 900,
+       "end_ms": 960
+      },
+      {
+       "text": "it",
+       "start_ms": 960,
+       "end_ms": 1160
+      },
+      {
+       "text": "your",
+       "start_ms": 1160,
+       "end_ms": 1280
+      },
+      {
+       "text": "golden",
+       "start_ms": 1280,
+       "end_ms": 1640
+      },
+      {
+       "text": "helmet.",
+       "start_ms": 1640,
+       "end_ms": 1960
+      },
+      {
+       "text": "We're",
+       "start_ms": 2820,
+       "end_ms": 2960
+      },
+      {
+       "text": "members.",
+       "start_ms": 2960,
+       "end_ms": 3160
+      }
+     ],
+     "glossary": [
+      {
+       "term": "golden",
+       "ipa": "ˈɡəʊldən",
+       "pos": "Adj",
+       "zh": "金色的"
+      }
+     ]
+    }
+   ],
+   "panel": [
+    0.0,
+    0.343,
+    0.353,
+    1.0
+   ]
+  },
+  {
+   "page_no": 8,
+   "source_page": 8,
+   "image": "assets/mikey-jj/piglin-adventure/pages/p08.webp",
+   "text_en": "Rule three. Brutes don't care about gold. They chop on site. Worst rules ever. Run. Dead end. Bridge is broken. Lava below.",
+   "start_ms": 113270,
+   "end_ms": 124570,
+   "sentences": [
+    {
+     "id": "b7-p08-s01",
+     "text_en": "Rule three. Brutes don't care about gold. They chop on site.",
+     "zh": "金子；蛮兵。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.658,
+      "y": 0.038,
+      "w": 0.255,
+      "h": 0.114,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 113270,
+     "end_ms": 117450,
+     "audio": "assets/mikey-jj/piglin-adventure/sentences/page-08-sentence-01.mp3",
+     "words": [
+      {
+       "text": "Rule",
+       "start_ms": 0,
+       "end_ms": 0
+      },
+      {
+       "text": "three.",
+       "start_ms": 0,
+       "end_ms": 380
+      },
+      {
+       "text": "Brutes",
+       "start_ms": 1020,
+       "end_ms": 1200
+      },
+      {
+       "text": "don't",
+       "start_ms": 1200,
+       "end_ms": 1560
+      },
+      {
+       "text": "care",
+       "start_ms": 1560,
+       "end_ms": 1780
+      },
+      {
+       "text": "about",
+       "start_ms": 1780,
+       "end_ms": 2160
+      },
+      {
+       "text": "gold.",
+       "start_ms": 2160,
+       "end_ms": 2420
+      },
+      {
+       "text": "They",
+       "start_ms": 3080,
+       "end_ms": 3120
+      },
+      {
+       "text": "chop",
+       "start_ms": 3120,
+       "end_ms": 3440
+      },
+      {
+       "text": "on",
+       "start_ms": 3440,
+       "end_ms": 3860
+      },
+      {
+       "text": "site.",
+       "start_ms": 3860,
+       "end_ms": 4180
+      }
+     ],
+     "glossary": [
+      {
+       "term": "rule",
+       "ipa": "ruːl",
+       "pos": "N",
+       "zh": "规矩"
+      },
+      {
+       "term": "three",
+       "ipa": "θriː",
+       "pos": "Num",
+       "zh": "三"
+      }
+     ]
+    },
+    {
+     "id": "b7-p08-s02",
+     "text_en": "Worst rules ever. Run.",
+     "zh": "请跟读并理解这句话。",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.776,
+      "y": 0.149,
+      "w": 0.175,
+      "h": 0.076,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 118170,
+     "end_ms": 120390,
+     "audio": "assets/mikey-jj/piglin-adventure/sentences/page-08-sentence-02.mp3",
+     "words": [
+      {
+       "text": "Worst",
+       "start_ms": 0,
+       "end_ms": 680
+      },
+      {
+       "text": "rules",
+       "start_ms": 680,
+       "end_ms": 940
+      },
+      {
+       "text": "ever.",
+       "start_ms": 940,
+       "end_ms": 1460
+      },
+      {
+       "text": "Run.",
+       "start_ms": 2220,
+       "end_ms": 2220
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b7-p08-s03",
+     "text_en": "Dead end. Bridge is broken. Lava below.",
+     "zh": "岩浆。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.72,
+      "y": 0.618,
+      "w": 0.234,
+      "h": 0.096,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 121330,
+     "end_ms": 124570,
+     "audio": "assets/mikey-jj/piglin-adventure/sentences/page-08-sentence-03.mp3",
+     "words": [
+      {
+       "text": "Dead",
+       "start_ms": 0,
+       "end_ms": 680
+      },
+      {
+       "text": "end.",
+       "start_ms": 680,
+       "end_ms": 860
+      },
+      {
+       "text": "Bridge",
+       "start_ms": 1340,
+       "end_ms": 1480
+      },
+      {
+       "text": "is",
+       "start_ms": 1480,
+       "end_ms": 1720
+      },
+      {
+       "text": "broken.",
+       "start_ms": 1720,
+       "end_ms": 2000
+      },
+      {
+       "text": "Lava",
+       "start_ms": 2720,
+       "end_ms": 2940
+      },
+      {
+       "text": "below.",
+       "start_ms": 2940,
+       "end_ms": 3240
+      }
+     ],
+     "glossary": []
+    }
+   ],
+   "panel": [
+    0.0,
+    0.491,
+    0.508,
+    1.0
+   ]
+  },
+  {
+   "page_no": 9,
+   "source_page": 9,
+   "image": "assets/mikey-jj/piglin-adventure/pages/p09.webp",
+   "text_en": "Hey, that is a premium burger. We need a boat, but wood burns in the nether. Wait. Mikey, what are you doing?",
+   "start_ms": 128550,
+   "end_ms": 140410,
+   "sentences": [
+    {
+     "id": "b7-p09-s01",
+     "text_en": "Hey, that is a premium burger.",
+     "zh": "汉堡；高级的。",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.277,
+      "y": 0.048,
+      "w": 0.193,
+      "h": 0.096,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 128550,
+     "end_ms": 129690,
+     "audio": "assets/mikey-jj/piglin-adventure/sentences/page-09-sentence-01.mp3",
+     "words": [
+      {
+       "text": "Uh,",
+       "start_ms": 0,
+       "end_ms": 280
+      },
+      {
+       "text": "we'll",
+       "start_ms": 420,
+       "end_ms": 680
+      },
+      {
+       "text": "be",
+       "start_ms": 680,
+       "end_ms": 840
+      },
+      {
+       "text": "cooked.",
+       "start_ms": 840,
+       "end_ms": 1140
+      }
+     ],
+     "glossary": [
+      {
+       "term": "premium",
+       "ipa": "ˈpriːmiəm",
+       "pos": "Adj",
+       "zh": "高级的"
+      },
+      {
+       "term": "burger",
+       "ipa": "ˈbɜːɡə",
+       "pos": "N",
+       "zh": "汉堡"
+      }
+     ]
+    },
+    {
+     "id": "b7-p09-s02",
+     "text_en": "We need a boat, but wood burns in the nether.",
+     "zh": "下界。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.277,
+      "y": 0.048,
+      "w": 0.193,
+      "h": 0.096,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 130550,
+     "end_ms": 133670,
+     "audio": "assets/mikey-jj/piglin-adventure/sentences/page-09-sentence-02.mp3",
+     "words": [
+      {
+       "text": "We",
+       "start_ms": 0,
+       "end_ms": 280
+      },
+      {
+       "text": "need",
+       "start_ms": 280,
+       "end_ms": 460
+      },
+      {
+       "text": "a",
+       "start_ms": 460,
+       "end_ms": 600
+      },
+      {
+       "text": "boat,",
+       "start_ms": 600,
+       "end_ms": 920
+      },
+      {
+       "text": "but",
+       "start_ms": 1320,
+       "end_ms": 1460
+      },
+      {
+       "text": "wood",
+       "start_ms": 1460,
+       "end_ms": 1780
+      },
+      {
+       "text": "burns",
+       "start_ms": 1780,
+       "end_ms": 2180
+      },
+      {
+       "text": "in",
+       "start_ms": 2180,
+       "end_ms": 2520
+      },
+      {
+       "text": "the",
+       "start_ms": 2520,
+       "end_ms": 2660
+      },
+      {
+       "text": "nether.",
+       "start_ms": 2660,
+       "end_ms": 3120
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b7-p09-s03",
+     "text_en": "Wait. Mikey, what are you doing?",
+     "zh": "请跟读并理解这句话。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.433,
+      "y": 0.521,
+      "w": 0.21,
+      "h": 0.096,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 134410,
+     "end_ms": 140410,
+     "audio": "assets/mikey-jj/piglin-adventure/sentences/page-09-sentence-03.mp3",
+     "words": [
+      {
+       "text": "Wait.",
+       "start_ms": 0,
+       "end_ms": 560
+      },
+      {
+       "text": "Mikey,",
+       "start_ms": 4520,
+       "end_ms": 5120
+      },
+      {
+       "text": "what",
+       "start_ms": 5260,
+       "end_ms": 5500
+      },
+      {
+       "text": "are",
+       "start_ms": 5500,
+       "end_ms": 5600
+      },
+      {
+       "text": "you",
+       "start_ms": 5600,
+       "end_ms": 5720
+      },
+      {
+       "text": "doing?",
+       "start_ms": 5720,
+       "end_ms": 6000
+      }
+     ],
+     "glossary": []
+    }
+   ],
+   "panel": [
+    0.0,
+    0.49,
+    0.505,
+    1.0
+   ]
+  },
+  {
+   "page_no": 10,
+   "source_page": 10,
+   "image": "assets/mikey-jj/piglin-adventure/pages/p10.webp",
+   "text_en": "Go long legs. It loves the blue mushroom. You're a genius. You tamed a strider. We got netherite and a free ride.",
+   "start_ms": 142590,
+   "end_ms": 152490,
+   "sentences": [
+    {
+     "id": "b7-p10-s01",
+     "text_en": "Go long legs. It loves the blue mushroom.",
+     "zh": "请跟读并理解这句话。",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.336,
+      "y": 0.04,
+      "w": 0.224,
+      "h": 0.101,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 142590,
+     "end_ms": 145550,
+     "audio": "assets/mikey-jj/piglin-adventure/sentences/page-10-sentence-01.mp3",
+     "words": [
+      {
+       "text": "Go",
+       "start_ms": 0,
+       "end_ms": 440
+      },
+      {
+       "text": "long",
+       "start_ms": 440,
+       "end_ms": 760
+      },
+      {
+       "text": "legs.",
+       "start_ms": 760,
+       "end_ms": 1120
+      },
+      {
+       "text": "It",
+       "start_ms": 1500,
+       "end_ms": 1600
+      },
+      {
+       "text": "loves",
+       "start_ms": 1600,
+       "end_ms": 1960
+      },
+      {
+       "text": "the",
+       "start_ms": 1960,
+       "end_ms": 2340
+      },
+      {
+       "text": "blue",
+       "start_ms": 2340,
+       "end_ms": 2520
+      },
+      {
+       "text": "mushroom.",
+       "start_ms": 2520,
+       "end_ms": 2960
+      }
+     ],
+     "glossary": [
+      {
+       "term": "loves",
+       "ipa": "lʌvz",
+       "pos": "V",
+       "zh": "喜爱"
+      }
+     ]
+    },
+    {
+     "id": "b7-p10-s02",
+     "text_en": "You're a genius. You tamed a strider.",
+     "zh": "炽足兽；天才。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.336,
+      "y": 0.04,
+      "w": 0.224,
+      "h": 0.101,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 146630,
+     "end_ms": 149110,
+     "audio": "assets/mikey-jj/piglin-adventure/sentences/page-10-sentence-02.mp3",
+     "words": [
+      {
+       "text": "You're",
+       "start_ms": 0,
+       "end_ms": 340
+      },
+      {
+       "text": "a",
+       "start_ms": 340,
+       "end_ms": 420
+      },
+      {
+       "text": "genius.",
+       "start_ms": 420,
+       "end_ms": 760
+      },
+      {
+       "text": "You",
+       "start_ms": 1380,
+       "end_ms": 1460
+      },
+      {
+       "text": "tamed",
+       "start_ms": 1460,
+       "end_ms": 1860
+      },
+      {
+       "text": "a",
+       "start_ms": 1860,
+       "end_ms": 2000
+      },
+      {
+       "text": "strider.",
+       "start_ms": 2000,
+       "end_ms": 2480
+      }
+     ],
+     "glossary": [
+      {
+       "term": "tame",
+       "ipa": "teɪm",
+       "pos": "V",
+       "zh": "驯服"
+      }
+     ]
+    },
+    {
+     "id": "b7-p10-s03",
+     "text_en": "We got netherite and a free ride.",
+     "zh": "下界；下界合金。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.283,
+      "y": 0.524,
+      "w": 0.194,
+      "h": 0.106,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 150030,
+     "end_ms": 152490,
+     "audio": "assets/mikey-jj/piglin-adventure/sentences/page-10-sentence-03.mp3",
+     "words": [
+      {
+       "text": "We",
+       "start_ms": 0,
+       "end_ms": 340
+      },
+      {
+       "text": "got",
+       "start_ms": 340,
+       "end_ms": 620
+      },
+      {
+       "text": "netherite",
+       "start_ms": 620,
+       "end_ms": 1380
+      },
+      {
+       "text": "and",
+       "start_ms": 1380,
+       "end_ms": 1660
+      },
+      {
+       "text": "a",
+       "start_ms": 1660,
+       "end_ms": 1800
+      },
+      {
+       "text": "free",
+       "start_ms": 1800,
+       "end_ms": 2040
+      },
+      {
+       "text": "ride.",
+       "start_ms": 2040,
+       "end_ms": 2460
+      }
+     ],
+     "glossary": []
+    }
+   ],
+   "panel": [
+    0.0,
+    0.492,
+    0.507,
+    1.0
+   ]
+  }
+ ],
+ "quiz": [
+  {
+   "id": "mikey-b7-q01",
+   "type": "comprehension",
+   "concept_id": "enter-nether-piglin-bastion",
+   "source_sentence_ids": [
+    "b7-p01-s01",
+    "b7-p01-s03"
+   ],
+   "q": "What is happening at the start of the story?",
+   "choices": [
+    "They are heading to a piglin bastion in the Nether",
+    "They are going on a picnic",
+    "They are returning to school",
+    "They are looking for a pet"
+   ],
+   "prompt_en": "What is happening at the start of the story?",
+   "prompt_zh": "故事开始时发生了什么？",
+   "choices_en": [
+    "They are heading to a piglin bastion in the Nether",
+    "They are going on a picnic",
+    "They are returning to school",
+    "They are looking for a pet"
+   ],
+   "choices_zh": [
+    "他们要前往下界的猪灵堡垒",
+    "他们要去野餐",
+    "他们要回学校",
+    "他们正在寻找宠物"
+   ],
+   "answer": 0
+  },
+  {
+   "id": "mikey-b7-q02",
+   "type": "meaning-choice",
+   "term": "portal",
+   "source_sentence_id": "b7-p01-s01",
+   "q": "What does \"portal\" mean in this story?",
+   "choices": [
+    "portal",
+    "apple",
+    "umbrella",
+    "pencil"
+   ],
+   "prompt_en": "What does \"portal\" mean in this story?",
+   "prompt_zh": "在这个故事中，\"portal\" 是什么意思？",
+   "choices_en": [
+    "portal",
+    "apple",
+    "umbrella",
+    "pencil"
+   ],
+   "choices_zh": [
+    "传送门",
+    "苹果",
+    "雨伞",
+    "铅笔"
+   ],
+   "answer": 0
+  },
+  {
+   "id": "mikey-b7-q03",
+   "type": "comprehension",
+   "concept_id": "mikey-jj-escape-nether",
+   "source_sentence_ids": [
+    "b7-p09-s02",
+    "b7-p10-s02",
+    "b7-p10-s03"
+   ],
+   "q": "Who helps solve the problem?",
+   "choices": [
+    "Mikey and JJ",
+    "A cat",
+    "The principal",
+    "A wandering trader"
+   ],
+   "prompt_en": "Who helps solve the problem?",
+   "prompt_zh": "谁帮助解决了问题？",
+   "choices_en": [
+    "Mikey and JJ",
+    "A cat",
+    "The principal",
+    "A wandering trader"
+   ],
+   "choices_zh": [
+    "Mikey 和 JJ",
+    "一只猫",
+    "校长",
+    "陌生商人"
+   ],
+   "answer": 0
+  },
+  {
+   "id": "mikey-b7-fill1",
+   "type": "context-fill",
+   "term": "bastion",
+   "source_sentence_id": "b7-p01-s03",
+   "source_text_en": "Yep. There's a piglin bastion packed with gold.",
+   "q": "Yep. There's a piglin ____ packed with gold.",
+   "prompt_en": "Yep. There's a piglin ____ packed with gold.",
+   "prompt_zh": "猪灵；堡垒；金子。",
+   "choices": [
+    "welcome",
+    "bastion",
+    "golden",
+    "snout"
+   ],
+   "choices_zh": [],
+   "answer": 1,
+   "audio": "assets/mikey-jj/piglin-adventure/sentences/page-01-sentence-03.mp3",
+   "explanation": "bastion = 堡垒"
+  },
+  {
+   "id": "mikey-b7-q04",
+   "type": "comprehension",
+   "concept_id": "wear-golden-helmet-near-piglins",
+   "source_sentence_ids": [
+    "b7-p02-s03",
+    "b7-p02-s04"
+   ],
+   "q": "What should Mikey wear before meeting the piglins?",
+   "choices": [
+    "A golden helmet",
+    "A raincoat",
+    "A school uniform",
+    "A fishing rod"
+   ],
+   "prompt_en": "What should Mikey wear before meeting the piglins?",
+   "prompt_zh": "遇到猪灵前，Mikey 应该穿什么？",
+   "choices_en": [
+    "A golden helmet",
+    "A raincoat",
+    "A school uniform",
+    "A fishing rod"
+   ],
+   "choices_zh": [
+    "一顶金头盔",
+    "一件雨衣",
+    "一套校服",
+    "一根鱼竿"
+   ],
+   "answer": 0
+  },
+  {
+   "id": "mikey-b7-q05",
+   "type": "comprehension",
+   "concept_id": "netherite-and-strider-ride",
+   "source_sentence_ids": [
+    "b7-p10-s02",
+    "b7-p10-s03"
+   ],
+   "q": "How does the adventure end?",
+   "choices": [
+    "They get netherite and a free ride",
+    "Everyone gives up",
+    "The book disappears",
+    "They forget the lesson"
+   ],
+   "prompt_en": "How does the adventure end?",
+   "prompt_zh": "冒险最后如何结束？",
+   "choices_en": [
+    "They get netherite and a free ride",
+    "Everyone gives up",
+    "The book disappears",
+    "They forget the lesson"
+   ],
+   "choices_zh": [
+    "他们得到下界合金，还获得了免费坐骑",
+    "大家放弃了",
+    "书消失了",
+    "他们忘记了教训"
+   ],
+   "answer": 0
+  },
+  {
+   "id": "mikey-b7-listen1",
+   "type": "listen-choice",
+   "source_sentence_id": "b7-p03-s02",
+   "source_text_en": "There it is. The bastion. Treasures in the center.",
+   "q": "🔊 Listen. Which sentence do you hear?",
+   "prompt_en": "🔊 Listen. Which sentence do you hear?",
+   "prompt_zh": "听录音，选出你听到的句子。",
+   "choices": [
+    "Welcome to the nether. Watch your step, Mikey.",
+    "The nether? The place full of spicy hot lava?",
+    "Gold? How many pizzas can that buy? Let's roll.",
+    "There it is. The bastion. Treasures in the center."
+   ],
+   "choices_zh": [
+    "下界。",
+    "下界；岩浆。",
+    "金子。",
+    "堡垒；宝藏。"
+   ],
+   "answer": 3,
+   "audio": "assets/mikey-jj/piglin-adventure/sentences/page-03-sentence-02.mp3",
+   "explanation": "堡垒；宝藏。"
+  },
+  {
+   "id": "mikey-b7-fill2",
+   "type": "context-fill",
+   "term": "broken",
+   "source_sentence_id": "b7-p04-s01",
+   "source_text_en": "Hug the wall. Floors are broken.",
+   "q": "Hug the wall. Floors are ____.",
+   "prompt_en": "Hug the wall. Floors are ____.",
+   "prompt_zh": "请跟读并理解这句话。",
+   "choices": [
+    "snout",
+    "welcome",
+    "golden",
+    "broken"
+   ],
+   "choices_zh": [],
+   "answer": 3,
+   "audio": "assets/mikey-jj/piglin-adventure/sentences/page-04-sentence-01.mp3",
+   "explanation": "broken = 破损的"
+  },
+  {
+   "id": "mikey-b7-listen2",
+   "type": "listen-choice",
+   "source_sentence_id": "b7-p08-s01",
+   "source_text_en": "Rule three. Brutes don't care about gold. They chop on site.",
+   "q": "🔊 Listen. Which sentence do you hear?",
+   "prompt_en": "🔊 Listen. Which sentence do you hear?",
+   "prompt_zh": "听录音，选出你听到的句子。",
+   "choices": [
+    "Gold? How many pizzas can that buy? Let's roll.",
+    "The nether? The place full of spicy hot lava?",
+    "Rule three. Brutes don't care about gold. They chop on site.",
+    "Welcome to the nether. Watch your step, Mikey."
+   ],
+   "choices_zh": [
+    "金子。",
+    "下界；岩浆。",
+    "金子；蛮兵。",
+    "下界。"
+   ],
+   "answer": 2,
+   "audio": "assets/mikey-jj/piglin-adventure/sentences/page-08-sentence-01.mp3",
+   "explanation": "金子；蛮兵。"
+  }
+ ],
+ "quiz_bg": "assets/mikey-jj/piglin-adventure/quiz-bg.webp"
+}

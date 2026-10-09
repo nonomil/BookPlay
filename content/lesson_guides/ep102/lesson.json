@@ -1,0 +1,1863 @@
+{
+  "schema_version": 1,
+  "episode": 102,
+  "title": {
+    "en": "The Prisoners Are Released",
+    "zh": "西游记 第102集"
+  },
+  "sources": [
+    {
+      "kind": "courseware_main_pptx",
+      "file": "G:\\Game\\BookPlay书戏\\data\\西游记课件\\3.3西游记  Journey to the West PPT课件\\102_Journey to the West 102_The Prisoners Are Released.pptx",
+      "sha256": "97c0509cfbd7637f43431e86f33934d1f247f56ac8a9396ffabf7d39ecd80a3c",
+      "pages": 20
+    },
+    {
+      "kind": "official_quiz_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+      "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929",
+      "pages": 131
+    },
+    {
+      "kind": "intensive_reader_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\02-西游记精读版台词本\\1、带标注版PDF 108集\\102 犯人们被放了 上.pdf",
+      "sha256": "f81b63ca8228bfd7ac55e7c22af83331645acfa2b4439e91bd5dd5d29c1fdc41",
+      "pages": 4
+    },
+    {
+      "kind": "intensive_reader_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\02-西游记精读版台词本\\1、带标注版PDF 108集\\102 犯人们被放了 下.pdf",
+      "sha256": "f73a748d0558730ae956b8e9450cb55c28dd6e86988c42872a0b0a776ba2a248",
+      "pages": 4
+    },
+    {
+      "kind": "courseware_screenshots_pptx",
+      "file": "G:\\Game\\BookPlay书戏\\data\\西游记课件\\西游记-外教课动画截图\\Journey to the West 102  The Prisoners Are Released_28503528.pptx",
+      "sha256": "101b2a9641aa92c331404672080e5f7c190350ae8b53f9a1ff1791000f85f278",
+      "pages": 46
+    }
+  ],
+  "cards": [
+    {
+      "card_id": "ep102-official-quiz-001",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 1,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "which is not true?",
+        "zh": "哪一项是不正确的？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "laozi helped wukong find squire kou.",
+            "zh": "老子帮助悟空找到寇少爷。"
+          },
+          {
+            "id": "b",
+            "en": "wukong went to the land of darkness.",
+            "zh": "悟空去了黑暗之地。"
+          },
+          {
+            "id": "c",
+            "en": "squire kou was working for dayuan.",
+            "zh": "寇员外在为地藏菩萨工作。"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n032",
+            "quote": "\"The sage Laozi helped you that time. Will you ask him for help again?\""
+          },
+          {
+            "node_id": "n033",
+            "quote": "\"No,\" said Wukong."
+          },
+          {
+            "node_id": "n034",
+            "quote": "\"Laozi doesn't really like me. I'll go to the Land of Darkness and talk to the Judge of the Dead instead.\""
+          },
+          {
+            "node_id": "n040",
+            "quote": "\"Ah, yes. He died two days ago. He now works for the bodhisattva Dayuan in the Jade Palace. It's here in the Land of Darkness.\""
+          },
+          {
+            "node_id": "n041",
+            "quote": "Wukong went to the Jade Palace."
+          },
+          {
+            "node_id": "n052",
+            "quote": "Squire Kou was sitting behind a large desk, smiling, as he studied some documents."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 122,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep102-official-quiz-002",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 2,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "what happened in the morning?",
+        "zh": "早上发生了什么？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "the travelers were released.",
+            "zh": "旅行者被释放了。"
+          },
+          {
+            "id": "b",
+            "en": "squire kou visited lady kou.",
+            "zh": "寇员外拜访了寇夫人。"
+          },
+          {
+            "id": "c",
+            "en": "the judge met the wandering spirit.",
+            "zh": "法官遇到了游荡的灵魂。"
+          }
+        ],
+        "answer": "b",
+        "answer_evidence": [
+          {
+            "node_id": "n001",
+            "quote": "Lady Kou ran into the courthouse early the next morning."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 122,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep102-official-quiz-003",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 3,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "what did wukong think he could do?",
+        "zh": "悟空认为他能做什么？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "bring squire kou back to life",
+            "zh": "让考爵复活"
+          },
+          {
+            "id": "b",
+            "en": "ask laozi for help",
+            "zh": "向老子求助"
+          },
+          {
+            "id": "c",
+            "en": "defeat lady kou",
+            "zh": "击败寇女士"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n025",
+            "quote": "Wukong rubbed his chin."
+          },
+          {
+            "node_id": "n026",
+            "quote": "\"I can probably bring him back to life.\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 122,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep102-official-quiz-004",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 4,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "what did wukong ask the judge of the dead?",
+        "zh": "悟空问阴曹地府的判官什么？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "where to find squire kou",
+            "zh": "在哪里可以找到库尔副官"
+          },
+          {
+            "id": "b",
+            "en": "where to find his name",
+            "zh": "在哪里可以找到他的名字"
+          },
+          {
+            "id": "c",
+            "en": "where to find laozi",
+            "zh": "在哪里可以找到老子"
+          }
+        ],
+        "answer": "c",
+        "answer_evidence": [
+          {
+            "node_id": "n032",
+            "quote": "\"The sage Laozi helped you that time. Will you ask him for help again?\""
+          },
+          {
+            "node_id": "n034",
+            "quote": "\"Laozi doesn't really like me. I'll go to the Land of Darkness and talk to the Judge of the Dead instead.\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 122,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep102-official-quiz-005",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 5,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "where did wukong find squire kou?",
+        "zh": "悟空在哪里找到寇少爷的？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "the jade palace",
+            "zh": "玉宫"
+          },
+          {
+            "id": "b",
+            "en": "the palace of darkness",
+            "zh": "黑暗宫殿"
+          },
+          {
+            "id": "c",
+            "en": "the western paradise",
+            "zh": "西方极乐世界"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n040",
+            "quote": "\"Ah, yes. He died two days ago. He now works for the bodhisattva Dayuan in the Jade Palace. It's here in the Land of Darkness.\""
+          },
+          {
+            "node_id": "n041",
+            "quote": "Wukong went to the Jade Palace."
+          },
+          {
+            "node_id": "n051",
+            "quote": "The bodhisattva brought Wukong to an office."
+          },
+          {
+            "node_id": "n052",
+            "quote": "Squire Kou was sitting behind a large desk, smiling, as he studied some documents."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 122,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep102-vocab-001",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 101,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "door",
+        "zh": "门"
+      },
+      "payload": {
+        "term": "door",
+        "ipa": "dɔː(r)",
+        "pos": "n.",
+        "def": "n.[C]门",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "102 犯人们被放了 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "f81b63ca8228bfd7ac55e7c22af83331645acfa2b4439e91bd5dd5d29c1fdc41"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep102-vocab-002",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 102,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "glad",
+        "zh": "adj.高兴,愿意"
+      },
+      "payload": {
+        "term": "glad",
+        "ipa": "ɡlæd",
+        "pos": "adj.",
+        "def": "adj.高兴,愿意",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "102 犯人们被放了 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "f81b63ca8228bfd7ac55e7c22af83331645acfa2b4439e91bd5dd5d29c1fdc41"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep102-vocab-003",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 103,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "kill",
+        "zh": "v.杀死,弄死,使停止;消磨(时 间)"
+      },
+      "payload": {
+        "term": "kill",
+        "ipa": "kɪl",
+        "pos": "v.",
+        "def": "v.杀死,弄死,使停止;消磨(时 间)",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "102 犯人们被放了 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "f81b63ca8228bfd7ac55e7c22af83331645acfa2b4439e91bd5dd5d29c1fdc41"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep102-vocab-004",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 104,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "terrible",
+        "zh": "adj.非常讨厌的,非常严重的,可 怕的,糟糕的"
+      },
+      "payload": {
+        "term": "terrible",
+        "ipa": "ˈterəbl",
+        "pos": "adj.",
+        "def": "adj.非常讨厌的,非常严重的,可 怕的,糟糕的",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "102 犯人们被放了 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "f81b63ca8228bfd7ac55e7c22af83331645acfa2b4439e91bd5dd5d29c1fdc41"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep102-vocab-005",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 105,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "shout",
+        "zh": "呼喊,叫喊"
+      },
+      "payload": {
+        "term": "shout",
+        "ipa": "ʃaʊt",
+        "pos": "v.",
+        "def": "v.呼叫,喊叫 n.[C]呼喊,叫喊",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "102 犯人们被放了 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "f81b63ca8228bfd7ac55e7c22af83331645acfa2b4439e91bd5dd5d29c1fdc41"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep102-vocab-006",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 106,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "really",
+        "zh": "adv.真正地,确实,非常"
+      },
+      "payload": {
+        "term": "really",
+        "ipa": "ˈriːəli",
+        "pos": "adv.",
+        "def": "adv.真正地,确实,非常",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "102 犯人们被放了 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "f81b63ca8228bfd7ac55e7c22af83331645acfa2b4439e91bd5dd5d29c1fdc41"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep102-vocab-007",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 107,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "shoulder",
+        "zh": "肩,肩膀"
+      },
+      "payload": {
+        "term": "shoulder",
+        "ipa": "ˈʃəʊldə(r)",
+        "pos": "n.",
+        "def": "n.[C]肩,肩膀",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "102 犯人们被放了 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "f81b63ca8228bfd7ac55e7c22af83331645acfa2b4439e91bd5dd5d29c1fdc41"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep102-vocab-008",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 108,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "look",
+        "zh": "看,注视,外表,表情"
+      },
+      "payload": {
+        "term": "look",
+        "ipa": "lʊk",
+        "pos": "vi.",
+        "def": "vi.看 v.-link.看上去 n.[C]看,注视,外表,表情",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "102 犯人们被放了 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "f81b63ca8228bfd7ac55e7c22af83331645acfa2b4439e91bd5dd5d29c1fdc41"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep102-vocab-009",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 109,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "kind",
+        "zh": "种类 adj.体贴的,友好的"
+      },
+      "payload": {
+        "term": "kind",
+        "ipa": "kaɪnd",
+        "pos": "n.",
+        "def": "n.[C,U]种类 adj.体贴的,友好的",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "102 犯人们被放了 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "f81b63ca8228bfd7ac55e7c22af83331645acfa2b4439e91bd5dd5d29c1fdc41"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep102-vocab-010",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 110,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "bring",
+        "zh": "vt.带来,取来,使处于某种状况"
+      },
+      "payload": {
+        "term": "bring",
+        "ipa": "brɪŋ",
+        "pos": "vt.",
+        "def": "vt.带来,取来,使处于某种状况",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "102 犯人们被放了 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "f81b63ca8228bfd7ac55e7c22af83331645acfa2b4439e91bd5dd5d29c1fdc41"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "102 犯人们被放了 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "f73a748d0558730ae956b8e9450cb55c28dd6e86988c42872a0b0a776ba2a248"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep102-vocab-011",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 111,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "real",
+        "zh": "adj.真正的,真实的"
+      },
+      "payload": {
+        "term": "real",
+        "ipa": "rɪəl",
+        "pos": "adj.",
+        "def": "adj.真正的,真实的",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "102 犯人们被放了 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "f81b63ca8228bfd7ac55e7c22af83331645acfa2b4439e91bd5dd5d29c1fdc41"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep102-vocab-012",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 112,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "ask",
+        "zh": "v.请求,要求,询问"
+      },
+      "payload": {
+        "term": "ask",
+        "ipa": "ɑːsk",
+        "pos": "v.",
+        "def": "v.请求,要求,询问",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "102 犯人们被放了 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "f81b63ca8228bfd7ac55e7c22af83331645acfa2b4439e91bd5dd5d29c1fdc41"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep102-vocab-013",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 113,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "smile",
+        "zh": "笑,微笑"
+      },
+      "payload": {
+        "term": "smile",
+        "ipa": "smaɪ",
+        "pos": "vi.",
+        "def": "vi./n.[C]笑,微笑",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "102 犯人们被放了 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "f81b63ca8228bfd7ac55e7c22af83331645acfa2b4439e91bd5dd5d29c1fdc41"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "102 犯人们被放了 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "f73a748d0558730ae956b8e9450cb55c28dd6e86988c42872a0b0a776ba2a248"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep102-vocab-014",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 114,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "king",
+        "zh": "君主,国王"
+      },
+      "payload": {
+        "term": "king",
+        "ipa": "kɪŋ",
+        "pos": "n.",
+        "def": "n.[C]君主,国王",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "102 犯人们被放了 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "f81b63ca8228bfd7ac55e7c22af83331645acfa2b4439e91bd5dd5d29c1fdc41"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep102-vocab-015",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 115,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "monkey",
+        "zh": "猴子"
+      },
+      "payload": {
+        "term": "monkey",
+        "ipa": "ˈmʌŋki",
+        "pos": "n.",
+        "def": "n.[C]猴子",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "102 犯人们被放了 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "f81b63ca8228bfd7ac55e7c22af83331645acfa2b4439e91bd5dd5d29c1fdc41"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep102-vocab-016",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 116,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "help",
+        "zh": "有帮助的 人或物 v.帮助,援助"
+      },
+      "payload": {
+        "term": "help",
+        "ipa": "help",
+        "pos": "n.",
+        "def": "n.[U]帮助,援助[sing.]有帮助的 人或物 v.帮助,援助",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "102 犯人们被放了 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "f81b63ca8228bfd7ac55e7c22af83331645acfa2b4439e91bd5dd5d29c1fdc41"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "102 犯人们被放了 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "f73a748d0558730ae956b8e9450cb55c28dd6e86988c42872a0b0a776ba2a248"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep102-vocab-017",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 117,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "like",
+        "zh": "喜欢"
+      },
+      "payload": {
+        "term": "like",
+        "ipa": "laɪk",
+        "pos": "vt.",
+        "def": "喜欢",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ],
+        "gloss": "喜欢"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "102 犯人们被放了 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "f81b63ca8228bfd7ac55e7c22af83331645acfa2b4439e91bd5dd5d29c1fdc41"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep102-vocab-018",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 118,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "land",
+        "zh": "国家 v.降落,着陆"
+      },
+      "payload": {
+        "term": "land",
+        "ipa": "lænd",
+        "pos": "n.",
+        "def": "n.[U]大陆,土地 [C]国家 v.降落,着陆",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "102 犯人们被放了 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "f81b63ca8228bfd7ac55e7c22af83331645acfa2b4439e91bd5dd5d29c1fdc41"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep102-vocab-019",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 119,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "dead",
+        "zh": "死者"
+      },
+      "payload": {
+        "term": "dead",
+        "ipa": "ded",
+        "pos": "adj.",
+        "def": "死者",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ],
+        "gloss": "死者"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "102 犯人们被放了 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "f81b63ca8228bfd7ac55e7c22af83331645acfa2b4439e91bd5dd5d29c1fdc41"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep102-vocab-020",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 120,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "return",
+        "zh": "返回"
+      },
+      "payload": {
+        "term": "return",
+        "ipa": "rɪˈtɜː(r)n",
+        "pos": "vt.",
+        "def": "vt.归还 vi.回来,返回 n.[C,U]回报[sing.]返回",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "102 犯人们被放了 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "f73a748d0558730ae956b8e9450cb55c28dd6e86988c42872a0b0a776ba2a248"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep102-vocab-021",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 121,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "reach",
+        "zh": "v.伸手,到达,抵达;打成(协 议),实现 n.能及的范围"
+      },
+      "payload": {
+        "term": "reach",
+        "ipa": "riː tʃ",
+        "pos": "v.",
+        "def": "v.伸手,到达,抵达;打成(协 议),实现 n.能及的范围",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "102 犯人们被放了 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "f73a748d0558730ae956b8e9450cb55c28dd6e86988c42872a0b0a776ba2a248"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep102-vocab-022",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 122,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "office",
+        "zh": "(尤指政府的)部,局, 厅,办公室,办事处;诊室"
+      },
+      "payload": {
+        "term": "office",
+        "ipa": "ˈɒfɪs",
+        "pos": "n.",
+        "def": "n.[C](尤指政府的)部,局, 厅,办公室,办事处;诊室",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "102 犯人们被放了 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "f73a748d0558730ae956b8e9450cb55c28dd6e86988c42872a0b0a776ba2a248"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep102-vocab-023",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 123,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "desk",
+        "zh": "书桌"
+      },
+      "payload": {
+        "term": "desk",
+        "ipa": "desk",
+        "pos": "n.",
+        "def": "n.[C]书桌",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "102 犯人们被放了 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "f73a748d0558730ae956b8e9450cb55c28dd6e86988c42872a0b0a776ba2a248"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep102-vocab-024",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 124,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "eye",
+        "zh": "眼睛"
+      },
+      "payload": {
+        "term": "eye",
+        "ipa": "aɪ",
+        "pos": "n.",
+        "def": "n.[C]眼睛",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "102 犯人们被放了 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "f73a748d0558730ae956b8e9450cb55c28dd6e86988c42872a0b0a776ba2a248"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep102-vocab-025",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 125,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "good",
+        "zh": "好处,利益,善行"
+      },
+      "payload": {
+        "term": "good",
+        "ipa": "gʊd",
+        "pos": "adj.",
+        "def": "adj.好的,擅长的,有好处的 n.[U]好处,利益,善行",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "102 犯人们被放了 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "f73a748d0558730ae956b8e9450cb55c28dd6e86988c42872a0b0a776ba2a248"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep102-vocab-026",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 126,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "see",
+        "zh": "v.理解,明白,观看,会见,看 见,送别,确保"
+      },
+      "payload": {
+        "term": "see",
+        "ipa": "siː",
+        "pos": "v.",
+        "def": "v.理解,明白,观看,会见,看 见,送别,确保",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "102 犯人们被放了 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "f73a748d0558730ae956b8e9450cb55c28dd6e86988c42872a0b0a776ba2a248"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep102-vocab-027",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 127,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "do",
+        "zh": "v.做,干 aux v.构成疑问句和否定句"
+      },
+      "payload": {
+        "term": "do",
+        "ipa": "duː",
+        "pos": "v.",
+        "def": "v.做,干 aux v.构成疑问句和否定句",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "102 犯人们被放了 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "f73a748d0558730ae956b8e9450cb55c28dd6e86988c42872a0b0a776ba2a248"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep102-vocab-028",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 128,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "news",
+        "zh": "新闻报道,新闻,消息"
+      },
+      "payload": {
+        "term": "news",
+        "ipa": "njuːz",
+        "pos": "n.",
+        "def": "n.[U]新闻报道,新闻,消息",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "102 犯人们被放了 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "f73a748d0558730ae956b8e9450cb55c28dd6e86988c42872a0b0a776ba2a248"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep102-vocab-029",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 129,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "nod",
+        "zh": "点头"
+      },
+      "payload": {
+        "term": "nod",
+        "ipa": "nɒd",
+        "pos": "v.",
+        "def": "v.点头 n.[C]点头",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "102 犯人们被放了 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "f73a748d0558730ae956b8e9450cb55c28dd6e86988c42872a0b0a776ba2a248"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep102-vocab-030",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 130,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "job",
+        "zh": "工作,职业"
+      },
+      "payload": {
+        "term": "job",
+        "ipa": "dʒɒb",
+        "pos": "n.",
+        "def": "n.[C]工作,职业",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "102 犯人们被放了 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "f73a748d0558730ae956b8e9450cb55c28dd6e86988c42872a0b0a776ba2a248"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep102-vocab-031",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 131,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "move",
+        "zh": "移动"
+      },
+      "payload": {
+        "term": "move",
+        "ipa": "muːv",
+        "pos": "v.",
+        "def": "v.移动;使感动,推动 n.[sing.]移动",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "102 犯人们被放了 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "f73a748d0558730ae956b8e9450cb55c28dd6e86988c42872a0b0a776ba2a248"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep102-vocab-032",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 132,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "close",
+        "zh": "adj.亲密的,(在空间、时间上) 接近的 adv.接近 v.关闭"
+      },
+      "payload": {
+        "term": "close",
+        "ipa": "kləʊz",
+        "pos": "adj.",
+        "def": "adj.亲密的,(在空间、时间上) 接近的 adv.接近 v.关闭",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "102 犯人们被放了 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "f73a748d0558730ae956b8e9450cb55c28dd6e86988c42872a0b0a776ba2a248"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep102-vocab-033",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 133,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "home",
+        "zh": "家"
+      },
+      "payload": {
+        "term": "home",
+        "ipa": "həʊm",
+        "pos": "",
+        "def": "家",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ],
+        "gloss": "家"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "102 犯人们被放了 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "f73a748d0558730ae956b8e9450cb55c28dd6e86988c42872a0b0a776ba2a248"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep102-vocab-034",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 134,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "spell",
+        "zh": "咒语"
+      },
+      "payload": {
+        "term": "spell",
+        "ipa": "spel",
+        "pos": "v.",
+        "def": "咒语",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ],
+        "gloss": "咒语"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "102 犯人们被放了 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "f73a748d0558730ae956b8e9450cb55c28dd6e86988c42872a0b0a776ba2a248"
+        }
+      ],
+      "review_status": "machine_verified"
+    }
+  ],
+  "teacher_guide": null,
+  "review": {
+    "status": "draft",
+    "reviewed_at": null,
+    "card_stats": {
+      "total": 39,
+      "sentence_choice": 5,
+      "word_review": 34,
+      "machine_verified": 36,
+      "assistant_reviewed": 3,
+      "verified": 39,
+      "needs_review": 0
+    }
+  },
+  "generated_at": "2026-08-31T04:49:50.524465+00:00"
+}

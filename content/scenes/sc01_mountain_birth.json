@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "scene_id": "sc01_mountain_birth",
+  "chapter_id": "ch01",
+  "location": {
+    "en": "Mountain of Flowers and Fruit",
+    "zh": "花果山"
+  },
+  "background": "assets/lf_ep1/frames/waterfall_wide.jpg",
+  "characters_present": [
+    "elder_monkey",
+    "stone_monkey"
+  ],
+  "entry_condition": "chapter == ch01",
+  "dialogue_tree": "dialogues/dialogue_sc01_mountain_birth.json",
+  "exits": [],
+  "show_portraits": false,
+  "default_background": "assets/gen/backgrounds/background_sc01.png"
+}

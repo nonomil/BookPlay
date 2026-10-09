@@ -1,0 +1,1264 @@
+{
+  "schema_version": 1,
+  "episode": 95,
+  "title": {
+    "en": "The Raptor Demon",
+    "zh": "西游记 第95集"
+  },
+  "sources": [
+    {
+      "kind": "courseware_main_pptx",
+      "file": "G:\\Game\\BookPlay书戏\\data\\西游记课件\\3.3西游记  Journey to the West PPT课件\\095_Journey to the West 95_The Raptor Demon.pptx",
+      "sha256": "76f8ac7b3ebf6c6bcb85f03b50be7df98cf087051022cf27c1709e878222f475",
+      "pages": 20
+    },
+    {
+      "kind": "official_quiz_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+      "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929",
+      "pages": 131
+    },
+    {
+      "kind": "intensive_reader_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\02-西游记精读版台词本\\1、带标注版PDF 108集\\095 大鹏怪 上.pdf",
+      "sha256": "53d816a8a4170c8ec4579479fbcfc6015e3694dd86bcc32e15eb5d118e8567e2",
+      "pages": 4
+    },
+    {
+      "kind": "intensive_reader_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\02-西游记精读版台词本\\1、带标注版PDF 108集\\095 大鹏怪 下.pdf",
+      "sha256": "7c68b2d5a2e9a595eb4b9dad18cc9767a8d9f2f4a825a9147827616510135516",
+      "pages": 4
+    },
+    {
+      "kind": "courseware_screenshots_pptx",
+      "file": "G:\\Game\\BookPlay书戏\\data\\西游记课件\\西游记-外教课动画截图\\Journey to the West 095  The Raptor Demon_28503526.pptx",
+      "sha256": "9b6522f708eeaed9be97422971ada91eb28106a431f99bc6d9edca2ead5262e0",
+      "pages": 46
+    }
+  ],
+  "cards": [
+    {
+      "card_id": "ep095-official-quiz-001",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 1,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "which is true?",
+        "zh": "哪一个是真的？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "wukong went to the thunderclap monastery.",
+            "zh": "悟空去了雷音寺。"
+          },
+          {
+            "id": "b",
+            "en": "buddha started a rumor about the demons.",
+            "zh": "佛陀散布了关于恶魔的谣言。"
+          },
+          {
+            "id": "c",
+            "en": "the demons said they ate the tang monk.",
+            "zh": "妖怪们说他们吃了唐僧。"
+          }
+        ],
+        "answer": "c",
+        "answer_evidence": [
+          {
+            "node_id": "n030",
+            "quote": "\"They ate the Tang Monk, and now they'll live forever,\" said the first fiend."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 115,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep095-official-quiz-002",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 2,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "what was the raptor's plan?",
+        "zh": "捕食者的计划是什么？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "tell every demon they ate the tang monk",
+            "zh": "告诉每个恶魔他们吃了唐僧"
+          },
+          {
+            "id": "b",
+            "en": "fry the tang monk with garlic and spices",
+            "zh": "用大蒜和香料炸唐僧"
+          },
+          {
+            "id": "c",
+            "en": "break the elephant's teeth",
+            "zh": "打断大象的牙齿"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n016",
+            "quote": "\"Well, this time I have a plan,\" said the raptor."
+          },
+          {
+            "node_id": "n017",
+            "quote": "\"We'll start a rumor. We'll tell every demon nearby that we've already eaten the Tang Monk. When Wukong hears that, he'll give up hope and leave the area.\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 115,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep095-official-quiz-003",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 3,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "why was wukong heartbroken?",
+        "zh": "悟空为什么心碎？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "he thought the tang monk was eaten.",
+            "zh": "他以为唐僧被吃了。"
+          },
+          {
+            "id": "b",
+            "en": "he thought bajie was pickled.",
+            "zh": "他认为八戒被腌了。"
+          },
+          {
+            "id": "c",
+            "en": "he couldn't defeat the demons.",
+            "zh": "他无法打败这些恶魔。"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n030",
+            "quote": "\"They ate the Tang Monk, and now they'll live forever,\" said the first fiend."
+          },
+          {
+            "node_id": "n035",
+            "quote": "Wukong was heartbroken."
+          },
+          {
+            "node_id": "n037",
+            "quote": "\"I failed you, Master! I couldn't protect you, and now you'll never reach the Western Paradise!\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 115,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep095-official-quiz-004",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 4,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "what did the demons want wukong to do?",
+        "zh": "恶魔想让悟空做什么？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "give up hope",
+            "zh": "放弃希望"
+          },
+          {
+            "id": "b",
+            "en": "eat the tang monk",
+            "zh": "吃唐僧"
+          },
+          {
+            "id": "c",
+            "en": "talk to buddha",
+            "zh": "与佛交谈"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n051",
+            "quote": "\"I can see everything in the universe. I know exactly who those demons are and what they did. They tricked you into thinking they'd eaten the Tang Monk. They wanted you to give up hope.\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 115,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep095-official-quiz-005",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 5,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "what did buddha do to the demons?",
+        "zh": "佛陀对那些恶魔做了什么？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "he turned them into ordinary animals.",
+            "zh": "他把它们变成了普通的动物。"
+          },
+          {
+            "id": "b",
+            "en": "he fried them with garlic and spices.",
+            "zh": "他用大蒜和香料把它们煎了。"
+          },
+          {
+            "id": "c",
+            "en": "he made them all disappear.",
+            "zh": "他让他们都消失了。"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n056",
+            "quote": "The lion demon shouted, \"How dare you—\" Suddenly he looked up and saw an enormous figure. \"Buddha!\""
+          },
+          {
+            "node_id": "n058",
+            "quote": "Light flashed as Buddha turned the two demons into ordinary animals."
+          },
+          {
+            "node_id": "n061",
+            "quote": "But Buddha raised a finger, and the bird was paralyzed in midair."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 115,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep095-vocab-001",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 101,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "right",
+        "zh": "权利"
+      },
+      "payload": {
+        "term": "right",
+        "ipa": "raɪt",
+        "pos": "adj.",
+        "def": "adj.正确的,适当的,右边的 adv.向右边,立即 n.[sing.]右边[C,U]权利",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "095 大鹏怪 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "53d816a8a4170c8ec4579479fbcfc6015e3694dd86bcc32e15eb5d118e8567e2"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep095-vocab-002",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 102,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "area",
+        "zh": "地域,地区;部位,领域"
+      },
+      "payload": {
+        "term": "area",
+        "ipa": "ˈeəriə",
+        "pos": "n.",
+        "def": "n.[C]地域,地区;部位,领域",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "095 大鹏怪 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "53d816a8a4170c8ec4579479fbcfc6015e3694dd86bcc32e15eb5d118e8567e2"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep095-vocab-003",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 103,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "smile",
+        "zh": "微笑"
+      },
+      "payload": {
+        "term": "smile",
+        "ipa": "smaɪ",
+        "pos": "vi.",
+        "def": "微笑",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          2
+        ],
+        "gloss": "微笑"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "095 大鹏怪 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "53d816a8a4170c8ec4579479fbcfc6015e3694dd86bcc32e15eb5d118e8567e2"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "095 大鹏怪 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "7c68b2d5a2e9a595eb4b9dad18cc9767a8d9f2f4a825a9147827616510135516"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep095-vocab-004",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 104,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "say",
+        "zh": "v.说,讲"
+      },
+      "payload": {
+        "term": "say",
+        "ipa": "seɪ",
+        "pos": "v.",
+        "def": "v.说,讲",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "095 大鹏怪 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "53d816a8a4170c8ec4579479fbcfc6015e3694dd86bcc32e15eb5d118e8567e2"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep095-vocab-005",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 105,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "other",
+        "zh": "其他的"
+      },
+      "payload": {
+        "term": "other",
+        "ipa": "ˈʌðə(r)",
+        "pos": "adj.",
+        "def": "其他的",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ],
+        "gloss": "其他的"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "095 大鹏怪 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "53d816a8a4170c8ec4579479fbcfc6015e3694dd86bcc32e15eb5d118e8567e2"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep095-vocab-006",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 106,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "arrive",
+        "zh": "vi.到达"
+      },
+      "payload": {
+        "term": "arrive",
+        "ipa": "əˈraɪv",
+        "pos": "vi.",
+        "def": "vi.到达",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "095 大鹏怪 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "7c68b2d5a2e9a595eb4b9dad18cc9767a8d9f2f4a825a9147827616510135516"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep095-vocab-007",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 107,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "today",
+        "zh": "今天,当今"
+      },
+      "payload": {
+        "term": "today",
+        "ipa": "təˈdeɪ",
+        "pos": "adv.",
+        "def": "adv.在今天 n.[U]今天,当今",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "095 大鹏怪 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "7c68b2d5a2e9a595eb4b9dad18cc9767a8d9f2f4a825a9147827616510135516"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep095-vocab-008",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 108,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "monkey",
+        "zh": "猴子"
+      },
+      "payload": {
+        "term": "monkey",
+        "ipa": "ˈmʌŋki",
+        "pos": "n.",
+        "def": "n.[C]猴子",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "095 大鹏怪 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "7c68b2d5a2e9a595eb4b9dad18cc9767a8d9f2f4a825a9147827616510135516"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep095-vocab-009",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 109,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "again",
+        "zh": "adv.再一次,又一次"
+      },
+      "payload": {
+        "term": "again",
+        "ipa": "əˈɡen",
+        "pos": "adv.",
+        "def": "adv.再一次,又一次",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "095 大鹏怪 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "7c68b2d5a2e9a595eb4b9dad18cc9767a8d9f2f4a825a9147827616510135516"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep095-vocab-010",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 110,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "eat",
+        "zh": "v.吃"
+      },
+      "payload": {
+        "term": "eat",
+        "ipa": "iːt",
+        "pos": "v.",
+        "def": "v.吃",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "095 大鹏怪 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "7c68b2d5a2e9a595eb4b9dad18cc9767a8d9f2f4a825a9147827616510135516"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep095-vocab-011",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 111,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "sure",
+        "zh": "adv.当然,肯定,一定 adj.确信,确定,一定"
+      },
+      "payload": {
+        "term": "sure",
+        "ipa": "ʃʊə(r)",
+        "pos": "adv.",
+        "def": "adv.当然,肯定,一定 adj.确信,确定,一定",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "095 大鹏怪 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "7c68b2d5a2e9a595eb4b9dad18cc9767a8d9f2f4a825a9147827616510135516"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep095-vocab-012",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 112,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "think",
+        "zh": "v.认为,想。思考"
+      },
+      "payload": {
+        "term": "think",
+        "ipa": "θɪŋk",
+        "pos": "v.",
+        "def": "v.认为,想。思考",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "095 大鹏怪 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "7c68b2d5a2e9a595eb4b9dad18cc9767a8d9f2f4a825a9147827616510135516"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep095-vocab-013",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 113,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "hope",
+        "zh": "希望,期望"
+      },
+      "payload": {
+        "term": "hope",
+        "ipa": "həʊp",
+        "pos": "v.",
+        "def": "v./n.[C,U]希望,期望",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "095 大鹏怪 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "7c68b2d5a2e9a595eb4b9dad18cc9767a8d9f2f4a825a9147827616510135516"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep095-vocab-014",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 114,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "swing",
+        "zh": "摆动,秋千"
+      },
+      "payload": {
+        "term": "swing",
+        "ipa": "swɪŋ",
+        "pos": "n.",
+        "def": "摆动,秋千",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ],
+        "gloss": "摆动,秋千"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "095 大鹏怪 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "7c68b2d5a2e9a595eb4b9dad18cc9767a8d9f2f4a825a9147827616510135516"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep095-vocab-015",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 115,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "burn",
+        "zh": "烧伤"
+      },
+      "payload": {
+        "term": "burn",
+        "ipa": "bɜː (r)n",
+        "pos": "v.",
+        "def": "v.着火,燃烧 n.[C]烧伤",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "095 大鹏怪 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "7c68b2d5a2e9a595eb4b9dad18cc9767a8d9f2f4a825a9147827616510135516"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep095-vocab-016",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 116,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "shoot",
+        "zh": "v.射击,发射;拍摄 n.幼苗"
+      },
+      "payload": {
+        "term": "shoot",
+        "ipa": "ʃuː t",
+        "pos": "v.",
+        "def": "v.射击,发射;拍摄 n.幼苗",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "095 大鹏怪 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "7c68b2d5a2e9a595eb4b9dad18cc9767a8d9f2f4a825a9147827616510135516"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep095-vocab-017",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 117,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "toward",
+        "zh": "prep.朝,向,对着"
+      },
+      "payload": {
+        "term": "toward",
+        "ipa": "təˈwɔː d",
+        "pos": "prep.",
+        "def": "prep.朝,向,对着",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "095 大鹏怪 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "7c68b2d5a2e9a595eb4b9dad18cc9767a8d9f2f4a825a9147827616510135516"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep095-vocab-018",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 118,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "raise",
+        "zh": "vt.募集,征集,提高,举起,养 育,饲养;提出"
+      },
+      "payload": {
+        "term": "raise",
+        "ipa": "reɪz",
+        "pos": "vt.",
+        "def": "vt.募集,征集,提高,举起,养 育,饲养;提出",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "095 大鹏怪 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "7c68b2d5a2e9a595eb4b9dad18cc9767a8d9f2f4a825a9147827616510135516"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep095-vocab-019",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 119,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "finger",
+        "zh": "手指 vt.用手指触摸,拨弄"
+      },
+      "payload": {
+        "term": "finger",
+        "ipa": "ˈfɪŋɡə(r)",
+        "pos": "n.",
+        "def": "n.[C]手指 vt.用手指触摸,拨弄",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "095 大鹏怪 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "7c68b2d5a2e9a595eb4b9dad18cc9767a8d9f2f4a825a9147827616510135516"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep095-vocab-020",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 120,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "look",
+        "zh": "看,注视,外表,表情"
+      },
+      "payload": {
+        "term": "look",
+        "ipa": "lʊk",
+        "pos": "vi.",
+        "def": "vi.看 v.-link.看上去 n.[C]看,注视,外表,表情",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "095 大鹏怪 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "7c68b2d5a2e9a595eb4b9dad18cc9767a8d9f2f4a825a9147827616510135516"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep095-vocab-021",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 121,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "thank",
+        "zh": "谢谢你"
+      },
+      "payload": {
+        "term": "thank",
+        "ipa": "θæŋk",
+        "pos": "vt.",
+        "def": "谢谢你",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ],
+        "gloss": "谢谢你"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "095 大鹏怪 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "7c68b2d5a2e9a595eb4b9dad18cc9767a8d9f2f4a825a9147827616510135516"
+        }
+      ],
+      "review_status": "machine_verified"
+    }
+  ],
+  "teacher_guide": null,
+  "review": {
+    "status": "draft",
+    "reviewed_at": null,
+    "card_stats": {
+      "total": 26,
+      "sentence_choice": 5,
+      "word_review": 21,
+      "machine_verified": 23,
+      "assistant_reviewed": 3,
+      "verified": 26,
+      "needs_review": 0
+    }
+  },
+  "generated_at": "2026-08-31T04:49:49.340138+00:00"
+}

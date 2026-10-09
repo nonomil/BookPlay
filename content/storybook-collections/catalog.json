@@ -1,0 +1,174 @@
+{
+  "schema_version": 1,
+  "description": "跨绘本角色动作、贴纸、勋章、道具与收集册目录。学习闭环只读取证据绑定，奖励不改变学习数值。",
+  "series": {
+    "minecraft": {
+      "title_zh": "《我的世界》分级读物",
+      "title_en": "Minecraft Graded Readers",
+      "room_id": "room.minecraft",
+      "characters": [
+        {
+          "id": "mc-steve",
+          "name_zh": "Steve",
+          "name_en": "Steve",
+          "role_zh": "方块建造师",
+          "bible": "assets/generated/storybooks/minecraft/characters/steve/bible.md",
+          "palette": ["#5B3A29", "#2D8C9E", "#6E4B2A", "#8FD3E8"],
+          "fixed_features": ["方块蓝衫", "棕发", "像素化方肩"],
+          "forbidden_changes": ["改变年龄", "替换蓝衫", "写入可读文字"],
+          "actions": {
+            "idle": "assets/generated/storybooks/minecraft/characters/steve/transparent/idle.png",
+            "listen": "assets/generated/storybooks/minecraft/characters/steve/transparent/listen.png",
+            "build": "assets/generated/storybooks/minecraft/characters/steve/transparent/build.png"
+          }
+        },
+        {
+          "id": "mc-alex",
+          "name_zh": "Alex",
+          "name_en": "Alex",
+          "role_zh": "协作讲解伙伴",
+          "bible": "assets/generated/storybooks/minecraft/characters/alex/bible.md",
+          "palette": ["#C96A2C", "#5AA76A", "#6E4B2A", "#F4CFA1"],
+          "fixed_features": ["橙色长发", "绿色上衣", "紫色裤子"],
+          "forbidden_changes": ["改变发色", "添加武器数值", "写入可读文字"],
+          "actions": {
+            "idle": "assets/generated/storybooks/minecraft/characters/alex/transparent/idle.png",
+            "point": "assets/generated/storybooks/minecraft/characters/alex/transparent/point.png",
+            "rescue": "assets/generated/storybooks/minecraft/characters/alex/transparent/rescue.png"
+          }
+        },
+        {
+          "id": "mc-byte",
+          "name_zh": "Byte",
+          "name_en": "Byte",
+          "role_zh": "忠诚狼伙伴",
+          "bible": "assets/generated/storybooks/minecraft/characters/byte/bible.md",
+          "palette": ["#8B8F99", "#4A90B8", "#D9E2EA"],
+          "fixed_features": ["蓝色项圈", "方块耳朵", "尾巴上翘"],
+          "forbidden_changes": ["改变为真实写实狼", "移除项圈", "攻击性血腥"],
+          "actions": {
+            "idle": "assets/generated/storybooks/minecraft/characters/byte/transparent/idle.png",
+            "high-five": "assets/generated/storybooks/minecraft/characters/byte/transparent/high-five.png"
+          }
+        }
+      ],
+      "action_sets": [
+        {"id": "listen", "duration_ms": 900, "loop": true, "css": "character-listen"},
+        {"id": "high-five", "duration_ms": 700, "loop": false, "css": "character-high-five"},
+        {"id": "celebrate", "duration_ms": 1200, "loop": false, "css": "character-celebrate"}
+      ],
+      "planned_actions": ["mc-steve.defend", "mc-steve.celebrate", "mc-alex.think", "mc-byte.listen", "mc-byte.fetch"],
+      "sticker_themes": [
+        {
+          "id": "mc-block-adventure",
+          "chapter": 1,
+          "from": 1,
+          "to": 5,
+          "title_zh": "方块冒险",
+          "title_en": "Block Adventure",
+          "shape": "pixel-shield",
+          "tone": "nether-violet",
+          "motifs": ["golden-helmet", "loyal-wolf", "nether-portal", "ghast", "treasure-chest"]
+        }
+      ],
+      "badges": [
+        {"id": "minecraft.first-block", "title_zh": "第一块方块", "title_en": "First Block", "condition": {"type": "episodes", "count": 1}, "asset": "assets/generated/storybooks/minecraft/rewards/badges/first-block.png"},
+        {"id": "minecraft.nether-scout", "title_zh": "下界侦察员", "title_en": "Nether Scout", "condition": {"type": "collection", "collection_id": "mc-block-adventure"}, "asset": "assets/generated/storybooks/minecraft/rewards/badges/nether-scout.png"},
+        {"id": "minecraft.complete", "title_zh": "方块远征完成", "title_en": "Block Expedition Complete", "condition": {"type": "complete"}, "asset": "assets/generated/storybooks/minecraft/rewards/badges/block-expedition-complete.png"}
+      ],
+      "rooms": {
+        "room.minecraft": {
+          "title_zh": "下界小屋",
+          "title_en": "Nether Nook",
+          "background": "assets/generated/storybooks/minecraft/room/room-bg.png",
+          "slots": ["shelf.left", "shelf.center", "shelf.right", "floor.left", "floor.right"]
+        }
+      }
+    },
+    "mikey-jj": {
+      "title_zh": "Mikey & JJ 英文冒险",
+      "title_en": "Mikey & JJ English Adventures",
+      "room_id": "room.mikey-jj",
+      "characters": [
+        {
+          "id": "mikey",
+          "name_zh": "Mikey",
+          "name_en": "Mikey",
+          "role_zh": "冲动而好奇的行动派",
+          "bible": "assets/generated/storybooks/mikey-jj/characters/mikey/bible.md",
+          "palette": ["#D94D3F", "#F4C542", "#3E3A45", "#F4CFA1"],
+          "fixed_features": ["红色连帽衫", "卷发", "深色短裤"],
+          "forbidden_changes": ["改变发色", "移除连帽衫", "写入可读文字"],
+          "actions": {
+            "idle": "assets/generated/storybooks/mikey-jj/characters/mikey/transparent/idle.png",
+            "point": "assets/generated/storybooks/mikey-jj/characters/mikey/transparent/point.png",
+            "celebrate": "assets/generated/storybooks/mikey-jj/characters/mikey/transparent/celebrate.png"
+          }
+        },
+        {
+          "id": "jj",
+          "name_zh": "JJ",
+          "name_en": "JJ",
+          "role_zh": "观察细致的计划派",
+          "bible": "assets/generated/storybooks/mikey-jj/characters/jj/bible.md",
+          "palette": ["#3E78C5", "#F6CF45", "#34495E", "#F4CFA1"],
+          "fixed_features": ["蓝色上衣", "黄色鞋", "直发"],
+          "forbidden_changes": ["改变服饰主色", "改变身高差", "写入可读文字"],
+          "actions": {
+            "idle": "assets/generated/storybooks/mikey-jj/characters/jj/transparent/idle.png",
+            "listen": "assets/generated/storybooks/mikey-jj/characters/jj/transparent/listen.png",
+            "celebrate": "assets/generated/storybooks/mikey-jj/characters/jj/transparent/celebrate.png"
+          }
+        },
+        {
+          "id": "mikey-jj-duo",
+          "name_zh": "Mikey & JJ",
+          "name_en": "Mikey & JJ",
+          "role_zh": "双人冒险小队",
+          "bible": "assets/generated/storybooks/mikey-jj/characters/duo/bible.md",
+          "palette": ["#D94D3F", "#3E78C5", "#F6CF45", "#F4CFA1"],
+          "fixed_features": ["Mikey/JJ 身高差", "红蓝服装对比", "双人并肩构图"],
+          "forbidden_changes": ["交换服装", "改变两人身高关系", "攻击性血腥"],
+          "actions": {
+            "high-five": "assets/generated/storybooks/mikey-jj/characters/duo/transparent/high-five.png",
+            "defend": "assets/generated/storybooks/mikey-jj/characters/duo/transparent/defend.png",
+            "rescue": "assets/generated/storybooks/mikey-jj/characters/duo/transparent/rescue.png"
+          }
+        }
+      ],
+      "action_sets": [
+        {"id": "listen", "duration_ms": 900, "loop": true, "css": "character-listen"},
+        {"id": "think", "duration_ms": 850, "loop": true, "css": "character-think"},
+        {"id": "high-five", "duration_ms": 700, "loop": false, "css": "character-high-five"},
+        {"id": "celebrate", "duration_ms": 1200, "loop": false, "css": "character-celebrate"}
+      ],
+      "planned_actions": ["mikey.build", "mikey.think", "jj.rescue", "jj.high-five", "mikey-jj-duo.celebrate"],
+      "sticker_themes": [
+        {
+          "id": "mikey-jj-school-escape",
+          "chapter": 1,
+          "from": 1,
+          "to": 10,
+          "title_zh": "校园逃生",
+          "title_en": "School Escape",
+          "shape": "pixel-burst",
+          "tone": "school-blue",
+          "motifs": ["rooftop-helicopter", "golden-apple", "healing-potion", "school-key", "zombie-alert"]
+        }
+      ],
+      "badges": [
+        {"id": "mikey-jj.first-escape", "title_zh": "第一次逃生", "title_en": "First Escape", "condition": {"type": "episodes", "count": 1}, "asset": "assets/generated/storybooks/mikey-jj/rewards/badges/first-escape.png"},
+        {"id": "mikey-jj.rooftop-team", "title_zh": "屋顶小队", "title_en": "Rooftop Team", "condition": {"type": "collection", "collection_id": "mikey-jj-school-escape"}, "asset": "assets/generated/storybooks/mikey-jj/rewards/badges/rooftop-team.png"},
+        {"id": "mikey-jj.complete", "title_zh": "冒险全收集", "title_en": "Adventure Complete", "condition": {"type": "complete"}, "asset": "assets/generated/storybooks/mikey-jj/rewards/badges/adventure-complete.png"}
+      ],
+      "rooms": {
+        "room.mikey-jj": {
+          "title_zh": "Mikey & JJ 冒险墙",
+          "title_en": "Mikey & JJ Adventure Wall",
+          "background": "assets/generated/storybooks/mikey-jj/room/room-bg.png",
+          "slots": ["shelf.left", "shelf.center", "shelf.right", "floor.left", "floor.right"]
+        }
+      }
+    }
+  }
+}

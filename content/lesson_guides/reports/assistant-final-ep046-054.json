@@ -1,0 +1,812 @@
+{
+  "reviewer": "codex-worker",
+  "episodes": "46-54",
+  "answers": [
+    {
+      "episode": 46,
+      "number": 1,
+      "answer": 0,
+      "answer_letter": "A",
+      "evidence": [
+        {
+          "node_id": "n044",
+          "quote": "Light sparkled around the king, and then his eyes popped open."
+        },
+        {
+          "node_id": "n047",
+          "quote": "\"I'm alive again!\""
+        },
+        {
+          "node_id": "n065",
+          "quote": "The Daoist snapped his fingers and vanished."
+        }
+      ],
+      "confidence": 0.55,
+      "rationale": "[题意歧义] 按“本集发生的事实”选择 A：本集明确写国王复活（B）且道士消失（C），却没有把“悟空曾大闹天宫”作为本集事件；但放到整部故事中 A 也是真事，因此本题严格说没有唯一的全局假项。B、C 均不能选作“不真实”。"
+    },
+    {
+      "episode": 46,
+      "number": 4,
+      "answer": 0,
+      "answer_letter": "A",
+      "evidence": [
+        {
+          "node_id": "n006",
+          "quote": "\"Don't!\" cried Wukong. \"I'll ask Laozi for help. He makes pills that can make people live forever. Maybe he makes pills that can bring people back to life.\""
+        }
+      ],
+      "confidence": 0.99,
+      "rationale": "A 正确：悟空明确说老子的丹药可使人长生；B 不成立，丹药本身不会“大闹天宫”；C 不成立，故事说的是长生和起死回生，不是立刻杀人。"
+    },
+    {
+      "episode": 46,
+      "number": 5,
+      "answer": 0,
+      "answer_letter": "A",
+      "evidence": [
+        {
+          "node_id": "n059",
+          "quote": "The Daoist looked at a person standing near them."
+        },
+        {
+          "node_id": "n060",
+          "quote": "The person was wearing a hood."
+        },
+        {
+          "node_id": "n061",
+          "quote": "\"Who is that man wearing the hood?\""
+        },
+        {
+          "node_id": "n062",
+          "quote": "The man pulled the hood back and showed his face."
+        },
+        {
+          "node_id": "n063",
+          "quote": "The Daoist gasped. \"The king!\""
+        }
+      ],
+      "confidence": 0.99,
+      "rationale": "A 正确：戴兜帽的人揭开后正是真国王；B 不成立，道士在王座处且询问兜帽人身份；C 不成立，唐僧也不是兜帽人。"
+    },
+    {
+      "episode": 47,
+      "number": 1,
+      "answer": 0,
+      "answer_letter": "A",
+      "evidence": [
+        {
+          "node_id": "n043",
+          "quote": "But the monk changed into a green lion and ran out of the throne room."
+        },
+        {
+          "node_id": "n049",
+          "quote": "Wukong pulled out his iron bar and raised it to strike."
+        },
+        {
+          "node_id": "n050",
+          "quote": "Just then a deep voice called out, \"Do not hit him, Sun Wukong!\""
+        },
+        {
+          "node_id": "n053",
+          "quote": "\"This green lion is my pet,\" said the bodhisattva."
+        },
+        {
+          "node_id": "n054",
+          "quote": "\"The king of the Black Rooster Kingdom was cruel to someone many years ago. So my lion came to Earth to punish him. The king's punishment is over now.\""
+        },
+        {
+          "node_id": "n055",
+          "quote": "The bodhisattva and the lion disappeared above the clouds."
+        }
+      ],
+      "confidence": 0.99,
+      "rationale": "A 不成立：悟空正要击打绿狮时被文殊叫停，狮子随后随文殊离开，悟空没有击败它；B 成立，假唐僧变成绿狮；C 成立，道士消失后伪装成假唐僧。"
+    },
+    {
+      "episode": 47,
+      "number": 2,
+      "answer": 0,
+      "answer_letter": "A",
+      "evidence": [
+        {
+          "node_id": "n028",
+          "quote": "\"The two Tang Monks should recite the Tight Headband spell,\" said the pig."
+        },
+        {
+          "node_id": "n029",
+          "quote": "\"Only the Tang Monk, Guanyin, and Buddha know the spell. We'll know right away which Tang Monk is fake.\""
+        },
+        {
+          "node_id": "n034",
+          "quote": "Both monks began speaking, and Wukong fell to the floor."
+        },
+        {
+          "node_id": "n037",
+          "quote": "One of them was reciting the spell."
+        },
+        {
+          "node_id": "n038",
+          "quote": "But the other one wasn't."
+        },
+        {
+          "node_id": "n039",
+          "quote": "\"This is the fake Tang Monk!\" shouted the pig, pointing."
+        },
+        {
+          "node_id": "n041",
+          "quote": "The real monk stopped reciting the spell."
+        }
+      ],
+      "confidence": 0.99,
+      "rationale": "A 正确：真假唐僧念紧箍咒时，只有真唐僧实际施法，八戒据此找出假货；B 不成立，铁棒没有用于辨认；C 不成立，绿狮是被识破后的假唐僧，不是帮助辨认者。"
+    },
+    {
+      "episode": 47,
+      "number": 4,
+      "answer": 0,
+      "answer_letter": "A",
+      "evidence": [
+        {
+          "node_id": "n053",
+          "quote": "\"This green lion is my pet,\" said the bodhisattva."
+        },
+        {
+          "node_id": "n054",
+          "quote": "\"The king of the Black Rooster Kingdom was cruel to someone many years ago. So my lion came to Earth to punish him. The king's punishment is over now.\""
+        }
+      ],
+      "confidence": 0.99,
+      "rationale": "A 正确：文殊明确说国王因多年前残酷对待某人而受罚；B 不成立，原文没有说国王杀人；C 不成立，也没有说国王偷窃。"
+    },
+    {
+      "episode": 47,
+      "number": 5,
+      "answer": 0,
+      "answer_letter": "A",
+      "evidence": [
+        {
+          "node_id": "n060",
+          "quote": "One day Wukong saw a mysterious red cloud over the mountains ahead."
+        },
+        {
+          "node_id": "n063",
+          "quote": "The red cloud disappeared."
+        },
+        {
+          "node_id": "n067",
+          "quote": "Wukong saw the red cloud again."
+        },
+        {
+          "node_id": "n070",
+          "quote": "But then the red cloud reappeared."
+        }
+      ],
+      "confidence": 0.99,
+      "rationale": "A 正确：反复出现的是神秘红云；B 不成立，不是绿云；C 不成立，也不是紫云。"
+    },
+    {
+      "episode": 48,
+      "number": 1,
+      "answer": 0,
+      "answer_letter": "A",
+      "evidence": [
+        {
+          "node_id": "n041",
+          "quote": "The group continued west, with Wukong carrying the boy on his back."
+        },
+        {
+          "node_id": "n042",
+          "quote": "The monkey walked slowly, and soon his companions were far ahead."
+        },
+        {
+          "node_id": "n063",
+          "quote": "Wukong looked frantically around. \"Where's Master?\""
+        },
+        {
+          "node_id": "n064",
+          "quote": "\"Oh no!\" cried Bajie."
+        },
+        {
+          "node_id": "n065",
+          "quote": "\"That boy <font color=\"#ffff00\"><i>was</i></font> a demon. He kidnapped Master!\""
+        }
+      ],
+      "confidence": 0.99,
+      "rationale": "A 正确：八戒最后明确意识到男孩是妖怪并绑走师父；B 不成立，背男孩的是悟空而非悟净；C 不成立，悟空走得慢并落在同伴后面，不是走在最前。"
+    },
+    {
+      "episode": 48,
+      "number": 2,
+      "answer": 0,
+      "answer_letter": "A",
+      "evidence": [
+        {
+          "node_id": "n001",
+          "quote": "Wukong stared at the mountains."
+        },
+        {
+          "node_id": "n002",
+          "quote": "\"A red cloud keeps appearing over those mountains,\" he said."
+        },
+        {
+          "node_id": "n003",
+          "quote": "\"There must be a demon ahead.\""
+        }
+      ],
+      "confidence": 0.99,
+      "rationale": "A 正确：悟空因山上反复出现红云而判断前方有妖怪；B 不成立，强风是后来男孩施法时才出现；C 不成立，劫匪只是男孩伪造的说辞。"
+    },
+    {
+      "episode": 48,
+      "number": 3,
+      "answer": 0,
+      "answer_letter": "A",
+      "evidence": [
+        {
+          "node_id": "n013",
+          "quote": "\"Uh-oh. The monk's companions have their weapons out. They probably saw my red cloud. I'll have to trick them with a disguise.\""
+        },
+        {
+          "node_id": "n014",
+          "quote": "The demon made himself look like a scared little boy."
+        },
+        {
+          "node_id": "n015",
+          "quote": "Then he went down to the road, sat alongside it, and waited."
+        }
+      ],
+      "confidence": 0.99,
+      "rationale": "A 正确：红孩儿把自己伪装成受惊的小男孩；B 不成立，他没有伪装成和尚；C 不成立，他也没有伪装成劫匪。"
+    },
+    {
+      "episode": 48,
+      "number": 5,
+      "answer": 0,
+      "answer_letter": "A",
+      "evidence": [
+        {
+          "node_id": "n063",
+          "quote": "Wukong looked frantically around. \"Where's Master?\""
+        },
+        {
+          "node_id": "n064",
+          "quote": "\"Oh no!\" cried Bajie."
+        },
+        {
+          "node_id": "n065",
+          "quote": "\"That boy <font color=\"#ffff00\"><i>was</i></font> a demon. He kidnapped Master!\""
+        }
+      ],
+      "confidence": 0.99,
+      "rationale": "A 正确：八戒确认妖怪绑走了唐僧；B 不成立，声称腿受伤的是男孩伪装；C 不成立，唐僧没有跌下悬崖。"
+    },
+    {
+      "episode": 49,
+      "number": 1,
+      "answer": 0,
+      "answer_letter": "A",
+      "evidence": [
+        {
+          "node_id": "n050",
+          "quote": "\"I also have a powerful weapon,\" said Red Boy."
+        },
+        {
+          "node_id": "n051",
+          "quote": "\"I'll show it to you.\""
+        },
+        {
+          "node_id": "n052",
+          "quote": "The demon punched himself in the nose."
+        },
+        {
+          "node_id": "n053",
+          "quote": "Smoke poured from his nostrils, and fire shot from his mouth."
+        }
+      ],
+      "confidence": 0.99,
+      "rationale": "A 正确：红孩儿为施展烟火魔法打了自己的鼻子；B 不成立，红孩儿的父亲是牛魔王，不是悟空；C 不成立，他拒绝归还唐僧。"
+    },
+    {
+      "episode": 49,
+      "number": 2,
+      "answer": 0,
+      "answer_letter": "A",
+      "evidence": [
+        {
+          "node_id": "n022",
+          "quote": "\"Red Boy is very powerful. His father is the Bull Demon King, one of the most horrible demons ever.\""
+        },
+        {
+          "node_id": "n027",
+          "quote": "\"The Bull Demon King is an old friend of mine!\" said Wukong."
+        },
+        {
+          "node_id": "n028",
+          "quote": "\"Before I caused trouble in Heaven, I was friends with a group of demon kings. The Bull Demon King was one of them. When I tell Red Boy who I am, he'll release the Tang Monk right away!\""
+        }
+      ],
+      "confidence": 0.99,
+      "rationale": "A 正确：悟空明确说牛魔王是自己以前的朋友；B 不成立，山神只是提供线索；C 不成立，红孩儿不是悟空在天庭的朋友。"
+    },
+    {
+      "episode": 49,
+      "number": 5,
+      "answer": 0,
+      "answer_letter": "A",
+      "evidence": [
+        {
+          "node_id": "n052",
+          "quote": "The demon punched himself in the nose."
+        },
+        {
+          "node_id": "n053",
+          "quote": "Smoke poured from his nostrils, and fire shot from his mouth."
+        },
+        {
+          "node_id": "n054",
+          "quote": "A moment later flames covered the entire mountainside!"
+        }
+      ],
+      "confidence": 0.99,
+      "rationale": "A 正确：红孩儿喷火后整片山坡被火焰覆盖；B 不成立，山没有只被尘土覆盖；C 不成立，也没有降雪。"
+    },
+    {
+      "episode": 50,
+      "number": 1,
+      "answer": 0,
+      "answer_letter": "A",
+      "evidence": [
+        {
+          "node_id": "n012",
+          "quote": "When he returned, the Dragon King of the Eastern Sea was with him."
+        },
+        {
+          "node_id": "n014",
+          "quote": "\"I can summon rain clouds,\" said the Dragon King."
+        },
+        {
+          "node_id": "n015",
+          "quote": "\"Go back up the mountain, and get Red Boy to come out. As soon as he makes his fire, I'll create a huge rainstorm.\""
+        },
+        {
+          "node_id": "n031",
+          "quote": "Coughing and unable to breathe, Wukong covered his face."
+        },
+        {
+          "node_id": "n036",
+          "quote": "Finally he washed up on the riverbank, coughing and wheezing."
+        },
+        {
+          "node_id": "n044",
+          "quote": "\"I'll ask Guanyin for help,\" said Wukong, standing up."
+        },
+        {
+          "node_id": "n045",
+          "quote": "\"You rest,\" said Bajie."
+        },
+        {
+          "node_id": "n046",
+          "quote": "\"You breathed in a lot of smoke. I'll go to Guanyin.\""
+        },
+        {
+          "node_id": "n047",
+          "quote": "The monkey coughed again."
+        },
+        {
+          "node_id": "n048",
+          "quote": "\"Okay, Bajie. But go straight to Guanyin. No naps!\""
+        }
+      ],
+      "confidence": 0.95,
+      "rationale": "A 正确：八戒主动提出代替受烟影响的悟空去找观音，悟空同意并命令他直奔观音，构成“悟空派八戒去”；B 不成立，龙王实际随悟空前来并主动制定降雨方案；C 不成立，故事中咳嗽、喘气并被说“你吸了很多烟”的主体是悟空，八戒是说话者。此判定也与原始 PDF 第59页题干一致，但与声称的 C 答案冲突。"
+    },
+    {
+      "episode": 50,
+      "number": 2,
+      "answer": 0,
+      "answer_letter": "A",
+      "evidence": [
+        {
+          "node_id": "n010",
+          "quote": "Wukong nodded. \"You two wait here. I know who can help us.\""
+        },
+        {
+          "node_id": "n011",
+          "quote": "The monkey shot into the air and flew away."
+        },
+        {
+          "node_id": "n012",
+          "quote": "When he returned, the Dragon King of the Eastern Sea was with him."
+        },
+        {
+          "node_id": "n013",
+          "quote": "Wukong introduced the Dragon King to Bajie and Wujing."
+        }
+      ],
+      "confidence": 0.99,
+      "rationale": "A 正确：悟空返回山边时带来东海龙王；B 不成立，红孩儿本来就在山上；C 不成立，此时悟空没有带观音来。"
+    },
+    {
+      "episode": 50,
+      "number": 4,
+      "answer": 0,
+      "answer_letter": "A",
+      "evidence": [
+        {
+          "node_id": "n027",
+          "quote": "Rain poured down."
+        },
+        {
+          "node_id": "n028",
+          "quote": "The fire, however, didn't go out."
+        },
+        {
+          "node_id": "n029",
+          "quote": "Instead it grew—bigger and bigger."
+        },
+        {
+          "node_id": "n041",
+          "quote": "\"That fire is no ordinary fire. The water made it worse.\""
+        }
+      ],
+      "confidence": 0.99,
+      "rationale": "A 正确：雨水没有灭火，反而让火越烧越大；B 不成立，水没有把火扑灭；C 不成立，火也没有变小。"
+    },
+    {
+      "episode": 51,
+      "number": 1,
+      "answer": 0,
+      "answer_letter": "A",
+      "evidence": [
+        {
+          "node_id": "n014",
+          "quote": "The demon locked Bajie in a room."
+        },
+        {
+          "node_id": "n016",
+          "quote": "Wukong frowned. \"He probably stopped to take a nap. That pig is so lazy.\""
+        },
+        {
+          "node_id": "n027",
+          "quote": "\"Aha!\" thought Wukong. \"Bajie didn't take a nap after all. I must go to the real Guanyin right away.\""
+        },
+        {
+          "node_id": "n033",
+          "quote": "\"The Tang Monk was caught by a demon named Red Boy. The demon makes magic fire that water can't put out. Bajie was on his way here to ask for your help. But the demon made himself look like you and tricked the pig.\""
+        },
+        {
+          "node_id": "n034",
+          "quote": "Guanyin's face burned with anger."
+        },
+        {
+          "node_id": "n035",
+          "quote": "\"How dare that demon make himself look like me!\""
+        }
+      ],
+      "confidence": 0.99,
+      "rationale": "A 正确：观音得知红孩儿冒充自己后怒火中烧；B 不成立，悟空潜入洞中确认八戒并未停下睡觉；C 不成立，被困在洞里的是八戒，悟净留在外面。"
+    },
+    {
+      "episode": 51,
+      "number": 2,
+      "answer": 0,
+      "answer_letter": "A",
+      "evidence": [
+        {
+          "node_id": "n006",
+          "quote": "Bajie and the fake Guanyin flew to Red Boy's cave."
+        },
+        {
+          "node_id": "n008",
+          "quote": "Red Boy returned to his normal appearance and then sneaked up behind Bajie."
+        },
+        {
+          "node_id": "n009",
+          "quote": "He threw a sack over the pig."
+        },
+        {
+          "node_id": "n013",
+          "quote": "\"I'm Red Boy! And now you're trapped!\""
+        },
+        {
+          "node_id": "n014",
+          "quote": "The demon locked Bajie in a room."
+        }
+      ],
+      "confidence": 0.99,
+      "rationale": "A 正确：红孩儿恢复原形后用袋子罩住八戒并将他锁起；B 不成立，他没有在此抓住悟空；C 不成立，出现的观音是红孩儿伪装，不是真观音被抓。"
+    },
+    {
+      "episode": 52,
+      "number": 1,
+      "answer": 0,
+      "answer_letter": "A",
+      "evidence": [
+        {
+          "node_id": "n061",
+          "quote": "Red Boy sat down on the platform."
+        },
+        {
+          "node_id": "n062",
+          "quote": "Instantly the platform turned back into swords, which surrounded the demon."
+        },
+        {
+          "node_id": "n063",
+          "quote": "Sharp points stuck at him on all sides."
+        },
+        {
+          "node_id": "n064",
+          "quote": "\"Oh no!\" cried Red Boy. \"I'm trapped!\""
+        }
+      ],
+      "confidence": 0.99,
+      "rationale": "A 正确：红孩儿坐上莲台后被变回的剑阵困住；B 不成立，观音制造的是魔法水而非魔法火；C 不成立，砸破洞门的是悟空，不是悟净。"
+    },
+    {
+      "episode": 52,
+      "number": 2,
+      "answer": 0,
+      "answer_letter": "A",
+      "evidence": [
+        {
+          "node_id": "n009",
+          "quote": "\"Please make sure all the animals are far, far away from the mountain.\""
+        },
+        {
+          "node_id": "n013",
+          "quote": "First he saw some small animals scurry out from under bushes."
+        },
+        {
+          "node_id": "n014",
+          "quote": "Birds flew from branches."
+        },
+        {
+          "node_id": "n015",
+          "quote": "Then tigers, bears, and other large animals stampeded down the mountainside."
+        },
+        {
+          "node_id": "n016",
+          "quote": "Soon there wasn't a single animal anywhere near the mountain."
+        }
+      ],
+      "confidence": 0.99,
+      "rationale": "A 正确：观音要求山神让动物远离山，动物随后跑下山直到附近一只不剩；B 不成立，它们不是跑向山上；C 不成立，也没有跑进洞穴。"
+    },
+    {
+      "episode": 52,
+      "number": 4,
+      "answer": 0,
+      "answer_letter": "A",
+      "evidence": [
+        {
+          "node_id": "n031",
+          "quote": "\"Ha!\" Red Boy laughed and then punched himself in the nose. Nothing happened."
+        },
+        {
+          "node_id": "n032",
+          "quote": "\"Why didn't my fire magic work?\" asked the demon."
+        },
+        {
+          "node_id": "n033",
+          "quote": "Then he noticed the ocean surrounding his mountain."
+        },
+        {
+          "node_id": "n034",
+          "quote": "Wukong laughed. \"That is magic water, brought here by the bodhisattva Guanyin. You can't make fire anywhere near it.\""
+        }
+      ],
+      "confidence": 0.99,
+      "rationale": "A 正确：悟空明确说观音带来的魔法水使红孩儿无法在附近生火；B 不成立，没有魔法山造成这一效果；C 不成立，动物已被疏散，也不是原因。"
+    },
+    {
+      "episode": 53,
+      "number": 1,
+      "answer": 0,
+      "answer_letter": "A",
+      "evidence": [
+        {
+          "node_id": "n002",
+          "quote": "The demon was trapped by the swords, all pointed at his face."
+        },
+        {
+          "node_id": "n003",
+          "quote": "\"Get these swords away from me!\" cried the demon."
+        },
+        {
+          "node_id": "n011",
+          "quote": "Red Boy charged toward Guanyin."
+        },
+        {
+          "node_id": "n016",
+          "quote": "\"Evil demon!\" said Guanyin."
+        },
+        {
+          "node_id": "n017",
+          "quote": "\"How dare you try to attack me!\""
+        },
+        {
+          "node_id": "n025",
+          "quote": "Wukong went into Red Boy's cave and freed the Tang Monk."
+        },
+        {
+          "node_id": "n026",
+          "quote": "Then he found Bajie and freed him."
+        }
+      ],
+      "confidence": 0.99,
+      "rationale": "A 不成立：剑尖围住红孩儿时他害怕并要求移开，剑确实吓到了他；B 成立，他获释后冲向观音；C 成立，唐僧和八戒都被红孩儿绑架，随后由悟空分别释放。"
+    },
+    {
+      "episode": 53,
+      "number": 2,
+      "answer": 0,
+      "answer_letter": "A",
+      "evidence": [
+        {
+          "node_id": "n004",
+          "quote": "\"You must become a Buddhist,\" said Guanyin."
+        },
+        {
+          "node_id": "n005",
+          "quote": "\"Then I'll release you.\""
+        },
+        {
+          "node_id": "n006",
+          "quote": "\"I promise!\" cried Red Boy."
+        },
+        {
+          "node_id": "n007",
+          "quote": "\"I'll do whatever you say!\""
+        }
+      ],
+      "confidence": 0.99,
+      "rationale": "A 正确：红孩儿答应成为佛教徒并听从观音；B 不成立，他没有以释放唐僧作为承诺内容；C 不成立，划独木舟发生在之后且不是他的承诺。"
+    },
+    {
+      "episode": 53,
+      "number": 4,
+      "answer": 0,
+      "answer_letter": "A",
+      "evidence": [
+        {
+          "node_id": "n047",
+          "quote": "\"I would be happy to take you all across. But as you can see, my canoe is not very big. I can take only two passengers at a time.\""
+        },
+        {
+          "node_id": "n050",
+          "quote": "The monkey was about to say something when Bajie stepped forward."
+        },
+        {
+          "node_id": "n051",
+          "quote": "\"The Tang Monk and I will go first,\" said the pig."
+        },
+        {
+          "node_id": "n055",
+          "quote": "The monkey bit his lip as the monk and Bajie climbed into the canoe."
+        },
+        {
+          "node_id": "n056",
+          "quote": "They sat down, and the man paddled away from shore."
+        }
+      ],
+      "confidence": 0.99,
+      "rationale": "A 正确：船夫一次只载两人，唐僧与八戒先上船，悟空没有上；B 不成立，唐僧上了船；C 不成立，八戒也上了船。"
+    },
+    {
+      "episode": 53,
+      "number": 5,
+      "answer": 0,
+      "answer_letter": "A",
+      "evidence": [
+        {
+          "node_id": "n057",
+          "quote": "Wukong watched the canoe glide across the river."
+        },
+        {
+          "node_id": "n058",
+          "quote": "When it was about halfway across, Wukong noticed something."
+        },
+        {
+          "node_id": "n059",
+          "quote": "\"Am I imagining things, or is the canoe sinking?\" asked the monkey."
+        },
+        {
+          "node_id": "n060",
+          "quote": "Wujing looked. \"You're not imagining things,\" he said."
+        },
+        {
+          "node_id": "n061",
+          "quote": "\"It is sinking!\""
+        },
+        {
+          "node_id": "n062",
+          "quote": "The two of them watched as the canoe slipped under the surface of the water."
+        }
+      ],
+      "confidence": 0.99,
+      "rationale": "A 正确：独木舟在河中央逐渐下沉并没入水面；B 不成立，它没有漂在空中；C 不成立，变成剑的是此前的莲台，不是独木舟。"
+    },
+    {
+      "episode": 54,
+      "number": 1,
+      "answer": 0,
+      "answer_letter": "A",
+      "evidence": [
+        {
+          "node_id": "n016",
+          "quote": "Wujing struck at the lizard with his spear."
+        },
+        {
+          "node_id": "n023",
+          "quote": "Wujing swung his spear and then swam upward."
+        },
+        {
+          "node_id": "n033",
+          "quote": "\"It was a lizard demon. I'm the Black River God, and this is my river. But that lizard pretended he was me!\""
+        },
+        {
+          "node_id": "n065",
+          "quote": "Instantly the river stopped flowing, and the water formed walls."
+        },
+        {
+          "node_id": "n066",
+          "quote": "The travelers walked across the muddy riverbed and continued west."
+        }
+      ],
+      "confidence": 0.99,
+      "rationale": "A 正确：河神分开河水后，取经人步行穿过泥泞河床；B 不成立，悟空没有与黑河河神战斗，悟净与蜥蜴妖交手；C 不成立，绑架唐僧的是蜥蜴妖，不是龙。"
+    },
+    {
+      "episode": 54,
+      "number": 2,
+      "answer": 0,
+      "answer_letter": "A",
+      "evidence": [
+        {
+          "node_id": "n003",
+          "quote": "Wujing nodded. \"I'll find out where that man took our friends.\""
+        },
+        {
+          "node_id": "n004",
+          "quote": "The purple spirit dived into the river."
+        }
+      ],
+      "confidence": 0.99,
+      "rationale": "A 正确：悟净为寻找同伴跳入河中；B 不成立，悟空留在岸上；C 不成立，八戒当时已被绑架。"
+    },
+    {
+      "episode": 54,
+      "number": 3,
+      "answer": 0,
+      "answer_letter": "A",
+      "evidence": [
+        {
+          "node_id": "n036",
+          "quote": "\"Do you know who the lizard is?\""
+        },
+        {
+          "node_id": "n039",
+          "quote": "\"But his uncle is the mighty Dragon King of the Eastern Sea.\""
+        },
+        {
+          "node_id": "n040",
+          "quote": "Wukong laughed. \"That dragon is a friend of mine. He's also a bit scared of me. I'll go have a talk with him.\""
+        },
+        {
+          "node_id": "n044",
+          "quote": "\"Why did you let your nephew take over the Black River?\" demanded the monkey."
+        },
+        {
+          "node_id": "n047",
+          "quote": "\"Your nephew—a lizard demon—took over the Black River,\" said Wukong."
+        },
+        {
+          "node_id": "n048",
+          "quote": "\"And now he's planning to eat the Tang Monk.\""
+        }
+      ],
+      "confidence": 0.99,
+      "rationale": "A 正确：河神告诉悟空蜥蜴妖是东海龙王的外甥，悟空因此去找龙王交涉；B 不成立，龙王不知道绑架事件且没有绑架唐僧；C 不成立，龙王强大并非悟空此行所问的直接原因。"
+    }
+  ]
+}

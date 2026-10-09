@@ -1,0 +1,664 @@
+{
+  "reviewer": "codex-worker",
+  "episodes": "19-27",
+  "answers": [
+    {
+      "episode": 19,
+      "number": 3,
+      "answer": 0,
+      "answer_letter": "A",
+      "evidence": [
+        {
+          "node_id": "n028",
+          "quote": "The Tang Monk slept peacefully as the rest of the monastery burned down."
+        }
+      ],
+      "confidence": 0.99,
+      "rationale": "A 正确：原文说唐僧在火灾中安稳睡觉；B 不成立，因为灭火/控火的是悟空的法术，不是唐僧；C 不成立，因为唐僧没有逃跑，次晨仍从原房间醒来。"
+    },
+    {
+      "episode": 19,
+      "number": 4,
+      "answer": 0,
+      "answer_letter": "A",
+      "evidence": [
+        {
+          "node_id": "n047",
+          "quote": "\"I used my magic for that too,\" said Wukong with a smile."
+        },
+        {
+          "node_id": "n048",
+          "quote": "\"I used a spell that protected only your building and the robe. The spell made the fire spread everywhere else, though.\""
+        }
+      ],
+      "confidence": 0.98,
+      "rationale": "A 是法术没有做到的事：法术并未寻找住持；B 不成立，因为原文明说法术保护了唐僧所在建筑；C 不成立，因为原文明说法术让火蔓延到其他建筑。"
+    },
+    {
+      "episode": 20,
+      "number": 1,
+      "answer": 0,
+      "answer_letter": "A",
+      "evidence": [
+        {
+          "node_id": "n013",
+          "quote": "The Tang Monk was quietly reciting the Tight Headband spell."
+        },
+        {
+          "node_id": "n017",
+          "quote": "\"I'm begging you! I won't hurt the priests!\""
+        },
+        {
+          "node_id": "n023",
+          "quote": "\"The head priest ran away last night. He didn't have it with him.\""
+        },
+        {
+          "node_id": "n028",
+          "quote": "\"I'll go see if the bear took the robe,\" said Wukong."
+        }
+      ],
+      "confidence": 0.99,
+      "rationale": "A 不成立：唐僧没有伤害僧人，反而念紧箍咒阻止悟空动手；B 成立，悟空明确说要查找袈裟；C 成立，僧人明确说住持逃走时没有带袈裟。"
+    },
+    {
+      "episode": 20,
+      "number": 2,
+      "answer": 0,
+      "answer_letter": "A",
+      "evidence": [
+        {
+          "node_id": "n026",
+          "quote": "\"Some people believe there's a monster in the mountains nearby,\" said the other priest."
+        },
+        {
+          "node_id": "n027",
+          "quote": "\"They say it's a black bear spirit.\""
+        }
+      ],
+      "confidence": 0.99,
+      "rationale": "A 正确：僧人明确说附近山里住着黑熊精；B 不成立，故事没有说山里住着大龙；C 不成立，菩萨也不是此处被询问的山中居民。"
+    },
+    {
+      "episode": 21,
+      "number": 1,
+      "answer": 0,
+      "answer_letter": "A",
+      "evidence": [
+        {
+          "node_id": "n005",
+          "quote": "Guanyin sighed. \"The Tang Monk should not have shown that robe to the priest,\" she said."
+        },
+        {
+          "node_id": "n008",
+          "quote": "\"I've told the Tang Monk many times not to do dumb things. But still he—\" \"And you should have put out that fire,\" Guanyin said, interrupting Wukong."
+        },
+        {
+          "node_id": "n009",
+          "quote": "\"What you did was terrible!\""
+        },
+        {
+          "node_id": "n044",
+          "quote": "\"I brought you a gift, to celebrate your new Buddhist treasure.\""
+        },
+        {
+          "node_id": "n053",
+          "quote": "As he brought the pill up to his mouth, the pill wiggled."
+        },
+        {
+          "node_id": "n055",
+          "quote": "It shot into his mouth and slid down his throat."
+        }
+      ],
+      "confidence": 0.99,
+      "rationale": "A 不成立：观音批评唐僧展示袈裟，也批评悟空放任火灾，并非“非常自豪”；B 成立，药丸从熊精手中跳进嘴里；C 成立，假道士明确说礼物是为庆祝新的佛宝。"
+    },
+    {
+      "episode": 21,
+      "number": 4,
+      "answer": 0,
+      "answer_letter": "A",
+      "evidence": [
+        {
+          "node_id": "n026",
+          "quote": "Wukong stared at the priest, using his magic sight."
+        },
+        {
+          "node_id": "n027",
+          "quote": "\"That's not a priest!\" Wukong realized."
+        },
+        {
+          "node_id": "n028",
+          "quote": "\"It's a wolf spirit dressed as a priest.\""
+        }
+      ],
+      "confidence": 0.99,
+      "rationale": "A 正确：悟空用火眼金睛看出道士是狼精伪装；B 不成立，该道士不是唐僧；C 不成立，该道士也不是菩萨。"
+    },
+    {
+      "episode": 22,
+      "number": 1,
+      "answer": 0,
+      "answer_letter": "A",
+      "evidence": [
+        {
+          "node_id": "n035",
+          "quote": "After Wukong left to get the robe, the Black Wind King charged at Guanyin."
+        },
+        {
+          "node_id": "n043",
+          "quote": "Wukong came back with the robe."
+        },
+        {
+          "node_id": "n049",
+          "quote": "\"I will show him mercy,\" said Guanyin."
+        },
+        {
+          "node_id": "n050",
+          "quote": "\"He can be my guardian on Mount Potalaka if he behaves.\""
+        }
+      ],
+      "confidence": 0.99,
+      "rationale": "A 不成立：熊精没有毁掉袈裟，悟空随后把袈裟取回；B 成立，熊精趁悟空离开时冲向观音；C 成立，观音决定让他成为普陀山护卫。"
+    },
+    {
+      "episode": 22,
+      "number": 3,
+      "answer": 0,
+      "answer_letter": "A",
+      "evidence": [
+        {
+          "node_id": "n027",
+          "quote": "Guanyin held up a metal headband."
+        },
+        {
+          "node_id": "n029",
+          "quote": "She placed it on the bear's head."
+        },
+        {
+          "node_id": "n037",
+          "quote": "Guanyin threw four more metal bands at him."
+        },
+        {
+          "node_id": "n038",
+          "quote": "Two clamped onto his wrists."
+        },
+        {
+          "node_id": "n039",
+          "quote": "The other two clamped onto his ankles."
+        }
+      ],
+      "confidence": 0.99,
+      "rationale": "A 正确：观音给熊精戴上头箍，并用四个金属箍锁住手腕和脚踝；B 不成立，铁棒是悟空的武器；C 不成立，袈裟由悟空取回，并未被观音戴到熊精身上。"
+    },
+    {
+      "episode": 22,
+      "number": 4,
+      "answer": 0,
+      "answer_letter": "A",
+      "evidence": [
+        {
+          "node_id": "n049",
+          "quote": "\"I will show him mercy,\" said Guanyin."
+        },
+        {
+          "node_id": "n050",
+          "quote": "\"He can be my guardian on Mount Potalaka if he behaves.\""
+        }
+      ],
+      "confidence": 0.99,
+      "rationale": "A 正确：观音逐字说要对熊精宽大处理，让他守护普陀山；B 不成立，她没有选择继续惩罚；C 不成立，她也没有把熊精关进监狱。"
+    },
+    {
+      "episode": 22,
+      "number": 5,
+      "answer": 0,
+      "answer_letter": "A",
+      "evidence": [
+        {
+          "node_id": "n067",
+          "quote": "\"There's a spirit nearby.\""
+        },
+        {
+          "node_id": "n071",
+          "quote": "A pig-like creature leaped from the cave, swinging a heavy rake."
+        }
+      ],
+      "confidence": 0.99,
+      "rationale": "A 正确：悟空察觉附近有精怪后，洞中跳出的是猪形生物；B 不成立，黑风大王已随观音离开；C 不成立，出现的不是巨龙。"
+    },
+    {
+      "episode": 23,
+      "number": 1,
+      "answer": 0,
+      "answer_letter": "A",
+      "evidence": [
+        {
+          "node_id": "n027",
+          "quote": "\"I was sent to Earth as a punishment,\" said the pig."
+        },
+        {
+          "node_id": "n028",
+          "quote": "\"My name is Bajie. I caused trouble in Heaven too. Guanyin said I would be forgiven if I helped protect the Tang Monk.\""
+        },
+        {
+          "node_id": "n043",
+          "quote": "\"My master, the great king Yellow Wind, is hosting a feast,\" said the tiger."
+        },
+        {
+          "node_id": "n063",
+          "quote": "But the tiger wasn't there."
+        },
+        {
+          "node_id": "n064",
+          "quote": "Instead a tiger skin lay over a rock."
+        },
+        {
+          "node_id": "n065",
+          "quote": "Wukong laughed. \"He was so scared, he ran right out of his skin!\""
+        }
+      ],
+      "confidence": 0.99,
+      "rationale": "A 不成立：悟空和八戒追赶后只发现披在石头上的虎皮，并没有抓住老虎；B 成立，八戒明确说自己受罚被贬到人间；C 成立，老虎明确说黄风大王正在设宴。"
+    },
+    {
+      "episode": 23,
+      "number": 3,
+      "answer": 0,
+      "answer_letter": "A",
+      "evidence": [
+        {
+          "node_id": "n048",
+          "quote": "\"He is the Tang Monk. He's going to the west to get the True Scriptures.\""
+        },
+        {
+          "node_id": "n050",
+          "quote": "\"I heard that eating the Tang Monk will make someone live forever.\""
+        }
+      ],
+      "confidence": 0.99,
+      "rationale": "A 正确：老虎听到唐僧身份后说吃唐僧可长生；B 不成立，他没有以偷袈裟为目的；C 不成立，寻求赦免的是八戒等取经人，不是老虎吃唐僧的动机。"
+    },
+    {
+      "episode": 23,
+      "number": 4,
+      "answer": 0,
+      "answer_letter": "A",
+      "evidence": [
+        {
+          "node_id": "n068",
+          "quote": "The two friends walked back to the road, laughing."
+        },
+        {
+          "node_id": "n069",
+          "quote": "But suddenly their laughter stopped."
+        },
+        {
+          "node_id": "n070",
+          "quote": "\"Oh no!\" cried Wukong. \"Where is the Tang Monk?\""
+        }
+      ],
+      "confidence": 0.99,
+      "rationale": "A 正确：悟空和八戒返回公路后发现唐僧不见了；B 不成立，两人没有在此发现老虎曾大闹天宫；C 不成立，黄风大王没有来到公路现场。"
+    },
+    {
+      "episode": 24,
+      "number": 1,
+      "answer": 0,
+      "answer_letter": "A",
+      "evidence": [
+        {
+          "node_id": "n014",
+          "quote": "\"I have heard that anyone who eats the Tang Monk will live forever. Was the monk alone?\""
+        },
+        {
+          "node_id": "n023",
+          "quote": "\"Sun Wukong is powerful. He and that pig might come looking for the monk. They'll be angry if they find out we ate him. Let's wait until they leave the area. Then we'll be able to enjoy our meal.\""
+        }
+      ],
+      "confidence": 0.99,
+      "rationale": "A 正确：黄风大王明确谈到吃唐僧可长生，并计划等悟空离开后再吃；B 不成立，变成许多小分身的是悟空的头发，不是八戒的头发；C 不成立，实际是老虎扛着唐僧进洞，并非唐僧扛老虎。"
+    },
+    {
+      "episode": 24,
+      "number": 2,
+      "answer": 0,
+      "answer_letter": "A",
+      "evidence": [
+        {
+          "node_id": "n001",
+          "quote": "Wukong and Bajie looked all around."
+        },
+        {
+          "node_id": "n002",
+          "quote": "But the Tang Monk was gone."
+        },
+        {
+          "node_id": "n008",
+          "quote": "\"We have to save our master. That tiger said he works for a demon, the great king Yellow Wind. The king's cave must be nearby.\""
+        }
+      ],
+      "confidence": 0.99,
+      "rationale": "A 正确：唐僧失踪后，悟空与八戒判断黄风大王的洞就在附近并前去寻找；B 不成立，他们不是寻找三叉戟；C 不成立，他们也不是寻找黄风大王的袈裟。"
+    },
+    {
+      "episode": 24,
+      "number": 3,
+      "answer": 0,
+      "answer_letter": "A",
+      "evidence": [
+        {
+          "node_id": "n039",
+          "quote": "He saw Wukong."
+        },
+        {
+          "node_id": "n040",
+          "quote": "\"So you're the monkey who caused all the trouble in Heaven,\" said Yellow Wind."
+        },
+        {
+          "node_id": "n042",
+          "quote": "\"I didn't know you were so small,\" said Yellow Wind."
+        }
+      ],
+      "confidence": 0.99,
+      "rationale": "A 正确：黄风大王见到悟空后惊讶他如此矮小；B 不成立，老虎没有“大闹天宫”；C 不成立，当时唐僧仍被关在洞中，没有逃脱。"
+    },
+    {
+      "episode": 24,
+      "number": 4,
+      "answer": 0,
+      "answer_letter": "A",
+      "evidence": [
+        {
+          "node_id": "n033",
+          "quote": "A moment later the small demon ran back in."
+        },
+        {
+          "node_id": "n034",
+          "quote": "\"Great king, disaster!\" he cried."
+        },
+        {
+          "node_id": "n035",
+          "quote": "\"The tiger is dead! The pig killed him with his rake!\""
+        }
+      ],
+      "confidence": 0.99,
+      "rationale": "A 正确：小妖报告老虎已被八戒用钉耙打死；B 不成立，不是悟空用铁棒杀死；C 不成立，也不是黄风大王惩罚老虎。"
+    },
+    {
+      "episode": 24,
+      "number": 5,
+      "answer": 0,
+      "answer_letter": "A",
+      "evidence": [
+        {
+          "node_id": "n056",
+          "quote": "Yellow Wind laughed. \"I know a magic trick too!\""
+        },
+        {
+          "node_id": "n057",
+          "quote": "He looked down and blew three times."
+        },
+        {
+          "node_id": "n058",
+          "quote": "The sky grew dark."
+        },
+        {
+          "node_id": "n059",
+          "quote": "A powerful yellow wind whipped across the mountain."
+        },
+        {
+          "node_id": "n060",
+          "quote": "Trees snapped and rocks tumbled."
+        }
+      ],
+      "confidence": 0.99,
+      "rationale": "A 正确：黄风大王吹气制造了猛烈黄风；B 不成立，没有暴雪；C 不成立，也没有洪水。"
+    },
+    {
+      "episode": 25,
+      "number": 1,
+      "answer": 0,
+      "answer_letter": "A",
+      "evidence": [
+        {
+          "node_id": "n030",
+          "quote": "\"The bodhisattva Lingji lives on Mount Sumeru. I will ask him for help—quickly!\""
+        },
+        {
+          "node_id": "n032",
+          "quote": "When he arrived on Mount Sumeru, Lingji came out of his pagoda."
+        },
+        {
+          "node_id": "n041",
+          "quote": "\"He's a weasel spirit. Buddha asked me to keep an eye on him. I told the spirit he could live on that mountain if he behaved.\""
+        },
+        {
+          "node_id": "n043",
+          "quote": "\"I guess he's not behaving anymore.\""
+        },
+        {
+          "node_id": "n068",
+          "quote": "The two of them went back out and found Bajie sleeping."
+        }
+      ],
+      "confidence": 0.99,
+      "rationale": "A 不成立：悟空根据线索去须弥山找的是灵吉菩萨，不是观音；B 成立，获救后他们在洞外发现八戒睡着；C 成立，灵吉明确说黄风精不再守规矩、正在惹事。"
+    },
+    {
+      "episode": 25,
+      "number": 2,
+      "answer": 0,
+      "answer_letter": "A",
+      "evidence": [
+        {
+          "node_id": "n009",
+          "quote": "\"I'll sneak into the cave to see what I can find out.\""
+        },
+        {
+          "node_id": "n010",
+          "quote": "The monkey changed into a mosquito and squeezed through a crack in the cave's door."
+        },
+        {
+          "node_id": "n019",
+          "quote": "\"I turned myself into a mosquito.\""
+        }
+      ],
+      "confidence": 0.99,
+      "rationale": "A 正确：悟空变成蚊子，从洞门裂缝钻入；B 不成立，他没有从地下爬入；C 不成立，他潜入时没有在墙上打洞。"
+    },
+    {
+      "episode": 25,
+      "number": 4,
+      "answer": 0,
+      "answer_letter": "A",
+      "evidence": [
+        {
+          "node_id": "n005",
+          "quote": "\"We have to save the Tang Monk before the demon king eats him!\""
+        },
+        {
+          "node_id": "n028",
+          "quote": "\"Only the bodhisattva Lingji can stop my wind magic. Start a fire. We're having a feast tonight!\""
+        },
+        {
+          "node_id": "n045",
+          "quote": "\"They're going to eat the Tang Monk tonight!\""
+        }
+      ],
+      "confidence": 0.99,
+      "rationale": "A 正确：黄风大王准备当晚设宴吃唐僧，所以必须马上救；B 不成立，唐僧没有生病；C 不成立，怕蚊子也不是紧迫原因。"
+    },
+    {
+      "episode": 26,
+      "number": 1,
+      "answer": 0,
+      "answer_letter": "A",
+      "evidence": [
+        {
+          "node_id": "n034",
+          "quote": "\"His name is Sha Wujing,\" said Guanyin."
+        },
+        {
+          "node_id": "n035",
+          "quote": "\"He was waiting for you. He's going to help the Tang Monk reach the Western Paradise.\""
+        },
+        {
+          "node_id": "n052",
+          "quote": "\"I was being punished for breaking a glass in Heaven,\" said Wujing one day."
+        },
+        {
+          "node_id": "n055",
+          "quote": "\"So was the horse. Did you know the horse is really a dragon?\""
+        },
+        {
+          "node_id": "n056",
+          "quote": "Wujing looked doubtful."
+        },
+        {
+          "node_id": "n057",
+          "quote": "\"This horse is too slow to be a dragon.\""
+        }
+      ],
+      "confidence": 0.99,
+      "rationale": "A 正确：观音明确说沙悟净一直在等待，并要帮助唐僧西行；B 不成立，悟净对马是龙表示怀疑；C 不成立，因打碎天庭玻璃受罚的是悟净，不是悟空。"
+    },
+    {
+      "episode": 26,
+      "number": 3,
+      "answer": 0,
+      "answer_letter": "A",
+      "evidence": [
+        {
+          "node_id": "n017",
+          "quote": "\"Bajie, my powers aren't strong underwater,\" said Wukong."
+        },
+        {
+          "node_id": "n018",
+          "quote": "\"Dive in, and get him to chase you out of the river. Then I'll surprise him.\""
+        },
+        {
+          "node_id": "n019",
+          "quote": "\"Okay,\" said the pig."
+        },
+        {
+          "node_id": "n021",
+          "quote": "Bajie dived into the water. Wukong waited."
+        }
+      ],
+      "confidence": 0.99,
+      "rationale": "A 正确：悟空因水下能力不强，叫八戒下水引怪，随后八戒跳入河中；B 不成立，悟空留在岸上等待；C 不成立，观音此时尚未到河边。"
+    },
+    {
+      "episode": 26,
+      "number": 4,
+      "answer": 0,
+      "answer_letter": "A",
+      "evidence": [
+        {
+          "node_id": "n047",
+          "quote": "\"Stop arguing,\" said Guanyin."
+        },
+        {
+          "node_id": "n048",
+          "quote": "\"Wujing, you will help the Tang Monk reach the west.\""
+        },
+        {
+          "node_id": "n049",
+          "quote": "\"Yes, Bodhisattva,\" said Wujing."
+        }
+      ],
+      "confidence": 0.99,
+      "rationale": "A 正确：观音直接命令悟净帮助唐僧前往西方；B 不成立，她叫双方停止争吵；C 不成立，她没有叫悟净攻击八戒。"
+    },
+    {
+      "episode": 27,
+      "number": 1,
+      "answer": 0,
+      "answer_letter": "A",
+      "evidence": [
+        {
+          "node_id": "n005",
+          "quote": "He swung his iron bar, and the animals ran back into the forest."
+        },
+        {
+          "node_id": "n042",
+          "quote": "\"There's a ginseng tree behind the abbey,\" said one priest."
+        },
+        {
+          "node_id": "n043",
+          "quote": "\"Its fruit takes ten thousand years to become ripe. According to legend, one bite of the fruit will make you live forever. Would you like one?\""
+        },
+        {
+          "node_id": "n046",
+          "quote": "\"Our master said we could give you one,\" said the other priest."
+        },
+        {
+          "node_id": "n066",
+          "quote": "\"That fruit sounds wonderful,\" said Bajie to himself."
+        },
+        {
+          "node_id": "n067",
+          "quote": "\"I want some too!\""
+        }
+      ],
+      "confidence": 0.99,
+      "rationale": "A 不成立：道士给唐僧的是人参果，不是桃子；B 成立，八戒听见人参果美味珍贵后明确想吃；C 成立，悟空挥动铁棒把野兽吓回森林。"
+    },
+    {
+      "episode": 27,
+      "number": 4,
+      "answer": 0,
+      "answer_letter": "A",
+      "evidence": [
+        {
+          "node_id": "n049",
+          "quote": "A moment later they came back in with a tray."
+        },
+        {
+          "node_id": "n050",
+          "quote": "The Tang Monk screamed."
+        },
+        {
+          "node_id": "n051",
+          "quote": "On the tray lay a tiny sleeping baby."
+        },
+        {
+          "node_id": "n052",
+          "quote": "\"I can't eat that,\" cried the monk. \"It—it's a baby!\""
+        }
+      ],
+      "confidence": 0.99,
+      "rationale": "A 正确：托盘上的人参果在唐僧眼中像熟睡婴儿，因此他尖叫；B 不成立，托盘上不是桃子；C 不成立，果实里也没有虫子。"
+    },
+    {
+      "episode": 27,
+      "number": 5,
+      "answer": 0,
+      "answer_letter": "A",
+      "evidence": [
+        {
+          "node_id": "n058",
+          "quote": "The priests took the ginseng fruit out of the room and into a hallway."
+        },
+        {
+          "node_id": "n059",
+          "quote": "\"We shouldn't waste this fruit,\" said one priest."
+        },
+        {
+          "node_id": "n060",
+          "quote": "\"No,\" said the other."
+        },
+        {
+          "node_id": "n061",
+          "quote": "\"It is too delicious and valuable. Let's eat it ourselves.\""
+        },
+        {
+          "node_id": "n062",
+          "quote": "The two priests shared the ginseng fruit."
+        }
+      ],
+      "confidence": 0.99,
+      "rationale": "A 正确：两名道士决定不要浪费人参果并一起分享；B 不成立，他们没有丢掉果实；C 不成立，他们也没有把果实交给八戒。"
+    }
+  ]
+}

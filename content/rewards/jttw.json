@@ -1,0 +1,389 @@
+{
+  "schema_version": 1,
+  "catalog_version": 3,
+  "series": "jttw",
+  "daily_drop_cap": 2,
+  "sticker_count": 108,
+  "story_image_template": "assets/generated/jttw-story-scenes-v1/ep{episode}.jpg",
+  "sticker_themes": [
+    { "chapter": 1, "from": 1, "to": 7, "title_zh": "石猴出世", "title_en": "Stone Monkey Beginnings", "shape": "cloud", "tone": "jade",
+      "cover_asset": "assets/generated/jttw-story-scenes-v1/ep001.jpg",
+      "detail_asset": "assets/generated/jttw-story-scenes-v1/ep001.jpg",
+      "source_label_zh": "绘本第 1 集 · 石猴出世到水帘洞挑战",
+      "source_label_en": "Storybook episode 1 · from the stone birth to the waterfall challenge",
+      "motifs": [
+        { "id": "stone_shard", "title_zh": "裂开的仙石", "title_en": "Cracked Celestial Stone", "glyph": "🪨", "type": "decor", "asset": "assets/generated/jttw-ep001-story-rewards/transparent/jttw-ep001-stone-shard.png" },
+        { "id": "heaven_light", "title_zh": "天光珠", "title_en": "Heaven Light", "glyph": "✨", "type": "toy", "asset": "assets/generated/jttw-ep001-story-rewards/transparent/jttw-ep001-heaven-light.png" },
+        { "id": "peach_pip", "title_zh": "桃核", "title_en": "Peach Pip", "glyph": "🌰", "type": "sticker", "asset": "assets/generated/jttw-ep001-story-rewards/transparent/jttw-ep001-peach-pip.png" }
+      ],
+      "episode_overrides": {
+        "1": { "id": "stone_shard", "title_zh": "裂开的仙石", "title_en": "Cracked Celestial Stone", "glyph": "🪨", "type": "decor", "asset_prompt_id": "jttw-ep001-stone-shard", "asset": "assets/generated/jttw-ep001-story-rewards/transparent/jttw-ep001-stone-shard.png", "source_label_zh": "第 3 页 · 石破天惊", "source_label_en": "Page 3 · The rock splits", "story_binding": { "storybook_pages": [3], "scene_ids": ["s01"], "trigger_terms": ["rock", "split open", "magic"] } },
+        "2": { "id": "heaven_light", "title_zh": "天光珠", "title_en": "Heaven Light", "glyph": "✨", "type": "toy", "asset_prompt_id": "jttw-ep001-heaven-light", "asset": "assets/generated/jttw-ep001-story-rewards/transparent/jttw-ep001-heaven-light.png", "source_label_zh": "第 3–4 页 · 天庭惊光", "source_label_en": "Pages 3–4 · Light in Heaven", "story_binding": { "storybook_pages": [3, 4], "scene_ids": ["s01", "s02"], "trigger_terms": ["powerful", "light", "Heaven"] } },
+        "3": { "id": "peach_pip", "title_zh": "桃核", "title_en": "Peach Pip", "glyph": "🌰", "type": "sticker", "asset_prompt_id": "jttw-ep001-peach-pip", "asset": "assets/generated/jttw-ep001-story-rewards/transparent/jttw-ep001-peach-pip.png", "source_label_zh": "第 6–8 页 · 花果山与小溪", "source_label_en": "Pages 6–8 · Fruit and Flower Mountain and the stream", "story_binding": { "storybook_pages": [6, 7, 8], "scene_ids": ["s03"], "trigger_terms": ["Fruit and Flower Mountain", "stream", "gathered"] } },
+        "4": { "id": "stream_splash", "title_zh": "小溪水花", "title_en": "Stream Splash", "glyph": "💧", "type": "decor", "asset_prompt_id": "jttw-ep001-stream-splash", "asset": "assets/generated/jttw-ep001-story-rewards/transparent/jttw-ep001-stream-splash.png", "source_label_zh": "第 8 页 · 猴群戏水", "source_label_en": "Page 8 · The troop splashes in the stream", "story_binding": { "storybook_pages": [8], "scene_ids": ["s04"], "trigger_terms": ["splashed", "cool water", "stream"] } },
+        "5": { "id": "waterfall_gate", "title_zh": "瀑布门", "title_en": "Waterfall Gate", "glyph": "🌊", "type": "decor", "asset_prompt_id": "jttw-ep001-waterfall-gate", "asset": "assets/generated/jttw-ep001-story-rewards/transparent/jttw-ep001-waterfall-gate.png", "source_label_zh": "第 10 页 · 巨大瀑布", "source_label_en": "Page 10 · The enormous waterfall", "story_binding": { "storybook_pages": [9, 10], "scene_ids": ["s04"], "trigger_terms": ["enormous", "waterfall", "source"] } },
+        "6": { "id": "brave_ribbon", "title_zh": "勇气彩带", "title_en": "Courage Ribbon", "glyph": "🎗️", "type": "gear", "asset_prompt_id": "jttw-ep001-brave-ribbon", "asset": "assets/generated/jttw-ep001-story-rewards/transparent/jttw-ep001-brave-ribbon.png", "source_label_zh": "第 11 页 · 谁敢一跳", "source_label_en": "Page 11 · Who will jump", "story_binding": { "storybook_pages": [11], "scene_ids": ["s05"], "trigger_terms": ["brave", "try", "jump"] } },
+        "7": { "id": "water_curtain_token", "title_zh": "水帘洞信物", "title_en": "Water Curtain Token", "glyph": "💦", "type": "toy", "asset_prompt_id": "jttw-ep001-water-curtain-token", "asset": "assets/generated/jttw-ep001-story-rewards/transparent/jttw-ep001-water-curtain-token.png", "source_label_zh": "第 12 页 · 石猴请战", "source_label_en": "Page 12 · Monkey steps forward", "story_binding": { "storybook_pages": [12], "scene_ids": ["s06"], "trigger_terms": ["I’ll do it", "not afraid", "king"] } }
+      }
+    },
+    { "chapter": 2, "from": 8, "to": 13, "title_zh": "天宫风云", "title_en": "Havoc in Heaven", "shape": "sun", "tone": "gold", "cover_asset": "assets/generated/jttw-story-scenes-v1/ep008.jpg", "detail_asset": "assets/generated/jttw-story-scenes-v1/ep009.jpg", "source_label_zh": "第 8–13 集 · 天庭差事、蟠桃园与真经", "source_label_en": "Episodes 8–13 · Heaven, the peach garden and the scriptures", "motifs": [
+      { "id": "cloud", "title_zh": "筋斗云", "title_en": "Cloud Ride", "glyph": "☁️", "type": "toy", "asset": "assets/generated/jttw-story-stickers-v1/transparent/cloud.png" },
+      { "id": "peach-garden", "title_zh": "蟠桃", "title_en": "Heavenly Peach", "glyph": "🍑", "type": "sticker" },
+      { "id": "thunder", "title_zh": "天雷", "title_en": "Heaven Thunder", "glyph": "⚡", "type": "sticker" }
+    ] },
+    { "chapter": 3, "from": 14, "to": 23, "title_zh": "师徒启程", "title_en": "The Pilgrims Begin", "shape": "ribbon", "tone": "sky", "cover_asset": "assets/generated/jttw-story-scenes-v1/ep014.jpg", "detail_asset": "assets/generated/jttw-story-scenes-v1/ep017.jpg", "source_label_zh": "第 14–23 集 · 唐僧、白龙与护法伙伴", "source_label_en": "Episodes 14–23 · Tang Monk, the dragon and the protectors", "motifs": [
+      { "id": "bell", "title_zh": "启程铃", "title_en": "Journey Bell", "glyph": "🔔", "type": "toy", "asset": "assets/generated/jttw-story-stickers-v1/transparent/bell.png" },
+      { "id": "dragon", "title_zh": "小白龙", "title_en": "White Dragon", "glyph": "🐉", "type": "animal", "asset": "assets/generated/jttw-story-stickers-v1/transparent/dragon.png" },
+      { "id": "saddle", "title_zh": "云纹鞍", "title_en": "Cloud Saddle", "glyph": "🐎", "type": "gear", "asset": "assets/generated/jttw-story-stickers-v1/transparent/saddle.png" }
+    ] },
+    { "chapter": 4, "from": 24, "to": 31, "title_zh": "黄风五庄", "title_en": "Wind Ridge and Wuzhuang", "shape": "gourd", "tone": "amber", "cover_asset": "assets/generated/jttw-story-scenes-v1/ep024.jpg", "detail_asset": "assets/generated/jttw-story-scenes-v1/ep027.jpg", "source_label_zh": "第 24–31 集 · 黄风、河妖与人参果", "source_label_en": "Episodes 24–31 · Yellow Wind, the river monster and ginseng fruit", "motifs": [
+      { "id": "gourd", "title_zh": "人参果葫芦", "title_en": "Ginseng Gourd", "glyph": "🍐", "type": "toy", "asset": "assets/generated/jttw-story-stickers-v1/transparent/gourd.png" },
+      { "id": "tree", "title_zh": "人参果树", "title_en": "Ginseng Tree", "glyph": "🌳", "type": "decor", "asset": "assets/generated/jttw-story-stickers-v1/transparent/tree.png" },
+      { "id": "wind", "title_zh": "黄风", "title_en": "Yellow Wind", "glyph": "🌪️", "type": "sticker" }
+    ] },
+    { "chapter": 5, "from": 32, "to": 39, "title_zh": "白骨与宝象", "title_en": "White Bone and Yellow Robe", "shape": "lotus", "tone": "rose", "cover_asset": "assets/generated/jttw-story-scenes-v1/ep033.jpg", "detail_asset": "assets/generated/jttw-story-scenes-v1/ep036.jpg", "source_label_zh": "第 32–39 集 · 白骨夫人与师徒误会", "source_label_en": "Episodes 32–39 · Lady Whitebone and the misunderstanding", "motifs": [
+      { "id": "flower", "title_zh": "白骨花", "title_en": "Bone Flower", "glyph": "🌸", "type": "decor" },
+      { "id": "robe", "title_zh": "黄袍披风", "title_en": "Yellow Robe", "glyph": "🧥", "type": "gear" },
+      { "id": "brave-heart", "title_zh": "勇气心", "title_en": "Brave Heart", "glyph": "💛", "type": "sticker" }
+    ] },
+    { "chapter": 6, "from": 40, "to": 48, "title_zh": "金角银角", "title_en": "Golden Horn and Wuji", "shape": "gourd", "tone": "orange", "cover_asset": "assets/generated/jttw-story-scenes-v1/ep040.jpg", "detail_asset": "assets/generated/jttw-story-scenes-v1/ep045.jpg", "source_label_zh": "第 40–48 集 · 宝葫芦、井中宝物与红云", "source_label_en": "Episodes 40–48 · The magic gourd, the well treasure and the red cloud", "motifs": [
+      { "id": "horn", "title_zh": "金角小号", "title_en": "Golden Horn", "glyph": "📯", "type": "toy" },
+      { "id": "lantern", "title_zh": "井底灯", "title_en": "Well Lantern", "glyph": "🏮", "type": "decor" },
+      { "id": "ring", "title_zh": "护身圈", "title_en": "Kind Ring", "glyph": "⭕", "type": "gear" }
+    ] },
+    { "chapter": 7, "from": 49, "to": 54, "title_zh": "红孩儿与黑水河", "title_en": "Red Boy and Black River", "shape": "flame", "tone": "coral", "cover_asset": "assets/generated/jttw-story-scenes-v1/ep049.jpg", "detail_asset": "assets/generated/jttw-story-scenes-v1/ep053.jpg", "source_label_zh": "第 49–54 集 · 红孩儿、真火与河神", "source_label_en": "Episodes 49–54 · Red Boy, magic fire and the river god", "motifs": [
+      { "id": "pinwheel", "title_zh": "火焰风车", "title_en": "Fire Pinwheel", "glyph": "🎐", "type": "toy" },
+      { "id": "river-fish", "title_zh": "黑水小鱼", "title_en": "Black River Fish", "glyph": "🐟", "type": "animal", "asset": "assets/generated/jttw-story-stickers-v1/transparent/river-fish.png" },
+      { "id": "fire", "title_zh": "三昧真火", "title_en": "Magic Flame", "glyph": "🔥", "type": "sticker" }
+    ] },
+    { "chapter": 8, "from": 55, "to": 63, "title_zh": "车迟通天河", "title_en": "Immortal Duel and River", "shape": "cloud", "tone": "sky", "cover_asset": "assets/generated/jttw-story-scenes-v1/ep055.jpg", "detail_asset": "assets/generated/jttw-story-scenes-v1/ep060.jpg", "source_label_zh": "第 55–63 集 · 车迟国比试与通天河", "source_label_en": "Episodes 55–63 · The Cart Kingdom contests and the river", "motifs": [
+      { "id": "waterdrop", "title_zh": "通天河水滴", "title_en": "River Waterdrop", "glyph": "💧", "type": "decor" },
+      { "id": "goldfish", "title_zh": "金鱼精", "title_en": "Goldfish Friend", "glyph": "🐠", "type": "animal" },
+      { "id": "ice-star", "title_zh": "冰河星", "title_en": "River Ice Star", "glyph": "❄️", "type": "sticker" }
+    ] },
+    { "chapter": 9, "from": 64, "to": 71, "title_zh": "金兜与女儿国", "title_en": "Golden Ring and Kingdom", "shape": "shield", "tone": "violet", "cover_asset": "assets/generated/jttw-story-scenes-v1/ep064.jpg", "detail_asset": "assets/generated/jttw-story-scenes-v1/ep069.jpg", "source_label_zh": "第 64–71 集 · 金兜洞与女儿国线索", "source_label_en": "Episodes 64–71 · Golden Cave and the kingdom clues", "motifs": [
+      { "id": "golden-ring", "title_zh": "金刚圈", "title_en": "Golden Ring", "glyph": "💍", "type": "weapon", "asset": "assets/generated/jttw-story-stickers-v1/transparent/golden-ring.png" },
+      { "id": "flower-crown", "title_zh": "女儿国花冠", "title_en": "Flower Crown", "glyph": "👑", "type": "gear" },
+      { "id": "scorpion", "title_zh": "蝎子小徽章", "title_en": "Scorpion Badge", "glyph": "🦂", "type": "animal" }
+    ] },
+    { "chapter": 10, "from": 72, "to": 79, "title_zh": "真假美猴王", "title_en": "Two Monkey Kings", "shape": "diamond", "tone": "coral", "cover_asset": "assets/generated/jttw-story-scenes-v1/ep072.jpg", "detail_asset": "assets/generated/jttw-story-scenes-v1/ep077.jpg", "source_label_zh": "第 72–79 集 · 两个悟空与火焰山", "source_label_en": "Episodes 72–79 · Two Wukongs and the Mountain of Flames", "motifs": [
+      { "id": "fan", "title_zh": "芭蕉小扇", "title_en": "Magic Fan", "glyph": "🪭", "type": "weapon", "asset": "assets/generated/jttw-story-stickers-v1/transparent/fan.png" },
+      { "id": "flame-mountain", "title_zh": "火焰山", "title_en": "Mountain of Flames", "glyph": "⛰️", "type": "decor" },
+      { "id": "mirror", "title_zh": "真假镜", "title_en": "Truth Mirror", "glyph": "🪞", "type": "toy" }
+    ] },
+    { "chapter": 11, "from": 80, "to": 91, "title_zh": "小雷音与盘丝洞", "title_en": "Thunderclap and Webbed Cave", "shape": "star", "tone": "indigo", "cover_asset": "assets/generated/jttw-story-scenes-v1/ep080.jpg", "detail_asset": "assets/generated/jttw-story-scenes-v1/ep088.jpg", "source_label_zh": "第 80–91 集 · 小雷音、瓜田与盘丝洞", "source_label_en": "Episodes 80–91 · Thunderclap, the melon field and the Webbed Cave", "motifs": [
+      { "id": "web-star", "title_zh": "盘丝星", "title_en": "Web Star", "glyph": "🕸️", "type": "decor" },
+      { "id": "lotus-lamp", "title_zh": "雷音莲灯", "title_en": "Lotus Lamp", "glyph": "🪷", "type": "toy" },
+      { "id": "spider", "title_zh": "小蜘蛛", "title_en": "Little Spider", "glyph": "🕷️", "type": "animal" }
+    ] },
+    { "chapter": 12, "from": 92, "to": 99, "title_zh": "狮驼岭三妖", "title_en": "Three Demons Ridge", "shape": "shield", "tone": "stone", "cover_asset": "assets/generated/jttw-story-scenes-v1/ep094.jpg", "detail_asset": "assets/generated/jttw-story-scenes-v1/ep098.jpg", "source_label_zh": "第 92–99 集 · 狮、象、大鹏三妖", "source_label_en": "Episodes 92–99 · The lion, elephant and raptor demons", "motifs": [
+      { "id": "lion", "title_zh": "狮子朋友", "title_en": "Lion Friend", "glyph": "🦁", "type": "animal" },
+      { "id": "feather", "title_zh": "大鹏羽饰", "title_en": "Raptor Feather", "glyph": "🪶", "type": "gear" },
+      { "id": "courage-cloud", "title_zh": "勇气云", "title_en": "Courage Cloud", "glyph": "☁️", "type": "sticker" }
+    ] },
+    { "chapter": 13, "from": 100, "to": 108, "title_zh": "灵山取经", "title_en": "The Sacred Scriptures", "shape": "crown", "tone": "gold", "cover_asset": "assets/generated/jttw-story-scenes-v1/ep100.jpg", "detail_asset": "assets/generated/jttw-story-scenes-v1/ep105.jpg", "source_label_zh": "第 100–108 集 · 灵山、真经与封赏", "source_label_en": "Episodes 100–108 · Spirit Mountain, the scriptures and the rewards", "motifs": [
+      { "id": "ribbon", "title_zh": "真经彩带", "title_en": "Scripture Ribbon", "glyph": "🎀", "type": "decor" },
+      { "id": "scripture", "title_zh": "小经卷", "title_en": "Little Scripture", "glyph": "📖", "type": "toy" },
+      { "id": "lotus", "title_zh": "灵山莲花", "title_en": "Spirit Mountain Lotus", "glyph": "🪷", "type": "sticker" }
+    ] }
+  ],
+  "rooms": {
+    "room.huaguo": {
+      "title": "花果山小屋",
+      "background": "assets/generated/wala-gamification/companion-room-bg-v1.png",
+      "default_slot": "shelf.center",
+      "slots": ["shelf.left", "shelf.center", "shelf.right", "floor.left", "floor.right"],
+      "decor_slots": ["shelf.left", "shelf.center", "shelf.right", "floor.left", "floor.right"],
+      "toy_rack": {
+        "title_zh": "云朵玩具架",
+        "title_en": "Cloud Toy Rack",
+        "slots": ["rack.top", "rack.middle", "rack.bottom"],
+        "hint_zh": "故事里收到的小玩具，会在这里等你点一点。"
+      }
+    }
+  },
+  "episodes": {
+    "1": {
+      "room": "room.huaguo",
+      "items": [
+        {
+          "id": "item.stone_shard",
+          "title_en": "Stone Shard",
+          "title_zh": "仙石碎片",
+          "caption_en": "A little piece of the stone where the monkey was born.",
+          "caption_zh": "石猴出世的仙石，留下一小块在花果山。",
+          "glyph": "🪨",
+          "category": "chapter-keepsake",
+          "reward_type": "decor",
+          "placement": "decor",
+          "interaction": { "kind": "glow", "text_zh": "仙石闪了一下：故事的第一步已经留下。", "text_en": "The shard glows: your first story step is here." },
+          "story_binding": {
+            "storybook_pages": [3],
+            "scene_ids": ["s01"],
+            "video": { "start_sec": 0.0, "end_sec": 34.83 },
+            "trigger_terms": ["split open", "magic"],
+            "source_label_zh": "第 3 页 · 石破天惊",
+            "source_label_en": "Page 3 · The rock splits",
+            "asset_prompt_id": "jttw-ep001-stone-shard"
+          },
+          "asset": "assets/generated/jttw-ep001-story-rewards/transparent/jttw-ep001-stone-shard.png",
+          "slot": "shelf.left"
+        },
+        {
+          "id": "item.heaven_light",
+          "title_en": "Heaven Light",
+          "title_zh": "天光珠",
+          "caption_en": "A bright bead for remembering the light from heaven.",
+          "caption_zh": "记住天光落下的那一刻。",
+          "glyph": "✨",
+          "category": "chapter-keepsake",
+          "reward_type": "toy",
+          "placement": "toy",
+          "interaction": { "kind": "sparkle", "text_zh": "天光珠亮起来啦！你可以随时跳过，也可以再点一次。", "text_en": "The heaven light sparkles. You can skip or tap it again." },
+          "story_binding": {
+            "storybook_pages": [3, 4],
+            "scene_ids": ["s01", "s02"],
+            "video": { "start_sec": 23.97, "end_sec": 39.35 },
+            "trigger_terms": ["powerful", "light", "Heaven"],
+            "source_label_zh": "第 3–4 页 · 天庭惊光",
+            "source_label_en": "Pages 3–4 · Light in Heaven",
+            "asset_prompt_id": "jttw-ep001-heaven-light"
+          },
+          "asset": "assets/generated/jttw-ep001-story-rewards/transparent/jttw-ep001-heaven-light.png",
+          "slot": "rack.top"
+        },
+        {
+          "id": "item.peach_pip",
+          "title_en": "Peach Pip",
+          "title_zh": "桃核",
+          "caption_en": "A tiny seed from the peach garden story.",
+          "caption_zh": "花果山故事里，一颗小小的桃核。",
+          "glyph": "🍑",
+          "category": "chapter-keepsake",
+          "reward_type": "decor",
+          "placement": "decor",
+          "interaction": { "kind": "bounce", "text_zh": "桃核轻轻跳了一下：下次故事见！", "text_en": "The peach pip gives a tiny hop: see you in the next story!" },
+          "story_binding": {
+            "storybook_pages": [6, 7, 8],
+            "scene_ids": ["s03"],
+            "video": { "start_sec": 101.63, "end_sec": 210.86 },
+            "trigger_terms": ["Fruit and Flower Mountain", "gathered", "stream"],
+            "source_label_zh": "第 6–8 页 · 花果山岁月",
+            "source_label_en": "Pages 6–8 · Fruit and Flower Mountain",
+            "asset_prompt_id": "jttw-ep001-peach-pip"
+          },
+          "asset": "assets/generated/jttw-ep001-story-rewards/transparent/jttw-ep001-peach-pip.png",
+          "slot": "floor.left"
+        }
+      ]
+    },
+    "13": {
+      "room": "room.huaguo",
+      "items": [{
+        "id": "item.cloud_scroll",
+        "title_en": "Cloud Scroll",
+        "title_zh": "云纹小卷",
+        "caption_en": "A cloud-marked scroll from the heavenly palace chapter.",
+        "caption_zh": "天宫故事里带回来的云纹小卷。",
+        "glyph": "📜",
+        "category": "chapter-keepsake",
+        "reward_type": "toy",
+        "placement": "toy",
+        "interaction": { "kind": "unroll", "text_zh": "云纹小卷展开一小角，风把新故事送来了。", "text_en": "The cloud scroll peeks open and brings a new story breeze." },
+        "asset": "assets/generated/wala-gamification/clean/decor-parts/decor06_534x383.png",
+        "slot": "rack.middle"
+      }]
+    },
+    "23": {
+      "room": "room.huaguo",
+      "items": [{
+        "id": "item.journey_bell",
+        "title_en": "Journey Bell",
+        "title_zh": "启程铃",
+        "caption_en": "A tiny bell that remembers the day the pilgrims set out.",
+        "caption_zh": "记住师徒启程的清脆小铃。",
+        "glyph": "🔔",
+        "category": "chapter-keepsake",
+        "reward_type": "toy",
+        "placement": "toy",
+        "interaction": { "kind": "ring", "text_zh": "叮铃！小白龙知道你又回来啦。", "text_en": "Ding! The little dragon knows you are back." },
+        "asset": "assets/generated/jttw-story-stickers-v1/transparent/bell.png",
+        "slot": "rack.bottom"
+      }]
+    },
+    "31": {
+      "room": "room.huaguo",
+      "items": [{
+        "id": "item.wuzhuang_gourd",
+        "title_en": "Wuzhuang Gourd",
+        "title_zh": "五庄小葫芦",
+        "caption_en": "A friendly gourd from the mountain temple story.",
+        "caption_zh": "五庄观故事里的友好小葫芦。",
+        "glyph": "🍐",
+        "category": "chapter-keepsake",
+        "reward_type": "toy",
+        "placement": "decor",
+        "interaction": { "kind": "wiggle", "text_zh": "小葫芦摇一摇：把新词语装进去吧。", "text_en": "The little gourd wiggles: tuck a new word inside." },
+        "asset": "assets/generated/jttw-story-stickers-v1/transparent/gourd.png",
+        "slot": "shelf.right"
+      }]
+    },
+    "39": {
+      "room": "room.huaguo",
+      "items": [{
+        "id": "item.white_bone_flower",
+        "title_en": "White Bone Flower",
+        "title_zh": "白骨花",
+        "caption_en": "A paper flower that turns a scary chapter into a brave memory.",
+        "caption_zh": "把紧张故事变成勇敢记忆的一朵纸花。",
+        "glyph": "🌸",
+        "category": "chapter-keepsake",
+        "reward_type": "decor",
+        "placement": "decor",
+        "interaction": { "kind": "bloom", "text_zh": "纸花开开：你把难故事读完了。", "text_en": "The paper flower blooms: you finished a tricky story." },
+        "asset": "assets/generated/wala-gamification/clean/decor-parts/decor04_411x452.png",
+        "slot": "floor.right"
+      }]
+    },
+    "48": {
+      "room": "room.huaguo",
+      "items": [{
+        "id": "item.golden_horn",
+        "title_en": "Golden Horn",
+        "title_zh": "金角小号",
+        "caption_en": "A soft golden horn for celebrating careful listening.",
+        "caption_zh": "奖励认真听故事的金色小号。",
+        "glyph": "📯",
+        "category": "chapter-keepsake",
+        "reward_type": "toy",
+        "placement": "toy",
+        "interaction": { "kind": "shine", "text_zh": "金角小号闪闪发光：听见重点啦！", "text_en": "The golden horn shines: you caught the key idea!" },
+        "asset": "assets/generated/wala-gamification/clean/gear-parts/gear02_454x525.png",
+        "slot": "rack.top"
+      }]
+    },
+    "54": {
+      "room": "room.huaguo",
+      "items": [{
+        "id": "item.red_boy_pinwheel",
+        "title_en": "Red Boy Pinwheel",
+        "title_zh": "红孩儿风车",
+        "caption_en": "A bright pinwheel from the fire-mountain chapter.",
+        "caption_zh": "火焰山故事里带回来的亮色风车。",
+        "glyph": "🎐",
+        "category": "chapter-keepsake",
+        "reward_type": "toy",
+        "placement": "toy",
+        "interaction": { "kind": "spin", "text_zh": "风车转起来：把勇气吹进下一页。", "text_en": "The pinwheel spins courage into the next page." },
+        "asset": "assets/generated/wala-gamification/clean/gear-parts/gear03_514x504.png",
+        "slot": "rack.middle"
+      }]
+    },
+    "63": {
+      "room": "room.huaguo",
+      "items": [{
+        "id": "item.river_waterdrop",
+        "title_en": "River Waterdrop",
+        "title_zh": "通天河水滴",
+        "caption_en": "A cool blue drop that remembers crossing the river.",
+        "caption_zh": "记住渡过通天河的清凉水滴。",
+        "glyph": "💧",
+        "category": "chapter-keepsake",
+        "reward_type": "decor",
+        "placement": "decor",
+        "interaction": { "kind": "ripple", "text_zh": "水滴荡开一圈圈小波纹。", "text_en": "The waterdrop makes tiny ripples." },
+        "asset": "assets/generated/wala-gamification/clean/decor-parts/decor03_396x465.png",
+        "slot": "shelf.left"
+      }]
+    },
+    "71": {
+      "room": "room.huaguo",
+      "items": [{
+        "id": "item.golden_ring",
+        "title_en": "Golden Ring",
+        "title_zh": "金刚圈",
+        "caption_en": "A gentle ring for remembering a clever solution.",
+        "caption_zh": "提醒你想出巧办法的温柔金刚圈。",
+        "glyph": "⭕",
+        "category": "chapter-keepsake",
+        "reward_type": "weapon",
+        "non_power": true,
+        "placement": "toy",
+        "interaction": { "kind": "pulse", "text_zh": "金刚圈亮一下：会想办法就是本领。", "text_en": "The golden ring pulses: clever thinking is a superpower." },
+        "asset": "assets/generated/jttw-story-stickers-v1/transparent/golden-ring.png",
+        "slot": "rack.bottom"
+      }]
+    },
+    "79": {
+      "room": "room.huaguo",
+      "items": [{
+        "id": "item.magic_fan",
+        "title_en": "Magic Fan",
+        "title_zh": "芭蕉小扇",
+        "caption_en": "A tiny fan for cooling down after a big challenge.",
+        "caption_zh": "闯过难关后，帮小白龙扇扇风。",
+        "glyph": "🪭",
+        "category": "chapter-keepsake",
+        "reward_type": "weapon",
+        "non_power": true,
+        "placement": "toy",
+        "interaction": { "kind": "fan", "text_zh": "呼——小扇子送来一阵凉风。", "text_en": "Whoosh—the little fan sends a cool breeze." },
+        "asset": "assets/generated/jttw-story-stickers-v1/transparent/fan.png",
+        "slot": "rack.top"
+      }]
+    },
+    "91": {
+      "room": "room.huaguo",
+      "items": [{
+        "id": "item.spider_web_star",
+        "title_en": "Web Star",
+        "title_zh": "盘丝星",
+        "caption_en": "A soft star that turns a tangled web into a memory map.",
+        "caption_zh": "把盘丝洞的蛛网变成记忆地图的小星星。",
+        "glyph": "🕸️",
+        "category": "chapter-keepsake",
+        "reward_type": "decor",
+        "placement": "decor",
+        "interaction": { "kind": "twinkle", "text_zh": "盘丝星眨眨眼：线索都连起来啦。", "text_en": "The web star twinkles: all the clues connect." },
+        "asset": "assets/generated/wala-gamification/clean/decor-parts/decor05_305x433.png",
+        "slot": "floor.left"
+      }]
+    },
+    "99": {
+      "room": "room.huaguo",
+      "items": [{
+        "id": "item.lion_cloud",
+        "title_en": "Lion Cloud",
+        "title_zh": "狮驼云",
+        "caption_en": "A soft cloud that marks a brave step through the three-demon chapter.",
+        "caption_zh": "走过三妖篇章后留下的一朵勇气云。",
+        "glyph": "☁️",
+        "category": "chapter-keepsake",
+        "reward_type": "animal",
+        "non_power": true,
+        "placement": "toy",
+        "interaction": { "kind": "float", "text_zh": "勇气云飘起来：你已经走了很远。", "text_en": "The courage cloud floats: you have come a long way." },
+        "asset": "assets/generated/wala-gamification/clean/decor-parts/decor01_417x485.png",
+        "slot": "rack.middle"
+      }]
+    },
+    "108": {
+      "room": "room.huaguo",
+      "items": [{
+        "id": "item.scripture_ribbon",
+        "title_en": "Scripture Ribbon",
+        "title_zh": "真经彩带",
+        "caption_en": "A ribbon for the final chapter and every page you kept.",
+        "caption_zh": "献给最后篇章，也献给你坚持读完的每一页。",
+        "glyph": "🎀",
+        "category": "chapter-keepsake",
+        "reward_type": "gear",
+        "non_power": true,
+        "placement": "decor",
+        "interaction": { "kind": "wave", "text_zh": "彩带飘呀飘：这一段旅程值得庆祝。", "text_en": "The ribbon waves: this journey is worth celebrating." },
+        "asset": "assets/generated/wala-gamification/clean/decor-parts/decor02_336x495.png",
+        "slot": "shelf.center"
+      }]
+    }
+  }
+}

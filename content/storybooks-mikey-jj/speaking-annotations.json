@@ -1,0 +1,980 @@
+{
+  "schema_version": 1,
+  "book": 2,
+  "scope": "whole book (54 atomic sentences)",
+  "note": "bubble 坐标为 Windows OCR 行包围盒按整页 1440x1921 归一化（相对漫画实际图像矩形）；speaker 依据 p02-p10 每页画面文本位置与故事设定交叉核实（JJ 建塔/净化机器、Mikey 造木筏/捕鱼）；p03 'Here it comes!'/'Hold on tight!' 为横幅面板，无法将说话人归属到单个角色，标记 system/角色。words 时间来自 faster-whisper base.en 词级（VAD 主，noVAD 补缺；复合拆分句取各自真实词边界）。",
+  "annotations": {
+    "b2-p01-s01": {
+      "text_en": "Warning!",
+      "zh": "警告！",
+      "speaker": {
+        "id": "narrator",
+        "label": "旁白"
+      },
+      "bubble": {
+        "x": 0.28,
+        "y": 0.027,
+        "w": 0.277,
+        "h": 0.137,
+        "tail": "none",
+        "variant": "narration"
+      },
+      "start_ms": 460,
+      "end_ms": 1240
+    },
+    "b2-p01-s02": {
+      "text_en": "The sea level is rising.",
+      "zh": "海平面正在上升。",
+      "speaker": {
+        "id": "narrator",
+        "label": "旁白"
+      },
+      "bubble": {
+        "x": 0.28,
+        "y": 0.027,
+        "w": 0.277,
+        "h": 0.137,
+        "tail": "none",
+        "variant": "narration"
+      },
+      "start_ms": 1680,
+      "end_ms": 2780
+    },
+    "b2-p01-s03": {
+      "text_en": "The world will flood!",
+      "zh": "世界将被洪水淹没！",
+      "speaker": {
+        "id": "narrator",
+        "label": "旁白"
+      },
+      "bubble": {
+        "x": 0.28,
+        "y": 0.027,
+        "w": 0.277,
+        "h": 0.137,
+        "tail": "none",
+        "variant": "narration"
+      },
+      "start_ms": 3380,
+      "end_ms": 4340
+    },
+    "b2-p01-s04": {
+      "text_en": "This is a disaster!",
+      "zh": "这是一场灾难！",
+      "speaker": {
+        "id": "narrator",
+        "label": "旁白"
+      },
+      "bubble": {
+        "x": 0.602,
+        "y": 0.023,
+        "w": 0.366,
+        "h": 0.115,
+        "tail": "none",
+        "variant": "narration"
+      },
+      "start_ms": 5160,
+      "end_ms": 6300
+    },
+    "b2-p01-s05": {
+      "text_en": "We must build shelters immediately.",
+      "zh": "我们必须立即建造避难所。",
+      "speaker": {
+        "id": "narrator",
+        "label": "旁白"
+      },
+      "bubble": {
+        "x": 0.602,
+        "y": 0.023,
+        "w": 0.366,
+        "h": 0.115,
+        "tail": "none",
+        "variant": "narration"
+      },
+      "start_ms": 6980,
+      "end_ms": 8660
+    },
+    "b2-p01-s06": {
+      "text_en": "The news was terrible.",
+      "zh": "新闻糟透了。",
+      "speaker": {
+        "id": "narrator",
+        "label": "旁白"
+      },
+      "bubble": {
+        "x": 0.039,
+        "y": 0.394,
+        "w": 0.391,
+        "h": 0.083,
+        "tail": "none",
+        "variant": "narration"
+      },
+      "start_ms": 9940,
+      "end_ms": 11120
+    },
+    "b2-p01-s07": {
+      "text_en": "The ice was melting fast.",
+      "zh": "冰正在快速融化。",
+      "speaker": {
+        "id": "narrator",
+        "label": "旁白"
+      },
+      "bubble": {
+        "x": 0.039,
+        "y": 0.394,
+        "w": 0.391,
+        "h": 0.083,
+        "tail": "none",
+        "variant": "narration"
+      },
+      "start_ms": 11820,
+      "end_ms": 13200
+    },
+    "b2-p01-s08": {
+      "text_en": "I will build a tower on sturdy pillars.",
+      "zh": "我要在坚固的柱子上建一座塔。",
+      "speaker": {
+        "id": "jj",
+        "label": "JJ"
+      },
+      "bubble": {
+        "x": 0.383,
+        "y": 0.546,
+        "w": 0.287,
+        "h": 0.113,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 14000,
+      "end_ms": 16520
+    },
+    "b2-p01-s09": {
+      "text_en": "I will build a raft.",
+      "zh": "我要造一只木筏。",
+      "speaker": {
+        "id": "mikey",
+        "label": "MIKEY"
+      },
+      "bubble": {
+        "x": 0.383,
+        "y": 0.546,
+        "w": 0.287,
+        "h": 0.113,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 17280,
+      "end_ms": 18520
+    },
+    "b2-p01-s10": {
+      "text_en": "It will float on the waves!",
+      "zh": "它会漂浮在海浪上！",
+      "speaker": {
+        "id": "mikey",
+        "label": "MIKEY"
+      },
+      "bubble": {
+        "x": 0.704,
+        "y": 0.554,
+        "w": 0.27,
+        "h": 0.133,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 19220,
+      "end_ms": 20480
+    },
+    "b2-p01-s11": {
+      "text_en": "They had to work quickly to save themselves.",
+      "zh": "他们必须迅速行动来拯救自己。",
+      "speaker": {
+        "id": "narrator",
+        "label": "旁白"
+      },
+      "bubble": {
+        "x": 0.039,
+        "y": 0.892,
+        "w": 0.396,
+        "h": 0.082,
+        "tail": "none",
+        "variant": "narration"
+      },
+      "start_ms": 21660,
+      "end_ms": 23680
+    },
+    "b2-p02-s01": {
+      "text_en": "These titanium pillars will never rust!",
+      "zh": "这些钛合金柱子永远不会生锈！",
+      "speaker": {
+        "id": "narrator",
+        "label": "旁白"
+      },
+      "bubble": {
+        "x": 0.074,
+        "y": 0.151,
+        "w": 0.263,
+        "h": 0.154,
+        "tail": "none",
+        "variant": "narration"
+      },
+      "start_ms": 25590,
+      "end_ms": 28350
+    },
+    "b2-p02-s02": {
+      "text_en": "They are indestructible!",
+      "zh": "它们坚不可摧！",
+      "speaker": {
+        "id": "narrator",
+        "label": "旁白"
+      },
+      "bubble": {
+        "x": 0.074,
+        "y": 0.151,
+        "w": 0.263,
+        "h": 0.154,
+        "tail": "none",
+        "variant": "narration"
+      },
+      "start_ms": 28830,
+      "end_ms": 30070
+    },
+    "b2-p02-s03": {
+      "text_en": "JJ drilled deep into the ground!",
+      "zh": "JJ 往地下钻得很深！",
+      "speaker": {
+        "id": "narrator",
+        "label": "旁白"
+      },
+      "bubble": {
+        "x": 0.042,
+        "y": 0.408,
+        "w": 0.261,
+        "h": 0.069,
+        "tail": "none",
+        "variant": "narration"
+      },
+      "start_ms": 30070,
+      "end_ms": 32950
+    },
+    "b2-p02-s04": {
+      "text_en": "Mikey finished his simple raft!",
+      "zh": "Mikey 造好了他的简易木筏！",
+      "speaker": {
+        "id": "narrator",
+        "label": "旁白"
+      },
+      "bubble": {
+        "x": 0.028,
+        "y": 0.509,
+        "w": 0.298,
+        "h": 0.072,
+        "tail": "none",
+        "variant": "narration"
+      },
+      "start_ms": 33850,
+      "end_ms": 36010
+    },
+    "b2-p02-s05": {
+      "text_en": "My house is light!",
+      "zh": "我的房子很轻！",
+      "speaker": {
+        "id": "jj",
+        "label": "JJ"
+      },
+      "bubble": {
+        "x": 0.327,
+        "y": 0.537,
+        "w": 0.252,
+        "h": 0.122,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 37090,
+      "end_ms": 38290
+    },
+    "b2-p02-s06": {
+      "text_en": "It will bob like a cork!",
+      "zh": "它会像软木塞一样上下漂浮！",
+      "speaker": {
+        "id": "jj",
+        "label": "JJ"
+      },
+      "bubble": {
+        "x": 0.327,
+        "y": 0.537,
+        "w": 0.252,
+        "h": 0.122,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 38850,
+      "end_ms": 40290
+    },
+    "b2-p03-s01": {
+      "text_en": "Suddenly, the ocean swallowed the land!",
+      "zh": "突然，海水吞没了陆地！",
+      "speaker": {
+        "id": "narrator",
+        "label": "旁白"
+      },
+      "bubble": {
+        "x": 0.042,
+        "y": 0.031,
+        "w": 0.345,
+        "h": 0.071,
+        "tail": "none",
+        "variant": "narration"
+      },
+      "start_ms": 42330,
+      "end_ms": 44950
+    },
+    "b2-p03-s02": {
+      "text_en": "Here it comes!",
+      "zh": "它来了！",
+      "speaker": {
+        "id": "system",
+        "label": "角色"
+      },
+      "bubble": {
+        "x": 0.268,
+        "y": 0.434,
+        "w": 0.467,
+        "h": 0.049,
+        "tail": "none",
+        "variant": "narration"
+      },
+      "start_ms": 45910,
+      "end_ms": 46670
+    },
+    "b2-p03-s03": {
+      "text_en": "Hold on tight!",
+      "zh": "抓紧了！",
+      "speaker": {
+        "id": "system",
+        "label": "角色"
+      },
+      "bubble": {
+        "x": 0.268,
+        "y": 0.434,
+        "w": 0.467,
+        "h": 0.049,
+        "tail": "none",
+        "variant": "narration"
+      },
+      "start_ms": 47190,
+      "end_ms": 47770
+    },
+    "b2-p03-s04": {
+      "text_en": "My tower is safe and dry!",
+      "zh": "我的塔又安全又干燥！",
+      "speaker": {
+        "id": "jj",
+        "label": "JJ"
+      },
+      "bubble": {
+        "x": 0.438,
+        "y": 0.528,
+        "w": 0.281,
+        "h": 0.089,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 48750,
+      "end_ms": 50790
+    },
+    "b2-p03-s05": {
+      "text_en": "Whew!",
+      "zh": "呼！",
+      "speaker": {
+        "id": "mikey",
+        "label": "MIKEY"
+      },
+      "bubble": {
+        "x": 0.24,
+        "y": 0.687,
+        "w": 0.477,
+        "h": 0.105,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 51790,
+      "end_ms": 52130
+    },
+    "b2-p03-s06": {
+      "text_en": "My raft is floating perfectly!",
+      "zh": "我的木筏浮得可好了！",
+      "speaker": {
+        "id": "mikey",
+        "label": "MIKEY"
+      },
+      "bubble": {
+        "x": 0.24,
+        "y": 0.687,
+        "w": 0.477,
+        "h": 0.105,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 52610,
+      "end_ms": 54090
+    },
+    "b2-p04-s01": {
+      "text_en": "JJ had a clever machine for survival!",
+      "zh": "JJ 有一个聪明的求生机器！",
+      "speaker": {
+        "id": "narrator",
+        "label": "旁白"
+      },
+      "bubble": {
+        "x": 0.034,
+        "y": 0.024,
+        "w": 0.347,
+        "h": 0.078,
+        "tail": "none",
+        "variant": "narration"
+      },
+      "start_ms": 56040,
+      "end_ms": 58740
+    },
+    "b2-p04-s02": {
+      "text_en": "This filters the salt!",
+      "zh": "这个能把盐过滤掉！",
+      "speaker": {
+        "id": "jj",
+        "label": "JJ"
+      },
+      "bubble": {
+        "x": 0.577,
+        "y": 0.013,
+        "w": 0.397,
+        "h": 0.177,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 59540,
+      "end_ms": 61240
+    },
+    "b2-p04-s03": {
+      "text_en": "Now I have fresh drinking water!",
+      "zh": "现在我有干净的饮用水了！",
+      "speaker": {
+        "id": "jj",
+        "label": "JJ"
+      },
+      "bubble": {
+        "x": 0.577,
+        "y": 0.013,
+        "w": 0.397,
+        "h": 0.177,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 61720,
+      "end_ms": 63520
+    },
+    "b2-p04-s04": {
+      "text_en": "Mikey found food in the sea!",
+      "zh": "Mikey 在海里找到了食物！",
+      "speaker": {
+        "id": "narrator",
+        "label": "旁白"
+      },
+      "bubble": {
+        "x": 0.02,
+        "y": 0.509,
+        "w": 0.311,
+        "h": 0.086,
+        "tail": "none",
+        "variant": "narration"
+      },
+      "start_ms": 64320,
+      "end_ms": 66140
+    },
+    "b2-p04-s05": {
+      "text_en": "I caught a huge fish!",
+      "zh": "我抓了一条大鱼！",
+      "speaker": {
+        "id": "mikey",
+        "label": "MIKEY"
+      },
+      "bubble": {
+        "x": 0.02,
+        "y": 0.509,
+        "w": 0.311,
+        "h": 0.086,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 67040,
+      "end_ms": 68500
+    },
+    "b2-p04-s06": {
+      "text_en": "I will not go hungry!",
+      "zh": "我不会挨饿了！",
+      "speaker": {
+        "id": "mikey",
+        "label": "MIKEY"
+      },
+      "bubble": {
+        "x": 0.493,
+        "y": 0.522,
+        "w": 0.389,
+        "h": 0.128,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 69040,
+      "end_ms": 70340
+    },
+    "b2-p05-s01": {
+      "text_en": "Hey!",
+      "zh": "嘿！",
+      "speaker": {
+        "id": "mikey",
+        "label": "MIKEY"
+      },
+      "bubble": {
+        "x": 0.07,
+        "y": 0.077,
+        "w": 0.322,
+        "h": 0.114,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 71020,
+      "end_ms": 71340
+    },
+    "b2-p05-s02": {
+      "text_en": "Get away!",
+      "zh": "走开！",
+      "speaker": {
+        "id": "mikey",
+        "label": "MIKEY"
+      },
+      "bubble": {
+        "x": 0.07,
+        "y": 0.077,
+        "w": 0.322,
+        "h": 0.114,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 73180,
+      "end_ms": 73560
+    },
+    "b2-p05-s03": {
+      "text_en": "That is my dinner!",
+      "zh": "那是我的晚餐！",
+      "speaker": {
+        "id": "mikey",
+        "label": "MIKEY"
+      },
+      "bubble": {
+        "x": 0.07,
+        "y": 0.077,
+        "w": 0.322,
+        "h": 0.114,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 74020,
+      "end_ms": 74800
+    },
+    "b2-p05-s04": {
+      "text_en": "The birds stole everything and flew away!",
+      "zh": "鸟儿们偷走了所有东西，飞走了！",
+      "speaker": {
+        "id": "narrator",
+        "label": "旁白"
+      },
+      "bubble": {
+        "x": 0.043,
+        "y": 0.519,
+        "w": 0.427,
+        "h": 0.07,
+        "tail": "none",
+        "variant": "narration"
+      },
+      "start_ms": 75500,
+      "end_ms": 78320
+    },
+    "b2-p05-s05": {
+      "text_en": "No!",
+      "zh": "不！",
+      "speaker": {
+        "id": "mikey",
+        "label": "MIKEY"
+      },
+      "bubble": {
+        "x": 0.329,
+        "y": 0.607,
+        "w": 0.166,
+        "h": 0.094,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 79020,
+      "end_ms": 79380
+    },
+    "b2-p05-s06": {
+      "text_en": "My food!",
+      "zh": "我的食物！",
+      "speaker": {
+        "id": "mikey",
+        "label": "MIKEY"
+      },
+      "bubble": {
+        "x": 0.329,
+        "y": 0.607,
+        "w": 0.166,
+        "h": 0.094,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 80320,
+      "end_ms": 81320
+    },
+    "b2-p06-s01": {
+      "text_en": "A storm began to howl across the ocean!",
+      "zh": "一场风暴开始在海上呼啸！",
+      "speaker": {
+        "id": "narrator",
+        "label": "旁白"
+      },
+      "bubble": {
+        "x": 0.048,
+        "y": 0.031,
+        "w": 0.356,
+        "h": 0.074,
+        "tail": "none",
+        "variant": "narration"
+      },
+      "start_ms": 83240,
+      "end_ms": 85920
+    },
+    "b2-p06-s02": {
+      "text_en": "Get inside, Mikey!",
+      "zh": "快进去，Mikey！",
+      "speaker": {
+        "id": "jj",
+        "label": "JJ"
+      },
+      "bubble": {
+        "x": 0.048,
+        "y": 0.031,
+        "w": 0.356,
+        "h": 0.074,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 86760,
+      "end_ms": 87960
+    },
+    "b2-p06-s03": {
+      "text_en": "The weather is turning bad!",
+      "zh": "天气要变坏了！",
+      "speaker": {
+        "id": "jj",
+        "label": "JJ"
+      },
+      "bubble": {
+        "x": 0.504,
+        "y": 0.031,
+        "w": 0.277,
+        "h": 0.246,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 88340,
+      "end_ms": 89540
+    },
+    "b2-p06-s04": {
+      "text_en": "I feel terrible!",
+      "zh": "我难受极了！",
+      "speaker": {
+        "id": "mikey",
+        "label": "MIKEY"
+      },
+      "bubble": {
+        "x": 0.288,
+        "y": 0.514,
+        "w": 0.266,
+        "h": 0.1,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 90180,
+      "end_ms": 91160
+    },
+    "b2-p06-s05": {
+      "text_en": "The waves are too strong!",
+      "zh": "海浪太猛了！",
+      "speaker": {
+        "id": "mikey",
+        "label": "MIKEY"
+      },
+      "bubble": {
+        "x": 0.288,
+        "y": 0.514,
+        "w": 0.266,
+        "h": 0.1,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 92020,
+      "end_ms": 93440
+    },
+    "b2-p07-s01": {
+      "text_en": "Something enormous was lurking below!",
+      "zh": "有什么巨大的东西潜伏在下面！",
+      "speaker": {
+        "id": "narrator",
+        "label": "旁白"
+      },
+      "bubble": {
+        "x": 0.021,
+        "y": 0.023,
+        "w": 0.418,
+        "h": 0.108,
+        "tail": "none",
+        "variant": "narration"
+      },
+      "start_ms": 93440,
+      "end_ms": 97560
+    },
+    "b2-p07-s02": {
+      "text_en": "Mikey, look at the water!",
+      "zh": "Mikey，快看水面！",
+      "speaker": {
+        "id": "jj",
+        "label": "JJ"
+      },
+      "bubble": {
+        "x": 0.394,
+        "y": 0.094,
+        "w": 0.305,
+        "h": 0.154,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 98480,
+      "end_ms": 99860
+    },
+    "b2-p07-s03": {
+      "text_en": "Help me!",
+      "zh": "救命！",
+      "speaker": {
+        "id": "mikey",
+        "label": "MIKEY"
+      },
+      "bubble": {
+        "x": 0.666,
+        "y": 0.585,
+        "w": 0.276,
+        "h": 0.167,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 100640,
+      "end_ms": 101340
+    },
+    "b2-p07-s04": {
+      "text_en": "It's going to eat the raft!",
+      "zh": "它要吃木筏了！",
+      "speaker": {
+        "id": "mikey",
+        "label": "MIKEY"
+      },
+      "bubble": {
+        "x": 0.666,
+        "y": 0.585,
+        "w": 0.276,
+        "h": 0.167,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 101660,
+      "end_ms": 103100
+    },
+    "b2-p08-s01": {
+      "text_en": "My shelter is destroyed!",
+      "zh": "我的避难所被毁了！",
+      "speaker": {
+        "id": "mikey",
+        "label": "MIKEY"
+      },
+      "bubble": {
+        "x": 0.645,
+        "y": 0.055,
+        "w": 0.292,
+        "h": 0.151,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 105220,
+      "end_ms": 106760
+    },
+    "b2-p08-s02": {
+      "text_en": "JJ activated his secret weapon!",
+      "zh": "JJ 启动了他的秘密武器！",
+      "speaker": {
+        "id": "narrator",
+        "label": "旁白"
+      },
+      "bubble": {
+        "x": 0.659,
+        "y": 0.516,
+        "w": 0.298,
+        "h": 0.083,
+        "tail": "none",
+        "variant": "narration"
+      },
+      "start_ms": 107850,
+      "end_ms": 109870
+    },
+    "b2-p08-s03": {
+      "text_en": "Take this, you beast!",
+      "zh": "接招吧，你这怪物！",
+      "speaker": {
+        "id": "jj",
+        "label": "JJ"
+      },
+      "bubble": {
+        "x": 0.659,
+        "y": 0.516,
+        "w": 0.298,
+        "h": 0.083,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 110770,
+      "end_ms": 112030
+    },
+    "b2-p08-s04": {
+      "text_en": "Electric shock!",
+      "zh": "电击！",
+      "speaker": {
+        "id": "jj",
+        "label": "JJ"
+      },
+      "bubble": {
+        "x": 0.659,
+        "y": 0.516,
+        "w": 0.298,
+        "h": 0.083,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 112610,
+      "end_ms": 113390
+    },
+    "b2-p09-s01": {
+      "text_en": "The shark was stunned and swam away fast!",
+      "zh": "鲨鱼被电晕，飞快地游走了！",
+      "speaker": {
+        "id": "narrator",
+        "label": "旁白"
+      },
+      "bubble": {
+        "x": 0.034,
+        "y": 0.007,
+        "w": 0.37,
+        "h": 0.08,
+        "tail": "none",
+        "variant": "narration"
+      },
+      "start_ms": 115310,
+      "end_ms": 117930
+    },
+    "b2-p09-s02": {
+      "text_en": "Climb up, Mikey!",
+      "zh": "快爬上来，Mikey！",
+      "speaker": {
+        "id": "jj",
+        "label": "JJ"
+      },
+      "bubble": {
+        "x": 0.243,
+        "y": 0.513,
+        "w": 0.336,
+        "h": 0.124,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 118750,
+      "end_ms": 120110
+    },
+    "b2-p09-s03": {
+      "text_en": "Hurry before it comes back!",
+      "zh": "趁它回来之前快点！",
+      "speaker": {
+        "id": "jj",
+        "label": "JJ"
+      },
+      "bubble": {
+        "x": 0.243,
+        "y": 0.513,
+        "w": 0.336,
+        "h": 0.124,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 120350,
+      "end_ms": 121550
+    },
+    "b2-p10-s01": {
+      "text_en": "You saved my life, JJ!",
+      "zh": "你救了我的命，JJ！",
+      "speaker": {
+        "id": "mikey",
+        "label": "MIKEY"
+      },
+      "bubble": {
+        "x": 0.427,
+        "y": 0.027,
+        "w": 0.417,
+        "h": 0.119,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 122900,
+      "end_ms": 124780
+    },
+    "b2-p10-s02": {
+      "text_en": "Your house is amazing!",
+      "zh": "你的房子太棒了！",
+      "speaker": {
+        "id": "mikey",
+        "label": "MIKEY"
+      },
+      "bubble": {
+        "x": 0.427,
+        "y": 0.027,
+        "w": 0.417,
+        "h": 0.119,
+        "tail": "bottom",
+        "variant": "dialogue"
+      },
+      "start_ms": 125520,
+      "end_ms": 126520
+    },
+    "b2-p10-s03": {
+      "text_en": "We survived the water world!",
+      "zh": "我们在水世界里活了下来！",
+      "speaker": {
+        "id": "narrator",
+        "label": "旁白"
+      },
+      "bubble": {
+        "x": 0.339,
+        "y": 0.559,
+        "w": 0.367,
+        "h": 0.126,
+        "tail": "none",
+        "variant": "narration"
+      },
+      "start_ms": 126520,
+      "end_ms": 129700
+    }
+  }
+}

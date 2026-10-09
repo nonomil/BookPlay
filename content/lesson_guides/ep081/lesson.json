@@ -1,0 +1,1986 @@
+{
+  "schema_version": 1,
+  "episode": 81,
+  "title": {
+    "en": "Help from a Dragon",
+    "zh": "西游记 第81集"
+  },
+  "sources": [
+    {
+      "kind": "courseware_main_pptx",
+      "file": "G:\\Game\\BookPlay书戏\\data\\西游记课件\\3.3西游记  Journey to the West PPT课件\\081_Journey to the West 81_Help from a Dragon.pptx",
+      "sha256": "c7b3085a798cde616a65a8de3426028989f8573b2745bc441b92148ea028baee",
+      "pages": 20
+    },
+    {
+      "kind": "official_quiz_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+      "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929",
+      "pages": 131
+    },
+    {
+      "kind": "intensive_reader_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\02-西游记精读版台词本\\1、带标注版PDF 108集\\081 亢金龙的帮助 上.pdf",
+      "sha256": "4cee7a3084cb835fee6457ac2d8d498688a542b039d39a05c2547c91a3aa9e6a",
+      "pages": 4
+    },
+    {
+      "kind": "intensive_reader_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\02-西游记精读版台词本\\1、带标注版PDF 108集\\081 亢金龙的帮助 下.pdf",
+      "sha256": "56c26a3fa287e9530a38263f0bbd04236bc1c761f41fc4d437259cedc850c80b",
+      "pages": 4
+    },
+    {
+      "kind": "courseware_screenshots_pptx",
+      "file": "G:\\Game\\BookPlay书戏\\data\\西游记课件\\西游记-外教课动画截图\\Journey to the West 081  Help from a Dragon_28503486.pptx",
+      "sha256": "6c69deda03e1df9e96de166420748a0666fcf953672c9c6e5fc71065d16853a7",
+      "pages": 47
+    }
+  ],
+  "cards": [
+    {
+      "card_id": "ep081-official-quiz-001",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 1,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "which is not true?",
+        "zh": "哪一项是不正确的？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "bajie remembered to bring the bags.",
+            "zh": "八戒记得带了袋子。"
+          },
+          {
+            "id": "b",
+            "en": "wukong woke yellow brows twice.",
+            "zh": "悟空叫醒了黄眉两次。"
+          },
+          {
+            "id": "c",
+            "en": "the jade emperor sent the gold dragon.",
+            "zh": "玉皇大帝派来了金龙。"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n017",
+            "quote": "\"I'm the Gold Dragon,\" said the voice."
+          },
+          {
+            "node_id": "n018",
+            "quote": "\"The Jade Emperor sent me to help you. I'll wedge my horn between the cymbals and pry them apart.\""
+          },
+          {
+            "node_id": "n033",
+            "quote": "\"We have to be quiet,\" said the dragon."
+          },
+          {
+            "node_id": "n034",
+            "quote": "\"The demon is sleeping.\""
+          },
+          {
+            "node_id": "n037",
+            "quote": "<font color=\"#ffff00\"><i>Smash!</i></font> The cymbals shattered."
+          },
+          {
+            "node_id": "n040",
+            "quote": "The demon stormed into the room."
+          },
+          {
+            "node_id": "n064",
+            "quote": "\"Bajie, get the bags.\""
+          },
+          {
+            "node_id": "n068",
+            "quote": "\"Where are the bags?\""
+          },
+          {
+            "node_id": "n069",
+            "quote": "The pig moaned."
+          },
+          {
+            "node_id": "n070",
+            "quote": "\"I forgot them.\""
+          },
+          {
+            "node_id": "n074",
+            "quote": "But as he was leaving, he tripped and knocked over a statue. <font color=\"#ffff00\"><i>Bang!</i></font> From another room Yellow Brows shouted, \"What was that?\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 98,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep081-official-quiz-002",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 2,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "what did wukong do for hours?",
+        "zh": "悟空做了几个小时什么？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "try to escape the cymbals",
+            "zh": "试图逃离钹"
+          },
+          {
+            "id": "b",
+            "en": "look for the tang monk",
+            "zh": "寻找唐僧"
+          },
+          {
+            "id": "c",
+            "en": "pray to buddha for help",
+            "zh": "向佛祖祈求帮助"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n010",
+            "quote": "The monkey punched and kicked the inside of the cymbals for hours."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 98,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep081-official-quiz-003",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 3,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "who helped wukong escape from the cymbals?",
+        "zh": "谁帮助悟空从钹中逃出来？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "the gold dragon",
+            "zh": "金龙"
+          },
+          {
+            "id": "b",
+            "en": "the gold demon",
+            "zh": "黄金恶魔"
+          },
+          {
+            "id": "c",
+            "en": "the tang monk",
+            "zh": "唐僧"
+          }
+        ],
+        "answer": "b",
+        "answer_evidence": [
+          {
+            "node_id": "n059",
+            "quote": "\"We must escape as soon as the demon goes back to sleep. He plans to get the True Scriptures himself.\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 98,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep081-official-quiz-004",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 4,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "why did wukong go back to get the bags?",
+        "zh": "悟空为什么要回去取袋子？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "the tang monk's special robe was in the bags.",
+            "zh": "唐僧的法衣在袋子里。"
+          },
+          {
+            "id": "b",
+            "en": "his iron bar was in the bags.",
+            "zh": "他的铁棍在包里。"
+          },
+          {
+            "id": "c",
+            "en": "bajie's food was in the bags.",
+            "zh": "八戒的食物在袋子里。"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n067",
+            "quote": "Wukong looked at Bajie and frowned."
+          },
+          {
+            "node_id": "n068",
+            "quote": "\"Where are the bags?\""
+          },
+          {
+            "node_id": "n069",
+            "quote": "The pig moaned."
+          },
+          {
+            "node_id": "n070",
+            "quote": "\"I forgot them.\""
+          },
+          {
+            "node_id": "n071",
+            "quote": "\"Master's special robe is in one of those bags!\" Wukong sighed."
+          },
+          {
+            "node_id": "n072",
+            "quote": "\"Wait here. I'll go back in and get them.\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 98,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep081-official-quiz-005",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 5,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "what did wukong knock over?",
+        "zh": "悟空打翻了什么？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "a statue",
+            "zh": "一座雕像"
+          },
+          {
+            "id": "b",
+            "en": "the cymbals",
+            "zh": "钹"
+          },
+          {
+            "id": "c",
+            "en": "a weapon",
+            "zh": "一件武器"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n074",
+            "quote": "But as he was leaving, he tripped and knocked over a statue. <font color=\"#ffff00\"><i>Bang!</i></font> From another room Yellow Brows shouted, \"What was that?\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 98,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep081-vocab-001",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 101,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "there",
+        "zh": "adv.(在)那里"
+      },
+      "payload": {
+        "term": "there",
+        "ipa": "ðeə(r)",
+        "pos": "adv.",
+        "def": "adv.(在)那里",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "081 亢金龙的帮助 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "4cee7a3084cb835fee6457ac2d8d498688a542b039d39a05c2547c91a3aa9e6a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep081-vocab-002",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 102,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "who",
+        "zh": "pron.谁,什么人"
+      },
+      "payload": {
+        "term": "who",
+        "ipa": "huː",
+        "pos": "pron.",
+        "def": "pron.谁,什么人",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "081 亢金龙的帮助 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "4cee7a3084cb835fee6457ac2d8d498688a542b039d39a05c2547c91a3aa9e6a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep081-vocab-003",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 103,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "ask",
+        "zh": "v.请求,要求,询问"
+      },
+      "payload": {
+        "term": "ask",
+        "ipa": "ɑːsk",
+        "pos": "v.",
+        "def": "v.请求,要求,询问",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "081 亢金龙的帮助 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "4cee7a3084cb835fee6457ac2d8d498688a542b039d39a05c2547c91a3aa9e6a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep081-vocab-004",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 104,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "help",
+        "zh": "有帮助的 人或物 v.帮助,援助"
+      },
+      "payload": {
+        "term": "help",
+        "ipa": "help",
+        "pos": "n.",
+        "def": "n.[U]帮助,援助[sing.]有帮助的 人或物 v.帮助,援助",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "081 亢金龙的帮助 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "4cee7a3084cb835fee6457ac2d8d498688a542b039d39a05c2547c91a3aa9e6a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep081-vocab-005",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 105,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "please",
+        "zh": "interj.(用于客气地请求)请"
+      },
+      "payload": {
+        "term": "please",
+        "ipa": "pliː z",
+        "pos": "interj.",
+        "def": "interj.(用于客气地请求)请",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "081 亢金龙的帮助 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "4cee7a3084cb835fee6457ac2d8d498688a542b039d39a05c2547c91a3aa9e6a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep081-vocab-006",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 106,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "hurry",
+        "zh": "v.匆忙,赶快 n.匆忙,急忙"
+      },
+      "payload": {
+        "term": "hurry",
+        "ipa": "ˈhʌri",
+        "pos": "v.",
+        "def": "v.匆忙,赶快 n.匆忙,急忙",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          2,
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "081 亢金龙的帮助 上.pdf",
+          "half": "up",
+          "pages": [
+            2,
+            3
+          ],
+          "sha256": "4cee7a3084cb835fee6457ac2d8d498688a542b039d39a05c2547c91a3aa9e6a"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "081 亢金龙的帮助 下.pdf",
+          "half": "down",
+          "pages": [
+            2,
+            3
+          ],
+          "sha256": "56c26a3fa287e9530a38263f0bbd04236bc1c761f41fc4d437259cedc850c80b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep081-vocab-007",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 107,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "find",
+        "zh": "vt.找到,发现,查找,查明"
+      },
+      "payload": {
+        "term": "find",
+        "ipa": "faɪnd",
+        "pos": "vt.",
+        "def": "vt.找到,发现,查找,查明",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "081 亢金龙的帮助 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "4cee7a3084cb835fee6457ac2d8d498688a542b039d39a05c2547c91a3aa9e6a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep081-vocab-008",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 108,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "another",
+        "zh": "adj./pron.另一,又一"
+      },
+      "payload": {
+        "term": "another",
+        "ipa": "əˈnʌðə(r)",
+        "pos": "adj.",
+        "def": "adj./pron.另一,又一",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          2,
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "081 亢金龙的帮助 上.pdf",
+          "half": "up",
+          "pages": [
+            2,
+            3
+          ],
+          "sha256": "4cee7a3084cb835fee6457ac2d8d498688a542b039d39a05c2547c91a3aa9e6a"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "081 亢金龙的帮助 下.pdf",
+          "half": "down",
+          "pages": [
+            2,
+            3
+          ],
+          "sha256": "56c26a3fa287e9530a38263f0bbd04236bc1c761f41fc4d437259cedc850c80b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep081-vocab-009",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 109,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "different",
+        "zh": "adj.不同的,有差别的"
+      },
+      "payload": {
+        "term": "different",
+        "ipa": "dɪfrənt",
+        "pos": "adj.",
+        "def": "adj.不同的,有差别的",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "081 亢金龙的帮助 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "4cee7a3084cb835fee6457ac2d8d498688a542b039d39a05c2547c91a3aa9e6a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep081-vocab-010",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 110,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "idea",
+        "zh": "想法,主意"
+      },
+      "payload": {
+        "term": "idea",
+        "ipa": "aɪˈdɪə",
+        "pos": "n.",
+        "def": "n.[C]想法,主意",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "081 亢金龙的帮助 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "4cee7a3084cb835fee6457ac2d8d498688a542b039d39a05c2547c91a3aa9e6a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep081-vocab-011",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 111,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "turn",
+        "zh": "轮流圈国"
+      },
+      "payload": {
+        "term": "turn",
+        "ipa": "tɜː (r)n",
+        "pos": "v.",
+        "def": "v.转向,翻圈v.-link.(使)变成 n.[C]轮流圈国",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "081 亢金龙的帮助 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "4cee7a3084cb835fee6457ac2d8d498688a542b039d39a05c2547c91a3aa9e6a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep081-vocab-012",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 112,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "hole",
+        "zh": "洞,孔,坑"
+      },
+      "payload": {
+        "term": "hole",
+        "ipa": "həʊl",
+        "pos": "n.",
+        "def": "n.[C]洞,孔,坑",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "081 亢金龙的帮助 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "4cee7a3084cb835fee6457ac2d8d498688a542b039d39a05c2547c91a3aa9e6a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep081-vocab-013",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 113,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "tiny",
+        "zh": "adj.极小的,微小的"
+      },
+      "payload": {
+        "term": "tiny",
+        "ipa": "ˈtaɪni",
+        "pos": "adj.",
+        "def": "adj.极小的,微小的",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "081 亢金龙的帮助 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "4cee7a3084cb835fee6457ac2d8d498688a542b039d39a05c2547c91a3aa9e6a"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "081 亢金龙的帮助 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "56c26a3fa287e9530a38263f0bbd04236bc1c761f41fc4d437259cedc850c80b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep081-vocab-014",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 114,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "climb",
+        "zh": "攀登"
+      },
+      "payload": {
+        "term": "climb",
+        "ipa": "klaɪm",
+        "pos": "v.",
+        "def": "v.爬 n.[C]攀登",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "081 亢金龙的帮助 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "4cee7a3084cb835fee6457ac2d8d498688a542b039d39a05c2547c91a3aa9e6a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep081-vocab-015",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 115,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "pull",
+        "zh": "引力,吸引力"
+      },
+      "payload": {
+        "term": "pull",
+        "ipa": "pʊl",
+        "pos": "v.",
+        "def": "v.拉,托 n.[C]拉,托[sing.]引力,吸引力",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "081 亢金龙的帮助 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "4cee7a3084cb835fee6457ac2d8d498688a542b039d39a05c2547c91a3aa9e6a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep081-vocab-016",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 116,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "out",
+        "zh": "adv.外出,出来"
+      },
+      "payload": {
+        "term": "out",
+        "ipa": "aʊt",
+        "pos": "adv.",
+        "def": "adv.外出,出来",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "081 亢金龙的帮助 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "4cee7a3084cb835fee6457ac2d8d498688a542b039d39a05c2547c91a3aa9e6a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep081-vocab-017",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 117,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "monkey",
+        "zh": "猴子"
+      },
+      "payload": {
+        "term": "monkey",
+        "ipa": "ˈmʌŋki",
+        "pos": "n.",
+        "def": "n.[C]猴子",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "081 亢金龙的帮助 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "4cee7a3084cb835fee6457ac2d8d498688a542b039d39a05c2547c91a3aa9e6a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep081-vocab-018",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 118,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "jump",
+        "zh": "跳,跃(指运动)"
+      },
+      "payload": {
+        "term": "jump",
+        "ipa": "dʒʌmp",
+        "pos": "v.",
+        "def": "v.跳,跃 n.[C]跳,跃(指运动)",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "081 亢金龙的帮助 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "4cee7a3084cb835fee6457ac2d8d498688a542b039d39a05c2547c91a3aa9e6a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep081-vocab-019",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 119,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "return",
+        "zh": "归还"
+      },
+      "payload": {
+        "term": "return",
+        "ipa": "rɪˈtɜː(r)n",
+        "pos": "",
+        "def": "归还",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ],
+        "gloss": "归还"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "081 亢金龙的帮助 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "4cee7a3084cb835fee6457ac2d8d498688a542b039d39a05c2547c91a3aa9e6a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep081-vocab-020",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 120,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "normal",
+        "zh": "常态,通常标准"
+      },
+      "payload": {
+        "term": "normal",
+        "ipa": "ˈnɔː (r)ml",
+        "pos": "adj.",
+        "def": "adj.正常的,一般的 n.[U]常态,通常标准",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "081 亢金龙的帮助 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "4cee7a3084cb835fee6457ac2d8d498688a542b039d39a05c2547c91a3aa9e6a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep081-vocab-021",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 121,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "free",
+        "zh": "adj.空闲的,免费的,自由的 adv.免费 vt.释放,解放,解除"
+      },
+      "payload": {
+        "term": "free",
+        "ipa": "friː",
+        "pos": "adj.",
+        "def": "adj.空闲的,免费的,自由的 adv.免费 vt.释放,解放,解除",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "081 亢金龙的帮助 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "4cee7a3084cb835fee6457ac2d8d498688a542b039d39a05c2547c91a3aa9e6a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep081-vocab-022",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 122,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "quiet",
+        "zh": "宁静,安静"
+      },
+      "payload": {
+        "term": "quiet",
+        "ipa": "ˈkwaɪət",
+        "pos": "adj.",
+        "def": "adj.安静的 n.[U]宁静,安静",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          2,
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "081 亢金龙的帮助 上.pdf",
+          "half": "up",
+          "pages": [
+            2,
+            3
+          ],
+          "sha256": "4cee7a3084cb835fee6457ac2d8d498688a542b039d39a05c2547c91a3aa9e6a"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "081 亢金龙的帮助 下.pdf",
+          "half": "down",
+          "pages": [
+            2,
+            3
+          ],
+          "sha256": "56c26a3fa287e9530a38263f0bbd04236bc1c761f41fc4d437259cedc850c80b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep081-vocab-023",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 123,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "sleep",
+        "zh": "一觉"
+      },
+      "payload": {
+        "term": "sleep",
+        "ipa": "sliː p",
+        "pos": "vi.",
+        "def": "vi./n.[U]睡觉[sing.]一觉",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "081 亢金龙的帮助 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "4cee7a3084cb835fee6457ac2d8d498688a542b039d39a05c2547c91a3aa9e6a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep081-vocab-024",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 124,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "nod",
+        "zh": "点头"
+      },
+      "payload": {
+        "term": "nod",
+        "ipa": "nɒd",
+        "pos": "v.",
+        "def": "v.点头 n.[C]点头",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "081 亢金龙的帮助 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "4cee7a3084cb835fee6457ac2d8d498688a542b039d39a05c2547c91a3aa9e6a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep081-vocab-025",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 125,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "toward",
+        "zh": "prep.朝,向,对着"
+      },
+      "payload": {
+        "term": "toward",
+        "ipa": "təˈwɔː d",
+        "pos": "prep.",
+        "def": "prep.朝,向,对着",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "081 亢金龙的帮助 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "4cee7a3084cb835fee6457ac2d8d498688a542b039d39a05c2547c91a3aa9e6a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep081-vocab-026",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 126,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "raise",
+        "zh": "vt.募集,征集,提高,举起,养 育,饲养;提出"
+      },
+      "payload": {
+        "term": "raise",
+        "ipa": "reɪz",
+        "pos": "vt.",
+        "def": "vt.募集,征集,提高,举起,养 育,饲养;提出",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "081 亢金龙的帮助 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "4cee7a3084cb835fee6457ac2d8d498688a542b039d39a05c2547c91a3aa9e6a"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep081-vocab-027",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 127,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "corner",
+        "zh": "拐角,区域,地区,街角"
+      },
+      "payload": {
+        "term": "corner",
+        "ipa": "ˈkɔː(r)nə(r)",
+        "pos": "n.",
+        "def": "n.[C]拐角,区域,地区,街角",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "081 亢金龙的帮助 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "56c26a3fa287e9530a38263f0bbd04236bc1c761f41fc4d437259cedc850c80b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep081-vocab-028",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 128,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "sorry",
+        "zh": "adj.抱歉的,难过的,惋惜的"
+      },
+      "payload": {
+        "term": "sorry",
+        "ipa": "ˈsɒri",
+        "pos": "adj.",
+        "def": "adj.抱歉的,难过的,惋惜的",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "081 亢金龙的帮助 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "56c26a3fa287e9530a38263f0bbd04236bc1c761f41fc4d437259cedc850c80b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep081-vocab-029",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 129,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "believe",
+        "zh": "v.相信,认为有可能"
+      },
+      "payload": {
+        "term": "believe",
+        "ipa": "bɪˈliːv",
+        "pos": "v.",
+        "def": "v.相信,认为有可能",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "081 亢金龙的帮助 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "56c26a3fa287e9530a38263f0bbd04236bc1c761f41fc4d437259cedc850c80b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep081-vocab-030",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 130,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "dangerous",
+        "zh": "adj.有危险的,不安全的"
+      },
+      "payload": {
+        "term": "dangerous",
+        "ipa": "ˈdeɪndʒərəs",
+        "pos": "adj.",
+        "def": "adj.有危险的,不安全的",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "081 亢金龙的帮助 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "56c26a3fa287e9530a38263f0bbd04236bc1c761f41fc4d437259cedc850c80b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep081-vocab-031",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 131,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "plan",
+        "zh": "打算,计划"
+      },
+      "payload": {
+        "term": "plan",
+        "ipa": "plæn",
+        "pos": "v.",
+        "def": "v./n.打算,计划 [C]打算,计划",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "081 亢金龙的帮助 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "56c26a3fa287e9530a38263f0bbd04236bc1c761f41fc4d437259cedc850c80b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep081-vocab-032",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 132,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "group",
+        "zh": "组,群 vt.把......分组/归类,聚集"
+      },
+      "payload": {
+        "term": "group",
+        "ipa": "ɡruːp",
+        "pos": "n.",
+        "def": "n.[C]组,群 vt.把......分组/归类,聚集",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "081 亢金龙的帮助 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "56c26a3fa287e9530a38263f0bbd04236bc1c761f41fc4d437259cedc850c80b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep081-vocab-033",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 133,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "wait",
+        "zh": "v.等待,等候"
+      },
+      "payload": {
+        "term": "wait",
+        "ipa": "weɪt",
+        "pos": "v.",
+        "def": "v.等待,等候",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "081 亢金龙的帮助 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "56c26a3fa287e9530a38263f0bbd04236bc1c761f41fc4d437259cedc850c80b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep081-vocab-034",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 134,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "bag",
+        "zh": "袋,包"
+      },
+      "payload": {
+        "term": "bag",
+        "ipa": "bæɡ",
+        "pos": "n.",
+        "def": "n.[C]袋,包",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "081 亢金龙的帮助 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "56c26a3fa287e9530a38263f0bbd04236bc1c761f41fc4d437259cedc850c80b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep081-vocab-035",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 135,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "warn",
+        "zh": "警告"
+      },
+      "payload": {
+        "term": "warn",
+        "ipa": "wɔː (r)n",
+        "pos": "v.",
+        "def": "警告",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ],
+        "gloss": "警告"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "081 亢金龙的帮助 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "56c26a3fa287e9530a38263f0bbd04236bc1c761f41fc4d437259cedc850c80b"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep081-vocab-036",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 136,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "trip",
+        "zh": "旅游,旅行 vi.绊,绊倒"
+      },
+      "payload": {
+        "term": "trip",
+        "ipa": "trɪp",
+        "pos": "n.",
+        "def": "n.[C]旅游,旅行 vi.绊,绊倒",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "081 亢金龙的帮助 下.pdf",
+          "half": "down",
+          "pages": [
+            3
+          ],
+          "sha256": "56c26a3fa287e9530a38263f0bbd04236bc1c761f41fc4d437259cedc850c80b"
+        }
+      ],
+      "review_status": "machine_verified"
+    }
+  ],
+  "teacher_guide": null,
+  "review": {
+    "status": "draft",
+    "reviewed_at": null,
+    "card_stats": {
+      "total": 41,
+      "sentence_choice": 5,
+      "word_review": 36,
+      "machine_verified": 39,
+      "assistant_reviewed": 2,
+      "verified": 41,
+      "needs_review": 0
+    }
+  },
+  "generated_at": "2026-08-31T04:49:46.950647+00:00"
+}

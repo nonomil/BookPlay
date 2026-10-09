@@ -1,0 +1,3134 @@
+{
+  "schema_version": 1,
+  "episode": 89,
+  "title": {
+    "en": "Many Eyes",
+    "zh": "西游记 第89集"
+  },
+  "sources": [
+    {
+      "kind": "courseware_main_pptx",
+      "file": "G:\\Game\\BookPlay书戏\\data\\西游记课件\\3.3西游记  Journey to the West PPT课件\\089_Journey to the West 89_Many Eyes.pptx",
+      "sha256": "850f2ddcc3649e9d75a826c019a75281036bb1a92a175b4bf2da507691f263e8",
+      "pages": 20
+    },
+    {
+      "kind": "official_quiz_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+      "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929",
+      "pages": 131
+    },
+    {
+      "kind": "intensive_reader_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\02-西游记精读版台词本\\1、带标注版PDF 108集\\089 无数只眼睛 上.pdf",
+      "sha256": "aacb3b2e303ff78d1a8dc0e658d6bba70900ecd0ba29dd230e9158ba22c3b9dc",
+      "pages": 4
+    },
+    {
+      "kind": "intensive_reader_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\02-西游记精读版台词本\\1、带标注版PDF 108集\\089 无数只眼睛 下.pdf",
+      "sha256": "139ac8f8716c3f2fc4bebfd2c6207a370521c3627787d2f4f9fd9f2b904408d0",
+      "pages": 3
+    },
+    {
+      "kind": "courseware_screenshots_pptx",
+      "file": "G:\\Game\\BookPlay书戏\\data\\西游记课件\\西游记-外教课动画截图\\Journey to the West 089  Many Eyes_28503490.pptx",
+      "sha256": "628bd99b93dfc2296b4856bef8d98e057c22cbdb93fffd9637b4804761701530",
+      "pages": 51
+    }
+  ],
+  "cards": [
+    {
+      "card_id": "ep089-official-quiz-001",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 1,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "which is most important from the story?",
+        "zh": "故事中什么最重要？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "pralambra helped wukong defeat the priest.",
+            "zh": "普拉兰布拉帮助悟空打败了牧师。"
+          },
+          {
+            "id": "b",
+            "en": "the journey was too easy lately.",
+            "zh": "最近这段旅程太轻松了。"
+          },
+          {
+            "id": "c",
+            "en": "wukong turned into a mole.",
+            "zh": "悟空变成了一只鼹鼠。"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n036",
+            "quote": "\"What will I do? I have no way to save my friends. That priest's light is too powerful.\""
+          },
+          {
+            "node_id": "n037",
+            "quote": "He sobbed and sobbed until he heard a voice say, \"Don't cry, Wukong.\""
+          },
+          {
+            "node_id": "n039",
+            "quote": "A tall woman was standing over him."
+          },
+          {
+            "node_id": "n040",
+            "quote": "\"I am the bodhisattva Pralambra,\" said the woman."
+          },
+          {
+            "node_id": "n041",
+            "quote": "\"That priest is a centipede spirit, called the Demon Lord of Many Eyes. I am the only one who can defeat him.\""
+          },
+          {
+            "node_id": "n042",
+            "quote": "Pralambra pulled a small needle from her sleeve."
+          },
+          {
+            "node_id": "n043",
+            "quote": "Turning, she threw the needle into the beams of light."
+          },
+          {
+            "node_id": "n044",
+            "quote": "<font color=\"#ffff00\"><i>Crack!</i></font> The sound thundered in the sky, and the beams of light vanished."
+          },
+          {
+            "node_id": "n045",
+            "quote": "Wukong and Pralambra returned to the abbey."
+          },
+          {
+            "node_id": "n048",
+            "quote": "Pralambra pointed her finger at the priest, and he turned into a giant centipede."
+          },
+          {
+            "node_id": "n051",
+            "quote": "\"These pills will cure your companions. I will take the centipede with me to be punished.\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 107,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep089-official-quiz-002",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 2,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "what happened to wujing, bajie, and the tang monk?",
+        "zh": "悟净、八戒和唐僧发生了什么事？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "they passed out.",
+            "zh": "他们晕过去了。"
+          },
+          {
+            "id": "b",
+            "en": "they ran from the women.",
+            "zh": "他们从那些女人那里跑开了。"
+          },
+          {
+            "id": "c",
+            "en": "they tunneled a hole.",
+            "zh": "他们挖了一个洞。"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n004",
+            "quote": "A moment later Wujing and Bajie passed out too."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 107,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep089-official-quiz-003",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 3,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "what covered the priest's body?",
+        "zh": "什么覆盖了牧师的身体？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "eyes",
+            "zh": "眼睛"
+          },
+          {
+            "id": "b",
+            "en": "spider webs",
+            "zh": "蜘蛛网"
+          },
+          {
+            "id": "c",
+            "en": "needles",
+            "zh": "针"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n023",
+            "quote": "The priest opened his robe, revealing a body covered in eyes."
+          },
+          {
+            "node_id": "n026",
+            "quote": "He covered his own eyes and ran all over the room."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 107,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep089-official-quiz-004",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 4,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "what kind of spirit was the priest?",
+        "zh": "那个牧师是什么样的精神？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "a centipede spirit",
+            "zh": "蜈蚣精"
+          },
+          {
+            "id": "b",
+            "en": "a mole spirit",
+            "zh": "鼹鼠精"
+          },
+          {
+            "id": "c",
+            "en": "a spider spirit",
+            "zh": "蜘蛛精"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n041",
+            "quote": "\"That priest is a centipede spirit, called the Demon Lord of Many Eyes. I am the only one who can defeat him.\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 107,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep089-official-quiz-005",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 5,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "who said there was danger ahead?",
+        "zh": "谁说前方有危险？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "a man",
+            "zh": "一个男人"
+          },
+          {
+            "id": "b",
+            "en": "the priest",
+            "zh": "牧师"
+          },
+          {
+            "id": "c",
+            "en": "the tang monk",
+            "zh": "唐僧"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n062",
+            "quote": "Just then a man appeared up ahead."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 107,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep089-vocab-001",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 101,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "head",
+        "zh": "队首 vi.朝(某方向)行进"
+      },
+      "payload": {
+        "term": "head",
+        "ipa": "hed",
+        "pos": "n.",
+        "def": "n.[C]头(部)[C,U]负责人 [sing.]队首 vi.朝(某方向)行进",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "089 无数只眼睛 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "aacb3b2e303ff78d1a8dc0e658d6bba70900ecd0ba29dd230e9158ba22c3b9dc"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep089-vocab-002",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 102,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "forward",
+        "zh": "vt.转寄,发送 adv.向前,前进"
+      },
+      "payload": {
+        "term": "forward",
+        "ipa": "ˈfɔː(r)wə(r)d",
+        "pos": "vt.",
+        "def": "vt.转寄,发送 adv.向前,前进",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "089 无数只眼睛 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "aacb3b2e303ff78d1a8dc0e658d6bba70900ecd0ba29dd230e9158ba22c3b9dc"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep089-vocab-003",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 103,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "drop",
+        "zh": "滴,下降"
+      },
+      "payload": {
+        "term": "drop",
+        "ipa": "drɒp",
+        "pos": "v.",
+        "def": "v.落下,掉下,扔下,降低 n.[C]滴,下降",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "089 无数只眼睛 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "aacb3b2e303ff78d1a8dc0e658d6bba70900ecd0ba29dd230e9158ba22c3b9dc"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep089-vocab-004",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 104,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "hand",
+        "zh": "帮助 vt.交,递,给"
+      },
+      "payload": {
+        "term": "hand",
+        "ipa": "hænd",
+        "pos": "n.",
+        "def": "n.[C]手[sing.]帮助 vt.交,递,给",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "089 无数只眼睛 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "aacb3b2e303ff78d1a8dc0e658d6bba70900ecd0ba29dd230e9158ba22c3b9dc"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep089-vocab-005",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 105,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "floor",
+        "zh": "地板,楼层;(海等的)底 部"
+      },
+      "payload": {
+        "term": "floor",
+        "ipa": "flɔː (r)",
+        "pos": "n.",
+        "def": "n.[C]地板,楼层;(海等的)底 部",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "089 无数只眼睛 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "aacb3b2e303ff78d1a8dc0e658d6bba70900ecd0ba29dd230e9158ba22c3b9dc"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep089-vocab-006",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 106,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "jump",
+        "zh": "跳,跃(指运动)"
+      },
+      "payload": {
+        "term": "jump",
+        "ipa": "dʒʌmp",
+        "pos": "v.",
+        "def": "v.跳,跃 n.[C]跳,跃(指运动)",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "089 无数只眼睛 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "aacb3b2e303ff78d1a8dc0e658d6bba70900ecd0ba29dd230e9158ba22c3b9dc"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep089-vocab-007",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 107,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "back",
+        "zh": "后面,背部 adj.后面的 adv.回原处,向后地"
+      },
+      "payload": {
+        "term": "back",
+        "ipa": "bæk",
+        "pos": "n.",
+        "def": "n.[C]后面,背部 adj.后面的 adv.回原处,向后地",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "089 无数只眼睛 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "aacb3b2e303ff78d1a8dc0e658d6bba70900ecd0ba29dd230e9158ba22c3b9dc"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep089-vocab-008",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 108,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "you",
+        "zh": "pron.你,你们"
+      },
+      "payload": {
+        "term": "you",
+        "ipa": "juː",
+        "pos": "pron.",
+        "def": "pron.你,你们",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "089 无数只眼睛 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "aacb3b2e303ff78d1a8dc0e658d6bba70900ecd0ba29dd230e9158ba22c3b9dc"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep089-vocab-009",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 109,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "again",
+        "zh": "adv.再一次,又一次"
+      },
+      "payload": {
+        "term": "again",
+        "ipa": "əˈɡen",
+        "pos": "adv.",
+        "def": "adv.再一次,又一次",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "089 无数只眼睛 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "aacb3b2e303ff78d1a8dc0e658d6bba70900ecd0ba29dd230e9158ba22c3b9dc"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep089-vocab-010",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 110,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "cry",
+        "zh": "叫喊"
+      },
+      "payload": {
+        "term": "cry",
+        "ipa": "kraɪ",
+        "pos": "v.",
+        "def": "v./n.[sing.]哭 [C]叫喊",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "089 无数只眼睛 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "aacb3b2e303ff78d1a8dc0e658d6bba70900ecd0ba29dd230e9158ba22c3b9dc"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep089-vocab-011",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 111,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "the[ðə][ði]",
+        "zh": "art.指已提到的人或事物"
+      },
+      "payload": {
+        "term": "the[ðə][ði]",
+        "ipa": "",
+        "pos": "art.",
+        "def": "art.指已提到的人或事物",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "089 无数只眼睛 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "aacb3b2e303ff78d1a8dc0e658d6bba70900ecd0ba29dd230e9158ba22c3b9dc"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep089-vocab-012",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 112,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "monkey",
+        "zh": "猴子"
+      },
+      "payload": {
+        "term": "monkey",
+        "ipa": "ˈmʌŋki",
+        "pos": "n.",
+        "def": "n.[C]猴子",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "089 无数只眼睛 上.pdf",
+          "half": "up",
+          "pages": [
+            1
+          ],
+          "sha256": "aacb3b2e303ff78d1a8dc0e658d6bba70900ecd0ba29dd230e9158ba22c3b9dc"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "089 无数只眼睛 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "139ac8f8716c3f2fc4bebfd2c6207a370521c3627787d2f4f9fd9f2b904408d0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep089-vocab-013",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 113,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "shoot",
+        "zh": "v.射击,发射;拍摄 n.幼苗"
+      },
+      "payload": {
+        "term": "shoot",
+        "ipa": "ʃuː t",
+        "pos": "v.",
+        "def": "v.射击,发射;拍摄 n.幼苗",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "089 无数只眼睛 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "aacb3b2e303ff78d1a8dc0e658d6bba70900ecd0ba29dd230e9158ba22c3b9dc"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep089-vocab-014",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 114,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "land",
+        "zh": "国家 v.降落,着陆"
+      },
+      "payload": {
+        "term": "land",
+        "ipa": "lænd",
+        "pos": "n.",
+        "def": "n.[U]大陆,土地 [C]国家 v.降落,着陆",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "089 无数只眼睛 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "aacb3b2e303ff78d1a8dc0e658d6bba70900ecd0ba29dd230e9158ba22c3b9dc"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep089-vocab-015",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 115,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "direct",
+        "zh": "直接的,直率的"
+      },
+      "payload": {
+        "term": "direct",
+        "ipa": "dəˈrekt",
+        "pos": "adj.",
+        "def": "直接的,直率的",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ],
+        "gloss": "直接的,直率的"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "089 无数只眼睛 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "aacb3b2e303ff78d1a8dc0e658d6bba70900ecd0ba29dd230e9158ba22c3b9dc"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep089-vocab-016",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 116,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "behind",
+        "zh": "prep.在......的后面 adv.在......的后面,留在原地"
+      },
+      "payload": {
+        "term": "behind",
+        "ipa": "bɪˈhaɪnd",
+        "pos": "prep.",
+        "def": "prep.在......的后面 adv.在......的后面,留在原地",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "089 无数只眼睛 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "aacb3b2e303ff78d1a8dc0e658d6bba70900ecd0ba29dd230e9158ba22c3b9dc"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep089-vocab-017",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 117,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "woman",
+        "zh": "女子"
+      },
+      "payload": {
+        "term": "woman",
+        "ipa": "ˈwʊmən",
+        "pos": "n.",
+        "def": "n.[C]女子",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "089 无数只眼睛 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "aacb3b2e303ff78d1a8dc0e658d6bba70900ecd0ba29dd230e9158ba22c3b9dc"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep089-vocab-018",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 118,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "smoke",
+        "zh": "吸烟"
+      },
+      "payload": {
+        "term": "smoke",
+        "ipa": "sməʊk",
+        "pos": "v.",
+        "def": "v.吸烟,冒烟 n.[C]烟[C]吸烟",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "089 无数只眼睛 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "aacb3b2e303ff78d1a8dc0e658d6bba70900ecd0ba29dd230e9158ba22c3b9dc"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep089-vocab-019",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 119,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "clear",
+        "zh": "清除；清楚"
+      },
+      "payload": {
+        "term": "clear",
+        "ipa": "klɪə(r)",
+        "pos": "adj.",
+        "def": "清除；清楚",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ],
+        "gloss": "清除；清楚"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "089 无数只眼睛 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "aacb3b2e303ff78d1a8dc0e658d6bba70900ecd0ba29dd230e9158ba22c3b9dc"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep089-vocab-020",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 120,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "dead",
+        "zh": "adj.死的,失去生命的;无生命 的,不再通用的,完全的"
+      },
+      "payload": {
+        "term": "dead",
+        "ipa": "ded",
+        "pos": "adj.",
+        "def": "adj.死的,失去生命的;无生命 的,不再通用的,完全的",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "089 无数只眼睛 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "aacb3b2e303ff78d1a8dc0e658d6bba70900ecd0ba29dd230e9158ba22c3b9dc"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep089-vocab-021",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 121,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "sister",
+        "zh": "姐,妹"
+      },
+      "payload": {
+        "term": "sister",
+        "ipa": "ˈsɪstə(r)",
+        "pos": "n.",
+        "def": "n.[C]姐,妹",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "089 无数只眼睛 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "aacb3b2e303ff78d1a8dc0e658d6bba70900ecd0ba29dd230e9158ba22c3b9dc"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep089-vocab-022",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 122,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "other",
+        "zh": "adj.另外的,其他的 pron.另外的人(或物)"
+      },
+      "payload": {
+        "term": "other",
+        "ipa": "ˈʌðə(r)",
+        "pos": "adj.",
+        "def": "adj.另外的,其他的 pron.另外的人(或物)",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "089 无数只眼睛 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "aacb3b2e303ff78d1a8dc0e658d6bba70900ecd0ba29dd230e9158ba22c3b9dc"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep089-vocab-023",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 123,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "toward",
+        "zh": "prep.朝,向,对着"
+      },
+      "payload": {
+        "term": "toward",
+        "ipa": "təˈwɔː d",
+        "pos": "prep.",
+        "def": "prep.朝,向,对着",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "089 无数只眼睛 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "aacb3b2e303ff78d1a8dc0e658d6bba70900ecd0ba29dd230e9158ba22c3b9dc"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep089-vocab-024",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 124,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "knock",
+        "zh": "敲击声,敲击"
+      },
+      "payload": {
+        "term": "knock",
+        "ipa": "nɒk",
+        "pos": "v.",
+        "def": "v.敲,击,撞 n.[C]敲击声,敲击",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "089 无数只眼睛 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "aacb3b2e303ff78d1a8dc0e658d6bba70900ecd0ba29dd230e9158ba22c3b9dc"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep089-vocab-025",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 125,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "fly",
+        "zh": "苍蝇"
+      },
+      "payload": {
+        "term": "fly",
+        "ipa": "flaɪ",
+        "pos": "v.",
+        "def": "v.飞,驾驶(飞机等);乘飞机, (旗)飘扬 n.[C]苍蝇",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "089 无数只眼睛 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "aacb3b2e303ff78d1a8dc0e658d6bba70900ecd0ba29dd230e9158ba22c3b9dc"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep089-vocab-026",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 126,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "go",
+        "zh": "vi.去,走 v.link.变成,变得"
+      },
+      "payload": {
+        "term": "go",
+        "ipa": "ɡəʊ",
+        "pos": "vi.",
+        "def": "vi.去,走 v.link.变成,变得",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "089 无数只眼睛 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "aacb3b2e303ff78d1a8dc0e658d6bba70900ecd0ba29dd230e9158ba22c3b9dc"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep089-vocab-027",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 127,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "die",
+        "zh": "vi.消失,灭亡,死亡"
+      },
+      "payload": {
+        "term": "die",
+        "ipa": "daɪ",
+        "pos": "vi.",
+        "def": "vi.消失,灭亡,死亡",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "089 无数只眼睛 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "aacb3b2e303ff78d1a8dc0e658d6bba70900ecd0ba29dd230e9158ba22c3b9dc"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep089-vocab-028",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 128,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "spirit",
+        "zh": "灵魂"
+      },
+      "payload": {
+        "term": "spirit",
+        "ipa": "ˈspɪrɪt",
+        "pos": "n.",
+        "def": "灵魂",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          1,
+          2
+        ],
+        "gloss": "灵魂"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "089 无数只眼睛 上.pdf",
+          "half": "up",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "aacb3b2e303ff78d1a8dc0e658d6bba70900ecd0ba29dd230e9158ba22c3b9dc"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "089 无数只眼睛 下.pdf",
+          "half": "down",
+          "pages": [
+            1,
+            2
+          ],
+          "sha256": "139ac8f8716c3f2fc4bebfd2c6207a370521c3627787d2f4f9fd9f2b904408d0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep089-vocab-029",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 129,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "eye",
+        "zh": "眼睛"
+      },
+      "payload": {
+        "term": "eye",
+        "ipa": "aɪ",
+        "pos": "n.",
+        "def": "n.[C]眼睛",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "089 无数只眼睛 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "aacb3b2e303ff78d1a8dc0e658d6bba70900ecd0ba29dd230e9158ba22c3b9dc"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep089-vocab-030",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 130,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "burn",
+        "zh": "烧伤"
+      },
+      "payload": {
+        "term": "burn",
+        "ipa": "bɜː (r)n",
+        "pos": "v.",
+        "def": "v.着火,燃烧 n.[C]烧伤",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "089 无数只眼睛 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "aacb3b2e303ff78d1a8dc0e658d6bba70900ecd0ba29dd230e9158ba22c3b9dc"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep089-vocab-031",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 131,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "regret",
+        "zh": "感到遗憾,,懊悔"
+      },
+      "payload": {
+        "term": "regret",
+        "ipa": "rɪˈɡret",
+        "pos": "vt.",
+        "def": "vt./n.[C,U]感到遗憾,,懊悔",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "089 无数只眼睛 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "aacb3b2e303ff78d1a8dc0e658d6bba70900ecd0ba29dd230e9158ba22c3b9dc"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep089-vocab-032",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 132,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "body",
+        "zh": "身体;尸体"
+      },
+      "payload": {
+        "term": "body",
+        "ipa": "ˈbɒdi",
+        "pos": "n.",
+        "def": "n.[C]身体;尸体",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "089 无数只眼睛 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "aacb3b2e303ff78d1a8dc0e658d6bba70900ecd0ba29dd230e9158ba22c3b9dc"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep089-vocab-033",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 133,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "cover",
+        "zh": "覆盖物,盖子,封面"
+      },
+      "payload": {
+        "term": "cover",
+        "ipa": "ˈkʌvə(r)",
+        "pos": "vt.",
+        "def": "vt.遮盖,覆盖;占(一片面积) n.[C]覆盖物,盖子,封面",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "089 无数只眼睛 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "aacb3b2e303ff78d1a8dc0e658d6bba70900ecd0ba29dd230e9158ba22c3b9dc"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep089-vocab-034",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 134,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "blind",
+        "zh": "adj.瞎的,失明的;(对某事)视 而不见的 vt.使失明"
+      },
+      "payload": {
+        "term": "blind",
+        "ipa": "blaɪnd",
+        "pos": "adj.",
+        "def": "adj.瞎的,失明的;(对某事)视 而不见的 vt.使失明",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "089 无数只眼睛 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "aacb3b2e303ff78d1a8dc0e658d6bba70900ecd0ba29dd230e9158ba22c3b9dc"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep089-vocab-035",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 135,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "light",
+        "zh": "电灯 adj.轻的,轻柔的,程度轻的,少 量的,浅色的 v.点燃,照亮"
+      },
+      "payload": {
+        "term": "light",
+        "ipa": "laɪt",
+        "pos": "n.",
+        "def": "n.[U]光,光线,光亮;[C]电灯 adj.轻的,轻柔的,程度轻的,少 量的,浅色的 v.点燃,照亮",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          1,
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "089 无数只眼睛 上.pdf",
+          "half": "up",
+          "pages": [
+            1,
+            3
+          ],
+          "sha256": "aacb3b2e303ff78d1a8dc0e658d6bba70900ecd0ba29dd230e9158ba22c3b9dc"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "089 无数只眼睛 下.pdf",
+          "half": "down",
+          "pages": [
+            1,
+            3
+          ],
+          "sha256": "139ac8f8716c3f2fc4bebfd2c6207a370521c3627787d2f4f9fd9f2b904408d0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep089-vocab-036",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 136,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "hole",
+        "zh": "洞,孔,坑"
+      },
+      "payload": {
+        "term": "hole",
+        "ipa": "həʊl",
+        "pos": "n.",
+        "def": "n.[C]洞,孔,坑",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "089 无数只眼睛 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "aacb3b2e303ff78d1a8dc0e658d6bba70900ecd0ba29dd230e9158ba22c3b9dc"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep089-vocab-037",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 137,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "turn",
+        "zh": "轮流圈国"
+      },
+      "payload": {
+        "term": "turn",
+        "ipa": "tɜː (r)n",
+        "pos": "v.",
+        "def": "v.转向,翻圈v.-link.(使)变成 n.[C]轮流圈国",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          1,
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "089 无数只眼睛 上.pdf",
+          "half": "up",
+          "pages": [
+            1,
+            3
+          ],
+          "sha256": "aacb3b2e303ff78d1a8dc0e658d6bba70900ecd0ba29dd230e9158ba22c3b9dc"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "089 无数只眼睛 下.pdf",
+          "half": "down",
+          "pages": [
+            1,
+            3
+          ],
+          "sha256": "139ac8f8716c3f2fc4bebfd2c6207a370521c3627787d2f4f9fd9f2b904408d0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep089-vocab-038",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 138,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "ground",
+        "zh": "地,地面"
+      },
+      "payload": {
+        "term": "ground",
+        "ipa": "ɡraʊnd",
+        "pos": "n.",
+        "def": "n.[U]地,地面",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "089 无数只眼睛 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "aacb3b2e303ff78d1a8dc0e658d6bba70900ecd0ba29dd230e9158ba22c3b9dc"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep089-vocab-039",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 139,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "himself",
+        "zh": "pron.他自己"
+      },
+      "payload": {
+        "term": "himself",
+        "ipa": "hɪmˈself",
+        "pos": "pron.",
+        "def": "pron.他自己",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "089 无数只眼睛 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "aacb3b2e303ff78d1a8dc0e658d6bba70900ecd0ba29dd230e9158ba22c3b9dc"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep089-vocab-040",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 140,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "shine",
+        "zh": "光亮,光泽"
+      },
+      "payload": {
+        "term": "shine",
+        "ipa": "ʃaɪn",
+        "pos": "vi.",
+        "def": "vi.发光,照耀 vt.把......照向 n.[sing.]光亮,光泽",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "089 无数只眼睛 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "aacb3b2e303ff78d1a8dc0e658d6bba70900ecd0ba29dd230e9158ba22c3b9dc"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep089-vocab-041",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 141,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "save",
+        "zh": "拯救"
+      },
+      "payload": {
+        "term": "save",
+        "ipa": "seɪv",
+        "pos": "v.",
+        "def": "拯救",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ],
+        "gloss": "拯救"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "089 无数只眼睛 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "aacb3b2e303ff78d1a8dc0e658d6bba70900ecd0ba29dd230e9158ba22c3b9dc"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep089-vocab-042",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 142,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "voice",
+        "zh": "发言 权;主/被动语态 vt.表达(情感或意见)"
+      },
+      "payload": {
+        "term": "voice",
+        "ipa": "vɔɪs",
+        "pos": "n.",
+        "def": "n.[C,U]声音,嗓音[sing.]发言 权;主/被动语态 vt.表达(情感或意见)",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "089 无数只眼睛 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "139ac8f8716c3f2fc4bebfd2c6207a370521c3627787d2f4f9fd9f2b904408d0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep089-vocab-043",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 143,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "look",
+        "zh": "看,注视,外表,表情"
+      },
+      "payload": {
+        "term": "look",
+        "ipa": "lʊk",
+        "pos": "vi.",
+        "def": "vi.看 v.-link.看上去 n.[C]看,注视,外表,表情",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "089 无数只眼睛 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "139ac8f8716c3f2fc4bebfd2c6207a370521c3627787d2f4f9fd9f2b904408d0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep089-vocab-044",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 144,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "tall",
+        "zh": "adj.高的"
+      },
+      "payload": {
+        "term": "tall",
+        "ipa": "tɔː l",
+        "pos": "adj.",
+        "def": "adj.高的",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "089 无数只眼睛 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "139ac8f8716c3f2fc4bebfd2c6207a370521c3627787d2f4f9fd9f2b904408d0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep089-vocab-045",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 145,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "stand",
+        "zh": "v.忍受,站立"
+      },
+      "payload": {
+        "term": "stand",
+        "ipa": "stænd",
+        "pos": "v.",
+        "def": "v.忍受,站立",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "089 无数只眼睛 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "139ac8f8716c3f2fc4bebfd2c6207a370521c3627787d2f4f9fd9f2b904408d0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep089-vocab-046",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 146,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "over",
+        "zh": "在上方；超过"
+      },
+      "payload": {
+        "term": "over",
+        "ipa": "ˈəʊvə®",
+        "pos": "prep.",
+        "def": "在上方；超过",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ],
+        "gloss": "在上方；超过"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "089 无数只眼睛 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "139ac8f8716c3f2fc4bebfd2c6207a370521c3627787d2f4f9fd9f2b904408d0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep089-vocab-047",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 147,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "sound",
+        "zh": "声响"
+      },
+      "payload": {
+        "term": "sound",
+        "ipa": "saʊnd",
+        "pos": "v.",
+        "def": "v.-link.听起来好像 v.(使)发出声音 n.声音,发音[U]声响",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          1
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "089 无数只眼睛 下.pdf",
+          "half": "down",
+          "pages": [
+            1
+          ],
+          "sha256": "139ac8f8716c3f2fc4bebfd2c6207a370521c3627787d2f4f9fd9f2b904408d0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep089-vocab-048",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 148,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "return",
+        "zh": "返回"
+      },
+      "payload": {
+        "term": "return",
+        "ipa": "rɪˈtɜː(r)n",
+        "pos": "vt.",
+        "def": "vt.归还 vi.回来,返回 n.[C,U]回报[sing.]返回",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "089 无数只眼睛 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "139ac8f8716c3f2fc4bebfd2c6207a370521c3627787d2f4f9fd9f2b904408d0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep089-vocab-049",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 149,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "shake",
+        "zh": "摇动,抖动,奶昔"
+      },
+      "payload": {
+        "term": "shake",
+        "ipa": "ʃeɪk",
+        "pos": "v.",
+        "def": "v.摇动,抖动,(与某人)握手, 发抖 n.[C]摇动,抖动,奶昔",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "089 无数只眼睛 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "139ac8f8716c3f2fc4bebfd2c6207a370521c3627787d2f4f9fd9f2b904408d0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep089-vocab-050",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 150,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "point",
+        "zh": "目的 v.指,指向"
+      },
+      "payload": {
+        "term": "point",
+        "ipa": "pɔɪnt",
+        "pos": "n.",
+        "def": "n.[C]得分,点,小数点,时刻, 特点,观点,要点[U]目的 v.指,指向",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "089 无数只眼睛 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "139ac8f8716c3f2fc4bebfd2c6207a370521c3627787d2f4f9fd9f2b904408d0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep089-vocab-051",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 151,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "finger",
+        "zh": "手指 vt.用手指触摸,拨弄"
+      },
+      "payload": {
+        "term": "finger",
+        "ipa": "ˈfɪŋɡə(r)",
+        "pos": "n.",
+        "def": "n.[C]手指 vt.用手指触摸,拨弄",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "089 无数只眼睛 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "139ac8f8716c3f2fc4bebfd2c6207a370521c3627787d2f4f9fd9f2b904408d0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep089-vocab-052",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 152,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "bottle",
+        "zh": "瓶,瓶子"
+      },
+      "payload": {
+        "term": "bottle",
+        "ipa": "ˈbɒt",
+        "pos": "n.",
+        "def": "n.[C]瓶,瓶子",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "089 无数只眼睛 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "139ac8f8716c3f2fc4bebfd2c6207a370521c3627787d2f4f9fd9f2b904408d0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep089-vocab-053",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 153,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "thank",
+        "zh": "vt.感谢,谢谢"
+      },
+      "payload": {
+        "term": "thank",
+        "ipa": "θæŋk",
+        "pos": "vt.",
+        "def": "vt.感谢,谢谢",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "089 无数只眼睛 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "139ac8f8716c3f2fc4bebfd2c6207a370521c3627787d2f4f9fd9f2b904408d0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep089-vocab-054",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 154,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "journey",
+        "zh": "(尤指长途)旅行,行程"
+      },
+      "payload": {
+        "term": "journey",
+        "ipa": "ˈdʒɜː(r)ni",
+        "pos": "n.",
+        "def": "n.[C](尤指长途)旅行,行程",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "089 无数只眼睛 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "139ac8f8716c3f2fc4bebfd2c6207a370521c3627787d2f4f9fd9f2b904408d0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep089-vocab-055",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 155,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "continue",
+        "zh": "v.持续,继续做"
+      },
+      "payload": {
+        "term": "continue",
+        "ipa": "kənˈtɪnjuː",
+        "pos": "v.",
+        "def": "v.持续,继续做",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "089 无数只眼睛 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "139ac8f8716c3f2fc4bebfd2c6207a370521c3627787d2f4f9fd9f2b904408d0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep089-vocab-056",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 156,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "week",
+        "zh": "周,星期"
+      },
+      "payload": {
+        "term": "week",
+        "ipa": "wiːk",
+        "pos": "n.",
+        "def": "n.[C]周,星期",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "089 无数只眼睛 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "139ac8f8716c3f2fc4bebfd2c6207a370521c3627787d2f4f9fd9f2b904408d0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep089-vocab-057",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 157,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "easy",
+        "zh": "adj.容易的,不费力的;安逸的 adv.放松地"
+      },
+      "payload": {
+        "term": "easy",
+        "ipa": "ˈiːzi",
+        "pos": "adj.",
+        "def": "adj.容易的,不费力的;安逸的 adv.放松地",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "089 无数只眼睛 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "139ac8f8716c3f2fc4bebfd2c6207a370521c3627787d2f4f9fd9f2b904408d0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep089-vocab-058",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 158,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "late",
+        "zh": "adj. adv.adj.迟到,迟发生,接近末 期 adv.迟,晚"
+      },
+      "payload": {
+        "term": "late",
+        "ipa": "leɪt",
+        "pos": "adj.",
+        "def": "adj. adv.adj.迟到,迟发生,接近末 期 adv.迟,晚",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "089 无数只眼睛 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "139ac8f8716c3f2fc4bebfd2c6207a370521c3627787d2f4f9fd9f2b904408d0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep089-vocab-059",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 159,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "danger",
+        "zh": "危害;威胁"
+      },
+      "payload": {
+        "term": "danger",
+        "ipa": "ˈdeɪndʒə(r)",
+        "pos": "n.",
+        "def": "n.[U]危险 [C]危害;威胁",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "089 无数只眼睛 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "139ac8f8716c3f2fc4bebfd2c6207a370521c3627787d2f4f9fd9f2b904408d0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep089-vocab-060",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 160,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "relax",
+        "zh": "v.放松,休息"
+      },
+      "payload": {
+        "term": "relax",
+        "ipa": "rɪˈlæks",
+        "pos": "v.",
+        "def": "v.放松,休息",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "089 无数只眼睛 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "139ac8f8716c3f2fc4bebfd2c6207a370521c3627787d2f4f9fd9f2b904408d0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep089-vocab-061",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 161,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "enjoy",
+        "zh": "vt.享受,喜爱,玩得痛快"
+      },
+      "payload": {
+        "term": "enjoy",
+        "ipa": "ɪnˈdʒɔɪ",
+        "pos": "vt.",
+        "def": "vt.享受,喜爱,玩得痛快",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "089 无数只眼睛 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "139ac8f8716c3f2fc4bebfd2c6207a370521c3627787d2f4f9fd9f2b904408d0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep089-vocab-062",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 162,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "beautiful",
+        "zh": "adj.美妙的,美丽的,美好的"
+      },
+      "payload": {
+        "term": "beautiful",
+        "ipa": "ˈbjuːtɪfl",
+        "pos": "adj.",
+        "def": "adj.美妙的,美丽的,美好的",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "089 无数只眼睛 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "139ac8f8716c3f2fc4bebfd2c6207a370521c3627787d2f4f9fd9f2b904408d0"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep089-vocab-063",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 163,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "appear",
+        "zh": "vi.出现 v.-link.似乎,看起来"
+      },
+      "payload": {
+        "term": "appear",
+        "ipa": "əˈpɪə(r)",
+        "pos": "vi.",
+        "def": "vi.出现 v.-link.似乎,看起来",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "089 无数只眼睛 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "139ac8f8716c3f2fc4bebfd2c6207a370521c3627787d2f4f9fd9f2b904408d0"
+        }
+      ],
+      "review_status": "machine_verified"
+    }
+  ],
+  "teacher_guide": null,
+  "review": {
+    "status": "draft",
+    "reviewed_at": null,
+    "card_stats": {
+      "total": 68,
+      "sentence_choice": 5,
+      "word_review": 63,
+      "machine_verified": 67,
+      "assistant_reviewed": 1,
+      "verified": 68,
+      "needs_review": 0
+    }
+  },
+  "generated_at": "2026-08-31T04:49:48.330919+00:00"
+}

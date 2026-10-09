@@ -1,0 +1,129 @@
+{
+  "schema_version": 1,
+  "story": "Mikey & JJ English Adventures",
+  "count": 3,
+  "collections": [
+    {
+      "id": "mj01",
+      "index": 1,
+      "title": {
+        "zh": "冒险地图 · 第一辑",
+        "en": "Adventure Map 1"
+      },
+      "summary": {
+        "zh": "僵尸学校、水上之家和企鹅村的冒险从这里开始。"
+      },
+      "books": [
+        1,
+        2,
+        3
+      ],
+      "from": 1,
+      "to": 3,
+      "background": "assets/generated/map-backgrounds/mikey-map-1.webp",
+      "has_drill": false,
+      "route": {
+        "insetX": 10,
+        "top": 14,
+        "bottom": 18,
+        "anchors": [
+          [
+            0.16,
+            0.22
+          ],
+          [
+            0.51,
+            0.3
+          ],
+          [
+            0.85,
+            0.26
+          ]
+        ]
+      }
+    },
+    {
+      "id": "mj02",
+      "index": 2,
+      "title": {
+        "zh": "冒险地图 · 第二辑",
+        "en": "Adventure Map 2"
+      },
+      "summary": {
+        "zh": "龙卷风警报、哥斯拉来袭，考验勇气的时候到了。"
+      },
+      "books": [
+        5,
+        6,
+        7
+      ],
+      "from": 5,
+      "to": 7,
+      "background": "assets/generated/map-backgrounds/mikey-map-2.webp",
+      "has_drill": false,
+      "route": {
+        "insetX": 10,
+        "top": 14,
+        "bottom": 18,
+        "anchors": [
+          [
+            0.16,
+            0.24
+          ],
+          [
+            0.52,
+            0.22
+          ],
+          [
+            0.85,
+            0.32
+          ]
+        ]
+      }
+    },
+    {
+      "id": "mj03",
+      "index": 3,
+      "title": {
+        "zh": "冒险地图 · 第三辑",
+        "en": "Adventure Map 3"
+      },
+      "summary": {
+        "zh": "汉堡店大对决、怪猫之夜，最后登上豪华游轮，向王座进发！"
+      },
+      "books": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "from": 8,
+      "to": 11,
+      "background": "assets/generated/map-backgrounds/mikey-map-3.webp",
+      "has_drill": false,
+      "route": {
+        "insetX": 10,
+        "top": 14,
+        "bottom": 18,
+        "anchors": [
+          [
+            0.22,
+            0.6
+          ],
+          [
+            0.46,
+            0.72
+          ],
+          [
+            0.78,
+            0.76
+          ],
+          [
+            0.87,
+            0.36
+          ]
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,3630 @@
+{
+ "schema_version": 1,
+ "storybook_id": "mikey-jj_penguin-adventure",
+ "series": "mikey-jj",
+ "book": 3,
+ "series_count": 11,
+ "published_count": 3,
+ "layout": "spread_with_right_caption",
+ "title": {
+  "en": "Penguin Adventure",
+  "zh": "企鹅大冒险"
+ },
+ "source_note": "页图逐页视觉核对；JJ 为红衣人物，Mikey 为绿色人物，speaker 依据气泡尾部与人物位置标注。字幕按实际停顿拆分为原子句，使用 faster-whisper VAD 与 no-VAD 双跑词级时间戳交叉核对。b3-p01-s04、b3-p01-s06、b3-p10-s01 保留画面中的停顿省略号，作为同一人声单位并在校验命令中显式豁免 compound guard。Peep peep、RUMBLE、CRACK、WHEEEE、爆炸音等为画面音效或拟声字，没有对应人声，未伪造句音频。源 PDF、MP3 与页图只读。",
+ "sources": {
+  "pdf": "书籍资料库/Mikey & JJ 英文冒险/PDF/Penguin Adventure.pdf",
+  "mp3": "书籍资料库/Mikey & JJ 英文冒险/audio/Penguin Adventure.mp3",
+  "source_video": "书籍资料库/Mikey & JJ 英文冒险/MikeyJJ Audio Books/Penguin Adventure.mp4",
+  "derived_audio": "prj/data/storybooks-mikey-jj/source-audio/penguin-adventure.mp3"
+ },
+ "audio": "assets/mikey-jj/penguin-adventure/audio.mp3",
+ "audio_duration_sec": 147.755,
+ "pages": [
+  {
+   "page_no": 1,
+   "source_page": 1,
+   "image": "assets/mikey-jj/penguin-adventure/pages/p01.webp",
+   "text_en": "Mikey! What is the emergency? Look, JJ! It's a... a... PENGUIN! I speak animal. She says her mom is on top of... Snow Mountain. Snow Mountain?! That is super far away! We have to move FAST!",
+   "start_ms": 660,
+   "end_ms": 18280,
+   "sentences": [
+    {
+     "id": "b3-p01-s01",
+     "text_en": "Mikey!",
+     "zh": "Mikey！",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.492,
+      "y": 0.125,
+      "w": 0.184,
+      "h": 0.102,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 660,
+     "end_ms": 1500,
+     "audio": "assets/mikey-jj/penguin-adventure/sentences/page-01-sentence-01.mp3",
+     "words": [
+      {
+       "text": "Mikey!",
+       "start_ms": 0,
+       "end_ms": 840
+      }
+     ],
+     "glossary": [
+      {
+       "term": "emergency",
+       "ipa": "ɪˈmɜːdʒənsi",
+       "pos": "N",
+       "zh": "紧急情况"
+      }
+     ]
+    },
+    {
+     "id": "b3-p01-s02",
+     "text_en": "What is the emergency?",
+     "zh": "紧急情况是什么？",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.492,
+      "y": 0.125,
+      "w": 0.184,
+      "h": 0.102,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 1680,
+     "end_ms": 2700,
+     "audio": "assets/mikey-jj/penguin-adventure/sentences/page-01-sentence-02.mp3",
+     "words": [
+      {
+       "text": "What",
+       "start_ms": 0,
+       "end_ms": 300
+      },
+      {
+       "text": "is",
+       "start_ms": 300,
+       "end_ms": 460
+      },
+      {
+       "text": "the",
+       "start_ms": 460,
+       "end_ms": 620
+      },
+      {
+       "text": "emergency?",
+       "start_ms": 620,
+       "end_ms": 1020,
+       "term": "emergency",
+       "zh": "紧急情况"
+      }
+     ],
+     "glossary": [
+      {
+       "term": "emergency",
+       "ipa": "ɪˈmɜːdʒənsi",
+       "pos": "N",
+       "zh": "紧急情况"
+      }
+     ]
+    },
+    {
+     "id": "b3-p01-s03",
+     "text_en": "Look, JJ!",
+     "zh": "看，JJ！",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.381,
+      "y": 0.287,
+      "w": 0.185,
+      "h": 0.083,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 3420,
+     "end_ms": 4900,
+     "audio": "assets/mikey-jj/penguin-adventure/sentences/page-01-sentence-03.mp3",
+     "words": [
+      {
+       "text": "Look,",
+       "start_ms": 60,
+       "end_ms": 640
+      },
+      {
+       "text": "JJ!",
+       "start_ms": 860,
+       "end_ms": 1480
+      }
+     ],
+     "glossary": [
+      {
+       "term": "penguin",
+       "ipa": "ˈpeŋɡwɪn",
+       "pos": "N",
+       "zh": "企鹅"
+      }
+     ]
+    },
+    {
+     "id": "b3-p01-s04",
+     "text_en": "It's a... a... PENGUIN!",
+     "zh": "这是一只……一只……企鹅！",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.381,
+      "y": 0.287,
+      "w": 0.185,
+      "h": 0.083,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 4900,
+     "end_ms": 6600,
+     "audio": "assets/mikey-jj/penguin-adventure/sentences/page-01-sentence-04.mp3",
+     "words": [
+      {
+       "text": "it's",
+       "start_ms": 0,
+       "end_ms": 220
+      },
+      {
+       "text": "a...",
+       "start_ms": 220,
+       "end_ms": 520
+      },
+      {
+       "text": "a",
+       "start_ms": 520,
+       "end_ms": 780
+      },
+      {
+       "text": "penguin.",
+       "start_ms": 780,
+       "end_ms": 1680,
+       "term": "penguin",
+       "zh": "企鹅"
+      }
+     ],
+     "glossary": [
+      {
+       "term": "penguin",
+       "ipa": "ˈpeŋɡwɪn",
+       "pos": "N",
+       "zh": "企鹅"
+      }
+     ]
+    },
+    {
+     "id": "b3-p01-s05",
+     "text_en": "I speak animal.",
+     "zh": "我会说动物的语言。",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.734,
+      "y": 0.405,
+      "w": 0.209,
+      "h": 0.068,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 7180,
+     "end_ms": 8720,
+     "audio": "assets/mikey-jj/penguin-adventure/sentences/page-01-sentence-05.mp3",
+     "words": [
+      {
+       "text": "I",
+       "start_ms": 0,
+       "end_ms": 260
+      },
+      {
+       "text": "speak",
+       "start_ms": 700,
+       "end_ms": 980
+      },
+      {
+       "text": "animal.",
+       "start_ms": 980,
+       "end_ms": 1540,
+       "term": "animal",
+       "zh": "动物"
+      }
+     ],
+     "glossary": [
+      {
+       "term": "animal",
+       "ipa": "ˈænɪməl",
+       "pos": "N",
+       "zh": "动物"
+      }
+     ]
+    },
+    {
+     "id": "b3-p01-s06",
+     "text_en": "She says her mom is on top of... Snow Mountain.",
+     "zh": "她说她妈妈在……雪山顶上。",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.466,
+      "y": 0.519,
+      "w": 0.442,
+      "h": 0.156,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 9600,
+     "end_ms": 12620,
+     "audio": "assets/mikey-jj/penguin-adventure/sentences/page-01-sentence-06.mp3",
+     "words": [
+      {
+       "text": "She",
+       "start_ms": 0,
+       "end_ms": 100
+      },
+      {
+       "text": "says",
+       "start_ms": 100,
+       "end_ms": 380
+      },
+      {
+       "text": "her",
+       "start_ms": 380,
+       "end_ms": 620
+      },
+      {
+       "text": "mom",
+       "start_ms": 620,
+       "end_ms": 880
+      },
+      {
+       "text": "is",
+       "start_ms": 880,
+       "end_ms": 1140
+      },
+      {
+       "text": "on",
+       "start_ms": 1140,
+       "end_ms": 1320
+      },
+      {
+       "text": "top",
+       "start_ms": 1320,
+       "end_ms": 1620
+      },
+      {
+       "text": "of...",
+       "start_ms": 1620,
+       "end_ms": 2320
+      },
+      {
+       "text": "snow",
+       "start_ms": 2320,
+       "end_ms": 2680
+      },
+      {
+       "text": "mountain.",
+       "start_ms": 2680,
+       "end_ms": 3020
+      }
+     ],
+     "glossary": [
+      {
+       "term": "snow mountain",
+       "ipa": "ˌsnəʊ ˈmaʊntən",
+       "pos": "N",
+       "zh": "雪山"
+      }
+     ]
+    },
+    {
+     "id": "b3-p01-s07",
+     "text_en": "Snow Mountain?!",
+     "zh": "雪山？！",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.523,
+      "y": 0.749,
+      "w": 0.145,
+      "h": 0.091,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 13700,
+     "end_ms": 14640,
+     "audio": "assets/mikey-jj/penguin-adventure/sentences/page-01-sentence-07.mp3",
+     "words": [
+      {
+       "text": "Snow",
+       "start_ms": 0,
+       "end_ms": 520
+      },
+      {
+       "text": "mountain?",
+       "start_ms": 520,
+       "end_ms": 940
+      }
+     ],
+     "glossary": [
+      {
+       "term": "snow mountain",
+       "ipa": "ˌsnəʊ ˈmaʊntən",
+       "pos": "N",
+       "zh": "雪山"
+      }
+     ]
+    },
+    {
+     "id": "b3-p01-s08",
+     "text_en": "That is super far away!",
+     "zh": "那也太远了！",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.731,
+      "y": 0.821,
+      "w": 0.229,
+      "h": 0.139,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 15320,
+     "end_ms": 16760,
+     "audio": "assets/mikey-jj/penguin-adventure/sentences/page-01-sentence-08.mp3",
+     "words": [
+      {
+       "text": "That",
+       "start_ms": 0,
+       "end_ms": 100
+      },
+      {
+       "text": "is",
+       "start_ms": 100,
+       "end_ms": 260
+      },
+      {
+       "text": "super",
+       "start_ms": 260,
+       "end_ms": 600
+      },
+      {
+       "text": "far",
+       "start_ms": 600,
+       "end_ms": 1080
+      },
+      {
+       "text": "away.",
+       "start_ms": 1080,
+       "end_ms": 1440
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b3-p01-s09",
+     "text_en": "We have to move FAST!",
+     "zh": "我们得快点行动！",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.731,
+      "y": 0.821,
+      "w": 0.229,
+      "h": 0.139,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 17260,
+     "end_ms": 18280,
+     "audio": "assets/mikey-jj/penguin-adventure/sentences/page-01-sentence-09.mp3",
+     "words": [
+      {
+       "text": "We",
+       "start_ms": 0,
+       "end_ms": 80
+      },
+      {
+       "text": "have",
+       "start_ms": 80,
+       "end_ms": 260
+      },
+      {
+       "text": "to",
+       "start_ms": 260,
+       "end_ms": 440
+      },
+      {
+       "text": "move",
+       "start_ms": 440,
+       "end_ms": 620
+      },
+      {
+       "text": "fast.",
+       "start_ms": 620,
+       "end_ms": 1020
+      }
+     ],
+     "glossary": []
+    }
+   ],
+   "panel": [
+    0.0,
+    0.499,
+    0.505,
+    1.0
+   ]
+  },
+  {
+   "page_no": 2,
+   "source_page": 2,
+   "image": "assets/mikey-jj/penguin-adventure/pages/p02.webp",
+   "text_en": "Snack time! Do you like crunchy carrots? Mikey! Penguins do NOT eat carrots! I caught a fresh fish! YAY! YUMMY TIME!",
+   "start_ms": 20560,
+   "end_ms": 31460,
+   "sentences": [
+    {
+     "id": "b3-p02-s01",
+     "text_en": "Snack time!",
+     "zh": "零食时间！",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.574,
+      "y": 0.011,
+      "w": 0.409,
+      "h": 0.206,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 20560,
+     "end_ms": 21480,
+     "audio": "assets/mikey-jj/penguin-adventure/sentences/page-02-sentence-01.mp3",
+     "words": [
+      {
+       "text": "Snack",
+       "start_ms": 0,
+       "end_ms": 640,
+       "term": "snack",
+       "zh": "零食"
+      },
+      {
+       "text": "time!",
+       "start_ms": 640,
+       "end_ms": 920
+      }
+     ],
+     "glossary": [
+      {
+       "term": "snack",
+       "ipa": "snæk",
+       "pos": "N",
+       "zh": "零食"
+      }
+     ]
+    },
+    {
+     "id": "b3-p02-s02",
+     "text_en": "Do you like crunchy carrots?",
+     "zh": "你喜欢脆脆的胡萝卜吗？",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.574,
+      "y": 0.011,
+      "w": 0.409,
+      "h": 0.206,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 22040,
+     "end_ms": 23220,
+     "audio": "assets/mikey-jj/penguin-adventure/sentences/page-02-sentence-02.mp3",
+     "words": [
+      {
+       "text": "Do",
+       "start_ms": 0,
+       "end_ms": 40
+      },
+      {
+       "text": "you",
+       "start_ms": 40,
+       "end_ms": 160
+      },
+      {
+       "text": "like",
+       "start_ms": 160,
+       "end_ms": 400
+      },
+      {
+       "text": "crunchy",
+       "start_ms": 400,
+       "end_ms": 940,
+       "term": "crunchy",
+       "zh": "脆的"
+      },
+      {
+       "text": "carrots?",
+       "start_ms": 940,
+       "end_ms": 1180,
+       "term": "carrots",
+       "zh": "胡萝卜"
+      }
+     ],
+     "glossary": [
+      {
+       "term": "crunchy",
+       "ipa": "ˈkrʌntʃi",
+       "pos": "Adj",
+       "zh": "脆的"
+      },
+      {
+       "term": "carrots",
+       "ipa": "ˈkærəts",
+       "pos": "N",
+       "zh": "胡萝卜"
+      }
+     ]
+    },
+    {
+     "id": "b3-p02-s03",
+     "text_en": "Mikey!",
+     "zh": "Mikey！",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.073,
+      "y": 0.31,
+      "w": 0.334,
+      "h": 0.182,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 23980,
+     "end_ms": 24660,
+     "audio": "assets/mikey-jj/penguin-adventure/sentences/page-02-sentence-03.mp3",
+     "words": [
+      {
+       "text": "Mikey!",
+       "start_ms": 40,
+       "end_ms": 680
+      }
+     ],
+     "glossary": [
+      {
+       "term": "carrots",
+       "ipa": "ˈkærəts",
+       "pos": "N",
+       "zh": "胡萝卜"
+      }
+     ]
+    },
+    {
+     "id": "b3-p02-s04",
+     "text_en": "Penguins do NOT eat carrots!",
+     "zh": "企鹅不吃胡萝卜！",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.073,
+      "y": 0.31,
+      "w": 0.334,
+      "h": 0.182,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 24960,
+     "end_ms": 26600,
+     "audio": "assets/mikey-jj/penguin-adventure/sentences/page-02-sentence-04.mp3",
+     "words": [
+      {
+       "text": "penguins",
+       "start_ms": 0,
+       "end_ms": 460
+      },
+      {
+       "text": "do",
+       "start_ms": 460,
+       "end_ms": 620
+      },
+      {
+       "text": "not",
+       "start_ms": 620,
+       "end_ms": 940
+      },
+      {
+       "text": "eat",
+       "start_ms": 940,
+       "end_ms": 1200
+      },
+      {
+       "text": "carrots.",
+       "start_ms": 1200,
+       "end_ms": 1640,
+       "term": "carrots",
+       "zh": "胡萝卜"
+      }
+     ],
+     "glossary": [
+      {
+       "term": "carrots",
+       "ipa": "ˈkærəts",
+       "pos": "N",
+       "zh": "胡萝卜"
+      }
+     ]
+    },
+    {
+     "id": "b3-p02-s05",
+     "text_en": "I caught a fresh fish!",
+     "zh": "我钓到了一条新鲜的鱼！",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.016,
+      "y": 0.507,
+      "w": 0.305,
+      "h": 0.093,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 26600,
+     "end_ms": 29080,
+     "audio": "assets/mikey-jj/penguin-adventure/sentences/page-02-sentence-05.mp3",
+     "words": [
+      {
+       "text": "I",
+       "start_ms": 0,
+       "end_ms": 1360
+      },
+      {
+       "text": "caught",
+       "start_ms": 1360,
+       "end_ms": 1600
+      },
+      {
+       "text": "a",
+       "start_ms": 1600,
+       "end_ms": 1760
+      },
+      {
+       "text": "fresh",
+       "start_ms": 1760,
+       "end_ms": 2020
+      },
+      {
+       "text": "fish.",
+       "start_ms": 2020,
+       "end_ms": 2480
+      }
+     ],
+     "glossary": [
+      {
+       "term": "snack",
+       "ipa": "snæk",
+       "pos": "N",
+       "zh": "零食"
+      }
+     ]
+    },
+    {
+     "id": "b3-p02-s06",
+     "text_en": "YAY!",
+     "zh": "耶！",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.695,
+      "y": 0.507,
+      "w": 0.289,
+      "h": 0.1,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 29840,
+     "end_ms": 30420,
+     "audio": "assets/mikey-jj/penguin-adventure/sentences/page-02-sentence-06.mp3",
+     "words": [
+      {
+       "text": "Yay,",
+       "start_ms": 0,
+       "end_ms": 580
+      }
+     ],
+     "glossary": [
+      {
+       "term": "crunchy",
+       "ipa": "ˈkrʌntʃi",
+       "pos": "Adj",
+       "zh": "脆的"
+      }
+     ]
+    },
+    {
+     "id": "b3-p02-s07",
+     "text_en": "YUMMY TIME!",
+     "zh": "好吃时间！",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.695,
+      "y": 0.507,
+      "w": 0.289,
+      "h": 0.1,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 30700,
+     "end_ms": 31460,
+     "audio": "assets/mikey-jj/penguin-adventure/sentences/page-02-sentence-07.mp3",
+     "words": [
+      {
+       "text": "yummy",
+       "start_ms": 0,
+       "end_ms": 380
+      },
+      {
+       "text": "time.",
+       "start_ms": 380,
+       "end_ms": 760
+      }
+     ],
+     "glossary": [
+      {
+       "term": "crunchy",
+       "ipa": "ˈkrʌntʃi",
+       "pos": "Adj",
+       "zh": "脆的"
+      }
+     ]
+    }
+   ],
+   "panel": [
+    0.0,
+    0.495,
+    0.505,
+    1.0
+   ]
+  },
+  {
+   "page_no": 3,
+   "source_page": 3,
+   "image": "assets/mikey-jj/penguin-adventure/pages/p03.webp",
+   "text_en": "Uh oh! The bridge went \"kaboom.\" Oh no! This is the ONLY way to Snow Mountain! Wait... I have an EXPLOSIVE idea! Ooh! Are we making fireworks?",
+   "start_ms": 33260,
+   "end_ms": 46220,
+   "sentences": [
+    {
+     "id": "b3-p03-s01",
+     "text_en": "Uh oh!",
+     "zh": "糟糕！",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.037,
+      "y": 0.099,
+      "w": 0.188,
+      "h": 0.071,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 33260,
+     "end_ms": 34240,
+     "audio": "assets/mikey-jj/penguin-adventure/sentences/page-03-sentence-01.mp3",
+     "words": [
+      {
+       "text": "Uh-oh!",
+       "start_ms": 0,
+       "end_ms": 980
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b3-p03-s02",
+     "text_en": "The bridge went \"kaboom.\"",
+     "zh": "桥轰隆一声塌了。",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.429,
+      "y": 0.009,
+      "w": 0.557,
+      "h": 0.178,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 34620,
+     "end_ms": 35860,
+     "audio": "assets/mikey-jj/penguin-adventure/sentences/page-03-sentence-02.mp3",
+     "words": [
+      {
+       "text": "The",
+       "start_ms": 0,
+       "end_ms": 200
+      },
+      {
+       "text": "bridge",
+       "start_ms": 200,
+       "end_ms": 560,
+       "term": "bridge",
+       "zh": "桥"
+      },
+      {
+       "text": "went",
+       "start_ms": 560,
+       "end_ms": 860
+      },
+      {
+       "text": "kaboom.",
+       "start_ms": 860,
+       "end_ms": 1240
+      }
+     ],
+     "glossary": [
+      {
+       "term": "bridge",
+       "ipa": "brɪdʒ",
+       "pos": "N",
+       "zh": "桥"
+      }
+     ]
+    },
+    {
+     "id": "b3-p03-s03",
+     "text_en": "Oh no!",
+     "zh": "哦不！",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.677,
+      "y": 0.398,
+      "w": 0.298,
+      "h": 0.198,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 36900,
+     "end_ms": 37680,
+     "audio": "assets/mikey-jj/penguin-adventure/sentences/page-03-sentence-03.mp3",
+     "words": [
+      {
+       "text": "Oh,",
+       "start_ms": 0,
+       "end_ms": 420
+      },
+      {
+       "text": "no,",
+       "start_ms": 520,
+       "end_ms": 780
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b3-p03-s04",
+     "text_en": "This is the ONLY way to Snow Mountain!",
+     "zh": "这可是去雪山的唯一道路！",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.677,
+      "y": 0.398,
+      "w": 0.298,
+      "h": 0.198,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 38140,
+     "end_ms": 40300,
+     "audio": "assets/mikey-jj/penguin-adventure/sentences/page-03-sentence-04.mp3",
+     "words": [
+      {
+       "text": "This",
+       "start_ms": 0,
+       "end_ms": 260
+      },
+      {
+       "text": "is",
+       "start_ms": 260,
+       "end_ms": 400
+      },
+      {
+       "text": "the",
+       "start_ms": 400,
+       "end_ms": 540
+      },
+      {
+       "text": "only",
+       "start_ms": 540,
+       "end_ms": 820
+      },
+      {
+       "text": "way",
+       "start_ms": 820,
+       "end_ms": 1240
+      },
+      {
+       "text": "to",
+       "start_ms": 1240,
+       "end_ms": 1440
+      },
+      {
+       "text": "Snow",
+       "start_ms": 1440,
+       "end_ms": 1720
+      },
+      {
+       "text": "Mountain.",
+       "start_ms": 1720,
+       "end_ms": 2160
+      }
+     ],
+     "glossary": [
+      {
+       "term": "snow mountain",
+       "ipa": "ˌsnəʊ ˈmaʊntən",
+       "pos": "N",
+       "zh": "雪山"
+      }
+     ]
+    },
+    {
+     "id": "b3-p03-s05",
+     "text_en": "Wait...",
+     "zh": "等等……",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.64,
+      "y": 0.817,
+      "w": 0.209,
+      "h": 0.159,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 41080,
+     "end_ms": 41720,
+     "audio": "assets/mikey-jj/penguin-adventure/sentences/page-03-sentence-05.mp3",
+     "words": [
+      {
+       "text": "Wait...",
+       "start_ms": 0,
+       "end_ms": 640
+      }
+     ],
+     "glossary": [
+      {
+       "term": "explosive",
+       "ipa": "ɪkˈspləʊsɪv",
+       "pos": "Adj",
+       "zh": "爆炸性的"
+      }
+     ]
+    },
+    {
+     "id": "b3-p03-s06",
+     "text_en": "I have an EXPLOSIVE idea!",
+     "zh": "我有一个爆炸性的主意！",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.64,
+      "y": 0.817,
+      "w": 0.209,
+      "h": 0.159,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 42040,
+     "end_ms": 43700,
+     "audio": "assets/mikey-jj/penguin-adventure/sentences/page-03-sentence-06.mp3",
+     "words": [
+      {
+       "text": "I",
+       "start_ms": 20,
+       "end_ms": 180
+      },
+      {
+       "text": "have",
+       "start_ms": 180,
+       "end_ms": 340
+      },
+      {
+       "text": "an",
+       "start_ms": 340,
+       "end_ms": 440
+      },
+      {
+       "text": "explosive",
+       "start_ms": 440,
+       "end_ms": 1000,
+       "term": "explosive",
+       "zh": "爆炸性的"
+      },
+      {
+       "text": "idea.",
+       "start_ms": 1000,
+       "end_ms": 1660
+      }
+     ],
+     "glossary": [
+      {
+       "term": "explosive",
+       "ipa": "ɪkˈspləʊsɪv",
+       "pos": "Adj",
+       "zh": "爆炸性的"
+      }
+     ]
+    },
+    {
+     "id": "b3-p03-s07",
+     "text_en": "Ooh!",
+     "zh": "哦！",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.64,
+      "y": 0.817,
+      "w": 0.209,
+      "h": 0.159,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 44480,
+     "end_ms": 44880,
+     "audio": "assets/mikey-jj/penguin-adventure/sentences/page-03-sentence-07.mp3",
+     "words": [
+      {
+       "text": "Ooh!",
+       "start_ms": 0,
+       "end_ms": 400
+      }
+     ],
+     "glossary": [
+      {
+       "term": "fireworks",
+       "ipa": "ˈfaɪəwɜːks",
+       "pos": "N",
+       "zh": "烟花"
+      }
+     ]
+    },
+    {
+     "id": "b3-p03-s08",
+     "text_en": "Are we making fireworks?",
+     "zh": "我们要做烟花吗？",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.64,
+      "y": 0.817,
+      "w": 0.209,
+      "h": 0.159,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 45080,
+     "end_ms": 46220,
+     "audio": "assets/mikey-jj/penguin-adventure/sentences/page-03-sentence-08.mp3",
+     "words": [
+      {
+       "text": "are",
+       "start_ms": 0,
+       "end_ms": 180
+      },
+      {
+       "text": "we",
+       "start_ms": 180,
+       "end_ms": 320
+      },
+      {
+       "text": "making",
+       "start_ms": 320,
+       "end_ms": 680
+      },
+      {
+       "text": "fireworks?",
+       "start_ms": 680,
+       "end_ms": 1140,
+       "term": "fireworks",
+       "zh": "烟花"
+      }
+     ],
+     "glossary": [
+      {
+       "term": "fireworks",
+       "ipa": "ˈfaɪəwɜːks",
+       "pos": "N",
+       "zh": "烟花"
+      }
+     ]
+    }
+   ],
+   "panel": [
+    0.0,
+    0.603,
+    0.611,
+    1.0
+   ]
+  },
+  {
+   "page_no": 4,
+   "source_page": 4,
+   "image": "assets/mikey-jj/penguin-adventure/pages/p04.webp",
+   "text_en": "Behold! The Person Cannon! It uses TNT to blast us across the gap! Probably! Is this safe? Get ready! Blast off in 3... 2... 1... Wait! I need to go potty first!",
+   "start_ms": 49070,
+   "end_ms": 65540,
+   "sentences": [
+    {
+     "id": "b3-p04-s01",
+     "text_en": "Behold!",
+     "zh": "看哪！",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.624,
+      "y": 0.069,
+      "w": 0.125,
+      "h": 0.093,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 49070,
+     "end_ms": 49630,
+     "audio": "assets/mikey-jj/penguin-adventure/sentences/page-04-sentence-01.mp3",
+     "words": [
+      {
+       "text": "Behold!",
+       "start_ms": 0,
+       "end_ms": 560
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b3-p04-s02",
+     "text_en": "The Person Cannon!",
+     "zh": "人体大炮！",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.624,
+      "y": 0.069,
+      "w": 0.125,
+      "h": 0.093,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 50150,
+     "end_ms": 51190,
+     "audio": "assets/mikey-jj/penguin-adventure/sentences/page-04-sentence-02.mp3",
+     "words": [
+      {
+       "text": "The",
+       "start_ms": 0,
+       "end_ms": 120
+      },
+      {
+       "text": "Person",
+       "start_ms": 120,
+       "end_ms": 560
+      },
+      {
+       "text": "Cannon!",
+       "start_ms": 560,
+       "end_ms": 1040,
+       "term": "cannon",
+       "zh": "大炮"
+      }
+     ],
+     "glossary": [
+      {
+       "term": "cannon",
+       "ipa": "ˈkænən",
+       "pos": "N",
+       "zh": "大炮"
+      }
+     ]
+    },
+    {
+     "id": "b3-p04-s03",
+     "text_en": "It uses TNT to blast us across the gap!",
+     "zh": "它用 TNT 把我们轰过缺口！",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.624,
+      "y": 0.069,
+      "w": 0.125,
+      "h": 0.093,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 51760,
+     "end_ms": 54980,
+     "audio": "assets/mikey-jj/penguin-adventure/sentences/page-04-sentence-03.mp3",
+     "words": [
+      {
+       "text": "It",
+       "start_ms": 0,
+       "end_ms": 80
+      },
+      {
+       "text": "uses",
+       "start_ms": 80,
+       "end_ms": 460
+      },
+      {
+       "text": "TNT",
+       "start_ms": 460,
+       "end_ms": 860
+      },
+      {
+       "text": "to",
+       "start_ms": 860,
+       "end_ms": 1620
+      },
+      {
+       "text": "blast",
+       "start_ms": 1620,
+       "end_ms": 1880,
+       "term": "blast",
+       "zh": "爆破"
+      },
+      {
+       "text": "us",
+       "start_ms": 1880,
+       "end_ms": 2280
+      },
+      {
+       "text": "across",
+       "start_ms": 2280,
+       "end_ms": 2580
+      },
+      {
+       "text": "the",
+       "start_ms": 2580,
+       "end_ms": 2940
+      },
+      {
+       "text": "gap.",
+       "start_ms": 2940,
+       "end_ms": 3220,
+       "term": "gap",
+       "zh": "缺口"
+      }
+     ],
+     "glossary": [
+      {
+       "term": "blast",
+       "ipa": "blɑːst",
+       "pos": "V",
+       "zh": "爆破"
+      },
+      {
+       "term": "gap",
+       "ipa": "ɡæp",
+       "pos": "N",
+       "zh": "缺口"
+      }
+     ]
+    },
+    {
+     "id": "b3-p04-s04",
+     "text_en": "Probably!",
+     "zh": "大概吧！",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.624,
+      "y": 0.069,
+      "w": 0.125,
+      "h": 0.093,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 54980,
+     "end_ms": 55960,
+     "audio": "assets/mikey-jj/penguin-adventure/sentences/page-04-sentence-04.mp3",
+     "words": [
+      {
+       "text": "Probably!",
+       "start_ms": 0,
+       "end_ms": 980
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b3-p04-s05",
+     "text_en": "Is this safe?",
+     "zh": "这样安全吗？",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.624,
+      "y": 0.069,
+      "w": 0.125,
+      "h": 0.093,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 56850,
+     "end_ms": 57830,
+     "audio": "assets/mikey-jj/penguin-adventure/sentences/page-04-sentence-05.mp3",
+     "words": [
+      {
+       "text": "Is",
+       "start_ms": 0,
+       "end_ms": 320
+      },
+      {
+       "text": "this",
+       "start_ms": 320,
+       "end_ms": 500
+      },
+      {
+       "text": "safe?",
+       "start_ms": 500,
+       "end_ms": 980
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b3-p04-s06",
+     "text_en": "Get ready!",
+     "zh": "准备好！",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.351,
+      "y": 0.389,
+      "w": 0.207,
+      "h": 0.092,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 58780,
+     "end_ms": 59380,
+     "audio": "assets/mikey-jj/penguin-adventure/sentences/page-04-sentence-06.mp3",
+     "words": [
+      {
+       "text": "Get",
+       "start_ms": 0,
+       "end_ms": 360
+      },
+      {
+       "text": "ready!",
+       "start_ms": 360,
+       "end_ms": 600
+      }
+     ],
+     "glossary": [
+      {
+       "term": "blast",
+       "ipa": "blɑːst",
+       "pos": "V",
+       "zh": "爆破"
+      }
+     ]
+    },
+    {
+     "id": "b3-p04-s07",
+     "text_en": "Blast off in 3... 2... 1...",
+     "zh": "三、二、一，发射……",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.72,
+      "y": 0.52,
+      "w": 0.229,
+      "h": 0.122,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 59960,
+     "end_ms": 62660,
+     "audio": "assets/mikey-jj/penguin-adventure/sentences/page-04-sentence-07.mp3",
+     "words": [
+      {
+       "text": "Blast",
+       "start_ms": 0,
+       "end_ms": 100,
+       "term": "blast",
+       "zh": "爆破"
+      },
+      {
+       "text": "off",
+       "start_ms": 100,
+       "end_ms": 600
+      },
+      {
+       "text": "in",
+       "start_ms": 600,
+       "end_ms": 820
+      },
+      {
+       "text": "3...",
+       "start_ms": 820,
+       "end_ms": 1100
+      },
+      {
+       "text": "2...",
+       "start_ms": 1700,
+       "end_ms": 1880
+      },
+      {
+       "text": "1...",
+       "start_ms": 2700,
+       "end_ms": 2700
+      }
+     ],
+     "glossary": [
+      {
+       "term": "blast",
+       "ipa": "blɑːst",
+       "pos": "V",
+       "zh": "爆破"
+      }
+     ]
+    },
+    {
+     "id": "b3-p04-s08",
+     "text_en": "Wait!",
+     "zh": "等等！",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.466,
+      "y": 0.831,
+      "w": 0.201,
+      "h": 0.126,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 62660,
+     "end_ms": 63660,
+     "audio": "assets/mikey-jj/penguin-adventure/sentences/page-04-sentence-08.mp3",
+     "words": [
+      {
+       "text": "Wait!",
+       "start_ms": 0,
+       "end_ms": 1000
+      }
+     ],
+     "glossary": [
+      {
+       "term": "potty",
+       "ipa": "ˈpɒti",
+       "pos": "N",
+       "zh": "厕所"
+      }
+     ]
+    },
+    {
+     "id": "b3-p04-s09",
+     "text_en": "I need to go potty first!",
+     "zh": "我得先去上厕所！",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.466,
+      "y": 0.831,
+      "w": 0.201,
+      "h": 0.126,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 64140,
+     "end_ms": 65540,
+     "audio": "assets/mikey-jj/penguin-adventure/sentences/page-04-sentence-09.mp3",
+     "words": [
+      {
+       "text": "I",
+       "start_ms": 0,
+       "end_ms": 160
+      },
+      {
+       "text": "need",
+       "start_ms": 160,
+       "end_ms": 320
+      },
+      {
+       "text": "to",
+       "start_ms": 320,
+       "end_ms": 460
+      },
+      {
+       "text": "go",
+       "start_ms": 460,
+       "end_ms": 640
+      },
+      {
+       "text": "potty",
+       "start_ms": 640,
+       "end_ms": 1100,
+       "term": "potty",
+       "zh": "厕所"
+      },
+      {
+       "text": "first.",
+       "start_ms": 1100,
+       "end_ms": 1400
+      }
+     ],
+     "glossary": [
+      {
+       "term": "potty",
+       "ipa": "ˈpɒti",
+       "pos": "N",
+       "zh": "厕所"
+      }
+     ]
+    }
+   ],
+   "panel": [
+    0.0,
+    0.498,
+    0.505,
+    1.0
+   ]
+  },
+  {
+   "page_no": 5,
+   "source_page": 5,
+   "image": "assets/mikey-jj/penguin-adventure/pages/p05.webp",
+   "text_en": "I can FLLLLYYYYYY! Nice landing! We made it across! Let's never do that again.",
+   "start_ms": 68010,
+   "end_ms": 75040,
+   "sentences": [
+    {
+     "id": "b3-p05-s01",
+     "text_en": "I can FLLLLYYYYYY!",
+     "zh": "我会飞——！",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.693,
+      "y": 0.044,
+      "w": 0.255,
+      "h": 0.101,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 68010,
+     "end_ms": 68930,
+     "audio": "assets/mikey-jj/penguin-adventure/sentences/page-05-sentence-01.mp3",
+     "words": [
+      {
+       "text": "I",
+       "start_ms": 0,
+       "end_ms": 340
+      },
+      {
+       "text": "can",
+       "start_ms": 340,
+       "end_ms": 540
+      },
+      {
+       "text": "fly.",
+       "start_ms": 540,
+       "end_ms": 920,
+       "term": "fly",
+       "zh": "飞"
+      }
+     ],
+     "glossary": [
+      {
+       "term": "fly",
+       "ipa": "flaɪ",
+       "pos": "V",
+       "zh": "飞"
+      }
+     ]
+    },
+    {
+     "id": "b3-p05-s02",
+     "text_en": "Nice landing!",
+     "zh": "着陆漂亮！",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.486,
+      "y": 0.527,
+      "w": 0.241,
+      "h": 0.106,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 70020,
+     "end_ms": 71100,
+     "audio": "assets/mikey-jj/penguin-adventure/sentences/page-05-sentence-02.mp3",
+     "words": [
+      {
+       "text": "Nice",
+       "start_ms": 0,
+       "end_ms": 720
+      },
+      {
+       "text": "landing.",
+       "start_ms": 720,
+       "end_ms": 1080,
+       "term": "landing",
+       "zh": "着陆"
+      }
+     ],
+     "glossary": [
+      {
+       "term": "landing",
+       "ipa": "ˈlændɪŋ",
+       "pos": "N",
+       "zh": "着陆"
+      }
+     ]
+    },
+    {
+     "id": "b3-p05-s03",
+     "text_en": "We made it across!",
+     "zh": "我们成功过来了！",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.486,
+      "y": 0.527,
+      "w": 0.241,
+      "h": 0.106,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 71540,
+     "end_ms": 72500,
+     "audio": "assets/mikey-jj/penguin-adventure/sentences/page-05-sentence-03.mp3",
+     "words": [
+      {
+       "text": "We",
+       "start_ms": 0,
+       "end_ms": 140
+      },
+      {
+       "text": "made",
+       "start_ms": 140,
+       "end_ms": 380
+      },
+      {
+       "text": "it",
+       "start_ms": 380,
+       "end_ms": 600
+      },
+      {
+       "text": "across.",
+       "start_ms": 600,
+       "end_ms": 960,
+       "term": "across",
+       "zh": "穿过"
+      }
+     ],
+     "glossary": [
+      {
+       "term": "across",
+       "ipa": "əˈkrɒs",
+       "pos": "Prep",
+       "zh": "穿过"
+      }
+     ]
+    },
+    {
+     "id": "b3-p05-s04",
+     "text_en": "Let's never do that again.",
+     "zh": "我们再也不要那样做了。",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.598,
+      "y": 0.884,
+      "w": 0.321,
+      "h": 0.066,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 73200,
+     "end_ms": 75040,
+     "audio": "assets/mikey-jj/penguin-adventure/sentences/page-05-sentence-04.mp3",
+     "words": [
+      {
+       "text": "Let's",
+       "start_ms": 0,
+       "end_ms": 680
+      },
+      {
+       "text": "never",
+       "start_ms": 680,
+       "end_ms": 900
+      },
+      {
+       "text": "do",
+       "start_ms": 900,
+       "end_ms": 1260
+      },
+      {
+       "text": "that",
+       "start_ms": 1260,
+       "end_ms": 1480
+      },
+      {
+       "text": "again.",
+       "start_ms": 1480,
+       "end_ms": 1840
+      }
+     ],
+     "glossary": [
+      {
+       "term": "across",
+       "ipa": "əˈkrɒs",
+       "pos": "Prep",
+       "zh": "穿过"
+      }
+     ]
+    }
+   ],
+   "panel": [
+    0.0,
+    0.498,
+    0.505,
+    1.0
+   ]
+  },
+  {
+   "page_no": 6,
+   "source_page": 6,
+   "image": "assets/mikey-jj/penguin-adventure/pages/p06.webp",
+   "text_en": "Mikey! This thunder is dangerous! We need cover! Nah, it's just a little sparkle rain! Mikey!!!",
+   "start_ms": 77400,
+   "end_ms": 85880,
+   "sentences": [
+    {
+     "id": "b3-p06-s01",
+     "text_en": "Mikey!",
+     "zh": "Mikey！",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.051,
+      "y": 0.123,
+      "w": 0.223,
+      "h": 0.127,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 77400,
+     "end_ms": 78040,
+     "audio": "assets/mikey-jj/penguin-adventure/sentences/page-06-sentence-01.mp3",
+     "words": [
+      {
+       "text": "Mikey!",
+       "start_ms": 0,
+       "end_ms": 640
+      }
+     ],
+     "glossary": [
+      {
+       "term": "thunder",
+       "ipa": "ˈθʌndə",
+       "pos": "N",
+       "zh": "雷声"
+      }
+     ]
+    },
+    {
+     "id": "b3-p06-s02",
+     "text_en": "This thunder is dangerous!",
+     "zh": "这雷声很危险！",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.051,
+      "y": 0.123,
+      "w": 0.223,
+      "h": 0.127,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 78260,
+     "end_ms": 79440,
+     "audio": "assets/mikey-jj/penguin-adventure/sentences/page-06-sentence-02.mp3",
+     "words": [
+      {
+       "text": "this",
+       "start_ms": 0,
+       "end_ms": 160
+      },
+      {
+       "text": "thunder",
+       "start_ms": 160,
+       "end_ms": 460,
+       "term": "thunder",
+       "zh": "雷声"
+      },
+      {
+       "text": "is",
+       "start_ms": 460,
+       "end_ms": 780
+      },
+      {
+       "text": "dangerous.",
+       "start_ms": 780,
+       "end_ms": 1180,
+       "term": "dangerous",
+       "zh": "危险的"
+      }
+     ],
+     "glossary": [
+      {
+       "term": "thunder",
+       "ipa": "ˈθʌndə",
+       "pos": "N",
+       "zh": "雷声"
+      },
+      {
+       "term": "dangerous",
+       "ipa": "ˈdeɪndʒərəs",
+       "pos": "Adj",
+       "zh": "危险的"
+      }
+     ]
+    },
+    {
+     "id": "b3-p06-s03",
+     "text_en": "We need cover!",
+     "zh": "我们需要掩护！",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.051,
+      "y": 0.123,
+      "w": 0.223,
+      "h": 0.127,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 79960,
+     "end_ms": 80620,
+     "audio": "assets/mikey-jj/penguin-adventure/sentences/page-06-sentence-03.mp3",
+     "words": [
+      {
+       "text": "We",
+       "start_ms": 0,
+       "end_ms": 160
+      },
+      {
+       "text": "need",
+       "start_ms": 160,
+       "end_ms": 300
+      },
+      {
+       "text": "cover.",
+       "start_ms": 300,
+       "end_ms": 660,
+       "term": "cover",
+       "zh": "掩护"
+      }
+     ],
+     "glossary": [
+      {
+       "term": "cover",
+       "ipa": "ˈkʌvə",
+       "pos": "N",
+       "zh": "掩护"
+      }
+     ]
+    },
+    {
+     "id": "b3-p06-s04",
+     "text_en": "Nah, it's just a little sparkle rain!",
+     "zh": "不，这只是小小的闪光雨！",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.737,
+      "y": 0.188,
+      "w": 0.216,
+      "h": 0.102,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 81200,
+     "end_ms": 84060,
+     "audio": "assets/mikey-jj/penguin-adventure/sentences/page-06-sentence-04.mp3",
+     "words": [
+      {
+       "text": "No,",
+       "start_ms": 0,
+       "end_ms": 540
+      },
+      {
+       "text": "it's",
+       "start_ms": 940,
+       "end_ms": 1220
+      },
+      {
+       "text": "just",
+       "start_ms": 1220,
+       "end_ms": 1420
+      },
+      {
+       "text": "a",
+       "start_ms": 1420,
+       "end_ms": 1700
+      },
+      {
+       "text": "little",
+       "start_ms": 1700,
+       "end_ms": 1920
+      },
+      {
+       "text": "sparkle",
+       "start_ms": 1920,
+       "end_ms": 2660,
+       "term": "sparkle",
+       "zh": "闪光"
+      },
+      {
+       "text": "rain.",
+       "start_ms": 2660,
+       "end_ms": 2860
+      }
+     ],
+     "glossary": [
+      {
+       "term": "sparkle",
+       "ipa": "ˈspɑːkəl",
+       "pos": "N",
+       "zh": "闪光"
+      }
+     ]
+    },
+    {
+     "id": "b3-p06-s05",
+     "text_en": "Mikey!!!",
+     "zh": "Mikey！！！",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.749,
+      "y": 0.628,
+      "w": 0.173,
+      "h": 0.085,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 85160,
+     "end_ms": 85880,
+     "audio": "assets/mikey-jj/penguin-adventure/sentences/page-06-sentence-05.mp3",
+     "words": [
+      {
+       "text": "Mikey!",
+       "start_ms": 0,
+       "end_ms": 720
+      }
+     ],
+     "glossary": [
+      {
+       "term": "thunder",
+       "ipa": "ˈθʌndə",
+       "pos": "N",
+       "zh": "雷声"
+      }
+     ]
+    }
+   ],
+   "panel": [
+    0.0,
+    0.498,
+    0.505,
+    1.0
+   ]
+  },
+  {
+   "page_no": 7,
+   "source_page": 7,
+   "image": "assets/mikey-jj/penguin-adventure/pages/p07.webp",
+   "text_en": "He's in a lightning coma! I need to make a Healing Potion! But I need a WATERMELON! Gotta run! Sorry, zombies. No time to chat!",
+   "start_ms": 88060,
+   "end_ms": 98400,
+   "sentences": [
+    {
+     "id": "b3-p07-s01",
+     "text_en": "He's in a lightning coma!",
+     "zh": "他陷入雷电昏迷了！",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.194,
+      "y": 0.041,
+      "w": 0.154,
+      "h": 0.11,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 88060,
+     "end_ms": 89860,
+     "audio": "assets/mikey-jj/penguin-adventure/sentences/page-07-sentence-01.mp3",
+     "words": [
+      {
+       "text": "he's",
+       "start_ms": 0,
+       "end_ms": 720
+      },
+      {
+       "text": "in",
+       "start_ms": 720,
+       "end_ms": 820
+      },
+      {
+       "text": "a",
+       "start_ms": 820,
+       "end_ms": 940
+      },
+      {
+       "text": "lightning",
+       "start_ms": 940,
+       "end_ms": 1340
+      },
+      {
+       "text": "coma.",
+       "start_ms": 1340,
+       "end_ms": 1800,
+       "term": "coma",
+       "zh": "昏迷"
+      }
+     ],
+     "glossary": [
+      {
+       "term": "coma",
+       "ipa": "ˈkəʊmə",
+       "pos": "N",
+       "zh": "昏迷"
+      }
+     ]
+    },
+    {
+     "id": "b3-p07-s02",
+     "text_en": "I need to make a Healing Potion!",
+     "zh": "我得制作治疗药水！",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.194,
+      "y": 0.041,
+      "w": 0.154,
+      "h": 0.11,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 90400,
+     "end_ms": 91940,
+     "audio": "assets/mikey-jj/penguin-adventure/sentences/page-07-sentence-02.mp3",
+     "words": [
+      {
+       "text": "I",
+       "start_ms": 0,
+       "end_ms": 200
+      },
+      {
+       "text": "need",
+       "start_ms": 200,
+       "end_ms": 340
+      },
+      {
+       "text": "to",
+       "start_ms": 340,
+       "end_ms": 480
+      },
+      {
+       "text": "make",
+       "start_ms": 480,
+       "end_ms": 680
+      },
+      {
+       "text": "a",
+       "start_ms": 680,
+       "end_ms": 780
+      },
+      {
+       "text": "healing",
+       "start_ms": 780,
+       "end_ms": 1140
+      },
+      {
+       "text": "potion,",
+       "start_ms": 1140,
+       "end_ms": 1540
+      }
+     ],
+     "glossary": [
+      {
+       "term": "healing potion",
+       "ipa": "ˈhiːlɪŋ ˈpəʊʃən",
+       "pos": "N",
+       "zh": "治疗药水"
+      }
+     ]
+    },
+    {
+     "id": "b3-p07-s03",
+     "text_en": "But I need a WATERMELON!",
+     "zh": "但我需要一个西瓜！",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.194,
+      "y": 0.041,
+      "w": 0.154,
+      "h": 0.11,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 91980,
+     "end_ms": 93780,
+     "audio": "assets/mikey-jj/penguin-adventure/sentences/page-07-sentence-03.mp3",
+     "words": [
+      {
+       "text": "but",
+       "start_ms": 0,
+       "end_ms": 680
+      },
+      {
+       "text": "I",
+       "start_ms": 680,
+       "end_ms": 820
+      },
+      {
+       "text": "need",
+       "start_ms": 820,
+       "end_ms": 980
+      },
+      {
+       "text": "a",
+       "start_ms": 980,
+       "end_ms": 1100
+      },
+      {
+       "text": "watermelon.",
+       "start_ms": 1100,
+       "end_ms": 1800,
+       "term": "watermelon",
+       "zh": "西瓜"
+      }
+     ],
+     "glossary": [
+      {
+       "term": "watermelon",
+       "ipa": "ˈwɔːtəmelən",
+       "pos": "N",
+       "zh": "西瓜"
+      }
+     ]
+    },
+    {
+     "id": "b3-p07-s04",
+     "text_en": "Gotta run!",
+     "zh": "得快跑！",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.618,
+      "y": 0.827,
+      "w": 0.326,
+      "h": 0.143,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 94710,
+     "end_ms": 95520,
+     "audio": "assets/mikey-jj/penguin-adventure/sentences/page-07-sentence-04.mp3",
+     "words": [
+      {
+       "text": "Gotta",
+       "start_ms": 0,
+       "end_ms": 540
+      },
+      {
+       "text": "run!",
+       "start_ms": 540,
+       "end_ms": 800
+      }
+     ],
+     "glossary": [
+      {
+       "term": "chat",
+       "ipa": "tʃæt",
+       "pos": "V",
+       "zh": "聊天"
+      }
+     ]
+    },
+    {
+     "id": "b3-p07-s05",
+     "text_en": "Sorry, zombies.",
+     "zh": "对不起，僵尸们。",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.618,
+      "y": 0.827,
+      "w": 0.326,
+      "h": 0.143,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 95910,
+     "end_ms": 96700,
+     "audio": "assets/mikey-jj/penguin-adventure/sentences/page-07-sentence-05.mp3",
+     "words": [
+      {
+       "text": "Sorry,",
+       "start_ms": 0,
+       "end_ms": 440
+      },
+      {
+       "text": "zombies.",
+       "start_ms": 480,
+       "end_ms": 780
+      }
+     ],
+     "glossary": [
+      {
+       "term": "chat",
+       "ipa": "tʃæt",
+       "pos": "V",
+       "zh": "聊天"
+      }
+     ]
+    },
+    {
+     "id": "b3-p07-s06",
+     "text_en": "No time to chat!",
+     "zh": "没时间聊天！",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.618,
+      "y": 0.827,
+      "w": 0.326,
+      "h": 0.143,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 97520,
+     "end_ms": 98400,
+     "audio": "assets/mikey-jj/penguin-adventure/sentences/page-07-sentence-06.mp3",
+     "words": [
+      {
+       "text": "No",
+       "start_ms": 30,
+       "end_ms": 70
+      },
+      {
+       "text": "time",
+       "start_ms": 70,
+       "end_ms": 450
+      },
+      {
+       "text": "to",
+       "start_ms": 450,
+       "end_ms": 670
+      },
+      {
+       "text": "chat.",
+       "start_ms": 670,
+       "end_ms": 870,
+       "term": "chat",
+       "zh": "聊天"
+      }
+     ],
+     "glossary": [
+      {
+       "term": "chat",
+       "ipa": "tʃæt",
+       "pos": "V",
+       "zh": "聊天"
+      }
+     ]
+    }
+   ],
+   "panel": [
+    0.0,
+    0.495,
+    0.504,
+    1.0
+   ]
+  },
+  {
+   "page_no": 8,
+   "source_page": 8,
+   "image": "assets/mikey-jj/penguin-adventure/pages/p08.webp",
+   "text_en": "Alchemy time! Mixing gold and melon to save my best friend! Healing potion go! Wow! I feel super-charged! Thanks, JJ!",
+   "start_ms": 101140,
+   "end_ms": 112000,
+   "sentences": [
+    {
+     "id": "b3-p08-s01",
+     "text_en": "Alchemy time!",
+     "zh": "炼金术时间！",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.421,
+      "y": 0.02,
+      "w": 0.363,
+      "h": 0.123,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 101140,
+     "end_ms": 101880,
+     "audio": "assets/mikey-jj/penguin-adventure/sentences/page-08-sentence-01.mp3",
+     "words": [
+      {
+       "text": "Alchemy",
+       "start_ms": 0,
+       "end_ms": 360,
+       "term": "alchemy",
+       "zh": "炼金术"
+      },
+      {
+       "text": "time.",
+       "start_ms": 360,
+       "end_ms": 740
+      }
+     ],
+     "glossary": [
+      {
+       "term": "alchemy",
+       "ipa": "ˈælkəmi",
+       "pos": "N",
+       "zh": "炼金术"
+      }
+     ]
+    },
+    {
+     "id": "b3-p08-s02",
+     "text_en": "Mixing gold and melon to save my best friend!",
+     "zh": "把金子和瓜混合起来，拯救我最好的朋友！",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.421,
+      "y": 0.02,
+      "w": 0.363,
+      "h": 0.123,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 102500,
+     "end_ms": 105560,
+     "audio": "assets/mikey-jj/penguin-adventure/sentences/page-08-sentence-02.mp3",
+     "words": [
+      {
+       "text": "Mixing",
+       "start_ms": 0,
+       "end_ms": 280
+      },
+      {
+       "text": "gold",
+       "start_ms": 280,
+       "end_ms": 560
+      },
+      {
+       "text": "and",
+       "start_ms": 560,
+       "end_ms": 920
+      },
+      {
+       "text": "melon",
+       "start_ms": 920,
+       "end_ms": 1320,
+       "term": "melon",
+       "zh": "瓜"
+      },
+      {
+       "text": "to",
+       "start_ms": 1320,
+       "end_ms": 1500
+      },
+      {
+       "text": "save",
+       "start_ms": 1500,
+       "end_ms": 1780
+      },
+      {
+       "text": "my",
+       "start_ms": 1780,
+       "end_ms": 2060
+      },
+      {
+       "text": "best",
+       "start_ms": 2060,
+       "end_ms": 2420
+      },
+      {
+       "text": "friend.",
+       "start_ms": 2420,
+       "end_ms": 3060
+      }
+     ],
+     "glossary": [
+      {
+       "term": "melon",
+       "ipa": "ˈmelən",
+       "pos": "N",
+       "zh": "瓜"
+      }
+     ]
+    },
+    {
+     "id": "b3-p08-s03",
+     "text_en": "Healing potion go!",
+     "zh": "治疗药水，出发！",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.03,
+      "y": 0.508,
+      "w": 0.211,
+      "h": 0.121,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 106340,
+     "end_ms": 107960,
+     "audio": "assets/mikey-jj/penguin-adventure/sentences/page-08-sentence-03.mp3",
+     "words": [
+      {
+       "text": "Healing",
+       "start_ms": 0,
+       "end_ms": 660
+      },
+      {
+       "text": "potion",
+       "start_ms": 660,
+       "end_ms": 1100
+      },
+      {
+       "text": "go.",
+       "start_ms": 1100,
+       "end_ms": 1620
+      }
+     ],
+     "glossary": [
+      {
+       "term": "healing potion",
+       "ipa": "ˈhiːlɪŋ ˈpəʊʃən",
+       "pos": "N",
+       "zh": "治疗药水"
+      }
+     ]
+    },
+    {
+     "id": "b3-p08-s04",
+     "text_en": "Wow!",
+     "zh": "哇！",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.733,
+      "y": 0.508,
+      "w": 0.237,
+      "h": 0.123,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 107960,
+     "end_ms": 109120,
+     "audio": "assets/mikey-jj/penguin-adventure/sentences/page-08-sentence-04.mp3",
+     "words": [
+      {
+       "text": "Wow!",
+       "start_ms": 0,
+       "end_ms": 1160
+      }
+     ],
+     "glossary": [
+      {
+       "term": "super-charged",
+       "ipa": "ˌsuːpəˈtʃɑːdʒd",
+       "pos": "Adj",
+       "zh": "充满能量的"
+      }
+     ]
+    },
+    {
+     "id": "b3-p08-s05",
+     "text_en": "I feel super-charged!",
+     "zh": "我感觉充满能量！",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.733,
+      "y": 0.508,
+      "w": 0.237,
+      "h": 0.123,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 109560,
+     "end_ms": 110900,
+     "audio": "assets/mikey-jj/penguin-adventure/sentences/page-08-sentence-05.mp3",
+     "words": [
+      {
+       "text": "I",
+       "start_ms": 0,
+       "end_ms": 140
+      },
+      {
+       "text": "feel",
+       "start_ms": 140,
+       "end_ms": 400
+      },
+      {
+       "text": "supercharged.",
+       "start_ms": 400,
+       "end_ms": 1340,
+       "term": "super-charged",
+       "zh": "充满能量的"
+      }
+     ],
+     "glossary": [
+      {
+       "term": "super-charged",
+       "ipa": "ˌsuːpəˈtʃɑːdʒd",
+       "pos": "Adj",
+       "zh": "充满能量的"
+      }
+     ]
+    },
+    {
+     "id": "b3-p08-s06",
+     "text_en": "Thanks, JJ!",
+     "zh": "谢谢你，JJ！",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.733,
+      "y": 0.508,
+      "w": 0.237,
+      "h": 0.123,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 111540,
+     "end_ms": 112000,
+     "audio": "assets/mikey-jj/penguin-adventure/sentences/page-08-sentence-06.mp3",
+     "words": [
+      {
+       "text": "Thanks,",
+       "start_ms": 0,
+       "end_ms": 180
+      },
+      {
+       "text": "JJ.",
+       "start_ms": 320,
+       "end_ms": 460
+      }
+     ],
+     "glossary": [
+      {
+       "term": "alchemy",
+       "ipa": "ˈælkəmi",
+       "pos": "N",
+       "zh": "炼金术"
+      }
+     ]
+    }
+   ],
+   "panel": [
+    0.0,
+    0.494,
+    0.505,
+    1.0
+   ]
+  },
+  {
+   "page_no": 9,
+   "source_page": 9,
+   "image": "assets/mikey-jj/penguin-adventure/pages/p09.webp",
+   "text_en": "JJ... why is the water looking at me? I sense a disturbance... Prepare yourself! Laser, you giant lizard! SAVE ME!!!!",
+   "start_ms": 114060,
+   "end_ms": 126240,
+   "sentences": [
+    {
+     "id": "b3-p09-s01",
+     "text_en": "JJ... why is the water looking at me?",
+     "zh": "JJ……水为什么在看着我？",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.317,
+      "y": 0.325,
+      "w": 0.211,
+      "h": 0.114,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 114060,
+     "end_ms": 117400,
+     "audio": "assets/mikey-jj/penguin-adventure/sentences/page-09-sentence-01.mp3",
+     "words": [
+      {
+       "text": "JJ,",
+       "start_ms": 0,
+       "end_ms": 880
+      },
+      {
+       "text": "why",
+       "start_ms": 1560,
+       "end_ms": 1840
+      },
+      {
+       "text": "is",
+       "start_ms": 1840,
+       "end_ms": 2040
+      },
+      {
+       "text": "the",
+       "start_ms": 2040,
+       "end_ms": 2200
+      },
+      {
+       "text": "water",
+       "start_ms": 2200,
+       "end_ms": 2420
+      },
+      {
+       "text": "looking",
+       "start_ms": 2420,
+       "end_ms": 2920
+      },
+      {
+       "text": "at",
+       "start_ms": 2920,
+       "end_ms": 3140
+      },
+      {
+       "text": "me?",
+       "start_ms": 3140,
+       "end_ms": 3340
+      }
+     ],
+     "glossary": [
+      {
+       "term": "disturbance",
+       "ipa": "dɪˈstɜːbəns",
+       "pos": "N",
+       "zh": "异常"
+      }
+     ]
+    },
+    {
+     "id": "b3-p09-s02",
+     "text_en": "I sense a disturbance...",
+     "zh": "我感觉到一阵异常……",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.76,
+      "y": 0.359,
+      "w": 0.197,
+      "h": 0.124,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 118190,
+     "end_ms": 119590,
+     "audio": "assets/mikey-jj/penguin-adventure/sentences/page-09-sentence-02.mp3",
+     "words": [
+      {
+       "text": "I",
+       "start_ms": 0,
+       "end_ms": 300
+      },
+      {
+       "text": "sense",
+       "start_ms": 300,
+       "end_ms": 640
+      },
+      {
+       "text": "a",
+       "start_ms": 640,
+       "end_ms": 920
+      },
+      {
+       "text": "disturbance.",
+       "start_ms": 920,
+       "end_ms": 1400,
+       "term": "disturbance",
+       "zh": "异常"
+      }
+     ],
+     "glossary": [
+      {
+       "term": "disturbance",
+       "ipa": "dɪˈstɜːbəns",
+       "pos": "N",
+       "zh": "异常"
+      }
+     ]
+    },
+    {
+     "id": "b3-p09-s03",
+     "text_en": "Prepare yourself!",
+     "zh": "准备迎战！",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.76,
+      "y": 0.359,
+      "w": 0.197,
+      "h": 0.124,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 120210,
+     "end_ms": 121070,
+     "audio": "assets/mikey-jj/penguin-adventure/sentences/page-09-sentence-03.mp3",
+     "words": [
+      {
+       "text": "Prepare",
+       "start_ms": 0,
+       "end_ms": 80
+      },
+      {
+       "text": "yourself.",
+       "start_ms": 80,
+       "end_ms": 860
+      }
+     ],
+     "glossary": [
+      {
+       "term": "disturbance",
+       "ipa": "dɪˈstɜːbəns",
+       "pos": "N",
+       "zh": "异常"
+      }
+     ]
+    },
+    {
+     "id": "b3-p09-s04",
+     "text_en": "Laser, you giant lizard!",
+     "zh": "激光，攻击这只巨蜥！",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.633,
+      "y": 0.519,
+      "w": 0.339,
+      "h": 0.151,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 122520,
+     "end_ms": 124500,
+     "audio": "assets/mikey-jj/penguin-adventure/sentences/page-09-sentence-04.mp3",
+     "words": [
+      {
+       "text": "Laser,",
+       "start_ms": 0,
+       "end_ms": 720,
+       "term": "laser",
+       "zh": "激光"
+      },
+      {
+       "text": "you",
+       "start_ms": 940,
+       "end_ms": 1040
+      },
+      {
+       "text": "giant",
+       "start_ms": 1040,
+       "end_ms": 1540
+      },
+      {
+       "text": "lizard.",
+       "start_ms": 1540,
+       "end_ms": 1980,
+       "term": "lizard",
+       "zh": "蜥蜴"
+      }
+     ],
+     "glossary": [
+      {
+       "term": "laser",
+       "ipa": "ˈleɪzə",
+       "pos": "N",
+       "zh": "激光"
+      },
+      {
+       "term": "lizard",
+       "ipa": "ˈlɪzəd",
+       "pos": "N",
+       "zh": "蜥蜴"
+      }
+     ]
+    },
+    {
+     "id": "b3-p09-s05",
+     "text_en": "SAVE ME!!!!",
+     "zh": "救命！！！！",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.834,
+      "y": 0.685,
+      "w": 0.123,
+      "h": 0.099,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 125440,
+     "end_ms": 126240,
+     "audio": "assets/mikey-jj/penguin-adventure/sentences/page-09-sentence-05.mp3",
+     "words": [
+      {
+       "text": "Save",
+       "start_ms": 0,
+       "end_ms": 460
+      },
+      {
+       "text": "me!",
+       "start_ms": 460,
+       "end_ms": 800
+      }
+     ],
+     "glossary": [
+      {
+       "term": "laser",
+       "ipa": "ˈleɪzə",
+       "pos": "N",
+       "zh": "激光"
+      }
+     ]
+    }
+   ],
+   "panel": [
+    0.0,
+    0.499,
+    0.505,
+    1.0
+   ]
+  },
+  {
+   "page_no": 10,
+   "source_page": 10,
+   "image": "assets/mikey-jj/penguin-adventure/pages/p10.webp",
+   "text_en": "Huff... puff... I can't believe... you had a laser gun... Never leave home... without it. We made it to the top! Mission accomplished! The family is together! I love happy endings!",
+   "start_ms": 128260,
+   "end_ms": 145060,
+   "sentences": [
+    {
+     "id": "b3-p10-s01",
+     "text_en": "Huff... puff... I can't believe... you had a laser gun...",
+     "zh": "呼……呼……我真不敢相信……你居然有激光枪……",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.297,
+      "y": 0.118,
+      "w": 0.27,
+      "h": 0.157,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 128260,
+     "end_ms": 133600,
+     "audio": "assets/mikey-jj/penguin-adventure/sentences/page-10-sentence-01.mp3",
+     "words": [
+      {
+       "text": "Huff...",
+       "start_ms": 0,
+       "end_ms": 880
+      },
+      {
+       "text": "puff...",
+       "start_ms": 1720,
+       "end_ms": 1720
+      },
+      {
+       "text": "I",
+       "start_ms": 2400,
+       "end_ms": 2540
+      },
+      {
+       "text": "can't",
+       "start_ms": 2540,
+       "end_ms": 3060
+      },
+      {
+       "text": "believe...",
+       "start_ms": 3060,
+       "end_ms": 3380
+      },
+      {
+       "text": "you",
+       "start_ms": 3380,
+       "end_ms": 4100
+      },
+      {
+       "text": "had",
+       "start_ms": 4100,
+       "end_ms": 4360
+      },
+      {
+       "text": "a",
+       "start_ms": 4360,
+       "end_ms": 4520
+      },
+      {
+       "text": "laser",
+       "start_ms": 4520,
+       "end_ms": 4880,
+       "term": "laser",
+       "zh": "激光"
+      },
+      {
+       "text": "gun...",
+       "start_ms": 4880,
+       "end_ms": 5340
+      }
+     ],
+     "glossary": [
+      {
+       "term": "laser",
+       "ipa": "ˈleɪzə",
+       "pos": "N",
+       "zh": "激光"
+      }
+     ]
+    },
+    {
+     "id": "b3-p10-s02",
+     "text_en": "Never leave home... without it.",
+     "zh": "永远不要离开家……不带上它。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.297,
+      "y": 0.118,
+      "w": 0.27,
+      "h": 0.157,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 134540,
+     "end_ms": 136980,
+     "audio": "assets/mikey-jj/penguin-adventure/sentences/page-10-sentence-02.mp3",
+     "words": [
+      {
+       "text": "Never",
+       "start_ms": 0,
+       "end_ms": 500
+      },
+      {
+       "text": "leave",
+       "start_ms": 500,
+       "end_ms": 800
+      },
+      {
+       "text": "home",
+       "start_ms": 800,
+       "end_ms": 1180
+      },
+      {
+       "text": "without",
+       "start_ms": 1180,
+       "end_ms": 2000
+      },
+      {
+       "text": "it.",
+       "start_ms": 2000,
+       "end_ms": 2440
+      }
+     ],
+     "glossary": [
+      {
+       "term": "top",
+       "ipa": "tɒp",
+       "pos": "N",
+       "zh": "顶端"
+      }
+     ]
+    },
+    {
+     "id": "b3-p10-s03",
+     "text_en": "We made it to the top!",
+     "zh": "我们到达顶峰了！",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.719,
+      "y": 0.087,
+      "w": 0.239,
+      "h": 0.152,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 137400,
+     "end_ms": 138540,
+     "audio": "assets/mikey-jj/penguin-adventure/sentences/page-10-sentence-03.mp3",
+     "words": [
+      {
+       "text": "We",
+       "start_ms": 0,
+       "end_ms": 40
+      },
+      {
+       "text": "made",
+       "start_ms": 40,
+       "end_ms": 260
+      },
+      {
+       "text": "it",
+       "start_ms": 260,
+       "end_ms": 500
+      },
+      {
+       "text": "to",
+       "start_ms": 500,
+       "end_ms": 700
+      },
+      {
+       "text": "the",
+       "start_ms": 700,
+       "end_ms": 840
+      },
+      {
+       "text": "top.",
+       "start_ms": 840,
+       "end_ms": 1140,
+       "term": "top",
+       "zh": "顶端"
+      }
+     ],
+     "glossary": [
+      {
+       "term": "top",
+       "ipa": "tɒp",
+       "pos": "N",
+       "zh": "顶端"
+      }
+     ]
+    },
+    {
+     "id": "b3-p10-s04",
+     "text_en": "Mission accomplished!",
+     "zh": "任务完成！",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.553,
+      "y": 0.522,
+      "w": 0.212,
+      "h": 0.148,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 139320,
+     "end_ms": 140540,
+     "audio": "assets/mikey-jj/penguin-adventure/sentences/page-10-sentence-04.mp3",
+     "words": [
+      {
+       "text": "Mission",
+       "start_ms": 0,
+       "end_ms": 780
+      },
+      {
+       "text": "accomplished.",
+       "start_ms": 780,
+       "end_ms": 1220,
+       "term": "accomplished",
+       "zh": "完成的"
+      }
+     ],
+     "glossary": [
+      {
+       "term": "accomplished",
+       "ipa": "əˈkʌmplɪʃt",
+       "pos": "Adj",
+       "zh": "完成的"
+      }
+     ]
+    },
+    {
+     "id": "b3-p10-s05",
+     "text_en": "The family is together!",
+     "zh": "一家人团聚了！",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.553,
+      "y": 0.522,
+      "w": 0.212,
+      "h": 0.148,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 141480,
+     "end_ms": 142660,
+     "audio": "assets/mikey-jj/penguin-adventure/sentences/page-10-sentence-05.mp3",
+     "words": [
+      {
+       "text": "The",
+       "start_ms": 0,
+       "end_ms": 20
+      },
+      {
+       "text": "family",
+       "start_ms": 20,
+       "end_ms": 400
+      },
+      {
+       "text": "is",
+       "start_ms": 400,
+       "end_ms": 720
+      },
+      {
+       "text": "together.",
+       "start_ms": 720,
+       "end_ms": 1180
+      }
+     ],
+     "glossary": [
+      {
+       "term": "accomplished",
+       "ipa": "əˈkʌmplɪʃt",
+       "pos": "Adj",
+       "zh": "完成的"
+      }
+     ]
+    },
+    {
+     "id": "b3-p10-s06",
+     "text_en": "I love happy endings!",
+     "zh": "我喜欢美好的结局！",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.822,
+      "y": 0.58,
+      "w": 0.135,
+      "h": 0.103,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 143600,
+     "end_ms": 145060,
+     "audio": "assets/mikey-jj/penguin-adventure/sentences/page-10-sentence-06.mp3",
+     "words": [
+      {
+       "text": "I",
+       "start_ms": 0,
+       "end_ms": 260
+      },
+      {
+       "text": "love",
+       "start_ms": 260,
+       "end_ms": 560
+      },
+      {
+       "text": "happy",
+       "start_ms": 560,
+       "end_ms": 960
+      },
+      {
+       "text": "endings.",
+       "start_ms": 960,
+       "end_ms": 1460,
+       "term": "endings",
+       "zh": "结局"
+      }
+     ],
+     "glossary": [
+      {
+       "term": "endings",
+       "ipa": "ˈendɪŋz",
+       "pos": "N",
+       "zh": "结局"
+      }
+     ]
+    }
+   ],
+   "panel": [
+    0.0,
+    0.499,
+    0.505,
+    1.0
+   ]
+  }
+ ],
+ "quiz": [
+  {
+   "id": "mikey-b3-q01",
+   "type": "comprehension",
+   "concept_id": "find-penguin-mother-on-snow-mountain",
+   "source_sentence_ids": [
+    "b3-p01-s06",
+    "b3-p03-s04"
+   ],
+   "q": "Why do Mikey and JJ go to Snow Mountain?",
+   "choices": [
+    "寻找企鹅妈妈",
+    "寻找金苹果",
+    "寻找一艘船",
+    "寻找一所学校"
+   ],
+   "prompt_en": "Why do Mikey and JJ go to Snow Mountain?",
+   "prompt_zh": "Mikey 和 JJ 为什么要去雪山？",
+   "choices_en": [
+    "look for the penguin mother",
+    "look for golden apples",
+    "look for a ship",
+    "look for a school"
+   ],
+   "choices_zh": [
+    "寻找企鹅妈妈",
+    "寻找金苹果",
+    "寻找一艘船",
+    "寻找一所学校"
+   ],
+   "answer": 0
+  },
+  {
+   "id": "mikey-b3-q02",
+   "type": "comprehension",
+   "concept_id": "penguin-prefers-fresh-fish",
+   "source_sentence_ids": [
+    "b3-p02-s04",
+    "b3-p02-s05"
+   ],
+   "q": "What food does the penguin prefer?",
+   "choices": [
+    "胡萝卜",
+    "新鲜的鱼",
+    "南瓜",
+    "面包"
+   ],
+   "prompt_en": "What food does the penguin prefer?",
+   "prompt_zh": "企鹅喜欢什么食物？",
+   "choices_en": [
+    "carrots",
+    "fresh fish",
+    "pumpkin",
+    "bread"
+   ],
+   "choices_zh": [
+    "胡萝卜",
+    "新鲜的鱼",
+    "南瓜",
+    "面包"
+   ],
+   "answer": 1
+  },
+  {
+   "id": "mikey-b3-q03",
+   "type": "comprehension",
+   "concept_id": "cross-gap-with-person-cannon",
+   "source_sentence_ids": [
+    "b3-p04-s02",
+    "b3-p04-s03"
+   ],
+   "q": "How do they cross the broken bridge?",
+   "choices": [
+    "游泳",
+    "搭木桥",
+    "使用人体大炮",
+    "骑马"
+   ],
+   "prompt_en": "How do they cross the broken bridge?",
+   "prompt_zh": "他们如何越过断桥？",
+   "choices_en": [
+    "swim",
+    "build a wooden bridge",
+    "use a human cannon",
+    "ride a horse"
+   ],
+   "choices_zh": [
+    "游泳",
+    "搭木桥",
+    "使用人体大炮",
+    "骑马"
+   ],
+   "answer": 2
+  },
+  {
+   "id": "mikey-b3-fill1",
+   "type": "context-fill",
+   "term": "fireworks",
+   "source_sentence_id": "b3-p03-s08",
+   "source_text_en": "Are we making fireworks?",
+   "q": "Are we making ____?",
+   "prompt_en": "Are we making ____?",
+   "prompt_zh": "我们要做烟花吗？",
+   "choices": [
+    "emergency",
+    "fireworks",
+    "penguin",
+    "animal"
+   ],
+   "choices_zh": [],
+   "answer": 1,
+   "audio": "assets/mikey-jj/penguin-adventure/sentences/page-03-sentence-08.mp3",
+   "explanation": "fireworks = 烟花"
+  },
+  {
+   "id": "mikey-b3-q04",
+   "type": "comprehension",
+   "concept_id": "wake-mikey-with-laser-gun",
+   "source_sentence_ids": [
+    "b3-p10-s01"
+   ],
+   "q": "What does JJ use to wake Mikey?",
+   "choices": [
+    "治疗药水",
+    "激光枪",
+    "钓鱼竿",
+    "烟花"
+   ],
+   "prompt_en": "What does JJ use to wake Mikey?",
+   "prompt_zh": "JJ 用什么叫醒 Mikey？",
+   "choices_en": [
+    "a healing potion",
+    "a laser gun",
+    "a fishing rod",
+    "fireworks"
+   ],
+   "choices_zh": [
+    "治疗药水",
+    "激光枪",
+    "钓鱼竿",
+    "烟花"
+   ],
+   "source_text_en": "Huff... puff... I can't believe... you had a laser gun...",
+   "answer": 1
+  },
+  {
+   "id": "mikey-b3-q05",
+   "type": "comprehension",
+   "concept_id": "penguin-family-reunited",
+   "source_sentence_ids": [
+    "b3-p10-s05"
+   ],
+   "q": "What do they find at the top?",
+   "choices": [
+    "企鹅一家团聚",
+    "一座学校",
+    "一艘船",
+    "一箱金苹果"
+   ],
+   "prompt_en": "What do they find at the top?",
+   "prompt_zh": "他们在山顶发现了什么？",
+   "choices_en": [
+    "the penguin family reunited",
+    "a school",
+    "a ship",
+    "a box of golden apples"
+   ],
+   "choices_zh": [
+    "企鹅一家团聚",
+    "一座学校",
+    "一艘船",
+    "一箱金苹果"
+   ],
+   "source_text_en": "The family is together!",
+   "answer": 0
+  },
+  {
+   "id": "mikey-b3-listen1",
+   "type": "listen-choice",
+   "source_sentence_id": "b3-p04-s03",
+   "source_text_en": "It uses TNT to blast us across the gap!",
+   "q": "🔊 Listen. Which sentence do you hear?",
+   "prompt_en": "🔊 Listen. Which sentence do you hear?",
+   "prompt_zh": "听录音，选出你听到的句子。",
+   "choices": [
+    "Nah, it's just a little sparkle rain!",
+    "She says her mom is on top of... Snow Mountain.",
+    "This is the ONLY way to Snow Mountain!",
+    "It uses TNT to blast us across the gap!"
+   ],
+   "choices_zh": [
+    "不，这只是小小的闪光雨！",
+    "她说她妈妈在……雪山顶上。",
+    "这可是去雪山的唯一道路！",
+    "它用 TNT 把我们轰过缺口！"
+   ],
+   "answer": 3,
+   "audio": "assets/mikey-jj/penguin-adventure/sentences/page-04-sentence-03.mp3",
+   "explanation": "它用 TNT 把我们轰过缺口！"
+  },
+  {
+   "id": "mikey-b3-fill2",
+   "type": "context-fill",
+   "term": "watermelon",
+   "source_sentence_id": "b3-p07-s03",
+   "source_text_en": "But I need a WATERMELON!",
+   "q": "But I need a ____!",
+   "prompt_en": "But I need a ____!",
+   "prompt_zh": "但我需要一个西瓜！",
+   "choices": [
+    "animal",
+    "emergency",
+    "penguin",
+    "watermelon"
+   ],
+   "choices_zh": [],
+   "answer": 3,
+   "audio": "assets/mikey-jj/penguin-adventure/sentences/page-07-sentence-03.mp3",
+   "explanation": "watermelon = 西瓜"
+  },
+  {
+   "id": "mikey-b3-listen2",
+   "type": "listen-choice",
+   "source_sentence_id": "b3-p09-s01",
+   "source_text_en": "JJ... why is the water looking at me?",
+   "q": "🔊 Listen. Which sentence do you hear?",
+   "prompt_en": "🔊 Listen. Which sentence do you hear?",
+   "prompt_zh": "听录音，选出你听到的句子。",
+   "choices": [
+    "This is the ONLY way to Snow Mountain!",
+    "She says her mom is on top of... Snow Mountain.",
+    "JJ... why is the water looking at me?",
+    "Nah, it's just a little sparkle rain!"
+   ],
+   "choices_zh": [
+    "这可是去雪山的唯一道路！",
+    "她说她妈妈在……雪山顶上。",
+    "JJ……水为什么在看着我？",
+    "不，这只是小小的闪光雨！"
+   ],
+   "answer": 2,
+   "audio": "assets/mikey-jj/penguin-adventure/sentences/page-09-sentence-01.mp3",
+   "explanation": "JJ……水为什么在看着我？"
+  }
+ ],
+ "quiz_bg": "assets/mikey-jj/penguin-adventure/quiz-bg.webp"
+}

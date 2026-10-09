@@ -1,0 +1,3535 @@
+{
+ "schema_version": 1,
+ "storybook_id": "mikey-jj_zombie-school-adventure",
+ "series": "mikey-jj",
+ "book": 1,
+ "series_count": 11,
+ "published_count": 2,
+ "layout": "spread_with_right_caption",
+ "title": {
+  "en": "Zombie School Adventure",
+  "zh": "僵尸学校大冒险"
+ },
+ "source_note": "气泡文本经 Windows OCR 转写并与 faster-whisper base.en 词级时间戳交叉核对（VAD 与非 VAD 两次转写，'Look!'、'It's stuck!' 等短句以非 VAD 转写补齐）；所有 start_ms/end_ms 为真实语音词边界；第9页第1句首字为 ASR 识别的僵尸嘶吼前缀。源媒体只读，未裁剪漫画。",
+ "sources": {
+  "pdf": "书籍资料库/Mikey & JJ 英文冒险/PDF/Zombie School Adventure.pdf",
+  "mp3": "书籍资料库/Mikey & JJ 英文冒险/audio/Zombie School Adventure.mp3",
+  "source_video": "书籍资料库/Mikey & JJ 英文冒险/MikeyJJ Audio Books/Zombie School Adventure.mp4",
+  "derived_audio": "prj/data/storybooks-mikey-jj/source-audio/zombie-school-adventure.mp3"
+ },
+ "audio": "assets/mikey-jj/zombie-school-adventure/audio.mp3",
+ "audio_duration_sec": 146.048,
+ "pages": [
+  {
+   "page_no": 1,
+   "source_page": 1,
+   "image": "assets/mikey-jj/zombie-school-adventure/pages/p01.webp",
+   "text_en": "Run, Mikey! We are late for class! The teacher is going to give us detention! Hello? Where is everybody? Maybe it is a holiday, or maybe everyone is hiding for a surprise party!",
+   "start_ms": 690,
+   "end_ms": 15090,
+   "sentences": [
+    {
+     "id": "b1-p01-s01",
+     "text_en": "Run, Mikey!",
+     "zh": "快跑，Mikey！",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.169,
+      "y": 0.147,
+      "w": 0.271,
+      "h": 0.117,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 690,
+     "end_ms": 1790,
+     "audio": "assets/mikey-jj/zombie-school-adventure/sentences/page-01-sentence-01.mp3",
+     "words": [
+      {
+       "text": "Run",
+       "start_ms": 0,
+       "end_ms": 730
+      },
+      {
+       "text": "Mikey",
+       "start_ms": 730,
+       "end_ms": 1100
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b1-p01-s02",
+     "text_en": "We are late for class!",
+     "zh": "我们上课要迟到了！",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.169,
+      "y": 0.147,
+      "w": 0.271,
+      "h": 0.117,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 1990,
+     "end_ms": 3110,
+     "audio": "assets/mikey-jj/zombie-school-adventure/sentences/page-01-sentence-02.mp3",
+     "words": [
+      {
+       "text": "We",
+       "start_ms": 0,
+       "end_ms": 100
+      },
+      {
+       "text": "are",
+       "start_ms": 100,
+       "end_ms": 250
+      },
+      {
+       "text": "late",
+       "start_ms": 250,
+       "end_ms": 480
+      },
+      {
+       "text": "for",
+       "start_ms": 480,
+       "end_ms": 750
+      },
+      {
+       "text": "class",
+       "start_ms": 750,
+       "end_ms": 1120
+      }
+     ],
+     "glossary": [
+      {
+       "term": "late",
+       "ipa": "leɪt",
+       "pos": "Adj",
+       "zh": "迟到的"
+      }
+     ]
+    },
+    {
+     "id": "b1-p01-s03",
+     "text_en": "The teacher is going to give us detention!",
+     "zh": "老师会让我们留堂的！",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.708,
+      "y": 0.209,
+      "w": 0.206,
+      "h": 0.114,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 3830,
+     "end_ms": 6130,
+     "audio": "assets/mikey-jj/zombie-school-adventure/sentences/page-01-sentence-03.mp3",
+     "words": [
+      {
+       "text": "The",
+       "start_ms": 0,
+       "end_ms": 360
+      },
+      {
+       "text": "teacher",
+       "start_ms": 360,
+       "end_ms": 720
+      },
+      {
+       "text": "is",
+       "start_ms": 720,
+       "end_ms": 1030
+      },
+      {
+       "text": "going",
+       "start_ms": 1030,
+       "end_ms": 1310
+      },
+      {
+       "text": "to",
+       "start_ms": 1310,
+       "end_ms": 1480
+      },
+      {
+       "text": "give",
+       "start_ms": 1480,
+       "end_ms": 1690
+      },
+      {
+       "text": "us",
+       "start_ms": 1690,
+       "end_ms": 1880
+      },
+      {
+       "text": "detention",
+       "start_ms": 1880,
+       "end_ms": 2300
+      }
+     ],
+     "glossary": [
+      {
+       "term": "detention",
+       "ipa": "dɪˈtenʃn",
+       "pos": "N",
+       "zh": "留堂；课后留校"
+      }
+     ]
+    },
+    {
+     "id": "b1-p01-s04",
+     "text_en": "Hello?",
+     "zh": "喂？",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.147,
+      "y": 0.58,
+      "w": 0.211,
+      "h": 0.106,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 7210,
+     "end_ms": 7770,
+     "audio": "assets/mikey-jj/zombie-school-adventure/sentences/page-01-sentence-04.mp3",
+     "words": [
+      {
+       "text": "Hello",
+       "start_ms": 0,
+       "end_ms": 560
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b1-p01-s05",
+     "text_en": "Where is everybody?",
+     "zh": "大家都去哪儿了？",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.147,
+      "y": 0.58,
+      "w": 0.211,
+      "h": 0.106,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 8310,
+     "end_ms": 9270,
+     "audio": "assets/mikey-jj/zombie-school-adventure/sentences/page-01-sentence-05.mp3",
+     "words": [
+      {
+       "text": "Where",
+       "start_ms": 0,
+       "end_ms": 350
+      },
+      {
+       "text": "is",
+       "start_ms": 350,
+       "end_ms": 610
+      },
+      {
+       "text": "everybody",
+       "start_ms": 610,
+       "end_ms": 960
+      }
+     ],
+     "glossary": [
+      {
+       "term": "everybody",
+       "ipa": "ˈevribɒdi",
+       "pos": "Pron",
+       "zh": "每个人；大家"
+      }
+     ]
+    },
+    {
+     "id": "b1-p01-s06",
+     "text_en": "Maybe it is a holiday?",
+     "zh": "也许今天是放假？",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.634,
+      "y": 0.578,
+      "w": 0.277,
+      "h": 0.134,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 10070,
+     "end_ms": 11530,
+     "audio": "assets/mikey-jj/zombie-school-adventure/sentences/page-01-sentence-06.mp3",
+     "words": [
+      {
+       "text": "Maybe",
+       "start_ms": 0,
+       "end_ms": 550
+      },
+      {
+       "text": "it",
+       "start_ms": 550,
+       "end_ms": 830
+      },
+      {
+       "text": "is",
+       "start_ms": 830,
+       "end_ms": 1010
+      },
+      {
+       "text": "a",
+       "start_ms": 1010,
+       "end_ms": 1130
+      },
+      {
+       "text": "holiday",
+       "start_ms": 1130,
+       "end_ms": 1460
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b1-p01-s07",
+     "text_en": "Or maybe everyone is hiding for a surprise party?",
+     "zh": "或者大家都躲起来，准备开惊喜派对！",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.634,
+      "y": 0.578,
+      "w": 0.277,
+      "h": 0.134,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 11590,
+     "end_ms": 15090,
+     "audio": "assets/mikey-jj/zombie-school-adventure/sentences/page-01-sentence-07.mp3",
+     "words": [
+      {
+       "text": "Or",
+       "start_ms": 0,
+       "end_ms": 700
+      },
+      {
+       "text": "maybe",
+       "start_ms": 700,
+       "end_ms": 960
+      },
+      {
+       "text": "everyone",
+       "start_ms": 960,
+       "end_ms": 1680
+      },
+      {
+       "text": "is",
+       "start_ms": 1680,
+       "end_ms": 1840
+      },
+      {
+       "text": "hiding",
+       "start_ms": 1840,
+       "end_ms": 2200
+      },
+      {
+       "text": "for",
+       "start_ms": 2200,
+       "end_ms": 2510
+      },
+      {
+       "text": "a",
+       "start_ms": 2510,
+       "end_ms": 2640
+      },
+      {
+       "text": "surprise",
+       "start_ms": 2640,
+       "end_ms": 2920
+      },
+      {
+       "text": "party",
+       "start_ms": 2920,
+       "end_ms": 3500
+      }
+     ],
+     "glossary": [
+      {
+       "term": "surprise",
+       "ipa": "səˈpraɪz",
+       "pos": "N",
+       "zh": "惊喜"
+      }
+     ]
+    }
+   ],
+   "panel": [
+    0.0,
+    0.527,
+    0.541,
+    1.0
+   ]
+  },
+  {
+   "page_no": 2,
+   "source_page": 2,
+   "image": "assets/mikey-jj/zombie-school-adventure/pages/p02.webp",
+   "text_en": "Look outside! Zombies! That is the worst surprise party ever! The school is surrounded! We have to get to the helicopter on the roof! But we are on the first floor! We have to go up!",
+   "start_ms": 17070,
+   "end_ms": 30890,
+   "sentences": [
+    {
+     "id": "b1-p02-s01",
+     "text_en": "Look outside! Zombies!",
+     "zh": "快看窗外——是僵尸！",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.338,
+      "y": 0.128,
+      "w": 0.192,
+      "h": 0.1,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 17070,
+     "end_ms": 19300,
+     "audio": "assets/mikey-jj/zombie-school-adventure/sentences/page-02-sentence-01.mp3",
+     "words": [
+      {
+       "text": "Look",
+       "start_ms": 0,
+       "end_ms": 410
+      },
+      {
+       "text": "outside",
+       "start_ms": 410,
+       "end_ms": 1890
+      },
+      {
+       "text": "Zombies",
+       "start_ms": 1890,
+       "end_ms": 2230
+      }
+     ],
+     "glossary": [
+      {
+       "term": "outside",
+       "ipa": "ˌaʊtˈsaɪd",
+       "pos": "Adv",
+       "zh": "在外面"
+      }
+     ]
+    },
+    {
+     "id": "b1-p02-s02",
+     "text_en": "That is the worst surprise party ever!",
+     "zh": "这是史上最糟糕的惊喜派对了！",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.721,
+      "y": 0.171,
+      "w": 0.247,
+      "h": 0.119,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 19710,
+     "end_ms": 22590,
+     "audio": "assets/mikey-jj/zombie-school-adventure/sentences/page-02-sentence-02.mp3",
+     "words": [
+      {
+       "text": "That",
+       "start_ms": 0,
+       "end_ms": 410
+      },
+      {
+       "text": "is",
+       "start_ms": 410,
+       "end_ms": 670
+      },
+      {
+       "text": "the",
+       "start_ms": 670,
+       "end_ms": 860
+      },
+      {
+       "text": "worst",
+       "start_ms": 860,
+       "end_ms": 1220
+      },
+      {
+       "text": "surprise",
+       "start_ms": 1220,
+       "end_ms": 1590
+      },
+      {
+       "text": "party",
+       "start_ms": 1590,
+       "end_ms": 2400
+      },
+      {
+       "text": "ever",
+       "start_ms": 2400,
+       "end_ms": 2880
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b1-p02-s03",
+     "text_en": "The school is surrounded!",
+     "zh": "学校被包围了！",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.373,
+      "y": 0.563,
+      "w": 0.275,
+      "h": 0.132,
+      "tail": "none",
+      "variant": "narration"
+     },
+     "start_ms": 23310,
+     "end_ms": 24530,
+     "audio": "assets/mikey-jj/zombie-school-adventure/sentences/page-02-sentence-03.mp3",
+     "words": [
+      {
+       "text": "The",
+       "start_ms": 0,
+       "end_ms": 270
+      },
+      {
+       "text": "school",
+       "start_ms": 270,
+       "end_ms": 520
+      },
+      {
+       "text": "is",
+       "start_ms": 520,
+       "end_ms": 780
+      },
+      {
+       "text": "surrounded",
+       "start_ms": 780,
+       "end_ms": 1220
+      }
+     ],
+     "glossary": [
+      {
+       "term": "surrounded",
+       "ipa": "səˈraʊndɪd",
+       "pos": "Adj",
+       "zh": "被包围的"
+      }
+     ]
+    },
+    {
+     "id": "b1-p02-s04",
+     "text_en": "We have to get to the helicopter on the roof!",
+     "zh": "我们得赶到屋顶上的直升机那里！",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.373,
+      "y": 0.563,
+      "w": 0.275,
+      "h": 0.132,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 24970,
+     "end_ms": 26990,
+     "audio": "assets/mikey-jj/zombie-school-adventure/sentences/page-02-sentence-04.mp3",
+     "words": [
+      {
+       "text": "We",
+       "start_ms": 0,
+       "end_ms": 80
+      },
+      {
+       "text": "have",
+       "start_ms": 80,
+       "end_ms": 240
+      },
+      {
+       "text": "to",
+       "start_ms": 240,
+       "end_ms": 390
+      },
+      {
+       "text": "get",
+       "start_ms": 390,
+       "end_ms": 540
+      },
+      {
+       "text": "to",
+       "start_ms": 540,
+       "end_ms": 660
+      },
+      {
+       "text": "the",
+       "start_ms": 660,
+       "end_ms": 760
+      },
+      {
+       "text": "helicopter",
+       "start_ms": 760,
+       "end_ms": 1110
+      },
+      {
+       "text": "on",
+       "start_ms": 1110,
+       "end_ms": 1650
+      },
+      {
+       "text": "the",
+       "start_ms": 1650,
+       "end_ms": 1770
+      },
+      {
+       "text": "roof",
+       "start_ms": 1770,
+       "end_ms": 2020
+      }
+     ],
+     "glossary": [
+      {
+       "term": "helicopter",
+       "ipa": "ˈhelɪkɒptə(r)",
+       "pos": "N",
+       "zh": "直升机"
+      }
+     ]
+    },
+    {
+     "id": "b1-p02-s05",
+     "text_en": "But we are on the first floor!",
+     "zh": "可我们在一楼！",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.699,
+      "y": 0.614,
+      "w": 0.257,
+      "h": 0.109,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 27650,
+     "end_ms": 29390,
+     "audio": "assets/mikey-jj/zombie-school-adventure/sentences/page-02-sentence-05.mp3",
+     "words": [
+      {
+       "text": "But",
+       "start_ms": 0,
+       "end_ms": 270
+      },
+      {
+       "text": "we",
+       "start_ms": 270,
+       "end_ms": 460
+      },
+      {
+       "text": "are",
+       "start_ms": 460,
+       "end_ms": 600
+      },
+      {
+       "text": "on",
+       "start_ms": 600,
+       "end_ms": 790
+      },
+      {
+       "text": "the",
+       "start_ms": 790,
+       "end_ms": 890
+      },
+      {
+       "text": "first",
+       "start_ms": 890,
+       "end_ms": 1220
+      },
+      {
+       "text": "floor",
+       "start_ms": 1220,
+       "end_ms": 1740
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b1-p02-s06",
+     "text_en": "We have to go up!",
+     "zh": "我们得往上走！",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.699,
+      "y": 0.614,
+      "w": 0.257,
+      "h": 0.109,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 29870,
+     "end_ms": 30890,
+     "audio": "assets/mikey-jj/zombie-school-adventure/sentences/page-02-sentence-06.mp3",
+     "words": [
+      {
+       "text": "We",
+       "start_ms": 0,
+       "end_ms": 140
+      },
+      {
+       "text": "have",
+       "start_ms": 140,
+       "end_ms": 340
+      },
+      {
+       "text": "to",
+       "start_ms": 340,
+       "end_ms": 540
+      },
+      {
+       "text": "go",
+       "start_ms": 540,
+       "end_ms": 720
+      },
+      {
+       "text": "up",
+       "start_ms": 720,
+       "end_ms": 1020
+      }
+     ],
+     "glossary": []
+    }
+   ],
+   "panel": [
+    0.0,
+    0.531,
+    0.545,
+    1.0
+   ]
+  },
+  {
+   "page_no": 3,
+   "source_page": 3,
+   "image": "assets/mikey-jj/zombie-school-adventure/pages/p03.webp",
+   "text_en": "Look! Golden apples! These will heal us if we get bitten! Grab them! I will use this frying pan as a weapon! No snacks for you, zombie! Nice swing, JJ!",
+   "start_ms": 32680,
+   "end_ms": 45560,
+   "sentences": [
+    {
+     "id": "b1-p03-s01",
+     "text_en": "Look!",
+     "zh": "看！",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.367,
+      "y": 0.114,
+      "w": 0.248,
+      "h": 0.124,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 32680,
+     "end_ms": 33280,
+     "audio": "assets/mikey-jj/zombie-school-adventure/sentences/page-03-sentence-01.mp3",
+     "words": [
+      {
+       "text": "Look",
+       "start_ms": 0,
+       "end_ms": 600
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b1-p03-s02",
+     "text_en": "Golden apples!",
+     "zh": "金苹果！",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.367,
+      "y": 0.114,
+      "w": 0.248,
+      "h": 0.124,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 33600,
+     "end_ms": 34360,
+     "audio": "assets/mikey-jj/zombie-school-adventure/sentences/page-03-sentence-02.mp3",
+     "words": [
+      {
+       "text": "Golden",
+       "start_ms": 380,
+       "end_ms": 760
+      }
+     ],
+     "glossary": [
+      {
+       "term": "golden",
+       "ipa": "ˈɡəʊldən",
+       "pos": "Adj",
+       "zh": "金色的"
+      }
+     ]
+    },
+    {
+     "id": "b1-p03-s03",
+     "text_en": "These will heal us if we get bitten!",
+     "zh": "如果我们被咬了，这些能治好我们。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.367,
+      "y": 0.114,
+      "w": 0.248,
+      "h": 0.124,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 35200,
+     "end_ms": 37240,
+     "audio": "assets/mikey-jj/zombie-school-adventure/sentences/page-03-sentence-03.mp3",
+     "words": [
+      {
+       "text": "These",
+       "start_ms": 0,
+       "end_ms": 240
+      },
+      {
+       "text": "will",
+       "start_ms": 240,
+       "end_ms": 540
+      },
+      {
+       "text": "heal",
+       "start_ms": 540,
+       "end_ms": 860
+      },
+      {
+       "text": "us",
+       "start_ms": 860,
+       "end_ms": 1180
+      },
+      {
+       "text": "if",
+       "start_ms": 1180,
+       "end_ms": 1360
+      },
+      {
+       "text": "we",
+       "start_ms": 1360,
+       "end_ms": 1540
+      },
+      {
+       "text": "get",
+       "start_ms": 1540,
+       "end_ms": 1780
+      },
+      {
+       "text": "bitten",
+       "start_ms": 1780,
+       "end_ms": 2040
+      }
+     ],
+     "glossary": [
+      {
+       "term": "heal",
+       "ipa": "hiːl",
+       "pos": "V",
+       "zh": "治愈"
+      },
+      {
+       "term": "bitten",
+       "ipa": "ˈbɪtn",
+       "pos": "V",
+       "zh": "被咬（bite 的过去分词）"
+      }
+     ]
+    },
+    {
+     "id": "b1-p03-s04",
+     "text_en": "Grab them!",
+     "zh": "快拿上它们！",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.718,
+      "y": 0.119,
+      "w": 0.213,
+      "h": 0.122,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 38180,
+     "end_ms": 38860,
+     "audio": "assets/mikey-jj/zombie-school-adventure/sentences/page-03-sentence-04.mp3",
+     "words": [
+      {
+       "text": "Grab",
+       "start_ms": 0,
+       "end_ms": 380
+      },
+      {
+       "text": "them",
+       "start_ms": 380,
+       "end_ms": 680
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b1-p03-s05",
+     "text_en": "I will use this frying pan as a weapon!",
+     "zh": "我要用这个平底锅当武器！",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.718,
+      "y": 0.119,
+      "w": 0.213,
+      "h": 0.122,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 39180,
+     "end_ms": 41300,
+     "audio": "assets/mikey-jj/zombie-school-adventure/sentences/page-03-sentence-05.mp3",
+     "words": [
+      {
+       "text": "I",
+       "start_ms": 0,
+       "end_ms": 140
+      },
+      {
+       "text": "will",
+       "start_ms": 140,
+       "end_ms": 280
+      },
+      {
+       "text": "use",
+       "start_ms": 280,
+       "end_ms": 480
+      },
+      {
+       "text": "this",
+       "start_ms": 480,
+       "end_ms": 720
+      },
+      {
+       "text": "frying",
+       "start_ms": 720,
+       "end_ms": 1040
+      },
+      {
+       "text": "pan",
+       "start_ms": 1040,
+       "end_ms": 1420
+      },
+      {
+       "text": "as",
+       "start_ms": 1420,
+       "end_ms": 1660
+      },
+      {
+       "text": "a",
+       "start_ms": 1660,
+       "end_ms": 1780
+      },
+      {
+       "text": "weapon",
+       "start_ms": 1780,
+       "end_ms": 2120
+      }
+     ],
+     "glossary": [
+      {
+       "term": "weapon",
+       "ipa": "ˈwepən",
+       "pos": "N",
+       "zh": "武器"
+      }
+     ]
+    },
+    {
+     "id": "b1-p03-s06",
+     "text_en": "No snacks for you, zombie!",
+     "zh": "零食没你的份，僵尸！",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.589,
+      "y": 0.578,
+      "w": 0.203,
+      "h": 0.1,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 41820,
+     "end_ms": 43660,
+     "audio": "assets/mikey-jj/zombie-school-adventure/sentences/page-03-sentence-06.mp3",
+     "words": [
+      {
+       "text": "No",
+       "start_ms": 0,
+       "end_ms": 540
+      },
+      {
+       "text": "snacks",
+       "start_ms": 540,
+       "end_ms": 760
+      },
+      {
+       "text": "for",
+       "start_ms": 760,
+       "end_ms": 1240
+      },
+      {
+       "text": "you",
+       "start_ms": 1240,
+       "end_ms": 1620
+      },
+      {
+       "text": "zombie",
+       "start_ms": 1620,
+       "end_ms": 1840
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b1-p03-s07",
+     "text_en": "Nice swing, JJ!",
+     "zh": "挥得漂亮，JJ！",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.806,
+      "y": 0.612,
+      "w": 0.161,
+      "h": 0.091,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 44280,
+     "end_ms": 45560,
+     "audio": "assets/mikey-jj/zombie-school-adventure/sentences/page-03-sentence-07.mp3",
+     "words": [
+      {
+       "text": "Nice",
+       "start_ms": 0,
+       "end_ms": 500
+      },
+      {
+       "text": "swing",
+       "start_ms": 500,
+       "end_ms": 1160
+      },
+      {
+       "text": "JJ",
+       "start_ms": 1160,
+       "end_ms": 1280
+      }
+     ],
+     "glossary": []
+    }
+   ],
+   "panel": [
+    0.0,
+    0.527,
+    0.541,
+    1.0
+   ]
+  },
+  {
+   "page_no": 4,
+   "source_page": 4,
+   "image": "assets/mikey-jj/zombie-school-adventure/pages/p04.webp",
+   "text_en": "We need something to clear the path! Look! The science teacher left some TNT and splash potions! I will take the TNT. Boom, boom is my specialty! I will take the healing potions! Did you know healing magic hurts zombies?",
+   "start_ms": 47490,
+   "end_ms": 64540,
+   "sentences": [
+    {
+     "id": "b1-p04-s01",
+     "text_en": "We need something to clear the path!",
+     "zh": "我们需要东西来清出一条路。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.208,
+      "y": 0.136,
+      "w": 0.224,
+      "h": 0.1,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 47490,
+     "end_ms": 49710,
+     "audio": "assets/mikey-jj/zombie-school-adventure/sentences/page-04-sentence-01.mp3",
+     "words": [
+      {
+       "text": "We",
+       "start_ms": 0,
+       "end_ms": 600
+      },
+      {
+       "text": "need",
+       "start_ms": 600,
+       "end_ms": 790
+      },
+      {
+       "text": "something",
+       "start_ms": 790,
+       "end_ms": 1160
+      },
+      {
+       "text": "to",
+       "start_ms": 1160,
+       "end_ms": 1430
+      },
+      {
+       "text": "clear",
+       "start_ms": 1430,
+       "end_ms": 1690
+      },
+      {
+       "text": "the",
+       "start_ms": 1690,
+       "end_ms": 1900
+      },
+      {
+       "text": "path",
+       "start_ms": 1900,
+       "end_ms": 2220
+      }
+     ],
+     "glossary": [
+      {
+       "term": "path",
+       "ipa": "pɑːθ",
+       "pos": "N",
+       "zh": "小路；路线"
+      }
+     ]
+    },
+    {
+     "id": "b1-p04-s02",
+     "text_en": "Look!",
+     "zh": "看！",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.616,
+      "y": 0.129,
+      "w": 0.232,
+      "h": 0.128,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 50330,
+     "end_ms": 50770,
+     "audio": "assets/mikey-jj/zombie-school-adventure/sentences/page-04-sentence-02.mp3",
+     "words": [
+      {
+       "text": "Look",
+       "start_ms": 0,
+       "end_ms": 440
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b1-p04-s03",
+     "text_en": "The science teacher left some TNT and splash potions!",
+     "zh": "科学老师留下了一些 TNT 和喷溅药水！",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.616,
+      "y": 0.129,
+      "w": 0.232,
+      "h": 0.128,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 51250,
+     "end_ms": 54410,
+     "audio": "assets/mikey-jj/zombie-school-adventure/sentences/page-04-sentence-03.mp3",
+     "words": [
+      {
+       "text": "The",
+       "start_ms": 0,
+       "end_ms": 40
+      },
+      {
+       "text": "science",
+       "start_ms": 40,
+       "end_ms": 290
+      },
+      {
+       "text": "teacher",
+       "start_ms": 290,
+       "end_ms": 780
+      },
+      {
+       "text": "left",
+       "start_ms": 780,
+       "end_ms": 1180
+      },
+      {
+       "text": "some",
+       "start_ms": 1180,
+       "end_ms": 1640
+      },
+      {
+       "text": "TNT",
+       "start_ms": 1640,
+       "end_ms": 1820
+      },
+      {
+       "text": "and",
+       "start_ms": 1820,
+       "end_ms": 2400
+      },
+      {
+       "text": "splash",
+       "start_ms": 2400,
+       "end_ms": 2700
+      },
+      {
+       "text": "potions",
+       "start_ms": 2700,
+       "end_ms": 3160
+      }
+     ],
+     "glossary": [
+      {
+       "term": "potion",
+       "ipa": "ˈpəʊʃn",
+       "pos": "N",
+       "zh": "药水"
+      }
+     ]
+    },
+    {
+     "id": "b1-p04-s04",
+     "text_en": "I will take the TNT!",
+     "zh": "我要拿 TNT！",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.071,
+      "y": 0.56,
+      "w": 0.394,
+      "h": 0.122,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 55640,
+     "end_ms": 56740,
+     "audio": "assets/mikey-jj/zombie-school-adventure/sentences/page-04-sentence-04.mp3",
+     "words": [
+      {
+       "text": "I",
+       "start_ms": 20,
+       "end_ms": 240
+      },
+      {
+       "text": "will",
+       "start_ms": 240,
+       "end_ms": 440
+      },
+      {
+       "text": "take",
+       "start_ms": 440,
+       "end_ms": 680
+      },
+      {
+       "text": "the",
+       "start_ms": 680,
+       "end_ms": 880
+      },
+      {
+       "text": "TNT",
+       "start_ms": 880,
+       "end_ms": 1100
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b1-p04-s05",
+     "text_en": "Boom, boom is my specialty!",
+     "zh": "砰砰，这是我的拿手好戏！",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.071,
+      "y": 0.56,
+      "w": 0.394,
+      "h": 0.122,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 57740,
+     "end_ms": 58980,
+     "audio": "assets/mikey-jj/zombie-school-adventure/sentences/page-04-sentence-05.mp3",
+     "words": [
+      {
+       "text": "Boom",
+       "start_ms": 0,
+       "end_ms": 20
+      },
+      {
+       "text": "boom",
+       "start_ms": 20,
+       "end_ms": 280
+      },
+      {
+       "text": "is",
+       "start_ms": 280,
+       "end_ms": 520
+      },
+      {
+       "text": "my",
+       "start_ms": 520,
+       "end_ms": 700
+      },
+      {
+       "text": "specialty",
+       "start_ms": 700,
+       "end_ms": 1240
+      }
+     ],
+     "glossary": [
+      {
+       "term": "specialty",
+       "ipa": "ˈspeʃəlti",
+       "pos": "N",
+       "zh": "专长；拿手好戏"
+      }
+     ]
+    },
+    {
+     "id": "b1-p04-s06",
+     "text_en": "I will take the healing potions!",
+     "zh": "我要拿治疗药水！",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.589,
+      "y": 0.56,
+      "w": 0.372,
+      "h": 0.123,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 59660,
+     "end_ms": 61460,
+     "audio": "assets/mikey-jj/zombie-school-adventure/sentences/page-04-sentence-06.mp3",
+     "words": [
+      {
+       "text": "I",
+       "start_ms": 0,
+       "end_ms": 560
+      },
+      {
+       "text": "will",
+       "start_ms": 560,
+       "end_ms": 720
+      },
+      {
+       "text": "take",
+       "start_ms": 720,
+       "end_ms": 940
+      },
+      {
+       "text": "the",
+       "start_ms": 940,
+       "end_ms": 1140
+      },
+      {
+       "text": "healing",
+       "start_ms": 1140,
+       "end_ms": 1440
+      },
+      {
+       "text": "potions",
+       "start_ms": 1440,
+       "end_ms": 1800
+      }
+     ],
+     "glossary": [
+      {
+       "term": "potion",
+       "ipa": "ˈpəʊʃn",
+       "pos": "N",
+       "zh": "药水"
+      }
+     ]
+    },
+    {
+     "id": "b1-p04-s07",
+     "text_en": "Did you know healing magic hurts zombies?",
+     "zh": "你知道吗，治疗魔法会伤害僵尸哦！",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.589,
+      "y": 0.56,
+      "w": 0.372,
+      "h": 0.123,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 61460,
+     "end_ms": 64540,
+     "audio": "assets/mikey-jj/zombie-school-adventure/sentences/page-04-sentence-07.mp3",
+     "words": [
+      {
+       "text": "Did",
+       "start_ms": 740,
+       "end_ms": 860
+      },
+      {
+       "text": "you",
+       "start_ms": 860,
+       "end_ms": 1000
+      },
+      {
+       "text": "know",
+       "start_ms": 1000,
+       "end_ms": 1220
+      },
+      {
+       "text": "healing",
+       "start_ms": 1220,
+       "end_ms": 1600
+      },
+      {
+       "text": "magic",
+       "start_ms": 1600,
+       "end_ms": 2220
+      },
+      {
+       "text": "hurts",
+       "start_ms": 2220,
+       "end_ms": 2600
+      },
+      {
+       "text": "zombies",
+       "start_ms": 2600,
+       "end_ms": 3080
+      }
+     ],
+     "glossary": [
+      {
+       "term": "magic",
+       "ipa": "ˈmædʒɪk",
+       "pos": "N",
+       "zh": "魔法"
+      }
+     ]
+    }
+   ],
+   "panel": [
+    0.0,
+    0.526,
+    0.54,
+    1.0
+   ]
+  },
+  {
+   "page_no": 5,
+   "source_page": 5,
+   "image": "assets/mikey-jj/zombie-school-adventure/pages/p05.webp",
+   "text_en": "Three doors. Only one leads to the stairs. The others are traps! Eenie, meenie, miney... I choose the middle door! Mistake! It's a spider closet! Close it, Mikey!",
+   "start_ms": 66540,
+   "end_ms": 80500,
+   "sentences": [
+    {
+     "id": "b1-p05-s01",
+     "text_en": "Three doors.",
+     "zh": "三扇门。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.277,
+      "y": 0.107,
+      "w": 0.256,
+      "h": 0.134,
+      "tail": "none",
+      "variant": "narration"
+     },
+     "start_ms": 66540,
+     "end_ms": 67380,
+     "audio": "assets/mikey-jj/zombie-school-adventure/sentences/page-05-sentence-01.mp3",
+     "words": [
+      {
+       "text": "Three",
+       "start_ms": 0,
+       "end_ms": 540
+      },
+      {
+       "text": "doors",
+       "start_ms": 540,
+       "end_ms": 840
+      }
+     ],
+     "glossary": [
+      {
+       "term": "door",
+       "ipa": "dɔː(r)",
+       "pos": "N",
+       "zh": "门"
+      }
+     ]
+    },
+    {
+     "id": "b1-p05-s02",
+     "text_en": "Only one leads to the stairs.",
+     "zh": "只有一扇通向楼梯。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.277,
+      "y": 0.107,
+      "w": 0.256,
+      "h": 0.134,
+      "tail": "none",
+      "variant": "narration"
+     },
+     "start_ms": 68100,
+     "end_ms": 69680,
+     "audio": "assets/mikey-jj/zombie-school-adventure/sentences/page-05-sentence-02.mp3",
+     "words": [
+      {
+       "text": "Only",
+       "start_ms": 0,
+       "end_ms": 260
+      },
+      {
+       "text": "one",
+       "start_ms": 260,
+       "end_ms": 560
+      },
+      {
+       "text": "leads",
+       "start_ms": 560,
+       "end_ms": 880
+      },
+      {
+       "text": "to",
+       "start_ms": 880,
+       "end_ms": 1160
+      },
+      {
+       "text": "the",
+       "start_ms": 1160,
+       "end_ms": 1260
+      },
+      {
+       "text": "stairs",
+       "start_ms": 1260,
+       "end_ms": 1580
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b1-p05-s03",
+     "text_en": "The others are traps!",
+     "zh": "其他的都是陷阱！",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.277,
+      "y": 0.107,
+      "w": 0.256,
+      "h": 0.134,
+      "tail": "none",
+      "variant": "narration"
+     },
+     "start_ms": 70300,
+     "end_ms": 71360,
+     "audio": "assets/mikey-jj/zombie-school-adventure/sentences/page-05-sentence-03.mp3",
+     "words": [
+      {
+       "text": "The",
+       "start_ms": 0,
+       "end_ms": 100
+      },
+      {
+       "text": "others",
+       "start_ms": 100,
+       "end_ms": 400
+      },
+      {
+       "text": "are",
+       "start_ms": 400,
+       "end_ms": 640
+      },
+      {
+       "text": "traps",
+       "start_ms": 640,
+       "end_ms": 1060
+      }
+     ],
+     "glossary": [
+      {
+       "term": "trap",
+       "ipa": "træp",
+       "pos": "N",
+       "zh": "陷阱"
+      }
+     ]
+    },
+    {
+     "id": "b1-p05-s04",
+     "text_en": "Eenie, meenie, miney...",
+     "zh": "点点点……",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.57,
+      "y": 0.137,
+      "w": 0.23,
+      "h": 0.115,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 72080,
+     "end_ms": 73560,
+     "audio": "assets/mikey-jj/zombie-school-adventure/sentences/page-05-sentence-04.mp3",
+     "words": [
+      {
+       "text": "Eenie",
+       "start_ms": 0,
+       "end_ms": 680
+      },
+      {
+       "text": "meenie",
+       "start_ms": 680,
+       "end_ms": 1140
+      },
+      {
+       "text": "miney",
+       "start_ms": 1140,
+       "end_ms": 1480
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b1-p05-s05",
+     "text_en": "I choose the middle door!",
+     "zh": "我选中间那扇门！",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.57,
+      "y": 0.137,
+      "w": 0.23,
+      "h": 0.115,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 73860,
+     "end_ms": 75220,
+     "audio": "assets/mikey-jj/zombie-school-adventure/sentences/page-05-sentence-05.mp3",
+     "words": [
+      {
+       "text": "I",
+       "start_ms": 0,
+       "end_ms": 140
+      },
+      {
+       "text": "choose",
+       "start_ms": 140,
+       "end_ms": 440
+      },
+      {
+       "text": "the",
+       "start_ms": 440,
+       "end_ms": 720
+      },
+      {
+       "text": "middle",
+       "start_ms": 720,
+       "end_ms": 940
+      },
+      {
+       "text": "door",
+       "start_ms": 940,
+       "end_ms": 1360
+      }
+     ],
+     "glossary": [
+      {
+       "term": "door",
+       "ipa": "dɔː(r)",
+       "pos": "N",
+       "zh": "门"
+      },
+      {
+       "term": "middle",
+       "ipa": "ˈmɪdl",
+       "pos": "Adj",
+       "zh": "中间的"
+      }
+     ]
+    },
+    {
+     "id": "b1-p05-s06",
+     "text_en": "Mistake!",
+     "zh": "糟了！",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.052,
+      "y": 0.581,
+      "w": 0.209,
+      "h": 0.109,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 76360,
+     "end_ms": 76960,
+     "audio": "assets/mikey-jj/zombie-school-adventure/sentences/page-05-sentence-06.mp3",
+     "words": [
+      {
+       "text": "Mistake",
+       "start_ms": 0,
+       "end_ms": 600
+      }
+     ],
+     "glossary": [
+      {
+       "term": "mistake",
+       "ipa": "mɪˈsteɪk",
+       "pos": "N",
+       "zh": "错误"
+      }
+     ]
+    },
+    {
+     "id": "b1-p05-s07",
+     "text_en": "It's a spider closet!",
+     "zh": "这是个蜘蛛储物间！",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.052,
+      "y": 0.581,
+      "w": 0.209,
+      "h": 0.109,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 77300,
+     "end_ms": 78400,
+     "audio": "assets/mikey-jj/zombie-school-adventure/sentences/page-05-sentence-07.mp3",
+     "words": [
+      {
+       "text": "It's",
+       "start_ms": 0,
+       "end_ms": 140
+      },
+      {
+       "text": "a",
+       "start_ms": 140,
+       "end_ms": 220
+      },
+      {
+       "text": "spider",
+       "start_ms": 220,
+       "end_ms": 620
+      },
+      {
+       "text": "closet",
+       "start_ms": 620,
+       "end_ms": 1100
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b1-p05-s08",
+     "text_en": "Close it, Mikey!",
+     "zh": "快关上它，Mikey！",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.802,
+      "y": 0.584,
+      "w": 0.141,
+      "h": 0.105,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 79120,
+     "end_ms": 80500,
+     "audio": "assets/mikey-jj/zombie-school-adventure/sentences/page-05-sentence-08.mp3",
+     "words": [
+      {
+       "text": "Close",
+       "start_ms": 0,
+       "end_ms": 520
+      },
+      {
+       "text": "it",
+       "start_ms": 520,
+       "end_ms": 900
+      },
+      {
+       "text": "Mikey",
+       "start_ms": 900,
+       "end_ms": 1380
+      }
+     ],
+     "glossary": []
+    }
+   ],
+   "panel": [
+    0.0,
+    0.527,
+    0.541,
+    1.0
+   ]
+  },
+  {
+   "page_no": 6,
+   "source_page": 6,
+   "image": "assets/mikey-jj/zombie-school-adventure/pages/p06.webp",
+   "text_en": "That was close! Look at the floor, Mikey! Footprints lead to the left door! That must be the way to the roof! It's the stairs! We are almost there! Goodbye, spiders!",
+   "start_ms": 82140,
+   "end_ms": 95080,
+   "sentences": [
+    {
+     "id": "b1-p06-s01",
+     "text_en": "That was close!",
+     "zh": "真是太惊险了！",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.136,
+      "y": 0.107,
+      "w": 0.275,
+      "h": 0.131,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 82140,
+     "end_ms": 83080,
+     "audio": "assets/mikey-jj/zombie-school-adventure/sentences/page-06-sentence-01.mp3",
+     "words": [
+      {
+       "text": "That",
+       "start_ms": 0,
+       "end_ms": 500
+      },
+      {
+       "text": "was",
+       "start_ms": 500,
+       "end_ms": 700
+      },
+      {
+       "text": "close",
+       "start_ms": 700,
+       "end_ms": 940
+      }
+     ],
+     "glossary": [
+      {
+       "term": "close",
+       "ipa": "kləʊs",
+       "pos": "Adj",
+       "zh": "惊险的；近的"
+      }
+     ]
+    },
+    {
+     "id": "b1-p06-s02",
+     "text_en": "Look at the floor, Mikey!",
+     "zh": "看地板，Mikey！",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.136,
+      "y": 0.107,
+      "w": 0.275,
+      "h": 0.131,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 83920,
+     "end_ms": 85120,
+     "audio": "assets/mikey-jj/zombie-school-adventure/sentences/page-06-sentence-02.mp3",
+     "words": [
+      {
+       "text": "Look",
+       "start_ms": 0,
+       "end_ms": 140
+      },
+      {
+       "text": "the",
+       "start_ms": 140,
+       "end_ms": 240
+      },
+      {
+       "text": "floor",
+       "start_ms": 240,
+       "end_ms": 760
+      },
+      {
+       "text": "Mikey",
+       "start_ms": 760,
+       "end_ms": 1200
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b1-p06-s03",
+     "text_en": "Footprints lead to the left door!",
+     "zh": "脚印通向左边那扇门！",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.136,
+      "y": 0.107,
+      "w": 0.275,
+      "h": 0.131,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 85380,
+     "end_ms": 87300,
+     "audio": "assets/mikey-jj/zombie-school-adventure/sentences/page-06-sentence-03.mp3",
+     "words": [
+      {
+       "text": "Footprints",
+       "start_ms": 0,
+       "end_ms": 380
+      },
+      {
+       "text": "lead",
+       "start_ms": 380,
+       "end_ms": 740
+      },
+      {
+       "text": "to",
+       "start_ms": 740,
+       "end_ms": 980
+      },
+      {
+       "text": "the",
+       "start_ms": 980,
+       "end_ms": 1100
+      },
+      {
+       "text": "left",
+       "start_ms": 1100,
+       "end_ms": 1360
+      },
+      {
+       "text": "door",
+       "start_ms": 1360,
+       "end_ms": 1920
+      }
+     ],
+     "glossary": [
+      {
+       "term": "footprint",
+       "ipa": "ˈfʊtprɪnt",
+       "pos": "N",
+       "zh": "脚印"
+      }
+     ]
+    },
+    {
+     "id": "b1-p06-s04",
+     "text_en": "That must be the way to the roof!",
+     "zh": "那一定就是通往屋顶的路！",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.724,
+      "y": 0.209,
+      "w": 0.191,
+      "h": 0.115,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 87980,
+     "end_ms": 89840,
+     "audio": "assets/mikey-jj/zombie-school-adventure/sentences/page-06-sentence-04.mp3",
+     "words": [
+      {
+       "text": "That",
+       "start_ms": 0,
+       "end_ms": 380
+      },
+      {
+       "text": "must",
+       "start_ms": 380,
+       "end_ms": 600
+      },
+      {
+       "text": "be",
+       "start_ms": 600,
+       "end_ms": 840
+      },
+      {
+       "text": "the",
+       "start_ms": 840,
+       "end_ms": 1000
+      },
+      {
+       "text": "way",
+       "start_ms": 1000,
+       "end_ms": 1180
+      },
+      {
+       "text": "to",
+       "start_ms": 1180,
+       "end_ms": 1440
+      },
+      {
+       "text": "the",
+       "start_ms": 1440,
+       "end_ms": 1560
+      },
+      {
+       "text": "roof",
+       "start_ms": 1560,
+       "end_ms": 1860
+      }
+     ],
+     "glossary": [
+      {
+       "term": "roof",
+       "ipa": "ruːf",
+       "pos": "N",
+       "zh": "屋顶"
+      }
+     ]
+    },
+    {
+     "id": "b1-p06-s05",
+     "text_en": "It's the stairs!",
+     "zh": "是楼梯！",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.141,
+      "y": 0.572,
+      "w": 0.208,
+      "h": 0.116,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 90810,
+     "end_ms": 91780,
+     "audio": "assets/mikey-jj/zombie-school-adventure/sentences/page-06-sentence-05.mp3",
+     "words": [
+      {
+       "text": "It's",
+       "start_ms": 0,
+       "end_ms": 350
+      },
+      {
+       "text": "the",
+       "start_ms": 350,
+       "end_ms": 490
+      },
+      {
+       "text": "stairs",
+       "start_ms": 490,
+       "end_ms": 970
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b1-p06-s06",
+     "text_en": "We are almost there!",
+     "zh": "我们快到了！",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.141,
+      "y": 0.572,
+      "w": 0.208,
+      "h": 0.116,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 92300,
+     "end_ms": 93520,
+     "audio": "assets/mikey-jj/zombie-school-adventure/sentences/page-06-sentence-06.mp3",
+     "words": [
+      {
+       "text": "We",
+       "start_ms": 0,
+       "end_ms": 100
+      },
+      {
+       "text": "are",
+       "start_ms": 100,
+       "end_ms": 240
+      },
+      {
+       "text": "almost",
+       "start_ms": 240,
+       "end_ms": 700
+      },
+      {
+       "text": "there",
+       "start_ms": 700,
+       "end_ms": 1220
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b1-p06-s07",
+     "text_en": "Goodbye, spiders!",
+     "zh": "再见啦，蜘蛛们！",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.377,
+      "y": 0.648,
+      "w": 0.143,
+      "h": 0.09,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 94120,
+     "end_ms": 95080,
+     "audio": "assets/mikey-jj/zombie-school-adventure/sentences/page-06-sentence-07.mp3",
+     "words": [
+      {
+       "text": "Goodbye",
+       "start_ms": 0,
+       "end_ms": 780
+      },
+      {
+       "text": "spiders",
+       "start_ms": 780,
+       "end_ms": 960
+      }
+     ],
+     "glossary": [
+      {
+       "term": "spider",
+       "ipa": "ˈspaɪdə(r)",
+       "pos": "N",
+       "zh": "蜘蛛"
+      }
+     ]
+    }
+   ],
+   "panel": [
+    0.0,
+    0.527,
+    0.541,
+    1.0
+   ]
+  },
+  {
+   "page_no": 7,
+   "source_page": 7,
+   "image": "assets/mikey-jj/zombie-school-adventure/pages/p07.webp",
+   "text_en": "The floor is gone! We have to parkour across! But I have a heavy shell! Turtle power! Jump, Mikey! I got you!",
+   "start_ms": 97270,
+   "end_ms": 108450,
+   "sentences": [
+    {
+     "id": "b1-p07-s01",
+     "text_en": "The floor is gone!",
+     "zh": "地板不见了！",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.113,
+      "y": 0.097,
+      "w": 0.232,
+      "h": 0.114,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 97270,
+     "end_ms": 98790,
+     "audio": "assets/mikey-jj/zombie-school-adventure/sentences/page-07-sentence-01.mp3",
+     "words": [
+      {
+       "text": "The",
+       "start_ms": 0,
+       "end_ms": 340
+      },
+      {
+       "text": "floor",
+       "start_ms": 340,
+       "end_ms": 750
+      },
+      {
+       "text": "is",
+       "start_ms": 750,
+       "end_ms": 1150
+      },
+      {
+       "text": "gone",
+       "start_ms": 1150,
+       "end_ms": 1520
+      }
+     ],
+     "glossary": [
+      {
+       "term": "floor",
+       "ipa": "flɔː(r)",
+       "pos": "N",
+       "zh": "楼层；地板"
+      }
+     ]
+    },
+    {
+     "id": "b1-p07-s02",
+     "text_en": "We have to parkour across!",
+     "zh": "我们得跑酷跳过去！",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.113,
+      "y": 0.097,
+      "w": 0.232,
+      "h": 0.114,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 99290,
+     "end_ms": 101050,
+     "audio": "assets/mikey-jj/zombie-school-adventure/sentences/page-07-sentence-02.mp3",
+     "words": [
+      {
+       "text": "We",
+       "start_ms": 0,
+       "end_ms": 160
+      },
+      {
+       "text": "have",
+       "start_ms": 160,
+       "end_ms": 340
+      },
+      {
+       "text": "to",
+       "start_ms": 340,
+       "end_ms": 520
+      },
+      {
+       "text": "parkour",
+       "start_ms": 520,
+       "end_ms": 1240
+      },
+      {
+       "text": "across",
+       "start_ms": 1240,
+       "end_ms": 1760
+      }
+     ],
+     "glossary": [
+      {
+       "term": "parkour",
+       "ipa": "pɑːˈkʊə(r)",
+       "pos": "N",
+       "zh": "跑酷"
+      }
+     ]
+    },
+    {
+     "id": "b1-p07-s03",
+     "text_en": "But I have a heavy shell!",
+     "zh": "但我有一个沉重的壳！",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.665,
+      "y": 0.106,
+      "w": 0.174,
+      "h": 0.1,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 101850,
+     "end_ms": 103410,
+     "audio": "assets/mikey-jj/zombie-school-adventure/sentences/page-07-sentence-03.mp3",
+     "words": [
+      {
+       "text": "But",
+       "start_ms": 0,
+       "end_ms": 340
+      },
+      {
+       "text": "I",
+       "start_ms": 340,
+       "end_ms": 510
+      },
+      {
+       "text": "have",
+       "start_ms": 510,
+       "end_ms": 720
+      },
+      {
+       "text": "a",
+       "start_ms": 720,
+       "end_ms": 850
+      },
+      {
+       "text": "heavy",
+       "start_ms": 850,
+       "end_ms": 1170
+      },
+      {
+       "text": "shell",
+       "start_ms": 1170,
+       "end_ms": 1560
+      }
+     ],
+     "glossary": [
+      {
+       "term": "heavy",
+       "ipa": "ˈhevi",
+       "pos": "Adj",
+       "zh": "沉重的"
+      }
+     ]
+    },
+    {
+     "id": "b1-p07-s04",
+     "text_en": "Turtle power!",
+     "zh": "乌龟力量！",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.079,
+      "y": 0.567,
+      "w": 0.287,
+      "h": 0.127,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 104550,
+     "end_ms": 105690,
+     "audio": "assets/mikey-jj/zombie-school-adventure/sentences/page-07-sentence-04.mp3",
+     "words": [
+      {
+       "text": "Turtle",
+       "start_ms": 0,
+       "end_ms": 690
+      },
+      {
+       "text": "power",
+       "start_ms": 690,
+       "end_ms": 1140
+      }
+     ],
+     "glossary": [
+      {
+       "term": "turtle",
+       "ipa": "ˈtɜːtl",
+       "pos": "N",
+       "zh": "乌龟"
+      }
+     ]
+    },
+    {
+     "id": "b1-p07-s05",
+     "text_en": "Jump, Mikey!",
+     "zh": "跳，Mikey！",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.767,
+      "y": 0.565,
+      "w": 0.182,
+      "h": 0.091,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 106490,
+     "end_ms": 107530,
+     "audio": "assets/mikey-jj/zombie-school-adventure/sentences/page-07-sentence-05.mp3",
+     "words": [
+      {
+       "text": "Jump",
+       "start_ms": 0,
+       "end_ms": 650
+      },
+      {
+       "text": "Mikey",
+       "start_ms": 650,
+       "end_ms": 1040
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b1-p07-s06",
+     "text_en": "I got you!",
+     "zh": "我接住你了！",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.767,
+      "y": 0.565,
+      "w": 0.182,
+      "h": 0.091,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 107770,
+     "end_ms": 108450,
+     "audio": "assets/mikey-jj/zombie-school-adventure/sentences/page-07-sentence-06.mp3",
+     "words": [
+      {
+       "text": "I",
+       "start_ms": 0,
+       "end_ms": 130
+      },
+      {
+       "text": "got",
+       "start_ms": 130,
+       "end_ms": 370
+      },
+      {
+       "text": "you",
+       "start_ms": 370,
+       "end_ms": 680
+      }
+     ],
+     "glossary": []
+    }
+   ],
+   "panel": [
+    0.0,
+    0.527,
+    0.541,
+    1.0
+   ]
+  },
+  {
+   "page_no": 8,
+   "source_page": 8,
+   "image": "assets/mikey-jj/zombie-school-adventure/pages/p08.webp",
+   "text_en": "It's stuck! We can't break it! Stand back! It is science time! Good job, Mikey! To the roof!",
+   "start_ms": 110180,
+   "end_ms": 119380,
+   "sentences": [
+    {
+     "id": "b1-p08-s01",
+     "text_en": "It's stuck!",
+     "zh": "卡住了！",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.076,
+      "y": 0.083,
+      "w": 0.191,
+      "h": 0.114,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 110180,
+     "end_ms": 111280,
+     "audio": "assets/mikey-jj/zombie-school-adventure/sentences/page-08-sentence-01.mp3",
+     "words": [
+      {
+       "text": "It's",
+       "start_ms": 80,
+       "end_ms": 720
+      },
+      {
+       "text": "stuck",
+       "start_ms": 720,
+       "end_ms": 1100
+      }
+     ],
+     "glossary": [
+      {
+       "term": "stuck",
+       "ipa": "stʌk",
+       "pos": "Adj",
+       "zh": "卡住的"
+      }
+     ]
+    },
+    {
+     "id": "b1-p08-s02",
+     "text_en": "We can't break it!",
+     "zh": "我们打不开它！",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.076,
+      "y": 0.083,
+      "w": 0.191,
+      "h": 0.114,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 111280,
+     "end_ms": 112860,
+     "audio": "assets/mikey-jj/zombie-school-adventure/sentences/page-08-sentence-02.mp3",
+     "words": [
+      {
+       "text": "We",
+       "start_ms": 100,
+       "end_ms": 160
+      },
+      {
+       "text": "can't",
+       "start_ms": 160,
+       "end_ms": 1080
+      },
+      {
+       "text": "break",
+       "start_ms": 1080,
+       "end_ms": 1300
+      },
+      {
+       "text": "it",
+       "start_ms": 1300,
+       "end_ms": 1580
+      }
+     ],
+     "glossary": [
+      {
+       "term": "break",
+       "ipa": "breɪk",
+       "pos": "V",
+       "zh": "打破；弄坏"
+      }
+     ]
+    },
+    {
+     "id": "b1-p08-s03",
+     "text_en": "Stand back!",
+     "zh": "往后退！",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.737,
+      "y": 0.088,
+      "w": 0.206,
+      "h": 0.115,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 112860,
+     "end_ms": 114320,
+     "audio": "assets/mikey-jj/zombie-school-adventure/sentences/page-08-sentence-03.mp3",
+     "words": [
+      {
+       "text": "Stand",
+       "start_ms": 400,
+       "end_ms": 840
+      },
+      {
+       "text": "back",
+       "start_ms": 840,
+       "end_ms": 1460
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b1-p08-s04",
+     "text_en": "It is science time!",
+     "zh": "科学时间到！",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.737,
+      "y": 0.088,
+      "w": 0.206,
+      "h": 0.115,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 114320,
+     "end_ms": 115940,
+     "audio": "assets/mikey-jj/zombie-school-adventure/sentences/page-08-sentence-04.mp3",
+     "words": [
+      {
+       "text": "It",
+       "start_ms": 320,
+       "end_ms": 420
+      },
+      {
+       "text": "is",
+       "start_ms": 420,
+       "end_ms": 540
+      },
+      {
+       "text": "science",
+       "start_ms": 540,
+       "end_ms": 860
+      },
+      {
+       "text": "time",
+       "start_ms": 860,
+       "end_ms": 1620
+      }
+     ],
+     "glossary": [
+      {
+       "term": "science",
+       "ipa": "ˈsaɪəns",
+       "pos": "N",
+       "zh": "科学"
+      }
+     ]
+    },
+    {
+     "id": "b1-p08-s05",
+     "text_en": "Good job, Mikey!",
+     "zh": "干得好，Mikey！",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.135,
+      "y": 0.658,
+      "w": 0.207,
+      "h": 0.117,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 117000,
+     "end_ms": 118560,
+     "audio": "assets/mikey-jj/zombie-school-adventure/sentences/page-08-sentence-05.mp3",
+     "words": [
+      {
+       "text": "Good",
+       "start_ms": 0,
+       "end_ms": 620
+      },
+      {
+       "text": "job",
+       "start_ms": 620,
+       "end_ms": 960
+      },
+      {
+       "text": "Mikey",
+       "start_ms": 960,
+       "end_ms": 1560
+      }
+     ],
+     "glossary": [
+      {
+       "term": "job",
+       "ipa": "dʒɒb",
+       "pos": "N",
+       "zh": "工作；任务"
+      }
+     ]
+    },
+    {
+     "id": "b1-p08-s06",
+     "text_en": "To the roof!",
+     "zh": "去屋顶！",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.135,
+      "y": 0.658,
+      "w": 0.207,
+      "h": 0.117,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 118720,
+     "end_ms": 119380,
+     "audio": "assets/mikey-jj/zombie-school-adventure/sentences/page-08-sentence-06.mp3",
+     "words": [
+      {
+       "text": "To",
+       "start_ms": 0,
+       "end_ms": 240
+      },
+      {
+       "text": "the",
+       "start_ms": 240,
+       "end_ms": 360
+      },
+      {
+       "text": "roof",
+       "start_ms": 360,
+       "end_ms": 660
+      }
+     ],
+     "glossary": []
+    }
+   ],
+   "panel": [
+    0.0,
+    0.527,
+    0.541,
+    1.0
+   ]
+  },
+  {
+   "page_no": 9,
+   "source_page": 9,
+   "image": "assets/mikey-jj/zombie-school-adventure/pages/p09.webp",
+   "text_en": "No running in the halls! He has the keys! We have to fight him! Eat healthy, Principal!",
+   "start_ms": 123220,
+   "end_ms": 130460,
+   "sentences": [
+    {
+     "id": "b1-p09-s01",
+     "text_en": "No running in the halls!",
+     "zh": "走廊里不许跑！",
+     "speaker": {
+      "id": "system",
+      "label": "角色"
+     },
+     "bubble": {
+      "x": 0.574,
+      "y": 0.072,
+      "w": 0.414,
+      "h": 0.116,
+      "tail": "none",
+      "variant": "narration"
+     },
+     "start_ms": 123220,
+     "end_ms": 125000,
+     "audio": "assets/mikey-jj/zombie-school-adventure/sentences/page-09-sentence-01.mp3",
+     "words": [
+      {
+       "text": "No",
+       "start_ms": 260,
+       "end_ms": 720
+      },
+      {
+       "text": "running",
+       "start_ms": 720,
+       "end_ms": 1120
+      },
+      {
+       "text": "in",
+       "start_ms": 1120,
+       "end_ms": 1340
+      },
+      {
+       "text": "the",
+       "start_ms": 1340,
+       "end_ms": 1480
+      },
+      {
+       "text": "halls",
+       "start_ms": 1480,
+       "end_ms": 1780
+      }
+     ],
+     "glossary": [
+      {
+       "term": "hall",
+       "ipa": "hɔːl",
+       "pos": "N",
+       "zh": "走廊；大厅"
+      }
+     ]
+    },
+    {
+     "id": "b1-p09-s02",
+     "text_en": "He has the keys!",
+     "zh": "钥匙在他手里！",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.733,
+      "y": 0.238,
+      "w": 0.23,
+      "h": 0.124,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 125660,
+     "end_ms": 127100,
+     "audio": "assets/mikey-jj/zombie-school-adventure/sentences/page-09-sentence-02.mp3",
+     "words": [
+      {
+       "text": "He",
+       "start_ms": 0,
+       "end_ms": 640
+      },
+      {
+       "text": "has",
+       "start_ms": 640,
+       "end_ms": 940
+      },
+      {
+       "text": "the",
+       "start_ms": 940,
+       "end_ms": 1180
+      },
+      {
+       "text": "keys",
+       "start_ms": 1180,
+       "end_ms": 1440
+      }
+     ],
+     "glossary": [
+      {
+       "term": "key",
+       "ipa": "kiː",
+       "pos": "N",
+       "zh": "钥匙"
+      }
+     ]
+    },
+    {
+     "id": "b1-p09-s03",
+     "text_en": "We have to fight him!",
+     "zh": "我们得和他打一架！",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.733,
+      "y": 0.238,
+      "w": 0.23,
+      "h": 0.124,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 127800,
+     "end_ms": 128880,
+     "audio": "assets/mikey-jj/zombie-school-adventure/sentences/page-09-sentence-03.mp3",
+     "words": [
+      {
+       "text": "We",
+       "start_ms": 0,
+       "end_ms": 40
+      },
+      {
+       "text": "have",
+       "start_ms": 40,
+       "end_ms": 260
+      },
+      {
+       "text": "to",
+       "start_ms": 260,
+       "end_ms": 440
+      },
+      {
+       "text": "fight",
+       "start_ms": 440,
+       "end_ms": 720
+      },
+      {
+       "text": "him",
+       "start_ms": 720,
+       "end_ms": 1080
+      }
+     ],
+     "glossary": [
+      {
+       "term": "fight",
+       "ipa": "faɪt",
+       "pos": "V",
+       "zh": "打斗；战斗"
+      }
+     ]
+    },
+    {
+     "id": "b1-p09-s04",
+     "text_en": "Eat healthy, Principal!",
+     "zh": "吃点健康的吧，校长！",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.166,
+      "y": 0.585,
+      "w": 0.229,
+      "h": 0.106,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 129640,
+     "end_ms": 130460,
+     "audio": "assets/mikey-jj/zombie-school-adventure/sentences/page-09-sentence-04.mp3",
+     "words": [
+      {
+       "text": "Eat",
+       "start_ms": 0,
+       "end_ms": 20
+      },
+      {
+       "text": "healthy",
+       "start_ms": 20,
+       "end_ms": 820
+      }
+     ],
+     "glossary": [
+      {
+       "term": "principal",
+       "ipa": "ˈprɪnsəpl",
+       "pos": "N",
+       "zh": "校长"
+      }
+     ]
+    }
+   ],
+   "panel": [
+    0.0,
+    0.529,
+    0.543,
+    1.0
+   ]
+  },
+  {
+   "page_no": 10,
+   "source_page": 10,
+   "image": "assets/mikey-jj/zombie-school-adventure/pages/p10.webp",
+   "text_en": "I got the keys! Start the engine! Goodbye, school! Does this mean no homework? Yes, Mikey. No homework!",
+   "start_ms": 133110,
+   "end_ms": 143810,
+   "sentences": [
+    {
+     "id": "b1-p10-s01",
+     "text_en": "I got the keys!",
+     "zh": "我拿到钥匙了！",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.079,
+      "y": 0.157,
+      "w": 0.248,
+      "h": 0.101,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 133110,
+     "end_ms": 134270,
+     "audio": "assets/mikey-jj/zombie-school-adventure/sentences/page-10-sentence-01.mp3",
+     "words": [
+      {
+       "text": "I",
+       "start_ms": 0,
+       "end_ms": 430
+      },
+      {
+       "text": "got",
+       "start_ms": 430,
+       "end_ms": 620
+      },
+      {
+       "text": "the",
+       "start_ms": 620,
+       "end_ms": 860
+      },
+      {
+       "text": "keys",
+       "start_ms": 860,
+       "end_ms": 1160
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b1-p10-s02",
+     "text_en": "Start the engine!",
+     "zh": "发动引擎！",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.079,
+      "y": 0.157,
+      "w": 0.248,
+      "h": 0.101,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 135070,
+     "end_ms": 135750,
+     "audio": "assets/mikey-jj/zombie-school-adventure/sentences/page-10-sentence-02.mp3",
+     "words": [
+      {
+       "text": "Start",
+       "start_ms": 0,
+       "end_ms": 50
+      },
+      {
+       "text": "the",
+       "start_ms": 50,
+       "end_ms": 370
+      },
+      {
+       "text": "engine",
+       "start_ms": 370,
+       "end_ms": 680
+      }
+     ],
+     "glossary": [
+      {
+       "term": "engine",
+       "ipa": "ˈendʒɪn",
+       "pos": "N",
+       "zh": "引擎；发动机"
+      }
+     ]
+    },
+    {
+     "id": "b1-p10-s03",
+     "text_en": "Goodbye, school!",
+     "zh": "再见，学校！",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.356,
+      "y": 0.524,
+      "w": 0.183,
+      "h": 0.069,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 136900,
+     "end_ms": 138160,
+     "audio": "assets/mikey-jj/zombie-school-adventure/sentences/page-10-sentence-03.mp3",
+     "words": [
+      {
+       "text": "Goodbye",
+       "start_ms": 0,
+       "end_ms": 800
+      },
+      {
+       "text": "school",
+       "start_ms": 800,
+       "end_ms": 1260
+      }
+     ],
+     "glossary": [
+      {
+       "term": "school",
+       "ipa": "skuːl",
+       "pos": "N",
+       "zh": "学校"
+      }
+     ]
+    },
+    {
+     "id": "b1-p10-s04",
+     "text_en": "Does this mean no homework?",
+     "zh": "这是不是意味着……没有家庭作业？",
+     "speaker": {
+      "id": "mikey",
+      "label": "MIKEY"
+     },
+     "bubble": {
+      "x": 0.321,
+      "y": 0.608,
+      "w": 0.24,
+      "h": 0.097,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 138780,
+     "end_ms": 140680,
+     "audio": "assets/mikey-jj/zombie-school-adventure/sentences/page-10-sentence-04.mp3",
+     "words": [
+      {
+       "text": "Does",
+       "start_ms": 0,
+       "end_ms": 500
+      },
+      {
+       "text": "this",
+       "start_ms": 500,
+       "end_ms": 700
+      },
+      {
+       "text": "mean",
+       "start_ms": 700,
+       "end_ms": 980
+      },
+      {
+       "text": "no",
+       "start_ms": 980,
+       "end_ms": 1500
+      },
+      {
+       "text": "homework",
+       "start_ms": 1500,
+       "end_ms": 1900
+      }
+     ],
+     "glossary": [
+      {
+       "term": "homework",
+       "ipa": "ˈhəʊmwɜːk",
+       "pos": "N",
+       "zh": "家庭作业"
+      }
+     ]
+    },
+    {
+     "id": "b1-p10-s05",
+     "text_en": "Yes, Mikey.",
+     "zh": "是的，Mikey。",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.69,
+      "y": 0.639,
+      "w": 0.203,
+      "h": 0.103,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 141810,
+     "end_ms": 142990,
+     "audio": "assets/mikey-jj/zombie-school-adventure/sentences/page-10-sentence-05.mp3",
+     "words": [
+      {
+       "text": "Yes",
+       "start_ms": 0,
+       "end_ms": 750
+      },
+      {
+       "text": "Mikey",
+       "start_ms": 750,
+       "end_ms": 1180
+      }
+     ],
+     "glossary": []
+    },
+    {
+     "id": "b1-p10-s06",
+     "text_en": "No homework!",
+     "zh": "没有家庭作业！",
+     "speaker": {
+      "id": "jj",
+      "label": "JJ"
+     },
+     "bubble": {
+      "x": 0.69,
+      "y": 0.639,
+      "w": 0.203,
+      "h": 0.103,
+      "tail": "bottom",
+      "variant": "dialogue"
+     },
+     "start_ms": 143280,
+     "end_ms": 143810,
+     "audio": "assets/mikey-jj/zombie-school-adventure/sentences/page-10-sentence-06.mp3",
+     "words": [
+      {
+       "text": "No",
+       "start_ms": 10,
+       "end_ms": 100
+      },
+      {
+       "text": "homework",
+       "start_ms": 100,
+       "end_ms": 530
+      }
+     ],
+     "glossary": [
+      {
+       "term": "homework",
+       "ipa": "ˈhəʊmwɜːk",
+       "pos": "N",
+       "zh": "家庭作业"
+      }
+     ]
+    }
+   ],
+   "panel": [
+    0.0,
+    0.493,
+    0.507,
+    1.0
+   ]
+  }
+ ],
+ "quiz": [
+  {
+   "id": "mikey-b1-q01",
+   "type": "meaning-choice",
+   "term": "detention",
+   "source_sentence_id": "b1-p01-s03",
+   "q": "What does “detention” mean?",
+   "choices": [
+    "课后留校",
+    "放学回家",
+    "学校假期",
+    "体育比赛"
+   ],
+   "prompt_en": "What does \"detention\" mean in this sentence?",
+   "prompt_zh": "在这句话中，\"detention\" 是什么意思？",
+   "choices_en": [
+    "stay after school",
+    "go home after school",
+    "school holiday",
+    "sports game"
+   ],
+   "choices_zh": [
+    "课后留校",
+    "放学回家",
+    "学校假期",
+    "体育比赛"
+   ],
+   "source_text_en": "The teacher is going to give us detention!",
+   "answer": 0
+  },
+  {
+   "id": "mikey-b1-q02",
+   "type": "comprehension",
+   "concept_id": "escape-by-rooftop-helicopter",
+   "source_sentence_ids": [
+    "b1-p02-s04"
+   ],
+   "q": "Where do Mikey and JJ need to go to escape the zombies?",
+   "choices": [
+    "操场上的滑梯",
+    "一楼教室",
+    "屋顶的直升机",
+    "学校食堂"
+   ],
+   "prompt_en": "Where do Mikey and JJ need to go to escape the zombies?",
+   "prompt_zh": "Mikey 和 JJ 需要去哪里躲避僵尸？",
+   "choices_en": [
+    "playground slide",
+    "classroom on the first floor",
+    "helicopter on the roof",
+    "school cafeteria"
+   ],
+   "choices_zh": [
+    "操场上的滑梯",
+    "一楼教室",
+    "屋顶的直升机",
+    "学校食堂"
+   ],
+   "source_text_en": "We have to get to the helicopter on the roof!",
+   "answer": 2
+  },
+  {
+   "id": "mikey-b1-q03",
+   "type": "comprehension",
+   "concept_id": "science-teacher-left-tnt-and-potions",
+   "source_sentence_ids": [
+    "b1-p04-s03"
+   ],
+   "q": "What did the science teacher leave on the desk?",
+   "choices": [
+    "金苹果和蜘蛛",
+    "书本和铅笔",
+    "TNT 和喷溅药水",
+    "钥匙和地图"
+   ],
+   "prompt_en": "What did the science teacher leave on the desk?",
+   "prompt_zh": "科学老师把什么留在桌上？",
+   "choices_en": [
+    "golden apples and spiders",
+    "books and pencils",
+    "TNT and splash potions",
+    "keys and a map"
+   ],
+   "choices_zh": [
+    "金苹果和蜘蛛",
+    "书本和铅笔",
+    "TNT 和喷溅药水",
+    "钥匙和地图"
+   ],
+   "source_text_en": "The science teacher left some TNT and splash potions!",
+   "answer": 2
+  },
+  {
+   "id": "mikey-b1-fill1",
+   "type": "context-fill",
+   "term": "late",
+   "source_sentence_id": "b1-p01-s02",
+   "source_text_en": "We are late for class!",
+   "q": "We are ____ for class!",
+   "prompt_en": "We are ____ for class!",
+   "prompt_zh": "我们上课要迟到了！",
+   "choices": [
+    "outside",
+    "everybody",
+    "surprise",
+    "late"
+   ],
+   "choices_zh": [],
+   "answer": 3,
+   "audio": "assets/mikey-jj/zombie-school-adventure/sentences/page-01-sentence-02.mp3",
+   "explanation": "late = 迟到的"
+  },
+  {
+   "id": "mikey-b1-q04",
+   "type": "comprehension",
+   "concept_id": "footprints-lead-to-left-door",
+   "source_sentence_ids": [
+    "b1-p06-s03"
+   ],
+   "q": "Which door do the footprints lead to?",
+   "choices": [
+    "中间的门",
+    "左边的门",
+    "右边的门",
+    "后门"
+   ],
+   "prompt_en": "Which door do the footprints lead to?",
+   "prompt_zh": "脚印通向哪扇门？",
+   "choices_en": [
+    "middle door",
+    "left door",
+    "right door",
+    "back door"
+   ],
+   "choices_zh": [
+    "中间的门",
+    "左边的门",
+    "右边的门",
+    "后门"
+   ],
+   "source_text_en": "Footprints lead to the left door!",
+   "answer": 1
+  },
+  {
+   "id": "mikey-b1-q05",
+   "type": "comprehension",
+   "concept_id": "healing-magic-hurts-zombies",
+   "source_sentence_ids": [
+    "b1-p04-s07"
+   ],
+   "q": "What does healing magic do to zombies?",
+   "choices": [
+    "让僵尸变大",
+    "治愈人类",
+    "伤害僵尸",
+    "吓跑蜘蛛"
+   ],
+   "prompt_en": "What does healing magic do to zombies?",
+   "prompt_zh": "治疗魔法对僵尸有什么作用？",
+   "choices_en": [
+    "make the zombies bigger",
+    "heal humans",
+    "hurt zombies",
+    "scare away the spider"
+   ],
+   "choices_zh": [
+    "让僵尸变大",
+    "治愈人类",
+    "伤害僵尸",
+    "吓跑蜘蛛"
+   ],
+   "source_text_en": "Did you know healing magic hurts zombies?",
+   "answer": 2
+  },
+  {
+   "id": "mikey-b1-listen1",
+   "type": "listen-choice",
+   "source_sentence_id": "b1-p02-s04",
+   "source_text_en": "We have to get to the helicopter on the roof!",
+   "q": "🔊 Listen. Which sentence do you hear?",
+   "prompt_en": "🔊 Listen. Which sentence do you hear?",
+   "prompt_zh": "听录音，选出你听到的句子。",
+   "choices": [
+    "Or maybe everyone is hiding for a surprise party?",
+    "We have to get to the helicopter on the roof!",
+    "That is the worst surprise party ever!",
+    "But we are on the first floor!"
+   ],
+   "choices_zh": [
+    "或者大家都躲起来，准备开惊喜派对！",
+    "我们得赶到屋顶上的直升机那里！",
+    "这是史上最糟糕的惊喜派对了！",
+    "可我们在一楼！"
+   ],
+   "answer": 1,
+   "audio": "assets/mikey-jj/zombie-school-adventure/sentences/page-02-sentence-04.mp3",
+   "explanation": "我们得赶到屋顶上的直升机那里！"
+  },
+  {
+   "id": "mikey-b1-fill2",
+   "type": "context-fill",
+   "term": "potion",
+   "source_sentence_id": "b1-p04-s06",
+   "source_text_en": "I will take the healing potions!",
+   "q": "I will take the healing ____!",
+   "prompt_en": "I will take the healing ____!",
+   "prompt_zh": "我要拿治疗药水！",
+   "choices": [
+    "everybody",
+    "potion",
+    "surprise",
+    "outside"
+   ],
+   "choices_zh": [],
+   "answer": 1,
+   "audio": "assets/mikey-jj/zombie-school-adventure/sentences/page-04-sentence-06.mp3",
+   "explanation": "potion = 药水"
+  },
+  {
+   "id": "mikey-b1-listen2",
+   "type": "listen-choice",
+   "source_sentence_id": "b1-p04-s03",
+   "source_text_en": "The science teacher left some TNT and splash potions!",
+   "q": "🔊 Listen. Which sentence do you hear?",
+   "prompt_en": "🔊 Listen. Which sentence do you hear?",
+   "prompt_zh": "听录音，选出你听到的句子。",
+   "choices": [
+    "The science teacher left some TNT and splash potions!",
+    "Or maybe everyone is hiding for a surprise party?",
+    "That is the worst surprise party ever!",
+    "But we are on the first floor!"
+   ],
+   "choices_zh": [
+    "科学老师留下了一些 TNT 和喷溅药水！",
+    "或者大家都躲起来，准备开惊喜派对！",
+    "这是史上最糟糕的惊喜派对了！",
+    "可我们在一楼！"
+   ],
+   "answer": 0,
+   "audio": "assets/mikey-jj/zombie-school-adventure/sentences/page-04-sentence-03.mp3",
+   "explanation": "科学老师留下了一些 TNT 和喷溅药水！"
+  }
+ ],
+ "quiz_bg": "assets/mikey-jj/zombie-school-adventure/quiz-bg.webp"
+}

@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "world_id": "journey_to_the_west",
+  "title": { "en": "Journey to the West", "zh": "西游记" },
+  "language": "en",
+  "subtitle_language": "zh",
+  "tone": "神话、明快、冒险（明清白话小说气质）",
+  "rules": "仅出现明代以前的器物与概念；不得出现现代词汇与现代科技",
+  "art_style_anchor": "flat vector storybook illustration, warm ink-wash palette, Ming-dynasty Chinese legend style, soft gradients, clean shapes, no text in image",
+  "attributes": [
+    { "id": "courage", "name_en": "Courage", "name_zh": "胆识" },
+    { "id": "watchfulness", "name_en": "Watchfulness", "name_zh": "观察" },
+    { "id": "social", "name_en": "Social", "name_zh": "交际" }
+  ],
+  "tts": {
+    "provider": "browser",
+    "lang": "en-US",
+    "rate": 0.95
+  },
+  "speakers": {
+    "narrator": { "name_en": "Narrator", "name_zh": "旁白", "color": "#8a7f70", "show_portrait": false },
+    "elder_monkey": { "name_en": "Old Monkey", "name_zh": "老猴", "color": "#b07a3c", "show_portrait": true, "character_ref": "elder_monkey" },
+    "you": { "name_en": "You (Stone Monkey)", "name_zh": "你（石猴）", "color": "#c9a227", "show_portrait": true, "character_ref": "stone_monkey" },
+    "system": { "name_en": "", "name_zh": "", "color": "#777777", "show_portrait": false }
+  }
+}

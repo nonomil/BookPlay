@@ -1,0 +1,1690 @@
+{
+  "schema_version": 1,
+  "episode": 100,
+  "title": {
+    "en": "A Terrible Robbery",
+    "zh": "西游记 第100集"
+  },
+  "sources": [
+    {
+      "kind": "courseware_main_pptx",
+      "file": "G:\\Game\\BookPlay书戏\\data\\西游记课件\\3.3西游记  Journey to the West PPT课件\\100_Journey to the West 100_A Terrible Robbery.pptx",
+      "sha256": "61f105a23720d8d8ec89c069428c01c665b31f66a56fcf0a4ff01bc5f0a7bd9f",
+      "pages": 20
+    },
+    {
+      "kind": "official_quiz_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+      "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929",
+      "pages": 131
+    },
+    {
+      "kind": "intensive_reader_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\02-西游记精读版台词本\\1、带标注版PDF 108集\\100 可怕的强盗事件 上.pdf",
+      "sha256": "35c0aff04e24b5eef441a5b987dfc8fe8364a45ea6925afe59c5743e61c8aab8",
+      "pages": 5
+    },
+    {
+      "kind": "intensive_reader_pdf",
+      "file": "G:\\Game\\BookPlay书戏\\data\\02-西游记精读版台词本\\1、带标注版PDF 108集\\100 可怕的强盗事件 下.pdf",
+      "sha256": "f72301d78548939f3f28d43ae610abafbb45c646882b124793474794c9e69345",
+      "pages": 3
+    },
+    {
+      "kind": "courseware_screenshots_pptx",
+      "file": "G:\\Game\\BookPlay书戏\\data\\西游记课件\\西游记-外教课动画截图\\Journey to the West 100  A Terrible Robbery_28503542.pptx",
+      "sha256": "675c011a9aaf0037bc25c788291714983e5cef4da1f164320dc51f465a93731f",
+      "pages": 51
+    }
+  ],
+  "cards": [
+    {
+      "card_id": "ep100-official-quiz-001",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 1,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "which is not true?",
+        "zh": "哪一项是不正确的？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "the judge scared the robbers away.",
+            "zh": "法官把抢劫犯吓跑了。"
+          },
+          {
+            "id": "b",
+            "en": "the robbers killed squire kou.",
+            "zh": "强盗杀了考爵士。"
+          },
+          {
+            "id": "c",
+            "en": "lady kou blamed the travelers.",
+            "zh": "寇夫人责怪了旅行者。"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n024",
+            "quote": "\"Robbers broke into our house last night,\" said Lady Kou breathlessly."
+          },
+          {
+            "node_id": "n025",
+            "quote": "\"They stole many valuable items and two of our horses. Squire Kou tried to stop them, but the robbers . . . They . . . killed my husband!\""
+          },
+          {
+            "node_id": "n032",
+            "quote": "Lady Kou gritted her teeth."
+          },
+          {
+            "node_id": "n033",
+            "quote": "\"The Tang Monk and his companions!\""
+          },
+          {
+            "node_id": "n069",
+            "quote": "The monkey grew large, and fire burned in his eyes."
+          },
+          {
+            "node_id": "n070",
+            "quote": "\"Get out of here!\" he thundered."
+          },
+          {
+            "node_id": "n072",
+            "quote": "The robbers screamed and ran away."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 120,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep100-official-quiz-002",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 2,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "how long did the travelers stay at squire kou's house?",
+        "zh": "旅行者们在寇先生家住了多久？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "over a month",
+            "zh": "一个多月"
+          },
+          {
+            "id": "b",
+            "en": "over a year",
+            "zh": "一年多"
+          },
+          {
+            "id": "c",
+            "en": "under a week",
+            "zh": "不到一周"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n001",
+            "quote": "For over a month, the travelers stayed at Squire Kou's house."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 120,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep100-official-quiz-003",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 3,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "what did lady kou do in the morning?",
+        "zh": "寇女士早上做了什么？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "she ran to the courthouse.",
+            "zh": "她跑到了法院。"
+          },
+          {
+            "id": "b",
+            "en": "she looked for the travelers.",
+            "zh": "她在寻找旅行者。"
+          },
+          {
+            "id": "c",
+            "en": "she caught the robbers.",
+            "zh": "她抓住了抢劫犯。"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n019",
+            "quote": "The next morning Lady Kou ran into the town's courthouse."
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 120,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep100-official-quiz-004",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 4,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "who did the robbers' items belong to?",
+        "zh": "抢劫犯的物品属于谁？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "squire kou",
+            "zh": "库爵士"
+          },
+          {
+            "id": "b",
+            "en": "the tang monk",
+            "zh": "唐僧"
+          },
+          {
+            "id": "c",
+            "en": "wukong",
+            "zh": "悟空"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n025",
+            "quote": "\"They stole many valuable items and two of our horses. Squire Kou tried to stop them, but the robbers . . . They . . . killed my husband!\""
+          },
+          {
+            "node_id": "n064",
+            "quote": "\"These items belong to Squire Kou! So do the horses!\""
+          },
+          {
+            "node_id": "n066",
+            "quote": "\"Squire Kou is a good man. We must return his belongings.\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 120,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep100-official-quiz-005",
+      "type": "sentence_choice",
+      "stage": "episode_complete",
+      "order": 5,
+      "difficulty": 2,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "story_comprehension"
+      ],
+      "prompt": {
+        "en": "who did the soldiers arrest?",
+        "zh": "士兵们逮捕了谁？"
+      },
+      "payload": {
+        "choices": [
+          {
+            "id": "a",
+            "en": "the travelers",
+            "zh": "旅客"
+          },
+          {
+            "id": "b",
+            "en": "the robbers",
+            "zh": "抢劫犯"
+          },
+          {
+            "id": "c",
+            "en": "lady kou",
+            "zh": "寇夫人"
+          }
+        ],
+        "answer": "a",
+        "answer_evidence": [
+          {
+            "node_id": "n034",
+            "quote": "The judge turned to a soldier."
+          },
+          {
+            "node_id": "n035",
+            "quote": "\"Gather some soldiers and arrest the Tang Monk and his companions!\""
+          },
+          {
+            "node_id": "n074",
+            "quote": "Soon they saw a group of soldiers on horseback."
+          },
+          {
+            "node_id": "n077",
+            "quote": "One of the soldiers pointed a sword at the travelers."
+          },
+          {
+            "node_id": "n078",
+            "quote": "\"Stop, thieves! You're all under arrest!\""
+          }
+        ]
+      },
+      "sources": [
+        {
+          "kind": "official_quiz_pdf",
+          "file": "G:\\Game\\BookPlay书戏\\data\\测试题\\08 英文测试题108集全.Journey to the West-quiz.pdf",
+          "page": 120,
+          "sha256": "bcc738833439415d5b2aebde6d316c75168f0d73ae87dab5e11ba8c616056929"
+        }
+      ],
+      "review_status": "assistant_reviewed"
+    },
+    {
+      "card_id": "ep100-vocab-001",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 101,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "thank",
+        "zh": "vt.感谢,谢谢"
+      },
+      "payload": {
+        "term": "thank",
+        "ipa": "θæŋk",
+        "pos": "vt.",
+        "def": "vt.感谢,谢谢",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "100 可怕的强盗事件 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "35c0aff04e24b5eef441a5b987dfc8fe8364a45ea6925afe59c5743e61c8aab8"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep100-vocab-002",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 102,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "lady",
+        "zh": "女士,女子"
+      },
+      "payload": {
+        "term": "lady",
+        "ipa": "ˈleɪdi",
+        "pos": "n.",
+        "def": "n.[C]女士,女子",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "100 可怕的强盗事件 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "35c0aff04e24b5eef441a5b987dfc8fe8364a45ea6925afe59c5743e61c8aab8"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep100-vocab-003",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 103,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "next",
+        "zh": "下一个(的) adv.紧接着,随后"
+      },
+      "payload": {
+        "term": "next",
+        "ipa": "nekst",
+        "pos": "adj.",
+        "def": "adj./n[sing.]下一个(的) adv.紧接着,随后",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "100 可怕的强盗事件 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "35c0aff04e24b5eef441a5b987dfc8fe8364a45ea6925afe59c5743e61c8aab8"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep100-vocab-004",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 104,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "speak",
+        "zh": "vt.说(某种语言) vi.说话,提起"
+      },
+      "payload": {
+        "term": "speak",
+        "ipa": "spiːk",
+        "pos": "vt.",
+        "def": "vt.说(某种语言) vi.说话,提起",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "100 可怕的强盗事件 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "35c0aff04e24b5eef441a5b987dfc8fe8364a45ea6925afe59c5743e61c8aab8"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep100-vocab-005",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 105,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "wrong",
+        "zh": "罪恶,欺骗"
+      },
+      "payload": {
+        "term": "wrong",
+        "ipa": "rɒŋ",
+        "pos": "",
+        "def": "dj.有毛病的,错误的 adv.错误地 vt.误会,不公平对待 n.[C]不义行为[C]罪恶,欺骗",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "100 可怕的强盗事件 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "35c0aff04e24b5eef441a5b987dfc8fe8364a45ea6925afe59c5743e61c8aab8"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep100-vocab-006",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 106,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "break",
+        "zh": "间歇,休息"
+      },
+      "payload": {
+        "term": "break",
+        "ipa": "breɪk",
+        "pos": "v.",
+        "def": "v.(使)破,裂,违反,打破(记 录) n.[C]间歇,休息",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "100 可怕的强盗事件 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "35c0aff04e24b5eef441a5b987dfc8fe8364a45ea6925afe59c5743e61c8aab8"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep100-vocab-007",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 107,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "into",
+        "zh": "prep.到......里面,进入,(表示 状态的变化)"
+      },
+      "payload": {
+        "term": "into",
+        "ipa": "ˈɪntuː",
+        "pos": "prep.",
+        "def": "prep.到......里面,进入,(表示 状态的变化)",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "100 可怕的强盗事件 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "35c0aff04e24b5eef441a5b987dfc8fe8364a45ea6925afe59c5743e61c8aab8"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep100-vocab-008",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 108,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "value",
+        "zh": "价值 观"
+      },
+      "payload": {
+        "term": "value",
+        "ipa": "ˈvæljuː",
+        "pos": "vt.",
+        "def": "vt.重视,珍视 n.[C,U]价值[U]重要性[pl.]价值 观",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "100 可怕的强盗事件 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "35c0aff04e24b5eef441a5b987dfc8fe8364a45ea6925afe59c5743e61c8aab8"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep100-vocab-009",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 109,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "try",
+        "zh": "尝试,设法,努力"
+      },
+      "payload": {
+        "term": "try",
+        "ipa": "traɪ",
+        "pos": "v.",
+        "def": "v./n.[C]尝试,设法,努力",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "100 可怕的强盗事件 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "35c0aff04e24b5eef441a5b987dfc8fe8364a45ea6925afe59c5743e61c8aab8"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep100-vocab-010",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 110,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "stop",
+        "zh": "车站,停止 v.停止,阻止,逗留"
+      },
+      "payload": {
+        "term": "stop",
+        "ipa": "stɒp",
+        "pos": "n.",
+        "def": "n.[C]车站,停止 v.停止,阻止,逗留",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "100 可怕的强盗事件 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "35c0aff04e24b5eef441a5b987dfc8fe8364a45ea6925afe59c5743e61c8aab8"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep100-vocab-011",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 111,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "kill",
+        "zh": "v.杀死,弄死,使停止;消磨(时 间)"
+      },
+      "payload": {
+        "term": "kill",
+        "ipa": "kɪl",
+        "pos": "v.",
+        "def": "v.杀死,弄死,使停止;消磨(时 间)",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "100 可怕的强盗事件 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "35c0aff04e24b5eef441a5b987dfc8fe8364a45ea6925afe59c5743e61c8aab8"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep100-vocab-012",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 112,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "husband",
+        "zh": "丈夫"
+      },
+      "payload": {
+        "term": "husband",
+        "ipa": "ˈhʌzbənd",
+        "pos": "n.",
+        "def": "n.[C]丈夫",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "100 可怕的强盗事件 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "35c0aff04e24b5eef441a5b987dfc8fe8364a45ea6925afe59c5743e61c8aab8"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep100-vocab-013",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 113,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "know",
+        "zh": "v.知道,了解"
+      },
+      "payload": {
+        "term": "know",
+        "ipa": "nəʊ",
+        "pos": "v.",
+        "def": "v.知道,了解",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "100 可怕的强盗事件 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "35c0aff04e24b5eef441a5b987dfc8fe8364a45ea6925afe59c5743e61c8aab8"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep100-vocab-014",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 114,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "who",
+        "zh": "pron.谁,什么人"
+      },
+      "payload": {
+        "term": "who",
+        "ipa": "huː",
+        "pos": "pron.",
+        "def": "pron.谁,什么人",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "100 可怕的强盗事件 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "35c0aff04e24b5eef441a5b987dfc8fe8364a45ea6925afe59c5743e61c8aab8"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep100-vocab-015",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 115,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "glad",
+        "zh": "adj.高兴,愿意"
+      },
+      "payload": {
+        "term": "glad",
+        "ipa": "ɡlæd",
+        "pos": "adj.",
+        "def": "adj.高兴,愿意",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "100 可怕的强盗事件 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "35c0aff04e24b5eef441a5b987dfc8fe8364a45ea6925afe59c5743e61c8aab8"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep100-vocab-016",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 116,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "head",
+        "zh": "队首 vi.朝(某方向)行进"
+      },
+      "payload": {
+        "term": "head",
+        "ipa": "hed",
+        "pos": "n.",
+        "def": "n.[C]头(部)[C,U]负责人 [sing.]队首 vi.朝(某方向)行进",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "100 可怕的强盗事件 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "35c0aff04e24b5eef441a5b987dfc8fe8364a45ea6925afe59c5743e61c8aab8"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "100 可怕的强盗事件 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "f72301d78548939f3f28d43ae610abafbb45c646882b124793474794c9e69345"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep100-vocab-017",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 117,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "west",
+        "zh": "西部"
+      },
+      "payload": {
+        "term": "west",
+        "ipa": "west",
+        "pos": "",
+        "def": "西部",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          2
+        ],
+        "gloss": "西部"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "100 可怕的强盗事件 上.pdf",
+          "half": "up",
+          "pages": [
+            2
+          ],
+          "sha256": "35c0aff04e24b5eef441a5b987dfc8fe8364a45ea6925afe59c5743e61c8aab8"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep100-vocab-018",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 118,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "reach",
+        "zh": "v.伸手,到达,抵达;打成(协 议),实现 n.能及的范围"
+      },
+      "payload": {
+        "term": "reach",
+        "ipa": "riː tʃ",
+        "pos": "v.",
+        "def": "v.伸手,到达,抵达;打成(协 议),实现 n.能及的范围",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "100 可怕的强盗事件 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "35c0aff04e24b5eef441a5b987dfc8fe8364a45ea6925afe59c5743e61c8aab8"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep100-vocab-019",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 119,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "group",
+        "zh": "组,群 vt.把......分组/归类,聚集"
+      },
+      "payload": {
+        "term": "group",
+        "ipa": "ɡruːp",
+        "pos": "n.",
+        "def": "n.[C]组,群 vt.把......分组/归类,聚集",
+        "halves": [
+          "up",
+          "down"
+        ],
+        "pages": [
+          2,
+          3
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "100 可怕的强盗事件 上.pdf",
+          "half": "up",
+          "pages": [
+            2,
+            3
+          ],
+          "sha256": "35c0aff04e24b5eef441a5b987dfc8fe8364a45ea6925afe59c5743e61c8aab8"
+        },
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "100 可怕的强盗事件 下.pdf",
+          "half": "down",
+          "pages": [
+            2,
+            3
+          ],
+          "sha256": "f72301d78548939f3f28d43ae610abafbb45c646882b124793474794c9e69345"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep100-vocab-020",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 120,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "step",
+        "zh": "步,步骤"
+      },
+      "payload": {
+        "term": "step",
+        "ipa": "step",
+        "pos": "n.",
+        "def": "步,步骤",
+        "halves": [
+          "up"
+        ],
+        "pages": [
+          3
+        ],
+        "gloss": "步,步骤"
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "100 可怕的强盗事件 上.pdf",
+          "half": "up",
+          "pages": [
+            3
+          ],
+          "sha256": "35c0aff04e24b5eef441a5b987dfc8fe8364a45ea6925afe59c5743e61c8aab8"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep100-vocab-021",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 121,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "valuable",
+        "zh": "adj.贵重的,很有用的,宝贵的, 有价值的"
+      },
+      "payload": {
+        "term": "valuable",
+        "ipa": "ˈvæljuəbl",
+        "pos": "adj.",
+        "def": "adj.贵重的,很有用的,宝贵的, 有价值的",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "100 可怕的强盗事件 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "f72301d78548939f3f28d43ae610abafbb45c646882b124793474794c9e69345"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep100-vocab-022",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 122,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "belong",
+        "zh": "vi.属于,归属;应在(某处)"
+      },
+      "payload": {
+        "term": "belong",
+        "ipa": "bɪˈlɒŋ",
+        "pos": "vi.",
+        "def": "vi.属于,归属;应在(某处)",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "100 可怕的强盗事件 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "f72301d78548939f3f28d43ae610abafbb45c646882b124793474794c9e69345"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep100-vocab-023",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 123,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "agree",
+        "zh": "v.同意,赞成,应允"
+      },
+      "payload": {
+        "term": "agree",
+        "ipa": "əˈɡriː",
+        "pos": "v.",
+        "def": "v.同意,赞成,应允",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "100 可怕的强盗事件 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "f72301d78548939f3f28d43ae610abafbb45c646882b124793474794c9e69345"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep100-vocab-024",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 124,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "steal",
+        "zh": "v.偷,窃取"
+      },
+      "payload": {
+        "term": "steal",
+        "ipa": "stiːl",
+        "pos": "v.",
+        "def": "v.偷,窃取",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "100 可怕的强盗事件 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "f72301d78548939f3f28d43ae610abafbb45c646882b124793474794c9e69345"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep100-vocab-025",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 125,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "horse",
+        "zh": "马"
+      },
+      "payload": {
+        "term": "horse",
+        "ipa": "hɔː(r)s",
+        "pos": "n.",
+        "def": "n.[C]马",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "100 可怕的强盗事件 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "f72301d78548939f3f28d43ae610abafbb45c646882b124793474794c9e69345"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep100-vocab-026",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 126,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "ride",
+        "zh": "旅程,供乘骑的游乐设施"
+      },
+      "payload": {
+        "term": "ride",
+        "ipa": "raɪd",
+        "pos": "v.",
+        "def": "v.骑 n.[C]旅程,供乘骑的游乐设施",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "100 可怕的强盗事件 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "f72301d78548939f3f28d43ae610abafbb45c646882b124793474794c9e69345"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep100-vocab-027",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 127,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "toward",
+        "zh": "prep.朝,向,对着"
+      },
+      "payload": {
+        "term": "toward",
+        "ipa": "təˈwɔː d",
+        "pos": "prep.",
+        "def": "prep.朝,向,对着",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "100 可怕的强盗事件 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "f72301d78548939f3f28d43ae610abafbb45c646882b124793474794c9e69345"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep100-vocab-028",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 128,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "wonder",
+        "zh": "惊讶"
+      },
+      "payload": {
+        "term": "wonder",
+        "ipa": "ˈwʌndə(r)",
+        "pos": "v.",
+        "def": "v.想知道,琢磨;非常惊讶 n.[C]奇迹,奇观 [U]惊讶",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "100 可怕的强盗事件 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "f72301d78548939f3f28d43ae610abafbb45c646882b124793474794c9e69345"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep100-vocab-029",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 129,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "want",
+        "zh": "vt.需要,想要"
+      },
+      "payload": {
+        "term": "want",
+        "ipa": "wɒnt",
+        "pos": "vt.",
+        "def": "vt.需要,想要",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "100 可怕的强盗事件 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "f72301d78548939f3f28d43ae610abafbb45c646882b124793474794c9e69345"
+        }
+      ],
+      "review_status": "machine_verified"
+    },
+    {
+      "card_id": "ep100-vocab-030",
+      "type": "word_review",
+      "stage": "episode_complete",
+      "order": 130,
+      "difficulty": 1,
+      "grade_bands": [
+        "g1_2",
+        "g3_4",
+        "g5_6"
+      ],
+      "skills": [
+        "vocabulary"
+      ],
+      "prompt": {
+        "en": "point",
+        "zh": "目的 v.指,指向"
+      },
+      "payload": {
+        "term": "point",
+        "ipa": "pɔɪnt",
+        "pos": "n.",
+        "def": "n.[C]得分,点,小数点,时刻, 特点,观点,要点[U]目的 v.指,指向",
+        "halves": [
+          "down"
+        ],
+        "pages": [
+          2
+        ]
+      },
+      "sources": [
+        {
+          "kind": "intensive_reader_pdf",
+          "file": "100 可怕的强盗事件 下.pdf",
+          "half": "down",
+          "pages": [
+            2
+          ],
+          "sha256": "f72301d78548939f3f28d43ae610abafbb45c646882b124793474794c9e69345"
+        }
+      ],
+      "review_status": "machine_verified"
+    }
+  ],
+  "teacher_guide": null,
+  "review": {
+    "status": "draft",
+    "reviewed_at": null,
+    "card_stats": {
+      "total": 35,
+      "sentence_choice": 5,
+      "word_review": 30,
+      "machine_verified": 33,
+      "assistant_reviewed": 2,
+      "verified": 35,
+      "needs_review": 0
+    }
+  },
+  "generated_at": "2026-08-31T04:49:50.198949+00:00"
+}
