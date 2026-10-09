@@ -1,0 +1,87 @@
+{
+  "revision": 2,
+  "source_site": "https://blocktoon.pixus.dev",
+  "retrieved_at": "2026-08-30T17:56:18+00:00",
+  "matched_video_to_audio": [
+    {
+      "book": "ZOMBIE SCHOOL ADVENTURE",
+      "slug": "zombie-school-adventure",
+      "source_video": "MikeyJJ Audio Books/Zombie School Adventure.mp4",
+      "audio": "audio/Zombie School Adventure.mp3"
+    },
+    {
+      "book": "WATER HOUSE ADVENTURE",
+      "slug": "water-house-adventure",
+      "source_video": "MikeyJJ Audio Books/Water House Adventure.mp4",
+      "audio": "audio/Water House Adventure.mp3"
+    },
+    {
+      "book": "PENGUIN ADVENTURE",
+      "slug": "penguin-adventure",
+      "source_video": "MikeyJJ Audio Books/Penguin Adventure.mp4",
+      "audio": "audio/Penguin Adventure.mp3"
+    },
+    {
+      "book": "TORNADO ADVENTURE",
+      "slug": "tornado-adventure",
+      "source_video": "MikeyJJ Audio Books/Tornado Adventure.mp4",
+      "audio": "audio/Tornado Adventure.mp3"
+    },
+    {
+      "book": "GODZILLA ADVENTURE",
+      "slug": "godzilla-adventure",
+      "source_video": "MikeyJJ Audio Books/Godzilla Adventure.mp4",
+      "audio": "audio/Godzilla Adventure.mp3"
+    },
+    {
+      "book": "PIGLIN ADVENTURE",
+      "slug": "piglin-adventure",
+      "source_video": "MikeyJJ Audio Books/Piglin Adventure.mp4",
+      "audio": "audio/Piglin Adventure.mp3"
+    },
+    {
+      "book": "BURGER SHOP ADVENTURE",
+      "slug": "burger-shop-adventure",
+      "source_video": "MikeyJJ Audio Books/Burger Shop Adventure.mp4",
+      "audio": "audio/Burger Shop Adventure.mp3"
+    },
+    {
+      "book": "SCARY CAT ADVENTURE",
+      "slug": "scary-cat-adventure",
+      "source_video": "MikeyJJ Audio Books/Scary Cat Adventure.mp4",
+      "audio": "audio/Scary Cat Adventure.mp3"
+    },
+    {
+      "book": "CRUISE SHIP ADVENTURE",
+      "slug": "cruise-ship-adventure",
+      "source_video": "MikeyJJ Audio Books/Cruise Ship Adventure.mp4",
+      "audio": "audio/Cruise Ship Adventure.mp3"
+    },
+    {
+      "book": "NOOB TO KING ADVENTURE",
+      "slug": "noob-to-king-adventure",
+      "source_video": "MikeyJJ Audio Books/Noob to King Adventure.mp4",
+      "audio": "audio/Noob to King Adventure.mp3"
+    }
+  ],
+  "remote_audio_missing": [
+    {
+      "book": "SLIME JAIL ADVENTURE",
+      "slug": "slime-jail-adventure",
+      "reason": "site offers no audio for this book and no exact-basename local MP4"
+    }
+  ],
+  "unmatched_local_videos": [
+    "Baby Creeper Adventure.mp4",
+    "Slime King Adventure.mp4",
+    "Warden Adventure.mp4"
+  ],
+  "never_matched": [
+    "Slime Jail Adventure.pdf <-> Slime King Adventure.mp4"
+  ],
+  "rules": [
+    "Only exact basename matches derive MP3 (10 books).",
+    "Slime Jail Adventure is NOT paired with Slime King Adventure.mp4.",
+    "Baby Creeper / Slime King / Warden are unmatched, read-only."
+  ]
+}
