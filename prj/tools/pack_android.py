@@ -58,6 +58,8 @@ ENGINE_FILES = [
     "game.html", "game.js", "game.css", "game-core.js", "game-input.js", "game-audio.js",
     # 洞中认词：暂停菜单进入，不改扔球战斗循环
     "word-quiz.html", "word-quiz.js", "word-quiz.css", "word-quiz-core.js",
+    # 星际探查：舱内任务星，不改降妖记扔球循环
+    "scout-orbit.html", "scout-orbit.js", "scout-orbit.css", "scout-orbit-core.js",
     "episode-vocab-quiz.js",
     "tv.css", "tv-remote.js", "native-key.js", "handheld-keys.html",
     "handheld-controls.js", "handheld.css",

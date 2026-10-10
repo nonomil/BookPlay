@@ -791,8 +791,9 @@ test("home page exposes a third Mikey & JJ card into the series map", () => {
   // existing two series cards must stay intact
   assert.match(html, /class="book-card" href="map\.html"/, "Journey to the West card preserved");
   assert.match(html, /class="book-card" href="map\.html\?series=minecraft"/, "Minecraft card preserved");
-  const cards = (html.match(/class="book-card"/g) || []).length;
-  assert.equal(cards, 3, "exactly three equal-weight series cards");
+  assert.match(html, /class="book-card book-card-scout" href="scout-orbit\.html"/, "scout-orbit mission card");
+  const cards = (html.match(/class="book-card/g) || []).length;
+  assert.equal(cards, 4, "three series cards plus the scout-orbit mission card");
 });
 
 test("shelf.js recognizes the mikey-jj series and renders only published books", () => {
