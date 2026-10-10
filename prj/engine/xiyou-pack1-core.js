@@ -79,6 +79,12 @@
     return out;
   }
 
+  function shortZh(zh) {
+    const raw = String(zh || "").trim();
+    const cut = raw.split(/[（(，,；;]/)[0].trim();
+    return cut || raw;
+  }
+
   function uniqueCards(cards) {
     const seen = new Set();
     const out = [];
@@ -91,7 +97,7 @@
       seen.add(key);
       out.push({
         term,
-        zh,
+        zh: shortZh(zh),
         illustration: card && card.illustration || null,
         sprite: card && card.sprite || null,
       });

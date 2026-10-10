@@ -190,7 +190,10 @@
       persist(settle);
       show("pack1-result");
       const box = $("pack1-result");
+      box.className = "pack1-layer";
       box.textContent = "";
+      const card = document.createElement("div");
+      card.className = "pack1-result";
       const title = document.createElement("h2");
       const stars = document.createElement("div");
       stars.className = "pack1-stars";
@@ -219,7 +222,8 @@
       back.addEventListener("click", () => {
         window.location.href = leaveUrl;
       });
-      box.append(title, stars, copy, again, back);
+      card.append(title, stars, copy, again, back);
+      box.appendChild(card);
       hud();
     }
 
@@ -268,7 +272,9 @@
       const host = $("pack1-quest");
       if (!host) return;
       host.textContent = "";
-      host.className = "pack1-layer pack1-quest";
+      host.className = "pack1-layer";
+      const card = document.createElement("div");
+      card.className = "pack1-quest";
       const kicker = document.createElement("span");
       kicker.className = "pack1-kicker";
       kicker.textContent = `${quest.placeZh} · 第 ${ep} 集`;
@@ -289,7 +295,8 @@
         Core.enterArena(run);
         paintArena();
       });
-      host.append(kicker, title, en, story, go);
+      card.append(kicker, title, en, story, go);
+      host.appendChild(card);
     }
 
     const heroBox = $("pack1-hero");
