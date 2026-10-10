@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 1,
+  "generatedBy": "跨平台采集器/video_processor",
+  "video": {
+    "path": "video.mp4",
+    "bytes": 11338523,
+    "durationSeconds": 34
+  },
+  "audio": {
+    "path": "audio/audio.wav",
+    "metadataPath": "audio/audio.json",
+    "bytes": 1077484,
+    "durationSeconds": 33.669,
+    "sampleRate": 16000,
+    "channels": 1
+  },
+  "frames": {
+    "directory": "img",
+    "count": 24,
+    "items": [
+      {
+        "index": 1,
+        "time": 0.5,
+        "file": "frame_1.jpg"
+      },
+      {
+        "index": 2,
+        "time": 1.33,
+        "file": "frame_2.jpg"
+      },
+      {
+        "index": 3,
+        "time": 2.68,
+        "file": "frame_3.jpg"
+      },
+      {
+        "index": 4,
+        "time": 3.73,
+        "file": "frame_4.jpg"
+      },
+      {
+        "index": 5,
+        "time": 4.86,
+        "file": "frame_5.jpg"
+      },
+      {
+        "index": 6,
+        "time": 5.8,
+        "file": "frame_6.jpg"
+      },
+      {
+        "index": 7,
+        "time": 7.03,
+        "file": "frame_7.jpg"
+      },
+      {
+        "index": 8,
+        "time": 8.03,
+        "file": "frame_8.jpg"
+      },
+      {
+        "index": 9,
+        "time": 9.21,
+        "file": "frame_9.jpg"
+      },
+      {
+        "index": 10,
+        "time": 10.1,
+        "file": "frame_10.jpg"
+      },
+      {
+        "index": 11,
+        "time": 11.39,
+        "file": "frame_11.jpg"
+      },
+      {
+        "index": 12,
+        "time": 12.33,
+        "file": "frame_12.jpg"
+      },
+      {
+        "index": 13,
+        "time": 13.57,
+        "file": "frame_13.jpg"
+      },
+      {
+        "index": 14,
+        "time": 15.75,
+        "file": "frame_14.jpg"
+      },
+      {
+        "index": 15,
+        "time": 17.92,
+        "file": "frame_15.jpg"
+      },
+      {
+        "index": 16,
+        "time": 18.77,
+        "file": "frame_16.jpg"
+      },
+      {
+        "index": 17,
+        "time": 20.1,
+        "file": "frame_17.jpg"
+      },
+      {
+        "index": 18,
+        "time": 22.28,
+        "file": "frame_18.jpg"
+      },
+      {
+        "index": 19,
+        "time": 23.4,
+        "file": "frame_19.jpg"
+      },
+      {
+        "index": 20,
+        "time": 24.46,
+        "file": "frame_20.jpg"
+      },
+      {
+        "index": 21,
+        "time": 26.64,
+        "file": "frame_21.jpg"
+      },
+      {
+        "index": 22,
+        "time": 28.81,
+        "file": "frame_22.jpg"
+      },
+      {
+        "index": 23,
+        "time": 30.99,
+        "file": "frame_23.jpg"
+      },
+      {
+        "index": 24,
+        "time": 33.17,
+        "file": "frame_24.jpg"
+      }
+    ]
+  },
+  "primaryTranscript": "asr",
+  "review": {
+    "status": "raw_only",
+    "note": "Platform subtitles, ASR, and OCR are preserved as machine-derived evidence; human review is separate."
+  },
+  "transcripts": [
+    {
+      "source": "asr",
+      "directory": "transcript/asr",
+      "markdownPath": "transcript/asr/video.md",
+      "textPath": "transcript/asr/video.txt",
+      "jsonPath": "transcript/asr/video.json",
+      "srtPath": "transcript/asr/video.srt",
+      "vttPath": "transcript/asr/video.vtt",
+      "segmentCount": 1,
+      "startSeconds": 0,
+      "endSeconds": 2.4
+    }
+  ],
+  "config": {
+    "primaryTranscript": "platform_subtitle",
+    "transcribeEnabled": true,
+    "transcribeModel": "base",
+    "transcribeLanguage": ""
+  }
+}
