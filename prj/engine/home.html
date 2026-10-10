@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="style.css?v=png1">
   <link rel="stylesheet" href="home.css?v=lib17">
   <link rel="stylesheet" href="tv.css?v=1">
-  <link rel="stylesheet" href="handheld.css?v=2">
+  <link rel="stylesheet" href="handheld.css?v=3">
   <link rel="stylesheet" href="app-audio.css?v=2">
   <script src="app-audio.js?v=3"></script>
   <script src="content-gate.js?v=2"></script>
@@ -59,6 +59,23 @@
             <div class="book-hint">10 本已上线 · 11 本专题素材已入库</div>
           </div>
         </a>
+        <a class="book-card book-card-scout" href="scout-orbit.html">
+          <svg class="scout-card-art" viewBox="0 0 320 168" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <rect width="320" height="168" fill="#1B3A4B"/>
+            <circle cx="78" cy="40" r="3" fill="#FFD166"/>
+            <circle cx="250" cy="28" r="2" fill="#F4F7FB"/>
+            <circle cx="196" cy="78" r="34" fill="#2EC4B6"/>
+            <circle cx="184" cy="68" r="9" fill="#FFD166"/>
+            <rect x="118" y="108" width="28" height="20" rx="4" fill="#FF6B4A"/>
+            <circle cx="132" cy="100" r="10" fill="#F4F7FB" stroke="#1B3A4B" stroke-width="3"/>
+          </svg>
+          <div class="book-meta">
+            <div class="book-kicker">今日任务</div>
+            <div class="book-title">星际探查</div>
+            <div class="book-en">Scout Orbit</div>
+            <div class="book-hint">四颗星 · 舱里用英语把任务做完</div>
+          </div>
+        </a>
       </main>
     </div>
   </div>
@@ -69,9 +86,9 @@
       .library-hero { min-height: 0 !important; overflow: visible !important; }
       .library-brand { padding: 8px 10px 0 !important; }
       .library-brand h1 { font-size: 1.3rem !important; }
-      .book-grid { display: grid !important; grid-template-columns: repeat(3, minmax(0, 1fr)) !important; gap: 8px !important; }
+      .book-grid { display: grid !important; grid-template-columns: repeat(2, minmax(0, 1fr)) !important; gap: 8px !important; }
       .book-card { min-height: 44px; }
-      .book-card img { height: 72px !important; }
+      .book-card img, .book-card .scout-card-art { height: 72px !important; }
     }
   </style>
 </body>

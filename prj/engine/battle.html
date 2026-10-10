@@ -9,7 +9,7 @@
   <link rel="icon" href="data:,">
   <link rel="stylesheet" href="tv.css?v=battle-1">
   <link rel="stylesheet" href="handheld.css?v=4">
-  <link rel="stylesheet" href="battle.css?v=battle-6">
+  <link rel="stylesheet" href="battle.css?v=battle-7">
   <link rel="stylesheet" href="app-audio.css?v=2">
   <script src="app-audio.js?v=3"></script>
 </head>
@@ -81,7 +81,14 @@
       <button type="button" class="battle-primary" id="battle-preview-start" tabindex="0">开打！⚔️</button>
     </section>
 
-    <section class="battle-orbs" id="battle-orbs" aria-label="词球"></section>
+    <section class="battle-panel battle-task" id="battle-task" hidden aria-live="polite">
+      <p class="battle-task-kicker" id="battle-task-kicker">降妖记</p>
+      <h2 class="battle-panel-title" id="battle-task-title">先办这一件事</h2>
+      <p id="battle-task-body"></p>
+      <button type="button" class="battle-primary" id="battle-task-go" tabindex="0">去降妖</button>
+    </section>
+
+    <section class="battle-orbs" id="battle-orbs" aria-label="选词"></section>
 
     <section class="battle-quiz" id="battle-quiz" hidden aria-label="关底测验"></section>
 

@@ -1,5 +1,9 @@
-/* 降妖记战斗页样式：全屏场景 + 底部词球栏，触屏与电视 D-pad 双适配。
- * 焦点环、64px 命中高度、safe-area 与 reduced-motion 均遵循 tv.css 合同。 */
+/* 降妖记战斗页样式：全屏场景 + 底部选词，触屏与电视 D-pad 双适配。
+ * 焦点环、64px 命中高度、safe-area 与 reduced-motion 均遵循 tv.css 合同。
+ * HUD 子项和血条写了 display，会盖过浏览器的 [hidden]。开战前这些控件必须真正藏住。 */
+.battle [hidden] {
+  display: none !important;
+}
 
 .battle {
   position: fixed;
@@ -103,13 +107,20 @@
 }
 
 .battle-monster-word {
+  position: absolute;
+  right: 0;
+  bottom: calc(100% + 6px);
   display: inline-block;
+  width: max-content;
+  max-width: min(68vw, 320px);
   padding: 4px 10px;
-  border-radius: 999px;
+  border-radius: 16px;
   background: rgba(20, 26, 44, 0.85);
   border: 2px solid rgba(255, 255, 255, 0.55);
-  font-size: clamp(13px, 1.8vw, 20px);
-  white-space: nowrap;
+  font-size: clamp(14px, 1.8vw, 20px);
+  line-height: 1.35;
+  text-align: center;
+  white-space: normal;
 }
 
 .battle-monster.is-dead {
@@ -369,10 +380,10 @@
 
 .battle-orbs {
   position: absolute;
-  z-index: 5;
+  z-index: 7;
   left: 50%;
   transform: translateX(-50%);
-  bottom: calc(14px + env(safe-area-inset-bottom, 0));
+  bottom: calc(18px + env(safe-area-inset-bottom, 0));
   display: flex;
   gap: 14px;
 }
@@ -394,6 +405,22 @@
 .battle-orb.is-spent {
   opacity: 0.25;
   pointer-events: none;
+}
+
+.battle-orb.is-word {
+  min-width: 128px;
+  min-height: 72px;
+  border-radius: 16px;
+  border: 4px solid #e7c56a;
+  background: #f7f1e4;
+  color: #1c2438;
+  font-size: 1.45rem;
+  box-shadow: none;
+}
+
+.battle-task p {
+  font-size: 1.15rem;
+  line-height: 1.5;
 }
 
 /* 结算 */

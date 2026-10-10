@@ -138,11 +138,17 @@ test('本集冻最多 10 词，问答可点不会且不算错', () => {
   assert.match(js, /sessionCards \|\| state\.level\.previewWords/);
 });
 
-test('空手点小妖只预习词卡，不投掷', () => {
+test('点小妖打开选词，不走投掷', () => {
   const js = read('game.js');
-  assert.match(js, /function previewMonsterWord\(/);
-  assert.match(js, /if \(!state\.carried\) \{\s*previewMonsterWord\(monster\);/);
-  assert.match(js, /near && near\.kind === "monster"\) previewMonsterWord\(near\.ref\)/);
+  const start = js.indexOf('function onMonsterClick(');
+  const end = js.indexOf('function activeDemon(');
+  assert.ok(start >= 0 && end > start);
+  const click = js.slice(start, end);
+  assert.match(click, /openDuel\(monster\)/);
+  assert.doesNotMatch(click, /throwOrb/);
+  assert.match(js, /function openDuel\(/);
+  assert.match(js, /m\.active = idx === 0/);
+  assert.match(js, /再想一想。这只小妖还在。/);
   assert.doesNotMatch(js, /先走到中文词球上捡起一颗/);
   assert.doesNotMatch(js, /先捡一颗中文词球/);
 });

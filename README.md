@@ -12,6 +12,10 @@
 
 浏览器会打开 `http://127.0.0.1:8810/engine/home.html`。播放器依赖 HTTP Range，不要改用 `python -m http.server`。
 
+降妖记首包是选词降妖：进关前有一张任务卡，同屏只有一只妖，点对英文才掉血，点错再试。不再扔球。暂停菜单仍有「洞中认词」（`/engine/word-quiz.html`）。说明见 [洞中认词](docs/降妖记认词.md)。
+
+首页另有「星际探查」：四站舱内任务，用英语把舱务接上才得任务星，星点亮了才能飞下一站。进度在 `bookplay_scout_orbit_progress_v1`。说明见 [星际探查](docs/星际探查.md)。
+
 验证当前源码与数据合同：
 
 ```powershell

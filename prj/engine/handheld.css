@@ -112,10 +112,14 @@ html[data-handheld] .library-brand h1 {
   font-size: 1.35rem;
 }
 
-html[data-handheld] #grid,
-html[data-handheld] .book-grid {
+html[data-handheld] #grid {
   grid-template-columns: repeat(auto-fill, minmax(132px, 1fr));
   gap: 0.55rem;
+}
+
+html[data-handheld] .book-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.7rem;
 }
 
 html[data-handheld] .card img {

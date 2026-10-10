@@ -56,7 +56,7 @@
     <nav class="game-typepad" id="game-typepad" hidden aria-label="跟打键盘"></nav>
 
     <div class="game-joystick" id="game-joystick" aria-hidden="true"><div class="game-stick" id="game-stick"></div></div>
-    <div class="game-dpad-hint" id="game-dpad-hint" aria-hidden="true">方向键移动 · 走过词球捡起 · 点小妖投掷</div>
+    <div class="game-dpad-hint" id="game-dpad-hint" aria-hidden="true">点小妖，选出它的英文</div>
 
     <section class="game-dialogue" id="game-dialogue" hidden aria-live="polite">
       <img class="game-dialogue-face" id="game-dialogue-face" alt="" decoding="async">
@@ -72,6 +72,18 @@
       </div>
     </section>
 
+    <section class="game-panel game-task" id="game-task" hidden aria-live="polite">
+      <p class="game-task-kicker" id="game-task-kicker">降妖记</p>
+      <h2 id="game-task-title">先办这一件事</h2>
+      <p id="game-task-body"></p>
+      <button type="button" class="game-primary" id="game-task-go" tabindex="0">去降妖</button>
+    </section>
+    <section class="game-panel game-duel" id="game-duel" hidden aria-live="polite">
+      <p class="game-duel-kicker">选词降妖</p>
+      <p class="game-duel-sign" id="game-duel-sign"></p>
+      <p class="game-duel-ask" id="game-duel-ask">点对英文，它才会掉血。</p>
+      <div class="game-duel-choices" id="game-duel-choices"></div>
+    </section>
     <section class="game-panel game-bossgate" id="game-bossgate" hidden aria-live="polite"></section>
     <section class="game-panel game-pause" id="game-pause" hidden aria-label="暂停">
       <h2 class="battle-panel-title">休息一下</h2>
@@ -79,6 +91,16 @@
       <button type="button" class="battle-secondary" id="game-restart" tabindex="0">重玩本集</button>
       <button type="button" class="battle-secondary" data-open-handheld tabindex="0">掌机按键</button>
       <button type="button" class="battle-secondary" id="game-map" tabindex="0">回地图</button>
+      <a class="battle-secondary" id="game-word-quiz" href="word-quiz.html?from=game">洞中认词</a>
+      <script>
+        (function () {
+          var link = document.getElementById("game-word-quiz");
+          if (!link) return;
+          var ep = new URLSearchParams(location.search).get("ep") || "1";
+          if (!/^\d+$/.test(ep)) ep = "1";
+          link.href = "word-quiz.html?from=game&ep=" + ep;
+        })();
+      </script>
     </section>
     <section class="game-panel game-gate" id="game-gate" hidden aria-live="polite"></section>
     <div class="battle-toast" id="game-toast" hidden aria-live="polite"></div>

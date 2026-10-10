@@ -810,12 +810,48 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: min(480px, 92vw);
+  box-sizing: border-box;
+  width: min(480px, calc(100vw - 24px));
   text-align: center;
   background: rgba(16, 22, 40, 0.96);
   border: 2px solid rgba(255, 255, 255, 0.4);
   border-radius: 20px;
   padding: clamp(16px, 3vw, 26px);
+}
+
+.game-task-kicker,
+.game-duel-kicker {
+  margin: 0;
+  color: #ffd76a;
+  font-weight: 800;
+}
+.game-task p,
+.game-duel-ask {
+  font-size: 1.15rem;
+  line-height: 1.5;
+}
+.game-duel-sign {
+  margin: 8px 0;
+  font-size: 2.6rem;
+  font-weight: 800;
+}
+.game-duel-choices {
+  display: grid;
+  gap: 10px;
+}
+.game-duel-choice {
+  min-height: 72px;
+  border-radius: 16px;
+  border: 4px solid #e7c56a;
+  background: #f7f1e4;
+  color: #1c2438;
+  font: inherit;
+  font-size: 1.6rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+.game-duel-choice:disabled {
+  opacity: 0.45;
 }
 
 .game-primary,
@@ -834,6 +870,15 @@
   color: #4a2f00;
   border: 0;
   font-weight: 700;
+}
+
+.game-pause a.battle-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #fff;
 }
 
 /* 粒子 */

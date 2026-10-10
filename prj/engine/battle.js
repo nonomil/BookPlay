@@ -60,6 +60,11 @@
     preview: $("battle-preview"),
     previewCards: $("battle-preview-cards"),
     previewStart: $("battle-preview-start"),
+    task: $("battle-task"),
+    taskKicker: $("battle-task-kicker"),
+    taskTitle: $("battle-task-title"),
+    taskBody: $("battle-task-body"),
+    taskGo: $("battle-task-go"),
     orbs: $("battle-orbs"),
     quiz: $("battle-quiz"),
     result: $("battle-result"),
@@ -188,7 +193,7 @@
   }
 
   function showPanel(name) {
-    [els.dialogue, els.preview, els.quiz, els.result, els.pause].forEach((el) => {
+    [els.dialogue, els.preview, els.quiz, els.result, els.pause, els.task].forEach((el) => {
       el.hidden = el !== name;
     });
   }
@@ -263,6 +268,15 @@
   /* ---------- 阶段：开场剧情 ---------- */
 
   let introIdx = 0;
+  function showTaskCard() {
+    const card = Game.taskCardText(state.level);
+    if (els.taskKicker) els.taskKicker.textContent = card.kicker;
+    if (els.taskTitle) els.taskTitle.textContent = card.title;
+    if (els.taskBody) els.taskBody.textContent = card.body;
+    if (els.taskGo) els.taskGo.textContent = card.go;
+    showPanel(els.task);
+  }
+
   function showIntro() {
     state.phase = "intro";
     const lines = state.level.intro;
@@ -367,21 +381,20 @@
 
   function renderMonsters() {
     els.monsters.textContent = "";
-    state.questions.forEach((monster, idx) => {
-      const btn = document.createElement("button");
-      btn.type = "button";
-      btn.className = "battle-monster";
-      btn.dataset.idx = String(idx);
-      btn.tabIndex = idx === state.questionIdx ? 0 : -1;
-      btn.setAttribute("aria-label", `${monster.term}`);
-      btn.appendChild(spriteNode(monster.sprite, monster.zh));
-      const label = document.createElement("span");
-      label.className = "battle-monster-word";
-      label.textContent = monster.term;
-      btn.appendChild(label);
-      btn.addEventListener("click", () => speakTerm(monster.term));
-      els.monsters.appendChild(btn);
-    });
+    const monster = currentMonster();
+    if (!monster) return;
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "battle-monster";
+    btn.dataset.idx = String(state.questionIdx);
+    btn.tabIndex = 0;
+    btn.setAttribute("aria-label", monster.zh || "小妖");
+    btn.appendChild(spriteNode(monster.sprite, monster.zh));
+    const label = document.createElement("span");
+    label.className = "battle-monster-word";
+    label.textContent = monster.zh || monster.term;
+    btn.appendChild(label);
+    els.monsters.appendChild(btn);
     focusCurrentMonster();
   }
 
@@ -402,14 +415,15 @@
     els.orbs.textContent = "";
     if (!monster) return;
     const seed = state.level.seedBase + state.waveIndex * 100 + state.questionIdx * 7;
-    const set = Core.buildOrbSet(monster, state.level.previewWords, seed);
-    set.orbs.forEach((orb) => {
+    const duel = Game.buildWordChoices(monster, state.level.previewWords, seed);
+    state.waveDuel = duel;
+    duel.choices.forEach((choice) => {
       const btn = document.createElement("button");
       btn.type = "button";
-      btn.className = "battle-orb";
-      btn.textContent = orb.zh;
+      btn.className = "battle-orb is-word";
+      btn.textContent = choice.term;
       btn.tabIndex = 0;
-      btn.addEventListener("click", () => throwOrb(orb, btn));
+      btn.addEventListener("click", () => throwOrb({ zh: choice.term }, btn));
       els.orbs.appendChild(btn);
     });
   }
@@ -418,14 +432,11 @@
     if (state.phase !== "wave" && state.phase !== "boss") return;
     if (state.roundLocked) return;
     const monster = currentMonster();
-    if (!monster || orbBtn.classList.contains("is-spent")) return;
-    orbBtn.classList.add("is-spent");
+    if (!monster || (orbBtn && orbBtn.disabled)) return;
     state.roundLocked = true;
     const roundId = ++state.roundId;
-    flyProjectile(orbBtn, els.monsters.children[state.questionIdx], () => {
-      if (roundId !== state.roundId) return;
-      resolveHit(orb, monster, orbBtn);
-    });
+    if (roundId !== state.roundId) return;
+    resolveHit(orb, monster, orbBtn);
   }
 
   function flyProjectile(fromEl, toEl, onArrive) {
@@ -450,9 +461,9 @@
 
   function resolveHit(orb, monster, orbBtn) {
     state.roundLocked = false;
-    const verdict = Core.judgeHit(orb, monster, state.combo);
+    const verdict = Core.judgeHit(orb, { term: monster.term, zh: monster.term }, state.combo);
     if (!verdict.correct) window.BookPlayAudio?.sfx("shield");
-    const monsterEl = els.monsters.children[state.questionIdx];
+    const monsterEl = els.monsters.children[0];
     if (verdict.correct) {
       speakTerm(monster.term);
       state.weakWords = Game.recordWeakAnswer(state.weakWords, monster.term, { correct: true });
@@ -460,50 +471,19 @@
       state.killed += 1;
       if (monsterEl) monsterEl.classList.add("is-dead");
       state.questionIdx += 1;
-      if (verdict.comboReady && state.questionIdx < state.questions.length) {
-        showToast("棒影连击！连击清场！⚡", 1500);
-        for (let i = state.questionIdx; i < state.questions.length; i += 1) {
-          const swept = els.monsters.children[i];
-          if (swept) {
-            swept.classList.add("is-dead");
-            const rect = swept.getBoundingClientRect();
-            const pop = document.createElement("span");
-            pop.className = "battle-dmgpop";
-            pop.textContent = `−1  ${state.questions[i].term}`;
-            pop.style.left = `${rect.left + rect.width / 2}px`;
-            pop.style.top = `${rect.top}px`;
-            els.projectiles.appendChild(pop);
-            window.setTimeout(() => pop.remove(), 950);
-          }
-          state.killed += 1;
-        }
-        state.questionIdx = state.questions.length;
-      }
+      showToast(verdict.comboReady ? "棒影连击！打中了，掉血了。" : `打中了。${monster.term} 掉了一截血。`, 1200);
       updateHud();
       if (state.questionIdx >= state.questions.length) {
         window.setTimeout(nextStage, 700);
       } else {
-        focusCurrentMonster();
+        renderMonsters();
         spawnOrbs();
       }
     } else {
-      state.wrongWords[monster.term] = (state.wrongWords[monster.term] || 0) + 1;
-      state.weakWords = Game.recordWeakAnswer(state.weakWords, monster.term, { correct: false });
-      persistWeak();
-      state.shield = Math.max(0, state.shield - 1);
-      state.combo.streak = 0;
-      if (monsterEl) {
-        monsterEl.classList.add("is-hurt");
-        window.setTimeout(() => monsterEl.classList.remove("is-hurt"), 300);
-      }
-      updateHud();
-      if (state.shield <= 0) {
-        showToast("护盾碎了！小妖重新列阵，别灰心 💪", 2000);
-        state.shield = 3;
-        window.setTimeout(() => startWave(state.waveIndex), 900);
-      } else {
-        spawnOrbs();
-      }
+      state.roundLocked = false;
+      if (orbBtn) orbBtn.disabled = true;
+      window.BookPlayAudio?.sfx("retry");
+      showToast("再想一想。这只小妖还在。", 1400);
     }
   }
 
@@ -558,7 +538,7 @@
     if (els.defend) els.defend.hidden = false;
     if (els.turn) {
       els.turn.hidden = false;
-      els.turn.textContent = "抢答！";
+      els.turn.textContent = "选词！";
     }
     if (els.heroHpName) els.heroHpName.textContent = (state.kit && state.kit.hero && state.kit.hero.nameZh) || "孙悟空";
     const boss = state.level.cast.boss;
@@ -638,7 +618,7 @@
     els.orbs.textContent = "";
     const wrap = document.createElement("div");
     wrap.className = "battle-typing";
-    wrap.innerHTML = `<p class="battle-typing-track" id="battle-typing-track"></p><p class="battle-typing-hint">键盘输入英文 · 10 秒抢答</p>`;
+    wrap.innerHTML = `<p class="battle-typing-track" id="battle-typing-track"></p><p class="battle-typing-hint">键盘输入这个英文。打对才会掉血。</p>`;
     els.orbs.appendChild(wrap);
     state.typing = { typed: "", wrong: "", goal: round.typingTarget || "" };
     paintTyping();
@@ -674,20 +654,19 @@
       speakTerm(built.playTerm);
     }
     if (built.kind === "typing") {
+      if (els.promptSub) els.promptSub.textContent = "把这个英文打出来。打对才会掉血。";
       renderTypingRound(built);
-      startRace();
       return;
     }
     (built.orbs || []).forEach((orb) => {
       const btn = document.createElement("button");
       btn.type = "button";
-      btn.className = "battle-orb";
+      btn.className = "battle-orb is-word";
       btn.textContent = orb.zh;
       btn.tabIndex = 0;
       btn.addEventListener("click", () => throwBossOrb(orb, btn));
       els.orbs.appendChild(btn);
     });
-    startRace();
   }
 
   function clearRaceTimers() {
@@ -807,19 +786,7 @@
 
   function throwBossOrb(orb, orbBtn) {
     if (state.phase !== "boss" || state.roundLocked) return;
-    if (orbBtn && orbBtn.classList && orbBtn.classList.contains("is-spent")) return;
-    if (state.race && !state.race.resolved) {
-      const winner = Core.resolveRaceEvent({
-        now: performance.now(),
-        deadlineAt: state.race.deadlineAt,
-        rivalAt: state.race.rivalAt,
-        playerAt: performance.now(),
-      });
-      if (winner !== "player") return;
-      state.race.resolved = true;
-      clearRaceTimers();
-    }
-    if (orbBtn && orbBtn.classList) orbBtn.classList.add("is-spent");
+    if (orbBtn && orbBtn.disabled) return;
     state.roundLocked = true;
     const roundId = ++state.roundId;
     const hpWords = state.level.boss.hpWords;
@@ -827,12 +794,15 @@
     const answerZh = (state.bossRound && state.bossRound.answerZh) || hpWord.term;
     const verdict = Core.judgeHit(orb, { term: hpWord.term, zh: answerZh }, state.combo);
     const bossEl = $("battle-boss");
-    const fromEl = verdict.correct ? els.hero : (bossEl || orbBtn);
-    const toEl = verdict.correct ? bossEl : els.hero;
-    flyProjectile(fromEl, toEl, () => {
-      if (roundId !== state.roundId) return;
-      state.roundLocked = false;
-      if (verdict.correct) {
+    if (roundId !== state.roundId) return;
+    state.roundLocked = false;
+    if (!verdict.correct) {
+      if (orbBtn) orbBtn.disabled = true;
+      window.BookPlayAudio?.sfx("retry");
+      showToast("再想一想。这只妖怪还在。", 1400);
+      return;
+    }
+    {
         const skill = Core.pickHeroSkill(state.kit, state.combo);
         state.weakWords = Game.recordWeakAnswer(state.weakWords, hpWord.term, { correct: true });
         persistWeak();
@@ -883,10 +853,7 @@
           if (els.turn) els.turn.textContent = "悟空回合";
           renderBossOrbs();
         }
-      } else {
-        applyBossMiss(hpWord);
-      }
-    });
+    }
   }
 
   function showTaunt() {
@@ -1256,12 +1223,13 @@
       state.level = freezeLevel(level, state.wrongWords);
       renderHero();
       updateHud();
-      showIntro();
+      showTaskCard();
     });
   }
 
   els.dialogueNext.addEventListener("click", onIntroNext);
   els.dialogueReplay?.addEventListener("click", replayDialogue);
+  if (els.taskGo) els.taskGo.addEventListener("click", () => showIntro());
   els.previewStart.addEventListener("click", () => startWave(0));
   window.addEventListener("pagehide", () => stopAudio("navigation"));
   document.addEventListener("visibilitychange", () => { if (document.hidden) stopAudio("navigation"); });
