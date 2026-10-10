@@ -44,6 +44,15 @@ test("包1文案禁止词不对，失败键是再来一趟", () => {
   assert.match(core, /救猴群/);
   assert.match(css, /pack1-verb/);
   assert.doesNotMatch(ui, /看中文选英文/);
+  assert.match(ui, /demonLine/);
+  assert.match(ui, /pack1-bubble/);
+  assert.match(ui, /pack1-hp-fill/);
+  assert.match(ui, /pack1-slash/);
+  assert.match(ui, /is-hit/);
+  assert.match(css, /pack1-bubble/);
+  assert.match(css, /pack1-hp-fill/);
+  assert.match(css, /pack1-slash/);
+  assert.doesNotMatch(ui, /点出对应的英文/);
 });
 
 test("包1只碰 battle/weak 键，先打一把开关关着", () => {

@@ -130,6 +130,27 @@ test("进度补丁不写 lesson 或 adv_progress", () => {
   assert.deepEqual(core.ALLOWED_PROGRESS_KEYS.includes("bookplay_battle_progress_v1"), true);
 });
 
+test("气泡带着英语关键词，血条按这一击往下掉", () => {
+  const run = core.enterArena(core.buildRun(miniLevel(), { minionCount: 1 }));
+  run.minions[0].kind = "en-choice";
+  const line = core.demonLine(run);
+  assert.match(line, new RegExp(run.minions[0].term));
+  assert.match(line, /挡路/);
+  assert.doesNotMatch(line, /点出对应的英文|看中文选英文/);
+  const full = core.hpView(run);
+  assert.equal(full.left, 2);
+  assert.equal(full.ratio, 1);
+  const hit = core.applyChoice(run, run.minions[0].term);
+  assert.equal(hit.hpLeft, 1);
+  assert.equal(hit.hpMax, 2);
+  const half = core.hpView(run);
+  assert.equal(half.ratio, 0.5);
+  const miss = core.applyChoice(run, "zzzz");
+  assert.equal(miss.correct, false);
+  assert.equal(miss.hpLeft, 1);
+  assert.equal(core.hpView(run).ratio, 0.5);
+});
+
 test("英文选项恰好含正解，提示用中文或听力", () => {
   const run = core.enterArena(core.buildRun(miniLevel(), { minionCount: 1 }));
   const prompt = core.currentPrompt(run, 7);
