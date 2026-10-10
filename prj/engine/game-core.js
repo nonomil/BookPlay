@@ -690,6 +690,67 @@
     return next;
   }
 
+  function taskCardText(level) {
+    const title = level && level.title ? (level.title.zh || level.title.en || "") : "";
+    const place = title || "这一集";
+    return {
+      kicker: "降妖记",
+      title: "先办这一件事",
+      body: `${place}里有小妖挡路。看它身上的中文，点对英文，它才会掉血。点错了再试一次就好。`,
+      go: "去降妖",
+    };
+  }
+
+  function mixSeed(seed) {
+    let state = 2166136261;
+    const text = String(seed || "duel");
+    for (let i = 0; i < text.length; i += 1) {
+      state ^= text.charCodeAt(i);
+      state = Math.imul(state, 16777619);
+    }
+    return state >>> 0;
+  }
+
+  function buildWordChoices(target, pool, seed) {
+    const term = String(target && (target.term || target.word) || "").trim();
+    const zh = String(target && (target.zh || target.gloss) || "").trim();
+    const items = [];
+    const seen = new Set();
+    const push = (raw) => {
+      const word = String(raw && (raw.term || raw.word) || "").trim();
+      const gloss = String(raw && (raw.zh || raw.gloss) || "").trim();
+      const key = word.toLowerCase();
+      if (!word || seen.has(key)) return;
+      seen.add(key);
+      items.push({ term: word, zh: gloss });
+    };
+    push(target);
+    (Array.isArray(pool) ? pool : []).forEach(push);
+    const answerItem = items.find((item) => item.term.toLowerCase() === term.toLowerCase()) || null;
+    const rest = items.filter((item) => item !== answerItem);
+    let state = mixSeed(seed);
+    const picked = [];
+    const bag = rest.slice();
+    while (picked.length < 2 && bag.length) {
+      state = (Math.imul(state, 1664525) + 1013904223) >>> 0;
+      picked.push(bag.splice(state % bag.length, 1)[0]);
+    }
+    const choices = (answerItem ? [answerItem] : []).concat(picked);
+    for (let i = choices.length - 1; i > 0; i -= 1) {
+      state = (Math.imul(state, 1664525) + 1013904223) >>> 0;
+      const j = state % (i + 1);
+      const swap = choices[i];
+      choices[i] = choices[j];
+      choices[j] = swap;
+    }
+    return {
+      term,
+      zh,
+      choices,
+      answer: choices.findIndex((item) => item.term.toLowerCase() === term.toLowerCase()),
+    };
+  }
+
   function isWeakTerm(rec) {
     return Boolean(rec) && Number(rec.wrong) >= WEAK_WRONG_IN;
   }
@@ -811,5 +872,7 @@
     applyFrozenLevel,
     recordWeakAnswer,
     isWeakTerm,
+    taskCardText,
+    buildWordChoices,
   };
 });

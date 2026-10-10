@@ -1,9 +1,7 @@
 "use strict";
 
-/* 降妖记·大地图（word-memory-map 同款玩法移植）：
- * 4×4 平铺大世界 + 镜头跟随；主角八方向自由行走（方向键/摇杆）；
- * 小怪头顶英文单词、会追踪并撞击主角；地面刷中文词球，走过捡起、
- * 点对小怪投掷（追踪弹）；答对爆碎掉星/掉道具，答错词球弹回；
+/* 降妖记·大地图。首包战斗是选词降妖：同屏一只小妖，点对英文才掉血，点错再试。
+ * 关卡前有一张薄任务卡。探索走图留到二期，扔球不再是打法。
  * 支援道具（蟠桃挡伤/芭蕉扇减速/紫金葫芦瞄准/筋斗云加速/紧箍咒提示/金箍棒补盾）；
  * NPC 剧情对话答题（pixel-story 式游标）；Boss 区跳转 battle.html 对战。
  * 移动内核与实体渲染方式对照 word-memory-map：世界坐标 → 百分比定位，
@@ -112,6 +110,14 @@
     route: $("game-route"),
     supports: $("game-supports"),
     hintcard: $("game-hintcard"),
+    task: $("game-task"),
+    taskKicker: $("game-task-kicker"),
+    taskTitle: $("game-task-title"),
+    taskBody: $("game-task-body"),
+    taskGo: $("game-task-go"),
+    duel: $("game-duel"),
+    duelSign: $("game-duel-sign"),
+    duelChoices: $("game-duel-choices"),
     typepad: $("game-typepad"),
     joystick: $("game-joystick"),
     stick: $("game-stick"),
@@ -571,7 +577,7 @@
       el.appendChild(monsterImg);
       const word = document.createElement("span");
       word.className = "game-word";
-      word.textContent = m.term;
+      word.textContent = m.zh || m.term;
       el.appendChild(word);
       el.addEventListener("click", (ev) => {
         ev.stopPropagation();
@@ -674,14 +680,14 @@
     waveMonsters.forEach((m, idx) => {
       const pos = spreadSpawns[idx] || rawSpawns[idx];
       m.alive = true;
-      m.active = true;
+      m.active = idx === 0;
       m.slotIndex = idx;
       m.x = pos.x;
       m.y = pos.y;
       m.tx = pos.x;
       m.ty = pos.y;
       m.attackCd = 0;
-      m.el.style.display = "";
+      m.el.style.display = idx === 0 ? "" : "none";
       m.el.classList.remove("is-dead");
       // Spawn on the hero's right, so default south (¾ view) reads as "stuck facing right".
       m.moving = true;
@@ -718,6 +724,7 @@
       orb.x = pos.x;
       orb.y = pos.y;
       placeAt(el, orb.x, orb.y);
+      el.style.display = "none";
       state.orbs.push(orb);
     });
     persistProgress();
@@ -1215,7 +1222,7 @@
     zh.className = "game-hint-zh";
     zh.textContent = state.carried
       ? `${word.zh}（头上顶着这个词的就是目标）`
-      : `${word.zh} · 空手预习，捡中文球再扔`;
+      : `${word.zh} · 点对英文才会掉血`;
     body.append(term, zh);
     const hear = document.createElement("button");
     hear.type = "button";
@@ -1236,14 +1243,100 @@
 
   function onMonsterClick(monster) {
     if (state.locked || !monster.alive) return;
-    if (!state.carried) {
-      previewMonsterWord(monster);
+    openDuel(monster);
+  }
+
+  function activeDemon() {
+    return state.monsters.find((m) => m.alive && m.active && m.waveIndex === state.waveIndex) || null;
+  }
+
+  function promoteNextDemon() {
+    const next = state.monsters.find((m) => m.alive && !m.active && m.waveIndex === state.waveIndex);
+    if (!next) return null;
+    next.active = true;
+    next.el.style.display = "";
+    placeAt(next.el, next.x, next.y);
+    return next;
+  }
+
+  function openDuel(monster) {
+    if (!monster || !monster.alive || !els.duel) return;
+    state.duelMonster = monster;
+    const pool = (state.level.previewWords || []).concat(state.monsters);
+    const duel = Game.buildWordChoices(monster, pool, `${EP}|${monster.term}|${state.killed}`);
+    state.duel = duel;
+    els.duelSign.textContent = duel.zh || "小妖";
+    els.duelChoices.textContent = "";
+    duel.choices.forEach((choice, index) => {
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "game-duel-choice";
+      btn.textContent = choice.term;
+      btn.addEventListener("click", () => chooseDuel(index));
+      els.duelChoices.appendChild(btn);
+    });
+    els.duel.hidden = false;
+  }
+
+  function chooseDuel(index) {
+    const monster = state.duelMonster;
+    const duel = state.duel;
+    if (!monster || !duel || !monster.alive) return;
+    const verdict = Core.judgeHit(
+      { zh: duel.choices[index] && duel.choices[index].term },
+      { zh: monster.term },
+      state.combo,
+    );
+    if (!verdict.correct) {
+      window.BookPlayAudio?.sfx("retry");
+      const buttons = els.duelChoices.querySelectorAll("button");
+      if (buttons[index]) buttons[index].disabled = true;
+      showToast("再想一想。这只小妖还在。", 1400);
       return;
     }
-    throwOrb(monster);
+    els.duel.hidden = true;
+    state.duel = null;
+    state.duelMonster = null;
+    window.BookPlayAudio?.sfx("correct");
+    speakTerm(monster.term);
+    state.stars += 1;
+    state.killed += 1;
+    state.weakWords = Game.recordWeakAnswer(state.weakWords, monster.term, { correct: true });
+    killMonster(monster);
+    spawnBurst(monster);
+    showToast(`打中了。${monster.term} 掉了一截血。`, 1400);
+    updateHud();
+    const next = promoteNextDemon();
+    if (next) {
+      window.setTimeout(() => openDuel(next), 700);
+      return;
+    }
+    advanceWaveIfNeeded();
+  }
+
+  function showTaskCard() {
+    if (!els.task || state.mapStage === "complete" || state.mapStage === "boss" || state.mapStage === "npc") return;
+    const card = Game.taskCardText(state.level);
+    els.taskKicker.textContent = card.kicker;
+    els.taskTitle.textContent = card.title;
+    els.taskBody.textContent = card.body;
+    els.taskGo.textContent = card.go;
+    els.task.hidden = false;
+    state.locked = true;
+  }
+
+  function dismissTask() {
+    if (els.task) els.task.hidden = true;
+    state.locked = false;
+    const demon = activeDemon();
+    if (demon) openDuel(demon);
   }
 
   function throwOrb(monster) {
+    if (monster && monster.alive) {
+      openDuel(monster);
+      return;
+    }
     // 投掷不锁世界：小怪照常追击/游荡，追踪弹逐帧更新（对照 word-memory-map）
     // 点中谁飞向谁；词牌不对则弹回。紫金葫芦 / gourd-seek 才自动改瞄配对小妖。
     if (!state.carried) return;
@@ -2221,6 +2314,7 @@
       navigateGame(leaveUrl());
     });
     if (FROM_LESSON) $("game-map").textContent = "回课堂";
+    if (els.taskGo) els.taskGo.addEventListener("click", dismissTask);
     els.dialogueNext.addEventListener("click", advanceDialogue);
     els.dialogueClose?.addEventListener("click", closeDialogue);
     els.dialogueReplay?.addEventListener("click", () => {
@@ -2247,8 +2341,7 @@
       },
       onAction: () => {
         const near = nearestEntity();
-        if (near && near.kind === "monster" && state.carried) throwOrb(near.ref);
-        else if (near && near.kind === "monster") previewMonsterWord(near.ref);
+        if (near && near.kind === "monster") openDuel(near.ref);
         if (near && near.kind === "npc") openDialogue(near.ref);
         if (near && near.kind === "boss") openBossGate();
       },
@@ -2409,14 +2502,9 @@
         showToast("本集已完成，可以继续逛。点 Boss 区看结算。", 2800);
       } else {
         showBanner("出发！", `${state.level.title.zh || state.level.title.en} · ${THEME_ZH[(state.level.map || {}).theme] || ""}`);
-        if (FROM_BATTLE) showToast("战斗归来！进度已经恢复 🗺️", 2000);
-        else if (state.playVerb === "listen-rings") showToast("听英文，走进发光的词环！也可以捡中文球扔配对小妖。", 4200);
-        else if (state.playVerb === "type-lock") showToast("捡中文球，跟打头顶英文才飞得出去！", 4200);
-        else if (state.playVerb === "gourd-seek") showToast("紫金葫芦篇：扔出去会自己找对的英文小妖。", 4200);
-        else if (state.playVerb === "fan-blow") showToast("芭蕉扇篇：对着小妖的方向扇，会吹中配对的英文。", 4200);
-        else if (state.playVerb === "fire-ward") showToast("三昧真火：离小妖远一点再扔，别烫着！", 4200);
-        else if (FROM_LESSON) showToast("巩固过的词就在地图上，捡起来扔对应的小妖！", 4200);
-        else showToast("走过中文词球捡起来，点头顶有对应英文的小妖！", 4200);
+        if (FROM_BATTLE) showToast("战斗归来！进度已经恢复。", 2000);
+        else showToast("点对英文，小妖才会掉血。", 2200);
+        showTaskCard();
       }
     });
   }

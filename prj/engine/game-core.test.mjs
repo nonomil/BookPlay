@@ -496,6 +496,22 @@ test("地图完成后不应再次开启 Boss 门", () => {
   assert.equal(core.isMapRunComplete("wave2"), false);
 });
 
+test("选词降妖：三选一，任务卡是西游口吻", () => {
+  const duel = core.buildWordChoices(
+    { term: "monkey", zh: "猴子" },
+    [{ term: "monkey", zh: "猴子" }, { term: "water", zh: "水" }, { term: "rock", zh: "岩石" }],
+    "ep1",
+  );
+  assert.equal(duel.choices.length, 3);
+  assert.equal(duel.choices[duel.answer].term, "monkey");
+  assert.equal(duel.zh, "猴子");
+  const card = core.taskCardText({ title: { zh: "花果山" } });
+  assert.match(card.body, /花果山/);
+  assert.match(card.body, /掉血/);
+  assert.match(card.body, /再试一次/);
+  assert.doesNotMatch(card.body, /星际|宇航员/);
+});
+
 test("Boss 血条比例与战报最多 3 条", () => {
   assert.equal(core.bossHpRatio(0, 4), 1);
   assert.equal(core.bossHpRatio(2, 4), 0.5);

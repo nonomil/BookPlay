@@ -40,9 +40,10 @@ test('battle.js：只使用两个 battle 存储键，无危险 API', () => {
 
 test('battle.js：复用 battle-core 与 vocab quiz 模块', () => {
   const js = read('battle.js');
-  for (const fn of ['buildLevel', 'buildWaveQuestions', 'buildOrbSet', 'judgeHit', 'settleRun', 'loadSprites']) {
+  for (const fn of ['buildLevel', 'buildWaveQuestions', 'buildBossRound', 'judgeHit', 'settleRun', 'loadSprites']) {
     assert.match(js, new RegExp(`\\.${fn}\\(`), fn);
   }
+  assert.match(js, /buildWordChoices/);
   assert.match(js, /BookPlayEpisodeVocabQuiz/);
   assert.match(js, /buildEpisodeQuiz/);
   assert.match(js, /BookPlayGameCore/);
@@ -52,6 +53,18 @@ test('battle.js：从大地图进入时保留地图存档字段，并带 from=ba
   const js = read('battle.js');
   assert.match(js, /Object\.assign\(\{\}, prev/);
   assert.match(js, /game\.html\?ep=\$\{EP\}&from=battle/);
+});
+
+test('battle.js：关卡前有任务卡，选词直接扣血，答错不扔球也不扣护盾', () => {
+  const js = read('battle.js');
+  assert.match(js, /function showTaskCard\(/);
+  assert.match(js, /再想一想。这只小妖还在。/);
+  assert.match(js, /再想一想。这只妖怪还在。/);
+  assert.match(js, /buildWordChoices/);
+  const waveThrow = js.slice(js.indexOf('function throwOrb('), js.indexOf('function flyProjectile('));
+  assert.doesNotMatch(waveThrow, /flyProjectile/);
+  const bossThrow = js.slice(js.indexOf('function throwBossOrb('), js.indexOf('function showTaunt('));
+  assert.doesNotMatch(bossThrow, /flyProjectile|applyBossMiss/);
 });
 
 test('battle.js：每个 Boss/小怪回合有 roundId 锁，连点只接收一次命中', () => {
@@ -143,18 +156,19 @@ test("本集冻 10 词，Boss 不会不算错词", () => {
   assert.match(html, /id="battle-skip"/);
 });
 
-test("Boss 抢答窗：10 秒条、妖怪也会答、超时走 applyBossMiss", () => {
+test("选词路径不启动抢答倒计时，答错不扣护盾", () => {
   const js = read("battle.js");
-  const css = read("battle.css");
   const html = read("battle.html");
-  assert.match(js, /function startRace\(/);
-  assert.match(js, /function finishRace\(/);
-  assert.match(js, /function applyBossMiss\(/);
-  assert.match(js, /Core\.resolveRaceEvent/);
-  assert.match(js, /Core\.rivalThinkMs/);
-  assert.match(js, /妖怪抢先答对了/);
-  assert.match(html, /id="battle-race"/);
-  assert.match(css, /\.battle-race-fill/);
+  const renderBoss = js.slice(js.indexOf("function renderBossOrbs("), js.indexOf("function clearRaceTimers("));
+  assert.doesNotMatch(renderBoss, /startRace\(/);
+  assert.match(renderBoss, /throwBossOrb/);
+  const waveThrow = js.slice(js.indexOf("function throwOrb("), js.indexOf("function flyProjectile("));
+  assert.doesNotMatch(waveThrow, /startRace\(|applyBossMiss|flyProjectile/);
+  const bossThrow = js.slice(js.indexOf("function throwBossOrb("), js.indexOf("function showTaunt("));
+  assert.doesNotMatch(bossThrow, /startRace\(|applyBossMiss|flyProjectile/);
+  assert.match(js, /再想一想。这只妖怪还在。/);
+  assert.match(html, /id="battle-task"/);
+  assert.doesNotMatch(renderBoss, /10 秒抢答/);
 });
 
 test("Boss 阶段是宝可梦式擂台：椭圆台、近大远小、回合条", () => {
