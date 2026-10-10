@@ -410,9 +410,9 @@ body { overflow: auto; }
 .book-grid {
   position: relative;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1.1rem;
-  max-width: 1080px;
+  max-width: 860px;
   width: 100%;
   margin: 0.8rem auto 2.4rem;
   padding: 0 1.4rem;
@@ -444,3 +444,7 @@ body { overflow: auto; }
 .book-en { color: #8a7460; font-size: 0.88rem; margin-top: 0.15rem; }
 .book-hint { color: #c23a32; font-size: 0.82rem; margin-top: 0.45rem; font-weight: 700; }
 .book-card:hover { transform: translateY(-3px); }
+
+@media (max-width: 560px) {
+  .book-grid { grid-template-columns: 1fr; }
+}
