@@ -12,6 +12,8 @@
 
 浏览器会打开 `http://127.0.0.1:8810/engine/home.html`。播放器依赖 HTTP Range，不要改用 `python -m http.server`。
 
+降妖记暂停菜单有「洞中认词」（也可直接打开 `/engine/word-quiz.html`）：补字母、看图选词、听音选图。进度在 `bookplay_jttw_word_quiz_v1`，不写西游主进度，也不改扔球战斗。没有本集关卡时用花果山短词；听不到原声就改看大字。不到 70% 不算过。说明见 [洞中认词](docs/降妖记认词.md)。
+
 验证当前源码与数据合同：
 
 ```powershell

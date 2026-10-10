@@ -79,6 +79,16 @@
       <button type="button" class="battle-secondary" id="game-restart" tabindex="0">重玩本集</button>
       <button type="button" class="battle-secondary" data-open-handheld tabindex="0">掌机按键</button>
       <button type="button" class="battle-secondary" id="game-map" tabindex="0">回地图</button>
+      <a class="battle-secondary" id="game-word-quiz" href="word-quiz.html?from=game">洞中认词</a>
+      <script>
+        (function () {
+          var link = document.getElementById("game-word-quiz");
+          if (!link) return;
+          var ep = new URLSearchParams(location.search).get("ep") || "1";
+          if (!/^\d+$/.test(ep)) ep = "1";
+          link.href = "word-quiz.html?from=game&ep=" + ep;
+        })();
+      </script>
     </section>
     <section class="game-panel game-gate" id="game-gate" hidden aria-live="polite"></section>
     <div class="battle-toast" id="game-toast" hidden aria-live="polite"></div>

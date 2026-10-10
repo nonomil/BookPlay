@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <script src="./native-key.js"></script>
+  <script defer src="./handheld-controls.js" data-app="bookplay"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>降妖记 · 洞中认词</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="tv.css?v=1">
+  <link rel="stylesheet" href="handheld.css?v=1">
+  <link rel="stylesheet" href="word-quiz.css?v=1">
+</head>
+<body class="word-quiz" data-audio-scene="jttw">
+  <main class="quiz-shell">
+    <header class="quiz-top">
+      <a class="quiz-back" id="quiz-back" href="map.html">回地图</a>
+      <div>
+        <p class="quiz-kicker" id="quiz-kicker">降妖记</p>
+        <h1 id="quiz-title">洞中认词</h1>
+      </div>
+      <p class="quiz-saved" id="quiz-saved" aria-live="polite"></p>
+    </header>
+    <p class="quiz-source" id="quiz-source">正在准备这一集的词…</p>
+    <section class="quiz-stage" id="quiz-stage" aria-live="polite"></section>
+  </main>
+  <script src="content-gate.js?v=2"></script>
+  <script src="episode-vocab-quiz.js?v=1"></script>
+  <script src="word-quiz-core.js?v=1"></script>
+  <script src="word-quiz.js?v=1"></script>
+</body>
+</html>
