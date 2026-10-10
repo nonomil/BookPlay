@@ -62,7 +62,7 @@ desktop.ini
 !/data/西游记课件/3.3西游记  Journey to the West PPT课件/004_Journey to the West 4_Secret Formulas.pptx
 !/data/西游记课件/3.3西游记  Journey to the West PPT课件/005_Journey to the West 5_The Demon of Chaos.pptx
 
-# Video stays local. Images and audio are tracked.
+# Video stays local, except the first five player episodes.
 *.mp4
 *.webm
 *.mov
@@ -71,6 +71,11 @@ desktop.ini
 *.m4v
 *.flv
 *.wmv
+!/content/assets/video/ep1.mp4
+!/content/assets/video/ep2.mp4
+!/content/assets/video/ep3.mp4
+!/content/assets/video/ep4.mp4
+!/content/assets/video/ep5.mp4
 
 # These single files exceed GitHub's 100MB limit.
 /data/02-西游记精读版台词本/带标注版PDF合并版.pdf
