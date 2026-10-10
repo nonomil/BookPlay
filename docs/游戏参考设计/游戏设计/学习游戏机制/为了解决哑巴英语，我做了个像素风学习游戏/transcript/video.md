@@ -1,0 +1,31 @@
+## 视频转录
+
+- **00:00-00:15** 为何你考过了四六级,也刷了大量美剧,可是一遇到真实对话,还是听不懂,讲不出。真正拉开差距的,从来不是你背了多少单词,而是能不能做到大胆开口,多听多烈。
+- **00:15-00:29** 因此,我开发了一款像素风英语学习游戏。在这里,我们把生活中遇到的各种真实问题,做成了游戏中的一个个英文对话任务,让你和NBC练习大量的集心对话。
+- **00:29-00:48** 现在我们遇到了第一个任务,点一份不要酸黄瓜的烤鸡三明治和一杯无冰气泡水。问题来了,我不知道怎么用英文讲酸黄瓜。如果是现实的话,这里就尴尬地卡住了。在游戏里,我们可以试着大胆开口,在英文中夹杂你不会的中文。
+- **00:48-00:51** Hi there, what can I get for you today?
+- **00:54-00:59** I would like a grilled chicken sandwich, no 酸黄瓜。
+- **01:05-01:08** You can say no pickles.
+- **01:09-01:17** NBC像一个真人外教一样,通过影视纠正来完成了这个单字的教学。我们来练习一次。
+- **01:17-01:22** I would like a grilled chicken sandwich, no pickles.
+- **01:29-01:34** Got it, a grilled chicken sandwich with no pickles.
+- **01:35-01:37** What would you like to drink?
+- **01:38-01:41** Sparkly water, no ice.
+- **01:48-01:54** Sure, a sparkling water with no ice. For here or to go?
+- **01:55-01:56** For here.
+- **02:03-02:12** So, that's a grilled chicken sandwich with no pickles and a sparkling water with no ice.
+- **02:12-02:16** For here, can you confirm that's correct?
+- **02:17-02:19** Yes, it's correct.
+- **02:26-02:30** Alright, your order is confirmed.
+- **02:31-02:39** Please wait a moment and pick up your food at the pickup counter when it's ready. Thank you.
+- **02:48-03:00** 现在来了一个新任务,三名治理的生菜不太新鲜,让服务员给换成新鲜的。不过我们先故意说错情况,看看NBC是不是只会顺着我们的话奖。
+- **03:02-03:06** Hi again, is there something wrong with your order?
+- **03:07-03:11** Jer Apikos in my stand-alone.
+- **03:11-03:18** Let me check your sandwich.
+- **03:19-03:27** I don't see any pickles in it.It looks like we made it without pickles as you requested.
+- **03:28-03:30** Is there anything else wrong?
+- **03:31-03:39** 可以,NBC是能够独立思考和具有记忆的,他并没有盲目顺着我说,那我们如实相告。
+- **03:40-03:43** The lettuce is not fresh.
+- **03:51-03:58** I'm so sorry about that. Let me remake your sandwich with fresh lettuce right away.
+- **03:59-04:12** 以上两个小任务都是生活中,可能会遇到大的一些真实问题。我们的NBC也会表现得像一个真人外教一样,和你进行开放式的对话和影视教学。
+- **04:13-04:23** 我们还有更多的生活场景,以及自由度更高的故事模式。如果你对游戏化英语学习很感兴趣,请持续关注我们的项目。

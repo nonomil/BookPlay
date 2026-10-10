@@ -1,0 +1,29 @@
+## 视频转录
+
+- **00:04-00:06** Drake didn't see the king soldier coming
+- **00:06-00:09** He was busy digging in the onion patch
+- **00:09-00:12** A loud voice behind him are you drake?
+- **00:12-00:15** One of the king soldiers rode up on a black horse
+- **00:15-00:20** His shirt had a gold dragon sewn on it the symbol of king roland the bold
+- **00:20-00:23** The soldier reached down and pulled drake up onto his horse
+- **00:23-00:28** Hey what are you doing drake?Yelled his mother ran out of their hut
+- **00:28-00:30** Wait where are you taking my boy
+- **00:30-00:33** The soldier spurred on the horse and sped off
+- **00:33-00:35** Drake had never been on a horse
+- **00:35-00:37** Before his heart pumped fast
+- **00:37-00:40** As they raced through the village and over the stone bridge
+- **00:40-00:44** Finally they stopped in front of king,Roland's castle
+- **00:44-00:47** The soldier opened the door and gave drake a shove
+- **00:47-00:50** They passed paintings and statues and people in fancy clothes
+- **00:51-00:54** Then they came to some stairs,They walked down down down
+- **00:55-00:56** The soldier stopped at a door
+- **00:57-01:00** Where are we going drake finally asked
+- **01:00-01:03** We are not going anywhere,Good luck
+- **01:03-01:05** Then he ran back up the stairs
+- **01:05-01:07** Drake was all alone
+- **01:07-01:12** He looked at the big stone door,He felt afraid but more than that
+- **01:12-01:13** He was curious
+- **01:13-01:19** He pushed it open and then he saw it the face of a giant red dragon
+- **01:19-01:23** Drake blinked he didn't believe his eyes then whoosh
+- **01:23-01:26** The dragon shot a huge fireball from his mouth
+- **01:26-01:30** Drake didn't know it yet,But this was only the beginning

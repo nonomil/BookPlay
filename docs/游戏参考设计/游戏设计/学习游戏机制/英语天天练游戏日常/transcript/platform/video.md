@@ -1,0 +1,39 @@
+## 视频转录
+
+- **00:00-00:00** 好，开始
+- **00:02-00:07** 大家好，我是润哥，今天咱们继续录咱们的游戏啊
+- **00:07-00:08** 英语天天练
+- **00:10-00:13** 然后咱们这个游戏也是新的
+- **00:14-00:18** 请大家多多支持，然后我也是一个老玩家
+- **00:32-00:34** 还行吧
+- **01:06-01:07** 诶呀
+- **01:10-01:13** The toilet paper is broken
+- **01:13-01:15** 来叔叔给你几个鞭炮啊
+- **01:33-01:36** One two three four,You know that shit is me ya
+- **01:45-01:47** 爱如火在燃烧碰撞
+- **01:48-01:49** How angry?
+- **02:05-02:08** Yo tangyou know that shit is me ya
+- **02:11-02:13** Hey greedy don't fretwhat you see is what you get?
+- **02:15-02:17** He was angry because he was lost
+- **02:20-02:22** 哦，它有金币
+- **02:36-02:40** 天黑人容易犯错，屋顶会着火
+- **02:42-02:43** Seven cats
+- **02:45-02:46** 我也要去
+- **02:47-02:48** I have ten
+- **02:49-02:52** I'm hungry
+- **02:53-02:54** How hungry?
+- **03:15-03:18** 嗯，Two dogs你人呢狗
+- **03:19-03:20** 在走廊
+- **03:49-03:50** 哦，你好
+- **03:53-03:54** She has two dogs
+- **04:13-04:16** Yo dang uh huhyou made that shit that's me yeah
+- **04:21-04:23** 哎呀我操，哎
+- **04:28-04:31** Why is she angry?
+- **04:50-04:51** Happy children
+- **05:17-05:21** Yo ten keys you know this shit is me
+- **05:21-05:24** Yeah ten keys随手关门好奇怪，哼哼
+- **05:26-05:27** Would you buy four apples?
+- **05:31-05:32** I have five
+- **05:49-05:54** Yo tangyou make that shit that's me yeah好了，时间到了
+- **05:59-06:03** 然后。感谢各位小伙伴们的看
+- **06:04-06:08** 和收藏，观看和收藏
