@@ -16,17 +16,23 @@
 
   const $ = (id) => document.getElementById(id);
 
-  function floatText(text, good) {
+  function floatText(text, good, at) {
     const el = document.createElement("span");
     el.className = "pack1-float " + (good ? "is-good" : "is-miss");
     el.textContent = text;
-    el.style.left = "62%";
-    el.style.top = "42%";
+    const x = at ? at.x : window.innerWidth * 0.72;
+    const y = at ? at.y : window.innerHeight * 0.34;
+    el.style.left = `${x}px`;
+    el.style.top = `${y}px`;
     document.body.appendChild(el);
     window.setTimeout(() => el.remove(), 1000);
-    if (window.BookPlayGameFeedback && window.BookPlayGameFeedback.spawnStar && good) {
-      window.BookPlayGameFeedback.spawnStar(window.innerWidth * 0.62, window.innerHeight * 0.38);
-    }
+  }
+
+  function demonPoint() {
+    const demon = $("pack1-demon");
+    if (!demon) return null;
+    const rect = demon.getBoundingClientRect();
+    return { x: rect.left + rect.width * 0.45, y: rect.top + rect.height * 0.35 };
   }
 
   function spriteNode(sprites, spriteId, fallback) {
@@ -101,34 +107,46 @@
       if (!box) return;
       const word = Core.currentWord(run);
       box.textContent = "";
-      box.classList.remove("is-hurt");
+      box.classList.remove("is-hurt", "is-hit");
       const hits = word && word.hitsLeft != null ? word.hitsLeft : 1;
-      box.classList.toggle("is-small", run.phase === "arena" && hits === 1);
+      box.classList.toggle("is-small", run.phase === "arena" && hits === 1 && hits > 0);
       box.classList.toggle("is-tiny", run.phase === "boss");
-      const sprite = (word && word.sprite) || run.boss.sprite || "monkey-minor";
-      box.appendChild(spriteNode(sprites, sprite, "妖"));
-    }
-
-    function renderPrompt() {
-      const prompt = Core.currentPrompt(run, seed);
-      const host = $("pack1-prompt");
-      const choices = $("pack1-choices");
-      if (!prompt || !host || !choices) return;
-      host.textContent = "";
-      const kicker = document.createElement("small");
-      kicker.textContent = prompt.promptKicker;
-      const main = document.createElement("strong");
-      main.textContent = prompt.promptMain;
-      const sub = document.createElement("span");
-      sub.textContent = prompt.promptSub;
-      host.append(kicker, main, sub);
-      if (prompt.illustration) {
+      const hp = document.createElement("div");
+      hp.className = "pack1-hp";
+      hp.id = "pack1-hp";
+      hp.setAttribute("aria-label", "妖怪血条");
+      const fill = document.createElement("span");
+      fill.className = "pack1-hp-fill";
+      fill.id = "pack1-hp-fill";
+      const view = Core.hpView(run);
+      fill.style.width = `${Math.round(view.ratio * 100)}%`;
+      hp.appendChild(fill);
+      const bubble = document.createElement("p");
+      bubble.className = "pack1-bubble";
+      bubble.id = "pack1-bubble";
+      const line = document.createElement("span");
+      line.textContent = Core.demonLine(run);
+      bubble.appendChild(line);
+      if (word && word.kind === "picture-choice" && word.illustration) {
         const pic = document.createElement("img");
         pic.className = "pack1-pic";
-        pic.src = Util.assetUrl(prompt.illustration);
-        pic.alt = prompt.zh || "";
-        host.appendChild(pic);
+        pic.src = Util.assetUrl(word.illustration);
+        pic.alt = "";
+        bubble.appendChild(pic);
       }
+      const sprite = (word && word.sprite) || run.boss.sprite || "monkey-minor";
+      box.append(bubble, hp, spriteNode(sprites, sprite, "妖"));
+    }
+
+    function renderShouts() {
+      const prompt = Core.currentPrompt(run, seed);
+      const sheet = $("pack1-prompt");
+      const choices = $("pack1-choices");
+      if (sheet) {
+        sheet.hidden = true;
+        sheet.textContent = "";
+      }
+      if (!prompt || !choices) return;
       if (prompt.listen && speakTerm) speakTerm(prompt.term, "en");
       choices.textContent = "";
       prompt.choices.forEach((choice) => {
@@ -158,7 +176,7 @@
         hero.dataset.ready = "1";
       }
       renderDemon();
-      renderPrompt();
+      renderShouts();
       hud();
     }
 
@@ -227,16 +245,48 @@
       hud();
     }
 
-    function afterVerdict(verdict, btn) {
-      floatText(verdict.floatText, verdict.correct && !verdict.skipped);
-      if (verdict.correct) window.BookPlayAudio?.sfx("correct");
-      else window.BookPlayAudio?.sfx("retry");
+    function playStrike(verdict, btn) {
       const demon = $("pack1-demon");
-      if (demon && !verdict.correct) {
-        demon.classList.add("is-hurt");
+      const hero = $("pack1-hero");
+      const at = demonPoint();
+      const struck = verdict.correct && !verdict.skipped;
+      floatText(verdict.floatText, struck, at);
+      if (struck) {
+        window.BookPlayAudio?.sfx("attack");
+        window.BookPlayAudio?.sfx("correct");
+        if (demon) demon.classList.add("is-hit");
+        if (hero) hero.classList.add("is-lunge");
+        const stage = document.querySelector(".pack1-stage");
+        if (stage) {
+          const slash = document.createElement("span");
+          slash.className = "pack1-slash is-on";
+          slash.setAttribute("aria-hidden", "true");
+          stage.appendChild(slash);
+          window.setTimeout(() => slash.remove(), 480);
+        }
+        const fill = $("pack1-hp-fill");
+        const max = Math.max(1, Number(verdict.hpMax) || 1);
+        const left = Math.max(0, Number(verdict.hpLeft) || 0);
+        if (fill) fill.style.width = `${Math.round((left / max) * 100)}%`;
+        if (at && window.BookPlayGameFeedback && window.BookPlayGameFeedback.spawnStar) {
+          window.BookPlayGameFeedback.spawnStar(at.x, at.y);
+          window.BookPlayGameFeedback.spawnStar(at.x - 22, at.y - 16);
+        }
+      } else {
+        window.BookPlayAudio?.sfx("retry");
+        if (demon) demon.classList.add("is-hurt");
         if (btn) btn.classList.add("is-wrong");
+        const bubble = $("pack1-bubble");
+        if (bubble) {
+          const line = bubble.querySelector("span") || bubble;
+          line.textContent = `${verdict.floatText}。再喊一次！`;
+        }
       }
       hud();
+    }
+
+    function afterVerdict(verdict, btn) {
+      playStrike(verdict, btn);
       window.setTimeout(() => {
         locked = false;
         if (run.finished) showResult();
@@ -244,7 +294,7 @@
           seed = (seed + 31) >>> 0;
           paintArena();
         }
-      }, verdict.correct ? 420 : 520);
+      }, verdict.correct ? 720 : 640);
     }
 
     function onChoose(en, btn) {

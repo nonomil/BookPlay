@@ -181,6 +181,36 @@
     return null;
   }
 
+  function hpView(run) {
+    const word = currentWord(run);
+    const max = run && run.phase === "boss" ? 1 : HITS_TO_CAPTURE;
+    const left = !word ? 0 : (word.hitsLeft == null ? max : Number(word.hitsLeft));
+    const safeMax = Math.max(1, max);
+    const safeLeft = Math.max(0, Math.min(safeMax, left));
+    return { left: safeLeft, max: safeMax, ratio: safeLeft / safeMax };
+  }
+
+  function demonLine(run) {
+    const word = currentWord(run);
+    if (!word) return "";
+    const term = String(word.term || "").trim();
+    const zh = String(word.zh || "").trim();
+    if ((word.kind || "") === "listen-choice") {
+      return "听！这一声就是名号，喊出来打我！";
+    }
+    if (run && run.phase === "boss") {
+      const name = (run.boss && run.boss.nameZh) || "妖怪";
+      return `${name}吼道：敢喊 ${term} 吗？`;
+    }
+    return `哼！「${zh}」挡路。喊 ${term}！`;
+  }
+
+  function struckHp(phase, word) {
+    const max = phase === "boss" ? 1 : HITS_TO_CAPTURE;
+    const left = word && word.hitsLeft != null ? Number(word.hitsLeft) : max;
+    return { hpLeft: Math.max(0, left), hpMax: max };
+  }
+
   function currentPrompt(run, seed) {
     const word = currentWord(run);
     if (!word) return null;
@@ -277,27 +307,29 @@
         word.hitsLeft = Math.max(0, (Number(word.hitsLeft) || HITS_TO_CAPTURE) - 1);
         const captured = word.hitsLeft <= 0;
         const floatText = pickHitFloat(captured);
+        const hp = struckHp("arena", word);
         if (captured) {
           const next = advanceAfterCapture(run);
-          return { ok: true, correct: true, captured: true, floatText, next: next.next, lives: run.lives, passed: run.passed, finished: run.finished };
+          return { ok: true, correct: true, captured: true, floatText, next: next.next, lives: run.lives, passed: run.passed, finished: run.finished, hpLeft: hp.hpLeft, hpMax: hp.hpMax };
         }
-        return { ok: true, correct: true, captured: false, floatText, next: "arena", lives: run.lives, passed: false, finished: false };
+        return { ok: true, correct: true, captured: false, floatText, next: "arena", lives: run.lives, passed: false, finished: false, hpLeft: hp.hpLeft, hpMax: hp.hpMax };
       }
       const next = advanceAfterCapture(run);
-      return { ok: true, correct: true, captured: true, floatText: pickHitFloat(true), next: next.next, lives: run.lives, passed: run.passed, finished: run.finished };
+      return { ok: true, correct: true, captured: true, floatText: pickHitFloat(true), next: next.next, lives: run.lives, passed: run.passed, finished: run.finished, hpLeft: 0, hpMax: 1 };
     }
     run.combo = 0;
     markWrong(run, word.term);
     run.lives = Math.max(0, Number(run.lives) - 1);
     const floatText = pickMissFloat(run.lives);
+    const hp = struckHp(run.phase, word);
     if (floatText === FORBIDDEN_MISS) {
       throw new Error("miss float must never be 词不对");
     }
     if (run.lives <= 0) {
       finishFail(run);
-      return { ok: true, correct: false, captured: false, floatText, next: "result", lives: 0, passed: false, finished: true };
+      return { ok: true, correct: false, captured: false, floatText, next: "result", lives: 0, passed: false, finished: true, hpLeft: hp.hpLeft, hpMax: hp.hpMax };
     }
-    return { ok: true, correct: false, captured: false, floatText, next: run.phase, lives: run.lives, passed: false, finished: false };
+    return { ok: true, correct: false, captured: false, floatText, next: run.phase, lives: run.lives, passed: false, finished: false, hpLeft: hp.hpLeft, hpMax: hp.hpMax };
   }
 
   function applySkip(run) {
@@ -305,6 +337,7 @@
     if (!run || run.finished || !word) return { ok: false, reason: "idle" };
     run.skipped.push(word.term);
     markWrong(run, word.term);
+    const hpMax = run.phase === "boss" ? 1 : HITS_TO_CAPTURE;
     if (run.phase === "arena") {
       word.hitsLeft = 0;
     }
@@ -319,6 +352,8 @@
       lives: run.lives,
       passed: run.passed,
       finished: run.finished,
+      hpLeft: 0,
+      hpMax,
     };
   }
 
@@ -402,6 +437,8 @@
     buildRun,
     currentWord,
     currentPrompt,
+    hpView,
+    demonLine,
     pickMissFloat,
     pickHitFloat,
     enterArena,
