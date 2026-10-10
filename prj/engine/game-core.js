@@ -467,7 +467,7 @@
     return { target: null, auto: false };
   }
 
-  const PLAY_VERBS = { "tag-shoot": true, "listen-rings": true, "type-lock": true, "gourd-seek": true, "fan-blow": true, "fire-ward": true };
+  const PLAY_VERBS = { "tag-shoot": true, "listen-rings": true, "type-lock": true, "gourd-seek": true, "fan-blow": true, "fire-ward": true, "word-banish": true };
   const FIRE_MIN_DIST = 0.22;
   const FACING_VEC = {
     south: { x: 0, y: 1 },
@@ -784,6 +784,7 @@
     wordTagHits,
     chooseThrowTarget,
     resolvePlayVerb,
+    PLAY_FIRST_EXPERIMENT: false,
     typingComplete,
     throwLocked,
     seekAutoAim,

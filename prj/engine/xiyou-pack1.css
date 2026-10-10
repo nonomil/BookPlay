@@ -1,0 +1,288 @@
+/* 西游包1：任务卡壳 + 选词降妖场。不走扔球瞄准。 */
+
+.game.is-pack1 .game-joystick,
+.game.is-pack1 .game-route,
+.game.is-pack1 .game-dpad-hint,
+.game.is-pack1 .game-supports,
+.game.is-pack1 .game-carried,
+.game.is-pack1 .game-typepad,
+.game.is-pack1 .game-combo,
+.game.is-pack1 #game-hint,
+.game.is-pack1 .farm-entry,
+.game.is-pack1 .farm-hud {
+  display: none !important;
+}
+
+.pack1-layer {
+  position: absolute;
+  inset: 0;
+  z-index: 12;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+}
+
+.pack1-layer[hidden] {
+  display: none !important;
+}
+
+.pack1-quest {
+  width: min(520px, 94vw);
+  text-align: center;
+  color: #3b2a18;
+  background:
+    linear-gradient(180deg, rgba(255, 248, 230, 0.96), rgba(244, 220, 176, 0.96));
+  border: 3px solid #c48a2a;
+  border-radius: 28px;
+  box-shadow: 0 22px 60px rgba(0, 0, 0, 0.35);
+  padding: clamp(18px, 4vw, 32px);
+}
+
+.pack1-kicker {
+  display: block;
+  letter-spacing: 0.12em;
+  font-size: 0.85rem;
+  color: #8a5a18;
+  margin-bottom: 8px;
+}
+
+.pack1-quest h2 {
+  margin: 0 0 8px;
+  font-size: clamp(28px, 6vw, 40px);
+  line-height: 1.15;
+}
+
+.pack1-quest .pack1-en {
+  margin: 0 0 14px;
+  font-size: clamp(16px, 3vw, 20px);
+  color: #6b4a22;
+}
+
+.pack1-quest p {
+  margin: 0 0 18px;
+  line-height: 1.55;
+  font-size: clamp(15px, 2.4vw, 18px);
+}
+
+.pack1-verb {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 72px;
+  min-width: min(420px, 86vw);
+  padding: 12px 28px;
+  border: 0;
+  border-radius: 22px;
+  background: linear-gradient(180deg, #ffd76a, #e39420);
+  color: #4a2f00;
+  font-size: clamp(20px, 4.2vw, 28px);
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 8px 0 #b36b10;
+}
+
+.pack1-verb:active {
+  transform: translateY(3px);
+  box-shadow: 0 5px 0 #b36b10;
+}
+
+.pack1-arena {
+  position: absolute;
+  inset: 0;
+  z-index: 11;
+  display: grid;
+  grid-template-rows: 1fr auto auto;
+  pointer-events: none;
+}
+
+.pack1-arena[hidden] {
+  display: none !important;
+}
+
+.pack1-stage {
+  position: relative;
+  pointer-events: none;
+}
+
+.pack1-hero,
+.pack1-demon {
+  position: absolute;
+  bottom: 8%;
+  width: clamp(110px, 22vw, 200px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.28s ease;
+}
+
+.pack1-hero {
+  left: 6%;
+}
+
+.pack1-demon {
+  right: 8%;
+  transform-origin: center bottom;
+}
+
+.pack1-demon.is-hurt {
+  animation: pack1-shake 0.28s ease;
+}
+
+.pack1-demon.is-small {
+  transform: scale(0.72);
+}
+
+.pack1-demon.is-tiny {
+  transform: scale(0.48);
+}
+
+.pack1-hero img,
+.pack1-demon img,
+.pack1-ph {
+  width: 100%;
+  height: auto;
+  max-height: 38vh;
+  object-fit: contain;
+  filter: drop-shadow(0 10px 14px rgba(0, 0, 0, 0.45));
+}
+
+.pack1-ph {
+  aspect-ratio: 3 / 4;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.16);
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  display: grid;
+  place-items: center;
+  font-size: 42px;
+}
+
+.pack1-prompt {
+  pointer-events: auto;
+  margin: 0 auto 8px;
+  width: min(640px, 94vw);
+  text-align: center;
+  background: rgba(16, 22, 40, 0.82);
+  border: 2px solid rgba(255, 215, 106, 0.45);
+  border-radius: 18px;
+  padding: 10px 14px 8px;
+}
+
+.pack1-prompt small {
+  display: block;
+  color: #ffd76a;
+  letter-spacing: 0.08em;
+}
+
+.pack1-prompt strong {
+  display: block;
+  font-size: clamp(22px, 4.4vw, 32px);
+  margin: 4px 0;
+}
+
+.pack1-prompt span {
+  display: block;
+  color: #d7deea;
+  font-size: 0.95rem;
+}
+
+.pack1-pic {
+  display: block;
+  width: min(180px, 40vw);
+  height: 88px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin: 6px auto 0;
+}
+
+.pack1-choices {
+  pointer-events: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 0 12px 18px;
+}
+
+.pack1-choice,
+.pack1-skip {
+  min-height: 64px;
+  min-width: min(160px, 42vw);
+  padding: 10px 18px;
+  border-radius: 16px;
+  border: 0;
+  font-size: clamp(18px, 3.4vw, 24px);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.pack1-choice {
+  background: linear-gradient(180deg, #fff4cf, #f0c56a);
+  color: #3b2508;
+}
+
+.pack1-choice.is-wrong {
+  animation: pack1-shake 0.32s ease;
+  background: #d7c4a4;
+}
+
+.pack1-skip {
+  background: transparent;
+  color: #f3e6c8;
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  min-width: 96px;
+}
+
+.pack1-float {
+  position: fixed;
+  z-index: 20;
+  transform: translate(-50%, -50%);
+  font-size: clamp(28px, 5vw, 42px);
+  font-weight: 800;
+  pointer-events: none;
+  animation: pack1-float 1s ease forwards;
+  text-shadow: 0 3px 0 rgba(0, 0, 0, 0.35);
+}
+
+.pack1-float.is-good { color: #ffe27a; }
+.pack1-float.is-miss { color: #9fd6ff; }
+
+.pack1-result {
+  width: min(480px, 94vw);
+  text-align: center;
+  background: rgba(16, 22, 40, 0.96);
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-radius: 22px;
+  padding: 22px 18px;
+}
+
+.pack1-result h2 {
+  margin: 0 0 8px;
+  font-size: clamp(24px, 4.6vw, 34px);
+}
+
+.pack1-stars {
+  font-size: clamp(28px, 5vw, 40px);
+  margin: 8px 0 14px;
+}
+
+@keyframes pack1-shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-8px); }
+  75% { transform: translateX(8px); }
+}
+
+@keyframes pack1-float {
+  from { opacity: 1; transform: translate(-50%, -50%) scale(0.9); }
+  to { opacity: 0; transform: translate(-50%, -88%) scale(1.08); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pack1-verb,
+  .pack1-demon,
+  .pack1-choice,
+  .pack1-float {
+    animation: none;
+    transition: none;
+  }
+}

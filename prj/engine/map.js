@@ -1464,7 +1464,7 @@ function openEpisodeDetail(n) {
       <div class="episode-detail-actions">
         ${pathCards}
         <div class="episode-detail-modes">
-          ${learnMode}<a class="episode-detail-mode" href="game.html?ep=${n}" tabindex="0">地图</a>
+          ${learnMode}<a class="episode-detail-mode" href="game.html?ep=${n}" tabindex="0">${n === 1 ? "降妖" : "地图"}</a>
         </div>
         <div class="episode-detail-options">
           ${listenOption}
