@@ -655,6 +655,7 @@
   /* ---------- 波次 ---------- */
 
   function spawnWave(waveIndex, silent) {
+    if (state.playVerb === "word-banish" || state.phase === "pack1") return;
     state.waveIndex = waveIndex;
     state.mapStage = waveIndex === 0 ? "wave1" : "wave2";
     state.monsters.forEach((m) => {
@@ -1144,6 +1145,7 @@
   }
 
   function pickUp(orb) {
+    if (state.playVerb === "word-banish" || state.phase === "pack1") return;
     state.hintUsedThisOrb = false;
     state.carried = { zh: orb.zh, term: termForZh(orb.zh), typed: "", wrong: "" };
     orb.el.style.display = "none";
@@ -1246,6 +1248,7 @@
   function throwOrb(monster) {
     // 投掷不锁世界：小怪照常追击/游荡，追踪弹逐帧更新（对照 word-memory-map）
     // 点中谁飞向谁；词牌不对则弹回。紫金葫芦 / gourd-seek 才自动改瞄配对小妖。
+    if (state.playVerb === "word-banish" || state.phase === "pack1") return;
     if (!state.carried) return;
     if (Game.throwLocked(state.playVerb, state.carried, state.carried.term)) {
       const goal = Game.typingTarget(state.carried.term);
@@ -2380,6 +2383,34 @@
       state.level = freezeLevel(level, state.wrongWords);
       state.npcBonus = Boolean(prev.npcBonus);
       state.npcDone = Boolean(prev.npcDone);
+      if (window.BookPlayXiyouPack1 && window.BookPlayXiyouPack1.isDefaultPath(EP, params)) {
+        state.playVerb = "word-banish";
+        state.phase = "pack1";
+        els.world.style.width = "100%";
+        els.world.style.height = "100%";
+        els.backdrop.style.backgroundSize = "cover";
+        els.backdrop.style.backgroundRepeat = "no-repeat";
+        els.backdrop.style.backgroundPosition = "center";
+        const packBg = state.level.background && state.level.background.illustration
+          ? assetUrl(state.level.background.illustration)
+          : `../assets/game-backgrounds/ep${EP}.jpg`;
+        els.backdrop.style.backgroundImage = packBg ? `url("${packBg}")` : "";
+        window.BookPlayGameDebug = state;
+        window.BookPlayXiyouPack1.start({
+          ep: EP,
+          fromLesson: FROM_LESSON,
+          leaveUrl: leaveUrl(),
+          level: state.level,
+          sprites: state.sprites,
+          audio: state.audio,
+          weakState: state,
+          persistWeak,
+          readStore,
+          writeStore,
+          speakTerm,
+        });
+        return;
+      }
       recomputeTuning(); // 关卡可能声明单屏(worldTiles=1)或更大的世界：速度/距离按"视口宽"重算
       buildEntities();
       restoreMapRun(prev);

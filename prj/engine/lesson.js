@@ -25,6 +25,7 @@ window.addEventListener("pagehide", () => {
 });
 const STUDY_SESSION_KEY = "bookplay_lesson_session_v2";
 const MAP_PROGRESS_KEY = "bookplay_adv_progress";
+const PLAY_FIRST_EXPERIMENT = false; // 先打一把：默认关。lesson 仍先巩固再玩。
 // The local server maps these keys to natural Edge-TTS neural voices.  Keeping
 // the voice names here makes the lesson's audio contract explicit while still
 // allowing the server to cache the generated MP3 files for every new sentence.
@@ -1384,7 +1385,12 @@ function showGameInvite(passed) {
         && level.cast && level.map && Array.isArray(level.waves);
       if (!usable) throw new Error("本集地图数据不完整");
       ui.gameInvite.dataset.state = "ready";
-      if (ui.gameInviteStatus) ui.gameInviteStatus.textContent = "地图已准备好，可以开始；也可以暂时跳过。";
+      if (ui.gameInviteStatus) {
+        ui.gameInviteStatus.textContent = episode === 1
+          ? "降妖场已准备好。先巩固再玩；也可以暂时跳过。"
+          : "地图已准备好，可以开始；也可以暂时跳过。";
+      }
+      void PLAY_FIRST_EXPERIMENT;
       if (ui.gameInviteEnter) ui.gameInviteEnter.disabled = false;
     })
     .catch((error) => {

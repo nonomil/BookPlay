@@ -12,7 +12,7 @@ test('game.html：按顺序引入 app-audio / tv-remote / battle-core / game.js 
   const scripts = [...html.matchAll(/<script[^>]*\ssrc="([^"?]+)(?:\?[^"]*)?"/g)]
     .map((m) => m[1].replace(/^\.\//, ''))
     .filter((src) => src !== 'native-key.js' && src !== 'handheld-controls.js' && src !== 'content-gate.js');
-  assert.deepEqual(scripts, ['app-audio.js', 'tv-remote.js', 'game-common.js', 'battle-core.js', 'game-core.js', 'game-input.js', 'game-audio.js', 'collection-core.js', 'schedule-core.js', 'economy-core.js', 'farm-core.js', 'farm-ui.js', 'game.js', 'game-feedback.js']);
+  assert.deepEqual(scripts, ['app-audio.js', 'tv-remote.js', 'game-common.js', 'battle-core.js', 'game-core.js', 'xiyou-pack1-core.js', 'game-input.js', 'game-audio.js', 'collection-core.js', 'schedule-core.js', 'economy-core.js', 'farm-core.js', 'farm-ui.js', 'xiyou-pack1.js', 'game.js', 'game-feedback.js']);
   assert.match(html, /href=["']tv\.css(?:\?[^"']*)?["']/i, 'game.html must load tv.css');
   assert.match(html, /href=["']handheld\.css(?:\?[^"']*)?["']/i);
   assert.match(html, /href=["']app-audio\.css(?:\?[^"']*)?["']/i, '音效模块样式');
@@ -29,6 +29,7 @@ test('game.html：场景/HUD（星星/进度/护盾/词球/连击）/对话框/�
     'game-joystick', 'game-route', 'game-dialogue', 'game-dialogue-face', 'game-dialogue-kicker', 'game-dialogue-name',
     'game-dialogue-en', 'game-dialogue-zh', 'game-dialogue-choices', 'game-dialogue-next', 'game-dialogue-close',
     'game-bossgate', 'game-pause', 'game-gate', 'game-toast',
+    'pack1-quest', 'pack1-arena', 'pack1-hero', 'pack1-demon', 'pack1-prompt', 'pack1-choices', 'pack1-result',
   ]) {
     assert.match(html, new RegExp(`id="${id}"`), id);
   }

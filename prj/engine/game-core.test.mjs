@@ -63,7 +63,9 @@ test("listen-rings playVerb：听音对准词环，走入匹配才收集", () =>
   assert.equal(core.resolvePlayVerb({ playVerb: "type-lock" }), "type-lock");
   assert.equal(core.resolvePlayVerb({ playVerb: "gourd-seek" }), "gourd-seek");
   assert.equal(core.resolvePlayVerb({ playVerb: "tag-shoot" }), "tag-shoot");
+  assert.equal(core.resolvePlayVerb({ playVerb: "word-banish" }), "word-banish");
   assert.equal(core.resolvePlayVerb({ playVerb: "parkour" }), "tag-shoot");
+  assert.equal(core.PLAY_FIRST_EXPERIMENT, false);
   assert.equal(core.resolvePlayVerb({ verb: "" }), "tag-shoot");
 
   assert.equal(core.listenRingHits("", "apple"), false);

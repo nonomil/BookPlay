@@ -53,11 +53,12 @@
     const x = d.x != null ? d.x : window.innerWidth / 2;
     const y = d.y != null ? d.y : window.innerHeight / 2;
     if (d.kind === "hit") {
-      floatText(x, y - 30, `${d.term || ""} · ${d.zh || ""}`, "is-good");
+      floatText(x, y - 30, d.text || `${d.term || ""} · ${d.zh || ""}`, "is-good");
       if (!reducedMotion()) { spawnStar(x, y); spawnStar(x - 20, y - 10); spawnStar(x + 20, y - 10); }
       window.BookPlayAudio?.sfx("correct");
     } else if (d.kind === "miss") {
-      floatText(x, y - 30, "？", "is-miss");
+      const miss = d.text && d.text !== "词不对" ? d.text : "棒偏了";
+      floatText(x, y - 30, miss, "is-miss");
       window.BookPlayAudio?.sfx("retry");
     } else if (d.kind === "combo") {
       floatText(x, y - 60, `连击 ×${d.combo}！`, "is-combo");
